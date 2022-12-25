@@ -38,5 +38,11 @@ Stuff that I found, but never read/used yet.
 }
 
 table.class tr > :not(td[colspan="7"], :first-child) {}
+
+*[href] {}
+*[d~='1.06L9.53'] {}
+div:nth-child(2) {}
+button[role="tab"][id][tabindex="-1"] {}
+/* get selector from console */
 ```
 </div></div>

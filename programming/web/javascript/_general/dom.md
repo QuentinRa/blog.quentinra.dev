@@ -224,7 +224,7 @@ form.onsubmit = (event) => {
     const form = event.target
     // 🤔 using elements (array)
     const value = form.elements['name']['value'] // get
-    
+
     // ✅ Using FormData
     let formData  = new FormData(form);
     if (formData.has('name')) {}
@@ -341,8 +341,6 @@ if (value != null) {
 Long time ago, [jQuery](https://github.com/jquery/jquery) was a popular library making the JavaScript shorter/simpler. Nowadays, most features were added to JavaScript, so jQuery is unneeded.
 
 ➡️ Bootstrap removed their jQuery dependencies in their 5th version, to make the library more lightweight.
-
-...
 </div></div>
 
 
@@ -361,6 +359,15 @@ Stuff that I found, but never read/used yet.
 * [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction).
 </div><div>
 
-* ➡️ See my scripts (canva+grab hidden)
 * `window.location.href`
+
+```javascript
+x.nodeName === "HEAD"
+const style = window.getComputedStyle(x)
+if (style.visibility === 'hidden') return true
+if (style.display === 'none') return true
+if (style.fontSize === "0px") return true
+
+deleteNode.click()
+```
 </div></div>

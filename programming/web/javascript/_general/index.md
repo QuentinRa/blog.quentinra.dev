@@ -4,8 +4,8 @@
 
 JavaScript (JS) is a popular language used to develop
 
-* 🌳 Dynamic websites <small>(DOM, jquery...)</small>
-* 🗃️ Servers and APIs <small>(Node.js, Express...)</small>
+* 🌳 Dynamic websites <small>(DOM, jQuery...)</small>
+* 🗃️ Servers and APIs <small>(Node.js, Express.js...)</small>
 * 🖥️ Desktop applications <small>(Electron.js...)</small>
 * 🧪 Programming styles like [JsFuck](https://github.com/aemkei/jsfuck) (7.3k ⭐)
 * ...
@@ -17,7 +17,7 @@ Most environments support `console.log` to print something.
 console.log("message")
 console.error("error message")
 console.warn("warning message")
-console.info("message")
+console.info("informative message")
 ```
 </div></div>
 
@@ -30,7 +30,7 @@ console.info("message")
 There are 3 ways to declare a variable.
 
 ```javascript
-// ✅ use CONST as much as possible
+// ✅ use CONST as much as possible (unmodifiable)
 const five = 5
 // ✅ let is used for scoped-variable (=block variables)
 let str = "five"
@@ -47,14 +47,14 @@ You can use the operator `?.` and `??` to write null-safe code
 
 ```javascript
 // ⭐ Nullish coalescing operator
-const x = null ?? default_value // default
-const x = undefined ?? default_value // default
+const x = null ?? default_value // default_value
+const x = undefined ?? default_value // default_value
 // ⭐ Optional chaining
 // call on null/undefined, return null/undefined
 const x = undefined?.toString() // undefined
-const x = null?.property // null
+const x = null?.toString() // null
 // mix both
-const x = null?.property ?? default_value // default
+const x = null?.toString() ?? default_value // default_value
 ```
 
 </div><div>
@@ -75,7 +75,7 @@ const str = `template literals/string`
 // Object | typeof(o) === 'object'
 const o = {}
 // Array | a instanceof Array | Array.isArray(a)
-const a = []
+const a = [] // ⚠️ An array is also an Object
 ```
 
 You can use every usual operator.
@@ -83,8 +83,8 @@ You can use every usual operator.
 * `+`, `-`, `>`, `>=`, `&&`, `||`, `!`...
 * `^` <small>(modulo)</small>, `**` <small>(exponentiation/power)</small>
 * `+=`/`-=`/... `var++` and `var--`
-* `==`/`!=`: **non-strict**, compare value <small>(`5=='5'` is true)</small>
-* `===`/`!==`: **strict**, compare value and the type <small>(`5==='5'` is false)</small>
+* `==`/`!=`: **non-strict**, compare the value <small>(`5=='5'` is true)</small>
+* `===`/`!==`: **strict**, compare the value and the type <small>(`5==='5'` is false)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -139,7 +139,6 @@ console.log('the variable value is '+variable)
 console.log(`the variable value is ${variable}`)
 // the variable value is 5
 ```
-</div><div>
 
 ##### Has property/element
 
@@ -149,6 +148,7 @@ if (0 in [0, 1]) {} // true
 // same as 'obj.hasOwnProperty("x")'
 if ("x" in { "x": "..." }) {} // true
 ```
+</div><div>
 
 ##### Strings
 
@@ -188,6 +188,25 @@ array.slice() // [10,13], deep clone
 // operations
 array.forEach(v => { /* ... */ })
 ```
+
+Create an Array from an Iterable
+
+```javascript
+const array = Array.from(anIterable) // NodeList...
+const array = [...anIterable] // ~same
+```
+
+#### Maps
+
+```javascript
+const map = new Map()
+map.set('key', 5) // add
+map.get('key') // get
+map.has('key') // check
+for(let [k,v] of map) { /* ... */ } // iterate
+// otherwise, generate an Iterable
+map.entries() | map.keys() | map.values()
+```
 </div></div>
 
 <hr class="sep-both">
@@ -201,10 +220,11 @@ Stuff that I found, but never read/used yet.
 ```javascript
 const f = (args) => (5);
 const {x1, x2} = { x1: 'xxx', x2: 'yyy' }
+const [a,b] = [0,1]
 const merge = Object.assign({name: 'toto', age: 10}, { age: 15 })
-// filter, map
+// filter (true=keep), map
 // reduce((a, b) => a + b, 0)
-// match (/xxx/)
+// match (/xxx/ and /x/g)
 new Date().toTimeString().substring(0,8)
 class X {
     static xxx = 0;
@@ -217,11 +237,6 @@ this.events.splice(0, 0, xxx) // insert at 0
 
 setTimeout(function () { },  xxx);
 setInterval(function () { },  xxx);
-
-// /x/g
-Array.from(document.links)
-for(let [key, value] of formData) {}
-[...formData.entries()]
 ```
 
 ```javascript
@@ -239,6 +254,7 @@ Learn
 
 * `.eslintrc`
 * ESM import: `<script type="module">` (see [socket.io](https://socket.io/docs/v4/client-initialization/))
+* moment.js
 
 ```javascript
 // todo: node.js has some notes too :(
