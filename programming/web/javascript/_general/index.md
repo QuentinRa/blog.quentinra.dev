@@ -220,6 +220,8 @@ setInterval(function () { },  xxx);
 
 // /x/g
 Array.from(document.links)
+for(let [key, value] of formData) {}
+[...formData.entries()]
 ```
 
 ```javascript

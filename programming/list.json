@@ -68,7 +68,7 @@
             {
               "tag": "web/javascript/_general/dom.md",
               "name": "Websites",
-              "desc": "...<!--Learn JavaScript for Websites.-->",
+              "desc": "Learn JavaScript for Websites.",
               "icon": "<i class=\"bi bi-globe\"></i>",
               "hidden": false
             },

@@ -184,16 +184,18 @@ Useful attributes/methods to call on an event are
 
 </div><div>
 
-#### Other events
+#### Examples
 
-* ➡️ Called when the visibility <small>(hidden, shown back)</small> of the page is changed <small>(ex: tab changed, minified...)</small>
+<p></p>
+
+Execute code when the visibility <small>(hidden, shown back)</small> of the page is changed <small>(ex: tab changed, minified...)</small>
 
 ```javascript
 // ➡️  See "document.hidden" (boolean)
 document.addEventListener('visibilitychange', () => {});
 ```
 
-* ➡  Execute some code when a key is pressed
+Execute some code when a key is pressed
 
 ```javascript
 document.onkeydown = e => {
@@ -203,6 +205,53 @@ document.onkeydown = e => {
             // ...
             break;
     }
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Validating Forms
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+You can listen to a form submission which `submit`/`onsubmit`. This event is particular, as **true** must be returned if we can send the form, **false** otherwise. It's used to validate a form, being sending it.
+
+```js
+form.onsubmit = (event) => {
+    const form = event.target
+    // 🤔 using elements (array)
+    const value = form.elements['name']['value'] // get
+    
+    // ✅ Using FormData
+    let formData  = new FormData(form);
+    if (formData.has('name')) {}
+    formData.append('name', 'value') // add
+    formData.set('name', 'value') // set
+    const value = formData.get('name') // get
+    for(let [name, value] of formData) {} // iterate
+    // ...
+    return false // false <=> don't send
+}
+```
+</div><div>
+
+You may know that you can validate an HTML form with attributes such as `minlength`... You can show custom errors, or further handle the verification in JavaScript.
+
+```html
+<form novalidate></form> <!-- disable HTML errors -->
+```
+
+```js
+form.onsubmit = (event) => {
+    const form = document.forms[0]
+    const xxx = f.querySelector('#xxx')
+    if (xxx.validity.badInput) {}
+    if (xxx.validity.tooShort) {}
+    if (xxx.validity.tooLong) {}
+    if (xxx.validity.typeMismatch) {}
+    if (xxx.validity.valueMissing) {}
+    // ...
 }
 ```
 </div></div>
