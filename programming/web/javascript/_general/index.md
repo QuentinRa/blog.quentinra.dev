@@ -219,6 +219,7 @@ setTimeout(function () { },  xxx);
 setInterval(function () { },  xxx);
 
 // /x/g
+Array.from(document.links)
 ```
 
 ```javascript

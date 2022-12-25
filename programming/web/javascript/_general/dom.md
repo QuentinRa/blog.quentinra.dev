@@ -66,6 +66,63 @@ This is the proper way to do it. It allows us to minify JavaScript, use CDNs, ha
 
 <hr class="sep-both">
 
+## Document Object Model
+
+<div class="row row-cols-md-2"><div>
+
+There is one big difference with usual JavaScript: there is a variable `window` for the tab in which the page is displayed. 
+
+The **Document Object Model** (DOM) is a tree of **nodes** <small>(HTML tags)</small>. The root is `window.document` or the shortcut `window.document`.
+
+```javascript
+document.head // access the head tag
+document.body // access the body tag
+// collection with every
+document.forms // form
+document.images // image
+document.links // link
+document.scripts // scripts
+// 🥂 tip: collection to Array
+Array.from(document.links)
+```
+
+To create an element, we use these. Note that by editing the innerHTML of an existing tag manually, you can avoid doing that.
+
+```javascript
+const node = document.createTextNode("Some text")
+const node = document.createElement("div")
+```
+</div><div>
+
+```javascript
+// from any node, this including document
+const xxx = document.querySelector('*')
+xxx.children // HTMLCollection
+xxx.childNodes // NodeList
+xxx.firstChild ; xxx.firstElementChild
+xxx.lastChild ; xxx.lastElementChild
+// edit HTML
+xxx.replaceChildren() // remove children
+xxx.replaceChildren(node1, node2) // replace with ...
+xxx.appendChild(node)
+// edit attributes
+xxx.hasAttribute('class')
+xxx.getAttribute('class')
+xxx.removeAttribute("hidden")
+xxx.setAttribute("hidden", "")
+xxx.classList.xxx("yyy") // add, remove, replace...
+// edit manually
+xxx.innerHTML = `<p>You can write HTML</p>`
+xxx.textContent = "<p>HTML won't be rendered</p>"
+// other
+xxx.outerHTML // with xxx tag+attributes
+xxx.nodeName
+```
+</div></div>
+
+
+<hr class="sep-both">
+
 ## 🚀 Events 🚀
 
 <div class="row row-cols-md-2 mt-4"><div>
@@ -164,13 +221,9 @@ Stuff that I found, but never read/used yet.
 document.createTextNode("xxx")
 document.createElement("div")
 xxx.querySelector("xxx")
-xxx.appendChild(node)
-xxx.removeAttribute("hidden")
-xxx.setAttribute("hidden", "")
-xxx.replaceChildren() // remove children
-xxx.replaceChildren(yyy, zzz)
-xxx.innerHTML = ``
 ```
+
+* See my scripts (canva+grab hidden)
 </div><div>
 
 * SessionStorage

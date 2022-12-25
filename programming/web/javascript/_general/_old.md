@@ -25,8 +25,6 @@ You can add ["use strict"](https://www.w3schools.com/js/js_strict.asp) inside a 
 
 ## JavaScript for websites
 
-We are calling DOM the Document Object Model. The tags of your page are a tree, you got html, then head/body, etc. This is what the DOM is. You got a variable called `document` (shortcut of `window.document`), and you may ask it about some nodes inside the tree.
-
 * [document](web/document.md)
 * [window](web/window.md)
 * [forms](web/forms.md)
