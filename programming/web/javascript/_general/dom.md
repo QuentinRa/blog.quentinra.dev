@@ -86,21 +86,35 @@ document.scripts // scripts
 Array.from(document.links)
 ```
 
-To create an element, we use these. Note that by editing the innerHTML of an existing tag manually, you can avoid doing that.
+To create a node, we use these. Note that by editing the innerHTML of an existing tag manually, you can avoid doing that.
 
 ```javascript
 const node = document.createTextNode("Some text")
 const node = document.createElement("div")
 ```
+
+To find a node, you can use
+
+```javascript
+const xxx = document // you can put any Node here
+// ex: only match <node id="id" />
+const node = xxx.getElementById('id');
+// ex: match <node class="a b c" />
+const nodeList = xxx.getElementsByClassName('c');
+// ex: match every link
+const nodeList = xxx.getElementsByTagName('a');
+// 🥂 You can use CSS selectors
+const node = xxx.querySelector('#id');
+const nodeList = xxx.querySelectorAll('table tr > .xxx');
+```
 </div><div>
 
 ```javascript
-// from any node, this including document
-const xxx = document.querySelector('*')
-xxx.children // HTMLCollection
-xxx.childNodes // NodeList
+// Navigate from a node to another
+xxx.childNodes ; xxx.children
 xxx.firstChild ; xxx.firstElementChild
 xxx.lastChild ; xxx.lastElementChild
+xxx.parentNode ; xxx.parentElement
 // edit HTML
 xxx.replaceChildren() // remove children
 xxx.replaceChildren(node1, node2) // replace with ...
@@ -111,12 +125,23 @@ xxx.getAttribute('class')
 xxx.removeAttribute("hidden")
 xxx.setAttribute("hidden", "")
 xxx.classList.xxx("yyy") // add, remove, replace...
-// edit manually
+// edit content
 xxx.innerHTML = `<p>You can write HTML</p>`
+xxx.innerText = "<p>HTML won't be rendered</p>"
 xxx.textContent = "<p>HTML won't be rendered</p>"
 // other
-xxx.outerHTML // with xxx tag+attributes
+xxx.outerHTML
 xxx.nodeName
+```
+
+You can also manually edit the style
+
+```js
+xxx.style.width = "5px";
+xxx.style.display = "none";
+xxx.style.color = "red";
+xxx.style.backgroundColor = "yellow";
+// ...
 ```
 </div></div>
 
@@ -183,6 +208,8 @@ const value = localStorage.getItem("key")
 if (value != null) { /* ... */ }
 // remove
 localStorage.removeItem("key")
+// clear
+localStorage.clear()
 ```
 
 It's useful to store/cache some data, but you must take into account that the user can add/edit/remove them.
@@ -217,21 +244,16 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-```javascript
-document.createTextNode("xxx")
-document.createElement("div")
-xxx.querySelector("xxx")
-```
-
-* See my scripts (canva+grab hidden)
-</div><div>
-
 * SessionStorage
 * ServiceWorkers
-* [Get Query](https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript)
+* [Get QueryParams](https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript)
+* [W3School](https://www.w3schools.com/Js/default.asp)
+* [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction).
+</div><div>
+
+* ➡️ See my scripts (canva+grab hidden)
+* `window.location.href`
 
 JavaScript (JS) base is made of the scripting language ECMAScript. We are currently in **ECMAScript2021** (v12). The most used version of JavaScript is **ECMAScript6** (2015). In the ancient times, jQuery was a popular library adding a lot of useful stuff in JavaScript, but now quite a lot of these are directly served in JavaScript, so modern developers aren't using it as often as before <small>(because removing it makes the website faster, increasing both performances and SEO)</small>. For instance, Bootstrap (the famous CSS framework) removed the jQuery dependency in version 5 <small>(dropping Internet Explorer support in the meantime)</small>.
-
-As always, you may learn JavaScript on [W3School](https://www.w3schools.com/Js/default.asp) or [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction).
 
 </div></div>

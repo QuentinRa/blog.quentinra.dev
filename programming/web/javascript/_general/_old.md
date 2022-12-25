@@ -12,6 +12,8 @@ You may use this too, but for some, the syntax above will be enough
 
 * [Exceptions](syntax/exceptions.md)
 * [Classes and objects](syntax/classes.md)
+* `JSON.stringify(v)`: convert v to a string
+* `JSON.parse(string)`: parse back a string to a value
 
 The <b>semicolon</b> <code>;</code> at the end of a line is optional. You may use it if you make more than one expression per line.
 
@@ -25,8 +27,6 @@ You can add ["use strict"](https://www.w3schools.com/js/js_strict.asp) inside a 
 
 ## JavaScript for websites
 
-* [document](web/document.md)
-* [window](web/window.md)
 * [forms](web/forms.md)
 * [events](web/events.md)
 
