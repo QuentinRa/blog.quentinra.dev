@@ -18,6 +18,8 @@ console.log("message")
 console.error("error message")
 console.warn("warning message")
 console.info("informative message")
+// if available, used to clear the console
+console.clear();
 ```
 </div></div>
 
@@ -178,8 +180,8 @@ array.length // 0
 array[0] // undefined
 // edit
 array[0] = 25
+array.pop() // []
 array.push(10, 13) // [10, 13]
-array.pop() // [10]
 // generate a new array
 array.concat(["10"]) // [10, 13, "10"]
 array.reverse() // [13, 10]
@@ -196,7 +198,9 @@ const array = Array.from(anIterable) // NodeList...
 const array = [...anIterable] // ~same
 ```
 
-#### Maps
+##### Maps
+
+[See MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 
 ```javascript
 const map = new Map()
@@ -207,6 +211,54 @@ for(let [k,v] of map) { /* ... */ } // iterate
 // otherwise, generate an Iterable
 map.entries() | map.keys() | map.values()
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Functions
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Objects
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Classes
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Utilities
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">
@@ -255,6 +307,7 @@ Learn
 * `.eslintrc`
 * ESM import: `<script type="module">` (see [socket.io](https://socket.io/docs/v4/client-initialization/))
 * moment.js
+* [interesting code](https://stackoverflow.com/questions/21692646/how-does-facebook-disable-the-browsers-integrated-developer-tools)
 
 ```javascript
 // todo: node.js has some notes too :(
@@ -264,31 +317,12 @@ require('./exports.js');
 
 Random
 
-* [Javascript Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 * [javascript.info](https://javascript.info/)
 * [javascripttutorial](https://www.javascripttutorial.net/)
 * [javascript.com](https://www.javascript.com/learn)
 * [JS minifier](https://javascriptminifier.com/)
 * [JSDoc](https://jsdoc.app/)
-* no this in new fun
-
-Code
-
-```javascript
-// source??? electron maybe?
-function devtoolIsOpening() {
-    console.clear();
-    let before = new Date().getTime();
-    debugger;
-    let after = new Date().getTime();
-    if (after - before > 200) {
-        document.write(" Dont open Developer Tools. ");
-        window.location.replace("https://google.com/");
-    }
-    setTimeout(devtoolIsOpening, 100);
-}
-devtoolIsOpening();
-```
+* there is no "this" in the new fun
 
 **[Old notes](_old.md)**
 </div></div>

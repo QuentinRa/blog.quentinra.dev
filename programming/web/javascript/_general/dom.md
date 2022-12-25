@@ -133,7 +133,8 @@ xxx.innerText = "<p>HTML won't be rendered</p>"
 xxx.textContent = "<p>HTML won't be rendered</p>"
 // other
 xxx.outerHTML
-xxx.nodeName
+xxx.nodeName // "HEAD"...
+xxx.click() // fire a "click" event
 ```
 
 You can also manually edit the style
@@ -143,7 +144,9 @@ xxx.style.width = "5px";
 xxx.style.display = "none";
 xxx.style.color = "red";
 xxx.style.backgroundColor = "yellow";
-// ...
+// get effective style
+const style = window.getComputedStyle(xxx)
+if (style.visibility === 'hidden') { /* ..; */ }
 ```
 </div></div>
 
@@ -356,18 +359,21 @@ Stuff that I found, but never read/used yet.
 * ServiceWorkers
 * [Get QueryParams](https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript)
 * [W3School](https://www.w3schools.com/Js/default.asp)
+* `window.location.href` / `window.location.replace(URL)`
 * [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction).
 </div><div>
 
-* `window.location.href`
-
 ```javascript
-x.nodeName === "HEAD"
-const style = window.getComputedStyle(x)
-if (style.visibility === 'hidden') return true
-if (style.display === 'none') return true
-if (style.fontSize === "0px") return true
-
-deleteNode.click()
+function devtoolIsOpening() {
+    console.clear();
+    let before = new Date().getTime();
+    debugger; // only resuming when closed
+    let after = new Date().getTime();
+    if (after - before > 200) {
+        document.write(" Dont open Developer Tools. ");
+    }
+    setTimeout(devtoolIsOpening, 100);
+}
+devtoolIsOpening();
 ```
 </div></div>
