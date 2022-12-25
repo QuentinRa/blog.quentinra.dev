@@ -252,6 +252,7 @@ Random
 * [javascript.com](https://www.javascript.com/learn)
 * [JS minifier](https://javascriptminifier.com/)
 * [JSDoc](https://jsdoc.app/)
+* no this in new fun
 
 Code
 

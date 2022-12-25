@@ -23,13 +23,6 @@ You can add ["use strict"](https://www.w3schools.com/js/js_strict.asp) inside a 
 
 * [Spread syntax](syntax/spread.md)
 
-<hr class="sr">
-
-## JavaScript for websites
-
-* [forms](web/forms.md)
-* [events](web/events.md)
-
 <hr class="sl">
 
 ## REST API

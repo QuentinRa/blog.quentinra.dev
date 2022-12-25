@@ -152,13 +152,46 @@ xxx.style.backgroundColor = "yellow";
 
 <div class="row row-cols-md-2 mt-4"><div>
 
+#### Listen to events
+
+```html
+<!-- ❌ inside the HTML. Use this to get the button. -->
+<button id="ex" onclick="console.log(event, this)">xxx</button>
+```
+
+```javascript
+// ✅ inside the JavaScript
+const btn = document.querySelector("...")
+// only to add one listener
+btn.onclick = (event) => { console.log(event, btn) }
+// add as many listeners as you want
+btn.addEventListener('click', (event) => { console.log(event, btn) })
+```
+
+JSEvents that may use are the following. Add `on` before the name, like `onclick` to get the HTML attribute.
+
+* `click`: called when we clicked on the component
+* `load`: called when the component was loaded
+* `error`: called on loading error <small>(ex: loading image failed)</small>
+* `mouseover`: trigger function on mouse entering
+* `mouseout`: trigger function on mouse exiting
+* [See: HTML events](https://www.w3schools.com/TAGs/ref_eventattributes.asp) and [Global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+
+Useful attributes/methods to call on an event are
+
+* `event.preventDefault()`: don't further handle the event <small>(ex: stop a link from opening another page, a form from being submitted...)</small>
+* `event.target`: the element on which we clicked/...
+
+</div><div>
+
+#### Other events
+
 * ➡️ Called when the visibility <small>(hidden, shown back)</small> of the page is changed <small>(ex: tab changed, minified...)</small>
 
 ```javascript
 // ➡️  See "document.hidden" (boolean)
 document.addEventListener('visibilitychange', () => {});
 ```
-</div><div>
 
 * ➡  Execute some code when a key is pressed
 
