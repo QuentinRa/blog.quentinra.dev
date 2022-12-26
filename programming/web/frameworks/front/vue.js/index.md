@@ -6,6 +6,11 @@
 
 Before, you could use [vue-cli](https://github.com/vuejs/vue-cli) (29.5k ⭐), but now it's in maintenance mode, so they are recommending us to use [vite](https://vitejs.dev/) (50.6k ⭐).
 
+There are two ways of doing the same thing in Vue.
+
+* **Composition API**: use `<script setup>`
+* **Options API**: use `<script>`
+
 </div><div>
 
 The official [create-vue](https://github.com/vuejs/create-vue) project is using vite to generate a project
@@ -20,35 +25,42 @@ $ npm run dev
 
 <hr class="sep-both">
 
-## 📦 Vue Single-File Components (SFC) 📦
+## 📦 Vue Single-File Components (<code>.vue</code>) 📦
 
 <div class="row row-cols-md-2"><div>
 
-The main component is **App**. We are storing each component inside a `.vue` file, so we will have **App.vue**. Each `.vue` file has 3 tags
+The main component is **App**. It will usually load a view stored in `src/views`. To make views easier to manage, and to recycle parts of the code, we are extracting them inside file in `src/components`.
+
+➡️ Ex: a component for the pagination. Another for one product...
+
+A **Single-File Components** is a `.vue` file, split in 3 tags: **script**, **template**, and **style**, so everything related to the component is encapsulated in one place.
 
 ```
 <script>
-// example: import a component
-import HelloWorld from './components/HelloWorld.vue'
+// JavaScript
+// ex: import a component
+import HelloWorld from './components/HelloWorld.vue';
+const text = "Hello, World";
 </script>
 
 <template>
   <!-- HTML CODE -->
-  <!-- ex: use your imported component -->
+  <!-- ex: use another component -->
   <HelloWorld msg="Hello, World!" />
-  <!-- Using ':', you can use JavaScript inside "" -->
-  <HelloWorld :msg="'Hello, World!'" />
+  <HelloWorld :msg="text" />
 </template>
 
 <style scoped>
-    /* component style */
+    /* CSS */
 </style>
 ```
 
-There are two ways of doing the same thing in Vue. One is to use `<script setup>` (**Composition API**) and the other is to use `<script>` (**Options API**). The latter is usually wordier, but relatively easier to learn, so we will go with that.
+➡️ **Note**: you must use `:msg` if you want to use a variable. For instance, `msg="myVariable"` will pass a text instead of a variable.
 </div><div>
 
-As you have seen, a component can pass arguments to another component. Here, the component is declaring a property `msg`.
+#### Passing arguments to a component
+
+A component can receive parameters. They are declared inside `props`.
 
 ```
 <script>
@@ -58,19 +70,19 @@ export default {
     other: { // more complex properties
       type: String,
       required: false,
-      default: {}
+      default: ""
     }
   }
 }
 </script>
 ```
 
-The code could be simplified if we remove every check
+If we remove every check, we could shorten the code to:
 
 ```
 <script>
 export default {
-  props: ['msg']
+  props: ['msg', 'other']
 }
 </script>
 ```
@@ -87,11 +99,13 @@ Inside the template, you can use it with `{{ property_name }}`
 
 <hr class="sep-both">
 
-## 📖 SFC - Composition API 📖️
+## 📖 Options API 📖️
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-```
+The Options API is usually wordier, but it looks more declarative from my point of view, so it's easier to understand how Vue.js works.
+
+```xml
 <script>
 // import a component, see components:
 import HelloWorld from '../components/HelloWorld.vue'
@@ -141,18 +155,24 @@ export default {
 </script>
 ```
 
-Example usage
+<br>
+
+#### Use a data/... inside a template
+
+Example of using the variable `count`
 
 ```
 <template>
   <div class="home">
+    <!-- example of using count (data) -->
     <button @click="count++">Count is: {{ count }}</button>
+    <!-- increment (method), and square (computed) -->
     <button @click="increment">Square is: {{ square }}</button>
   </div>
 </template>
 ```
 
-Inside braces, or inside Vue attributes, you can use JavaScript, or most specifically, only JavaScript expressions (ex: `a_value`, `true ? "OK" : "KO"`...). You should only use values, and use methods/computed properties for complex cases.
+**Takeaway**: inside vue properties <small>(see v-bind)</small>, or braces (`{{ here }}`), you can use **data**, **methods**, **computed**, or JavaScript code, although you should rely on methods/computed in such cases.
 </div><div>
 
 #### Directives
@@ -219,7 +239,8 @@ Inside braces, or inside Vue attributes, you can use JavaScript, or most specifi
 <li v-for="n in 10"></li>
 ```
 
-On a component
+<details class="details-n">
+<summary><code>v-for</code> to replicate a composant</summary>
 
 ```
 <MyComponent
@@ -243,11 +264,29 @@ export default {
   }
 }
 ```
+</details>
 </div></div>
 
 <hr class="sep-both">
 
-## Routing
+## 📕 Composition API 📕
+
+<div class="row row-cols-md-2"><div>
+
+The code below is the same as declaring `count` inside `data`.
+
+```
+<script setup>
+import { ref } from 'vue'
+const count = ref(0)
+</script>
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## 🛣️ Routing 🛣️ 
 
 <div class="row row-cols-md-2"><div>
 
@@ -307,26 +346,30 @@ this.$router.push({ name:'about' })
 
 <div class="row row-cols-md-2"><div>
 
-* Vue is a declarative framework
 * nextTick in Methods
 * writable computed
 * deep watchers
 * template refs
 * Preprocessors (ts, scss)
-* v-bind to pass data
 * `@/main` matches `src/main.js` (shortcut for src)
-</div><div>
 
-```
-<script setup>
-import { ref } from 'vue'
-// reactive state
-const count = ref(0)
-</script>
-```
+Links
 
 * [pinia](https://pinia.vuejs.org/)
 * [Nuxt.js](https://nuxtjs.org/) (see [vuestripe](https://vuestripe.com/nuxt/))
 * [vuemastery](https://www.vuemastery.com/)
 * [vueschool](https://vueschool.io/)
+</div><div>
+
+```
+<!-- in a template -->
+<slot name="xxx"></slot>
+
+<!-- when calling the template -->
+<XXXExample>
+    <template #xxx>
+    ...
+    </template>
+</XXXExample>
+```
 </div></div>

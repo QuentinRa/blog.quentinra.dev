@@ -90,7 +90,7 @@ Programming languages (+tools) that I want to check, but never had the time.
 * [vercel](https://vercel.com/)
 * Webpack, rollupjs, parcel, Snowpack, WMR, and vite+vitest
 * Dust, EJS, Handlebars, Hogan.js, Pug (Jade), Twig, and Vash (express)
-* End-to-End Testing Solution ([cypress](https://www.cypress.io/how-it-works)/[browserstack](https://www.browserstack.com/)/...)
+* End-to-End Testing Solution ([cypress](https://www.cypress.io/how-it-works)/[browserstack](https://www.browserstack.com/)/[playwright](https://playwright.dev/)...)
 * Jasmine / QUnit / Karma / [jestjs](https://jestjs.io/docs/getting-started)
 * [Deno](https://deno.land/)
 * [nw.js](https://nwjs.io/) / [neutralinojs](https://github.com/neutralinojs/neutralinojs)
