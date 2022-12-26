@@ -15,7 +15,7 @@ Some browsers may not support some newly added features.
 * 🧪 See [caniuse](https://caniuse.com/) to see which browsers support a specific feature
 * 🚀 If there is a heavy need for a feature, you can use [polyfill](https://polyfill.io/v3/) to load missing features. You can generate one [here](https://polyfill.io/v3/url-builder/).
 
-JavaScript (JS) is based on ECMAScript. Currently, only **ECMAScript2015** (ES5) is fully supported.
+JavaScript (JS) is based on ECMAScript. **ECMAScript2016** (ES6) is fully supported since late 2016/early 2017, while for ES6+, providers/vendors are implementing the features they want.
 </div></div>
 
 ⚠️ Modern browsers are usually caching JavaScript files. If you changed a file, and don't see any changes, clear the cache, and try again.<br>

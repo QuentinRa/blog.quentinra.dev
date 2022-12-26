@@ -1,10 +1,4 @@
-# JavaScript
-
-**[Updated notes](index.md)**
-
-<hr class="sl">
-
-## REST API
+# REST API
 
 You got another course "API", explaining what's an API and a lot of related stuff. Let's take the [Musicbrainz API](https://musicbrainz.org/doc/MusicBrainz_API) for example,
 
@@ -19,23 +13,6 @@ When you are calling an API, you are requesting something from another website, 
 * [Fetch](api/fetch.md) 😍
 * [Async/await](api/async.md)
 * [Example API - MusicBrainz](api/example.md)
+* W
+  * <https://attacomsian.com/blog/xhr-post-request>
 <hr class="sl">
-
-<hr class="sr">
-
-## Sources
-
-* <https://www.javascript.com/learn/strings>
-* <https://www.w3schools.com/Js/default.asp>
-* <https://www.w3schools.com/Js/js_versions.asp>
-* <https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage>
-* <https://www.javascripttutorial.net/javascript-anonymous-functions/>
-* <https://developer.mozilla.org/fr/docs/Web/JavaScript>
-* <http://www.iut-fbleau.fr/sitebp/web/wim41/js/dom.pdf>
-* <http://www.iut-fbleau.fr/sitebp/web/wim41/js/js.pdf>
-* <https://dwarves.iut-fbleau.fr/git/monnerat/wim4_2021/src/master/cours/jscomp.pdf>
-* <http://pgsql.pedago.ensiie.fr/~vitera.y/cours/ipw/poly/03-applications-interactives.pdf>
-* <https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript>
-* <https://attacomsian.com/blog/xhr-post-request>
-* <https://javascript.pythoncheatsheet.org/>
-* <https://mbeaudru.github.io/modern-js-cheatsheet/>

@@ -13,9 +13,11 @@ JavaScript (JS) is a popular language used to develop
 **Where to learn?**
 
 * [W3Schools/JavaScript](https://www.w3schools.com/js/default.asp) <small>(see also Best Practices and Common mistakes)</small>
+* [MDN/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Overview) <small>(🚀)</small>
 * [iLoveCodingOrg/cheatsheet](https://github.com/iLoveCodingOrg/javascript-cheatsheet) <small>(quite complete, well presented)</small>
 * [javascript.info](https://javascript.info/) <small>(⛪)</small>
 * [javascript tutorial](https://www.javascripttutorial.net/) <small>(✈️)</small>
+* [modern-js-cheatshe](https://github.com/mbeaudru/modern-js-cheatsheet) (24k ⭐)
 </div><div>
 
 Most environments support `console.log` to print something.
@@ -34,6 +36,8 @@ General notes
 * 👉 Semicolon are optional. Be consistent.
 * 👉 Use `//` or `/* */` for comments.
 * 👉 Use `"use strict";` to enforce a [strict](https://www.w3schools.com/js/js_strict.asp) policy.
+
+JavaScript (JS) is based on ECMAScript. [See JavaScript versions](https://www.w3schools.com/Js/js_versions.asp).
 </div></div>
 
 <hr class="sep-both">
@@ -186,17 +190,23 @@ array[0] // undefined
 array[0] = 25
 array.pop() // []
 array.push(10, 13) // [10, 13]
+array.splice(0, 1) // remove 1 value from index 0
+array.splice(0, 0, xxx) // insert at 0
 // generate a new array
-array.concat(["10"]) // [10, 13, "10"]
+array.concat([25]) // [10, 13, "10"]
 array.reverse() // [13, 10]
-array.sort() // [10,13] | array.sort((a,b) => a - b)
-array.slice() // [10,13], deep clone
+array.sort() // [10, 13] | array.sort((a,b) => a - b)
+array.slice(0, 1) // clone with 1 values from index 0
 ```
 
 Well-known operations
 
 ```javascript
-array.forEach(v => { /* ... */ }) // iterate
+const array = [10, 13]
+array.forEach(v => { /* ... */ }) // iterate (...)
+array.filter(v => v === 10) // filter values ([10])
+array.reduce((a,b) => a+b, 0) // reduce to one value (23)
+array.map(v => v+"") // convert each value (['10','13'])
 ```
 
 Create an Array from an Iterable
@@ -528,21 +538,13 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-```javascript
-// filter (true=keep), map
-// reduce((a, b) => a + b, 0)
-// match (/xxx/ and /x/g)
-// reduce((a, b) => a + b, 0)
-// match (/xxx/ and /x/g, /x/i)
-this.events.splice(0, 0, xxx) // insert at 0
-```
-
 Learn
 
 * `.eslintrc`
-  * [airbnb](https://github.com/airbnb/javascript)
-* ESM import: `<script type="module">` (see [socket.io](https://socket.io/docs/v4/client-initialization/))
+* `match (/xxx/ and /x/g /x/i)`
+* [airbnb guidelines](https://github.com/airbnb/javascript)
 * [interesting code](https://stackoverflow.com/questions/21692646/how-does-facebook-disable-the-browsers-integrated-developer-tools)
+* ESM import: `<script type="module">` (see [socket.io](https://socket.io/docs/v4/client-initialization/))
 
 ```javascript
 // todo: node.js has some notes too :(
@@ -558,6 +560,4 @@ Random
 * [JSDoc](https://jsdoc.app/)
 * **Arrow functions**, or anonymous functions: there is no "this".
 * Closures / nested functions
-
-**[Old notes](_old.md)**
 </div></div>
