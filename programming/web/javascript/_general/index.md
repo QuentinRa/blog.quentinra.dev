@@ -334,12 +334,92 @@ const array = Object.entries(object)
 
 ## Classes
 
+*➡️ As a reminder, a class can be said to be a template used to create objects.*
+
 <div class="row row-cols-md-2"><div>
 
-...
+You can create and instantiate a class with a PHP-like syntax.
+
+```javascript
+class Person {
+    // only one
+    constructor(firstname, lastName = "Doe") {
+        this.firstname = firstname
+        this.lastName = lastName
+    }
+
+    toString() {
+        // you must use "this"
+        return this.firstname+" "+this.lastName
+    }
+}
+
+const johnDoe = new Person("John")
+johnDoe.firstname // "John"
+johnDoe.toString() // "John Doe"
+```
+
+#### Prototypes
+
+JavaScript is a prototyping language. Each variable has access to it's definition by using the attribute `__proto__`.
+
+```javascript
+const x = 5; x.__proto__;
+(5).__proto__; // same without variable
+```
+
+If you edit the prototype, then every object using this prototype will be updated. In short, you're dynamically updating their class.
+
+```javascript
+x.__proto__.square = function () { return this * this }
+x.square() // 25!
+const y = 10;
+y.square() // 100!
+```
 </div><div>
 
-...
+You can also dynamically add properties to one object
+
+```javascript
+const image = document.images[0] // get an image
+image.wasSelected = true // add a property 'wasSelected'
+image.wasSelected // true
+```
+
+#### Static/class members
+
+<p></p>
+
+```javascript
+class X {
+    static XXX_TOKEN = "XxX"
+    
+    static XXX() {
+        // you must use "this." or "X."
+        return this.XXX_TOKEN
+    }
+}
+X.XXX_TOKEN // "XxX"
+X.XXX() // "XxX"
+```
+
+#### Inheritance
+
+<p></p>
+
+```js
+class John extends Person {
+    constructor() {
+        super("John")
+    }
+
+    toString(){
+        return "John!" // change the behavior
+    }
+}
+new Person().toString() // "John Doe"
+new John().toString() // "John!"
+```
 </div></div>
 
 <hr class="sep-both">
