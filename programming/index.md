@@ -84,13 +84,14 @@ Programming languages (+tools) that I want to check, but never had the time.
 * [symfony](https://symfony.com/) ([nelmio](https://github.com/nelmio/NelmioApiDocBundle))
 * [laravel](https://laravel.com/)
 * [elm](https://elm-lang.org/) (language)
-* React/React Native/Ionic/Angular
+* React/React Native/Ionic/Angular/Next
+* NestJS, Fastify
 * [Dart](https://dart.dev/)
 * [Flutter](https://flutter.dev/)
 * [vercel](https://vercel.com/)
 * Webpack, rollupjs, parcel, Snowpack, WMR, and vite+vitest
 * Dust, EJS, Handlebars, Hogan.js, Pug (Jade), Twig, and Vash (express)
-* End-to-End Testing Solution ([cypress](https://www.cypress.io/how-it-works)/[browserstack](https://www.browserstack.com/)/[playwright](https://playwright.dev/)...)
+* End-to-End Testing Solution ([cypress](https://www.cypress.io/how-it-works)/[browserstack](https://www.browserstack.com/)/[playwright](https://playwright.dev/), Nightwatch.js ...)
 * Jasmine / QUnit / Karma / [jestjs](https://jestjs.io/docs/getting-started)
 * [Deno](https://deno.land/)
 * [nw.js](https://nwjs.io/) / [neutralinojs](https://github.com/neutralinojs/neutralinojs)

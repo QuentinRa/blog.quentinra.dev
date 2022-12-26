@@ -14,7 +14,7 @@ Stuff that I found, but never read/used yet.
 
 * CDNs ([keycdn](https://www.keycdn.com/))
 * semantic web ([protege](https://protege.stanford.edu/))
-* progressive web apps
+* progressive web apps (PWA)
 * color picker (console)
 </div><div>
 

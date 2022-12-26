@@ -357,7 +357,7 @@ Stuff that I found, but never read/used yet.
 * `data-*`
 * blob URL
 * SessionStorage
-* ServiceWorkers
+* ServiceWorkers ([article](https://levelup.gitconnected.com/boost-your-web-application-performance-with-javascript-web-workers-dcb050ea24a6))
 * [Get QueryParams](https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript)
 * [W3School](https://www.w3schools.com/Js/default.asp)
 * `window.location.href` / `window.location.replace(URL)`
