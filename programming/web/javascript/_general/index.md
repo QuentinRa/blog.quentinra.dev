@@ -560,4 +560,12 @@ Random
 * [JSDoc](https://jsdoc.app/)
 * **Arrow functions**, or anonymous functions: there is no "this".
 * Closures / nested functions
+
+Repositories
+
+* [Article](https://madza.hashnode.dev/21-github-repositories-to-become-a-javascript-master)
+* [javascript-algorithms](https://github.com/trekhleb/javascript-algorithms)
+* [clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript)
+* [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)
+* [33-js-concepts](https://github.com/leonardomso/33-js-concepts)
 </div></div>

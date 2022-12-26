@@ -404,6 +404,7 @@ Links
 * [Nuxt.js](https://nuxtjs.org/) (see [vuestripe](https://vuestripe.com/nuxt/), [and](https://github.com/nuxt/framework))
 * [vuemastery](https://www.vuemastery.com/)
 * [vueschool](https://vueschool.io/)
+* Native: [vue-native](https://github.com/GeekyAnts/vue-native-core) (deprecated) and [nativescript-vue](https://github.com/nativescript-vue/nativescript-vue)
 </div><div>
 
 ```

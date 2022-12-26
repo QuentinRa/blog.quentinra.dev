@@ -84,7 +84,8 @@ Programming languages (+tools) that I want to check, but never had the time.
 * [symfony](https://symfony.com/) ([nelmio](https://github.com/nelmio/NelmioApiDocBundle))
 * [laravel](https://laravel.com/)
 * [elm](https://elm-lang.org/) (language)
-* React/React Native/Ionic/Angular/Next
+* React/React Native (see [reactjsexample](https://reactjsexample.com/))
+* Ionic/Angular/Next
 * NestJS, Fastify
 * [Dart](https://dart.dev/)
 * [Flutter](https://flutter.dev/)
@@ -98,6 +99,7 @@ Programming languages (+tools) that I want to check, but never had the time.
 * chrome dev tools snippets
 * [headlessbrowserapi](https://headlessbrowserapi.com/)
 * [atmospherejs](https://atmospherejs.com/)
+* [weex](https://github.com/alibaba/weex)
 
 **JS libraries**
 
@@ -295,6 +297,7 @@ Websites that I found, but never used yet.
 * [ebens](https://ebens.me/blog) <small>(???)</small>
 * [fireship](https://fireship.io/) <small>(short articles)</small>
 * [codingbeautydev](https://codingbeautydev.com/) <small>(???)</small>
+* [madza](https://madza.hashnode.dev/) <small>(???)</small>
 
 **YouTube**
 
