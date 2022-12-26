@@ -6,14 +6,9 @@
 
 ## Basic Syntax
 
-* [Functions](syntax/function.md)
-
 You may use this too, but for some, the syntax above will be enough
 
 * [Exceptions](syntax/exceptions.md)
-* [Classes and objects](syntax/classes.md)
-* `JSON.stringify(v)`: convert v to a string
-* `JSON.parse(string)`: parse back a string to a value
 
 The <b>semicolon</b> <code>;</code> at the end of a line is optional. You may use it if you make more than one expression per line.
 

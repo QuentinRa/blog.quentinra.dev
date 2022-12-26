@@ -212,6 +212,16 @@ map.has('key') // check
 for(let [k,v] of map) { /* ... */ } // iterate
 // otherwise, generate an Iterable
 map.entries() | map.keys() | map.values()
+// 🥂 Convert an Object to a Map
+new Map(Object.entries(object))
+new Map(Object.entries(object))
+```
+
+Create a Map from an array/object
+
+```javascript
+new Map([["key", "value"], /* ... */])
+new Map(Object.entries(object))
 ```
 </div></div>
 
@@ -224,15 +234,18 @@ map.entries() | map.keys() | map.values()
 There are two ways to declare functions:
 
 ```javascript
-// global functions
+// global function
 function xxx() {}
 // scoped function
 const xxx = function () {}
-// scoped arrow function
+// scoped arrow/anonymous function
 const xxx = () => {}
 
 // 🥂 call
 const result = xxx(args)
+
+// 🔎 typeof
+if(typeof(xxx) === 'function') {}
 ```
 </div><div>
 
@@ -263,10 +276,45 @@ function pow(x, k = 1) { return x ** k; } // 5 ** 2 = 25
 
 <div class="row row-cols-md-2"><div>
 
-...
+JavaScript supports [JSON](/programming/data/json.md) natively, which some changes.
+
+```javascript
+const object = {
+    //  ✅ you don't need to quotes keys
+    key: "value",
+    // ✅ a trailing ',' is allowed
+    myFunction: () => 5,
+}
+const object = [{}, [ {}, {} ]] // JSONArray
+```
+
+```javascript
+// access a propery
+object.key
+object["key"] // 🥂 also works
+```
 </div><div>
 
-...
+#### Convert a JSON to a String
+
+```javascript
+const jsonString = JSON.stringify(object) 
+// pretty format (2/4 spaces)
+const jsonString = JSON.stringify(object, null, 2) 
+const jsonString = JSON.stringify(object, null, 4) 
+```
+
+#### Convert a String to a JSON
+
+```javascript
+const object = JSON.parse(jsonString) 
+```
+
+#### Convert a JSON to an array of arrays
+
+```javascript
+const array = Object.entries(object)
+```
 </div></div>
 
 <hr class="sep-both">
@@ -322,8 +370,6 @@ this.events.splice(0, 0, xxx) // insert at 0
 
 setTimeout(function () { },  xxx);
 setInterval(function () { },  xxx);
-
-new Map(Object.entries(r.paris))
 ```
 
 ```javascript
