@@ -59,6 +59,8 @@ const x = null?.toString() // null
 const x = null?.toString() ?? default_value // default_value
 ```
 
+➡️ An alternative to `??` is `||`, for instance, `undefined || 50` returns 50. It's not quite used, and most likely a "hack".
+
 </div><div>
 
 Types are implicit in JavaScript. See **typeof**/**instanceof**.
@@ -195,7 +197,7 @@ Create an Array from an Iterable
 
 ```javascript
 const array = Array.from(anIterable) // NodeList...
-const array = [...anIterable] // ~same
+const array = [...anIterable] // ~same 🤔
 ```
 
 ##### Maps
@@ -219,10 +221,40 @@ map.entries() | map.keys() | map.values()
 
 <div class="row row-cols-md-2"><div>
 
-...
+There are two ways to declare functions:
+
+```javascript
+// global functions
+function xxx() {}
+// scoped function
+const xxx = function () {}
+// scoped arrow function
+const xxx = () => {}
+
+// 🥂 call
+const result = xxx(args)
+```
 </div><div>
 
-...
+➡️ Every function returns something: `undefined`, or a value. Also, if the expected arguments aren't passed, they will be `undefined`.
+
+```javascript
+// ✅ All of these are doing the same (v * v)
+function pow(v) { return v * v }
+const pow = function (v) { return v * v }
+const pow = (v) => { return v * v }
+const pow = (v) => { v * v }
+const pow = (v) => v * v
+const pow = v => v * v
+// ⚠️ for objects, you need parenthesis
+const pow = v => ({ key: 'value' })
+```
+
+You can give **default values** to arguments.
+
+```javascript
+function pow(x, k = 1) { return x ** k; } // 5 ** 2 = 25
+```
 </div></div>
 
 <hr class="sep-both">
@@ -278,6 +310,7 @@ const merge = Object.assign({name: 'toto', age: 10}, { age: 15 })
 // reduce((a, b) => a + b, 0)
 // match (/xxx/ and /x/g)
 new Date().toTimeString().substring(0,8)
+new Date().getTime()
 class X {
     static xxx = 0;
     static xxx(args) {}
@@ -289,6 +322,8 @@ this.events.splice(0, 0, xxx) // insert at 0
 
 setTimeout(function () { },  xxx);
 setInterval(function () { },  xxx);
+
+new Map(Object.entries(r.paris))
 ```
 
 ```javascript
@@ -322,7 +357,8 @@ Random
 * [javascript.com](https://www.javascript.com/learn)
 * [JS minifier](https://javascriptminifier.com/)
 * [JSDoc](https://jsdoc.app/)
-* there is no "this" in the new fun
+* **Arrow functions**, or anonymous functions: there is no "this".
+* Closures / nested functions
 
 **[Old notes](_old.md)**
 </div></div>

@@ -364,16 +364,8 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 ```javascript
-function devtoolIsOpening() {
-    console.clear();
-    let before = new Date().getTime();
-    debugger; // only resuming when closed
-    let after = new Date().getTime();
-    if (after - before > 200) {
-        document.write(" Dont open Developer Tools. ");
-    }
-    setTimeout(devtoolIsOpening, 100);
-}
-devtoolIsOpening();
+print()
+debugger; // only resuming when closed
+document.write(" Dont open Developer Tools. ");
 ```
 </div></div>
