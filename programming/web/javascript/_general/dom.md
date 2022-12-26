@@ -262,6 +262,53 @@ form.onsubmit = (event) => {
 
 <hr class="sep-both">
 
+## ✈ Request an API ️✈️
+
+*See also, [APIs](/programming/web/apis/index.md), and [Async, await, and Promises](/programming/web/javascript/_general/index.md#-asynchronous-work-and-promises-)*
+
+<div class="row row-cols-md-2"><div>
+
+The [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) is the easiest, and most used to do API requests.
+
+```javascript
+// you can use a try-catch to catch errors
+const res = await fetch("URL" , params)
+// or
+fetch('URL', params)
+    .then(res => res.xxx())
+    .then(xxx => /* ... */)
+    .catch(err => /* ... */)
+```
+
+Note that `res` is a pending request, you need to ask for an output.
+
+```javascript
+const json = await res.json() // as a json object
+const text = await res.text() // as a string
+```
+
+</div><div>
+
+**GET** is the default if no params are provided.
+
+```javascript
+const params = { method: "GET", }
+```
+
+**POST/PUT/PATCH** are usually taking a **body**.
+
+```javascript
+const params = {
+    method: "POST",
+    body: JSON.stringify({ username: "xxx" }),
+}
+```
+
+You can add headers with `headers: { "name": "value" },`.
+</div></div>
+
+<hr class="sep-both">
+
 ## ⚡ Special features ⚡
 
 <div class="row row-cols-md-2 mt-3"><div>
@@ -369,15 +416,5 @@ print()
 debugger; // only resuming when closed
 document.write(" Dont open Developer Tools. ");
 window.confirm('Are you sure?')
-```
-
-```javascript
-const params = {
-    method: "POST",
-    body: JSON.stringify({}),
-    headers: {"Content-type":"application/json;charset=UTF-8"}
-}
-await fetch("URL" , params)
-// try catch
 ```
 </div></div>

@@ -1,12 +1,4 @@
-# Example API - MusicBrainz
-
-[Go back](../index.md#rest-api)
-
-This is an example of using MusicBrainz's API with **XMLHttpRequest** and **fetch**. This is laughable, how in a mere 3 lines, we got the same result with fetch 😭.
-
-<hr class="sl">
-
-## XMLHttpRequest
+# XMLHttpRequest
 
 ```js
 const MAIN_END_POINT = "https://musicbrainz.org/ws/2/";
@@ -40,17 +32,5 @@ call_api("release?artist=65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab&status=bootleg&typ
         console.log(resolve)
     })
     // handle the error
-    .catch(console.error)
-```
-
-<hr class="sr">
-
-## fetch
-
-```js
-const MAIN_END_POINT = "https://musicbrainz.org/ws/2/";
-const ROUTE = "release?artist=65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab&status=bootleg&type=live&limit=1&fmt=json";
-fetch(MAIN_END_POINT+ROUTE)
-    .then(response => console.log(response.json()))
     .catch(console.error)
 ```
