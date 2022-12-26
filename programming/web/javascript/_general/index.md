@@ -9,6 +9,13 @@ JavaScript (JS) is a popular language used to develop
 * 🖥️ Desktop applications <small>(Electron.js...)</small>
 * 🧪 Programming styles like [JsFuck](https://github.com/aemkei/jsfuck) (7.3k ⭐)
 * ...
+
+**Where to learn?**
+
+* [W3Schools/JavaScript](https://www.w3schools.com/js/default.asp) <small>(see also Best Practices and Common mistakes)</small>
+* [iLoveCodingOrg/cheatsheet](https://github.com/iLoveCodingOrg/javascript-cheatsheet) <small>(quite complete, well presented)</small>
+* [javascript.info](https://javascript.info/) <small>(⛪)</small>
+* [javascript tutorial](https://www.javascripttutorial.net/) <small>(✈️)</small>
 </div><div>
 
 Most environments support `console.log` to print something.
@@ -21,6 +28,12 @@ console.info("informative message")
 // if available, used to clear the console
 console.clear();
 ```
+
+General notes
+
+* 👉 Semicolon are optional. Be consistent.
+* 👉 Use `//` or `/* */` for comments.
+* 👉 Use `"use strict";` to enforce a [strict](https://www.w3schools.com/js/js_strict.asp) policy.
 </div></div>
 
 <hr class="sep-both">
@@ -519,12 +532,15 @@ Stuff that I found, but never read/used yet.
 // filter (true=keep), map
 // reduce((a, b) => a + b, 0)
 // match (/xxx/ and /x/g)
+// reduce((a, b) => a + b, 0)
+// match (/xxx/ and /x/g, /x/i)
 this.events.splice(0, 0, xxx) // insert at 0
 ```
 
 Learn
 
 * `.eslintrc`
+  * [airbnb](https://github.com/airbnb/javascript)
 * ESM import: `<script type="module">` (see [socket.io](https://socket.io/docs/v4/client-initialization/))
 * [interesting code](https://stackoverflow.com/questions/21692646/how-does-facebook-disable-the-browsers-integrated-developer-tools)
 
@@ -537,9 +553,7 @@ require('./exports.js');
 
 Random
 
-* [javascript.info](https://javascript.info/)
-* [javascripttutorial](https://www.javascripttutorial.net/)
-* [javascript.com](https://www.javascript.com/learn)
+* [javascript.com](https://www.javascript.com/learn/strings)
 * [JS minifier](https://javascriptminifier.com/)
 * [JSDoc](https://jsdoc.app/)
 * **Arrow functions**, or anonymous functions: there is no "this".

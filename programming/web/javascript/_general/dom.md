@@ -367,6 +367,7 @@ Stuff that I found, but never read/used yet.
 print()
 debugger; // only resuming when closed
 document.write(" Dont open Developer Tools. ");
+window.confirm('Are you sure?')
 ```
 
 ```javascript

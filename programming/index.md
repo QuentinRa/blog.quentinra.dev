@@ -304,6 +304,7 @@ Websites that I found, but never used yet.
 * [omundy](https://github.com/omundy)
 * [developer-y](https://github.com/Developer-Y/cs-video-courses)
 * [build-your-own-x](https://github.com/codecrafters-io/build-your-own-x)
+* [project-guidelines](https://github.com/elsewhencode/project-guidelines)
 
 **Practice**
 

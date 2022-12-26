@@ -2,12 +2,6 @@
 
 **[Updated notes](index.md)**
 
-The <b>semicolon</b> <code>;</code> at the end of a line is optional. You may use it if you make more than one expression per line.
-
-You can make <b>comments</b> using <code>/* a comment */</code> or <code>// a comment</code> as you would in Java/C.
-
-You can add ["use strict"](https://www.w3schools.com/js/js_strict.asp) inside a file/function to disallow the use of non-declared variables, and throw errors instead of ignoring "bad syntax".
-
 <hr class="sl">
 
 ## REST API
@@ -26,18 +20,6 @@ When you are calling an API, you are requesting something from another website, 
 * [Async/await](api/async.md)
 * [Example API - MusicBrainz](api/example.md)
 <hr class="sl">
-
-## External resources
-
-**Guidelines**
-
-* [W3Schools - Guidelines](https://www.w3schools.com/js/js_conventions.asp) with [their best practices](https://www.w3schools.com/js/js_best_practices.asp) and the [common mistakes](https://www.w3schools.com/js/js_mistakes.asp)
-* [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
-* [clean-code-javascript](https://github.com/elsewhencode/project-guidelines) (😍, I didn't read everything, but I took note of a lot of things for later)
-
-**CheatSheets**
-
-Any cheatsheet is longer and more complete than this course 😭. Still, this one [javascript-cheatsheet](https://raw.githubusercontent.com/iLoveCodingOrg/javascript-cheatsheet/master/js-cheatsheet.pdf) ([source](https://github.com/iLoveCodingOrg/javascript-cheatsheet)) is quite good and the most readable of them. This [one is quite good too (codewithharry)](https://www.codewithharry.com/blogpost/javascript-cheatsheet), and this [one is good (pythoncheatsheet)](https://javascript.pythoncheatsheet.org/).
 
 <hr class="sr">
 
