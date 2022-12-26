@@ -428,10 +428,39 @@ new John().toString() // "John!"
 
 <div class="row row-cols-md-2"><div>
 
-...
+#### Catch exceptions
+
+Exceptions are used to report that something unexpected occurred, which is mostly an error (`Error`, `EvalError`, `RangeError`...).
+
+```javascript
+// raise an exception
+throw new Error();
+// capture an exception
+try {} catch {}
+// capture and deal with an exception
+try {} catch (e) {}
+```
 </div><div>
 
-...
+#### Spread syntax
+
+The spread syntax allow us to expand something.
+
+```javascript
+const powArgs = [5, 2]
+const pow = (n, k) => n ** k
+// instead of
+pow(powArgs[0], powArgs[1]) //  25
+// use
+pow(...powArgs) // pow(5, 2) = 25
+```
+
+You can use it
+
+* ➡️ To deep clone an array with `[...array]`
+* ➡️ To deep clone an object with `{...obj}`
+* ➡️ Create an array of unique elements with `[...new Set(array)]`
+* ...
 </div></div>
 
 <hr class="sep-both">

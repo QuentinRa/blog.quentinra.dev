@@ -2,21 +2,11 @@
 
 **[Updated notes](index.md)**
 
-<hr class="sr">
-
-## Basic Syntax
-
-You may use this too, but for some, the syntax above will be enough
-
-* [Exceptions](syntax/exceptions.md)
-
 The <b>semicolon</b> <code>;</code> at the end of a line is optional. You may use it if you make more than one expression per line.
 
 You can make <b>comments</b> using <code>/* a comment */</code> or <code>// a comment</code> as you would in Java/C.
 
 You can add ["use strict"](https://www.w3schools.com/js/js_strict.asp) inside a file/function to disallow the use of non-declared variables, and throw errors instead of ignoring "bad syntax".
-
-* [Spread syntax](syntax/spread.md)
 
 <hr class="sl">
 
