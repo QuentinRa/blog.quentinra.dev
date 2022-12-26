@@ -120,6 +120,7 @@ switch (value) {
 while (cond) { /* ... */ }
 do { /* ... */ } while (boolean)
 ```
+</div><div>
 
 ##### for (i) and for (each)
 
@@ -152,9 +153,48 @@ if (0 in [0, 1]) {} // true
 // same as 'obj.hasOwnProperty("x")'
 if ("x" in { "x": "..." }) {} // true
 ```
+
+</div></div>
+
+<hr class="sep-both">
+
+## Advanced notes on usual types
+
+<div class="row row-cols-md-2"><div>
+
+#### Arrays
+
+```javascript
+const array = []
+// get info
+array.length // 0
+array[0] // undefined
+// edit
+array[0] = 25
+array.pop() // []
+array.push(10, 13) // [10, 13]
+// generate a new array
+array.concat(["10"]) // [10, 13, "10"]
+array.reverse() // [13, 10]
+array.sort() // [10,13] | array.sort((a,b) => a - b)
+array.slice() // [10,13], deep clone
+```
+
+Well-known operations
+
+```javascript
+array.forEach(v => { /* ... */ }) // iterate
+```
+
+Create an Array from an Iterable
+
+```javascript
+const array = Array.from(anIterable) // NodeList...
+const array = [...anIterable] // ~same 🤔
+```
 </div><div>
 
-##### Strings
+#### Strings
 
 ```javascript
 const xxx = "xxx"
@@ -173,34 +213,7 @@ xxx.replace('x', 'y') // "yxx"
 xxx.replaceAll('x', 'y') // "yyy"
 ```
 
-##### Arrays
-
-```javascript
-const array = []
-// get info
-array.length // 0
-array[0] // undefined
-// edit
-array[0] = 25
-array.pop() // []
-array.push(10, 13) // [10, 13]
-// generate a new array
-array.concat(["10"]) // [10, 13, "10"]
-array.reverse() // [13, 10]
-array.sort() // [10,13] | array.sort((a,b) => a - b)
-array.slice() // [10,13], deep clone
-// operations
-array.forEach(v => { /* ... */ })
-```
-
-Create an Array from an Iterable
-
-```javascript
-const array = Array.from(anIterable) // NodeList...
-const array = [...anIterable] // ~same 🤔
-```
-
-##### Maps
+#### Maps
 
 [See MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 
