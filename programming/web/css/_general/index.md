@@ -22,6 +22,12 @@ Stuff that I found, but never read/used yet.
 * MaterialUI
 * Bootstrap icons
 * SASS (see TP2/...)
+
+```
+$ npm i -g csso
+$ npm i -g csso-cli
+```
+
 * Stylus/Compass/LESS/SASS
 * [bootstrapshuffle](https://bootstrapshuffle.com/)
 * [tailwindcss](https://tailwindcss.com/)

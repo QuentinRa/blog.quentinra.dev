@@ -178,4 +178,10 @@ Stuff that I found, but never read/used yet.
 * dot sourcing: `. xxx.ps1`
 * Windows installer files (also known as .msi files) are used to install applications on the system.
 </div><div>
+
+```powershell
+PS> sass
+sass.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+PS> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+```
 </div></div>

@@ -7,6 +7,7 @@
 * 👉 Validate a form <small>(errors, autocompletion, ...)</small>
 * 👉 Handling events <small>(clicks, show/hide something, ...)</small>
 * 👉 Connect to an API <small>(fetch...)</small>
+* 🥂 For a programmer, it can be used on someone else's website, to automate a task, to bypass a restriction... 
 * ...
 </div><div>
 
@@ -17,9 +18,6 @@ Some browsers may not support some newly added features.
 
 JavaScript (JS) is based on ECMAScript. **ECMAScript2016** (ES6) is fully supported since late 2016/early 2017, while for ES6+, providers/vendors are implementing the features they want.
 </div></div>
-
-⚠️ Modern browsers are usually caching JavaScript files. If you changed a file, and don't see any changes, clear the cache, and try again.<br>
-Usual shortcuts: <kbd>CTRL+SHIFT+R</kbd> or <kbd>SHIFT+F5</kbd> or <kbd>CTRL+F5</kbd>
 
 <hr class="sep-both">
 
@@ -65,6 +63,8 @@ This is the proper way to do it. It allows us to minify JavaScript, use CDNs, ha
 </tr>
 </tbody>
 </table>
+
+⚠️ **Note**: Modern browsers are usually caching JavaScript files. If you changed a file, and don't see any changes, clear the cache, and try again. Usual shortcuts to reload the page while ignoring the cache are: <kbd>CTRL+SHIFT+R</kbd> or <kbd>SHIFT+F5</kbd> or <kbd>CTRL+F5</kbd>. ⚠️
 
 <hr class="sep-both">
 
@@ -161,7 +161,7 @@ if (style.visibility === 'hidden') { /* ..; */ }
 
 ```html
 <!-- ❌ inside the HTML. Use this to get the button. -->
-<button id="ex" onclick="console.log(event, this)">xxx</button>
+<button onclick="console.log(event, this)">xxx</button>
 ```
 
 ```javascript
@@ -173,7 +173,7 @@ btn.onclick = (event) => { console.log(event, btn) }
 btn.addEventListener('click', (event) => { console.log(event, btn) })
 ```
 
-JSEvents that may use are the following. Add `on` before the name, like `onclick` to get the HTML attribute.
+Add `on` before the name, like `click` would become `onclick` to get the HTML attribute from a JSEvent.
 
 * `click`: called when we clicked on the component
 * `load`: called when the component was loaded
@@ -181,13 +181,12 @@ JSEvents that may use are the following. Add `on` before the name, like `onclick
 * `mouseover`: trigger function on mouse entering
 * `mouseout`: trigger function on mouse exiting
 * [See: HTML events](https://www.w3schools.com/TAGs/ref_eventattributes.asp) and [Global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+</div><div>
 
 Useful attributes/methods to call on an event are
 
 * `event.preventDefault()`: don't further handle the event <small>(ex: stop a link from opening another page, a form from being submitted...)</small>
 * `event.target`: the element on which we clicked/...
-
-</div><div>
 
 #### Examples
 
@@ -216,7 +215,7 @@ document.onkeydown = e => {
 
 <hr class="sep-both">
 
-## Validating Forms
+## 🔎 Validating Forms 🔎
 
 <div class="row row-cols-md-2 mt-3"><div>
 
@@ -355,6 +354,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+* `data-*`
+* blob URL
 * SessionStorage
 * ServiceWorkers
 * [Get QueryParams](https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript)
