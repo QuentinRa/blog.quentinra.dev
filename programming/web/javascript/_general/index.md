@@ -306,9 +306,21 @@ const object = [{}, [ {}, {} ]] // JSONArray
 object.key
 object["key"] // 🥂 also works
 ```
+
+#### Deconstruct objects/arrays
+
+You can deconstruct an object to easily access it's values.
+
+```javascript
+const {x1, x2} = { x1: 'xxx', x2: 'yyy' }
+const [a, b] = [0, 1]
+```
+
 </div><div>
 
 #### Convert a JSON to a String
+
+<p></p>
 
 ```javascript
 const jsonString = JSON.stringify(object) 
@@ -319,14 +331,25 @@ const jsonString = JSON.stringify(object, null, 4)
 
 #### Convert a String to a JSON
 
+<p></p>
+
 ```javascript
 const object = JSON.parse(jsonString) 
 ```
 
 #### Convert a JSON to an array of arrays
 
+<p></p>
+
 ```javascript
 const array = Object.entries(object)
+```
+
+#### Merge objects
+
+```javascript
+Object.assign({name: 'toto', age: 10}, {age: 15})
+// {name: 'toto', age: 15}
 ```
 </div></div>
 
@@ -440,6 +463,27 @@ try {} catch {}
 // capture and deal with an exception
 try {} catch (e) {}
 ```
+
+#### Date and time
+
+The library [moment.js](https://github.com/moment/moment) (47k ⭐) is quite used to deal with dates/...
+
+```javascript
+new Date().getTime() // time since 1970
+new Date().toTimeString().substring(0,8) // hh:mm:ss
+```
+
+#### Utilities
+
+<p></p>
+
+```javascript
+// call after xxx ms (1000 = 1s)
+setTimeout(function () { },  5000);
+// repeat every xxx ms (1000 = 1s)
+const it = setInterval(function () { },  5000);
+clearInterval(it)
+```
 </div><div>
 
 #### Spread syntax
@@ -472,44 +516,16 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 ```javascript
-const f = (args) => (5);
-const {x1, x2} = { x1: 'xxx', x2: 'yyy' }
-const [a,b] = [0,1]
-const merge = Object.assign({name: 'toto', age: 10}, { age: 15 })
 // filter (true=keep), map
 // reduce((a, b) => a + b, 0)
 // match (/xxx/ and /x/g)
-new Date().toTimeString().substring(0,8)
-new Date().getTime()
-class X {
-    static xxx = 0;
-    static xxx(args) {}
-    xxx() {
-        return this.xxx
-    }
-}
 this.events.splice(0, 0, xxx) // insert at 0
-
-setTimeout(function () { },  xxx);
-setInterval(function () { },  xxx);
 ```
-
-```javascript
-const params = {
-    method: "POST",
-    body: JSON.stringify({}),
-    headers: {"Content-type":"application/json;charset=UTF-8"}
-}
-await fetch("URL" , params)
-// try catch
-```
-</div><div>
 
 Learn
 
 * `.eslintrc`
 * ESM import: `<script type="module">` (see [socket.io](https://socket.io/docs/v4/client-initialization/))
-* moment.js
 * [interesting code](https://stackoverflow.com/questions/21692646/how-does-facebook-disable-the-browsers-integrated-developer-tools)
 
 ```javascript
@@ -517,6 +533,7 @@ Learn
 module.exports = {};
 require('./exports.js');
 ```
+</div><div>
 
 Random
 

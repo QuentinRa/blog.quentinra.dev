@@ -368,4 +368,14 @@ print()
 debugger; // only resuming when closed
 document.write(" Dont open Developer Tools. ");
 ```
+
+```javascript
+const params = {
+    method: "POST",
+    body: JSON.stringify({}),
+    headers: {"Content-type":"application/json;charset=UTF-8"}
+}
+await fetch("URL" , params)
+// try catch
+```
 </div></div>
