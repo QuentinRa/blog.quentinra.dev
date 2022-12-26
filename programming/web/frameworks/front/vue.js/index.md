@@ -333,11 +333,55 @@ const router = createRouter({
 })
 ```
 
+#### Useful methods
+
 You can move to another page with
 
 ```javascript
 this.$router.push({ name:'about' })
 ```
+
+You can get query parameters (`?xxx=yyy`) or params (`/user/:id`) with
+
+```javascript
+this.$route.query.xxx
+this.$route.params.id
+```
+</div></div>
+
+<hr class="sep-both">
+
+## 🥂 Using Bootstrap in Vue 🥂
+
+<div class="row row-cols-md-2"><div>
+
+First, install bootstrap
+
+```
+$ npm install bootstrap
+```
+
+Remove everything inside `main.css`. You may keep the import.
+
+```diff
+@import './base.css';
+
+- [...]
+```
+</div><div>
+
+Inside `main.js`, import bootstrap's css.
+
+```diff
+...
+import "./assets/main.css";
++import "bootstrap/dist/css/bootstrap.css";
+
+const app = createApp(App);
+...
+```
+
+Done! 🥂
 </div></div>
 
 <hr class="sep-both">
@@ -352,11 +396,12 @@ this.$router.push({ name:'about' })
 * template refs
 * Preprocessors (ts, scss)
 * `@/main` matches `src/main.js` (shortcut for src)
+* `import "./assets/main.css";`
 
 Links
 
 * [pinia](https://pinia.vuejs.org/)
-* [Nuxt.js](https://nuxtjs.org/) (see [vuestripe](https://vuestripe.com/nuxt/))
+* [Nuxt.js](https://nuxtjs.org/) (see [vuestripe](https://vuestripe.com/nuxt/), [and](https://github.com/nuxt/framework))
 * [vuemastery](https://www.vuemastery.com/)
 * [vueschool](https://vueschool.io/)
 </div><div>

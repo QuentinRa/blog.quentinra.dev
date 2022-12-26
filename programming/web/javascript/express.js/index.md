@@ -9,8 +9,11 @@ Express can be used to create websites or APIs.
 
 ```powershell
 $ npx --yes --package express-generator express --force --no-view
+$ npm install
 $ npm audit fix --force
 ```
+
+➡️ Don't forget to add a [.gitignore](/it/dev/git-project/index.md#-gitignore), and maybe a linter too.
 </div><div>
 
 **Understand your generated project**
