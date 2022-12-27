@@ -45,6 +45,7 @@ Programming languages (+tools) that I want to check, but never had the time.
 * [algolia](https://www.algolia.com/) <small>(add a searchbar?, see bt)</small>
 * [simpleen](https://simpleen.io/) <small>(localization)</small>
 * [crowdin](https://crowdin.com/) <small>(localization)</small>
+* [i18next](https://www.i18next.com/) <small>(localization)</small>
 * [courier](https://www.courier.com/) <small>(notifications)</small>
 * [pusher](https://pusher.com/) <small>(notifications)</small>
 * [postmarkapp](https://postmarkapp.com/) <small>(emails)</small>
@@ -67,6 +68,7 @@ Google
 * [wakatime](https://wakatime.com/) <small>(metrics)</small>
 * [xmind](https://xmind.app/) <small>(brainstorming)</small>
 * Slack
+* [kandi](https://kandi.openweaver.com/) <small>(???)</small>
 
 **Markdown-based**
 
@@ -101,7 +103,7 @@ Google
 * Webpack, rollupjs, parcel, Snowpack, WMR, and vite+vitest
 * Dust, EJS, Handlebars, Hogan.js, Pug (Jade), Twig, and Vash (express)
 * End-to-End Testing Solution ([cypress](https://www.cypress.io/how-it-works)/[browserstack](https://www.browserstack.com/)/[playwright](https://playwright.dev/), Nightwatch.js ...)
-* Jasmine / QUnit / Karma / [jestjs](https://jestjs.io/docs/getting-started)
+* Jasmine / QUnit / [Karma](https://github.com/karma-runner) / [jestjs](https://jestjs.io/docs/getting-started) (+[frisby](https://github.com/vlucas/frisby))
 * [Deno](https://deno.land/)
 * [nw.js](https://nwjs.io/) / [neutralinojs](https://github.com/neutralinojs/neutralinojs)
 * chrome dev tools snippets
@@ -110,7 +112,8 @@ Google
 * [weex](https://github.com/alibaba/weex)
 * [Mosaic](https://github.com/Authman2/Mosaic)
 * [gatsbyjs](https://www.gatsbyjs.com/)
-* [i18next](https://www.i18next.com/)
+* [hapi](https://hapi.dev/)
+* [logfetch](https://logfetch.com/)
 
 **JS libraries**
 
@@ -134,6 +137,8 @@ Google
 * [codepen](https://codepen.io/) (???)
 * [codesandbox](https://codesandbox.io/) (???)
 * [jsfiddle](https://jsfiddle.net/) (???)
+* [jseditor](https://jseditor.io/)
+* [playcode](https://playcode.io/)
 
 **Learned** (but there is no notes about them)
 
@@ -205,6 +210,7 @@ Websites that I found, but never used yet.
 * [hackr.io](https://hackr.io/) <small>(aggregate)</small>
 * [hashnode.com](https://hashnode.com/community) <small>(community-based?)</small>
 * [opensource.com](https://opensource.com/) <small>(community-based?)</small>
+* [leanpub](https://leanpub.com/) <small>(books, paid)</small>
 
 **MOOCs**
 

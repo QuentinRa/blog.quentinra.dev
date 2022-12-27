@@ -409,6 +409,8 @@ Stuff that I found, but never read/used yet.
 Continuous Integration (CI)
 
 * [Heroku](https://www.heroku.com/home) / [Heroku (student)](https://www.heroku.com/students)
+* Grunt / webhooks / grafana / prometheus
+* codeclimate / gh_codescan
 * Git Hooks and [husky](https://github.com/typicode/husky)
 * [Basics of CI/CD](https://levelup.gitconnected.com/basics-of-ci-cd-a98340c60b04)
 
@@ -432,6 +434,7 @@ Random
 * [gitter](https://gitter.im/)
 * [ossf](https://github.com/ossf/scorecard)
 * [coveralls](https://coveralls.io/)
+* [contrib.rocks](https://contrib.rocks/preview)
 </div><div>
 
 * [GitHub Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)

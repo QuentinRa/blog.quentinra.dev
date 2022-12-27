@@ -20,7 +20,11 @@ Stuff that I found, but never read/used yet.
 
 * aria (`aria-label`)
 * role attribute (`role="search"`)
+* mhtml
 </div><div>
 
+```html
+<noscript></noscript>
+```
 
 </div></div>

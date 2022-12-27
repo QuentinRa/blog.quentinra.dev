@@ -15,7 +15,11 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 ##### QR Codes
 
-* [onelink.to](https://www.onelink.to/)
+* [onelink.to](https://www.onelink.to/) (👻)
+
+##### Notes
+
+* [dontpad](https://dontpad.com/) (public, 👻)
 </div></div>
 
 <hr class="sep-both">
@@ -26,7 +30,7 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 ##### Music
 
-* [fl-studio](https://www.image-line.com/fl-studio/)
+* [fl-studio](https://www.image-line.com/fl-studio/) (👻)
 </div><div>
 </div></div>
 
@@ -70,11 +74,11 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 ##### Whiteboard
 
-* [excalidraw](https://github.com/excalidraw/excalidraw)
+* [excalidraw](https://github.com/excalidraw/excalidraw) (👻)
 
 ##### Trees
 
-* [ironcreek](https://ironcreek.net/syntaxtree/)  (syntaxtree)
+* [ironcreek](https://ironcreek.net/syntaxtree/)   (👻, syntaxtree)
 </div><div>
 
 ##### Graphs
@@ -100,10 +104,10 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 #### Retail
 
-* [laptopservice.fr](https://www.laptopservice.fr/)
-* [afbshop.fr](https://www.afbshop.fr/)
-* [dealabs.com](https://www.dealabs.com/)
-* [backmarket.com](https://www.backmarket.com/)
+* [laptopservice.fr](https://www.laptopservice.fr/) (👻)
+* [afbshop.fr](https://www.afbshop.fr/) (👻)
+* [dealabs.com](https://www.dealabs.com/) (👻)
+* [backmarket.com](https://www.backmarket.com/) (👻)
 </div><div>
 </div></div>
 
@@ -125,8 +129,8 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 Drive
 
-* [filerun](https://filerun.com/)
-* [nextcloud](https://nextcloud.com/)
+* [filerun](https://filerun.com/) (👻)
+* [nextcloud](https://nextcloud.com/) (👻)w
 
 </div><div>
 </div></div>

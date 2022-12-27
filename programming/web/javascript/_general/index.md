@@ -635,7 +635,7 @@ Random
 * [javascript.com](https://www.javascript.com/learn/strings)
 * [JS minifier](https://javascriptminifier.com/)
 * [JSDoc](https://jsdoc.app/)
-* [jsben.ch](https://jsben.ch/)
+* [jsben.ch](https://jsben.ch/) / [jsperf](https://github.com/jsperf/jsperf.com)
 * **Arrow functions**, or anonymous functions: there is no "this".
 * Closures / nested functions
 * `delete xxx`
