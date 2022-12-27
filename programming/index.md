@@ -60,6 +60,10 @@ Google
 * [firebase](https://firebase.google.com/) <small>(???)</small>
 * FeedBurner <small>(RSS)</small>
 
+Translations
+
+* [deepl](https://www.deepl.com/translator)
+
 **Tools~Software**
 
 * [editorconfig](https://editorconfig.org/)
@@ -126,8 +130,13 @@ Google
 * [jsencrypt](https://github.com/travist/jsencrypt) and [article](https://travistidwell.com/jsencrypt/)
 * [emojione](https://github.com/joypixels/emojione) and [emoji-toolkit](https://github.com/joypixels/emoji-toolkit)
 * [unified](https://github.com/unifiedjs/unified) / [remark](https://github.com/remarkjs/remark)
+* [tesseract.js](https://github.com/naptha/tesseract.js)
 
 </div><div>
+
+**Databases**
+
+* [duckdb](https://github.com/duckdb/duckdb)
 
 **Editors**
 
@@ -274,6 +283,7 @@ Websites that I found, but never used yet.
 * [ilikekillnerds](https://ilikekillnerds.com/) <small>(???)</small>
 * [bobbyhadz](https://bobbyhadz.com/) <small>(???)</small>
 * [debugandrelease](https://www.debugandrelease.com/) <small>(electron)</small>
+* [svelte](https://github.com/sveltejs/svelte) <small>(electron)</small>
 
 **Blockchains focused**
 
@@ -322,6 +332,9 @@ Websites that I found, but never used yet.
 * [interactiveknowledge](https://interactiveknowledge.com/insights) <small>(???)</small>
 * [akshaydeo](https://www.akshaydeo.com/) <small>(electron...)</small>
 * [dmitripavlutin](https://dmitripavlutin.com/) <small>(Vue, JS, TS...)</small>
+* [makeuseof](https://www.makeuseof.com/)
+* [helpdeskgeek](https://helpdeskgeek.com/)
+* [ihax](https://ihax.io/)
 
 **YouTube**
 
@@ -341,6 +354,8 @@ Websites that I found, but never used yet.
 * [leetcode](https://leetcode.com/)
 * [codewars](https://www.codewars.com/)
 * [hackerrank](https://www.hackerrank.com/)
+* [lugo-test](https://www.lugo-test.com/)
+* [adventofcode](https://adventofcode.com/)
 
 **Cheatsheet**
 
@@ -375,11 +390,11 @@ Random stuff...
 **News**
 
 * [rankred](https://www.rankred.com/)
-* [daily.dev](https://daily.dev/)
+* [daily.dev](https://daily.dev/) ([api](https://api.daily.dev/get?r=xxxx))
 * [polygon](https://www.polygon.com/) (movies, games...)
 * [getdroidtips](https://www.getdroidtips.com/) (games, android...)
 * [80](https://80.lv/) (games...)
-* [makeuseof](https://www.makeuseof.com/)
+* [techno360](https://www.techno360.in/)
 
 **Help/Search/...**
 
@@ -387,4 +402,5 @@ Random stuff...
 * [codeproject](https://www.codeproject.com/)
 * [codegrepper](https://www.codegrepper.com/index.php)
 * ChatGPT
+* [answersblurb](https://answersblurb.com/)
 </div></div>

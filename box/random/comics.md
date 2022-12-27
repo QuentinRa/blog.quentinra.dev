@@ -44,6 +44,7 @@ Aggregators
 * [mangakatana.com](http://mangakatana.com/)
 * [mangaguru.org](https://mangaguru.org/index.php)
 * [comickiba.com](https://comickiba.com/) (WordPress Madara)
+* [mangareader.to](https://mangareader.to/)
 
 Webtoons
 

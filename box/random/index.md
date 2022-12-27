@@ -11,6 +11,12 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 ##### Create Forms 📃
 
 * [askabox](https://askabox.com/) (👻)
+* [typeform](https://www.typeform.com/)
+
+##### Polls (events)
+
+* [doodle](https://doodle.com/en/)
+* [framadate](https://framadate.org/abc/en/)
 </div><div>
 
 ##### QR Codes
@@ -60,6 +66,7 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 ##### Other
 
 * [nimbusweb.me](https://nimbusweb.me/) (👻, project/team management?)
+* [cesar](https://cesar.team/en/home/) (👻, project/team management?)
 * [united-heroes](https://www.united-heroes.com/) (👻, events?)
 * [zoho.com](https://www.zoho.com/office/) (👻, office 365~?)
 * [goodfirms.co](https://www.goodfirms.co/) (👻, review/promote tools?)
@@ -109,6 +116,12 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 * [dealabs.com](https://www.dealabs.com/) (👻)
 * [backmarket.com](https://www.backmarket.com/) (👻)
 </div><div>
+
+#### Digital
+
+* [legacygames](https://legacygames.com/) (👻, deals, games)
+* [fanatical](https://www.fanatical.com/) (👻, games)
+
 </div></div>
 
 <hr class="sep-both">

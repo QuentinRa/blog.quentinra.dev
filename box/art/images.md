@@ -37,7 +37,7 @@
 
 ##### OCR (image to text)
 
-* [tesseract.js](https://github.com/naptha/tesseract.js) ([website](https://tesseract.projectnaptha.com/), free, open-source)
+* [tesseract](https://tesseract.projectnaptha.com/) (free, open-source)
 
 ##### Favicons
 

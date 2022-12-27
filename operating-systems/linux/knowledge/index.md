@@ -809,6 +809,7 @@ Stuff that I found, but never read/used yet.
 * Cron `cron` process to schedule tasks, with crontab/crontab -l / Automated tasks in Linux / https://crontab-generator.org/ / https://crontab.guru/ / edit `crontab -e` / https://www.crontabs.org/
 * [tcsh](https://www.ibm.com/docs/en/zos/2.3.0?topic=shells-writing-tcsh-shell-scripts)
 * [ArchTitus](https://github.com/ChrisTitusTech/ArchTitus)
+* [yoctoproject](https://www.yoctoproject.org/)
 
 <details class="details-e">
 <summary>Services</summary>

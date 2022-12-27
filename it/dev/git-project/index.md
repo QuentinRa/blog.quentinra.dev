@@ -435,6 +435,8 @@ Random
 * [ossf](https://github.com/ossf/scorecard)
 * [coveralls](https://coveralls.io/)
 * [contrib.rocks](https://contrib.rocks/preview)
+* [gitpod.io](https://www.gitpod.io/)
+* [plan.io](https://plan.io/)
 </div><div>
 
 * [GitHub Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
