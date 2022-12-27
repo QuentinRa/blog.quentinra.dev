@@ -22,6 +22,7 @@
 * [online-converting.com](https://online-converting.com/image/) (JPGs to WebP, batch)
 * [png-svg.com](https://png-svg.com/) (PNG to SVG)
 * otherwise, Google!
+* [imageresizer](https://imageresizer.com/image-compressor) (compress)
 
 ##### Resize images
 

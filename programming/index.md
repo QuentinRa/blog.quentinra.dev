@@ -83,6 +83,7 @@ Translations
 * [appsmith](https://www.appsmith.com/) <small>(???)</small>
 * [padlet](https://padlet.com/) <small>(???)</small>
 * [squarespace](https://www.squarespace.com/) <small>(???)</small>
+* [toolslick](https://toolslick.com/) <small>(???)</small>
 
 **Markdown-based**
 
@@ -182,6 +183,8 @@ Translations
 <summary>Blockchains</summary>
 
 * [Bitcoin-like model](https://cea-licia.gitlab.io/max/max.gitlab.io/tutorials/advanced/bitcoin-like-model/)
+* [Solidity](https://soliditylang.org/) ([here](https://medium.com/coinmonks/return-values-in-solidity-contracts-2a034b31d553), [here](https://ethereum.stackexchange.com/questions/67708/should-i-give-names-to-return-values-when-a-function-returns-several-of-them), [here](https://medium.com/blockchannel/the-use-of-revert-assert-and-require-in-solidity-and-the-new-revert-opcode-in-the-evm-1a3a7990e06e), [here](https://anakagung.com/blog/solidity-for-javascript-developer), [here](https://jamesbachini.com/solidity-tutorial/))
+* [metamask](https://metamask.io/)
 </details>
 
 **Random**
@@ -201,7 +204,7 @@ EOF
 ```
 
 * Rust
-* Go
+* Go ([examples](https://golangexample.com/))
 * Groovy
 * Swift ([pods](https://cocoapods.org/))
 * Ruby ([gems](https://rubygems.org/))
@@ -374,6 +377,9 @@ Websites that I found, but never used yet.
 * [helpdeskgeek](https://helpdeskgeek.com/) <small>(???)</small>
 * [ihax](https://ihax.io/) <small>(???)</small>
 * [labnol](https://www.labnol.org/) <small>(???)</small>
+* [anakagung](https://anakagung.com/blog/) <small>(4 articles)</small>
+* [essential-dev-skills](https://essential-dev-skills.com/) <small>(french)</small>
+* [jamesbachini](https://jamesbachini.com/) <small>(???)</small>
 
 **YouTube**
 
@@ -395,6 +401,7 @@ Websites that I found, but never used yet.
 * [hackerrank](https://www.hackerrank.com/)
 * [lugo-test](https://www.lugo-test.com/)
 * [adventofcode](https://adventofcode.com/)
+* [interviewbit](https://www.interviewbit.com/)
 
 **Cheatsheet**
 
@@ -417,7 +424,6 @@ Random stuff...
 * [gitconnected](https://gitconnected.com/) (tech resumes)
 * [reverse-interview](https://github.com/viraptor/reverse-interview)
 * [Hiring Without Whiteboards](https://github.com/poteto/hiring-without-whiteboards)
-* [essential-dev-skills](https://essential-dev-skills.com/) (french)
 * [choosemycompany](https://choosemycompany.com/en/)
 
 **Random projects**
