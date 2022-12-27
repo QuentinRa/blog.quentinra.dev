@@ -262,7 +262,7 @@ form.onsubmit = (event) => {
 
 <hr class="sep-both">
 
-## ✈ Request an API ️✈️
+## ✈ Request an API ✈
 
 *See also, [APIs](/programming/web/apis/index.md), and [Async, await, and Promises](/programming/web/javascript/_general/index.md#-asynchronous-work-and-promises-)*
 

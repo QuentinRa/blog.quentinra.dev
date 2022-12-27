@@ -536,34 +536,29 @@ You can use it
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-JavaScript executed in the main thread will delay events, and prevent any other script from running.
-
-To avoid that, we can use asynchronous functions. These functions return a **Promise** in which we can write code that will be executed when the asynchronous function has finished.
+JavaScript executed in the main thread will delay events, and prevent any other script from running. To avoid that, we can use **asynchronous** functions with `async`. 
 
 ```javascript
 async function doRequestToTheAPI() {
     /* ex: fetch something from the API */
     return result
 }
+// or
+const doRequestToTheAPI = async () => { /* ... */ }
 ```
 
-We will execute this non-blocking code with
+These functions return a **Promise** in which we can write code that will be executed when the asynchronous function has finished.
 
 ```javascript
 doRequestToTheAPI()
-    .then(result => /* ... */)
-    .catch(err => /* ... */)
+    .then(res => /* do something, return xxx */)
+    .then(xxx => /* do something */)
+    .catch(err => console.error(err))
 ```
-</div><div>
 
-Each `then` can return a result. If they do, it's passed to the next `then` <small>(if there is one)</small>. It's useful to chain **callbacks** <small>(the functions passed to then)</small>.
-
-```javascript
-doRequestToTheAPI()
-    .then(doSomethingAndReturnXXX)
-    .then(useXXXAndReturnYYY)
-    /* ... */
-```
+* Each function passed to `then`/`catch` is called a **callback**.
+* You can chain `.then(...)`. The value returned in the previous `.then` is passed to the next one.
+* If any `.then(...)` raises an exception, then the callback passed to `.catch` is called, if there is one.
 
 To avoid the "callback hell", we use **await**. But, 👉 **await can only be used inside an `async` function**, so it's mainly to avoid Promises inside Promises inside [...].
 
@@ -571,24 +566,45 @@ To avoid the "callback hell", we use **await**. But, 👉 **await can only be us
 -doRequestToTheAPI().then(result => /* ... */)
 +const result = await doRequestToTheAPI()
 ```
+</div><div>
 
-➡️ `return await` and `return` are both awaiting a promise to end.
-
-<details class="details-e">
-<summary>More about Promises</summary>
-
-You may have to create a promise manually. A promise is taking a first callback. Like previous callbacks, you can remove the `reject`.
+Working example using the [Fetch API](/programming/web/javascript/_general/dom.md#-request-an-api-) to get something from an API.
 
 ```javascript
-function doAsynchronousJob() {
-    return new Promise((resolve, reject) => {
-        resolve("some result");
-    })
+async function doRequestToTheAPI() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+    return await response.json()
 }
 ```
 
-The callback `reject` can be called manually to indicates an error. If there is a `.catch`, then it will be called. The later will also be called when there was an unhandled Exception.
-</details>
+We can improve the code by replacing `return await` with  `return`, as the latter will also wait for the asynchronous call to generate a value.
+
+```diff
+- return await response.json()
++ return response.json()
+```
+
+#### Promises
+
+Promises can be created manually. They are taking two callbacks, one in case of success, the other in case of failure. 
+
+➡️ The latter is the same as raising an exception.
+
+```javascript
+// example: function sleep in JavaScript
+function sleep(ms) {
+    return new Promise((resolve, reject) => {
+        setTimeout(resolve, ms) // call resolve in xxx ms
+    })
+}
+
+async function callSleep() {
+    await sleep(5000)
+    console.log("Print this message after 5 seconds")
+}
+
+callSleep() // ignore .then / .catch
+```
 </div></div>
 
 <hr class="sep-both">
