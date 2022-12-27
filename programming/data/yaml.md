@@ -49,6 +49,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [circleci](https://circleci.com/docs/introduction-to-yaml-configurations/)
+* [references](https://stackoverflow.com/questions/2063616/how-to-reference-a-yaml-setting-from-elsewhere-in-the-same-yaml-file)
 </div><div>
 
 

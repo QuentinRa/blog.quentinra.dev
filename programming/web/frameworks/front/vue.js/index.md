@@ -21,6 +21,12 @@ $ cd xxx
 $ npm install
 $ npm run dev
 ```
+
+Learn Vue.js
+
+* [vuemastery](https://www.vuemastery.com/)
+* [vueschool](https://vueschool.io/)
+* [vuejsexamples](https://vuejsexamples.com/)
 </div></div>
 
 <hr class="sep-both">
@@ -401,9 +407,7 @@ Done! 🥂
 Links
 
 * [pinia](https://pinia.vuejs.org/)
-* [Nuxt.js](https://nuxtjs.org/) (see [vuestripe](https://vuestripe.com/nuxt/), [and](https://github.com/nuxt/framework))
-* [vuemastery](https://www.vuemastery.com/)
-* [vueschool](https://vueschool.io/)
+* [Nuxt.js](https://nuxtjs.org/) (see [vuestripe](https://vuestripe.com/nuxt/), [latest](https://github.com/nuxt/framework), [vue-meta](https://vue-meta.nuxtjs.org/))
 * Native: [vue-native](https://github.com/GeekyAnts/vue-native-core) (deprecated) and [nativescript-vue](https://github.com/nativescript-vue/nativescript-vue)
 </div><div>
 
@@ -417,5 +421,12 @@ Links
     ...
     </template>
 </XXXExample>
+```
+
+* Vue.js - change the page title ([article](https://medium.com/js-dojo/how-to-dynamically-change-the-page-title-with-vue-and-vue-router-99904906ce45))
+
+```javascript
+// created
+window.document.title = "xxx"
 ```
 </div></div>

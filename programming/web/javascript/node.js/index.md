@@ -11,7 +11,7 @@
 * ✨ To write LESS/SASS/Stylus/... <small>(improved CSS)</small>
 * ... and many more
 
-➡️You can find the [documentation here](https://nodejs.org/api/) or [here](https://nodejs.org/en/knowledge/). [Learn here](https://nodejs.dev/en/learn).
+➡️You can find the [documentation here](https://nodejs.org/api/) or [here](https://nodejs.org/en/knowledge/) <small>(old)</small>. [Learn here](https://nodejs.dev/en/learn).
 </div><div>
 
 You can download Node.js [here](https://nodejs.org/en/download/). On Windows, you will get an installer, so you can get started in seconds. To check that you installation was successful, use
@@ -208,7 +208,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* .env
+* .env / [nconf](https://nodejs.org/en/knowledge/file-system/how-to-store-local-config-data/)
 * modules and stuff like that
 * [yarn](https://github.com/yarnpkg/yarn) and [berry](https://github.com/yarnpkg/berry) (41k ⭐)
 * [pnpm](https://github.com/pnpm/pnpm) (21k ⭐)

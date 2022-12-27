@@ -373,6 +373,7 @@ Random stuff...
 * [polygon](https://www.polygon.com/) (movies, games...)
 * [getdroidtips](https://www.getdroidtips.com/) (games, android...)
 * [80](https://80.lv/) (games...)
+* [makeuseof](https://www.makeuseof.com/)
 
 **Help/Search/...**
 
