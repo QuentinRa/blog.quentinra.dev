@@ -32,6 +32,70 @@ $ npx tsc -w
 
 <hr class="sep-both">
 
+## XXX
+
+<div class="row row-cols-md-2"><div>
+
+You need to specify the type of every **variables**, **parameters**... unless it's implicit.
+
+```typescript
+let n1 = 0; // implicit
+let n2 : number = 0; // explicit
+let n3 : number; // explicit
+let str : string = "";
+let xxx : string | undefined | null; // multiple types
+// "?" after a parameter means "nullable" (null/undefined)
+function f(x: number, y?: boolean) {}
+```
+
+➡️ It's a bad practice, but you can use the type **any**, if you don't want to explicitly define the type of something.
+
+#### Disable a warning
+
+You can do it by adding `@ts-ignore` before any unresolvable warning.
+
+```javascript
+// @ts-ignore
+/* code generating a warning */ 
+```
+
+</div><div>
+
+#### JavaScript syntax
+
+These may have been added in newer versions of JavaScript.
+
+```typescript
+let x = y ?? 0 // if "y" is null/undefined, then x = 0
+
+// cast to a more specific type
+let random : any = 5
+let fiveNumber : number = <number>random;
+
+// enums
+enum Enum { A, C = 2, D } // values are [0, 2, 3]
+```
+
+#### Export/Import
+
+What was exported, can be imported in another file.
+
+```typescript
+// file.ts
+export function xxx() {}
+export class YYY {}
+export enum ZZZ {}
+```
+
+```typescript
+// xxx.ts
+import { xxx, YYY, ZZZ } from "../files/file";
+```
+</div></div>
+
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

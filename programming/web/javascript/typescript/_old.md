@@ -7,33 +7,6 @@
 This is a summary of things I used in TypeScript. Most of the things you will use are JavaScript features so I won't point them out.
 
 ```ts
-// this variable may only take numbers
-let a_number : number;
-let a_string : string = "";
-let a_string_too = ""; // implicit
-let yet_another_string = `I'm using a variable: ${a_number} inside the string`;
-
-// can take any kind of value, not a good idea
-let any_kind : any;
-// either undefined or null
-let variable : undefined | null;
-
-// if a is undefined/null then b=0 else b=a
-let b = a ?? 0;
-
-// suppress a warning
-// @ts-ignore
-// <the code raising a warning here>
-
-// this enum is public, so it can be used in
-// other files
-export enum Name {
-}
-
-// import exported elements from a file.ts
-// A/B can be a function, a class, an enum, ...
-import { A , B } from "../files/file";
-
 class Example {
     // contructor, only one per class
     constructor(){}
@@ -53,15 +26,7 @@ class Example {
 let example : Example = new Example();
 example.number; // evaluates as 10
 example.number = 5; // ok since we created a setter
-
-// cast (explicit)
-// we are asserting that b is a number of we can
-// assign it to c. You only have to do that when
-// typescript is not able to guess the type
-let c : number = <number>b; 
 ```
-
-Note that you can add a `?` after a variable name telling typescript that this parameter is optional (so it may be undefined).
 
 <hr class="sr">
 
