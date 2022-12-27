@@ -16,3 +16,10 @@ https://pythonawesome.com/all-algorithms-implemented-in-python-for-education/
 sorted(dic.items(), key= lambda x : x[0], reverse=True)
 
 https://docs.python.org/3.10/library/stdtypes.html#mapping-types-dict
+
+https://stackoverflow.com/questions/57985910/printfd-n-4294967296-makes-some-strange-errors
+except ConstructError as ex:
+        print(ex)
+
+Install packages pycharm
+pycryptodomex

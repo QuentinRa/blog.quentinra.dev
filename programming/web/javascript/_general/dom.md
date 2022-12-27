@@ -287,12 +287,17 @@ const json = await res.json() // as a json object
 const text = await res.text() // as a string
 ```
 
+```javascript
+// other
+const value = res.headers.get('header-name')
+```
+</div><div>
+
 **GET** is the default if no params are provided.
 
 ```javascript
 const params = { method: "GET", }
 ```
-</div><div>
 
 **POST/PUT/PATCH** are usually taking a **body**.
 

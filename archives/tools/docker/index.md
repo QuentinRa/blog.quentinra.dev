@@ -182,3 +182,4 @@ CMD ["./myapp"]
 * <https://github.com/docker/labs/blob/master/beginner/chapters/webapps.md>
 * <https://github.com/imunes/vroot-linux>
 * <https://github.com/docker/labs/blob/master/beginner/chapters/webapps.md>
+* docker compose

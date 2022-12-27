@@ -147,6 +147,8 @@ Translations
 **Databases**
 
 * [duckdb](https://github.com/duckdb/duckdb)
+* redis
+* elasticsearch
 
 **Editors**
 
