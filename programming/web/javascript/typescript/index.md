@@ -1,13 +1,33 @@
 # TypeScript
 
-**[Old notes](_old.md)**
-
 <div class="row row-cols-md-2"><div>
 
-...
+[Typescript](https://www.typescriptlang.org/) is a **typed**, **compiled**, **generic**, and **enhanced** JavaScript.
+
+* 👉 Compiling a `.ts` generates a `.js`
+* 👉 The compiler <small>(and IDEs)</small> can detect errors/mistakes
+* 👉 The code is cleaner <small>(enums...)</small>
+* 👉 You can compile in any version of JavaScript
+
+**Where to learn?**
+
+* [TypeScript handbook](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html)
 </div><div>
 
-...
+➡️ Install <small>(don't use -g, be clean)</small>
+
+```bash
+$ npm install typescript
+$ npx tsc --init
+```
+
+➡️ Compile
+
+```bash
+$ npx tsc
+# watch for changes, and compile
+$ npx tsc -w
+```
 </div></div>
 
 <hr class="sep-both">
