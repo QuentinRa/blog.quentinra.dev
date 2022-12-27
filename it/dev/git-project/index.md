@@ -437,6 +437,8 @@ Random
 * [contrib.rocks](https://contrib.rocks/preview)
 * [gitpod.io](https://www.gitpod.io/)
 * [plan.io](https://plan.io/)
+* [jenkins.io](https://www.jenkins.io/)
+* [roadmap.sh](https://roadmap.sh/devops)
 </div><div>
 
 * [GitHub Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)

@@ -21,6 +21,7 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 ##### QR Codes
 
+* [qrgenerator](https://qrgenerator.org/) (🚀, static)
 * [onelink.to](https://www.onelink.to/) (👻)
 
 ##### Notes
@@ -111,7 +112,15 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 ##### Followers
 
-* [follow4follow](https://follow4follow.com/)
+* [Like4Like](https://www.like4like.org/) <small>(good, but you get (~temporary) banned easily)</small>
+* [follow4follow](https://follow4follow.com/) (👻)
+* [sonuker](https://www.sonuker.com/) (bad, temporary)
+* [addmefast](https://addmefast.com/) <small>(great, banned if you're using a VPN)</small>
+* [ytmonster](https://www.ytmonster.net/) (👻)
+* [somiibo](https://somiibo.com/) (👻)
+* [youlikehits](https://www.youlikehits.com/) (👻)
+* [megafamous](https://megafamous.com/) (👻)
+* [buzzoid](https://buzzoid.com/) (👻)
 </div></div>
 
 <hr class="sep-both">
@@ -155,6 +164,17 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 * [filerun](https://filerun.com/) (👻)
 * [nextcloud](https://nextcloud.com/) (👻)w
+
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
+##  🧓 Bits 🧓
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+* `xxx+yyy@xxx.yyy`
 
 </div><div>
 </div></div>

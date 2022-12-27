@@ -80,6 +80,8 @@ Translations
 * [zapier](https://zapier.com/) <small>(???)</small>
 * [n8n](https://n8n.io/) <small>(???)</small>
 * [appsmith](https://www.appsmith.com/) <small>(???)</small>
+* [padlet](https://padlet.com/) <small>(???)</small>
+* [squarespace](https://www.squarespace.com/) <small>(???)</small>
 
 **Markdown-based**
 
@@ -163,6 +165,21 @@ Translations
 * WordPress
 * C#
 * Apache
+* CAS
+
+<details class="details-e">
+<summary>Arduino</summary>
+
+* [arduino-songs](https://github.com/robsoncouto/arduino-songs)
+* [arduino.cc](https://create.arduino.cc/projecthub)
+* [platformio](https://docs.platformio.org/en/latest//core/installation/index.html) + [note](https://arduino.stackexchange.com/questions/20294/clion-arduino)
+</details>
+
+<details class="details-e">
+<summary>Blockchains</summary>
+
+* [Bitcoin-like model](https://cea-licia.gitlab.io/max/max.gitlab.io/tutorials/advanced/bitcoin-like-model/)
+</details>
 
 **Random**
 
@@ -226,6 +243,7 @@ Websites that I found, but never used yet.
 * [hackr.io](https://hackr.io/) <small>(aggregate)</small>
 * [hashnode.com](https://hashnode.com/community) <small>(community-based?)</small>
 * [opensource.com](https://opensource.com/) <small>(community-based?)</small>
+* [substack](https://substack.com/) <small>(community-based, not IT-focused)</small>
 * [leanpub](https://leanpub.com/) <small>(books, paid)</small>
 
 **MOOCs**
@@ -260,6 +278,7 @@ Websites that I found, but never used yet.
 * [adalo](https://www.adalo.com/)
 * [webflow](https://webflow.com/)
 * [budibase](https://budibase.com/)
+* [helloguru](https://hub.helloguru.io/) ("No-Code Guru")
 
 </div><div>
 
@@ -394,6 +413,11 @@ Random stuff...
 * [Hiring Without Whiteboards](https://github.com/poteto/hiring-without-whiteboards)
 * [essential-dev-skills](https://essential-dev-skills.com/) (french)
 * [choosemycompany](https://choosemycompany.com/en/)
+
+**Random projects**
+
+* [monica](https://github.com/monicahq/monica) ("Personal CRM")
+* [officelife](https://github.com/officelifehq/officelife) (...)
 </div><div>
 
 **Entrepreneurship**
@@ -411,6 +435,8 @@ Random stuff...
 * [techno360](https://www.techno360.in/)
 * [uploadvr](https://uploadvr.com/)
 * [maxboxvr](https://www.maxboxvr.com/)
+* [howsociable](https://howsociable.com/)
+* [sell](https://www.sell.fr/) (games, french...)
 
 **Help/Search/...**
 
@@ -419,4 +445,5 @@ Random stuff...
 * [codegrepper](https://www.codegrepper.com/index.php)
 * ChatGPT
 * [answersblurb](https://answersblurb.com/)
+* [alternativeto](https://alternativeto.net/) / [similarweb](https://www.similarweb.com/)
 </div></div>

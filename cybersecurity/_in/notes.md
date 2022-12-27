@@ -15,6 +15,10 @@
 * https://openvpn.net/community-downloads/
 * https://www.yubico.com/ + Google Passkeys / Windows Hello / iCloud Passkeys
 * https://www.schneier.com/
+* https://www.kali.org/tools/impacket/
+* https://github.com/Porchetta-Industries/CrackMapExec
+* SharpHound
+* https://www.speedguide.net/
 
 <hr>
 
