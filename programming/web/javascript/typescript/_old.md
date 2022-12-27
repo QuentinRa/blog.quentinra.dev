@@ -8,8 +8,12 @@ This is a summary of things I used in TypeScript. Most of the things you will us
 
 ```ts
 class Example {
+    private static SELECT_KEY = 'match_id';
+    
     // contructor, only one per class
     constructor(){}
+
+    // constructor(public id: number) {}
     
     // when declaring a function, you can add return
     // types
@@ -20,7 +24,18 @@ class Example {
     
     // a setter
     set number(n?: number) { /* code */ };
+
+    private static generateHTML(matchSummary: MatchSummary) {}
 }
+
+class A {}
+class B extends A {
+    constructor() {
+        super()
+    }
+}
+
+const x = document.querySelector("#list")!!
 
 // usage
 let example : Example = new Example();

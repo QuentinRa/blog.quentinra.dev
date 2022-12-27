@@ -18,16 +18,17 @@
 
 ```bash
 $ npm install typescript
-$ npx tsc --init
+$ npx tsc --init # create a tsconfig.json
 ```
 
 ➡️ Compile
 
 ```bash
-$ npx tsc
-# watch for changes, and compile
-$ npx tsc -w
+$ npx tsc --project tsconfig.json
+$ npx tsc --project tsconfig.json -w # auto-compile
 ```
+
+➡️ Creating/using a `tsconfig.json` is optional.
 </div></div>
 
 <hr class="sep-both">
@@ -45,7 +46,7 @@ let n3 : number; // explicit
 let str : string = "";
 let xxx : string | undefined | null; // multiple types
 // "?" after a parameter means "nullable" (null/undefined)
-function f(x: number, y?: boolean) {}
+function f(list: Array<number>, xxx?: boolean) {}
 ```
 
 ➡️ It's a bad practice, but you can use the type **any**, if you don't want to explicitly define the type of something.
