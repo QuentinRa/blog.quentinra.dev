@@ -532,6 +532,67 @@ You can use it
 
 <hr class="sep-both">
 
+## 🪨 Asynchronous work and Promises 🪨
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+JavaScript executed in the main thread will delay events, and prevent any other script from running.
+
+To avoid that, we can use asynchronous functions. These functions return a **Promise** in which we can write code that will be executed when the asynchronous function has finished.
+
+```javascript
+async function doRequestToTheAPI() {
+    /* ex: fetch something from the API */
+    return result
+}
+```
+
+We will execute this non-blocking code with
+
+```javascript
+doRequestToTheAPI()
+    .then(result => /* ... */)
+    .catch(err => /* ... */)
+```
+</div><div>
+
+Each `then` can return a result. If they do, it's passed to the next `then` <small>(if there is one)</small>. It's useful to chain **callbacks** <small>(the functions passed to then)</small>.
+
+```javascript
+doRequestToTheAPI()
+    .then(doSomethingAndReturnXXX)
+    .then(useXXXAndReturnYYY)
+    /* ... */
+```
+
+To avoid the "callback hell", we use **await**. But, 👉 **await can only be used inside an `async` function**, so it's mainly to avoid Promises inside Promises inside [...].
+
+```diff
+-doRequestToTheAPI().then(result => /* ... */)
++const result = await doRequestToTheAPI()
+```
+
+➡️ `return await` and `return` are both awaiting a promise to end.
+
+<details class="details-e">
+<summary>More about Promises</summary>
+
+You may have to create a promise manually. A promise is taking a first callback. Like previous callbacks, you can remove the `reject`.
+
+```javascript
+function doAsynchronousJob() {
+    return new Promise((resolve, reject) => {
+        resolve("some result");
+    })
+}
+```
+
+The callback `reject` can be called manually to indicates an error. If there is a `.catch`, then it will be called. The later will also be called when there was an unhandled Exception.
+</details>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -568,4 +629,5 @@ Repositories
 * [clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript)
 * [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)
 * [33-js-concepts](https://github.com/leonardomso/33-js-concepts)
+* [jfarmer](https://github.com/jfarmer)
 </div></div>

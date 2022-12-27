@@ -2,29 +2,6 @@
 
 [Go back](../index.md#rest-api) | [See also](promises2.md)
 
-Every **asynchronous code** is returning **Promise**, and we may use them to handle **asynchronous code** like we are doing below. A promise is made of two **callbacks**. A callback is a function that will be called when the asynchronous code is either was successful (**then**) or failed (**catch**).
-
-```js
-function doAsynchronousJob() {
-    return new Promise((resolve, reject) => {
-        // ...
-        // call resolve if ok
-        // call reject if ko
-        // you can give anything here
-        resolve("some result");
-    })
-}
-
-doAsynchronousJob()
-    // handle resolve
-    .then(result => {
-        console.log(result); // "some result"
-    })
-    // handle reject
-    // same as (param) => {console.error(param)}
-    .catch(console.error)
-```
-
 <hr class="sl">
 
 ## With XMLHTTPRequest?
