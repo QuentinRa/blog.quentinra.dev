@@ -52,9 +52,14 @@ Webtoons
 * [manhuascan.us](https://manhuascan.us/)
 * [mangarolls.com](https://mangarolls.com/rolls/) (WordPress Madara)
 
+Mobile
+
+* [tachiyomi](https://tachiyomi.org/) (20k ⭐)
+
 <br>
 
 ##### Random
 
 * [anime-cli](https://github.com/pystardust/ani-cli) (👻)
+* [cubari.moe](https://cubari.moe/) (manga reader)
 </div></div>

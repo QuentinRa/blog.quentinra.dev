@@ -66,6 +66,8 @@ Translations
 
 **Tools~Software**
 
+➡️ Move some [Git](/it/dev/git-project/index.md#-to-do-) to-dos here?
+
 * [editorconfig](https://editorconfig.org/)
 * [visual-paradigm](https://www.visual-paradigm.com/) <small>(project management)</small>
 * [asdf](https://github.com/asdf-vm/asdf) <small>(package management)</small>
@@ -73,6 +75,11 @@ Translations
 * [xmind](https://xmind.app/) <small>(brainstorming)</small>
 * Slack
 * [kandi](https://kandi.openweaver.com/) <small>(???)</small>
+* [airtable](https://www.airtable.com/) / [baserow](https://baserow.io/) <small>(???)</small>
+* [make](https://www.make.com/) <small>(???)</small>
+* [zapier](https://zapier.com/) <small>(???)</small>
+* [n8n](https://n8n.io/) <small>(???)</small>
+* [appsmith](https://www.appsmith.com/) <small>(???)</small>
 
 **Markdown-based**
 
@@ -247,6 +254,13 @@ Websites that I found, but never used yet.
 * [knowledgehut](https://www.knowledgehut.com/tutorials) <small>(R, Node, Ionic, C#...)</small>
 * [gorails](https://gorails.com/) <small>(Ruby)</small>
 
+**No-code**
+
+* [bubble.io](https://bubble.io/)
+* [adalo](https://www.adalo.com/)
+* [webflow](https://webflow.com/)
+* [budibase](https://budibase.com/)
+
 </div><div>
 
 **Web focused**
@@ -395,6 +409,8 @@ Random stuff...
 * [getdroidtips](https://www.getdroidtips.com/) (games, android...)
 * [80](https://80.lv/) (games...)
 * [techno360](https://www.techno360.in/)
+* [uploadvr](https://uploadvr.com/)
+* [maxboxvr](https://www.maxboxvr.com/)
 
 **Help/Search/...**
 

@@ -28,6 +28,7 @@
 * [picresize.com](https://picresize.com/) (batch)
 * [resizepixel.com](https://www.resizepixel.com/) (one)
 * [js-image-carver](https://github.com/trekhleb/js-image-carver) (amazing, [demo](https://trekhleb.dev/js-image-carver/))
+* [waifu2x](https://waifu2x.io/) (enlarge)
 </div><div>
 
 ##### Reverse search

@@ -55,6 +55,11 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 * [confirmic](https://landing.confirmic.com/) (👻)
 * [axeptio](https://www.axeptio.eu) (👻)
+
+##### Domain names
+
+* [namecheap](https://nc.me/)
+* [name.com](https://www.name.com/)
 </div><div>
 
 ##### Generate TOS/PP/...
@@ -95,12 +100,18 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 <hr class="sep-both">
 
-##  💰 Earn money 💰
+##  💰 Earn 💰
 
 <div class="row row-cols-md-2 mt-4"><div>
 
+##### Money
+
 * [macad.am](https://macad.am/) ("walk and earn", 👻)
 </div><div>
+
+##### Followers
+
+* [follow4follow](https://follow4follow.com/)
 </div></div>
 
 <hr class="sep-both">
@@ -109,7 +120,7 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-#### Retail
+##### Retail
 
 * [laptopservice.fr](https://www.laptopservice.fr/) (👻)
 * [afbshop.fr](https://www.afbshop.fr/) (👻)
@@ -117,7 +128,7 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 * [backmarket.com](https://www.backmarket.com/) (👻)
 </div><div>
 
-#### Digital
+##### Digital
 
 * [legacygames](https://legacygames.com/) (👻, deals, games)
 * [fanatical](https://www.fanatical.com/) (👻, games)
@@ -136,11 +147,11 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 <hr class="sep-both">
 
-##  🛹 Hosting 🛹
+##  🖥️ Hosting 🖥️
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-Drive
+##### Drive
 
 * [filerun](https://filerun.com/) (👻)
 * [nextcloud](https://nextcloud.com/) (👻)w
