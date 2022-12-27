@@ -16,7 +16,6 @@ The icon with an arrow (➡️) means that they should be tackled first.
 
 **Courses planned**
 
-* javascript (language, dom)
 * typescript
 * html
 * electron

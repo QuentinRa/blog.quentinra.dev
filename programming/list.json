@@ -61,7 +61,7 @@
             {
               "tag": "web/javascript/_general/index.md",
               "name": "JavaScript",
-              "desc": "...",
+              "desc": "A lightweight, yet powerful language.",
               "icon": "<i class=\"bi bi-filetype-js\"></i>",
               "hidden": false
             },

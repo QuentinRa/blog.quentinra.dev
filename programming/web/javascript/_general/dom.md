@@ -233,7 +233,7 @@ form.onsubmit = (event) => {
     formData.append('name', 'value') // add
     formData.set('name', 'value') // set
     const value = formData.get('name') // get
-    for(let [name, value] of formData) {} // iterate
+    for(const [name, value] of formData) {} // iterate
     // ...
     return false // false <=> don't send
 }
@@ -432,7 +432,7 @@ if (value != null) {
 
 #### jQuery
 
-Long time ago, [jQuery](https://github.com/jquery/jquery) was a popular library making the JavaScript shorter/simpler. Nowadays, most features were added to JavaScript, so jQuery is unneeded.
+A long time ago, [jQuery](https://github.com/jquery/jquery) was a popular library shortening/simplifying the DOM manipulations. Nowadays, many features were added to JavaScript, and with technologies with less manipulation of the DOM like React, or Vue.js, the library is nowhere near what it used to be.
 
 ➡️ Bootstrap removed their jQuery dependencies in their 5th version, to make the library more lightweight.
 </div></div>
@@ -452,9 +452,7 @@ Stuff that I found, but never read/used yet.
 * SessionStorage
 * ServiceWorkers ([article](https://levelup.gitconnected.com/boost-your-web-application-performance-with-javascript-web-workers-dcb050ea24a6))
 * [Get QueryParams](https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript)
-* [W3School](https://www.w3schools.com/Js/default.asp)
 * `window.location.href` / `window.location.replace(URL)`
-* [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction).
 </div><div>
 
 ```javascript

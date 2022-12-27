@@ -12,12 +12,12 @@ JavaScript (JS) is a popular language used to develop
 
 **Where to learn?**
 
+* [MDN/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/) <small>(🚀)</small>
 * [W3Schools/JavaScript](https://www.w3schools.com/js/default.asp) <small>(see also Best Practices and Common mistakes)</small>
-* [MDN/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Overview) <small>(🚀)</small>
 * [iLoveCodingOrg/cheatsheet](https://github.com/iLoveCodingOrg/javascript-cheatsheet) <small>(quite complete, well presented)</small>
 * [javascript.info](https://javascript.info/) <small>(⛪)</small>
 * [javascript tutorial](https://www.javascripttutorial.net/) <small>(✈️)</small>
-* [modern-js-cheatshe](https://github.com/mbeaudru/modern-js-cheatsheet) (24k ⭐)
+* [modern-js-cheatsheet](https://github.com/mbeaudru/modern-js-cheatsheet) (24k ⭐)
 </div><div>
 
 Most environments support `console.log` to print something.
@@ -33,9 +33,9 @@ console.clear();
 
 General notes
 
-* 👉 Semicolon are optional. Be consistent.
+* 👉 Semicolon are optional. Be consistent if you use them.
 * 👉 Use `//` or `/* */` for comments.
-* 👉 Use `"use strict";` to enforce a [strict](https://www.w3schools.com/js/js_strict.asp) policy.
+* 👉 Use `"use strict";` to enforce a [strict](https://www.w3schools.com/js/js_strict.asp) code policy.
 
 JavaScript (JS) is based on ECMAScript. [See JavaScript versions](https://www.w3schools.com/Js/js_versions.asp).
 </div></div>
@@ -46,7 +46,7 @@ JavaScript (JS) is based on ECMAScript. [See JavaScript versions](https://www.w3
 
 <div class="row row-cols-md-2"><div>
 
-There are 3 ways to declare a variable.
+There are 3 ways to declare a variable: `const`, `let`, and `var`.
 
 ```javascript
 // ✅ use CONST as much as possible (unmodifiable)
@@ -148,8 +148,8 @@ for(i = 0; i < 10; i++) { /* ❌ implicit var */ }
 ```
 
 ```javascript
-for(i in array) { /* i is an index of array */ }
-for(i of array) { /* i is a value of array */ }
+for(const i in array) { /* i is an index of array */ }
+for(const i of array) { /* i is a value of array */ }
 ```
 
 ##### Concatenation
@@ -245,7 +245,7 @@ const map = new Map()
 map.set('key', 5) // add
 map.get('key') // get
 map.has('key') // check
-for(let [k,v] of map) { /* ... */ } // iterate
+for(const [k,v] of map) { /* ... */ } // iterate
 // otherwise, generate an Iterable
 map.entries() | map.keys() | map.values()
 // 🥂 Convert an Object to a Map
