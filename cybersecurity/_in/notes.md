@@ -13,6 +13,8 @@
 * https://github.com/tomnomnom/waybackurls
 * https://www.ssllabs.com/
 * https://openvpn.net/community-downloads/
+* https://www.yubico.com/ + Google Passkeys / Windows Hello / iCloud Passkeys
+* https://www.schneier.com/
 
 <hr>
 

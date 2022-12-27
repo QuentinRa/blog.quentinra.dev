@@ -23,5 +23,9 @@ Stuff that I found, but never read/used yet.
 * See TP2/...
 </div><div>
 
-
+```typescript
+declare module 'xxx' {
+  export default function yyy(): ZZZ;
+}
+```
 </div></div>

@@ -116,3 +116,17 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 * [slidesgo](https://slidesgo.com/) (slides)
 </div><div>
 </div></div>
+
+<hr class="sep-both">
+
+##  🛹 Hosting 🛹
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+Drive
+
+* [filerun](https://filerun.com/)
+* [nextcloud](https://nextcloud.com/)
+
+</div><div>
+</div></div>

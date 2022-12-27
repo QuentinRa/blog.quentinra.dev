@@ -435,6 +435,8 @@ if (value != null) {
 A long time ago, [jQuery](https://github.com/jquery/jquery) was a popular library shortening/simplifying the DOM manipulations. Nowadays, many features were added to JavaScript, and with technologies with less manipulation of the DOM like React, or Vue.js, the library is nowhere near what it used to be.
 
 ➡️ Bootstrap removed their jQuery dependencies in their 5th version, to make the library more lightweight.
+
+➡️ [jQuery.terminal](https://github.com/jcubic/jquery.terminal) (2.8k ⭐)
 </div></div>
 
 

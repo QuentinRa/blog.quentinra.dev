@@ -50,7 +50,9 @@ Programming languages (+tools) that I want to check, but never had the time.
 * [postmarkapp](https://postmarkapp.com/) <small>(emails)</small>
 * [gravatar](https://en.gravatar.com/) <small>(avatars)</small>
 * [customer.io](https://customer.io/) <small>(messaging)</small>
+* [dnsimple](https://dnsimple.com/) <small>(dns)</small>
 * [todoist](https://todoist.com/) <small>(to-do list)</small>
+* [ipify](https://www.ipify.org/) <small>(ip)</small>
 
 Google
 
@@ -73,6 +75,7 @@ Google
 * GitBook
 * [Obsidian](https://obsidian.md/) <small>(notes?)</small>
 * [notion](https://www.notion.so/) <small>(notes?)</small>
+* [slick](https://kenwheeler.github.io/slick/) <small>(slides)</small>
 
 </div><div>
 
@@ -91,6 +94,7 @@ Google
 * React/React Native (see [reactjsexample](https://reactjsexample.com/))
 * Ionic/Angular/Next
 * NestJS, Fastify
+* [tauri](https://tauri.app/)
 * [Dart](https://dart.dev/)
 * [Flutter](https://flutter.dev/)
 * [vercel](https://vercel.com/)
@@ -104,6 +108,9 @@ Google
 * [headlessbrowserapi](https://headlessbrowserapi.com/)
 * [atmospherejs](https://atmospherejs.com/)
 * [weex](https://github.com/alibaba/weex)
+* [Mosaic](https://github.com/Authman2/Mosaic)
+* [gatsbyjs](https://www.gatsbyjs.com/)
+* [i18next](https://www.i18next.com/)
 
 **JS libraries**
 
@@ -115,6 +122,7 @@ Google
 * [validatorjs](https://github.com/mikeerickson/validatorjs)
 * [jsencrypt](https://github.com/travist/jsencrypt) and [article](https://travistidwell.com/jsencrypt/)
 * [emojione](https://github.com/joypixels/emojione) and [emoji-toolkit](https://github.com/joypixels/emoji-toolkit)
+* [unified](https://github.com/unifiedjs/unified) / [remark](https://github.com/remarkjs/remark)
 
 </div><div>
 
@@ -125,6 +133,7 @@ Google
 * [glitch](https://glitch.com/) (???)
 * [codepen](https://codepen.io/) (???)
 * [codesandbox](https://codesandbox.io/) (???)
+* [jsfiddle](https://jsfiddle.net/) (???)
 
 **Learned** (but there is no notes about them)
 
@@ -195,6 +204,7 @@ Websites that I found, but never used yet.
 * [devglan](https://www.devglan.com/programming/programming-tutorials) <small>(many)</small>
 * [hackr.io](https://hackr.io/) <small>(aggregate)</small>
 * [hashnode.com](https://hashnode.com/community) <small>(community-based?)</small>
+* [opensource.com](https://opensource.com/) <small>(community-based?)</small>
 
 **MOOCs**
 
@@ -257,6 +267,7 @@ Websites that I found, but never used yet.
 * [travistidwell](https://travistidwell.com/) <small>(???)</small>
 * [ilikekillnerds](https://ilikekillnerds.com/) <small>(???)</small>
 * [bobbyhadz](https://bobbyhadz.com/) <small>(???)</small>
+* [debugandrelease](https://www.debugandrelease.com/) <small>(electron)</small>
 
 **Blockchains focused**
 
@@ -302,6 +313,9 @@ Websites that I found, but never used yet.
 * [fireship](https://fireship.io/) <small>(short articles)</small>
 * [codingbeautydev](https://codingbeautydev.com/) <small>(???)</small>
 * [madza](https://madza.hashnode.dev/) <small>(???)</small>
+* [interactiveknowledge](https://interactiveknowledge.com/insights) <small>(???)</small>
+* [akshaydeo](https://www.akshaydeo.com/) <small>(electron...)</small>
+* [dmitripavlutin](https://dmitripavlutin.com/) <small>(Vue, JS, TS...)</small>
 
 **YouTube**
 

@@ -802,6 +802,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * OSS Course
+* [gentoo](https://www.gentoo.org/)
 * [linux-securite](https://wonderfall.space/linux-securite/)
 * what is the difference between [snap](https://snapcraft.io/)/package/dpkg...
 * ELF
