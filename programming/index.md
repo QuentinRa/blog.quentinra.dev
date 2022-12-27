@@ -18,8 +18,8 @@ The icon with an arrow (➡️) means that they should be tackled first.
 
 * typescript
 * html
-* electron
 * css, sass, less
+* kotlin
 * latex/rst
 * xml
 * build tools

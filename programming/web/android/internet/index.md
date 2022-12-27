@@ -479,7 +479,49 @@ Stuff that I found, but never read/used yet.
 
 * [Fuel example (stripe)](https://stripe.com/docs/payments/accept-a-payment?platform=android&ui=payment-sheet#android-collect-payment-details)
 * [Retrofit errors](https://futurestud.io/tutorials/retrofit-2-simple-error-handling)
+
+```kotlin
+suspend fun xxx(YYY): Response<List<XXX>>
+
+val response = XXX.xxx.xxx()
+if (!response.isSuccessful) {
+    /* ... */
+    return@launch
+}
+val result = response.body()!!
+/* ... */
+```
+
+```kotlin
+@Multipart @POST("xxx")
+suspend fun xxx(@Part avatar: MultipartBody.Part): YYY
+```
 </div><div>
 
 * [glide](https://github.com/bumptech/glide) (33.2k ⭐, images)
+
+```kotlin
+// client HTTP
+val okHttpClient = OkHttpClient.Builder()
+    .addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
+    .addInterceptor { chain ->
+        // intercepteur qui ajoute le header d'authentification avec votre token:
+        val newRequest = chain.request().newBuilder()
+            .addHeader("Authorization", "Bearer $TOKEN")
+            .build()
+        chain.proceed(newRequest)
+   }
+   .build()
+
+.client(okHttpClient)
+```
+
+```kotlin
+// transforme le JSON en objets kotlin et inversement
+val jsonSerializer = Json {
+    ignoreUnknownKeys = true
+    coerceInputValues = true
+}
+.addConverterFactory(jsonSerializer.asConverterFactory("application/json".toMediaType()))
+```
 </div></div>

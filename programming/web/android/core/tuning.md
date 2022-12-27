@@ -8,69 +8,6 @@ These notes are intended
 * 👉 When the core of the application was finished, and there is a need to improve the User eXperience of the user
 * 👉 When there is a need to expand the number of users that can use the application
 </div><div>
-
-Here are some topics that were not added yet (👻)
-
-* Themes
-* Deep Link
-* Talkback
-* Tint/Dark mode
-
-<details class="details-e">
-<summary>Theming?</summary>
-
-[Theming](https://material.io/design/introduction#theming) and [Colors](https://material.io/design/material-theming/implementing-your-theme.html#color) and [ColorTools](https://m2.material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=00E5FF). [Dark Theme](https://developer.android.com/codelabs/basic-android-kotlin-training-change-app-theme)
-
-```
-style="?attr/materialButtonOutlinedStyle"
-android:textAppearance="?attr/textAppearanceHeadline6"
-name="Theme.XXX"
-
-<item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
-<item name="radioButtonStyle">@style/Widget.TipTime.CompoundButton.RadioButton</item>
-<item name="switchStyle">@style/Widget.TipTime.CompoundButton.Switch</item>
-```
-
-By convention, each style should have a parent, and be named as the parent, while replacing the "MaterialComponents" with "YOUR_APP_NAME".
-
-```xml
-<examples>
-  <style name="Widget.YOUR_APP_NAME.TextView" parent="Widget.MaterialComponents.TextView">
-  </style>
-  <style name="Widget.xxx.CompoundButton.RadioButton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
-    <item name="android:paddingStart">8dp</item>
-    <item name="android:textAppearance">?attr/textAppearanceBody1</item>
-  </style>
-  <style name="Widget.xxx.CompoundButton.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
-    <item name="android:minHeight">48dp</item>
-    <item name="android:gravity">center_vertical</item>
-    <item name="android:textAppearance">?attr/textAppearanceBody1</item>
-  </style>
-  <style name="Widget.xxxx.TextView" parent="Widget.MaterialComponents.TextView">
-    <item name="android:minHeight">48dp</item>
-    <item name="android:gravity">center_vertical</item>
-    <item name="android:textAppearance">?attr/textAppearanceBody1</item>
-  </style>
-</examples>
-```
-</details>
-
-<details class="details-e">
-<summary>Icons</summary>
-
-Different manufacturers may show app icons in different shapes than
-the circular icon shape: square shape, rounded square, or squircle (between a square and circle)...
-
-<https://developer.android.com/training/multiscreen/screendensities#TaskProvideAltBmp>
-
-Adaptive icons since v26
-=> background
-=> foreground
-=> + new image asset
-=> new assets should be moved to the same folder v26
-
-<https://developer.android.com/codelabs/basic-android-kotlin-training-display-list-cards> (3 => easy way to import icon).
-</details>
 </div></div>
 
 <hr class="sep-both">
