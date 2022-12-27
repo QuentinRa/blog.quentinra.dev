@@ -50,7 +50,12 @@ Programming languages (+tools) that I want to check, but never had the time.
 * [postmarkapp](https://postmarkapp.com/) <small>(emails)</small>
 * [gravatar](https://en.gravatar.com/) <small>(avatars)</small>
 * [customer.io](https://customer.io/) <small>(messaging)</small>
+* [todoist](https://todoist.com/) <small>(to-do list)</small>
+
+Google
+
 * [firebase](https://firebase.google.com/) <small>(???)</small>
+* FeedBurner <small>(RSS)</small>
 
 **Tools~Software**
 
@@ -355,8 +360,10 @@ Random stuff...
 * [getdroidtips](https://www.getdroidtips.com/) (games, android...)
 * [80](https://80.lv/) (games...)
 
-**Help**
+**Help/Search/...**
 
 * [includestdio](https://includestdio.com/) (<s>dead</s>)
 * [codeproject](https://www.codeproject.com/)
+* [codegrepper](https://www.codegrepper.com/index.php)
+* ChatGPT
 </div></div>

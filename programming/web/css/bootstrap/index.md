@@ -117,9 +117,9 @@ Many CSS classes have variants based on a breakpoint. Basically, these are **cla
 
 For instance, with `d-none` that allow us to hide an element.
 
-* `d-done`: always hidden
-* `d-sm-done`: hidden for all aside from mobiles
-* `d-md-done`: hidden for all aside from mobiles+tablets
+* `d-none`: always hidden
+* `d-sm-none`: hidden for all aside from mobiles
+* `d-md-none`: hidden for all aside from mobiles+tablets
 * ...
 
 If you want to hide something on mobile only, you will have to combine two classes:
@@ -305,6 +305,7 @@ h-100
 fs-4
 fw-bold
 align-middle
+btn-outline-info
 list-inline + list-inline-item
 ```
 </div></div>

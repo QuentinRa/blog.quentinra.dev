@@ -16,6 +16,7 @@ Stuff that I found, but never read/used yet.
 * semantic web ([protege](https://protege.stanford.edu/))
 * progressive web apps (PWA)
 * color picker (console)
+* free hosting (webhostapp, [kinsta](https://kinsta.com/)). See also, GitHub pages...
 </div><div>
 
 SEO

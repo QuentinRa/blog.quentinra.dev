@@ -94,6 +94,21 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 <hr class="sep-both">
 
+##  🪨 Purchases  🪨
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+#### Retail
+
+* [laptopservice.fr](https://www.laptopservice.fr/)
+* [afbshop.fr](https://www.afbshop.fr/)
+* [dealabs.com](https://www.dealabs.com/)
+* [backmarket.com](https://www.backmarket.com/)
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ##  🛹 Templates 🛹
 
 <div class="row row-cols-md-2 mt-4"><div>

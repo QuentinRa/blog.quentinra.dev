@@ -69,7 +69,7 @@ console.log(A.five)
 
 <hr class="sep-both">
 
-## npm package manager
+## 👉 npm package manager 👈
 
 <div class="row row-cols-md-2"><div>
 
@@ -150,6 +150,53 @@ $ npm i express@latest
     "start": "node index.js"
   }
 }
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Node FileSystem (<code>fs</code>)
+
+<div class="row row-cols-md-2"><div>
+
+#### Import 'fs'
+
+```javascript
+const fs = require('fs')
+```
+
+For `async` functions, you may use `if (err) console.error(err);`.
+
+#### Read
+
+```javascript
+const filedata = fs.readFileSync("path/to/file")
+const filenames = fs.readdirSync("path/to/dir/")
+// async
+fs.readdir("data/wp/", (err, files) => { /* ... */ })
+```
+
+#### Write
+
+```javascript
+fs.writeFileSync("path/to/file",  fileData, 'utf8')
+```
+</div><div>
+
+#### Read/Write JSON files
+
+```javascript
+// read
+const json = JSON.parse(fs.readFileSync("path/to/xxx.json"))
+// write
+fs.writeFileSync("path/to/xxx.json", JSON.stringify(json, null, 2), 'utf8')
+```
+
+#### Rename/Move
+
+```javascript
+// async
+fs.rename(path, newPath, (err) => { /* ... */ });
 ```
 </div></div>
 

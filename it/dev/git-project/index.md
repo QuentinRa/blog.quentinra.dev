@@ -361,6 +361,7 @@ Cards (usually added on a profile/...)
 * [GitHub Profile Trophy](https://github.com/ryo-ma/github-profile-trophy)
 * [metrics](https://github.com/lowlighter/metrics) (really nice cards, see [omBratteng profile](https://github.com/omBratteng/omBratteng))
 * [Jokes' Cards](https://readme-jokes.vercel.app/api)
+* Profile View: [antonkomarev](https://github.com/antonkomarev/github-profile-views-counter) or [arturssmirnovs](https://github.com/arturssmirnovs/github-profile-views-counter)
 </div></div>
 
 <hr class="sep-both">

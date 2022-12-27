@@ -637,6 +637,8 @@ Random
 * [JSDoc](https://jsdoc.app/)
 * **Arrow functions**, or anonymous functions: there is no "this".
 * Closures / nested functions
+* `delete xxx`
+* `Array.find+index`
 
 Repositories
 
