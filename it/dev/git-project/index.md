@@ -348,6 +348,8 @@ General
 
 * [GitHub Organization Profile](https://github.blog/changelog/2021-09-14-readmes-for-organization-profiles/)
 
+* [GitHub Profile Achievements](https://github.com/Schweinepriester/github-profile-achievements)
+
 </div><div>
 
 Cards (usually added on a profile/...)

@@ -52,6 +52,9 @@ Programming languages (+tools) that I want to check, but never had the time.
 * [dnsimple](https://dnsimple.com/) <small>(dns)</small>
 * [todoist](https://todoist.com/) <small>(to-do list)</small>
 * [ipify](https://www.ipify.org/) <small>(ip)</small>
+* [jsonip](https://jsonip.com/) <small>(ip)</small>
+* [ipgeolocation](https://ipgeolocation.io/) <small>(ip+[...], slow, free 1000)</small>
+* [peekalink](https://www.peekalink.io/)/[peek](https://peek.link/) <small>(preview)</small>
 
 Google
 
@@ -425,6 +428,7 @@ Random stuff...
 * [reverse-interview](https://github.com/viraptor/reverse-interview)
 * [Hiring Without Whiteboards](https://github.com/poteto/hiring-without-whiteboards)
 * [choosemycompany](https://choosemycompany.com/en/)
+* [cvreader](https://www.cvreader.fr/)
 
 **Random projects**
 

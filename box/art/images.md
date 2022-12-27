@@ -51,6 +51,10 @@
 
 * [Bootstrap Icons](https://icons.getbootstrap.com/) (free, open-source, svg)
 
+##### Backgrounds
+
+* [hdqwalls](https://hdqwalls.com/)
+
 ##### Memes
 
 * [Know Your Meme](https://knowyourmeme.com/)

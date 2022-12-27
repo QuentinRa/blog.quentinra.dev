@@ -409,6 +409,7 @@ Links
 * [pinia](https://pinia.vuejs.org/)
 * [Nuxt.js](https://nuxtjs.org/) (see [vuestripe](https://vuestripe.com/nuxt/), [latest](https://github.com/nuxt/framework), [vue-meta](https://vue-meta.nuxtjs.org/))
 * Native: [vue-native](https://github.com/GeekyAnts/vue-native-core) (deprecated) and [nativescript-vue](https://github.com/nativescript-vue/nativescript-vue)
+* [templates](https://github.com/vuejs-templates) (mostly deprecated/dropped)
 </div><div>
 
 ```
