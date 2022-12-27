@@ -258,6 +258,7 @@ Websites that I found, but never used yet.
 * [leanpub](https://leanpub.com/) <small>(books, paid)</small>
 * [codehints](https://codehints.io/) and [codingcheats](https://codingcheats.io/) <small>(cheatsheets)</small>
 * [dev.to](https://dev.to/) <small>(community-based?)</small>
+* [toolsqa](https://www.toolsqa.com/) <small>(tools)</small>
 
 **MOOCs**
 

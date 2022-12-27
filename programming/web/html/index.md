@@ -21,6 +21,7 @@ Stuff that I found, but never read/used yet.
 * aria (`aria-label`)
 * role attribute (`role="search"`)
 * mhtml
+* [htmledit](https://htmledit.squarefree.com/)
 </div><div>
 
 ```html

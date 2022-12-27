@@ -19,6 +19,8 @@
 * https://github.com/Porchetta-Industries/CrackMapExec
 * SharpHound
 * https://www.speedguide.net/
+* https://curiositykillscolby.com/
+* https://www.grc.com/haystack.htm
 
 <hr>
 
