@@ -170,7 +170,6 @@ Stuff that I found, but never read/used yet.
 
 * [clean-code-typescript](https://github.com/labs42io/clean-code-typescript)
 * [typescript-cheat-sheet](https://www.sitepen.com/blog/typescript-cheat-sheet) and [hoomanb](http://hoomanb.com/cs/quickref/typescript_cheatsheet.pdf)
-* See TP2/...
 </div><div>
 
 ```typescript

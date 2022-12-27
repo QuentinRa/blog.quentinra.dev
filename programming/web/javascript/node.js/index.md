@@ -11,7 +11,11 @@
 * ✨ To write LESS/SASS/Stylus/... <small>(improved CSS)</small>
 * ... and many more
 
-➡️You can find the [documentation here](https://nodejs.org/api/) or [here](https://nodejs.org/en/knowledge/) <small>(old)</small>. [Learn here](https://nodejs.dev/en/learn).
+**Where to learn?**
+
+* [Documentation](https://nodejs.org/api/) <small>(⛪)</small>
+* [Tutorials](https://nodejs.dev/en/learn) <small>(🚀)</small>
+* [Nnowledge](https://nodejs.org/en/knowledge/) <small>(old)</small>
 </div><div>
 
 You can download Node.js [here](https://nodejs.org/en/download/). On Windows, you will get an installer, so you can get started in seconds. To check that you installation was successful, use

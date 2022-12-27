@@ -22,7 +22,7 @@ $ npm install
 $ npm run dev
 ```
 
-Learn Vue.js
+**Where to learn?**
 
 * [vuemastery](https://www.vuemastery.com/)
 * [vueschool](https://vueschool.io/)

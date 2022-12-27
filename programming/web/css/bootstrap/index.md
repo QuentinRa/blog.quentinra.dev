@@ -29,19 +29,19 @@ See the [documentation](https://getbootstrap.com/docs/). For **5.2.3**, you coul
 
 <div class="row row-cols-md-2"><div>
 
-The best way to learn Bootstrap is to copy-and-paste examples. You can find them [here](https://getbootstrap.com/docs/5.2/examples/).
+➡️ The best way to learn Bootstrap is to copy-and-paste examples. You can find them [here](https://getbootstrap.com/docs/5.2/examples/).
 
 * Click on an exemple to your liking
 * Use <kbd>CTRL+U</kbd> or "View page source" to see the code
 * Copy-paste it inside your project and tune it
 </div><div>
 
-Additionally, open the [documentation](https://getbootstrap.com/docs/5.2/getting-started/introduction/), and search what you want to do. For instance, [a navbar](https://getbootstrap.com/docs/5.2/components/navbar/). You will see
+➡️ Additionally, open the [documentation](https://getbootstrap.com/docs/5.2/getting-started/introduction/), and search what you want to do. For instance, [a navbar](https://getbootstrap.com/docs/5.2/components/navbar/). You will see
 
 * the code
 * a preview of the expected output
 
-> See also [W3Schools/Bootstrap 5](https://www.w3schools.com/bootstrap5/index.php) and [exercices](https://www.w3schools.com/bootstrap5/exercise.php).
+➡️ See also [W3Schools/Bootstrap 5](https://www.w3schools.com/bootstrap5/index.php) and [exercices](https://www.w3schools.com/bootstrap5/exercise.php).
 </div></div>
 
 <hr class="sep-both">

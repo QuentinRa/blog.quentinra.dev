@@ -477,6 +477,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+* [glide](https://github.com/bumptech/glide) (33.2k ⭐, images)
 * [Fuel example (stripe)](https://stripe.com/docs/payments/accept-a-payment?platform=android&ui=payment-sheet#android-collect-payment-details)
 * [Retrofit errors](https://futurestud.io/tutorials/retrofit-2-simple-error-handling)
 
@@ -498,16 +499,12 @@ suspend fun xxx(@Part avatar: MultipartBody.Part): YYY
 ```
 </div><div>
 
-* [glide](https://github.com/bumptech/glide) (33.2k ⭐, images)
-
 ```kotlin
-// client HTTP
 val okHttpClient = OkHttpClient.Builder()
     .addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
     .addInterceptor { chain ->
-        // intercepteur qui ajoute le header d'authentification avec votre token:
         val newRequest = chain.request().newBuilder()
-            .addHeader("Authorization", "Bearer $TOKEN")
+            .addHeader("XXX", "YYY")
             .build()
         chain.proceed(newRequest)
    }
@@ -517,7 +514,6 @@ val okHttpClient = OkHttpClient.Builder()
 ```
 
 ```kotlin
-// transforme le JSON en objets kotlin et inversement
 val jsonSerializer = Json {
     ignoreUnknownKeys = true
     coerceInputValues = true

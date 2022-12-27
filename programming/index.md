@@ -10,16 +10,14 @@ The icon with an arrow (➡️) means that they should be tackled first.
 
 * Create browser extensions/plugins
 * JetBrains plugin development
-* Kotlin
-* WordPress
 </div><div>
 
 **Courses planned**
 
-* typescript
 * html
 * css, sass, less
 * kotlin
+* WordPress
 * latex/rst
 * xml
 * build tools
@@ -99,11 +97,11 @@ Translations
 
 **Web/Android/UI**
 
-➡️See [Modern web](https://modern-web.dev/guides/)<br>
-➡️See API/GraphQL (to-do)<br>
-➡️See API/OpenAPI/tools (to-do)<br>
-➡️See OAuth ([oauth.net](https://oauth.net/), [oauth-io](https://github.com/oauth-io))<br>
-➡️See [Google Code Labs](https://codelabs.developers.google.com/) (Firebase, Flutter...)
+➡️ See [Modern web](https://modern-web.dev/guides/)<br>
+➡️ See API/GraphQL (to-do)<br>
+➡️ See API/OpenAPI/tools (to-do)<br>
+➡️ See OAuth ([oauth.net](https://oauth.net/), [oauth-io](https://github.com/oauth-io))<br>
+➡️ See [Google Code Labs](https://codelabs.developers.google.com/) (Firebase, Flutter...)
 
 * [Riot.js](https://riot.js.org/)
 * [symfony](https://symfony.com/) ([nelmio](https://github.com/nelmio/NelmioApiDocBundle))
@@ -119,7 +117,7 @@ Translations
 * Webpack, rollupjs, parcel, Snowpack, WMR, and vite+vitest
 * Dust, EJS, Handlebars, Hogan.js, Pug (Jade), Twig, and Vash (express)
 * End-to-End Testing Solution ([cypress](https://www.cypress.io/how-it-works)/[browserstack](https://www.browserstack.com/)/[playwright](https://playwright.dev/), Nightwatch.js ...)
-* Jasmine / QUnit / [Karma](https://github.com/karma-runner) / [jestjs](https://jestjs.io/docs/getting-started) (+[frisby](https://github.com/vlucas/frisby))
+* Jasmine / QUnit / [Karma](https://github.com/karma-runner) / [jestjs](https://jestjs.io/docs/getting-started) (+[frisby](https://github.com/vlucas/frisby)). **Note**: assert/chai/should/expect/unexpect are in mocha's notes.
 * [Deno](https://deno.land/)
 * [nw.js](https://nwjs.io/) / [neutralinojs](https://github.com/neutralinojs/neutralinojs)
 * chrome dev tools snippets
@@ -249,6 +247,7 @@ Websites that I found, but never used yet.
 * [substack](https://substack.com/) <small>(community-based, not IT-focused)</small>
 * [leanpub](https://leanpub.com/) <small>(books, paid)</small>
 * [codehints](https://codehints.io/) and [codingcheats](https://codingcheats.io/) <small>(cheatsheets)</small>
+* [dev.to](https://dev.to/) <small>(community-based?)</small>
 
 **MOOCs**
 
