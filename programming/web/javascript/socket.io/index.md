@@ -157,6 +157,12 @@ client.on('connect', () => {
 
 <div class="row row-cols-md-2"><div>
 
+See Also
+
+* [Native Socket.IO and Android](https://socket.io/blog/native-socket-io-and-android)
+* [Socket.io Connection on Android Kotlin to Node.js Server](https://medium.com/@thushenarriyam/socket-io-connection-on-android-kotlin-to-node-js-server-71b218c160c9)
+* [socket.io-android-chat](https://github.com/nkzawa/socket.io-android-chat)
+
 You must add the library in `build.gradle`
 
 ```diff
@@ -239,6 +245,16 @@ SocketIOHandler.socket.on("event") {
     val value = json.getString("key")
     val value = json.getJSONObject("key")
     // ...
+}
+```
+
+#### Additional notes
+
+* Execute code when connected
+
+```kotlin
+SocketIOHandler.socket.on(Socket.EVENT_CONNECT) {
+    /* ... */
 }
 ```
 </div></div>

@@ -109,7 +109,7 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 * [macad.am](https://macad.am/) ("walk and earn", 👻)
 
-##### Playing
+##### "Play and earn"
 
 * [gamekit](https://gamekit.com/)
 * [bananatic](https://www.bananatic.com/)

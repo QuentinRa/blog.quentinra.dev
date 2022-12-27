@@ -132,6 +132,7 @@ Translations
 * [gatsbyjs](https://www.gatsbyjs.com/)
 * [hapi](https://hapi.dev/)
 * [logfetch](https://logfetch.com/)
+* [browserslist](https://github.com/browserslist/browserslist)
 
 **JS libraries**
 
@@ -145,6 +146,7 @@ Translations
 * [emojione](https://github.com/joypixels/emojione) and [emoji-toolkit](https://github.com/joypixels/emoji-toolkit)
 * [unified](https://github.com/unifiedjs/unified) / [remark](https://github.com/remarkjs/remark)
 * [tesseract.js](https://github.com/naptha/tesseract.js)
+* [humanize](https://www.npmjs.com/package/humanize)
 
 </div><div>
 

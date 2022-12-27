@@ -730,4 +730,8 @@ viewModel.myList.observe(this) {
 
 ⚠️ It's worth noting that this is only working because `items` inside our ListAdapter is a LiveData. If it was a normal list, we would have to re-assign the attribute as we did with **notify**.
 </details>
+
+See also
+
+* [Scroll to beginning](https://stackoverflow.com/questions/53248736/listadapter-submitlist-how-to-scroll-to-beginning)
 </div></div>
