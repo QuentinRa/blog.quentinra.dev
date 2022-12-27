@@ -63,6 +63,9 @@ Google
 Translations
 
 * [deepl](https://www.deepl.com/translator)
+* [Google Translate API](https://translate.googleapis.com/translate_a/single?client=gtx&sl=ko&tl=en&dt=t&q=176)
+* Microsoft Azure Translator
+* [translationly](https://translationly.com/) / [translateking](https://translateking.com/) / [translate.com](https://www.translate.com/machine-translation) / [systran.net](https://www.systran.net/)
 
 **Tools~Software**
 
@@ -365,9 +368,10 @@ Websites that I found, but never used yet.
 * [interactiveknowledge](https://interactiveknowledge.com/insights) <small>(???)</small>
 * [akshaydeo](https://www.akshaydeo.com/) <small>(electron...)</small>
 * [dmitripavlutin](https://dmitripavlutin.com/) <small>(Vue, JS, TS...)</small>
-* [makeuseof](https://www.makeuseof.com/)
-* [helpdeskgeek](https://helpdeskgeek.com/)
-* [ihax](https://ihax.io/)
+* [makeuseof](https://www.makeuseof.com/) <small>(???)</small>
+* [helpdeskgeek](https://helpdeskgeek.com/) <small>(???)</small>
+* [ihax](https://ihax.io/) <small>(???)</small>
+* [labnol](https://www.labnol.org/) <small>(???)</small>
 
 **YouTube**
 

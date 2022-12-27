@@ -30,8 +30,16 @@
 ##### Raws
 
 * 무인이곽 (Martial Artist Lee Gwak, [see](https://www104.zippyshare.com/v/NqJr4lB3/file.html))
-* [newtoki167](https://newtoki167.com/) (Manhwas)
-* [booktoki167](https://booktoki167.com) (Novels)
+* 완결소설 (Reaper)
+* https://newtoki168.com/ (Manhwas)
+* https://booktoki168.com/ (Novels)
+
+<br>
+
+##### Random
+
+* [anime-cli](https://github.com/pystardust/ani-cli) (👻)
+* [cubari.moe](https://cubari.moe/) (manga reader)
 </div><div>
 
 ##### Read
@@ -52,14 +60,13 @@ Webtoons
 * [manhuascan.us](https://manhuascan.us/)
 * [mangarolls.com](https://mangarolls.com/rolls/) (WordPress Madara)
 
+Novels
+
+* [lightnovelreader](https://lightnovelreader.me/)
+* [lightnovelmeta](https://www.lightnovelmeta.com/)
+* [sky-mtl](https://sky-mtl.com/)
+
 Mobile
 
 * [tachiyomi](https://tachiyomi.org/) (20k ⭐)
-
-<br>
-
-##### Random
-
-* [anime-cli](https://github.com/pystardust/ani-cli) (👻)
-* [cubari.moe](https://cubari.moe/) (manga reader)
 </div></div>
