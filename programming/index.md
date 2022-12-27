@@ -248,6 +248,7 @@ Websites that I found, but never used yet.
 * [opensource.com](https://opensource.com/) <small>(community-based?)</small>
 * [substack](https://substack.com/) <small>(community-based, not IT-focused)</small>
 * [leanpub](https://leanpub.com/) <small>(books, paid)</small>
+* [codehints](https://codehints.io/) and [codingcheats](https://codingcheats.io/) <small>(cheatsheets)</small>
 
 **MOOCs**
 

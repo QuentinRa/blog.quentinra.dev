@@ -11,7 +11,7 @@
 
 **Where to learn?**
 
-* [TypeScript handbook](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html)
+* [TypeScript docs](https://www.typescriptlang.org/docs/)
 </div><div>
 
 ➡️ Install <small>(don't use -g, be clean)</small>
@@ -33,11 +33,11 @@ $ npx tsc --project tsconfig.json -w # auto-compile
 
 <hr class="sep-both">
 
-## XXX
+## 🔎 General overview 🔎
 
 <div class="row row-cols-md-2"><div>
 
-You need to specify the type of every **variables**, **parameters**... unless it's implicit.
+You need to specify the type of every **variable**, **parameter**... unless it's implicit.
 
 ```typescript
 let n1 = 0; // implicit
@@ -47,9 +47,18 @@ let str : string = "";
 let xxx : string | undefined | null; // multiple types
 // "?" after a parameter means "nullable" (null/undefined)
 function f(list: Array<number>, xxx?: boolean) {}
+// add a return type
+function f() : string | null {}
 ```
 
 ➡️ It's a bad practice, but you can use the type **any**, if you don't want to explicitly define the type of something.
+
+➡️ If you know that something is not null, use `!!`
+
+```typescript
+// querySelector returns Element | null -> Element
+const xxx : Element = document.querySelector("#xxx")!!
+```
 
 #### Disable a warning
 
@@ -94,6 +103,62 @@ import { xxx, YYY, ZZZ } from "../files/file";
 ```
 </div></div>
 
+<hr class="sep-both">
+
+## 🗃️ Classes 🗃️
+
+<div class="row row-cols-md-2"><div>
+
+The syntax is mostly the same as in JavaScript. Modifiers to change the visibility were added: **public**, **private**, and **protected**.
+
+```typescript
+class Example {
+    // ➡️ ex: private static constant
+    private static SELECT_KEY = 'match_id';
+
+    // ➡️ ex: private attribute
+    constructor(private Id: number) {}
+
+    // ➡️ ex: public static function
+    public static getString() : string | undefined {
+        return this.SELECT_KEY;
+    }
+
+    // ➡️ ex: protected function
+    protected doXXX() : number {
+        return this.Id
+    }
+}
+```
+</div><div>
+
+There is a new way to write getters/setters.
+
+```typescript
+class Example {
+    get number() : number { return 10; };
+    set number(n?: number) { /* code */ };
+}
+
+// usage
+let example : Example = new Example();
+example.number; // call "get"
+example.number = 5; // call "set"
+```
+
+#### Inheritance
+
+It's the same syntax as in JavaScript.
+
+```typescript
+class A {}
+class B extends A {
+    constructor() {
+        super()
+    }
+}
+```
+</div></div>
 
 <hr class="sep-both">
 
@@ -104,7 +169,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [clean-code-typescript](https://github.com/labs42io/clean-code-typescript)
-* [typescript-cheat-sheet](https://www.sitepen.com/blog/typescript-cheat-sheet)
+* [typescript-cheat-sheet](https://www.sitepen.com/blog/typescript-cheat-sheet) and [hoomanb](http://hoomanb.com/cs/quickref/typescript_cheatsheet.pdf)
 * See TP2/...
 </div><div>
 
