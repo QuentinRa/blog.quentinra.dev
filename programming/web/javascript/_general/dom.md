@@ -287,24 +287,69 @@ const json = await res.json() // as a json object
 const text = await res.text() // as a string
 ```
 
-</div><div>
-
 **GET** is the default if no params are provided.
 
 ```javascript
 const params = { method: "GET", }
 ```
+</div><div>
 
 **POST/PUT/PATCH** are usually taking a **body**.
+
+➡️ Note that the API may not require you to add headers.
 
 ```javascript
 const params = {
     method: "POST",
     body: JSON.stringify({ username: "xxx" }),
+    headers: { 'Content-type': 'application/json; charset=UTF-8' }
 }
 ```
 
-You can add headers with `headers: { "name": "value" },`.
+```javascript
+const params = {
+    method: "POST",
+    body: 'xxx=value&yyy=value',
+    headers: { 'Content-type': 'application/x-www-form-urlencoded' }
+}
+```
+
+<details class="details-e">
+<summary>Prior to 2015: XMLHTTPRequest</summary>
+
+To code a simplified `fetch`, you could use the code below.
+
+```javascript
+function fetchXXX(URL, params = undefined) {
+    return new Promise((resolve, reject) => {
+        const ajax = new XMLHttpRequest();
+        ajax.onreadystatechange = () => {
+            // we the loading is done
+            if(ajax.readyState === XMLHttpRequest.DONE) {
+                // 200, 201, ... are OK
+                if (ajax.status >= 200 && ajax.status < 300)
+                    resolve(ajax.responseText);
+                else
+                    reject(ajax.responseText);
+            }
+        }
+        // use the provided method, or GET by default
+        ajax.open(params?.method ?? 'GET', URL, true);
+        // add headers
+        for(const header in params?.headers) {
+            ajax.setRequestHeader(header, params?.headers[header]);
+        }
+        // send the body, if any
+        ajax.send(params?.body);
+    })
+}
+
+// tested with GET+POST, 
+// but the code is using a somewhat recent syntax
+fetchXXX('https://jsonplaceholder.typicode.com/posts')
+    .then((text) => console.log(text));
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
@@ -403,6 +448,7 @@ Stuff that I found, but never read/used yet.
 
 * `data-*`
 * blob URL
+* Proxy
 * SessionStorage
 * ServiceWorkers ([article](https://levelup.gitconnected.com/boost-your-web-application-performance-with-javascript-web-workers-dcb050ea24a6))
 * [Get QueryParams](https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript)
