@@ -315,10 +315,11 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 ```
 
-Note that RouterView is where the loaded page will be displayed.
-</div><div>
+➡️ Note that RouterView is where the loaded page will be displayed.
 
-In `main.js` when mounting the app, we "use" a router
+#### Edit routes
+
+To edit the routes, edit `router/index.js`.
 
 ```javascript
 const router = createRouter({
@@ -338,8 +339,9 @@ const router = createRouter({
   ]
 })
 ```
+</div><div>
 
-#### Useful methods
+#### Move to another page manually
 
 You can move to another page with
 
@@ -347,12 +349,59 @@ You can move to another page with
 this.$router.push({ name:'about' })
 ```
 
-You can get query parameters (`?xxx=yyy`) or params (`/user/:id`) with
+#### Query, and params
+
+You can get query parameters (`?xxx=yyy`) with.
 
 ```javascript
 this.$route.query.xxx
+```
+
+To use params, you must declare them inside the `path` of your route.
+
+```diff
++ path: '/users/:id',
+```
+
+Then, you can get them back using
+
+```javascript
 this.$route.params.id
 ```
+
+#### Pre-loading
+
+You can do something before loading the view inside `beforeRouteEnter`. For instance, you can change the title of the page.
+
+<details class="details-e">
+<summary>Load something from an API, set the title dynamically</summary>
+
+```xml
+<script>
+export default {
+  data() {
+    return {
+      xxx: null,
+    };
+  },
+  // ...
+  beforeRouteEnter(to, from, next) {
+    const id = to.params.id; // see Params
+    fetch("XXX" + id)
+      .then((res) => res.json())
+      .then((json) => {
+        next((vm) => { // call 'next' when done
+          // set the variable 'data/xxx'
+          vm.xxx = json;
+          // set the title
+          window.document.title = "XXX | " + id;
+        });
+      });
+  },
+};
+</script>
+```
+</details>
 </div></div>
 
 <hr class="sep-both">

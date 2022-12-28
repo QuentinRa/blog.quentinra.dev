@@ -213,8 +213,9 @@ array.map(v => v+"") // convert each value (['10','13'])
 Create an Array from an Iterable
 
 ```javascript
-const array = Array.from(anIterable) // NodeList...
-const array = [...anIterable] // ~same 🤔
+// ex: HTML NodeList, Map.entries/...
+const array = Array.from(anIterable)
+const array = [...anIterable]
 ```
 </div><div>
 
@@ -641,6 +642,7 @@ Random
 * Closures / nested functions
 * `delete xxx`
 * `Array.find+index`
+* `Symbols, yield, function*()`
 
 Repositories
 

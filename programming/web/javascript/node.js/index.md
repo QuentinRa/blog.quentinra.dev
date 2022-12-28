@@ -14,8 +14,8 @@
 **Where to learn?**
 
 * [Documentation](https://nodejs.org/api/) <small>(⛪)</small>
-* [Tutorials](https://nodejs.dev/en/learn) <small>(🚀)</small>
-* [Nnowledge](https://nodejs.org/en/knowledge/) <small>(old)</small>
+* [Tutorials](https://nodejs.dev/en/learn) <small>(🚀)</small> / [Knowledge](https://nodejs.org/en/knowledge/) <small>(old)</small>
+* [Runkit](https://runkit.com/home) <small>(online playground)</small>
 </div><div>
 
 You can download Node.js [here](https://nodejs.org/en/download/). On Windows, you will get an installer, so you can get started in seconds. To check that you installation was successful, use
@@ -28,7 +28,7 @@ $ node index
 $ node index.js
 ```
 
-> To easily manage multiple version of Node, see [nvm](https://github.com/nvm-sh/nvm) (64k ⭐), [nvm-windows](https://github.com/coreybutler/nvm-windows) (25k ⭐), or [n](https://github.com/tj/n) (17k ⭐).
+> 🚀 To easily manage multiple version of Node, see [nvm](https://github.com/nvm-sh/nvm) (64k ⭐), [nvm-windows](https://github.com/coreybutler/nvm-windows) (25k ⭐), or [n](https://github.com/tj/n) (17k ⭐). Alternatively, there are [nvs](https://github.com/jasongin/nvs), [nave](https://github.com/isaacs/nave), [volta](https://github.com/volta-cli/volta) (7.3k ⭐), [nodenv](https://github.com/nodenv/nodenv), [fnm](https://github.com/Schniz/fnm) (9.8k ⭐), and [nodist](https://github.com/nullivex/nodist).
 </div></div>
 
 <hr class="sep-both">
@@ -216,9 +216,6 @@ Stuff that I found, but never read/used yet.
 * modules and stuff like that
 * [yarn](https://github.com/yarnpkg/yarn) and [berry](https://github.com/yarnpkg/berry) (41k ⭐)
 * [pnpm](https://github.com/pnpm/pnpm) (21k ⭐)
-* update node
-* [nvs](https://github.com/jasongin/nvs) / [nave](https://github.com/isaacs/nave) / [volta](https://github.com/volta-cli/volta) / [nodenv](https://github.com/nodenv/nodenv) / [fnm](https://github.com/Schniz/fnm) / [nodist](https://github.com/nullivex/nodist)
-* [runkit](https://runkit.com/home)
 
 </div><div>
 
