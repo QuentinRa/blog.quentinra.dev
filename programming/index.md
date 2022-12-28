@@ -107,23 +107,15 @@ Translations
 ➡️ See OAuth ([oauth.net](https://oauth.net/), [oauth-io](https://github.com/oauth-io))<br>
 ➡️ See [Google Code Labs](https://codelabs.developers.google.com/) (Firebase, Flutter...)
 
-* [Riot.js](https://riot.js.org/)
 * [symfony](https://symfony.com/) ([nelmio](https://github.com/nelmio/NelmioApiDocBundle))
 * [laravel](https://laravel.com/)
 * [elm](https://elm-lang.org/) (language)
-* React/React Native (see [reactjsexample](https://reactjsexample.com/))
-* Ionic/Angular/Next
-* NestJS, Fastify
 * [tauri](https://tauri.app/)
 * [Dart](https://dart.dev/)
 * [Flutter](https://flutter.dev/)
 * [vercel](https://vercel.com/)
-* Webpack, rollupjs, parcel, Snowpack, WMR, and vite+vitest
 * Dust, EJS, Handlebars, Hogan.js, Pug (Jade), Twig, and Vash (express)
 * End-to-End Testing Solution ([cypress](https://www.cypress.io/how-it-works)/[browserstack](https://www.browserstack.com/)/[playwright](https://playwright.dev/), Nightwatch.js ...)
-* Jasmine / QUnit / [Karma](https://github.com/karma-runner) / [jestjs](https://jestjs.io/docs/getting-started) (+[frisby](https://github.com/vlucas/frisby)). **Note**: assert/chai/should/expect/unexpect are in mocha's notes.
-* [Deno](https://deno.land/)
-* [nw.js](https://nwjs.io/) / [neutralinojs](https://github.com/neutralinojs/neutralinojs)
 * chrome dev tools snippets
 * [headlessbrowserapi](https://headlessbrowserapi.com/)
 * [atmospherejs](https://atmospherejs.com/)
@@ -137,7 +129,6 @@ Translations
 **JS libraries**
 
 * [localizejs](https://localizejs.com/)
-* axios
 * [ct](https://github.com/csswizardry/ct)
 * [babeljs](https://babeljs.io/)
 * [browserify](https://github.com/browserify/browserify) / [browserify.org](https://browserify.org/)
