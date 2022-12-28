@@ -4,33 +4,43 @@
 
 Application Programming Interfaces (APIs) are used to allow access to internal services such as a database to both internal and external entities, but with a layer of abstraction called "interface".
 
-For the client of the API
+**For the client of the API**
 
 * 💐 Easier to use the company services <small>(ex: payment APIs)</small>
 * 🍹 The service is maintained by the provider <small>(less work to do)</small>
 
-For the API provider
+**For the provider of the API**
 
 * ✨ Once created, you can use it with websites, mobile apps...
 * 🍹 Centralize database accesses <small>(easier to find/patch bugs/...)</small>
 * 💎 Can aggregate multiple data sources <small>(i.g. multiple databases...)</small>
+ 
+**Additional notes for specific APIs**
+
+* [jsonplaceholder](https://jsonplaceholder.typicode.com/) (**fake API for testing** 🚀)
+* [Stripe](stripe/index.md) (payments)
 </div><div>
 
-Some APIs (search for APIs on [rapidapi](https://rapidapi.com/hub))
+Some APIs <small>(search for APIs on [rapidapi](https://rapidapi.com/hub) 🚀)</small>
 
 * [Github API](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api)
-* [Musicbrainz API](https://musicbrainz.org/doc/MusicBrainz_API) (musics)
-* [myanimelist API](https://myanimelist.net/apiconfig/references/api/v2) (mangas, anime, ...) or [jikan](https://jikan.moe/) (unofficial MAL API)
-* [pokemon API](https://pokeapi.co/)
-* [Paypal API](https://developer.paypal.com/docs/api/overview/) (payments)
-* [MangaDex API](https://api.mangadex.org/docs/) (manga reader)
-* ...
+* [MyAnimeList API](https://myanimelist.net/apiconfig/references/api/v2) <small>(mangas, anime, ...)</small> or [jikan](https://jikan.moe/) <small>(unofficial MAL API)</small>
+* [Pokemon API](https://pokeapi.co/)
+* [Paypal API](https://developer.paypal.com/docs/api/overview/) <small>(payments)</small>
+* [MangaDex API](https://api.mangadex.org/docs/) <small>(manga reader)</small>
+* [todoist](https://todoist.com/) <small>(to-do list)</small>
 
-Some notes about APIs
+Services (APIs)
 
-* [Stripe](stripe/index.md) (payments)
+* [algolia](https://www.algolia.com/) <small>(search)</small>
+* [simpleen](https://simpleen.io/) <small>(localization)</small>
+* [courier](https://www.courier.com/) or [customer](https://customer.io/) <small>(push notifications, SMS, emails...)</small>
+* [pusher](https://pusher.com/) <small>(push notifications, they are interfacing websockets...)</small>
+* [postmarkapp](https://postmarkapp.com/) <small>(push emails...)</small>
+* [ipify](https://www.ipify.org/) or [jsonip](https://jsonip.com/) or [ipgeolocation](https://ipgeolocation.io/) <small>(ip)</small>
+* [headlessbrowserapi](https://headlessbrowserapi.com/) <small>(scrap)</small> 🚀 / [peekalink](https://www.peekalink.io/) <small>(preview)</small>
+* [gravatar](https://en.gravatar.com/) <small>(avatars)</small> / [disqus](https://disqus.com/api/docs/) <small>(comments)</small>
 
-➡️ If you need a fake API for testing, see [jsonplaceholder](https://jsonplaceholder.typicode.com/).
 </div></div>
 
 <hr class="sep-both">

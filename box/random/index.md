@@ -17,6 +17,10 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 * [doodle](https://doodle.com/en/)
 * [framadate](https://framadate.org/abc/en/)
+
+##### Links
+
+* [peek.link](https://peek.link/index.html)
 </div><div>
 
 ##### QR Codes

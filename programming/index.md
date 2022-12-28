@@ -38,24 +38,11 @@ Programming languages (+tools) that I want to check, but never had the time.
 
 * [mercurial](https://www.mercurial-scm.org/) (version-control)
 
-**Tools~APIs**
+**Tools~API~no**
 
-* [algolia](https://www.algolia.com/) <small>(add a searchbar?, see bt)</small>
-* [simpleen](https://simpleen.io/) <small>(localization)</small>
 * [crowdin](https://crowdin.com/) <small>(localization)</small>
-* [i18next](https://www.i18next.com/) <small>(localization)</small>
-* [courier](https://www.courier.com/) <small>(notifications)</small>
-* [pusher](https://pusher.com/) <small>(notifications)</small>
-* [postmarkapp](https://postmarkapp.com/) <small>(emails)</small>
-* [gravatar](https://en.gravatar.com/) <small>(avatars)</small>
-* [customer.io](https://customer.io/) <small>(messaging)</small>
+* [i18next](https://www.i18next.com/) / [locize](https://locize.com/) <small>(localization)</small>
 * [dnsimple](https://dnsimple.com/) <small>(dns)</small>
-* [todoist](https://todoist.com/) <small>(to-do list)</small>
-* [ipify](https://www.ipify.org/) <small>(ip)</small>
-* [jsonip](https://jsonip.com/) <small>(ip)</small>
-* [ipgeolocation](https://ipgeolocation.io/) <small>(ip+[...], slow, free 1000)</small>
-* [peekalink](https://www.peekalink.io/)/[peek](https://peek.link/) <small>(preview)</small>
-* [headlessbrowserapi](https://headlessbrowserapi.com/) <small>(scrap)</small>
 
 Google
 
@@ -89,8 +76,6 @@ Translations
 * [squarespace](https://www.squarespace.com/) <small>(???)</small>
 * [toolslick](https://toolslick.com/) <small>(???)</small>
 
-</div><div>
-
 **Markdown-based**
 
 * [retype](https://retype.com/) <small>(Extended Markdown for websites)</small>
@@ -99,6 +84,8 @@ Translations
 * [Obsidian](https://obsidian.md/) <small>(notes?)</small>
 * [notion](https://www.notion.so/) <small>(notes?)</small>
 * [slick](https://kenwheeler.github.io/slick/) <small>(slides)</small>
+
+</div><div>
 
 **Web/Android/UI**
 
@@ -128,8 +115,6 @@ Translations
 * [mustache](https://github.com/mustache/mustache)
 * [dustjs](https://github.com/linkedin/dustjs)
 
-</div><div>
-
 **Databases**
 
 * [duckdb](https://github.com/duckdb/duckdb)
@@ -146,6 +131,8 @@ Translations
 * [jsfiddle](https://jsfiddle.net/) (???)
 * [jseditor](https://jseditor.io/)
 * [playcode](https://playcode.io/)
+
+</div><div>
 
 **Learned** (but there is no notes about them)
 
