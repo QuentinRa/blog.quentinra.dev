@@ -73,6 +73,13 @@
               "hidden": false
             },
             {
+              "tag": "web/javascript/_general/libs.md",
+              "name": "JavaScript libraries",
+              "desc": "List of unsorted node/js libraries.",
+              "icon": null,
+              "hidden": false
+            },
+            {
               "tag": "web/javascript/node.js/index.md",
               "name": "Node.js",
               "desc": "A modern JavaScript environment.",
