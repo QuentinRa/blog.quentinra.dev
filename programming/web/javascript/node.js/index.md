@@ -89,19 +89,23 @@ $ npm -v
 
 npm use a file called `package.json` to known which packages to import in your project. As the version are usually based on a rule, the exact version of the package can be found in `package-lock.json`.
 
-* Create an empty project with an empty `package.json`
+#### New Project
+
+Create an empty project with an empty `package.json`.
 
 ```powershell
 $ npm init
 ```
 
-All installed packages are stored in the folder `node_modules`. ⚠️ Add it to your `.gitignore`, because it's heavy+useless. 
+All installed packages are stored in the folder `node_modules`. Add it to your `.gitignore`, because it's heavy+useless. ⚠️
 
-Instead, commit `package-lock.json`. Someone else will use the command below to install the same packages+version as yours.
+Instead, commit `package-lock.json`. Someone else will be able to generate back the exact same `node_modules` with a command.
 
 ➡️ Commit `package.json` too, so that devs can add packages...
 
-* Install packages from an existing project (`package-lock.json`)
+#### Existing Project
+
+Install packages from an existing project (`package-lock.json`).
 
 ```powershell
 $ npm ci
@@ -109,7 +113,9 @@ $ npm ci
 
 </div><div>
 
-* Add packages in `package.json/dependencies` and install them.
+#### Update dependencies
+
+Add packages in `package.json/dependencies` and install them.
 
 ```powershell
 # add in package.json/dependencies + install it
@@ -143,9 +149,9 @@ $ npm i express@latest
 
 ➡️ If you see an example with `require('xxx')`, then it's rather safe to assume that you can use `npm i xxx`.
 
-<br>
+#### Add scripts
 
-* Run a task: usually, we store the commands to run/... a project in `package.json/scripts`. To run "start" below, use `npm start`.
+Usually, we store the commands to run/test... a project in `package.json/scripts`. To run "start" below, use `npm start`.
 
 ```json
 {
@@ -206,61 +212,19 @@ fs.rename(path, newPath, (err) => { /* ... */ });
 
 <hr class="sep-both">
 
-## Read YAML files in Node.js
-
-<div class="row row-cols-md-2"><div>
-
-#### js-yaml
-
-[js-yaml](https://www.npmjs.com/package/js-yaml) (5.8k ⭐) is frequently updated.
-
-```javascript
-const yaml = require('js-yaml');
-const fs   = require('fs');
-
-const xxx = yaml.load(fs.readFileSync('test.yaml', 'utf8'));
-console.log(xxx);
-```
-</div><div>
-
-#### yamljs
-
-[yamljs](https://www.npmjs.com/package/yamljs) (0.9k ⭐) was not updated for years.
-
-```javascript
-const YAML = require('yamljs');
-const fs   = require('fs');
-
-const xxx = YAML.parse(fs.readFileSync('test.yaml', 'utf8'));
-console.log(xxx)
-```
-</div></div>
-
-<hr class="sep-both">
-
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* .env / [nconf](https://nodejs.org/en/knowledge/file-system/how-to-store-local-config-data/)
-* modules and stuff like that
-* [yarn](https://github.com/yarnpkg/yarn) and [berry](https://github.com/yarnpkg/berry) (41k ⭐)
-* [pnpm](https://github.com/pnpm/pnpm) (21k ⭐)
-
-</div><div>
-
-Libraries
-
-* [connect](https://www.npmjs.com/package/connect)
+* .env / [nconf](https://nodejs.org/en/knowledge/file-system/how-to-store-local-config-data/) / [node-config](https://github.com/node-config/node-config)
+* See JavaScript, what are modules/...?
 * [bcrypt](https://attacomsian.com/blog/nodejs-password-hashing-with-bcrypt)
-
-Stuff
-
-* [node-config](https://github.com/node-config/node-config)
 * [http2 server-push](https://blog.risingstack.com/node-js-http-2-push/)
 * [nodebestpractices](https://github.com/goldbergyoni/nodebestpractices)
+
+</div><div>
 
 npm
 
