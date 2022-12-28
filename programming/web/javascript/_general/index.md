@@ -7,6 +7,7 @@ JavaScript (JS) is a popular language used to develop
 * 🌳 Dynamic websites <small>(DOM, jQuery...)</small>
 * 🗃️ Servers and APIs <small>(Node.js, Express.js...)</small>
 * 🖥️ Desktop applications <small>(Electron.js...)</small>
+* 📱️ Mobile applications <small>(React.js, Vue.js...)</small>
 * 🧪 Programming styles like [JsFuck](https://github.com/aemkei/jsfuck) (7.3k ⭐)
 * 🧨 Blockchains <small>(Solidity...)</small>
 * ...
