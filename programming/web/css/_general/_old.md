@@ -22,9 +22,8 @@ p {
 ```
 </details>
 
-They may be three problems **1**: you didn't use the good selector, **2**: another style is overriding yours
+**2**: another style is overriding yours
 
-* for **1**: try using background="red" or something like that, to check that the selector is good
 * for **2**: try using `!important` or check the CSS used in the developers' tools
 
 <hr class="sl">
@@ -37,65 +36,17 @@ This is a list of the selectors I know of
 <thead><tr><th>Description</th><th>CSS</th><th>HTML matched</th></tr></thead>
 <tbody>
 
-<!-- Tag selector -->
-<tr>
-<td><b>Tag selector</b><br>
-Simply write the tag, you want to select.
-</td>
-<td>
-<pre><code class="language-css">p { /* ... */ }</code></pre>
-</td>
-<td>
-<pre><code class="language-html">&lt;p>Some text&lt;/p></code></pre>
-</td>
-</tr>
-
-<!-- ID selector -->
-<tr>
-<td><b>ID selector</b><br>
-Each tag can have one ID, each ID is unique within a page.
-</td>
-<td>
-<pre><code class="language-css">#my-id { /* ... */ }</code></pre>
-</td>
-<td>
-<pre><code class="language-html">&lt;p id="my-id">...&lt;/p></code></pre>
-</td>
-
 <!-- Class selector -->
 <tr>
 <td><b>Class selector</b><br>
-Each tag can have one or more classes, separated by a space.<br><br>
 You can match a selector having every specified classes too.<br>You can also add a tag before a class.
 </td>
 <td>
-<pre><code class="language-css">.name { /* ... */ }</code></pre>
 <pre><code class="language-css">p.one.two { /* ... */ }</code></pre>
 </td>
 <td>
-<pre><code class="language-html">&lt;p class="name">...&lt;/p></code></pre>
 <pre><code class="language-html">&lt;p class="one two">...&lt;/p></code></pre>
 </td>
-
-<!-- Joker selector -->
-<tr>
-<td>
-
-<b>Joker selector</b> 🃏<br>
-I'm the only one calling it like that 😶.<br>
-You can use `*` to select everything <br> 
-(🤮 you should use body/html instead of `*`)
-</td>
-<td>
-<pre><code class="language-css">* { /* ... */ }</code></pre>
-</td>
-<td>
-<pre><code class="language-html">&lt;p>...&lt;/p>
-&lt;div>...&lt;/div>
-&lt;!-- .... --&gt;
-</code></pre>
-</td>
-</tr>
 
 <!-- Pseudo-classes -->
 <tr>

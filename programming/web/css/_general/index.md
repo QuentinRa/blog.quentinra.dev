@@ -83,6 +83,88 @@ You can link an external CSS file. This is the proper way to do it <small>(CSP p
 
 <hr class="sep-both">
 
+## Selectors
+
+<div class="row row-cols-md-2"><div>
+
+A selector is a target, or a set or targets, on which the style will be applied. ➡️ To test a selector, we usually change the background. If the background changed, it means that the selector works.
+
+```css
+YOUR_SELECTOR_HERE {
+  background: yellow;
+}
+```
+
+#### Tag selector
+
+The style will be applied to every element having this tag.
+
+<div class="row row-cols-md-2"><div>
+
+```html
+<p>xxx</p>
+```
+</div><div>
+
+```css
+p { /* ... */ }
+```
+</div></div>
+
+#### Id selector
+
+The style will be applied to the tag having the matching Id.
+
+<div class="row row-cols-md-2"><div>
+
+```html
+<p id="my-id">xxx</p>
+```
+</div><div>
+
+```css
+#my-id { /* ... */ }
+```
+</div></div>
+
+#### Class selector
+
+The style will be applied to any tag having this class.
+
+<div class="row row-cols-md-2"><div>
+
+```html
+<p class="name ...">xxx</p>
+```
+</div><div>
+
+```css
+.name { /* ... */ }
+```
+</div></div>
+
+#### Joker selector 🃏
+
+The style will be applied to every element.
+
+<div class="row row-cols-md-2"><div>
+
+```html
+<p>xxx</p>
+```
+</div><div>
+
+```css
+* { /* ... */ }
+```
+</div></div>
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
