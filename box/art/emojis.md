@@ -12,4 +12,8 @@
 ##### Windows
 
 You can use the shortcut <kbd>Win + ;</kbd> to open a menu to pick emojis like on your smartphone.
+
+##### Libraries
+
+* [emojione](https://github.com/joypixels/emojione) ➡️[emoji-toolkit](https://github.com/joypixels/emoji-toolkit) (JavaScript, PHP...)
 </div></div>

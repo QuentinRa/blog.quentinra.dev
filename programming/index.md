@@ -55,6 +55,7 @@ Programming languages (+tools) that I want to check, but never had the time.
 * [jsonip](https://jsonip.com/) <small>(ip)</small>
 * [ipgeolocation](https://ipgeolocation.io/) <small>(ip+[...], slow, free 1000)</small>
 * [peekalink](https://www.peekalink.io/)/[peek](https://peek.link/) <small>(preview)</small>
+* [headlessbrowserapi](https://headlessbrowserapi.com/) <small>(scrap)</small>
 
 Google
 
@@ -88,6 +89,8 @@ Translations
 * [squarespace](https://www.squarespace.com/) <small>(???)</small>
 * [toolslick](https://toolslick.com/) <small>(???)</small>
 
+</div><div>
+
 **Markdown-based**
 
 * [retype](https://retype.com/) <small>(Extended Markdown for websites)</small>
@@ -96,8 +99,6 @@ Translations
 * [Obsidian](https://obsidian.md/) <small>(notes?)</small>
 * [notion](https://www.notion.so/) <small>(notes?)</small>
 * [slick](https://kenwheeler.github.io/slick/) <small>(slides)</small>
-
-</div><div>
 
 **Web/Android/UI**
 
@@ -113,13 +114,7 @@ Translations
 * [Dart](https://dart.dev/)
 * [Flutter](https://flutter.dev/)
 * [vercel](https://vercel.com/)
-* End-to-End Testing Solution ([cypress](https://www.cypress.io/how-it-works)/[browserstack](https://www.browserstack.com/)/[playwright](https://playwright.dev/), Nightwatch.js ...)
 * chrome dev tools snippets
-* [headlessbrowserapi](https://headlessbrowserapi.com/)
-* [weex](https://github.com/alibaba/weex)
-* [hapi](https://hapi.dev/)
-* [logfetch](https://logfetch.com/)
-* [browserslist](https://github.com/browserslist/browserslist)
 
 **Templating**
 
@@ -132,18 +127,6 @@ Translations
 * [haml](https://haml.info/)
 * [mustache](https://github.com/mustache/mustache)
 * [dustjs](https://github.com/linkedin/dustjs)
-
-**JS libraries**
-
-* [localizejs](https://localizejs.com/)
-* [ct](https://github.com/csswizardry/ct)
-* [babeljs](https://babeljs.io/)
-* [browserify](https://github.com/browserify/browserify) / [browserify.org](https://browserify.org/)
-* [validatorjs](https://github.com/mikeerickson/validatorjs)
-* [jsencrypt](https://github.com/travist/jsencrypt) and [article](https://travistidwell.com/jsencrypt/)
-* [emojione](https://github.com/joypixels/emojione) and [emoji-toolkit](https://github.com/joypixels/emoji-toolkit)
-* [tesseract.js](https://github.com/naptha/tesseract.js)
-* [humanize](https://www.npmjs.com/package/humanize)
 
 </div><div>
 
@@ -328,6 +311,7 @@ Websites that I found, but never used yet.
 * [bobbyhadz](https://bobbyhadz.com/) <small>(???)</small>
 * [debugandrelease](https://www.debugandrelease.com/) <small>(electron)</small>
 * [svelte](https://github.com/sveltejs/svelte) <small>(electron)</small>
+* [logfetch](https://logfetch.com/) <small>(???)</small>
 
 **Blockchains focused**
 

@@ -620,7 +620,7 @@ Stuff that I found, but never read/used yet.
 
 Learn
 
-* `.eslintrc` (see [eslint](https://eslint.org/))
+* `.eslintrc` (see [eslint](https://eslint.org/), [compat](https://github.com/amilajack/eslint-plugin-compat))
 * `match (/xxx/ and /x/g /x/i)`
 * [airbnb guidelines](https://github.com/airbnb/javascript)
 * [interesting code](https://stackoverflow.com/questions/21692646/how-does-facebook-disable-the-browsers-integrated-developer-tools)

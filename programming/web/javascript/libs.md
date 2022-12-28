@@ -12,15 +12,32 @@ A list of libraries made by companies/users, that may be used both for websites 
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-#### HTTP clients
+#### JavaScript environment
 
-* [axios](https://axios-http.com/) (97.9k ⭐, alternative to fetch)
+* [Deno](https://deno.land/) (87k ⭐, alternative to Node)
+* [neutralinojs](https://github.com/neutralinojs/neutralinojs) (6.3k ⭐, alternative to Electron)
+* [tauri](https://github.com/tauri-apps/tauri) (56k ⭐, alternative to Electron)
+* [babel](https://github.com/babel/babel/tree/master) (42k ⭐, alternative to Typescript)
 
 #### Node servers
 
 * [connect](https://github.com/senchalabs/connect) (9.6k ⭐, alternative to Express)
 * [fastify](https://github.com/fastify/fastify) (26k ⭐, alternative to Express)
+* [hapi](https://github.com/hapijs/hapi) (14.1k ⭐, alternative to Express)
 * [nest](https://github.com/nestjs/nest) (53.1k ⭐, relies on both fastify, and express)
+
+#### Package Managers
+
+* [yarn](https://github.com/yarnpkg/yarn) (41k ⭐): Yarn V1
+* [berry](https://github.com/yarnpkg/berry) (6k ⭐): Yarn V2
+* [bower](https://github.com/bower/bower) (15k ⭐)
+* [pnpm](https://github.com/pnpm/pnpm) (21k ⭐)
+* [atmospherejs](https://atmospherejs.com/) (meteor, seems dead+no Github)
+</div><div>
+
+#### HTTP clients
+
+* [axios](https://axios-http.com/) (97.9k ⭐, alternative to fetch)
 
 #### Testing
 
@@ -30,21 +47,15 @@ A list of libraries made by companies/users, that may be used both for websites 
 * [QUnit](https://github.com/qunitjs/qunit) (4k ⭐, alternative to Mocha)
 * [Karma](https://github.com/karma-runner)) (12k ⭐, alternative to Mocha)
 * [jestjs](https://github.com/facebook/jest) (41k ⭐, alternative to Mocha, [frisby](https://github.com/vlucas/frisby))
-</div><div>
 
-#### JavaScript environment
+#### End-to-End testing
 
-* [Deno](https://deno.land/) (87k ⭐, alternative to Node)
-* [neutralinojs](https://github.com/neutralinojs/neutralinojs) (6.3k ⭐, alternative to Electron)
-* [tauri](https://github.com/tauri-apps/tauri) (56k ⭐, alternative to Electron)
+* [browserstack](https://www.browserstack.com/) (run playwright, cypress...)
+* [playwright](https://github.com/microsoft/playwright) (46k ⭐)
+* [nightwatch](https://github.com/nightwatchjs/nightwatch) (11.3k ⭐)
+* [puppeteer](https://github.com/puppeteer/puppeteer) (81.3k ⭐)
+* [cypress](https://github.com/cypress-io/cypress) (42.1k ⭐)
 
-#### Package Managers
-
-* [yarn](https://github.com/yarnpkg/yarn) (41k ⭐): Yarn V1
-* [berry](https://github.com/yarnpkg/berry) (6k ⭐): Yarn V2
-* [bower](https://github.com/bower/bower) (15k ⭐)
-* [pnpm](https://github.com/pnpm/pnpm) (21k ⭐)
-* [atmospherejs](https://atmospherejs.com/) (meteor, seems dead+no Github)
 </div></div>
 
 <hr class="sep-both">
@@ -65,6 +76,7 @@ A list of libraries made by companies/users, that may be used both for websites 
   * [reactjsexample](https://reactjsexample.com/) (107k ⭐)
 * [Angular](https://github.com/angular/angular) (86k ⭐)
 * [gatsby](https://github.com/gatsbyjs/gatsby) (54k ⭐)
+* [weex](https://github.com/alibaba/weex) (18k ⭐)
 
 Random
 
@@ -81,15 +93,38 @@ Random
 #### Bundles
 
 * [nw.js](https://github.com/nwjs/nw.js/) (39.3k ⭐, <small>"call directly from the DOM"</small>)
+* [browserify](https://github.com/browserify/browserify) (14.3k ⭐, <small>require in the browser</small>)
 * [rollupjs](https://github.com/rollup/rollup) (22.7k ⭐)
 * [esbuild](https://github.com/evanw/esbuild) (34.2k ⭐)
-* [webpack](https://webpack.js.org/) (62.2k ⭐) <small>(see in-browser)</small>
+* [webpack](https://webpack.js.org/) (62.2k ⭐) <small>(see in-browser, [compat](https://github.com/ElemeFE/obsolete-webpack-plugin))</small>
 * [terser](https://github.com/terser/terser) (7.6k ⭐, minifier)
 </div></div>
 
 <hr class="sep-both">
 
 <p class="text-center display-5">🔎 Unsorted libraries 🔎</p>
+
+<hr class="sep-both">
+
+## 🗃️ Random 🗃 ️
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+Validation
+
+* [validatorjs](https://github.com/mikeerickson/validatorjs) (1.7k ⭐)
+
+Dates
+
+* [moment.js](https://github.com/moment/moment/) (47.1k ⭐)
+* [humanize](https://www.npmjs.com/package/humanize) (0.3k ⭐, dead)
+</div><div>
+
+Localization
+
+* [localizejs](https://localizejs.com/)
+* [tesseract](https://github.com/naptha/tesseract.js) (OCR)
+</div></div>
 
 <hr class="sep-both">
 
@@ -323,6 +358,4 @@ This code is **old**, and **need to be completely rewritten**.
 </script>
 ```
 </details>
-
-
 </div></div>
