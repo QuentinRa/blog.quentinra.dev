@@ -13,14 +13,14 @@
               "name": "Web development",
               "desc": "...",
               "icon": null,
-              "hidden": false
+              "hidden": true
             },
             {
               "tag": "web/_general/apache/index.md",
               "name": "Apache",
               "desc": "...",
               "icon": "<i class=\"bi bi-server\"></i>",
-              "hidden": false
+              "hidden": true
             }
           ],
           "\uD83D\uDD2D HTML \uD83D\uDD2D": [
@@ -29,7 +29,7 @@
               "name": "HTML",
               "desc": "...",
               "icon": "<i class=\"bi bi-filetype-html\"></i>",
-              "hidden": false
+              "hidden": true
             }
           ],
           "🪄 Frameworks 💫": [
@@ -193,6 +193,7 @@
       "build": {
         "name": "Build tools",
         "active": false,
+        "hidden": true,
         "courses": {
           "~": [
             {
@@ -250,7 +251,7 @@
               "name": "LaTeX",
               "desc": "...",
               "icon": "<i class=\"bi bi-file-earmark-richtext\"></i>",
-              "hidden": false
+              "hidden": true
             }
           ],
           "🧃 Store data 🧃": [
@@ -280,7 +281,7 @@
               "name": "XML",
               "desc": "...",
               "icon": "<i class=\"bi bi-layout-text-sidebar\"></i>",
-              "hidden": false
+              "hidden": true
             }
           ]
         }

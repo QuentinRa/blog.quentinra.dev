@@ -2,36 +2,40 @@
 
 <div class="row row-cols-md-2"><div>
 
-When working on a project, here are a few problems
+There are many problems when working on projects, and most can be addressed with Version-control. **Git** is the most used one.
 
-* **code sharing** 📬: the need to allow other developers/contributors to read, or even edit the code
+* **code sharing** 📬: allow other developers to read/edit the code
+* **a need for time travel** 🗃️: find back some code that was removed... Go back to a previous version...
+* **duplicates** 🎭: copies of the project to test something. What if you want to merge your changes, or share them with others?
+* **computer dies**/accidental removal/... 😵: [...]
+* **information** 🔎: who added/changed something? when?...
 
-* **a need for time travel** 🗃️: the developer removed some old long time ago, and now needs to access it again. There could also be a case in which there is a need to go back to a previous version
+<br>
 
-* **duplicates** 🎭: a copy of a project to test something, it takes disk space. And what if you want to merge code between them?
+**Where to learn?**
 
-* **computer dies** 😵: if it happens, and you don't have any backups, then you lost your project for good...
-
-There are many more of them, but in short, all of them can be addressed with Version-control, and Git is the most used one.
-
-> See [OH MY GIT!](https://ohmygit.org/): "An open source game about learning Git!".
+* [OH MY GIT!](https://ohmygit.org/): "An open source game about learning Git!".
 </div><div>
 
-To use Git, there are two actors involved
+#### Git clients 👲
 
-* **clients** 👲: these are computers that will download project, work on them, upload their changes...
-  * The command `git` / [git-scm](https://git-scm.com/) (Windows) 
-  * [GitHub Desktop](https://desktop.github.com/)
-  * [Git extension (VSCode)](https://code.visualstudio.com/docs/sourcecontrol/overview) (👻)
-  * [GitKraken](https://www.gitkraken.com/) (👻)
-  * JetBrains integrated Git client <br><span>&nbsp;</span>
+These are computers that will download project, work on them, upload their changes... You can use:
 
-* **servers** 🖥️: they will host the code, and make it available to those allowed, or public if you're working open-source.
-  * [GitHub](https://github.com/) (Microsoft, my favorite)
-  * [GitLab](https://about.gitlab.com/) (Well-known alternative to GitHub)
-  * [Gogs](https://gogs.io/) (open-source, self-hosted)
-  * [Gitea](https://gitea.com/) (👻)
-  * [Bitbucket](https://bitbucket.org/) (👻)
+* The command `git`, and [git-scm](https://git-scm.com/) on Windows
+* [GitHub Desktop](https://desktop.github.com/)
+* [The Git extension in VSCode](https://code.visualstudio.com/docs/sourcecontrol/overview) (👻)
+* [GitKraken](https://www.gitkraken.com/) (👻)
+* JetBrains integrated Git client
+
+#### Git servers 🖥
+
+They will host the code, and make it available to those allowed, or public if you're working open-source. You can use:
+
+* [GitHub](https://github.com/) <small>(Microsoft, my favorite)</small>
+* [GitLab](https://about.gitlab.com/) <small>(Well-known alternative to GitHub)</small>
+* [Gogs](https://gogs.io/) <small>(open-source, self-hosted)</small>
+* [Gitea](https://gitea.com/) (👻)
+* [Bitbucket](https://bitbucket.org/) (👻)
 </div></div>
 
 <hr class="sep-both">
