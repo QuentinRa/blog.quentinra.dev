@@ -6,48 +6,6 @@
 
 A CSS is a list of **rules** that are made of **selectors+properties**. For instance, you can say that every text in a paragraph (selector "p") will be red (property color=red): this is a rule. They are three ways to write CSS.
 
-<table class="table border-dark table-striped table-bordered">
-<thead><tr><th>Inline CSS 🤮</th><th>CSS tag 🤢</th><th>External CSS 😍</th></tr></thead>
-<tbody>
-<tr>
-<td>
-
-Every tag in HTML got an attribute called **style**. Simply write the CSS inside.
-```HTML
-<p style="color:red;background: yellow;">
-  ...
-</p>
-```
-</td>
-<td>
-
-You can use one (or more) tag &lt;style&gt;, and put the CSS inside.
-
-```HTML
-<style>
-p {
-  color:red;
-  background: yellow;
-}
-</style>
-```
-</td>
-<td>
-
-You can put the CSS in another file, write the CSS as we did in style, and link it to the HTML with
-
-```html
-<link rel="stylesheet" 
-      href="/path/to/style.css">
-```
-
-This is the best way, as developers won't have to look at every file for CSS. You will also be able to use CDN to speed up your website.
-
-</td>
-</tr>
-</tbody>
-</table>
-
 <details>
 <summary>
 Usually, when using an external CSS, we are calling it <code>style.css</code>, you can make one for when we want to print the page <code>print.css</code>, and/or you can have one CSS file per page.
@@ -64,16 +22,10 @@ p {
 ```
 </details>
 
-<details class="pt-3">
-<summary><b>HELP!</b> I wrote some CSS, but I don't see any changes!?</summary>
-
-They may be three problems **1**: you didn't use the good selector, **2**: another style is overriding yours, or **3**: your page is rendering using the cached CSS. The tips we are given are
+They may be three problems **1**: you didn't use the good selector, **2**: another style is overriding yours
 
 * for **1**: try using background="red" or something like that, to check that the selector is good
 * for **2**: try using `!important` or check the CSS used in the developers' tools
-* for **3**: <kbd>CTRL+R</kbd> or <kbd>CTRL+SHIFT+R</kbd> or <kbd>SHIFT+F5</kbd> or <kbd>CTRL+F5</kbd>.
-
-</details>
 
 <hr class="sl">
 

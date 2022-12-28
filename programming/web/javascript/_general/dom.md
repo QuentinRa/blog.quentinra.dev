@@ -31,7 +31,8 @@ There are 3 ways to write JavaScript for a website.
 <tr>
 <td>
 
-You can write JavaScript directly inside a component using attributes such as `onmouseover`, `onclick`, `onsubmit` etc. The [list is here (W3Schools)](https://www.w3schools.com/TAGs/ref_eventattributes.asp).
+You can use attributes such as `onmouseover`, `onclick`, `onsubmit` etc. A [list can be found here (W3Schools)](https://www.w3schools.com/TAGs/ref_eventattributes.asp).
+
 ```HTML
 <p onmouseover="console.log('Hello World')">
     ...
@@ -40,31 +41,28 @@ You can write JavaScript directly inside a component using attributes such as `o
 </td>
 <td>
 
-You can `<script>` tags
+You can use `<script>` tags.
 
 ```HTML
 <script>
-// some JavaScript code
+// your JavaScript code
 console.log("Hello World")
 </script>
 ```
 </td>
 <td>
 
-You can write JavaScript in an external file, and link it to the HTML with
+You can link an external file. This is the proper way to do it <small>(CSP policy+caching, CDNs, SoC...)</small>.
 
 ```html
 <script src="/path/to/file.js"></script>
 ```
 
-This is the proper way to do it. It allows us to minify JavaScript, use CDNs, harden the CSP policy/caching, and it's easier to manage scripts.
-
+⚠️ **Note**: Modern browsers are usually caching JavaScript files. If you changed a file, and don't see any changes, reload the page while ignoring the cache: <kbd>CTRL+SHIFT+R</kbd> or <kbd>SHIFT+F5</kbd> or <kbd>CTRL+F5</kbd>.
 </td>
 </tr>
 </tbody>
 </table>
-
-⚠️ **Note**: Modern browsers are usually caching JavaScript files. If you changed a file, and don't see any changes, clear the cache, and try again. Usual shortcuts to reload the page while ignoring the cache are: <kbd>CTRL+SHIFT+R</kbd> or <kbd>SHIFT+F5</kbd> or <kbd>CTRL+F5</kbd>. ⚠️
 
 <hr class="sep-both">
 

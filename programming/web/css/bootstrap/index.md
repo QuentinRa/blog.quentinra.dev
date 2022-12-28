@@ -299,6 +299,7 @@ Stuff that I found, but never read/used yet.
 * container/container-fluid
 * update this old content
 * [bootstrapshuffle](https://bootstrapshuffle.com/)
+* [bootswatch](https://github.com/thomaspark/bootswatch)
 </div><div>
 
 ```

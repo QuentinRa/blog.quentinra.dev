@@ -30,8 +30,56 @@ As CSS rules can be complex <small>(responsive, accessibility)</small>, many **C
   * [Materialize](https://github.com/Dogfalo/materialize) (38.8k ⭐)
 * [bulma](https://github.com/jgthms/bulma) (46.6k ⭐)
 * [primer](https://github.com/primer/css) (11.6k ⭐, GitHub)
+* [semantic](https://github.com/Semantic-Org/Semantic-UI) (50.3k ⭐)
 * ...
 </div></div>
+
+<hr class="sep-both">
+
+## Getting started
+
+There are 3 ways to write CSS for a website.
+
+<table class="table border-dark table-striped table-bordered">
+<thead><tr><th>Inline CSS 🤮</th><th>STYLE tag 🤢</th><th>External CSS file 😍</th></tr></thead>
+<tbody>
+<tr>
+<td>
+
+You can use the attribute `style` to add inline CSS. It's convenient for testing.
+
+```HTML
+<p style="background: darkcyan">
+    ...
+</p>
+```
+</td>
+<td>
+
+You can use `<style>` tags. They are usually added in the `head`, but you can add them everywhere.
+
+```HTML
+<style>
+p {
+  background: darkcyan;
+}
+</style>
+```
+</td>
+<td>
+
+You can link an external CSS file. This is the proper way to do it <small>(CSP policy+caching, CDNs, SoC...)</small>.
+
+```html
+<link rel="stylesheet"
+      href="/path/to/style.css">
+```
+
+⚠️ **Note**: Modern browsers are usually caching CSS files. If you changed a file, and don't see any changes, reload the page while ignoring the cache: <kbd>CTRL+SHIFT+R</kbd> or <kbd>SHIFT+F5</kbd> or <kbd>CTRL+F5</kbd>.
+</td>
+</tr>
+</tbody>
+</table>
 
 <hr class="sep-both">
 
