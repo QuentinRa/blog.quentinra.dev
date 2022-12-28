@@ -12,12 +12,16 @@ A list of libraries made by companies/users, that may be used both for websites 
 
 <div class="row row-cols-md-2 mt-4"><div>
 
+Special: [emberjs](https://github.com/emberjs) (many solutions).
+
 #### JavaScript environment
 
 * [Deno](https://deno.land/) (87k ⭐, alternative to Node)
+* [meteor](https://github.com/meteor/meteor) (43.2k ⭐, [docs](https://docs.meteor.com/), alternative to Node)
 * [neutralinojs](https://github.com/neutralinojs/neutralinojs) (6.3k ⭐, alternative to Electron)
 * [tauri](https://github.com/tauri-apps/tauri) (56k ⭐, alternative to Electron)
 * [babel](https://github.com/babel/babel/tree/master) (42k ⭐, alternative to Typescript)
+* [purescript](https://www.purescript.org/)(1k ⭐, alternative to Typescript)
 
 #### Node servers
 
@@ -71,6 +75,7 @@ A list of libraries made by companies/users, that may be used both for websites 
 * [lit](https://github.com/lit/lit) (13.4k ⭐)
 * [Ionic](https://github.com/ionic-team/ionic-framework) (49k ⭐)
 * [React](https://github.com/facebook/react) (200k ⭐)
+  * [Material UI](https://github.com/mui/material-ui) (83.6k ⭐, UI)
   * [Next](https://github.com/vercel/next.js/) (98k ⭐)
   * [React Native](https://github.com/facebook/react-native)
   * [reactjsexample](https://reactjsexample.com/) (107k ⭐)
