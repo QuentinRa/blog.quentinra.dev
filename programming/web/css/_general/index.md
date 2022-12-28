@@ -20,7 +20,7 @@ Stuff that I found, but never read/used yet.
 
 * Material Design
 * MaterialUI
-* Bootstrap icons
+* Bootstrap icons/others
 * SASS (see TP2/...)
 
 ```

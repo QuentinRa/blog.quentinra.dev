@@ -50,6 +50,8 @@
 ##### Icons
 
 * [Bootstrap Icons](https://icons.getbootstrap.com/) (free, open-source, svg)
+* [Feather Icons](https://feathericons.com/) (free, open-source, svg)
+* [Font Awesome](https://fontawesome.com/search) (free with credits)
 
 ##### Backgrounds
 

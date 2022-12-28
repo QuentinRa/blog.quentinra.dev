@@ -142,7 +142,6 @@ Translations
 * [validatorjs](https://github.com/mikeerickson/validatorjs)
 * [jsencrypt](https://github.com/travist/jsencrypt) and [article](https://travistidwell.com/jsencrypt/)
 * [emojione](https://github.com/joypixels/emojione) and [emoji-toolkit](https://github.com/joypixels/emoji-toolkit)
-* [unified](https://github.com/unifiedjs/unified) / [remark](https://github.com/remarkjs/remark)
 * [tesseract.js](https://github.com/naptha/tesseract.js)
 * [humanize](https://www.npmjs.com/package/humanize)
 
