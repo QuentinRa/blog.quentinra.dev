@@ -36,6 +36,7 @@ A list of libraries made by companies/users, that may be used both for websites 
 
 * [Deno](https://deno.land/) (87k ⭐, alternative to Node)
 * [neutralinojs](https://github.com/neutralinojs/neutralinojs) (6.3k ⭐, alternative to Electron)
+* [tauri](https://github.com/tauri-apps/tauri) (56k ⭐, alternative to Electron)
 
 #### Package Managers
 
@@ -43,6 +44,7 @@ A list of libraries made by companies/users, that may be used both for websites 
 * [berry](https://github.com/yarnpkg/berry) (6k ⭐): Yarn V2
 * [bower](https://github.com/bower/bower) (15k ⭐)
 * [pnpm](https://github.com/pnpm/pnpm) (21k ⭐)
+* [atmospherejs](https://atmospherejs.com/) (meteor, seems dead+no Github)
 </div></div>
 
 <hr class="sep-both">
@@ -62,6 +64,11 @@ A list of libraries made by companies/users, that may be used both for websites 
   * [React Native](https://github.com/facebook/react-native)
   * [reactjsexample](https://reactjsexample.com/) (107k ⭐)
 * [Angular](https://github.com/angular/angular) (86k ⭐)
+* [gatsby](https://github.com/gatsbyjs/gatsby) (54k ⭐)
+
+Random
+
+* [Mosaic](https://github.com/Authman2/Mosaic) (0.4k ⭐)
 </div><div>
 
 #### Tools

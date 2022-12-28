@@ -110,21 +110,28 @@ Translations
 * [symfony](https://symfony.com/) ([nelmio](https://github.com/nelmio/NelmioApiDocBundle))
 * [laravel](https://laravel.com/)
 * [elm](https://elm-lang.org/) (language)
-* [tauri](https://tauri.app/)
 * [Dart](https://dart.dev/)
 * [Flutter](https://flutter.dev/)
 * [vercel](https://vercel.com/)
-* Dust, EJS, Handlebars, Hogan.js, Pug (Jade), Twig, and Vash (express)
 * End-to-End Testing Solution ([cypress](https://www.cypress.io/how-it-works)/[browserstack](https://www.browserstack.com/)/[playwright](https://playwright.dev/), Nightwatch.js ...)
 * chrome dev tools snippets
 * [headlessbrowserapi](https://headlessbrowserapi.com/)
-* [atmospherejs](https://atmospherejs.com/)
 * [weex](https://github.com/alibaba/weex)
-* [Mosaic](https://github.com/Authman2/Mosaic)
-* [gatsbyjs](https://www.gatsbyjs.com/)
 * [hapi](https://hapi.dev/)
 * [logfetch](https://logfetch.com/)
 * [browserslist](https://github.com/browserslist/browserslist)
+
+**Templating**
+
+* [Twig](https://github.com/twigphp/Twig)
+* [pug](https://github.com/pugjs/pug)
+* [vash](https://github.com/kirbysayshi/vash) (0.5k ⭐)
+* [hogan](https://github.com/twitter/hogan.js/)
+* [express-handlebars](https://github.com/express-handlebars/express-handlebars)
+* [ejs](https://github.com/mde/ejs)
+* [haml](https://haml.info/)
+* [mustache](https://github.com/mustache/mustache)
+* [dustjs](https://github.com/linkedin/dustjs)
 
 **JS libraries**
 
