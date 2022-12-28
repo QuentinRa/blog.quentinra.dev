@@ -36,18 +36,6 @@ This is a list of the selectors I know of
 <thead><tr><th>Description</th><th>CSS</th><th>HTML matched</th></tr></thead>
 <tbody>
 
-<!-- Class selector -->
-<tr>
-<td><b>Class selector</b><br>
-You can match a selector having every specified classes too.<br>You can also add a tag before a class.
-</td>
-<td>
-<pre><code class="language-css">p.one.two { /* ... */ }</code></pre>
-</td>
-<td>
-<pre><code class="language-html">&lt;p class="one two">...&lt;/p></code></pre>
-</td>
-
 <!-- Pseudo-classes -->
 <tr>
 <td><b>Pseudo-classes selector</b><br>
@@ -70,23 +58,6 @@ button:hover { /* mouse over */ }
 </td>
 <td>
 ...
-</td>
-</tr>
-
-<!-- Property/Attribute selector -->
-<tr>
-<td><b>Property selector</b> (or attribute selector)<br>
-You can select something according to the values of its attributes.
-
-You got <code>=</code> (equals), <code>*=</code> (contains) etc.
-</td>
-<td>
-<pre><code class="language-css">input[type="radio"] {
-  /* ... */
-}</code></pre>
-</td>
-<td>
-<pre><code class="language-html">&lt;p class="name">...&lt;/p></code></pre>
 </td>
 </tr>
 

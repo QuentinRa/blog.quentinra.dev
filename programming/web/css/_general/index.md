@@ -11,12 +11,12 @@ Cascading Style Sheets (CSS) are used to style and animate
 
 CSS files (`.css`) are defining **rules** <small>(ex: the color will be gray)</small> to apply on a target called **selector** <small>(ex: apply on every text)</small>. You can learn CSS on
 
-* [MDN/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) <small>(🚀)</small>
-* [W3Schools/CSS](https://www.w3schools.com/css/default.asp) <small>(🏫)</small>
+* [MDN/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) <small>(🚀, [Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference))</small>
+* [W3Schools/CSS](https://www.w3schools.com/css/default.asp) <small>(🏫, [Reference](https://www.w3schools.com/CSSref/index.php))</small>
 
 Some CSS tools
 
-* 👉 Check the correctness of your CSS using [W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+* 👉 Check the **correctness** of your CSS using [W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 </div><div>
 
 CSS selectors/rules are added modularized, so CSS3 is the last CSS version. You should refer to [caniuse](https://caniuse.com/) to see what's supported, and [CSS4](https://css4-selectors.com/) for new selectors that may be added to CSS modules.
@@ -160,7 +160,58 @@ The style will be applied to every element.
 </div></div>
 </div><div>
 
-...
+#### 👉 Chain selectors
+
+We can chain any selectors!
+
+<div class="row row-cols-md-2"><div>
+
+```html
+<p class="one two">xxx</p>
+```
+</div><div>
+
+```css
+p.one.two { /* ... */ }
+```
+</div></div>
+
+➡️ Using `.name` is the same as `*.name`...
+
+#### Property/Attribute selector
+
+We can select something based on them having a property.
+
+<div class="row row-cols-md-2"><div>
+
+```html
+<p hidden>xxx</p>
+```
+</div><div>
+
+```css
+[hidden] { /* ... */ }
+```
+</div></div>
+
+We can select something based on the value of a property.
+
+<div class="row row-cols-md-2"><div>
+
+```html
+<input type="text" />
+<path d="16 95 3"/>
+```
+</div><div>
+
+```css
+[type="text"] { /* ... */ }
+[d~="95"] { /* ... */ }
+```
+</div></div>
+
+<p hidden="">xxx</p>
+
 </div></div>
 
 <hr class="sep-both">
@@ -208,8 +259,6 @@ $ npm i -g csso-cli
 
 table.class tr > :not(td[colspan="7"], :first-child) {}
 
-*[href] {}
-*[d~='1.06L9.53'] {}
 div:nth-child(2) {}
 button[role="tab"][id][tabindex="-1"] {}
 /* get selector from console */
