@@ -1,24 +1,31 @@
 # Cascading Style Sheets (CSS)
 
-**[Old notes](_old.md)**
-
 <div class="row row-cols-md-2"><div>
 
-Cascading Style Sheets (CSS) are used to **embellish**
+Cascading Style Sheets (CSS) are used to style and animate
 
 * 🌍 Websites
 * 🖥️ Desktop applications <small>(Electron/JavaFX/...)</small>
 * 📱 Mobile applications <small>(Android XML layouts/...)</small>
 * ...
 
-And, we can also do nice **animations** in CSS.
+CSS files (`.css`) are defining **rules** <small>(ex: the color will be gray)</small> to apply on a target called **selector** <small>(ex: apply on every text)</small>. You can learn CSS on
+
+* [MDN/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) <small>(🚀)</small>
+* [W3Schools/CSS](https://www.w3schools.com/css/default.asp) <small>(🏫)</small>
+
+Some CSS tools
+
+* 👉 Check the correctness of your CSS using [W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 </div><div>
 
-As CSS can be complex, especially when we add rules to make the content adapt itself to different screen sizes, CSS frameworks are often used.
+CSS selectors/rules are added modularized, so CSS3 is the last CSS version. You should refer to [caniuse](https://caniuse.com/) to see what's supported, and [CSS4](https://css4-selectors.com/) for new selectors that may be added to CSS modules.
 
-* [Bootstrap](https://github.com/twbs/bootstrap) (+160k ⭐)
+As CSS rules can be complex <small>(responsive, accessibility)</small>, many **CSS frameworks** with predefined rules were created.
+
+* [Bootstrap](/programming/web/css/bootstrap/index.md) (+160k ⭐)
 * [tailwindcss](https://github.com/tailwindlabs/tailwindcss) (63.4k ⭐)
-* Material Design <small>(Google guidelines)</small>
+* Material Design <small>(Google UX Guidelines)</small>
   * [Material Web](https://github.com/material-components/material-web) (4.6k ⭐, in-progress)
   * [Materialize](https://github.com/Dogfalo/materialize) (38.8k ⭐)
 * [bulma](https://github.com/jgthms/bulma) (46.6k ⭐)
@@ -49,6 +56,7 @@ $ npm i -g csso-cli
 * [css-tools](https://github.com/csstools)
 * [style-lint](https://github.com/ismay/stylelint-no-unsupported-browser-features)
 * [ct](https://github.com/csswizardry/ct)
+* [CSS minifier](https://css-minifier.com/) + [configure a watcher to auto-compile css to min.css](https://www.jetbrains.com/help/phpstorm/compressing-css.html)
 </div><div>
 
 ```
@@ -57,6 +65,8 @@ $ npm i -g csso-cli
       content="width=device-width, height=device-height, viewport-fit=cover, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
   />
 ```
+
+* pseudo-selector ([ex](https://developer.mozilla.org/en-US/docs/Web/CSS/::first-line))
 
 ```css
 .selector {

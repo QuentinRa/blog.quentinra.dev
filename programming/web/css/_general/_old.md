@@ -1,18 +1,5 @@
 # Cascading Style Sheets
 
-**[Updated notes](index.md)**
-
-Cascading Style Sheets (CSS) are mainly used to style websites, and add some animations. I'm not an expert nor fond of CSS because CSS frameworks such as Bootstrap are providing most of the CSS that I need. We are currently using **CSS3**, but maybe [someday we will see CSS4](https://css4-selectors.com/status-for-css4/) introducing [new selectors](https://css4-selectors.com/selectors/) (a lot of them are already available).
-
-* How to write CSS
-* What are selectors?
-* List of CSS properties that I'm using the most
-* What's responsive design?
-
-> **Note**: as you are doing in HTML, the good developer that you are 😎, you should test that your code is following the W3C standard [using this validator](https://jigsaw.w3.org/css-validator/#validate_by_input). You may also want to minimize your CSS (to make your page faster, as the size of the CSS will be reduced), you can do that with a [CSS minifier](https://css-minifier.com/) <small>(note that in PHPStorm, you can [configure a watcher to auto-compile css to min.css](https://www.jetbrains.com/help/phpstorm/compressing-css.html))</small>. If you want to use a CDN, please refer to the WEB course.
->
-> You can use SASS/Less to generate CSS, which are working like TypeScript for JavaScript, or PHP to factorize HTML code.
-
 <hr class="sr">
 
 ## Introduction
@@ -621,12 +608,3 @@ opacity(color, 0.5)
 
 * [StyleGuide](https://www.toptal.com/css/sass-mixins-keep-your-stylesheets-dry)
 * [Another style guide](https://www.toptal.com/front-end/sass-style-guide-a-sass-tutorial-on-how-to-write-better-css-code)
-
-<hr class="sr">
-
-## Sources
-
-* <http://www.iut-fbleau.fr/sitebp/web/wim11/css/>
-* <https://www.w3schools.com/css/default.asp>
-* <https://validator.w3.org/#validate_by_input>
-* <https://perso.limsi.fr/annlor/enseignement/ensiie/pw/resume_html_css.pdf>
