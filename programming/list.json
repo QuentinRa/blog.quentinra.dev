@@ -73,13 +73,6 @@
               "hidden": false
             },
             {
-              "tag": "web/javascript/_general/libs.md",
-              "name": "JavaScript libraries",
-              "desc": "List of unsorted node/js libraries.",
-              "icon": null,
-              "hidden": false
-            },
-            {
               "tag": "web/javascript/node.js/index.md",
               "name": "Node.js",
               "desc": "A modern JavaScript environment.",
@@ -118,6 +111,13 @@
               "name": "electron.js",
               "desc": "Build cross-platform apps.",
               "icon": "<i class=\"bi bi-box\"></i>",
+              "hidden": false
+            },
+            {
+              "tag": "web/javascript/_general/libs.md",
+              "name": "🪨 Libraries 🪨",
+              "desc": "List of unsorted Node/JS libraries.",
+              "icon": null,
               "hidden": false
             }
           ],
