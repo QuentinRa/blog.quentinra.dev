@@ -14,7 +14,7 @@ There are many problems when working on projects, and most can be addressed with
 
 **Where to learn?**
 
-* [OH MY GIT!](https://ohmygit.org/): "An open source game about learning Git!".
+* [OH MY GIT!](https://ohmygit.org/) <small>(👻, a game to learn Git)</small>
 </div><div>
 
 #### Git clients 👲
@@ -29,7 +29,7 @@ These are computers that will download project, work on them, upload their chang
 
 #### Git servers 🖥
 
-They will host the code, and make it available to those allowed, or public if you're working open-source. You can use:
+They will host the code, and make it available to those allowed, or to everyone if you're working on open-source projects. You can use:
 
 * [GitHub](https://github.com/) <small>(Microsoft, my favorite)</small>
 * [GitLab](https://about.gitlab.com/) <small>(Well-known alternative to GitHub)</small>

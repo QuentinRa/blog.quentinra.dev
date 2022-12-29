@@ -143,7 +143,7 @@ The style will be applied to any tag having this class.
 ```
 </div></div>
 
-#### Joker selector 🃏
+#### Universal/Joker selector 🃏
 
 The style will be applied to every element.
 
@@ -158,25 +158,6 @@ The style will be applied to every element.
 * { /* ... */ }
 ```
 </div></div>
-</div><div>
-
-#### 👉 Chain selectors
-
-We can chain any selectors!
-
-<div class="row row-cols-md-2"><div>
-
-```html
-<p class="one two">xxx</p>
-```
-</div><div>
-
-```css
-p.one.two { /* ... */ }
-```
-</div></div>
-
-➡️ Using `.name` is the same as `*.name`...
 
 #### Property/Attribute selector
 
@@ -209,8 +190,60 @@ We can select something based on the value of a property.
 [d~="95"] { /* ... */ }
 ```
 </div></div>
+</div><div>
 
-<p hidden="">xxx</p>
+#### Pseudo-selectors
+
+They are additional selectors based on a state/condition. These are called Pseudo-classes. See the complete [list on W3Schools](https://www.w3schools.com/CSSref/css_selectors.php).
+
+```css
+:hover { /* mouse over */ }
+:not(p) { /* every tag aside from "<p>" */ }
+:not(p, a) { /* [...] aside from "<p>" and "<a>" */ }
+:is(h1, h2) { /* either h1 or h2 */ }
+:first-child { /* [ ... ] */ }
+:nth-child(0) { /* [ ... ] */ }
+:last-child { /* [ ... ] */ }
+```
+
+➡️ There are also Pseudo-elements providing access to a fake element. They start with `::` such as `::first-line`.
+
+<br>
+
+#### 👉 Chain selectors
+
+We can chain any selectors!
+
+<div class="row row-cols-md-2"><div>
+
+```html
+<p class="one two">xxx</p>
+<input type="text" hidden>xxx</input>
+```
+</div><div>
+
+```css
+p.one.two { /* ... */ }
+input[type="text"][hidden] { /* */ }
+```
+</div></div>
+
+➡️ Using `.name` is the same as `*.name`...
+
+<br>
+
+#### 🛣️ Combinators
+
+They can apply a selection based on the structure of the page.
+
+```css
+div, a { /* applied on both "div" and "a" */ }
+div > a { /* "links" having a "div" as parent */ }
+div a { /* "links" having a "div" as ancestor */ }
+p + a { /* an adjacent "link" right-after a "p" */ }
+```
+
+➡️ Obviously, you can use any selectors instead of `a`, `p`, and `div`.
 
 </div></div>
 
@@ -247,7 +280,7 @@ $ npm i -g csso-cli
   />
 ```
 
-* pseudo-selector ([ex](https://developer.mozilla.org/en-US/docs/Web/CSS/::first-line))
+* get selector from consol
 
 ```css
 .selector {
@@ -256,11 +289,5 @@ $ npm i -g csso-cli
     width: 44px;
     opacity: 1;
 }
-
-table.class tr > :not(td[colspan="7"], :first-child) {}
-
-div:nth-child(2) {}
-button[role="tab"][id][tabindex="-1"] {}
-/* get selector from console */
 ```
 </div></div>
