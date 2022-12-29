@@ -51,6 +51,52 @@ Based on Material Design (Google UX Guidelines)
 
 <hr class="sep-both">
 
+## 🏫 About CSS 🏫
+
+<div class="row row-cols-md-2"><div>
+
+CSS files (`.css`) are defining **rules** to apply on a target called **selector**. A rule is made of a **property**, and its **value**.
+
+**Example**: "every link should have the color yellow"
+
+* Selector: Every link (`a`)
+* Rule
+  * Property: the color of the text (`color`)
+  * Value: `yellow`
+
+```css
+a {
+    color: yellow;
+}
+```
+
+Notes
+
+* 🔎 One rule one per line is a good practice
+* 🔎 The semicolon (`;`) is mandatory <small>(unless there is only one rule)</small>
+</div><div>
+
+#### Specificity
+
+Styles are applied in **cascade**! There could be many selectors that are defining a rule that could be applied on the same tag.
+
+If there are conflicts <small>(ex: two selectors defining the same property)</small>, the [**Specificity**](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) is used to determine which rule is applied. In a nutshell, every selector has a weight <small>(~=how much specific the selector is)</small> which is used to determine which rule is more important.
+
+```css
+a { color: yellow; }
+a:hover { color: red; } /* will override the other */
+```
+
+➡️ You can use `!important` to manually force a style to be applied.
+
+```css
+a { color: yellow !important; }
+a:hover { color: red; } /* won't override the other */
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Getting started
 
 There are 3 ways to write CSS for a website.
@@ -475,20 +521,12 @@ $ npm i -g csso-cli
 * print.css
 </div><div>
 
+* `inherit`
+
 ```
 <meta
       name="viewport"
       content="width=device-width, height=device-height, viewport-fit=cover, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
   />
-```
-
-```css
-@charset "utf-8"; /* optional */
-
-/* a comment */
-p {
-    color:red;
-    background: yellow;
-}
 ```
 </div></div>

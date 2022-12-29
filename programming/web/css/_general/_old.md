@@ -2,28 +2,6 @@
 
 <hr class="sl">
 
-## CSS properties
-
-The format is 
-
-<pre><code class="language-css"
->selectors {
-    property_name: property_value;
-}</code></pre>
-
-Notes
-
-* write one per line 👍
-* the `;` (semicolon) is optional, but add it 👍
-* you may add `!important` to force a style 🤔
-* the last style is applied ("*cascade*" 👈), or the last with important
-  * to be accurate, each selector have a **specificity**, which is used to determine what property is the most relevant ([source](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity))
-* you may use the value `inherit` to inherit the value of the parent
-
-Usually, when you are learning CSS, you will go to other websites that you like, and learn by reading how they do something. You can also ask something on Stack Overflow, or you check websites such as W3Schools/YouTube (**don't copy-paste code, usually websites are under copyright**). I think that the best way to learn CSS, is to learn the syntax, then look on the WEB each time you need something new, and learn bit by bit, as there are **too many properties**.
-
-<hr class="sl">
-
 ## Responsive design
 
 This is most likely what will take most of your time, and why I switched to Bootstrap. Your user will use different resolutions when visiting your website, different browsers, and different platforms (mobile, tablet, computer, etc.). This is your job, that the website is properly rendered on each platform, and that's a practice called **responsive design**.
