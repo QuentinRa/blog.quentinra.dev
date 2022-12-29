@@ -1,32 +1,20 @@
-# Cascading Style Sheets
+# SASS
 
-<hr class="sr">
+<div class="row row-cols-md-2"><div>
 
-## Animations
+...
+</div><div>
 
-I never used CSS animations (hence you may complete this part), but here are some links. It looks fun, and I hope someone will scout this for us
+...
+</div></div>
 
-* [MDN - CSS animations](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
-* [CSS-tricks - Animation Libraries](https://css-tricks.com/css-animation-libraries/)
+<hr class="sep-both">
 
-<hr class="sl">
+## 👻 To-do 👻
 
-## External resources
+Stuff that I found, but never read/used yet.
 
-Guidelines
-
-* [List of guides](https://css-tricks.com/css-style-guides/)
-* [CSS guidelines](https://cssguidelin.es/#css-selectors)
-* [codeguide](https://codeguide.co/#css-syntax) (quite good, almost a summary of the two previous ones)
-
-CheatSheets
-
-* [Simple cheatsheet](https://devhints.io/css) (😍, not too much content, well-made)
-* [CSS - Reference](https://cssreference.io/) (quite good to get explanations about something)
-
-<hr class="sl">
-
-## SCSS, SASS, and Less
+<div class="row row-cols-md-2"><div>
 
 You can use Less, SASS, or SCSS to write a sort of enhanced CSS. Both are similar, but the syntax is a bit different. You may read [JetBrains tutorial to configure watchers too (in PHPStorm)](https://www.jetbrains.com/help/phpstorm/transpiling-sass-less-and-scss-to-css.html#ws_sass_less_scss_syntax_highlighting) (you can enable/disable watchers).
 
@@ -39,6 +27,8 @@ sass input.scss output.css
 ```
 
 As always, [W3Schools got a tutorial about SASS](https://www.w3schools.com/sass/default.php). [SASS official documentation](https://sass-lang.com/guide) is quite good too.
+</div><div>
+
 
 <details class="details-border">
 <summary>My notes about the syntax</summary>
@@ -143,3 +133,4 @@ opacity(color, 0.5)
 
 * [StyleGuide](https://www.toptal.com/css/sass-mixins-keep-your-stylesheets-dry)
 * [Another style guide](https://www.toptal.com/front-end/sass-style-guide-a-sass-tutorial-on-how-to-write-better-css-code)
+</div></div>

@@ -13,6 +13,8 @@ Cascading Style Sheets (CSS) are used to style and animate
 
 * [MDN/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) <small>(🚀, [Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference))</small>
 * [W3Schools/CSS](https://www.w3schools.com/css/default.asp) <small>(🏫, [Reference](https://www.w3schools.com/CSSref/index.php))</small>
+* [css-tricks](https://css-tricks.com/) <small>(🥂, articles)</small>
+* [cssreference](https://cssreference.io/) <small>(😳, reference)</small>
 </div><div>
 
 **CSS versions**
@@ -24,6 +26,7 @@ Cascading Style Sheets (CSS) are used to style and animate
 **Some CSS tools**
 
 * 👉 [W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input): check your CSS syntax
+* 👉 [cssguidelines](https://cssguidelin.es/)/[codeguide](https://codeguide.co/#css-syntax): guidelines
 </div></div>
 
 <hr class="sep-both">
@@ -537,31 +540,26 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * Bootstrap icons/others
-* SASS (see TP2/...)
 
 ```
 $ npm i -g csso
 $ npm i -g csso-cli
 ```
 
-* Less ([less-tester](https://www.lesstester.com/), [less-preview](http://lesscss.org/less-preview/))
-* Stylus/Compass
-* [animate.css](https://github.com/animate-css/animate.css)
+* Animations
+  * [animate.css](https://github.com/animate-css/animate.css)
 * [autoprefixer](https://github.com/postcss/autoprefixer)
 * [css-tools](https://github.com/csstools)
 * [style-lint](https://github.com/ismay/stylelint-no-unsupported-browser-features)
 * [ct](https://github.com/csswizardry/ct)
 * [CSS minifier](https://css-minifier.com/) + [configure a watcher to auto-compile css to min.css](https://www.jetbrains.com/help/phpstorm/compressing-css.html)
-* get selector from console
-* print.css
 </div><div>
 
+* SASS (see TP2/...)
+* Less ([less-tester](https://www.lesstester.com/), [less-preview](http://lesscss.org/less-preview/))
+* Stylus/Compass
+* get selector from console
+* print.css
 * `inherit`
 
-```
-<meta
-      name="viewport"
-      content="width=device-width, height=device-height, viewport-fit=cover, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
-  />
-```
 </div></div>
