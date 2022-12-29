@@ -1,35 +1,5 @@
 # Cascading Style Sheets
 
-<hr class="sl">
-
-## Responsive design
-
-This is most likely what will take most of your time, and why I switched to Bootstrap. Your user will use different resolutions when visiting your website, different browsers, and different platforms (mobile, tablet, computer, etc.). This is your job, that the website is properly rendered on each platform, and that's a practice called **responsive design**.
-
-The first thing to do is to add this line in your HTML, so that the website will try to adapt itself according to the size of the screen
-
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1">
-```
-
-Then, we will write **media queries**. These are blocks in which you will declare the rules that should be used if the screen is lesser than "Xpx" or greater than "Ypx" or within "Xpx" and "Ypx".
-
-```css
-@media screen and (max-width: 950px) {
-    /* the style declared here will only
-     be used is the width is lesser than
-     950px. */
-}
-
-@media screen and (max-width: 1100px) and (min-width: 950px) {
-    /* ... */
-}
-```
-
-You can use that to hide/show some buttons, change some component's positions, ...
-
-> **edit 02/09/2021**: media queries are more complex than what I learned, you can [read more here](https://www.bitdegree.org/learn/media-css#media-types), as I saw a lot of times `@media (min-width: 950px) {}` instead of the code above with `screen and`.
-
 <hr class="sr">
 
 ## Animations

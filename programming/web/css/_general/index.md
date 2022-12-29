@@ -30,7 +30,7 @@ Cascading Style Sheets (CSS) are used to style and animate
 
 ## 🚀 CSS frameworks 🚀
 
-As CSS rules can be complex <small>(responsive, accessibility)</small>, many CSS frameworks with predefined rules were created.
+As CSS rules can be complex <small>(responsive design, accessibility)</small>, many CSS frameworks with predefined rules were created.
 
 <div class="row row-cols-md-2"><div>
 
@@ -312,7 +312,9 @@ p + a { /* an adjacent "link" right-after a "p" */ }
 
 ## 🥂 Properties Values 🥂
 
+<p class="mt-3">
 Properties <small>(ex: background)</small> are taking values <small>(ex: a color)</small>.
+</p>
 
 <div class="row row-cols-md-2"><div>
 
@@ -370,7 +372,9 @@ p {
 
 ## 🔎 Properties 🔎
 
+<p class="mt-4">
 👻 I'm not too familiar with CSS, these examples are properties that I used before moving to CSS frameworks. 👻
+</p>
 
 <div class="row row-cols-md-2"><div>
 
@@ -490,6 +494,37 @@ p {
     list-style-type: circle; /* change list style */
     list-style-type: none; /* change list style */
 }
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Responsive design & Accessibility
+
+<div class="row row-cols-md-2"><div>
+
+You should adapt your website according to
+
+* 👉 the browser <small>(browser-specific CSS properties)</small>
+* 👉 the screen size <small>(media queries, responsive sizes...)</small>
+* 👉 the mode (light/dark) <small>(media queries)</small>
+* ...
+</div><div>
+
+#### Adapt to the size of the screen
+
+First, you need to add **one of these** lines in your `head`, to make the website automatically adapt itself to the size of the screen.
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, height=device-height, viewport-fit=cover, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+```
+
+Then, in your CSS, you can write CSS code that will only be executed when the condition of the **media query** is fulfilled.
+
+```css
+@media screen and (max-width: 950px) {}
+@media screen and (max-width: 1100px) and (min-width: 950px) {}
 ```
 </div></div>
 

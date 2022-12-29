@@ -227,6 +227,7 @@ Websites that I found, but never used yet.
 * [codehints](https://codehints.io/) and [codingcheats](https://codingcheats.io/) <small>(cheatsheets)</small>
 * [dev.to](https://dev.to/) <small>(community-based?)</small>
 * [toolsqa](https://www.toolsqa.com/) <small>(tools)</small>
+* [bitdegree/learn](https://www.bitdegree.org/learn/) <small>(many)</small>
 
 **MOOCs**
 
