@@ -208,7 +208,7 @@ The style will be applied to any tag having this class.
 ```
 </div></div>
 
-#### Universal/Joker selector 🃏
+#### Universal selector
 
 The style will be applied to every element.
 
@@ -574,9 +574,6 @@ $ npm i -g csso-cli
 * [CSS minifier](https://css-minifier.com/) + [configure a watcher to auto-compile css to min.css](https://www.jetbrains.com/help/phpstorm/compressing-css.html)
 </div><div>
 
-* SASS (see TP2/..., [nesting](https://markdotto.com/2015/07/20/css-nesting/))
-* Less ([less-tester](https://www.lesstester.com/), [less-preview](http://lesscss.org/less-preview/))
-* Stylus/Compass
 * get selector from console
 * print.css
 * `inherit`

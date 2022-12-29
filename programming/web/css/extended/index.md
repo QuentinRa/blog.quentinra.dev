@@ -1,12 +1,31 @@
-# SASS
+# Extended CSS
 
 <div class="row row-cols-md-2"><div>
 
-...
+There are compilers allowing us to write an extended/enhanced CSS, that once compiled, will generate a `.css`.
+
+They are used to make the CSS files much more readable and cleaner.
+</div><div class="align-self-center">
+
+* [SASS](https://github.com/sass/sass) (14.3k ⭐, `.scss`, `.sass`)
+* [Less](https://github.com/less/less.js) (16.9k ⭐, `.less`)
+* [Stylus](https://github.com/stylus/stylus) (11k ⭐, `.styl`)
+</div></div>
+
+<hr class="sep-both">
+
+## SASS
+
+<div class="row row-cols-md-2"><div>
+
+[SASS](https://github.com/sass/sass) (14.3k ⭐) xxx.
+
+* [Documentation](https://sass-lang.com/documentation/)
 </div><div>
 
 ...
 </div></div>
+
 
 <hr class="sep-both">
 
@@ -15,6 +34,10 @@
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
+
+* SASS (see TP2/..., [nesting](https://markdotto.com/2015/07/20/css-nesting/))
+* Less ([less-tester](https://www.lesstester.com/), [less-preview](http://lesscss.org/less-preview/)) and [LESS](https://lesscss.org/)
+* Stylus/Compass
 
 You can use Less, SASS, or SCSS to write a sort of enhanced CSS. Both are similar, but the syntax is a bit different. You may read [JetBrains tutorial to configure watchers too (in PHPStorm)](https://www.jetbrains.com/help/phpstorm/transpiling-sass-less-and-scss-to-css.html#ws_sass_less_scss_syntax_highlighting) (you can enable/disable watchers).
 

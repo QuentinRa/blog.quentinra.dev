@@ -301,6 +301,7 @@ Websites that I found, but never used yet.
 * [debugandrelease](https://www.debugandrelease.com/) <small>(electron)</small>
 * [svelte](https://github.com/sveltejs/svelte) <small>(electron)</small>
 * [logfetch](https://logfetch.com/) <small>(???)</small>
+* [code-boost](https://www.code-boost.com/) <small>(Js, React, Node...)</small>
 
 **Blockchains focused**
 
@@ -356,6 +357,7 @@ Websites that I found, but never used yet.
 * [anakagung](https://anakagung.com/blog/) <small>(4 articles)</small>
 * [essential-dev-skills](https://essential-dev-skills.com/) <small>(french)</small>
 * [jamesbachini](https://jamesbachini.com/) <small>(???)</small>
+* [upwork](https://www.upwork.com/resources/) <small>(???)</small>
 
 **YouTube**
 
@@ -367,6 +369,7 @@ Websites that I found, but never used yet.
 * [developer-y](https://github.com/Developer-Y/cs-video-courses)
 * [build-your-own-x](https://github.com/codecrafters-io/build-your-own-x)
 * [project-guidelines](https://github.com/elsewhencode/project-guidelines)
+* [Zero To Mastery](https://github.com/zero-to-mastery)
 
 **Practice**
 

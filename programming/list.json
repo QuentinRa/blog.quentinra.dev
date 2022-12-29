@@ -44,9 +44,16 @@
           "🎨 Cascading Style Sheets (CSS) 🖼️": [
             {
               "tag": "web/css/_general/index.md",
-              "name": "CSS",
-              "desc": "...",
+              "name": "CSS (basics)",
+              "desc": "Style, and animate websites/apps/...",
               "icon": "<i class=\"bi bi-filetype-css\"></i>",
+              "hidden": false
+            },
+            {
+              "tag": "web/css/extended/index.md",
+              "name": "Extended CSS",
+              "desc": "Notes about SASS, SCSS, LESS... 🚀",
+              "icon": "<i class=\"bi bi-brightness-high-fill\"></i>",
               "hidden": false
             },
             {
