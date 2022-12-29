@@ -31,12 +31,16 @@ $ sass input.scss output.css # manually compile 😪
 
 #### Variables
 
+<p></p>
+
 ```scss
 $name: #d41;
 p { color: $name; }
 ```
 
 #### Inheritance
+
+<p></p>
 
 ```scss
 .test { }
@@ -61,6 +65,8 @@ p {
 
 #### Mixin
 
+<p></p>
+
 ```scss
 // declare a mixin
 @mixin padding-x ($value) { padding-left: $value; padding-right: $value; }
@@ -72,6 +78,8 @@ p {
 </div><div>
 
 #### Statements
+
+<p></p>
 
 ```scss
 $value: 0;
@@ -93,6 +101,8 @@ p {
 
 #### Predefined functions
 
+<p></p>
+
 ```scss
 p {
   color: mix(#FF0033, #FF0033, 50%);
@@ -103,7 +113,7 @@ p {
 
 #### Split your SCSS into modules
 
-You can create modules to split your code. A module must be named `_other.scss`, not `other.scss` ⚠️. They will be merged into the file importing them, and won't have their own `.css` file.
+You can create modules to split your code. A module is usually named `_other.scss`, not `other.scss` ⚠️. They will be merged into the file importing them, and won't have their own `.css` file.
 
 You can use "`use`" or "`import`" to import a module <small>(ex: `_other.scss`)</small>.
 
@@ -136,7 +146,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [SASS nesting](https://markdotto.com/2015/07/20/css-nesting/)
-* [PHPStorms watchers](https://www.jetbrains.com/help/phpstorm/transpiling-sass-less-and-scss-to-css.html#ws_sass_less_scss_syntax_highlighting)
+* [PHPStorm watchers](https://www.jetbrains.com/help/phpstorm/transpiling-sass-less-and-scss-to-css.html#ws_sass_less_scss_syntax_highlighting)
 </div><div>
 
 * [StyleGuide](https://www.toptal.com/css/sass-mixins-keep-your-stylesheets-dry)

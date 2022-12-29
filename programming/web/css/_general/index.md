@@ -20,14 +20,16 @@ Cascading Style Sheets (CSS) are used to style and animate
 
 **CSS versions**
 
-⚠️ CSS selectors/rules are now modularized, so CSS3 is the last CSS version. You should refer to [caniuse](https://caniuse.com/) to see what properties/... are supported, and ["CSS4"](https://css4-selectors.com/) for new selectors/... that may be added.
+⚠️ CSS selectors/rules are now modularized, so CSS3 is the last CSS version. You should refer to [caniuse](https://caniuse.com/) to see what properties/... are supported, and ["CSS4"](https://css4-selectors.com/)/[CSSDB](https://cssdb.org/) for potential new features.
 
 <br>
 
 **Some CSS tools**
 
-* 👉 [W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input): check your CSS syntax
-* 👉 [cssguidelines](https://cssguidelin.es/) or [codeguide](https://codeguide.co/#css-syntax): guidelines
+* Syntax ✅: [W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+* Guidelines ‍🎓 : [cssguidelines](https://cssguidelin.es/) or [codeguide](https://codeguide.co/#css-syntax)
+* Minifier 🐲: [css-minifier](https://css-minifier.com/) or [csso](https://github.com/css/csso)/[cli](https://github.com/css/csso-cli)/[JB](https://www.jetbrains.com/help/phpstorm/compressing-css.html)
+* Lint 🧹: [stylelint](https://github.com/stylelint/stylelint) and/or [unsupported browser features linter](https://github.com/ismay/stylelint-no-unsupported-browser-features)
 </div></div>
 
 <hr class="sep-both">
@@ -558,27 +560,22 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* Bootstrap icons/others
+**PostCSS**
 
-```
-$ npm i -g csso
-$ npm i -g csso-cli
-```
-
-* Animations
-  * [animate.css](https://github.com/animate-css/animate.css)
+* [postcss](https://github.com/postcss/postcss)
 * [autoprefixer](https://github.com/postcss/autoprefixer)
-* [css-tools](https://github.com/csstools)
-* [style-lint](https://github.com/ismay/stylelint-no-unsupported-browser-features)
-* [ct](https://github.com/csswizardry/ct)
-* [CSS minifier](https://css-minifier.com/) + [configure a watcher to auto-compile css to min.css](https://www.jetbrains.com/help/phpstorm/compressing-css.html)
+* [preset](https://preset-env.cssdb.org/)
+* [csstools](https://github.com/csstools)
+
+**Animations**
+
+* [animate.css](https://github.com/animate-css/animate.css)
 </div><div>
 
+* [ct](https://github.com/csswizardry/ct)
 * get selector from console
 * print.css
 * `inherit`
-* [postcss](https://preset-env.cssdb.org/)
 * [Keeping Up With CSS](https://dev.to/5t3ph/keeping-up-with-css-3f20)
-* [Modern CSS Solutions](https://moderncss.dev/)
 
 </div></div>

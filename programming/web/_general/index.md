@@ -12,11 +12,15 @@ Stuff that I found, but never read/used yet.
 
 **Random**
 
+* Bootstrap icons/others
+* color picker (console)
+* free hosting (webhostapp, [kinsta](https://kinsta.com/)). See also, GitHub pages...
+
+**Apps**
+
 * CDNs ([keycdn](https://www.keycdn.com/))
 * semantic web ([protege](https://protege.stanford.edu/))
 * progressive web apps (PWA)
-* color picker (console)
-* free hosting (webhostapp, [kinsta](https://kinsta.com/)). See also, GitHub pages...
 </div><div>
 
 SEO
