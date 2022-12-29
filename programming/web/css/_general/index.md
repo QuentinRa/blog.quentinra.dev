@@ -9,29 +9,44 @@ Cascading Style Sheets (CSS) are used to style and animate
 * 📱 Mobile applications <small>(Android XML layouts/...)</small>
 * ...
 
-CSS files (`.css`) are defining **rules** <small>(ex: the color will be gray)</small> to apply on a target called **selector** <small>(ex: apply on every text)</small>. You can learn CSS on
+**Where to learn?**
 
 * [MDN/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) <small>(🚀, [Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference))</small>
 * [W3Schools/CSS](https://www.w3schools.com/css/default.asp) <small>(🏫, [Reference](https://www.w3schools.com/CSSref/index.php))</small>
-
-Some CSS tools
-
-* 👉 Check the **correctness** of your CSS using [W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 </div><div>
 
-CSS selectors/rules are added modularized, so CSS3 is the last CSS version. You should refer to [caniuse](https://caniuse.com/) to see what's supported, and [CSS4](https://css4-selectors.com/) for new selectors that may be added to CSS modules.
+**CSS versions**
 
-As CSS rules can be complex <small>(responsive, accessibility)</small>, many **CSS frameworks** with predefined rules were created.
+⚠️ CSS selectors/rules are now modularized, so CSS3 is the last CSS version. You should refer to [caniuse](https://caniuse.com/) to see what properties/... are supported, and ["CSS4"](https://css4-selectors.com/) for new selectors/... that may be added.
 
-* [Bootstrap](/programming/web/css/bootstrap/index.md) (+160k ⭐)
-* [tailwindcss](https://github.com/tailwindlabs/tailwindcss) (63.4k ⭐)
-* Material Design <small>(Google UX Guidelines)</small>
-    * [Material Web](https://github.com/material-components/material-web) (4.6k ⭐, in-progress)
-    * [Materialize](https://github.com/Dogfalo/materialize) (38.8k ⭐)
-* [bulma](https://github.com/jgthms/bulma) (46.6k ⭐)
-* [primer](https://github.com/primer/css) (11.6k ⭐, GitHub)
-* [semantic](https://github.com/Semantic-Org/Semantic-UI) (50.3k ⭐)
+<br>
+
+**Some CSS tools**
+
+* 👉 [W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input): check your CSS syntax
+</div></div>
+
+<hr class="sep-both">
+
+## 🚀 CSS frameworks 🚀
+
+As CSS rules can be complex <small>(responsive, accessibility)</small>, many CSS frameworks with predefined rules were created.
+
+<div class="row row-cols-md-2"><div>
+
+* [Bootstrap](https://github.com/twbs/bootstrap) <small>(+160k ⭐, [see my notes](/programming/web/css/bootstrap/index.md))</small>
+* [tailwindcss](https://github.com/tailwindlabs/tailwindcss) <small>(63.4k ⭐)</small>
+* [semantic](https://github.com/Semantic-Org/Semantic-UI) <small>(50.3k ⭐)</small>
+* [bulma](https://github.com/jgthms/bulma) <small>(46.6k ⭐)</small>
+* [primer](https://github.com/primer/css) <small>(11.6k ⭐, GitHub)</small>
 * ...
+</div><div>
+
+Based on Material Design (Google UX Guidelines)
+
+* [Material Web](https://github.com/material-components/material-web) <small>(4.6k ⭐, in-progress)</small>
+* [Materialize](https://github.com/Dogfalo/materialize) <small>(38.8k ⭐)</small>
+
 </div></div>
 
 <hr class="sep-both">
