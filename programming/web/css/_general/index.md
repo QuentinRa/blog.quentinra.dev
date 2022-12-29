@@ -249,6 +249,64 @@ p + a { /* an adjacent "link" right-after a "p" */ }
 
 <hr class="sep-both">
 
+## 🥂 Properties Values 🥂
+
+Properties <small>(ex: background)</small> are taking values <small>(ex: a color)</small>.
+
+<div class="row row-cols-md-2"><div>
+
+#### Colors
+
+You can use `rgb`, `rgba` <small>(alpha=transparency)</small>, an hexadecimal code...
+
+```css
+.x {
+    background: red; /* alias to a color */
+    background: rgb(255, 0, 0); /* red */
+    background: rgba(255, 0, 0, 0.8); /* lighter red */
+    background: #dd4441; /** hexadecimal code **/
+}
+```
+
+#### Sizes
+
+You must provide a value, and a unit.
+
+```css
+.x {
+    width: 10px; /* px = pixels */
+    margin: 0; /* no unit needed */
+    height: 100%; /* a percentage */
+}
+```
+</div><div>
+
+#### Calculations
+
+You can only do some calculations inside `calc`.
+
+```css
+.x {
+    width: calc(100% - 15px);
+}
+```
+
+#### Variables
+
+```css
+:root {
+    --primary-color: red;
+    --p1: 10px;
+}
+p {
+    color: var(--primary-color);
+    padding: var(--p1); /* usage */
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 🔎 Properties 🔎
 
 👻 I'm not too familiar with CSS, these examples are properties that I used before moving to CSS frameworks. 👻

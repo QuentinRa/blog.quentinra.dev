@@ -1,56 +1,5 @@
 # Cascading Style Sheets
 
-<hr class="sr">
-
-## Values
-
-Before digging into the properties, you must learn more about the values you can give them.
-
-<details class="details-border">
-<summary>Size</summary>
-<br>
-
-* a value (`0` is the only one that should not have a unit)
-* a value with a unit (`1px`, ...). The most used unit is **px** (default, pixels), but you may check **rem**, **pc**, or **vh**.
-* a percent such as `100%`
-* an expression resulting in a value `calc(100% - 15px)`
-
-A lot of properties will usually take 4 values `t r b l` (respectively top-right-bottom-left). You can either use `property-top: value` (to only set the top) or a shortcut
-
-* `padding: ALL;` (t=r=b=l=ALL)
-* `padding: Y X;` (t=b=Y, r=l=X)
-* `padding: U V W;` (t=l=U, r=V, b=W)
-</details>
-
-<details class="details-border">
-<summary>Color</summary>
-<br>
-
-You can use
-
-* a name (`red`, `yellow`, etc.)
-* the RGB function (ex: `rgb(r, g, b)` such as `rgb(255, 0, 0)` for red)
-* the RGBA function (ex: `rgba(r, g, b, a)`, with alpha the transparency)
-* the HEX code (ex: `#dd4411` or `#d41`)
-</details>
-
-<details class="details-border">
-<summary>Variables</summary>
-<br>
-
-You may create variables (to store colors, sizes, etc.).
-
-<pre><code class="language-css"
->/* declare */
-:root { 
-  --name: value;
-}
-/* use */
-p { 
-  color: var(--name);
-}</code></pre>
-</details>
-
 <hr class="sl">
 
 ## CSS properties
