@@ -251,6 +251,8 @@ p + a { /* an adjacent "link" right-after a "p" */ }
 
 ## 🔎 Properties 🔎
 
+👻 I'm not too familiar with CSS, these examples are properties that I used before moving to CSS frameworks. 👻
+
 <div class="row row-cols-md-2"><div>
 
 #### Background
@@ -258,86 +260,116 @@ p + a { /* an adjacent "link" right-after a "p" */ }
 ```css
 .xxx {
     background: yellow; /* change background */
-    background: rgb(255,0,0); /* change background */
-    background: rgba(255,0,0, 0.8); /* 0.8=transparency **/
-    background: #dd4441; /** use a hexadecimal code **/
     background: url("..."); /** path/url **/
     /* if it's an image, you may use */
-    background-size: 100% 100%;
-    background-size: auto;
-    background-size: cover;
+    background-size: 100% 100%; /* expand */
+    background-size: auto; /* auto */
+    background-size: cover; /* cover */
     background-repeat: repeat;
+    /* mix of rules */
+    background: url("...") no-repeat fixed;
 }
 ```
 
-#### Texts & Links
+#### Colors
 
 ```css
 .xxx {
-    color: red; /* text color */
-    font-size: 15px; /* font size */
-    font-family: "Open Sans", sans-serif; /* font-family */
-    font-weight: 400; /* bold, light, lighter, ... */
-    line-height: 50px;
-
-    text-align: justify; /* center, left, right, ... */
-    text-decoration: underline #dd4441; /* add underline */
-}
-
-a {
-    text-decoration: none; /* remove underline */
+    color: #FFDD33; /* text color */
 }
 ```
-</div><div>
 
-#### Position and alignment
+#### Fonts
 
 ```css
-div {
-    width: 5px; /* width */
-    height: 5px; /* height */
+.xxx {
+    font-size: 15px; /* font size */
+    /* the second/... are fallback fonts (if not found) */
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400; /* bold, light, lighter, ... */
+}
+```
 
+#### Display
+
+```css
+.xxx {
     display: block; /* show */
     display: none; /* hide */
+
+    overflow:hidden; /* hide */
+    overflow:auto; /* show a scroll bar */
+
+    opacity: 1;
 
     position: absolute; /* relative, fixed */
     /* set a specific value */
     top: 0; left: 0; right: 0; border: 0;
     z-index: 1; /* on top = the highest z index */
+}
+```
+
+</div><div>
+
+#### Text utilities
+
+```css
+.xxx {
+    line-height: 50px; /* ... */
+    text-align: justify; /* center, left, right, ... */
+    text-decoration: underline #dd4441; /* add underline */
+    text-decoration: none; /* remove underline */
+    white-space: pre-line; /* multilines */
+}
+```
+
+#### Size, Margins, Padding
+
+```css
+.xxx {
+    width: 5px; /* width */
+    height: 5px; /* height */
 
     padding: 15px; /* all */
     padding: 15px 5px; /* y=15, x=5 */
     /* top, right, bottom, left */
     padding: 15px 5px 15px 5px;
     padding-bottom: 15px; /* one by one */
+    /* you can use the 4 above with margin */
+    /* and, you have this "new" value */
     margin: auto;
+}
+```
 
+#### Alignment
+
+```css
+.xxx {
     justify-content: center;
     align-self: center;
     align-items: center;
-    display: flex;
     float: left;
     float: right;
+}
+```
+
+#### Borders
+
+```css
+.xxx {
+    /* add border, size=1px, type=solid and black */
+    border: 1px solid #202735;
+    border-radius: 4px; /* round corners */
 }
 ```
 
 #### Random
 
 ```css
-div {
-    border: 1px solid #202735; /* add border, size=1px, type=solid and black */
-    border-radius: 4px; /* border radius, round some button for instance */
-    
-    cursor: pointer; /* change cursor to "click"=pointer cursor */
-    outline: none; /* for button, outline shown on focus */
-
-    /** content is too big and the size is not enough,
-    how should we handle the overflow?
-     */
-    overflow:hidden; /* hide */
-    overflow:auto; /* show a scroll bar */
-
-    list-style-type: none; /* change list style 😅 */
+.xxx {
+    cursor: pointer; /* change cursor */
+    list-style-type: circle; /* change list style */
+    list-style-type: none; /* change list style */
 }
 ```
 </div></div>
@@ -375,15 +407,6 @@ $ npm i -g csso-cli
       name="viewport"
       content="width=device-width, height=device-height, viewport-fit=cover, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
   />
-```
-
-```css
-.selector {
-    white-space: pre-line; /* multilines */
-    background: rgba(37,70,170,0.83) !important;
-    width: 44px;
-    opacity: 1;
-}
 ```
 
 ```css
