@@ -15,6 +15,7 @@ Cascading Style Sheets (CSS) are used to style and animate
 * [W3Schools/CSS](https://www.w3schools.com/css/default.asp) <small>(🏫, [Reference](https://www.w3schools.com/CSSref/index.php))</small>
 * [css-tricks](https://css-tricks.com/) <small>(🥂, articles)</small>
 * [cssreference](https://cssreference.io/) <small>(😳, reference)</small>
+* [css-cheatsheet](https://github.com/iLoveCodingOrg/css-cheatsheet) <small>(✈️ , cheatsheet)</small>
 </div><div>
 
 **CSS versions**
@@ -26,7 +27,7 @@ Cascading Style Sheets (CSS) are used to style and animate
 **Some CSS tools**
 
 * 👉 [W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input): check your CSS syntax
-* 👉 [cssguidelines](https://cssguidelin.es/)/[codeguide](https://codeguide.co/#css-syntax): guidelines
+* 👉 [cssguidelines](https://cssguidelin.es/) or [codeguide](https://codeguide.co/#css-syntax): guidelines
 </div></div>
 
 <hr class="sep-both">
@@ -512,7 +513,6 @@ You should adapt your website according to
 * 👉 the screen size <small>(media queries, responsive sizes...)</small>
 * 👉 the mode (light/dark) <small>(media queries)</small>
 * ...
-</div><div>
 
 #### Adapt to the size of the screen
 
@@ -528,6 +528,25 @@ Then, in your CSS, you can write CSS code that will only be executed when the co
 ```css
 @media screen and (max-width: 950px) {}
 @media screen and (max-width: 1100px) and (min-width: 950px) {}
+```
+</div><div>
+
+#### Light/Dark theme
+
+In modern browsers, there is a media query to detect the theme.
+
+```html
+<link rel="stylesheet" href="dark.css" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="light.css" media="(prefers-color-scheme: light)">
+```
+
+➡️ The CSS files are intended to be used to define variable in **:root**, that will be used by a another CSS file, such as `main.css`.
+
+You can add a media query directly inside the CSS too.
+
+```css
+@media screen and (prefers-color-scheme: dark) { }
+@media screen and (prefers-color-scheme: light) { }
 ```
 </div></div>
 
@@ -555,11 +574,14 @@ $ npm i -g csso-cli
 * [CSS minifier](https://css-minifier.com/) + [configure a watcher to auto-compile css to min.css](https://www.jetbrains.com/help/phpstorm/compressing-css.html)
 </div><div>
 
-* SASS (see TP2/...)
+* SASS (see TP2/..., [nesting](https://markdotto.com/2015/07/20/css-nesting/))
 * Less ([less-tester](https://www.lesstester.com/), [less-preview](http://lesscss.org/less-preview/))
 * Stylus/Compass
 * get selector from console
 * print.css
 * `inherit`
+* [postcss](https://preset-env.cssdb.org/)
+* [Keeping Up With CSS](https://dev.to/5t3ph/keeping-up-with-css-3f20)
+* [Modern CSS Solutions](https://moderncss.dev/)
 
 </div></div>
