@@ -16,6 +16,7 @@ Cascading Style Sheets (CSS) are used to style and animate
 * [css-tricks](https://css-tricks.com/) <small>(🥂, articles)</small>
 * [cssreference](https://cssreference.io/) <small>(😳, reference)</small>
 * [css-cheatsheet](https://github.com/iLoveCodingOrg/css-cheatsheet) <small>(✈️ , cheatsheet)</small>
+* [moderncss](https://moderncss.dev/)+[smolcss](https://smolcss.dev/) <small>(modern css)</small>
 </div><div>
 
 **CSS versions**
@@ -572,10 +573,11 @@ Stuff that I found, but never read/used yet.
 * [animate.css](https://github.com/animate-css/animate.css)
 </div><div>
 
+**Random**
+
 * [ct](https://github.com/csswizardry/ct)
 * get selector from console
 * print.css
 * `inherit`
 * [Keeping Up With CSS](https://dev.to/5t3ph/keeping-up-with-css-3f20)
-
 </div></div>

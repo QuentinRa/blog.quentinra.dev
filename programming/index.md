@@ -303,6 +303,8 @@ Websites that I found, but never used yet.
 * [logfetch](https://logfetch.com/) <small>(???)</small>
 * [code-boost](https://www.code-boost.com/) <small>(Js, React, Node...)</small>
 * [learnfromsteph](https://learnfromsteph.dev/) <small>(???)</small>
+* [egghead.io](https://egghead.io/) <small>(???)</small>
+* [12daysofweb](https://12daysofweb.dev/) <small>(???)</small>
 
 **Blockchains focused**
 
