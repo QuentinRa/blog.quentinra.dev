@@ -26,8 +26,8 @@ As CSS rules can be complex <small>(responsive, accessibility)</small>, many **C
 * [Bootstrap](/programming/web/css/bootstrap/index.md) (+160k ⭐)
 * [tailwindcss](https://github.com/tailwindlabs/tailwindcss) (63.4k ⭐)
 * Material Design <small>(Google UX Guidelines)</small>
-  * [Material Web](https://github.com/material-components/material-web) (4.6k ⭐, in-progress)
-  * [Materialize](https://github.com/Dogfalo/materialize) (38.8k ⭐)
+    * [Material Web](https://github.com/material-components/material-web) (4.6k ⭐, in-progress)
+    * [Materialize](https://github.com/Dogfalo/materialize) (38.8k ⭐)
 * [bulma](https://github.com/jgthms/bulma) (46.6k ⭐)
 * [primer](https://github.com/primer/css) (11.6k ⭐, GitHub)
 * [semantic](https://github.com/Semantic-Org/Semantic-UI) (50.3k ⭐)
@@ -60,9 +60,9 @@ You can use `<style>` tags. They are usually added in the `head`, but you can ad
 
 ```HTML
 <style>
-p {
-  background: darkcyan;
-}
+    p {
+        background: darkcyan;
+    }
 </style>
 ```
 </td>
@@ -91,7 +91,7 @@ A selector is a target, or a set or targets, on which the style will be applied.
 
 ```css
 YOUR_SELECTOR_HERE {
-  background: yellow;
+    background: yellow;
 }
 ```
 
@@ -249,6 +249,101 @@ p + a { /* an adjacent "link" right-after a "p" */ }
 
 <hr class="sep-both">
 
+## 🔎 Properties 🔎
+
+<div class="row row-cols-md-2"><div>
+
+#### Background
+
+```css
+.xxx {
+    background: yellow; /* change background */
+    background: rgb(255,0,0); /* change background */
+    background: rgba(255,0,0, 0.8); /* 0.8=transparency **/
+    background: #dd4441; /** use a hexadecimal code **/
+    background: url("..."); /** path/url **/
+    /* if it's an image, you may use */
+    background-size: 100% 100%;
+    background-size: auto;
+    background-size: cover;
+    background-repeat: repeat;
+}
+```
+
+#### Texts & Links
+
+```css
+.xxx {
+    color: red; /* text color */
+    font-size: 15px; /* font size */
+    font-family: "Open Sans", sans-serif; /* font-family */
+    font-weight: 400; /* bold, light, lighter, ... */
+    line-height: 50px;
+
+    text-align: justify; /* center, left, right, ... */
+    text-decoration: underline #dd4441; /* add underline */
+}
+
+a {
+    text-decoration: none; /* remove underline */
+}
+```
+</div><div>
+
+#### Position and alignment
+
+```css
+div {
+    width: 5px; /* width */
+    height: 5px; /* height */
+
+    display: block; /* show */
+    display: none; /* hide */
+
+    position: absolute; /* relative, fixed */
+    /* set a specific value */
+    top: 0; left: 0; right: 0; border: 0;
+    z-index: 1; /* on top = the highest z index */
+
+    padding: 15px; /* all */
+    padding: 15px 5px; /* y=15, x=5 */
+    /* top, right, bottom, left */
+    padding: 15px 5px 15px 5px;
+    padding-bottom: 15px; /* one by one */
+    margin: auto;
+
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    display: flex;
+    float: left;
+    float: right;
+}
+```
+
+#### Random
+
+```css
+div {
+    border: 1px solid #202735; /* add border, size=1px, type=solid and black */
+    border-radius: 4px; /* border radius, round some button for instance */
+    
+    cursor: pointer; /* change cursor to "click"=pointer cursor */
+    outline: none; /* for button, outline shown on focus */
+
+    /** content is too big and the size is not enough,
+    how should we handle the overflow?
+     */
+    overflow:hidden; /* hide */
+    overflow:auto; /* show a scroll bar */
+
+    list-style-type: none; /* change list style 😅 */
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -271,6 +366,8 @@ $ npm i -g csso-cli
 * [style-lint](https://github.com/ismay/stylelint-no-unsupported-browser-features)
 * [ct](https://github.com/csswizardry/ct)
 * [CSS minifier](https://css-minifier.com/) + [configure a watcher to auto-compile css to min.css](https://www.jetbrains.com/help/phpstorm/compressing-css.html)
+* get selector from console
+* print.css
 </div><div>
 
 ```
@@ -280,14 +377,22 @@ $ npm i -g csso-cli
   />
 ```
 
-* get selector from consol
-
 ```css
 .selector {
     white-space: pre-line; /* multilines */
     background: rgba(37,70,170,0.83) !important;
     width: 44px;
     opacity: 1;
+}
+```
+
+```css
+@charset "utf-8"; /* optional */
+
+/* a comment */
+p {
+    color:red;
+    background: yellow;
 }
 ```
 </div></div>
