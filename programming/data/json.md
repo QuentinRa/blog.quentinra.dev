@@ -55,7 +55,7 @@ You got 6 types in JSON: **number** (integer/float), **object**, **array**, **bo
 Some are not satisfied with the limited syntax of JSON. Here some limitations
 
 * ✏️ You can't use comments (`// comment`) in JSON
-* 🎡  There are no multilines strings, so it's not easy to read/write long strings in JSON. A good editor would have a feature to wrap the JSON, to avoid very long lines
+* 🎡  There are no multiline strings, so it's not easy to read/write long strings in JSON. A good editor would have a feature to wrap the JSON, to avoid very long lines
 * ...
 
 So, they created [JSON5](https://json5.org/). It's not quite used widely.

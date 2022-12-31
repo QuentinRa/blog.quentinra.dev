@@ -28,7 +28,7 @@ key3:
   - "toto"
 ```
 
-* **Texts** (inline and multilines texts)
+* **Texts** (inline and multiline texts)
 
 ```yaml
 inline: This is an inline text

@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div class="align-self-center">
 
-The **INI** file format was originally only used by Windows to store initialization data and configurations. It's now used by many application even on Linux, such as `php`.
+The **INI** file format was originally only used by Windows to store initialization data and configurations. It's now used by many applications even on Linux, such as `php`.
 
 This is a plain text file with **a key associated with a value**.
 
