@@ -18,7 +18,7 @@
 * [Runkit](https://runkit.com/home) <small>(online playground)</small>
 </div><div>
 
-You can download Node.js [here](https://nodejs.org/en/download/). On Windows, you will get an installer, so you can get started in seconds. To check that you installation was successful, use
+You can download Node.js [here](https://nodejs.org/en/download/). On Windows, you will get an installer, so you can get started in seconds. To check that your installation was successful, use
 
 ```powershell
 # see Node version
@@ -28,7 +28,7 @@ $ node index
 $ node index.js
 ```
 
-> 🚀 To easily manage multiple version of Node, see [nvm](https://github.com/nvm-sh/nvm) (64k ⭐), [nvm-windows](https://github.com/coreybutler/nvm-windows) (25k ⭐), or [n](https://github.com/tj/n) (17k ⭐). Alternatively, there are [nvs](https://github.com/jasongin/nvs), [nave](https://github.com/isaacs/nave), [volta](https://github.com/volta-cli/volta) (7.3k ⭐), [nodenv](https://github.com/nodenv/nodenv), [fnm](https://github.com/Schniz/fnm) (9.8k ⭐), and [nodist](https://github.com/nullivex/nodist).
+> 🚀 To easily manage multiple versions of Node, see [nvm](https://github.com/nvm-sh/nvm) (64k ⭐), [nvm-windows](https://github.com/coreybutler/nvm-windows) (25k ⭐), or [n](https://github.com/tj/n) (17k ⭐). Alternatively, there are [nvs](https://github.com/jasongin/nvs), [nave](https://github.com/isaacs/nave), [volta](https://github.com/volta-cli/volta) (7.3k ⭐), [nodenv](https://github.com/nodenv/nodenv), [fnm](https://github.com/Schniz/fnm) (9.8k ⭐), and [nodist](https://github.com/nullivex/nodist).
 </div></div>
 
 <hr class="sep-both">
@@ -39,7 +39,7 @@ $ node index.js
 
 #### Packages
 
-You will usually need to use external libraries such as a library to test your code, or stuff like that. They are referred to as package, and you will need a **package manager** to install them.
+You will usually need to use external libraries such as a library to test your code, or stuff like that. They are referred to as packages, and you will need a **package manager** to install them.
 
 ➡️ One package worth mentioning is [nodemon](https://www.npmjs.com/package/nodemon) ("node-mon", 25k ⭐) which is automatically restarting the node client (ex: `node index.js`) when a file in your project changed.
 
@@ -52,7 +52,7 @@ Node.js includes everything you know about JavaScript, aside from the DOM <small
 
 #### What's new?
 
-* Import a packages with **require**
+* Import a package with **require**
 
 ```javascript
 // pre-installed, see https://nodejs.org/api/fs.html
@@ -87,7 +87,7 @@ $ npm -v
 * See the [documentation here](https://docs.npmjs.com/).
 * Use [npmjs](https://www.npmjs.com/) to find packages ([Registry API](https://registry.npmjs.org/nodemon/2.0.20)).
 
-npm use a file called `package.json` to known which packages to import in your project. As the version are usually based on a rule, the exact version of the package can be found in `package-lock.json`.
+npm use a file called `package.json` to know which packages to import into your project. As versions are usually based on a rule, the exact version of the package can be found in `package-lock.json`.
 
 #### New Project
 

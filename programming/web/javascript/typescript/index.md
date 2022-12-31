@@ -88,7 +88,7 @@ enum Enum { A, C = 2, D } // values are [0, 2, 3]
 
 #### Export/Import
 
-What was exported, can be imported in another file.
+What was exported, can be imported into another file.
 
 ```typescript
 // file.ts

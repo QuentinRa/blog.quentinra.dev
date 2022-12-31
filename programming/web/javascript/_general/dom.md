@@ -110,7 +110,7 @@ const nodeList = xxx.querySelectorAll('table tr > .xxx');
 </div><div>
 
 ```javascript
-// Navigate from a node to another
+// Navigate from one node to another
 xxx.childNodes ; xxx.children
 xxx.firstChild ; xxx.firstElementChild
 xxx.lastChild ; xxx.lastElementChild
@@ -217,7 +217,7 @@ document.onkeydown = e => {
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-You can listen to a form submission which `submit`/`onsubmit`. This event is particular, as **true** must be returned if we can send the form, **false** otherwise. It's used to validate a form, being sending it.
+You can listen to a form submission which `submit`/`onsubmit`. This event is particular, as **true** must be returned if we can send the form, **false** otherwise. It's used to validate a form, before sending it.
 
 ```js
 form.onsubmit = (event) => {
@@ -291,7 +291,7 @@ const value = res.headers.get('header-name')
 ```
 </div><div>
 
-**GET** is the default if no params are provided.
+**GET** is the default if no parameters were provided.
 
 ```javascript
 const params = { method: "GET", }
@@ -379,7 +379,7 @@ if (Notification?.permission === "granted") {
 
 #### LocalStorage
 
-The localStorage is a storage inside the client browser. What's stored inside can be edited from the developers tools in the tab Application.
+The localStorage is a storage inside the client browser. What's stored inside can be edited inside the devtools, in the "Application" tab.
 
 ```javascript
 // store
@@ -437,7 +437,7 @@ if (value != null) {
 
 A long time ago, [jQuery](https://github.com/jquery/jquery) was a popular library shortening/simplifying the DOM manipulations. Nowadays, many features were added to JavaScript, and with technologies with less manipulation of the DOM like React, or Vue.js, the library is nowhere near what it used to be.
 
-➡️ Bootstrap removed their jQuery dependencies in their 5th version, to make the library more lightweight.
+➡️ Bootstrap removed its jQuery dependencies in its 5th version, to make the library more lightweight.
 
 ➡️ [jQuery.terminal](https://github.com/jcubic/jquery.terminal) (2.8k ⭐)
 </div></div>
