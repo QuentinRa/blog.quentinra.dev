@@ -38,6 +38,7 @@ The README.md <small>(or README.rst)</small> is a file in Markdown describing th
 There are a few things you may also find in use
 
 * [Repository stars over time](https://starchart.cc/)
+* [Show contributors](https://contrib.rocks/)
 </div><div>
 
 #### 📦 LICENSE / LICENSE.txt
@@ -97,6 +98,8 @@ What behavior is tolerated? What's behavior isn't tolerated?
 
 * [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) (the most used one, ![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg))
 * Write your own
+
+➡️ See also [Contributor License Agreements (CLAs)](https://cla-assistant.io/).
 
 <br>
 
@@ -366,4 +369,23 @@ Cards (usually added on a profile/...)
 * [metrics](https://github.com/lowlighter/metrics) (really nice cards, see [omBratteng profile](https://github.com/omBratteng/omBratteng))
 * [Jokes' Cards](https://readme-jokes.vercel.app/api)
 * Profile View: [antonkomarev](https://github.com/antonkomarev/github-profile-views-counter) or [arturssmirnovs](https://github.com/arturssmirnovs/github-profile-views-counter)
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* Git Hooks and [husky](https://github.com/typicode/husky)
+* GitHub Discussions
+* [About READMEs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
+* [Working Open Workshop](https://mozillascience.github.io/working-open-workshop/)
+</div><div>
+
+* [GitHub Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
+* [branch protection rule](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule)
+* [controlook-zz](https://github.com/controlook-zz/standards) or [Git Commit Message](https://cbea.ms/git-commit/#seven-rules) and [code-review-tips](https://github.com/ryanmcdermott/code-review-tips)
 </div></div>

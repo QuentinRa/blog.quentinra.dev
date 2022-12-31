@@ -31,6 +31,8 @@ Programming languages (+tools) that I want to check, but never had the time.
 
 <div class="row row-cols-md-3 mt-4"><div>
 
+➡️[roadmap.sh](https://roadmap.sh/)
+
 **General**
 
 ➡️ [chocolatey](https://chocolatey.org/)
@@ -74,6 +76,7 @@ Translations
 * [padlet](https://padlet.com/) <small>(???)</small>
 * [squarespace](https://www.squarespace.com/) <small>(???)</small>
 * [toolslick](https://toolslick.com/) <small>(???)</small>
+* [plan.io](https://plan.io/) <small>(???)</small>
 
 **Markdown-based**
 
@@ -115,12 +118,6 @@ Translations
 * [mustache](https://github.com/mustache/mustache)
 * [dustjs](https://github.com/linkedin/dustjs)
 
-**Databases**
-
-* [duckdb](https://github.com/duckdb/duckdb)
-* redis
-* elasticsearch
-
 **Editors**
 
 * [ace](https://github.com/ajaxorg/ace) (web code editor)
@@ -133,6 +130,12 @@ Translations
 * [playcode](https://playcode.io/)
 
 </div><div>
+
+**Databases**
+
+* [duckdb](https://github.com/duckdb/duckdb)
+* redis
+* elasticsearch
 
 **Learned** (but there is no notes about them)
 
