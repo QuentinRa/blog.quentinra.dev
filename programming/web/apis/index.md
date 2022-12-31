@@ -40,6 +40,7 @@ Services (APIs)
 * [ipify](https://www.ipify.org/) or [jsonip](https://jsonip.com/) or [ipgeolocation](https://ipgeolocation.io/) <small>(ip)</small>
 * [headlessbrowserapi](https://headlessbrowserapi.com/) <small>(scrap)</small> 🚀 / [peekalink](https://www.peekalink.io/) <small>(preview)</small>
 * [gravatar](https://en.gravatar.com/) <small>(avatars)</small> / [disqus](https://disqus.com/api/docs/) <small>(comments)</small>
+* [Google Translate API](https://translate.googleapis.com/translate_a/single?client=gtx&sl=ko&tl=en&dt=t&q=176) / [DeepL API](https://www.deepl.com/pro-api) <small>(translations)</small> /
 
 </div></div>
 

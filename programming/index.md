@@ -50,13 +50,6 @@ Google
 * [firebase](https://firebase.google.com/) <small>(???)</small>
 * FeedBurner <small>(RSS)</small>
 
-Translations
-
-* [deepl](https://www.deepl.com/translator)
-* [Google Translate API](https://translate.googleapis.com/translate_a/single?client=gtx&sl=ko&tl=en&dt=t&q=176)
-* Microsoft Azure Translator
-* [translationly](https://translationly.com/) / [translateking](https://translateking.com/) / [translate.com](https://www.translate.com/machine-translation) / [systran.net](https://www.systran.net/)
-
 **Tools~Software**
 
 ➡️ Move some [Git](/it/dev/git-project/index.md#-to-do-) to-dos here?
@@ -77,6 +70,8 @@ Translations
 * [squarespace](https://www.squarespace.com/) <small>(???)</small>
 * [toolslick](https://toolslick.com/) <small>(???)</small>
 * [plan.io](https://plan.io/) <small>(???)</small>
+* [grafana.com](https://grafana.com/) <small>(???)</small>
+* [prometheus](https://github.com/prometheus/prometheus) <small>(???)</small>
 
 **Markdown-based**
 
