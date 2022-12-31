@@ -6,7 +6,7 @@
 
 This JavaScript code is selecting all images that you have on Canva. It's only useful if you want to delete all of them. ➡️ The script won't delete them, it's up to you to do the last action.
 
-Another use of this script, is that if you are familiar with JavaScript, you can tune it do only select some images <small>(ex: based on their name)</small>.
+Another use of this script, is that if you are familiar with JavaScript, you can tune it to only select some images <small>(ex: based on their name)</small>.
 </div><div>
 
 ```javascript
@@ -39,7 +39,13 @@ There is this video [Canva - How to delete ALL images from trash folder automati
 * 💣 There is a need for additional software <small>(and the suggested download link is from a dangerous website with cracked software...)</small>
 * 🤯 Elements aren't always at the same location
 
-So, I made some complex JavaScript, because their code is complex. **You're responsible for any problems. Use it at your own risk.**
+So, I made some complex JavaScript, because their code is complex. 
+
+⚠️⚠️ 
+
+**You're responsible for any problems. Use it at your own risk.**
+
+⚠️⚠️
 
 <br>
 
@@ -49,23 +55,23 @@ You must run the script on the page: `https://canva.com/folder/trash`.
 
 1. The script will select the tab "images" and navigate to it (`images`).
 
-2. The script will swap the list view (`layout`)
+2. The script will swap the list view (see `layout`)
 
-3. Then, we will start the main job (`await doJob()`)
+3. Then, we will start the main job (see `await doJob()`)
 
 ##### For the main job, what I do is
 
-1. Fetching the first delete icon (`popup`)
+1. Fetching the first delete icon (see `popup`)
 
-2. It will open a popup with restore/delete permanently the associated element. The script waits **0.8s** for the popup to open, then click on delete permanently (`deleteNode`)
+2. It will open a popup to restore/delete permanently the associated element. The script waits for **0.8s** for the popup to open, then click on delete permanently (see `deleteNode`)
 
-3. The script will wait for **0.8s** for the big popup with the last confirmation to open. Then, it will check the checkbox saying that it may break your designs (`checkbox`)
+3. The script will wait for **0.8s** for the big popup with the last confirmation to open. Then, it will check the checkbox saying that it may break your designs (see `checkbox`)
 
-4. The script will wait **0.4s**, and then press the confirmation button (`confirmation`)
+4. The script will wait for **0.1s**, and then press the confirmation button (see `confirmation`)
 
-5. Finally, the script will wait **0.4s**, and start again
+5. Finally, the script will wait for **0.4s**, and start again
 
-> It's worth noting that the script won't work if the code has changed. It was working as of December 2022.
+> It's worth noting that the script won't work if the page has changed. It was still working in December 2022.
 
 <br>
 
