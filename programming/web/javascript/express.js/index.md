@@ -24,7 +24,7 @@ $ npm audit fix --force
 * 🔥 Your routes are stored inside `/routes`.
 * 💐 Your public files are stored inside `/public`.
 
-If you are not familiar with routes, HTTP methods/responses codes... Then you should learn that first. [See HTTP protocol](/it/networking/protocols/index.md#-http---80-tcp).
+If you are not familiar with routes, HTTP methods/response codes... Then you should learn that first. [See HTTP protocol](/it/networking/protocols/index.md#-http---80-tcp).
 
 </div></div>
 
@@ -154,7 +154,7 @@ module.exports = router;
 
 <div class="row row-cols-md-2"><div>
 
-You can use every HTTP methods
+You can use every HTTP method
 
 ```javascript
 router.get('/', (req, res) => {});
