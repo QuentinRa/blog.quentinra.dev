@@ -18,7 +18,7 @@ JavaScript (JS) is a popular language used to develop
 * [W3Schools/JavaScript](https://www.w3schools.com/js/default.asp) <small>(see also Best Practices and Common mistakes)</small>
 * [iLoveCodingOrg/cheatsheet](https://github.com/iLoveCodingOrg/javascript-cheatsheet) <small>(quite complete, well presented)</small>
 * [javascript.info](https://javascript.info/) <small>(⛪)</small>
-* [javascript tutorial](https://www.javascripttutorial.net/) <small>(✈️)</small>
+* [javascripttutorial](https://www.javascripttutorial.net/) <small>(✈️)</small>
 * [modern-js-cheatsheet](https://github.com/mbeaudru/modern-js-cheatsheet) (24k ⭐)
 </div><div>
 
@@ -80,7 +80,7 @@ const x = null?.toString() // null
 const x = null?.toString() ?? default_value // default_value
 ```
 
-➡️ An alternative to `??` is `||`, for instance, `undefined || 50` returns 50. It's not quite used, and most likely a "hack".
+➡️ An alternative to `??` is `||`, for instance, `undefined || 50` returns 50. It's not quite used, and it's most likely a "hack".
 
 </div><div>
 
@@ -114,11 +114,11 @@ You can use every usual operator.
 
 <hr class="sep-both">
 
-## 🗃️ Control-flow and usual functions 🗃️
+## 🗃️ Control flow and usual functions 🗃️
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-⚠️ It's important to note that any non-boolean value will be casted to a boolean. For instance, `" "` is equals to `false` <small>(`" " == true` is `false`)</small>.
+⚠️ It's important to note that any non-boolean value will be cast to a boolean. For instance, `" "` is equals to `false` <small>(`" " == true` is `false`)</small>.
 
 ➡️ As always, you can use `break`/`continue` in loops.
 
@@ -329,7 +329,7 @@ JavaScript supports [JSON](/programming/data/json.md) natively, which some chang
 
 ```javascript
 const object = {
-    //  ✅ you don't need to quotes keys
+    //  ✅ you don't need to quote keys
     key: "value",
     // ✅ a trailing ',' is allowed
     myFunction: () => 5,
@@ -338,14 +338,14 @@ const object = [{}, [ {}, {} ]] // JSONArray
 ```
 
 ```javascript
-// access a propery
+// access a property
 object.key
 object["key"] // 🥂 also works
 ```
 
 #### Deconstruct objects/arrays
 
-You can deconstruct an object to easily access it's values.
+You can deconstruct an object to easily access its values.
 
 ```javascript
 const {x1, x2} = { x1: 'xxx', x2: 'yyy' }
@@ -421,7 +421,7 @@ johnDoe.toString() // "John Doe"
 
 #### Prototypes
 
-JavaScript is a prototyping language. Each variable has access to it's definition by using the attribute `__proto__`.
+JavaScript is a prototyping language. Each variable has access to its definition by using the attribute `__proto__`.
 
 ```javascript
 const x = 5; x.__proto__;
@@ -525,7 +525,7 @@ clearInterval(it)
 
 #### Spread syntax
 
-The spread syntax allow us to expand something.
+The spread syntax allows us to expand something.
 
 ```javascript
 const powArgs = [5, 2]
@@ -600,7 +600,7 @@ We can improve the code by replacing `return await` with  `return`, as the latte
 
 #### Promises
 
-Promises can be created manually. They are taking two callbacks, one in case of success, the other in case of failure. 
+Promises can be created manually. They are taking two callbacks, one in case of success, and another one in case of failure. 
 
 ➡️ The latter is the same as raising an exception.
 
