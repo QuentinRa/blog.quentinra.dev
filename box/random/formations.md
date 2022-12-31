@@ -4,7 +4,7 @@
 
 ##### Random
 
-* [pix.fr](https://pix.fr/) (👻, french)
+* [pix.fr](https://pix.fr/) (👻, French)
 </div><div>
 
 ...

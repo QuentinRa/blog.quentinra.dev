@@ -12,7 +12,7 @@
 ##### Test your browser configuration
 
 * [coveryourtracks](https://coveryourtracks.eff.org/)
-* [amiunique](https://www.amiunique.org/fp) ([article in french](https://wonderfall.space/empreinte-numerique/))
+* [amiunique](https://www.amiunique.org/fp) ([article in French](https://wonderfall.space/empreinte-numerique/))
 
 <br>
 
@@ -46,7 +46,7 @@
 * [Privacy Badger](https://www.eff.org/pages/privacy-badger): trackers/...
 * [DuckDuckGo](https://duckduckgo.com/app): trackers/ads/...
 * [adblock](https://adblockplus.org/): block most ads/trackers
-* [ublock origin](https://ublockorigin.com/): block most ads/trackers, can disable JavaScript...
+* [uBlock Origin](https://ublockorigin.com/): block most ads/trackers, can disable JavaScript...
 * [noscript](https://noscript.net/): disable JavaScript
 
 <br>
@@ -65,7 +65,7 @@
 
 <br>
 
-##### Youtube
+##### YouTube
 
 * [node-ytsr](https://github.com/TimeForANinja/node-ytsr/) (anonymous search requests)
 * [ytmous](https://github.com/ytmous/ytmous) (unmaintained, privacy-focused, 0.04k ⭐)
@@ -94,6 +94,6 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * [degooglisons-internet](https://degooglisons-internet.org/en/alternatives/) (old)
-* [framalibre](https://framalibre.org/) (french)
-* [chapril](https://www.chapril.org/-services-.html) (french)
+* [framalibre](https://framalibre.org/) (French)
+* [chapril](https://www.chapril.org/-services-.html) (French)
 </div></div>
