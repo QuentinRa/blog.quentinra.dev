@@ -19,7 +19,7 @@ JavaScript (JS) is a popular language used to develop
 * [iLoveCodingOrg/cheatsheet](https://github.com/iLoveCodingOrg/javascript-cheatsheet) <small>(quite complete, well presented)</small>
 * [javascript.info](https://javascript.info/) <small>(⛪)</small>
 * [javascripttutorial](https://www.javascripttutorial.net/) <small>(✈️)</small>
-* [modern-js-cheatsheet](https://github.com/mbeaudru/modern-js-cheatsheet) (24k ⭐)
+* ...
 </div><div>
 
 Most environments support `console.log` to print something.
@@ -35,14 +35,48 @@ console.error('\x1b[31m%s\x1b[0m', 'Shown in RED');
 console.clear();
 ```
 
-General notes
+**Some JavaScript tools**
+
+* Documentation ✅: [JSDoc](https://jsdoc.app/)
+* Guidelines ‍🎓 : [clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript)
+* Benchmarks 🚀: [jsben.ch](https://jsben.ch/) / [jsperf](https://github.com/jsperf/jsperf.com)
+* Minifier 🐲: [javascript minifier](https://javascriptminifier.com/)
+* Lint 🧹: [eslint](https://github.com/eslint/eslint) and/or [unsupported browser features linter](https://github.com/amilajack/eslint-plugin-compat)
+</div></div>
+
+<hr class="sep-both">
+
+## Basics
+
+<div class="row row-cols-md-2"><div>
+
+JavaScript (JS) is based on ECMAScript. [See JavaScript versions](https://www.w3schools.com/Js/js_versions.asp).
+
+There are 3 ways to declare a variable: `const`, `let`, and `var`.
+
+```javascript
+// ✅ use CONST as much as possible (unmodifiable)
+const five = 5
+// ✅ let is used for scoped-variable (="normal" variables)
+let str = "five"
+// ❌ var is used for global variables
+var x = 5
+```
+</div><div>
 
 * 👉 Semicolon are optional. Be consistent if you use them.
 * 👉 Use `//` or `/* */` for comments.
 * 👉 Use `"use strict";` to enforce a [strict](https://www.w3schools.com/js/js_strict.asp) code policy.
 
-JavaScript (JS) is based on ECMAScript. [See JavaScript versions](https://www.w3schools.com/Js/js_versions.asp).
+You can use every usual operator.
+
+* `+`, `-`, `>`, `>=`, `&&`, `||`, `!`...
+* `^` <small>(modulo)</small>, `**` <small>(exponentiation/power)</small>
+* `+=`/`-=`/... `var++` and `var--`
+* `==`/`!=`: **non-strict**, compare the value <small>(`5=='5'` is true)</small>
+* `===`/`!==`: **strict**, compare the value and the type <small>(`5==='5'` is false)</small>
 </div></div>
+
 
 <hr class="sep-both">
 
@@ -50,18 +84,27 @@ JavaScript (JS) is based on ECMAScript. [See JavaScript versions](https://www.w3
 
 <div class="row row-cols-md-2"><div>
 
-There are 3 ways to declare a variable: `const`, `let`, and `var`.
+Types are implicit in JavaScript. You can use **typeof** or **instanceof** to check the type of something.
 
 ```javascript
-// ✅ use CONST as much as possible (unmodifiable)
-const five = 5
-// ✅ let is used for scoped-variable (=block variables)
-let str = "five"
-// ❌ var is used for global variables
-var x = 5
+// Boolean | typeof(b) === 'boolean'
+const b = true || false
+// Number | typeof(n) === 'number'
+const n = 5 // ➡️ Number.isInteger(xxx), parseInt(xxx)
+const n = 5.0 // ➡️ Number.isFinite(xxx), parseFloat(xxx)
+const n = NaN // ➡️ Number.isNan(xxx)
+// String | typeof(str) === 'string'
+const str = "string"
+const str = 'string'
+const str = `template literals/string`
+// Object | typeof(o) === 'object'
+const o = {}
+// Array | a instanceof Array | Array.isArray(a)
+const a = [] // ⚠️ An array is also an Object
 ```
+</div><div>
 
-There are two "null" values. Note that both are equals (`==`).
+There are two "null" values. Both are equals (`null == undefined`).
 
 * **undefined**: not defined
 * **null**: defined, but null
@@ -81,35 +124,6 @@ const x = null?.toString() ?? default_value // default_value
 ```
 
 ➡️ An alternative to `??` is `||`, for instance, `undefined || 50` returns 50. It's not quite used, and it's most likely a "hack".
-
-</div><div>
-
-Types are implicit in JavaScript. See **typeof**/**instanceof**.
-
-```javascript
-// Boolean | typeof(b) === 'boolean'
-const b = true || false
-// Number | typeof(n) === 'number'
-const n = 5 // ➡️ Number.isInteger(xxx), parseInt(xxx)
-const n = 5.0 // ➡️ Number.isFinite(xxx), parseFloat(xxx)
-const n = NaN // ➡️ Number.isNan(xxx)
-// String | typeof(str) === 'string'
-const str = "string"
-const str = 'string'
-const str = `template literals/string`
-// Object | typeof(o) === 'object'
-const o = {}
-// Array | a instanceof Array | Array.isArray(a)
-const a = [] // ⚠️ An array is also an Object
-```
-
-You can use every usual operator.
-
-* `+`, `-`, `>`, `>=`, `&&`, `||`, `!`...
-* `^` <small>(modulo)</small>, `**` <small>(exponentiation/power)</small>
-* `+=`/`-=`/... `var++` and `var--`
-* `==`/`!=`: **non-strict**, compare the value <small>(`5=='5'` is true)</small>
-* `===`/`!==`: **strict**, compare the value and the type <small>(`5==='5'` is false)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -629,39 +643,24 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-Learn
-
-* `.eslintrc` (see [eslint](https://eslint.org/), [compat](https://github.com/amilajack/eslint-plugin-compat))
 * `match (/xxx/ and /x/g /x/i)`
 * [airbnb guidelines](https://github.com/airbnb/javascript)
 * [interesting code](https://stackoverflow.com/questions/21692646/how-does-facebook-disable-the-browsers-integrated-developer-tools)
-* ESM import: `<script type="module">` (see [socket.io](https://socket.io/docs/v4/client-initialization/))
-
-```javascript
-// todo: node.js has some notes too :(
-module.exports = {};
-require('./exports.js');
-```
-</div><div>
-
-Random
-
+* ESM import: `<script type="module">` (see [socket.io](https://socket.io/docs/v4/client-initialization/)). See also Node.js notes.
 * [javascript.com](https://www.javascript.com/learn/strings)
-* [JS minifier](https://javascriptminifier.com/)
-* [JSDoc](https://jsdoc.app/)
-* [jsben.ch](https://jsben.ch/) / [jsperf](https://github.com/jsperf/jsperf.com)
 * **Arrow functions**, or anonymous functions: there is no "this".
 * Closures / nested functions
 * `delete xxx`
 * `Array.find+index`
 * `Symbols, yield, function*()`
+</div><div>
 
 Repositories
 
 * [Article](https://madza.hashnode.dev/21-github-repositories-to-become-a-javascript-master)
 * [javascript-algorithms](https://github.com/trekhleb/javascript-algorithms)
-* [clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript)
 * [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)
 * [33-js-concepts](https://github.com/leonardomso/33-js-concepts)
+* [modern-js-cheatsheet](https://github.com/mbeaudru/modern-js-cheatsheet) (24k ⭐)
 * [jfarmer](https://github.com/jfarmer)
 </div></div>
