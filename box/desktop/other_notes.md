@@ -20,5 +20,5 @@
 
 ##### Windows4Free/Office4Free
 
-* see [msguides.com](https://msguides.com/)
+* See [msguides.com](https://msguides.com/)
 </div></div>

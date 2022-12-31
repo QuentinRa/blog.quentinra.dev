@@ -5,7 +5,7 @@
 ##### Remove a background
 
 * [experte.com](https://www.experte.com/background-remover) (free)
-* [remove.bg](https://www.remove.bg/) (free but output is of a lower quality)
+* [remove.bg](https://www.remove.bg/) (free, but the output is of lower quality)
 * [bgremover](https://icons8.com/bgremover) (free with watermark)
 
 ##### Remove something from an image
@@ -19,9 +19,9 @@
 
 ##### Convert images
 
+* Look for one on Google!
 * [online-converting.com](https://online-converting.com/image/) (JPGs to WebP, batch)
 * [png-svg.com](https://png-svg.com/) (PNG to SVG)
-* otherwise, Google!
 * [imageresizer](https://imageresizer.com/image-compressor) (compress)
 
 ##### Resize images
@@ -44,13 +44,13 @@
 ##### Favicons
 
 * [realfavicongenerator](https://realfavicongenerator.net/)
-* [realfavicongenerator](https://realfavicongenerator.net/svg-favicon/) (svg)
+* [realfavicongenerator](https://realfavicongenerator.net/svg-favicon/) (SVG)
 
 
 ##### Icons
 
-* [Bootstrap Icons](https://icons.getbootstrap.com/) (free, open-source, svg)
-* [Feather Icons](https://feathericons.com/) (free, open-source, svg)
+* [Bootstrap Icons](https://icons.getbootstrap.com/) (free, open-source, SVG)
+* [Feather Icons](https://feathericons.com/) (free, open-source, SVG)
 * [Font Awesome](https://fontawesome.com/search) (free with credits)
 
 ##### Backgrounds

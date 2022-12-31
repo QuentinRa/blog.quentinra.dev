@@ -7,10 +7,10 @@
 * Chromium
 * Edge <small>(Chromium, Microsoft, their analytics, many useless things)</small>
 * Chrome <small>(Chromium, tracked by Google, good)</small>
-* Firefox <small>(Focus on Privacy/Security, so the UX is laking)</small>
+* Firefox <small>(Focus on Privacy/Security, so the UX is lacking)</small>
 * Tor <small>(Firefox, VPN, more secure)</small>
 * Opera <small>(Chromium, <s>slow</s> VPN, more secure, analytics...)</small>
-* Opera GX <small>(Opera, fast VPN, chinese, features for gamers)</small>
+* Opera GX <small>(Opera, fast VPN, Chinese, features for gamers)</small>
 * Brave <small>(Chromium, more secure, privacy-focused)</small>
 * Midori <small>(open-source)</small>
 

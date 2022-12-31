@@ -47,11 +47,11 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 <hr class="sep-both">
 
-##  🏢 Solutions for entreprises 🏢
+##  🏢 Solutions for companies 🏢
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-##### Adblock
+##### AdBlock
 
 * [blockadblock.com](https://blockadblock.com/) (block newbies)
 * [chpadblock.com](https://chpadblock.com/) (block newbies)
