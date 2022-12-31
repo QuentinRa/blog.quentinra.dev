@@ -33,7 +33,7 @@ Note that you can use HTML inside Markdown files 💫.
 
 #### Paragraphs
 
-A paragraph is a bloc of text. Leave of blank line to close it.
+A paragraph is a block of text. Leave of blank line to close it.
 
 <div class="row row-cols-md-2"><div>
 
@@ -274,19 +274,19 @@ You can write `:emoji:` to render an emoji, with "emoji" the one you want. It wo
 You can use HTML inside your Markdown.
 
 
-| Markdown             | HTML                                                 |
-|----------------------|------------------------------------------------------|
-| \#\# Title           | &lt;h2&gt;title&lt;/h2&gt;                           |
-| \*\*bold\*\*         | &lt;b&gt;bold&lt;/b&gt;                              |
-| \*italic\*           | &lt;i&gt;bold&lt;/i&gt;                              |
-| \~\~crossed text\~\~ | &lt;s&gt;strikethrough&lt;/s&gt;                     |
-| a list               | see &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt;           |
-| \`code\`             | &lt;code&gt;code&lt;/code&gt;                        |
-| \[link](url)         | &lt;a href="url"&gt;link&lt;/a&gt;                   |
-| \!\[alt](url)        | &lt;img src="url" alt="alt"&gt;                      |
-| \> text              | &lt;blockquote&gt;text&lt;/blockquote&gt;            |
-| \---                 | &lt;hr&gt;                                           |
-| new line             | &lt;br&gt;                                           |
+| Markdown             | HTML                                       |
+|----------------------|--------------------------------------------|
+| \#\# Title           | &lt;h2&gt;title&lt;/h2&gt;                 |
+| \*\*bold\*\*         | &lt;b&gt;bold&lt;/b&gt;                    |
+| \*italic\*           | &lt;i&gt;bold&lt;/i&gt;                    |
+| \~\~crossed text\~\~ | &lt;s&gt;strikethrough&lt;/s&gt;           |
+| a list               | see &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; |
+| \`code\`             | &lt;code&gt;code&lt;/code&gt;              |
+| \[link](url)         | &lt;a href="URL"&gt;link&lt;/a&gt;         |
+| \!\[alt](url)        | &lt;img src="URL" alt="alt"&gt;            |
+| \> text              | &lt;blockquote&gt;text&lt;/blockquote&gt;  |
+| \---                 | &lt;hr&gt;                                 |
+| blank line           | &lt;br&gt;                                 |
 
 <br>
 
