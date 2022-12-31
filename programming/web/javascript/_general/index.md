@@ -29,6 +29,8 @@ console.log("message")
 console.error("error message")
 console.warn("warning message")
 console.info("informative message")
+// see https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
+console.error('\x1b[31m%s\x1b[0m', 'Shown in RED');
 // if available, used to clear the console
 console.clear();
 ```
@@ -131,6 +133,11 @@ switch (value) {
     case yyy: /* ... */; break;
     default: /* ... */;break;
 }
+// switch + function call
+const value = "";
+switch (true) {
+    case value.includes("toto"): /* ... */ break;
+}
 ```
 
 ##### While / Do while
@@ -188,6 +195,7 @@ const array = []
 // get info
 array.length // 0
 array[0] // undefined
+array.includes(100) // false (=not inside)
 // edit
 array[0] = 25
 array.pop() // []
@@ -208,7 +216,7 @@ const array = [10, 13]
 array.forEach(v => { /* ... */ }) // iterate (...)
 array.filter(v => v === 10) // filter values ([10])
 array.reduce((a,b) => a+b, 0) // reduce to one value (23)
-array.map(v => v+"") // convert each value (['10','13'])
+array.join(" ") // merge separated by ' ' ("10 13"] 
 ```
 
 Create an Array from an Iterable
@@ -237,6 +245,8 @@ xxx.toUpperCase() // "XXX"
 // replace
 xxx.replace('x', 'y') // "yxx"
 xxx.replaceAll('x', 'y') // "yyy"
+// other
+xxx.split("xx") // ['', 'x'] 
 ```
 
 #### Maps

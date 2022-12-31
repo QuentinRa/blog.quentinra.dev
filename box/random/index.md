@@ -117,6 +117,7 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 * [gamekit](https://gamekit.com/)
 * [bananatic](https://www.bananatic.com/)
+* [gamehag](https://gamehag.com/)
 </div><div>
 
 ##### Followers

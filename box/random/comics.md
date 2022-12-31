@@ -14,16 +14,18 @@
 
 <br>
 
-##### Browsers
+##### Look for animes/...
 
 * [anime-planet](https://www.anime-planet.com/)
 * [novelupdates](https://www.novelupdates.com/)
 
 <br>
 
-##### Lists
+##### Manga/Anime/... Lists
 
-* [kenmei](https://www.kenmei.co/) (manga tracker)
+* [myanimelist](https://myanimelist.net/) (anime/manga tracker)
+* [anilist](https://anilist.co/) (👻)
+* [kenmei](https://www.kenmei.co/) (👻, manga tracker)
 
 <br>
 
