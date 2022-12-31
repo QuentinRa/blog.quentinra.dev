@@ -79,7 +79,7 @@ a {
 
 Notes
 
-* 🔎 One rule one per line is a good practice
+* 🔎 One rule per line is a good practice
 * 🔎 The semicolon (`;`) is mandatory <small>(unless there is only one rule)</small>
 </div><div>
 
@@ -155,7 +155,7 @@ You can link an external CSS file. This is the proper way to do it <small>(CSP p
 
 <div class="row row-cols-md-2"><div>
 
-A selector is a target, or a set or targets, on which the style will be applied. ➡️ To test a selector, we usually change the background. If the background changed, it means that the selector works.
+A selector is a target, or a set of targets, on which the style will be applied. ➡️ To test a selector, we usually change the background. If the background changes, it means that the selector works.
 
 ```css
 YOUR_SELECTOR_HERE {
@@ -308,7 +308,7 @@ They can apply a selection based on the structure of the page.
 div, a { /* applied on both "div" and "a" */ }
 div > a { /* "links" having a "div" as parent */ }
 div a { /* "links" having a "div" as ancestor */ }
-p + a { /* an adjacent "link" right-after a "p" */ }
+p + a { /* an adjacent "link" right after a "p" */ }
 ```
 
 ➡️ Obviously, you can use any selectors instead of `a`, `p`, and `div`.
@@ -327,7 +327,7 @@ Properties <small>(ex: background)</small> are taking values <small>(ex: a color
 
 #### Colors
 
-You can use `rgb`, `rgba` <small>(alpha=transparency)</small>, an hexadecimal code...
+You can use `rgb`, `rgba` <small>(alpha=transparency)</small>, a hexadecimal code...
 
 ```css
 .x {
@@ -449,7 +449,7 @@ p {
     text-align: justify; /* center, left, right, ... */
     text-decoration: underline #dd4441; /* add underline */
     text-decoration: none; /* remove underline */
-    white-space: pre-line; /* multilines */
+    white-space: pre-line; /* multiline */
 }
 ```
 
@@ -543,7 +543,7 @@ In modern browsers, there is a media query to detect the theme.
 <link rel="stylesheet" href="light.css" media="(prefers-color-scheme: light)">
 ```
 
-➡️ The CSS files are intended to be used to define variable in **:root**, that will be used by a another CSS file, such as `main.css`.
+➡️ The CSS files are intended to be used to define variables in **:root**, which will be used by another CSS file, such as `main.css`.
 
 You can add a media query directly inside the CSS too.
 
