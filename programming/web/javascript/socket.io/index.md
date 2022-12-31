@@ -2,18 +2,18 @@
 
 <div class="row row-cols-md-2"><div>
 
-[Socket.io](https://socket.io/) is a library that allow a server to do server-pull and server-push. **Server Push** means the server can send something to the client without the client being the one requesting it.
+[Socket.io](https://socket.io/) is a library that allows a server to do server-pull and server-push. **Server Push** means the server can send something to the client without the client requesting it.
 
 * [Documentation](https://socket.io/get-started/)
 * [Examples](https://github.com/socketio/socket.io/tree/main/examples)
 
-> Socket.io relies on websockets for Web Applications.
+> Socket.io relies on WebSockets for Web Applications.
 </div><div>
 
 It's useful to
 
-* 💐 Push a notification to the client
-* ✨ Push a events to the client <small>(instead of querying the API periodically for updates, just listen for events=updates)</small>
+* 💐 Push notifications to the client
+* ✨ Push events to the client <small>(instead of querying the API periodically for updates, just listen for new events)</small>
 * 🍹 Making chat applications
 
 Or more generally, making real-time applications. The server can push data to the client without being requested (**server push**).
@@ -66,7 +66,7 @@ In a project generated with express-generator, append to `bin/www`
 app.io = require('socket.io')(server)
 // you may remove this later
 app.io.on('connection', () => {
-    console.log('A new client connected to websockets')
+    console.log('A new client connected to WebSockets')
 })
 ```
 
@@ -75,7 +75,7 @@ app.io.on('connection', () => {
 
 See [Handling CORS](https://socket.io/docs/v4/handling-cors/).
 
-Example allowing any host to make requests.
+Ex: allowing any host to make requests.
 
 ```diff
 - app.io = require('socket.io')(server)
@@ -105,7 +105,7 @@ router.post('/message', (req, res) => {
 });
 ```
 
-There are many other alternatives, but I like this one because we are using a function, so we don't copy in every request the `io` object, and we can use it everywhere from the `req` object.
+There are many other alternatives, but I like this one because we are using a function, so we don't copy inside every request the `io` object, and we can use it everywhere from the `req` object.
 </div></div>
 
 <hr class="sep-both">
@@ -153,7 +153,7 @@ client.on('connect', () => {
 
 <hr class="sep-both">
 
-## Android client (kotlin)
+## Android client (Kotlin)
 
 <div class="row row-cols-md-2"><div>
 
@@ -205,7 +205,7 @@ object SocketIOHandler {
 
 </div><div>
 
-In your Application, you will need to init and close socket.io client. If you don't have one, then create add it to the MANIFEST.
+If you don't have one, you need to add a class [Application](/programming/web/android/activities/index.md#android-application). Inside, you will need to initialize and close socket.io client.
 
 ```diff
     <application

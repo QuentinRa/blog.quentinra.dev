@@ -53,7 +53,7 @@ Inside your `it` blocs, you will use a testing framework
 
 ## Basics
 
-Some additional notes about features mocha has to offer.
+Some additional notes about features that mocha has to offer.
 
 <div class="row row-cols-md-2"><div>
 
@@ -90,7 +90,7 @@ describe('name', function() {
 
 #### Skip a test
 
-It's a better practice than to comment out code.
+It's better to use `skip` than to comment out the code.
 
 ```javascript
 describe.skip('name', function () {});
@@ -131,7 +131,7 @@ describe('name', function() {
 
 <div class="row row-cols-md-2"><div>
 
-Node.js provide an assertion library called [assert.js](https://nodejs.org/api/assert.html).
+Node.js provides an assertion library called [assert.js](https://nodejs.org/api/assert.html).
 
 ```javascript
 let assert = require('assert');
@@ -179,7 +179,7 @@ Then, you can run a test like this
 ```javascript
 it('name', (done) => {
     chai.request(app).get('/').end((err, res) => {
-        // yor tests here
+        // your tests here
         done()
     });
 });
@@ -285,6 +285,6 @@ expect(resizedImg).toBeDefined();
 expect(resizedSize).toBeDefined();
 expect(resizedSize).toEqual({ w: toWidth, h: imgBefore.height });
 expect(imgDataTest.width).toBe(toWidth);
-expect(differentPixels).toBeLessThanOrEqual(pixelsThreshold);
+expect(xxx).toBeLessThanOrEqual(yyy);
 ```
 </div></div>
