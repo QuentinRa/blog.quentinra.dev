@@ -8,6 +8,7 @@ Express can be used to create websites or APIs.
 * [expressjs/generator](https://github.com/expressjs/generator)
 
 ```powershell
+$ cd xxx # go to your project folder
 $ npx --yes --package express-generator express --force --no-view
 $ npm install
 $ npm audit fix --force

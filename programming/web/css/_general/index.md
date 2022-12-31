@@ -567,6 +567,7 @@ Stuff that I found, but never read/used yet.
 * [autoprefixer](https://github.com/postcss/autoprefixer)
 * [preset](https://preset-env.cssdb.org/)
 * [csstools](https://github.com/csstools)
+* [postcss-scss](https://github.com/postcss/postcss-scss)
 
 **Animations**
 
@@ -575,6 +576,9 @@ Stuff that I found, but never read/used yet.
 
 **Random**
 
+* [csscss](https://github.com/zmoazeni/csscss)
+* [stylecow](https://github.com/stylecow/stylecow)
+* [stylable](https://stylable.io/)
 * [ct](https://github.com/csswizardry/ct)
 * get selector from console
 * print.css

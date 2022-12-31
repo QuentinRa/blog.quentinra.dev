@@ -37,6 +37,7 @@ Special: [emberjs](https://github.com/emberjs) (many solutions).
 * [bower](https://github.com/bower/bower) (15k ⭐)
 * [pnpm](https://github.com/pnpm/pnpm) (21k ⭐)
 * [atmospherejs](https://atmospherejs.com/) (meteor, seems dead+no Github)
+* [lerna](https://lerna.js.org/) (34.1k ⭐)
 </div><div>
 
 #### HTTP clients
@@ -94,6 +95,7 @@ Random
 * [Snowpack](https://www.snowpack.dev/) (19.7k ⭐, dropped)
 * [WMR](https://github.com/preactjs/wmr) (4.7k ⭐)
 * [parcel.js](https://github.com/parcel-bundler/parcel) (41.8k ⭐)
+* [yeoman](https://github.com/yeoman/yeoman) (9.5k ⭐)
 
 #### Bundles
 
@@ -103,6 +105,9 @@ Random
 * [esbuild](https://github.com/evanw/esbuild) (34.2k ⭐)
 * [webpack](https://webpack.js.org/) (62.2k ⭐) <small>(see in-browser, [compat](https://github.com/ElemeFE/obsolete-webpack-plugin))</small>
 * [terser](https://github.com/terser/terser) (7.6k ⭐, minifier)
+* [gulp](https://github.com/gulpjs/gulp) (32.7k ⭐)
+* [taskr](https://github.com/lukeed/taskr) (2.5k ⭐)
+* [grunt](https://github.com/lukeed/taskr) (12.2k ⭐)
 </div></div>
 
 <hr class="sep-both">

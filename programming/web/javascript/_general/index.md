@@ -401,7 +401,8 @@ You can create and instantiate a class with a PHP-like syntax.
 
 ```javascript
 class Person {
-    // only one
+    x = 12; // property declared outside the constructor
+    // only one per class
     constructor(firstname, lastName = "Doe") {
         this.firstname = firstname
         this.lastName = lastName
