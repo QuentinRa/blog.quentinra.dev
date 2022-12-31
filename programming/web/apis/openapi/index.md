@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[OpenAPI](https://swagger.io/specification/) is a wonderful project to create API or generate API documentation. You will define a specification, and you will be able to generate the server code in many language <small>(ex: node server)</small>.
+[OpenAPI](https://swagger.io/specification/) is a wonderful project to create API or generate API documentation. You will define a specification, and you will be able to generate the server code in many languages <small>(ex: node server)</small>.
 
 Many API specifications are available [here](https://app.swaggerhub.com/search).
 
@@ -52,12 +52,12 @@ $ java -jar openapi-generator-cli.jar generate -g nodejs-express-server -i xxx.y
 
 #### Documentation
 
-I haven't test other tools, but with the popular [Redoc](https://github.com/Redocly/redoc) (19.1k ⭐) you simply have to
+I haven't tested other tools, but with the popular [Redoc](https://github.com/Redocly/redoc) (19.1k ⭐) you simply have to
 
 * Copy the [following HTML](https://github.com/Redocly/redoc#deployment) on your web server
-* Replace the URL with the link your to YAML file
+* Replace the URL with the link to your YAML file
 
-And you're done. See [Redoc quickstart](https://redocly.com/docs/redoc/quickstart/).
+And you're done. See [Redoc quick start](https://redocly.com/docs/redoc/quickstart/).
 </div></div>
 
 <hr class="sep-both">
@@ -123,7 +123,7 @@ schema:
 
 #### Schema attributes
 
-Schema have more attributes than just a type if you need them.
+Schemas have more attributes than just a type if you need them.
 
 <div class="row row-cols-md-2"><div>
 
@@ -145,9 +145,9 @@ schema:
 schema:
   type: xxx
   readOnly: true # GET only
-  writeOnly: true # POST/...
+  writeOnly: true # POST/... only
   description: desc
-  example: "1"
+  example: "1" # example for a string
 ```
 </div><div>
 
@@ -261,7 +261,7 @@ paths:
 
 Another block always seen in many responses, bodies, or parameters is **content**.
 
-A content englobes content-types <small>(ex: json)</small> with their associated schema <small>(ex: PersonJSON)</small>.
+A content is a set of content-types <small>(ex: json)</small> with their associated schema <small>(ex: PersonJSON)</small>.
 </div><div>
 
 ```yaml
@@ -301,7 +301,7 @@ paths:
 
 </div><div>
 
-You could also request a cookie inside parameters.
+You could also request a cookie inside `parameters`.
 
 ```yaml
         # ex: cookie
@@ -342,8 +342,8 @@ Stuff that I found, but never read/used yet.
 
 Stuff
 
-* oneOf, anyOf, not
-* see how to generate code samples
+* `oneOf`, `anyOf`, `not`
+* Check out how to generate code samples
 </div><div>
 
 * [params](https://swagger.io/docs/specification/describing-parameters/)

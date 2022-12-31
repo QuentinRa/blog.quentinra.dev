@@ -58,7 +58,7 @@ For the endpoint `http://localhost:3000/users/1`, the base endpoint would be `ht
 
 **Methods**
 
-An endpoint may allow multiple HTTP methods (GET, POST, PUT...). Refer to the API documentation to known which one are available. See [HTTP protocol/method](/it/networking/protocols/index.md#method) for your own API if needed.
+An endpoint may allow multiple HTTP methods (GET, POST, PUT...). Refer to the API documentation to know which ones are available. See [HTTP protocol/method](/it/networking/protocols/index.md#method) for your own API if needed.
 
 **Responses**
 
@@ -150,7 +150,7 @@ Stuff that I found, but never read/used yet.
 * REST/RESTful/[REST API guidelines](https://github.com/controlook-zz/standards/blob/master/backend/rest-api-guidelines.md)
   * stateless (do not use previous requests)
   * uniform (ex: json for all responses)
-  * multiple requests to get one ressource (disavantage)
+  * multiple requests to get one resource (disadvantage)
 * [GraphQL](https://graphql.org/) ([article on best practices](https://stepzen.com/blog/designing-graphql-apis-best-practices-and-learnings-from-rest-api-design))
 </div><div>
 
