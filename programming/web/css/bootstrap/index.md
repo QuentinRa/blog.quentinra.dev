@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[Bootstrap](https://getbootstrap.com/) is the most popular css framework with more than 160k ⭐ on [GitHub](https://github.com/twbs/bootstrap). Some redeeming features from my point of view are
+[Bootstrap](https://getbootstrap.com/) is the most popular CSS framework with more than 160k ⭐ on [GitHub](https://github.com/twbs/bootstrap). Some redeeming features from my point of view are
 
 * 💫 easy to learn
 * 🐉 responsive <small>(adapt to many screen resolutions)</small>
@@ -31,7 +31,7 @@ See the [documentation](https://getbootstrap.com/docs/). For **5.2.3**, you coul
 
 ➡️ The best way to learn Bootstrap is to copy-and-paste examples. You can find them [here](https://getbootstrap.com/docs/5.2/examples/).
 
-* Click on an exemple to your liking
+* Click on an example to your liking
 * Use <kbd>CTRL+U</kbd> or "View page source" to see the code
 * Copy-paste it inside your project and tune it
 </div><div>
@@ -41,7 +41,7 @@ See the [documentation](https://getbootstrap.com/docs/). For **5.2.3**, you coul
 * the code
 * a preview of the expected output
 
-➡️ See also [W3Schools/Bootstrap 5](https://www.w3schools.com/bootstrap5/index.php) and [exercices](https://www.w3schools.com/bootstrap5/exercise.php).
+➡️ See also [W3Schools/Bootstrap 5](https://www.w3schools.com/bootstrap5/index.php) and [exercises](https://www.w3schools.com/bootstrap5/exercise.php).
 </div></div>
 
 <hr class="sep-both">
@@ -50,13 +50,13 @@ See the [documentation](https://getbootstrap.com/docs/). For **5.2.3**, you coul
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-As many CSS frameworks, Bootstrap is defining CSS classes, and you will simply have to use them on your HTML elements.
+Like all CSS frameworks, Bootstrap is defining CSS classes, and you will simply have to use them on your HTML elements.
 
 ```html
 <someHTMLtag class="add bootstrap classes here" />
 ```
 
-➡️ If your IDE isn't providing autocompletion for Bootstrap classes, you might consider downloading Bootstrap sources [here](https://getbootstrap.com/docs/5.2/getting-started/download/), and add them in your project.
+➡️ If your IDE isn't providing autocompletion for Bootstrap classes, you might consider downloading Bootstrap sources [here](https://getbootstrap.com/docs/5.2/getting-started/download/), and adding them to your project.
 </div><div>
 
 For instance, to have this button: <button class="btn btn-warning text-dark">xxx</button>
@@ -103,7 +103,7 @@ See [breakpoints](https://getbootstrap.com/docs/5.2/layout/breakpoints/).
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-Many CSS classes have variants based on a breakpoint. Basically, these are **classes based on a media-query** that will only "enable" them if the screen fit the condition.
+Many CSS classes have variants based on a breakpoint. Basically, these are **classes based on a media query** that will only "enable" them if the screen fits the condition.
 
 * `<none>`: every screen size
 * `sm`: any screen of at least **576px** (mobile)
@@ -115,7 +115,7 @@ Many CSS classes have variants based on a breakpoint. Basically, these are **cla
 ➡️ This is only useful to make more responsive interfaces.
 </div><div>
 
-For instance, with `d-none` that allow us to hide an element.
+For instance, with `d-none` that allows us to hide an element.
 
 * `d-none`: always hidden
 * `d-sm-none`: hidden for all aside from mobiles
@@ -127,7 +127,7 @@ If you want to hide something on mobile only, you will have to combine two class
 * `d-none`: always hidden
 * `d-md-block`: always shown if the screen is at least 768px long
 
-The later being more specific take precedence over the former.
+When the screen size if at least 768px long, the latter being more specific takes precedence over the former.
 </div></div>
 
 <hr class="sep-both">
@@ -180,13 +180,13 @@ Less used/useful
 **Style**
 
 * `rounded-0`/.../`rounded-5`: rounded corners
-* `border-<color>`: used to set border color
+* `border-<color>`: used to set border-color
 
 **Size**
 
 * `w-auto`/`w-0`/`w-25`/`w-50`/`w-75`/`w-100`: width (w-50=50%)
 * `h-auto`/`h-0`/`h-25`/`h-50`/`h-75`/`h-100`: height (h-50=50%)
-* `mw-100`: max-width 100% (ex: image don't overflow horizontally)
+* `mw-100`: max-width 100% <small>(ex: prevent horizontal overflow for images)</small>
 * `hw-100`: max-height 100%
 </div></div>
 
@@ -196,7 +196,7 @@ Less used/useful
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-Row are allowing us to add items next to each other. Using breakpoints, we can do things like display one element per "row" on small screen, two on tablets, and three or more on computers.
+Rows are allowing us to add items next to each other. Using breakpoints, we can do things like display one element per "row" on mobile, two on tablets, and three or more on computers.
 
 ```
 <div class="row mx-0">
@@ -242,7 +242,7 @@ Then, as always, you can add more classes.
 
 **Style**
 
-* `table-hover`: hover current row
+* `table-hover`: hover the current row
 * `table-striped`: alternate colors between rows
 * `table-<color>`: tune the table using the color (danger/warning...)
 
