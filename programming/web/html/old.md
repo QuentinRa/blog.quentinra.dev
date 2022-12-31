@@ -1,19 +1,5 @@
 # Learn HTML5
 
-As explained in the Web course, HTML is the language used to write a web page. To be exact, the final result is in HTML, but you could have used other languages to generate the HTML page (such as PHP or Node.js), as there is no way to factorize code in pure HTML.
-
-The current version that you should use is **HTML5**, but even if many browsers have yet to support it, and not many people are aware of it, we are in **HTML5.2** (HTML 5 2nd minor version, December 2017). You can check the [coverage of HTML5 by your browser here](https://caniuse.com/) (for instance, try "summary", a new tag introduced in HTML5.1, or simply enter "HTML5").
-
-The usual place to learn HTML/CSS/JS is [W3Schools](https://www.w3schools.com/html/default.asp). Personally, I'm enjoying [MDN/Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML).
-
-> **Note**: as a good developer 😎, you should follow the standards when writing code. You can test your code [using the W3C validator](https://validator.w3.org/#validate_by_input). You can also add a badge that will redirect to the validator with your page inside [as explained here](../../../archives/ensiie/web/parts/validator.md).
-> 
-> Recently, I discovered that you could check your website with [webhint.io](https://webhint.io/), which is also embedded in edge developer tools, and providing quite good feedback. You also got other tools, such as Lighthouse to check the performances, etc. (check WEB course)
-
-<hr class="sr">
-
-## Introduction
-
 To summarize what was written in the WEB course, 
 
 * a browser and a server are communicating using the protocol HTTP (or HTTPS=HTTP Secure)

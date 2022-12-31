@@ -21,6 +21,7 @@ Stuff that I found, but never read/used yet.
 * CDNs ([keycdn](https://www.keycdn.com/))
 * semantic web ([protege](https://protege.stanford.edu/))
 * progressive web apps (PWA)
+* [webhint](https://webhint.io/)
 </div><div>
 
 SEO
