@@ -13,14 +13,14 @@
               "name": "Web development",
               "desc": "...",
               "icon": null,
-              "hidden": true
+              "hidden": false
             },
             {
               "tag": "web/_general/apache/index.md",
               "name": "Apache",
               "desc": "...",
               "icon": "<i class=\"bi bi-server\"></i>",
-              "hidden": true
+              "hidden": false
             }
           ],
           "\uD83D\uDD2D HTML \uD83D\uDD2D": [
@@ -29,7 +29,7 @@
               "name": "HTML",
               "desc": "...",
               "icon": "<i class=\"bi bi-filetype-html\"></i>",
-              "hidden": true
+              "hidden": false
             }
           ],
           "🪄 Frameworks 💫": [
@@ -192,6 +192,22 @@
               "name": "Improvements",
               "desc": "Localization, MVVM, Themes...",
               "icon": "<i class=\"bi bi-lightning-fill\"></i>",
+              "hidden": false
+            }
+          ]
+        }
+      },
+      "code": {
+        "name": "Random Languages",
+        "active": false,
+        "hidden": false,
+        "courses": {
+          "~": [
+            {
+              "tag": "code/kotlin/index.md",
+              "name": "Kotlin",
+              "desc": "...",
+              "icon": "<img src=\"http://blog.quentinra.dev2/courses/programming/code/kotlin/_images/kotlin-logo.png\" class=\"ms-logo pb-1\" alt=\"kotlin-logo\" title=\"kotlin-log\">",
               "hidden": false
             }
           ]
