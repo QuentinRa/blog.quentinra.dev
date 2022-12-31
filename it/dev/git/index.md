@@ -1,4 +1,4 @@
-# Version-control using Git
+# 🎹 Git commands 🎹
 
 <div class="row row-cols-md-2"><div>
 

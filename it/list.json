@@ -44,16 +44,23 @@
     "💻 IT Project - Version control 💻": [
       {
         "tag": "dev/git/index.md",
-        "name": "Git",
-        "desc": "Git is the most famous version control tool. As a programmer, you must learn it.",
+        "name": "Git commands",
+        "desc": "The most famous version control tool.",
         "icon": "<i class=\"bi bi-github\"></i>",
         "hidden": false
       },
       {
         "tag": "dev/git-project/index.md",
-        "name": "Git projects",
+        "name": "Git files/...",
         "desc": "Notes about making projects using Git.",
         "icon": "<i class=\"bi bi-github\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "dev/ci/index.md",
+        "name": "CI (DevOps)",
+        "desc": "Continuous integration (CI).",
+        "icon": null,
         "hidden": false
       }
     ]
