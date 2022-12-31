@@ -1,7 +1,5 @@
 # HTML
 
-**Old notes are somewhere else**
-
 <div class="row row-cols-md-2"><div>
 
 ...

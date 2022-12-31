@@ -60,24 +60,33 @@ Based on Material Design (Google UX Guidelines)
 
 ## 🏫 About CSS 🏫
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2 mt-3"><div>
 
 CSS files (`.css`) are defining **rules** to apply on a target called **selector**. A rule is made of a **property**, and its **value**.
 
-**Example**: "every link should have the color yellow"
+<details class="details-n">
+<summary>Example: Links should have the color blue. Every text in bold should have a yellow background.
 
-* Selector: Every link (`a`)
-* Rule
-  * Property: the color of the text (`color`)
-  * Value: `yellow`
+<p></p>
 
 ```css
 a {
     color: yellow;
 }
-```
 
-Notes
+b {
+    background: blue;
+}
+```
+</summary>
+
+* Selector: Links (`a`) and texts in bold (`b`)
+* Rule
+  * Property: `color`, or `background`
+  * Value: `yellow`, or `blue`
+</details>
+
+**Notes**
 
 * 🔎 One rule per line is a good practice
 * 🔎 The semicolon (`;`) is mandatory <small>(unless there is only one rule)</small>
