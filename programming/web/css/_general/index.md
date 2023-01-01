@@ -12,7 +12,7 @@ Cascading Style Sheets (CSS) are used to style and animate
 **Where to learn?**
 
 * [MDN/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) <small>(🚀, [Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference))</small>
-* [W3Schools/CSS](https://www.w3schools.com/css/default.asp) <small>(🏫, [Reference](https://www.w3schools.com/CSSref/index.php))</small>
+* [W3Schools/CSS](https://www.w3schools.com/css/default.asp) <small>(🏫, [Reference](https://www.w3schools.com/CSSref/index.php), [Default styles](https://www.w3schools.com/cssref/css_default_values.php))</small>
 * [css-tricks](https://css-tricks.com/) <small>(🥂, articles)</small>
 * [cssreference](https://cssreference.io/) <small>(😳, reference)</small>
 * [css-cheatsheet](https://github.com/iLoveCodingOrg/css-cheatsheet) <small>(✈️ , cheatsheet)</small>

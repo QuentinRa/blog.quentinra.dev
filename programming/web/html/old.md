@@ -128,15 +128,9 @@ Note that a div is "invisible", meaning that the user won't see any difference b
 </div>
 ```
 
-<hr class="sl">
+* `dl+dt+dd`
 
-## Learn the tags: style
-
-You may want to style your website, but you don't want/know CSS. This is a list of HTML tags that you may use.
-
-<!--
-I can't use Markdown tables because the content is too complex 😭, it may the code more unreadable.
--->
+<br>
 
 <table class="table table-striped border-dark table-bordered">
 <thead>
@@ -149,51 +143,6 @@ I can't use Markdown tables because the content is too complex 😭, it may the 
 </tr>
 </thead>
 <tbody>
-
-<!-- b -->
-<tr>
-<td><kbd>b</kbd></td>
-<td>bold</td>
-<td></td>
-<td><code>&lt;p>This &lt;b>is in bold&lt;/b>&lt;/p></code></td>
-<td>This <b>is in bold</b>.</td>
-</tr>
-
-<!-- u -->
-<tr>
-<td><kbd>u</kbd></td>
-<td>Underline</td>
-<td></td>
-<td><code>&lt;p>This &lt;u>is underlined&lt;/u>&lt;/p></code></td>
-<td>This <u>is underlined</u>.</td>
-</tr>
-
-<!-- s -->
-<tr>
-<td><kbd>s</kbd></td>
-<td>Strikethrough</td>
-<td></td>
-<td><code>&lt;p>This &lt;s>is crossed out&lt;/s>&lt;/p></code></td>
-<td>This <s>is crossed out</s></td>
-</tr>
-
-<!-- i -->
-<tr>
-<td><kbd>i</kbd></td>
-<td>Italic</td>
-<td></td>
-<td><code>&lt;p>This &lt;i>is in italic&lt;/i>&lt;/p></code></td>
-<td>This <i>is in italic</i></td>
-</tr>
-
-<!-- em -->
-<tr>
-<td><kbd>em</kbd></td>
-<td>Emphasis</td>
-<td></td>
-<td><code>&lt;p>This text has &lt;em>emphasis&lt;/em>&lt;/p></code></td>
-<td>This text has <em>emphasis</em></td>
-</tr>
 
 <!-- br -->
 <tr>
@@ -217,78 +166,6 @@ I can't use Markdown tables because the content is too complex 😭, it may the 
 Rarely used tags
 </td></tr>
 
-<!-- small -->
-<tr>
-<td><kbd>small</kbd></td>
-<td>smaller text</td>
-<td></td>
-<td><code>This is  &lt;small>small&lt;/small></code></td>
-<td>This is <small>small</small></td>
-</tr>
-
-<!-- mark -->
-<tr>
-<td><kbd>mark</kbd></td>
-<td>marked text<br>(=yellow background)</td>
-<td></td>
-<td><code>This is  &lt;mark>marked&lt;/mark></code></td>
-<td>This is <mark>marked</mark></td>
-</tr>
-
-<!-- kbd -->
-<tr>
-<td><kbd>kbd</kbd></td>
-<td>keyboard keys</td>
-<td></td>
-<td><code>This is a &lt;kbd>key&lt;/kbd></code></td>
-<td>This is a <kbd>key</kbd></td>
-</tr>
-
-<!-- sup -->
-<tr>
-<td><kbd>sup</kbd></td>
-<td>superscript</td>
-<td></td>
-<td><code>This is a &lt;sup>superscript&lt;/sup></code></td>
-<td>This is a <sup>superscript</sup></td>
-</tr>
-
-<!-- sub -->
-<tr>
-<td><kbd>sub</kbd></td>
-<td>subscript</td>
-<td></td>
-<td><code>This is a &lt;sub>subscript&lt;/sub></code></td>
-<td>This is a <sub>subscript</sub></td>
-</tr>
-
-<!-- var -->
-<tr>
-<td><kbd>var</kbd></td>
-<td>for a variable</td>
-<td></td>
-<td><code>This is a &lt;var>variable&lt;/var></code></td>
-<td>This is a <var>variable</var></td>
-</tr>
-
-<!-- samp -->
-<tr>
-<td><kbd>samp</kbd></td>
-<td>for the output of a program</td>
-<td></td>
-<td><code>This is a &lt;samp>sample output&lt;/samp></code></td>
-<td>This is a <samp>sample output</samp></td>
-</tr>
-
-<!-- abbr -->
-<tr>
-<td><kbd>abbr</kbd></td>
-<td>show title when hovered</td>
-<td></td>
-<td><code>&lt;abbr title="some text here">word&lt;/abbr></code></td>
-<td><abbr title="some text here">word</abbr></td>
-</tr>
-
 <!-- cite -->
 <tr>
 <td><kbd>cite</kbd></td>
@@ -310,23 +187,9 @@ Rarely used tags
 </tbody>
 </table>
 
-You got even more tags that I never used such as strong (rendered as bold), del (rendered like s), q (short quote), etc. You can learn more about them (and add them here if you want) in the HTML reference.
-
-<hr class="sr">
-
-## Learn the tags: advanced
-
-You will use these tags a lot too, but they are a little more complex than the previous ones.
-
 * [Lists](special/lists.md): with ol/ul and li
-* [Definition](special/dl.md) with dl and dd
 * [Code block and inline code](special/code.md) with code and pre
 * [Tables](special/tables.md) using table
-
-<hr class="sl">
-
-## Special
-
 * [Meta tags](special/meta.md)
 * [Icons](special/icons.md) 🚀
 

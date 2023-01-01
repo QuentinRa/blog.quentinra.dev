@@ -136,7 +136,7 @@ Note that `<p>` is blocking, while `<span>` is not.
 
 ➡️ You can write multilines texts. Note that two or more spaces are merged into one. The indentations/... are NOT kept.
 
-</div><div>
+<br>
 
 #### Links
 
@@ -148,7 +148,7 @@ Use `<a>Text</a>` to create a link. The user will see `Text`.
 <a href="..." target="_blank">Open in a new tab</a>
 ```
 
-<br>
+</div><div>
 
 #### Images
 
@@ -159,6 +159,45 @@ If an image cannot be loaded, `alt` will be shown instead.
 <img src="xxx.png" alt="xxx" title="shown on hover">
 <img src="xxx.png" alt="xxx" width="48" height="48">
 ```
+
+<br>
+
+#### Style
+
+We can add some charm to our website without CSS.
+
+<div class="row row-cols-md-2"><div>
+
+```html
+<b>bold</b>
+<u>underlined</u>
+<s>crossed out</s>
+<i>italic</i>
+<em>emphasis</em>
+<small>small</small>
+<mark>marked</mark>
+<kbd>key</kbd>
+<sup>superscript</sup>
+<sub>subscript</sub>
+<abbr title="xxx">x</abbr>
+```
+</div><div class="align-self-center">
+
+<b>bold</b><br>
+<u>underlined</u><br>
+<s>crossed out</s><br>
+<i>italic</i><br>
+<em>emphasis</em><br>
+<span class="usual-small">small</span><br>
+<mark class="usual-small">yellow background</mark><br>
+<kbd class="usual-small">CTRL+S</kbd><br>
+<sup>at the top</sup><br>
+<sub>at the bottom</sub><br>
+<abbr title="xxx">hover me</abbr>
+</div></div>
+
+➡️ See also `var`, `samp`, `q`, `strong`, `del`...
+
 </div></div>
 
 <hr class="sep-both">
