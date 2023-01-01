@@ -303,10 +303,37 @@ We can add some charm to our website without CSS.
 * Use `<audio src="URL" controls></audio>` for audio
 * Use `<video src="URL" controls></video>`+`track` for videos
 * Use `dialog` for a dialog
-* Use `blockquote`/`q` to quote something.
-* Use `dl+dt+dd` for a definition
-* Use `cite` to reference something
 
+</div></div>
+
+<hr class="sep-both">
+
+## HTML5 tags
+
+<div class="row row-cols-md-2"><div>
+
+HTML5, or more HTML now, is something toward giving a semantic to each part of the website. It's more for robots than humans.
+
+* `header`: usually the top of the website, with the navbar...
+* `nav`: a navbar <small>(ex: one can be inside "header")</small>
+* `main`: the main content of the website <small>(~one per page)</small>
+* `article`: a group of sections about a topic
+* `section`: a part of an article <small>(ex: Introduction)</small>
+* `aside`: complements to the article <small>(ex: contact information...)</small>
+* `footer`: the footer of your website...
+
+➡️ You can add a header/footer/... to a section/...
+</div><div>
+
+These tags are, in my opinion, semantic tags
+
+* Use `<cite>ref</cite>` to reference something
+* Use `<q cite="src">xxx</q>` to quote something short
+* Use `<blockquote cite="src">xxx</blockquote>` to quote something long
+* Use `<time datetime="2020-12-06">December 6</time>` for dates
+* Use `<dl><dt>term</dt><dd>def</dd></dl>` for a definition
+* Use `<address>xxx</address>` to wrap an address
+* ...
 </div></div>
 
 <hr class="sep-both">
