@@ -39,10 +39,12 @@ Since HTML5, similarly to CSS, HTML has become complete, and the versions were d
 
 A HTML file (`.html`) is a tree of **tags** (`html`, `head`, `body`...). 
 
-```
+```html
 <!doctype html>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
+        <title>Title of your website</title>
         <!-- ... -->
     </head>
     <body>
@@ -141,6 +143,8 @@ Note that `<p>` is blocking, while `<span>` is not.
 
 ➡️ You can write multilines texts. Note that two or more spaces are merged into one. The indentations/... are NOT kept.
 
+➡️ You can use `&code;` to encode some characters like: `&nbsp;` (space) `&#244;` (ô) `&#224;` (à) `&lt;` (<) `&gt;` (>)...
+
 <br>
 
 #### Links
@@ -152,6 +156,20 @@ Use `<a>Text</a>` to create a link. The user will see `Text`.
 <a href="https://duckduckgo.com/">External link</a>
 <a href="..." target="_blank">Open in a new tab</a>
 ```
+
+<br>
+
+#### Images
+
+If an image cannot be loaded, `alt` will be shown instead.
+
+```html
+<img src="xxx.png" alt="alternative text">
+<img src="xxx.png" alt="xxx" title="shown on hover">
+<img src="xxx.png" alt="xxx" width="48" height="48">
+```
+
+➡️ See also `figure`/`figcaption`, and `picture`.
 
 <br>
 
@@ -189,17 +207,16 @@ You can make ordered lists (`1.`, `2.`...) with `<ol>`, and unordered lists with
 
 </div><div>
 
-#### Images
+#### Containers: div
 
-If an image cannot be loaded, `alt` will be shown instead.
+A `div` is a blocking component that is not visible to the user, and mainly used to group components, either to apply a CSS to the block, or to make the code more readable.
 
 ```html
-<img src="xxx.png" alt="alternative text">
-<img src="xxx.png" alt="xxx" title="shown on hover">
-<img src="xxx.png" alt="xxx" width="48" height="48">
+<div>
+    <h3>XXX</h3>
+    <p>xxx</p>
+</div>
 ```
-
-➡️ See also `figure`/`figcaption`, and `picture`.
 
 <br>
 
@@ -222,7 +239,7 @@ Use <code>table</code>, <code>tr</code>, <code>th/td</code> to make tables.
 </table>
 </summary><br>
 
-➡️ `thead`/`tbody` were added in HTML5, and are optional. See also `<tfoot>`, and `<caption>`. 
+➡️ `thead`/`tbody` were added in HTML5, and are optional. See also `<tfoot>`, and `<caption>`.
 
 ```html
 <table class="table table-bordered border-dark">
@@ -302,7 +319,9 @@ We can add some charm to our website without CSS.
 * Use `details`/`summary` to create a dropdown
 * Use `<audio src="URL" controls></audio>` for audio
 * Use `<video src="URL" controls></video>`+`track` for videos
-* Use `dialog` for a dialog
+* Use `<dialog>` to display a dialog
+* Use `<code>` to display some code
+* Use `<pre>` to preserve indentations/...
 
 </div></div>
 
@@ -312,7 +331,7 @@ We can add some charm to our website without CSS.
 
 <div class="row row-cols-md-2"><div>
 
-HTML5, or more HTML now, is something toward giving a semantic to each part of the website. It's more for robots than humans.
+HTML5, or more HTML now, is something toward giving a semantic to each part of the website. It's more for robots than humans. All of them are simply named `div`.
 
 * `header`: usually the top of the website, with the navbar...
 * `nav`: a navbar <small>(ex: one can be inside "header")</small>
@@ -451,6 +470,49 @@ These can be used on any input elements such as `<input>`.
 <input pattern="[a-z]+"> <!-- pattern to match -->
 <input min="x" max="y"> <!-- range -->
 <input minlength="z" maxlength="t"> <!-- ... -->
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Metadata
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+* ➡️ The icon of the website
+
+```html
+<link rel="icon" href="icon.png">
+```
+
+* ➡️ Basic information
+
+```html
+<meta name="author" content="...">
+<meta name="copyright" content="...">
+<meta name="keywords" content="....">
+<meta name="description" content="...">
+```
+
+➡️ See also [metatags](https://metatags.io/) for social network tags.
+</div><div>
+
+* ➡️ Crawlers <small>(robots indexing your website)</small>
+
+```html
+<!-- index and follow -->
+<meta name='robots' content='index, follow'>
+<!-- don't index nor follow -->
+<meta name='robots' content='noindex, nofollow'>
+```
+
+* ➡️ HTML Refresh/Redirect
+
+```
+<!-- refresh in 5 seconds -->
+<meta http-equiv="refresh" content="5">
+<!-- HTML redirect -->
+<meta http-equiv="refresh" content="0; url=URL">
 ```
 </div></div>
 
