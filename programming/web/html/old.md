@@ -11,13 +11,7 @@ To summarize what was written in the WEB course,
 
 > For instance, for DuckDuckGo, `https://duckduckgo.com` is the same as `https://duckduckgo.com/index.html`.
 
-<details class="details-n">
-<summary>An HTML file is made a <b>tags</b> (ex: title, meta, ...) that have <b>attributes</b> (properties such as <code>lang="fr"</code> etc.).
-</summary>
-
 ```html
-<!doctype html>
-<html lang="fr">
 <head>
     <title>title of your website</title>
     <!-- UTF-8 -->
@@ -34,9 +28,7 @@ To summarize what was written in the WEB course,
     <!-- link -->
     <a href="https://memorize.be/" target="_blank" rel="noopener">Link to memorize.be</a>
 </body>
-</html>
 ```
-</details>
 
 <details class="details-n">
 <summary>How do I "run" HTML code?</summary>
@@ -59,15 +51,8 @@ You will have two types of tags, tags like `<img ...>` called **auto-closing tag
 You may also note that tags such as **p** are called blocking tags, because unless you use CSS, the tags after **p** will be rendered starting from a newline. To be accurate, "p", "div", etc. are **block-level elements** while "a", "span", etc. are called **inline elements**. A block element is usually storing a bunch of inline elements. I'm usually calling those "containers".
 </div><div>
 
-* the name of a tag can be in lowercase or in uppercase (ex: "a" or "A" are working), use lowercase 😎
-* you can write `attribute=value` (without ", but that may not work every time according to the value, **do not use this 😟**)
-* you can write `attribute='value'` (instead of ", **do not use this 😟**)
 * you may write `<img ...></img>` or `<img ... />` (without the /), but we are usually writing `<img ...>` for auto-closable tags.
-* you do not need to indent your code, but it makes things cleaner 🙂
-* you do not need to put one tag per line, but it makes things cleaner
-* so tags are optional (such as `</li>` or `</body>`, but you shouldn't omit/forget them)
-
-> When I'm saying "do not use/do this", I mean that developers are usually not doing/using this, BUT if you do, then you should make sure **to not mix things** <small>(ex: do not mix ' and ")</small> **as this is what bad developers do**. Pick one, and be consistent until the end.
+* some tags are optional (such as `</li>` or `</body>`, but you shouldn't omit/forget them)
 </div></div>
 
 <hr class="sr">

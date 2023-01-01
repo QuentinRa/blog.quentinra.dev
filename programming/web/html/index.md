@@ -28,6 +28,46 @@ Since HTML5, similarly to CSS, HTML has become complete, and the versions were d
 
 <hr class="sep-both">
 
+## HTML syntax
+
+<div class="row row-cols-md-2"><div>
+
+A HTML file (`.html`) is a tree of **tags** (`html`, `head`, `body`...). 
+
+```
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- ... -->
+    </head>
+    <body>
+        <!-- ... -->
+    </body>
+</html>
+```
+
+➡️ `<!doctype html>` is not a tag, but an element telling a browser what kind of document type to expect.
+</div><div>
+
+* Every tag is a child of `html`.
+* The `head` is where we put metadata <small>(ex: the title of the website)</small>.
+* The `body` is where we put the code <small>(ex: the navigation bar...)</small>.
+
+Notes
+
+* 👉 Tags are case-insensitive (`head` or `HEAD` or `hEAd`...)
+* 👉 Tags can have **properties** (`lang="en"`...)
+  * 👉 Properties are case-insensitive (`lang` or `LANG`...)
+  * 👉 Quotes are optional (`lang="en"` or `lang=en`)
+  * 👉 Quotes can be single quotes (`lang="en"` or `lang='en'`)
+* 👉 Indentations are optional
+* 👉 You can put multiples tags on one line
+
+🧼 The most important takeaway is to be consistent.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
