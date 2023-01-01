@@ -24,6 +24,12 @@ Stuff that I found, but never read/used yet.
 * [webhint](https://webhint.io/)
 </div><div>
 
+URLs
+
+* `href=#`
+* `href=#id`
+* `mailto:email`
+
 SEO
 
 * [nitropack](https://nitropack.io/)

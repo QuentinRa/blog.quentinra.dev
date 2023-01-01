@@ -21,6 +21,7 @@
 * https://www.speedguide.net/
 * https://curiositykillscolby.com/
 * https://www.grc.com/haystack.htm
+* https://mathiasbynens.github.io/rel-noopener/
 
 <hr>
 

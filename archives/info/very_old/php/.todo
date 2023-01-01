@@ -3,6 +3,8 @@
 // php -m
 // Générateur PHP
 
+<pre>
+
 continue 2
 https://packagist.org/
 sudo apt install php7.4-mongodb

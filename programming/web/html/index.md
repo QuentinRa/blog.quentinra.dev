@@ -96,6 +96,73 @@ HTML tags are divided in 3 categories
 
 <hr class="sep-both">
 
+## HTML elements
+
+<div class="row row-cols-md-2"><div>
+
+#### Headers
+
+From `h1` to `h6`, the lower the number, the bigger the title.
+
+<div class="row row-cols-md-2"><div>
+
+```html
+<h6>Some small title</h6>
+```
+</div><div class="align-self-center">
+
+<h6 class="h6">Some small title</h6>
+</div></div>
+
+➡️ HTML standard: up to one `<h1>` per page.
+
+<br>
+
+#### Paragraphs
+
+Note that `<p>` is blocking, while `<span>` is not.
+
+<div class="row row-cols-md-2"><div>
+
+```html
+<p>xxx</p>
+<span>xxx</span>
+```
+</div><div class="align-self-center">
+
+<p class="m-0 p-0">xxx</p>
+<span>xxx</span>
+</div></div>
+
+➡️ You can write multilines texts. Note that two or more spaces are merged into one. The indentations/... are NOT kept.
+
+</div><div>
+
+#### Links
+
+Use `<a>Text</a>` to create a link. The user will see `Text`.
+
+```html
+<a href="test.html">Link to a local file</a>
+<a href="https://duckduckgo.com/">External link</a>
+<a href="..." target="_blank">Open in a new tab</a>
+```
+
+<br>
+
+#### Images
+
+If an image cannot be loaded, `alt` will be shown instead.
+
+```html
+<img src="xxx.png" alt="alternative text">
+<img src="xxx.png" alt="xxx" title="shown on hover">
+<img src="xxx.png" alt="xxx" width="48" height="48">
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
