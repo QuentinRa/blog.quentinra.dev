@@ -14,10 +14,9 @@ JavaScript (JS) is a popular language used to develop
 
 **Where to learn?**
 
-* [MDN/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/) <small>(🚀)</small>
-* [W3Schools/JavaScript](https://www.w3schools.com/js/default.asp) <small>(see also Best Practices and Common mistakes)</small>
-* [iLoveCodingOrg/cheatsheet](https://github.com/iLoveCodingOrg/javascript-cheatsheet) <small>(quite complete, well presented)</small>
-* [javascript.info](https://javascript.info/) <small>(⛪)</small>
+* [MDN/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/) <small>(⛪)</small>
+* [W3Schools/JavaScript](https://www.w3schools.com/js/default.asp) <small>(⛪)</small>
+* [javascript.info](https://javascript.info/) <small>(🚀)</small>
 * [javascripttutorial](https://www.javascripttutorial.net/) <small>(✈️)</small>
 * ...
 </div><div>

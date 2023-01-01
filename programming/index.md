@@ -310,6 +310,7 @@ Websites that I found, but never used yet.
 * [learnfromsteph](https://learnfromsteph.dev/) <small>(???)</small>
 * [egghead.io](https://egghead.io/) <small>(???)</small>
 * [12daysofweb](https://12daysofweb.dev/) <small>(???)</small>
+* [moderncss](https://moderncss.dev/)+[smolcss](https://smolcss.dev/) <small>(👻, modern css)</small>
 
 **Blockchains focused**
 
@@ -398,6 +399,7 @@ Websites that I found, but never used yet.
 * [cheat-sheets.org](http://www.cheat-sheets.org/)
 * [codehints](https://codehints.io/) and [codingcheats](https://codingcheats.io/) <small>(cheatsheets)</small>
 * [htmlcheatsheet](https://htmlcheatsheet.com/)
+* [iLoveCodingOrg](https://github.com/iLoveCodingOrg)
 </div></div>
 
 <hr class="sep-both">

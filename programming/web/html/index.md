@@ -10,11 +10,11 @@ HTML primary, and probably only purpose, is to build web pages 🌍.
 
 **Where to learn?**
 
-* [W3Schools/HTML](https://www.w3schools.com/html/default.asp) <small>(⛪)</small>
 * [MDN/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) <small>(⛪)</small>
-* [HTML reference](https://htmlreference.io/) <small>(dead, 2019)</small>
+* [W3Schools/HTML](https://www.w3schools.com/html/default.asp) <small>(⛪)</small>
+* [HTML reference](https://htmlreference.io/) <small>(unmaintained since 2019)</small>
 * [HTML.com](https://html.com/) <small>(ok)</small>
-* [html-cheatsheet](https://github.com/iLoveCodingOrg/html-cheatsheet) <small>(😊)</small>
+* ...
 
 </div><div>
 
