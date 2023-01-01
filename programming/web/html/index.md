@@ -26,7 +26,7 @@ Since HTML5, similarly to CSS, HTML has become complete, and the versions were d
 
 **Some tools**
 
-* Syntax ✅: [W3C Validator](https://validator.w3.org/#validate_by_input)
+* Syntax ✅: [W3C nu](https://validator.w3.org/nu/) (in-development) or [W3C Validator](https://validator.w3.org/#validate_by_input) (old)
 * Guidelines ‍🎓 : [codeguide](https://codeguide.co/#html-syntax) or [W3Schools](https://www.w3schools.com/htmL/html5_syntax.asp) or [Google](https://google.github.io/styleguide/htmlcssguide.html)
 * Online editor 👻: [htmledit](https://htmledit.squarefree.com/)
 </div></div>
@@ -199,6 +199,8 @@ If an image cannot be loaded, `alt` will be shown instead.
 <img src="xxx.png" alt="xxx" width="48" height="48">
 ```
 
+➡️ See also `figure`/`figcaption`, and `picture`.
+
 <br>
 
 #### Tables
@@ -288,6 +290,22 @@ We can add some charm to our website without CSS.
 </div></div>
 
 ➡️ See also `var`, `samp`, `q`, `strong`, `del`...
+
+<br>
+
+#### Others
+
+* Use `<hr>` to create an horizontal separator.
+* Use `<br>` to create a blank line.
+* Use `<wbr>` to force a new line (in a long text).
+* Use `<nobr>xxx</nobr>` to not break a long text.
+* Use `details`/`summary` to create a dropdown
+* Use `<audio src="URL" controls></audio>` for audio
+* Use `<video src="URL" controls></video>`+`track` for videos
+* Use `dialog` for a dialog
+* Use `blockquote`/`q` to quote something.
+* Use `dl+dt+dd` for a definition
+* Use `cite` to reference something
 
 </div></div>
 
@@ -426,7 +444,6 @@ Stuff that I found, but never read/used yet.
 
 ```html
 <noscript></noscript>
-<nobr>xxx</nobr>
 <a download="xxx"></a>
 ```
 </div></div>

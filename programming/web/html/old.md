@@ -80,83 +80,9 @@ Note that a div is "invisible", meaning that the user won't see any difference b
 </div>
 ```
 
-* `dl+dt+dd`
-
-<br>
-
-<table class="table table-striped border-dark table-bordered">
-<thead>
-<tr>
-<th>Tag</th>
-<th>For what?</th>
-<th>Attributes</th>
-<th>Code</th>
-<th>Preview</th>
-</tr>
-</thead>
-<tbody>
-
-<!-- br -->
-<tr>
-<td><kbd>br</kbd></td>
-<td>Force a newline</td>
-<td></td>
-<td><code>&lt;span>This is&lt;/span>&lt;br>&lt;span>on 2 lines&lt;/span></code></td>
-<td><span>This is</span><br><span>on 2 lines</span></td>
-</tr>
-
-<!-- hr -->
-<tr>
-<td><kbd>hr</kbd></td>
-<td>Horizontal separator</td>
-<td></td>
-<td><code>&lt;hr></code></td>
-<td><hr></td>
-</tr>
-
-<tr><td colspan="5" class="text-center">
-Rarely used tags
-</td></tr>
-
-<!-- cite -->
-<tr>
-<td><kbd>cite</kbd></td>
-<td>referencing a work</td>
-<td></td>
-<td><code>This is a &lt;cite>reference&lt;/cite></code></td>
-<td>This is a <cite>reference</cite></td>
-</tr>
-
-<!-- quote -->
-<tr>
-<td><kbd>blockquote</kbd></td>
-<td>Quoting something</td>
-<td>You may add <code>cite="URL/to/source"</code>.</td>
-<td><code>&lt;blockquote>quote&lt;/blockquote></code></td>
-<td><blockquote>quote</blockquote></td>
-</tr>
-
-</tbody>
-</table>
-
 * [Code block and inline code](special/code.md) with code and pre
 * [Meta tags](special/meta.md)
 * [Icons](special/icons.md) 🚀
-
-<hr class="sr">
-
-## Global attributes
-
-This may be something that you won't need to know, at least until you aren't writing CSS/JavaScript. You can use these attributes on **any tag**
-
-* `id="value"`: give an ID to a tag, the value mustn't be used twice on a page
-* `class="a"` or `class="a b c ..."`: give classes to a tag
-* `hidden`: hide a component
-* `style="some CSS"`: inline style
-* you got inline JavaScript too (onclick, onload, ...)
-* `contenteditable="true" spellcheck="true"`: you can click and edit some HTML, as long as the HTML got these attributes
-
-You got [the list of Global Attributes on W3Schools](https://www.w3schools.com/TAGs/ref_standardattributes.asp) with some examples.
 
 <hr class="sr">
 
@@ -174,37 +100,6 @@ Notes and tags introduced in HTML 5 (and 5.1/5.2), that I haven't added before, 
 </thead>
 <tbody>
 
-<!-- figure -->
-<tr>
-<td>Adding a caption to an image.</td>
-<td><code>&lt;figure><br>
-  &lt;img src="URL" alt="Memorize logo" title="Memorize logo" <br> width="64" height="64"><br>
-  &lt;figcaption>Memorize logo&lt;/figcaption><br>
-&lt;/figure></code>
-</td>
-<td><figure>
-  <img src="https://cdn.jsdelivr.net/gh/memorize-code/memorize-references/.assets/icons/icon64.png" alt="Memorize logo" title="Memorize logo" width="64" height="64">
-  <figcaption>Memorize logo</figcaption>
-</figure>
-</td>
-</tr>
-
-<!-- dropdown -->
-<tr>
-<td>Adding a dropdown.</td>
-<td><code>&lt;details><br>
-  &lt;summary>Some summary&lt;/summary><br>
-  Some content<br>
-&lt;/details></code>
-</td>
-<td>
-<details>
-<summary>Some summary</summary>
-Some content
-</details>
-</td>
-</tr>
-
 <!-- time -->
 <tr>
 <td>Wrap a date/moment inside time.</td>
@@ -220,42 +115,12 @@ See [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Elemen
 <time datetime="2020-12-06T00:00:00">December 6</time>
 </td>
 </tr>
-
-<!-- audio -->
-<tr>
-<td>Audio</td>
-<td><code>&lt;audio src="URL" controls>&lt;/audio></code></td>
-<td>
-<audio src="" controls></audio>
-</td>
-</tr>
-
-<!-- video -->
-<tr>
-<td>Video</td>
-<td><code>&lt;video src="URL" controls>&lt;/video></code><br>
-You can add inside video, the tag track to add subtitles.<br>
-If you got multiples sources/format, then you may use the tag source instead of "src".
-</td>
-<td>
-<video src="" controls></video>
-</td>
-</tr>
 </tbody>
 </table>
 
 My notes
 
-* **HTML5.1**: you can add option inside the browser content-menu (`menu type="context"`)
-* **HTML5.1**: `srcset` for images allows us to give a batch of images for some resolutions. `sizes` allows us to resize the image according to the size of the screen.
-* **HTML5.1**: new tag `picture`, to show different pictures according to the resolution
-* **HTML5.1**: the rev attribute for links. You can give it "prev" or "next" if there is a relation previous page/next page with the current page
-* **HTML5.2**: new tag `dialog`, not supported everywhere,
-see [MDN doc](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog) and [can i use](https://caniuse.com/mdn-html_elements_dialog).
 * **HTML5.2**: multiples main are allowed, but only when can be visible (use hidden)
-
-Support of [HTML 5.1](https://w3c.github.io/test-results/html51/implementation-report).
-Support of [HTML 5.2](https://w3c.github.io/test-results/html52/implementation-report). As for [HTML 5.3](https://w3c.github.io/test-results/html53/implementation-report) (in progress).
 
 <hr class="sl">
 
