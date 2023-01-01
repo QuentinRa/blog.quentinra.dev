@@ -162,34 +162,19 @@ You got [the list of Global Attributes on W3Schools](https://www.w3schools.com/T
 
 ## Forms
 
-You will add a label to each field, so that the user knows what value the field is supposed to take.
+* [Notes about constraints](forms/constraints.md)
+
+## external fields
+
+If an input field is not inside a form, you may add `id="a_form_id"` to your form, then you simply have to add inside the field `form="a_form_id"`.
 
 ```html
-<form method="POST">
-    <!-- input name -->
-    <div>
-      <label for="name">Name</label>
-      <input id="name" name="name" type="text" placeholder="John Doe" value="">
-    </div>
-    <!-- submit -->
-    <button type="submit">submit</button>
-</form>
+<form id="example"></form>
+
+<button type="submit" form="example"></button>
+
+<input type="text" form="example">
 ```
-
-Then, we are usually making **one div per field**. Each div is made of 
-
-* a **label**, with an attribute "for" referring to the ID of a field
-  * clicking on the label will focus the field
-  * the message inside the label is something describing the field
-* a **field**, it can be an input, a textarea, a select, etc.
-  * the ID must match the one on the label
-  * you must add a name for the server to know what's this value
-  * the value is what will be sent to the server
-
-* [Notes about label](forms/label.md)
-* [Notes about input](forms/input.md)
-* [Notes about constraints](forms/constraints.md)
-* [Notes about forms](forms/forms.md)
 
 <hr class="sr">
 

@@ -307,6 +307,8 @@ A form (`<form>`) is a group of input elements (`<input>`, `<textarea>`...). You
 
 ➡️ GET is used for searches/..., while POST is used for logins/...
 
+➡️ See also `fieldset` and `legend` for decorations.
+
 <br>
 
 #### Action
@@ -340,17 +342,43 @@ Any button inside a form will submit the whole form.
 ```
 </div><div>
 
+#### Input
+
+An `input` field has a `type` which could be `text`, `date`, `password`, `tel`, `range`, `checkbox`, `radio`, `number`, `email`...
+
+```html
+<input type="text" name="xxx">
+<!-- many useful attributes -->
+<input type="text" name="xxx" id="yyy" value="default value"
+       required placeholder="text shown when empty" >
+```
+
+➡️ For checkbox, you can use the property `checked`.
+
+➡️ For radio buttons, every input field **must have the same name**.
+
 #### TextArea
 
 Any button inside a form will submit the whole form.
 
 ```html
-<textarea>simple text area</textarea>
+<textarea name="xxx">simple text area</textarea>
 <!-- many useful attributes -->
-<textarea name="xxx" minlength="50" maxlength="500" required 
-          id="id" rows="10" cols="50" 
-          placeholder="text shown if empty"
->some text</textarea>
+<textarea name="xxx" rows="10" cols="50" required 
+          id="yyy" minlength="50" maxlength="500"
+          placeholder="text shown when empty"
+></textarea>
+```
+
+#### Labels 👑
+
+Labels are used to associate a text with an input field. When clicking on the text, the matching input field is automatically focused.
+
+```html
+<label>email: <input type="email"></label>
+<!-- OR -->
+<label for="email">email:</label>
+<input id="email" type="text">
 ```
 </div></div>
 
