@@ -14,6 +14,7 @@ HTML primary, and probably only purpose, is to build web pages 🌍.
 * [MDN/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) <small>(⛪)</small>
 * [HTML reference](https://htmlreference.io/) <small>(dead, 2019)</small>
 * [HTML.com](https://html.com/) <small>(ok)</small>
+* [html-cheatsheet](https://github.com/iLoveCodingOrg/html-cheatsheet) <small>(😊)</small>
 
 </div><div>
 
@@ -301,10 +302,12 @@ Stuff that I found, but never read/used yet.
 * aria (`aria-label`)
 * role attribute (`role="search"/role="tab"`)
 * mhtml
+* [Introducing HTML5](https://ptgmedia.pearsoncmg.com/images/9780321784421/samplepages/0321784421.pdf)
 </div><div>
 
 ```html
 <noscript></noscript>
+<nobr>xxx</nobr>
+<a download="xxx"></a>
 ```
-
 </div></div>

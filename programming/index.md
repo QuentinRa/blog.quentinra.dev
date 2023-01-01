@@ -173,7 +173,7 @@ Google
 * Nginx
 * Lua
 * Lisp
-* Rust
+* Rust ([crates](https://crates.io/))
 * Perl
 * Heredoc
 
@@ -183,7 +183,6 @@ YWFhYQ==
 EOF
 ```
 
-* Rust
 * Go ([examples](https://golangexample.com/))
 * Groovy
 * Swift ([pods](https://cocoapods.org/))
