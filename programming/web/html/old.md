@@ -38,16 +38,6 @@ Create a file `index.html` (ex: with the content above), drag and drop it inside
 You can also try [an online editor such as this one](https://dev.codehs.com/editor/new/html). If you want something cleaner (using a server, http/https instead of file), then refer to the PHP course (this isn't complicated).
 </details>
 
-<hr class="sl">
-
-## Tags
-
-<div class="row row-cols-md-2"><div>
-
-The main idea when writing HTML is that you are going to write some tags, such as **p** for a paragraph or **a** for a link. Then you can add some attributes, such as `href` for a link that is the URL the link will be pointing to.
-</div><div>
-</div></div>
-
 <hr class="sr">
 
 ## HTML5
@@ -187,9 +177,7 @@ Rarely used tags
 </tbody>
 </table>
 
-* [Lists](special/lists.md): with ol/ul and li
 * [Code block and inline code](special/code.md) with code and pre
-* [Tables](special/tables.md) using table
 * [Meta tags](special/meta.md)
 * [Icons](special/icons.md) 🚀
 

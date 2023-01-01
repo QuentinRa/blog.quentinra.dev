@@ -56,7 +56,7 @@ A HTML file (`.html`) is a tree of **tags** (`html`, `head`, `body`...).
 Notes
 
 * 👉 Tags are case-insensitive (`head` or `HEAD` or `hEAd`...)
-* 👉 Tags can have **properties** (`lang="en"`...)
+* 👉 Tags can have **attributes** (`lang="en"`...)
   * 👉 Properties are case-insensitive (`lang` or `LANG`...)
   * 👉 Quotes are optional (`lang="en"` or `lang=en`)
   * 👉 Quotes can be single quotes (`lang="en"` or `lang='en'`)
@@ -148,6 +148,40 @@ Use `<a>Text</a>` to create a link. The user will see `Text`.
 <a href="..." target="_blank">Open in a new tab</a>
 ```
 
+<br>
+
+#### Lists
+
+You can make ordered lists (`1.`, `2.`...) with `<ol>`, and unordered lists with `<ul>`. One entry of the list is inside a tag `<li>`.
+
+<div class="row row-cols-md-2"><div>
+
+```html
+<ol>
+  <li>one</li>
+  <li>two
+    <ul>
+      <li>xxx</li>
+      <li>yyy</li>
+    </ul>
+  </li>
+</ol>
+```
+</div><div class="align-self-center">
+
+<ol>
+  <li>one</li>
+  <li>two
+    <ul>
+      <li>xxx</li>
+      <li>yyy</li>
+    </ul>
+  </li>
+</ol>
+</div></div>
+
+➡️ You can change the ordered starting value with `start="n"`, and the kind of value used, using the CSS attribute `list-style-type`.
+
 </div><div>
 
 #### Images
@@ -159,6 +193,58 @@ If an image cannot be loaded, `alt` will be shown instead.
 <img src="xxx.png" alt="xxx" title="shown on hover">
 <img src="xxx.png" alt="xxx" width="48" height="48">
 ```
+
+<br>
+
+#### Tables
+
+Use <code>table</code>, <code>tr</code>, <code>th/td</code> to make tables.
+
+<details class=" -n border-0">
+<summary>Click to see the code<p></p>
+
+<table>
+<thead>
+<tr><th>column1 title</th><th>column2 title</th></tr>
+</thead>
+<tbody>
+<tr><td>line-1 col-1</td><td>line-1 col-2</td></tr>
+<tr><td>line-2 col-1</td><td>line-2 col-2</td></tr>
+<tr><td colspan="2">line-3</td></tr>
+</tbody>
+</table>
+</summary><br>
+
+➡️ `thead`/`tbody` were added in HTML5, and are optional. See also `<tfoot>`, and `<caption>`. 
+
+```html
+<table class="table table-bordered border-dark">
+    <!-- header of your table / tr + th -->
+    <thead>
+        <tr>
+            <th>column1 title</th>
+            <th>column2 title</th>
+        </tr>
+    </thead>
+    <!-- body of your table / tr + td -->
+    <tbody>
+        <!-- tr = a line -->
+        <tr>
+            <td>line-1 col-1</td>
+            <td>line-1 col-2</td>
+        </tr>
+        <tr>
+            <td>line-2 col-1</td>
+            <td>line-2 col-2</td>
+        </tr>
+        <tr>
+          <!-- multiple columns -->
+          <td colspan="2">line-3</td>
+        </tr>
+    </tbody>
+</table>
+```
+</details>
 
 <br>
 
