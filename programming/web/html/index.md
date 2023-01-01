@@ -340,6 +340,18 @@ Any button inside a form will submit the whole form.
 <button type="button">won't submit the form</button>
 <button type="reset">reset the form</button>
 ```
+
+<br>
+
+#### External input fields
+
+It's possible to have input fields outside the tag `<form>`. In such case, you must add in `id` to the form, and the input must reference it.
+
+```html
+<form id="xxx"></form>
+<input form="xxx"> <!-- reference id="xxx" -->
+```
+
 </div><div>
 
 #### Input
@@ -349,13 +361,14 @@ An `input` field has a `type` which could be `text`, `date`, `password`, `tel`, 
 ```html
 <input type="text" name="xxx">
 <!-- many useful attributes -->
-<input type="text" name="xxx" id="yyy" value="default value"
-       required placeholder="text shown when empty" >
+<input type="text" name="xxx" value="default value">
 ```
 
 ➡️ For checkbox, you can use the property `checked`.
 
 ➡️ For radio buttons, every input field **must have the same name**.
+
+<br>
 
 #### TextArea
 
@@ -363,12 +376,10 @@ Any button inside a form will submit the whole form.
 
 ```html
 <textarea name="xxx">simple text area</textarea>
-<!-- many useful attributes -->
-<textarea name="xxx" rows="10" cols="50" required 
-          id="yyy" minlength="50" maxlength="500"
-          placeholder="text shown when empty"
-></textarea>
+<textarea name="xxx" rows="10" cols="50"></textarea>
 ```
+
+<br>
 
 #### Labels 👑
 
@@ -379,6 +390,22 @@ Labels are used to associate a text with an input field. When clicking on the te
 <!-- OR -->
 <label for="email">email:</label>
 <input id="email" type="text">
+```
+
+<br>
+
+#### Input elements attributes
+
+These can be used on any input elements such as `<input>`.
+
+```html
+<input required> <!-- must have a value -->
+<input hidden> <!-- hidden -->
+<input disabled> <!-- cannot be edited -->
+<input placeholder="shown when empty">
+<input pattern="[a-z]+"> <!-- pattern to match -->
+<input min="x" max="y"> <!-- range -->
+<input minlength="z" maxlength="t"> <!-- ... -->
 ```
 </div></div>
 

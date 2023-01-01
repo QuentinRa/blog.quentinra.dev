@@ -158,24 +158,6 @@ This may be something that you won't need to know, at least until you aren't wri
 
 You got [the list of Global Attributes on W3Schools](https://www.w3schools.com/TAGs/ref_standardattributes.asp) with some examples.
 
-<hr class="sl">
-
-## Forms
-
-* [Notes about constraints](forms/constraints.md)
-
-## external fields
-
-If an input field is not inside a form, you may add `id="a_form_id"` to your form, then you simply have to add inside the field `form="a_form_id"`.
-
-```html
-<form id="example"></form>
-
-<button type="submit" form="example"></button>
-
-<input type="text" form="example">
-```
-
 <hr class="sr">
 
 ## Features of HTML5, 5.1, and 5.2
