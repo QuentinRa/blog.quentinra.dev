@@ -29,6 +29,7 @@ URLs
 * `href=#`
 * `href=#id`
 * `mailto:email`
+* `index.html` / how to load an HTML file
 
 SEO
 

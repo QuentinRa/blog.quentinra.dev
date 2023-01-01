@@ -112,6 +112,8 @@ Google
 * [haml](https://haml.info/)
 * [mustache](https://github.com/mustache/mustache)
 * [dustjs](https://github.com/linkedin/dustjs)
+* [freehtml5](https://freehtml5.co/)
+* [html5boilerplate](https://html5boilerplate.com/)
 
 **Editors**
 
@@ -123,6 +125,7 @@ Google
 * [jsfiddle](https://jsfiddle.net/) (???)
 * [jseditor](https://jseditor.io/)
 * [playcode](https://playcode.io/)
+* [codehs](https://dev.codehs.com/)
 
 **Documentation**
 
@@ -228,7 +231,6 @@ Websites that I found, but never used yet.
 * [opensource.com](https://opensource.com/) <small>(community-based?)</small>
 * [substack](https://substack.com/) <small>(community-based, not IT-focused)</small>
 * [leanpub](https://leanpub.com/) <small>(books, paid)</small>
-* [codehints](https://codehints.io/) and [codingcheats](https://codingcheats.io/) <small>(cheatsheets)</small>
 * [dev.to](https://dev.to/) <small>(community-based?)</small>
 * [toolsqa](https://www.toolsqa.com/) <small>(tools)</small>
 * [bitdegree/learn](https://www.bitdegree.org/learn/) <small>(many)</small>
@@ -365,6 +367,8 @@ Websites that I found, but never used yet.
 * [essential-dev-skills](https://essential-dev-skills.com/) <small>(french)</small>
 * [jamesbachini](https://jamesbachini.com/) <small>(???)</small>
 * [upwork](https://www.upwork.com/resources/) <small>(???)</small>
+* [ppawar](https://ppawar.github.io/) <small>(???)</small>
+* [makeawebsitehub](https://makeawebsitehub.com/blog/) <small>(???)</small>
 
 **YouTube**
 
@@ -393,6 +397,8 @@ Websites that I found, but never used yet.
 
 * [devhints.io](https://devhints.io/)
 * [cheat-sheets.org](http://www.cheat-sheets.org/)
+* [codehints](https://codehints.io/) and [codingcheats](https://codingcheats.io/) <small>(cheatsheets)</small>
+* [htmlcheatsheet](https://htmlcheatsheet.com/)
 </div></div>
 
 <hr class="sep-both">

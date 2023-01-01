@@ -1,69 +1,31 @@
 # Learn HTML5
 
-To summarize what was written in the WEB course, 
-
-* a browser and a server are communicating using the protocol HTTP (or HTTPS=HTTP Secure)
-* when you are visiting a page <small>(ex: https://duckduckgo.com)</small>
-* you are asking the server to return the HTML for this page
-* **usually**, if the URL isn't ending with an HTML file
-  * then either the server is using a router
-  * or, the file `index.html` (or `index.php`...) is loaded
-
-> For instance, for DuckDuckGo, `https://duckduckgo.com` is the same as `https://duckduckgo.com/index.html`.
-
 ```html
 <head>
-    <title>title of your website</title>
-    <!-- UTF-8 -->
     <meta charset="utf-8">
-    <!-- RESPONSIVE (responsive CSS) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>title of your website</title>
 </head>
-<body>
-    <!-- your code below -->
-    <h1>A big title here</h1>
-    <p>Some text here</p>
-    <!-- image -->
-    <img src="https://cdn.jsdelivr.net/gh/memorize-code/memorize-references/.assets/icons/icon64.png" alt="an image">
-    <!-- link -->
-    <a href="https://memorize.be/" target="_blank" rel="noopener">Link to memorize.be</a>
-</body>
 ```
 
-<details class="details-n">
-<summary>How do I "run" HTML code?</summary>
-
-Create a file `index.html` (ex: with the content above), drag and drop it inside a browser, and you should see your page. You don't need a server as your code is fully in HTML (no PHP). You can change the name of the file, but the main file of your website must be called `index`. Your browser isn't "executing" code, it's simply rendering the code it received <small>(the URL is a sort of `file://path/to/a/file.html`, and as we learned before, if there is no file in the URL, and an index.html exists, then it's loaded instead)</small>.
-
-You can also try [an online editor such as this one](https://dev.codehs.com/editor/new/html). If you want something cleaner (using a server, http/https instead of file), then refer to the PHP course (this isn't complicated).
-</details>
-
-<hr class="sr">
-
-## HTML5
-
-<details class="pb-3">
-<summary>We need to improve the structure of the body. Since HTML5, you can use [...]</summary>
+>We need to improve the structure of the body. Since HTML5, you can use [...]
 
 * `header`: the top of your website, it may contain the navbar, you can put one in each aside/section
 * `nav`: for your navbar
 * `section`: a section of your website <small>(you can have many of them)</small>
 * `aside`: some content aside from your main content in your section <small>(ex: your contact information etc.)</small>
 * `footer`: the footer of your website
-</details>
 
-<details class="pb-3">
-<summary>These two are less well-know, but you should learn them too [...]</summary>
+These two are less well-know, but you should learn them too [...]
 
 * `main`: the main content of your page <small>(one per page)</small>
 * `article`: a part of the website that may be extracted from the website <small>(you may split a page into multiples articles with a header, a footer, and some sections)</small>
 * `address`: to wrap your contact information
-</details>
 
-> I used dropdowns to make this section more readable. To summarize
-> * split the body into `section`(s)/`aside`(s)/`header`/`nav`/`footer`
-> * wrap sub-sections into `section`, articles into `article`, the main content into `main`
-> * you may add header/footer to sections/articles/main
+I used dropdowns to make this section more readable. To summarize
+
+* split the body into `section`(s)/`aside`(s)/`header`/`nav`/`footer`
+* wrap sub-sections into `section`, articles into `article`, the main content into `main`
+* you may add header/footer to sections/articles/main
 
 <details>
 <summary>Example (image)</summary>
@@ -374,39 +336,3 @@ Support of [HTML 5.2](https://w3c.github.io/test-results/html52/implementation-r
 <!-- HTML redirect -->
 <meta http-equiv="refresh" content="0; url=URL">
 ```
-
-<hr class="sr">
-
-## External resources
-
-Guidelines
-
-* [codeguide.co](https://codeguide.co/#html-syntax)
-* [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
-* [W3 Guidelines](https://www.w3schools.com/htmL/html5_syntax.asp)
-
-CheatSheet
-
-* [htmlreference](https://htmlreference.io/) 😍
-* [MDN reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) 😍
-* [htmlcheatsheet](https://htmlcheatsheet.com/) 😯
-* [htmlcheatsheet (PDF)](https://htmlcheatsheet.com/HTML-Cheat-Sheet.pdf), but it got cut quite a bit 😂
-* [Pravin Pawar's CheatSheet](https://ppawar.github.io/Spring2020/CSE102-S20/cheatsheets/CSE102-CheatSheetHTML.pdf)
-* [Jamie Spencer's CheatSheet](https://makeawebsitehub.com/wp-content/uploads/2015/06/HTML5-Mega-Cheat-Sheet-A4-Print-ready.pdf)
-
-<hr class="sl">
-
-## Sources
-
-* [HTML - W3Schools](https://www.w3schools.com/html/default.asp)
-* [HTML - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML)
-* [HTML Guidelines](https://codeguide.co/#html-syntax)
-* [HTML - reference](https://htmlreference.io/)
-* [HTML.com](https://html.com/)
-* [HTML - specification](https://html.spec.whatwg.org/multipage/semantics.html)
-
-Templates/Tools/?
-
-* [Bootstrap studio](https://bootstrapstudio.io/)
-* [freehtml5](https://freehtml5.co/)
-* [boilerplate](https://html5boilerplate.com/)

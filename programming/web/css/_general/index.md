@@ -28,7 +28,7 @@ Cascading Style Sheets (CSS) are used to style and animate
 **Some CSS tools**
 
 * Syntax ✅: [W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
-* Guidelines ‍🎓 : [cssguidelines](https://cssguidelin.es/) or [codeguide](https://codeguide.co/#css-syntax)
+* Guidelines ‍🎓 : [cssguidelines](https://cssguidelin.es/) or [codeguide](https://codeguide.co/#css-syntax) or [Google](https://google.github.io/styleguide/htmlcssguide.html#CSS)
 * Minifier 🐲: [css-minifier](https://css-minifier.com/) or [csso](https://github.com/css/csso)/[cli](https://github.com/css/csso-cli)/[JB](https://www.jetbrains.com/help/phpstorm/compressing-css.html)
 * Lint 🧹: [stylelint](https://github.com/stylelint/stylelint) and/or [unsupported browser features linter](https://github.com/ismay/stylelint-no-unsupported-browser-features)
 </div></div>

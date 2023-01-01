@@ -12,6 +12,8 @@ HTML primary, and probably only purpose, is to build web pages 🌍.
 
 * [W3Schools/HTML](https://www.w3schools.com/html/default.asp) <small>(⛪)</small>
 * [MDN/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) <small>(⛪)</small>
+* [HTML reference](https://htmlreference.io/) <small>(dead, 2019)</small>
+* [HTML.com](https://html.com/) <small>(ok)</small>
 
 </div><div>
 
@@ -24,6 +26,8 @@ Since HTML5, similarly to CSS, HTML has become complete, and the versions were d
 **Some tools**
 
 * Syntax ✅: [W3C Validator](https://validator.w3.org/#validate_by_input)
+* Guidelines ‍🎓 : [codeguide](https://codeguide.co/#html-syntax) or [W3Schools](https://www.w3schools.com/htmL/html5_syntax.asp) or [Google](https://google.github.io/styleguide/htmlcssguide.html)
+* Online editor 👻: [htmledit](https://htmledit.squarefree.com/)
 </div></div>
 
 <hr class="sep-both">
@@ -297,7 +301,6 @@ Stuff that I found, but never read/used yet.
 * aria (`aria-label`)
 * role attribute (`role="search"/role="tab"`)
 * mhtml
-* [htmledit](https://htmledit.squarefree.com/)
 </div><div>
 
 ```html
