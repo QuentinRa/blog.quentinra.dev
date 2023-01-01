@@ -32,6 +32,7 @@ Some APIs <small>(search for APIs on [rapidapi](https://rapidapi.com/hub) 🚀)<
 
 Services (APIs)
 
+* [formspree](https://formspree.io/) <small>(forms)</small>
 * [algolia](https://www.algolia.com/) <small>(search)</small>
 * [simpleen](https://simpleen.io/) <small>(localization)</small>
 * [courier](https://www.courier.com/) or [customer](https://customer.io/) <small>(push notifications, SMS, emails...)</small>

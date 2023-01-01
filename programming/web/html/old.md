@@ -162,12 +162,7 @@ You got [the list of Global Attributes on W3Schools](https://www.w3schools.com/T
 
 ## Forms
 
-Forms aren't something that you can use without a server, but at least since they are rendered using HTML, then you can show one on your website. I haven't tested, but you may be able to use [formspree](https://formspree.io/) to handle your forms (without PHP).
-
-Basically, you will enter data into fields (such as a name in a textField). You will give a name to each field, so that when the form is submitted, the server knows what this value is supposed to be. You will add a label to each field, so that the user knows what value the field is supposed to take.
-
-<details class="border-dark border px-3 py-2">
-<summary>Example (code)</summary>
+You will add a label to each field, so that the user knows what value the field is supposed to take.
 
 ```html
 <form method="POST">
@@ -180,25 +175,6 @@ Basically, you will enter data into fields (such as a name in a textField). You 
     <button type="submit">submit</button>
 </form>
 ```
-</details>
-<details class="border-dark border px-3 py-2">
-<summary>Example (preview)</summary>
-
-<form method="POST" class="pt-3">
-    <!-- input name -->
-    <div>
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" placeholder="John Doe" value="">
-    </div>
-    <!-- submit -->
-    <button type="button" class="mt-2" onclick="alert('Nice try 😂, but this form isn\'t working')">submit</button>
-</form>
-</details>
-<details class="mb-3 border-dark border px-3 py-2">
-<summary>Example (explanation)</summary>
-<br>
-
-**First**, if you don't know what is POST (or GET), then you MUST read the section about the HTTP protocol in the Web course.
 
 Then, we are usually making **one div per field**. Each div is made of 
 
@@ -210,16 +186,10 @@ Then, we are usually making **one div per field**. Each div is made of
   * you must add a name for the server to know what's this value
   * the value is what will be sent to the server
 
-Finally, you add either a button submit (to send the form) and/or a button reset to reset the form.
-</details>
-
 * [Notes about label](forms/label.md)
 * [Notes about input](forms/input.md)
 * [Notes about constraints](forms/constraints.md)
 * [Notes about forms](forms/forms.md)
-* [Notes about submit/reset](forms/buttons.md)
-* [Notes about textarea](forms/textarea.md)
-* Check [w3schools](https://www.w3schools.com/tags/tag_select.asp) or [mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) to learn more about the select tag.
 
 <hr class="sr">
 

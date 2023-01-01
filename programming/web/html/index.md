@@ -293,6 +293,69 @@ We can add some charm to our website without CSS.
 
 <hr class="sep-both">
 
+## Forms
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+A form (`<form>`) is a group of input elements (`<input>`, `<textarea>`...). You can use either **GET** or **POST** [HTTP methods](/it/networking/protocols/index.md#-http---80-tcp).
+
+```html
+<form method="POST" action="https://example.com/login.php">
+    <!-- ... -->
+</form>
+```
+
+➡️ GET is used for searches/..., while POST is used for logins/...
+
+<br>
+
+#### Action
+
+The attribute `action` is where the data should be sent. You will need a server <small>(PHP/Node server, an API...)</small> to handle the submission.
+
+Each input field must have a unique **name**. This name is what the server will receive, along the value.
+
+<div class="row row-cols-md-2"><div>
+
+```html
+<input name="username" value="toto" />
+<input name="password" value="toto" />
+```
+</div><div class="align-self-center">
+
+What the server receives: `username=toto&password=toto`.
+</div></div>
+
+<br>
+
+#### Submit/Reset a form
+
+Any button inside a form will submit the whole form.
+
+```html
+<button>submit the form</button>
+<button type="submit">submit the form</button>
+<button type="button">won't submit the form</button>
+<button type="reset">reset the form</button>
+```
+</div><div>
+
+#### TextArea
+
+Any button inside a form will submit the whole form.
+
+```html
+<textarea>simple text area</textarea>
+<!-- many useful attributes -->
+<textarea name="xxx" minlength="50" maxlength="500" required 
+          id="id" rows="10" cols="50" 
+          placeholder="text shown if empty"
+>some text</textarea>
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -303,6 +366,7 @@ Stuff that I found, but never read/used yet.
 * role attribute (`role="search"/role="tab"`)
 * mhtml
 * [Introducing HTML5](https://ptgmedia.pearsoncmg.com/images/9780321784421/samplepages/0321784421.pdf)
+* Select tag
 </div><div>
 
 ```html
