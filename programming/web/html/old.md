@@ -45,28 +45,12 @@ You can also try [an online editor such as this one](https://dev.codehs.com/edit
 <div class="row row-cols-md-2"><div>
 
 The main idea when writing HTML is that you are going to write some tags, such as **p** for a paragraph or **a** for a link. Then you can add some attributes, such as `href` for a link that is the URL the link will be pointing to.
-
-You will have two types of tags, tags like `<img ...>` called **auto-closing tags** because you don't write `<img></img>`, as you would with **non-auto-closing tags** such as `<a ...>this is a link</a>`.
-
-You may also note that tags such as **p** are called blocking tags, because unless you use CSS, the tags after **p** will be rendered starting from a newline. To be accurate, "p", "div", etc. are **block-level elements** while "a", "span", etc. are called **inline elements**. A block element is usually storing a bunch of inline elements. I'm usually calling those "containers".
 </div><div>
-
-* you may write `<img ...></img>` or `<img ... />` (without the /), but we are usually writing `<img ...>` for auto-closable tags.
-* some tags are optional (such as `</li>` or `</body>`, but you shouldn't omit/forget them)
 </div></div>
 
 <hr class="sr">
 
 ## HTML5
-
-<details class="pb-3">
-<summary>The usual way to structure a website is the following [...]</summary>
-
-The first line is `<!doctype html>` (or DOCTYPE), and the code is inside a tag called html `<html lang="en"> ... </html>`.  To make things cleaner, we are splitting the content of "html" into
-
-* `head` (metadata): we are defining here the properties of your website such as the title, the icon, linking the CSS, etc.
-* `body` (content): this is the real content of your website
-</details>
 
 <details class="pb-3">
 <summary>We need to improve the structure of the body. Since HTML5, you can use [...]</summary>
@@ -87,8 +71,6 @@ The first line is `<!doctype html>` (or DOCTYPE), and the code is inside a tag c
 </details>
 
 > I used dropdowns to make this section more readable. To summarize
-> * the first line is `doctype`, followed by a `html`
-> * split the html into `head`/`body`
 > * split the body into `section`(s)/`aside`(s)/`header`/`nav`/`footer`
 > * wrap sub-sections into `section`, articles into `article`, the main content into `main`
 > * you may add header/footer to sections/articles/main
@@ -134,10 +116,6 @@ The first line is `<!doctype html>` (or DOCTYPE), and the code is inside a tag c
 
 These are the tags that I'm using the most, and the tags that you must know, with their attributes.
 
-<!--
-I can't use Markdown tables because the content is too complex 😭, it may the code more unreadable.
--->
-
 <table class="table border-dark table-striped table-bordered">
 <thead>
 <tr>
@@ -149,46 +127,6 @@ I can't use Markdown tables because the content is too complex 😭, it may the 
 </tr>
 </thead>
 <tbody>
-
-<tr class="text-center">
-<td colspan="5">TITLES</td>
-</tr>
-
-<!-- h1 -->
-<tr>
-<td><kbd>h1</kbd></td>
-<td>title of your page, <br> one per page</td>
-<td></td>
-<td><code>&lt;h1>title&lt;/h1></code></td>
-<td><h6 class="h1">title</h6></td>
-</tr>
-
-<!-- h2 -->
-<tr>
-<td><kbd>h2</kbd></td>
-<td>big title</td>
-<td></td>
-<td><code>&lt;h2>title&lt;/h2></code></td>
-<td><h6 class="h2">title</h6></td>
-</tr>
-
-<!-- h3-h5 -->
-<tr>
-<td><kbd>h3</kbd> to <kbd>h5</kbd></td>
-<td>...</td>
-<td></td>
-<td>...</td>
-<td>...</td>
-</tr>
-
-<!-- h6 -->
-<tr>
-<td><kbd>h6</kbd></td>
-<td>small title</td>
-<td></td>
-<td><code>&lt;h6>title&lt;/h6></code></td>
-<td><h6 class="h6">title</h6></td>
-</tr>
 
 <tr class="text-center">
 <td colspan="5">TEXT</td>
@@ -210,15 +148,6 @@ I can't use Markdown tables because the content is too complex 😭, it may the 
 <td></td>
 <td><code>&lt;span>some text&lt;/span></code></td>
 <td><span>some text</span></td>
-</tr>
-
-<!-- comment -->
-<tr>
-<td></td>
-<td>a comment</td>
-<td></td>
-<td><code>&lt;!-- a comment here --></code></td>
-<td>you can't see it 😅</td>
 </tr>
 
 <tr class="text-center">

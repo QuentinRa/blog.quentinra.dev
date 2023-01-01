@@ -68,6 +68,34 @@ Notes
 
 <hr class="sep-both">
 
+## HTML tags
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+HTML tags are divided in 3 categories
+
+* 🌍 Normal HTML tags: `<a></a>`, `<span></span>`...
+* 🎹 Auto-closing tags: `<img>`, `<input>`, `<br>`...
+* 🗃️ Blocking tags: `<p></p>`, `<div></div>`, `<h1></h1>`...
+
+👑 To be correct, non-blocking tags are called **inline elements**, while blocking tags are called **block-level elements**, and they are usually grouping a bunch of inline elements.
+
+</div><div>
+
+➡️ For auto-closing tags, `<img>` or `<img />` is the same.
+
+➡️ The browser will try to display as many tags as possible on the **same line**. You can use `<br>` to force a line-break. For **blocking tags**, by default, they will take a whole line for themselves.
+
+```html
+<p>one line for this one</p>
+<span>This one,</span>
+<span>this one,</span>
+<a href="#">and this one, are on the same line.</a>
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
