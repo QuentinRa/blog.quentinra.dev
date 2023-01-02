@@ -21,6 +21,13 @@
               "desc": "...",
               "icon": "<i class=\"bi bi-server\"></i>",
               "hidden": false
+            },
+            {
+              "tag": "web/_general/extensions/index.md",
+              "name": "Browser Extensions",
+              "desc": "...",
+              "icon": null,
+              "hidden": false
             }
           ],
           "\uD83D\uDD2D HTML \uD83D\uDD2D": [
