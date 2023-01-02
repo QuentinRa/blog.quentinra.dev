@@ -1,5 +1,22 @@
 # Browser plugins/extensions
 
+<div class="row row-cols-md-2"><div>
+
+You can add extensions/plugins to your browser, for instance, [DarkReader](https://darkreader.org/) or [uBlock](https://ublockorigin.com/). It's quite easy to write your own! 🚀
+
+* ➡️ You will use [JavaScript](/programming/web/javascript/_general/index.md), and access the [DOM](/programming/web/javascript/_general/dom.md)
+* ➡️ You will use [HTML](/programming/web/html/index.md) if you want to show a popup with some buttons/... when the user clicks on your extension.
+* 👻  There are new functions to access features like Bookmarks/...
+</div><div>
+
+**Where to add/enable extensions?**
+
+* **Edge**: Go to `edge://extensions/`, enable `Developer mode`, click on `Load unpacked`, and select the folder with your `manifest.json`.
+* ...
+
+➡️ You need to **reload**  an extension, **manually**, each time you changed something. See also [chrome-extensions-reloader](https://github.com/arikw/chrome-extensions-reloader) (👻).
+</div></div>
+
 <hr class="sep-both">
 
 ## Introduction: Hello, World
