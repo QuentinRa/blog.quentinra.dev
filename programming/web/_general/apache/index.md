@@ -29,7 +29,7 @@ $ sudo apt install apache2
 
 <div class="row row-cols-md-2"><div>
 
-Change the default password of the provided user.
+Change the password of the user provided by the hosting provider.
 
 ```
 $ sudo passwd xxx
@@ -131,9 +131,11 @@ $ sudo chmod -R 755 /var/www/xxx/
 
 <div class="row row-cols-md-2"><div>
 
+See also [http2.pro](https://http2.pro/doc/Apache).
+
 First, you must indicate that your server supports HTTP2, or HTTP1.1 as fallback. You must add this in your virtual hosts `.conf`.
 
-```
+```apacheconf
 Protocols h2 http/1.1
 ```
 
@@ -159,13 +161,45 @@ $ sudo systemctl start apache2
 
 <hr class="sep-both">
 
+## Apache .htaccess
+
+<div class="row row-cols-md-2"><div>
+
+This is a file used to edit the virtual host configuration locally. Simply create a file `.htaccess` with some instructions inside.
+
+A `.htaccess` is applied to a directory, and it's **subdirectories**. Every `.htaccess` in the path to the resource is applied. ➡️ In case of conflit, the nearest/latest instruction is used.
+
+</div><div>
+
+#### Example: ask for basic authentication
+
+The server will ask for a username, and a password.
+
+```apacheconf
+AuthUserFile /path/to/some/.htpasswd
+AuthName "Protected Files"
+AuthType Basic
+# username allowed: xxx
+Require user xxx
+```
+
+And you need an additional file: `/path/to/some/.htpasswd`
+
+```apacheconf
+# username:hashed_password (htpasswd command?)
+xxx:$apr1$8KSS.TIW$qWKI88AFeMSl3iemCuUCk/
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-```
+```apacheconf
 AllowOverride All
 ```
 </div><div>
