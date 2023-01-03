@@ -20,6 +20,7 @@ You can add extensions/plugins to your browser, for instance, [DarkReader](https
 **Where to add/enable extensions?**
 
 * **Edge**: Go to `edge://extensions/`, enable `Developer mode`, click on `Load unpacked`, and select the folder with your `manifest.json`.
+* **Chrome**: Go to `chrome://extensions`, enable `Developer mode`, click on `Load unpacked`, and select the folder with your `manifest.json`.
 
 </div></div>
 
@@ -75,7 +76,37 @@ console.log("Hello, World")
 
 <hr class="sep-both">
 
-### Manifest.json
+## Reloading an extension
+
+<div class="row row-cols-md-2"><div>
+
+You need to **reload**  an extension, **manually**, each time you changed
+
+* 👉️ The Manifest
+* 👉️ Any script <small>(+ refresh the page)</small>
+
+But, you don't need to if you only edited an HTML file.
+
+* Go to your plugin page
+* Use a `refresh`/`reload` button to reload your extension
+</div><div>
+
+Additional notes
+
+* ➡️ You can also see plugin errors from the plugin page
+* ➡️ Right-click on an extension in the toolbar, and use "Inspect" to open the console associated with `popup.html`
+
+To reload your extension "automatically", you may
+
+* Try [chrome-extensions-reloader](https://github.com/arikw/chrome-extensions-reloader) (👻)
+* Call `chrome.runtime.reload()` <small>(not available in a content_script)</small>.
+</div></div>
+
+<hr class="sep-both">
+
+## Manifest.json
+
+[See Manifest.json](https://developer.chrome.com/docs/extensions/mv3/manifest/)
 
 <div class="row row-cols-md-2"><div>
 
@@ -117,7 +148,8 @@ To show a popup when the user clicks on the plugin icon, use `action/default_pop
 ```json
 {
   "action": {
-    "default_popup": "popup/popup.html"
+    "default_popup": "popup/popup.html",
+	"default_icon": "icons/hello_world_16.png"
   }
 }
 ```
@@ -213,7 +245,7 @@ A predefined variable will allow you to access the browser.
 * 👉 On Chrome, the variable is called `chrome`
 * 👉 On Firefox, the variable is called `browser`
 
-➡️ The predefined variable for the browser will have more attributes when used in `background`.
+➡️ The predefined variable for the browser **won't have** many attributes when used in `content_scripts`.
 
 #### Access the current tab
 
@@ -258,21 +290,32 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* ⚠️ Chromium based browsers are using the variable `chrome`, while Firefox is using the variable `browser`. Be careful.️
-
-* ➡️ You need to **reload**  an extension, **manually**, each time you changed something. See also [chrome-extensions-reloader](https://github.com/arikw/chrome-extensions-reloader) (👻).
-
 * [Polyfill](https://github.com/mozilla/webextension-polyfill)
 
-```
-"homepage_url": "XXX",
+```json
+{
+  "homepage_url": "XXX",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "://*"
+  ],
+  "permissions": ["scripting", "activeTab", "tabGroups"],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+U",
+        "mac": "Command+U"
+      }
+    }
+  }
+}
 ```
 </div><div>
 
-```
-chrome.browserAction.onClicked.addListener((tab) => {
-  chrome.runtime.reload();
-});
+```javascript
+chrome.browserAction.onClicked.addListener((tab) => {});
 
 chrome.tabs.create({ url: "URL" })
 
