@@ -1,6 +1,6 @@
 # Enhancements (draft)
 
-*😵 A list of random notes, an update+cleanup is required... 😵*
+*😵 A list of old+random notes, an update+cleanup is required... 😵*
 
 <hr class="sep-both">
 
@@ -112,4 +112,34 @@ Once you created a sitemap, you have to share it, as explained [here](https://ah
 </urlset>
 ```
 </details>
+</div></div>
+
+<hr class="sep-both">
+
+## Performances
+
+➡️ Improving loading times/... will also improve the SEO.
+
+<div class="row row-cols-md-2"><div>
+
+#### Content delivery network (CDN)
+
+Basically, resources are cached on nearby servers to reduce the loading time of static resources <small>(CSS, images, videos, audios...)</small>.
+
+* [jsdeliver](https://www.jsdelivr.com/) <small>(free, works with [GitHub](https://cdn.jsdelivr.net/gh/user/repo/path/to/file.png))</small>
+* [cdnjs](https://cdnjs.com/) <small>(free, but not decentralized)</small>
+* [gitcdn](https://github.com/schme16/gitcdn.xyz) <small>(same as jsdeliver, but slower)</small>
+* [unpkg.com](https://unpkg.com/) <small>(👻)</small>
+* [keycdn.com](https://www.keycdn.com/) <small>(👻)</small>
+* [raw.githack.com](https://raw.githack.com/) <small>(👻)</small>
+</div><div>
+
+#### Images
+
+* Compress images
+* Use `.webp` instead of `.jpg`/`.png`
+* See [imagekit](https://imagekit.io/) (👻)
+* Cache images ([see article](https://web.dev/http-cache/))
+
+...
 </div></div>

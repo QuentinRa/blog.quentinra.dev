@@ -178,7 +178,7 @@ There are a lot more tools. If some are not available for you, you may have to e
 
 ## 👻 To-do 👻
 
-Stuff that I found, but never read/used yet. [Old](_old/general/index.md) and [Pages](_old/pages.md).
+Stuff that I found, but never read/used yet. [Old](_old/general/index.md).
 
 <div class="row row-cols-md-2"><div>
 
@@ -188,7 +188,6 @@ Stuff that I found, but never read/used yet. [Old](_old/general/index.md) and [P
 
 **Apps**
 
-* CDNs ([keycdn](https://www.keycdn.com/))
 * semantic web ([protege](https://protege.stanford.edu/))
 * progressive web apps (PWA)
 * [webhint](https://webhint.io/)

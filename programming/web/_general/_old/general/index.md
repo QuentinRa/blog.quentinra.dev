@@ -1,22 +1,7 @@
 # Web programming
 
 * You can set up a [(virtual) local server](../../apache/wamp.md)
-
-
-Performance and best practices
-
-* [Content delivery network (CDN)](cdn.md): they are making your website faster (because they are faster than loading local resources)
-* you may use images .webp images instead of PNG/JPG
-* [imagekit.io](https://imagekit.io/): proposing services to handle your images (optimization, etc.) for free up to 20Gb of bandwidth/month (not tested 😶)
-* I'm not too familiar with this, but this article about [HTTP Cache](https://web.dev/http-cache/) is good
-
 * [Structured Data](structured.md): give information about the content of your website
-
-<hr class="sr">
-
-## Bunch of tools
-
-It's better when everything is automated, right? Here is my list of links that may provide tools (mostly free 🤑, <s>as you are the product</s>)
 
 **Make more than one kind of check on a page/the whole website**
 
