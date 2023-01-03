@@ -9,10 +9,15 @@ You can add extensions/plugins to your browser, for instance, [DarkReader](https
 * 👉  There are new functions to access features like Bookmarks/...
 </div><div>
 
+**Where to learn?**
+
+* [Microsoft Edge extensions](https://learn.microsoft.com/en-us/microsoft-edge/extensions-chromium/) (👻)
+
+<br>
+
 **Where to add/enable extensions?**
 
 * **Edge**: Go to `edge://extensions/`, enable `Developer mode`, click on `Load unpacked`, and select the folder with your `manifest.json`.
-* ...
 
 </div></div>
 
@@ -110,15 +115,12 @@ To show a popup when the user clicks on the plugin icon, use `action/default_pop
 ```json
 {
   "action": {
-    "default_popup": "html/popup.html"
+    "default_popup": "popup/popup.html"
   }
 }
 ```
 
-<details class="details-n">
-<summary><code>html/popup.html</code></summary>
-
-A simple, empty, `popup.html`.
+A simple `popup.html`.
 
 ```html
 <html lang="en">
@@ -129,11 +131,12 @@ A simple, empty, `popup.html`.
 <body>
 <div>
     <p>Hello, World</p>
+    <!-- load popup/popup.js -->
+    <script src="popup.js"></script>
 </div>
 </body>
 </html>
 ```
-</details>
 
 </div><div>
 
@@ -180,11 +183,69 @@ If you want to load one or more scripts that **needs to access the browser featu
 }
 ```
 
-A predefined variable will allow you to access the browser
+#### web_accessible_resources
+
+You can define inside that resource can be accessed from the browser. Use `chrome.runtime.getURL("???")` to get a resource.
+
+```json
+{
+  "web_accessible_resources": [
+    {
+      "resources": ["???"], 
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
+```
+
+</div></div>
+
+<hr class="sep-both">
+
+## Scripts
+
+<div class="row row-cols-md-2"><div>
+
+A predefined variable will allow you to access the browser.
 
 * 👉 On Chrome, the variable is called `chrome`
 * 👉 On Firefox, the variable is called `browser`
+
+➡️ The predefined variable for the browser will have more attributes when used in `background`.
+
+#### Access the current tab
+
+<p></p>
+
+```javascript
+// ➡️ ex: popup.js
+chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+    // ...
+})
+```
+</div><div>
+
+#### Messaging
+
+<p></p>
+
+```javascript
+// ➡️ Sender - ex: popup.js
+chrome.tabs.sendMessage(tabs[0].id,
+    { /* custom data */ },
+    function(response) {
+        // ...
+    }
+);
+
+// ➡️ Receiver - ex: main.js
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+    // ...
+    sendResponse({ /* custom */ });
+});
+```
 </div></div>
+
 <hr class="sep-both">
 
 ## 👻 To-do 👻
