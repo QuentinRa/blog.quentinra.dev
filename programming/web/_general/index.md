@@ -1,6 +1,30 @@
 # Web development
 
-...
+Web development is usually divided between two sides:
+
+<div class="row row-cols-md-2"><div>
+
+👲 **Front-end** 👲
+
+What is displayed to the user.
+
+* HTML, CSS, JS
+* Bootstrap, tailwindcss...
+* Vue.js, React, Angular, Ionic
+* ...
+</div><div>
+
+🌍 **Back-end** 🌍
+
+The servers, the databases, and basically everything else.
+
+* PHP, Django, Symfony, Laravel...
+* SQL, NoSQL
+* Node.js, Express.js, Nest.js...
+* ...
+</div></div>
+
+There is also 👑 **Full-Stack** 👑 which is both Front+Back-end, along Mobiles <small>(React Native...)</small> and Desktops <small>(Electron...)</small>
 
 <hr class="sep-both">
 

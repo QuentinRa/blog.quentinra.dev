@@ -2,18 +2,6 @@
 
 There is a lot of knowledge and things that would not be relevant if they were added in a language-specific (security, adaptability, tools, SEO, the HTTP protocol, the developers' tools, the FTP protocol, setting up a server, etc.), hence they will be explained here. Web programming can be viewed from 3 perspectives
 
-* the client-side, **Front-End**: interface between the back-end and the client
-  * **HTML**: the code of the page
-  * **CSS**: the design/style, you may use CSS frameworks (ex: Bootstrap)
-  * **JS**: adding scripts
-* the server-side, **Back-End**: how the request of the client is handled
-  * **PHP**: the code generating the HTML or provide an API to your services? You may look for PHP Frameworks <small>(Symfony, Laravel, etc.)</small>
-  * **SQL**: or NoSQL/..., the data of your application
-  * **Node.js**: an alternative to PHP
-* **Full-Stack**: handling both Front and Back-End
-  * React Native (mobile)
-  * Electron (desktop)
-
 <hr class="sl">
 
 ## The HTTP protocol

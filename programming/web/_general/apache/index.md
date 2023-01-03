@@ -96,7 +96,7 @@ $ tail /var/log/apache2/error.log
 ```
 </div><div>
 
-Enable configs/websites
+Enable configs/virtual hosts
 
 ```
 # create a conf for each website
@@ -116,7 +116,7 @@ $ sudo a2enmod ssl
 $ sudo a2enmod rewrite
 ```
 
-Create a website in `var` for a non-root user `yyy`.
+Create a website in `/var/www/` for a non-root user `yyy`.
 
 ```
 $ sudo mkdir -p /var/www/xxx/
