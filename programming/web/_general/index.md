@@ -40,6 +40,8 @@ SSL
 
 ```
 sudo certbot --apache --cert-name xxx.com -d xxx.com -d www.xxx.com
+sudo certbot --apache -d xxx.com -d www.xxx.com
+sudo certbot renew --dry-run
 ```
 
 wamp
