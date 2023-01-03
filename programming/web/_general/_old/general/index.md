@@ -1,38 +1,7 @@
 # Web programming
 
-There is a lot of knowledge and things that would not be relevant if they were added in a language-specific (security, adaptability, tools, SEO, the HTTP protocol, the developers' tools, the FTP protocol, setting up a server, etc.), hence they will be explained here. Web programming can be viewed from 3 perspectives
-
-<hr class="sr">
-
-## WebServer
-
-As you will read in the HTML course, you don't need a server, and you may use the file protocol (same for CSS/JS), but for PHP, you **will need** a server. You may also use it in HTML, as this may be easy to set up.
-
 * You can set up a [(virtual) local server](setup/wamp.md)
 * Your root URL is `http://localhost`, but in some rare cases <small>(HTTP is enough in development)</small>, you may  [want to have https://localhost](https://web.dev/how-to-use-local-https/) (HTTPS)
-* For Linux users, read this section about [public_html and permissions](setup/perms.md)
-
-Sometimes some students don't want to set up a server and directly work on the remote server. You will need to upload using the FTP protocol (or SCP) your files **every time** you changed something. Some IDEs such as [PHPStorm](../../../archives/tools/jetbrains/index.md#phpstorm) or [VSCode](https://code.visualstudio.com/docs/remote/ssh) that are **automatically updating the files on a remote server** when you changed something. Anyway, I think **you should work on local, for security-related purposes**.
-
-<details class="details-e">
-<summary>You will use the <b>FTP protocol</b> (or the command <code>SCP</code>) to send files to a remote server. I'm using a software on Windows, called <a href="https://filezilla-project.org/" target="_blank" rel="noopener noreferrer">FileZilla</a>.</summary>
-
-* once started, go to File > Site Manager
-* New site (give it a name in the left column)
-  * SFTP (use ssh credentials to login)
-  * host (ex: `pedago-etu.ensiie.fr`, the server's URL)
-  * check "ask for password"
-  * user (ex: `firstname.lastname`)
-  * ok and close
-* Then now that the config is saved,
-
-Then every time you want to upload files
-
-* click on the right arrow near the logo below "File"
-* click on the configuration name
-* connect, click on "yes" (if this is the first connection)
-* then you should be able to browser, open, send/get files on your remote server
-</details>
 
 <hr class="sr">
 

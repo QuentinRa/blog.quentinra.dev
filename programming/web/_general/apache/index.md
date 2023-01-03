@@ -238,11 +238,21 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+* `apache2ctl restart`
+
 ```apacheconf
 AllowOverride All
 ```
 </div><div>
 
-* `apache2ctl restart`
+```bash
+# allows access to public_html to the web server
+chmod 711 ~
+chmod 711 ~/public_html
+# the least permissions
+chmod 700 file.php # for a .php
+chmod 744 file.html # for a .html
+chmod 711 folder # for a folder
+```
 
 </div></div>

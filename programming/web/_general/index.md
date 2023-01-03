@@ -34,22 +34,22 @@ There is also 👑 **Full-Stack** 👑 which is both Front+Back-end, along Mobil
 
 Browsers are using the [HTTP](/it/networking/protocols/index.md#-http---80-tcp) protocol to communicate with a webserver. The server is supposed to return an **HTML page**.
 
-**No router - HTML**
+* 👉 If there are no routing, the URL is associated with a local path on the server, and the file is loaded if present.
 
-By default, there is usually no router. It means that if the user enter the URL `https://example.com/folder/file.html`, the webserver will look for `folder/file.html` inside `/var/www/` <small>(according to the webserver configuration, the file may be somewhere else)</small>.
+* 👉 If there is no file in the URL, webservers may load `index.html`/`index.php`/... if present.
 
-➡️ If the URL doesn't ends with a file, then if there is a file called `index.html` inside `/var/www/` <small>(...)</small>, then it will be loaded.
+* 👉 Modern apps are usually using a router. This reduces securities issues. Every URL will be redirected to one file, and this file will determine which HTML page should be returned.
 </div><div>
 
-**No router - PHP**
 
-Using PHP, the behavior is the same as HTML, except that PHP files are generating a HTML. We have the same behavior with `index.php` that we had with `index.html`.
+**What do you need?**
 
-➡️ Which one of `index.php` or `index.html` is loaded first, if both are present, is determined by your configuration.
+To develop simple HTML websites, you don't need anything, you can use the `file://` protocol <small>(drag and drop the HTML in your browser)</small>.
 
-**Router - Any**
+For more complex apps <small>(PHP, HTTPS...)</small>, you must install a webserver such as Apache, Nginx, Node, IIS...
 
-Most websites are using a router. This reduces securities issues. Every URL will redirect to one same file, and this file will determine which HTML page should be returned.
+➡️ To upload things on a remote server, see the [FTP protocol](/it/networking/protocols/index.md#-scpsftp---22-tcp).
+
 </div></div>
 
 
@@ -80,7 +80,6 @@ URLs
 * `href=#`
 * `href=#id`
 * `mailto:email`
-* `index.html` / how to load an HTML file
 
 SEO
 
