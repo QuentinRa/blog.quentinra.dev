@@ -1,6 +1,6 @@
 # Structured Data
 
-[Go back](../index.md#search-engine-optimization-seo)
+[Go back](index.md#search-engine-optimization-seo)
 
 **Structural Data** are providing more information about your website, and it allows Google to display **rich results**. You should are already aware of some search engines being smart, like "5+65" is being evaluated as "70" or "John Doe" will show the Wikipedia page on the right.
 

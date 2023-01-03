@@ -1,6 +1,6 @@
 # Web programming
 
-* You can set up a [(virtual) local server](setup/wamp.md)
+* You can set up a [(virtual) local server](../../apache/wamp.md)
 
 Accessibility
 
@@ -11,7 +11,7 @@ Accessibility
 
 Performance and best practices
 
-* [Content delivery network (CDN)](performance/cdn.md): they are making your website faster (because they are faster than loading local resources)
+* [Content delivery network (CDN)](cdn.md): they are making your website faster (because they are faster than loading local resources)
 * you may use images .webp images instead of PNG/JPG
 * [imagekit.io](https://imagekit.io/): proposing services to handle your images (optimization, etc.) for free up to 20Gb of bandwidth/month (not tested 😶)
 * I'm not too familiar with this, but this article about [HTTP Cache](https://web.dev/http-cache/) is good
@@ -22,7 +22,7 @@ Search Engine Optimization (SEO)
 * [Descriptions](seo/descriptions.md)
 * Do not use META KEYWORDS
 * [Sitemap](seo/sitemap.md): give the page search engines may index
-* [Structured Data](seo/structured.md): give information about the content of your website
+* [Structured Data](structured.md): give information about the content of your website
 * [Canonical URL](seo/canonical.md): as `/` and `/index.html` are the same page, what URL should I pick?
 
 <hr class="sr">

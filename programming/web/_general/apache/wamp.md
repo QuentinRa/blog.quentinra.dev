@@ -1,6 +1,6 @@
 # Virtual local server
 
-[Go back](../index.md#webserver)
+[Go back](../_old/general/index.md#webserver)
 
 > Note: when installing, you will be prompted to pick a browser. If yours is not included in the list,
 > * write "Firefox" (example) in the search bar

@@ -1,6 +1,6 @@
 # Content delivery network (CDN)
 
-[Go back](../index.md#performance-and-best-practices)
+[Go back](index.md#performance-and-best-practices)
 
 You can learn [here, what's a Content delivery network (CDN)](https://www.keycdn.com/what-is-a-cdn). They will make your website faster. **As a programmer**, you can even use one for **free**, as I'm doing with this website.
 
