@@ -1,7 +1,5 @@
 # Icons
 
-[Go back](../html/index.md#special)
-
 Did you ever dream of having icons on your website like a lot of websites do? Well, that's easy. The two most well-known libraries are **FontAwesome** and **Bootstrap**.
 
 * [Bootstrap Icons](https://icons.getbootstrap.com/)

@@ -1,7 +1,6 @@
 # Web programming
 
 * You can set up a [(virtual) local server](setup/wamp.md)
-* Your root URL is `http://localhost`, but in some rare cases <small>(HTTP is enough in development)</small>, you may  [want to have https://localhost](https://web.dev/how-to-use-local-https/) (HTTPS)
 
 <hr class="sr">
 
