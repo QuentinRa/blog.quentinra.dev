@@ -1,8 +1,10 @@
-# SEO (draft)
+# Enhancements (draft)
 
-*😵 A list of random notes, an update+cleanup is required, as not everything is related to SEO... 😵*
+*😵 A list of random notes, an update+cleanup is required... 😵*
 
 <hr class="sep-both">
+
+## Accessibility
 
 <div class="row row-cols-md-2"><div>
 
@@ -14,6 +16,42 @@ More at [webhint.io/Apple Touch Icon](https://webhint.io/docs/user-guide/hints/h
 <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
 <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
 ```
+</div><div>
+
+#### URL/humans.txt
+
+Learn more about it at [humanstxt.org](https://humanstxt.org/),
+and [humanstxt.org - Standard](https://humanstxt.org/Standard.html).
+
+```html
+<link type="text/plain" rel="author" href="URL/humans.txt"/>
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Search Engine Optimization (SEO)
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+#### Titles
+
+* You must use exactly one header "h1"
+* Title's length should be between 55-65 characters
+
+```html
+<title>MainTopic - title1, title2, title3</title>
+```
+
+```html
+<title>MainTopic - title1, title2 | Organization</title>
+```
+
+<br>
+
+#### Descriptions
+
+You should write a good and unique description of your pages. The size displayed in the results is usually 110 characters (mobile), and around 130 on a computers.
 
 <br>
 
@@ -30,6 +68,19 @@ Disallow:
 
 # Link to the sitemap (optional)
 Sitemap: URL/sitemap.xml
+```
+</div><div>
+
+#### Canonical URLs
+
+It could be that two URLs are actually the same page. For instance, `https://example.com` and `https://example.com/index.php`. You need to tell search engines that the former is the same as the later. For both, you need to return the same canonical URL.
+
+```php
+header("Link: <https://example.com/index.php>; rel=\"canonical\"");
+```
+
+```html
+<link rel="canonical" href="https://example.com/index.php" />
 ```
 
 <br>
@@ -61,50 +112,4 @@ Once you created a sitemap, you have to share it, as explained [here](https://ah
 </urlset>
 ```
 </details>
-</div><div>
-
-#### URL/humans.txt
-
-Learn more about it at [humanstxt.org](https://humanstxt.org/),
-and [humanstxt.org - Standard](https://humanstxt.org/Standard.html).
-
-```html
-<link type="text/plain" rel="author" href="URL/humans.txt"/>
-```
-
-<br>
-
-#### Canonical URLs
-
-It could be that two URLs are actually the same page. For instance, `https://example.com` and `https://example.com/index.php`. You need to tell search engines that the former is the same as the later. For both, you need to return the same canonical URL.
-
-```php
-header("Link: <https://example.com/index.php>; rel=\"canonical\"");
-```
-
-```html
-<link rel="canonical" href="https://example.com/index.php" />
-```
-
-<br>
-
-#### Titles
-
-* You must use exactly one header "h1"
-* Title's length should be between 55-65 characters
-
-```html
-<title>MainTopic - title1, title2, title3</title>
-```
-
-```html
-<title>MainTopic - title1, title2 | Organization</title>
-```
-
-<br>
-
-#### Descriptions
-
-You should write a good and unique description of your pages. The size displayed in the results is usually 110 characters (mobile), and around 130 on a computers.
-
 </div></div>

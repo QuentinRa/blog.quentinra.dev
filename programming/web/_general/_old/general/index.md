@@ -2,12 +2,6 @@
 
 * You can set up a [(virtual) local server](../../apache/wamp.md)
 
-Accessibility
-
-* [Apple touch icon](accessibility/apple-touch.md): something for Apple's users
-* [robots.txt](accessibility/robots.md): for robots
-* [humans.txt](accessibility/humans.md): for humans
-* [OG/twitter meta](seo/og-twitter.md): improve the short card shown for your website on Facebook, Twitter, and many applications using OpenGraph such as Discord
 
 Performance and best practices
 
@@ -16,14 +10,7 @@ Performance and best practices
 * [imagekit.io](https://imagekit.io/): proposing services to handle your images (optimization, etc.) for free up to 20Gb of bandwidth/month (not tested 😶)
 * I'm not too familiar with this, but this article about [HTTP Cache](https://web.dev/http-cache/) is good
 
-Search Engine Optimization (SEO)
-
-* [Titles](seo/titles.md)
-* [Descriptions](seo/descriptions.md)
-* Do not use META KEYWORDS
-* [Sitemap](seo/sitemap.md): give the page search engines may index
 * [Structured Data](structured.md): give information about the content of your website
-* [Canonical URL](seo/canonical.md): as `/` and `/index.html` are the same page, what URL should I pick?
 
 <hr class="sr">
 
