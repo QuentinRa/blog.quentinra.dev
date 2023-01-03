@@ -14,13 +14,24 @@
 * [name.com](https://www.name.com/)
 * [instantdomainsearch](https://instantdomainsearch.com/)
 * [gositestat](https://www.gositestat.com/)
-</div><div>
 
 #### Tools
 
+* [webhint](https://webhint.io/) (hints to improve your website)
+* [websiteplanet](https://www.websiteplanet.com/webtools/) (a lot of tools)
+* [sanderheilbron](https://www.sanderheilbron.nl/) (SEO peek is quite handy 😍)
+* [uptrends](https://www.uptrends.com/tools) (👻)
+* [seositecheckup](https://seositecheckup.com/tools) (👻)
+</div><div>
+
+#### Crawlers
+
+* [siteliner](https://www.siteliner.com/) (crawler, 250 pages max)
 * [drlinkcheck](https://www.drlinkcheck.com/) (crawler, broken links)
 * [snyk.io](https://snyk.io/website-scanner/) (crawler, vulnerabilities)
-* [websiteplanet](https://www.websiteplanet.com/webtools/) (a lot of tools)
+* [webpagetest](https://www.webpagetest.org/) (👻)
+* [website-checker](https://www.ionos.com/tools/website-checker) (👻)
+* [sitechecker](https://sitechecker.pro/) (👻)
 </div></div>
 
 
@@ -213,6 +224,12 @@ Basically, resources are cached on nearby servers to reduce the loading time of 
 * Use `.webp` instead of `.jpg`/`.png`
 * See [imagekit](https://imagekit.io/) (👻)
 * Cache images ([see article](https://web.dev/http-cache/))
+
+<br>
+
+#### Tools
+
+* [pagespeed](https://pagespeed.web.dev/)
 </div></div>
 
 <hr class="sep-both">
@@ -223,17 +240,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [biq.cloud](https://biq.cloud/rank-intelligence/) (see your website ranking for a keyword, **need to register**)
-* [siteliner](https://www.siteliner.com/) (**whole site, up to 250 pages**, SEO)
-* [SEO tools](https://www.sanderheilbron.nl/) (SEO peek is quite handy 😍)
-* [SEO tools: speed, CDN, headers](https://www.uptrends.com/tools)
+* [biq.cloud](https://biq.cloud/rank-intelligence/) <small>(see your website ranking for a keyword, account required)</small>
 </div><div>
-
-* [WebHint](https://webhint.io/) (security, accessibility, compatibility, performance) - **edit 01/11/2021, the online scanner was removed 😬**
-* [ionos](https://www.ionos.com/tools/website-checker) (general, SEO, performance, secure)
-* [sitechecker](https://sitechecker.pro/) (**whole site, up to 150 pages**, general, SEO, HTML, but you **can't see where** without starting a trial)
-* [Google's pagespeed](https://developers.google.com/speed/pagespeed/insights/) (performance)
-* [Google's Lighthouse](https://web.dev/measure/) (performance, accessibility, SEO, best practices, **do not forget to click on view report**)
-* [SEO site checkup](https://seositecheckup.com/analysis) (SEO, security), you can [test every tool individually](https://seositecheckup.com/tools) (limited to 1/day)
-* [webpagetest](https://www.webpagetest.org/) (😍 the best, SEO, performance, security)
 </div></div>
