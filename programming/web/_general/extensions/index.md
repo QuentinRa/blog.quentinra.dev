@@ -12,6 +12,8 @@ You can add extensions/plugins to your browser, for instance, [DarkReader](https
 **Where to learn?**
 
 * [Microsoft Edge extensions](https://learn.microsoft.com/en-us/microsoft-edge/extensions-chromium/) (👻)
+* [Chrome extensions](https://developer.chrome.com/docs/extensions/mv3/) + [API reference](https://developer.chrome.com/docs/extensions/reference/) (👻)
+* [Firefox extensions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions) + [Examples](https://github.com/mdn/webextensions-examples) (👻)
 
 <br>
 
@@ -220,6 +222,8 @@ A predefined variable will allow you to access the browser.
 ```javascript
 // ➡️ ex: popup.js
 chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+    const url = tabs[0].url;
+    const title = tabs[0].title;
     // ...
 })
 ```
@@ -238,7 +242,7 @@ chrome.tabs.sendMessage(tabs[0].id,
     }
 );
 
-// ➡️ Receiver - ex: main.js
+// ➡️ Receiver - ex: a content script
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     // ...
     sendResponse({ /* custom */ });
@@ -258,6 +262,8 @@ Stuff that I found, but never read/used yet.
 
 * ➡️ You need to **reload**  an extension, **manually**, each time you changed something. See also [chrome-extensions-reloader](https://github.com/arikw/chrome-extensions-reloader) (👻).
 
+* [Polyfill](https://github.com/mozilla/webextension-polyfill)
+
 ```
 "homepage_url": "XXX",
 ```
@@ -266,6 +272,19 @@ Stuff that I found, but never read/used yet.
 ```
 chrome.browserAction.onClicked.addListener((tab) => {
   chrome.runtime.reload();
+});
+
+chrome.tabs.create({ url: "URL" })
+
+// Event binding.
+document.addEventListener("pageshow", xxx);
+
+chrome.contextMenus.create({ id: "xxx", title: "xxx", contexts: ['selection'] });
+chrome.contextMenus.onClicked.addListener(function(info, tab) {
+    if (info.menuItemId == "xxx") {     
+        const word = info.selectionText;
+        // ...    
+    }
 });
 ```
 </div></div>
