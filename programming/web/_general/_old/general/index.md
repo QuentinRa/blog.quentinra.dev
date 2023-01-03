@@ -61,11 +61,6 @@ You will get more notes in the Cybersecurity course.
 
 It's better when everything is automated, right? Here is my list of links that may provide tools (mostly free 🤑, <s>as you are the product</s>)
 
-**Code-only**
-
-* [W3C validator (HTML)](https://validator.w3.org/) (HTML)
-* [W3C Validator](https://jigsaw.w3.org/css-validator/) (CSS)
-
 **Make more than one kind of check on a page/the whole website**
 
 * [WebHint](https://webhint.io/) (security, accessibility, compatibility, performance) - **edit 01/11/2021, the online scanner was removed 😬**

@@ -113,18 +113,28 @@ chmod 711 folder # for a folder
 
 ## 😍 Developer tools (devtools) 😍
 
-The devtools are tools for developer. You can open it using **F12**, **{Left-click} > Inspect**, or **Settings > ... tools > development tools**...
+<div class="row row-cols-md-2"><div>
 
-* **Tools > elements** or **CTRL+SHIFT+I**: see the **HTML** code of the page, you can edit it, and you can see the **CSS**
-* **Tools > <i class="bi bi-box-arrow-in-up-left"></i>** or **CTRL+SHIFT+C**: easily find the HTML code of something <small>(by clicking on it after the mode was triggered)</small>
-* **Tools > <i class="bi bi-window"></i>** or **CTRL+SHIFT+M**: you can preview the appearance of your website on a phone/tablet/...
-* **Tools > Console**: you can execute some **JavaScript**, try `5+5`.
-* **Tools > Sources**: see the code source of the page <small>(see also **Tools > Application**)</small>
-* **Tools > Application**: see the local storage, the cookies, etc.
-* **Tools > Problems**: you can see problems using webhint
-* **Tools > LightHouse**: you can see the evaluation of a page by LightHouse (Google)
+The devtools are tools for developer. You can open it using
 
-➡️ Some menus are available after you enabled them <small>(the "+" in Edge, the "... > more tools" in Chrome, etc.)</small>.
+* <kbd>F12</kbd> or <kbd>Left-click > Inspect</kbd> ✨
+* <kbd>Settings > ... tools > development tools</kbd> 😅
+
+The 4 most used tools are
+
+* **Tools > elements** <span class="small">(<kbd>CTRL+SHIFT+I</kbd>)</span>**: see/edit the HTML/CSS
+* **Tools > <i class="bi bi-box-arrow-in-up-left"></i>** <span class="small">(<kbd>CTRL+SHIFT+C</kbd>)</span>: select a element and see the correspond HTML code in the Element tab.
+* **Tools > <i class="bi bi-window"></i>** <span class="small">(<kbd>CTRL+SHIFT+M</kbd>)</span>: preview the website on a phone...
+* **Tools > Console**: execute some JavaScript, try: `41+1`
+</div><div>
+
+There are a lot more tools. If some are not available for you, you may have to enabled them <small>(see "+" in Edge, see "... > more tools" in Chrome...)</small>.
+
+* **Tools > Sources** 🕵️: see the code source of the page
+* **Tools > Application** 🪄: see the local storage, the cookies, etc.
+* **Tools > Problems** 🧟: you can see problems using webhint
+* **Tools > LightHouse** 🥇: you can see the evaluation of a page by LightHouse (Google)
+</div></div>
 
 <hr class="sep-both">
 
