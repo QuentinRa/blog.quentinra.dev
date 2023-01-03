@@ -11,8 +11,8 @@ You can add extensions/plugins to your browser, for instance, [DarkReader](https
 
 **Where to learn?**
 
+* [Chrome extensions](https://developer.chrome.com/docs/extensions/mv3/) + [API reference](https://developer.chrome.com/docs/extensions/reference/) + [Samples](https://github.com/GoogleChrome/chrome-extensions-samples)
 * [Microsoft Edge extensions](https://learn.microsoft.com/en-us/microsoft-edge/extensions-chromium/) (👻)
-* [Chrome extensions](https://developer.chrome.com/docs/extensions/mv3/) + [API reference](https://developer.chrome.com/docs/extensions/reference/) (👻)
 * [Firefox extensions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions) + [Examples](https://github.com/mdn/webextensions-examples) (👻)
 
 <br>
@@ -315,9 +315,33 @@ chrome.scripting.removeCSS({ files: ["focus-mode.css"], target: { tabId: tab.id 
 The page is the icon shown in the toolbar.
 
 ```javascript
+// ➡️ Inside popup.*
+badge.textContent = `XXX`;
+// ➡️ Otherwise,
 chrome.action.setBadgeText({ text: "xxx", });
 chrome.action.setBadgeText({ tabId: tab.id, text: "yyy", });
 chrome.action.getBadgeText({ tabId: tab.id });
+```
+
+```javascript
+// ➡️ When users click on the badge
+// ➡️ When users use the shortcut (if any)
+chrome.browserAction.onClicked.addListener((tab) => {});
+```
+
+To add a shortcut opening the badge, use
+
+```json
+{
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+M",
+        "mac": "Command+M"
+      }
+    }
+  }
+}
 ```
 </div></div>
 
@@ -338,27 +362,17 @@ Stuff that I found, but never read/used yet.
     "service_worker": "background.js"
   },
   "host_permissions": [ "://*" ],
-  "permissions": ["activeTab", "tabGroups"],
-  "commands": {
-    "_execute_action": {
-      "suggested_key": {
-        "default": "Ctrl+U",
-        "mac": "Command+U"
-      }
-    }
-  }
+  "permissions": ["activeTab"]
 }
 ```
 
 * `host_permissions`: root, but only on some websites
+* [See permissions](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/)
 </div><div>
 
 ```javascript
-// run when shortcut pressed
-chrome.browserAction.onClicked.addListener((tab) => {});
 chrome.runtime.onInstalled.addListener(() => {});
 
-// Event binding.
 document.addEventListener("pageshow", xxx);
 
 chrome.contextMenus.create({ id: "xxx", title: "xxx", contexts: ['selection'] });
