@@ -8,3 +8,6 @@
 * [add rel attribute to external links](links.md): it seems unneeded as of 2021
 * [forbidden usernames](usernames.md): do not let users take "root", "admin", ... as their username
 * [FORM (GET, POST) and URLs](url.md): for beginners, some note about "/user/{id}"
+
+* <https://ssl-config.mozilla.org/#server=apache>
+* <https://syslink.pl/cipherlist/>

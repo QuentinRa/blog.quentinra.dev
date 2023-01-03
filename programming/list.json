@@ -11,7 +11,7 @@
             {
               "tag": "web/_general/index.md",
               "name": "Web development",
-              "desc": "...",
+              "desc": "General notes about WebDev.",
               "icon": null,
               "hidden": false
             },
@@ -26,6 +26,13 @@
               "tag": "web/_general/extensions/index.md",
               "name": "Browser Extensions",
               "desc": "Also known as plugins, add-ons...",
+              "icon": null,
+              "hidden": false
+            },
+            {
+              "tag": "web/_general/seo/index.md",
+              "name": "SEO - basics",
+              "desc": "Search Engine Optimization.",
               "icon": null,
               "hidden": false
             }

@@ -2,38 +2,21 @@
 
 * You can set up a [(virtual) local server](setup/wamp.md)
 
-<hr class="sr">
-
-
-
-**Injections**
-
-* [XSS injections](../../../../../cybersecurity/_in/security/injections/xss.md)
-* [PHP injections](../../../../../cybersecurity/_in/security/injections/php.md)
-
-You will get more notes in the Cybersecurity course.
-
-<hr class="sl">
-
-## Accessibility
+Accessibility
 
 * [Apple touch icon](accessibility/apple-touch.md): something for Apple's users
 * [robots.txt](accessibility/robots.md): for robots
 * [humans.txt](accessibility/humans.md): for humans
 * [OG/twitter meta](seo/og-twitter.md): improve the short card shown for your website on Facebook, Twitter, and many applications using OpenGraph such as Discord
 
-<hr class="sr">
-
-## Performance and best practices
+Performance and best practices
 
 * [Content delivery network (CDN)](performance/cdn.md): they are making your website faster (because they are faster than loading local resources)
 * you may use images .webp images instead of PNG/JPG
 * [imagekit.io](https://imagekit.io/): proposing services to handle your images (optimization, etc.) for free up to 20Gb of bandwidth/month (not tested 😶)
 * I'm not too familiar with this, but this article about [HTTP Cache](https://web.dev/http-cache/) is good
 
-<hr class="sl">
-
-## Search Engine Optimization (SEO)
+Search Engine Optimization (SEO)
 
 * [Titles](seo/titles.md)
 * [Descriptions](seo/descriptions.md)
