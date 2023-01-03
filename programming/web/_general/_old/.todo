@@ -2,7 +2,6 @@ https://protege.stanford.edu/
 math tag LaTeX Math to HTML
 
 `systemctl /bin/systemctl`  allow to interact with the systemd process/daemon.
-`systemctl start apache2` (start, stop, enable, disable)
 
 https://en.wikipedia.org/wiki/HTTP/3
 
@@ -18,7 +17,7 @@ URL
 
 
 ```html
-<!-- FAVICONS -->
+    <!-- FAVICONS -->
     <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
     <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
     <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">

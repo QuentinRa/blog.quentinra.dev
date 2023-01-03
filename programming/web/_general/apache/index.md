@@ -167,9 +167,48 @@ $ sudo systemctl start apache2
 
 This is a file used to edit the virtual host configuration locally. Simply create a file `.htaccess` with some instructions inside.
 
-A `.htaccess` is applied to a directory, and it's **subdirectories**. Every `.htaccess` in the path to the resource is applied. ➡️ In case of conflit, the nearest/latest instruction is used.
+A `.htaccess` is applied to a directory and it's subdirectories. Every `.htaccess` in the path to the resource will be loaded. ➡️ In case of conflit, the nearest (latest) instruction is used.
 
+➡️ See [htaccess cheatsheet](https://htaccesscheatsheet.com/).
+
+#### Random instructions
+
+<p></p>
+
+```apacheconf
+# Disable directory browsing
+Options All -Indexes
+
+# Redirect everything (aside from direct access)
+# to index.php (when mod_rewrite is not installed)
+<IfModule !mod_rewrite.c>
+	ErrorDocument 404 index.php
+</IfModule>
+
+# Add a redirection
+Redirect 301 /duck https://duckduckgo.com/
+
+# Deny access to some directories/files
+RewriteEngine on
+RewriteRule ^/?(\.git|logs|temp|vendor - [F]
+RewriteRule /?(README.*|.ht*)$ - [F]
+
+# Limit the size of uploads
+LimitRequestBody 512000
+```
 </div><div>
+
+#### Example: block access to everyone aside from localhost
+
+This could be used to only allow a website to access some files such as uploaded avatars. Only `127.0.0.1` can request a resource.
+
+```apacheconf
+order deny,allow
+deny from all
+allow from 127.0.0.1
+```
+
+<br>
 
 #### Example: ask for basic authentication
 
