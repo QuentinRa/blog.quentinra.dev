@@ -202,6 +202,8 @@ You can use `matches` to filter which URLs will execute the script.
 }
 ```
 
+➡️ [See match patterns](https://developer.chrome.com/docs/extensions/mv3/match_patterns/).
+
 #### Worker
 
 If you want to load one or more scripts that **needs to access the browser features** <small>(bookmarks...)</small>, use **background**.
@@ -247,17 +249,36 @@ A predefined variable will allow you to access the browser.
 
 ➡️ The predefined variable for the browser **won't have** many attributes when used in `content_scripts`.
 
-#### Access the current tab
+#### Tabs
 
-<p></p>
+Fetch a tab
 
 ```javascript
 // ➡️ ex: popup.js
 chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
     const url = tabs[0].url;
     const title = tabs[0].title;
+    const id = tabs[0].id
     // ...
 })
+chrome.tabs.query({ url: [] }, function (tabs) {})
+```
+
+Create, or update a tab
+
+```javascript
+// 🔐 "tabs"
+await chrome.tabs.create({ url: "URL" })
+await chrome.tabs.update(tab.id, { active: true });
+await chrome.windows.update(tab.windowId, { focused: true });
+```
+
+Create/Update a group
+
+```javascript
+// 🔐 "tabGroups"
+const group = await chrome.tabs.group({ tabIds });
+await chrome.tabGroups.update(group, { title: "xxx" });
 ```
 </div><div>
 
@@ -269,9 +290,7 @@ chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
 // ➡️ Sender - ex: popup.js
 chrome.tabs.sendMessage(tabs[0].id,
     { /* custom data */ },
-    function(response) {
-        // ...
-    }
+    function(response) { /* ... */}
 );
 
 // ➡️ Receiver - ex: a content script
@@ -279,6 +298,26 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     // ...
     sendResponse({ /* custom */ });
 });
+```
+
+#### Scripting
+
+<p></p>
+
+```javascript
+// 🔐 "scripting"
+chrome.scripting.insertCSS({ files: ["focus-mode.css"], target: { tabId: tab.id },});
+chrome.scripting.removeCSS({ files: ["focus-mode.css"], target: { tabId: tab.id },});
+```
+
+#### Badge
+
+The page is the icon shown in the toolbar.
+
+```javascript
+chrome.action.setBadgeText({ text: "xxx", });
+chrome.action.setBadgeText({ tabId: tab.id, text: "yyy", });
+chrome.action.getBadgeText({ tabId: tab.id });
 ```
 </div></div>
 
@@ -298,10 +337,8 @@ Stuff that I found, but never read/used yet.
   "background": {
     "service_worker": "background.js"
   },
-  "host_permissions": [
-    "://*"
-  ],
-  "permissions": ["scripting", "activeTab", "tabGroups"],
+  "host_permissions": [ "://*" ],
+  "permissions": ["activeTab", "tabGroups"],
   "commands": {
     "_execute_action": {
       "suggested_key": {
@@ -312,12 +349,14 @@ Stuff that I found, but never read/used yet.
   }
 }
 ```
+
+* `host_permissions`: root, but only on some websites
 </div><div>
 
 ```javascript
+// run when shortcut pressed
 chrome.browserAction.onClicked.addListener((tab) => {});
-
-chrome.tabs.create({ url: "URL" })
+chrome.runtime.onInstalled.addListener(() => {});
 
 // Event binding.
 document.addEventListener("pageshow", xxx);
