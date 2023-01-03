@@ -2,45 +2,6 @@
 
 There is a lot of knowledge and things that would not be relevant if they were added in a language-specific (security, adaptability, tools, SEO, the HTTP protocol, the developers' tools, the FTP protocol, setting up a server, etc.), hence they will be explained here. Web programming can be viewed from 3 perspectives
 
-<hr class="sl">
-
-## The HTTP protocol
-
-You are using the HTTP protocol, when your browser is requesting something from a server. For instance, when you request `https://duckduckgo.com/`, you are asking the server to GET the page for this URL. We are currently in **HTTP2.0** ([caniuse](https://caniuse.com/http2), [article](https://www.digitalocean.com/community/tutorials/http-1-1-vs-http-2-what-s-the-difference)), but a lot of persons are still using **HTTP1.1** (and some HTTP1.0).
-
-<details class="details-e">
-<summary>Webserver root and root URL</summary>
-
-* when settings up a server, you will make a folder available at a URL. Let's say you made it like this
-  * **webserver root**: `/path/to/www/`
-  * **base/root URL**: `https://myurl.com/`
-* As you could guess, this is working like a path, so you could write `https://myurl.com/folder/my_file.html` for `/path/to/www/folder/my_file.html`
-  * A lot of programmers are using routers, so this won't always be the case <small>(ex: this website)</small>
-  * By default, if you don't write a file in the URL, then `index.html` <small>(or php, or index.extension, according to the list in your configuration)</small> will be loaded <small>(if you got one in the folder associated with the current URL)</small>
-
-For instance, `https://duckduckgo.com/` is the same as `https://duckduckgo.com/index.html`.
-</details>
-
-<details class="details-e" open>
-<summary>The HTTP protocol (or HTTPS for HTTP Secure) API is allowing us to use</summary>
-
-* `GET URL`: get a resource from the SERVER  <small>(ex: see a page, make a search)</small>
-* `POST URL`: create a resource on the server <small>(ex: create an account)</small>
-* `PUT URL`: modify a resource on the server <small>(ex: update user's data, or add it, if it didn't have it)</small>
-* `PATCH URL`: same as PUT, but can't create a new resource, up to 1 field
-* `DELETE URL`: delete a resource on the server <small>(ex: delete account)</small>
-</details>
-
-Why did we learn this? Well, you will use this a lot (HTML forms, WEB APIs, etc.). In HTML, you will make **forms** (search, create users, etc.). You **need to know whether they are GET** (search, ...) **or POST** (create user, update user 🙄, delete user 🙄, etc.).
-
-For Web APIs, this is usually written in the documentation, but you should be able to guess too. For instance, you got a route `/user/{id}` (ex:`/user/5`), according to if you are using the method GET/PUT/DELETE/..., the server will expect data (or not) and do something different.
-
-<details class="details-e">
-<summary>Note about GET</summary>
-
-When requesting a webpage, you are calling `GET URL`. But you can add parameters. Let's say you are searching something, you can tell us when requesting the page, what's the user is searching for using this syntax `?name=value&another=value&...` such as `GET URL?q=hello%20World` (encoded version of "Hello{space}World"). Anyone can share this URL, and it will open the same page, because the query is inside the URL.
-</details>
-
 <hr class="sr">
 
 ## WebServer

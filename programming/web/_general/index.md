@@ -28,6 +28,33 @@ There is also 👑 **Full-Stack** 👑 which is both Front+Back-end, along Mobil
 
 <hr class="sep-both">
 
+## Get started
+
+<div class="row row-cols-md-2"><div>
+
+Browsers are using the [HTTP](/it/networking/protocols/index.md#-http---80-tcp) protocol to communicate with a webserver. The server is supposed to return an **HTML page**.
+
+**No router - HTML**
+
+By default, there is usually no router. It means that if the user enter the URL `https://example.com/folder/file.html`, the webserver will look for `folder/file.html` inside `/var/www/` <small>(according to the webserver configuration, the file may be somewhere else)</small>.
+
+➡️ If the URL doesn't ends with a file, then if there is a file called `index.html` inside `/var/www/` <small>(...)</small>, then it will be loaded.
+</div><div>
+
+**No router - PHP**
+
+Using PHP, the behavior is the same as HTML, except that PHP files are generating a HTML. We have the same behavior with `index.php` that we had with `index.html`.
+
+➡️ Which one of `index.php` or `index.html` is loaded first, if both are present, is determined by your configuration.
+
+**Router - Any**
+
+Most websites are using a router. This reduces securities issues. Every URL will redirect to one same file, and this file will determine which HTML page should be returned.
+</div></div>
+
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet. [Old](_old/general/index.md) and [Pages](_old/pages.md).
