@@ -60,7 +60,6 @@ When requesting a webpage, you are calling `GET URL`. But you can add parameters
 As you will read in the HTML course, you don't need a server, and you may use the file protocol (same for CSS/JS), but for PHP, you **will need** a server. You may also use it in HTML, as this may be easy to set up.
 
 * You can set up a [(virtual) local server](setup/wamp.md)
-* You can set up an [Apache server on Linux](setup/apache.md)
 * Your root URL is `http://localhost`, but in some rare cases <small>(HTTP is enough in development)</small>, you may  [want to have https://localhost](https://web.dev/how-to-use-local-https/) (HTTPS)
 * For Linux users, read this section about [public_html and permissions](setup/perms.md)
 

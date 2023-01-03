@@ -4,7 +4,7 @@ You can use **PHP** to dynamically generate some part of your HTML. You will be 
 
 There are alternatives to PHP, such as **Node.js**. You may [learn PHP on W3Schools](https://www.w3schools.com/PhP/default.asp), or maybe by reading the official documentation [reading the official reference](https://www.php.net/manual/en/langref.php) <small>(my recommendation, I would really want to read it completely)</small>.
 
-> You need to set up a server to be able to run some PHP, and you need to be familiar with HTML. It's strongly advised to read the [Web course](../../web/general/index.md) and the [HTML course](../../web/html/index.md) **beforehand**.
+> You need to set up a server to be able to run some PHP, and you need to be familiar with HTML. It's strongly advised to read the [Web course](../../../../programming/web/_general/_old/general/index.md) and the [HTML course](../../web/html/index.md) **beforehand**.
 
 <hr class="sl">
 

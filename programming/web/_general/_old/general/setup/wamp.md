@@ -2,12 +2,6 @@
 
 [Go back](../index.md#webserver)
 
-We are usually using **AMP** (Apache MySQL PHP), a software installing the **3** tools you will need. You got 3 versions, according to your OS: W=Windows, L=Linux and M=macOS, giving us **WAMP** on Windows.
-
-* [Wamp](https://www.wampserver.com/) or here [Wamp](https://ampps.com/wamp)
-* [Lamp](https://ampps.com/lamp)
-* [Mamp](https://www.mamp.info/en/mamp/windows/)
-
 > Note: when installing, you will be prompted to pick a browser. If yours is not included in the list,
 > * write "Firefox" (example) in the search bar
 > * right-click -> open file location

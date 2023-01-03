@@ -1,6 +1,6 @@
 # GitHub pages
 
-[Go back](../../../it/dev/git/index.md#advanced-concepts)
+[Go back](../../../../it/dev/git/index.md#advanced-concepts)
 
 An organization or a user can make on GitHub a "GitHub page" project. To summarize, you can make a website from the code of a repository having the same name as your username/organization name. Then GitHub will host the website for you.
 
