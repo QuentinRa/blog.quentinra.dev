@@ -25,6 +25,49 @@ $ sudo apt install apache2
 
 <hr class="sep-both">
 
+## Optional (for online servers)
+
+<div class="row row-cols-md-2"><div>
+
+Change the default password of the provided user.
+
+```
+$ sudo passwd xxx
+```
+
+Upgrade packages.
+
+```
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt-get dist-upgrade
+```
+
+Disable `ssh` login for root/..., and change the default port.
+
+```
+$ sudo vim /etc/ssh/sshd_config
+$ sudo systemctl restart sshd
+```
+</div><div>
+
+Install a firewall.
+
+```
+$ sudo apt install fail2ban
+$ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+$ sudo vim /etc/fail2ban/jail.local
+```
+
+Add a non-root user.
+
+```
+$ sudo adduser yyy
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## List of commands
 
 <div class="row row-cols-md-2"><div>
