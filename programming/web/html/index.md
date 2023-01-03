@@ -151,7 +151,7 @@ Note that `<p>` is blocking, while `<span>` is not.
 
 Use `<a>Text</a>` to create a link. The user will see `Text`.
 
-```html
+```html!
 <a href="test.html">Link to a local file</a>
 <a href="https://duckduckgo.com/">External link</a>
 <a href="..." target="_blank">Open in a new tab</a>
@@ -163,7 +163,7 @@ Use `<a>Text</a>` to create a link. The user will see `Text`.
 
 If an image cannot be loaded, `alt` will be shown instead.
 
-```html
+```html!
 <img src="xxx.png" alt="alternative text">
 <img src="xxx.png" alt="xxx" title="shown on hover">
 <img src="xxx.png" alt="xxx" width="48" height="48">
@@ -481,7 +481,7 @@ These can be used on any input elements such as `<input>`.
 
 * ➡️ The icon of the website
 
-```html
+```html!
 <link rel="icon" href="icon.png">
 ```
 
@@ -529,10 +529,17 @@ Stuff that I found, but never read/used yet.
 * mhtml
 * [Introducing HTML5](https://ptgmedia.pearsoncmg.com/images/9780321784421/samplepages/0321784421.pdf)
 * Select tag
+* math tag LaTeX Math to HTML
 </div><div>
 
-```html
+```html!
 <noscript></noscript>
 <a download="xxx"></a>
+
+<link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#333333">
 ```
 </div></div>

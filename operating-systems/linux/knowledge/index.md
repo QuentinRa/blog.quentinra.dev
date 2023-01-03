@@ -814,6 +814,8 @@ Stuff that I found, but never read/used yet.
 <details class="details-e">
 <summary>Services</summary>
 
+`systemctl /bin/systemctl` allows us to interact with the systemd process/daemon.
+
 ```bash
 sudo systemctl stop xxx.service 
 sudo vim /etc/systemd/system/xxx.service 

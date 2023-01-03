@@ -61,5 +61,12 @@ Some are not satisfied with the limited syntax of JSON. Here some limitations
 So, they created [JSON5](https://json5.org/). It's not quite used widely.
 </div><div>
 
+#### GeoJSON
+
+"GeoJSON is a format for encoding a variety of geographic data structures".
+
+* See [geojson](https://geojson.org/)
+* Not tested (👻)
+
 ...
 </div></div>

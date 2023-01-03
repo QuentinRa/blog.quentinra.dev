@@ -365,5 +365,15 @@ Stuff that I found, but never read/used yet.
 * see SRM notes
 </div><div>
 
-
+```
+URL
+* Scheme: (protocol) HTTP/HTTPS/...
+* Username:Password@Domain:port/Path?query#Fragment
+* Methods GET, DELETE...
+* Headers
+  * Server: some server
+  * Set-cookie: ... => server send the cookie in every request
+  * ...
+* Response code
+```
 </div></div>

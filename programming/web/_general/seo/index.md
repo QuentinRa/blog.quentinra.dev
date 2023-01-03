@@ -14,26 +14,19 @@
 * [name.com](https://www.name.com/)
 * [instantdomainsearch](https://instantdomainsearch.com/)
 * [gositestat](https://www.gositestat.com/)
+</div><div>
 
 #### Tools
 
 * [webhint](https://webhint.io/) (hints to improve your website)
-* [websiteplanet](https://www.websiteplanet.com/webtools/) (a lot of tools)
-* [sanderheilbron](https://www.sanderheilbron.nl/) (SEO peek is quite handy 😍)
-* [uptrends](https://www.uptrends.com/tools) (👻)
-* [seositecheckup](https://seositecheckup.com/tools) (👻)
-</div><div>
+* [seo-peek](https://www.sanderheilbron.nl/seo-peek) (extension)
 
 #### Crawlers
 
 * [siteliner](https://www.siteliner.com/) (crawler, 250 pages max)
 * [drlinkcheck](https://www.drlinkcheck.com/) (crawler, broken links)
 * [snyk.io](https://snyk.io/website-scanner/) (crawler, vulnerabilities)
-* [webpagetest](https://www.webpagetest.org/) (👻)
-* [website-checker](https://www.ionos.com/tools/website-checker) (👻)
-* [sitechecker](https://sitechecker.pro/) (👻)
 </div></div>
-
 
 <hr class="sep-both">
 
@@ -59,6 +52,10 @@ and [humanstxt.org - Standard](https://humanstxt.org/Standard.html).
 ```html
 <link type="text/plain" rel="author" href="URL/humans.txt"/>
 ```
+
+#### Semantic Web
+
+The goal was to make page easy to understand for robots. Some languages were introduced like RDF, a triple model, in which every piece of knowledge is broken down into `(subject, predicate, object)`. A query language such as SPARQL can be used to query RDF triples.
 </div></div>
 
 <hr class="sep-both">
@@ -241,5 +238,15 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [biq.cloud](https://biq.cloud/rank-intelligence/) <small>(see your website ranking for a keyword, account required)</small>
+* [woorank](https://www.woorank.com/)
+* [webpagetest](https://www.webpagetest.org/)
+* [website-checker](https://www.ionos.com/tools/website-checker)
+* [sitechecker](https://sitechecker.pro/)
+* [protege](https://protege.stanford.edu/)
 </div><div>
+
+* [websiteplanet](https://www.websiteplanet.com/webtools/)
+* [sanderheilbron](https://www.sanderheilbron.nl/)
+* [uptrends](https://www.uptrends.com/tools)
+* [seositecheckup](https://seositecheckup.com/tools)
 </div></div>
