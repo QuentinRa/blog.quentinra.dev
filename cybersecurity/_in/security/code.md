@@ -1,6 +1,6 @@
 # Front-End code exposed
 
-[Go back](../index.md#security)
+[Go back](../../../programming/web/_general/_old/general/index.md#security)
 
 Your code is running in someone else browser, so they can do what they want with it. You should **already know** that using the developers' tools, you can see the code source of a page. Using elements, you can modify the HTML/CSS. Using the console, you can run some JavaScript/modify the JavaScript.
 

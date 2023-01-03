@@ -4,24 +4,12 @@
 
 <hr class="sr">
 
-## Security
 
-I'm still learning, but here is my list
-
-* [Captcha](security/captcha.md): if you want to make sure that your users are real humans (ReCaptcha/hCaptcha)
-* [Front-End code exposed](security/code.md): your code is running in someone else browser, so they can do what they want with it
-* [Secure Apache server](security/apache.md)
-* [Subresource Integrity (SRI)](security/sri.md): it's good to use CDN, but did you know that there are risks?
-* [SSL practices](security/ssl.md): some notes about SSL (SSL+TLS, secure protocols for HTTPS)
-* [Headers](security/headers.md): often overlooked, but the headers send with your page will increase the security, and prevent some well-known attacks
-* [add rel attribute to external links](security/links.md): it seems unneeded as of 2021
-* [forbidden usernames](security/usernames.md): do not let users take "root", "admin", ... as their username
-* [FORM (GET, POST) and URLs](security/url.md): for beginners, some note about "/user/{id}"
 
 **Injections**
 
-* [XSS injections](security/injections/xss.md)
-* [PHP injections](security/injections/php.md)
+* [XSS injections](../../../../../cybersecurity/_in/security/injections/xss.md)
+* [PHP injections](../../../../../cybersecurity/_in/security/injections/php.md)
 
 You will get more notes in the Cybersecurity course.
 

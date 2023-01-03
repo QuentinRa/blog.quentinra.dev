@@ -1,6 +1,6 @@
 # Subresource Integrity (SRI)
 
-[Go back](../index.md#security)
+[Go back](../../../programming/web/_general/_old/general/index.md#security)
 
 This is something **you may have seen** when using CDN such as cdnjs, but didn't look into it (at least that was my case). When you are getting a library from a CDN like [mathjax](https://cdnjs.com/libraries/mathjax), the generated HTML tag is looking like this
 

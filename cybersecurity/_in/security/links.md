@@ -1,6 +1,6 @@
 # Add rel attribute to external links
 
-[Go back](../index.md#security)
+[Go back](../../../programming/web/_general/_old/general/index.md#security)
 
 You should add the attribute rel to a link (according to [webhint](https://webhint.io/docs/user-guide/hints/hint-disown-opener/)), because the link could "redirect to a phishing website looking
 like the original ...".

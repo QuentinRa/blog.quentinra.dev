@@ -1,6 +1,6 @@
 # PHP injections
 
-[Go back](../../index.md#security)
+[Go back](../../../../programming/web/_general/_old/general/index.md#security)
 
 The name "PHP injections" is not very famous, at least it didn't head of it, because this is made of multiples well-known breaches (sessions, file upload, post/get).
 

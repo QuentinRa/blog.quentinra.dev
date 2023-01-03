@@ -1,6 +1,6 @@
 # Headers
 
-[Go back](../index.md#security)
+[Go back](../../../programming/web/_general/_old/general/index.md#security)
 
 This is often overlooked, but settings the headers that your server is sending when it replies to a request, will prevent some well-known attacks, or any leak of information.
 

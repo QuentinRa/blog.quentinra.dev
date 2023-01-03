@@ -184,7 +184,6 @@ Stuff that I found, but never read/used yet. [Old](_old/general/index.md) and [P
 
 **Random**
 
-* Bootstrap icons/others
 * free hosting (webhostapp, [kinsta](https://kinsta.com/)). See also, GitHub pages...
 
 **Apps**
@@ -193,21 +192,21 @@ Stuff that I found, but never read/used yet. [Old](_old/general/index.md) and [P
 * semantic web ([protege](https://protege.stanford.edu/))
 * progressive web apps (PWA)
 * [webhint](https://webhint.io/)
-</div><div>
 
-URLs
+**URLs**
 
 * `href=#`
 * `href=#id`
 * `mailto:email`
+</div><div>
 
-SEO
+**SEO**
 
 * [nitropack](https://nitropack.io/)
 * [statshow](https://www.statshow.com/) (stats)
 * You can configure [Postfix](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-debian-10) to send mails. This is complex, and I read a lot of tutorials (DMarc, SPF, DKim, etc.). You may use [mail-tester.com](https://www.mail-tester.com/) to test your server (don't forget to wait for around 12h before checking again).
 
-wamp
+**wamp**
 
 * <https://sourceforge.net/projects/wampserver/>
 * Update

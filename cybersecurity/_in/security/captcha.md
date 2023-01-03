@@ -1,6 +1,6 @@
 # Captcha
 
-[Go back](../index.md#security)
+[Go back](../../../programming/web/_general/_old/general/index.md#security)
 
 In some cases, you should use a captcha ("**I'm not a robot**"). Someone may write a script trying to brute-force your login form. You can add a captcha and check on your server that the captcha got submitted before processing the login form.
 

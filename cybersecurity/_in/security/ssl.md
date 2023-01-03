@@ -1,6 +1,6 @@
 # SSL practices
 
-[Go back](../index.md#security)
+[Go back](../../../programming/web/_general/_old/general/index.md#security)
 
 It would be pretty useless to use HTTP, if someone can decrypt your communications, right? When a client is connecting to the server, both are agreeing on the way of encrypting the data, among a list that you defined.
 

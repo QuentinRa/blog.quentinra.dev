@@ -1,6 +1,6 @@
 # XSS injections
 
-[Go back](../../index.md#security)
+[Go back](../../../../programming/web/_general/_old/general/index.md#security)
 
 CrossSiteScripting injections, also called **XSS** injections are one of the most well-known and easy ways to inject some code on a website. When you are making a form taking a username, the user can also write **JavaScript** inside the field. Once submitted, nothing happens, but once someone will go on the page where the username is displayed, then some script may be executed.
 
