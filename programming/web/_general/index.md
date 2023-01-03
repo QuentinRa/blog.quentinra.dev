@@ -52,6 +52,79 @@ For more complex apps <small>(PHP, HTTPS...)</small>, you must install a webserv
 
 </div></div>
 
+<hr class="sep-both">
+
+## Webserver configuration notes
+
+😵 *Due to some mistake on my side, these notes were not tested (nor complete) at all* 😵
+
+<div class="row row-cols-md-2"><div>
+
+Change the password of the user provided by the hosting provider.
+
+```
+$ sudo passwd xxx
+```
+
+Upgrade packages.
+
+```
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt-get dist-upgrade
+```
+
+Disable `ssh` login for root/..., and change the default port.
+
+```
+$ sudo vim /etc/ssh/sshd_config
+$ sudo systemctl restart sshd
+```
+
+Install a firewall.
+
+```
+$ sudo apt install fail2ban
+$ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+$ sudo vim /etc/fail2ban/jail.local
+```
+</div><div>
+
+Add a non-root user.
+
+```
+$ sudo adduser yyy
+```
+
+Permissions for files/folders.
+
+```bash
+# ➡️ If you're using public_html
+chmod 711 ~
+chmod 711 ~/public_html
+# ➡️The least permissions
+chmod 700 file.php # for a .php
+chmod 744 file.html # for a .html
+chmod 711 folder # for a folder
+```
+</div></div>
+
+<hr class="sep-both">
+
+## 😍 Developer tools (devtools) 😍
+
+The devtools are tools for developer. You can open it using **F12**, **{Left-click} > Inspect**, or **Settings > ... tools > development tools**...
+
+* **Tools > elements** or **CTRL+SHIFT+I**: see the **HTML** code of the page, you can edit it, and you can see the **CSS**
+* **Tools > <i class="bi bi-box-arrow-in-up-left"></i>** or **CTRL+SHIFT+C**: easily find the HTML code of something <small>(by clicking on it after the mode was triggered)</small>
+* **Tools > <i class="bi bi-window"></i>** or **CTRL+SHIFT+M**: you can preview the appearance of your website on a phone/tablet/...
+* **Tools > Console**: you can execute some **JavaScript**, try `5+5`.
+* **Tools > Sources**: see the code source of the page <small>(see also **Tools > Application**)</small>
+* **Tools > Application**: see the local storage, the cookies, etc.
+* **Tools > Problems**: you can see problems using webhint
+* **Tools > LightHouse**: you can see the evaluation of a page by LightHouse (Google)
+
+➡️ Some menus are available after you enabled them <small>(the "+" in Edge, the "... > more tools" in Chrome, etc.)</small>.
 
 <hr class="sep-both">
 

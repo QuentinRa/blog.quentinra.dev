@@ -5,23 +5,6 @@
 
 <hr class="sr">
 
-## Developers' tools (or Devs Tools) 😍
-
-This is most likely the most important thing. Either by pressing **F12** (sometimes), **{Left-click} > Inspect**, or **Settings > ... tools > development tools**, or one of the shortcuts below, you can open it.
-
-* **Tools > elements** or **CTRL+SHIFT+I**: see the **HTML** code of the page, you can edit it, and you can see the **CSS**
-* **Tools > <i class="bi bi-box-arrow-in-up-left"></i>** or **CTRL+SHIFT+C**: easily find the code of something, by clicking on it after the mode was triggered
-* **Tools > <i class="bi bi-window"></i>** or **CTRL+SHIFT+M**: you can preview the appearance of your website on a phone/tablet/... (**responsive design in CSS**)
-* **Tools > Console**: you can execute some **JavaScript**, try `5+5`.
-* **Tools > Sources**: see the code source of the page (and at  the bottom of **Tools > Application**)
-* **Tools > Application**: see the localStorage (JS), the cookies (PHP), etc.
-* **Tools > Problems**: you can see problems using webhint
-* **Tools > LightHouse**: you can see the evaluation of a page by LightHouse (Google)
-
-> **Note**: you may not have every menu that I listed here. Some are available after you enabled them (the + in edge, the "... > more tools" in chrome, etc.).
-
-<hr class="sr">
-
 ## Security
 
 I'm still learning, but here is my list
@@ -110,10 +93,3 @@ It's better when everything is automated, right? Here is my list of links that m
 * [Find broken links](https://www.drlinkcheck.com/) or write some code to crawl the links on your website and use [httpstatus](https://httpstatus.io/)
 * [Check robots.txt, sitemap, compress images, etc.](https://www.websiteplanet.com/webtools/)
 * [search/generate domain name](https://instantdomainsearch.com)
-
-<hr class="sl">
-
-## Sources
-
-* <https://github.com/RaymiiOrg/raymiiorg.github.io>
-* [web.dev](https://web.dev/blog/): Google 😬, but there are quite a lot of good articles

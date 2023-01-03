@@ -1,6 +1,6 @@
 # Apache2 webserver
 
-😵 *Due to some mistake on my side, these notes were not tested at all* 😵
+😵 *Due to some mistake on my side, these notes were not tested (nor complete) at all* 😵
 
 <div class="row row-cols-md-2"><div>
 
@@ -21,49 +21,6 @@ $ sudo apt install apache2
 **Where to learn**?
 
 * [digitalocean](https://www.digitalocean.com/community/tags/apache) (🤗)
-</div></div>
-
-<hr class="sep-both">
-
-## Optional (for online servers)
-
-<div class="row row-cols-md-2"><div>
-
-Change the password of the user provided by the hosting provider.
-
-```
-$ sudo passwd xxx
-```
-
-Upgrade packages.
-
-```
-$ sudo apt update
-$ sudo apt upgrade
-$ sudo apt-get dist-upgrade
-```
-
-Disable `ssh` login for root/..., and change the default port.
-
-```
-$ sudo vim /etc/ssh/sshd_config
-$ sudo systemctl restart sshd
-```
-</div><div>
-
-Install a firewall.
-
-```
-$ sudo apt install fail2ban
-$ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
-$ sudo vim /etc/fail2ban/jail.local
-```
-
-Add a non-root user.
-
-```
-$ sudo adduser yyy
-```
 </div></div>
 
 <hr class="sep-both">
@@ -244,15 +201,4 @@ Stuff that I found, but never read/used yet.
 AllowOverride All
 ```
 </div><div>
-
-```bash
-# allows access to public_html to the web server
-chmod 711 ~
-chmod 711 ~/public_html
-# the least permissions
-chmod 700 file.php # for a .php
-chmod 744 file.html # for a .html
-chmod 711 folder # for a folder
-```
-
 </div></div>
