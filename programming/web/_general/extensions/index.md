@@ -78,6 +78,8 @@ The version 2 is deprecated, make sure to use version 3. 🚀
 { "manifest_version": 3 }
 ```
 
+#### Metadata
+
 The `name`, the `description`, and the `version` are up to you.
 
 ```
@@ -100,9 +102,88 @@ The icon should be provided in multiple sizes: `16`, `32`, `48` and `128`.
   }
 }
 ```
+
+#### Popup
+
+To show a popup when the user clicks on the plugin icon, use `action/default_popup`.
+
+```json
+{
+  "action": {
+    "default_popup": "html/popup.html"
+  }
+}
+```
+
+<details class="details-n">
+<summary><code>html/popup.html</code></summary>
+
+A simple, empty, `popup.html`.
+
+```html
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello, World</title>
+</head>
+<body>
+<div>
+    <p>Hello, World</p>
+</div>
+</body>
+</html>
+```
+</details>
+
 </div><div>
 
-...
+#### Content
+
+If you want to load one or more scripts that **needs to interact with the DOM**, use **content_script**.
+
+```json
+{
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/main.js"]
+    }
+  ]
+}
+```
+
+You can use `matches` to filter which URLs will execute the script.
+
+```json
+{
+  "content_scripts": [
+    {
+      "matches": ["https://example.com/*"],
+      "js": ["scripts/main.js"]
+    }
+  ]
+}
+```
+
+#### Worker
+
+If you want to load one or more scripts that **needs to access the browser features** <small>(bookmarks...)</small>, use **background**.
+
+```json
+{
+  "background": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/bg.js"]
+    }
+  ]
+}
+```
+
+A predefined variable will allow you to access the browser
+
+* 👉 On Chrome, the variable is called `chrome`
+* 👉 On Firefox, the variable is called `browser`
 </div></div>
 <hr class="sep-both">
 
@@ -122,10 +203,6 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 ```
-"background": {
-    "scripts": ["scripts/bg.js"]
-},
-  
 chrome.browserAction.onClicked.addListener((tab) => {
   chrome.runtime.reload();
 });
