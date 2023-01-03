@@ -68,6 +68,44 @@ console.log("Hello, World")
 
 <hr class="sep-both">
 
+### Manifest.json
+
+<div class="row row-cols-md-2"><div>
+
+The version 2 is deprecated, make sure to use version 3. 🚀
+
+```json
+{ "manifest_version": 3 }
+```
+
+The `name`, the `description`, and the `version` are up to you.
+
+```
+{
+  "name": "Hello, World",
+  "version": "0.0.1",
+  "description": "Print \"Hello, World\" in the console",
+}
+```
+
+The icon should be provided in multiple sizes: `16`, `32`, `48` and `128`.
+
+```json
+{
+  "icons": {
+    "16": "icons/hello_world_16.png",
+    "32": "icons/hello_world_32.png",
+    "48": "icons/hello_world_48.png",
+    "128": "icons/hello_world_128.png"
+  }
+}
+```
+</div><div>
+
+...
+</div></div>
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -80,9 +118,6 @@ Stuff that I found, but never read/used yet.
 
 ```
 "homepage_url": "XXX",
-"browser_action": {
-    "default_icon": "icons/hello_world.png"
-},
 ```
 </div><div>
 
