@@ -60,11 +60,6 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 * [confirmic](https://landing.confirmic.com/) (👻)
 * [axeptio](https://www.axeptio.eu) (👻)
-
-##### Domain names
-
-* [namecheap](https://nc.me/)
-* [name.com](https://www.name.com/)
 </div><div>
 
 ##### Generate TOS/PP/...

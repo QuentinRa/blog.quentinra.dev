@@ -4,6 +4,28 @@
 
 <hr class="sep-both">
 
+## General
+
+<div class="row row-cols-md-2"><div>
+
+#### Domain names
+
+* [namecheap](https://nc.me/)
+* [name.com](https://www.name.com/)
+* [instantdomainsearch](https://instantdomainsearch.com/)
+* [gositestat](https://www.gositestat.com/)
+</div><div>
+
+#### Tools
+
+* [drlinkcheck](https://www.drlinkcheck.com/) (crawler, broken links)
+* [snyk.io](https://snyk.io/website-scanner/) (crawler, vulnerabilities)
+* [websiteplanet](https://www.websiteplanet.com/webtools/) (a lot of tools)
+</div></div>
+
+
+<hr class="sep-both">
+
 ## Accessibility
 
 <div class="row row-cols-md-2"><div>
@@ -34,27 +56,6 @@ and [humanstxt.org - Standard](https://humanstxt.org/Standard.html).
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-#### Titles
-
-* You must use exactly one header "h1"
-* Title's length should be between 55-65 characters
-
-```html
-<title>MainTopic - title1, title2, title3</title>
-```
-
-```html
-<title>MainTopic - title1, title2 | Organization</title>
-```
-
-<br>
-
-#### Descriptions
-
-You should write a good and unique description of your pages. The size displayed in the results is usually 110 characters (mobile), and around 130 on a computers.
-
-<br>
-
 #### URL/robots.txt
 
 ➡️ Tell which files robots shouldn't access, and link your sitemap.
@@ -69,7 +70,8 @@ Disallow:
 # Link to the sitemap (optional)
 Sitemap: URL/sitemap.xml
 ```
-</div><div>
+
+<br>
 
 #### Canonical URLs
 
@@ -82,6 +84,27 @@ header("Link: <https://example.com/index.php>; rel=\"canonical\"");
 ```html
 <link rel="canonical" href="https://example.com/index.php" />
 ```
+
+<br>
+
+#### Titles
+
+* You must use exactly one header "h1"
+* Title's length should be between 55-65 characters
+
+```html
+<title>MainTopic - title1, title2, title3</title>
+```
+
+```html
+<title>MainTopic - title1, title2 | Organization</title>
+```
+
+</div><div>
+
+#### Descriptions
+
+You should write a good and unique description of your pages. The size displayed in the results is usually 110 characters (mobile), and around 130 on a computers.
 
 <br>
 
@@ -112,6 +135,56 @@ Once you created a sitemap, you have to share it, as explained [here](https://ah
 </urlset>
 ```
 </details>
+
+<br>
+
+#### Structured Data
+
+I'm unsure if this helps with SEO, but it allows search engines, if they want to, to display **rich results**, like the Wikipedia page shown for some results.
+
+* [Test your structured data (Google)](https://developers.google.com/search/docs/advanced/structured-data)
+* [structured-data.org](http://www.structured-data.org/)
+* [json-ld.org](https://json-ld.org/)
+* [php-json-ld](https://github.com/digitalbazaar/php-json-ld)
+
+
+You can look for websites to generate structural data, to learn the syntax, [such as this one](https://attrock.com/schema-markup-generator/). Note that you may need to escape the "\\".
+
+<details class="details-e">
+<summary>Example</summary>
+
+```html
+<script type="application/ld+json">
+{
+    "@context": "https:\/\/schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/example.com\/"
+    },
+    "headline": "...",
+    "description": "...",
+    "author": {
+        "@type": "Organization",
+        "name": "XXX",
+        "url": "https:\/\/example.com\/"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "XXX",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/example.com\/assets\/icon64.png",
+            "width": "32",
+            "height": "32"
+        }
+    }
+}
+</script>
+```
+</details>
+
+
 </div></div>
 
 <hr class="sep-both">
@@ -140,6 +213,27 @@ Basically, resources are cached on nearby servers to reduce the loading time of 
 * Use `.webp` instead of `.jpg`/`.png`
 * See [imagekit](https://imagekit.io/) (👻)
 * Cache images ([see article](https://web.dev/http-cache/))
+</div></div>
 
-...
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [biq.cloud](https://biq.cloud/rank-intelligence/) (see your website ranking for a keyword, **need to register**)
+* [siteliner](https://www.siteliner.com/) (**whole site, up to 250 pages**, SEO)
+* [SEO tools](https://www.sanderheilbron.nl/) (SEO peek is quite handy 😍)
+* [SEO tools: speed, CDN, headers](https://www.uptrends.com/tools)
+</div><div>
+
+* [WebHint](https://webhint.io/) (security, accessibility, compatibility, performance) - **edit 01/11/2021, the online scanner was removed 😬**
+* [ionos](https://www.ionos.com/tools/website-checker) (general, SEO, performance, secure)
+* [sitechecker](https://sitechecker.pro/) (**whole site, up to 150 pages**, general, SEO, HTML, but you **can't see where** without starting a trial)
+* [Google's pagespeed](https://developers.google.com/speed/pagespeed/insights/) (performance)
+* [Google's Lighthouse](https://web.dev/measure/) (performance, accessibility, SEO, best practices, **do not forget to click on view report**)
+* [SEO site checkup](https://seositecheckup.com/analysis) (SEO, security), you can [test every tool individually](https://seositecheckup.com/tools) (limited to 1/day)
+* [webpagetest](https://www.webpagetest.org/) (😍 the best, SEO, performance, security)
 </div></div>

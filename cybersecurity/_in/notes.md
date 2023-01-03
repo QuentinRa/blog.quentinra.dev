@@ -22,6 +22,7 @@
 * https://curiositykillscolby.com/
 * https://www.grc.com/haystack.htm
 * https://mathiasbynens.github.io/rel-noopener/
+* [httpstatus](https://httpstatus.io/)
 
 <hr>
 
