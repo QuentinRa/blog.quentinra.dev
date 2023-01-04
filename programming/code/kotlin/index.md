@@ -93,15 +93,37 @@ fun main() {
     println("Hello World!")
 }
 ```
-</div><div>
 
 You can use `TODO` to create a to-do. If a function with a to-do is called, it will raise an exception.
 
 ```kotlin
 TODO("Not yet implemented")
 ```
+</div><div>
 
-...
+#### Lambdas
+
+In kotlin, there are many functions taking another function (lambda).
+
+```
+fun xxx(yyy: (Int) -> String) { /* ... */ }
+// possible usage
+xxx( fun (x: Int) : String = x.toString() )
+```
+
+We usually use the **trailing lambda syntax**. The parameter is available in a variable called `it`.
+
+```
+xxx { it.toString() }
+```
+
+We can explicitely add the return type and/or the argument name.
+
+```
+xxx { v: Int ->
+    return@xxx v.toString()
+}
+```
 </div></div>
 
 <hr class="sep-both">
@@ -340,18 +362,6 @@ anObject.local // ❌ (not an attribute)
 val another = SomeClass(3)
 ```
 
-#### Visibility
-
-By default, classes members (methods, and attributes) are **public**. You can change the visibility to `private`, `protected`, or `internal`.
-
-```kotlin
-class SomeClass {
-  private var attribute1 = 5
-  protected val attribute2 = 5
-  protected fun myMethod() {}
-}
-```
-
 #### Getters/Setters
 
 You may use backing fields. A private attribute which is either `var`/`val`, along a public attribute which may have a more restrictive type. In the example below, others can't add elements in the list.
@@ -381,7 +391,6 @@ var xxx : Int
         // ...
     }
 ```
-</div><div>
 
 #### Static
 
@@ -410,6 +419,19 @@ SomeClass.zzz()
 ```
 
 ➡️  If the companion object extends `YYY`, you can pass either the Class (`SomeClass`) or the companion object (`SomeClass.XXX`).
+</div><div>
+
+#### Visibility
+
+By default, classes members (methods, and attributes) are **public**. You can change the visibility to `private`, `protected`, or `internal`.
+
+```kotlin
+class SomeClass {
+  private var attribute1 = 5
+  protected val attribute2 = 5
+  protected fun myMethod() {}
+}
+```
 
 #### Inheritance
 
@@ -466,6 +488,29 @@ fun Int.square(): Int {
 }
 // ➡️ Can be called from any instance
 5.square()
+```
+
+#### Object
+
+An `object` is the same as a Singleton.
+
+```
+object XXX {
+    const val YYY = 1
+    fun zzz() {}
+}
+
+// ...
+XXX.YYY
+XXX.zzz()
+```
+
+#### Data class
+
+A dataclass is a class to store data.
+
+```kotlin
+data class XXX(private val yyy: Int)
 ```
 
 </div></div>
@@ -571,6 +616,7 @@ Stuff that I found, but never read/used yet.
 * top-level function (not in a class)
 * top-level variables (not in a class)
 * delegation (`private val xxx: YYY by yyy()`)
+* `lateinit`
 
 ```
 @JvmStatic
