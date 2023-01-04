@@ -23,7 +23,6 @@ Use **var** to declare a variable
 ```kotlin
 var someVar1 : Int = 5
 var someVar2 = 5 // inferred
-var someVar3 : String? = null
 ```
 
 Use **val** to declare a constant
@@ -34,6 +33,14 @@ val someVal2 = 5 // inferred
 ```
 
 ➡️ Semicolons ( `;` ) are optional.
+
+By default, Kotlin variables cannot be `null`. To declare a nullable variable, you must add `?` after the type.
+
+```kotlin
+var someVar3 : String? = null
+someVar3?.toString() // Optional chaining
+someVar3!!.toString() // Assert non-null
+```
 </div><div>
 
 Types are implicit. There are a few changes with Java.
@@ -43,13 +50,20 @@ Types are implicit. There are a few changes with Java.
 * `Int` (kotlin) is `Integer` (Java)
 * `Number`, `Float`, `Double`, `String`, `Char`
 
-By default, Kotlin variables cannot be null. To declare a nullable variable, you must add `?` after the type.
+You can convert an XXX to an YYY with `.toYYY()`
 
 ```kotlin
-var someVar3 : String? = null
-someVar3?.toString() // Optional chaining
-someVar3!!.toString() // Assert non-null
+val d = "5".toDouble()
+val d = "5".toDoubleOrNull() // instead of using exceptions
 ```
+
+You can use `$var`/`${code}` to use a variable/some code in a string.
+
+```
+val str = "The value of d is $d"
+val str = "The square of d is ${d * d}"
+```
+
 </div></div>
 
 <hr class="sep-both">
@@ -131,11 +145,28 @@ when (xxx) {
 ```
 </div><div>
 
-There are a new bloc `repeat` to repeat the code inside X times.
+➡️ A new bloc `repeat` to repeat the code inside X times.
 
 ```kotlin
 repeat(5) { /* job */ }
 ```
+
+#### Scope functions
+
+[Documentation](https://kotlinlang.org/docs/scope-functions.html)
+
+➡️ A new bloc `apply` to factorize successive calls on the same object. The returned value is `x`.
+
+```kotlin
+x.apply { /* x == this in this bloc */ }
+```
+
+➡️ A new bloc `with` to factorize successive calls on the same object. The returned value is the last expression of the block.
+
+```kotlin
+with(x) { /* x == this in this bloc */ }
+```
+
 </div></div>
 
 <hr class="sep-both">

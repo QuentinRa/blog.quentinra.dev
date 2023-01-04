@@ -19,20 +19,9 @@ https://kotlinlang.org/docs/visibility-modifiers.html#class-members
 
 "$value"
 
-parent/superclass/baseclass
-child/subclass
-Root or top-level class
-
-with (variable) {
-    // access all properties of variables without variable.
-}
-
 -------------
 lateinit
 -------------
-
-string.toDouble()
-string.toDoubleOrNull()
 
 List<T> listOf(vals) / MutableList<T> mutableListOf<Type>()
 println("List: $list")
@@ -45,15 +34,8 @@ for (e in c){}
 5 downTo 1
 3..6 step 2
 
-override fun toString(): String {
-    // ...
-}
-
 vararg param
 _ for unused parameter
-
-!!. assert non null
-?. if non null
 
 xxx.yyy {
     return@unit_function return_type_if_any
@@ -65,10 +47,6 @@ xxx as? YYY
 - "data class XXX": classes only used to store/manipulate data
 - data classes must have at least one property defined.
 - create a "date source" that loads data
-
-
-init {
-}
 
 object Layout {
    val XXX = 1
