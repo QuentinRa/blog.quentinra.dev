@@ -54,34 +54,27 @@ someVar3!!.toString() // Assert non-null
 
 <hr class="sep-both">
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+## Core
 
-<hr class="sr">
+<div class="row row-cols-md-2"><div>
 
-## Basics
-
-<div class="row row-cols-md-2 mx-0"><div>
-
-As you would in Java, everything is starting from the main function.
-
-* "args" is optional if not used
-* Unit is implicit, so it's optional too
-* There is no need for "main" to be in a class/static
-* There is some "aliases" for functions such as "System.out.println" which has an alias "println".
-* You do not need to concatenate strings, you can use `$` to inject code, such as `"Random number: ${5+2}"`
-</div><div>
+The main function can be put in Any file.
 
 ```kotlin
 fun main(args: Array<String>) : Unit {
     println("Hello World!")
 }
+// or
 fun main() {
     println("Hello World!")
 }
 ```
+</div><div>
+
+...
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
 ## Functions
 
@@ -147,28 +140,32 @@ class SomeClass {
   // public
   var attribute1 = 5
   val attribute2 = 5
+
+  fun myMethod() {}
 }
 ```
 
-Instantiation is done like in Java, but without the new keyword <small><s>(so, more like in C++)</s></small>.
+Instantiation is done **without** calling the new keyword
 
 ```kotlin
 val anObject = SomeClass()
 ```
 </div><div>
 
-You can add a constructor, and methods, like for records in Java
+You can declare attributes directly inside the constructor.
 
 ```kotlin
-class SomeClass(val attribute: Int) {
-    fun myMethod() {}
+class SomeClass(val attribute: Int, local: String) {
+    init {
+        // local is only available here
+    }
 }
 
 val anObject = SomeClass(5)
-anObject.myMethod()
+anObject.attribute // 👌
 ```
 
-You can add a visibility <small>(explicit public, private, protected, internal...)</small> before an attribute/method.
+You can add a visibility <small>(public, private, protected, internal...)</small>.
 
 ```kotlin
 class SomeClass {
@@ -176,13 +173,4 @@ class SomeClass {
   protected val attribute2 = 5
 }
 ```
-
 </div></div>
-
-<hr class="sr">
-
-## References
-
-* [Android Basics Kotlin Vocab](https://developer.android.com/courses/android-basics-kotlin/android-basics-kotlin-vocab)
-* [developer.android.com](https://developer.android.com/guide)
-* [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)

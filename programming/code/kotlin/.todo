@@ -1,3 +1,5 @@
+* You do not need to concatenate strings, you can use `$` to inject code, such as `"Random number: ${5+2}"`
+
 class TTT {
     companion object XXX : YYY {}
 }
