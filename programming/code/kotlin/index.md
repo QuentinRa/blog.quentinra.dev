@@ -1,8 +1,60 @@
 # Kotlin programming
 
-Kotlin is a open-source, modern, programming language developed by JetBrains, which is also the main language used for Android applications. Kotlin's syntax is a sort of mix between Java, R, and Typescript, while the language itself is an improved version of Java, with more safety checks, and more flexibility, while being less verbose/more compact.
+<div class="row row-cols-md-2"><div>
 
-> Kotlin code can be converted in Java, through the generated code is somewhat unreadable.
+Kotlin is a open-source, modern, programming language developed by JetBrains since 2011.
+
+* 👉 More concise, simplified, version of Java
+* 👉 Can be converted back to a `.java`
+* 👉 Main language used for Android applications
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Basics
+
+<div class="row row-cols-md-2"><div>
+
+Use **var** to declare a variable
+
+```kotlin
+var someVar1 : Int = 5
+var someVar2 = 5 // inferred
+var someVar3 : String? = null
+```
+
+Use **val** to declare a constant
+
+```kotlin
+val someVal1 : Int = 5
+val someVal2 = 5 // inferred
+```
+
+➡️ Semicolons ( `;` ) are optional.
+</div><div>
+
+Types are implicit. There are a few changes with Java.
+
+* `Unit` (kotlin) is `void` (Java)
+* `Any` (kotlin) is `Object` (Java)
+* `Int` (kotlin) is `Integer` (Java)
+* `Number`, `Float`, `Double`, `String`, `Char`
+
+By default, Kotlin variables cannot be null. To declare a nullable variable, you must add `?` after the type.
+
+```kotlin
+var someVar3 : String? = null
+someVar3?.toString() // Optional chaining
+someVar3!!.toString() // Assert non-null
+```
+</div></div>
+
+<hr class="sep-both">
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <hr class="sr">
 
@@ -15,8 +67,8 @@ As you would in Java, everything is starting from the main function.
 * "args" is optional if not used
 * Unit is implicit, so it's optional too
 * There is no need for "main" to be in a class/static
-* There is no need for `;` (semicolon)
 * There is some "aliases" for functions such as "System.out.println" which has an alias "println".
+* You do not need to concatenate strings, you can use `$` to inject code, such as `"Random number: ${5+2}"`
 </div><div>
 
 ```kotlin
@@ -26,43 +78,6 @@ fun main(args: Array<String>) : Unit {
 fun main() {
     println("Hello World!")
 }
-```
-</div></div>
-
-
-<hr class="sl">
-
-## Variables, and types
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-| Type                       | Note                                          |
-|----------------------------|-----------------------------------------------|
-| Unit                       | `void` in Java.                               |
-| Any                        | `Object` in Java.                             |
-| Int, Number, Float, Double |                                               |
-| String, Char               |                                               |
-| IntRange                   | ex: `1..6`. You can call `.random()` on it... |
-
-* If a type accept the value null, then you must add a `?` after the type.
-* Types are usually inferred, no need to explicitly write them
-* You do not need to concatenate strings, you can use `$` to inject code, such as `"Random number: ${5+2}"`
-
-</div><div>
-
-Use **var** to declare a variable
-
-```kotlin
-var someVar1 : Int = 5
-var someVar2 = 5
-var someVar3 : String? = null
-```
-
-Use **val** to declare a constant
-
-```kotlin
-val someVal1 : Int = 5
-val someVal2 = 5
 ```
 </div></div>
 

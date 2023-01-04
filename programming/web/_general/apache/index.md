@@ -66,7 +66,6 @@ $ sudo apache2ctl configtest
 Some modules
 
 ```
-$ sudo a2enmod http2
 $ sudo a2enmod mod_headers
 $ sudo a2enmod headers
 $ sudo a2enmod ssl
@@ -84,7 +83,7 @@ $ sudo chmod -R 755 /var/www/xxx/
 
 <hr class="sep-both">
 
-## HTTP2.0 (old)
+## HTTP2
 
 <div class="row row-cols-md-2"><div>
 
