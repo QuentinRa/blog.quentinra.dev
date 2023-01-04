@@ -1,6 +1,10 @@
 # Virtual local server
 
-[Go back](../_old/general/index.md#webserver)
+**wamp**
+
+* <https://sourceforge.net/projects/wampserver/>
+* Update
+* Download addons
 
 > Note: when installing, you will be prompted to pick a browser. If yours is not included in the list,
 > * write "Firefox" (example) in the search bar

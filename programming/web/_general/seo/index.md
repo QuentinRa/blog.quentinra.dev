@@ -13,7 +13,13 @@
 * [namecheap](https://nc.me/)
 * [name.com](https://www.name.com/)
 * [instantdomainsearch](https://instantdomainsearch.com/)
-* [gositestat](https://www.gositestat.com/)
+* [gositestat](https://www.gositestat.com/) / [statshow](https://www.statshow.com/)
+
+#### Hosting
+
+* webhostapp <small>(free, not recommended)</small>
+* [kinsta](https://kinsta.com/) <small>(👻)</small>
+* GitHub pages
 </div><div>
 
 #### Tools
@@ -38,7 +44,7 @@
 
 More at [webhint.io/Apple Touch Icon](https://webhint.io/docs/user-guide/hints/hint-apple-touch-icons/).
 
-```html
+```html!
 <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
 <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
 ```
@@ -49,13 +55,15 @@ More at [webhint.io/Apple Touch Icon](https://webhint.io/docs/user-guide/hints/h
 Learn more about it at [humanstxt.org](https://humanstxt.org/),
 and [humanstxt.org - Standard](https://humanstxt.org/Standard.html).
 
-```html
+```html!
 <link type="text/plain" rel="author" href="URL/humans.txt"/>
 ```
 
+<br>
+
 #### Semantic Web
 
-The goal was to make page easy to understand for robots. Some languages were introduced like RDF, a triple model, in which every piece of knowledge is broken down into `(subject, predicate, object)`. A query language such as SPARQL can be used to query RDF triples.
+The goal was to make page easy to understand for robots. Some languages were introduced like RDF, a triple model, in which every piece of knowledge is broken down into `(subject, predicate, object)`. A query language called SPARQL can query RDF triples.
 </div></div>
 
 <hr class="sep-both">
@@ -249,4 +257,5 @@ Stuff that I found, but never read/used yet.
 * [sanderheilbron](https://www.sanderheilbron.nl/)
 * [uptrends](https://www.uptrends.com/tools)
 * [seositecheckup](https://seositecheckup.com/tools)
+* [nitropack](https://nitropack.io/)
 </div></div>

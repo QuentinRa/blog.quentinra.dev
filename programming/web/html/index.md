@@ -155,6 +155,9 @@ Use `<a>Text</a>` to create a link. The user will see `Text`.
 <a href="test.html">Link to a local file</a>
 <a href="https://duckduckgo.com/">External link</a>
 <a href="..." target="_blank">Open in a new tab</a>
+<a href="#">Do nothing</a>
+<a href="#id">Move to the div id="#id"</a>
+<a href="mailto:a@b.c">Send a mail to xxx</a>
 ```
 
 <br>
@@ -537,7 +540,7 @@ Stuff that I found, but never read/used yet.
 <a download="xxx"></a>
 
 <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
-link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+<link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
 
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#333333">

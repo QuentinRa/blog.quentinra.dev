@@ -44,6 +44,13 @@
               "desc": "HTML (markup language).",
               "icon": "<i class=\"bi bi-filetype-html\"></i>",
               "hidden": false
+            },
+            {
+              "tag": "web/html/icons.md",
+              "name": "Icons",
+              "desc": "Icons (SVG) and WebFonts.",
+              "icon": "<i class=\"bi bi-filetype-html\"></i>",
+              "hidden": false
             }
           ],
           "🪄 Frameworks 💫": [
