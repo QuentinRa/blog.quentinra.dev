@@ -11,54 +11,17 @@ rollButton.setOnClickListener {
 trailing lambda syntax.
 https://kotlinlang.org/docs/reference/lambdas.html#passing-a-lambda-to-the-last-parameter
 
-when (variable) {
-    value -> job
-    value -> {
-        job
-    }
-    else -> job
-}
-
-val value = when(variable) {
-    value -> new_value
-}
-
-is Type (=> Java instead of)
 value in 1..6/???
 
 https://kotlinlang.org/docs/home.html
 https://play.kotlinlang.org/byExample/02_control_flow/01_When
 https://kotlinlang.org/docs/visibility-modifiers.html#class-members
 
-repeat(5) { /* job */ }
-basically
-i=0
-while(i<5) {
-    i++; // i unused
-    /* job */
-}
-
 "$value"
 
 parent/superclass/baseclass
 child/subclass
 Root or top-level class
-
-abstract class AClass(){
-    abstract val xxx: String
-
-    abstract fun aName(): XXX
-}
-
-class AClass : AnotherClass {]
-class AClass : AnotherClass(...) {
-    override val xxx = "value"
-
-    override fun aName(): XXX {}
-}
-super.xxx()
-
-open class AClass {}
 
 with (variable) {
     // access all properties of variables without variable.

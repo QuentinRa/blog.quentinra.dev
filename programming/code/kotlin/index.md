@@ -82,6 +82,64 @@ TODO("Not yet implemented")
 
 <hr class="sep-both">
 
+## Control-flow
+
+<div class="row row-cols-md-2"><div>
+
+There are a few major changes compared to Java.
+
+* ➡️ `instanceof` was replaced by `is`.
+
+```diff
+- if (xxx instanceof SomeClass yyy) {}
++ if (xxx is SomeClass) {
++    xxx.zzz() // ➡️ no cast in yyy needed!
++}
+```
+
+* ➡️ The ternary operator was removed (😵)
+
+```diff
+-int x = true ? 0 : 1
++val x = if (true) 0 else 1
+```
+
+* ➡️ `switch` was replaced by `when`
+
+```kotlin
+// do something
+when (xxx) {
+    yyy -> println("xxx=yyy")
+    zzz -> println("xxx=zzz")
+    else -> {}
+}
+// return a value
+val x = when(xxx) {
+    yyy -> true
+    else -> false
+}
+```
+
+The major change with this new syntax, is that we can do other things in a `when` that simply comparing with `==`.
+
+```kotlin
+when (xxx) {
+    is A -> println("xxx is an instance of A")
+    is B -> println("xxx is an instance of B")
+    else -> println("???")
+}
+```
+</div><div>
+
+There are a new bloc `repeat` to repeat the code inside X times.
+
+```kotlin
+repeat(5) { /* job */ }
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Functions
 
 <div class="row row-cols-md-2"><div>
@@ -250,6 +308,20 @@ class AnotherClass : A, B {
     override fun a() {
         super<A>.a()
     }
+}
+```
+
+Attributes can be abstract now
+
+```kotlin
+abstract class AClass(){
+    abstract val xxx: String
+    abstract fun aName(): XXX
+}
+
+class AnotherClass : AClass() {
+    override val xxx: String = "10"
+    override fun aName(): Int { return 0 }
 }
 ```
 
