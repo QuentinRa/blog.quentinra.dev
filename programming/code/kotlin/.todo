@@ -1,35 +1,17 @@
-Arrays#joinToString
-
-rollButton.setOnClickListener {
-    "it" is a View
-}
+-------------
+rollButton.setOnClickListener {}
 trailing lambda syntax.
 https://kotlinlang.org/docs/reference/lambdas.html#passing-a-lambda-to-the-last-parameter
-
--------------
-lateinit
--------------
-
-List<T> listOf(vals) / MutableList<T> mutableListOf<Type>()
-println("List: $list")
-list.size
-list[0] / .get(int) .first() .last() .contains() .reversed() .sorted() .add(T) .addAll(C<T>) .remove(T) .removeAt(int) .isEmpty()
-.clear()
-
-for (e in c){}
-'b'..'g'
-5 downTo 1
-3..6 step 2
-value in 1..6/???
-
-_ for unused parameter
-
 xxx.yyy {
     return@unit_function return_type_if_any
 }
+xxx.yyy {} (lambda expression)
+_ for unused parameter
 
-xxx as YYY
-xxx as? YYY
+(ParamType) -> ReturnType
+=> you could give { v: Type -> expression_evaluated_to_return_type }
+-------------
+lateinit
 
 - "data class XXX": classes only used to store/manipulate data
 - data classes must have at least one property defined.
@@ -39,53 +21,21 @@ object Layout {
    val XXX = 1
 }
 
-listOf arrayOf
-toSet() setOf() mutableSetOf()
-set1 == set2 : true if equals
-
-mutableMapOf<TK, TV>(
-    key to value,
-    ...
-)
-put(key, value)
-m[key] = value
-
-c.forEach { /* ... using it */ }
-c.map { /* generate a new collection applying a transformation on each it.key it.value */ }
-c.filter { /* if true allow, use it */ }
-c.sortedWith {}
-c.shuffled()
-c.take(take_only_n_elements)
-c.sort() but already
-
-.joinToString(", ")
-
-(ParamType) -> ReturnType
-=> you could give { v: Type -> expression_evaluated_to_return_type }
-
-xxx.yyy {} (lambda expression)
-
-private val name get() = value
-    public var x : Any? = null
-        get() = field
-        get() {
-        }
-        set(value) {
-            field = value
-        }
-
----------------
-private val xxx: YYY by yyy()
---------------
-Backing properties like in C#
--------------
-@JvmStatic
-@Throws(FileNotFoundException::class)
-----------
 Kotlin extension function
 
 fun Class.X() {
 }
----------
+-------------
+
+for (e in c){}
+'b'..'g'
+5 downTo 1
+3..6 step 2
+value in 1..6/???
 for (j in max downTo minExcluded)
 for (j in min until maxExcluded)
+
+-----------------
+xxx as YYY
+xxx as? YYY
+-----------------

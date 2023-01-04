@@ -429,6 +429,73 @@ class AnotherClass : AClass() {
 
 <hr class="sep-both">
 
+## Collections
+
+<div class="row row-cols-md-2"><div>
+
+* Create a list
+
+```kotlin
+val list = listOf<Int>()
+val list = mutableListOf<Int>()
+val list = emptyList<Int>()
+
+println("List: $list")
+println("List: ${list.size}")
+println("List: ${list[0]}")
+println("List: ${list.first()}")
+println("List: ${list.last()}")
+// and there are usual functions:
+// add, remove, clear, addAll,
+// isEmpty, contains...
+```
+
+➡️ You can convert a map/an array/a set to a list with `.toList()`.
+
+* Create an array
+
+```kotlin
+val array = arrayOf<Int>()
+// ...
+```
+
+</div><div>
+
+* Usual functions on lists/arrays
+
+```kotlin
+l.forEach { /* ... */ }
+l.map { /* apply a transformation on each element */ }
+l.filter { /* keep values passing the filter */ }
+l.shuffled() // shuffle
+l.take(n) // take "n" elements
+// sort
+l.sorted()
+l.sortedWith {}
+l.joinToString(", ")
+```
+
+* Create a set
+
+```kotlin
+val set = setOf<Int>()
+// ...
+```
+
+* Create a map
+
+```kotlin
+val map = mutableMapOf<String, String>(
+    "key" to "value",
+    // ...
+)
+map["key"] = "value"
+val value : String? = map["key"]
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Random
 
 <div class="row row-cols-md-2"><div>
@@ -449,7 +516,6 @@ thread.start()
 ...
 </div></div>
 
-
 <hr class="sep-both">
 
 ## 👻 To-do 👻
@@ -461,6 +527,12 @@ Stuff that I found, but never read/used yet.
 * Interaction types (`T extends XXX<YYY, ZZZ>  & TTT &  UUU`)
 * top-level function (not in a class)
 * top-level variables (not in a class)
+* delegation (`private val xxx: YYY by yyy()`)
+
+```
+@JvmStatic
+@Throws(FileNotFoundException::class)
+```
 </div><div>
 
 * [dokka](https://github.com/Kotlin/dokka) (documentation)
