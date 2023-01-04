@@ -9,7 +9,10 @@ Kotlin is a open-source, modern, programming language developed by JetBrains sin
 * 👉 Main language used for Android applications
 </div><div>
 
-...
+**Where to learn?**
+
+* [Documentation](https://kotlinlang.org/docs/home.html) 🌍
+* [Playground](https://play.kotlinlang.org/) 🎮
 </div></div>
 
 <hr class="sep-both">
@@ -155,16 +158,31 @@ repeat(5) { /* job */ }
 
 [Documentation](https://kotlinlang.org/docs/scope-functions.html)
 
-➡️ A new bloc `apply` to factorize successive calls on the same object. The returned value is `x`.
+➡️ Use `apply` to factorize successive calls on the same object. The returned value is `xxx` (the caller).
 
 ```kotlin
-x.apply { /* x == this in this bloc */ }
+xxx.apply { /* xxx == this in this bloc */ }
 ```
 
-➡️ A new bloc `with` to factorize successive calls on the same object. The returned value is the last expression of the block.
+➡️ Use `with` to factorize successive calls on the same object. The returned value is the last expression of the block.
 
 ```kotlin
-with(x) { /* x == this in this bloc */ }
+with(xxx) { /* xxx == this in this bloc */ }
+```
+
+➡️ Use `also` to group successive calls using the same object. The returned value is `xxx` (the caller).
+
+```kotlin
+xxx.also { /* xxx is available in a variable "it" */ }
+```
+
+➡️ Use `let` to group successive calls using the same object. The returned value is `xxx` (the caller).
+
+```kotlin
+// if "xxx" could be null, then using "?.let"
+xxx?.let { /* "it" is not null here */ }
+// you can name the argument
+xxx?.let { xxxNonNull -> {} }
 ```
 
 </div></div>
@@ -219,6 +237,14 @@ myFunction(param2 = 5, param1 = "5")
 
 fun myFunction(param1: String = "s", param2: Int = 0) {}
 val five = myFunction(param2 = 5)
+```
+
+You can write variadic functions with `vararg` instead of `...`.
+
+```
+fun x(vararg x: Int) {
+    // x is an Array<Int>
+}
 ```
 </div></div>
 
@@ -360,6 +386,29 @@ class AnotherClass : AClass() {
 
 <hr class="sep-both">
 
+## Random
+
+<div class="row row-cols-md-2"><div>
+
+#### Thread
+
+```kotlin
+val thread = Thread {
+    // Thread.sleep(50)
+    // Thread.currentThread()
+    // ...
+    println("Thread started")
+}
+thread.start()
+```
+</div><div>
+
+...
+</div></div>
+
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -369,5 +418,8 @@ Stuff that I found, but never read/used yet.
 * Interaction types (`T extends XXX<YYY, ZZZ>  & TTT &  UUU`)
 </div><div>
 
+* [dokka](https://github.com/Kotlin/dokka) (documentation)
+* [koin](https://insert-koin.io/) (documentation)
+* [Quick-reference](https://kotlin-quick-reference.com/)
 
 </div></div>
