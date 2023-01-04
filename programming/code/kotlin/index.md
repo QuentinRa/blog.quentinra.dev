@@ -124,8 +124,8 @@ There are a few major changes compared to Java.
 * ➡️ The ternary operator was removed (😵)
 
 ```diff
--int x = true ? 0 : 1
-+val x = if (true) 0 else 1
+-int x = true ? 1 : 0
++val x = if (true) 1 else 0
 ```
 
 * ➡️ `switch` was replaced by `when`
@@ -153,12 +153,42 @@ when (xxx) {
     else -> println("???")
 }
 ```
-</div><div>
 
-➡️ A new bloc `repeat` to repeat the code inside X times.
+➡️ There is a new bloc `repeat` to repeat the code inside X times.
 
 ```kotlin
 repeat(5) { /* job */ }
+```
+
+➡️ There is a new operator to cast a variable: `as`.
+
+```kotlin
+val yyy = xxx as YYY
+val yyy = xxx as? YYY
+```
+</div><div>
+
+➡️ Every `for` was replaced with a `for in`.
+
+```kotlin
+// for "each"
+for (e in listOf<Int>(5, 3)){}
+// for "i=min; i < max; i++"
+// ex: min=0, max=10, from "0" to "9"
+for (i in min until max)
+// for "i=min; i <= max; i++"
+// ex: min=0, max=10, from "0" to "10"
+for (i in min .. max)
+// for "i=max; i > min; i--"
+// ex: max=10, min=0, from "10" to "0"
+for (i in max downTo min)
+```
+
+You can add a step
+
+```kotlin
+// i+=2 giving us 3, 5
+for (i in 3 .. 6 step 2){}
 ```
 
 #### Scope functions
@@ -423,6 +453,19 @@ class AnotherClass : AClass() {
     override val xxx: String = "10"
     override fun aName(): Int { return 0 }
 }
+```
+
+#### Extension function
+
+It's possible to add a function to a class "dynamically".
+
+```kotlin
+// ➡️ Declaration: Class.newMethodName
+fun Int.square(): Int {
+    return this * this
+}
+// ➡️ Can be called from any instance
+5.square()
 ```
 
 </div></div>

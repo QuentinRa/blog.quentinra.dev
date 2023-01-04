@@ -20,22 +20,3 @@ lateinit
 object Layout {
    val XXX = 1
 }
-
-Kotlin extension function
-
-fun Class.X() {
-}
--------------
-
-for (e in c){}
-'b'..'g'
-5 downTo 1
-3..6 step 2
-value in 1..6/???
-for (j in max downTo minExcluded)
-for (j in min until maxExcluded)
-
------------------
-xxx as YYY
-xxx as? YYY
------------------
