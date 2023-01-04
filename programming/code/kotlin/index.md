@@ -62,9 +62,16 @@ val d = "5".toDoubleOrNull() // instead of using exceptions
 
 You can use `$var`/`${code}` to use a variable/some code in a string.
 
-```
+```kotlin
 val str = "The value of d is $d"
 val str = "The square of d is ${d * d}"
+```
+
+There are also functions for null-safe operations
+
+```kotlin
+i?.plus(2) // i+=2 (if not null)
+i?.inc() // i++ (if not null)
 ```
 
 </div></div>
@@ -218,6 +225,12 @@ fun myFunction() : Int { return 5 }
 val five = myFunction()
 ```
 
+Functions with a "simple" body can be inlined
+
+```kotlin
+fun sum(x: Int, y: Int) : Int = x + y
+```
+
 </div><div>
 
 We call a function as you would in Java.
@@ -307,6 +320,36 @@ class SomeClass {
   protected val attribute2 = 5
   protected fun myMethod() {}
 }
+```
+
+#### Getters/Setters
+
+You may use backing fields. A private attribute which is either `var`/`val`, along a public attribute which may have a more restrictive type. In the example below, others can't add elements in the list.
+
+```kotlin
+class XXX {
+    private val _list = mutableListOf<Int>()
+    val list : List<Int> = _list
+}
+```
+
+The syntax below is a shortcut to declare the getter.
+
+```kotlin
+val list : List<Int>
+    get() {
+        return _list
+    }
+```
+
+You can also add a setter the same way
+
+```
+var xxx : Int
+    get() { /* ... */ }
+    set(value) {
+        // ...
+    }
 ```
 </div><div>
 
@@ -416,6 +459,8 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * Interaction types (`T extends XXX<YYY, ZZZ>  & TTT &  UUU`)
+* top-level function (not in a class)
+* top-level variables (not in a class)
 </div><div>
 
 * [dokka](https://github.com/Kotlin/dokka) (documentation)

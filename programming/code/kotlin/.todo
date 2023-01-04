@@ -65,8 +65,6 @@ c.sort() but already
 
 xxx.yyy {} (lambda expression)
 
-str.startsWith("b", ignoreCase = true)
-
 private val name get() = value
     public var x : Any? = null
         get() = field
@@ -76,27 +74,13 @@ private val name get() = value
             field = value
         }
 
-arguments?.let {
-    letterId = it.getString(LETTER).toString()
-}
-
 ---------------
 private val xxx: YYY by yyy()
 --------------
 Backing properties like in C#
-------------
-=> Int?.plus(v)
-=> Int?.inc()
-
-top-level function = not in a class
 -------------
 @JvmStatic
-
-https://en.wikipedia.org/wiki/Short-circuit_evaluation
-----------
-fun getFullName() : String = "$firstName $lastName"
-------------
-let code block will only be executed if the object is not null.
+@Throws(FileNotFoundException::class)
 ----------
 Kotlin extension function
 
@@ -105,4 +89,3 @@ fun Class.X() {
 ---------
 for (j in max downTo minExcluded)
 for (j in min until maxExcluded)
-@Throws(FileNotFoundException::class)
