@@ -1,81 +1,80 @@
-# Virtual local server
+# WAMP Server
 
-**wamp**
+<div class="row row-cols-md-2"><div>
 
-* <https://sourceforge.net/projects/wampserver/>
-* Update
-* Download addons
+WAMP server is a Windows server running Apache, MySQL/MariaDB, and PHP.
 
-> Note: when installing, you will be prompted to pick a browser. If yours is not included in the list,
-> * write "Firefox" (example) in the search bar
-> * right-click -> open file location
-> * **again**, inside the folder, right-click -> open file location
-> * you should have your PATH now
+* 🐓 [Official website](https://www.wampserver.com/)
+* 🥡 [Download link](https://sourceforge.net/projects/wampserver/)
 
-<hr class="sl">
+</div><div>
 
-## How does it work?
+Once installed, and started, you will this icon in the system trail.
 
-Once installed, you need to run it each time you start your computer (sometimes you don't have to). Check the trails icons (the icons next to your sound/battery/...). If AMP is started, you should see this
+<div class="text-center">
 
-![wamp icon](images/wamp.png)
+![wamp icon](_images/wamp.png)
+</div>
 
-The location of your
+➡️ The webserver root is available in `C:\wamp64\www\`<br>
+➡️ The associated URL is `http://localhost/`
+</div></div>
 
-* **webserver root**: `C:\wamp64\www\` (`/var/www/html/` on Linux)
-  * for your path (if needed)
-  * left-click on the icon
-  * click on "www folder"
-* **base/root URL**: `http://localhost/`
+<hr class="sep-both">
 
-<hr class="sr">
+## Random notes
 
-## Notes
+<div class="row row-cols-md-2"><div>
 
-<details class="details-border">
-<summary>Change to MariaDB</summary>
-<br>
+#### Access the database
 
-If you, like me, will use `MariaDB` then right-click on wamp in the system trail.
+Both MySQL and MariaDB are available, you can swap between them.
 
+* Go to `http://localhost/phpmyadmin`
+* Username: `root`
+* Password: (leave empty)
+
+#### Swap to MariaDB
+
+If you're tired to swap between both, you can disable one.
+
+* Right-click on Wamp Icon
 * Settings
 * Disabled MySQL
 * Enable MariaDB
 
-Your database is at `http://localhost/phpmyadmin`, with the credentials `root` and no password by default.
-</details>
+#### Install PostgreSQL
 
-<details class="details-border">
-<summary>Change the Lang</summary>
-<br>
+You can [download PostgreSQL here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Beware that version 12+ needs PHP 7.4.0+. Don't forget to restart!
 
-Right-click on wamp in the system trail, then in the lang menu.
-</details>
+* Login: `psql -U user`
+* Open the "phpmyadmin": `pgadmin`
+</div><div>
 
-<details class="details-border">
-<summary>Change PHP/... version</summary>
-<br>
+#### Add Virtual Hosts
 
-Left-click on wamp in the system trail. You can enable and disabled PHP modules here too.
-</details>
+You can create a fake domain associated with a project on your machine.
 
-<details class="details-border">
-<summary>Use PostgreSQL</summary>
-<br>
+* Left-click on Wamp Icon
+* Virtual hosts
+* Write any domain you want, and enter your project folder path
+* Restart Wamp
 
-You can [download PostgreSQL here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Beware that version 12+ needs PHP 7.4.0+.
+➡️ If you used a real domain, your browser may try to load it...
+</div></div>
 
-Don't forget to restart!
+<hr class="sep-both">
 
-* `psql -U user`
-* `pgadmin`
-</details>
+## 👻 To-do 👻
 
-<details class="details-border">
-<summary>Use <b>Virtual Hosts</b></summary>
-<br>
+Stuff that I found, but never read/used yet.
 
-Sometimes, you don't want to have the URL `http://localhost/.../`, but maybe, the real URL of your website?
+<div class="row row-cols-md-2"><div>
 
-Left-click on wamp in the system trail. Click on virtual hosts, and you will be able to add one easily.
-</details>
+* Updates
+* Add-ons
+</div><div>
+
+* Add PHP modules
+* Change PHP version
+</div></div>

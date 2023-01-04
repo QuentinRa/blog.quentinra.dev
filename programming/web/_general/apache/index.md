@@ -13,7 +13,7 @@ $ sudo apt install apache2
 
 🌍 You may use an emulator instead of directly installing apache
 
-* WAMP server <small>(Windows Apache MySQL PHP)</small>
+* WAMP server <small>(Windows Apache MySQL PHP)</small> | [Notes](wamp.md) 🚀
 * LAMP server <small>(Linux Apache MySQL PHP)</small>
 * MAMP server <small>(macOS Apache MySQL PHP)</small>
 * XAMPP <small>(Cross-platform Apache MySQL PHP Perl)</small>
