@@ -368,6 +368,24 @@ Links
 * [Jetpack Compose](https://developer.android.com/courses/jetpack-compose/course)
 * [Android architecture](https://developer.android.com/courses/pathways/android-architecture)
 * [KTX](https://developer.android.com/kotlin/ktx)
+* uses-feature leanback/touchscreen
+
+```
+android:textAlignment="textStart"
+android:textAlignment="center"
+android:textSize="16sp"
+android:textStyle="bold"
+Vertical alignment
+android:gravity="center"
+android:gravity="bottom"
+???
+LinearLayout => android:baselineAligned="false"
+Tint black icon to white
+android:tint="@color/white"
+android:background="#B95EB17C"
+
+TableLayout TableRow
+```
 
 External
 
@@ -411,5 +429,21 @@ xxx.launch(intent)
 
 ```kotlin
 public val tasksStateFlow = MutableStateFlow<List<Task>>(emptyList())
+```
+
+```kotlin
+binding.recyclerView.itemAnimator = null
+binding.recyclerView.scrollToPosition(0)
+
+view.context.getString(...)
+
+activity?.contentResolver
+_deviceId = Settings.Secure.getString(contentResolver, Settings.Secure.ANDROID_ID)
+
+val input = EditText(requireContext())
+
+.setView(input)
+
+input.text.toString().toFloatOrNull()
 ```
 </div></div>

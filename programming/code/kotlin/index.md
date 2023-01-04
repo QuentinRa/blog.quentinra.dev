@@ -42,7 +42,8 @@ By default, Kotlin variables cannot be `null`. To declare a nullable variable, y
 ```kotlin
 var someVar3 : String? = null
 someVar3?.toString() // Optional chaining
-someVar3!!.toString() // Assert non-null
+someVar3?.toString() ?: "null" // default value
+someVar3!!.toString() // Assert non null
 ```
 </div><div>
 
@@ -511,6 +512,17 @@ A dataclass is a class to store data.
 
 ```kotlin
 data class XXX(private val yyy: Int)
+```
+
+#### Enum class
+
+The syntax for enums is similar to Java aside from the `class` after `enum`. The syntax for enums with parameters is a bit different.
+
+```kotlin
+enum class AAA(val ddd: Int) {
+    BBB(0),
+    CCC(1),
+}
 ```
 
 </div></div>
