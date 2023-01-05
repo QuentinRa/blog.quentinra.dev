@@ -63,6 +63,15 @@
         "icon": null,
         "hidden": false
       }
+    ],
+    "🚀 x 🚀": [
+      {
+        "tag": "editor/jetbrains/plugins/index.md",
+        "name": "IntelliJ plugins",
+        "desc": "IntelliJ Platform Plugin SDK.",
+        "icon": "<i class=\"bi bi-plugin\"></i>",
+        "hidden": false
+      }
     ]
   }
 }

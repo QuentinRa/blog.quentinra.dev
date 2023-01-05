@@ -23,4 +23,12 @@ implementation ('xxx') {
 </div><div>
 
 * [jitpack](https://jitpack.io/)
+
+```
+// Gradle Properties Plugin
+id("net.saliman.properties") version "1.5.2"
+
+propertiesPluginEnvironmentNameProperty = branchNumber
+branchNumber = 213
+```
 </div></div>
