@@ -30,17 +30,63 @@ You can add more information about the vendor, and directly add the description 
 ]]>
 </description>
 ```
-</div><div>
 
-#### build.gradle.kts
+<details class="details-n">
+<summary>Split the XML into sub-files</summary>
 
 ```
+-<idea-plugin>
++<idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+
++<xi:include href="/META-INF/other.xml" xpointer="xpointer(/idea-plugin/*)"/>
+```
+</details>
+</div><div>
+
+#### build.gradle
+
+<details class="details-e">
+<summary>Set the sandbox Directory</summary>
+
+Kotlin
+
+```kotlin
 intellij {
-    // if you can version often,
+    // if you change the IDE version often,
     // you might want to use different sandboxs
     sandboxDir.set("$buildDir/idea-sandbox-${properties("platformVersion")}")
 }
 ```
+</details>
+
+
+<details class="details-e">
+<summary>Add new folders as src/res</summary>
+
+Groovy
+
+```gradle
+sourceSets {
+    main.java.srcDirs = ["src/xxx", "src/main"]
+    main.java.srcDirs += ["src/yyy"]
+    main.resources.srcDirs = ["resources/main", "resources/zzz"]
+    test.java.srcDirs = ["test/xxx/", "test/main"]
+    test.resources.srcDirs = ["resources/main", "resources/xxx", "test/testData"]
+}
+```
+
+Kotlin
+
+```kotlin
+sourceSets {
+    main.configure {
+        java.srcDir("src/xxx/")
+        java.srcDir("src/xxx/kotlin")
+        resources.srcDir("src/xxx/resources")
+    }
+}
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
