@@ -30,6 +30,8 @@ console.warn("warning message")
 console.info("informative message")
 // see https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
 console.error('\x1b[31m%s\x1b[0m', 'Shown in RED');
+// print arrays/... in one go
+console.log("array:", [], ". object: ", {})
 // if available, used to clear the console
 console.clear();
 ```

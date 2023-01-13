@@ -422,7 +422,7 @@ chrome.scripting.removeCSS({ files: ["focus-mode.css"], target: { tabId: tab.id 
 
 #### Store/Load data
 
-<p class="mt-4"></p>
+[Storage - reference](https://developer.chrome.com/docs/extensions/reference/storage/).
 
 <details class="details-n">
 <summary>Use <code>storage.local</code></summary>
@@ -450,6 +450,42 @@ entry[key] = value
 chrome.storage.local.set(entry).then(() => {})
 ```
 
+</details>
+
+#### Bookmarks
+
+[Bookmarks - reference](https://developer.chrome.com/docs/extensions/reference/bookmarks/).
+
+<details class="details-n">
+<summary>Get/Remove/...</summary>
+
+```javascript!
+// get
+chrome.bookmarks.getChildren("id", function(result) {})
+chrome.bookmarks.get("id", function(result) {})
+// dump the storage
+chrome.storage.local.get(function(result) { console.log(result) })
+// remove
+chrome.bookmarks.remove("id")
+chrome.bookmarks.removeTree("id")
+// clear
+chrome.storage.local.clear()
+```
+</details>
+
+<details class="details-n">
+<summary>Events - created, updated, removed</summary>
+
+```javascript
+function cb(id, info) {}
+// { "dateAdded": 0, "id": "0", "index": 0, "parentId": "0", "title": "xxx", "url": "xxx }
+chrome.bookmarks.onCreated.addListener(cb)
+// { "title": "xxx", "url": "xxx" }
+chrome.bookmarks.onChanged.addListener(cb)
+chrome.bookmarks.onMoved.addListener(cb)
+// { "index": 0, "node": { "dateAdded": 0, "id": "0", "title": "xxx", "url": "xxx" }, "parentId": "0" }
+chrome.bookmarks.onRemoved.addListener(cb)
+```
 </details>
 
 #### Utilities
