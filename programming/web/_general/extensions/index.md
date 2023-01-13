@@ -261,6 +261,8 @@ This is page as you would create
 ```
 </details>
 
+Note that the code inside the Popup is **only** executed when the popup is shown.
+
 <br>
 
 #### Execute some code
@@ -341,6 +343,22 @@ Then, use `chrome.runtime.getURL("xxx")` to get a URL to it.
 
 <hr class="sep-both">
 
+## Background and Service Worker
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+Service workers can be stopped, and started when an event occurred. They are useful for long-running tasks, or to access Chrome/Firefox API without having to use a popup.
+
+```json!
+  "background": {
+    "service_worker": "background.js"
+  },
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Chrome/Firefox API
 
 ⚠️ Reminder: most of these are only available inside a background script, or a script executed by your popup. ⚠️
@@ -356,7 +374,7 @@ Then, use `chrome.runtime.getURL("xxx")` to get a URL to it.
 
 ```javascript
 // ➡️ ex: popup.js
-chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     const url = tabs[0].url;
     const title = tabs[0].title;
     const id = tabs[0].id
@@ -401,6 +419,38 @@ chrome.scripting.removeCSS({ files: ["focus-mode.css"], target: { tabId: tab.id 
 ```
 </details>
 </div><div>
+
+#### Store/Load data
+
+<p class="mt-4"></p>
+
+<details class="details-n">
+<summary>Use <code>storage.local</code></summary>
+
+```javascript
+// 🔐 permission "storage"
+chrome.storage.local.get(["key"], function(result){
+    const value = result["key"]
+    // ...
+})
+chrome.storage.local.set( { key: value } ).then(() => {})
+```
+</details>
+
+<details class="details-n">
+<summary>Dynamic keys</summary>
+
+If the key is from a variable, use the code below
+
+```
+// Dynamic keys
+const key = "key"
+const entry = {}
+entry[key] = value
+chrome.storage.local.set(entry).then(() => {})
+```
+
+</details>
 
 #### Utilities
 
