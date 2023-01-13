@@ -46,7 +46,7 @@ let n3 : number; // explicit
 let str : string = "";
 let xxx : string | undefined | null; // multiple types
 // "?" after a parameter means "nullable" (null/undefined)
-function f(list: Array<number>, xxx?: boolean) {}
+function f(list: number[], xxx?: boolean, yyy = false) {}
 // add a return type
 function f() : string | null {}
 ```
@@ -116,7 +116,11 @@ class Example {
     // ➡️ ex: private static constant
     private static SELECT_KEY = 'match_id';
 
-    // ➡️ ex: private attribute
+    // ➡️ attributes
+    xxx?: boolean // public, nullable
+    public yyy: string = ""
+
+    // ➡️ ex: constructor + private attribute
     constructor(private Id: number) {}
 
     // ➡️ ex: public static function
@@ -130,7 +134,34 @@ class Example {
     }
 }
 ```
+
+#### Interfaces
+
+Interfaces are used to declare a Type.
+
+```typescript!
+interface XXX {
+  xxx?: boolean
+  yyy: {
+    title: string,
+    url: string
+  }
+}
+```
 </div><div>
+
+#### Records
+
+Records are objects with dynamic keys.
+
+```typescript!
+const x : Record<string, number> = {}
+x.five = 5
+```
+
+<br>
+
+#### Getter and setters
 
 There is a new way to write getters/setters.
 
@@ -145,6 +176,8 @@ let example : Example = new Example();
 example.number; // call "get"
 example.number = 5; // call "set"
 ```
+
+<br>
 
 #### Inheritance
 
