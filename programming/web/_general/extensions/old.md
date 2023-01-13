@@ -1,36 +1,6 @@
 # Manifest.json (V3)
 
 <div class="row row-cols-md-2"><div>
-
-#### Popup
-
-To show a popup when the user clicks on the plugin icon, use `action/default_popup`.
-
-```json!
-  "action": {
-    "default_popup": "popup/popup.html",
-    "default_icon": "icons/hello_world_16.png"
-  }
-```
-
-A simple `popup.html`.
-
-```html!
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Hello, World</title>
-</head>
-<body>
-<div>
-    <p>Hello, World</p>
-    <!-- load popup/popup.js -->
-    <script src="popup.js"></script>
-</div>
-</body>
-</html>
-```
-
 </div><div>
 
 #### Content
@@ -149,40 +119,6 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 // 🔐 "scripting"
 chrome.scripting.insertCSS({ files: ["focus-mode.css"], target: { tabId: tab.id },});
 chrome.scripting.removeCSS({ files: ["focus-mode.css"], target: { tabId: tab.id },});
-```
-
-#### Badge
-
-The page is the icon shown in the toolbar.
-
-```javascript
-// ➡️ Inside popup.*
-badge.textContent = `XXX`;
-// ➡️ Otherwise,
-chrome.action.setBadgeText({ text: "xxx", });
-chrome.action.setBadgeText({ tabId: tab.id, text: "yyy", });
-chrome.action.getBadgeText({ tabId: tab.id });
-```
-
-```javascript
-// ➡️ When users click on the badge
-// ➡️ When users use the shortcut (if any)
-chrome.action.onClicked.addListener((tab) => {});
-```
-
-To add a shortcut opening the badge, use
-
-```json
-{
-  "commands": {
-    "_execute_action": {
-      "suggested_key": {
-        "default": "Ctrl+M",
-        "mac": "Command+M"
-      }
-    }
-  }
-}
 ```
 </div></div>
 

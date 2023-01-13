@@ -204,8 +204,9 @@ Then, you can define your extension
 * ➡️ `action`: open a popup when clicking on the icon in the toolbar
 * ➡️ `content_scripts`: to run code on each page using the DOM
 * ➡️ `background`: to run code that do not need to access the DOM
+* ➡️ `options_page`: a page to configure the extension
 
-⚠️ Inside a `content_scripts`, most of the attributes of `chrome`/`browser` aren't available. Also, some properties are only available after asking for the [permission](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/) first.
+⚠️ Inside a `content_scripts`, most of the attributes of `chrome`/`browser` **aren't** available. Moreover, some properties are only available after asking for the [permission](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/) first.
 
 ```json!
   "host_permissions": [ "://*" ],
@@ -213,4 +214,89 @@ Then, you can define your extension
 ```
 
 ✨ Usually, to have access to `chrome.xxx`, the permission is called `xxx`.
+</div></div>
+
+<hr class="sep-both">
+
+## Popup
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+It's possible to show a popup when the user clicks on the icon in the toolbar, which is called **badge**. You can do it inside the Manifest
+
+```json!
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "icons/hello_world_16.png" // optional
+  }
+```
+
+Or, at any time, inside the code
+
+```javascript
+chrome.action.setPopup({ popup: "popup/popup.html" })
+```
+
+<details class="details-e">
+<summary>popup.html</summary>
+
+This is page as you would create
+
+```html!
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello, World</title>
+</head>
+<body>
+<div>
+    <p>Hello, World</p>
+    <!-- load popup/popup.js -->
+    <script src="popup.js"></script>
+</div>
+</body>
+</html>
+```
+</details>
+
+<br>
+
+#### Execute some code
+
+If you don't open a popup, it's also possible to register an listener, and execute some code when the user clicks on the badge.
+
+```javascript
+// ➡️ When users click on the badge
+// ➡️ When users use the shortcut (if any)
+chrome.action.onClicked.addListener((tab) => {});
+```
+</div><div>
+
+#### Badge
+
+The icon inside the toolbar is called a `badge`. You can add a text "below", like the number of ads blocked on a site.
+
+```javascript
+// ➡️ Inside popup.html/popup.js/...
+badge.textContent = `XXX`;
+// ➡️ Otherwise,
+chrome.action.setBadgeText({ text: "xxx", });
+chrome.action.setBadgeText({ tabId: tab.id, text: "yyy", });
+chrome.action.getBadgeText({ tabId: tab.id });
+```
+
+#### Shortcut
+
+To add a shortcut opening the badge, add to your MANIFEST.
+
+```json
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+M",
+        "mac": "Command+M"
+      }
+    }
+  }
+```
 </div></div>
