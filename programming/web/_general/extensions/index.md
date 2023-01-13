@@ -41,12 +41,41 @@ Extension Templates can make working with extensions easier.
 
 [GitHub](https://github.com/chibat/chrome-extension-typescript-starter) (1.2k ✨, React, Typescript, Jest)
 
+<details class="details-n">
+<summary>See my notes</summary>
+
+➡️ **Get started**
+
 ```bash
 $ git clone https://github.com/chibat/chrome-extension-typescript-starter.git my-extension
 $ cd .\my-extension\
 $ npm install
 $ npm update
+$ npm run watch
 ```
+
+The extension is automatically reloaded inside the browser.
+
+➡️ **Bootstrap**
+
+To load bootstrap, download it locally, and store it inside a directory in `public` (ex: lib/). Then in `popup.html`, use
+
+```
+<link href="lib/css/bootstrap.min.css" rel="stylesheet">
+<script src="lib/js/bootstrap.bundle.min.js"></script>
+```
+
+➡️ **MANIFEST**
+
+For JS files in the Manifest, `src/*.ts` will generate a file `js/*.js`.
+
+```json!
+"background": {
+    "service_worker": "js/background.js"
+},
+```
+</details>
+
 </div></div>
 
 <hr class="sep-both">
@@ -137,51 +166,45 @@ To reload your extension "automatically", you may
 
 The version 2 is deprecated, make sure to use version 3. 🚀
 
-```json
-{ "manifest_version": 3 }
+```json!
+  "manifest_version": 3
 ```
 
 #### Metadata
 
 The `name`, the `description`, and the `version` are up to you.
 
-```
-{
+```json!
   "name": "Hello, World",
   "version": "0.0.1",
   "description": "Print \"Hello, World\" in the console",
-}
 ```
 
 The icon should be provided in multiple sizes: `16`, `32`, `48` and `128`.
 
-```json
-{
+```json!
   "icons": {
     "16": "icons/hello_world_16.png",
     "32": "icons/hello_world_32.png",
     "48": "icons/hello_world_48.png",
     "128": "icons/hello_world_128.png"
   }
-}
 ```
 
 #### Popup
 
 To show a popup when the user clicks on the plugin icon, use `action/default_popup`.
 
-```json
-{
+```json!
   "action": {
     "default_popup": "popup/popup.html",
 	"default_icon": "icons/hello_world_16.png"
   }
-}
 ```
 
 A simple `popup.html`.
 
-```html
+```html!
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -203,28 +226,24 @@ A simple `popup.html`.
 
 If you want to load one or more scripts that **needs to interact with the DOM**, use **content_script**.
 
-```json
-{
+```json!
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["scripts/main.js"]
     }
   ]
-}
 ```
 
 You can use `matches` to filter which URLs will execute the script.
 
-```json
-{
+```json!
   "content_scripts": [
     {
       "matches": ["https://example.com/*"],
       "js": ["scripts/main.js"]
     }
   ]
-}
 ```
 
 ➡️ [See match patterns](https://developer.chrome.com/docs/extensions/mv3/match_patterns/).
@@ -233,30 +252,26 @@ You can use `matches` to filter which URLs will execute the script.
 
 If you want to load one or more scripts that **needs to access the browser features** <small>(bookmarks...)</small>, use **background**.
 
-```json
-{
+```json!
   "background": [
     {
       "matches": ["<all_urls>"],
       "js": ["scripts/bg.js"]
     }
   ]
-}
 ```
 
 #### web_accessible_resources
 
 You can define inside that resource can be accessed from the browser. Use `chrome.runtime.getURL("???")` to get a resource.
 
-```json
-{
+```json!
   "web_accessible_resources": [
     {
       "resources": ["???"], 
       "matches": ["<all_urls>"]
     }
   ]
-}
 ```
 
 </div></div>
