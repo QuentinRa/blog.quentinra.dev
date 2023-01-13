@@ -220,6 +220,8 @@ Then, you can define your extension
 
 ## Popup
 
+👉 One of the changes from Manifest V2 to Manifest V3 is `browserAction` being renamed `action` both in the Manifest, and in the code.
+
 <div class="row row-cols-md-2 mt-4"><div>
 
 It's possible to show a popup when the user clicks on the icon in the toolbar, which is called **badge**. You can do it inside the Manifest
@@ -335,4 +337,130 @@ If you need to access a resource stored inside the plugin folder, first, declare
 ```
 
 Then, use `chrome.runtime.getURL("xxx")` to get a URL to it.
+</div></div>
+
+<hr class="sep-both">
+
+## Chrome/Firefox API
+
+⚠️ Reminder: most of these are only available inside a background script, or a script executed by your popup. ⚠️
+
+<div class="row row-cols-md-2"><div>
+
+#### Tabs
+
+<p class="mt-3"></p>
+
+<details class="details-n">
+<summary><code>chrome.tabs.query</code>: fetch a tab, such as the active tab</summary>
+
+```javascript
+// ➡️ ex: popup.js
+chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+    const url = tabs[0].url;
+    const title = tabs[0].title;
+    const id = tabs[0].id
+    // ...
+})
+chrome.tabs.query({ url: [] }, function (tabs) {})
+```
+</details>
+
+<details class="details-n">
+<summary><code>chrome.tabs.create/update</code>: create/update a tab</summary>
+
+```javascript
+// 🔐 "tabs"
+await chrome.tabs.create({ url: "URL" })
+await chrome.tabs.update(tab.id, { active: true });
+await chrome.windows.update(tab.windowId, { focused: true });
+```
+</details>
+
+<details class="details-n">
+<summary><code>chrome.tabGroups/update</code>: group tabs</summary>
+
+```javascript
+// 🔐 permission "tabGroups"
+const group = await chrome.tabs.group({ tabIds });
+await chrome.tabGroups.update(group, { title: "xxx" });
+```
+</details>
+
+#### Scripting
+
+<p class="mt-4"></p>
+
+<details class="details-n">
+<summary><code>insertCSS/removeCSS</code>: manipulate the CSS</summary>
+
+```javascript
+// 🔐 permission "scripting"
+chrome.scripting.insertCSS({ files: ["focus-mode.css"], target: { tabId: tab.id },});
+chrome.scripting.removeCSS({ files: ["focus-mode.css"], target: { tabId: tab.id },});
+```
+</details>
+</div><div>
+
+#### Utilities
+
+<p class="mt-4"></p>
+
+<details class="details-n">
+<summary><code>sendMessage</code>: send messages to content scripts</summary>
+
+To send a message from a background script/popup
+
+```javascript
+// ➡️ Sender - ex: popup.js
+chrome.tabs.sendMessage(tabs[0].id,
+    { /* custom data */ },
+    function(response) { /* ... */}
+);
+```
+
+Inside a content script, you can use
+
+```javascript
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+    // ...
+    sendResponse({ /* custom */ });
+});
+```
+</details>
+
+<details class="details-n">
+<summary><code>onInstalled</code>: run some code after installing the extension</summary>
+
+```javascript
+chrome.runtime.onInstalled.addListener(() => {});
+```
+</details>
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [Polyfill](https://github.com/mozilla/webextension-polyfill)
+* [plasmo](https://github.com/PlasmoHQ/plasmo) / [chrome-types](https://www.npmjs.com/package/chrome-types)
+
+```
+document.addEventListener("pageshow", xxx);
+```
+</div><div>
+
+```
+chrome.contextMenus.create({ id: "xxx", title: "xxx", contexts: ['selection'] });
+chrome.contextMenus.onClicked.addListener(function(info, tab) {
+    if (info.menuItemId == "xxx") {     
+        const word = info.selectionText;
+        // ...    
+    }
+});
+```
 </div></div>
