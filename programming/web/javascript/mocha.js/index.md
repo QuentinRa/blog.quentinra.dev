@@ -277,14 +277,4 @@ Stuff that I found, but never read/used yet.
   * [ezekielekunola.com](https://www.blog.ezekielekunola.com/testing-node-api-with-mocha-and-chai)
   * [buddy.works](https://buddy.works/guides/how-automate-nodejs-unit-tests-with-mocha-chai)
 </div><div>
-
-Old expect notes
-
-```javascript
-expect(resizedImg).toBeDefined();
-expect(resizedSize).toBeDefined();
-expect(resizedSize).toEqual({ w: toWidth, h: imgBefore.height });
-expect(imgDataTest.width).toBe(toWidth);
-expect(xxx).toBeLessThanOrEqual(yyy);
-```
 </div></div>

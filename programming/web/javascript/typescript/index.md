@@ -245,5 +245,8 @@ Stuff that I found, but never read/used yet.
 declare module 'xxx' {
   export default function yyy(): ZZZ;
 }
+
+/** @type {import('xxx').xxx} */
+// ...
 ```
 </div></div>

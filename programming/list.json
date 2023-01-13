@@ -116,7 +116,7 @@
             },
             {
               "tag": "web/javascript/typescript/index.md",
-              "name": "Typescript",
+              "name": "TypeScript",
               "desc": "Compiled and typed JavaScript 🚀.",
               "icon": "<i class=\"bi bi-cup-straw\"></i>"
             },
@@ -138,6 +138,13 @@
               "tag": "web/javascript/mocha.js/index.md",
               "name": "mocha.js",
               "desc": "Testing with mocha.",
+              "icon": "<i class=\"bi bi-box\"></i>",
+              "hidden": false
+            },
+            {
+              "tag": "web/javascript/jest.js/index.md",
+              "name": "jest.js",
+              "desc": "Testing with jest.",
               "icon": "<i class=\"bi bi-box\"></i>",
               "hidden": false
             },

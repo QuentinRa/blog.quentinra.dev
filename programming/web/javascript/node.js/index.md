@@ -232,4 +232,5 @@ npm
 * npx
 * .npmignore
 * `--save` / `-S` / `-g` (+not recommended)
+* `npm install --save-dev`/`npm i -D`
 </div></div>
