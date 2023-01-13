@@ -1,85 +1,6 @@
-## Introduction: Hello, World
-
-Description: this extension prints `"Hello, World"` inside the console of every page you visit.
+# Manifest.json (V3)
 
 <div class="row row-cols-md-2"><div>
-
-* Create `manifest.json`
-
-```json
-{
-  "name": "Hello, World",
-  "version": "0.0.1",
-  "manifest_version": 3,
-  "description": "Print \"Hello, World\" in the console",
-  "icons": {
-    "128": "icons/hello_world.png"
-  },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["scripts/main.js"]
-    }
-  ]
-}
-```
-</div><div>
-
-* Create `scripts/main.js`
-
-```javascript
-console.log("Hello, World")
-```
-
-* Add an icon `hello_world.png` in `icons`. You can use any name you want, but you must edit the `manifest.json` accordingly.
-
-* Add, and enable, the extension inside your browser
-
-* Open a new page, and the devtools console
-
-* You should see `"Hello, World!"`
-
-<br>
-
-**Additional notes**
-
-* ➡️ Tested in Microsoft Edge.
-</div></div>
-
-<hr class="sep-both">
-
-## Manifest.json (V3)
-
-[See Manifest.json](https://developer.chrome.com/docs/extensions/mv3/manifest/)
-
-<div class="row row-cols-md-2"><div>
-
-The version 2 is deprecated, make sure to use version 3. 🚀
-
-```json!
-  "manifest_version": 3
-```
-
-#### Metadata
-
-The `name`, the `description`, and the `version` are up to you.
-
-```json!
-  "name": "Hello, World",
-  "version": "0.0.1",
-  "description": "Print \"Hello, World\" in the console",
-```
-
-The icon should be provided in multiple sizes: `16`, `32`, `48` and `128`.
-
-```json!
-  "icons": {
-    "16": "icons/hello_world_16.png",
-    "32": "icons/hello_world_32.png",
-    "48": "icons/hello_world_48.png",
-    "128": "icons/hello_world_128.png"
-  }
-```
 
 #### Popup
 
@@ -168,8 +89,6 @@ You can define inside that resource can be accessed from the browser. Use `chrom
 ## Scripts
 
 <div class="row row-cols-md-2"><div>
-
-➡️ The predefined variable for the browser **won't have** many attributes when used in `content_scripts`.
 
 #### Tabs
 
@@ -276,18 +195,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [Polyfill](https://github.com/mozilla/webextension-polyfill)
-
-```json
-{
-  "homepage_url": "XXX",
-  "host_permissions": [ "://*" ],
-  "permissions": ["activeTab"]
-}
-```
-
-* `host_permissions`: root, but only on some websites
-* [See permissions](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/)
-</div><div>
+* [plasmo](https://github.com/PlasmoHQ/plasmo) / [chrome-types](https://www.npmjs.com/package/chrome-types)
 
 * `browserAction` is now `action`
 
@@ -295,6 +203,7 @@ Stuff that I found, but never read/used yet.
 -chrome.browserAction.XXX
 +chrome.action.XXX
 ```
+</div><div>
 
 ```javascript
 chrome.runtime.onInstalled.addListener(() => {});
@@ -309,6 +218,4 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
     }
 });
 ```
-
-* [plasmo](https://github.com/PlasmoHQ/plasmo) / [chrome-types](https://www.npmjs.com/package/chrome-types)
 </div></div>

@@ -82,6 +82,40 @@ Extension Templates can make working with extensions easier.
 * ✨ These can preconfigure React/Typescript/...
 * ✨ These can reload automatically the extension
 * ...
+
+#### My "Hello, World"
+
+<p></p>
+
+<details class="details-n">
+<summary>console.log("Hello, World")</summary>
+
+* Create `manifest.json`
+
+```json
+{
+  "name": "Hello, World",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "Print \"Hello, World\" in the console",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/main.js"]
+    }
+  ]
+}
+```
+
+* Create `scripts/main.js`
+
+```javascript
+console.log("Hello, World")
+```
+
+* Load your extension
+* Visit a website, open the console, you will see the log
+</details>
 </div><div>
 
 #### chrome-extension-typescript-starter
@@ -122,4 +156,61 @@ For JS files in the Manifest, `src/*.ts` will generate a file `js/*.js`.
 },
 ```
 </details>
+</div></div>
+
+<hr class="sep-both">
+
+## 🎺 Manifest.json 🎺
+
+[See Manifest.json](https://developer.chrome.com/docs/extensions/mv3/manifest/)
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+This is a json file defining your extension. The version 2 is being deprecated, consider using the version 3. 🚀
+
+```json!
+{
+  "manifest_version": 3
+  ...
+}
+```
+
+<details class="details-n">
+<summary>Metadata: <code>description</code>, <code>version</code>, <code>name</code>, and <code>icons</code></summary>
+
+The `name`, the `description`, and the `version` are up to you.
+
+```json!
+  "name": "Hello, World",
+  "version": "0.0.1",
+  "description": "Print \"Hello, World\" in the console",
+```
+
+You should provide an icon in multiple sizes: `16`, `32`, `48` and `128`. The browser will do the resizing for missing resolutions.
+
+```json!
+  "icons": {
+    "16": "icons/hello_world_16.png",
+    "32": "icons/hello_world_32.png",
+    "48": "icons/hello_world_48.png",
+    "128": "icons/hello_world_128.png"
+  }
+```
+</details>
+</div><div>
+
+Then, you can define your extension
+
+* ➡️ `action`: open a popup when clicking on the icon in the toolbar
+* ➡️ `content_scripts`: to run code on each page using the DOM
+* ➡️ `background`: to run code that do not need to access the DOM
+
+⚠️ Inside a `content_scripts`, most of the attributes of `chrome`/`browser` aren't available. Also, some properties are only available after asking for the [permission](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/) first.
+
+```json!
+  "host_permissions": [ "://*" ],
+  "permissions": ["activeTab"]
+```
+
+✨ Usually, to have access to `chrome.xxx`, the permission is called `xxx`.
 </div></div>
