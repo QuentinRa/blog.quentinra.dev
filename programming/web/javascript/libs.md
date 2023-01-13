@@ -148,6 +148,13 @@ const fs   = require('fs');
 const xxx = yaml.load(fs.readFileSync('test.yaml', 'utf8'));
 console.log(xxx);
 ```
+
+In TypeScript, use
+
+```typescript
+// @ts-ignore
+import { load } from 'js-yaml';
+```
 </div><div>
 
 #### yamljs

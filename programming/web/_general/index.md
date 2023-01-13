@@ -115,7 +115,7 @@ $ chmod 711 folder # for a folder
 
 <div class="row row-cols-md-2"><div>
 
-You can get free certificates using [Let's encrypt](https://letsencrypt.org/). If you want to have **https**://localhost, [see this tutorial](https://web.dev/how-to-use-local-https/).
+You can get free certificates using [Let's encrypt](https://letsencrypt.org/). If you want to have **https**://localhost, [follow this tutorial](https://web.dev/how-to-use-local-https/).
 
 To install a certificate from Let's encrypt, we mainly use [certbot](https://certbot.eff.org/).
 

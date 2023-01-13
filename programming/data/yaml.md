@@ -37,6 +37,8 @@ multiline_text1: This is a really really really
   And this is still part of the text 🚀.
 multiline_text2: >
   Same.
+code: |+
+  preserve newlines and indents
 ```
 </div></div>
 

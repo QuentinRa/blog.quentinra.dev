@@ -260,6 +260,7 @@ xxx.toUpperCase() // "XXX"
 // replace
 xxx.replace('x', 'y') // "yxx"
 xxx.replaceAll('x', 'y') // "yyy"
+xxx.replaceAll(/x/g, 'y') // "yyy"
 // other
 xxx.split("xx") // ['', 'x'] 
 ```
@@ -268,7 +269,7 @@ xxx.split("xx") // ['', 'x']
 
 [See MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 
-```javascript
+```javascript!
 const map = new Map()
 map.set('key', 5) // add
 map.get('key') // get
@@ -276,14 +277,11 @@ map.has('key') // check
 for(const [k,v] of map) { /* ... */ } // iterate
 // otherwise, generate an Iterable
 map.entries() | map.keys() | map.values()
-// 🥂 Convert an Object to a Map
-new Map(Object.entries(object))
-new Map(Object.entries(object))
 ```
 
 Create a Map from an array/object
 
-```javascript
+```javascript!
 new Map([["key", "value"], /* ... */])
 new Map(Object.entries(object))
 ```
@@ -297,7 +295,7 @@ new Map(Object.entries(object))
 
 There are two ways to declare functions:
 
-```javascript
+```javascript!
 // global function
 function xxx() {}
 // scoped function
@@ -315,7 +313,7 @@ if(typeof(xxx) === 'function') {}
 
 ➡️ Every function returns something: `undefined`, or a value. Also, if the expected arguments aren't passed, they will be `undefined`.
 
-```javascript
+```javascript!
 // ✅ All of these are doing the same (v * v)
 function pow(v) { return v * v }
 const pow = function (v) { return v * v }
@@ -329,7 +327,7 @@ const pow = v => ({ key: 'value' })
 
 You can give **default values** to arguments.
 
-```javascript
+```javascript!
 function pow(x, k = 1) { return x ** k; } // 5 ** 2 = 25
 ```
 </div></div>
@@ -342,7 +340,7 @@ function pow(x, k = 1) { return x ** k; } // 5 ** 2 = 25
 
 JavaScript supports [JSON](/programming/data/json.md) natively, which some changes.
 
-```javascript
+```javascript!
 const object = {
     //  ✅ you don't need to quote keys
     key: "value",
@@ -352,7 +350,7 @@ const object = {
 const object = [{}, [ {}, {} ]] // JSONArray
 ```
 
-```javascript
+```javascript!
 // access a property
 object.key
 object["key"] // 🥂 also works
@@ -362,7 +360,7 @@ object["key"] // 🥂 also works
 
 You can deconstruct an object to easily access its values.
 
-```javascript
+```javascript!
 const {x1, x2} = { x1: 'xxx', x2: 'yyy' }
 const [a, b] = [0, 1]
 ```
@@ -373,7 +371,7 @@ const [a, b] = [0, 1]
 
 <p></p>
 
-```javascript
+```javascript!
 const jsonString = JSON.stringify(object) 
 // pretty format (2/4 spaces)
 const jsonString = JSON.stringify(object, null, 2) 
@@ -384,21 +382,21 @@ const jsonString = JSON.stringify(object, null, 4)
 
 <p></p>
 
-```javascript
+```javascript!
 const object = JSON.parse(jsonString) 
 ```
 
-#### Convert a JSON to an array of arrays
+#### Other conversions
 
-<p></p>
-
-```javascript
-const array = Object.entries(object)
+```javascript!
+const array = Object.entries(object) // object to array
+const map new Map(Object.entries(object)) // object to map
+const object = Object.fromEntries(map) // map to object
 ```
 
 #### Merge objects
 
-```javascript
+```javascript!
 Object.assign({name: 'toto', age: 10}, {age: 15})
 // {name: 'toto', age: 15}
 ```

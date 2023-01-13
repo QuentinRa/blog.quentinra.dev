@@ -202,6 +202,8 @@ const json = JSON.parse(fs.readFileSync("path/to/xxx.json"))
 fs.writeFileSync("path/to/xxx.json", JSON.stringify(json, null, 2), 'utf8')
 ```
 
+To be accurate, you should convert the Buffer to a string using `fs.readFileSync("...").toString('utf8')`.
+
 #### Rename/Move
 
 ```javascript

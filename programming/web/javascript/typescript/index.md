@@ -45,6 +45,7 @@ let n2 : number = 0; // explicit
 let n3 : number; // explicit
 let str : string = "";
 let xxx : string | undefined | null; // multiple types
+let fun : (v: string) => string; // a function
 // "?" after a parameter means "nullable" (null/undefined)
 function f(list: number[], xxx?: boolean, yyy = false) {}
 // add a return type
