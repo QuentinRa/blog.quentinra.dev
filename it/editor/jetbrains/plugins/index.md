@@ -23,7 +23,7 @@ The best way to learn is to see how others implemented the API <small>("extensio
 
 You can add more information about the vendor, and directly add the description inside the XML <small>(remove the hook in build.gradle)</small>.
 
-```
+```xml!
 <vendor email="xxx" url="xxx">yyy</vendor>
 <description><![CDATA[
     xxx
@@ -34,7 +34,7 @@ You can add more information about the vendor, and directly add the description 
 <details class="details-n">
 <summary>Split the XML into sub-files</summary>
 
-```
+```diff
 -<idea-plugin>
 +<idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
 
@@ -45,15 +45,17 @@ You can add more information about the vendor, and directly add the description 
 
 #### build.gradle
 
+<p></p>
+
 <details class="details-e">
 <summary>Set the sandbox Directory</summary>
+
+➡️  If you change the IDE version often, you might want to use different sandbox, to start where you left.
 
 Kotlin
 
 ```kotlin
 intellij {
-    // if you change the IDE version often,
-    // you might want to use different sandboxs
     sandboxDir.set("$buildDir/idea-sandbox-${properties("platformVersion")}")
 }
 ```
@@ -163,10 +165,10 @@ object XXXBundle : DynamicBundle(BUNDLE) {
 
 ```xml
 <fileType name="OCaml"
-                  language="OCaml"
-                  implementationClass="com.ocaml.lang.OCamlFileType"
-                  extensions="ml"
-                  fieldName="INSTANCE"/>
+          language="OCaml"
+          implementationClass="com.ocaml.lang.OCamlFileType"
+          extensions="ml"
+          fieldName="INSTANCE"/>
 ```
 
 ```kotlin

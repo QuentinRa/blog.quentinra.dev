@@ -5,7 +5,7 @@
 There are many ways to add icons on a website
 
 * [Bootstrap Icons](https://icons.getbootstrap.com/) (open-source, 6.5k ⭐, 😍)
-* [fontawesome](https://fontawesome.com/v6.0/icons) (open-source, credit required, 70.7k ⭐)
+* [Font Awesome](https://fontawesome.com/v6.0/icons) (open-source, attribution required, 70.7k ⭐)
 * [Feather Icons](https://github.com/feathericons/feather) (open-source, 23k ⭐)
 </div><div>
 
