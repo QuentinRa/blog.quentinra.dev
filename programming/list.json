@@ -60,6 +60,13 @@
               "desc": "Front-end Framework (Node.js).",
               "icon": "<i class=\"bi bi-book\"></i>",
               "hidden": false
+            },
+            {
+              "tag": "web/frameworks/front/react.js/index.md",
+              "name": "React.js",
+              "desc": "Front-end Framework (Node.js).",
+              "icon": "<i class=\"bi bi-book\"></i>",
+              "hidden": false
             }
           ],
           "🎨 Cascading Style Sheets (CSS) 🖼️": [

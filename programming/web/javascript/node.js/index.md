@@ -230,5 +230,6 @@ npm
 
 * devDependencies
 * npx
+* .npmignore
 * `--save` / `-S` / `-g` (+not recommended)
 </div></div>

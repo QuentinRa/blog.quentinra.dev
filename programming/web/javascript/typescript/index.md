@@ -28,7 +28,7 @@ $ npx tsc --project tsconfig.json
 $ npx tsc --project tsconfig.json -w # auto-compile
 ```
 
-➡️ Creating/using a `tsconfig.json` is optional.
+➡️ Creating/using a `tsconfig.json` ([doc](https://www.typescriptlang.org/tsconfig)) is optional.
 </div></div>
 
 <hr class="sep-both">

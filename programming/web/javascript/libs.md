@@ -71,15 +71,10 @@ Special: [emberjs](https://github.com/emberjs) (many solutions).
 
 #### Frameworks
 
+* See also [React](/programming/web/frameworks/front/react.js/index.md)
 * [Riot.js](https://github.com/riot/riot) (15k ⭐)
-* [preactjs](https://preactjs.com/) (33.5k ⭐)
 * [lit](https://github.com/lit/lit) (13.4k ⭐)
 * [Ionic](https://github.com/ionic-team/ionic-framework) (49k ⭐)
-* [React](https://github.com/facebook/react) (200k ⭐)
-  * [Material UI](https://github.com/mui/material-ui) (83.6k ⭐, UI)
-  * [Next](https://github.com/vercel/next.js/) (98k ⭐)
-  * [React Native](https://github.com/facebook/react-native)
-  * [reactjsexample](https://reactjsexample.com/) (107k ⭐)
 * [Angular](https://github.com/angular/angular) (86k ⭐)
 * [gatsby](https://github.com/gatsbyjs/gatsby) (54k ⭐)
 * [weex](https://github.com/alibaba/weex) (18k ⭐)
