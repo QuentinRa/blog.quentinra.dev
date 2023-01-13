@@ -26,6 +26,31 @@ You can add extensions/plugins to your browser, for instance, [DarkReader](https
 
 <hr class="sep-both">
 
+## Templates
+
+<div class="row row-cols-md-2"><div>
+
+Extension Templates can make working with extensions easier.
+
+* ✨ These can preconfigure React/Typescript/...
+* ✨ These can reload automatically the extension
+* ...
+</div><div>
+
+#### chrome-extension-typescript-starter
+
+[GitHub](https://github.com/chibat/chrome-extension-typescript-starter) (1.2k ✨, React, Typescript, Jest)
+
+```bash
+$ git clone https://github.com/chibat/chrome-extension-typescript-starter.git my-extension
+$ cd .\my-extension\
+$ npm install
+$ npm update
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Introduction: Hello, World
 
 Description: this extension prints `"Hello, World"` inside the console of every page you visit.
@@ -383,4 +408,6 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
     }
 });
 ```
+
+* [plasmo](https://github.com/PlasmoHQ/plasmo) / [chrome-types](https://www.npmjs.com/package/chrome-types)
 </div></div>

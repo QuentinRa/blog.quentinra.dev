@@ -645,7 +645,12 @@ Stuff that I found, but never read/used yet.
 * `match (/xxx/ and /x/g /x/i)`
 * [airbnb guidelines](https://github.com/airbnb/javascript)
 * [interesting code](https://stackoverflow.com/questions/21692646/how-does-facebook-disable-the-browsers-integrated-developer-tools)
-* ESM import: `<script type="module">` (see [socket.io](https://socket.io/docs/v4/client-initialization/)). See also Node.js notes.
+* ESM import: `<script type="module">` (see [socket.io](https://socket.io/docs/v4/client-initialization/)). See also Node.js notes. Top-level await possible... ESNext.
+
+```
+<script src="./popup.js" type="module"></script>
+```
+
 * [javascript.com](https://www.javascript.com/learn/strings)
 * **Arrow functions**, or anonymous functions: there is no "this".
 * Closures / nested functions
