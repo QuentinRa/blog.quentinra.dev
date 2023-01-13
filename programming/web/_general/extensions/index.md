@@ -289,7 +289,7 @@ chrome.action.getBadgeText({ tabId: tab.id });
 
 To add a shortcut opening the badge, add to your MANIFEST.
 
-```json
+```json!
   "commands": {
     "_execute_action": {
       "suggested_key": {
@@ -299,4 +299,40 @@ To add a shortcut opening the badge, add to your MANIFEST.
     }
   }
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Content scripts
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+Content scripts are used if you want your extension to interact with the **DOM** of the loaded page, for instance, to inject some code.
+
+```json!
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/main.js"]
+    }
+  ]
+```
+
+The attribute `matches` can take patterns such as `https://example.com/*`. ➡️ [See match patterns](https://developer.chrome.com/docs/extensions/mv3/match_patterns/).
+</div><div>
+
+#### web_accessible_resources
+
+If you need to access a resource stored inside the plugin folder, first, declare the resource inside the Manifest
+
+```json!
+  "web_accessible_resources": [
+    {
+      "resources": ["xxx"], 
+      "matches": ["<all_urls>"]
+    }
+  ]
+```
+
+Then, use `chrome.runtime.getURL("xxx")` to get a URL to it.
 </div></div>

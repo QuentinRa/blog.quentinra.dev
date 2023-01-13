@@ -3,32 +3,6 @@
 <div class="row row-cols-md-2"><div>
 </div><div>
 
-#### Content
-
-If you want to load one or more scripts that **needs to interact with the DOM**, use **content_script**.
-
-```json!
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["scripts/main.js"]
-    }
-  ]
-```
-
-You can use `matches` to filter which URLs will execute the script.
-
-```json!
-  "content_scripts": [
-    {
-      "matches": ["https://example.com/*"],
-      "js": ["scripts/main.js"]
-    }
-  ]
-```
-
-➡️ [See match patterns](https://developer.chrome.com/docs/extensions/mv3/match_patterns/).
-
 #### Worker
 
 If you want to load one or more scripts that **needs to access the browser features** <small>(bookmarks...)</small>, use **background**.
@@ -38,20 +12,6 @@ If you want to load one or more scripts that **needs to access the browser featu
     "service_worker": "background.js"
   },
 ```
-
-#### web_accessible_resources
-
-You can define inside that resource can be accessed from the browser. Use `chrome.runtime.getURL("???")` to get a resource.
-
-```json!
-  "web_accessible_resources": [
-    {
-      "resources": ["???"], 
-      "matches": ["<all_urls>"]
-    }
-  ]
-```
-
 </div></div>
 
 <hr class="sep-both">
