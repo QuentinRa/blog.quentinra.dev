@@ -195,6 +195,42 @@ class B extends A {
 
 <hr class="sep-both">
 
+## 🥊 Create a TypeScript library 🥊
+
+<div class="row row-cols-md-2"><div>
+
+If you want to create a library, and use it in another local project, you must at least provide a name and a version inside your package.json.
+
+```json
+{
+  "name": "xxx-library",
+  "version": "0.0.1"
+}
+```
+
+You can install it from another project with
+
+```bash!
+$ npm i ../path/to/your/local/library
+```
+</div><div>
+
+This will create a link to the library inside your project, so you don't need to update the library each time you changed something.
+
+You may also update your `tsconfig.json` to use `ESNext`
+
+```json!
+{
+  "target": "ESNext",
+  "module": "ESNext",
+  "moduleResolution": "node",
+  // ...
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
