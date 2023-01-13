@@ -418,11 +418,46 @@ chrome.scripting.insertCSS({ files: ["focus-mode.css"], target: { tabId: tab.id 
 chrome.scripting.removeCSS({ files: ["focus-mode.css"], target: { tabId: tab.id },});
 ```
 </details>
+
+#### Download
+
+<p class="mt-4"></p>
+
+<details class="details-n">
+<summary>Generate a link for a JSON in a content script</summary>
+
+```javascript
+const content : any = JSON.stringify( { "message": "ok" }, null, 2);
+const url = URL.createObjectURL( new Blob([content], {type: 'application/json'}) );
+```
+</details>
+
+<details class="details-n">
+<summary>Generate a link for a JSON in a background script</summary>
+
+I couldn't find anything. This works, but the indentations, the spaces, and most of the generated JSON is messed up.
+
+```javascript
+const url = 'data:application/json,' + JSON.stringify(/*...*/)
+```
+
+The only workaround is to add a comment with `//?` at the start of the JSON.
+
+```javascript
+const url = 'data:application/json,//?\n' + JSON.stringify(/*...*/)
+```
+</details>
+
+```javascript
+// 🔐 permission "downloads"
+chrome.downloads.download({ url, filename: "xxx.json" });
+chrome.downloads.download({ url, filename: "...", saveAs: true });
+```
 </div><div>
 
 #### Store/Load data
 
-[Storage - reference](https://developer.chrome.com/docs/extensions/reference/storage/).
+[Storage - reference](https://developer.chrome.com/docs/extensions/reference/storage/). See also [Storage Area Explorer](https://stackoverflow.com/questions/11922964/how-do-i-view-the-storage-of-a-chrome-extension-ive-installed).
 
 <details class="details-n">
 <summary>Use <code>storage.local</code></summary>
