@@ -70,7 +70,7 @@
         "name": "IntelliJ plugins",
         "desc": "IntelliJ Platform Plugin SDK.",
         "icon": "<i class=\"bi bi-plugin\"></i>",
-        "hidden": false
+        "hidden": true
       }
     ]
   }

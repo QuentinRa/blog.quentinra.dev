@@ -186,27 +186,6 @@
 				"icon": "<i class=\"bi bi-globe\"></i>"
 			},
 			{
-				"tag": "info/low-level/system_calls/index.md",
-				"name": "System calls",
-				"desc": "Learn about the most-used system calls.",
-				"icon": null,
-				"hidden": false
-			},
-			{
-				"tag": "info/low-level/assembly/arm/index.md",
-				"name": "Assembly (ARM)",
-				"desc": "...",
-				"icon": null,
-				"hidden": false
-			},
-			{
-				"tag": "info/low-level/c/index.md",
-				"name": "C programming",
-				"desc": "...",
-				"icon": "<i class=\"bi bi-terminal-fill\"></i>",
-				"hidden": false
-			},
-			{
 				"tag": "info/cryptography/basics/index.md",
 				"name": "Crypto (basics)",
 				"desc": "A lot of mathematical foundations allowing one's to understand more easily cryptographic algorithms.",

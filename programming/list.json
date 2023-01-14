@@ -241,8 +241,31 @@
             {
               "tag": "code/kotlin/index.md",
               "name": "Kotlin",
-              "desc": "...",
+              "desc": "Java on Steroids.",
               "icon": "<img src=\"http://blog.quentinra.dev2/courses/programming/code/kotlin/_images/kotlin-logo.png\" class=\"ms-logo pb-1\" alt=\"kotlin-logo\" title=\"kotlin-log\">",
+              "hidden": false
+            }
+          ],
+          "xxx": [
+            {
+              "tag": "code/system_calls/index.md",
+              "name": "System calls",
+              "desc": "Learn about the most-used system calls.",
+              "icon": null,
+              "hidden": false
+            },
+            {
+              "tag": "code/assembly/arm/index.md",
+              "name": "Assembly (ARM)",
+              "desc": "...",
+              "icon": null,
+              "hidden": false
+            },
+            {
+              "tag": "code/c/index.md",
+              "name": "C programming",
+              "desc": "...",
+              "icon": "<i class=\"bi bi-terminal-fill\"></i>",
               "hidden": false
             }
           ]

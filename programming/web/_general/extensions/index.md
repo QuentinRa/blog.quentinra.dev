@@ -464,11 +464,17 @@ chrome.downloads.download({ url, filename: "...", saveAs: true });
 
 ```javascript
 // 🔐 permission "storage"
+// Get
 chrome.storage.local.get(["key"], function(result){
     const value = result["key"]
     // ...
 })
+// Set
 chrome.storage.local.set( { key: value } ).then(() => {})
+// Dump
+chrome.storage.local.get(function(result) { console.log(result) })
+// Clear
+chrome.storage.local.clear()
 ```
 </details>
 
@@ -498,13 +504,9 @@ chrome.storage.local.set(entry).then(() => {})
 // get
 chrome.bookmarks.getChildren("id", function(result) {})
 chrome.bookmarks.get("id", function(result) {})
-// dump the storage
-chrome.storage.local.get(function(result) { console.log(result) })
 // remove
 chrome.bookmarks.remove("id")
 chrome.bookmarks.removeTree("id")
-// clear
-chrome.storage.local.clear()
 ```
 </details>
 
