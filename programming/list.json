@@ -246,7 +246,7 @@
               "hidden": false
             }
           ],
-          "xxx": [
+          "Low-level programming languages": [
             {
               "tag": "code/system_calls/index.md",
               "name": "System calls",
@@ -259,7 +259,7 @@
               "name": "Assembly (ARM)",
               "desc": "...",
               "icon": null,
-              "hidden": false
+              "hidden": true
             },
             {
               "tag": "code/c/index.md",

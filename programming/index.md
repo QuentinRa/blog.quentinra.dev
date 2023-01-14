@@ -20,6 +20,7 @@ The icon with an arrow (➡️) means that they should be tackled first.
 * latex/rst
 * xml
 * build tools
+* assembly
 </div></div>
 
 <hr class="sep-both">

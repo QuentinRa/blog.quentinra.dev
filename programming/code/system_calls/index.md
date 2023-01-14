@@ -1,22 +1,24 @@
 # System calls
 
-System calls are low-level functions that are directly interacting with the Linux kernel. You would usually use them in assembly, but this will be explained in another course. Rather, this course will focus on system calls in C, as this is hopefully simpler to learn than assembly.
-
 <div class="row row-cols-md-2"><div>
 
-> System functions are defined in `man 2`, such as `man 2 open`.<br>
-> You will find inside **imports**, and **signatures** of the system calls.<br>
-> See `man 2 syscalls`.
+System calls are low-level functions that are directly interacting with the Linux kernel. You would usually use them in assembly, but this will be explained in another course. Rather, this course will focus on system calls in C, as this is hopefully simpler to learn than assembly.
+
 </div><div class="align-self-center">
 
-**Note**: for now, `fork`, `kill`, `dup/dup2/dup3`, `execv`, `sleep`, `pipe`, along every process-related system-calls, will not be listed in this course.
+They are defined in `man 2`, such as `man 2 open`. See `man 2 syscalls`.
+You will find inside
+
+* 🎯 **imports**
+* 💪 **signatures**
+
 </div></div>
 
 <hr class="sl">
 
-## `perror` - print system call error message
+## `perror` - print a system call's error message
 
-*This is not a system call, let's make <s>one</s> two exceptions*.
+*This is not a system call, but let's make one exception*.
 
 <div class="row row-cols-md-2"><div>
 
@@ -30,50 +32,7 @@ void perror(const char *s);
 If a system call failed, an error code will be set. You can use `perror` to print the error message, and you can even append your own error message with the parameter `s`.
 </div></div>
 
-> **NOTE**: system calls are usually returning **0 upon success, and -1 upon failure**. In any case, they set the variable "errno" with the code indicating what error occurred, and this is what perror will use to tell us more about the error.
-
-<hr class="sr">
-
-## `strtol/atoi` - string to number
-
-*This is not a system call, this is the 2nd exception*.
-
-<div class="row row-cols-md-2"><div>
-
-It will surely be useful when making programs using system-calls. The easiest one to use is `atoi`, while its shortcoming is that if there is an error, nothing will happen, and it will return "0".
-
-```c
-#include <stdlib.h>
-
-// int atoi(const char *nptr);
-int c = atoi("5");
-// long atol(const char *nptr);
-long l = atol("5");
-```
-</div><div>
-
-```c
-#include <stdlib.h>
-
-// long strtol(const char *nptr, char **endptr, int base);
-int c = (int) strtol("5", NULl, 0);
-long l = strtol("5", NULl, 10);
-
-// double strtod(const char *nptr, char **endptr);
-// float strtof(const char *nptr, char **endptr);
-double d = strtod("2.0", NULL);
-```
-
-* `base`: 0 means autodetect radix, otherwise, the radix
-* `endptr`: NULL, or a pointer of a pointer, in which invalid character are stored. They are removed when making the conversion.
-
-```c
-char* str;
-long _ = strtol("5a", &str, 0);
-// str will be "a"
-```
-
-</div></div>
+> **NOTE**: system calls are usually returning **0 upon success, and -1 upon failure**. If an error occurred, they set the global variable `errno` with a code indicating what error occurred. `perror` will use this code to display a human-readable error message.
 
 <hr class="sl">
 
@@ -273,4 +232,23 @@ struct stat {
  time_t    st_ctime;   /* time of last status change */
 };
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* `fork`
+* `kill`
+* `dup/dup2/dup3`
+* `sleep`
+</div><div>
+
+* `execv`
+* `pipe`
+* ...
 </div></div>
