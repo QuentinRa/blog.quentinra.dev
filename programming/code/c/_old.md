@@ -1,40 +1,8 @@
-# What you will find in this course
-
-* how to start programming in `C`
-* almost all you need to know to write/read any kind of `C` programs
-* how to use ``ncurses`` to create terminal interfaces
-* how to do ``networking`` or use `threads` in `C`
-
-If you want some little knowledge about programming before
-starting, this page should help you : [First timer](sub/first-time.md).
-
-<hr class="sl">
-
-## Introduction
-
-After writing some code in ``C``, you need something to compile it. On
-Linux systems, you can use
-
-* ``gcc`` (you may use something like `sudo apt-get install gcc`)
-* [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-to use ``gcc`` on Windows
-* use some IDE like CLion or VSCode (but with WSL)
-* check out docker tutorial (not really what you should try)
-
-Simply write ``gcc -v`` in a terminal to check if you have gcc.
-Then you will write ``gcc -o a.out my_file.c`` to create a
-file ``a.out`` and write `./a.out` to run your program.
-
-Here is an example file
-
 ```c
 // libraries
-#include<stdio.h>
 #include<stdlib.h>
-
 // entry point, function called when program is run
 int main(int argc, char *argv[]){
-    printf("Hello World"); // print in terminal
     return EXIT_SUCCESS; // job done
 }
 ```
