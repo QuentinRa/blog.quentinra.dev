@@ -1,5 +1,11 @@
 <hr class="sr">
 
+gcc -c file1.c file2.c file2.h
+gcc -o files.out file1.o file2.o
+./files.out <argument> <argument>
+
+<hr class="sr">
+
 ## `strtol/atoi` - string to number
 
 *This is not a system call, this is the 2nd exception*.
