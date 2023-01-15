@@ -53,6 +53,8 @@ const int A_CONSTANT = 5;
 
 ➡️ For printf, there are formats for signed and unsigned types.
 
+🔥 There is no type `bool/boolean`, so we usually use a `short`/`int`. You can use any value such as `1` for **true**, while `0` means **false**.
+
 ```c
 char aaa = 'a'; // one character | 8 bits
 // printf: %c %hhd %hhi | %%c %hhd %hhu %hhx %hho
@@ -91,6 +93,18 @@ You can cast a value using `(type)`.
 
 ```
 int xxx = (int) 'c'; // xxx == 99
+```
+
+#### Print some text in the terminal
+
+We use `printf` to print standard output, and `fprintf` to print errors.
+
+```c
+#include <stdio.h>
+printf("Hello, World\n");
+printf("Hello, %s\n", "World");
+printf("%s, World\n", "Hello");
+printf("%s, %s\n", "Hello", "World");
 ```
 
 #### Operators

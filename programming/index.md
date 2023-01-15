@@ -14,11 +14,12 @@ The icon with an arrow (➡️) means that they should be tackled first.
 
 **Courses planned**
 
-* kotlin
 * jekyll/pages
 * WordPress
 * latex/rst
 * xml
+* c
+* cpp
 * build tools
 * assembly
 </div></div>

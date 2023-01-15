@@ -7,6 +7,8 @@ gcc -o files.out file1.o file2.o
 #define
 sizeof
 \0
+Libraries
+Pointers/Addresses
 
 <hr class="sr">
 

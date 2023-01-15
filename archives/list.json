@@ -132,21 +132,12 @@
 				"desc": "A tool to create Windows installers, with an uninstaller and a modern interface.",
 				"icon": "<i class=\"bi bi-gear\"></i>",
 				"hidden": false
-			}
-		],
-		"💪 JetBrains 💪": [
+			},
 			{
 				"tag": "tools/jetbrains/index.md",
 				"name": "JetBrains",
 				"desc": "Make your programming life easier by coding inside powerful preconfigured IDEs.",
 				"icon": "<i class=\"bi bi-battery-charging\"></i>",
-				"hidden": false
-			},
-			{
-				"tag": "tools/jetbrains/plugins/index.md",
-				"name": "JetBrains (plugins)",
-				"desc": "No description yet.",
-				"icon": null,
 				"hidden": false
 			}
 		],
@@ -171,13 +162,6 @@
 				"desc": "Coming soon!",
 				"icon": "<i class=\"bi bi-terminal-fill\"></i>",
 				"hidden": true
-			},
-			{
-				"tag": "info/programming/kotlin/index.md",
-				"name": "Kotlin",
-				"desc": "Kotlin is a open-source, modern, programming language developed by JetBrains, which is also the main language used for Android applications.",
-				"icon": "<i class=\"bi bi-terminal-fill\"></i>",
-				"hidden": false
 			},
 			{
 				"tag": "info/very_old/php/index.md",
@@ -299,22 +283,6 @@
 				"name": "NoSQL",
 				"desc": "Learn about NoSQL 'NotOnlySQL', 4 new kinds of databases which are more flexible than relational databases (such as MongoDB or Cypher).",
 				"icon": "<i class=\"bi bi-stack\"></i>",
-				"hidden": false
-			}
-		],
-		"🕸️ &nbsp;Web&nbsp; 🕸️": [
-			{
-				"tag": "info/web/general/index.md",
-				"name": "WEB",
-				"desc": "How to start, what you need to know, ... and everything that couldn't be put in a specific language course.",
-				"icon": "<i class=\"bi bi-globe\"></i>",
-				"hidden": false
-			},
-			{
-				"tag": "info/web/html/index.md",
-				"name": "HTML",
-				"desc": "A complete summary of what you need to know in HTML to make a website.",
-				"icon": "<i class=\"bi bi-globe\"></i>",
 				"hidden": false
 			}
 		]
