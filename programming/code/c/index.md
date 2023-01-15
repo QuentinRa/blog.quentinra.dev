@@ -83,6 +83,8 @@ A string in C is an array of chars. You can use escape codes such as "`\n`" (new
 char* xxx = "Hello World\n";
 ```
 
+<p></p>
+
 #### Conversions
 
 You can cast a value using `(type)`.
@@ -90,7 +92,88 @@ You can cast a value using `(type)`.
 ```
 int xxx = (int) 'c'; // xxx == 99
 ```
+
+#### Operators
+
+```c
+// assignation
+int x = 5
+x++; // 6, same as x = x + 1
+x += 2; // 8, same as x = x + 2
+x--; // 7, same as x = x - 1
+x -= 3; x *= 3; x /= 4;
+// arithmetic
+int sum = 5 + 5; // 10
+int by = 5 * 5; // 25
+int divided = 6 / 5; // 1
+// logical
+if (5 == 5) {} // true
+if (5 != 5) {} // false
+if (!0) {} // !0 = 1 = true
+if (1 || 0) {} // logical OR, true
+if (1 && 0) {} // logical AND, false
+if (1 ^ 0) {} // logical XOR, true
+```
+
 </div></div>
+
+<hr class="sep-both">
+
+## Structures
+
+<div class="row row-cols-md-2"><div>
+
+#### Branching
+
+Usual if/else.
+
+```c
+if (1) { }
+if (1) { } else {}
+if (1) { } else if (0) {} else {}
+```
+
+Ternary operator: `condition ? value_if_true : value_if_value`.
+
+```c
+char* value = 1 ? "true" : "false";
+```
+
+Switch-case <small>(without break, more than one case may be executed)</small>
+
+```c
+int variable = 1;
+switch(variable){
+    case 1: printf("variable=1\n"); break; // here
+    case 2: printf("variable=2\n"); break;
+    default:
+        printf("variable=???\n");
+        break;
+}
+```
+</div><div>
+
+#### Loops
+
+In every loop, you can use `break`/`break n` to exit the loop, and you can use `continue` to skip the code, and process to the next iteration.
+
+```c
+// usual loop - i in [0, 10[
+for (int i = 0; i < 10; ++i) {}
+// reverse loop - i in ]0, 10]
+for (int i = 10; i > 0; i--) {}
+// nested loop
+for (int i = 0; i < 5; ++i) {
+    for (int j = 0; j < 5; ++j) {}
+}
+```
+
+```c
+while(1) {}; // repeat while true
+do {} while(1); // executed at least once
+```
+</div></div>
+
 
 <hr class="sep-both">
 
@@ -152,4 +235,6 @@ Stuff that I found, but never read/used yet.
 
 * `short int`
 * `long long int`
+* barrel shift `a >> b` (divide by 2), `a << b` (multiply by 2)
+* `&`, `|`
 </div></div>

@@ -1,31 +1,4 @@
-# xxx
-
-```c
-// libraries
-#include<stdlib.h>
-// entry point, function called when program is run
-int main(int argc, char *argv[]){
-    return EXIT_SUCCESS; // job done
-}
-```
-
-<hr class="sr">
-
-## Start programming in C
-
-The basic element of syntax
-
-* [Types](start/types.md)
-
-<hr class="sl">
-
-## Advanced programming in C
-
-...
-
-<hr class="sr">
-
-## Using ncurses
+# Using ncurses
 
 NCurses is a graphic library to create beautiful
 interfaces in a terminal. I you do know the
