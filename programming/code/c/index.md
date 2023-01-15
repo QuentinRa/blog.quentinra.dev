@@ -94,6 +94,51 @@ int xxx = (int) 'c'; // xxx == 99
 
 <hr class="sep-both">
 
+## The function <code>main</code>
+
+<div class="row row-cols-md-2"><div>
+
+The `main` function is called when executing your program.
+
+```c
+int main() {
+    // your program here
+    return 0;
+}
+```
+
+The `return 0` is the exit code of your program. `0` mean success, `not 0` means failure. You can use `EXIT_SUCCESS`/`EXIT_FAILURE` instead:
+
+```c
+#include <stdlib.h>
+
+int main() {
+    return EXIT_SUCCESS; // or EXIT_FAILURE
+}
+```
+</div><div>
+
+You can pass arguments to your program.
+
+```powershell
+$ ./a.out "Hello" "World!"
+```
+
+Use `argc` to know the number of arguments. `argv` is an array of strings (`char *`). There first argument is the path to your executable.
+
+```c
+int main (int argc, char* argv[]) {
+    printf("argv[%d]=%s\n", 0, argv[0]); // "./a.out"
+    printf("argv[%d]=%s\n", 1, argv[1); // "Hello"
+    printf("argv[%d]=%s\n", 2, argv[2); // "World!"
+    printf("argc=%d\n", argc); // 3
+    return 0;
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
