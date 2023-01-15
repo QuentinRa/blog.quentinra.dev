@@ -47,6 +47,8 @@ const int A_CONSTANT = 5;
 
 #### Types
 
+<p></p>
+
 ➡️ Types are **signed** by default, meaning there are $2^{n-1}$ negative values, $2^{n-1}$ positive values **including** 0 giving us $[2^{n-1}, 2^{n-1}-1]$. Unsigned variables only take positive values: $[0, 2^{n}-1]$.
 
 ➡️ For printf, there are formats for signed and unsigned types.
@@ -75,7 +77,19 @@ long double hhh = 3.14; // a very big real | 80 bits
 ```
 </div><div>
 
-...
+A string in C is an array of chars. You can use escape codes such as "`\n`" (newline), "`\t`" (tabulation), or "`\`" to escape a character.
+
+```
+char* xxx = "Hello World\n";
+```
+
+#### Conversions
+
+You can cast a value using `(type)`.
+
+```
+int xxx = (int) 'c'; // xxx == 99
+```
 </div></div>
 
 <hr class="sep-both">
@@ -87,6 +101,8 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [Old](_old.md)
+* `void*` / `#define NULL = (void *)0`
+* MACROS
 </div><div>
 
 * `short int`

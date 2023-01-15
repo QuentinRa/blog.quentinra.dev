@@ -250,5 +250,6 @@ Stuff that I found, but never read/used yet.
 
 * `execv`
 * `pipe`
+* adding exercises from texas
 * ...
 </div></div>

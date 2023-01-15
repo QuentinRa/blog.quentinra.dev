@@ -4,6 +4,10 @@ gcc -c file1.c file2.c file2.h
 gcc -o files.out file1.o file2.o
 ./files.out <argument> <argument>
 
+#define
+sizeof
+\0
+
 <hr class="sr">
 
 ## `strtol/atoi` - string to number
