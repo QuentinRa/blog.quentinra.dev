@@ -374,12 +374,17 @@ int first = b[0];
 To iterate an array, you better know the length
 
 ```c
-// a[0]=3
-// a[1]=4
-for (int i = 0; i < 2; ++i) {
+int length = 2;
+for (int i = 0; i < length; ++i) {
     printf("a[%d]=%d\n", i, a[i]);
 }
-// or, you can use this "trick"
+// a[0]=3
+// a[1]=4
+```
+
+You can also use this trick, but it won't work on dynamically allocated arrays. The `sizeof(int)` is for an `int[]`...
+
+```c
 int size = sizeof(a) / sizeof(int);
 for (int i = 0; i < size; ++i) {
     printf("a[%d]=%d\n", i, a[i]);
@@ -387,10 +392,47 @@ for (int i = 0; i < size; ++i) {
 ```
 </div><div>
 
+You can create multidimensional arrays by adding another `[]`. The first size is the number of lines, the second is for the columns.
 
+```
+int a[l][c];
+int a[2][2] = { {1,2}, {3,4}};
+// a[0][0] = 1
+// a[0][1] = 2
+// ...
+```
 
+#### Arrays are pointers
 
+To be accurate, an array is a **pointer** to the first case of the array. As all cases are adjacent, we can move to the $nth$ case starting from the first one.
 
+```
+int first = *a; // same as a[0]
+int first = *(a+0); // same as a[0]
+```
+
+#### Dynamic arrays
+
+Usual arrays have a fixed length. You can use `malloc` to create a pointer to an array of `n` elements.
+
+```c
+int n = 10;
+// 👉 allocate memory
+int *a = (int*) malloc(n*sizeof(int));
+int *a = (int*) calloc(sizeof(int), n); // 0 in all cases
+// code
+// 👉 free up the memory
+free(a);
+```
+
+You can change the size with `realloc`:
+
+```c
+n = 20;
+a = (int*) realloc(a, n*sizeof(int));
+```
+
+🎯 If you have $n$ `malloc`, you must have $n$ `free`.
 </div></div>
 
 <hr class="sep-both">
