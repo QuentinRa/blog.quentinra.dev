@@ -453,8 +453,6 @@ A stream is a buffer (array) where we can read/write data from a source. There a
 
 ➡️ All of these are stream of characters.
 
-<br>
-
 #### files
 
 To open a stream to a file, use `fopen`. You must close it after use.
@@ -542,6 +540,47 @@ fwrite("Hello, World", sizeof(char), 12+1, stdout);
 // same, 1 == stdout
 write(1, "Hello, World", (12+1) * sizeof(char));
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Multiple files, and headers
+
+<div class="row row-cols-md-2"><div>
+
+You can move the declaration of functions/types to another file, called header, such as `main.h`. Other files will only be able to use what you declared inside these.
+
+```c
+#ifndef MAIN_H
+#define MAIN_H
+
+// your declarations here
+int xxx();
+
+#endif
+```
+
+In another file, you should use import with `""` to import it.
+
+```c
+#include "path/.../main.h"
+```
+</div><div>
+
+To compile, you must do it in two steps. This step will generated two files: `main.o` and `other.o`.
+
+```ps
+$ gcc -c main.c main.h other.c
+$ gcc -c  main.c other.c # same
+```
+
+Then, you must link your `.o` to generate an executable.
+
+```ps
+$ gcc main.o other.o -o a.out
+```
+
+➡️ We usually use a **Makefile** to avoid having to type complex commands each time we want to compile the project.
 </div></div>
 
 <hr class="sep-both">

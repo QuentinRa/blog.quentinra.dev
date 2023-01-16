@@ -1,7 +1,3 @@
-<hr class="sr">
-
-gcc -c file1.c file2.c file2.h
-gcc -o files.out file1.o file2.o
 gcc -std=c99
 
 #define
