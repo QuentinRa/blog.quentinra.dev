@@ -1,23 +1,4 @@
-# Using ncurses
-
-NCurses is a graphic library to create beautiful
-interfaces in a terminal. I you do know the
-great ``VIM`` editor, then the interface was made with
-ncurses. It's simple and really easy to learn.
-
-You can install ncurses using
-
-* ``sudo apt-get install libncurses5-dev libncursesw5-dev``
-* check installed with ``ls -la /usr/include/ncurses.h``
-
-You may check these resources
-
-* <https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/>
-* <https://github.com/tony/NCURSES-Programming-HOWTO-examples>
-
-<hr class="sl">
-
-## Threads and processes
+# Threads and processes
 
 Sometimes, you might create a program where you may want to do some tasks
 in parallel. When running a program, the system encapsulates the program

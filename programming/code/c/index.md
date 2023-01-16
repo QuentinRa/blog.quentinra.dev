@@ -630,13 +630,59 @@ int main(void) {
 }
 ```
 
+<br>
+
+#### math.h
+
+⚠️ You must use `gcc [...] -lm` to compile your file.
+
+```c
+#include <math.h>
+
+// round() ceil(), trunc(), fabs(), floor(),
+// log(), sqrt(x), pow(x, y), exp(), log10(),
+// sin(), cos(), tan(), asin(), acos(), atan(),
+// M_E, M_PI
+
+int xxx = pow(10, 3); // 10^3
+```
+</div><div>
+
 #### Execute a command
+
+<p></p>
 
 ```c
 // clear the terminal
 system("clear");
 ```
-</div><div>
+
+#### string.h
+
+<p></p>
+
+```c
+#include <math.h>
+
+// strlen(), strcmp()
+// strcpy(), strcat()
+// strtol(), strtoul(), strtod()
+
+int five = (int) strtol("5", NULl, 0);
+long five = strtol("5", NULl, 10);
+double five = strtod("5.0", NULL);
+
+char* str;
+long error = strtol("5a", &str, 0);
+// "str" == "a" (so str is not empty == error)
+```
+
+```c
+#include <stdlib.h>
+int five = atoi("5");
+int error = atoi("xxx"); // 0
+long five = atol("5");
+```
 </div></div>
 
 <hr class="sep-both">
@@ -651,7 +697,8 @@ Stuff that I found, but never read/used yet.
 * `void*` / `#define NULL = (void *)0`
 * C89/C99/C11/C23/[cake](https://github.com/thradams/cake)
 * Add notes from exercises
-* GDB
+* GDB / [online](https://learn.onlinegdb.com/)
+* webassembly
 
 ```
 printf("%5d", 5); // "     5"
@@ -661,9 +708,11 @@ printf("%.3f", 1.35); // "1.350"
 ```
 </div><div>
 
-* `sizeof` / `%zu`
+* `sizeof` / `%zu` / `sizeof(type) sizeof(*variable)`
 * `short int`
 * `long long int`
 * barrel shift `a >> b` (divide by 2), `a << b` (multiply by 2)
 * `&`, `|`
+* LinkedLists/...
+* labels, and `goto`
 </div></div>

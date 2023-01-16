@@ -1,74 +1,12 @@
-gcc -std=c99
-
-#define
-sizeof
 \0
-Libraries
-Pointers/Addresses
 void (*handler)(int)
-
-<hr class="sr">
-
-## `strtol/atoi` - string to number
-
-*This is not a system call, this is the 2nd exception*.
-
-<div class="row row-cols-md-2"><div>
-
-It will surely be useful when making programs using system-calls. The easiest one to use is `atoi`, while its shortcoming is that if there is an error, nothing will happen, and it will return "0".
-
-```c
-#include <stdlib.h>
-// int atoi(const char *nptr);
-int c = atoi("5");
-// long atol(const char *nptr);
-long l = atol("5");
-```
-</div><div>
-
-```c
-#include <stdlib.h>
-
-// long strtol(const char *nptr, char **endptr, int base);
-int c = (int) strtol("5", NULl, 0);
-long l = strtol("5", NULl, 10);
-
-// double strtod(const char *nptr, char **endptr);
-// float strtof(const char *nptr, char **endptr);
-double d = strtod("2.0", NULL);
-```
-
-* `base`: 0 means autodetect radix, otherwise, the radix
-* `endptr`: NULL, or a pointer of a pointer, in which invalid character are stored. They are removed when making the conversion.
-
-```c
-char* str;
-long _ = strtol("5a", &str, 0);
-// str will be "a"
-```
-
-</div></div>
-
-sizeof(type) sizeof(*variable)
 
 https://stackoverflow.com/questions/14492637/warn-when-using-parameter-marked-as-unused
 flags
 
-dup dup2 dup3(2)
-file:///C:/Users/quent/Documents/texas-res/_build/html/system/linux/annales/p/rep/p2.html#exercice-4-fork-5-points
-
-https://learn.onlinegdb.com/
-http://learn.onlinegdb.com/
-
-https://docs.microsoft.com/cpp/c-language/
-
 https://www.w3schools.in/c-tutorial/c99/
+https://www.w3schools.com/c/index.php
 
-webassembly
-
+gcc -std=c99
 sudo apt-get install build-essential gdb
 file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/files/bash/utils.html
-
-ncurses
-https://gist.github.com/alan-mushi/c8a6f34d1df18574f643
-https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/forms.html
