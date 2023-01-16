@@ -246,7 +246,7 @@ int main (int argc, char* argv[]) {
 
 <div class="row row-cols-md-2"><div>
 
-A function is a bloc of code that was extracted in a separate place, mostly to be reused, or to keep things clean.
+A function is a bloc of code that was extracted from the `main` function, mostly to be reused, or to keep things clean.
 
 <div class="row row-cols-md-2"><div>
 
@@ -268,6 +268,7 @@ A function must be declared **before** being called. As a good practice is to pu
 
 ```c
 int square(int v); // prototype
+// 👉 same as: int square(int);
 
 // 👉 the main is the first function we see
 int main(void) {
@@ -344,6 +345,52 @@ int main(void) {
     printf("%d\n", a); // 1
 }
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Arrays
+
+<div class="row row-cols-md-2"><div>
+
+An array is a list of values. The first value is at the index `0`.
+
+```c
+int a[] = {3, 4}; // length = 2
+int a[2] = {3, 4}; // same
+// each case will have a default value
+// determined by the compiler
+int b[2];
+int c[2] = {0}; // all cases with have the value 0
+int d[5] = {1, 0}; // d[0] = 1, others = 0 
+
+// edit your array
+b[0] = 3;
+b[1] = 4;
+// get the nth-1 value
+int first = b[0];
+```
+
+To iterate an array, you better know the length
+
+```c
+// a[0]=3
+// a[1]=4
+for (int i = 0; i < 2; ++i) {
+    printf("a[%d]=%d\n", i, a[i]);
+}
+// or, you can use this "trick"
+int size = sizeof(a) / sizeof(int);
+for (int i = 0; i < size; ++i) {
+    printf("a[%d]=%d\n", i, a[i]);
+}
+```
+</div><div>
+
+
+
+
+
 </div></div>
 
 <hr class="sep-both">
