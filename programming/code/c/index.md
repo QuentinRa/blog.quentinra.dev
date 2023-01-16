@@ -457,7 +457,43 @@ A stream is a buffer (array) where we can read/write data from a source. There a
 
 #### files
 
-...
+To open a stream to a file, use `fopen`. You must close it after use.
+
+```c
+FILE* f = NULL;
+// open a file
+if ((f = fopen("file.txt", "r")) == NULL) {
+    /* error, do something */
+    return 1;
+}
+
+// close
+fclose(f);
+```
+
+Note that when reading/writing in a file, you are moving a **cursor**. The cursor initial location is determined by the mode used when opening the file.
+
+* `r`: read-only, cursor at the start
+* `w`: write-only, clear the file, cursor at the start
+* `a`: write-only, cursor at the end
+
+To open a file in multiple modes, add a `+`, such as `r+`, but you must flush the buffer first.
+
+```
+fflush(f); // or fseek(f, 0, SEEK_CUR);
+```
+
+To move the cursor, you can use
+
+```
+long pos = ftell(f); // position of the cursor
+fseek(f, 0L, SEEK_CUR); // jump 0 bytes from current
+fseek(f, 0L, SEEK_SET); // jump to the start
+fseek(f, 0L, SEEK_END); // jump to the end
+rewind(f); // jump to the start
+// is the cursor at the end? 0=FALSE, 1=TRUE
+int eof = feof(f); // EOF = EndOfFile
+```
 </div><div>
 
 ```
