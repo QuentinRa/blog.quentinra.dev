@@ -453,13 +453,21 @@ A stream is a buffer (array) where we can read/write data from a source. There a
 
 ➡️ All of these are stream of characters.
 
+<br>
+
+#### files
+
+...
 </div><div>
+
+```
+int value; // used for examples with scanf/...
+char* buffer[11]; // used for examples with a buffer
+```
 
 #### Streams of characters
 
 A stream in which what we write/read are characters.
-
-##### Read
 
 ```c
 // 👉 stdin (shortcuts)
@@ -467,10 +475,8 @@ scanf("%d", &value); // same as printf
 // 👉 from any stream (ex: with stdin)
 fscanf(stdin, "%d", &value); // same as printf
 int value = fgetc(stdin); // read one char, deprecated?
-fgets(buffer, 10, stdin); // read n chars, char* buffer[11]
+fgets(buffer, 10, stdin); // read n chars + \0
 ```
-
-##### Write
 
 ```c
 // 👉 stdout (shortcuts)
@@ -481,6 +487,24 @@ puts("Hello, World\n"); // print one string
 fprintf(stdout, "%d", value);
 fputc('\n', stdout); // same as putchar/putc
 fputs("Hello, World\n", stdout); // same as puts
+```
+
+#### Streams of bytes
+
+A binary stream.
+
+```c
+// read one int from stdin
+read(buffer, sizeof(int), 1);
+// read one int from stdin
+fread(buffer, sizeof(int), 1, stdin);
+```
+
+```c
+// write 13 (12+\0) characters to stdout
+fwrite("Hello, World", sizeof(char), 12+1, stdout);
+// same, 1 == stdout
+write(1, "Hello, World", (12+1) * sizeof(char));
 ```
 </div></div>
 
