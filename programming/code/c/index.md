@@ -284,6 +284,70 @@ int square(int v) {
 
 <hr class="sep-both">
 
+## Pointer and addresses
+
+<div class="row row-cols-md-2"><div>
+
+Every variable is stored at some location inside the memory. 
+
+When calling a function with some variables, they are passed by value, meaning they are **copied** 🤢, and if the new function edit them, the original with remain unchanged 🚫.
+
+To avoid losing memory because of copies 🔥, or to allow a function to edit a variable passed to it ✨, you can use pointers 🍀.
+
+A **pointer** is a variable holding the address of another variable. 
+
+* ➡️ A pointer has a fixed size in memory
+* ➡️ A pointer can read/edit the value of the original variable
+
+**From a variable, to get the address, use `&`**
+
+```c
+int *a = NULL; // default value for a pointer
+int b = 10;
+a = &b; // a can now read/edit b
+```
+
+**To access the variable stored inside the pointer, use `*`**
+
+```c
+int c = *a; // c = 10
+```
+</div><div>
+
+To print the address of a variable, use `%p`
+
+```
+printf("%p\n", &b); // 0xXXX
+printf("%p\n", &(*a)); // same, 0xXXX
+```
+
+Without a pointer, `a` is still equals to `0` after `f(a)`.
+
+```c
+void f(int a) { a++; }
+
+int main(void) {
+    int a = 0;
+    f(a);
+    printf("%d\n", a); // 0
+}
+```
+
+With a pointer, the function `f` is now able to edit `a`.
+
+```c
+void f(int* a) { (*a)++; }
+
+int main(void) {
+    int a = 0;
+    f(&a);
+    printf("%d\n", a); // 1
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

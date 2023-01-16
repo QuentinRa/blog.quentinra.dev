@@ -9,6 +9,7 @@ sizeof
 \0
 Libraries
 Pointers/Addresses
+void (*handler)(int)
 
 <hr class="sr">
 
