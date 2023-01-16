@@ -65,6 +65,7 @@ short bbb = 42; // a small number | 16 bits
 int ccc = 42; // a number | 32 bits
 // printf: %d %i | %u %X
 // alternatives: 42i (signed) 42U (unsigned)
+// alternatives: 0x10 (hexa, %x) 010 (octal, %o)
 long ddd = 42; // a big number | 64 bits
 // printf: %ld %li | %llu %llo %llx %llX
 // alternatives: 42L (signed), 42UL (unsigned)
@@ -86,8 +87,6 @@ A string in C is an array of chars. You can use escape codes such as "`\n`" (new
 char* xxx = "Hello World\n";
 ```
 
-</div><div>
-
 #### Conversions
 
 You can cast a value using `(type)`.
@@ -95,6 +94,7 @@ You can cast a value using `(type)`.
 ```
 int xxx = (int) 'c'; // xxx == 99
 ```
+</div><div>
 
 #### Print some text in the terminal
 
@@ -136,6 +136,19 @@ if (1 ^ 0) {} // logical XOR, true
 int i = 0;
 if (i++ == 1) {} // false, "==" is evaluated before "++"
 if (++i == 2) {} // true, "==" is evaluated after "++"
+```
+
+#### Macros
+
+`#define` is used to define something that will be replaced by something else. It could be used for constants, but you can basically use it for anything.
+
+```
+#define HELLO(n) printf("Hello, %s!\n", n)
+#define WHO "World"
+
+int main(void) {
+    HELLO(WHO);
+}
 ```
 
 </div></div>
@@ -439,6 +452,18 @@ a = (int*) realloc(a, n*sizeof(int));
 
 <hr class="sep-both">
 
+## Structures
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Streams and files
 
 <div class="row row-cols-md-2"><div>
@@ -585,6 +610,37 @@ $ gcc main.o other.o -o a.out
 
 <hr class="sep-both">
 
+## Libraries
+
+<div class="row row-cols-md-2"><div>
+
+#### Random number
+
+```c
+#include <stdlib.h>
+#include <time.h>
+
+int main(void) {
+    srand(time(NULL)); // randomize the generator
+    
+    int min = 1;
+    int max = 5;
+    int x = rand() % max + min;
+    // x in [min, max]
+}
+```
+
+#### Execute a command
+
+```c
+// clear the terminal
+system("clear");
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -593,10 +649,19 @@ Stuff that I found, but never read/used yet.
 
 * [Old](_old.md)
 * `void*` / `#define NULL = (void *)0`
-* MACROS
 * C89/C99/C11/C23/[cake](https://github.com/thradams/cake)
+* Add notes from exercises
+* GDB
+
+```
+printf("%5d", 5); // "     5"
+printf("%05d", 5); // "000005"
+printf("%0.3f", 1.35); // "1.350"
+printf("%.3f", 1.35); // "1.350"
+```
 </div><div>
 
+* `sizeof` / `%zu`
 * `short int`
 * `long long int`
 * barrel shift `a >> b` (divide by 2), `a << b` (multiply by 2)
