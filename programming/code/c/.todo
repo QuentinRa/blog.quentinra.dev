@@ -2,7 +2,7 @@
 
 gcc -c file1.c file2.c file2.h
 gcc -o files.out file1.o file2.o
-./files.out <argument> <argument>
+gcc -std=c99
 
 #define
 sizeof

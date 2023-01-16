@@ -27,6 +27,8 @@ Then, run your executable with
 $ ./a.out
 Hello World
 ```
+
+➡️ There are a few changes between C89 and C99 such as inline comments (`//`) and variable declarations inside `for` that were added.
 </div></div>
 
 <hr class="sep-both">
@@ -437,6 +439,53 @@ a = (int*) realloc(a, n*sizeof(int));
 
 <hr class="sep-both">
 
+## Streams and files
+
+<div class="row row-cols-md-2"><div>
+
+#### stdout, stderr, stdin
+
+A stream is a buffer (array) where we can read/write data from a source. There are 3 known streams that are always open
+
+* `stdin`/`0`: read input from the terminal
+* `stdout`/`1`: the standard output of the terminal
+* `stderr`/`2`: the error output of the terminal
+
+➡️ All of these are stream of characters.
+
+</div><div>
+
+#### Streams of characters
+
+A stream in which what we write/read are characters.
+
+##### Read
+
+```c
+// 👉 stdin (shortcuts)
+scanf("%d", &value); // same as printf
+// 👉 from any stream (ex: with stdin)
+fscanf(stdin, "%d", &value); // same as printf
+int value = fgetc(stdin); // read one char, deprecated?
+fgets(buffer, 10, stdin); // read n chars, char* buffer[11]
+```
+
+##### Write
+
+```c
+// 👉 stdout (shortcuts)
+printf("%d", value);
+putchar('\n'); // print one character
+puts("Hello, World\n"); // print one string
+// 👉 from any stream (ex: with stdout)
+fprintf(stdout, "%d", value);
+fputc('\n', stdout); // same as putchar/putc
+fputs("Hello, World\n", stdout); // same as puts
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -446,6 +495,7 @@ Stuff that I found, but never read/used yet.
 * [Old](_old.md)
 * `void*` / `#define NULL = (void *)0`
 * MACROS
+* C89/C99/C11/C23/[cake](https://github.com/thradams/cake)
 </div><div>
 
 * `short int`
