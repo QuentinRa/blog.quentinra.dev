@@ -274,6 +274,13 @@
               "desc": "...",
               "icon": null,
               "hidden": true
+            },
+            {
+              "tag": "code/ncurses/index.md",
+              "name": "ncurses",
+              "desc": "...",
+              "icon": null,
+              "hidden": false
             }
           ]
         }
