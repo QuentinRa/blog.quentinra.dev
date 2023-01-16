@@ -77,7 +77,6 @@ double ggg = 3.14; // a real | 64 bits
 long double hhh = 3.14; // a very big real | 80 bits
 // printf: %Lf %Le %LE %Lg %La
 ```
-</div><div>
 
 A string in C is an array of chars. You can use escape codes such as "`\n`" (newline), "`\t`" (tabulation), or "`\`" to escape a character.
 
@@ -85,7 +84,7 @@ A string in C is an array of chars. You can use escape codes such as "`\n`" (new
 char* xxx = "Hello World\n";
 ```
 
-<p></p>
+</div><div>
 
 #### Conversions
 
@@ -129,11 +128,19 @@ if (1 && 0) {} // logical AND, false
 if (1 ^ 0) {} // logical XOR, true
 ```
 
+➡️ There is also an operator `++x` (or `--x`). The difference with the postfix version is that the `++` is done before anything else.
+
+```c
+int i = 0;
+if (i++ == 1) {} // false, "==" is evaluated before "++"
+if (++i == 2) {} // true, "==" is evaluated after "++"
+```
+
 </div></div>
 
 <hr class="sep-both">
 
-## Structures
+## Control-flow structures
 
 <div class="row row-cols-md-2"><div>
 
@@ -188,7 +195,6 @@ do {} while(1); // executed at least once
 ```
 </div></div>
 
-
 <hr class="sep-both">
 
 ## The function <code>main</code>
@@ -230,6 +236,48 @@ int main (int argc, char* argv[]) {
     printf("argv[%d]=%s\n", 2, argv[2); // "World!"
     printf("argc=%d\n", argc); // 3
     return 0;
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Functions
+
+<div class="row row-cols-md-2"><div>
+
+A function is a bloc of code that was extracted in a separate place, mostly to be reused, or to keep things clean.
+
+<div class="row row-cols-md-2"><div>
+
+```c
+int square(int v) {
+    return v * v;
+}
+```
+</div><div>
+
+```c
+int x = square(5);
+// x = 25
+```
+</div></div>
+
+A function must be declared **before** being called. As a good practice is to put the main function at the top of the file, we usually use **signatures/prototypes** to declare the function before the main, then code the function after the main.
+</div><div>
+
+```c
+int square(int v); // prototype
+
+// 👉 the main is the first function we see
+int main(void) {
+    int x = square(5); // ✅ can call square
+    // ...
+}
+
+// 👉 and, here are implementations
+int square(int v) {
+    return v * v;
 }
 ```
 </div></div>

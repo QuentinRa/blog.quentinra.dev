@@ -242,11 +242,18 @@
               "tag": "code/kotlin/index.md",
               "name": "Kotlin",
               "desc": "In short: Java on Steroids.",
-              "icon": "<img src=\"http://blog.quentinra.dev2/courses/programming/code/kotlin/_images/kotlin-logo.png\" class=\"ms-logo pb-1\" alt=\"kotlin-logo\" title=\"kotlin-log\">",
+              "icon": "<img src=\"/courses/programming/code/kotlin/_images/kotlin-logo.png\" class=\"ms-logo pb-1\" alt=\"kotlin-logo\" title=\"kotlin-log\">",
+              "hidden": false
+            },
+            {
+              "tag": "code/cpp/index.md",
+              "name": "C++",
+              "desc": "...",
+              "icon": "<img src=\"/courses/programming/code/cpp/_images/c++-logo.png\" class=\"ms-logo pb-1\" alt=\"kotlin-logo\" title=\"kotlin-log\">",
               "hidden": false
             }
           ],
-          "Low-level programming languages": [
+          "Low-level programming": [
             {
               "tag": "code/c/index.md",
               "name": "C programming",

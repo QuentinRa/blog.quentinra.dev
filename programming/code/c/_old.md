@@ -53,9 +53,3 @@ efficiently.
 * [Threads](proc/threads.md)
 * [Threads : Concurrence](proc/concurrence.md)
 * [Threads : Semaphores](proc/semaphores.md)
-
-<hr class="sr">
-
-## Networking
-
-...
