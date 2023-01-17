@@ -13,6 +13,8 @@ int main() {
     std::cout << "Hello World" << std::endl;
 }
 ```
+
+➡️ You can use `.cc` too. For headers, use `.hpp` (see [.h or .hpp](https://stackoverflow.com/questions/152555/h-or-hpp-for-your-class-definitions)).
 </div><div>
 
 Then, use `g++` to generate an executable of your program.
@@ -27,6 +29,20 @@ Then, run your executable with
 $ ./a.out
 Hello World
 ```
+
+➡️ The current standard of C++ is C++20, C++23 will be released soon, and some famous versions are C++17, C++11, and C++98.
+</div></div>
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+...
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">

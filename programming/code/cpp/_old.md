@@ -1,60 +1,11 @@
 # C++ (cplusplus)
 
-The **C++** (**cplusplus**) appeared around 1985, inspired from ADA, CLU, it's an **extension of the C language** (as the name implies 😂). It inspired many languages such as C#, Java, Lua, PHP, and Python. It's a **low-level language**, **fast** and **platform-independent**, **that have object-oriented features** such as constructors, inheritance, methods, objects, polymorphism, and overloading.
-
-It may look complex at one glance, but if you are friendly with C, then C++ is quite easy to learn, at least from my point of view.
-
-> The current standard of C++ is **C++20**, while `C++23` is coming. The previous major versions are `C++98`, `C++11`, and `C++17`.
-
-<hr class="sl">
-
-## Introduction
-
-C++ is an extension of the C language. Everything that you could do in C, is still working in C++, but you got a whole new bunch of features.
-
-<table class="table border-dark table-striped table-bordered">
-<thead><tr><th><b>Source</b><br>.cpp 👍 or .cc</th><th><b>Headers</b><br>.hpp 👍 or .h</th></tr></thead>
-<tbody>
-<tr>
-<td>
-
-You will write your code, meaning the **implementation** of what you declared in your headers.
-
-```cpp
-// main.cpp
-#include "main.hpp"
-
-int main()
-{
-	// ...
-}
-```
-</td>
-<td>
-
-You will write declarations, meaning the signatures of things <small>(functions, classes, structures, ...)</small>. You may write some code too. It seems to be a good idea to use `.hpp` instead of `.h`, [to differentiate C++ headers with C headers](https://stackoverflow.com/questions/152555/h-or-hpp-for-your-class-definitions).
-
-```cpp
-// main.hpp
-#ifndef MAIN_HPP
-#define MAIN_HPP
-
-// ...
-
-#endif //MAIN_HPP
-```
-</td>
-</tr>
-</tbody>
-</table>
-
-> To compile your files, you may use `g++` to compile your files, which is working like `gcc` in C.
+The **C++** (**cplusplus**) appeared around 1985, inspired from ADA, CLU. It inspired many languages such as C#, Java, Lua, PHP, and Python. It's a **low-level language**, **fast** and **platform-independent**, **that have object-oriented features** such as constructors, inheritance, methods, objects, polymorphism, and overloading.
 
 <hr class="sr">
 
 ## What's new in C++
 
-* Comments with `//` (added in C99+ later)
 * Cast with `type(value)` (ex: `int(5.0)`)
 * Type `bool`
 * `for(int i = ...; ... ; ...)` (added in C99+ later)
