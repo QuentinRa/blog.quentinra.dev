@@ -42,7 +42,33 @@ Hello World
 ...
 </div><div>
 
-...
+#### References
+
+**Reminder**: in C, parameters of a function are passed by value. We could use pointers to allow a function to edit a variable from the outer scope. In C++, we could use references instead of pointers.
+
+<div class="row row-cols-md-2"><div>
+
+**C** (using a pointer)
+
+```c
+void inc(int* v){ (*v)++; }
+
+int a = 0;
+int* b = &a;
+inc(b); // a == *b == 1
+```
+</div><div>
+
+**C++** (using a reference)
+
+```cpp
+void inc(int& x){ x++; }
+
+int a = 0;
+int& b = a;
+inc(b); // a == b == 1
+```
+</div></div>
 </div></div>
 
 <hr class="sep-both">
