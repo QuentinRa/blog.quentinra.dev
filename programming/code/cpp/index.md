@@ -6,7 +6,7 @@ The C++ programming language is a middle-level language which is build on top of
 
 You will create a file with the `.cpp` extension, for instance, `main.cpp`
 
-```c
+```cpp
 #include <iostream>
 
 int main() {
@@ -35,11 +35,38 @@ Hello World
 
 <hr class="sep-both">
 
-## XXX
+## Basics
+
+*This assume that you're already familiar with the language C.*
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-...
+#### Declare a variable
+
+C++ added constructors on top of what you can do in C.
+
+```cpp
+int a(0); // implicit constructor
+int a = 0; // implicit constructor + '=' operator
+int a = int(0); // explicit constructor + '=' operator
+```
+
+#### Types
+
+There is a new type called `bool`.
+
+```cpp
+bool xxx = false;
+bool yyy = true;
+```
+
+#### Conversions
+
+Instead of using casting, we usually use:
+
+```cpp
+int xxx = int('c'); // the constructor
+```
 </div><div>
 
 #### References
@@ -69,6 +96,26 @@ int& b = a;
 inc(b); // a == b == 1
 ```
 </div></div>
+
+Constant references cannot be reassigned again, but they work the same as non-constant references.
+
+```cpp
+const int& c = a; // a++ => c++ | c++ => a++
+const int& xxx = 42; // created from a value
+```
+
+#### Print some text in the terminal
+
+```cpp
+#include <iostream>
+std::cout << "Hello, World" << std::endl;
+// you can use variables
+std::string name = "World";
+std::cout << "Hello " << name << std::endl;
+```
+
+➡️ Use `std::cerr` to print errors. We use `std::endl` to add a newline, and flush the buffer (print immediately).
+
 </div></div>
 
 <hr class="sep-both">

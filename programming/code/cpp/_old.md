@@ -2,47 +2,9 @@
 
 The **C++** (**cplusplus**) appeared around 1985, inspired from ADA, CLU. It inspired many languages such as C#, Java, Lua, PHP, and Python. It's a **low-level language**, **fast** and **platform-independent**, **that have object-oriented features** such as constructors, inheritance, methods, objects, polymorphism, and overloading.
 
-<hr class="sr">
-
-## What's new in C++
-
-* Cast with `type(value)` (ex: `int(5.0)`)
-* Type `bool`
-* `for(int i = ...; ... ; ...)` (added in C99+ later)
-* references
 * overloading methods
 * namespaces
 * improved structures, classes
-
-<hr class="sl">
-
-## References
-
-A reference is a sort of pointer to a variable. You can modify the reference, which will modify the reference variable, but deleting a reference (ex: `ref = null`) won't destroy the referenced variable. **References** are better than pointer because their size is **constant** (either 32 or 64 bits), so you can save memory 🚀.
-
-```cpp
-float my_float = 5.0f;
-float& ref_my_float = my_float;
-ref_my_float = 6.0;
-// both are 6.0
-```
-
-If needed, you can declare constant reference, which means you do not need another variable that you will reference
-
-```cpp
-const float& ref_my_float = 5.0f;
-```
-
-A reference can be converted to const, and both can be dereferenced.
-
-```cpp
-int x = 5;
-int& y = x; // value to reference
-const int& z = y; // ref to const ref
-int a = y; // ref to int
-int b = z; // const ref to int
-y++; // x=y=6 and a=b=5
-```
 
 <hr class="sr">
 
