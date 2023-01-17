@@ -146,7 +146,7 @@ if (++i == 2) {} // true, "==" is evaluated after "++"
 #define HELLO(n) printf("Hello, %s!\n", n)
 #define WHO "World"
 
-int main(void) {
+int main() {
     HELLO(WHO);
 }
 ```
@@ -245,7 +245,7 @@ $ ./a.out "Hello" "World!"
 Use `argc` to know the number of arguments. `argv` is an array of strings (`char *`). There first argument is the path to your executable.
 
 ```c
-int main (int argc, char* argv[]) {
+int main(int argc, char* argv[]) {
     printf("argv[%d]=%s\n", 0, argv[0]); // "./a.out"
     printf("argv[%d]=%s\n", 1, argv[1); // "Hello"
     printf("argv[%d]=%s\n", 2, argv[2); // "World!"
@@ -286,7 +286,7 @@ int square(int v); // prototype
 // 👉 same as: int square(int);
 
 // 👉 the main is the first function we see
-int main(void) {
+int main() {
     int x = square(5); // ✅ can call square
     // ...
 }
@@ -342,7 +342,7 @@ Without a pointer, `a` is still equals to `0` after `f(a)`.
 ```c
 void f(int a) { a++; }
 
-int main(void) {
+int main() {
     int a = 0;
     f(a);
     printf("%d\n", a); // 0
@@ -354,7 +354,7 @@ With a pointer, the function `f` is now able to edit `a`.
 ```c
 void f(int* a) { (*a)++; }
 
-int main(void) {
+int main() {
     int a = 0;
     f(&a);
     printf("%d\n", a); // 1
@@ -596,7 +596,7 @@ To compile, you must do it in two steps. This step will generated two files: `ma
 
 ```ps
 $ gcc -c main.c main.h other.c
-$ gcc -c  main.c other.c # same
+$ gcc -c main.c other.c # same
 ```
 
 Then, you must link your `.o` to generate an executable.
@@ -620,7 +620,7 @@ $ gcc main.o other.o -o a.out
 #include <stdlib.h>
 #include <time.h>
 
-int main(void) {
+int main() {
     srand(time(NULL)); // randomize the generator
     
     int min = 1;
