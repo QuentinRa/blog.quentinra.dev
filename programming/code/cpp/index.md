@@ -120,6 +120,37 @@ std::cout << "Hello " << name << std::endl;
 
 <hr class="sep-both">
 
+## Control-flow structures
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+...
+</div><div>
+
+#### Exceptions
+
+Exception* are signals that are sent when something unexpected happened, such as an error (ex: `1/0`).
+
+```cpp
+try {
+    // 👉 std::exception or a subclass
+    throw std::exception();
+    throw std::runtime_error("some message");
+    // 👉 avoid using a string
+    throw "xxx";
+}
+// 👉 you can chain "catch" for each type of exception
+catch ( std::exception &e ) { std::cerr << e.what(); }
+catch ( const char* msg ) { std::cerr << msg; }
+// 👉 catch every kind of exception
+catch (...) { std::cerr << "Error: xxx"; }
+```
+
+➡️ The signal is propagated upwards until someone catches it. If no one does, then the program crash.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

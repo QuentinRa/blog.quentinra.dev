@@ -91,44 +91,6 @@ using algebra::truncate;
 using namespace algebra;
 ```
 
-<hr class="sr">
-
-## Exceptions
-
-**Exceptions** are **signals** that are **sent when something unexpected happened**. It could be when an error such as `1/0`, or it could be when you want to stop a function (mainly used by functional programmers).
-
-> In C, we were usually, either using the return type <small>(returning -1 if an int)</small>, or using global variables in which an error code was stored.
-
-* **raise an exception**
-
-```cpp
-throw "test"; // working but poor pratice (clang rule 15.1)
-throw std::runtime_error("some message");
-throw std::exception();
-throw custom_exception(); // see inheritance, with std::exception
-```
-
-* **catch an exception**: the signal is propagated upwards until someone catches it <small>(if none, the program is stopped and the error is shown to the user)</small>.
-
-```cpp
-try {
-	// some code
-	throw std::runtime_error("some message");
-	// some code if the exception isn't thrown
-} catch ( std::runtime_error &runtime_error ) {
-	const char* msg = runtime_error.what();
-	// ... print? ...
-}
-```
-
-You can use a **fallback catch** `catch(...) {}` to catch any exceptions that were not caught in one of the previous catches.
-
-```cpp
-try {}
-catch (type& n) {} catch (type2& n2) {}
-catch(...) {} // fallback
-```
-
 <hr class="sl">
 
 ## Structures and Classes
