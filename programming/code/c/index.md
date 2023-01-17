@@ -452,14 +452,123 @@ a = (int*) realloc(a, n*sizeof(int));
 
 <hr class="sep-both">
 
-## Structures
+## Structures/Records
 
 <div class="row row-cols-md-2"><div>
 
-...
+A structure/record is a type made of multiple types.
+
+```c
+struct Person {
+    char* name;
+    int age;
+};
+```
+
+From a variable having the type `struct Person`, you can access the fields using "`.`".
+
+```c
+int main() {
+    // create a variable "toto"
+    struct Person toto;
+    toto.name = "Toto";
+    toto.age = 18;
+    // ex: prints toto
+    printf("{name: %s, age: %d}\n", toto.name, toto.age);
+}
+```
+
+**With a pointer**: you need `malloc`, and will use "`->`" instead of "`.`".
+
+```c
+int main() {
+    // create a pointer "toto"
+    Person *toto = (Person*) malloc(sizeof(Person));
+    toto->name = "Toto";
+    toto->age = 18;
+    // ex: prints toto
+    printf("{name: %s, age: %d}\n", toto->name, toto->age);
+    free(toto); // 👉 don't forget to destroy toto
+}
+```
+
 </div><div>
 
-...
+You can use `typedef` to rename your `struct Person` in `Person`.
+
+```diff
++typedef struct Person Person;
+
+int main() {
+-    struct Person toto;
++    Person toto;
+    ...
+}
+```
+
+```c
+// declaration + renaming
+typedef struct Person_s {
+    // ...
+} Person;
+```
+
+**Initializer**: can only be used during the declaration
+
+```c
+Person toto = { "Toto", 18 };
+Person toto = { .name = "Toto", .age = 18 };
+```
+
+**Private structures**: this is a technique in which we do not allow someone to know how the structure is defined. We will only expose the name of the structure, along with methods to use our structure.
+
+<details class="details-e">
+<summary>Example of code with Person</summary>
+
+
+```c
+// 👉 Declaration
+// main can only use this
+typedef struct Person Person;
+
+Person* createPerson(char*, int);
+char* get_person_name(Person* p);
+int get_person_age(Person* p);
+
+// 👉 Utilization
+int main() {
+    Person *toto = createPerson("toto", 18);
+    // ❌ we can't access toto->name...
+    printf("{ name: %s, age: %d }\n",
+           get_person_name(toto),
+           get_person_age(toto));
+    free(toto);
+}
+
+// 👉 Implementation
+struct Person {
+    char* name;
+    int age;
+};
+
+Person* createPerson(char* name, int age) {
+    Person* p = (Person*) malloc(sizeof(Person));
+    p->name = name;
+    p->age = age;
+    return p;
+}
+
+inline char* get_person_name(Person* person) {
+    return person->name;
+}
+
+inline int get_person_age(Person* person) {
+    return person->age;
+}
+```
+</details>
+
+➡️ Usually, we will move the implementation inside another file (ex: `person.c`) and the declarations inside a header file (ex: `person.h`). Then, others will import the header.
 </div></div>
 
 <hr class="sep-both">

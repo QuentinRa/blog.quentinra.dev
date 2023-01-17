@@ -257,7 +257,7 @@
             {
               "tag": "code/c/index.md",
               "name": "C89 / C99",
-              "desc": "...",
+              "desc": "A widely used low-level language.",
               "icon": "<i class=\"bi bi-terminal-fill\"></i>",
               "hidden": false
             },
