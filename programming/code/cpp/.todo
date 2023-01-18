@@ -1,8 +1,4 @@
-- declare + init
-- no "using std"
-- int f(int &r) => f(variable) // const???
-- int& f(int &r) => do not return a local reference
-- rand()
+- Do not return a local reference
 - struct name_s { type foo(); }
 - overload && || -> && > || unless overload
 - #include <cmath>
