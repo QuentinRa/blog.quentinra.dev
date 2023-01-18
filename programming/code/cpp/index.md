@@ -252,7 +252,27 @@ int main() {
 
 <div class="row row-cols-md-2"><div>
 
-...
+In C++, structures were enhanced, and are the same as the newly introduced classes, aside from one exception 🎯: members (attributes/methods) are public <small>(by default)</small> in a structure, while in a class, they are private <small>(by default)</small>.
+
+➡️ We usually use structures for "data classes" <small>(ex: Person)</small>, and classes for everything else <small>(ex: XXXManger, XXXParser...)</small>.
+
+```cpp
+struct XXX {
+private:
+    int xxx;
+public: // 👉 a bloc of public methods
+    XXX() = default; // 👉 a constructor
+public: // 👉 another bloc of public methods
+    int yyy() { return xxx++; };
+    int zzz() const { return xxx; };
+};
+
+int main() {
+    XXX x = XXX(); // 👉 see #Basics
+    std::cout << x.yyy() << "\n";
+    std::cout << x.zzz() << "\n";
+}
+```
 </div><div>
 
 ...
