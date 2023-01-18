@@ -46,6 +46,7 @@ Hello World
 C++ added constructors on top of what you can do in C.
 
 ```cpp
+int a; // implicit default constructor
 int a(0); // implicit constructor
 int a = 0; // implicit constructor + '=' operator
 int a = int(0); // explicit constructor + '=' operator
@@ -258,24 +259,45 @@ In C++, structures were enhanced, and are the same as the newly introduced class
 
 ```cpp
 struct XXX {
-private: // a bloc of private members
+private:
     int xxx;
-public: // a bloc of public members
-    XXX() = default; // default constructor
-    explicit XXX(int xxx) : xxx(xxx) {} // another
-public: // another bloc of public members
+public:
+    XXX() = default;
+    explicit XXX(int xxx) : xxx(xxx) {}
+public:
     int yyy() { return xxx++; };
     int zzz() const { return xxx; };
 };
 
 int main() {
-    XXX x = XXX(); // see #Basics
+    XXX x; // implicit XXX()
     std::cout << x.yyy() << "\n"; // 0
     std::cout << x.zzz() << "\n"; // 1
-    const XXX y(10); // see #Basics
+    const XXX y(10); // explicit XXX(int)
     std::cout << y.zzz() << "\n"; // 10
 }
 ```
+
+#### Visibility
+
+<div class="row row-cols-md-2"><div>
+
+```
+struct XXX {
+public:
+    /* ... */
+public:
+    /* ... */
+private:
+    /* ... */
+}
+```
+</div><div>
+
+We can create public, private, and protected groups in which we will declare attribute and methods.
+
+➡️ You can use multiple times the same modifier to make your declaration clean and tidy.
+</div></div>
 
 #### Attributes
 
@@ -287,13 +309,46 @@ private: // usually private
     static int ZZZ; // 👉 class attribute
     static const int TTT = 200; // 👉 class constant
 };
-// 🎯 to initialize a class attribute
-// you must do it right-after the declaration
+// 🎯 to initialize a class attribute,
+// you must add after the declaration:
 int XXX::ZZZ = 0;
 ```
 
 ➡️ Attributes without a default values must be initialized in a constructor, unless they have a default constructor.
 </div><div>
+
+#### Methods
+
+...
+
+#### Constructors
+
+...
+
+#### Destructors
+
+A destructor is automatically called when the object is destroyed. They are used to free/... resources allocated by the constructor.
+
+<div class="row row-cols-md-2"><div>
+
+```cpp
+struct XXX {
+    ~XXX() {}
+};
+```
+</div><div>
+
+```cpp
+XXX* xxx = new XXX();
+delete xxx;
+```
+</div></div>
+
+➡️ For an empty destructor, use `~XXX() = default;`.
+
+#### Inheritance
+
+...
 
 </div></div>
 
