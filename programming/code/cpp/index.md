@@ -204,6 +204,50 @@ struct XXX {
 
 <hr class="sep-both">
 
+## Namespaces
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+**Namespaces** (`espaces de noms`) are the same as packages in other languages. For instance, all functions of the STD are in the namespace `std::`. This allows us to declare functions/classes/... with the same name as one of the STD without causing conflicts.
+
+```cpp
+namespace xxx {
+    // declare functions, types, global variables, 
+    // classes, structures...
+    float yyy = 6;
+	
+    // nested namespaces
+    namespace zzz {
+        float ttt();
+    }
+}
+```
+</div><div>
+
+```
+int main() {
+    float v1 = xxx::yyy;
+    float v2 = xxx::zzz::ttt();
+}
+```
+
+You can import a namespace, it's a [bad](https://stackoverflow.com/questions/1265039/using-std-Namespace) practice with `std::` through.
+
+```
+using xxx::yyy; // import one ✨
+using namespace xxx::zzz; // import all 🚀
+
+int main() {
+    float v1 = yyy;
+    float v2 = ttt();
+}
+```
+
+`::` is called **scope operator** (`opérateur de résolution de portée`).
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
