@@ -323,7 +323,36 @@ int XXX::ZZZ = 0;
 
 #### Constructors
 
-...
+Every class has a public, parameterless constructor called **default constructor**. Explicitely adding a constructor will delete it.
+
+```cpp
+struct XXX {
+public:
+    XXX() : x(0) {} // explicit default constructor
+    XXX(float x, float y) : x(x), y(y) {}
+};
+```
+
+➡️ Note that when entering the body of the constructor, parameters were already initialized once.
+
+🧼 For an empty constructors with no initialization list, use `XXX() = default;` instead of an empty body.
+
+🧼 Use `explicit` for constructors with one argument, to avoid implicit casting such as:
+
+<div class="row row-cols-md-2"><div>
+
+```cpp
+struct XXX {
+    XXX(float x) : x(x) {}
+};
+```
+</div><div>
+
+```cpp
+// implicit XXX(float)
+XXX xxx = 1.0;
+```
+</div></div>
 
 #### Destructors
 
@@ -346,49 +375,6 @@ delete xxx;
 
 ➡️ For an empty destructor, use `~XXX() = default;`.
 
-#### Inheritance
-
-...
-
-</div></div>
-
-<hr class="sep-both">
-
-## XXX
-
-<div class="row row-cols-md-2"><div>
-
-#### Attributes and constructors
-
-Attributes are variable that are associated with one instance of an object. You can create instance using constructor.
-
-* ✅ They are named after the name of the class
-* ✅ They don't have a return type
-* ➡️ You **must** initialize the attributes inside the initialization list provided to the constructor, unless they have a default value or a default constructor (`XXX() {}` or `XXX() = default`).
-* 👉 Every class a default, public, parameterless constructor, that is destroyed if you add your own constructors.
-* 👉 The body of the constructor is used for more refined initialization of parameters, but note that at this point that the parameters were already initialized once as per the point above.
-</div><div>
-
-```cpp
-struct XXX {
-    XXX(float x) : x(x) {} // 👉 empty body
-    XXX(float x, float y) : x(x), y(y) {}
-private:
-    float x;
-    float y = 1.0; // 👉 default value
-};
-
-int main() {
-    XXX zero_one(0);
-    XXX one_zero(1, 0);
-}
-```
-
-* ✨ You should use `explicit XXX(...)` for constructors with one argument, otherwise we can do this:
-
-```cpp
-XXX zero_one = 0; // call XXX(float)
-```
 </div></div>
 
 <hr class="sep-both">
