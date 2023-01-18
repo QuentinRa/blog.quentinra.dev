@@ -151,6 +151,59 @@ catch (...) { std::cerr << "Error: xxx"; }
 
 <hr class="sep-both">
 
+## Functions
+
+<div class="row row-cols-md-2"><div>
+
+#### Default values for parameters
+
+If you give one parameter a default value, any following parameter must have a default value.
+
+```cpp
+int& abc(int& a, int b=1, float c=2.0f) {
+    /* ... */
+    return a;
+}
+```
+
+➡️ Default values are only if the declaration (if any), but not in both the implementation and the declaration.
+
+```cpp
+// prototype with default values
+int& abc(int& a, int b=1, float c=2.0f);
+// 👉 no default value
+int& abc(int& a, int b, float c) {}
+```
+</div><div>
+
+#### Overloading
+
+Overloading (`surchage`) mean having multiple function with the same name, but a different signature.
+
+* ❌ The return type DOES NOT matter
+* ❌ The name of the arguments DOES NOT matter
+
+```cpp
+int sum(int a, int b); // ✅ (names are optional)
+float sum(float, float); // ✅
+double sum(double, double); // ✅
+int sum(int b, int a); // ❌ - same as 1
+int sum(float, float); // ❌ - same as 2
+int sum(int, int, int); // ✅
+```
+
+* ✅ The attribute `const` attached to a function DOES matter, but it's only available for classes or structures.
+
+```cpp
+struct XXX {
+    int xxx();
+    int xxx() const; // ✅
+};
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

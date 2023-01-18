@@ -1,14 +1,4 @@
-# C++ (cplusplus)
-
-The **C++** (**cplusplus**) appeared around 1985, inspired from ADA, CLU. It inspired many languages such as C#, Java, Lua, PHP, and Python. It's a **low-level language**, **fast** and **platform-independent**, **that have object-oriented features** such as constructors, inheritance, methods, objects, polymorphism, and overloading.
-
-* overloading methods
-* namespaces
-* improved structures, classes
-
-<hr class="sr">
-
-## Functions
+# Functions
 
 A function is a block of code.
 
