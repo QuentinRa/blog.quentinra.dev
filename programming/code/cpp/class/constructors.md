@@ -2,66 +2,14 @@
 
 [Go back](../index.md#structures-and-classes)
 
-Constructors are methods **without a return type**, having the **same name as the structure/class**, and **initializing the attributes**.
-
-> **Default constructor**: No parameters. Do nothing. Public. Destroyed if overloaded.
-
-<hr class="sl">
-
-## Calling a constructor
-
-```cpp
-Class obj1; // implicit call to the default constructor
-Class obj2(); // explicit call to a constructor
-Class obj3 = Class(); // explicit call to a constructor
-```
-
 <hr class="sr">
 
 ## Create a constructor
 
-As the constructor is a method, everything we learned before is applied.
+Inline constructor. Opposite of:
 
 ```cpp
-struct my_structure {
-private:
-    float my_float_;
-public:
-	// inline constructor
-    my_structure(float my_float) {
-        my_float_ = my_float;
-    }
-};
-```
-
-We got a shortened syntax for this, with `: attribute(value)`. You can add more parameters by separating them with a comma `,`.
-
-```cpp
-struct my_structure {
-private:
-    float my_float_;
-public:
-	// inline constructor
-    my_structure(float f) : my_float_(f) {
-        // if needed
-    }
-};
-```
-
-And we could also do
-
-```cpp
-struct my_structure {
-private:
-    float my_float_;
-public:
-    my_structure(float f);
-};
-
-
-my_structure::my_structure(float f) : my_float_(f) {
-	// if needed
-}
+xxx::xxx(float v) : xxx(v) {}
 ```
 
 <hr class="sr">

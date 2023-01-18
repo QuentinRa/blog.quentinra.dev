@@ -273,6 +273,37 @@ int main() {
     std::cout << x.zzz() << "\n";
 }
 ```
+
+#### Attributes and constructors
+
+Attributes are variable that are associated with one instance of an object. You can create instance using constructor.
+
+* ✅ They are named after the name of the class
+* ✅ They don't have a return type
+* ➡️ You **must** initialize the attributes inside the initialization list provided to the constructor, unless they have a default value or a default constructor (`XXX() {}` or `XXX() = default`).
+* 👉 Every class a default, public, parameterless constructor, that is destroyed if you add your own constructors.
+* 👉 The body of the constructor is used for more refined initialization of parameters, but note that at this point that the parameters were already initialized once as per the point above.
+
+```cpp
+struct XXX {
+    XXX(float x) : x(x) {} // 👉 empty body
+    XXX(float x, float y) : x(x), y(y) {}
+private:
+    float x;
+    float y = 1.0; // 👉 default value
+};
+
+int main() {
+    XXX zero_one(0);
+    XXX one_zero(1, 0);
+}
+```
+
+* ✨ You should use `explicit XXX(...)` for constructors with one argument, otherwise we can do this:
+
+```cpp
+XXX zero_one = 0; // call XXX(float)
+```
 </div><div>
 
 ...
