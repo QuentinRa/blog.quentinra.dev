@@ -252,27 +252,56 @@ int main() {
 
 <div class="row row-cols-md-2"><div>
 
-In C++, structures were enhanced, and are the same as the newly introduced classes, aside from one exception 🎯: members (attributes/methods) are public <small>(by default)</small> in a structure, while in a class, they are private <small>(by default)</small>.
+In C++, structures were enhanced, and are the same as the newly introduced classes, aside from one exception 🎯: members <small>(attributes/methods)</small> are public <small>(by default)</small> in a structure, while in a class, they are private <small>(by default)</small>.
 
-➡️ We usually use structures for "data classes" <small>(ex: Person)</small>, and classes for everything else <small>(ex: XXXManger, XXXParser...)</small>.
+➡️ We usually use structures for "data classes" <small>(ex: Person)</small>, and classes for everything else <small>(ex: XXXManager, XXXParser...)</small>.
 
 ```cpp
 struct XXX {
-private:
+private: // a bloc of private members
     int xxx;
-public: // 👉 a bloc of public methods
-    XXX() = default; // 👉 a constructor
-public: // 👉 another bloc of public methods
+public: // a bloc of public members
+    XXX() = default; // default constructor
+    explicit XXX(int xxx) : xxx(xxx) {} // another
+public: // another bloc of public members
     int yyy() { return xxx++; };
     int zzz() const { return xxx; };
 };
 
 int main() {
-    XXX x = XXX(); // 👉 see #Basics
-    std::cout << x.yyy() << "\n";
-    std::cout << x.zzz() << "\n";
+    XXX x = XXX(); // see #Basics
+    std::cout << x.yyy() << "\n"; // 0
+    std::cout << x.zzz() << "\n"; // 1
+    const XXX y(10); // see #Basics
+    std::cout << y.zzz() << "\n"; // 10
 }
 ```
+
+#### Attributes
+
+```cpp
+struct XXX {
+private: // usually private
+    float x;
+    float y = 1.0; // 👉 default value
+    static int ZZZ; // 👉 class attribute
+    static const int TTT = 200; // 👉 class constant
+};
+// 🎯 to initialize a class attribute
+// you must do it right-after the declaration
+int XXX::ZZZ = 0;
+```
+
+➡️ Attributes without a default values must be initialized in a constructor, unless they have a default constructor.
+</div><div>
+
+</div></div>
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-md-2"><div>
 
 #### Attributes and constructors
 
@@ -283,6 +312,7 @@ Attributes are variable that are associated with one instance of an object. You 
 * ➡️ You **must** initialize the attributes inside the initialization list provided to the constructor, unless they have a default value or a default constructor (`XXX() {}` or `XXX() = default`).
 * 👉 Every class a default, public, parameterless constructor, that is destroyed if you add your own constructors.
 * 👉 The body of the constructor is used for more refined initialization of parameters, but note that at this point that the parameters were already initialized once as per the point above.
+</div><div>
 
 ```cpp
 struct XXX {
@@ -304,9 +334,6 @@ int main() {
 ```cpp
 XXX zero_one = 0; // call XXX(float)
 ```
-</div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">
