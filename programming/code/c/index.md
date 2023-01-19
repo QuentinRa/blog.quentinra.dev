@@ -818,6 +818,7 @@ printf("%.3f", 1.35); // "1.350"
 </div><div>
 
 * `sizeof` / `%zu` / `sizeof(type) sizeof(*variable)`
+* `inline`
 * `short int`
 * `long long int`
 * barrel shift `a >> b` (divide by 2), `a << b` (multiply by 2)

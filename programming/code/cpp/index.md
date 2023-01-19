@@ -320,7 +320,26 @@ int XXX::ZZZ = 0;
 
 #### Methods
 
-...
+```cpp
+struct XXX {
+public:
+    void setX(float x_) { x = x_; }
+    float getX() const { return x; } // const
+    static void xxx() { std::cout << XXX::TTT; }
+    void kkk();
+    inline void ttt();
+};
+
+// implementations
+void XXX::kkk() { std::cout << x; }
+void XXX::ttt() { std::cout << x; }
+```
+
+➡️ `this->x` or `x` are the same, and reference the attribute `x`.
+
+➡️ Methods must be marked as `const` to be called from `const` variables. Normal variables can call `cost`
+
+➡️ Methods with a body inside the class are implicitly `inline`. They increase the size of the structure, but are faster. We mosly use this for short/simple methods.
 
 #### Constructors
 
