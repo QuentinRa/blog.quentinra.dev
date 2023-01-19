@@ -54,11 +54,12 @@ int a = int(0); // explicit constructor + '=' operator
 
 #### Types
 
-There is a new type called `bool`.
+<p></p>
 
 ```cpp
-bool xxx = false;
+bool xxx = false; // new type for booleans
 bool yyy = true;
+std::string str = "xxx"; // new type for strings
 ```
 
 #### Conversions
@@ -66,7 +67,7 @@ bool yyy = true;
 Instead of using casting, we usually use:
 
 ```cpp
-int xxx = int('c'); // the constructor
+int xxx = int('c'); // the constructor (if any)
 ```
 </div><div>
 

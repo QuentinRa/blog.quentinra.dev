@@ -1,5 +1,7 @@
 # ✏️ Canva  ✏️ 
 
+A bunch of hacky solutions just in case someone wonders how you could achieve these using JavaScript.
+
 <div class="row row-cols-md-2"><div>
 
 ### Canva: select all images
@@ -25,6 +27,26 @@ if (className === undefined) {
     // then, manually press the trash icon
 }
 ```
+</div></div>
+
+<br>
+
+### Canva: remove paid templates
+
+<div class="row row-cols-md-2"><div>
+
+```javascript!
+Array.from(document.querySelectorAll('span[class]')).filter(span => span.innerHTML === '$').map(span => span.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode).forEach(x => x.parentNode.removeChild(x))
+
+Array.from(document.querySelectorAll("*[d~='M7.51']")).map(p => p.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode).filter(p => !p.id).forEach(x => x.parentNode?.removeChild(x))
+```
+</div><div>
+
+This script will remove from the currently displayed entries:
+
+* templates with the "paid" icon
+* templates with the "premium" icon
+
 </div></div>
 
 <br>
