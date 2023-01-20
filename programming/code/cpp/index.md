@@ -506,6 +506,8 @@ std::cout << xxx.x(); // 1
 std::cout << xxx.Parent::x(); // 1
 ```
 
+⚠️ If there is a non-trivial destructor, you must make it virtual!
+
 #### Liskov Substitution Principle
 
 As a child class inherit everything from it's parent, if a method requires the parent class, then we can pass a child class.
@@ -515,6 +517,19 @@ Parent xxx = Child(); // we can store Child inside Parent
 ```
 
 ⚠️ But **there is a major problem**. Calling any function on `xxx` will always call the function inside the parent! To avoid this, the only trick that I know is to use pointers. 🐛
+
+#### Abstract classes
+
+A class is abstract is there are still abstract methods in it.
+
+```cpp
+struct Parent {
+    virtual int x() = 0; // abstract method
+};
+struct Child : Parent {
+    int x() override { return 0; }
+};
+```
 </div></div>
 
 <hr class="sep-both">
