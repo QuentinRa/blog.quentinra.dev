@@ -449,28 +449,63 @@ Every operator is a function, and we can overload them, aside from: `::` <small>
 
 To use an operator, such as `++`, you can do `x++` or `x.operator++(1);`...
 
-🎯 Note that the **return value** and the **type** of the arguments is
+🎯 Note that the **return value** and the **type** of the arguments is **up to you!**. Only the number of arguments is fixed.
 
 <details class="details-n">
-<summary>Internal operators: <code>++</code>, <code>--</code>, <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>=</code>, <code>-</code>, <code>()</code>, <code>[]</code>, <code>&lt;&lt;</code>, <code>&gt;&gt;</code>...</summary>
+<summary>Internal operators: <code>++</code>, <code>--</code>, <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>=</code>, <code>-</code>, <code>()</code>, <code>[]</code>...</summary>
 
 ```cpp
 struct XXX {
-    int x = 0;
-    // special
-    int operator++(int v) { return x += (v == 0 ? 1 : v); }
-    int operator--(int v) { return x += (v == 0 ? 1 : v); }
+    int x;
+    explicit XXX(int x = 0) : x(x) {}
+public:
+    // usually returns a value
+    int operator++(int v) { return x += v; }
+    int operator--(int v) { return x -= v; }
     // ex: XXX yyy = -xxx;
     XXX& operator-() {
         x = -x; 
         return *this;
     }
-    // same for: -= *= /= and '=' (copy)
+    // For every other operator
     XXX& operator+=( const XXX& other ) {
-        x += other.x;
+        x += other.x; // code specific to +=
         return *this;
     }
 };
+```
+</details>
+
+<details class="details-n">
+<summary>External operators: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>&lt;</code>, <code>&lt;=</code>, <code>==</code>, <code>!=</code>...</summary>
+
+```cpp
+// same code for '-', '*' '/'
+XXX operator+( const XXX &a, const XXX &b ) {
+    return XXX(a.x + b.x);
+}
+// same code for '>', '>=', '<', '<='
+// '||', '&&', '==', '!='
+bool operator>( const XXX &a, const XXX &b ) {
+    return a.x > b.x;
+}
+```
+
+➡️ If you declared the operators with `;` inside a namespace in a header file, you must use `ns::operator>` to reference `operator>` inside the namespace `ns`.
+
+➡️ Note that by default, `||` has a higher priority than `&&`, but if you overload the operator, it will loose this priority.
+</details>
+
+<details class="details-n">
+<summary>Stream operators: <code>&lt;&lt;</code>, <code>&gt;&gt;</code></summary>
+
+```cpp
+#include <ostream>
+std::ostream& operator<<(std::ostream& os, const XXX& xxx);
+std::ostream& operator<<(std::ostream& os, const XXX& xxx) {
+    os << xxx.x;
+    return os;
+}
 ```
 </details>
 </div></div>
@@ -577,6 +612,5 @@ Stuff that I found, but never read/used yet.
 * [clang](https://clang.llvm.org/extra/index.html)
 </div><div>
 
-* [old.md](_old.md)
 * `(variable.*(&Classe::methode))()` (see [SO](https://stackoverflow.com/questions/6586205/what-are-the-pointer-to-member-operators-and-in-c))
 </div></div>
