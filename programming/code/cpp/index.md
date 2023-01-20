@@ -468,6 +468,10 @@ struct TTT : private XXX {}; // xxx is private
 
 ➡️ Inheritance (by default): `public` for structs and `private` for classes.
 
+➡️ Inside a method, to explicitely access something from the parent such as `xxx` in the example above, use `XXX::xxx` <small>("super" in Java/...)</small>.
+
+➡️ If a class is used in multiple inheritance, you may use `YYY : virtual public XXX` if the class extends two classes with the same parent `XXX`, to avoid problems with duplicates.
+
 #### Constructors and Destructors
 
 First, parent constructors are called, then the child one is called.
@@ -485,18 +489,32 @@ Destructors are called in the reverse order, from child to parent 🔄.
 
 #### Virtual methods
 
-Use `virtual` to allow the child class to `override` the code of a method declared in the parent class.
+Use `virtual` to allow the child class to `override` the code of a method declared in the parent class. 
+
+If the parent call a `virtual` method, and the child `override` this method, then the method in the child will be called.
 
 ```cpp
-struct Parent { virtual int x() { return 0; } };
-struct Child : Parent { int x() override { return 1; } };
+struct Parent {
+    int x() { return y(); } 
+    virtual int y() { return 0; }
+};
+struct Child : Parent { int y() override { return 1; } };
 
-// sample of code
-Child xxx();
-std::cout << xxx.x(); // 
+// Example
+Child xxx;
+std::cout << xxx.x(); // 1
+std::cout << xxx.Parent::x(); // 1
 ```
 
-➡️ It will works without these, but your code will be less readable.
+#### Liskov Substitution Principle
+
+As a child class inherit everything from it's parent, if a method requires the parent class, then we can pass a child class.
+
+```cpp
+Parent xxx = Child(); // we can store Child inside Parent
+```
+
+⚠️ But **there is a major problem**. Calling any function on `xxx` will always call the function inside the parent! To avoid this, the only trick that I know is to use pointers. 🐛
 </div></div>
 
 <hr class="sep-both">
@@ -508,6 +526,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [cpp-cheatsheet](https://github.com/mortennobel/cpp-cheatsheet)
+* [clang](https://clang.llvm.org/extra/index.html)
 </div><div>
 
 * [old.md](_old.md)
