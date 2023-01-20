@@ -6,26 +6,52 @@ A bunch of hacky solutions just in case someone wonders how you could achieve th
 
 ### Canva: select all images
 
-This JavaScript code is selecting all images that you have on Canva. It's only useful if you want to delete all of them. ➡️ The script won't delete them, it's up to you to do the last action.
+**Usage**
 
-Another use of this script, is that if you are familiar with JavaScript, you can tune it to only select some images <small>(ex: based on their name)</small>.
+* Go to `https://www.canva.com/projects` > images
+* Enjoy
+
+**About**
+
+This JavaScript code is selecting all images that you have on Canva.
+
+* Step 1: switch to list view (if needed)
+* Step 2: scroll to the bottom of the page
+* Step 3: find a way to get the checkbox for one image
+* Step 4: click on every checkbox
+
+The script can be modified, for instance to only select some images based on their name...
 </div><div>
 
 ```javascript
-// select the "class" shared by every button
-const className = document.querySelectorAll("*[d~='1.06L9.53']")[4]
-    ?.parentNode?.parentNode?.parentNode?.parentNode?.firstChild?.classList[0]
+// Step 1: Use list view (if not already using list view)
+document.querySelector('path[d~="5.25h7.5a.75.75"')?.parentNode.parentNode.parentNode.parentNode.click()
 
-// not found, damn, they changed something
-if (className === undefined) {
-    console.log("Error: can't find className")
-} else {
-    // otherwise, if they were not selected, select them
-    for (i of document.querySelectorAll('.'+className))
-        if (!i.checked)
-            i.click()
-    // then, manually press the trash icon
+// Step 2
+const scrollToTheBottomOfElement = async (e) => {
+    let previous = e.scrollHeight;
+    while (1) {
+        e.scrollTo(0, e.scrollHeight);
+        await new Promise(resolve => setTimeout(resolve, 400));
+        if (e.scrollHeight === previous) break;
+        previous = e.scrollHeight;
+    }
 }
+scrollToTheBottomOfElement(document.querySelector('main > div > div'))
+    .then((x) => {
+        // Step 3: select the "class" shared by every button
+        const className = document.querySelectorAll("*[d~='1.06L9.53']")[4]
+            ?.parentNode?.parentNode?.parentNode?.parentNode?.firstChild?.classList[0]
+
+        // not found, damn, they changed something
+        if (className === undefined) {
+            console.log("Error: can't find className")
+        } else {
+            // Step 4:  we select every unselected images
+            for (i of document.querySelectorAll('.'+className))
+                if (!i.checked) i.click()
+        }
+    })
 ```
 </div></div>
 
