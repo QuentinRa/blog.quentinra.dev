@@ -47,9 +47,10 @@ C++ added constructors on top of what you can do in C.
 
 ```cpp
 int a; // implicit default constructor
+int a(); // explicit default constructor
 int a(0); // implicit constructor
-int a = 0; // implicit constructor + '=' operator
-int a = int(0); // explicit constructor + '=' operator
+int a = 0; // implicit constructor
+int a = int(0); // explicit constructor
 ```
 
 #### Types
@@ -250,7 +251,7 @@ int main() {
 
 <hr class="sep-both">
 
-## Structures and Classes
+## Structures and Classes: Basics
 
 <div class="row row-cols-md-2"><div>
 
@@ -323,23 +324,23 @@ int XXX::ZZZ = 0;
 ```cpp
 struct XXX {
 public:
-    void setX(float x_) { x = x_; }
-    float getX() const { return x; } // const
-    static void xxx() { std::cout << XXX::TTT; }
-    void kkk();
-    inline void ttt();
+    void aaa(float x_) { x = x_; } // inline getter
+    float bbb() const { return x; } // inline setter
+    void ccc(); // external method
+    inline void ddd(); // inline method
+    static void eee() { std::cout << XXX::TTT; } // static
 };
 
 // implementations
-void XXX::kkk() { std::cout << x; }
-void XXX::ttt() { std::cout << x; }
+void XXX::ccc() { std::cout << x; }
+void XXX::ddd() { std::cout << x; }
 ```
 
-➡️ `this->x` or `x` are the same, and reference the attribute `x`.
+➡️ `this->x` or `x` are the same: both reference the attribute `x`.
 
-➡️ Methods must be marked as `const` to be called from `const` variables. Normal variables can call `cost`
+➡️ Methods must be marked as `const` to be called from `const` variables. Normal variables can call `const` methods too.
 
-➡️ Methods with a body inside the class are implicitly `inline`. They increase the size of the structure, but are faster. We mosly use this for short/simple methods.
+➡️ Methods with a body inside the class are implicitly `inline`. Inline methods increase the size of the structure, but they are faster.
 
 #### Constructors
 
@@ -396,6 +397,48 @@ delete xxx;
 ➡️ For an empty destructor, use `~XXX() = default;`.
 
 </div></div>
+
+<hr class="sep-both">
+
+## Structures and Classes: Advanced
+
+<div class="row row-cols-md-2"><div>
+
+6 methods available in every structure/class
+
+* Constructor, Copy Constructor, and Move Constructor (C++11)
+* Move assignment operator (`opérateur de mouvement`, C++11)
+* Copy assignment operator (`opérateur =`)
+
+#### Copy constructor
+
+The default copy constructor is copying every attribute using their copy constructor. You should use `= default;` instead of `{}`.
+
+<div class="row row-cols-md-2"><div>
+
+```cpp
+struct XXX {
+public:
+    XXX() {}
+    XXX(const XXX& xxx) {}
+};
+```
+</div><div>
+
+```cpp
+void f(XXX xxx) {}
+XXX xxx; // default
+XXX yyy = xxx; // copy
+XXX zzz(xxx); // copy
+XXX ttt = XXX(xxx); // copy
+f(xxx); // copy
+```
+</div></div>
+</div><div>
+
+...
+</div></div>
+
 
 <hr class="sep-both">
 
