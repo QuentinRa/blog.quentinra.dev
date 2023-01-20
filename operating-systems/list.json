@@ -37,6 +37,13 @@
         "desc": "Learn about Bash-only features.",
         "icon": null,
         "hidden": false
+      },
+      {
+        "tag": "linux/networking/linux.md",
+        "name": "Linux (networking)",
+        "desc": "List of commands used on Linux-based distributions.",
+        "icon": null,
+        "hidden": false
       }
     ],
     "<i class=\"bi bi-windows pe-2\"></i> Windows <i class=\"bi bi-windows ps-2\"></i>": [

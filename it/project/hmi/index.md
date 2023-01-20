@@ -143,13 +143,17 @@ Jakob Nielsen wrote the **10 principles** that you should <s>MUST 😠</s> take 
 
 <hr class="sl">
 
-## Last tips
+## Additional notes
 
-1. It may be better to load everything needed at the start of the application, rather than using lazy practices and making the user wait a lot of times.
+<div class="row row-cols-md-2 mt-3"><div>
 
-2. A screen will most likely have more width than height, so you should exploit the width.
+* 🤔️ It's better to have one relatively long loading time rather than many for resources that the user is likely to request
+</div><div>
 
-3. If you need more than 3 clicks to do one action, and you do this action often, then you MUST re-think your interface.
+* 🦣 A screen will most likely have more width than height, so you should exploit the width.
+
+* 🧼 If you need more than 3 clicks to do one action, and you do this action often, then you MUST re-think your interface.
+</div></div>
 
 <hr class="sep-both">
 

@@ -16,13 +16,6 @@
         "desc": "Learn more about Telnet, SSH, FTP, SCP/SFTP, HTTP, HTTPS, SMTP, POP3, IMAP, Samba, NFS, RDP...",
         "icon": null,
         "hidden": false
-      },
-      {
-        "tag": "networking/commands/linux.md",
-        "name": "Linux (networking)",
-        "desc": "List of commands used on Linux-based distributions.",
-        "icon": null,
-        "hidden": false
       }
     ],
     "🛸 IT Project 🛸": [
