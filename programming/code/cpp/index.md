@@ -503,9 +503,15 @@ bool operator>( const XXX &a, const XXX &b ) {
 #include <ostream>
 std::ostream& operator<<(std::ostream& os, const XXX& xxx);
 std::ostream& operator<<(std::ostream& os, const XXX& xxx) {
-    os << xxx.x;
+    os << "XXX{ ";
+    os << "x=" << xxx.x;
+    os << " }\n";
     return os;
 }
+```
+
+```cpp
+std::cout << XXX(5); // XXX{ x=5 }
 ```
 </details>
 </div></div>
@@ -613,4 +619,9 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * `(variable.*(&Classe::methode))()` (see [SO](https://stackoverflow.com/questions/6586205/what-are-the-pointer-to-member-operators-and-in-c))
+* `[]` and `()` (examples)
+* [cppreference](https://en.cppreference.com/w/cpp/language/operators)
+* cmath
+* nullptr, new, delete
+* `getline(cin, string_variable)`/`std::cin`/`std::cerr`
 </div></div>
