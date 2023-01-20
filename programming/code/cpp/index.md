@@ -438,9 +438,17 @@ f(xxx); // copy
 </div></div>
 </div><div>
 
-...
-</div></div>
+#### Operator overload
 
+Every operator is a function, and we can overload them, aside from: `::` <small>(scope resolution)</small>, `.` <small>(dot operator)</small>, `.*`/`->*` <small>(pointer to member)</small>, and `:` <small>(ternary operator)</small>, `sizeof`, `typeid`, and every casting operator.
+
+👉 An ideology is to separate operators between
+
+* Internal: modify and returns `*this`
+* External: generate a new instance
+
+Operators considered as internals are: `+=`, `-=`, `*=`, `/=`, `=`, `-`, `()`, `[]`, `<<`, `>>`, `++`, `--`... 
+</div></div>
 
 <hr class="sep-both">
 
@@ -545,4 +553,5 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * [old.md](_old.md)
+* `(variable.*(&Classe::methode))()` (see [SO](https://stackoverflow.com/questions/6586205/what-are-the-pointer-to-member-operators-and-in-c))
 </div></div>
