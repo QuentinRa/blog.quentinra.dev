@@ -806,7 +806,8 @@ Stuff that I found, but never read/used yet.
 * `void*` / `#define NULL = (void *)0`
 * C89/C99/C11/C23/[cake](https://github.com/thradams/cake)
 * Add notes from exercises
-* GDB / [online](https://learn.onlinegdb.com/)
+* GDB 
+* [onlinegdb](https://learn.onlinegdb.com/)
 * webassembly
 
 ```

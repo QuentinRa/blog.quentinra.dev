@@ -248,7 +248,7 @@
             {
               "tag": "code/cpp/index.md",
               "name": "C++",
-              "desc": "...",
+              "desc": "A fast language based on C.",
               "icon": "<img src=\"/courses/programming/code/cpp/_images/c++-logo.png\" class=\"ms-logo pb-1\" alt=\"kotlin-logo\" title=\"kotlin-log\">",
               "hidden": false
             }
@@ -280,7 +280,7 @@
               "name": "ncurses",
               "desc": "...",
               "icon": null,
-              "hidden": false
+              "hidden": true
             }
           ]
         }

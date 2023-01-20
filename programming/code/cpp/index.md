@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-The C++ programming language is a middle-level language which is build on top of the [C](/programming/code/c/index.md), with additional features.
+The C++ programming language is a middle-level language which is build on top of the [C](/programming/code/c/index.md) ([compatibility](https://en.wikipedia.org/wiki/Compatibility_of_C_and_C%2B%2B;)), with additional features.
 
 You will create a file with the `.cpp` extension, for instance, `main.cpp`
 
@@ -14,7 +14,7 @@ int main() {
 }
 ```
 
-➡️ You can use `.cc` too. For headers, use `.hpp` (see [.h or .hpp](https://stackoverflow.com/questions/152555/h-or-hpp-for-your-class-definitions)).
+➡️ You can use `.cc` too and `.hpp` for headers <small>(see [.h or .hpp](https://stackoverflow.com/questions/152555/h-or-hpp-for-your-class-definitions), [.ii, .tpp...](https://includestdio.com/6422.html))</small>.
 </div><div>
 
 Then, use `g++` to generate an executable of your program.
@@ -616,12 +616,22 @@ Stuff that I found, but never read/used yet.
 
 * [cpp-cheatsheet](https://github.com/mortennobel/cpp-cheatsheet)
 * [clang](https://clang.llvm.org/extra/index.html)
+* [seleborg](http://carl.seleborg.free.fr/cpp/cours/index_cours.html) (sort of online book, french)
+* [cppreference](https://en.cppreference.com/w/cpp/language/operators)
+* [learncpp](https://www.learncpp.com/)
+* [cppbestpractices](https://github.com/cpp-best-practices/cppbestpractices)
+* [Cpp-Learning-Materials](https://github.com/JadeMatrix/Cpp-Learning-Materials/blob/master/C%2B%2B%20Learning%20Materials.md)
+* [w3schools](https://www.w3schools.com/cpp/default.asp)
+* [fluentcpp](https://www.fluentcpp.com/)
+* [onlinegdb](https://learn.onlinegdb.com/)
+* [microsoft](https://learn.microsoft.com/en-us/cpp/cpp/)
 </div><div>
 
 * `(variable.*(&Classe::methode))()` (see [SO](https://stackoverflow.com/questions/6586205/what-are-the-pointer-to-member-operators-and-in-c))
 * `[]` and `()` (examples)
-* [cppreference](https://en.cppreference.com/w/cpp/language/operators)
 * cmath
 * nullptr, new, delete
 * `getline(cin, string_variable)`/`std::cin`/`std::cerr`
+* [placement new](https://stackoverflow.com/questions/222557/what-uses-are-there-for-placement-new/222578#222578)
+* ENS course
 </div></div>

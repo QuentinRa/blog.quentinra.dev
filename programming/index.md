@@ -18,8 +18,8 @@ The icon with an arrow (➡️) means that they should be tackled first.
 * WordPress
 * latex/rst
 * xml
-* c
-* cpp
+* c (processes+threads | networking | ncurses)
+* cpp (ENS courses)
 * build tools
 * assembly
 </div></div>
@@ -127,6 +127,7 @@ Google
 * [jseditor](https://jseditor.io/)
 * [playcode](https://playcode.io/)
 * [codehs](https://dev.codehs.com/)
+* [onlinegdb](https://www.onlinegdb.com/)
 
 **Documentation**
 
