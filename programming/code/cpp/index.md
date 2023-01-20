@@ -447,7 +447,32 @@ Every operator is a function, and we can overload them, aside from: `::` <small>
 * Internal: modify and returns `*this`
 * External: generate a new instance
 
-Operators considered as internals are: `+=`, `-=`, `*=`, `/=`, `=`, `-`, `()`, `[]`, `<<`, `>>`, `++`, `--`... 
+To use an operator, such as `++`, you can do `x++` or `x.operator++(1);`...
+
+🎯 Note that the **return value** and the **type** of the arguments is
+
+<details class="details-n">
+<summary>Internal operators: <code>++</code>, <code>--</code>, <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>=</code>, <code>-</code>, <code>()</code>, <code>[]</code>, <code>&lt;&lt;</code>, <code>&gt;&gt;</code>...</summary>
+
+```cpp
+struct XXX {
+    int x = 0;
+    // special
+    int operator++(int v) { return x += (v == 0 ? 1 : v); }
+    int operator--(int v) { return x += (v == 0 ? 1 : v); }
+    // ex: XXX yyy = -xxx;
+    XXX& operator-() {
+        x = -x; 
+        return *this;
+    }
+    // same for: -= *= /= and '=' (copy)
+    XXX& operator+=( const XXX& other ) {
+        x += other.x;
+        return *this;
+    }
+};
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
