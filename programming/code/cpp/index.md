@@ -404,11 +404,13 @@ delete xxx;
 
 <div class="row row-cols-md-2"><div>
 
-6 methods available in every structure/class
+6 methods available by default in every structure/class
 
-* Constructor, Copy Constructor, and Move Constructor (C++11)
-* Move assignment operator (`opérateur de mouvement`, C++11)
+* Default, Copy, and Move Constructor<sup>1</sup>
+* Move assignment operator (`opérateur de mouvement`)<sup>1</sup>
 * Copy assignment operator (`opérateur =`)
+
+<sup>1</sup> both of them were introduced in C++11.
 
 #### Copy constructor
 
@@ -439,6 +441,63 @@ f(xxx); // copy
 ...
 </div></div>
 
+
+<hr class="sep-both">
+
+## Abstraction and inheritance
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+Inheritance (`héritage`) is allowing us to extend another class/struct.
+
+* ➡️ Multiple inheritance is possible, but conflicts must be handled
+* ➡️ The inheritance modifier determine how child class behave
+
+#### Inheritance modifier
+
+* **public**: no changes
+* **protected**: `public->protected`
+* **private**: `public->private`, `protected->private`
+
+```
+struct XXX { public: int xxx; };
+struct YYY : public XXX {}; // xxx is public
+struct ZZZ : protected XXX {}; // xxx is protected
+struct TTT : private XXX {}; // xxx is private
+```
+
+➡️ Inheritance (by default): `public` for structs and `private` for classes.
+
+#### Constructors and Destructors
+
+First, parent constructors are called, then the child one is called.
+
+```cpp
+struct XXX {};
+struct YYY {};
+struct ZZZ : XXX, YYY { // public inheritance
+    ZZZ() : XXX(), YYY() {}
+};
+```
+
+Destructors are called in the reverse order, from child to parent 🔄.
+</div><div>
+
+#### Virtual methods
+
+Use `virtual` to allow the child class to `override` the code of a method declared in the parent class.
+
+```cpp
+struct Parent { virtual int x() { return 0; } };
+struct Child : Parent { int x() override { return 1; } };
+
+// sample of code
+Child xxx();
+std::cout << xxx.x(); // 
+```
+
+➡️ It will works without these, but your code will be less readable.
+</div></div>
 
 <hr class="sep-both">
 

@@ -1,5 +1,9 @@
 parent/superclass/baseclass
 child/subclass
+
+* `A` : **parent** class (`class mère`), **superclass** (`super-classe`), **base** class (`classe de base`)
+* `B` : **child/heir** class (`classe fille`), **subclass** (`sous-classe`), **derived** class (`classe dérivée`)
+
 bloc
 
 https://en.wikipedia.org/wiki/Short-circuit_evaluation
