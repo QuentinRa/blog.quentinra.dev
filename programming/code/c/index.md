@@ -802,13 +802,23 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [Old](_old.md)
+* [w3schools.in](https://www.w3schools.in/c-tutorial/c99/)
+* [w3schools.com](https://www.w3schools.com/c/index.php)
 * `void*` / `#define NULL = (void *)0`
 * C89/C99/C11/C23/[cake](https://github.com/thradams/cake)
 * Add notes from exercises
-* GDB 
+* GDB
+* Gcc
+
+```
+gcc -std=c99
+sudo apt-get install build-essential gdb
+file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/files/bash/utils.html
+```
+
 * [onlinegdb](https://learn.onlinegdb.com/)
 * webassembly
+* [unused parameter](https://stackoverflow.com/questions/14492637/warn-when-using-parameter-marked-as-unused)
 
 ```
 printf("%5d", 5); // "     5"
@@ -818,6 +828,8 @@ printf("%.3f", 1.35); // "1.350"
 ```
 </div><div>
 
+* `\0`
+* `void (*handler)(int)`
 * `sizeof` / `%zu` / `sizeof(type) sizeof(*variable)`
 * `inline`
 * `short int`

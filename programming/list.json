@@ -262,7 +262,7 @@
               "hidden": false
             },
             {
-              "tag": "code/system_calls/index.md",
+              "tag": "code/c/system_calls/index.md",
               "name": "System calls",
               "desc": "Learn about the most-used system calls.",
               "icon": null,
@@ -276,8 +276,22 @@
               "hidden": true
             },
             {
-              "tag": "code/ncurses/index.md",
+              "tag": "code/c/ncurses/index.md",
               "name": "ncurses",
+              "desc": "...",
+              "icon": null,
+              "hidden": true
+            },
+            {
+              "tag": "code/c/multitasking/index.md",
+              "name": "Multitasking in C",
+              "desc": "...",
+              "icon": null,
+              "hidden": false
+            },
+            {
+              "tag": "code/c/networking/index.md",
+              "name": "Networking in C",
               "desc": "...",
               "icon": null,
               "hidden": true
