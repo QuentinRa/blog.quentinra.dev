@@ -6,21 +6,21 @@
       {
         "tag": "linux/knowledge/index.md",
         "name": "Linux",
-        "desc": "General knowledge shared between most, if not all, Linux-based distributions such as Debian, Ubuntu, Fedora, Arch Linux...",
+        "desc": "General knowledge shared between most Linux-based distributions.",
         "icon": "<i class=\"bi bi-terminal-fill\"></i>",
         "hidden": false
       },
       {
         "tag": "linux/radix/index.md",
         "name": "Linux (radix/bases)",
-        "desc": "This is more of a mathematical course, but you will use binaries, octal, hexadecimal numbers everywhere, as they are used by Linux.",
+        "desc": "Notes about binary, octal, and hexadecimal numbers.",
         "icon": null,
         "hidden": false
       },
       {
         "tag": "linux/commands/index.md",
         "name": "Linux (commands)",
-        "desc": "A lot of commands that can be used on Linux-based distributions, along with their most useful options, and some tips about their usage.",
+        "desc": "Many useful Linux commands.",
         "icon": null,
         "hidden": false
       },
@@ -57,21 +57,21 @@
       {
         "tag": "windows/powershell/index.md",
         "name": "Powershell",
-        "desc": "A program abstracting .Net (Common Language Runtime / CLR), allowing us to run commands called cmdlets.",
+        "desc": "A program allowing us to run commands called cmdlets.",
         "icon": "<i class=\"bi bi-newspaper\"></i>",
         "hidden": false
       },
       {
         "tag": "windows/active-directory/index.md",
         "name": "Active Directory",
-        "desc": "It's used by organisations to manage computers/users/...",
+        "desc": "An utility used by organisations to manage computers/users/...",
         "icon": null,
         "hidden": false
       },
       {
         "tag": "windows/linux/index.md",
         "name": "Linux on Windows",
-        "desc": "Knowledge related to using Linux on Windows.",
+        "desc": "Knowledge related to using Linux commands/... on Windows.",
         "icon": null,
         "hidden": false
       }
