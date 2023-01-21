@@ -488,5 +488,10 @@ print()
 debugger; // only resuming when closed
 document.write(" Dont open Developer Tools. ");
 window.confirm('Are you sure?')
+
+xxx:
+for (;;) {
+    break xxx;
+}
 ```
 </div></div>

@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[Typescript](https://www.typescriptlang.org/) is a **typed**, **compiled**, **generic**, and **enhanced** JavaScript.
+[TypeScript](https://www.typescriptlang.org/) is a **typed**, **compiled**, **generic**, and **enhanced** JavaScript.
 
 * 👉 Compiling a `.ts` generates a `.js`
 * 👉 The compiler <small>(and IDEs)</small> can detect errors/mistakes
@@ -16,14 +16,14 @@
 
 ➡️ Install <small>(don't use -g, be clean)</small>
 
-```bash
+```bash!
 $ npm install typescript
 $ npx tsc --init # create a tsconfig.json
 ```
 
 ➡️ Compile
 
-```bash
+```bash!
 $ npx tsc --project tsconfig.json
 $ npx tsc --project tsconfig.json -w # auto-compile
 ```
@@ -37,46 +37,70 @@ $ npx tsc --project tsconfig.json -w # auto-compile
 
 <div class="row row-cols-md-2"><div>
 
-You need to specify the type of every **variable**, **parameter**... unless it's implicit.
+You need to specify the type of every **variable**, **parameter**... unless it's implicit meaning it can be deduced by the compiler.
 
-```typescript
-let n1 = 0; // implicit
-let n2 : number = 0; // explicit
-let n3 : number; // explicit
-let str : string = "";
-let xxx : string | undefined | null; // multiple types
-let fun : (v: string) => string; // a function
-// "?" after a parameter means "nullable" (null/undefined)
-function f(list: number[], xxx?: boolean, yyy = false) {}
-// add a return type
-function f() : string | null {}
+**Some types**
+
+```typescript!
+// 👉 Basics
+let aaa : any = ""; // ❌ bad/too generic
+let bbb : number = 0;
+let ccc : string = "xxx";
+let ddd : boolean = true;
+// 👉 a variable can have multiple types
+let eee : string | undefined | null = undefined;
+// 👉 Object
+let fff : object = {};
+let ggg : { x: string } = { x: "xxx" };
+let hhh : (v: string) => string = ((v) => v);
+let iii : number[] = [5, 10];
+let jjj : [string, string] = ["xxx", "yyy"];
+// 👉 Special
+let kkk : Promise<string> = (async () => ("xxx"))();
 ```
 
-➡️ It's a bad practice, but you can use the type **any**, if you don't want to explicitly define the type of something.
+If you know that something is not null, use `!!`
 
-➡️ If you know that something is not null, use `!!`
-
-```typescript
+```typescript!
 // querySelector returns Element | null -> Element
 const xxx : Element = document.querySelector("#xxx")!!
+```
+
+You can create aliases for types:
+
+```typescript!
+type XXX = Record<string, string>
+let xxx : XXX = {};
+```
+
+➡️ See also Classes, Interfaces, and Records.
+</div><div>
+
+#### Functions
+
+Inside a function, instead of `x: type | undefined | null`, you can use `x?: type` which is exactly the same.
+
+```typescript!
+// 👉 A function parameters
+function f(list: number[], xxx?: boolean, yyy = false) {}
+// 👉 A return type
+function f() : string | null {}
 ```
 
 #### Disable a warning
 
 You can do it by adding `@ts-ignore` before any unresolvable warning.
 
-```javascript
+```javascript!
 // @ts-ignore
-/* code generating a warning */ 
+load(xxx); // code generating a warning 
 ```
-
-</div><div>
 
 #### JavaScript syntax
 
 These may have been added in newer versions of JavaScript.
 
-```typescript
+```typescript!
 let x = y ?? 0 // if "y" is null/undefined, then x = 0
 
 // cast to a more specific type
@@ -91,14 +115,14 @@ enum Enum { A, C = 2, D } // values are [0, 2, 3]
 
 What was exported, can be imported into another file.
 
-```typescript
+```typescript!
 // file.ts
 export function xxx() {}
 export class YYY {}
 export enum ZZZ {}
 ```
 
-```typescript
+```typescript!
 // xxx.ts
 import { xxx, YYY, ZZZ } from "../files/file";
 ```
@@ -112,7 +136,7 @@ import { xxx, YYY, ZZZ } from "../files/file";
 
 The syntax is mostly the same as in JavaScript. Modifiers to change the visibility were added: **public**, **private**, and **protected**.
 
-```typescript
+```typescript!
 class Example {
     // ➡️ ex: private static constant
     private static SELECT_KEY = 'match_id';
@@ -166,7 +190,7 @@ x.five = 5
 
 There is a new way to write getters/setters.
 
-```typescript
+```typescript!
 class Example {
     get number() : number { return 10; };
     set number(n?: number) { /* code */ };
@@ -184,7 +208,7 @@ example.number = 5; // call "set"
 
 It's the same syntax as in JavaScript.
 
-```typescript
+```typescript!
 class A {}
 class B extends A {
     constructor() {
@@ -202,7 +226,7 @@ class B extends A {
 
 If you want to create a library, and use it in another local project, you must at least provide a name and a version inside your package.json.
 
-```json
+```json!
 {
   "name": "xxx-library",
   "version": "0.0.1"
@@ -240,9 +264,10 @@ Stuff that I found, but never read/used yet.
 
 * [clean-code-typescript](https://github.com/labs42io/clean-code-typescript)
 * [typescript-cheat-sheet](https://www.sitepen.com/blog/typescript-cheat-sheet) and [hoomanb](http://hoomanb.com/cs/quickref/typescript_cheatsheet.pdf)
+* `never`
 </div><div>
 
-```typescript
+```typescript!
 declare module 'xxx' {
   export default function yyy(): ZZZ;
 }
