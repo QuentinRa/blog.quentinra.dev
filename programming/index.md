@@ -15,6 +15,7 @@ The icon with an arrow (➡️) means that they should be tackled first.
 **Courses planned**
 
 * jekyll/pages
+* cas
 * WordPress
 * latex/rst
 * xml

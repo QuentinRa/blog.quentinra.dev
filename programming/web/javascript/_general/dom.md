@@ -33,7 +33,7 @@ There are 3 ways to write JavaScript for a website.
 
 You can use attributes such as `onmouseover`, `onclick`, `onsubmit` etc. A [list can be found here (W3Schools)](https://www.w3schools.com/TAGs/ref_eventattributes.asp).
 
-```HTML
+```HTML!
 <p onmouseover="console.log('Hello World')">
     ...
 </p>
@@ -43,7 +43,7 @@ You can use attributes such as `onmouseover`, `onclick`, `onsubmit` etc. A [list
 
 You can use `<script>` tags.
 
-```HTML
+```HTML!
 <script>
 // your JavaScript code
 console.log("Hello World")
@@ -54,7 +54,7 @@ console.log("Hello World")
 
 You can link an external file. This is the proper way to do it <small>(CSP policy+caching, CDNs, SoC...)</small>.
 
-```html
+```html!
 <script src="/path/to/file.js"></script>
 ```
 
@@ -74,7 +74,7 @@ There is one big difference with usual JavaScript: there is a variable `window` 
 
 The **Document Object Model** (DOM) is a tree of **nodes** <small>(HTML tags)</small>. The root is `window.document` or the shortcut `window.document`.
 
-```javascript
+```javascript!
 document.head // access the head tag
 document.body // access the body tag
 // collection with every
@@ -88,14 +88,14 @@ Array.from(document.links)
 
 To create a node, we use these. Note that by editing the innerHTML of an existing tag manually, you can avoid doing that.
 
-```javascript
+```javascript!
 const node = document.createTextNode("Some text")
 const node = document.createElement("div")
 ```
 
 To find a node, you can use
 
-```javascript
+```javascript!
 const xxx = document // you can put any Node here
 // ex: only match <node id="id" />
 const node = xxx.getElementById('id');
@@ -109,7 +109,7 @@ const nodeList = xxx.querySelectorAll('table tr > .xxx');
 ```
 </div><div>
 
-```javascript
+```javascript!
 // Navigate from one node to another
 xxx.childNodes ; xxx.children
 xxx.firstChild ; xxx.firstElementChild
@@ -137,7 +137,7 @@ xxx.click() // fire a "click" event
 
 You can also manually edit the style
 
-```js
+```js!
 xxx.style.width = "5px";
 xxx.style.display = "none";
 xxx.style.color = "red";
@@ -157,12 +157,12 @@ if (style.visibility === 'hidden') { /* ..; */ }
 
 #### Listen to events
 
-```html
+```html!
 <!-- ❌ inside the HTML. Use this to get the button. -->
 <button onclick="console.log(event, this)">xxx</button>
 ```
 
-```javascript
+```javascript!
 // ✅ inside the JavaScript
 const btn = document.querySelector("...")
 // only to add one listener
@@ -192,14 +192,14 @@ Useful attributes/methods to call on an event are
 
 Execute code when the visibility <small>(hidden, shown back)</small> of the page is changed <small>(ex: tab changed, minified...)</small>
 
-```javascript
+```javascript!
 // ➡️  See "document.hidden" (boolean)
 document.addEventListener('visibilitychange', () => {});
 ```
 
 Execute some code when a key is pressed
 
-```javascript
+```javascript!
 document.onkeydown = e => {
     switch (e.code) {
         case 'KeyR': 
@@ -219,7 +219,7 @@ document.onkeydown = e => {
 
 You can listen to a form submission which `submit`/`onsubmit`. This event is particular, as **true** must be returned if we can send the form, **false** otherwise. It's used to validate a form, before sending it.
 
-```js
+```js!
 form.onsubmit = (event) => {
     const form = event.target
     // 🤔 using elements (array)
@@ -240,11 +240,11 @@ form.onsubmit = (event) => {
 
 You may know that you can validate an HTML form with attributes such as `minlength`... You can show custom errors, or further handle the verification in JavaScript.
 
-```html
+```html!
 <form novalidate></form> <!-- disable HTML errors -->
 ```
 
-```js
+```js!
 form.onsubmit = (event) => {
     const form = document.forms[0]
     const xxx = f.querySelector('#xxx')
@@ -268,7 +268,7 @@ form.onsubmit = (event) => {
 
 The [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) is the easiest, and most used to do API requests.
 
-```javascript
+```javascript!
 // you can use a try-catch to catch errors
 const res = await fetch("URL" , params)
 // or
@@ -280,12 +280,12 @@ fetch('URL', params)
 
 Note that `res` is a pending request, you need to ask for an output.
 
-```javascript
+```javascript!
 const json = await res.json() // as a json object
 const text = await res.text() // as a string
 ```
 
-```javascript
+```javascript!
 // other
 const value = res.headers.get('header-name')
 ```
@@ -293,7 +293,7 @@ const value = res.headers.get('header-name')
 
 **GET** is the default if no parameters were provided.
 
-```javascript
+```javascript!
 const params = { method: "GET", }
 ```
 
@@ -301,7 +301,7 @@ const params = { method: "GET", }
 
 ➡️ Note that the API may not require you to add headers.
 
-```javascript
+```javascript!
 const params = {
     method: "POST",
     body: JSON.stringify({ username: "xxx" }),
@@ -309,7 +309,7 @@ const params = {
 }
 ```
 
-```javascript
+```javascript!
 const params = {
     method: "POST",
     body: 'xxx=value&yyy=value',
@@ -322,7 +322,7 @@ const params = {
 
 To code a simplified `fetch`, you could use the code below.
 
-```javascript
+```javascript!
 function fetchXXX(URL, params = undefined) {
     return new Promise((resolve, reject) => {
         const ajax = new XMLHttpRequest();
@@ -365,7 +365,7 @@ fetchXXX('https://jsonplaceholder.typicode.com/posts')
 
 [See NotificationsAPI](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API)
 
-```javascript
+```javascript!
 if (Notification?.permission === "granted") {
     // send a notification
     const img = 'xxx.png';
@@ -381,7 +381,7 @@ if (Notification?.permission === "granted") {
 
 The localStorage is a storage inside the client browser. What's stored inside can be edited inside the devtools, in the "Application" tab.
 
-```javascript
+```javascript!
 // store
 localStorage.setItem('key', 'value')
 // get
@@ -403,13 +403,13 @@ It's useful to store/cache some data, but you must take into account that the us
 
 * ➡️ Show a popup with some message
 
-```javascript
+```javascript!
 alert("XXX?")
 ```
 
 * ➡️ Show a popup asking the user for input
 
-```javascript
+```javascript!
 let value = prompt("XXX?", "defaultValueOfTheInputField")
 if (value != null) {
     // ...
@@ -442,6 +442,29 @@ A long time ago, [jQuery](https://github.com/jquery/jquery) was a popular librar
 ➡️ [jQuery.terminal](https://github.com/jcubic/jquery.terminal) (2.8k ⭐)
 </div></div>
 
+<hr class="sep-both">
+
+## Snippets
+
+<div class="row row-cols-md-2"><div>
+
+* Scroll to the bottom of an element
+
+```js!
+const scrollToTheBottomOfElement = (e) => {
+    let previous = e.scrollHeight;
+    while (1) {
+        e.scrollTo(0, e.scrollHeight);
+        if (e.scrollHeight === previous) break;
+        previous = e.scrollHeight;
+    }
+}
+```
+</div><div>
+
+...
+</div></div>
+
 
 <hr class="sep-both">
 
@@ -460,7 +483,7 @@ Stuff that I found, but never read/used yet.
 * `window.location.href` / `window.location.replace(URL)`
 </div><div>
 
-```javascript
+```javascript!
 print()
 debugger; // only resuming when closed
 document.write(" Dont open Developer Tools. ");

@@ -92,7 +92,7 @@ Extension Templates can make working with extensions easier.
 
 * Create `manifest.json`
 
-```json
+```json!
 {
   "name": "Hello, World",
   "version": "0.0.1",
@@ -109,7 +109,7 @@ Extension Templates can make working with extensions easier.
 
 * Create `scripts/main.js`
 
-```javascript
+```javascript!
 console.log("Hello, World")
 ```
 
@@ -127,7 +127,7 @@ console.log("Hello, World")
 
 ➡️ **Get started**
 
-```bash
+```bash!
 $ git clone https://github.com/chibat/chrome-extension-typescript-starter.git my-extension
 $ cd .\my-extension\
 $ npm install
@@ -135,13 +135,11 @@ $ npm update
 $ npm run watch
 ```
 
-The extension is automatically reloaded inside the browser.
-
 ➡️ **Bootstrap**
 
 To load bootstrap, download it locally, and store it inside a directory in `public` (ex: lib/). Then in `popup.html`, use
 
-```
+```xml!
 <link href="lib/css/bootstrap.min.css" rel="stylesheet">
 <script src="lib/js/bootstrap.bundle.min.js"></script>
 ```
@@ -152,8 +150,14 @@ For JS files in the Manifest, `src/*.ts` will generate a file `js/*.js`.
 
 ```json!
 "background": {
-    "service_worker": "js/background.js"
+  "service_worker": "js/background.js"
 },
+"content_scripts": [
+  {
+    "matches": ["http://localhost/:*/"],
+    "js": ["js/content_script.js"]
+  }
+],
 ```
 </details>
 </div></div>
@@ -235,7 +239,7 @@ It's possible to show a popup when the user clicks on the icon in the toolbar, w
 
 Or, at any time, inside the code
 
-```javascript
+```javascript!
 chrome.action.setPopup({ popup: "popup/popup.html" })
 ```
 
@@ -269,7 +273,7 @@ Note that the code inside the Popup is **only** executed when the popup is shown
 
 If you don't open a popup, it's also possible to register an listener, and execute some code when the user clicks on the badge.
 
-```javascript
+```javascript!
 // ➡️ When users click on the badge
 // ➡️ When users use the shortcut (if any)
 chrome.action.onClicked.addListener((tab) => {});
@@ -280,7 +284,7 @@ chrome.action.onClicked.addListener((tab) => {});
 
 The icon inside the toolbar is called a `badge`. You can add a text "below", like the number of ads blocked on a site.
 
-```javascript
+```javascript!
 // ➡️ Inside popup.html/popup.js/...
 badge.textContent = `XXX`;
 // ➡️ Otherwise,
@@ -365,6 +369,15 @@ Service workers can be stopped, and started when an event occurred. They are use
 
 <div class="row row-cols-md-2"><div>
 
+🎯 Just so you know, you can use `async`/`await` instead of callbacks. You can use this trick if you're not able to use `await`:
+
+```javascript!
+(async () => {
+    const [tab] = await chrome.tabs.query({/*...*/});
+    // ...
+})();
+```
+
 #### Tabs
 
 <p class="mt-3"></p>
@@ -372,7 +385,7 @@ Service workers can be stopped, and started when an event occurred. They are use
 <details class="details-n">
 <summary><code>chrome.tabs.query</code>: fetch a tab, such as the active tab</summary>
 
-```javascript
+```javascript!
 // ➡️ ex: popup.js
 chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     const url = tabs[0].url;
@@ -380,6 +393,7 @@ chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     const id = tabs[0].id
     // ...
 })
+chrome.tabs.query({ active: true, lastFocusedWindow: true }, function (tabs) {})
 chrome.tabs.query({ url: [] }, function (tabs) {})
 ```
 </details>
@@ -387,7 +401,7 @@ chrome.tabs.query({ url: [] }, function (tabs) {})
 <details class="details-n">
 <summary><code>chrome.tabs.create/update</code>: create/update a tab</summary>
 
-```javascript
+```javascript!
 // 🔐 "tabs"
 await chrome.tabs.create({ url: "URL" })
 await chrome.tabs.update(tab.id, { active: true });
@@ -398,7 +412,7 @@ await chrome.windows.update(tab.windowId, { focused: true });
 <details class="details-n">
 <summary><code>chrome.tabGroups/update</code>: group tabs</summary>
 
-```javascript
+```javascript!
 // 🔐 permission "tabGroups"
 const group = await chrome.tabs.group({ tabIds });
 await chrome.tabGroups.update(group, { title: "xxx" });
@@ -412,7 +426,7 @@ await chrome.tabGroups.update(group, { title: "xxx" });
 <details class="details-n">
 <summary><code>insertCSS/removeCSS</code>: manipulate the CSS</summary>
 
-```javascript
+```javascript!
 // 🔐 permission "scripting"
 chrome.scripting.insertCSS({ files: ["focus-mode.css"], target: { tabId: tab.id },});
 chrome.scripting.removeCSS({ files: ["focus-mode.css"], target: { tabId: tab.id },});
@@ -426,7 +440,7 @@ chrome.scripting.removeCSS({ files: ["focus-mode.css"], target: { tabId: tab.id 
 <details class="details-n">
 <summary>Generate a link for a JSON in a content script</summary>
 
-```javascript
+```javascript!
 const content : any = JSON.stringify( { "message": "ok" }, null, 2);
 const url = URL.createObjectURL( new Blob([content], {type: 'application/json'}) );
 ```
@@ -437,18 +451,18 @@ const url = URL.createObjectURL( new Blob([content], {type: 'application/json'})
 
 I couldn't find anything. This works, but the indentations, the spaces, and most of the generated JSON is messed up.
 
-```javascript
+```javascript!
 const url = 'data:application/json,' + JSON.stringify(/*...*/)
 ```
 
 The only workaround is to add a comment with `//?` at the start of the JSON.
 
-```javascript
+```javascript!
 const url = 'data:application/json,//?\n' + JSON.stringify(/*...*/)
 ```
 </details>
 
-```javascript
+```javascript!
 // 🔐 permission "downloads"
 chrome.downloads.download({ url, filename: "xxx.json" });
 chrome.downloads.download({ url, filename: "...", saveAs: true });
@@ -462,7 +476,7 @@ chrome.downloads.download({ url, filename: "...", saveAs: true });
 <details class="details-n">
 <summary>Use <code>storage.local</code></summary>
 
-```javascript
+```javascript!
 // 🔐 permission "storage"
 // Get
 chrome.storage.local.get(["key"], function(result){
@@ -483,7 +497,7 @@ chrome.storage.local.clear()
 
 If the key is from a variable, use the code below
 
-```
+```javascript!
 // Dynamic keys
 const key = "key"
 const entry = {}
@@ -513,7 +527,7 @@ chrome.bookmarks.removeTree("id")
 <details class="details-n">
 <summary>Events - created, updated, removed</summary>
 
-```javascript
+```javascript!
 function cb(id, info) {}
 // { "dateAdded": 0, "id": "0", "index": 0, "parentId": "0", "title": "xxx", "url": "xxx }
 chrome.bookmarks.onCreated.addListener(cb)
@@ -534,7 +548,7 @@ chrome.bookmarks.onRemoved.addListener(cb)
 
 To send a message from a background script/popup
 
-```javascript
+```javascript!
 // ➡️ Sender - ex: popup.js
 chrome.tabs.sendMessage(tabs[0].id,
     { /* custom data */ },
@@ -544,7 +558,7 @@ chrome.tabs.sendMessage(tabs[0].id,
 
 Inside a content script, you can use
 
-```javascript
+```javascript!
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     // ...
     sendResponse({ /* custom */ });
@@ -555,7 +569,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 <details class="details-n">
 <summary><code>onInstalled</code>: run some code after installing the extension</summary>
 
-```javascript
+```javascript!
 chrome.runtime.onInstalled.addListener(() => {});
 ```
 </details>
@@ -572,12 +586,12 @@ Stuff that I found, but never read/used yet.
 * [Polyfill](https://github.com/mozilla/webextension-polyfill)
 * [plasmo](https://github.com/PlasmoHQ/plasmo) / [chrome-types](https://www.npmjs.com/package/chrome-types)
 
-```
+```javascript!
 document.addEventListener("pageshow", xxx);
 ```
 </div><div>
 
-```
+```javascript!
 chrome.contextMenus.create({ id: "xxx", title: "xxx", contexts: ['selection'] });
 chrome.contextMenus.onClicked.addListener(function(info, tab) {
     if (info.menuItemId == "xxx") {     

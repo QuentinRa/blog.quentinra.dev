@@ -28,6 +28,14 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 * [qrgenerator](https://qrgenerator.org/) (🚀, static)
 * [onelink.to](https://www.onelink.to/) (👻)
 
+##### Video conferencing
+
+* [Zoom](https://zoom.us/)
+* [webex](https://www.webex.com/)
+* [AdobeConnect](https://www.adobe.com/products/adobeconnect.html)
+* [Teams](https://www.microsoft.com/en-us/microsoft-teams/log-in)
+* [jitsi](https://meet.jit.si/) (😍)
+
 ##### Notes
 
 * [dontpad](https://dontpad.com/) (public, 👻)
@@ -175,11 +183,11 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 <hr class="sep-both">
 
-##  🧓 Bits 🧓
+##  🧓 Random among Randoms 🧓
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-* `xxx+yyy@xxx.yyy`
+* Emails with +: `xxx+yyy@xxx.yyy`
 
 </div><div>
 </div></div>
