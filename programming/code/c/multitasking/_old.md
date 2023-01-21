@@ -4,10 +4,6 @@ Sometimes, you might create a program where you may want to do some tasks
 in parallel. When running a program, the system encapsulates the program
 and his environment into something called a `process`.
 
-The system uses a ``scheduler`` to run all the process in parallel (or
-what we call pseudo-parallelism since they aren't in fact running in
-parallel).
-
 Finally, processes might want to communicate between themselves or simply
 with you. Un interaction might be ``CTRL-C`` meaning `die`. In fact here,
 ``CTRL-C`` generates a signal, `9` and the process have a default handler
