@@ -1,9 +1,5 @@
 # Threads and processes
 
-Sometimes, you might create a program where you may want to do some tasks
-in parallel. When running a program, the system encapsulates the program
-and his environment into something called a `process`.
-
 Finally, processes might want to communicate between themselves or simply
 with you. Un interaction might be ``CTRL-C`` meaning `die`. In fact here,
 ``CTRL-C`` generates a signal, `9` and the process have a default handler
