@@ -74,6 +74,7 @@ Google
 * [plan.io](https://plan.io/) <small>(???)</small>
 * [grafana.com](https://grafana.com/) <small>(???)</small>
 * [prometheus](https://github.com/prometheus/prometheus) <small>(???)</small>
+* [raycast](https://www.raycast.com/) <small>(???)</small>
 
 **Markdown-based**
 
@@ -194,9 +195,10 @@ EOF
 * [A lot of languages listed here](https://www.jetbrains.com/help/webstorm/application-development-guidelines.html)
 * Other: ML (programming language), [Q#](https://devblogs.microsoft.com/qsharp/)
 
-**Trolls**
+**Fun**
 
 * [emojicode](https://www.emojicode.org/)
+* [holopin](https://www.holopin.io/) (badges)
 </div></div>
 
 <hr class="sep-both">
@@ -236,6 +238,8 @@ Websites that I found, but never used yet.
 * [dev.to](https://dev.to/) <small>(community-based?)</small>
 * [toolsqa](https://www.toolsqa.com/) <small>(tools)</small>
 * [bitdegree/learn](https://www.bitdegree.org/learn/) <small>(many)</small>
+* [codeproject](https://www.codeproject.com/) <small>(???)</small>
+* [tutorialkart](https://www.tutorialkart.com/) <small>(many)</small>
 
 **MOOCs**
 
@@ -262,6 +266,7 @@ Websites that I found, but never used yet.
 * [pluralsight](https://www.pluralsight.com/blog) <small>(React, Java, Ruby, Python, Angular...)</small>
 * [knowledgehut](https://www.knowledgehut.com/tutorials) <small>(R, Node, Ionic, C#...)</small>
 * [gorails](https://gorails.com/) <small>(Ruby)</small>
+* [data-flair](https://data-flair.training/) <small>(Java, Python, Scala)</small>
 
 **No-code**
 
@@ -315,6 +320,7 @@ Websites that I found, but never used yet.
 * [12daysofweb](https://12daysofweb.dev/) <small>(???)</small>
 * [moderncss](https://moderncss.dev/)+[smolcss](https://smolcss.dev/) <small>(👻, modern css)</small>
 * [dofactory](https://www.dofactory.com/) <small>(???)</small>
+* [sitepoint](https://www.sitepoint.com/) <small>(web, mobile...)</small>
 
 **Blockchains focused**
 
@@ -373,6 +379,7 @@ Websites that I found, but never used yet.
 * [upwork](https://www.upwork.com/resources/) <small>(???)</small>
 * [ppawar](https://ppawar.github.io/) <small>(???)</small>
 * [makeawebsitehub](https://makeawebsitehub.com/blog/) <small>(???)</small>
+* [lambdatest]https://www.lambdatest.com/blog/) <small>(Java, C#, PHP...)</small>
 
 **YouTube**
 

@@ -78,6 +78,8 @@ Special: [emberjs](https://github.com/emberjs) (many solutions).
 * [Angular](https://github.com/angular/angular) (86k ⭐)
 * [gatsby](https://github.com/gatsbyjs/gatsby) (54k ⭐)
 * [weex](https://github.com/alibaba/weex) (18k ⭐)
+* [foundation](https://github.com/foundation/foundation-sites) (29.4k ⭐)
+* [OnsenUI](https://github.com/OnsenUI/OnsenUI) (8.7k ⭐)
 
 Random
 
@@ -91,6 +93,7 @@ Random
 * [WMR](https://github.com/preactjs/wmr) (4.7k ⭐)
 * [parcel.js](https://github.com/parcel-bundler/parcel) (41.8k ⭐)
 * [yeoman](https://github.com/yeoman/yeoman) (9.5k ⭐)
+* [monaca](https://monaca.io/)
 
 #### Bundles
 

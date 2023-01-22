@@ -8,6 +8,7 @@
 * [filevert.fr](https://filevert.fr/) (temporary, green, allow big files)
 * [wetransfer.com](https://wetransfer.com/) (usually for big files)
 * [mega.io](https://mega.io/start)
+* [zippyshare](https://www.zippyshare.com/)
 </div><div>
 
 ##### Images

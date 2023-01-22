@@ -250,7 +250,7 @@
               "name": "C++",
               "desc": "A fast language based on C.",
               "icon": "<img src=\"/courses/programming/code/cpp/_images/c++-logo.png\" class=\"ms-logo pb-1\" alt=\"kotlin-logo\" title=\"kotlin-log\">",
-              "hidden": false
+              "hidden": true
             }
           ],
           "Low-level programming": [
@@ -259,14 +259,14 @@
               "name": "C89 / C99",
               "desc": "A widely used low-level language.",
               "icon": "<i class=\"bi bi-terminal-fill\"></i>",
-              "hidden": false
+              "hidden": true
             },
             {
               "tag": "code/c/system_calls/index.md",
               "name": "System calls",
               "desc": "Learn about the most-used system calls.",
               "icon": null,
-              "hidden": false
+              "hidden": true
             },
             {
               "tag": "code/assembly/arm/index.md",
@@ -287,7 +287,7 @@
               "name": "Multitasking in C",
               "desc": "...",
               "icon": null,
-              "hidden": false
+              "hidden": true
             },
             {
               "tag": "code/c/networking/index.md",
