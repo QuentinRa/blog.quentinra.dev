@@ -31,38 +31,40 @@ A process is both a program, and it's environment.
 * pid <small>(process id, unique)</small>
 * ppid <small>(process id of the parent, -1 if the parent is dead)</small>
 
-When executing your program <small>(i.g. `./a.out`)</small>, the code is executed by the `main` process.
+When executing `./a.out`, the code is executed by the `main` process.
 
+```c
+#include <sys/types.h>
+#include <unistd.h>
+
+int main() { // "pid_t" is an alias of "int"
+    pid_t pid = getpid();
+    pid_t ppid = getppid(); // -1 if none
+}
+```
 </div><div>
 
-<div class="row row-cols-md-2"><div>
+A process can duplicate itself using `fork`. The return value is **0** inside the newly created process, and **>0** in the original
 
 ```c
 #include <sys/types.h>
 #include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
-    pid_t pid = fork();
-    // executed twice
-    printf("%d", pid);
+    pid_t pid = fork(); // todo: handle pid == -1 (error)
+    if (pid == 0) {
+        // executed by the newly created process
+        printf("Child[%d].\n", getpid());
+    } else {
+        // executed by the original process
+        printf("Parent[%d].\n", getpid());
+    }
+    exit(0); // executed by both (not inside the if)
 }
 ```
-</div><div>
 
-`fork` will create a copy of the program executing it.
-
-Inside the newly created program, `pid` will be `0`.
-
-Inside the original program, `pid` will be `>0`.
-
-If the `fork` failed, `pid` will be `-1`.
-</div></div>
-
-```c
-pid_t pid = getpid();
-pid_t ppid = getppid(); // -1 if none
-```
 </div></div>
 
 <hr class="sep-both">

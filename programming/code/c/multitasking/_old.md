@@ -5,7 +5,6 @@ with you. Un interaction might be ``CTRL-C`` meaning `die`. In fact here,
 ``CTRL-C`` generates a signal, `9` and the process have a default handler
 for this signal : a call ``exit(some_code)``.
 
-* [Processes](proc/process.md)
 * [Processes : wait](proc/process-wait.md)
 * [Replace process code](proc/exec.md)
 * [Communication : signals](proc/signals.md)
