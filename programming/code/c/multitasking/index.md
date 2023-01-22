@@ -239,8 +239,10 @@ Stuff that I found, but never read/used yet.
 
 * [old](_old.md)
 * `FILE* stream = fopen(FIFO_PATH, "r+");`
+* `dup/dup2/dup3`
 </div><div>
 
 * scheduler
 * pseudo-parallelism
+* adding exercises from ens
 </div></div>

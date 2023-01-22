@@ -14,6 +14,8 @@ You will find inside
 
 </div></div>
 
+➡️ See [Multitasking](/programming/code/c/multitasking/index.md) for: `fork`, `wait`, `pipe`, `sleep`, `kill`, `exec*`...
+
 <hr class="sl">
 
 ## `perror` - print a system call's error message
@@ -242,14 +244,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* `fork`
-* `kill`
-* `dup/dup2/dup3`
-* `sleep`
-</div><div>
-
-* `execv`
-* `pipe`
 * adding exercises from texas
-* ...
+</div><div>
 </div></div>

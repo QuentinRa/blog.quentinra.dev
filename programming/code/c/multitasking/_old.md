@@ -1,14 +1,6 @@
 # Threads and processes
 
-Finally, processes might want to communicate between themselves or simply
-with you. Un interaction might be ``CTRL-C`` meaning `die`. In fact here,
-``CTRL-C`` generates a signal, `9` and the process have a default handler
-for this signal : a call ``exit(some_code)``.
-
-* [Processes : wait](proc/process-wait.md)
 * [Replace process code](proc/exec.md)
-* [Communication : signals](proc/signals.md)
-* [Communication : pipes](proc/tubes.md)
 
 ``Threads`` are some kind of process where some part of
 the environment (variables, ...)
