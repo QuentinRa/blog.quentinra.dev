@@ -301,6 +301,7 @@ Stuff that I found, but never read/used yet.
 * [bootstrapshuffle](https://bootstrapshuffle.com/)
 * [bootswatch](https://github.com/thomaspark/bootswatch)
 * [bootstrapstudio](https://bootstrapstudio.io/)
+* [bootstrap-table](https://github.com/wenzhixin/bootstrap-table)
 </div><div>
 
 ```

@@ -44,7 +44,9 @@
 * [cubari.moe](https://cubari.moe/) (manga reader)
 </div><div>
 
-##### Read
+##### Websites (purpose?)
+
+Acceptable
 
 * [mangadex.org](https://mangadex.org/)
 
@@ -53,14 +55,20 @@ Aggregators
 * [fanfox.net](https://fanfox.net/)
 * [mangakatana.com](http://mangakatana.com/)
 * [mangaguru.org](https://mangaguru.org/index.php)
-* [comickiba.com](https://comickiba.com/) (WordPress Madara)
 * [mangareader.to](https://mangareader.to/)
-
-Webtoons
-
 * [webtoon.xyz](https://www.webtoon.xyz/)
 * [manhuascan.us](https://manhuascan.us/)
-* [mangarolls.com](https://mangarolls.com/rolls/) (WordPress Madara)
+
+<details class="details-n">
+<summary>WordPress Madara</summary>
+
+* [comickiba.com](https://comickiba.com/)
+* [woopread.com](https://woopread.com/)
+* [mangapuma.com](https://mangapuma.com/home-page)
+* [mangakomi.io](https://mangakomi.io/)
+* [manhwatop.com](https://manhwatop.com/)
+* [mangarolls.com](https://mangarolls.com/rolls/)
+</details>
 
 Novels
 

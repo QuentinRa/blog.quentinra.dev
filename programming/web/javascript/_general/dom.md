@@ -439,7 +439,7 @@ A long time ago, [jQuery](https://github.com/jquery/jquery) was a popular librar
 
 ➡️ Bootstrap removed its jQuery dependencies in its 5th version, to make the library more lightweight.
 
-➡️ [jQuery.terminal](https://github.com/jcubic/jquery.terminal) (2.8k ⭐)
+➡️ [jQuery.terminal](https://github.com/jcubic/jquery.terminal) (2.8k ⭐) | ️ [jQuery Migrate](https://github.com/jquery/jquery-migrate) (1.9k ⭐)
 </div></div>
 
 <hr class="sep-both">

@@ -84,6 +84,7 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 * [zoho.com](https://www.zoho.com/office/) (👻, office 365~?)
 * [goodfirms.co](https://www.goodfirms.co/) (👻, review/promote tools?)
 * [confluent.io](https://www.confluent.io/) (👻)
+* [sentry.io](https://sentry.io/welcome/) (👻)
 </div></div>
 
 <hr class="sep-both">
