@@ -47,8 +47,6 @@ A process can duplicate itself using `fork`. The return value is **0** inside th
 
 ```c
 #include <unistd.h> // fork, getpid
-#include <stdio.h> // printf
-#include <stdlib.h> // exit
 
 int main() {
     pid_t pid = fork(); // todo: handle pid == -1 (error)
@@ -76,9 +74,8 @@ int main() {
 Usually, we  want to know when our processes are done.
 
 ```c
-#include <unistd.h>
-#include <stdlib.h>
-#include <sys/wait.h>
+#include <unistd.h> // fork
+#include <sys/wait.h> // wait
 
 int main() {
     // create 3 processes
@@ -108,15 +105,14 @@ If you want to get the exit code <small>(ex: to check a child failed it's task)<
 ```c
 // ➡️ replace "wait(NULL);" with:
 int status;
-pid_t child_pid = wait(&status);
+pid_t child_pid = wait(&status); // store it if you need it
 if (WIFEXITED(status)) { // if exited
     int exit_code = WEXITSTATUS(status); // get code
     // ...
 }
 ```
-</div><div>
 
-⚠️ Actually, `wait` is blocking the parent until a signal is received. This could be another signal than the exit one:
+⚠️ Actually, `wait` is blocking the parent until a **signal** is received. This could be another signal than the exit one:
 
 * `WIFEXITED(status)`: process was killed
 * `WIFSIGNALED(status)`: process was killed (manually)
@@ -130,7 +126,62 @@ And you want some convenient functions:
 * `WTERMSIG(status)`: return the terminating signal code
 * `WSTOPSIG(status)`: return the stopping signal code
 
-...
+<details class="details-n mb-4">
+<summary><code>waitpid</code>: more versatile wait</summary>
+
+```c
+int waitpid(int pid, int *status, int options);
+// example
+waitpid(-1, &status, 0);
+```
+
+* `pid`: $-1$ <small>(any)</small>, $0$ <small>(any child in the group)</small>, $>0$ <small>(a specific process)</small>. Aside from $-1$, $-n$ is the same as $n$.
+* `options`: can be used to ignore some signals/...
+</details>
+</div><div>
+
+#### Signals
+
+When using <kbd>CTRL+C</kbd>, you're actually sending a signal to a program.
+
+* `code`: from 1 to 31 included
+* `function`: for instance, for 9 (kill): `exit(130)`.
+
+You can change how your code will respond to a signal.
+
+```c
+#include <signal.h>
+
+void handler(int signum) {
+    // do something
+}
+
+int main() {
+    // sig_t signal(int code, void (*handler)(int));
+    if (SIG_ERR == signal(9, handler)) {
+        perror("Using custom handler for 9 failed");
+        exit(1);
+    } else {} // ok
+}
+```
+
+You can use `kill` (the function/the command) to send a signal
+
+```c
+// if pid = 0 then all process in our group
+// if pid = -1 then all process
+// else send a signal to the one with <pid>
+int kill(pid_t pid, int signal_code);
+```
+
+You can wait for a signal using `pause` or `sleep`
+
+```c
+#include <unistd.h>
+sleep(1000); // wake up by itself after 1s
+pause(); // won't wake up by itself
+```
+
 </div></div>
 
 <hr class="sep-both">
