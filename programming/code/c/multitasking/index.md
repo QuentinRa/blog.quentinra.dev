@@ -182,6 +182,51 @@ sleep(1000); // wake up by itself after 1s
 pause(); // won't wake up by itself
 ```
 
+#### Pipes
+
+A `pipe` is a read/write stream in which both processes can exchange. To understand pipe, you must first understand **file descriptors** which in short, are numbers representing a file (see [System calls](/programming/code/c/system_calls/index.md)).
+
+The function `pipe` is creating two file descriptors
+
+* `tab[0]`: to read using the system call `read`
+* `tab[1]`: to write using the system call `write`
+
+<details class="details-n">
+<summary>Example: sending "Hello World" to the original</summary>
+
+```c
+#include <unistd.h>
+#include <wait.h>
+
+int main() {
+    int length = 11 + 1; // \0
+    char buf[length];
+    int tab[2];
+    pipe(tab);
+
+    switch (fork()) { // add -1
+        case 0: // the child write Hello World
+            write(tab[1], "Hello World", length);
+            break;
+        default:
+            wait(NULL); // wait for the child to write
+            read(tab[0], &buf, length); // read
+            // ...
+            break;
+    }
+
+    close(tab[0]);
+    close(tab[1]);
+}
+```
+</details>
+
+You can also use *named pipes*. These are created and accessible from the file system (ex: using `ls`).
+
+```c
+// int mkfifo(const char* name, mode_t mode);
+int fd = mkfifo("filename", 0777);
+```
 </div></div>
 
 <hr class="sep-both">
@@ -193,6 +238,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [old](_old.md)
+* `FILE* stream = fopen(FIFO_PATH, "r+");`
 </div><div>
 
 * scheduler
