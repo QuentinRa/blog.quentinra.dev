@@ -1,8 +1,25 @@
 {
-  "title": "IT Project",
-  "description": "Notes about Information Technology (IT) projects.",
-  "courses": [
-    {
+  "title": "IT Knowledge",
+  "description": "Notes about Information Technology (IT).",
+  "courses": {
+    "🌐 Networking 🌐": [
+      {
+        "tag": "networking/general/index.md",
+        "name": "Networking",
+        "desc": "Learn about protocols, network interfaces, ports, IPV4/IPV6, and models such as OSI, or TCP/IP.",
+        "icon": "<i class=\"bi bi-hdd-network\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "networking/protocols/index.md",
+        "name": "Protocols & services",
+        "desc": "Learn more about Telnet, SSH, FTP, SCP/SFTP, HTTP, HTTPS, SMTP, POP3, IMAP, Samba, NFS, RDP...",
+        "icon": null,
+        "hidden": false
+      }
+    ],
+    "🛸 IT Project 🛸": [
+      {
         "tag": "project/hmi/index.md",
         "name": "HMI",
         "desc": "Learn about what you must think before making an interface. Tools to make mock-ups are also listed here.",
@@ -15,7 +32,9 @@
         "desc": "A project framework/methodology following the Agile mindset.",
         "icon": "<i class=\"bi bi-shield-lock\"></i>",
         "hidden": false
-      },
+      }
+    ],
+    "💻 IT Project - Version control 💻": [
       {
         "tag": "dev/git/index.md",
         "name": "Git commands",
@@ -37,5 +56,15 @@
         "icon": null,
         "hidden": false
       }
-  ]
+    ],
+    "🚀 x 🚀": [
+      {
+        "tag": "editor/jetbrains/plugins/index.md",
+        "name": "IntelliJ plugins",
+        "desc": "IntelliJ Platform Plugin SDK.",
+        "icon": "<i class=\"bi bi-plugin\"></i>",
+        "hidden": true
+      }
+    ]
+  }
 }
