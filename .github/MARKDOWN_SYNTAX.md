@@ -94,7 +94,7 @@ You can nest a list inside another list.
 
 ## 6. Table
 
-Since **version 1.3.0**, you can use a **table**. The syntax is the same as in the [Markdown course](../programming/utils/markdown/index.md#content-table). The HTML code is
+Since **version 1.3.0**, you can use a **table**. The syntax is the same as in the [Markdown course](../_programming/utils/markdown/index.md#content-table). The HTML code is
 
 ```html
 <table class="table table-bordered table-striped border-dark"><thead><tr>
@@ -240,7 +240,7 @@ We are allowing HTML, but note that using style is not recommended (as it may be
 
 * **version 1.3.0**: using **emojis** is a good practice
 
-You may [learn more about emojis here](../box/art/emojis.md). You should use them to make the content less monotone, and help the reader focusing on what he needs to remember.
+You may [learn more about emojis here](../_box/art/emojis.md). You should use them to make the content less monotone, and help the reader focusing on what he needs to remember.
 </div><div>
 
 * **add references**
@@ -249,7 +249,7 @@ References, are not only the links that you used, but those that we may check if
 
 * **typos**
 
-You can use Grammarly or LanguageTool to check if they got [hints for you](../archives/tools/toolbox/writting/index.md).
+You can use Grammarly or LanguageTool to check if they got [hints for you](../_archives/tools/toolbox/writting/index.md).
 
 * **version 1.3.0**: the **title and the description are generated**
 
