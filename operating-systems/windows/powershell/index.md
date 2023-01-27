@@ -13,16 +13,14 @@ This is a program abstracting .NET Common Language Runtime (CLR), allowing us to
 
 > See [Comparison of cmdlets with similar commands](https://en.wikipedia.org/wiki/PowerShell#Comparison_of_cmdlets_with_similar_commands).
 
-⚠️ Note that for the whole course, if you see `Get-Help` (`help`), it means that you can use either of them, both will work.
-
 <hr class="sl">
 
 ## Basic commands
 
 You can use `clear` to clear the terminal, and `gcm command` to find what cmdlet is your alias pointing to.
 
-<details class="details-e mt-4">
-<summary><code>Get-Help</code>: sort of linux man (<code>help</code>)</summary>
+<details class="details-n mt-4">
+<summary><code>Get-Help</code>: sort of linux man <small>(alias: <code>help</code>)</small></summary>
 
 <div class="row row-cols-md-2 mx-0"><div>
 
@@ -41,8 +39,8 @@ PS> Update-Help
 </div></div>
 </details>
 
-<details class="details-e">
-<summary><code>Get-ChildItem</code>: list directory content (<code>ls</code>)</summary>
+<details class="details-n">
+<summary><code>Get-ChildItem</code>: list directory content <small>(alias: <code>ls</code>)</small></summary>
 <div class="row row-cols-md-2 mx-0"><div>
 
 List files in the current directory
@@ -88,16 +86,16 @@ PS> Get-ChildItem -Directory
 </details>
 
 <div class="row row-cols-md-2"><div>
-<details class="details-e">
-<summary><code>Get-Content</code>: print the content of a file (<code>cat</code>)</summary>
+<details class="details-n">
+<summary><code>Get-Content</code>: print the content of a file <small>(alias: <code>cat</code>)</small></summary>
 
 ```powershell
 PS> Get-Content file.txt
 ```
 </details>
 </div><div>
-<details class="details-e">
-<summary><code>Set-Location</code>: move to another folder (<code>cd</code>)</summary>
+<details class="details-n">
+<summary><code>Set-Location</code>: move to another folder <small>(alias: <code>cd</code>)</small></summary>
 
 ```powershell
 PS> Set-Location "C:\\" # it works with one slash
@@ -114,8 +112,8 @@ PS> Set-Location ~ # home
 ## Text utilities
 
 <div class="row row-cols-md-2 mt-4"><div>
-<details class="details-e">
-<summary><code>Measure-Object</code>: count the letters/words/... (<code>wc</code>)</summary>
+<details class="details-n">
+<summary><code>Measure-Object</code>: count the letters/words/... <small>(alias: <code>wc</code>)</small></summary>
 
 ```powershell
 PS> Get-Content path_to_some_file  | Measure-Object
@@ -125,8 +123,8 @@ PS> Get-Content path_to_some_file  | Measure-Object -Minimum -Maximum
 ```
 </details>
 </div><div>
-<details class="details-e">
-<summary><code>Select-String</code>: find a motif in a tex (<code>grep</code>)</summary>
+<details class="details-n">
+<summary><code>Select-String</code>: find a motif in a tex <small>(alias: <code>grep</code>)</small></summary>
 
 ```powershell
 PS> Select-String -Pattern 'some_pattern' -Path path_to_some_file
@@ -140,7 +138,7 @@ PS> Select-String -Pattern 'some_pattern' -Path path_to_some_file
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-<details class="details-e">
+<details class="details-n">
 <summary><code>Get-FileHash</code>: return the hash of a file</summary>
 
 ```powershell
@@ -151,8 +149,8 @@ PS> Get-FileHash path_to_file -Algorithm MD5
 </details>
 </div><div>
 
-<details class="details-e">
-<summary><code>Invoke-WebRequest</code>: fetch web resource (<code>wget/iwr</code>)</summary>
+<details class="details-n">
+<summary><code>Invoke-WebRequest</code>: fetch web resource <small>(aliases: <code>wget/iwr</code>)</small></summary>
 
 ```powershell
 PS> Invoke-WebRequest URL -o output

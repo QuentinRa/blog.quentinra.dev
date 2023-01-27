@@ -1,0 +1,15 @@
+{
+	"title": "Software/Tools",
+	"description": "",
+	"courses": {
+		"Emulators": [
+			{
+				"tag": "emulators/virtual_box.md",
+				"name": "VirtualBox",
+				"desc": "",
+				"icon": "<i class=\"bi bi-pencil\"></i>",
+				"hidden": false
+			}
+		]
+	}
+}

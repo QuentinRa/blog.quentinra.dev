@@ -20,16 +20,6 @@ Notes about Virtual Machine, Emulators, along with links to download CTF Virtual
     * The bidirectional keyboard is already enabled
 </div><div>
 
-⭐ **Oracle VirtualBox** ⭐
-
-* **Link**: [Download VirtualBox](https://www.virtualbox.org/)
-* **Notes**
-    * 👎 There are always problems, like you need to go deep into the settings, in order to set a lot of values, and cross-finger while praying that they are the right ones for your machine. For instance, by default, every machine has the same IP, so you can't reach the other one...
-    * 💭 It's possible to find pre-installed VMs, but you can only import the hard drive, so you still have to manually configure them.
-    * ➡️ In the settings
-      * you can enable copy-paste from the source to the VM
-      * you can create a shared folder between Windows/your VM
-
 <details class="details-e">
 <summary>🪲 There are bugs</summary>
 
