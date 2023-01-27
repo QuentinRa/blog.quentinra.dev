@@ -1,4 +1,4 @@
-# 💰 Shop for content 💰
+# 💰 Find 2D/3D assets 💰
 
 <div class="row row-cols-md-2 mt-3"><div>
 
@@ -25,4 +25,9 @@
 * [Clip studio](https://assets.clip-studio.com/en-us/) (3D, 👻)
 * [quaternius](https://quaternius.com/index.html) (👻)
 * [polyhaven](https://polyhaven.com/) (CC0, 👻)
+
+
+##### Music
+
+* [fl-studio](https://www.image-line.com/fl-studio/) (👻)
 </div></div>

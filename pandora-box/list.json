@@ -1,61 +1,60 @@
 {
 	"title": "Pandora's Box",
 	"description": "While browsing the Internet or any many other cases, I find some tools/websites/... that I didn't search, but I may search latter, so I'm gathering everything here.",
-	"courses": [
-		{
-			"tag": "utilities.md",
-			"name": "General",
-			"desc": "",
-			"icon": "<i class=\"bi bi-pencil\"></i>",
-			"hidden": false
-		},
-		{
-			"tag": "art/2d-3d-assets.md",
-			"name": "2D/3D assets",
-			"desc": "Look for creators and assets.",
-			"icon": "<i class=\"bi bi-shop\"></i>",
-			"hidden": false
-		},
-		{
-			"tag": "art/images.md",
-			"name": "Images & Emojis",
-			"icon": "<i class=\"bi bi-images\"></i>",
-			"hidden": false
-		},
-		{
-			"tag": "art/canva.md",
-			"name": "canva.com",
-			"desc": "Notes about Canva.",
-			"icon": "<i class=\"bi bi-pencil\"></i>",
-			"hidden": false
-		},
-		{
-			"tag": "desktop/discord.md",
-			"name": "discord.com",
-			"desc": "Notes about Discord.",
-			"icon": "<i class=\"bi bi-discord\"></i>",
-			"hidden": false
-		},
-		{
-			"tag": "utils/security.md",
-			"name": "Security tips",
-			"desc": "Protect yourself and your privacy.",
-			"icon": "<i class=\"bi bi-shield-lock\"></i>",
-			"hidden": false
-		},
-		{
-			"tag": "random/index.md",
-			"name": "Random stuff",
-			"desc": "Even I don't know what's inside.",
-			"icon": "<i class=\"bi bi-tropical-storm\"></i>",
-			"hidden": false
-		},
-		{
-			"tag": "random/comics.md",
-			"name": "Comics",
-			"desc": "Mangas Webtoons Manhwa Manhua",
-			"icon": "<i class=\"bi bi-book\"></i>",
-			"hidden": false
-		}
-	]
+	"courses": {
+		"~e1": [
+			{
+				"tag": "unsorted/general.md",
+				"name": "General",
+				"desc": "",
+				"icon": "<i class=\"bi bi-pencil\"></i>",
+				"hidden": false
+			},
+			{
+				"tag": "unsorted/2d-3d-assets.md",
+				"name": "2D/3D assets",
+				"desc": "Look for creators and assets.",
+				"icon": "<i class=\"bi bi-shop\"></i>",
+				"hidden": false
+			},
+			{
+				"tag": "unsorted/images.md",
+				"name": "Images & Emojis",
+				"icon": "<i class=\"bi bi-images\"></i>",
+				"hidden": false
+			}
+		],
+		"websites": [
+			{
+				"tag": "websites/canva.md",
+				"name": "canva.com",
+				"desc": "Notes about Canva.",
+				"icon": "<i class=\"bi bi-pencil\"></i>",
+				"hidden": false
+			},
+			{
+				"tag": "websites/discord.md",
+				"name": "discord.com",
+				"desc": "Notes about Discord.",
+				"icon": "<i class=\"bi bi-discord\"></i>",
+				"hidden": false
+			}
+		],
+		"~e3": [
+			{
+				"tag": "unsorted/security.md",
+				"name": "Security tips",
+				"desc": "Protect yourself and your privacy.",
+				"icon": "<i class=\"bi bi-shield-lock\"></i>",
+				"hidden": false
+			},
+			{
+				"tag": "unsorted/random.md",
+				"name": "Random stuff",
+				"desc": "Even I don't know what's inside.",
+				"icon": "<i class=\"bi bi-tropical-storm\"></i>",
+				"hidden": false
+			}
+		]
+	}
 }

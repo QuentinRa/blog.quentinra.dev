@@ -1,4 +1,4 @@
-# 🕸️ Browsers 🕸️
+# 🕸️ Browsers and links 🕸️
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -86,6 +86,11 @@
 * [wetransfer.com](https://wetransfer.com/) (usually for big files)
 * [mega.io](https://mega.io/start)
 * [zippyshare](https://www.zippyshare.com/)
+
+##### Drive
+
+* [filerun](https://filerun.com/) (👻)
+* [nextcloud](https://nextcloud.com/) (👻)w
 </div><div>
 
 ##### Images
@@ -131,7 +136,7 @@
 
 <hr class="sep-both">
 
-## 📄 Notes on Files 📄
+## 📄 Notes for files 📄
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -159,7 +164,7 @@
 
 <hr class="sep-both">
 
-## 😍 Other notes 😍
+## 😍 Random notes 😍
 
 <div class="row row-cols-md-2 mt-4"><div>
 

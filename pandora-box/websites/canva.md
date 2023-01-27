@@ -2,9 +2,11 @@
 
 A bunch of hacky solutions just in case someone wonders how you could achieve these using JavaScript.
 
+<hr class="sep-both">
+
 <div class="row row-cols-md-2"><div>
 
-### Canva: select all images
+### Canva: select all of your images
 
 **Usage**
 
@@ -55,7 +57,7 @@ scrollToTheBottomOfElement(document.querySelector('main > div > div'))
 ```
 </div></div>
 
-<br>
+<hr class="sep-both">
 
 ### Canva: remove paid templates
 
@@ -75,7 +77,7 @@ This script will remove from the currently displayed entries:
 
 </div></div>
 
-<br>
+<hr class="sep-both">
 
 ### Canva: delete all images in the trash automatically
 

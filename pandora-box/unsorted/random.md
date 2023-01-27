@@ -21,6 +21,10 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 ##### Links
 
 * [peek.link](https://peek.link/index.html)
+
+##### Slides
+
+* [slidesgo](https://slidesgo.com/) (templates)
 </div><div>
 
 ##### QR Codes
@@ -39,18 +43,6 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 ##### Notes
 
 * [dontpad](https://dontpad.com/) (public, 👻)
-</div></div>
-
-<hr class="sep-both">
-
-## 🛖 Art 🛖
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-##### Music
-
-* [fl-studio](https://www.image-line.com/fl-studio/) (👻)
-</div><div>
 </div></div>
 
 <hr class="sep-both">
@@ -160,35 +152,81 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 <hr class="sep-both">
 
-##  🛹 Templates 🛹
+## 📖 Comics 📖
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-* [slidesgo](https://slidesgo.com/) (slides)
+##### What's the sauce?
+
+* Ask on Reddit
+* Try [saucenao.com](https://saucenao.com)
+
+<br>
+
+##### Look for animes/...
+
+* [anime-planet](https://www.anime-planet.com/)
+* [novelupdates](https://www.novelupdates.com/)
+
+<br>
+
+##### Manga/Anime/... Lists
+
+* [myanimelist](https://myanimelist.net/) (anime/manga tracker)
+* [anilist](https://anilist.co/) (👻)
+* [kenmei](https://www.kenmei.co/) (👻, manga tracker)
+
+<br>
+
+##### Raws
+
+* 무인이곽 (Martial Artist Lee Gwak, [see](https://www104.zippyshare.com/v/NqJr4lB3/file.html))
+* 완결소설 (Reaper)
+* https://newtoki168.com/ (Manhwas)
+* https://booktoki168.com/ (Novels)
+
 </div><div>
-</div></div>
 
-<hr class="sep-both">
+##### Random
 
-##  🖥️ Hosting 🖥️
+* [anime-cli](https://github.com/pystardust/ani-cli) (👻)
+* [cubari.moe](https://cubari.moe/) (manga reader)
 
-<div class="row row-cols-md-2 mt-4"><div>
+<br>
 
-##### Drive
+##### Websites
 
-* [filerun](https://filerun.com/) (👻)
-* [nextcloud](https://nextcloud.com/) (👻)w
+* [mangadex.org](https://mangadex.org/)
+* [mangakatana.com](http://mangakatana.com/)
 
-</div><div>
-</div></div>
+<details class="details-n">
+<summary>Random Aggregators</summary>
 
-<hr class="sep-both">
+* [fanfox.net](https://fanfox.net/)
+* [mangaguru.org](https://mangaguru.org/index.php)
+* [mangareader.to](https://mangareader.to/)
+* [webtoon.xyz](https://www.webtoon.xyz/)
+* [manhuascan.us](https://manhuascan.us/)
+</details>
 
-##  🧓 Random among Randoms 🧓
+<details class="details-n">
+<summary>WordPress Madara</summary>
 
-<div class="row row-cols-md-2 mt-4"><div>
+* [comickiba.com](https://comickiba.com/)
+* [woopread.com](https://woopread.com/)
+* [mangapuma.com](https://mangapuma.com/home-page)
+* [mangakomi.io](https://mangakomi.io/)
+* [manhwatop.com](https://manhwatop.com/)
+* [mangarolls.com](https://mangarolls.com/rolls/)
+</details>
 
-* Emails with +: `xxx+yyy@xxx.yyy`
+Novels
 
-</div><div>
+* [lightnovelreader](https://lightnovelreader.me/)
+* [lightnovelmeta](https://www.lightnovelmeta.com/)
+* [sky-mtl](https://sky-mtl.com/)
+
+Mobile
+
+* [tachiyomi](https://tachiyomi.org/) (20k ⭐)
 </div></div>
