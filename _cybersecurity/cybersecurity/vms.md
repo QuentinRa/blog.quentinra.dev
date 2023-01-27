@@ -19,14 +19,6 @@ Notes about Virtual Machine, Emulators, along with links to download CTF Virtual
     * You can create a shared folder between Windows/your VM
     * The bidirectional keyboard is already enabled
 </div><div>
-
-<details class="details-e">
-<summary>🪲 There are bugs</summary>
-
-* If you close your machine and select "saving the machine state" while the user account isn't locked, then you may not be able to use your mouse when restarting the saved instance. The top-left icon with a lock is useful to avoid this.
-
-* One day, the bidirectional keyboard just stopped working. Restarting the machine solved the problem.
-</details>
 </div></div>
 
 > There is also [qemu](https://www.qemu.org/), mostly for Linux users.
