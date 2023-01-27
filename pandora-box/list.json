@@ -3,80 +3,37 @@
 	"description": "While browsing the Internet or any many other cases, I find some tools/websites/... that I didn't search, but I may search latter, so I'm gathering everything here.",
 	"courses": [
 		{
-			"tag": "art/images.md",
-			"name": "Images",
-			"desc": "Remove backgrounds, remove something from an image, create a GIF...",
-			"icon": "<i class=\"bi bi-images\"></i>",
-			"hidden": false
-		},
-		{
-			"tag": "art/emojis.md",
-			"name": "Emojis",
-			"desc": "Notes about emojis. Nothing much.",
-			"icon": "<i class=\"bi bi-emoji-sunglasses\"></i>",
-			"hidden": false
-		},
-		{
-			"tag": "art/canva.md",
-			"name": "Canva",
-			"desc": "Notes about Canva.",
+			"tag": "utilities.md",
+			"name": "General",
+			"desc": "",
 			"icon": "<i class=\"bi bi-pencil\"></i>",
 			"hidden": false
 		},
 		{
-			"tag": "art/shop.md",
-			"name": "Shop",
+			"tag": "art/2d-3d-assets.md",
+			"name": "2D/3D assets",
 			"desc": "Look for creators and assets.",
 			"icon": "<i class=\"bi bi-shop\"></i>",
 			"hidden": false
 		},
 		{
-			"tag": "desktop/recording.md",
-			"name": "Recording",
-			"desc": "Record your screen...",
-			"icon": "<i class=\"bi bi-camera-reels\"></i>",
+			"tag": "art/images.md",
+			"name": "Images & Emojis",
+			"icon": "<i class=\"bi bi-images\"></i>",
 			"hidden": false
 		},
 		{
-			"tag": "desktop/browsers.md",
-			"name": "Browsers",
-			"desc": "Notes on browsers/search engines. Shorten URLs. Saving webpages...",
-			"icon": "<i class=\"bi bi-browser-firefox\"></i>",
-			"hidden": false
-		},
-		{
-			"tag": "desktop/share.md",
-			"name": "Share stuff",
-			"desc": "Share files/... Watch movies together...",
-			"icon": "<i class=\"bi bi-share\"></i>",
-			"hidden": false
-		},
-		{
-			"tag": "desktop/other_notes.md",
-			"name": "Other notes",
-			"desc": "Scan something, take screenshots...",
-			"icon": "<i class=\"bi bi-box\"></i>",
+			"tag": "art/canva.md",
+			"name": "canva.com",
+			"desc": "Notes about Canva.",
+			"icon": "<i class=\"bi bi-pencil\"></i>",
 			"hidden": false
 		},
 		{
 			"tag": "desktop/discord.md",
-			"name": "Discord",
+			"name": "discord.com",
 			"desc": "Notes about Discord.",
 			"icon": "<i class=\"bi bi-discord\"></i>",
-			"hidden": false
-		},
-		{
-			"tag": "utils/documents.md",
-			"name": "Notes on Files",
-			"desc": "Convert documents, Sync folders...",
-			"icon": "<i class=\"bi bi-newspaper\"></i>",
-			"hidden": false
-		},
-		{
-			"tag": "utils/spellcheckers.md",
-			"name": "Spellcheckers",
-			"desc": "Nothing much.",
-			"icon": "<i class=\"bi bi-spellcheck\"></i>",
 			"hidden": false
 		},
 		{
@@ -91,13 +48,6 @@
 			"name": "Random stuff",
 			"desc": "Even I don't know what's inside.",
 			"icon": "<i class=\"bi bi-tropical-storm\"></i>",
-			"hidden": false
-		},
-		{
-			"tag": "random/formations.md",
-			"name": "Formations",
-			"desc": "Websites on which you can learn/...",
-			"icon": "<i class=\"bi bi-body-text\"></i>",
 			"hidden": false
 		},
 		{
