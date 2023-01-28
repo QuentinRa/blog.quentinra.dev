@@ -27,6 +27,10 @@ You may need to install Virtual Box Extension pack later
 
 <div class="row row-cols-md-2 mt-3"><div>
 
+#### CTRL+ALT+DEL
+
+In the menubar: <kbd>Input > Keyboard > Insert CTRL-ALT-DEL</kbd>.
+
 #### Take a snapshot
 
 Click on the menu icon next to your VM,  and select "Snapshot".

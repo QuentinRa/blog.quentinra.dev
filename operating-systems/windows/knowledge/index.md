@@ -184,7 +184,7 @@ Environment variables are
 
 <hr class="sep-both">
 
-### Windows services
+## Windows services
 
 You can use the commands next to each task to use/open them, and you can also enter the command inside "execute" (Win  ➕ R). Note that extensions that you may see are such as ".exe", or ".msc" optional (see `PATHEXT`).
 
@@ -215,7 +215,7 @@ You can use the commands next to each task to use/open them, and you can also en
 
 <hr class="sep-both">
 
-### Windows security
+## Windows security
 
 <div class="row row-cols-md-2 mt-4"><div>
 

@@ -2,8 +2,6 @@
 
 <div class="row row-cols-md-2"><div>
 
-Microsoft Active Directory (**AD**) is used by organizations to manage their computers, users, groups, and privileges of every entity... from one computer called **Domain Controller (DC)**.
-
 From the Domain Controller, we can open the **Active Directory Domain Service** (AD DS) from the search bar, to manage entities such as computers/users/... referred to within the application as **objects**.
 </div><div>
 
