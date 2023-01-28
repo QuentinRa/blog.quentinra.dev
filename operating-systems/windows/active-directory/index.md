@@ -38,7 +38,7 @@ You must have an image with **Windows Server** 2019/2022. As a student, you can 
 </details>
 
 <details class="details-n">
-<summary>Installation (graphical)</summary>
+<summary>Installation ADDS (graphical)</summary>
 
 * Start the **Server Manager**
 * Click on "Add roles and features"
@@ -55,6 +55,25 @@ You must have an image with **Windows Server** 2019/2022. As a student, you can 
 * Press "Next" 4 times
 * Press "Install"
 </details>
+
+<details class="details-n">
+<summary>Installation DHCP (graphical)</summary>
+
+* Start the **Server Manager**
+* Click on "Add roles and features"
+* Press Next twice
+* In Server Roles, select DHCP Server
+* Press Next twice, then Install
+* Click on tools > DHCP
+
+Configure your DHCP server
+
+* IPV4 > New Scope 
+    * Name: Lan1
+    * Select a range of addresses
+    * You can prevent person from taking some addresses
+    * Select the duration of the lock on the IP address <small>(ex: 1 day)</small>
+</details>
 </div><div>
 
 **Where to learn?**
@@ -64,13 +83,15 @@ You must have an image with **Windows Server** 2019/2022. As a student, you can 
 
 <hr class="sep-both">
 
-## ✨ Basics ✨
+## ✨ Terminology ✨
 
 <div class="row row-cols-md-2"><div>
 
 **Domain Controller** (DC): servers from which you can manage the organisation using ADDS. For instance, the initial computer where Windows Server is installed is a Domain Controller.
 
-**Domain**: this is a value such as `xxx.com` that should be unique by design. You don't need to buy/own the domain name. When users will connect to it, they will use `xxx/`
+**Domain**: for instance, `xxx.com`. You don't need to own it <small>(in a real-world install, you should)</small>. When users will connect to it, they will use `server/username`.
+
+➡️ `server` is usually `xxx` in `xxx.com`.
 </div><div>
 
 ...
@@ -87,9 +108,12 @@ Stuff that I found, but never read/used yet.
 * [old.md](_old.md)
 * Windows Admin Center
 * SConfig <small>(rely on PowerShell to manage ADDS)</small>
-</div><div>
-
 * [???](https://www.youtube.com/watch?v=hxgz7MR7MGQ)
 * Tools (in the top-right corner)
+</div><div>
 
+DHCP
+
+* Address leases: addresses given to a client
+* Reservations: Given a MAC address, assign it to one static IP
 </div></div>

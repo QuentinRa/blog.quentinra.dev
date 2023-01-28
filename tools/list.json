@@ -4,6 +4,13 @@
 	"courses": {
 		"Emulators": [
 			{
+				"tag": "emulators/images.md",
+				"name": "Images (ISO)",
+				"desc": "",
+				"icon": "<i class=\"bi bi-pencil\"></i>",
+				"hidden": false
+			},
+			{
 				"tag": "emulators/virtual_box.md",
 				"name": "VirtualBox",
 				"desc": "",

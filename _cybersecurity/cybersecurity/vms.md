@@ -25,33 +25,6 @@ Notes about Virtual Machine, Emulators, along with links to download CTF Virtual
 
 <hr class="sep-both">
 
-## Windows Virtual Machines 💻
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-**Microsoft Edge developer center**
-
-* [Link](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)
-* Windows 7/8/10
-* **Username**: IEUser / **Password**: "Passw0rd!".
-* Valid 90 days.
-
-**Microsoft developer center**
-
-* [Link](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/)
-* Windows 11
-</div><div>
-
-**Microsoft download center**
-
-* [Link](https://www.microsoft.com/en-us/download/details.aspx?id=31791) <small>(Professional)</small>
-* [Link](https://download.cnet.com/Windows-XP-Mode/3000-18513_4-77683344.html) <small>(Mode, it was removed from Microsoft website)</small>.
-* Windows XP
-
-</div></div>
-
-<hr class="sep-both">
-
 ## Linux Virtual Machines 👑
 
 <div class="row row-cols-md-2 mt-4"><div>
