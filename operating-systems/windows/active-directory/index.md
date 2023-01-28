@@ -35,6 +35,43 @@ You must have an image with **Windows Server** 2019/2022. As a student, you can 
 * Process as usual with the setup...
 * Power off the machine
 * Remove CD <small>(Settings>Storage>CD, the disk icon on the right)</small>
+
+Go to Tools > Network. Create or select a adapter.
+
+* DHCP server must be disabled
+* Note the gateway is (ex: `X.X.X.1`)
+
+On your VM with your VM
+
+* Click on Settings > Network
+* Adapter2
+* Enable it
+* Select "Host-only adapter"
+* Select your adapter
+</details>
+
+<details class="details-n">
+<summary>Configure your Server IP Address</summary>
+
+* Control Panel
+* Network and Internet
+* Network And Sharing Center
+* Select your network <small>(ex: Ethernet 2)</small>
+* Properties > IPV4 > Properties
+  * IP: X.X.X.2
+  * Mask: 255.255.255.0
+  * Default gateway: X.X.X.1
+  * DNS: X.X.X.2
+</details>
+
+<details class="details-n">
+<summary>Set your DC name</summary>
+
+* Click on "Local Server"
+* Click on your computer name (in blue)
+* Click on "Change"
+* Set the name your want
+* Restart
 </details>
 
 <details class="details-n">

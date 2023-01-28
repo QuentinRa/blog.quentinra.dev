@@ -77,3 +77,15 @@ By default, you can freely use your mouse between your host and your virtual mac
 
 ➡️ Try restarting the VM.
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* Network Adapters (see Active directory)
+</div><div>
+</div></div>
