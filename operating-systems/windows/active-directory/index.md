@@ -112,6 +112,10 @@ Stuff that I found, but never read/used yet.
 * Tools (in the top-right corner)
 </div><div>
 
+Init
+
+* Rename host? (click > Change > ...)
+
 DHCP
 
 * Address leases: addresses given to a client
