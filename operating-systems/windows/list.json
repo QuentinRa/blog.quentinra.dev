@@ -29,13 +29,6 @@
 			"desc": "Knowledge related to using Linux commands/... on Windows.",
 			"icon": null,
 			"hidden": false
-		},
-		{
-			"tag": "windows/linux/index.md",
-			"name": "Linux on Windows",
-			"desc": "Knowledge related to using Linux commands/... on Windows.",
-			"icon": null,
-			"hidden": false
 		}
 	]
 }

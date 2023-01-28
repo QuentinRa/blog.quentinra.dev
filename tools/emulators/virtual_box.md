@@ -5,6 +5,12 @@
 VirtualBox is a popular free virtualization software.
 
 * [Download VirtualBox](https://www.virtualbox.org/)
+
+You may need to install Virtual Box Extension pack later
+
+* <kbd>Help > About Virtual Box</kbd> to find your version
+* [Download Virtual Box Extension pack](https://download.virtualbox.org/virtualbox/) <small>(version/xxx.vbox-extpack)</small>
+* File > Tools > Extension Pack Manager > Install
 </div><div>
 
 * ✨ You can create shared folders between host and VM
@@ -34,6 +40,20 @@ Click on the menu icon next to your VM,  and select "Snapshot".
 
 ➡️ If the machine is started, you can also use the menu <kbd>Machine > Take Snapshot...</kbd> for the menubar.
 </div><div>
+
+#### Shared keyboard/folder
+
+Right-click on a machine, and open Settings. 
+
+* In General > Advanced, you can enable bidirectional keyboard
+* In Shared folders, you can create shared folders
+
+Additionally, for Windows VMs
+
+* Start the machine
+* Select <kbd>Device > Insert Guest Additions CD...</kbd>
+* Install the software on the CD
+* Restart
 </div></div>
 
 <hr class="sep-both">

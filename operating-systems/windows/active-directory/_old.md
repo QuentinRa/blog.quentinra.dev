@@ -72,3 +72,22 @@ This is the authentication system in Windows domains, replacing NetNTLM. Users w
 ## Namespace
 
 It's possible to fragment the Windows domain into sections. We refer to the whole Windows domains as a Tree. It's possible to use multiple Windows domain, in which case the whole is called a Forest. We can establish Trust Relationships between them, allowing them to interact with each other.
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+Domain controller (DC): servers that controls AD... Users+Computers accounts. Schema that define what is a user... Can be extended.
+
+Add users and computers inside groups. Set permissions to the group.
+
+Organization units (OU):
+
+* Create and group persons
+* Give permissions to one person to do whatever they want with one OU
+</div><div>
+
+Domains: DC + Users/Computer accounts. Can create a sub-domain for another place with different policies/... Subdomain, they inherit the schema. two-way implicit transitive (trust other subdomains) trust. **Tree**. one way explicit trust (from B to A). Then B is able to use users from A, and give them permissions to access their tree.
+</div></div>
