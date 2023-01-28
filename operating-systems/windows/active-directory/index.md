@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-Active Directory Domain Services (ADDS) are tools to help sysadmin to manage organisation/schools/...
+Active Directory Domain Services (ADDS) is a tool to help sysadmin to manage organisation/schools/...
 
 * 🖥️ Manage Computers
 * 🧑‍🍼️ Manage Users
@@ -36,6 +36,25 @@ You must have an image with **Windows Server** 2019/2022. As a student, you can 
 * Power off the machine
 * Remove CD <small>(Settings>Storage>CD, the disk icon on the right)</small>
 </details>
+
+<details class="details-n">
+<summary>Installation (graphical)</summary>
+
+* Start the **Server Manager**
+* Click on "Add roles and features"
+* Press Next twice
+* In Server Roles, select ADDS
+* Press Next twice, then Install
+* Click on the notification icon with a warning (⚠️)
+* Click on "Promote this server to a domain controller"
+
+**Add a forest**
+
+* Give a root domain name (ex: `XXX.com`)
+* Add a "restore password"
+* Press "Next" 4 times
+* Press "Install"
+</details>
 </div><div>
 
 **Where to learn?**
@@ -49,7 +68,9 @@ You must have an image with **Windows Server** 2019/2022. As a student, you can 
 
 <div class="row row-cols-md-2"><div>
 
-**Domain Controller** (DC): this a computer, or a group of computers, from which you can configure the ADDS.
+**Domain Controller** (DC): servers from which you can manage the organisation using ADDS. For instance, the initial computer where Windows Server is installed is a Domain Controller.
+
+**Domain**: this is a value such as `xxx.com` that should be unique by design. You don't need to buy/own the domain name. When users will connect to it, they will use `xxx/`
 </div><div>
 
 ...
@@ -65,8 +86,10 @@ Stuff that I found, but never read/used yet.
 
 * [old.md](_old.md)
 * Windows Admin Center
+* SConfig <small>(rely on PowerShell to manage ADDS)</small>
 </div><div>
 
 * [???](https://www.youtube.com/watch?v=hxgz7MR7MGQ)
+* Tools (in the top-right corner)
 
 </div></div>

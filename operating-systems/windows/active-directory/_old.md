@@ -77,7 +77,7 @@ It's possible to fragment the Windows domain into sections. We refer to the whol
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-Domain controller (DC): servers that controls AD... Users+Computers accounts. Schema that define what is a user... Can be extended.
+Users+Computers accounts. Schema that define what is a user... Can be extended.
 
 Add users and computers inside groups. Set permissions to the group.
 
