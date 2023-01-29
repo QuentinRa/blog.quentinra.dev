@@ -83,15 +83,18 @@ If you don't use PowerShell, which is Linux friendly so most Unix commands are a
 
 * 🧹 `cls`: clear the screen, same as `clear`
 
-</div><div>
-
 * 🔎 `find`: search files
 
 * 🔎 `findstr`: search content in files, same as `grep`
 
+</div><div>
+
 * 🗃️ `move`: move files
 
 * 🎣 `curl`: fetch web resources
+
+* 🕸️ <code>ipconfig</code>: see the network configuration <ul><li><code>ipconfig /all</code>: list IP + MAC <small>(physical)</small> addresses</li><li><code>ipconfig /release</code>: release the IP address</li><li><code>ipconfig /renew</code>: request a new IP address</li></ul>
+
 </div></div>
 
 <hr class="sep-both">

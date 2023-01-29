@@ -111,6 +111,7 @@ Configure your DHCP server
     * You can prevent person from taking some addresses
     * Select a lock duration <small>(ex: 1 day)</small>
 * We can reserve an IP address for a specific MAC address
+* You can see attributed IPs in "Address leases"
 
 ➡️ Use `ipconfig /all` to get the IPv4/MAC address.
 </details>
@@ -150,10 +151,10 @@ Stuff that I found, but never read/used yet.
 * SConfig <small>(relies on PowerShell to manage ADDS)</small>
 * [???](https://www.youtube.com/watch?v=hxgz7MR7MGQ)
 * Tools (in the top-right corner)
+* Azure AD cloud Sync
 </div><div>
 
-DHCP
+* [rdr-it.com](https://rdr-it.com/active-directory/)
+* [microsoft](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-domain-services)
 
-* Address leases: addresses given to a client
-* Reservations: Given a MAC address, assign it to one static IP
 </div></div>

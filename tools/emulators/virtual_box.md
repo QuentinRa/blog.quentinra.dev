@@ -6,11 +6,7 @@ VirtualBox is a popular free virtualization software.
 
 * [Download VirtualBox](https://www.virtualbox.org/)
 
-You may need to install Virtual Box Extension pack later
-
-* <kbd>Help > About Virtual Box</kbd> to find your version
-* [Download Virtual Box Extension pack](https://download.virtualbox.org/virtualbox/) <small>(version/xxx.vbox-extpack)</small>
-* File > Tools > Extension Pack Manager > Install
+➡️ I strongly advise using version 7+, because, as far as I'm concerned, I have less problems in the newer version.
 </div><div>
 
 * ✨ You can create shared folders between host and VM
@@ -23,13 +19,42 @@ You may need to install Virtual Box Extension pack later
 
 <hr class="sep-both">
 
+## Additional setup
+
+<div class="row row-cols-md-2"><div>
+
+#### VB Guest Additions
+
+You may need to install Virtual Box Guest Additions later
+
+* Start the machine
+* Select <kbd>Device > Insert Guest Additions CD...</kbd>
+* Install the software on the CD
+* Restart
+</div><div>
+
+#### VB Extension pack
+
+You may need to install Virtual Box Extension pack later
+
+* <kbd>Help > About Virtual Box</kbd> to find your version
+* [Download Virtual Box Extension pack](https://download.virtualbox.org/virtualbox/) <small>(version/xxx.vbox-extpack)</small>
+* File > Tools > Extension Pack Manager > Install
+
+</div></div>
+
+<hr class="sep-both">
+
 ## Random features
+
+➡️ On Windows, the "host" key is CTRL (Right).
 
 <div class="row row-cols-md-2 mt-3"><div>
 
 #### CTRL+ALT+DEL
 
-In the menubar: <kbd>Input > Keyboard > Insert CTRL-ALT-DEL</kbd>.
+* In the menubar: <kbd>Input > Keyboard > Insert CTRL-ALT-DEL</kbd>.
+* Use the shortcut: <kbd>HOST + DEL</kbd>
 
 #### Take a snapshot
 
@@ -52,12 +77,16 @@ Right-click on a machine, and open Settings.
 * In General > Advanced, you can enable bidirectional keyboard
 * In Shared folders, you can create shared folders
 
-Additionally, for Windows VMs
+➡️ On Windows VMs, you need to install VB Guest Additions.
 
-* Start the machine
-* Select <kbd>Device > Insert Guest Additions CD...</kbd>
-* Install the software on the CD
-* Restart
+
+#### Resize the screen to fit yours
+
+* In the menubar: <kbd>View > Seamless mode</kbd>.
+* Use the shortcut: <kbd>HOST + L</kbd>
+
+
+➡️ On Windows VMs, you need to install VB Guest Additions.
 </div></div>
 
 <hr class="sep-both">
