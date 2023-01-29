@@ -117,6 +117,21 @@ Configure your DHCP server
 </details>
 </div><div>
 
+<details class="details-n">
+<summary>Add a shared folder</summary>
+
+Once the disk is connected.
+
+* Start the **Server Manager**
+* Tools > Computer Management
+* Disk Management
+* Right-click > Online
+* Right-click > Initialize Disk
+* Click > New simple volume
+  * Select NFTS
+  * You can leave the name empty
+</details>
+
 **Where to learn?**
 
 * [Introduction to ADDS Structure in Windows Server 2012](https://www.youtube.com/watch?v=lFwek_OuYZ8)
@@ -132,7 +147,7 @@ Configure your DHCP server
 
 **Domain**: for instance, `xxx.com`. You don't need to own it <small>(in a real-world install, you should)</small>. When users will connect to it, they will use `server/username`.
 
-➡️ `server` is usually `xxx` in `xxx.com`.
+➡️ The `server` should be `xxx.com` or `xxx` (alias).
 </div><div>
 
 ...

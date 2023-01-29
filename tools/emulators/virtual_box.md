@@ -79,12 +79,10 @@ Right-click on a machine, and open Settings.
 
 ➡️ On Windows VMs, you need to install VB Guest Additions.
 
-
 #### Resize the screen to fit yours
 
 * In the menubar: <kbd>View > Seamless mode</kbd>.
 * Use the shortcut: <kbd>HOST + L</kbd>
-
 
 ➡️ On Windows VMs, you need to install VB Guest Additions.
 </div></div>
