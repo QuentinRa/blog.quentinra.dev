@@ -109,7 +109,10 @@ Configure your DHCP server
     * Name: Lan1
     * Select a range of addresses
     * You can prevent person from taking some addresses
-    * Select the duration of the lock on the IP address <small>(ex: 1 day)</small>
+    * Select a lock duration <small>(ex: 1 day)</small>
+* We can reserve an IP address for a specific MAC address
+
+➡️ Use `ipconfig /all` to get the IPv4/MAC address.
 </details>
 </div><div>
 
@@ -144,14 +147,10 @@ Stuff that I found, but never read/used yet.
 
 * [old.md](_old.md)
 * Windows Admin Center
-* SConfig <small>(rely on PowerShell to manage ADDS)</small>
+* SConfig <small>(relies on PowerShell to manage ADDS)</small>
 * [???](https://www.youtube.com/watch?v=hxgz7MR7MGQ)
 * Tools (in the top-right corner)
 </div><div>
-
-Init
-
-* Rename host? (click > Change > ...)
 
 DHCP
 

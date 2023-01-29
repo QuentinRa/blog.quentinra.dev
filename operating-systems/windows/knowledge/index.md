@@ -12,6 +12,7 @@ Some dates about the latest versions
 * Windows 7 (2009-2020)
 * Windows 10 (2015-2025)
 * Windows 11 (2021-???)
+* Windows 12 (???-???)
 </div></div>
 
 <hr class="sep-both">
@@ -30,6 +31,7 @@ If you don't have Windows, as a developper, you can use an emulator with one of 
 
 * [Windows XP Professional](https://www.microsoft.com/en-us/download/details.aspx?id=31791) <small>(free, official)</small>
 * [Windows XP](https://download.cnet.com/Windows-XP-Mode/3000-18513_4-77683344.html) <small>(backup, was free, but removed recently)</small>.
+* [Windows 10/11/Server 2019/Server 2022 (Student)](https://azureforeducation.microsoft.com/devtools) <small>(only for students, free, official, ISO+Activation key)</small>.
 </div></div>
 
 <hr class="sep-both">
@@ -38,14 +40,14 @@ If you don't have Windows, as a developper, you can use an emulator with one of 
 
 <div class="row row-cols-md-2"><div>
 
-You can run commands on Windows inside a **CMD** (Command Prompt), or inside a **PowerShell** (see [PowerShell](../powershell/index.md)). The latter is an improved version of the former, and it is retro compatible too, meaning commands working in a CMD are, ⚠️for most ⚠️, working inside a PowerShell.
+You can run commands on Windows inside a **CMD** (Command Prompt), or inside a [**PowerShell**](../powershell/index.md). The latter is an improved version of the former, which is retro compatible: commands working in a CMD are, ⚠️for most ⚠️, working inside a PowerShell.
 
-The syntax used **on this website** (📌) is that commands starting with the prompt
+The syntax used **on this website** (📌):
 
-* `PS>` are working in both a CMD or a PowerShell
-* `CMD>` are only working in a CMD
+* `PS>`: commands only available in PowerShell
+* `CMD>` commands available in both CMD and PowerShell
 
-You can start a CMD with the commands `cmd`/`cmd.exe`, and a PowerShell with the commands `powershell`/`powershell.exe`. You can also use
+You can start a CMD with `cmd` or `cmd.exe`. You can start a PowerShell with `powershell` or `powershell.exe`. You can also use
 
 ```powershell
 CMD> powershell -c "PowerShell command here"
@@ -121,13 +123,13 @@ There are advanced permissions: Create Directory <small>(**AD**)</small>, Create
 
 Permissions are controlled by Discretionary Access Control List (DACLs), see the [icacls](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/icacls) command.
 
-```powershell
-PS> icacls xxx
-xxx NT AUTHORITY\SYSTEM:(I)(F)
-    BUILTIN\Administrators:(I)(F)
-    Local\username:(I)(F)
-PS> icacls xxx /grant Everyone:F
-PS> icacls xxx /grant username:F
+```ps
+CMD> icacls xxx
+xxx  NT AUTHORITY\SYSTEM:(I)(F)
+     BUILTIN\Administrators:(I)(F)
+     Local\username:(I)(F)
+CMD> icacls xxx /grant Everyone:F
+CMD> icacls xxx /grant username:F
 ```
 </div></div>
 
@@ -143,11 +145,11 @@ Modern versions of Windows are using the New Technology File System (**NTFS**). 
 
 Unlike Linux, for Windows, `a` and `A` are the same. And you can use `\ ` (the default separator), and `/` (Unix separator).
 
-```powershell
-PS> cd c:\Users\xxx
-PS> cd C:\Users\xxx
-PS> cd /Users/xxx
-PS> cd \Users\xxx
+```ps
+CMD> cd c:\Users\xxx
+CMD> cd C:\Users\xxx
+CMD> cd /Users/xxx
+CMD> cd \Users\xxx
 ```
 
 </div><div>
@@ -175,11 +177,12 @@ I'm using below Unix Paths, because it's easier to write. See environment variab
 The syntax to display/use an environment variable is different.
 
 ```powershell
-# only in Powershell
 PS> ls Env: # list all
 PS> echo $Env:systemroot # print one
 PS> $Env:xxx = 'yyy' # set
 ```
+
+These commands are only available in a CMD
 
 ```powershell
 CMD> set # list all
@@ -217,18 +220,18 @@ You can use the commands next to each task to use/open them, and you can also en
 **Control panel** (`control`)
 
 * This is the entry point to most settings
-* In the top-right corner, it's possible to switch to another view <small>(ex: small icons)</small>, in which you may discover menus that you never opened before, but may but useful one way or another.
+* In the top-right corner, it's possible to switch to another view <small>(ex: small icons)</small>, in which you may discover menus that you (most likely) never opened before, but may but useful one way or another.
 </div><div>
 
 * `lusrmgr.msc`: list of users/groups
 * `msconfig`: see services, manage system configurations
 * `lsass` is responsible for authentication within Windows.
 * `winver`: show Windows version+build, and license holder.
-* `control system`: open system info (Device/Windows specifications)
-* `msinfo32`: system info (raw, can search) + hardware and services
+* `control system`: open system info <small>(device/Windows specs)</small>
+* `msinfo32`: system info <small>(raw, can search)</small>, hardware and services
 * `UserAccountControlSettings`: change UAC settings
 * `compmgmt` is responsible for managing **shares**, **running tasks**, **listing events** ([doc](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types), monitoring performance (`perfmon`/`resmon`), or even manage device hardware/services.
-* `regedt32/regedit`: open Windows registry, a database used to store information needed to configure the system for users/applications/devices <small>(ports in use, applications...)</small>. See the [doc](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users).
+* `regedt32/regedit` ([doc](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)): open Windows registry, a database used to store information needed to configure the system for users/applications/devices <small>(ports in use, applications...)</small>.
 </div></div>
 
 <hr class="sep-both">
