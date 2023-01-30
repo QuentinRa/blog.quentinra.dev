@@ -45,18 +45,20 @@ You could also add a breakpoint if you want to only have this feature for a part
 <summary>Example of using breakpoints</summary>
 
 ```bash
-$ cat x.sh
-echo "Not debug"
+echo "Not debugged"
 set -x # start
-echo "Debug"
+echo "Debugged"
 set +x # stop
-echo "Not debug"
+echo "Not debugged"
+```
+
+```bash
 $ ./x.sh
-Not debug
-++ echo Debug
-Debug
+Not debugged
+++ echo Debugged
+Debugged
 ++ set +x
-Not debug
+Not debugged
 ```
 </details>
 </div></div>

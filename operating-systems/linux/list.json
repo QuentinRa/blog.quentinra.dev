@@ -4,43 +4,43 @@
 	"courses": [
 		{
 			"tag": "linux/knowledge/index.md",
-			"name": "Linux",
+			"name": "Knowledge",
 			"desc": "General knowledge shared between most Linux-based distributions.",
 			"icon": "<i class=\"bi bi-terminal-fill\"></i>",
 			"hidden": false
 		},
 		{
-			"tag": "linux/radix/index.md",
-			"name": "Linux (radix/bases)",
-			"desc": "Notes about binary, octal, and hexadecimal numbers.",
-			"icon": null,
-			"hidden": false
-		},
-		{
 			"tag": "linux/commands/index.md",
-			"name": "Linux (commands)",
+			"name": "Commands",
 			"desc": "Many useful Linux commands.",
 			"icon": null,
 			"hidden": false
 		},
 		{
 			"tag": "linux/scripts/index.md",
-			"name": "Linux (scripts)",
+			"name": "Scripts",
 			"desc": "Learn how to write Shell scripts.",
 			"icon": null,
 			"hidden": false
 		},
 		{
 			"tag": "linux/bash/index.md",
-			"name": "Linux (bash)",
+			"name": "Bash",
 			"desc": "Learn about Bash-only features.",
 			"icon": null,
 			"hidden": false
 		},
 		{
 			"tag": "linux/networking/linux.md",
-			"name": "Linux (networking)",
+			"name": "Networking",
 			"desc": "List of commands used on Linux-based distributions.",
+			"icon": null,
+			"hidden": false
+		},
+		{
+			"tag": "linux/radix/index.md",
+			"name": "Radix/bases",
+			"desc": "Notes about binary, octal, and hexadecimal numbers.",
 			"icon": null,
 			"hidden": false
 		}
