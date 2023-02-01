@@ -151,6 +151,8 @@ Here are two graphical interfaces
 
 * [Putty](https://putty.org/)
 * [mobaxterm](https://mobaxterm.mobatek.net/)
+* [xshell](https://www.xshell.com/en/xshell/)
+* [mRemoteNG](https://github.com/mRemoteNG/mRemoteNG) (support RDP too)
 
 </div><div>
 

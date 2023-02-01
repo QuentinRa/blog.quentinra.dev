@@ -102,6 +102,16 @@ Pentesting certification
 * OSCP
 * GPEN
 * GXPN
+
+Tools
+
+* [unicorn](https://github.com/trustedsec/unicorn)
+* [ghidra](https://github.com/NationalSecurityAgency/ghidra) and [awesome-ghidra](https://github.com/AllsafeCyberSecurity/awesome-ghidra)
+* [cobaltstrike](https://www.cobaltstrike.com/)
+
+Windows
+
+* [SASE](https://www.microsoft.com/en-us/security/business/security-101/what-is-sase)
 </div><div>
 
 OSINT
@@ -109,11 +119,8 @@ OSINT
 * [searchlight](https://lightorithm.gitbook.io/searchlight/)
 * [osint (topics)](https://github.com/topics/osint) (4.2)
 
-
 Notes HTB
 
 * [Introduction](https://help.hackthebox.com/en/articles/5185158-introduction-to-hack-the-box)
 * [Academy](https://academy.hackthebox.com/module/77/section/721)
-
-...
 </div></div>
