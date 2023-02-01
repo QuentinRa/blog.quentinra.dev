@@ -1,0 +1,24 @@
+{
+  "title": "Cybersecurity",
+  "description": "",
+  "courses": {
+    "Blue team": [
+      {
+        "tag": "blue-team/data.md",
+        "name": "Data governance",
+        "desc": "...",
+        "icon": "<i class=\"bi bi-shield-lock\"></i>",
+        "hidden": false
+      }
+    ],
+    "~v3": [
+      {
+        "tag": "todo.md",
+        "name": "To-do list",
+        "desc": "...",
+        "icon": "<i class=\"bi bi-shield-lock\"></i>",
+        "hidden": false
+      }
+    ]
+  }
+}
