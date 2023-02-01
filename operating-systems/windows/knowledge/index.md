@@ -23,15 +23,15 @@ If you don't have Windows, as a developper, you can use an emulator with one of 
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-* [Windows 10 Enterprise](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise) <small>(official evaluation version, free)</small>
-* [Windows 11 Enterprise](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise) <small>(official evaluation version, free)</small>
-* [Windows 11 Enterprise](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/) <small>(official evaluation version, free)</small>
-* [Windows 7/8/10](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/) <small>(90 days, IEUser/Passw0rd!)</small>
+* [Windows 10 Enterprise](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise) <small>(official, free, 180 days)</small>
+* [Windows 11 Enterprise](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise) <small>(official,  free, 180 days)</small>
+* [Windows 11 Enterprise (dev)](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/) <small>(official, free)</small>
+* [Windows 7/8/10](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/) <small>(official, free,  90 days, IEUser/Passw0rd!)</small>
 </div><div>
 
-* [Windows XP Professional](https://www.microsoft.com/en-us/download/details.aspx?id=31791) <small>(free, official)</small>
-* [Windows XP](https://download.cnet.com/Windows-XP-Mode/3000-18513_4-77683344.html) <small>(backup, was free, but removed recently)</small>.
-* [Windows 10/11/Server 2019/Server 2022 (Student)](https://azureforeducation.microsoft.com/devtools) <small>(only for students, free, official, ISO+Activation key)</small>.
+* [Windows XP Professional](https://www.microsoft.com/en-us/download/details.aspx?id=31791) <small>(official, free)</small>
+* [Windows XP Mode](https://download.cnet.com/Windows-XP-Mode/3000-18513_4-77683344.html) <small>(was available for free on the official website)</small>
+* [Windows 10/11/Server 2019/Server 2022 (student)](https://azureforeducation.microsoft.com/devtools) <small>(free for students, official, ISO+Activation key)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -46,6 +46,7 @@ The syntax used **on this website** (📌):
 
 * `PS>`: commands only available in PowerShell
 * `CMD>` commands available in both CMD and PowerShell
+* A note is added for other special cases
 
 You can start a CMD with `cmd` or `cmd.exe`. You can start a PowerShell with `powershell` or `powershell.exe`. You can also use
 
@@ -56,15 +57,17 @@ CMD> powershell -c "PowerShell command here"
 
 **Hint 1**
 
-⚠️⚠️ DANGER ⚠️⚠️. There are many aliases in PowerShell, such as `sc` for `Set-Content`. The problem is that some aliases are also CMD commands... The easy solution is to add `.exe`, such as `sc.exe`.
+⚠️⚠️ DANGER ⚠️⚠️. There are many aliases in PowerShell, such as `sc` for `Set-Content`. The problem is that some aliases are also CMD commands... An easy path: add `.exe`, such as `sc.exe`.
 
 **Hint 2**
 
-To run administrative commands in a CMD/PowerShell, you need to start it by right-clicking on it, and using "Run as administrator".
+To run administrative commands in a CMD/PowerShell, you need to start it using "Run as administrator".
 
 **Hint 3**
 
-You can open a CMD/PowerShell in a folder by using <kbd>SHIFT+Right-click</kbd> on the folder, then selecting "Open a PowerShell here". Note that since Windows 11, you have to click on "More options" first...
+You can open a CMD/PowerShell in a folder by using <kbd>SHIFT+Right-click</kbd> like you would to create a new file, then selecting "Open a PowerShell here".
+
+➡️ Since Windows 11, click on "More options" first.
 </div></div>
 
 <hr class="sep-both">
