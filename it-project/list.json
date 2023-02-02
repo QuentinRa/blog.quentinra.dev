@@ -1,8 +1,9 @@
 {
   "title": "IT Project",
   "description": "Notes about Information Technology (IT) projects.",
-  "courses": [
-    {
+  "courses": {
+    "~e1": [
+      {
         "tag": "hmi/index.md",
         "name": "HMI",
         "desc": "Learn about what you must think before making an interface. Tools to make mock-ups are also listed here.",
@@ -15,27 +16,28 @@
         "desc": "A project framework/methodology following the Agile mindset.",
         "icon": "<i class=\"bi bi-shield-lock\"></i>",
         "hidden": false
-      },
+      }
+    ],
+    "Git": [
       {
-        "tag": "git/index.md",
-        "name": "Git commands",
-        "desc": "The most famous version control tool.",
+        "tag": "git/commands/index.md",
+        "name": "Commands",
         "icon": "<i class=\"bi bi-github\"></i>",
         "hidden": false
       },
       {
-        "tag": "git-project/index.md",
-        "name": "Git files/...",
-        "desc": "Notes about making projects using Git.",
+        "tag": "git/files-and-features/index.md",
+        "name": "Git files and features",
         "icon": "<i class=\"bi bi-github\"></i>",
         "hidden": false
       },
       {
-        "tag": "ci/index.md",
-        "name": "CI (DevOps)",
+        "tag": "git/ci/index.md",
+        "name": "Continuous integration",
         "desc": "Continuous integration (CI).",
         "icon": null,
         "hidden": false
       }
-  ]
+    ]
+  }
 }
