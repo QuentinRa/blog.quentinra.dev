@@ -26,8 +26,14 @@
         "hidden": false
       },
       {
-        "tag": "git/files-and-features/index.md",
-        "name": "Git files and features",
+        "tag": "git/files/index.md",
+        "name": "Files and best practices",
+        "icon": "<i class=\"bi bi-github\"></i>",
+        "hidden": false
+      },
+      {
+        "tag": "git/server-side/index.md",
+        "name": "Server-side features",
         "icon": "<i class=\"bi bi-github\"></i>",
         "hidden": false
       },
@@ -35,6 +41,13 @@
         "tag": "git/ci/index.md",
         "name": "Continuous integration",
         "desc": "Continuous integration (CI).",
+        "icon": null,
+        "hidden": false
+      },
+      {
+        "tag": "git/open-source/index.md",
+        "name": "Open Source",
+        "desc": "",
         "icon": null,
         "hidden": false
       }

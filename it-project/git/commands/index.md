@@ -1,21 +1,27 @@
-# 🎹 Git commands 🎹
+# Git commands
 
 <div class="row row-cols-md-2"><div>
 
 There are many problems when working on projects, and most can be addressed with Version-control. **Git** is the most used one.
 
-* **code sharing** 📬: allow other developers to read/edit the code
+* **code sharing** 📬: allow other to read/edit the code
 * **a need for time travel** 🗃️: find back some code that was removed... Go back to a previous version...
-* **duplicates** 🎭: copies of the project to test something. What if you want to merge your changes, or share them with others?
+* **duplicates** 🎭: copies of the project to test something. What if you want to merge/share your changes?
 * **computer dies**/accidental removal/... 😵: [...]
 * **information** 🔎: who added/changed something? when?...
-
-<br>
+</div><div>
 
 **Where to learn?**
 
 * [OH MY GIT!](https://ohmygit.org/) <small>(👻, a game to learn Git)</small>
-</div><div>
+
+</div></div>
+
+<hr class="sep-both">
+
+## Actors
+
+<div class="row row-cols-md-2"><div>
 
 #### Git clients 👲
 
@@ -26,6 +32,7 @@ These are computers that will download project, work on them, upload their chang
 * [The Git extension in VSCode](https://code.visualstudio.com/docs/sourcecontrol/overview) (👻)
 * [GitKraken](https://www.gitkraken.com/) (👻)
 * JetBrains integrated Git client
+</div><div>
 
 #### Git servers 🖥
 
@@ -44,7 +51,7 @@ They will host the code, and make it available to those allowed, or to everyone 
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-Git allows us to create **commits** which are snapshots (`sauvegardes`) of your project. These commits are stored in **branches** 🪵, which are quite similar to local copies of the project.
+Git allows us to create **commits** which are snapshots (`sauvegardes`) of your project. These are stored in **branches** 🪵, which are quite similar to local copies of the project.
 
 ```bash
 # install
@@ -78,59 +85,13 @@ $ git pull
 # ... work a lot ...
 # check what changed
 $ git status
-# add files to the backup
+# add files to the snapshot
 $ git add .
 # snapshot named "I worked a lot" 
 $ git commit -m "I worked a lot"
 # send the snapshot to the server
 $ git push
 ```
-</div></div>
-
-<hr class="sep-both">
-
-## 🔑 SSH/GPG Keys 🔑
-
-<div class="row row-cols-md-2"><div>
-
-Setting up SSH keys is a must in most projects. Without SSH keys, you have to log in everytime you want to pull/push to the server.
-
-```bash
-$ ssh-keygen -t ed25519 -C "email"
-# press ENTER every time.
-# You should add a passphrase to protect your key. If someone want to
-# use your key, the will be prompted to enter the passphrase.
-$ cat ~/.ssh/id_rsa.pub
-$ Copy the key in Settings > SSH Keys on GitHub/...
-```
-
-> See [GitHub tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).<br>
-> Before, we were using `ssh-keygen -t rsa -b 4096 -C "email"`.
-</div><div>
-
-GPG keys are a bit different. They are used to sign your commits, and prove that you were the one that committed. It's possible for someone that has your email to usurp your identify after all.
-
-* [GitHub tutorial](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/generating-a-new-gpg-key)
-
-<details class="details-e">
-<summary>Increase the delay between passphrase prompts</summary>
-
-You will need to **write a passphrase almost every time you are committing**, unless you provided your passphrase in the last **10 minutes**. You can increase the time your passphrase is cached
-
-```bash
-# note the location of the file
-# this is usually ~/.gnupg/gpg-agent.conf
-$ gpg-agent --gpgconf-list | head -n1
-# create the file, or edit it
-# cached 8 hours
-$ echo "max-cache-ttl 28800" >> ~/.gnupg/gpg-agent.conf
-$ echo "default-cache-ttl 28800" >> ~/.gnupg/gpg-agent.conf
-# reload
-$ gpg-connect-agent reloadagent /bye
-```
-</details>
-
-On GitHub, verified commits are tagged with a tag "verified" next to them: ![Verified commit](_images/gpg.png)
 </div></div>
 
 <hr class="sep-both">
@@ -567,6 +528,7 @@ Learn
 * [adopteungit](https://github.com/lgiraudel/adopteungit)
 * [dubrayn](https://dubrayn.github.io/IPS-DEV/git.html#1)
 * [Git & Github Desktop](https://docs.google.com/presentation/d/1vtK6LoqwF4rQQZZy-ovuEgsYUwwMRXsqDVMOjAPSBt0/edit#slide=id.p) and [learn-git-milestones](https://github.com/omundy/learn-git-milestones)
+* 👉 An imaged tutorial: [GitHub for collaboration](https://mozillascience.github.io/working-open-workshop/github_for_collaboration/) <small>(quite good)</small>.
 </div><div>
 
 Cheatsheets
