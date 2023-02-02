@@ -1,0 +1,45 @@
+* Metadata <small>(we must know what info we have, and were it is stocked)</small>
+  * Give information about the data (formula, desc...)
+  * What is the information about?
+  * The relation between data and concepts
+  * Where is the data stocked?
+  * What are the most important data?
+  * Are data transformed/verified? (and how?)
+  * Where is each element originating from?
+  * How can we use the information (rules/...)?
+
+Life-cycle
+
+* Plan: identify a need for a kind of information
+* Conception: plan how to store the information
+* Acquisition: get the information*
+* Store: store the information => Destruction:
+* Utilization: use the information*
+* Improvements: try to improve the information (ex: request additional data...)
+Note: *data may be wrongly entered/used/interpreted/...
+Note: Identify and focus on critical data.
+Note: cycle can change according to the kind of data
+Note: take account of risks (risk <=> cost)
+
+See PIGR (2017)
+
+Data: actifs and must have a value
+
+It's not up to IT/... to manage the quality of the data.
+
+Do not use a tech unless there is a need to.
+
+Quality (see slides)
+=> Conform to the use we has for it "Fir for purpose"
+bad:
+=> incorrect
+=> do not find the data we want
+=> do not understand the data
+=> not secure
+=> too much data
+(see the slides)
+
++profiling (see column city with error such as fr FR France FraNce etc., extremums...)
++compare datasources
+
+improve quality (slide)
