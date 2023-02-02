@@ -19,7 +19,7 @@ A lot of commands, that can be used on Linux-based distributions, along with the
 
 <sup>1</sup> see [Linux - Scripts](../scripts/index.md)<br>
 <sup>2</sup> see [Linux - Main course](../knowledge/index.md) <br>
-<sup>3</sup> see [Linux - Radix](../radix/index.md)
+<sup>3</sup> see [Linux - Radix](../../../_archives/maths/radix/index.md)
 </div></div>
 </blockquote>
 

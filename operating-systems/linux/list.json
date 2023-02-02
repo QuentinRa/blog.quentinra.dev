@@ -36,13 +36,6 @@
 			"desc": "List of commands used on Linux-based distributions.",
 			"icon": null,
 			"hidden": false
-		},
-		{
-			"tag": "linux/radix/index.md",
-			"name": "Radix/bases",
-			"desc": "Notes about binary, octal, and hexadecimal numbers.",
-			"icon": null,
-			"hidden": false
 		}
 	]
 }
