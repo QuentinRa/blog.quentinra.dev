@@ -4,20 +4,17 @@
 
 Scripts are simply files with usually many Linux commands, usually written in Bash, as it is the default shell language in many Linux-based distributions. You can see scripts as programs, and you will execute them as you do with programs.
 
-A script is usually written in a file `name.sh`, regardless of the language used in the script, but this isn't mandatory. Here, is a simple script to show "Hello, World", in a file `example.sh`
+A script is usually written in a file `name.sh`, regardless of the language used in the script, but this isn't mandatory. 
+
+1. Create a script `example.sh` with the contents below
 
 ```bash
 #!/bin/bash
 
 echo "Hello, World!"
 ```
+
 </div><div>
-
-1. Create a script `example.sh` <small>(or, get a script somewhere, and got to "2.")</small>
-
-```bash
-$ touch example.sh
-```
 
 2. Allow the script to be executed
 
@@ -29,11 +26,13 @@ $ chmod +x example.sh
 
 ```bash
 $ ./example.sh
-$ bash ./example.sh # explicitly use bash
+Hello, World!
 ```
+
+➡️ You can also use `bash example.sh` to run a script.
 </div></div>
 
-> **It's important to remember that scripts are just a chain of commands**, and everything below can be used outside a script.
+➡️ Scripts are simply files with commands, so everything below can be used outside a script.
 
 <hr class="sl">
 

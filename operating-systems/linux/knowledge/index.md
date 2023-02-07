@@ -1,8 +1,19 @@
-# Operating System (Linux)
+# Knowledge about Linux
 
-This course is a gathering of general knowledge shared between most, if not all, Linux distributions (distros) such as Debian, Ubuntu, Fedora, or Arch Linux... Most of them are free, open-source, light, secure, and performant. As the source code is public, anyone can improve it, modify it, and know how the underlying system is doing its job, or a list it was supposed to be like that. The Operating System (OS) is the one connecting the hardware and the applications running on your computer.
+<div class="row row-cols-md-2"><div>
 
-> **Note**: Linux is actually the name of the Kernel, while GNU/Linux is the operating system. In this course, Linux distributions will be referred to as distros, and GNU/Linux, will be referred to as Linux, as Wikipedia does. Let's keep things simple, and tidy.
+<p class="text-center">
+
+<img alt="Linux Logo" src="/courses/operating-systems/linux/knowledge/_images/linux.png" width="128"/>
+</p>
+
+Linux is a family of Unix-like operating systems, often called distros, such as Debian, Ubuntu, Fedora, or Arch Linux... Most of them are free, open-source, light, secure, and performant.
+
+➡️ Each distro has its pro and cons according to what usage they were designed for <small>(ex: gaming, security, performance...)</small>.
+</div><div>
+
+...
+</div></div>
 
 <hr class="sl">
 
@@ -10,11 +21,13 @@ This course is a gathering of general knowledge shared between most, if not all,
 
 <div class="row row-cols-md-2"><div>
 
-Linux in its simplest form is a **terminal** <small>(console or `invite de commande` on Windows)</small>. Inside a terminal, we can run commands interpreted by a **shell**. There are multiple shell languages that we can use <small>(sh, csh, tcsh, ksh, bash)</small>, but **most Linux distributions are using bash** <small>(bourne again shell)</small>, an improved version of sh.
+Linux in its simplest form is a <span class="text-warning">terminal</span> <small>(console or `invite de commande` on Windows)</small>. 
 
 ![Linux: Terminal](_images/terminal.png)
 
-Most "commands" in books/... are written like `$ xxx`, but **`$` IS NOT A PART OF THE COMMAND**; this is a token that indicates **where** we can execute the command. It could be `#`, `sh >`...
+Inside a terminal, we can run commands interpreted by a <span class="text-warning">shell</span>.  There are multiple shell languages <small>(sh, csh, tcsh, ksh, bash)</small>, but most Linux distributions are using <span class="text-warning">bash</span> <small>(bourne again shell)</small>. Most shell languages are improved versions of sh.
+
+Most "commands" in books/... are written like `$ xxx`, but `$` IS NOT a part of the command; this is a token that indicates where we can execute the command. It could be `#`, `sh >`...
 
 ```shell
 $ command_working_everywhere
@@ -24,20 +37,20 @@ bash > command_at_least_working_in_bash
 ```
 </div><div>
 
-**Open a terminal**
+<b>Open a terminal</b>
 
 > * Look for "Terminal" in your Applications
 > * Or, use the shortcut `CTRL+SHIFT+T`
 
-**Increase/Decrease Zoom**
+<b>Increase/Decrease Zoom</b>
 
 > Use `CTRL +`, and `CTRL -` to increase/decrease zoom
 
-**Console mode** 🤕 - beginner killer
+<b>Console mode</b> 🤕 - beginner killer
 
 > You can use CTRL+ALT+F1 to swap to console mode <small>(from F1, up to F6)</small>, while you can use ALT+F7 to swap back 🤤.
 
-**Paste something**
+<b>Paste something</b>
 
 > Usually, the scroll button will paste any copied content.
 </div></div>
