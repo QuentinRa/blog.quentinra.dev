@@ -95,6 +95,7 @@ It's important to associate a value to data in order to find which data require 
 * The revenue generated using this data.
 * The cost to protect this data <small>(+in accordance to regulations)</small>
 * How much would the competitors pay for this data?
+* The date of acquisition? <small>(newer data are more valuable)</small>
 * ...
 
 #### Critical data
@@ -271,7 +272,6 @@ The security triad CIA:
 The opposite is DAD <small>(Disclosure, Alternation, and Destruction)</small>.
 
 For security practices to be useful, everyone, regardless of their task, must be aware of what it takes to protect data. Everyone should know who to contact if they detect a problem.
-</div><div>
 
 #### The five "As" in security
 
@@ -282,4 +282,25 @@ The 5 "As" is a framework to describe key aspects of security:
 3. Access: allow the user to retrieve/edit information
 4. Admissibility: everything that the user has access to
 5. Audit: monitor access to ensure their appropriate use
+</div><div>
+
+#### Environments
+
+The data can be found in 3 places. This applies to both physical and virtual data.
+
+* **Storage** (databases, cloud, mobiles, devices...): encryption, backup, access control, physical measures
+* **Transit**: encryption & secure protocols (TLS), VPN, MPLS
+* **Utilization**: encryption, access control, monitoring
+
+#### Data Access control
+
+Each organization much define some levels of access control with clear rules defining in which category every data is in. Ex:
+
+* **Public**: information that won't harm the company
+* **Sensitive**: information that should be closely monitored but won't harm much the company if disclosed <small>(ex: next free games)</small>
+* **Private**: information that will impact users or the company if disclosed <small>(ex: browser history)</small>
+* **Confidential**: information that will harm users or the company if disclosed <small>(ex: credit card data)</small>
+
+A company must define the controls applied to each level, and communicate to every one clearly which information is classified in which level of classification. It's usually based on the value, the whether the data is sensitive or critical.
+
 </div></div>
