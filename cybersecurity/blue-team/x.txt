@@ -1,13 +1,3 @@
-* Metadata <small>(we must know what info we have, and were it is stocked)</small>
-  * Give information about the data (formula, desc...)
-  * What is the information about?
-  * The relation between data and concepts
-  * Where is the data stocked?
-  * What are the most important data?
-  * Are data transformed/verified? (and how?)
-  * Where is each element originating from?
-  * How can we use the information (rules/...)?
-
 Life-cycle
 
 * Plan: identify a need for a kind of information
@@ -22,8 +12,6 @@ Note: cycle can change according to the kind of data
 Note: take account of risks (risk <=> cost)
 
 See PIGR (2017)
-
-Data: actifs and must have a value
 
 It's not up to IT/... to manage the quality of the data.
 

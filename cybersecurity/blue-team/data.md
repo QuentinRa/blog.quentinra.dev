@@ -97,3 +97,33 @@ It's important to associate a value to data in order to find which data require 
 * How much would the competitors pay for this data?
 * ...
 </div></div>
+
+<hr class="sep-both">
+
+## Metadata
+
+<div class="row row-cols-md-2"><div>
+
+At some point, you will have to define metadata. They describe
+
+* the data
+* the concept the data represent <small>(ex: a Person, an Address...)</small>.
+* the relation between data and concepts
+* how the data is used, stored, and retained
+* the transformations <small>(ex: derived attributes in SQL)</small>
+* the validations/quality checks <small>(ex: constraints in SQL)</small>
+* how much is the data important/needed for the company
+* who is the owner <small>(usually, it's the company)</small>
+* what's the origin of the data
+* who can access this data, and what they can do with it
+</div><div>
+
+➡️ It must be clear where are Metadata stored and what's inside.
+
+* A glossary of terms is used to describe every term <small>(ex: Client)</small>
+  * Add abbreviations, acronyms, synonyms, translations...
+  * Add any relation between terms
+  * Add management information <small>(When was this term added? By who? Who approved it? ...)</small>
+
+It's a good practice to use a taxonomy to categorize business terms in a structured way.
+</div></div>
