@@ -132,7 +132,6 @@ A look at cyberattacks categories ([source](https://www.malwarebytes.com/))
 
 <br>
 
-* The security triad **CIA**: Confidentiality <small>(only allowed users can read it)</small>, Integrity <small>(not tampered)</small>, Availability <small>(available when needed)</small>. The opposite is DAD <small>(Disclosure, Alternation, and Destruction)</small>.
 * **Principle of the least privileges**: based on the role, and the data being shared.
   * Privileged Identity Management (PIM): from organization role to system role
   * Privileged Access Management (PAM): manage the role that a privileged user has.

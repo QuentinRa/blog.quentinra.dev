@@ -209,6 +209,8 @@ To improve the data quality, we could profile data to find outliers/extremums, a
 
 <div class="row row-cols-md-2"><div>
 
+#### Principles/Policies/Guidelines/Standards
+
 The PPGS are defining the rules and standards for data management.
 
 * Principles: high-level guidance <small>(why do we need this data?)</small>
@@ -216,12 +218,22 @@ The PPGS are defining the rules and standards for data management.
 * Guidelines: recommendations and best practices <small>(how?)</small>
 * Standards: technical specifications <small>(quality...)</small>
 
-➡️ See Principles / Policies / Guidelines / Standards.
+#### Gartner's GAIP
 
 Gartner released a research report provides guidelines for improving data management called "Generally Accepted Information Principles for Improved Information Asset Management".
 
-➡️ See Gartner's GAIP.
+#### The five "As" in data management
+
+The 5 "As" is a framework to describe the five key aspects of effective data management:
+
+1. Availability
+2. Accuracy
+3. Accessibility
+4. Appropriateness
+5. Auditability
 </div><div>
+
+#### Levels of data management
 
 To start with data governance, you could follow these steps
 
@@ -240,4 +252,34 @@ Finally, you can formalize the data governance. There are five levels of data ma
 5. Optimized: data management is implicit in all business processes, and continuously improved
 
 The goal is to move from the lower levels to the higher levels, where data is managed effectively and driving business value.
+</div></div>
+
+<hr class="sep-both">
+
+## Security and access control
+
+<div class="row row-cols-md-2"><div>
+
+#### CIA and DAD
+
+The security triad CIA:
+
+* Confidentiality: only those allowed can access data
+* Integrity: data was not tampered with
+* Availability: data is available when needed <small>(backups...)</small>
+
+The opposite is DAD <small>(Disclosure, Alternation, and Destruction)</small>.
+
+For security practices to be useful, everyone, regardless of their task, must be aware of what it takes to protect data. Everyone should know who to contact if they detect a problem.
+</div><div>
+
+#### The five "As" in security
+
+The 5 "As" is a framework to describe key aspects of security:
+
+1. Authentication: verify a user/device before granting access
+2. Authorization: determine what the user can do
+3. Access: allow the user to retrieve/edit information
+4. Admissibility: everything that the user has access to
+5. Audit: monitor access to ensure their appropriate use
 </div></div>
