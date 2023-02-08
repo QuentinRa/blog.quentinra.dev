@@ -142,3 +142,23 @@ It's a good practice to use a taxonomy to categorize business terms in a structu
 * Entities <small>(things, activities, actors)</small> within the business domain, and that the business deals with
 * Properties <small>(identifiers, attributes, conditions)</small> owned by entities
 </div></div>
+
+<hr class="sep-both">
+
+## Data life-cycle
+
+➡️ The life-cycle of the data may change according to what kind of data is handled.
+
+<div class="row row-cols-md-2"><div>
+
+1. **Planning**: what information do we need? For what purpose?
+2. **Design and Implementation**: define how and where the data will be structured, stored, along the relationship between data
+3. **Creation/Acquisition**: collecting data, importing data...
+
+➡️ At some point, data will be destroyed after this step.
+</div><div>
+
+4. **Storage and Maintenance**: store the data in a secure maintainable and accessible place. Backups may be performed at this step too.
+5. **Usage**: to provide the service, in decision-making...
+6. **Enhancement**: updating, adding new information, refining the data... to make it more relevant to the business needs.
+</div></div>
