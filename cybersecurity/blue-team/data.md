@@ -32,7 +32,7 @@ There are risks when dealing with data
 * **Reputation loss**: data breaches usually cause distrust
 * **Invasion of privacy**: data not correctly handled that leak
 * **Industrial espionage**: someone else gain access to our data
-* **Lack of quality**: decrease of efficiency because of duplicates, incorrect or incomplete data, along with a cost to fix it
+* **Lack of quality**: decrease of efficiency because of duplicates, incorrect or incomplete data, along with a cost to fix it. A data is meaningful/qualitative if it fits its purpose, so it does not have to be perfect as long as you can use it for your needs.
 </div><div>
 
 But data is needed by the company, so we can't "lock it". This is one of the challenges of data governance.
@@ -166,18 +166,39 @@ It's a good practice to use a taxonomy to categorize business terms in a structu
 
 ## Data life-cycle
 
-➡️ The life-cycle of the data may change according to what kind of data is handled.
-
 <div class="row row-cols-md-2"><div>
+
+Note that the life-cycle of the data may change according to what kind of data is handled.
 
 1. **Planning**: what information do we need? For what purpose?
 2. **Design and Implementation**: define how and where the data will be structured, stored, along the relationship between data
 3. **Creation/Acquisition**: collecting data, importing data...
 
 ➡️ At some point, data will be destroyed after this step.
-</div><div>
 
 4. **Storage and Maintenance**: store the data in a secure maintainable and accessible place. Backups may be performed at this step too.
 5. **Usage**: to provide the service, in decision-making...
 6. **Enhancement**: updating, adding new information, refining the data... to make it more relevant to the business needs.
+
+#### Data quality
+
+During the creating, storage, and usage, we need to ensure that the data stored if of high quality.
+</div><div>
+
+1. **Accurate**: represent the truth (in real life)
+2. **Complete**: every entity and required properties are present
+3. **Consistent**: uniform between datasources
+4. **Referential integrity**: elements are correctly linked
+5. **Up-to-date**: promptly updated
+6. **Unique**: no duplicates
+7. **Valid**: within the expected range...
+8. **Relevant**: useful for the organization
+9. **Trustworthy**: the source is known
+10. **Available**: those who need it can access it
+11. **Protected**: only those allowed can access it
+12. **Understandable**: the definition is both shared and clear
+
+To improve the data quality, we could profile data to find outliers/extremums, ask the ones using the data... It's important to find the cause of low quality data. Note that when handling problems, you need to priorize data based on their critical value. Also, there may be existing quality rules based on industry standards, regulatory requirements, and business needs.
+
+➡️ See "Plan - Correct - Monitor - React".
 </div></div>
