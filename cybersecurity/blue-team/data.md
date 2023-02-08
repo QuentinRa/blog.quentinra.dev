@@ -202,3 +202,42 @@ To improve the data quality, we could profile data to find outliers/extremums, a
 
 ➡️ See "Plan - Correct - Monitor - React".
 </div></div>
+
+<hr class="sep-both">
+
+## Data management
+
+<div class="row row-cols-md-2"><div>
+
+The PPGS are defining the rules and standards for data management.
+
+* Principles: high-level guidance <small>(why do we need this data?)</small>
+* Policies: more specific rules <small>(what do we need?)</small>
+* Guidelines: recommendations and best practices <small>(how?)</small>
+* Standards: technical specifications <small>(quality...)</small>
+
+➡️ See Principles / Policies / Guidelines / Standards.
+
+Gartner released a research report provides guidelines for improving data management called "Generally Accepted Information Principles for Improved Information Asset Management".
+
+➡️ See Gartner's GAIP.
+</div><div>
+
+To start with data governance, you could follow these steps
+
+* Find someone who want to improve the data quality
+* Find what is the problem or element needing improvement
+* Find what are the causes
+* Redact a plan to fix the problem
+* Display the positive impact of fixing the problem
+
+Finally, you can formalize the data governance. There are five levels of data management:
+
+1. Ad hoc: individuals manage data in their own way
+2. Repeatable: departments establish basic policies/procedures
+3. Defined: the organization start formalizing data management
+4. Managed: data is actively monitored and inventoried
+5. Optimized: data management is implicit in all business processes, and continuously improved
+
+The goal is to move from the lower levels to the higher levels, where data is managed effectively and driving business value.
+</div></div>
