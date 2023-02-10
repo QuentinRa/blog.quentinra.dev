@@ -219,7 +219,7 @@ During the creating, storage, and usage, we need to ensure that the data created
 11. **Protected**: only those allowed can access it
 12. **Understandable**: the definition is both shared and clear
 
-To improve the data quality, we could profile data to find outliers/extremums, ask the ones using the data... It's important to find the cause of low quality data. Note that when handling problems, you need to priorize data based on their critical value. Also, there may be existing quality rules based on industry standards, regulatory requirements, and business needs.
+To improve the data quality, we could profile data to find outliers/extremums, ask the ones using the data... It's important to find the cause of low quality data. Note that when handling problems, you need to prioritize data based on their critical value. Also, there may be existing quality rules based on industry standards, regulatory requirements, and business needs.
 
 ➡️ See "Plan - Correct - Monitor - React".
 </div></div>
@@ -302,7 +302,6 @@ The 5 "As" is a framework to describe key aspects of security:
 3. Access: allow the user to retrieve/edit information
 4. Admissibility: everything that the user has access to
 5. Audit: monitor access to ensure their appropriate use
-</div><div>
 
 #### Environments
 
@@ -311,6 +310,7 @@ The data can be found in 3 places. This applies to both physical and virtual dat
 * **Storage** (databases, cloud, mobiles, devices...): encryption, backup, access control, physical measures
 * **Transit**: encryption & secure protocols (TLS), VPN, MPLS
 * **Utilization**: encryption, access control, monitoring
+</div><div>
 
 #### Data Access control
 
@@ -325,4 +325,45 @@ A company must define the controls applied to each level, and communicate to eve
 
 ➡️ Using inference, someone can use non-confidential data such as birthdate, postal code, and gender to find someone.
 
+#### Data breaches
+
+* The company must find, and patch the vulnerability
+* The company must inform the clients
+* The company will have to pay fines
+* The company will lose reputation
+
+To prevent data breaches, the company after identifying, classifying, and prioritizing data, should find why data is likely to be targeted along the risks, and define required protections.
+</div></div>
+
+<hr class="sep-both">
+
+## Security Program
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+A security program must be public, realist, simple, and accurate. You will have to be proactive <small>(formations...)</small> to ensure it's applied.
+
+Setting up a program show the intention of the company to comply with legal regulations, but if not followed, it will be used to punish the company.
+
+🖨️ Policies <small>(based on legal requirements and business principles)</small> 🖨️
+
+* **Corporate security policy**: the company approach/strategy to data security, in accordance to the business objectives
+* **Specific security policies**: based on the corporate security policy, more detailed <small>(ex: emails, incidents...)</small>
+
+➡️ Objectives, principles, scope, obligations and sanctions...
+</div><div>
+
+⚖️ Directives/Standards ⚖️
+
+* **Security element directives**: define how security controls are implemented and maintained based on policies
+
+➡️ Objectives, principles, scope, obligations and sanctions...
+
+📚 Guides 📚
+
+* **Security guides**: advices and best practices to apply directives/policies, based on directives and policies
+
+🚧 Procedures 🚧
+
+* **Security procedures**: instructions to perform security-related tasks based on guides and directives
 </div></div>
