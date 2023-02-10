@@ -2,10 +2,9 @@
 
 <div class="row row-cols-md-2"><div>
 
-From the Domain Controller, we can open the **Active Directory Domain Service** (AD DS) from the search bar, to manage entities such as computers/users/... referred to within the application as **objects**.
 </div><div>
 
-Objects are organized into **Organizational Units (OUs)** which are basically containers. You have some default ones such as `Builtin` <small>(default groups...)</small>; `Computers`; `Domain Controllers`; `Users` and some others.
+Default OUs such as `Builtin` <small>(default groups...)</small>; `Computers`; `Domain Controllers`; `Users` and some others.
 
 Computers are separated between Workstations <small>(the "usual" computer that the user will use to log in to the Windows domain: `DomainName\Username`)</small> and Servers.
 </div></div>

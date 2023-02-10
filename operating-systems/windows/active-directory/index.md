@@ -117,21 +117,6 @@ Configure your DHCP server
 </details>
 </div><div>
 
-<details class="details-n">
-<summary>Add a shared folder</summary>
-
-Once the disk is connected.
-
-* Start the **Server Manager**
-* Tools > Computer Management
-* Disk Management
-* Right-click > Online
-* Right-click > Initialize Disk
-* Click > New simple volume
-  * Select NFTS
-  * You can leave the name empty
-</details>
-
 **Where to learn?**
 
 * [Introduction to ADDS Structure in Windows Server 2012](https://www.youtube.com/watch?v=lFwek_OuYZ8)
@@ -148,6 +133,22 @@ Once the disk is connected.
 **Domain**: for instance, `xxx.com`. You don't need to own it <small>(in a real-world install, you should)</small>. When users will connect to it, they will use `server/username`.
 
 ➡️ The `server` should be `xxx.com` or `xxx` (alias).
+</div><div>
+
+**Objects**: Entities such as users, computers...
+
+**Security Groups**: they are used to apply policies to everyone that is a member of this group. A user can be in multiple Groups.
+
+**Organizational Units** (OUs): they are sort of folders used to group object in a similar structure than the organization. For instance, you could have one OU per site <small>(ex: Laval, Montreal)</small> and in each site, one OU per service <small>(ex: Direction, Marketing, IT...)</small>. 
+</div></div>
+
+<hr class="sep-both">
+
+## Main features
+
+<div class="row row-cols-md-2"><div>
+
+...
 </div><div>
 
 ...

@@ -183,7 +183,7 @@ Note that the life-cycle of the data may change according to what kind of data i
 
 #### Data quality
 
-During the creating, storage, and usage, we need to ensure that the data stored if of high quality.
+During the creating, storage, and usage, we need to ensure that the data created/stored/used if of high quality.
 </div><div>
 
 1. **Accurate**: represent the truth (in real life)
