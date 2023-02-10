@@ -172,19 +172,39 @@ It's a good practice to use a taxonomy to categorize business terms in a structu
 Note that the life-cycle of the data may change according to what kind of data is handled.
 
 1. **Planning**: what information do we need? For what purpose?
+
+➡️ Take into account laws, directives, requirement, risks...
+
 2. **Design and Implementation**: define how and where the data will be structured, stored, along the relationship between data
-3. **Creation/Acquisition**: collecting data, importing data...
+
+➡️ Define standards, policies, use cases, responsibilities, tests, audits... The modeling team must be made aware of security constraints.
+
+3. **Creation/Acquisition**: collecting, importing, validating data...
 
 ➡️ At some point, data will be destroyed after this step.
 
 4. **Storage and Maintenance**: store the data in a secure maintainable and accessible place. Backups may be performed at this step too.
+
+➡️ Define a retention policy, a business continuity plan...
+
 5. **Usage**: to provide the service, in decision-making...
 6. **Enhancement**: updating, adding new information, refining the data... to make it more relevant to the business needs.
+
+#### Data Retention Policy
+
+Each data should have a retention rule describing how long they are retained, where <small>(location, based on classification?, chronologically?)</small>, how <small>(format, media)</small>, and who will archive/manage it, ensure it's destroyed... The choice is mainly based on legal requirements.
+
+#### Data Destruction
+
+Ensuring a file is removed is hard because even after clearing the recycle bin, the file still exists but is marked as free space. We could defragment the disk or destroy it <small>(costly, we could have to do a process more advanced based on the classification...)</small>.
+
+This is the same in a database, in relational database, we should compress/defragment the file.
+
+</div><div>
 
 #### Data quality
 
 During the creating, storage, and usage, we need to ensure that the data created/stored/used if of high quality.
-</div><div>
 
 1. **Accurate**: represent the truth (in real life)
 2. **Complete**: every entity and required properties are present
@@ -302,5 +322,7 @@ Each organization much define some levels of access control with clear rules def
 * **Confidential**: information that will harm users or the company if disclosed <small>(ex: credit card data)</small>
 
 A company must define the controls applied to each level, and communicate to every one clearly which information is classified in which level of classification. It's usually based on the value, the whether the data is sensitive or critical.
+
+➡️ Using inference, someone can use non-confidential data such as birthdate, postal code, and gender to find someone.
 
 </div></div>
