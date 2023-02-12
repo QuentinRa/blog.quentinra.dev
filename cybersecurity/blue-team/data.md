@@ -341,9 +341,19 @@ To prevent data breaches, the company after identifying, classifying, and priori
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-A security program must be public, realist, simple, and accurate. You will have to be proactive <small>(formations...)</small> to ensure it's applied.
+A security program must be public, realist, simple, accurate, and adapted to the business of the company.
 
 Setting up a program show the intention of the company to comply with legal regulations, but if not followed, it will be used to punish the company.
+
+The program must be supported by the executives and taken in consideration in every decision.
+
+You need to be proactive <small>(formations...)</small> to ensure it's applied. It's also important to document the security program.
+
+➡️ According to the DAMA framework, we start by identifying the regulations, then we define policies, then standards/directives and guides, then we evaluate the risks and setup procedures.
+
+➡️ According to ISO 27001, we first define the scope of the program, the assets, their critical level, their value (impact/loss). Then, we identify the threats, and set up controls and monitoring.
+
+</div><div>
 
 🖨️ Policies <small>(based on legal requirements and business principles)</small> 🖨️
 
@@ -351,7 +361,6 @@ Setting up a program show the intention of the company to comply with legal regu
 * **Specific security policies**: based on the corporate security policy, more detailed <small>(ex: emails, incidents...)</small>
 
 ➡️ Objectives, principles, scope, obligations and sanctions...
-</div><div>
 
 ⚖️ Directives/Standards ⚖️
 
@@ -363,7 +372,7 @@ Setting up a program show the intention of the company to comply with legal regu
 
 * **Security guides**: advices and best practices to apply directives/policies, based on directives and policies
 
-🚧 Procedures 🚧
+🚧 Procedures/Controls 🚧
 
 * **Security procedures**: instructions to perform security-related tasks based on guides and directives
 </div></div>
