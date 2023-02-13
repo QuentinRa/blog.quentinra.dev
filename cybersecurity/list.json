@@ -9,6 +9,13 @@
         "desc": "...",
         "icon": "<i class=\"bi bi-shield-lock\"></i>",
         "hidden": false
+      },
+      {
+        "tag": "blue-team/risk.md",
+        "name": "Risk management",
+        "desc": "...",
+        "icon": "<i class=\"bi bi-shield-lock\"></i>",
+        "hidden": false
       }
     ],
     "~v3": [
