@@ -391,7 +391,7 @@ The data being sent is named differently according to the headers that were adde
 * **Level 5 to 7**: data
 * **Level 4**: segments (TCP), or datagrams (UDP)
 * **Level 3**: packets
-* **Level 2**: frames
+* **Level 2**: frames <small>(packets without an IP)</small>
 * **Level 1**: stream (bits)
 </div></div>
 
@@ -453,6 +453,13 @@ It's a **connection-based protocol**. It's used when there is a need for a **tru
 
 * `ssh`
 
+**TCP three-way handshake**
+
+Using TCP, we etablish a session between two machines A and B. A start with a SYN. B replies with SYN, ACK. A receives SYN, ACk, and replies with ACK.
+
+There are sequence numbers and ack numbers on every message. The first SYN has a random value $a$. The second SYN has a random value $b$, while the ACK has a value equals to $a+1$. The final ACK has the value $b+1$.
+</div><div>
+
 TCP messages all have a [flag](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
 
 * `1`: F=FIN
@@ -461,8 +468,6 @@ TCP messages all have a [flag](https://en.wikipedia.org/wiki/Transmission_Contro
 * `8`: P=Push
 * `16`: A=Ack
 * ...
-
-</div><div>
 
 **Header**
 
@@ -484,7 +489,7 @@ TCP messages all have a [flag](https://en.wikipedia.org/wiki/Transmission_Contro
 <summary>UDP (17): user datagram protocol</summary>
 <div class="row row-cols-md-2"><div>
 
-It's a **connection-less protocol**. It's used for fast messaging, by applications that don't mind if a packet is lost/incorrect. It's **not trustworthy** (`non fiable`)
+It's a **connection-less, stateless, protocol**. It's used for fast messaging, by applications that don't mind if a packet is lost/incorrect. It's **not trustworthy** (`non fiable`)
 
 * No warranty that the message will be received
 * No warranty that the message received is correct
@@ -783,11 +788,8 @@ Notes about protocols
 * ISO/OSI. 
   * Session (divide up the data sent into smaller chunks of data=packets) 
   * Network (OSPF=Open Shortest Path First) and RIP (Routing Information Protocol). Shortest number of devices, reliable (packet loss?), faster physical connection (fibre/...).
-* TCP: "three-way handshake": SYN (synchronise) SYN/ACK ACK (Acknowledgement). ACK number. [link](https://www.howtouselinux.com/post/understanding-tcp-sequence-number). [link](https://www.inetdaemon.com/tutorials/internet/tcp/3-way_handshake.shtml). Sequence Number: random number. ACK Number: sequence number + 1.
-* UDP: stateless
 * Port-forwarding
 * IPV6 EUI64
-* A packet without the IP is called frame.
 
 Notes about devices
 

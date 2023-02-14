@@ -79,5 +79,5 @@ It's possible to set up a **collector** that will collect the logs of a "zone", 
 * IBM
 * ...
 
-➡️ Search for "Gartner SIEM".
+➡️ Search for "Gartner SIEM". You should analyze the number of events per second and the cost to configure it when picking one.
 </div></div>
