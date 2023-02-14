@@ -2,7 +2,7 @@
 
 A network is a net of things connected to each other. We call a network of devices "internet", and what we refer to (THE) "Internet" are many small networks all joined together. Networking is someone complex, as it involves a lot of things: devices <small>(Routers, Hub/Switches...)</small>, Protocols <small>(TCP/UDP/ICMP/ARP/DNS...)</small>, Ports, Network interfaces, models <small>(OSI, TCP/IP)</small>, and addresses <small>(IPV4/IPV6/MAC...)</small>.
 
-<details class="details-e">
+<details class="details-n">
 <summary>Imunes - free open-source network emulator</summary>
 <div class="row row-cols-md-2"><div>
 
@@ -373,8 +373,8 @@ The Open Systems Interconnection (**OSI**) model is a standardized representatio
 
 When a computer sends a message, it will be sent starting a layer, and go down. When a computer receives a message, it will go up every layer in reverse order.
 
-* **Layer 7 - Application**: Programs are exchanging data <small>(HTTP, SSH, FTP, SMTP...)</small>
-* **Layer 6 - Presentation**: Standardize, add encryption/compression... <small>(SSL, TLS...)</small>
+* **Layer 7 - Application**: programs are exchanging data <small>(HTTP, SSH, SMTP...)</small>
+* **Layer 6 - Presentation**: Standardize, encrypt, compress <small>(SSL, TLS...)</small>
 * **Layer 5 - Session**: Try to establish a connection <small>(RPC, PAP...)</small>
 * **Layer 4 - Transport**: select a protocol <small>(TCP, UDP...)</small>
 * **Layer 3 - Network** (`Réseau`, Router): create a packet <small>(IP, NAT, ICMP...)</small>
@@ -441,7 +441,7 @@ To avoid data loss, each interface has a maximum size for a packet. The MTU of `
 
 </div></div>
 
-<details class="details-e mt-4">
+<details class="details-n mt-4">
 <summary>TCP (6): transmission control protocol</summary>
 <div class="row row-cols-md-2"><div>
 
@@ -480,7 +480,7 @@ TCP messages all have a [flag](https://en.wikipedia.org/wiki/Transmission_Contro
 </div></div>
 </details>
 
-<details class="details-e mt-4">
+<details class="details-n mt-4">
 <summary>UDP (17): user datagram protocol</summary>
 <div class="row row-cols-md-2"><div>
 
@@ -505,7 +505,7 @@ It's a **connection-less protocol**. It's used for fast messaging, by applicatio
 </div></div>
 </details>
 
-<details class="details-e mt-4">
+<details class="details-n mt-4">
 <summary>ICMP (1): internet control message protocol</summary>
 <div class="row row-cols-md-2"><div>
 
@@ -540,7 +540,7 @@ Each code is associated with a type. Here are some of them (code: type). See [Co
 </div></div>
 </details>
 
-<details class="details-e mt-4">
+<details class="details-n mt-4">
 <summary>IP: internet protocol</summary>
 <div class="row row-cols-md-2"><div>
 
