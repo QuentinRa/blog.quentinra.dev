@@ -38,9 +38,21 @@
 
 The Simple Network Management Protocol (SNMP) is an old protocol from 1990-2000 that is still quite used by companies to manage and monitor network devices <small>(routers, switch, firewalls...)</small>.
 
-The goal is to ensure that network devices, usually called SNMP "objects" or "agents" are operating efficiently and effectively in real-time. Every information is send to a SNMP manager.
+The goal is to ensure that network devices are operating efficiently and effectively in real-time.
 
 ➡️ SNMP uses the port 161 (TCP/UDP).
+
+One if the components is the Management Information Base (MIB) which is used to store information about devices. This is a tree-like structure with each node called an object carrying information like the number of packet that transited by this node, the CPU utilization of a server...
+
+A agent is a module that runs on a network device and store information about the device inside the MIB.
+
+The SNMP manager is a software that retrieves data from the MIB by interacting with the agent associated with the device. It runs on a network management system (NMS). 
+
+The SNMP manager can also send instructions to the agent to set or change the values of objects. The agent will update its associated device to match the instruction.
+
+Agents can send messages also known as "traps" without being request, for instance, when a problem is detected.
+
+</div><div>
 
 SNMPv2c is still used by some companies even if it's advised to use SNMPv3 as the latter is more secure. SNMPv2c
 
@@ -50,7 +62,8 @@ SNMPv2c is still used by some companies even if it's advised to use SNMPv3 as th
 * ✅ Community strings can be set up. They are password-like string, that need to be complex and changed regularly. Only those with the correct community string can fetch data from a network device. By default, anyone can fetch data it.
 
 Commands: `snmpget`, `snmpwalk`, `snmpset`, `snmptrap`...
-</div><div>
+
+➡️ A company can use both SNMPv2c and SNMPv3, it allows a softer migration, but it increases the complexity of the task.
 
 Migrating to SNMPv3 can be hard, but it may be required to comply with some regulations <small>(PCI DSS, HIPAA)</small>. Overall it's more robust, performant, reliable and secure.
 
@@ -62,8 +75,6 @@ Migrating to SNMPv3 can be hard, but it may be required to comply with some regu
 * ✅ SNMPv3 is more performant
 
 Commands: `snmpget`, `snmpwalk`, `snmpset`, `snmpinform`...
-
-➡️ A company can use both SNMPv2c and SNMPv3, it allows a softer migration, but it increases the complexity of the task.
 </div></div>
 
 <hr class="sep-both">
