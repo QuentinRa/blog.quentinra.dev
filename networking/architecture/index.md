@@ -52,6 +52,14 @@ The SNMP manager can also send instructions to the agent to set or change the va
 
 Agents can send messages also known as "traps" without being request, for instance, when a problem is detected.
 
+➡️ You can configure SNMP on a Windows Server with ADDS. You can also configure the server using commands too such as 
+
+* `show snmp`: display the current configuration
+* `snmp-server community [...]`: configure a community 
+* `no snmp-server community [...]`: delete a community 
+* `snmp-server location [...]`: set the location <small>(for humans)</small>
+* `snmp-server host [...]`: define the hosts <small>(for traps...)</small>
+
 </div><div>
 
 SNMPv2c is still used by some companies even if it's advised to use SNMPv3 as the latter is more secure. SNMPv2c
@@ -59,7 +67,7 @@ SNMPv2c is still used by some companies even if it's advised to use SNMPv3 as th
 * ❌ is not scalable. Companies will experience performance problems that may lead to longer delays, and decrease the employees' efficiency.
 * ❌ is not reliable: error messages can be misinterpreted as they may be incomplete or incorrect.
 * ❌ is vulnerable: spoofing, tampering, sniffing...
-* ✅ Community strings can be set up. They are password-like string, that need to be complex and changed regularly. Only those with the correct community string can fetch data from a network device. By default, anyone can fetch data it.
+* ✅ Community strings can be set up. They are password-like string, that need to be complex and changed regularly. Only those with the correct community string can fetch data from a network device. By default, anyone can fetch data it. A community can be read-only (RO) or Read-Write (RW).
 
 Commands: `snmpget`, `snmpwalk`, `snmpset`, `snmptrap`...
 
@@ -71,7 +79,7 @@ Migrating to SNMPv3 can be hard, but it may be required to comply with some regu
 * ❌ employees need to learn SNMPv3 <small>(cost/...)</small>
 * ✅ the provider <small>(ex: CISCO, IBM, SolarWinds...)</small> can provide some seamless support to upgrade
 * ✅ SNMPv3 has a more reliable error-management system
-* ✅ SNMPv3 has a more secure <small>(integrity checks, encryption, access management with USM/VACM, secure authentication...)</small>
+* ✅ SNMPv3 has a more secure <small>(integrity checks, encryption, access management with USM/VACM, authentication...)</small>
 * ✅ SNMPv3 is more performant
 
 Commands: `snmpget`, `snmpwalk`, `snmpset`, `snmpinform`...

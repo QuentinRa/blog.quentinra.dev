@@ -146,9 +146,18 @@ Configure your DHCP server
 
 ## Main features
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2 mt-3"><div>
 
-...
+<details class="details-n">
+<summary>Configure SNMP</summary>
+
+* Start the **Server Manager**
+* Click on "Add roles and features"
+* Press Next thrice
+* In Features, select SNMP Service
+
+Once installed, open "Services" and find the SNMP service. Right-click on edit, and edit the properties however you want.
+</details>
 </div><div>
 
 ...

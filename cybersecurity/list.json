@@ -16,6 +16,13 @@
         "desc": "...",
         "icon": "<i class=\"bi bi-shield-lock\"></i>",
         "hidden": false
+      },
+      {
+        "tag": "blue-team/logs.md",
+        "name": "Logging",
+        "desc": "...",
+        "icon": "<i class=\"bi bi-shield-lock\"></i>",
+        "hidden": false
       }
     ],
     "~v3": [
