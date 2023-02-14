@@ -799,4 +799,8 @@ Notes about ...
 
 * VLAN (Virtual Local Area Network)
 
+Other
+
+* point to point network
+
 </div></div>

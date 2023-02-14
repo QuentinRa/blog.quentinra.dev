@@ -44,12 +44,40 @@ The minimal information needed to provide useful details are
 
 <hr class="sep-both">
 
-## XXX
+## Logging strategy
 
 <div class="row row-cols-md-2"><div>
 
-centralized logs are good for users, but they must be secured to ensure that they are not tampered, and they must be closely monitored for the company to detect unusual activity as fast as possible.
+The logs can be collected
+
+* with an agent (an additional software)
+* without an agent (agentless)
+
+➡️ Try to use native "services" such as syslog (if applicable).<br>➡️️ Ensure that clocks are synchronized
+
+There are two methods to collect logs:
+
+* Pull: the server requests the logs <small>(SFTP...)</small>
+* Push: the entity sends its log without being requested <small>(syslog, snmp, using a script, SFTP...)</small>
+
+👉 ️ We can use UDP to transfer logs if we can accept a potential loss, otherwise, TCP should be used instead.
+
+It's possible to set up a **collector** that will collect the logs of a "zone", and will transfer them to the server. This has a cost, but allow a better use of the bandwidth. A collector can be Agent-based, Syslog-based, or Forwarding-based.
 </div><div>
 
-...
+**Centralized logs**: using centralized logs is good to have a global and unified view on all logs.
+
+* we must ensure that logs are not tampered
+* we must closely monitor them to detect unusual activity
+* we must ensure that the person accessing the logs (read/write) have the right to do it. For instance, if there are logs with critical data, their access should be restrained.
+* it's recommended to keep a raw version of the logs
+
+**SIEM**: Security Information and Event Management. A centralized logging solution that should detect attacks by correlating logs <small>(temporal, based on the source/destination...)</small> and alert/notify. A SIEM can also generate reports.
+
+* Splunk
+* Microsoft
+* IBM
+* ...
+
+➡️ Search for "Gartner SIEM".
 </div></div>
