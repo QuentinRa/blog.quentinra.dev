@@ -1,16 +1,6 @@
-# Network architecture
+# Architecture & Security
 
-<div class="row row-cols-md-2"><div>
-
-...
-</div><div>
-
-...
-</div></div>
-
-<hr class="sep-both">
-
-## Security risks
+Communications and network are exposed to many risks.
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -18,10 +8,10 @@
 
 **Spoofing**: an actor can usurp another machine identity to fake messages coming from the victim
 
-**MITM**: xxx
+**Tampering**: without integrity checks, an actor can tamper with messages without the sender/receiver being aware of it
 </div><div>
 
-**Tampering**: without integrity checks, an actor can tamper with messages without the sender/receiver being aware of it
+**MITM** (Man-in-the-middle): an actor intercepts communications and modify or manipulate the data being transmitted.
 
 **Firewalls**: it's important that the firewall has good access control rules and both the rules and the firewall are up-to-date.
 
@@ -75,12 +65,46 @@ Migrating to SNMPv3 can be hard, but it may be required to comply with some regu
 
 * ❌ some device may not be compatible with SNMPv3
 * ❌ employees need to learn SNMPv3 <small>(cost/...)</small>
-* ✅ the provider <small>(ex: CISCO, IBM, SolarWinds...)</small> can provide some seamless support to upgrade
+* ✅ the provider <small>(ex: CISCO, IBM, SolarWinds...)</small> can provide some seamless support to upgrade from SNMPv2c
 * ✅ SNMPv3 has a more reliable error-management system
 * ✅ SNMPv3 has a more secure <small>(integrity checks, encryption, access management with USM/VACM, authentication...)</small>
 * ✅ SNMPv3 is more performant
 
 Commands: `snmpget`, `snmpwalk`, `snmpset`, `snmpinform`...
+</div></div>
+
+<hr class="sep-both">
+
+## TCP/IP Protocol Stack Security
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+The set of protocols that make up the TCP/IP suite, a.k.a. as the TCP/IP protocol Stack, is exposed to some vulnerabilities.
+
+* **Weak authentication**
+
+👉 The source and the destination of packets is not guaranteed, an attacker can easily spoof them. 💥 Spoofing ➡️ Implement authentication and access control.
+
+* **Lack of Integrity Protection**
+
+👉 The message can be tampered. 💥 ICMP Redirect Option. Packet injection. ➡️ Use encryption and digital signatures.
+
+* **Confidentiality**
+
+👉 The message is sent in clear text. 💥 Sniffing ➡️ Use encryption or a VPN.
+</div><div>
+
+* **Availability**
+
+xxx
+
+* **Accounting**
+
+xxx
+
+* **Non-repudiation**
+
+xxx
 </div></div>
 
 <hr class="sep-both">
