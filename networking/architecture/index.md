@@ -96,15 +96,15 @@ The set of protocols that make up the TCP/IP suite, a.k.a. as the TCP/IP protoco
 
 * **Availability**
 
-xxx
+👉 Can be make unavailable. 💥 DoS, spoofing, poisoning. ➡️ Use firewalls, IDS/IPS...
 
-* **Accounting**
+* **Accounting** <small>(track network usage)</small>
 
-xxx
+👉 It's difficult to find the source because it can be spoofed. ➡️ Implement logging and auditing to track network traffic.
 
-* **Non-repudiation**
+* **Non-repudiation** <small>(user dening having performed some action)</small>
 
-xxx
+👉 IP addresses can be spoofed. 💥 Claim that someone else used the hacker IP for the attack.  ➡️ Use digital signatures or encryption to ensure that we know who sent the packet.
 </div></div>
 
 <hr class="sep-both">
