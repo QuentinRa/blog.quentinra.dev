@@ -19,13 +19,11 @@
 **Spoofing**: an actor can usurp another machine identity to fake messages coming from the victim
 
 **MITM**: xxx
-
-**Tampering**: without integrity checks, an actor can tamper with messages without the sender/receiver being aware of it
 </div><div>
 
-**Firewalls**: it's important that the firewall has good access control rules and both the rules and the firewall are up-to-date.
+**Tampering**: without integrity checks, an actor can tamper with messages without the sender/receiver being aware of it
 
-**Logs**: centralized logs are good for users, but they must be secured to ensure that they are not tampered, and they must be closely monitored for the company to detect unusual activity as fast as possible.
+**Firewalls**: it's important that the firewall has good access control rules and both the rules and the firewall are up-to-date.
 
 **Password**: we must ensure that administrators/managers do not use weak/compromised passwords.
 </div></div>

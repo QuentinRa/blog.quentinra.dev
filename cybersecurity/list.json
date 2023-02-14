@@ -19,7 +19,7 @@
       },
       {
         "tag": "blue-team/logs.md",
-        "name": "Logging",
+        "name": "Logging & Monitoring",
         "desc": "...",
         "icon": "<i class=\"bi bi-shield-lock\"></i>",
         "hidden": false
