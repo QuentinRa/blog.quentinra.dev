@@ -3,3 +3,8 @@
 
 [pfsense](https://www.pfsense.org/), an open-source firewall/...,
 that provide a web interface to configure it, along with other network settings. It's designed for medium-sized businesses.
+
+-------
+
+HTTP 302 Redirect: redirect users to malicious websites. See Open Redirect?
+Malicious iFrames: ...

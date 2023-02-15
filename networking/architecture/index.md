@@ -132,6 +132,52 @@ ICMP (Internet Control Message Protocol) is mainly used to communicate status <s
 
 <hr class="sep-both">
 
+## ARP, DHCP, and DNS security
+
+<div class="row row-cols-md-2"><div>
+
+ARP is used to map an IP address to a MAC address.
+
+* **ARP cache poisoning**
+
+👉 An attacker send its MAC address to usurp the identity of a legitimate IP address. ➡️ You can use static ARP tables...
+
+* **ARP spoofing**
+
+👉 Similar to ARP cache poisoning, but the attacker only eavesdrops the traffic. ➡️ Use encryption/... to prevent unauthorized access to the network.
+
+DHCP servers are used to assign an IP address to a host, and may keep track of IP addresses of DNS servers and domain names, and additional information such as default gateways/...
+
+* **Rogue DHCP server attacks**
+
+👉 An attacker set up a fake DHCP providing fake IP addresses to clients 💥 IP conflicts, MITM ➡️ See DHCP snooping and dynamic ARP inspection (DAI).
+
+* **DHCP snooping attacks**
+
+👉 An attacker intercept DHCP traffic to monitor it, and potentially prepare an attack. ➡️ See DHCPv6.
+</div><div>
+
+DNS servers are used to map a domain to an IP address.
+
+**Open DNS resolvers** <small>(DNS allowing everyone to poll data)</small>
+
+👉 An attacker can use them to amplify DDoS attacks. 💥 DDoS ➡️ Configure DNS to not respond to everyone, use rate-limiting.
+
+**Stealthy DNS attacks**
+
+👉 An attacker attempt to secretly alter a DNS records <small>(ex: redirect to a malicious site)</small> ➡️ See DNSSEC.
+
+**DNS cloaking attacks**
+
+👉 An attacker create malicious subdomains to a compromised domain ➡️ Monitor unauthorized DNS changes, DNS pinning...
+
+**DNS tunneling attacks**
+
+👉 Use the DNS protocol to send malicious payload in DNS query to bypass firewalls/... ➡️ DNS firewalls...
+</div></div>
+
+<hr class="sep-both">
+
 ## Simple Network Management Protocol (SNMP)
 
 <div class="row row-cols-md-2 mt-4"><div>
