@@ -15,6 +15,8 @@ Communications and network are exposed to many risks.
 **MITM** (Man-in-the-middle): an actor intercepts communications and modify or manipulate the data being transmitted.
 
 **Password**: we must ensure that administrators/managers do not use weak/compromised passwords.
+
+**DoS**: Denial of Service. Attackers send malicious packets to slow down a host; they generate a high level of traffic...
 </div><div>
 
 <p class="text-center">👉 Solutions or tools 👈</p>
@@ -26,6 +28,40 @@ Communications and network are exposed to many risks.
 ➡️ See the SPAN function on some Cisco switches. See also NetFlow to collect and analyze network traffic data.
 
 ➡️ Network or protocol analyzers: Wireshark, tcpdump...
+</div></div>
+
+<hr class="sep-both">
+
+## TCP/IP Protocol Stack Security
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+The set of protocols that make up the TCP/IP suite, a.k.a. as the TCP/IP protocol Stack, is exposed to some vulnerabilities.
+
+* **Weak authentication**
+
+👉 The source and the destination of packets is not guaranteed, an attacker can easily spoof them. 💥 Spoofing ➡️ Implement authentication and access control.
+
+* **Lack of Integrity Protection**
+
+👉 The message can be tampered. 💥 ICMP Redirect Option. Packet injection. ➡️ Use encryption and digital signatures.
+
+* **Confidentiality**
+
+👉 The message is sent in clear text. 💥 Sniffing ➡️ Use encryption or a VPN.
+</div><div>
+
+* **Availability**
+
+👉 Can be make unavailable. 💥 DoS, spoofing, poisoning. ➡️ Use firewalls, IDS/IPS...
+
+* **Accounting** <small>(track network usage)</small>
+
+👉 It's difficult to find the source because it can be spoofed. ➡️ Implement logging and auditing to track network traffic.
+
+* **Non-repudiation** <small>(user dening having performed some action)</small>
+
+👉 IP addresses can be spoofed. 💥 The hacker claim that someone else used his IP for the attack.  ➡️ Use digital signatures and encryption to ensure that we know who sent the packet.
 </div></div>
 
 <hr class="sep-both">
@@ -85,40 +121,6 @@ Commands: `snmpget`, `snmpwalk`, `snmpset`, `snmpinform`...
 
 <hr class="sep-both">
 
-## TCP/IP Protocol Stack Security
-
-<div class="row row-cols-md-2 mt-3"><div>
-
-The set of protocols that make up the TCP/IP suite, a.k.a. as the TCP/IP protocol Stack, is exposed to some vulnerabilities.
-
-* **Weak authentication**
-
-👉 The source and the destination of packets is not guaranteed, an attacker can easily spoof them. 💥 Spoofing ➡️ Implement authentication and access control.
-
-* **Lack of Integrity Protection**
-
-👉 The message can be tampered. 💥 ICMP Redirect Option. Packet injection. ➡️ Use encryption and digital signatures.
-
-* **Confidentiality**
-
-👉 The message is sent in clear text. 💥 Sniffing ➡️ Use encryption or a VPN.
-</div><div>
-
-* **Availability**
-
-👉 Can be make unavailable. 💥 DoS, spoofing, poisoning. ➡️ Use firewalls, IDS/IPS...
-
-* **Accounting** <small>(track network usage)</small>
-
-👉 It's difficult to find the source because it can be spoofed. ➡️ Implement logging and auditing to track network traffic.
-
-* **Non-repudiation** <small>(user dening having performed some action)</small>
-
-👉 IP addresses can be spoofed. 💥 The hacker claim that someone else used his IP for the attack.  ➡️ Use digital signatures and encryption to ensure that we know who sent the packet.
-</div></div>
-
-<hr class="sep-both">
-
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -136,5 +138,10 @@ Stuff that I found, but never read/used yet.
 
 * Streaming network telemetry (modern SNMP?)
 * Network Access Control (used with SNMP?)
+* DDOS. Amplification and reflexion DoS.
+* Address Spoofing, TCP, and UDP Attacks
+* ARP vulnerabilities x2 (`arp – a`, `arp –a –d`)
+* DNS and DHCP vulnerabilities
+* Emails/Social-engineering
 
 </div></div>
