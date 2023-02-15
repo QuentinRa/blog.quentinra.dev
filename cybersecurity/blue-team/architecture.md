@@ -29,6 +29,9 @@ Cybersecurity architects are responsible for identifying potential security risk
 * Disable default user account (if not required)
 * Disable unneeded programs
 * Limit access to registry
+* Only administrator should be allowed to disable/configure security-related tools.
+* Disallow/Disable bluetooth if not required
+* Use secure wireless networks (if applicable)
 </div></div>
 
 <hr class="sep-both">
@@ -38,8 +41,26 @@ Cybersecurity architects are responsible for identifying potential security risk
 <div class="row row-cols-md-2 mt-3"><div>
 
 * Disable insecure/unused protocols
-* Configure Windows systems TCP/IP parameters to optimize performance and security (see [Active Directory](/operating-systems/windows/active-directory/index.md#configure-tcpip-parameters))
+* Remote connections
+  * Add a timeout
+  * Disable access to internet if not required
 </div><div>
 
+* Configure Windows systems TCP/IP parameters to optimize performance and security (see [Active Directory](/operating-systems/windows/active-directory/index.md#configure-tcpip-parameters))
 * See attacks and mitigation in [Network Architecture](/networking/architecture/index.md)
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* PPTP
+* MS CHAP V2
+</div><div>
+
+
 </div></div>
