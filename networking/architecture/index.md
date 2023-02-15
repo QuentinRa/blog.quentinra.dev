@@ -54,9 +54,10 @@ Communications and network are exposed to many risks.
   * Disable access to internet if not required
   * Force the use of strong passwords
   * Use authentication using a certificate <small>(if applicable/...)</small>
-* Harden Access Points
+* Harden Access Points (AP)
   * Limit the range to the company
-  * Disable SSID diffusion <small>(if applicable)</small>
+  * Disable SSID broadcasting <small>(if applicable)</small>
+  * Use non-default settings
 </div><div>
 
 * Harden network interface

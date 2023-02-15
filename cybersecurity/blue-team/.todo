@@ -27,3 +27,8 @@ Bluetooth
 )) turn off bluetooth
 )) up-to-date
 ++ bluetooth scanning tool to identify vulnerable devices do not require pairing
+
+Wi-Fi
+=> eavesdropping (intercept wireless network traffic and analyzing it for sensitive information, such as usernames and passwords)
+=> deauthentication (send deauthentication packets to wireless clients, causing them to disconnect from the wireless network)
+=> jamming (flood the wireless network with interference, causing it to become unusable)

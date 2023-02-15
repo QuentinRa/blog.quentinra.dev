@@ -6,10 +6,12 @@ A cybersecurity architect design and oversee the implementation of security solu
 
 Cybersecurity architects are responsible for identifying potential security risks and recommending measures to strengthen the security architecture of the IT infrastructure.
 
-* **Defense in-depth**: use of multiple layers of security, along with various tactics, to slow down/stop an intruder
+* **Defense-in-depth**: use of multiple layers of security, along with various tactics, to slow down/stop an intruder
 
 * **Triple-A principles**: Authentication <small>(verify the identity)</small>, Authorization <small>(determine the permissions)</small>, and Accounting <small>(logs)</small>.
 </div><div>
+
+**Zero trust**: do not trust anyone, anything, verify everything.
 
 Please refer to 
 
@@ -63,6 +65,30 @@ Please refer to
 ➡️ For root/administrator accounts, the password should be updated regularly, and its usage should be justified.
 
 ➡️ Tell users when their are not allowed to access something, or when it is monitored, and when it can lead to prosecution.
+</div></div>
+
+<hr class="sep-both">
+
+## Access control
+
+<div class="row row-cols-md-2"><div>
+
+Access control is the process of managing access to resources in a computer system or network using policies and rules.
+
+➡️ ACLs, Access Control Lists, are a specific implementation of access control for a specific resource.
+
+There are multiple access control models, why may be combined in a defense-in-depth strategy.
+
+* **Discretionary Access Control (DAC)**: the owner of a resource define access rights for others. Ex: Unix File System.
+
+* **Mandatory Access Control (MAC)**: access based on labels assigned to subjects (ex: users) and objects (ex: files).
+</div><div>
+
+* **Role-Based Access Control (RBAC)**: each role is given permissions, and users are given roles based on what they do in the organization.
+
+* **Rule-Based Access Control (RBAC)**: rules that determine what someone can do based on who they are <small>(ex: IP...)</small>
+
+* **Time-Based Access Control (TAC)**: access is granted during an interval of time <small>(ex: working hours)</small>
 </div></div>
 
 <hr class="sep-both">
