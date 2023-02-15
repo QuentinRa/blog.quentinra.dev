@@ -44,11 +44,36 @@ Communications and network are exposed to many risks.
 
 <hr class="sep-both">
 
+## Random protocols/notes
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+* Disable insecure/unused services/protocols
+* Remote connections
+  * Add a timeout, a max number of connections...
+  * Disable access to internet if not required
+  * Force the use of strong passwords
+  * Use authentication using a certificate <small>(if applicable/...)</small>
+* Harden Access Points
+  * Limit the range to the company
+  * Disable SSID diffusion <small>(if applicable)</small>
+</div><div>
+
+* Harden network interface
+  * Set timeouts/keepalive parameters
+  * Use ACLs/network filtering to prevent the network interface from receiving unexpected traffic <small>(ex: as the target of a DoS)</small> or being used with unauthorized or malicious protocols
+* Change default parameters <small>(WPA, SSID, SNMP...)</small>
+</div></div>
+
+<hr class="sep-both">
+
 ## TCP/IP Protocol Stack Security
 
 <div class="row row-cols-md-2 mt-3"><div>
 
 The set of protocols that make up the TCP/IP suite, a.k.a. as the TCP/IP protocol Stack, is exposed to some vulnerabilities.
+
+➡️ See [Active Directory - TCP/IP](/operating-systems/windows/active-directory/index.md#configure-tcpip-parameters).
 
 * **Weak authentication**
 

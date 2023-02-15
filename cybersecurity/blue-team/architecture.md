@@ -69,17 +69,7 @@ Please refer to
 
 ## Networking
 
-<div class="row row-cols-md-2 mt-3"><div>
-
-* Disable insecure/unused protocols
-* Remote connections
-  * Add a timeout
-  * Disable access to internet if not required
-</div><div>
-
-* Configure Windows systems TCP/IP parameters to optimize performance and security (see [Active Directory - TCP/IP](/operating-systems/windows/active-directory/index.md#configure-tcpip-parameters))
-* See attacks and mitigation in [Network Architecture](/networking/architecture/index.md)
-</div></div>
+See attacks and mitigation in [Network Architecture](/networking/architecture/index.md).
 
 <hr class="sep-both">
 
