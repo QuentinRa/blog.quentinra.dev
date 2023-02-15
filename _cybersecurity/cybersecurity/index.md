@@ -74,7 +74,7 @@ Knowledgeable about
 * **Threat Intelligence**: dig information about actual and potential enemies, and prepare in case they attack you.
 * **Threat hunting**: if a machine is suspected to have been intruded, they start hunting to confirm their assumption.
 * **Threat modeling**: review, and improve the security measures (STRIDE, PASTA)
-* **Defence in Depth**: use of multiple layers of security, along with various tactics, to slow down any intruder
+* **Defense in-depth**
 </td></tr>
 
 <tr><td>Jobs</td>

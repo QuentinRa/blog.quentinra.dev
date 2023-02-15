@@ -20,7 +20,7 @@ Communications and network are exposed to many risks.
 
 💥 Create a malicious packet, or send mass requests.
 
-➡️ See DDoS, Reflection/amplification DoS.
+➡️ See DDoS, Reflection/amplification DoS, Smurf DDoS, or the ping of death.
 </div><div>
 
 <p class="text-center">👉 Solutions or tools 👈</p>
@@ -36,6 +36,8 @@ Communications and network are exposed to many risks.
 ➡️ See the SPAN function on some Cisco switches. See also NetFlow to collect and analyze network traffic data.
 
 ➡️ Network or protocol analyzers: Wireshark, tcpdump...
+
+**Network zoning and perimeter networks**: we divide the network into zones with different levels of security access. Access/traffic between zones are filtered by firewalls/...
 </div></div>
 
 <hr class="sep-both">

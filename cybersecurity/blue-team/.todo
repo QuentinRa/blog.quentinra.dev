@@ -10,6 +10,7 @@ HIPS/HIDS (Host)
 
 HTTP 302 Redirect: redirect users to malicious websites. See Open Redirect?
 Malicious iFrames: ...
+Buffer Overflow:
 
 -------
 

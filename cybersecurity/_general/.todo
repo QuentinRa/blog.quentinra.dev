@@ -15,5 +15,8 @@ https://www.greenbone.net/en/
 
 OWASP criteria to rank a vulnerability (804)
 
-French:
-Inférence exemple classification
+-------
+
+"Rootkits: A type of malicious software that allows an attacker to gain administrative access to a
+computer or network without being detected. Rootkits can hide their presence from antivirus software
+and other security tools, allowing an attacker to maintain access to a compromised system for extended periods."

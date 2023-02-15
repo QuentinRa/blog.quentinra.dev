@@ -5,6 +5,8 @@
 A cybersecurity architect design and oversee the implementation of security solutions within an organization's IT infrastructure.
 
 Cybersecurity architects are responsible for identifying potential security risks and recommending measures to strengthen the security architecture of the IT infrastructure.
+
+* **Defense in-depth**: use of multiple layers of security, along with various tactics, to slow down/stop an intruder
 </div><div>
 
 Please refer to 
