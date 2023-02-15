@@ -4,6 +4,8 @@
 [pfsense](https://www.pfsense.org/), an open-source firewall/...,
 that provide a web interface to configure it, along with other network settings. It's designed for medium-sized businesses.
 
+HIPS/HIDS (Host)
+
 -------
 
 HTTP 302 Redirect: redirect users to malicious websites. See Open Redirect?
@@ -11,8 +13,16 @@ Malicious iFrames: ...
 
 -------
 
-The "SANS critical security controls" is a framework developed by the SANS Institute to provide organizations with a prioritized and structured approach to cybersecurity. It is a set of 20 security controls that are considered to be essential for any effective cybersecurity program. The controls are organized into three categories: Basic, Foundational, and Organizational.
-
-The SANS critical security controls can be related to other topics such as cybersecurity frameworks, risk management, incident response, vulnerability management, and security awareness training.
-
--------
+Bluetooth
+=> eavesdropping
+=> unauthorized access
+=> malware and viruses to be transmitted
+=> known vulnerabilities:
+===> BlueBorne (attackers take control of devices without user interaction)
+===> Bluejacking to send unsolicited messages or spam to the device
+===> Bluesnarfing to access data stored on the device
+===> Bluetooth device spoofing attack
+)) avoid pairing with unknown/untrusted devices
+)) turn off bluetooth
+)) up-to-date
+++ bluetooth scanning tool to identify vulnerable devices do not require pairing

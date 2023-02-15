@@ -53,7 +53,7 @@ The logs can be collected
 * with an agent (an additional software)
 * without an agent (agentless)
 
-➡️ Try to use native "services" such as syslog (if applicable).<br>➡️️ Ensure that clocks are synchronized
+➡️ Try to use native "services" such as syslog <small>(if applicable)</small>.<br>➡️️ Ensure that clocks are synchronized <small>(see the NTP protocol)</small>.
 
 There are two methods to collect logs:
 
