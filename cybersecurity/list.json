@@ -4,6 +4,13 @@
   "courses": {
     "Blue team": [
       {
+        "tag": "blue-team/architecture.md",
+        "name": "Architecture",
+        "desc": "...",
+        "icon": "<i class=\"bi bi-shield-lock\"></i>",
+        "hidden": false
+      },
+      {
         "tag": "blue-team/data.md",
         "name": "Data governance",
         "desc": "...",

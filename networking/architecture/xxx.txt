@@ -1,0 +1,5 @@
+PCI 2.1.1.c: changer les mots
+de passe de tous les équipements sans fil.
+
+Baselines du CIS Security
+Baselines du NIST, NSA, etc.

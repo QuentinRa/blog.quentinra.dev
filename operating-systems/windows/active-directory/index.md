@@ -148,8 +148,10 @@ Configure your DHCP server
 
 <div class="row row-cols-md-2 mt-3"><div>
 
+##### Configure SNMP
+
 <details class="details-n">
-<summary>Configure SNMP</summary>
+<summary>Notes to configure SNMP</summary>
 
 * Start the **Server Manager**
 * Click on "Add roles and features"
@@ -160,7 +162,22 @@ Once installed, open "Services" and find the SNMP service. Right-click on edit, 
 </details>
 </div><div>
 
-...
+##### Configure TCP/IP parameters
+
+<details class="details-n">
+<summary>Notes to configure TCP/IP parameters</summary>
+
+You can either use the Windows Registry, or a group policy. Here are some parameters that you may want to set.
+
+* SynAttackProtect <small>(SYN flood attacks)</small>
+* EnableDeadGWDetect <small>(Detect dead gateways)</small>
+* EnablePMTUdiscovery <small>(Avoid fragmentation...)</small>
+* KeepAliveTime <small>(Timeout for inactive connections)</small>
+* TCPMaxPortsExhausted <small>(Prevent from exhausting ports)</small>
+* PerformRouterDiscovery <small>(Can simply the configuration but allow attackers to set up rogue routers/... to redirect traffic)</small>
+* NoNameReleaseOnDemand <small>(Release the NetBios name when no longer needed to prevent attacker from obtaining information)</small>
+* TcpMaxConnectResponseRetransmissions <small>(can help to prevent SYN flood attacks, but may exhaust system resources)</small>
+</details>
 </div></div>
 
 <hr class="sep-both">
