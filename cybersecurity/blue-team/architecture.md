@@ -9,9 +9,11 @@ Cybersecurity architects are responsible for identifying potential security risk
 * **Defense-in-depth**: use of multiple layers of security, along with various tactics, to slow down/stop an intruder
 
 * **Triple-A principles**: Authentication <small>(verify the identity)</small>, Authorization <small>(determine the permissions)</small>, and Accounting <small>(logs)</small>.
-</div><div>
 
 **Zero trust**: do not trust anyone, anything, verify everything.
+</div><div>
+
+**Principle of least privilege**: everyone, regardless of their role in the company <small>(CEO...)</small>, should have the least privilege that they require to do their job.
 
 Please refer to 
 
@@ -41,6 +43,8 @@ Please refer to
 
 ➡️ High-security environments usually use integrity checking tools such as Tripwire, Samhain, OSSEC, or AIDE. They monitor, detect, and analyze changes to system configurations.
 
+➡️ You must do your best to reduce the attack surface. This is mostly done by applying principle like the principle of least privilege, to reduce the risk of lateral movements...
+
 **External devices**
 
 * Disable booting using an external device
@@ -65,8 +69,9 @@ Please refer to
 ➡️ For root/administrator accounts, the password should be updated regularly, and its usage should be justified.
 
 ➡️ Tell users when their are not allowed to access something, or when it is monitored, and when it can lead to prosecution.
-</div></div>
 
+➡️ There must be a balance between security and operation needs. The security should not be too much of a burden.
+</div></div>
 <hr class="sep-both">
 
 ## Access control

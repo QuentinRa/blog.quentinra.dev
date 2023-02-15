@@ -6,6 +6,12 @@ that provide a web interface to configure it, along with other network settings.
 
 HIPS/HIDS (Host)
 
+WAF/DBDS
+
+-----
+
+Prévoir la continuité des activités (Plan de continuité, Recouvrement de désastres...)
+
 -------
 
 HTTP 302 Redirect: redirect users to malicious websites. See Open Redirect?
