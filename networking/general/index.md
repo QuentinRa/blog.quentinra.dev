@@ -767,13 +767,6 @@ Websites
 * [faidherbe](https://www.faidherbe.org/tutoriel/)
 * [Request-response](https://en.wikipedia.org/wiki/Request%E2%80%93response)
 
-Notes about firewalls
-
-* [snort](https://www.snort.org/)
-* [suricata](https://suricata.io/)
-* [pfsense](https://www.pfsense.org/)
-* Could be Stateless (check packet) or Stateful (check connection)
-
 Notes about Virtual Private Network (VPNs)
 
 * Create a secure tunnel allowing devices on different networks to communicate.
@@ -781,6 +774,13 @@ Notes about Virtual Private Network (VPNs)
 * PPTP use PPP, Point-to-Point Tunneling Protocol, allow leave network
 * IPSec Internet Protocol Security (IPsec) encrypts data using the existing Internet Protocol (IP) framework.
 
+Notes about ...
+
+* VLAN (Virtual Local Area Network)
+
+Other
+
+* point to point network
 </div><div>
 
 Notes about protocols
@@ -796,13 +796,4 @@ Notes about devices
 * Router: Layer3 (use IP)
 * Switch: Layer2 (use MAC)
 * Switch: Layer3 (use MAC/IP): can do routing
-
-Notes about ...
-
-* VLAN (Virtual Local Area Network)
-
-Other
-
-* point to point network
-
 </div></div>

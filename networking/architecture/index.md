@@ -23,6 +23,10 @@ Communications and network are exposed to many risks.
 
 **Firewalls**: firewall are used to block/allow some traffic based on rules. It's important that the access control rules are well crafted. Both the rules and the firewall must be up-to-date.
 
+➡️ A firewall can be stateless <small>(check every packet)</small>, or stateful <small>(check the session/connection)</small>.
+
+➡️ See IDS/IPS such as [pfsense](https://www.pfsense.org/), [snort](https://www.snort.org/) or [suricata](https://suricata.io/).
+
 **Traffic mirroring**: this feature is available on many network switches. It allows us to copy the incoming and ongoing traffic to a monitored device such as a network analyzer or an IDS.
 
 ➡️ See the SPAN function on some Cisco switches. See also NetFlow to collect and analyze network traffic data.
@@ -44,7 +48,7 @@ The set of protocols that make up the TCP/IP suite, a.k.a. as the TCP/IP protoco
 
 * **Lack of Integrity Protection**
 
-👉 The message can be tampered. 💥 ICMP Redirect Option. Packet injection. ➡️ Use encryption and digital signatures.
+👉 The message can be tampered. 💥 ICMP Redirect. Packet injection. ➡️ Use encryption and digital signatures.
 
 * **Confidentiality**
 
@@ -66,15 +70,47 @@ The set of protocols that make up the TCP/IP suite, a.k.a. as the TCP/IP protoco
 
 <hr class="sep-both">
 
+## ICMP security
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+ICMP (Internet Control Message Protocol) is mainly used to communicate status <small>(host up...)</small> or errors <small>(host unreachable...)</small>, but it can also be used in attacks.
+
+* **Echo request and reply ICMP**
+
+👉 The attacker send an echo request to check if the host is up. Even if the attacker may further attack even if there is no reply and assuming that the host is up, the reply help in confirming it. 💥 DoS with a flood of echo requests. ➡️ Limit ICMP requests to specific hosts/subnets, as disabling them may be problematic.
+
+* **ICMP unreachable**
+
+👉 Used in reconnaissance to gain information on the network <small>(ex: open ports/services...)</small>. ➡️ Configure hosts to not respond.
+</div><div>
+
+* **ICMP mask reply**
+
+👉 The attacker ask an host about its subnet mask, and may use it to map an internal network. ➡️ Configure hosts to not respond.
+
+* **ICMP redirection**
+
+👉 Redirect traffic to a target host through a compromised device. 💥 MITM ➡️ Disable ICMP Redirect messages.
+
+* **ICMP router discovery**
+
+👉 Add false routing entries to the routing table, so that the host send traffic to the wrong destination. ➡️ Disable ICMP router messages.
+</div></div>
+
+<hr class="sep-both">
+
 ## Simple Network Management Protocol (SNMP)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2 mt-4"><div>
 
 The Simple Network Management Protocol (SNMP) is an old protocol from 1990-2000 that is still quite used by companies to manage and monitor network devices <small>(routers, switch, firewalls...)</small>.
 
 The goal is to ensure that network devices are operating efficiently and effectively in real-time.
 
 ➡️ SNMP uses the port 161 (TCP/UDP).
+
+##### Knowledge
 
 One if the components is the Management Information Base (MIB) which is used to store information about devices. This is a tree-like structure with each node called an object carrying information like the number of packet that transited by this node, the CPU utilization of a server...
 
@@ -86,7 +122,9 @@ The SNMP manager can also send instructions to the agent to set or change the va
 
 Agents can send messages also known as "traps" without being request, for instance, when a problem is detected.
 
-➡️ You can configure SNMP on a Windows Server with ADDS. You can also configure the server using commands too such as 
+##### Configuration
+
+You can configure SNMP on a Windows Server with ADDS. You can also configure the server using commands too such as 
 
 * `show snmp`: display the current configuration
 * `snmp-server community [...]`: configure a community 
@@ -95,6 +133,8 @@ Agents can send messages also known as "traps" without being request, for instan
 * `snmp-server host [...]`: define the hosts <small>(for traps...)</small>
 
 </div><div>
+
+##### SNMPv2c
 
 SNMPv2c is still used by some companies even if it's advised to use SNMPv3 as the latter is more secure. SNMPv2c
 
@@ -106,6 +146,10 @@ SNMPv2c is still used by some companies even if it's advised to use SNMPv3 as th
 Commands: `snmpget`, `snmpwalk`, `snmpset`, `snmptrap`...
 
 ➡️ A company can use both SNMPv2c and SNMPv3, it allows a softer migration, but it increases the complexity of the task.
+
+<br>
+
+##### SNMPv3
 
 Migrating to SNMPv3 can be hard, but it may be required to comply with some regulations <small>(PCI DSS, HIPAA)</small>. Overall it's more robust, performant, reliable and secure.
 
@@ -135,7 +179,6 @@ Stuff that I found, but never read/used yet.
   * a community (SNMPv2c?)
 </div><div>
 
-
 * Streaming network telemetry (modern SNMP?)
 * Network Access Control (used with SNMP?)
 * DDOS. Amplification and reflexion DoS.
@@ -143,5 +186,4 @@ Stuff that I found, but never read/used yet.
 * ARP vulnerabilities x2 (`arp – a`, `arp –a –d`)
 * DNS and DHCP vulnerabilities
 * Emails/Social-engineering
-
 </div></div>
