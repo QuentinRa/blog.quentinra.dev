@@ -8,21 +8,25 @@ The risk management evaluates the probability of something occurring <small>(nat
 * **Qualitatively**: we assign a level to the risk
 
 The risk could be speculative (gain or loss) or non-speculative (loss). The goal of risk management is to reduce risks under an acceptable level.
+
+➡️ Risks should be prioritized based on how critical <small>(legal requirement, big impact on the business...)</small> they are. Mitigations should be taken in accordance to the level of the risk.
 </div><div>
 
-Examples of risks
+There are many types of risks: financial, legal, operational, or IT security risks such as:
 
 * Misfunction/outage of the Domain Controller <small>(Active Directory)</small>
 * Accidental removal of data/accounts
+* Unauthorized access/... to sensible/critical data
 * Improper/illegal use of data <small>ex: clients financial data)</small>
-* Infection, DDoS...
-* Communication/password being intercepted/compromised
+* Infections, DDoS, hacking...
+* Communication/passwords being intercepted/compromised
+* See [Data governance risks](/cybersecurity/blue-team/data.md#security-risks-and-business-needs)
 
 </div></div>
 
 <hr class="sep-both">
 
-## The two approaches
+## Risk assessment
 
 <div class="row row-cols-md-2"><div>
 
@@ -50,7 +54,7 @@ We will usually group risks in a family of risks, and place them in a risk matri
 
 <hr class="sep-both">
 
-## Reduce risks
+## Risk mitigation strategies
 
 <div class="row row-cols-md-2 mt-3"><div>
 

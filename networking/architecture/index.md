@@ -40,6 +40,10 @@ Communications and network are exposed to many risks.
 **Network zoning and perimeter networks**: we divide the network into zones with different levels of security access. Access/traffic between zones are filtered by firewalls/...
 
 ➡️ You can sort devices by CIA level, like if a device need up to 4 hours of unavailability, then A=high...
+
+**Triple-A model**: Authentication, Authorization, and Accounting. It's a framework to control who can access the network, and what can they do. These are usually implemented by AAA-servers.
+
+➡️ See the RADIUS or the TACACS+ protocol... 
 </div></div>
 
 <hr class="sep-both">
