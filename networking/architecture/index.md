@@ -8,7 +8,7 @@ Communications and network are exposed to many risks.
 
 **Sniffing**: without or with a weak encryption, an actor can listen to exchanged packets, to learn more about the network architecture, and to find the weak point.
 
-**Spoofing**: an actor can usurp another machine identity to fake messages coming from the victim
+**Spoofing**: an actor can usurp another machine identity to fake messages coming from the victim.
 
 **Tampering**: without integrity checks, an actor can tamper with messages without the sender/receiver being aware of it
 
@@ -17,6 +17,10 @@ Communications and network are exposed to many risks.
 **Password**: we must ensure that administrators/managers do not use weak/compromised passwords.
 
 **DoS**: Denial of Service. Attackers send malicious packets to slow down a host; they generate a high level of traffic...
+
+💥 Create a malicious packet, or send mass requests.
+
+➡️ See DDoS, Reflection/amplification DoS.
 </div><div>
 
 <p class="text-center">👉 Solutions or tools 👈</p>
@@ -96,6 +100,34 @@ ICMP (Internet Control Message Protocol) is mainly used to communicate status <s
 * **ICMP router discovery**
 
 👉 Add false routing entries to the routing table, so that the host send traffic to the wrong destination. ➡️ Disable ICMP router messages.
+</div></div>
+
+<hr class="sep-both">
+
+## TCP and UDP security
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+* **SYN Flood Attack**
+
+👉 An attacker send mass SYN requests creating many half-open connections and slowing down the target. 💥 DoS ➡️ Limit-rate the number of SYN packets accepted per second.
+
+* **TCP Reset Attack**
+
+👉 An attacker send RST to terminate legitimate connections to disrupt service. ➡️ Protect TCP connections <small>(ex: filters, encryption...)</small>.
+
+* **TCP Session Hijacking**
+
+👉 An attacker steal a session by stealing or guessing the session ID. ➡️ Use encryption, timeouts, forbid many active sessions...
+</div><div>
+
+* **UDP Checksum Attack**
+
+👉 An attacker manipulates the checksum allowing tampered packets to by accepted. ➡️ Use encryption <small>(IPSec, a VPN...)</small>.
+
+* **UDP Flood Attack**
+
+👉 An attacker send many UDP requests to slowdown or overwhelm the target. 💥 DoS ➡️ Setup filtering, rate-limiting...
 </div></div>
 
 <hr class="sep-both">
@@ -181,7 +213,6 @@ Stuff that I found, but never read/used yet.
 
 * Streaming network telemetry (modern SNMP?)
 * Network Access Control (used with SNMP?)
-* DDOS. Amplification and reflexion DoS.
 * Address Spoofing, TCP, and UDP Attacks
 * ARP vulnerabilities x2 (`arp – a`, `arp –a –d`)
 * DNS and DHCP vulnerabilities
