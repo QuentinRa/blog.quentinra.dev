@@ -6,9 +6,18 @@ The risk management evaluates the probability of something occurring <small>(nat
 
 * **Quantitatively**: we assign a numerical value to the risk
 * **Qualitatively**: we assign a level to the risk
-</div><div>
 
 The risk could be speculative (gain or loss) or non-speculative (loss). The goal of risk management is to reduce risks under an acceptable level.
+</div><div>
+
+Examples of risks
+
+* Misfunction/outage of the Domain Controller <small>(Active Directory)</small>
+* Accidental removal of data/accounts
+* Improper/illegal use of data <small>ex: clients financial data)</small>
+* Infection, DDoS...
+* Communication/password being intercepted/compromised
+
 </div></div>
 
 <hr class="sep-both">

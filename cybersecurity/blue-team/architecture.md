@@ -7,6 +7,8 @@ A cybersecurity architect design and oversee the implementation of security solu
 Cybersecurity architects are responsible for identifying potential security risks and recommending measures to strengthen the security architecture of the IT infrastructure.
 
 * **Defense in-depth**: use of multiple layers of security, along with various tactics, to slow down/stop an intruder
+
+* **Triple-A principles**: Authentication <small>(verify the identity)</small>, Authorization <small>(determine the permissions)</small>, and Accounting <small>(logs)</small>.
 </div><div>
 
 Please refer to 
@@ -59,6 +61,8 @@ Please refer to
 * Limit access to the Windows registry
 
 ➡️ For root/administrator accounts, the password should be updated regularly, and its usage should be justified.
+
+➡️ Tell users when their are not allowed to access something, or when it is monitored, and when it can lead to prosecution.
 </div></div>
 
 <hr class="sep-both">
