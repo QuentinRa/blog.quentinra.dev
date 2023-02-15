@@ -4,18 +4,28 @@ Communications and network are exposed to many risks.
 
 <div class="row row-cols-md-2 mt-4"><div>
 
+<p class="text-center">💥 Attacks and vulnerabilities 💥</p>
+
 **Sniffing**: without or with a weak encryption, an actor can listen to exchanged packets, to learn more about the network architecture, and to find the weak point.
 
 **Spoofing**: an actor can usurp another machine identity to fake messages coming from the victim
 
 **Tampering**: without integrity checks, an actor can tamper with messages without the sender/receiver being aware of it
-</div><div>
 
 **MITM** (Man-in-the-middle): an actor intercepts communications and modify or manipulate the data being transmitted.
 
-**Firewalls**: it's important that the firewall has good access control rules and both the rules and the firewall are up-to-date.
-
 **Password**: we must ensure that administrators/managers do not use weak/compromised passwords.
+</div><div>
+
+<p class="text-center">👉 Solutions or tools 👈</p>
+
+**Firewalls**: firewall are used to block/allow some traffic based on rules. It's important that the access control rules are well crafted. Both the rules and the firewall must be up-to-date.
+
+**Traffic mirroring**: this feature is available on many network switches. It allows us to copy the incoming and ongoing traffic to a monitored device such as a network analyzer or an IDS.
+
+➡️ See the SPAN function on some Cisco switches. See also NetFlow to collect and analyze network traffic data.
+
+➡️ Network or protocol analyzers: Wireshark, tcpdump...
 </div></div>
 
 <hr class="sep-both">
@@ -104,7 +114,7 @@ The set of protocols that make up the TCP/IP suite, a.k.a. as the TCP/IP protoco
 
 * **Non-repudiation** <small>(user dening having performed some action)</small>
 
-👉 IP addresses can be spoofed. 💥 Claim that someone else used the hacker IP for the attack.  ➡️ Use digital signatures or encryption to ensure that we know who sent the packet.
+👉 IP addresses can be spoofed. 💥 The hacker claim that someone else used his IP for the attack.  ➡️ Use digital signatures and encryption to ensure that we know who sent the packet.
 </div></div>
 
 <hr class="sep-both">
