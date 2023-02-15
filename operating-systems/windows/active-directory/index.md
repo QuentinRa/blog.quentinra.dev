@@ -178,6 +178,20 @@ You can either use the Windows Registry, or a group policy. Here are some parame
 * NoNameReleaseOnDemand <small>(Release the NetBios name when no longer needed to prevent attacker from obtaining information)</small>
 * TcpMaxConnectResponseRetransmissions <small>(can help to prevent SYN flood attacks, but may exhaust system resources)</small>
 </details>
+
+##### Configure TCP/IP parameters
+
+<details class="details-n">
+<summary>Notes to XXX</summary>
+
+* Length
+* Complexity
+* Period change
+* Lock
+* History
+* Timeout
+</details>
+
 </div></div>
 
 <hr class="sep-both">

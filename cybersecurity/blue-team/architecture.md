@@ -1,4 +1,4 @@
-# Architecture
+# Architecture guidelines
 
 <div class="row row-cols-md-2"><div>
 
@@ -16,22 +16,31 @@ Cybersecurity architects are responsible for identifying potential security risk
 
 <div class="row row-cols-md-2 mt-3"><div>
 
+**General**
+
+* Setup access control
+* Setup [logging and monitoring](/cybersecurity/blue-team/logs.md)
+
 **System**
 
 * Ask for a password to edit BIOS configuration
 * Disable booting using an external device
-* Disable remote booting
+* Disallow to remotely start a device
+* Disable/Limit local user account <small>(if not required)</small>
+* Do not give admin privilege to local accounts <small>(unless required)</small>
 </div><div>
 
 **User**
 
-* Add a password to every workstation
-* Disable default user account (if not required)
+* Ensure we can't use a workstation without a password
 * Disable unneeded programs
 * Limit access to registry
 * Only administrator should be allowed to disable/configure security-related tools.
 * Disallow/Disable bluetooth if not required
-* Use secure wireless networks (if applicable)
+* Use secure wireless networks <small>(if applicable)</small>
+* Set up a robust password policy
+  * Length, Complexity, Periodic updates, Lock, History...
+  * see [Active Directory - Password Policy](/operating-systems/windows/active-directory/index.md#configure-tcpip-parameters)
 </div></div>
 
 <hr class="sep-both">
@@ -46,7 +55,7 @@ Cybersecurity architects are responsible for identifying potential security risk
   * Disable access to internet if not required
 </div><div>
 
-* Configure Windows systems TCP/IP parameters to optimize performance and security (see [Active Directory](/operating-systems/windows/active-directory/index.md#configure-tcpip-parameters))
+* Configure Windows systems TCP/IP parameters to optimize performance and security (see [Active Directory - TCP/IP](/operating-systems/windows/active-directory/index.md#configure-tcpip-parameters))
 * See attacks and mitigation in [Network Architecture](/networking/architecture/index.md)
 </div></div>
 

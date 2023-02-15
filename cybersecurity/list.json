@@ -5,7 +5,7 @@
     "Blue team": [
       {
         "tag": "blue-team/architecture.md",
-        "name": "Architecture",
+        "name": "Architecture guidelines",
         "desc": "...",
         "icon": "<i class=\"bi bi-shield-lock\"></i>",
         "hidden": false
