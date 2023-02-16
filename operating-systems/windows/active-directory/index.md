@@ -173,12 +173,22 @@ Configure your DHCP server
 </details>
 
 <details class="details-n">
-<summary>Create Users</summary>
+<summary>Manager Users</summary>
+
+**Create users**
 
 * Right-click on your domain
 * New > User
 * You must at least add a "Full name" and a "logon"
 * Add a password that matches your password policy
+
+**Add a home folder**
+
+* Right-click on a user > properties
+* Go to profile
+* You could select a local path, or mount a network drive, for instance, `\\ServerName\\SomeFolder\\%username%`.
+
+➡️ The advantage of using `%username%` is that you can edit multiple users, and the value will be replaced for each one.
 </details>
 
 <details class="details-n">
@@ -193,7 +203,34 @@ To add members, either
 * Right-click on an object, select properties, go to "member of", and add your security group
 </details>
 
+##### Permissions
+
+<details class="details-n">
+<summary>Configure permissions on a folder</summary>
+
+* Right-click on a folder <small>(for instance, on a mounted drive available to users over the network)</small>
+* Select properties then Security
+* Edit
+* Add or remove Security Groups or Users. You can also define the permissions for each group.
+
+➡️ We usually allow access to security group instead of users
+</details>
+
 </div><div>
+
+##### Configure a network drive
+
+<details class="details-n">
+<summary>Configure a network drive</summary>
+
+* xxx
+</details>
+
+<details class="details-n">
+<summary>Automatically mount a network drive (GPO)</summary>
+
+* xxx
+</details>
 
 ##### Configure SNMP
 
