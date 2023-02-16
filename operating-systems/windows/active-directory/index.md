@@ -263,15 +263,28 @@ Once created, you can edit the GPO to edit them.
 * Right-click > Initialize Disk <small>(if there is no unallocated)</small>
 * Right-click on "unallocated" and create a new volume. You can leave the name empty.
 
-➡️ You can share the whole drive by Right-clicking on it > Properties > Sharing > Advanced Sharing, and enabling the sharing. The path that users will use will be shown below "Network Path" <small>(ex: \\\ServerName\\\DriveName)</small>.
+➡️ You can share the whole drive by Right-clicking on it > Properties > Sharing > Advanced Sharing, and enabling the sharing. The path that users will use will be shown below "Network Path" <small>(ex: \\\ServerName\DriveName)</small>.
 
-➡️ You can share a folder on an online drive by Right-clicking on it > Properties > Sharing > Share. Add the groups such as `Domain Users` for everyone. The path that users will use will be shown below "Network Path" <small>(ex: \\\ServerName\\\FolderName)</small>.
+➡️ You can share a folder on an online drive by Right-clicking on it > Properties > Sharing > Share. Add the groups such as `Domain Users` for everyone. The path that users will use will be shown below "Network Path" <small>(ex: \\\ServerName\FolderName)</small>.
 </details>
 
 <details class="details-n">
-<summary>Automatically mount a network drive (GPO)</summary>
+<summary>Automatically mount a shared folder as a drive (GPO)</summary>
 
-* xxx
+By default, a user need to browse a path like `\\ServerName\Path\\To\Folder\` to access some shared folder on a server. It's possible to create a virtual drive that will point to a shared folder using GPO.
+
+* Start the **Server Manager**
+* Go to Tools > Group Policy Management
+* Right-click on a GPO > Edit <small>(you could create a GPO and apply it on the whole domain, you can filter rules later...)</small>
+
+Go to User Configuration > Preferences > Windows Settings > Drive Maps. Here, you can map a drive to a folder, and only apply the rule to a group/... 
+
+* Right-click > New > Drive Map
+* In Location, add the network path, such as `\\ServerName\Data\Maketing\`
+* Select a drive letter <small>(ex: M)</small>
+* In the "common" tab, select "remove this item when its no longer applied" and select "item-level targeting". Click on "Targeting" and add the security group that will get access to this mapped drive <small>(ex: Marketing)</small>.
+
+➡️ For conditions like "one of multiple groups", you can right-click on the second item, and in item options, select OR.
 </details>
 
 ##### Configure SNMP
@@ -311,7 +324,7 @@ You can either use the Windows Registry, or a group policy. Here are some parame
 
 * Start the **Server Manager**
 * Go to Tools > Group Policy Management
-* Right-click on a GPO > Edit <small>(you could crate a GPO and apply it on the whole domain...)</small>
+* Right-click on a GPO > Edit <small>(you could create a GPO and apply it on the whole domain...)</small>
 
 Go to Computer configuration > Policies > Windows Settings > Security Settings > Account Policy.
 

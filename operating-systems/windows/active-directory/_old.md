@@ -36,7 +36,7 @@ The main use of OUs is to apply policies. For instance, you may want the user XX
 
 </div><div>
 
-**Group Policy Objects (GPO)** are a set of policies/rules that can be applied to an OU. For instance, we may want to force every user to have a password of at least $n$ characters. Inside the GPO OU, we can create our policies. The **Scope** determines where the GPO will be applied. Simply drag and drop the policies to an OU, and the OU along with every child will have the GPO applied to them. Changes are distributed to the network via a network share called SYSVOL (`C:\Windows\SYSVOL\sysvol\`). It may take time for the changes to applies, but they can be forced with `gpupdate /force`.
+**Group Policy Objects (GPO)**: Changes are distributed to the network via a network share called SYSVOL (`C:\Windows\SYSVOL\sysvol\`). It may take time for the changes to applies, but they can be forced with `gpupdate /force`.
 </div></div>
 
 <hr class="sep-both">
