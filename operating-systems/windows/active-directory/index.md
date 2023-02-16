@@ -252,9 +252,20 @@ Once created, you can edit the GPO to edit them.
 ##### Configure a network drive
 
 <details class="details-n">
-<summary>Configure a network drive</summary>
+<summary>Configure shared folders</summary>
 
-* xxx
+* Start the **Server Manager**
+* Go to Tools > Computer Management > Disk Manager
+* Select the drive, right-click on it, and ensure it's marked as online <small>(or right-click on "offline" and set it to online)</small>
+
+![disk_online.png](_images/disk_online.png)
+
+* Right-click > Initialize Disk <small>(if there is no unallocated)</small>
+* Right-click on "unallocated" and create a new volume. You can leave the name empty.
+
+➡️ You can share the whole drive by Right-clicking on it > Properties > Sharing > Advanced Sharing, and enabling the sharing. The path that users will use will be shown below "Network Path" <small>(ex: \\\ServerName\\\DriveName)</small>.
+
+➡️ You can share a folder on an online drive by Right-clicking on it > Properties > Sharing > Share. Add the groups such as `Domain Users` for everyone. The path that users will use will be shown below "Network Path" <small>(ex: \\\ServerName\\\FolderName)</small>.
 </details>
 
 <details class="details-n">
@@ -298,12 +309,13 @@ You can either use the Windows Registry, or a group policy. Here are some parame
 <details class="details-n">
 <summary>Notes to set up a password policy</summary>
 
-* Length
-* Complexity
-* Period change
-* Lock
-* History
-* Timeout
+* Start the **Server Manager**
+* Go to Tools > Group Policy Management
+* Right-click on a GPO > Edit <small>(you could crate a GPO and apply it on the whole domain...)</small>
+
+Go to Computer configuration > Policies > Windows Settings > Security Settings > Account Policy.
+
+There, you can enable history, set password length and age <small>(ex: 6 months)</small>, enable complexity requirements, lockout...
 </details>
 
 </div></div>
