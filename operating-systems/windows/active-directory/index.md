@@ -132,14 +132,14 @@ Configure your DHCP server
 
 **Domain**: for instance, `xxx.com`. You don't need to own it <small>(in a real-world install, you should)</small>. When users will connect to it, they will use `server/username`.
 
-➡️ The `server` should be `xxx.com` or `xxx` (alias).
+➡️ The `server` usually is `xxx.com` or `xxx` (alias).
 </div><div>
 
 **Objects**: Entities such as users, computers...
 
 **Security Groups**: they are used to apply policies to everyone that is a member of this group. A user can be in multiple Groups.
 
-**Organizational Units** (OUs): they are sort of folders used to group object in a similar structure than the organization. For instance, you could have one OU per site <small>(ex: Laval, Montreal)</small> and in each site, one OU per service <small>(ex: Direction, Marketing, IT...)</small>. 
+**Organizational Units** (OUs): they are sort of folders used to group object in a similar structure than the organization. For instance, you could have one OU per site <small>(ex: Laval, Montreal)</small> and for each site, one OU per service <small>(ex: Direction, Marketing, IT...)</small>. 
 </div></div>
 
 <hr class="sep-both">
@@ -147,6 +147,53 @@ Configure your DHCP server
 ## Main features
 
 <div class="row row-cols-md-2 mt-3"><div>
+
+##### Manage OUs, Security Groups, and Users
+
+* Start the Server Manager
+* Go to Tools > Active Directory Users and Computers
+
+<details class="details-n">
+<summary>Create an OU</summary>
+
+* Right-click on your domain
+* New > Organizational Unit
+* Give it a name
+</details>
+
+<details class="details-n">
+<summary>Delete an OU</summary>
+
+* Click on View > Advanced features
+* Right-click on your OU
+* Go to Properties > Object
+* Unselect "Protect object from accidental deletion"
+* Apply, then close
+* Right-click on your OU, and click on delete
+</details>
+
+<details class="details-n">
+<summary>Create Users</summary>
+
+* Right-click on your domain
+* New > User
+* You must at least add a "Full name" and a "logon"
+* Add a password that matches your password policy
+</details>
+
+<details class="details-n">
+<summary>Create Security groups</summary>
+
+* Right-click on your domain
+* New > Group
+
+To add members, either 
+
+* Right-click on the group, and select "Add to a group"
+* Right-click on an object, select properties, go to "member of", and add your security group
+</details>
+
+</div><div>
 
 ##### Configure SNMP
 
@@ -160,7 +207,6 @@ Configure your DHCP server
 
 Once installed, open "Services" and find the SNMP service. Right-click on edit, and edit the properties however you want.
 </details>
-</div><div>
 
 ##### Configure TCP/IP parameters
 
@@ -179,10 +225,10 @@ You can either use the Windows Registry, or a group policy. Here are some parame
 * TcpMaxConnectResponseRetransmissions <small>(can help to prevent SYN flood attacks, but may exhaust system resources)</small>
 </details>
 
-##### Configure TCP/IP parameters
+##### Set up a password policy
 
 <details class="details-n">
-<summary>Notes to XXX</summary>
+<summary>Notes to set up a password policy</summary>
 
 * Length
 * Complexity

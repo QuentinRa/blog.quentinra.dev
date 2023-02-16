@@ -2,30 +2,12 @@
 
 <div class="row row-cols-md-2"><div>
 
-</div><div>
-
-Default OUs such as `Builtin` <small>(default groups...)</small>; `Computers`; `Domain Controllers`; `Users` and some others.
-
-Computers are separated between Workstations <small>(the "usual" computer that the user will use to log in to the Windows domain: `DomainName\Username`)</small> and Servers.
-</div></div>
-
-<hr class="sep-both">
-
-## Basic notes
-
-<div class="row row-cols-md-2"><div>
-
 **Security Principals** ([doc](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-principals))
 
 These are objects that can be authenticated. This includes users, and computers.
 
 For the latter, an account is automatically created with a username corresponding to the machine name appended with a dollar (`$`), while the password is a randomly generated string of 120 characters. A computer account is the local administrator of the machine.
 </div><div>
-
-**Create/Delete OUs**
-
-* You can easily create an OUs with the Right-click menu. Usually, we create an OU matching an existing service such as `Sales`, in which we add the users in the said service.
-* To delete an OUs, you first need to disable the protection against accidental removal. Click on View > Advanced Features. Then edit the properties of your OUs, and in Objects, uncheck the protection. Then, you can remove it.
 </div></div>
 
 <hr class="sep-both">
