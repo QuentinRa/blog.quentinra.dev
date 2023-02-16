@@ -38,6 +38,8 @@ With ADDS, you log in once, from any machine, and got access to everything that 
 **Organizational Units** (OUs): folders used to group object in a similar structure than the organization. You could have one OU per site <small>(ex: Laval, Montreal)</small> and for each site, one OU per service <small>(ex: Direction, Marketing, IT...)</small>. Like groups, you can apply permissions/GPO to an OU.
 
 **Group Policy Objects (GPO)**: policies/rules that are applied on objects. We can use them to enable/disable some Windows features for some users, to configure user workstations...
+
+➡️ More details in the [Permissions](#permissions) section.
 </div></div>
 
 <hr class="sep-both">
@@ -217,6 +219,32 @@ To add members, either
 * Add or remove Security Groups, OUs, or Users. You can also define the permissions for each group.
 
 ➡️ We usually allow access to security group instead of users
+</details>
+
+<details class="details-n">
+<summary>Create Group Policy Objects</summary>
+
+* Start the Server Manager
+* Go to Tools > Group Policy Management
+* Find the "Group Policy Object" folder
+* Right-click on it > New and create a GPO
+
+A GPO is applied to one or more OUs. It can be applied on the whole domain too. These are shown in "Scope > Location". 
+
+* Drag-and-drop the GPO to the domain/an OU to add it inside location.
+* You can add groups in security filtering to only apply the GPO to some group inside the selected locations
+
+You can also exclude users/objects in the tab "Delegation".
+
+* Click on "Advanced" and add an object to exclude
+* Scroll down in the permission, and check "deny" for the line "Apply group policy"
+
+Once created, you can edit the GPO to edit them.
+
+* Right-click on a GPO > Edit
+* Search for the setting you want to edit, and enable/disable/configure available rules
+
+➡️ See specific sections or Google to find settings.
 </details>
 
 </div><div>
