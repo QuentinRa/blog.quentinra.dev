@@ -34,7 +34,6 @@ The main use of OUs is to apply policies. For instance, you may want the user XX
 
 <div class="row row-cols-md-2"><div>
 
-This is another service that can be used to manage **Security Groups**. They are used for convenience, as instead of assigning permissions to each user, we can assign permission to groups, and give groups to users.
 </div><div>
 
 **Group Policy Objects (GPO)** are a set of policies/rules that can be applied to an OU. For instance, we may want to force every user to have a password of at least $n$ characters. Inside the GPO OU, we can create our policies. The **Scope** determines where the GPO will be applied. Simply drag and drop the policies to an OU, and the OU along with every child will have the GPO applied to them. Changes are distributed to the network via a network share called SYSVOL (`C:\Windows\SYSVOL\sysvol\`). It may take time for the changes to applies, but they can be forced with `gpupdate /force`.
@@ -60,12 +59,6 @@ It's possible to fragment the Windows domain into sections. We refer to the whol
 
 Users+Computers accounts. Schema that define what is a user... Can be extended.
 
-Add users and computers inside groups. Set permissions to the group.
-
-Organization units (OU):
-
-* Create and group persons
-* Give permissions to one person to do whatever they want with one OU
 </div><div>
 
 Domains: DC + Users/Computer accounts. Can create a sub-domain for another place with different policies/... Subdomain, they inherit the schema. two-way implicit transitive (trust other subdomains) trust. **Tree**. one way explicit trust (from B to A). Then B is able to use users from A, and give them permissions to access their tree.

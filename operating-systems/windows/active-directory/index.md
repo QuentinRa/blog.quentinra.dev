@@ -4,8 +4,8 @@
 
 Active Directory Domain Services (ADDS) is a tool to help sysadmin to manage organisation/schools/...
 
-* 🖥️ Manage Computers
-* 🧑‍🍼️ Manage Users
+* 🖥️ Manage Computers, Servers, Printers
+* 🧑‍🍼️ Manage Users and Groups
 * 🚧️ Manage Permissions to access files/apps/...
 * ⚖️️ Manage Policies <small>(ex: password length/...)</small>
 </div><div>
@@ -20,11 +20,33 @@ With ADDS, you log in once, from any machine, and got access to everything that 
 
 <hr class="sep-both">
 
+## ✨ Terminology ✨
+
+<div class="row row-cols-md-2"><div>
+
+**Domain Controller** (DC): servers from which you can manage the organisation using ADDS. Any Windows server on which ADDS is installed is a Domain Controller.
+
+**Domain**: for instance, `xxx.com`. You don't need to own it <small>(in a real-world install, you should)</small>. When users will log in to the server, they will use `server/username`.
+
+➡️ The `server` usually is `xxx.com` or `xxx` (alias).
+
+**Objects**: users, computers, printers, shared folders, groups, organization units...
+</div><div>
+
+**Security Groups**: they are used to group users, to apply permissions/GPO to everyone that is a member of this group. A user can be in multiple Groups.
+
+**Organizational Units** (OUs): folders used to group object in a similar structure than the organization. You could have one OU per site <small>(ex: Laval, Montreal)</small> and for each site, one OU per service <small>(ex: Direction, Marketing, IT...)</small>. Like groups, you can apply permissions/GPO to an OU.
+
+**Group Policy Objects (GPO)**: policies/rules that are applied on objects. We can use them to enable/disable some Windows features for some users, to configure user workstations...
+</div></div>
+
+<hr class="sep-both">
+
 ## Get started
 
 <div class="row row-cols-md-2"><div>
 
-You must have an image with **Windows Server** 2019/2022. As a student, you can get one for free [here](https://azureforeducation.microsoft.com/devtools). 
+You must have an image with **Windows Server** 2019/2022. As a student, you can get one for free [here](https://azureforeducation.microsoft.com/devtools).
 
 <details class="details-n">
 <summary>Notes for Virtual Box</summary>
@@ -105,11 +127,11 @@ On your VM with your VM
 
 Configure your DHCP server
 
-* IPV4 > New Scope 
-    * Name: Lan1
-    * Select a range of addresses
-    * You can prevent person from taking some addresses
-    * Select a lock duration <small>(ex: 1 day)</small>
+* IPV4 > New Scope
+  * Name: Lan1
+  * Select a range of addresses
+  * You can prevent person from taking some addresses
+  * Select a lock duration <small>(ex: 1 day)</small>
 * We can reserve an IP address for a specific MAC address
 * You can see attributed IPs in "Address leases"
 
@@ -120,26 +142,6 @@ Configure your DHCP server
 **Where to learn?**
 
 * [Introduction to ADDS Structure in Windows Server 2012](https://www.youtube.com/watch?v=lFwek_OuYZ8)
-</div></div>
-
-<hr class="sep-both">
-
-## ✨ Terminology ✨
-
-<div class="row row-cols-md-2"><div>
-
-**Domain Controller** (DC): servers from which you can manage the organisation using ADDS. For instance, the initial computer where Windows Server is installed is a Domain Controller.
-
-**Domain**: for instance, `xxx.com`. You don't need to own it <small>(in a real-world install, you should)</small>. When users will connect to it, they will use `server/username`.
-
-➡️ The `server` usually is `xxx.com` or `xxx` (alias).
-</div><div>
-
-**Objects**: Entities such as users, computers...
-
-**Security Groups**: they are used to apply policies to everyone that is a member of this group. A user can be in multiple Groups.
-
-**Organizational Units** (OUs): they are sort of folders used to group object in a similar structure than the organization. For instance, you could have one OU per site <small>(ex: Laval, Montreal)</small> and for each site, one OU per service <small>(ex: Direction, Marketing, IT...)</small>. 
 </div></div>
 
 <hr class="sep-both">
@@ -187,6 +189,7 @@ Configure your DHCP server
 * Right-click on a user > properties
 * Go to profile
 * You could select a local path, or mount a network drive, for instance, `\\ServerName\\SomeFolder\\%username%`.
+* The drive will be shown next to the "C:" drive
 
 ➡️ The advantage of using `%username%` is that you can edit multiple users, and the value will be replaced for each one.
 </details>
@@ -211,7 +214,7 @@ To add members, either
 * Right-click on a folder <small>(for instance, on a mounted drive available to users over the network)</small>
 * Select properties then Security
 * Edit
-* Add or remove Security Groups or Users. You can also define the permissions for each group.
+* Add or remove Security Groups, OUs, or Users. You can also define the permissions for each group.
 
 ➡️ We usually allow access to security group instead of users
 </details>
