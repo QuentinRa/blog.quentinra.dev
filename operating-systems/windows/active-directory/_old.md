@@ -17,26 +17,12 @@ For the latter, an account is automatically created with a username correspondin
 <div class="row row-cols-md-2"><div>
 
 The main use of OUs is to apply policies. For instance, you may want the user XXX to be able to perform the operation YYY on any object of a category, such as one staff being able to reset the password of any client. This is called **delegating control**.
-
-> **Note** that policies are applied to the OU, and on any nested OU.
 </div><div>
 
 * Right-click on an organization unit (ex: regular users)
 * Select "Delegate control"
 * Add users that will be able to use the new privilege
 * Then, press next, and select what the selected users will be able to do on the objects contained in this OU.
-
-</div></div>
-
-<hr class="sep-both">
-
-## Group Policy Management
-
-<div class="row row-cols-md-2"><div>
-
-</div><div>
-
-**Group Policy Objects (GPO)**: Changes are distributed to the network via a network share called SYSVOL (`C:\Windows\SYSVOL\sysvol\`). It may take time for the changes to applies, but they can be forced with `gpupdate /force`.
 </div></div>
 
 <hr class="sep-both">

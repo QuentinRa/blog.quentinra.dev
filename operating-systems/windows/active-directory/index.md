@@ -35,11 +35,15 @@ With ADDS, you log in once, from any machine, and got access to everything that 
 
 **Security Groups**: they are used to group users, to apply permissions/GPO to everyone that is a member of this group. A user can be in multiple Groups.
 
+➡️ Some existing groups: Domain Users, Authenticated Users...
+
 **Organizational Units** (OUs): folders used to group object in a similar structure than the organization. You could have one OU per site <small>(ex: Laval, Montreal)</small> and for each site, one OU per service <small>(ex: Direction, Marketing, IT...)</small>. Like groups, you can apply permissions/GPO to an OU.
 
-**Group Policy Objects (GPO)**: policies/rules that are applied on objects. We can use them to enable/disable some Windows features for some users, to configure user workstations...
+**Group Policy Objects (GPO)**: policies/rules that are applied on objects. We can use them to enable/disable some Windows features for some users, configure computers, enforce policies... 
 
 ➡️ More details in the [Permissions](#permissions) section.
+
+➡️ Changes are distributed using a network share called SYSVOL (`C:\Windows\SYSVOL\sysvol\`). It may take time for the changes to be applied, but the update be forced with `gpupdate /force`.
 </div></div>
 
 <hr class="sep-both">
@@ -141,6 +145,15 @@ Configure your DHCP server
 </details>
 </div><div>
 
+<details class="details-n">
+<summary>Connect a workstation to Active Directory</summary>
+
+* Start the Workstation
+* Go to "Advanced System Settings"
+* Switch to the "Computer name" tab
+* Click on "Network ID" and follow the steps
+</details>
+
 **Where to learn?**
 
 * [Introduction to ADDS Structure in Windows Server 2012](https://www.youtube.com/watch?v=lFwek_OuYZ8)
@@ -233,6 +246,8 @@ A GPO is applied to one or more OUs. It can be applied on the whole domain too. 
 
 * Drag-and-drop the GPO to the domain/an OU to add it inside location.
 * You can add groups in security filtering to only apply the GPO to some group inside the selected locations
+
+➡️ Policies are applied to OUs and nested OUs.
 
 You can also exclude users/objects in the tab "Delegation".
 
@@ -344,7 +359,6 @@ Stuff that I found, but never read/used yet.
 * [old.md](_old.md)
 * Windows Admin Center
 * SConfig <small>(relies on PowerShell to manage ADDS)</small>
-* [???](https://www.youtube.com/watch?v=hxgz7MR7MGQ)
 * Tools (in the top-right corner)
 * Azure AD cloud Sync
 </div><div>
