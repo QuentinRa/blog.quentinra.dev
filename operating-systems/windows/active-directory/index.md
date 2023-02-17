@@ -30,8 +30,9 @@ With ADDS, you log in once, from any machine, and got access to everything that 
 
 ➡️ The `server` usually is `xxx.com` or `xxx` (alias).
 
-**Objects**: users, computers, printers, shared folders, groups, organization units...
 </div><div>
+
+**Objects**: users, computers, printers, shared folders, groups, organization units...
 
 **Security Groups**: they are used to group users, to apply permissions/GPO to everyone that is a member of this group. A user can be in multiple Groups.
 
@@ -152,6 +153,25 @@ Configure your DHCP server
 * Go to "Advanced System Settings"
 * Switch to the "Computer name" tab
 * Click on "Network ID" and follow the steps
+</details>
+
+<details class="details-n">
+<summary>Add a Local Administrator to a Workstation</summary>
+
+It's a good practice to create a local administrator account in case there are issues with Active Directory or the network, and there is a need to access the computer to fix the problem.
+
+1. Login using an Administrator account
+2. Navigate to "Settings" > "Accounts" > "Other users"
+3. Click on "Add someone else to this PC"
+4. Select "I don't have this person's sign-in information"
+5. Select "Add a user without a Microsoft account"
+6. Once created, click on the newly created user
+7. Click on "Change account type"
+8. Select "Administrator"
+
+➡️ If you're not connect to internet, you can skip 4 and 5.
+
+To log in to a local account, use `.\Username`.
 </details>
 
 **Where to learn?**
@@ -332,7 +352,7 @@ You can either use the Windows Registry, or a group policy. Here are some parame
 * TcpMaxConnectResponseRetransmissions <small>(can help to prevent SYN flood attacks, but may exhaust system resources)</small>
 </details>
 
-##### Set up a password policy
+##### Password and Encryption
 
 <details class="details-n">
 <summary>Notes to set up a password policy</summary>
@@ -344,6 +364,35 @@ You can either use the Windows Registry, or a group policy. Here are some parame
 Go to Computer configuration > Policies > Windows Settings > Security Settings > Account Policy.
 
 There, you can enable history, set password length and age <small>(ex: 6 months)</small>, enable complexity requirements, lockout...
+</details>
+
+<details class="details-n">
+<summary>Configure BitLocker</summary>
+
+**1)** The first part is installing BitLocker on the server:
+
+* Start the Server Manager
+* Click on "Add roles and features"
+* Press Next thrice
+* In Features, select BitLocker
+
+**2)** Then we need to configure it:
+
+* Go to Tools > Group Policy Management
+* Right-click on a GPO > Edit <small>(you could create a GPO and apply it on the whole domain, or a GPO only for some OUs...)</small>
+* Navigate to "Computer Configuration" > "Policies" > "Administrative Templates" > "Windows Components" > "BitLocker Drive Encryption"
+* ...
+
+**3)** On the Windows 10, you need to use a local administrator account, refer to the "Get started" section if needed.
+
+* Open a powershell/CMD as an administrator
+* Enter "gpedit.msc"
+* Navigate to "Computer Configuration" > "Administrative Templates" > "Windows Components" > "BitLocker Drive Encryption"
+* ...
+* Restart
+
+Then, right-click on the drive to encrypt, select "Bitlocker", and encrypt it. If prompted for a password when starting the workstation, then something went wrong in your configuration.
+
 </details>
 
 </div></div>

@@ -20,7 +20,7 @@ Communications and network are exposed to many risks.
 
 💥 Create a malicious packet, or send mass requests.
 
-➡️ See DDoS, Reflection/amplification DoS, Smurf DDoS, or the ping of death.
+➡️ See DDoS, Reflection/amplification DoS, Smurf DDoS, or the ping of death, Spoofed disconnect attack, CTS flood...
 </div><div>
 
 <p class="text-center">👉 Solutions or tools 👈</p>
