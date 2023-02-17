@@ -10,18 +10,18 @@ Cybersecurity architects are responsible for identifying potential security risk
 
 * **Triple-A principles**: Authentication <small>(verify the identity)</small>, Authorization <small>(determine the permissions)</small>, and Accounting <small>(logs)</small>.
 
-**Zero trust**: do not trust anyone, anything, verify everything.
+* **Zero trust**: do not trust anyone, anything, verify everything.
 </div><div>
 
-**Principle of least privilege**: everyone, regardless of their role in the company <small>(CEO...)</small>, should have the least privilege that they require to do their job.
+* **Principle of least privilege**: everyone, regardless of their role in the company <small>(CEO...)</small>, should have the least privilege that they require to do their job.
 
-Please refer to 
+Please refer to these when defining guidelines
 
 * Regulations <small>(ex: PCI DSS or HIPAA)</small>
 * Guidelines
   * NIST, NSA
   * CIS Security
-  * SANS <small>(see: critical security controls)</small>
+  * SANS <small>(see: critical security controls...)</small>
   * Providers <small>(ex: Cisco...)</small>
 </div></div>
 
@@ -37,7 +37,7 @@ Please refer to
 * Use secure wireless networks <small>(if applicable)</small>
 * Set up a robust password policy
   * Length, Complexity, Periodic updates, Lock, History...
-  * see [Active Directory - Password Policy](/operating-systems/windows/active-directory/index.md#configure-tcpip-parameters)
+  * see [Active Directory - Password Policy](/operating-systems/windows/active-directory/index.md#password-and-encryption)
   * Lock accounts for X minutes of inactivity
   * Add strong authentication (two-factor/MFA)
 
