@@ -103,6 +103,12 @@ By default, you can freely use your mouse between your host and your virtual mac
 #### Bug: bidirectional keyboard not working
 
 ➡️ Try restarting the VM.
+
+#### Notes for Active Directory
+
+➡️ If the VM crashes often, try reducing the size of the screen, it won't always work, but that's better than nothing.
+
+➡️ The NAT adapter can mess with some things like when adding a child domain. You should disable it <small>(if applicable/temporarily)</small>.
 </div></div>
 
 <hr class="sep-both">

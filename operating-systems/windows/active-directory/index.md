@@ -34,6 +34,8 @@ With ADDS, you log in once, from any machine, and got access to everything that 
 
 **Objects**: users, computers, printers, shared folders, groups, organization units...
 
+**Schema**: an extendable definition of what's a user, a computer...
+
 **Security Groups**: they are used to group users, to apply permissions/GPO to everyone that is a member of this group. A user can be in multiple Groups.
 
 ➡️ Some existing groups: Domain Users, Authenticated Users...
@@ -153,6 +155,8 @@ Configure your DHCP server
 * Go to "Advanced System Settings"
 * Switch to the "Computer name" tab
 * Click on "Network ID" and follow the steps
+
+➡️ The local computer account that will be created cannot be used by users. The username on Active Directory is the username appended with a dollar (`$`), while the password is a randomly generated string of 120 characters.
 </details>
 
 <details class="details-n">
@@ -405,14 +409,41 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [old.md](_old.md)
 * Windows Admin Center
 * SConfig <small>(relies on PowerShell to manage ADDS)</small>
 * Tools (in the top-right corner)
 * Azure AD cloud Sync
+* GPO (Priority/Unit order)
+* Network Unlock
+* OU delegate control
+* [Security Principals](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-principals)
+* IPAM
+* SSPR
+* Hardening AD ([ref](https://blog.netwrix.fr/2019/05/06/securiser-votre-annuaire-ad-contre-les-attaques-de-malware/))
 </div><div>
 
 * [rdr-it.com](https://rdr-it.com/active-directory/)
 * [microsoft](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-domain-services)
+* [activedirectorypro](https://activedirectorypro.com/blog/)
+
+<details class="details-n">
+<summary>Notes Kerberos</summary>
+
+This is the authentication system in Windows domains, replacing NetNTLM. Users will log in to the Kerberos service and receive a ticket called **Ticket Granting Ticket (TGT)**. They will use this ticket when requesting access to a share/database/... If the request is accepted, Kerberos will give them a **Ticket Granting Service (TGS)** allowing them to access the service. Then, they will use the TGS to log in to the service. No credentials are sent over the network.
+</details>
+
+<details class="details-n">
+<summary>Notes namespaces</summary>
+
+It's possible to fragment the Windows domain into sections. We refer to the whole Windows domains as a Tree. It's possible to use multiple Windows domain, in which case the whole is called a Forest. We can establish Trust Relationships between them, allowing them to interact with each other.
+</details>
+
+<details class="details-n">
+<summary>Notes about trees and trust</summary>
+
+Can create a sub-domain for another place with different policies/...
+Subdomain, they inherit the schema. two-way implicit transitive (trust other subdomains) trust.
+**Tree**. one way explicit trust (from B to A). Then B is able to use users from A, and give them permissions to access their tree.
+</details>
 
 </div></div>
