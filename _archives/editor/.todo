@@ -6,3 +6,22 @@ CTRL+ALT+L to reformat
 
 ```scss!
 scratch files
+
+----
+
+Actions
+Extensions
+Services (app project module)
+Threads + Dispose"
+Logging
+Components: https://plugins.jetbrains.com/docs/intellij/user-interface-components.html
+Project Structure...
+
+```kotlin
+MyBundle.message("applicationService")
+MyBundle.message("projectService", project.name)
+
+System.getenv("CI")
+
+project.service<MyProjectService>()
+```
