@@ -62,6 +62,7 @@ Communications and network are exposed to many risks.
   * Limit the range to the company
   * Disable SSID broadcasting <small>(if applicable)</small>
   * Use non-default settings
+  * 💥 Evil twin attack
 </div><div>
 
 * Harden network interface
