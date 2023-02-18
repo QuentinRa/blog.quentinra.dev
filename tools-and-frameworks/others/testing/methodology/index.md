@@ -20,6 +20,34 @@ When writing tests it's important to test both correct cases ✅, and incorrect 
 
 <hr class="sep-both">
 
+## Approaches to testing using contracts
+
+<div class="row row-cols-md-2"><div>
+
+Assuming that
+
+* preconditions: requirements before the execution
+* postconditions: expected result after execution
+* invariants: properties that must remain unchanged
+
+#### Design by Contract
+
+Design by Contract (`Conception par contrat`) is an approach to software development. We will check the preconditions <small>(ex: before executing the rest of the function)</small>, and the postconditions after calling the function <small>(ex: before returning the result, or after calling the function)</small>. If a condition fails, then the function has a defect.
+
+➡️ Ex: using `assert` to test parameters/the result
+</div><div>
+
+#### Contract programming
+
+Contract programming (`Programmation par contrat`) is a programming paradigm. We declare a contract associated to a function, such as "when given two integers, it will return an integer". 
+
+If we call the function with preconditions defined in the contract <small>(e.g. two integers)</small>, and the result is invalid, then the function has a defect. The function can be called with invalid <small>(as per the contract, such as a float and an integer)</small> preconditions, but there is no guaranty of the outcome.
+
+➡️ Ex: using `@Contract` <small>(Java)</small>, `@contract` from `contracts` <small>(Python)</small>.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

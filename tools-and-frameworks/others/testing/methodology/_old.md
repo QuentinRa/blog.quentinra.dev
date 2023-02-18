@@ -7,25 +7,6 @@
 * how to find tests
 * what are **assertions**
 
-<hr class="sr">
-
-## Design by contract
-
-You are writing some code while making the contract with the caller that
-
-* if the program (arguments, ...)
-* is in a correct state
-* then after running this code
-* it will still be in a correct state``
-
-So you might see one of these words often
-
-* **Preconditions**: the conditions that must be valid before the call (attributes, parameters, ...)
-* **Postconditions**: the conditions that will be valid after the execution of our code
-* **Invariant**: something that won't be changed <small> (ex: when counting elements in a list, the size of the list before and after the call must be the same).</small>
-
-You will have to remember these while analyzing your code to find some tests. The robustness of a function is determined by the number of preconditions that you verified to make sure that, in all cases, your preconditions are valid, so your code did its job.
-
 <hr class="sl">
 
 ## Defensive programming
