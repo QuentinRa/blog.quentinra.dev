@@ -1,13 +1,5 @@
 # Updates Management
 
-<div class="row row-cols-md-2 mt-3"><div>
-
-...
-</div><div>
-
-...
-</div></div>
-
 <hr class="sep-both">
 
 ## 👻 To-do 👻
