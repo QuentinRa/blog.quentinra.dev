@@ -1,18 +1,19 @@
-# Architecture guidelines
+# Security Architecture
 
 <div class="row row-cols-md-2"><div>
 
 A cybersecurity architect design and oversee the implementation of security solutions within an organization's IT infrastructure.
 
-Cybersecurity architects are responsible for identifying potential security risks and recommending measures to strengthen the security architecture of the IT infrastructure.
+Cybersecurity architects are responsible for identifying potential security risks and recommending measures <small>(software, hardware, peoples...)</small> to strengthen the security architecture of the IT infrastructure, **and align with the organization strategy goals and objectives** ✅.
 
-* 👉 Refer to regulations <small>(ex: PCI DSS or HIPAA)</small>
-* 👉 Follow guidelines
+Frameworks like SABSA and TOGAF are methodologies to implement security architecture. Additionally, some controls may be enforced:
+
+* 👉 Regulations <small>(ex: PCI DSS or HIPAA)</small>
+* 👉 Guidelines
   * NIST, NSA
   * CIS Security
   * SANS <small>(see: critical security controls...)</small>
   * Providers <small>(ex: Cisco...)</small>
-
 </div><div>
 
 * **Defense-in-depth** 🕸️: use of multiple layers of security, along with various tactics, to slow down/stop an intruder
@@ -21,7 +22,7 @@ Cybersecurity architects are responsible for identifying potential security risk
 
 * **Zero trust** 🔎: do not trust anyone/anything, verify everything.
 
-* **Principle of least privilege** ✅: everyone, regardless of their role in the company <small>(CEO...)</small>, should have the least privilege that they require to do their job.
+* **Principle of least privilege** 👮: everyone, regardless of their role in the company <small>(CEO...)</small>, should have the least privilege that they require to do their job.
 </div></div>
 
 <hr class="sep-both">
