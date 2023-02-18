@@ -358,4 +358,5 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * `nc -v` Verbose output` -vv` Very Verbose `-k` Keep listening after client disconnects and `-lvnp`
+* `arp – a`, `arp –a –d`
 </div></div>

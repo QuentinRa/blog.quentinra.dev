@@ -796,4 +796,10 @@ Notes about devices
 * Router: Layer3 (use IP)
 * Switch: Layer2 (use MAC)
 * Switch: Layer3 (use MAC/IP): can do routing
+
+Notes about security
+
+* Access Control List (ACL): rules determining which traffic is allowed/not allowed.
+* Streaming network telemetry (modern SNMP?)
+* Network Access Control (used with SNMP?)
 </div></div>

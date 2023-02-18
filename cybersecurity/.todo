@@ -1,26 +1,3 @@
-* [snort](https://www.snort.org/) (IDS/IPS)
-* [suricata](https://suricata.io/) (IDS/IPS)
-
-[pfsense](https://www.pfsense.org/), an open-source firewall/...,
-that provide a web interface to configure it, along with other network settings. It's designed for medium-sized businesses.
-
-HIPS/HIDS (Host) and Anti-malwares/EDR
-NIDS/NIPS (Network)
-
-WAF/DBDS
-
------
-
-BCP (Business continuity Plan)
-DRP (Disaster Recovery Plan?)
-SLAs (Service Level Agreement)
-SLOs (Service Level Objectives)
-SLIs (Server Level Indicators)
-RTO (Recovery Time Objectives)
-RPO (Recovery Point Objective)
-
--------
-
 HTTP 302 Redirect: redirect users to malicious websites. See Open Redirect?
 Malicious iFrames: ...
 Buffer Overflow:
