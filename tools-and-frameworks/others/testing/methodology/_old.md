@@ -1,38 +1,5 @@
 # Testing Methodology
 
-* **test-driven** and behavior-driven development
-* how to find tests
-* what are **assertions**
-
-<hr class="sr">
-
-## Find tests
-
-The parts above are useful to understand preconditions and postconditions. That should help you test your code. Remember that you must test
-
-* good scenarios (code working)
-* bad scenarios (code returning the right error code, ...)
-
-The mnemonic **RightBicep** is summarizing what you need to check
-
-* <kbd>C</kbd>: Conform (are arguments ok?)
-* <kbd>R</kbd>: Reference (is the method referencing external code?)
-* <kbd>E</kbd>: Empty (is null?)
-* <kbd>C</kbd>: Cardinal (if we are changing size, is the method still working?)
-* <kbd>T</kbd>: time (is logout called before login?)
-
-These are the main questions/topics that you might want to check.
-
-<hr class="sl">
-
-## How should I code tests?
-
-We will now introduce the concept of **assertions**. An assertion (assert) is something that returns true if what we are asserting is true, and raising an exception/failing otherwise.
-
-You will usually write a lot of classes/files, having methods/functions usually called **testWhatIamTesting** and inside, you are writing some code using assertions <small>(such as ``assertTrue(a_condition_here))</small>.
-
-You can now check out your language course, as it should be explained how to write these assertions.
-
 <hr class="sr">
 
 ## UI testing
