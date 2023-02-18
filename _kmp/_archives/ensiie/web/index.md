@@ -45,7 +45,7 @@ W3Validator is used to verify if you are writing your code using good practices.
 
 ## Tips
 
-Use an IDE to code, I recommend PHPStorm since you could easily work directly on the server (you may look for videos on YouTube or the section PHPStorm in [JetBrains](../../tools/jetbrains/index.md) course).
+Use an IDE to code, I recommend PHPStorm since you could easily work directly on the server (you may look for videos on YouTube or the section PHPStorm in [JetBrains](../../../../tools-and-frameworks/editors/jetbrains/_general/index.md) course).
 
 * try making a mock-up of your website, like drawing your website pages
 

@@ -5,7 +5,7 @@ These methods are usually used in agile projects, but I think anyone might try t
 If you're looking for
 
 * SOLID, KISS, DRY, ... they are explained in [Code guidelines](../guidelines/index.md)
-* Test-driven, Behavior-driven, they are explained in [Tests](../../../../tools-and-frameworks/testing/methodology/index.md)
+* Test-driven, Behavior-driven, they are explained in [Tests](../../../../tools-and-frameworks/others/testing/methodology/index.md)
 * Design patterns, they are explained in [Design patterns](../design-patterns/index.md) (😁)
 
 <hr class="sr">
