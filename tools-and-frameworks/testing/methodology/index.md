@@ -171,7 +171,7 @@ This may look like something easy, but you need to think about your tests while 
     
 And then you will end speeding the development through you suffered at the beginning doing some UML.
 
-* [JUnit in Java](../../info/programming/java/index.md#tests-with-junit)
+* [JUnit in Java](../../../_kmp/_archives/info/programming/java/index.md#tests-with-junit)
 * [PHPUnit in PHP](../../info/php/index.md#tests-with-phpunit)
 * ...
 
@@ -192,12 +192,17 @@ You will do that for all of your functionalities, and as always, do not forget t
 * Will adding my function, do what we want?
 * What problems adding my function might cause?
 
-<hr class="sl">
+<hr class="sep-both">
 
-## Sources
+## 👻 To-do 👻
 
-* <https://luc-hermitte.developpez.com/tutoriels/c++/programmation-par-contrat/partie-1-un-peu-theorie/>
-* <https://julien-blanc.developpez.com/articles/cpp/Programmation_par_contrat_cplusplus/>
-* <https://www.developpez.com/actu/109767/Quelques-points-cles-sur-la-programmation-defensive-destinee-a-assurer-la-fonction-continue-d-un-logiciel-dans-des-circonstances-imprevues/>
-* <https://openclassrooms.com/fr/courses/3504461-testez-linterface-de-votre-site/4270561-pourquoi-ecrire-des-tests>
-* <https://duckduckgo.com/?q=d%C3%A9veloppement+pilot%C3%A9+par+les+tests&ia=web&atb=v230-1>
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* A/B testing
+* SOLID
+</div><div>
+
+
+</div></div>
