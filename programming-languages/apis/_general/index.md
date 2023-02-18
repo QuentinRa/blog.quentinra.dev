@@ -18,7 +18,7 @@ Application Programming Interfaces (APIs) are used to allow access to internal s
 **Additional notes for specific APIs**
 
 * [jsonplaceholder](https://jsonplaceholder.typicode.com/) (**fake API for testing** 🚀)
-* [Stripe](stripe/index.md) (payments)
+* [Stripe](../more/stripe/index.md) (payments)
 </div><div>
 
 Some APIs <small>(search for APIs on [rapidapi](https://rapidapi.com/hub) 🚀)</small>
