@@ -104,23 +104,6 @@ Defensive programming is implemented by adding checks to prevent errors or unexp
 
 <div class="row row-cols-md-2"><div>
 
-Behavior-driven development (BDD) is a software development methodology that break down every part of the code into 4 sentences, explaining concretely how the code should behave.
-
-* <kbd>Given</kbd> some parameters/actions/input
-* <kbd>When</kbd> I want some action/result/output
-* <kbd>Then</kbd> I will do that
-* <kbd>And</kbd> [...] will happen.
-</div><div>
-
-...
-</div></div>
-
-<hr class="sep-both">
-
-## Behavior-driven development (BDD)
-
-<div class="row row-cols-md-2"><div>
-
 Behavior-driven development (BDD) is a software development methodology that break down every part of the code into 3 sentences, explaining concretely how the code should behave.
 
 👉 These questions are answered for every use case of a function before adding the function to the code base.
@@ -132,6 +115,30 @@ Behavior-driven development (BDD) is a software development methodology that bre
 
 * <kbd>Then</kbd> some action/result/output
 
+</div></div>
+
+<hr class="sep-both">
+
+## Test-driven development (TDD)
+
+<div class="row row-cols-md-2"><div>
+
+Test-driven development (TDD) is a development practice in which we write the tests before the code. For instance, in Java/OO,
+
+1. we would write a class with an empty method raising an exception
+2. we will write tests for this method
+3. then we will code the method
+
+👉 You will code the method to pass one test, then another one... while ensuring that previous tests are still OK. 
+</div><div>
+
+➡️ It's hard to apply this method when starting from scratch. You should first design your project <small>(ex: UML)</small>, then generate code from the UML, and start from here <small>(better: apply Model-driven development too)</small>.
+
+You should always ask yourself
+
+* What my function is supposed to do?
+* Will adding my function, do what we want?
+* What problems adding my function might cause?
 </div></div>
 
 <hr class="sep-both">
