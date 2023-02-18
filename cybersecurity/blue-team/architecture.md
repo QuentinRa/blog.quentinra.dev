@@ -6,28 +6,27 @@ A cybersecurity architect design and oversee the implementation of security solu
 
 Cybersecurity architects are responsible for identifying potential security risks and recommending measures to strengthen the security architecture of the IT infrastructure.
 
-* **Defense-in-depth**: use of multiple layers of security, along with various tactics, to slow down/stop an intruder
-
-* **Triple-A principles**: Authentication <small>(verify the identity)</small>, Authorization <small>(determine the permissions)</small>, and Accounting <small>(logs)</small>.
-
-* **Zero trust**: do not trust anyone, anything, verify everything.
-</div><div>
-
-* **Principle of least privilege**: everyone, regardless of their role in the company <small>(CEO...)</small>, should have the least privilege that they require to do their job.
-
-Please refer to these when defining guidelines
-
-* Regulations <small>(ex: PCI DSS or HIPAA)</small>
-* Guidelines
+* 👉 Refer to regulations <small>(ex: PCI DSS or HIPAA)</small>
+* 👉 Follow guidelines
   * NIST, NSA
   * CIS Security
   * SANS <small>(see: critical security controls...)</small>
   * Providers <small>(ex: Cisco...)</small>
+
+</div><div>
+
+* **Defense-in-depth** 🕸️: use of multiple layers of security, along with various tactics, to slow down/stop an intruder
+
+* **Triple-A principles** 🔒: Authentication <small>(verify the identity)</small>, Authorization <small>(determine the permissions)</small>, and Accounting <small>(logs)</small>.
+
+* **Zero trust** 🔎: do not trust anyone/anything, verify everything.
+
+* **Principle of least privilege** ✅: everyone, regardless of their role in the company <small>(CEO...)</small>, should have the least privilege that they require to do their job.
 </div></div>
 
 <hr class="sep-both">
 
-## Workstations
+## Random guidelines
 
 <div class="row row-cols-md-2 mt-3"><div>
 
@@ -71,6 +70,11 @@ Please refer to these when defining guidelines
 ➡️ Tell users when their are not allowed to access something, or when it is monitored, and when it can lead to prosecution.
 
 ➡️ There must be a balance between security and operation needs. The security should not be too much of a burden.
+
+**Networking**
+
+See attacks and mitigation in [Network Security](/operating-systems/networking/security/index.md).
+
 </div></div>
 <hr class="sep-both">
 
@@ -85,9 +89,9 @@ Access control is the process of managing access to resources in a computer syst
 There are multiple access control models, why may be combined in a defense-in-depth strategy.
 
 * **Discretionary Access Control (DAC)**: the owner of a resource define access rights for others. Ex: Unix File System.
+</div><div>
 
 * **Mandatory Access Control (MAC)**: access based on labels assigned to subjects (ex: users) and objects (ex: files).
-</div><div>
 
 * **Role-Based Access Control (RBAC)**: each role is given permissions, and users are given roles based on what they do in the organization.
 
@@ -95,12 +99,6 @@ There are multiple access control models, why may be combined in a defense-in-de
 
 * **Time-Based Access Control (TAC)**: access is granted during an interval of time <small>(ex: working hours)</small>
 </div></div>
-
-<hr class="sep-both">
-
-## Networking
-
-See attacks and mitigation in [Network Architecture](/networking/architecture/index.md).
 
 <hr class="sep-both">
 
@@ -112,7 +110,18 @@ Stuff that I found, but never read/used yet.
 
 * PPTP
 * MS CHAP V2
+* WAF/DBDS
+* IDS/IPS ([snort](https://www.snort.org/), [suricata](https://suricata.io/), [pfsense](https://www.pfsense.org/))
+* HIPS/HIDS (Host) and Anti-malwares/EDR 
+* NIDS/NIPS (Network)
 </div><div>
 
+* BCP (Business continuity Plan)
+* DRP (Disaster Recovery Plan?)
+* SLAs (Service Level Agreement)
+* SLOs (Service Level Objectives)
+* SLIs (Server Level Indicators)
+* RTO (Recovery Time Objectives)
+* RPO (Recovery Point Objective)
 
 </div></div>
