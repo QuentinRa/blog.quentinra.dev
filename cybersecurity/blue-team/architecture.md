@@ -6,7 +6,9 @@ A cybersecurity architect design and oversee the implementation of security solu
 
 Cybersecurity architects are responsible for identifying potential security risks and recommending measures <small>(software, hardware, peoples...)</small> to strengthen the security architecture of the IT infrastructure, **and align with the organization strategy goals and objectives** ✅.
 
-Frameworks like SABSA and TOGAF are methodologies to implement security architecture. Additionally, some controls may be enforced:
+Frameworks like SABSA and TOGAF are methodologies to implement security architecture. 
+
+Additionally, some controls may be enforced:
 
 * 👉 Regulations <small>(ex: PCI DSS or HIPAA)</small>
 * 👉 Guidelines
@@ -15,6 +17,14 @@ Frameworks like SABSA and TOGAF are methodologies to implement security architec
   * SANS <small>(see: critical security controls...)</small>
   * Providers <small>(ex: Cisco...)</small>
 </div><div>
+
+**The security triad (CIA)** is a famous principle used everywhere in security. The opposite is DAD <small>(Disclosure, Alternation, and Destruction)</small>.
+
+* Confidentiality: only those allowed can access resources
+* Integrity: only allowed modification can modify resources 
+* Availability: resources are available when needed
+
+👉 There is also the french "DICAI" model that extends CIA with Authentication and Identification <small>(verify the identity of users)</small>, and Irrevocability <small>(once performed, cannot be undone)</small>.
 
 * **Defense-in-depth** 🕸️: use of multiple layers of security, along with various tactics, to slow down/stop an intruder
 

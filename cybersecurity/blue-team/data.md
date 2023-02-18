@@ -281,15 +281,13 @@ The goal is to move from the lower levels to the higher levels, where data is ma
 
 <div class="row row-cols-md-2"><div>
 
-#### CIA and DAD
+#### CIA for data security
 
-The security triad CIA:
+If we apply the security triad (CIA):
 
 * Confidentiality: only those allowed can access data
 * Integrity: data was not tampered with
 * Availability: data is available when needed <small>(backups...)</small>
-
-The opposite is DAD <small>(Disclosure, Alternation, and Destruction)</small>.
 
 For security practices to be useful, everyone, regardless of their task, must be aware of what it takes to protect data. Everyone should know who to contact if they detect a problem.
 
