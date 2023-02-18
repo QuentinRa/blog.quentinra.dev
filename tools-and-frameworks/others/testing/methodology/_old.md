@@ -15,18 +15,7 @@ The parts above are useful to understand preconditions and postconditions. That 
 
 The mnemonic **RightBicep** is summarizing what you need to check
 
-* <kbd>Right</kbd>: is the result what we expected? Is the job done?
-* <kbd>B</kbd>: see **CORRECT**
-* <kbd>I</kbd> (inverse): if we have a method which is the inverse of yours, then try testing your code with it
-* <kbd>C</kbd> (cross-check): a test using other methods
-* <kbd>E</kbd> (errors): test errors
-* <kbd>P</kbd> (performance): test performances
-
-And **CORRECT**
-
 * <kbd>C</kbd>: Conform (are arguments ok?)
-* <kbd>O</kbd>: Order (in the right order?)
-* <kbd>R</kbd>: Range
 * <kbd>R</kbd>: Reference (is the method referencing external code?)
 * <kbd>E</kbd>: Empty (is null?)
 * <kbd>C</kbd>: Cardinal (if we are changing size, is the method still working?)

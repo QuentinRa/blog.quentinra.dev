@@ -20,6 +20,37 @@ When writing tests it's important to test both correct cases ✅, and incorrect 
 
 <hr class="sep-both">
 
+## Find tests
+
+<div class="row row-cols-md-2"><div>
+
+#### RightBICEP
+
+This is an approach to find good test cases:
+
+* **Right**: test that the output is correct
+* **B**oundary: test boundaries/extremum <small>(ex: MAX_INT...)</small>
+* **I**nverse: test the inverse input/output <small>(ex: 3+2 same as 2+3)</small>
+* **C**ross-check: cross-check the output with another function
+* **E**rrors: test error cases
+* **P**erformance: test performance and resource usage
+</div><div>
+
+#### CORRECT
+
+This is another approach to find good test cases:
+
+* **C**onformance: test that the I/O conforms to what was expected
+* **O**rdering: test that I/O are in the correct order
+* **R**ange: test boundaries/extremum
+* **R**eference: test against a known result, test that the correct reference/object in memory is used
+* **E**xistence: test that the required data/result are defined <small>(not null/...)</small>
+* **C**ardinality: test with 0, 1, and more arguments <small>(if applicable)</small>. Test with items of different cardinalities <small>(arrays/lists/...)</small>. 
+* **T**ime: test timing and performance. Test sequencing <small>(login->logout)</small>.
+</div></div>
+
+<hr class="sep-both">
+
 ## Approach: contracts
 
 <div class="row row-cols-md-2"><div>
@@ -53,6 +84,8 @@ If we call the function with preconditions defined in the contract <small>(e.g. 
 <div class="row row-cols-md-2"><div>
 
 Defensive programming is implemented by adding checks to prevent errors or unexpected outcomes. 
+
+👉 Defensive programming if often used along contracts,  to implement the error handling and input validation.
 
 ➡️ Use `IllegalArgumentException` <small>(invalid parameters)</small> and `IllegalStateException` <small>(invalid result, invariant...)</small> in Java...
 </div><div>
