@@ -20,18 +20,6 @@ When writing tests it's important to test both correct cases ✅, and incorrect 
 
 <hr class="sep-both">
 
-## Behavior-driven development (BDD)
-
-<div class="row row-cols-md-2"><div>
-
-Behavior-driven development (BDD) is a software development methodology that break down every part of the code into 4 sentences, explaining concretely how the code should behave.
-</div><div>
-
-...
-</div></div>
-
-<hr class="sep-both">
-
 ## Find tests
 
 <div class="row row-cols-md-2"><div>
@@ -108,6 +96,42 @@ Defensive programming is implemented by adding checks to prevent errors or unexp
 * check runtime conditions <small>(is login called before logout?)</small>
 
 👉 Apply Zero trust principle: do not trust any input/output, check everything.
+</div></div>
+
+<hr class="sep-both">
+
+## Behavior-driven development (BDD)
+
+<div class="row row-cols-md-2"><div>
+
+Behavior-driven development (BDD) is a software development methodology that break down every part of the code into 4 sentences, explaining concretely how the code should behave.
+
+* <kbd>Given</kbd> some parameters/actions/input
+* <kbd>When</kbd> I want some action/result/output
+* <kbd>Then</kbd> I will do that
+* <kbd>And</kbd> [...] will happen.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Behavior-driven development (BDD)
+
+<div class="row row-cols-md-2"><div>
+
+Behavior-driven development (BDD) is a software development methodology that break down every part of the code into 3 sentences, explaining concretely how the code should behave.
+
+👉 These questions are answered for every use case of a function before adding the function to the code base.
+</div><div class="align-self-center">
+
+* <kbd>Given</kbd> some parameters/actions/input
+
+* <kbd>When</kbd> some action triggering the process
+
+* <kbd>Then</kbd> some action/result/output
+
 </div></div>
 
 <hr class="sep-both">
