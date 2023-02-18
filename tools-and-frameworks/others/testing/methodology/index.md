@@ -20,7 +20,7 @@ When writing tests it's important to test both correct cases ✅, and incorrect 
 
 <hr class="sep-both">
 
-## Approaches to testing using contracts
+## Approach: contracts
 
 <div class="row row-cols-md-2"><div>
 
@@ -44,6 +44,25 @@ Contract programming (`Programmation par contrat`) is a programming paradigm. We
 If we call the function with preconditions defined in the contract <small>(e.g. two integers)</small>, and the result is invalid, then the function has a defect. The function can be called with invalid <small>(as per the contract, such as a float and an integer)</small> preconditions, but there is no guaranty of the outcome.
 
 ➡️ Ex: using `@Contract` <small>(Java)</small>, `@contract` from `contracts` <small>(Python)</small>.
+</div></div>
+
+<hr class="sep-both">
+
+## Approach: defensive programming
+
+<div class="row row-cols-md-2"><div>
+
+Defensive programming is implemented by adding checks to prevent errors or unexpected outcomes. 
+
+➡️ Use `IllegalArgumentException` <small>(invalid parameters)</small> and `IllegalStateException` <small>(invalid result, invariant...)</small> in Java...
+</div><div>
+
+* check if objects/addresses are null/undefined/...
+* check the range <small>(RGB: [0,255] that may be stored in an integer)</small>
+* check the size, the type, ...
+* check runtime conditions <small>(is login called before logout?)</small>
+
+👉 Apply Zero trust principle: do not trust any input/output, check everything.
 </div></div>
 
 <hr class="sep-both">

@@ -1,32 +1,8 @@
 # Testing Methodology
 
-* the theory behind tests
-* design by contract (Contract programming)
-* defensive-programming
 * **test-driven** and behavior-driven development
 * how to find tests
 * what are **assertions**
-
-<hr class="sl">
-
-## Defensive programming
-
-As you have read above, we are relying on the fact that the **preconditions** are valid for your **postconditions** to be valid. As a defensive programmer, you should **always** test and assert that your preconditions are correct.
-
-* check if objects/addresses are null/undefined/...
-* check the range (RGB : [0,255] but that may be an int)
-* check the size, the type, ...
-* check runtime conditions (is login called
-  before logout?)
-
-As a programmer, you should use some constants or create an enum instead of writing magic constants like ``"a value"`` or `5` in your code, as MOST peoples do. You can also use named arguments instead of constants, if your language allows you to.
-
-Remember the rules
-
-* do not trust other programmers
-* do not trust the rest of the code
-* do not trust data from the user
-* do not trust anyone
 
 <hr class="sr">
 
