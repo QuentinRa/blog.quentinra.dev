@@ -1,77 +1,4 @@
-# 🕸️ Browsers and links 🕸️
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-##### Browsers
-
-* Chromium
-* Edge <small>(Chromium, Microsoft, their analytics, many useless things)</small>
-* Chrome <small>(Chromium, tracked by Google, good)</small>
-* Firefox <small>(Focus on Privacy/Security, so the UX is lacking)</small>
-* Tor <small>(Firefox, VPN, more secure)</small>
-* Opera <small>(Chromium, <s>slow</s> VPN, more secure, analytics...)</small>
-* Opera GX <small>(Opera, fast VPN, Chinese, features for gamers)</small>
-* Brave <small>(Chromium, more secure, privacy-focused)</small>
-* Midori <small>(open-source)</small>
-
-##### Search engines
-
-* Google
-* DuckDuckGo <small>(Privacy-focused, fetch results from others)</small>
-* Qwant <small>(French)</small>
-* Ecosia <small>(Focus on privacy and ecology)</small>
-* Yahoo
-* Bing <small>(Microsoft)</small>
-* Yandex <small>(Russian)</small>
-</div><div>
-
-##### Shorten URLs
-
-* [shorturl.at](https://www.shorturl.at/)
-
-<br>
-
-##### Saving one page
-
-* [Archive.org](https://archive.org/web/)
-* [ArchiveBox](https://github.com/ArchiveBox/ArchiveBox) <small>(self-install)</small>
-* [SingleFile plugin](https://github.com/gildas-lormeau/SingleFile#install) <small>(save a page, its images... as **one** HTML file)</small>
-* Your browser <small>(Right-click > Save As or use CTRL+S)</small>
-* Your browser <small>(CTRL+P/Print, and select "Save as PDF")</small>
-
-##### 👻 To-do 👻
-
-* [optout](https://optout.aboutads.info/?c=2&lang=EN)
-* [youronlinechoices](https://www.youronlinechoices.com/uk/)
-</div></div>
-
-<hr class="sep-both">
-
-## 🎥 Desktop recording 🎥
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-##### Tools
-
-* "Screen Recorder Pro For Win10" <small>(free, ads, Windows store)</small>
-* Nvidia GeForce and <kbd>ALT+Z</kbd>
-* [obsproject](https://obsproject.com/)
-
-##### Editing
-
-* [Camtasia](https://www.techsmith.com/video-editor.html) <small>(easy to learn)</small>
-* [Real-Time-Person-Removal](https://github.com/jasonmayes/Real-Time-Person-Removal)
-* [split-video](https://split-video.com/) <small>(split a video online)</small>
-</div><div>
-
-##### Special
-
-* [ScreenToGif](https://www.screentogif.com/) <small>(free, create a GIF, WindowsStore, [GitHub](https://github.com/NickeManarin/ScreenToGif))</small>
-* [TTYGIF](https://github.com/icholy/ttygif) <small>(record a terminal)</small>
-* [loom](https://www.loom.com/) <small>(free with an account, record yourself with your slides)</small>
-* [wyzowl](https://www.wyzowl.com/) (👻)
-* [yopbox](https://www.yopbox.com/) (👻)
-</div></div>
+# Utilities
 
 <hr class="sep-both">
 
@@ -187,4 +114,53 @@
 ##### Windows4Free/Office4Free
 
 * See [msguides.com](https://msguides.com/)
+</div></div>
+
+<hr class="sep-both">
+
+## 🕸️ Browsers and links 🕸️
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+##### Browsers
+
+* Chromium
+* Edge <small>(Chromium, Microsoft, their analytics, many useless things)</small>
+* Chrome <small>(Chromium, tracked by Google, good)</small>
+* Firefox <small>(Focus on Privacy/Security, so the UX is lacking)</small>
+* Tor <small>(Firefox, VPN, more secure)</small>
+* Opera <small>(Chromium, <s>slow</s> VPN, more secure, analytics...)</small>
+* Opera GX <small>(Opera, fast VPN, Chinese, features for gamers)</small>
+* Brave <small>(Chromium, more secure, privacy-focused)</small>
+* Midori <small>(open-source)</small>
+
+##### Search engines
+
+* Google
+* DuckDuckGo <small>(Privacy-focused, fetch results from others)</small>
+* Qwant <small>(French)</small>
+* Ecosia <small>(Focus on privacy and ecology)</small>
+* Yahoo
+* Bing <small>(Microsoft)</small>
+* Yandex <small>(Russian)</small>
+</div><div>
+
+##### Shorten URLs
+
+* [shorturl.at](https://www.shorturl.at/)
+
+<br>
+
+##### Saving one page
+
+* [Archive.org](https://archive.org/web/)
+* [ArchiveBox](https://github.com/ArchiveBox/ArchiveBox) <small>(self-install)</small>
+* [SingleFile plugin](https://github.com/gildas-lormeau/SingleFile#install) <small>(save a page, its images... as **one** HTML file)</small>
+* Your browser <small>(Right-click > Save As or use CTRL+S)</small>
+* Your browser <small>(CTRL+P/Print, and select "Save as PDF")</small>
+
+##### 👻 To-do 👻
+
+* [optout](https://optout.aboutads.info/?c=2&lang=EN)
+* [youronlinechoices](https://www.youronlinechoices.com/uk/)
 </div></div>
