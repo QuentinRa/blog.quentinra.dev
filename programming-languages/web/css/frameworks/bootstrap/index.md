@@ -302,6 +302,8 @@ Stuff that I found, but never read/used yet.
 * [bootswatch](https://github.com/thomaspark/bootswatch)
 * [bootstrapstudio](https://bootstrapstudio.io/)
 * [bootstrap-table](https://github.com/wenzhixin/bootstrap-table)
+* [bootstrapmade](https://bootstrapmade.com/)
+* [bootstrapdash](https://www.bootstrapdash.com/)
 </div><div>
 
 ```

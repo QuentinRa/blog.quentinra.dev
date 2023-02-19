@@ -1,6 +1,6 @@
 # Apache2 webserver
 
-😵 *Due to some mistake on my side, these notes were not tested (nor complete) at all* 😵
+😵 *Due to some mistake on my side, these notes were not tested (nor are complete) at all* 😵
 
 <div class="row row-cols-md-2"><div>
 
