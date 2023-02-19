@@ -4,7 +4,7 @@
 
 PHP <small>(PHP Hypertext preprocessor, a recursive acronym)</small> is still a quite used language to dynamically generate HTML pages. You can use
 
-* 🍛 Expressions <small>(current date)</small>
+* 🍛 Expressions <small>(e.g. dynamic values such as the current date)</small>
 * 🔁 Loops <small>(for, foreach, while...)</small>
 * 🔀 Branching <small>(if, else)</small>
 * 🥬 Fetch data from a database/... to render a page

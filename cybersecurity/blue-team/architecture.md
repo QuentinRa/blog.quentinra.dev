@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-A cybersecurity architect design and oversee the implementation of security solutions within an organization's IT infrastructure.
+Security architecture is the process of designing and oversee the implementation of security controls within an organization's IT infrastructure to protect IT assets for harmful actions such as unauthorized access modification or deletion, data disclosure...
 
 Cybersecurity architects are responsible for identifying potential security risks and recommending measures <small>(software, hardware, peoples...)</small> to strengthen the security architecture of the IT infrastructure, **and align with the organization strategy goals and objectives** ✅.
 
@@ -10,36 +10,54 @@ Frameworks like SABSA and TOGAF are methodologies to implement security architec
 
 Additionally, some controls may be enforced:
 
-* 👉 Regulations <small>(ex: PCI DSS or HIPAA)</small>
-* 👉 Guidelines
+* 👉 Regulations according to the activity <small>(ex: PCI DSS or HIPAA)</small>
+* 👉 Guidelines or industry standards
+  * ISO
   * NIST, NSA
   * CIS Security
   * SANS <small>(see: critical security controls...)</small>
   * Providers <small>(ex: Cisco...)</small>
 </div><div>
 
-**The security triad (CIA)** is a famous principle used everywhere in security. The opposite is DAD <small>(Disclosure, Alternation, and Destruction)</small>.
+<div class="text-center">
+
+Pillars
+</div>
+
+👉 **The security triad (CIA)** is a famous principle used everywhere in security. The opposite is DAD <small>(Disclosure, Alternation, and Destruction)</small>.
 
 * Confidentiality: only those allowed can access resources
 * Integrity: only allowed modification can modify resources 
 * Availability: resources are available when needed
 
-👉 There is also the french "DICAI" model that extends CIA with Authentication and Identification <small>(verify the identity of users)</small>, and Irrevocability <small>(once performed, cannot be undone)</small>.
+There is also the french "DICAI" model that extends CIA with Authentication and Identification <small>(verify the identity of users)</small>, and Irrevocability <small>(once performed, cannot be undone)</small>.
 
-* **Defense-in-depth** 🕸️: use of multiple layers of security, along with various tactics, to slow down/stop an intruder
+👉 **Defense-in-depth** 🕸️: use of multiple layers of security, along with various tactics, to slow down/stop an intruder
 
-* **Triple-A principles** 🔒: Authentication <small>(verify the identity)</small>, Authorization <small>(determine the permissions)</small>, and Accounting <small>(logs)</small>.
+👉 **Triple-A principles** 🔒: Authentication <small>(verify the identity)</small>, Authorization <small>(determine the permissions)</small>, and Accounting <small>(logs)</small>.
 
-* **Zero trust** 🔎: do not trust anyone/anything, verify everything.
+👉 **Zero trust** 🔎: do not trust anyone/anything, verify everything.
 
-* **Principle of least privilege** 👮: everyone, regardless of their role in the company <small>(CEO...)</small>, should have the least privilege that they require to do their job.
+👉 **Principle of least privilege** 👮: everyone, regardless of their role in the company <small>(CEO...)</small>, should have the least privilege that they require to do their job.
 </div></div>
 
 <hr class="sep-both">
 
-## Random guidelines
+## 👻 To-do 👻
 
-<div class="row row-cols-md-2 mt-3"><div>
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* PPTP
+* MS CHAP V2
+* WAF/DBDS
+* IDS/IPS ([snort](https://www.snort.org/), [suricata](https://suricata.io/), [pfsense](https://www.pfsense.org/))
+* HIPS/HIDS (Host) and Anti-malwares/EDR 
+* NIDS/NIPS (Network)
+
+<details class="details-n">
+<summary>Random guidelines</summary>
 
 **General practices/strategies**
 
@@ -63,7 +81,6 @@ Additionally, some controls may be enforced:
 * Forbid the use of local printers <small>(over secured network printers)</small>
 * Disable autorun <small>(execution of code)</small> when connecting devices
 * Change the password of ALL wireless devices.
-</div><div>
 
 **User permissions**
 
@@ -85,46 +102,7 @@ Additionally, some controls may be enforced:
 **Networking**
 
 See attacks and mitigation in [Network Security](/operating-systems/networking/security/index.md).
-
-</div></div>
-<hr class="sep-both">
-
-## Access control
-
-<div class="row row-cols-md-2"><div>
-
-Access control is the process of managing access to resources in a computer system or network using policies and rules.
-
-➡️ ACLs, Access Control Lists, are a specific implementation of access control for a specific resource.
-
-There are multiple access control models, why may be combined in a defense-in-depth strategy.
-
-* **Discretionary Access Control (DAC)**: the owner of a resource define access rights for others. Ex: Unix File System.
-</div><div>
-
-* **Mandatory Access Control (MAC)**: access based on labels assigned to subjects (ex: users) and objects (ex: files).
-
-* **Role-Based Access Control (RBAC)**: each role is given permissions, and users are given roles based on what they do in the organization.
-
-* **Rule-Based Access Control (RBAC)**: rules that determine what someone can do based on who they are <small>(ex: IP...)</small>
-
-* **Time-Based Access Control (TAC)**: access is granted during an interval of time <small>(ex: working hours)</small>
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-* PPTP
-* MS CHAP V2
-* WAF/DBDS
-* IDS/IPS ([snort](https://www.snort.org/), [suricata](https://suricata.io/), [pfsense](https://www.pfsense.org/))
-* HIPS/HIDS (Host) and Anti-malwares/EDR 
-* NIDS/NIPS (Network)
+</details>
 </div><div>
 
 * BCP (Business continuity Plan)
@@ -134,5 +112,25 @@ Stuff that I found, but never read/used yet.
 * SLIs (Server Level Indicators)
 * RTO (Recovery Time Objectives)
 * RPO (Recovery Point Objective)
+
+<details class="details-n">
+<summary>Access Control</summary>
+
+Access control is the process of managing access to resources in a computer system or network using policies and rules.
+
+➡️ ACLs, Access Control Lists, are a specific implementation of access control for a specific resource.
+
+There are multiple access control models, why may be combined in a defense-in-depth strategy.
+
+* **Discretionary Access Control (DAC)**: the owner of a resource define access rights for others. Ex: Unix File System.
+
+* **Mandatory Access Control (MAC)**: access based on labels assigned to subjects (ex: users) and objects (ex: files).
+
+* **Role-Based Access Control (RBAC)**: each role is given permissions, and users are given roles based on what they do in the organization.
+
+* **Rule-Based Access Control (RBAC)**: rules that determine what someone can do based on who they are <small>(ex: IP...)</small>
+
+* **Time-Based Access Control (TAC)**: access is granted during an interval of time <small>(ex: working hours)</small>
+</details>
 
 </div></div>
