@@ -1,25 +1,5 @@
 # PHP Hypertext Preprocessor (PHP)
 
-There are alternatives to PHP, such as **Node.js**. You may [learn PHP on W3Schools](https://www.w3schools.com/PhP/default.asp), or maybe by reading the official documentation [reading the official reference](https://www.php.net/manual/en/langref.php) <small>(my recommendation, I would really want to read it completely)</small>.
-
-> You need to set up a server to be able to run some PHP, and you need to be familiar with HTML. It's strongly advised to read the [Web course](../../../../_programming/web/_general/_old/general/index.md) and the [HTML course](../../web/html/index.md) **beforehand**.
-
-<hr class="sl">
-
-## Composer
-
-Before digging into PHP, you may want to install some libraries/frameworks (later). This is something that can be done quite easily (even on Windows), by installing [composer](https://getcomposer.org/).
-
-```bash
-# follows the steps, generate your config
-$ composer init
-$ composer install something
-# $ composer install vendor/package:version (version optional)
-$ composer update
-```
-
-And you have to write `require_once __DIR__ . '/vendor/autoload.php';` at the beginning of your file. The versioning is working the same [as for package.json in Node.js](https://nodejs.dev/learn/semantic-versioning-using-npm).
-
 <hr class="sr">
 
 ## Writing PHP
