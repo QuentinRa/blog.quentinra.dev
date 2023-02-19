@@ -6,7 +6,7 @@ Security architecture is the process of designing and oversee the implementation
 
 Cybersecurity architects are responsible for identifying potential security risks and recommending measures <small>(software, hardware, peoples...)</small> to strengthen the security architecture of the IT infrastructure, **and align with the organization strategy goals and objectives** ✅.
 
-Frameworks like SABSA and TOGAF are methodologies to implement security architecture. 
+Frameworks like SABSA, TOGAF, or OSA are methodologies to implement security architecture. 
 
 Additionally, some controls may be enforced:
 
@@ -76,6 +76,34 @@ They will have to understand the security needs of the organization, and create 
 Security controls can be technical or procedural, physical or digital, and should include the cloud and IoT devices.
 
 ❌️ Following a checklist is unlikely to meet the business needs or provide real benefits. A security architect mustn't only rely on it, as they need to more sophisticated approach balancing the needs and requirements, risks, and technologies with the security.
+
+➡️ See COBIT framework.
+</div></div>
+
+<hr class="sep-both">
+
+## Model for business architecture
+
+<div class="row row-cols-md-2"><div>
+
+A company architecture is made up of smaller sub-architectures. A good security architecture should take each needs and risks into account. For instance, one sub-architecture may have access-control, another recovery plans...
+
+This a pyramid where the top is supported by lower level architectures, and higher level are developed in architectures levels below.
+
+**1. Business Architecture**: define how the business is structured <small>(processes, functions, strategies, policies...)</small>.
+
+➡️ Identify Business requirements and Business drivers.
+</div><div>
+
+**2. Information Architecture**: define how information and data is designed and organized <small>(databases, data sources...)</small>.
+
+➡️ See [Data governance](/cybersecurity/blue-team/data.md) to efficiently exploit/manage/protect data...
+
+**3. Applications Architecture**: define the design and organization of applications <small>(interfaces, interactions, ecosystems...)</small>.
+
+👉 Main objective: support business processes
+
+**4. Infrastructure Architecture**: define the physical and virtual resources  <small>(hardware, software, network...)</small>.
 </div></div>
 
 <hr class="sep-both">
