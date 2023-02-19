@@ -49,13 +49,33 @@ There is also the french "DICAI" model that extends CIA with Authentication and 
 
 It's important that before thinking about "security" or what makes something "secure", a security architect must think what values it has for the company.
 
-This is done by identifying [risks](/cybersecurity/blue-team/risk.md), prioritizing them, and evaluating their impact along the cost to mitigate them. Based on these, the security architect will implement more or less controls "it it's worth it".
+This is done by identifying [risks](/cybersecurity/blue-team/risk.md), prioritizing them, and evaluating their impact along the cost to mitigate them under an acceptable level of risk. Based on these, the security architect will implement more or less security controls as long as "it is worth it".
 
 * The losses are significant
 * The losses are not lower than the cost to set up controls
 </div><div>
 
-...
+👉 You should view security as a way to enable business, and not preventing it.
+
+👉 Security give a competitive value to product. For instance, by providing a secure way for customers to do purchases on their smartphone, they can increase its value on the market.
+
+👉 Security is essential for cooperation between business. For instance, a company must trust another company that the data they share with them is properly secured/managed.
+</div></div>
+
+<hr class="sep-both">
+
+## Security controls
+
+<div class="row row-cols-md-2"><div>
+
+The security architect need to have a broad view of the organization as they will interact with everyone, not only the IT service.
+
+They will have to understand the security needs of the organization, and create principles, policies, guidelines, and standards to design and implement the necessary security controls.
+</div><div>
+
+Security controls can be technical or procedural, physical or digital, and should include the cloud and IoT devices.
+
+❌️ Following a checklist is unlikely to meet the business needs or provide real benefits. A security architect mustn't only rely on it, as they need to more sophisticated approach balancing the needs and requirements, risks, and technologies with the security.
 </div></div>
 
 <hr class="sep-both">
