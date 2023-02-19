@@ -1,7 +1,5 @@
 # PHP Hypertext Preprocessor (PHP)
 
-You can use **PHP** to dynamically generate some part of your HTML. You will be able to use **statements**, **functions**, **loops**, **databases**, and many more things to make your code cleaner and more maintainable. We will soon be in **PHP8.1** (11-2021), but many are still in **PHP7/PHP7.4**, and some developers are still using the outdated **PHP5.6**.
-
 There are alternatives to PHP, such as **Node.js**. You may [learn PHP on W3Schools](https://www.w3schools.com/PhP/default.asp), or maybe by reading the official documentation [reading the official reference](https://www.php.net/manual/en/langref.php) <small>(my recommendation, I would really want to read it completely)</small>.
 
 > You need to set up a server to be able to run some PHP, and you need to be familiar with HTML. It's strongly advised to read the [Web course](../../../../_programming/web/_general/_old/general/index.md) and the [HTML course](../../web/html/index.md) **beforehand**.

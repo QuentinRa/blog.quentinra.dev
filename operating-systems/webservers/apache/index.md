@@ -11,7 +11,7 @@ $ sudo apt install apache2
 ```
 </div><div>
 
-🌍 You may use an emulator instead of directly installing apache
+👉 You may use an emulator instead of directly installing apache
 
 * WAMP server <small>(Windows Apache MySQL PHP)</small> | [Notes](wamp.md) 🚀
 * LAMP server <small>(Linux Apache MySQL PHP)</small>
@@ -51,7 +51,6 @@ $ cd /etc/apache2/sites-enabled/ # copies
 $ tail /var/log/apache2/access.log
 $ tail /var/log/apache2/error.log
 ```
-</div><div>
 
 Enable configs/virtual hosts
 
@@ -61,6 +60,15 @@ $ cp 000-default.conf example.com.conf
 $ sudo a2ensite example.com.conf
 $ sudo a2dissite example.com.conf
 $ sudo apache2ctl configtest
+```
+</div><div>
+
+When installing a PHP module, you can enable its configuration, and the specific functions of the module using apache without having to edit each `php.ini`.
+
+```
+$ sudo apt install php-mbstring
+$ sudo a2enconf php7.4-mbstring
+$ sudo a2enmod php7.4-mbstring
 ```
 
 Some modules
@@ -72,12 +80,18 @@ $ sudo a2enmod ssl
 $ sudo a2enmod rewrite
 ```
 
-Create a website in `/var/www/` for a non-root user `yyy`.
+Create a folder `xxx` for a website, in `/var/www/` <small>(usual folder than www-data can read/edit)</small> for a non-root user `yyy`.
 
 ```
 $ sudo mkdir -p /var/www/xxx/
 $ sudo chown -R yyy:yyy /var/www/xxx/
 $ sudo chmod -R 755 /var/www/xxx/
+```
+
+Sometimes, you may have permissions problems. You need to investigate the problem, but one way to fix it is to give `www-data` the ownership over a directory <small>(allowing they to create/edit files)</small>.
+
+```
+sudo chown -R www-data:www-data folder/
 ```
 </div></div>
 
