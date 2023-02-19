@@ -43,6 +43,23 @@ There is also the french "DICAI" model that extends CIA with Authentication and 
 
 <hr class="sep-both">
 
+## Mindset
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+It's important that before thinking about "security" or what makes something "secure", a security architect must think what values it has for the company.
+
+This is done by identifying [risks](/cybersecurity/blue-team/risk.md), prioritizing them, and evaluating their impact along the cost to mitigate them. Based on these, the security architect will implement more or less controls "it it's worth it".
+
+* The losses are significant
+* The losses are not lower than the cost to set up controls
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
