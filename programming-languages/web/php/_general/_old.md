@@ -119,17 +119,6 @@ For instance, you could have a view for the head, one for the footer, and one vi
 * add annotations
 </details>
 
-<hr class="sl">
-
-## Tests with PHPUnit
-
-You can write some tests in PHP using `phpunit`. You may read the [course about Tests](../../proj/tests/index.md) beforehand.
-
-You can install PHPUnit using composer like this `composer require --dev phpunit/phpunit^9.5`, but you should read the [documentation](https://phpunit.readthedocs.io/en/9.5/installation.html#composer). I'm using PHPStorm to compile and run my tests, but maybe you could do that with `phpunit test_file.php` using the command-line (not tested).
-
-* [TestSuite](tests/file.md)
-* [Assertions](tests/assertions.md)
-
 <hr class="sr">
 
 ## Sources

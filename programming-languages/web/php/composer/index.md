@@ -38,3 +38,17 @@ Installing packages will generate a `composer.json.lock`. This file keep track o
 
 ➡️ Note that packages are updated according to the ranges/rules defined in `composer.json`, so even if a package has updates, it may not be updated, if the update is not within the allowed range.
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* `composer require --dev`
+</div><div>
+
+
+</div></div>
