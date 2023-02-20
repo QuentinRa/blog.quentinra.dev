@@ -89,11 +89,11 @@ Security controls can be technical or procedural, physical or digital, and shoul
 A company architecture is made up of smaller sub-architectures. A good security architecture should take each needs and risks into account. For instance, one sub-architecture may have access-control, another recovery plans...
 
 This a pyramid where the top is supported by lower level architectures, and higher level are developed in architectures levels below.
+</div><div>
 
 **1. Business Architecture**: define how the business is structured <small>(processes, functions, strategies, policies...)</small>.
 
 ➡️ Identify Business requirements and Business drivers.
-</div><div>
 
 **2. Information Architecture**: define how information and data is designed and organized <small>(databases, data sources...)</small>.
 
@@ -112,19 +112,21 @@ This a pyramid where the top is supported by lower level architectures, and high
 
 <div class="row row-cols-md-2"><div>
 
-A systems approach is a structured way to think about the security of a system. It ensures that every aspect is considered, and that decisions are rational. 
+A systems approach is a structured way to think about the security of a system. It ensures that
 
-It ensures that the goals are met, that the information systems are efficiently exploiting the company environment, and that everything was considered to bring the most benefit to the company.
+* every aspect is considered to bring the most benefits
+* that decisions are rational, goals are met
+* systems are efficiently exploiting the company environment
 
-It also includes control systems which are made up of three sub-systems: control, measurement, and decision. For instance, when a threat is detected, information is collected, and a decision is made.
+Systems are becoming more complex <small>(cloud, transactions...)</small>. In this approach, we break down the system using a top-down approach, into less complex sub-systems and components. Each is seen as a black-box in which we only know the I/O. Then, using "logical flow analysis", we ensure that all aspects of the system are considered.
 
 </div><div>
 
-👉 You must understand the scope/perimeter/context and consider all aspects of the system <small>(ex: external services...)</small>. ➡️ We break down the system into sub-systems and components. This is called top-down decomposition, and reduce complexity. Using logical flow analysis, we ensure that all aspects of the system are considered.
+👉 Everything (ideas, needs, decisions) is documented and should be traceable.
 
-👉 Decisions and ideas must be recorded. Decisions must be based on an objective criteria, and must be documented and traceable.<br> ➡️ For instance, given a security control, you can score each option.
+👉 Start from business needs to design the system. Take into account the environment <small>(see PESTEL, SWOT matrix)</small>.
 
-👉️ See also PESTEL, SWOT to analyze the environment.
+👉 We must be able to tell how the system perform, to ensure its efficiently used <small>(metrics; KPI; control, measurement, and decision)</small>.
 </div></div>
 
 <hr class="sep-both">
