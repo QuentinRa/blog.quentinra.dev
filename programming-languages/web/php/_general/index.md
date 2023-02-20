@@ -35,6 +35,62 @@ You can enable extensions on the server level, or you can edit each `php.ini` ma
 
 <hr class="sep-both">
 
+## Basics
+
+<div class="row row-cols-md-2"><div>
+
+#### Declare a variable
+
+...
+
+#### Types
+
+...
+
+#### Comments
+
+...
+</div><div>
+
+#### Print some text
+
+...
+
+#### Operators
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Control-flow structures
+
+<div class="row row-cols-md-2"><div>
+
+#### Branching
+
+...
+</div><div>
+
+#### Loops
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Functions
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
