@@ -68,14 +68,16 @@ This is done by identifying [risks](/cybersecurity/blue-team/risk.md), prioritiz
 
 <div class="row row-cols-md-2"><div>
 
-The security architect need to have a broad view of the organization as they will interact with everyone, not only the IT service. 
+Security controls are security measures to reduce/prevent risks.
 
-They will have to understand the security needs of the organization, and **create** principles, policies, guidelines, and standards to **design** and **implement** the necessary security controls.
+👉 Examples: Firewalls, IDS/IPS, Access control...
 
-Security controls can be technical or procedural, physical or digital, and should include the cloud and IoT devices.
+The security architect need to have a broad view of the organization as they will interact with everyone, not only the IT service. They will have to understand the security needs of the organization, and **create** principles, policies, guidelines, and standards to **design** and **implement** the necessary security controls.
+
+Security controls can be technical or administrative, physical or digital, and should include the cloud and IoT devices.
 </div><div>
 
-❌️ Following a checklist is unlikely to meet the business needs or provide real benefits. A security architect mustn't only rely on it, as they need to more sophisticated approach balancing the needs and requirements, risks, and technologies with the security.
+❌️ Following a checklist is unlikely to meet the business needs or provide real benefits. A security architect mustn't only rely on it, as they need to more sophisticated approach balancing the needs and requirements, risks, and technologies with the security. ✅ Solutions should be selected according to the needs/goals of the organization.
 
 ➡️ See COBIT framework.
 </div></div>

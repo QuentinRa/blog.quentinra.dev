@@ -51,7 +51,7 @@ The AV is 45 millions. Two out of three times we can mitigate the risk, it means
 
 **Vulnerability assessments**: [...]
 
-**Threat modeling**: [...]
+**Threat modeling**: identify and assess potential threats and vulnerabilities to develop an effective strategy against them.
 
 **Business impact analysis**: [...]
 </div></div>
