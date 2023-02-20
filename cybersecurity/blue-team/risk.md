@@ -2,26 +2,23 @@
 
 <div class="row row-cols-md-2"><div>
 
-The risk management evaluates the probability of something occurring <small>(natural risks, malicious actors...)</small>.
+Risk management is the process of identifying, assessing, and prioritizing risks. The organization will try to 
 
-* **Quantitatively**: we assign a numerical value to the risk
-* **Qualitatively**: we assign a level to the risk
+* reduce the risks under an acceptable
+* mitigate the risks
 
-The risk could be speculative (gain or loss) or non-speculative (loss). The goal is to reduce risks under an acceptable level.
-
-➡️ Risks should be prioritized based on how critical they are <small>(legal requirements, big impact on the business...)</small>. Mitigations should be taken in accordance to the level of the risk.
+➡️ If the losses aren't significant enough, or the loss is lower than the cost to mitigate the risk, then the organization may ignore a risk.
 </div><div>
 
-There are many types of risks: financial, legal, operational, or IT security risks such as:
+There are many types of risks <small>(financial losses, disasters, security breaches, operational issues, legal liabilities...)</small> such as:
 
-* Misfunction/outage of the Domain Controller <small>(Active Directory)</small>
-* Accidental removal of data/accounts
-* Unauthorized access/... to sensible/critical data
-* Improper/illegal use of data <small>ex: clients financial data)</small>
-* Infections, DDoS, hacking...
-* Communication/passwords being intercepted/compromised
-* See [Data governance risks](/cybersecurity/blue-team/data.md#security-risks-and-business-needs)
-
+* 🔥 Misfunction/outage of the Domain Controller <small>(Active Directory)</small>
+* 🙅‍♀️ Accidental removal of data/accounts
+* 🔐 Unauthorized access/... to sensible/critical data
+* 💰 Improper/illegal use of data <small>(ex: use of a client's credit card)</small>
+* 🔫 Infections, DDoS, hacking...
+* 🧑‍💻 Communication/passwords being intercepted/compromised
+* 🗃️ See [Data governance risks](/cybersecurity/blue-team/data.md#security-risks-and-business-needs)
 </div></div>
 
 <hr class="sep-both">
@@ -30,9 +27,9 @@ There are many types of risks: financial, legal, operational, or IT security ris
 
 <div class="row row-cols-md-2"><div>
 
-#### Quantitatively
+There are many ways to assess the impact of a risk on the organization, which will help to prioritize them or to request a budget.
 
-<p></p>
+**Quantitative risk assessment**: we assign a financial value to a risk. The main problem is that is it hard to find the numerical values.
 
 1. Find the Asset Value <small>(AV)</small>
 2. Find the Exposure Factor to the risk <small>(EF)</small>
@@ -40,16 +37,23 @@ There are many types of risks: financial, legal, operational, or IT security ris
 4. Find the annual rate occurrence <small>(ARO)</small>
 5. Find the annual loss expected <small>(ALE=ARO*SLE)</small>
 
-This approach is quite simple, if the AV is 50 millions, and two out of three times we can mitigate the risk $EF=\frac{1}{3}$, then the loss per event is $SLE=50000000 * \frac{1}{3}=15\text{ millions}$. If this risk occurs 2 times per year, then we will have $ARO=2$, and $ALE=30\text{ millions}$.
+<details class="details-s mb-3">
+<summary>Example</summary>
+
+The AV is 45 millions. Two out of three times we can mitigate the risk, it means that the risk occurs 1 out of 3 times, so `EF=1/3`. The loss per event is `SLE=45M*(1/3)=15M`. The risk occur two times per year, so `ARO=2` and `ALE=15M*2=30M`. It means that we won't pay insurance or means to mitigate the risk greater than 30 millions.
+</details>
+
+**Qualitative risk assessment**: we gather a group of experts on each asset, and ask them to make a judgment based on likelihood, occurrence, impact, and the cost to mitigate the risk. A risk matrix is often used to visualize the ranking of assessed risks.
+
 </div><div>
 
-➡️ The main problems with this approach is that it is hard to identify every risk or to determine the value of every asset, the factors, or the occurrence rate.
+**Risk matrix**: a matrix in which we put risks in cells based on likelihood and severity. We usually add colors to cells like grey, yellow, orange, and red, to indicate their importance.
 
-#### Qualitatively
+**Vulnerability assessments**: [...]
 
-This is the most used approach. We gather a group of experts on each asset within the company, and ask them to evaluate the risk based on a consensus.
+**Threat modeling**: [...]
 
-We will usually group risks in a family of risks, and place them in a risk matrix, were the risks the most important and likely to occur are dealt with first.
+**Business impact analysis**: [...]
 </div></div>
 
 <hr class="sep-both">
