@@ -21,7 +21,7 @@ Additionally, some controls may be enforced:
 
 <div class="text-center">
 
-Pillars
+Pillars & Foundations
 </div>
 
 👉 **The security triad (CIA)** is a famous principle used everywhere in security. The opposite is DAD <small>(Disclosure, Alternation, and Destruction)</small>.
@@ -104,6 +104,27 @@ This a pyramid where the top is supported by lower level architectures, and high
 👉 Main objective: support business processes
 
 **4. Infrastructure Architecture**: define the physical and virtual resources  <small>(hardware, software, network...)</small>.
+</div></div>
+
+<hr class="sep-both">
+
+## Systems approach to security architecture
+
+<div class="row row-cols-md-2"><div>
+
+A systems approach is a structured way to think about the security of a system. It ensures that every aspect is considered, and that decisions are rational. 
+
+It ensures that the goals are met, that the information systems are efficiently exploiting the company environment, and that everything was considered to bring the most benefit to the company.
+
+It also includes control systems which are made up of three sub-systems: control, measurement, and decision. For instance, when a threat is detected, information is collected, and a decision is made.
+
+</div><div>
+
+👉 You must understand the scope/perimeter/context and consider all aspects of the system <small>(ex: external services...)</small>. ➡️ We break down the system into sub-systems and components. This is called top-down decomposition, and reduce complexity. Using logical flow analysis, we ensure that all aspects of the system are considered.
+
+👉 Decisions and ideas must be recorded. Decisions must be based on an objective criteria, and must be documented and traceable.<br> ➡️ For instance, given a security control, you can score each option.
+
+👉️ See also PESTEL, SWOT to analyze the environment.
 </div></div>
 
 <hr class="sep-both">

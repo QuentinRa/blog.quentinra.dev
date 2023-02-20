@@ -16,6 +16,4 @@ The Sherwood Applied Business Security Architecture (**SABSA**) model is a six-l
 </div><div>
 
 Each layer is analyzed with 6 questions: What, Why, How, Who, Where, and When, generating a 36-cell table called **SABSA Matrix**.
-
-...
 </div></div>
