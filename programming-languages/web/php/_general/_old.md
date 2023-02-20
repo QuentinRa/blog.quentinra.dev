@@ -48,22 +48,9 @@ echo "<pre>".var_dump($exception)."</pre>"
 
 </details>
 
-<hr class="sr">
-
-## Basic concepts
-
-* [Variables](basic/variables.md)
-* [Operators](basic/operators.md)
-* [Structures](basic/structures.md)
-* [Functions](basic/functions.md)
-* [Basic functions](basic/functions-basic.md)
-* [Include/Require](basic/include.md)
-* [Arrays](basic/arrays.md)
-
 <table class="table border-dark table-bordered table-striped">
 <tr><th class="text-center">Other notes about the Language</th></tr>
 <tr><td>If there is no HTML after a PHP bloc, you can omit <code>?&gt;</code></td></tr>
-<tr><td>You can write comments with <code>//</code>, <code>/**/</code>, or <code>#</code>.</td></tr>
 </table>
 
 <hr class="sl">

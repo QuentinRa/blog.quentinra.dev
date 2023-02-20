@@ -43,7 +43,7 @@ You can enable extensions on the server level, or you can edit each `php.ini` ma
 
 Types are implicit. The name starts with `$`.
 
-```php
+```php!
 $n = 5; // integer
 $n = 5.0; // double
 $n = "5"; // string
@@ -53,18 +53,28 @@ $n = true; // true
 $n = false; // false
 ```
 
+You can also declare constants either using const, or define. The latter should be used when the right-hand value is a non-const variable.
+
+```php!
+// same as define ('XXX', 5);
+const XXX = 5;
+echo XXX;
+```
+
+➡️ Before PHP7.3, constants were case-insensitive, meaning we could call the constant above with "Xxx" or "xxx" and it worked.
+
 #### Types
 
 Types are: `boolean`, `integer`, `double`, `string`, `array`, `object`, `resource`, and `NULL`. You can check/get the type using:
 
-```php
+```php!
 $someVariableType = gettype($someVariable); // get
 if (is_integer($someVariable)) {} // check
 ```
 
 #### Comments
 
-```php
+```php!
 // a comment
 /* a comment */
 # a comment
@@ -75,7 +85,7 @@ if (is_integer($someVariable)) {} // check
 
 To print some text, you can use `echo`. You can also use `var_dump`, and `print_r`, but they are mostly used for debugging and objects/arrays.
 
-```php
+```php!
 echo "XXX: $variable"; // ✅ $variable is replaced
 echo 'XXX: $variable'; // ❌ not replaced
 echo "XXX: a{$variable}z"; // ✅ $variable is replaced
@@ -83,6 +93,7 @@ echo "XXX: a".$variable."z"; // concatenation
 // advanced: like in Bash, you can dynamically
 // generate the name of the variable you want to call
 echo "XXX: ${"variable"}";
+var_dump($variable); // print debug information
 ```
 
 #### Operators
@@ -100,7 +111,7 @@ For equality operators, there are two: `===` and `!==` <small>(strict, same valu
 
 PHP do not check that variables were declared before executing some code. `isset` check that the variable exists, while `empty` check both that the variable exists, and that it is not "empty".
 
-```php
+```php!
 if (!isset($someInputFromAUser)) { /* error */ }
 if (!empty($someInputFromAUser)) { /* error */ }
 $yyy = $xxx ?? 0; // or, use default values if not set
@@ -115,14 +126,45 @@ $yyy = $xxx ?? 0; // or, use default values if not set
 
 <div class="row row-cols-md-2"><div>
 
+If PHP, there are two kind of structures. Those using braces, and those using starting (`:`) and ending tags (`endXXX`). 
+
+This is because you may use HTML inside structures, and you may close and re-open a PHP bloc, but it doesn't look clean using braces:
+
+```phpt!
+<?php if (...) { ?>
+<p>This HTML element is only shown when the IF is true</p>
+<?php } ?>
+```
+
 #### Branching
 
-...
+```php!
+if ($condition) { /* code */ }
+elseif ($condition) { /* code */ }
+else { /* code */ }
+```
+
+```php!
+if ($condition): /* ... */ endif;
+```
 </div><div>
 
 #### Loops
 
-...
+```php!
+// for
+for ($i = 0; $i < 10; $i++) { /* code */ }
+for ($i = 0; $i < 10; $i++): /* code */ endfor;
+
+// while
+while ($condition){ /* code */ }
+while ($condition): endwhile;
+
+// do while
+do { /* code */ } while ($condition);
+```
+
+➡️ You can use `break` to exit a loop, and `continue` to move to the next iteration <small>(as in many languages)</small>.
 </div></div>
 
 <hr class="sep-both">
@@ -132,6 +174,25 @@ $yyy = $xxx ?? 0; // or, use default values if not set
 <div class="row row-cols-md-2"><div>
 
 ...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Website specific
+
+<div class="row row-cols-md-2"><div>
+
+#### Redirection
+
+You can use `header` to redirect a user using PHP. Note that you must call it before rendering anything, otherwise use an HTML redirect. Also note that you must call `exit` right-after, otherwise, the remaining PHP code will still be executed before redirecting.
+
+```php!
+header("Location: index.php");
+exit();
+```
 </div><div>
 
 ...
