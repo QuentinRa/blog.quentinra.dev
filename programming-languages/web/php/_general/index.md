@@ -35,6 +35,25 @@ You can enable extensions on the server level, or you can edit each `php.ini` ma
 
 <hr class="sep-both">
 
+## Get started
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+You can import another PHP script using `require` <small>(raise an error if the import failed)</small> or `import` <small>(don't mind failed includes)</small>. Most of the time, you want a script to be imported once, which could be done with `xxx_once`.
+
+```php
+include "test.php";
+include_once "test.php";
+require "test.php";
+require_once "test.php";
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Basics
 
 <div class="row row-cols-md-2"><div>
@@ -232,7 +251,7 @@ Since PHP8.0, a value can explicitly declare multiple types with `|`
 function sum(int $a, int | null $b) : int | null {}
 ```
 
-#### Anonymous functions
+#### Anonymous functions/Closures
 
 ```php!
 $x = function () { echo "XXX"; };
