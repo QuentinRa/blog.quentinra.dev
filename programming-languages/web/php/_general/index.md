@@ -44,13 +44,13 @@ You can enable extensions on the server level, or you can edit each `php.ini` ma
 Types are implicit. The name starts with `$`.
 
 ```php!
-$n = 5; // integer
-$n = 5.0; // double
+$n = 5; // integer | int
+$n = 5.0; // float
 $n = "5"; // string
 $n = '5'; // string
 $n = null; // null
-$n = true; // true
-$n = false; // false
+$n = true; // boolean | bool
+$n = false; // boolean 
 ```
 
 You can also declare constants either using const, or define. The latter should be used when the right-hand value is a non-const variable.
@@ -142,10 +142,18 @@ This is because you may use HTML inside structures, and you may close and re-ope
 if ($condition) { /* code */ }
 elseif ($condition) { /* code */ }
 else { /* code */ }
+
+if ($condition): /* ... */ endif;
 ```
 
-```php!
-if ($condition): /* ... */ endif;
+```php
+switch ($number) {
+    case 0: /* code */ break;
+    case 1: case 2: /* code */ break;
+    default: /* code */ break;
+}
+
+switch ($number): /* code */ endswitch;
 ```
 </div><div>
 
@@ -173,10 +181,36 @@ do { /* code */ } while ($condition);
 
 <div class="row row-cols-md-2"><div>
 
-...
+Since PHP7.*, you can type parameters and the return type.
+
+```php
+function sum(int $a, int $b) : int {
+    return $a + $b;
+}
+```
+
+➡️ You must use `int/bool/...` instead of `integer/boolean/...`.
+
+➡️ Since PHP7.4, you can use `void`.
 </div><div>
 
-...
+You can give default value to parameters
+
+```php!
+function sum(int $a, int $b = 10) : int {}
+```
+
+You can declare a nullable parameter or return type
+
+```php!
+function sum(int $a, ?int $b) : ?int {}
+```
+
+Since PHP8.0, a value can explicitly declare multiple types with `|`
+
+```php!
+function sum(int $a, int | null $b) : int | null {}
+```
 </div></div>
 
 <hr class="sep-both">
