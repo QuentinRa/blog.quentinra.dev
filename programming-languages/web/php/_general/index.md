@@ -41,20 +41,49 @@ You can enable extensions on the server level, or you can edit each `php.ini` ma
 
 #### Declare a variable
 
-...
+Types are implicit. The name starts with `$`.
+
+```php
+$n = 5; // integer
+$n = 5.0; // double
+$n = "5"; // string
+$n = '5'; // string
+$n = null; // null
+$n = true; // true
+$n = false; // false
+```
 
 #### Types
 
-...
+Types are: `boolean`, `integer`, `double`, `string`, `array`, `object`, `resource`, and `NULL`. You can check/get the type using:
+
+```php
+$someVariableType = gettype($someVariable); // get
+if (is_integer($someVariable)) {} // check
+```
 
 #### Comments
 
-...
+```php
+// a comment
+/* a comment */
+# a comment
+```
 </div><div>
 
 #### Print some text
 
-...
+To print some text, you can use `echo`. You can also use `var_dump`, and `print_r`, but they are mostly used for debugging and objects/arrays.
+
+```php
+echo "XXX: $variable"; // ✅ $variable is replaced
+echo 'XXX: $variable'; // ❌ not replaced
+echo "XXX: a{$variable}z"; // ✅ $variable is replaced
+echo "XXX: a".$variable."z"; // concatenation
+// advanced: like in Bash, you can dynamically
+// generate the name of the variable you want to call
+echo "XXX: ${"variable"}";
+```
 
 #### Operators
 
