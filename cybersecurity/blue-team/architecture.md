@@ -112,17 +112,17 @@ This a pyramid where the top is supported by lower level architectures, and high
 
 <div class="row row-cols-md-2"><div>
 
-A systems approach is a structured way to think about the security of a system. It ensures that
+A systems approach is a structured way to think about the security of a system, as they are becoming more complex <small>(cloud...)</small>. It ensures that:
 
 * every aspect is considered to bring the most benefits
 * that decisions are rational, goals are met
 * systems are efficiently exploiting the company environment
 
-Systems are becoming more complex <small>(cloud, transactions...)</small>. In this approach, we break down the system using a top-down approach, into less complex sub-systems and components. Each is seen as a black-box in which we only know the I/O. Then, using "logical flow analysis", we ensure that all aspects of the system are considered.
+We break down the system using a top-down approach, into less complex sub-systems and components. Each is seen as a black-box in which we only know the I/O. Using "logical flow analysis", we analyze and ensure that all aspects of the system are considered.
 
 </div><div>
 
-👉 Everything (ideas, needs, decisions) is documented and should be traceable.
+👉 Everything (ideas, needs, decisions) is documented and should be traceable <small>(given a security control, you can score each option; peer review...)</small>.
 
 👉 Start from business needs to design the system. Take into account the environment <small>(see PESTEL, SWOT matrix)</small>.
 
