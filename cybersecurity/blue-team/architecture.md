@@ -6,7 +6,7 @@ Security architecture is the process of designing and oversee the implementation
 
 Cybersecurity architects are responsible for identifying potential security risks and recommending measures <small>(software, hardware, peoples...)</small> to strengthen the security architecture of the IT infrastructure, **and align with the organization strategy goals and objectives** ✅.
 
-Frameworks like SABSA, TOGAF, or OSA are methodologies to implement security architecture. 
+Frameworks like [SABSA](frameworks/sabsa.md), TOGAF, or OSA are methodologies to implement security architecture. 
 
 Additionally, some controls may be enforced:
 
