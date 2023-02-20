@@ -183,22 +183,42 @@ do { /* code */ } while ($condition);
 
 Since PHP7.*, you can type parameters and the return type.
 
-```php
+```php!
 function sum(int $a, int $b) : int {
     return $a + $b;
 }
+
+echo sum(5, 6);
 ```
 
 ➡️ You must use `int/bool/...` instead of `integer/boolean/...`.
 
 ➡️ Since PHP7.4, you can use `void`.
+
+#### Passage by reference
+
+In PHP, arguments are passed by value. If you want a function to modify a variable, you can pass it by reference.
+
+```php
+function sum(int $a, int $b, &$res) : void {
+    $res = $a + $b;
+}
+
+$res = -1; // declare it
+sum(5, 6, $res); // fill it
+echo $res; // output: 11
+```
 </div><div>
+
+#### Default values
 
 You can give default value to parameters
 
 ```php!
 function sum(int $a, int $b = 10) : int {}
 ```
+
+#### Nullable and multi-types arguments
 
 You can declare a nullable parameter or return type
 
@@ -211,6 +231,22 @@ Since PHP8.0, a value can explicitly declare multiple types with `|`
 ```php!
 function sum(int $a, int | null $b) : int | null {}
 ```
+
+#### Anonymous functions
+
+```php!
+$x = function () { echo "XXX"; };
+$x();
+```
+
+Anonymous functions can "use" variable from the outside.
+
+```php!
+$a = 10;
+$x = function () use ($a) { echo $a; };
+$x(); // output: 10
+```
+
 </div></div>
 
 <hr class="sep-both">
@@ -239,6 +275,8 @@ exit();
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
+
+* global variables
 
 </div><div>
 
