@@ -87,7 +87,26 @@ echo "XXX: ${"variable"}";
 
 #### Operators
 
-...
+* arithmetic: `+`, `-`, `*`, `/`, `+=`, `-=`, `*=`, `/=`, `**` (power), `%` (mod), `^` (xor)
+* comparison: `>`, `>=`, `<=`, `<`
+* booleans: `&&`, `||`, `!` (not)
+* booleans: `and`, `or` <small>(use &&/||)</small>
+
+For equality operators, there are two: `===` and `!==` <small>(strict, same value and same type)</small> or `==` and `!=`/`<>` <small>(same value after casting to the same type)</small>.
+
+👉️ Always use STRICT equality: `0 == 'true' && 0 == 'false'` is true in PHP, so `0` is both `'true'` and `'false'`.
+
+#### Existence
+
+PHP do not check that variables were declared before executing some code. `isset` check that the variable exists, while `empty` check both that the variable exists, and that it is not "empty".
+
+```php
+if (!isset($someInputFromAUser)) { /* error */ }
+if (!empty($someInputFromAUser)) { /* error */ }
+$yyy = $xxx ?? 0; // or, use default values if not set
+```
+
+➡️ You can destroy a variable with `unset`.
 </div></div>
 
 <hr class="sep-both">
