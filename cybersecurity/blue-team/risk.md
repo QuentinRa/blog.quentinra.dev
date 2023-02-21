@@ -4,10 +4,10 @@
 
 Risk management is the process of identifying, assessing, and prioritizing risks. The organization will try to 
 
-* reduce the risks under an acceptable
-* mitigate the risks
+* reduce a risk under an acceptable level
+* completely mitigate a risk
 
-➡️ If the losses aren't significant enough, or the loss is lower than the cost to mitigate the risk, then the organization may ignore a risk.
+➡️ If the losses aren't significant enough, or the loss is lower than the cost to mitigate the risk, the organization may choose to ignore a risk.
 </div><div>
 
 There are many types of risks <small>(financial losses, disasters, security breaches, operational issues, legal liabilities...)</small> such as:
@@ -16,9 +16,9 @@ There are many types of risks <small>(financial losses, disasters, security brea
 * 🙅‍♀️ Accidental removal of data/accounts
 * 🔐 Unauthorized access/... to sensible/critical data
 * 💰 Improper/illegal use of data <small>(ex: use of a client's credit card)</small>
-* 🔫 Infections, DDoS, hacking...
+* 🔫 Infections, DDoS, hacking, data leak...
 * 🧑‍💻 Communication/passwords being intercepted/compromised
-* 🗃️ See [Data governance risks](/cybersecurity/blue-team/data.md#security-risks-and-business-needs)
+* 🗃️ See also [data governance risks](/cybersecurity/blue-team/data.md#security-risks-and-business-needs)
 </div></div>
 
 <hr class="sep-both">
@@ -58,13 +58,15 @@ The AV is 45 millions. Two out of three times we can mitigate the risk, it means
 
 <hr class="sep-both">
 
-## Risk mitigation strategies
+## Risk mitigation
 
 <div class="row row-cols-md-2 mt-3"><div>
 
+Common strategies are:
+
 * ➡️ **Avoidance**: change your way of doing things
 * ➡️ **Mitigation**: use/do something to prevent the risk
-* ➡️ **Monitor and react**: make it so that you are able to react fast when the risk occurs
+* ➡️ **Monitor and react**: make it so that you are able to react in a fast and appropriate way when the risk occurs
 * ➡️ **Transfer**: transfer the risk to an external entity/someone else
 * ➡️ **Acceptation**: accept the risk and don't do anything
 </div><div>

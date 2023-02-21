@@ -4,41 +4,26 @@
 
 Security architecture is the process of designing and oversee the implementation of security controls within an organization's IT infrastructure to protect IT assets for harmful actions such as unauthorized access modification or deletion, data disclosure...
 
-Cybersecurity architects are responsible for identifying potential security risks and recommending measures <small>(software, hardware, peoples...)</small> to strengthen the security architecture of the IT infrastructure, **and align with the organization strategy goals and objectives** ✅.
+➡️ Security Architecture is Enterprise Architecture applied to IT.
 
-Frameworks like [SABSA](frameworks/sabsa.md), TOGAF, or OSA are methodologies to implement security architecture. 
+Security architects are responsible for identify the organization needs, and designing the appropriate security controls **that are tailored with the organization strategy, goals, and objectives** ✅.
 
-Additionally, some controls may be enforced:
+They will identify risks and plan security controls to reduce or mitigate them under an acceptable level, all by focusing on what the company need, so all risks may not be mitigated/handled.
 
-* 👉 Regulations according to the activity <small>(ex: PCI DSS or HIPAA)</small>
-* 👉 Guidelines or industry standards
+🎯 This is a continuous process, controls must be continually reviewed and updated to ensure that they are effective and appropriate. 
+</div><div>
+
+Frameworks like [SABSA](frameworks/sabsa.md), TOGAF, or OSA are methodologies to implement security architecture.
+
+Additionally, some security controls may be enforced:
+
+* Regulations according to the activity <small>(ex: PCI DSS or HIPAA)</small>
+* Guidelines or industry standards
   * ISO
   * NIST, NSA
   * CIS Security
   * SANS <small>(see: critical security controls...)</small>
   * Providers <small>(ex: Cisco...)</small>
-</div><div>
-
-<div class="text-center">
-
-Pillars & Foundations
-</div>
-
-👉 **The security triad (CIA)** is a famous principle used everywhere in security. The opposite is DAD <small>(Disclosure, Alternation, and Destruction)</small>.
-
-* Confidentiality: only those allowed can access resources
-* Integrity: only allowed modification can modify resources 
-* Availability: resources are available when needed
-
-There is also the french "DICAI" model that extends CIA with Authentication and Identification <small>(verify the identity of users)</small>, and Irrevocability <small>(once performed, cannot be undone)</small>.
-
-👉 **Defense-in-depth** 🕸️: use of multiple layers of security, along with various tactics, to slow down/stop an intruder
-
-👉 **Triple-A principles** 🔒: Authentication <small>(verify the identity)</small>, Authorization <small>(determine the permissions)</small>, and Accounting <small>(logs)</small>.
-
-👉 **Zero trust** 🔎: do not trust anyone/anything, verify everything, assume everyone is a threat, and continuously monitor resources.
-
-👉 **Principle of least privilege** 👮: everyone, regardless of their role in the company <small>(CEO...)</small>, should have the least privilege that they require to do their job.
 </div></div>
 
 <hr class="sep-both">
@@ -60,6 +45,33 @@ This is done by identifying [risks](/cybersecurity/blue-team/risk.md), prioritiz
 👉 Security give a competitive value to product. For instance, by providing a secure way for customers to do purchases on their smartphone, they can increase its value on the market.
 
 👉 Security is essential for cooperation between business. For instance, a company must trust another company that the data they share with them is properly secured/managed.
+</div></div>
+
+<hr class="sep-both">
+
+## Pillars & Foundations
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+**The security triad (CIA)** is a famous principle used everywhere in security. The opposite is DAD <small>(Disclosure, Alteration, and Destruction)</small>.
+
+* 🔒 Confidentiality: only those allowed can access resources
+* 🔎 Integrity: only allowed modification can modify resources
+* 📂 Availability: resources are available when needed
+
+There is also the french "DICAI" model that extends CIA with 
+
+* 🔑 Authentication and Identification: verify the identity of users
+* ⌛ Irrevocability: once performed, cannot be undone
+</div><div>
+
+**Defense-in-depth** 🕸️: use of multiple layers of security, along with various tactics, to slow down/stop an intruder
+
+**Triple-A principles** 🔒: Authentication <small>(verify the identity)</small>, Authorization <small>(determine the permissions)</small>, and Accounting <small>(logs)</small>.
+
+**Zero trust** 🔎: do not trust anyone/anything, verify everything, assume everyone is a threat, and continuously monitor resources.
+
+**Principle of the least privilege** 👮: everyone, regardless of their role in the company <small>(CEO...)</small>, should have the least privilege that they require to do their job.
 </div></div>
 
 <hr class="sep-both">
@@ -95,21 +107,25 @@ Security controls can be technical or administrative, physical or digital, and s
 A company architecture is made up of smaller sub-architectures. A good security architecture should take each needs and risks into account. For instance, one sub-architecture may have access-control, another recovery plans...
 
 This a pyramid where the top is supported by lower level architectures, and higher level are developed in architectures levels below.
+
+➡️ By following this model, it ensures that security architects find both risks and security controls for each level. It also important that everyone involved in security architecture understand each layer to ensure that security controls are properly implemented.
 </div><div>
 
 **1. Business Architecture**: define how the business is structured <small>(processes, functions, strategies, policies...)</small>.
 
-➡️ Identify Business requirements and Business drivers.
+👉 Identify Business requirements and Business drivers.
 
 **2. Information Architecture**: define how information and data is designed and organized <small>(databases, data sources...)</small>.
 
-➡️ See [Data governance](/cybersecurity/blue-team/data.md) to efficiently exploit/manage/protect data...
+👉 See [Data governance](/cybersecurity/blue-team/data.md) to efficiently exploit/manage/protect data...
 
 **3. Applications Architecture**: define the design and organization of applications <small>(interfaces, interactions, ecosystems...)</small>.
 
-👉 Main objective: support business processes
+👉 Identify required access control, secure coding practices...
 
-**4. Infrastructure Architecture**: define the physical and virtual resources  <small>(hardware, software, network...)</small>.
+**4. Infrastructure Architecture**: define the physical and logical resources  <small>(hardware, software, network, storage, cloud...)</small>.
+
+👉 Identify️ required security elements to secure resources
 </div></div>
 
 <hr class="sep-both">
