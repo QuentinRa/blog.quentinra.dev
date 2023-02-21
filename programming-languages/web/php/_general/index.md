@@ -432,6 +432,8 @@ class Person {
     { $this->age = $age; }
 }
 ```
+
+➡️ Attributes and functions can be `public`/`private`/`protected`. Aside from static members, there is no default visibility.
 </div><div>
 
 #### Static
@@ -454,6 +456,48 @@ $xxx = SomeClass::XXX;
 $yyy = SomeClass::$YYY;
 $zzz = SomeClass::zzz();
 ```
+
+#### Inheritance
+
+A class can inherit one class <small>(public/protected methods/attributes)</small>, and zero or more interfaces. Interfaces are basically custom types.
+
+```php
+// some interface with one function
+interface IPerson {
+    function fun1();
+}
+// ➡️ Use "," to implement more interfaces
+class Person implements IPerson {
+    function fun1() {}
+}
+// 👉 Example with a normal class
+class DoeFamilyMember extends Person {}
+```
+
+You can create abstract class, meaning a class that has 0 or more methods that were not implemented.
+
+```php
+abstract class IncompleteImplementation {
+    abstract function fun2();
+}
+class ConcreteClass extends IncompleteImplementation {
+    function fun2() {}
+}
+```
+
+#### Traits
+
+A class can privately inherit from multiple "trait" classes.
+
+```
+trait Parent1 { function xxx() {} } // public
+trait Parent2 { function yyy() {} } // public
+class Child { // inherit public/protected
+    use Parent1; // from Parent1
+    use Parent2; // and Parent2
+}
+```
+
 </div></div>
 
 <hr class="sep-both">
@@ -506,19 +550,25 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * global variables
-* spceship (`<=>`) operator PHP 8 to compare two values (0, 1, -1)
+* spaceship (`<=>`) operator PHP 8 to compare two values (0, 1, -1)
 * `type TypeName = integer;` (or int before PHP8)
 * `@file_get_contents(xxx)`/`file_get_contents`/`file_put_contents`
 * `__FILE__` (full path to file?)
-* interfaces, enums
+* enums
+* str functions (str_length, substr, str_split...)
 
 </div><div>
 
 * magic methods
-* namespaces (PHP 5.3+)
+* namespaces (PHP 5.3+), and `use`
 * `error_reporting()`/`try/catch`
+
+```php
+// pretty print debug
+echo "<pre>".var_dump($exception)."</pre>"
+```
+
 * unions return types 
 * annotations (`#[Pure]`)
-* str functions (str_length, substr, str_split...)
 
 </div></div>
