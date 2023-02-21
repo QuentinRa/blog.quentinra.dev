@@ -5,11 +5,6 @@
 echo "<pre>".var_dump($exception)."</pre>"
 ```
 
-<table class="table border-dark table-bordered table-striped">
-<tr><th class="text-center">Other notes about the Language</th></tr>
-<tr><td>If there is no HTML after a PHP bloc, you can omit <code>?&gt;</code></td></tr>
-</table>
-
 <hr class="sl">
 
 ## Main concepts
@@ -34,31 +29,3 @@ The MVC is an architectural pattern, in which you are splitting your code into
 * **Controller**: classes that will fetch some data from the model and render the view
 
 For instance, you could have a view for the head, one for the footer, and one view for the main content of each page. When you want to GET a page, the controller will write the head, get some data from the database (if needed), pass it to the view for the main content, and then write the footer.
-
-<hr class="sr">
-
-## Migration
-
-<details class="details-e">
-<summary>Notes from PHP5.6 to PHP 7</summary>
-
-* change `<? ?>` to `<?php ?>`
-* `ereg` deleted, `mbstring` deleted/moved, `mktime` changed
-* `list` replaced by `str_split`, and foreach changed
-* sessions changed
-* `mysql` deprecated, use `mysqli`
-</details>
-
-<details class="details-e">
-<summary>Notes in PHP7</summary>
-
-* add function returns types
-* add function arguments types
-</details>
-
-<details class="details-e">
-<summary>Notes in PHP8</summary>
-
-* add unions return types
-* add annotations
-</details>

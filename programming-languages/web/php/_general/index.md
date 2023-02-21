@@ -58,6 +58,12 @@ The PHP blocs (`<?php ?>`, `<?= ?>`) will be executed, and an HTML file will be 
 ```
 </div><div>
 
+➡️ Sometimes, you have files with only PHP inside. In such scenario, you can omit the closing `?>`.
+
+➡️ You can omit `;` in PHP blocs with only one instruction.
+
+#### Imports another PHP
+
 You can import another PHP script using `require` <small>(raise an error if the import failed)</small> or `import` <small>(don't mind failed includes)</small>. Most of the time, you want a script to be imported once, which could be done with `xxx_once`.
 
 ```php
@@ -225,7 +231,7 @@ while ($condition): endwhile;
 do { /* code */ } while ($condition);
 ```
 
-➡️ You can use `break` to exit a loop, and `continue` to move to the next iteration <small>(as in many languages)</small>.
+➡️ You can use `break` to exit a loop, and `continue` to move to the next iteration. You can also add a number: `break 2;`.
 </div></div>
 
 <hr class="sep-both">
@@ -425,5 +431,8 @@ Stuff that I found, but never read/used yet.
 * magic methods
 * namespaces (PHP 5.3+)
 * `error_reporting()`/`try/catch`
+* unions return types 
+* annotations (`#[Pure]`)
+* str functions (str_length, substr, str_split...)
 
 </div></div>
