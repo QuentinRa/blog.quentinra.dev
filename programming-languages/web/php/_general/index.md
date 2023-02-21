@@ -94,7 +94,7 @@ $n = true; // boolean | bool
 $n = false; // boolean 
 ```
 
-You can also declare constants either using const, or define. The latter should be used when the right-hand value is a non-const variable.
+You can also declare constants either using `const`, or `define`. The latter should be used when the right-hand value is a non-const variable.
 
 ```php!
 // same as define ('XXX', 5);
@@ -103,6 +103,17 @@ echo XXX;
 ```
 
 ➡️ Before PHP7.3, constants were case-insensitive, meaning we could call the constant above with "Xxx" or "xxx" and it worked.
+
+Finally, you can declare global variables. This can be used to allow functions to use external variables, or to *nicely* pass variables between scripts.
+
+```php
+global $g_someVariable; // declare
+$g_someVariable = 150; // assign
+
+// later
+global $g_someVariable; // declare (load existing value)
+echo $g_someVariable; // output: 150
+```
 
 #### Types
 
@@ -115,6 +126,8 @@ if (is_integer($someVariable)) {} // check
 
 ➡️ PHP use "Type juggling" meaning the variable is converted based on the context <small>(ex: inside a if statement, it is converted to a boolean...)</small>
 
+</div><div>
+
 #### Comments
 
 ```php!
@@ -122,7 +135,6 @@ if (is_integer($someVariable)) {} // check
 /* a comment */
 # a comment
 ```
-</div><div>
 
 #### Print some text
 
@@ -132,8 +144,8 @@ To print some text, you can use `echo`. You can also use `var_dump`, and `print_
 echo "XXX: $variable"; // ✅ $variable is replaced
 echo 'XXX: $variable'; // ❌ not replaced
 echo "XXX: a{$variable}z"; // ✅ $variable is replaced
-echo "XXX: a".$variable."z"; // concatenation
-// advanced: like in Bash, you can dynamically
+echo "XXX: a".$variable."z"; // ✅ concatenation
+// advanced 🧐: like in Bash, you can dynamically
 // generate the name of the variable you want to call
 echo "XXX: ${"variable"}";
 var_dump($variable); // print debug information
@@ -498,7 +510,51 @@ class Child { // inherit public/protected
     use Parent2; // and Parent2
 }
 ```
+</div></div>
 
+<hr class="sep-both">
+
+## Error handling
+
+<div class="row row-cols-md-2"><div>
+
+PHP error handling is mainly based on exceptions. A programmer can raise a signal called exception when something unexpected, mostly an error, occurred. This signal will stop a function/script and go back to the caller until it's caught. If no one catch and handle it, then it may be displayed to the user <small>(according to the server configuration)</small>.
+
+For debugging purpose, you can add these two lines to display all errors to the "user" <small>(a.k.a. you, the programmer)</small>.
+
+```php
+// usually at the start of the script
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+```
+
+To raise an exception, use `throw`
+
+```php
+throw new \Exception("a message");
+```
+</div><div>
+
+To catch and handle a function raising an exception, use `try-catch`
+
+```php
+try {
+    // code that may raise an exception
+} catch (\Exception $e) {
+    // print the message
+    echo "Error: ".$e->getMessage();
+    // pretty print of the stacktrace + message
+    echo "<pre>".var_dump($e)."</pre>"
+}
+```
+
+➡️ An alternative to "finally" could be `register_shutdown_function`.
+
+It's also possible to rise user-level warnings/errors/notices/...
+
+```php
+trigger_error("a message", E_USER_DEPRECATED);
+```
 </div></div>
 
 <hr class="sep-both">
@@ -601,7 +657,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* global variables
 * spaceship (`<=>`) operator PHP 8 to compare two values (0, 1, -1)
 * `type TypeName = integer;` (or int before PHP8)
 * `@file_get_contents(xxx)`/`file_get_contents`/`file_put_contents`
@@ -612,19 +667,12 @@ Stuff that I found, but never read/used yet.
 * htmlescapechars
 * `array_reduce`
 * `php -m`
-* see generators (yield/...)
 
 </div><div>
 
+* see generators (yield/...)
 * magic methods
 * namespaces (PHP 5.3+), and `use`
-* `error_reporting()`/`try/catch`
-
-```php
-// pretty print debug
-echo "<pre>".var_dump($exception)."</pre>"
-```
-
 * unions return types 
 * annotations (`#[Pure]`)
 * basically, what's new since PHP 8.0
