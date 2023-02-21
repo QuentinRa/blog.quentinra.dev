@@ -70,7 +70,9 @@ This is done by identifying [risks](/cybersecurity/blue-team/risk.md), prioritiz
 
 Security controls are security measures to reduce/prevent risks.
 
-👉 Examples: Firewalls, IDS/IPS, Access control...
+👉 Examples: Firewalls, IDS/IPS, Access control, [Updates management](/cybersecurity/blue-team/updates.md), [Logging and monitoring](/cybersecurity/blue-team/logs.md)...
+
+👉 There are 3 types of controls: Preventive, Detective, and Corrective.
 
 The security architect need to have a broad view of the organization as they will interact with everyone, not only the IT service. They will have to understand the security needs of the organization, and **create** principles, policies, guidelines, and standards to **design** and **implement** the necessary security controls.
 
@@ -80,6 +82,8 @@ Security controls can be technical or administrative, physical or digital, and s
 ❌️ Following a checklist is unlikely to meet the business needs or provide real benefits. A security architect mustn't only rely on it, as they need to more sophisticated approach balancing the needs and requirements, risks, and technologies with the security. ✅ Solutions should be selected according to the needs/goals of the organization.
 
 ➡️ See COBIT framework.
+
+➡️ A security control system is important to ensure security controls are effective, and to improve them. They employs a feedback loop with three sub-systems: control <small>(ex: monitoring, detect issues)</small>, measurement <small>(mesure performance, analyze impacts)</small>, and decision <small>(ex: determine a course of action)</small>.
 </div></div>
 
 <hr class="sep-both">
