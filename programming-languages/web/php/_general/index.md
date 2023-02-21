@@ -369,6 +369,7 @@ foreach ($associative as $key => $value) {}
 
 * `count($array)`: number of elements
 * `is_array($array)`: true if this is an array
+* You can deconstruct an array: `[$v1, $v2, $v3] = $array;`
 </div></div>
 
 <hr class="sep-both">
@@ -549,13 +550,26 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) != false){
 $decoded = json_decode("{}", true);
 $json = json_encode($decoded)
 ```
-</div><div>
 
 #### Date and time
 
 ```php
 $date = date("Y-m-d");
 $time = time();
+```
+</div><div>
+
+#### Hash passwords
+
+🙅‍♀️ Don't store/use cleartext passwords, hash your passwords!
+
+```php
+// (usually saved in a database)
+$hash = password_hash("apassword", PASSWORD_DEFAULT);
+
+// from a hash and a password
+// you can check if this password is matching the hash
+$boolean = password_verify("apassword", $hash);
 ```
 </div></div>
 
@@ -574,6 +588,11 @@ Stuff that I found, but never read/used yet.
 * `__FILE__` (full path to file?) and `__DIR__`
 * enums
 * str functions (str_length, substr, str_split...)
+* `??=`
+* htmlescapechars
+* `array_reduce`
+* `php -m`
+* see generators (yield/...)
 
 </div><div>
 
@@ -589,5 +608,7 @@ echo "<pre>".var_dump($exception)."</pre>"
 * unions return types 
 * annotations (`#[Pure]`)
 * basically, what's new since PHP 8.0
-* htmlescapechars
+* [roundcube](https://roundcube.net/)
+* [php-fig](https://www.php-fig.org/)
+* [cburch](http://www.cburch.com/books/php/index.html)
 </div></div>
