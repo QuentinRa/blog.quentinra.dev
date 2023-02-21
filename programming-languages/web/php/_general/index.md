@@ -288,6 +288,68 @@ $x(); // output: 10
 
 <hr class="sep-both">
 
+## Arrays
+
+<div class="row row-cols-md-2"><div>
+
+Arrays in PHP can be multi-types, and can be either indexed using integers <small>(starting from 0)</small>, or they can be associative, meaning a string is associated with a value.
+
+#### Creation
+
+```php
+$array = array(5, "10", 15.0);
+$array = [5, "10", 15.0];
+$associative = ["five"=>5, "ten" => "10"];
+```
+
+#### Add/Edit values
+
+```php
+// add a value
+$array[] = 20; // at the end
+// modify a value
+$array[0] = 2; // change the first value
+$associative["five"] = "5"; // change a value
+```
+
+#### Get values
+
+```php
+echo $array[1]; // print 10
+echo $associative["ten"]; // print 10
+```
+</div><div>
+
+#### Print array
+
+```php
+print_r($array);
+var_dump($array);
+// in some cases
+echo "<pre>";var_dump($array);echo "</pre>";
+```
+
+#### Iterate arrays
+
+```php
+// index are "0", "1"...
+// values are 2, "10", 15.0
+foreach ($array as $value) {}
+foreach ($array as $index => $value) {}
+// values are "5", "10"
+// keys are "five" "ten"
+foreach ($associative as $value) {}
+foreach ($associative as $key => $value) {}
+```
+
+#### Useful methods
+
+* `count($array)`: number of elements
+* `is_array($array)`: true if this is an array
+</div></div>
+
+<hr class="sep-both">
+
 ## Website specific
 
 <div class="row row-cols-md-2"><div>

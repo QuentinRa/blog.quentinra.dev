@@ -105,20 +105,3 @@ For instance, you could have a view for the head, one for the footer, and one vi
 * add unions return types
 * add annotations
 </details>
-
-<hr class="sr">
-
-## Sources
-
-* <https://www.javatpoint.com/get-vs-post>
-* <https://www.php.net/manual/fr/language.operators.php>
-* <https://www.php.net/manual/fr/language.basic-syntax.php>
-* <https://www.w3schools.com/php/default.asp>
-* <https://www.php.net/manual/fr/language.constants.php>
-* <https://www.php.net/manual/fr/language.oop5.php>
-* <https://www.php.net/manual/fr/reserved.variables.server.php>
-* <https://www.php.net/manual/fr/reserved.variables.session.php>
-* <https://www.php.net/manual/fr/reserved.variables.cookies.php>
-* <https://www.php.net/manual/fr/language.functions.php>
-* <https://www.php.net/manual/en/functions.anonymous.php>
-* <https://stackoverflow.com/questions/4094701/do-i-need-to-have-when-do-i-need-captcha>
