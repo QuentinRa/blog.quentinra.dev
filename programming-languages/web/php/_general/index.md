@@ -375,44 +375,48 @@ foreach ($associative as $key => $value) {}
 
 ## Classes and objects
 
-
 <div class="row row-cols-md-2 mx-0"><div>
+
+A class is a template to create objects. A class called table could define attributes such as `cost`, and method such as `"sell"`. 
+
+Objects are concrete instances of the class, in which we give value to attributes, such as `TableXXX: cost = 10`.
 
 #### Basic syntax
 
 ```php!
-class SomeClass {
-    public string $attr1;
-    public int $attr2 = 5;
+class Person {
+    public string $name = "John Doe";
+    public int $age = 0;
 
-    function myMethod() : void {}
+    function doNothing() : void {}
 }
 ```
 
 Instantiation is done by calling the `new` keyword
 
 ```php!
-$xxx = new SomeClass();
-$xxx->myMethod(); // call a method
-$xxx->attr1; // access an attribute
+$somePerson = new Person();
+$somePerson->doNothing(); // call a method
+$name = $somePerson->name; // access an attribute
 ```
 
 #### Constructors
 
-Each class can have one constructor, in which you can initialize attributes.
+We usually fill attributes in a magic method called constructor.
 
 ```php!
-class SomeClass {
-    public function __construct(string $attr1, int $attr2)
+class Person {
+    public function __construct(string $name, int $age)
     {
-        $this->attr1 = $attr1;
-        $this->attr2 = $attr2;
+        // internally, use "$this->" to access attributes
+        $this->name = $name;
+        $this->age = $age;
     }
 }
 ```
 
 ```php!
-$xxx = new SomeClass("xxx", 10);
+$janeDoe = new Person("Jane Doe", 18);
 ```
 
 #### Getters/Setters
@@ -420,18 +424,19 @@ $xxx = new SomeClass("xxx", 10);
 We usually use private attributes, and add getters/setters when needed <small>(if both are present and trivial, you may use public)</small>.
 
 ```php!
-class SomeClass {
-    public function getAttr1(): string
-    { return $this->attr1; }
+class Person {
+    public function getName(): string
+    { return $this->name; }
 
-    public function setAttr1(string $attr1): void
-    { $this->attr1 = $attr1; }
+    public function setAge(int $age): void
+    { $this->age = $age; }
 }
 ```
+</div><div>
 
 #### Static
 
-Classes can have methods/attributes using `static`.
+Classes can have methods/attributes using `static`. As a reminder, static attributes are shared between every object and static method can be called without having to create an object.
 
 ```php!
 class SomeClass {
@@ -449,10 +454,6 @@ $xxx = SomeClass::XXX;
 $yyy = SomeClass::$YYY;
 $zzz = SomeClass::zzz();
 ```
-</div><div>
-
-
-
 </div></div>
 
 <hr class="sep-both">
@@ -509,6 +510,7 @@ Stuff that I found, but never read/used yet.
 * `type TypeName = integer;` (or int before PHP8)
 * `@file_get_contents(xxx)`/`file_get_contents`/`file_put_contents`
 * `__FILE__` (full path to file?)
+* interfaces, enums
 
 </div><div>
 

@@ -1,25 +1,5 @@
 # Classes and objects
 
-[Go back](../../../../../_kmp/_archives/info/very_old/php)
-
-As usual, a class is a container to store
-properties and methods for an abstract concept
-like a Person, a Computer, a Room, ...
-
-Properties, called attributes would be names,
-age, values, sizes, ... And methods would be
-some function to change an attribute, etc.
-
-We call an object, the concrete instantiation
-of a class, which is simply giving value to the
-attribute using the constructor or the methods.
-
----
-
-You must use ``$this->....`` to access the attribute `...`.
-
----
-
 <hr class="sl">
 
 ## Inheritance
