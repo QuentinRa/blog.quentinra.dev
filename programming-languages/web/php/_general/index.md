@@ -373,6 +373,90 @@ foreach ($associative as $key => $value) {}
 
 <hr class="sep-both">
 
+## Classes and objects
+
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+#### Basic syntax
+
+```php!
+class SomeClass {
+    public string $attr1;
+    public int $attr2 = 5;
+
+    function myMethod() : void {}
+}
+```
+
+Instantiation is done by calling the `new` keyword
+
+```php!
+$xxx = new SomeClass();
+$xxx->myMethod(); // call a method
+$xxx->attr1; // access an attribute
+```
+
+#### Constructors
+
+Each class can have one constructor, in which you can initialize attributes.
+
+```php!
+class SomeClass {
+    public function __construct(string $attr1, int $attr2)
+    {
+        $this->attr1 = $attr1;
+        $this->attr2 = $attr2;
+    }
+}
+```
+
+```php!
+$xxx = new SomeClass("xxx", 10);
+```
+
+#### Getters/Setters
+
+We usually use private attributes, and add getters/setters when needed <small>(if both are present and trivial, you may use public)</small>.
+
+```php!
+class SomeClass {
+    public function getAttr1(): string
+    { return $this->attr1; }
+
+    public function setAttr1(string $attr1): void
+    { $this->attr1 = $attr1; }
+}
+```
+
+#### Static
+
+Classes can have methods/attributes using `static`.
+
+```php!
+class SomeClass {
+    public const XXX = 18; // public by default
+    public static $YYY = 5; // public by default
+    private const ZZZ = 2;
+    
+    public static function zzz() : int
+    { return self::XXX; } // or SomeClass::
+}
+```
+
+```php!
+$xxx = SomeClass::XXX;
+$yyy = SomeClass::$YYY;
+$zzz = SomeClass::zzz();
+```
+</div><div>
+
+
+
+</div></div>
+
+<hr class="sep-both">
+
 ## Website specific
 
 <div class="row row-cols-md-2"><div>

@@ -14,69 +14,11 @@ We call an object, the concrete instantiation
 of a class, which is simply giving value to the
 attribute using the constructor or the methods.
 
-Here some example
-
-```php
-// usually in Person.php but that's up to you
-class Person {
-    public const MAJORITY = 18;
-
-    public $name;
-    private $age = 0;
-
-    // constructor
-    public function __construct(string $name) {
-        $this->name = $name;
-        $this->age = 0;
-    }
-
-    public function isAdult() : bool { return $this->age === self::MAJORITY; }
-
-    public function setAge(int $age){ $this->age = $age; }
-}
-
-// create an object
-$bruno = new Person("Bruno");
-$bruno->setAge(15);
-echo $bruno->name." is ".($bruno->isAdult()?"an adult":"a minor");
-```
-
-A lot of things are like in **Java** and It would
-be too much to rewriting everything here, you should check
-the Java Course if you don't understand something.
-This applies if you don't know
-
-* you don't know this keyword
-* you don't know what's public/private/...
-* you don't know the ``new`` keyword
-* and you may at the end for ``interface``,
-``abstract``, `extends`, ...
-
-<hr class="sl">
-
-## Attributes
-
-They have 
-
-* visibility: public, private, or protected
-* may be declared as ``const`` (public by default)
-and could be called with ``self::NAME`` (only inside
-  the class) or ``Person::NAME``.
-* can have a default value **but use the constructor**
-* you can use the keyword ``static`` to create
-a class attribute. (public by default)
+---
 
 You must use ``$this->....`` to access the attribute `...`.
 
-Since PHP7.4, you can add a type giving you
-something like this ``public string $name;``.
-
-<hr class="sr">
-
-## Methods
-
-Everything is the same as for attributes.
-Note that you may only have one constructor.
+---
 
 <hr class="sl">
 
