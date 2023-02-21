@@ -514,9 +514,27 @@ You can use `header` to redirect a user using PHP. Note that you must call it be
 header("Location: index.php");
 exit();
 ```
+
+#### Convenient functions
+
+* `nl2br`: convert `\n` to `<br/>`
 </div><div>
 
-...
+#### Handle a form
+
+[HTML forms](/programming-languages/web/html/index.md#forms) have an attribute `action` which takes a URL. This URL can lead to a PHP script that will handle the form. According to the method specified in the HTML form, values will be stored either in `$_POST` or `$_GET`.
+
+➡️ Use a `var_dump($_POST)`/`var_dump($_GET)` to ensure that the array is filled as you expect it to be before processing.
+
+✅ You should ensure that all values are here using `isset` and that they are not empty using `empty`. You should also do some server-side verification of the type <small>(ex: `ctype_digit(str)` for integers)</small> and the value:
+
+```
+if (filter_var($email, FILTER_VALIDATE_EMAIL) != false){
+    // this should be a valid email
+} // otherwise, handle the error
+```
+
+👉 You may also `trim(...)` strings to remove leading/trailing spaces.
 </div></div>
 
 <hr class="sep-both">
