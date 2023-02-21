@@ -516,9 +516,25 @@ header("Location: index.php");
 exit();
 ```
 
-#### Convenient functions
+#### Sessions
 
-* `nl2br`: convert `\n` to `<br/>`
+Sessions can be used to keep information about a client on the server during their browsing session, such as their logging status.
+
+All data is stored in an array called `$_SESSION` and available after starting the session.
+
+```php!
+session_start(); // 👉 session_destroy to delete it
+```
+
+Example: add the username if logged, remove it on logout.
+
+```php
+$_SESSION['username'] = 'root'; // on login
+unset($_SESSION['username']); // on logout
+// use isset before accessing a field
+if (isset($_SESSION['username'])) {}
+```
+
 </div><div>
 
 #### Handle a form
@@ -536,6 +552,10 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) != false){
 ```
 
 👉 You may also `trim(...)` strings to remove leading/trailing spaces.
+
+#### Convenient functions
+
+* `nl2br`: convert `\n` to `<br/>`
 </div></div>
 
 <hr class="sep-both">
