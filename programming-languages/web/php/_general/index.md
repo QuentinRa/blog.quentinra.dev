@@ -39,7 +39,23 @@ You can enable extensions on the server level, or you can edit each `php.ini` ma
 
 <div class="row row-cols-md-2"><div>
 
-...
+Inside a `.php` file, most of the time, there are both HTML and PHP.
+
+```phpt!
+<p><?php echo "Hello, World!"; ?></p>
+```
+
+The PHP blocs (`<?php ?>`, `<?= ?>`) will be executed, and an HTML file will be generated and send to the client.
+
+```html
+<p>Hello, World!</p>
+```
+
+👉 As we may have a lot of PHP blocs to echo something, the bloc `<?= ?>` was introduced doing an implicit `echo`.
+
+```phpt!
+<p><?= "Hello, World!" ?></p>
+```
 </div><div>
 
 You can import another PHP script using `require` <small>(raise an error if the import failed)</small> or `import` <small>(don't mind failed includes)</small>. Most of the time, you want a script to be imported once, which could be done with `xxx_once`.
@@ -300,6 +316,7 @@ Arrays in PHP can be multi-types, and can be either indexed using integers <smal
 $array = array(5, "10", 15.0);
 $array = [5, "10", 15.0];
 $associative = ["five"=>5, "ten" => "10"];
+$multi_dimensional = [[5], [10]]; // [0][0] == 5
 ```
 
 #### Add/Edit values
@@ -325,8 +342,8 @@ echo $associative["ten"]; // print 10
 ```php
 print_r($array);
 var_dump($array);
-// in some cases
-echo "<pre>";var_dump($array);echo "</pre>";
+// pretty print array
+echo "<pre>".print_r($array)."</pre>"
 ```
 
 #### Iterate arrays
@@ -369,6 +386,28 @@ exit();
 
 <hr class="sep-both">
 
+## Additional notes
+
+<div class="row row-cols-md-2"><div>
+
+#### JSON
+
+```php
+$decoded = json_decode("{}", true);
+$json = json_encode($decoded)
+```
+</div><div>
+
+#### Date and time
+
+```php
+$date = date("Y-m-d");
+$time = time();
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -378,7 +417,13 @@ Stuff that I found, but never read/used yet.
 * global variables
 * spceship (`<=>`) operator PHP 8 to compare two values (0, 1, -1)
 * `type TypeName = integer;` (or int before PHP8)
+* `@file_get_contents(xxx)`/`file_get_contents`/`file_put_contents`
+* `__FILE__` (full path to file?)
 
 </div><div>
+
+* magic methods
+* namespaces (PHP 5.3+)
+* `error_reporting()`/`try/catch`
 
 </div></div>

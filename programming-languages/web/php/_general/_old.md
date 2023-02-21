@@ -1,52 +1,9 @@
 # PHP Hypertext Preprocessor (PHP)
 
-<hr class="sr">
-
-## Writing PHP
-
-You can only write **PHP** in a **.php**, but you can also write **HTML** inside. Everything is the same as for a HTML file, aside the fact that you can use the **PHP tag**, and write some PHP along the HTML.
-
-<details class="details-e">
-<summary>PHP code</summary>
-
 ```php
-<?php // ex: index.php ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head><title>Hello world!</title></head>
-<body>
-<p><?php echo "Hello world"; ?></p>
-<?php /* <?php echo "" ?> is the same as <?=""?> */ ?>
-<p><?= "Date: ".date("Y-m-d")?></p>
-</body>
-</html>
-```
-</details>
-
-**What the logic?**: you can **write** (echo) some code inside the HTML tags, which are evaluated before sending the HTML to the client. For instance, we wrote "Hello world" inside the first `p`, and we evaluated the second string with the date, and wrote it inside the second `p`. This is what resulting HTML code may looks like
-
-```html
-<!-- ... -->
-<p>Hello world</p>
-<p>Date: 2021-09-06</p>
-```
-
-<details class="details-border">
-<summary>You will use <code>echo</code> a lot, but you got <code>var_dump</code> to debug/print an array, and <code>print_r</code> to print an array.</summary>
-<br>
-
-```php
-<?php
-echo "some text"; // some text
-var_dump("some text"); // string(9) "some text"
-print_r("some text") // some text
-// pretty print array
-echo "<pre>".print_r(array(5,6))."</pre>"
 // pretty print debug
 echo "<pre>".var_dump($exception)."</pre>"
 ```
-
-</details>
 
 <table class="table border-dark table-bordered table-striped">
 <tr><th class="text-center">Other notes about the Language</th></tr>
