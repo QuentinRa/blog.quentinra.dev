@@ -1,3 +1,22 @@
+```php
+<?php
+// try login
+// $hash = password_hash("toto", PASSWORD_DEFAULT);
+// ...
+$success = password_verify($password, "... some hash ...");
+```
+
+Note that you must encrypt your password in order to store it in a database properly.
+
+```php
+// save the hash in the database
+$hash = password_hash("mdp", PASSWORD_DEFAULT);
+// then as each login, use this method
+// with the hash in the database and "mdp"
+// the input from the user
+$boolean = password_verify("mdp", $hash);
+```
+
 ??=
 [$v1, $v2] = array(0, 1)
 foreach ($this->asserts as $i => [$v1, $v2]) {}
@@ -13,8 +32,6 @@ foreach ($this->asserts as $i => [$v1, $v2]) {}
 // array_reduce
 // php -m
 // Générateur PHP
-
-- FORM action
 
 ------------
 Courses

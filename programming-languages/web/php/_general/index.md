@@ -589,4 +589,5 @@ echo "<pre>".var_dump($exception)."</pre>"
 * unions return types 
 * annotations (`#[Pure]`)
 * basically, what's new since PHP 8.0
+* htmlescapechars
 </div></div>
