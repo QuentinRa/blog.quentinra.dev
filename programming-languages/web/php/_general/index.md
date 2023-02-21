@@ -91,6 +91,8 @@ $someVariableType = gettype($someVariable); // get
 if (is_integer($someVariable)) {} // check
 ```
 
+➡️ PHP use "Type juggling" meaning the variable is converted based on the context <small>(ex: inside a if statement, it is converted to a boolean...)</small>
+
 #### Comments
 
 ```php!
@@ -165,7 +167,7 @@ else { /* code */ }
 if ($condition): /* ... */ endif;
 ```
 
-```php
+```php!
 switch ($number) {
     case 0: /* code */ break;
     case 1: case 2: /* code */ break;
@@ -175,6 +177,22 @@ switch ($number) {
 switch ($number): /* code */ endswitch;
 ```
 </div><div>
+
+There is also the ternary operator (inline if statement)
+
+```php!
+$result = $condition ? $value_if_true : $value_if_false;
+```
+
+Since PHP 8, a match statement was introduced.
+
+```php!
+$result = match ($variable) {
+    'value1' => 'result1',
+    'value2', 'value3' => 'result2',
+    default => 'default result',
+};
+```
 
 #### Loops
 
@@ -200,7 +218,7 @@ do { /* code */ } while ($condition);
 
 <div class="row row-cols-md-2"><div>
 
-Since PHP7.*, you can type parameters and the return type.
+Since PHP 7.*, you can type parameters and the return type.
 
 ```php!
 function sum(int $a, int $b) : int {
@@ -212,7 +230,7 @@ echo sum(5, 6);
 
 ➡️ You must use `int/bool/...` instead of `integer/boolean/...`.
 
-➡️ Since PHP7.4, you can use `void`.
+➡️ Since PHP 7.4, you can use `void`.
 
 #### Passage by reference
 
@@ -296,6 +314,8 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * global variables
+* spceship (`<=>`) operator PHP 8 to compare two values (0, 1, -1)
+* `type TypeName = integer;` (or int before PHP8)
 
 </div><div>
 
