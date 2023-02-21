@@ -6,6 +6,7 @@ Composer is a popular package manager for PHP. It's used to install packages (li
 
 * 📚 [Documentation](https://getcomposer.org/doc/01-basic-usage.md)
 * 🔑 [Installation](https://getcomposer.org/download/)
+* 🗃️ [packagist](https://packagist.org/) (to find packages)
 
 ```
 $ sudo apt install composer

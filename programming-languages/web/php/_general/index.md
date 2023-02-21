@@ -553,7 +553,7 @@ Stuff that I found, but never read/used yet.
 * spaceship (`<=>`) operator PHP 8 to compare two values (0, 1, -1)
 * `type TypeName = integer;` (or int before PHP8)
 * `@file_get_contents(xxx)`/`file_get_contents`/`file_put_contents`
-* `__FILE__` (full path to file?)
+* `__FILE__` (full path to file?) and `__DIR__`
 * enums
 * str functions (str_length, substr, str_split...)
 
@@ -570,5 +570,5 @@ echo "<pre>".var_dump($exception)."</pre>"
 
 * unions return types 
 * annotations (`#[Pure]`)
-
+* basically, what's new since PHP 8.0
 </div></div>

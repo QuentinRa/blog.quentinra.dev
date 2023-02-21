@@ -1,26 +1,6 @@
-# PHP Hypertext Preprocessor (PHP)
+MVC
 
-```php
-// pretty print debug
-echo "<pre>".var_dump($exception)."</pre>"
-```
-
-<hr class="sl">
-
-## Main concepts
-
-After learning almost all the syntax needed, here some concepts that you will surely use in PHP.
-
-* [Classes and objects](main/classes.md)
-* [Database and SQL](main/sql.md)
-* [MongoDB / NoSQL](main/mongodb.md)
-* [Handling Forms](main/forms.md)
-* [Sessions](main/sessions.md)
-* [Login/Logout](main/login_logout.md)
-
-<hr class="sl">
-
-## MVC in PHP
+# MVC in PHP
 
 The MVC is an architectural pattern, in which you are splitting your code into
 

@@ -1,8 +1,6 @@
 ??
 ??=
 [$v1, $v2] = array(0, 1)
-public const $v = 5;
-private int $v;
 foreach ($this->asserts as $i => [$v1, $v2]) {}
 /*
  * ,
@@ -17,19 +15,7 @@ foreach ($this->asserts as $i => [$v1, $v2]) {}
 // php -m
 // Générateur PHP
 
-https://packagist.org/
-sudo apt install php7.4-mongodb
-
 - FORM action
-- PHP 8
-  - enums (enum Name {case;} or case=[...]. Name::from([...]))
-  - add the ? condition (something ? blah blah : null) with ?->
-  - named arguments ($name = true => name: true)
-  - isset($a) ? $a : $b <=> $a ?? $b
-  - wrap text in {} curly braces
-  - https://www.php.net/releases/8.0/en.php
-  - https://php.watch/versions/8.1
-  - https://www.jetbrains.com/phpstorm/whatsnew/2020-3/
 
 ------------
 Courses
