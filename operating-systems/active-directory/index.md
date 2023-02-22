@@ -384,8 +384,16 @@ There, you can enable history, set password length and age <small>(ex: 6 months)
 
 * Go to Tools > Group Policy Management
 * Right-click on a GPO > Edit <small>(you could create a GPO and apply it on the whole domain, or a GPO only for some OUs...)</small>
-* Navigate to "Computer Configuration" > "Policies" > "Administrative Templates" > "Windows Components" > "BitLocker Drive Encryption"
-* ...
+* Navigate to "Computer Configuration" > "Policies" > "Administrative Templates" > "Windows Components" > "BitLocker Drive Encryption" 
+* ~~Enable the "Turn on BitLocker"~~
+* Go Navigate to "Operating system drives"
+* Enable the "Require additional authentication at startup"
+  * Select "Allow BitLocker without a compatible TPM"
+  * Select "Do not allow startup PIN with TPM"
+* Enable "Choose how BitLocker-protected operating system drives can be recovered"
+  * Select the "Save BitLocker recovery information to AD DS for operating system drives"
+* Navigate back to parent
+* ~~Configure "Choose drive encryption method and cipher strength" <small>(encryption method, cipher strength...)</small>~~
 
 **3)** On the Windows 10, you need to use a local administrator account, refer to the "Get started" section if needed.
 
