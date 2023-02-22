@@ -1,12 +1,5 @@
 # How to install and run vim?
 
-**HELP, I can't exit vim.** (😂 [how-to-exit-vim](https://github.com/hakluke/how-to-exit-vim) & [VimKiller](https://github.com/caseykneale/VIMKiller))
-
-If you are trapped in vim, keep calm, and press `esc` (escape key), then `:q!`.
-
-* `esc` will bring back vim to its **normal mode**
-* `:q!` is the command to exit vim without saving.
-
 **Basic configuration**
 
 You can configure your editor by creating a file `~/.virmrc`, here is an example of a basic configuration
@@ -25,11 +18,6 @@ You should look on GitHub or the web for "dotfiles vim" if you want to find an a
 <hr class="sr">
 
 # Surviving in vim ...
-
-You have two modes (at least for now), check at the bottom left of your screen
-
-* `INSERTION` : called insert/edit mode
-* `<nothing>` : called command/normal mode
 
 More generally, the **normal mode** is used to do special actions (move the cursor, copy, paste, erase...).
 
