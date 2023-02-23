@@ -147,5 +147,69 @@ b. ordered list item
 ```
 </div><div>
 
-...
+#### Code Blocks
+
+```js!
+.. code-block:: language
+
+   // Some code here
+       
+.. literalinclude:: configuration.json
+    :language: JSON
+    
+Inline Code: :code:`inline code`
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Advanced
+
+<div class="row row-cols-md-2"><div>
+
+#### Math
+
+```js!
+Some inline latex formula :math:`a \gt b`.
+
+.. math::
+
+    \text{some block-level latex formula.}
+```
+
+#### Plots
+
+You can use [Graphviz](https://graphviz.org/). Ensure that the executable was added to the path, and that `dot.exe -c`/`dot -c` was called at least once.
+
+```js!
+.. graphviz::
+
+    digraph {
+        size="10,8";
+        rankdir="LR";
+        "Bourse" -> "Opéra" [ label="5" ];
+        a [style=filled,color=red];
+        a -> b [arrowhead = none];
+    }
+```
+</div><div>
+
+#### UML
+
+Refer to [PlantUML](https://plantuml.com/) for the syntax.
+
+```
+.. uml::
+
+    @startuml
+    class User {
+        {field} <u>ID
+        {field} name
+        {field} first_name
+        {field} address
+        {field} ∗ email
+        {field} cellphone
+    }
+    @enduml
+```
 </div></div>
