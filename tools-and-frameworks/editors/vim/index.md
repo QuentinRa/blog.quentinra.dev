@@ -26,7 +26,7 @@ Learn vim 📚
 
 <hr class="sep-both">
 
-## Basics
+## Get started
 
 <div class="row row-cols-md-2"><div>
 
@@ -78,4 +78,75 @@ filetype plugin indent on "indentations
 set cursorline "show cursor
 set tabstop=4 "tabulation size
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Basics
+
+<div class="row row-cols-md-2"><div>
+
+#### Start editing
+
+To switch to the INSERTION mode in which you can edit the file:
+
+* `i`/`a`: insert before/after the cursor
+* `I`/`A`: insert at the beginning/end of the line
+* `o`/`O`: insert at the line under/above ours
+
+#### Move the cursor
+
+🎯 You must be in the command mode.
+
+<div class="row row-cols-md-2"><div>
+
+* `h`: move left ⬅️
+* `j`: move down ⬇️
+* `k`: move up ⬆️
+* `l`: move right ➡️
+</div><div>
+
+* `0` or `CTRL-^`/`$` : move the beginning/end of the line
+* `gg`/`G`: start/end of the file
+* `w`/`e`: start/end of a word
+</div></div>
+
+You can jump to a line with: `xG` <small>(ex: "5G")</small> or `:x` <small>(ex: ":5")</small>.
+</div><div>
+
+#### Commands
+
+<div class="row row-cols-md-2"><div>
+
+* `:wq`: save and exit
+* `:q!`: exit without saving
+* `:q`: exit
+</div><div>
+
+* `u`: undo
+</div></div>
+
+#### Delete
+
+* `nx`/`nX`: `n` characters under/before the cursor
+* `d^`: every character of the line until the cursor
+* `D` or `d$`: every character until the end of the line
+* `dd`/`ndd`: delete the current line
+* `:n,md`: delete lines starting from the line `n` until the line `m`
+
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* `:w !sudo tee %`
+* investigate the `.` (current line?)
+</div><div>
+
+
 </div></div>
