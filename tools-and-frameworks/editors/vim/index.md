@@ -111,20 +111,32 @@ To switch to the INSERTION mode in which you can edit the file:
 * `w`/`e`: start/end of a word
 </div></div>
 
-You can jump to a line with: `xG` <small>(ex: "5G")</small> or `:x` <small>(ex: ":5")</small>.
+You can jump to a line with: `xG` <small>(ex: "5G")</small> or `:x` <small>(ex: ":5")</small>. See `CTRL-G`.
+
+You can use `CTRL-F`/`CTRL-B` to go down/up one screen.
 </div><div>
 
 #### Commands
 
 <div class="row row-cols-md-2"><div>
 
+* `:w`: save
 * `:wq`: save and exit
-* `:q!`: exit without saving
+* `:q!`: exit and discard changes
 * `:q`: exit
 </div><div>
 
 * `u`: undo
+* `U` : undo all actions of a line
+* `CTRL-R` : redo
 </div></div>
+
+#### Copy
+
+* `yy`: copy the current line
+* `:yx`: copy x lines from the cursor line
+* `:n,my`: copy lines from `n` (>=1) to `m`
+* `p`/`P`: paste copy after/before the cursor
 
 #### Delete
 
@@ -138,6 +150,46 @@ You can jump to a line with: `xG` <small>(ex: "5G")</small> or `:x` <small>(ex: 
 
 <hr class="sep-both">
 
+## Intermediate
+
+<div class="row row-cols-md-2"><div>
+
+#### Search
+
+* `/mot`: search (Descending)
+* `?mot`: search (Ascending)
+* `n`: next occurrence
+* `N`: previous occurrence
+* `%symbol`: return the matching symbol
+
+#### Utils
+
+* `<<`/`>>`: dedent/indent
+* `~`: toggle lowercase/uppercase
+
+</div><div>
+
+#### Replace
+
+* `:s/old/new`: replace `old` by `new`
+* `:s/old/new/g`: same, for all lines
+* `:s/old/new/gc`: same but ask confirmation before
+* `:n,ms/old/new/g`: same but only n to m lines
+
+Apply an operation before switching to the INSERTION mode:
+
+* `s`: delete the character under the cursor
+* `cc`: delete the current line
+* `cw`: delete characters starting from the cursor position until the end of the word
+
+Can only be used in command mode:
+
+* `r`: replace character under the cursor
+* `R`: replace characters while ESC not pressed
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -146,7 +198,16 @@ Stuff that I found, but never read/used yet.
 
 * `:w !sudo tee %`
 * investigate the `.` (current line?)
+* `$`: from the cursor until the end of the line
+* `e`: end of the word
+* `.`: under the cursor
+* `c`: a line
+* `^`: from the cursor until the start of the line
 </div><div>
 
-
+* `:!`: execute a command
+* `:f nom`: rename file
+* `:e fichier`: open another file
+* `:r fichier`: print and insert file
+* `:!gcc`:  compile inside vim
 </div></div>
