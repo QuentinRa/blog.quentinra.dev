@@ -7,13 +7,13 @@ reStructuredText <small>(a.k.a. reST or RST)</small> is an enhanced markdown wit
 It's mainly used in documentation as an alternative to Markdown. It's quite used with the documentation generator "sphinx" 🦁 and the well-known [readthedocs](https://docs.readthedocs.io/en/stable/index.html) 📚  theme.
 </div><div>
 
-What you can do in RST that you can't in Markdown:
+What you can do in RST that you can't do in Markdown:
 
 * 👉 Write LaTeX <small>(math formulas...)</small>
 * 👉 Generate UML diagrams <small>(plantuml)</small>
-* 👉 Generate Plots <small>(graphviz)</small>
+* 👉 Generate Plots <small>(graphviz, matplotlib)</small>
 
-➡️ See the [official documentation](https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html).
+➡️ See the [official documentation](https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html)/[QuickRef](https://docutils.sourceforge.io/docs/user/rst/quickref.html).
 </div></div>
 
 <hr class="sep-both">
@@ -145,19 +145,42 @@ b. ordered list item
 ```text
 .. this is a comment
 ```
+
+#### Notices/Alerts
+
+You may add a `note`, `warning`, `hint`, or an `important` notice to your documentation. For instance, for a `hint`:
+
+```js!
+.. hint::
+
+    some hint here.
+```
+
+#### Side notes/references
+
+```text!
+Side notes for a word such as xxx [#1]_ are usually
+shown at the bottom of the page.
+
+.. [#1] explain the word
+```
+
+➡️ You don't have to use numbers, you can use any value you want.
 </div><div>
 
 #### Code Blocks
 
+We can insert inline code within a text, or using a code-block.
+
 ```js!
+:code:`some inline code here`
+
 .. code-block:: language
 
    // Some code here
        
 .. literalinclude:: configuration.json
     :language: JSON
-    
-Inline Code: :code:`inline code`
 ```
 </div></div>
 
@@ -212,4 +235,20 @@ Refer to [PlantUML](https://plantuml.com/) for the syntax.
     }
     @enduml
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [anaconda](https://docs.anaconda.com/restructuredtext/detailed/)
+* [dupuy](https://gist.github.com/dupuy/1855764)
+* [rst2pdf](https://rst2pdf.org/)
+</div><div>
+
+
 </div></div>

@@ -14,3 +14,7 @@ Sphinx uses a tree-like system, we need to link the pages together. We do that w
 
     Name printed     <file_rst_without_extension>
 ```
+
+https://sublime-and-sphinx-guide.readthedocs.io/en/latest/index.html
+https://pandoc.org/
+https://docs.readthedocs.io/en/latest/guides/adding-custom-css.html
