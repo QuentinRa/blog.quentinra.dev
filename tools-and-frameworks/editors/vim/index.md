@@ -6,7 +6,7 @@ Vim <small>(vi improved)</small> is a terminal text editor that is often used al
 
 ```bash
 # create or open a file
-$ vim file
+$ vim filename
 ```
 
 👉 Some are using an unofficial "modern vim": [neovim](https://neovim.io/).
