@@ -1,22 +1,3 @@
-# How to install and run vim?
-
-**Basic configuration**
-
-You can configure your editor by creating a file `~/.virmrc`, here is an example of a basic configuration
-
-```bash
-set fileencodings=UTF-8,utf-8,default,latin1 "file encoding
-syntax enable "enable syntax
-highlight Cursor guifg=white guibg=black "cursor color
-filetype plugin indent on "indentations
-set cursorline "show cursor
-set tabstop=4 "tabulation size
-```
-
-You should look on GitHub or the web for "dotfiles vim" if you want to find an advanced configuration.
-
-<hr class="sr">
-
 # Surviving in vim ...
 
 More generally, the **normal mode** is used to do special actions (move the cursor, copy, paste, erase...).
@@ -64,22 +45,3 @@ Because now that you learned a lot about vim, you may need a cheat sheet to reme
 * [Vim-commands-cheat-sheet-by-PhoenixNAP-1.pdf](https://github.com/memorize-code/memorize-references/raw/main/tools/vim/Vim-commands-cheat-sheet-by-PhoenixNAP-1.pdf)
 * [vi_vim_cheat_sheet.pdf](https://www.shell-tips.com/cheat-sheets/vim-quick-references/vi_vim_cheat_sheet.pdf)
 * [vimqrc.pdf](http://tnerual.eriogerg.free.fr/vimqrc.pdf)
-
-<hr class="sl">
-
-## Code completion
-
-This is something that I only discovered recently, but vim supports code completion! This is available using [ale](https://github.com/dense-analysis/ale), which will give you hints about mistakes (like ';' missing) when going back to command mode.
-
-```bash
-mkdir -p ~/.vim/pack/git-plugins/start
-git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-plugins/start/ale
-```
-
-But since you will want more, I tested this configuration, and using `CTRL-P`, VIM is showing a list of autocompletion choices
-
-* <https://github.com/viniciusgerevini/dotfiles/blob/master/vim/.vimrc>
-* `sudo apt-get install vim-runtime`
-* `sudo apt-get install vim-gui-common`
-
-I'm not using VIM singe ages, but I stumbled upon ALE, and I wanted to add it here.
