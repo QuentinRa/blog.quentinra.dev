@@ -1,7 +1,5 @@
 # Apache2 webserver
 
-😵 *Due to some mistake on my side, these notes were not tested (nor are complete) at all* 😵
-
 <div class="row row-cols-md-2"><div>
 
 **Apache** is a thread-per-request server, which is steadily being replaced by event-driven servers such as Nginx or Node.js.
