@@ -72,3 +72,17 @@ Common strategies are:
 </div><div>
 
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* "Those who cannot remember the past are condemned to repeat it" (George Santayana)
+</div><div>
+
+
+</div></div>
