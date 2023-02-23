@@ -61,6 +61,90 @@ Paragraph Title
 """""""""""""""""""
 ```
 </div></div>
+
+#### Paragraph
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+```md
+This is a
+paragraph.
+
+Here is another paragraph
+with **text in bold** and 
+text in *italic*.
+
+| One Line
+| Another Line
+```
+</div><div>
+
+This is a paragraph.
+
+Here is another paragraph with **text in bold** and text in *italic*.
+
+One Line<br>Another Line
+</div></div>
+</div><div>
+
+#### Links and Images
+
+```js!
+.. image:: example.png
+    :alt: alt message
+    :align: center
+    :width: 100%
+    :height: 100
+    :target: URL_ON_CLICK
+
+Link: `link text <https://example.com>`_
+DownloadLink: :download:`name <relative/path/to/file>`
+ReusableLink: `reusable`_
+
+.. _reusable: SOME_URL
+```
+
+#### Lists
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+```md!
+* unordered list item
+* unordered list item
+ + unordered list item
+ + \
+  unordered list item
+  
+- unordered list item
+- unordered list item
+```
+</div><div>
+
+```text!
+1. ordered list item
+2. ordered list item
+
+a. ordered list item
+b. ordered list item
+
+#. auto ordered list item
+#. auto ordered list item
+```
+</div></div>
+
+</div></div>
+
+<hr class="sep-both">
+
+## Intermediate
+
+<div class="row row-cols-md-2"><div>
+
+#### Comments
+
+```text
+.. this is a comment
+```
 </div><div>
 
 ...
