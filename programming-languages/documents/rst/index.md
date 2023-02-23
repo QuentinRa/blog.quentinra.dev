@@ -166,6 +166,17 @@ shown at the bottom of the page.
 ```
 
 ➡️ You don't have to use numbers, you can use any value you want.
+
+You can reference a section by adding a tag before the header.
+
+```js!
+.. _some_tag:
+
+some section
+===============
+
+[...] :ref:`some_tag` [...]
+```
 </div><div>
 
 #### Code Blocks
@@ -181,6 +192,32 @@ We can insert inline code within a text, or using a code-block.
        
 .. literalinclude:: configuration.json
     :language: JSON
+```
+
+#### Classes and methods
+
+You can document classes/methods/attributes using the syntax below. Note that you can extract method, it can be used outside a class.
+
+```js!
+.. class:: ClassName
+
+   description...
+
+   .. method:: some_method(arg)
+
+      description...
+
+      :param arg: description...
+      :type arg: str
+
+      :return: description...
+      :rtype: bool
+
+   .. attribute:: some_attribute
+
+      description...
+
+      :type: str
 ```
 </div></div>
 
@@ -235,6 +272,43 @@ Refer to [PlantUML](https://plantuml.com/) for the syntax.
     }
     @enduml
 ```
+
+#### Tables
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+Table are a pain to write. You need the number of equals (`=`) below the title of the column to be higher than any value inside the table.
+
+```md!
+=====  =====  =======
+A      B      A and B
+=====  =====  =======
+False  False  False
+True   False  False
+False  True   False
+True   True   True
+=====  =====  =======
+```
+</div><div>
+
+👉 use `\ ` to render an empty cell.
+
+👉 A trick to avoid increasing the column size:
+
+```rest
+=====  ======= =======
+...    ...     ...
+=====  ======= =======
+...    some    False
+\      long    \
+\      content \
+
+XXX    YYY     ZZZ
+
+...    ...     ...
+=====  ======= =======
+```
+</div></div>
 </div></div>
 
 <hr class="sep-both">
