@@ -15,6 +15,6 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * Importance of updates
-* Planning, Testing, Deployment, Minitoring
+* Planning, Testing, Deployment, Monitoring
 
 </div></div>

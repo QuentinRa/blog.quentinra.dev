@@ -31,12 +31,35 @@ Data is needed by the company, so we can't "lock it" 🔐. This is a challenge o
 
 ## Data governance program
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2"><div class="align-self-center">
 
-While the goal of the [Security Program](/cybersecurity/blue-team/architecture.md#security-program) is to ensure that the organization IT architecture is safe, including data, the goal of the data governance program is to ensure the **efficient usage, management, and protection of data** 🚀.
+While the goal of the [Security Program](/cybersecurity/blue-team/architecture.md#security-program) is to ensure that the organization IT architecture is safe, including data, the goal of the data governance program is to ensure the **efficient usage, management, and protection of data to drive business value** 🚀.
 </div><div>
 
 👉 According to the DAMA framework, we start by identifying the regulations, then we define policies, then standards/directives and guides, then we evaluate the risks and setup procedures.
 
 👉 According to ISO 27001, we first define the scope of the program, the assets, their critical level, their value (impact/loss). Then, we identify the threats, and set up controls and monitoring.
+</div></div>
+
+<hr class="sep-both">
+
+## Analyze of the current state
+
+<div class="row row-cols-md-2"><div>
+
+The first step is to identify the current state of the organization.
+
+* 🔑 Identify access control and management of accesses
+* 💰 Identify how data is used, identify patterns...
+* 🔐 Identify who is responsible/stakeholders
+* 🍃 Identify data flows and environment
+</div><div>
+
+#### Identify environments
+
+For environments, data <small>(both virtual and physical)</small> can be found in:
+
+* **Storage** <small>(databases, cloud, mobiles, devices...)</small>: use encryption, backup, access control, physical measures...
+* **Transit**: use encryption & secure protocols (TLS), VPN, MPLS...
+* **Utilization**: use encryption, access control, monitoring...
 </div></div>

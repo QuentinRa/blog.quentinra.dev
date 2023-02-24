@@ -279,13 +279,6 @@ The 5 "As" is a framework to describe key aspects of security:
 4. Admissibility: everything that the user has access to
 5. Audit: monitor access to ensure their appropriate use
 
-#### Environments
-
-The data can be found in 3 places. This applies to both physical and virtual data.
-
-* **Storage** (databases, cloud, mobiles, devices...): encryption, backup, access control, physical measures
-* **Transit**: encryption & secure protocols (TLS), VPN, MPLS
-* **Utilization**: encryption, access control, monitoring
 </div><div>
 
 #### Data Access control
