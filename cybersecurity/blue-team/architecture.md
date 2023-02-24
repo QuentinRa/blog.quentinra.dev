@@ -104,28 +104,30 @@ Security controls can be technical or administrative, physical or digital, and s
 
 <div class="row row-cols-md-2"><div>
 
-A company architecture is made up of smaller sub-architectures. A good security architecture should take each needs and risks into account. For instance, one sub-architecture may have access-control, another recovery plans...
+A company architecture is made up of smaller sub-architectures. By following this model, it ensures that security architects find both risks and security controls for each level.
+
+For instance, one sub-architecture may have access-control, another recovery plans...
 
 This a pyramid where the top is supported by lower level architectures, and higher level are developed in architectures levels below.
 
-➡️ By following this model, it ensures that security architects find both risks and security controls for each level. It also important that everyone involved in security architecture understand each layer to ensure that security controls are properly implemented.
+It important that everyone involved in security architecture understand each layer to ensure that security controls are properly implemented.
 </div><div>
 
 **1. Business Architecture**: define how the business is structured <small>(processes, functions, strategies, policies...)</small>.
 
-👉 Identify Business requirements and Business drivers.
+📚 Identify Business requirements and Business drivers...
 
 **2. Information Architecture**: define how information and data is designed and organized <small>(databases, data sources...)</small>.
 
-👉 See [Data governance](/cybersecurity/blue-team/data.md) to efficiently exploit/manage/protect data...
+📚  See [Data governance](/cybersecurity/blue-team/data.md) to efficiently exploit/manage/protect data...
 
 **3. Applications Architecture**: define the design and organization of applications <small>(interfaces, interactions, ecosystems...)</small>.
 
-👉 Identify required access control, secure coding practices...
+📚 Identify required access control, secure coding practices...
 
 **4. Infrastructure Architecture**: define the physical and logical resources  <small>(hardware, software, network, storage, cloud...)</small>.
 
-👉 Identify️ required security elements to secure resources
+📚 Identify required security elements to secure resources
 </div></div>
 
 <hr class="sep-both">
@@ -149,6 +151,50 @@ We break down the system using a top-down approach, into less complex sub-system
 👉 Start from business needs to design the system. Take into account the environment <small>(see PESTEL, SWOT matrix)</small>.
 
 👉 We must be able to tell how the system perform, to ensure its efficiently used <small>(metrics; KPI; control, measurement, and decision)</small>.
+</div></div>
+
+<hr class="sep-both">
+
+## Security Program
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+A security program must be public, realist, simple, accurate, and adapted to the business of the company.
+
+Setting up a program show the intention of the company to comply with legal regulations.
+
+* ⚖️ If not followed, it will be used to punish the company
+* 🫅 It must be supported by the executives
+* ⛪ It must be taken in consideration in every decision
+* 🐸 It must be proactively applied <small>(formations...)</small>
+* 🎤 It's important to document the security program
+
+👉 According to the DAMA framework, we start by identifying the regulations, then we define policies, then standards/directives and guides, then we evaluate the risks and setup procedures.
+
+👉 According to ISO 27001, we first define the scope of the program, the assets, their critical level, their value (impact/loss). Then, we identify the threats, and set up controls and monitoring.
+
+</div><div>
+
+##### 🖨️ Policies <small>(based on legal requirements and business principles)</small> 🖨️
+
+* **Corporate security policy**: the company approach/strategy to data security, in accordance to the business objectives
+* **Specific security policies**: based on the corporate security policy, more detailed <small>(ex: emails, incidents...)</small>
+
+➡️ Objectives, principles, scope, obligations and sanctions...
+
+##### ⚖️ Directives/Standards ⚖️
+
+* **Security element directives**: define how security controls are implemented and maintained based on policies
+
+➡️ Objectives, principles, scope, obligations and sanctions...
+
+##### 📚 Guides/Guidelines 📚
+
+* **Security guidelines**: advices and best practices to apply directives/policies, based on directives and policies
+
+##### 🚧 Procedures/Controls 🚧
+
+* **Security procedures**: instructions to perform security-related tasks based on guides and directives
 </div></div>
 
 <hr class="sep-both">
