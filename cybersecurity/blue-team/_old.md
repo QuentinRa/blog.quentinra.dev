@@ -2,15 +2,11 @@
 
 <div class="row row-cols-md-2"><div>
 
-Data governance starts by considering data as a critical asset of the company. It's a new way of thinking/doing. We define 
+We define 
 
-* processes
-* policies
 * roles 
 * responsibilities
 * practices
-
-to ensure data is efficiently exploited, managed, and protected.
 </div><div>
 
 #### The DIKW model
@@ -20,25 +16,7 @@ The DIKW model <small>(Data, Information, Knowledge, Wisdom)</small> is a pyrami
 Raw data <small>(ex: 1984)</small> is transformed to information by adding a context <small>(ex: Los Angeles summer olympics)</small>. By interpreting the information, it becomes knowledge <small>(ex: it occurs every 4 years)</small>. And trough reflexion, it become wisdom <small>(ex: the next one will be in 2024)</small>.
 </div></div>
 
-<hr class="sep-both">
-
-## Security risks and business needs
-
-<div class="row row-cols-md-2"><div>
-
-There are risks when dealing with data
-
-* **Non-compliance with legal requirements** (GDPR, PCII...): the company must ensure that they are able to comply with legal requirement to avoid fines/...
-* **Reputation loss**: data breaches usually cause distrust
-* **Invasion of privacy**: data not correctly handled that leak
-* **Industrial espionage**: someone else gain access to our data
-* **Lack of quality**: decrease of efficiency because of duplicates, incorrect or incomplete data, along with a cost to fix it. A data is meaningful/qualitative if it fits its purpose, so it does not have to be perfect as long as you can use it for your needs.
-</div><div>
-
-But data is needed by the company, so we can't "lock it". This is one of the challenges of data governance.
-
-➡️ See "Malcolm W. Harkins", Protect to enable.
-</div></div>
+* **Lack of quality**: cost to fix it. A data is meaningful/qualitative if it fits its purpose, so it does not have to be perfect as long as you can use it for your needs.
 
 <hr class="sep-both">
 
