@@ -169,10 +169,10 @@ Setting up a program show the intention of the company to comply with legal regu
 * 🐸 It must be proactively applied <small>(formations...)</small>
 * 🎤 It's important to document the security program
 
-👉 According to the DAMA framework, we start by identifying the regulations, then we define policies, then standards/directives and guides, then we evaluate the risks and setup procedures.
+These are usually based on industry best practices and standards.
 
-👉 According to ISO 27001, we first define the scope of the program, the assets, their critical level, their value (impact/loss). Then, we identify the threats, and set up controls and monitoring.
-
+* ISO 27001
+* SP 800-53
 </div><div>
 
 ##### 🖨️ Policies <small>(based on legal requirements and business principles)</small> 🖨️

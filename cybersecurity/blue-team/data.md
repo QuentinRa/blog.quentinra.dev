@@ -10,8 +10,9 @@ Data governance starts by considering data as a critical asset of the company. I
 * 🗃️ Define how data is stored
 * 💰 Define how data is used/processed
 * 🐸 Define how data is managed <small>(quality, retained, deleted...)</small>
-* 🔑 Define how data is protected
 * ...
+
+And, define how 🔑 data is protected at every step.
 </div><div>
 
 We need to identify the **needs**, **requirements**, and the **risks** related to the data, as defined in [Risk management](/cybersecurity/blue-team/risk.md), to reduce risks under an acceptable level. Some risks related to data are:
@@ -24,4 +25,18 @@ We need to identify the **needs**, **requirements**, and the **risks** related t
 * ...
 
 Data is needed by the company, so we can't "lock it" 🔐. This is a challenge of data governance: **Protect to enable** <small>(Malcolm W. Harkins)</small>.
+</div></div>
+
+<hr class="sep-both">
+
+## Data governance program
+
+<div class="row row-cols-md-2"><div>
+
+While the goal of the [Security Program](/cybersecurity/blue-team/architecture.md#security-program) is to ensure that the organization IT architecture is safe, including data, the goal of the data governance program is to ensure the **efficient usage, management, and protection of data** 🚀.
+</div><div>
+
+👉 According to the DAMA framework, we start by identifying the regulations, then we define policies, then standards/directives and guides, then we evaluate the risks and setup procedures.
+
+👉 According to ISO 27001, we first define the scope of the program, the assets, their critical level, their value (impact/loss). Then, we identify the threats, and set up controls and monitoring.
 </div></div>
