@@ -9,27 +9,6 @@
         "courses": {
           "🌏 World-wide Web 🌏": [
             {
-              "tag": "web/_general/index.md",
-              "name": "Web development",
-              "desc": "General notes about WebDev.",
-              "icon": null,
-              "hidden": false
-            },
-            {
-              "tag": "web/_general/apache/index.md",
-              "name": "Apache",
-              "desc": "Introduction to Apache Webservers",
-              "icon": "<i class=\"bi bi-server\"></i>",
-              "hidden": false
-            },
-            {
-              "tag": "web/_general/extensions/index.md",
-              "name": "Browser Extensions",
-              "desc": "Also known as plugins, add-ons...",
-              "icon": null,
-              "hidden": false
-            },
-            {
               "tag": "web/_general/seo/index.md",
               "name": "Enhancements",
               "desc": "Search Engine Optimization...",
@@ -37,38 +16,6 @@
               "hidden": false
             }
           ],
-          "🐲 Application Programming Interface (API) 🐉": [
-            {
-              "tag": "web/apis/index.md",
-              "name": "API",
-              "desc": "Application Programming Interface",
-              "icon": "<i class=\"bi bi-globe\"></i>",
-              "hidden": false
-            },
-            {
-              "tag": "web/apis/openapi/index.md",
-              "name": "OpenAPI",
-              "desc": "Generate API code/documentation/... from a specification.",
-              "icon": "<i class=\"bi bi-book\"></i>",
-              "hidden": false
-            }
-          ]
-        }
-      },
-      "code": {
-        "name": "Random Languages",
-        "active": false,
-        "hidden": false,
-        "courses": {
-          "Low-level programming": [
-            {
-              "tag": "code/c/system_calls/index.md",
-              "name": "System calls",
-              "desc": "Learn about the most-used system calls.",
-              "icon": null,
-              "hidden": true
-            }
-          ]
         }
       },
       "build": {
@@ -104,65 +51,6 @@
               "desc": "...",
               "icon": "<i class=\"bi bi-tools\"></i>",
               "hidden": false
-            }
-          ]
-        }
-      },
-      "data": {
-        "name": "Utilities",
-        "active": false,
-        "courses": {
-          "✏️ Writing documents ✏️": [
-            {
-              "tag": "utils/markdown/index.md",
-              "name": "Markdown",
-              "desc": "Popular language to write simple documents (ex: README.md).",
-              "icon": "<i class=\"bi bi-file-earmark-richtext\"></i>",
-              "hidden": false
-            },
-            {
-              "tag": "utils/rst/index.md",
-              "name": "reStructuredText",
-              "desc": "A language to write documentations outside your code with a lot of powerful tools such as generating UML, graphs ... The syntax is like an improved version of Markdown.",
-              "icon": "<i class=\"bi bi-file-earmark-richtext\"></i>",
-              "hidden": true
-            },
-            {
-              "tag": "utils/latex/index.md",
-              "name": "LaTeX",
-              "desc": "...",
-              "icon": "<i class=\"bi bi-file-earmark-richtext\"></i>",
-              "hidden": true
-            }
-          ],
-          "🧃 Store data 🧃": [
-            {
-              "tag": "data/json.md",
-              "name": "JSON",
-              "desc": "JSON, JSON5, GEOJson...",
-              "icon": "<i class=\"bi bi-layout-text-sidebar\"></i>",
-              "hidden": false
-            },
-            {
-              "tag": "data/yaml.md",
-              "name": "YAML",
-              "desc": "Mostly used in configurations.",
-              "icon": "<i class=\"bi bi-layout-text-sidebar\"></i>",
-              "hidden": false
-            },
-            {
-              "tag": "data/ini.md",
-              "name": "INI",
-              "desc": "Used in configurations on Windows.",
-              "icon": "<i class=\"bi bi-layout-text-sidebar\"></i>",
-              "hidden": false
-            },
-            {
-              "tag": "data/xml.md",
-              "name": "XML",
-              "desc": "...",
-              "icon": "<i class=\"bi bi-layout-text-sidebar\"></i>",
-              "hidden": true
             }
           ]
         }
