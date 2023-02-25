@@ -158,16 +158,6 @@ Note that the life-cycle of the data may change according to what kind of data i
 5. **Usage**: to provide the service, in decision-making...
 6. **Enhancement**: updating, adding new information, refining the data... to make it more relevant to the business needs.
 
-#### Data Retention Policy
-
-Each data should have a retention rule describing how long they are retained, where <small>(location, based on classification?, chronologically?)</small>, how <small>(format, media)</small>, and who will archive/manage it, ensure it's destroyed... The choice is mainly based on legal requirements.
-
-#### Data Destruction
-
-Ensuring a file is removed is hard because even after clearing the recycle bin, the file still exists but is marked as free space. We could defragment the disk or destroy it <small>(costly, we could have to do a process more advanced based on the classification...)</small>.
-
-This is the same in a database, in relational database, we should compress/defragment the file.
-
 </div><div>
 
 #### Data quality

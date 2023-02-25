@@ -84,10 +84,6 @@ The second step is to define and structure the governance program.
 ...
 </div><div>
 
-#### Data quality
-
-...
-
 #### Metadata management
 
 ...
@@ -99,12 +95,43 @@ The second step is to define and structure the governance program.
 
 <div class="row row-cols-md-2"><div>
 
-#### Data Retention Policy
+#### Data quality
 
 ...
 </div><div>
 
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Structuring the program III
+
+<div class="row row-cols-md-2"><div>
+
+#### Data Retention Policy
+
+Each data should have a retention policy describing
+
+* 🔐 how long they are retained
+* 🏦 where <small>(location, based on classification?, chronologically?)</small>
+* 📚 how <small>(format, media)</small>
+* 👷 who will archive/manage it
+* 🧑‍🏭 who will ensure it's destroyed
+* ...
+
+These choices are mainly based on legal requirements.
+</div><div>
+
 #### Data Destruction Policy
 
-...
+The destruction policy describes
+
+* 📝 what data should be destroyed <small>(both physical and virtual)</small>
+* 🐣 when data should be destroyed <small>(ex: frequency)</small>
+* 💥 how data should be destroyed <small>(based on classification...)</small>
+* 🧑‍🏭 who will destroy it
+
+It's important to ensure that data is erased beyond recovery 🔐. For instance, emptying the recycle bin in NOT enough. The disk should be defragmented or destroyed. Same for databases...
+
 </div></div>
