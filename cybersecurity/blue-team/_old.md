@@ -1,20 +1,10 @@
 # Data governance
 
-<div class="row row-cols-md-2"><div>
-
-We define 
-
-* roles 
-* responsibilities
-* practices
-</div><div>
-
 #### The DIKW model
 
 The DIKW model <small>(Data, Information, Knowledge, Wisdom)</small> is a pyramid-shaped model that represent how "data" is transformed to "wisdom". The goal is to show understand how raw data can be transformed in useful information.
 
 Raw data <small>(ex: 1984)</small> is transformed to information by adding a context <small>(ex: Los Angeles summer olympics)</small>. By interpreting the information, it becomes knowledge <small>(ex: it occurs every 4 years)</small>. And trough reflexion, it become wisdom <small>(ex: the next one will be in 2024)</small>.
-</div></div>
 
 * **Lack of quality**: cost to fix it. A data is meaningful/qualitative if it fits its purpose, so it does not have to be perfect as long as you can use it for your needs.
 

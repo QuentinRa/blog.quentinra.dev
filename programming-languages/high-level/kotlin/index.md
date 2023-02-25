@@ -121,8 +121,8 @@ xxx { it.toString() }
 We can explicitely add the return type and/or the argument name.
 
 ```
-xxx { v: Int ->
-    return@xxx v.toString()
+xxx { yyy: Int ->
+    return@xxx yyy.toString()
 }
 ```
 </div></div>
@@ -202,7 +202,7 @@ for (i in min until max)
 // for "i=min; i <= max; i++"
 // ex: min=0, max=10, from "0" to "10"
 for (i in min .. max)
-// for "i=max; i > min; i--"
+// for "i=max; i >= min; i--"
 // ex: max=10, min=0, from "10" to "0"
 for (i in max downTo min)
 ```

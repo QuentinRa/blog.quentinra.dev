@@ -43,7 +43,7 @@ While the goal of the [Security Program](/cybersecurity/blue-team/architecture.m
 
 <hr class="sep-both">
 
-## Analyze of the current state
+## Inventory data assets
 
 <div class="row row-cols-md-2"><div>
 
@@ -54,6 +54,8 @@ The first step is to identify the current state of the organization to find prob
 * 🔐 Identify who is responsible, who are the stakeholders
 * 🍃 Identify data flows, lifecycle, and environment
 * 🔥 Identify a lack of quality <small>(does it fit its purpose?)</small>
+
+➡️ You can ask representatives from each business unit.
 </div><div>
 
 #### Identify environments
@@ -63,4 +65,46 @@ For environments, data <small>(both virtual and physical)</small> can be found i
 * **Storage** <small>(databases, cloud, mobiles, devices...)</small>: encryption, backup, access control, physical measures...
 * **Transit**: encryption & secure protocols (TLS), VPN, MPLS...
 * **Utilization**: encryption, access control, monitoring...
+</div></div>
+
+<hr class="sep-both">
+
+## Structuring the program I
+
+<div class="row row-cols-md-2"><div>
+
+The second step is to define and structure the governance program.
+
+* 👑 Define the roles and responsibilities of those involved
+
+* 🛣️ Define a data governance framework **tailored for the organization** with guidelines for management, security, privacy, quality, compliance, improvements...
+
+#### Data classification
+
+...
+</div><div>
+
+#### Data quality
+
+...
+
+#### Metadata management
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Structuring the program II
+
+<div class="row row-cols-md-2"><div>
+
+#### Data Retention Policy
+
+...
+</div><div>
+
+#### Data Destruction Policy
+
+...
 </div></div>
