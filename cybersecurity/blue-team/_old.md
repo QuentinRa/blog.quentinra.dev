@@ -88,51 +88,6 @@ For instance, the ones creating orders in the sales department need a client's a
 
 <hr class="sep-both">
 
-## Metadata
-
-<div class="row row-cols-md-2"><div>
-
-At some point, you will have to define metadata. They describe
-
-* the data
-* the concept the data represent <small>(ex: a Person, an Address...)</small>.
-* the relation between data and concepts
-* how the data is used, stored, and retained
-* the transformations <small>(ex: derived attributes in SQL)</small>
-* the validations/quality checks <small>(ex: constraints in SQL)</small>
-* how much is the data important/needed for the company
-* who is the owner <small>(usually, it's the company)</small>
-* what's the origin of the data
-* who can access this data, and what they can do with it
-
-➡️ It must be clear where are Metadata stored and what's inside.
-
-#### Models
-
-Models are used to explain in a standardized way something. According to the target, the model will have more or less details
-
-* conceptual models: high-level concepts
-* logical models: relationship between data elements
-* physical models: how the data is stored <small>(ex: UML diagrams)</small>
-</div><div>
-
-#### Glossary of terms
-
-A glossary of terms is used to describe every term <small>(ex: Client)</small>
-
-* A description of what the term is, descriptive, unambiguous, with hyperlink to other terms <small>(see ISO-11179)</small>
-* Add abbreviations, acronyms, synonyms, translations...
-* Add any relation between terms
-* Add management information <small>(When was this term added? By who? Who approved it? ...)</small>
-
-It's a good practice to use a taxonomy to categorize business terms in a structured way. A taxonomy is usually made of terms which are either Governance terms <small>(added to facilitate the management of the glossary)</small>, and semantic terms <small>(business-related)</small>. A semantic term is usually either about
-
-* Entities <small>(things, activities, actors)</small> within the business domain, and that the business deals with
-* Properties <small>(identifiers, attributes, conditions)</small> owned by entities
-</div></div>
-
-<hr class="sep-both">
-
 ## Data life-cycle
 
 <div class="row row-cols-md-2"><div>

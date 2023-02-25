@@ -99,7 +99,41 @@ A common classification of data could be:
 
 #### Metadata management
 
-...
+Metadata are information about each data helping users to understand how each data fits the into the ecosystem.
+
+* 🍛 the description of the data
+* 🔠 the concept the data represent <small>(ex: a Person, an Address...)</small>.
+* 🍃 the relation between data and concepts
+* 🧬 how the data is used, stored, retained, and destroyed
+* 🐣 the transformations <small>(ex: derived attributes in SQL)</small>
+* 👮 the validations/quality checks <small>(ex: constraints in SQL)</small>
+* 🔑 how much is the data important/needed for the company
+* 👑 who is the owner, the responsible/attendants
+* 🪦 what's the origin of the data
+* 🦗 who can access this data, and what they can do with it
+
+⚠️ It must be clear where are Metadata stored and what's inside.
+
+<details class="details-n">
+<summary>Glossary of terms</summary>
+
+A glossary of terms is used to describe every term <small>(ex: Client)</small>
+
+* A description of what the term is, descriptive, unambiguous, with hyperlink to other terms <small>(see ISO-11179)</small>
+* Add abbreviations, acronyms, synonyms, translations...
+* Add any relation between terms
+* Add management information <small>(When was this term added? By who? Who approved it? ...)</small>
+</details>
+
+<details class="details-n">
+<summary>Data models</summary>
+
+Data models are used to explain in a standardized way something. According to the target, the model will have more or less details
+
+* conceptual models: high-level concepts
+* logical models: relationship between data elements
+* physical models: how the data is stored <small>(ex: UML diagrams)</small>
+</details>
 </div></div>
 
 <hr class="sep-both">
