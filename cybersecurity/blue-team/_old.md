@@ -236,9 +236,6 @@ The 5 "As" is a framework to describe the five key aspects of effective data man
 
 To start with data governance, you could follow these steps
 
-* Find someone who want to improve the data quality
-* Find what is the problem or element needing improvement
-* Find what are the causes
 * Redact a plan to fix the problem
 * Display the positive impact of fixing the problem
 

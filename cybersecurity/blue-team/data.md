@@ -47,19 +47,20 @@ While the goal of the [Security Program](/cybersecurity/blue-team/architecture.m
 
 <div class="row row-cols-md-2"><div>
 
-The first step is to identify the current state of the organization.
+The first step is to identify the current state of the organization to find problems or elements needing improvement along their causes.
 
 * 🔑 Identify access control and management of accesses
 * 💰 Identify how data is used, identify patterns...
-* 🔐 Identify who is responsible/stakeholders
-* 🍃 Identify data flows and environment
+* 🔐 Identify who is responsible, who are the stakeholders
+* 🍃 Identify data flows, lifecycle, and environment
+* 🔥 Identify a lack of quality <small>(does it fit its purpose?)</small>
 </div><div>
 
 #### Identify environments
 
 For environments, data <small>(both virtual and physical)</small> can be found in:
 
-* **Storage** <small>(databases, cloud, mobiles, devices...)</small>: use encryption, backup, access control, physical measures...
-* **Transit**: use encryption & secure protocols (TLS), VPN, MPLS...
-* **Utilization**: use encryption, access control, monitoring...
+* **Storage** <small>(databases, cloud, mobiles, devices...)</small>: encryption, backup, access control, physical measures...
+* **Transit**: encryption & secure protocols (TLS), VPN, MPLS...
+* **Utilization**: encryption, access control, monitoring...
 </div></div>
