@@ -260,15 +260,6 @@ The 5 "As" is a framework to describe key aspects of security:
 
 #### Data Access control
 
-Each organization much define some levels of access control with clear rules defining in which category every data is in. Ex:
-
-* **Public**: information that won't harm the company
-* **Sensitive**: information that should be closely monitored but won't harm much the company if disclosed <small>(ex: next free games)</small>
-* **Private**: information that will impact users or the company if disclosed <small>(ex: browser history)</small>
-* **Confidential**: information that will harm users or the company if disclosed <small>(ex: credit card data)</small>
-
-A company must define the controls applied to each level, and communicate to every one clearly which information is classified in which level of classification. It's usually based on the value, the whether the data is sensitive or critical.
-
 ➡️ Using inference, someone can use non-confidential data such as birthdate, postal code, and gender to find someone.
 
 #### Data breaches
