@@ -144,10 +144,38 @@ Data models are used to explain in a standardized way something. According to th
 
 #### Data quality
 
-...
+Data is of quality if it **fits it purpose**. It means that even incomplete data could pass this test, as long as it fits what the organization need.
+
+1. 👉 **Accurate**: represent the truth (in real life)
+2. 🥡 **Complete**: every entity and required properties are present
+3. 🪞 **Consistent**: uniform between datasources
+4. 🍃 **Referential integrity**: elements are correctly linked
+5. ⚡ **Up-to-date**: promptly updated
+6. 🧬 **Unique**: no duplicates
+7. ✅ **Valid**: within the expected range...
+8. 💰 **Relevant**: useful for the organization
+9. 👮 **Trustworthy**: the source is known
+10. ✈️ **Available**: those who need it can access it
+11. 🔒 **Protected**: only those allowed can access it
+12. 🙋 **Understandable**: the definition is both shared and clear
 </div><div>
 
-...
+Usually, data quality must be ensured when creating, storing, and using the data. It's important to investigate the cause of low quality data 🪲, and to prioritize problems to mitigate.
+
+A lack of quality may result in
+
+* 🦥 delays <small>(due to duplicates, incorrect, and incomplete data)</small>
+* 🐛 errors  <small>(due to duplicates, incorrect, and incomplete data)</small>
+* 💳 financial losses <small>(cost to fix, loss of clients due to delays/errors)</small>
+
+A few techniques to detect a lack of quality are:
+
+* 🧐 detect outliers/extremums
+* 🧞 ask the ones using the data
+
+You may have to design validation/verification processes, and will have to design processes to monitor data quality over time.
+
+➡️ Data cleansing, deduplication, normalization...
 </div></div>
 
 <hr class="sep-both">

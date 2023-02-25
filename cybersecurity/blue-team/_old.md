@@ -6,8 +6,6 @@ The DIKW model <small>(Data, Information, Knowledge, Wisdom)</small> is a pyrami
 
 Raw data <small>(ex: 1984)</small> is transformed to information by adding a context <small>(ex: Los Angeles summer olympics)</small>. By interpreting the information, it becomes knowledge <small>(ex: it occurs every 4 years)</small>. And trough reflexion, it become wisdom <small>(ex: the next one will be in 2024)</small>.
 
-* **Lack of quality**: cost to fix it. A data is meaningful/qualitative if it fits its purpose, so it does not have to be perfect as long as you can use it for your needs.
-
 <hr class="sep-both">
 
 ## Data Management Association (DAMA) framework
@@ -116,23 +114,6 @@ Note that the life-cycle of the data may change according to what kind of data i
 </div><div>
 
 #### Data quality
-
-During the creating, storage, and usage, we need to ensure that the data created/stored/used if of high quality.
-
-1. **Accurate**: represent the truth (in real life)
-2. **Complete**: every entity and required properties are present
-3. **Consistent**: uniform between datasources
-4. **Referential integrity**: elements are correctly linked
-5. **Up-to-date**: promptly updated
-6. **Unique**: no duplicates
-7. **Valid**: within the expected range...
-8. **Relevant**: useful for the organization
-9. **Trustworthy**: the source is known
-10. **Available**: those who need it can access it
-11. **Protected**: only those allowed can access it
-12. **Understandable**: the definition is both shared and clear
-
-To improve the data quality, we could profile data to find outliers/extremums, ask the ones using the data... It's important to find the cause of low quality data. Note that when handling problems, you need to prioritize data based on their critical value. Also, there may be existing quality rules based on industry standards, regulatory requirements, and business needs.
 
 ➡️ See "Plan - Correct - Monitor - React".
 </div></div>
