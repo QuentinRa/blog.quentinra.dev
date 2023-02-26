@@ -1,39 +1,5 @@
 # Data governance
 
-#### The DIKW model
-
-The DIKW model <small>(Data, Information, Knowledge, Wisdom)</small> is a pyramid-shaped model that represent how "data" is transformed to "wisdom". The goal is to show understand how raw data can be transformed in useful information.
-
-Raw data <small>(ex: 1984)</small> is transformed to information by adding a context <small>(ex: Los Angeles summer olympics)</small>. By interpreting the information, it becomes knowledge <small>(ex: it occurs every 4 years)</small>. And trough reflexion, it become wisdom <small>(ex: the next one will be in 2024)</small>.
-
-<hr class="sep-both">
-
-## Data Management Association (DAMA) framework
-
-<div class="row row-cols-md-2"><div>
-
-The Data Management Association (DAMA) framework is an approach to data governance.
-
-➡️ See DAMA wheel on Google/... Here is a text summary:
-
-1. **Data Modeling and design**: what is the data and why do we need it? What are the regulations/...?
-2. **Data Storage & Operations**: where will we store the data?
-3. **Data Security**: processes set to prevent unauthorized access, data misuse...
-4. **Data integration & Interoperability**: how is the data shared/passed between each service?
-</div><div>
-
-5. **Documents & Content Management**: how and where are physical documents stored?
-6. **Reference & Master Data**: classification of data in groups according to some criteria <small>(ex: sensitive data...)</small>
-7. **Data Warehousing & Business Intelligence**: software/systems to help the higher-ups understand what kind of clients they have/... to manage the company.
-8. **Metadata**: describe what kind of data we have
-9. **Data Quality**: techniques used to ensure data accuracy, completeness, and consistency.
-10. **Data Architecture**: the overall design and structure of the data and information systems within an organization
-</div></div>
-
-<hr class="sep-both">
-
-## XXX
-
 <div class="row row-cols-md-2"><div>
 
 At the top, the semantic is the most important as it will impact the quality of the element below. Problems at the top will impact a lot the business. The more we go down, the more we have data.

@@ -38,7 +38,7 @@ While the goal of the [Security Program](/cybersecurity/blue-team/architecture.m
 ➡️ Some categories of controls: access, privacy, quality...
 </div><div>
 
-👉 According to the DAMA framework, we start by identifying the regulations, then we define policies, then standards/directives and guides, then we evaluate the risks and setup procedures.
+👉 According to the [DAMA framework](/cybersecurity/blue-team/frameworks/dama.md), we start by identifying the regulations, then we define policies, then standards/directives and guides, then we evaluate the risks and setup procedures.
 
 👉 According to ISO 27001, we first define the scope of the program, the assets, their critical level, their value (impact/loss). Then, we identify the threats, and set up controls and monitoring.
 
@@ -97,6 +97,10 @@ Data valuation means giving a value to a data. This value is used to prioritize 
 * 🥷 How much would the competitors pay for this data?
 * ⏳ Is this data new? Old? <small>(newer data are more valuable)</small>
 * ...
+
+👉 The DIKW model <small>(Data, Information, Knowledge, Wisdom)</small> is a pyramid-shaped model that represent how "data" is transformed to "wisdom". The goal is to show understand how raw data can be transformed in useful information that drive business value 💵.
+
+Example: Raw data <small>(ex: 1984)</small> is transformed to information by adding a context <small>(ex: Los Angeles summer olympics)</small>. By interpreting the information, it becomes knowledge <small>(ex: it occurs every 4 years)</small>. And trough reflexion, it become wisdom <small>(ex: the next one will be in 2024)</small>.
 </div></div>
 
 <hr class="sep-both">
