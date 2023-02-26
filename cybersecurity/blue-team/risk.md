@@ -54,6 +54,13 @@ The AV is 45 millions. Two out of three times we can mitigate the risk, it means
 **Threat modeling**: identify and assess potential threats and vulnerabilities to develop an effective strategy against them.
 
 **Business impact analysis**: [...]
+
+**Role-based risk assessment**: a qualitative risk assessment. We identify risks associated to each role <small>(ex: CEO, CTO...)</small> of the company <small>(meaning their job, duties, responsibilities...)</small>. We could use a table with 
+
+* rows 💰: assets broken down into smaller parts <small>(ex: customer data)</small>
+* columns 🧑: business units broken down into roles <small>(marketing in ...)</small>
+
+Cells are the operation <small>(ex: create)</small>, and the level of criticality <small>(how much is this asset required to perform the task?)</small>. You could use levels live 1 to 5.
 </div></div>
 
 <hr class="sep-both">
@@ -70,19 +77,5 @@ Common strategies are:
 * ➡️ **Transfer**: transfer the risk to an external entity/someone else
 * ➡️ **Acceptation**: accept the risk and don't do anything
 </div><div>
-
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-* "Those who cannot remember the past are condemned to repeat it" (George Santayana)
-</div><div>
-
 
 </div></div>

@@ -177,7 +177,7 @@ These are usually based on industry best practices and standards.
 
 ##### 🖨️ Policies <small>(based on legal requirements and business principles)</small> 🖨️
 
-* **Corporate security policy**: the company approach/strategy to data security, in accordance to the business objectives
+* **Corporate security policy**: the company approach/strategy to security, in accordance to the business objectives
 * **Specific security policies**: based on the corporate security policy, more detailed <small>(ex: emails, incidents...)</small>
 
 ➡️ Objectives, principles, scope, obligations and sanctions...
@@ -195,16 +195,4 @@ These are usually based on industry best practices and standards.
 ##### 🚧 Procedures/Controls 🚧
 
 * **Security procedures**: instructions to perform security-related tasks based on guides and directives
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-</div><div>
-
 </div></div>
