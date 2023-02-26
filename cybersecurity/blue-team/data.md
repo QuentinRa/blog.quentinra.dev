@@ -34,6 +34,8 @@ Data is needed by the company, so we can't "lock it" 🔐. This is a challenge o
 <div class="row row-cols-md-2"><div class="align-self-center">
 
 While the goal of the [Security Program](/cybersecurity/blue-team/architecture.md#security-program) is to ensure that the organization IT architecture is safe, including data, the goal of the data governance program is to ensure the **efficient usage, management, and protection of data to drive business value** 🚀.
+
+➡️ Controls: access, privacy, quality...
 </div><div>
 
 👉 According to the DAMA framework, we start by identifying the regulations, then we define policies, then standards/directives and guides, then we evaluate the risks and setup procedures.
@@ -47,7 +49,7 @@ While the goal of the [Security Program](/cybersecurity/blue-team/architecture.m
 
 <div class="row row-cols-md-2"><div>
 
-The first step is to identify the current state of the organization to find problems or elements needing improvement along their causes.
+The first step is to inventory data assets, and find problems or elements needing improvement, along with their causes.
 
 * 🔑 Identify access control and management of accesses
 * 💰 Identify how data is used, identify patterns...
@@ -68,7 +70,17 @@ For environments, data <small>(both virtual and physical)</small> can be found i
 
 #### Data valuation
 
-...
+Data valuation means giving a value to a data. This value is used to prioritize and classify data, and apply the appropriate controls.
+
+* 💵 How much did it cost to acquire this data?
+* ☠️ How much will it cost if we damaged/lost this data?
+* 🔥 What's the impact if this data isn't available?
+* 💰 How important is it for business operations/decision-making?
+* 💎 What's the revenue generated using this data?
+* 🛡️ What's the cost to protect this data? <small>(regulations, fines...)</small>
+* 🥷 How much would the competitors pay for this data?
+* ⏳ Is this data new? Old? <small>(newer data are more valuable)</small>
+* ...
 </div></div>
 
 <hr class="sep-both">

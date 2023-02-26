@@ -32,11 +32,9 @@ The Data Management Association (DAMA) framework is an approach to data governan
 
 <hr class="sep-both">
 
-## Data classification and valuation
+## XXX
 
 <div class="row row-cols-md-2"><div>
-
-#### Classification
 
 At the top, the semantic is the most important as it will impact the quality of the element below. Problems at the top will impact a lot the business. The more we go down, the more we have data.
 
@@ -49,20 +47,6 @@ At the top, the semantic is the most important as it will impact the quality of 
 
 ➡️ We call "Master data" the structural, organizational, and operational data altogether. This is the core and critical data of the company which is considered the single source of truth.
 </div><div>
-
-#### Valuation
-
-It's important to associate a value to data in order to find which data require more resources <small>(ex: more advanced measures for VIP...)</small>...
-
-* How much did it cost to acquire this data?
-* How much will it cost if we damaged/lost this data?
-* What's the impact if this data isn't available?
-* The value it adds to business operations/decision-making.
-* The revenue generated using this data.
-* The cost to protect this data <small>(+in accordance to regulations)</small>
-* How much would the competitors pay for this data?
-* The date of acquisition? <small>(newer data are more valuable)</small>
-* ...
 
 #### Critical data
 
