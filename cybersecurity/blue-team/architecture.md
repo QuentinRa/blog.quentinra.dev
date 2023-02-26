@@ -93,7 +93,7 @@ Security controls can be technical or administrative, physical or digital, and s
 
 ❌️ Following a checklist is unlikely to meet the business needs or provide real benefits. A security architect mustn't only rely on it, as they need to more sophisticated approach balancing the needs and requirements, risks, and technologies with the security. ✅ Solutions should be selected according to the needs/goals of the organization.
 
-➡️ See COBIT framework.
+➡️ See the COBIT framework.
 
 ➡️ A security control system is important to ensure security controls are effective, and to improve them. They employs a feedback loop with three sub-systems: control <small>(ex: monitoring, detect issues)</small>, measurement <small>(mesure performance, analyze impacts)</small>, and decision <small>(ex: determine a course of action)</small>.
 </div></div>
