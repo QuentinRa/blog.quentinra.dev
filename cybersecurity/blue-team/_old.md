@@ -46,33 +46,13 @@ At the top, the semantic is the most important as it will impact the quality of 
 * **Audit data**: logs of every change of the data
 
 ➡️ We call "Master data" the structural, organizational, and operational data altogether. This is the core and critical data of the company which is considered the single source of truth.
+
+#### Data quality
+
+➡️ See "Plan - Correct - Monitor - React".
 </div><div>
 
-#### Critical data
-
-It's important for a company to understand what are their critical data, so that they can focus their resources on it. Assessing if a data is critical could be do using 
-
-* a risk assessment process based on its value
-* a role-based risk assessment evaluate the risk for each role by each data inside the company
-
-<details class="details-n">
-<summary>Role-based risk assessment as table</summary>
-
-**Rows**: we would have a group of rows called "client" in which sub-rows would be the properties such as it's name, address...
-
-**Columns**: we could have column which are services <small>(ex: marketing, sales...)</small>, which are sub-divided into roles within a service <small>(ex: marketing campaign, order management...)</small>.
-
-**Values**: the values are an access level <small>(R=Read, U=Update, or C=Create)</small> and a risk level <small>(1=Not critical to 5=Critical)</small>.
-
-For instance, the ones creating orders in the sales department need a client's address, so we would have C5 in the row "Client > address" and the column "Sales > orders".
-</details>
-</div></div>
-
-<hr class="sep-both">
-
-## Data life-cycle
-
-<div class="row row-cols-md-2"><div>
+#### Life-cycle
 
 Note that the life-cycle of the data may change according to what kind of data is handled.
 
@@ -95,11 +75,6 @@ Note that the life-cycle of the data may change according to what kind of data i
 5. **Usage**: to provide the service, in decision-making...
 6. **Enhancement**: updating, adding new information, refining the data... to make it more relevant to the business needs.
 
-</div><div>
-
-#### Data quality
-
-➡️ See "Plan - Correct - Monitor - React".
 </div></div>
 
 <hr class="sep-both">

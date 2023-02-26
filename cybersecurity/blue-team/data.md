@@ -63,9 +63,9 @@ The first step is to inventory data assets, and find problems or elements needin
 
 For environments, data <small>(both virtual and physical)</small> can be found in:
 
-* **Storage** <small>(databases, cloud, mobiles, devices...)</small>: encryption, backup, access control, physical measures...
-* **Transit**: encryption & secure protocols (TLS), VPN, MPLS...
-* **Utilization**: encryption, access control, monitoring...
+* Storage <small>(databases, cloud, mobiles, devices...)</small> 📦: encryption, backup, access control, physical measures...
+* Transit ✈️: encryption & secure protocols (TLS), VPN, MPLS...
+* Utilization 💰: encryption, access control, monitoring...
 </div><div>
 
 #### Data valuation
@@ -97,16 +97,16 @@ The second step is to define and structure the governance program.
 
 #### Data classification
 
-A common classification of data could be:
+Elements are in the same class if they share the same controls. A common classification of data could be:
 
 * **Public**: information that won't harm the company
 * **Sensitive**: information that should be closely monitored but won't harm much the company if disclosed <small>(ex: upcoming news disclosed)</small>
 * **Private**: information that will impact users or the company if disclosed <small>(ex: browser history)</small>
 * **Confidential**: information that will harm users or the company if disclosed <small>(ex: credit card data)</small>
 
-👉 Elements are in the same class if they share the same controls.
-
 ➡️ Clearly define what information is in which level. It's usually based on the valuation. You should not have more than 7.
+
+🔥 An organization may add a class or a subclass in every class called **Critical data** for data essential for the organization to operate. They are usually identified when performing a [risk assessment](/cybersecurity/blue-team/risk.md#risk-assessment).
 </div><div>
 
 #### Metadata management
