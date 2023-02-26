@@ -51,30 +51,6 @@ At the top, the semantic is the most important as it will impact the quality of 
 
 ➡️ See "Plan - Correct - Monitor - React".
 </div><div>
-
-#### Life-cycle
-
-Note that the life-cycle of the data may change according to what kind of data is handled.
-
-1. **Planning**: what information do we need? For what purpose?
-
-➡️ Take into account laws, directives, requirement, risks...
-
-2. **Design and Implementation**: define how and where the data will be structured, stored, along the relationship between data
-
-➡️ Define standards, policies, use cases, responsibilities, tests, audits... The modeling team must be made aware of security constraints.
-
-3. **Creation/Acquisition**: collecting, importing, validating data...
-
-➡️ At some point, data will be destroyed after this step.
-
-4. **Storage and Maintenance**: store the data in a secure maintainable and accessible place. Backups may be performed at this step too.
-
-➡️ Define a retention policy, a business continuity plan...
-
-5. **Usage**: to provide the service, in decision-making...
-6. **Enhancement**: updating, adding new information, refining the data... to make it more relevant to the business needs.
-
 </div></div>
 
 <hr class="sep-both">
@@ -105,7 +81,6 @@ The 5 "As" is a framework to describe the five key aspects of effective data man
 3. Accessibility
 4. Appropriateness
 5. Auditability
-</div><div>
 
 #### Levels of data management
 
@@ -123,13 +98,7 @@ Finally, you can formalize the data governance. There are five levels of data ma
 5. Optimized: data management is implicit in all business processes, and continuously improved
 
 The goal is to move from the lower levels to the higher levels, where data is managed effectively and driving business value.
-</div></div>
-
-<hr class="sep-both">
-
-## Security and access control
-
-<div class="row row-cols-md-2"><div>
+</div><div>
 
 #### CIA for data security
 
@@ -151,18 +120,7 @@ The 5 "As" is a framework to describe key aspects of security:
 4. Admissibility: everything that the user has access to
 5. Audit: monitor access to ensure their appropriate use
 
-</div><div>
-
 #### Data Access control
 
 ➡️ Using inference, someone can use non-confidential data such as birthdate, postal code, and gender to find someone.
-
-#### Data breaches
-
-* The company must find, and patch the vulnerability
-* The company must inform the clients
-* The company will have to pay fines
-* The company will lose reputation
-
-To prevent data breaches, the company after identifying, classifying, and prioritizing data, should find why data is likely to be targeted along the risks, and define required protections.
 </div></div>

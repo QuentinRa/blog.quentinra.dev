@@ -35,12 +35,14 @@ Data is needed by the company, so we can't "lock it" 🔐. This is a challenge o
 
 While the goal of the [Security Program](/cybersecurity/blue-team/architecture.md#security-program) is to ensure that the organization IT architecture is safe, including data, the goal of the data governance program is to ensure the **efficient usage, management, and protection of data to drive business value** 🚀.
 
-➡️ Controls: access, privacy, quality...
+➡️ Some categories of controls: access, privacy, quality...
 </div><div>
 
 👉 According to the DAMA framework, we start by identifying the regulations, then we define policies, then standards/directives and guides, then we evaluate the risks and setup procedures.
 
 👉 According to ISO 27001, we first define the scope of the program, the assets, their critical level, their value (impact/loss). Then, we identify the threats, and set up controls and monitoring.
+
+👉 See also the DMBOK framework <small>(Data Management Body of Knowledge)</small> which, unlike the high-level DAMA, is a framework detailing each area of data management.
 </div></div>
 
 <hr class="sep-both">
@@ -59,14 +61,28 @@ The first step is to inventory data assets, and find problems or elements needin
 
 ➡️ You can ask representatives from each business unit.
 
+#### Data life-cycle
+
+It's important to understand or define how data is created, used, stored, archived, and deleted over time, to implement good controls.
+
+1. **Planning** 🗺️: use laws, directives, requirement, risks to determine what information is needed and for which purpose.
+2. **Design and Implementation** ⚖️: Define standards, policies, use cases, responsibilities, tests, audits... defining how and where the data will be structured, stored...
+3. **Creation/Acquisition** 🪓: collecting, importing, validating data...
+4. **Storage and Maintenance** 🗃️: store data in a maintainable, secure, and accessible location. Do, test, and secure backups...
+5. **Usage** 💸: in operations, in decision-making...
+6. **Enhancement** 💰: add/update/refine data... to make it more relevant to the business needs.
+
+➡️ At some point, data will be destroyed, most likely before storage.
+
+</div><div>
+
 #### Identify environments
 
 For environments, data <small>(both virtual and physical)</small> can be found in:
 
-* Storage <small>(databases, cloud, mobiles, devices...)</small> 📦: encryption, backup, access control, physical measures...
-* Transit ✈️: encryption & secure protocols (TLS), VPN, MPLS...
-* Utilization 💰: encryption, access control, monitoring...
-</div><div>
+* **Storage** <small>(databases, cloud, mobiles, devices...)</small> 📦: encryption, backup, access control, physical measures...
+* **Transit** ✈️: encryption & secure protocols (TLS), VPN, MPLS...
+* **Utilization** 💰: encryption, access control, monitoring...
 
 #### Data valuation
 
@@ -221,4 +237,29 @@ The destruction policy describes
 
 It's important to ensure that data is erased beyond recovery 🔐. For instance, emptying the recycle bin in NOT enough. The disk should be defragmented or destroyed. Same for databases...
 
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* retention policy, a business continuity plan <small>(step 4 of data life-cycle)</small>
+</div><div>
+
+Data breaches
+
+* The company must find, and patch the vulnerability
+* The company must inform the clients
+* The company will have to pay fines
+* The company will lose reputation
+
+To prevent data breaches, the company after identifying, classifying, and prioritizing data, should find why data is likely to be targeted along the risks, and define required protections.
+
+* data recovery plans
+* communication plans
+* data breach notification laws
 </div></div>
