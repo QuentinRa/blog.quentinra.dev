@@ -35,7 +35,7 @@ Data is needed by the company, so we can't "lock it" 🔐. This is a challenge o
 
 While the goal of the [Security Program](/cybersecurity/blue-team/architecture.md#security-program) is to ensure that the organization IT architecture is safe, including data, the goal of the data governance program is to ensure the **efficient usage, management, and protection of data to drive business value** 🚀.
 
-➡️ Some categories of controls: access, privacy, quality...
+➡️ Some categories of controls: access, privacy, quality, security...
 </div><div>
 
 👉 According to the [DAMA framework](/cybersecurity/blue-team/frameworks/dama.md), we start by identifying the regulations, then we define policies, then standards/directives and guides, then we evaluate the risks and setup procedures.
@@ -149,12 +149,19 @@ Metadata are information about each data helping users to understand how each da
 <details class="details-n">
 <summary>Glossary of terms</summary>
 
-A glossary of terms is used to describe every term <small>(ex: Client)</small>
+A **glossary of terms** is used to describe every term <small>(ex: Client)</small>
 
 * A description of what the term is, descriptive, unambiguous, with hyperlink to other terms <small>(see ISO-11179)</small>
 * Add abbreviations, acronyms, synonyms, translations...
 * Add any relation between terms
 * Add management information <small>(When was this term added? By who? Who approved it? ...)</small>
+
+Usually, we use a **taxonomy** to classify terms <small>(function, product category, business unit/process...)</small>.
+
+* **Governance terms** 👑: for instance, "deprecated" or "retired" that could be used to indicate the state of semantic terms.
+* **Semantic terms** 💵: business terms such as "customer", "invoice", "product"... Each term is often categorized into entities and properties. For example, the "customer" entity might have properties such as "name", and "address".
+
+👉 Entities can be divided in: things, activities, and actors. Properties can be divided in: identifiers, attributes, and conditions.
 </details>
 
 <details class="details-n">
@@ -241,6 +248,33 @@ The destruction policy describes
 
 It's important to ensure that data is erased beyond recovery 🔐. For instance, emptying the recycle bin in NOT enough. The disk should be defragmented or destroyed. Same for databases...
 
+</div></div>
+
+<hr class="sep-both">
+
+## Data management
+
+<div class="row row-cols-md-2"><div>
+
+One of the goal of data governance by defining data quality policies, metadata management policies to ensure an efficient data management. There are five levels of data management:
+
+1. **Ad hoc** 🐒: individuals manage data in their own way, there is no structure nor consistence.
+2. **Repeatable** 📝: departments establish basic policies/procedures such as formats, backups policies...
+3. **Defined** 🧐: the organization start formalizing data management, this include data quality policies, roles, responsabilities...
+4. **Managed** ⚖️: data is actively monitored and inventoried
+5. **Optimized** 💰💵: data management is implicit in all business processes, and continuously improved
+</div><div>
+
+The goal is to move from the lower levels to the higher levels, where data is managed effectively and driving business value.
+
+👉 Gartner released a research report provides guidelines for improving data management called "Generally Accepted Information Principles for Improved Information Asset Management".
+
+➡️ Rules and standards are usually define in these
+
+* Principles: high-level guidance <small>(why do we need this data?)</small>
+* Policies: more specific rules <small>(what do we need?)</small>
+* Guidelines: recommendations and best practices <small>(how?)</small>
+* Standards: technical specifications <small>(quality...)</small>
 </div></div>
 
 <hr class="sep-both">
