@@ -196,3 +196,17 @@ These are usually based on industry best practices and standards.
 
 * **Security procedures**: instructions to perform security-related tasks based on guides and directives
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [Security Control Framework](https://securecontrolsframework.com/)
+</div><div>
+
+
+</div></div>
