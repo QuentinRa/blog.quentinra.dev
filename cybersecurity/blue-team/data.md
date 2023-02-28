@@ -122,6 +122,12 @@ The second step is to define and structure the governance program.
 The program must be continuously monitored and improved.
 
 ➡️ See the "Plan - Correct - Monitor - React" (PCMR) framework
+
+<br>
+
+#### Data security
+
+See the [ISO 27002](/cybersecurity/blue-team/frameworks/iso-27002.md) standard.
 </div><div>
 
 #### Metadata management
@@ -252,6 +258,45 @@ You may have to design validation/verification processes, and will have to desig
 
 <div class="row row-cols-md-2"><div>
 
+#### Data Anonymization Policy
+
+Anonymization may be performed in many scenarios
+
+* 📬 when sharing information with partners/third-party vendors
+* 📚 when conducting a research <small>(statistics...)</small>
+* 📈 when conducting a market analysis <small>(trend...)</small>
+* 📝 to comply with regulations
+* 🏗️ to create a test dataset
+* 🌍 to generate and share open data
+* ...
+
+Most personally identifiable information (PII) or information such as firstname, lastname, address, phone number, official documents/identifiers, birthdate, gender, race... is anonymized.
+
+➡️ Basically, any sensitive data that can be used to identify someone.
+</div><div>
+
+There are many techniques that are usually combined:
+
+* 🌍 **Generalization**: group value in groups <small>(ex: age ranges)</small>
+* 🚽 **Suppression**: remove a record <small>(line)</small> or an attribute <small>(column)</small>
+* 🎬 **Data swapping**: swap some data between records
+* 🫥 **Data masking**: partially obscuring data <small>(ex: 1976-XX-XX)</small>
+* 🤏 **Data minimization**: reduce as possible the dataset length
+* 🥂 **Caviar**: replace data with a "caviar" term <small>(ex: John Doe)</small>
+* 🎭 **Pseudo-anonymization**: replace a PII with a random string that usually matches the format, but it's the real one
+* 📍 **Adjustment**: apply a modification to group values <small>(round off...)</small>
+* 🖨️ **Aggregation**: provide computed data <small>(mean of salaries...)</small>
+* 🔑 **Hashing**: hash emails, passwords, IPs, ids...
+
+There are also: **Noise addition** 🔊, **Perturbation** 🥞, and **Differential privacy** 👣 which are adding noise to data in different way, to prevent any form of identification.
+</div></div>
+
+<hr class="sep-both">
+
+## Structuring the program V
+
+<div class="row row-cols-md-2"><div>
+
 #### Data Retention Policy
 
 Each data should have a retention policy describing
@@ -304,16 +349,6 @@ The goal is to move from the lower levels to the higher levels, where data is ma
 * Policies: more specific rules <small>(what do we need?)</small>
 * Guidelines: recommendations and best practices <small>(how?)</small>
 * Standards: technical specifications <small>(quality...)</small>
-</div></div>
-
-<hr class="sep-both">
-
-## Data security
-
-<div class="row row-cols-md-2"><div>
-
-See [ISO 27002](/cybersecurity/blue-team/frameworks/iso-27002.md).
-</div><div>
 </div></div>
 
 <hr class="sep-both">
