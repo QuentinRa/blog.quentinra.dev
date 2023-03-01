@@ -39,12 +39,12 @@ Some ways to write LaTeX:
 A basic document looks like this. You can import packages, and you start writing inside the document block.
 
 ```tex
-\documentclass{article}
-% your packages
+\documentclass{article} % book...
+% import packages (preamble)
 \usepackage[utf8]{inputenc}
 
 \begin{document}
-% your content here
+% body of the document
 \end{document}
 ```
 
@@ -53,13 +53,13 @@ A basic document looks like this. You can import packages, and you start writing
 <div class="row row-cols-md-2"><div class="align-self-center">
 
 ```tex
-\title{Title}
-\author{author}
-\date{a date}
+\title{A title}
+\author{An author}
+\date{A date}
 ```
 </div><div>
 
-Usually before starting the document, we define some metadata. Then, using `\maketitle` inside the document block, we can generate a title page.
+Usually before starting the document, we define some metadata. Then, inside the body, we can generate a title page with `\maketitle`.
 </div></div>
 </div><div>
 
@@ -91,6 +91,40 @@ You can write text and use these to apply some style:
 
 Use `enumerate` for ordered lists, and `itemize` for unordered lists.
 </div></div>
+</div></div>
+
+<hr class="sep-both">
+
+## Code in LaTeX
+
+<div class="row row-cols-md-2"><div>
+
+You can use the minted to write code in LaTeX.
+
+```tex
+\usepackage{minted}
+```
+
+You need to define a language, for instance, `ocaml`.
+
+```tex
+\newminted{ocaml}{breaklines}
+```
+</div><div>
+
+➡️ You can write a block of code using this syntax:
+
+```tex
+\begin{minted}{ocaml}...\end{minted}
+```
+
+➡️ You can import a file using this syntax:
+
+```tex
+`\inputminted{ocaml}{file.ml}
+```
+
+👉 There is also a package called `listings`.
 </div></div>
 
 <hr class="sep-both">
