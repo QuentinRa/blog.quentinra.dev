@@ -2,30 +2,6 @@
 
 **[Updated notes](index.md)**
 
-You can use LaTeX to easily write documents such as reports, presentations, or even resumes. This is also quite convenient to write math inside a document or a website.
-
-In this course, you will learn
-
-* how to write a basic latex document
-* how to write math in latex
-
-<hr class="sr">
-
-## Introduction
-
-You may code latex (`.tex`) documents on
-
-* [Overleaf](https://www.overleaf.com/) (previously `writelatex.com`), a simple and collaborative tool, you need to register
-* [CoCalc](https://cocalc.com/), the UI may be a bit hard to use but no account is required
-
-You can also use a latex compiler on your machine, but that's not covered for now.
-
-There are a lot of latex templates, so be sure to check them before starting a document from scratch <https://www.overleaf.com/latex/templates> since there are presentation templates, CV/resumes templates, report templates...
-
-<hr class="sl">
-
-## Writing documents
-
 Generally, latex documents look like
 
 ```latex
