@@ -32,6 +32,69 @@ Some ways to write LaTeX:
 
 <hr class="sep-both">
 
+## Basics
+
+<div class="row row-cols-md-2"><div>
+
+A basic document looks like this. You can import packages, and you start writing inside the document block.
+
+```tex
+\documentclass{article}
+% your packages
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+% your content here
+\end{document}
+```
+
+#### Document
+
+<div class="row row-cols-md-2"><div class="align-self-center">
+
+```tex
+\title{Title}
+\author{author}
+\date{a date}
+```
+</div><div>
+
+Usually before starting the document, we define some metadata. Then, using `\maketitle` inside the document block, we can generate a title page.
+</div></div>
+</div><div>
+
+#### Text
+
+You can write text and use these to apply some style:
+
+* `\textbf{word}`: bold
+* `\underline{word}`: underlined
+* `\textit{word}`: italic
+* `\emph{word}`: emphasis, almost like italic
+* `\vspace{NUMBERmm}`: space between paragraphs
+
+➡️ To force a newline, use `\\` <small>(once or twice)</small> or `\newline`.
+
+➡️ To center something, use `\begin{center}something\end{center}`.
+
+#### Lists
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+```latex
+\begin{itemize}
+  \item an item
+  \item an item
+\end{itemize}
+```
+</div><div class="align-self-center">
+
+Use `enumerate` for ordered lists, and `itemize` for unordered lists.
+</div></div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Math in LaTeX
 
 <div class="row row-cols-md-2"><div>
@@ -52,6 +115,8 @@ Math symbols or formulas can be either **inline** meaning inside a text, or **bl
 
 ➡️ You can use `\mathcal{H}` for function names/...
 
+➡️ Use `\lfloor`/`\rfloor` and `\lceil`/`\rceil` for the rounding symbols/`partie entière`. Use `\lvert`/`\rvert` for absolute value.
+
 🌍 Use mathjax or katex to render LaTeX formulas in a browser.
 </div></div>
 
@@ -67,9 +132,15 @@ Stuff that I found, but never read/used yet.
 \verb! http://localhost:3000/!
 \textbackslash{xxx}
 ```
+
+* [symbols.pdf](https://www.caam.rice.edu/~heinken/latex/symbols.pdf)
+* [latexcheatsheet.pdf](https://users.dickinson.edu/~richesod/latex/latexcheatsheet.pdf),
+  [latexcheatsheet.pdf](https://users.dickinson.edu/~richesod/latex/LatexFrench.pdf) (french),
+  [video](https://divisbyzero.com/teaching/a-quick-guide-to-latex/).
+* [Wikibooks - latex](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
+* [math guide for latex](http://tug.ctan.org/info/short-math-guide/short-math-guide.pdf)
 </div><div>
 
-* **[Old notes](_old.md)**
 * [minted](https://www.overleaf.com/learn/latex/Code_Highlighting_with_minted)
-* [maths](https://fr.wikibooks.org/wiki/LaTeX/%C3%89crire_des_math%C3%A9matiques) or [xm1math](https://www.xm1math.net/doculatex/) or [oeis](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols) or [wiki help](https://fr.wikipedia.org/wiki/Aide:Formules_TeX)/[wiki help](https://en.wikipedia.org/wiki/Help:Displaying_a_formula#Functions,_symbols,_special_characters)
+* [maths](https://fr.wikibooks.org/wiki/LaTeX/%C3%89crire_des_math%C3%A9matiques) or [xm1math](https://www.xm1math.net/doculatex/) or [oeis](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols) or [wiki help](https://fr.wikipedia.org/wiki/Aide:Formules_TeX)/[wiki help](https://en.wikipedia.org/wiki/Help:Displaying_a_formula#Functions,_symbols,_special_characters) or [quickref](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
 </div></div>
