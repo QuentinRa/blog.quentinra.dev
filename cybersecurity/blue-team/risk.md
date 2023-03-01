@@ -2,15 +2,18 @@
 
 <div class="row row-cols-md-2"><div>
 
-Risk management is the process of identifying, assessing, and prioritizing risks. The organization will try to 
+Risk management is the process of identifying, assessing, and prioritizing risks. If the losses are significant enough 💰, and the loss is greater than the cost to handle the risk 🔥, the organization will most likely not ignore the risk and try to:
 
-* reduce a risk under an acceptable level
-* completely mitigate a risk
+* 🛟 reduce a risk under an acceptable level
+* 👌 completely mitigate a risk
 
-➡️ If the losses aren't significant enough, or the loss is lower than the cost to mitigate the risk, the organization may choose to ignore a risk.
+There are two categories of risks:
+
+* <span class="fw-semibold">Speculative risks</span> 💵 : a risk taken by the company in the pursuit of opportunities for gain or growth <small>(investments...)</small>
+* <span class="fw-semibold">Non-speculative risks</span> 🔥 : a risk due to an organization's operations <small>(natural disasters, operational issues...)</small>
 </div><div>
 
-There are many types of risks <small>(financial losses, disasters, security breaches, operational issues, legal liabilities...)</small> such as:
+There are many types of risks <small>(financial losses, natural disasters, security breaches, operational issues, legal liabilities...)</small> such as:
 
 * 🔥 Misfunction/outage of the Domain Controller <small>(Active Directory)</small>
 * 🙅‍♀️ Accidental removal of data/accounts

@@ -194,6 +194,8 @@ Elements are in the same class if they share the same controls. A common classif
 ➡️ Clearly define what information is in which level. It's usually based on the valuation. You should not have more than 7.
 
 🔥 An organization may add a class or a subclass in every class called **Critical data** for data essential for the organization to operate. They are usually identified when performing a [risk assessment](/cybersecurity/blue-team/risk.md#risk-assessment).
+
+🧨 An organization may also add a class or a subclass in every class called **Sensitive data** for data that may harm users or the organization if disclosed/accessed by unauthorized individuals..
 </div><div>
 
 💣 Beware that using **inference**, non-confidential information such as birthdate, postal code, and gender can allow us to find someone.
@@ -359,8 +361,9 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* retention policy, a business continuity plan <small>(step 4 of data life-cycle)</small>
+* Retention policy, a business continuity plan <small>(step 4 of data life-cycle)</small>
 * Data Stewardship
+* Test data
 </div><div>
 
 Data breaches

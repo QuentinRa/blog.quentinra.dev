@@ -67,6 +67,4 @@ So, they created [JSON5](https://json5.org/). It's not quite used widely.
 
 * See [geojson](https://geojson.org/)
 * Not tested (👻)
-
-...
 </div></div>
