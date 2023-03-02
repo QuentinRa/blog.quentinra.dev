@@ -2,7 +2,8 @@
 
 <div class="row row-cols-md-2"><div>
 
-* cypher (`message encrypté`)
+* cyphertext (`message encrypté`): encrypted form of the original plaintext
+* enciphered/encrypted: transforming plaintext into ciphertext using a cryptographic algorithm
 * acceptable
 </div><div>
 

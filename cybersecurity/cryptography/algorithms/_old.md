@@ -2,61 +2,6 @@
 
 Cryptography is the knowledge related to the encryption and decryption of messages via one, or more algorithms. There are two kind of algorithms: symmetric algorithms, and asymmetric algorithms.
 
-<hr class="sl">
-
-## Caesar, Substitution, and Vigenère cipher
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-</div><div>
-
-<details class="details-e">
-<summary>Substitution cipher</summary>
-
-On the same idea as the caesar cipher, each letter is associated with another: $a \to w,\ b \to e,\ etc.$. The key is a dictionary of 26 letters (a-z).
-
-</details>
-</div></div>
-
-<details class="details-e">
-<summary>Both are vulnerable to an entropy attack</summary>
-
-In any language, there are letters, 2-letters long words, 3-letters long words, and so on, that are statistically very likely to be in any text. In French/English, the most common letter is `e`, while there are a lot of common words such as `de`, `du`, `le`, `la`... To find them, you need to analyze the frequency of letters/words.
-
-* [Characters frequency french](https://www.sttmedia.com/characterfrequency-french)
-* [Syllables frequency french](https://www.sttmedia.com/syllablefrequency-french)
-</details>
-
-<details class="details-e">
-<summary>Vigenère cipher (<code>Cryptage en bloc de Vigenère</code>)</summary>
-
-This is a caesar cipher, but split into blocs. The goal was to avoid entropy attacks, because a same letter will most likely be enciphered as  different ciphertext letters.
-
-* **Possible values for k**: $26^n$
-* **Secure**: weak
-  * Entropy attack to find the size of the key, because the key is repeated
-  * Once the size of the key if found, each bloc is handled as we would for a caesar cipher
-* **Try it online**: [Vigenère cipher (cryptii.com)](https://cryptii.com/pipes/vigenere-cipher)
-
-<details class="details-e">
-<summary>Example</summary>
-
-* **message**: `memorize`
-* **key**: `vgn`
-* **cipher text**: `memorize+vgnvgnv=hkzjxvuk`
-  * $M=12$, $V=21$, $12+21=33\equiv 7\ (mod\ 26)=H$
-  * $E=4$, $G=6$, $4+6=10\equiv 10\ (mod\ 26)=K$
-  * $M=12$, $N=13$, $12+13=25\equiv 25\ (mod\ 26)=Z$
-  * ...
-* **decrypt**: `hkzjxvuk+vgnvgnv=memorize`
-  * $H=7$, $V=21$, $7 - 21 + 26 \equiv 12\ (mod\ 26)=M$
-  * $K=10$, $G=6$, $10 - 6 + 26 \equiv 4\ (mod\ 26)=E$
-  * $Z=25$, $N=13$, $25 - 13 + 26 \equiv 12\ (mod\ 26)=M$
-  * $J=9$, $V=21$, $9 - 21 + 26 \equiv 14\ (mod\ 26)=O$
-  * ...
-</details>
-</details>
-
 <hr class="sr">
 
 ## One Time Pad (`Masque jetable`)

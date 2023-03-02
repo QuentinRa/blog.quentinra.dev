@@ -30,6 +30,7 @@ Caesar 👑 was replacing letters such as: $a \to d,\ b \to e,\ ...,\ z \to c$. 
   * Bruteforce attack
   * Frequency analysis
 * **Try it online** 🌍: [Caesar cipher online (cryptii.com)](https://cryptii.com/pipes/caesar-cipher)
+* **Still used?** 🟥: no
 </div></div>
 
 <hr class="sep-both">
@@ -50,4 +51,40 @@ Similar to caesar cipher. Each letter is associated with another: $a \to w,\ b \
   * Frequency analysis
   * Cribbing attack
 * **Try it online** 🌍: [Substitution cipher (dcode.fr)](https://www.dcode.fr/substitution-cipher)
+* **Still used?** 🟥: no
+</div></div>
+
+<hr class="sep-both">
+
+## Vigenère cipher (<code>Cryptage en bloc de Vigenère</code>)
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+This is a caesar cipher, but split into blocs. The goal was to prevent frequency analysis, because a same letter will *most likely* be enciphered as different ciphertext letters.
+
+<details class="details-n">
+<summary>Example of encryption/decryption</summary>
+
+* message ✉️: `memorize`
+* key 🔑: `vgn`
+* **ciphertext**: `memorize+vgnvgnv=hkzjxvuk`
+    * $M=12$, $V=21$, $12+21=33\equiv 7\ (mod\ 26)=H$
+    * $E=4$, $G=6$, $4+6=10\equiv 10\ (mod\ 26)=K$
+    * $M=12$, $N=13$, $12+13=25\equiv 25\ (mod\ 26)=Z$
+    * ...
+* **decrypt**: `hkzjxvuk+vgnvgnv=memorize`
+    * $H=7$, $V=21$, $7 - 21 + 26 \equiv 12\ (mod\ 26)=M$
+    * $K=10$, $G=6$, $10 - 6 + 26 \equiv 4\ (mod\ 26)=E$
+    * $Z=25$, $N=13$, $25 - 13 + 26 \equiv 12\ (mod\ 26)=M$
+    * $J=9$, $V=21$, $9 - 21 + 26 \equiv 14\ (mod\ 26)=O$
+    * ...
+</details>
+</div><div>
+
+* **Possible values for k** 🦄: variable
+* **Attacks** 🧨
+  * Kasiski examination
+  * Friedman test
+* **Try it online** 🌍: [Vigenère cipher (cryptii.com)](https://cryptii.com/pipes/vigenere-cipher)
+* **Still used?** 🟨: yes, but in niche applications
 </div></div>
