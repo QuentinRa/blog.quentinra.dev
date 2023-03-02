@@ -2,22 +2,6 @@
 
 Cryptography is the knowledge related to the encryption and decryption of messages via one, or more algorithms. There are two kind of algorithms: symmetric algorithms, and asymmetric algorithms.
 
-<hr class="sep-both">
-
-## AES
-
-<details class="details-e">
-<summary>Electronic Code Book (ECB)</summary>
-
-This is a block cipher in which we are reusing the key. The problem is that parts of the message may have the same cipher, and we can use an entropy attack to break the cipher.
-</details>
-
-<details class="details-e">
-<summary>AES-CBC</summary>
-
-This is a block cipher in which we are reusing the key, but we are adding a parameter IV (uniq, and not inferable) to encrypt the first bloc, and we are using the cipher of the previous block, to encrypt the next one.
-</details>
-
 <hr class="sr">
 
 ## Knapsack problem (`sac-à-dos`) of Merkle-Hellman

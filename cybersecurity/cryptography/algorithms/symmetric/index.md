@@ -30,7 +30,7 @@ These algorithms encrypt the message bit by bit/byte by byte. They produce a con
 
 These algorithms split the message in blocks of fixed size `n`. If a block is not "full", some **padding** is added. Each block is encrypted using an algorithm, generating a block of the final ciphertext. Each key has the same length `n` as the block.
 
-👉 Examples: AES...
+👉 Examples: ECB, AES...
 
 ➡️ Since the key, the part of the message in the block, and the cipher have the length, this a permutation of `m` to get `c`.
 </div></div>
@@ -141,7 +141,30 @@ Since both $m$ and $k$ are letters, we need to convert them to binary to use the
 <div class="row row-cols-md-2 mt-3"><div>
 
 The **Advanced Encryption Standard**, abbreviated as **AES**, is a part of the **Block ciphers** algorithms.
-</div><div class="align-self-center">
+
+<details class="details-n">
+<summary>AES-ECB (Electronic Code Book)</summary>
+
+Using this mode, each block is encrypted using the same key. 
+
+* **Attacks** 🧨
+  * Brute-force attack
+  * Known plaintext attack
+  * Dictionary attack
+* **Still used?** 🟨: yes, in some applications, mostly for integrity rather than confidentiality.
+</details>
+
+<details class="details-n">
+<summary>AES-CBC (Cipher Block Chaining)</summary>
+
+Using this mode with AES, we introduce a new parameter IV <small>(unique and not inferable)</small> to encrypt the first block. Then, we use the generated cipher of the previous block to encrypt the next block...
+
+* **Attacks** 🧨
+  * Padding oracle attack
+  * Bit-flipping attack
+* **Still used?** 🟩: yes, it's widely used, but there are better
+</details>
+</div><div>
 
 * **Possible values for k** 🦄: a string of 128/192/256 bits
 * **Attacks** 🧨
@@ -149,5 +172,5 @@ The **Advanced Encryption Standard**, abbreviated as **AES**, is a part of the *
   * Known plaintext attack
   * Side-channel/timing attacks
 * **Try it online** 🌍: [One Time Pad (boxentriq.com)](https://www.boxentriq.com/code-breaking/one-time-pad)
-* **Still used?** 🟩: yes, it's widely used
+* **Still used?** 🟩: yes, it's widely used <small>(AES-GCM/AES-CCM/...)</small>
 </div></div>
