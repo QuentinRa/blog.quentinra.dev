@@ -14,6 +14,29 @@ Symmetric algorithms <small>(a.k.a. secret key algorithm)</small> are algorithms
 
 <hr class="sep-both">
 
+## Two types of algorithms 👪
+
+<div class="row row-cols-md-2"><div>
+
+#### Stream cipher (chiffrement par flot)
+
+These algorithms encrypt the message bit by bit/byte by byte. They produce a continuous stream of encrypted data which is combined (XORed) with the plaintext to produce the ciphertext.
+
+👉 Examples: One Time Pad, RC4...
+
+</div><div>
+
+#### Block cipher (chiffrement par bloc)
+
+These algorithms split the message in blocks of fixed size `n`. If a block is not "full", some **padding** is added. Each block is encrypted using an algorithm, generating a block of the final ciphertext. Each key has the same length `n` as the block.
+
+👉 Examples: AES...
+
+➡️ Since the key, the part of the message in the block, and the cipher have the length, this a permutation of `m` to get `c`.
+</div></div>
+
+<hr class="sep-both">
+
 ## Caesar cipher (<code>Code de César</code>)
 
 <div class="row row-cols-md-2 mt-3"><div>
@@ -117,7 +140,7 @@ Since both $m$ and $k$ are letters, we need to convert them to binary to use the
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-...
+The **Advanced Encryption Standard**, abbreviated as **AES**, is a part of the **Block ciphers** algorithms.
 </div><div class="align-self-center">
 
 * **Possible values for k** 🦄: a string of 128/192/256 bits

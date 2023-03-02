@@ -2,31 +2,9 @@
 
 Cryptography is the knowledge related to the encryption and decryption of messages via one, or more algorithms. There are two kind of algorithms: symmetric algorithms, and asymmetric algorithms.
 
-<hr class="sr">
-
-## One Time Pad (`Masque jetable`)
-
-It is part of the family of **stream cipher** (`chiffrement par flot`).
-
 <hr class="sep-both">
 
 ## AES
-
-The **Advanced Encryption Standard**, abbreviated as **AES**, is a part of the **Block ciphers** algorithms.
-
-<details class="details-e">
-<summary>Block cipher algorithms</summary>
-
-* a size of a bloc `n` bits
-* a message of `n` bits
-* a cipher of `n` bits
-* a key of `k` bits
-
-Note that because both `m`, and `c` are on `n` bits, we will basically apply a permutation of `m` to get `c` <small>(101 may become 011, same bits, different order)</small>.
-
-</details>
-
-For AES, `n` is 128 bits, and `k` is either 128, 192, or 256 bits. As a message may be bigger, or lower than `n`, we will split the message in blocs of size `n`. We are adding padding to fill the last block if needed. Each block is encoded with a different `k`.
 
 <details class="details-e">
 <summary>Electronic Code Book (ECB)</summary>
