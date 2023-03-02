@@ -110,3 +110,21 @@ Since both $m$ and $k$ are letters, we need to convert them to binary to use the
 * **Try it online** 🌍: [One Time Pad (boxentriq.com)](https://www.boxentriq.com/code-breaking/one-time-pad)
 * **Still used?** 🟨: yes, but in niche applications
 </div></div>
+
+<hr class="sep-both">
+
+## Advanced Encryption Standard (AES)
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+...
+</div><div class="align-self-center">
+
+* **Possible values for k** 🦄: a string of 128/192/256 bits
+* **Attacks** 🧨
+  * Brute-force attack
+  * Known plaintext attack
+  * Side-channel/timing attacks
+* **Try it online** 🌍: [One Time Pad (boxentriq.com)](https://www.boxentriq.com/code-breaking/one-time-pad)
+* **Still used?** 🟩: yes, it's widely used
+</div></div>

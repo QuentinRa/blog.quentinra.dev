@@ -2,12 +2,15 @@
 
 Cryptography is the knowledge related to the encryption and decryption of messages via one, or more algorithms. There are two kind of algorithms: symmetric algorithms, and asymmetric algorithms.
 
+<hr class="sr">
+
+## One Time Pad (`Masque jetable`)
+
+It is part of the family of **stream cipher** (`chiffrement par flot`).
+
 <hr class="sep-both">
 
 ## AES
-
-![Type: Symmetric](https://img.shields.io/badge/Type-Symmetric-7cfc00)&nbsp;&nbsp;
-![Complexity: easy](https://img.shields.io/badge/Complexity-easy-7cfc00)
 
 The **Advanced Encryption Standard**, abbreviated as **AES**, is a part of the **Block ciphers** algorithms.
 
