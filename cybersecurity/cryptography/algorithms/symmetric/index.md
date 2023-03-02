@@ -20,7 +20,7 @@ Symmetric algorithms <small>(a.k.a. secret key algorithm)</small> are algorithms
 
 <div class="row row-cols-md-2"><div>
 
-#### Stream cipher (chiffrement par flot)
+#### Stream cipher (<code>chiffrement par flot</code>)
 
 These algorithms encrypt the message bit by bit/byte by byte. They produce a continuous stream of encrypted data which is combined (XORed) with the plaintext to produce the ciphertext.
 
@@ -28,7 +28,7 @@ These algorithms encrypt the message bit by bit/byte by byte. They produce a con
 
 </div><div>
 
-#### Block cipher (chiffrement par bloc)
+#### Block cipher (<code>chiffrement par bloc</code>)
 
 These algorithms split the message in blocks of fixed size `n`. If a block is not "full", some **padding** is added. Each block is encrypted using an algorithm, generating a block of the final ciphertext. Each key has the same length `n` as the block.
 
@@ -60,7 +60,7 @@ Caesar 👑 was replacing letters such as: $a \to d,\ b \to e,\ ...,\ z \to c$. 
 
 <hr class="sep-both">
 
-## Substitution cipher
+## Substitution cipher (<code>Chiffrement par substitution</code>)
 
 <div class="row row-cols-md-2 mt-3"><div>
 

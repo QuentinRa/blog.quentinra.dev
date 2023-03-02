@@ -19,7 +19,31 @@ Cryptanalysis are those with the duty to analyse and find weakness in the underl
 **Where to learn?**
 
 * [DamnVulnerableCryptoApp](https://damnvulnerablecryptoapp.github.io/DamnVulnerableCryptoApp/) (👻)
-* [Coursera/Crypto](https://www.coursera.org/learn/crypto)
+* [Cryptohack](https://cryptohack.org/) (👻)
+* [Coursera/Crypto](https://www.coursera.org/learn/crypto) (👻)
+</div></div>
+
+<hr class="sep-both">
+
+## Terminology
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+In a nutshell, we use these terms:
+
+* The input is a **plaintext** message 💬.
+
+* It is **encrypted** 🔒 <small>(a.k.a. encipher)</small> using a cryptographic algorithm and a **key** 🔑. The output is called a **cyphertext** (`message encrypté`) 🔐. 
+
+* It is **decrypted** 🔓  using a cryptographic algorithm and a **key** 🗝️.
+</div><div>
+
+Algorithms can be
+
+* **Weak** 🔥: vulnerableto known attacks/easily broken
+* **Acceptable** 🤔: meet the minimum security requirements
+* **Secure** 🎩: secure against known attacks, resistant to cryptanalysis
+* **Strong** 👑: both secure and efficient
 </div></div>
 
 <hr class="sep-both">
@@ -33,11 +57,8 @@ Stuff that I found, but never read/used yet.
 * [_old](_old.md)
 * [justcryptography](https://justcryptography.com/)
 * [angelique-renaud](https://www.angelique-renaud.com/cryptage.php)
-* 
+* [wikipedia portal](https://fr.wikipedia.org/wiki/Portail:Cryptologie)
 </div><div>
 
-* cyphertext (`message encrypté`): encrypted form of the original plaintext
-* enciphered/encrypted: transforming plaintext into ciphertext using a cryptographic algorithm
-* acceptable
 * SRM
 </div></div>

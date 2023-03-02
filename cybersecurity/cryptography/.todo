@@ -1,11 +1,5 @@
-https://cryptohack.org/
-
-----------------
 Passphrase - Separate to the key, a passphrase is similar to a password and used to protect a key.
-
-https://www.pcisecuritystandards.org/documents/PCI_DSS_for_Large_Organizations_v1.pdf
-
-* password are hashed, not encrypted
+Password are hashed, not encrypted
 
 Python for crypto: integers are unlimited in size
 
