@@ -2,7 +2,8 @@
 
 <div class="row row-cols-md-2"><div>
 
-...
+* cypher (`message encrypté`)
+* acceptable
 </div><div>
 
 ...

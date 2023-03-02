@@ -2,36 +2,16 @@
 
 Cryptography is the knowledge related to the encryption and decryption of messages via one, or more algorithms. There are two kind of algorithms: symmetric algorithms, and asymmetric algorithms.
 
-<details class="details-e">
-<summary>Symmetric algorithms</summary>
-
-In symmetric algorithms, **both** of the sender and the receiver know the key: k. Algorithm are known to the public.
-
-* **A** use an algorithm C to encrypt the message with the key k, generating a cipher (`message encrypté`) c : `c = C(k, m)`
-* **B** use an algorithm D to decrypt the message with the same key k : `m = D(k, c)`
-
-`k` should be at least 128 bits for a symmetric algorithm to be acceptable.
-</details>
-
-<details class="details-e">
-<summary>Asymmetric algorithms</summary>
-
-...
-</details>
-
 <hr class="sl">
 
 ## Caesar, Substitution, and Vigenère cipher
-
-![Type: Symmetric](https://img.shields.io/badge/Type-Symmetric-7cfc00)&nbsp;&nbsp;
-![Complexity: easy](https://img.shields.io/badge/Complexity-easy-7cfc00)
 
 <div class="row row-cols-md-2 mt-4"><div>
 
 <details class="details-e">
 <summary>Caesar cipher (<code>Code de César</code>)</summary>
 
-Caesar was replacing letters like this $a \to d,\ b \to e,\ ...,\ z \to c$. Each letter is associated with another one "k" letters forward (k=3 in the previous example), modulus the number of letters (26). To decrypt, for each letter, go backward by "k" letters to get back the decrypted letter.
+Caesar was replacing letters like this $a \to d,\ b \to e,\ ...,\ z \to c$. Each letter is associated with another one "k" letters forward <small>(k=3 in the previous example)</small>, modulus the number of letters <small>(N=26)</small>. To decrypt, for each letter, go backward by "k" letters to get back the decrypted letter.
 
 * **Possible values for k**: $26$
 * **Secure**: weak
