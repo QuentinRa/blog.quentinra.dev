@@ -2,41 +2,7 @@
 
 Cryptography is the knowledge related to the encryption and decryption of messages via one, or more algorithms. There are two kind of algorithms: symmetric algorithms, and asymmetric algorithms.
 
-<hr class="sr">
-
-## One Time Pad (`Masque jetable`)
-
-![Type: Symmetric](https://img.shields.io/badge/Type-Symmetric-7cfc00)&nbsp;&nbsp;
-![Complexity: easy](https://img.shields.io/badge/Complexity-easy-7cfc00)
-
-The **One Time Pad**, or One Time password, abbreviated as **OTP**, is a cryptographic algorithm with a good level of security, as long as some considerations are taken, created in 2017.  It is part of the family of **stream cipher** (`chiffrement par flot`).
-
-* `m` is a message of length `n`
-* `k` is a key of length `n`
-* $C = m \oplus k$
-* $D = c \oplus k$
-
-The operator $\oplus$ (XOR, `ou exclusif`) is basically this: $(a+b)%2$, with both arguments binary numbers.
-
-<details class="details-e">
-<summary>Example</summary>
-
-* **Message**: $10011$
-* **Key** (encrypt): $01010$
-* **Cipher text**: $11001$
-* **Key** (decrypt): $01010$
-* **Message**: $10011$
-</details>
-
-<details class="details-e">
-<summary>Concerns</summary>
-
-* The key is as long as the message, making it hard to use
-* The key must be used only once (**Two Time Pad**)
-* OPT do not control/ensure the integrity of the message.
-</details>
-
-<hr class="sl">
+<hr class="sep-both">
 
 ## AES
 
@@ -210,16 +176,12 @@ You can use Bézout on $\phi(n)$, and $k$, to find $d$, and $e$
 * `k` should be at least "3"
 * `k` is usually $2^{16}+1=65537$
 * **Faulty key generation attack**: $p$, and $q$ shouldn't be too close  
-* **Timing attacks** (1995): if the hardware is know in details, then an attacker can guess $d$ based on the decryption time of several ciphers  
-
+* **Timing attacks** (1995): if the hardware is know in details, then an attacker can guess $d$ based on the decryption time of several ciphers
 </details>
 
 <hr class="sl">
 
 ## Sources
 
-* IUTSF Teachings 🚀
-* ENSIIE Teachings
-* UdeS Teachings
 * [The Knapsack Problem and Public Key Cryptography](https://nrich.maths.org/2199)
 * [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem))

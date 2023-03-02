@@ -88,3 +88,25 @@ This is a caesar cipher, but split into blocs. The goal was to prevent frequency
 * **Try it online** 🌍: [Vigenère cipher (cryptii.com)](https://cryptii.com/pipes/vigenere-cipher)
 * **Still used?** 🟨: yes, but in niche applications
 </div></div>
+
+<hr class="sep-both">
+
+## One Time Pad (`Masque jetable`)
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+The **One Time Pad**, or One Time password, abbreviated as **OTP**, is theoretically unbreakable if used correctly. It's not quite used because the key must be as long as the message.
+
+* $C = m \oplus k$
+* $D = c \oplus k$
+
+Since both $m$ and $k$ are letters, we need to convert them to binary to use the $\oplus$ (XOR, `ou exclusif`) operator using ASCII encoding <small>(a=77)</small>.
+</div><div class="align-self-center">
+
+* **Possible values for k** 🦄: random, unique, and as long as $m$
+* **Attacks** 🧨
+  * Known plaintext attack
+  * Key reuse/two-time pad
+* **Try it online** 🌍: [One Time Pad (boxentriq.com)](https://www.boxentriq.com/code-breaking/one-time-pad)
+* **Still used?** 🟨: yes, but in niche applications
+</div></div>
