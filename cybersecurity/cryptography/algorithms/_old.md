@@ -8,29 +8,13 @@ Cryptography is the knowledge related to the encryption and decryption of messag
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-<details class="details-e">
-<summary>Caesar cipher (<code>Code de César</code>)</summary>
-
-Caesar was replacing letters like this $a \to d,\ b \to e,\ ...,\ z \to c$. Each letter is associated with another one "k" letters forward <small>(k=3 in the previous example)</small>, modulus the number of letters <small>(N=26)</small>. To decrypt, for each letter, go backward by "k" letters to get back the decrypted letter.
-
-* **Possible values for k**: $26$
-* **Secure**: weak
-  * Bruteforce attack
-  * Entropy attack
-* **Try it online**: [Caesar cipher online (cryptii.com)](https://cryptii.com/pipes/caesar-cipher)
-
-</details>
 </div><div>
 
 <details class="details-e">
 <summary>Substitution cipher</summary>
 
-On the same idea as the caesar cipher, the **substitution cipher** is associating each letter by another like $a \to w,\ b \to e,\ etc.$. The key is a dictionary of 26 letters (a-z).
+On the same idea as the caesar cipher, each letter is associated with another: $a \to w,\ b \to e,\ etc.$. The key is a dictionary of 26 letters (a-z).
 
-* **Possible values for k**: $26! ≈ 2^{88.4}$
-* **Secure**: weak
-  * Entropy attack
-* **Try it online**: [Substitution cipher (dcode.fr)](https://www.dcode.fr/substitution-cipher)
 </details>
 </div></div>
 
