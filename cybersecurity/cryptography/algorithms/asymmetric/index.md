@@ -114,3 +114,57 @@ It allows two parties to establish a shared secret key over an insecure communic
     * Brute-force attacks
 * **Still used?** 🟩: yes, in combination with other security mechanisms
 </div></div>
+
+<hr class="sep-both">
+
+## Rivest–Shamir–Adleman (RSA)
+
+<div class="row row-cols-md-2"><div>
+
+* 🔨 Choose two large prime numbers: **p** and **q**
+* ⛏️ Compute their product: $n = p * q$
+* ⚒️ Compute phi(n): $\phi(n) = (p-1) * (q-1)$
+* 🔒 Compute the exponent used for encryption **e**. $e$ must be coprime with $\phi(n)$, meaning that $gcd(k,\ \phi(n)) = 1$. It must be greater than 3, and it is usually equals to $2^{16}+1=65537$.
+* 🔑 Compute the exponent used for decryption **d** using the formula: $d = e^{−1}\ mod\ \phi(n)$.
+
+The public key is **public key is $(n,e)$**, while the **private key is $(n,d)$**.
+
+* **Encrypt**: $C(m, n, e) = m^e\ (mod\ n)$
+* **Decrypt**: $D(c, n, d) = c^d\ (mod\ n)$
+</div><div>
+
+<details class="details-n">
+<summary>You can use Bezout to find $d$</summary>
+
+You can use Bézout on $\phi(n)$, and $e$, to find $d$.
+
+* Solve $B(k,\ \phi(n)) = e * u + phi(n) * v = 1$
+* $d = u$
+
+<details class="details-n">
+<summary>Example: RSA(n=35, e=7)</summary>
+
+* $35 = 5 * 7$, $p=5$, $q=7$
+* $\phi(N) = (5-1) * (7-1) = 24$
+* $B(7, 24) = 7 * u + 24 * v = 1$
+  * One solution: $u=7$, $v=-2$
+* **Encrypt**
+  * (2) $2^7 \mod 35 = 23$
+  * (3) $3^7 \mod 35 = 17$
+  * (4) $4^7 \mod 35 = 4$
+* **Decrypt**
+  * (23) $23^7 \mod 35 = 2$
+  * (17) $17^7 \mod 35 = 3$
+  * (4) $4^7 \mod 35 = 4$
+</details>
+</details>
+
+* **Length of key** 🦄: at least 2048 bits in 2022
+* **Attacks** 🧨
+    * Factorization attacks
+    * Brute-force attacks
+    * Side-channel/timing attacks
+* **Still used?** 🟩: yes, in combination with other security mechanisms
+
+An attacker would have a lot of prime numbers to test ($10^{497}$ for $n \approx 10^{1000}$) to find back $\phi(n) = (p-1) * (q-1)$ from $n$.
+</div></div>
