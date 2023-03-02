@@ -91,3 +91,26 @@ We will pick a value $N$ greater than the sum of the values in the Knapsack, and
   * Lattice reduction attack
 * **Still used?** 🟥: no
 </div></div>
+
+<hr class="sep-both">
+
+## Diffie–Hellman key exchange
+
+<div class="row row-cols-md-2"><div>
+
+It allows two parties to establish a shared secret key over an insecure communication channel. It works as follows:
+
+* Both parties agree to a large prime number **p** and a generator **g** with $(p-1) \wedge g\ |\ 1$ <small>(=the only divisor is 1)</small>
+* Alice chooses a secret number **a** and computes $A = g^a\ (mod\ p)$
+* Bob chooses a secret number **b** and computes $B = g^b\ (mod\ p)$
+* Both exchange their computed value
+* The shared key is $B^a\ (mod\ p)$ for Alice, and $A^b\ (mod\ p)$ for Bob.
+</div><div>
+
+* **Length of p** 🌻: a least 2048 bits
+* **Length of each secret number** 🦄: at least as long as p
+* **Attacks** 🧨
+    * Man-in-the-middle attacks
+    * Brute-force attacks
+* **Still used?** 🟩: yes, in combination with other security mechanisms
+</div></div>
