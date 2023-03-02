@@ -1,46 +1,7 @@
-<div class="row row-cols-md-2"><div>
-
-Cryptography is used to **protect confidentiality** <small>(can someone eavesdrop on your conversations?)</small>, **ensure integrity** <small>(are the message exchanged untempered?)</small>, along with **authenticity** <small>(are you really exchanging with the person you believe to be exchanging?)</small>.
-
-* [DamnVulnerableCryptoApp](https://damnvulnerablecryptoapp.github.io/DamnVulnerableCryptoApp/) might be worth the check
-</div><div>
-
-We are mostly using something called the **checksum** to ensure the integrity.
-
-While we usually rely on **signatures**, and/or **certificates** used by trusted parties to ensure authenticity.
-</div></div>
-
-https://www.angelique-renaud.com/cryptage.php
-https://fr.wikipedia.org/wiki/Portail:Cryptologie
-https://qvault.io/
-https://www.coursera.org/learn/crypto
-https://justcryptography.com/asymmetric-cryptography/
-https://en.wikipedia.org/wiki/Substitution_cipher
-https://www.educba.com/diffie-hellman-key-exchange-algorithm/
-https://www.askdifference.com/encrypt-vs-encipher/
-See SRM++.
-
-https://en.wikipedia.org/wiki/RSA_(cryptosystem)
-indicatrice d'Euler
-
-AES-CBC
-
 https://cryptohack.org/
 
 ----------------
-Asymmetric encryption - Uses different keys to encrypt and decrypt.
-
-Cryptanalysis - Attacking cryptography by finding a weakness in the underlying maths
-
 Passphrase - Separate to the key, a passphrase is similar to a password and used to protect a key.
-
-Cryptography is used to
-
-* protect confidentiality (ssh tunnel)
-* ensure integrity (checksum)
-* ensure authenticity (certificate, signatures)
-
-Any sensitive data stored must be encrypted.
 
 https://www.pcisecuritystandards.org/documents/PCI_DSS_for_Large_Organizations_v1.pdf
 
@@ -48,15 +9,6 @@ https://www.pcisecuritystandards.org/documents/PCI_DSS_for_Large_Organizations_v
 
 Python for crypto: integers are unlimited in size
 
-* Symmetric encryption: tend to be faster, use smaller keys 128/256 AES
-* Asymmetric encryption uses a pair of keys
-  * Elliptic Curve Cryptography
-  * RSA and Elliptic Curve cryptography are based around different mathematically difficult (intractable) problems, which give them their strength
-
-> RSA typically uses 2048 to 4096 bits keys
->
-> RSA is based on the mathematically difficult problem of working out the factors of a large number.
->
 > CTF RSA https://github.com/RsaCtfTool/RsaCtfTool / https://github.com/ius/rsatool ?
 >
 > https://muirlandoracle.co.uk/2020/01/29/rsa-encryption/
@@ -85,8 +37,6 @@ PGP stands for Pretty Good Privacy. It’s a software that implements encryption
 
 GnuPG or GPG is an Open Source implementation of PGP from the GNU project.
 
-AES is complicated to explain, and doesn’t seem to come up as often. If you’d like to learn how it works, here’s an excellent video from Computerphile https://www.youtube.com/watch?v=O4xNJsjtN6E
-
-The NSA recommends using RSA-3072 or better for asymmetric encryption and AES-256 or better for symmetric encryption.
+AES: Computerphile https://www.youtube.com/watch?v=O4xNJsjtN6E
 
 https://doi.org/10.6028/NIST.IR.8105

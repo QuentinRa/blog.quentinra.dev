@@ -10,6 +10,8 @@ Symmetric algorithms <small>(a.k.a. secret key algorithm)</small> are algorithms
 **Encryption**: we generate a cypher (`c`) from a message (`m`) using a key (`k`) and an algorithm `C` giving us: `c = C(k, m)`
 
 **Decryption**: we generate back the message (`m`) from the cypher (`c`) and the same key (`k`) using an algorithm `D` giving us: `m = D(k, c)`
+
+➡️ They are usually faster, with a smaller key, and easier to set up.
 </div></div>
 
 <hr class="sep-both">

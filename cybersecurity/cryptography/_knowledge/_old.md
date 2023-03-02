@@ -1,7 +1,5 @@
 # Basics of Cryptography
 
-Cryptography is the knowledge related to the **encryption** and **decryption** of messages. This course is more of a mathematical course than a programming course. This is because most of the algorithms are using prime numbers, modulus, and a lot of stuff like this.
-
 <hr class="sl">
 
 ## Prime numbers (`Nombres premiers`)
@@ -166,15 +164,3 @@ A number $a$ is invertible modulus $m$ if, $\exists a^{-1}$ giving us $a * a^{-1
   * $7^{-1} = -2 = 3\ (\text{mod}\ 5)$
   * **check**: $3 * 7 = 21 = 1\ (\text{mod}\ 5)$
 </details>
-
-<hr class="sl">
-
-## Sources
-
-* IUTSF Teaching 🚀
-* ENSIIE Teaching
-* [Online Cryptography Course](https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/)
-* <https://en.wikipedia.org/wiki/Table_of_divisors>
-* <https://en.wikipedia.org/wiki/Prime_number>
-* <https://en.wikipedia.org/wiki/Modular_arithmetic>
-* <https://en.wikipedia.org/wiki/Euler%27s_theorem>
