@@ -7,9 +7,9 @@ Symmetric algorithms <small>(a.k.a. secret key algorithm)</small> are algorithms
 🔑 The key length must be at least 128 bits to be acceptable. The longer the key, the more secure the encryption.
 </div><div>
 
-**Encryption**: we generate a cypher (`c`) from a message (`m`) using a key (`k`) using an algorithm `C`: `c = C(k, m)`
+**Encryption**: we generate a cypher (`c`) from a message (`m`) using a key (`k`) and an algorithm `C` giving us: `c = C(k, m)`
 
-**Decryption**: we generate back the message (`m`) from the cypher (`c`) using the same key (`k`) using an algorithm `D`: `m = D(k, c)`
+**Decryption**: we generate back the message (`m`) from the cypher (`c`) and the same key (`k`) using an algorithm `D` giving us: `m = D(k, c)`
 </div></div>
 
 <hr class="sep-both">
