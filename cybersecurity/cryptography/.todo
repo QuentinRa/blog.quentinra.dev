@@ -1,12 +1,6 @@
 Passphrase - Separate to the key, a passphrase is similar to a password and used to protect a key.
 Password are hashed, not encrypted
 
-Python for crypto: integers are unlimited in size
-
-> CTF RSA https://github.com/RsaCtfTool/RsaCtfTool / https://github.com/ius/rsatool ?
->
-> https://muirlandoracle.co.uk/2020/01/29/rsa-encryption/
-
 * exchanging keys
   * use public-private key to send the key
   * then use symmetric

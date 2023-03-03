@@ -16,6 +16,8 @@ There are two kind of cryptographic algorithms
 
 Cryptanalysis are those with the duty to analyse and find weakness in the underlying maths of cryptographic algorithms.
 
+➡️ Python is quite used in cryptography, because reasons like there are many libraries with cryptographic algorithms, integers are not limited in size, it's popular in mathematical fields...
+
 **Where to learn?**
 
 * [DamnVulnerableCryptoApp](https://damnvulnerablecryptoapp.github.io/DamnVulnerableCryptoApp/) (👻)
@@ -61,4 +63,6 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * SRM
+* [RsaCtfTool](https://github.com/RsaCtfTool/RsaCtfTool) (4.2k ⭐)
+* [rsatool](https://github.com/ius/rsatool) (0.9k ⭐)
 </div></div>
