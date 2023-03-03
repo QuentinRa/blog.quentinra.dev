@@ -19,42 +19,7 @@ A prime number is a number **greater or equals to 2**, which is **only divisible
     * $60 = 6 * 10 = 2 * 3 * 5 * 2 = 2^2 * 3 * 5$
 </details>
 
-<hr class="sr">
-
-## Euclidean division (`Division euclidienne`)
-
-Dividing $a$ by $b$, mean solving $a = b * q + r$. You need to find **quotient** $q$ and the **remainder** (`reste`) $r$, with $r \lt b$. Both are unique.
-
-We are saying that $a$ is a **divisor** of $b$ if $r = 0$, written $a\ |\ b$. It would also mean that $a$ is a multiple of $b$.
-
-> **Is 5 a divisor of 25?**<br> $25 = 5 * 5 + 0$, so yes $5|25$<br><br>
-> **Is 4 a divisor of 25?**<br> $25 = 4 * 6 + 1$, so no
-
 <hr class="sl">
-
-## Congruence
-
-Let a and b two numbers. We are saying that $a$ is **congruent** (`congru`, $\equiv$) with $b$ **modulus** (`modulo`) $m$, if we can find a $q$ giving us
-
-@
-a = b + m * q
-@
-
-As you may notice, **$b$ is the same as $r$ in Euclidean division**. We are using one of the notations below
-
-<div>
-\[
-\begin{align}
-a \equiv b\ (m)\\
-a \equiv b\ (mod\ m)\\
-a \equiv [b]\\
-\end{align}
-\]
-</div>
-
-> **Ex**: $27 \equiv 3\ (mod\ 12)$ as we have $12*2 + 3$ (r=3)<br>
-> **Formula**: Given $a = m * q + r$, then $a \equiv r\ (mod\ m)$
-
 
 <details class="details-e">
 <summary>🐱‍🏍 Manually find $r$ for a complex $a$ 🐱‍🏍</summary>
@@ -78,22 +43,6 @@ This is called **Euler theorem** ([wiki](https://en.wikipedia.org/wiki/Euler%27s
 <hr class="sr">
 
 ## Modular Arithmetic (`Arithmétique modulaire`)
-
-<details class="details-e mt-4">
-<summary>Greatest common divisor (<code>Plus grand diviseur commun</code>)</summary>
-
-$D(a,b)$ is the set of the common divisors between $a$ and $b$. We are calling "**greatest common divisor**" (**GCD** or `PGCD`), the greatest value of $D(a,b)$, written $GCD(a,b)$ or $a \wedge b$.
-
-> Example: what's the GCD of $(27, 15)$
-> <p>
-> \begin{split}
-> D(27, 15) = D(27-15{\color{grey}*1}, 15)\\ = D(12, 15) = D(12, 15-12{\color{grey}*1})\\ = D(12, 3) = D(12-3{\color{grey}*4}, 3)\\ = D(0, 3) = 3 = 27 \wedge 15
-> \end{split}
-> </p>
->
-> **Formula**: $a \wedge b = (a - b * q) \wedge b$<br>
-> **Pro tip**: $a \wedge b = c \wedge (\frac{b}{c} \wedge \frac{a}{c})$, so $27 \wedge 15 = 3 \wedge (9 \wedge 5) = 3 \wedge 0 = 3 $.
-</details>
 
 <details class="details-e">
 <summary>📚 Notes on Prime numbers 📚</summary>
