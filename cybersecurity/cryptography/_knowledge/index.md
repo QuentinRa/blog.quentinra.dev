@@ -8,10 +8,11 @@ Cryptography has three main objectives:
 * 🧬 ensure integrity <small>(checksum)</small>
 * ✅ ensure authenticity <small>(certificate, signatures)</small>
 
-There are two kind of cryptographic algorithms
+There are three kind of cryptographic algorithms
 
 * [Symmetric algorithms](/cybersecurity/cryptography/algorithms/symmetric/index.md): one shared private key
 * [Asymmetric algorithms](/cybersecurity/cryptography/algorithms/asymmetric/index.md): one public key, one private key
+* [Hashing algorithms](/cybersecurity/cryptography/algorithms/hashing/index.md): no key, generate a digest
 </div><div>
 
 Cryptanalysis are those with the duty to analyse and find weakness in the underlying maths of cryptographic algorithms.

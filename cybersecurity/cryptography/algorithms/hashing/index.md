@@ -1,10 +1,10 @@
 # Crack (insecure) passwords
 
-[![encryptioncrypto101](../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
-[![johntheripper0](../../_badges/thmp/johntheripper0.svg)](https://tryhackme.com/room/johntheripper0)
-[![hashingcrypto101](../../_badges/thmp/hashingcrypto101.svg)](https://tryhackme.com/room/hashingcrypto101)
-[![hash_cracking](../../_badges/poat/hash_cracking.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Hash%20Cracking.md)
-[![crackthehash](../../_badges/thm-p/crackthehash.svg)](https://tryhackme.com/room/crackthehash)
+[![encryptioncrypto101](../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
+[![johntheripper0](../../../_badges/thmp/johntheripper0.svg)](https://tryhackme.com/room/johntheripper0)
+[![hashingcrypto101](../../../_badges/thmp/hashingcrypto101.svg)](https://tryhackme.com/room/hashingcrypto101)
+[![hash_cracking](../../../_badges/poat/hash_cracking.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Hash%20Cracking.md)
+[![crackthehash](../../../_badges/thm-p/crackthehash.svg)](https://tryhackme.com/room/crackthehash)
 
 <div class="row row-cols-md-2"><div>
 
@@ -283,7 +283,7 @@ $ john --config=FILE
 
 ## Linux shadow hash cracking
 
-[![linprivesc](../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
+[![linprivesc](../../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
 
 <div class="row row-cols-md-2"><div>
 
@@ -359,7 +359,7 @@ $ john --format=gpg hash --wordlist=wordlist
 
 ## SSH private key - passphrase cracking
 
-[![basicpentestingjt](../../_badges/thm-p/basicpentestingjt.svg)](https://tryhackme.com/room/basicpentestingjt)
+[![basicpentestingjt](../../../_badges/thm-p/basicpentestingjt.svg)](https://tryhackme.com/room/basicpentestingjt)
 
 <div class="row row-cols-md-2"><div>
 
@@ -404,7 +404,7 @@ $ unrar x hello.rar
 
 ## ZIP password cracking
 
-[![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
+[![agentsudoctf](../../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 
 <div class="row row-cols-md-2"><div>
 
