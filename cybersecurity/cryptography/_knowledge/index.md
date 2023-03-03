@@ -157,6 +157,41 @@ A number $a$ is invertible modulus $m$ if $\exists a^{-1}$ giving us $a * a^{-1}
 
 <hr class="sep-both">
 
+## Prime numbers (`Nombres premiers`)
+
+<div class="row row-cols-md-2"><div>
+
+A prime number is a number **greater or equals to 2**, which is **only divisible by 1 and itself**.
+
+* ✅: 2, 3, 5, 7, 11, 13, etc.
+* ❌: 4 (→2), 6 (→2, →3), 9 (→3), 10 (→2, →5), etc.
+
+**Note**: If $p$ and $q$ are prime numbers, and $p \neq q$, then $p \wedge q = 1$.<br>
+**Note**: $\phi(n)$ is called Euler's totient function (`indicatrice d'Euler`) and is the number of prime numbers with $n$.
+
+We are calling $\xi_p(n)$, the exponent of $p$ in the factorization of a number $n$ with prime numbers (`puissance de p dans n`, ex: $\xi_3(27) = 3$ or $\xi_5(60)=1$).
+</div><div>
+
+#### GCP with prime numbers
+
+You can calculate the **GCD easily**. Simply express each number with prime numbers. Then, take each **unique** number in both factorizations, they will be in the **GCD**. Their exponent is the lowest exponent that we have for each number in the two factorizations.
+
+<p>
+\begin{split}
+GCP(a, b) = \prod_{i\ \in\ unique\ prime\ numbers} i^{\min(\xi_i(a),\ \xi_i(b))} \\
+98 = 2 * 49 = 2 * 7^2 \\
+77 = 7 * 11 \\
+GCP(98, 77) = 2^{min(1, 0)} * 7^{min(2, 1)} * 11^{min(0, 1)}
+= 1 * 7 * 1 = 7\\
+\end{split}
+</p>
+
+> **Note**: if you replace **min** with **max**, you will have the **least common multiple** (`Plus petit commun multiple/PPCM`).
+</div></div>
+
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
