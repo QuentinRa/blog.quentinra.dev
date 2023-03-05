@@ -81,51 +81,6 @@ There are a lot of online websites that have big databases with tons of hashes m
 
 <hr class="sep-both">
 
-## Generate Hash 🔑
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-* ➡️ Using `mkpasswd`
-
-```bash
-# list formats
-$ mkpasswd -m help
-bcrypt          bcrypt
-sha512crypt     SHA-512
-sha256crypt     SHA-256
-md5crypt        MD5
-nt              NT-Hash
-[...]
-# generate
-$ mkpasswd -m sha512crypt toto
-# or you can use htpasswd
-$ htpasswd -bnBC 10 "" toto | tr -d ':\n' # bcrypt
-```
-</div><div>
-
-* ➡️ Using `openssl`
-
-```bash
-# list formats
-$ openssl list --digest-commands
-md4 md5 sha1 [...]
-# generate
-$ echo -n "toto" | openssl dgst -md4
-```
-
-* ➡️compute and check XXX message digest ([gnu](https://www.gnu.org/software/coreutils/manual/html_node/Summarizing-files.html))
-
-```bash
-# if you don't use -n, it won't work
-$ echo -n 'toto' | sha1sum
-$ echo -n 'toto' | md5sum
-$ echo -n 'toto' | sha256sum
-$ echo -n 'toto' | sha512sum
-```
-</div></div>
-
-<hr class="sep-both">
-
 ## hashcat
 
 <div class="row row-cols-md-2"><div>
