@@ -64,58 +64,6 @@ Hashcat stores cracked hashes in `~/.hashcat/hashcat.potfile`.
 
 <hr class="sep-both">
 
-## John the Ripper
-
-<div class="row row-cols-md-2"><div>
-
-
-</div><div>
-
-<details class="details-e mt-4">
-<summary>Single Crack mode</summary>
-
-This is one of the three modes of John. It won't use a wordlist, but a username instead, as the user may have used their username with some slight modifications as their password. For the username "toto", john will use both
-
-* **Word Mangling**: Toto tOTo toto1 toto!
-* **GECOS**: other (GECOS) fields that are provided
-
-You will have to change the format of your file
-
-```text
-username:password
-```
-
-While you may add some other fields that john will use, separated with `:`, such as in the Linux passwd file.
-
-```bash
-$ john hash --single --format=raw-md5
-```
-</details>
-
-<details class="details-e">
-<summary>Custom rules</summary>
-
-You may try to exploit "password complexity predictability", for instance, the first character is usually an uppercase, and the last character a number. If a symbol was required, then it's most likely the last character, after the number.
-
-You may edit `/etc/john/john.conf`, and add your rules. You may make a copy, and use this configuration instead of the default one. You can use the regex operation `[]` inside quotes. `c` means that the character is capitalized. `Az` means appending character, while `A0` means prepending.
-
-```text
-[List.Rules:RuleName]
-cAz"[0-9] [!$%@]"
-```
-
-```bash
-# use a custom rule
-$ john --rule=RuleName
-# use another config file
-$ john --config=FILE
-```
-
-</details>
-</div></div>
-
-<hr class="sep-both">
-
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

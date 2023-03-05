@@ -53,6 +53,53 @@ $ john hash --format=raw-md4 --wordlist=/usr/share/wordlists/rockyou.txt
 
 <hr class="sep-both">
 
+## Single crack mode 
+
+<div class="row row-cols-md-2"><div>
+
+The single crack mode is one of john the ripper modes. In this mode, we define rules 🔏 that are applied on the wordlist, to generate a new "enhanced" wordlist. 🔥 For instance, users tend to
+
+* 🔤 capitalize the first letter
+* 🔢 add a number at the end
+* 🔣 add a symbol after the number <small>(if required)</small>
+
+This is the default mode for john. It can be explicitely called with
+
+```bash
+$ john myhash --single [...]
+```
+
+👉 Default rules are stored in `/etc/john/john.conf`.
+</div><div>
+
+#### Word Mangling
+
+These are modification such as replacing, uppercasing, lowercasing, prefixing, postfixing, etc.
+
+#### GECOS fields
+
+Using other fields such as username/... in rules.
+
+```text!
+username:password
+```
+
+#### Custom rules
+
+Create a file `xxx.rules` with some rules inside:
+
+```ini!
+[List.Rules:RuleName]
+; see the documentation
+```
+
+```bash!
+$ john myhash --single --rules=xxx.rules [...]
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Linux shadow hash cracking
 
 [![linprivesc](../../../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
