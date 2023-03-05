@@ -1,63 +1,9 @@
 # Crack (insecure) passwords
 
-[![encryptioncrypto101](../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
-[![johntheripper0](../../../_badges/thmp/johntheripper0.svg)](https://tryhackme.com/room/johntheripper0)
-[![hashingcrypto101](../../../_badges/thmp/hashingcrypto101.svg)](https://tryhackme.com/room/hashingcrypto101)
-[![hash_cracking](../../../_badges/poat/hash_cracking.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Hash%20Cracking.md)
-[![crackthehash](../../../_badges/thm-p/crackthehash.svg)](https://tryhackme.com/room/crackthehash)
-
-<div class="row row-cols-md-2"><div>
-
-</div><div>
-
 ⚠️ Hash brute-forcing tools are (usually) using your CPU to compute results faster. On a VM, they may be less efficient, as the VM itself is taking a lot of resources.
 
 > You can find the location of [password wordlists here](/_cybersecurity/exploitation/general/index.md#-wordlists-).<br>
 > Reminder: CTFs are usually using `/usr/share/wordlists/rockyou.txt`.
-</div></div>
-
-<hr class="sep-both">
-
-## Find which algorithm generated this hash
-
-<div class="row row-cols-md-2"><div>
-
-There are a few solutions to find which kind of hash algorithm was used to generate a hash. We consider in the following, that the hash is stored inside a file called "hash".
-
-Historically, we used [hash-identifier](https://github.com/blackploit/hash-identifier) (0.3k⭐), but it's obsolete (2011).
-
-```bash
-$ cat hash | hash-identifier
-$ hash-identifier "some_hash"
-```
-
-[hashID](https://github.com/psypanda/hashID) (1.2k ⭐, not updated since 2015)
-
-```bash
-$ cat hash | hashid
-$ hashid "some_hash"
-```
-</div><div>
-
-[Name-that-hash](https://github.com/HashPals/Name-That-Hash) (1.1k ⭐, fork of hashID). There is an [online version](https://nth.skerritt.blog/). The program is giving you the format for john (JtR) and hashcat (hc)! 
-
-```bash
-# sudo apt install name-that-hash
-$ nth -t "some_hash"
-$ nth -f hash
-```
-
-[haiti](https://github.com/noraj/haiti/) (309 ⭐). Less famous than nth, but quite similar, as the program is also giving you the format for john (JtR) and hashcat (hc)!
-
-```bash
-# sudo gem install haiti-hash
-$ haiti "some_hash"
-```
-
-* [hashes.com/hash_identifier](https://hashes.com/en/tools/hash_identifier) (website)
-</div></div>
-
-> You might have to do it manually too. Some well-known one are "\\$1\\$" <small>(crypt, cisco, old Linux)</small>, "\\$2\\$, \\$2a\\$, \\$2b\\$, \\$2x\\$, \\$2y\\$" <small>(bcrypt, web)</small>, or "$6" <small>(sha512crypt, modern Linux)</small>. You can find a lot of examples [on hashcat website](https://hashcat.net/wiki/doku.php?id=example_hashes).
 
 <hr class="sep-both">
 
