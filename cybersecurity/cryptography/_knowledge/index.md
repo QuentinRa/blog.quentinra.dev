@@ -51,6 +51,31 @@ Algorithms can be
 
 <hr class="sep-both">
 
+## Cryptographic attacks
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+**Brute force attack** 🧨: trying all possible values until the correct one is found.
+
+**Frequency analysis** 🪶: some letters/combinations of letters occur more frequently in a language. For instance, `e` is the most frequent letter in English/French.
+
+* [Characters frequency french](https://www.sttmedia.com/characterfrequency-french)
+* [Syllables frequency french](https://www.sttmedia.com/syllablefrequency-french)
+
+**Known-plaintext attack** (KPA) 🔮: an attacker knows both the plaintext and the ciphertext, and tries to deduce the key.
+</div><div>
+
+**Cribbing attack**🧞‍♂️(a KPA attack): use information to guess parts of the plaintext and try to deduce the key.
+
+**Entropy attacks** 🦄: find a weakness in the random number generation process used to generate cryptographic keys.
+
+**Side-channel attacks** 🦐: exploit the implementation of the algorithm rather than the algorithm itself.
+
+**Timing attacks** 🕰️: analyze the time it takes to perform different operations to guess a potential weakness in an algorithm
+</div></div>
+
+<hr class="sep-both">
+
 ## Mathematical fundaments
 
 <div class="row row-cols-md-2"><div>
@@ -231,7 +256,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [_old](_old.md)
 * [justcryptography](https://justcryptography.com/)
 * [angelique-renaud](https://www.angelique-renaud.com/cryptage.php)
 * [wikipedia portal](https://fr.wikipedia.org/wiki/Portail:Cryptologie)
@@ -240,4 +264,5 @@ Stuff that I found, but never read/used yet.
 * SRM (error-correcting code)
 * [RsaCtfTool](https://github.com/RsaCtfTool/RsaCtfTool) (4.2k ⭐)
 * [rsatool](https://github.com/ius/rsatool) (0.9k ⭐)
+* message authentication codes (MACs)
 </div></div>

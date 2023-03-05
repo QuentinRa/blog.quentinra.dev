@@ -1,5 +1,4 @@
 Passphrase - Separate to the key, a passphrase is similar to a password and used to protect a key.
-Password are hashed, not encrypted
 
 * exchanging keys
   * use public-private key to send the key
