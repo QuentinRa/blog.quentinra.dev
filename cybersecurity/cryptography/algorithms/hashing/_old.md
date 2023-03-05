@@ -2,29 +2,6 @@
 
 ⚠️ Hash brute-forcing tools are (usually) using your CPU to compute results faster. On a VM, they may be less efficient, as the VM itself is taking a lot of resources.
 
-> You can find the location of [password wordlists here](/_cybersecurity/exploitation/general/index.md#-wordlists-).<br>
-> Reminder: CTFs are usually using `/usr/share/wordlists/rockyou.txt`.
-
-<hr class="sep-both">
-
-## Online password cracking
-
-There are a lot of online websites that have big databases with tons of hashes matched with cracked passwords (rainbow tables). It's only helpful if the hash is recorded inside.
-
-<div class="row row-cols-md-2"><div>
-
-* [crackstation](https://crackstation.net/). Not many algorithms, but we can download their wordlist  🚀 (4Go / 15Go uncompressed).
-
-* [MD5Hashing](https://md5hashing.net/). A ton of ads <small>(#team ublock)</small>. Quite a lot of algorithms. Can encrypt/decrypt.
-
-
-</div><div>
-
-* [decrypt.tools](https://decrypt.tools/). Very similar to MD5Hashing, but without ads. It's not very well known, so there aren't as many hashes as others.
-
-* [hashkiller.io](https://hashkiller.io/listmanager) / [hashes.com](https://hashes.com/en/decrypt/hash) which can [generate](https://hashes.com/en/generate/hash) hashes too.
-</div></div>
-
 <hr class="sep-both">
 
 ## hashcat

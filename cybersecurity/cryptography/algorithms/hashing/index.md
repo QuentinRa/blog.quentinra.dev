@@ -15,14 +15,14 @@ A hashing algorithm is a one-way function taking data and generating a  hash/dig
 * 🥷 Ensure integrity <small>(checksum)</small>
 * 🫧 In algorithms such as in hashing tables
 
-As a hash function is one-way, there is no way to know what was the data, but given the same data, we can verify if it generated the hash.
+Since a hash function is one-way, it's impossible to know the original data. However, we can use a hash function to verify if some data matches a corresponding hash.
 </div><div>
 
 **Problems in hashing algorithms**
 
 * **Hash collision** 👎: two different data generate the same hash. Some well-known vulnerable algorithms are [SHA1](https://shattered.io/), [MD5](https://www.mscs.dal.ca/~selinger/md5collision/)...
 
-* **Determinism** 🛣️: a hash function always generate the same hash given the same input. It allows attackers to precompute hashes for well-known passwords, and perform a **rainbow table** attack. A salt is usually added to generate different hashes given the same data.
+* **Determinism** 🛣️: a hash function always generate the same hash given the same data. It allows attackers to precompute hashes for well-known passwords, and perform a **rainbow table** attack. A salt is a parameter <small>(usually, a random string)</small> added to generate different hashes given the same data. Only calling the hash function with the same salt result in the same output.
 
 ➡️ They are also brute force attacks using dictionaries of passwords. 
 </div></div>
@@ -127,6 +127,27 @@ For instance, [hashes.com](https://hashes.com/en/tools/hash_identifier) or [md5h
 Some tools may provide an incorrect format, or not support the format you are looking for. Some hashes are starting with well-known patterns:  "\\$1\\$" <small>(crypt, cisco, old Linux)</small>, "\\$2\\$, \\$2a\\$, \\$2b\\$, \\$2x\\$, \\$2y\\$" <small>(bcrypt, web)</small>, or "$6" <small>(sha512crypt, modern Linux)</small>. 
 
 👉 You can find a lot of examples [on hashcat website](https://hashcat.net/wiki/doku.php?id=example_hashes).
+</div></div>
+
+<hr class="sep-both">
+
+## Hash cracking
+
+<div class="row row-cols-md-2"><div>
+
+Hash cracking usually involves a dictionnary with a list of potential passwords a.k.a. wordlist <small>(Rainbow tables may be used for older systems)</small>.
+
+👉 CTFs are usually using `/usr/share/wordlists/rockyou.txt`.
+
+* ➡️ [hashcat](/cybersecurity/cryptography/algorithms/hashing/cracking/hashcat.md) (hc)
+
+
+* ➡️ [John the Ripper](/cybersecurity/cryptography/algorithms/hashing/cracking/john.md) (JtR)
+</div><div>
+
+* ➡️ Online tools
+
+For instance, [crackstation](https://crackstation.net/) <small>(you can download their wordlist!)</small>, [MD5Hashing](https://md5hashing.net/), [decrypt.tools](https://decrypt.tools/), [hashkiller.io](https://hashkiller.io/listmanager), or [hashes.com](https://hashes.com/en/decrypt/hash).
 </div></div>
 
 <hr class="sep-both">
