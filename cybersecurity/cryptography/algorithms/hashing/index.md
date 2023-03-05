@@ -148,6 +148,8 @@ Hash cracking usually involves a dictionnary with a list of potential passwords 
 * ➡️ Online tools
 
 For instance, [crackstation](https://crackstation.net/) <small>(you can download their wordlist!)</small>, [MD5Hashing](https://md5hashing.net/), [decrypt.tools](https://decrypt.tools/), [hashkiller.io](https://hashkiller.io/listmanager), or [hashes.com](https://hashes.com/en/decrypt/hash).
+
+⚠️ Hash cracking tools are usually using your CPU to compute results faster. On a virtual machine, they may be less efficient, as the VM itself is taking a lot of resources.
 </div></div>
 
 <hr class="sep-both">
