@@ -259,6 +259,7 @@ Stuff that I found, but never read/used yet.
 * [justcryptography](https://justcryptography.com/)
 * [angelique-renaud](https://www.angelique-renaud.com/cryptage.php)
 * [wikipedia portal](https://fr.wikipedia.org/wiki/Portail:Cryptologie)
+* PGP (Pretty Good Privacy). GnuPG/GPG = implementation from the GNU project.
 </div><div>
 
 * SRM (error-correcting code)
@@ -266,4 +267,6 @@ Stuff that I found, but never read/used yet.
 * [rsatool](https://github.com/ius/rsatool) (0.9k ⭐)
 * message authentication codes (MACs)
 * HMAC
+* certificates (chain of trust), digital signatures
+* ssl/key exchange <small>(use public asymmetric to share a temporary symmetric key)</small>
 </div></div>

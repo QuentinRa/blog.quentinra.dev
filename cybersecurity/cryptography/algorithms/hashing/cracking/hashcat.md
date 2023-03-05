@@ -6,29 +6,29 @@
 
 ```bash
 # use quotes, so that $/... aren't interpreted
-$ echo 'some_hash' > hash
+$ echo 'some hash here' > myhash
 ```
 
 Crack the password
 
 ```bash
-$ hashcat -m code hash wordlist
-$ hashcat -m code hash wordlist -o hashes_cracked
+$ hashcat -m code myhash wordlist
+$ hashcat -m code myhash wordlist -o hashes_cracked
 # in my case, hashcat started then stopped, 
 # I had to use this awful option
-$ hashcat -m code hash wordlist --force
+$ hashcat -m code myhash wordlist --force
 ```
 
 Once the password was cracked, you can see it
 
 ```bash
-$ hashcat -m code hash wordlist --show
+$ hashcat -m code myhash wordlist --show
 ```
 
 You can use rules <small>(see John section for explanations)</small>
 
 ```bash
-$ hashcat -m 0 hash wordlist -r /usr/share/hashcat/rules/best64.rule
+$ hashcat -m 0 myhash wordlist -r /usr/share/hashcat/rules/best64.rule
 ```
 
 </div><div>
