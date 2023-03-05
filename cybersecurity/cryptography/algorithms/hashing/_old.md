@@ -8,18 +8,9 @@
 
 <div class="row row-cols-md-2"><div>
 
-Almost all the time, passwords are **hashed**. It means that some "clear text" is passed to a one-way function that returns (=digest) a hash. One-way means that you can't get back the password from the hash. But, we can check if a password has generated a hash, so it's both a useful and (supposedly) secure way of storing a password.
-
-The most important use of hashing is for integrity. We generate a hash of file/..., and make it available with the file. Others can generate the hash of the file after they download it. If both are the same, then it means that the content was not tampered with.
-
-> Ex: HMAC.
-
-Some hashing functions are proven to be faulty, such as [SHA1](https://shattered.io/), or [MD5](https://www.mscs.dal.ca/~selinger/md5collision/), as two different passwords generated the same hash (hash collision), which means that using a different password than intended, you could log in into the victim account.
 </div><div>
 
-Usually, hackers create **rainbow tables**, or dictionaries, in which hashes are mapped to passwords. This allows tools to easily give them back the password, if it's in the dictionary. This is possible, because, by default, the same password will generate the same hash. To avoid such attacks, hash functions are taking a parameter called **salt**, and only the same salt should produce the same hash.
-
-⚠️Hash brute-forcing tools are (usually) using your CPU to compute results faster. On a VM, they may be less efficient, as the VM itself is taking a lot of resources.
+⚠️ Hash brute-forcing tools are (usually) using your CPU to compute results faster. On a VM, they may be less efficient, as the VM itself is taking a lot of resources.
 
 > You can find the location of [password wordlists here](/_cybersecurity/exploitation/general/index.md#-wordlists-).<br>
 > Reminder: CTFs are usually using `/usr/share/wordlists/rockyou.txt`.
