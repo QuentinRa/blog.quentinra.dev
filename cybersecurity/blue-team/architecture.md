@@ -199,6 +199,25 @@ These are usually based on industry best practices and standards.
 
 <hr class="sep-both">
 
+## Roles and responsibilities
+
+<div class="row row-cols-md-2"><div>
+
+For a program to be successful, it's important to define roles and responsibilities of each stakeholder, so that they are aware of what they should do to make the security program successful.
+
+* **Responsible** <small>(owner)</small> 👑: approve, enforce, modify, revoke
+* **Participate** <small>(has an expertise)</small> 🏢: draft, contribute, review
+* **Is consulted** <small>(has an understanding)</small> ⚒️: feedback, implementation 
+* **Is informed** <small>(has to comply)</small> 📦: they are contributing to the document, but they need to know about it to do their work
+
+➡️ Usually, each role is responsible for ensuring that their area of responsibility is addressed in policies, procedures, and guidelines.
+</div><div>
+
+
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
