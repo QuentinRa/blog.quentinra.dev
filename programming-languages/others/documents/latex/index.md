@@ -165,16 +165,22 @@ Stuff that I found, but never read/used yet.
 ```latex
 \verb! http://localhost:3000/!
 \textbackslash{xxx}
+\noindent
+% https://tex.stackexchange.com/questions/450156/latex-indent-with-alphabet-list
+\begin{enumerate}
+    \item[$a)$] XXX
+\end{enumerate}
+\pagestyle{empty}\pagestyle{plain}\setcounter{page}{1}
 ```
 
 * [symbols.pdf](https://www.caam.rice.edu/~heinken/latex/symbols.pdf)
 * [latexcheatsheet.pdf](https://users.dickinson.edu/~richesod/latex/latexcheatsheet.pdf),
   [latexcheatsheet.pdf](https://users.dickinson.edu/~richesod/latex/LatexFrench.pdf) (french),
   [video](https://divisbyzero.com/teaching/a-quick-guide-to-latex/).
-* [Wikibooks - latex](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
-* [math guide for latex](http://tug.ctan.org/info/short-math-guide/short-math-guide.pdf)
 </div><div>
 
+* [Wikibooks - latex](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
+* [math guide for latex](http://tug.ctan.org/info/short-math-guide/short-math-guide.pdf)
 * [minted](https://www.overleaf.com/learn/latex/Code_Highlighting_with_minted)
 * [maths](https://fr.wikibooks.org/wiki/LaTeX/%C3%89crire_des_math%C3%A9matiques) or [xm1math](https://www.xm1math.net/doculatex/) or [oeis](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols) or [wiki help](https://fr.wikipedia.org/wiki/Aide:Formules_TeX)/[wiki help](https://en.wikipedia.org/wiki/Help:Displaying_a_formula#Functions,_symbols,_special_characters) or [quickref](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
 </div></div>

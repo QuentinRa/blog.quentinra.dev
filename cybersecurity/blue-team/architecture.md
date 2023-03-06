@@ -213,7 +213,13 @@ For a program to be successful, it's important to define roles and responsibilit
 ➡️ Usually, each role is responsible for ensuring that their area of responsibility is addressed in policies, procedures, and guidelines.
 </div><div>
 
+For instance,
 
+* Executives <small>(role)</small> could be "responsible of the policies" <small>(responsibility)</small>
+* The CISO <small>(role)</small> could be "participates in policies" and "responsible of directives/guidelines/procedures" <small>(responsibility)</small>
+* ...
+
+👉 This is usually a matrix of roles by documents <small>(policies, directives, guidelines, procedures)</small>. In each cells, there is the type of responsibility.
 </div></div>
 
 <hr class="sep-both">
@@ -226,6 +232,4 @@ Stuff that I found, but never read/used yet.
 
 * [Security Control Framework](https://securecontrolsframework.com/)
 </div><div>
-
-
 </div></div>
