@@ -1,9 +1,4 @@
 # Assembly (ARM)
-* 
-* `as`: assemble, create a `.o` file
-* `ld`: link, create a `.out` file
-
-If you got good eyes, you should have noticed that this is the same that in C, with `gcc -c`(.o) and `gcc` (.out). You can mix assembly code with `C` code and doing that helped me quite a lot to learn assembly, like writing the code in `C` then removing a function in C and writing it in `ARM` (so I didn't have to write everything is looking for the issue when the program was not working).
 
 <hr class="sr">
 
@@ -142,15 +137,3 @@ You can modify what we called `Operand2` easily using some operators like `>>` o
 You will use a lot the Barrel Shifter when manipulating arrays since you need to move from an index to another without needing to do complex operations.
 
 * [Complex shifts](bs/indexed.md)
-
-<hr class="sl">
-
-## Sources
-
-* <https://community.arm.com/developer/ip-products/processors/b/processors-ip-blog/posts/condition-codes-1-condition-flags-and-codes>
-* <http://www.cburch.com/books/arm/index.html>
-* <https://www.tutorialspoint.com/assembly_programming/assembly_system_calls.htm>
-* <https://en.wikipedia.org/wiki/Stack_register>
-* <https://www.elprocus.com/what-is-stack-stack-pointer-types-operations-its-application/>
-* <http://www.davespace.co.uk/arm/introduction-to-arm/>
-* <https://azeria-labs.com/writing-arm-assembly-part-1/>

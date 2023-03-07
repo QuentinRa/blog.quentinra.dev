@@ -11,7 +11,12 @@ ARM assembly is one of the assembly language used for **RISC processors** <small
 * ⚡ Usually has a lower power consumption
 * 📱 ARM processors are quite used in IoT/embedded systems/...
 
-➡️ It's worth noting that you can use both Assembly and C together by using `gcc -c file.c` to generate an object file. You can dump the assembly code of a C program with `objdump -d a.out`.
+**Where to learn?** 🎓
+
+* [davespace.co.uk](http://www.davespace.co.uk/arm/introduction-to-arm/) <small>(⛪)</small>
+* [cburch.com](http://www.cburch.com/books/arm/index.html) <small>(😎)</small>
+* [azeria-labs.com](https://azeria-labs.com/writing-arm-assembly-part-1/) <small>(😎)</small>
+* [arm.com](https://developer.arm.com/documentation) <small>(👻)</small>
 </div><div>
 
 👉 **Assemble**: transform an assembly file `.s` into an object file `.o`
@@ -31,6 +36,22 @@ $ ld -O0 file.o
 ```bash!
 $ ./a.out
 ```
+
+➡️ It's worth noting that you can use both Assembly and C together by using `gcc -c file.c` to generate an object file <small>(useful for testing a partial assembly code with a function implemented in C)</small>.
+
+➡️ You can dump the assembly code of a C program with `objdump -d a.out`. See also the `disassemble` command.
+</div></div>
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">
@@ -45,7 +66,5 @@ Stuff that I found, but never read/used yet.
 * SIMD (Single Instruction Multiple Data) instruction set
 * [azerialabs](https://azm.azerialabs.com/)
 </div><div>
-
-* disassemble command
 
 </div></div>
