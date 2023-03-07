@@ -44,14 +44,69 @@ $ ./a.out
 
 <hr class="sep-both">
 
-## XXX
+## File structure
 
 <div class="row row-cols-md-2"><div>
 
-...
+An ARM file usually starts with `.equ` directives. They are the constants we define, such as the system calls numbers.
+
+```arm
+.equ SYS_EXIT, 1
+.equ SYS_WRITE, 4
+```
+
+They are usually followed by the optional `.arm` directive, to indicate that the code should be assembled for ARMv4T or newer.
+
+```arm
+.arm
+```
+
+The code is then followed by an optional `.data` directive, in which we can declare variable that we will use in the code.
+
+```arm
+.data
+hw: .asciz "Hello, World\n"
+hw_len: .word 13
+```
+
+For a function to be used in another file, it must be global function. This includes the entrypoint function, usually `_start` or `main`.
+
+```arm
+.global _start
+```
 </div><div>
 
-...
+Then, we define the code of the function like so:
+
+```arm
+.text
+_start:
+    @ write(1, "Hello, World", 12)
+    mov r0, #1
+    ldr r1, =hw
+    ldr r2, =hw_len
+    mov r7, #SYS_WRITE
+    swi #0
+    
+    @ exit(0)
+    mov r0, #0
+    mov r7, #SYS_EXIT
+    swi #0
+.end
+```
+
+Compile, and execute. This code prints "Hello, World". Another way to code the same function would be:
+
+```arm
+_start:
+    @ printf("Hello, World")
+    ldr r0, =message
+    bl printf
+    @ return 0
+    mov r0, #0
+    bx lr
+.end
+```
 </div></div>
 
 <hr class="sep-both">

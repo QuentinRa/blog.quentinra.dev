@@ -1,39 +1,5 @@
 # Assembly (ARM)
 
-<hr class="sr">
-
-## Start writing some code
-
-Here a basic file that should work
-
-```asm6502
-.equ SYS_EXIT, 1
-.equ SYS_WRITE, 4
-
-    .arm
-    .data
-
-hw: .asciz "Hello, World\n"
-hw_len: .word 13
-
-    .text
-    .global _start
-
-_start :
-    @ write
-    mov r0, #1
-    ldr r1, =hw
-    ldr r2, =hw_len
-    mov r7, #SYS_WRITE
-    swi #0
-    
-    @ exit
-    mov r0, #0
-    mov r7, #SYS_EXIT
-    swi #0
-.end
-```
-
 <hr class="sl">
 
 ## Syntax
@@ -108,7 +74,7 @@ Usually, the flags are only changed after calling a test function but you may ad
 
 Also, note that we have a new instruction `b`, to move to a label like that
 
-```asm6502
+```arm
 loop:
     ; r0 - 0
     ; Z = ???, N = ???, ...
