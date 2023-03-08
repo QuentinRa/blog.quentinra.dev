@@ -1,17 +1,5 @@
 # Assembly (ARM)
 
-<hr class="sl">
-
-## Syntax
-
-The language is quite easy to learn, since there isn't much of syntax
-  
-* [File Structure](syntax/file.md)
-* [Registers](syntax/registers.md)
-* [Variables](syntax/variables.md)
-* [System calls](syntax/sys.md)
-* [Constants](syntax/constants.md)
-
 Comments are made with `@` or `#` or  `;`.
 
 <hr class="sr">

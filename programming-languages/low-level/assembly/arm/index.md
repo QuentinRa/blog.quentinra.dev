@@ -65,8 +65,8 @@ The code is then followed by an optional `.data` directive, in which we can decl
 
 ```arm
 .data
-hw: .asciz "Hello, World\n"
-hw_len: .word 13
+message: .asciz "Hello, World\n"
+message_len: .word 13
 ```
 
 For a function to be used in another file, it must be global function. This includes the entrypoint function, usually `_start` or `main`.
@@ -83,8 +83,8 @@ Then, we define the code of the function like so:
 _start:
     @ write(1, "Hello, World", 12)
     mov r0, #1
-    ldr r1, =hw
-    ldr r2, =hw_len
+    ldr r1, =message
+    ldr r2, =message_len
     mov r7, #SYS_WRITE
     swi #0
     
@@ -107,6 +107,61 @@ _start:
     bx lr
 .end
 ```
+
+👉 Both are correct, but in the former, we only used system calls.
+</div></div>
+
+<hr class="sep-both">
+
+## ARM basics
+
+<div class="row row-cols-md-2"><div>
+
+#### Registers 🗃️
+
+Registers are used to store values such as function parameters.
+
+* `r0` to `r6`, `r8` to `r10` are used to store values
+* `r7`: store system call value
+* `r11`: store fp <small>(Frame pointer)</small>
+* `r12`: store ip <small>(Intra Procedural Call)</small>
+* `r13`: store sp <small>(Stack Pointer)</small>
+* `r14`: store lr <small>(Link Register, next instruction)</small>
+* `r15`: store pc <small>(Program Counter, current instruction)</small>
+
+➡️ Given a function call: `sum(5, 3)` in C, in assembly, you will store `5` in `r0` <small>(first argument)</small> and `3` in `r1` <small>(second argument)</small>, then call the function.
+
+<br>
+
+#### Variables 🗝️
+
+We usually either use constants or variable to store values. The syntax is `label: type value`, with type:
+
+* `.ascii`: string converted to ASCII
+* `.asciz`: same but add a `\0` at the end
+* `.word`: an integer
+
+```arm
+number: .word 4 @ int number = 4;
+```
+</div><div>
+
+#### System calls 🧑‍🏭
+
+While you can use some functions such as printf <small>(if imported)</small>, most of the time, you will only be able to use **system calls**.
+
+Each system call is identified by a code: `exit` (1), `fork` (2),  `read` (3), `write` (4), `open` (5), and `close` (6). You can find them here:
+
+```bash!
+$ less /usr/include/arm-linux-gnueabihf/asm/unistd.h
+```
+
+Once you prepared the registers `r0-r6`, to call a system call, first set the `r7` register will the system call number, then call `swi` <small>(same as svc)</small>:
+
+```arm
+mov r7, #1 @ swi will call exit
+swi #0
+```
 </div></div>
 
 <hr class="sep-both">
@@ -122,4 +177,10 @@ Stuff that I found, but never read/used yet.
 * [azerialabs](https://azm.azerialabs.com/)
 </div><div>
 
+```arm
+tab: .word 1,5,7,46,89
+taille: .
+```
+
+* The `dot` means the number of numbers we wrote **right before** so 5 here. Do it right after your tab declaration or it won't work.
 </div></div>
