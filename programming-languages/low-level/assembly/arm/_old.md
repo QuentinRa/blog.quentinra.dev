@@ -28,9 +28,3 @@ loop:
 exit:
     ; ...
 ```
-
-<hr class="sr">
-
-You will use a lot the Barrel Shifter when manipulating arrays since you need to move from an index to another without needing to do complex operations.
-
-* [Complex shifts](bs/indexed.md)

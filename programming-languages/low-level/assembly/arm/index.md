@@ -475,16 +475,16 @@ You can apply modifications on `Operand2` easily using some operators like `>>` 
 * repeat until the amount is 0
 
 👉 Example: $0011100010\ldots10 \to^{C = 1\ and\ RRX(2)} 010011100010\ldots$<br>
-</div></div>
 
-* Let's assume C=1 and xxx=2
-* The 32 bits are: 0011100010...10
-* LSL: 00011100010...1
-* Replace: 10011100010...1
-* Carry = 0
-* LSL: 010011100010...
-* Replace: 010011100010...
-* Carry = 1
+#### Usage
+
+Format is: `Rb, shift_type shift_amount`.
+
+```arm
+@ r1 is shifted by 2 before being added to r0
+add r0, r0, r1, lsl #2
+```
+</div></div>
 
 <hr class="sep-both">
 
@@ -492,10 +492,37 @@ You can apply modifications on `Operand2` easily using some operators like `>>` 
 
 <div class="row row-cols-md-2"><div>
 
-...
+To declare an array, simply list the values.
+
+```arm
+array: .word 1,5,7,46,89
+```
+
+You will need a variable for the length. **Right-after** declaring your array, "`.`" (dot) contains the number of values in the array.
+
+```arm
+array_length: .
+```
 </div><div>
 
-...
+We use `ldr` to access a value. The index accessed is stored in `r1`.
+
+```arm
+ldr r0, =array
+mov r1, #0
+ldr r2, [r0, r1, LSL #2] @ r2 = array[0]
+```
+
+To store a value, we use `str`. The index accessed is stored in `r1`.
+
+```arm
+ldr r0, =array
+mov r1, #0
+mov r2, #77
+str r2, [r0, r1, LSL #2] @ array[0] = 77;
+```
+
+👉 We use barrel shifting with `#2` since values are on 4 bytes.
 </div></div>
 
 <hr class="sep-both">
@@ -524,9 +551,13 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 ```arm
-tab: .word 1,5,7,46,89
-taille: .
+@ Pre-indexed
+ldr r3, [r2, #-8]
+ldr r3, [r2, r1, lsl#16] @ r3 = r2 + r1 * 2^16
+ldr r3, [r2, #-8]!
+
+@ Post-indexed
+ldr r3, [r2], r1
 ```
 
-* The `dot` means the number of numbers we wrote **right before** so 5 here. Do it right after your tab declaration or it won't work.
 </div></div>
