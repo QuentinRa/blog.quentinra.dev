@@ -439,11 +439,52 @@ addnes r0, #4 ; add 4 + set flags (Z = false, N = false...)
 
 <div class="row row-cols-md-2"><div>
 
-You can apply modifications on `Operand2` easily using some operators like `>>` or `<<` in C.
+You can apply modifications on `Operand2` easily using some operators like `>>` or `<<` in C. It's useful to transform a value "on the fly" 🕺 as the registers are not modified 🥏.
+
+#### Type of shifts
+
+**LSL (Logical Shift Left)**: Move xxx bits to the left, new bits are set to 0. Not fitting bits are lost (left).
+
+👉 Example: $111111111111\ldots \to^{LSL(4)} 11111111\ldots0000$
+
+<br>
+
+**LSR (Logical Shift Right)**: Same as LSL but to the right.
+
+👉 Example: $111111111111\ldots \to^{LSR(4)} 000011111111\ldots$
+
+<br>
+
+**ASR (Arithmetic shift right)**: Write xxx times the sign bit, then Rb. Extra bits on the right are lost.
+
+👉 Example: $001110001000\ldots \to^{ASR(4)} 0000001110001000\ldots$<br>
+👉 Example: $101110001000\ldots \to^{ASR(4)} 1111101110001000\ldots$
 </div><div>
 
-...
+**ROR (rotate right)**: Write the last xxx bits of Rb then Rb. Extra bits on the right are lost.
+
+👉 Example: $001110001000\ldots0010 \to^{ROR(4)} 00100011100010\ldots$<br>
+
+<br>
+
+**RRX (rotate right Extended)**: RRX is more complicated. It uses two operands: a carry <small>(the C in NZCV)</small> and an amount xxx.
+
+* Do a LSR by one position
+* Replace the first bit with the value of the carry
+* The last bit becomes the new carry
+* repeat until the amount is 0
+
+👉 Example: $0011100010\ldots10 \to^{C = 1\ and\ RRX(2)} 010011100010\ldots$<br>
 </div></div>
+
+* Let's assume C=1 and xxx=2
+* The 32 bits are: 0011100010...10
+* LSL: 00011100010...1
+* Replace: 10011100010...1
+* Carry = 0
+* LSL: 010011100010...
+* Replace: 010011100010...
+* Carry = 1
 
 <hr class="sep-both">
 

@@ -31,11 +31,6 @@ exit:
 
 <hr class="sr">
 
-## Barrel Shifter
-
-* [Instructions](bs/instructions.md)
-* [Usage](bs/usage.md)
-
 You will use a lot the Barrel Shifter when manipulating arrays since you need to move from an index to another without needing to do complex operations.
 
 * [Complex shifts](bs/indexed.md)
