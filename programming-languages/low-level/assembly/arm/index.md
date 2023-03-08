@@ -142,6 +142,12 @@ We usually either use constants or variable to store values. The syntax is `labe
 ```arm
 number: .word 4 @ int number = 4;
 ```
+
+<br>
+
+#### Comments
+
+Comments can be written using `@` or `#` or  `;`.
 </div><div>
 
 #### System calls 🧑‍🏭
@@ -531,10 +537,31 @@ str r2, [r0, r1, LSL #2] @ array[0] = 77;
 
 <div class="row row-cols-md-2"><div>
 
-...
+#### Loops
+
+You can declare a label and use `b` to navigate to it. Using this, we can exit the loop when the condition is true.
+
+```arm
+_start:
+    mov r0, #5 @ init outside of the loop
+loop:
+    @ condition to exit
+    cmp r0, #0 @ if r0 == 0
+    beq exit @ then navigate to exit:
+    
+    @ update r0
+    sub r0, r0, #1 @ r0--
+    
+    @ do what you want
+    @ ...
+
+    @ loop again
+    b loop
+exit:
+    @ ...
+```
 </div><div>
 
-...
 </div></div>
 
 <hr class="sep-both">
