@@ -289,6 +289,76 @@ sum:
 
 <hr class="sep-both">
 
+## Conditions
+
+<div class="row row-cols-md-2"><div>
+
+You can add a condition for an instruction to be executed only if the condition is true. These conditions are checking the 4 flags:
+
+* **N** ➖: is the result Negative?
+* **Z** 0️⃣: is the result zero?
+* **C** 1️⃣: is the last carry value one?
+* **V** 🤯: do we have an overflow?
+
+These flags are either changed after calling a test operation, or by adding the `s` flag to normal operation such as `adds`.
+
+|NZCV bits|Operator| NZCV   |        Detail         |
+|----|------|---------------|-------------------------|
+|    |  al  |               | Always                  |
+|0000|  eq  |      Z        | Last result is 0        |
+|0001|  ne  |     !Z        | Last result isn't 0     |
+|0100|  mi  |      N        | Last result is negative |
+|0101|  pl  |     !N        | Last result is positive |
+|1010|  ge  |    N==V       | Greater or equals       |
+|1011|  lt  |   N != V      | Lesser than             |
+|1100|  gt  | !Z AND (N==V) | Greater than            |
+|1101|  le  | Z or (N != V) | Lesser or equals        |
+|    |CS, CC|    C, !C      | With/Without carry      |
+|    |VS, VC|    V, !V      | With/Without overflow   |
+</div><div>
+
+**Test functions** 🧪
+
+```arm
+; Comparison: Rn - Operand2
+cmp Rn, Operand2
+
+; Comparison: Rn + Operand2
+cmn Rn, Operand2
+
+; Bitwise and, this is "&" in C, not "&&"
+tst Rn, Operand2
+
+; Bitwise exclusive OR ("|" on C, not "||")
+teq Rn, Operand2
+```
+
+**Examples** 🔥
+
+```arm
+mov r0, #6 @ r0 = 6
+; test if r0 value is 6
+; Z = true, ...
+cmp r0, #6
+
+; "eq" <=> if Z is true
+addeq r0, #6 ; add 6 to r0
+```
+
+```arm
+mov r0, #2
+; test if r0 is equals to 6
+; Z = false, N = true...
+cmp r0, #6
+
+; "ne" <=> if Z is false
+addnes r0, #4 ; add 4 + set flags (Z = false, N = false...)
+```
+
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

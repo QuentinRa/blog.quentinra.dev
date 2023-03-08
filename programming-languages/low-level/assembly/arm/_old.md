@@ -6,23 +6,6 @@ For the latter, you should remember that you don't have a lot of registers. And 
 
 * [Stack](functions/stack.md)
 
-<hr class="sr">
-
-## Conditions
-
-You can add a condition for an instruction to be executed only if the condition is true. These conditions are checking the 4 flags
-
-* N: is the result Negative?
-* Z: is the result zero?
-* C: is the last carry value one?
-* V: do we have an overflow?
-
-Usually, the flags are only changed after calling a test function but you may add a `s` at the end of the previous instruction to change the flags like `add` can become `adds` or `addnes` where ne if the condition that we will learn right now.
-
-* [Table of conditions](cond/table.md)
-* [Tests](cond/tests.md)
-* [Examples](cond/examples.md)
-
 <hr class="sl">
 
 ## Loops
