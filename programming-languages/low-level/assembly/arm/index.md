@@ -171,7 +171,7 @@ Here some checklist:
 * 📬 Invoke the system call `swi` <small>(same as svc)</small>:
 
 ```arm
-swi #0 @ will call: exit(0);
+    swi #0 @ will call: exit(0);
 ```
 </div></div>
 
@@ -184,7 +184,7 @@ swi #0 @ will call: exit(0);
 Instructions are operations that we can do. For instance, we can put a value inside a register, or calculate a sum of two registers.
 
 * `Rd` or `Rn` are registers such as `r0`, `r1`...
-* `Operand2` can be a dynamic constant, or a register
+* `Operand2` can be a immediate constant, or a register
 
 **Register-related operations** ️📝
 
@@ -289,6 +289,18 @@ sum:
 
 <hr class="sep-both">
 
+## Immediate constants
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Conditions
 
 <div class="row row-cols-md-2"><div>
@@ -355,6 +367,42 @@ cmp r0, #6
 addnes r0, #4 ; add 4 + set flags (Z = false, N = false...)
 ```
 
+</div></div>
+
+<hr class="sep-both">
+
+## Barrel shifter
+
+<div class="row row-cols-md-2"><div>
+
+You can apply modifications on `Operand2` easily using some operators like `>>` or `<<` in C.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Arrays
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Advanced
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">
