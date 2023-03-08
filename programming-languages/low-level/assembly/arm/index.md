@@ -562,6 +562,41 @@ exit:
 ```
 </div><div>
 
+#### Stack
+
+The stack is a **primordial concept** when calling function inside functions. It's also useful to empty registries as we don't have a lot. 
+
+🔥 Basically, we can put values in the stack, and take them back later.
+
+⚠️ When calling a function, they may modify any register. Some register may be unexpectedly changed, and we may have lost our way to go back to the code that called the original function.
+
+<div class="row row-cols-md-2"><div>
+
+```arm
+4: mov r1, #13
+5: bl max;
+6: cmp r0, #13
+```
+</div><div>
+
+When calling `max`, `6` is stored in the `lr` register. If we call another function inside `max`, then this value will be replaced, and lost.
+</div></div>
+
+```arm
+max:
+    push {lr}  @ save the return address to the stack
+    @ code ...
+    pop {pc} @ load the return address to the stack
+.end
+```
+
+More generically, for normal registers:
+
+```arm
+push {r0, r1, r2} @ order matters! r0 before r1...
+push {r0-r2} @ can use an interval
+```
+
 </div></div>
 
 <hr class="sep-both">
