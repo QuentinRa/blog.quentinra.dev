@@ -260,10 +260,10 @@ int x = sum(5, 3);
 The first argument is stored in the first register `r0`, the second in the second register `r1`... The output will be stored in `r0`.
 
 ```arm
-mov r0, #5
-mov r1, #3
-bl sum @ function call: sum(5, 3)
-@ result in r0
+    mov r0, #5
+    mov r1, #3
+    bl sum @ function call: sum(5, 3)
+    @ result in r0
 ```
 
 ⚠️ Actually, which registers are used for arguments/the output, is something up to the one that wrote the function.
@@ -293,10 +293,74 @@ sum:
 
 <div class="row row-cols-md-2"><div>
 
-...
+Immediate constants are constants passed as Operand2 using `#`.
+
+```arm
+    mov r0, #1
+```
+
+⚠️ Major limitation: immediate constants are not on 32 bits like integers, but on **12 bits**.
+
+* 4 bits 🔁: the rotation of the value to get the number
+* 8 bits 🔢: a value that may be rotated to get the number
+
+👉 It means that not every number can be used.
 </div><div>
 
-...
+The process to manually calculate if a value can be immediate is:
+
+* Write the **value** on 32 bits
+* Rotate the bits by a shift amount which MUST BE a multiple of 2. The goal is to have the number on **8 bits**.
+* The value for the rotation is $n$ <small>(in binary)</small> in $2^n$
+
+<details class="details-n">
+<summary>Ex: from decimal to immediate constant</summary>
+
+**What's the value for $0001\ 00000001$?**
+
+* 32 bits: $00000000\ 00000000\ 00000000\ 00000001$
+* $0001$ mean that $n=1$, and the rotation is $2^1=2$
+* $01000000\ 00000000\ 00000000\ 00000000$ <small>(after two rotations)</small>
+* convert back to decimal: $1073741824 = 2^{30}$
+</details>
+
+<details class="details-n">
+<summary>Ex: from immediate constant to decimal</summary>
+
+**Test with 748 326**
+
+* 32 bits: $00000000\ 00001011\ 01101011\ 00100110$
+* oh no... 19 bits can't fit a 8 bits value
+* fail ❌
+
+**Test with 32000**
+
+* 32 bits: $00000000\ 00000000\ 01111101\ 00000000$
+* 7 bits fit our 8 bits, so we are good
+* **value (8bits)** 🔢: $01111101$
+
+Find the rotation:
+
+* from $00000000\ 00000000\ 00000000\ 01111101$
+* we need to rotate 24 times to get back the number
+* oh no... there is no $n$ giving us $2^n = 24$
+* fail ❌
+
+**Test with $-58$**
+
+* 32 bits: $10000000\ 00000000\ 00000000\ 00111010$
+* 7 bits fit our 8 bits, so we are good
+* **value (8 bits)** 🔢: $11101010$
+
+Find the rotation:
+
+* from $00000000 00000000 00000000 11101010$
+* we need to rotate 2 times to get back the number
+* there is $n=1$ given $2^n = 2$
+* **rotation (4 bits)** 🔁: $0001$ <small>(equals to n=1)</small>
+
+👉 The immediate constant stored is: $0001\ 11101010$.
+</details>
 </div></div>
 
 <hr class="sep-both">
