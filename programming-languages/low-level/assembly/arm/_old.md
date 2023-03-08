@@ -8,35 +8,19 @@ Comments are made with `@` or `#` or  `;`.
 
 The main idea is that you will move values into the registers. The first register is the first argument of a function, ...
 
-For instance, the system call `write(1, "test", 4)` means that we want
-
-* `r0`: 1
-* `r1`: "test"
-* `r2`: 4
-
 And the result will be stored in `r0`.
 
 We will need instructions to set a value into a register. You may also need instructions to do arithmetic operations like +, -, ...
 
 * [Move-related instructions](syntax/move.md)
 * [Arithmetic-related instructions](syntax/arithmetic.md)
-* [Make a system call](syntax/swi.md)
 
 <hr class="sl">
 
 ## Functions
 
-You are almost ready to write functions. You know that the function parameters must be stored in registers, starting from r0 and that the result will be stored in r0.
-
-Still, you must learn
-
-* the syntax of functions
-* how to store registers
-
 For the latter, you should remember that you don't have a lot of registers. And what if a function calls another one? You may want to know how you should manage your registers for that (like pc and lr registers might become messed up after a function call).
 
-* [Declaration](functions/syntax.md)
-* [Call](functions/call.md)
 * [Stack](functions/stack.md)
 
 <hr class="sr">

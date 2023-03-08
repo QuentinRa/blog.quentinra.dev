@@ -129,8 +129,6 @@ Registers are used to store values such as function parameters.
 * `r14`: store lr <small>(Link Register, next instruction)</small>
 * `r15`: store pc <small>(Program Counter, current instruction)</small>
 
-➡️ Given a function call: `sum(5, 3)` in C, in assembly, you will store `5` in `r0` <small>(first argument)</small> and `3` in `r1` <small>(second argument)</small>, then call the function.
-
 <br>
 
 #### Variables 🗝️
@@ -156,12 +154,73 @@ Each system call is identified by a code: `exit` (1), `fork` (2),  `read` (3), `
 $ less /usr/include/arm-linux-gnueabihf/asm/unistd.h
 ```
 
-Once you prepared the registers `r0-r6`, to call a system call, first set the `r7` register will the system call number, then call `swi` <small>(same as svc)</small>:
+Here some checklist:
+
+* ✉️ Set the registers `r0-r6` with the arguments for the system call. Refer to [Functions](#functions) as the process is the same.
 
 ```arm
-mov r7, #1 @ swi will call exit
-swi #0
+    mov r0, #0 @ the first argument is 0
 ```
+
+* 🏠 Set he `r7` register with the system call number
+
+```arm
+    mov r7, #1 @ example to call exit
+```
+
+* 📬 Invoke the system call `swi` <small>(same as svc)</small>:
+
+```arm
+swi #0 @ will call: exit(0);
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Functions
+
+<div class="row row-cols-md-2"><div>
+
+Let's say we have this code in C:
+
+```c
+int sum(int a, int b) {
+    return a + b;
+}
+
+int x = sum(5, 3);
+```
+
+#### Call a function
+
+The first argument is stored in the first register `r0`, the second in the second register `r1`... The output will be stored in `r0`.
+
+```arm
+mov r0, #5
+mov r1, #3
+bl sum @ function call: sum(5, 3)
+@ result in r0
+```
+
+⚠️ Actually, which registers are used for arguments/the output, is something up to the one that wrote the function.
+</div><div>
+
+#### Code a function
+
+You must declare the function as `.global`. Then, implement it as usual.
+
+```arm
+@ This function expect a .word in r0 (a)
+@ and a .word in r1 (b).
+@ It will store the result (a+b) in r0.
+.global sum
+
+sum:
+    add r0, r0, r1
+.end
+```
+
+🧼 You should do it in another file, to keep things clean and tidy.
 </div></div>
 
 <hr class="sep-both">
