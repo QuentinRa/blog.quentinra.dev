@@ -177,6 +177,70 @@ swi #0 @ will call: exit(0);
 
 <hr class="sep-both">
 
+## Instructions
+
+<div class="row row-cols-md-2"><div>
+
+Instructions are operations that we can do. For instance, we can put a value inside a register, or calculate a sum of two registers.
+
+* `Rd` or `Rn` are registers such as `r0`, `r1`...
+* `Operand2` can be a dynamic constant, or a register
+
+**Register-related operations** ️📝
+
+```arm
+; mov Rd, Operand2 | store a value in a register
+mov r0, #3
+
+@ ldr Rd, =label | load the value of "message" in r0
+ldr r0, =message
+
+; ldr Rd, [Rn] | load the value of a pointer stored in r0
+ldr r1, [r0]
+
+; str Rd, =label | store the value in Rd in "message"
+str r0, =message
+
+; str Rd, [Rn] | store in the pointer in r0 the value in r1
+str r1, [r0]
+```
+
+You can add a one of these after ldr/str like `ldrb`.
+
+* `b`: load/store the first byte
+* `h`: load/store the first two bytes.
+</div><div>
+
+**Mathematical operations** 🎒
+
+```arm
+; Rd = Rn + Operand2
+add Rd, Rn, Operand2
+
+; Rd = Rn - Operand2
+sub Rd, Rn, Operand2
+
+; Rd = Operand2 - Rn
+rsb Rd, Rn, Operand2
+
+; exclusive or
+eor Rd, Rn, Operand2
+
+; Rd = Rn * Rm (32-bits value in Rd)
+mul Rd, Rn, Rm
+
+; Rd = Rn * Rm (64-bits, signed only)
+smull RdLo, RdHi, Rn, Rm
+
+; Rd = Rn * Rm (64-bits, unsigned only)
+umull RdLo, RdHi, Rn, Rm
+```
+
+➡️ RdLo are the lower 32 bits while RdHi are the upper 32 bits.
+</div></div>
+
+<hr class="sep-both">
+
 ## Functions
 
 <div class="row row-cols-md-2"><div>

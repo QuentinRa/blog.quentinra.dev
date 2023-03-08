@@ -2,23 +2,6 @@
 
 Comments are made with `@` or `#` or  `;`.
 
-<hr class="sr">
-
-## Instructions
-
-The main idea is that you will move values into the registers. The first register is the first argument of a function, ...
-
-And the result will be stored in `r0`.
-
-We will need instructions to set a value into a register. You may also need instructions to do arithmetic operations like +, -, ...
-
-* [Move-related instructions](syntax/move.md)
-* [Arithmetic-related instructions](syntax/arithmetic.md)
-
-<hr class="sl">
-
-## Functions
-
 For the latter, you should remember that you don't have a lot of registers. And what if a function calls another one? You may want to know how you should manage your registers for that (like pc and lr registers might become messed up after a function call).
 
 * [Stack](functions/stack.md)
