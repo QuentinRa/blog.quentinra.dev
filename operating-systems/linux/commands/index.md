@@ -1003,11 +1003,13 @@ $ locate find
 
 <hr class="sep-both">
 
-## XXX
+## File manipulation
+
+This sections does NOT include file editors.
 
 ++++++
 
-[**XXX** - xxx]
+[**head/tail** - head/tail of a file]
 
 <div class="row row-cols-md-2"><div>
 
@@ -1020,7 +1022,20 @@ $
 ```
 </div></div>
 
-[**XXX** - xxx]
+[**sed** - search and replace]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: 
+
+**Example** 🔥:
+
+```ps
+$ 
+```
+</div></div>
+
+[**awk** - data extraction]
 
 <div class="row row-cols-md-2"><div>
 
@@ -1033,7 +1048,7 @@ $
 ```
 </div></div>
 
-[**XXX** - xxx]
+[**cut** - data extraction]
 
 <div class="row row-cols-md-2"><div>
 
@@ -1045,6 +1060,76 @@ $
 $ 
 ```
 </div></div>
+
+[**tr** - replace character]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚:
+
+**Example** 🔥:
+
+```ps
+$ 
+```
+</div></div>
+
+[**nl** - line numbering]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚:
+
+**Example** 🔥:
+
+```ps
+$ 
+```
+</div></div>
+
+[**wc** - number of lines/...]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚:
+
+**Example** 🔥:
+
+```ps
+$ 
+```
+</div></div>
+
+[**sort** - sort lines]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚:
+
+**Example** 🔥:
+
+```ps
+$ 
+```
+</div></div>
+
+[**uniq** - duplicates lines]
+
+**Usage** 🐚: remove lines or indicate which are duplicates.
+
+**Example** 🔥:
+
+Remove duplicates
+
+```ps
+$ uniq < file
+```
+
+Add the number of duplicates for each line
+
+```ps
+$ uniq -c < file
+```
 
 ++++++
 

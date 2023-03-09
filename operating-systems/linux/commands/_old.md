@@ -666,7 +666,6 @@ source ~/.bashrc
 ```
 </div><div>
 
-* `uniq / uniq -c`
 * `find / -type f -a \( -perm -u+s -o -perm -g+s \)`
 * `find / -type f -perm -04000 -ls 2>/dev/null`
 * `\"'(safe and vuln)'\"")`
