@@ -280,15 +280,87 @@ $ mkdir -p folder0/folder1/folder2
 
 [**mv** - move or rename]
 
-👻 To-do 👻
+<div class="row row-cols-md-2"><div>
 
-[**cp** - copy or rename]
+**Usage** 🐚: takes a list of folders/files to move, and a destination. Move all files/folders to the destination.
 
-👻 To-do 👻
+**Example** 🔥:
+
+```bash!
+$ mv toto ./all_toto/
+$ mv toto -t ./all_toto/ # same
+$ mv toto1 toto_2 ./all_toto/
+```
+</div><div>
+
+**Rename**
+
+```bash!
+$ mv toto toto0
+```
+</div></div>
+
+[**cp** - copy files/folders]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: takes a list of folders/files to copy, and a destination. Copy all files/folders to the destination.
+
+**Example** 🔥:
+
+```bash!
+$ cp toto ./all_toto/
+$ cp toto1 toto_2 ./all_toto/
+```
+</div><div>
+
+To create a copy
+
+```bash!
+$ cp toto toto0 # ⚠️ toto still exists
+```
+
+**-r** ⚠️: required to copy a folder and its content
+
+```bash
+$ cp -r all_toto/ all_toto_copy
+```
+</div></div>
 
 [**rm/rmdir** - delete]
 
-👻 To-do 👻
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: use `rm` to remove files/folders. `rmdir` is usually not used.
+
+**Example** 🔥:
+
+```bash!
+$ rm file
+$ rm file0 file1
+```
+
+👉 `rm` by default is asking for confirmation.
+
+```bash!
+$ rm -f file # do not ask (f=force)
+$ rm -i file # ask
+```
+</div><div>
+
+👉 Delete a folder
+
+```bash
+$ rm -d folder # if the folder is empty
+$ rm -r folder # -R is doing the same
+```
+
+👉 Delete a folder and to not ask for confirmation
+
+```bash
+$ rm -rf folder # usual f + r
+```
+</div></div>
 
 ++++++
 

@@ -303,46 +303,7 @@ $ truncate -s 0 file
 Move, copy, and/or rename
 
 <div class="row row-cols-md-2"><div>
-<details class="details-e">
-<summary><code>cp</code>: copy (+rename) files/folders</summary>
-
-`cp` is taking a list of folders/files to copy, and a destination
-
-```bash
-$ cp toto ./all_toto/
-$ cp toto1 toto_2 ./all_toto/
-```
-
-To rename something
-
-```bash
-$ cp toto toto0
-```
-
-To copy a **folder**, along with its content
-
-```bash
-$ cp -r all_toto/ all_toto_copy
-```
-</details>
 </div><div>
-<details class="details-e">
-<summary><code>mv</code>: move (+rename) files/folders</summary>
-
-`mv` is taking a list of folders/files to move, and a destination
-
-```bash
-$ mv toto ./all_toto/
-$ mv toto -t ./all_toto/ # same
-$ mv toto1 toto_2 ./all_toto/
-```
-
-To rename something
-
-```bash
-$ mv toto toto0
-```
-</details>
 </div></div>
 
 Delete, and create links
@@ -351,21 +312,7 @@ Delete, and create links
 <details class="details-e">
 <summary><code>rm/rmdir</code>: to remove files/folders</summary>
 
-`rm` is taking a list of files to remove.
-
-```bash
-$ rm file
-$ rm file0 file1
-```
-
-`rm` by default is asking for confirmation.
-
-```bash
-$ rm -f file # do not ask (f=force)
-$ rm -i file # ask
-```
-
-To delete a folder <small>(there is also `rmdir`, but it's garbage 😒)</small>
+To delete a folder:
 
 ```bash
 $ rm -d folder # if the folder is empty
