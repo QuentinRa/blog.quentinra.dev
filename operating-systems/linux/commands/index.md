@@ -61,6 +61,50 @@ $ pwd
 
 <hr class="sep-both">
 
+## Terminal management
+
+++++++
+
+[**echo/printf** - print text]
+
+👻 To-do 👻
+
+[**cat/tac** - print a file]
+
+👻 To-do 👻
+
+[**less/more** - read a file]
+
+👻 To-do 👻
+
+[**clear** - clear the terminal]
+
+👻 To-do 👻
+
+[**shopt** - configure the shell]
+
+👻 To-do 👻
+
+++++++
+
+<hr class="sep-both">
+
+## User management
+
+++++++
+
+[**useradd** - add a user]
+
+👻 To-do 👻
+
+[**deluser** - delete a user]
+
+👻 To-do 👻
+
+++++++
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
