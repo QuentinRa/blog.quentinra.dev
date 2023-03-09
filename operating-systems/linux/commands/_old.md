@@ -290,14 +290,6 @@ $ cd -
 ```
 </details>
 </div><div>
-<details class="details-e">
-<summary><code>pwd</code>: echo the working directory</summary>
-
-```bash
-$ pwd
-/home/listro
-```
-</details>
 </div></div>
 
 <div class="row row-cols-md-2"><div>

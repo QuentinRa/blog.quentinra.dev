@@ -2,18 +2,60 @@
 
 <hr class="sep-both">
 
-## XXX
+## Computer management
 
 ++++++
 
-[Tab 1]
-This is the **content** for tab 1.
+[**apt** - package manager]
 
-[Tab 2]
-This is the **content** for tab 2.
+👻 To-do 👻
 
-[Tab 3]
-This is the **content** for tab 3.
+[**dkpg** - package manager]
+
+👻 To-do 👻
+
+[**snap** - package manager]
+
+👻 To-do 👻
+
+++++++
+
+<hr class="sep-both">
+
+## File management
+
+++++++
+
+[**pwd** - current directory]
+
+**Usage** 🐚: echo the path to the working directory
+
+**Example** 🔥:
+
+```bash
+$ pwd
+/home/listro
+```
+
+[**ls/dir** - list files]
+
+👻 To-do 👻
+
+[**cd** - navigate to ...]
+
+👻 To-do 👻
+
+[**mv** - move or rename]
+
+👻 To-do 👻
+
+[**cp** - copy or rename]
+
+👻 To-do 👻
+
+[**rm/rmdir** - delete]
+
+👻 To-do 👻
 
 ++++++
 
@@ -27,6 +69,5 @@ Stuff that I found, but never read/used yet.
 
 * [old](_old.md)
 </div><div>
-
 
 </div></div>
