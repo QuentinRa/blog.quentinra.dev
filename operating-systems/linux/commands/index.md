@@ -168,8 +168,6 @@ $ shopt -pu nullglob
 $ id # current user
 $ id username # some user
 ```
-</div><div>
-
 </div></div>
 
 [**whoami** - user username]
@@ -184,9 +182,6 @@ $ id username # some user
 $ whoami
 username
 ```
-</div><div>
-
-
 </div></div>
 
 ++++++
@@ -233,6 +228,53 @@ $ pwd
 👻 To-do 👻
 
 [**cd** - navigate to ...]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: move to another directory
+
+**Example** 🔥:
+
+```bash!
+$ cd folder
+```
+</div><div>
+
+Move to the HOME folder
+
+```bash!
+$ cd
+$ cd ~
+```
+
+Move to the previous folder
+
+```bash!
+$ cd -
+```
+</div></div>
+
+[**mkdir** - create a folder]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: create one or more folders
+
+**Example** 🔥:
+
+```bash!
+$ mkdir folder
+```
+</div><div>
+
+Create every non-existing folder in a path
+
+```bash!
+$ mkdir -p folder0/folder1/folder2
+```
+</div></div>
+
+[**🔎** - create a file]
 
 👻 To-do 👻
 

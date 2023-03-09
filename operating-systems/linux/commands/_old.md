@@ -246,25 +246,6 @@ $ ls -la folder # info + hidden
 </div></div>
 </details>
 
-<div class="row row-cols-md-2"><div>
-<details class="details-e">
-<summary><code>cd</code>: move to another directory</summary>
-
-```bash
-$ cd folder
-$ cd ~
-$ cd # same as cd ~
-```
-
-You may go back to the previous folder because using `cd`
-
-```bash
-$ cd -
-```
-</details>
-</div><div>
-</div></div>
-
 <hr class="sl">
 
 ## Manage files and folders
@@ -272,19 +253,6 @@ $ cd -
 Create
 
 <div class="row row-cols-md-2"><div>
-<details class="details-e">
-<summary><code>mkdir</code>: create directories</summary>
-
-```bash
-$ mkdir folder
-```
-
-Create every non-existing folder in a path
-
-```bash
-$ mkdir -p folder0/folder1/folder2
-```
-</details>
 </div><div>
 <details class="details-e">
 <summary><code>touch</code>: may create file, update the last modified date</summary>
