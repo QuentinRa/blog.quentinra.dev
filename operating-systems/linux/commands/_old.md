@@ -24,25 +24,6 @@
 <span class="h4 fs-4">➡️ If there is a command that you don't understand, check out [explain shell](https://explainshell.com/).
 </span>
 
-<hr class="sr">
-
-## Less-editor
-
-<div class="row row-cols-md-2"><div class="align-self-center">
-
-*This isn't an official way to call it*, but there is a command called `less` allowing you to read a usually big amount of text in a terminal editor. Less-editor is used by **man**, and some other commands.
-
-There are QUITE a lot of options. Simply press <kbd>h</kbd> to see all of them.
-</div><div>
-
-* <kbd>arrow up</kbd>: to move up,
-* <kbd>arrow down</kbd>: to move down
-* <kbd>q</kbd>: to quit
-* <kbd>/something</kbd>: search "something"
-  * <kbd>Enter or n</kbd>: go to the next match
-  * <kbd>N</kbd>: go back to the previous match
-</div></div>
-
 <hr class="sl">
 
 ## System
@@ -64,49 +45,6 @@ Elevate the shell. In an elevated shell, there is no need to add `sudo` before e
 
 ```bash
 $ sudo -s
-```
-</div></div>
-</details>
-
-<details class="details-e">
-<summary><code>man/apropos/whatis</code>: manual for most commands</summary>
-<div class="row row-cols-md-2"><div>
-
-**Note**: man may have to be installed.
-
-```bash
-$ man man
-```
-
-Commands usually have an option "help".
-
-```bash
-$ man -h
-$ find -help
-$ gcc --help
-```
-
-Display one-line manual page descriptions
-
-```bash
-$ whatis whatis
-whatis (1) - display one-line manual page descriptions
-```
-</div><div>
-
-Entries in the manual are split into sections. To access a command in a specific section, simply add the section number before the command.
-
-```bash
-$ man 1 man
-```
-
-You can use `apropos` to search in which section a command is.
-
-```bash
-$ apropos fopen
-fopen (3)            - stream open functions
-fopencookie (3)      - opening a custom stream
-$ man 3 fopen
 ```
 </div></div>
 </details>

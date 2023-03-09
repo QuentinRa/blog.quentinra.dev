@@ -10,6 +10,62 @@
 
 <hr class="sep-both">
 
+## Manual
+
+++++++
+
+[**man** - commands manual]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: `man` is a manual for many commands. It may have to be installed.
+
+You can install additional man pages with packages such as `manpages` or `manpages-dev`.
+
+**Example** 🔥:
+
+```ps
+$ man man
+```
+
+➡️ `man` is a "less editor". See the `less` command.
+</div><div>
+
+Entries in the manual are split into sections. To access a command in a specific section, simply add the section number before the command.
+
+```bash
+$ man 1 man
+```
+</div></div>
+
+[**whatis** - one-line `man`]
+
+**Usage** 🐚: Display a one-line manual page descriptions
+
+**Example** 🔥:
+
+```ps
+$ whatis man
+man (1) - an interface to the system reference manuals
+```
+
+[**apropos** - search in the `man`]
+
+**Usage** 🐚: You can use `apropos` to search a command, or in which section a command is.
+
+**Example** 🔥:
+
+```ps
+$ apropos fopen
+fopen (3)            - stream open functions
+fopencookie (3)      - opening a custom stream
+$ man 3 fopen
+```
+
+++++++
+
+<hr class="sep-both">
+
 ## Terminal-related
 
 ++++++
@@ -96,7 +152,6 @@ $ cat f0 f1 - > f2
 **Usage** 🐚: both are used to browse files/content from the CLI.
 
 👉 `more` is rarely used as there is `cat` for short files, and `less` is more appropriate for large files.
-</div><div>
 
 **Example** 🔥:
 
@@ -104,8 +159,16 @@ $ cat f0 f1 - > f2
 $ more file
 $ less file
 ```
+</div><div>
 
-👉 Use UP/DOWN to move, and Q to exit.
+There are QUITE a lot of options. Simply press <kbd>h</kbd> to see all of them.
+
+* <kbd>arrow up</kbd>: to move up,
+* <kbd>arrow down</kbd>: to move down
+* <kbd>q</kbd>: to quit
+* <kbd>/something</kbd>: search "something"
+    * <kbd>Enter or n</kbd>: go to the next match
+    * <kbd>N</kbd>: go back to the previous match
 </div></div>
 
 [**clear** - clear the terminal]
@@ -217,7 +280,7 @@ $ uname -a # all
 
 **Example** 🔥:
 
-👉 Install, Update, Remove a package
+Install, Update, Remove a package
 
 ```ps
 $ sudo apt install aptitude
@@ -226,7 +289,7 @@ $ sudo apt upgrade aptitude
 $ sudo apt remove aptitude
 ```
 
-👉 Download updates for/upgrade all packages
+Download updates for/upgrade all packages
 
 ```ps
 $ sudo apt update
@@ -234,19 +297,19 @@ $ sudo apt upgrade
 ```
 </div><div>
 
-👉 Update the OS
+**Update the OS** 🧪
 
 ```ps
 $ sudo apt dist-upgrade
 ```
 
-👉 Remove unused dependencies
+Remove unused dependencies
 
 ```ps
 $ sudo apt auto-remove
 ```
 
-👉 When installing packages, you are prompted `Do you want to continue? [Y/n]` <small>(you need to enter `Y`)</small>. You can skip this, using `-y`.
+When installing packages, you are prompted `Do you want to continue? [Y/n]` <small>(you need to enter `Y`)</small>. You can skip this, using `-y`.
 
 ```ps
 $ sudo apt install -y aptitude
@@ -636,4 +699,11 @@ Stuff that I found, but never read/used yet.
 * rpm, yum, dnf, pacman
 </div><div>
 
+Commands usually have an option "help".
+
+```bash
+$ man -h
+$ find -help
+$ gcc --help
+```
 </div></div>
