@@ -754,6 +754,152 @@ $ delgroup group_name
 
 <hr class="sep-both">
 
+## Search
+
+++++++
+
+[**which/whereis** - command]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: find a command
+
+**Example** 🔥:
+
+Find the executable for a command
+
+```ps
+$ which find
+/usr/bin/find
+```
+</div><div>
+
+Find any executable for a command in the PATH
+
+```bash
+$ whereis ls
+ls: /bin/ls /usr/share/man/man1/ls.1.gz
+```
+</div></div>
+
+[**find** - file/folder]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: find a file/folder. There are a ton of options.
+
+**Example** 🔥:
+
+The search is done **recursively** starting from a folder <small>(ex: `/`)</small>. We can indicate a pattern <small>(ex: `toto*`)</small>.
+
+```ps
+$ find /
+$ find / -name "toto*" # toto toto0...
+$ find / -name "toto*" -type f # files
+$ find / -name "toto*" -type d # folders
+```
+
+You can apply an operation on every file found. For instance, you can copy them somewhere.
+
+```ps
+# {} is the path to the match
+$ find [...] -exec cp '{}' /tmp/found \;
+```
+
+When using find, we may get many errors. We usually redirect them to the "trash".
+
+```ps
+$ find [...] 2> /dev/null
+```
+</div><div>
+
+**Other options**
+
+* `-empty`: empty folders/files only
+* `-execdir`: works the same as `-exec`, but in the directory of the match
+* `-quit`: exit when one result is found
+* `-printf`: change the output format
+* `-mindepth value`: minimum depth <small>(default=0)</small>
+* `-maxdepth value`: maximum depth
+
+These are rarely used:
+
+* `-mtime n`/`-atime n`: changed/accessed in the last `n` days
+* `-cmin n`/`-amin n`: same, but in the last `n` minutes
+* `-newer file`: modified after `file`
+* `-size n`: a specific size such as `4M`
+* `-perms 0744`/`-perms a=x`/`-writable`/.../`-perm -o w`/`-222`: files matching the given perms
+* `-user xxx`: files belonging to the user xxx
+* `-group xxx`: files belonging to users in xxx
+
+👉 You can add a `+` or `-` such as `-size +4M`.
+</div></div>
+
+[**locate** - file]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: search a file in a local database of files. The database must be updated manually `sudo updatedb`.
+
+**Example** 🔥:
+
+```ps
+$ locate find
+```
+</div></div>
+
+++++++
+
+
+<hr class="sep-both">
+
+## XXX
+
+++++++
+
+[**XXX** - xxx]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: 
+
+**Example** 🔥:
+
+```ps
+$ 
+```
+</div></div>
+
+[**XXX** - xxx]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚:
+
+**Example** 🔥:
+
+```ps
+$ 
+```
+</div></div>
+
+[**XXX** - xxx]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚:
+
+**Example** 🔥:
+
+```ps
+$ 
+```
+</div></div>
+
+++++++
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -762,6 +908,7 @@ Stuff that I found, but never read/used yet.
 
 * [old](_old.md)
 * rpm, yum, dnf, pacman
+* use of `-not`/`!` to negate a `find` option
 </div><div>
 
 Commands usually have an option "help".
