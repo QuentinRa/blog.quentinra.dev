@@ -1078,12 +1078,22 @@ $
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚:
+**Usage** 🐚: number lines of files
 
 **Example** 🔥:
 
+Number non-empty lines
+
 ```ps
-$ 
+$ nl file
+$ nl -bt file
+```
+</div><div>
+
+Number all lines
+
+```ps
+$ nl -ba file
 ```
 </div></div>
 
@@ -1091,12 +1101,25 @@ $
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚:
+**Usage** 🐚: count words/lines/characters
 
 **Example** 🔥:
 
+Use `-l` for lines, `-w` for words, and `-c` for characters.
+
 ```ps
-$ 
+$ cat file.txt | wc -l
+7560 # lines
+```
+</div><div>
+
+You can read something from stdin. Use <kbd>CTRL+D</kbd> to indicate the end of the input.
+
+```ps
+$ wc -w
+Hello
+World # <CTRL+D>
+2
 ```
 </div></div>
 
@@ -1104,18 +1127,36 @@ $
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚:
+**Usage** 🐚: output the sorted file
 
 **Example** 🔥:
 
 ```ps
-$ 
+$ sort
+$ sort -d
+```
+
+* `-b`: ignore leading blanks
+* `-r`: reverse (z to a)
+</div><div>
+
+You can define a separator (`:`), and only sort a column.
+
+```ps
+$ sort s -t: -k2 # sort by second column
+3:a
+1:b
+2:c
+$ sort s -t: -k2.0 # column.nth character
+$ sort s -t: -k2.0,2.1 # range
 ```
 </div></div>
 
 [**uniq** - duplicates lines]
 
-**Usage** 🐚: remove lines or indicate which are duplicates.
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: remove lines or indicate how many duplicates there are for each unique line.
 
 **Example** 🔥:
 
@@ -1124,12 +1165,17 @@ Remove duplicates
 ```ps
 $ uniq < file
 ```
+</div><div>
 
-Add the number of duplicates for each line
+Add the number of duplicates for each unique line
 
 ```ps
 $ uniq -c < file
+  1: XXX
+  1: YYY
+  5: ZZZ
 ```
+</div></div>
 
 ++++++
 

@@ -389,40 +389,6 @@ $ cat file | tr -d 'W'
 
 <div class="row row-cols-md-2"><div>
 <details class="details-e">
-<summary><code>wc</code>: count words/lines/characters</summary>
-
-Use `-l` for lines, `-w` for words, and `-c` for characters.
-
-```bash
-$ cat file.txt | wc -l
-7560 # lines
-$ wc -w
-Hello
-World # <CTRL-D>
-2
-```
-</details>
-</div><div>
-<details class="details-e">
-<summary><code>nl</code>: number lines of files</summary>
-
-Number non-empty lines
-
-```bash
-$ nl file
-$ nl -bt file
-```
-
-Number all lines
-
-```bash
-$ nl -ba file
-```
-</details>
-</div></div>
-
-<div class="row row-cols-md-2"><div>
-<details class="details-e">
 <summary><code>head/tail</code>: show the $n$ first/last lines of a file</summary>
 
 Both a working the same, `head` is for the first lines, `tail` is for the last lines, so I will only introduce one.
@@ -461,26 +427,7 @@ root:0
 
 <div class="row row-cols-md-2"><div>
 <details class="details-e">
-<summary><code>sort</code>: output the sorted file</summary>
-
-```bash
-$ sort
-$ sort -d
-```
-
-* `-b`: ignore leading blanks
-* `-r`: reverse (z to a)
-
-You can define a separator (`:`), and sort only a column.
-
-```bash
-$ sort s -t: -k2 # sort by second column
-3:a
-1:b
-2:c
-$ sort s -t: -k2.0 # column.nth character
-$ sort s -t: -k2.0,2.1 # range
-```
+<summary><code>sort</code>:</summary>
 
 </details>
 </div><div>
