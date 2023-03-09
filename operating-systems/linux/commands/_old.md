@@ -329,7 +329,6 @@ Because we need to print a `#`, then the line, we need to store the line. We are
 </div></div>
 </details>
 
-<div class="row row-cols-md-2"><div>
 <details class="details-e">
 <summary><code>awk</code>: extract columns (cut), rearrange columns...</summary>
 
@@ -361,76 +360,7 @@ Print the first, and the third column, if the file has at least 3 lines (`NR`)
 $ awk 'NR > 3 {print $1 $3}' file
 ```
 </details>
-</div><div>
-<details class="details-e">
-<summary><code>tr</code>: replace a character with another/delete a character</summary>
 
-Replace "c" with "n"
-
-```bash
-$ cat file | tr 'c' 'n'
-```
-
-Can be used to insert new lines
-
-```bash
-$ cat file | tr 'c' '\n'
-$ stat file -c "Size: %s\nName: %n\nPerms: %a / %A\ntype: %F" | tr '\\n' '\n'
-```
-
-Delete a character
-
-```bash
-$ cat file | tr -d 'W'
-```
-
-</details>
-</div></div>
-
-<div class="row row-cols-md-2"><div>
-<details class="details-e">
-<summary><code>head/tail</code>: show the $n$ first/last lines of a file</summary>
-
-Both a working the same, `head` is for the first lines, `tail` is for the last lines, so I will only introduce one.
-
-```bash
-# first 10 lines
-$ head f
-# first 5 lines
-$ head f -n 5
-$ head f -n +5
-# all lines, aside from the last 3 lines
-$ head f -n -5
-```
-</details>
-</div><div>
-<details class="details-e">
-<summary><code>cut</code> 😎: extract data</summary>
-
-```bash
-$ cat /etc/passwd
-root:x:0:0:root:/root:/bin/bash
-```
-
-In this file, values are separated with `:`. For cut, if you consider `:` as a separator, it looks like this `f1:f2:f3:f4:f5:f6:f7`. These values "f" are called fields, and you can extract them.
-
-```bash
-$ cat /etc/passwd | cut -d: -f1
-root
-$ cat /etc/passwd | cut -d: -f1-3
-root:x:0
-$ cat /etc/passwd | cut -d: -f1,3
-root:0
-```
-</details>
-</div></div>
-
-<div class="row row-cols-md-2"><div>
-<details class="details-e">
-<summary><code>sort</code>:</summary>
-
-</details>
-</div><div>
 <details class="details-e">
 <summary><code>expr</code>: substring, indexOf...</summary>
 
@@ -459,7 +389,6 @@ $ expr index "Sarah" w
 
 
 </details>
-</div></div>
 
 <hr class="sl">
 

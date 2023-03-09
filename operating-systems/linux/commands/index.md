@@ -1013,12 +1013,22 @@ This sections does NOT include file editors.
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚: 
+**Usage** 🐚: show the $n$ first/last lines of a file. Both a working the same, `head` is for the first lines, `tail` is for the last lines.
 
 **Example** 🔥:
 
 ```ps
-$ 
+# first 10 lines
+$ head file
+```
+</div><div>
+
+```ps
+# first 5 lines
+$ head file -n 5
+$ head file -n +5
+# all lines, aside from the last 5 lines
+$ head file -n -5
 ```
 </div></div>
 
@@ -1052,12 +1062,25 @@ $
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚:
+**Usage** 🐚: extract "fields" from a table For instance, given the following file:
+
+```bash
+$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+```
+
+For every line, we got values separated by "`:`". These are what we call "fields". For `cut`, the row look like this: `f1:f2:f3:f4:f5:f6:f7`.
+</div><div>
 
 **Example** 🔥:
 
 ```ps
-$ 
+$ cat /etc/passwd | cut -d: -f1
+root
+$ cat /etc/passwd | cut -d: -f1-3
+root:x:0
+$ cat /etc/passwd | cut -d: -f1,3
+root:0
 ```
 </div></div>
 
@@ -1065,12 +1088,21 @@ $
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚:
+**Usage** 🐚: replace a character with another, or delete a character.
 
 **Example** 🔥:
 
+Replace whitespaces with the newline character
+
 ```ps
-$ 
+$ cat file | tr ' ' '\n'
+```
+</div><div>
+
+Delete every character `W`
+
+```ps
+$ cat file | tr -d 'W'
 ```
 </div></div>
 
