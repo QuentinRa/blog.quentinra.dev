@@ -1,5 +1,13 @@
 # XXX
 
+<div class="row row-cols-md-2 mt-4"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
 <hr class="sep-both">
 
 ## Computer management
@@ -15,6 +23,20 @@
 👻 To-do 👻
 
 [**snap** - package manager]
+
+👻 To-do 👻
+
+++++++
+
+Learn how your machine:
+
+++++++
+
+[**id** - xxx]
+
+👻 To-do 👻
+
+[**whoami** - xxx]
 
 👻 To-do 👻
 
