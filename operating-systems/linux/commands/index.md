@@ -370,13 +370,69 @@ $ rm -rf folder # usual f + r
 
 ++++++
 
+[**su** - swap/log in as user]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: swap/log in as another user
+
+**Example** 🔥:
+
+```bash!
+$ su root
+```
+</div><div>
+
+👉 Log in as another user <small>(move the their home...)</small>
+
+```bash
+$ su -l root
+$ su - root # same
+```
+</div></div>
+
 [**useradd** - add a user]
 
-👻 To-do 👻
+**Usage** 🐚: add a user
+
+**Example** 🔥:
+
+```bash!
+$ useradd username
+```
+
+Create a username, give them a group, and define their home folder.
+
+```bash!
+# -m = create home
+$ useradd username -g usergroup -b custom/path/to/home -m
+```
 
 [**deluser** - delete a user]
 
-👻 To-do 👻
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: delete a user
+
+**Example** 🔥:
+
+```bash!
+$ deluser username
+```
+</div></div>
+
+[**passwd** - change password]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: change the current user's password
+
+**Example** 🔥:
+
+```bash!
+$ passwd
+```
+</div></div>
 
 ++++++
 

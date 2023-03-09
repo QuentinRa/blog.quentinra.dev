@@ -300,27 +300,6 @@ $ truncate -s 0 file
 </div></div>
 </details>
 
-Move, copy, and/or rename
-
-<div class="row row-cols-md-2"><div>
-</div><div>
-</div></div>
-
-Delete, and create links
-
-<div class="row row-cols-md-2"><div>
-<details class="details-e">
-<summary><code>rm/rmdir</code>: to remove files/folders</summary>
-
-To delete a folder:
-
-```bash
-$ rm -d folder # if the folder is empty
-$ rm -r folder # -R is doing the same
-$ rm -rf folder # usual f + r
-```
-</details>
-</div><div>
 <details class="details-e">
 <summary><code>ln</code>: to create links</summary>
 
@@ -330,7 +309,6 @@ To create a symbolic link
 $ ln -s target_of_the_sl dest_of_the_generated_sl
 ```
 </details>
-</div></div>
 
 <hr class="sr">
 
@@ -520,18 +498,6 @@ ls: /bin/ls /usr/share/man/man1/ls.1.gz
 
 ## Users, and groups
 
-<div class="row row-cols-md-3 mt-4"><div>
-<details class="details-e">
-<summary><code>useradd</code>: add a user</summary>
-
-```bash
-$ useradd username
-# -m = create home
-$ useradd username -g usergroup -b custom/path/to/home -m
-```
-</details>
-</div><div>
-
 <details class="details-e">
 <summary><code>groupadd</code>: add a group</summary>
 
@@ -539,28 +505,6 @@ $ useradd username -g usergroup -b custom/path/to/home -m
 $ groupadd group_name
 ```
 </details>
-</div><div>
-
-<details class="details-e">
-<summary><code>passwd</code>: set password</summary>
-
-Change the password of the current user.
-
-```bash
-$ passwd
-```
-</details>
-</div></div>
-
-<div class="row row-cols-md-3"><div>
-<details class="details-e">
-<summary><code>deluser</code>: delete a user</summary>
-
-```bash
-$ deluser username
-```
-</details>
-</div><div>
 
 <details class="details-e">
 <summary><code>delgroup</code>: delete a group</summary>
@@ -569,28 +513,6 @@ $ deluser username
 $ delgroup group_name
 ```
 </details>
-</div><div>
-
-<details class="details-e">
-<summary><code>su</code>: change current user</summary>
-
-```bash
-$ su root
-```
-
-If you want to log in as another user (ex: move the their home...), use
-
-```bash
-$ su -l root
-$ su - root # same
-```
-</details>
-</div></div>
-
-<div class="row row-cols-md-3"><div>
-</div><div>
-
-</div><div>
 
 <details class="details-e">
 <summary><code>usermod</code>: add user to sudoers</summary>
@@ -599,7 +521,6 @@ $ su - root # same
 $ sudo usermod -a -G sudo username
 ```
 </details>
-</div></div>
 
 <div class="row row-cols-md-3"><div>
 <details class="details-e">
