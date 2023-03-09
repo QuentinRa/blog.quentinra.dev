@@ -153,16 +153,6 @@ $ man 3 fopen
 </details>
 
 <div class="row row-cols-md-3"><div>
-<details class="details-e">
-<summary><code>clear</code>: clear the terminal</summary>
-
-```bash
-$ clear
-```
-
-You may use the shortcut <kbd>CTRL+L</kbd>.
-
-</details>
 </div><div>
 <details class="details-e">
 <summary><code>alias</code>: create an alias for a command</summary>
@@ -197,24 +187,7 @@ $ sudo update-alternatives --config php
 </div></div>
 
 <div class="row row-cols-md-2"><div>
-<details class="details-e">
-<summary><code>shopt</code>: change terminal behavior</summary>
 
-Enable an option (ex: nullglob)
-
-```bash
-$ shopt -ps nullglob
-```
-
-Disable an option (ex: nullglob)
-
-```bash
-$ shopt -pu nullglob
-```
-
-> By default, if a pattern returns nothing, some commands fail. This option will make any pattern without results return an empty "null" string.
-
-</details>
 </div><div>
 <details class="details-e">
 <summary><code>xrandr</code>: set the size, orientation, brightness of the screen</summary>
@@ -291,41 +264,6 @@ $ cd -
 </details>
 </div><div>
 </div></div>
-
-<div class="row row-cols-md-2"><div>
-</div><div></div>
-
-</div>
-
-<details class="details-e">
-<summary><code>cat/tac/less/more</code>: print/display a file</summary>
-<div class="row row-cols-md-2"><div>
-
-`cat` is the most used command to see the content of a file, while `less` is also quite used for big files, as we can scroll up/down. `more` is an in-between, working like `cat` for small files, and a bit like `less` for big files.
-
-```bash
-$ more file # use up/down, and q
-$ less file # use up/down, and q
-```
-
-</div><div>
-
-The command `tac` is doing the same, but each file is reversed.
-
-```bash
-$ tac f0 f1
-f0
-f1 Line 2
-f1 Line 1
-```
-
-`cat` may be used on some input
-
-```bash
-$ cat f0 f1 - > ok
-```
-</div></div>
-</details>
 
 <hr class="sl">
 

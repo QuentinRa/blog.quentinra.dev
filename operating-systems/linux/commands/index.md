@@ -91,15 +91,62 @@ $ cat f0 f1 - > f2
 
 [**less/more** - read a file]
 
-👻 To-do 👻
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: both are used to browse files/content from the CLI.
+
+👉 `more` is rarely used as there is `cat` for short files, and `less` is more appropriate for large files.
+</div><div>
+
+**Example** 🔥:
+
+```bash!
+$ more file
+$ less file
+```
+
+👉 Use UP/DOWN to move, and Q to exit.
+</div></div>
 
 [**clear** - clear the terminal]
 
-👻 To-do 👻
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: clear the terminal
+
+**Example** 🔥:
+
+```bash!
+$ clear
+```
+</div><div>
+
+👉 You may use the shortcut <kbd>CTRL+L</kbd>.
+</div></div>
 
 [**shopt** - configure the shell]
 
-👻 To-do 👻
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: change the terminal behavior
+
+**Example** 🔥:
+
+Enable an option <small>(ex: nullglob)</small>
+
+```bash
+$ shopt -ps nullglob
+```
+</div><div>
+
+Disable an option <small>(ex: nullglob)</small>
+
+```bash
+$ shopt -pu nullglob
+```
+
+> The `nullglob` option is replacing patterns with the null string if there are no matches.
+</div></div>
 
 ++++++
 
