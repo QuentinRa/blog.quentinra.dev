@@ -156,13 +156,38 @@ $ shopt -pu nullglob
 
 ++++++
 
-[**id** - xxx]
+[**id** - user info]
 
-👻 To-do 👻
+<div class="row row-cols-md-2"><div>
 
-[**whoami** - xxx]
+**Usage** 🐚: info about a user
 
-👻 To-do 👻
+**Example** 🔥:
+
+```bash!
+$ id # current user
+$ id username # some user
+```
+</div><div>
+
+</div></div>
+
+[**whoami** - user username]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: username of the current user
+
+**Example** 🔥:
+
+```bash!
+$ whoami
+username
+```
+</div><div>
+
+
+</div></div>
 
 ++++++
 

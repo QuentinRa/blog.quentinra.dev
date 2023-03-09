@@ -673,23 +673,8 @@ $ su - root # same
 </div></div>
 
 <div class="row row-cols-md-3"><div>
-<details class="details-e">
-<summary><code>id</code>: info about a user</summary>
-
-```bash
-$ id # current user
-$ id username # some user
-```
-</details>
 </div><div>
 
-<details class="details-e">
-<summary><code>whoami</code>: username of the current user</summary>
-
-```bash
-$ whoami
-```
-</details>
 </div><div>
 
 <details class="details-e">
