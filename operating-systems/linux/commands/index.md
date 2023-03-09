@@ -91,7 +91,7 @@ $ echo "Hello, World"
 $ echo -n "Hello, World"
 ```
 
-**alt** ⚔️: You can also use `printf "format" arguments`:
+You can also use `printf "format" arguments`:
 
 ```bash
 printf "%s\n" "Hello, World"
@@ -255,12 +255,26 @@ username
 
 **Example** 🔥:
 
-```bash
+```ps
 $ uname # show OS name
 $ uname -s # same
 $ uname -rv # kernel
 $ uname -m # architecture (x64, x86...)
 $ uname -a # all
+```
+</div></div>
+
+[**date** - date & time]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: info about the machine
+
+**Example** 🔥:
+
+```ps
+$ date
+Mon 12 Oct 2020 08:32:11 PM EDT
 ```
 </div></div>
 
@@ -373,7 +387,7 @@ $ sudo snap install --classic xxx
 
 <hr class="sep-both">
 
-## File management
+## File system
 
 ++++++
 
@@ -388,13 +402,13 @@ $ pwd
 /home/listro
 ```
 
-[**ls/dir** - list files]
+[**ls/dir/tree** - list files]
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚: list all files in a directory. Both are the same, but `dir` is rarely used.
+**Usage** 🐚: list all files in a directory. Both are the same, but `dir` is rarely used. `tree` display files in a tree-like format.
 
-**Example** 🔥:
+**Example for ls/dir** 🔥:
 
 ```ps
 $ ls # current directory
@@ -408,7 +422,6 @@ $ ls *.txt # pattern
 ```ps
 $ ls -l file # info on file
 ```
-</div><div>
 
 **-a**: print hidden files
 
@@ -416,8 +429,9 @@ $ ls -l file # info on file
 $ ls -a folder
 $ ls -la folder # info + hidden
 ```
+</div><div>
 
-Other options
+**Other options**
 
 * `-R`: recursive
 * `-p`: add a trailing "/" to repositories
@@ -428,6 +442,16 @@ Other options
 * `-S`: sort by size
 * `-t`: sort by last modified date
 * `-u`: sort by last access date
+
+<br>
+
+**Example for tree** 🔥:
+
+List recursively given a folder.
+
+```ps
+$ tree .
+```
 </div></div>
 
 [**cd** - navigate to ...]
@@ -648,16 +672,31 @@ $ su - root # same
 
 **Example** 🔥:
 
-```bash!
+```ps
 $ useradd username
 ```
 
 Create a username, give them a group, and define their home folder.
 
-```bash!
+```ps
 # -m = create home
 $ useradd username -g usergroup -b custom/path/to/home -m
 ```
+
+[**usermod** - edit users]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: add users to a group...
+
+**Example** 🔥:
+
+Add user to sudoers
+
+```ps
+$ sudo usermod -a -G sudo username
+```
+</div></div>
 
 [**deluser** - delete a user]
 
@@ -667,7 +706,7 @@ $ useradd username -g usergroup -b custom/path/to/home -m
 
 **Example** 🔥:
 
-```bash!
+```ps
 $ deluser username
 ```
 </div></div>
@@ -680,8 +719,34 @@ $ deluser username
 
 **Example** 🔥:
 
-```bash!
+```ps
 $ passwd
+```
+</div></div>
+
+[**groupadd** - create a group]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: create a group
+
+**Example** 🔥:
+
+```ps
+$ groupadd group_name
+```
+</div></div>
+
+[**delgroup** - delete a group]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: delete a group
+
+**Example** 🔥:
+
+```ps
+$ delgroup group_name
 ```
 </div></div>
 

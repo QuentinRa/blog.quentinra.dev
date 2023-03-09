@@ -286,34 +286,6 @@ ls: /bin/ls /usr/share/man/man1/ls.1.gz
 </details>
 </div></div>
 
-<hr class="sr">
-
-## Users, and groups
-
-<details class="details-e">
-<summary><code>groupadd</code>: add a group</summary>
-
-```bash
-$ groupadd group_name
-```
-</details>
-
-<details class="details-e">
-<summary><code>delgroup</code>: delete a group</summary>
-
-```bash
-$ delgroup group_name
-```
-</details>
-
-<details class="details-e">
-<summary><code>usermod</code>: add user to sudoers</summary>
-
-```bash
-$ sudo usermod -a -G sudo username
-```
-</details>
-
 <hr class="sl">
 
 ## Utilities
@@ -444,14 +416,6 @@ $ unzip -l toto.zip
 ```
 </details>
 </div><div>
-<details class="details-e">
-<summary><code>date</code>: show the data</summary>
-
-```bash
-$ date
-Mon 12 Oct 2020 08:32:11 PM EDT
-```
-</details>
 </div><div>
 <details class="details-e">
 <summary><code>time</code>: track a command duration</summary>
@@ -499,13 +463,6 @@ $  du -sh folder
 ```
 </details>
 </div><div>
-<details class="details-e">
-<summary><code>tree</code>:  list files in a tree-like format</summary>
-
-```bash
-$ tree .
-```
-</details>
 </div></div>
 
 <hr class="sr">
