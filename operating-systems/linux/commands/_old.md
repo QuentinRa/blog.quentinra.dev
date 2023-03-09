@@ -104,68 +104,7 @@ $ xrandr --output DP-2 --brightness 0.5
 
 <hr class="sl">
 
-<hr class="sl">
-
 ## Utilities
-
-<div class="row row-cols-md-2 mt-4"><div>
-<details class="details-e">
-<summary><code>file</code>: show image resolution, basic info on a file/folder..</summary>
-
-```bash
-$ file folder
-folder: directory
-$ file image.jpg
-image.jpg: JPEG image data, JFIF standard 1.01, resolution (DPI), density 72x72, segment length 16, comment: "CREATOR: gd-jpeg v1.0 (using IJG JPEG v90), quality = 90", baseline, precision 8, 1080x1350, components 3
-```
-</details>
-</div><div>
-<details class="details-e">
-<summary><code>stat</code>: show a lot of informations about a file/folder</summary>
-
-```bash
-$ stat folder
-$ stat file
-$ stat toto -c "Size: %s -- Name: %n -- Perms: %a / %A -- type: %F"
-Size: 4096 -- Name: toto -- Perms: 755 / drwxr-xr-x -- type: directory
-```
-</details>
-</div></div>
-
-
-<div class="row row-cols-md-2"><div>
-<details class="details-e">
-<summary><code>diff</code>: show the differences between two files</summary>
-
-```bash
-$ diff f0 f1 -q
-Files f0 and f1 differ
-$ diff f0 f1
-# one-bellow-the-other diff
-$ diff f0 f1 -y
-# side-by-side diff
-```
-</details>
-</div><div>
-<details class="details-e">
-<summary><code>patch</code>: apply a patch of the differences between two files</summary>
-
-Generate a patch
-
-```bash
-$ diff f0 f1 -u
-# ...
-$ diff f0 f1 -u > f0.patch 
-```
-
-Then, you can use `patch` to apply the differences with `f1` to `f0`.
-
-```bash
-$ patch < f0.patch
-```
-
-</details>
-</div></div>
 
 <div class="row row-cols-md-2"><div>
 <details class="details-e">
@@ -269,17 +208,6 @@ Hello
 
 </details>
 </div><div>
-<details class="details-e">
-<summary><code>du</code>: estimate file space usage</summary>
-
-* `s` to summarize the result (one result per argument)
-* `h` to use a human-readable format (add units...)
-
-```bash
-$  du -sh folder
-8.0K folder
-```
-</details>
 </div><div>
 </div></div>
 
