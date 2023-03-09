@@ -327,7 +327,45 @@ $ pwd
 
 [**ls/dir** - list files]
 
-👻 To-do 👻
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: list all files in a directory. Both are the same, but `dir` is rarely used.
+
+**Example** 🔥:
+
+```ps
+$ ls # current directory
+$ ls . # same as "ls"
+$ ls folder
+$ ls *.txt # pattern
+```
+
+**-l**: print more information about each file
+
+```ps
+$ ls -l file # info on file
+```
+</div><div>
+
+**-a**: print hidden files
+
+```ps
+$ ls -a folder
+$ ls -la folder # info + hidden
+```
+
+Other options
+
+* `-R`: recursive
+* `-p`: add a trailing "/" to repositories
+* `-A`: hide ".", and ".."
+* `-s`: show the size
+* `--format="format"`: use a custom format
+* `--hide="pattern"`: hide files matching "pattern"
+* `-S`: sort by size
+* `-t`: sort by last modified date
+* `-u`: sort by last access date
+</div></div>
 
 [**cd** - navigate to ...]
 
@@ -378,7 +416,55 @@ $ mkdir -p folder0/folder1/folder2
 
 [**🔎** - create a file]
 
-👻 To-do 👻
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: there is no specific command to create a file, but there are multiple ways to achieve it: `touch`, `cp`, `truncate`, `>`, `:>`...
+
+**Example** 🔥:
+
+👉 `touch`: ensure a file exists, but it may not be empty 🔥. The command create a file or update the last modified date if it exists.
+
+```ps
+$ touch afile
+```
+
+👉 A trick is to copy `/dev/null` with `cp`
+
+```ps
+$ cp /dev/null file
+```
+</div><div>
+
+👉 A popular way is to use a redirection of the output. Note that all of these syntax may not be supported everywhere.
+
+```ps
+$ echo -n "" > file
+$ echo -n > file
+$ > file
+$ :> file
+```
+
+👉 You can use truncate to create an empty file or truncate an existing file.
+
+```ps
+$ truncate -s 0 file
+```
+</div></div>
+
+[**ln** - create a link]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: create a symbolic/hard link
+
+**Example** 🔥:
+
+Create a symbolic link at `output` linking to `target`:
+
+```ps
+$ ln -s target output
+```
+</div></div>
 
 [**mv** - move or rename]
 
