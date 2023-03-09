@@ -184,6 +184,23 @@ username
 ```
 </div></div>
 
+[**uname** - machine info]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: info about the machine
+
+**Example** 🔥:
+
+```bash
+$ uname # show OS name
+$ uname -s # same
+$ uname -rv # kernel
+$ uname -m # architecture (x64, x86...)
+$ uname -a # all
+```
+</div></div>
+
 ++++++
 
 <hr class="sep-both">
@@ -194,11 +211,85 @@ username
 
 [**apt** - package manager]
 
-👻 To-do 👻
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: `apt` is the default package manager on well-known Linux distros such as Debian/Ubuntu.
+
+**Example** 🔥:
+
+👉 Install a package and its dependencies
+
+```ps
+$ sudo apt install aptitude
+```
+
+👉 Download updates for all packages/one package
+
+```ps
+$ sudo apt update
+$ sudo apt update aptitude
+```
+
+👉 Update the OS
+
+```ps
+$ sudo apt dist-upgrade
+```
+</div><div>
+
+👉 Upgrade all packages/one package
+
+```ps
+$ sudo apt upgrade
+$ sudo apt upgrade aptitude
+```
+
+👉 Remove a package
+
+```ps
+$ sudo apt remove aptitude
+$ sudo apt auto-remove # unused dependencies
+```
+
+👉 When installing packages, you are prompted `Do you want to continue? [Y/n]` <small>(you need to enter `Y`)</small>. You can skip this, using `-y`.
+
+```ps
+$ sudo apt install -y aptitude
+```
+</div></div>
+
+[**aptitude** - package manager]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: `aptitude` <small>(which has to be installed)</small> is the same as `apt`, but there is a graphical interface.
+
+**Example** 🔥:
+
+```bash!
+$ sudo aptitude # press 'q' to quit
+```
+</div><div>
+
+Or, you can use it like `apt`:
+
+```bash!
+$ sudo aptitude install nano
+```
+</div></div>
 
 [**dkpg** - package manager]
 
-👻 To-do 👻
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: todo
+
+**Example** 🔥:
+
+```bash!
+$ sudo dpkg -i xxx.deb
+```
+</div></div>
 
 [**snap** - package manager]
 

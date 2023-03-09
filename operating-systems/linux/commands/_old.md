@@ -1,7 +1,5 @@
 # List of essential Linux commands
 
-A lot of commands, that can be used on Linux-based distributions, along with their most useful options, and some tips about their usage. This includes commands such as `sudo`, `apt`, `man`, `ls`, `cd`, `pwd`, `echo`, `printf`, `cat`, `less`, `mkdir`, `touch`, `cp`, `mv`, `rm`, `ln`, `chmod`, `umask`, `chown`, and many more.
-
 **Note**: some commands are not listed here
 
 <blockquote>
@@ -66,45 +64,6 @@ Elevate the shell. In an elevated shell, there is no need to add `sudo` before e
 
 ```bash
 $ sudo -s
-```
-</div></div>
-</details>
-
-<details class="details-e">
-<summary><code>apt/aptitude/dpkg</code>: install/update packages/OS</summary>
-<div class="row row-cols-md-2"><div>
-
-`apt` is the default package manager on many well-known Linux-based distributions such as Ubuntu/Debian.
-
-```bash
-# operations on the package "aptitude"
-sudo apt install aptitude # install the package as well as its dependencies
-sudo apt update aptitude # search for an update
-sudo apt upgrade aptitude # install the update
-sudo apt remove aptitude  # uninstall the package
-sudo apt auto-remove # uninstall the package as well as its useless dependencies
-# update OS
-sudo apt dist-upgrade
-```
-</div><div>
-
-When installing packages, you are prompted `Do you want to continue? [Y/n]` (you need to enter `Y`). You can skip this, using `-y`.
-
-```bash
-sudo apt install -y aptitude
-```
-
-`aptitude`, which needs to be installed, is doing the same as `apt`, but there is a graphical interface included.
-
-```bash
-sudo aptitude # press 'q' to quit
-sudo aptitude install nano
-```
-
-And, you can use this to install a `.deb`
-
-```bash
-$ sudo dpkg -i xxx.deb
 ```
 </div></div>
 </details>
@@ -521,20 +480,6 @@ $ delgroup group_name
 $ sudo usermod -a -G sudo username
 ```
 </details>
-
-<div class="row row-cols-md-3"><div>
-<details class="details-e">
-<summary><code>uname</code>: info about the machine</summary>
-
-```bash
-$ uname # show OS name
-$ uname -s # same
-$ uname -rv # kernel
-$ uname -m # architecture (x64, x86...)
-$ uname -a # all
-```
-</details>
-</div></div>
 
 <hr class="sl">
 
