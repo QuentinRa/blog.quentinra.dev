@@ -293,26 +293,6 @@ $ cd -
 </div></div>
 
 <div class="row row-cols-md-2"><div>
-<details class="details-e">
-<summary><code>echo/printf</code>: display something</summary>
-
-```bash
-$ echo Hello, World
-$ echo "Hello, World"
-```
-
-To remove the newline, use `-n`:
-
-```bash
-$ echo -n "Hello, World"
-```
-
-You can also use `printf "format" arguments`:
-
-```bash
-printf "%s\n" "Hello, World"
-```
-</details>
 </div><div></div>
 
 </div>
@@ -324,28 +304,15 @@ printf "%s\n" "Hello, World"
 `cat` is the most used command to see the content of a file, while `less` is also quite used for big files, as we can scroll up/down. `more` is an in-between, working like `cat` for small files, and a bit like `less` for big files.
 
 ```bash
-$ cat file
 $ more file # use up/down, and q
 $ less file # use up/down, and q
 ```
 
-But, `cat` is originally a command to concatenate files/input, and output the result.
-
-```bash
-$ cat f0 f1
-f0
-f1 Line 1
-f1 Line 2
-```
 </div><div>
 
 The command `tac` is doing the same, but each file is reversed.
 
 ```bash
-$ cat f0 f1
-f0
-f1 Line 1
-f1 Line 2
 $ tac f0 f1
 f0
 f1 Line 2
@@ -355,8 +322,6 @@ f1 Line 1
 `cat` may be used on some input
 
 ```bash
-$ cat
-$ cat -
 $ cat f0 f1 - > ok
 ```
 </div></div>

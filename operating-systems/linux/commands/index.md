@@ -1,4 +1,4 @@
-# XXX
+# Linux commands
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -7,6 +7,117 @@
 
 ...
 </div></div>
+
+<hr class="sep-both">
+
+## Terminal-related
+
+++++++
+
+[**echo/printf** - print text]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: print text, usually for debugging or displaying instructions/results
+
+**Example** 🔥:
+
+```bash
+$ echo Hello, World
+$ echo 'Hello, World'
+$ echo "Hello, World"
+```
+</div><div>
+
+**-n** 🧪: to remove the newline
+
+```bash
+$ echo -n "Hello, World"
+```
+
+**alt** ⚔️: You can also use `printf "format" arguments`:
+
+```bash
+printf "%s\n" "Hello, World"
+```
+</div></div>
+
+[**cat/tac** - display a file]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚:
+
+* `cat` is commonly used display a file.
+* `cat` is intended to be used to merge multiple files in one, and display the output.
+
+👉 `tac` is printing the file from the end to the start. And concatenating files after reversing their lines.
+
+**Example** 🔥:
+
+```bash!
+$ cat file
+# the content here
+```
+
+```bash!
+# read for stdin
+$ cat -
+```
+</div><div>
+
+➡️ Concatenating files
+
+```bash!
+$ cat f0 f1
+f0
+f1 Line 1
+f1 Line 2
+```
+
+```bash!
+$ tac f0 f1
+f0
+f1 Line 2
+f1 Line 1
+```
+
+Create a file f2 with input from f0, f1, and stdin.
+
+```bash!
+$ cat f0 f1 - > f2
+```
+</div></div>
+
+[**less/more** - read a file]
+
+👻 To-do 👻
+
+[**clear** - clear the terminal]
+
+👻 To-do 👻
+
+[**shopt** - configure the shell]
+
+👻 To-do 👻
+
+++++++
+
+<hr class="sep-both">
+
+## Computer information
+
+++++++
+
+[**id** - xxx]
+
+👻 To-do 👻
+
+[**whoami** - xxx]
+
+👻 To-do 👻
+
+++++++
 
 <hr class="sep-both">
 
@@ -23,20 +134,6 @@
 👻 To-do 👻
 
 [**snap** - package manager]
-
-👻 To-do 👻
-
-++++++
-
-Learn how your machine:
-
-++++++
-
-[**id** - xxx]
-
-👻 To-do 👻
-
-[**whoami** - xxx]
 
 👻 To-do 👻
 
@@ -76,34 +173,6 @@ $ pwd
 👻 To-do 👻
 
 [**rm/rmdir** - delete]
-
-👻 To-do 👻
-
-++++++
-
-<hr class="sep-both">
-
-## Terminal management
-
-++++++
-
-[**echo/printf** - print text]
-
-👻 To-do 👻
-
-[**cat/tac** - print a file]
-
-👻 To-do 👻
-
-[**less/more** - read a file]
-
-👻 To-do 👻
-
-[**clear** - clear the terminal]
-
-👻 To-do 👻
-
-[**shopt** - configure the shell]
 
 👻 To-do 👻
 
