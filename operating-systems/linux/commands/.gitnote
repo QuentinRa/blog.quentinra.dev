@@ -13,3 +13,15 @@
 ```bash!
 $ XXX
 ```
+
+=> with a div
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚:
+
+**Example** 🔥:
+
+```bash!
+```
+</div></div>

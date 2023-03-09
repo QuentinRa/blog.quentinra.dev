@@ -930,7 +930,6 @@ Stuff that I found, but never read/used yet.
 * OSS Course
 * [gentoo](https://www.gentoo.org/)
 * [linux-securite](https://wonderfall.space/linux-securite/)
-* what is the difference between [snap](https://snapcraft.io/)/package/dpkg...
 * ELF
 * Cron `cron` process to schedule tasks, with crontab/crontab -l / Automated tasks in Linux / https://crontab-generator.org/ / https://crontab.guru/ / edit `crontab -e` / https://www.crontabs.org/
 * [tcsh](https://www.ibm.com/docs/en/zos/2.3.0?topic=shells-writing-tcsh-shell-scripts)

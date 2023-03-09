@@ -217,38 +217,33 @@ $ uname -a # all
 
 **Example** 🔥:
 
-👉 Install a package and its dependencies
+👉 Install, Update, Remove a package
 
 ```ps
 $ sudo apt install aptitude
+$ sudo apt update aptitude
+$ sudo apt upgrade aptitude
+$ sudo apt remove aptitude
 ```
 
-👉 Download updates for all packages/one package
+👉 Download updates for/upgrade all packages
 
 ```ps
 $ sudo apt update
-$ sudo apt update aptitude
+$ sudo apt upgrade
 ```
+</div><div>
 
 👉 Update the OS
 
 ```ps
 $ sudo apt dist-upgrade
 ```
-</div><div>
 
-👉 Upgrade all packages/one package
-
-```ps
-$ sudo apt upgrade
-$ sudo apt upgrade aptitude
-```
-
-👉 Remove a package
+👉 Remove unused dependencies
 
 ```ps
-$ sudo apt remove aptitude
-$ sudo apt auto-remove # unused dependencies
+$ sudo apt auto-remove
 ```
 
 👉 When installing packages, you are prompted `Do you want to continue? [Y/n]` <small>(you need to enter `Y`)</small>. You can skip this, using `-y`.
@@ -278,11 +273,11 @@ $ sudo aptitude install nano
 ```
 </div></div>
 
-[**dkpg** - package manager]
+[**dpkg** - package manager]
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚: todo
+**Usage** 🐚: `apt` uses the lower-level package manager `dpkg` to install packages. Some developers may directly interact with it.
 
 **Example** 🔥:
 
@@ -293,7 +288,23 @@ $ sudo dpkg -i xxx.deb
 
 [**snap** - package manager]
 
-👻 To-do 👻
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: snap packages are a modern way to share application. They contain all dependencies, and support automatic updates. Some cons are their larger size and sometimes there are performance issues.
+
+👉 Find [Snap packages here](https://snapcraft.io/).
+</div><div>
+
+**Example** 🔥:
+
+```ps
+$ sudo apt update
+$ sudo apt install snapd
+$ sudo snap install core
+$ sudo snap refresh core
+$ sudo snap install --classic xxx
+```
+</div></div>
 
 ++++++
 
@@ -536,6 +547,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [old](_old.md)
+* rpm, yum, dnf, pacman
 </div><div>
 
 </div></div>
