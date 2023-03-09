@@ -750,6 +750,84 @@ $ delgroup group_name
 ```
 </div></div>
 
+[<br>]
+
+[**chmod** - file permissions]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: manage a file/folder permissions
+
+**Example** 🔥:
+
+Use <kbd>+</kbd> to grant perms..
+
+```bash
+$ chmod u+x target
+$ chmod g+rw target
+$ chmod ug+r target
+$ chmod g+x,o+rx target
+```
+
+Grant to <kbd>a</kbd> <smalll>(all, alias of <kbd>ugo</kbd>)</small>
+
+```bash
+$ chmod +x target
+$ chmod a+x target # same
+$ chmod ugo+x target # same
+```
+</div><div>
+
+Use <kbd>-</kbd> instead of <kbd>+</kbd> to revoke permissions.
+
+```bash
+$ chmod -x target
+$ chmod u-x target
+$ chmod ug-rw target
+```
+
+Grant "perms" using the shortcut number.
+
+```ps
+# u=rwx, g=rx, o=x
+$ chmod 751 target
+# u=rwx, g=, o=
+$ chmod 700 target
+```
+</div></div>
+
+[**chown** - file ownership]
+
+**Usage** 🐚: change the owner of a file/folder
+
+**Example** 🔥:
+
+```ps
+$ ls -l toto.txt
+-rw-r-xr-x 1 n1 n [...] toto.txt 
+$ chown n2 toto.txt
+-rw-r-xr-x 1 n2 n [...] toto.txt
+$ chown n2:m toto.txt
+-rw-r-xr-x 1 n2 m [...] toto.txt
+```
+
+You may use `-R` <small>(recursive)</small>, and `-h` <small>(do not deference symbolic links)</small>.
+
+[**umask** - default permissions]
+
+**Usage** 🐚: A call to `umask` return the **missing** permissions with a leading `0`.
+
+**Example** 🔥:
+
+```ps
+$ umask
+0026 # meaning 751 by default
+$ umask -s
+u=rwx,g=rx,o=r
+$ umask 0026
+$ umask u=rwx,g=rx,o=r
+```
+
 ++++++
 
 <hr class="sep-both">
