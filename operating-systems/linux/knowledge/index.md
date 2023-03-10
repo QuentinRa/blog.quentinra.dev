@@ -142,8 +142,10 @@ There are 3 well-known levels of permissions 🔒
 * <kbd>w</kbd> (2): can write <small>(=can edit+save, can create)</small>
 * <kbd>x</kbd> (1): can execute a script, can move through a folder
 
-Giving us something like: `u=r+w, g=r, o=r`.
+Giving us something like: `u=r+w, g=r, o=r`. Instead of letters, we usually use numbers, as it's shorter. We could write `u=6, g=4, o=4` which can be shortened again to `644`.
 </div><div>
+
+#### Sudo
 
 There is a super-user 🦸, usually called **root**, that has absolute control over the machine 👑. They can delegate their privileges to users called **sudoers**. The command to execute something "as root" is:
 
@@ -153,7 +155,53 @@ $ sudo cat /etc/shadow
 ```
 
 ➡️ See `man sudo_root`.
+
+#### See permissions using ls
+
+<p></p>
+
+![Permissions Linux](_images/perms.png)
+
+* The first character is the type of the file
+* The 3 following letters `rw-` are the permissions of `u`: read+write.
+* The 3 following letters `r--` are the permissions of `g`: read.
+* The 3 following letters `r--` are the permissions of `o`: read.
+* Ignore the `1`
+* The following string `listro` is the name of the user `u`
+* The following string `listro` is the name of the group `g`
 </div></div>
+
+<details class="details-n">
+<summary>The 3 not well-known permissions</summary>
+
+<table class="table table-bordered table-striped border-dark mt-4">
+<thead>
+<tr><th></th><th>SUID bit (on user)</th><th>SGID bit (on group)</th><th>Sticky bit (on others)</th></tr>
+</thead>
+<tbody>
+
+<tr><td>File</td><td>
+This file will be executed using the permissions of its owner.
+</td><td>
+This file will be executed using the permissions of its group owner.
+</td><td></td>
+</tr>
+<tr><td>Folder</td><td></td><td>
+The group of newly created sub-folders will be the same as the folder with the SGID bit.
+</td><td>
+User can't delete files belonging to another user.
+</td></tr>
+
+<tr>
+<td></td>
+<td>Add: <code>u+s</code> Remove: <code>u-s</code><br>Ex: <code>-rwsr--r--</code> </td>
+<td>Add: <code>g+s</code> Remove: <code>g-s</code><br>Ex: <code>-rwsr-sr--</code> </td>
+<td>Add: <code>o+t</code> Remove: <code>o-t</code><br>Ex: <code>-rwxrw-rwt</code> </td>
+</tr>
+</tbody></table>
+
+If you are giving one of these, in a context where you couldn't (such as giving `s` to `u`, while `u` don't have `x`), then the permission would be displayed in uppercase, indicating an error.
+</details>
 
 <hr class="sep-both">
 
