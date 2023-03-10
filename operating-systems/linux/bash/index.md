@@ -23,9 +23,9 @@ The [man page for bash](https://linux.die.net/man/1/bash) is explaining everythi
 
 <hr class="sr">
 
-## Debugging
+## Debugging 🪲
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2 mt-4"><div>
 
 ```bash
 $ bash -x script.sh
@@ -65,7 +65,7 @@ Not debugged
 
 <hr class="sl">
 
-## History expansion
+## History expansion 🕊️
 
 <div class="row row-cols-md-2"><div>
 
@@ -111,7 +111,7 @@ There is also `!#` which repeats the command-line typed so far. It seems kinda u
 
 <hr class="sr">
 
-## Braces expansion
+## Braces expansion 🍁
 
 <div class="row row-cols-md-2"><div class="align-self-center">
 
@@ -145,9 +145,9 @@ done
 
 <hr class="sl">
 
-## Enhanced control-flow structures
+## Enhanced control-flow structures 🚀
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2 mt-4"><div>
 
 * You can use `&&` (AND), and `&&` (OR)
 * You can use `>`... to compare numbers/strings
@@ -185,7 +185,7 @@ done
 
 <hr class="sr">
 
-## Arrays
+## Arrays 🗃️
 
 <div class="row row-cols-md-2"><div>
 
@@ -243,7 +243,7 @@ done
 
 <hr class="sl">
 
-## Random notes
+## Random notes 🎉
 
 <div class="row row-cols-md-2"><div>
 
