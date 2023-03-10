@@ -214,36 +214,6 @@ If you are giving one of these, in a context where you couldn't (such as giving 
 
 ## Paths
 
-<details class="details-e">
-<summary>Absolute and relative paths</summary>
-
-* A path starting by the root is called **absolute path** (`chemin absolu`).
-* A path that is not absolute, is called **relative path** (`chemin relatif`). We can create such paths using shortcuts:
-
-<table class="table table-bordered table-striped border-dark">
-<thead>
-<tr><th>Shortcut</th><th>Description</th><th>Example</th></tr>
-</thead>
-<tbody>
-
-<tr><td><kbd>.</kbd> (dot)</td><td>Path to <b>current</b> folder<br><small>(=output of <code>pwd</code>)</small></td><td>
-
-If the current folder is `/usr/toto/home/`, then `./toto.txt` is an alias for `/usr/toto/home/toto.txt`.
-</td></tr>
-<tr><td><kbd>..</kbd> (2 dots)</td><td><b>Parent</b> folder of the current folder.</td><td>
-
-If the current folder is `/usr/toto/home/`, then `..` is an alias for `/usr/toto/`.
-
-* `root` is its own parent (`/../` is the same as `/`)
-
-</td></tr>
-<tr><td><kbd>~</kbd> (tilde)</td><td>Path to user <b>home</b></td><td>
-
-If the home of the current user is `/usr/user/home/`, then `~` would mean the exact same path.
-</td></tr>
-</tbody></table>
-</details>
-
 <div class="row row-cols-md-2"><div>
 <details class="details-e">
 <summary>Notable Linux files/folders</summary>
@@ -277,20 +247,11 @@ In `ls -l` output, the first character indicates the kind of file.
 <details class="details-e">
 <summary>Notes</summary>
 
-* Following slashes are merged into one <small>(ex: `///` is the same as `/`)</small>
 * "Everything is a file": hard drive (/mnt/), a terminal (/dev/), a command (/bin/)...
 * **Remember** that if you have spaces in your paths, then you must either quote them, or use `\` before any space.
 * If you met a crazy guy that named something starting with a `-`, then you need to use `--` before the weird filename. For instance: `cp -- -filename`.
 </details>
 </div><div>
-<details class="details-e">
-<summary>Commands</summary>
-
-* <kbd>pwd</kbd>: see the path of the current folder
-* <kbd>cd</kbd>: move to another folder
-* <kbd>ls</kbd>: to list every file/folder in a directory
-* <kbd>ls -a</kbd>: to list every file, including hidden files, in a directory
-</details>
 </div></div>
 
 <hr class="sr">

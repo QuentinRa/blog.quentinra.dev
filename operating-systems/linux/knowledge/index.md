@@ -103,17 +103,44 @@ $ pwd
 ➡️ The root folder (`racine`) <small>(similar to C: on Windows)</small> contains every other folder. It's the leading `/`.
 </div><div>
 
-#### Special/Known folders
+#### Absolute and relative paths
 
-* **user home** (<code>domicile</code>) 🏡: each user has is own folder, with their documents... A common path: <code>/home/toto/</code>.
+A path starting by the root is called **absolute path** (`chemin absolu`). Otherwise, a path is called **relative path** (`chemin relatif`).
 
-➡️ See the environment variable `$HOME` and the file `/etc/passwd`.
+There are 3 shortcuts to avoid using absolute paths:
 
-* **Binaries** ⚒️: folders used to store commands... There are `/bin/`, `/usr/bin/`, and `/usr/local/bin/`.
+* <kbd>.</kbd> <small>(dot)</small>: will be replaced with the absolute path to the working directory. See the `pwd` command.
+* <kbd>..</kbd> <small>(dot dot)</small>: will be replaced with the parent folder of `.`
+* <kbd>~</kbd> <small>(tilde)</small>: path to user home, same as `$HOME`
 
-#### Special/Known files
+🦐 `root` is its own parent <small>(`/../` is the same as `/`)</small>.
 
-* **hidden files** 🤐: Any file starting with <code>.</code> (dot), such as <code>.config</code>.
+🧪 Following slashes are merged <small>(`///` becomes `/`)</small>.
+</div></div>
+
+<hr class="sep-both">
+
+## Special files and folders
+
+<div class="row row-cols-md-2"><div>
+
+#### Special folders
+
+**user home** (<code>domicile</code>) 🏡: each user has is own folder, with their documents... A common path: <code>/home/toto/</code>.
+
+👉 See the environment variable `$HOME` and the file `/etc/passwd`.
+
+<br>
+
+**Binaries** ⚒️: folders used to store commands... There are `/bin/`, `/usr/bin/`, and `/usr/local/bin/`.
+</div><div>
+
+#### Special files
+
+**hidden files** 🤐: Any file starting with <code>.</code> (dot), such as <code>.config</code>.
+
+<br>
+
 </div></div>
 
 <hr class="sep-both">
