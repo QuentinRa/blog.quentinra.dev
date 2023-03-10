@@ -227,55 +227,28 @@ XXX
 * **Remember** that if you have spaces in your paths, then you must either quote them, or use `\` before any space.
 * If you met a crazy guy that named something starting with a `-`, then you need to use `--` before the weird filename. For instance: `cp -- -filename`.
 
-<hr class="sr">
+<hr class="sep-both">
 
-## Environment variables
+## Special files and folders
 
 <div class="row row-cols-md-2"><div>
 
-Environment variables (`Variables d’environnement`) are variables globally, mostly used by commands/applications to access information about the system, save configurations... There are a few well-known ones
+#### Special folders
 
-* **HOME**: path to the current user home
-* **USER**: username of the current user
-* **LANG**: language of the current user
-* **SHELL**: path to the shell
-* **PWD**: path to the current folder
-* **RANDOM**: return a random value
-* **DISPLAY**: [identify display](https://unix.stackexchange.com/questions/16815/what-does-display-0-0-actually-mean)
+**user home** (<code>domicile</code>) 🏡: each user has is own folder, with their documents... A common path: <code>/home/toto/</code>.
 
-And, there is **PATH**. This variable is used to store a list of folders. When you write a command on Linux, then **the Shell will look for the command's file in the PATH**, starting from the first folder, up to the last folder.
+See the environment variable `$HOME` and the file `/etc/passwd`.
 
-* On Windows, folders are separated with `;`
-* On Linux, folders are separated with `:`
+<br>
 
+**Binaries** ⚒️: folders used to store commands... There are `/bin/`, `/usr/bin/`, and `/usr/local/bin/`.
 </div><div>
 
-Print all environment variables
+#### Special files
 
-```bash
-$ env
-$ printenv
-```
+**hidden files** 🤐: Any file starting with <code>.</code> (dot), such as <code>.config</code>.
 
-Print the value of one environment variable
-
-```bash
-$ echo $PATH
-$ printenv PATH
-$ env | grep "^PATH="
-```
-
-Set an environment variable
-
-```bash
-$ export VAR_NAME=value
-```
-
-Add `/home/toto/bin` to the PATH
-
-```bash
-$ export PATH=/home/toto/bin:$PATH
-```
+<br>
 
 </div></div>
 

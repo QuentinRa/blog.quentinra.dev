@@ -3,3 +3,5 @@ Separator => \ (backslash)
 root (racine) => C:\
 (user) home (domicile) => C:\Users\toto\
 "Program files" => C:\Program Files\ C:\Program Files (x86)\ %appdata%
+
+On Windows, folders are separated with `;`

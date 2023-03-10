@@ -126,26 +126,51 @@ A path starting by the root is called **absolute path**. Otherwise, a path is ca
 
 <hr class="sep-both">
 
-## Special files and folders
+## Environment variables
 
 <div class="row row-cols-md-2"><div>
 
-#### Special folders
+Environment variables (`Variables d’environnement`) are global variables, mostly used by commands/applications to access information about the system, save configurations...
 
-**user home** (<code>domicile</code>) 🏡: each user has is own folder, with their documents... A common path: <code>/home/toto/</code>.
+* **HOME**: path to the current user home
+* **USER**: username of the current user
+* **LANG**: language of the current user
+* **SHELL**: path to the shell
+* **PWD**: path to the current folder
+* **RANDOM**: return a random value
+* **DISPLAY**: [identify display](https://unix.stackexchange.com/questions/16815/what-does-display-0-0-actually-mean)
 
-See the environment variable `$HOME` and the file `/etc/passwd`.
+And, there is **PATH**. This variable is used to store a list of folders. When you write a command on Linux, then **the shell will look for the command's file in the PATH**, starting from the first folder inside.
 
-<br>
-
-**Binaries** ⚒️: folders used to store commands... There are `/bin/`, `/usr/bin/`, and `/usr/local/bin/`.
+➡️ On Linux, folders in the PATH are separated with `:`.
 </div><div>
 
-#### Special files
+Print all environment variables
 
-**hidden files** 🤐: Any file starting with <code>.</code> (dot), such as <code>.config</code>.
+```bash
+$ env
+$ printenv
+```
 
-<br>
+Print the value of one environment variable
+
+```bash
+$ echo $PATH
+$ printenv PATH
+$ env | grep "^PATH="
+```
+
+Set an environment variable
+
+```bash
+$ export VAR_NAME=value
+```
+
+Add `/home/toto/bin` to the PATH
+
+```bash
+$ export PATH=/home/toto/bin:$PATH
+```
 
 </div></div>
 
