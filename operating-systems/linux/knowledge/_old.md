@@ -214,10 +214,6 @@ If you are giving one of these, in a context where you couldn't (such as giving 
 
 ## Paths
 
-<div class="row row-cols-md-2"><div>
-<details class="details-e">
-<summary>Notable Linux files/folders</summary>
-
 * `/etc` (folder): "commonplace location to store system files that are used by your operating system"
 * `/dev/null` (file): an empty file, a sort of trash file in which everything you write inside is deleted.
 * `/etc/shadow` (file): username, and their hashed password
@@ -225,34 +221,11 @@ If you are giving one of these, in a context where you couldn't (such as giving 
 * `/var/log/` (folder): log files
 * `/mnt` (folder): mounted device/hard drives (D:, USB...)
 * `/tmp` (folder): a trash folder cleaned on reboot
-</details>
-</div><div>
-<details class="details-e">
-<summary>Regular, and non-regular files</summary>
 
-In `ls -l` output, the first character indicates the kind of file.
+XXX
 
-```none
--rw-r--r--
-```
-
-* `d`: a folder
-* `s`: a symbolic link
-* `-`: a regular file (`fichier normal/régulier`)
-* There is also `b`, `c`...
-</details>
-</div></div>
-
-<div class="row row-cols-md-2"><div>
-<details class="details-e">
-<summary>Notes</summary>
-
-* "Everything is a file": hard drive (/mnt/), a terminal (/dev/), a command (/bin/)...
 * **Remember** that if you have spaces in your paths, then you must either quote them, or use `\` before any space.
 * If you met a crazy guy that named something starting with a `-`, then you need to use `--` before the weird filename. For instance: `cp -- -filename`.
-</details>
-</div><div>
-</div></div>
 
 <hr class="sr">
 

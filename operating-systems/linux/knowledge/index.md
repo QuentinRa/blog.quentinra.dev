@@ -93,21 +93,27 @@ $ ls /<TAB>
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-A **path** 🛣️ (`chemin`) is a suite of one or more folders (`dossier/catalogue`) 📂 that may lead to a file (`fichier`) 📄. They are separated by a separtor which is: `/` <small>(slash)</small>.
+A **path** 🛣️ is a suite of one or more folders 📂 that may lead to a regular file 📄. They are separated by a separtor which is: `/` <small>(slash)</small>.
 
 ```ps
 $ pwd
 /usr/home/toto/Documents/
 ```
 
-➡️ The root folder (`racine`) <small>(similar to C: on Windows)</small> contains every other folder. It's the leading `/`.
+The root folder <small>(similar to C: on Windows)</small> contains every other folder. It's the leading `/` of every path.
+
+<br>
+
+#### Regular and non-regular files
+
+On Linux, "everything is a file". Folders, hard drives <small>(/mnt/)</small>, terminals <small>(/dev/)</small>, commands <small>(/bin/)</small>... Regular files are "normal" files. 
+
+See the first character of the output of `ls -l`.
 </div><div>
 
 #### Absolute and relative paths
 
-A path starting by the root is called **absolute path** (`chemin absolu`). Otherwise, a path is called **relative path** (`chemin relatif`).
-
-There are 3 shortcuts to avoid using absolute paths:
+A path starting by the root is called **absolute path**. Otherwise, a path is called **relative path**. There are 3 shortcuts:
 
 * <kbd>.</kbd> <small>(dot)</small>: will be replaced with the absolute path to the working directory. See the `pwd` command.
 * <kbd>..</kbd> <small>(dot dot)</small>: will be replaced with the parent folder of `.`
@@ -128,7 +134,7 @@ There are 3 shortcuts to avoid using absolute paths:
 
 **user home** (<code>domicile</code>) 🏡: each user has is own folder, with their documents... A common path: <code>/home/toto/</code>.
 
-👉 See the environment variable `$HOME` and the file `/etc/passwd`.
+See the environment variable `$HOME` and the file `/etc/passwd`.
 
 <br>
 
