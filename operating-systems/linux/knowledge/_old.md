@@ -110,20 +110,6 @@ $ ls toto && ls tata
 ## Permissions, and users
 
 <div class="row row-cols-md-2"><div>
-
-There are 3 well-known levels of permissions
-
-* <kbd>r</kbd> (4): can read
-* <kbd>w</kbd> (2): can write <small>(=can edit+save, can create)</small>
-* <kbd>x</kbd> (1): can execute a script, can move through a repository
-
-Permissions are assigned on a file/folder, and are applied according to the target of the permissions (ownership)
-
-* <kbd>u</kbd>: user, applied to the user (owner)
-* <kbd>g</kbd>: group, applied to the main group of the user <small>(ex: students_2022)</small>
-* <kbd>o</kbd>: others, applied to everyone else
-
-Permissions are something is `u=r+w, g=r, o=r`, which means that user can read+write, group can read, and others can read too.
 </div><div>
 
 You may have noticed a number next to every kind of permission. This is because permissions are coded on 3 bits, which means that they can take 8 values <small>(000, 001, 010...)</small>.
@@ -140,35 +126,14 @@ You may have noticed a number next to every kind of permission. This is because 
 **Why?** We are usually using numbers instead of letters, because it's shorter. The syntax can be shortened to `u=6, g=4, o=4`, and because the order `ugo` is fixed, we can shorten it again to `644`. **This shortened version is the most used one** <small>(in commands, verbally...)</small>.
 </div></div>
 
-<details class="details-e">
-<summary>Root / Administrator</summary>
-
-There is a super-user, usually called root, that has absolute control over the machine. `root` can delegate this power to others by making them a part of the "sudoers" group. The command to do an action using elevated privileges is different according to the Linux distribution, but the command **sudo** is the most well-known one (check `man sudo_root`).
-
-![super-user/sudo bash](_images/sudo.png)
-
-**Notice the # before every command**: in some tutorials, including ours, you will see a `#` instead of the usual `$` before a command needing elevated privileges.
-</details>
-
 <div class="row row-cols-md-2"><div>
-
-<details class="details-e">
-<summary>Commands</summary>
-
-* <kbd>ls -l</kbd>: to view the permissions of a file/folder
-* <kbd>stat</kbd>: to view the permissions of a file/folder
-* <kbd>chmod</kbd>: to change the permissions of a file/folder
-* <kbd>umask</kbd>: to change the default permissions when a file/folder is created
-* <kbd>chown</kbd>: to change the owner of a file/folder
-</details>
-</div><div>
 
 <details class="details-e">
 <summary>Practical knowledge: <code>ls -l</code> to see permissions</summary>
 
 ![Permissions Linux](_images/perms.png)
 
-* Ignore the first `-` for now
+* The first character is the type of the file
 * The 3 following letters `rw-` are the permissions of `u`: read+write.
 * The 3 following letters `r--` are the permissions of `g`: read.
 * The 3 following letters `r--` are the permissions of `o`: read.

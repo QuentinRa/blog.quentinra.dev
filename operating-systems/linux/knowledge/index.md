@@ -126,6 +126,37 @@ A path starting by the root is called **absolute path**. Otherwise, a path is ca
 
 <hr class="sep-both">
 
+## Users and permissions
+
+<div class="row row-cols-md-2"><div>
+
+Permissions are assigned on a file/folder, and are applied according to the target 🎯 of the permissions (ownership)
+
+* <kbd>u</kbd>: user, applied to the user (owner)
+* <kbd>g</kbd>: group, applied to the main group of the user <small>(ex: students_2022)</small>
+* <kbd>o</kbd>: others, applied to everyone else
+
+There are 3 well-known levels of permissions 🔒
+
+* <kbd>r</kbd> (4): can read
+* <kbd>w</kbd> (2): can write <small>(=can edit+save, can create)</small>
+* <kbd>x</kbd> (1): can execute a script, can move through a folder
+
+Giving us something like: `u=r+w, g=r, o=r`.
+</div><div>
+
+There is a super-user 🦸, usually called **root**, that has absolute control over the machine 👑. They can delegate their privileges to users called **sudoers**. The command to execute something "as root" is:
+
+```ps
+# execute "cat [...]" as administrator
+$ sudo cat /etc/shadow
+```
+
+➡️ See `man sudo_root`.
+</div></div>
+
+<hr class="sep-both">
+
 ## Environment variables
 
 <div class="row row-cols-md-2"><div>
