@@ -25,6 +25,70 @@ Inside the CLI, we can run commands interpreted by a **shell** 🐚.  There are 
 
 <hr class="sep-both">
 
+## Commands 
+
+<div class="row row-cols-md-2"><div>
+
+A command has **a name**, which may be followed by **arguments**, including some usually called **flag**/**switches** (`options`). The difference between both is that a flag starts with a `-`.
+
+Below are some examples with the command `ls`:
+
+<div class="row row-cols-md-2"><div>
+
+No arguments.
+
+```ps
+$ ls
+```
+
+One argument.
+
+```ps
+$ ls toto.txt
+$ ls "toto.txt"
+```
+</div><div>
+
+Two flags.
+
+```ps
+$ ls -l -a
+$ ls -la
+```
+
+Two arguments with one flag.
+
+```ps
+$ ls -la toto/
+```
+</div></div>
+</div><div>
+
+A few takeaways:
+
+* 🛣️ you are writing commands right after the `$`
+* 👉 press <kbd>ENTER</kbd> to execute a command
+* 💥 press <kbd>CTRL-C</kbd> to cancel/kill a command
+* ✅ press <kbd>CTRL-D</kbd> to end the input
+* 🚀 Usually, flags can be merged <small>(ex: `-l -a` is the same as `-la`)</small>.
+* 🗺️ Most commands have an option "help": `-h`, `-help`, or `--help`
+
+🌍 **Browse the manual** (`man`) to learn more about some command
+
+```bash
+$ man ls
+```
+
+🤘 Use **tab key to autocomplete** commands/paths
+
+```bash
+$ ls /<TAB>
+# will display every path starting with "/"
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

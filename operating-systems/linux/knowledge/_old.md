@@ -36,42 +36,6 @@ bash > command_at_least_working_in_bash
 
 ## Commands
 
-<div class="row row-cols-md-2"><div>
-
-A command is **a name**, which may be followed by **arguments**, including some usually called **flag**/**switches** (`options`). The difference between both is that a flag starts with a `-`.
-
-* you are writing commands right after the `$`
-* press <kbd>ENTER</kbd> to execute a command
-* press <kbd>CTRL-C</kbd> to cancel/kill a command
-* press <kbd>CTRL-D</kbd> to end the input
-* Usually, flags can be merged <small>(ex: `-l -a` is the same as `-la`)</small>.
-* Most commands have an option "help": `-h`, `-help`, or `--help`
-
-</div><div>
-
-```bash
-$ ls
-$ ls toto.txt
-$ ls "toto.txt"
-$ ls -l -a
-$ ls -la
-$ ls -la toto/
-```
-
-**There is some documentation for most commands.**
-
-```bash
-$ man ls
-```
-
-**Use tab key to autocomplete commands/paths**
-
-```bash
-$ ls /<TAB>
-# will display every path starting with "/"
-```
-</div></div>
-
 <details class="details-e">
 <summary>Quoting in bash</summary>
 
