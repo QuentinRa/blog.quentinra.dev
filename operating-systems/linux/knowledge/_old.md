@@ -105,28 +105,6 @@ $ ls toto && ls tata
 </div></div>
 </details>
 
-<hr class="sl">
-
-## Text Editors
-
-<div class="row row-cols-md-2"><div>
-
-Text editors, or file editors, are tools allowing you to view, and edit a file. If you have a graphical interface, you may use the usual tools: vscode, sublime text, JetBrains' IDEs, emacs... But, if you only have a terminal, the most used are
-
-* `vim` <small>(there is a course on this website)</small>, or `neovim`
-* `nano`
-* `emacs` <small>(vim > emacs, change my mind 😒)</small>
-</div><div>
-
-I think nano is the easiest to learn.
-
-* **Open a file in nano**: `nano file.txt` <small>(created if it does not exist)</small>
-* **Save a file in nano**: `CTRL+S`
-* **Quit nano**: `CTRL+X`
-
-If you only need to see the contents of a file, then you can use the commands `cat`, `less`, `head`, and `tail`.
-</div></div>
-
 <hr class="sr">
 
 ## Permissions, and users
@@ -235,58 +213,6 @@ If you are giving one of these, in a context where you couldn't (such as giving 
 <hr class="sl">
 
 ## Paths
-
-A **path** (`chemin`) is a suite of one or more folders (`dossier/catalogue`) that may lead to a file (`fichier`).
-
-<details class="details-e">
-<summary>Notions: Path, Separator, root, home...</summary><br>
-
-<table class="table table-bordered table-striped border-dark">
-<thead>
-<tr><th>Notion</th><th>Windows</th><th>Linux</th></tr>
-</thead>
-<tbody>
-
-<tr><td><b>A path</b> (<code>chemin</code>)
-</td><td><code>C:\Users\toto\Documents\</code></td><td><code>/usr/home/toto/Documents/</code></td></tr>
-
-<tr><td><b>Separator</b><br>
-Something that is separating folders in a path.
-</td><td><code>\</code> (backslash)</td><td><code>/</code> (slash)</td></tr>
-
-<tr><td><b>root</b> (<code>racine</code>)<br>
-The folder is containing every other folder.
-</td><td><code>C:\</code></td><td><code>/</code></td></tr>
-
-<tr><td><b>(user) home</b> (<code>domicile</code>)<br>
-The folder with every file belonging to "user".
-</td><td><code>C:\Users\toto\</code></td><td><p><code>/usr/toto/home/</code></p>
-
-* The path to the home is stored inside `$HOME`
-* The home of every user is recorded in `/etc/passwd`
-</td></tr>
-
-<tr><td><b>hidden files</b> (<code>fichiers cachés</code>)<br>
-Files that are not visible by default.
-</td><td>❌ manually defined<td>Any file starting with <code>.</code> (dot), such as <code>.config</code></td></tr>
-
-<tr><td><b>"Program files"</b><br>
-Folders used to store programs/commands.
-</td>
-<td>
-<code>C:\Program Files\</code><br>
-<code>C:\Program Files (x86)\</code><br>
-<code>%appdata%</code>
-</td>
-<td>
-<code>/bin/</code><br>
-<code>/usr/bin/</code><br>
-<code>/usr/local/bin/</code>
-</td>
-</tr>
-</tbody>
-</table>
-</details>
 
 <details class="details-e">
 <summary>Absolute and relative paths</summary>

@@ -89,6 +89,35 @@ $ ls /<TAB>
 
 <hr class="sep-both">
 
+## File system
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+A **path** 🛣️ (`chemin`) is a suite of one or more folders (`dossier/catalogue`) 📂 that may lead to a file (`fichier`) 📄. They are separated by a separtor which is: `/` <small>(slash)</small>.
+
+```ps
+$ pwd
+/usr/home/toto/Documents/
+```
+
+➡️ The root folder (`racine`) <small>(similar to C: on Windows)</small> contains every other folder. It's the leading `/`.
+</div><div>
+
+#### Special/Known folders
+
+* **user home** (<code>domicile</code>) 🏡: each user has is own folder, with their documents... A common path: <code>/home/toto/</code>.
+
+➡️ See the environment variable `$HOME` and the file `/etc/passwd`.
+
+* **Binaries** ⚒️: folders used to store commands... There are `/bin/`, `/usr/bin/`, and `/usr/local/bin/`.
+
+#### Special/Known files
+
+* **hidden files** 🤐: Any file starting with <code>.</code> (dot), such as <code>.config</code>.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
