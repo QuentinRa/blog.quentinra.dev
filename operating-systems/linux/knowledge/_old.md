@@ -149,26 +149,6 @@ See the environment variable `$HOME` and the file `/etc/passwd`.
 
 <hr class="sl">
 
-## Glob-patterns, and regex
-
-<hr>
-
-<div class="row row-cols-md-2"><div>
-</div><div>
-
-Everything defined in `[]` is called a **charset**. If you want every character between 'a', and 'z', then you could write the charset `[a-z]`. There are pre-defined charsets if needed
-
-* `[[:digit:]]` which is `[0-9]`
-* `[[:upper:]]` which is `[A-Z]`
-* `[[:lower:]]` which is `[a-z]`
-* `[[:space:]]` which is `[ \n\t]`
-* `[[:alnum:]]` which is `[a-zA-Z0-9._]`
-
-Regex introduced **metacharacter** which are shortcut to these charsets: `\d` <small>(digit)</small>, `\w` <small>(alnum)</small>, `\s` <small>(whitespace...)</small>.... They also have their negative: `\D` <small>(non-digit)</small>, `\W` <small>(non-alnum: !#...)</small>, `\s` <small>(not whitespace/...)</small>.
-</div></div>
-
-<hr class="sr">
-
 ## Processes
 
 <div class="row row-cols-md-2"><div>
