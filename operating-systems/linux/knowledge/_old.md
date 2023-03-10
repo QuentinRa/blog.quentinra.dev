@@ -151,57 +151,9 @@ See the environment variable `$HOME` and the file `/etc/passwd`.
 
 ## Glob-patterns, and regex
 
-<details class="details-e">
-<summary>Regular expressions</summary>
-
-<div class="row row-cols-md-2"><div>
-
-**Regular expressions** (`expressions régulières`), commonly referred to as **regex**, are an enhanced version of glob-patterns used by tools such as `grep`, `sed`, and most, if not all, programming language.
-
-* Every glob-pattern exists too in regexes
-* But, `?` is now replaced with `.`
-
-And, some new tokens were introduced
-
-<table class="table table-bordered table-striped border-dark">
-<thead>
-<tr><th></th><th>Description</th></tr>
-</thead>
-<tbody>
-
-<tr><td><code>x?</code></td><td>an optional character 'x'</td></tr>
-<tr><td><code>x+</code></td><td>at least x times this character</td></tr>
-<tr><td><code>^x</code></td><td>lines starting with x</td></tr>
-<tr><td><code>[abc]</code></td><td>lines ending with x</td></tr>
-<tr><td><code>(x|y)</code></td><td>either x or y</td></tr>
-<tr><td><nobr><code>x{n,m}</code></nobr><br><nobr><code>x{n,}</code></nobr><br><nobr><code>x{,m}</code></nobr><br><nobr><code>x{n}</code></nobr></td><td>at least $n$ times x, up to $m$ times, leave either empty if no limit.<br>The last one means "exactly $n$" times.</td></tr>
-<tr><td><code>(ab)+</code></td><td>at least one time 'ab'</td></tr>
-</tbody></table>
-</div><div>
-
-Use [regex101](https://regex101.com/)/[regexr](https://regexr.com/), or similar websites to test your regexes.
-
-* <kbd>sed</kbd>: find, and replace matching text with some other text
-* <kbd>grep</kbd>: find matching text, or files having the matching text
-* <kbd>awk</kbd>: sort of `grep`
-* Many programming languages
-
 <hr>
 
-Something to note with regexes is the notion of **groups**. You can write some expression, and wrap it into escaped parenthesis `\(some_part_of_my_regex\)`. By doing so, you created a group, that may be later referred to as `$1`/`\1` if this was the first one. This is useful to extract some parts of the matching result.
-
-* <kbd>sed</kbd>
-* Many programming languages
-
-<hr>
-
-You can [train your skills in the 'catregex' room on TryHackMe](https://tryhackme.com/room/catregex).
-</div></div>
-</details>
-
 <div class="row row-cols-md-2"><div>
-
-Escape characters.
 </div><div>
 
 Everything defined in `[]` is called a **charset**. If you want every character between 'a', and 'z', then you could write the charset `[a-z]`. There are pre-defined charsets if needed
