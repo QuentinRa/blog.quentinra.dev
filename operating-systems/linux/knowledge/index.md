@@ -255,6 +255,105 @@ $ export PATH=/home/toto/bin:$PATH
 
 <hr class="sep-both">
 
+## Glob-patterns
+
+<div class="row row-cols-md-2"><div>
+
+A **glob-pattern** is an expression using **wildcards** (`motifs`), that when evaluated by the shell, will be replaced with a list of files.
+
+For instance, `*.h` will be replaced with every file -- and directory --, ending with `.h`. They are mostly used on commands taking too many filenames, in which you don't want to manually write all of them 😎.
+
+<table class="table table-bordered table-striped border-dark">
+<thead>
+<tr><th>Wildcards</th><th>Description</th></tr>
+</thead>
+<tbody>
+
+<tr><td><code>x</code> (a character)</td><td>the character 'x'</td></tr>
+<tr><td><code>*</code> (asterisk)</td><td>a possibly empty suite of characters</td></tr>
+<tr><td><code>?</code> (question mark)</td><td>one character</td></tr>
+<tr><td><code>[abc]</code></td><td>one character which is either a, b, or c.</td></tr>
+<tr><td><code>[^abc]</code><br><code>[!abc]</code></td><td>any character which is not a, nor b, nor c.</td></tr>
+</tbody></table>
+
+If you write the glob-pattern `a?c`, then it could be `abc`... But if you write `a\?c`, or `a[?]c`, then it will only match `a?c`. This is called "escaping".
+
+👉 Glob-patterns are pretty similar but different to **Regexes**.
+</div><div>
+
+Everything defined in `[]` is called a **charset**. If you want every character between 'a', and 'z', then you could write the charset `[a-z]`. There are pre-defined charsets if needed
+
+* `[[:digit:]]` which is `[0-9]`
+* `[[:upper:]]` which is `[A-Z]`
+* `[[:lower:]]` which is `[a-z]`
+* `[[:space:]]` which is `[ \n\t]`
+* `[[:alnum:]]` which is `[a-zA-Z0-9._]`
+
+<table class="table table-bordered table-striped border-dark">
+<thead>
+<tr><th>GP</th><th>Description</th><th>Examples</th></tr>
+</thead>
+<tbody>
+
+<tr><td><code>*</code></td><td>
+
+Anything
+</td><td>
+
+* &lt;nothing&gt;
+* folder
+* myFile.txt
+</td></tr>
+
+<tr><td><code>???</code></td><td>
+
+match a 3-characters string
+</td><td>
+
+abc
+</td></tr>
+
+<tr><td><code>toto*</code></td><td>
+
+A word starting with "toto"
+</td><td>
+
+* toto
+* toto1
+</td></tr>
+
+<tr><td><code>[0-9]*</code><br><code>[[:digit:]]*</code></td><td>
+
+a word starting with a digit
+</td><td>
+
+0ac
+</td></tr>
+
+<tr><td><code>[^ab]*</code><br><code>[!ab]*</code></td><td>
+
+match a string not starting with "a", nor "b"
+</td><td>
+
+downloads
+</td></tr>
+</tbody></table>
+</div></div>
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
