@@ -1490,7 +1490,7 @@ $ curl -I https://example.com
 
 **Example** 🔥:
 
-```bash
+```ps
 $ time sleep 5
 real    0m5.002s
 user    0m0.001s
@@ -1498,8 +1498,24 @@ sys     0m0.000s
 ```
 </div></div>
 
-++++++
+[<br>]
 
+[**xrandr** - display settings]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: set the size, orientation, brightness of the screen...
+
+**Example** 🔥:
+
+Set the brightness to "0.5"
+
+```ps
+$ xrandr --output DP-2 --brightness 0.5
+```
+</div></div>
+
+++++++
 
 <hr class="sep-both">
 
@@ -1513,4 +1529,6 @@ Stuff that I found, but never read/used yet.
 * rpm, yum, dnf, pacman
 * use of `-not`/`!` to negate a `find` option
 </div><div>
+
+* hexdump
 </div></div>
