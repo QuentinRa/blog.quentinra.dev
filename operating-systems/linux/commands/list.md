@@ -1525,10 +1525,60 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [old](_old.md)
+* `mktemp`
+* `ranger`
+* `hexdump`
 * rpm, yum, dnf, pacman
 * use of `-not`/`!` to negate a `find` option
+* pretty CSV ([article](https://www.stefaanlippens.net/pretty-csv.html))
+
+```bash
+wget https://github.com/alexhallam/tv/releases/download/1.4.30/tidy-viewer_1.4.30_amd64.deb
+sudo dpkg -i tidy-viewer_1.4.30_amd64.deb
+echo "alias tv='tidy-viewer'" >> ~/.bashrc
+source ~/.bashrc
+```
 </div><div>
 
-* hexdump
+* `find / -type f -a \( -perm -u+s -o -perm -g+s \) -ls`
+* `help`/`info`
+* `xargs`
+* `env X=val ./myScript`
+* `strace/strings` [link](https://jvns.ca/strace-zine-v3.pdf)
+
+<details class="details-e">
+<summary>Services</summary>
+
+`systemctl /bin/systemctl` allows us to interact with the systemd process/daemon.
+
+```bash
+sudo systemctl stop xxx.service 
+sudo vim /etc/systemd/system/xxx.service 
+sudo systemctl status xxx.service 
+sudo systemctl daemon-reload
+sudo systemctl start xxx.service
+sudo systemctl status xxx.service
+```
+
+```ini
+[Unit]
+Description="Some nice description here"
+
+[Service]
+ExecStart=/usr/local/bin/nodemon /home/bye/index.js
+WorkingDirectory=/home/bye/
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+; examples
+SyslogIdentifier=byebye
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
+```
+</details>
+
+* `getent` <sup>2</sup>: get an entry such as "passwd": `getent passwd` <small>(get entry)</small> instead of `cat /etc/passwd`
 </div></div>

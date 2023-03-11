@@ -352,6 +352,62 @@ $ ls toto || ls tata
 
 <hr class="sep-both">
 
+## Redirections
+
+<div class="row row-cols-md-2"><div>
+
+Redirections allow us to:
+
+* 🛁 fill `stdin` with a source such as a file
+* 🗃️ redirect `stdout` to a file
+* 🚩 redirect `stderr` to a file
+
+There are multiple and varied uses:
+
+* 🚀 fill commands needing user input with data from a file
+* 🧑‍🏭 store results that we took a long time to compute, to avoid losing them or having to compute them again
+* 🧯 redirect error to `/dev/null` <small>(discard errors)</small>
+* 🪲 store errors for debugging purposes
+* ...
+
+**Examples** 🔥:
+
+Redirect `stdout` to a file (save result)
+
+```bash
+$ echo "Hello, World" > myFile
+```
+</div><div>
+
+Append `stdout` to a file
+
+```bash
+$ echo "Hello, World" >> myFile
+```
+
+Use a file instead of user input
+
+```bash
+$ tee < original.txt
+Hello, World
+```
+
+Redirect errors to a file/discard them
+
+```bash
+$ cat not_found 2> onl_errors_will_be_stored_here
+$ cat not_found 2> /dev/null # discard them
+```
+
+Merge `stderr` with `stdout` <small>(uncommon usage)</small>
+
+```bash
+$ cat not_found 2>&1
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Special
 
 <div class="row row-cols-md-2"><div>
