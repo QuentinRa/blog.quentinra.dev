@@ -34,16 +34,6 @@ bash > command_at_least_working_in_bash
 
 <hr class="sr">
 
-## Commands
-
-You can execute a command inside another command <small>(nested)</small>
-
-```bash
-$ ls `echo ~` # ls ~
-$ ls $(echo ~) # ls ~
-```
-<hr class="sl">
-
 ## Paths
 
 * `/etc` (folder): "commonplace location to store system files that are used by your operating system"

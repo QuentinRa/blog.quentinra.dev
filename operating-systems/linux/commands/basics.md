@@ -352,13 +352,34 @@ $ ls toto || ls tata
 
 <hr class="sep-both">
 
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
+## Special
 
 <div class="row row-cols-md-2"><div>
 
-* subshell
+#### Command substitution
+
+Command substitution is mainly used in scripts, to store the result of a command inside a variable. In a nutshell, a command output is used as a parameter of another command: **xxx $(yyy)** or **xxx \`yyy\`**.
+
+**Example** 🔥: all of these commands are the same
+
+```ps
+$ ls ~
+$ ls `echo ~`
+$ ls $(echo ~)
+```
 </div><div>
 
+#### Subshell
+
+A subshell is a shell that is launched within another shell, allowing us to execute commands without changing the parent shell environment.
+
+**Example** 🔥: In the example below, we create a variable in a subshell, and print it. We also try to print the variable outside the subshell, but since the variable does not exist, the output is empty.
+
+```bash!
+$ (cat=toto; echo "1. $cat") && echo "2. $cat"
+1. toto
+2.
+```
+
+👉 It could be used to temporarily change location, set an environment variable for one command...
 </div></div>
