@@ -703,6 +703,50 @@ $ patch < f0.patch
 $ du -sh folder
 8.0K folder
 ```
+
+[<br>]
+
+[**zip/unzip/...** - zip files]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: zip/unzip a .zip.
+
+**Example** 🔥:
+
+```ps
+$ zip toto.zip f0 f1 f2
+$ unzip toto.zip
+```
+</div><div>
+
+View the contents of a zip
+
+```ps
+$ zipinfo toto.zip
+$ unzip -l toto.zip
+```
+</div></div>
+
+[**tar** - archive/unarchive]
+
+**Usage** 🐚: archive/unarchive tar.gz, gz, tgz...
+
+**Example** 🔥:
+
+Compress <small>(`c`=create, `v`=verbose, `z`=compress, `f`=archive name)</small>
+
+```ps
+$ tar -cvzf archive_name.tar.gz file0 file1 # ...
+```
+
+
+Decompress <small>(`x`=decompress, `v`=verbose, `f`=archive name)</small>
+
+```ps
+$ tar -xvf archive_name.tar.gz
+```
+
 ++++++
 
 <hr class="sep-both">
@@ -1331,6 +1375,69 @@ $ uniq -c < file
 
 <hr class="sep-both">
 
+## Utilities
+
+++++++
+
+[**wget** - download files/folders]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: download files/folders.
+
+**Example** 🔥:
+
+```ps
+$ wget https://path/to/file
+$ wget -d https://path/to/folder/
+```
+</div></div>
+
+[**curl** - do HTTP requests]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: do GET/POST/... requests.
+
+**Example** 🔥:
+
+GET request.
+
+```ps
+$ curl https://example.com
+$ curl --request GET https://example.com
+$ curl -X GET https://example.com
+```
+</div><div>
+
+Request headers
+
+```ps
+$ curl -I https://example.com
+```
+</div></div>
+
+[**time** - execution time]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: track the time a command takes.
+
+**Example** 🔥:
+
+```bash
+$ time sleep 5
+real    0m5.002s
+user    0m0.001s
+sys     0m0.000s
+```
+</div></div>
+
+++++++
+
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -1341,12 +1448,4 @@ Stuff that I found, but never read/used yet.
 * rpm, yum, dnf, pacman
 * use of `-not`/`!` to negate a `find` option
 </div><div>
-
-Commands usually have an option "help".
-
-```bash
-$ man -h
-$ find -help
-$ gcc --help
-```
 </div></div>

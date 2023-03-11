@@ -103,86 +103,6 @@ $ xrandr --output DP-2 --brightness 0.5
 
 ## Utilities
 
-<div class="row row-cols-md-2"><div>
-<details class="details-e">
-<summary><code>wget</code>: get a file/folder from a URL</summary>
-
-```bash
-$ wget https://path/to/file
-$ wget -d https://path/to/folder/
-```
-</details>
-</div><div>
-<details class="details-e">
-<summary><code>curl</code>: can be used to make requests</summary>
-
-**Note**: you may have to install it.
-
-* GET
-
-```bash
-$ curl https://example.com
-$ curl --request GET https://example.com
-$ curl -X GET https://example.com
-```
-
-* Request headers
-
-```bash
-$ curl -I https://example.com
-```
-</details>
-</div></div>
-
-<details class="details-e">
-<summary><code>tar</code>: compress files (tar.gz, gz, tgz...), and decompress them</summary>
-<div class="row row-cols-md-2"><div>
-
-Compress <small>(`c`=create, `v`=verbose, `z`=compress, `f`=archive name)</small>
-
-```bash
-$ tar -cvzf archive_name.tar.gz file0 file1 # ...
-```
-</div><div>
-
-Decompress <small>(`x`=decompress, `v`=verbose, `f`=archive name)</small>
-
-```bash
-$ tar -xvf archive_name.tar.gz
-```
-</div></div>
-</details>
-
-<div class="row row-cols-md-3"><div>
-<details class="details-e">
-<summary><code>zip/unzip</code>: zip/unzip a .zip</summary>
-
-```bash
-$ zip toto.zip f0 f1 f2
-$ unzip toto.zip
-```
-
-View the contents of a zip
-
-```bash
-$ zipinfo toto.zip
-$ unzip -l toto.zip
-```
-</details>
-</div><div>
-</div><div>
-<details class="details-e">
-<summary><code>time</code>: track a command duration</summary>
-
-```bash
-$ time sleep 5
-real    0m5.002s
-user    0m0.001s
-sys     0m0.000s
-```
-</details>
-</div></div>
-
 <div class="row row-cols-md-3"><div>
 <details class="details-e">
 <summary><code>tee</code>: read input, and output input</summary>
@@ -379,7 +299,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* subshell
 * `less -r`: read with colors?
 * `mktemp`
 * `ranger`
@@ -393,8 +312,7 @@ source ~/.bashrc
 ```
 </div><div>
 
-* `find / -type f -a \( -perm -u+s -o -perm -g+s \)`
-* `find / -type f -perm -04000 -ls 2>/dev/null`
+* `find / -type f -a \( -perm -u+s -o -perm -g+s \) -ls`
 * `\"'(safe and vuln)'\"")`
 * `help`/`info`
 * `xargs`
