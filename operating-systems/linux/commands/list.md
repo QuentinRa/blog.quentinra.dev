@@ -1030,13 +1030,67 @@ $ head file -n -5
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚: 
+**Usage** 🐚: sed has many uses. You can apply simple modification on the file, or search and replace something.
 
-**Example** 🔥:
+**sed does not modify the file**, but output on stdout the modified content, which you can redirect.
 
-```ps
-$ 
+**Example - syntax 1** 🔥: <br>`sed '<range><letter><args>' <file>`.
+
+* `i`: add a line with "XXX" before (`i`) every line
+* `a`: add a line with "XXX" after (`a`) every line
+* `p`: duplicate every line
+* `d`: delete every line
+* `c`: replace every line with "XXX"
+* `e`: execute the command before every line <small>(you may add parenthesis to make things cleaner)</small>
+
+```bash
+$ sed 'iXXX' file
+$ sed 'cXXX' file
+$ sed 'aXXX' file
+$ sed 'p' file
+$ sed 'e(echo hello)' file
 ```
+
+Instead of applying a command to every line, you can pick some lines
+
+```bash
+$ sed '1iXXX' file # line 1
+$ sed '1,3iXXX' file # line 1 to 3
+$ sed '$iXXX' file # last line
+$ sed '1p' file # duplicate first
+$ sed '1d' file # delete first
+# ...
+```
+</div><div>
+
+**Example - syntax 2** 🔥: <br>`sed 's/<pattern>/<replacement>/<flag>' <file>`.
+
+* `pattern`: a [regex](/programming-languages/others/regex/index.md)
+* `flag`:
+  * `none`: first match of each line
+  * `g`: every match is replaced
+  * `n`: replace the nth match of each line
+* `replacement`: what to replace the section with
+
+Replace every "e" with "E"
+
+```bash
+$ sed "s/e/E/g" file
+```
+
+Replace the first "e" of each line with "E"
+
+```bash
+$ sed "s/e/E/" file
+$ sed "s/e/E/1" file
+```
+
+Comment out every line starting with "S". We use a **capture group** 🚩 which is referenced using `\1`.
+
+```bash
+$ sed "s/^\(S.*\)/# \1./" file
+```
+
 </div></div>
 
 [**awk** - data extraction]
