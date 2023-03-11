@@ -29,7 +29,7 @@ Inside the CLI, we can run commands interpreted by a **shell** 🐚.  There are 
 
 <div class="row row-cols-md-2"><div>
 
-A command has **a name**, which may be followed by **arguments**, including some usually called **flag**/**switches** (`options`). The difference between both is that a flag starts with a `-`.
+A command has **a name**, which may be followed by **arguments**, including some usually called **flag**/**switches** (`options`). The difference between both is that a flag starts with a `-`, while **operands** do not.
 
 Below are some examples with the command `ls`:
 
@@ -41,7 +41,7 @@ No arguments.
 $ ls
 ```
 
-One argument.
+One operand.
 
 ```ps
 $ ls toto.txt
@@ -49,14 +49,14 @@ $ ls "toto.txt"
 ```
 </div><div>
 
-Two flags.
+Two flags ➡️ One flag.
 
 ```ps
 $ ls -l -a
 $ ls -la
 ```
 
-Two arguments with one flag.
+One flag and one operand.
 
 ```ps
 $ ls -la toto/

@@ -4,6 +4,24 @@ An experimental set of notes about Linux internals.
 
 <hr class="sep-both">
 
+## Processes and scheduling
+
+<div class="row row-cols-md-2"><div>
+
+A process is a box with
+
+* 🔑 pid <small>(process id, unique)</small>
+* 💍 ppid <small>(process id of the parent, -1 if the parent is dead)</small>
+* 📄 a code to execute <small>(current instruction, next instruction...)</small>
+* 🪸 an environment <small>(file descriptors, parameters, permissions...)</small>
+* 🧪 some data <small>(variables, environment variables, stack...)</small>
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Integers arithmetic
 
 <div class="row row-cols-md-2"><div>

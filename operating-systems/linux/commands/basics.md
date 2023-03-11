@@ -2,7 +2,16 @@
 
 <div class="row row-cols-md-2"><div>
 
-...
+Every linux command is a **process**. A box can be viewed as a box with
+
+* 📄 a code to execute 
+* 🪸 an environment <small>(file descriptors, parameters, permissions...)</small>
+* 🧪 some data <small>(stack, variables...)</small>
+
+While you can learn more about [processes here](/operating-systems/linux/architecture/index.md#processes-and-scheduling), some important takeaway are:
+
+* processes returns `0` if successful ✅, and `not 0` otherwise ❌.
+* each process has a unique identifier called `pid`
 </div><div>
 
 ...

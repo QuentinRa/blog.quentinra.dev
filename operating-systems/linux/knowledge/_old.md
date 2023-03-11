@@ -153,13 +153,7 @@ See the environment variable `$HOME` and the file `/etc/passwd`.
 
 <div class="row row-cols-md-2"><div>
 
-Processes (`processus`) are a sort of box with
-
-* a code to execute
-* an environment (file descriptors, parameters, permissions...)
-* some data (stack, variables...)
-
-Each process is assigned a **PID** (process identifier). When a machine is starting, the first process (pid=0) is launched, and start the **systemd daemon**, which is the parent of every process.
+When a machine is starting, the first process (pid=0) is launched, and start the **systemd daemon**, which is the parent of every process.
 
 > A **daemon** is a process that never ends. They are called **services** on Windows. They are usually ending with **d**.
 
