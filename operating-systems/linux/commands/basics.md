@@ -182,6 +182,70 @@ $ kill -l SIGSTOP
 
 <hr class="sep-both">
 
+## Calculations
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+You may want to do some stuff involving calculations. The shell won't interpret any calculations, so you must use `$[...]` or `$((...))` to evaluate something.
+
+```ps
+$ four=$[3+1]
+$ four=$((3+1)) # same
+```
+</div><div>
+
+Example of increasing a variable by one <small>(loops are covered in scripts)</small>.
+
+```bash
+i=0
+while [ $i -lt 5 ]; do
+   i=$[i+1] 
+done
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Pipes
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+It's possible for a command output, to be used as the next command input using a pipe: **their_output | is_my_input**.
+
+**Example** 🔥:
+
+The command `wc -l` is used to count the number of lines in a text. The text could be a file, or some input like below:
+
+```
+$ wc -l
+aaa
+bbb
+2 # two lines
+```
+
+➡️ As a reminder, use `CTRL+D` to indicate the end of the input.
+</div><div>
+
+The command `find . -name toto` find recursively every file named "toto" starting from the folder '`.`'. Its output is something like:
+
+```ps
+$ find . -name toto
+./mem/all_toto_copy/toto
+./mem/all_toto/toto
+[...]
+./mem/toto
+```
+
+Using a pipe, we can send the output of `find` to `wc`, and find the number of files (lines) returned by `find`:
+
+```ps
+$ find . -name toto | wc -l
+57 # find returned 57 lines
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

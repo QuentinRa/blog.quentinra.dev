@@ -147,31 +147,6 @@ See the environment variable `$HOME` and the file `/etc/passwd`.
 
 </div></div>
 
-<hr class="sl">
-
-## Calculations
-
-<div class="row row-cols-md-2 mx-0"><div>
-
-You may want to do some stuff involving calculations. The shell won't interpret any calculations, so you must use `$[calculation]` to evaluate something.
-
-```bash
-four=$[3+1]
-# same
-four=$((3+1))
-```
-</div><div>
-
-Example of increasing a variable by one.
-
-```bash
-i=0
-while [ $i -lt 5 ]; do
-   i=$[i+1] 
-done
-```
-</div></div>
-
 <hr class="sr">
 
 ## Input, output, pipes, and redirections
@@ -179,22 +154,6 @@ done
 Each command has 1️⃣ one input (0), and 2️⃣ two outputs: standard (1), and error (2).
 
 <div class="row row-cols-md-2"><div>
-
-**Pipe** (`tube`)
-
-It's possible for a command output, to be used as the next command input using a pipe: **his_output | is_my_input**.
-
-The command `wc -l` is used to count the number of lines in a text. The text could be a file, or some input. We want to find out how many files named "toto" were found with `find` using `wc`.
-
-```bash
-$ find . -name toto
-./mem/mv/all_toto_copy/toto
-./mem/mv/all_toto/toto
-[...]
-./mem/mv/toto
-$ find . -name toto | wc -l
-57 # find returned 57 lines
-```
 </div><div>
 
 **Redirections**
