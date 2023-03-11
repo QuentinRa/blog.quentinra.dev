@@ -77,6 +77,14 @@ $ echo Hello, World
 $ echo 'Hello, World'
 $ echo "Hello, World"
 ```
+
+**-e** 🧪: to interpret special characters such as `\n`
+
+```ps
+$ echo -e "abc\nde"
+abc
+de
+```
 </div><div>
 
 **-n** 🧪: to remove the newline

@@ -106,22 +106,22 @@ If you don't use PowerShell, which is Linux friendly so most Unix commands are a
 
 <div class="row row-cols-md-2"><div>
 
-**Users**
+**Users** 🧑
 
 * `LocalSystem`: an automatically created account used by the system to do internal tasks. It has higher privileges than Administrator.
 * `Administrator`: manage users, apps, groups, and system-wide settings...
 * `Standard User`: can use apps, can access their files...
 
-**Groups**
+**Groups** 👪
 
 Administrators can set permissions for a group, and users may be in multiple groups.
 
-**User Account Control (UAC)** (=sudo)
+**User Account Control (UAC)** (=sudo) 🫅
 
 When there is a need for a user to elevate, Windows will show the User Account Control (UAC), in which a root user can press "yes", and a non-root user will have to log in using an account having sufficient privileges to do the requested action.
 </div><div>
 
-**Permissions** ([doc](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb727008(v=technet.10)#understanding-file-and-folder-permissions))
+**Permissions** ([doc](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb727008(v=technet.10)#understanding-file-and-folder-permissions)) 🔐
 
 Windows has 7 categories of permissions: Read <small>(**R**)</small>, Write <small>(**W**)</small>, List Folder Contents <small>(**X**)</small>, Read & Execute <small>(**RX**)</small>, Modify <small>(**M**)</small>, Full Control <small>(**F**)</small> and Special permissions.
 
@@ -162,13 +162,13 @@ CMD> cd \Users\xxx
 
 I'm using below Unix Paths, because it's easier to write. See environment variables for the path, if it was changed.
 
-* root: `/`, which is usually `c:\ `
-* Windows root: usually `/Windows`
-* Files belonging to a user
+* 🪵 **root**: `/`, which is usually `c:\ `
+* 🌳 **Windows root**: usually `/Windows`
+* 🛝 **user content**: Files belonging to a user
     * `/Users`
     * `/Users/xxx/Desktop` (ex: user `xxx`)
     * `/Users/xxx/Documents`  (ex: user `xxx`)
-* Installed programs
+* 📂 **Installed programs**
   * `"/Program Files/"`
   * `"/Program Files (x86)/"`
   * `%appdata%`: usually used to install app without administrator privilege <small>(locally installed)</small>, or to store application data.
@@ -198,7 +198,7 @@ CMD> echo %windir% # print one
 
 Environment variables are
 
-* `PATH`: same use as on Linux
+* `PATH`: same use as on Linux, but folders are separated with "`;`"
 * `PATHEXT`: extensions that you may omit in commands
 * `USERNAME`: current user
 * `SystemDrive`: location to system drive
@@ -211,52 +211,10 @@ Environment variables are
 
 <hr class="sep-both">
 
-## Windows services
+## 👻 To-do 👻
 
-You can use the commands next to each task to use/open them, and you can also enter the command inside "execute" (Win  ➕ R). Note that extensions that you may see are such as ".exe", or ".msc" optional (see `PATHEXT`).
+Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
-
-**Task Manager** (`taskmgr`)
-
-* Shortcut: <kbd>CTRL+SHIFT+ESC</kbd>
-* List of running processes
-* This guide is quite complete [Windows Task Manager](https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide/)
-
-**Control panel** (`control`)
-
-* This is the entry point to most settings
-* In the top-right corner, it's possible to switch to another view <small>(ex: small icons)</small>, in which you may discover menus that you (most likely) never opened before, but may but useful one way or another.
 </div><div>
-
-* `lusrmgr.msc`: list of users/groups
-* `msconfig`: see services, manage system configurations
-* `lsass` is responsible for authentication within Windows.
-* `winver`: show Windows version+build, and license holder.
-* `control system`: open system info <small>(device/Windows specs)</small>
-* `msinfo32`: system info <small>(raw, can search)</small>, hardware and services
-* `UserAccountControlSettings`: change UAC settings
-* `compmgmt` is responsible for managing **shares**, **running tasks**, **listing events** ([doc](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types), monitoring performance (`perfmon`/`resmon`), or even manage device hardware/services.
-* `regedt32/regedit` ([doc](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)): open Windows registry, a database used to store information needed to configure the system for users/applications/devices <small>(ports in use, applications...)</small>.
-</div></div>
-
-<hr class="sep-both">
-
-## Windows security
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-**Windows Update** (`control /name Microsoft.WindowsUpdate`)
-
-A service looking for updates, downloading them, and asking <small>(forcing since Windows 10)</small> the user to install them. They are usually released on the 2nd Tuesday of each month (Patch Tuesday).
-</div><div>
-
-**Windows security** / **Windows defender**
-
-A set of tools to protect your Windows. There is an antivirus, which has a "ransomware protection" feature. There is a firewall to set rules for your network traffic. [SmartScreen](https://learn.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) was designed to protect against phishing or malware, and there is a tab with security features such as Core isolation.
-
-
-**BitLocker**
-
-The Trusted Platform Module (TPM) hardware component provides security against tampering along with many other things. BitLocker was designed "to help protect user data and to ensure that a computer has not been tampered with while the system was offline", as per [Microsoft](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview).
 </div></div>

@@ -1,9 +1,53 @@
-A path (chemin) => C:\Users\toto\Documents\
-Separator => \ (backslash)
-root (racine) => C:\
-(user) home (domicile) => C:\Users\toto\
-"Program files" => C:\Program Files\ C:\Program Files (x86)\ %appdata%
-
-On Windows, folders are separated with `;`
-
 Daemons are called **services** on Windows. They are usually ending with **d**.
+
+<hr class="sep-both">
+
+## Windows services
+
+You can use the commands next to each task to use/open them, and you can also enter the command inside "execute" (Win  ➕ R). Note that extensions that you may see are such as ".exe", or ".msc" optional (see `PATHEXT`).
+
+<div class="row row-cols-md-2"><div>
+
+**Task Manager** (`taskmgr`)
+
+* Shortcut: <kbd>CTRL+SHIFT+ESC</kbd>
+* List of running processes
+* This guide is quite complete [Windows Task Manager](https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide/)
+
+**Control panel** (`control`)
+
+* This is the entry point to most settings
+* In the top-right corner, it's possible to switch to another view <small>(ex: small icons)</small>, in which you may discover menus that you (most likely) never opened before, but may but useful one way or another.
+</div><div>
+
+* `lusrmgr.msc`: list of users/groups
+* `msconfig`: see services, manage system configurations
+* `lsass` is responsible for authentication within Windows.
+* `winver`: show Windows version+build, and license holder.
+* `control system`: open system info <small>(device/Windows specs)</small>
+* `msinfo32`: system info <small>(raw, can search)</small>, hardware and services
+* `UserAccountControlSettings`: change UAC settings
+* `compmgmt` is responsible for managing **shares**, **running tasks**, **listing events** ([doc](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types), monitoring performance (`perfmon`/`resmon`), or even manage device hardware/services.
+* `regedt32/regedit` ([doc](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)): open Windows registry, a database used to store information needed to configure the system for users/applications/devices <small>(ports in use, applications...)</small>.
+</div></div>
+
+<hr class="sep-both">
+
+## Windows security
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+**Windows Update** (`control /name Microsoft.WindowsUpdate`)
+
+A service looking for updates, downloading them, and asking <small>(forcing since Windows 10)</small> the user to install them. They are usually released on the 2nd Tuesday of each month (Patch Tuesday).
+</div><div>
+
+**Windows security** / **Windows defender**
+
+A set of tools to protect your Windows. There is an antivirus, which has a "ransomware protection" feature. There is a firewall to set rules for your network traffic. [SmartScreen](https://learn.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) was designed to protect against phishing or malware, and there is a tab with security features such as Core isolation.
+
+
+**BitLocker**
+
+The Trusted Platform Module (TPM) hardware component provides security against tampering along with many other things. BitLocker was designed "to help protect user data and to ensure that a computer has not been tampered with while the system was offline", as per [Microsoft](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview).
+</div></div>
