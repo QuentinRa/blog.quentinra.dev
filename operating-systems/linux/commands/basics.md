@@ -246,6 +246,48 @@ $ find . -name toto | wc -l
 
 <hr class="sep-both">
 
+## Chaining commands
+
+<div class="row row-cols-md-2"><div>
+
+There are three reasons to chain commands:
+
+* ✅ execute a command if the previous one was successful (`&&`)
+* ❌ execute any command until one is successful (`||`)
+* 🤝 put many commands in one line/statement (`;`)
+
+For the two first ones, a command is said to be successful is the process exit code is **zero**. Otherwise, it failed.
+
+```
+$ cat not_found # a non-successful command
+$ echo $?
+1 # failure
+```
+</div><div>
+
+**Examples** 🔥: 
+
+Execute two commands in one go
+
+```ps
+$ ls toto; ls tata
+```
+
+Execute the second `ls` if the first was successful.
+
+```ps
+$ ls toto && ls tata
+```
+
+Execute the second `ls` if the first failed.
+
+```ps
+$ ls toto || ls tata
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

@@ -60,51 +60,12 @@ $ echo '$toto' # echo "$toto"
 </div></div>
 </details>
 
-<details class="details-e">
-<summary>Exit codes, nested commands, and operators <code>; && ||</code></summary>
-
-<div class="row row-cols-md-2"><div>
-
-Commands (processes) are returning a code:
-
-* $0$: everything went fine
-* Not $0$: an error occurred
-
-The exit code of the last command is stored in `$?`
-
-```bash
-$ echo $?
-```
-
 You can execute a command inside another command <small>(nested)</small>
 
 ```bash
 $ ls `echo ~` # ls ~
 $ ls $(echo ~) # ls ~
 ```
-
-</div><div>
-
-You can run multiple commands in one go
-
-```bash
-$ ls toto; ls tata
-```
-
-With the operator `&&`, the next command is only executed if the previous one successfully ended (code=0)
-
-```bash
-$ ls toto && ls tata
-```
-
-With the operator `||`, every following command is executed until one is successful (code=0)
-
-```bash
-$ ls toto && ls tata
-```
-</div></div>
-</details>
-
 <hr class="sl">
 
 ## Paths
