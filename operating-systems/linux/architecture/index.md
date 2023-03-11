@@ -6,7 +6,7 @@ An experimental set of notes about Linux internals.
 
 ## Processes and scheduling
 
-*🚢 This section is further developed in the [Multitasking notes](/programming-languages/low-level/c/multitasking/index.md) in C programming.*
+*🚢 This section is further developed in the [Multitasking notes](/programming-languages/low-level/c/multitasking/index.md) in C programming.* <small>(**Signals, pipes, sockets, semaphores, mutexes, condition variables...**)</small>
 
 <div class="row row-cols-md-2"><div>
 
@@ -27,6 +27,8 @@ When a machine boots up, the kernel process is started, with the pid 0. It start
 
 👉 If a parent process dies, their children **won't die**, and will be assigned $-1$ as their PPID.
 
+➡️ Signals are used by processes to communicate. For instance, `CTRL+C` is firing a signal to forcefully kill a foreground process.
+
 <br>
 
 #### Process scheduling
@@ -42,8 +44,35 @@ To the user, it looks like applications are running in parallel, but its pseudo-
 
 When a process dies, they are returning a code: $0$ is everything went fine ✅, and not $0$, if an error occurred ❌. You can use `$?` to see the exit code of the last process that died.
 
-```bash
+```bash!
 $ echo $?
+```
+
+<br>
+
+#### Sessions
+
+Every process is attached to a session, which can be found with their value for **SID** (Session identifier). Most sessions are attached to a terminal (`/dev/tty`).
+
+Sessions are partitioned into [groups of processes](https://en.wikipedia.org/wiki/Process_group). A signal sent to a group, is dispatched to every process of the group.
+
+If a session dies, then the signal **SIGHUP** is sent to every process.
+
+<br>
+
+#### Foreground and background processes
+
+A foreground process is a process receiving input from the user, while a background process is running but not receiving input.
+
+They can only be one foreground process at a time inside a session. We use background processes to run long task not requiring user input. Background processes
+
+* 😵 can't read, and may not be able to write on the terminal
+* 🔕 aren't receiving signals, except **CTRL-Z** (suspend)
+
+To run a command in the background, use `&`:
+
+```ps
+$ sleep 10 &
 ```
 </div></div>
 

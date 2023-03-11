@@ -149,50 +149,6 @@ See the environment variable `$HOME` and the file `/etc/passwd`.
 
 <hr class="sl">
 
-## Processes
-
-<div class="row row-cols-md-2"><div>
-<details class="details-e">
-<summary>Sessions</summary>
-
-Every process is attached to a session, which can be found with their value for **SID** (Session identifier). Most sessions are attached to a terminal (`/dev/tty`). 
-
-Sessions are partitioned into [groups of processes](https://en.wikipedia.org/wiki/Process_group). A signal sent to a group, is dispatched to every process of the group.
-
-If a session dies, then the signal **SIGHUP** is sent to every process.
-</details>
-</div><div>
-
-<details class="details-e">
-<summary>Foreground, and background processes</summary>
-
-In every terminal, there is a session running, which means at least one group of processes. There are two "slots" in a session
-
-* **foreground**: only one group may be at the foreground
-* **background**: every other group will be there
-
-The main difference, is that background processes
-
-* can't read, and write<sup>1</sup> on the terminal
-* aren't receiving signals, except **CTRL-Z** (suspend)
-
-<sup>1</sup> In some shells, or actually in most shells, this feature is enabled by default, but it can be disabled by editing an environment variable (but, I forgot which one sadly).
-</details>
-</div></div>
-
-<details class="details-e">
-<summary>Commands</summary>
-
-* <kbd>&</kbd>: run a command (process) in the background
-* <kbd>ps</kbd>: list process
-* <kbd>kill</kbd>: send a signal to a process
-* <kbd>fg</kbd>: bring a process back to the foreground
-* <kbd>bg</kbd>: bring a process to the background
-* <kbd>top</kbd>: list all process, and their memory usage <small>(same as the task manager on Windows)</small>
-</details>
-
-<hr class="sl">
-
 ## Calculations
 
 <div class="row row-cols-md-2 mx-0"><div>
