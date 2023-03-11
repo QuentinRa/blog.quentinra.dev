@@ -205,6 +205,31 @@ $ shopt -pu nullglob
 > The `nullglob` option is replacing patterns with the null string if there are no matches.
 </div></div>
 
+[**alias** - aliases of commands]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: create a command that is an alias of another commands with usually some arguments.
+
+**Example** 🔥:
+
+Create a command `la` which is `ls -la`
+
+```ps
+$ alias la='ls -la'
+$ la
+```
+</div><div>
+
+See every defined alias
+
+```ps
+$ alias
+```
+
+⚠️ Aliases are temporary. You must load them every time you open a terminal, such as by adding them in a `.bashrc` in Bash.
+</div></div>
+
 ++++++
 
 <hr class="sep-both">
@@ -279,6 +304,31 @@ Mon 12 Oct 2020 08:32:11 PM EDT
 ## Computer management
 
 ++++++
+
+[**sudo** - run as]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: Execute a command `<command>` with elevated privileges.
+
+**Example** 🔥:
+
+Execute a command `<command>` as root.
+
+```ps
+# ex: ls /
+$ sudo ls /
+```
+</div><div>
+
+Elevate the shell. In an elevated shell, there is no need to add `sudo` before each command.
+
+```ps
+$ sudo -s
+```
+</div></div>
+
+[<br>]
 
 [**apt** - package manager]
 
@@ -374,6 +424,21 @@ $ sudo apt install snapd
 $ sudo snap install core
 $ sudo snap refresh core
 $ sudo snap install --classic xxx
+```
+</div></div>
+
+[**update-alternatives** - 🛻]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: available on Debian-based distributions. Allow us to switch between multiple versions of a same program.
+
+🛻 c++, cc, nc, php, java...
+
+**Example** 🔥:
+
+```ps
+$ sudo update-alternatives --config php
 ```
 </div></div>
 

@@ -25,64 +25,6 @@
 
 ## System
 
-<details class="details-e mt-4">
-<summary><code>sudo</code>: elevate to administrator</summary>
-<div class="row row-cols-md-2"><div>
-
-Execute a command `<command>` as root.
-
-```bash
-$ sudo <command>
-# ex: ls /
-$ sudo ls /
-```
-</div><div>
-
-Elevate the shell. In an elevated shell, there is no need to add `sudo` before each command.
-
-```bash
-$ sudo -s
-```
-</div></div>
-</details>
-
-<div class="row row-cols-md-3"><div>
-</div><div>
-<details class="details-e">
-<summary><code>alias</code>: create an alias for a command</summary>
-
-If you want `ls` to always use `-la`:
-```bash
-$ alias la='ls -la'
-$ la
-# same as ls -la
-```
-
-You can see every alias created using:
-
-```bash
-$ alias
-```
-
-**Note**: aliases aren't permanent. Add them in your `.bashrc`.
-</details>
-</div><div>
-<details class="details-e">
-<summary><code>update-alternatives</code>: switch PHP/Python/Java... version</summary>
-
-**Note**: it's only available on Debian-based distributions, from what I read.
-
-```bash
-$ sudo update-alternatives --config php
-```
-
-> c++, cc, nc, php, java...
-</details>
-</div></div>
-
-<div class="row row-cols-md-2"><div>
-
-</div><div>
 <details class="details-e">
 <summary><code>xrandr</code>: set the size, orientation, brightness of the screen</summary>
 
@@ -92,18 +34,10 @@ Set the brightness to "0.5"
 $ xrandr --output DP-2 --brightness 0.5
 ```
 </details>
-</div></div>
 
-> Random:
-> 
-> * you can use `xdg-open` to open a PDF, or an URL.
-> * you can use `getent passwd` <small>(get entry)</small> instead of `cat /etc/passwd`
+* you can use `xdg-open` to open a PDF, or an URL.
+* you can use `getent passwd` <small>(get entry)</small> instead of `cat /etc/passwd`
 
-<hr class="sl">
-
-## Utilities
-
-<div class="row row-cols-md-3"><div>
 <details class="details-e">
 <summary><code>tee</code>: read input, and output input</summary>
 
@@ -124,13 +58,6 @@ Hello
 ```
 
 </details>
-</div><div>
-</div><div>
-</div></div>
-
-<hr class="sr">
-
-## String utilities
 
 <details class="details-e">
 <summary><code>expr</code>: substring, indexOf...</summary>
@@ -157,8 +84,6 @@ $ expr index "Sarah" S
 $ expr index "Sarah" w
 0
 ```
-
-
 </details>
 
 <hr class="sl">
