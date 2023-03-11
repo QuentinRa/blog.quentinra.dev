@@ -182,6 +182,70 @@ $ kill -l SIGSTOP
 
 <hr class="sep-both">
 
+## Strings manipulation
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+When using commands, you will most likely use, or have to use strings. Most of the time, quotes are optional, and command arguments do not need to be quoted 🎯.
+
+```ps
+$ echo Hello, World
+$ echo 'Hello, World'
+$ echo "Hello, World"
+```
+
+Concatenation is also implicit. All of these are the same:
+
+```ps
+$ cat abc
+$ cat "a"bc
+$ cat "ab"c
+$ cat "abc"
+$ cat "a""bc"
+```
+</div><div>
+
+There are times when we **must quote** an argument 🎣. For instance, when there is a space inside a name/path.
+
+```
+$ ls /Documents/my bookmarks/ # ❌
+$ ls "/Documents/my bookmarks/" # ✅
+$ ls '/Documents/my bookmarks/' # ✅
+$ ls /Documents/my\ bookmarks/ # ✅
+```
+
+👉 The main difference between single and double quote is that in the former, variable are NOT interpreted. Refer to the [scripts section](/operating-systems/linux/scripts/index.md).
+
+<details class="details-n">
+<summary><code>expr</code>: substring, indexOf...</summary>
+
+Length of a string
+
+```bash
+$ expr length "Sarah"
+5
+```
+
+Extract a substring <small>("3" characters in "Sarah" from index "2")</small>
+
+```bash
+$ expr substr "Sarah" 2 3
+ara
+```
+
+Index of a character in a string <small>(index of S/w in Sarah)</small>
+
+```bash
+$ expr index "Sarah" S
+1
+$ expr index "Sarah" w
+0
+```
+</details>
+</div></div>
+
+<hr class="sep-both">
+
 ## Calculations
 
 <div class="row row-cols-md-2 mx-0"><div>

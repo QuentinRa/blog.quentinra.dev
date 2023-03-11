@@ -36,30 +36,6 @@ bash > command_at_least_working_in_bash
 
 ## Commands
 
-<details class="details-e">
-<summary>Quoting in bash</summary>
-
-<div class="row row-cols-md-2"><div>
-
-Quotes are not mandatory unless there are some specials characters, such as a space in a path, for instance
-
-```bash
-$ ls /Documents/my bookmarks/ # Will not work
-$ ls "/Documents/my bookmarks/" # 👌
-$ ls '/Documents/my bookmarks/' # 👌
-$ ls /Documents/my\ bookmarks/ # 👌
-```
-</div><div>
-
-The main difference between single and double quotes, is that variables, and nested commands, will still be executed when using double quotes.
-
-```bash
-$ echo "$toto" # echo the value inside $toto
-$ echo '$toto' # echo "$toto" 
-```
-</div></div>
-</details>
-
 You can execute a command inside another command <small>(nested)</small>
 
 ```bash
@@ -176,34 +152,6 @@ $ tee output1 output2 < file
 $ tee output1 output2
 Hello # CTRL-D
 Hello
-```
-
-</details>
-
-<details class="details-e">
-<summary><code>expr</code>: substring, indexOf...</summary>
-
-Length of a string
-
-```bash
-$ expr length "Sarah"
-5
-```
-
-Extract a string of "3" characters from "Sarah" starting from index "2"
-
-```bash
-$ expr substr "Sarah" 2 3
-ara
-```
-
-Index of ...
-
-```bash
-$ expr index "Sarah" S
-1
-$ expr index "Sarah" w
-0
 ```
 </details>
 
