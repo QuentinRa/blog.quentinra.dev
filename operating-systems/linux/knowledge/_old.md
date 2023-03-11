@@ -291,59 +291,6 @@ $ expr index "Sarah" w
 
 ## Processes
 
-<details class="details-e mt-4">
-<summary><code>ps</code>: list running processes</summary>
-<div class="row row-cols-md-2"><div>
-
-See all processes
-
-```bash
-$ ps -A # same as 'ps aux'
-$ ps -e # same
-$ ps -ef # add more information
-$ ps axjf # view process tree
-```
-
-Every process "bash"
-
-```bash
-$ ps -C bash
-```
-
-List processes by PID (`-s` for SID)
-
-```bash
-$ ps -p 12563
-$ ps -p 12560,12563
-$ ps -p {12590..12600}
-```
-
-</div><div>
-
-List processes for a given user (`-g` for a group)
-
-```bash
-$ ps -u username
-```
-
-List processes by terminal identifier, or a path to the terminal
-
-```bash
-$ ps -t pts/0
-$ ps -t /dev/pts/0
-```
-
-Change the output
-
-```bash
-$ ps -j # basic
-$ ps -l # long
-$ ps -o pid,ppid
-$ ps -o pid,ppid,pgid,tpgid,sid
-```
-</div></div>
-</details>
-
 <div class="row row-cols-md-3"><div>
 <details class="details-e">
 <summary><code>fg</code>: bring processes to the foreground</summary>
@@ -383,15 +330,6 @@ $ jobs
 </div></div>
 
 <div class="row row-cols-md-2"><div>
-<details class="details-e">
-<summary><code>top/htop</code>: list all running processes</summary>
-
-You may check/install `htop` instead of `top`.
-
-```bash
-$ top
-```
-</details>
 </div><div>
 <details class="details-e">
 <summary><code>kill</code>: kill a process/send a signal</summary>
