@@ -5,3 +5,5 @@ root (racine) => C:\
 "Program files" => C:\Program Files\ C:\Program Files (x86)\ %appdata%
 
 On Windows, folders are separated with `;`
+
+Daemons are called **services** on Windows. They are usually ending with **d**.

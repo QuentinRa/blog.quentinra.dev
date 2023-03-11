@@ -152,51 +152,6 @@ See the environment variable `$HOME` and the file `/etc/passwd`.
 ## Processes
 
 <div class="row row-cols-md-2"><div>
-
-When a machine is starting, the first process (pid=0) is launched, and start the **systemd daemon**, which is the parent of every process.
-
-> A **daemon** is a process that never ends. They are called **services** on Windows. They are usually ending with **d**.
-
-> Processes are stored in `/proc/`, in a folder corresponding to their PID. 
-</div><div>
-
-No-one can create a process. A new process is "created" by duplicating an existing process, using a function called `fork()` hence we say **forking a process** instead of creating a process. 
-
-When a process dies, they are returning a code: $0$ is everything went fine, and not $0$, if an error occurred. You can use `$?` to see the exit code of the last process that died.
-
-```bash
-$ echo $?
-```
-
-As every process is forked from another, they have a reference to their parent called PPID (Parent PID). If a parent process dies, the forked children **won't die**, and will be assigned $-1$ as their PPID.
-</div></div>
-
-<div class="row row-cols-md-2"><div>
-
-<details class="details-e">
-<summary>Scheduling (<code>Ordonnancement</code>)</summary>
-
-Visually, you would see two processes such as `firefox`, and a file explorer running at the same time. They are not actually running in parallel, but something called pseudo-parallelism. 
-
-The scheduler (`ordonnanceur/gouverneur`) is allowing each process to run a little, and because they are all running a little, you won't see that they are not executed at the same time.
-</details>
-</div><div>
-
-<details class="details-e">
-<summary>Signals</summary>
-
-Signals are used for communication, both between processes, or between a user and a process. There are **34** signals, but a programmer may override the code executed when a process is receiving a signal.
-
-* <kbd>CTRL+C</kbd> (SIGINT=exit): exit process
-* <kbd>CTRL+Z</kbd> (SIGSTOP=suspend): terminate an action <small>(ex: waiting for input)</small>
-* SIGKILL: kill a process, no cleanup
-* SIGTERM: soft kill a process, allow cleanup
-
-> **Note**: <kbd>CTRL+D</kbd> is NOT a signal.
-</details>
-</div></div>
-
-<div class="row row-cols-md-2"><div>
 <details class="details-e">
 <summary>Sessions</summary>
 

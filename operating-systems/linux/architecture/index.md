@@ -6,18 +6,45 @@ An experimental set of notes about Linux internals.
 
 ## Processes and scheduling
 
+*🚢 This section is further developed in the [Multitasking notes](/programming-languages/low-level/c/multitasking/index.md) in C programming.*
+
 <div class="row row-cols-md-2"><div>
 
-A process is a box with
+A process is a box with stuff related to the execution of a program:
 
-* 🔑 pid <small>(process id, unique)</small>
-* 💍 ppid <small>(process id of the parent, -1 if the parent is dead)</small>
+* 🔑 a pid <small>(process id, unique)</small>
+* 💍 a ppid <small>(process id of the parent, -1 if the parent is dead)</small>
 * 📄 a code to execute <small>(current instruction, next instruction...)</small>
 * 🪸 an environment <small>(file descriptors, parameters, permissions...)</small>
 * 🧪 some data <small>(variables, environment variables, stack...)</small>
+* ...
+
+When a machine boots up, the kernel process is started, with the pid 0. It starts a **daemon process** called `init` or `systemd` with the pid 1, which is the parent of every process.
+
+👉 A **daemon** is a process that never ends.
+
+👉 Processes are stored in `/proc/`, in a folder named after their PID.
+
+👉 If a parent process dies, their children **won't die**, and will be assigned $-1$ as their PPID.
+
+<br>
+
+#### Process scheduling
+
+The scheduler job is to to maximize the use of available resources while ensuring that each process receives a fair share of the CPU time.
+
+To the user, it looks like applications are running in parallel, but its pseudo-parallelism. As the scheduler lets each process use the CPU a little bit, they are all running a little, and we won't notice that they are not executed at the same time.
+
+👉 Some scheduling algorithm: round-robin, priority based...
 </div><div>
 
-...
+#### Process termination
+
+When a process dies, they are returning a code: $0$ is everything went fine ✅, and not $0$, if an error occurred ❌. You can use `$?` to see the exit code of the last process that died.
+
+```bash
+$ echo $?
+```
 </div></div>
 
 <hr class="sep-both">
