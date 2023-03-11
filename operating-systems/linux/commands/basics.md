@@ -95,17 +95,88 @@ $ ps -o pid,ppid,pgid,tpgid,sid
 ```
 </div></div>
 
-[**xxx** - xxx]
+[**fg** - to foreground]
 
-xxx
+<div class="row row-cols-md-2"><div>
 
-[**xxx** - xxx]
+**Usage** 🐚: bring processes from the background to the foreground.
 
-xxx
+**Example** 🔥:
 
-[**xxx** - xxx]
+```ps
+$ some_command &
+[1] 89
+$ fg
+$ fg 1 # same
+$ fg %1 # same
+```
+</div></div>
 
-xxx
+[**bg** - to background]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: bring processes, that were not started using `&`, to the background.
+
+**Example** 🔥:
+
+```ps
+$ some_command
+# CTRL-Z
+[1]+  Stopped
+$ bg
+$ bg 1 # same
+$ bg %1 # same
+```
+</div></div>
+
+[**jobs** - background processes]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: list running background processes. Not available in every shell.
+
+**Example** 🔥:
+
+```ps
+$ sleep 50&
+[1] 36
+$ jobs
+[1]+  Running        sleep 50 &
+```
+</div></div>
+
+[**kill** - send signals]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: kill a process/send a signal.
+
+**Example** 🔥:
+
+All are sending "SIGTERM" <small>(soft kill, allow cleanup)</small>
+
+```ps
+$ kill pid
+$ kill 15  pid
+$ kill -s TERM  pid
+$ kill -SIGTERM  pid
+```
+</div><div>
+
+Other signals:
+
+* `-9` / SIGKILL: kill without cleanup
+* `-19` / SIGSTOP: suspend
+* ...
+
+You can use `-l` to see the code for a given signal
+
+```bash
+$ kill -l SIGSTOP
+19
+```
+</div></div>
 
 ++++++
 
