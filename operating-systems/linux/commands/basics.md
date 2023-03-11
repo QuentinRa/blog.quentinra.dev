@@ -17,6 +17,8 @@ $ man -h
 $ find -help
 $ gcc --help
 ```
+
+⚠️ There is no echo/feedback when writing a password.
 </div></div>
 
 <hr class="sep-both">
@@ -438,4 +440,18 @@ $ (cat=toto; echo "1. $cat") && echo "2. $cat"
 ```
 
 👉 It could be used to temporarily change location, set an environment variable for one command...
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* terminal shortcuts <small>(CTRL +/-/L/D, scroll button...)</small> and CTRL+SHIFT+T to open a terminal.
+</div><div>
+
+
 </div></div>

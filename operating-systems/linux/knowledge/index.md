@@ -21,6 +21,8 @@ Linux in its simplest form is a **command-line interface** (CLI), commonly refer
 Inside the CLI, we can run commands interpreted by a **shell** 🐚.  There are multiple shell languages <small>(sh, csh, tcsh, ksh, bash)</small>, however most Linux distributions are using **bash** <small>(bourne again shell)</small> 🔥. Most shell languages are improved versions of sh 🪦.
 
 👉 Note that shell, the CLI, and a terminal are not the same thing, although they are closely related, hence the common misuse.
+
+👉 You can use CTRL+ALT+F1 to swap to "console mode" <small>(from F1, up to F6)</small>, while you can use ALT+F7 to swap back to the "GUI mode".
 </div></div>
 
 <hr class="sep-both">
@@ -339,12 +341,6 @@ downloads
 </td></tr>
 </tbody></table>
 </div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
 
 <hr class="sep-both">
 

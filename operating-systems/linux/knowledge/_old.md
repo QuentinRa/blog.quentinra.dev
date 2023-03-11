@@ -1,24 +1,5 @@
 # Knowledge about Linux
 
-<b>Open a terminal</b>
-
-> * Look for "Terminal" in your Applications
-> * Or, use the shortcut `CTRL+SHIFT+T`
-
-<b>Increase/Decrease Zoom</b>
-
-> Use `CTRL +`, and `CTRL -` to increase/decrease zoom
-
-<b>Console mode</b> 🤕 - beginner killer
-
-> You can use CTRL+ALT+F1 to swap to console mode <small>(from F1, up to F6)</small>, while you can use ALT+F7 to swap back 🤤.
-
-<b>Paste something</b>
-
-> Usually, the scroll button will paste any copied content.
-
-> There is no "echo" when writing a password, so don't be confused when you are writing one.
-
 <hr class="sr">
 
 ## Paths
