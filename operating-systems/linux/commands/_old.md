@@ -21,9 +21,6 @@
 </div></div>
 </blockquote>
 
-<span class="h4 fs-4">➡️ If there is a command that you don't understand, check out [explain shell](https://explainshell.com/).
-</span>
-
 <hr class="sl">
 
 ## System

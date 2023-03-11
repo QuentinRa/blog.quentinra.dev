@@ -1,12 +1,6 @@
 # Linux commands
 
-<div class="row row-cols-md-2 mt-4"><div>
-
-...
-</div><div>
-
-...
-</div></div>
+⛪ If there is a command that you don't understand, **check out** [explain shell](https://explainshell.com/) 🚀.
 
 <hr class="sep-both">
 
