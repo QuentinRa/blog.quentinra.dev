@@ -346,10 +346,35 @@ downloads
 
 Stuff that I found, but never read/used yet.
 
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
 <div class="row row-cols-md-2"><div>
 
-* [old](_old.md)
+* OSS Course
+* [gentoo](https://www.gentoo.org/)
+* [linux-securite](https://wonderfall.space/linux-securite/)
+* ELF
+* Cron `cron` process to schedule tasks, with crontab/crontab -l / Automated tasks in Linux / https://crontab-generator.org/ / https://crontab.guru/ / edit `crontab -e` / https://www.crontabs.org/
+* [tcsh](https://www.ibm.com/docs/en/zos/2.3.0?topic=shells-writing-tcsh-shell-scripts)
+* [ArchTitus](https://github.com/ChrisTitusTech/ArchTitus)
+* [yoctoproject](https://www.yoctoproject.org/)
+
 </div><div>
 
-
+* [linuxhandbook](https://linuxhandbook.com/)
+* [linuxhint](https://linuxhint.com/)
+* [linuxize](https://linuxize.com/)
+* [shell-tips](https://www.shell-tips.com/)
+* [howtouselinux](https://www.howtouselinux.com/)
+* [linuxconfig](https://linuxconfig.org/)
+* [tecmint](https://www.tecmint.com/)
+* [linux-audit](https://linux-audit.com/)
+* [oreilly](https://www.oreilly.com/library/view/linux-command-line/9780470251287/)
+* [tldp](https://tldp.org/guides.html)
+* [linuxshelltips](https://www.linuxshelltips.com/)
+* [shellhacks](https://www.shellhacks.com)
 </div></div>

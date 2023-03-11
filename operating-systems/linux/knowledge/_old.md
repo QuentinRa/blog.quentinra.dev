@@ -1,17 +1,5 @@
 # Knowledge about Linux
 
-<div class="row row-cols-md-2"><div>
-
-Most "commands" in books/... are written like `$ xxx`, but `$` IS NOT a part of the command; this is a token that indicates where we can execute the command. It could be `#`, `sh >`...
-
-```shell
-$ command_working_everywhere
-# command_requiring_elevated_privileges
-sh > command_at_least_working_in_sh
-bash > command_at_least_working_in_bash
-```
-</div><div>
-
 <b>Open a terminal</b>
 
 > * Look for "Terminal" in your Applications
@@ -28,7 +16,6 @@ bash > command_at_least_working_in_bash
 <b>Paste something</b>
 
 > Usually, the scroll button will paste any copied content.
-</div></div>
 
 > There is no "echo" when writing a password, so don't be confused when you are writing one.
 
@@ -74,55 +61,10 @@ See the environment variable `$HOME` and the file `/etc/passwd`.
 
 </div></div>
 
-<hr class="sr">
-
-## Input, output, pipes, and redirections
-
-Each command has 1️⃣ one input (0), and 2️⃣ two outputs: standard (1), and error (2).
-
-<div class="row row-cols-md-2"><div>
-</div><div>
-
-**Redirections**
-
-We can redirect output to a file. For instance, if a result takes a long time, or you need to do multiple operations on it, you will usually store it, and work on the file. We are doing this using `>`.
-
-```bash
-$ echo "Hello, World" > myFile
-```
-
-The operator `>` is truncating (=emptying) the file, if you want to append something, use `>>`.
-
-```bash
-$ echo "Hello, World" >> myFile
-```
-
-You can also load some input from a file, but I don't have any useful examples for now. The command below is giving the content of `original.txt` to the command `tee` which is outputting the content.
-
-```bash
-$ tee < original.txt
-Hello, World
-```
-
-Another very useful usage of redirections, is redirecting errors, meanwhile non-errors message will still be shown.
-
-```bash
-$ ls /error 2> onl_errors_will_be_stored_here
-$ ls /error 2> /dev/null # redirect to the "trash"
-```
-
-Sometimes, you may even want to print errors on the standard output.
-
-```bash
-$ ls /error 2>&1
-```
-</div></div>
-
 <hr class="sep-both">
 
 ## List of essential Linux commands
 
-* `exit` <sup>1</sup>: exit the shell with an exit code
 * you can use `xdg-open` to open a PDF, or an URL.
 
 <details class="details-e">
@@ -144,100 +86,3 @@ Hello # CTRL-D
 Hello
 ```
 </details>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-* `less -r`: read with colors?
-* `mktemp`
-* `ranger`
-* pretty CSV ([article](https://www.stefaanlippens.net/pretty-csv.html))
-
-```bash
-wget https://github.com/alexhallam/tv/releases/download/1.4.30/tidy-viewer_1.4.30_amd64.deb
-sudo dpkg -i tidy-viewer_1.4.30_amd64.deb
-echo "alias tv='tidy-viewer'" >> ~/.bashrc
-source ~/.bashrc
-```
-</div><div>
-
-* `find / -type f -a \( -perm -u+s -o -perm -g+s \) -ls`
-* `help`/`info`
-* `xargs`
-* `env X=val ./myScript`
-* `strace/strings` [link](https://jvns.ca/strace-zine-v3.pdf)
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-* OSS Course
-* [gentoo](https://www.gentoo.org/)
-* [linux-securite](https://wonderfall.space/linux-securite/)
-* ELF
-* Cron `cron` process to schedule tasks, with crontab/crontab -l / Automated tasks in Linux / https://crontab-generator.org/ / https://crontab.guru/ / edit `crontab -e` / https://www.crontabs.org/
-* [tcsh](https://www.ibm.com/docs/en/zos/2.3.0?topic=shells-writing-tcsh-shell-scripts)
-* [ArchTitus](https://github.com/ChrisTitusTech/ArchTitus)
-* [yoctoproject](https://www.yoctoproject.org/)
-
-<details class="details-e">
-<summary>Services</summary>
-
-`systemctl /bin/systemctl` allows us to interact with the systemd process/daemon.
-
-```bash
-sudo systemctl stop xxx.service 
-sudo vim /etc/systemd/system/xxx.service 
-sudo systemctl status xxx.service 
-sudo systemctl daemon-reload
-sudo systemctl start xxx.service
-sudo systemctl status xxx.service
-```
-
-```ini
-[Unit]
-Description="Some nice description here"
-
-[Service]
-ExecStart=/usr/local/bin/nodemon /home/bye/index.js
-WorkingDirectory=/home/bye/
-Restart=always
-RestartSec=10
-StandardOutput=syslog
-StandardError=syslog
-; examples
-SyslogIdentifier=byebye
-Environment=NODE_ENV=production
-
-[Install]
-WantedBy=multi-user.target
-```
-</details>
-
-* `getent` <sup>2</sup>: get an entry such as "passwd": `getent passwd` <small>(get entry)</small> instead of `cat /etc/passwd`
-
-</div><div>
-
-* [linuxhandbook](https://linuxhandbook.com/)
-* [linuxhint](https://linuxhint.com/)
-* [linuxize](https://linuxize.com/)
-* [shell-tips](https://www.shell-tips.com/)
-* [howtouselinux](https://www.howtouselinux.com/)
-* [linuxconfig](https://linuxconfig.org/)
-* [tecmint](https://www.tecmint.com/)
-* [linux-audit](https://linux-audit.com/)
-* [oreilly](https://www.oreilly.com/library/view/linux-command-line/9780470251287/)
-* [tldp](https://tldp.org/guides.html)
-* [linuxshelltips](https://www.linuxshelltips.com/)
-* [shellhacks](https://www.shellhacks.com)
-</div></div>
