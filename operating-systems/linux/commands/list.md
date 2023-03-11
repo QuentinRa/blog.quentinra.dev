@@ -165,6 +165,34 @@ There are QUITE a lot of options. Simply press <kbd>h</kbd> to see all of them.
     * <kbd>N</kbd>: go back to the previous match
 </div></div>
 
+[**xdg-open** - open ...]
+
+**Usage** 🐚: open a file <small>(txt, pdf...)</small>, a URL... with the default application associated with the file extension.
+
+**Example** 🔥:
+
+```ps
+$ xdg-open xxx.pdf
+$ xdg-open URL
+```
+
+[**tee** 🧽 - one to many]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: tee can be used to redirect one input to multiple sources. For instance, you can redirect the output to a file and `stdout`.
+
+**Example** 🔥:
+
+Output to both files and the standard output.
+
+```ps
+$ tee output1 output2 < file
+```
+</div></div>
+
+[<br>]
+
 [**clear** - clear the terminal]
 
 <div class="row row-cols-md-2"><div>

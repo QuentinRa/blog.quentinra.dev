@@ -2,6 +2,44 @@
 
 An experimental set of notes about Linux internals.
 
+<hr class="sr">
+
+## Common files and folders
+
+<div class="row row-cols-md-2"><div>
+
+#### Special folders
+
+**user home** (<code>domicile</code>) 🏡: each user has is own folder, with their documents... A common path: <code>/home/toto/</code>.
+
+See the environment variable `$HOME` and the file `/etc/passwd`.
+
+<br>
+
+**Binaries** ⚒️: folders used to store commands... There are `/bin/`, `/usr/bin/`, and `/usr/local/bin/`.
+</div><div>
+
+#### Special files
+
+**hidden files** 🤐: Any file starting with <code>.</code> (dot), such as <code>.config</code>.
+
+<br>
+
+* `/etc` (folder): "commonplace location to store system files that are used by your operating system"
+* `/dev/null` (file): an empty file, a sort of trash file in which everything you write inside is deleted.
+* `/etc/shadow` (file): username, and their hashed password
+* `/etc/gshadow` (file), and `/etc/group`: groups
+* `/var/log/` (folder): log files
+* `/mnt` (folder): mounted device/hard drives (D:, USB...)
+* `/tmp` (folder): a trash folder cleaned on reboot
+
+XXX
+
+* **Remember** that if you have spaces in your paths, then you must either quote them, or use `\` before any space.
+* If you met a crazy guy that named something starting with a `-`, then you need to use `--` before the weird filename. For instance: `cp -- -filename`.
+
+</div></div>
+
 <hr class="sep-both">
 
 ## Processes and scheduling

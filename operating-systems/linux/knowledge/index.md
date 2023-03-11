@@ -93,6 +93,8 @@ $ ls /<TAB>
 
 ## File system
 
+*See the section: [common files and folders](/operating-systems/linux/architecture/index.md#common-files-and-folders).*
+
 <div class="row row-cols-md-2 mt-3"><div>
 
 A **path** 🛣️ is a suite of one or more folders 📂 that may lead to a regular file 📄. They are separated by a separtor which is: `/` <small>(slash)</small>.
@@ -102,24 +104,34 @@ $ pwd
 /usr/home/toto/Documents/
 ```
 
-The root folder <small>(similar to C: on Windows)</small> contains every other folder. It's the leading `/` of every path.
+➡️ The root folder <small>(similar to C: on Windows)</small> contains every other folder. It's the leading `/` of every path.
+
+➡️ Each user has a home folder with their documents...
 
 <br>
 
 #### Regular and non-regular files
 
-On Linux, "everything is a file". Folders, hard drives <small>(/mnt/)</small>, terminals <small>(/dev/)</small>, commands <small>(/bin/)</small>... Regular files are "normal" files. 
+On Linux, "everything is a file". Folders, hard drives <small>(/mnt/)</small>, terminals <small>(/dev/)</small>, commands <small>(/bin/)</small>... Regular files are "normal" files.
 
 See the first character of the output of `ls -l`.
+
 </div><div>
 
 #### Absolute and relative paths
 
-A path starting by the root is called **absolute path**. Otherwise, a path is called **relative path**. There are 3 shortcuts:
+A path starting by the root is called absolute path. Otherwise, they are called relative path. There are 3 shortcuts used in relative paths:
 
-* <kbd>.</kbd> <small>(dot)</small>: will be replaced with the absolute path to the working directory. See the `pwd` command.
-* <kbd>..</kbd> <small>(dot dot)</small>: will be replaced with the parent folder of `.`
-* <kbd>~</kbd> <small>(tilde)</small>: path to user home, same as `$HOME`
+* `.` <small>(dot)</small>: will be replaced with the absolute path to the working directory. See the `pwd` command.
+* `..` <small>(dot dot)</small>: will be replaced with the parent folder of `.`
+* `~` <small>(tilde)</small>: path to user home, same as `$HOME`
+
+```ps
+$ pwd
+/home/example
+$ ./toto.txt
+$ /home/example/toto.txt # same
+```
 
 🦐 `root` is its own parent <small>(`/../` is the same as `/`)</small>.
 
