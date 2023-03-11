@@ -1026,6 +1026,51 @@ $ head file -n -5
 ```
 </div></div>
 
+[**grep** - search by content]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: search files based on their content.
+
+**Example** 🔥:
+
+List files having 'toto' in them
+
+```ps
+$ grep "toto" *
+$ grep --color "toto" * # highlight match
+```
+
+**Best options**
+
+* `-r` recursive <small>(`-R` to follow links too)</small>
+* `-i` Ignore case
+* `-v` Inverse pattern
+* `-c`: number of matches per file
+* `-n`: add line number before each match
+* `-o` show only the matched part
+* `-H` show the file before every match
+* `-w` words-only <small>("XxtotoxX" won't match "toto")</small>
+</div><div>
+
+**regex mode** 🧪
+
+By default, if you are using `?`, `(`, or any character used by regexes, it won't be interpreted <small>(eg. `?` won't be considered as "optional")</small>.
+
+```ps
+$ grep "opt?" * # ❌ match "opt?"
+$ grep "opt\?" * # ✅ "t" is optional
+$ grep -E "opt?" * # ✅ same as grep -E
+$ egrep "opt?" * # ✅ same as grep -E
+```
+
+**Less frequently used options**
+
+* `-L`: stop when match found, show files without matches
+* `-l`: stop when match found, show files with matches
+* `-q`: no output, use the exit code to indicate if a match was found (0), or not (1).
+</div></div>
+
 [**sed** - search and replace]
 
 <div class="row row-cols-md-2"><div>
@@ -1043,7 +1088,7 @@ $ head file -n -5
 * `c`: replace every line with "XXX"
 * `e`: execute the command before every line <small>(you may add parenthesis to make things cleaner)</small>
 
-```bash
+```ps
 $ sed 'iXXX' file
 $ sed 'cXXX' file
 $ sed 'aXXX' file
@@ -1053,7 +1098,7 @@ $ sed 'e(echo hello)' file
 
 Instead of applying a command to every line, you can pick some lines
 
-```bash
+```ps
 $ sed '1iXXX' file # line 1
 $ sed '1,3iXXX' file # line 1 to 3
 $ sed '$iXXX' file # last line
@@ -1074,20 +1119,20 @@ $ sed '1d' file # delete first
 
 Replace every "e" with "E"
 
-```bash
+```ps
 $ sed "s/e/E/g" file
 ```
 
 Replace the first "e" of each line with "E"
 
-```bash
+```ps
 $ sed "s/e/E/" file
 $ sed "s/e/E/1" file
 ```
 
 Comment out every line starting with "S". We use a **capture group** 🚩 which is referenced using `\1`.
 
-```bash
+```ps
 $ sed "s/^\(S.*\)/# \1./" file
 ```
 
@@ -1097,12 +1142,37 @@ $ sed "s/^\(S.*\)/# \1./" file
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚:
+**Usage** 🐚: most of the time, there are other solutions that are more appropriate such as `sed`. `awk` is a mix of `sed`, `cut`, `tr`...
+
+👉 See also: [The_AWK_Programming_Language](https://ia903404.us.archive.org/0/items/pdfy-MgN0H1joIoDVoIC7/The_AWK_Programming_Language.pdf) & [To awk or not](https://pmitev.github.io/to-awk-or-not/)
+
+`awk` is considering space <small>(`-F` to change)</small> as a separator for columns. The first column is `$1`, the nth column is `$n`. `$0` means every column.
+
+The syntax is `awk 'target {action}' file`.
+
+* `target`: filter where the action is applied
+* `action`: print...
+</div><div>
 
 **Example** 🔥:
 
+By default, `awk` prints every column.
+
 ```ps
-$ 
+$ awk '{print}' file
+$ awk -F' ' '{print $0}' file # same
+```
+
+Only print the first column of lines having AT LEAST 6 columns (`NF`)
+
+```ps
+$ awk 'NF > 6 {print $1}' file
+```
+
+Print the first, and the third column, if the file has at least 3 lines (`NR`)
+
+```ps
+$ awk 'NR > 3 {print $1 $3}' file
 ```
 </div></div>
 
