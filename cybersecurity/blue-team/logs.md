@@ -115,3 +115,22 @@ When events occurs, there is a need notify the stakeholders. Both the persons to
 
 Some methods of contact 📨: SMS, email, push notification...
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* /var/log/messages
+* /var/log/syslog
+* /var/log/auth.log
+* /var/log/faillog
+* /var/log/secure
+* /var/log/lastlog
+* /var/run/utmp
+</div><div>
+
+</div></div>

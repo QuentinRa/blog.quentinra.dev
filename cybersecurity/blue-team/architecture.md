@@ -38,13 +38,26 @@ This is done by identifying [risks](/cybersecurity/blue-team/risk.md), prioritiz
 
 * The losses are significant
 * The losses are not lower than the cost to set up controls
-</div><div>
 
 👉 You should view security as a way to enable business, and not preventing it.
 
 👉 Security give a competitive value to product. For instance, by providing a secure way for customers to do purchases on their smartphone, they can increase its value on the market.
+</div><div>
 
 👉 Security is essential for cooperation between business. For instance, a company must trust another company that the data they share with them is properly secured/managed.
+
+🧑‍🍳 Geoff Rob's rules for a successful solution architect are a good reference for security architects:
+
+* **Listen**: understand the problem before trying to solve it
+* **Design Acceptance**: design for people, not for computers
+* **Recognize and challenge assumptions**: don't stay idle, learn...
+* **Communicate effectively**: let people express themselves...
+* **Simplify complex ideas**: not the best, but the best fit for the client
+* **Be flexible and adaptable**: Keep an open mind...
+* **Focus on the big picture**: costs, impacts, benefits, priorities...
+* **Leverage client's investment**: use the infrastructure in place...
+* **Measure twice, cut once**: use scalable/replicable solutions...
+* **Market Awareness**: global view of alternative solutions, trends...
 </div></div>
 
 <hr class="sep-both">

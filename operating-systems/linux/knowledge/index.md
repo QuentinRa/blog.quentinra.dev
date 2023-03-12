@@ -370,6 +370,7 @@ Stuff that I found, but never read/used yet.
 * [tcsh](https://www.ibm.com/docs/en/zos/2.3.0?topic=shells-writing-tcsh-shell-scripts)
 * [ArchTitus](https://github.com/ChrisTitusTech/ArchTitus)
 * [yoctoproject](https://www.yoctoproject.org/)
+* If you met a crazy guy that named something starting with a `-`, then you need to use `--` before the weird filename. For instance: `cp -- -filename`.
 
 </div><div>
 
