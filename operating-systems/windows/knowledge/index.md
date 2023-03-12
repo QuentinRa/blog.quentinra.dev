@@ -147,7 +147,7 @@ CMD> icacls xxx /grant username:F
 
 Modern versions of Windows are using the New Technology File System (**NTFS**). Before, FAT16/32, and HPFS were used. FAT is still used for stuff like USB keys. NTFS is a file system that can repair itself in case of failure, using logs. It's known as a journaling file system.
 
-**Case-insensitive**
+**Case-insensitive and separator** 🏝️
 
 Unlike Linux, for Windows, `a` and `A` are the same. And you can use `\ ` (the default separator), and `/` (Unix separator).
 
@@ -207,6 +207,50 @@ Environment variables are
 * `ProgramFiles(x86)`: location to program files
 * `APPDATA`: location to app data
 * `TEMP` / `TMP`: location to temp folder
+</div></div>
+
+<hr class="sep-both">
+
+## Windows tools
+
+<div class="row row-cols-md-2"><div>
+
+##### lusrmgr.msc
+
+**Usage** 🗺️: Manage local users and groups.
+
+##### msconfig.exe
+
+**Usage** 🗺️: manage startup programs and services...
+
+##### lsass.exe
+
+**Usage** 🗺️: a process handling authentication, password management...
+
+##### winver
+
+**Usage** 🗺️: show Windows version+build, and license holder.
+</div><div>
+
+##### control system
+
+**Usage** 🗺️: opens the system control panel with information on the system <small>(device/Windows specs...)</small>.
+
+##### msinfo32
+
+**Usage** 🗺️: detailed information about the system, hardware and services. The list is browsable/you can search for something.
+
+##### UserAccountControlSettings
+
+**Usage** 🗺️: change UAC settings
+
+##### compmgmt
+
+**Usage** 🗺️: many tools to manage the system such as  shares, running tasks, listing events ([doc](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types), monitoring performance (`perfmon`/`resmon`), or even manage device hardware/services.
+
+##### regedt32/regedit
+
+**Usage** 🗺️ ([doc](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)): view and edit the system registry. This a database used to store information needed to configure the system for users/applications/devices <small>(ports in use, applications...)</small>.
 </div></div>
 
 <hr class="sep-both">

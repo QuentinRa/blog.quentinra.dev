@@ -18,18 +18,6 @@ You can use the commands next to each task to use/open them, and you can also en
 
 * This is the entry point to most settings
 * In the top-right corner, it's possible to switch to another view <small>(ex: small icons)</small>, in which you may discover menus that you (most likely) never opened before, but may but useful one way or another.
-</div><div>
-
-* `lusrmgr.msc`: list of users/groups
-* `msconfig`: see services, manage system configurations
-* `lsass` is responsible for authentication within Windows.
-* `winver`: show Windows version+build, and license holder.
-* `control system`: open system info <small>(device/Windows specs)</small>
-* `msinfo32`: system info <small>(raw, can search)</small>, hardware and services
-* `UserAccountControlSettings`: change UAC settings
-* `compmgmt` is responsible for managing **shares**, **running tasks**, **listing events** ([doc](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types), monitoring performance (`perfmon`/`resmon`), or even manage device hardware/services.
-* `regedt32/regedit` ([doc](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)): open Windows registry, a database used to store information needed to configure the system for users/applications/devices <small>(ports in use, applications...)</small>.
-</div></div>
 
 <hr class="sep-both">
 
