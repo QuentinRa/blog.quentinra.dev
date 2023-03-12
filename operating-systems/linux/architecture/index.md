@@ -10,34 +10,53 @@ An experimental set of notes about Linux internals.
 
 #### Special folders
 
-**user home** (<code>domicile</code>) 🏡: each user has is own folder, with their documents... A common path: <code>/home/toto/</code>.
+The root of every folder is `/`.
 
-See the environment variable `$HOME` and the file `/etc/passwd`.
+##### User  Home (<code>domicile</code>) 🏡
+
+Each user has its own folder, with their documents...
+
+* The home of `username` is commonly at `/home/username/`
+* See the environment variable `$HOME`.
+* See the file `/etc/passwd` for the path of each user home
+* The home folder of `root` is usually at `/root`
 
 <br>
 
-**Binaries** ⚒️: folders used to store commands... There are `/bin/`, `/usr/bin/`, and `/usr/local/bin/`.
+##### Binaries ⚒️
+
+Folders used to store commands... such as `/bin/`, while `/usr/bin/` and `/usr/local/bin/` are also commonly used.
+
+<br>
+
+##### System folders 🏭
+
+System configurations are commonly stored in `/etc/`. System logs and application logs are usually stored in `/var/log/`.
+
+<br>
+
+##### Other folders 🧑‍💻
+
+* `/mnt`: mounted device/hard drives <small>(D:, USB...)</small>
+* `/tmp`: a trash folder cleaned on reboot
 </div><div>
 
 #### Special files
 
-**hidden files** 🤐: Any file starting with <code>.</code> (dot), such as <code>.config</code>.
+Any file starting with <code>.</code> (dot) such as <code>.config</code> are **hidden files** 🤐.
+
+##### Empty file 🧭
+
+The file `/dev/null` is a sort of "trash file" in which everything you write inside is deleted. It's useful when redirecting error output.
 
 <br>
 
-* `/etc` (folder): "commonplace location to store system files that are used by your operating system"
-* `/dev/null` (file): an empty file, a sort of trash file in which everything you write inside is deleted.
-* `/etc/shadow` (file): username, and their hashed password
-* `/etc/gshadow` (file), and `/etc/group`: groups
-* `/var/log/` (folder): log files
-* `/mnt` (folder): mounted device/hard drives (D:, USB...)
-* `/tmp` (folder): a trash folder cleaned on reboot
+##### Configuration files 🏭
 
-XXX
-
-* **Remember** that if you have spaces in your paths, then you must either quote them, or use `\` before any space.
-* If you met a crazy guy that named something starting with a `-`, then you need to use `--` before the weird filename. For instance: `cp -- -filename`.
-
+* `/etc/passwd`: username, their UID, their GID, their home folder
+* `/etc/shadow` <small>(root)</small>: users and their hashed password
+* `/etc/group`: list of groups and their GID
+* `/etc/hosts` <small>(root)</small>: map a domain to an IP, can be edit manually
 </div></div>
 
 <hr class="sep-both">
