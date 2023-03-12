@@ -1,40 +1,5 @@
 # Semaphores
 
-[Go back](../../../__old/c)
-
-Let's set ``n`` : a number of resources. Then we want
-to prevent more than n access of a resource at the same
-time.
-
-Ex: in a shop, n=5 could be understood as the shopkeeper
-can only handle 5 clients at the same time.
-
-```c
-#include <semaphore.h>
-```
-
-### Basic usage
-
-```c
-// init
-//
-// sem will be used to store a semaphore,
-//      so it's an empty global variable
-// pshared value is 0 (or check the doc)
-// n is explained above
-//
-int sem_init(sem_t *sem, int pshared, unsigned int n);
-
-// like we do with mutex, wait for a resource
-// controlled by the semaphore sem,
-// to be available
-int sem_wait(sem_t *sem);
-
-// unlock a resource, meaning someone waiting can
-// take it
-int sem_post(sem_t *sem);
-```
-
 ### Using conditions
 
 You may want to use a condition instead of a number ``n``.

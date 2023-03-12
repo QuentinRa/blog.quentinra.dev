@@ -373,7 +373,7 @@ pthread_mutex_destroy(&mutex_var);
 
 In the example below, we only want to allow one person to do the "unsafe operation" which is increasing `global_variable`. Without a mutex, `global_variable` make take unexpected values due to concurrent modifications.
 
-```c
+```cpp
 int global_variable = 5;
 
 void *my_function(void *arg){
@@ -385,10 +385,38 @@ void *my_function(void *arg){
     pthread_mutex_unlock(&mutex_var);
 }
 ```
-
 </div><div>
 
-...
+#### Load balancing using semaphores
+
+If we have limited resources, we may want to allow up to `n` threads accessing the limited resource at the same time. We can do that using semaphores 🧋🫧.
+
+👉 Semaphores can be used for synchronisation too, and more...
+
+```c
+#include <semaphore.h>
+```
+
+First, initialize the semaphore with the maximum number `n`:
+
+```cpp
+// global variable 🗺️
+sem_t semaphore;
+// in the "main" function
+sem_init(&semaphore, 0, n);
+// ...
+sem_destroy(&semaphore);
+```
+
+The semaphore can be viewed as a box with `n` tickets. The function `wait` will either pick a ticket if there is one, or wait for one. Once the operation is done, the function `post` is used to put back the ticket in the box, allowing someone else to work 🙌.
+
+```cpp
+void *my_function(void *arg){
+    sem_wait(&semaphore);
+    // operation...
+    sem_post(&semaphore);
+}
+```
 </div></div>
 
 <hr class="sep-both">
