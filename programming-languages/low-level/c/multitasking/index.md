@@ -296,6 +296,60 @@ execv("/bin/ls", args);
 
 <hr class="sep-both">
 
+## Threads
+
+<div class="row row-cols-md-2"><div>
+
+Threads, also called "light processes" are similar to process, aside from the fact that they share a part of the parent environment 🪸.
+
+It means that a thread can modify a variable in the parent, and if the parent read the variable, they will see the updated value. This causes new problems related to concurrency 💥.
+
+To compile, you must use `-pthread` <small>("modern" `-lpthread`)</small> with `gcc`. 
+
+```c
+#include <pthread.h> // gcc [...] -pthread
+```
+
+<br>
+
+#### Creation
+
+In a nutshell, a thread is running a function, and dies. The function is taking and returning something of type `void*`. This is because we can store any pointer such as a `int*` in a `void*`.
+
+```
+void *my_function(void *arg){
+    int v = *((int*) arg);
+    printf("%d\n", v);
+    pthread_exit(NULL); // dies 💀 - exit value
+}
+```
+
+We use `pthread_create` to create and run a thread. The function takes 
+
+* `thread`: an empty variable to store the newly created thread
+* `envr`: an environment, can be `NULL`
+* `function`: a function taking a `void*` and returning a `void*`
+* `arg`: an argument passed to your function
+
+```c
+pthread_t thread1;
+int arg = 5;
+// int pthread_create(thread, envr, function, (void*) arg);
+pthread_create(thread1, NULL, my_function, (void*) &arg);
+```
+</div><div>
+
+Similarly to process, we want for the thread to die, meaning it finished its task. We can do that using `pthread_join`:
+
+```c
+// int pthread_join(pthread_t thread, void **code);
+pthread_join(thread1, NULL);
+```
+</div></div>
+
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
