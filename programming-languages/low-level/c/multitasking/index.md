@@ -231,6 +231,71 @@ int fd = mkfifo("filename", 0777);
 
 <hr class="sep-both">
 
+## Process replacement
+
+<div class="row row-cols-md-2"><div>
+
+The code executed by a process can be replaced, for instance, if you want to run a command or another executable.
+
+We are using variants of the system call `exec`. If the process is successfully replace, then the code after the exec is NEVER called, otherwise, the `exec` functions will return `-1`.
+
+```c
+exec[...]([...]);
+perror("exec failed"); // ❌ only called if "exec" fails
+```
+
+#### `execl`: take a list of arguments
+
+```c
+// signature 🗺️
+int execl(const char* ref, const char * args, ..., NULL);
+// example 🔥
+execl("/bin/ls", "ls", "-la", ".", NULL);
+```
+
+* 👉 The first argument is the path to the executable
+* 👉 The second argument is the process name shown using `ps`
+* 👉 The following arguments are the parameters passed to the executable. The last argument must be `NULL`.
+</div><div>
+
+#### `execle`: also take an environment
+
+👉 The last argument is an array of environment variables. The last value must be `NULL`.
+
+```c
+// signature 🗺️
+int execle(const char* ref, const char * args, ..., NULL, char* const envp[]);
+// example 🔥
+char *envp[] = {"TARGET=.", NULL};
+execle("/bin/ls", "ls", "-la", "$TARGET", NULL, envp);
+```
+
+#### `execlp`: use the PATH to find the executable
+
+👉 The first argument is now a name that we will look for in the PATH, instead of an absolute path to the executable.
+
+```c
+// signature 🗺️
+int execle(const char* name, const char * args, ..., NULL);
+// example 🔥
+execle("ls", "ls", "-la", ".", NULL);
+```
+
+#### `execv`: use an array instead of a list
+
+There are also variant: `execvp` and `execvpe`... like for `execl`.
+
+```c
+// signature 🗺️
+int execv(const char* ref, const char * argv[]);
+// example 🔥
+char *args[] = {"ls", "-l", NULL};
+execv("/bin/ls", args);
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

@@ -1,7 +1,5 @@
 # Threads and processes
 
-* [Replace process code](proc/exec.md)
-
 ``Threads`` are some kind of process where some part of
 the environment (variables, ...)
 are shared with other threads created by a process.
