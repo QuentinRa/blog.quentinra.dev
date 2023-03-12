@@ -347,7 +347,7 @@ pthread_join(thread1, NULL);
 
 <hr class="sep-both">
 
-## Thread: concurrency
+## Threads: concurrency
 
 <div class="row row-cols-md-2"><div>
 
@@ -417,6 +417,44 @@ void *my_function(void *arg){
     sem_post(&semaphore);
 }
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Threads: condition variables
+
+<div class="row row-cols-md-2"><div>
+
+Conditions variables are used to stop executing a thread until a condition is true. You will need a mutex, and a condition variable:
+
+```c
+// global variable 🗺️
+pthread_cond_t cond;
+```
+
+```cpp
+void *my_function(void *arg){
+    pthread_mutex_lock(&mutex);
+    while(a_condition)
+        pthread_cond_wait(&cond, &mutex);
+    
+    // some code...
+    
+    // 👉 Notify others to check the condition again
+    pthread_cond_broadcast(&cond);
+    pthread_mutex_unlock(&mutex);
+}
+```
+</div><div>
+
+**Breakdown** 🍔
+
+Since multiple variable may read/edit the variable used in `a_condition`, we need a mutex.
+
+The condition is something that we define, such as `n != 5`. If the condition is true, `pthread_cond_wait` will unlock the mutex, and wait for a `pthread_cond_broadcast`.
+
+`pthread_cond_broadcast` is a method that we call to notify any waiting thread that they should wake up as `a_condition` may have changed. 
+
 </div></div>
 
 <hr class="sep-both">
