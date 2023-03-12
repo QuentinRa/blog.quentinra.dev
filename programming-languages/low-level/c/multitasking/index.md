@@ -310,10 +310,6 @@ To compile, you must use `-pthread` <small>("modern" `-lpthread`)</small> with `
 #include <pthread.h> // gcc [...] -pthread
 ```
 
-<br>
-
-#### Creation
-
 In a nutshell, a thread is running a function, and dies. The function is taking and returning something of type `void*`. This is because we can store any pointer such as a `int*` in a `void*`.
 
 ```
@@ -323,8 +319,9 @@ void *my_function(void *arg){
     pthread_exit(NULL); // dies 💀 - exit value
 }
 ```
+</div><div>
 
-We use `pthread_create` to create and run a thread. The function takes 
+We use `pthread_create` to create and run a thread. The function takes
 
 * `thread`: an empty variable to store the newly created thread
 * `envr`: an environment, can be `NULL`
@@ -335,9 +332,8 @@ We use `pthread_create` to create and run a thread. The function takes
 pthread_t thread1;
 int arg = 5;
 // int pthread_create(thread, envr, function, (void*) arg);
-pthread_create(thread1, NULL, my_function, (void*) &arg);
+pthread_create(&thread1, NULL, my_function, (void*) &arg);
 ```
-</div><div>
 
 Similarly to process, we want for the thread to die, meaning it finished its task. We can do that using `pthread_join`:
 
@@ -345,8 +341,55 @@ Similarly to process, we want for the thread to die, meaning it finished its tas
 // int pthread_join(pthread_t thread, void **code);
 pthread_join(thread1, NULL);
 ```
+
+👉 "code" is an empty pointer of the same type as the return value.
 </div></div>
 
+<hr class="sep-both">
+
+## Thread: concurrency
+
+<div class="row row-cols-md-2"><div>
+
+#### Synchronisation using mutex
+
+A `mutex` is a mechanism to only allow one person at a time to execute some code, usually to safely modify a variable.
+
+* 🔒 Before executing the "unsafe" code, we try to lock the `mutex`
+* ⏳ If we can't, we have to wait until the `mutex` is unlocked
+* 🔑 After executing the "unsafe" code, we unlock the `mutex`
+
+First, initialize the mutex: 
+
+```cpp!
+// global variable 🗺️
+// version 1: using a MACRO
+pthread_mutex_t mutex_var = PTHREAD_MUTEX_INITIALIZER;
+// version 2: using functions
+pthread_mutex_t mutex_var;
+pthread_mutex_init(&mutex_var, NULL);
+pthread_mutex_destroy(&mutex_var);
+```
+
+In the example below, we only want to allow one person to do the "unsafe operation" which is increasing `global_variable`. Without a mutex, `global_variable` make take unexpected values due to concurrent modifications.
+
+```c
+int global_variable = 5;
+
+void *my_function(void *arg){
+    // 🔒 try to lock
+    pthread_mutex_lock(&mutex_var);
+    // 😰 unsafe operation
+    variable_globale++;
+    // 🔑 unlock
+    pthread_mutex_unlock(&mutex_var);
+}
+```
+
+</div><div>
+
+...
+</div></div>
 
 <hr class="sep-both">
 
