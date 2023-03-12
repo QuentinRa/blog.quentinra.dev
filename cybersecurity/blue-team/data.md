@@ -364,6 +364,9 @@ Stuff that I found, but never read/used yet.
 * Retention policy, a business continuity plan <small>(step 4 of data life-cycle)</small>
 * Data Stewardship
 * Test data
+* Information architecture triangle
+* minimize data redundancy to ensure that data is accurate, consistent, and secure
+* misused or mishandled
 </div><div>
 
 Data breaches

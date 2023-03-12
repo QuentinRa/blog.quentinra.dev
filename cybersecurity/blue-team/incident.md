@@ -2,8 +2,6 @@
 
 <hr class="sep-both">
 
-<hr class="sep-both">
-
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
