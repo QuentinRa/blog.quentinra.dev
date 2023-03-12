@@ -152,7 +152,7 @@ Comments can be written using `@` or `#` or  `;`.
 
 #### System calls 🧑‍🏭
 
-While you can use some functions such as printf <small>(if imported)</small>, most of the time, you will only be able to use **system calls**.
+While you can use some functions such as printf <small>(if imported)</small>, most of the time, you will only be able to use [**system calls**](/programming-languages/low-level/system_calls/index.md).
 
 Each system call is identified by a code: `exit` (1), `fork` (2),  `read` (3), `write` (4), `open` (5), and `close` (6). You can find them here:
 

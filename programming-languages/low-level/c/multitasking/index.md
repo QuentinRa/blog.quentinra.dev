@@ -24,7 +24,7 @@ There are a few related topics:
 
 <div class="row row-cols-md-2"><div>
 
-A process is both a program, and it's environment.
+A [process](/operating-systems/linux/architecture/index.md#processes-and-scheduling) is both a program, and it's environment.
 
 * file descriptors <small>(file opened, position of the cursor...)</small>
 * variables and environment variables
@@ -242,7 +242,5 @@ Stuff that I found, but never read/used yet.
 * `dup/dup2/dup3`
 </div><div>
 
-* scheduler
-* pseudo-parallelism
 * adding exercises from ens
 </div></div>

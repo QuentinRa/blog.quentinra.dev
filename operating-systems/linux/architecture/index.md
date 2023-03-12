@@ -78,7 +78,7 @@ A process is a box with stuff related to the execution of a program:
 
 When a machine boots up, the kernel process is started, with the pid 0. It starts a **daemon process** called `init` or `systemd` with the pid 1, which is the parent of every process.
 
-👉 A **daemon** is a process that never ends.
+👉 A **daemon** is a process that never ends. By convention, their name usually ends with `d`.
 
 👉 Processes are stored in `/proc/`, in a folder named after their PID.
 

@@ -14,7 +14,7 @@ You will find inside
 
 </div></div>
 
-➡️ See [Multitasking](/_programming/code/c/multitasking/index.md) for: `fork`, `wait`, `pipe`, `sleep`, `kill`, `exec*`...
+➡️ See [Multitasking](/programming-languages/low-level/c/multitasking/index.md) for: `fork`, `wait`, `pipe`, `sleep`, `kill`, `exec*`, `dup*`...
 
 <hr class="sl">
 

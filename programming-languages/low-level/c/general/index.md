@@ -810,10 +810,12 @@ Stuff that I found, but never read/used yet.
 * GDB
 * Gcc
 
-```
-gcc -std=c99
+```text!
+gcc -std=c99 -o xxx -c # .o -g # add info for gdb
+--MM # deps -ansi # c89 -Wall # warnings -pedantic # conformity
+-E # intermediate files
 sudo apt-get install build-essential gdb
-file:///C:/Users/quent/Documents/texas-res/_build/html/system/bash/files/bash/utils.html
+sudo apt-get install manpages-dev
 ```
 
 * [onlinegdb](https://learn.onlinegdb.com/)
