@@ -1,39 +1,30 @@
-Daemons are called **services** on Windows. They are usually ending with **d**.
+# XXX
 
 <hr class="sep-both">
 
-## Windows services
+## 👻 To-do 👻
 
-You can use the commands next to each task to use/open them, and you can also enter the command inside "execute" (Win  ➕ R). Note that extensions that you may see are such as ".exe", or ".msc" optional (see `PATHEXT`).
+Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-**Task Manager** (`taskmgr`)
-
-* Shortcut: <kbd>CTRL+SHIFT+ESC</kbd>
-* List of running processes
-* This guide is quite complete [Windows Task Manager](https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide/)
-
-**Control panel** (`control`)
-
-* This is the entry point to most settings
-* In the top-right corner, it's possible to switch to another view <small>(ex: small icons)</small>, in which you may discover menus that you (most likely) never opened before, but may but useful one way or another.
-
-<hr class="sep-both">
-
-## Windows security
-
-<div class="row row-cols-md-2 mt-4"><div>
+* lusrmgr.msc: can be used to find entrypoints (weak passwords, groups with too many perms)
+* msconfig (find malware?)/winver (outdated?)/control system (open ports...)/msinfo32 (outdated?)/compmgmt (scheduled tasks...)/regedit (misconfiguration...): info can help in find vulnerabilities
+* lsass (bypass?)/UserAccountControlSettings: identify weakness
+* Process Explorer
+* Sysinternals Suite
+* PowerSploit...
+* Mimikatz...
+* Microsoft Security Compliance Toolkit (SCT)
+</div><div>
 
 **Windows Update** (`control /name Microsoft.WindowsUpdate`)
 
 A service looking for updates, downloading them, and asking <small>(forcing since Windows 10)</small> the user to install them. They are usually released on the 2nd Tuesday of each month (Patch Tuesday).
-</div><div>
 
 **Windows security** / **Windows defender**
 
 A set of tools to protect your Windows. There is an antivirus, which has a "ransomware protection" feature. There is a firewall to set rules for your network traffic. [SmartScreen](https://learn.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) was designed to protect against phishing or malware, and there is a tab with security features such as Core isolation.
-
 
 **BitLocker**
 

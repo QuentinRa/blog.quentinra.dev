@@ -215,6 +215,20 @@ Environment variables are
 
 <div class="row row-cols-md-2"><div>
 
+Windows tools can be opened using "execute" (Win  ➕ R) or in a CMD/PowerShell. Extensions that you may see are such as ".exe", or ".msc" optional (see `PATHEXT`). Two well-known tools are:
+
+**Task Manager** (`taskmgr`) 🕰️
+
+* Shortcut: <kbd>CTRL+SHIFT+ESC</kbd>
+* List of running processes
+* This guide is quite complete [Windows Task Manager](https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide/)
+
+**Control panel** (`control.exe`) 🧑‍🍳
+
+* This is the entry point to most settings
+* In the top-right corner, it's possible to switch to another view <small>(ex: small icons)</small>, in which you may discover menus that you (most likely) never opened before, but may but useful one way or another.
+
+
 ##### lusrmgr.msc
 
 **Usage** 🗺️: Manage local users and groups.
@@ -226,29 +240,29 @@ Environment variables are
 ##### lsass.exe
 
 **Usage** 🗺️: a process handling authentication, password management...
-
-##### winver
-
-**Usage** 🗺️: show Windows version+build, and license holder.
 </div><div>
 
-##### control system
+##### winver.exe
+
+**Usage** 🗺️: show Windows version+build, and license holder.
+
+##### control.exe system
 
 **Usage** 🗺️: opens the system control panel with information on the system <small>(device/Windows specs...)</small>.
 
-##### msinfo32
+##### msinfo32.exe
 
 **Usage** 🗺️: detailed information about the system, hardware and services. The list is browsable/you can search for something.
 
-##### UserAccountControlSettings
+##### UserAccountControlSettings.exe
 
 **Usage** 🗺️: change UAC settings
 
-##### compmgmt
+##### compmgmt.msc
 
 **Usage** 🗺️: many tools to manage the system such as  shares, running tasks, listing events ([doc](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types), monitoring performance (`perfmon`/`resmon`), or even manage device hardware/services.
 
-##### regedt32/regedit
+##### regedt32.exe/regedit.exe
 
 **Usage** 🗺️ ([doc](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)): view and edit the system registry. This a database used to store information needed to configure the system for users/applications/devices <small>(ports in use, applications...)</small>.
 </div></div>
@@ -260,5 +274,7 @@ Environment variables are
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
+
+* Daemons (linux) are called services on Windows
 </div><div>
 </div></div>
