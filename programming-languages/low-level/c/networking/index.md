@@ -45,12 +45,11 @@ int open_client_fd(char *hostname, int port){
 ```c
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <string.h>
 
 typedef struct sockaddr SA;
 
 int open_listen_fd_server(int port){
-    int listen_fd, opt_val = 1;
+    int listen_fd;
     struct sockaddr_in server_addr;
 
     // 🔥 todo 1: create the socket
@@ -64,6 +63,45 @@ int open_listen_fd_server(int port){
     return listen_fd;
 }
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Filling the common parts
+
+<div class="row row-cols-md-2"><div>
+
+In the client, both in UDP and TCP clients, you will need to generate a `server_addr` with the address and port of the server. You can extract the code in one reusable function: `create_server_addr`.
+
+```cpp
+#include <string.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <netdb.h>
+
+int create_server_addr(struct sockaddr_in *server_addr, char *hostname, int port) {
+    struct hostent *hp;
+
+    if ((hp = gethostbyname(hostname)) == NULL)
+        return -1;
+
+    bzero((char *) server_addr, sizeof(*server_addr));
+    server_addr->sin_family = AF_INET;
+    server_addr->sin_port = htons(port);
+    bcopy((char *) hp->h_addr, (char *) &server_addr->sin_addr.s_addr, hp->h_length);
+
+    return 0;
+}
+```
+</div><div>
+
+For **🌹 todo 2: set options for the socket**, I'm using this code:
+
+```c
+int opt_val = 1;
+```
+
+For **✈️ todo 3: bind the socket to the address/port**, I'm using this code: 
 </div></div>
 
 <hr class="sep-both">
