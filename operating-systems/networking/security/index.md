@@ -210,3 +210,45 @@ DNS servers are used to map a domain to an IP address.
 
 👉 Use the DNS protocol to send malicious payload in DNS query to bypass firewalls/... ➡️ DNS firewalls...
 </div></div>
+
+<hr class="sep-both">
+
+## ACLs
+
+<div class="row row-cols-md-2"><div>
+
+Access control lists (ACLs) are used to control traffic flow on a network interface by allowing or denying traffic based on specific criteria.
+
+* 🚛 one ACL for each enabled protocol
+* ✈️ one ACL per direction <small>(incoming and outgoing)</small>
+* 🎯 you can create one ACL for each interface
+
+They can be used on many types of network devices. There are two types of ACLs:
+
+* ✋ **Standard ACLs**: filter based on the IP address
+* ⛔ **Extended ACLs**: filter based on the source and destination IP address and port, the protocol...
+
+
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Cisco
+
+<div class="row row-cols-md-2"><div>
+
+ACLs (std <small>(1-99, 1300-1999)</small>, extended <small>(100-199, 2000-2699)</small>, can be a string)
+
+```js!
+access-list 10 permit 192.168.30.0 0.0.0.255 # std
+access-list 103 permit tcp 192.168.30.0 0.0.0.255 any eq 80 # extended
+access-list 101 permit tcp host 192.168.1.100 any eq www
+access-list 101 deny ip any any
+```
+</div><div>
+
+...
+</div></div>
