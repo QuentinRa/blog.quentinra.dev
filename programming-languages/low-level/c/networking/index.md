@@ -71,7 +71,7 @@ int open_server_fd(int port){
 
 <div class="row row-cols-md-2"><div>
 
-In the client, both in UDP and TCP clients, you will need to generate a `server_addr` with the address and port of the server. You can extract the code in one reusable function: `create_server_addr`.
+In UDP clients/servers and TCP clients, you will need to generate a `sock_addr` with the address and port of the client/server. You can extract the code in one reusable function: `create_sock_addr` 👑.
 
 ```cpp
 #include <string.h>
@@ -79,16 +79,17 @@ In the client, both in UDP and TCP clients, you will need to generate a `server_
 #include <netinet/in.h>
 #include <netdb.h>
 
-int create_server_addr(struct sockaddr_in *server_addr, char *hostname, int port) {
+int create_sock_addr(struct sockaddr_in *sock_addr,
+                       char *hostname, int port) {
     struct hostent *hp;
 
     if ((hp = gethostbyname(hostname)) == NULL)
         return -1;
 
-    bzero((char *) server_addr, sizeof(*server_addr));
-    server_addr->sin_family = AF_INET;
-    server_addr->sin_port = htons(port);
-    bcopy((char *) hp->h_addr, (char *) &server_addr->sin_addr.s_addr, hp->h_length);
+    bzero((char *) sock_addr, sizeof(*sock_addr));
+    sock_addr->sin_family = AF_INET;
+    sock_addr->sin_port = htons(port);
+    bcopy((char *) hp->h_addr, (char *) &sock_addr->sin_addr.s_addr, hp->h_length);
 
     return 0;
 }
@@ -145,7 +146,7 @@ if ((client_fd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
 
 ```cpp
 struct sockaddr_in server_addr;
-if (create_server_addr(&server_addr, hostname, port) < 0)
+if (create_sock_addr(&server_addr, hostname, port) < 0)
     return -1;
 if (connect(client_fd, (SA *)&server_addr, sizeof(server_addr)) < 0)
     return -1;
@@ -222,6 +223,48 @@ if ((server_fd = socket(AF_INET, SOCK_DGRAM, 0)) < 0)
 
 ```cpp
 // none
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Read and write
+
+<div class="row row-cols-md-2"><div>
+
+If you are familiar with [system calls](/programming-languages/low-level/system_calls/index.md), you should already know that low-level function such as `read` or `write` takes a file descriptor.
+
+</div><div>
+
+#### UDP (client/server)
+
+You can use `recvfrom`/`sendto` to receive/send messages. As a reminder, you first need the address of the host:
+
+```
+// 👉 could be the address of a client/a server
+struct sockaddr_in sock_addr;
+create_sock_addr(&sock_addr, "127.0.0.1", 66554);
+```
+
+Send a message:
+
+```cpp
+char *message = "Hello, server!";
+size_t message_len = strlen(message);
+
+if (sendto(client_fd, message, message_len, 0, (struct sockaddr *) &sock_addr, sizeof(sock_addr)) < 0) {
+    // handle error
+}
+```
+
+Receive a message:
+
+```cpp
+char buffer[1024];
+socklen_t sock_len = sizeof(sock_addr);
+if (recvfrom(client_fd, buffer, 1024, 0, (struct sockaddr *)&sock_addr, &sock_len) < 0) {
+    // handle error
+}
 ```
 </div></div>
 
