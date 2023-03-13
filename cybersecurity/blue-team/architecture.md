@@ -24,6 +24,8 @@ Additionally, some security controls may be enforced:
   * CIS Security
   * SANS <small>(see: critical security controls...)</small>
   * Providers <small>(ex: Cisco...)</small>
+
+> For a good laugh, see [some excuses to not do your job properly](https://cyberwtf.com/).
 </div></div>
 
 <hr class="sep-both">

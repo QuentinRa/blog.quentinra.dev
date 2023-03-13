@@ -1,16 +1,6 @@
 # Getting started
 
-[![beginnerpathintro](../_badges/thm/beginnerpathintro.svg)](https://tryhackme.com/room/beginnerpathintro)
-[![startingoutincybersec](../_badges/thm/startingoutincybersec.svg)](https://tryhackme.com/room/startingoutincybersec)
-[![defensivesecurity](../_badges/thmp/defensivesecurity.svg)](https://tryhackme.com/room/defensivesecurity)
-[![careersincyber](../_badges/thmp/careersincyber.svg)](https://tryhackme.com/room/careersincyber)
-[![pentestingfundamentals](../_badges/thm/pentestingfundamentals.svg)](https://tryhackme.com/room/pentestingfundamentals)
-[![principlesofsecurity](../_badges/thm/principlesofsecurity.svg)](https://tryhackme.com/room/principlesofsecurity)
-
-A lot of stuff to get started in cybersecurity, including websites to learn, practice, find news, look for news, CVE lookup, and websites to check if your credentials leaked, or stuff like that. 
-
-> You may also check [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources) (GitHub).<br>
-> If you are tired, learn [some excuses to not do your job properly](https://cyberwtf.com/).
+> You may also check [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources) (GitHub).
 
 <hr class="sep-both">
 
@@ -18,37 +8,11 @@ A lot of stuff to get started in cybersecurity, including websites to learn, pra
 
 A cyber expert can specialize in offense/defense
 
-<table class="table table-bordered table-striped border-dark">
-<thead>
-<tr><th></th><th>Offense (Read Team)</th><th>Defense (Blue team)</th></tr>
-</thead>
-<tbody>
-
-<tr><td>Work</td>
-<td>
-
-Look for vulnerabilities (bugs, loopholes) in the tools/software of a company, try to exploit them, and suggest patches.
-</td>
-<td>
+**Defense (Blue team)**
 
 Prevent attacks <small>(firewall, IPS)</small>. Monitor, and analyze traffic... Detect, and stop attacks as fast as possible. Investigate/Do Forensics. Find attack paths/track down hackers.
 
 Do awareness, document the network/devices, update, and ensure that the company is protected against known vulnerabilities.
-</td></tr>
-
-<tr><td>Skills</td>
-<td>
-
-Knowledgeable in a lot of things
-
-* **Web**: HTML/CSS/JS/Node/PHP
-* **DataBases**: SQL/NoSQL/PLSQL
-* **Networking**: Bash/PowerShell/Network
-* **Cloud**
-* ...
-
-</td>
-<td>
 
 Knowledgeable about
 
@@ -57,43 +21,23 @@ Knowledgeable about
 * Linux/Windows
 * Networking
 * ...
-</td></tr>
 
-<tr><td></td>
-<td>
-
-* **Rules of Engagement (ROE)**: an agreement between a penetration tester and the system owner, defining the scope <small>(servers)</small>, and the rules <small>(techniques allowed)</small>. Everything outside the scope is illegal (ex: [SANS ROE template](https://sansorg.egnyte.com/dl/bF4I3yCcnt/)).
-
-* You can have no knowledge about the target <small>(black box)</small>, a partial knowledge <small>(grey box)</small>, or a complete knowledge <small>(white box)</small>. According to your knowledge of the application, you will test different things.
-
-</td>
-<td>
+Tools
 
 * **SIEM**: A Security Information and Event Management system is centralizing information from various places in one interface <small>(login attempts...)</small>.
 * **Security Operation Center** (SOC): a team of cybersecurity professionals working 24/7 <small>(detect unusual activity, vulnerabilities, intrusions, violations, training/awareness)</small>. They are using the firewall/DNS/DHCP/... logs, Network security monitoring (NSM), and they might use a SIEM.
 * **Threat Intelligence**: dig information about actual and potential enemies, and prepare in case they attack you.
 * **Threat hunting**: if a machine is suspected to have been intruded, they start hunting to confirm their assumption.
 * **Threat modeling**: review, and improve the security measures (STRIDE, PASTA)
-* **Defense in-depth**
-</td></tr>
+* **Defense in-depth**: xxx
 
-<tr><td>Jobs</td>
-<td>
-
-* **Red Teamer**: play the hacker, and provide feedback from an enemy perspective. They are testing the company response.
-* **Penetration tester**: Try to find vulnerabilities in a system, a network, or an application. Perform security assessments, and audits. Recommend actions to prevent attacks.
-* **Security Engineer**: implement, and maintain security controls, handle threats protection... to help prevent cyberattacks, and protect data.
-
-</td>
-<td>
+Jobs
 
 * **Security Analyst**: Analyse, and remediate to issues. Develop security plans to keep the company safe.
 * **Incident responder**: determine how a cyberattack is handled, see [Incident Handling Guide by the NIST](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf), [OSSTMM](https://www.isecom.org/OSSTMM.3.pdf), [NIST Cybersecurity Framework 1.1](https://www.nist.gov/cyberframework), [NCSC CAF](https://www.ncsc.gov.uk/collection/caf/caf-principles-and-guidance), and [OWASP](https://owasp.org/).
 * **Digital Forensics**: investigate attacks <small>(file system, memory, logs)</small>, and policies violations.
 * **Malware Analyst**/**Reverse-engineer**: analyse malware, statically <small>(read the code)</small>, and dynamically <small>(see what it does)</small>.
 * **Security researcher**: research Linux, hashing algorithms...
-</td></tr>
-</tbody></table>
 
 > There are **White hats**: hackers that follow the rules, and try to benefit others<br>
 > There are **Grey hats**: hackers that are usually not following the rules, but often benefit others <small>(take down malicious websites)</small><br>
