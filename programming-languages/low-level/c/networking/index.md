@@ -232,9 +232,60 @@ if ((server_fd = socket(AF_INET, SOCK_DGRAM, 0)) < 0)
 
 <div class="row row-cols-md-2"><div>
 
-If you are familiar with [system calls](/programming-languages/low-level/system_calls/index.md), you should already know that low-level function such as `read` or `write` takes a file descriptor.
+#### TCP (server)
 
+TCP server need to accept a connection first. Once you did, you will get a client file descriptor, and will be able to use the same functions as in a client (see the section below 📌).
+
+```cpp
+int client_fd;
+struct sockaddr_in client_addr;
+socklen_t client_addr_length = sizeof(client_addr);
+if ((client_fd = accept(server_fd, (struct sockaddr *)&client_addr, &client_addr_length))<0) {
+    // handle error
+}
+```
+
+Inside `client_addr`, you will find the IP address of the client and other data as in any `sockaddr_in`.
+
+<br>
+
+#### TCP (client)
+
+If you are familiar with [system calls](/programming-languages/low-level/system_calls/index.md), you should already know that low-level function such as `read` or `write` takes a file descriptor. They work with `client_fd` then.
+
+```cpp
+int client_fd = [...];
+// Read
+char buffer[1024] = {0};
+if (read(client_fd, buffer, 1024) < 0) {
+    // handle error
+ }
+
+// send
+char *message = "Hello, XXX!";
+size_t message_len = strlen(message);
+if (write(client_fd, message , message_len) < 0) {
+    // handle error
+}
+```
+
+👉 You can also use `recv`/`send` with `0` (flag).
 </div><div>
+
+You can gracefully close a socket using close.
+
+```cpp
+close(client_fd);
+```
+
+In some specific scenarios, you may want to stop receiving/sending messages. You can do that using shutdown.
+
+```cpp
+shutdown(client_fd, SHUT_WR); // close - send
+shutdown(client_fd, SHUT_RD); // close - receive
+```
+
+<br>
 
 #### UDP (client/server)
 
@@ -249,7 +300,7 @@ create_sock_addr(&sock_addr, "127.0.0.1", 66554);
 Send a message:
 
 ```cpp
-char *message = "Hello, server!";
+char *message = "Hello, XXX!";
 size_t message_len = strlen(message);
 
 if (sendto(client_fd, message, message_len, 0, (struct sockaddr *) &sock_addr, sizeof(sock_addr)) < 0) {
