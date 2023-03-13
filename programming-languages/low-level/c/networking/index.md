@@ -167,7 +167,7 @@ if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
     return -1;
 ```
 
-**🍀 todo 4: additional configuration**
+**🍀 todo 4: additional configuration**: we listen for up to 1024 concurrent TCP connections.
 
 ```cpp
 if (listen(server_fd, 1024) < 0)
@@ -222,6 +222,43 @@ if ((server_fd = socket(AF_INET, SOCK_DGRAM, 0)) < 0)
 
 ```cpp
 // none
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Common functions
+
+<div class="row row-cols-md-2"><div>
+
+**inet_aton** 🔢: convert an IP (`cp`) in a machine representation (`in_addr`).
+
+```cpp
+int inet_aton(const char *cp, struct in_addr *inp);
+```
+
+**inet_aton** 🔤: return from `in_addr` the human-readable IP address.
+
+```cpp
+char *inet_ntoa(struct in_addr in);
+```
+
+**gethostbyname** 🌍: find the IP address from a DNS name.
+
+```cpp
+struct hostent *gethostbyname(const char *name);
+```
+</div><div>
+
+📥 You can use these to convert a number in the machine format <small>(big-endian, little-endian)</small> to a network format <small>(standardized)</small>.
+
+```cpp
+// machine to network format
+ulong htonl(ulong hostlong);
+ulong htons(ulong hostshort);
+// network format to machine
+ulong ntohl(ulong netlong);
+ulong ntohs(ulong netshort);
 ```
 </div></div>
 
