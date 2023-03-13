@@ -15,7 +15,7 @@ When writing tests it's important to test both correct cases ✅, and incorrect 
 
 * ⬜ White-box testing: you know about the code
 * ⬛ Black-box testing: you only know about I/O <small>(params/result)</small>
-* 🏴 Grey-box testing: a mix of both
+* 🌫️ Grey-box testing: a mix of both
 </div></div>
 
 <hr class="sep-both">

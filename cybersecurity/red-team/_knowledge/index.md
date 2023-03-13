@@ -44,31 +44,38 @@ Everything outside the scope is illegal. See [SANS ROE template](https://sansorg
 
 <hr class="sep-both">
 
+## Methodology
+
+<div class="row row-cols-md-2"><div>
+
+The [Cyber Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html) model identifies 7 steps in the hacking process
+
+1. 🔎 **Reconnaissance**: investigate the target <small>(passive, and active recon)</small>
+2. 🔫 **Weaponization**: create/prepare an exploit
+3. 📩 **Delivery**: deliver your exploit
+4. 🎁 **Exploitation**: make the exploit used
+5. 💥 **Installation**: install a malware
+6. 🧑‍💻 **Command&Control**: get a remote shell on the victim
+7. 🍾 **Actions on objective**: accomplish the goal
+
+The [Unified Kill Chain](https://www.unifiedkillchain.com/) is a more developed/detailed version.
+</div><div>
+
+For a penetration tester, it's more something like that
+
+* 🔎 **Investigation** (passive): information gathering
+* 🔎 **Discovery** (active): enumerate/scan the target to find running applications, and services
+* 💥 **Exploitation**: find a way to get in, get a **foothold**
+* 👑 **Privilege Escalation**: try to get root/administrator (horizontal/vertical escalation)
+* 🧼 **Post-exploitation**: accomplish the goal, hide your traces...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
-
-* [Old - Getting Started](/_kmp/_cybersecurity/cybersecurity/index.md)
-* [Old - Virtual Machines](/_kmp/_cybersecurity/cybersecurity/vms.md)
-* [Old - H@king process](/_kmp/_cybersecurity/cybersecurity/hacking_process.md)
-* [Old - H@king box](/_kmp/_cybersecurity/cybersecurity/hacking_box.md)
-
-Investigation
-
-* [Old - Investigation](/_kmp/_cybersecurity/investigation/general/index.md)
-* [Old - Investigate Files](/_kmp/_cybersecurity/investigation/files/index.md)
 </div><div>
-
-Discovery
-
-* [Old - Discovery](/_kmp/_cybersecurity/discovery/index.md)
-* [Old - Nmap](/_kmp/_cybersecurity/discovery/nmap/index.md)
-* [Old - Nessus](/_kmp/_cybersecurity/discovery/nmap/index.md)
-
-Random
-
-* [Old - CyberDefense](/_kmp/_cybersecurity/defense/general/index.md)
-* [Old - Digital Forensics](/_kmp/_cybersecurity/defense/digital_forensics/index.md)
 </div></div>
