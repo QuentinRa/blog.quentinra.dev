@@ -4,9 +4,9 @@
 
 Kotlin is a open-source, modern, programming language developed by JetBrains since 2011.
 
-* 👉 More concise, simplified, version of Java
-* 👉 Can be converted back to a `.java`
-* 👉 Main language used for Android applications
+* 😎 More concise, simplified, version of Java
+* ✈️ Main language used for Android applications
+* 👌 A Kotlin file (`.kt`) can be converted to a Java file (`.java`)
 </div><div>
 
 **Where to learn?**
@@ -49,10 +49,10 @@ someVar3!!.toString() // Assert non null
 
 Types are implicit. There are a few changes with Java.
 
-* `Unit` (kotlin) is `void` (Java)
-* `Any` (kotlin) is `Object` (Java)
-* `Int` (kotlin) is `Integer` (Java)
-* `Number`, `Float`, `Double`, `String`, `Char`
+* `Unit` (kotlin) is the same as `void` (Java)
+* `Any` (kotlin) is the same as `Object` (Java)
+* `Int` (kotlin) is the same as `Integer` (Java)
+* `Number`, `Float`, `Double`, `String`, `Char` are unchanged
 
 You can convert an XXX to an YYY with `.toYYY()`
 
@@ -106,23 +106,23 @@ TODO("Not yet implemented")
 
 In kotlin, there are many functions taking another function (lambda).
 
-```
+```kt
 fun xxx(yyy: (Int) -> String) { /* ... */ }
-// possible usage
+// one way to cal "xxx"
 xxx( fun (x: Int) : String = x.toString() )
 ```
 
-We usually use the **trailing lambda syntax**. The parameter is available in a variable called `it`.
+We usually use the **trailing lambda syntax** to call such functions. The parameter is available in a variable called `it`.
 
-```
+```cpp
 xxx { it.toString() }
 ```
 
 We can explicitely add the return type and/or the argument name.
 
-```
-xxx { yyy: Int ->
-    return@xxx yyy.toString()
+```kt
+xxx { x: Int ->
+    return@xxx x.toString()
 }
 ```
 </div></div>
