@@ -344,7 +344,7 @@ struct hostent *gethostbyname(const char *name);
 ```
 </div><div>
 
-📥 You can use these to convert a number in the machine format <small>(big-endian, little-endian)</small> to a network format <small>(standardized)</small>.
+**XtoY** 📥: You can use these to convert a number in the machine format <small>(big-endian, little-endian)</small> to a network format <small>(standardized)</small>.
 
 ```cpp
 // machine to network format

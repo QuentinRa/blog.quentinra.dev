@@ -2,75 +2,6 @@
   "title": "Cybersecurity",
   "description": "My notes notes about Cybersecurity.",
   "courses": {
-    "~e1": [
-      {
-        "tag": "cybersecurity/index.md",
-        "name": "Getting Started",
-        "desc": "Websites to learn, practice, find news, look for news, along with CVE lookup, credentials leak lookup, or stuff like that. ",
-        "icon": "<i class=\"bi bi-shield-lock\"></i>",
-        "hidden": false
-      },
-      {
-        "tag": "cybersecurity/vms.md",
-        "name": "Virtual Machines",
-        "desc": "Notes/links to find a VM (Windows, Kali, CTF...) and install it.",
-        "icon": null,
-        "hidden": false
-      },
-      {
-        "tag": "cybersecurity/hacking_process.md",
-        "name": "H@king process",
-        "desc": "",
-        "icon": null,
-        "hidden": false
-      },
-      {
-        "tag": "cybersecurity/hacking_box.md",
-        "name": "H@king box",
-        "desc": "Stuff that couldn't be put somewhere else.",
-        "icon": null,
-        "hidden": false
-      }
-    ],
-    "1. Investigation 🔎": [
-      {
-        "tag": "investigation/general/index.md",
-        "name": "Investigation",
-        "desc": "Step 1: Dig information from afar.",
-        "icon": null,
-        "hidden": false
-      },
-      {
-        "tag": "investigation/files/index.md",
-        "name": "Investigate Files",
-        "desc": "Find metadata from a PDF, an image... Learn about steganography, tricks...",
-        "icon": null,
-        "hidden": false
-      }
-    ],
-    "2. Discovery 🗺️": [
-      {
-        "tag": "discovery/index.md",
-        "name": "Discovery",
-        "desc": "Step 2: approach your targets to learn more about them.",
-        "icon": null,
-        "hidden": false
-      },
-      {
-        "tag": "discovery/nmap/index.md",
-        "name": "Nmap",
-        "desc": "The Network Mapper. Find open ports, running services, and common vulnerabilities.",
-        "icon": "<i class=\"bi bi-tools\"></i>",
-        "hidden": false
-      },
-      {
-        "tag": "discovery/nessus/index.md",
-        "name": "Nessus",
-        "desc": "Automated though noisy tool to find open ports, running services, many vulnerabilities...",
-        "icon": "<i class=\"bi bi-tools\"></i>",
-        "hidden": false
-      }
-    ],
     "Services 🧟️<br><p class=\"pt-2 fs-6\">Discovery & Exploitation</p>": [
       {
         "tag": "exploitation/services/index.md",
@@ -307,38 +238,6 @@
         "tag": "post-exploitation/index.md",
         "name": "Post-exploitation",
         "desc": "Once you got root/system/administrator, what do hackers do?",
-        "icon": null,
-        "hidden": false
-      }
-    ],
-    " 🛡️️ Defense  ⚔️️": [
-      {
-        "tag": "defense/general/index.md",
-        "name": "CyberDefense",
-        "desc": "Tools for IP/malware lookup...",
-        "icon": "<i class=\"bi bi-shield-lock\"></i>",
-        "hidden": false
-      },
-      {
-        "tag": "defense/digital_forensics/index.md",
-        "name": "Digital Forensics",
-        "desc": "Notes about forensics, i.e. investigating cyber crimes.",
-        "icon": null,
-        "hidden": false
-      }
-    ],
-    " ⚒️ Random  ⚒️": [
-      {
-        "tag": "random/crack_password/index.md",
-        "name": "Crack a hash",
-        "desc": "Use john the ripper to crack insecure passwords/passphrases using their hash (SSH key, GPG/ZIP/RAR...).",
-        "icon": null,
-        "hidden": false
-      },
-      {
-        "tag": "random/encoding/index.md",
-        "name": "Encoding",
-        "desc": "Learn about base64...",
         "icon": null,
         "hidden": false
       }
