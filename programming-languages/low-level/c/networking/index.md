@@ -106,6 +106,72 @@ For **✈️ todo 3: bind the socket to the address/port**, I'm using this code:
 
 <hr class="sep-both">
 
+## TCP client/server
+
+<div class="row row-cols-md-2"><div>
+
+#### Client
+
+Additional imports
+
+```c
+// none
+```
+
+**🔥 todo 1: create a socket**
+
+```cpp
+if ((client_fd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
+    return -1;
+```
+
+**🍀 todo 3: additional configuration**: we connect to the host. We will be able to send messages until the connection is closed.
+
+```cpp
+struct sockaddr_in server_addr;
+if (create_server_addr(&server_addr, hostname, port) < 0)
+    return -1;
+if (connect(client_fd, (SA *)&server_addr, sizeof(server_addr)) < 0)
+    return -1;
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## UDP client/server
+
+<div class="row row-cols-md-2"><div>
+
+#### Client
+
+Additional imports
+
+```c
+// none
+```
+
+**🔥 todo 1: create a socket**
+
+```cpp
+if ((client_fd = socket(AF_INET, SOCK_DGRAM, 0)) < 0)
+    return -1;
+```
+
+**🍀 todo 3: additional configuration**: UDP is not connected to a host. We need to specify the hostname and the port in every message.
+
+```cpp
+// none
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
