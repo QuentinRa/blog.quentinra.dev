@@ -48,8 +48,8 @@ int open_client_fd(char *hostname, int port){
 
 typedef struct sockaddr SA;
 
-int open_listen_fd_server(int port){
-    int listen_fd;
+int open_server_fd(int port){
+    int server_fd;
     struct sockaddr_in server_addr;
 
     // 🔥 todo 1: create the socket
@@ -60,7 +60,7 @@ int open_listen_fd_server(int port){
 
     // 🍀 todo 4: additional configuration
 
-    return listen_fd;
+    return server_fd;
 }
 ```
 </div></div>
@@ -95,13 +95,29 @@ int create_server_addr(struct sockaddr_in *server_addr, char *hostname, int port
 ```
 </div><div>
 
-For **🌹 todo 2: set options for the socket**, I'm using this code:
+For **🌹 todo 2: set options for the socket**, you can set the "reuse address" option to true, to allow the immediate reuse of a port.
 
 ```c
 int opt_val = 1;
+if (setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, (const void *)&opt_val, sizeof(int)) < 0)
+    return -1;
 ```
 
-For **✈️ todo 3: bind the socket to the address/port**, I'm using this code: 
+For **✈️ todo 3: bind the socket to the address/port**, you can use this snippet to associate (bind) the socket with the address/port.
+
+```c
+#include <string.h>
+```
+
+```cpp
+memset(&server_addr, 0, sizeof(server_addr));
+server_addr.sin_family = AF_INET;
+server_addr.sin_addr.s_addr = htonl(INADDR_ANY);
+server_addr.sin_port = htons((unsigned short) port);
+
+if (bind(server_fd, (SA *)&server_addr, sizeof(server_addr)) < 0)
+    return -1;
+```
 </div></div>
 
 <hr class="sep-both">
@@ -125,7 +141,7 @@ if ((client_fd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
     return -1;
 ```
 
-**🍀 todo 3: additional configuration**: we connect to the host. We will be able to send messages until the connection is closed.
+**🍀 todo 2: additional configuration**: we connect to the host. We will be able to send messages until the connection is closed.
 
 ```cpp
 struct sockaddr_in server_addr;
@@ -136,7 +152,27 @@ if (connect(client_fd, (SA *)&server_addr, sizeof(server_addr)) < 0)
 ```
 </div><div>
 
-...
+#### Server
+
+Additional imports
+
+```c
+// none
+```
+
+**🔥 todo 1: create a socket**
+
+```cpp
+if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
+    return -1;
+```
+
+**🍀 todo 4: additional configuration**
+
+```cpp
+if (listen(server_fd, 1024) < 0)
+    return -1;
+```
 </div></div>
 
 <hr class="sep-both">
@@ -160,14 +196,33 @@ if ((client_fd = socket(AF_INET, SOCK_DGRAM, 0)) < 0)
     return -1;
 ```
 
-**🍀 todo 3: additional configuration**: UDP is not connected to a host. We need to specify the hostname and the port in every message.
+**🍀 todo 2: additional configuration**: UDP is not connected to a host. We need to specify the hostname and the port in every message.
 
 ```cpp
 // none
 ```
 </div><div>
 
-...
+#### Server
+
+Additional imports
+
+```c
+// none
+```
+
+**🔥 todo 1: create a socket**
+
+```cpp
+if ((server_fd = socket(AF_INET, SOCK_DGRAM, 0)) < 0)
+    return -1;
+```
+
+**🍀 todo 4: additional configuration**
+
+```cpp
+// none
+```
 </div></div>
 
 <hr class="sep-both">
