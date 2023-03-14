@@ -36,5 +36,5 @@ Open-source intelligence (**OSINT**) is any information that you gather from pub
 
 **Other tools** 🗃️
 
-* xxx
+* ...
 </div></div>

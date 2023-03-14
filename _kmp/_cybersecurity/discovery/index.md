@@ -1,20 +1,9 @@
 # Discovery
 
-[![activerecon](../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
-
 <div class="row row-cols-md-2"><div>
 
-Discovery, or host discovery, is the core of active reconnaissance (recon) activities.
+If there is a website, check the [webserver methodology](/_cybersecurity/exploitation/web/methodology.md) to learn more about how you could find vulnerabilities and exploit them 🗺️.
 
-* Find running services, their version... 🧭
-
-* Find the running OS 🖥️
-
-* If there is a website, check the [webserver methodology](/_cybersecurity/exploitation/web/methodology.md) to learn more about how you could find vulnerabilities and exploit them 🗺️.
-
-* Find if there is an API
-
-* ...
 </div><div>
 
 There are a lot of ways to perform its discovery 
@@ -24,8 +13,6 @@ There are a lot of ways to perform its discovery
 * **Nmap** ([course](nmap/index.md)): to find open ports, their services+version with `-sV`, the OS with `-O` or `-sV`, and try to exploit vulnerabilities
 
 * **Nessus** ([course](nessus/index.md)): find open ports and their vulnerabilities. This is a local website that can be used when needing an automated scan, albeit noisy, and somewhat slow.
-
-* A hacker could do other activities such as getting in touch with employees, and trying to use social engineering to learn more about their company.
 
 * `traceroute/tracepath` which are using the TTL to know how many steps/hops it took for a packet to reach the target <small>(they increase the TTL by one, and try to get the intermediaries IPs as they respond that the packet was destroyed, but most aren't responding, so we got no information. Also, the route may change, as routers are always calculating the most optimal route)</small>.
 </div></div>
