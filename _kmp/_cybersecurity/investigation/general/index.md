@@ -1,16 +1,5 @@
 # Investigation
 
-<div class="row row-cols-md-2"><div class="align-self-center">
-
-* Job offers: If they are looking for developers that are proficient in Node.js, it's likely that they are either using, were using, or are planning to use Node.js.
-* News related to the company
-* ...
-</div><div>
-
-password reuse
-
-</div></div>
-
 <hr class="sep-both">
 
 ## Recon using certificates/DNS records

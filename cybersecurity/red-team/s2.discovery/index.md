@@ -31,3 +31,38 @@ Unlike passive discovery, as you are directly interacting with the target, you a
 * 💃 Find any social engineering indicators <small>(contact employees...)</small>
 * 🌿 Investigate if a third-party/supplier is vulnerable
 </div></div>
+
+<hr class="sep-both">
+
+## Tools and methods 🗺️
+
+<div class="row row-cols-md-2"><div>
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* Hping3
+* OpenVAS
+* QualysGuard
+* Acunetix
+* Nexpose
+* Medusa
+* Empire
+* SET (Social Engineer Toolkit)
+</div><div>
+
+* OWASP ZAP
+* WebScarab
+* Vega
+* Aircrack-ng
+* Reaver
+* Kismet
+* [Cain and Abel](https://github.com/xchwarze/Cain)
+</div></div>

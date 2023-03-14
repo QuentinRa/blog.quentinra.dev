@@ -37,4 +37,9 @@ Open-source intelligence (**OSINT**) is any information that you gather from pub
 **Other tools** 🗃️
 
 * ...
+
+**Other techniques** 🐲
+
+* Investigate job offers <small>(programming languages, tools...)</small>
+* Monitor news about the company
 </div></div>
