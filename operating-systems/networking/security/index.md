@@ -227,8 +227,6 @@ They can be used on many types of network devices. There are two types of ACLs:
 
 * ✋ **Standard ACLs**: filter based on the IP address
 * ⛔ **Extended ACLs**: filter based on the source and destination IP address and port, the protocol...
-
-
 </div><div>
 
 ...
@@ -242,11 +240,15 @@ They can be used on many types of network devices. There are two types of ACLs:
 
 ACLs (std <small>(1-99, 1300-1999)</small>, extended <small>(100-199, 2000-2699)</small>, can be a string)
 
-```js!
+```text!
+access-list 10 remark Some text here.
 access-list 10 permit 192.168.30.0 0.0.0.255 # std
 access-list 103 permit tcp 192.168.30.0 0.0.0.255 any eq 80 # extended
 access-list 101 permit tcp host 192.168.1.100 any eq www
 access-list 101 deny ip any any
+no access-list 10 # delete
+
+show access-lists
 ```
 </div><div>
 

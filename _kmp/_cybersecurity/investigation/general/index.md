@@ -1,10 +1,8 @@
 # Investigation
 
-[![passiverecon](../../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
-
 <div class="row row-cols-md-2"><div class="align-self-center">
 
-The first step, investigation, or passive reconnaissance (recon) involves gathering information about the target from afar, meaning with **no direct interaction with the target**, using public information (OSINT)
+sing public information (OSINT)
 
 * DNS records to look for registrar/contact info/...
 * Job offers
@@ -14,11 +12,7 @@ The first step, investigation, or passive reconnaissance (recon) involves gather
 The goal is to find as much information as possible. This step is followed by active reconnaissance where you directly interact with the target.
 </div><div>
 
-* Learn more about the company, the programming languages, and the software that they use... 🧑‍💻
-
-* Find your candidate targets, for instance, a subdomain owned by the company for another purpose, that is hosted on the network that their main website, and may be vulnerable 🐟
-
-* Find employees, their emails, their social accounts... Try to find out if some of their passwords leaked, and as passwords tend to be reused, you may access other accounts.
+password reuse
 
 For instance, if they have many customers, it is highly likely that they have a way to provide support for them, which may be an attack vector...
 
