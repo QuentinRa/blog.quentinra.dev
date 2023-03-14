@@ -19,6 +19,8 @@ It involves gathering information about the target from afar 👓️, meaning wi
 * 🧑 Find information about their employees, their emails, their social accounts, their leaked passwords...
 
 * ...
+
+➡️ You can also **infer** data, for instance, if a company has many customers, then they may have a support page/customer service.
 </div></div>
 
 <hr class="sep-both">

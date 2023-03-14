@@ -2,21 +2,13 @@
 
 <div class="row row-cols-md-2"><div class="align-self-center">
 
-sing public information (OSINT)
-
-* DNS records to look for registrar/contact info/...
-* Job offers
+* Job offers: If they are looking for developers that are proficient in Node.js, it's likely that they are either using, were using, or are planning to use Node.js.
 * News related to the company
 * ...
-
-The goal is to find as much information as possible. This step is followed by active reconnaissance where you directly interact with the target.
 </div><div>
 
 password reuse
 
-For instance, if they have many customers, it is highly likely that they have a way to provide support for them, which may be an attack vector...
-
-If they are looking for developers that are proficient in Node.js, it's likely that they are either using, were using, or are planning to use Node.js.
 </div></div>
 
 <hr class="sep-both">
@@ -25,7 +17,7 @@ If they are looking for developers that are proficient in Node.js, it's likely t
 
 <div class="row row-cols-md-2"><div>
 
-Open-source intelligence (**OSINT**) is any information that you gather from public sources. The OSINT framework, available on [osintframework.com](https://osintframework.com/), is a well-known collection of websites that you can use. Simply expand a node, and you will see websites that can provide you with information about what you are looking for.
+The OSINT framework, available on [osintframework.com](https://osintframework.com/), is a well-known collection of websites that you can use. Simply expand a node, and you will see websites that can provide you with information about what you are looking for.
 
 Find other accounts given a username
 
@@ -82,23 +74,4 @@ Others
 
 There is also [theHarvester](https://github.com/laramies/theHarvester) (7.6k ⭐) which is a Python script too.
 </div><div>
-
-➡️ You can use [whois](https://www.whois.com/whois/) website, or their command, to dig for information about the owner of a domain name, their registrar...
-
-➡️ You can use the commands [nslookup/dig](/operating-systems/networking/commands/linux/linux.md#interact-with-the-outside) to query DNS servers.
-
-```bash
-# A = IPV4, AAAA=IPV6, MX, TXT, CNAME...
-$ nslookup -type=A example.com
-$ dig example.com -t A
-# ask 1.1.1.1 DNS server
-$ nslookup -type=A example.com 1.1.1.1
-$ dig example.com -t A @1.1.1.1
-```
-
-➡️ You can also use your Google Dorking skills to find subdomains
-
-```text
--site:example.com site:*.example.com
-```
 </div></div>
