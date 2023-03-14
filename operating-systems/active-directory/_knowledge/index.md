@@ -54,6 +54,73 @@ A **global catalog** 📰 stores a copy of the most used attributes of every obj
 
 <hr class="sep-both">
 
+## Getting started
+
+<div class="row row-cols-md-2"><div>
+
+If starting from scratch, you will create a forest 🌴, with only one domain inside 🧵, for instance, `example.com`. To do so, you will need a computer that will serve as a domain controller 👑.
+
+You will install on this computer **Windows Server** 2019/2022/... As a student, you can get an image for free [on azure website](https://azureforeducation.microsoft.com/devtools).
+
+➡️ If you're using Virtual Box, [see these notes](/tools-and-frameworks/others/virtualization/virtualbox/index.md#active-directory-notes).
+
+After installing the ISO, when starting the machine, the **Server Manager** will automatically open itself. From there, you will be able to install **ADDS** and many other services/tools 📌.
+</div><div>
+
+Before installing ADDS, you should:
+
+<details class="details-n">
+<summary>Freeze and configure your server IP address</summary>
+
+👉 This is a best practice to give a fixed IP address to your domain controller before installing ADDS.
+
+* Control Panel
+* Network and Internet
+* Network And Sharing Center
+* Select your network <small>(ex: Ethernet 2)</small>
+* Properties > IPV4 > Properties
+    * IP: X.X.X.2
+    * Mask: 255.255.255.0
+    * Default gateway: X.X.X.1
+    * DNS: X.X.X.2
+</details>
+
+<details class="details-n">
+<summary>Set your DC name</summary>
+
+👉 This is optional too. The DC name can be used to referencing in commands. For instance, you will be able to use the name instead of the IP address.
+
+* Click on "Local Server"
+* Click on your computer name (in blue)
+* Click on "Change"
+* Set the name your want
+* Restart
+</details>
+
+Then, you can process with the installation:
+
+<details class="details-n">
+<summary>Installation ADDS</summary>
+
+* Start the **Server Manager**
+* Click on "Add roles and features"
+* Press Next twice
+* In Server Roles, select ADDS
+* Press Next twice, then Install
+* Click on the notification icon with a warning (⚠️)
+* Click on "Promote this server to a domain controller"
+
+**Select add a forest**
+
+* Give a root domain name (ex: `example.com`)
+* Add a "restore password"
+* Press "Next" 4 times
+* Press "Install"
+</details>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

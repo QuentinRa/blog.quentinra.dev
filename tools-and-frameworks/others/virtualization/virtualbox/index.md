@@ -89,6 +89,42 @@ Right-click on a machine, and open Settings.
 
 <hr class="sep-both">
 
+## Active directory notes
+
+<div class="row row-cols-md-2"><div>
+
+#### Install Windows Server ISO
+
+* Click on new, select the ISO
+* Select unattended
+* Start the machine
+* Process as usual with the setup...
+* Power off the machine
+* Remove CD <small>(Settings>Storage>CD, the disk icon on the right)</small>
+
+Go to Tools > Network. Create or select a adapter.
+
+* DHCP server must be disabled
+* Take note of the gateway address <small>(for later, ex: `X.X.X.1`)</small>
+
+On your VM with your VM
+
+* Click on Settings > Network
+* Go to the "Adapter2" tab
+* Enable the adapter
+* Select "Host-only adapter"
+* Select your adapter
+</div><div>
+
+#### Random notes
+
+➡️ If the VM crashes often, try reducing the size of the screen. It may be related to your computer overheating and closing it.
+
+➡️ The NAT adapter can mess with some things like when adding a child domain. You should disable it <small>(if applicable/temporarily)</small>.
+</div></div>
+
+<hr class="sep-both">
+
 ## Random notes
 
 <div class="row row-cols-md-2 mt-3"><div>
@@ -103,12 +139,6 @@ By default, you can freely use your mouse between your host and your virtual mac
 #### Bug: bidirectional keyboard not working
 
 ➡️ Try restarting the VM.
-
-#### Notes for Active Directory
-
-➡️ If the VM crashes often, try reducing the size of the screen, it won't always work, but that's better than nothing.
-
-➡️ The NAT adapter can mess with some things like when adding a child domain. You should disable it <small>(if applicable/temporarily)</small>.
 </div></div>
 
 <hr class="sep-both">
