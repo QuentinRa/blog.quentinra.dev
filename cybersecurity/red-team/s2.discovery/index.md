@@ -27,7 +27,7 @@ Unlike passive discovery, as you are directly interacting with the target, you a
   * ...
 * 🔥 Find versions as there may be known vulnerabilities
 * 🔑 Find usernames, backups, exposed data
-* 🥅 Find if there are security measures <small>(firewall/IDS...)</small>
+* 🥅 Find the network architecture <small>(firewall/IDS...)</small>
 * 💃 Find any social engineering indicators <small>(contact employees...)</small>
 * 🌿 Investigate if a third-party/supplier is vulnerable
 </div></div>
@@ -37,7 +37,22 @@ Unlike passive discovery, as you are directly interacting with the target, you a
 ## Tools and methods 🗺️
 
 <div class="row row-cols-md-2"><div>
+
+Scanning and enumeration
+
+* [nmap]() 🚪🔥: a stealthy and powerful port scanner
+* [Rustscan](tools/rustscan.md) 🚪🔥: a fast port scanner for CTFs
+* [Masscan](tools/masscan.md) 🚪: an aggressive port scanner in mass
+
+Network mapping
+
+* [ping]() 🥅: ...
+* [traceroute and tracepath]() 🥅: ...
 </div><div>
+
+Vulnerabilities scanners
+
+* [Nessus](): port scanning, find vulnerabilities, quite noisy/slow
 </div></div>
 
 <hr class="sep-both">
@@ -48,16 +63,19 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+* aquatone <small>(port scanning, subdomain/website enumation)</small>
+  * automate the process of inspecting the website on a port, given a (supposedly long) list of IP addresses.
+  * can take reports generated with nmap/masscan
 * Hping3
 * OpenVAS
 * QualysGuard
 * Acunetix
 * Nexpose
+</div><div>
+
 * Medusa
 * Empire
 * SET (Social Engineer Toolkit)
-</div><div>
-
 * OWASP ZAP
 * WebScarab
 * Vega
