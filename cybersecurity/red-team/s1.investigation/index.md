@@ -8,7 +8,9 @@ Investigation 🔎, a.k.a. passive recon <small>(reconnaissance)</small> 🕊️
 
 It involves gathering information about the target from afar 👓️, meaning with **no direct interaction with the target** 👀.
 
-The goal is to learn as much as possible about the target 🗃️
+<br>
+
+**Goal/Objectives** 🎯: find as much as possible
 
 * 🧑‍💻 Learn more about the company <small>(roles, services...)</small>, the programming languages and software they use...
 
@@ -19,13 +21,13 @@ The goal is to learn as much as possible about the target 🗃️
 * ...
 </div><div>
 
-There are various ways to get information passively:
+**Tools and methods** 🗺️
 
-* OSINT gathering
-* DNS analysis
-* WHOIS analysis
-* Google dorking
-* Shodan
-* Maltego
+* [OSINT gathering](tools/osint.md) 🧑‍💻🧑: any publicly available information
+* [DNS analysis](tools/dns.md) 🐟: domain, subdomains...
+* [WHOIS analysis](tools/whois.md) 🧑‍💻: domain owner, contact information...
+* [Google dorking](tools/dorking.md) 🧑‍💻🐟🧑: find anything indexed by google
+* [Shodan](tools/shodan.md) 🐟: find exposed and potentially vulnerable IoT devices
+* [Maltego](tools/maltego.md) 🧑‍💻 🐟: find websites, domains, social media accounts...
 
 </div></div>
