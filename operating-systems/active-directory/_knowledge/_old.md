@@ -4,15 +4,13 @@
 
 **Domain Controller** (DC): servers from which you can manage the organisation using ADDS. Any Windows server on which ADDS is installed is a Domain Controller.
 
-**Domain**: for instance, `xxx.com`. You don't need to own it <small>(in a real-world install, you should)</small>. When users will log in to the server, they will use `server/username`.
+**Domain**: You don't need to own it <small>(in a real-world install, you should)</small>. When users will log in to the server, they will use `server/username`.
 
 ➡️ The `server` usually is `xxx.com` or `xxx` (alias).
 
 </div><div>
 
 **Objects**: users, computers, printers, shared folders, groups, organization units...
-
-**Schema**: an extendable definition of what's a user, a computer...
 
 **Security Groups**: they are used to group users, to apply permissions/GPO to everyone that is a member of this group. A user can be in multiple Groups.
 
@@ -416,12 +414,6 @@ Stuff that I found, but never read/used yet.
 <summary>Notes Kerberos</summary>
 
 This is the authentication system in Windows domains, replacing NetNTLM. Users will log in to the Kerberos service and receive a ticket called **Ticket Granting Ticket (TGT)**. They will use this ticket when requesting access to a share/database/... If the request is accepted, Kerberos will give them a **Ticket Granting Service (TGS)** allowing them to access the service. Then, they will use the TGS to log in to the service. No credentials are sent over the network.
-</details>
-
-<details class="details-n">
-<summary>Notes namespaces</summary>
-
-It's possible to fragment the Windows domain into sections. We refer to the whole Windows domains as a Tree. It's possible to use multiple Windows domain, in which case the whole is called a Forest. We can establish Trust Relationships between them, allowing them to interact with each other.
 </details>
 
 <details class="details-n">
