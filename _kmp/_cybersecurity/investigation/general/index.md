@@ -61,72 +61,6 @@ Others
 
 <hr class="sep-both">
 
-## Maltego
-
-<div class="row row-cols-md-2"><div>
-
-This is a software/tool allowing someone to gather a lot of past, and present information about a target. It includes information about websites, DNS, Domains, emails/telephones, and companies... Note that the information generated may not be accurate.
-
-![Maltego](_images/maltego.png)
-
-> Official links: [Maltego documentation](https://docs.maltego.com/support/home), [Maltego blog](https://www.maltego.com/blog/), [Maltego tutorials](https://www.maltego.com/categories/tutorial/), and [Maltego webinars](https://www.maltego.com/webinars/),
-
-</div><div>
-
-```bash
-$ sudo apt install maltego # tested on Kali Linux
-$ maltego
-```
-
-Select "Maltego CE (free)", then once you [created a MaltegoCE account](https://www.maltego.com/ce-registration/), you can get started in your first investigation. Click on "new". You will see a whiteboard. In the left column, you can drag, and drop a starting point. For instance,
-
-1. Search "domain"
-2. Drag and drop it on the whiteboard
-3. Double-click on it to edit it, enter a domain name, then press "ok"
-4. Right-click on it, and now, you can search for something related to this domain name <small>(ex: email addresses...)</small>. If you want to try to look for "everything", then run all transforms
-
-![maltego_run_all_transforms](_images/maltego_run_all_transforms.png)
-
-Wait, and investigate what maltego found for you!
-</div></div>
-
-<hr class="sep-both">
-
-## Google Hacking/Dorking
-
-[![googledorking](../../_badges/thm/googledorking.svg)](https://tryhackme.com/room/googledorking)
-
-<div class="row row-cols-md-2"><div>
-
-Search engines are using bots, called **crawlers** to index websites. They go from one page to another, or from one website to another, by following links. The file **robots.txt** is listing the pages that "good" crawlers shouldn't index, along with the path to a file called **sitemap** which is literally a map of every page/resource of the websites, allowing crawlers to easily crawl the website.
-
-Most search engines, Google being the most famous one, allow us to make **advanced queries**. This was known as advanced search, but after some guys wrote some books naming that as "Google Dorking", then it became widely known as **Google Dorking**.
-
-On Google, you can use the [advanced search](https://www.google.com/advanced_search) page to make advanced queries, while you may also directly use special tokens in your search bar. There you can find a [long list of Google Search Operators](https://ahrefs.com/blog/google-advanced-search-operators/).
-
-[See Google Hacking Database](https://www.exploit-db.com/google-hacking-database) for juicy queries to exploit this.
-</div><div>
-
-* `site:example.com`: search only results on "example.com"
-* `site:.com`: search only results on ".com" domains
-* `cache:example.com`: cached versions of "example.com"
-* `-word`: search results that do not have this word
-* `"some word"`: search results that must have "some word"
-* `filetype:pdf`: search PDF files
-* `intitle:"Hello World"`: search for websites having "Hello World" in their title
-* `inurl:admin`: search for URLs containing the word "admin"
-
-You may also use
-
-* `imagesize:1920x1080`: search only images on "1920 by 1080"
-* `@twitter`: search results on Twitter
-* `$400` or `$50..$100`: search for a price
-* `#hashtag`: search for a hashtag
-* `xxx OR yyy`: search both xxx and yyy
-</div></div>
-
-<hr class="sep-both">
-
 ## Recon using certificates/DNS records
 
 <div class="row row-cols-md-2"><div>
@@ -167,21 +101,4 @@ $ dig example.com -t A @1.1.1.1
 ```text
 -site:example.com site:*.example.com
 ```
-</div></div>
-
-<hr class="sep-both">
-
-## Shodan.io
-
-<div class="row row-cols-md-2"><div>
-
-[Shodan.io](https://www.shodan.io/) is a search engine indexing devices and their information such as the app running on it, the webserver (apache/...), the location, the ports open... And you can even see statistics, such as the top ports used with apache!
-
-> [Search Query Fundamentals](https://help.shodan.io/the-basics/search-query-fundamentals)
-</div><div>
-
-**To-do**
-
-* [THM Shodan](https://tryhackme.com/room/shodan)
-* During Black Friday/Cyber Monday, Shodan may be at 5$ for life
 </div></div>
