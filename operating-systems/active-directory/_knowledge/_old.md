@@ -2,15 +2,11 @@
 
 <div class="row row-cols-md-2"><div>
 
-**Domain Controller** (DC): servers from which you can manage the organisation using ADDS. Any Windows server on which ADDS is installed is a Domain Controller.
-
-**Domain**: You don't need to own it <small>(in a real-world install, you should)</small>. When users will log in to the server, they will use `server/username`.
+When users will log in to the server, they will use `server/username`.
 
 ➡️ The `server` usually is `xxx.com` or `xxx` (alias).
 
 </div><div>
-
-**Objects**: users, computers, printers, shared folders, groups, organization units...
 
 **Security Groups**: they are used to group users, to apply permissions/GPO to everyone that is a member of this group. A user can be in multiple Groups.
 

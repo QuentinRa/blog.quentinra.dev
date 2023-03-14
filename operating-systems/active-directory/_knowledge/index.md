@@ -34,15 +34,22 @@ It's widely used to manage organisation/schools/... They can configure for each 
 
 <div class="row row-cols-md-2"><div>
 
-A **schema** 🪨 is a definition on an entity, such as a user. It defines its properties such as `"Firstname"`, `"Lastname"`... A schema can be extended, meaning, we can add new properties.
+A **schema** 🪨 is a definition on an entity, such as a user. It defines its attributes such as `"Firstname"`, `"Lastname"`... A schema can be extended, meaning, we can add new attributes.
 
-An **Object** 💰 is a concrete instance of the schema. For instance, the user "John Doe", or the computer "PC-B2006-06"...
+An **Object** 💰 is a concrete instance of a schema. For instance, the user "John Doe", the computer "PC-B2006-06", or the printer XXX...
 
+A **domain** 🧵 is a logical group of objects... For instance, the domains `example.com`, `eu.example.com`, and `na.example.com`... `eu` and `na` are subdomains of `example.com`. The tree is called **domain tree** 🕸️.
+
+👉 You should own the domain name to avoid merging problems.
 </div><div>
 
-A **domain** 🧵 is a logical group of objects... For instance, the domains `example.com`, `eu.example.com`, and `na.example.com`... `eu` and `na` are subdomains of `example.com`, this is forming a **domain tree** 🕸️.
+There is at least one **Domain controller** 👑 (DC) on each domain. It's used to manage objects on the domain. They all have their own database to store information about their objects.
+
+A **site** 🏘️ is a group of objects that are physically located in the same place, such as a branch office. We usually have one DC per site, which can mean multiple DC for one domain. The DC is replicated, and this allows faster response time, and reduce network traffic.
 
 A **forest** 🌴  is a collection of one or more domain trees. They share a common schema, along configurations, and global catalogs.
+
+A **global catalog** 📰 stores a copy of the most used attributes of every object, allowing us to search for object across the whole forest.
 </div></div>
 
 <hr class="sep-both">
