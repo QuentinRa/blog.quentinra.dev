@@ -38,3 +38,45 @@ It involves gathering information about the target from afar 👓️, meaning wi
 
 ...
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* dnsrecon
+* fierce
+* theHarvester
+* recon-ng
+* Wayback Machine
+* Archive.is
+* CommonCrawl
+
+SOCMINT
+
+* Social Mapper
+* StalkScan
+* SpiderFoot
+</div><div>
+
+Web Scraping
+
+* BeautifulSoup
+* Scrapy
+* Selenium
+* FMiner
+* Octoparse
+* ParseHub
+
+Dark Web Investigations:
+
+* Tor Browser
+* DarkSearch
+* Ahmia
+* OnionScan
+* OnionList
+* OnionLink
+</div></div>
