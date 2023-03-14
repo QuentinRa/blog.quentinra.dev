@@ -54,12 +54,16 @@ Stuff that I found, but never read/used yet.
 * Wayback Machine
 * Archive.is
 * CommonCrawl
+* Netcraft
+* PassiveTotal
+* [awesome-osint](https://github.com/jivoi/awesome-osint) (list, 10.7k ⭐)
+* [OSINT-Tools](https://github.com/mgp25/OSINT-Tools) (list, 45 ⭐)
 
 SOCMINT
 
 * Social Mapper
 * StalkScan
-* SpiderFoot
+* [SpiderFoot](https://github.com/smicallef/spiderfoot) (8.7k ⭐)
 </div><div>
 
 Web Scraping
@@ -79,4 +83,11 @@ Dark Web Investigations:
 * OnionScan
 * OnionList
 * OnionLink
+
+IoT Search Engines:
+
+* Censys 
+* Zoomeye 
+* BinaryEdge 
+* Fofa
 </div></div>

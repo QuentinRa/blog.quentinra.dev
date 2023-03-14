@@ -13,17 +13,6 @@ password reuse
 
 <hr class="sep-both">
 
-## Open-source intelligence (OSINT)
-
-Others
-
-* [awesome-osint](https://github.com/jivoi/awesome-osint) (list, 10.7k ⭐)
-* [spiderfoot](https://github.com/smicallef/spiderfoot) (automated, 8.7k ⭐)
-* [OSINT-Tools](https://github.com/mgp25/OSINT-Tools) (list, 45 ⭐)
-* [getemail.io](https://getemail.io/) (get someone email, free plan = 10/month)
-
-<hr class="sep-both">
-
 ## Recon using certificates/DNS records
 
 <div class="row row-cols-md-2"><div>
