@@ -1,21 +1,29 @@
-# Active Directory Domain Services (ADDS)
+# Active Directory (AD)
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-Active Directory Domain Services (ADDS) is a tool to help sysadmin to manage organisation/schools/...
+Active directory is a centralized database of every network resources:
 
-* 🖥️ Manage Computers, Servers, Printers
-* 🧑‍🍼️ Manage Users and Groups
-* 🚧️ Manage Permissions to access files/apps/...
-* ⚖️️ Manage Policies <small>(ex: password length/...)</small>
+* 🖥️ Computers, Servers, Printers
+* 🧑‍🍼️ Users and Groups
+* 🚧️ Permissions to access files/apps/...
+* ⚖️️ Policies <small>(ex: password length/...)</small>
+* 🏡 Shared folders/drives
+* ...
+
+It provides services to manage and authenticate these resources. It's a centralized and highly scalable tool that is used by many large organizations <small>(with many employees, multiple offices/sites...)</small>.
 </div><div>
 
-With ADDS, you log in once, from any machine, and got access to everything that you were given access to
+**Active Directory Domain Services (ADDS)** is the main service that system admins will interact with. 📌 Because of that, Active directory and ADDS are often used interchangeably.
 
-* 📂 Your files/folders and shared files/folders
-* 🖨️ Printers
-* ✉️ Applications <small>(emails, vpn...)</small>
+It's widely used to manage organisation/schools/... They can configure for each user, or groups of users
+
+* 🎯 What files/folders/shared they can access
+* 🏡 Which application they can launch
 * ...
+* 🌿 Basically, their permissions over every resource
+
+🎉 For users, it's convenient, as they log in once, and from any machine over the network and access their files/...
 </div></div>
 
 <hr class="sep-both">
