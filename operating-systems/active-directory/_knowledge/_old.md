@@ -37,19 +37,6 @@ Configure your DHCP server
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-##### Manage OUs, Security Groups, and Users
-
-**Add a home folder**
-
-* Right-click on a user > properties
-* Go to profile
-* You could select a local path, or mount a network drive, for instance, `\\ServerName\\SomeFolder\\%username%`.
-* The drive will be shown next to the "C:" drive
-
-➡️ The advantage of using `%username%` is that you can edit multiple users, and the value will be replaced for each one.
-
-##### Permissions
-
 <details class="details-n">
 <summary>Configure permissions on a folder</summary>
 

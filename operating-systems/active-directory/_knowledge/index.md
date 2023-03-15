@@ -403,6 +403,28 @@ You may want to only mount this hard drive for some groups of users, according t
 
 ➡️ For conditions like "one of multiple groups" <small>(ex: Both IT and Marketing)</small>, you can right-click on the second item, and in item options, select OR.
 </details>
+
+<br>
+
+#### User personal folder (home) 🏡
+
+A home folder is a folder in which the user can put their personal documents. It should be also auto-mounted, for instance, in `U:`...
+
+To create home folders, you need a network drive. Inside, you could create an empty folder called `HOME`.
+
+<details class="details-n">
+<summary>Define each user home folder</summary>
+
+* Go to Tools > Active Directory Users and Computers
+* Select every user needing an home folder
+* Right-click on one
+* Go to profile
+* Enter the path `\\ServerName\\SomeFolder\\%username%`, for instance, `\\SerName\\E\\HOME\\%username%`. Note that `%username%` will be replaced by each user username.
+* Save and exit
+</details>
+
+You can go back in the `HOME` folder, and see a folder for each user.
+
 </div></div>
 
 <hr class="sep-both">
