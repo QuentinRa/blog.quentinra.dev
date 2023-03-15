@@ -305,9 +305,34 @@ To do that,
 
 </details>
 
+<details class="details-n">
+<summary>🔐 Edit a GPO</summary>
+
+Right-click on a GPO > Edit. There are two main configuration
+
+* 💻 **Computer configuration**: applied to every computer in the scope, regardless of the user
+* 🧑 **User configuration**: apply to every user in the scope, regardless of the computer
+
+You will usually search on Google to find the setting you want. A lot of settings have moved in Windows Server 2022 <small>(it seems)</small>, so you may have to look around a bit.
+
+<details class="details-n">
+<summary>Notes to set up a password policy</summary>
+
+* Start the **Server Manager**
+* Go to Tools > Group Policy Management
+* Right-click on a GPO > Edit <small>(you could create a GPO and apply it on the whole domain...)</small>
+
+Go to Computer configuration > Policies > Windows Settings > Security Settings > Account Policy.
+
+There, you can enable history, set password length and age <small>(ex: 6 months)</small>, enable complexity requirements, lockout...
+</details>
+</details>
+
 <br>
 
 ➡️ Changes are distributed using a network share called SYSVOL (`C:\Windows\SYSVOL\sysvol\`). It may take time for the changes to be applied, but the update be forced with `gpupdate /force`.
+
+🚀 When clicking on a GPO, in the tab "Settings", you can find what settings are changed by a policy.
 </div></div>
 
 <hr class="sep-both">

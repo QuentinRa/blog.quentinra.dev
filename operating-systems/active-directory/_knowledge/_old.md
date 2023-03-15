@@ -61,10 +61,6 @@ Configure your DHCP server
 ➡️ We usually allow access to security group instead of users
 </details>
 
-Once created, you can edit the GPO to edit them.
-
-➡️ See specific sections or Google to find settings.
-
 </div><div>
 
 ##### Configure a network drive
@@ -136,18 +132,6 @@ You can either use the Windows Registry, or a group policy. Here are some parame
 </details>
 
 ##### Password and Encryption
-
-<details class="details-n">
-<summary>Notes to set up a password policy</summary>
-
-* Start the **Server Manager**
-* Go to Tools > Group Policy Management
-* Right-click on a GPO > Edit <small>(you could create a GPO and apply it on the whole domain...)</small>
-
-Go to Computer configuration > Policies > Windows Settings > Security Settings > Account Policy.
-
-There, you can enable history, set password length and age <small>(ex: 6 months)</small>, enable complexity requirements, lockout...
-</details>
 
 <details class="details-n">
 <summary>Configure BitLocker</summary>
