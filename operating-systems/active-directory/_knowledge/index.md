@@ -193,7 +193,7 @@ They are basically folders. You could have one OU per
 
 Once the workstation was added to active directory, you will be able to connect to users account created in active directory. To connect to a specific domain, use `domain\username` such as `example.com\username`.
 
-👉 You can also use the NetBios, which is most probably "`example`" here. You defined the NetBios during the setup of ADDS.
+👉 You can also use `username@domain` or the NetBios name instead of the domain giving us "`example\username`" <small>(set during the ADDS setup)</small>.
 
 <details class="details-n">
 <summary>Add a Local Administrator to a Workstation</summary>
@@ -242,7 +242,8 @@ To add members, either
 * Right-click on the group, and select "Add to a group"
 * Right-click on an object, select properties, go to "member of", and add your security group
 </details>
-</div><div>
+
+<br>
 
 **Delegate control**
 
@@ -252,8 +253,61 @@ You can delegate the control over an OU to a user, or preferably a group of user
 * 🔑 reset user passwords <small>(ex: helpdesk)</small>
 * ...
 
-This can help reduce the workload of the sysadmins and simply processes for HR/Helpdesk/..., but can induce security risks. 
+This can help reduce the workload of the sysadmins and simply processes for HR/Helpdesk/..., but can induce security risks.
+</div><div>
 
+A **Group Policy Objects (GPO)** 🦈 is a policy applied on some objects <small>(computers, users, groups, OUs...)</small>. For instance, you may want to deny access to some programs/windows features to some groups of users.
+
+* Start the Server Manager
+* Go to Tools > Group Policy Management
+* Find the "Group Policy Object" folder
+* Right-click on it > New and create a GPO
+
+<p></p>
+
+<details class="details-n">
+<summary>✍️ Link a GPO</summary>
+
+Linking a GPO mean associating the GPO with an object. Simply drag-and-drop the GPO on
+
+* an OU
+* a domain
+* ...
+
+And they will be linked. A GPO can be linked to multiple objects. When clicking on the GPO, all the links are shown in "Location". You can delete a link from there.
+</details>
+
+<details class="details-n">
+<summary>🎯 Configure a GPO</summary>
+
+After linking the GPO to a target, you may want to filter the scope of the link.
+
+**To apply a GPO only to some groups**
+
+* Click on a GPO
+* In the tab "Scope", in "Security filtering"
+* You can remove the group "Authenticated users"
+* You can add groups for which the policy will be applied
+
+**Apply a GPO to every XXX aside from YYY**
+
+For instance, if you want to apply a policy on every group inside the OU "Paris" aside from the IT group, you can either
+
+* ❌ add every group aside from the IT group in Security filtering, but if there is a new group, you may forget to add it
+* 👍 apply the policy on every "authenticated users", and exclude the IT group.
+
+To do that, 
+
+* Navigate to the "Delegation tab"
+* Click on "Advanced"
+* Add an object to exclude <small>(ex: IT security group)</small>
+* Check "deny" for the line "Apply group policy"
+
+</details>
+
+<br>
+
+➡️ Changes are distributed using a network share called SYSVOL (`C:\Windows\SYSVOL\sysvol\`). It may take time for the changes to be applied, but the update be forced with `gpupdate /force`.
 </div></div>
 
 <hr class="sep-both">
@@ -270,4 +324,7 @@ Stuff that I found, but never read/used yet.
 * Change domain (users and computers)
 * `gpresult /R`
 </div><div>
+
+* Active Directory Federation Services
+* Active Directory Backup and Recovery
 </div></div>
