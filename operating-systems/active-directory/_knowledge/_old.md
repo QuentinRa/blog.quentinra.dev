@@ -1,21 +1,5 @@
 # Main features
 
-<div class="row row-cols-md-2 mt-3"><div>
-
-<details class="details-n">
-<summary>Configure permissions on a folder</summary>
-
-* Right-click on a folder <small>(for instance, on a mounted drive available to users over the network)</small>
-* Select properties then Security
-* Edit
-* Add or remove Security Groups, OUs, or Users. You can also define the permissions for each group.
-
-➡️ We usually allow access to security group instead of users
-</details>
-
-</div><div>
-</div></div>
-
 <hr class="sep-both">
 
 ## 👻 To-do 👻

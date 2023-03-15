@@ -458,6 +458,32 @@ You can go back in the `HOME` folder, and see a folder for each user.
 
 <hr class="sep-both">
 
+## Permissions on folders
+
+<div class="row row-cols-md-2"><div>
+
+A **security principal** ([doc](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-principals)) 🔒 is an entity that can be authenticated and given access to a resource, such as a folder.
+
+* Users, and groups
+* Computers
+* Services
+
+It's a term that is often used when talking about access control.
+</div><div>
+
+To configure permissions for a folder 🔐
+
+* Right-click on a folder <small>(... on a network drive)</small>
+* Select properties then Security
+* Edit
+* Add or remove Security Groups, OUs, or Users.
+* You can also define the permissions for each group.
+
+➡️ With scalability in mind, we usually allow access to security group or OUs, instead of users.
+</div></div>
+
+<hr class="sep-both">
+
 ## Forest and trusts
 
 <div class="row row-cols-md-2"><div>
