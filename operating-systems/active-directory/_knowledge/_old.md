@@ -4,10 +4,6 @@
 
 </div><div>
 
-**Security Groups**: they are used to group users, to apply permissions/GPO to everyone that is a member of this group. A user can be in multiple Groups.
-
-➡️ Some existing groups: Domain Users, Authenticated Users...
-
 **Organizational Units** (OUs): Like groups, you can apply permissions/GPO to an OU.
 
 **Group Policy Objects (GPO)**: policies/rules that are applied on objects. We can use them to enable/disable some Windows features for some users, configure computers, enforce policies... 
@@ -68,18 +64,6 @@ Configure your DHCP server
 * The drive will be shown next to the "C:" drive
 
 ➡️ The advantage of using `%username%` is that you can edit multiple users, and the value will be replaced for each one.
-
-<details class="details-n">
-<summary>Create Security groups</summary>
-
-* Right-click on your domain
-* New > Group
-
-To add members, either 
-
-* Right-click on the group, and select "Add to a group"
-* Right-click on an object, select properties, go to "member of", and add your security group
-</details>
 
 ##### Permissions
 
@@ -259,7 +243,6 @@ Stuff that I found, but never read/used yet.
 * Azure AD cloud Sync
 * GPO (Priority/Unit order)
 * Network Unlock
-* OU delegate control
 * [Security Principals](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-principals)
 * IPAM
 * SSPR

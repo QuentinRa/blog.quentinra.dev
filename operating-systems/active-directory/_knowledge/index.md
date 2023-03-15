@@ -131,7 +131,9 @@ Then, you can process with the installation:
 
 ## Manage users and computers
 
-<div class="row row-cols-md-2"><div>
+*From the users and computers tool, you can right-click on your domain, then "change domain" to manager a subdomain.*
+
+<div class="row row-cols-md-2 mt-4"><div>
 
 We use **Organizational Units (OUs)** 📂 to sort the great number of objects within a domain: users, computers, printers, security groups...
 
@@ -211,6 +213,47 @@ It's a good practice to create a local administrator account in case there are i
 </details>
 
 To log in to a local account, use `.\username`.
+</div></div>
+
+<hr class="sep-both">
+
+## Permissions
+
+<div class="row row-cols-md-2"><div>
+
+We usually don't apply permissions on a user, as it is not scalable. Instead, we create groups or apply permissions to OUs.
+
+A **Security Group** 🪅 is a logical group made to grant or deny access to resources for users that are part of this group. A user can be in multiple groups. There are some builtin ones:
+
+* `Domain Users`: every user on the domain
+* `Authenticated Users`: every authenticated user on the domain
+* ...
+
+You will also create new security groups. We usually create an OU called `groups` with all security groups inside.
+
+<details class="details-n">
+<summary>Create a Security Group</summary>
+
+* Right-click on the OU "groups"
+* New > Group
+
+To add members, either
+
+* Right-click on the group, and select "Add to a group"
+* Right-click on an object, select properties, go to "member of", and add your security group
+</details>
+</div><div>
+
+**Delegate control**
+
+You can delegate the control over an OU to a user, or preferably a group of users. They will be able to do administrative tasks such as:
+
+* 🧑 create, manage, delete user accounts
+* 🔑 reset user passwords <small>(ex: helpdesk)</small>
+* ...
+
+This can help reduce the workload of the sysadmins and simply processes for HR/Helpdesk/..., but can induce security risks. 
+
 </div></div>
 
 <hr class="sep-both">
