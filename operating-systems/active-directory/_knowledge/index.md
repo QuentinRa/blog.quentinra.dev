@@ -142,22 +142,22 @@ They are basically folders. You could have one OU per
 * ...
 
 🔥 For instance, inside an OU called Paris, you could have OUs for each business unit. You could also do it the other way around too.
-</div><div>
-
-* Start the Server Manager
-* Go to Tools > Active Directory Users and Computers
 
 <details class="details-n">
-<summary>Create an OU</summary>
+<summary>📂 Create an OU</summary>
 
+* Start the **Server Manager**
+* Go to Tools > Active Directory Users and Computers
 * Right-click on your domain
 * New > Organizational Unit
 * Give it a name
 </details>
 
 <details class="details-n">
-<summary>Delete an OU</summary>
+<summary>📁 Delete an OU</summary>
 
+* Start the **Server Manager**
+* Go to Tools > Active Directory Users and Computers
 * Click on View > Advanced features
 * Right-click on your OU
 * Go to Properties > Object
@@ -165,15 +165,52 @@ They are basically folders. You could have one OU per
 * Apply, then close
 * Right-click on your OU, and click on delete
 </details>
+</div><div>
 
 <details class="details-n">
-<summary>Create Users</summary>
+<summary>Add an user</summary>
 
+* Start the **Server Manager**
+* Go to Tools > Active Directory Users and Computers
 * Right-click on your domain
 * New > User
-* You must at least add a "Full name" and a "logon"
+* You must at least fill the "Full name" and the "logon" fields
 * Add a password that matches your password policy
 </details>
+
+<details class="details-n">
+<summary>Add a workstation</summary>
+
+* Start the Workstation
+* Go to "Advanced System Settings"
+* Switch to the "Computer name" tab
+* Click on "Network ID" and follow the steps
+
+➡️ The local computer account that will be created cannot be used by users. The username is `PC_NAME_HERE$` and the password is a randomly generated string of 120 characters.
+</details>
+
+Once the workstation was added to active directory, you will be able to connect to users account created in active directory. To connect to a specific domain, use `domain\username` such as `example.com\username`.
+
+👉 You can also use the NetBios, which is most probably "`example`" here. You defined the NetBios during the setup of ADDS.
+
+<details class="details-n">
+<summary>Add a Local Administrator to a Workstation</summary>
+
+It's a good practice to create a local administrator account in case there are issues with Active Directory or the network, and there is a need to access the computer to fix the problem.
+
+1. Login using an Administrator account
+2. Navigate to "Settings" > "Accounts" > "Other users"
+3. Click on "Add someone else to this PC"
+4. Select "I don't have this person's sign-in information"
+5. Select "Add a user without a Microsoft account"
+6. Once created, click on the newly created user
+7. Click on "Change account type"
+8. Select "Administrator"
+
+➡️ If you're not connected to internet, you can skip 4 and 5.
+</details>
+
+To log in to a local account, use `.\username`.
 </div></div>
 
 <hr class="sep-both">

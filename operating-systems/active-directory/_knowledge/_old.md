@@ -2,10 +2,6 @@
 
 <div class="row row-cols-md-2"><div>
 
-When users will log in to the server, they will use `server/username`.
-
-➡️ The `server` usually is `xxx.com` or `xxx` (alias).
-
 </div><div>
 
 **Security Groups**: they are used to group users, to apply permissions/GPO to everyone that is a member of this group. A user can be in multiple Groups.
@@ -50,36 +46,6 @@ Configure your DHCP server
 ➡️ Use `ipconfig /all` to get the IPv4/MAC address.
 </details>
 </div><div>
-
-<details class="details-n">
-<summary>Connect a workstation to Active Directory</summary>
-
-* Start the Workstation
-* Go to "Advanced System Settings"
-* Switch to the "Computer name" tab
-* Click on "Network ID" and follow the steps
-
-➡️ The local computer account that will be created cannot be used by users. The username on Active Directory is the username appended with a dollar (`$`), while the password is a randomly generated string of 120 characters.
-</details>
-
-<details class="details-n">
-<summary>Add a Local Administrator to a Workstation</summary>
-
-It's a good practice to create a local administrator account in case there are issues with Active Directory or the network, and there is a need to access the computer to fix the problem.
-
-1. Login using an Administrator account
-2. Navigate to "Settings" > "Accounts" > "Other users"
-3. Click on "Add someone else to this PC"
-4. Select "I don't have this person's sign-in information"
-5. Select "Add a user without a Microsoft account"
-6. Once created, click on the newly created user
-7. Click on "Change account type"
-8. Select "Administrator"
-
-➡️ If you're not connect to internet, you can skip 4 and 5.
-
-To log in to a local account, use `.\Username`.
-</details>
 
 **Where to learn?**
 
