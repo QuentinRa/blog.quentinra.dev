@@ -110,12 +110,69 @@ Then, you can process with the installation:
 * Click on the notification icon with a warning (⚠️)
 * Click on "Promote this server to a domain controller"
 
-**Select add a forest**
+**Select "Add a new forest"** <small>(for your first domain controller/...)</small>
 
 * Give a root domain name (ex: `example.com`)
 * Add a "restore password"
 * Press "Next" 4 times
 * Press "Install"
+* Done
+
+**Select "Add a new domain to an existing forest"** <small>(to add a subdomain to an existing forest)</small>
+
+* Click on "Select"
+* Enter the `domain\username` of the parent domain. For instance, `example.com\administrator`. Select `example.com`.
+* In the "New domain name", you could add `eu`.
+* Process with the setup of `eu.example.com`
+</details>
+</div></div>
+
+<hr class="sep-both">
+
+## Manage users and computers
+
+<div class="row row-cols-md-2"><div>
+
+We use **Organizational Units (OUs)** 📂 to sort the great number of objects within a domain: users, computers, printers, security groups...
+
+They are basically folders. You could have one OU per 
+
+* 🌍 **site**: Paris, New-York, Montreal...
+* 🏢 **business unit**: Direction, Marketing, IT...
+* ...
+
+🔥 For instance, inside an OU called Paris, you could have OUs for each business unit. You could also do it the other way around too.
+</div><div>
+
+* Start the Server Manager
+* Go to Tools > Active Directory Users and Computers
+
+<details class="details-n">
+<summary>Create an OU</summary>
+
+* Right-click on your domain
+* New > Organizational Unit
+* Give it a name
+</details>
+
+<details class="details-n">
+<summary>Delete an OU</summary>
+
+* Click on View > Advanced features
+* Right-click on your OU
+* Go to Properties > Object
+* Unselect "Protect object from accidental deletion"
+* Apply, then close
+* Right-click on your OU, and click on delete
+</details>
+
+<details class="details-n">
+<summary>Create Users</summary>
+
+* Right-click on your domain
+* New > User
+* You must at least add a "Full name" and a "logon"
+* Add a password that matches your password policy
 </details>
 </div></div>
 
@@ -130,5 +187,7 @@ Stuff that I found, but never read/used yet.
 * [old](_old.md)
 * Microsoft System Center Configuration Manager (SCCM)
 * Namespace
+* Change domain (users and computers)
+* `gpresult /R`
 </div><div>
 </div></div>

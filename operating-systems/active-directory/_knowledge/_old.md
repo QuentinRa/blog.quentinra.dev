@@ -12,7 +12,7 @@ When users will log in to the server, they will use `server/username`.
 
 ➡️ Some existing groups: Domain Users, Authenticated Users...
 
-**Organizational Units** (OUs): folders used to group object in a similar structure than the organization. You could have one OU per site <small>(ex: Laval, Montreal)</small> and for each site, one OU per service <small>(ex: Direction, Marketing, IT...)</small>. Like groups, you can apply permissions/GPO to an OU.
+**Organizational Units** (OUs): Like groups, you can apply permissions/GPO to an OU.
 
 **Group Policy Objects (GPO)**: policies/rules that are applied on objects. We can use them to enable/disable some Windows features for some users, configure computers, enforce policies... 
 
@@ -94,38 +94,6 @@ To log in to a local account, use `.\Username`.
 
 ##### Manage OUs, Security Groups, and Users
 
-* Start the Server Manager
-* Go to Tools > Active Directory Users and Computers
-
-<details class="details-n">
-<summary>Create an OU</summary>
-
-* Right-click on your domain
-* New > Organizational Unit
-* Give it a name
-</details>
-
-<details class="details-n">
-<summary>Delete an OU</summary>
-
-* Click on View > Advanced features
-* Right-click on your OU
-* Go to Properties > Object
-* Unselect "Protect object from accidental deletion"
-* Apply, then close
-* Right-click on your OU, and click on delete
-</details>
-
-<details class="details-n">
-<summary>Manager Users</summary>
-
-**Create users**
-
-* Right-click on your domain
-* New > User
-* You must at least add a "Full name" and a "logon"
-* Add a password that matches your password policy
-
 **Add a home folder**
 
 * Right-click on a user > properties
@@ -134,7 +102,6 @@ To log in to a local account, use `.\Username`.
 * The drive will be shown next to the "C:" drive
 
 ➡️ The advantage of using `%username%` is that you can edit multiple users, and the value will be replaced for each one.
-</details>
 
 <details class="details-n">
 <summary>Create Security groups</summary>
