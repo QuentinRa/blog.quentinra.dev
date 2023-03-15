@@ -519,7 +519,6 @@ Stuff that I found, but never read/used yet.
 * Microsoft System Center Configuration Manager (SCCM)
 * SConfig <small>(relies on PowerShell to manage ADDS)</small>
 * Namespace
-* Change domain (users and computers)
 * `gpresult /R` 
 * Windows Admin Center 
 * Azure AD cloud Sync 
