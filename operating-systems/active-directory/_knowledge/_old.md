@@ -49,20 +49,6 @@ Configure your DHCP server
 </details>
 
 </div><div>
-
-##### Configure SNMP
-
-<details class="details-n">
-<summary>Notes to configure SNMP</summary>
-
-* Start the **Server Manager**
-* Click on "Add roles and features"
-* Press Next thrice
-* In Features, select SNMP Service
-
-Once installed, open "Services" and find the SNMP service. Right-click on edit, and edit the properties however you want.
-</details>
-
 </div></div>
 
 <hr class="sep-both">
