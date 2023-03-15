@@ -94,4 +94,45 @@ Registers
 * CIR
 * AC0
 * AC1
+
+Operating system
+
+* kernel (system services: pilotes...)
+* user services
+* an application can't access another one in memory? but we can create a zone in which two can access? Swap: store on the disk.
+</div></div>
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-md-2"><div>
+
+App
+
+* Presentation
+* Core
+* Storage
+
+Monolithic: 3 in one process.
+
+Centralized storage: 2 in one process and a centralized storage.
+
+Client-server: only presentation, and a centralized storage/core.
+
+Distributed: one machine for each.
+
+* variants: some calculations near the database
+* variants: some pre-computation of the presentation near the core
+
+Between app and storage: ODBC, JDBC, ADO, Java beans...
+
+Between presentation and app: Sockets, RPC, TCP/UDP, HTML/SHTML...
+</div><div>
+
+Point to Point. N systems directly linked to n others. If we change one, we need to change xxx connections too.
+
+Bus: everyone only interact with a bus. Only two connections to handle.
+
+Sync/Async. Async: with a bus and its database. Each actor ask the bus, but the bus isn't the one initiating the request.
 </div></div>
