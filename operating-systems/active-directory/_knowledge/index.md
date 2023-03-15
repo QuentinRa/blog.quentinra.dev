@@ -65,6 +65,10 @@ You will install on this computer **Windows Server** 2019/2022/... As a student,
 ➡️ If you're using Virtual Box, [see these notes](/tools-and-frameworks/others/virtualization/virtualbox/index.md#active-directory-notes).
 
 After installing the ISO, when starting the machine, the **Server Manager** will automatically open itself. From there, you will be able to install **ADDS** and many other services/tools 📌.
+
+**Where to learn?**
+
+* [Introduction to ADDS Structure in Windows Server 2012](https://www.youtube.com/watch?v=lFwek_OuYZ8)
 </div><div>
 
 Before installing ADDS, you should:
@@ -124,6 +128,31 @@ Then, you can process with the installation:
 * Enter the `domain\username` of the parent domain. For instance, `example.com\administrator`. Select `example.com`.
 * In the "New domain name", you could add `eu`.
 * Process with the setup of `eu.example.com`
+</details>
+
+<details class="details-n">
+<summary>Installation and configuration of DHCP</summary>
+
+One of the first thing you may do is to configure the DHCP server. When computers will connect to active directory, they will be assigned an IP. You can define here the rules to assign IPs. 🌍
+
+* Start the **Server Manager**
+* Click on "Add roles and features"
+* Press Next twice
+* In Server Roles, select DHCP Server
+* Press Next twice, then Install
+* Click on tools > DHCP
+
+Configure your DHCP server
+
+* IPV4 > New Scope
+  * Name: Lan1
+  * Select a range of addresses
+  * You can prevent person from taking some addresses
+  * Select a lock duration <small>(ex: 1 day)</small>
+* We can reserve an IP address for a specific MAC address
+* You can see attributed IPs in "Address leases"
+
+➡️ Use `ipconfig /all` to get the IPv4/MAC address.
 </details>
 </div></div>
 
@@ -429,13 +458,38 @@ You can go back in the `HOME` folder, and see a folder for each user.
 
 <hr class="sep-both">
 
+## Forest and trusts
+
+<div class="row row-cols-md-2"><div>
+
+A **trust** 👪 is a relationship between two domains or forest, defining whether each one can access objects of the other.
+
+In a forest, all domains are implicitly trusted by each other. But, forests are not trusting other forest.
+
+There are several types of trusts:
+
+* **One-way trusts** ➡️: given a one-way trust from B to A, B is able to access object from A, but not the other way around.
+
+* **Two-way trusts** 🔁: two one-way trust <small>(from B to A, and from A to B.)</small>
+</div><div>
+
+There are other kind of trusts:
+
+* External trust
+* Forest trust
+* Shortcut trust
+
+👉 Trusts are not something that sysadmins will see often. These are mostly used when there are multiple forests, such as in big companies, or when merging/acquiring a company...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [old](_old.md)
 * Microsoft System Center Configuration Manager (SCCM)
 * SConfig <small>(relies on PowerShell to manage ADDS)</small>
 * Namespace
