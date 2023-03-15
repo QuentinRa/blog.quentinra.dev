@@ -437,11 +437,21 @@ Stuff that I found, but never read/used yet.
 
 * [old](_old.md)
 * Microsoft System Center Configuration Manager (SCCM)
+* SConfig <small>(relies on PowerShell to manage ADDS)</small>
 * Namespace
 * Change domain (users and computers)
-* `gpresult /R`
+* `gpresult /R` 
+* Windows Admin Center 
+* Azure AD cloud Sync 
+* GPO (Priority/Unit order)
 </div><div>
 
+* IPAM
+* SSPR
+* [rdr-it.com](https://rdr-it.com/active-directory/)
+* [microsoft](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-domain-services)
+* [activedirectorypro](https://activedirectorypro.com/blog/)
 * Active Directory Federation Services
 * Active Directory Backup and Recovery
+* Active Directory Auditing
 </div></div>
