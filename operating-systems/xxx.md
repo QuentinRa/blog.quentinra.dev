@@ -164,3 +164,49 @@ Quality/Debit=freq to select UDP/TCP.
 
 ...
 </div></div>
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-md-2"><div>
+
+DBMS
+
+* Data lake/warehouse? Depot for analysis. No update, only add. ETL tools to transfer from the database to the lake, in a format more easily manipulated. DBMSR? Cubes?
+  * ACID
+* Big data: VVV (NoSQL)
+  * BASE
+
+Software dev
+
+* Understand the exigences (why do we need it...)
+* Design a model/mockup
+* Development
+* Validate (quality control, tests..;)
+* Release and upgrades
+</div><div>
+
+Order
+
+* Waterfall
+* Spiral
+* Incremental
+* Agile
+
+Languages
+
+* machine
+* assembly
+* procedural and object (non machine dependant)
+* declarative (describe the result)
+
+Env
+
+* Formation
+* Prod
+* Pre-prod (test with prod data)
+* integration (with other software/...)
+* quality control (functional)
+* dev (continuous integration=>send your work=>tests=>deploy to envs=>continuous deployment)
+</div></div>
