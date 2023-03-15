@@ -337,6 +337,76 @@ There, you can enable history, set password length and age <small>(ex: 6 months)
 
 <hr class="sep-both">
 
+## Files and folders
+
+<div class="row row-cols-md-2"><div>
+
+#### Mount a network drive 📂
+
+A network drive is a drive on the server, that can be accessed from any workstation. For employees, they won't use the local folders such as "My documents", but these drives instead. For sysadmins, it means that they only have to backup these drives.
+
+⛏️ The first thing you may have to do is to create a new hard drive, that will be shared over the network. Let's call it `E:`.
+
+<details class="details-n">
+<summary>🗃️ Create a new hard drive</summary>
+
+* Start the **Server Manager**
+* Go to Tools > Computer Management > Disk Manager
+* Select the drive, right-click on it, and ensure it's marked as online <small>(or right-click on "offline" and set it to online)</small>
+
+![disk_online.png](_images/disk_online.png)
+
+* Right-click > Initialize Disk <small>(if there is no unallocated)</small>
+* Right-click on "unallocated" and create a new volume. You can leave the name empty.
+</details>
+
+Once created, you can either share the drive or only a folder.
+
+<details class="details-n">
+<summary>🌍 Share a drive</summary>
+
+➡️ To share the drive, Right-click on it > Properties > Sharing > Advanced Sharing, and enable the sharing. The path that users will use will be shown below "Network Path" <small>(ex: \\\\\ServerName\DriveName)</small>.
+
+➡️ To share a folder <small>(of an online drive)</small>, Right-click on it > Properties > Sharing > Share. Add groups such as `Domain Users` for everyone. The path will be shown below "Network Path" <small>(ex: \\\\\ServerName\FolderName)</small>.
+</details>
+
+👉 TL;DR mounted drive/folders will be shown at `\\ServerName` with the servername the name that you defined before installing ADDS.
+</div><div>
+
+#### Auto-mounting 🚀
+
+Instead of writing the path to a folder each time, sysadmin create a fake hard drive, such as `F:` which will point to a network folder.
+
+You can do it by creating a GPO. For instance, if you shared a drive called `Data` with a folder `Marketing`, you may configure a GPO so that employees of the marketing unit have a hard drive `M:` pointing to it.
+
+<details class="details-n">
+<summary>Automatically mounting using a GPO 💘</summary>
+
+* Start the **Server Manager**
+* Go to Tools > Group Policy Management
+* Create a GPO <small>(and configure it...)</small>
+* Right-click on a GPO > Edit
+
+Go to User Configuration > Preferences > Windows Settings > Drive Maps. Here, you can map a drive to a folder, and only apply the rule to a group/...
+
+* Right-click > New > Drive Map
+* In Location, add the network path, such as `\\ServerName\Data\Maketing\`
+* Select a drive letter <small>(ex: M)</small>
+
+You may want to only mount this hard drive for some groups of users, according to how you configured your GPO. You can do that as follows:
+
+* Navigate to the "common" tab
+* Select "remove this item when its no longer applied"
+* Select "item-level targeting"
+  * Click on "Targeting"
+  * Add the security group that will get access to this mapped drive <small>(ex: Marketing)</small>
+
+➡️ For conditions like "one of multiple groups" <small>(ex: Both IT and Marketing)</small>, you can right-click on the second item, and in item options, select OR.
+</details>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
