@@ -229,12 +229,12 @@ Quality criteria.
 * do not name workstation after its unit
 * no .local, use intranet
 * Azure AD (SAML, OAuth, OpenID connect, WS-federation) vs On-premise
-</div><div>
-
 * [a](https://www.varonis.com/fr/blog/meilleures-pratiques-de-nommage-de-domaines-active-directory?hsLang=fr)
 * [b](https://social.technet.microsoft.com/wiki/contents/articles/34981.active-directory-best-practices-for-internal-domain-and-network-names.aspx)
 * linux active directory
 * OpenLDAP/FreeIPA for full-linux
+</div><div>
+
 * hard to guess username (like not firstname.lastname, not random)
 * security principals = SID = Secure identifier. Store in the SAM if not connected to the domain? = sysprep
 * Distribution groups (mailing lists?)
@@ -244,4 +244,23 @@ Quality criteria.
 * priority: the parent rule them all, unless with allow override (??? no sure)
 * `gpupdate /force`
 * gpedit (local)
+
+WSUS
+
+* Windows Workstation
+* 3rd party
+* GPO
+* centalized (download once, and deploy, bandwidth--)
+* constraints before deploying because it takes resources, priorities like exposed to the outside or not...
+
+XXX
+
+* Redhat sattelite/capsules?
+* Ansible or AWX
+
+Federation?
+
+* OpenID
+* SAML
+* OAuth
 </div></div>
