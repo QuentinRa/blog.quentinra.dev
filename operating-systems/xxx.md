@@ -239,4 +239,9 @@ Quality criteria.
 * security principals = SID = Secure identifier. Store in the SAM if not connected to the domain? = sysprep
 * Distribution groups (mailing lists?)
 * Groups: domain, global, universal
+* DFS/DFSR (drivemaps? redunduncy, "serveur de relève?", load balancing?, new alternatives)
+* the least services on the root domain (IIS, WSUS...)
+* priority: the parent rule them all, unless with allow override (??? no sure)
+* `gpupdate /force`
+* gpedit (local)
 </div></div>
