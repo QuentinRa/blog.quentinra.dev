@@ -276,4 +276,28 @@ Clouds
 * AWS, AZURE, Google
 * SaaS, IaaS, DaaS, FaaS, PaaS, STaaS...
 * Notes about how to select a cloud solution
+* Cloud FW/SASE
+
+Network
+
+* E/W = between two apps
+* N/S = with the internet
+* Firewall => NGFW AMP Duo Email ISE Umbrella Enpoint Web Workload Services
+
+Zero Trust
+
+* a concept
+* segmentation, firewall...
+* principles: no blind trust, least privilege, always check
+* don't burden users / security vs productivity "sweet spot"
+
+XXX
+
+* threatmap
+* backups
+* updates
+* prevent access to dangerous websites
+* training and culture/"cyber hygiène"
+* EDR/SOC
+* ShadowServer
 </div></div>
