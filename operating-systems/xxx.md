@@ -209,4 +209,8 @@ Env
 * integration (with other software/...)
 * quality control (functional)
 * dev (continuous integration=>send your work=>tests=>deploy to envs=>continuous deployment)
+
+Different kind of software (SCM, ITSS...). ERP = all in one. BI = vision on all information. MDM.
+
+Quality criteria.
 </div></div>

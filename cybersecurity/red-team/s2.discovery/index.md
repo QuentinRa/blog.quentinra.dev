@@ -66,6 +66,7 @@ Stuff that I found, but never read/used yet.
 * aquatone <small>(port scanning, subdomain/website enumation)</small>
   * automate the process of inspecting the website on a port, given a (supposedly long) list of IP addresses.
   * can take reports generated with nmap/masscan
+* file analysis (comments, parameters, sensitive data...)
 * Hping3
 * OpenVAS
 * QualysGuard

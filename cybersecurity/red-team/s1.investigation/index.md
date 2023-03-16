@@ -64,6 +64,11 @@ SOCMINT
 * Social Mapper
 * StalkScan
 * [SpiderFoot](https://github.com/smicallef/spiderfoot) (8.7k ⭐)
+
+Others
+
+* cloud-based services and platforms investigation
+* Wireless network reconnaissance
 </div><div>
 
 Web Scraping
