@@ -1,4 +1,4 @@
-  # OCaml programming
+# OCaml programming
 
 OCaml is a functional language, from the family of Meta Languages (".ml", along with SML or CAML). According to ocaml.org, "OCaml is a general-purpose, industrial-strength programming language with an emphasis on expressiveness and safety". We are currently in [OCaml 4.14](https://github.com/ocaml/ocaml) <small>(OCaml 5.0 is in progress)</small>.
 

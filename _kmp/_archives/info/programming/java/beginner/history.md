@@ -20,7 +20,7 @@ I will summarize here the history of Java, and some new features that got introd
 ## Java 8
 
 * [Streams](../advanced/streams.md)
-* [Lambda expressions](../beginner/interfaces.md#functional-interfaces)
+* [Lambda expressions](interfaces.md#functional-interfaces)
 * JavaFX is not bundled anymore with the JDK
 * Interface can have default method (method with a default behavior/code)
 * You can use method references (you can use Caller::method instead of a lambda of one line calling a method)
