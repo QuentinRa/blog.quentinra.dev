@@ -235,5 +235,8 @@ Quality criteria.
 * [b](https://social.technet.microsoft.com/wiki/contents/articles/34981.active-directory-best-practices-for-internal-domain-and-network-names.aspx)
 * linux active directory
 * OpenLDAP/FreeIPA for full-linux
-* hard to guess username (like not firstname.lastname)
+* hard to guess username (like not firstname.lastname, not random)
+* security principals = SID = Secure identifier. Store in the SAM if not connected to the domain? = sysprep
+* Distribution groups (mailing lists?)
+* Groups: domain, global, universal
 </div></div>
