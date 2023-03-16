@@ -233,8 +233,6 @@ Quality criteria.
 * [b](https://social.technet.microsoft.com/wiki/contents/articles/34981.active-directory-best-practices-for-internal-domain-and-network-names.aspx)
 * linux active directory
 * OpenLDAP/FreeIPA for full-linux
-</div><div>
-
 * hard to guess username (like not firstname.lastname, not random)
 * security principals = SID = Secure identifier. Store in the SAM if not connected to the domain? = sysprep
 * Distribution groups (mailing lists?)
@@ -244,6 +242,7 @@ Quality criteria.
 * priority: the parent rule them all, unless with allow override (??? no sure)
 * `gpupdate /force`
 * gpedit (local)
+</div><div>
 
 WSUS
 
@@ -263,4 +262,18 @@ Federation?
 * OpenID
 * SAML
 * OAuth
+
+XXX
+
+* Identify and Access manamgent (IAM/GIA)
+* Lifecycle
+
+Clouds
+
+* IIS - automatically mounted with WSUS? - not on the DC
+  * Only install required modules
+* "reduce attack surface"
+* AWS, AZURE, Google
+* SaaS, IaaS, DaaS, FaaS, PaaS, STaaS...
+* Notes about how to select a cloud solution
 </div></div>
