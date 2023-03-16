@@ -214,3 +214,26 @@ Different kind of software (SCM, ITSS...). ERP = all in one. BI = vision on all 
 
 Quality criteria.
 </div></div>
+
+<hr class="sep-both">
+
+## AD
+
+<div class="row row-cols-md-2"><div>
+
+* replication
+* GIA
+* delegate the administrator perms to another account (+disable it)
+* icon when disabled
+* do not name your server after its function
+* do not name workstation after its unit
+* no .local, use intranet
+* Azure AD (SAML, OAuth, OpenID connect, WS-federation) vs On-premise
+</div><div>
+
+* [a](https://www.varonis.com/fr/blog/meilleures-pratiques-de-nommage-de-domaines-active-directory?hsLang=fr)
+* [b](https://social.technet.microsoft.com/wiki/contents/articles/34981.active-directory-best-practices-for-internal-domain-and-network-names.aspx)
+* linux active directory
+* OpenLDAP/FreeIPA for full-linux
+* hard to guess username (like not firstname.lastname)
+</div></div>

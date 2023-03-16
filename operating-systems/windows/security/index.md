@@ -16,6 +16,7 @@ Stuff that I found, but never read/used yet.
 * PowerSploit...
 * Mimikatz...
 * Microsoft Security Compliance Toolkit (SCT)
+* CIS-CAT
 </div><div>
 
 **Windows Update** (`control /name Microsoft.WindowsUpdate`)
