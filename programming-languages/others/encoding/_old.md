@@ -113,39 +113,3 @@ Your number of digits in base-2 should be a multiple of 4 to apply the previous 
 * So we have $(7D)_{16}$ or $\text{0x}7D$
 
 </div></div>
-
-<hr class="sr">
-
-## Radix conversion without passing by radix-2
-
-<div class="row row-cols-md-2"><div>
-
-Every previous example was first converting radix-10 to radix-2, then radix-2 to radix-n. This is both inefficient, and not universal, as the same process can't be applied to radix-15, which isn't a multiple of 2...
-
-Instead, here is another more universal, though possibly harder/longer
-
-* $a = \text{your_number}$
-* $n = \text{your_radix}$
-* do while $a > 0$
-  * $q_i = \frac{a}{n}$
-  * $r_i = a\ mod\ n$
-  * $a = q_i$
-
-Using this algorithm, in the end, you have to convert every invalid $r_i$ to radix-n <small>(ex: 14 in radix-15 is E)</small>, and concatenate **in the reverse order** every value. You can [use rapid-table website to do it online](https://www.rapidtables.com/convert/number/base-converter.html).
-</div><div>
-
-* $a = 6072$
-* $n = 15$
-* do while $a > 0$
-  * $q_0 = 6072 / 15 = 404$
-  * $r_0 = 6072\ mod\ 15 = 12$
-  * $q_1 = 404 / 15 = 26$
-  * $r_1 = 404\ mod\ 15 = 14$
-  * $q_2 = 26 / 15 = 1$
-  * $r_2 = 26\ mod\ 15 = 11$
-  * $q_3 = 1 / 15 = 0$
-  * $r_3 = 1\ mod\ 15 = 1$
-  * exit, $a$ is now 0
-
-Then we are converting $12=C$, $14=E$, $11=B$, then concatenating in reverse order giving us $(6072)\_{10} = (1BEC)\_{15}$.
-</div></div>

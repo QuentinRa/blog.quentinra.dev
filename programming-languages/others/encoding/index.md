@@ -12,6 +12,8 @@ A radix or a base is a number of unique digits that we can use to encode a messa
 * hexadecimal <small>(radix 16, $[0-9]$ and $[A-F]$)</small>
 * base32 <small>($[A-Z]$ and $[2-7]$ or $[A-V]$ and $[0-9]$)</small>
 * base64 <small>($[A-Z]$ and  $[0-9]$ and $[+/]$ and "=" for padding)</small>
+
+➡️ "Radix n" or "Radix-n" are both valid and commonly used.
 </div><div>
 
 **Some common rules** 📌
@@ -27,7 +29,46 @@ A radix or a base is a number of unique digits that we can use to encode a messa
 * [CyberChef](https://github.com/gchq/CyberChef) (19.2k ⭐) | [Online version](https://gchq.github.io/CyberChef/)
 * Burp Suite Decoder
 * [Decodify](https://github.com/s0md3v/Decodify) (0.8k ⭐)
-* [binaryhexconverter](https://www.binaryhexconverter.com/)
+* [binaryhexconverter.com](https://www.binaryhexconverter.com/)
+* [rapidtables.com/base converter](https://www.rapidtables.com/convert/number/base-converter.html)
+</div></div>
+
+<hr class="sep-both">
+
+## Division by base
+
+<div class="row row-cols-md-2"><div>
+
+The division by base is a simple and straightforward way to convert number from any base to any base.
+
+* $a = \text{your_number}$
+* $n = \text{your_radix}$
+* do while $a > 0$
+    * $q_i = \frac{a}{n}$
+    * $r_i = a\ mod\ n$
+    * $a = q_i$
+
+The output is a set of $r_i$. You may have to convert them. For instance, $15$ will be converted to $F$. The final value is the concatenation of every $r_i$ **in the reverse order** (from the last to the first).
+
+➡️ There are other techniques such as
+</div><div>
+
+**Example** 🔥
+
+* $a = 6072$
+* $n = 15$
+* do while $a > 0$
+    * $q_0 = 6072 / 15 = 404$
+    * $r_0 = 6072\ mod\ 15 = 12$
+    * $q_1 = 404 / 15 = 26$
+    * $r_1 = 404\ mod\ 15 = 14$
+    * $q_2 = 26 / 15 = 1$
+    * $r_2 = 26\ mod\ 15 = 11$
+    * $q_3 = 1 / 15 = 0$
+    * $r_3 = 1\ mod\ 15 = 1$
+    * exit, $a$ is now 0
+
+Then we are converting $12=C$, $14=E$, $11=B$, and concatenating them in reverse order giving us $(6072)\_{10} = (1BEC)\_{15}$.
 </div></div>
 
 <hr class="sep-both">
@@ -98,6 +139,7 @@ URL encoding
 * [urlencoder](https://www.urlencoder.io/)
 * add a section here about URL encoding, instead of having it in many places
 * [old](_old.md)
+* binary-coded decimal (BCD)
 </div><div>
 
 </div></div>
