@@ -2,18 +2,30 @@
 
 <div class="row row-cols-md-2"><div>
 
-Encoding, unlike encryption, is simply another way of presenting data. Anyone that knows the algorithm used for encryption, can easily decode the message. In most cases, it's usually
+Encoding 🖼️️ is a way of presenting data. Unlike encryption 🔒, anyone that can identify the algorithm used can decode the message.
 
-* base32 <small>[A-Z] and [2-7] or [A-V] and [0-9]...</small>
-* base64 <small>(a-Z, 0-9, +, /, and "=" for padding)</small> 📌
-* hexadecimal <small>(radix/base 16)</small>
+A radix or a base is a number of unique digits that we can use to encode a message. The most well-known ones are
+
+* binary <small>(radix 2, $[0-1]$)</small>
+* octal <small>(radix 8, $[0-7]$)</small>
+* hexadecimal <small>(radix 16, $[0-9]$ and $[A-F]$)</small>
+* base32 <small>($[A-Z]$ and $[2-7]$ or $[A-V]$ and $[0-9]$)</small>
+* base64 <small>($[A-Z]$ and  $[0-9]$ and $[+/]$ and "=" for padding)</small>
 </div><div>
 
-You can use [CyberChef](https://github.com/gchq/CyberChef) (19.2k ⭐) to encode/decode a message. They have an [online version here](https://gchq.github.io/CyberChef/).
+**Some common rules** 📌
 
-You can use [Burp Suite Decoder](/_cybersecurity/exploitation/web/burpsuite/index.md#decoder-tab).
+* In a $radix\ n$, values goes from $0$ to $n-1$
+* After 9, we are using letters
+* After 35, we are using symbols
+* ...
+* $(n)_{k}$ means that the number $n$ is in a radix $k$
 
-There is also a python tool called [Decodify](https://github.com/s0md3v/Decodify) (0.8k ⭐).
+**Some tools to detect the encoding/decode/encode** 🚀
+
+* [CyberChef](https://github.com/gchq/CyberChef) (19.2k ⭐) | [Online version](https://gchq.github.io/CyberChef/)
+* Burp Suite Decoder
+* [Decodify](https://github.com/s0md3v/Decodify) (0.8k ⭐)
 </div></div>
 
 <hr class="sep-both">
@@ -35,7 +47,6 @@ $ echo "dG90bw=" | base64 -d
 toto
 ```
 </div></div>
-
 
 <hr class="sep-both">
 
