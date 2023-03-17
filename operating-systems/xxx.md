@@ -228,7 +228,7 @@ Quality criteria.
 * do not name your server after its function
 * do not name workstation after its unit
 * no .local, use intranet
-* Azure AD (SAML, OAuth, OpenID connect, WS-federation) vs On-premise
+* Azure AD (SAML, OAuth, OpenID connect, WS-federation) vs On-premise (local network)
 * [a](https://www.varonis.com/fr/blog/meilleures-pratiques-de-nommage-de-domaines-active-directory?hsLang=fr)
 * [b](https://social.technet.microsoft.com/wiki/contents/articles/34981.active-directory-best-practices-for-internal-domain-and-network-names.aspx)
 * linux active directory
@@ -242,7 +242,6 @@ Quality criteria.
 * priority: the parent rule them all, unless with allow override (??? no sure)
 * `gpupdate /force`
 * gpedit (local)
-</div><div>
 
 WSUS
 
@@ -262,6 +261,7 @@ Federation?
 * OpenID
 * SAML
 * OAuth
+</div><div>
 
 XXX
 
@@ -300,4 +300,17 @@ XXX
 * training and culture/"cyber hygiène"
 * EDR/SOC
 * ShadowServer
+
+Migrate
+
+* cost/value (performance=cost, security, cloud, traffic)
+* formation
+* incompatibility
+* WDS: deploy images
+* hyper-v
+* bitlocker
+* bios/uefi (secure boot, rootkit, bootkit)
+* device guard
+* applocker
+* Hiren's bootcd
 </div></div>
