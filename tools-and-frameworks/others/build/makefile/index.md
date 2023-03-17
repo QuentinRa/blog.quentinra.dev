@@ -32,6 +32,71 @@ $ make rule_name # a specific rule
 
 <hr class="sep-both">
 
+## Getting started
+
+<div class="row row-cols-md-2"><div>
+
+**Breakdown of a rule** 🏡
+
+```makefile!
+target: deps
+    compilation_command
+```
+
+* 🎯 `target` is the file that the command will generate <small>(ex: `a.out`)</small>.
+* 🪴 `deps` is a list of targets, that need to be compiled first
+* 🌴 `compilation_command` is a command that uses the dependencies to build the target.
+
+**Example** 🔥
+
+We got a file `main.c` and we want to generate an executable `a.out`. We will first define the rule for the executable:
+
+```makefile!
+# ❌ bad
+a.out: main.c
+        gcc -o a.out main.c
+```
+
+We can compile and run our program. 
+
+But this is not a correct approach 👎. Imagine, if `main.c` has many dependencies, then they will all be listed as dependencies to `a.out`. It means that every time we ask `make` to compile the latest `a.out`, every dependency will be checked.
+</div><div>
+
+Instead, we usually use intermediate files, such as `.o` in C.
+
+```makefile!
+# ✅ correct
+a.out: main.o
+        gcc -o a.out main.o
+```
+
+We don't need to specify how a `.o` is compiled, as this is one of the **compilation rules** 📝 that Makefile knows. Still, you can do it:
+
+```makefile!
+main.o: main.c
+        gcc -c main.c -o main.o
+```
+
+For other languages or in some cases, you may have to define your own compilation rules, for instance, in C, we would have:
+
+```makefile!
+%.o: %.c
+        gcc -c $< -o $@
+```
+
+This rule is similar to the pre-existing one to compile a `.o`. The final output would be like this:
+
+```makefile!
+a.out: main.o
+        gcc -o a.out main.o
+
+%.o: %.c
+        gcc -c $< -o $@
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Basics
 
 <div class="row row-cols-md-2"><div>
@@ -53,25 +118,14 @@ The compilation rules are generic templates to compile file. There are some pre-
 ```
 </div><div>
 
-**Breakdown of a rule**
-
-```makefile!
-target: deps
-    compilation_command
-```
-
-* 🎯 `target` is the file that the command will generate <small>(ex: `a.out`)</small>.
-* 🪴 `deps` are a list of targets, that need to be compiled first
-* 🌴 `compilation_command` is a command that uses the dependencies to build the target.
-
 For instance:
 
 ```
 a.out: main.o
-    gcc -o a.out main.o
-    
+        gcc -o a.out main.o
+
 main.o: main.c
-    gcc -c main.c -o main.o
+        gcc -c main.c -o main.o
 ```
 
 As we said, Makefile already know how to compile a `.o`, so we can shorten the code to
