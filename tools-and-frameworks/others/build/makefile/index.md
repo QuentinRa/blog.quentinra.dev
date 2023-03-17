@@ -97,11 +97,39 @@ a.out: main.o
 
 <hr class="sep-both">
 
-## Basics
+## Dependencies
 
 <div class="row row-cols-md-2"><div>
 
-Usually, we start a Makefile by defining variable, and compilation rules, as to avoid copy-pasting code 👌.
+Makefile dependencies are files that, if changed, mean that we need to recompile our target. 
+
+In C, we could describe dependencies like this:
+
+* 🌱 Usually, each `.o` is associated with their `.c`
+* 📄 Usually, each `.o` is associated with their `.h`
+* 🌍 A `.o` can be associated with the `.h` they use
+* 🗃️ A `.o` should be associated with the `.o` matching the `.h` they use
+* ❌ We don't usually see a `.o` associated with another `.c`
+</div><div>
+
+Because of the existing compilation rules, some dependencies are implicit and can be omitted. Giving us:
+
+```yaml!
+main.o: file1.o file2.o
+file1.o: file1.h
+file2.o: # none
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Extra
+
+<div class="row row-cols-md-2"><div>
+
+#### Variables
+
+We usually start a Makefile by defining some variables, to avoid copy-pasting code and easing the maintaining of our Makefile 👌.
 
 Some quite used names for variables are `CC` and `CFLAGS`.
 
@@ -110,85 +138,37 @@ CC=gcc # compiler
 CFLAGS=-Wall # compiler flags, -lm...
 ```
 
-The compilation rules are generic templates to compile file. There are some pre-existing one, such as `*.c` to `*.o`.
+To use them in some rules:
 
 ```makefile!
-%.o: %.c
-    $(CC) -c $< -o $@
+my_program: ...
+        $(CC) $(CFLAGS) -o my_program ...
 ```
 </div><div>
 
-For instance:
+#### Multilines
 
-```
-a.out: main.o
-        gcc -o a.out main.o
-
-main.o: main.c
-        gcc -c main.c -o main.o
-```
-
-As we said, Makefile already know how to compile a `.o`, so we can shorten the code to
-
-```
-a.out: main.o
-    gcc -o a.out main.o
-```
-
-</div></div>
-
-<hr class="sep-both">
-
-## Examples - Makefile in C
-
-<div class="row row-cols-md-2"><div>
-
-The first thing we do in a makefile, is to define variables. They simplify the process of maintaining and updating our Makefile.
+You can use `\ ` for multiline instructions:
 
 ```makefile!
-CC = gcc # compiler
-CFLAGS = -Wall # compiler flags such as -lm...
-
 O_FILES = file1.o file2.o \
-          main.o
+        main.o
 ```
 
-👉 Variable names are up to you
-
-The first rule is usually called `all`. The first rule is the one called when using `make` without arguments.
-
-```makefile!
-all : my_program
-```
-</div><div>
-
-Since we defined that the rule `all` generate a file called `my_program`, we need to define how this file is generated...
-
-```makefile!
-my_program : $(O_FILES)
-        $(CC) $(CFLAGS) -o my_program $(O_FILES)
-```
-
-We need to fine how is file in `$(O_FILES)` are compiled since they are needed to generate `my_program`.
-
-```makefile!
-file1.o : file1.h
-file2.o : file1.o
-main.o : file1.o file2.o
-```
+#### PHONY rules
 
 Makefile only call a task if the file or its dependencies were updated. An exception are tasks marked as `.PHONY`
 
-```makefile
-.PHONY : clean
+```makefile!
+.PHONY: clean xxx yyy zzz
 
 # make clean
-clean :
-        rm -f $(O_FILES) my_program
+clean:
+    rm -rf a.out *.o
+    
+# ...
 ```
-
 </div></div>
-
 
 <hr class="sep-both">
 
