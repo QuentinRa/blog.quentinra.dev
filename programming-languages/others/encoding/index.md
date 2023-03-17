@@ -113,7 +113,7 @@ To convert a binary to decimal, and vice-versa, you need to know every power of 
 
 Radix 8, commonly called octal, is a base made of numbers from zero to seven. It's not commonly used  💀.
 
-Radix 8 numbers may, or may not, start with a `0` (0), such as `07`. The zero indicates that this is an octal number.
+Radix 8 numbers may, or may not, start with a `0` (zero), such as `07`. The presence of this zero indicates that this is an octal number.
 
 **3 binary digits are equals to one octal number.**
 
@@ -130,13 +130,51 @@ Radix 8 numbers may, or may not, start with a `0` (0), such as `07`. The zero in
 
 * Given $(1111101)\_{2}$, we need 2 leading zeros
 * $(001111101)\_{2}$
-* Now, simply convert each group of 3 digits to radix 10 🔦
+* Convert each group of 3 digits to radix 10 🔦
   * $(001)\_2$ is equals to $0+0+1=(1)_{10}$
   * $(111)\_2$ is equals to $4+2+1=(7)_{10}$
   * $(101)\_2$ is equals to $4+0+1=(5)_{10}$
 * So we have $(1111101)\_{2}=(175)_{8}=0175$
 
 ➡️ We convert to radix 10, but it's a same as converting to radix 8, as the maximum value is 7. I said "radix 10" to avoid a recursive problem.
+</div></div>
+
+<hr class="sep-both">
+
+## Radix 16 - 🚀
+
+<div class="row row-cols-md-2"><div>
+
+Radix 16, commonly called hexadecimal, is a base made of numbers from zero to 9, and letters from A to F. It replaced octal, and is the most popular way to write shorter binary numbers 🚀.
+
+Hexadecimal numbers usually start with a `0x` ("zero x"), such as `0x7`.
+
+**4 binary digits are equals to one hexadecimal number.**
+
+##### Radix 10 and Radix 16
+
+From 0 to 9, there are no changes. From 10 to 15, we use letters:
+
+| 10  | 11  | 12  | 13  | 14  | 15  |
+|-----|-----|-----|-----|-----|-----|
+| A   | B   | C   | D   | E   | F   |
+</div><div>
+
+#### Radix 16 to Radix 2
+
+* Given $(7D)_{16}$
+  * $(7)_{16} = ({\color{grey}0}111)_2$
+  * $(D)\_{16} = (13)\_{10} = (1101)_2$
+* Giving us $(7D)\_{16}=({\color{grey}0}1111101)\_{2}=(1111101)\_{2}$
+
+#### Radix 2 to Radix 16
+
+* Given $(1111101)\_{2}$. We need 1 leading zeros for 2 groups of 4.
+* $(01111101)\_{2}$
+* Convert each group of 3 digits to radix 10 then radix 16 🔦
+  * $(0111)\_2$ is equals to $1+2+4=(7)\_{10}=(7)\_{16}$
+  * $(1101)\_2$ is equals to $1+4+8=(13)\_{10}=(D)\_{16}$
+* So we have $(7D)_{16}$ or $\text{0x}7D$
 </div></div>
 
 <hr class="sep-both">
@@ -167,12 +205,42 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-URL encoding
-
+* URL encoding
 * [urlencoder](https://www.urlencoder.io/)
 * add a section here about URL encoding, instead of having it in many places
-* [old](_old.md)
 * binary-coded decimal (BCD)
 </div><div>
 
+<details class="details-e">
+<summary><code>hexdump/xxd</code>: convert some text to octal/hexadecimal, and 🔁</summary>
+
+* `-b`: to octal
+* `-C`: to hexadecimal
+* `-e`: customize
+
+```bash
+$ hexdump <<< "Hello, World" > hello_world.hex
+$ cat hello_world.hex
+0000000 6548 6c6c 2c6f 5720 726f 646c 000a
+000000d
+# letters were mixed (WTF!!?)
+$ echo -e "\x65"
+e
+$ echo -e "\x48"
+H
+# here it works fine
+$ xxd <<< "Hello, World" | tee hello_world.hex
+00000000: 4865 6c6c 6f2c 2057 6f72 6c64 0a         Hello, World.
+# reverse
+$ xxd -r hello_world.hex
+Hello, World
+```
+</details>
+<details class="details-e">
+<summary><code>k#n</code>: convert a number $n$ in radix-$k$ to decimal</summary>
+
+```bash
+$ echo $[2#101] # 5
+```
+</details>
 </div></div>
