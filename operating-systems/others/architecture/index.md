@@ -56,6 +56,41 @@ Numbers are stored and read according to the endianness of the machine. For inst
 The same number could have two different value according to the endianness of the one that stored it, and the one that read it.
 
 👉 This do not include the sign bit whose position is fixed.
+
+<br>
+
+#### Arithmetic operations
+
+Operations are between positive binaries. You will have to use the **two's complement** to use negative values in operations.
+
+The only operation possible is the addition. `a-b` is handled as `a+(-b)`.
+
+<details class="details-n">
+<summary>Two's complement - negative numbers</summary>
+
+The two's complement is an "upgrade" to the One's complement, which has the default of having two representation for the number zero. It's as simple as that:
+
+* Invert all bits
+* Add 1
+</details>
+
+<details class="details-n">
+<summary>Example of addition</summary>
+
+<div class="row"><div class="col-md-3">
+
+![addition](_images/addition.png)
+</div><div class="col-md-9">
+
+To add 5 (101) to 5 (101), you need to do like you would have in grad school, with a carry.
+
+* $1+1=0$ with $carry={\color{cyan}1}$
+* $0+0+{\color{cyan}1}=1$ with $carry={\color{red}0}$
+* $1+1+{\color{red}0}=0$ with $carry={\color{orange}1}$
+* $0+0+{\color{orange}1}=1$ with $carry=0$
+</div></div>
+</details>
+
 </div></div>
 
 <hr class="sep-both">

@@ -3,48 +3,11 @@
 <div class="row row-cols-md-2"><div>
 </div><div>
 
-For negative numbers, we need to do an operation called [**Two's complement**](https://en.wikipedia.org/wiki/Two's_complement) (`complément à 2`).
-
-<details class="details-e">
-<summary>Two's complement</summary>
-
-**Convert to positive**
-
-1. convert to binary
-2. inverse every bit (**One's complement**)
-3. add 1 (**Two's complement**)
-4. store it
-
-**Convert back to negative**
-
-1. inverse every bit (**One's complement**)
-2. add 1 (**Two's complement**)
-3. convert back to decimal
-</details>
-
 The most common problem that may occur when doing calculations is an **overflow** (`Débordement`). It means that the result is outside the bounds/range of values for the given number. An **overflow may be without any consequences**, meaning we still got the correct result.
-
-<details class="details-e">
-<summary>Addition / Subtraction</summary>
-
-Actually, there is no such operation as subtracting, we can only do additions, but there is a trick: $a - b = a + (-b)$, and we can use the **Two's complement** to convert a positive number to a negative number.
-
-<div class="row"><div class="col-md-3">
-
-![addition](_images/addition.png)
-</div><div class="col-md-9">
-
-To add 5 (101) to 5 (101), you need to do like you would have in grad school.
-
-* $0+0=0$
-* $0+1=1+0=0$
-* $1+1=0$ with a carry on the next (left-wise), as shown in green.
-</div></div>
 
 **Overflow**: there is an overflow if the last two carries (from right-to-left), highlighted in red, are different from one another. That's the case with the example of 5+5, if we only have 3 bits, we can't store a 10, as we need 4 bits. There is also an overflow, but without consequences, if the last two carries are 1.
 
 See [Integer overflow](https://en.wikipedia.org/wiki/Integer_overflow).
-</details>
 </div></div>
 
 <hr class="sep-both">
