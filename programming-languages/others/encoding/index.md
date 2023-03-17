@@ -73,7 +73,7 @@ Then we are converting $12=C$, $14=E$, $11=B$, and concatenating them in reverse
 
 <hr class="sep-both">
 
-## Radix 2
+## Radix 2 - 🖥️
 
 <div class="row row-cols-md-2"><div>
 
@@ -84,18 +84,17 @@ To convert a binary to decimal, and vice-versa, you need to know every power of 
 | $2^8$ | $2^7$ | $2^6$ | $2^5$ | $2^4$ | $2^3$ | $2^2$ | $2^1$ | $2^0$ |
 |-------|-------|-------|-------|-------|-------|-------|-------|-------|
 | 256   | 128   | 64    | 32    | 16    | 8     | 4     | 2     | 1     |
+
+
+**Every number can be expressed as a sum of powers of two.** If you used a power of two when expressing a number, then add a 0, else 1.
 </div><div>
 
 #### Radix 10 to Radix 2
-
-**Every number can be expressed as a sum of powers of two.**
 
 * $125 = 64+32+16+8+4+1$
 * $125 = 2^6+2^5+2^4+2^3+2^2+2^0$
 * $125 = {\color{red} 1 *} 2^6+ {\color{red} 1 *} 2^5+ {\color{red} 1 *} 2^4+ {\color{red} 1 *} 2^3+ {\color{red} 1 *} 2^2 + {\color{green} 0 *} * 2^1 + {\color{red} 1 *}2^0$
 * $(125)\_{10} = ({\color{red} 11111} {\color{green}0} {\color{red}1})\_{2}$
-
-➡️ If you used the power of two, then it's 0, otherwise it's 1.
 
 #### From Radix 2 to Radix 10
 
@@ -108,7 +107,41 @@ To convert a binary to decimal, and vice-versa, you need to know every power of 
 
 <hr class="sep-both">
 
-## Base64
+## Radix 8 - 💀
+
+<div class="row row-cols-md-2"><div>
+
+Radix 8, commonly called octal, is a base made of numbers from zero to seven. It's not commonly used  💀.
+
+Radix 8 numbers may, or may not, start with a `0` (0), such as `07`. The zero indicates that this is an octal number.
+
+**3 binary digits are equals to one octal number.**
+
+#### From Radix 8 to Radix 2
+
+* Given $(175)\_{8}$
+  * $(1)_8 = ({\color{grey}00}1)_2$
+  * $(7)_8 = (111)_2$
+  * $(5)_8 = (101)_2$
+* Giving us $(175)\_{8}=({\color{grey}00}1111101)\_{2}=(1111101)\_{2}$
+</div><div>
+
+#### Radix 2 to Radix 8
+
+* Given $(1111101)\_{2}$, we need 2 leading zeros
+* $(001111101)\_{2}$
+* Now, simply convert each group of 3 digits to radix 10 🔦
+  * $(001)\_2$ is equals to $0+0+1=(1)_{10}$
+  * $(111)\_2$ is equals to $4+2+1=(7)_{10}$
+  * $(101)\_2$ is equals to $4+0+1=(5)_{10}$
+* So we have $(1111101)\_{2}=(175)_{8}=0175$
+
+➡️ We convert to radix 10, but it's a same as converting to radix 8, as the maximum value is 7. I said "radix 10" to avoid a recursive problem.
+</div></div>
+
+<hr class="sep-both">
+
+## Base64 - ✉️
 
 <div class="row row-cols-md-2"><div class="align-self-center">
 

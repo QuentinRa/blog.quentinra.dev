@@ -53,14 +53,6 @@ A radix-8 number is called an octal number, and it's made of values from $0$, an
 
 **From radix-8 to radix-2** [online tool](https://www.binaryhexconverter.com/octal-to-binary-converter)
 
-A digit in radix-2 is equals to 3 digits in radix-8 <small>($2^3=8$)</small>. You will use that to convert each radix-8 digit to a 3-digits binary, and convert back each 3-digits binary, to a radix-8 digit.
-
-* Given $(175)\_{8}$
-  * $(1)_8 = (1)_2$
-  * $(7)_8 = (111)_2$
-  * $(5)_8 = (101)_2$
-* Giving us $(175)\_{8}=(1111101)\_{2}$
-
 </div><div class="border-start border-dark">
 
 **From radix-2 to radix-8** [online tool](https://www.binaryhexconverter.com/binary-to-octal-converter)
