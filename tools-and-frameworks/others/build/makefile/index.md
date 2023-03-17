@@ -32,6 +32,59 @@ $ make rule_name # a specific rule
 
 <hr class="sep-both">
 
+## Basics
+
+<div class="row row-cols-md-2"><div>
+
+Usually, we start a Makefile by defining variable, and compilation rules, as to avoid copy-pasting code 👌.
+
+Some quite used names for variables are `CC` and `CFLAGS`.
+
+```makefile!
+CC=gcc # compiler
+CFLAGS=-Wall # compiler flags, -lm...
+```
+
+The compilation rules are generic templates to compile file. There are some pre-existing one, such as `*.c` to `*.o`.
+
+```makefile!
+%.o: %.c
+    $(CC) -c $< -o $@
+```
+</div><div>
+
+**Breakdown of a rule**
+
+```makefile!
+target: deps
+    compilation_command
+```
+
+* 🎯 `target` is the file that the command will generate <small>(ex: `a.out`)</small>.
+* 🪴 `deps` are a list of targets, that need to be compiled first
+* 🌴 `compilation_command` is a command that uses the dependencies to build the target.
+
+For instance:
+
+```
+a.out: main.o
+    gcc -o a.out main.o
+    
+main.o: main.c
+    gcc -c main.c -o main.o
+```
+
+As we said, Makefile already know how to compile a `.o`, so we can shorten the code to
+
+```
+a.out: main.o
+    gcc -o a.out main.o
+```
+
+</div></div>
+
+<hr class="sep-both">
+
 ## Examples - Makefile in C
 
 <div class="row row-cols-md-2"><div>
