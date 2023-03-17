@@ -13,5 +13,5 @@ Stuff that I found, but never read/used yet.
 * [gnu](https://www.gnu.org/software/make/manual/html_node/)
 </div><div>
 
-* There are notes everywhere 😭. See also C/Makefile on Texas.
+* There are notes everywhere 😭. See also C/Makefile on Texas. See Clion.
 </div></div>

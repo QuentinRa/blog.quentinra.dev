@@ -15,43 +15,6 @@
               "icon": null,
               "hidden": false
             }
-          ],
-        }
-      },
-      "build": {
-        "name": "Build tools",
-        "active": false,
-        "hidden": true,
-        "courses": {
-          "~": [
-            {
-              "tag": "build/cmake/index.md",
-              "name": "CMake",
-              "desc": "...",
-              "icon": "<i class=\"bi bi-tools\"></i>",
-              "hidden": false
-            },
-            {
-              "tag": "build/gradle/index.md",
-              "name": "Gradle",
-              "desc": "...",
-              "icon": "<i class=\"bi bi-tools\"></i>",
-              "hidden": false
-            },
-            {
-              "tag": "build/makefile/index.md",
-              "name": "Makefile",
-              "desc": "...",
-              "icon": "<i class=\"bi bi-tools\"></i>",
-              "hidden": false
-            },
-            {
-              "tag": "build/maven/index.md",
-              "name": "Maven",
-              "desc": "...",
-              "icon": "<i class=\"bi bi-tools\"></i>",
-              "hidden": false
-            }
           ]
         }
       }
