@@ -138,6 +138,41 @@ This is a set of rules defining how characters are ordered, compared, how the ca
 
 <hr class="sep-both">
 
+## Others
+
+<div class="row row-cols-md-2"><div>
+
+#### Null value
+
+There is usually a null value to indicate that something exist, but is empty. In most languages, it's `NULL` or `null`.
+
+
+<br>
+
+#### Not A Number
+
+There may be a value to indicate that a value is not a number. For instance, `1/0`. It's usually `NaN`.
+
+<br>
+
+#### Size
+
+* **1 Ko** (kilo): $2^{10} = 1024$
+* **1 Mo** (mega): $2^{20} = 1,048,576$
+* **1 Go** (giga): $2^{30} = 1,073,741,824$
+* **1 To** (tera): $2^{40} = 1,099,511,627,776$
+* ...
+</div><div>
+
+#### Dates
+
+Most dates are a number of seconds/milliseconds since a starting point/epoch. In many languages/system, it is the **1st of January 1970**.
+
+In some applications/systems, the number may be a number of days. To represent the time, We add a fraction of the day to the number of days. For instance, `12 h = 1/2`, so the day of epoch (`0`) at 12 h (`.5`) would be `0.5`.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

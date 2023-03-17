@@ -2,28 +2,6 @@
 
 <div class="row row-cols-md-2"><div>
 
-* 2^10 = 1024 = Ko (kilo) = kibi
-* 2^20 = 1 048 576 = Mo (méga) = mebi
-* (new norm because confusing)
-</div><div>
-
-Dates
-
-* Value relative to a date
-* `x.6875` in excel = 16h30, `x,500`=12h...
-
-No data
-
-* NULL (4+NULL = NULL)
-* NaN = 1/0
-</div></div>
-
-<hr class="sep-both">
-
-## XXX
-
-<div class="row row-cols-md-2"><div>
-
 CPU
 
 * Registers
