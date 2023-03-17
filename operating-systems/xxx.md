@@ -5,17 +5,6 @@
 * 2^10 = 1024 = Ko (kilo) = kibi
 * 2^20 = 1 048 576 = Mo (méga) = mebi
 * (new norm because confusing)
-
-xxx
-
-* big endian (0 at the left)
-* little endian (0 at the right)
-
-yyy
-
-* word = 16 bits
-* dword (double word) = 32 bits
-* signed or unsigned
 </div><div>
 
 Floats

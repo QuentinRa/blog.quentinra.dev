@@ -1,17 +1,6 @@
 # Integers arithmetic
 
 <div class="row row-cols-md-2"><div>
-
-We are considering
-
-* **unsigned numbers**: $[0, 2^{n} - 1]$
-* **signed numbers**: $]-2^{n-1}, 0] \cup ]0,2^{n-1}-1[$
-
-$n$ is the number of bits that we have to store this value. For instance, it's usually $32$ for an `int`.
-
-With signed numbers, we are using the leading bit <small>(or the trailing bit)</small>, to know the sign: 0 means positive, 1 means negative.
-
-For positive numbers, regardless of whether they are signed or not, we only have to convert them to binary, and store them.
 </div><div>
 
 For negative numbers, we need to do an operation called [**Two's complement**](https://en.wikipedia.org/wiki/Two's_complement) (`complément à 2`).
