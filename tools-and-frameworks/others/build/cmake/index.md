@@ -44,7 +44,7 @@ project(untitled C) // project "untitled" in C
 
 set(CMAKE_C_STANDARD 99) // standard C99
 
-add_executable(my_program main.c)
+add_executable(my_program main.c main.h)
 ```
 </div><div>
 
@@ -58,7 +58,29 @@ project(untitled CXX) // project "untitled" in C++
 
 set(CMAKE_CXX_STANDARD 14) // in C++14
 
-add_executable(my_program main.cpp)
+add_executable(my_program main.cpp main.hpp)
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Libraries
+
+<div class="row row-cols-md-2"><div>
+
+#### Using math.h
+
+```scss!
+target_link_libraries(my_program PRIVATE m)
+```
+</div><div>
+
+#### Using pthread.h
+
+```scss!
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package(Threads REQUIRED)
+target_link_libraries(my_app PRIVATE Threads::Threads)
 ```
 </div></div>
 
@@ -71,24 +93,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [Akagi201/learning-cmake](https://github.com/Akagi201/learning-cmake)
+* include_directories
 
-```scss!
-set(CMAKE_SYSTEM_NAME Generic)
-set(CMAKE_C_COMPILER_WORKS 1)
-set(CMAKE_CXX_COMPILER_WORKS 1)
-
-project("xxx" C CXX)
-
-include(CMakeListsPrivate.txt)
-
-if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/xxx.txt)
-endif()
-
-add_custom_target(
-    Production ALL
-    COMMAND xxx "${CMAKE_BUILD_TYPE}"
-    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-)
-```
 </div><div>
 </div></div>
