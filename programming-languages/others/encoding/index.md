@@ -8,6 +8,7 @@ A radix or a base is a number of unique digits that we can use to encode a messa
 
 * binary <small>(radix 2, $[0-1]$)</small>
 * octal <small>(radix 8, $[0-7]$)</small>
+* decimal <small>(radix 10, $[0-9]$)</small>
 * hexadecimal <small>(radix 16, $[0-9]$ and $[A-F]$)</small>
 * base32 <small>($[A-Z]$ and $[2-7]$ or $[A-V]$ and $[0-9]$)</small>
 * base64 <small>($[A-Z]$ and  $[0-9]$ and $[+/]$ and "=" for padding)</small>
@@ -26,6 +27,42 @@ A radix or a base is a number of unique digits that we can use to encode a messa
 * [CyberChef](https://github.com/gchq/CyberChef) (19.2k ⭐) | [Online version](https://gchq.github.io/CyberChef/)
 * Burp Suite Decoder
 * [Decodify](https://github.com/s0md3v/Decodify) (0.8k ⭐)
+* [binaryhexconverter](https://www.binaryhexconverter.com/)
+</div></div>
+
+<hr class="sep-both">
+
+## Radix 2
+
+<div class="row row-cols-md-2"><div>
+
+Radix 2, commonly called binary, is a base made of one and zero. It's the language used by machines 🖥️.
+
+To convert a binary to decimal, and vice-versa, you need to know every power of two ($2^9 = 512 \ldots$).
+
+| $2^8$ | $2^7$ | $2^6$ | $2^5$ | $2^4$ | $2^3$ | $2^2$ | $2^1$ | $2^0$ |
+|-------|-------|-------|-------|-------|-------|-------|-------|-------|
+| 256   | 128   | 64    | 32    | 16    | 8     | 4     | 2     | 1     |
+</div><div>
+
+#### Radix 10 to Radix 2
+
+**Every number can be expressed as a sum of powers of two.**
+
+* $125 = 64+32+16+8+4+1$
+* $125 = 2^6+2^5+2^4+2^3+2^2+2^0$
+* $125 = {\color{red} 1 *} 2^6+ {\color{red} 1 *} 2^5+ {\color{red} 1 *} 2^4+ {\color{red} 1 *} 2^3+ {\color{red} 1 *} 2^2 + {\color{green} 0 *} * 2^1 + {\color{red} 1 *}2^0$
+* $(125)\_{10} = ({\color{red} 11111} {\color{green}0} {\color{red}1})\_{2}$
+
+➡️ If you used the power of two, then it's 0, otherwise it's 1.
+
+#### From Radix 2 to Radix 10
+
+* $(1111101)\_{2}$
+* There are 7 digits, so the first is $2^6$
+* $1 * 2^6 + 0 * 2^5 + 1 * 2^4+ 1 * 2^3+ 1 * 2^2+ 0 * 2^1+ 1 * 2^0$
+* $64 + 32 + 16 + 8 + 4 + 0 + 1$
+* $125$
 </div></div>
 
 <hr class="sep-both">
@@ -34,7 +71,7 @@ A radix or a base is a number of unique digits that we can use to encode a messa
 
 <div class="row row-cols-md-2"><div class="align-self-center">
 
-Base64 is usually used to encode an image/..., so that we can transfer it as a string. Most base64 strings are ending with "=", or "==".
+Base64 is usually used to encode an image/..., so that we can transfer it as a string. Most base64 strings are ending with "=", or "==", which is the padding.
 
 * [base64encode](https://www.base64encode.org/)
 * [base64decode](https://www.base64decode.org/)

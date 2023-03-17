@@ -45,49 +45,6 @@ $ echo $[2#101] # 5
 
 <hr class="sr">
 
-## Radix-10
-
-Radix-10 numbers are called decimals, and you should already know them, as they are the numbers that you have been using every day, for instance $125$ is a number in radix-10.
-
-<hr class="sl">
-
-## Radix-2
-
-A radix-2 number is called a binary number, and it's made of $0$, and $1$. For instance, $001$ is the binary for $1$.
-
-<div class="row row-cols-md-2"><div>
-
-**From radix-10 to radix-2** [online tool](https://www.binaryhexconverter.com/decimal-to-binary-converter)
-
-You must know every small power of 2 like the back of your hand:
-
-| $2^8$ | $2^7$ | $2^6$ | $2^5$ | $2^4$ | $2^3$ | $2^2$ | $2^1$ | $2^0$ |
-|-------|-------|-------|-------|-------|-------|-------|-------|-------|
-| 256   | 128   | 64    | 32    | 16    | 8     | 4     | 2     | 1     |
-
-Every number can be expressed as a sum of powers of two. For instance, $125 = 64+32+16+8+4+1$ which means $125 = 2^6+2^5+2^4+2^3+2^2+2^0$. Now, to write the binary
-
-* if you used a power of 2, then it's a $1$
-* otherwise, it's $0$.
-
-So it means that we have $125 = {\color{red} 1 *} 2^6+ {\color{red} 1 *} 2^5+ {\color{red} 1 *} 2^4+ {\color{red} 1 *} 2^3+ {\color{red} 1 *} 2^2 + {\color{green} 0 *} * 2^1 + {\color{red} 1 *}2^0$, giving us $(125)\_{10} = ({\color{red} 11111} {\color{green}0} {\color{red}1})\_{2}$
-
-</div><div class="border-start border-dark">
-
-**From radix-2 to radix-10** [online tool](https://www.binaryhexconverter.com/binary-to-decimal-converter)
-
-You simply have to do the inverse of what you did, but to make things easier, you should start from the right, and go back to the left
-
-* Given $(1111101)\_{2}$
-* You have $1 * 2^0 + 0 * 2^1 + 1 * 2^2+ 1 * 2^3+ 1 * 2^4+ 1 * 2^5+ 1 * 2^6$
-* Which is $1 + 0 + 4 + 8 + 16 + 32 + 64$
-* Giving us $125$
-
-Pretty easy, right?
-</div></div>
-
-<hr class="sr">
-
 ## Radix-8
 
 A radix-8 number is called an octal number, and it's made of values from $0$, and $7$. In most languages, an octal number is starting with $0$.
