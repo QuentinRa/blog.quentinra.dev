@@ -91,6 +91,49 @@ To add 5 (101) to 5 (101), you need to do like you would have in grad school, wi
 </div></div>
 </details>
 
+<br>
+
+#### Problems
+
+<p></p>
+
+* 🔥 [**Overflow**](https://en.wikipedia.org/wiki/Integer_overflow): an overflow occur when the result of a calculation is outside the range of values that can be stored with our number of bits. An overflow is without consequences if the result is valid.
+</div></div>
+
+<hr class="sep-both">
+
+## Strings 💬
+
+<div class="row row-cols-md-2"><div>
+
+A string is an array of characters, such as `'a'`. A character is mapped to a number using a table, as we can only store integers.
+
+A string could have a fixed length, or a variable length. For the latter, we may use a null character such as `\0` to mark the end.
+
+**ASCII table (7 bits)**
+
+The ASCII table is the most well-known table. `'a'` in ASCII is the number `97`. 7 bits are not enough to store every character, so it's less used than in its prime. 
+
+**Extended ASCII table (8 bits)**
+
+This is an extension of the ASCII table adding 128 characters. The set of character is NOT fixed. For instance, the character `130` can be a different character according to how the extended table is defined.
+</div><div>
+
+**Unicode (UTF)**
+
+UFT-8 and other variants are mainly used in international applications. UTF-8 characters are stored on 4 bytes.
+
+<br>
+
+#### Fonts
+
+A font is a set of glyphs to render a character. Given two fonts, one could render the letter 'a' as `a` while another could render it as `+`.
+
+<br>
+
+#### Collation (database)
+
+This is a set of rules defining how characters are ordered, compared, how the case is handled <small>(is it case-sensitive?)</small>, and how special characters are treated <small>(à==a? before "a"? after "a"?)</small>.
 </div></div>
 
 <hr class="sep-both">

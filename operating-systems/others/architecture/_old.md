@@ -1,18 +1,4 @@
-# Integers arithmetic
-
-<div class="row row-cols-md-2"><div>
-</div><div>
-
-The most common problem that may occur when doing calculations is an **overflow** (`Débordement`). It means that the result is outside the bounds/range of values for the given number. An **overflow may be without any consequences**, meaning we still got the correct result.
-
-**Overflow**: there is an overflow if the last two carries (from right-to-left), highlighted in red, are different from one another. That's the case with the example of 5+5, if we only have 3 bits, we can't store a 10, as we need 4 bits. There is also an overflow, but without consequences, if the last two carries are 1.
-
-See [Integer overflow](https://en.wikipedia.org/wiki/Integer_overflow).
-</div></div>
-
-<hr class="sep-both">
-
-## Floating-point arithmetic
+# Floating-point arithmetic
 
 <div class="row row-cols-md-2"><div>
 
@@ -43,6 +29,18 @@ For instance, with 5.75
 
 As $5 = (101)_2$, and $.75=(.11)\_2$, we have $(5.75)\_{10}=(101.11)_2$.
 </details>
+
+Floats
+
+* precision (big number = v ; big number + small = v too...)
+* errors (not associative: a + b + c is not the same as a + c + b, as there are truncating)
+* overflow
+
+Binary coded decimal (DCB) - floats
+
+* we convert to hexa each 4-bits
+* decimal(6,4): n number, 4 after the "."
+* quite used in database (money)
 </div><div>
 
 [**IEEE754**](https://en.wikipedia.org/wiki/IEEE_754) is the norm modern computers are using to store a floating-point number. 3 integers are needed to do so:

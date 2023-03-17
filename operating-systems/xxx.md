@@ -7,27 +7,6 @@
 * (new norm because confusing)
 </div><div>
 
-Floats
-
-* precision (big number = v ; big number + small = v too...)
-* errors (not associative: a + b + c is not the same as a + c + b, as there are truncating)
-* overflow
-
-Binary coded decimal (DCB) - floats
-
-* we convert to hexa each 4-bits
-* decimal(6,4): n number, 4 after the "."
-* quite used in database (money)
-
-Chars
-
-* ASCII (7 bits) - used as the base for most
-* Extended ASCII (8 bits) - the 8 bit page can be changed according to the language.
-* UTF-8...
-* Police: same character but drawn diffrently
-* Collation: how characters are ordered, how convert convert up/lower, equivalences (a=à?)
-* Fixed or variable (size or null char)
-
 Dates
 
 * Value relative to a date
