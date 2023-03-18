@@ -1,5 +1,20 @@
 # Active Directory Security
 
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+**Common good practices**
+
+* 🔒 An account inside the Domain Admins group should be used instead of the Administrator account which should be disabled.
+* 🔑 Limit the use of administrative accounts
+* 🗺️ Do not name your server after its function <small>(i.g. SQL_SERVER)</small>
+* 🌍 Do not name workstation after its business unit <small>(i.g. sales-xxx)</small>
+* 🏠 Do not use easy to guess usernames <small>(i.g. firstname.lastname)</small>
+* 🪺 Add the least services on your DC <small>(i.g. no ISS/WSUS...)</small>
+</div></div>
+
 <hr class="sep-both">
 
 ## Kerberos
@@ -24,7 +39,6 @@ Stuff that I found, but never read/used yet.
 
 * BloodHound (map AD environment, identify attack paths/priv. esc.)
 * Strong password policy
-* Limiting the use of administrative accounts
 </div><div>
 
 * Hardening AD ([ref](https://blog.netwrix.fr/2019/05/06/securiser-votre-annuaire-ad-contre-les-attaques-de-malware/))

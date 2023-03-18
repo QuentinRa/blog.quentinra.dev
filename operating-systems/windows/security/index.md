@@ -17,6 +17,7 @@ Stuff that I found, but never read/used yet.
 * Mimikatz...
 * Microsoft Security Compliance Toolkit (SCT)
 * CIS-CAT
+* SAM database
 </div><div>
 
 **Windows Update** (`control /name Microsoft.WindowsUpdate`)

@@ -45,7 +45,7 @@ A **domain** 🧵 is a logical group of objects... For instance, the domains `ex
 
 There is at least one **Domain controller** 👑 (DC) on each domain. It's used to manage objects on the domain. They all have their own database to store information about their objects.
 
-A **site** 🏘️ is a group of objects that are physically located in the same place, such as a branch office. We usually have one DC per site, which can mean multiple DC for one domain. The DC is replicated, and this allows faster response time, and reduce network traffic.
+A **site** 🏘️ is a group of objects that are physically located in the same place, such as a branch office. We usually have one DC per site, which can mean multiple DC for one domain. The DC is **replicated**, and this allows faster response time, and reduce network traffic.
 
 A **forest** 🌴  is a collection of one or more domain trees. They share a common schema, along configurations, and global catalogs.
 
@@ -362,6 +362,8 @@ There, you can enable history, set password length and age <small>(ex: 6 months)
 ➡️ Changes are distributed using a network share called SYSVOL (`C:\Windows\SYSVOL\sysvol\`). It may take time for the changes to be applied, but the update be forced with `gpupdate /force`.
 
 🚀 When clicking on a GPO, in the tab "Settings", you can find what settings are changed by a policy.
+
+🌸 A computer can define local group policies too. Open a console as administrator, and run `gpedit`.
 </div></div>
 
 <hr class="sep-both">
@@ -468,7 +470,7 @@ A **security principal** ([doc](https://learn.microsoft.com/en-us/windows-server
 * Computers
 * Services
 
-It's a term that is often used when talking about access control.
+It's a term that is often used when talking about access control.  They all have a unique identifier assigned, called **SID (Security Identifier)**.
 </div><div>
 
 To configure permissions for a folder 🔐
@@ -522,7 +524,9 @@ Stuff that I found, but never read/used yet.
 * `gpresult /R` 
 * Windows Admin Center 
 * Azure AD cloud Sync 
-* GPO (Priority/Unit order)
+* GPO (Priority/Unit order, allow override...)
+* no .local, use intranet
+* Groups: domain, global, universal | Distribution groups (mailing lists?)
 </div><div>
 
 * IPAM

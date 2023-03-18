@@ -167,27 +167,11 @@ Quality criteria.
 
 <div class="row row-cols-md-2"><div>
 
-* replication
 * GIA
-* delegate the administrator perms to another account (+disable it)
-* icon when disabled
-* do not name your server after its function
-* do not name workstation after its unit
-* no .local, use intranet
 * Azure AD (SAML, OAuth, OpenID connect, WS-federation) vs On-premise (local network)
-* [a](https://www.varonis.com/fr/blog/meilleures-pratiques-de-nommage-de-domaines-active-directory?hsLang=fr)
-* [b](https://social.technet.microsoft.com/wiki/contents/articles/34981.active-directory-best-practices-for-internal-domain-and-network-names.aspx)
 * linux active directory
 * OpenLDAP/FreeIPA for full-linux
-* hard to guess username (like not firstname.lastname, not random)
-* security principals = SID = Secure identifier. Store in the SAM if not connected to the domain? = sysprep
-* Distribution groups (mailing lists?)
-* Groups: domain, global, universal
 * DFS/DFSR (drivemaps? redunduncy, "serveur de relève?", load balancing?, new alternatives)
-* the least services on the root domain (IIS, WSUS...)
-* priority: the parent rule them all, unless with allow override (??? no sure)
-* `gpupdate /force`
-* gpedit (local)
 
 WSUS
 
@@ -196,6 +180,7 @@ WSUS
 * GPO
 * centalized (download once, and deploy, bandwidth--)
 * constraints before deploying because it takes resources, priorities like exposed to the outside or not...
+* auto install IIS?
 
 XXX
 
