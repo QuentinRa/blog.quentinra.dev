@@ -141,7 +141,56 @@ In database, we often we use the type: `decimal(n,m)`. It means `n` digits, and 
 ➡️ In Packed BCD, we convert each block to hexadecimal, which is more space-efficient, but less usage-efficient <small>(need to unpack...)</small>.
 </div><div>
 
-...
+#### IEEE754
+
+[**IEEE754**](https://en.wikipedia.org/wiki/IEEE_754) is the norm modern computers are using to store a floating-point number. 3 integers are needed to do so:
+
+<table class="table table-bordered table-striped border-dark">
+<thead>
+<tr><th></th><th>float<br>(32 bits)</th><th>double<br>(64 bits)</th></tr>
+</thead>
+<tbody>
+
+<tr><td>
+
+**S**: the sign, 0=positive, 1=negative
+</td><td colspan="2">1 bit</td></tr>
+
+<tr><td>
+
+**E**: exponent bias
+</td><td>8 bits</td><td>11 bits</td></tr>
+
+<tr><td>
+
+**M**: significand, mantissa, or coefficient
+</td><td>23 bits</td><td>52 bits</td></tr>
+
+<tr><td></td><td>$q = 127$</td><td>$q=1023$</td></tr>
+</tbody></table>
+
+As $5 = (101)_2$, and $.75=(.11)\_2$, we have $(5.75)\_{10}=(101.11)_2$.
+
+You should have noticed that we have "1.M", so we have to move the radix point by **3 times** to the left, giving us $(101.11)_2 = (1.0111)_2 * 2^3$.
+
+**Example** 🔥: from a decimal to a float <small>(simple precision)</small>:
+
+* $S = 0$, because $5$ is positive
+* $E = 130$: we had to solve $E - q = 3$, with $3$ the shift amount, and $q=127$ as we are using simple precision
+* $M = 0111$, as our number is $1.0111$, $M$ is the fractional part
+
+
+**Example** 🔥: from a float to a decimal
+
+To find back numerical value, evaluate $(-1)^S * 1.M * 2^{E - q}$.
+
+<br>
+
+#### Problems
+
+* **loss of precision** 💦: numbers are truncated. For instance, adding a small number to a big number, may result in the same big number, unchanged <small>($a + \xi = a$)</small>.
+* **not associative** 🌾: $(a+b)+c$ may not be equals to $a+(b+c)$, mostly because of truncating.
+* **overflow**: same as for integers overflow.
 </div></div>
 
 <hr class="sep-both">
@@ -222,9 +271,5 @@ In some applications/systems, the number may be a number of days. To represent t
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
-
-* [old](_old.md)
 </div><div>
-
-
 </div></div>
