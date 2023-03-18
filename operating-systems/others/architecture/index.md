@@ -108,10 +108,37 @@ To add 5 (101) to 5 (101), you need to do like you would have in grad school, wi
 
 A floating-point number can be identified by the **decimal point** <small>(a.k.a. radix point)</small>, which is usually either `.` (dot), or `,` (comma).
 
+#### Fractional part
+
+Similarly to the scientific notation $x * 10^n$ in decimal, a computer represent a fraction part a $y * 2^m$.
+
+➡️ Not every number can be written using scientific notation
+
+* $e(a)$ extract the digits after the radix point of $a$ <small>(ex: 1.11 $\to$ 0.11)</small>
+* $a_i = \text{your_number}$
+* do
+    * $a_i = e(a_i) * 2$
+    * $r_i = \text{if}\ a_i > 1.0\ \text{then}\ 1\ \text{else}\ 0$
+* while $a_i \neq 1.0$
+
+Then concatenate every $r_i$ to get the floating part representation in binary. For instance, with $.75$
+
+* $a_0 = 0.75 * 2 = 1.5$
+* $r_0 = 1$
+* $a_1 = 0.5 * 2 = 1.0$
+* $r_1 = 1$
+
+Giving us: $.75=(.11)\_2$.
+
 #### Binary Coded Decimal (BCD)
 
-Binary Coded Decimal, a.k.a. Decimal Coded Binary (DCB), is used to store a fixed length floating-point number. It's not used aside from in financial institution or when we need to store a monetary values.
+Binary Coded Decimal, a.k.a. Decimal Coded Binary (DCB), is used to store a fixed length floating-point number. It's not used aside from in financial institution or when we need to store a monetary values, as there is **no loss of precision**, but they take more space.
 
+Each value is store on 4 bits. For the fractional part, we use the method above.
+
+In database, we often we use the type: `decimal(n,m)`. It means `n` digits, and `m` fractional part numbers.
+
+➡️ In Packed BCD, we convert each block to hexadecimal, which is more space-efficient, but less usage-efficient <small>(need to unpack...)</small>.
 </div><div>
 
 ...

@@ -2,43 +2,15 @@
 
 <div class="row row-cols-md-2"><div>
 
-The first step is scientific notation. You should have heard of $a * 10^n$, in radix-10, our goal is something similar: $a * 2^n$..
-
-➡️ Not every number can be written using scientific notation
-
-<details class="details-e">
-<summary>Encoding floating numbers</summary>
-
-* $e(a)$ is a function that extract the digits after the radix point of $a$ <small>(ex: 1.11 $\to$ 0.11)</small>
-* $a_i = \text{your_number}$
-* do
-    * $a_i = e(a_i) * 2$
-    * $r_i = \text{if}\ a_i > 1.0\ \text{then}\ 1\ \text{else}\ 0$
-* while $a_i \neq 1.0$
-
-Simply concatenate every $r_i$ to get the floating part representation in base 2. Now, convert the decimal part, and the result is $(a.r)_2$.
-
-For instance, with 5.75
-
-* $a_0 = 0.75 * 2 = 1.5$
-* $r_0 = 1$
-* $a_1 = 0.5 * 2 = 1.0$
-* $r_1 = 1$
+Then, convert the decimal part, and the result is $(a.r)_2$
 
 As $5 = (101)_2$, and $.75=(.11)\_2$, we have $(5.75)\_{10}=(101.11)_2$.
-</details>
 
 Floats
 
 * precision (big number = v ; big number + small = v too...)
 * errors (not associative: a + b + c is not the same as a + c + b, as there are truncating)
 * overflow
-
-Binary coded decimal (DCB) - floats
-
-* we convert to hexa each 4-bits
-* decimal(6,4): n number, 4 after the "."
-* quite used in database (money)
 </div><div>
 
 [**IEEE754**](https://en.wikipedia.org/wiki/IEEE_754) is the norm modern computers are using to store a floating-point number. 3 integers are needed to do so:
