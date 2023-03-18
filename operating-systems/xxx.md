@@ -160,35 +160,3 @@ Different kind of software (SCM, ITSS...). ERP = all in one. BI = vision on all 
 
 Quality criteria.
 </div></div>
-
-<hr class="sep-both">
-
-## AD
-
-<div class="row row-cols-md-2"><div>
-
-* DFS/DFSR (drivemaps? redunduncy, "serveur de relève?", load balancing?, new alternatives)
-
-XXX
-
-* Redhat sattelite/capsules?
-* Ansible or AWX
-
-Federation?
-
-* OpenID
-* SAML
-* OAuth
-</div><div>
-
-XXX
-
-* Identify and Access manamgent (IAM/GIA)
-* Lifecycle
-
-XXX
-
-* threatmap
-* ShadowServer
-* Migrate WDS: deploy images
-</div></div>

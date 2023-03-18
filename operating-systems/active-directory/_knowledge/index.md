@@ -546,11 +546,19 @@ Stuff that I found, but never read/used yet.
 * GPO (Priority/Unit order, allow override...)
 * no .local, use intranet
 * Groups: domain, global, universal | Distribution groups (mailing lists?)
-* linux active directory. OpenLDAP/FreeIPA for full-linux.
+* linux active directory. OpenLDAP/FreeIPA for full-linux. Redhat satellite, Ansible or AWX.
+* Distributed File System (DFS)
+  * locally group shared folders on different servers
+  * supports fault tolerance and load balancing
+  * standalone or domain-based
+  * DFS Replication (DFSR)
+  * if server unavailable, switch to another
 </div><div>
 
 * IPAM
 * SSPR
+* IIS
+* WDS (deploy images)
 * [rdr-it.com](https://rdr-it.com/active-directory/)
 * [microsoft](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-domain-services)
 * [activedirectorypro](https://activedirectorypro.com/blog/)
