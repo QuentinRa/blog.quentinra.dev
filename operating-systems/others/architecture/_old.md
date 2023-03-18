@@ -2,8 +2,6 @@
 
 <div class="row row-cols-md-2"><div>
 
-A floating-point can be identified by the **Radix point**, which is usually either `.` (dot), or `,` (comma).
-
 The first step is scientific notation. You should have heard of $a * 10^n$, in radix-10, our goal is something similar: $a * 2^n$..
 
 ➡️ Not every number can be written using scientific notation

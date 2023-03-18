@@ -102,6 +102,23 @@ To add 5 (101) to 5 (101), you need to do like you would have in grad school, wi
 
 <hr class="sep-both">
 
+## Floating-point numbers
+
+<div class="row row-cols-md-2"><div>
+
+A floating-point number can be identified by the **decimal point** <small>(a.k.a. radix point)</small>, which is usually either `.` (dot), or `,` (comma).
+
+#### Binary Coded Decimal (BCD)
+
+Binary Coded Decimal, a.k.a. Decimal Coded Binary (DCB), is used to store a fixed length floating-point number. It's not used aside from in financial institution or when we need to store a monetary values.
+
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Strings 💬
 
 <div class="row row-cols-md-2"><div>
@@ -157,10 +174,10 @@ There may be a value to indicate that a value is not a number. For instance, `1/
 
 #### Size
 
-* **1 Ko** (kilo): $2^{10} = 1024$
-* **1 Mo** (mega): $2^{20} = 1,048,576$
-* **1 Go** (giga): $2^{30} = 1,073,741,824$
-* **1 To** (tera): $2^{40} = 1,099,511,627,776$
+* **1 Kb** (kilobyte): $2^{10} = 1024$
+* **1 Mb** (megabyte): $2^{20} = 1,048,576$
+* **1 Gb** (gigabyte): $2^{30} = 1,073,741,824$
+* **1 Tb** (terabyte): $2^{40} = 1,099,511,627,776$
 * ...
 </div><div>
 
