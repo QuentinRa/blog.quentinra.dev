@@ -18,6 +18,10 @@ Stuff that I found, but never read/used yet.
 * Microsoft Security Compliance Toolkit (SCT)
 * CIS-CAT
 * SAM database
+* Microsoft Defender Application Control
+* device guard
+* applocker
+* Hiren's bootcd
 </div><div>
 
 **Windows Update** (`control /name Microsoft.WindowsUpdate`)

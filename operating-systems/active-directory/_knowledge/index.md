@@ -512,6 +512,25 @@ There are other kind of trusts:
 
 <hr class="sep-both">
 
+## Windows Server Update Services (WSUS)
+
+<div class="row row-cols-md-2"><div>
+
+The WSUS service is used to manage and deploy updates to Windows workstation within the domain from a centralized server.
+
+* **Server**: find, and suggest updates. Download them.
+* **Client**: receive the selected downloaded updates, and install them.
+</div><div>
+
+Before updating, it's always wiser [to prepare properly](/cybersecurity/blue-team/updates.md).
+
+🔥 Microsoft webserver (IIS) is a dependancy, and is automatically installed. This can be an attack vector if not handled.
+
+➡️ Newer alternative: Windows Update for Business (WUfB).
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

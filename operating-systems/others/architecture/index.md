@@ -271,5 +271,7 @@ In some applications/systems, the number may be a number of days. To represent t
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
+
+* bios/uefi (secure boot, rootkit, bootkit)
 </div><div>
 </div></div>

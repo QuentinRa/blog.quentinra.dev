@@ -169,15 +169,6 @@ Quality criteria.
 
 * DFS/DFSR (drivemaps? redunduncy, "serveur de relève?", load balancing?, new alternatives)
 
-WSUS
-
-* Windows Workstation
-* 3rd party
-* GPO
-* centalized (download once, and deploy, bandwidth--)
-* constraints before deploying because it takes resources, priorities like exposed to the outside or not...
-* auto install IIS?
-
 XXX
 
 * Redhat sattelite/capsules?
@@ -198,23 +189,6 @@ XXX
 XXX
 
 * threatmap
-* backups
-* updates
-* prevent access to dangerous websites
-* training and culture/"cyber hygiène"
-* EDR/SOC
 * ShadowServer
-
-Migrate
-
-* cost/value (performance=cost, security, cloud, traffic)
-* formation
-* incompatibility
-* WDS: deploy images
-* hyper-v
-* bitlocker
-* bios/uefi (secure boot, rootkit, bootkit)
-* device guard
-* applocker
-* Hiren's bootcd
+* Migrate WDS: deploy images
 </div></div>

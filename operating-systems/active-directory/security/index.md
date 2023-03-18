@@ -40,6 +40,7 @@ Stuff that I found, but never read/used yet.
 
 * BloodHound (map AD environment, identify attack paths/priv. esc.)
 * Strong password policy
+* prevent access to dangerous websites
 </div><div>
 
 * Hardening AD ([ref](https://blog.netwrix.fr/2019/05/06/securiser-votre-annuaire-ad-contre-les-attaques-de-malware/))
@@ -48,6 +49,7 @@ Stuff that I found, but never read/used yet.
 <details class="details-n">
 <summary>Configure BitLocker</summary>
 
+* Also in Windows Security
 * Network Unlock
 
 **1)** The first part is installing BitLocker on the server:

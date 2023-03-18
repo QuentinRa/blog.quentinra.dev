@@ -16,5 +16,9 @@ Stuff that I found, but never read/used yet.
 
 * Importance of updates
 * Planning, Testing, Deployment, Monitoring
+* cost/value (performance=cost, security, cloud, traffic)
+* formation
+* incompatibility
+* constraints before deploying because it takes resources, priorities like exposed to the outside or not...
 
 </div></div>
