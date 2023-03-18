@@ -1,6 +1,6 @@
 # Networking
 
-A network is a net of things connected to each other. We call a network of devices "internet", and what we refer to (THE) "Internet" are many small networks all joined together. Networking is someone complex, as it involves a lot of things: devices <small>(Routers, Hub/Switches...)</small>, Protocols <small>(TCP/UDP/ICMP/ARP/DNS...)</small>, Ports, Network interfaces, models <small>(OSI, TCP/IP)</small>, and addresses <small>(IPV4/IPV6/MAC...)</small>.
+We call a network of devices "internet", and what we refer to (THE) "Internet" are many small networks all joined together. Networking is someone complex, as it involves a lot of things: devices <small>(Routers, Hub/Switches...)</small>, Protocols <small>(TCP/UDP/ICMP/ARP/DNS...)</small>, Ports, Network interfaces, models <small>(OSI, TCP/IP)</small>, and addresses <small>(IPV4/IPV6/MAC...)</small>.
 
 <details class="details-n">
 <summary>Imunes - free open-source network emulator</summary>
@@ -76,29 +76,6 @@ If both the switch and the machine try to send a message at the same time, then 
 </div></div>
 
 <hr class="sr">
-
-## How is communication taking place?
-
-<div class="row row-cols-md-2"><div class="align-self-center">
-
-To send a message from A to B, 
-
-1. You first need to know how to contact is B
-   * **IP address**: know where is B <small>(logical identifier)</small>
-   * **MAC address**: identifying B given a location <small>(physical identifier)</small>
-   * **Network interface**: this represents where <small>(physically)</small> the data will pass by
-2. Then, you need to determine how you will communicate
-   * **Protocol**: set of rules to define a way of exchanging messages
-   * **Port**: this represents where <small>(virtually)</small> the data will pass by
-3. Send the message, and way for a reply
-</div><div>
-
-This is a sort of simplified representation of all elements that are a part of the communication of two machines.
-
-![Random Network](_images/radom_network.png)
-</div></div>
-
-<hr class="sl">
 
 ## Network interface
 
