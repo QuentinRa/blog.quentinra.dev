@@ -523,10 +523,11 @@ Stuff that I found, but never read/used yet.
 * Namespace
 * `gpresult /R` 
 * Windows Admin Center 
-* Azure AD cloud Sync 
+* Azure AD (SAML, OAuth, OpenID connect, WS-federation) vs On-premise. Azure AD cloud Sync 
 * GPO (Priority/Unit order, allow override...)
 * no .local, use intranet
 * Groups: domain, global, universal | Distribution groups (mailing lists?)
+* linux active directory. OpenLDAP/FreeIPA for full-linux.
 </div><div>
 
 * IPAM

@@ -167,10 +167,6 @@ Quality criteria.
 
 <div class="row row-cols-md-2"><div>
 
-* GIA
-* Azure AD (SAML, OAuth, OpenID connect, WS-federation) vs On-premise (local network)
-* linux active directory
-* OpenLDAP/FreeIPA for full-linux
 * DFS/DFSR (drivemaps? redunduncy, "serveur de relève?", load balancing?, new alternatives)
 
 WSUS
@@ -198,29 +194,6 @@ XXX
 
 * Identify and Access manamgent (IAM/GIA)
 * Lifecycle
-
-Clouds
-
-* IIS - automatically mounted with WSUS? - not on the DC
-  * Only install required modules
-* "reduce attack surface"
-* AWS, AZURE, Google
-* SaaS, IaaS, DaaS, FaaS, PaaS, STaaS...
-* Notes about how to select a cloud solution
-* Cloud FW/SASE
-
-Network
-
-* E/W = between two apps
-* N/S = with the internet
-* Firewall => NGFW AMP Duo Email ISE Umbrella Enpoint Web Workload Services
-
-Zero Trust
-
-* a concept
-* segmentation, firewall...
-* principles: no blind trust, least privilege, always check
-* don't burden users / security vs productivity "sweet spot"
 
 XXX
 

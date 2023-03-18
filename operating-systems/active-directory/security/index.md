@@ -2,9 +2,6 @@
 
 <div class="row row-cols-md-2"><div>
 
-...
-</div><div>
-
 **Common good practices**
 
 * 🔒 An account inside the Domain Admins group should be used instead of the Administrator account which should be disabled.
@@ -13,6 +10,10 @@
 * 🌍 Do not name workstation after its business unit <small>(i.g. sales-xxx)</small>
 * 🏠 Do not use easy to guess usernames <small>(i.g. firstname.lastname)</small>
 * 🪺 Add the least services on your DC <small>(i.g. no ISS/WSUS...)</small>
+</div><div>
+
+* 🏄‍♂️ Install the least ISS modules
+
 </div></div>
 
 <hr class="sep-both">

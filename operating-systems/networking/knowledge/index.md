@@ -22,5 +22,11 @@ Stuff that I found, but never read/used yet.
 * [Old - Security](../security/index.md)
 </div><div>
 
+Network
 
+* E/W = between two apps
+* N/S = with the internet
+* Firewall => NGFW AMP Duo Email ISE Umbrella Enpoint Web Workload Services
+* Cloud FW/SASE
+* segmentation
 </div></div>
