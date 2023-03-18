@@ -125,12 +125,22 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * /var/log/messages
-* /var/log/syslog
-* /var/log/auth.log
-* /var/log/faillog
+* /var/log/syslog (general system activity)
+* /var/log/auth.log (authentication/authorization)
+* /var/log/kern.log (kernel activity)
+* /var/log/faillog (failed logins)
 * /var/log/secure
 * /var/log/lastlog
 * /var/run/utmp
+* /var/run/maillog (mail server)
 </div><div>
 
+* [Linux logs](https://stackify.com/linux-logs/)
+* Auditing
+* Connected as unusual hours
+* Unusual traffic at unusual hours
+* Copy or a big amount of data
+* AD Audit policy best practices
+* Handle scenario in which you can't access the logs
+* How log do we store logs? Minimum of 3y?
 </div></div>

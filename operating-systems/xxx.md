@@ -160,3 +160,32 @@ Different kind of software (SCM, ITSS...). ERP = all in one. BI = vision on all 
 
 Quality criteria.
 </div></div>
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-md-2"><div>
+
+* Passive attacks (monitor)
+* Active attacks
+* CIS (cyber-defense, hardening kits - build kit content)
+  * two levels
+
+SSL certificates
+
+* Authentication
+* Encryption
+* SSLLabs
+* Expired/Renew/Monitoring
+* CA = assert of the identify of someone (CSR)
+* Web/Let's encrypt? (DV)
+* Validation levels
+  * EV (extended)
+  * OV (organization)
+  * DV (domain)
+* Unique domain (all), wildcard (DV/OV), multi-domains (DV, OV, EV)
+</div><div>
+
+...
+</div></div>
