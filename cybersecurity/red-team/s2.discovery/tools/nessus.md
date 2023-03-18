@@ -1,6 +1,6 @@
 # Nessus vulnerability scanner
 
-[![rpnessusredux](../../_badges/thm/rpnessusredux.svg)](https://tryhackme.com/room/rpnessusredux)
+[![rpnessusredux](../../../_badges/thm/rpnessusredux.svg)](https://tryhackme.com/room/rpnessusredux)
 
 <div class="row row-cols-md-2"><div>
 
@@ -9,7 +9,7 @@
 * [Download Nessus](https://www.tenable.com/downloads/nessus)
 
 ```bash
-$ sudo dpkg -i  Nessus-10.3.0-ubuntu1404_amd64.deb
+$ sudo dpkg -i Nessus-10.3.0-ubuntu1404_amd64.deb
 $ sudo systemctl start nessusd.service
 ```
 
@@ -41,8 +41,6 @@ It's important to note that Nessus is generating a lot of traffic, and may not f
 <hr class="sep-both">
 
 ## 🥳 Metasploit and nessus ⚡
-
-[See Metasploit framework - Database / Workspaces](/_cybersecurity/exploitation/general/metasploit/msfconsole.md#-the-metasploit-database-)
 
 <div class="row row-cols-md-2"><div>
 

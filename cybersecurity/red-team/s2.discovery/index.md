@@ -40,7 +40,7 @@ Unlike passive discovery, as you are directly interacting with the target, you a
 
 Scanning and enumeration
 
-* [nmap]() 🚪🔥: a stealthy and powerful port scanner
+* [nmap](tools/nmap.md) 🚪🔥: a stealthy and powerful port scanner
 * [Rustscan](tools/rustscan.md) 🚪🔥: a fast port scanner for CTFs
 * [Masscan](tools/masscan.md) 🚪: an aggressive port scanner in mass
 
@@ -52,7 +52,7 @@ Network mapping
 
 Vulnerabilities scanners
 
-* [Nessus](): port scanning, find vulnerabilities, quite noisy/slow
+* [Nessus](tools/nessus.md): port scanning, find vulnerabilities, quite noisy/slow
 </div></div>
 
 <hr class="sep-both">
