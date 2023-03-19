@@ -37,7 +37,7 @@ Most protocols were sending data as plaintext 🔓. Later, protocols were enhanc
 * [Web requests](_protocols/web-requests.md): HTTP, HTTPS
 * [Remote shell access](_protocols/remote-shell.md): SSH
 * [Domain resolution](_protocols/dns.md): DNS
-* [File sharing](_protocols/file-sharing.md): NFS, Samba
+* [Network file system](_protocols/file-system.md): NFS, Samba
 
 **Layer 6: Presentation Layer** 🔒
 
