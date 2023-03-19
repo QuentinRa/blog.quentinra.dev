@@ -22,14 +22,31 @@ There are multiple type of records for a domain, not just IP addresses:
 
 <hr class="sr">
 
-## Domain Name System (DNS) protocol
+## Fully Qualified Domain Name (FQDN)
 
 <div class="row row-cols-md-2"><div>
 
-➡️ Multiple domains can point to the same IP address.
+A **Fully Qualified Domain Name (FQDN)** is a both a hostname <small>(subdomain, server...)</small> and a domain name to unambiguous identify a specific domain 🎯.
 
-> Note: `example.com` is actually the **Fully Qualified Domain Name** (FQDN) `example.com.`, with a "`.`" at the end. That's why "`.`" is called the root, as every domain is a child of "root".
+Given the FQDN `www.example.com`, `www` is the hostname, while `example.com` is the domain name.
+</div><div>
 
+👉 All subdomains are written as FQDN.
+
+👉 Any domain ending with `.` (DNS root) is written as a FQDN. For instance, `example.com` is NOT a FQDN, while `example.com.` is.
+
+➡️ It's more of a technical term, rather than a "practical" term.
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* Multiple domains can point to the same IP address.
 </div><div>
 
 When a computer requests the IP associated with a domain name
