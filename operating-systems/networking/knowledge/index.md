@@ -36,7 +36,7 @@ Most protocols were sending data as plaintext 🔓. Later, protocols were enhanc
 * [Mail transfer](): SMTP, POP3, IMAP
 * [Web transfer](): HTTP, HTTPS
 * [Remote shell access](): SSH
-* [Domain resolution](): DNS
+* [Domain resolution](_protocols/dns.md): DNS
 * [File sharing](): NFS, Samba
 
 **Layer 6: Presentation Layer** 🔒
