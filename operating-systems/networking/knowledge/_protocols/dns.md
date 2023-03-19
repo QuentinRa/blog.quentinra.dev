@@ -20,13 +20,38 @@ There are multiple type of records for a domain, not just IP addresses:
 * **TXT** ✍️: used to store information, mostly used to verify ownership by third-party websites...
 </div></div>
 
-<hr class="sr">
+<hr class="sep-both">
 
-## Fully Qualified Domain Name (FQDN)
+## DNS resolution process 📞
 
 <div class="row row-cols-md-2"><div>
 
-A **Fully Qualified Domain Name (FQDN)** is a both a hostname <small>(subdomain, server...)</small> and a domain name to unambiguous identify a specific domain 🎯.
+DNS servers have a tree-like hierarchy starting from the DNS root.
+
+**DNS root** 🌱: the domain "`.`" (dot). Keep track of TLDs.
+
+**Top level domains (TLDs)** 🪵: historically, they where associated with a purpose or a geographical location, but now, there is no restriction.
+
+* Generic TLD <small>(gTLD)</small>: `.com`, `.net`...
+* Country Code TLD <small>(ccTLD)</small>: `.fr`, `.ca`...
+* Restricted TLD <small>(rTLD)</small>: `.gov`...
+* Experimental TLD <small>(eTLD/xTLD)</small>: `.test`...
+
+Each TLD nameserver keep track of its authoritative nameservers.
+
+**Authoritative nameservers** 🌿: they keep track of **Second-Level Domains**, such as `example.com`, and may keep track of Third-Level Domains <small>(such as www)</small>, or more generically, every subdomain.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Fully Qualified Domain Name 🎯
+
+<div class="row row-cols-md-2"><div>
+
+A Fully Qualified Domain Name (FQDN) is a name with both a hostname <small>(subdomain, server...)</small> and a domain name to unambiguous identify a specific domain 🎯.
 
 Given the FQDN `www.example.com`, `www` is the hostname, while `example.com` is the domain name.
 </div><div>
@@ -34,8 +59,6 @@ Given the FQDN `www.example.com`, `www` is the hostname, while `example.com` is 
 👉 All subdomains are written as FQDN.
 
 👉 Any domain ending with `.` (DNS root) is written as a FQDN. For instance, `example.com` is NOT a FQDN, while `example.com.` is.
-
-➡️ It's more of a technical term, rather than a "practical" term.
 </div></div>
 
 <hr class="sep-both">
@@ -46,7 +69,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* Multiple domains can point to the same IP address.
+* Multiple domains can point to the same IP address
+* DNS zones
 </div><div>
 
 When a computer requests the IP associated with a domain name
@@ -61,15 +85,6 @@ DNS records are stored in the cache for a duration determined by their **Time-to
 <summary>2. If not cached, it will ask a <b>recursive DNS server</b></summary>
 
 Your internet provider (ISP) maintains its own recursive servers.
-
-The **root domain** is "`.`", and its servers are keeping track of the IP addresses of the **Top level domain (TLD)** servers.
-
-* Generic Top Level (gTLD): `.com`, `.net`...
-* Country Code Top Level Domain (ccTLD): `.fr`, `.ca`...
-
-Historically, gTLD were used to indicate a purpose <small>(ex: com for commercial)</small>, and ccTLD were used for geographical purposes. There is also Restricted TLD, and Experimental TLD.
-
-TLD are keeping track of servers one-level down: **Authoritative name servers**, also called **nameserver**, in which DNS records are stored, mostly for **Second-Level Domain**, such as `example.com`. They may keep track of Third-Level Domains <small>(such as www)</small>, or even every Subdomain <small>(any third-level domain, and below)</small>.
 
 DNS records include IPV4 (A), and IPV6 addresses (AAAA), along mail servers (MX), CNAME records <small>(ask another domain)</small>, TXT RECORDS <small>(mainly used to ensure ownership of a domain by third-parties websites)</small>... See [rfc1035 specification](https://www.ietf.org/rfc/rfc1035.txt).
 </details>
