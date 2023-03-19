@@ -11,7 +11,7 @@ The Domain Name System (DNS) protocol is used to convert a **domain name** such 
 DNS server servers are storing data called **DNS records**. When updated by the domain owner, it's propagated to DNS servers after some time <small>(12 hours, 24 hours, 48 hours, sometimes more)</small>.
 </div><div>
 
-There are multiple type of records for a domain, not just IP addresses:
+There are [multiple type](https://www.ietf.org/rfc/rfc1035.txt) of records for a domain, not just IP addresses:
 
 * **A** 🏠: the IPV4 address of the domain
 * **AAAA** 🏡: the IPV6 address of the domain
@@ -26,7 +26,7 @@ There are multiple type of records for a domain, not just IP addresses:
 
 <div class="row row-cols-md-2"><div>
 
-DNS servers have a tree-like hierarchy starting from the DNS root.
+DNS nameservers have a tree-like hierarchy starting from the root.
 
 **DNS root** 🌱: the domain "`.`" (dot). Keep track of TLDs.
 
@@ -39,10 +39,27 @@ DNS servers have a tree-like hierarchy starting from the DNS root.
 
 Each TLD nameserver keep track of its authoritative nameservers.
 
-**Authoritative nameservers** 🌿: they keep track of **Second-Level Domains**, such as `example.com`, and may keep track of Third-Level Domains <small>(such as www)</small>, or more generically, every subdomain.
+**Authoritative nameservers** 🌿: they keep track of second-level domains, such as `example.com`, and may keep track of third-level domains <small>(such as www)</small>, or more generically, every subdomain.
 </div><div>
 
-...
+#### RFC 1034 approach
+
+The iterative approach mandated by the RFC 1034 is
+
+* A `client` asks for the IP of a domain to the `root nameserver`
+* The `root nameserver` replies with the `TLD nameserver`'s IP
+* The `client` asks again, but the `TLD nameserver` this time
+* The `TLD nameserver` replies with the `authoritative nameserver`'s IP
+* The `client` asks again, but the `authoritative nameserver` this time
+* The `authoritative nameserver` answer with the IP ✅
+
+In practice, to reduce traffic, and to reduce the load on root servers, DNS records are cached at multiple levels.
+
+#### Caching
+
+Each DNS query has a **Time-to-live (TTL)** <small>(in seconds)</small>. Both the client, and DNS servers will store records until the TTL expires.
+
+A client will usually ask **recursive servers** 🦀 such as the one maintained by their ISP provider. They will look for the IP of the domain requested, using both caching and the RFC 1034 approach.
 </div></div>
 
 <hr class="sep-both">
@@ -71,37 +88,7 @@ Stuff that I found, but never read/used yet.
 
 * Multiple domains can point to the same IP address
 * DNS zones
+* [An Introduction to DNS Terminology, Components, and Concepts
+  (digitalocean)](https://www.digitalocean.com/community/tutorials/an-introduction-to-dns-terminology-components-and-concepts)
 </div><div>
-
-When a computer requests the IP associated with a domain name
-
-<details class="details-n">
-<summary>1. It will check if there is the answer in the cache</summary>
-
-DNS records are stored in the cache for a duration determined by their **Time-to-live (TTL)** <small>(in seconds)</small> which is sent along the IP when requesting a DNS record.
-</details>
-
-<details class="details-n">
-<summary>2. If not cached, it will ask a <b>recursive DNS server</b></summary>
-
-Your internet provider (ISP) maintains its own recursive servers.
-
-DNS records include IPV4 (A), and IPV6 addresses (AAAA), along mail servers (MX), CNAME records <small>(ask another domain)</small>, TXT RECORDS <small>(mainly used to ensure ownership of a domain by third-parties websites)</small>... See [rfc1035 specification](https://www.ietf.org/rfc/rfc1035.txt).
-</details>
-
-<details class="details-n">
-<summary>RFC 1034 approach</summary>
-
-The iterative approach mandated by the RFC 1034 is
-
-* A client is asking for the IP of `www.example.com` to the root server `.`
-* The root server tells him to ask `.com`, and give the IP of `.com`
-* The client asks `.com`, which answers with the IP of `example.com`
-* The client asks `example.com`, which answers with the IP we were looking for
-
-In practice, to reduce traffic, and not put pressure on the root servers, DNS records are cached.
-</details>
-
-See also: [An Introduction to DNS Terminology, Components, and Concepts
-(digitalocean)](https://www.digitalocean.com/community/tutorials/an-introduction-to-dns-terminology-components-and-concepts)
 </div></div>
