@@ -1,9 +1,5 @@
 # Protocols & services
 
-Any knowledge related to protocols, and services, such as FTP, SSH, SFTP, SCP, Telnet, SMTP...
-
-> A lot of protocols were sending data/credentials as plaintext=unencrypted. Later, protocols such as SSL (Secure Sockets Layer) which was replaced with TLS (more secure), were introduced to improve existing protocols by adding encryption. TLS is usually referred to as SSL/TLS. 
-
 <hr class="sep-both">
 
 ## Open a shell on a remote machine

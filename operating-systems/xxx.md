@@ -172,7 +172,7 @@ Quality criteria.
 * CIS (cyber-defense, hardening kits - build kit content)
   * two levels
 
-SSL certificates
+SSL certificates (SSL deprecated, TLS more secure, SSL/TLS)
 
 * Authentication
 * Encryption

@@ -2,12 +2,14 @@
 
 <div class="row row-cols-md-2"><div>
 
-A network is a net of devices connected to each other. These devices need to communicate securely between each other 🔒. This involves many notions, which can be seen on this simplified schema:
+A network is a net of devices connected to each other, such as all the devices connected to your internet box 💻.
+
+These devices need to communicate <small>(securely!)</small> between each other ✉️.
 
 ![Random Network](_images/radom_network.png)
 </div><div>
 
-Some elements that are involved:
+Some elements that are involved, shown in the simplified schema:
 
 * **IP Address** 🌍: each network device has an IP address. This allows us to find **where** a machine is. Example: `188.155.18.0`.
 
@@ -17,7 +19,53 @@ Some elements that are involved:
 
 * **Protocol** 🔐: we define a common language for messages, so that both devices can understand each other. Example: `SSH`.
 
-* **Port** 🐊: this is where <small>(logically)</small> a machine expect message in a pre-defined protocol. For instance, if a machine receives a message on port `22`, they will expect the protocol to be `SSH`.
+* **Port** 🐊: this is where <small>(logically)</small> a machine expect a message in a pre-defined protocol. For instance, if a machine receives a message on port `22`, they will expect the protocol to be `SSH`...
+</div></div>
+
+<hr class="sep-both">
+
+## Protocols
+
+<div class="row row-cols-md-2"><div>
+
+Most protocols were sending data as plaintext 🔓. Later, protocols were enhanced with SSL/TLS, adding encryption. Such protocols are usually ending with a **S** such as `HTTP` that became `HTTPS`.
+
+**Layer 7: Application Layer** 🧑
+
+* [File transfer](): FTP, SFTP, SCP
+* [Mail transfer](): SMTP, POP3, IMAP
+* [Web transfer](): HTTP, HTTPS
+* [Remote shell access](): SSH
+* [Domain resolution](): DNS
+* [File sharing](): NFS, Samba
+
+**Layer 6: Presentation Layer** 🔒
+
+* none
+
+**Layer 5: Session Layer** 📶
+
+* Telnet
+* RPC
+</div><div>
+
+**Layer 4: Transport Layer** 📫
+
+* TCP
+* UDP
+
+**Layer 3: Network Layer** 🌍
+
+* ICMP
+* IP
+
+**Layer 2: Data Link Layer** 🔢
+
+* ARP
+
+**Layer 1: Physical Layer** 💺
+
+* none
 </div></div>
 
 <hr class="sep-both">
