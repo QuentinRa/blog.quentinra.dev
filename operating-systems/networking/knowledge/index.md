@@ -32,12 +32,12 @@ Most protocols were sending data as plaintext 🔓. Later, protocols were enhanc
 
 **Layer 7: Application Layer** 🧑
 
-* [File transfer](): FTP, SFTP, SCP
-* [Mail transfer](): SMTP, POP3, IMAP
-* [Web transfer](): HTTP, HTTPS
-* [Remote shell access](): SSH
+* [File transfer](_protocols/file-transfer.md): FTP, SFTP, SCP
+* [Mail transfer](_protocols/mail-transfer.md): SMTP, POP3, IMAP
+* [Web requests](_protocols/web-requests.md): HTTP, HTTPS
+* [Remote shell access](_protocols/remote-shell.md): SSH
 * [Domain resolution](_protocols/dns.md): DNS
-* [File sharing](): NFS, Samba
+* [File sharing](_protocols/file-sharing.md): NFS, Samba
 
 **Layer 6: Presentation Layer** 🔒
 

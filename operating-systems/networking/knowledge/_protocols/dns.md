@@ -6,6 +6,8 @@
 
 The Domain Name System (DNS) protocol is used to convert a **domain name** such as `example.com` to an IP address `93.184.216.34`. A domain name is for humans, while IP address are for machines 🏭.
 
+🐊️ **Port**: 53 (TCP/UDP)
+
 🔒 The DNS protocol is not secure. See DNS Secure (DNSSEC).
 
 DNS server servers are storing data called **DNS records**. When updated by the domain owner, it's propagated to DNS servers after some time <small>(12 hours, 24 hours, 48 hours, sometimes more)</small>.
