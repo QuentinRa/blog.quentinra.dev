@@ -2,25 +2,6 @@
 
 <hr class="sep-both">
 
-## Open a shell on a remote machine
-
-<div class="row row-cols-md-2 mt-3"><div class="border-end border-dark">
-
-</div><div class="border-st art border-dark ps-4">
-
-### 🔒 SSH - 22 (TCP)
-
-```bash
-$ ssh login@IP
-$ ssh login@IP -u port
-# you can use a private key
-# instead of a password
-$ ssh login@IP -i /path/to/id_rsa
-```
-</div></div>
-
-<hr class="sep-both">
-
 ## Transfer files to/from a remote machine
 
 <div class="row row-cols-md-2 mt-3"><div class="border-end border-dark">
@@ -75,19 +56,6 @@ There are two channels in an FTP connection: a channel to send commands <small>(
 </details>
 
 </div><div class="border-st art border-dark ps-4">
-
-### 🔒 SCP/SFTP - 22 (TCP)
-
-Secure versions of FTP built over SSH.
-
-```bash
-# upload
-$ scp file_to_upload user@IP:remote/path/
-# download
-$ scp user@IP:remote/path/ local_path_to_dest
-```
-
-> Use `scp -r` to download/upload a folder will all its content.
 </div></div>
 
 <hr class="sep-both">
