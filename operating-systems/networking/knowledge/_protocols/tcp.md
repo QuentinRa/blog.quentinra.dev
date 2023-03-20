@@ -6,8 +6,9 @@
 
 Transmission Control Protocol (TCP) is a trustworthy protocol to ensure that the data sent is properly received, and in the correct order. If there is an error, the message is sent again.
 
-* **connection-based** 🦘: a connection is established
+* **connection-based** 🤝: a prior connection is established
 * **stateful** 🐵: information about the session is kept
+* **flow-control** 🐌: the sender can slow down the transmission rate
 
 It's used when quality is more important than speed.
 
@@ -15,7 +16,7 @@ It's used when quality is more important than speed.
 
 🗺️ **Used by**: `ssh`, `ftp`, `http`...
 
-✍️ UDP PDUs are called **segments**.
+✍️ TCP PDUs are called **segments**.
 
 TCP messages all have a [flag](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) according to they type:
 
@@ -45,6 +46,6 @@ There are sequence numbers and ack numbers on every message. The first SYN has a
 * 2 bytes for the "frame/windows" (`cadre`)
 * 2 bytes for the "checksum"
 * 2 bytes for the "urgent pointer"
-* 4 bytes for "options" (optional)
+* 0 to 40 bytes for "options" (optional)
 
 </div></div>

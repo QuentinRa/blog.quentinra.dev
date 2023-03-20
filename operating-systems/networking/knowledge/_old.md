@@ -400,46 +400,7 @@ To avoid data loss, each interface has a maximum size for a packet. The MTU of `
   * or, R2 may send two packets, and B will merge them
 
 </details>
-
 </div></div>
-
-* TCP (6)
-* UDP (17)
-* ICMP (1)
-
-<details class="details-n mt-4">
-<summary>IP: internet protocol</summary>
-<div class="row row-cols-md-2"><div>
-
-The IP protocol is using this header
-
-![IP Header](_images/ip_headers.png)
-
-* **version**: 4 (IPV4), or 6 (IPV6)
-* **IHL**: a quarter of the length of the header, which is usually 20 bytes <small>(so, the IHL would be 5)</small>.
-* **TPL**: the size of the entire packet in bytes
-* **Fragment ID**: identifier of the packet. Fragmented packets have the same fragment ID.
-</div><div>
-
-* **FLAG**:
-  * 010 (DF): do not fragment
-  * 001 (MF): more fragments are coming
-  * 100 (X): reserved
-* **Fragment Offset**: index of this package payload in the un-fragmented data. This is the sum of the length of previously fragmented packet payloads. This value is in **bytes** <small>(TPL divided by 8)</small>. For instance, the first fragment would have 0.
-* **TTL**: decrease by one each time the packet transit by a host. The packet is destroyed if the TTL reaches 0. This is used to prevent looping.
-* **Protocol**: which protocol was used <small>(1=ICMP, 6=TCP, 17=UDP...)</small>. [See the list of IP protocol numbers](https://en.wikipedia.org/wiki/List_of_IP_protocol_numbers).
-
-The size of the payload is **TPL-IHL**.
-
-To check if two packets are fragments, they MUST have
-
-* the same source, destination, id, and protocol
-* every packet aside from the last one has the flag MF <small>(flag[+])</small>, while the last has the flag DF <small>(flag[none])</small>.
-
-</div></div>
-</details>
-
-> One thing to note, is that for instance in UDP, there is no "IP address" in the header. You should remember that UDP is working at a layer above (Layer 4) the one adding such information (Layer 3). And, as written before, each layer is adding its header, so still for UDP, you would have the header of IP followed by the header of UDP...
 
 <hr class="sl">
 

@@ -61,7 +61,7 @@ Each protocol can be represented using a [Message Sequence Chart](https://en.wik
 **Layer 3: Network Layer** 🌍
 
 * [ICMP](_protocols/icmp.md)
-* IP
+* [IP](_protocols/ip.md)
 
 **Layer 2: Data Link Layer** 🔢
 
