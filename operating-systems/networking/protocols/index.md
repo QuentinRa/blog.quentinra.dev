@@ -6,25 +6,6 @@
 
 <div class="row row-cols-md-2 mt-3"><div class="border-end border-dark">
 
-### 🔓 Telnet - 23 (TCP)
-
-No encryption neither for the credentials nor the data exchanged.
-
-```bash
-$ telnet IP port
-# 1. the server sends the protocol banner
-# 2. the user writes text while following the protocol
-```
-
-As an example, for HTTP version 1.1, you can write
-
-```bash
-$ telnet IP 80
-GET / HTTP/1.1
-Host: example.com
-# leave two blank lines (press ENTER twice)
-```
-
 </div><div class="border-st art border-dark ps-4">
 
 ### 🔒 SSH - 22 (TCP)
@@ -241,16 +222,6 @@ If you are creating a user, you will most likely send the username/... to the se
 * Convert the value to hexadecimal: `25`
 * Add `%` before the result: `%25`
 * This is automatically done by your browser.
-</div></div>
-
-<hr class="sep-both">
-
-## ⚡ RPC - 111 (TCP/UDP)
-
-<div class="row row-cols-md-2"><div>
-
-On the RPC port, from what I understood, there is a TCP/UDP service called `rpcbind` that, if running, can be used to find the port used by a protocol from a protocol number.
-</div><div>
 </div></div>
 
 <hr class="sep-both">

@@ -35,7 +35,7 @@ Most protocols were sending data as plaintext 🔓. Later, protocols were enhanc
 * [File transfer](_protocols/file-transfer.md): FTP, SFTP, SCP
 * [Mail transfer](_protocols/mail-transfer.md): SMTP, POP3, IMAP
 * [Web requests](_protocols/web-requests.md): HTTP, HTTPS
-* [Remote shell access](_protocols/remote-shell.md): SSH
+* [Remote shell access](_protocols/remote-shell.md): SSH, telnet
 * [Domain resolution](_protocols/dns.md): DNS
 * [Network file system](_protocols/file-system.md): NFS, Samba
 
@@ -45,8 +45,7 @@ Most protocols were sending data as plaintext 🔓. Later, protocols were enhanc
 
 **Layer 5: Session Layer** 📶
 
-* Telnet
-* RPC
+* [RPC](_protocols/rpc.md)
 </div><div>
 
 **Layer 4: Transport Layer** 📫
