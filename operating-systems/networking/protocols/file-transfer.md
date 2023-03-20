@@ -8,7 +8,7 @@
 
 File Transfer Protocol (FTP) is a widely used protocol to transfer files. It's mostly used externally, unlike Samba or NFS.
 
-🐊️ **Port**: 21 (TCP)
+🐊️ **Ports**: 21 (TCP/control), and 20 (TCP/data)
 
 🔥 FTP communications are not encrypted.
 

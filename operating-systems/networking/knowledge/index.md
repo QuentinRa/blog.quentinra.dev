@@ -24,6 +24,40 @@ Some elements that are involved, shown in the simplified schema:
 
 <hr class="sep-both">
 
+## Interfaces and ports
+
+<div class="row row-cols-md-2"><div>
+
+#### Interfaces
+
+A **network interface/adapter/card** is a physical component connecting your machine and the network. A **virtual network interface** is the virtual representation of the physical component 📶.
+
+Common (virtual network) interfaces are
+
+* `eth0`, `eth1`... 🧦: for ethernet adapters
+* `tun0`, `tun1`... 🪂: for VPN adapters
+* `lo` <small>(loopback)</small> 🏡: for the **localhost** virtual network (127.0.0.1)
+
+The loopback interface is used by local applications to share data between themselves, over the localhost network.
+</div><div>
+
+#### Ports
+
+A port is a virtual messaging channel which is only associated with **one protocol**, such as `22` associated with `SSH`. This association allows a machine to correctly handle a message using the correct protocol.
+
+* 🗃️ There are 65535 <small>(or in short $2^{16}$)</small> available ports
+
+* 🔒 The first 1024 ports are called "standard ports"
+
+* 🗺️ List of [TCP/UDP ports](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers) and their protocols
+
+* 🤔 Protocols can be assigned to another port <small>(security)</small>
+
+* ✅ Ports can be "open", "filtered" <small>(firewall)</small>, and "closed"
+</div></div>
+
+<hr class="sep-both">
+
 ## Protocols
 
 <div class="row row-cols-md-2"><div>

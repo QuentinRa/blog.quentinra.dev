@@ -79,44 +79,7 @@ If both the switch and the machine try to send a message at the same time, then 
 
 ## Network interface
 
-<div class="row row-cols-md-2"><div>
-
-A **network interface** is the connection between your machine and the network. It's most likely done by a network card. From the machine point of view, a virtual representation of a network interface was introduced, called a virtual network interface.
-
-For instance, if you are using Ethernet, then you will most likely have a virtual interface called `eth0` <small>(or ethSomething)</small>.
-
-If you are using a VPN, you may see virtual network interfaces such as `tun0` <small>(or tunSomething)</small>.
-</div><div>
-
-For applications on a local machine to communicate with each other, there is a special virtual network called **localhost** (127.0.0.1), which is associated with the virtual network interface  **lo** (loopback), allowing local applications to locally transfer data over this virtual network.
-
-> As a machine may have multiple network cards, or a network card may be connected to multiple networks, you have to determine which interface will be used for each communication.
-</div></div>
-
-<hr class="sr">
-
-## Ports
-
-<div class="row row-cols-md-2"><div>
-
-A port is something virtual associated with a protocol. By using that, we know that if a message enters the port XXX, then it's using the protocol YYY. 
-
-* There are 65535 <small>(or in short $2^{16}$)</small> available ports
-* The first 1024 ports are called "standard ports"
-
-> The protocol used by a port is not set in stone! For security-related concerns, they are usually changed, and ports are also protected by something called a firewall, to hopefully prevent unauthorized users to know which protocol is run by each port. Ports may be closed too.
-</div><div>
-
-There are TCP ports, and UDP ports. The former ports are the most well-known ones. Here is the list of [TCP/UDP ports](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers).
-
-* **21**: FTP
-* **22**: SSH, SFTP, SCP
-* 23: telnet
-* 25: SMTP
-* **80**: HTTP
-* 137: NetBios
-* **443**: HTTPS
-</div></div>
+As a machine may have multiple network cards, or a network card may be connected to multiple networks, you have to determine which interface will be used for each communication.
 
 <hr class="sl">
 
