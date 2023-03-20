@@ -59,12 +59,12 @@ Each protocol can be represented using a [Message Sequence Chart](https://en.wik
 
 **Layer 3: Network Layer** 🌍
 
-* ICMP
+* [ICMP](_protocols/icmp.md)
 * IP
 
 **Layer 2: Data Link Layer** 🔢
 
-* ARP
+* [ARP](_protocols/arp.md)
 
 **Layer 1: Physical Layer** 💺
 

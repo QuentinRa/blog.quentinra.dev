@@ -483,40 +483,7 @@ It's a **connection-less, stateless, protocol**. It's used for fast messaging, b
 </div></div>
 </details>
 
-<details class="details-n mt-4">
-<summary>ICMP (1): internet control message protocol</summary>
-<div class="row row-cols-md-2"><div>
-
-It's used by a machine to indicate success or failure when communicating with another machine.
-
-* Host unreachable
-* Port closed
-
-For instance, if someone tries to send a message using TCP to a closed port, then the server may respond with an ICMP message saying that the port is closed.
-
-**Example**
-
-* `ping`
-* `traceroute`
-</div><div>
-
-**Header**
-
-* 1 byte for "type"
-* 1 byte for "code"
-* 2 bytes for "checksum of the message"
-* 4 bytes for "additional/specific information"
-
-Each code is associated with a type. Here are some of them (code: type). See [Control Messages (ICMP) on Wikipedia](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol#Control_messages)
-
-* `0`: echo reply
-* `3`: destination unreachable
-* `5`: redirect
-* `8`: echo
-* `11`: time exceeded
-
-</div></div>
-</details>
+* ICMP (1)
 
 <details class="details-n mt-4">
 <summary>IP: internet protocol</summary>
@@ -551,41 +518,6 @@ To check if two packets are fragments, they MUST have
 </details>
 
 > One thing to note, is that for instance in UDP, there is no "IP address" in the header. You should remember that UDP is working at a layer above (Layer 4) the one adding such information (Layer 3). And, as written before, each layer is adding its header, so still for UDP, you would have the header of IP followed by the header of UDP...
-
-<hr class="sl">
-
-## Address Resolution Protocol (ARP)
-
-<div class="row row-cols-md-2"><div>
-
-The Address Resolution Protocol (ARP) is used **to find a MAC given an IPV4 address**. Once found, the MAC is stored in the ARP cache.
-
-You can observe an ARP request by using `tcpdump`, and a `ping` on an uncached target
-
-```text
-... request who-has <target_IP> tell <sender_IP> ...
-```
-
-```text
-... reply <target_IP> is-at <MAC_address> ...
-```
-
-> ARP packets are bound to their subnet, so they won't leave it. If a machine isn't found in a subnet, then the request will be sent to the gateway, which will most likely either return the IP address (if cached) or repeat the same process.
-</div><div>
-
-**Protocol**
-
-**ARP Request broadcast**: A machine is asking every machine of a network is a MAC is theirs using the broadcast MAC address.
-
-* Mac source (requester MAC address)
-* Mac destination (`ff:ff:ff:ff:ff:ff`)
-* IP source (requested IP)
-* IP destination (target IP)
-
-**ARP Reply**/Response: if a machine found its IP in the Request, they are replying to the sender with its MAC.
-* Mac source (its MAC address)
-* ...
-</div></div>
 
 <hr class="sl">
 
