@@ -403,50 +403,7 @@ To avoid data loss, each interface has a maximum size for a packet. The MTU of `
 
 </div></div>
 
-<details class="details-n mt-4">
-<summary>TCP (6): transmission control protocol</summary>
-<div class="row row-cols-md-2"><div>
-
-It's a **connection-based protocol**. It's used when there is a need for a **trustworthy/reliable** (`fiable`), and ordered way of sending messages. If there is an error, the sender is notified, and the message will be sent again.
-
-> TCP PDU are called **segments**.
-
-**Example**
-
-* `ssh`
-
-**TCP three-way handshake**
-
-Using TCP, we etablish a session between two machines A and B. A start with a SYN. B replies with SYN, ACK. A receives SYN, ACk, and replies with ACK.
-
-There are sequence numbers and ack numbers on every message. The first SYN has a random value $a$. The second SYN has a random value $b$, while the ACK has a value equals to $a+1$. The final ACK has the value $b+1$.
-</div><div>
-
-TCP messages all have a [flag](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
-
-* `1`: F=FIN
-* `2`: S=Syn
-* `4`: R=Reset
-* `8`: P=Push
-* `16`: A=Ack
-* ...
-
-**Header**
-
-* 2 bytes for the "source port"
-* 2 bytes for the "destination port"
-* 4 bytes for the "sequence number" (seq)
-* 2 bytes for the "acknowledgment  number" (ack)
-* 4 bits for the "offset"
-* 3 bits that are "reserved" (000)
-* 9 bits for the "flag"
-* 2 bytes for the "frame/windows" (`cadre`)
-* 2 bytes for the "checksum"
-* 2 bytes for the "urgent pointer"
-* 4 bytes for "options" (optional)
-</div></div>
-</details>
-
+* TCP (6)
 * UDP (17)
 * ICMP (1)
 
