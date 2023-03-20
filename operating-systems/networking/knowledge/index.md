@@ -41,6 +41,7 @@ Each protocol can be represented using a [Message Sequence Chart](https://en.wik
 * [Remote desktop access](_protocols/remote-desktop.md): RDP
 * [Domain resolution](_protocols/dns.md): DNS
 * [Network file system](_protocols/file-system.md): NFS, Samba
+* [IP addresses lease](_protocols/dhcp.md): DHCP
 
 </div><div>
 
@@ -54,8 +55,8 @@ Each protocol can be represented using a [Message Sequence Chart](https://en.wik
 
 **Layer 4: Transport Layer** 📫
 
-* TCP
-* UDP
+* [TCP](_protocols/tcp.md)
+* [UDP](_protocols/udp.md)
 
 **Layer 3: Network Layer** 🌍
 

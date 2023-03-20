@@ -101,9 +101,6 @@ OSI
 
 * session: between apps
 * transport: between computers
-
-Quality/Debit=freq to select UDP/TCP.
-
 * 1024 to 49151: reserved
 * dynamic ports
 </div><div>

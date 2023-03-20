@@ -447,31 +447,7 @@ TCP messages all have a [flag](https://en.wikipedia.org/wiki/Transmission_Contro
 </div></div>
 </details>
 
-<details class="details-n mt-4">
-<summary>UDP (17): user datagram protocol</summary>
-<div class="row row-cols-md-2"><div>
-
-It's a **connection-less, stateless, protocol**. It's used for fast messaging, by applications that don't mind if a packet is lost/incorrect. It's **not trustworthy** (`non fiable`)
-
-* No warranty that the message will be received
-* No warranty that the message received is correct
-
-> UPD PDU are called **datagrams**.
-</div><div>
-
-**Example**
-
-* `dig`
-
-**Header**
-
-* 2 bytes for "source port"
-* 2 bytes for "destination port"
-* 2 bytes for "size of the message"
-* 2 bytes for "checksum of the message"
-</div></div>
-</details>
-
+* UDP (17)
 * ICMP (1)
 
 <details class="details-n mt-4">
