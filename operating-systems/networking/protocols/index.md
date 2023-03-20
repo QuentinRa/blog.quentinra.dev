@@ -2,64 +2,6 @@
 
 <hr class="sep-both">
 
-## Transfer files to/from a remote machine
-
-<div class="row row-cols-md-2 mt-3"><div class="border-end border-dark">
-
-### 🔓 FTP - 21 (TCP)
-
-➡️&nbsp; There is a secure version called FTPS (port 990).
-
-No encryption neither for the credentials nor the data exchanged.
-
-```bash
-$ ftp IP # use current user username
-$ ftp username@IP
-$ ftp username@IP -p port
-ftp> help
-```
-
-Once in an FTP shell, you may use the commands, see the [section 5.3.1.](https://www.rfc-editor.org/rfc/rfc959)
-
-<details class="details-e">
-<summary>FTP commands summary</summary>
-
-**Note**: ⚠️I had some issues when using paths with put/get, the transfer would always fail. Using only the file name, meaning starting FTP in the directory where my file was, solved the problem, but...
-
-```bash
-ftp> pwd # path to the current folder
-ftp> ls folder # list files
-ftp> cd folder # move to folder
-ftp> put /local/path /remote/dest # upload
-ftp> get /remote/path /local/dest # download
-ftp> less file # read file
-ftp> exit # exit
-ftp> bye # same
-```
-
-And
-
-```bash
-ftp> syst # information about the system
-ftp> stat # same, but there is the version+ftp client name
-```
-</details>
-
-<details class="details-e">
-<summary>Knowledge about FTP</summary>
-
-An FTP request is starting with the server sending `USER`, the client answering with a username, the server sending `PASS`, and the user answering back with the password.
-
-There are two modes in FTP: active, and passive. The mode determines the port used to transfer data. Data is transferred via the port 20, while in passive mode, a port higher than 1023 (reserved/system ports) will be used.
-
-There are two channels in an FTP connection: a channel to send commands <small>(also called control)</small>, and one to transfer data. There is also a transfer mode, which could be ASCII, or binary (default). You can enter `type [a|i]` or `ascii|binary` to switch.
-</details>
-
-</div><div class="border-st art border-dark ps-4">
-</div></div>
-
-<hr class="sep-both">
-
 ## Sending mails
 
 No encryption neither for the credentials nor the data exchanged.
@@ -227,12 +169,6 @@ There is [Remmina](https://github.com/FreeRDP/Remmina) (1.9k ⭐, `apt install r
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
-
-* `ssh xxx@yyy -T -L xxx:domain:xxx`: create a tunnel mapping one port to another
-* see SRM notes
-</div><div>
-
 ```
 URL
 * Scheme: (protocol) HTTP/HTTPS/...
@@ -244,4 +180,3 @@ URL
   * ...
 * Response code
 ```
-</div></div>

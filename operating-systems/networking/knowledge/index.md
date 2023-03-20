@@ -41,7 +41,8 @@ Most protocols were sending data as plaintext 🔓. Later, protocols were enhanc
 
 **Layer 6: Presentation Layer** 🔒
 
-* none
+* SSL
+* TLS
 
 **Layer 5: Session Layer** 📶
 
@@ -64,7 +65,11 @@ Most protocols were sending data as plaintext 🔓. Later, protocols were enhanc
 
 **Layer 1: Physical Layer** 💺
 
-* none
+* N/A
+
+<br>
+
+➡️ Note that some protocols may operate at multiple layers.
 </div></div>
 
 <hr class="sep-both">
@@ -79,6 +84,7 @@ Stuff that I found, but never read/used yet.
 * [Old - Protocols](../protocols/index.md)
 * [Old - Commands](../commands/linux/index.md)
 * [Old - Security](../security/index.md)
+* see SRM notes
 </div><div>
 
 Network
