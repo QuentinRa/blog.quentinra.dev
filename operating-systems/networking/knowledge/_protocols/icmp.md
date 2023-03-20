@@ -12,7 +12,7 @@ The Internet Control Message Protocol (ICMP) is used by a machine to indicate su
 
 For instance, if someone tries to send a message using TCP to a closed port, then the server may respond with an ICMP message saying that the port is closed.
 
-🐊️ **Port**: none <small>(encapsulated within IP packets)</small>
+🐊️ **Port**: N/A <small>(encapsulated within IP packets)</small>
 
 🗺️ **Used by**: `ping`, `traceroute`...
 </div><div>

@@ -268,17 +268,6 @@ There are 3 ranges of IPV4 addresses that are said private/reserved for internal
 * `192.168.0.0/16`
 </details>
 </div><div>
-
-<details class="details-e">
-<summary>DHCP Server</summary>
-
-IP addresses are either attributed manually or by something called a DHCP <small>(Dynamic Host Configuration Protocol)</small> server. If a new device with no address IP is connecting to the network
-
-1. **DHCP Discover**: the device sends a request to retrieve an IP
-2. **DHCP Offer**: if there is a DHCP server, it answers with an IP
-3. **DHCP Request**: the device confirms that it wants the attributed IP address
-4. **DHCP ACK**: the DHCP server confirms that the device was assigned the given IP address
-</details>
 </div></div>
 
 <details class="details-e">

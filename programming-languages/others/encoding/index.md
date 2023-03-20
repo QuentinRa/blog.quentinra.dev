@@ -199,6 +199,21 @@ toto
 
 <hr class="sep-both">
 
+## URL encoding - 🌍
+
+<div class="row row-cols-md-2"><div>
+
+URL encoding, also known as percent-encoding, in an encoding mostly used in URLs and resources, to encode characters that have a special meaning in URLs.
+</div><div>
+
+* Example of encoding `%`
+* Find the ASCII of `%`: `37`
+* Convert the value to hexadecimal: `25`
+* Add `%` before the result: `%25`
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
