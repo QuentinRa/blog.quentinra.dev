@@ -51,6 +51,8 @@ Common (virtual network) interfaces are
 * `lo` <small>(loopback)</small> 🏡: for the **localhost** virtual network (127.0.0.1)
 
 The loopback interface is used by local applications to share data between themselves, over the localhost network.
+
+**Maximum Transmission Unit (MTU)** 🛂: to avoid data loss, each interface has a maximum size for a packet. The default MTU of `lo` is 65536ko, while for others it is 1500ko. Bigger packets are fragmented.
 </div><div>
 
 #### Ports
@@ -66,6 +68,8 @@ A port is a virtual messaging channel which is only associated with **one protoc
 * 🤔 Protocols can be assigned to another port <small>(security)</small>
 
 * ✅ Ports can be "open", "filtered" <small>(firewall)</small>, and "closed"
+
+* 🍸 A port can, according to the protocol, receive TCP, UDP, TCP and UDP... messages.
 </div></div>
 
 <hr class="sep-both">
@@ -90,6 +94,8 @@ A computer generate a message at a layer. The message go down every layer until 
 </div><div>
 
 Each time a message go down, a header is added. This is called **encapsulation** 📥. When it goes up, it's called **de-encapsulation** 📤.
+
+The **Protocol Data Unit** 📜 (PDU) is generated at each layer. It's both the layer protocol headers, and the previous PDU as the data, which is usually called **payload**.
 
 #### TCP/IP model
 

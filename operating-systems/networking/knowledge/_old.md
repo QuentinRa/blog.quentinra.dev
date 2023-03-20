@@ -297,34 +297,6 @@ There are 8 kinds of IPV6 addresses
 * **Layer 3 - Network** (Router)
 * **Layer 2 - Data Link** (Switch)
 
-<hr class="sr">
-
-## Protocols
-
-<div class="row row-cols-md-2"><div>
-
-**Protocol Data Unit (PDU)**: this is the format that is used to transfer data. This is made of the **headers** of the protocol, followed by the data which is called **Payload** (`charge`).
-</div><div>
-
-**Maximum Transmission Unit (MTU)**
-
-To avoid data loss, each interface has a maximum size for a packet. The MTU of `lo` is usually 65536ko, while for others, it's something more like 1500ko <small>(default value)</small>. If a packet is bigger than the MTU, then it will be **fragmented** (`fragmenté`) into smaller packets.
-
-<details class="details-e">
-<summary>Example of a packet being fragmented (handled by IP)</summary>
-
-**State of the network**: A is linked to R1 (MTU=1500), R1 is linked to R2 (MTU=1000), and R2 is linked to B (MTU=1500).
-
-* A send 1200 ko to B
-* **A to R1**: not fragmented
-* **R1 to R2**: we need to split the packet into 2. Each packet will have its own headers, which means that the two packets will be bigger than the original one.
-* **R2 to B**: Actually, we don't know what will happen here
-  * R2 may merge packets before sending them
-  * or, R2 may send two packets, and B will merge them
-
-</details>
-</div></div>
-
 <hr class="sl">
 
 ## Routing table
