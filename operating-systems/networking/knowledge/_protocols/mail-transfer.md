@@ -16,7 +16,7 @@ You could use the analogy of a MSA being the postman that takes mail from your i
 
 🔥 SMTP communications are not encrypted.
 
-🔒 There is a secure version called SMTPS (port 445).
+🔒 There is a secure version called SMTPS <small>(port 445, over SSL/TLS)</small>.
 
 The Mail Transfer Agent will send the mail to a **Mail Delivery Agent** which is the server that the client will query to access his/her emails. It's common for a MTA to also be a MDA.
 </div><div>
@@ -47,7 +47,7 @@ Post Office Protocol version 3 is a protocol that opens the box, checks if there
 
 🔥 POP3 communications are not encrypted.
 
-🔒 There is a secure version called POP3S (port 995).
+🔒 There is a secure version called POP3S <small>(port 995, over SSL/TLS)</small>.
 
 It's possible to configure POP3 so that emails aren't removed, but due to how it works, mails will remain marked as "new", and the client will lose track of whether a mail was read or not.
 </div><div>
@@ -74,7 +74,7 @@ Internet Message Access Protocol (IMAP) is a protocol designed for synchronizati
 
 🔥 IMAP communications are not encrypted.
 
-🔒 There is a secure version called IMAPS (port 993).
+🔒 There is a secure version called IMAPS <small>(port 993, over SSL/TLS)</small>.
 </div><div>
 
 ```bash

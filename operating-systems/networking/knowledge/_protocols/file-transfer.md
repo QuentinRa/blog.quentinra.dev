@@ -14,7 +14,7 @@ File Transfer Protocol (FTP) is a widely used protocol to transfer files. It's m
 
 🔥 FTP communications are not encrypted.
 
-🔒 There is a secure version called FTPS (port 990).
+🔒 There is a secure version called FTPS <small>(port 990, over SSL/TLS)</small>.
 
 ```bash
 $ ftp IP # use current user username

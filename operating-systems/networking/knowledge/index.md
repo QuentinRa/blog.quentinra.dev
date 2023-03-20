@@ -28,7 +28,7 @@ Some elements that are involved, shown in the simplified schema:
 
 <div class="row row-cols-md-2"><div>
 
-Most protocols were sending data as plaintext 🔓. Later, protocols were enhanced with SSL/TLS, adding encryption. Such protocols are usually ending with a **S** such as `HTTP` that became `HTTPS`.
+A **protocol** is a set of rules used to formalize the way of exchanging messages <small>(endianness, floating numbers format, charset, separators, integrity...)</small>.
 
 **Layer 7: Application Layer** 🧑
 
@@ -36,18 +36,19 @@ Most protocols were sending data as plaintext 🔓. Later, protocols were enhanc
 * [Mail transfer](_protocols/mail-transfer.md): SMTP, POP3, IMAP
 * [Web requests](_protocols/web-requests.md): HTTP, HTTPS
 * [Remote shell access](_protocols/remote-shell.md): SSH, telnet
+* [Remote desktop access](_protocols/remote-desktop.md): RDP
 * [Domain resolution](_protocols/dns.md): DNS
 * [Network file system](_protocols/file-system.md): NFS, Samba
 
+</div><div>
+
 **Layer 6: Presentation Layer** 🔒
 
-* SSL
-* TLS
+* SSL/TLS
 
 **Layer 5: Session Layer** 📶
 
 * [RPC](_protocols/rpc.md)
-</div><div>
 
 **Layer 4: Transport Layer** 📫
 
