@@ -294,48 +294,8 @@ There are 8 kinds of IPV6 addresses
 
 <hr class="sr">
 
-## OSI model
-
-The Open Systems Interconnection (**OSI**) model is a standardized representation of how we could send a message between two machines. It's made of **7 layers** (`couche`): Physical, Data Link, Network, Transport, Session, Presentation, and Application. Although it's newer than the TCP/IP model, the latter remains the most widely used one as it is more compact.
-
-<div class="row"><div class="col-md-7">
-
-When a computer sends a message, it will be sent starting a layer, and go down. When a computer receives a message, it will go up every layer in reverse order.
-
-* **Layer 7 - Application**: programs are exchanging data <small>(HTTP, SSH, SMTP...)</small>
-* **Layer 6 - Presentation**: Standardize, encrypt, compress <small>(SSL, TLS...)</small>
-* **Layer 5 - Session**: Try to establish a connection <small>(RPC, PAP...)</small>
-* **Layer 4 - Transport**: select a protocol <small>(TCP, UDP...)</small>
-* **Layer 3 - Network** (`Réseau`, Router): create a packet <small>(IP, NAT, ICMP...)</small>
-* **Layer 2 - Data Link** (`Liaison`, Switch): resolve MAC <small>(ARP, ETH...)</small>
-* **Layer 1 - Physical** (HUB): binary to signals <small>(links, USB...)</small>
-</div><div class="col-md-5">
-
-Each time a `data` go down to be sent, a header is added. This process is called **encapsulation**. 
-
-When a message is received, each header will be removed when going up. This process is called **de-encapsulation**.
-
-The data being sent is named differently according to the headers that were added
-
-* **Level 5 to 7**: data
-* **Level 4**: segments (TCP), or datagrams (UDP)
-* **Level 3**: packets
-* **Level 2**: frames <small>(packets without an IP)</small>
-* **Level 1**: stream (bits)
-</div></div>
-
-<hr class="sl">
-
-## TCP/IP model
-
-The TCP/IP model was introduced before the OSI model but remains the most used because it's more compact. It's made of 4 layers
-
-* **Layer 4 - Application**: Layers 5 to 7 of OSI
-* **Layer 3 - Transport**: Layers 4 of OSI <small>(socket, port...)</small>
-* **Layer 2 - Internet**: Layers 3 of OSI <small>(IP, ETH...)</small>
-* **Layer 1 - Physical**: Layers 1, and 2 of OSI <small>(Wi-Fi, ADsr, ETH...)</small>
-
-Some are splitting "Layer 1" back into two layers, but it's not in the RFC1122 standard.
+* **Layer 3 - Network** (Router)
+* **Layer 2 - Data Link** (Switch)
 
 <hr class="sr">
 

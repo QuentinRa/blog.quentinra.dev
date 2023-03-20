@@ -24,6 +24,18 @@ Some elements that are involved, shown in the simplified schema:
 
 <hr class="sep-both">
 
+## IP Addresses and MAC address
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Interfaces and ports
 
 <div class="row row-cols-md-2"><div>
@@ -58,6 +70,43 @@ A port is a virtual messaging channel which is only associated with **one protoc
 
 <hr class="sep-both">
 
+## Networking models
+
+<div class="row row-cols-md-2"><div>
+
+#### OSI model
+
+The Open Systems Interconnection (**OSI**) model is a standardized representation of how we could send a message between two machines 🤝. It's made of 7 layers:
+
+* **Layer 7 - Application**: programs are exchanging data
+* **Layer 6 - Presentation**: standardize, encrypt, compress
+* **Layer 5 - Session**: try to establish a connection
+* **Layer 4 - Transport**: select a protocol
+* **Layer 3 - Network**: create a packet
+* **Layer 2 - Data Link**: resolve MAC
+* **Layer 1 - Physical**: binary to signals
+
+A computer generate a message at a layer. The message go down every layer until it's sent 📩. When a computer receives a message, it will go up every layer in reverse order 📖.
+</div><div>
+
+Each time a message go down, a header is added. This is called **encapsulation** 📥. When it goes up, it's called **de-encapsulation** 📤.
+
+#### TCP/IP model
+
+The TCP/IP model was introduced before the OSI model, but remains the most used because it's more compact 🤏. It's made of 4 layers:
+
+* **Layer 4 - Application**: Layers 5 to 7 of OSI
+* **Layer 3 - Transport**: Layers 4 of OSI <small>(socket, port...)</small>
+* **Layer 2 - Internet**: Layers 3 of OSI <small>(IP, ETH...)</small>
+* **Layer 1 - Physical**: Layers 1, and 2 of OSI <small>(Wi-Fi, ADsr, ETH...)</small>
+
+➡️ Some are splitting "Layer 1" back into two layers like in OSI, but it's not what's defined in the RFC1122 standard.
+
+➡️ See also the model OSI/TCP/IP.
+</div></div>
+
+<hr class="sep-both">
+
 ## Protocols
 
 <div class="row row-cols-md-2"><div>
@@ -66,7 +115,7 @@ A protocol is a set of instructions formalizing the way of communicating between
 
 Each protocol can be represented using a [Message Sequence Chart](https://en.wikipedia.org/wiki/Message_sequence_chart), describing how two machines are interacting using this protocol.
 
-**Layer 7: Application Layer** 🧑
+**Layer 7: Application Layer** <small>(data)</small> 🧑
 
 * [File transfer](../protocols/file-transfer.md): FTP, SFTP, SCP
 * [Mail transfer](../protocols/mail-transfer.md): SMTP, POP3, IMAP
@@ -80,29 +129,29 @@ Each protocol can be represented using a [Message Sequence Chart](https://en.wik
 
 </div><div>
 
-**Layer 6: Presentation Layer** 🔒
+**Layer 6: Presentation Layer** <small>(data)</small> 🔒
 
 * SSL/TLS
 
-**Layer 5: Session Layer** 📶
+**Layer 5: Session Layer** <small>(data)</small> 📶
 
 * [RPC](../protocols/rpc.md)
 
-**Layer 4: Transport Layer** 📫
+**Layer 4: Transport Layer** <small>(segment/datagram)</small> 📫
 
 * [TCP](../protocols/tcp.md)
 * [UDP](../protocols/udp.md)
 
-**Layer 3: Network Layer** 🌍
+**Layer 3: Network Layer** <small>(packets)</small> 🌍
 
 * [ICMP](../protocols/icmp.md)
 * [IP](../protocols/ip.md)
 
-**Layer 2: Data Link Layer** 🔢
+**Layer 2: Data Link Layer** <small>(frames)</small> 🔢
 
 * [ARP](../protocols/arp.md)
 
-**Layer 1: Physical Layer** 💺
+**Layer 1: Physical Layer** <small>(stream)</small> 💺
 
 * N/A
 
