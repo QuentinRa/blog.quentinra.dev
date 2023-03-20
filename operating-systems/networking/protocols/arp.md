@@ -1,7 +1,5 @@
 # Address Resolution Protocol (ARP)
 
-[Go back](../index.md)
-
 <div class="row row-cols-md-2"><div>
 
 The Address Resolution Protocol (ARP) is used **to find a MAC given an IPV4 address**. Once found, the MAC is stored in the ARP cache.

@@ -1,7 +1,5 @@
 # Network file system
 
-[Go back](../index.md)
-
 <hr class="sep-both">
 
 ## Samba

@@ -1,7 +1,5 @@
 # Dynamic Host Configuration Protocol (DHCP)
 
-[Go back](../index.md)
-
 <div class="row row-cols-md-2"><div>
 
 IPV4 addresses are usually not attributed to a host manually. We use a Dynamic Host Configuration Protocol (DHCP) server instead.

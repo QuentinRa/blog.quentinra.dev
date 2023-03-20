@@ -1,7 +1,5 @@
 # Remote desktop access
 
-[Go back](../index.md)
-
 <hr class="sep-both">
 
 ## Remote Desktop Protocol (RDP)

@@ -1,7 +1,5 @@
 # File transfer
 
-[Go back](../index.md)
-
 <hr class="sep-both">
 
 ## File Transfer Protocol (FTP)

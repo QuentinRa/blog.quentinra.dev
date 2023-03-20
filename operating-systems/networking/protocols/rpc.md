@@ -1,7 +1,5 @@
 # Remote procedure call (RPC)
 
-[Go back](../index.md)
-
 <div class="row row-cols-md-2"><div>
 
 Remote procedure call (RPC) is a protocol in which a process can communicate with another process on a different host.

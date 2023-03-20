@@ -1,7 +1,5 @@
 # Mail transfer
 
-[Go back](../index.md)
-
 <hr class="sep-both">
 
 ## SMTP

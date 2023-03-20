@@ -1,7 +1,5 @@
 # Internet Protocol (IP)
 
-[Go back](../index.md)
-
 <div class="row row-cols-md-2"><div>
 
 The Internet Protocol (IP) add necessary information to data allowing routing and internetworking communication.
@@ -12,7 +10,7 @@ The Internet Protocol (IP) add necessary information to data allowing routing an
 
 The IP protocol is using this header
 
-![IP Header](../_images/ip_headers.png)
+![IP Header](_images/ip_headers.png)
 
 The size of the payload is **TPL-IHL**.
 

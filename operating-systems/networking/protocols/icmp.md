@@ -1,7 +1,5 @@
 # Internet Control Message Protocol (ICMP)
 
-[Go back](../index.md)
-
 <div class="row row-cols-md-2"><div>
 
 The Internet Control Message Protocol (ICMP) is used by a machine to indicate success or failure when communicating with another machine.

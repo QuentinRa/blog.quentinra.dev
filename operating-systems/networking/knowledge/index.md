@@ -34,14 +34,15 @@ Each protocol can be represented using a [Message Sequence Chart](https://en.wik
 
 **Layer 7: Application Layer** 🧑
 
-* [File transfer](_protocols/file-transfer.md): FTP, SFTP, SCP
-* [Mail transfer](_protocols/mail-transfer.md): SMTP, POP3, IMAP
-* [Web requests](_protocols/web-requests.md): HTTP, HTTPS
-* [Remote shell access](_protocols/remote-shell.md): SSH, telnet
-* [Remote desktop access](_protocols/remote-desktop.md): RDP
-* [Domain resolution](_protocols/dns.md): DNS
-* [Network file system](_protocols/file-system.md): NFS, Samba
-* [IP addresses lease](_protocols/dhcp.md): DHCP
+* [File transfer](../protocols/file-transfer.md): FTP, SFTP, SCP
+* [Mail transfer](../protocols/mail-transfer.md): SMTP, POP3, IMAP
+* [Web requests](../protocols/web-requests.md): HTTP, HTTPS
+* [Remote shell access](../protocols/remote-shell.md): SSH, telnet
+* [Remote desktop access](../protocols/remote-desktop.md): RDP
+* [Domain resolution](../protocols/dns.md): DNS
+* [Network file system](../protocols/file-system.md): NFS, Samba
+* [IP addresses lease](../protocols/dhcp.md): DHCP
+* [Network Management](../protocols/snmp.md): SNMP
 
 </div><div>
 
@@ -51,21 +52,21 @@ Each protocol can be represented using a [Message Sequence Chart](https://en.wik
 
 **Layer 5: Session Layer** 📶
 
-* [RPC](_protocols/rpc.md)
+* [RPC](../protocols/rpc.md)
 
 **Layer 4: Transport Layer** 📫
 
-* [TCP](_protocols/tcp.md)
-* [UDP](_protocols/udp.md)
+* [TCP](../protocols/tcp.md)
+* [UDP](../protocols/udp.md)
 
 **Layer 3: Network Layer** 🌍
 
-* [ICMP](_protocols/icmp.md)
-* [IP](_protocols/ip.md)
+* [ICMP](../protocols/icmp.md)
+* [IP](../protocols/ip.md)
 
 **Layer 2: Data Link Layer** 🔢
 
-* [ARP](_protocols/arp.md)
+* [ARP](../protocols/arp.md)
 
 **Layer 1: Physical Layer** 💺
 
@@ -85,7 +86,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [Old](_old.md)
-* [Old - Protocols](../protocols/index.md)
 * [Old - Commands](../commands/linux/index.md)
 * [Old - Security](../security/index.md)
 * see SRM notes

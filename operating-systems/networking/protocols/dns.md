@@ -1,7 +1,5 @@
 # DNS protocol
 
-[Go back](../index.md)
-
 <div class="row row-cols-md-2"><div>
 
 The Domain Name System (DNS) protocol is used to convert a **domain name** such as `example.com` to an IP address `93.184.216.34`. A domain name is for humans, while IP address are for machines 🏭.

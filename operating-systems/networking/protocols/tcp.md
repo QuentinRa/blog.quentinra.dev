@@ -1,7 +1,5 @@
 # Transmission Control Protocol (TCP)
 
-[Go back](../index.md)
-
 <div class="row row-cols-md-2"><div>
 
 Transmission Control Protocol (TCP) is a trustworthy protocol to ensure that the data sent is properly received, and in the correct order. If there is an error, the message is sent again.

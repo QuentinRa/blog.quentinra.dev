@@ -1,7 +1,5 @@
 # Web requests
 
-[Go back](../index.md)
-
 <hr class="sep-both">
 
 ## Hypertext Transfer Protocol (HTTP)

@@ -1,7 +1,5 @@
 # Remote shell access
 
-[Go back](../index.md)
-
 <hr class="sep-both">
 
 ## Telnet

@@ -1,6 +1,6 @@
 # Networking
 
-We call a network of devices "internet", and what we refer to (THE) "Internet" are many small networks all joined together. Networking is someone complex, as it involves a lot of things: devices <small>(Routers, Hub/Switches...)</small>, Protocols <small>(TCP/UDP/ICMP/ARP/DNS...)</small>, Ports, Network interfaces, models <small>(OSI, TCP/IP)</small>, and addresses <small>(IPV4/IPV6/MAC...)</small>.
+We call a network of devices "internet", and what we refer to (THE) "Internet" are many small networks all joined together.
 
 <details class="details-n">
 <summary>Imunes - free open-source network emulator</summary>
