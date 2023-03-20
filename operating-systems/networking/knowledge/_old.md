@@ -391,10 +391,6 @@ Some are splitting "Layer 1" back into two layers, but it's not in the RFC1122 s
 
 <div class="row row-cols-md-2"><div>
 
-A **protocol** is a set of rules used to formalize the way of exchanging messages <small>(endianness, floating numbers format, charset, separators, integrity...)</small>.
-
-Each protocol is following a [**Message Sequence Chart**](https://en.wikipedia.org/wiki/Message_sequence_chart) which is simply describing how two machines are interacting using this protocol.
-
 **Protocol Data Unit (PDU)**: this is the format that is used to transfer data. This is made of the **headers** of the protocol, followed by the data which is called **Payload** (`charge`).
 </div><div>
 

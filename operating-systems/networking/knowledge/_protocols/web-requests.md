@@ -4,25 +4,15 @@
 
 <hr class="sep-both">
 
-## XXX
+## Hypertext Transfer Protocol (HTTP)
 
 <div class="row row-cols-md-2"><div>
 
-X
+HTTP is a protocol used to exchange with a webserver. Your browser is sending an HTTP request to a webserver, receives a response with HTML inside, and displays the page in your browser.
 
-🐊️ **Port**: XXX (TCP)
-</div><div>
-</div></div>
+🐊️ **Port**: 80 (TCP)
 
-<hr class="sep-both">
-
-## 🔓 HTTP - 80 (TCP)
-
-➡ There is a secure version called HTTPS (port 443).
-
-<div class="row row-cols-md-2 mt-3"><div class="border-end border-dark">
-
-HTTP/HTTPS is a protocol used to exchange with a webserver. Your browser is sending an HTTP request to a webserver, receives a response with HTML inside, and displays the page in your browser.
+🔒 There is a secure version called HTTPS <small>(port 443, over SSL/TLS)</small>.
 
 ```bash
 $ telnet IP 80
@@ -45,11 +35,11 @@ The **first** element in a request is the method.
 ##### Path/Route
 
 The **second** is called **Path**/**Route**. It's a path relative to the webserver root. For instance, for `https://example.com/index.html`, the path is `/index.html`.
+</div><div>
 
 ##### HTTP versions
 
 HTTP versions that are widely used are `HTTP/1.1`, and `HTTP 2.0`, while `HTTP 3.0` was released in 2022.
-</div><div>
 
 ##### HTTP Headers
 
@@ -58,8 +48,12 @@ In every HTTP/HTTPS request/response, there are headers that are set both by the
 * `Set-cookie`: The server request the creation of cookies
 * `Cookie`: The client send in every request the created cookies
 * `Host`: one of the domain names hosted by the server
-* `Server:`: name of the HTTP server, maybe the version/OS too
+* `Server`: name of the HTTP server, maybe the version/OS too
 * ...
+
+##### HTTP Payload
+
+If you are using `GET`, the payload is inside the URL. For others, the data is inside the body. In both case, [it's URL-encoded](/programming-languages/others/encoding/index.md).
 
 ##### HTTP Response code
 
@@ -70,32 +64,4 @@ When the server answers, it returns an [HTTP response code](https://developer.mo
 * `404`: Not found
 * `500`: Internal server error
 * ...
-
-##### URL-encoding
-
-If you are creating a user, you will most likely send the username/... to the server. Aside from `GET`, this data is added after leaving one blank line below the headers. In any case, the data must be URL-encoded as some characters aren't valid in a URL.
-
-* Example of encoding `%`
-* Find the ASCII of `%`: `37`
-* Convert the value to hexadecimal: `25`
-* Add `%` before the result: `%25`
-* This is automatically done by your browser.
 </div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-```
-URL
-* Scheme: (protocol) HTTP/HTTPS/...
-* Username:Password@Domain:port/Path?query#Fragment
-* Methods GET, DELETE...
-* Headers
-  * Server: some server
-  * Set-cookie: ... => server send the cookie in every request
-  * ...
-* Response code
-```

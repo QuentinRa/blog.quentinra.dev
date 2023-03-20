@@ -41,14 +41,13 @@ Browsers are using the [HTTP](/_it/networking/protocols/index.md#-http---80-tcp)
 * 👉 Modern apps are usually using a router. This reduces securities issues. Every URL will be redirected to one file, and this file will determine which HTML page should be returned.
 </div><div>
 
-
 **What do you need?**
 
 To develop simple HTML websites, you don't need anything, you can use the `file://` protocol <small>(drag and drop the HTML in your browser)</small>.
 
 For more complex apps <small>(PHP, HTTPS...)</small>, you must install a webserver such as Apache, Nginx, Node, IIS...
 
-➡️ To upload things on a remote server, see the [FTP protocol](/_it/networking/protocols/index.md#-scpsftp---22-tcp).
+➡️ To upload things on a remote server, see the [FTP protocol](/operating-systems/networking/knowledge/_protocols/file-transfer.md).
 
 </div></div>
 
@@ -185,6 +184,12 @@ Stuff that I found, but never read/used yet.
 **Apps**
 
 * progressive web apps (PWA)
+
+```
+URL
+* Scheme: (protocol) HTTP/HTTPS/...
+* Username:Password@Domain:port/Path?query#Fragment_or_Hash
+```
 </div><div>
 
 * [Postfix](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-debian-10) to send mails. See also DMarc, SPF, DKim, and [mail-tester.com](https://www.mail-tester.com/) <small>(wait XXX hours for DNS records changes)</small>.

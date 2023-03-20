@@ -28,7 +28,9 @@ Some elements that are involved, shown in the simplified schema:
 
 <div class="row row-cols-md-2"><div>
 
-A **protocol** is a set of rules used to formalize the way of exchanging messages <small>(endianness, floating numbers format, charset, separators, integrity...)</small>.
+A protocol is a set of instructions formalizing the way of communicating between devices <small>(endianness, floating numbers format, charset, separators, integrity, errors...)</small>.
+
+Each protocol can be represented using a [Message Sequence Chart](https://en.wikipedia.org/wiki/Message_sequence_chart), describing how two machines are interacting using this protocol.
 
 **Layer 7: Application Layer** 🧑
 
