@@ -116,7 +116,7 @@ Some network devices act as servers, and others as clients. It's the common appr
 
 <hr class="sep-both">
 
-## Networking segmentation
+## Network segmentation
 
 <div class="row row-cols-md-2"><div>
 
@@ -125,10 +125,34 @@ Segmenting a large network into smaller networks if often used in security to is
 It can also be done to make it easier to manage a group of machines, or to improve performances.
 </div><div>
 
-...
-</div></div>
+#### Subnetting
 
-<hr class="sep-both">
+This is a technique to segment a network. We divide a large network into smaller subnetworks. Each subnet has its own address and can be managed separately.
+
+* each subnet will have its own netmask, and broadcast mask <small>(the -2)</small>
+* each subnet will have $2^{32-n} - 2$ addresses <small>($n$ fixed bits)</small>
+
+<details class="details-n">
+<summary>Example 🔥: divide $172.16.254.0/23$ in 2 subnets</summary>
+
+* **Fix $n$ bits**: $2^{1} \ge 2$ giving us $n=1$
+* **Ensure we have enough bits**: $23 + 1 \le 32$ ✅
+* Each network will have $2^{(32−(23+1))}−2 = 254$ IP addresses
+* $172.16.254.0/23$ will be split in
+  * $172.16.254.0/24$ <small>(the 24th bit is 0)</small>
+  * $172.16.255.0/24$ <small>(the 24th bit is 1)</small>
+
+The method is something like that:
+
+* Given $k$ the number of subnets
+* Given $N$ fixed bits
+* Find the lowest $n$ solving $2^n \ge k$
+* If $N + n \ge 32$, then you can't have $k$ subnets
+* Each network will have $2^{(32−(N+n)}−2$ IP addresses
+
+Each network is made by permutations of the newly added $n$ bits.
+</details>
+</div></div>
 
 <hr class="sep-both">
 
@@ -143,9 +167,14 @@ Topologies
 * Tree network topology
 * Software-Defined Networking (SDN)
 * Virtual Network Functions (VNFs)
+* [Request-response](https://en.wikipedia.org/wiki/Request%E2%80%93response)
 </div><div>
 
 Devices
 
 * Router on a stick
+
+Random
+
+* Port-forwarding
 </div></div>

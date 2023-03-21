@@ -205,8 +205,17 @@ Network segmentation
 
 * VRFs (Virtual Routing and Forwarding)
 
+Protocols
+
+* IPSec Internet Protocol Security (IPsec) encrypts data using the existing Internet Protocol (IP) framework.
+
 Random
 
 * Streaming network telemetry
 * Network Access Control
+* [faidherbe](https://www.faidherbe.org/tutoriel/)
+
+Certification
+
+* 200-301 CCNA ([goffinet](https://cisco.goffinet.org/ccna/))
 </div></div>
