@@ -159,6 +159,50 @@ Each network is made by permutations of the newly added $n$ bits.
 
 <hr class="sep-both">
 
+## Topology design 🗺️
+
+<div class="row row-cols-md-2"><div>
+
+Plan the scalability
+
+* bandwidth requirements
+* network capacity
+* number of devices
+
+And select an appropriate topology.
+
+</div><div>
+
+Security
+
+* Segmentation
+* Access control (the least privilege...)
+* Firewalls
+
+To keep in mind
+
+* performance
+* fault tolerance
+* monitoring and logging (siem?...)
+* backups and updates
+</div></div>
+
+<hr class="sep-both">
+
+## Network devices features
+
+<div class="row row-cols-md-2"><div>
+
+#### High Availability (HA)
+
+It's a feature available in many network devices. We design the network to avoid  single point of failure, for instance, using hardware redundancy, so that if a device fails, another one can take over without causing disruption to network traffic.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
