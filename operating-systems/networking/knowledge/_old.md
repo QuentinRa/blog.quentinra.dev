@@ -50,10 +50,6 @@ $ sudo himage <hostname>@<id> <command>
 
 **Local Area Network** (LAN, `réseau domestique`) is a network established within a limited area, such as your home.
 
-**Router**: a device usually connecting a LAN network, with a WAN network. It does "routing", meaning selecting the route/path that packets will take to arrive at the destination.
-
-**Hub/Switch**: a device which can be connected to usually at least 4, and up to 64 devices, using Ethernet. They are receiving packets from others hosts, and they handle the delivery of packets while ensuring that they are received in the right order, and are not corrupted.
-
 <details class="details-n">
 <summary><b>Ethernet</b>: a cable to connect a device to a Hub/Switch.</summary>
 

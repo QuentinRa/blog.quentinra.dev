@@ -1,9 +1,50 @@
 # Network topology
 
+Network topology is the physical or logical layout of a network. It impacts performance, reliability, scalability, and security.
+
+<hr class="sep-both">
+
+## Networking devices
+
 <div class="row row-cols-md-2"><div>
 
-Network topology is the physical or logical layout of a network. It impact performance, reliability, scalability, and security.
+Networking devices are interconnected by cables.
+
+**Layer 7: Application Layer** <small>(data)</small> 🧑
+
+* Proxies
+
+**Layer 6: Presentation Layer** <small>(data)</small> 🔒
+
+* N/A
+
+**Layer 5: Session Layer** <small>(data)</small> 📶
+
+* N/A
+
+**Layer 4: Transport Layer** <small>(segment/datagram)</small> 📫
+
+* Load Balancers
 </div><div>
+
+**Layer 3: Network Layer** <small>(packets)</small> 🌍
+
+* Routers
+* Gateways/Jumpoint
+
+**Layer 2: Data Link Layer** <small>(frames)</small> 🔢
+
+* Switches
+
+**Layer 1: Physical Layer** <small>(stream)</small> 💺
+
+* [Hubs](devices/hubs.md)
+* Repeaters
+* Modems
+
+<br>
+
+➡️ Note that some devices may operate at multiple layers.
 </div></div>
 
 <hr class="sep-both">
