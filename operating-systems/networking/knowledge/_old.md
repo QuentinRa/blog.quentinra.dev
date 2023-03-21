@@ -77,142 +77,16 @@ If both the switch and the machine try to send a message at the same time, then 
 
 <hr class="sr">
 
-## Network interface
+## XXX
 
 As a machine may have multiple network cards, or a network card may be connected to multiple networks, you have to determine which interface will be used for each communication.
+
+* **Layer 3 - Network** (Router)
+* **Layer 2 - Data Link** (Switch)
 
 <hr class="sr">
 
 ## IPV4 addresses
-
-Internet Protocol version 4 (**IPV4**) addresses are **32-bits long addresses**.
-
-<details class="details-e">
-<summary>Dot-decimal notation (<code>Notation décimale pointée</code>, DDN)</summary>
-
-<div class="row row-cols-md-2"><div>
-
-This is the most-known representation of an IPV4 address. We are splitting ours **32 bits** into **4 groups of 8 bits** called **bytes**/octets (`octet`), we are converting them to decimal, and separated with a **dot**.
-
-* Starting with a binary IP <small>(ex: `0101100010[...]01`)</small>
-* We are ending with **n.n.n.n** <small>(with each $n \in \[0,\ 255]$)</small>
-* Example: `127.0.0.1`
-
-</div><div class="align-self-center">
-
-Given this IP (binary): `01001101001000011110000100000000`
-
-* Split into 4 blocs: `01001101`, `00100001`, `11100001`, and `00000000`
-* We convert each bloc: `77`, `33`, `225`, and `0`
-* We separate them with a dot: `77.33.225.0`
-* [Online tool to convert bin to IP](https://www.browserling.com/tools/bin-to-ip)
-</div></div>
-</details>
-
-<details class="details-e">
-<summary>id_net, id_host, and network address</summary>
-
-<div class="row row-cols-md-2"><div>
-
-The bits in the IP address are actually separated into 2 parts
-
-* **id_net**: a fixed part for every address in a network, that is used to identify the network
-* **id_host**: every remaining bit. Pointing to a host in a network, but if there are only null bits (0), then this is the **address of the network**.
-
-You can't guess the number of fixed bits, either it is given by an organism <small>(such as your ISP)</small>, or you are given something called the netmask which is explained a bit further.
-</div><div>
-
-Example: is xxx a network address?
-
-We consider the IP `01001101001000011110000100000000` (`77.33.225.0`). We are told that the fixed part is 17 bits long.
-
-* id_net: `01001101001000011` (17 bits)
-* id_host: `110000100000000` (32-17=15 bits)
-
-The id_host has non-null bits, so it's not a network address.
-</div></div>
-</details>
-
-<details class="details-e">
-<summary>Classless Inter-Domain Routing (CIDR)</summary>
-<div class="row row-cols-md-2"><div>
-
-It is a way to write/share an IP address along the number of bits of the fixed part. The syntax is `IP/n`, such as `192.168.0.0/12`.
-
-* `IP` is the network address
-* `n` is the number of fixed bits
-
-> Traditionally, before CIDR, n could only be 8, 16, or 24. They were called A-class, B-class, and C-class networks, used respectively by big, medium, and small-scale organizations. Unfortunately, there was a very fast shortage of B-class networks, which leads to CIDR which has a flexible network size.
-</div><div>
-
-We have the address `01001101001000011110000100000000` (`77.33.225.0`). We were told that there are 24 fixed bits.
-
-* We are extracting 24 bits from the address: `010011010010000111100001`
-* We are filling the missing bits with `0` (32-24=8): `01001101001000011110000100000000`
-* We are converting the bits to DDN: `77.33.225.0`
-* We are adding `/24`: `77.33.225.0/24`
-
-The CIDR notation is `77.33.225.0/24`.
-</div></div>
-</details>
-
-<details class="details-e">
-<summary>netmask (<code>Masque de sous-réseau</code>)</summary>
-
-<div class="row row-cols-md-2"><div>
-
-This IP address is called a mask, as it was not created to be assigned to a machine, but to find the number of fixed bits in another IP address.
-
-* We are writing $n$ <small>(=number of fixed bits)</small> non-null bits (1)
-* We are filling the remaining bits with null bits (0)
-
-If we know that `77.33.225.0` has 24 fixed bits, then we will write 24 times "1", and 8 <small>(32-24)</small> times "0", giving us `11111111111111111111111100000000` which is `255.255.255.0`.
-</div><div>
-
-It's even easier to find the netmask. <small>Example with `77.33.128.0/17`.</small>
-
-* Calculate $\frac{n}{8}$ (<small>$\frac{17}{8}$ gives us $q=2$, $r=1$</small>)
-* Calculate $c=255-2^{8-r} + 1$ (<small>$c=255-2^{8-1}=128$</small>)
-* The result is
-  * $q$ times $255$ <small>(2 times $255$)</small>
-  * 1 time $c$ <small>(1 times $128$)</small>
-  * and $\min(4-q-1, 0)$ times $0$  <small>(1 times $0$)</small>
-* <small>Giving us $255.255.128.0$</small>
-</div></div>
-</details>
-
-<details class="details-e">
-<summary>broadcast mask (<code>Masque de diffusion</code>)</summary>
-
-<div class="row row-cols-md-2"><div>
-
-This mask is used to send a message to EVERY machine in the network. 
-
-We are simply filling the **id_host** with non-null bits (1).
-</div><div>
-
-Given the IP `77.33.225.0/24`,
-
-* id_net: `010011010010000111100001` (extract 24 bits)
-* id_host: `11111111` (fill last 8 bits with 1)
-
-Giving us `01001101001000011110000111111111` which is `77.33.225.255`.
-</div></div>
-</details>
-
-<div class="row row-cols-md-2"><div>
-
-<details class="details-e">
-<summary>Reserved/Private IP addresses</summary>
-
-There are 3 ranges of IPV4 addresses that are said private/reserved for internal use
-
-* `10.0.0.0/8`
-* `172.16.0.0/12`
-* `192.168.0.0/16`
-</details>
-</div><div>
-</div></div>
 
 <details class="details-e">
 <summary>Subnetwork, subnet, subnetting: divide your network</summary>
@@ -244,39 +118,6 @@ Example: Given $172.16.254.0/23$, we have $N = 23$, and we want to divide our ne
 > **Subnets** are a logical way of dividing a network, while **network segments** are a physical way of doing so.
 </div></div>
 </details>
-
-<hr class="sl">
-
-## IPV6 addresses
-
-<div class="row row-cols-md-2"><div>
-
-The Internet Protocol version 6 (**IPV6**) address is a **128-bit long address**. It was introduced because of the shortage of IPV4. It's also more efficient due to new technologies.
-
-It looks like this: `2002:6963:6961:2046:616c:636f:6e20:3c33`, which is 8 blocks of 16 bits, separated with `:`. Because it's somewhat long, there are a few rules to shorten it
-
-* Any leading $0$ in a block can be removed <small>(`0014 -> 14`)</small>
-* A whole block of $0$ can be replaced with one $0$ <small>(`0000 -> 0`)</small>
-* **One**, and only one suite of null-groups, may be merged in `::` <small>(`...:0000:0000:... -> ...::...`)</small>
-</div><div>
-
-There are 8 kinds of IPV6 addresses
-
-| Type/Name                        | Prefix (128 bits) | IPV6 notation            |
-|----------------------------------|-------------------|--------------------------|
-| Unspecified (`non spécifié`)     | 0...0             | ::/128                   |
-| LoopBack (=localhost)            | 0...01            | ::1/128                  |
-| Multicast (=broadcast)           | 111111110...0     | ff00::/8                 |
-| Multicast (using ARP)            |                   | ff02::/8                 |
-| Link-local Unicast (subnet only) | 1111111110...0    | ff80::/10                |
-| Unique local Unicast (private)   | 11111101...0      | ffd0:://8<br>ffc0::/7    |
-| Global Unicast (Internet)        | ...               | 2001..<br>2002...<br>... |
-</div></div>
-
-<hr class="sr">
-
-* **Layer 3 - Network** (Router)
-* **Layer 2 - Data Link** (Switch)
 
 <hr class="sl">
 
