@@ -66,13 +66,6 @@ If both the switch and the machine try to send a message at the same time, then 
 </details>
 </div><div>
 
-**Network topologies** are different ways of connecting devices in a network.
-
-* **Star Topology**: all devices are connected to a central networking device such as a switch or hub
-
-* **Bus Topology**: a single cable "backbone cable", and all devices connect to the cable. If a lot of packets are sent, the cable most likely be saturated.
-
-* **Ring/Token Topology**: each computer is connected to another one, forming a loop. Packets are only moving in one direction, meaning that sometimes packets will do a whole loop (not efficient). If a computer/cable is faulty, then the loop is broken.
 </div></div>
 
 <hr class="sr">
