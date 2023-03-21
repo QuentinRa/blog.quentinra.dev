@@ -12,7 +12,8 @@ Networking devices are interconnected by cables.
 
 **Layer 7: Application Layer** <small>(data)</small> 🧑
 
-* Proxies
+* [Proxies](devices/proxy.md)
+* Load Balancers
 
 **Layer 6: Presentation Layer** <small>(data)</small> 🔒
 
@@ -29,8 +30,8 @@ Networking devices are interconnected by cables.
 
 **Layer 3: Network Layer** <small>(packets)</small> 🌍
 
-* Routers
-* Gateways/Jumpoint
+* [Routers](devices/routers.md)
+* [Gateways/Jumpoint](devices/gateway.md)
 
 **Layer 2: Data Link Layer** <small>(frames)</small> 🔢
 
