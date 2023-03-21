@@ -108,30 +108,6 @@ Example: Given $172.16.254.0/23$, we have $N = 23$, and we want to divide our ne
 </div></div>
 </details>
 
-<hr class="sl">
-
-## Routing table
-
-<div class="row row-cols-md-2"><div>
-
-When a machine wants to send a packet to another one, the **routing table** will be used to determine
-
-* if we can send the packet directly to the destination
-* or, which machine can we ask to do the delivery
-
-![Routing table](_images/routing_table.png)
-
-You can relate this table to a (switch) case statement that exists in many programming languages.
-
-* The IP will try each destination. The GenMask (Netmask) will be used to get the **network address**. Then, if the IP is within the network range, then we will use this destination.
-* If no destination is found, then `0.0.0.0` , will be used. It's leading to what we call the **Default Gateway**, which is usually ending with either ".1" or ".254".
-</div><div>
-
-Once you found a destination, the **gateway** indicates how you can reach it. If the gateway is `0.0.0.0`, then it means that you can directly send the packet (LAN). Otherwise, you have to send the packet to the IP stored in the field "gateway".
-
-Another thing that you should take note of is **Iface**, which is the network interface that will be used to send the packet.
-</div></div>
-
 <hr class="sr">
 
 ## Network filters
@@ -221,15 +197,11 @@ Other
 
 Notes about protocols
 
-* ISO/OSI. 
-  * Session (divide up the data sent into smaller chunks of data=packets) 
-  * Network (OSPF=Open Shortest Path First) and RIP (Routing Information Protocol). Shortest number of devices, reliable (packet loss?), faster physical connection (fibre/...).
 * Port-forwarding
 * IPV6 EUI64
 
 Notes about devices
 
-* Router: Layer3 (use IP)
 * Switch: Layer2 (use MAC)
 * Switch: Layer3 (use MAC/IP): can do routing
 
