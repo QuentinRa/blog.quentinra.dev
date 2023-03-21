@@ -61,11 +61,17 @@ All devices are only connected to a central networking device (hub or switch), f
 #### Bus Topology 🚌
 
 All devices are connected to a single "backbone" cable also called "bus". If a lot of packets are sent at the same time, the cable most likely be saturated. It's simple and rather cheap to set in place.
+
+#### Point to Point Topology 🤝
+
+Two devices are directly connected to each other. It's limited to two devices, and may be expensive, but is used when there is a need for high-speed and secure communication between two devices. 
 </div><div>
 
-#### Ring/Token Topology 💍
+#### Ring Topology 💍
 
 Each device is connected to another one, forming a loop. Packets are only moving in one direction, meaning that sometimes packets will do a whole loop before reaching their target, which is not efficient, but it also means that there is no collision. If a computer/cable is faulty, then the loop is broken.
+
+➡️ See the "Token ring" protocol.
 
 #### Mesh Topology 🦴
 
@@ -74,6 +80,24 @@ Each device is connected to every other. It's efficient, and resilient, but cost
 #### Hybrid Topology 🤖
 
 Combine two or more network topologies according to the need. It can be harder to maintain, but more appropriate for the company.
+</div></div>
+
+<hr class="sep-both">
+
+## Logical network topology
+
+<div class="row row-cols-md-2"><div>
+
+#### Peer-to-Peer Topology (P2P)
+
+All network devices communicate with each other, without a centralized server (decentralized). It's easy to set up, but not much scalable, as it may become hard to maintain.
+
+➡️ It's sometimes called "Point to Point", by mistake.
+</div><div>
+
+#### Client-Server Topology
+
+Some network devices act as servers, and others as clients. It's the common approach, as client will request file servers/... for resources. It's harder to set up, but easier to maintain.
 </div></div>
 
 <hr class="sep-both">
@@ -89,4 +113,7 @@ Stuff that I found, but never read/used yet.
 * VLANs
 * Router on a stick
 </div><div>
+
+* software-defined networking (SDN) 
+* virtual network functions (VNFs)
 </div></div>

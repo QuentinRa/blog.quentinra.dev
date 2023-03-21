@@ -66,15 +66,6 @@ If both the switch and the machine try to send a message at the same time, then 
 
 <hr class="sr">
 
-## XXX
-
-As a machine may have multiple network cards, or a network card may be connected to multiple networks, you have to determine which interface will be used for each communication.
-
-* **Layer 3 - Network** (Router)
-* **Layer 2 - Data Link** (Switch)
-
-<hr class="sr">
-
 ## IPV4 addresses
 
 <details class="details-e">
@@ -189,10 +180,6 @@ Notes about Virtual Private Network (VPNs)
 Notes about ...
 
 * VLAN (Virtual Local Area Network)
-
-Other
-
-* point to point network
 </div><div>
 
 Notes about protocols
