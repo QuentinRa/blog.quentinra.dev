@@ -1,7 +1,5 @@
 # Networking
 
-We call a network of devices "internet", and what we refer to (THE) "Internet" are many small networks all joined together.
-
 <details class="details-n">
 <summary>Imunes - free open-source network emulator</summary>
 <div class="row row-cols-md-2"><div>
@@ -46,9 +44,6 @@ $ sudo himage <hostname>@<id> <command>
 
 <div class="row row-cols-md-2"><div>
 
-**Wide area network** (WAN, `réseau mondial/étendu`) is every network outside your LAN network.
-
-**Local Area Network** (LAN, `réseau domestique`) is a network established within a limited area, such as your home.
 
 <details class="details-n">
 <summary><b>Ethernet</b>: a cable to connect a device to a Hub/Switch.</summary>

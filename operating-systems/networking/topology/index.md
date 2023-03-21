@@ -1,6 +1,20 @@
 # Network topology
 
+<div class="row row-cols-md-2"><div>
+
 Network topology is the physical or logical layout of a network. It impacts performance, reliability, scalability, and security.
+
+There are a few different kind of networks:
+
+**Local Area Network** (LAN) 🏡: a network established within a limited area, such as your home, or a building. Devices are usually connected using Ethernet or WI-FI.
+</div><div>
+
+**Wide Area Network** (WAN) 🌍: a network made of multiple LAN networks.  What we refer to the Internet is the largest WAN network.
+
+**Virtual Local Area Network** (VLAN) 🎮: a network of devices within a LAN, that are isolated from others devices. This segmentation is usually done to improve security and performances.
+
+➡️ See also: MAN, SAN, and CAN. 
+</div></div>
 
 <hr class="sep-both">
 
@@ -30,7 +44,7 @@ Networking devices are interconnected by cables.
 
 **Layer 3: Network Layer** <small>(packets)</small> 🌍
 
-* [Routers](devices/routers.md)
+* [Routers](devices/router.md)
 * [Gateways](devices/gateway.md)
 
 **Layer 2: Data Link Layer** <small>(frames)</small> 🔢
@@ -39,7 +53,7 @@ Networking devices are interconnected by cables.
 
 **Layer 1: Physical Layer** <small>(stream)</small> 💺
 
-* [Hubs](devices/hubs.md)
+* [Hubs](devices/hub.md)
 * Repeaters
 * Modems
 
@@ -110,10 +124,9 @@ Stuff that I found, but never read/used yet.
 
 * Tree network topology
 * Network Segmentation
-* VLANs
-* Router on a stick
 </div><div>
 
-* software-defined networking (SDN) 
-* virtual network functions (VNFs)
+* Router on a stick
+* Software-Defined Networking (SDN) 
+* Virtual Network Functions (VNFs)
 </div></div>
