@@ -25,10 +25,6 @@ Communications and network are exposed to many risks.
 
 <p class="text-center">👉 Solutions or tools 👈</p>
 
-**Firewalls**: firewall are used to block/allow some traffic based on rules. It's important that the access control rules are well crafted. Both the rules and the firewall must be up-to-date.
-
-➡️ A firewall can be stateless <small>(check every packet)</small>, or stateful <small>(check the session/connection)</small>.
-
 ➡️ See IDS/IPS such as [pfsense](https://www.pfsense.org/), [snort](https://www.snort.org/) or [suricata](https://suricata.io/).
 
 **Traffic mirroring**: this feature is available on many network switches. It allows us to copy the incoming and ongoing traffic to a monitored device such as a network analyzer or an IDS.
