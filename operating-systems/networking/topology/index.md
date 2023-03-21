@@ -31,11 +31,11 @@ Networking devices are interconnected by cables.
 **Layer 3: Network Layer** <small>(packets)</small> 🌍
 
 * [Routers](devices/routers.md)
-* [Gateways/Jumpoint](devices/gateway.md)
+* [Gateways](devices/gateway.md)
 
 **Layer 2: Data Link Layer** <small>(frames)</small> 🔢
 
-* Switches
+* [Switches](devices/switch.md)
 
 **Layer 1: Physical Layer** <small>(stream)</small> 💺
 
@@ -83,5 +83,10 @@ Combine two or more network topologies according to the need. It can be harder t
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
+
+* Tree network topology
+* Network Segmentation
+* VLANs
+* Router on a stick
 </div><div>
 </div></div>

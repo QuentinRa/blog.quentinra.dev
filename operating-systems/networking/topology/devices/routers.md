@@ -15,7 +15,7 @@ It routes packets, meaning, it selects the best path to send traffic. This choic
 
 👉 These algorithms are using information such as the shortest number of devices to reach the target (hops), the reliability of the path <small>(are packet often lost?)</small>, the network speed <small>(fibre?)</small>...
 
-A router can perform other operations such as 📥 converting local addresses <small>(ex: 192.168.0.\*)</small> 📤 to "world" addresses <small>(ex: 77.225.89.\*)</small>, or filter packets based on rules...
+A router can perform other operations such as 📥 converting local addresses <small>(ex: 192.168.0.\*)</small> 📤 to "world" addresses <small>(ex: 77.225.89.\*)</small>, or filter packets based on rules... See [Gateways](gateway.md).
 </div></div>
 
 <hr class="sl">
