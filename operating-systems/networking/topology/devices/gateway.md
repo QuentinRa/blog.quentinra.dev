@@ -4,17 +4,17 @@
 
 <div class="row row-cols-md-2"><div>
 
-Gateways, also rarely called Jumpoint, are devices connecting two networks. A gateway is similar to a [router](router.md), aside from the fact that is cannot do routing.
+A gateway is a device that serves connecting two or more networks. It's mostly used to connect networking using different protocols or technologies.
 
-⚠️ The logical notion of "gateway" used in routing table, refer to another network device, such as a Router, not necessarily a Gateway.
+➡️ Extremely rarely, a Gateway may be called "Jumpoint".
 </div><div>
 
-Both routers and gateways can do:
+A gateway can:
 
 * 👮 filter incoming/outgoing traffic
-* 🌫️ block traffic/hide a sender
+* ⛔ block traffic
+* 🌫️ translate addresses/hide the sender
 * 💵 Prioritize traffic
-* 🔮 Convert protocols
 * ...
 </div></div>
 
