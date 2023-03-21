@@ -1,51 +1,6 @@
 # Networking
 
 <details class="details-n">
-<summary>Imunes - free open-source network emulator</summary>
-<div class="row row-cols-md-2"><div>
-
-[**imunes**](http://imunes.net/) is a free open-source network emulator in which you can create nodes (hosts, switches, routers...), connect them, add rules (see iptables), and send requests from one computer to another, mostly to test your network configuration.
-
-```bash
-$ sudo imunes &
-```
-
-You may have multiple sessions.
-
-```bash
-$ imunes image -l # list
-$ imunes -b -e <id> # kill
-```
-
-> There are a lot of newer (and better?) alternatives...
-</div><div>
-
-Using the graphical interface
-
-* <kbd>experiment | execute</kbd>: run simulation
-* <kbd>experiment | terminate</kbd>: terminate simulation
-* <kbd>double-click on a host</kbd>: open a terminal on the host
-* <kbd>right-click on a node | configure</kbd>: setup rules <small>(routing, ARP)</small>
-  * enable "custom startup config"
-  * enable "editor | create | fill default"
-  * then use your head
-
-You can run a command on a machine from the terminal with
-
-```bash
-$ sudo himage <hostname>@<id> <command>
-```
-</div></div>
-</details>
-
-<hr class="sl">
-
-## LAN, and WAN networks
-
-<div class="row row-cols-md-2"><div>
-
-
-<details class="details-n">
 <summary><b>Ethernet</b>: a cable to connect a device to a Hub/Switch.</summary>
 
 Instead of connecting nodes/devices to each other, they all are connected to a switch/hub using Ethernet (norm IEE 802.3). They are using a technique called "Carrier sensitive multiple access with collision detection", or **CSMA/CP** in short, to handle collisions.
@@ -55,9 +10,6 @@ If both the switch and the machine try to send a message at the same time, then 
   * each network card has its own delay before sending a message again
   * the machine/switch sends the message first, and there is hopefully no problem this time
 </details>
-</div><div>
-
-</div></div>
 
 <hr class="sr">
 
