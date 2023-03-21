@@ -40,12 +40,14 @@ Networking devices are interconnected by cables.
 **Layer 4: Transport Layer** <small>(segment/datagram)</small> 📫
 
 * Load Balancers
+* [Network Firewall](devices/firewall.md)
 </div><div>
 
 **Layer 3: Network Layer** <small>(packets)</small> 🌍
 
 * [Routers](devices/router.md)
 * [Gateways](devices/gateway.md)
+* [Network Firewall](devices/firewall.md)
 
 **Layer 2: Data Link Layer** <small>(frames)</small> 🔢
 
