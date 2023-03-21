@@ -11,10 +11,6 @@ If both the switch and the machine try to send a message at the same time, then 
   * the machine/switch sends the message first, and there is hopefully no problem this time
 </details>
 
-<hr class="sr">
-
-## IPV4 addresses
-
 <details class="details-e">
 <summary>Subnetwork, subnet, subnetting: divide your network</summary>
 
@@ -46,63 +42,6 @@ Example: Given $172.16.254.0/23$, we have $N = 23$, and we want to divide our ne
 </div></div>
 </details>
 
-<hr class="sr">
-
-## Network filters
-
-<div class="row row-cols-md-2"><div>
-
-Network filters are behaviors applied to a packet matching predefined rules. This section will highly refer to the command `iptables`. 
-
-This command is using tables, the most widely used are **filter packets** (filter), and **network address translation** (NAT). Each table is made of sets of **chains** which are statements "`<expression> <action>`"
-
-* `expression`: is a condition, that if false, will trigger action
-* `action`: an action on the packet (filter/NAT), or another chain
-</div><div>
-
-<details class="details-e">
-<summary>Table "filter"</summary>
-
-This table is used to accept, or drop a packet. There are 3 chains, according to what packets are doing
-
-* **FORWARD**: packets are transiting/passing by this machine
-* **INPUT**: packets that have this machine for destination
-* **OUTPUT**: packets that have been emitted from this machine
-
-And you have actions such as **ACCEPT/DENY/DROP/...** to drop a packet. 
-
-For instance, this command will DROP any packet using the protocol TCP, on the port 22, which has our machine as the destination, emitted by `172.16.1.1`.
-
-```bash
-$ sudo iptables -t filter -A INPUT -s 172.16.1.1 -p tcp --dport 22 -j DROP
-```
-</details>
-
-<details class="details-e">
-<summary>Table "NAT"</summary>
-
-This table is used to modify the IP_SRC, or IP_DEST, usually referred to as translating, mostly to allow machines to communicate with each other, without being aware of which machine they are communicating with.
-
-![NAT](_images/nat.png)
-
-In the schema above, host1 wants to allow PC1, and PC2 to communicate, but doesn't want PC2 to know that messages are from PC1. When host1 receives a message from PC1, it will replace PC1 address (source) with its own address, and send it to PC2. When receiving a reply from PC2, it will replace its address (dest) with PC1 address, and send the reply to PC1. 
-
-Another case, is that if a machine inside your network is sending a message to the outside world, instead of exposing your machines' IP addresses, you could only expose your host IP address by using NAT. 
-
-There are 3 chains
-
-* **POSTROUTING**: change source (action: SNAT)
-* **PREROUTING**: change destination (action: DNAT)
-* **OUTPUT**: applied on locally generated packets
-
-For instance, this command will hide the IP addresses of pc1, and pc2, using host1 IP address (50.50.50.50), when they are sending a packet to the world using the network interface "eth2".
-
-```bash
-$ sudo iptables -t NAT -A POSTROUTING -o eth2 -j SNAT --to-source 50.50.50.50
-```
-</details>
-</div></div>
-
 <hr class="sep-both">
 
 ## 👻 To-do 👻
@@ -117,31 +56,7 @@ Websites
 * [faidherbe](https://www.faidherbe.org/tutoriel/)
 * [Request-response](https://en.wikipedia.org/wiki/Request%E2%80%93response)
 
-Notes about Virtual Private Network (VPNs)
-
-* Create a secure tunnel allowing devices on different networks to communicate.
-* PPP (internal VPNs using public/private key)
-* PPTP use PPP, Point-to-Point Tunneling Protocol, allow leave network
 * IPSec Internet Protocol Security (IPsec) encrypts data using the existing Internet Protocol (IP) framework.
-
-Notes about ...
-
-* VLAN (Virtual Local Area Network)
-</div><div>
-
-Notes about protocols
-
 * Port-forwarding
-* IPV6 EUI64
-
-Notes about devices
-
-* Switch: Layer2 (use MAC)
-* Switch: Layer3 (use MAC/IP): can do routing
-
-Notes about security
-
-* Access Control List (ACL): rules determining which traffic is allowed/not allowed.
-* Streaming network telemetry (modern SNMP?)
-* Network Access Control (used with SNMP?)
+</div><div>
 </div></div>

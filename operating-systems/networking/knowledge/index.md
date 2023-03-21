@@ -192,13 +192,21 @@ Stuff that I found, but never read/used yet.
 * [Old - Commands](../_old/commands/linux/index.md)
 * [Old - Security](../_old/security/index.md)
 * see SRM notes
+* IPV6 EUI64 (texas)
+
+VPN
+
+* Create a secure tunnel allowing devices on different networks to communicate.
+* PPP (internal VPNs using public/private key)
+* PPTP use PPP, Point-to-Point Tunneling Protocol, allow leave network
 </div><div>
 
-Network
+Network segmentation
 
-* E/W = between two apps
-* N/S = with the internet
-* Firewall => NGFW AMP Duo Email ISE Umbrella Enpoint Web Workload Services
-* Cloud FW/SASE
-* segmentation
+* VRFs (Virtual Routing and Forwarding)
+
+Random
+
+* Streaming network telemetry
+* Network Access Control
 </div></div>

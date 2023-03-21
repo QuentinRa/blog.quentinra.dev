@@ -116,17 +116,36 @@ Some network devices act as servers, and others as clients. It's the common appr
 
 <hr class="sep-both">
 
+## Networking segmentation
+
+<div class="row row-cols-md-2"><div>
+
+Segmenting a large network into smaller networks if often used in security to isolate each subnetwork, and apply separate security controls to each of them 🔎.
+
+It can also be done to make it easier to manage a group of machines, or to improve performances.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+Topologies
+
 * Tree network topology
-* Network Segmentation
+* Software-Defined Networking (SDN)
+* Virtual Network Functions (VNFs)
 </div><div>
 
+Devices
+
 * Router on a stick
-* Software-Defined Networking (SDN) 
-* Virtual Network Functions (VNFs)
 </div></div>
