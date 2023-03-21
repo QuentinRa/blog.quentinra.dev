@@ -28,10 +28,24 @@ Some elements that are involved, shown in the simplified schema:
 
 <div class="row row-cols-md-2"><div>
 
-...
+#### IP addresses 🌍
+
+An IP address is a unique identifier assigned to each device on a network. It's used to locate a device on the network. There are two kind of IP addresses:
+
+* [IPV4](ip/ipv4.md): a 32 bits address
+* [IPV6](ip/ipv6.md): a 128 bits address
+
+There is a shortage of IPV4 since many years, due to the great amount of connected devices, leading to a shift from IPV4 to IPV6.
 </div><div>
 
-...
+#### MAC address 🏠
+
+A media access control address (MAC address) is a unique address set by the network interface vendor.
+
+This is a 6-bytes-long address such as `ff:ff:ff:ff:ff:ff` with 12 hexadecimal characters, separated by a colon.
+
+* The first 6 characters are identifying the vendor/manufacturer. This is called a [OUI](http://standards-oui.ieee.org/oui/oui.txt) <small>(Organizationally unique identifier)</small>.
+* The last 6 characters are the unique address
 </div></div>
 
 <hr class="sep-both">
@@ -91,9 +105,9 @@ The Open Systems Interconnection (**OSI**) model is a standardized representatio
 * **Layer 1 - Physical**: binary to signals
 
 A computer generate a message at a layer. The message go down every layer until it's sent 📩. When a computer receives a message, it will go up every layer in reverse order 📖.
-</div><div>
 
 Each time a message go down, a header is added. This is called **encapsulation** 📥. When it goes up, it's called **de-encapsulation** 📤.
+</div><div>
 
 The **Protocol Data Unit** 📜 (PDU) is generated at each layer. It's both the layer protocol headers, and the previous PDU as the data, which is usually called **payload**.
 

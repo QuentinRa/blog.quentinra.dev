@@ -81,25 +81,6 @@ If both the switch and the machine try to send a message at the same time, then 
 
 As a machine may have multiple network cards, or a network card may be connected to multiple networks, you have to determine which interface will be used for each communication.
 
-<hr class="sl">
-
-## MAC address
-
-<div class="row row-cols-md-2"><div>
-
-A **media access control address (MAC address)** is a **unique (physical) address** associated with the network card (`carte réseau`) which the machine uses to connect itself to the internet.
-
-* Can be [spoofed](https://en.wikipedia.org/wiki/MAC_spoofing) <small>(some hacker can usurp your MAC)</small>
-* The IP identifies our machine within a network, but if we move to another network, then we will receive a new IP address. That's why we need something that does not change, such as the MAC address.
-
-</div><div>
-
-This is a 6-bytes-long address such as `ff:ff:ff:ff:ff:ff` with 12 hexadecimal characters, separated by a colon.
-
-* The first 6 characters are identifying the vendor/manufacturer. This is called a [OUI](http://standards-oui.ieee.org/oui/oui.txt) <small>(Organizationally unique identifier)</small>.
-* The last 6 characters are the unique address
-</div></div>
-
 <hr class="sr">
 
 ## IPV4 addresses
