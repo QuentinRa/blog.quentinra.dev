@@ -54,6 +54,7 @@ Networking devices are interconnected by cables.
 **Layer 1: Physical Layer** <small>(stream)</small> 💺
 
 * [Hubs](devices/hub.md)
+* [Ethernet](devices/ethernet.md)
 * Repeaters
 * Modems
 
