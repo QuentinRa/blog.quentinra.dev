@@ -23,8 +23,11 @@ Stuff that I found, but never read/used yet.
   * Pretexting/Roleplaying
   * Dumpster Diving
   * Baiting
+* Shoulder surfing
+* Vishing
 </div><div>
 
+* Smishing
 * Homoglyph
 * Serveur Open Mail Relay
 * Spam
