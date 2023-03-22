@@ -22,3 +22,19 @@ If a new device with no address IP is connecting to the network
 
 ➡️ DNS server can also store network information such as default gateways, other DNS servers addresses...
 </div></div>
+
+<hr class="sep-both">
+
+## DHCP vulnerabilities
+
+<div class="row row-cols-md-2"><div>
+
+* **Rogue DHCP server attacks**
+
+👉 An attacker set up a fake DHCP providing fake IP addresses to clients 💥 IP conflicts, MITM ➡️ See DHCP snooping and dynamic ARP inspection (DAI).
+</div><div>
+
+* **DHCP snooping attacks**
+
+👉 An attacker intercept DHCP traffic to monitor it, and potentially prepare an attack. ➡️ See DHCPv6.
+</div></div>

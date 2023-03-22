@@ -37,3 +37,21 @@ There are two kind of messages:
 * IP source (target IP)
 * IP destination (requester IP)
 </div></div>
+
+<hr class="sep-both">
+
+## ARP vulnerabilities
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+* **ARP cache poisoning**
+
+👉 An attacker send its MAC address to usurp the identity of a legitimate IP address. ➡️ You can use static ARP tables...
+</div><div>
+
+* **ARP spoofing**
+
+👉 Similar to ARP cache poisoning, but the attacker only eavesdrops the traffic. ➡️ Use encryption/... to prevent unauthorized access to the network.
+
+DHCP servers are used to assign an IP address to a host, and may keep track of IP addresses of DNS servers and domain names, and additional information such as default gateways/...
+</div></div>

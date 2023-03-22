@@ -47,3 +47,23 @@ There are sequence numbers and ack numbers on every message. The first SYN has a
 * 0 to 40 bytes for "options" (optional)
 
 </div></div>
+
+<hr class="sep-both">
+
+## TCP vulnerabilities
+
+<div class="row row-cols-md-2"><div>
+
+* **SYN Flood Attack**
+
+👉 An attacker send mass SYN requests creating many half-open connections and slowing down the target. 💥 DoS ➡️ Limit-rate the number of SYN packets accepted per second.
+
+* **TCP Reset Attack**
+
+👉 An attacker send RST to terminate legitimate connections to disrupt service. ➡️ Protect TCP connections <small>(ex: filters, encryption...)</small>.
+</div><div>
+
+* **TCP Session Hijacking**
+
+👉 An attacker steal a session by stealing or guessing the session ID. ➡️ Use encryption, timeouts, forbid many active sessions...
+</div></div>

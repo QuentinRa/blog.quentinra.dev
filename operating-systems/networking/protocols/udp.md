@@ -29,3 +29,19 @@ It's not trustworthy:
 * 2 bytes for the "size of the message"
 * 2 bytes for the "checksum of the message"
 </div></div>
+
+<hr class="sep-both">
+
+## TCP vulnerabilities
+
+<div class="row row-cols-md-2"><div>
+
+* **UDP Checksum Attack**
+
+👉 An attacker manipulates the checksum allowing tampered packets to by accepted. ➡️ Use encryption <small>(IPSec, a VPN...)</small>.
+
+* **UDP Flood Attack**
+
+👉 An attacker send many UDP requests to slowdown or overwhelm the target. 💥 DoS ➡️ Setup filtering, rate-limiting...
+</div><div>
+</div></div>

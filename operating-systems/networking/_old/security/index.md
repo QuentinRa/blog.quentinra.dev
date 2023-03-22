@@ -75,87 +75,9 @@ The set of protocols that make up the TCP/IP suite, a.k.a. as the TCP/IP protoco
 
 <hr class="sep-both">
 
-## ICMP security
-
-<div class="row row-cols-md-2 mt-3"><div>
-
-ICMP (Internet Control Message Protocol) is mainly used to communicate status <small>(host up...)</small> or errors <small>(host unreachable...)</small>, but it can also be used in attacks.
-
-* **Echo request and reply ICMP**
-
-👉 The attacker send an echo request to check if the host is up. Even if the attacker may further attack even if there is no reply and assuming that the host is up, the reply help in confirming it. 💥 DoS with a flood of echo requests. ➡️ Limit ICMP requests to specific hosts/subnets, as disabling them may be problematic.
-
-* **ICMP unreachable**
-
-👉 Used in reconnaissance to gain information on the network <small>(ex: open ports/services...)</small>. ➡️ Configure hosts to not respond.
-</div><div>
-
-* **ICMP mask reply**
-
-👉 The attacker ask an host about its subnet mask, and may use it to map an internal network. ➡️ Configure hosts to not respond.
-
-* **ICMP redirection**
-
-👉 Redirect traffic to a target host through a compromised device. 💥 MITM ➡️ Disable ICMP Redirect messages.
-
-* **ICMP router discovery**
-
-👉 Add false routing entries to the routing table, so that the host send traffic to the wrong destination. ➡️ Disable ICMP router messages.
-</div></div>
-
-<hr class="sep-both">
-
-## TCP and UDP security
-
-<div class="row row-cols-md-2 mt-3"><div>
-
-* **SYN Flood Attack**
-
-👉 An attacker send mass SYN requests creating many half-open connections and slowing down the target. 💥 DoS ➡️ Limit-rate the number of SYN packets accepted per second.
-
-* **TCP Reset Attack**
-
-👉 An attacker send RST to terminate legitimate connections to disrupt service. ➡️ Protect TCP connections <small>(ex: filters, encryption...)</small>.
-
-* **TCP Session Hijacking**
-
-👉 An attacker steal a session by stealing or guessing the session ID. ➡️ Use encryption, timeouts, forbid many active sessions...
-</div><div>
-
-* **UDP Checksum Attack**
-
-👉 An attacker manipulates the checksum allowing tampered packets to by accepted. ➡️ Use encryption <small>(IPSec, a VPN...)</small>.
-
-* **UDP Flood Attack**
-
-👉 An attacker send many UDP requests to slowdown or overwhelm the target. 💥 DoS ➡️ Setup filtering, rate-limiting...
-</div></div>
-
-<hr class="sep-both">
-
 ## ARP, DHCP, and DNS security
 
 <div class="row row-cols-md-2"><div>
-
-ARP is used to map an IP address to a MAC address.
-
-* **ARP cache poisoning**
-
-👉 An attacker send its MAC address to usurp the identity of a legitimate IP address. ➡️ You can use static ARP tables...
-
-* **ARP spoofing**
-
-👉 Similar to ARP cache poisoning, but the attacker only eavesdrops the traffic. ➡️ Use encryption/... to prevent unauthorized access to the network.
-
-DHCP servers are used to assign an IP address to a host, and may keep track of IP addresses of DNS servers and domain names, and additional information such as default gateways/...
-
-* **Rogue DHCP server attacks**
-
-👉 An attacker set up a fake DHCP providing fake IP addresses to clients 💥 IP conflicts, MITM ➡️ See DHCP snooping and dynamic ARP inspection (DAI).
-
-* **DHCP snooping attacks**
-
-👉 An attacker intercept DHCP traffic to monitor it, and potentially prepare an attack. ➡️ See DHCPv6.
 </div><div>
 
 DNS servers are used to map a domain to an IP address.

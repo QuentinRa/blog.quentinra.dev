@@ -30,3 +30,31 @@ Each code is associated with a type. Here are some of them (code: type). See [Co
 * `8`: echo
 * `11`: time exceeded
 </div></div>
+
+<hr class="sep-both">
+
+## ICMP vulnerabilities
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+* **Echo request and reply ICMP**
+
+👉 The attacker send an echo request to check if the host is up. The attacker may further attack even if there is no reply, while assuming that the host is up, but the reply help in confirming it. 💥 DoS with a flood of echo requests. ➡️ Limit ICMP requests to specific hosts/subnets, as disabling them may be problematic.
+
+* **ICMP unreachable**
+
+👉 Used in reconnaissance to gain information on the network <small>(ex: open ports/services...)</small>. ➡️ Configure hosts to not respond, but it's not recommended.
+</div><div>
+
+* **ICMP mask reply**
+
+👉 The attacker ask an host about its subnet mask, and may use it to map an internal network. ➡️ Configure hosts to not respond. Mostly disabled by default on modern devices.
+
+* **ICMP redirection**
+
+👉 Redirect traffic to a target host through a compromised device. 💥 MITM ➡️ Disable ICMP Redirect messages.
+
+* **ICMP router discovery**
+
+👉 Add false routing entries to the routing table, so that the host send traffic to the wrong destination. ➡️ Disable ICMP router messages. Mostly disabled by default on modern devices.
+</div></div>
