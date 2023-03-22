@@ -207,4 +207,39 @@ SSL certificates (SSL deprecated, TLS more secure, SSL/TLS)
 * `nmap -p T:443` (TCP/443)
 * `nmap -p U:53` (UDP/53)
 * `nmap --log-errors`
+
+XXX
+
+* ARP, no auth, poisoning
+* DHCP, hacker answer before DHCP server
+* DNS poisoning
+* Cain and abel
+* Ettercap
+* pfsense > snort package
+</div></div>
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-md-2"><div>
+
+Secure software: protect the information while allowing the company to operate.
+
+* Security must be documented
+* Security varies according to the context (adapted, technology, reglementations)
+* The cost must be proportional to the security control
+* Security controls must be testable/proovable
+* See metrics
+
+XXX
+
+* Who's the target? What's the data manipulated (s/c)? What's the access control rules? risks? norms? audits?
+* Microsoft Security Development Lifecycle (helper)
+* OWASP SAMM (helper)
+* BSIMM (metric tool)
+* IDaaS (OpenID), based on SAML
+</div><div>
+
+...
 </div></div>
