@@ -105,10 +105,14 @@ They can be used on many types of network devices. There are two types of ACLs:
 * ⛔ **Extended ACLs**: filter based on the source and destination IP address and port, the protocol...
 </div><div>
 
-...
-</div></div>
+Extended ACLs are usually placed near the source of the traffic, preventing the forbidden traffic to leave the subnet. 
 
-<hr class="sep-both">
+👉 Avoid useless bandwidth usage.
+
+Standard ACLs are usually placed near the destination of the traffic, and they filter based on the source, regardless of the destination. 
+
+👉 We only define the source, so we need to ensure only allowed sources are allowed.
+</div></div>
 
 <hr class="sep-both">
 
@@ -152,7 +156,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [old](../_old/security/index.md)
 * Advanced Malware Protection (AMP)
 * Duo (two-factor)
 * Identity Services Engine (ISE)

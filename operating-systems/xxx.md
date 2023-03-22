@@ -186,3 +186,20 @@ SSL certificates (SSL deprecated, TLS more secure, SSL/TLS)
 
 ...
 </div></div>
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-md-2"><div>
+
+* Between two companies
+* Between an employee and the company
+* ...
+* Layer 3 - IPsec VPN
+* Remote-Site VPN
+* Site-à-Site VPN (client with no knowledge, connect to a VPN device)
+</div><div>
+
+...
+</div></div>
