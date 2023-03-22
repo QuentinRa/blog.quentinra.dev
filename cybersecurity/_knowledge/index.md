@@ -33,4 +33,10 @@ XXX
 
 * threatmap
 * ShadowServer
+
+NFS/SAMBA
+* Can be used for lateral movement
+* Can be used for data exfiltration
+* Can be used during investigation to access (sensitive?) data
+* Can be used for privilege escalation
 </div></div>

@@ -115,4 +115,12 @@ Stuff that I found, but never read/used yet.
 * [An Introduction to DNS Terminology, Components, and Concepts
   (digitalocean)](https://www.digitalocean.com/community/tutorials/an-introduction-to-dns-terminology-components-and-concepts)
 </div><div>
+
+* dig/nslookup
+* host
+* dnsrecon
+* fierce
+* dnsenum
+* dnswalk
+* dnsmap
 </div></div>

@@ -27,7 +27,7 @@ Security controls are determined based on the type of traffic.
 
 **Sniffing** 🐛: without or with a weak encryption, an actor can listen to exchanged packets, to learn more about the network architecture, and to find the weak point.
 
-**Spoofing** 🪪: an actor can usurp another machine identity to fake messages coming from the victim.
+**Spoofing** 🪪: an actor can usurp another machine identity to fake messages coming from the victim <small>(ex: MAC spoofing)</small>.
 
 **Tampering** 😈: without integrity checks, an actor can tamper with messages without the sender/receiver being aware of it
 
@@ -149,7 +149,7 @@ The set of protocols that make up the TCP/IP suite, a.k.a. as the TCP/IP protoco
 
 👉 It's difficult to find the source because it can be spoofed. ➡️ Implement logging and auditing to track network traffic.
 
-* **Non-repudiation** <small>(user dening having performed some action)</small>
+* **Non-repudiation** <small>(user denying having performed some action)</small>
 
 👉 IP addresses can be spoofed. 💥 The hacker claim that someone else used his IP for the attack.  ➡️ Use digital signatures and encryption to ensure that we know who sent the packet.
 </div></div>
@@ -168,4 +168,20 @@ Stuff that I found, but never read/used yet.
 * Umbrella
 * Secure Access Service Edge (SASE)
 </div><div>
+
+Firewall applicative
+
+* Application-level gateway (FTP, SIP, or HTTP)
+
+Access
+
+* Network Access Control (NAC): allow based on user+device
+* Data Loss Prevention (DLP): deny access to sensitive data
+
+Endpoint Protection
+
+* antivirus
+* anti-malware
+* intrusion prevention
+
 </div></div>

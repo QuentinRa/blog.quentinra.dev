@@ -187,7 +187,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [Old - Commands](../_old/commands/linux/index.md)
 * see SRM notes
 * IPV6 EUI64 (texas)
 

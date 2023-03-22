@@ -50,3 +50,19 @@ ftp> stat # same, but there is the version+ftp client name
 
 ➡️ If `put/get` keep failing, try moving to the target folder first.
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* weak passwords
+* anonymous access
+* misconfigured permissions
+</div><div>
+
+
+</div></div>
