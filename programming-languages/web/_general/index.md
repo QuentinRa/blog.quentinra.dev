@@ -190,6 +190,8 @@ URL
 * Scheme: (protocol) HTTP/HTTPS/...
 * Username:Password@Domain:port/Path?query#Fragment_or_Hash
 ```
+
+* [SSI](https://en.wikipedia.org/wiki/Server_Side_Includes)
 </div><div>
 
 * [Postfix](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-debian-10) to send mails. See also DMarc, SPF, DKim, and [mail-tester.com](https://www.mail-tester.com/) <small>(wait XXX hours for DNS records changes)</small>.

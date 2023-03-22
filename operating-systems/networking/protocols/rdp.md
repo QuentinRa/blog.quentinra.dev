@@ -1,8 +1,4 @@
-# Remote desktop access
-
-<hr class="sep-both">
-
-## Remote Desktop Protocol (RDP)
+# Remote Desktop Protocol (RDP)
 
 <div class="row row-cols-md-2"><div>
 

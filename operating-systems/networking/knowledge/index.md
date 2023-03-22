@@ -74,16 +74,15 @@ The loopback interface is used by local applications to share data between thems
 A port is a virtual messaging channel which is only associated with **one protocol**, such as `22` associated with `SSH`. This association allows a machine to correctly handle a message using the correct protocol.
 
 * 🗃️ There are 65535 <small>(or in short $2^{16}$)</small> available ports
+* 🔒 The first 1024 ports are called "well-known/system ports"
+* ☘️ Ports 1024 to 49151 are called "registered ports"
+* 🍀 Ports 1024 to 49151 are called "dynamic/private ports"
 
-* 🔒 The first 1024 ports are called "standard ports"
-
-* 🗺️ List of [TCP/UDP ports](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers) and their protocols
+🗺️ List of [TCP/UDP ports](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers) and their protocols.
 
 * 🤔 Protocols can be assigned to another port <small>(security)</small>
-
 * ✅ Ports can be "open", "filtered" <small>(firewall)</small>, and "closed"
-
-* 🍸 A port can, according to the protocol, receive TCP, UDP, TCP and UDP... messages.
+* 🍸 A port can, according to the protocol, receive TCP, UDP, or TCP and UDP... messages.
 </div></div>
 
 <hr class="sep-both">
@@ -137,15 +136,15 @@ Each protocol can be represented using a [Message Sequence Chart](https://en.wik
 
 **Layer 7: Application Layer** <small>(data)</small> 🧑
 
-* [File transfer](../protocols/file-transfer.md): FTP, SFTP, SCP
-* [Mail transfer](../protocols/mail-transfer.md): SMTP, POP3, IMAP
-* [Web requests](../protocols/web-requests.md): HTTP, HTTPS
-* [Remote shell access](../protocols/remote-shell.md): SSH, telnet
-* [Remote desktop access](../protocols/remote-desktop.md): RDP
-* [Domain resolution](../protocols/dns.md): DNS
-* [Network file system](../protocols/file-system.md): NFS, Samba
-* [IP addresses lease](../protocols/dhcp.md): DHCP
-* [Network Management](../protocols/snmp.md): SNMP
+* File transfer 📂: [FTP](../protocols/ftp.md), [SFTP](../protocols/sftp.md), or [SCP](../protocols/scp.md)
+* Mail transfer 📫: [SMTP](../protocols/smtp.md), [POP3](../protocols/pop3.md), [IMAP](../protocols/imap.md)
+* Web requests 🌍: [HTTP](../protocols/http.md)
+* Remote shell access 🧑‍💻: [SSH](../protocols/ssh.md), or [telnet](../protocols/telnet.md)
+* Remote desktop access 💻: [RDP](../protocols/rdp.md)
+* Domain resolution 📍: [DNS](../protocols/dns.md)
+* Network file system 🗃️: [NFS](../protocols/nfs.md), or [Samba](../protocols/samba.md)
+* IP addresses lease 🎯: [DHCP](../protocols/dhcp.md)
+* Network Management 🧼: [SNMP](../protocols/snmp.md)
 
 </div><div>
 

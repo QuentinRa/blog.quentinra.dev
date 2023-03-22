@@ -72,14 +72,7 @@ Distributed: one machine for each.
 * variants: some pre-computation of the presentation near the core
 
 Between app and storage: ODBC, JDBC, ADO, Java beans...
-
-Between presentation and app: Sockets, RPC, TCP/UDP, HTML/SHTML...
 </div><div>
-
-Point to Point. N systems directly linked to n others. If we change one, we need to change xxx connections too.
-
-Bus: everyone only interact with a bus. Only two connections to handle.
-
 Sync/Async. Async: with a bus and its database. Each actor ask the bus, but the bus isn't the one initiating the request.
 
 Sync on event: X send data to bus, bus store it. Y and Z subscribe to the bus for events. X trigger an event. The bus notify subscribers. If offline, the bus keep the message until subscriber notify the bus that they are back. Producer-consumer subscriber?
@@ -89,23 +82,6 @@ Messages: binaries. Fixed-size format. csv. xml. json. OAS (swagger OpenAPI).
 Service Oriented Architecture. SOAP/WSDL (services), Rest (resources), OData (Open Data). micro-services.
 
 Between companies: Point-to-point > EDI standard > API.
-</div></div>
-
-<hr class="sep-both">
-
-## W
-
-<div class="row row-cols-md-2"><div>
-
-OSI
-
-* session: between apps
-* transport: between computers
-* 1024 to 49151: reserved
-* dynamic ports
-</div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">

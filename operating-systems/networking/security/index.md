@@ -5,7 +5,7 @@
 **Common security controls** 🛫
 
 * Disable insecure/unused services/protocols
-* Remote connections <small>(timeout, max number of connections, disable internet if not required, use strong passwords or a certificate...)</small>
+* Secure remote connections <small>(timeout, max number of connections, disable internet if not required, use strong passwords or a certificate...)</small>
 * Harden network interfaces <small>(timeout/keepalive, ACLs...)</small>
 * Change default parameters <small>(WPA, SSID, SNMP...)</small>
 * ...

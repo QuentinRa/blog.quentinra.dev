@@ -1,8 +1,4 @@
-# Web requests
-
-<hr class="sep-both">
-
-## Hypertext Transfer Protocol (HTTP)
+# Hypertext Transfer Protocol (HTTP)
 
 <div class="row row-cols-md-2"><div>
 
