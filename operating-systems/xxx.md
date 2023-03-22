@@ -201,5 +201,10 @@ SSL certificates (SSL deprecated, TLS more secure, SSL/TLS)
 * Site-à-Site VPN (client with no knowledge, connect to a VPN device)
 </div><div>
 
-...
+* `nmap *.*.*.*`
+* `nmap *.*.*.* --exclude x.x.x.x`
+* `nmap -sA x.x.x.x` (filtered/unfiltered)
+* `nmap -p T:443` (TCP/443)
+* `nmap -p U:53` (UDP/53)
+* `nmap --log-errors`
 </div></div>

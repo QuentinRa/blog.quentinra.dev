@@ -47,7 +47,7 @@ Scanning and enumeration
 Network mapping
 
 * [ping]() 🥅: ...
-* [traceroute and tracepath]() 🥅: ...
+* [traceroute/tracepath/tracert]() 🥅: ...
 </div><div>
 
 Vulnerabilities scanners
@@ -72,6 +72,8 @@ Stuff that I found, but never read/used yet.
 * QualysGuard
 * Acunetix
 * Nexpose
+* Retina (network vulnerability scanner)
+* Nipper
 </div><div>
 
 * Medusa
@@ -83,5 +85,6 @@ Stuff that I found, but never read/used yet.
 * Aircrack-ng
 * Reaver
 * Kismet
+* MBSA
 * [Cain and Abel](https://github.com/xchwarze/Cain)
 </div></div>

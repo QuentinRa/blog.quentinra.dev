@@ -89,7 +89,7 @@ A Demilitarized Zone (DMZ) is a physical or logical subnet separating two networ
 
 <hr class="sep-both">
 
-## ACLs
+## Access control lists (ACLs)
 
 <div class="row row-cols-md-2"><div>
 
