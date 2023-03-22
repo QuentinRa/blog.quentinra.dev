@@ -2,7 +2,13 @@
 
 <div class="row row-cols-md-2"><div>
 
-...
+**Common security controls** 🛫
+
+* Disable insecure/unused services/protocols
+* Remote connections <small>(timeout, max number of connections, disable internet if not required, use strong passwords or a certificate...)</small>
+* Harden network interfaces <small>(timeout/keepalive, ACLs...)</small>
+* Change default parameters <small>(WPA, SSID, SNMP...)</small>
+* ...
 </div><div>
 
 In security, we often categorize the traffic into two types
@@ -162,20 +168,4 @@ Stuff that I found, but never read/used yet.
 * Umbrella
 * Secure Access Service Edge (SASE)
 </div><div>
-
-* Disable insecure/unused services/protocols
-* Remote connections
-    * Add a timeout, a max number of connections...
-    * Disable access to internet if not required
-    * Force the use of strong passwords
-    * Use authentication using a certificate <small>(if applicable/...)</small>
-* Harden Access Points (AP)
-    * Limit the range to the company
-    * Disable SSID broadcasting <small>(if applicable)</small>
-    * Use non-default settings
-    * 💥 Evil twin attack
-* Harden network interface
-    * Set timeouts/keepalive parameters
-    * Use ACLs/network filtering to prevent the network interface from receiving unexpected traffic <small>(ex: as the target of a DoS)</small> or being used with unauthorized or malicious protocols
-* Change default parameters <small>(WPA, SSID, SNMP...)</small>
 </div></div>

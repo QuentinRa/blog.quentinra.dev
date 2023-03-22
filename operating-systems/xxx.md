@@ -262,4 +262,11 @@ ZZZ
 
 * XACML
 * Authorization creep (remove previous roles/lifecycle)
+
+WWW
+
+* "You're monitored" (users more responsible)
+* access to resources
+* protect logs
+* confidential data in logs
 </div></div>
