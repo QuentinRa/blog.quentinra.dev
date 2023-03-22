@@ -197,7 +197,12 @@ VPN
 * Create a secure tunnel allowing devices on different networks to communicate.
 * PPP (internal VPNs using public/private key)
 * PPTP use PPP, Point-to-Point Tunneling Protocol, allow leave network
-</div><div>
+
+Certification
+
+* 200-301 CCNA ([goffinet](https://cisco.goffinet.org/ccna/))
+
+➡️ See IDS/IPS such as [pfsense](https://www.pfsense.org/), [snort](https://www.snort.org/) or [suricata](https://suricata.io/).
 
 Network segmentation
 
@@ -212,8 +217,30 @@ Random
 * Streaming network telemetry
 * Network Access Control
 * [faidherbe](https://www.faidherbe.org/tutoriel/)
+</div><div>
 
-Certification
+**Traffic mirroring**
 
-* 200-301 CCNA ([goffinet](https://cisco.goffinet.org/ccna/))
+➡️ See the SPAN function on some Cisco switches. See also NetFlow to collect and analyze network traffic data.
+
+➡️ Network or protocol analyzers: Wireshark, tcpdump...
+
+**Triple-A model**: Authentication, Authorization, and Accounting. It's a framework to control who can access the network, and what can they do. These are usually implemented by AAA-servers.
+
+➡️ See the RADIUS or the TACACS+ protocol...
+
+## Cisco
+
+ACLs (std <small>(1-99, 1300-1999)</small>, extended <small>(100-199, 2000-2699)</small>, can be a string)
+
+```text!
+access-list 10 remark Some text here.
+access-list 10 permit 192.168.30.0 0.0.0.255 # std
+access-list 103 permit tcp 192.168.30.0 0.0.0.255 any eq 80 # extended
+access-list 101 permit tcp host 192.168.1.100 any eq www
+access-list 101 deny ip any any
+no access-list 10 # delete
+
+show access-lists
+```
 </div></div>

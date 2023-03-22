@@ -89,6 +89,63 @@ A Demilitarized Zone (DMZ) is a physical or logical subnet separating two networ
 
 <hr class="sep-both">
 
+## ACLs
+
+<div class="row row-cols-md-2"><div>
+
+Access control lists (ACLs) are used to control traffic flow on a network interface by allowing or denying traffic based on specific criteria.
+
+* 🚛 one ACL for each enabled protocol
+* ✈️ one ACL per direction <small>(incoming and outgoing)</small>
+* 🎯 you can create one ACL for each interface
+
+They can be used on many types of network devices. There are two types of ACLs:
+
+* ✋ **Standard ACLs**: filter based on the IP address
+* ⛔ **Extended ACLs**: filter based on the source and destination IP address and port, the protocol...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+<hr class="sep-both">
+
+## TCP/IP Protocol Stack Security
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+The set of protocols that make up the TCP/IP suite, a.k.a. as the TCP/IP protocol Stack, is exposed to some vulnerabilities.
+
+* **Weak authentication**
+
+👉 The source and the destination of packets is not guaranteed, an attacker can easily spoof them. 💥 Spoofing ➡️ Implement authentication and access control.
+
+* **Lack of Integrity Protection**
+
+👉 Messages can be tampered. 💥 ICMP Redirect. Packet injection. ➡️ Use encryption and digital signatures.
+
+* **Confidentiality**
+
+👉 Messages sent as cleartext. 💥 Sniffing ➡️ Use encryption/a VPN.
+</div><div>
+
+* **Availability**
+
+👉 Can be make unavailable. 💥 DoS, spoofing, poisoning. ➡️ Use firewalls, IDS/IPS...
+
+* **Accounting** <small>(track network usage)</small>
+
+👉 It's difficult to find the source because it can be spoofed. ➡️ Implement logging and auditing to track network traffic.
+
+* **Non-repudiation** <small>(user dening having performed some action)</small>
+
+👉 IP addresses can be spoofed. 💥 The hacker claim that someone else used his IP for the attack.  ➡️ Use digital signatures and encryption to ensure that we know who sent the packet.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -102,4 +159,20 @@ Stuff that I found, but never read/used yet.
 * Umbrella
 * Secure Access Service Edge (SASE)
 </div><div>
+
+* Disable insecure/unused services/protocols
+* Remote connections
+    * Add a timeout, a max number of connections...
+    * Disable access to internet if not required
+    * Force the use of strong passwords
+    * Use authentication using a certificate <small>(if applicable/...)</small>
+* Harden Access Points (AP)
+    * Limit the range to the company
+    * Disable SSID broadcasting <small>(if applicable)</small>
+    * Use non-default settings
+    * 💥 Evil twin attack
+* Harden network interface
+    * Set timeouts/keepalive parameters
+    * Use ACLs/network filtering to prevent the network interface from receiving unexpected traffic <small>(ex: as the target of a DoS)</small> or being used with unauthorized or malicious protocols
+* Change default parameters <small>(WPA, SSID, SNMP...)</small>
 </div></div>
