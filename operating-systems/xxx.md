@@ -241,5 +241,25 @@ XXX
 * IDaaS (OpenID), based on SAML
 </div><div>
 
-...
+* Need to know
+* Segregation of duties
+
+ACL
+
+* DAC: each owner allow access
+* MAC: allowed by a central entity
+* RBAC
+* RB-RBAC: if condition then permission (mails to folder)
+* ABAC: based on the value of the request attributes, resources, env
+
+Where ACLs?
+
+* Database?
+* Middleware? API? (usually here)
+* Client? (dangerous is directly interacting with the API)
+
+ZZZ
+
+* XACML
+* Authorization creep (remove previous roles/lifecycle)
 </div></div>
