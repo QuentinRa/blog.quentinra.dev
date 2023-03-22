@@ -40,6 +40,22 @@ There are two kind of firewall architectures:
 
 <hr class="sep-both">
 
+## Demilitarized Zone (DMZ)
+
+<div class="row row-cols-md-2"><div>
+
+A Demilitarized Zone (DMZ) is a physical or logical subnet separating two networks, often a LAN and a WAN. It's usually used to isolate public servers from internals servers. For instance,
+
+* Web servers
+* Email servers
+* VPN servers
+* DNS servers
+* ...
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

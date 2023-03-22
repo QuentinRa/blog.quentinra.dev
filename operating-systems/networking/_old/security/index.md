@@ -27,7 +27,7 @@ Communications and network are exposed to many risks.
 
 ➡️ See IDS/IPS such as [pfsense](https://www.pfsense.org/), [snort](https://www.snort.org/) or [suricata](https://suricata.io/).
 
-**Traffic mirroring**: this feature is available on many network switches. It allows us to copy the incoming and ongoing traffic to a monitored device such as a network analyzer or an IDS.
+**Traffic mirroring**
 
 ➡️ See the SPAN function on some Cisco switches. See also NetFlow to collect and analyze network traffic data.
 
