@@ -123,9 +123,9 @@ Some network devices act as servers, and others as clients. It's the common appr
 
 <div class="row row-cols-md-2"><div>
 
-Segmenting a large network into smaller networks if often used in security to isolate each subnetwork, and apply separate security controls to each of them 🔎.
+Network segmentation is the process of dividing a large network into smaller networks, isolated from each other.
 
-It can also be done to make it easier to manage a group of machines, or to improve performances.
+It can be done for multiple reasons, such as increasing performances, security, or to make it easier to manage a group of machines.
 </div><div>
 
 #### Subnetting
@@ -139,7 +139,7 @@ This is a technique to segment a network. We divide a large network into smaller
 <summary>Example 🔥: divide $172.16.254.0/23$ in 2 subnets</summary>
 
 * **Fix $n$ bits**: $2^{1} \ge 2$ giving us $n=1$
-* **Ensure we have enough bits**: $23 + 1 \le 32$ ✅
+* **Ensure we have enough bits**: $23 + 1 \lt 32$ ✅
 * Each network will have $2^{(32−(23+1))}−2 = 254$ IP addresses
 * $172.16.254.0/23$ will be split in
   * $172.16.254.0/24$ <small>(the 24th bit is 0)</small>
@@ -150,7 +150,7 @@ The method is something like that:
 * Given $k$ the number of subnets
 * Given $N$ fixed bits
 * Find the lowest $n$ solving $2^n \ge k$
-* If $N + n \ge 32$, then you can't have $k$ subnets
+* If $N + n \lt 32$, then you can't have $k$ subnets
 * Each network will have $2^{(32−(N+n)}−2$ IP addresses
 
 Each network is made by permutations of the newly added $n$ bits.

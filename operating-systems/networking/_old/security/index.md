@@ -1,30 +1,5 @@
 # Architecture & Security
 
-Communications and network are exposed to many risks.
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-<p class="text-center">💥 Attacks and vulnerabilities 💥</p>
-
-**Sniffing**: without or with a weak encryption, an actor can listen to exchanged packets, to learn more about the network architecture, and to find the weak point.
-
-**Spoofing**: an actor can usurp another machine identity to fake messages coming from the victim.
-
-**Tampering**: without integrity checks, an actor can tamper with messages without the sender/receiver being aware of it
-
-**MITM** (Man-in-the-middle): an actor intercepts communications and modify or manipulate the data being transmitted.
-
-**Password**: we must ensure that administrators/managers do not use weak/compromised passwords.
-
-**DoS**: Denial of Service. Attackers send malicious packets to slow down a host; they generate a high level of traffic...
-
-💥 Create a malicious packet, or send mass requests.
-
-➡️ See DDoS, Reflection/amplification DoS, Smurf DDoS, or the ping of death, Spoofed disconnect attack, CTS flood...
-</div><div>
-
-<p class="text-center">👉 Solutions or tools 👈</p>
-
 ➡️ See IDS/IPS such as [pfsense](https://www.pfsense.org/), [snort](https://www.snort.org/) or [suricata](https://suricata.io/).
 
 **Traffic mirroring**
@@ -33,14 +8,9 @@ Communications and network are exposed to many risks.
 
 ➡️ Network or protocol analyzers: Wireshark, tcpdump...
 
-**Network zoning and perimeter networks**: we divide the network into zones with different levels of security access. Access/traffic between zones are filtered by firewalls/...
-
-➡️ You can sort devices by CIA level, like if a device need up to 4 hours of unavailability, then A=high...
-
 **Triple-A model**: Authentication, Authorization, and Accounting. It's a framework to control who can access the network, and what can they do. These are usually implemented by AAA-servers.
 
-➡️ See the RADIUS or the TACACS+ protocol... 
-</div></div>
+➡️ See the RADIUS or the TACACS+ protocol...
 
 <hr class="sep-both">
 
