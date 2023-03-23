@@ -20,7 +20,7 @@ A gateway can:
 
 <hr class="sep-both">
 
-## Network filters
+## Network rules
 
 <div class="row row-cols-md-2"><div>
 
@@ -59,7 +59,7 @@ This table is used to modify the IP_SRC, or IP_DEST, usually referred to as tran
 
 In the schema above, host1 wants to allow PC1, and PC2 to communicate, but doesn't want PC2 to know that messages are from PC1. When host1 receives a message from PC1, it will replace PC1 address (source) with its own address, and send it to PC2. When receiving a reply from PC2, it will replace its address (dest) with PC1 address, and send the reply to PC1.
 
-Another case, is that if a machine inside your network is sending a message to the outside world, instead of exposing your machines' IP addresses, you could only expose your host IP address by using NAT.
+Another case, is that if a machine inside your network is sending a message to the outside world, instead of exposing your machine IP address, you could only expose your host IP address by using NAT.
 
 There are 3 chains
 

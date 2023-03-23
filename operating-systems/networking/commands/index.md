@@ -6,15 +6,59 @@ This section gather commands that are used quite used in networking. It doesn't 
 
 ➡️ See [Protocols](../knowledge/index.md#protocols)
 </div><div>
+
+Special shortcuts
+
+* [DNS protocol](../protocols/dns.md#dns-commands): dig, whois...
 </div></div>
 
 <hr class="sep-both">
 
-## XXX
+## Configuration
 
 ++++++
 
-[**xxx** - xxx]
+[**hostname** - xxx]
+
+**Usage** 🐚: xxx
+
+**Example** 🔥:
+
+```ps
+$ xxx
+```
+
+[**ip** - xxx]
+
+**Usage** 🐚: xxx
+
+**Example** 🔥:
+
+```ps
+$ xxx
+```
+
+[**ifconfig** - xxx]
+
+**Usage** 🐚: xxx
+
+**Example** 🔥:
+
+```ps
+$ xxx
+```
+
+[**arp** - xxx]
+
+**Usage** 🐚: xxx
+
+**Example** 🔥:
+
+```ps
+$ xxx
+```
+
+[**route** - xxx]
 
 **Usage** 🐚: xxx
 
@@ -27,11 +71,41 @@ $ xxx
 
 <hr class="sep-both">
 
-## XXX
+## Communication
 
 ++++++
 
-[**xxx** - xxx]
+[**ping** - xxx]
+
+**Usage** 🐚: xxx
+
+**Example** 🔥:
+
+```ps
+$ xxx
+```
+
+[**nc/ncat/netcat** - xxx]
+
+**Usage** 🐚: xxx
+
+**Example** 🔥:
+
+```ps
+$ xxx
+```
+
+[**traceroute** - xxx]
+
+**Usage** 🐚: xxx
+
+**Example** 🔥:
+
+```ps
+$ xxx
+```
+
+[**tracepath** - xxx]
 
 **Usage** 🐚: xxx
 
@@ -44,11 +118,31 @@ $ xxx
 
 <hr class="sep-both">
 
-## XXX
+## Monitoring
 
 ++++++
 
-[**xxx** - xxx]
+[**tcpdump** - xxx]
+
+**Usage** 🐚: xxx
+
+**Example** 🔥:
+
+```ps
+$ xxx
+```
+
+[**tshark** - xxx]
+
+**Usage** 🐚: xxx
+
+**Example** 🔥:
+
+```ps
+$ xxx
+```
+
+[**wireshark** - xxx]
 
 **Usage** 🐚: xxx
 
