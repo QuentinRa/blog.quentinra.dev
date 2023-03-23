@@ -22,29 +22,6 @@ $ ss -u
 ## Interact with the outside
 
 <div class="row row-cols-md-2 mt-4"><div>
-<details class="details-e">
-<summary><code>ping</code>: send a signal</summary>
-
-```bash
-$ ping google.fr
-$ ping 8.8.8.8
-```
-
-Do "x" pings
-
-```bash
-$ ping -c x google.fr
-```
-
-Other options
-
-* `-b ip`: ping all addresses in the IP range
-* `-t ttl`: set the time to live of the ping
-* `-s size`: the size of the "ping"
-* `-i interval`: the interval between pings
-* `-v`: verbose
-* `-i interface`: pass via interface
-</details>
 </div><div>
 <details class="details-e">
 <summary><code>dig</code>: IP to name, name to IP</summary>
@@ -96,50 +73,6 @@ $ whois 8.8.8.8
 ```
 </details>
 </div><div>
-<details class="details-e">
-<summary><code>nc/ncat/netcat</code>: utility to open connections</summary>
-
-If you want to be a server, you can pick a port, and listen to find
-
-```bash
-$ netcat localhost 33666 -l
-$ netcat localhost -p 33666 -l
-```
-
-If you are a client, you can connect to a server, and send messages. The server will see them, along with any other client.
-
-```bash
-$ netcat localhost 33666
-$ netcat localhost -p 33666
-```
-</details>
-</div></div>
-
-<div class="row row-cols-md-2"><div>
-<details class="details-e">
-<summary><code>traceroute</code>: trace the path that a request is taking</summary>
-
-```bash
-$ traceroute localhost
-# pass via eth0
-$ traceroute localhost -i eth0
-```
-
-Use TCP/SYN
-
-```bash
-$ sudo traceroute localhost -T
-```
-
-</details>
-</div><div>
-<details class="details-e">
-<summary><code>tracepath</code>: a similar/simplified traceroute</summary>
-
-```bash
-$ tracepath localhost
-```
-</details>
 </div></div>
 
 <hr class="sl">

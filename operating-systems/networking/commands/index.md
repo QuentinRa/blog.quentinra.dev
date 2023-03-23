@@ -139,44 +139,97 @@ Show Routing table. Obsolete, see `ip r`.
 
 ++++++
 
-[**ping** - xxx]
+[**ping** - probe a host]
 
-**Usage** 🐚: xxx
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: send a message to see if a host is up and replying to pings.
 
 **Example** 🔥:
 
 ```ps
-$ xxx
+$ ping google.fr
+$ ping 8.8.8.8
 ```
 
-[**nc/ncat/netcat** - xxx]
-
-**Usage** 🐚: xxx
-
-**Example** 🔥:
+Do "x" pings
 
 ```ps
-$ xxx
+$ ping -c x google.fr
+```
+</div><div>
+
+Other options
+
+* `-b ip`: ping all addresses in the IP range
+* `-t ttl`: set the time to live of the ping
+* `-s size`: the size of the "ping"
+* `-i interval`: the interval between pings
+* `-v`: verbose
+* `-i interface`: pass via interface
+</div></div>
+
+[**nc** - open a connection]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: you can create a server, and create clients, and exchange messages between them.
+
+Variants: `ncat`, `netcat`.
+
+**Example** 🔥 - server: listen on a port
+
+```ps
+$ nc ip -l port
+$ nc ip -l -p port
+$ nc ip -lp port
+```
+</div><div>
+
+**Example** 🔥 - client: connect to a server at IP using a specific port
+
+```ps
+$ nc ip port
+$ nc ip -p port
 ```
 
-[**traceroute** - xxx]
+➡️ Connect to a python webserver...
+</div></div>
 
-**Usage** 🐚: xxx
+[**traceroute** - trace a packet]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: trace the route that a packet is taking.
 
 **Example** 🔥:
 
 ```ps
-$ xxx
+$ traceroute ip
+```
+</div><div>
+
+Specify an interface, such as `eth0`
+
+```ps
+$ traceroute ip -i eth0
 ```
 
-[**tracepath** - xxx]
+Use TCP/SYN
 
-**Usage** 🐚: xxx
+```ps
+$ sudo traceroute ip -T
+```
+</div></div>
+
+[**tracepath** - trace a packet]
+
+**Usage** 🐚: trace the route that a packet is taking.
 
 **Example** 🔥:
 
 ```ps
-$ xxx
+$ tracepath ip
 ```
 ++++++
 
