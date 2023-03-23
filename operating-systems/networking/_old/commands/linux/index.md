@@ -77,65 +77,6 @@ $ whois 8.8.8.8
 
 <hr class="sl">
 
-## Monitoring
-
-<details class="details-e mt-4">
-<summary><code>tcpdump</code>: monitor network (root required)</summary>
-<div class="row row-cols-md-2"><div>
-
-* `-i interface` : listen to this interface
-* `-e`: show the header of the request
-* `-n`: show names instead of addresses
-* `-l`: copy results in a buffer (`tcpdump -l | tee file`)
-* `-o`: no optimizations (listen take a lot of resources)
-* `-F`: read from a file
-* `-v`, and `-vv`: show more, or even more verbosity
-* `-t`: do not show time
-* `host name_or_address`: listen to only one host, you can add other hots with `AND host ...`
-
-</div><div>
-
-Listen for ICMP requests passing by the interface `tun0`
-
-```bash
-$ sudo tcpdump ip proto \\icmp -i tun0
-```
-</div></div>
-</details>
-
-<div class="row row-cols-md-2"><div>
-<details class="details-e">
-<summary><code>tshark</code>: similar to tcpdump</summary>
-
-* `-f "filter"`: see [wireshark capture filters](https://gitlab.com/wireshark/wireshark/-/wikis/CaptureFilters)
-* `-F file`: read from a file
-
-```bash
-$ tshark -i eth0 -f "host some_ip"
-```
-
-</details>
-</div><div>
-<details class="details-e">
-<summary><code>wireshark</code>: same as tcpdump, but with GUI</summary>
-
-See [wireshark](https://www.wireshark.org/download.html). Wireshark is providing a graphical interface. Inside the search bar, you can filter requests/responses
-
-* `ip.src == some_IP`, or `ip.dest == some_IP`
-* `ip.addr == some_IP`
-* `tcp.port == some_port`, or `udp.port == some_port`
-* `http.request.method == GET`, or `... == POST`...
-* You can use `&&` (logical AND), `||` (logical OR), `!=` (different)
-* You can enter a protocol, or `tcp`/`udp`
-
-Once you find something interesting, right-click on it > Follow TCP Stream, and you will see in a human-readable way the data exchanged.
-
-Use File > Export > HTTP to GET download files.
-</details>
-</div></div>
-
-<hr class="sr">
-
 ## ARP, and network filters
 
 <details class="details-e mt-4">
@@ -190,13 +131,5 @@ $ sudo iptables -t NAT -A POSTROUTING -o eth2 -j SNAT --to-source 50.50.50.50
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
-
-* learn more about what can I do with netstat (-tulpn?)
-* See cyber commands (ex: `nslookup`)
-* [wireshark](https://unit42.paloaltonetworks.com/wireshark-workshop-videos/)
-* `-j REJECT --reject-with tcp-reset`
 </div><div>
-
-* `nc -v` Verbose output` -vv` Very Verbose `-k` Keep listening after client disconnects and `-lvnp`
-* `arp – a`, `arp –a –d`
 </div></div>

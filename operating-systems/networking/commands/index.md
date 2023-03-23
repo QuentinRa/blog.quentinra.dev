@@ -183,6 +183,9 @@ Variants: `ncat`, `netcat`.
 $ nc ip -l port
 $ nc ip -l -p port
 $ nc ip -lp port
+$ nc ip -lnvp port # 👈
+# keep listening after last client disconnect
+$ nc ip -lnvpk port
 ```
 </div><div>
 
@@ -194,6 +197,8 @@ $ nc ip -p port
 ```
 
 ➡️ Connect to a python webserver...
+
+➡️ Use `-vv` for quite verbose.
 </div></div>
 
 [**traceroute** - trace a packet]
@@ -239,35 +244,48 @@ $ tracepath ip
 
 ++++++
 
-[**tcpdump** - xxx]
+[**tcpdump** - monitor network]
 
-**Usage** 🐚: xxx
+<div class="row row-cols-md-2"><div>
 
-**Example** 🔥:
-
-```ps
-$ xxx
-```
-
-[**tshark** - xxx]
-
-**Usage** 🐚: xxx
+**Usage** 🐚: monitor the network. Root required.
 
 **Example** 🔥:
 
+Listen for ICMP requests passing by the interface `tun0`
+
 ```ps
-$ xxx
+$ sudo tcpdump ip proto \\icmp -i tun0
 ```
+</div><div>
 
-[**wireshark** - xxx]
+* `-i interface` : listen to this interface
+* `-e`: show the header of the request
+* `-n`: show names instead of addresses
+* `-l`: copy results in a buffer (`tcpdump -l | tee file`)
+* `-o`: no optimizations (listen take a lot of resources)
+* `-F`: read from a file
+* `-v`, and `-vv`: show more, or even more verbosity
+* `-t`: do not show time
+* `host name_or_address`: listen to only one host, you can add other hots with `AND host ...`
+</div></div>
 
-**Usage** 🐚: xxx
+[**tshark** - monitor network]
+
+**Usage** 🐚: monitor network.
 
 **Example** 🔥:
 
+* `-f "filter"`: see [wireshark capture filters](https://gitlab.com/wireshark/wireshark/-/wikis/CaptureFilters)
+* `-F file`: read from a file
+
 ```ps
-$ xxx
+$ tshark -i eth0 -f "host some_ip"
 ```
+
+[**wireshark** - monitor network]
+
+A popular tool to monitor a network. See [Wireshark](../tools/wireshark/index.md)
 ++++++
 
 <hr class="sep-both">
@@ -282,5 +300,7 @@ Stuff that I found, but never read/used yet.
 * [NFS commands](../protocols/nfs.md#-to-do-)
 </div><div>
 
+* `arp -a`, `arp -a -d`
+* `netstat -tulpn`
 
 </div></div>
