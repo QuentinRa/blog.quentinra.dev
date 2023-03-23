@@ -163,7 +163,7 @@ Each network is made by permutations of the newly added $n$ bits.
 
 <div class="row row-cols-md-2"><div>
 
-Plan the scalability
+**Plan the scalability**
 
 * bandwidth requirements
 * network capacity
@@ -171,20 +171,24 @@ Plan the scalability
 
 And select an appropriate topology.
 
+**To keep in mind**
+
+* performance
+* fault tolerance/availability
+* monitoring and logging (siem?...)
+* backups and updates
+
 </div><div>
 
-Security
+**Security**
 
 * Segmentation
 * Access control (the least privilege...)
 * Firewalls
-
-To keep in mind
-
-* performance
-* fault tolerance
-* monitoring and logging (siem?...)
-* backups and updates
+* Zoning and DMZ, VLANs and VPNs
+* Password policy and MFA
+* IDS/IPS
+* Physical measures
 </div></div>
 
 <hr class="sep-both">
