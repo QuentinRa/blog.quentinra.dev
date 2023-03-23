@@ -1,26 +1,5 @@
 # Linux networking commands
 
-<hr class="sl">
-
-## Explore
-
-<details class="details-e">
-<summary><code>ss</code>: show open ports</summary>
-
-The command can be filtered (`-a`=all, `-4`=IPV4, `-u`=udp...)
-
-```bash
-$ ss
-$ ss -a
-$ ss -4
-$ ss -u
-```
-</details>
-
-<hr class="sr">
-
-## Interact with the outside
-
 <div class="row row-cols-md-2 mt-4"><div>
 </div><div>
 <details class="details-e">
@@ -72,64 +51,5 @@ $ whois google.fr
 $ whois 8.8.8.8
 ```
 </details>
-</div><div>
-</div></div>
-
-<hr class="sl">
-
-## ARP, and network filters
-
-<details class="details-e mt-4">
-<summary><code>iptables</code>: network filters (root required)</summary>
-<div class="row row-cols-md-2"><div>
-
-* `-t table`: FILTER by default
-* `-A chain`: add a rule at the end of the chain
-* `-I chain`: add a rule at the start of the chain
-* `-D chain`: delete a rule
-* `-o interface`: exit via "interface"
-* `-i interface`: enter using "interface"
-* `-j action`: a chain or:
-  * `SNAT/DNAT`: translation source/destination
-  * `ACCEPT`: allow
-  * `DENY/DROP`: deny without notifying the sender
-  * `REJECT`: deny, but notify the sender
-* `-s ip`: source <small>(separated by colons)</small>
-* `-d ip`: destination (s<small>(separated by colons)</small>
-* `--sport port`: source port
-* `--dport port`: destination port
-* `--to ip`: if SNAT/DNAT, the new source/destination
-* `-p protocol`: which protocol
-
-**Note**: you can use `!` (NOT), such as `-s !127.0.0.1` meaning every packet not having "127.0.0.1" as `source` will be filtered.
-</div><div>
-
-List tables
-
-```bash
-$ sudo iptables -L
-```
-
-DROP any packet using the protocol TCP, on the port 22, that has our machine for destination, emitted by `172.16.1.1`.
-
-```bash
-$ sudo iptables -t filter -A INPUT -s 172.16.1.1 -p tcp --dport 22 -j DROP
-```
-
-Hide any IP address using host1 IP address (50.50.50.50), when machines are sending a packet passing by this machine, using the network interface "eth2".
-
-```bash
-$ sudo iptables -t NAT -A POSTROUTING -o eth2 -j SNAT --to-source 50.50.50.50
-```
-</div></div>
-</details>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
 </div><div>
 </div></div>

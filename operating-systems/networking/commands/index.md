@@ -86,7 +86,6 @@ $ ip n
 
 <div class="row row-cols-md-2"><div>
 
-
 **Usage** 🐚: on Linux, `ipconfig` is deprecated over `ip a`, but on Windows, it's still the command used.
 
 **Example** 🔥 - Linux:
@@ -131,6 +130,23 @@ Show ARP cache. Obsolete, see `ip n`.
 
 [**route** - obsolete]
 Show Routing table. Obsolete, see `ip r`.
+
+[**ss** - list open ports]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: list open ports
+
+**Example** 🔥:
+
+```ps
+$ ss
+$ ss -a # all
+$ ss -4 # ipv4
+$ ss -u # udp
+```
+</div></div>
+
 ++++++
 
 <hr class="sep-both">
@@ -276,7 +292,7 @@ $ sudo tcpdump ip proto \\icmp -i tun0
 
 **Example** 🔥:
 
-* `-f "filter"`: see [wireshark capture filters](https://gitlab.com/wireshark/wireshark/-/wikis/CaptureFilters)
+* `-f "filter"`: see [wireshark capture filters](../tools/wireshark/index.md)
 * `-F file`: read from a file
 
 ```ps
@@ -286,6 +302,61 @@ $ tshark -i eth0 -f "host some_ip"
 [**wireshark** - monitor network]
 
 A popular tool to monitor a network. See [Wireshark](../tools/wireshark/index.md)
+++++++
+
+<hr class="sep-both">
+
+## Security
+
+++++++
+
+[**iptables** - traffic rules]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: define rules for incoming/outgoing traffic.
+
+**Example** 🔥:
+
+List tables
+
+```ps
+$ sudo iptables -L
+```
+
+DROP any packet using TCP, on port 22, having our machine as destination, and emitted by `172.16.1.1`.
+
+```ps
+$ sudo iptables -t filter -A INPUT -s 172.16.1.1 -p tcp --dport 22 -j DROP
+```
+
+Hide the source IP address using 50.50.50.50, for any packet passing by our interface "eth2".
+
+```ps
+$ sudo iptables -t NAT -A POSTROUTING -o eth2 -j SNAT --to-source 50.50.50.50
+```
+</div><div>
+
+* `-t table`: FILTER by default
+* `-A chain`: add a rule at the end of the chain
+* `-I chain`: add a rule at the start of the chain
+* `-D chain`: delete a rule
+* `-o interface`: exit via "interface"
+* `-i interface`: enter using "interface"
+* `-j action`: a chain or:
+    * `SNAT/DNAT`: translation source/destination
+    * `ACCEPT`: allow
+    * `DENY/DROP`: deny without notifying the sender
+    * `REJECT`: deny, but notify the sender
+* `-s ip`: source <small>(separated by colons)</small>
+* `-d ip`: destination (s<small>(separated by colons)</small>
+* `--sport port`: source port
+* `--dport port`: destination port
+* `--to ip`: if SNAT/DNAT, the new source/destination
+* `-p protocol`: which protocol
+
+**Note**: you can use `!` (NOT), such as `-s !127.0.0.1` meaning every packet not having "127.0.0.1" as `source` will be filtered.
+</div></div>
 ++++++
 
 <hr class="sep-both">
@@ -302,5 +373,6 @@ Stuff that I found, but never read/used yet.
 
 * `arp -a`, `arp -a -d`
 * `netstat -tulpn`
+* `iptables [...] -j REJECT --reject-with tcp-reset`
 
 </div></div>
