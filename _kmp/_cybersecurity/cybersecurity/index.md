@@ -83,8 +83,6 @@ A look at cyberattacks categories ([source](https://www.malwarebytes.com/))
 
 <br>
 
-* **Intrusion Detection System** (IDS): a system detecting intrusions.
-* **Intrusion Prevention System** (IPS): a system blocking detected intrusions.
 * **Endpoint Detection and Response** (EDS)
 * **Deceptive security**
 * **Virtual Private Network** (VPN): it ensures both integrity <small>(not tampered)</small>, and confidentiality <small>(can't read it)</small> of the network traffic.

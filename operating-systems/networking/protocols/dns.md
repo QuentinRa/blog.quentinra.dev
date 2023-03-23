@@ -108,10 +108,47 @@ Given the FQDN `www.example.com`, `www` is the hostname, while `example.com` is 
 
 <div class="row row-cols-md-2"><div>
 
-...
+#### `dig`: ip/domain lookup
+
+You can give a domain name, or an IP (`-x`).
+
+```ps
+$ dig example.com
+$ dig -x 8.8.8.8
+```
+
+You can pick which DNS server should be used with `@` 
+
+* Cloudflare DNS servers: `1.1.1.1`
+* Google DNS servers: `8.8.8.8` OR `8.8.4.4`
+* ...
+
+```ps
+$ dig google.fr @8.8.8.8
+```
+
+We can explicitly ask for some data by using the option `-t`
+
+```bash!
+$ dig example.com -t A
+;; ANSWER SECTION:
+google.fr.              300     IN      A  172.217.13.131
+$ dig example.com -t AAAA
+;; ANSWER SECTION:
+google.fr.              300     IN      AAAA 2607:f8b0:4020:805::2003
+```
+
+You can also add options: `+stats +trace +nodnssec`.
 </div><div>
 
-...
+#### `whois`: domain registrar data
+
+You can also use [whois via their website](https://www.whois.com/whois/).
+
+```ps
+$ whois google.fr
+$ whois 8.8.8.8
+```
 </div></div>
 
 <hr class="sep-both">
