@@ -141,6 +141,21 @@ google.fr.              300     IN      AAAA 2607:f8b0:4020:805::2003
 You can also add options: `+stats +trace +nodnssec`.
 </div><div>
 
+#### `nslookup`: ip/domain lookup
+
+This tool is quite similar to dig.
+
+```ps
+# A = IPV4, AAAA=IPV6, MX, TXT, CNAME...
+$ nslookup -type=A example.com
+# ask 1.1.1.1 DNS server
+$ nslookup -type=A example.com 1.1.1.1
+```
+
+#### `dnsdumpster`: domains lookup
+
+[dnsdumpster](https://dnsdumpster.com/) is a website to fetch DNS records, for both a domain, and its subdomains.
+
 #### `whois`: domain registrar data
 
 You can also use [whois via their website](https://www.whois.com/whois/).

@@ -14,7 +14,6 @@ Stuff that I found, but never read/used yet.
 
 Investigation
 
-* [Old - Investigation](/_kmp/_cybersecurity/investigation/general/index.md)
 * [Old - Investigate Files](/_kmp/_cybersecurity/investigation/files/index.md)
 </div><div>
 

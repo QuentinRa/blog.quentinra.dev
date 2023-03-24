@@ -58,6 +58,7 @@ Stuff that I found, but never read/used yet.
 * PassiveTotal
 * [awesome-osint](https://github.com/jivoi/awesome-osint) (list, 10.7k ⭐)
 * [OSINT-Tools](https://github.com/mgp25/OSINT-Tools) (list, 45 ⭐)
+* [Sublist3r](https://github.com/aboul3la/Sublist3r)
 
 SOCMINT
 
