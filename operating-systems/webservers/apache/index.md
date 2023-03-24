@@ -212,5 +212,50 @@ Stuff that I found, but never read/used yet.
 ```apacheconf
 AllowOverride All
 ```
+
+* Disable all ssl aside from TLS 1.2+
+
+```apacheconf
+# edit /etc/apache2/sites-available/some_config.conf
+# Protocols: TLS 1.2, TLS 1.3
+SSLProtocol -all +TLSv1.3 +TLSv1.2
+# restart: sudo service apache2 restart
+```
+
+```apacheconf
+# edit /etc/apache2/sites-available/some_config.conf
+# add, at the end, either 1) 2), 3) or sometime else
+# don't forget to restart when you're done
+# sudo service apache2 restart
+SSLCipherSuite SOME_ALGS_HERE
+SSLHonorCipherOrder on
+```
 </div><div>
+
+OCSP Stapling
+
+```apacheconf
+# use either 1) or 2), don't forget to restart
+# restart: sudo service apache2 restart
+
+# Proposition 1)
+# edit /etc/apache2/sites-available/some_config.conf
+# near the end
+SSLUseStapling On
+SSLStaplingCache "shmcb:logs/ssl_stapling(32768)"
+
+# Proposition 2)
+# in /etc/apache2/mods-available/ssl.conf
+# near the end
+SSLUseStapling On
+SSLStaplingCache shmcb:${APACHE_RUN_DIR}/ssl_stapling(32768)
+```
+
+* [SSLCompression](https://httpd.apache.org/docs/trunk/mod/mod_ssl.html#sslcompression) disabled by default, should stay disabled to prevent attacks such as [CRIME](https://en.wikipedia.org/wiki/CRIME).
+
+* [SSLSessionTickets](https://httpd.apache.org/docs/trunk/mod/mod_ssl.html#sslsessiontickets): **MUST BE DISABLED** (enabled by default) if you are not restarting your server periodically
+
+```apacheconf
+SSLSessionTickets off
+```
 </div></div>
