@@ -74,6 +74,8 @@ Stuff that I found, but never read/used yet.
 * Nexpose
 * Retina (network vulnerability scanner)
 * Nipper
+* Nettacker
+* [joomscan](https://github.com/OWASP/joomscan)
 </div><div>
 
 * Medusa
