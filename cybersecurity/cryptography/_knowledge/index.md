@@ -268,5 +268,4 @@ Stuff that I found, but never read/used yet.
 * message authentication codes (MACs)
 * HMAC
 * certificates (chain of trust), digital signatures
-* ssl/key exchange <small>(use public asymmetric to share a temporary symmetric key)</small>
 </div></div>

@@ -149,7 +149,7 @@ SSL certificates (SSL deprecated, TLS more secure, SSL/TLS)
 
 * Authentication
 * Encryption
-* SSLLabs
+* [SSLLabs](https://www.ssllabs.com/)
 * Expired/Renew/Monitoring
 * CA = assert of the identify of someone (CSR)
 * Web/Let's encrypt? (DV)

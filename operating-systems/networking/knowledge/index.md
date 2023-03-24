@@ -150,7 +150,7 @@ Each protocol can be represented using a [Message Sequence Chart](https://en.wik
 
 **Layer 6: Presentation Layer** <small>(data)</small> 🔒
 
-* SSL/TLS
+* [SSL/TLS](../protocols/ssl-tls.md)
 
 **Layer 5: Session Layer** <small>(data)</small> 📶
 
