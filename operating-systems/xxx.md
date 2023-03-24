@@ -144,20 +144,6 @@ Quality criteria.
 * Active attacks
 * CIS (cyber-defense, hardening kits - build kit content)
   * two levels
-
-SSL certificates (SSL deprecated, TLS more secure, SSL/TLS)
-
-* Authentication
-* Encryption
-* [SSLLabs](https://www.ssllabs.com/)
-* Expired/Renew/Monitoring
-* CA = assert of the identify of someone (CSR)
-* Web/Let's encrypt? (DV)
-* Validation levels
-  * EV (extended)
-  * OV (organization)
-  * DV (domain)
-* Unique domain (all), wildcard (DV/OV), multi-domains (DV, OV, EV)
 </div><div>
 
 ...
