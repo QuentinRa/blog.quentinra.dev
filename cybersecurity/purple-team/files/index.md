@@ -1,6 +1,6 @@
 # Find data in files
 
-Find metadata from a PDF, an image... And file hidden data in images using steganography or other tricks like a zip inside an image. 
+Find metadata from a PDF, an image... And find hidden data in images using steganography or other tricks like a zip inside an image. 
 
 <hr class="sep-both">
 

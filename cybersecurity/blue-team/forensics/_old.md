@@ -1,7 +1,5 @@
 # Digital Forensics
 
-Notes about forensics, i.e. investigating cyber crimes.
-
 <hr class="sep-both">
 
 ## Volatility

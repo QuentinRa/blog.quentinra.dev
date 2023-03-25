@@ -1,9 +1,6 @@
 # Discovery
 
 <div class="row row-cols-md-2"><div>
-
-If there is a website, check the [webserver methodology](/_cybersecurity/exploitation/web/methodology.md) to learn more about how you could find vulnerabilities and exploit them 🗺️.
-
 </div><div>
 
 There are a lot of ways to perform its discovery 

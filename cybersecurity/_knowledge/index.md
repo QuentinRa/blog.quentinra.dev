@@ -11,17 +11,11 @@ Stuff that I found, but never read/used yet.
 * [Old - Getting Started](/_kmp/_cybersecurity/cybersecurity/index.md)
 * [Old - Virtual Machines](/_kmp/_cybersecurity/cybersecurity/vms.md)
 * [Old - H@king box](/_kmp/_cybersecurity/cybersecurity/hacking_box.md)
-
-Investigation
-
-* [Old - Investigate Files](/_kmp/_cybersecurity/investigation/files/index.md)
 </div><div>
 
 Discovery
 
 * [Old - Discovery](/_kmp/_cybersecurity/discovery/index.md)
-* [Old - Nmap](/_kmp/_cybersecurity/discovery/nmap/index.md)
-* [Old - Nessus](/_kmp/_cybersecurity/discovery/nmap/index.md)
 
 Random
 
