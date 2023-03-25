@@ -46,8 +46,8 @@ Scanning and enumeration
 
 Network mapping
 
-* [ping]() 🥅: ...
-* [traceroute/tracepath/tracert]() 🥅: ...
+* [ping](tools/ping.md) 🥅: check if a host respond to pings
+* [Packet tracing](tools/trace.md) 🥅: map a network
 </div><div>
 
 Vulnerabilities scanners

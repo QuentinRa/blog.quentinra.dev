@@ -252,6 +252,16 @@ $ sudo traceroute ip -T
 ```ps
 $ tracepath ip
 ```
+
+[**tracert** - trace a packet]
+
+**Usage** 🐚: Windows traceroute command.
+
+**Example** 🔥:
+
+```ps
+CMD> tracert ip
+```
 ++++++
 
 <hr class="sep-both">
@@ -369,7 +379,6 @@ Stuff that I found, but never read/used yet.
 
 * [DNS commands](../protocols/dns.md#-to-do-)
 * [NFS commands](../protocols/nfs.md#-to-do-)
-* Tracert (Windows traceroute)
 </div><div>
 
 * `arp -a`, `arp -a -d`
