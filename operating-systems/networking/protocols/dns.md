@@ -124,18 +124,18 @@ You can pick which DNS server should be used with `@`
 * ...
 
 ```ps
-$ dig google.fr @8.8.8.8
+$ dig example.com @8.8.8.8
 ```
 
 We can explicitly ask for some data by using the option `-t`
 
-```bash!
+```ps
 $ dig example.com -t A
 ;; ANSWER SECTION:
-google.fr.              300     IN      A  172.217.13.131
+example.com.    0  IN     A  93.184.216.34
 $ dig example.com -t AAAA
 ;; ANSWER SECTION:
-google.fr.              300     IN      AAAA 2607:f8b0:4020:805::2003
+example.com.    0  IN  AAAA 2606:2800:220:1:248:1893:25c8:1946
 ```
 
 You can also add options: `+stats +trace +nodnssec`.
@@ -161,7 +161,7 @@ $ nslookup -type=A example.com 1.1.1.1
 You can also use [whois via their website](https://www.whois.com/whois/).
 
 ```ps
-$ whois google.fr
+$ whois example.com
 $ whois 8.8.8.8
 ```
 </div></div>

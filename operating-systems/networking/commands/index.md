@@ -164,14 +164,14 @@ $ ss -u # udp
 **Example** 🔥:
 
 ```ps
-$ ping google.fr
+$ ping example.com
 $ ping 8.8.8.8
 ```
 
 Do "x" pings
 
 ```ps
-$ ping -c x google.fr
+$ ping -c x example.com
 ```
 </div><div>
 
