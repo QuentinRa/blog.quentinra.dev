@@ -232,3 +232,30 @@ WWW
 * protect logs
 * confidential data in logs
 </div></div>
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-md-2"><div>
+
+* cwe (mitre)
+* `select sql from sqlite_master`
+
+Auth
+
+* bruteforce
+* insecure passwords
+* (un|badly)encrypted passwords
+* vulnerable reset password (easy reset questions)
+* auth token in URL
+* failure when logging with google (can find the "default" password)
+* default accounts/...
+
+Security questions
+
+* must be fixed
+* straightforward/easy to remember
+* must be encrypted
+</div><div>
+</div></div>
