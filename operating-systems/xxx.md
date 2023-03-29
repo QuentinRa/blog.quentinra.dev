@@ -61,13 +61,6 @@ Order
 * Incremental
 * Agile
 
-Languages
-
-* machine
-* assembly
-* procedural and object (non machine dependant)
-* declarative (describe the result)
-
 Env
 
 * Formation
@@ -80,52 +73,6 @@ Env
 Different kind of software (SCM, ITSS...). ERP = all in one. BI = vision on all information. MDM.
 
 Quality criteria.
-</div></div>
-
-<hr class="sep-both">
-
-## XXX
-
-<div class="row row-cols-md-2"><div>
-
-* Passive attacks (monitor)
-* Active attacks
-* CIS (cyber-defense, hardening kits - build kit content)
-  * two levels
-</div><div>
-
-...
-</div></div>
-
-<hr class="sep-both">
-
-## XXX
-
-<div class="row row-cols-md-2"><div>
-
-* Between two companies
-* Between an employee and the company
-* ...
-* Layer 3 - IPsec VPN
-* Remote-Site VPN
-* Site-à-Site VPN (client with no knowledge, connect to a VPN device)
-</div><div>
-
-* `nmap *.*.*.*`
-* `nmap *.*.*.* --exclude x.x.x.x`
-* `nmap -sA x.x.x.x` (filtered/unfiltered)
-* `nmap -p T:443` (TCP/443)
-* `nmap -p U:53` (UDP/53)
-* `nmap --log-errors`
-
-XXX
-
-* ARP, no auth, poisoning
-* DHCP, hacker answer before DHCP server
-* DNS poisoning
-* Cain and abel
-* Ettercap
-* pfsense > snort package
 </div></div>
 
 <hr class="sep-both">
@@ -154,62 +101,8 @@ XXX
 * Need to know
 * Segregation of duties
 
-ACL
-
-* DAC: each owner allow access
-* MAC: allowed by a central entity
-* RBAC
-* RB-RBAC: if condition then permission (mails to folder)
-* ABAC: based on the value of the request attributes, resources, env
-
-Where ACLs?
-
-* Database?
-* Middleware? API? (usually here)
-* Client? (dangerous is directly interacting with the API)
-
 ZZZ
 
 * XACML
 * Authorization creep (remove previous roles/lifecycle)
-
-WWW
-
-* "You're monitored" (users more responsible)
-* access to resources
-* protect logs
-* confidential data in logs
-</div></div>
-
-<hr class="sep-both">
-
-## XXX
-
-<div class="row row-cols-md-2"><div>
-
-* cwe (mitre)
-* `select sql from sqlite_master`
-
-Auth
-
-* bruteforce
-* insecure passwords
-* (un|badly)encrypted passwords
-* vulnerable reset password (easy reset questions)
-* auth token in URL
-* failure when logging with google (can find the "default" password)
-* default accounts/...
-
-Security questions
-
-* must be fixed
-* straightforward/easy to remember
-* must be encrypted
-</div><div>
-
-XXE
-
-* API SOAP (DTD)
-* Configuration to disable XXE
-* File Upload (network request)
 </div></div>

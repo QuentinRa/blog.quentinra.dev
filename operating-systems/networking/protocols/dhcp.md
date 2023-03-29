@@ -38,3 +38,17 @@ If a new device with no address IP is connecting to the network
 
 👉 An attacker intercept DHCP traffic to monitor it, and potentially prepare an attack. ➡️ See DHCPv6.
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* DHCP, hacker answer before DHCP server
+</div><div>
+
+
+</div></div>

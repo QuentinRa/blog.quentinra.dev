@@ -143,4 +143,8 @@ Stuff that I found, but never read/used yet.
 * AD Audit policy best practices
 * Handle scenario in which you can't access the logs
 * How log do we store logs? Minimum of 3y?
+* "You're monitored" (users more responsible)
+* access to resources
+* protect logs
+* confidential data in logs
 </div></div>

@@ -195,6 +195,8 @@ VPN
 * Create a secure tunnel allowing devices on different networks to communicate.
 * PPP (internal VPNs using public/private key)
 * PPTP use PPP, Point-to-Point Tunneling Protocol, allow leave network
+* Between two companies/an employee and the company
+* remote-site VPN/site-to-site VPN
 
 Certification
 
@@ -220,4 +222,10 @@ Traffic mirroring: See also NetFlow to collect and analyze network traffic data.
 Network or protocol analyzers: Wireshark, tcpdump...
 
 **Triple-A model**: Authentication, Authorization, and Accounting. It's a framework to control who can access the network, and what can they do. These are usually implemented by AAA-servers. See the RADIUS or the TACACS+ protocol...
+
+XXX
+
+* Cain and abel
+* Ettercap
+* pfsense > snort package
 </div></div>

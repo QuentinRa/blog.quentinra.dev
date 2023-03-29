@@ -385,3 +385,22 @@ The command `db_nmap` is the same as `nmap`.
 msf6 > db_nmap -sV -p- IP
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* `nmap *.*.*.*`
+* `nmap *.*.*.* --exclude x.x.x.x`
+* `nmap -sA x.x.x.x` (filtered/unfiltered)
+* `nmap -p T:443` (TCP/443)
+* `nmap -p U:53` (UDP/53)
+* `nmap --log-errors`
+</div><div>
+
+
+</div></div>

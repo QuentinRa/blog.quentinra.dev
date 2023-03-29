@@ -167,16 +167,25 @@ Stuff that I found, but never read/used yet.
 * Identity Services Engine (ISE)
 * Umbrella
 * Secure Access Service Edge (SASE)
+
+Access
+
+* Network Access Control (NAC): allow based on user+device
+* Data Loss Prevention (DLP): deny access to sensitive data
 </div><div>
 
 Firewall applicative
 
 * Application-level gateway (FTP, SIP, or HTTP)
 
-Access
+ACLs
 
-* Network Access Control (NAC): allow based on user+device
-* Data Loss Prevention (DLP): deny access to sensitive data
+* DAC: each owner allow access
+* MAC: allowed by a central entity
+* RBAC
+* RB-RBAC: if condition then permission (mails to folder)
+* ABAC: based on the value of the request attributes, resources, env
+* Where ACLs?: Database (no), Middleware/API (usually here), Client (dangerous is directly interacting with the API)
 
 Endpoint Protection
 

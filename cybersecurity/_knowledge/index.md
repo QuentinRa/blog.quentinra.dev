@@ -11,6 +11,8 @@ Stuff that I found, but never read/used yet.
 * [Old - Getting Started](/_kmp/_cybersecurity/cybersecurity/index.md)
 * [Old - Virtual Machines](/_kmp/_cybersecurity/cybersecurity/vms.md)
 * [Old - H@king box](/_kmp/_cybersecurity/cybersecurity/hacking_box.md)
+* CIS (cyber-defense, hardening kits - build kit content)
+* cwe (mitre)
 
 Random
 
@@ -22,6 +24,7 @@ XXX
 * ShadowServer
 
 NFS/SAMBA
+
 * Can be used for lateral movement
 * Can be used for data exfiltration
 * Can be used during investigation to access (sensitive?) data
@@ -38,5 +41,4 @@ Exploitation
 * [Old - Database](/_kmp/_cybersecurity/exploitation/database/index.md)
 * [Old - SQLi](/_kmp/_cybersecurity/exploitation/database/sqli/index.md)
 * [Old - sqlmap](/_kmp/_cybersecurity/exploitation/database/sqlmap/index.md)
-
 </div></div>
