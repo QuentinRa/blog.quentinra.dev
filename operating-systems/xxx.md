@@ -2,58 +2,6 @@
 
 <div class="row row-cols-md-2"><div>
 
-CPU
-
-* Registers
-* Cache
-* Control unit (core functions, assembly functions)
-* Calcul unit (ALU)
-
-Bus to share data (3 chanel: send instructions, address, information)
-
-Memory
-
-* RAW (volatile)
-  * DRAM => SDRAM, EDO DRAM, BEDO DRAM, DDR SDRAM
-  * Static (SRAM)
-  * Cache
-* ROW (not volatile)
-  * ROM => PROM, EPROM, EEPROM
-  * Flash (USB...)
-
-Memory leaks: missing free... Overflow
-=> program add the return address to the stack, then the parameters. The procedure, read all, generate and put the result. Then the program read the result, and unstack the return address. With overflow, a parameter overflow and replace the return address.
-
-Controllers I/O
-
-* USB
-* Network
-* Video
-* Storage
-* Keyboard/mouse
-</div><div>
-
-Registers
-
-* MAR
-* MDR
-* CIR
-* AC0
-* AC1
-
-Operating system
-
-* kernel (system services: pilotes...)
-* user services
-* an application can't access another one in memory? but we can create a zone in which two can access? Swap: store on the disk.
-</div></div>
-
-<hr class="sep-both">
-
-## XXX
-
-<div class="row row-cols-md-2"><div>
-
 App
 
 * Presentation
@@ -258,4 +206,10 @@ Security questions
 * straightforward/easy to remember
 * must be encrypted
 </div><div>
+
+XXE
+
+* API SOAP (DTD)
+* Configuration to disable XXE
+* File Upload (network request)
 </div></div>

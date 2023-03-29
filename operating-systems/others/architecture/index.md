@@ -272,6 +272,13 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* bios/uefi (secure boot, rootkit, bootkit)
+* bios/uefi (secure boot)
+* cpu
+* bus
+* RAW (volatile): DRAM (SDRAM, EDO DRAM, BEDO DRAM, DDR SDRAM), Static (SRAM), Cache
+* ROW (not volatile): ROM (PROM, EPROM, EEPROM), Flash (USB...)
 </div><div>
+
+* Little Man Computer (LMC)
+* Each app has its memory space and others can't access it
 </div></div>
