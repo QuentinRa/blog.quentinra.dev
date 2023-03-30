@@ -78,6 +78,7 @@ Stuff that I found, but never read/used yet.
 * [joomscan](https://github.com/OWASP/joomscan)
 </div><div>
 
+* `sudo arp-scan -l -I eth0`
 * Medusa
 * Empire
 * SET (Social Engineer Toolkit)

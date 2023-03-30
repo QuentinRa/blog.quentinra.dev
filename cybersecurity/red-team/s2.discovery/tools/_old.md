@@ -1,32 +1,4 @@
-# **ICMP Requests** ⚠
-
-<div class="row row-cols-md-2"><div>
-
-By default, nmap will send a query checking if a host is up. This query is an ICMP request, but they are **blocked on Windows** <small>(Windows replies closed to every ICMP request by default)</small>.
-
-To scan Windows hosts, use the option `-Pn`. The problem with that, is that if the host is actually not running Windows, but is down, then you will wait a lot, so only use that if you are sure that the host is up, or you were informed that the host does not accept ICMP requests (#CTF).
-</div><div>
-
-If you receive a response using ping, everything is good. If you don't, then either the host is up, and blocking ICMP requests, or it's down.
-
-```bash
-$ ping -c 10 IP
-```
-
-Example of using `-Pn`
-
-```bash
-$ nmap IP # not working if it's a Windows host
-$ nmap IP -Pn # fixed 😎
-```
-</div></div>
-
-> **Random note**: if you try to use nmap on a host living in the same network, then, if the scan is run with elevated privileges, an ARP scan will be used instead. You can explicitly request an ARP scan with `-PR`. Another way of doing an ARP scan is using `sudo arp-scan -l -I eth0`.<br><br>
-> **Random note**: ICMP echo requests `-PE`. ICMP timestamp requests `-PP`. ICMP 17/18 `-PM`. TCP 3-way handshake `-PS`. TCP ACK `-PA`. UDP `-PU`.
-
-<hr class="sep-both">
-
-## 🔎 Nmap in practice 🔎
+# 🔎 Nmap in practice 🔎
 
 <div class="row row-cols-md-2"><div>
 
@@ -56,55 +28,6 @@ $ nmap -sV scanme.nmap.org -vv
 
 <hr class="sep-both">
 
-## 📌 Nmap Scripting Engine (NSE) 📌
-
-Actually, when you are requesting information about the host, this information is found using scripts. This is because nmap has a [library of scripts](https://nmap.org/book/nse-usage.html), that you can even use to exploit the target.
-
-<div class="row row-cols-md-2"><div>
-
-Scripts are stocked in categories such as
-
-* `safe`: won't harm the target
-* `intrusive`: will harm the target
-* `vuln`: scan for vulnerabilities
-* `exploit`: try to exploit a vulnerability
-* `brute`: attempt brute force
-* `discovery`: try to discover more about the network.
-
-You can execute every script of a category
-
-```bash
-$ nmap scanme.nmap.org --script=vuln
-$ nmap scanme.nmap.org --script vuln # same
-```
-
-> **Note**: I had to disable some functionalities of my antivirus, otherwise some/most NSE scripts would fail.
-
-</div><div>
-
-To find a script
-
-* Use NSEDoc, for instance ["smb" NSE scripts](https://nmap.org/search/?q=smb)
-* Or, use commands, `ls -l /usr/share/nmap/scripts/*smb*`
-* Note that there are also CVEs!
-
-You can run a specific script that you selected
-
-```bash
-$ nmap scanme.nmap.org --script=lua_script
-# run two scripts, set argument "key" of "s1" to "value"
-$ nmap scanme.nmap.org --script=s1,s2 --script-args s1.key=value
-```
-
-You can also use patterns to select scripts 👑
-
-```bash
-$ nmap scanme.nmap.org --script "ftp*"
-```
-</div></div>
-
-<hr class="sep-both">
-
 ## 👑 Other notes 👑
 
 <div class="row row-cols-md-2 mt-4"><div>
@@ -129,18 +52,7 @@ You can also use someone else MAC, but it's only useful if you are on the same n
 ```bash
 $ nmap --spoof-mac SPOOFED_MAC
 ```
-
-**Option `--reason`**
-
-You can ask nmap to give the reason why a port is identified as "xxx". This will add a column "REASON" in the result, which is usually present by default (at least on Kali).
-
 </div><div>
-
-**Select a network interface**
-
-```bash
-$ nmap -e NETWORK_INTERFACE
-```
 <span></span>
 
 **Decoys**
@@ -150,7 +62,6 @@ You can create decoys, i.e. make nmap create multiple packets with the same requ
 ```bash
 $ nmap -D A,B,YOUR_IP target
 ```
-<span></span>
 
 **Fragmentation**
 
@@ -162,50 +73,4 @@ $ nmap -ff # create packets of 16 bytes or less
 $ nmap --mtu xxx # maximum transfer unit (multiple of 8)
 $ nmap --data-length length # split by length
 ```
-<span></span>
-
-**Traceroute**
-
-You can ask nmap to do a traceroute, much like with `traceroute`.
-
-```bash
-$ nmap [...] --traceroute
-```
-</div></div>
-
-<hr class="sep-both">
-
-## 🥳 metasploit and nmap ⚡
-
-[![metasploitexploitation](../../_badges/thmp/metasploitexploitation.svg)](https://tryhackme.com/room/metasploitexploitation)
-
-[See metasploit framework - Database / Workspaces](/_cybersecurity/exploitation/general/metasploit/msfconsole.md#-the-metasploit-database-)
-
-<div class="row row-cols-md-2"><div>
-
-* First, start msf database
-* Second, create a workspace (optional)
-* Third, start your scan with `db_nmap`
-* Four, work on it
-</div><div>
-
-The command `db_nmap` is the same as `nmap`.
-
-```bash
-msf6 > db_nmap -sV -p- IP
-```
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-* `nmap -sA x.x.x.x` (filtered/unfiltered)
-* `nmap --log-errors`
-</div><div>
-
 </div></div>

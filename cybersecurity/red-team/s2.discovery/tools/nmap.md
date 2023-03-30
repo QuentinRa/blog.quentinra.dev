@@ -69,6 +69,17 @@ $ nmap -vv [...]
 ```
 
 📌 You can press <kbd>Enter</kbd> during a scan in progress to prompt the progression of the scan.
+
+
+##### Host probing
+
+nmap will try to see if a host is up before scanning it. Many hosts, including Windows hosts, do not reply to ICMP requests, so the scan will fail. In such case, you should skip this check:
+
+```ps
+$ nmap -Pn [...]
+```
+
+➡️ An ARP request is used if the target in on the same network.
 </div><div>
 
 ##### Store results
@@ -171,7 +182,7 @@ $ sudo nmap [...] --scanflags RSTSYNFIN
 
 <hr class="sep-both">
 
-## Additional notes on the host 🎯
+## Host specification 🎯
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -216,6 +227,85 @@ $ nmap -sL -n 92.168.0.1/29
 
 <hr class="sep-both">
 
+## Nmap Scripting Engine (NSE) 📌
+
+<div class="row row-cols-md-2"><div>
+
+When using flags such as `-sV` or `-sC`, you are actually using [nmap scripts](https://nmap.org/book/nse-usage.html). They are categorized in 6 categories as follows:
+
+* `safe`: won't harm the target
+* `intrusive`: will harm the target
+* `vuln`: scan for vulnerabilities
+* `exploit`: try to exploit a vulnerability
+* `brute`: attempt to brute force
+* `discovery`: try to discover more about the network.
+
+You can execute every script of a category
+
+```ps
+$ nmap [...] --script=vuln
+$ nmap [...] --script vuln # same
+```
+
+🔥 I had to disable some functionalities of my antivirus, otherwise some/most NSE scripts would fail.
+
+</div><div>
+
+To find a script
+
+* Use NSEDoc, for instance ["smb" NSE scripts](https://nmap.org/search/?q=smb)
+* Or, use commands, `ls -l /usr/share/nmap/scripts/*smb*`
+* Note that there are also CVEs!
+
+You can run a specific script that you selected
+
+```ps
+$ nmap [...] --script=lua_script
+# run two scripts, set argument "key" of "s1" to "value"
+$ nmap [...] --script=s1,s2 --script-args s1.key=value
+```
+
+You can also use patterns to select scripts, but you may inadvertently use scripts that you were not supposed to.
+
+```ps
+$ nmap [...] --script "ftp*"
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Other options 🥾
+
+<div class="row row-cols-md-2"><div>
+
+##### Select a network interface
+
+```ps
+$ nmap -e NETWORK_INTERFACE [...]
+```
+
+<br>
+
+##### Ask for the reason
+
+You can ask nmap to give the reason why a port is identified as "xxx". This will add a column "REASON" in the result, which is usually present by default <small>(at least on Kali)</small>.
+
+```ps
+$ nmap [...] --reason
+```
+</div><div>
+
+##### Traceroute
+
+You can ask nmap to do a traceroute, much like with `traceroute`.
+
+```ps
+$ nmap [...] --traceroute
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -223,7 +313,15 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [old](_old.md)
+* ` nmap --log-errors `
 </div><div>
 
+Host probing
 
+* `-PE`: ICMP echo requests (default if root)
+* `-PP`: ICMP timestamp requests
+* `-PM`: ICMP type 17/18 packets
+* `-PS`: TCP SYN packet to port 80
+* `-PA`: TCP ACK packet to port 80
+* `-PU`: UDP packet to a random port
 </div></div>

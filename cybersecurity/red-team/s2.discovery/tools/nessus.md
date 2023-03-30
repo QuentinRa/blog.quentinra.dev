@@ -37,32 +37,3 @@ It's important to note that Nessus is generating a lot of traffic, and may not f
 </div></div>
 
 > **Note**: if you have a scope/knowledge of specific ports/... to scan, you can define a policy in the Policy tab.<br>
-
-<hr class="sep-both">
-
-## 🥳 Metasploit and nessus ⚡
-
-<div class="row row-cols-md-2"><div>
-
-First, in the Nessus web interface, when exploring each vulnerability one by one, you may find a section **Exploitable With** indicating tools that Nessus knows you can exploit this vulnerability with these.
-
-![nessus_exploit_with](_images/nessus_exploit_with.png)
-
-* First, start msf database
-* Second, create a workspace (optional)
-* Third, import your scan inside the database
-* Four, work on it
-</div><div>
-
-Everything below is coming from [this tutorial](https://scubarda.com/2015/11/16/launching-nessus-scans-inside-metasploit/), but Metasploit unleashed has also [some tips](https://www.offensive-security.com/metasploit-unleashed/working-with-nessus/).
-
-```bash
-msf6 > load nessus
-# Connect
-msf6 > nessus_connect user:pass@localhost:8834
-# List the scans that you did
-msf6 > nessus_scan_list
-# Import the result of a scan
-msf6 > nessus_db_import id_you_found_in_the_list
-```
-</div></div>
