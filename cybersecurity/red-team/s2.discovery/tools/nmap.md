@@ -227,6 +227,42 @@ $ nmap -sL -n 192.168.0/29 [...]
 
 <hr class="sep-both">
 
+## Target host information 🎣
+
+<div class="row row-cols-md-2"><div>
+
+nmap can try to guess the [protocols](/operating-systems/networking/knowledge/index.md#protocols) and service running on a port, along with its version. If a service has been secured, then it may not leak much information <small>(i.g. the version may be hidden...)</small>.
+
+* **Service and versions**: guess the service and version used by an open port <small>(ex: 80 $\to$ Apache x.xx.xx)</small>. May expose the OS too.
+
+```ps
+$ nmap -sV [...]
+```
+
+➡️ You may set the intensity with `--version-intensity level` <small>(from 0 to 9)</small>. There are shortcuts `--version-light` (2), and `--version-all` (9).
+</div><div>
+
+* **Operating system**: try to guess the OS. Sometimes `-sV` or others may be more reliable.
+
+```ps
+$ nmap -O [...]
+```
+
+* **Default scripts**: run default scripts to find vulnerabilities, find the hostname/computer name and other information...
+
+```ps
+$ nmap -sC [...]
+```
+
+* **All**: operating system, script, services, and traceroute
+
+```ps
+$ nmap -A [...]
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Stealth 🐈
 
 <div class="row row-cols-md-2"><div>
