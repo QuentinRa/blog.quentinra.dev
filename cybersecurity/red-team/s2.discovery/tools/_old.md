@@ -24,64 +24,6 @@ $ nmap IP -Pn # fixed 😎
 > **Random note**: if you try to use nmap on a host living in the same network, then, if the scan is run with elevated privileges, an ARP scan will be used instead. You can explicitly request an ARP scan with `-PR`. Another way of doing an ARP scan is using `sudo arp-scan -l -I eth0`.<br><br>
 > **Random note**: ICMP echo requests `-PE`. ICMP timestamp requests `-PP`. ICMP 17/18 `-PM`. TCP 3-way handshake `-PS`. TCP ACK `-PA`. UDP `-PU`.
 
-
-<hr class="sep-both">
-
-## 🤯 Kinds of scans 🤯
-
-Nmap can do multiple **scans** with `-s<type>`, and it's up to you to pick the "right" one according to your case, and what you are looking for, along with the constraints that you may have.
-
-<div class="row row-cols-md-2"><div>
-
-### ➡️ TCP Scans
-
-> **TCP scans** are scans used to **detect TCP ports**, meaning ports used by a protocol using the connection-based protocol TCP. TCP is a protocol in which every message sent, is followed by a reply, and an acknowledgment of receiving the reply. This is slower than UDP, but, it allows us to ensure that a message is received.
-
-*  **TCP Scan** | `-sT`. Default scan if not root. Usually blocked by firewalls. Send an SYN packet, and receive RST (closed), or SYN/ACK (open). If the latter, answer back with ACK (3-ways handshake).
-
-* **TCP Syn (Half-open/Stealth) Scan** | `-sS` | `Need root privileges`. Default scan as root. Same as a TCP scan, but close the connection with 'RST,ACK'. Sightly faster than `-sT`.
-
-The 3 scans below can be used to try to bypass weak firewalls that have only rules for the two previous well-known scans. As they are only checking if a port is closed, every port is marked `open|filtered`. Note that some OS such as Windows, are responding `closed` to any malformed packet.
-
-* **TCP NULL scans** | `-sN` | `Need root privileges`. Send a malformed packet with no flags. If the port is closed, an RST packet is received.
-
-* **TCP FIN scans** | `-sF` | `Need root privileges`. Send a malformed packet with an invalid flag (FIN). If the port is closed, an RST packet is received.
-
-* **TCP Xmas scans** | `-sX` | `Need root privileges`. Send an unexpected packet with FIN+PSH+URG flags.  If the port is closed, an RST packet is received.
-
-* **Maimon scan** | `-sM` | `Need root privileges`. Useless. Send an unexpected packet with FIN+ACK flags. Most modern targets will reply with RST regardless of whether the port is open, or not.
-
-</div><div>
-
-### ➡️ UDP Scans
-
-> **UDP Scans** are scans used to **detect UDP ports**, meaning ports using the UDP connection-less protocol, in which a message is sent, with no reply, and without care if the message was received or not, corrupted or not... This is quite faster than TCP.
-
-* **UDP Scan** | `-sU` | `Need root privileges`. The scan is slow as UDP ports may only respond if they are closed (with a PING/ICMP), so the scan must send multiple requests, to ensure that the port isn't closed, as there is no way to ensure that the port is open, so they are usually marked as `open|filtered`.
-
-### ➡️ ICMP Scans
-
-* **Ping Scan** | `-sn`. Do not scan ports, instead, check if a host is up. It uses ARP if started as root, and the target is on the same network.
-
-### ➡️ Scans to find ports unprotected by a firewall
-
-* **ACK scan** | `-sA`. Send a packet with ACK, any port will reply with RST. But, the response is analyzed to find if the firewall or the port responded.
-
-* **Window scan** | `-sW`. Same as ACK, but analyze the window field to identify who responded. On some systems, it may even help in determining if the port is open, or not.
-
-Note that a port not being protected by a firewall does not imply that the port is open, as the firewall may not have been updated.
-
-### ➡️ Custom
-
-You can create custom scans with `--scanflags`
-
-```bash
-# RST SYN FIN enabled
-$ sudo nmap [...] --scanflags RSTSYNFIN
-```
-
-</div></div>
-
 <hr class="sep-both">
 
 ## 🔎 Nmap in practice 🔎
