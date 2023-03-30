@@ -41,7 +41,7 @@ Once you found a port, refer to the [protocols](/operating-systems/networking/kn
 
 <hr class="sep-both">
 
-## Basic usage 🐈
+## Basic usage 🚸
 
 <div class="row row-cols-md-2"><div>
 
@@ -127,7 +127,7 @@ There are many types of scans, and we will usually use the most appropriate give
 
 Used for ports using the [TCP](/operating-systems/networking/protocols/tcp.md) protocol.
 
-* **TCP Scan** | `-sT`. Default scan if not root. Usually blocked by firewalls. Send an SYN packet, and receive RST (closed), or SYN/ACK (open). If the latter, answer back with ACK (3-ways handshake).
+* **TCP Scan** | `-sT`. Default scan if not root. Usually blocked by firewalls. Send an SYN packet, and receive RST <small>(closed)</small>, or SYN/ACK <small>(open)</small>. If the latter, answer back with ACK <small>(3-ways handshake)</small>.
 
 * **TCP Syn (Half-open/Stealth) Scan** | `-sS` | `Need root privileges`. Default scan as root. Same as a TCP scan, but close the connection with 'RST,ACK'. Sightly faster than `-sT`.
 
@@ -189,10 +189,10 @@ $ sudo nmap [...] --scanflags RSTSYNFIN
 Nmap can scan one or more hosts
 
 ```ps
-$ nmap 127.0.0.1
-$ nmap 127.0.0.* # from 0 to 254
-$ nmap 127.0.0.0-254 # same
-$ nmap 127.168.0.0/24 # same
+$ nmap 192.168.0.0
+$ nmap 192.168.0.* # from 0 to 254
+$ nmap 192.168.0.0-254 # same
+$ nmap 192.168.0.0/24 # same
 $ nmap scanme.nmap.org # a domain name
 $ nmap -iL hosts.txt # file
 $ nmap xxx yyy zzz # list
@@ -208,21 +208,67 @@ $ nmap [...] --exclude x.x.x.x
 If you don't want `nmap` to fetch DNS records, use `-n`. You can use `-R` to force `nmap` to query DNS servers.
 
 ```ps
-$ nmap -n 10.10.12.13
+$ nmap -n x.x.x.x [...]
 # won't look for the domain associated with this IP
 ```
 
 You can use `-sL` to list every host that will be scanned.
 
 ```ps
-$ nmap -sL -n 92.168.0.1/29
-# Nmap scan report for 92.168.0.0
+$ nmap -sL -n 192.168.0/29 [...]
+# Nmap scan report for 192.168.0.0
 # [...]
-# Nmap scan report for 92.168.0.7
-# Nmap done: 8 IP addresses (0 hosts up) scanned in 0.01 seconds
+# Nmap scan report for 192.168.0.7
+# Nmap done: 8 IP addresses (0 hosts up)
 ```
 
 👉 This may be useful to know how many hosts will be scanned.
+</div></div>
+
+<hr class="sep-both">
+
+## Stealth 🐈
+
+<div class="row row-cols-md-2"><div>
+
+nmap can send more or less stealthy by adding a timing between requests. It ranges from 0 to 5, while 0 means one request per 5 minutes <small>(paranoid (0), sneaky (1), polite (2), normal (3), aggressive (4), and insane (5))</small>. `3` is the default, `0`/`1` are usually used for stealth, `4` is used in CTFs, and `5` can be inaccurate as many packets may be lost.
+
+```ps
+$ nmap [...] -T4
+```
+
+➡️ See also `--min-rate`/`--mix-parallelism` (resp. max).
+
+<br>
+
+##### IP spoofing
+
+Spoof the requester IP. It's useless if you can't get the response.
+
+```ps
+$ nmap [...] -S SOME_OTHER_IP
+```
+</div><div>
+
+##### MAC spoofing
+
+Spoof the requester MAC. It's useless if you can't get the response. Also, it may be useless if you don't use a MAC address that is on the same network that the target.
+
+```ps
+$ nmap [...] --spoof-mac SPOOFED_MAC
+```
+
+##### Decoys
+
+Simulate that multiple IP are making the request, to hide yours in the list of provided IPs.
+
+```ps
+$ nmap [...] -D XXX,YYY,YOUR_IP
+```
+
+##### ️🧟️ Zombies/Idle host `-sI` 🧟 
+
+An idle host is not making any requests, such as a printer. We can use it to make requests instead of us. Every packet has an ID that is usually incrementing by one at every request. We will query the zombie once to know the starting number, spoof a request using the zombie IP, then query again the packet ID, and we will know if the target replied to them, or not.
 </div></div>
 
 <hr class="sep-both">
@@ -281,7 +327,7 @@ $ nmap [...] --script "ftp*"
 ##### Select a network interface
 
 ```ps
-$ nmap -e NETWORK_INTERFACE [...]
+$ nmap [...] -e NETWORK_INTERFACE
 ```
 
 <br>
@@ -301,6 +347,17 @@ You can ask nmap to do a traceroute, much like with `traceroute`.
 
 ```ps
 $ nmap [...] --traceroute
+```
+
+##### Fragmentation
+
+You can fragment packets which may be used to bypass firewalls
+
+```ps
+$ nmap -f # create packets of 8 bytes or less
+$ nmap -ff # create packets of 16 bytes or less
+$ nmap --mtu xxx # maximum transfer unit (multiple of 8)
+$ nmap --data-length length # split by length
 ```
 </div></div>
 
