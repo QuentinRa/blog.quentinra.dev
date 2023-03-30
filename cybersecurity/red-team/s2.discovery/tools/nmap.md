@@ -41,6 +41,104 @@ Once you found a port, refer to the [protocols](/operating-systems/networking/kn
 
 <hr class="sep-both">
 
+## Basic usage 🐈
+
+<div class="row row-cols-md-2"><div>
+
+nmap is quite complex. First, provide some **hosts**. We can use `scanme.nmap.org` for testing purposes. 
+
+```ps
+$ nmap scanme.nmap.org
+```
+
+##### Scan type
+
+nmap has many types of scans. Each type is a flag starting with `s` such as `-sT` or `-sS`.
+
+```ps
+$ nmap -sT [...] # no root required for sT
+$ sudo nmap -sS [...] # root required for sS
+```
+
+##### Verbosity
+
+As scans are usually slow, we usually increase the verbosity to know what's happening. You can use `-v`, `-vv`, `-d`, and `-dd`.
+
+```ps
+$ nmap -vv [...]
+```
+
+📌 You can press <kbd>Enter</kbd> during a scan in progress to prompt the progression of the scan.
+</div><div>
+
+##### Store results
+
+To avoid losing the result, especially as it takes time, and we may work a lot on it, you should **store** it.
+
+```ps
+$ nmap [...] > output_file_name # 🤔
+$ nmap [...] -oA output_file_name # all formats
+$ nmap [...] -oN output_file_name # .nmap
+$ nmap [...] -oG output_file_name # grep-able
+$ nmap [...] -oX output_file_name # xml
+```
+
+##### Port range
+
+We often only limit the scan to some **ports**. By default, the top 1000 most common ports are randomly tested.
+
+```ps
+$ nmap [...] -F # Fast, only top 100
+$ nmap [...] -p 22 # only port 22
+$ nmap [...] -p 22,23 # both 22, and 23
+$ nmap [...] -p 0-65535 # from x to y
+$ nmap [...] -p- # same as 0-65535
+$ nmap [...] -p22-25,80,443 # mix
+$ nmap [...] -top-ports 20 # top 20
+```
+
+➡️ Use `-r` to sequentially test ports.
+</div></div>
+
+<hr class="sep-both">
+
+## Additional notes on the host 🎯
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+Nmap can scan one or more hosts
+
+```bash
+$ nmap 127.0.0.1
+$ nmap 192.168.0.1-254 # from 1 to 254
+$ nmap 192.168.0.0/24 # same
+$ nmap scanme.nmap.org scanme.nmap.org # list
+$ nmap -iL hosts.txt
+```
+
+If you don't want `nmap` to fetch DNS records, use `-n`. You can use `-R` to force `nmap` to query DNS servers.
+
+```bash
+$ nmap -n 10.10.12.13
+# won't look for the domain associated with this IP
+```
+</div><div>
+
+You can use `-sL` to list every host that will be scanned.
+
+```bash
+$ nmap -sL -n 92.168.0.1/29
+# Nmap scan report for 92.168.0.0
+# [...]
+# Nmap scan report for 92.168.0.7
+# Nmap done: 8 IP addresses (0 hosts up) scanned in 0.01 seconds
+```
+
+👉 This may be useful to know how many hosts will be scanned.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

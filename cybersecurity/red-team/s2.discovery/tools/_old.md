@@ -24,40 +24,6 @@ $ nmap IP -Pn # fixed 😎
 > **Random note**: if you try to use nmap on a host living in the same network, then, if the scan is run with elevated privileges, an ARP scan will be used instead. You can explicitly request an ARP scan with `-PR`. Another way of doing an ARP scan is using `sudo arp-scan -l -I eth0`.<br><br>
 > **Random note**: ICMP echo requests `-PE`. ICMP timestamp requests `-PP`. ICMP 17/18 `-PM`. TCP 3-way handshake `-PS`. TCP ACK `-PA`. UDP `-PU`.
 
-<hr class="sep-both">
-
-##  🎯 Define the target(s) 🎯
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-Nmap can scan one or more hosts
-
-```bash
-$ nmap 127.0.0.1
-$ nmap 192.168.0.1-254 # from 1 to 254
-$ nmap 192.168.0.0/24 # same
-$ nmap scanme.nmap.org scanme.nmap.org # list
-$ nmap -iL hosts.txt
-```
-
-If you don't want `nmap` to fetch DNS records, use `-n`. You can use `-R` to force `nmap` to query DNS servers.
-
-```bash
-$ nmap -n 10.10.12.13
-# won't look for the domain associated with this IP
-```
-</div><div>
-
-You can use `-sL` to list every host that will be scanned.
-
-```bash
-$ nmap -sL -n 92.168.0.1/29
-# Nmap scan report for 92.168.0.0
-# [...]
-# Nmap scan report for 92.168.0.7
-# Nmap done: 8 IP addresses (0 hosts up) scanned in 0.01 seconds
-```
-</div></div>
 
 <hr class="sep-both">
 
@@ -121,58 +87,9 @@ $ sudo nmap [...] --scanflags RSTSYNFIN
 ## 🔎 Nmap in practice 🔎
 
 <div class="row row-cols-md-2"><div>
-
-<p class="mt-3"><b>1. Required parameters</b></p>
-
-As mentioned before, we need a host (or multiple hosts)
-
-```bash
-$ nmap scanme.nmap.org
-```
-
-Then, we will use a kind of scan according to the situation.
-
-```bash
-# in CTF, these two are the most used ones
-$ nmap -sT scanme.nmap.org
-$ sudo nmap -sS scanme.nmap.org
-# ...
-```
-
-<p class="mt-3"><b>2. Verbose</b></p>
-
-Usually, as scans take a lot of time, we are adding `-v` to increase the verbosity. You can use `-v`, `-vv`, `-d`, and `-dd`.
-
-```bash
-$ nmap -vv scanme.nmap.org # level 2 verbose
-```
-
-<p class="mt-3"><b>3. Store result</b></p>
-
-```bash
-# primitive, and not really handy way
-$ nmap scanme.nmap.org > output_file_name
-# generate .nmap=-oN, .gnmap=-oG, and .xml=oX
-# -oG is kinda nice, as the file is grep-able (grep xxx output)
-$ nmap -vv scanme.nmap.org -oA output_file_name
-```
 </div><div>
 
 <p class="mt-3"><b>Select port ranges</b></p>
-
-By default, `nmap` will scan the top 1000 ports that should be checked.
-
-```bash
-$ nmap -vv scanme.nmap.org -F # Fast, only top 100
-$ nmap -vv scanme.nmap.org -p 22 # only port 22
-$ nmap -vv scanme.nmap.org -p 22,23 # both 22, and 23
-$ nmap -vv scanme.nmap.org -p 0-65535 # from 0 to ...
-$ nmap -vv scanme.nmap.org -p- # same !!!
-$ nmap -vv scanme.nmap.org -p22-25,80,443 # mix
-$ nmap -vv scanme.nmap.org -top-ports 20 # top 20
-```
-
-You can ask for ports to be queried in consecutive order with `-r`.
 
 <p class="mt-3"><b>Stealth level</b></p>
 
@@ -196,8 +113,6 @@ Other alternatives are `--min-rate/--max-rate` to set the rate per second, or `-
 $ nmap -sV scanme.nmap.org -vv
 ```
 </div></div>
-
-> **Random**: you can press <kbd>Enter</kbd> during a scan in progress to query the progress of the scan.
 
 <hr class="sep-both">
 
