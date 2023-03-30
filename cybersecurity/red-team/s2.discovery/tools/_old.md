@@ -87,9 +87,6 @@ $ sudo nmap [...] --scanflags RSTSYNFIN
 ## 🔎 Nmap in practice 🔎
 
 <div class="row row-cols-md-2"><div>
-</div><div>
-
-<p class="mt-3"><b>Select port ranges</b></p>
 
 <p class="mt-3"><b>Stealth level</b></p>
 
@@ -100,6 +97,7 @@ $ nmap -vv scanme.nmap.org -T5 -p22
 ```
 
 Other alternatives are `--min-rate/--max-rate` to set the rate per second, or `--min-parallelism/--max-parallelism` for the number of probes made in parallel.
+</div><div>
 
 <p class="mt-3"><b>Dig information</b></p>
 
@@ -264,13 +262,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* `nmap *.*.*.*`
-* `nmap *.*.*.* --exclude x.x.x.x`
 * `nmap -sA x.x.x.x` (filtered/unfiltered)
-* `nmap -p T:443` (TCP/443)
-* `nmap -p U:53` (UDP/53)
 * `nmap --log-errors`
 </div><div>
-
 
 </div></div>

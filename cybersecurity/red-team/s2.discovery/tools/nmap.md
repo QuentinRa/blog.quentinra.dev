@@ -95,6 +95,8 @@ $ nmap [...] -p 0-65535 # from x to y
 $ nmap [...] -p- # same as 0-65535
 $ nmap [...] -p22-25,80,443 # mix
 $ nmap [...] -top-ports 20 # top 20
+$ nmap [...] -p T:21 # TCP port 21
+$ nmap [...] -p U:53 # UDP port 53
 ```
 
 ➡️ Use `-r` to sequentially test ports.
@@ -108,25 +110,33 @@ $ nmap [...] -top-ports 20 # top 20
 
 Nmap can scan one or more hosts
 
-```bash
+```ps
 $ nmap 127.0.0.1
-$ nmap 192.168.0.1-254 # from 1 to 254
-$ nmap 192.168.0.0/24 # same
-$ nmap scanme.nmap.org scanme.nmap.org # list
-$ nmap -iL hosts.txt
+$ nmap 127.0.0.* # from 0 to 254
+$ nmap 127.0.0.0-254 # same
+$ nmap 127.168.0.0/24 # same
+$ nmap scanme.nmap.org # a domain name
+$ nmap -iL hosts.txt # file
+$ nmap xxx yyy zzz # list
 ```
 
-If you don't want `nmap` to fetch DNS records, use `-n`. You can use `-R` to force `nmap` to query DNS servers.
+You can exclude a machine from a scan
 
-```bash
-$ nmap -n 10.10.12.13
-# won't look for the domain associated with this IP
+```ps
+$ nmap [...] --exclude x.x.x.x
 ```
 </div><div>
 
+If you don't want `nmap` to fetch DNS records, use `-n`. You can use `-R` to force `nmap` to query DNS servers.
+
+```ps
+$ nmap -n 10.10.12.13
+# won't look for the domain associated with this IP
+```
+
 You can use `-sL` to list every host that will be scanned.
 
-```bash
+```ps
 $ nmap -sL -n 92.168.0.1/29
 # Nmap scan report for 92.168.0.0
 # [...]
