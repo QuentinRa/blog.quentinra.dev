@@ -144,3 +144,22 @@ IR
 * 3 phases: notify, restore & recuperation, monitoring
 * lansweeper
 </div></div>
+
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-md-2"><div>
+
+* VIP (virtual IP?)
+* AllSigned (and others modes|Get-ExecutionPolicy)
+* Get-Service -name spooler
+* Stop-Service -name spooler
+* Start-Service -name spooler
+* ISE
+* SAML (samltool.com)
+</div><div>
+
+...
+</div></div>
