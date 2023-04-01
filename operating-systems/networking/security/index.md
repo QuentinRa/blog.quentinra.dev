@@ -171,7 +171,6 @@ Stuff that I found, but never read/used yet.
 Access
 
 * Network Access Control (NAC): allow based on user+device
-* Data Loss Prevention (DLP): deny access to sensitive data
 </div><div>
 
 Firewall applicative
@@ -186,11 +185,4 @@ ACLs
 * RB-RBAC: if condition then permission (mails to folder)
 * ABAC: based on the value of the request attributes, resources, env
 * Where ACLs?: Database (no), Middleware/API (usually here), Client (dangerous is directly interacting with the API)
-
-Endpoint Protection
-
-* antivirus
-* anti-malware
-* intrusion prevention
-
 </div></div>
