@@ -14,11 +14,26 @@ $ ssh login@IP
 $ ssh login@IP -u port
 ```
 
-You may use a private key instead of a password (if configured).
+You may use a private key instead of a password (if configured). Note that the key must have at least the permissions `600`.
 
 ```ps
 $ ssh login@IP -i /path/to/id_rsa
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## SSH vulnerabilities ☠️
+
+<div class="row row-cols-md-2"><div>
+
+A hacker want to access the target host, and compromise it. 
+
+* The hacker may have found a `.ssh` folder, in which there may be a ssh certificate (`id_rsa`...) to connect to a host. This file may be protected by a password, but it may be [cracked](/cybersecurity/cryptography/algorithms/hashing/index.md#hash-cracking).
+
+* The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s3.exploitation/index.md#brute-force).
+
+</div><div>
 </div></div>
 
 <hr class="sep-both">

@@ -22,21 +22,12 @@ XXX
 
 * threatmap
 * ShadowServer
-
-NFS/SAMBA
-
-* Can be used for lateral movement
-* Can be used for data exfiltration
-* Can be used during investigation to access (sensitive?) data
-* Can be used for privilege escalation
 </div><div>
 
 Exploitation
 
 * DNS
 * [Old - network](/_kmp/_cybersecurity/exploitation/network/index.md)
-* [Old - services](/_kmp/_cybersecurity/exploitation/services/index.md)
-* [Old - printers](/_kmp/_cybersecurity/exploitation/services/printers.md)
 * [Old - bruteforce](/_kmp/_cybersecurity/exploitation/services/bruteforce.md)
 * [Old - Database](/_kmp/_cybersecurity/exploitation/database/index.md)
 * [Old - SQLi](/_kmp/_cybersecurity/exploitation/database/sqli/index.md)
