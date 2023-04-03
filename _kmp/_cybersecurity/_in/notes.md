@@ -14,6 +14,8 @@
 * https://cybersins.com/
 * https://portswigger.net/daily-swig
 * https://codecurmudgeon.com/wp/security-resources/
+* https://darknetdiaries.com/episode/1/
+* https://www.picoctf.org/
 * https://openvpn.net/community-downloads/
 * https://www.yubico.com/ + Google Passkeys / Windows Hello / iCloud Passkeys
 * https://www.schneier.com/

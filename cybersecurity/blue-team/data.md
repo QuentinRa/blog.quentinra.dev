@@ -379,6 +379,7 @@ Data breaches
 To prevent data breaches, the company after identifying, classifying, and prioritizing data, should find why data is likely to be targeted along the risks, and define required protections.
 
 * data recovery plans
+* Data Loss Prevention (DLP)
 * communication plans
 * data breach notification laws
 </div></div>

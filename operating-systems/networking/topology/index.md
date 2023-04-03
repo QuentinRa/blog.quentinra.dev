@@ -226,6 +226,7 @@ Topologies
 Devices
 
 * Router on a stick
+* [Jump server](https://en.wikipedia.org/wiki/Jump_server)
 
 Random
 

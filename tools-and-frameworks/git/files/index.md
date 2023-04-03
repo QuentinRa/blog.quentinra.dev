@@ -23,6 +23,7 @@ There are a few things you may also find in use
 
 * [Repository stars over time](https://starchart.cc/)
 * [Show contributors](https://contrib.rocks/)
+* [Show metrics](https://repobeats.axiom.co/)
 </div><div>
 
 #### 📦 LICENSE / LICENSE.txt

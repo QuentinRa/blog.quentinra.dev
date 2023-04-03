@@ -30,6 +30,8 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * `ssh xxx@yyy -T -L xxx:domain:xxx`: create a tunnel mapping one port to another
+* ssh-keygen
+* ssh-copy-id
 </div><div>
 
 
