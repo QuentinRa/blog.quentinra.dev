@@ -11,6 +11,9 @@
 * https://github.com/apsdehal/awesome-ctf
 * https://exceptionnotfound.net/
 * https://github.com/tomnomnom/waybackurls
+* https://cybersins.com/
+* https://portswigger.net/daily-swig
+* https://codecurmudgeon.com/wp/security-resources/
 * https://openvpn.net/community-downloads/
 * https://www.yubico.com/ + Google Passkeys / Windows Hello / iCloud Passkeys
 * https://www.schneier.com/

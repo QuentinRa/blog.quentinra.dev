@@ -202,7 +202,7 @@ And select an appropriate topology.
 It's a feature available in many network devices. We design the network to avoid  single point of failure, for instance, using hardware redundancy, so that if a device fails, another one can take over without causing disruption to network traffic.
 </div><div>
 
-#### Traffic mirroring
+#### Traffic mirroring/spanning
 
 This feature is available on many network switches. It allows us to duplicate the incoming and ongoing traffic to a monitored device such as a network analyzer or an IDS.
 </div></div>

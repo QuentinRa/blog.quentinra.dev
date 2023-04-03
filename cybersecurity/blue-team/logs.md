@@ -147,4 +147,5 @@ Stuff that I found, but never read/used yet.
 * access to resources
 * protect logs
 * confidential data in logs
+* Syslog server/rsyslog
 </div></div>

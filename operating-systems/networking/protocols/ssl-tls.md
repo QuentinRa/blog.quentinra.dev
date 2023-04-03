@@ -51,6 +51,10 @@ Stuff that I found, but never read/used yet.
 * [SSLScan](https://github.com/rbsec/sslscan)
 * Monitor > Renew certificate > Avoid expired problems
 * Let's encrypt notes in Web
+* SSL decryption
+* SSL hijacking
+* HTTPS spoofing 
+* SSL stripping
 </div><div>
 
 * [ssl-config](https://ssl-config.mozilla.org/)

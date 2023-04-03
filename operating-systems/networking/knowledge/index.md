@@ -197,6 +197,7 @@ VPN
 * PPTP use PPP, Point-to-Point Tunneling Protocol, allow leave network
 * Between two companies/an employee and the company
 * remote-site VPN/site-to-site VPN
+* Client and server (VPN subnet and ACLs?)
 
 Certification
 
