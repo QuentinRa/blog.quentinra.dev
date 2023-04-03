@@ -53,16 +53,35 @@ ftp> stat # same, but there is the version+ftp client name
 
 <hr class="sep-both">
 
+## FTP vulnerabilities ☠️
+
+[![kenobi](../../../cybersecurity/_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
+[![startup](../../../cybersecurity/_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
+[![cowboyhacker](../../../cybersecurity/_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
+
+<div class="row row-cols-md-2"><div>
+
+FTP may be used by hackers to find interesting files.
+
+* Anonymous users may have been enabled. Try a blank password if prompted. <small>(access to sensitive files, incorrect upload permissions...)</small>
+
+```ps
+$ ftp anonymous@IP
+```
+</div><div>
+
+* The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s3.exploitation/index.md#brute-force).
+
+* **ProFTPD 1.3.5**: There was a failure that allowed users to move files from a non-mounted path to the mounted path. You could steal an id_rsa for instance.
+
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
-
-* weak passwords
-* anonymous access
-* misconfigured permissions
 </div><div>
-
-
 </div></div>

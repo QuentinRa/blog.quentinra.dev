@@ -80,24 +80,24 @@ Given the FQDN `www.example.com`, `www` is the hostname, while `example.com` is 
 
 <hr class="sep-both">
 
-## DNS vulnerabilities
+## DNS vulnerabilities ☠️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2 mt-3"><div>
 
-**Open DNS resolvers** <small>(DNS allowing everyone to poll data)</small>
+* **Open DNS resolvers** <small>(DNS allowing everyone to poll data)</small>
 
 👉 An attacker can use them to amplify DDoS attacks. 💥 DDoS ➡️ Configure DNS to not respond to everyone, use rate-limiting.
 
-**Stealthy DNS attacks**
+* **Stealthy DNS attacks**
 
 👉 An attacker attempt to secretly alter a DNS records <small>(ex: redirect to a malicious site)</small> ➡️ See DNSSEC.
 </div><div>
 
-**DNS cloaking attacks**
+* **DNS cloaking attacks**
 
 👉 An attacker create malicious subdomains to a compromised domain ➡️ Monitor unauthorized DNS changes, DNS pinning...
 
-**DNS tunneling attacks**
+* **DNS tunneling attacks**
 
 👉 Use the DNS protocol to send malicious payload in DNS query to bypass firewalls/... ➡️ DNS firewalls...
 </div></div>
