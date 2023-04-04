@@ -78,23 +78,34 @@ A clause 👷 is an instruction within the request, such as SELECT. There are 3 
 
 Note that clauses names are case-insensitive <small>(select=SELECT=Select)</small>.
 
-**DDL (Data Definition)** 💼
+**DDL (Data Definition)** 💼: define a database/table
 
-* [CREATE]()
-* [ALTER]()
-* [DROP]()
+* [CREATE DATABASE](clauses/create.md) and [CREATE TABLE](clauses/create.md)
+* [ALTER DATABASE](clauses/alter.md) and [ALTER TABLE](clauses/alter.md)
+* [DROP DATABASE](clauses/drop.md) and [DROP TABLE](clauses/drop.md)
 
-**DCL (Data control)** 🔐
+**DCL (Data control)** 🔐: define users and permissions
 
+* [CREATE USER](clauses/create.md) and [DROP USER](clauses/drop.md)
 * [GRANT]()
 * [REVOKE]()
 </div><div>
 
-**DML (Data Manipulation)** 💰
+**DML (Data Manipulation)** 💰: manipulate data
 
 * [SELECT]()
 * [FROM]()
 * [WHERE]()
+* [LIMIT]()
+* [ORDER BY]()
+
+For more complex requests
+
+* [HAVING and Calculations]()
+* [JOIN and other kind of jointures]()
+
+These statement will change the database (new record/...):
+
 * [INSERT]()
 * [UPDATE]()
 * [DELETE]()

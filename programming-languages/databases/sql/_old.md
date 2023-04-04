@@ -351,10 +351,6 @@ SELECT * FROM customer2 c FULL OUTER JOIN purchase p
 -- list databases
 SHOW DATABASES
 
--- create
-CREATE DATABASE db_name 
-CREATE DATABASE db_name CHARACTER SET utf8mb4
-
 -- alter
 ALTER DATABASE db_name CHARACTER SET utf8mb4
 
@@ -366,31 +362,13 @@ DROP DATABASE db_name
 <details class="details-e">
 <summary>Tables</summary>
 
-You can create a table with `CREATE TABLE` passing all attributes, and their constraints if any.
-
-```sql
-CREATE TABLE T_NAME ( a_name a_type, ... );
-CREATE TABLE IF NOT EXISTS T_NAME ( a_name a_type, ... );
-```
-
 <details class="details-e mt-3">
 <summary>Attributes and constraints</summary>
 
 <div class="row mx-0 row-cols-md-2"><div>
 
-The syntax for an attribute is `<name> <type> [constraints]*`. If constraints are applied on multiple attributes, they must be declared separately <small>(you may also do the same for one-attribute constraints, but that's not how we usually do)</small>.
-
-| Constraints | Usage                                                         |
-|-------------|---------------------------------------------------------------|
-| NOT NULL    | Attribute can't be null                                       |
-| NULL        | Attribute can be null                                         |
-| UNIQUE      | Attribute must be unique                                      |
-| PRIMARY KEY | UNIQUE + NOT NULL                                             |
-| REFERENCES  | Attribute must take a value taken by the referenced attribute |
-
 These are the most used of the predefined constraints.
 
-* You can give a **default value** using `DEFAULT <value>`.
 * You can create your **own constraints** using `constraint nale check (bool_expression)` (named constraint) or `check (bool_expression)` (unammed constraint).
 
 <hr>
@@ -405,33 +383,6 @@ A **table should always have a primary key** <small>(artificial key, or foreign 
 ```
 
 </div><div>
-
-* Basics
-
-```sql
-fullname varchar(64),
-fullname varchar(64) NOT NULL,
-fullname varchar(64) DEFAULT 'John DOE',
-fullname varchar(64) UNIQUE,
--- multiple
-fullname varchar(64) NOT NULL DEFAULT 'John DOE',
--- primary key
-id int PRIMARY KEY,
--- Artificial key in MariaDB (+1 after each record added)
-id int AUTO_INCREMENT PRIMARY KEY,
--- id_user must take a value taken by "id" in the table USERS
-id_user int REFERENCES USERS(id),
-```
-
-* Multiples attributes
-
-```sql
--- if xxx is a tuple of more than one attribute
-PRIMARY KEY(attribute1, attribute2),
-UNIQUE(attribute1, attribute2),
-FOREIGN KEY (attribute1) REFERENCES ANOTHER_TABLE(an_attribute),
-FOREIGN KEY (attribute1, attribute2) REFERENCES ANOTHER_TABLE(an_attribute1, an_attribute2),
-```
 
 <details class="details-e">
 <summary>FOREIGN KEY</summary>
@@ -511,28 +462,11 @@ DROP TABLE a_table;
 <summary>Create and delete user</summary>
 
 ```sql
-CREATE USER username
-CREATE USER username IDENTIFIED BY 'password'
 DROP USER username
 DROP USER username CASCADE -- drop schema too
 ```
 
-If you need to access the user from a different domain that localhost, then you will most likely have to create a user not associated with localhost. By default, a user like `toto` implicitly means `toto@'127.0.0.1'` or `toto@'localhost'`. As you may guess, you can specify which ip can access this user.
-
-```sql
--- localhost only
-CREATE USER username
-CREATE USER username@'localhost'
-CREATE USER username@'127.0.0.1'
--- anyone
-CREATE USER username@'%'
-CREATE USER username@'%.%.%.%'
--- xx.xx.xx.0 to xx.xx.xx.255
-CREATE USER username@'xx.xx.xx.%'
-```
-
-Beware ! You "can't" use `DELETE USER username` (or any calls using username) if the domain isn't localhost. You will have to specify the domain everytime you use the username, something like `DELETE USER username@'%'`.
-
+* `DELETE USER username@'%'`.
 </details>
 
 <details class="details-e">

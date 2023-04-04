@@ -199,9 +199,9 @@ To find back numerical value, evaluate $(-1)^S * 1.M * 2^{E - q}$.
 
 <div class="row row-cols-md-2"><div>
 
-A string is an array of characters, such as `'a'`. A character is mapped to a number using a table, as we can only store integers.
+A string is an array of characters, such as `'a'`.  A string could have a fixed length, or a variable length. For the latter, we may use a null character such as `\0` to mark the end.
 
-A string could have a fixed length, or a variable length. For the latter, we may use a null character such as `\0` to mark the end.
+A character is encoded to a number following a charset, as we can only store integers. Some charset are ASCII, UTF...
 
 **ASCII table (7 bits)**
 
