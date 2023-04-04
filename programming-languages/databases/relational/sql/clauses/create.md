@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-The CREATE clause can be used to create
+The CREATE clause is used to create
 
 * 🗄️ Databases
 * 📄 Views
@@ -10,8 +10,6 @@ The CREATE clause can be used to create
 * 🧑 Users
 * ...
 </div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">
@@ -45,14 +43,16 @@ CREATE TABLE IF NOT EXISTS T_NAME ( a_name a_type, ... );
 The syntax for an attribute is: `<name> <type> [constraints]*`.
 
 ```sql!
-fullname varchar(64), -- type
-fullname varchar(64) NOT NULL, -- not null
-fullname varchar(64) DEFAULT 'John DOE', -- default value
-fullname varchar(64) UNIQUE, -- unique
-fullname varchar(64) NOT NULL DEFAULT 'John DOE', -- ...
-id int PRIMARY KEY, -- primary key
-id int AUTO_INCREMENT PRIMARY KEY, -- artificial key (+1)
-id_user int REFERENCES USERS(id), -- foreign key
+CREATE TABLE XXX(
+    aaa int, -- type
+    bbb int NOT NULL, -- not null
+    ccc int DEFAULT 'John DOE', -- default value
+    ddd int UNIQUE, -- unique
+    eee int NOT NULL DEFAULT 'John DOE', -- multiple
+    fff int PRIMARY KEY, -- primary key
+    ggg int AUTO_INCREMENT PRIMARY KEY, -- artificial key (+1)
+    id_user int REFERENCES USERS(id), -- foreign key
+);
 ```
 </div><div>
 

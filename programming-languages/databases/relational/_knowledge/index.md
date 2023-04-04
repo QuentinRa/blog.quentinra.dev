@@ -9,7 +9,7 @@ Relational databases are storing data into **tables** and **columns**. Tables ar
 ![Database Table X Column](_images/table_view.png)
 </div>
 
-The [Structured Query Language (SQL)](sql.md) is the most used language to query and manage relational databases.
+The [Structured Query Language (SQL)](../sql/index.md) is the most used language to query and manage relational databases.
 
 </div><div>
 
