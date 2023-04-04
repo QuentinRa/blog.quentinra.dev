@@ -170,3 +170,4 @@ $r = $result->getMatchedCount();
 
 * <https://docs.mongodb.com/php-library/current/tutorial/>
 * <https://stackoverflow.com/questions/30781476/how-to-unset-a-field-from-all-documents-with-php-mongo-adapter>
+* sudo apt install php7.4-mongodb

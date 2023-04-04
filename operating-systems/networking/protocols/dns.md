@@ -91,11 +91,15 @@ Given the FQDN `www.example.com`, `www` is the hostname, while `example.com` is 
 * **Stealthy DNS attacks**
 
 👉 An attacker attempt to secretly alter a DNS records <small>(ex: redirect to a malicious site)</small> ➡️ See DNSSEC.
-</div><div>
 
 * **DNS cloaking attacks**
 
 👉 An attacker create malicious subdomains to a compromised domain ➡️ Monitor unauthorized DNS changes, DNS pinning...
+</div><div>
+
+* **DNS Cache poisoning**
+
+👉 An attacker tries to send a reply to a DNS query before the DNS nameservers. The hacker much match the correct timing <small>(caching...)</small> and the correct query ID, which is relatively complicated. 💥 See the Kaminsky Cache poisoning attack (2008).
 
 * **DNS tunneling attacks**
 
@@ -180,6 +184,7 @@ Stuff that I found, but never read/used yet.
   (digitalocean)](https://www.digitalocean.com/community/tutorials/an-introduction-to-dns-terminology-components-and-concepts)
 * DNS poisoning
 * DNS relay
+* DOT (DNS Over TLS)
 </div><div>
 
 * dig/nslookup
