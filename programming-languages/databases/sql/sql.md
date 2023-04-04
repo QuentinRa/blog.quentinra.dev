@@ -18,6 +18,55 @@ WHERE username = 'admin';
 
 <hr class="sep-both">
 
+## SQL Basics 🃏
+
+<div class="row row-cols-md-2"><div>
+
+#### Types
+
+Common types are:
+
+* `varchar(1)`: one character (a char)
+* `varchar(n)`: a fixed-size string
+* `text`: a dynamically-sized string
+* `int`/`int(n)`/`number`: an integer
+* `int(1)`: a common type for a boolean
+* `float`/`real`: a floating-point number
+* `decimal(n,p)`: a common type for a price
+* `date`: a date
+* `enum('v1', 'v2', ...)`: a type taking values in a list
+
+<br>
+
+#### Strings
+
+* You can use single or double quotes for strings
+* To escape a quote, use either `'a''b'` or `'a\'b'`
+* To concatenate, use `||` giving us `'a' || 'b'`
+* Some functions you may use: `STRCMP(str1, str2)`, `LENGTH('str')`, `LOWER('str')`, `UPPER('str')`, `LEFT(string, count)`, and `RIGHT(string, count)`.
+
+</div><div>
+
+#### Comments
+
+```sql!
+-- comment
+/* comment */
+```
+
+<br>
+
+#### Useful functions
+
+Refer to [W3Schools - SQL Server Functions](https://www.w3schools.com/SQL/sql_ref_sqlserver.asp).
+
+* `MOD(a, b)`: a modulus b
+* `CAST(value as new_type)`: cast a value to another type
+* `EXTRACT(element from some_date)`: extract XXX from a date
+</div></div>
+
+<hr class="sep-both">
+
 ## SQL Clauses 👷
 
 <div class="row row-cols-md-2"><div>
@@ -27,24 +76,28 @@ A clause 👷 is an instruction within the request, such as SELECT. There are 3 
 * Declaration `SELECT`>`FROM`>`WHERE`>`GROUP BY`>`HAVING`>`ORDER BY`>`LIMIT`
 * Execution `FROM`>`WHERE`>`GROUP BY`>`HAVING`>`SELECT`>`ORDER BY`>`LIMIT`
 
-**DML (Data Manipulation)** 💰
-
-* [Select]()
-* [Insert]()
-* [Update]()
-* [Delete]()
-</div><div>
+Note that clauses names are case-insensitive <small>(select=SELECT=Select)</small>.
 
 **DDL (Data Definition)** 💼
 
-* [Create]()
-* [Alter]()
-* [Drop]()
+* [CREATE]()
+* [ALTER]()
+* [DROP]()
 
 **DCL (Data control)** 🔐
 
-* [Grant]()
-* [Revoke]()
+* [GRANT]()
+* [REVOKE]()
+</div><div>
+
+**DML (Data Manipulation)** 💰
+
+* [SELECT]()
+* [FROM]()
+* [WHERE]()
+* [INSERT]()
+* [UPDATE]()
+* [DELETE]()
 </div></div>
 
 <hr class="sep-both">

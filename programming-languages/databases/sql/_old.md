@@ -1,9 +1,5 @@
 # Structured Query Language
 
-<hr class="sl">
-
-## DML (Data Manipulation)
-
 You can see a DML request, as a request returning a table. You will define in **SELECT** the attributes of your table, in **FROM** where the tuples are selected, and in **WHERE** some restrictions on the tuples selected.
 
 <details class="details-e">
