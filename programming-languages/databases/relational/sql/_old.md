@@ -50,26 +50,6 @@ Output: ![Select SQL output](_images/dml/select2.png)
 </div></div></details>
 
 <details class="details-e">
-<summary>From</summary>
-
-You are using columns in select. But they are coming from somewhere... That's where the `FROM` comes in handy. Pick the table <small>(for more than one, see JOINT clauses)</small> you want to select columns (and their values) from.
-
-```sql
--- the basic 🤓
-SELECT * FROM customer;
--- prefix (used later, ONLY WHEN NEEDED)
-SELECT customer.* FROM customer;
-SELECT c.* FROM customer c;
-SELECT c.name FROM customer c;
-
--- this is the cartesian product, you will get
--- count_lines(c1) * count_lines(c2) records
--- LEARN ABOUT JOINTURES LATER
-SELECT * FROM customer c1, customer c2;
-```
-</details>
-
-<details class="details-e">
 <summary>Where (<code>Restriction</code>)</summary>
 
 Most likely the most complex one. You can filter your result using this clause.
@@ -231,86 +211,6 @@ FROM customer
 ```
 </details>
 
-<hr class="sr">
-
-## DML (Data Manipulation) - Joint clause
-
-The last time we tried to use two tables, we got the cartesian product, **which is what you will get if the joint clause fails**. This clause will try to merge the tables in the FROM. Given the two following tables Customer2 ("A") and Purchase ("B")
-
-![Table A](_images/jointA.png)
-![Table B](_images/jointB.png)
-
-<details class="details-e">
-<summary>NATURAL JOIN (<code>Jointure Naturelle</code>, <small>>=SQL-92</small>)</summary>
-
-Cartesian product based on the columns having the **same name**.
-
-```sql
--- name of every customer that made of purchase
-SELECT * FROM customer2 NATURAL JOIN purchase
--- result: [(1, 'Luna', ..., '1', '2021-10-23'), (1, 'Luna', ..., '2', '2021-10-23')]
-```
-
-> **Beware of Natural Join!!!** You may have missed the fact that you got the column 'name' (example) in both tables making your result different from what you were expecting (it happens, really...).
-</details>
-
-<details class="details-e">
-<summary>NATURAL JOIN before? <small>(<=SQL-89)</small></summary>
-
-We were making a cartesian product, before filtering the results in the where.
-
-```sql
-SELECT * FROM customer2 c, purchase p
-WHERE c.c_id = p.c_id
-```
-</details>
-
-<details class="details-e">
-<summary>JOIN on an attribute (<code>Jointure sur un attribut</code>)</summary>
-
-This is called **Equi-join**. This idea is the same as for NATURAL JOIN, but you are picking the columns this time.
-
-* **Equi-join (attributes)**, <small>>=SQL-92</small>
-
-```sql
-SELECT * FROM customer2 JOIN purchase USING (c_id)
--- merge the column c_id available in both table
--- sort of better NATURAL JOIN as you are picking columns
--- you may use ',' to add conditions in 'USING'
-```
-
-* **Equi-join (criteria)**
-
-```sql
-SELECT c.*, p_id, `date` FROM customer2 c JOIN purchase p ON c.c_id = p.c_id
--- same result, we should use using in this case so this is more wordy than usual
--- you may use 'AND' to add conditions in 'JOIN ON'
-```
-</details>
-
-<details class="details-e">
-<summary>OUTER JOIN (<code>Jointure externe</code>)</summary>
-
-Until now, the row "(2, Henry, ...)" was never shown, because there was no "c_id=2" in purchases. You can show such records using OUTER JOIN.
-
-```sql
-SELECT * FROM customer2 c LEFT OUTER JOIN purchase p
-	ON c.c_id = p.c_id -- p.c_id can be null 
-SELECT * FROM customer2 c RIGHT OUTER JOIN purchase p
-	ON c.c_id = p.c_id -- c.c_id can be null 
-SELECT * FROM customer2 c FULL OUTER JOIN purchase p
-	ON c.c_id = p.c_id -- either c.c_id or p.c_id can be null 
-```
-</details>
-
-> You may note that you can chain jointures, for instance
-> 
-> ```sql
->  /* ... */ FROM A NATURAL JOIN B NATURAL JOIN B /* ... */
-> -- not tested recently 😖
-> FROM (TABLE_A NATURAL JOIN TABLE_B) b JOIN TABLE_C ON /* ... */
-> ```
-
 <hr class="sl">
 
 ## DDL (Data Definition)
@@ -324,9 +224,6 @@ SHOW DATABASES
 
 -- alter
 ALTER DATABASE db_name CHARACTER SET utf8mb4
-
--- delete
-DROP DATABASE db_name
 ```
 </details>
 
@@ -419,26 +316,11 @@ INSERT INTO a_table(...) SELECT ... from tmp_name;
 DROP TABLE tmp_name;
 ```
 </details>
-
-```sql
-DROP TABLE a_table;
-```
 </details>
 
 <hr class="sr">
 
 ## DCL (Data control)
-
-<details class="details-e">
-<summary>Create and delete user</summary>
-
-```sql
-DROP USER username
-DROP USER username CASCADE -- drop schema too
-```
-
-* `DELETE USER username@'%'`.
-</details>
 
 <details class="details-e">
 <summary>Manage privileges (<code>permissions</code>)</summary>

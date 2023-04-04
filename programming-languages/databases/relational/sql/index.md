@@ -93,16 +93,11 @@ Note that clauses names are case-insensitive <small>(select=SELECT=Select)</smal
 
 **DML (Data Manipulation)** 💰: manipulate data
 
-* [SELECT](clauses/select.md)
-* [FROM](clauses/from.md)
-* [WHERE](clauses/where.md)
-* [LIMIT](clauses/limit.md): Skip results, limit the number of results
-* [ORDER BY](clauses/order_by.md): Sort results
-
-For more complex requests
-
-* [HAVING and Calculations]()
-* [JOIN and other kind of jointures]()
+* [SELECT](clauses/select.md) <small>(define what is queried)</small>
+* [FROM](clauses/from.md) <small>(define which tables are queried)</small>
+* [WHERE](clauses/where.md) <small>(define which records are queried)</small>
+* [LIMIT](clauses/limit.md) <small>(skip results, limit the number of results)</small>
+* [ORDER BY](clauses/order_by.md) <small>(sort results)</small>
 
 These statement will change the database (new record/...):
 
