@@ -65,7 +65,6 @@ FOREIGN KEY (a, b) REFERENCES XXX(a, b), -- foreign key
 ```
 </div></div>
 
-
 <hr class="sep-both">
 
 #### CREATE USER
@@ -100,3 +99,17 @@ CREATE USER username@'xx.xx.xx.%'
 ➡️ Note that you will have to provide the IP each time you use the username, otherwise the DBMS will think it's localhost.
 </div></div>
 
+<hr class="sep-both">
+
+#### CREATE ROLE
+
+<div class="row row-cols-md-2"><div>
+
+A role is like a group, used to grant permissions to everyone having this role.
+
+```sql!
+CREATE ROLE role_name
+CREATE ROLE role_name WITH ADMIN xxx -- role managed by xxx
+```
+</div><div>
+</div></div>

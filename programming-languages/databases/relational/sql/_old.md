@@ -318,56 +318,6 @@ DROP TABLE tmp_name;
 </details>
 </details>
 
-<hr class="sr">
-
-## DCL (Data control)
-
-<details class="details-e">
-<summary>Manage privileges (<code>permissions</code>)</summary>
-
-<div class="row mx-0 row-cols-md-2"><div>
-
-You can grant permissions to each user, or grant permission to a role, and grant the role to each user. There are tons of privileges, so you should refer to the documentation of your DBMS.
-
-```sql
-GRANT xxx, yyy ON sometable TO someuser
-GRANT xxx, yyy ON *.* TO someuser
-GRANT xxx, yyy ON *.* TO PUBLIC -- everyone
-GRANT ALL PRIVILEGES ON *.* TO someuser -- all privileges
-
-REVOKE xxx ON *.* TO someuser
-```
-
-A user can grant his privileges to another user, if his privileges were given WITH GRANT OPTION. If the giver lose his privileges, then the receiver may lose his privileges unless he was also given the privilege by someone else.
-
-```sql
-GRANT xxx ON yyy TO zzz WITH GRANT OPTION
-```
-</div><div>
-
-Once created, you can grant privileges to a role, as you would for a user.
-
-```sql
-CREATE Role role_name
-CREATE Role role_name with admin user -- role managed by an admin
-```
-
-**Note** : you can only grant privileges on one table at once, and to one user by request.
-
-<table class="table table-bordered table-striped border-dark">
-<thead><tr><th colspan="2">Some privileges</th></tr></thead>
-<tbody>
-<tr><td>SELECT</td><td>DELETE</td></tr>
-<tr><td>UPDATE</td><td>UPDATE(ATTRIBUTE)</td></tr>
-<tr><td>INSERT</td><td>CREATE</td></tr>
-<tr><td>ALTER</td><td>DROP</td></tr>
-<tr><td>EXECUTE</td><td>...</td></tr>
-</tbody>
-
-</table>
-</div></div>
-</details>
-
 <hr class="sl">
 
 ## Advanced concepts

@@ -87,6 +87,7 @@ Note that clauses names are case-insensitive <small>(select=SELECT=Select)</smal
 **DCL (Data control)** 🔐: define users and permissions
 
 * [CREATE USER](clauses/create.md) and [DROP USER](clauses/drop.md)
+* [CREATE ROLE](clauses/create.md) and [DROP ROLE](clauses/drop.md)
 * [GRANT](clauses/grant.md)
 * [REVOKE](clauses/revoke.md)
 </div><div>
