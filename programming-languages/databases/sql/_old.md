@@ -1,77 +1,5 @@
 # Structured Query Language
 
-> **SQL 89/92**: Both **SQL-89** and **SQL-92** are quite used. There is one major difference: what we call "JOIN clauses" are **not available in SQL-89**.
-
-<hr class="sl">
-
-## Terminology
-
-<table class="table table-bordered table-striped border-dark">
-<tr><th>Term</th><th>Explanation</th></tr>
-<tr>
-<td><b>Request/Query</b></td>
-<td>This is a statement made of <b>clauses</b> to do something on the database.</td>
-</tr>
-
-<tr>
-<td><b>Clauses</b></td>
-<td>These are the keyword SELECT, FROM, DELETE, CREATE... that are part of any SQL request. Note that every clause is optional, and they
-
-* are declared in THIS order: `SELECT` > `FROM` > `WHERE` > `GROUP BY` > `HAVING` > `ORDER BY` > `LIMIT`
-* while executed in THIS order: `FROM` > `WHERE` > `GROUP BY` > `HAVING` > `SELECT` > `ORDER BY` > `LIMIT`
-</td>
-</tr>
-
-<tr>
-<td>Schema</td>
-<td>This is a table storing data about something. The pratical note, is that, in some cases, you may have to write <code>schema_name.table_name</code>.
-
-* For a user: this is the list of its tables, views, constraints
-* For a database: this is the table **INFORMATION_SCHEMA** (TABLES, USERS, COLUMNS/DOMAINS, CHECK_CONSTRAINTS)
-* For a request: this is the selected tables, and the attributes
-</td>
-</tr>
-
-<tr>
-<td><b>DML, DDL, and DCL</b></td>
-<td><p>These are categories of clauses. This is something quite used by pros 😎.</p>
-
-* **DML (Data Manipulation)**: Select, Insert, Update, Delete
-* **DDL (Data Definition)**: Create, Alter, Drop
-* **DCL (Data control)**: Grant, Revoke
-</td>
-</tr>
-
-<tr>
-<td>Domain</td>
-<td>
-
-This is the "range" of the values that your attribute can take. It's made of the **type**, but sometimes you will add **constraints**, and all of this is what we call domain.</td>
-</tr>
-</table>
-
-<hr class="sr">
-
-## SQL Syntax
-
-Before digging into each clause, here is the basics that you need to know.
-
-<div class="row mx-0"><div class="col-6">
-
-```sql
--- a request looks like this
-SELECT *
-FROM users
-WHERE username = 'hello_world';
-```
-</div><div class="col-6 align-self-center">
-
-* **Clauses names are not case-sensitive** <small>(uppercase, lowercase, mix of both)</small>
-* **Requests end with a ;** <small>(unless they are simple)</small>
-* You can put everything on the same line <small>(🤮)</small>
-* Comments are made using `-- comment`, `# comment`, or `/* comment */`
-</div></div>
-
 <details class="details-e">
 <summary>Types</summary>
 <br>
@@ -87,6 +15,8 @@ WHERE username = 'hello_world';
 | date  | `date` | To represents a date |
 | Enumeration  | `enum('v1', 'v2', ...)` | An attribute/value that can take a fixed number of values. |
 </details>
+
+* Comments are made using `-- comment`, `# comment`, or `/* comment */`
 
 <details class="details-e">
 <summary>Useful functions</summary><br>
