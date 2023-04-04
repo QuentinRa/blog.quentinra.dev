@@ -1,47 +1,5 @@
 # Structured Query Language
 
-<details class="details-e">
-<summary>Types</summary>
-<br>
-
-| Notion | Type in SQL | Description |
-| ------ | ------- | ------- |
-| Char  | `varchar(1)` | A string of one character |
-| String  | `varchar(n)`<br>`varchar2(n)` (Oracle) | A string of n character |
-| String  | `text` | A string taking a non-determined number of characters |
-| Integer  | `int`, `int(n)`, `number` | An Integer. `int` is the same as `int(11)`. |
-| Boolean  | `int(1)` | An int, but taking only 0 or 1 |
-| Real  | `float` or `real` | To represents a price, you may use `decimal(n,p)`  |
-| date  | `date` | To represents a date |
-| Enumeration  | `enum('v1', 'v2', ...)` | An attribute/value that can take a fixed number of values. |
-</details>
-
-* Comments are made using `-- comment`, `# comment`, or `/* comment */`
-
-<details class="details-e">
-<summary>Useful functions</summary><br>
-
-
-| Notion (General)     | In SQL                                                                                       |
-|----------------------|----------------------------------------------------------------------------------------------|
-| a % b                | `MOD(a,b)`                                                                                   |
-| Quote reserved words | `Select date [...]` ❌ (date, name, ... are reserved)<br><code>Select \`date\` [...]</code> ✅ |
-| cast                 | `CAST(value as new_type)`                                                                    |
-| extract date         | `EXTRACT(element from some_date)` <br>With element YEAR, MONTH, DAY, HOUR, ...               |
-
-| Notion (Strings) | In SQL |
-| ------ | ------- |
-| String | `'a'` or `"a"` (the latter may not work) |
-| String (escape) | ex: use a quote in a quote `'\''` |
-| Concatenate | <code>'a' \|\| 'b'</code> |
-| Extract chars | `LEFT(string, count)` or `RIGHT(string, count)` |
-| Others | `STRCMP(str1, str2)`, `LENGTH('str')`, `LOWER('str')`, `UPPER('str')` |
-
-> **Note**: More functions at [W3Schools - SQL Server Functions](https://www.w3schools.com/SQL/sql_ref_sqlserver.asp).<br>
-> **Test a function?**: `SELECT EXTRACT(DAY from '2020-03-25')`<br>
-> **Test a function?**: `SELECT CAST(15 AS VARCHAR(11))`
-</details>
-
 <hr class="sl">
 
 ## DML (Data Manipulation)
