@@ -24,10 +24,10 @@ In the second screen, you can see the usual representation of your data in a dat
 <div class="row justify-content-center mx-0">
 <div class="col-12 col-md-3">
 
-![](images/table_modeling.png)
+![](_images/table_modeling.png)
 </div><div class="col-12 col-md-8">
 
-![](images/table_view.png)
+![](_images/table_view.png)
 </div>
 </div>
 
@@ -194,7 +194,7 @@ SELECT age + 1 FROM customer; -- simple calculation
 SELECT id as 'c_id', `name`, age FROM customer;
 ```
 
-Output: ![Select SQL output](images/dml/select.png)
+Output: ![Select SQL output](_images/dml/select.png)
 
 ```sql
 -- a stupid request with
@@ -205,7 +205,7 @@ SELECT DISTINCT 5 as 'GroupID',
 FROM customer;
 ```
 
-Output: ![Select SQL output](images/dml/select2.png)
+Output: ![Select SQL output](_images/dml/select2.png)
 
 </div></div></details>
 
@@ -426,8 +426,8 @@ FROM customer
 
 The last time we tried to use two tables, we got the cartesian product, **which is what you will get if the joint clause fails**. This clause will try to merge the tables in the FROM. Given the two following tables Customer2 ("A") and Purchase ("B")
 
-![Table A](images/jointA.png)
-![Table B](images/jointB.png)
+![Table A](_images/jointA.png)
+![Table B](_images/jointB.png)
 
 <details class="details-e">
 <summary>NATURAL JOIN (<code>Jointure Naturelle</code>, <small>>=SQL-92</small>)</summary>
