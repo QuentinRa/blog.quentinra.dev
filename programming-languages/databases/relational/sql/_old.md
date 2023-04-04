@@ -29,24 +29,7 @@ SELECT name, NULL FROM customer c;
 > **Note**: ORDER, or LIMIT can only be applied on the whole request.
 </details>
 
-<details class="details-e">
-<summary>Calculations <i class="small">(on all tuples, on groups of tuples)</i></summary>
-
 You can **only** make calculations in **SELECT**, or in a new clause **HAVING** <small>(NOT in the WHERE, but you may use a nested request)</small>.
-
-```sql
--- the most used ones
-SELECT SUM(age) FROM customer; -- 18+24
-SELECT AVG(age) FROM customer; -- (18+24)/2
-SELECT MIN(age) FROM customer; -- 18
-SELECT MAX(age) FROM customer; -- 24
-SELECT COUNT(*) FROM customer; -- 2 = number of tuples
--- you may add DISTINCT (no duplicates)
--- or ALL (default, allow duplicates)
-SELECT COUNT(DISTINCT age) FROM customer; -- 2 (no duplicates ages)
-SELECT SUM(DISTINCT age) FROM customer; -- 18 + 24
-SELECT SUM(ALL age) FROM customer; -- same as SUM(age)
-```
 
 The clause **HAVING** is only working on groups <small>(ex: group by name, and check the average age per record having this name)</small>. You may create groups of one element by making groups on the primary key as the primary key is unique.
 
@@ -63,35 +46,6 @@ GROUP BY gender HAVING SUM(age) >= 20 -- Not specified (24)
 SELECT gender, SUM(age) as 'Sum of age' FROM customer 
 GROUP BY gender HAVING `Sum of age` >= 20
 ```
-</details>
-
-<details class="details-e">
-<summary>Conditional select</summary>
-
-```sql
-SELECT
-	-- concatenate Ms/Mr/none and the name
-    CONCAT((CASE gender
-                WHEN 'Woman' THEN 'Ms. '
-                WHEN 'Man' THEN 'Mr. '
-                ELSE '' -- default
-        END), name) as 'Name'
-FROM customer
--- Ms. Luna
--- Henry
-```
-
-An alternate form, useless here, but you can change the "=" with something else...
-
-```sql
-SELECT
-    CONCAT((CASE WHEN gender = 'Woman' THEN 'Ms. '
-                WHEN gender = 'Man' THEN 'Mr. '
-                ELSE '' -- default
-        END), name) as 'Name'
-FROM customer
-```
-</details>
 
 <hr class="sl">
 
@@ -239,27 +193,3 @@ CREATE VIEW nomVue [ Attributs ] AS requêteSQL WITH CHECK OPTION
 DROP VIEW nom_vue
 ```
 </details>
-
-<hr class="sr">
-
-## CheatSheet and conventions
-
-* **Conventions**
-
-**Avoid** using **reserved keywords**, and **spaces**, **use lowercase** and **snake case**, when **naming** something. Naming is quite important in a DBMS, more than ever, as names will last long.
-
-Do not prefix/postfix attributes such as "id", prefix it in complex requests. Prefix foreign keys with the whole name of the referenced table.
-
-As always, give relevant names to indexes, views, and constraints.
-
-<hr class="sl">
-
-## Sources
-
-* <https://en.wikipedia.org/wiki/Join_(SQL)>
-* [Naming conventions](https://launchbylunch.com/posts/2014/Feb/16/sql-naming-conventions/)
-
-French
-
-* <https://sql.sh/>
-* <https://fxjollois.github.io/cours-sql/> (quite good 🤓🚀)

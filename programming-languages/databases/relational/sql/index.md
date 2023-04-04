@@ -116,6 +116,8 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [_old](_old.md)
+* [SQL.sh](https://sql.sh/) (french)
+* [fxjollois](https://fxjollois.github.io/cours-sql/) (french)
 </div><div>
 
 <details class="details-n">
