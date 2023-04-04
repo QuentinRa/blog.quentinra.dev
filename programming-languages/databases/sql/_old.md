@@ -4,37 +4,6 @@
 
 <hr class="sl">
 
-## Relational model
-
-In the second screen, you can see the usual representation of your data in a database. This is literally an Excel table with rows, columns, and entries. In the first screen, this is the UML representation, that we use when creating a database from specifications (see **relational modeling**).
-
-<div class="row justify-content-center mx-0">
-<div class="col-12 col-md-3">
-
-![](_images/table_modeling.png)
-</div><div class="col-12 col-md-8">
-
-![](_images/table_view.png)
-</div>
-</div>
-
-✨ **Some vocabulary** ✨
- 
-| Element                         | Name (UML)                                                           | Name (DBMS)                             | Note                                                                                                                                                                                                                                                                                                        |
-|---------------------------------|----------------------------------------------------------------------|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Customer                        | **Class**                                                            | **Table**                               |                                                                                                                                                                                                                                                                                                             |
-| id, name, age, gender           | **Attributes**                                                       | **Attributes**/<small>Variables</small> | <small>(=columns)</small>                                                                                                                                                                                                                                                                                   |
-| `(1, "Luna", 18, "Woman")`, ... | **Objects**                                                          | **Tuples**/Records                      | <small>(=rows)</small>. We are saying "tuples" in French too.                                                                                                                                                                                                                                               |
-| id                              | **Identifiers** <br> <small>(or keys, but this is a mistake)</small> | **Keys**                                | There are 3 kind of keys: **Primary key** <small>(set of attributes, must be unique and not null)</small>, **Foreign key** <small>(taking values from another key)</small>, and **artificial key** <small>(incrementing (+=1) each time we are adding a row)</small>. They are used to easily find a tuple. |
-
-**Notes**
-
-* UML Classes (`customer`) should start with an uppercase (it's my mistake)
-* Usually, because there are many tables with a field `id`, we are pre- or post-fixing the field (ex: `c_id`)
-* As `name` is a reserved keyword, we are also pre- or post-fixing it
-
-<hr class="sl">
-
 ## Terminology
 
 <table class="table table-bordered table-striped border-dark">
