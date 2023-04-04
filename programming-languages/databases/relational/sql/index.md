@@ -144,7 +144,27 @@ Stuff that I found, but never read/used yet.
 * [_old](_old.md)
 * [SQL.sh](https://sql.sh/) (french)
 * [fxjollois](https://fxjollois.github.io/cours-sql/) (french)
+* [angelique-renaud](https://www.angelique-renaud.com/bdd.php) (french)
+* [learnsql](https://learnsql.com/)
+* ROLLBACK/COMMIT
+* UNION/INTERSECT/EXCEPT (same number of values in SELECT/NULL). ORDER, or LIMIT can only be applied on the whole request.
+* SHOW DATABASES
 </div><div>
+
+<details class="details-n">
+<summary>Views</summary>
+
+Views are virtual tables, that may be used to make things easier to access complex tables, or to prevent users from accessing some attributes in a table. Basically, **a view is a virtual table created from a SQL request**.
+
+```sql!
+-- create
+CREATE VIEW nomVue [Attributs] AS requêteSQL
+-- check delete/update before creating view
+CREATE VIEW nomVue [ Attributs ] AS requêteSQL WITH CHECK OPTION
+-- delete
+DROP VIEW nom_vue
+```
+</details>
 
 <details class="details-n">
 <summary>V</summary>
@@ -155,4 +175,10 @@ A **schema** 🗃️ is a sort of namespace in which there are tables, and other
 
 A **domain** 🌍 refer to the values that an attribute can take. This is determined by the type, and the constraints on it.
 </details>
+
+```sql!
+SELECT now();
+SELECT DATE('2020-12-03');
+SELECT @@global.time_zone;
+```
 </div></div>
