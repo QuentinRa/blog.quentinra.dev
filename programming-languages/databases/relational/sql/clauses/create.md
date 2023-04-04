@@ -63,6 +63,18 @@ PRIMARY KEY(a, b), -- key made of two attributes
 UNIQUE(a, b), -- the couple (a,b) is unique
 FOREIGN KEY (a, b) REFERENCES XXX(a, b), -- foreign key
 ```
+
+➡️ For foreign keys, see also `ON [UPDATE|DELETE] [CASCADE|RESTRICT]` to update/delete the referencing row.
+
+You can create your own constraints using `constraint nale check (bool_expression)` (named constraint) or `check (bool_expression)` (unnamed constraint).
+
+```sql!
+-- 1) applied on an attribute
+a_date date CHECK (a_date > '2000-01-01'),
+-- 2) applied on the table
+CONSTRAINT example CHECK (LENGTH(fullname) > 5),
+CHECK (id_user IN (/* some request */))
+```
 </div></div>
 
 <hr class="sep-both">

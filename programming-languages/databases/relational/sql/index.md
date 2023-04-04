@@ -97,14 +97,40 @@ Note that clauses names are case-insensitive <small>(select=SELECT=Select)</smal
 * [SELECT](clauses/select.md) <small>(define what is queried)</small>
 * [FROM](clauses/from.md) <small>(define which tables are queried)</small>
 * [WHERE](clauses/where.md) <small>(define which records are queried)</small>
-* [LIMIT](clauses/limit.md) <small>(skip results, limit the number of results)</small>
+* [GROUP BY and HAVING](clauses/group_by.md) <small>(group results)</small>
 * [ORDER BY](clauses/order_by.md) <small>(sort results)</small>
+* [LIMIT](clauses/limit.md) <small>(skip results, limit the number of results)</small>
 
 These statement will change the database (new record/...):
 
 * [INSERT](clauses/insert.md)
 * [UPDATE](clauses/update.md)
 * [DELETE](clauses/delete.md)
+</div></div>
+
+<hr class="sep-both">
+
+## Transactions
+
+<div class="row row-cols-md-2"><div>
+
+Sometimes, you need to chain the queries in order to keep the database coherent. Every query in the transaction will be executed before another transaction (or query) is proceeded.
+
+```sql!
+-- sequential
+set transaction serializable
+```
+</div><div>
+
+The transaction "ends" when you use either COMMIT or ROLLBACK. You can also use transactions to only allow some kind of changes.
+
+```sql!
+-- select
+set transaction read only /*code*/
+set transaction read committed /*code*/
+-- update/insert/delete...
+set transaction read write /*code/
+```
 </div></div>
 
 <hr class="sep-both">
