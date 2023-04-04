@@ -149,35 +149,6 @@ A summary is needed 🧐, here you go ✨🚀.
 ## DML (Data Manipulation) - Useful stuff
 
 <details class="details-e">
-<summary>LIMIT <i class="small">(Skip results, limit the number of results)</i></summary>
-
-You will use LIMIT a lot, to skip the first **k** results (optionally), and define the max number of results **n**.
-
-```sql
-LIMIT n; -- return up to n records
-LIMIT k, n; -- skip k records, returns up to n records
-LIMIT 0, 1; -- up to one record
-LIMIT 1, 1; -- up to one record, skip the first record
-```
-</details>
-
-<details class="details-e">
-<summary>ORDER BY <i class="small">(sort results)</i></summary>
-
-You can sort your results with ORDER BY, with ASC (**default**=optional, A -> Z), and DESC (Z -> A)
-
-```sql
-SELECT name FROM customer c ORDER BY name; -- (ASC) Henry, Luna
-SELECT name FROM customer c ORDER BY name ASC; -- Henry, Luna
-SELECT name FROM customer c ORDER BY name DESC; -- Luna, Henry
-SELECT name FROM customer c ORDER BY id DESC; -- Henry (2), Luna (1)
--- THIS IS QUITE USEFUL when you selected something that is not an attribute,
--- and you want to use it in "order by"
-SELECT name FROM customer c ORDER BY 1 DESC; -- 1 = name = 1 rst param
-```
-</details>
-
-<details class="details-e">
 <summary>UNION/INTERSECT/EXCEPT <i class="small">on two sets of results</i></summary>
 
 You can make the union, the intersection, or the difference of two requests' results, **but they must have the same number of selected elements** in SELECT. **TRICK**: We usually use `NULL` (or a value) if the two queries do not have the same number of selected element.</small>.

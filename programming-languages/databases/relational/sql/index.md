@@ -87,17 +87,17 @@ Note that clauses names are case-insensitive <small>(select=SELECT=Select)</smal
 **DCL (Data control)** 🔐: define users and permissions
 
 * [CREATE USER](clauses/create.md) and [DROP USER](clauses/drop.md)
-* [GRANT]()
-* [REVOKE]()
+* [GRANT](clauses/grant.md)
+* [REVOKE](clauses/revoke.md)
 </div><div>
 
 **DML (Data Manipulation)** 💰: manipulate data
 
-* [SELECT]()
-* [FROM]()
-* [WHERE]()
-* [LIMIT]()
-* [ORDER BY]()
+* [SELECT](clauses/select.md)
+* [FROM](clauses/from.md)
+* [WHERE](clauses/where.md)
+* [LIMIT](clauses/limit.md): Skip results, limit the number of results
+* [ORDER BY](clauses/order_by.md): Sort results
 
 For more complex requests
 
@@ -106,9 +106,9 @@ For more complex requests
 
 These statement will change the database (new record/...):
 
-* [INSERT]()
-* [UPDATE]()
-* [DELETE]()
+* [INSERT](clauses/insert.md)
+* [UPDATE](clauses/update.md)
+* [DELETE](clauses/delete.md)
 </div></div>
 
 <hr class="sep-both">
