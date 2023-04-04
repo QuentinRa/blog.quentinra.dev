@@ -36,3 +36,46 @@ smb> get /remote/path /local/path # download
 smb> exit # there is also "q" and "quit"
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## Samba vulnerabilities ☠️
+
+[![kenobi](../../../cybersecurity/_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
+
+<div class="row row-cols-md-2"><div>
+
+* Find shares using nmap
+
+```ps
+$ nmap IP -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse
+```
+
+* Try connecting anonymously with no password (leave blank)
+
+```ps
+$ smbclient //IP/share_name -U Anonymous
+$ smbclient //IP//Anonymous -U Anonymous
+```
+</div><div>
+
+* You can also use `smbmap` to find users/shares/files/...
+
+```ps
+$ smbmap -H IP
+```
+
+* You can use [enum4linux](https://github.com/CiscoCXSecurity/enum4linux) (0.7k ⭐) to find shares, and users.
+
+```ps
+$ enum4linux options IP
+$ enum4linux -a IP
+# -a : list all
+# -U : list of users
+# -M : list of devices
+# -S : list of shares
+# -o : print os information
+# -i : print printer information
+# -v : verbose
+```
+</div></div>

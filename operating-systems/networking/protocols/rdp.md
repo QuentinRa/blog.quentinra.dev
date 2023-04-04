@@ -26,3 +26,13 @@ There is [Remmina](https://github.com/FreeRDP/Remmina) (1.9k ⭐, `apt install r
 * In preferences, we should be able to select a keyboard mapping <nobr class="small text-muted">(⚠️ need check)</nobr>
 * [You can scale the screen too](https://askubuntu.com/questions/1075098/remmina-scaling-options)
 </div></div>
+
+<hr class="sep-both">
+
+## RDP vulnerabilities ☠️
+
+<div class="row row-cols-md-2"><div>
+
+* [BlueKeep Vulnerability](https://en.wikipedia.org/wiki/BlueKeep) (2019)
+</div><div>
+</div></div>

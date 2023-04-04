@@ -175,19 +175,21 @@ And select an appropriate topology.
 
 * performance
 * fault tolerance/availability
-* monitoring and logging (siem?...)
+* monitoring and logging
 * backups and updates
 
 </div><div>
 
 **Security**
 
-* Segmentation
+* Network Segmentation
 * Access control (the least privilege...)
 * Firewalls
 * Zoning and DMZ, VLANs and VPNs
 * Password policy and MFA
-* IDS/IPS
+* IDS/IPS/SIEM
+* Data Loss Prevention system (DLP)
+* Antispam server
 * Physical measures
 </div></div>
 

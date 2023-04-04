@@ -12,6 +12,20 @@ RPC can be used to find on which port is a service running. This is done by the 
 
 <hr class="sep-both">
 
+## RPC vulnerabilities ☠️
+
+<div class="row row-cols-md-2"><div>
+
+* Use with `nmap` to get information about [NFS](nfs.md) shares:
+
+```ps
+$ nmap IP -p 2049 --script=nfs-ls,nfs-statfs,nfs-showmount
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

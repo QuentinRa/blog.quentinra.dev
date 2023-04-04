@@ -10,7 +10,7 @@ Remote Procedure Calls (RPC) are used to exchange with the server.
 
 **List mounts** 🗺️
 
-```bash
+```ps
 $ showmount -e IP
 # see NFS exports
 $ cat /etc/exports
@@ -21,7 +21,7 @@ $ cat /etc/exports
 
 The command below will mount the remote folder `/share` inside `/tmp/share` on our machine. It means that when we browse `/tmp/share`, we will see the files inside `/share` on the remote host.
 
-```bash
+```ps
 #  sudo apt install nfs-common
 $ mkdir /tmp/share
 $ sudo mount -t nfs IP:/share /tmp/share/ -nolock
@@ -30,6 +30,22 @@ $ sudo mount -t nfs IP:/share /tmp/share/ -nolock
 # unmount
 $ sudo umount /tmp/share
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## NFS vulnerabilities ☠️
+
+<div class="row row-cols-md-2"><div>
+
+* It's possible to use `nmap` to get information about NFS shares:
+
+```ps
+$ nmap IP -p 2049 --script=nfs-ls,nfs-statfs,nfs-showmount
+```
+</div><div>
+
+* When **root_squashing** is disabled, a local root user is mapped to the remote root user, allowing them to create SUID files.
 </div></div>
 
 <hr class="sep-both">

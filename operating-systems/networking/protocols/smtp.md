@@ -28,3 +28,33 @@ xxx
 
 SMTP also has the commands `VRFY` to check if a user exists, and `EXPN` to see the emails/mailing lists/... for a user.
 </div></div>
+
+<hr class="sep-both">
+
+## SMTP vulnerabilities ☠️
+
+<div class="row row-cols-md-2"><div>
+
+SMTP credentials, if compromised, may have been reused.
+
+* Metasploit
+
+```bash
+msf6 > use auxiliary/scanner/smtp/smtp_version # version
+msf6 > use auxiliary/scanner/smtp/smtp_enum # users...
+```
+</div><div>
+
+* Dig info using nmap
+
+```bash
+$ nmap IP -p 25 --script "*smtp*"
+```
+
+* Using `smtp-user-enum` <small>(not always working)</small>
+
+```bash
+# https://www.kali.org/tools/smtp-user-enum/
+$ smtp-user-enum -M VRFY -u root -t IP
+```
+</div></div>
