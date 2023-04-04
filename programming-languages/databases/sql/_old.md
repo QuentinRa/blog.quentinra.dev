@@ -1,18 +1,5 @@
 # Structured Query Language
 
-Structured Query Language, often abbreviated **SQL** is a normalized language to process queries on a relational database. It's based on a "model" that you defined. If you need something flexible, you should look at NoSQL databases.
-
-Relational databases are provided by a **Database management system DBMS** (`Système de gestion de base de données (SGBD)`). You will need one to manage your databases among
-
-* **Oracle**
-* **PostgreSQL**
-* **MariaDB**
-* MySQL
-* SQLite
-* ...
-
-> **You need to install one**, to continue this course. Please, refer to your DBMS documentation 🤓. A temporary solution might be to use [SQLiteOnline](https://sqliteonline.com/) (🙄).
-
 > **SQL 89/92**: Both **SQL-89** and **SQL-92** are quite used. There is one major difference: what we call "JOIN clauses" are **not available in SQL-89**.
 
 <hr class="sl">
