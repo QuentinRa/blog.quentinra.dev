@@ -163,3 +163,17 @@ IR
 
 ...
 </div></div>
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-md-2"><div>
+
+* Misconfigurations: tools to detect them (default account/password, not updated, unnecessary services/... enabled, too much in errors, no documentation of measures, no isolation)
+* KeePass KbDx
+* Insecure deserialization (example: DoS an API taking a non-primitive type such as a JSON with a regular expression)
+</div><div>
+
+...
+</div></div>

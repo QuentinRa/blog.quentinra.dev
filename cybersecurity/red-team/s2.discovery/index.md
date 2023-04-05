@@ -4,19 +4,19 @@
 
 <div class="row row-cols-md-2"><div>
 
-Discovery 🏝️, a.k.a. active recon (reconnaissance) 🕊️ is the second step of the pentester activities.
+Discovery 🏝️, a.k.a. active recon (reconnaissance) is the second step of the pentester activities.
 
-It involves gathering information about the target by probing their network or systems 🛶️, to find exploitable vulnerabilities.
+It involves gathering information about the target by **probing their network or systems** 🛶️, to find exploitable vulnerabilities.
 
 * 🎯 Host discovery <small>(OS, version...)</small>
 * 🕸️ Network discovery <small>(architecture...)</small>
 * 🧭 Systems, services and application discovery <small>(FTP, APIs...)</small>
 * ...
 
-Unlike passive discovery, as you are directly interacting with the target, you are likely to be detected and caught 🚓.
+Unlike passive discovery, as you are directly interacting with the target, you are likely to be detected, and maybe caught 🚓.
 </div><div>
 
-**Goals/Objectives** 🗺️
+Common activities are:
 
 * 🚪 Find entry points
   * running services and open ports

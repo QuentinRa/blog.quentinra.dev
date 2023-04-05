@@ -4,13 +4,17 @@
 
 <div class="row row-cols-md-2"><div>
 
-Investigation 🔎, a.k.a. passive recon <small>(reconnaissance)</small> 🕊️ is the **first** step of the pentester activities.
+Investigation 🔎, a.k.a. passive recon (reconnaissance) is the first step of the pentester activities.
 
 It involves gathering information about the target from afar 👓️, meaning with **no direct interaction with the target** 👀.
 
+🌱 The goal is to find as much information as possible.
+
+🚿️ You can also infer data, for instance, if a company has many customers, then they may have a support page/customer service.
+
 </div><div>
 
-**Goal/Objectives** 🎯: find as much as possible
+Common activities:
 
 * 🧑‍💻 Learn more about the company <small>(roles, services...)</small>, the programming languages and software they use...
 
@@ -19,15 +23,13 @@ It involves gathering information about the target from afar 👓️, meaning wi
 * 🧑 Find information about their employees, their emails, their social accounts, their leaked passwords...
 
 * ...
-
-➡️ You can also **infer** data, for instance, if a company has many customers, then they may have a support page/customer service.
 </div></div>
 
 <hr class="sep-both">
 
 ## Tools and methods 🗺️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2 mt-3"><div>
 
 * [OSINT gathering](tools/osint.md) 🧑‍💻🧑: any publicly available information
 * [DNS analysis](tools/dns.md) 🧑‍💻🐟: domain, domain owner, subdomains...
