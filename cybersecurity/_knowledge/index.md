@@ -27,10 +27,12 @@ XXX
 
 Exploitation
 
-* DNS
-* [Old - network](/_kmp/_cybersecurity/exploitation/network/index.md)
 * [Old - bruteforce](/_kmp/_cybersecurity/exploitation/services/bruteforce.md)
-* [Old - Database](/_kmp/_cybersecurity/exploitation/database/index.md)
-* [Old - SQLi](/_kmp/_cybersecurity/exploitation/database/sqli/index.md)
-* [Old - sqlmap](/_kmp/_cybersecurity/exploitation/database/sqlmap/index.md)
+* SQL
+  * [Old - Database](/_kmp/_cybersecurity/exploitation/database/index.md)
+  * [Old - SQLi](/_kmp/_cybersecurity/exploitation/database/sqli/index.md)
+  * [Old - sqlmap](/_kmp/_cybersecurity/exploitation/database/sqlmap/index.md)
+* [Old - General](/_kmp/_cybersecurity/exploitation/general/index.md)
+* [Old - Shell](/_kmp/_cybersecurity/exploitation/general/shell.md)
+* [Old - msfconsole](/_kmp/_cybersecurity/exploitation/general/metasploit/msfconsole.md)
 </div></div>

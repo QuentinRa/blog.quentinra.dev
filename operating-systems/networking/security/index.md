@@ -167,6 +167,7 @@ Stuff that I found, but never read/used yet.
 * Identity Services Engine (ISE)
 * Umbrella
 * Secure Access Service Edge (SASE)
+* [THM/networkservices2](https://tryhackme.com/room/networkservices2)
 
 Access
 
