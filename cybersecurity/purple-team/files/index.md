@@ -66,15 +66,74 @@ Software                        : www.inkscape.org
 
 <hr class="sep-both">
 
+## Steganography
+
+[![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
+
+<div class="row row-cols-md-2"><div>
+
+Steganography is a technique in which a person hide data inside the pixels of an image. It's used to secretly transfer data.
+
+If the hidden content is not protected by a password, you can extract it using the `steghide` command:
+
+```bash
+$ steghide info file # check
+$ steghide extract -sf file # extract
+```
+</div><div>
+
+Otherwise, you may try to [crack](/cybersecurity/red-team/s3.exploitation/index.md#brute-force) the password.
+
+```ps
+# https://github.com/RickdeJager/stegseek
+$ stegseek file wordlist
+```
+</div></div>
+
+<hr class="sep-both">
+
+## File steganography
+
+[![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
+
+<div class="row row-cols-md-2"><div>
+
+File steganography is a subcategory of steganography in which a file is hidden in another file. Using [binwalk](https://github.com/ReFirmLabs/binwalk) (8.7k ⭐) you can investigate:
+
+```ps
+$ binwalk file.png
+# from xxx to yyy: PNG
+# from zzz to ttt: ZIP
+```
+
+And you can extract files using `-e`
+
+```ps
+$ binwalk -e file.png
+```
+</div><div>
+
+You can alternatively use `dd` to extract a file:
+
+```ps
+# extract the size by skipping the 34562 bytes
+$ dd bs=34562 skip=1 if=file.png of=file.zip
+$ ls
+file.png file.zip
+```
+
+👉 If there was a ZIP inside the PNG, and you can't unzip it, try with `7z x xxx.zip` or use `dd` to extract the file.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [old](_old.md)
 * Stegosploit
 </div><div>
-
 
 </div></div>

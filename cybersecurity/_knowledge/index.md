@@ -12,7 +12,6 @@ Stuff that I found, but never read/used yet.
 * [Old - Virtual Machines](/_kmp/_cybersecurity/cybersecurity/vms.md)
 * [Old - H@king box](/_kmp/_cybersecurity/cybersecurity/hacking_box.md)
 * CIS (cyber-defense, hardening kits - build kit content)
-* cwe (mitre)
 
 Random
 
@@ -35,4 +34,10 @@ Exploitation
 * [Old - General](/_kmp/_cybersecurity/exploitation/general/index.md)
 * [Old - Shell](/_kmp/_cybersecurity/exploitation/general/shell.md)
 * [Old - msfconsole](/_kmp/_cybersecurity/exploitation/general/metasploit/msfconsole.md)
+
+Priv. Esc.
+
+* [Old - General](/_kmp/_cybersecurity/privilege-escalation/index.md)
+* [Old - Linux](/_kmp/_cybersecurity/privilege-escalation/linux/index.md)
+* [Old - Windows](/_kmp/_cybersecurity/privilege-escalation/windows/index.md)
 </div></div>

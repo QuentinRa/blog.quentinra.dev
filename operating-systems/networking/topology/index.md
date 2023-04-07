@@ -223,6 +223,7 @@ Topologies
 * Software-Defined Networking (SDN)
 * Virtual Network Functions (VNFs)
 * [Request-response](https://en.wikipedia.org/wiki/Request%E2%80%93response)
+* HSM device
 </div><div>
 
 Devices
