@@ -30,6 +30,7 @@ This section regroups common terms used in red and blue team.
 * **Vulnerability**/**weakness**: a failure/flaw in a system
 * **Exploits**: code that makes use of a vulnerability to gain access to a machine, install malware, steal data...
 * **0 Day**/Zero day: an unknown vulnerability that was just discovered
+* **CTF** <small>(Capture The Flag)</small>: a training exercise to help students learn about cybersecurity, by solving challenges and capturing the flag.
 </div><div>
 
 Some well-known cyberattacks ([source](https://www.malwarebytes.com/))
@@ -77,6 +78,166 @@ Use a vulnerability in Windows. The exploit was created by the NSA and  stolen b
 
 <hr class="sep-both">
 
+## Learn 🎓
+
+<div class="row row-cols-md-2"><div>
+
+**Theoretical** 🔨
+
+* [TryHackMe](https://tryhackme.com/) <small>(a.k.a. THM)</small>:  many free courses, enjoyable/gratifying
+* [academy.hackthebox.com](https://academy.hackthebox.com/catalogue): not many free courses, and you can't start many of them at the same time <small>(limited free currency)</small>
+
+<br>
+
+**Practical** 🔫
+
+* [HackTheBox](https://hackthebox.com/) (HTB)
+* [root me](https://www.root-me.org/)
+* [TryHackMe](https://tryhackme.com/) (THM)
+* [OverTheWire](https://overthewire.org/wargames/)
+* [vulnhub](https://www.vulnhub.com/)
+* [capturetheflag.withgoogle.com](https://capturetheflag.withgoogle.com/beginners-quest)
+* [List of CTFs websites](https://hacktoday.io/t/list-of-hacking-ctf-challenge-sites/1980)
+* [attackdefense](https://attackdefense.com/)
+
+<br>
+
+**Bug bounty programs** 💰 ([bug bounty programs list](https://www.bugcrowd.com/bug-bounty-list/))
+
+Some companies are giving bounties to ethical hackers that detected exploits in their infrastructures.
+
+* [bounty.github.com](https://bounty.github.com/) (GitHub)
+* [huntr.dev](https://huntr.dev/) (open-source repositories)
+* [BugBountyHunter.com](https://www.bugbountyhunter.com/)
+* [intigriti.com](https://www.intigriti.com/)
+</div><div>
+
+**News** 📰
+
+* [hackerone.com](https://www.hackerone.com/resources)
+* [cybernews.com](https://cybernews.com/news/)
+* [thehackernews.com](https://thehackernews.com/)
+* [threatpost.com](https://threatpost.com/)
+
+<br>
+
+**Not tested** 👻 - may be either theorical, practical, or both.
+
+* [hackerone.com](https://www.hackerone.com/hackers)
+* [PortSwigger](https://portswigger.net/web-security)
+* [rapid7](https://www.rapid7.com/fundamentals/)
+* [codered.eccouncil.org](https://codered.eccouncil.org/)
+* [hackerrank](https://www.hackerrank.com/)
+* [sans.org: cyberaces](https://www.sans.org/cyberaces/)
+* [Red Team Nation](https://redteamnation.com/)
+* [cybr.com](https://cybr.com/)
+* [academy.tcm-sec.com](https://academy.tcm-sec.com/)
+* [appsec-labs.com](https://appsec-labs.com/online-training/)
+* [pentesterlab](https://www.pentesterlab.com/)
+* [cybertalents](https://cybertalents.com/)
+* [crowdstrike](https://www.crowdstrike.com/cybersecurity-101/)
+* [cybersecurityeducation.org](https://www.cybersecurityeducation.org/)
+* Udemy, Coursera...
+</div></div>
+
+<hr class="sep-both">
+
+## Blogs 🌍
+
+This is a list of blogs that I want to check out one day. There are too many piling up, so I filter them and keep the most interesting ones.
+
+<div class="row row-cols-md-4 mt-3"><div>
+
+* [CrackItDown](https://web.archive.org/web/20210923121550/https://www.crackitdown.com/)
+* [hacktricks.xyz](https://book.hacktricks.xyz/welcome/readme)
+* [guru99.com](https://www.guru99.com/ethical-hacking-tutorials.html)
+* [PayloadsAllTheThingsWeb](https://swisskyrepo.github.io/PayloadsAllTheThingsWeb/)
+* [amandinegh](https://amandinegh.gitbook.io/cyberadventure/)
+* [PENTESTING-BIBLE](https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE) (11k ⭐)
+* [Infosec_Reference](https://github.com/rmusser01/Infosec_Reference) (4.6k ⭐)
+* [mikadmin.fr](https://mikadmin.fr/blog/)
+* [dhilipsanjay CTFs](https://dhilipsanjay.gitbook.io/ctfs/)
+* [TheDutchHacker](https://www.thedutchhacker.com/)
+* [0xrick](https://0xrick.github.io/categories/)
+* [cyber-security-base-19](https://github.com/rage/cyber-security-base-19)
+* [ctf101.org](https://ctf101.org/)
+* [tbhaxor.com](https://tbhaxor.com/)
+* [zachkenney](https://zachkenney.me/)
+* [n3t-hunt3r](https://n3t-hunt3r.gitbook.io/pentest-book/)
+* [ropnop](https://blog.ropnop.com/)
+* [infosecinstitute](https://resources.infosecinstitute.com/)
+* [hacksplaining](https://www.hacksplaining.com/lessons)
+* [complexsecurity](https://complexsecurity.io/)
+</div><div>
+
+* [auth0.com](https://auth0.com/blog/)
+* [MayADevBe](https://mayadevbe.me/)
+* [ryanplatten](https://ryanplatten.com/various-journal-entries/)
+* [kalilinuxtutorials](https://kalilinuxtutorials.com/)
+* [mrash.co](https://mrash.co/)
+* [sckull](https://sckull.github.io/)
+* [ctf.ac](https://ctf.ac/)
+* [narancsblog](https://narancsblog.com/category/thm/)
+* [xapax](https://xapax.github.io/security/#)
+* [total-oscp-guide](https://github.com/alexb49/total-oscp-guide)
+* [fr33s0ul.tech](https://fr33s0ul.tech/index.html)
+* [yberethical](https://blog.cyberethical.me/)
+* [dailycompute](https://dailycompute.net/)
+* [ammmy7580](https://ammmy7580.gitbook.io/)
+* [hacking-capture](https://hacking-capture.github.io/)
+* [steflan](https://steflan-security.com/)
+* [g0tmi1k](https://blog.g0tmi1k.com/)
+* [fredtep](https://fredtep.com/)
+* [null-byte](https://null-byte.wonderhowto.com/)
+* [wonderhowto](https://www.wonderhowto.com/)
+</div><div>
+
+* [razrsec](https://blog.razrsec.uk/)
+* [stawm](https://stawm.design.blog/)
+* [qz.sg](https://blog.qz.sg/)
+* [saharshtapi](https://saharshtapi.github.io/)
+* [vitcher97](https://vitcher97.blogspot.com/)
+* [marcorei7](https://marcorei7.wordpress.com/)
+* [thefluffy007](https://thefluffy007.com/)
+* [beginninghacking](https://beginninghacking.net/)
+* [aptx1337](https://aptx1337.github.io/)
+* [shishirsubedi](https://shishirsubedi.com.np/)
+* [hackofalltrades](https://hackofalltrades.dev/)
+* [cybersecnerds](https://cybersecnerds.com/)
+* [raw.pm](https://blog.raw.pm/)
+* [nairitya03](https://nairitya03.github.io/CTF-WriteUps/)
+* [robertmuwanga](https://robertmuwanga.netlify.app/)
+* [hacktoday](https://hacktoday.io/)
+* [ThePacketBender](https://github.com/ThePacketBender/notes)
+* [fredtep](https://fredtep.com/)
+* [null-byte](https://null-byte.wonderhowto.com/)
+* [wonderhowto](https://www.wonderhowto.com/)
+</div><div>
+
+* [deltreey](https://deltreey.blogspot.com/)
+* [bryce-simpson](https://bryce-simpson.netlify.app/)
+* [hambyhacks](https://hambyhacks.github.io/)
+* [6rian](https://www.6rian.com/)
+* [cybersecbits](https://cybersecbits.com/)
+* [jarrodrizor](https://jarrodrizor.com/)
+* [0xv3r4x](https://0xv3r4x.github.io/)
+* [trailofbits](https://trailofbits.github.io/ctf/)
+* [lkmidas](https://lkmidas.github.io/)
+* [bees](https://bees.substack.com/archive)
+* [goron](https://gitlab.com/goron/security_whitepapers/-/tree/master)
+* [pentestlab](https://pentestlab.blog/)
+* [enigma0x3](https://enigma0x3.net/)
+* [hackingarticles](https://www.hackingarticles.in)
+* [motasem](https://motasem-notes.net/)
+* [thehackerish](https://thehackerish.com/)
+* [secjuice](https://www.secjuice.com/)
+* [cnil](https://www.cnil.fr/fr/cybersecurite)
+</div>
+
+</div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -87,32 +248,10 @@ Stuff that I found, but never read/used yet.
 * [Old - Virtual Machines](/_kmp/_cybersecurity/cybersecurity/vms.md)
 * [Old - H@king box](/_kmp/_cybersecurity/cybersecurity/hacking_box.md)
 * CIS (cyber-defense, hardening kits - build kit content)
-
-Random
-
 * [Old - CyberDefense](/_kmp/_cybersecurity/defense/general/index.md)
-
-XXX
-
 * threatmap
 * ShadowServer
 * [getcybersafe](https://www.getcybersafe.gc.ca/en)
 </div><div>
 
-Exploitation
-
-* [Old - bruteforce](/_kmp/_cybersecurity/exploitation/services/bruteforce.md)
-* SQL
-  * [Old - Database](/_kmp/_cybersecurity/exploitation/database/index.md)
-  * [Old - SQLi](/_kmp/_cybersecurity/exploitation/database/sqli/index.md)
-  * [Old - sqlmap](/_kmp/_cybersecurity/exploitation/database/sqlmap/index.md)
-* [Old - General](/_kmp/_cybersecurity/exploitation/general/index.md)
-* [Old - Shell](/_kmp/_cybersecurity/exploitation/general/shell.md)
-* [Old - msfconsole](/_kmp/_cybersecurity/exploitation/general/metasploit/msfconsole.md)
-
-Priv. Esc.
-
-* [Old - General](/_kmp/_cybersecurity/privilege-escalation/index.md)
-* [Old - Linux](/_kmp/_cybersecurity/privilege-escalation/linux/index.md)
-* [Old - Windows](/_kmp/_cybersecurity/privilege-escalation/windows/index.md)
 </div></div>
