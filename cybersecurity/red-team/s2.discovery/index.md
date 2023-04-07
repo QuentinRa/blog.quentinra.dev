@@ -63,6 +63,9 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+* `telnet`/`curl` to fetch banners/headers
+* `whatweb`: fetch headers, certificates...
+* `nikto`: to fetch headers, discover vulnerabilities
 * aquatone <small>(port scanning, subdomain/website enumation)</small>
   * automate the process of inspecting the website on a port, given a (supposedly long) list of IP addresses.
   * can take reports generated with nmap/masscan
