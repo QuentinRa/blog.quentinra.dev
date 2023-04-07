@@ -2,10 +2,25 @@
 
 <div class="row row-cols-md-2"><div>
 
-...
+The blue team is specialised in defense which involves protecting the systems, proactively and not.
+
+* 🛡️ Secure the system/business activities <small>(and document them)</small>
+* 🔎 Monitor logs <small>(traffic, user activity...)</small>
+* 👮 Detect and stop attacks <small>(as fast as possible)</small>
+* 🚓 Do digital forensics
+* 🐬 Track down hackers
+* 🖋️ Do security awareness training
+* 🔁 Ensure their measures/systems/... are still up-to-date
 </div><div>
 
-...
+Some jobs in the blue team are:
+
+* **Security Architect** 👷‍♂️: plan the security of activities and systems in accordance to the business needs and requirements.
+* **Security Analyst** 📝: analyse, and remediate to issues. Develop security plans to keep the company safe, and implement them.
+* **Incident responder** 🧑‍🚒: handle and remediate to incidents
+* **Digital Forensics** 🔎: investigate attacks, and policies violations.
+* **Malware Analyst**/**Reverse-engineer** 💥: analyse/detect malware, statically <small>(read the code)</small>, and dynamically <small>(see what it does)</small>.
+* **Security researcher** 🔓: research on Linux, hashing algorithms...
 </div></div>
 
 <hr class="sep-both">
@@ -24,6 +39,15 @@ Stuff that I found, but never read/used yet.
 * RTO (Recovery Time Objective): max interruption duration allowed
 * RPO (Recovery Point Objective): max data loss duration allowed (1 hour lost?)
 </div><div>
+
+<details class="details-n">
+<summary>SOC/Threat intelligence/hunting/modeling</summary>
+
+* Security Operation Center (SOC): a team of cybersecurity professionals working 24/7 <small>(detect unusual activity, vulnerabilities, intrusions, violations, training/awareness)</small>. They are using the firewall/DNS/DHCP/... logs, Network security monitoring (NSM), and they might use a SIEM.
+* Threat Intelligence: dig information about actual and potential enemies, and prepare in case they attack you.
+* Threat hunting: if a machine is suspected to have been intruded, they start hunting to confirm their assumption.
+* Threat modeling: review, and improve the security measures (STRIDE, PASTA)
+</details>
 
 <details class="details-n">
 <summary>Random Security Controls</summary>

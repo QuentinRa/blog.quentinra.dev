@@ -77,5 +77,7 @@ For a penetration tester, it's more something like that
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
+
+* [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources)
 </div><div>
 </div></div>

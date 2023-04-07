@@ -1,44 +1,5 @@
 # Getting started
 
-> You may also check [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources) (GitHub).
-
-<hr class="sep-both">
-
-## Cybersecurity jobs
-
-A cyber expert can specialize in offense/defense
-
-**Defense (Blue team)**
-
-Prevent attacks <small>(firewall, IPS)</small>. Monitor, and analyze traffic... Detect, and stop attacks as fast as possible. Investigate/Do Forensics. Find attack paths/track down hackers.
-
-Do awareness, document the network/devices, update, and ensure that the company is protected against known vulnerabilities.
-
-Knowledgeable about
-
-* malware
-* breaches
-* Linux/Windows
-* Networking
-* ...
-
-Tools
-
-* **SIEM**: A Security Information and Event Management system is centralizing information from various places in one interface <small>(login attempts...)</small>.
-* **Security Operation Center** (SOC): a team of cybersecurity professionals working 24/7 <small>(detect unusual activity, vulnerabilities, intrusions, violations, training/awareness)</small>. They are using the firewall/DNS/DHCP/... logs, Network security monitoring (NSM), and they might use a SIEM.
-* **Threat Intelligence**: dig information about actual and potential enemies, and prepare in case they attack you.
-* **Threat hunting**: if a machine is suspected to have been intruded, they start hunting to confirm their assumption.
-* **Threat modeling**: review, and improve the security measures (STRIDE, PASTA)
-* **Defense in-depth**: xxx
-
-Jobs
-
-* **Security Analyst**: Analyse, and remediate to issues. Develop security plans to keep the company safe.
-* **Incident responder**: determine how a cyberattack is handled, see [Incident Handling Guide by the NIST](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf), [OSSTMM](https://www.isecom.org/OSSTMM.3.pdf), [NIST Cybersecurity Framework 1.1](https://www.nist.gov/cyberframework), [NCSC CAF](https://www.ncsc.gov.uk/collection/caf/caf-principles-and-guidance), and [OWASP](https://owasp.org/).
-* **Digital Forensics**: investigate attacks <small>(file system, memory, logs)</small>, and policies violations.
-* **Malware Analyst**/**Reverse-engineer**: analyse malware, statically <small>(read the code)</small>, and dynamically <small>(see what it does)</small>.
-* **Security researcher**: research Linux, hashing algorithms...
-
 > There are **White hats**: hackers that follow the rules, and try to benefit others<br>
 > There are **Grey hats**: hackers that are usually not following the rules, but often benefit others <small>(take down malicious websites)</small><br>
 > And, obviously, there are [**Black hats**](https://www.blackhat.com/) (criminals/hackers).
