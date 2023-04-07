@@ -94,39 +94,37 @@ Mobile
 * **Empire** (✈️) <small>(post-exploitation framework)</small>
 </div><div>
 
-* [fierce](https://github.com/mschwager/fierce) (🏝) <small>(DNS)</small>
-* theHarvester (🔎🏝) <small>(???)</small>
-* recon-ng (🔎) <small>(???)</small>
-* Wayback Machine (🔎✈️) <small>(???)</small>
-* Archive.is (🔎) <small>(???)</small>
-* CommonCrawl (🔎) <small>(???)</small>
-* Netcraft (🔎) <small>(???)</small>
-* PassiveTotal (🔎) <small>(???)</small>
-* [intelius](https://freepeoplesearchtool.com/intelius)/[zabasearch](https://www.zabasearch.com/) (🔎) <small>(???)</small>
-* [peoplefinder](https://www.peoplefinder.com/)  (🔎) <small>(???)</small>
-* Pipl (🔎) <small>(???)</small>
+* [**fierce**](https://github.com/mschwager/fierce) (🏝) <small>(DNS)</small>
+* **theHarvester** (🔎🏝) <small>(OSINT including ports and banners)</small>
+* recon-ng (🔎) <small>(reconnaissance framework)</small>
+* **Wayback Machine** (🔎✈️) <small>(web archive)</small>
+* Archive.is (🔎) <small>(web archive)</small>
+* CommonCrawl (🔎) <small>(web crawler)</small>
+* Netcraft (🔎) <small>(web investigation)</small>
+* **PassiveTotal** (🔎) <small>(IP/domains/email analysis)</small>
+* [**intelius**](https://freepeoplesearchtool.com/intelius)/[zabasearch](https://www.zabasearch.com/) (🔎) <small>(people search engines)</small>
+* [**peoplefinder**](https://www.peoplefinder.com/)  (🔎) <small>(people search engines)</small>
+* **Pipl** (🔎) <small>(people search engines)</small>
 * [awesome-osint](https://github.com/jivoi/awesome-osint) (🔎, 12.1k ⭐) <small>(list of tools)</small>
 * [OSINT-Tools](https://github.com/mgp25/OSINT-Tools) (🔎) <small>(list of tools)</small>
-* [Sublist3r](https://github.com/aboul3la/Sublist3r)  (🏝, 8.2k ⭐) <small>(???)</small>
-* Social Mapper (🔎🏝) <small>(???)</small>
-* StalkScan (🔎) <small>(???)</small>
-* [SpiderFoot](https://github.com/smicallef/spiderfoot)  (🔎🏝✈️, 9.4k ⭐) <small>(???)</small>
-* BeautifulSoup  (🔎) <small>(???)</small>
-* Scrapy (🔎) <small>(???)</small>
-* Selenium (🔎) <small>(???)</small>
-* FMiner (🔎🏝) <small>(???)</small>
-* Octoparse (🔎🏝) <small>(???)</small>
-* ParseHub (🔎🏝) <small>(???)</small>
-* Tor Browser (🔎✈️) <small>(???)</small>
-* DarkSearch (🏝) <small>(???)</small>
-* Ahmia (🏝) <small>(???)</small>
-* OnionScan (🔎) <small>(???)</small>
-* OnionList (🔎) <small>(???)</small>
-* OnionLink (🔎) <small>(???)</small>
-* Censys (🔎🏝) <small>(???)</small>
-* Zoomeye (🔎🏝) <small>(???)</small>
-* BinaryEdge (🔎🏝) <small>(???)</small>
-* Fofa (🔎🏝) <small>(???)</small>
+* [**Sublist3r**](https://github.com/aboul3la/Sublist3r)  (🏝, 8.2k ⭐) <small>(subdomains)</small>
+* Social Mapper (🔎🏝) <small>(socmint)</small>
+* StalkScan (🔎) <small>(facebook recon)</small>
+* [**SpiderFoot**](https://github.com/smicallef/spiderfoot)  (🔎🏝✈️, 9.4k ⭐) <small>(Automated OSINT)</small>
+* BeautifulSoup (🔎) <small>(Web scrapping)</small>
+* Scrapy (🔎) <small>(Web scrapping)</small>
+* FMiner (🔎🏝) <small>(Web scrapping)</small>
+* Octoparse (🔎🏝) <small>(Web scrapping)</small>
+* ParseHub (🔎🏝) <small>(Web scrapping)</small>
+* Tor Browser (🔎✈️) <small>(web browser)</small>
+* DarkSearch (🏝) <small>(darknet search engine)</small>
+* Ahmia (🏝) <small>(tor search engine)</small>
+* OnionScan (🔎) <small>(scan the Tor network)</small>
+* Censys (🔎🏝) <small>(Device/Network search engine)</small>
+* Zoomeye (🔎🏝) <small>(Chinese device/network search engine)</small>
+* BinaryEdge (🔎🏝) <small>(Device search engine)</small>
+* Fofa (🔎🏝) <small>(Device/Network search engine)</small>
+
 </div></div>
 
 <hr class="sep-both">
