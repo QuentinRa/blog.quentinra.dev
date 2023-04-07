@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-Stuff that I found, but never read/used yet.
+Stuff that I found, but never read/used yet. See also the [Blogs](/cybersecurity/_knowledge/index.md#blogs-) section.
 </div><div>
 
 GitHub Topics
@@ -50,7 +50,7 @@ Mobile
 
 <hr class="sep-both">
 
-## Long list
+## Long list of tools
 
 <div class="row row-cols-md-2"><div>
 
@@ -66,20 +66,32 @@ Mobile
 
 * [faraday](https://github.com/infobyte/faraday) (🔎💥) <small>(vulnerability management/testing)</small>
 * [legion](https://github.com/carlospolop/legion) (🏝️💥✈️) <small>(automated penetration framework)</small>
-* [beyondsecurity](https://www.beyondsecurity.com/) (🔎🏝💥) <small>(vulnerability scanner)</small>
+* [**beyondsecurity**](https://www.beyondsecurity.com/) (🔎🏝💥) <small>(vulnerability scanner)</small>
 * [KitHack](https://github.com/AdrMXR/KitHack) (🔎🏝💥✈️) <small>(penetration testing framework)</small>
 * [hoaxshell](https://github.com/t3l3machus/hoaxshell) (🔎🏝💥) <small>(subdomain, IP scan, CMS identification)</small>
 * [Villain](https://github.com/t3l3machus/Villain) (🔎✈️) <small>(post-exploitation framework)</small>
-* [OWASP Amass](https://github.com/OWASP/Amass) (🏝) <small>(subdomain, DNS, and port scanning)</small>
+* [**OWASP Amass**](https://github.com/OWASP/Amass) (🏝) <small>(subdomain, DNS, and port scanning)</small>
 * [HackTools](https://github.com/LasCC/Hack-Tools) (🔎🏝💥) <small>(bunch of tools)</small>
 * [TheFatRat](https://github.com/screetsec/TheFatRat) (💥✈️) <small>(backdoors and payloads)</small>
 * [Phantom-Evasion](https://github.com/oddcod3/Phantom-Evasion) (💥✈️) <small>(generate and obfuscate Windows payload)</small>
-* [msfpc](https://github.com/g0tmi1k/msfpc) (💥✈️) <small>(generating Metasploit payloads)</small>
+* [**msfpc**](https://github.com/g0tmi1k/msfpc) (💥✈️) <small>(generating Metasploit payloads)</small>
 * [arsenal](https://github.com/Orange-Cyberdefense/arsenal) (✈️) <small>(data exfiltration)</small>
-* [CrackMapExec](https://github.com/Porchetta-Industries/CrackMapExec) (🔑✈️) <small>(identify weak passwords)</small>
+* [**CrackMapExec**](https://github.com/Porchetta-Industries/CrackMapExec) (🔑✈️) <small>(identify weak passwords)</small>
 * [hackertarget](https://hackertarget.com/)  (🏝) <small>(port scanning, traceroute, and reverse IP)</small>
-* [Raccoon](https://github.com/evyatarmeged/Raccoon) (🏝) <small>(subdomain, OSINT)</small>
-* [Photon](https://github.com/s0md3v/Photon) (🏝) <small>(web enumeration, subdomains)</small>
+* [**Raccoon**](https://github.com/evyatarmeged/Raccoon) (🏝) <small>(subdomain, OSINT)</small>
+* [**Photon**](https://github.com/s0md3v/Photon) (🏝) <small>(web enumeration, subdomains)</small>
+* aquatone (🏝) <small>(visual web scrapping, subdomains)</small>
+* **Hping3** (💥) <small>(firewall bypass, port scanning, OS fingerprinting)</small>
+* OpenVAS (🔎🔑✈️) <small>(network vulnerability scanner)</small>
+* QualysGuard (🔎🔑✈️) <small>(cloud-based vulnerability scanner)</small>
+* **Acunetix** (🔎💥) <small>(web vulnerability scanner)</small>
+* Nexpose (🔎🔑✈️) <small>(network vulnerability scanner)</small>
+* **Retina** (🔎🔑✈️) <small>(vulnerability scanner)</small>
+* Nipper (🔎) <small>(network devices scanner)</small>
+* **Nettacker** (🏝💥) <small>(port scanning, vulnerability scanning)</small>
+* [joomscan](https://github.com/OWASP/joomscan) (🔎🏝) <small>(Joomla CMS)</small>
+* Medusa (💥) <small>(password cracking)</small>
+* **Empire** (✈️) <small>(post-exploitation framework)</small>
 </div><div>
 
 * [fierce](https://github.com/mschwager/fierce) (🏝) <small>(DNS)</small>
