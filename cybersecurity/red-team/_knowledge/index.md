@@ -79,6 +79,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources)
+* [Roadmap](next.md)
 
 > **Random**: most CTF challenges use the infamous rockyou.txt wordlist of passwords <small>(from a data breach of rockyou.com in 2009)</small>, through they were most likely not user passwords.
 </div><div>
