@@ -49,56 +49,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* dnsrecon
-* fierce
-* theHarvester
-* recon-ng
-* Wayback Machine
-* Archive.is
-* CommonCrawl
-* Netcraft
-* PassiveTotal
-* [intelius](https://freepeoplesearchtool.com/intelius)/[zabasearch](https://www.zabasearch.com/)
-* [peoplefinder](https://www.peoplefinder.com/)
-* Pipl
-* [awesome-osint](https://github.com/jivoi/awesome-osint) (list, 10.7k ⭐)
-* [OSINT-Tools](https://github.com/mgp25/OSINT-Tools) (list, 45 ⭐)
-* [Sublist3r](https://github.com/aboul3la/Sublist3r)
-
-SOCMINT
-
-* Social Mapper
-* StalkScan
-* [SpiderFoot](https://github.com/smicallef/spiderfoot) (8.7k ⭐)
-
-Others
-
 * cloud-based services and platforms investigation
 * Wireless network reconnaissance
+
 </div><div>
-
-Web Scraping
-
-* BeautifulSoup
-* Scrapy
-* Selenium
-* FMiner
-* Octoparse
-* ParseHub
-
-Dark Web Investigations:
-
-* Tor Browser
-* DarkSearch
-* Ahmia
-* OnionScan
-* OnionList
-* OnionLink
-
-IoT Search Engines:
-
-* Censys 
-* Zoomeye 
-* BinaryEdge 
-* Fofa
 </div></div>

@@ -81,6 +81,40 @@ Mobile
 * [Raccoon](https://github.com/evyatarmeged/Raccoon) (🏝) <small>(subdomain, OSINT)</small>
 * [Photon](https://github.com/s0md3v/Photon) (🏝) <small>(web enumeration, subdomains)</small>
 </div><div>
+
+* [fierce](https://github.com/mschwager/fierce) (🏝) <small>(DNS)</small>
+* theHarvester (🔎🏝) <small>(???)</small>
+* recon-ng (🔎) <small>(???)</small>
+* Wayback Machine (🔎✈️) <small>(???)</small>
+* Archive.is (🔎) <small>(???)</small>
+* CommonCrawl (🔎) <small>(???)</small>
+* Netcraft (🔎) <small>(???)</small>
+* PassiveTotal (🔎) <small>(???)</small>
+* [intelius](https://freepeoplesearchtool.com/intelius)/[zabasearch](https://www.zabasearch.com/) (🔎) <small>(???)</small>
+* [peoplefinder](https://www.peoplefinder.com/)  (🔎) <small>(???)</small>
+* Pipl (🔎) <small>(???)</small>
+* [awesome-osint](https://github.com/jivoi/awesome-osint) (🔎, 12.1k ⭐) <small>(list of tools)</small>
+* [OSINT-Tools](https://github.com/mgp25/OSINT-Tools) (🔎) <small>(list of tools)</small>
+* [Sublist3r](https://github.com/aboul3la/Sublist3r)  (🏝, 8.2k ⭐) <small>(???)</small>
+* Social Mapper (🔎🏝) <small>(???)</small>
+* StalkScan (🔎) <small>(???)</small>
+* [SpiderFoot](https://github.com/smicallef/spiderfoot)  (🔎🏝✈️, 9.4k ⭐) <small>(???)</small>
+* BeautifulSoup  (🔎) <small>(???)</small>
+* Scrapy (🔎) <small>(???)</small>
+* Selenium (🔎) <small>(???)</small>
+* FMiner (🔎🏝) <small>(???)</small>
+* Octoparse (🔎🏝) <small>(???)</small>
+* ParseHub (🔎🏝) <small>(???)</small>
+* Tor Browser (🔎✈️) <small>(???)</small>
+* DarkSearch (🏝) <small>(???)</small>
+* Ahmia (🏝) <small>(???)</small>
+* OnionScan (🔎) <small>(???)</small>
+* OnionList (🔎) <small>(???)</small>
+* OnionLink (🔎) <small>(???)</small>
+* Censys (🔎🏝) <small>(???)</small>
+* Zoomeye (🔎🏝) <small>(???)</small>
+* BinaryEdge (🔎🏝) <small>(???)</small>
+* Fofa (🔎🏝) <small>(???)</small>
 </div></div>
 
 <hr class="sep-both">
