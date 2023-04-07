@@ -38,7 +38,7 @@ Common activities:
 * [Maltego](tools/maltego.md) 🧑‍💻 🐟: find websites, domains, social media accounts...
 </div><div>
 
-...
+* [Data leaks](tools/data_leaks.md) 🧑: find leaked data (passwords...)
 </div></div>
 
 <hr class="sep-both">
@@ -58,6 +58,9 @@ Stuff that I found, but never read/used yet.
 * CommonCrawl
 * Netcraft
 * PassiveTotal
+* [intelius](https://freepeoplesearchtool.com/intelius)/[zabasearch](https://www.zabasearch.com/)
+* [peoplefinder](https://www.peoplefinder.com/)
+* Pipl
 * [awesome-osint](https://github.com/jivoi/awesome-osint) (list, 10.7k ⭐)
 * [OSINT-Tools](https://github.com/mgp25/OSINT-Tools) (list, 45 ⭐)
 * [Sublist3r](https://github.com/aboul3la/Sublist3r)

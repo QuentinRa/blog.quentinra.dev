@@ -244,7 +244,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [Old - Getting Started](/_kmp/_cybersecurity/cybersecurity/index.md)
 * [Old - Virtual Machines](/_kmp/_cybersecurity/cybersecurity/vms.md)
 * [Old - H@king box](/_kmp/_cybersecurity/cybersecurity/hacking_box.md)
 * CIS (cyber-defense, hardening kits - build kit content)
