@@ -38,6 +38,12 @@ Stuff that I found, but never read/used yet.
 * SLIs (Server Level Indicators)
 * RTO (Recovery Time Objective): max interruption duration allowed
 * RPO (Recovery Point Objective): max data loss duration allowed (1 hour lost?)
+
+R
+
+* **Advanced Persistent Threat** (APT): usually, a hacker wants to remain as long as possible within an infected network. They are using backdoors, and keep updating the code to avoid being discovered.
+* **Endpoint Detection and Response** (EDS)
+* **Deceptive security**
 </div><div>
 
 <details class="details-n">

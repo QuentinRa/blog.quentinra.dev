@@ -22,5 +22,5 @@ Stuff that I found, but never read/used yet.
 * On-premise (local network)
 </div><div>
 
-
+* **RansomwareAsAService** (RAAS): hackers selling their skills to other hackers, in exchange for a part of their benefices. There is also "MalwareAsAService" (MAAS), which is the same but with malware.
 </div></div>

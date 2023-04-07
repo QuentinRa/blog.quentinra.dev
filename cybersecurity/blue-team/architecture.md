@@ -252,4 +252,10 @@ Stuff that I found, but never read/used yet.
 * [Security Control Framework](https://securecontrolsframework.com/)
 * Identify and Access management (IAM/GIA) - **Lifecycle**
 </div><div>
+
+Least privilege
+
+* Privileged Identity Management (PIM): from organization role to system role
+* Privileged Access Management (PAM): manage the role that a privileged user has.
+* Models: Bell-LaPadula, Biba Model
 </div></div>
