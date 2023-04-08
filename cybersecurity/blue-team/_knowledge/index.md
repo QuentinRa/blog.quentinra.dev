@@ -35,6 +35,7 @@ Stuff that I found, but never read/used yet.
 * CIS (cyber-defense, hardening kits - build kit content)
 * ShadowServer
 * Threatmap
+* HACKING GOOGLE series
 
 Stuff
 
@@ -45,6 +46,8 @@ Stuff
 * SLIs (Server Level Indicators)
 * RTO (Recovery Time Objective): max interruption duration allowed
 * RPO (Recovery Point Objective): max data loss duration allowed (1 hour lost?)
+* BIA (Business Impact Analysis)
+* Cyber Threat Intelligence (CTI)
 
 R
 

@@ -211,6 +211,28 @@ Certification
 Network segmentation
 
 * VRFs (Virtual Routing and Forwarding)
+
+Wi-Fi
+
+* sniffing
+* deauthentication packets
+* jamming (flood the network)
+
+<details class="details-n">
+<summary>Bluetooth</summary>
+
+* sniffing 
+* unauthorized access 
+* malware and viruses to be transmitted 
+* BlueBorne (attackers take control of devices without user interaction)
+* Bluejacking to send unsolicited messages or spam to the device 
+* Bluesnarfing to access data stored on the device 
+* Bluetooth device spoofing attack 
+* avoid pairing with unknown/untrusted devices 
+* turn off bluetooth 
+* up-to-date 
+* bluetooth scanning tool to identify vulnerable devices do not require pairing
+</details>
 </div><div>
 
 Protocols

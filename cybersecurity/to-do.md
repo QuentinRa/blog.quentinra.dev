@@ -172,6 +172,7 @@ https://tryhackme.com/room/retro (blaster...)
 * 💥 = Exploitation
 * 🔑 = Privilege escalation
 * ✈️ = Post-exploitation
+* 🛡️ = Defense
 
 **Tools**
 
@@ -246,6 +247,7 @@ https://tryhackme.com/room/retro (blaster...)
 * Kismet (🏝) <small>(wireless network detection and analysis)</small>
 * MBSA (🏝) <small>(scan Windows-based computers for vulnerabilities)</small>
 * Cain and Abel (💥🔑) <small>(password recovery tool, sniffing, MITM)</small>
+* Greenbone (🏝) <small>(vulnerability management)</small>
 </div></div>
 
 <hr class="sep-both">
