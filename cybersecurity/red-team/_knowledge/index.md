@@ -72,6 +72,55 @@ For a penetration tester, it's more something like that
 
 <hr class="sep-both">
 
+## Operating system 🦘
+
+<div class="row row-cols-md-2"><div>
+
+We usually use a Linux distro, mostly on a VM, to practice.
+
+#### Kali Linux
+
+You can [download Kali ISO here](https://www.kali.org/get-kali/#kali-virtual-machines). On Virtual Box, you have to select Linux 2.6/3.x/4.x/5.x (64-bits) and tune the settings.
+
+* **Username**: kali / **Password**: kali
+* Don't forget to use `sudo apt update` / `sudo apt upgrade`
+
+<details class="details-n">
+<summary>Swap to another keyboard layout 🔥</summary>
+
+* First, log in
+* Click on Kali icon (top left)
+* Search "Keyboard"
+* Select the Keyboard Utility
+* Go to the layout tab
+* Add a keyboard layout <small>(ex: fr-FR/AZERTY)</small>
+* Remove the unused QWERTY layout
+
+> The change is applied immediately... But on the login screen, the keyboard layout will still be QWERTY ⚠️.
+</details>
+
+<details class="details-n">
+<summary>Tips and tricks 🪄</summary>
+
+* Use the <kbd>right arrow</kbd> key to use the suggested command
+
+* In the top-right corner, you can find your IP address (tun0)
+</details>
+</div><div>
+
+#### Parrot Linux 🦜
+
+[Parrot](https://www.parrotsec.org/) is a popular alternative to Kali Linux.
+
+<br>
+
+#### BlackArch 😶‍🌫️
+
+[BlackArch](https://www.blackarch.org/) is mostly used by ArchLinux users, as an alternative to Parrot and Kali Linux.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
