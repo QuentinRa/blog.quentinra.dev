@@ -121,6 +121,34 @@ You can [download Kali ISO here](https://www.kali.org/get-kali/#kali-virtual-mac
 
 <hr class="sep-both">
 
+## CTF virtual machines 🔫
+
+<div class="row row-cols-md-2"><div>
+
+You may install a system/application on a Virtual Machine, to locally attempt to break into it or test some commands/tools.
+
+#### Metasploit Vulnerable VM 💣
+
+Metasploit is an intentionnally misconfigured/vulnerable VM. There is no graphical interface. You can use AZERTY with `sudo loadkeys fr`.
+
+* [Download Metasploit 2](https://docs.rapid7.com/metasploit/metasploitable-2/)
+* [Download Metasploit 3](https://github.com/rapid7/metasploitable3)
+* **Username**: `msfadmin`. **Password**: `msfadmin`
+</div><div>
+
+#### DarkStar7471 🌠
+
+DarkStar is a THM staff that made a many rooms on THM. [You can download the VM they used in their rooms here](https://darkstar7471.com/resources.html).
+
+<br>
+
+#### Game of Active Directory 🛟
+
+The [Game of Active Directory (GOAD)](https://github.com/Orange-Cyberdefense/GOAD) (1.9k ⭐) is an [Active directory](/operating-systems/active-directory/_knowledge/index.md) Lab. It was designed by the French company "Orange". 
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
