@@ -67,14 +67,4 @@ Stuff that I found, but never read/used yet.
 * file analysis (comments, parameters, sensitive data...)
 * `sudo arp-scan -l -I eth0`
 </div><div>
-
-* SET (Social Engineer Toolkit)
-* OWASP ZAP
-* WebScarab
-* Vega
-* Aircrack-ng
-* Reaver
-* Kismet
-* MBSA
-* [Cain and Abel](https://github.com/xchwarze/Cain)
 </div></div>

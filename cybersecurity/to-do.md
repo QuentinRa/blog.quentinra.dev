@@ -234,7 +234,18 @@ https://tryhackme.com/room/retro (blaster...)
 * Zoomeye (🔎🏝) <small>(Chinese device/network search engine)</small>
 * BinaryEdge (🔎🏝) <small>(Device search engine)</small>
 * Fofa (🔎🏝) <small>(Device/Network search engine)</small>
-
+* Shikata ga nai (💥) <small>(payloads)</small>
+* unicorn (💥) <small>(payload, shellcode injection)</small>
+* **cobalt strike** (💥✈️) <small>(penetration testing tool)</small>
+* searchlight (🔎) <small>(OSINT)</small>
+* **OWASP ZAP** (🔎🏝) <small>(web application scanner)</small> 
+* WebScarab (🔎🏝) <small>(intercept HTTP requests)</small>
+* Vega (🔎🏝) <small>(web application scanner)</small>
+* Aircrack-ng (💥🔑) <small>(analyze traffic, crack WEP/WPA/... passwords)</small>
+* Reaver (💥) <small>(crack WPS, identify vulnerable wireless networks)</small>
+* Kismet (🏝) <small>(wireless network detection and analysis)</small>
+* MBSA (🏝) <small>(scan Windows-based computers for vulnerabilities)</small>
+* Cain and Abel (💥🔑) <small>(password recovery tool, sniffing, MITM)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -245,11 +256,15 @@ https://tryhackme.com/room/retro (blaster...)
 
 **Android**
 
-* [Termux-Nation](https://github.com/0xAbbarhSF/Termux-Nation-2022-Alpha) (???) <small>(???)</small>
+* [Termux-Nation](https://github.com/0xAbbarhSF/Termux-Nation-2022-Alpha) (N/A) <small>(test android devices)</small>
 * [termux-hacking](https://github.com/topics/termux-hacking) (N/A) <small>(list of termux tools)</small>
 </div><div>
 
 **CMS**
 
 * [joomscan](https://github.com/OWASP/joomscan) (🔎🏝) <small>(Joomla CMS)</small>
+
+**Defense**
+
+* ghidra (🛡️) <small>(reverse engineering)</small>
 </div></div>
