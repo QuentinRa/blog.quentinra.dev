@@ -56,6 +56,20 @@ R
 * **Deceptive security**
 </div><div>
 
+Threat intelligence
+
+* AbuseIPDB <small>(database of malicious IPs)</small>
+* Cisco Talos Intelligence <small>(Threat intelligence platform)</small>
+* IPinfo
+* Hybrid Analysis <small>(malware analysis)</small>
+* VirusTotal <small>(malware analysis)</small>
+* joesandbox <small>(malware analysis)</small>
+* internxt <small>(security tools/services)</small>
+* Open Threat Exchange (OTX) <small>(Threat intelligence platform)</small>
+* secalerts <small>(Threat intelligence platform)</small>
+* stack.watch <small>(web apps monitoring)</small>
+* cyware <small>(Threat intelligence platform)</small>
+
 <details class="details-n">
 <summary>SOC/Threat intelligence/hunting/modeling</summary>
 
