@@ -156,6 +156,25 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources)
+* [CAPEC](https://capec.mitre.org/)
+* [Attack tatics](https://attack.mitre.org/tactics/enterprise/)
+
+<details class="details-n">
+<summary>Kali wordlists</summary>
+
+**Wordlists**
+
+* Run `wordlists` and press Y to extract `rockyou.txt`
+* You can find pre-installed wordlists in `/usr/share/wordlists/`
+
+**Seclists**
+
+* `sudo apt install seclists` to install [SecLists](https://github.com/danielmiessler/SecLists/) wordlists.
+
+**Others**
+
+* `/usr/share/webshells`: bind/reverse/web shells
+</details>
 
 > **Random**: most CTF challenges use the infamous rockyou.txt wordlist of passwords <small>(from a data breach of rockyou.com in 2009)</small>, through they were most likely not user passwords.
 </div><div>
