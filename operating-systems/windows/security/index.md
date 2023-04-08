@@ -22,6 +22,7 @@ Stuff that I found, but never read/used yet.
 * device guard
 * applocker
 * Hiren's bootcd
+* [SASE](https://www.microsoft.com/en-us/security/business/security-101/what-is-sase)
 </div><div>
 
 **Windows Update** (`control /name Microsoft.WindowsUpdate`)
