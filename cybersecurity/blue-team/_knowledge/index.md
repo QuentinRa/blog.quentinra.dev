@@ -88,7 +88,8 @@ R
 </div><div>
 
 * [Security Control Framework](https://securecontrolsframework.com/)
-* Identify and Access management (IAM/GIA) - **Lifecycle**
+* Identify and Access management (IAM/GIA) - **Lifecycle** (Authorization creep - remove previous roles/lifecycle)
+* XACML
 * The five "As" in security
 
 Least privilege

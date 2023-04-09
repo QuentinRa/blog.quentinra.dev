@@ -158,5 +158,8 @@ Stuff that I found, but never read/used yet.
 
 * [insomnia](https://birdie0.github.io/discord-webhooks-guide/tools/insomnia.html)
 * [httpie](https://birdie0.github.io/discord-webhooks-guide/tools/httpie.html)
+* OData (Open Data)
+* SOAP (Simple Object Access Protocol)
+* WSDL (Web Services Description Language)
 
 </div></div>
