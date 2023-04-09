@@ -64,37 +64,6 @@ This is done by identifying [risks](/cybersecurity/blue-team/risk.md), prioritiz
 
 <hr class="sep-both">
 
-## Pillars & Foundations
-
-<div class="row row-cols-md-2 mt-3"><div>
-
-**The security triad (CIA)** is a famous principle used everywhere in security. The opposite is DAD <small>(Disclosure, Alteration, and Destruction)</small>.
-
-* 🔒 Confidentiality: only those allowed can access resources
-* 🔎 Integrity: only allowed modification can modify resources
-* 📂 Availability: resources are available when needed
-
-There is also the french "DICAI" model that extends CIA with 
-
-* 🔑 Authentication and Identification: verify the identity of users
-* ⌛ Irrevocability: once performed, cannot be undone
-
-**Reduce the attack surface** 🏄‍♂️: avoid unused software, plugins, solutions/... that are potential attack vectors.
-</div><div>
-
-**Defense-in-depth** 🕸️: use of multiple layers of security, along with various tactics, to slow down/stop an intruder
-
-**Triple-A principles** 🔒: Authentication <small>(verify the identity)</small>, Authorization <small>(determine the permissions)</small>, and Accounting <small>(logs)</small>.
-
-**Zero trust** 🔎: a concept. No blind trust, verify everything, assume everyone is a threat, and continuously monitor resources.
-
-**Principle of the least privilege** 👮: everyone, regardless of their role in the company <small>(CEO...)</small>, should have the least privilege that they require to do their job.
-
-**Sweet spot** 🍭: find the right balance between security and productivity. Don't burden users too much.
-</div></div>
-
-<hr class="sep-both">
-
 ## Security controls
 
 <div class="row row-cols-md-2"><div>
@@ -248,14 +217,5 @@ For instance,
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
-
-* [Security Control Framework](https://securecontrolsframework.com/)
-* Identify and Access management (IAM/GIA) - **Lifecycle**
 </div><div>
-
-Least privilege
-
-* Privileged Identity Management (PIM): from organization role to system role
-* Privileged Access Management (PAM): manage the role that a privileged user has.
-* Models: Bell-LaPadula, Biba Model
 </div></div>

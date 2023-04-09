@@ -183,4 +183,12 @@ Stuff that I found, but never read/used yet.
 * [math guide for latex](http://tug.ctan.org/info/short-math-guide/short-math-guide.pdf)
 * [minted](https://www.overleaf.com/learn/latex/Code_Highlighting_with_minted)
 * [maths](https://fr.wikibooks.org/wiki/LaTeX/%C3%89crire_des_math%C3%A9matiques) or [xm1math](https://www.xm1math.net/doculatex/) or [oeis](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols) or [wiki help](https://fr.wikipedia.org/wiki/Aide:Formules_TeX)/[wiki help](https://en.wikipedia.org/wiki/Help:Displaying_a_formula#Functions,_symbols,_special_characters) or [quickref](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
+
+Not used to number sections.
+
+```
+\phantomsection
+\section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
+```
 </div></div>
