@@ -201,6 +201,65 @@ You may use FTP/SCP/NFS... if applicable.
 
 <hr class="sep-both">
 
+## Wordlists ⛪
+
+<div class="row row-cols-md-2"><div>
+
+A wordlist is a list of words, mostly used during discovery, exploitation for enumeration or password cracking.
+
+* 🏝️ Find common hidden directories on a web server
+* 🔑 Test common passwords
+* ...
+
+On Kali Linux, you can use the commands `wordlists` or `seclists` to move to the location where the wordlists are stored.
+
+* package seclists | [GitHub](https://github.com/danielmiessler/SecLists) (43k ⭐)
+
+```
+/usr/share/seclists/Passwords/darkweb2017-top10000.txt
+/usr/share/seclists/Usernames/xato-net-10-million-usernames.txt
+```
+
+* package wordlists | [GitHub](https://github.com/drtychai/wordlists) (0.1k ⭐)
+
+```
+/usr/share/wordlists/rockyou.txt
+/usr/share/wordlists/dirb/others/best1050.txt
+/usr/share/wordlists/dirb/others/best110.txt
+/usr/share/wordlists/dirb/others/best15.txt
+```
+</div><div>
+
+CTFs are usually using the infamous `rockout.txt` for passwords  <small>(from a data breach of rockyou.com in 2009)</small>. On Kali Linux, run `wordlists` and press Y to extract it. Location: `/usr/share/wordlists/rockyou.txt`.
+
+#### Fast wordlist generation
+
+```shell!
+$ echo {A..Z} | tr ' ' '\n' > AZ.lst
+$ echo {0..99} | tr ' ' '\n' > 0_to_99.lst
+$ echo user{0..9} | tr ' ' '\n' > user_0_to_99.lst
+$ echo {admin,adm,user} | tr ' ' '\n' > simple_list.lst
+```
+
+#### Tune wordlists
+
+If the minimum length for a password is 6 characters, you may want to remove shorter passwords. Refer to the [regex](/programming-languages/others/regex/index.md) section.
+
+```shell!
+$ # only keep 4 letters passwords
+$ egrep '^.{4}$' /usr/share/wordlists/rockyou.txt > /tmp/4rock.lst
+```
+
+You may also want to merge wordlists...
+
+```shell!
+$ cat wordlist1 wordlist2 wordlist3 > wordlist123
+```
+
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -210,24 +269,5 @@ Stuff that I found, but never read/used yet.
 * [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources)
 * [CAPEC](https://capec.mitre.org/)
 * [Attack tatics](https://attack.mitre.org/tactics/enterprise/)
-
-<details class="details-n">
-<summary>Kali wordlists</summary>
-
-**Wordlists**
-
-* Run `wordlists` and press Y to extract `rockyou.txt`
-* You can find pre-installed wordlists in `/usr/share/wordlists/`
-
-**Seclists**
-
-* `sudo apt install seclists` to install [SecLists](https://github.com/danielmiessler/SecLists/) wordlists.
-
-**Others**
-
-* `/usr/share/webshells`: bind/reverse/web shells
-</details>
-
-> **Random**: most CTF challenges use the infamous rockyou.txt wordlist of passwords <small>(from a data breach of rockyou.com in 2009)</small>, through they were most likely not user passwords.
 </div><div>
 </div></div>

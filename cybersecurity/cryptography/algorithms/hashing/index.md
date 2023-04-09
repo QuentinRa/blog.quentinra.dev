@@ -135,7 +135,7 @@ Some tools may provide an incorrect format, or not support the format you are lo
 
 <div class="row row-cols-md-2"><div>
 
-Hash cracking usually involves a dictionnary with a list of potential passwords a.k.a. wordlist <small>(Rainbow tables may be used for older systems)</small>.
+Hash cracking usually involves a dictionnary with a list of potential passwords a.k.a. [wordlist](/cybersecurity/red-team/_knowledge/index.md#wordlists-) <small>(Rainbow tables may be used for older systems)</small>.
 
 👉 CTFs are usually using `/usr/share/wordlists/rockyou.txt`.
 
