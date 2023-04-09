@@ -138,6 +138,15 @@ Threat intelligence
 <details class="details-n">
 <summary>Random Security Controls</summary>
 
+YYY
+
+* Block an IP after $n$ failed attempts within $x$ seconds
+* Use a strong password policy
+* Delay authentication attempts (throttle) to slow down attacks
+* Use a CAPTCHA while taking into account that they are services to "bypass" them
+* Use two-Factor authentication
+
+XXX
 
 * Set up a robust password policy
     * Length, Complexity, Periodic updates, Lock, History...

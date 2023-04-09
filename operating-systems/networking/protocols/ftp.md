@@ -70,7 +70,7 @@ $ ftp anonymous@IP
 ```
 </div><div>
 
-* The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s3.exploitation/index.md#brute-force).
+* The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s3.exploitation/index.md#password-cracking).
 
 * **ProFTPD 1.3.5**: There was a failure that allowed users to move files from a non-mounted path to the mounted path. You could steal an id_rsa for instance.
 

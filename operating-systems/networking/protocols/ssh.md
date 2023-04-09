@@ -31,7 +31,7 @@ A hacker want to access the target host, and compromise it.
 
 * The hacker may have found a `.ssh` folder, in which there may be a ssh certificate (`id_rsa`...) to connect to a host. This file may be protected by a password, but it may be [cracked](/cybersecurity/cryptography/algorithms/hashing/index.md#hash-cracking).
 
-* The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s3.exploitation/index.md#brute-force).
+* The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s3.exploitation/index.md#password-cracking).
 
 </div><div>
 </div></div>

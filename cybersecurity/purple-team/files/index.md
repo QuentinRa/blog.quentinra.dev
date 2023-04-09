@@ -82,7 +82,7 @@ $ steghide extract -sf file # extract
 ```
 </div><div>
 
-Otherwise, you may try to [crack](/cybersecurity/red-team/s3.exploitation/index.md#brute-force) the password.
+Otherwise, you may try to [crack](/cybersecurity/red-team/s3.exploitation/index.md#password-cracking) the password.
 
 ```ps
 # https://github.com/RickdeJager/stegseek

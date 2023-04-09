@@ -309,6 +309,49 @@ An idle host is not making any requests, such as a printer. We can use it to mak
 
 <hr class="sep-both">
 
+## Other options 🥾
+
+<div class="row row-cols-md-2"><div>
+
+##### Select a network interface
+
+```ps
+$ nmap [...] -e NETWORK_INTERFACE
+```
+
+<br>
+
+##### Ask for the reason
+
+You can ask nmap to give the reason why a port is identified as "xxx". This will add a column "REASON" in the result, which is usually present by default <small>(at least on Kali)</small>.
+
+```ps
+$ nmap [...] --reason
+```
+</div><div>
+
+##### Traceroute
+
+You can ask nmap to do a traceroute, much like with `traceroute`.
+
+```ps
+$ nmap [...] --traceroute
+```
+
+##### Fragmentation
+
+You can fragment packets which may be used to bypass firewalls
+
+```ps
+$ nmap -f # create packets of 8 bytes or less
+$ nmap -ff # create packets of 16 bytes or less
+$ nmap --mtu xxx # maximum transfer unit (multiple of 8)
+$ nmap --data-length length # split by length
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Nmap Scripting Engine (NSE) 📌
 
 <div class="row row-cols-md-2"><div>
@@ -356,45 +399,24 @@ $ nmap [...] --script "ftp*"
 
 <hr class="sep-both">
 
-## Other options 🥾
+## Common scripts
 
 <div class="row row-cols-md-2"><div>
 
-##### Select a network interface
+#### Brute force scripts
 
-```ps
-$ nmap [...] -e NETWORK_INTERFACE
+Refer to [nmap list of brute force scripts](https://nmap.org/nsedoc/categories/brute.html). nmap will do the cartesian product of the list of usernames by the list of passwords.
+
+```shell!
+$ nmap IP -p 22 --script ssh-brute --script-args userdb=users.lst,passdb=pass.lst
 ```
 
-<br>
-
-##### Ask for the reason
-
-You can ask nmap to give the reason why a port is identified as "xxx". This will add a column "REASON" in the result, which is usually present by default <small>(at least on Kali)</small>.
-
-```ps
-$ nmap [...] --reason
+```shell!
+$ nmap IP --script "*brute*" --script-args userdb=users.lst,passdb=pass.lst
 ```
 </div><div>
 
-##### Traceroute
-
-You can ask nmap to do a traceroute, much like with `traceroute`.
-
-```ps
-$ nmap [...] --traceroute
-```
-
-##### Fragmentation
-
-You can fragment packets which may be used to bypass firewalls
-
-```ps
-$ nmap -f # create packets of 8 bytes or less
-$ nmap -ff # create packets of 16 bytes or less
-$ nmap --mtu xxx # maximum transfer unit (multiple of 8)
-$ nmap --data-length length # split by length
-```
+...
 </div></div>
 
 <hr class="sep-both">
