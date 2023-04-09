@@ -35,5 +35,8 @@ Stuff that I found, but never read/used yet.
 * [pfsense](https://www.pfsense.org/)
 </div><div>
 
+* Tripwire (integrity, database of expected states)
+* OSSEC (monitor log files, detect rootkits)
+* AIDE (integrity, permissions/file attributes changes)
 * NIDS are usually installed where traffic enter/exit
 </div></div>

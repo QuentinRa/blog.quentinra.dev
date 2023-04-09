@@ -70,7 +70,7 @@ This is done by identifying [risks](/cybersecurity/blue-team/risk.md), prioritiz
 
 Security controls are security measures to reduce/prevent risks.
 
-👉 Examples: Firewalls, IDS/IPS, Access control, [Updates management](/cybersecurity/blue-team/updates.md), [Logging and monitoring](/cybersecurity/blue-team/logs.md)...
+👉 Examples: Firewalls, IDS/IPS, Access control, [Updates management](/cybersecurity/blue-team/updates.md), [Logging and monitoring](/cybersecurity/blue-team/logs.md), Awareness training, Background checks, Two-factor authentication, Physical security controls...
 
 👉 There are 3 types of controls: Preventive, Detective, and Corrective.
 
@@ -131,8 +131,10 @@ A systems approach is a structured way to think about the security of a system, 
 * systems are efficiently exploiting the company environment
 
 We break down the system using a top-down approach, into less complex sub-systems and components. Each is seen as a black-box in which we only know the I/O. Using "logical flow analysis", we analyze and ensure that all aspects of the system are considered.
-
 </div><div>
+
+👉 You must understand the scope/perimeter/context and consider
+all aspects of the system <small>(ex: external services...)</small>.
 
 👉 Everything (ideas, needs, decisions) is documented. Decisions should be rational and traceable <small>(ex: use peer review...)</small>. You could use a scoring system to evaluate options and explain the selection of one.
 
@@ -217,5 +219,14 @@ For instance,
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
+
+Access control
+
+* Discretionary Access Control (DAC): the owner of a resource define access rights for others. Ex: Unix File System.
+* Mandatory Access Control (MAC): access based on labels assigned to subjects (ex: users) and objects (ex: files).
+* Role-Based Access Control (RBAC): each role is given permissions, and users are given roles based on what they do in the organization.
+* Rule-Based Access Control (RBAC): rules that determine what someone can do based on who they are <small>(ex: IP...)</small>
+* Time-Based Access Control (TAC): access is granted during an interval of time <small>(ex: working hours)</small>
+
 </div><div>
 </div></div>

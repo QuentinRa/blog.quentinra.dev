@@ -248,6 +248,8 @@ https://tryhackme.com/room/retro (blaster...)
 * MBSA (🏝) <small>(scan Windows-based computers for vulnerabilities)</small>
 * Cain and Abel (💥🔑) <small>(password recovery tool, sniffing, MITM)</small>
 * Greenbone (🏝) <small>(vulnerability management)</small>
+* AppDetectivePro (🏝🛡️) <small>(Database vulnerability scanners)</small>
+* Dbprotect (🏝🛡️) <small>(Database vulnerability scanners)</small>
 </div></div>
 
 <hr class="sep-both">

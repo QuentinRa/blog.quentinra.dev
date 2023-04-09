@@ -32,7 +32,7 @@ There is also 👑 **Full-Stack** 👑 which is both Front+Back-end, along Mobil
 
 <div class="row row-cols-md-2"><div>
 
-Browsers are using the [HTTP](/_it/networking/protocols/index.md#-http---80-tcp) protocol to communicate with a webserver. The server is supposed to return an **HTML page**.
+Browsers are using the [HTTP](/operating-systems/networking/protocols/http.md) protocol to communicate with a webserver. The server is supposed to return an **HTML page**.
 
 * 👉 If there are no routing, the URL is associated with a local path on the server, and the file is loaded if present.
 
@@ -47,7 +47,7 @@ To develop simple HTML websites, you don't need anything, you can use the `file:
 
 For more complex apps <small>(PHP, HTTPS...)</small>, you must install a webserver such as Apache, Nginx, Node, IIS...
 
-➡️ To upload things on a remote server, see the [FTP protocol](/operating-systems/networking/knowledge/_protocols/file-transfer.md).
+➡️ To upload things on a remote server, see the [FTP protocol](/operating-systems/networking/protocols/ftp.md).
 
 </div></div>
 
@@ -191,7 +191,7 @@ URL
 * Username:Password@Domain:port/Path?query#Fragment_or_Hash
 ```
 
-* [SSI](https://en.wikipedia.org/wiki/Server_Side_Includes)
+* [Server Side Includes (SSI)](https://en.wikipedia.org/wiki/Server_Side_Includes)
 </div><div>
 
 * [Postfix](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-debian-10) to send mails. See also DMarc, SPF, DKim, and [mail-tester.com](https://www.mail-tester.com/) <small>(wait XXX hours for DNS records changes)</small>.
