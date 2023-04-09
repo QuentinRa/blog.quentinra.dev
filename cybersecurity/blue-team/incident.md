@@ -18,4 +18,6 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * "Those who cannot remember the past are condemned to repeat it" (George Santayana)
+* Document who is responsible of what
+* 3 phases: notify, restore & recuperation, monitoring
 </div></div>

@@ -21,6 +21,7 @@ Stuff that I found, but never read/used yet.
 * Notes about how to select a cloud solution
 * On-premise (local network)
 * IDaaS (OpenID), based on SAML
+* SAML (samltool.com)
 </div><div>
 
 * **RansomwareAsAService** (RAAS): hackers selling their skills to other hackers, in exchange for a part of their benefices. There is also "MalwareAsAService" (MAAS), which is the same but with malware.

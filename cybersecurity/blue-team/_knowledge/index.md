@@ -79,12 +79,26 @@ Stuff
 * RPO (Recovery Point Objective): max data loss duration allowed (1 hour lost?)
 * BIA (Business Impact Analysis)
 * Cyber Threat Intelligence (CTI)
+* DCP (how much downtime allowed?).  Test backing servers/downtimes/... and loading backups 99%/... (maintenance in? we must check. sometimes, we can balance update to not have any downtimes)
 
 R
 
 * **Advanced Persistent Threat** (APT): usually, a hacker wants to remain as long as possible within an infected network. They are using backdoors, and keep updating the code to avoid being discovered.
 * **Endpoint Detection and Response** (EDS)
 * **Deceptive security**
+
+Endpoint Protection
+
+* antivirus
+* anti-malware
+* intrusion prevention
+
+CMDB
+
+* Configuration Managment Database
+* inventory software/hardware/... basically every asset?
+* auto-discovery?
+* lansweeper
 </div><div>
 
 * [Security Control Framework](https://securecontrolsframework.com/)

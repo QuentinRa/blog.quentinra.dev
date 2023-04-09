@@ -133,6 +133,10 @@ Stuff that I found, but never read/used yet.
 * /var/log/lastlog
 * /var/run/utmp
 * /var/run/maillog (mail server)
+* SIEM (SIM+SEM)
+* SIM=Security Information Management=collect, monitor, analyze logs
+* SEM=Security Event Management=real-time analysis, alerts
+* Configuration come at a cost, logs may still have to be checked manually if not correctly configured
 </div><div>
 
 * [Linux logs](https://stackify.com/linux-logs/)

@@ -194,6 +194,7 @@ Stuff that I found, but never read/used yet.
 
 * see SRM notes
 * IPV6 EUI64 (texas)
+* VIP (virtual IP?)
 
 VPN
 
