@@ -180,6 +180,10 @@ Stuff that I found, but never read/used yet.
 * Stop-Service -name spooler 
 * Start-Service -name spooler 
 * ISE
+
+```
+PS> . $Env:TMP/script.ps1; script
+```
 </div><div>
 
 ```powershell

