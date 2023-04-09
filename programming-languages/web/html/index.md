@@ -364,7 +364,7 @@ These tags are, in my opinion, semantic tags
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-A form (`<form>`) is a group of input elements (`<input>`, `<textarea>`...). You can use either **GET** or **POST** [HTTP methods](/_it/networking/protocols/index.md#-http---80-tcp).
+A form (`<form>`) is a group of input elements (`<input>`, `<textarea>`...). You can use either **GET** or **POST** [HTTP methods](/operating-systems/networking/protocols/http.md).
 
 ```html
 <form method="POST" action="https://example.com/login.php">

@@ -24,7 +24,7 @@ $ npm audit fix --force
 * 🔥 Your routes are stored inside `/routes`.
 * 💐 Your public files are stored inside `/public`.
 
-If you are not familiar with routes, HTTP methods/response codes... Then you should learn that first. [See HTTP protocol](/_it/networking/protocols/index.md#-http---80-tcp).
+If you are not familiar with routes, HTTP methods/response codes... Then you should learn that first. [See HTTP protocol](/operating-systems/networking/protocols/http.md).
 
 </div></div>
 
