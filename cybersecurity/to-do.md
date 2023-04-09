@@ -203,6 +203,8 @@ https://tryhackme.com/room/retro (blaster...)
 * **Nettacker** (🏝💥) <small>(port scanning, vulnerability scanning)</small>
 * Medusa (💥) <small>(password cracking)</small>
 * **Empire** (✈️) <small>(post-exploitation framework)</small>
+* [DSSS](https://github.com/stamparm/DSSS) (🏝💥) <small>(SQL vulnerability scanner)</small>
+* [whitewidow](https://github.com/WhitewidowScanner/whitewidow) (🏝💥) <small>(SQL/XSS vulnerability scanner)</small>
 </div><div>
 
 * [**fierce**](https://github.com/mschwager/fierce) (🏝) <small>(DNS)</small>
@@ -246,7 +248,8 @@ https://tryhackme.com/room/retro (blaster...)
 * Reaver (💥) <small>(crack WPS, identify vulnerable wireless networks)</small>
 * Kismet (🏝) <small>(wireless network detection and analysis)</small>
 * MBSA (🏝) <small>(scan Windows-based computers for vulnerabilities)</small>
-* Cain and Abel (💥🔑) <small>(password recovery tool, sniffing, MITM)</small>
+* Cain and Abel (💥🔑✈️) <small>(password recovery tool, sniffing, MITM)</small>
+* Ettercap (💥🔑✈️) <small>(sniffing, MITM)</small>
 * Greenbone (🏝) <small>(vulnerability management)</small>
 * AppDetectivePro (🏝🛡️) <small>(Database vulnerability scanners)</small>
 * Dbprotect (🏝🛡️) <small>(Database vulnerability scanners)</small>

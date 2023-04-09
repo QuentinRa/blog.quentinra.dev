@@ -16,6 +16,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+* Passive attacks (monitor)
+* Active attacks
 * [Old - General](/_kmp/_cybersecurity/privilege-escalation/index.md)
 * [Old - Linux](/_kmp/_cybersecurity/privilege-escalation/linux/index.md)
 * [Old - Windows](/_kmp/_cybersecurity/privilege-escalation/windows/index.md)
