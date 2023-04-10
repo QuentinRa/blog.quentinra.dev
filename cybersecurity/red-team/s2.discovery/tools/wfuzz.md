@@ -1,0 +1,34 @@
+# wfuzz
+
+<div class="row row-cols-md-2"><div>
+
+[wfuzz](https://github.com/xmendez/wfuzz) (5k ⭐) is a [Fuzzing](../techniques/fuzzing.md) tool in Python. There are new modern alternatives, and it has not been updated since 2020.
+
+Example
+
+```ps
+$ wfuzz -w wordlist URL/account?id=FUZZ
+```
+
+You can add some verbose, if you want to.
+
+```ps
+$ wfuzz -w wordlist -u URL/FUZZ -v
+```
+</div><div>
+
+You can filter responses by code. `-h` will hide a response based on a criterion... And, `-s`, which is working the same, will do the opposite, and only show a response matching a criterion.
+
+* `c code`: show/hide responses with this return code
+* `l n`: show/hide responses with this $n$ number of lines
+* `w n`: show/hide responses with this $n$ number of words
+* `c n`: show/hide responses with this $n$ number of characters
+* `s regex`: show/hide responses containing the regex
+
+```ps
+# ignore 404,500
+$ wfuzz -w wordlist --hc 404,500 xxx.tld/account?id=FUZZ
+# show only 200
+$ wfuzz -w wordlist --sc 200 xxx.tld/account?id=FUZZ
+```
+</div></div>
