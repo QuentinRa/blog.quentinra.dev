@@ -66,6 +66,8 @@ There is also a file `/robots.txt` with the pages that robots should not crawl, 
 
 ## Comments
 
+[![picklerick](../../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
+
 <div class="row row-cols-md-2"><div>
 
 I'm using this version to grab every HTML comments.
