@@ -8,7 +8,7 @@ A logic flaw occurs when a programmer thinks a user will do always as they expec
 
 * The user visit the page "payment" before the page "checkout"
 * The user manually send a form and do not use the HTML form
-</div><div>
 
 A more concrete example is that if the developer used an HTML `SELECT` tag with a list of countries, the developer may not check the submitted value as they expect it to be within their list of countries.
+</div><div>
 </div></div>
