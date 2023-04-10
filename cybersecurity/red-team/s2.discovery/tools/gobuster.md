@@ -1,0 +1,40 @@
+# Gobuster
+
+<div class="row row-cols-md-2"><div>
+
+[Gobuster](https://github.com/OJ/gobuster) (7.5k ⭐) is a popular web scanner.
+
+```ps
+$ gobuster dir -u URL -w wordlist
+```
+
+Add `-k` to scan a target with an expired HTTPS certificate.
+
+```ps
+$ gobuster [...] -k
+```
+
+You can append extensions to wordlist words
+
+```ps
+$ gobuster [...] -w php
+$ gobuster [...] -w php,html
+```
+</div><div>
+
+Gobuster is **slow by default**. Increase the number of threads to make it work faster using `-t n`, and $n$ the number of threads.
+
+```ps
+$ gobuster [...] -t 50 # usual
+$ gobuster [...] -t 64 # common
+$ gobuster [...] -t 100 # may be too much
+```
+
+Other options
+
+* `-U`: username
+* `-P`: password
+* `-p`: proxy
+* `-c`: a cookie <small>(for instance, to simulated that we are logged)</small>
+* `-H 'Name:value'`: a header
+</div></div>
