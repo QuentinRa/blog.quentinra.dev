@@ -40,7 +40,7 @@ Common activities are:
 
 Scanning and enumeration
 
-* [banner grabbing](technique/banner_grabbing.md) ☠️: query a service banner
+* [banner grabbing](technique/banner_grabbing.md) ☠️: get a service banner
 * [nmap](tools/nmap.md) 🚪🔥: a stealthy and powerful port scanner
 * [Rustscan](tools/rustscan.md) 🚪🔥: a fast port scanner for CTFs
 * [Masscan](tools/masscan.md) 🚪: an aggressive port scanner in mass
@@ -54,6 +54,15 @@ Network mapping
 Vulnerabilities scanners
 
 * [Nessus](tools/nessus.md): port scanning, find vulnerabilities, quite noisy/slow
+
+Websites
+
+* [Website mapping](technique/mapping.md) 🧭: before investing a website
+* [File analysis](technique/file_analysis.md) 🚪🔥🔑: comments, hidden code, sensitive data...
+* [Forced Browsing](technique/forced_browsing.md) 🚪🔑: find hidden pages/folders
+* [IDOR](technique/idor.md) 🚪🔑: find if you can access someone else content
+* [Framework detection](technique/framework.md) 🚪🔥: find the framework in use - if any
+* [Logic flaws](technique/logic_flaws.md) 🚪: find logic flaws
 </div></div>
 
 <hr class="sep-both">
@@ -64,7 +73,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* file analysis (comments, parameters, sensitive data...)
 * `sudo arp-scan -l -I eth0`
 </div><div>
 </div></div>
