@@ -38,3 +38,17 @@ Other options
 * `-c`: a cookie <small>(for instance, to simulated that we are logged)</small>
 * `-H 'Name:value'`: a header
 </div></div>
+
+<hr class="sep-both">
+
+## Special uses
+
+<div class="row row-cols-md-2"><div>
+
+#### Fuzzing
+
+Refer to [gobuster fuzz](https://github.com/OJ/gobuster#fuzz-mode) 👻.
+</div><div>
+
+...
+</div></div>

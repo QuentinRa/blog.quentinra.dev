@@ -38,9 +38,9 @@ Common tools are:
 * [dirsearch](../tools/dirsearch.md)
 * [ffuf](../tools/ffuf.md)
 * [wfuzz](../tools/wfuzz.md)
-* [feroxbuster](https://github.com/epi052/feroxbuster) (3.3k ⭐, Rust)
+* [feroxbuster](https://github.com/epi052/feroxbuster) (4.1k ⭐, Rust)
 * [dirb](https://dirb.sourceforge.net/) (installable on any Debian)
 * [DirBuster](https://github.com/KajanM/DirBuster) (0.1k ⭐)
 
-It's worth noting that ffuf and wfuzz are NOT web scanners, but they can do the same as web scanner. We usually rely on gobuster.
+It's worth noting that ffuf and wfuzz are NOT web scanners, but they can do the same as web scanner. Refer to [web fuzzing](fuzzing.md).
 </div></div>

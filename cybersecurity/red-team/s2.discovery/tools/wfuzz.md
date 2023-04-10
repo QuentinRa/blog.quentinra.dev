@@ -7,13 +7,15 @@
 Example
 
 ```ps
-$ wfuzz -w wordlist URL/account?id=FUZZ
+$ wfuzz -w wordlist -u URL/FUZZ # Forced browsing
+$ wfuzz -w wordlist URL/account?id=FUZZZ # GET
+# ...
 ```
 
-You can add some verbose, if you want to.
+You can add some verbose with `-v`
 
 ```ps
-$ wfuzz -w wordlist -u URL/FUZZ -v
+$ wfuzz [...] -v
 ```
 </div><div>
 

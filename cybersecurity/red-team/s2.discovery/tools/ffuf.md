@@ -7,7 +7,7 @@
 Common examples are:
 
 ```ps
-$ ffuf -w wordlist -u URL/FUZZ # PATH
+$ ffuf -w wordlist -u URL/FUZZ # Forced browsing
 $ ffuf -w wordlist -u URL?FUZZ=value # GET
 $ ffuf -w wordlist -u URL?key=FUZZ # GET
 $ ffuf -w wordlist -u URL/FUZZ -H "Header: value" # Header
