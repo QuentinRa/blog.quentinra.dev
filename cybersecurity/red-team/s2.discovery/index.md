@@ -40,7 +40,7 @@ Common activities are:
 
 Scanning and enumeration
 
-* [banner grabbing](technique/banner_grabbing.md) ☠️: get a service banner
+* [banner grabbing](techniques/banner_grabbing.md) ☠️: get a service banner
 * [nmap](tools/nmap.md) 🚪🔥: a stealthy and powerful port scanner
 * [Rustscan](tools/rustscan.md) 🚪🔥: a fast port scanner for CTFs
 * [Masscan](tools/masscan.md) 🚪: an aggressive port scanner in mass
@@ -57,12 +57,12 @@ Vulnerabilities scanners
 
 Websites
 
-* [Website mapping](technique/mapping.md) 🧭: before investing a website
-* [File analysis](technique/file_analysis.md) 🚪🔥🔑: comments, hidden code, sensitive data...
-* [Forced Browsing](technique/forced_browsing.md) 🚪🔑: find hidden pages/folders
-* [IDOR](technique/idor.md) 🚪🔑: find if you can access someone else content
-* [Framework detection](technique/framework.md) 🚪🔥: find the framework in use - if any
-* [Logic flaws](technique/logic_flaws.md) 🚪: find logic flaws
+* [Website mapping](techniques/mapping.md) 🧭: before investing a website
+* [File analysis](techniques/file_analysis.md) 🚪🔥🔑: comments, hidden code, sensitive data...
+* [Forced Browsing](techniques/forced_browsing.md) 🚪🔑: find hidden pages/folders
+* [IDOR](techniques/idor.md) 🚪🔑: find if you can access someone else content
+* [Framework detection](techniques/framework.md) 🚪🔥: find the framework in use - if any
+* [Logic flaws](techniques/logic_flaws.md) 🚪: find logic flaws
 </div></div>
 
 <hr class="sep-both">
