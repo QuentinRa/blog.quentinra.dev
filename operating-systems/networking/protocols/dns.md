@@ -133,7 +133,7 @@ $ dig example.com @8.8.8.8
 
 We can explicitly ask for some data by using the option `-t`
 
-```ps
+```shell!
 $ dig example.com -t A
 ;; ANSWER SECTION:
 example.com.    0  IN     A  93.184.216.34

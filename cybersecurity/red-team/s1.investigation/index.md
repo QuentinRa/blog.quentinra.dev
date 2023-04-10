@@ -36,9 +36,12 @@ Common activities:
 * [Google dorking](tools/dorking.md) 🧑‍💻🐟🧑: find anything indexed by google
 * [Shodan](tools/shodan.md) 🐟: find exposed and potentially vulnerable IoT devices
 * [Maltego](tools/maltego.md) 🧑‍💻 🐟: find websites, domains, social media accounts...
+* [Data leaks](tools/data_leaks.md) 🧑: find leaked data (passwords...)
 </div><div>
 
-* [Data leaks](tools/data_leaks.md) 🧑: find leaked data (passwords...)
+Websites
+
+* [Wayback machine](tools/wayback.md) 🐟: see previous versions of the website
 </div></div>
 
 <hr class="sep-both">

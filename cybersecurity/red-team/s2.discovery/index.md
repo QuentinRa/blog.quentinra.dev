@@ -40,6 +40,7 @@ Common activities are:
 
 Scanning and enumeration
 
+* [banner grabbing](technique/banner_grabbing.md) ☠️: query a service banner
 * [nmap](tools/nmap.md) 🚪🔥: a stealthy and powerful port scanner
 * [Rustscan](tools/rustscan.md) 🚪🔥: a fast port scanner for CTFs
 * [Masscan](tools/masscan.md) 🚪: an aggressive port scanner in mass
@@ -66,32 +67,4 @@ Stuff that I found, but never read/used yet.
 * file analysis (comments, parameters, sensitive data...)
 * `sudo arp-scan -l -I eth0`
 </div><div>
-
-[![netsecchallenge](../../_badges/thmp-p/netsecchallenge.svg)](https://tryhackme.com/room/netsecchallenge)
-
-This is automatically done by tools like `nmap`, along with a few more checks! But, it's interesting to know how these tools work.
-
-<div class="row row-cols-md-2"><div>
-
-### 🔓 Telnet - 23 (TCP)
-
-`telnet` is useful to grab the banner of noisy TCP services.
-
-```bash
-$ telnet IP 21
-# you may see some FTP banner
-[...] FTP server (Version 6.4/OpenBSD/Linux-ftpd-0.17) ready.
-```
-</div><div>
-
-### 🔓 netcat - (TCP/UDP)
-
-`nc` (netcat) does the same as `telnet`, but we can also grab banners of noisy UDP services.
-
-```bash
-$ nc IP 21
-# you may see some FTP banner
-[...] FTP server (Version 6.4/OpenBSD/Linux-ftpd-0.17) ready.
-```
-</div></div>
 </div></div>

@@ -4,7 +4,7 @@
 
 [John the Ripper](https://github.com/openwall/john) (<small>Jumbo</small>, 7.4k ⭐), a.k.a. **john**, is like hashcat, a tool to crack hashes. For convenience's sake, we store the hash in `myhash`.
 
-```bash
+```shell!
 # use quotes, so that $/... aren't interpreted
 $ echo 'some hash here' > myhash
 ```
@@ -12,7 +12,7 @@ $ echo 'some hash here' > myhash
 
 List formats <small>(you don't need it with nth/haiti, as they give you the format)</small>. Note that standard formats, such as MD5, are starting with "raw-".
 
-```bash
+```shell!
 $ john --list=formats | grep -i "md5"
 ```
 </div></div>
@@ -29,7 +29,7 @@ Reminder: the wordlist is the list of passwords to test, while the format is the
 
 * 🥉 Let john guess the format and use the default wordlist
 
-```bash
+```shell!
 $ john myhash
 $ john 'some hash here' # if you didn't use a file
 ```
@@ -38,7 +38,7 @@ $ john 'some hash here' # if you didn't use a file
 
 * 🥈 Give the format but use john default wordlist
 
-```bash
+```shell!
 $ john myhash --format=raw-md5
 $ john myhash --format=raw-md4
 $ john myhash --format=raw-sha1
@@ -46,7 +46,7 @@ $ john myhash --format=raw-sha1
 
 * 🏆 Give both the format and the wordlist
 
-```bash
+```shell!
 $ john hash --format=raw-md4 --wordlist=/usr/share/wordlists/rockyou.txt
 ```
 </div></div>
@@ -65,7 +65,7 @@ The single crack mode is one of john the ripper modes. In this mode, we define r
 
 This is the default mode for john. It can be explicitely called with
 
-```bash
+```shell!
 $ john myhash --single [...]
 ```
 
@@ -93,7 +93,7 @@ Create a file `xxx.rules` with some rules inside:
 ; see the documentation
 ```
 
-```bash!
+```shell!!
 $ john myhash --single --rules=xxx.rules [...]
 ```
 </div></div>
@@ -108,14 +108,14 @@ $ john myhash --single --rules=xxx.rules [...]
 
 Modern Linux distros are using `sha512crypt`. Use name-that-hash, or any other tools to find the format if needed. The easy way is only passing the hash of the user you want
 
-```bash
+```shell!
 $ john myhash --format=sha512crypt --wordlist=wordlist
 ```
 </div><div>
 
 You can also use `unshadow`
 
-```bash
+```shell!
 $ unshadow /path/to/passwd /path/to/shadow > myhash
 $ john myhash --format=sha512crypt --wordlist=wordlist
 ```
@@ -129,7 +129,7 @@ $ john myhash --format=sha512crypt --wordlist=wordlist
 
 Modern Windows are using the hash format "NT", also referred to as "NTLM", because "LM" was the previous hash format.
 
-```bash
+```shell!
 $ john myhash --format=nt --wordlist=wordlist
 ```
 </div><div>
@@ -145,13 +145,13 @@ The `gpg` tool can be used to encrypt files, using a passphrase, which is like a
 
 To encrypt something, you could do this. It will generate a `file.gpg`
 
-```bash
+```shell!
 $ gpg --cipher-algo AES-256 --symmetric file
 ```
 
 And, to decrypt <small>(no passphrase is asked if it is cached)</small>
 
-```bash
+```shell!
 $ gpg -d file.gpg
 # generate back your file
 ```
@@ -159,13 +159,13 @@ $ gpg -d file.gpg
 
 You can **crack a gpg passphrase** using john too! But, you need to convert the gpg passphrase to a hash first.
 
-```bash
+```shell!
 $ sudo gpg2john file.pgp > myhash
 ```
 
 Then, use john as usual, with the format "gpg"
 
-```bash
+```shell!
 $ john --format=gpg myhash --wordlist=wordlist 
 ```
 
@@ -180,16 +180,16 @@ $ john --format=gpg myhash --wordlist=wordlist
 
 <div class="row row-cols-md-2"><div>
 
-Some users are using a key instead of a password while connecting to a server via SSH, because, as long as the key does not leak, it's more secure than sending credentials.
+Some users are using a key instead of a password while connecting to a server via [SSH](/operating-systems/networking/protocols/ssh.md), because, as long as the key is not leaked, it's more secure than sending credentials.
 
-```bash
-ssh login@ip -i key
+```shell!
+$ ssh login@ip -i /path/to/id_rsa
 ```
 </div><div>
 
 The key is usually protected by a passphrase. You can use `ssh2john` to convert it to a file that `john` can try to break.
 
-```bash
+```shell!
 $ ssh2john key > myhash
 $ john --format=ssh myhash --wordlist=wordlist
 ```
@@ -203,7 +203,7 @@ $ john --format=ssh myhash --wordlist=wordlist
 
 First convert the password to a file compatible with john.
 
-```bash
+```shell!
 $ rar2john hello.rar > myhash
 $ john myhash --wordlist=wordlist
 ```
@@ -211,7 +211,7 @@ $ john myhash --wordlist=wordlist
 
 If you found the password, you can unrar your RAR with
 
-```bash
+```shell!
 $ unrar x hello.rar
 # enter the password
 ```
@@ -227,7 +227,7 @@ $ unrar x hello.rar
 
 First convert the password to a file compatible with john.
 
-```bash
+```shell!
 $ zip2john hello.zip > myhash
 $ john myhash --wordlist=wordlist
 ```
@@ -235,10 +235,10 @@ $ john myhash --wordlist=wordlist
 
 If you found the password, you can unzip your ZIP with
 
-```bash
+```ps
 $ unzip hello.zip
 # enter the password
 ```
 
-> There is also [fcrackzip](https://github.com/hyc/fcrackzip) (0.3k ⭐)
+➡️ There is also [fcrackzip](https://github.com/hyc/fcrackzip) (0.4k ⭐)
 </div></div>
