@@ -231,6 +231,7 @@ Devices
 * Router on a stick
 * [Jump server](https://en.wikipedia.org/wiki/Jump_server)
 * Load Balancers: interface between clients and server, distributing the load among the available servers using algorithms such as round-robin <small>(in turn)</small>, or weighted <small>(is server busy?)</small>. There are periodic checks to ensure that servers are still online, and if there is no response, a server is considered down until proven otherwise.
+* [Bastion host](https://en.wikipedia.org/wiki/Bastion_host)
 
 Random
 

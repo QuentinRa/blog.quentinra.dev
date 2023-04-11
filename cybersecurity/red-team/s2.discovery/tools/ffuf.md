@@ -60,4 +60,12 @@ $ ffuf -w wordlist -H "Host: FUZZ.example.com" -u example.com
 
 ⚠️ As every response may have the same size, they are most likely the same answer (failure).
 </div><div>
+
+#### subdomains brute force
+
+```ps
+$ ffuf -w wordlist -u FUZZ.example.com
+```
+
+⚠️ As every response may have the same size, they are most likely the same answer (failure).
 </div></div>

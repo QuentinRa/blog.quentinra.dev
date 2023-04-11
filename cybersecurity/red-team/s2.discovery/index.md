@@ -89,6 +89,7 @@ Websites
 * [Logic flaws](techniques/logic_flaws.md) 🚪: find logic flaws
 * [Account discovery](techniques/account.md) 🔑: find accounts
 * [Virtual hosts](techniques/vhosts.md) 🚪: find virtual hosts
+* [Subdomains](techniques/subdomains.md) 🚪: find subdomains
 
 ➡️ You should check for signs of [well-known vulnerabilities](../s3.exploitation/index.md#common-vulnerabilities-)
 </div></div>

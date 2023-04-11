@@ -48,6 +48,14 @@ Other options
 #### Fuzzing
 
 Refer to [gobuster fuzz](https://github.com/OJ/gobuster#fuzz-mode) 👻.
+
+<br>
+
+#### subdomains brute force
+
+```ps
+$ gobuster dns -d URL -w wordlist
+```
 </div><div>
 
 #### vhost brute force
