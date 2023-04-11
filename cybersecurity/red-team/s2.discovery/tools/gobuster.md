@@ -50,5 +50,11 @@ Other options
 Refer to [gobuster fuzz](https://github.com/OJ/gobuster#fuzz-mode) 👻.
 </div><div>
 
-...
+#### vhost brute force
+
+In newer versions, you need to add `--append-domain` to check `xxx.example.com`, and not just `xxx`.
+
+```ps
+$ gobuster vhost -u URL -w wordlist --append-domain
+```
 </div></div>

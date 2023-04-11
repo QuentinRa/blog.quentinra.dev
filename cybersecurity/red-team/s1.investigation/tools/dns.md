@@ -8,6 +8,8 @@
 
 You can use the commands [nslookup](/operating-systems/networking/protocols/dns.md#nslookup-ipdomain-lookup)/[dig](/operating-systems/networking/protocols/dns.md#dig-ipdomain-lookup) to query DNS servers. You can also use the website [DNS dumpster](/operating-systems/networking/protocols/dns.md#dnsdumpster-domains-lookup), to find both domains and subdomains.
 
+You can also check [DNSRecon](/cybersecurity/red-team/s2.discovery/tools/dnsrecon.md), but it's mainly used during discovery.
+
 ➡️ Find attack vectors: domains, subdomains, mail servers...
 
 <br>

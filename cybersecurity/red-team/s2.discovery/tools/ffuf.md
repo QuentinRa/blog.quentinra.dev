@@ -45,3 +45,19 @@ $ ffuf -fs 5230 [...] # hides responses with size=5230
 
 ➡️ In theory, the repository [ffuf-scripts](https://github.com/ffuf/ffuf-scripts) should have a list of scripts useful with ffuf.
 </div></div>
+
+<hr class="sep-both">
+
+## Special uses
+
+<div class="row row-cols-md-2"><div>
+
+#### vhost brute force
+
+```ps
+$ ffuf -w wordlist -H "Host: FUZZ.example.com" -u example.com
+```
+
+⚠️ As every response may have the same size, they are most likely the same answer (failure).
+</div><div>
+</div></div>
