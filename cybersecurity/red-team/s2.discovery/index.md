@@ -34,6 +34,28 @@ Common activities are:
 
 <hr class="sep-both">
 
+## ⚔️ Arsenal ⚔️
+
+<div class="row row-cols-md-2"><div>
+
+* Spoof User-Agent
+
+You can install an extension to make the target website believe that you are using another browser. Look for **User-Agent Switcher** extensions on Google. You can try them on [whatismybrowser](https://www.whatismybrowser.com/).
+
+* Use a proxy
+
+You may use a proxy as an intermediary for your requests. If you do, then you can use the **FoxyProxy extension** of your browser to easily swap between no proxy, and your proxies configurations.
+</div><div>
+
+* Disable scripts
+
+You may do that to bypass JavaScript verifications. You can use plugins such as [noscript](https://noscript.net/), or ublock by clicking on the following icon
+
+![ublock_disable_scripts](_images/ublock_disable_scripts.png)
+</div></div>
+
+<hr class="sep-both">
+
 ## Tools and methods 🗺️
 
 <div class="row row-cols-md-2"><div>
@@ -63,6 +85,20 @@ Websites
 * [IDOR](techniques/idor.md) 🚪🔑: find if you can access someone else content
 * [Framework detection](techniques/framework.md) 🚪🔥: find the framework in use - if any
 * [Logic flaws](techniques/logic_flaws.md) 🚪: find logic flaws
+</div></div>
+
+<hr class="sep-both">
+
+## Mitigations 🛡️
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+* 🔒 Display generic error messages, disable errors messages, and do not give much information <small>(ex: on invalid login, display the message 'credentials invalid', instead of 'username invalid' or 'password invalid')</small>
+
+* 🚧 Test your endpoints with invalid values: 0, -1, characters, symbols... Test your pages with/without excepted parameters, especially if a hacker tries to access pages in an unexpected order.
+</div><div>
+
+* 🔫 Do not trust anything coming from the user, its browser, or even your database. Basically, Zero Trust.
 </div></div>
 
 <hr class="sep-both">

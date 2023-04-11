@@ -205,6 +205,7 @@ https://tryhackme.com/room/retro (blaster...)
 * **Empire** (✈️) <small>(post-exploitation framework)</small>
 * [DSSS](https://github.com/stamparm/DSSS) (🏝💥) <small>(SQL vulnerability scanner)</small>
 * [whitewidow](https://github.com/WhitewidowScanner/whitewidow) (🏝💥) <small>(SQL/XSS vulnerability scanner)</small>
+* [**Beef**](https://github.com/beefproject/beef) (7.8k ⭐) (💥✈️🛡️) <small>(7.8k ⭐, client-side vulnerability scanner)</small>
 </div><div>
 
 * [**fierce**](https://github.com/mschwager/fierce) (🏝) <small>(DNS)</small>

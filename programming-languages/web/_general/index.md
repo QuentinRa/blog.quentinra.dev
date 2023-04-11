@@ -185,10 +185,20 @@ Stuff that I found, but never read/used yet.
 
 * progressive web apps (PWA)
 
+A URL is a suite of: a scheme (http/https), a username, a password, `@`, a domain, `:`, a port, a route, a query (`?`), and a fragment (`#`). Most parameters are optional, the URLs you will use will mostly look like this
+
 ```
 URL
 * Scheme: (protocol) HTTP/HTTPS/...
 * Username:Password@Domain:port/Path?query#Fragment_or_Hash
+http://example.com
+http://example.com:80
+https://example.com
+https://example.com:443
+https://example.com/route/?query#fragment
+127.0.0.1
+127.0.0.1:80
+[...]
 ```
 
 * [Server Side Includes (SSI)](https://en.wikipedia.org/wiki/Server_Side_Includes)
