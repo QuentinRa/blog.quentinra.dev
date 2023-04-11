@@ -14,6 +14,8 @@ For starter, you may do a static analysis of the source HTML page. Use <kbd>CTRL
 
 ## Hidden HTML tags
 
+[![walkinganapplication](../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
+
 <div class="row row-cols-md-2"><div>
 
 This sample of script below is fetching every HTML tag that is hidden aside from some uninteresting ones.
@@ -43,6 +45,7 @@ Array.from(document.querySelectorAll('*')).filter(x => {
 
 ## Links
 
+[![contentdiscovery](../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
 [![picklerick](../../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
 
 <div class="row row-cols-md-2"><div>
@@ -66,6 +69,7 @@ There is also a file `/robots.txt` with the pages that robots should not crawl, 
 
 ## Comments
 
+[![walkinganapplication](../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
 [![picklerick](../../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
 
 <div class="row row-cols-md-2"><div>
@@ -100,12 +104,25 @@ There are more complex regexes if you want, such as [rt/96517](https://www.regex
 
 #### Analyze the javascript
 
+[![walkinganapplication](../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
+
 You may use the console debugger, after adding a breakpoint in the JavaScript, to analyze the javascript code, if needed.
 
 ➡️ It's tiring so feel free to explore other techniques first.
+
+<br>
+
+#### Analyze cookies
+
+[![httpindetail](../../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
+
+...
 </div><div>
 
 #### Analyze the network
+
+[![walkinganapplication](../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
+[![httpindetail](../../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
 
 After opening the network tab of your console, every HTTP request is listed inside. You can see where the forms are sent, and examine the headers of every request.
 

@@ -1,5 +1,7 @@
 # Hypertext Transfer Protocol (HTTP)
 
+[![httpindetail](/cybersecurity/_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
+
 <div class="row row-cols-md-2"><div>
 
 HTTP is a protocol used to exchange with a webserver. Your browser is sending an HTTP request to a webserver, receives a response with HTML inside, and displays the page in your browser.
