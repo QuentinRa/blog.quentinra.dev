@@ -80,6 +80,7 @@ Vulnerabilities scanners
 Websites
 
 * [Website mapping](techniques/mapping.md) 🧭: before investing a website
+* [OWASP](tools/owasp.md) 🧭: website security/common vulnerabilities
 * [File analysis](techniques/file_analysis.md) 🚪🔥🔑: comments, hidden code, sensitive data...
 * [Forced Browsing](techniques/forced_browsing.md) 🚪🔑: find hidden pages/folders
 * [IDOR](techniques/idor.md) 🚪🔑: find if you can access someone else content

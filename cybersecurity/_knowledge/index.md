@@ -138,6 +138,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [crowdstrike](https://www.crowdstrike.com/cybersecurity-101/)
 * [cybersecurityeducation.org](https://www.cybersecurityeducation.org/)
 * [securityawareness](https://securityawareness.usalearning.gov/)
+* [bugbountyhunter training](https://www.bugbountyhunter.com/training/)
 * Udemy, Coursera...
 </div></div>
 
