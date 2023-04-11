@@ -71,12 +71,12 @@ Network mapping
 
 * [ping](tools/ping.md) 🥅: check if a host respond to pings
 * [Packet tracing](tools/trace.md) 🥅: map a network
-</div><div>
 
 Vulnerabilities scanners
 
 * [Nessus](tools/nessus.md): port scanning, find vulnerabilities, quite noisy/slow
 * [Nikto](tools/nikto.md): website vulnerability scanner
+</div><div>
 
 Websites
 
@@ -87,7 +87,10 @@ Websites
 * [IDOR](techniques/idor.md) 🚪🔑: find if you can access someone else content
 * [Framework detection](techniques/framework.md) 🚪🔥: find the framework in use - if any
 * [Logic flaws](techniques/logic_flaws.md) 🚪: find logic flaws
-* [Account discovery](techniques/account.md) 🚪: find accounts
+* [Account discovery](techniques/account.md) 🔑: find accounts
+* [Virtual hosts](techniques/vhosts.md) 🚪: find virtual hosts
+
+➡️ You should check for signs of [well-known vulnerabilities](../s3.exploitation/index.md#common-vulnerabilities-)
 </div></div>
 
 <hr class="sep-both">

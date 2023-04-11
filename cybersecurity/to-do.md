@@ -205,7 +205,11 @@ https://tryhackme.com/room/retro (blaster...)
 * **Empire** (✈️) <small>(post-exploitation framework)</small>
 * [DSSS](https://github.com/stamparm/DSSS) (🏝💥) <small>(SQL vulnerability scanner)</small>
 * [whitewidow](https://github.com/WhitewidowScanner/whitewidow) (🏝💥) <small>(SQL/XSS vulnerability scanner)</small>
-* [**Beef**](https://github.com/beefproject/beef) (7.8k ⭐) (💥✈️🛡️) <small>(7.8k ⭐, client-side vulnerability scanner)</small>
+* [**Beef**](https://github.com/beefproject/beef) (💥✈️🛡️) <small>(7.8k ⭐, client-side vulnerability scanner)</small>
+* host (🔎🏝) <small>(DNS lookup)</small>
+* **dnsenum** (🔎🏝) <small>(DNS lookup, vhost brute force)</small>
+* dnswalk (🔎🏝) <small>(DNS investigation)</small>
+* dnsmap  (🔎🏝) <small>(vhost brute force)</small>
 </div><div>
 
 * [**fierce**](https://github.com/mschwager/fierce) (🏝) <small>(DNS)</small>
@@ -218,12 +222,12 @@ https://tryhackme.com/room/retro (blaster...)
 * [**intelius**](https://freepeoplesearchtool.com/intelius)/[zabasearch](https://www.zabasearch.com/) (🔎) <small>(people search engines)</small>
 * [**peoplefinder**](https://www.peoplefinder.com/)  (🔎) <small>(people search engines)</small>
 * **Pipl** (🔎) <small>(people search engines)</small>
-* [awesome-osint](https://github.com/jivoi/awesome-osint) (🔎, 12.1k ⭐) <small>(list of tools)</small>
+* [awesome-osint](https://github.com/jivoi/awesome-osint) (🔎) <small>(12.1k ⭐, list of tools)</small>
 * [OSINT-Tools](https://github.com/mgp25/OSINT-Tools) (🔎) <small>(list of tools)</small>
-* [**Sublist3r**](https://github.com/aboul3la/Sublist3r)  (🏝, 8.2k ⭐) <small>(subdomains)</small>
+* [**Sublist3r**](https://github.com/aboul3la/Sublist3r)  (🏝) <small>(8.2k ⭐, subdomains)</small>
 * Social Mapper (🔎🏝) <small>(socmint)</small>
 * StalkScan (🔎) <small>(facebook recon)</small>
-* [**SpiderFoot**](https://github.com/smicallef/spiderfoot)  (🔎🏝✈️, 9.4k ⭐) <small>(Automated OSINT)</small>
+* [**SpiderFoot**](https://github.com/smicallef/spiderfoot)  (🔎🏝✈️) <small>(9.4k ⭐, Automated OSINT)</small>
 * BeautifulSoup (🔎) <small>(Web scrapping)</small>
 * Scrapy (🔎) <small>(Web scrapping)</small>
 * FMiner (🔎🏝) <small>(Web scrapping)</small>

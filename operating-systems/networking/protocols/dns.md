@@ -186,12 +186,4 @@ Stuff that I found, but never read/used yet.
 * DNS relay
 * DOT (DNS Over TLS)
 </div><div>
-
-* dig/nslookup
-* host
-* dnsrecon
-* fierce
-* dnsenum
-* dnswalk
-* dnsmap
 </div></div>
