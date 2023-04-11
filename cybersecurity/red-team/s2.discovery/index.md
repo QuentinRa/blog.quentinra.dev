@@ -76,6 +76,7 @@ Network mapping
 Vulnerabilities scanners
 
 * [Nessus](tools/nessus.md): port scanning, find vulnerabilities, quite noisy/slow
+* [Nikto](tools/nikto.md): website vulnerability scanner
 
 Websites
 
@@ -86,6 +87,7 @@ Websites
 * [IDOR](techniques/idor.md) 🚪🔑: find if you can access someone else content
 * [Framework detection](techniques/framework.md) 🚪🔥: find the framework in use - if any
 * [Logic flaws](techniques/logic_flaws.md) 🚪: find logic flaws
+* [Account discovery](techniques/account.md) 🚪: find accounts
 </div></div>
 
 <hr class="sep-both">
