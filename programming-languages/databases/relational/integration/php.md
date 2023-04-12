@@ -4,7 +4,7 @@
 
 To integrate a SQL database in a PHP application, you can use **PDO** to write code regardless of the RDBMS, **or use specific function** for each RDBMS such as `mysqli_*` for MariaDB/MySQL.
 
-⚠️ SQL queries are vulnerable to SQL injections. **Always** use prepared statements to avoid them.
+⚠️ SQL queries are vulnerable to [SQL injections](/cybersecurity/red-team/s3.exploitation/vulns/injection/sql.md). **Always** use prepared statements to avoid them.
 </div><div>
 </div></div>
 
