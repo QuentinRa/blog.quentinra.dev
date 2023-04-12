@@ -210,6 +210,16 @@ https://tryhackme.com/room/retro (blaster...)
 * **dnsenum** (🔎🏝) <small>(DNS lookup, vhost brute force)</small>
 * dnswalk (🔎🏝) <small>(DNS investigation)</small>
 * dnsmap  (🔎🏝) <small>(vhost brute force)</small>
+* **Netsparker** (🏝💥✈️) <small>(web vulnerability scanner)</small>
+* [**XSStrike**](https://github.com/s0md3v/XSStrike) (🏝💥) <small>(XSS scanner)</small>
+* Skipfish (🏝) <small>(11.4k ⭐, web vulnerability scanner)</small>
+* **W3af** (🏝💥🔑) <small>(web vulnerability scanner)</small>
+* **Arachni** (🏝💥) <small>(web vulnerability scanner)</small>
+* **AppScan** (🏝💥) <small>(web vulnerability scanner)</small>
+* IronWASP (🏝💥) <small>(web vulnerability scanner)</small>
+* Grabber (🏝💥) <small>(web vulnerability scanner)</small>
+* [**XSS Hunter**](https://github.com/mandatoryprogrammer/xsshunter) (🏝) <small>(1.3k ⭐, XSS scanner)</small>
+* Domato (🏝) <small>(DOM-based XSS scanner)</small>
 </div><div>
 
 * [**fierce**](https://github.com/mschwager/fierce) (🏝) <small>(DNS)</small>
