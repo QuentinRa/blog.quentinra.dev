@@ -173,6 +173,7 @@ https://tryhackme.com/room/retro (blaster...)
 * 🔑 = Privilege escalation
 * ✈️ = Post-exploitation
 * 🛡️ = Defense
+* 🃏️ = Special
 
 **Tools**
 
@@ -222,6 +223,8 @@ https://tryhackme.com/room/retro (blaster...)
 * Domato (🏝) <small>(DOM-based XSS scanner)</small>
 </div><div>
 
+* [**Burp Collaborator client**](https://portswigger.net/burp/documentation/desktop/tools/collaborator-client) (🃏) <small>(server for SSRF/XEE/...)</small>
+* [requestbin](https://requestbin.com/) (🃏) <small>(HTTP endpoint for inspection)</small>
 * [**fierce**](https://github.com/mschwager/fierce) (🏝) <small>(DNS)</small>
 * **theHarvester** (🔎🏝) <small>(OSINT including ports and banners)</small>
 * recon-ng (🔎) <small>(reconnaissance framework)</small>
