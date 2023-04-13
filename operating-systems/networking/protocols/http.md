@@ -78,11 +78,23 @@ HTTP Headers are commonly used to determine the web browser behavior for a websi
 * ...
 
 These headers if incorrectly configured, may disclose information about the server, or allow some web browsers to be exploited.
+
+🔥 You should not leave a place exposed, for instance, by using secure headers at the website level, leaving the server exposed.
 </div><div>
 
-To find what headers you can use, and check if you headers are secure, they are many tools and guides:
+To find what headers you can use, and check if you headers are secure, they are many tools 🔨 and guides 📗:
 
-* [Mozilla Observatory](https://observatory.mozilla.org/) (test)
-* [Security Headers](https://securityheaders.com/) (test)
-* [secure-headers-test](https://domsignal.com/secure-header-test) (test)
+* 📗 [OWASP Best Practices](https://owasp.org/www-project-secure-headers/#div-bestpractices)
+* 📗 [OWASP TOP 10 Headers](https://owasp.org/www-project-secure-headers/#div-top)
+* 📗 [Google Secure Headers](https://web.dev/security-headers/)
+* 🔨 [Mozilla Observatory](https://observatory.mozilla.org/)
+* 🔨 [Security Headers](https://securityheaders.com/)
+* 🔨 [secure-headers-test](https://domsignal.com/secure-header-test) (test)
+* 🔨 [venom test suite](https://github.com/oshp/oshp-validator)
+
+To see the website headers, you can use
+
+* Your web browser, in the network tab of the dev tools
+* `curl -I https://example.com/`
+* [Postman](https://www.postman.com/) (software)
 </div></div>
