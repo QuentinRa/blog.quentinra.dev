@@ -31,7 +31,7 @@ Usually, we define a Document Type Definition (DTD) for a XML. It defines which 
 After the XML Prolog, add a DOCTYPE tag. For the XML above, we may use a DTD such as the one below <small>(generated in PHPStorm)</small>.
 </div><div>
 
-```xml
+```xml!
 <!DOCTYPE rootElement [
         <!ELEMENT rootElement (child|group)*>
         <!ELEMENT child (#PCDATA)>
