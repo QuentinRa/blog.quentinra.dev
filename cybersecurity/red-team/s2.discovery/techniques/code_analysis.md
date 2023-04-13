@@ -1,10 +1,10 @@
-# File analysis
+# Code analysis
 
 [Go back](../index.md)
 
 <div class="row row-cols-md-2"><div>
 
-File analysis refer to analyzing the code of the website, both statically, and dynamically, while trying to find a flaw.
+Code analysis refer to analyzing the code of the website, both statically, and dynamically, while trying to find a flaw.
 
 For starter, you may do a static analysis of the source HTML page. Use <kbd>CTRL+U</kbd> or Right-click and "View page source".
 </div><div>
@@ -56,13 +56,15 @@ To ensure you visited every page, you may want to check every link on every page
 // list every element with a href
 document.querySelectorAll('*[href]') 
 ```
-
-As this process is done by search engines, websites may have a file `/sitemap.xml` with every page of their website, but there is no guaranty that all pages were added inside.
 </div><div>
 
-There is also a file `/robots.txt` with the pages that robots should not crawl, with may indicate vulnerable/sensitive pages.
+As this process is done by search engines, websites may have a file `sitemap.xml` with every page of their website, but there is no guaranty that all pages were added inside.
 
-**Both files may not exist**: `https://example.com/robots.txt` not found.
+👉 Common URL if present: `https://example.com/sitemap.xml`
+
+There is also a file `robots.txt` with the pages that robots should not crawl/index, with may indicate vulnerable/sensitive pages.
+
+👉 Common URL if present: `https://example.com/robots.txt`
 </div></div>
 
 <hr class="sep-both">
@@ -74,20 +76,20 @@ There is also a file `/robots.txt` with the pages that robots should not crawl, 
 
 <div class="row row-cols-md-2"><div>
 
-I'm using this version to grab every HTML comments.
+I'm using this snippet to grab every HTML comments.
 
 ```javascript!
 document.querySelector('html').innerHTML.replaceAll('\n', ' ').match(/<!--.*?-->/g)
 ```
 
-Since newlines are removed, you may use the patch below if you still need them:
+Since newlines are removed, you can use the modified version below if you still need them:
 
 ```javascript!
 document.querySelector('html').innerHTML.replaceAll('\n', '/n').match(/<!--.*?-->/g).map(x => x.replaceAll('/n', '\n'))
 ```
 </div><div>
 
-You may append this function call to remove empty comments
+You may append the snippet this to remove empty comments:
 
 ```javascript!
 [...].filter(r => r !== "<!---->")

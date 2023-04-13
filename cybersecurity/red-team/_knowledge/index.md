@@ -228,6 +228,7 @@ On Kali Linux, you can use the commands `wordlists` or `seclists` to move to the
 ```
 /usr/share/seclists/Passwords/darkweb2017-top10000.txt
 /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt
+...
 ```
 
 * package wordlists | [GitHub](https://github.com/drtychai/wordlists) (0.1k ⭐)
@@ -236,7 +237,7 @@ On Kali Linux, you can use the commands `wordlists` or `seclists` to move to the
 /usr/share/wordlists/rockyou.txt
 /usr/share/wordlists/dirb/others/best1050.txt
 /usr/share/wordlists/dirb/others/best110.txt
-/usr/share/wordlists/dirb/others/best15.txt
+...
 ```
 </div><div>
 
@@ -247,7 +248,7 @@ CTFs are usually using the infamous `rockout.txt` for passwords  <small>(from a 
 ```shell!
 $ echo {A..Z} | tr ' ' '\n' > AZ.lst
 $ echo {0..99} | tr ' ' '\n' > 0_to_99.lst
-$ echo user{0..9} | tr ' ' '\n' > user_0_to_99.lst
+$ echo user{0..9} | tr ' ' '\n' > user_0_to_9.lst
 $ echo {admin,adm,user} | tr ' ' '\n' > simple_list.lst
 ```
 

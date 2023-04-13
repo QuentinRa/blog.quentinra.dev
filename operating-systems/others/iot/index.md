@@ -19,7 +19,12 @@ Stuff that I found, but never read/used yet.
 * Access Point > to-do (Zigbee and Z-Wave)
 * Investigation > IoT
 * [variot.eu](https://www.variot.eu/)
+* IoT (VLAN (technology) - IoT (concept))
+* we want to isolate them 
+* printer 
+* segment IoT devices
 </div><div>
 
-
+* WI-FI IoT SSID "XXX-IOT"
+* hidden from users
 </div></div>

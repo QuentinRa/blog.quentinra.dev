@@ -9,7 +9,7 @@ They connect physically multiple devices in a network. Switches are a smarter an
 It handles delivery of packets while ensuring that they are received in the right order, and are not corrupted.
 </div><div>
 
-Switches can operate only at
+Switches can operate at
 
 * Layer 2 <small>(MAC)</small>
 * Layer 3 <small>(MAC and IP address)</small>
