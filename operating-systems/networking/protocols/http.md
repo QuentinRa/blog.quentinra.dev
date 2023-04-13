@@ -60,6 +60,8 @@ When the server answers, it returns an [HTTP response code](https://developer.mo
 * `404`: Not found
 * `500`: Internal server error
 * ...
+
+You can use [httpstatus](https://httpstatus.io/) to test the response code for a batch or URLs. It supports automatic redirection.
 </div></div>
 
 <hr class="sep-both">

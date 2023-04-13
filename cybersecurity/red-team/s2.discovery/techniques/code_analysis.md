@@ -125,10 +125,13 @@ You may use the console debugger, after adding a breakpoint in the JavaScript, t
 
 [![walkinganapplication](../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
 [![httpindetail](../../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
+[![agentsudoctf](../../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 
-After opening the network tab of your console, every HTTP request is listed inside. You can see where the forms are sent, and examine the headers of every request.
+After opening the network tab of your console, every HTTP request is listed inside. You can see where the forms are sent, and examine the [headers](/operating-systems/networking/protocols/http.md#http-headers-in-web-applications) of every request.
 
 🔑 The server <small>(Nginx, Apache, IIS, Node.js)</small> and the version may be exposed in the headers.
 
 👉 You can use the network tab to tune requests and re-send them.
+
+🗺️ There are many web scanner detecting suspicious headers.
 </div></div>
