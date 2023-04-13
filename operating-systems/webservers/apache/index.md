@@ -230,6 +230,14 @@ SSLProtocol -all +TLSv1.3 +TLSv1.2
 SSLCipherSuite SOME_ALGS_HERE
 SSLHonorCipherOrder on
 ```
+
+Headers
+
+```bash!
+sudo nano /etc/apache2/conf-enabled/security.conf
+# ServerSignature Off
+# ServerTokens Prod
+```
 </div><div>
 
 OCSP Stapling

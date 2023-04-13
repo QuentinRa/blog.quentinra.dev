@@ -223,6 +223,7 @@ https://tryhackme.com/room/retro (blaster...)
 * Domato (🏝) <small>(DOM-based XSS scanner)</small>
 </div><div>
 
+* [venom](https://github.com/ovh/venom) (🔎🏝💥🔑✈️) <small>(payloads? -h/-c/-u/-p/-s, scan/crawl/portscan)</small>
 * [**Burp Collaborator client**](https://portswigger.net/burp/documentation/desktop/tools/collaborator-client) (🃏) <small>(server for SSRF/XXE/...)</small>
 * [requestbin](https://requestbin.com/) (🃏) <small>(HTTP endpoint for inspection)</small>
 * [**fierce**](https://github.com/mschwager/fierce) (🏝) <small>(DNS)</small>

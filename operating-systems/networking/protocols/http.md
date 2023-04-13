@@ -61,3 +61,28 @@ When the server answers, it returns an [HTTP response code](https://developer.mo
 * `500`: Internal server error
 * ...
 </div></div>
+
+<hr class="sep-both">
+
+## HTTP Headers in web applications
+
+<div class="row row-cols-md-2"><div>
+
+HTTP Headers are commonly used to determine the web browser behavior for a website. Common usages are:
+
+* ⌛ Define how long assets (images/scripts/csss) are cached
+* 🔑 Define if a browser can open a website in an iframe
+* 🌍 Define if the server supports a protocol
+* 🗺️ Define what websites are used to host scripts/... <small>(CDNs...)</small>
+* 🚀 Specify required browser features
+* ...
+
+These headers if incorrectly configured, may disclose information about the server, or allow some web browsers to be exploited.
+</div><div>
+
+To find what headers you can use, and check if you headers are secure, they are many tools and guides:
+
+* [Mozilla Observatory](https://observatory.mozilla.org/) (test)
+* [Security Headers](https://securityheaders.com/) (test)
+* [secure-headers-test](https://domsignal.com/secure-header-test) (test)
+</div></div>
