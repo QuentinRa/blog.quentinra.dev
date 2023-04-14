@@ -301,7 +301,7 @@ paths:
 
 </div><div>
 
-You could also request a cookie inside `parameters`.
+You could also request a [cookie](/programming-languages/web/_general/random/cookies.md) inside `parameters`.
 
 ```yaml
         # ex: cookie

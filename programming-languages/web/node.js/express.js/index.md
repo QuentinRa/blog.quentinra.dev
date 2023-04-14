@@ -49,7 +49,7 @@ app.use(function (req, res, next) {
 
 * ✨ Example: cookie parser
 
-For instance, `app.use(cookieParser())` is a middleware that will parse cookies in the request, and store them in `req.cookies`.
+For instance, `app.use(cookieParser())` is a middleware that will parse [cookies](/programming-languages/web/_general/random/cookies.md) in the request, and store them in `req.cookies`.
 
 * ✨ Example: adding headers
 
@@ -213,7 +213,7 @@ res.redirect('URL');
 
 <div class="row row-cols-md-2"><div>
 
-You may want to use cookies to store some data, such as the logged user. We use a special cookie called session for this purpose. A session is a file on the server in which we can store data.
+You may want to use [cookies](/programming-languages/web/_general/random/cookies.md) to store some data, such as the logged user. We use a special cookie called session for this purpose. A session is a file on the server in which we can store data.
 
 The client will store and return us in every request the **session-id**, which will allow us to load the matching session data.
 

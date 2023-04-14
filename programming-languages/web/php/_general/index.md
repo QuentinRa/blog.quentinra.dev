@@ -574,7 +574,7 @@ exit();
 
 #### Sessions
 
-Sessions can be used to keep information about a client on the server during their browsing session, such as their logging status.
+[Sessions](/programming-languages/web/_general/random/cookies.md) can be used to keep information about a client on the server during their browsing session, such as their logging status.
 
 All data is stored in an array called `$_SESSION` and available after starting the session.
 
