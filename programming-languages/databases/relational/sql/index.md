@@ -186,6 +186,7 @@ Stuff that I found, but never read/used yet.
 * ROLLBACK/COMMIT
 * UNION/INTERSECT/EXCEPT (same number of values in SELECT/NULL). ORDER, or LIMIT can only be applied on the whole request.
 * SHOW DATABASES
+* [SQL-specific stuff](/cybersecurity/red-team/s3.exploitation/vulns/injection/files/union_sqli.md#manual-union-based-sqli)
 </div><div>
 
 <details class="details-n">
