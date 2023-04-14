@@ -146,6 +146,11 @@ YYY
 * Use a CAPTCHA while taking into account that they are services to "bypass" them
 * Use two-Factor authentication
 
+ZZZ
+
+* "root", "bin", "adm", "operator", "admin", "administrator", "bureaucrat", "steward", "checkuser", "oversight", "sysop", "bot", etc.
+* [username policy](https://en.wikipedia.org/wiki/Wikipedia:Username_policy#Inappropriate_usernames)
+
 XXX
 
 * Set up a robust password policy

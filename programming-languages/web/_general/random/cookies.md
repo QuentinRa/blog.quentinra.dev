@@ -58,6 +58,7 @@ Stuff that I found, but never read/used yet.
 * Session Hijacking
 * Cookie Stealing
 * Cookie Scrapping
+* MangaDex 2020
 </div><div>
 
 

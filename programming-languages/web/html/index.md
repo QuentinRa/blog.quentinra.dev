@@ -521,6 +521,25 @@ These can be used on any input elements such as `<input>`.
 
 <hr class="sep-both">
 
+## HTML security 🛡️
+
+<div class="row row-cols-md-2"><div>
+
+**Subresource Integrity (SRI)**: to ensure that an external CSS/JS file has not been tampered, we add a hash of the file, and check the integrity. If needed, [you can generate a SRI here](https://www.srihash.org/).
+
+```xml!
+<script src="SOME/URL" 
+        integrity="sha512-93xLZnNMlYI6xaQPf/cSdXoBZ23DThX7VehiGJJXB76HTTalQKPC5CIHuFX8dlQ5yzt6baBQRJ4sDXhzpojRJA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+```
+</div><div>
+
+**URL opener**: most browsers were patched in 2021, but before, a [vulnerability](https://mathiasbynens.github.io/rel-noopener/) allowed malicious websites to access the website users were coming from before clicking on a link to the malicious website. 
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -533,6 +552,7 @@ Stuff that I found, but never read/used yet.
 * [Introducing HTML5](https://ptgmedia.pearsoncmg.com/images/9780321784421/samplepages/0321784421.pdf)
 * Select tag
 * math tag LaTeX Math to HTML
+* PHP comments
 </div><div>
 
 ```html!

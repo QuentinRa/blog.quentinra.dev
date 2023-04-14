@@ -72,7 +72,7 @@ You can use [httpstatus](https://httpstatus.io/) to test the response code for a
 
 HTTP Headers are commonly used to determine the web browser behavior for a website. Common usages are:
 
-* ⌛ Define how long assets (images/scripts/csss) are cached
+* ⌛ Define how long assets <small>(images/scripts/css)</small> are cached
 * 🔑 Define if a browser can open a website in an iframe
 * 🌍 Define if the server supports a protocol
 * 🗺️ Define what websites are used to host scripts/... <small>(CDNs...)</small>
