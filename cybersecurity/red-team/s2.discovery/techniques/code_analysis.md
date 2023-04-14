@@ -20,7 +20,7 @@ For starter, you may do a static analysis of the source HTML page. Use <kbd>CTRL
 
 This sample of script below is fetching every HTML tag that is hidden aside from some uninteresting ones.
 
-➡️ Find hidden input fields...
+➡️ Find hidden input fields, hidden content...
 </div><div>
 
 ```javascript!
