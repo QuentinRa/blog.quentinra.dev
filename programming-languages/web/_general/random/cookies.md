@@ -11,7 +11,7 @@ Cookies are defined in a [HTTP header](/operating-systems/networking/protocols/h
 
 **Client**: the client will send the cookies and their current value in every following request, in the header `Cookie`.
 
-🔥 Cookies can be created, edited, deleted by the client.
+🔥 Cookies can be created, edited, deleted by the client. Go to the tab "Application" or "Storage" of the devtools and select "Cookies".
 </div><div>
 
 Cookies can be used
@@ -19,12 +19,10 @@ Cookies can be used
 * 📦 to store data in the client browser
   * Ex: language
   * Ex: the mode (dark/light)
-  * Ex: the name of the user logged (mostly in CTF)
-  * Ex: sometimes you will see credentials too in CTF...
   * ...
 * 👑 to store a session id
 
-🗺️ Some cookies may be encoded in [base64](/programming-languages/others/encoding/index.md).
+☠️️ Some cookies may be encoded in [base64](/programming-languages/others/encoding/index.md) or another algorithm and contain sensitive information such as usernames/passwords.
 </div></div>
 
 <hr class="sep-both">

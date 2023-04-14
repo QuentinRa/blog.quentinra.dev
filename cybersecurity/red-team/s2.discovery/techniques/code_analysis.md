@@ -118,7 +118,7 @@ You may use the console debugger, after adding a breakpoint in the JavaScript, t
 
 [![httpindetail](../../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
 
-...
+Refer to the [Cookie](/programming-languages/web/_general/random/cookies.md) for information on cookies.
 </div><div>
 
 #### Analyze the network
