@@ -135,6 +135,43 @@ set transaction read write /*code/
 
 <hr class="sep-both">
 
+## DBMS-specific
+
+<div class="row row-cols-md-2"><div>
+
+Both for **PostgreSQL** and **MySQL**, they are running as a service:
+
+```ps
+$ service mysql status
+$ service postgresql status
+```
+
+On **MySQL**, if the service is started, you can log in using:
+
+```ps
+# sudo apt install default-mysql-client
+$ mysql -u root -p
+$ mysql -u root -p -h SOME_IP
+> source xxx.sql # import
+> DESCRIBE table_name # definition of a table
+```
+
+☠️ By default, there is no password for root (blank).
+
+🐲 MySQL/MariaDB default port is 3306.
+</div><div>
+
+A **SQLite** database is a file such as `users.db`.
+
+* SQLite version 🔎: `file users.db`
+* Load the SQLite database 🗃️: `sqlite3 users.db`
+* List tables 🧊: `.tables`
+* List columns 🫕: `PRAGMA table_info(some_table);`
+* Schema: `select sql from sqlite_master`
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

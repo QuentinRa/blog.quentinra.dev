@@ -24,7 +24,7 @@ The servers, the databases, and basically everything else.
 * ...
 </div></div>
 
-There is also 👑 **Full-Stack** 👑 which is both Front+Back-end, along Mobiles <small>(React Native...)</small> and Desktops <small>(Electron...)</small>.
+There is also 👑 **Full-Stack** 👑 which is both the front-end and the back-end, along Mobiles <small>(React Native...)</small> and Desktops <small>(Electron...)</small>.
 
 <hr class="sep-both">
 
