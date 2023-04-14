@@ -34,7 +34,7 @@ Common activities are:
 
 <hr class="sep-both">
 
-## ⚔️ Arsenal ⚔️
+## Arsenal 🌱
 
 <div class="row row-cols-md-2"><div>
 
@@ -52,6 +52,11 @@ You may use a proxy as an intermediary for your requests. If you do, then you ca
 You may do that to bypass JavaScript verifications. You can use plugins such as [noscript](https://noscript.net/), or ublock by clicking on the following icon
 
 ![ublock_disable_scripts](_images/ublock_disable_scripts.png)
+
+* HTTP clients
+
+We usually don't only rely on our web browser to recon/exploit websites, as they are unreliable. You can use [Postman, curl](/programming-languages/others/apis/_general/index.md#-testuse-an-api-) or tools such as the [Burp Suite](../s3.exploitation/tools/burp.md)...
+
 </div></div>
 
 <hr class="sep-both">

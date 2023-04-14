@@ -1516,6 +1516,12 @@ Request headers
 ```ps
 $ curl -I https://example.com
 ```
+
+POST request.
+
+```ps
+$ curl -X POST 'URL' -d 'key=value' -H 'Content-Type: application/x-www-form-urlencoded'
+```
 </div></div>
 
 [**time** - execution time]

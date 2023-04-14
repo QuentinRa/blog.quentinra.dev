@@ -100,7 +100,7 @@ The most well-known tool is [PostMan](https://www.postman.com/). Once downloaded
 
 #### cURL
 
-cURL is a command that is useful for quick tests.
+[cURL](/operating-systems/linux/commands/list.md#command-curl) is a command that is useful for quick tests.
 
 ```
 # postman
