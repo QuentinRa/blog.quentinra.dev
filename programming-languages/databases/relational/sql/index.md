@@ -154,6 +154,8 @@ $ mysql -u root -p
 $ mysql -u root -p -h SOME_IP
 > source xxx.sql # import
 > DESCRIBE table_name # definition of a table
+> SELECT VERSION() # version
+> SELECT database()
 ```
 
 ☠️ By default, there is no password for root (blank).
@@ -161,9 +163,15 @@ $ mysql -u root -p -h SOME_IP
 🐲 MySQL/MariaDB default port is 3306.
 </div><div>
 
+**MySQL**/**PostgreSQL** store structural data in `information_schema`:
+
+* Tables: `SELECT table_name FROM information_schema.tables WHERE TABLE_SCHEMA='a_db';`
+* Columns: `SELECT column_name FROM information_schema.columns WHERE TABLE_SCHEMA='a_db' AND TABLE_NAME='a_table';`
+
 A **SQLite** database is a file such as `users.db`.
 
 * SQLite version 🔎: `file users.db`
+* SQLite version 🔎: `select sqlite_version()`
 * Load the SQLite database 🗃️: `sqlite3 users.db`
 * List tables 🧊: `.tables`
 * List columns 🫕: `PRAGMA table_info(some_table);`
@@ -178,7 +186,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [_old](_old.md)
 * [SQL.sh](https://sql.sh/) (french)
 * [fxjollois](https://fxjollois.github.io/cours-sql/) (french)
 * [angelique-renaud](https://www.angelique-renaud.com/bdd.php) (french)

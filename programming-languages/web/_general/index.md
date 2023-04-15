@@ -34,7 +34,7 @@ There is also 👑 **Full-Stack** 👑 which is both the front-end and the back-
 
 Browsers are using the [HTTP](/operating-systems/networking/protocols/http.md) protocol to communicate with a webserver. The server is supposed to return an **HTML page**.
 
-* 👉 If there are no routing, the URL is associated with a local path on the server, and the file is loaded if present.
+* 👉 If there are no routing, the [URL](random/url.md) is associated with a local path on the server, and the file is loaded if present.
 
 * 👉 If there is no file in the URL, webservers may load `index.html`/`index.php`/... if present.
 
@@ -184,23 +184,6 @@ Stuff that I found, but never read/used yet.
 **Apps**
 
 * progressive web apps (PWA)
-
-A URL is a suite of: a scheme (http/https), a username, a password, `@`, a domain, `:`, a port, a route, a query (`?`), and a fragment (`#`). Most parameters are optional, the URLs you will use will mostly look like this
-
-```
-URL
-* Scheme: (protocol) HTTP/HTTPS/...
-* Username:Password@Domain:port/Path?query#Fragment_or_Hash
-http://example.com
-http://example.com:80
-https://example.com
-https://example.com:443
-https://example.com/route/?query#fragment
-127.0.0.1
-127.0.0.1:80
-[...]
-```
-
 * [Server Side Includes (SSI)](https://en.wikipedia.org/wiki/Server_Side_Includes)
 </div><div>
 
