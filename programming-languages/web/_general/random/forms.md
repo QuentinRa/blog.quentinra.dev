@@ -9,6 +9,7 @@ Forms are used when requesting data from the user to preform an action. Common f
 * 🔑 a password forgot form
 * 💵 a checkout form
 * 🔎 a search/filter form
+* 🤖 a [captcha](captcha.md) form
 
 There are two [HTTP methods](/operating-systems/networking/protocols/http.md#method) commonly used in forms: `GET` and `POST`. There is a semantic use 🗺️: `GET` is used by forms "getting" data from the server <small>(search/filter forms)</small>, `POST` is used by form creating something server-side <small>(all others forms)</small>. In practice, it's up to the developer.
 </div><div>
