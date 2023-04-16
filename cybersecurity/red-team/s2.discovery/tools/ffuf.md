@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[ffuf](https://github.com/ffuf/ffuf) <small>(**f**uzz **f**aster **u** **f**ool)</small> (9.1k ⭐) is a [Fuzzing](../techniques/fuzzing.md) tool in Go. It's written to be a faster, modern, version of wfuzz.
+[ffuf](https://github.com/ffuf/ffuf) <small>(**f**uzz **f**aster **u** **f**ool)</small> (9.2k ⭐) is a [Fuzzing](../techniques/fuzzing.md) tool in Go. It's written to be a faster, modern, version of wfuzz.
 
 Common examples are:
 

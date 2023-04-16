@@ -9,6 +9,7 @@ Example
 ```ps
 $ wfuzz -w wordlist -u URL/FUZZ # Forced browsing
 $ wfuzz -w wordlist URL/account?id=FUZZZ # GET
+$ wfuzz -w wordlist -d "xxx=yyy" URL/login.php # POST
 # ...
 ```
 
