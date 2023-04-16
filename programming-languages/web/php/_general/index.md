@@ -595,7 +595,7 @@ if (isset($_SESSION['username'])) {}
 
 #### Handle a form
 
-[HTML forms](/programming-languages/web/html/index.md#forms) have an attribute `action` which takes a URL. This URL can lead to a PHP script that will handle the form. According to the method specified in the HTML form, values will be stored either in `$_POST` or `$_GET`.
+[Forms](../../_general/random/forms.md) are handled in PHP.  [HTML forms](/programming-languages/web/html/index.md#forms) have an attribute `action` which takes a URL. This URL can lead to a PHP script that will handle the form. According to the method specified in the HTML form, values will be stored either in `$_POST` or `$_GET`.
 
 ➡️ Use a `var_dump($_POST)`/`var_dump($_GET)` to ensure that the array is filled as you expect it to be before processing.
 

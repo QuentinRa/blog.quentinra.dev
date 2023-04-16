@@ -4,9 +4,9 @@
 
 HTML primary, and probably only purpose, is to build web pages 🌍.
 
-* 👉 It can be used in PHP scripts
-* 👉 It can be used in JavaScript scripts
-* 👉 It pretty similar to XML which is used on Android/...
+* 👉 It can be used in [PHP](../php/_general/index.md) scripts
+* 👉 It can be used in [JavaScript](../javascript/_general/index.md) scripts
+* 👉 It pretty similar to [XML](/programming-languages/others/data/xml.md) which is used on Android/...
 
 **Where to learn?**
 
@@ -364,7 +364,7 @@ These tags are, in my opinion, semantic tags
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-A form (`<form>`) is a group of input elements (`<input>`, `<textarea>`...). You can use either **GET** or **POST** [HTTP methods](/operating-systems/networking/protocols/http.md).
+A HTML [form](../_general/random/forms.md) (`<form>`) is a group of input elements (`<input>`, `<textarea>`...). You can use either **GET** or **POST** [HTTP methods](/operating-systems/networking/protocols/http.md).
 
 ```html
 <form method="POST" action="https://example.com/login.php">

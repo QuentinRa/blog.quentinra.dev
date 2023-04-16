@@ -217,11 +217,12 @@ document.onkeydown = e => {
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-You can listen to a form submission which `submit`/`onsubmit`. This event is particular, as **true** must be returned if we can send the form, **false** otherwise. It's used to validate a form, before sending it.
+You can listen to a [form](../../_general/random/forms.md) submission with `submit`/`onsubmit`. This event is particular, as **true** must be returned if we can send the form, **false** otherwise. It's used to validate a form, before sending it.
 
 ```js!
+const form = [...]
 form.onsubmit = (event) => {
-    const form = event.target
+    const form = event.target // if not stored
     // 🤔 using elements (array)
     const value = form.elements['name']['value'] // get
 
@@ -246,8 +247,8 @@ You may know that you can validate an HTML form with attributes such as `minleng
 
 ```js!
 form.onsubmit = (event) => {
-    const form = document.forms[0]
-    const xxx = f.querySelector('#xxx')
+    const form = document.forms[0] // alternative
+    const xxx = form.querySelector('#xxx')
     if (xxx.validity.badInput) {}
     if (xxx.validity.tooShort) {}
     if (xxx.validity.tooLong) {}
