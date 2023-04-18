@@ -122,7 +122,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 
 <br>
 
-**Not tested** 👻 - may be either theorical, practical, or both.
+**Not tested** 👻 - may be either theoretical, practical, or both.
 
 * [hackerone.com](https://www.hackerone.com/hackers)
 * [PortSwigger](https://portswigger.net/web-security)
@@ -140,6 +140,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [cybersecurityeducation.org](https://www.cybersecurityeducation.org/)
 * [securityawareness](https://securityawareness.usalearning.gov/)
 * [bugbountyhunter training](https://www.bugbountyhunter.com/training/)
+* [notsosecure](https://notsosecure.com/security-training)
 * Udemy, Coursera...
 </div></div>
 
