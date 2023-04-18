@@ -1,11 +1,26 @@
-# Privilege Escalation
+# Fourth step - Privilege Escalation
 
 <div class="row row-cols-md-2"><div>
 
-...
+Privilege Escalation 🔑 is the fourth step of the pentester activities. We attempt to escalate from a regular user to an administrative account by exploiting a vulnerability in the system.
+
+This is an important step otherwise we may not have enough privilege to access data, leave a backdoor, or for most [post-exploitation](../s5.post-exploitation/index.md) tasks.
+
+We want to access account with the higher level of privileges:
+
+* `root` > `sudoers` > ALL on [Linux](/operating-systems/linux/knowledge/index.md#sudo)
+* `NT AUTHORITY\SYSTEM` > `Administrator` > ALL on [Windows](/operating-systems/windows/knowledge/index.md#permissions-and-users)
 </div><div>
 
-...
+Escalation can be **horizontally**/laterally <small>(another user with the same level of privileges)</small> and **vertically** <small>(a higher level of privileges)</small>.
+
+**Learn** 🎓
+
+* [Ignitetechnologies/Privilege-Escalation](https://github.com/Ignitetechnologies/Privilege-Escalation) (2.8k ⭐, CTFs)
+
+**Tools**
+
+* [Meterpreter](../s3.exploitation/tools/metasploit.md#meterpreter) (scripts for Linux/Windows)
 </div></div>
 
 <hr class="sep-both">
@@ -16,8 +31,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* Passive attacks (monitor)
-* Active attacks
 * [Old - General](/_kmp/_cybersecurity/privilege-escalation/index.md)
 * [Old - Linux](/_kmp/_cybersecurity/privilege-escalation/linux/index.md)
 * [Old - Windows](/_kmp/_cybersecurity/privilege-escalation/windows/index.md)

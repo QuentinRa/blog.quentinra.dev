@@ -1,16 +1,6 @@
 # Privilege Escalation
 
 <div class="row row-cols-md-2 mt-4"><div>
-
-There isn't much you can do as a regular user, so **Privilege Escalation** is the main goal. It refers to the process of obtaining super-administrator (a.k.a. root on Linux, Administrator on Windows) privileges, starting from a regular user. You can escalate **horizontally**/laterally (use another user) and **vertically** (get a higher level of privileges).
-
-Once you are admin, you will be able to do things such as
-
-* Stealing protected data
-* Enabling Persistence
-* ...
-
-> [Privilege-Escalation](https://github.com/Ignitetechnologies/Privilege-Escalation) (2.6k ⭐) list a lot of CTF to practice.
 </div><div>
 
 **Find more info about the computer** 🧭️

@@ -108,8 +108,9 @@ If you don't use PowerShell, which is Linux friendly so most Unix commands are a
 
 **Users** 🧑
 
-* `LocalSystem`: an automatically created account used by the system to do internal tasks. It has higher privileges than Administrator.
-* `Administrator`: manage users, apps, groups, and system-wide settings...
+* `NT AUTHORITY\SYSTEM`: a built-in account used by the system to do internal tasks. It has the highest level of permissions.
+* `LocalSystem`: another built-in account, but with less privilege than SYSTEM and still more than Administrator.
+* `Administrator`: admin account to manage users, apps, groups, and system-wide settings...
 * `Standard User`: can use apps, can access their files...
 
 **Groups** 👪
