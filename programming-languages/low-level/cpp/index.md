@@ -48,7 +48,7 @@ C++ added constructors on top of what you can do in C.
 ```cpp
 int a; // implicit default constructor
 int a(); // explicit default constructor
-int a(0); // implicit constructor
+int a(0); // explicit constructor
 int a = 0; // implicit constructor
 int a = int(0); // explicit constructor
 ```
@@ -132,17 +132,17 @@ std::cout << "Hello " << name << std::endl;
 
 #### Exceptions
 
-Exception* are signals that are sent when something unexpected happened, such as an error (ex: `1/0`).
+Exceptions are signals that are sent when something unexpected happened, such as an error (ex: `1/0`).
 
 ```cpp
 try {
-    // 👉 std::exception or a subclass
+    // ✅ std::exception or a subclass
     throw std::exception();
     throw std::runtime_error("some message");
-    // 👉 avoid using a string
+    // ❌ avoid using a string
     throw "xxx";
 }
-// 👉 you can chain "catch" for each type of exception
+// 👉 you can add a "catch" for each type of exception
 catch ( std::exception &e ) { std::cerr << e.what(); }
 catch ( const char* msg ) { std::cerr << msg; }
 // 👉 catch every kind of exception
@@ -440,16 +440,16 @@ f(xxx); // copy
 
 #### Operator overload
 
-Every operator is a function, and we can overload them, aside from: `::` <small>(scope resolution)</small>, `.` <small>(dot operator)</small>, `.*`/`->*` <small>(pointer to member)</small>, and `:` <small>(ternary operator)</small>, `sizeof`, `typeid`, and every casting operator.
+Every operator is a function, and we can overload them, aside from: `::` <small>(scope resolution)</small>, `.` <small>(dot operator)</small>, `.*`/`->*` <small>(pointer to member)</small>, `:` <small>(ternary operator)</small>, `sizeof`, `typeid`, and every casting operator.
 
 👉 An ideology is to separate operators between
 
 * Internal: modify and returns `*this`
 * External: generate a new instance
 
-To use an operator, such as `++`, you can do `x++` or `x.operator++(1);`...
+To use an operator, such as `+=`, you can do `x+=?` or `x.operator+=(?)`...
 
-🎯 Note that the **return value** and the **type** of the arguments is **up to you!**. Only the number of arguments is fixed.
+🎯 Note that the **return value** and the **type** of the arguments is **up to you!** Only the number of arguments is fixed.
 
 <details class="details-n">
 <summary>Internal operators: <code>++</code>, <code>--</code>, <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>=</code>, <code>-</code>, <code>()</code>, <code>[]</code>...</summary>
@@ -491,7 +491,7 @@ bool operator>( const XXX &a, const XXX &b ) {
 }
 ```
 
-➡️ If you declared the operators with `;` inside a namespace in a header file, you must use `ns::operator>` to reference `operator>` inside the namespace `ns`.
+➡️ If you declared operators inside a namespace in a header file, you must use `ns::operator>` to reference `operator>` inside the namespace `ns`.
 
 ➡️ Note that by default, `||` has a higher priority than `&&`, but if you overload the operator, it will loose this priority.
 </details>
