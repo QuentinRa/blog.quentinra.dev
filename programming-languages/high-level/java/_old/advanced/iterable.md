@@ -1,6 +1,6 @@
 # Iterable
 
-[Go back](../../index.md#advanced)
+[Go back](../index.md#advanced)
 
 Something is iterable meaning that we can use the method `iterator()` to get something called an Iterator to read the values of our iterable.
 

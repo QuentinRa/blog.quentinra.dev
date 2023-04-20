@@ -1,6 +1,6 @@
 # Attributes
 
-[Go back](../../index.md#vocabulary)
+[Go back](../index.md#vocabulary)
 
 An attribute is the a property of a class used to store something. This is a variable, that belongs to each object (=instance attribute), or the class (=class attribute, static). An instance attribute could be the name for a person, as each object may have a different value for this property. A class attribute would be the number of persons, as this value is the same in every object.
 

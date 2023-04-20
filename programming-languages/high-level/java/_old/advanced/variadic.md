@@ -1,6 +1,6 @@
 # Variadic methods
 
-[Go back](../../index.md#advanced)
+[Go back](../index.md#advanced)
 
 That's a method taking a variable number of arguments, greater or equals than 0.
 

@@ -1,6 +1,6 @@
 # Special classes
 
-[Go back](../../index.md#advanced)
+[Go back](../index.md#advanced)
 
 Here we will summarize code related to class declaration.
 

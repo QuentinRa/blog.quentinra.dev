@@ -1,6 +1,6 @@
 # Creating a class
 
-[Go back](../../index.md#vocabulary)
+[Go back](../index.md#vocabulary)
 
 We used this syntax to create a class.
 

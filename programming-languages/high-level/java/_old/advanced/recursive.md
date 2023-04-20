@@ -1,6 +1,6 @@
 # Recursive functions
 
-[Go back](../../index.md#advanced)
+[Go back](../index.md#advanced)
 
 It's simply a function calling herself again. You must have a if somewhere with a branch without recursion.
 

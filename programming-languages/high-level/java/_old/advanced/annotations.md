@@ -1,6 +1,6 @@
 # Annotations
 
-[Go back](../../index.md#advanced)
+[Go back](../index.md#advanced)
 
 You should already know at least `@Override` annotation. They are used to send messages to the programmers or explicitly confirm that the program really wanted to do something and that he isn't making a mistake.
 

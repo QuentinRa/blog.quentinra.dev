@@ -1,6 +1,6 @@
 # Generating a .exe or an installer
 
-[Go back](../../index.md#expert)
+[Go back](../index.md#expert)
 
 Since JDK 14, you can use JPackage to create an installer for a .jar and JLink to create a jre for you .jar.
 

@@ -1,6 +1,6 @@
 # Methods
 
-[Go back](../../index.md#vocabulary)
+[Go back](../index.md#vocabulary)
 
 A method is the same as a similar to a function in C. You are declaring methods inside a class, taking attributes and maybe returning a value. Each method have an implicit parameter **this**, that is the object calling the function.
 

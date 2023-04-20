@@ -1,6 +1,6 @@
 # Files
 
-[Go back](../../index.md#advanced)
+[Go back](../index.md#advanced)
 
 Like in C, you will use Streams of data. You may know of
 

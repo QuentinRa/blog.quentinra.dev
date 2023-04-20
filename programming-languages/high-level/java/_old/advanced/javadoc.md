@@ -1,6 +1,6 @@
 # Javadoc
 
-[Go back](../../index.md#advanced)
+[Go back](../index.md#advanced)
 
 The idea is the same as for doxygen (tools/doxygen course) but only for Java. Using `javadoc` command, you will generates a website like this one [javadoc index](https://docs.oracle.com/javase/8/docs/api/overview-summary.html) And something like that for a class [javadoc Boolean](https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html).
 

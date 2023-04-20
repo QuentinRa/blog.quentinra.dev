@@ -1,6 +1,6 @@
 # Networking
 
-[Go back](../../index.md#advanced)
+[Go back](../index.md#advanced)
 
 You can only create a client-server app locally like your local network (you will need a real server if you want to do a real client-server).
 

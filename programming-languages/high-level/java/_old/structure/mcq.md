@@ -1,6 +1,6 @@
 # MCQ about the Introduction section
 
-[Go back](../../index.md#vocabulary)
+[Go back](../index.md#vocabulary)
 
 This is a list of technical questions about the introduction section, feel free to add question or explanation if needed. Hope you will have fun 😁.
 

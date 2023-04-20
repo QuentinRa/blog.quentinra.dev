@@ -1,6 +1,6 @@
 # Databases
 
-[Go back](../../index.md#advanced)
+[Go back](../index.md#advanced)
 
 Sorry, I was planning to make it but I don't want to.
 

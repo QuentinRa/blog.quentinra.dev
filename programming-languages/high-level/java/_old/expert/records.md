@@ -1,6 +1,6 @@
 # Records
 
-[Go back](../../index.md#expert)
+[Go back](../index.md#expert)
 
 Records are a way to reduce the code used to create a class to store data. For instance, let's says you want to store a JSON into a class. You need 
 

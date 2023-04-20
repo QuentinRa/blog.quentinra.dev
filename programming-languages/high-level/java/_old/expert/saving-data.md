@@ -1,6 +1,6 @@
 # Preferences / Properties
 
-[Go back](../../index.md#advanced)
+[Go back](../index.md#advanced)
 
 Properties and preferences are two ways of storing data easily in Java. You will a see a lot of files `.properties` when working with Java project like `gradle.properties` but personally I'm enjoying working with Preferences.
 

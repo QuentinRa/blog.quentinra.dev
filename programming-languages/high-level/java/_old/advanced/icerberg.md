@@ -1,6 +1,6 @@
 # Iceberg paradigm
 
-[Go back](../../index.md#advanced)
+[Go back](../index.md#advanced)
 
 Java is realizing the **iceberg paradigm**, or a least giving you the keys to implements it.
 

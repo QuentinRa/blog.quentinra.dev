@@ -1,6 +1,6 @@
 # Constructors
 
-[Go back](../../index.md#vocabulary)
+[Go back](../index.md#vocabulary)
 
 A constructor is a method, without a return type, having the name of the class. You can have multiple constructors with different arguments. They are used to create objects.
 

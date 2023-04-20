@@ -1,6 +1,6 @@
 # Enumerations
 
-[Go back](../../index.md#advanced)
+[Go back](../index.md#advanced)
 
 It's a class of static instances.
 

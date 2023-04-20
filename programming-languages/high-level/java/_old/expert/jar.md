@@ -1,6 +1,6 @@
 # Protect a jar
 
-[Go back](../../index.md#expert)
+[Go back](../index.md#expert)
 
 What's obfuscating and could we do something better to prevent someone to reverse your code back to the Java code?
 

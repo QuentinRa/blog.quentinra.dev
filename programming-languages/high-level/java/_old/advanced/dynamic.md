@@ -1,6 +1,6 @@
 # Dynamic structures
 
-[Go back](../../index.md#advanced)
+[Go back](../index.md#advanced)
 
 These are structures of data that you will use like ArrayList or HashMap. Theses are called Collections since they implementing `Collection` and note that collections are `Iterables`.
 

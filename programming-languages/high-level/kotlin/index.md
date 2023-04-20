@@ -129,7 +129,7 @@ xxx { x: Int ->
 
 <hr class="sep-both">
 
-## Control-flow
+## Control-flow structures
 
 <div class="row row-cols-md-2"><div>
 

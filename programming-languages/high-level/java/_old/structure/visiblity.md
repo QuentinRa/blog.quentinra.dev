@@ -1,6 +1,6 @@
 # Visibility
 
-[Go back](../../index.md#vocabulary)
+[Go back](../index.md#vocabulary)
 
 In java, you got 4 modifiers: `public`, `protected`, `private` and `<none>`. None, which is called **package**, is the default modifier. These are basically used to tell Java which classes can use an attribute or a method.
 

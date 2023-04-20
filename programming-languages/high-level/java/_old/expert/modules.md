@@ -1,6 +1,6 @@
 # Modules
 
-[Go back](../../index.md#expert)
+[Go back](../index.md#expert)
 
 Nowadays, Java projects are encapsulated in what we call `modules`. You will create a module-info file and require other modules that may be used for your project. It's a higher encapsulation level than before.
 

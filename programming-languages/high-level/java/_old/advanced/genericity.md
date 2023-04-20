@@ -1,6 +1,6 @@
 # Genericity
 
-[Go back](../../index.md#advanced)
+[Go back](../index.md#advanced)
 
 The main idea is that you want to code, that can works with some kind of classes. For instance let's says we want the first element of an array.
 

@@ -33,13 +33,65 @@ Hello, World!
 
 <hr class="sep-both">
 
+## XXX
+
+<div class="row row-cols-md-2"><div>
+
+#### Declare a variable
+
+...
+
+<br>
+
+#### Types
+
+...
+
+<br>
+
+#### Conversions
+
+...
+</div><div>
+
+#### Print some text in the terminal
+
+...
+
+<br>
+
+#### Operators
+
+...
+
+<br>
+
+#### XXX
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Control-flow structures
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [old](../_old/_old.md)
+* [old](../_old/index.md)
 * java shell
 </div><div>
 </div></div>

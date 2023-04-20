@@ -1,6 +1,6 @@
 # First java file
 
-[Go back](../../index.md#vocabulary)
+[Go back](../index.md#vocabulary)
 
 As usual, we are going to make a program printing "Hello, World!".  Create a file called `Main.java`, and add this code inside
 

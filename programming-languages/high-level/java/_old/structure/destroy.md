@@ -1,6 +1,6 @@
 # Destroying objects
 
-[Go back](../../index.md#vocabulary)
+[Go back](../index.md#vocabulary)
 
 You can't destroy an object by yourself in Java. They introduced something called the **garbage collector** that will look for any unused variable and free them. You can try to accelerate the process by **setting a variable to null**, while making sure that **no one is still referencing your variable** (otherwise, it's pretty useless).
 

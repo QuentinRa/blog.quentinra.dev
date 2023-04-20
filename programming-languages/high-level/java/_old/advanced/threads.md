@@ -1,6 +1,6 @@
 # Threads
 
-[Go back](../../index.md#advanced)
+[Go back](../index.md#advanced)
 
 You can run some code in parallel to your main thread. A thread will run some code and die.
 

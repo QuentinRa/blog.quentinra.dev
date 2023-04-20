@@ -1,6 +1,6 @@
 ## Streams
 
-[Go back](../../index.md#advanced)
+[Go back](../index.md#advanced)
 
 You can use a method `stream()` on a collection creating a easily to handle, one time use, reader for the data inside the collection.
 

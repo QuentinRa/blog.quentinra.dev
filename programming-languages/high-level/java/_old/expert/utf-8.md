@@ -1,6 +1,6 @@
 # UTF-8
 
-[Go back](../../index.md#advanced)
+[Go back](../index.md#advanced)
 
 As a side note, you may see weird characters in Strings when persons are not using UTF-8 (like à or é in French) so you should use the [unicode](https://unicode-table.com/en/) character code with a `\u` for unicode.
 

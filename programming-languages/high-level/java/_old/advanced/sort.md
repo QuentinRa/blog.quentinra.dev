@@ -1,6 +1,6 @@
 # Sorting
 
-[Go back](../../index.md#advanced)
+[Go back](../index.md#advanced)
 
 **French names** for sorting algorithms
 
