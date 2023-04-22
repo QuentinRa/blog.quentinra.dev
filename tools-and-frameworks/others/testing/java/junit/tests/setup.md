@@ -1,6 +1,6 @@
 # Setup
 
-[Go back](../index.md#tests-with-junit)
+[Go back](../../../../../../programming-languages/high-level/java/_old/index.md#tests-with-junit)
 
 ## Command-line JUnit5
 

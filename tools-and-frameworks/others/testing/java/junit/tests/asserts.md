@@ -1,6 +1,6 @@
 # assert in Java
 
-[Go back](../index.md#tests-with-junit)
+[Go back](../../../../../../programming-languages/high-level/java/_old/index.md#tests-with-junit)
 
 There is a native keyword `assert` in Java. Unfortunately, it's not enabled by default so you should not use them.
 

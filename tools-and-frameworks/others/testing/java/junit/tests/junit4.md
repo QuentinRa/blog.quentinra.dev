@@ -1,6 +1,6 @@
 # JUnit4
 
-[Go back](../index.md#tests-with-junit)
+[Go back](../../../../../../programming-languages/high-level/java/_old/index.md#tests-with-junit)
 
 This is a save of some code from JUnit4, go look for JUnit5!
 

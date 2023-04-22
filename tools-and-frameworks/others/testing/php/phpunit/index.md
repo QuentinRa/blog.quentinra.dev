@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[PHPUnit](https://phpunit.de/index.html) is a unit testing framework, such as JUnit in Java.
+[PHPUnit](https://phpunit.de/index.html) is a unit testing framework, such as [JUnit](../../java/junit/index.md) in Java.
 
 * 📚 [Documentation](https://phpunit.de/documentation.html)
 * 🦄 [GitHub](https://github.com/sebastianbergmann/phpunit) (19k ⭐)

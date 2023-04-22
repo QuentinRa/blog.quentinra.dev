@@ -1,6 +1,6 @@
 # Writing a test suite
 
-[Go back](../index.md#tests-with-junit)
+[Go back](../../../../../../programming-languages/high-level/java/_old/index.md#tests-with-junit)
 
 You may have to do some tests that require the same variables but are checking different things or like the same thing to be done before each test or after each test.
 
