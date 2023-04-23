@@ -111,14 +111,14 @@ Assertions.assertEquals(Object, Objet);
 Assertions.assertTrue(condition);
 // true if the condition is false
 Assertions.assertFalse(condition);
-```
-</div><div>
-
-```java
 // true if null
 Assertions.assertNull(objet);
 // true if not null
 Assertions.assertNotNull(Objet);
+```
+</div><div>
+
+```java
 // true if ==
 Assertions.assertSame(Object, Object);
 // true if !=
@@ -131,6 +131,54 @@ assertThrows(NomException.class, methode);
 // fail
 fail()
 ```
+
+Every assert method has an argument usually called `message` to send with the Exception a pertinent error message.
+</div></div>
+
+<hr class="sep-both">
+
+## Test suites
+
+<div class="row row-cols-md-2"><div>
+
+Test suite are java classes with tests. Most test methods are named starting with `test[...]`. They are annotated with `@Test`.
+
+```java
+public class XXXTest {
+    @Test
+    public void testAAA() {
+        Assertions.assertTrue(true);
+    }
+}
+```
+
+According to the JUnit version, you can add some annotation to refine how your test is handled by JUnit.
+
+* `@DisplayName("XXX")`: name displayed by the runner
+* `@Test(expected = XXX.class)`: the test must raise an exception
+* `@Test(timeout = xxx)`: test fails if longer than timeout
+* `@Disabled`: don't run this test
+</div><div>
+
+Test suits are usually grouping tests, testing the same method or class. We may have to preprare things before running tests:
+
+```java
+public class TestSuite {
+    // before/all ALL tests
+    @BeforeAll
+    public static void classInit(){ /* set attributes */ }
+    @AfterAll
+    public static void classFree(){ /* unset attributes */ }
+
+    // before/all EVERY tests
+    @BeforeEach
+    public void testInit(){ /* set attributes, ... */ }
+    @AfterEach
+    public void testFree(){ /* unset attributes, ... */ }
+}
+```
+
+☠️ Use `@BeforeClass`/`@AfterClass`, and `@Before/@After` with Junit4.
 </div></div>
 
 <hr class="sep-both">
@@ -141,7 +189,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [Write some tests](tests/code.md)
 * [Tests suite](tests/suite.md)
 * [Parametric tests](tests/par.md)
 * [JUnit5 JB](https://blog.jetbrains.com/idea/2020/09/writing-tests-with-junit-5/)
