@@ -183,14 +183,61 @@ public class TestSuite {
 
 <hr class="sep-both">
 
+## Parametric tests
+
+<div class="row row-cols-md-2"><div>
+
+Parametric tests are tests that have the same code but different parameters. We will write a method with parameters once, and tell JUnit all parameters that must be tested.
+
+The logic is that we will indicate one or more sources to fill the parameter of our test method. These methods return a `Stream`.
+
+```java
+public class XXXTest {
+    @ParameterizedTest
+    @MethodSource("method_name")
+    public void myTest(ArgumentType name){
+        // code
+    }
+    
+    private static Stream<ArgumentType> method_name(){
+        return ...;
+    }
+}
+```
+</div><div>
+
+For instance, here, we will call `myTest` with `5`, `7`, `3`, and `5`.
+
+```java
+@ParameterizedTest
+@MethodSource({"test", "test2", "test"})
+public void myTest(int p){
+    // some code here
+}
+
+private static Stream<Integer> test() {
+    ArrayList<Integer> e = new ArrayList<>();
+    e.add(5);
+    return e.stream();
+}
+
+private static Stream<Integer> test2() {
+    ArrayList<Integer> e = new ArrayList<>();
+    e.add(7);
+    e.add(3);
+    return e.stream();
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [Tests suite](tests/suite.md)
-* [Parametric tests](tests/par.md)
 * [JUnit5 JB](https://blog.jetbrains.com/idea/2020/09/writing-tests-with-junit-5/)
 </div><div>
 
