@@ -51,7 +51,7 @@ public class RunAllTests {
 ```
 </div><div>
 
-You could also group test suite in one class, and use this class inside RunAllTests instead of providing each class.
+If your IDE can run them, it's shorter and better to run suites:
 
 ```java
 @RunWith(Suite.class)
@@ -69,6 +69,33 @@ import org.junit.Test;
 
 <hr class="sep-both">
 
+## JUnit5
+
+<div class="row row-cols-md-2"><div>
+
+Since JUnit5, there is no easy way to have a main class running all tests. You can run multiple classes using:
+
+```java
+@Suite
+@SelectClasses({XXXTest.class, YYYTest.class})
+public class AllTests {}
+```
+
+🍵 Required: `jupiter-api`, `platform-commons`, `platform-suite-api`, `platform-suite-engine`, `platform-suite-commons`.
+</div><div>
+
+To move to/from JUnit4, you will most likely have to only replace the import with JUnit5 imports <small>(if classes/methods still exist)</small>:
+
+```
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+```
+
+➡️ Notice that we use `api`, so you need the `xxx-api.jar`.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -80,6 +107,7 @@ Stuff that I found, but never read/used yet.
 * [Write some tests](tests/code.md)
 * [Tests suite](tests/suite.md)
 * [Parametric tests](tests/par.md)
+* [JUnit5 JB](https://blog.jetbrains.com/idea/2020/09/writing-tests-with-junit-5/)
 </div><div>
 
 * Maven
