@@ -1,7 +1,5 @@
 # Defensive programming
 
-[Go back](../../../../../../programming-languages/high-level/java/_old/index.md#tests-with-junit)
-
 In Java, you might use [Objects](https://docs.oracle.com/javase/8/docs/api/java/util/Objects.html) methods to do safe operations
 
 * `Objects.requireNonNull(obj)`

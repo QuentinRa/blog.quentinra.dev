@@ -1,7 +1,5 @@
 # assert in Java
 
-[Go back](../../../../../../programming-languages/high-level/java/_old/index.md#tests-with-junit)
-
 There is a native keyword `assert` in Java. Unfortunately, it's not enabled by default so you should not use them.
 
 Run `java` with `-ea` or `-enableassertions`to enable assertions. You can enable them only in a package using `-da:package`.

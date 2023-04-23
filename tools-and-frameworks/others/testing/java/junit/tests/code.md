@@ -2,37 +2,6 @@
 
 [Go back](../../../../../../programming-languages/high-level/java/_old/index.md#tests-with-junit)
 
-You will use these methods, 
-
-```java
-// Junit5
-import static org.junit.jupiter.api.Assertions.*;
-// it was like that in Junit4
-// import static org.junit.Assert.*;
-
-// true if equals
-assertEquals(Object, Objet);
-// true if the condition is true
-assertTrue(condition);
-// true if the condition is false
-assertFalse(condition);
-// true if null
-assertNull(objet);
-// true if not null
-assertNotNull(Objet);
-// true if ==
-assertSame(Object, Object);
-// true if !=
-assertNotSame(Object, Object)
-// true if Arrays are equals
-assertArrayEquals(t1,t2);
-// true if exception got thrown,
-// method must be a Runnable
-assertThrows(NomException.class, methode);
-// fail
-fail()
-```
-
 You will create a java usually named `TestXXXX.java`. Then you write some methods, add `@Test` if it's a test. It would look something like that.
 
 ```java

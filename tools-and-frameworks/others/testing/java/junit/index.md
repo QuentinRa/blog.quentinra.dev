@@ -37,16 +37,16 @@ In JUnit4, it was common to have a class to run all tests.
 
 ```
 public class RunAllTests {
-	public static void main(String[] args) {
-		Result result = JUnitCore.runClasses(XXXTest.class, YYYTest.class);
-		if(result.wasSuccessful()) {
-			System.out.println("All tests passed.");
-		} else {
-			for (Failure failure : result.getFailures()) {
-				System.err.println("Failure : " + failure.toString());
-			}
-		}
-	}
+    public static void main(String[] args) {
+        Result result = JUnitCore.runClasses(XXXTest.class, YYYTest.class);
+        if (result.wasSuccessful()) {
+            System.out.println("All tests passed.");
+        } else {
+            for (Failure failure : result.getFailures()) {
+                System.err.println("Failure : " + failure.toString());
+            }
+        }
+    }
 }
 ```
 </div><div>
@@ -96,14 +96,51 @@ import org.junit.jupiter.api.Test;
 
 <hr class="sep-both">
 
+## Assertions
+
+<div class="row row-cols-md-2"><div>
+
+JUnit use assertions in its tests. They are defined in the package `Assertions` <small>(JUnit5)</small> or `Assert` <small>(JUnit4)</small>.
+
+An assertion is a function call that will test something, and raise an exception if the check failed.
+
+```java
+// true if equals
+Assertions.assertEquals(Object, Objet);
+// true if the condition is true
+Assertions.assertTrue(condition);
+// true if the condition is false
+Assertions.assertFalse(condition);
+```
+</div><div>
+
+```java
+// true if null
+Assertions.assertNull(objet);
+// true if not null
+Assertions.assertNotNull(Objet);
+// true if ==
+Assertions.assertSame(Object, Object);
+// true if !=
+Assertions.assertNotSame(Object, Object)
+// true if Arrays are equals
+Assertions.assertArrayEquals(t1,t2);
+// true if exception got thrown,
+// method must be a Runnable
+assertThrows(NomException.class, methode);
+// fail
+fail()
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [Defensive programming](tests/dp.md)
-* [assert in Java](tests/asserts.md)
 * [Write some tests](tests/code.md)
 * [Tests suite](tests/suite.md)
 * [Parametric tests](tests/par.md)
