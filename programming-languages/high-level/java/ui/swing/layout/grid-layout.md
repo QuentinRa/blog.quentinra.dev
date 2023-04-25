@@ -1,6 +1,6 @@
 # GridLayout
 
-[Go back](..#layout-manager)
+[Go back](../../../_old/graphic/swing#layout-manager)
 
 All the rows/columns have the same width/height. A sort of excel grid/table.
 

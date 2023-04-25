@@ -1,6 +1,6 @@
 # BorderLayout
 
-[Go back](..#layout-manager)
+[Go back](../../../_old/graphic/swing#layout-manager)
 
 This is the most well-know layout in Java. The container is divided into 5 sections
 

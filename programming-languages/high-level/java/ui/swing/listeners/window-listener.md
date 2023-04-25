@@ -1,6 +1,6 @@
 # WindowListener
 
-[Go back](..#events-and-listeners)
+[Go back](../../../_old/graphic/swing#events-and-listeners)
 
 You can also use `MouseAdapter` (abstract class) implementing WindowListener, WindowStateListener, and WindowFocusListener
 

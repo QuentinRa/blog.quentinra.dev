@@ -1,6 +1,6 @@
 # JavaFX
 
-[Go back](..#graphical-interfaces)
+[Go back](../../_old#graphical-interfaces)
 
 JavaFx is a graphic library in Java. This is way better than SWING because you can use `.fxml` files to create the view and that makes your code way cleaner.
 

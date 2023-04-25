@@ -1,6 +1,6 @@
 # GridBagLayout
 
-[Go back](..#layout-manager)
+[Go back](../../../_old/graphic/swing#layout-manager)
 
 A great layout (yet a pain in the ass to use), allowing you to do what was hard to do using other layouts.
 

@@ -1,6 +1,6 @@
 # Swing and AWT
 
-[Go back](..#graphical-interfaces)
+[Go back](../../_old#graphical-interfaces)
 
 Swing and AWT are the native way of creating graphical interfaces. AWT was the first library but was quite slow so Swing got introduced. Now, both are the same.
 
@@ -117,11 +117,11 @@ You may have wondered how you could set a component to be somewhere in the frame
 
 **By default, the layout is a FlowLayout**, you may use null to disabled the layout.
 
-* [BorderLayout](swing/layout/border-layout.md)
-* [FlowLayout](swing/layout/flow-layout.md)
-* [GridLayout](swing/layout/grid-layout.md)
-* [CardLayout](swing/layout/card-layout.md)
-* [GridBagLayout](swing/layout/grid-bag-layout.md)
+* [BorderLayout](layoutr-layout.md)
+* [FlowLayout](layoutlayout.md)
+* [GridLayout](layoutlayout.md)
+* [CardLayout](layoutlayout.md)
+* [GridBagLayout](layoutbag-layout.md)
 
 <hr class="sr">
 
@@ -131,9 +131,9 @@ We are calling listeners, classes having a function (handler) called when an act
 
 You can add listener using methods like `addMouseListener` or `addActionListener` (only on buttons). You can use `addWindowListener` on Windows like a `JFrame`.
 
-* [ActionListener](swing/listeners/action-listener.md)
-* [MouseListener](swing/listeners/mouse-listener.md)
-* [WindowListener](swing/listeners/window-listener.md)
+* [ActionListener](listenersn-listener.md)
+* [MouseListener](listeners-listener.md)
+* [WindowListener](listenersw-listener.md)
 * MouseMotionListener (drag and drop)
 * MouseWheelListener (scroll)
 

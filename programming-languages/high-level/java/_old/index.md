@@ -1,16 +1,6 @@
 # Java programming
 
-Java is an oriented-object language, excluding 8 primitives types, all other types are classes and their instances are objects.
-
-Then the last thing you need to know (besides looking on Stack Overflow) if you don't know something is to look at the documentation (namely **Javadoc**) 
-
-* [Java 8](https://docs.oracle.com/javase/8/docs/api/overview-summary.html) / [Java 11](https://docs.oracle.com/en/java/javase/11/docs/api/index.html)
-* [Java 17](https://docs.oracle.com/en/java/javase/17/docs/api/index.html) (not available yet - [current link](https://download.java.net/java/early_access/jdk17/docs/api/))
 * [history](beginner/history.md)
-
-<hr class="sl">
-
-## Vocabulary
 
 First, **a class** is a container representing something abstract like a Computer, an Animal, a Person... A class can have properties called **attributes** like a name, a size, ... and **methods** like ``buy(xxxxxx)``, `remove(xxxx)` that are basically functions applied on a class.
 
@@ -123,8 +113,8 @@ New things added by Oracle
 
 The reason why I hated Java was that making graphical interfaces what boring, tiring, and hard (if you want something that is not using the default style). But now, with JavaFX, I'm better.
 
-* [Swing and AWT](graphic/swing-awt.md)
-* [JavaFX](graphic/javafx.md)
+* [Swing and AWT](../ui/swing/swing-awt.md)
+* [JavaFX](../ui/javafx/javafx.md)
 * libgdx
 * litiengine
 

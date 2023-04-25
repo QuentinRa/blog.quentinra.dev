@@ -1,6 +1,6 @@
 # FlowLayout
 
-[Go back](..#layout-manager)
+[Go back](../../../_old/graphic/swing#layout-manager)
 
 Add the components one after another and gives them their **preferredSize**. Layout by default.
 

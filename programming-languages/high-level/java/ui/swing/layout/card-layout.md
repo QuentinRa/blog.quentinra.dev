@@ -1,6 +1,6 @@
 # CardLayout
 
-[Go back](..#layout-manager)
+[Go back](../../../_old/graphic/swing#layout-manager)
 
 In a website, you got the same header/footer in each pages (don't say no) and you are only changing the center. 
 

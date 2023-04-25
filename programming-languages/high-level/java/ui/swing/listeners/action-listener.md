@@ -1,6 +1,6 @@
 # ActionListener
 
-[Go back](..#events-and-listeners)
+[Go back](../../../_old/graphic/swing#events-and-listeners)
 
 This is an example of what you can do in the method `actionPerformed` of `ActionListener`.
 
