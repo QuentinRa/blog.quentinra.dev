@@ -8,6 +8,8 @@ Java was designed as a cross-platform language. We write code once, and on any o
 
 ➡️ The current version is **Java 20** (2023). The [LTS](files/download.md#lts-jdk) is **Java 17**.
 
+🗺️ Java developers heavily rely on reading/writing the [Javadoc](../javadoc/index.md).
+
 ```java
 public class HelloWorld {
   public static void main(String[] args) {
@@ -26,14 +28,14 @@ $ javac HelloWorld.java # output: HelloWorld.class
 To execute your compiled program, you need a **JRE** <small>(Java runtime environment)</small>. It's included in the JDK.
 
 ```shell!
-$ java HelloWorld
+$ java HelloWorld # name of the class with the main
 Hello, World!
 ```
 </div></div>
 
 <hr class="sep-both">
 
-## XXX
+## Core knowledge
 
 <div class="row row-cols-md-2"><div>
 
@@ -84,19 +86,35 @@ float b = a.floatValue();
 
 #### Print some text in the terminal
 
-...
+```cpp
+System.out.println("Hello, World!");
+System.out.println("Hello, " + variable + "!");
+System.err.println("Hello, Exception."); // errors
+```
 
 <br>
 
 #### Operators
 
-...
+Here is a list of most operators.
 
-<br>
-
-#### XXX
-
-...
+```java
+// arithmetic
+int sum = 5 + 5;          // 10
+int substraction = 5 - 5; // 0
+int product = 5 * 5;      // 25
+int division = 6 / 5;     // 1
+x += 1;                   // same as x = x + 1
+x++;                      // same as x = x + 1
+                          // see also: --, -=, *=, and /= 
+// logical
+if (5 == 5) {}         // true
+if (5 != 5) {}         // false
+if (!false) {}         // logicial NOT => true
+if (true || false) {}  // logical OR => true
+if (true && false) {}  // logical AND => false
+if (true ^ false) {}   // logical XOR => true
+````
 </div></div>
 
 <hr class="sep-both">
@@ -201,5 +219,7 @@ Stuff that I found, but never read/used yet.
 * object vs primitive
 * control-flow methods
 * streams
+* concatenation operator
+* equals and == null
 </div><div>
 </div></div>

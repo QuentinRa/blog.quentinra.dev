@@ -112,7 +112,7 @@ printf("%s, %s\n", "Hello", "World");
 
 ```c
 // assignation
-int x = 5
+int x = 5;
 x++; // 6, same as x = x + 1
 x += 2; // 8, same as x = x + 2
 x--; // 7, same as x = x - 1

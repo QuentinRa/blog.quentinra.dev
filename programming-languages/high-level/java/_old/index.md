@@ -16,8 +16,6 @@ First, **a class** is a container representing something abstract like a Compute
 
 When you're giving values to the properties (ex: "Marley" for a Dog), then you're creating an **instance** of the class, which is also called an **object** of the class.
 
-Note that in java, we print with ``System.out.println("text");`` or with ``System.err.println("text")``.
-
 * [First java file](structure/main.md)
 * [Creating a class](structure/class.md)
 * [Visibility](structure/visiblity.md)
@@ -44,8 +42,6 @@ Note that we are calling
 Now our goal would be to write some code. But for that, we need to take a learn all of these
 
 * [Types](beginner/types.md)
-* [Structures](beginner/structures.md)
-* [Operators](beginner/operators.md)
 * [Packages and import](beginner/packages.md)
 * [Object class](beginner/object.md)
 * [Arrays](beginner/arrays.md)
