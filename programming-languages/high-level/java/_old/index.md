@@ -107,17 +107,6 @@ New things added by Oracle
 
 * [Records](expert/records.md) (since Java16)
 
-<hr class="sr">
-
-## Graphical interfaces
-
-The reason why I hated Java was that making graphical interfaces what boring, tiring, and hard (if you want something that is not using the default style). But now, with JavaFX, I'm better.
-
-* [Swing and AWT](../ui/swing/swing-awt.md)
-* [JavaFX](../ui/javafx/javafx.md)
-* libgdx
-* litiengine
-
 <hr class="sl">
 
 ## Sources

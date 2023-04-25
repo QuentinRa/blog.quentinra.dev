@@ -26,3 +26,80 @@ Aside from versions before 11, you can change the number in the URL to access th
 * examples of calling a class/method/...
 * ...
 </div></div>
+
+<hr class="sep-both">
+
+## Writing Javadoc
+
+<div class="row row-cols-md-2"><div>
+
+Javadoc comments are comments starting with `/**`.
+
+```java
+/**
+ * Class description
+ *
+ * @author autor
+ * @version 0.0.0.1 09 november 2019
+ * @see AnotherClassYouMustCheck
+ * @see AnotherClassYouMustCheck#aMethodName
+ */
+public class Classe{
+
+    /**
+     * Method description
+     *
+     * @param a description
+     * @param b description
+     *
+     * @return description
+     *
+     * @throws UnsupportedOperationException description
+     * @see UnsupportedOperationException
+     * @see #aDeprecatedMethod()
+     *
+     * @since 0.0.0.1
+     */
+    public ATypeHere methodName(int a, float b) {
+        // code
+    }
+
+    /** @deprecated no reason */
+    public void aDeprecatedMethod(){ /* ... */ }
+
+}
+```
+</div><div>
+
+**Explanations** ✍️
+
+Most elements are not present in every javadoc comment, albeit you may see some warnings if according to the context, one is missing.
+
+* `@author author`: can have multiple authors tags or a list of authors
+
+* `@version version`: for instance, `1.0.0.0 xxxx-xx-xx`
+
+* `@since version`: since which version this was added
+
+* `@see xxx`: a class or a method the reader should check too
+    * `@see class`
+    * `@see class#method`<br><span>&nbsp;</span>
+
+* `@deprecated why`: why we should not use it
+
+* `{@link xxxx}`: inside a param, a return, or some text, you can use this to create a link to a class/method.
+
+* `@param name desc`: describe a param
+* `@return desc`: describe what's the method returns
+* `@throws exception_class desc`: if an exception is thrown
+
+To comment a generic class/method parameter, you use `@param` too:
+
+```java
+/**
+ * ...
+ * @param <T>
+ */
+public class GenericClass<T> {}
+```
+</div></div>
