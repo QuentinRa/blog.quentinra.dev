@@ -51,10 +51,6 @@ const int A_CONSTANT = 5;
 
 <p></p>
 
-➡️ Types are **signed** by default, meaning there are $2^{n-1}$ negative values, $2^{n-1}$ positive values **including** 0 giving us $[2^{n-1}, 2^{n-1}-1]$. Unsigned variables only take positive values: $[0, 2^{n}-1]$.
-
-➡️ For printf, there are formats for signed and unsigned types.
-
 🔥 There is no type `bool/boolean`, so we usually use a `short`/`int`. You can use any value such as `1` for **true**, while `0` means **false**.
 
 ```c
@@ -87,6 +83,16 @@ A string in C is an array of chars. You can use escape codes such as "`\n`" (new
 char* xxx = "Hello World\n";
 ```
 
+Types are **signed** by default, meaning there are $2^{n-1}$ negative values, $2^{n-1}$ positive values **including** 0 giving us $[2^{n-1}, 2^{n-1}-1]$. Unsigned variables only take positive values: $[0, 2^{n}-1]$.
+
+```c
+signed int xxx = 0;
+unsigned int xxx = 0;
+```
+
+➡️ For printf, there are formats for signed and unsigned types.
+</div><div>
+
 #### Conversions
 
 You can cast a value using `(type)`.
@@ -94,7 +100,6 @@ You can cast a value using `(type)`.
 ```
 int xxx = (int) 'c'; // xxx == 99
 ```
-</div><div>
 
 #### Print some text in the terminal
 

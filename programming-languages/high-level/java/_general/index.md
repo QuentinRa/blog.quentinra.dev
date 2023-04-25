@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-Java is a well-known object-oriented programming language. It's maintained and owned by Oracle 🍵.
+Java is a well-known [object-oriented](/programming-languages/_paradigm/oo.md) programming language. It's maintained and owned by Oracle 🍵.
 
 Java was designed as a cross-platform language. We write code once, and on any operating system, we would have the same output. This is done by executing the code on a virtual machine called **JVM**.
 
