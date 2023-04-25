@@ -105,10 +105,86 @@ float b = a.floatValue();
 
 <div class="row row-cols-md-2"><div>
 
-...
+#### Branching
+
+Usual if/else.
+
+```java
+if (true) { }
+if (true) { } else {}
+if (true) { } else if (false) {} else {}
+```
+
+Ternary operator: `condition ? value_if_true : value_if_value`.
+
+```java
+String value = true ? "true" : "false";
+```
+
+Switch-case <small>(without break, more than one case may be executed)</small>
+
+```c
+int variable = 1;
+switch(variable){
+    case 1: /* if variable==1 */; break;
+    case 2: /* if variable==2 */; break;
+    default:
+        /* else */
+        break;
+}
+```
+
+#### Branching - enhanced switch
+
+Using the enhanced switch, you can use blocks syntax, or inline statements syntax to avoid the traditional `break` syntax.
+
+```java
+switch (x){
+    case v1 -> { /* ... */ }
+    case v2, v3, v4 -> /* ... */;
+    default -> /* ... */;
+}
+
+// switch-value with yield
+String result = switch (s) {
+    case "John", "Jane" -> "yes"; // inline
+    default -> { // block
+        int length = s.length();
+        yield length % 2 == 0 ? "yes" : "no";
+    }
+};
+```
 </div><div>
 
-...
+#### Loops
+
+In every loop, you can use `break` to exit the loop, and you can use `continue` to end the current iteration, and process to the next one.
+
+```java
+// usual loop - i in [0, 10[
+for (int i = 0; i < 10; ++i) {}
+// reverse loop - i in ]0, 10]
+for (int i = 10; i > 0; i--) {}
+// nested loop
+for (int i = 0; i < 5; ++i) {
+    for (int j = 0; j < 5; ++j) {}
+}
+```
+
+```java
+while(true) {}; // repeat while true
+do {} while(true); // executed at least once
+```
+
+#### Loops - for each
+
+The for each is a new loop to iter **Iterables**. Iterables can be arrays or collections <small>(ArrayList/...)</small>.
+
+```java
+for (int e: new int[]{ 5, 6, 7 }) {
+    // e=5 then e=6 then e=7
+}
+```
 </div></div>
 
 <hr class="sep-both">
@@ -121,5 +197,9 @@ Stuff that I found, but never read/used yet.
 
 * [old](../_old/index.md)
 * java shell
+* const
+* object vs primitive
+* control-flow methods
+* streams
 </div><div>
 </div></div>
