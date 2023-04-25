@@ -39,19 +39,47 @@ Hello, World!
 
 #### Declare a variable
 
-...
+```java
+int i = 5; // primitive type
+Object o = new Object(); // object
+```
 
 <br>
 
 #### Types
 
-...
+Java has **8** non-object types called **primitive types**. Aside from these, every other variable <small>(object)</small> has the type of a **class** 🤖.
+
+*Each primitive type also have a class, as listed below:*
+
+```java
+boolean xxx = true || false; // Boolean 🤖 | 1 bit 
+byte xxx = 127;              // Byte 🤖 | 8 bits
+short xxx = 32767;           // Short 🤖 | 16 bits
+char xxx = 'c';              // Char 🤖 | 16 bits ⚠️
+int xxx = 42;                // Integer 🤖 | 32 bits
+float xxx = 42.0f;           // Float 🤖 | 32 bits
+double xxx = 21.0d + 21.0;   // Double 🤖 | 64 bits
+long xxx = 42L;              // Long 🤖 | 64 bits
+```
 
 <br>
 
 #### Conversions
 
-...
+Conversions are done using casting or parsing:
+
+```java
+// cast float to int
+int xxx = (int) 13.0f;
+
+// To parse into an "int", you use Integer 🤖
+int xxx = Integer.parseInt("13");
+
+// From primitive to object (☠️)
+Float a = Float.valueOf(5);
+float b = a.floatValue();
+```
 </div><div>
 
 #### Print some text in the terminal
