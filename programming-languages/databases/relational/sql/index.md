@@ -152,10 +152,12 @@ On **MySQL**, if the service is started, you can log in using:
 # sudo apt install default-mysql-client
 $ mysql -u root -p
 $ mysql -u root -p -h SOME_IP
-> source xxx.sql # import
-> DESCRIBE table_name # definition of a table
-> SELECT VERSION() # version
-> SELECT database()
+> source xxx.sql; # import
+> DESCRIBE table_name; # definition of a table
+> SELECT VERSION(); # version
+> SELECT database(); # show current database
+> SHOW DATABASES; # list databases
+> USE a_database; # select one
 ```
 
 ☠️ By default, there is no password for root (blank).
@@ -192,7 +194,6 @@ Stuff that I found, but never read/used yet.
 * [learnsql](https://learnsql.com/)
 * ROLLBACK/COMMIT
 * UNION/INTERSECT/EXCEPT (same number of values in SELECT/NULL). ORDER, or LIMIT can only be applied on the whole request.
-* SHOW DATABASES
 * [SQL-specific stuff](/cybersecurity/red-team/s3.exploitation/vulns/injection/files/union_sqli.md#manual-union-based-sqli)
 </div><div>
 

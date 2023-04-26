@@ -131,7 +131,10 @@ Modern Windows are using the hash format "NT", also referred to as "NTLM", becau
 
 ```shell!
 $ john myhash --format=nt --wordlist=wordlist
+$ john myhash --format=netntlmv2 --wordlist=wordlist
 ```
+
+➡️ See also [LM, NTLM, and Net-NTLMv2](https://medium.com/@petergombos/lm-ntlm-net-ntlmv2-oh-my-a9b235c58ed4)
 </div><div>
 </div></div>
 

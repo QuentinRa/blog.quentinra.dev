@@ -334,3 +334,28 @@ https://tryhackme.com/room/retro (blaster...)
 
 * ghidra (🛡️) <small>(reverse engineering)</small>
 </div></div>
+
+<hr class="sep-both">
+
+## CTFs not done
+
+<div class="row row-cols-md-2"><div>
+
+**https://tryhackme.com/room/easyctf** 🐍🐍⭐
+
+* `python2 simple.py`
+* oh gosh, volatily + `pip install --upgrade setuptools` https://stackoverflow.com/questions/31719816/pip-fails-to-install-anything-error-invalid-command-egg-info
+* `print "[+] Specify an url target"`
+
+**https://tryhackme.com/room/lazyadmin** 🐍🐍⭐
+
+* nmap
+* Gobuster
+* FTP do not seem to work with path (to upload with put, but it works if you start FTP in the directory where the file is)
+</div><div>
+
+**https://tryhackme.com/room/allinonemj** 🐍🐍⭐
+
+* Test: `wpscan --url http://10.10.162.222/wordpress/ --detection-mode aggressive`
+* `php://filter/convert.base64-encode/resource=../../../../../wp-config.php` (file inclusion, https://www.idontplaydarts.com/2011/02/using-php-filter-for-local-file-inclusion/)
+</div></div>

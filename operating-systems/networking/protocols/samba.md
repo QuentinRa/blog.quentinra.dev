@@ -54,6 +54,7 @@ $ nmap IP -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse
 * Try connecting anonymously with no password (leave blank)
 
 ```ps
+$ smbclient -L IP -U Anonymous # list shares
 $ smbclient //IP/share_name -U Anonymous
 $ smbclient //IP//Anonymous -U Anonymous
 ```
