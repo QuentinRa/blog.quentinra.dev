@@ -253,6 +253,8 @@ CTFs are usually using the infamous `rockout.txt` for passwords  <small>(from a 
 
 #### Fast wordlist generation
 
+See also: [cook](https://github.com/glitchedgitz/cook) (0.6k ⭐).
+
 ```shell!
 $ echo {A..Z} | tr ' ' '\n' > AZ.lst
 $ echo {0..99} | tr ' ' '\n' > 0_to_99.lst
@@ -292,5 +294,4 @@ Stuff that I found, but never read/used yet.
 
 * [htb](/_kmp/_cybersecurity/_in/htb.md)
 * [notes](/_kmp/_cybersecurity/_in/notes.md)
-* [stuff](/_kmp/_cybersecurity/_in/stuff.txt.md)
 </div></div>

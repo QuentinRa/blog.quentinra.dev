@@ -299,6 +299,8 @@ https://tryhackme.com/room/retro (blaster...)
 * **Core Impact** (💥🔑✈️) <small>(paid exploitation framework)</small>
 * [chaos](https://chaos.projectdiscovery.io/#/) (🔎) <small>(DNS recon)</small>
 * [**Veil Framework**](https://github.com/Veil-Framework/Veil) (💥) <small>(payloads)</small>
+* Phantom-Evasion (✈️) <small>(antivirus evasion tool)</small>
+* FavFreak (🏝) <small>(favicon recon)</small>
 </div></div>
 
 <hr class="sep-both">
