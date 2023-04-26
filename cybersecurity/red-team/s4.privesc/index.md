@@ -54,5 +54,7 @@ Stuff that I found, but never read/used yet.
 * [WADComs](https://github.com/WADComs/WADComs.github.io) (1k ⭐)/[wadcoms website](https://wadcoms.github.io/)
 </div><div>
 
+Rooms
 
+* [password found in config+reuse](https://tryhackme.com/room/ignite)
 </div></div>

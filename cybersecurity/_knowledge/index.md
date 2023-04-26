@@ -172,6 +172,8 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [infosecinstitute](https://resources.infosecinstitute.com/)
 * [hacksplaining](https://www.hacksplaining.com/lessons)
 * [complexsecurity](https://complexsecurity.io/)
+* [cnil](https://www.cnil.fr/fr/cybersecurite)
+* [unicornsec](https://unicornsec.com/)
 </div><div>
 
 * [auth0.com](https://auth0.com/blog/)
@@ -194,6 +196,8 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [fredtep](https://fredtep.com/)
 * [null-byte](https://null-byte.wonderhowto.com/)
 * [wonderhowto](https://www.wonderhowto.com/)
+* [hackstreetboys](https://atom.hackstreetboys.ph/)
+* [infosecjunky](https://infosecjunky.com/)
 </div><div>
 
 * [razrsec](https://blog.razrsec.uk/)
@@ -216,6 +220,8 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [fredtep](https://fredtep.com/)
 * [null-byte](https://null-byte.wonderhowto.com/)
 * [wonderhowto](https://www.wonderhowto.com/)
+* [thehackerish](https://thehackerish.com/)
+* [secjuice](https://www.secjuice.com/)
 </div><div>
 
 * [deltreey](https://deltreey.blogspot.com/)
@@ -233,9 +239,7 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [enigma0x3](https://enigma0x3.net/)
 * [hackingarticles](https://www.hackingarticles.in)
 * [motasem](https://motasem-notes.net/)
-* [thehackerish](https://thehackerish.com/)
-* [secjuice](https://www.secjuice.com/)
-* [cnil](https://www.cnil.fr/fr/cybersecurite)
+* [exploits.run](https://exploits.run/)
 </div>
 
 </div>

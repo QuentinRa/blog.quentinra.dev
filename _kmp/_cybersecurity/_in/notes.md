@@ -62,27 +62,6 @@
 
 ## Overconfidence
 
---- https://tryhackme.com/room/ignite (done)
-
-* default credentials => lead to nothing
-* command injection
-* echo -n "" > assets/images/test.phpx
-* `%27%2b%70%69%28%70%72%69%6e%74%28%24%61%3d%27%73%79%73%74%65%6d%27%29%29%2b%24%61%28%27ls%27%29%2b%27`
-* https://stackoverflow.com/questions/17420878/php-preg-match-delimiter-must-not-be-alphanumeric-or-backslash
-* no need for the "1" in interact
-* https://www.exploit-db.com/exploits/41240 (need for some tools to be installed :/)
-* https://github.com/Arrexel/phpbash 
-* could have used python from the start, baka
-* https://exploits.run/
-* the password of the db was reused...
-* if I used quotes, it would have worked in one go...
-* https://unicornsec.com/
-* https://saharshtapi.github.io/
-* https://atom.hackstreetboys.ph/
-* https://stawm.design.blog/
-* https://infosecjunky.com/
-* https://marcorei7.wordpress.com/
-
 --- https://tryhackme.com/room/c4ptur3th3fl4g (done)
 
 * https://dencode.com/en/
