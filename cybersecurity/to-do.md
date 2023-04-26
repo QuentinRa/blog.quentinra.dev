@@ -297,6 +297,8 @@ https://tryhackme.com/room/retro (blaster...)
 * [Tamper Chrome](https://chrome.google.com/webstore/detail/tamper-chrome-extension/hifhgpdkfodlpnlmlnmhchnkepplebkb)|[tamper.dev](https://tamper.dev/) (🏝💥) <small>(intercept HTTP request)</small>
 * httpx (🏝💥) <small>(web server enumeration)</small>
 * **Core Impact** (💥🔑✈️) <small>(paid exploitation framework)</small>
+* [chaos](https://chaos.projectdiscovery.io/#/) (🔎) <small>(DNS recon)</small>
+* [**Veil Framework**](https://github.com/Veil-Framework/Veil) (💥) <small>(payloads)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -309,6 +311,13 @@ https://tryhackme.com/room/retro (blaster...)
 
 * [Termux-Nation](https://github.com/0xAbbarhSF/Termux-Nation-2022-Alpha) (N/A) <small>(test android devices)</small>
 * [termux-hacking](https://github.com/topics/termux-hacking) (N/A) <small>(list of termux tools)</small>
+
+**Joker**
+
+* [payloadbox](https://github.com/payloadbox) (payloads)
+* [scripts](https://github.com/Cerbersec/scripts) (commands)
+* [hack-with-github](https://github.com/hack-with-github) (lists)
+* [Checklists](https://github.com/netbiosX/Checklists) (checklists)
 </div><div>
 
 **CMS**

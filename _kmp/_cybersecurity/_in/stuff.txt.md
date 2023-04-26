@@ -1,12 +1,5 @@
 # W
 
-* <https://github.com/payloadbox>
-* <https://github.com/Cerbersec/scripts>
-* <https://github.com/hack-with-github>
-* <https://github.com/netbiosX/Checklists>
-* <https://chaos.projectdiscovery.io/#/>
-* <https://github.com/glitchedgitz/cook> (see SecList refs)
-
 Add payload of all things to every course that use it, or may use it
 
 * <https://canitakeyoursubdomain.name/>
