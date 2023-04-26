@@ -1,11 +1,6 @@
 # Java programming
 
 * [history](beginner/history.md)
-
-First, **a class** is a container representing something abstract like a Computer, an Animal, a Person... A class can have properties called **attributes** like a name, a size, ... and **methods** like ``buy(xxxxxx)``, `remove(xxxx)` that are basically functions applied on a class.
-
-When you're giving values to the properties (ex: "Marley" for a Dog), then you're creating an **instance** of the class, which is also called an **object** of the class.
-
 * [First java file](structure/main.md)
 * [Creating a class](structure/class.md)
 * [Visibility](structure/visiblity.md)
