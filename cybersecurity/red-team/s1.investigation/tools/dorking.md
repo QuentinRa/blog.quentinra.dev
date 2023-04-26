@@ -22,6 +22,7 @@ Most search engines, Google being the most famous one, allow us to make **advanc
 * `"some word"`: search results that must have "some word"
 * `filetype:pdf`: search PDF files
 * `intitle:"Hello World"`: search for websites having "Hello World" in their title
+* `intext: (password | passcode)`: search for a word in the text
 * `inurl:admin`: search for URLs containing the word "admin"
 
 You may also use

@@ -1,64 +1,6 @@
 # ...
 
-Social Media Intelligence (SOCMINT)
-osintgram
-https://www.csoonline.com/article/3445357/what-is-osint-top-open-source-intelligence-tools.html
-https://github.com/mitchmoser/sputnik
-Pulsedive
-Talos
-https://www.authentic8.com/blog/OSINT-2021-guide-tools-and-techniques?UTM=googlepaid&gclid=EAIaIQobChMI_t2F_5mI-gIVEY7ICh29eQ-HEAAYASAAEgJE5vD_BwE
-
-Mxtoolbox
-nexpose
-https://whois.domaintools.com/
-https://lookup.icann.org/en
-
-intext: (password | passcode)
-
-TrendMicro
-
-hping3 -S IP -p port
-SA = SynAck
-RA = RstAck
---flood (send packets as fast as possible, no response)
--S = Syn
-
-netdiscover -r IP
-netdiscover -r IP/CIDR
-
-nmap --badsum
-Firewall Spotting
-If there is a reponse, then a firewall/IDS responded.
---script-trace
-
-acunetix
-hp webinspect
-fireeye
-qualys
-tenable.sc tenable.io
-
-nikto is a web scanner
-=> noisy
-=> owasp
-
-ES Linsniff Websniff Tcpdump Snoop Wireshark
-
-https://cxsecurity.com/exploit/
-https://www.vulnerability-lab.com/
-http://www-.0day.today/
-Security Focus (par Symantec)
-Packet Storm Security
-
-CCE (Common configuration Enumeration)
-CPE (Common platform Enumeration)
 XCCDF (Extensible Configuration Checklist Description Format)
-
-Legion
- NMAP, whatweb, nikto,
-Vulners, Hydra, SMBenum, dirbuster, sslyzer, webslayer
-...
-
-rlogin
 
 QubesOS
 

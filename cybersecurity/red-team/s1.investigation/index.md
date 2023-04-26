@@ -54,6 +54,5 @@ Stuff that I found, but never read/used yet.
 
 * cloud-based services and platforms investigation
 * Wireless network reconnaissance
-
 </div><div>
 </div></div>

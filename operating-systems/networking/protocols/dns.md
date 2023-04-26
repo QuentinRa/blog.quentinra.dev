@@ -162,12 +162,14 @@ $ nslookup -type=A example.com 1.1.1.1
 
 #### `whois`: domain registrar data
 
-You can also use [whois via their website](https://www.whois.com/whois/).
+You can also use [their website](https://www.whois.com/whois/) or [domaintools](https://whois.domaintools.com/).
 
 ```ps
 $ whois example.com
 $ whois 8.8.8.8
 ```
+
+➡️ You can also query the [ICANN](https://lookup.icann.org/en).
 </div></div>
 
 <hr class="sep-both">

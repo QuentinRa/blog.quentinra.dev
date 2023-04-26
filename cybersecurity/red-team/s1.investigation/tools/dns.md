@@ -16,7 +16,7 @@ You can also check [DNSRecon](/cybersecurity/red-team/s2.discovery/tools/dnsreco
 
 #### WHOIS
 
-You can use [whois](/operating-systems/networking/protocols/dns.md#whois--domain-registrar-data) to dig for registrar information.
+You can use [whois](/operating-systems/networking/protocols/dns.md#whois-domain-registrar-data) to dig for registrar information.
 
 ➡️ Find a (human) target to attack.
 </div><div>

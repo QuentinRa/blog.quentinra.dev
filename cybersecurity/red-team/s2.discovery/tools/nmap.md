@@ -428,7 +428,9 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [old](_old.md)
-* ` nmap --log-errors `
+* `nmap --log-errors `
+* `nmap --badsum`: if answer, should be from a firewall/IDS
+* `--script-trace`
 </div><div>
 
 Host probing
