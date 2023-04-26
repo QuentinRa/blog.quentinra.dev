@@ -285,6 +285,7 @@ https://tryhackme.com/room/retro (blaster...)
 * Snoop (✨) <small>(packet capture and analysis)</small>
 * sslyzer (🏝) <small>(SSL scanner and analyzer)</small>
 * webslayer (🏝) <small>(web application scanner)</small>
+* [Tamper Chrome](https://chrome.google.com/webstore/detail/tamper-chrome-extension/hifhgpdkfodlpnlmlnmhchnkepplebkb)|[tamper.dev](https://tamper.dev/) (🏝💥) <small>(intercept HTTP request)</small>
 </div></div>
 
 <hr class="sep-both">

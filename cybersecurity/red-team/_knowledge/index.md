@@ -142,7 +142,7 @@ Metasploit is an intentionnally misconfigured/vulnerable VM. There is no graphic
 DarkStar is a THM staff that made a many rooms on THM. [You can download the VM they used in their rooms here](https://darkstar7471.com/resources.html).
 </div><div>
 
-#### Game of Active Directory 🛟
+#### Active Directory 🛟
 
 The [Game of Active Directory (GOAD)](https://github.com/Orange-Cyberdefense/GOAD) (1.9k ⭐) is an [Active directory](/operating-systems/active-directory/_knowledge/index.md) Lab. It was designed by the French company "Orange".
 
@@ -150,12 +150,19 @@ The [Game of Active Directory (GOAD)](https://github.com/Orange-Cyberdefense/GOA
 
 #### Web applications 🌍
 
-* See [OWASP Juice Shop](https://github.com/juice-shop/juice-shop) (7.9k ⭐) / [THM juiceshop](https://tryhackme.com/room/owaspjuiceshop)
-* See [OWASP mutillidae](https://github.com/webpwnized/mutillidae) (1.0k ⭐) / [THM mutillidae](https://tryhackme.com/room/owaspmutillidae)
+* See [OWASP Juice Shop](https://github.com/juice-shop/juice-shop) (7.9k ⭐) | [THM juiceshop](https://tryhackme.com/room/owaspjuiceshop) | [multi-juicer](https://github.com/iteratec/multi-juicer)
+* See [OWASP mutillidae](https://github.com/webpwnized/mutillidae) (1.0k ⭐) | [THM mutillidae](https://tryhackme.com/room/owaspmutillidae)
 * [Damn Vulnerable Web Application (DVWA)](https://github.com/digininja/DVWA) (7.4k ⭐) / [THM DVWA](https://tryhackme.com/room/dvwa)
 * [WebGoat](https://github.com/WebGoat/WebGoat) (5.6k ⭐)
 * [pygoat](https://github.com/adeyosemanputra/pygoat) (0.1k ⭐, django)
 * [bwapp](http://www.itsecgames.com/download.htm) (0.1k ⭐, 💀 since 2014) and [bWapp solutions](https://github.com/skiptomyliu/solutions-bwapp) (0.1k ⭐).
+
+<br>
+
+#### Random CTFs
+
+* [Root the Box](https://github.com/moloch--/RootTheBox) (0.7k ⭐)
+* [fbctf](https://github.com/facebookarchive/fbctf) (6.5k ⭐)
 </div></div>
 
 <hr class="sep-both">

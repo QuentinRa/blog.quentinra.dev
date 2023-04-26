@@ -37,6 +37,7 @@ Other options
 * `-p`: proxy
 * `-c`: a cookie <small>(for instance, to simulated that we are logged)</small>
 * `-H 'Name:value'`: a header
+* `--exclude-length x`: exclude responses with this length
 </div></div>
 
 <hr class="sep-both">

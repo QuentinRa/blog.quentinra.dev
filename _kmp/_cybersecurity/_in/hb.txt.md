@@ -8,37 +8,6 @@ adobe/fileformat/adobe_utilprintf
 -e x86/shikata_ga_nai
 Veil Framework
 
-Logic Flaw: the dev expect fields to remain unchanged.
-Not all browsers are the same, we should test websites in multiple browsers.
-
-Headers on redirect even with auto-routing.
-
-https://chrome.google.com/webstore/detail/tamper-chrome-extension/hifhgpdkfodlpnlmlnmhchnkepplebkb
-https://tamper.dev
-https://pwning.owasp-juice.shop/part1/categories.html
-
-Open firefox network tab before sending a request
-Then, once the request was sent, you will see it inside even if the page changed.
-You can
-
-* resend a request
-* edit a request and send it again (click on "use as fetch in console")
-
---exclude-length 1987
-Error: the server returns a status code that matches the provided options for non existing urls. URL/xxxx-xxxx-xxxx-xxx => 200 (Length: 1987). To continue please exclude the status code or the length
-
-https://github.com/iteratec/multi-juicer
-https://pwning.owasp-juice.shop/
-
-https://ctfd.io/
-https://github.com/facebookarchive/fbctf
-https://github.com/moloch--/RootTheBox
-
-https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/
-https://github.com/Arachni/arachni
-
-https://juice-shop.github.io/juice-shop/#/
-
 See my DM.
 
 https://www.rapid7.com/products/nexpose/

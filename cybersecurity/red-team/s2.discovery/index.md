@@ -98,7 +98,7 @@ Websites
 * [Virtual hosts](techniques/vhosts.md) 🚪: find virtual hosts
 * [Subdomains](techniques/subdomains.md) 🚪: find subdomains
 
-➡️ You should check for signs of [well-known vulnerabilities](../s3.exploitation/index.md#common-vulnerabilities-)
+➡️ You should check for signs of [well-known vulnerabilities](../s3.exploitation/index.md#common-vulnerabilities-). Note that not all browsers are the same, only some may be vulnerable.
 </div></div>
 
 <hr class="sep-both">
