@@ -57,4 +57,6 @@ Stuff that I found, but never read/used yet.
 Rooms
 
 * [password found in config+reuse](https://tryhackme.com/room/ignite)
+* [linprivesc](https://tryhackme.com/room/linprivesc) (hint/notes, network)
+* [windowsprivesc20](https://tryhackme.com/room/windowsprivesc20) 🐍🐍🐍
 </div></div>

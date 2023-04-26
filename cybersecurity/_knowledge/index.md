@@ -240,6 +240,12 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [hackingarticles](https://www.hackingarticles.in)
 * [motasem](https://motasem-notes.net/)
 * [exploits.run](https://exploits.run/)
+* [cybersins.com](https://cybersins.com/)
+* [daily-swig](https://portswigger.net/daily-swig)
+* [codecurmudgeon](https://codecurmudgeon.com/wp/)
+* [speedguide](https://www.speedguide.net/)
+* [curiositykillscolby](https://curiositykillscolby.com/)
+* [defaultcredentials](https://defaultcredentials.com/)
 </div>
 
 </div>
@@ -251,5 +257,7 @@ This is a list of blogs that I want to check out one day. There are too many pil
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
+
+* [darknetdiaries](https://darknetdiaries.com/)
 </div><div>
 </div></div>

@@ -69,6 +69,11 @@ Stuff that I found, but never read/used yet.
 * HACKING GOOGLE series
 * XCCDF (Extensible Configuration Checklist Description Format)
 
+MFA
+
+* [yubico](https://www.yubico.com/)
+* Google Passkeys / Windows Hello / iCloud Passkeys
+
 Stuff
 
 * BCP (Business continuity Plan)

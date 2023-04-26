@@ -169,6 +169,7 @@ The [Game of Active Directory (GOAD)](https://github.com/Orange-Cyberdefense/GOA
 
 * [Root the Box](https://github.com/moloch--/RootTheBox) (0.7k ⭐)
 * [fbctf](https://github.com/facebookarchive/fbctf) (6.5k ⭐)
+* [picoctf](https://www.picoctf.org/) (event)
 </div></div>
 
 <hr class="sep-both">
@@ -301,9 +302,5 @@ Stuff that I found, but never read/used yet.
 * Log date/time of pentest, so in case of attack, you can proove it wasn't you.
 * `Start-Transcript`
 * encrypt VBox VM
-
 </div><div>
-
-* [htb](/_kmp/_cybersecurity/_in/htb.md)
-* [notes](/_kmp/_cybersecurity/_in/notes.md)
 </div></div>

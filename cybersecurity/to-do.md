@@ -301,6 +301,7 @@ https://tryhackme.com/room/retro (blaster...)
 * [**Veil Framework**](https://github.com/Veil-Framework/Veil) (💥) <small>(payloads)</small>
 * Phantom-Evasion (✈️) <small>(antivirus evasion tool)</small>
 * FavFreak (🏝) <small>(favicon recon)</small>
+* [waybackurls](https://github.com/tomnomnom/waybackurls) (🔎) <small>(wayback tool)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -320,11 +321,13 @@ https://tryhackme.com/room/retro (blaster...)
 * [scripts](https://github.com/Cerbersec/scripts) (commands)
 * [hack-with-github](https://github.com/hack-with-github) (lists)
 * [Checklists](https://github.com/netbiosX/Checklists) (checklists)
+* [awesome-ctf](https://github.com/apsdehal/awesome-ctf) (CTF websites and tools)
 </div><div>
 
 **Active directory** 🧸
 
 * [DomainPasswordSpray](https://github.com/dafthack/DomainPasswordSpray)
+* SharpHound
 
 **CMS**
 
