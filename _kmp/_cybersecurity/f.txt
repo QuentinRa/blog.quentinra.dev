@@ -50,3 +50,27 @@ msf6 > nessus_scan_list
 msf6 > nessus_db_import id_you_found_in_the_list
 ```
 </div></div>
+
+---------------
+---------------
+---------------
+---------------
+
+You can use [nmap](/_cybersecurity/discovery/nmap/index.md)
+
+```bash
+$ nmap --script=http-server-header.nse IP -p80,443
+$ nmap -sC IP -p80,443 # may provide less information
+```
+
+You can use [Metasploit](/_cybersecurity/exploitation/general/metasploit/msfconsole.md)
+
+```bash
+msf6 > use auxiliary/scanner/http/http_version
+```
+
+* In Metasploit
+  * `auxiliary/scanner/mysql/mysql_schemadump`: dump cols+tables
+  * `auxiliary/scanner/mysql/mysql_hashdump`: dump users+hash
+  * `mysql_sql`: send SQL queries
+* Script `mysql-enum` with nmap
