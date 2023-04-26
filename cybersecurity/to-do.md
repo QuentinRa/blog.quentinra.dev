@@ -226,6 +226,15 @@ https://tryhackme.com/room/retro (blaster...)
 * Grabber (🏝💥) <small>(web vulnerability scanner)</small>
 * [**XSS Hunter**](https://github.com/mandatoryprogrammer/xsshunter) (🏝) <small>(1.3k ⭐, XSS scanner)</small>
 * Domato (🏝) <small>(DOM-based XSS scanner)</small>
+* proxify (✈️) <small>(HTTP proxy)</small>
+* interactsh (✈️) <small>(rogue server)</small>
+* naabu (🏝) <small>(network scanner)</small>
+* nuclei (🏝💥) <small>(web application scanner)</small>
+* subfinder (🏝) <small>(subdomains enumeration)</small>
+* dnsx (🏝) <small>(dns enumeration)</small>
+* bettercap (💥) <small>(sniffing, MITM)</small>
+* evilgrade (💥✈️) <small>(exploiting update systems, MITM)</small>
+* CodeSec (🏝💥) <small>(web vulnerability scanner)</small>
 </div><div>
 
 * [venom](https://github.com/ovh/venom) (🔎🏝💥🔑✈️) <small>(payloads? -h/-c/-u/-p/-s, scan/crawl/portscan)</small>
@@ -286,9 +295,8 @@ https://tryhackme.com/room/retro (blaster...)
 * sslyzer (🏝) <small>(SSL scanner and analyzer)</small>
 * webslayer (🏝) <small>(web application scanner)</small>
 * [Tamper Chrome](https://chrome.google.com/webstore/detail/tamper-chrome-extension/hifhgpdkfodlpnlmlnmhchnkepplebkb)|[tamper.dev](https://tamper.dev/) (🏝💥) <small>(intercept HTTP request)</small>
-* [Veil Framework](https://github.com/Veil-Framework/Veil)
-* bettercap
-* evilgrade
+* httpx (🏝💥) <small>(web server enumeration)</small>
+* **Core Impact** (💥🔑✈️) <small>(paid exploitation framework)</small>
 </div></div>
 
 <hr class="sep-both">
