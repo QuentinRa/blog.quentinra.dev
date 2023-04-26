@@ -67,6 +67,7 @@ Stuff that I found, but never read/used yet.
 * ShadowServer
 * Threatmap
 * HACKING GOOGLE series
+* XCCDF (Extensible Configuration Checklist Description Format)
 
 Stuff
 
@@ -126,6 +127,7 @@ Threat intelligence
 * stack.watch <small>(web apps monitoring)</small>
 * cyware <small>(Threat intelligence platform)</small>
 * [pulsedive](https://pulsedive.com/)
+* fireeye
 
 <details class="details-n">
 <summary>SOC/Threat intelligence/hunting/modeling</summary>

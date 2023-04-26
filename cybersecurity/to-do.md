@@ -43,6 +43,11 @@ THM Users
 * [papadopejk](https://tryhackme.com/p/papadopejk)
 * [briskets](https://tryhackme.com/p/briskets)
 * [0xN0x](https://github.com/0xN0x)
+
+Random
+
+* [15 top open-source intelligence tools](https://www.csoonline.com/article/3445357/what-is-osint-top-open-source-intelligence-tools.html)
+* [OSINT 2021 guide](https://www.authentic8.com/blog/OSINT-2021-guide-tools-and-techniques)
 </div></div>
 
 <hr class="sep-both">
@@ -194,7 +199,7 @@ https://tryhackme.com/room/retro (blaster...)
 * [**Raccoon**](https://github.com/evyatarmeged/Raccoon) (🏝) <small>(subdomain, OSINT)</small>
 * [**Photon**](https://github.com/s0md3v/Photon) (🏝) <small>(web enumeration, subdomains)</small>
 * aquatone (🏝) <small>(visual web scrapping, subdomains)</small>
-* **Hping3** (💥) <small>(firewall bypass, port scanning, OS fingerprinting)</small>
+* **Hping3** (💥) <small>(firewall bypass, port/os scanning, -S -p SA/RA --flood)</small>
 * OpenVAS (🔎🔑✈️) <small>(network vulnerability scanner)</small>
 * QualysGuard (🔎🔑✈️) <small>(cloud-based vulnerability scanner)</small>
 * **Acunetix** (🔎💥) <small>(web vulnerability scanner)</small>
@@ -271,6 +276,15 @@ https://tryhackme.com/room/retro (blaster...)
 * Greenbone (🏝) <small>(vulnerability management)</small>
 * AppDetectivePro (🏝🛡️) <small>(Database vulnerability scanners)</small>
 * Dbprotect (🏝🛡️) <small>(Database vulnerability scanners)</small>
+* [sputnik](https://github.com/mitchmoser/sputnik) (🔎) <small>(OSINT scanner)</small>
+* netdiscover (🏝) <small>(network discovery, -r IP|IP/CIDR)</small>
+* Mxtoolbox (🔎) <small>(email configuration)</small>
+* hp webinspect (🏝💥) <small>(web application scanner)</small>
+* Linsniff (✨) <small>(packet capture and analysis)</small>
+* **Websniff** (✨) <small>(packet capture and analysis)</small>
+* Snoop (✨) <small>(packet capture and analysis)</small>
+* sslyzer (🏝) <small>(SSL scanner and analyzer)</small>
+* webslayer (🏝) <small>(web application scanner)</small>
 </div></div>
 
 <hr class="sep-both">

@@ -1,21 +1,8 @@
 # ...
 
-XCCDF (Extensible Configuration Checklist Description Format)
-
 QubesOS
 
 adobe/fileformat/adobe_utilprintf
-
-Top 10 • WebGoat • WebScarab • Testing guide • Code review guide • Mobile security testing guide • ZAP – Zed Attack Proxy
-
-code URL open redirect in hexadecimal?
-
-cookie not associated with an IP
-website HTTP
-no flag secure
-WebDevelopper export cookies and test in another nav
-
-https://github.com/exbotanical/brutus
 
 /usr/share/windows-binaries/radmin.exe
 -e x86/shikata_ga_nai

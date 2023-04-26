@@ -153,6 +153,7 @@ The [Game of Active Directory (GOAD)](https://github.com/Orange-Cyberdefense/GOA
 * See [OWASP Juice Shop](https://github.com/juice-shop/juice-shop) (7.9k ⭐) / [THM juiceshop](https://tryhackme.com/room/owaspjuiceshop)
 * See [OWASP mutillidae](https://github.com/webpwnized/mutillidae) (1.0k ⭐) / [THM mutillidae](https://tryhackme.com/room/owaspmutillidae)
 * [Damn Vulnerable Web Application (DVWA)](https://github.com/digininja/DVWA) (7.4k ⭐) / [THM DVWA](https://tryhackme.com/room/dvwa)
+* [WebGoat](https://github.com/WebGoat/WebGoat) (5.6k ⭐)
 * [pygoat](https://github.com/adeyosemanputra/pygoat) (0.1k ⭐, django)
 * [bwapp](http://www.itsecgames.com/download.htm) (0.1k ⭐, 💀 since 2014) and [bWapp solutions](https://github.com/skiptomyliu/solutions-bwapp) (0.1k ⭐).
 </div></div>

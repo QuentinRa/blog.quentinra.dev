@@ -34,5 +34,6 @@ There is [Remmina](https://github.com/FreeRDP/Remmina) (1.9k ⭐, `apt install r
 <div class="row row-cols-md-2"><div>
 
 * [BlueKeep Vulnerability](https://en.wikipedia.org/wiki/BlueKeep) (2019)
+* rlogin
 </div><div>
 </div></div>
