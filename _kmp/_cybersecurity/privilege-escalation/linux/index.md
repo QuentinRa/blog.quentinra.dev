@@ -138,6 +138,7 @@ Others 🔎
 
 [![picklerick](../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
 [![linprivesc](../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
+[![wgelctf](../../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
 
 Try to find commands that can be run with sudo
 
@@ -426,5 +427,6 @@ Courses
 
 * [payatu.com](https://payatu.com/guide-linux-privilege-escalation)
 * [udemy.com](https://www.udemy.com/course/linux-privilege-escalation/)
+* `$(whoami)  ALL=(ALL) NOPASSWD:ALL`
 </div><div>
 </div></div>

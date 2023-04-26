@@ -81,17 +81,6 @@
 * https://robertmuwanga.netlify.app/
 * https://niekdang.wordpress.com/
 
---- https://tryhackme.com/room/wgelctf (done)
-
-* use common first, before small/...
-* `$(whoami)  ALL=(ALL) NOPASSWD:ALL`
-
-List
-
-* html comments
-* Gobuster
-* sudo -l
-
 <hr class="sep-both">
 
 ## HackTheBox
