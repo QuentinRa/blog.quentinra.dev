@@ -1,9 +1,5 @@
 # R
 
-* Remember for web/general/security
-* .todo: dns discord
-* web general | terminology | URL may have to be moved
-
 <hr>
 
 ## XXX

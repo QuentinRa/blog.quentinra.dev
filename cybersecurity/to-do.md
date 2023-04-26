@@ -322,6 +322,10 @@ https://tryhackme.com/room/retro (blaster...)
 * [Checklists](https://github.com/netbiosX/Checklists) (checklists)
 </div><div>
 
+**Active directory** 🧸
+
+* [DomainPasswordSpray](https://github.com/dafthack/DomainPasswordSpray)
+
 **CMS**
 
 * [joomscan](https://github.com/OWASP/joomscan) (🔎🏝) <small>(Joomla CMS)</small>

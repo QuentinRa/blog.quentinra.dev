@@ -114,6 +114,12 @@ You can [download Kali ISO here](https://www.kali.org/get-kali/#kali-virtual-mac
 
 <br>
 
+#### BackBox Linux 🦜
+
+[backbox](https://linux.backbox.org/) is a penetration testing distro.
+
+<br>
+
 #### BlackArch 😶‍🌫️
 
 [BlackArch](https://www.blackarch.org/) is mostly used by ArchLinux users, as an alternative to Parrot and Kali Linux.
@@ -290,6 +296,12 @@ Stuff that I found, but never read/used yet.
 * [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources)
 * [CAPEC](https://capec.mitre.org/)
 * [Attack tatics](https://attack.mitre.org/tactics/enterprise/)
+* [pwndoc](https://github.com/pwndoc/pwndoc) (pentest report)
+* [writehat](https://github.com/blacklanternsecurity/writehat) (pentest report)
+* Log date/time of pentest, so in case of attack, you can proove it wasn't you.
+* `Start-Transcript`
+* encrypt VBox VM
+
 </div><div>
 
 * [htb](/_kmp/_cybersecurity/_in/htb.md)

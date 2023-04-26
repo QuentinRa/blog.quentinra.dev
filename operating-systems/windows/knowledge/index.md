@@ -279,5 +279,13 @@ Stuff that I found, but never read/used yet.
 
 * Daemons (linux) are called services on Windows
 * Hyper-v
+
+```ps
+C:\> IEX((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
+C:\> choco upgrade chocolatey
+C:\> choco install docker-desktop
+C:\> choco install python vscode git wsl2 openssh openvpn microsoft-windows-terminal WSL2
+C:\> Add-MpPreference -ExclusionPath "C:\Users\xxx\AppData\Local\Temp\chocolatey\"
+```
 </div><div>
 </div></div>

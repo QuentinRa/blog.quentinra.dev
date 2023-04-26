@@ -17,6 +17,11 @@ https://gamequitters.com/
 
 motion leap
 MidJourney
+https://github.com/flameshot-org/flameshot
+
+--- Record
+
+https://github.com/phw/peek
 
 --- IA
 

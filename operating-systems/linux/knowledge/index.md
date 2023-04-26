@@ -372,6 +372,8 @@ Stuff that I found, but never read/used yet.
 * [yoctoproject](https://www.yoctoproject.org/)
 * If you met a crazy guy that named something starting with a `-`, then you need to use `--` before the weird filename. For instance: `cp -- -filename`.
 * [QubesOS](https://www.qubes-os.org/)
+* Guake/iTerm2/Terminology/[tmux](https://www.youtube.com/watch?v=Lqehvpe_djs)/[terminator](https://github.com/gnome-terminator/terminator)
+* `sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y`
 
 </div><div>
 
