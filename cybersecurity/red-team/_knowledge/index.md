@@ -290,9 +290,7 @@ Stuff that I found, but never read/used yet.
 * [Attack tatics](https://attack.mitre.org/tactics/enterprise/)
 </div><div>
 
-* [hb](/_kmp/_cybersecurity/_in/hb.txt.md)
 * [htb](/_kmp/_cybersecurity/_in/htb.md)
 * [notes](/_kmp/_cybersecurity/_in/notes.md)
 * [stuff](/_kmp/_cybersecurity/_in/stuff.txt.md)
-* [security index](/_kmp/_cybersecurity/_in/security/index.md)
 </div></div>

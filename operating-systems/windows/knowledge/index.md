@@ -24,6 +24,7 @@ If you don't have Windows, as a developper, you can use an emulator with one of 
 <div class="row row-cols-md-2 mt-3"><div>
 
 * [Windows 10 Enterprise](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise) <small>(official, free, 180 days)</small>
+* [Windows 11](https://www.microsoft.com/en-us/software-download/windows11) <small>(official)</small>
 * [Windows 11 Enterprise](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise) <small>(official,  free, 180 days)</small>
 * [Windows 11 Enterprise (dev)](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/) <small>(official, free)</small>
 * [Windows 7/8/10](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/) <small>(official, free,  90 days, IEUser/Passw0rd!)</small>

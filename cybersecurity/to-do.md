@@ -286,6 +286,9 @@ https://tryhackme.com/room/retro (blaster...)
 * sslyzer (🏝) <small>(SSL scanner and analyzer)</small>
 * webslayer (🏝) <small>(web application scanner)</small>
 * [Tamper Chrome](https://chrome.google.com/webstore/detail/tamper-chrome-extension/hifhgpdkfodlpnlmlnmhchnkepplebkb)|[tamper.dev](https://tamper.dev/) (🏝💥) <small>(intercept HTTP request)</small>
+* [Veil Framework](https://github.com/Veil-Framework/Veil)
+* bettercap
+* evilgrade
 </div></div>
 
 <hr class="sep-both">

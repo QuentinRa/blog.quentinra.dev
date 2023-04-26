@@ -371,6 +371,7 @@ Stuff that I found, but never read/used yet.
 * [ArchTitus](https://github.com/ChrisTitusTech/ArchTitus)
 * [yoctoproject](https://www.yoctoproject.org/)
 * If you met a crazy guy that named something starting with a `-`, then you need to use `--` before the weird filename. For instance: `cp -- -filename`.
+* [QubesOS](https://www.qubes-os.org/)
 
 </div><div>
 
