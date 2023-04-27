@@ -5,6 +5,7 @@
 [![hashingcrypto101](../../../_badges/thmp/hashingcrypto101.svg)](https://tryhackme.com/room/hashingcrypto101)
 [![hash_cracking](../../../_badges/poat/hash_cracking.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Hash%20Cracking.md)
 [![crackthehash](../../../_badges/thm-p/crackthehash.svg)](https://tryhackme.com/room/crackthehash)
+[![c4ptur3th3fl4g](../../../_badges/thm-p/c4ptur3th3fl4g.svg)](https://tryhackme.com/room/c4ptur3th3fl4g)
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -75,7 +76,7 @@ $ htpasswd -bnBC 10 "" toto | tr -d ':\n' # bcrypt
 
 * ➡️ Online tools
 
-For instance, [decrypt.tools](https://decrypt.tools/encrypt) <small>(not many algos)</small> or [hashes.com](https://hashes.com/en/generate/hash) <small>(many algos)</small>.
+For instance, [decrypt.tools](https://decrypt.tools/encrypt) <small>(not many algos)</small>, [hashes.com](https://hashes.com/en/generate/hash) <small>(many algos)</small>, or [tunnelsup](https://www.tunnelsup.com/hash-analyzer/).
 </div></div>
 
 <hr class="sep-both">
@@ -160,6 +161,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [old](_old.md)
+* [Hash-Buster](https://github.com/s0md3v/Hash-Buster)
 </div><div>
 </div></div>

@@ -1,5 +1,7 @@
 # Encoding
 
+[![c4ptur3th3fl4g](../../../cybersecurity/_badges/thm-p/c4ptur3th3fl4g.svg)](https://tryhackme.com/room/c4ptur3th3fl4g)
+
 <div class="row row-cols-md-2"><div>
 
 Encoding 🖼️️ is a way of presenting data. Unlike encryption 🔒, anyone that can identify the algorithm used can decode the message.
@@ -31,6 +33,7 @@ A radix or a base is a number of unique digits that we can use to encode a messa
 * [Decodify](https://github.com/s0md3v/Decodify) (0.8k ⭐)
 * [binaryhexconverter.com](https://www.binaryhexconverter.com/)
 * [rapidtables.com/base converter](https://www.rapidtables.com/convert/number/base-converter.html)
+* [dencode.com](https://dencode.com/en/)
 </div></div>
 
 <hr class="sep-both">

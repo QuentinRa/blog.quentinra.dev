@@ -69,6 +69,7 @@ Software                        : www.inkscape.org
 ## Steganography
 
 [![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
+[![c4ptur3th3fl4g](../../_badges/thm-p/c4ptur3th3fl4g.svg)](https://tryhackme.com/room/c4ptur3th3fl4g)
 
 <div class="row row-cols-md-2"><div>
 
@@ -76,10 +77,12 @@ Steganography is a technique in which a person hide data inside the pixels of an
 
 If the hidden content is not protected by a password, you can extract it using the `steghide` command:
 
-```bash
+```ps
 $ steghide info file # check
 $ steghide extract -sf file # extract
 ```
+
+➡️ If prompted for a password, try a blank password.
 </div><div>
 
 Otherwise, you may try to [crack](/cybersecurity/red-team/s3.exploitation/index.md#password-cracking-) the password.
@@ -88,6 +91,10 @@ Otherwise, you may try to [crack](/cybersecurity/red-team/s3.exploitation/index.
 # https://github.com/RickdeJager/stegseek
 $ stegseek file wordlist
 ```
+
+🐸 See also [futureboy](https://futureboy.us/stegano/) steg tools.
+
+💎 It's possible that when using the `strings` command we see some interesting parts of the hidden content.
 </div></div>
 
 <hr class="sep-both">
@@ -123,6 +130,26 @@ file.png file.zip
 ```
 
 👉 If there was a ZIP inside the PNG, and you can't unzip it, try with `7z x xxx.zip` or use `dd` to extract the file.
+</div></div>
+
+<hr class="sep-both">
+
+## Audio files
+
+[![c4ptur3th3fl4g](../../_badges/thm-p/c4ptur3th3fl4g.svg)](https://tryhackme.com/room/c4ptur3th3fl4g)
+
+<div class="row row-cols-md-2"><div>
+
+You can use [Audacity]() to analyze audio files.
+
+```
+$ sudo apt install audacity
+```
+
+Open the file, click on the filename, select wav to spectrogram.
+</div><div>
+
+See also: [academo spectrum analyzer](https://academo.org/demos/spectrum-analyzer/) or [morsecode audio decoder](https://morsecode.world/international/decoder/audio-decoder-adaptive.html).
 </div></div>
 
 <hr class="sep-both">

@@ -174,6 +174,9 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [complexsecurity](https://complexsecurity.io/)
 * [cnil](https://www.cnil.fr/fr/cybersecurite)
 * [unicornsec](https://unicornsec.com/)
+* [n0w4n](https://n0w4n.nl/)
+* [hackedpatched](https://hackedpatched.wordpress.com/)
+* [xavag3djang0](https://xavag3djang0.github.io/)
 </div><div>
 
 * [auth0.com](https://auth0.com/blog/)
@@ -198,6 +201,9 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [wonderhowto](https://www.wonderhowto.com/)
 * [hackstreetboys](https://atom.hackstreetboys.ph/)
 * [infosecjunky](https://infosecjunky.com/)
+* [speedguide](https://www.speedguide.net/)
+* [curiositykillscolby](https://curiositykillscolby.com/)
+* [defaultcredentials](https://defaultcredentials.com/)
 </div><div>
 
 * [razrsec](https://blog.razrsec.uk/)
@@ -222,6 +228,9 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [wonderhowto](https://www.wonderhowto.com/)
 * [thehackerish](https://thehackerish.com/)
 * [secjuice](https://www.secjuice.com/)
+* [cybersins.com](https://cybersins.com/)
+* [daily-swig](https://portswigger.net/daily-swig)
+* [codecurmudgeon](https://codecurmudgeon.com/wp/)
 </div><div>
 
 * [deltreey](https://deltreey.blogspot.com/)
@@ -240,12 +249,9 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [hackingarticles](https://www.hackingarticles.in)
 * [motasem](https://motasem-notes.net/)
 * [exploits.run](https://exploits.run/)
-* [cybersins.com](https://cybersins.com/)
-* [daily-swig](https://portswigger.net/daily-swig)
-* [codecurmudgeon](https://codecurmudgeon.com/wp/)
-* [speedguide](https://www.speedguide.net/)
-* [curiositykillscolby](https://curiositykillscolby.com/)
-* [defaultcredentials](https://defaultcredentials.com/)
+* [0xnirvana](https://0xnirvana.gitbook.io/writeups/)
+* [robertmuwanga](https://robertmuwanga.netlify.app/)
+* [niekdang](https://niekdang.wordpress.com/)
 </div>
 
 </div>

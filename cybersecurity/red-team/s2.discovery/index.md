@@ -125,6 +125,6 @@ Stuff that I found, but never read/used yet.
 
 * `sudo arp-scan -l -I eth0`
 * [clFrex](https://cifrex.org/)
-* find S3 Buckets
+* find S3 Buckets `awscli` (https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html)
 </div><div>
 </div></div>
