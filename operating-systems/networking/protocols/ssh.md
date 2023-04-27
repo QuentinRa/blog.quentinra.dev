@@ -10,14 +10,14 @@ Secure shell (SSH) is the most commonly used protocol to access a remote shell o
 </div><div>
 
 ```ps
-$ ssh login@IP
-$ ssh login@IP -u port
+$ ssh username@IP
+$ ssh username@IP -p port
 ```
 
 You may use a private key instead of a password (if configured). Note that the key must have at least the permissions `600`.
 
 ```ps
-$ ssh login@IP -i /path/to/id_rsa
+$ ssh username@IP -i /path/to/id_rsa
 ```
 </div></div>
 
