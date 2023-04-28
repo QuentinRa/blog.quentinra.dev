@@ -2,6 +2,8 @@
 
 [Go back](../index.md#linux-privilege-escalation-)
 
+[![ignite](../../../_badges/thm-p/ignite.svg)](https://tryhackme.com/room/ignite)
+
 <div class="row row-cols-md-2"><div>
 
 You may try to look for credentials.

