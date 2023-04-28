@@ -302,6 +302,7 @@ https://tryhackme.com/room/retro (blaster...)
 * Phantom-Evasion (✈️) <small>(antivirus evasion tool)</small>
 * FavFreak (🏝) <small>(favicon recon)</small>
 * [waybackurls](https://github.com/tomnomnom/waybackurls) (🔎) <small>(wayback tool)</small>
+* [EyeWitness](https://github.com/FortyNorthSecurity/EyeWitness)
 </div></div>
 
 <hr class="sep-both">

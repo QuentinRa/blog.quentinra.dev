@@ -83,5 +83,7 @@ $ ftp anonymous@IP
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
+
+* `ftp -p` (passive mode, may bypass some firewall)
 </div><div>
 </div></div>

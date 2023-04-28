@@ -56,10 +56,13 @@ $ smbget -R //IP/share_name
 
 <div class="row row-cols-md-2"><div>
 
-* Find shares using nmap
+* Using nmap you can try to:
 
 ```ps
+# find users and shares
 $ nmap IP -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse
+# find the operating system
+$ nmap IP -p 445 --script smb-os-discovery.nse
 ```
 
 * Try `Anonymous` user with no password (`-N`)

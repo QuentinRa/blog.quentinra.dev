@@ -354,6 +354,7 @@ Stuff that I found, but never read/used yet.
 
 * [Mercurial-Grabber](https://github.com/NightfallGT/Mercurial-Grabber) (a [real](https://blog.cyble.com/2022/01/18/mercurial-grabber-malware-builder/) malware to steal credential)
 * [discoon](https://github.com/RadonCoding/discoon) (another potential real malware)
+* [powercat](https://github.com/besimorhino/powercat)
 </div><div>
 
 </div></div>
