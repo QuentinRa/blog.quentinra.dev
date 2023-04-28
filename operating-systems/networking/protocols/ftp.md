@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-File Transfer Protocol (FTP) is a widely used protocol to transfer files. It's mostly used externally, unlike Samba or NFS.
+File Transfer Protocol (FTP) is a widely used protocol to transfer files. It's mostly used externally, unlike SMB or NFS.
 
 🐊️ **Ports**: 21 (TCP/control), and 20 (TCP/data)
 

@@ -74,8 +74,13 @@ Stuff that I found, but never read/used yet.
 
 * [Old - General](_old/index.md)
 * [Old - Windows](_old/windows/index.md)
-* `winPEAS`
 * [WADComs](https://github.com/WADComs/WADComs.github.io) (1k ⭐)/[wadcoms website](https://wadcoms.github.io/)
+
+Windows
+
+* PSReadLine (command history)
+* [Seatbelt](https://github.com/GhostPack/Seatbelt)
+* [JAWS](https://github.com/411Hall/JAWS)
 </div><div>
 
 Rooms

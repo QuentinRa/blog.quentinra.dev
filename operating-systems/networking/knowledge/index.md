@@ -148,7 +148,7 @@ Each protocol can be represented using a [Message Sequence Chart](https://en.wik
 * Remote shell access 🧑‍💻: [SSH](../protocols/ssh.md), or [telnet](../protocols/telnet.md)
 * Remote desktop access 💻: [RDP](../protocols/rdp.md)
 * Domain resolution 📍: [DNS](../protocols/dns.md)
-* Network file system 🗃️: [NFS](../protocols/nfs.md), or [Samba](../protocols/samba.md)
+* Network file system 🗃️: [NFS](../protocols/nfs.md), or [SMB](../protocols/smb.md)
 * IP addresses lease 🎯: [DHCP](../protocols/dhcp.md)
 * Network Management 🧼: [SNMP](../protocols/snmp.md)
 
@@ -206,6 +206,9 @@ VPN
 * Between two companies/an employee and the company
 * remote-site VPN/site-to-site VPN
 * Client and server (VPN subnet and ACLs?)
+* openvpn
+  * `sudo apt install openvpn`
+  * `sudo openvpn user.ovpn` ([openvpn](https://openvpn.net/))
 
 Certification
 

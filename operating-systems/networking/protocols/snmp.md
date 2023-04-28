@@ -103,6 +103,32 @@ Commands: `snmpget`, `snmpwalk`, `snmpset`, `snmpinform`...
 
 <hr class="sep-both">
 
+## SNMP vulnerabilities ☠️
+
+<div class="row row-cols-md-2"><div>
+
+#### Common SNMPv2c community strings
+
+You can use `snmpwalk` to list SNMP variables from SNMP devices. Two common community strings are `public` and `private`.
+
+```
+$ snmpwalk -v 2c -c community_string IP OID
+```
+
+➡️ The OID for sysName is `1.3.6.1.2.1.1.5.0`.
+</div><div>
+
+#### Brute force SNMPv2c community strings
+
+You can brute force community strings with [onesixtyone](https://github.com/trailofbits/onesixtyone) (0.4k ⭐):
+
+```ps
+$ onesixtyone -c wordlist IP
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -114,5 +140,4 @@ Stuff that I found, but never read/used yet.
     * a version of SNMP
     * a community (SNMPv2c?)
 </div><div>
-
 </div></div>

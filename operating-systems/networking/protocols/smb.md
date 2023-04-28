@@ -1,30 +1,35 @@
-# Samba
+# Server Message Block (SMB)
 
 <div class="row row-cols-md-2"><div>
+
+Server Message Block (SMB) is a protocol used for Windows file exchange system. It's similar to [NFS](nfs.md) for Linux.
 
 [Samba](https://www.samba.org/) is making both file exchange systems of Linux (NFS), and Windows (SMB) work together.
 
 🐊️ **Port**: 445 (TCP) <small>(139/TCP before)</small>
 
-It's mostly used to share files internally by connecting computersn printers... to a shared folder called **share** 📂.
+It's mostly used to share files internally by connecting computers, printers... to a shared folder called **share** 📂.
 
-```bash
+**List shares** (`-L`)
+
+```ps
+$ smbclient -L IP
+$ smbclient -L IP -U username
+$ smbclient -L IP -U username -p port
+```
+
+**Connect to a share** <small>(you may provide username/port too)</small>
+
+```ps
 $ smbclient //IP/share_name
 $ smbclient smb://IP/share_name # same
-$ smbclient //IP/share_name -p port
-$ smbclient //IP/share_name -U username
 ```
 
-Download everything in a share
-
-```bash
-$ smbget -R //IP/share_name
-```
 </div><div>
 
-Once connected, you can use theses
+Once connected, you can use these:
 
-```bash
+```shell!
 smb> help # list every command
 smb> pwd # get current folder
 smb> ls folder # list files in folder
@@ -35,11 +40,17 @@ smb> put /local/path /remote/path # upload
 smb> get /remote/path /local/path # download
 smb> exit # there is also "q" and "quit"
 ```
+
+Download everything in a share
+
+```ps
+$ smbget -R //IP/share_name
+```
 </div></div>
 
 <hr class="sep-both">
 
-## Samba vulnerabilities ☠️
+## SMB vulnerabilities ☠️
 
 [![kenobi](../../../cybersecurity/_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
 
@@ -51,12 +62,15 @@ smb> exit # there is also "q" and "quit"
 $ nmap IP -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse
 ```
 
-* Try connecting anonymously with no password (leave blank)
+* Try `Anonymous` user with no password (`-N`)
 
 ```ps
-$ smbclient -L IP -U Anonymous # list shares
-$ smbclient //IP/share_name -U Anonymous
-$ smbclient //IP//Anonymous -U Anonymous
+# list shares
+$ smbclient -L IP -U Anonymous -N
+# connect to a share
+$ smbclient //IP/share_name -U Anonymous -N
+# test Anonymous share
+$ smbclient //IP//Anonymous -U Anonymous -N
 ```
 </div><div>
 

@@ -41,4 +41,5 @@
 * PostgresSQL: `psql -V`
 * MySQL: `mysql --version`
 * Port and services: `/etc/services`
+* Apps: `dpkg -l`
 </div></div>

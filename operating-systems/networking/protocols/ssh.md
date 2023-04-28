@@ -47,6 +47,7 @@ Stuff that I found, but never read/used yet.
 * `ssh xxx@yyy -T -L xxx:domain:xxx`: create a tunnel mapping one port to another
 * ssh-keygen
 * ssh-copy-id
+* `ssh-keygen -f key`: leave in `>> /root/.ssh/authorized_keys` the pub
 </div><div>
 
 
