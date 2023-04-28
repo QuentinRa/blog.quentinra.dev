@@ -83,6 +83,7 @@ A port is a virtual messaging channel which is only associated with **one protoc
 * 🤔 Protocols can be assigned to another port <small>(security)</small>
 * ✅ Ports can be "open", "filtered" <small>(firewall)</small>, and "closed"
 * 🍸 A port can, according to the protocol, receive TCP, UDP, or TCP and UDP... messages.
+* 🔥 Port 0 is called wildcard port, and when used by a program, will automatically bind them to a non system port.
 </div></div>
 
 <hr class="sep-both">
@@ -195,6 +196,7 @@ Stuff that I found, but never read/used yet.
 * see SRM notes
 * IPV6 EUI64 (texas)
 * VIP (virtual IP?)
+* LDAP
 
 VPN
 

@@ -382,7 +382,7 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * `arp -a`, `arp -a -d`
-* `netstat -tulpn`
+* `netstat -tulpn`, `netstat -rn` (routing table/routable networks?)
 * `iptables [...] -j REJECT --reject-with tcp-reset`
 
 </div></div>

@@ -898,11 +898,18 @@ $ useradd username -g usergroup -b custom/path/to/home -m
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚: add users to a group...
+**Usage** 🐚: add users to a group... Don't forget to log back in for the changes to be applied.
 
 **Example** 🔥:
 
-Add user to sudoers
+Add user yyy to group xxx
+
+```ps
+$ sudo usermod -a -G xxx yyy
+```
+</div><div>
+
+Add username to sudoers
 
 ```ps
 $ sudo usermod -a -G sudo username

@@ -428,7 +428,8 @@ $ nmap IP --script "*brute*" --script-args userdb=users.lst,passdb=pass.lst
 #### Banner grabbing
 
 ```ps
-$ nmap --script=http-server-header.nse IP -p80,443
+$ nmap [...] --script=banner
+$ nmap [...] --script=http-server-header.nse -p80,443
 ```
 </div><div>
 </div></div>

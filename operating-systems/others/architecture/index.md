@@ -281,4 +281,5 @@ Stuff that I found, but never read/used yet.
 
 * Little Man Computer (LMC)
 * Each app has its memory space and others can't access it
+* Hypervisor: software to run VMs. Virtually sharing memory and processing resources. Isoled from OS.
 </div></div>
