@@ -22,7 +22,7 @@ $ find / -perm -u=s -type f -ls 2>/dev/null
 $ find / -perm -g=s -type f -ls 2>/dev/null
 ```
 
-Once you found a file with the SUID bit, either there is a known way to exploit it using [GTFBins](), or you have to investigate manually.
+Once you found a file with the SUID bit, either there is a known way to exploit it using [GTFOBins](gtfobins.md), or you have to investigate manually.
 
 <br>
 
@@ -39,6 +39,15 @@ If the script **hand-made**, or **not on GTFOBins**, then you can use the comman
 * `strings script`: extract every readable string, may not be installed
 
 You may be able to make the script do what you want by editing [environment variables or files](injection.md) that it uses.
+
+<br>
+
+#### Executable
+
+When exploiting a command, you will usually want to run another executable. Two commands you will most likely run are:
+
+* `/bin/bash -i`: start an interactive bash
+* `/bin/bash -p`: do not drop privilege <small>(SUID, start the bash as root)</small>
 </div></div>
 
 <hr class="sep-both">

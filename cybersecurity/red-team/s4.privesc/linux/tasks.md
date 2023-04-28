@@ -2,7 +2,6 @@
 
 [Go back](../index.md#linux-privilege-escalation-)
 
-
 [![startup](../../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 
 <div class="row row-cols-md-2"><div>

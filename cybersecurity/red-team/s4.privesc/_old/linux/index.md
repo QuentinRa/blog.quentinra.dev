@@ -1,34 +1,5 @@
 # Compromise a Linux host
 
-<hr class="sep-both">
-
-## 🎁 GTFOBins 🎁
-
-<div class="row row-cols-md-2"><div>
-
-It's common for well-known Linux commands to be misconfigured. Vulnerabilities can lead to reading/writing root-only files, executing commands as root...
-
-**[gtfobins](https://gtfobins.github.io/)** (7.4k ⭐) is the reference when looking for commands to exploit misconfigured Linux commands.
-
-> There is a local version of [gtfo in Python](https://github.com/t0thkr1s/gtfo) (96 ⭐, 2021).
-</div><div>
-
-Example: you can only run `tar` using `sudo`. Run the command below from [GTFOBins](https://gtfobins.github.io/gtfobins/tar/#sudo), and you will get a root shell.
-
-```bash
-$ sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
-```
-
-> I'm adding [some extras here](gtfobins.md). Two small notes
-> 
-> * `/bin/bash -i`: start an interactive bash
-> * `/bin/bash -p`: do not drop privilege <small>(SUID, start the bash as root)</small>
-</div></div>
-
-<hr class="sep-both">
-
-## Learn more about your environment
-
 Aside from commands that are in the Linux notes, here are a few used in cybersecurity.
 
 <div class="row row-cols-md-2"><div>
