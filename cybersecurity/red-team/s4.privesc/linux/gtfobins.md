@@ -114,11 +114,11 @@ It's quite easy to do it manually, but you need two machines (ex: your VM and th
 
 * Then, it will replace the line giving access to `wget` and give you the permission to run every command as root
 
-* Then, we will start a python web server, and use `wget` with `-o` to remplace our new sudo file with the tampered one.
+* Then, we will start a python web server, and use `wget` with `-o` to replace our new sudo file with the tampered one.
 
 * Finally, the script run `sudo bash` and open your shell as root
 
-⚠️ The script may mess with your sudoers file if something goes wrong. I destroyed my VM 7 times before managing to make the script work 🌳. If you understand the commands used in the script, use them one by one, and check the tampered sudoers file (output) BEFORE overriding the current one.
+⚠️ The script may mess with your [sudoers](/operating-systems/linux/architecture/index.md#etcsudoers) file if something goes wrong. I destroyed my VM 7 times before managing to make the script work 🌳. If you understand the commands used in the script, use them one by one, and check the tampered sudoers file (output) BEFORE overriding the current one.
 </div><div>
 
 ```bash

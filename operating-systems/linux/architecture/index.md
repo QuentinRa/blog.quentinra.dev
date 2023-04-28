@@ -57,6 +57,24 @@ The file `/dev/null` is a sort of "trash file" in which everything you write ins
 * `/etc/shadow` <small>(root)</small>: users and their hashed password
 * `/etc/group`: list of groups and their GID
 * `/etc/hosts` <small>(root)</small>: map a domain to an IP, can be edit manually
+
+<br>
+
+##### /etc/sudoers
+
+The file `/etc/sudoers` is a system configuration file defining which commands a user can run as another user, usually root.
+
+For instance, to run any command as `root` without a password:
+
+```ps
+username ALL=(ALL) NOPASSWD:ALL 
+```
+
+Here, `tar` can be run as `user2` without password:
+
+```ps
+username ALL=(user2) NOPASSWD:/bin/tar
+```
 </div></div>
 
 <hr class="sep-both">

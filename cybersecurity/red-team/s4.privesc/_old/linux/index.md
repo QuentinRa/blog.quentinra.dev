@@ -1,50 +1,5 @@
 # Compromise a Linux host
 
-Aside from commands that are in the Linux notes, here are a few used in cybersecurity.
-
-<div class="row row-cols-md-2"><div>
-
-* `w`: who is logged in, and what they are doing
-* `who`: who is logged in
-* `echo $0`: language used by the current shell
-* `whoami`: username
-* `last`: list of last logged users
-* `id`: username, group...
-* `groups`: list groups
-* `uname -a`: info about the kernel
-* `hostname`: info about the host <small>(ex: `website-dev` -> role of the user)</small>
-* `ps -e` / `top`: see running process
-* `env`: see environment variables
-* `umask`: see the default perms on newly created files
-* `finger`: return a summary of information about a user
-* `find / -writable -type d 2>/dev/null`: find writable directories
-
-**Potentially vulnerable services** 💸
-
-* Apache: `apache2 -v` / `apache2ctl -M`
-* Sudo: `sudo -V`
-* PostgresSQL: `psql -V`
-* MySQL: `mysql --version`
-</div><div>
-
-System Files 🔏
-
-* `/proc/version`: information about the machine
-* `/etc/*release`: information about the operating system
-* `/etc/issue`: an alternative to find the OS/version
-* `/etc/passwd`: usernames, their groups, their home, and their shell
-* `/etc/shadow` <small>(root)</small>: username, and their hashed password
-* `/etc/sudoers` <small>(root)</small>: sudoers, and rules applied to them, if any
-
-Others 🔎
-
-* Port and services: `/etc/services`
-* Environment variables: `/etc/profile`
-
-</div></div>
-
-> **NOTE**: don't forget to redirect any errors with `some_command 2> /dev/null`.
-
 <hr class="sep-both">
 
 ## Network File System (NFS)
