@@ -48,48 +48,12 @@ Others 🔎
 
 * Look for mails `/var/mail/`
 * Look for logs `/var/log/`
-  * Look for firewall logs (`/var/log/syslog`)
-  * Look for apache/... logs
-  * Look for fail2ban logs
-  * Look for ssh logs (`/var/log/auth.log`)
-* `/etc/services`: see ports and the services running on it
-* `/etc/profile`: set environment variables...
+* Port and services: `/etc/services`
+* Environment variables: `/etc/profile`
 
 </div></div>
 
 > **NOTE**: don't forget to redirect any errors with `some_command 2> /dev/null`.
-
-<hr class="sep-both">
-
-## Environment
-
-<div class="row row-cols-md-2"><div>
-
-In a lot of cases (SUID/GUID, sudo, capabilities...), you may have to use the trick of editing the environment. In all the cases listed, a **regular user** is allowed to run an executable/command/script **as root**.
-
-There are basic scenarios in which you can directly exploit the executable, but in other scenarios, you may have to exploit the environment, meaning
-
-* edit the environment variables
-* edit the files used by the program
-* create a file named after the options of the command, so that when a vulnerable glob-pattern is replaced, you will actually inject options
-* ...
-
-For instance, if a script uses the command `ls` and the environment variable `PATH` with the value `/tmp:[...]`, then because you can write in `/tmp`, you can create an executable named `ls` which is actually a `bash`. When the script run as root is executed, the command bash is executed as root, and your escalation is done. If you are the one running the script, you can also change your own PATH.
-</div><div>
-
-**Bash versions <4.2-048**: it is possible to create functions named after a path, which allows us to execute a command instead. If the path is accessed by a script, then using `-p`, we can create a bash while inheriting the permissions of its creator.
-
-```bash
-function /some/path { /bin/bash -p; }
-export -f /some/path
-```
-
-**Bash <4.4**: if debug is enabled, we can inject code in the environment variable PS4 used by bash. If the script has the SUID bit, then using this, we could create a bash with the SUID bit too.
-
-```bash
-$ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/; chmod +xs /tmp/bash)' ./script
-```
-</div></div>
 
 <hr class="sep-both">
 
