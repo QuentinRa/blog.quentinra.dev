@@ -255,54 +255,6 @@ $ /share/sbash -p
 
 <hr class="sep-both">
 
-## Cron tasks/jobs
-
-[![startup](../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
-
-<div class="row row-cols-md-2"><div>
-
-Cron is the name given to automated tasks on Linux.
-
-```bash
-# tasks of the current user
-$ crontab -l
-# list every system-wide cron task
-$ ls -la /etc/cron*
-```
-
-⚠️ It's worth noting that system-wide cron tasks and user-created cron tasks are not stored in the same place. Only root can browse/list other users' cron tasks.
-
-```bash
-# tasks of the user 'root'
-$ sudo ls /var/spool/cron/crontabs/root
-# tasks of the user 'root'
-$ sudo crontab -l -u root
-```
-</div><div>
-
-But, there is another way to find users' cron tasks. You can monitor Linux processes, for instance, using [pspy](https://github.com/DominicBreuker/pspy) (3.2k ⭐) which can monitor Linux processes without root permissions.
-
-```bash
-$ # use wget/... to fetch the static binary
-$ chmod +x /tmp/pspy
-$ /tmp/pspy
-```
-
-> **CTF**: they're usually running every minute or every 5 minutes.
-</div></div>
-
-<hr class="sep-both">
-
-## Random
-
-<div class="row row-cols-md-2"><div>
-
-The Fork bomb is an attack wherein a process continually replicates itself to deplete available system resources, according to [Wikipedia](https://en.wikipedia.org/wiki/Fork_bomb).
-</div><div>
-</div></div>
-
-<hr class="sep-both">
-
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

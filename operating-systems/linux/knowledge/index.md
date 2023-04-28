@@ -356,6 +356,37 @@ downloads
 
 <hr class="sep-both">
 
+## Cron jobs
+
+<div class="row row-cols-md-2"><div>
+
+We can run scheduled tasks on Linux using cron jobs.
+
+```ps
+$ crontab -l # list current user jobs
+$ sudo crontab -l -u xxx # list user 'xxx' jobs
+```
+
+To add a new scheduled task, use `-e`
+
+```ps
+$ crontab -e
+```
+</div><div>
+
+The format of the file is `schedule /path/to/your/script`. Schedule is made of 5 numbers whitespace-separated.
+
+* minute <small>(0-59)</small>
+* hour <small>(0-23)</small>
+* day <small>(month, 1-31)</small>
+* month <small>(1-12)</small>
+* day <small>(week, 0-6)</small>
+
+You can generate a schedule using [crontab.guru](https://crontab.guru/) or [crontab-generator](https://crontab-generator.org/).
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -366,7 +397,6 @@ Stuff that I found, but never read/used yet.
 * [gentoo](https://www.gentoo.org/)
 * [linux-securite](https://wonderfall.space/linux-securite/)
 * ELF
-* Cron `cron` process to schedule tasks, with crontab/crontab -l / Automated tasks in Linux / https://crontab-generator.org/ / https://crontab.guru/ / edit `crontab -e` / https://www.crontabs.org/
 * [tcsh](https://www.ibm.com/docs/en/zos/2.3.0?topic=shells-writing-tcsh-shell-scripts)
 * [ArchTitus](https://github.com/ChrisTitusTech/ArchTitus)
 * [yoctoproject](https://www.yoctoproject.org/)
