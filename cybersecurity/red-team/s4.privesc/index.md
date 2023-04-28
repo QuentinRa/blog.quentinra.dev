@@ -49,6 +49,8 @@ Escalation can be **horizontally**/laterally <small>(another user with the same 
 * 🔑 Finding [credentials](linux/credentials.md) <small>(config, logs, ssh keys...)</small>
 * 💥 Exploiting the [kernel](linux/kernel.md)
 * 🐸 Misconfigured [file permissions](linux/perms.md)
+
+You may want to find [who/where you are](linux/id.md) first.
 </div><div>
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...

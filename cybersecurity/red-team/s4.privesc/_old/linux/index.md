@@ -36,18 +36,8 @@ System Files 🔏
 * `/etc/shadow` <small>(root)</small>: username, and their hashed password
 * `/etc/sudoers` <small>(root)</small>: sudoers, and rules applied to them, if any
 
-User files 🍃
-
-* `ls -ahl /root/`: see if there are readable files in root's home
-* `ls /`: look for unexpected folders in `/`
-* `find / -name *id_dsa* 2> /dev/null`: RSA credentials
-* `~/.bash_history`: password (sudo/mysql...)
-* Look for backups <small>(.bak, .old...)</small>
-
 Others 🔎
 
-* Look for mails `/var/mail/`
-* Look for logs `/var/log/`
 * Port and services: `/etc/services`
 * Environment variables: `/etc/profile`
 
