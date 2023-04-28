@@ -19,7 +19,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-nmap <small>([nmap book](https://nmap.org/book/), [GitHub](https://github.com/nmap/nmap) 7.1k ⭐)</small> is the most popular tool to scan hosts and map a network. This includes
+nmap <small>([nmap book](https://nmap.org/book/), [GitHub](https://github.com/nmap/nmap) 7.7k ⭐)</small> is the most popular tool to scan hosts and map a network. This includes
 
 * 🔎 Detecting open ports <small>(+may find the running protocol and version)</small>
 * 📻 Guessing the host operating system
@@ -421,16 +421,30 @@ $ nmap IP --script "*brute*" --script-args userdb=users.lst,passdb=pass.lst
 
 <hr class="sep-both">
 
+## Uncommon usages
+
+<div class="row row-cols-md-2"><div>
+
+#### Banner grabbing
+
+```ps
+$ nmap --script=http-server-header.nse IP -p80,443
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [old](_old.md)
 * `nmap --log-errors `
 * `nmap --badsum`: if answer, should be from a firewall/IDS
 * `--script-trace`
+* `mysql-enum`
 </div><div>
 
 Host probing
