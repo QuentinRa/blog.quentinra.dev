@@ -1587,6 +1587,9 @@ sudo dpkg -i tidy-viewer_1.4.30_amd64.deb
 echo "alias tv='tidy-viewer'" >> ~/.bashrc
 source ~/.bashrc
 ```
+
+* Guake/iTerm2/Terminology/[tmux](https://www.youtube.com/watch?v=Lqehvpe_djs)/[terminator](https://github.com/gnome-terminator/terminator)/[tmux](https://www.youtube.com/watch?v=Lqehvpe_djs) + [cheatsheet](https://tmuxcheatsheet.com/)
+* `sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y`
 </div><div>
 
 * `find / -type f -a \( -perm -u+s -o -perm -g+s \) -ls`

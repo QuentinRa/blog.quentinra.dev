@@ -12,6 +12,10 @@
 Linux is a family of Unix-like operating systems, often called distros, such as Debian, Ubuntu, Fedora, or Arch Linux... They were designed to be free, open-source, light, secure, and performant.
 
 ➡️ Each distro has its pro and cons according to what specific usage they were designed for <small>(ex: gaming, security, performance...)</small>.
+
+🐦 **Common distros**: Ubuntu, Debian, Arch Linux, Red Hat, CentOS, Kali Linux, Parrot Linux, Linux Mint, Fedora...
+
+🎠 **Random distros**: [Gentoo](https://www.gentoo.org/), [Yocto](https://www.yoctoproject.org/), [QubesOS](https://www.qubes-os.org/).
 </div><div>
 
 Linux in its simplest form is a **command-line interface** (CLI), commonly referred to as terminal/shell <small>(or console/command prompt)</small>.
@@ -394,16 +398,9 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * OSS Course
-* [gentoo](https://www.gentoo.org/)
 * [linux-securite](https://wonderfall.space/linux-securite/)
 * ELF
 * [tcsh](https://www.ibm.com/docs/en/zos/2.3.0?topic=shells-writing-tcsh-shell-scripts)
-* [ArchTitus](https://github.com/ChrisTitusTech/ArchTitus)
-* [yoctoproject](https://www.yoctoproject.org/)
-* If you met a crazy guy that named something starting with a `-`, then you need to use `--` before the weird filename. For instance: `cp -- -filename`.
-* [QubesOS](https://www.qubes-os.org/)
-* Guake/iTerm2/Terminology/[tmux](https://www.youtube.com/watch?v=Lqehvpe_djs)/[terminator](https://github.com/gnome-terminator/terminator)/[tmux](https://www.youtube.com/watch?v=Lqehvpe_djs) + [cheatsheet](https://tmuxcheatsheet.com/)
-* `sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y`
 
 </div><div>
 

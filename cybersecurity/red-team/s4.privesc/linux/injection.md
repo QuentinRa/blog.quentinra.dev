@@ -9,13 +9,14 @@ There are basic scenarios in which you can directly exploit the executable, but 
 * 🌸 edit the environment variables
 * 🌿 edit the files used by the program
 * 🎭 create a file named after the parameters of the command. For instance, if the code uses a glob-pattern, the pattern will be replaced with the matching files. So, you may inject parameters.
+* 🐦 use a flaw in the script language
 * ...
 </div><div>
 </div></div>
 
 <hr class="sep-both">
 
-## Environment variables
+## Environment variables 🌸
 
 <div class="row row-cols-md-2"><div>
 
@@ -31,7 +32,33 @@ When the target script is executed, the `bash` command is executed instead of `l
 
 <hr class="sep-both">
 
-## Bash scripts failures
+## Parameters injection  🎭
+
+<div class="row row-cols-md-2"><div>
+
+To execute any command with filename starting with `-`, you need to use `--` such as `rm -- -la` to remove the file `-la`.
+
+We can inject arguments when [glob-patterns](/operating-systems/linux/knowledge/index.md#glob-patterns) are replaced.
+</div><div>
+
+For instance, to inject `-la` into `ls`:
+
+```shell!
+$ touch -- -la
+$ ls
+-la
+$ ls * # * was replaced by -la
+total 8
+drwxr-xr-x 2 xxx xxx 4096 Apr 29 18:50 .
+drwxr-xr-x 9 xxx xxx 4096 Apr 29 18:50 ..
+-rw-r--r-- 1 xxx xxx    0 Apr 29 18:50 -la
+```
+
+</div></div>
+
+<hr class="sep-both">
+
+## Bash scripts failures 🐦
 
 <div class="row row-cols-md-2"><div>
 
