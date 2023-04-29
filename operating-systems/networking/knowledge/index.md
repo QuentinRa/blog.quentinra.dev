@@ -198,18 +198,6 @@ Stuff that I found, but never read/used yet.
 * VIP (virtual IP?)
 * LDAP
 
-VPN
-
-* Create a secure tunnel allowing devices on different networks to communicate.
-* PPP (internal VPNs using public/private key)
-* PPTP use PPP, Point-to-Point Tunneling Protocol, allow leave network
-* Between two companies/an employee and the company
-* remote-site VPN/site-to-site VPN
-* Client and server (VPN subnet and ACLs?)
-* openvpn
-  * `sudo apt install openvpn`
-  * `sudo openvpn user.ovpn` ([openvpn](https://openvpn.net/))
-
 Certification
 
 * 200-301 CCNA ([goffinet](https://cisco.goffinet.org/ccna/))
