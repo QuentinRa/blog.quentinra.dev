@@ -53,7 +53,7 @@ There are many kind of firewalls, that operate at multiple OSI layers.
 
 * [Network firewall](../topology/index.md#networking-devices)
 * Host-based firewall
-* Application firewall <small>(ex: a WAF on webservers against SQLi/XSS...)</small>
+* [Applicative firewall](firewalls/app.md)
 * Proxy firewall
 * Next-generation firewall (NGFW) <small>(combine application and network firewalls. Intrusion prevention, deep packet inspection, block malware...)</small>
 * Hybrid firewall
