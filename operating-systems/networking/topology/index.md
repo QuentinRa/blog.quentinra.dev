@@ -7,13 +7,13 @@ Network topology is the physical or logical layout of a network. It impacts perf
 There are a few different kind of networks:
 
 **Local Area Network** (LAN) 🏡: a network established within a limited area, such as your home, or a building. Devices are usually connected using Ethernet or WI-FI.
-</div><div>
 
 **Wide Area Network** (WAN) 🌍: a network made of multiple LAN networks.  What we refer to the Internet is the largest WAN network.
+</div><div>
 
 **Virtual Local Area Network** (VLAN) 🎮: a network of devices within a LAN, that are isolated from others devices. This segmentation is usually done to improve security and performances.
 
-➡️ See also: MAN, SAN, and CAN. 
+➡️ See also: MAN, SAN, CAN, GAN, and PAN. 
 </div></div>
 
 <hr class="sep-both">
@@ -27,7 +27,7 @@ Networking devices are interconnected by cables.
 **Layer 7: Application Layer** <small>(data)</small> 🧑
 
 * [Proxies](devices/proxy.md)
-* Load Balancers
+* [Load Balancers](devices/balancer.md)
 
 **Layer 6: Presentation Layer** <small>(data)</small> 🔒
 
@@ -39,7 +39,7 @@ Networking devices are interconnected by cables.
 
 **Layer 4: Transport Layer** <small>(segment/datagram)</small> 📫
 
-* Load Balancers
+* [Load Balancers](devices/balancer.md)
 * [Network Firewall](devices/firewall.md)
 </div><div>
 
@@ -93,6 +93,8 @@ Each device is connected to another one, forming a loop. Packets are only moving
 #### Mesh Topology 🦴
 
 Each device is connected to every other. It's efficient, and resilient, but costly and hard to maintain.
+
+➡️ See also the partially-meshed topology.
 
 #### Hybrid Topology 🤖
 
@@ -220,6 +222,7 @@ Stuff that I found, but never read/used yet.
 Topologies
 
 * Tree network topology
+* Daisy Chain topology
 * Software-Defined Networking (SDN)
 * Virtual Network Functions (VNFs)
 * [Request-response](https://en.wikipedia.org/wiki/Request%E2%80%93response)
@@ -230,7 +233,6 @@ Devices
 
 * Router on a stick
 * [Jump server](https://en.wikipedia.org/wiki/Jump_server)
-* Load Balancers: interface between clients and server, distributing the load among the available servers using algorithms such as round-robin <small>(in turn)</small>, or weighted <small>(is server busy?)</small>. There are periodic checks to ensure that servers are still online, and if there is no response, a server is considered down until proven otherwise.
 * [Bastion host](https://en.wikipedia.org/wiki/Bastion_host)
 
 Random

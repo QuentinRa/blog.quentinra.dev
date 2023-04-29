@@ -15,7 +15,7 @@ Some elements that are involved, shown in the simplified schema:
 
 * **MAC Address** 🏠: an IP address is not fixed. If a network device is connected to another network, they will have a new IP address. A MAC address is a **unique identifier** to find **who** is this device.
 
-* **Network interface** 📶: this is the logical representation of the network card used to connect to the network. Example: `eth0`.
+* **Network interface** 📶: this is the logical representation of the network card used to connect to the network. Example: `eth0`. This is what is connecting the device to the network.
 
 * **Protocol** 🔐: we define a common language for messages, so that both devices can understand each other. Example: `SSH`.
 
@@ -46,6 +46,8 @@ This is a 6-bytes-long address such as `ff:ff:ff:ff:ff:ff` with 12 hexadecimal c
 
 * The first 6 characters are identifying the vendor/manufacturer. This is called a [OUI](http://standards-oui.ieee.org/oui/oui.txt) <small>(Organizationally unique identifier)</small>.
 * The last 6 characters are the unique address
+
+Each [Network interface](#interfaces) has one.
 </div></div>
 
 <hr class="sep-both">
@@ -56,7 +58,7 @@ This is a 6-bytes-long address such as `ff:ff:ff:ff:ff:ff` with 12 hexadecimal c
 
 #### Interfaces
 
-A **network interface/adapter/card** is a physical component connecting your machine and the network. A **virtual network interface** is the virtual representation of the physical component 📶.
+A **network interface (NIC)/adapter/card** is a physical component connecting your machine and the network. A **virtual network interface** is the virtual representation of the physical component 📶.
 
 Common (virtual network) interfaces are
 
@@ -80,7 +82,7 @@ A port is a virtual messaging channel which is only associated with **one protoc
 
 🗺️ List of [TCP/UDP ports](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers) and their protocols.
 
-* 🤔 Protocols can be assigned to another port <small>(security)</small>
+* 🤔 Protocols can be assigned to another port <small>(for security...)</small>
 * ✅ Ports can be "open", "filtered" <small>(firewall)</small>, and "closed"
 * 🍸 A port can, according to the protocol, receive TCP, UDP, or TCP and UDP... messages.
 * 🔥 Port 0 is called wildcard port, and when used by a program, will automatically bind them to a non system port.
