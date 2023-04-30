@@ -4,7 +4,7 @@
 
 **Apache** is a thread-per-request server, which is steadily being replaced by event-driven servers such as Nginx or Node.js.
 
-```
+```ps
 $ sudo apt install apache2
 ```
 </div><div>
@@ -13,7 +13,7 @@ $ sudo apt install apache2
 
 * WAMP server <small>(Windows Apache MySQL PHP)</small> | [Notes](wamp.md) 🚀
 * LAMP server <small>(Linux Apache MySQL PHP)</small>
-* MAMP server <small>(macOS Apache MySQL PHP)</small>
+* MAMP server <small>(macOS Apache MySQL PHP)</small> | [Notes](mamp.md) ☠️
 * XAMPP <small>(Cross-platform Apache MySQL PHP Perl)</small>
 
 **Where to learn**?
@@ -29,7 +29,7 @@ $ sudo apt install apache2
 
 You can use `systemctl` to handle the `apache2` service.
 
-```
+```shell!
 $ sudo systemctl stop apache2
 $ sudo systemctl start apache2
 $ sudo systemctl reload apache2
@@ -41,7 +41,7 @@ $ systemctl status apache2
 
 Apache2 files are located in
 
-```
+```shell!
 $ cd /etc/apache2/conf-available/
 $ cd /etc/apache2/conf-enabled/ # copies
 $ cd /etc/apache2/sites-available/
@@ -52,9 +52,8 @@ $ tail /var/log/apache2/error.log
 
 Enable configs/virtual hosts
 
-```
-# create a conf for each website
-$ cp 000-default.conf example.com.conf
+```shell!
+$ cp 000-default.conf example.com.conf # one per website
 $ sudo a2ensite example.com.conf
 $ sudo a2dissite example.com.conf
 $ sudo apache2ctl configtest
@@ -63,7 +62,7 @@ $ sudo apache2ctl configtest
 
 When installing a PHP module, you can enable its configuration, and the specific functions of the module using apache without having to edit each `php.ini`.
 
-```
+```shell!
 $ sudo apt install php-mbstring
 $ sudo a2enconf php7.4-mbstring
 $ sudo a2enmod php7.4-mbstring
@@ -71,7 +70,7 @@ $ sudo a2enmod php7.4-mbstring
 
 Some modules
 
-```
+```shell!
 $ sudo a2enmod mod_headers
 $ sudo a2enmod headers
 $ sudo a2enmod ssl
@@ -80,7 +79,7 @@ $ sudo a2enmod rewrite
 
 Create a folder `xxx` for a website, in `/var/www/` <small>(usual folder than www-data can read/edit)</small> for a non-root user `yyy`.
 
-```
+```shell!
 $ sudo mkdir -p /var/www/xxx/
 $ sudo chown -R yyy:yyy /var/www/xxx/
 $ sudo chmod -R 755 /var/www/xxx/
@@ -88,8 +87,8 @@ $ sudo chmod -R 755 /var/www/xxx/
 
 Sometimes, you may have permissions problems. You need to investigate the problem, but one way to fix it is to give `www-data` the ownership over a directory <small>(allowing they to create/edit files)</small>.
 
-```
-sudo chown -R www-data:www-data folder/
+```shell!
+$ sudo chown -R www-data:www-data folder/
 ```
 </div></div>
 
@@ -107,7 +106,7 @@ First, you must indicate that your server supports HTTP2, or HTTP1.1 as fallback
 Protocols h2 http/1.1
 ```
 
-```
+```shell!
 $ sudo a2enmod http2
 $ sudo systemctl start apache2 # ❌ don't
 ```
@@ -115,7 +114,7 @@ $ sudo systemctl start apache2 # ❌ don't
 
 If you tried to start the server, you will see an error in `error.log`.
 
-```
+```shell!
 $ sudo systemctl stop apache2
 $ sudo apt install php7.1-fpm
 $ sudo a2enmod proxy_fcgi setenvif

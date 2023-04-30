@@ -602,7 +602,7 @@ if (isset($_SESSION['username'])) {}
 ✅ You should ensure that all values are here using `isset` and that they are not empty using `empty`. You should also do some server-side verification of the type <small>(ex: `ctype_digit(str)` for integers)</small> and the value:
 
 ```
-if (filter_var($email, FILTER_VALIDATE_EMAIL) != false){
+if (filter_var($email, FILTER_VALIDATE_EMAIL) !== false){
     // this should be a valid email
 } // otherwise, handle the error
 ```

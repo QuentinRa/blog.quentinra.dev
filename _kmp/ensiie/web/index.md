@@ -22,15 +22,7 @@ Sometimes you may have an **error 500** like everything was working, and now you
 
 ## Database
 
-First, the database can only be accessed from the inside, meaning you need to be on the server to access it. You can use a ``SSH Tunnel`` like in PHPStorm, but that won't be explained here.
-
-```php
-<?php
-$c = new PDO("pgsql:dbname=tpphp;host=pgsql2;port=5432", "tpphp", "tpphp");
-```
-
 * [Create a database account](parts/db-acc.md)
-* [Database errors](parts/db-err.md)
 * [Artificial keys](parts/db-ak.md)
 
 <hr class="sl">

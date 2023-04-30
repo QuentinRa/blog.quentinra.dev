@@ -15,10 +15,20 @@ To integrate a SQL database in a PHP application, you can use **PDO** to write c
 <div class="row row-cols-md-2"><div>
 
 ```php!
-$db = new PDO("mysql:host=nom_host;charset=UTF8;dbname=db_name", "user","password");
+$db = new PDO("dbms_name:host=hostname;charset=UTF8;dbname=db_name", "user","password");
 $res = $db->query("SELECT * FROM USER");
 $result = $res->fetchAll();
 ```
+
+➡️ DBMS names could be `mysql`, `pgsql`... 
+
+If you are having a hard time debugging errors, you can enable PDO exceptions by adding a 4th argument:
+
+```php!
+$pdo = new PDO(..., [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+```
+
+➡️ Edit: this is now the default mode since PHP 8.0.
 </div><div>
 
 Instead of `query(...)` use `prepare()` for prepared statements:
@@ -39,24 +49,42 @@ $stmt->execute();
 
 <div class="row row-cols-md-2"><div>
 
-You will use [mysqli](https://www.php.net/manual/en/book.mysqli.php) functions.
+You will use [mysqli](https://www.php.net/manual/en/book.mysqli.php) functions. To create a non-prepared statement:
 
 ```php!
 // connect
 $connexion = mysqli_connect("host","user","passwd","db_name");
-// make a request
+// execute and get result
 $res = mysqli_query($connexion, "SELECT * FROM USER");
+```
 
-// iterate results
-// you could use foreach
-while($row = mysqli_fetch_assoc($res)){
-    // one row per one row
-}
+OR to create a prepared statement, using `?` for parameters:
+
+```php!
+$stmt = mysqli_prepare($connexion, "[...] WHERE user=? AND password=?;");
+// safely pass parameters
+mysqli_stmt_bind_param($stmt, "ss", array("some_username", "some_password"));
+// execute
+mysqli_stmt_execute($stmt);
+// get result
+$res = mysqli_stmt_get_result($stmt);
+```
+
+👉 The code is similar to the one for PDO. The second argument of bind_param is the type of each argument <small>(`s`=string)</small>.
+</div><div>
+
+To exploit the results:
+
+```
+// 1️⃣ if there is only one line
+$row = $res->fetch_assoc() ?? null;
+
+// 2️⃣ otherwise, iterate results
+while($row = mysqli_fetch_assoc($res)){}
 
 // close
 mysqli_close($connexion);
 ```
-</div><div>
 
 There are some functions you may use:
 
@@ -66,16 +94,4 @@ $id = mysqli_insert_id($connexion);
 $sql_request = addslashes($sql_request);
 $sql_request = mysqli_escape_string($connexion, $sql_request);
 ```
-
-Instead of `mysqli_query(...)` use `mysqli_prepare()` for prepared statements. Inside the query, use `?` for parameters.
-
-```php!
-$stmt = mysqli_prepare($connexion, "[...] WHERE user=? AND password=?;");
-// safely pass parameters
-mysqli_stmt_bind_param($stmt, "ss", array("some_username", "some_password"));
-mysqli_stmt_execute($stmt);
-$res = mysqli_stmt_get_result($stmt);
-```
-
-👉 The code is similar to the one for PDO. The second argument of bind_param is the type of each argument <small>(`s`=string)</small>.
 </div></div>
