@@ -260,7 +260,7 @@ CTFs are usually using the infamous `rockout.txt` for passwords  <small>(from a 
 
 #### Fast wordlist generation
 
-See also: [cook](https://github.com/glitchedgitz/cook) (0.6k ⭐).
+See also: [cook](https://github.com/glitchedgitz/cook) (0.6k ⭐) or [CeWL](https://github.com/digininja/CeWL) (1.4k ⭐).
 
 ```shell!
 $ echo {A..Z} | tr ' ' '\n' > AZ.lst

@@ -27,7 +27,7 @@ $ sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/
 
 <hr class="sep-both">
 
-## ⚡ Create a root bash
+## Create a root bash
 
 <div class="row row-cols-md-2 mt-3"><div>
 

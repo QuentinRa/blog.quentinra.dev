@@ -11,6 +11,8 @@ An excellent reference to exploit sudo: [SUDO_KILLER](https://github.com/TH3xACE
 [![picklerick](../../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
 [![linprivesc](../../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
 [![wgelctf](../../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
+![nibbles](../../../_badges/htb-p/nibbles.svg)
+![getsimplecms](../../../_badges/htb-p/getsimplecms.svg)
 
 <div class="row row-cols-md-2"><div>
 

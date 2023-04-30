@@ -1,5 +1,7 @@
 # Account discovery
 
+![nibbles](../../../_badges/htb-p/nibbles.svg)
+
 <div class="row row-cols-md-2"><div>
 
 Account discovery is a self-made name to categorize techniques to find users that have an account of the website.

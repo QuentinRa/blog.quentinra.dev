@@ -35,6 +35,8 @@ You can use automated tools to try to detect frameworks:
 
 #### Once a framework is detected
 
+![getsimplecms](../../../_badges/htb-p/getsimplecms.svg)
+
 * Try to find the version <small>(comments, check the dependencies, features...)</small>
 * Look for the login page / CMS panel (if any)
 * Look for common misconfiguration mistakes

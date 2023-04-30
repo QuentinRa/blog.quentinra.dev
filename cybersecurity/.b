@@ -19,5 +19,6 @@ Not sure it was added everywhere
 HTB tags were NOT added
 => Networking: https://academy.hackthebox.com/module/34/section/297
 => Red team:
+=> Red team: https://academy.hackthebox.com/module/77/section/721
 => Red team (mind): ttps://academy.hackthebox.com/module/9/section/45
 ---------

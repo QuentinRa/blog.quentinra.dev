@@ -85,7 +85,7 @@ Use a vulnerability in Windows. The exploit was created by the NSA and  stolen b
 **Theoretical** 🔨
 
 * [TryHackMe](https://tryhackme.com/) <small>(a.k.a. THM)</small>:  many free courses, enjoyable/gratifying
-* [academy.hackthebox.com](https://academy.hackthebox.com/catalogue): not many free courses, and you can't start many of them at the same time <small>(limited free currency)</small>
+* [academy.hackthebox.com](https://academy.hackthebox.com/catalogue): not many "free" courses, and they are mixing too many subjects in one course <small>(sort of MOOCs)</small>
 
 <br>
 
@@ -94,7 +94,7 @@ Use a vulnerability in Windows. The exploit was created by the NSA and  stolen b
 * [HackTheBox](https://hackthebox.com/) (HTB)
 * [root me](https://www.root-me.org/)
 * [TryHackMe](https://tryhackme.com/) (THM)
-* [OverTheWire](https://overthewire.org/wargames/)
+* [OverTheWire](https://overthewire.org/wargames/)/[UnderTheWire](https://underthewire.tech/wargames)
 * [vulnhub](https://www.vulnhub.com/)
 * [capturetheflag.withgoogle.com](https://capturetheflag.withgoogle.com/beginners-quest)
 * [List of CTFs websites](https://hacktoday.io/t/list-of-hacking-ctf-challenge-sites/1980)
@@ -252,6 +252,8 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [0xnirvana](https://0xnirvana.gitbook.io/writeups/)
 * [robertmuwanga](https://robertmuwanga.netlify.app/)
 * [niekdang](https://niekdang.wordpress.com/)
+* [0xdf](https://0xdf.gitlab.io/)
+* [highon.coffee](https://highon.coffee/)
 </div>
 
 </div>
