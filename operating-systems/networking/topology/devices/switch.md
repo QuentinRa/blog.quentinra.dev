@@ -7,6 +7,8 @@
 They connect physically multiple devices in a network. Switches are a smarter and widely used alternative to [Hubs](hubs.md).
 
 It handles delivery of packets while ensuring that they are received in the right order, and are not corrupted.
+
+➡️ See also the VLAN Trunking Protocol (VTP) and Spanning Tree Protocol (STP).
 </div><div>
 
 Switches can operate at

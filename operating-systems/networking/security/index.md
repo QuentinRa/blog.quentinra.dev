@@ -170,6 +170,9 @@ Stuff that I found, but never read/used yet.
 * [THM/networkservices2](https://tryhackme.com/room/networkservices2)
 * Isolate VLAN during attack
 * [Fork bomb](https://en.wikipedia.org/wiki/Fork_bomb)
+* workstation on their own network, host-firewall to prevent them for exchanging with each other (ideally)
+* Switch+Router on an Administration Network to avoid fake OSPF  advertisements?
+* Blind spoofing
 
 Access
 

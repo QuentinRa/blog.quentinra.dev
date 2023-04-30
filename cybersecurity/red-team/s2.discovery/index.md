@@ -126,6 +126,8 @@ Stuff that I found, but never read/used yet.
 * `sudo arp-scan -l -I eth0`
 * [clFrex](https://cifrex.org/)
 * find S3 Buckets `awscli` (https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html)
-* Use service version format to determine OS
+* OS fingerprinting
+  * Use service version format
+  * Use default TTL
 </div><div>
 </div></div>

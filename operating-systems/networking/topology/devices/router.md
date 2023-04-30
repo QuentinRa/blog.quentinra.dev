@@ -13,6 +13,7 @@ It routes packets, meaning, it selects the best path to send traffic. This choic
 
 * 💨 Open Shortest Path First (OSPF)
 * ☠️ Routing Information Protocol (RIP)
+* 🌿 Border Gateway Protocol (BGP)
 * ...
 
 These algorithms are using information such as the shortest number of devices to reach the target (hops), the reliability of the path <small>(are packet often lost?)</small>, the network speed <small>(fibre?)</small>...

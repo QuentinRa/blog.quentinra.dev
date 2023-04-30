@@ -208,11 +208,23 @@ Network segmentation
 
 * VRFs (Virtual Routing and Forwarding)
 
+<details class="details-n">
+<summary>WI-FI</summary>
+
 Wi-Fi
 
 * sniffing
 * deauthentication packets
 * jamming (flood the network)
+* Wireless networks use radio frequency (RF) technology to transmit data between devices.
+* wireless adapter to convert data to RF
+* WiFi
+    * Service Set Identifier (SSID) and password
+    * connection request frame or association request (first when joining)
+* ask WAP before sending
+* Lightweight Extensible Authentication Protocol (LEAP) and Protected Extensible Authentication Protocol (PEAP) -> EAP-TLS
+* Terminal Access Controller Access-Control System Plus (TACACS+) server
+</details>
 
 <details class="details-n">
 <summary>Bluetooth</summary>
@@ -228,6 +240,19 @@ Wi-Fi
 * turn off bluetooth 
 * up-to-date 
 * bluetooth scanning tool to identify vulnerable devices do not require pairing
+</details>
+
+<details class="details-n">
+<summary>VoIP</summary>
+
+Voice over Internet Protocol (VoIP)
+
+* transmitting voice and multimedia communications
+* TCP/5060 and TCP/5061 (SIP, more used)
+    * OPTIONS to enumerate users
+* TCP/1720 (H.323 Protocol)
+* Cisco Unified Communications Manager, formerly known as Cisco CallManager
+    * SEPxxxx.cnf
 </details>
 </div><div>
 
