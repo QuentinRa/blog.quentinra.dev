@@ -280,8 +280,8 @@ https://tryhackme.com/room/retro (blaster...)
 * Reaver (💥) <small>(crack WPS, identify vulnerable wireless networks)</small>
 * Kismet (🏝) <small>(wireless network detection and analysis)</small>
 * MBSA (🏝) <small>(scan Windows-based computers for vulnerabilities)</small>
-* Cain and Abel (💥🔑✈️) <small>(password recovery tool, sniffing, MITM)</small>
-* Ettercap (💥🔑✈️) <small>(sniffing, MITM)</small>
+* Cain and Abel (💥🔑✈️) <small>(password recovery, sniffing, MITM, spoofing)</small>
+* Ettercap (💥🔑✈️) <small>(sniffing, MITM, spoofing)</small>
 * Greenbone (🏝) <small>(vulnerability management)</small>
 * AppDetectivePro (🏝🛡️) <small>(Database vulnerability scanners)</small>
 * Dbprotect (🏝🛡️) <small>(Database vulnerability scanners)</small>
@@ -303,6 +303,9 @@ https://tryhackme.com/room/retro (blaster...)
 * FavFreak (🏝) <small>(favicon recon)</small>
 * [waybackurls](https://github.com/tomnomnom/waybackurls) (🔎) <small>(wayback tool)</small>
 * [EyeWitness](https://github.com/FortyNorthSecurity/EyeWitness)
+* Chisel
+* ptunnel
+* sshuttle
 </div></div>
 
 <hr class="sep-both">

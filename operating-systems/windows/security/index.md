@@ -23,6 +23,7 @@ Stuff that I found, but never read/used yet.
 * applocker
 * Hiren's bootcd
 * [SASE](https://www.microsoft.com/en-us/security/business/security-101/what-is-sase)
+* sysmon
 </div><div>
 
 **Windows Update** (`control /name Microsoft.WindowsUpdate`)

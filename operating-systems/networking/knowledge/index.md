@@ -96,7 +96,7 @@ A port is a virtual messaging channel which is only associated with **one protoc
 
 #### OSI model
 
-The Open Systems Interconnection (**OSI**) model is a standardized representation of how we could send a message between two machines 🤝. It's made of 7 layers:
+The Open Systems Interconnection (**OSI** or ISO/OSI) model is a standardized representation of how we could send a message between two machines 🤝. It's made of 7 layers:
 
 * **Layer 7 - Application**: programs are exchanging data
 * **Layer 6 - Presentation**: standardize, encrypt, compress
@@ -178,7 +178,7 @@ Each protocol can be represented using a [Message Sequence Chart](https://en.wik
 
 * [ARP](../protocols/arp.md)
 
-**Layer 1: Physical Layer** <small>(stream)</small> 💺
+**Layer 1: Physical Layer** <small>(bits)</small> 💺
 
 * N/A
 

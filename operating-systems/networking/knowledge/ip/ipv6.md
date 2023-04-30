@@ -4,7 +4,12 @@
 
 <div class="row row-cols-md-2"><div>
 
-The Internet Protocol version 6 (**IPV6**) address is a **128-bit long address** such as `2002:6963:6961:2046:616c:636f:6e20:3c33`. It's 8 blocks of 16 bits, separated with `:`. Because it's somewhat long, there are a few rules to shorten it
+The Internet Protocol version 6 (**IPV6**) address is a **128-bit long address** such as `2002:6963:6961:2046:616c:636f:6e20:3c33`. It's 8 blocks of 16 bits, separated with `:`. 
+
+* The first 64 bits are called prefix <small>(network address)</small>
+* The last 64 bits are called interface identifier <small>(host address)</small>
+
+Because it's somewhat long, there are a few rules to shorten it
 
 * Any leading $0$ in a block can be removed <small>(`0014 -> 14`)</small>
 * A whole block of $0$ can be replaced with one $0$ <small>(`0000 -> 0`)</small>
