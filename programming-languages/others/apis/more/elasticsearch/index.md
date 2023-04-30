@@ -2,29 +2,51 @@
 
 <div class="row row-cols-md-2"><div>
 
-[Elasticsearch](https://github.com/elastic/elasticsearch) (63.6k ⭐)
+[Elasticsearch](https://github.com/elastic/elasticsearch) (63.6k ⭐) is a RESTful open-sourge search engine with an API and clients in many languages.
 
+You can install version 8.7 using [Docker](/operating-systems/others/virtualization/docker/index.md) as follows:
+
+```ps
+$ docker network create elastic
+$ docker pull docker.elastic.co/elasticsearch/elasticsearch:8.7.0
+$ docker run --name elasticsearch --net elastic -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -t elasticsearch:8.7.0
+# in another terminal
+$ docker pull docker.elastic.co/kibana/kibana:8.7.0
+$ docker run --name kibana --net elastic -p 5601:5601 docker.elastic.co/kibana/kibana:8.7.0
 ```
-PS> docker network create elastic
-PS> docker pull docker.elastic.co/elasticsearch/elasticsearch:8.7.0
-PS> # docker pull elasticsearch:8.7.0
-PS> docker run --name elasticsearch --net elastic -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -t elasticsearch:8.7.0
 
-PS> docker pull docker.elastic.co/kibana/kibana:8.7.0
-PS> docker run --name kibana --net elastic -p 5601:5601 docker.elastic.co/kibana/kibana:8.7.0
-http://localhost:5601/?code=xxxx
-
-PS> docker cp elasticsearch:/usr/share/elasticsearch/config/certs/http_ca.crt .
-```
+Note down the username/password and enrollment token. You can terminate both and start them again from docker desktop.
 </div><div>
 
-* [localhost:9200](http://localhost:9200)
-* Elasticsearch-PHP
-* `bin/elasticsearch-reset-password -u elastic`: reset password?
-* [Doc](https://www.elastic.co/guide/en/elasticsearch/reference/8.7/docker.html)
-* [DOC](https://github.com/elastic/elasticsearch-php)
+Navigate to the URL prompted by Kibana: `http://localhost:5601/?code=xxxx` or `http://localhost:5601/` afterward. You can log in from there, and access elasticsearch dashboard.
 
-```php
+**API notes**
+
+Elasticsearch will ask you to [index](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-index_.html) the searchable documents first. Once you did, you will be able to [search](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-search.html) for them.
+</div></div>
+
+<hr class="sep-both">
+
+## Elasticsearch in PHP
+
+<div class="row row-cols-md-2"><div>
+
+After setting up elasticsearch, you need to install [elasticsearch-php](https://github.com/elastic/elasticsearch-php):
+
+```ps
+$ composer require elasticsearch/elasticsearch
+```
+
+You can obtain the certificate using:
+
+```ps
+# output "http_ca.crt" in the current directory
+$ docker cp elasticsearch:/usr/share/elasticsearch/config/certs/http_ca.crt .
+```
+
+The starter code would look like this:
+
+```php!
 $client = ClientBuilder::create()
     ->setHosts(['https://localhost:9200'])
     ->setBasicAuthentication('elastic', 'password here')
@@ -34,5 +56,39 @@ $client = ClientBuilder::create()
 // version
 $response = $client->info();
 echo $response['version']['number'];
+```
+</div><div>
+
+You can index a document as follows. The `id` is optional, while both the `index` and the `body` are up to you, and it can be JSON too.
+
+```php!
+$client->index([
+    'id'=>'some_id_here',
+    'index'=>'some_index_here',
+    'body'=> [
+        "xxx" => "I want to say 'Hello, World'!"
+    ],
+]);
+```
+
+To search something, you can use `query.match` with `xxx` a key from the user-defined `body`.
+
+```php
+$params = [
+    'index' => 'same_index_as_before',
+    'query' => [
+        'match' => [
+            'xxx' => 'hello world'
+        ]
+    ]
+];
+$response = $client->search($params);
+
+echo "<pre>";
+printf("Total docs: %d\n", $response['hits']['total']['value']);
+printf("Max score : %.4f\n", $response['hits']['max_score']);
+printf("Took      : %d ms\n", $response['took']);
+print_r($response['hits']['hits']); // documents
+echo "</pre>";
 ```
 </div></div>
