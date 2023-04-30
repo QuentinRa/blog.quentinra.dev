@@ -4,7 +4,7 @@
 
 This section gather commands that are used quite used in networking. It doesn't include commands for each protocol, such as `ftp` or `ssh`.
 
-➡️ See [Protocols](../knowledge/index.md#protocols)
+➡️ See [Protocols](../_knowledge/index.md#protocols)
 </div><div>
 
 Special shortcuts

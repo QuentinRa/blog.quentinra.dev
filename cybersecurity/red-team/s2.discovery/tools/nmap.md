@@ -31,14 +31,14 @@ nmap <small>([nmap book](https://nmap.org/book/), [GitHub](https://github.com/nm
 ➡️ There is a graphical version called [ZenMap](https://nmap.org/zenmap/).
 </div><div>
 
-According to nmap, a [port](/operating-systems/networking/knowledge/index.md#ports) can be 
+According to nmap, a [port](/operating-systems/networking/_knowledge/index.md#ports) can be 
 
 * `open`: can be reached
 * `filtered`: no response, usually meaning there is a firewall
 * `unfiltered`: nmap can't determine if the port is open, or filtered
 * `closed`: cannot be reached
 
-Once you found a port, refer to the [protocols](/operating-systems/networking/knowledge/index.md#protocols) section to find more about each protocols and its vulnerabilities.
+Once you found a port, refer to the [protocols](/operating-systems/networking/_knowledge/index.md#protocols) section to find more about each protocols and its vulnerabilities.
 </div></div>
 
 <hr class="sep-both">
@@ -233,7 +233,7 @@ $ nmap -sL -n 192.168.0/29 [...]
 
 <div class="row row-cols-md-2"><div>
 
-nmap can try to guess the [protocols](/operating-systems/networking/knowledge/index.md#protocols) and service running on a port, along with its version. If a service has been secured, then it may not leak much information <small>(i.g. the version may be hidden...)</small>.
+nmap can try to guess the [protocols](/operating-systems/networking/_knowledge/index.md#protocols) and service running on a port, along with its version. If a service has been secured, then it may not leak much information <small>(i.g. the version may be hidden...)</small>.
 
 * **Service and versions**: guess the service and version used by an open port <small>(ex: 80 $\to$ Apache x.xx.xx)</small>. May expose the OS too.
 
