@@ -429,9 +429,15 @@ $ nmap IP --script "*brute*" --script-args userdb=users.lst,passdb=pass.lst
 
 ```ps
 $ nmap [...] --script=banner
-$ nmap [...] --script=http-server-header.nse -p80,443
+$ nmap [...] --script=http-server-header.nse
 ```
 </div><div>
+
+#### Forced browsing
+
+```ps
+$ nmap [...] --script=http-enum
+```
 </div></div>
 
 <hr class="sep-both">

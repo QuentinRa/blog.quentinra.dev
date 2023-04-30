@@ -61,7 +61,7 @@ There are many **automated scripts** that will investigate usual places, service
 * [traitor](https://github.com/liamg/traitor)  <small>(5.5k ⭐, go script, 👻)</small>
 * [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) a.k.a. LSE <small>(2.7k ⭐n shell script)</small>
 * [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) <small>(1.2k ⭐, python script)</small>
-* [pwncat-cs](https://github.com/calebstewart/pwncat) <small>(2.0k ⭐, python script, reverse shell, 👻)</small>
+* [pwncat-cs](/cybersecurity/red-team/s3.exploitation/shell/pwncat.md) <small>(2.0k ⭐, reverse shell with escalation suggester)</small>
 </div></div>
 
 <hr class="sep-both">

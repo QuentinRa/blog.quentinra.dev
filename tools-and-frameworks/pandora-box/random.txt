@@ -17,7 +17,7 @@ https://gamequitters.com/
 
 motion leap
 MidJourney
-https://github.com/flameshot-org/flameshot
+https://github.com/flameshot-org/flameshot + https://flameshot.org/
 
 --- Record
 
