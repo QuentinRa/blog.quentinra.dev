@@ -1,15 +1,7 @@
 # JavaFX
 
-[Go back](../../_old#graphical-interfaces)
-
-JavaFx is a graphic library in Java. This is way better than SWING because you can use `.fxml` files to create the view and that makes your code way cleaner.
-
-I started learning JavaFX with a [school project](../../../special/ilo/tchat/index.md). After that, I practiced a lot on a [game launcher eden](https://github.com/lgs-games/eden).
-Here is the [official tutorial to install JavaFX](https://openjfx.io/openjfx-docs/) but you may check my school project if you have a problem.
-
-<hr class="sl">
-
-## .fxml
+* School project
+* [eden](https://github.com/lgs-games/eden).
 
 The best way to make interfaces would be to use .fxml files. 
 Install [Scene builder](https://gluonhq.com/products/scene-builder/), a software with a graphical interface to create your fxml.

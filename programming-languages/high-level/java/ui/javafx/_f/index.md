@@ -1,20 +1,5 @@
 # TP TCHAT
 
-[Go back](..)
-
-This is the last job you will have to make. You will have to answer questions, then wait. When JavaFX is introduced, you'll get the second part, which is mainly made of coding an interface (FXML) and writing Controller.java. If you have some knowledge about Java, you might make it in 8 to 12 hours.
-
-First, the TP is in two parts
-
-* simply answer the questions (but **don't code any todo**)
-* then wait for the JavaFX project, and code it. When you will have to test with a server, run the server from the previous TP (nothing to do aside from running) and that's it.
-
-Materials
-
-* [Source Part1](https://github.com/memorize-code/memorize-references/raw/main/special/ilo/tchat/TPChat.zip)
-* [Source Part2](https://github.com/memorize-code/memorize-references/raw/main/special/ilo/tchat/ChatClientJavaFX.zip)
-* just so you know, in 2021, the ClientFrame.fxml file leaked during the FIPA classes. Legends are saying that you could find it, somewhere, though I don't know where?
-
 <hr class="sr">
 
 ## Pick your IDE
