@@ -1,16 +1,6 @@
 # TP TCHAT
 
-<hr class="sr">
-
-## Pick your IDE
-
-I highly recommend using **IntelliJ** (easy to learn) for this one, since that's maybe your first time with JavaFX and IntelliJ has great support for JavaFX. You can solve problems like `Can't load FXML` in less than 30 seconds.
-
-* [Eclipse Setup](ide/eclipse.md)
 * [IntelliJ IDEA Setup](ide/idea.md)
-* [VSCode Setup](ide/vsc.md)
-
-<hr class="sl">
 
 ## Before starting, Some errors
 
