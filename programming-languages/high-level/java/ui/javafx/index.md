@@ -4,13 +4,12 @@
 
 [JavaFX](https://openjfx.io/) is an open-source java library to design graphical interfaces.
 
+JavaFX views are stored `.fxml` files usually created using [Scene Builder](https://gluonhq.com/products/scene-builder/) 🛝 which is a `WYSIWYG` editor <small>(What You See Is What You Get)</small>.
+
 * [Official installation instructions](https://openjfx.io/openjfx-docs/) 🚀
 * [Official Javadoc](https://openjfx.io/javadoc/20/) 🌿
-
-JavaFX views are stored `.fxml` files usually created using [Scene Builder](https://gluonhq.com/products/scene-builder/) which is a `WYSIWYG` editor <small>(What You See Is What You Get)</small>.
+* [Install JavaFX and Scene Builder](_sub/install.md) <small>(my notes)</small>
 </div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">
