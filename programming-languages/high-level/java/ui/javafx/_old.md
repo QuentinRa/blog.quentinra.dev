@@ -54,53 +54,7 @@ If you put an image and a text inside a label, you can
 
 ## Creating a Controller
 
-Each fxml file can have one controller. This is a class that will store the variable declared with an ID and the event listener functions that will be called when an event is fired if you need ones. For instance, an event would be click somewhere in the view.
-
-First, create a Java class
-
-```java
-package com.lgs.eden.application;
-
-public class WindowController {}
-```
-
-Then, in SceneBuilder, in the bottom-left corner, click on controller and add it
-
-```none
-com.lgs.eden.application.WindowController
-```
-
-You may now add your attributes and your functions
-
-```java
-package com.lgs.eden.application;
-
-import javafx.fxml.FXML;
-import javafx.event.ActionEvent;
-import javafx.scene.layout.BorderPane;
-
-public class WindowController {
-
-    @FXML // title + minimize + close
-    private BorderPane topPane;
-    
-    public void init(){
-        // you can only use JavaFX after the constructor
-        // has been called so you may use a method like this
-        // one do some stuff    
-    }
-    
-    @FXML
-    private void onEventName(ActionEvent actionEvent) {}
-```
-
-* for the attribute topPane, it means that I put in my fxml an id "topPane" to a BorderPane.
-* I can use the function "onEventName" (change the name according to what the function do) in my fxml
-
 Example: on a button, in code section. To add a function executed when the button is clicked, I would write `onEventName` in `onAction`.
-
-* Note: We are adding `@FXML` because the attribute/method is private. If that's not the case, then you don't need it. 
-* Note: You may remove the event method argument if you are not planning to use it.
 
 <hr class="sr">
 

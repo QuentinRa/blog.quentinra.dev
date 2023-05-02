@@ -42,7 +42,7 @@ FXML files are [XML](/programming-languages/others/data/xml.md) files with a syn
 ...
 </div><div>
 
-...fx:controller="XXXController"...
+...
 </div></div>
 
 <hr class="sep-both">
@@ -65,6 +65,52 @@ There are **layout managers** to organize components within the screen, such as:
 </div><div>
 
 ...
+</div></div>
+
+<hr class="sep-both">
+
+## Controllers
+
+<div class="row row-cols-md-2"><div>
+
+Each [FXML](#fxml) file can have up to one controller. A controller is a class that can link a view with the code. We can:
+
+* 📚 Manipulate a view from the code
+* 🎉 Handle events
+
+You have to add the `fx:controller` to the root element in the FXML. You can do it from the bottom-left corner of SceneBuilder.
+
+```xml!
+<XXX ... fx:controller="xxx.XXXController" ...>
+```
+
+➡️ In the example above, `xxx.XXXController` means the class `XXXController` in the package `xxx`.
+
+...
+</div><div>
+
+```java
+package xxx;
+
+import javafx.fxml.FXML;
+import javafx.event.ActionEvent;
+import javafx.scene.layout.BorderPane;
+
+public class XXXController {
+    @FXML
+    private BorderPane xxx;
+    
+    public XXXController() {} // xxx is null
+    public void init() {} // xxx won't be null
+    
+    @FXML
+    private void onEventName(ActionEvent actionEvent) {}
+}
+```
+
+➡️ `@FXML` is only required if the member is `private`.
+
+➡️ `ActionEvent actionEvent` can be removed if unused.
 </div></div>
 
 <hr class="sep-both">
