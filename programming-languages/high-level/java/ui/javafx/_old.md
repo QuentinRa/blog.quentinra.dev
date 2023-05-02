@@ -3,18 +3,6 @@
 * School project
 * [eden](https://github.com/lgs-games/eden).
 
-The best way to make interfaces would be to use .fxml files. 
-Install [Scene builder](https://gluonhq.com/products/scene-builder/), a software with a graphical interface to create your fxml.
-
-Like in swing, you will have **layout managers** to group components
-
-* `BorderPane`: screen split in NORTH, SOUTH, EAST, WEST, CENTER
-* `FlowPane`: each component takes its preferred size
-* `HBox`: add components horizontally
-* `VBox`: add components vertically
-* `GridPane`: a table (with cells, rows, and columns)
-* ...
-
 Simply drag and drop them, either in the **hierarchy** or in the **preview** tab. Then you can look and add components inside.
 
 You may directly edit the properties of a components by clicking on it then inspecting them in the **inspector tab**.
