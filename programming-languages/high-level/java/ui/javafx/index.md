@@ -10,6 +10,14 @@ JavaFX views are stored `.fxml` files usually created using [Scene Builder](http
 * [Official Javadoc](https://openjfx.io/javadoc/20/) 🌿
 * [My notes to install JavaFX and Scene Builder](_sub/install.md)
 </div><div>
+
+**Common errors** 🔥:
+
+* `Graphics pipeline error`: you are missing OS-specific files. For instance, `javafx-base-xx-win.jar` on Windows.
+
+* `JavaFX runtime component missing`: you are missing a vm option, refer to `--module-path` and `--add-modules`.
+
+* `Can't load FXML error`: the controller do not fit your FXML <small>(duplicate IDs, mismatched type...)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -25,8 +33,8 @@ JavaFX views are stored `.fxml` files usually created using [Scene Builder](http
 
 1. **Library** 📚: a searchable list of [components](#components). You can drag and drop then inside "2" or "4".
 2. **Hierarchy** 🗃️: the tree representation of your XML. You can rename/move/duplicate/delete components from there.
-3. **Controller** 🚸: you can bind a [controller](#controllers) here
-4. **Scene** 🖍️: you can preview your interface here. You can move components within the interface too.
+3. **Controller** 🚸: you can bind a [controller](#controller) here
+4. **Scene** 🖍️: you can preview your interface here. You can move components within the interface from here too.
 5. **Inspector** 👮‍♀️: when selecting a component <small>(in "2" or "4")</small>, you will be able to edit its properties here. <small>(ex: change the background color)</small>
 6. **MenuBar** 📂: the `Preview` menu is quite handy
 
@@ -34,7 +42,7 @@ The inspector is subdivided in 3 sections:
 
 * **Properties**: set a value/text, check/uncheck, show/hide, css...
 * **Layout**: to set margins, padding, size, alignment...
-* **Code**: to add a `fxid` or link a method from a [controller](#controllers)
+* **Code**: to add a `fxid` or link a method from a [controller](#controller)
 </div></div>
 
 <hr class="sep-both">
@@ -77,59 +85,76 @@ There are **layout** to organize components within the screen, such as:
 
 Components can be layout managers or **views**. It means you can put a layout inside a layout, or a view otherwise. Some views include:
 
-* `XXX`:
-* `XXX`:
-* `XXX`:
-* `XXX`:
-* `XXX`:
+* `Label`: a text
+* `ImageView`: an image
+* `Button`: a button
+* `TextField`/`PasswordField`: input fields
 * `TextFlow`: a group of Labels. Used to show a text with some labels having different size/colors/...
 * ...
 </div></div>
 
 <hr class="sep-both">
 
-## Controllers
+## Controller
 
 <div class="row row-cols-md-2"><div>
 
-Each [FXML](#fxml) file can have up to one controller. A controller is a class that can link a view with the code. We can:
-
-* 📚 Manipulate a view from the code
-* 🎉 Handle events
-
-You have to add the `fx:controller` to the root element in the FXML. You can do it from the bottom-left corner of SceneBuilder.
+Each [FXML](#fxml) file can have up to one controller. A controller is a class linking a [view](#components) with the code. Add `fx:controller` to the root element of the FXML, either manually or using [SceneBuilder](#scenebuilder).
 
 ```xml!
 <XXX ... fx:controller="xxx.XXXController" ...>
 ```
 
-➡️ In the example above, `xxx.XXXController` means the class `XXXController` in the package `xxx`.
-
-...
-</div><div>
-
 ```java
 package xxx;
 
-import javafx.fxml.FXML;
-import javafx.event.ActionEvent;
-import javafx.scene.layout.BorderPane;
-
 public class XXXController {
-    @FXML
-    private BorderPane xxx;
-    
-    public XXXController() {} // xxx is null
-    public void init() {} // xxx won't be null
-    
-    @FXML
-    private void onEventName(ActionEvent actionEvent) {}
 }
 ```
 
-➡️ `@FXML` is only required if the member is `private`.
+<br>
 
-➡️ `ActionEvent actionEvent` can be removed if unused.
+#### Calling a method when an event occurs 🎉
+
+First, declare the method in your controller:
+
+```java
+// all 3 are the SAME
+@FXML private void onEventName(ActionEvent actionEvent) {}
+@FXML private void onEventName() {}
+public void onEventName() {}
+```
+
+Inside SceneBuilder, navigate to <kbd>Inspector > Code</kbd>. You can make a event such as `onAction` <small>(click)</small> call a method <small>(e.g. onEventName)</small>.
+
+</div><div>
+
+#### Access a view from the code 📚
+
+We may have to access a component from the code. For instance, to change a Label when the user clicks on a button. Navigate to the `Code` section of the `Inspector`. Give an ID to the target.
+
+```xml!
+<Label fx:id="xxx" ... />
+```
+
+Inside the controller, add an attribute matching the given ID:
+
+```java
+// both are the same
+@FXML private BorderPane xxx;
+public BorderPane xxx;
+```
+
+Then, inside every method **aside from the constructor**, your FXML attributes will be initialized with the associated component.
+
+We usually add a method called `init` for post-JavaFX initializations:
+
+```java
+public class XXXController {    
+    public XXXController() {} // xxx is null
+    public void init() {} // xxx won't be null
+}
+```
 </div></div>
 
 <hr class="sep-both">
@@ -180,7 +205,7 @@ Parent root = loader.load();
 
 #### Load Controller
 
-If you associated a [controller](#controllers) to the FXML. You can get it back and call the `init` method <small>(or whatever method you defined)</small> using:
+If you associated a [controller](#controller) to the FXML. You can get it back and call the `init` method <small>(or whatever method you defined)</small> using:
 
 ```
 XXXController controller = loader.getController();
@@ -200,6 +225,16 @@ Drag-and-Drop an image inside a Button/Label/... Select the label, and in the in
 
 * Use `Graphic Text Gap` to add gab between the image and the text
 * Use `Content Display` to move the image around. You can select `GRAPHIC_ONLY` or `TEXT_ONLY` to only show one of them.
+
+<br>
+
+#### Horizontal spacing
+
+You can manually edit the FXML and add this between two views:
+
+```xml!
+<HBox HBox.hgrow="ALWAYS" />
+```
 </div><div>
 
 ...
@@ -217,8 +252,6 @@ Stuff that I found, but never read/used yet.
 * note vscode
 * School project
 * [eden](https://github.com/lgs-games/eden)
-
-Example: on a button, in code section. To add a function executed when the button is clicked, I would write `onEventName` in `onAction`.
 </div><div>
 
 <details class="details-n">
