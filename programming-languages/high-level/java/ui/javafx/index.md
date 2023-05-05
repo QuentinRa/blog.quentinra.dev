@@ -138,10 +138,54 @@ public class XXXController {
 
 <div class="row row-cols-md-2"><div>
 
-...
+JavaFX Main class must extend `Application`. This code below create a `Scene` with a Label showing `Hello, World!`.
+
+```java
+import javafx.application.Application;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.stage.Stage;
+
+public class MainUI extends Application {
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+    @Override
+    public void start(Stage primaryStage) {
+        Parent root = new Label("Hello, World!");
+        Scene scene = new Scene(root, 800, 600);
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+}
+
+```
 </div><div>
 
-...
+#### Load FXML
+
+Instead of creating `root` from the code, we usually load a FXML. This code may raise an `IOException` that must be handled!
+
+```java
+// import javafx.fxml.FXMLLoader;
+// import java.net.URL;
+URL resource = MainUI.class.getResource("/main.fxml");
+FXMLLoader loader = new FXMLLoader(resource);
+Parent root = loader.load();
+```
+
+<br>
+
+#### Load Controller
+
+If you associated a [controller](#controllers) to the FXML. You can get it back and call the `init` method <small>(or whatever method you defined)</small> using:
+
+```
+XXXController controller = loader.getController();
+controller.init(primaryStage);
+```
 </div></div>
 
 <hr class="sep-both">
@@ -169,9 +213,12 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [old](_old.md)
 * [old ENS](_f/index.md)
 * note vscode
+* School project
+* [eden](https://github.com/lgs-games/eden)
+
+Example: on a button, in code section. To add a function executed when the button is clicked, I would write `onEventName` in `onAction`.
 </div><div>
 
 <details class="details-n">
