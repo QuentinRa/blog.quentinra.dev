@@ -32,8 +32,8 @@ JavaFX views are stored `.fxml` files usually created using [Scene Builder](http
 
 The inspector is subdivided in 3 sections:
 
-* **Properties**: set a value/text, check/uncheck, show/hide
-* **Layout**: to set margins, padding, size, alignment
+* **Properties**: set a value/text, check/uncheck, show/hide, css...
+* **Layout**: to set margins, padding, size, alignment...
 * **Code**: to add a `fxid` or link a method from a [controller](#controllers)
 </div></div>
 
@@ -82,7 +82,7 @@ Components can be layout managers or **views**. It means you can put a layout in
 * `XXX`:
 * `XXX`:
 * `XXX`:
-* `XXX`:
+* `TextFlow`: a group of Labels. Used to show a text with some labels having different size/colors/...
 * ...
 </div></div>
 
@@ -146,6 +146,23 @@ public class XXXController {
 
 <hr class="sep-both">
 
+## Style 🍔
+
+<div class="row row-cols-md-2"><div>
+
+#### Icon next to a text
+
+Drag-and-Drop an image inside a Button/Label/... Select the label, and in the inspector, navigate to Properties:
+
+* Use `Graphic Text Gap` to add gab between the image and the text
+* Use `Content Display` to move the image around. You can select `GRAPHIC_ONLY` or `TEXT_ONLY` to only show one of them.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -157,5 +174,21 @@ Stuff that I found, but never read/used yet.
 * note vscode
 </div><div>
 
+<details class="details-n">
+<summary>Localization</summary>
 
+Right after the input field "Text" in properties, on a same line, you can make a little cogs appear. This cogs allow you to make localized strings, that you will use later to make your application in many languages.
+
+* `%key` (enter a key)
+* create a file `i18n_en.properties`
+* add `key=the translation here for key`
+* you may create as many files as you want
+* in your code, you will have to add this line (see next part)
+
+```java
+FXMLLoader loader = new FXMLLoader(resource);
+loader.setResources(ResourceBundle.getBundle("i18n", locale));
+// ...
+```
+</details>
 </div></div>
