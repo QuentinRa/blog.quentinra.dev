@@ -1,8 +1,6 @@
 # Java programming
 
 * [history](beginner/history.md)
-* [Types](beginner/types.md)
-* [Arrays](beginner/arrays.md)
 * [Exceptions](beginner/exceptions.md)
 * [Overload](beginner/overload.md) (Surcharge in French)
 * [Inheritance](beginner/inheritance.md)

@@ -412,13 +412,37 @@ class Object {
 
 #### String
 
-...
+```java
+String s = "some text";
+int xxx = s.length();           // number of characters
+String xxx = s.toLowerCase();   // s.toUpperCase()
+String xxx = s.trim();          // remove leading/trailing \s
+boolean xxx = s.isEmpty();      // s.equals("")
+boolean xxx = s.isBlank();      // since JDK 11
+boolean xxx = s.equals(xxx);    // same as ==
+// Printf-like formatting
+System.out.println("%s: %d".formatted("string", 0));
+System.out.printf(("%s: %d") + "%n", "string", 0); // same
+```
+
+➡️ Since JDK 13, you can use `""" """` for multilines strings.
 
 <br>
 
 #### Arrays
 
-...
+An array is a fixed-size list of values. Empty cells are filled with the default value for primitive types <small>(false, 0...)</small> or `null` for objects.
+
+```java
+int[] tab = {1,2,3,4};
+tab = new int[4];
+tab = new int[]{1,2,3,4};
+
+int one = tab[0];
+int length = tab.length;
+```
+
+If you try to use an index that does not exist, you will get an Exception: `IndexOutOfBoundsException`.
 </div></div>
 
 <hr class="sep-both">
