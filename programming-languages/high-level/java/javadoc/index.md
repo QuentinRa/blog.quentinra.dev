@@ -103,3 +103,23 @@ To comment a generic class/method parameter, you use `@param` too:
 public class GenericClass<T> {}
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## package-info.java
+
+<div class="row row-cols-md-2"><div>
+
+A `package-info.java` is a file used to document a [package](../_general/index.md#packages).
+
+```java
+/**
+* Some Javadoc here
+*
+* @author xxx
+* @version yyy
+*/
+package com.lgs.memorize;
+```
+</div><div>
+</div></div>

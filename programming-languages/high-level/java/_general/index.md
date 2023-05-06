@@ -219,6 +219,25 @@ public class ClassNameHere {}
 
 <br>
 
+#### Packages
+
+To make things cleaner, we usually use packages to group classes. A package is roughly equal to a folder.
+
+```java
+package com.lgs.memorize; // ./com/lgs/memorize/Test.java
+
+public class Test {}
+```
+
+Aside from bundled classes, every other must imported:
+
+```java
+import java.io.File;
+import java.io.*; // all classes in "java/io"
+import static java.io.File.createTempFile; // a static method
+```
+<br>
+
 #### Visibility
 
 Each class/attribute/method/... has a visibility modifier determining [who](/programming-languages/_paradigm/oo.md#access-control) can use a method/access an attribute/...
@@ -232,7 +251,7 @@ For instance, if something is private, only methods/attributes in the same class
 | package (**default**)   | +          | +            |     |     |
 | private   | +          |              |     |     |
 
-<br>
+</div><div>
 
 #### Attributes
 
@@ -245,7 +264,6 @@ public static final float PI = 3.14f;
 public String name;
 private final String country = "France";
 ```
-</div><div>
 
 <br>
 

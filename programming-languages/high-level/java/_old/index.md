@@ -2,7 +2,6 @@
 
 * [history](beginner/history.md)
 * [Types](beginner/types.md)
-* [Packages and import](beginner/packages.md)
 * [Object class](beginner/object.md)
 * [Arrays](beginner/arrays.md)
 * [Exceptions](beginner/exceptions.md)
