@@ -207,6 +207,55 @@ for (int e: new int[]{ 5, 6, 7 }) {
 
 <hr class="sep-both">
 
+## Classes and objects
+
+<div class="row row-cols-md-2"><div>
+
+Java [classes](/programming-languages/_paradigm/oo.md#classes-and-objects) usually have their own file. It's named after the class. A class name is in **upper camel case** by convention.
+
+```java
+public class ClassNameHere {}
+```
+
+#### Visibility
+
+Each class/attribute/method/... has a visibility modifier determining [who](/programming-languages/_paradigm/oo.md#access-control) can use a method/access an attribute/...
+
+For instance, if something is private, only methods/attributes in the same classes can access it.
+
+| modifier | same class | same package | inheritors | anyone else |
+|-----------|------------|--------------|-----|-----|
+| public    | +          | +            |  +  |  +  |
+| protected | +          | +            |  +  |     |
+| package (**default**)   | +          | +            |     |     |
+| private   | +          |              |     |     |
+</div><div>
+
+#### Attributes
+
+```java
+// Class
+public static final float PI = 3.14f;
+// Instance
+public String name;
+private final String country = "France";
+```
+
+<br>
+
+#### Methods
+
+```java
+// Class
+public static final float PI = 3.14f;
+// Instance
+public String name;
+private final String country = "France";
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -222,4 +271,10 @@ Stuff that I found, but never read/used yet.
 * concatenation operator
 * equals and == null
 </div><div>
+
+```java
+System.out.println("PI:"+Math.PI);
+```
+
+* **final**: means that the attribute is a constant
 </div></div>
