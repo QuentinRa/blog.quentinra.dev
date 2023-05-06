@@ -1,4 +1,4 @@
-## Streams
+# Streams
 
 [Go back](../index.md#advanced)
 

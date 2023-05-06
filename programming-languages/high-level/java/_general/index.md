@@ -323,6 +323,8 @@ public class Person {
 ```
 </div><div>
 
+#### Dot operator
+
 From an object, you can  call methods or access attributes <small>(according to the visibility of the member)</small> using the operator `.` (dot).
 
 ```java
@@ -347,6 +349,53 @@ There is no way to know when the garbage collector will destroy a variable, but 
 ```java
 johnDoe = null;
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Well-known types
+
+<div class="row row-cols-md-2"><div>
+
+#### Object
+
+Every class inherit from the class Object implicitly.
+
+```java
+class Object {
+    // compare two object
+    public boolean equals(Object obj);
+    
+    // equals => same hashcode
+    public int hashCode();
+    
+    // clone an object, not accessible by default
+    protected Object clone();
+    
+    // returns the object as a string
+    public String toString();
+    
+    // called before destroying object
+    protected void finalize();
+}
+```
+
+👉 `a.equals(b)` is the same as `a == b` by default, but subclasses can override equals. Use `==` with `null`, NOT `equals` <small>(null.equals(...) will fails)</small>.
+
+➡️ An IDE [can generate such methods](files/gen.md).
+
+💎 Use `Objects.equals(a, b)` to call `a.equals(b)` on a nullable object.
+</div><div>
+
+#### String
+
+...
+
+<br>
+
+#### Arrays
+
+...
 </div></div>
 
 <hr class="sep-both">
