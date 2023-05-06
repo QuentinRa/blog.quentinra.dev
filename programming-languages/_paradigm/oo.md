@@ -40,14 +40,33 @@ class Person {
 }
 ```
 
-There are usually constructors to instantiate new object, which usually mean filling the attributes. Refer to [methods](#methods).
+#### Methods
+
+A class also has **methods** which are functions that can access attributes or other methods usually by using `this`/`self`/....
+
+```java
+class Person {
+    [...]
+    
+    public void changeName(String name) {
+        this.name = name; // set the attribute "name" to...
+    }
+}
+```
+
+➡️ In some languages, `this`/... is optional when implicit.
+</div><div>
+
+#### Constructors
+
+We are usually constructors to instantiate a new object, which usually means initializing the attributes. A constructor is a [method](#methods).
 
 ```java
 class Person {
     public String name;
     
     public Person(String name) {
-        this.name = name;
+        this.name = name; // init attribute "name"
     }
 }
 ```
@@ -59,28 +78,23 @@ Person johnDoe = new Person("John Doe");
 // johnDoe.name is equals to "John Doe"
 ```
 
-</div><div>
-
-#### Methods
-
-A class also has **methods** which are functions that can access attributes and other methods of the class usually using `this`/`self`/....
-
-```java
-class Person {
-    ...
-    
-    public void changeName(String name) {
-        this.name = name;
-    }
-}
-```
-
-➡️ In some languages, `this`/... is optional when implicit.
-
 #### Members
 
-Attributes and methods are usually called members. 
+Attributes and methods are usually called members. There are two categories of members: **instance members** and **class members**.
 
+The former is the usual members. The latter are members belonging to the class, meaning that 
+
+* every instance has the same value for an attribute
+
+```java
+public static final String DEFAULT_NAME = "John DOE"; // java
+```
+
+* we don't need a instance to access a member
+
+```java
+String defaultName = Person.DEFAULT_NAME;
+```
 </div></div>
 
 <hr class="sep-both">
