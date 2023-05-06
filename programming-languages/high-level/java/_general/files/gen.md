@@ -1,5 +1,7 @@
 # Object methods
 
+[Go back](../index.md#object)
+
 <div class="row row-cols-md-2"><div>
 
 #### XXX#equals
@@ -18,6 +20,34 @@ public boolean equals(Object o) {
     return ...;
 }
 ```
+
+#### XXX#clone
+
+```java
+@Override
+public Object clone() {
+    XXX xxx;
+    try {
+        xxx = (XXX) super.clone();
+        // you can do some changes here
+    } catch (CloneNotSupportedException e) {
+        xxx = new XXX(...);
+    }
+    return xxx;
+}
+```
+
+#### XXX#toString
+
+```java
+@Override
+public String toString() {
+    return "XXX{" +
+        "attr1='" + attr1 + '\'' +
+        '}';
+}
+```
+
 </div><div>
 
 #### XXX#hashCode

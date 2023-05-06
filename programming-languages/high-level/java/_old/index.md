@@ -2,7 +2,6 @@
 
 * [history](beginner/history.md)
 * [Types](beginner/types.md)
-* [Object class](beginner/object.md)
 * [Arrays](beginner/arrays.md)
 * [Exceptions](beginner/exceptions.md)
 * [Overload](beginner/overload.md) (Surcharge in French)

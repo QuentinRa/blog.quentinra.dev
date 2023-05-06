@@ -203,6 +203,29 @@ for (int e: new int[]{ 5, 6, 7 }) {
     // e=5 then e=6 then e=7
 }
 ```
+
+#### Branching - Instanceof
+
+Due to [Polymorphism](/programming-languages/_paradigm/oo.md#polymorphism), two objects may be stored in a variable of the same type, but have a different classes. You can check the class using:
+
+```java
+// java < 14
+Object value = Integer.valueOf(5);
+if (value instanceof Integer) {
+    Integer n = (Integer) value;
+    System.out.println("this is a number:"+n);
+}
+// java >= 14
+if (value instanceof Integer n){
+    System.out.println("this is a number:"+n);
+}
+```
+
+🔥 `instanceof` returns true is the class is the same as the given one, or a child class of the given one. A stricter approach only allowing the same class would be:
+
+```java
+if (a.getClass() == b.getClass()) { /* ... */ }
+```
 </div></div>
 
 <hr class="sep-both">
