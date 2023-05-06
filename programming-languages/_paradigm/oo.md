@@ -105,7 +105,7 @@ String defaultName = Person.DEFAULT_NAME;
 
 Classes, methods, attributes, and many other concepts have some form of access control commonly done using a visibility modifier.
 
-For instance, a language may have a modifier called `internal` only allowing some classes in the same "output file" to use this class. 
+For instance, **C#** has a modifier called `internal` only allowing some classes in the same "output file" <small>(assembly file)</small> to use this class. 
 
 ```cs!
 internal class XXX {} // same assembly only
@@ -114,13 +114,13 @@ internal class XXX {} // same assembly only
 
 Common modifiers are:
 
-* **Java**: `<none>` <small>(package-private)</small>, `public`, `protected`, `private`
+* **Java**: `private`, `protected`, `public`, `<none>` <small>(package-private)</small>
 * **C++**: `private`, `protected`, `public`
 * **PHP**: `private`, `protected`, `public`
 * **C#**: `private`, `protected`, `public`, `internal`
 * ...
 
-➡️ Python devs are using naming convention to determine the visibility, while in Ruby, modifiers are present but not enforced...
+➡️ Python devs are using naming conventions to determine the visibility, while in Ruby, modifiers are present but not enforced...
 </div></div>
 
 <hr class="sep-both">

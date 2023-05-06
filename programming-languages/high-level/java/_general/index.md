@@ -217,6 +217,8 @@ Java [classes](/programming-languages/_paradigm/oo.md#classes-and-objects) usual
 public class ClassNameHere {}
 ```
 
+<br>
+
 #### Visibility
 
 Each class/attribute/method/... has a visibility modifier determining [who](/programming-languages/_paradigm/oo.md#access-control) can use a method/access an attribute/...
@@ -229,9 +231,12 @@ For instance, if something is private, only methods/attributes in the same class
 | protected | +          | +            |  +  |     |
 | package (**default**)   | +          | +            |     |     |
 | private   | +          |              |     |     |
-</div><div>
+
+<br>
 
 #### Attributes
+
+As a reminder, [attributes](/programming-languages/_paradigm/oo.md) are used to store data.
 
 ```java
 // Class
@@ -240,18 +245,29 @@ public static final float PI = 3.14f;
 public String name;
 private final String country = "France";
 ```
+</div><div>
 
 <br>
 
 #### Methods
 
+From an instance method, you can access any class/instance member. For instance members, you can use `this` to explicitly reference the object calling a method <small>(i.g. for `a.b()`, inside `b()`, `this == a`)</small>
+
 ```java
-// Class
-public static final float PI = 3.14f;
 // Instance
-public String name;
-private final String country = "France";
+public void setName(String newName) {
+    this.name = newName;
+}
+
+public void resetName() {
+    setName("John Doe"); // "this." implicit
+}
+    
+// Class
+public static float xxx(float f) { return f; }
 ```
+
+➡️ Methods to access an attribute are usually starting with `get` such as `getName`. They are called **getters**. Methods to set an attribute are usually starting with `set` and are called **setters**.
 </div></div>
 
 <hr class="sep-both">
@@ -266,6 +282,18 @@ Stuff that I found, but never read/used yet.
 * java shell
 * const
 * object vs primitive
+
+<details class="details-n">
+<summary>Address 📬</summary>
+
+In Java, the notion of address doesn't exist. You are calling a method using a parameter
+
+* if it's a primitive type: then the value is passed
+* if it's an object: a reference is passed
+
+A reference is simply something that's referencing your object meaning that you can change the attributes/call methods on it, and the real object will be modified, but you can't "destroy"your object because that's simply a reference.
+</details>
+
 * control-flow methods
 * streams
 * concatenation operator
@@ -274,7 +302,14 @@ Stuff that I found, but never read/used yet.
 
 ```java
 System.out.println("PI:"+Math.PI);
+// explained later, constructor, creating an instance
+Person p = new Person();
+// setter
+p.setName("Jane Doe");
+p.resetName();
 ```
 
+
 * **final**: means that the attribute is a constant
+* final method
 </div></div>

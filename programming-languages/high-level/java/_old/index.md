@@ -1,7 +1,6 @@
 # Java programming
 
 * [history](beginner/history.md)
-* [Methods](structure/methods.md)
 * [Constructors](structure/constructors.md)
 * [Creating objects](structure/creation.md)
 * [Destroying objects](structure/destroy.md)
@@ -58,7 +57,6 @@ Here are some advanced concepts that you might use after mastering the beginner 
 
 Some new syntax-related stuff
 
-* [Javadoc](advanced/javadoc.md)
 * [Iceberg paradigm](advanced/icerberg.md)
 * [Annotations](advanced/annotations.md)
 * [Enumerations](advanced/enumerations.md)
