@@ -249,6 +249,47 @@ You can manually edit the FXML and add this between two views:
 
 <hr class="sep-both">
 
+## Localization
+
+<div class="row row-cols-md-2"><div>
+
+First, you will have to create a file for each language. For instance, `i18n_en.properties` for English, `i18n_fr.properties` for French...
+
+Every file has the same keys, but different values.
+
+```ini!
+# i18n_en.properties
+msg=Hello, World!
+# i18n_fr.properties
+msg=Bonjour, Monde!
+```
+
+In your [FXML](#fxml), you should replace hardcoded texts with `%key`.
+
+```xml!
+<Label text="%msg" />
+```
+</div><div>
+
+You can also do it inside [SceneBuilder](#scenebuilder). Hover the cog icon next to your text, select **Replaced with internationalized string** then enter `msg`:
+
+![cog icon](_images/cog_icon.png)
+
+#### Loading a Locale
+
+To load a FXML using texts from a language file, use:
+
+```java
+// import java.util.Locale;
+// import java.util.ResourceBundle;
+Locale english = new Locale("en"); // xxx_en
+ResourceBundle bundle = ResourceBundle.getBundle("i18n", english);
+loader.setResources(bundle);
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -256,24 +297,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * School project
+  * `fx:include`
 * [eden](https://github.com/lgs-games/eden)
 </div><div>
-
-<details class="details-n">
-<summary>Localization</summary>
-
-Right after the input field "Text" in properties, on a same line, you can make a little cogs appear. This cogs allow you to make localized strings, that you will use later to make your application in many languages.
-
-* `%key` (enter a key)
-* create a file `i18n_en.properties`
-* add `key=the translation here for key`
-* you may create as many files as you want
-* in your code, you will have to add this line (see next part)
-
-```java
-FXMLLoader loader = new FXMLLoader(resource);
-loader.setResources(ResourceBundle.getBundle("i18n", locale));
-// ...
-```
-</details>
 </div></div>
