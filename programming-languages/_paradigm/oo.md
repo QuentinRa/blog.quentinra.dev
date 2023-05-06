@@ -99,13 +99,36 @@ String defaultName = Person.DEFAULT_NAME;
 
 <hr class="sep-both">
 
+## Access control
+
+<div class="row row-cols-md-2"><div>
+
+Classes, methods, attributes, and many other concepts have some form of access control commonly done using a visibility modifier.
+
+For instance, a language may have a modifier called `internal` only allowing some classes in the same "output file" to use this class. 
+
+```cs!
+internal class XXX {} // same assembly only
+```
+</div><div>
+
+Common modifiers are:
+
+* **Java**: `<none>` <small>(package-private)</small>, `public`, `protected`, `private`
+* **C++**: `private`, `protected`, `public`
+* **PHP**: `private`, `protected`, `public`
+* **C#**: `private`, `protected`, `public`, `internal`
+* ...
+
+➡️ Python devs are using naming convention to determine the visibility, while in Ruby, modifiers are present but not enforced...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
-
-* visibility
 </div><div>
-
 </div></div>
