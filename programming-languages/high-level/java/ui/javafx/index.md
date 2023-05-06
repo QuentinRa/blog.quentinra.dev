@@ -110,6 +110,8 @@ Some commonly used **views** are:
 
 * `TextFlow`: a group of Labels. Used to show a text with some labels having different size/colors/...
 
+* [ListView](_sub/listview.md): display a list of items
+
 * ...
 </div></div>
 
