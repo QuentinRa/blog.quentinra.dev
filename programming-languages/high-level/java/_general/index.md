@@ -115,6 +115,24 @@ if (true || false) {}  // logical OR => true
 if (true && false) {}  // logical AND => false
 if (true ^ false) {}   // logical XOR => true
 ````
+
+<br>
+
+#### Final keyword
+
+This keyword is mainly used to create "constants", while it can also be used to limit inheritance.
+
+```java
+final int xxx = 5; // constant variable
+```
+
+➡️ A constant is a variable/attribute that cannot be reassigned again. For objects, we can STILL change their attributes <small>(e.g. setters still work)</small>.
+
+```java
+final Person person = new Person("xxx");
+person.setName("yyy"); // ✅ works, named changed
+person = null; // ❌ doesn't work
+```
 </div></div>
 
 <hr class="sep-both">
@@ -209,13 +227,13 @@ for (int e: new int[]{ 5, 6, 7 }) {
 Due to [Polymorphism](/programming-languages/_paradigm/oo.md#polymorphism), two objects may be stored in a variable of the same type, but have a different classes. You can check the class using:
 
 ```java
-// java < 14
 Object value = Integer.valueOf(5);
+// Before JDK 14
 if (value instanceof Integer) {
     Integer n = (Integer) value;
     System.out.println("this is a number:"+n);
 }
-// java >= 14
+// Since JDK 14
 if (value instanceof Integer n){
     System.out.println("this is a number:"+n);
 }
@@ -427,6 +445,8 @@ System.out.printf(("%s: %d") + "%n", "string", 0); // same
 
 ➡️ Since JDK 13, you can use `""" """` for multilines strings.
 
+🔥 Concatenation is done using `+` (plus): `"a" + "b"` gives us `"ab"`.
+
 <br>
 
 #### Arrays
@@ -457,6 +477,7 @@ Stuff that I found, but never read/used yet.
 * java shell
 * const
 * object vs primitive
+  * objects can be null
 
 <details class="details-n">
 <summary>Address 📬</summary>
@@ -472,33 +493,9 @@ A reference is simply something that's referencing your object meaning that you 
 * control-flow methods
 * streams
 * concatenation operator
-* equals and == null
-
-<details class="details-n">
-<summary>finalize</summary>
-
-Take note since some are still using it (🙄),  that when an object is destroyed (or about to be destroyed), the method `finalize` will be called on it (each class have this method).
-
-```java
-public class Person {
-    @Override
-    protected void finalize() throws Throwable {
-        super.finalize();
-
-        // some code before dying
-    }
-}
-```
-
-But do not use this: it's a **deprecated** (=it will be removed). According to the Javadoc
-
-> The finalization mechanism is inherently problematic. Finalization  can lead to performance issues, deadlocks, and hangs. Errors in finalizers can lead to resource leaks; there is no way to cancel finalization if it is no longer necessary; and no ordering is specified among calls to finalize methods of different objects. Furthermore, there are no guarantees regarding the timing of finalization. The finalize method might be called on a finalizable object only after an indefinite delay, if at all. Classes whose instances hold non-heap resources should provide a method to enable explicit release of those resources, and they should also implement AutoCloseable if appropriate. The ref.Cleaner and ref.PhantomReference provide more flexible and efficient ways to release resources when an object becomes unreachable.
-</details>
 </div><div>
 
-* **final**: means that the attribute is a constant
-* final method
-* objects can be null
+* final method/class
 * overloading constructors
 
 <details class="details-n">
