@@ -207,7 +207,7 @@ for (int e: new int[]{ 5, 6, 7 }) {
 
 <hr class="sep-both">
 
-## Classes and objects
+## Classes
 
 <div class="row row-cols-md-2"><div>
 
@@ -272,6 +272,67 @@ public static float xxx(float f) { return f; }
 
 <hr class="sep-both">
 
+## Instantiation
+
+<div class="row row-cols-md-2"><div>
+
+Classes are instantiated using the `new` keyword.
+
+```java
+Person johnDoe = new Person();
+Person janeDoe = new Person("Jane Doe", 25);
+Person janeDoeCopy = new Person(janeDoe);
+```
+
+This calls a special method in the class called **Constructor**. They have the name of the class, and no return type. You can have multiple of them. There is a **default parameterless constructor**, but it's removed when explicitly declaring a constructor.
+
+```java
+public class Person {
+    ...
+
+    // parameterless constructor
+    public Person() {
+        this("John Doe", 0); // call another
+    }
+    // valuated constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    // copy constructor
+    public Person(Person p) { this(p.name, p.age); }
+}
+```
+</div><div>
+
+From an object, you can  call methods or access attributes <small>(according to the visibility of the member)</small> using the operator `.` (dot).
+
+```java
+johnDoe.setName("Jane Doe");
+johnDoe.resetName();
+```
+
+For class members, this is the same, but with the name of the class:
+
+```java
+double pi = Math.PI;
+```
+
+<br>
+
+#### Garbage collector
+
+The **Garbage collector** is a process looking for unused variables <small>(meaning no more references)</small>, and destroying them, freeing up memory.
+
+There is no way to know when the garbage collector will destroy a variable, but setting a variable to `null` may speed up the process.
+
+```java
+johnDoe = null;
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -298,18 +359,51 @@ A reference is simply something that's referencing your object meaning that you 
 * streams
 * concatenation operator
 * equals and == null
-</div><div>
+
+<details class="details-n">
+<summary>finalize</summary>
+
+Take note since some are still using it (🙄),  that when an object is destroyed (or about to be destroyed), the method `finalize` will be called on it (each class have this method).
 
 ```java
-System.out.println("PI:"+Math.PI);
-// explained later, constructor, creating an instance
-Person p = new Person();
-// setter
-p.setName("Jane Doe");
-p.resetName();
+public class Person {
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+
+        // some code before dying
+    }
+}
 ```
 
+But do not use this: it's a **deprecated** (=it will be removed). According to the Javadoc
+
+> The finalization mechanism is inherently problematic. Finalization  can lead to performance issues, deadlocks, and hangs. Errors in finalizers can lead to resource leaks; there is no way to cancel finalization if it is no longer necessary; and no ordering is specified among calls to finalize methods of different objects. Furthermore, there are no guarantees regarding the timing of finalization. The finalize method might be called on a finalizable object only after an indefinite delay, if at all. Classes whose instances hold non-heap resources should provide a method to enable explicit release of those resources, and they should also implement AutoCloseable if appropriate. The ref.Cleaner and ref.PhantomReference provide more flexible and efficient ways to release resources when an object becomes unreachable.
+</details>
+</div><div>
 
 * **final**: means that the attribute is a constant
 * final method
+* objects can be null
+* overloading constructors
+
+<details class="details-n">
+<summary>static constructors</summary>
+
+You have a constructor for instances, but you also have a class constructor! They are not taking parameters since they are more like static blocs but could be used to init static attributes (even though we mainly use inline initialization).
+
+Syntax is
+
+```java
+public class Math {
+    private static final float PI;
+
+    static {
+        PI = 3.14f;
+    }
+}
+```
+
+According to some tests, the static constructor seems to be called when the class is loaded in memory, which is not necessarily at the start of the program.
+</details>
 </div></div>

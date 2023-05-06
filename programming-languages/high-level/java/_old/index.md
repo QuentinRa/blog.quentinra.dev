@@ -1,34 +1,11 @@
 # Java programming
 
 * [history](beginner/history.md)
-* [Constructors](structure/constructors.md)
-* [Creating objects](structure/creation.md)
-* [Destroying objects](structure/destroy.md)
-
-Note that we are calling
-
-* **instance members** (`membres d'instance`): methods/attributes for instances (=non static)
-* **class members** (`membres de classe)`: methods/attributes of the class (=static)
-
-**Practice**
-
-* check you remember and understand the [theory](structure/mcq.md)
-* but you must write some code!
-
-<hr class="sr">
-
-## Beginner
-
-Now our goal would be to write some code. But for that, we need to take a learn all of these
-
 * [Types](beginner/types.md)
 * [Packages and import](beginner/packages.md)
 * [Object class](beginner/object.md)
 * [Arrays](beginner/arrays.md)
 * [Exceptions](beginner/exceptions.md)
-
-Then you can read theses
-
 * [Overload](beginner/overload.md) (Surcharge in French)
 * [Inheritance](beginner/inheritance.md)
 * [Override](beginner/override.md)
