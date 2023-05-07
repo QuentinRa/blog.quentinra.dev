@@ -128,6 +128,7 @@ Refer to the [Cookie](/programming-languages/web/_general/random/cookies.md) for
 
 [![walkinganapplication](../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
 [![httpindetail](../../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
+[![contentdiscovery](../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
 [![agentsudoctf](../../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 
 After opening the network tab of your console, every HTTP request is listed inside. You can see where the forms are sent, and examine the [headers](/operating-systems/networking/protocols/http.md#http-headers-in-web-applications) of every request.

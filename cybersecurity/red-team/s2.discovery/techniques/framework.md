@@ -2,8 +2,6 @@
 
 [Go back](../index.md)
 
-[![contentdiscovery](../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
-
 <div class="row row-cols-md-2"><div>
 
 Developers often use framework to write websites faster and more easily, as they provide pre-written common features.
@@ -11,6 +9,8 @@ Developers often use framework to write websites faster and more easily, as they
 <br>
 
 #### Manually find a framework
+
+[![contentdiscovery](../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
 
 * Look if the framework is credited at the bottom of the page
 * Look if there is an HTML comment with the framework name/...

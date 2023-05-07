@@ -1,6 +1,7 @@
 # Google dorking/hacking
 
 [![googledorking](../../../_badges/thm/googledorking.svg)](https://tryhackme.com/room/googledorking)
+[![contentdiscovery](../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
 
 [Go back](../index.md)
 
@@ -39,6 +40,10 @@ You may also use
 ## Examples
 
 <div class="row row-cols-md-2"><div>
+
+#### Subdomains
+
+[![subdomainenumeration](../../../_badges/thmp/subdomainenumeration.svg)](https://tryhackme.com/room/subdomainenumeration)
 
 Find domains/subdomains of `example.com`
 
