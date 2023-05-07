@@ -67,6 +67,7 @@ Web
 * [THM/JuiceShop](https://tryhackme.com/room/owaspjuiceshop)
 * [sqlilab](https://tryhackme.com/room/sqlilab)
 * [learnowaspzap](https://tryhackme.com/room/learnowaspzap) (see [zapproxy](https://www.zaproxy.org/))
+* [OWASP Top 10 - 2021](https://tryhackme.com/room/owasptop102021)
 
 Mobile
 
@@ -100,6 +101,7 @@ Defense
 Networking
 
 * [wifihacking101](https://tryhackme.com/room/wifihacking101)
+* [Network Security and Traffic Analysis](https://tryhackme.com/module/network-security-and-traffic-analysis)
 
 Windows
 
@@ -111,8 +113,7 @@ Windows
 
 Linux
 
-* [commonlinuxprivesc](https://tryhackme.com/room/commonlinuxprivesc)
-* [overlayfs](https://tryhackme.com/room/overlayfs)
+* ...
 
 OSINT
 
@@ -123,6 +124,10 @@ OSINT
 * [geolocatingimages](https://tryhackme.com/room/geolocatingimages), [jpgchat](https://tryhackme.com/room/jpgchat)
 * [threatinteltools](https://tryhackme.com/room/threatinteltools), [somesint](https://tryhackme.com/room/somesint
 * [throwback](https://tryhackme.com/room/throwback)
+
+Cloud
+
+* Attacking and Defending AWS
 
 <details class="details-n">
 <summary>Big THM CTF List</summary>
