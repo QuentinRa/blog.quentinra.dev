@@ -173,7 +173,6 @@ Stuff that I found, but never read/used yet.
 * Identity Services Engine (ISE)
 * Umbrella
 * Secure Access Service Edge (SASE)
-* [THM/networkservices2](https://tryhackme.com/room/networkservices2)
 * Isolate VLAN during attack
 * [Fork bomb](https://en.wikipedia.org/wiki/Fork_bomb)
 * workstation on their own network, host-firewall to prevent them for exchanging with each other (ideally)

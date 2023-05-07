@@ -141,7 +141,6 @@ The TCP/IP model was introduced before the OSI model, but remains the most used 
 
 [![packetsframes](../../../cybersecurity/_badges/thmp/packetsframes.svg)](https://tryhackme.com/room/packetsframes)
 [![networkservices](../../../cybersecurity/_badges/thmp/networkservices.svg)](https://tryhackme.com/room/networkservices)
-[![networkservices2](../../../cybersecurity/_badges/thmp/networkservices2.svg)](https://tryhackme.com/room/networkservices2)
 
 <div class="row row-cols-md-2"><div>
 

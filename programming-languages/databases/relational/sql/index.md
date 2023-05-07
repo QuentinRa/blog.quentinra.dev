@@ -138,6 +138,7 @@ set transaction read write /*code/
 ## DBMS-specific
 
 [![linuxstrengthtraining](../../../../cybersecurity/_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
+[![networkservices2](../../../../cybersecurity/_badges/thmp/networkservices2.svg)](https://tryhackme.com/room/networkservices2)
 
 <div class="row row-cols-md-2"><div>
 
