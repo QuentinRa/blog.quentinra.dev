@@ -101,6 +101,8 @@ Websites
 * [Subdomains](techniques/subdomains.md) 🚪: find subdomains
 
 ➡️ You should check for signs of [well-known vulnerabilities](../s3.exploitation/index.md#common-vulnerabilities-). Note that not all browsers are the same, only some may be vulnerable.
+
+🦄 [My website penetration checklist](techniques/roadmap.md)
 </div></div>
 
 <hr class="sep-both">
