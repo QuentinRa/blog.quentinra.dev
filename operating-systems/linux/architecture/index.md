@@ -6,6 +6,8 @@ An experimental set of notes about Linux internals. These notes extends [Archite
 
 ## Common files and folders
 
+[![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
+
 <div class="row row-cols-md-2"><div>
 
 #### Special folders
@@ -136,6 +138,8 @@ If a session dies, then the signal **SIGHUP** is sent to every process.
 <br>
 
 #### Foreground and background processes
+
+[![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 
 A foreground process is a process receiving input from the user, while a background process is running but not receiving input.
 

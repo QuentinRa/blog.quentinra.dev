@@ -66,6 +66,8 @@ $ man 3 fopen
 
 [**echo/printf** - print text]
 
+[![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
+
 <div class="row row-cols-md-2"><div>
 
 **Usage** 🐚: print text, usually for debugging or displaying instructions/results
@@ -101,6 +103,8 @@ printf "%s\n" "Hello, World"
 </div></div>
 
 [**cat/tac** - display a file]
+
+[![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 
 <div class="row row-cols-md-2"><div>
 
@@ -289,6 +293,8 @@ $ id username # some user
 </div></div>
 
 [**whoami** - user username]
+
+[![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 
 <div class="row row-cols-md-2"><div>
 
@@ -488,6 +494,8 @@ $ sudo update-alternatives --config php
 
 [**pwd** - current directory]
 
+[![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
+
 **Usage** 🐚: echo the path to the working directory
 
 **Example** 🔥:
@@ -498,6 +506,8 @@ $ pwd
 ```
 
 [**ls/dir/tree** - list files]
+
+[![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 
 <div class="row row-cols-md-2"><div>
 
@@ -551,6 +561,8 @@ $ tree .
 
 [**cd** - navigate to ...]
 
+[![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
+
 <div class="row row-cols-md-2"><div>
 
 **Usage** 🐚: move to another directory
@@ -578,6 +590,8 @@ $ cd -
 
 [**mkdir** - create a folder]
 
+[![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
+
 <div class="row row-cols-md-2"><div>
 
 **Usage** 🐚: create one or more folders
@@ -597,6 +611,8 @@ $ mkdir -p folder0/folder1/folder2
 </div></div>
 
 [**🔎** - create a file]
+
+[![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 
 <div class="row row-cols-md-2"><div>
 
@@ -650,6 +666,8 @@ $ ln -s target output
 
 [**mv** - move or rename]
 
+[![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
+
 <div class="row row-cols-md-2"><div>
 
 **Usage** 🐚: takes a list of folders/files to move, and a destination. Move all files/folders to the destination.
@@ -671,6 +689,8 @@ $ mv toto toto0
 </div></div>
 
 [**cp** - copy files/folders]
+
+[![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 
 <div class="row row-cols-md-2"><div>
 
@@ -698,6 +718,8 @@ $ cp -r all_toto/ all_toto_copy
 </div></div>
 
 [**rm/rmdir** - delete]
+
+[![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 
 <div class="row row-cols-md-2"><div>
 
@@ -735,6 +757,8 @@ $ rm -rf folder # usual f + r
 [<br>]
 
 [**file/stat** - file information]
+
+[![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 
 **Usage** 🐚: `file` is widely used for images or to find the type of file. `stat` is useful to extract the metadata of a file.
 
@@ -1080,6 +1104,8 @@ ls: /bin/ls /usr/share/man/man1/ls.1.gz
 
 [**find** - file/folder]
 
+[![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
+
 <div class="row row-cols-md-2"><div>
 
 **Usage** 🐚: find a file/folder. There are a ton of options.
@@ -1179,6 +1205,8 @@ $ head file -n -5
 </div></div>
 
 [**grep** - search by content]
+
+[![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 
 <div class="row row-cols-md-2"><div>
 
@@ -1488,6 +1516,8 @@ $ uniq -c < file
 ++++++
 
 [**wget** - download files/folders]
+
+[![linuxfundamentalspart3](../../../cybersecurity/_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
 
 <div class="row row-cols-md-2"><div>
 

@@ -124,6 +124,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+[![linuxfundamentalspart3](../_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
+
 * /var/log/messages
 * /var/log/syslog (general system activity)
 * /var/log/auth.log (authentication/authorization)

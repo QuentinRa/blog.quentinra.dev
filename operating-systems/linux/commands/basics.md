@@ -314,6 +314,8 @@ $ find . -name toto | wc -l
 
 ## Chaining commands
 
+[![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
+
 <div class="row row-cols-md-2"><div>
 
 There are three reasons to chain commands:
@@ -355,6 +357,8 @@ $ ls toto || ls tata
 <hr class="sep-both">
 
 ## Redirections
+
+[![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 
 <div class="row row-cols-md-2"><div>
 

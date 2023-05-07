@@ -1,5 +1,7 @@
 # Gobuster
 
+[![webenumerationv2](../../../_badges/thmp/webenumerationv2.svg)](https://tryhackme.com/room/webenumerationv2)
+
 <div class="row row-cols-md-2"><div>
 
 [Gobuster](https://github.com/OJ/gobuster) (7.5k ⭐) is a popular web scanner.

@@ -29,9 +29,6 @@ Escalation can be **horizontally**/laterally <small>(another user with the same 
 
 ## Linux privilege escalation 🦆
 
-[![linuxfundamentalspart1](../../_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
-[![linuxfundamentalspart2](../../_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
-[![linuxfundamentalspart3](../../_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
 [![linux1](../../_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
 [![linux2](../../_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
 [![bashscripting](../../_badges/thm/bashscripting.svg)](https://tryhackme.com/room/bashscripting)

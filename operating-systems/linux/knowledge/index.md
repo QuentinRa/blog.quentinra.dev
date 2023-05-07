@@ -1,5 +1,7 @@
 # Knowledge about Linux
 
+[![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
+
 <div class="row row-cols-md-2"><div>
 
 <br>
@@ -31,7 +33,10 @@ Inside the CLI, we can run commands interpreted by a **shell** 🐚.  There are 
 
 <hr class="sep-both">
 
-## Commands 
+## Commands
+
+[![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
+[![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 
 <div class="row row-cols-md-2"><div>
 
@@ -97,6 +102,9 @@ $ ls /<TAB>
 
 ## File system
 
+[![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
+[![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
+
 *See the section: [common files and folders](/operating-systems/linux/architecture/index.md#common-files-and-folders).*
 
 <div class="row row-cols-md-2 mt-3"><div>
@@ -145,6 +153,8 @@ $ /home/example/toto.txt # same
 <hr class="sep-both">
 
 ## Users and permissions
+
+[![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 
 <div class="row row-cols-md-2"><div>
 
@@ -362,6 +372,8 @@ downloads
 
 ## Cron jobs
 
+[![linuxfundamentalspart3](../../../cybersecurity/_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
+
 <div class="row row-cols-md-2"><div>
 
 We can run scheduled tasks on Linux using cron jobs.
@@ -401,6 +413,7 @@ Stuff that I found, but never read/used yet.
 * [linux-securite](https://wonderfall.space/linux-securite/)
 * ELF
 * [tcsh](https://www.ibm.com/docs/en/zos/2.3.0?topic=shells-writing-tcsh-shell-scripts)
+* packages ([![linuxfundamentalspart3](../../../cybersecurity/_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3))
 
 </div><div>
 
