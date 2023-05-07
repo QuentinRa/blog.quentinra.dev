@@ -6,13 +6,17 @@
 
 Beware of installing MAMP PRO ☠️ by mistake, because you most likely want the free MAMP 🐋.
 
-➡️ Once started, click on the preference button, navigate to server, and click on `Open in Finder`. The folder opened is the webserver root.
+Once started, click on the preference button, navigate to ports, and **select `"80 & 3306"` to use the default usual ports** <small>(8888 by default)</small>.
 
-➡️ The associated URL is `http://localhost:8888/`
+You can also navigate to "server", and click on `Open in Finder`. The folder opened is the webserver root.
 
 </div><div>
 
+➡️ The associated URL is `http://localhost`.
+
+➡️ The webserver root path is shown when starting MAMP, in the middle of the screen. It's usually `Application > MAMP > httpdocs`.
+
 #### Access the database
 
-Navigate to `http://localhost:8888/phpmyadmin`. You don't have to log in, but the credentials are: `root`/no password.
+Navigate to `http://localhost/phpmyadmin`. You don't have to log in, but in your code, credentials are `root`/`root`, and the port is `3306`.
 </div></div>
