@@ -1,8 +1,3 @@
-[![principlesofsecurity](../_badges/thm/principlesofsecurity.svg)](https://tryhackme.com/room/principlesofsecurity)
-[![authenticationbypass](../../_badges/thmp/authenticationbypass.svg)](https://tryhackme.com/room/authenticationbypass)
-
-THM active directory rooms
-
 ---------
 Not sure it was added everywhere
 ---------

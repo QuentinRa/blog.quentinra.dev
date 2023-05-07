@@ -1,5 +1,7 @@
 # SSL/TLS
 
+[![protocolsandservers2](../../../cybersecurity/_badges/thmp/protocolsandservers2.svg)](https://tryhackme.com/room/protocolsandservers2)
+
 <div class="row row-cols-md-2"><div>
 
 SSL and TLS are cryptographic 🔒 protocols used to securely transfer data. They are used to secure many protocols such as HTTP <small>(HTTPS)</small>, SMTP <small>(SMTPS)</small>, FTP <small>(FTPS)</small>... that were sending data as plaintext 🔥.

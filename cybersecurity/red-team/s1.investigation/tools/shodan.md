@@ -1,5 +1,7 @@
 # Shodan
 
+[![passiverecon](../../../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
+
 [Go back](../index.md)
 
 <div class="row row-cols-md-2"><div>

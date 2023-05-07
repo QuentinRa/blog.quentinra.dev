@@ -4,7 +4,6 @@
 
 [![authenticationbypass](../../../../cybersecurity/_badges/thmp/authenticationbypass.svg)](https://tryhackme.com/room/authenticationbypass)
 
-
 Cookies are defined in a [HTTP header](/operating-systems/networking/protocols/http.md). They are used by a server to store data inside a client's browser.
 
 **Server**: the server first request the browser to create a cookie. It's done by using the header `Set-Cookie` <small>(one per cookie)</small>.

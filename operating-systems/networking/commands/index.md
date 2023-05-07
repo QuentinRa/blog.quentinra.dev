@@ -189,6 +189,8 @@ Other options
 
 <div class="row row-cols-md-2"><div>
 
+[![activerecon](../../../cybersecurity/_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
+
 **Usage** 🐚: you can create a server, and create clients, and exchange messages between them.
 
 Variants: `ncat`, `netcat`.

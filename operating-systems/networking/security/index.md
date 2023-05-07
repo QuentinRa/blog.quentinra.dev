@@ -1,6 +1,7 @@
 # Network security
 
 [![principlesofsecurity](../../../cybersecurity/_badges/thmp/intronetworksecurity.svg)](https://tryhackme.com/room/principlesofsecurity)
+[![protocolsandservers2](../../../cybersecurity/_badges/thmp/protocolsandservers2.svg)](https://tryhackme.com/room/protocolsandservers2)
 
 <div class="row row-cols-md-2"><div>
 

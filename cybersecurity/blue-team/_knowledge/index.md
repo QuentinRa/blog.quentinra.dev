@@ -3,6 +3,7 @@
 [![careersincyber](../../_badges/thmp/careersincyber.svg)](https://tryhackme.com/room/careersincyber)
 [![securityoperations](../../_badges/thmp/securityoperations.svg)](https://tryhackme.com/room/securityoperations)
 [![defensivesecurity](../../_badges/thmp/defensivesecurity.svg)](https://tryhackme.com/room/defensivesecurity)
+[![principlesofsecurity](../../_badges/thm/principlesofsecurity.svg)](https://tryhackme.com/room/principlesofsecurity)
 
 <div class="row row-cols-md-2"><div>
 

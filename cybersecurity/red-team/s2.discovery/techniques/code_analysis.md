@@ -2,6 +2,8 @@
 
 [Go back](../index.md)
 
+[![activerecon](../../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
+
 <div class="row row-cols-md-2"><div>
 
 Code analysis refer to analyzing the code of the website, both statically, and dynamically, while trying to find a flaw.

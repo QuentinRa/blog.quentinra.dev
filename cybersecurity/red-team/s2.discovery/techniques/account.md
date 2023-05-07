@@ -1,5 +1,6 @@
 # Account discovery
 
+[![authenticationbypass](../../../_badges/thmp/authenticationbypass.svg)](https://tryhackme.com/room/authenticationbypass)
 ![nibbles](../../../_badges/htb-p/nibbles.svg)
 
 <div class="row row-cols-md-2"><div>
