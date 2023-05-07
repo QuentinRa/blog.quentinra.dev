@@ -1,5 +1,7 @@
 # Digital forensics
 
+[![introdigitalforensics](../../_badges/thm/introdigitalforensics.svg)](https://tryhackme.com/room/introdigitalforensics)
+
 <div class="row row-cols-md-2"><div>
 
 Forensics is the art of investigating crimes. Digital forensics is the same, but for cyber crimes.

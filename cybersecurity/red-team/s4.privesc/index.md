@@ -1,5 +1,7 @@
 # Fourth step - Privilege Escalation
 
+[![operatingsystemsecurity](../../_badges/thmp/operatingsystemsecurity.svg)](https://tryhackme.com/room/operatingsystemsecurity)
+
 <div class="row row-cols-md-2"><div>
 
 Privilege Escalation 🔑 is the fourth step of the pentester activities. We attempt to escalate from a regular user to an administrative account by exploiting a vulnerability in the system.
@@ -37,10 +39,11 @@ Escalation can be **horizontally**/laterally <small>(another user with the same 
 [![catregex](../../_badges/thm/catregex.svg)](https://tryhackme.com/room/catregex)
 [![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
-[![linprivesc](../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![linux_privilege_escalation](../../_badges/poat/linux_privilege_escalation.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md)
 
 <div class="row row-cols-md-2"><div>
+
+[![linprivesc](../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 
 [Linux](/operating-systems/linux/knowledge/index.md) privilege escalation may be achieved by exploiting:
 
@@ -72,7 +75,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [Old - General](_old/index.md)
 * [Old - Windows](_old/windows/index.md)
 * [WADComs](https://github.com/WADComs/WADComs.github.io) (1k ⭐)/[wadcoms website](https://wadcoms.github.io/)
 

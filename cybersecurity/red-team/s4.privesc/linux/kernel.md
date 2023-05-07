@@ -1,5 +1,7 @@
 # Kernel
 
+[![linprivesc](../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
+
 [Go back](../index.md#linux-privilege-escalation-)
 
 <div class="row row-cols-md-2"><div>

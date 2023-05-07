@@ -6,6 +6,7 @@
 
 ## SUID/GUID bit
 
+[![linprivesc](../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![vulnversity](../../../_badges/thm-p/vulnversity.svg)](https://tryhackme.com/room/vulnversity)
 [![kenobi](../../../_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
 [![rrootme](../../../_badges/thm-p/rrootme.svg)](https://tryhackme.com/room/rrootme)
@@ -53,6 +54,8 @@ When exploiting a command, you will usually want to run another executable. Two 
 <hr class="sep-both">
 
 ## Capabilities
+
+[![linprivesc](../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 
 <div class="row row-cols-md-2"><div>
 
