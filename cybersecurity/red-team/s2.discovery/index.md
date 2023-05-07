@@ -87,6 +87,8 @@ Vulnerabilities scanners
 
 Websites
 
+[![introwebapplicationsecurity](../../_badges/thm/introwebapplicationsecurity.svg)](https://tryhackme.com/room/introwebapplicationsecurity)
+
 * [Website mapping](techniques/mapping.md) 🧭: before investing a website
 * [OWASP](tools/owasp.md) 🧭: website security/common vulnerabilities
 * [Code analysis](techniques/code_analysis.md) 🚪🔥🔑: comments, hidden code, sensitive data...

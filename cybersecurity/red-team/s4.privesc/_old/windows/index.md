@@ -336,7 +336,7 @@ Tools
 Checklists
 
 * [UltimateAppLockerByPassList](https://github.com/api0cradle/UltimateAppLockerByPassList) (1.5k ⭐)
-* [Active Directory Exploitation Cheat Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet) (3.4k ⭐) + `winadbasics`
+* [Active Directory Exploitation Cheat Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet) (3.4k ⭐)
 * [frizb](https://github.com/frizb/Windows-Privilege-Escalation) (0.7k ⭐)
 </div><div>
 

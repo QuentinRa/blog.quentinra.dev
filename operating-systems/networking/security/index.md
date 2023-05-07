@@ -1,5 +1,7 @@
 # Network security
 
+[![principlesofsecurity](../../../cybersecurity/_badges/thmp/intronetworksecurity.svg)](https://tryhackme.com/room/principlesofsecurity)
+
 <div class="row row-cols-md-2"><div>
 
 **Common security controls** 🛫

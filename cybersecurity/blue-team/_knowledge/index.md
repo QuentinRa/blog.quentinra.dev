@@ -1,5 +1,9 @@
 # Blue team
 
+[![careersincyber](../../_badges/thmp/careersincyber.svg)](https://tryhackme.com/room/careersincyber)
+[![securityoperations](../../_badges/thmp/securityoperations.svg)](https://tryhackme.com/room/securityoperations)
+[![defensivesecurity](../../_badges/thmp/defensivesecurity.svg)](https://tryhackme.com/room/defensivesecurity)
+
 <div class="row row-cols-md-2"><div>
 
 The blue team is specialised in defense which involves protecting the systems, proactively and not.

@@ -3,6 +3,8 @@
 [![beginnerpathintro](../../_badges/thm/beginnerpathintro.svg)](https://tryhackme.com/room/beginnerpathintro)
 [![startingoutincybersec](../../_badges/thm/startingoutincybersec.svg)](https://tryhackme.com/room/startingoutincybersec)
 [![pentestingfundamentals](../../_badges/thm/pentestingfundamentals.svg)](https://tryhackme.com/room/pentestingfundamentals)
+[![careersincyber](../../_badges/thmp/careersincyber.svg)](https://tryhackme.com/room/careersincyber)
+[![introtooffensivesecurity](../../_badges/thm/introtooffensivesecurity.svg)](https://tryhackme.com/room/introtooffensivesecurity)
 
 <div class="row row-cols-md-2"><div>
 
