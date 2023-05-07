@@ -2,14 +2,18 @@
 
 [![linprivesc](../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
+[![overlayfs](../../../_badges/thm-p/overlayfs.svg)](https://tryhackme.com/room/overlayfs)
 
 [Go back](../index.md#linux-privilege-escalation-)
 
 <div class="row row-cols-md-2"><div>
 
-Kernel exploits should be used as the **last resort**, as they will most probably severely impact the machine state, or even crash the machine if they fail. You can find the complete list of CVEs for the Linux Kernel [here](https://www.linuxkernelcves.com/cves).
+Kernel exploits should be used as the **last resort**, as they will most probably severely impact the machine state, or even crash the machine if they fail.
+
+You can find the complete list of CVEs for the Linux Kernel [here](https://www.linuxkernelcves.com/cves).
 
 * [Dirty COW](https://en.wikipedia.org/wiki/Dirty_COW) on Linux kernel <4.8.3
+* [CVE-2021-3493/OverlayFS](https://en.wikipedia.org/wiki/OverlayFS) mostly on Ubuntu kernels prior to Ubuntu 20.10. See [ssd-disclosure PoC](https://ssd-disclosure.com/ssd-advisory-overlayfs-pe/).
 </div><div>
 
 There are scripts to find vulnerable kernels, but they may generate false positives or false negatives.

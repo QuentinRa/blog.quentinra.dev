@@ -113,7 +113,8 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [huntr.dev](https://huntr.dev/) (open-source repositories)
 * [BugBountyHunter.com](https://www.bugbountyhunter.com/)
 * [intigriti.com](https://www.intigriti.com/)
-* [zerodayinitiative](https://www.zerodayinitiative.com/ )
+* [zerodayinitiative](https://www.zerodayinitiative.com/)
+* [ssd-disclosure](https://ssd-disclosure.com/)
 </div><div>
 
 **News** 📰
