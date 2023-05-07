@@ -137,6 +137,8 @@ set transaction read write /*code/
 
 ## DBMS-specific
 
+[![linuxstrengthtraining](../../../../cybersecurity/_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
+
 <div class="row row-cols-md-2"><div>
 
 Both for **PostgreSQL** and **MySQL**, they are running as a service:

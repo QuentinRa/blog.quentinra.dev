@@ -1,5 +1,8 @@
 # Cybersecurity
 
+[![beginnerpathintro](../_badges/thm/beginnerpathintro.svg)](https://tryhackme.com/room/beginnerpathintro)
+[![startingoutincybersec](../_badges/thm/startingoutincybersec.svg)](https://tryhackme.com/room/startingoutincybersec)
+
 <div class="row row-cols-md-2"><div>
 
 Cybersecurity involves securing IT systems against external threats. There are 3 categories of people:

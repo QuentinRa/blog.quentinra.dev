@@ -1,5 +1,7 @@
 # Regular expressions (regex)
 
+[![catregex](../../../cybersecurity/_badges/thm/catregex.svg)](https://tryhackme.com/room/catregex)
+
 <div class="row row-cols-md-2"><div>
 
 **Regular expressions** (`expressions régulières`), commonly referred to as **regex**, are an enhanced version of [glob-patterns](/operating-systems/linux/knowledge/index.md#glob-patterns) and present in most, if not all languages.
@@ -11,7 +13,6 @@
 
 * [regex101](https://regex101.com/) (online tester)
 * [regexr](https://regexr.com/) (online tester)
-* [![TryHackMe catregex](../../../cybersecurity/_badges/thm/catregex.svg)](https://tryhackme.com/room/catregex) (a bit hard)
 </div></div>
 
 <hr class="sep-both">

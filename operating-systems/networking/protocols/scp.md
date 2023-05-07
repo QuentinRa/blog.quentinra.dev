@@ -1,6 +1,7 @@
 # Secure Copy Protocol (SCP)
 
 [![linuxfundamentalspart3](../../../cybersecurity/_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
+[![linuxstrengthtraining](../../../cybersecurity/_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 
 <div class="row row-cols-md-2"><div>
 

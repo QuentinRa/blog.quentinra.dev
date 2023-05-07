@@ -31,9 +31,6 @@ Escalation can be **horizontally**/laterally <small>(another user with the same 
 
 [![linux1](../../_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
 [![linux2](../../_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
-[![bashscripting](../../_badges/thm/bashscripting.svg)](https://tryhackme.com/room/bashscripting)
-[![linuxstrengthtraining](../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
-[![catregex](../../_badges/thm/catregex.svg)](https://tryhackme.com/room/catregex)
 [![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 [![linux_privilege_escalation](../../_badges/poat/linux_privilege_escalation.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md)

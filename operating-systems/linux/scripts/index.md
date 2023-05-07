@@ -1,5 +1,7 @@
 # Shell scripts
 
+[![bashscripting](../../../cybersecurity/_badges/thm/bashscripting.svg)](https://tryhackme.com/room/bashscripting)
+
 <div class="row row-cols-md-2 mt-4"><div>
 
 Scripts are simply files with usually many Linux commands, usually written in Bash, as it is the default shell language in many Linux-based distributions. You can see scripts as programs, and you will execute them as you do with programs.

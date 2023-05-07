@@ -1,10 +1,13 @@
 # John the Ripper
 
+[![johntheripper0](../../../../_badges/thmp/johntheripper0.svg)](https://tryhackme.com/room/johntheripper0)
+[![linuxstrengthtraining](../../../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
+
 <div class="row row-cols-md-2"><div>
 
 [John the Ripper](https://github.com/openwall/john) (<small>Jumbo</small>, 7.4k ⭐), a.k.a. **john**, is like hashcat, a tool to crack hashes. For convenience's sake, we store the hash in `myhash`.
 
-```shell!
+```ps
 # use quotes, so that $/... aren't interpreted
 $ echo 'some hash here' > myhash
 ```
@@ -141,6 +144,8 @@ $ john myhash --format=netntlmv2 --wordlist=wordlist
 <hr class="sep-both">
 
 ## GPG passphrase cracking
+
+[![linuxstrengthtraining](../../../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 
 <div class="row row-cols-md-2"><div>
 

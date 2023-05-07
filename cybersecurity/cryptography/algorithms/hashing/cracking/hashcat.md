@@ -4,14 +4,14 @@
 
 [hashcat](https://github.com/hashcat/hashcat) (15.9k ⭐) is a well-known, and popular tool to crack passwords. For convenience’s sake, we store the hash in a file `hash`.
 
-```bash
+```ps
 # use quotes, so that $/... aren't interpreted
 $ echo 'some hash here' > myhash
 ```
 
 Crack the password
 
-```bash
+```ps
 $ hashcat -m code myhash wordlist
 $ hashcat -m code myhash wordlist -o hashes_cracked
 # in my case, hashcat started then stopped, 
@@ -21,16 +21,9 @@ $ hashcat -m code myhash wordlist --force
 
 Once the password was cracked, you can see it
 
-```bash
+```ps
 $ hashcat -m code myhash wordlist --show
 ```
-
-You can use rules <small>(see John section for explanations)</small>
-
-```bash
-$ hashcat -m 0 myhash wordlist -r /usr/share/hashcat/rules/best64.rule
-```
-
 </div><div>
 
 **Token length exception**: I had this error so many times that I got crazy about it. There are many causes for this error, unfortunately.
@@ -111,5 +104,9 @@ Guess.Charset....: -1 ?l?d?u, -2 ?l?d, -3 ?l?d*!$@_, -4 Undefined
 </details>
 </div><div>
 
+You can use rules
 
+```ps
+$ hashcat -m 0 myhash wordlist -r /usr/share/hashcat/rules/best64.rule
+```
 </div></div>

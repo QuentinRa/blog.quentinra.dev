@@ -591,6 +591,7 @@ $ cd -
 [**mkdir** - create a folder]
 
 [![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
+[![linuxstrengthtraining](../../../cybersecurity/_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 
 <div class="row row-cols-md-2"><div>
 
@@ -667,6 +668,7 @@ $ ln -s target output
 [**mv** - move or rename]
 
 [![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
+[![linuxstrengthtraining](../../../cybersecurity/_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 
 <div class="row row-cols-md-2"><div>
 
@@ -691,6 +693,7 @@ $ mv toto toto0
 [**cp** - copy files/folders]
 
 [![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
+[![linuxstrengthtraining](../../../cybersecurity/_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 
 <div class="row row-cols-md-2"><div>
 
