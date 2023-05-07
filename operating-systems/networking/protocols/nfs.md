@@ -39,6 +39,7 @@ $ sudo umount /tmp/share
 ## NFS vulnerabilities ☠️
 
 [![linprivesc](../../../cybersecurity/_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
+[![linuxprivesc](../../../cybersecurity/_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![kenobi](../../../cybersecurity/_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
 
 <div class="row row-cols-md-2"><div>

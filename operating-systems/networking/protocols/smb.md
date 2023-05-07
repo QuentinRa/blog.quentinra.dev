@@ -1,5 +1,7 @@
 # Server Message Block (SMB)
 
+[![networkservices](../../../cybersecurity/_badges/thmp/networkservices.svg)](https://tryhackme.com/room/networkservices)
+
 <div class="row row-cols-md-2"><div>
 
 Server Message Block (SMB) is a protocol used for Windows file exchange system. It's similar to [NFS](nfs.md) for Linux.
