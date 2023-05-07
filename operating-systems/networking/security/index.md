@@ -1,7 +1,6 @@
 # Network security
 
-[![principlesofsecurity](../../../cybersecurity/_badges/thmp/intronetworksecurity.svg)](https://tryhackme.com/room/principlesofsecurity)
-[![protocolsandservers2](../../../cybersecurity/_badges/thmp/protocolsandservers2.svg)](https://tryhackme.com/room/protocolsandservers2)
+[![intronetworksecurity](../../../cybersecurity/_badges/thmp/intronetworksecurity.svg)](https://tryhackme.com/room/intronetworksecurity)
 
 <div class="row row-cols-md-2"><div>
 
@@ -26,6 +25,8 @@ Security controls are determined based on the type of traffic.
 
 ## Common networking attacks
 
+[![protocolsandservers2](../../../cybersecurity/_badges/thmp/protocolsandservers2.svg)](https://tryhackme.com/room/protocolsandservers2)
+
 <div class="row row-cols-md-2"><div>
 
 **Sniffing** 🐛: without or with a weak encryption, an actor can listen to exchanged packets, to learn more about the network architecture, and to find the weak point.
@@ -47,6 +48,8 @@ Security controls are determined based on the type of traffic.
 <hr class="sep-both">
 
 ## Firewalls
+
+[![extendingyournetwork](../../../cybersecurity/_badges/thmp/extendingyournetwork.svg)](https://tryhackme.com/room/extendingyournetwork)
 
 <div class="row row-cols-md-2"><div>
 

@@ -69,6 +69,8 @@ Networking devices are interconnected by cables.
 
 ## Physical network topology
 
+[![introtolan](../../../cybersecurity/_badges/thm/introtolan.svg)](https://tryhackme.com/room/introtolan)
+
 <div class="row row-cols-md-2"><div>
 
 #### Star Topology ✨
@@ -131,6 +133,8 @@ It can be done for multiple reasons, such as increasing performances, security, 
 </div><div>
 
 #### Subnetting
+
+[![introtolan](../../../cybersecurity/_badges/thm/introtolan.svg)](https://tryhackme.com/room/introtolan)
 
 This is a technique to segment a network. We divide a large network into smaller subnetworks. Each subnet has its own address and can be managed separately.
 

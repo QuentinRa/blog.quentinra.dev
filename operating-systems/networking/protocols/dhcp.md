@@ -1,5 +1,7 @@
 # Dynamic Host Configuration Protocol (DHCP)
 
+[![introtolan](../../../cybersecurity/_badges/thm/introtolan.svg)](https://tryhackme.com/room/introtolan)
+
 <div class="row row-cols-md-2"><div>
 
 IPV4 addresses are usually not attributed to a host manually. We use a Dynamic Host Configuration Protocol (DHCP) server instead.

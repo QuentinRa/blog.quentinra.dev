@@ -30,6 +30,8 @@ Some elements that are involved, shown in the simplified schema:
 
 #### IP addresses 🌍
 
+[![whatisnetworking](../../../cybersecurity/_badges/thm/whatisnetworking.svg)](https://tryhackme.com/room/whatisnetworking)
+
 An IP address is a unique identifier assigned to each device on a network. It's used to locate a device on the network. There are two kind of IP addresses:
 
 * [IPV4](ip/ipv4.md): a 32 bits address
@@ -39,6 +41,8 @@ There is a shortage of IPV4 since many years, due to the great amount of connect
 </div><div>
 
 #### MAC address 🏠
+
+[![whatisnetworking](../../../cybersecurity/_badges/thm/whatisnetworking.svg)](https://tryhackme.com/room/whatisnetworking)
 
 A media access control address (MAC address) is a unique address set by the network interface vendor.
 
@@ -73,6 +77,8 @@ The loopback interface is used by local applications to share data between thems
 
 #### Ports
 
+[![packetsframes](../../../cybersecurity/_badges/thmp/packetsframes.svg)](https://tryhackme.com/room/packetsframes)
+
 A port is a virtual messaging channel which is only associated with **one protocol**, such as `22` associated with `SSH`. This association allows a machine to correctly handle a message using the correct protocol.
 
 * 🗃️ There are 65535 <small>(or in short $2^{16}$)</small> available ports
@@ -95,6 +101,8 @@ A port is a virtual messaging channel which is only associated with **one protoc
 <div class="row row-cols-md-2"><div>
 
 #### OSI model
+
+[![osimodelzi](../../../cybersecurity/_badges/thmp/osimodelzi.svg)](https://tryhackme.com/room/osimodelzi)
 
 The Open Systems Interconnection (**OSI** or ISO/OSI) model is a standardized representation of how we could send a message between two machines 🤝. It's made of 7 layers:
 
@@ -131,7 +139,7 @@ The TCP/IP model was introduced before the OSI model, but remains the most used 
 
 ## Protocols
 
-[![protocolsandservers2](../../../cybersecurity/_badges/thmp/protocolsandservers2.svg)](https://tryhackme.com/room/protocolsandservers2)
+[![packetsframes](../../../cybersecurity/_badges/thmp/packetsframes.svg)](https://tryhackme.com/room/packetsframes)
 [![networkservices](../../../cybersecurity/_badges/thmp/networkservices.svg)](https://tryhackme.com/room/networkservices)
 [![networkservices2](../../../cybersecurity/_badges/thmp/networkservices2.svg)](https://tryhackme.com/room/networkservices2)
 
