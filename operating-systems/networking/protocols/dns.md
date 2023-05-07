@@ -116,6 +116,8 @@ Given the FQDN `www.example.com`, `www` is the hostname, while `example.com` is 
 
 #### `dig`: ip/domain lookup
 
+[![introtonetworking](../../../cybersecurity/_badges/thm/introtonetworking.svg)](https://tryhackme.com/room/introtonetworking)
+
 You can give a domain name, or an IP (`-x`).
 
 ```ps
@@ -163,6 +165,8 @@ $ nslookup -type=A example.com 1.1.1.1
 [dnsdumpster](https://dnsdumpster.com/) is a website to fetch DNS records, for both a domain, and its subdomains.
 
 #### `whois`: domain registrar data
+
+[![introtonetworking](../../../cybersecurity/_badges/thm/introtonetworking.svg)](https://tryhackme.com/room/introtonetworking)
 
 You can also use [their website](https://www.whois.com/whois/) or [domaintools](https://whois.domaintools.com/).
 

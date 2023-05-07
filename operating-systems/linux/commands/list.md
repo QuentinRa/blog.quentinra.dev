@@ -34,6 +34,8 @@ $ man 1 man
 
 [**whatis** - one-line `man`]
 
+[![linux1](../../../cybersecurity/_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
+
 **Usage** 🐚: Display a one-line manual page descriptions
 
 **Example** 🔥:
@@ -67,6 +69,7 @@ $ man 3 fopen
 [**echo/printf** - print text]
 
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
+[![linux1](../../../cybersecurity/_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
 
 <div class="row row-cols-md-2"><div>
 
@@ -105,6 +108,7 @@ printf "%s\n" "Hello, World"
 [**cat/tac** - display a file]
 
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
+[![linux1](../../../cybersecurity/_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
 
 <div class="row row-cols-md-2"><div>
 
@@ -508,6 +512,7 @@ $ pwd
 [**ls/dir/tree** - list files]
 
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
+[![linux1](../../../cybersecurity/_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
 
 <div class="row row-cols-md-2"><div>
 
@@ -614,6 +619,7 @@ $ mkdir -p folder0/folder1/folder2
 [**🔎** - create a file]
 
 [![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
+[![linux1](../../../cybersecurity/_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
 
 <div class="row row-cols-md-2"><div>
 
@@ -669,6 +675,7 @@ $ ln -s target output
 
 [![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 [![linuxstrengthtraining](../../../cybersecurity/_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
+[![linux2](../../../cybersecurity/_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
 
 <div class="row row-cols-md-2"><div>
 
@@ -723,6 +730,7 @@ $ cp -r all_toto/ all_toto_copy
 [**rm/rmdir** - delete]
 
 [![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
+[![linux2](../../../cybersecurity/_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
 
 <div class="row row-cols-md-2"><div>
 
@@ -885,6 +893,8 @@ $ tar -xvf archive_name.tar.gz
 
 [**su** - swap/log in as user]
 
+[![linux1](../../../cybersecurity/_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
+
 <div class="row row-cols-md-2"><div>
 
 **Usage** 🐚: swap/log in as another user
@@ -999,6 +1009,8 @@ $ delgroup group_name
 
 [**chmod** - file permissions]
 
+[![linux2](../../../cybersecurity/_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
+
 <div class="row row-cols-md-2"><div>
 
 **Usage** 🐚: manage a file/folder permissions
@@ -1042,6 +1054,8 @@ $ chmod 700 target
 </div></div>
 
 [**chown** - file ownership]
+
+[![linux2](../../../cybersecurity/_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
 
 **Usage** 🐚: change the owner of a file/folder
 

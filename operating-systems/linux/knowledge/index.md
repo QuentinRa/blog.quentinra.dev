@@ -37,6 +37,7 @@ Inside the CLI, we can run commands interpreted by a **shell** 🐚.  There are 
 
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 [![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
+[![linux1](../../../cybersecurity/_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
 
 <div class="row row-cols-md-2"><div>
 
@@ -104,6 +105,7 @@ $ ls /<TAB>
 
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 [![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
+[![linux1](../../../cybersecurity/_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
 
 *See the section: [common files and folders](/operating-systems/linux/architecture/index.md#common-files-and-folders).*
 

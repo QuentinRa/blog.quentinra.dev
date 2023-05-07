@@ -1,5 +1,7 @@
 # Vim text editor
 
+[![toolboxvim](../../../cybersecurity/_badges/thm/toolboxvim.svg)](https://tryhackme.com/room/toolboxvim)
+
 <div class="row row-cols-md-2"><div>
 
 Vim <small>(vi improved)</small> is a terminal text editor that is often used along nano mostly when there is no graphical interface 🐉.

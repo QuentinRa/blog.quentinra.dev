@@ -22,6 +22,10 @@ There are basic scenarios in which you can directly exploit the executable, but 
 
 #### PATH
 
+[![linprivesc](../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
+[![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
+[![commonlinuxprivesc](../../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
+
 If a script uses the command `ls` and the environment variable `PATH` with the value `/tmp:[...]`, as you can write in `/tmp`, you can create an executable named `ls` which is actually a `bash`. 
 
 When the target script is executed, the `bash` command is executed instead of `ls`.

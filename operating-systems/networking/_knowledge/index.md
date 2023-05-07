@@ -103,6 +103,7 @@ A port is a virtual messaging channel which is only associated with **one protoc
 #### OSI model
 
 [![osimodelzi](../../../cybersecurity/_badges/thmp/osimodelzi.svg)](https://tryhackme.com/room/osimodelzi)
+[![introtonetworking](../../../cybersecurity/_badges/thm/introtonetworking.svg)](https://tryhackme.com/room/introtonetworking)
 
 The Open Systems Interconnection (**OSI** or ISO/OSI) model is a standardized representation of how we could send a message between two machines 🤝. It's made of 7 layers:
 
@@ -122,6 +123,8 @@ Each time a message go down, a header is added. This is called **encapsulation**
 The **Protocol Data Unit** 📜 (PDU) is generated at each layer. It's both the layer protocol headers, and the previous PDU as the data, which is usually called **payload**.
 
 #### TCP/IP model
+
+[![introtonetworking](../../../cybersecurity/_badges/thm/introtonetworking.svg)](https://tryhackme.com/room/introtonetworking)
 
 The TCP/IP model was introduced before the OSI model, but remains the most used because it's more compact 🤏. It's made of 4 layers:
 

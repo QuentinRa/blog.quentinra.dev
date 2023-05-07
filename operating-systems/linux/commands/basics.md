@@ -274,6 +274,8 @@ done
 
 ## Pipes
 
+[![linux2](../../../cybersecurity/_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
+
 <div class="row row-cols-md-2 mt-3"><div>
 
 It's possible for a command output, to be used as the next command input using a pipe: **their_output | is_my_input**.
@@ -315,6 +317,7 @@ $ find . -name toto | wc -l
 ## Chaining commands
 
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
+[![linux2](../../../cybersecurity/_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
 
 <div class="row row-cols-md-2"><div>
 
@@ -359,6 +362,7 @@ $ ls toto || ls tata
 ## Redirections
 
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
+[![linux2](../../../cybersecurity/_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
 
 <div class="row row-cols-md-2"><div>
 

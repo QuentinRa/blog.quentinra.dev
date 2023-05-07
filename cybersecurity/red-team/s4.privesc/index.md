@@ -29,14 +29,12 @@ Escalation can be **horizontally**/laterally <small>(another user with the same 
 
 ## Linux privilege escalation 🦆
 
-[![linux1](../../_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
-[![linux2](../../_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
-[![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
-[![linux_privilege_escalation](../../_badges/poat/linux_privilege_escalation.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md)
-
 <div class="row row-cols-md-2"><div>
 
 [![linprivesc](../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
+[![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
+[![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
+[![linux_privilege_escalation](../../_badges/poat/linux_privilege_escalation.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md)
 
 [Linux](/operating-systems/linux/knowledge/index.md) privilege escalation may be achieved by exploiting:
 

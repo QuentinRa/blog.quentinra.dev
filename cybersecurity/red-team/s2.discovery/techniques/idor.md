@@ -4,6 +4,7 @@
 
 [![idor](../../../_badges/thm/idor.svg)](https://tryhackme.com/room/idor)
 [![introwebapplicationsecurity](../../../_badges/thm/introwebapplicationsecurity.svg)](https://tryhackme.com/room/introwebapplicationsecurity)
+[![owasptop10](../../../_badges/thm/owasptop10.svg)](https://tryhackme.com/room/owasptop10)
 [![neighbour](../../../_badges/thm-p/neighbour.svg)](https://tryhackme.com/room/neighbour)
 
 <div class="row row-cols-md-2"><div>

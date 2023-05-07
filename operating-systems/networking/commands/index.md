@@ -157,6 +157,8 @@ $ ss -u # udp
 
 [**ping** - probe a host]
 
+[![introtonetworking](../../../cybersecurity/_badges/thm/introtonetworking.svg)](https://tryhackme.com/room/introtonetworking)
+
 <div class="row row-cols-md-2"><div>
 
 **Usage** 🐚: send a message to see if a host is up and replying to pings.
@@ -220,6 +222,8 @@ $ nc ip -p port
 </div></div>
 
 [**traceroute** - trace a packet]
+
+[![introtonetworking](../../../cybersecurity/_badges/thm/introtonetworking.svg)](https://tryhackme.com/room/introtonetworking)
 
 <div class="row row-cols-md-2"><div>
 
