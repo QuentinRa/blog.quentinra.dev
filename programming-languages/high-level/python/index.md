@@ -39,6 +39,9 @@ Hello, World
 
 Python is the previous major version of Python. With little changes, most python scripts can be run by python3.
 
+* `print "xxx"` ➡️ `print("xxx")`
+* `5 / 2 == 2` ➡️ `5 / 2 == 2.5`
+* ASCII strings ➡️ Unicode strings
 * ...
 
 ➡️ `python`/`pip` will link to `python2`/`pip2` or `python3`/`pip3` according to your configuration, but you can have both.
@@ -78,11 +81,11 @@ from xxx import *         # import all
 
 Each project need some packages and in some specific versions. To avoid messing with others project when installing/updating/... packages, we usually create one virtual environment **VENV** per project. Once **activated** <small>(by running activate)</small>, new packages will be added to the local copy at `path/to/venv`.
 
-```
+```ps
 $ python3 -m venv path/to/venv # create
 $ source path/to/venv/bin/activate # load
-$ echo $VIRTUAL_ENV # see the current VENV
-$ pip3 install xxx # installed to the VENV
+(venv) $ echo $VIRTUAL_ENV # see the current VENV
+(venv) $ pip3 install xxx # installed to the VENV
 ```
 
 We usually store in a file `requirements.txt` the library and their versions used by the project.
@@ -428,13 +431,53 @@ list = [i for i in in range(0,10) if i%2==0]
 
 <hr class="sep-both">
 
+## Common usages
+
+<div class="row row-cols-md-2"><div>
+
+#### Program arguments
+
+```python
+import sys
+
+print(len(sys.argv)) # number of args (>= 1)
+print(sys.argv[0])   # executable name
+```
+
+#### Python version
+
+```python
+import sys
+
+print(sys.version_info)  # {major=3, ...}
+```
+</div><div>
+
+#### Dates
+
+```python
+import datetime
+
+print(datetime.datetime.now())
+```
+
+#### Check if this is the main script
+
+```python
+if __name__ == '__main__':
+    # ...
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Common libraries
 
 <div class="row row-cols-md-2"><div>
 
 #### numpy
 
-`numpy` is a well-known library simplifying operations on lists.
+`numpy` is a library simplifying and optimizing operations on lists.
 
 ```python
 import numpy
@@ -457,6 +500,7 @@ Stuff that I found, but never read/used yet.
 
 * `del()`: delete a variable
 * `dir()`: class properties
+* py2exe
 
 ```
 block:
