@@ -171,16 +171,6 @@ elif False:
 else:
     pass
 ```
-
-#### Functions
-
-```python
-def my_function(a, b=2):
-    return a ** b
-	
-four = my_function(2)
-eight = my_function(2, 3)
-```
 </div><div>
 
 Inside Loops, you can use:
@@ -205,6 +195,103 @@ for i, j in map: # dictionnary...
 while False:
     pass
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Functions
+
+<div class="row row-cols-md-2"><div>
+
+Similarily to control-flow structure, you can use `pass` for empty functions. Functions can access outer-scope variables.
+
+```python
+def my_function():
+    pass
+	
+my_function() # invoke
+```
+
+Functions parameters can have default value.
+
+```python
+def my_function(a, b=2):
+    return a ** b
+	
+four = my_function(2)
+eight = my_function(2, 3)
+```
+</div><div>
+
+You can create variadic functions <small>(e.g. variable number of arguments)</small>:
+
+```python
+def fct(*args):
+    print(list(args))
+
+fct()
+fct(1)
+fct(1, 2)
+fct(1, 2, 3)
+```
+
+You can create function with options:
+
+```python
+def fct(**opt):
+    print(opt.get("key1", "default"))
+
+
+fct(key1= "value")
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Classes and objects
+
+<div class="row row-cols-md-2"><div>
+
+Example with a [class](/programming-languages/_paradigm/oo.md#classes-and-objects) object with two attributes and one method:
+
+```python
+class Person:
+    name = "John Doe"
+    country = "US"
+
+    def tostring(self):
+        return f'Person{{name:{self.name}, country:{self.country}}}'
+```
+
+➡️ When calling `a.b()`, `self` is automatically filled with the variable `a`.
+
+```python
+johnDoe = Person()
+print(johnDoe.name)
+print(johnDoe.tostring())
+```
+</div><div>
+
+You can use a [constructor](/programming-languages/_paradigm/oo.md#constructors) to set attributes:
+
+```python
+class Person:
+    def __init__(self, name, country = "US"):
+        self.name = name
+        self.country = country
+
+johnDoe = Person("Jane Doe", "US")
+```
+
+Each class has methods that can be overrided. For instance, instead of `toString`, you can override `__str__` to convert something to a string:
+
+```python
+class Person:
+    def __str__(self) -> str:
+        return f'Person{{name:{self.name}, country:{self.country}}}'
+```
+
+➡️ See also: `__eq__`, `__ne__`, `__hash__`, `__dir__`...
 </div></div>
 
 <hr class="sep-both">
@@ -295,6 +382,7 @@ Stuff that I found, but never read/used yet.
 * `a is b` (same value+address?)
 * `a in b` (a contains b?)
 * `%s %r %i`
+* `'%s' % ("xxx")`
 
 ```
 block:
