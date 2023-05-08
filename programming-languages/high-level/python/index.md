@@ -176,12 +176,12 @@ mod = 7 % 2           # 1
 sum += 1              # same as sum = sum + 1
                       # see also: -=, *=, and /=
 # logical
-if 5 == 5 : pass          # true
-if 5 != 5 : pass          # false
+if 5 == 5: pass          # true
+if 5 != 5: pass          # false
                           # see also: >, >=, <, <=
-if not False : pass       # logicial NOT => true
-if True or False : pass   # logical OR => true
-if True and False : pass  # logical AND => false
+if not False: pass       # logicial NOT => true
+if True or False: pass   # logical OR => true
+if True and False: pass  # logical AND => false
 ```
 
 ➡️ As long as they have the **SAME TYPE**, you can use `+` between two variables. This result either in **addition**, or in **concatenation**.
@@ -199,6 +199,8 @@ print(f"Message: {msg}")    # ✅ new
 
 print("Code: "+ str(5))     # 🤔 concatenation
 ```
+
+➡️ Use `input` to get input text: `input_text = input('Prompt text: ')`.
 </div></div>
 
 <hr class="sep-both">
@@ -485,9 +487,47 @@ import numpy
 tab = numpy.array([2, 5, 7])
 tab_square = tab ** 2  # ex: [4, 25, 49]
 ```
+
+#### scrapy
+
+`scrapy` is a library to manipulate packets. A packet is created by combining multiple protocols using `/`. It's send using `send` or other functions such as `srp` for layer 2 packets.
+
+```python
+from scapy.layers.l2 import *
+
+# EX: ARP Scan
+p = Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(pdst = "10.10.10.0/24")
+r, u = srp(p, timeout=2, iface="tun0", inter=0.1)
+
+for s,r in r:
+    print(r.sprintf(r"%Ether.src% - %ARP.psrc%"))
+```
 </div><div>
 
-...
+#### requests
+
+`requests` is a library to do HTTP requests.
+
+```python
+import requests
+
+r = requests.get("https://example.com")
+r = requests.get("https://example.com", allow_redirects=True)
+if r.status_code == 404:
+    pass
+```
+
+➡️ If the host is unreachable, a `requests.ConnectionError` is raised.
+
+#### pyfiglet
+
+`pyfiglet` can be used to show your "program name" using ASCII art.
+
+```python
+import pyfiglet
+
+print(pyfiglet.figlet_format("Metasploit"))
+```
 </div></div>
 
 <hr class="sep-both">
@@ -501,6 +541,7 @@ Stuff that I found, but never read/used yet.
 * `del()`: delete a variable
 * `dir()`: class properties
 * py2exe
+* `apt install python3-xxx`
 
 ```
 block:
