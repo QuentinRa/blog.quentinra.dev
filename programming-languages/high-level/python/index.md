@@ -171,6 +171,16 @@ elif False:
 else:
     pass
 ```
+
+#### Functions
+
+```python
+def my_function(a, b=2):
+    return a ** b
+	
+four = my_function(2)
+eight = my_function(2, 3)
+```
 </div><div>
 
 Inside Loops, you can use:
@@ -183,10 +193,10 @@ Inside Loops, you can use:
 We usually use a [range](#ranges) to imitate a `for i`.
 
 ```python
-for i in anIterable: # array, list, range...
-	pass
+for i in anIterable: # string, array, list, range...
+    pass
 for i, j in map: # dictionnary...
-	pass
+    pass
 ```
 
 #### Loops - while
@@ -207,25 +217,65 @@ while False:
 
 ```python
 string = "Hello, World!"
-len(string)                 # length
-string.count('l')           # occurrence count
-string.index('l')           # first index of
+len(string)                 # length (=13)
+string.count('l')           # occurrence count (=3)
+string.index('l')           # first index of (=2)
 string.upper()              # see also "lower()"
 string.startswith('H')      # or ...
 parts = string.split(',')   # split in ['Hello', ' World!']
 ```
+
+#### Dictionary
+
+```python
+map = {"a": 5, "b": 7}
+map["a"] = 9        # set
+b = map["b"]        # get
+map.pop('b')        # delete
+if b in map: pass   # contains
+for k, v in map:    # iterate
+	pass
+```
 </div><div>
 
-...
+#### Lists
+
+Lists are arrays that can have elements of different types.
+
+```python
+tab = [3, 5, 6]
+len(tab)           # length (=3)
+tab.append(3)      # add last (=[3, 5, 6, 3])
+tab[0]             # get first (=3)
+tab.count(3)       # occurrences (=2)
+tab = sorted(tab)  # sort (=[3, 3, 5, 6])
+```
+
+You can also generate lists using [list comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions):
+
+```python
+list = [i for i in in range(0,10) if i%2==0]
+```
+
+➡️ See also `arrays` for homogeneous data <small>(same type for all values)</small>.
 </div></div>
 
 <hr class="sep-both">
 
-## Functions
+## Common libraries
 
 <div class="row row-cols-md-2"><div>
 
-...
+#### numpy
+
+`numpy` is a well-known library simplifying operations on lists.
+
+```python
+import numpy
+
+tab = numpy.array([2, 5, 7])
+tab_square = tab ** 2  # ex: [4, 25, 49]
+```
 </div><div>
 
 ...
@@ -239,7 +289,11 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+* `del()`: delete a variable
+* `dir()`: class properties
+* `type(objet)`: object type
 * `a is b` (same value+address?)
+* `a in b` (a contains b?)
 * `%s %r %i`
 
 ```
