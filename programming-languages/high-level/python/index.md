@@ -104,18 +104,23 @@ Each type is associated to a class 🤖. You can use the **constructor** <small>
 ```python
 xxx = True or False           # bool 🤖 | ???
 xxx = b'\x00'                 # bytes 🤖 | ???
-xxx = 42                      # int 🤖 | %d - %x - %X 
+xxx = 42                      # int 🤖 | %d - %i - %x - %X 
 xxx = 42.0                    # float 🤖 | %f - %.xf - %0x.yf
 xxx = "42" + '42' + """42"""  # str 🤖 | %s
-xxx = object()                # object 🤖 | ???
+xxx = object()                # object 🤖 | %r
 ```
-
 
 You can check the class of a variable using `isinstance`
 
 ```python
 if isinstance(var, className): # ex: isinstance(xxx, bool)
     ...
+```
+
+🦄 Variables can be strongly typed, but it's NOT enforced by the language, e.g., there is no compilation errors:
+
+```python
+xxx : bool = False
 ```
 
 #### Ranges
@@ -151,6 +156,21 @@ if True and False : pass  # logical AND => false
 ```
 
 ➡️ As long as they have the **SAME TYPE**, you can use `+` between two variables. This result either in **addition**, or in **concatenation**.
+
+
+#### Print something on the console
+
+You can use `print`:
+
+```python
+print("Hello, World!")      # normal
+
+msg = "Hello, World"
+print("Message: %s" % msg)  # ❌ old
+print(f"Message: {msg}")    # ✅ new
+
+print("Code: "+ str(5))     # 🤔 concatenation
+```
 </div></div>
 
 <hr class="sep-both">
@@ -217,11 +237,17 @@ Functions parameters can have default value.
 ```python
 def my_function(a, b=2):
     return a ** b
-	
-four = my_function(2)
-eight = my_function(2, 3)
+```
+
+🦄 Functions can be strongly typed, but it's NOT enforced by the language, e.g., there is no compilation errors:
+
+```python
+def my_function(a: string) -> string:
+    pass
 ```
 </div><div>
+
+#### Variadic functions
 
 You can create variadic functions <small>(e.g. variable number of arguments)</small>:
 
@@ -234,6 +260,8 @@ fct(1)
 fct(1, 2)
 fct(1, 2, 3)
 ```
+
+#### Options
 
 You can create function with options:
 
@@ -272,6 +300,8 @@ print(johnDoe.tostring())
 ```
 </div><div>
 
+#### Constructors
+
 You can use a [constructor](/programming-languages/_paradigm/oo.md#constructors) to set attributes:
 
 ```python
@@ -283,7 +313,9 @@ class Person:
 johnDoe = Person("Jane Doe", "US")
 ```
 
-Each class has methods that can be overrided. For instance, instead of `toString`, you can override `__str__` to convert something to a string:
+#### Builtin methods
+
+Each class has methods that we can override. For instance, instead of `toString`, you can override `__str__` to convert something to a string:
 
 ```python
 class Person:
@@ -381,8 +413,6 @@ Stuff that I found, but never read/used yet.
 * `type(objet)`: object type
 * `a is b` (same value+address?)
 * `a in b` (a contains b?)
-* `%s %r %i`
-* `'%s' % ("xxx")`
 
 ```
 block:
