@@ -89,10 +89,53 @@ $ pip3 install -r requirements.txt # load
 
 <div class="row row-cols-md-2"><div>
 
-...
+#### Variables
+
+```python
+var1 = 5
+var2, var3 = "a", "b" # multiple
+var4 = str("ab") # constructor
+```
+
+#### Types
+
+Each type is associated to a class 🤖. You can use the **constructor** <small>(`className()`)</small> to convert values: `str(5) == "5"`.
+
+```python
+xxx = True or False           # bool 🤖 | ???
+xxx = b'\x00'                 # bytes 🤖 | ???
+xxx = 42                      # int 🤖 | %d - %x - %X 
+xxx = 42.0                    # float 🤖 | %f - %.xf - %0x.yf
+xxx = "42" + '42' + """42"""  # str 🤖 | %s
+xxx = object()                # object 🤖 | ???
+```
+
+
+You can check the class of a variable using `isinstance`
+
+```python
+if isinstance(var, className): # ex: isinstance(xxx, bool)
+    ...
+```
 </div><div>
 
-...
+#### Operators
+
+```python
+# arithmetic
+sum = 5 + 5           # 10
+substraction = 5 - 5  # 0
+product = 5 * 5       # 25
+division = 6 / 5      # 1
+sum += 1              # same as sum = sum + 1
+                      # see also: -=, *=, and /=
+# logical
+if 5 == 5 : pass          # true
+if 5 != 5 : pass          # false
+if not False : pass       # logicial NOT => true
+if True or False : pass   # logical OR => true
+if True and False : pass  # logical AND => false
+```
 </div></div>
 
 <hr class="sep-both">
@@ -118,5 +161,12 @@ $ pip3 install -r requirements.txt # load
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
+
+* `%s %r %i`
+
+```
+block:
+    block:
+```
 </div><div>
 </div></div>
