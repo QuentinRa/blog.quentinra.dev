@@ -30,7 +30,7 @@ A radix or a base is a number of unique digits that we can use to encode a messa
 **Some tools to detect the encoding/decode/encode** 🚀
 
 * [CyberChef](https://github.com/gchq/CyberChef) (19.2k ⭐) | [Online version](https://gchq.github.io/CyberChef/)
-* Burp Suite Decoder
+* [Burp Suite Decoder](/cybersecurity/red-team/s3.exploitation/tools/files/burp_decoder.md)
 * [Decodify](https://github.com/s0md3v/Decodify) (0.8k ⭐)
 * [binaryhexconverter.com](https://www.binaryhexconverter.com/)
 * [rapidtables.com/base converter](https://www.rapidtables.com/convert/number/base-converter.html)

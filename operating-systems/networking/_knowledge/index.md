@@ -152,16 +152,60 @@ Each protocol can be represented using a [Message Sequence Chart](https://en.wik
 
 **Layer 7: Application Layer** <small>(data)</small> 🧑
 
-* File transfer 📂: [FTP](../protocols/ftp.md), [SFTP](../protocols/sftp.md), or [SCP](../protocols/scp.md)
-* Mail transfer 📫: [SMTP](../protocols/smtp.md), [POP3](../protocols/pop3.md), [IMAP](../protocols/imap.md)
-* Web requests 🌍: [HTTP](../protocols/http.md)
-* Remote shell access 🧑‍💻: [SSH](../protocols/ssh.md), or [telnet](../protocols/telnet.md)
-* Remote desktop access 💻: [RDP](../protocols/rdp.md)
-* Domain resolution 📍: [DNS](../protocols/dns.md)
-* Network file system 🗃️: [NFS](../protocols/nfs.md), or [SMB](../protocols/smb.md)
-* IP addresses lease 🎯: [DHCP](../protocols/dhcp.md)
-* Network Management 🧼: [SNMP](../protocols/snmp.md)
+<table class="table table-borderless w-75 table-striped border-dark">
+<tbody>
 
+<tr><td class="py-0 my-0">File transfer 📂</td><td class="py-0 my-0">
+
+* [FTP](../protocols/ftp.md)
+* [SFTP](../protocols/sftp.md)
+* [SCP](../protocols/scp.md)
+</td></tr>
+
+<tr><td class="py-0 my-0">Mail transfer 📫</td><td class="py-0 my-0">
+
+* [SMTP](../protocols/smtp.md)
+* [POP3](../protocols/pop3.md)
+* [IMAP](../protocols/imap.md)
+</td></tr>
+
+<tr><td class="py-0 my-0">Remote shell access 🧑‍💻</td><td class="py-0 my-0">
+
+* [SSH](../protocols/ssh.md)
+* [telnet](../protocols/telnet.md)
+</td></tr>
+
+<tr><td class="py-0 my-0">Web requests 🌍</td><td class="my-0 py-0">
+
+* [HTTP](../protocols/http.md)
+</td></tr>
+
+<tr><td class="py-0 my-0">Remote desktop access 💻</td><td class="my-0 py-0">
+
+* [RDP](../protocols/rdp.md)
+</td></tr>
+
+<tr><td class="py-0 my-0">Domain resolution 📍</td><td class="my-0 py-0">
+
+* [DNS](../protocols/dns.md)
+</td></tr>
+
+<tr><td class="py-0 my-0">Network file system 🗃️</td><td class="my-0 py-0">
+
+* [NFS](../protocols/nfs.md)
+* [SMB](../protocols/smb.md)
+</td></tr>
+
+<tr><td class="py-0 my-0">IP addresses lease 🎯</td><td class="my-0 py-0">
+
+* [DHCP](../protocols/dhcp.md)
+</td></tr>
+
+<tr><td class="py-0 my-0">Network Management 🧼</td><td class="my-0 py-0">
+
+* [SNMP](../protocols/snmp.md)
+</td></tr>
+</tbody></table>
 </div><div>
 
 **Layer 6: Presentation Layer** <small>(data)</small> 🔒

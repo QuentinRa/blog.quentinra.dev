@@ -107,8 +107,6 @@ $ ls /<TAB>
 [![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 [![linux1](../../../cybersecurity/_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
 
-*See the section: [common files and folders](/operating-systems/linux/architecture/index.md#common-files-and-folders).*
-
 <div class="row row-cols-md-2 mt-3"><div>
 
 A **path** 🛣️ is a suite of one or more folders 📂 that may lead to a regular file 📄. They are separated by a separtor which is: `/` <small>(slash)</small>.
@@ -121,6 +119,8 @@ $ pwd
 ➡️ The root folder <small>(similar to C: on Windows)</small> contains every other folder. It's the leading `/` of every path.
 
 ➡️ Each user has a home folder with their documents...
+
+🦄 See also: [Common files and folders](/operating-systems/linux/architecture/index.md#common-files-and-folders).
 
 <br>
 
@@ -147,7 +147,7 @@ $ ./toto.txt
 $ /home/example/toto.txt # same
 ```
 
-🦐 `root` is its own parent <small>(`/../` is the same as `/`)</small>.
+➡️ `root` is its own parent <small>(`/../` is the same as `/`)</small>.
 
 🧪 Following slashes are merged <small>(`///` becomes `/`)</small>.
 </div></div>
