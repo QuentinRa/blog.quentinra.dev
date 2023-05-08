@@ -14,17 +14,69 @@ $ python3
 ```
 </div><div>
 
-Otherwise, you can also create a file `xxx.py`:
+Otherwise, you can also create a **Python script** `xxx.py`:
 
 ```ps
 # print "Hello, World!"
 print("Hello, World!");
 ```
 
-Then use:
+Then execute it through the interpreter:
 
 ```ps
 $ python3 xxx.py
 Hello, World
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Python ecosystem
+
+<div class="row row-cols-md-2"><div>
+
+#### Modules
+
+...
+
+#### Packages
+
+...
+</div><div>
+
+#### Python2
+
+...
+
+#### VENV
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Python basics
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Control-flow structures
+
+<div class="row row-cols-md-2"><div>
+
+#### Branching
+
+...
+</div><div>
+
+#### Loops
+
+...
 </div></div>
