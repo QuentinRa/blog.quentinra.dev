@@ -263,9 +263,9 @@ Exceptions are mostly raised when an error occurred. You can catch them to handl
 
 ```python
 try:
-    # xxx
-except Exception:
-    # ...
+    raise Exception("example")
+except Exception as e: # 👉 "as e" is optional
+    print(e.args[0]) # "example"
 ```
 </div></div>
 
@@ -473,11 +473,11 @@ if __name__ == '__main__':
 
 <hr class="sep-both">
 
-## Common libraries
+## Some libraries
 
 <div class="row row-cols-md-2"><div>
 
-#### numpy
+#### numpy - manipulate lists
 
 `numpy` is a library simplifying and optimizing operations on lists.
 
@@ -488,7 +488,7 @@ tab = numpy.array([2, 5, 7])
 tab_square = tab ** 2  # ex: [4, 25, 49]
 ```
 
-#### scrapy
+#### scrapy - manipulate packets
 
 `scrapy` is a library to manipulate packets. A packet is created by combining multiple protocols using `/`. It's send using `send` or other functions such as `srp` for layer 2 packets.
 
@@ -502,9 +502,31 @@ r, u = srp(p, timeout=2, iface="tun0", inter=0.1)
 for s,r in r:
     print(r.sprintf(r"%Ether.src% - %ARP.psrc%"))
 ```
+
+#### keyboard - grab keystrokes
+
+`keyboard` can capture keyboard strokes.
+
+```python
+import keyboard
+
+keys = keyboard.record(until ='ENTER')  # until ENTER
+print(keys)                             # see key down/up
+keyboard.play(keys)                     # replay input
+```
+
+#### pyfiglet - banner
+
+`pyfiglet` can be used to show your "program name" using ASCII art.
+
+```python
+import pyfiglet
+
+print(pyfiglet.figlet_format("Metasploit"))
+```
 </div><div>
 
-#### requests
+#### requests - http requests
 
 `requests` is a library to do HTTP requests.
 
@@ -519,14 +541,36 @@ if r.status_code == 404:
 
 ➡️ If the host is unreachable, a `requests.ConnectionError` is raised.
 
-#### pyfiglet
+#### hashlib - hash manipulation
 
-`pyfiglet` can be used to show your "program name" using ASCII art.
+`hashlib` can hash a password.
 
 ```python
-import pyfiglet
+import hashlib
 
-print(pyfiglet.figlet_format("Metasploit"))
+m = hashlib.md5("a password".strip().encode())
+digest = m.hexdigest()
+if digest == "your hash":
+    pass
+```
+
+#### socket - networking
+
+`socket` is a low-level networking library.
+
+```python
+import socket
+
+ip = socket.gethostbyname("example.com") # host to IP
+port = 4444
+try:
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.settimeout(0.5)
+    r = sock.connect_ex((ip, port))
+    # ...
+    sock.close()
+except Exception as e:
+    pass
 ```
 </div></div>
 
