@@ -159,6 +159,8 @@ if True and False : pass  # logical AND => false
 
 <div class="row row-cols-md-2"><div>
 
+Inside any statement, you can use `pass` to indicate a statement without any code. It's useful for blocks that are not coded yet.
+
 #### Branching - if
 
 ```python
@@ -171,12 +173,19 @@ else:
 ```
 </div><div>
 
+Inside Loops, you can use:
+
+* `continue`: skip the current iteration, process to the next one
+* `break`: end the loop
+
 #### Loops - for
 
-We usually use a `range` to imitate a `for i`.
+We usually use a [range](#ranges) to imitate a `for i`.
 
 ```python
-for i in set:
+for i in anIterable: # array, list, range...
+	pass
+for i, j in map: # dictionnary...
 	pass
 ```
 
@@ -186,6 +195,40 @@ for i in set:
 while False:
     pass
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Common types
+
+<div class="row row-cols-md-2"><div>
+
+#### String
+
+```python
+string = "Hello, World!"
+len(string)                 # length
+string.count('l')           # occurrence count
+string.index('l')           # first index of
+string.upper()              # see also "lower()"
+string.startswith('H')      # or ...
+parts = string.split(',')   # split in ['Hello', ' World!']
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Functions
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">
@@ -208,4 +251,12 @@ a = 5 + \
     2
 ```
 </div><div>
+
+```
+str[3:7] # s 3rd to 7th
+str[3:7:2] # step = 2
+str[:5] # 1st to 5th
+str[-5:] # 5th to last
+str[::-1] # reverse
+```
 </div></div>
