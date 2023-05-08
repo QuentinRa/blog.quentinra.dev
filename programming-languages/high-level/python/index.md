@@ -1,5 +1,8 @@
 # Python
 
+[![pythonbasics](../../../cybersecurity/_badges/thm/pythonbasics.svg)](https://tryhackme.com/room/pythonbasics)
+[![pythonforcybersecurity](../../../cybersecurity/_badges/thmp/pythonforcybersecurity.svg)](https://tryhackme.com/room/pythonforcybersecurity)
+
 <div class="row row-cols-md-2"><div>
 
 Python 🐍 is a multi-purpose high-level scripting language. Because it's quite easy to learn/use, it's unfortunately used as a [Golden hammer](https://sourcemaking.com/antipatterns/golden-hammer) 🔨🔥 <small>(AntiPattern)</small> by many developers.
@@ -453,6 +456,15 @@ import sys
 
 print(sys.version_info)  # {major=3, ...}
 ```
+
+#### Check if this is the main script
+
+This is used to run some code when a script is the main.
+
+```python
+if __name__ == '__main__':
+    # ...
+```
 </div><div>
 
 #### Dates
@@ -463,11 +475,18 @@ import datetime
 print(datetime.datetime.now())
 ```
 
-#### Check if this is the main script
+#### Files
+
+It's common to open file using `with`, as they are automatically closed <small>(`file.close()`)</small>. The opening mode can be `r` <small>(read)</small>, `w` <small>(write)</small>, or `a` <small>(append)</small>.
 
 ```python
-if __name__ == '__main__':
-    # ...
+with open(password_file, 'r') as file:
+    # do something
+    content = file.read()    # read the whole file
+    lines = file.readlines() # stores lines in a list
+    for line in file:        # read line by line
+        # ...
+    file.write("xxx")        # append/write a line
 ```
 </div></div>
 
@@ -487,6 +506,21 @@ import numpy
 tab = numpy.array([2, 5, 7])
 tab_square = tab ** 2  # ex: [4, 25, 49]
 ```
+
+#### requests - http requests
+
+`requests` is a library to do HTTP requests.
+
+```python
+import requests
+
+r = requests.get("https://example.com")
+r = requests.get("https://example.com", allow_redirects=True)
+if r.status_code == 404:
+    pass
+```
+
+➡️ If the host is unreachable, a `requests.ConnectionError` is raised.
 
 #### scrapy - manipulate packets
 
@@ -526,21 +560,6 @@ print(pyfiglet.figlet_format("Metasploit"))
 ```
 </div><div>
 
-#### requests - http requests
-
-`requests` is a library to do HTTP requests.
-
-```python
-import requests
-
-r = requests.get("https://example.com")
-r = requests.get("https://example.com", allow_redirects=True)
-if r.status_code == 404:
-    pass
-```
-
-➡️ If the host is unreachable, a `requests.ConnectionError` is raised.
-
 #### hashlib - hash manipulation
 
 `hashlib` can hash a password.
@@ -572,6 +591,22 @@ try:
 except Exception as e:
     pass
 ```
+
+#### paramiko - SSHv2 implementation
+
+`paramiko` can connect to a SSH server.
+
+```python
+import paramiko
+
+ssh = paramiko.SSHClient()
+ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+try:
+    ssh.connect(target, port=22, username=username, password=password)
+except paramiko.AuthenticationException:
+    pass
+ssh.close()
+```
 </div></div>
 
 <hr class="sep-both">
@@ -588,9 +623,6 @@ Stuff that I found, but never read/used yet.
 * `apt install python3-xxx`
 
 ```
-block:
-    block:
-
 a = 5 + \
     3 + \
     2
