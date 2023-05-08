@@ -110,6 +110,7 @@ x++;                      // same as x = x + 1
 // logical
 if (5 == 5) {}         // true
 if (5 != 5) {}         // false
+                       // see also: >, >=, <, <=
 if (!false) {}         // logicial NOT => true
 if (true || false) {}  // logical OR => true
 if (true && false) {}  // logical AND => false

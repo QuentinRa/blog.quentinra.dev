@@ -117,6 +117,16 @@ You can check the class of a variable using `isinstance`
 if isinstance(var, className): # ex: isinstance(xxx, bool)
     ...
 ```
+
+#### Ranges
+
+Range are sets generated from an interval:
+
+```python
+set = range(10) # set = [0, 1, ..., 9]
+set = range(3, 7) # set = [3, 4, ..., 6]
+set = range(3, 7, 2) # set = [3, 5]
+```
 </div><div>
 
 #### Operators
@@ -127,15 +137,20 @@ sum = 5 + 5           # 10
 substraction = 5 - 5  # 0
 product = 5 * 5       # 25
 division = 6 / 5      # 1
+power = 6 ** 2        # 6^2 = 36
+mod = 7 % 2           # 1
 sum += 1              # same as sum = sum + 1
                       # see also: -=, *=, and /=
 # logical
 if 5 == 5 : pass          # true
 if 5 != 5 : pass          # false
+                          # see also: >, >=, <, <=
 if not False : pass       # logicial NOT => true
 if True or False : pass   # logical OR => true
 if True and False : pass  # logical AND => false
 ```
+
+➡️ As long as they have the **SAME TYPE**, you can use `+` between two variables. This result either in **addition**, or in **concatenation**.
 </div></div>
 
 <hr class="sep-both">
@@ -144,14 +159,33 @@ if True and False : pass  # logical AND => false
 
 <div class="row row-cols-md-2"><div>
 
-#### Branching
+#### Branching - if
 
-...
+```python
+if True:
+    pass
+elif False:
+    pass
+else:
+    pass
+```
 </div><div>
 
-#### Loops
+#### Loops - for
 
-...
+We usually use a `range` to imitate a `for i`.
+
+```python
+for i in set:
+	pass
+```
+
+#### Loops - while
+
+```python
+while False:
+    pass
+```
 </div></div>
 
 <hr class="sep-both">
@@ -162,11 +196,16 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+* `a is b` (same value+address?)
 * `%s %r %i`
 
 ```
 block:
     block:
+
+a = 5 + \
+    3 + \
+    2
 ```
 </div><div>
 </div></div>
