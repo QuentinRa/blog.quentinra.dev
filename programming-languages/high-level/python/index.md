@@ -62,6 +62,18 @@ $ python3 -m pip install --upgrade pip
 ```
 </div><div>
 
+#### Imports
+
+```python
+import xxx
+import xxx as yyy         # alias
+import xxx.yyy.zzz        # "zzz" in package "xxx.yyy"
+
+from xxx import aaa       # import only aaa
+from xxx import aaa, bbb  # import aaa and bbb
+from xxx import *         # import all
+```
+
 #### VENV
 
 Each project need some packages and in some specific versions. To avoid messing with others project when installing/updating/... packages, we usually create one virtual environment **VENV** per project. Once **activated** <small>(by running activate)</small>, new packages will be added to the local copy at `path/to/venv`.
@@ -117,11 +129,26 @@ if isinstance(var, className): # ex: isinstance(xxx, bool)
     ...
 ```
 
+➡️ To indicate the non-existing of something, we use `None`:
+
+```python
+x = None
+if x is None:
+    pass
+```
+
+➡️ You can get the type of something using `type(objet)`
+
+```python
+type("xxx") # <class 'str'>
+```
+
 🦄 Variables can be strongly typed, but it's NOT enforced by the language, e.g., there is no compilation errors:
 
 ```python
 xxx : bool = False
 ```
+</div><div>
 
 #### Ranges
 
@@ -132,7 +159,6 @@ set = range(10) # set = [0, 1, ..., 9]
 set = range(3, 7) # set = [3, 4, ..., 6]
 set = range(3, 7, 2) # set = [3, 5]
 ```
-</div><div>
 
 #### Operators
 
@@ -156,7 +182,6 @@ if True and False : pass  # logical AND => false
 ```
 
 ➡️ As long as they have the **SAME TYPE**, you can use `+` between two variables. This result either in **addition**, or in **concatenation**.
-
 
 #### Print something on the console
 
@@ -191,6 +216,17 @@ elif False:
 else:
     pass
 ```
+
+🤡 It's worth noting that `else:` can be used after most blocks such as for/while loops or exceptions. It's executed after the block.
+
+#### Branching - if in
+
+You can check if something is inside a set using `in`:
+
+```python
+if True in set:
+    pass
+```
 </div><div>
 
 Inside Loops, you can use:
@@ -205,7 +241,7 @@ We usually use a [range](#ranges) to imitate a `for i`.
 ```python
 for i in anIterable: # string, array, list, range...
     pass
-for i, j in map: # dictionnary...
+for i, j in tuple: # dictionnary.items(), tuples...
     pass
 ```
 
@@ -214,6 +250,17 @@ for i, j in map: # dictionnary...
 ```python
 while False:
     pass
+```
+
+#### Exceptions
+
+Exceptions are mostly raised when an error occurred. You can catch them to handle them using `try-except`:
+
+```python
+try:
+    # xxx
+except Exception:
+    # ...
 ```
 </div></div>
 
@@ -410,9 +457,6 @@ Stuff that I found, but never read/used yet.
 
 * `del()`: delete a variable
 * `dir()`: class properties
-* `type(objet)`: object type
-* `a is b` (same value+address?)
-* `a in b` (a contains b?)
 
 ```
 block:
