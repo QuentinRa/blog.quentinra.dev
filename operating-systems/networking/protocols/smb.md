@@ -98,6 +98,12 @@ $ enum4linux -a IP
 # -i : print printer information
 # -v : verbose
 ```
+
+* [CVE-2017-0144](https://attackerkb.com/topics/xI1y9OoEgq/cve-2017-0144-ms17-010) - EternalBlue - MS17-010
+
+[![blue](../../../cybersecurity/_badges/thm-p/blue.svg)](https://tryhackme.com/room/blue)
+
+A vulnerability in the SMB protocol allowing Remote Code Execution (RCE). It was discovered by the NSA and stolen by hackers,
 </div></div>
 
 <hr class="sep-both">

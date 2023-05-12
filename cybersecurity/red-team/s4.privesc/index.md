@@ -50,11 +50,11 @@ You may want to find [who/where you are](linux/id.md) first.
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
 
-* [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) <small>(12.1k ⭐, shell script)</small>
-* [LinEnum](https://github.com/rebootuser/LinEnum) <small>(5.8k ⭐, shell script)</small>
-* [traitor](https://github.com/liamg/traitor)  <small>(5.5k ⭐, go script, 👻)</small>
+* [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) <small>(12.2k ⭐, shell script)</small>
+* [LinEnum](https://github.com/rebootuser/LinEnum) <small>(5.9k ⭐, shell script)</small>
+* [traitor](https://github.com/liamg/traitor)  <small>(5.9k ⭐, go script, 👻)</small>
 * [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) a.k.a. LSE <small>(2.7k ⭐n shell script)</small>
-* [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) <small>(1.2k ⭐, python script)</small>
+* [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) <small>(1.3k ⭐, python script)</small>
 * [pwncat-cs](/cybersecurity/red-team/s3.exploitation/shell/pwncat.md) <small>(2.0k ⭐, reverse shell with escalation suggester)</small>
 </div></div>
 
@@ -71,7 +71,11 @@ There are many **automated scripts** that will investigate usual places, service
 * 🔑 Finding [credentials](windows/credentials.md) <small>(config, logs, passwords...)</small>
 </div><div>
 
-...
+There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
+
+* [WinPeas](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS) <small>(12.2k ⭐, binary, `.\winPEASany_ofs.exe`)</small>
+* [PrivescCheck](https://github.com/itm4n/PrivescCheck) <small>(2.1k ⭐, powershell script, `powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"`)</small>
+* [PowerSploit](https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc) <small>(10.6k ⭐,  powershell script, archived, `powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"`. Older: [PowerTools](https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerUp) and [PowerUp](https://github.com/HarmJ0y/PowerUp))</small>.
 </div></div>
 
 <hr class="sep-both">

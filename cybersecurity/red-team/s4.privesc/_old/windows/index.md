@@ -6,22 +6,6 @@
 [![windowsprivesc20](../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
 [![windows_privilege_escalation](../../_badges/poat/windows_privilege_escalation.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md)
 
-<div class="row row-cols-md-2"><div>
-</div><div>
-
-There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
-
-* [WinPeas](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS) (10.5k ⭐)
-* [PrivescCheck](https://github.com/itm4n/PrivescCheck) (1.8k ⭐)
-* [PowerUp](https://github.com/HarmJ0y/PowerUp) (222⭐) that was deprecated over [PowerTools](https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerUp) (1.8k ⭐) that was deprecated again over [PowerSploit](https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc) (10k ⭐) which is now archived 😂. PowerUp from PowerSploit is still used.
-
-```powershell
-PS> .\winPEASany_ofs.exe
-PS> powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"
-PS> powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"
-```
-</div></div>
-
 <hr class="sep-both">
 
 ## Learn more about your environment
@@ -46,20 +30,6 @@ Aside from commands that are in the Windows notes, here are a few used in cybers
 * `net user username`: info about a user
 
 > Change the keyboard language to French: `Set-WinUserLanguageList -LanguageList  fr-FR, en-US -force` ([source](https://stackoverflow.com/questions/56820526/how-to-change-keyboard-layout-in-windows-console-cmd-or-wsl)).
-</div></div>
-
-<hr class="sep-both">
-
-## Windows exploits
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-* [CVE-2017-0144](https://attackerkb.com/topics/xI1y9OoEgq/cve-2017-0144-ms17-010) - EternalBlue - MS17-010
-
-[![blue](../../_badges/thm-p/blue.svg)](https://tryhackme.com/room/blue)
-
-A vulnerability in the SMB protocol allowing Remote Code Execution (RCE). It was discovered by the NSA and stolen by hackers,
-</div><div>
 </div></div>
 
 <hr class="sep-both">
