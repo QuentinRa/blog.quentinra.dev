@@ -7,15 +7,6 @@
 [![windows_privilege_escalation](../../_badges/poat/windows_privilege_escalation.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md)
 
 <div class="row row-cols-md-2"><div>
-
-As there isn't much we can do as a regular user, we will try to elevate our level of privileges to Administrator, or system. You may have to do horizontal escalation first, i.g. moving to another account that has the same level of privilege, but may have different permissions.
-
-* Misconfigurations <small>(user permissions...)</small>
-* Missing security updates <small>(vulnerable OS, software...)</small>
-* Find vulnerable scheduled tasks/services
-
-The **goal is to pop out a PowerShell/CMD as root** (root shell), basically, the same as selecting "run as administrator" for one of them.
-
 </div><div>
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
@@ -63,36 +54,11 @@ Aside from commands that are in the Windows notes, here are a few used in cybers
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-* ➡️ 2016-08-15 (no CVE?)
-
-[![blaster](../../_badges/thm-p/ice.svg)](https://tryhackme.com/room/blaster)
-
-Bypass User Account Control (UAC) using `eventvwr.exe`. The attack is done by editing the registry, which means you must have sufficient privileges to do so <small>(not necessarily an admin, but not a regular user)</small>.
-
 * [CVE-2017-0144](https://attackerkb.com/topics/xI1y9OoEgq/cve-2017-0144-ms17-010) - EternalBlue - MS17-010
 
 [![blue](../../_badges/thm-p/blue.svg)](https://tryhackme.com/room/blue)
 
 A vulnerability in the SMB protocol allowing Remote Code Execution (RCE). It was discovered by the NSA and stolen by hackers,
-</div><div>
-
-* ➡️ [CVE-2019-1388](https://github.com/nobodyatall648/CVE-2019-1388)
-
-[![blaster](../../_badges/thm-p/blaster.svg)](https://tryhackme.com/room/blaster)
-
-Exploit User Account Control (UAC) which is the popup prompted when trying to run a program as administrator.
-</div></div>
-
-<hr class="sep-both">
-
-## Find credentials
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-```powershell
-# use to start a root shell
-PS> runas /savecred /user:admin cmd.exe
-```
 </div><div>
 </div></div>
 
@@ -214,22 +180,6 @@ Hackers can use that to store malicious code inside a file. They can execute it 
 More about it:
 
 * [Introduction to Alternate Data Streams](https://www.malwarebytes.com/blog/news/2015/07/introduction-to-alternate-data-streams)
-</div></div>
-
-<hr class="sep-both">
-
-## Random
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-* ➡️ **AlwaysInstallElevated**: it's possible that an admin allowed programs to be installed without needed Administrator privilege, i.e. without the User Account Control (UAC) popup. If both are set, then you found a golden fish 🎣
-
-```java
-PS> reg query HKCU\SOFTWARE\Policies\Microsoft\Windows\Installer
-PS> reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer
-PS> msiexec /quiet /qn /i $Env:TMP\malicious.msi
-```
-</div><div>
 </div></div>
 
 <hr class="sep-both">

@@ -66,7 +66,7 @@ There are many **automated scripts** that will investigate usual places, service
 
 [Windows](/operating-systems/windows/knowledge/index.md) privilege escalation may be achieved by exploiting:
 
-* 💎 Exploiting UAC 
+* 💎 Exploiting [UAC](windows/uac.md)
 * ⏰ Exploiting [scheduled tasks](windows/tasks.md)
 * 🔑 Finding [credentials](windows/credentials.md) <small>(config, logs, passwords...)</small>
 </div><div>

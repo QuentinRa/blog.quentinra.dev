@@ -32,6 +32,8 @@ List saved credentials by Windows:
 
 ```shell!
 PS> cmdkey /list
+PS> # use 'admin' saved credentials to start cmd.exe
+PS> runas /savecred /user:admin cmd.exe
 ```
 
 Some known locations:
