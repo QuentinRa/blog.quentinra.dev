@@ -60,6 +60,22 @@ There are many **automated scripts** that will investigate usual places, service
 
 <hr class="sep-both">
 
+## Windows privilege escalation 🪟
+
+<div class="row row-cols-md-2"><div>
+
+[Windows](/operating-systems/windows/knowledge/index.md) privilege escalation may be achieved by exploiting:
+
+* 💎 Exploiting UAC 
+* ⏰ Exploiting [scheduled tasks](windows/tasks.md)
+* 🔑 Finding [credentials](windows/credentials.md) <small>(config, logs, passwords...)</small>
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
