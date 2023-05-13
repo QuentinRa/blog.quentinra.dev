@@ -8,32 +8,6 @@
 
 <hr class="sep-both">
 
-## Learn more about your environment
-
-Aside from commands that are in the Windows notes, here are a few used in cybersecurity.
-
-<div class="row row-cols-md-2"><div>
-
-* `ver` (cmd-only): see Windows version
-* `whoami`: see your username <small>(ex: `NT AUTHORITY\SYSTEM`=root)</small>
-* `whoami /groups`: see your groups
-* `hostname`: see hostname
-* `ipconfig`: network configuration
-* `netstat`: monitor network traffic
-* `systeminfo`: see info about the system
-</div><div>
-
-* `Get-LocalGroup`: list groups (users, administrators...)
-* `Get-LocalUser`:list users
-* `net localgroup users`:list users in the group "users"
-* `net localgroup administrators`: list administrators
-* `net user username`: info about a user
-
-> Change the keyboard language to French: `Set-WinUserLanguageList -LanguageList  fr-FR, en-US -force` ([source](https://stackoverflow.com/questions/56820526/how-to-change-keyboard-layout-in-windows-console-cmd-or-wsl)).
-</div></div>
-
-<hr class="sep-both">
-
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

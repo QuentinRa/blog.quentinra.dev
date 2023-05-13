@@ -70,6 +70,8 @@ There are many **automated scripts** that will investigate usual places, service
 * ⏰ Exploiting [scheduled tasks](windows/tasks.md)
 * 🔑 Finding [credentials](windows/credentials.md) <small>(config, logs, passwords...)</small>
 * 🐸 Misconfigured [services](windows/services.md)
+
+You may want to find [who/where you are](windows/id.md) first.
 </div><div>
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...

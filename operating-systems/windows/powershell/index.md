@@ -173,6 +173,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+To change the keyboard language to French: `Set-WinUserLanguageList -LanguageList  fr-FR, en-US -force` ([source](https://stackoverflow.com/questions/56820526/how-to-change-keyboard-layout-in-windows-console-cmd-or-wsl)).
+
 * dot sourcing: `. xxx.ps1`
 * Windows installer files (also known as .msi files) are used to install applications on the system. 
 * AllSigned (and others modes|Get-ExecutionPolicy)
