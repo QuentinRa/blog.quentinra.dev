@@ -84,6 +84,9 @@ To manage them
 </details>
 </div><div>
 
+* `/Windows/System32/config/`: location where the Security Account Manager (**SAM**) database file is stored. This file is used to store users, their passwords, their groups... Modern versions of Windows use the NT hash format, commonly referred to as NTLM, as the previous format was LM.
+* [Windows credential guard](https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-how-it-works)
+
 **Windows Update** (`control /name Microsoft.WindowsUpdate`)
 
 A service looking for updates, downloading them, and asking <small>(forcing since Windows 10)</small> the user to install them. They are usually released on the 2nd Tuesday of each month (Patch Tuesday).

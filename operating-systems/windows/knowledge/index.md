@@ -283,6 +283,7 @@ Stuff that I found, but never read/used yet.
 
 * Daemons (linux) are called services on Windows
 * Hyper-v
+* [wmic](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wmic): a deprecated console since Windows 10 21H1
 
 ```ps
 C:\> IEX((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
