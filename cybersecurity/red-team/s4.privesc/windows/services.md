@@ -6,8 +6,6 @@
 
 <div class="row row-cols-md-2"><div>
 
-**Warning ⚠️: `sc` must be replaced by `sc.exe` in PowerShell.**
-
 Windows services are managed by the Service Control Manager <small>(SCM)</small>.
 
 * 🗺️ List services
@@ -15,13 +13,13 @@ Windows services are managed by the Service Control Manager <small>(SCM)</small>
 ```shell!
 PS> Get-Service
 PS> net start
-CMD> sc query # with infos
+PS> sc.exe query # with infos
 ```
 
 * 🔎 Get more info about a service
 
 ```shell!
-CMD> sc qc xxx
+PS> sc.exe qc xxx
 [SC] QueryServiceConfig SUCCESS
 
 SERVICE_NAME: xxx

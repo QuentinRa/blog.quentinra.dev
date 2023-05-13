@@ -24,6 +24,64 @@ Stuff that I found, but never read/used yet.
 * Hiren's bootcd
 * [SASE](https://www.microsoft.com/en-us/security/business/security-101/what-is-sase)
 * sysmon
+
+<details class="details-n">
+<summary>Alternate Data Streams (ADS)</summary>
+
+<div class="row row-cols-md-2"><div>
+
+On a file system using NTFS, ADS allows files to have more than one stream (`flux`) of data. By default, every file has only one stream: **:$DATA**. You can inspect a file using
+
+```powershell
+> Get-Item -Path SomeFile -Stream *
+
+PSPath        : Microsoft.PowerShell.Core\FileSystem::XXX\toto.pdf::$DATA
+PSParentPath  : Microsoft.PowerShell.Core\FileSystem::XXX
+PSChildName   : toto.pdf::$DATA
+PSDrive       : XXX
+PSProvider    : Microsoft.PowerShell.Core\FileSystem
+PSIsContainer : False
+FileName      : XXX\toto.pdf
+Stream        : :$DATA
+Length        : 0
+```
+</div><div>
+
+They can be used by Windows to store data, such as identifiers telling Windows that this file was downloaded from the Internet.
+
+Hackers can use that to store malicious code inside a file. They can execute it like this later, for instance using a legit/non-malicious application
+
+```powershell
+> $(Resolve-Path .\file.exe:stream)
+```
+
+More about it:
+
+* [Introduction to Alternate Data Streams](https://www.malwarebytes.com/blog/news/2015/07/introduction-to-alternate-data-streams)
+</div></div>
+</details>
+
+
+<details class="details-n">
+<summary>Volume Shadow Copy Service (VSS)</summary>
+
+<div class="row row-cols-md-2"><div>
+
+The Volume Shadow Copy Service (VSS) is handling the creation, and management of **shadow copies**/**snapshot** of the data backed up.
+
+They are stored in the volume information of each drive that has the feature enabled.
+
+They may allow a system admin to restore the system after an attack. So, hackers will most likely check them, and delete them. There may exist an "offline" version of these shadow copies.
+</div><div>
+
+To manage them
+
+* Right-click on a hard-drive
+* Select Shadow copies
+
+> See [Volume Shadow Copy Service](https://learn.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service)
+</div></div>
+</details>
 </div><div>
 
 **Windows Update** (`control /name Microsoft.WindowsUpdate`)
