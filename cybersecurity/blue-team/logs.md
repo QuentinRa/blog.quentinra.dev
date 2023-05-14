@@ -126,14 +126,16 @@ Stuff that I found, but never read/used yet.
 
 [![linuxfundamentalspart3](../_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
 
-* /var/log/messages
+* /var/log/messages (general log)
 * /var/log/syslog (general system activity)
-* /var/log/auth.log (authentication/authorization)
-* /var/log/kern.log (kernel activity)
+* /var/log/auth.log (debian authentication attempts)
+* /var/log/kern.log (kernel messages)
+* /var/log/boot.log (boot messages)
 * /var/log/faillog (failed logins)
-* /var/log/secure
+* /var/log/secure (fedora/redhat authentication attempts)
 * /var/log/lastlog
-* /var/run/utmp
+* /var/run/utmp (logged users information)
+* /var/run/wtmp (all previously logged users information)
 * /var/run/maillog (mail server)
 * SIEM (SIM+SEM)
 * SIM=Security Information Management=collect, monitor, analyze logs

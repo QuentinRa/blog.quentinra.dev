@@ -46,4 +46,20 @@ Stuff that I found, but never read/used yet.
 * `firewalld and ufw` (cli) fwbuilder (GUI)
   * `sudo ufw allow 22/tcp`
   * `sudo ufw status`
+* SSH
+  * `/etc/ssh/sshd_config`
+  * `PermitRootLogin no`
+  * `PubkeyAuthentication yes`
+  * `PasswordAuthentication no`
+  * `ssh-copy-id username@server`: add to remote server our public key
+* Sudoers: `usermod -aG wheel username` (Fedora, RedHat)
+* Disable root account (`/sbin/nologin`)
+* Stong password policy
+* Disable login to service accounts (www-data...)
+* See `/etc/group` to see members of a group
+* `dnf update/yum update` (Fedora, Redhat)
+  * `cat /etc/apt/sources.list`
+* Use LTS
+  * https://ubuntu.com/about/release-cycle
+  * https://access.redhat.com/support/policy/updates/errata/
 </div></div>
