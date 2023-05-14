@@ -57,8 +57,8 @@ A firewall is a solution present in every modern secure network. It is used to f
 
 There are many kind of firewalls, that operate at multiple OSI layers.
 
-* [Network firewall](../topology/index.md#networking-devices)
-* Host-based firewall
+* [Network firewall](../topology/devices/firewall.md)
+* [Host-based firewall](firewalls/host.md)
 * [Applicative firewall](firewalls/app.md)
 * Proxy firewall
 * Next-generation firewall (NGFW) <small>(combine application and network firewalls. Intrusion prevention, deep packet inspection, block malware...)</small>

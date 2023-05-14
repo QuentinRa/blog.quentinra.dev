@@ -34,5 +34,16 @@ Stuff that I found, but never read/used yet.
   * `sudo mount /dev/mapper/name dest`
 </div><div>
 
-
+* [apparmor](https://www.apparmor.net/) (`aa-status`, shipped with many linux distros)
+* [SELinuxProject](https://github.com/SELinuxProject)
+* `nftables` (improved iptables, scalability and performance)
+  * `nft add table xxx`
+  * `nft list table xxx` (list all chains and rules)
+  * `nft add chain xxx yyy { type filter hook [input|output] priority 0 \; }`
+  * `nft add fwfilter yyy tcp [sport/dport] 22 accept`
+  * `nft delete table xxx`
+* `iptables` (input, output, forward=routed through)
+* `firewalld and ufw` (cli) fwbuilder (GUI)
+  * `sudo ufw allow 22/tcp`
+  * `sudo ufw status`
 </div></div>
