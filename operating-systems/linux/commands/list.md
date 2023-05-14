@@ -948,7 +948,8 @@ $ sudo usermod -a -G xxx yyy
 Add "username" to sudoers
 
 ```ps
-$ sudo usermod -a -G sudo username
+$ sudo usermod -a -G sudo username # Debian...
+$ sudo usermod -a -G wheel username # Fedora...
 ```
 </div><div>
 

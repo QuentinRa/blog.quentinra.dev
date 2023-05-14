@@ -173,6 +173,12 @@ There are 3 well-known levels of permissions 🔒
 * <kbd>x</kbd> (1): can execute a script, can move through a folder
 
 Giving us something like: `u=r+w, g=r, o=r`. Instead of letters, we usually use numbers, as it's shorter. We could write `u=6, g=4, o=4` which can be shortened again to `644`.
+
+<br>
+
+#### groups
+
+Each user is part of a group called after their name <small>(e.g. the user `toto` is in the group `toto`)</small>. Use `/etc/group` to see members of each group.
 </div><div>
 
 #### Sudo
@@ -184,7 +190,7 @@ There is a super-user 🦸, usually called **root**, that has absolute control o
 $ sudo cat /etc/shadow
 ```
 
-➡️ See `man sudo_root`.
+➡️ See `man sudo_root`, and `sudo`/`wheel` groups.
 
 #### See permissions using ls
 
@@ -416,6 +422,8 @@ Stuff that I found, but never read/used yet.
 * ELF
 * [tcsh](https://www.ibm.com/docs/en/zos/2.3.0?topic=shells-writing-tcsh-shell-scripts)
 * packages ([![linuxfundamentalspart3](../../../cybersecurity/_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3))
+  * `dnf update/yum update` (Fedora, Redhat)
+  * `cat /etc/apt/sources.list`
 
 </div><div>
 

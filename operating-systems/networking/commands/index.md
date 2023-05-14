@@ -326,6 +326,31 @@ A popular tool to monitor a network. See [Wireshark](../tools/wireshark/index.md
 
 ++++++
 
+[**ufw** - traffic rules]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: [UFW](https://help.ubuntu.com/community/UFW), Uncomplicated Firewall, is the default firewall for Ubuntu. Like others, you define rules for incoming/outgoing traffic.
+
+**Example** 🔥:
+
+```ps
+$ sudo ufw status # list 
+$ sudo ufw allow 22/tcp # allow
+$ sudo ufw deny 22/tcp # deny
+$ sudo ufw delete deny 22/tcp # delete
+```
+</div><div>
+
+You can only allow/deny some hosts:
+
+```ps
+$ sudo ufw allow from IP to IP port 22
+$ sudo ufw allow from IP to any port 22
+$ sudo ufw allow from CIDR to any port 22
+```
+</div></div>
+
 [**iptables** - traffic rules]
 
 <div class="row row-cols-md-2"><div>
@@ -422,7 +447,6 @@ $ nft add fwfilter c_name tcp dport 22 drop
 * `accept`/`drop`: accept or drop the packet
 * `limit rate 5/minute`: example to limit rate
 </div></div>
-
 ++++++
 
 <hr class="sep-both">
@@ -456,9 +480,5 @@ $ netstat -i # list interfaces
 $ netstat -r # routes
 $ netstat -rn # routable networks
 $ netstat -tulpn # ???
-```
-
-```shell!
-$ socat -d -d TCP-LISTEN:9001 STDOUT
 ```
 </div></div>

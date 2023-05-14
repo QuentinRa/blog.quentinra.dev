@@ -12,6 +12,7 @@
 * `last`: list of last logged users
 * `id`: username, group...
 * `groups`: list groups
+* `/etc/groups`: see members for each group
 * `finger`: return a summary of information about a user
 
 **Machine**

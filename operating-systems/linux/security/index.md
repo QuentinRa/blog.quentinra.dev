@@ -23,10 +23,6 @@ Stuff that I found, but never read/used yet.
   * [Ubuntu](https://help.ubuntu.com/community/Grub2/Passwords)
 * Encryption systems
   * many modern Linux distributions ship with LUKS (Linux Unified Key Setup)
-  * Partition list: `fdisk -l`, `lsblk` or `blkid`
-  * Create partition: `fdisk`
-  * Mount: `mount xxx yyy`
-  * Format: `mkfs.ext4 xxx -L "XXX"`
   * `sudo cryptsetup -y -v luksFormat device`
   * `sudo cryptsetup luksOpen device name`
   * `sudo cryptsetup luksOpen --type luks device name`
@@ -42,13 +38,8 @@ Stuff that I found, but never read/used yet.
   * `PubkeyAuthentication yes`
   * `PasswordAuthentication no`
   * `ssh-copy-id username@server`: add to remote server our public key
-* Sudoers: `usermod -aG wheel username` (Fedora, RedHat)
-* Disable root account (`/sbin/nologin`)
-* Stong password policy
-* Disable login to service accounts (www-data...)
-* See `/etc/group` to see members of a group
-* `dnf update/yum update` (Fedora, Redhat)
-  * `cat /etc/apt/sources.list`
+* Disable root account (`/sbin/nologin`) +service (`www-data`)
+* Strong password policy
 * Use LTS
   * https://ubuntu.com/about/release-cycle
   * https://access.redhat.com/support/policy/updates/errata/
