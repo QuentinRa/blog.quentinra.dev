@@ -944,12 +944,24 @@ Add user yyy to group xxx
 ```ps
 $ sudo usermod -a -G xxx yyy
 ```
-</div><div>
 
-Add username to sudoers
+Add "username" to sudoers
 
 ```ps
 $ sudo usermod -a -G sudo username
+```
+</div><div>
+
+Change the login username
+
+```ps
+$ sudo usermod -l newname oldname
+```
+
+Change user UID. You can't change the current user UID.
+
+```ps
+$ sudo usermod -u newUID oldUID
 ```
 </div></div>
 
@@ -989,6 +1001,28 @@ $ passwd
 
 ```ps
 $ groupadd group_name
+```
+</div></div>
+
+[**groupmod** - edit groups]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: edit a group information.
+
+**Example** 🔥:
+
+Change group GID.
+
+```ps
+$ sudo groupmod -g newGID oldGID
+```
+</div><div>
+
+Change the name of the group.
+
+```ps
+$ sudo groupmod -n newname oldname
 ```
 </div></div>
 

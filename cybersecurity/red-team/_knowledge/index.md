@@ -115,6 +115,9 @@ You can [download Kali ISO here](https://www.kali.org/get-kali/#kali-virtual-mac
 
 [Parrot](https://www.parrotsec.org/) is a popular alternative to Kali Linux.
 
+* There are a wide range of tools pre-installed
+* The `.config` hold the UI configuration... You can copy it to another user. You need to log back in to see the changes.
+
 <br>
 
 #### BackBox Linux 🦜
