@@ -2,6 +2,8 @@
 
 [Go back](../index.md#windows-privilege-escalation-)
 
+[![windowsprivesc20](../../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
+
 <div class="row row-cols-md-2"><div>
 
 You may try to look for credentials.

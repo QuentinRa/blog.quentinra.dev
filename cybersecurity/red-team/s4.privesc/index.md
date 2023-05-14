@@ -62,6 +62,9 @@ There are many **automated scripts** that will investigate usual places, service
 
 ## Windows privilege escalation 🪟
 
+[![windowsprivesc20](../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
+[![windows_privilege_escalation](../../_badges/poat/windows_privilege_escalation.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md)
+
 <div class="row row-cols-md-2"><div>
 
 [Windows](/operating-systems/windows/knowledge/index.md) privilege escalation may be achieved by exploiting:

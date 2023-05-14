@@ -21,6 +21,8 @@ A flaw in UAC allows users to open a browser as Administrator, which can be furt
 
 * ➡️ **AlwaysInstallElevated**: it's unlikely, but if an admin allowed programs to be installed without needed Administrator privileges, then you can install a malicious program.
 
+[![windowsprivesc20](../../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
+
 ```java
 PS> reg query HKCU\SOFTWARE\Policies\Microsoft\Windows\Installer
 PS> reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer

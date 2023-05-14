@@ -1,5 +1,15 @@
 # XXX
 
+[![windowsfundamentals3xzx](../../../cybersecurity/_badges/thm/windowsfundamentals3xzx.svg)](https://tryhackme.com/room/windowsfundamentals3xzx)
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
 <hr class="sep-both">
 
 ## 👻 To-do 👻
@@ -7,6 +17,9 @@
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
+
+[![windowsfundamentals2x0x](../../../cybersecurity/_badges/thm/windowsfundamentals2x0x.svg)](https://tryhackme.com/room/windowsfundamentals2x0x)
+[![windowsfundamentals3xzx](../../../cybersecurity/_badges/thm/windowsfundamentals3xzx.svg)](https://tryhackme.com/room/windowsfundamentals3xzx)
 
 * lusrmgr.msc: can be used to find entrypoints (weak passwords, groups with too many perms)
 * msconfig (find malware?)/winver (outdated?)/control system (open ports...)/msinfo32 (outdated?)/compmgmt (scheduled tasks...)/regedit (misconfiguration...): info can help in find vulnerabilities

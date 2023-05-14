@@ -1,8 +1,6 @@
 # Operating System (Windows)
 
 [![windowsfundamentals1xbx](../../../cybersecurity/_badges/thm/windowsfundamentals1xbx.svg)](https://tryhackme.com/room/windowsfundamentals1xbx)
-[![windowsfundamentals2x0x](../../../cybersecurity/_badges/thm/windowsfundamentals2x0x.svg)](https://tryhackme.com/room/windowsfundamentals2x0x)
-[![windowsfundamentals3xzx](../../../cybersecurity/_badges/thm/windowsfundamentals3xzx.svg)](https://tryhackme.com/room/windowsfundamentals3xzx)
 
 <div class="row row-cols-md-2"><div>
 
@@ -79,6 +77,8 @@ You can open a CMD/PowerShell in a folder by using <kbd>SHIFT+Right-click</kbd> 
 
 ## CMD commands
 
+[![windowsfundamentals2x0x](../../../cybersecurity/_badges/thm/windowsfundamentals2x0x.svg)](https://tryhackme.com/room/windowsfundamentals2x0x)
+
 If you don't use PowerShell, which is Linux friendly so most Unix commands are available, here are some commands that you will most likely use. See [comparison of cmdlets with similar commands](https://en.wikipedia.org/wiki/PowerShell#Comparison_of_cmdlets_with_similar_commands). If you need help, use `command /?`, `help command`, `command /help`...
 
 <div class="row row-cols-md-2 mt-4"><div>
@@ -108,6 +108,9 @@ If you don't use PowerShell, which is Linux friendly so most Unix commands are a
 <hr class="sep-both">
 
 ## Permissions, and users
+
+[![windowsfundamentals1xbx](../../../cybersecurity/_badges/thm/windowsfundamentals1xbx.svg)](https://tryhackme.com/room/windowsfundamentals1xbx)
+[![windowsfundamentals2x0x](../../../cybersecurity/_badges/thm/windowsfundamentals2x0x.svg)](https://tryhackme.com/room/windowsfundamentals2x0x)
 
 <div class="row row-cols-md-2"><div>
 
@@ -148,6 +151,8 @@ CMD> icacls xxx /grant username:F
 <hr class="sep-both">
 
 ## File system
+
+[![windowsfundamentals1xbx](../../../cybersecurity/_badges/thm/windowsfundamentals1xbx.svg)](https://tryhackme.com/room/windowsfundamentals1xbx)
 
 <div class="row row-cols-md-2"><div>
 
@@ -218,6 +223,9 @@ Environment variables are
 <hr class="sep-both">
 
 ## Windows tools
+
+[![windowsfundamentals1xbx](../../../cybersecurity/_badges/thm/windowsfundamentals1xbx.svg)](https://tryhackme.com/room/windowsfundamentals1xbx)
+[![windowsfundamentals2x0x](../../../cybersecurity/_badges/thm/windowsfundamentals2x0x.svg)](https://tryhackme.com/room/windowsfundamentals2x0x)
 
 <div class="row row-cols-md-2"><div>
 
