@@ -41,4 +41,13 @@ $ docker stop cid
 $ docker compose run xxx
 $ docker compose up -d # ???
 ```
+
+* Unused
+
+```shell!
+$ docker network connect bridge xxx
+$ docker ... --network=bridge
+$ docker network ls
+$ docker network inspect bridge
+```
 </div></div>

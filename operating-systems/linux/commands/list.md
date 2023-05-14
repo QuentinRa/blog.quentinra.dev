@@ -1678,6 +1678,7 @@ source ~/.bashrc
 * `xargs`
 * `env X=val ./myScript`
 * `strace/strings` [link](https://jvns.ca/strace-zine-v3.pdf)
+* `shutdown -h now`
 
 <details class="details-e">
 <summary>Services</summary>

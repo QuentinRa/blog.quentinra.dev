@@ -385,10 +385,30 @@ Stuff that I found, but never read/used yet.
 
 * [DNS commands](../protocols/dns.md#-to-do-)
 * [NFS commands](../protocols/nfs.md#-to-do-)
+* `arp -a`, `arp -a -d`
+* `iptables [...] -j REJECT --reject-with tcp-reset`
+* `(timeout 1 bash -c '</dev/tcp/IP/port' && echo OPEN || echo CLOSED) 2> /dev/null`
+
+```shell!
+$ sudo brctl addbr xxx
+$ sudo brctl show
+$ sudo brctl delbr
+$ sudo brctl addif name interface # can more multiple interfaces
+$ # which will bridge them altogether
+$ sudo ip link set dev xxx up # set up
+```
 </div><div>
 
-* `arp -a`, `arp -a -d`
-* `netstat -tulpn`, `netstat -rn` (routing table/routable networks?)
-* `iptables [...] -j REJECT --reject-with tcp-reset`
+```shell!
+$ ip -4 -brief address show # same as [...] a s
+$ netstat -l # list
+$ netstat -i # list interfaces
+$ netstat -r # routes
+$ netstat -rn # routable networks
+$ netstat -tulpn # ???
+```
 
+```shell!
+$ socat -d -d TCP-LISTEN:9001 STDOUT
+```
 </div></div>
