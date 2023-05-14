@@ -46,7 +46,7 @@ The Portable Operating System Interface (**POSIX**) is a family of standards (`n
 
 **This course will focus on making POSIX-compliant scripts**.
 
-<span class="h4">As such, if you want to make bash-only scripts, read the bash-course to improve your POSIX scripts by using bash-only syntax </span><small>(usually shorter, faster, and/or simplified)</small>.
+<span class="h4">As such, if you want to make bash-only scripts, read the [Bash course](../bash/index.md) to improve your POSIX scripts by using bash-only syntax </span><small>(usually shorter, faster, and/or simplified)</small>.
 
 </div><div>
 
@@ -76,15 +76,15 @@ fi
 
 <div class="row row-cols-md-2 mt-2"><div>
 
-Every script **should** start with a directive telling the shell in which language the script is. It is mostly a link to the interpreter.
+Every script **should** start with a directive called **Shebang** telling the shell in which language the script is <small>(e.g. which interpreter to use)</small>.
 
-* Traditional way for a script (bash)
+* Traditional way for a script <small>(ex: bash)</small>
 
 ```bash
 #!/bin/bash
 ```
 
-* Best way for a script (bash)
+* Best way for a script <small>(ex: bash)</small>
 
 ```bash
 #!/usr/bin/env bash

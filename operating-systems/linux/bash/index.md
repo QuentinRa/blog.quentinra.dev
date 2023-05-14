@@ -1,21 +1,19 @@
 # Bash
 
-This course will introduce bash-specific knowledge that should help you write simpler, and maybe better code/commands, using some enhancements introduced with Bash. Note that the features introduced here shouldn't work on every machine, as they will most likely not use bash <small>(zsh. ash, csh, ksh...)</small>.
-
-<hr class="sl">
-
-## Bash
-
 <div class="row row-cols-md-2"><div>
 
-Some nice information
+Bash is a common default shell language for many distributions. This course will introduce bash-specific knowledge that should help you write simpler, and maybe better code/commands, using some enhancements introduced with Bash ✨. 
 
-* 1989
-* Bourne Again Shell
-* Debian and many derivatives, such as Ubuntu
+Note that the features introduced here shouldn't work on every machine, as they will most likely not use bash <small>(zsh. ash, csh, ksh...)</small>.
 
 The [man page for bash](https://linux.die.net/man/1/bash) is explaining everything about bash, such as environment variables, or control-flow structures...
 </div><div>
+
+Some nice information
+
+* Released in 1989
+* BASH = Bourne-Again SHell
+* Default on Debian and many derivatives, such as Ubuntu
 
 `~/.bashrc` is a script executed when launching a terminal. You can write alias, permanent changes to environment variables, or builtin inside. You may have to create it. Once you changed its contents, you can update your current terminal using `source ~/.bashrc`.
 
