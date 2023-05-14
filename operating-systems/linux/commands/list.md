@@ -982,12 +982,27 @@ $ deluser username
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚: change the current user's password
+**Usage** 🐚: change a user's password
 
 **Example** 🔥:
 
+Change the current user's password:
+
 ```ps
 $ passwd
+```
+</div><div>
+
+Delete the current user's password:
+
+```ps
+$ passwd -d # automatically logged/no password prompt
+```
+
+Change another user's password:
+
+```ps
+$ passwd username
 ```
 </div></div>
 

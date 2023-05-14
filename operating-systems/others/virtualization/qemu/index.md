@@ -1,4 +1,4 @@
-# Security
+# QEMU
 
 <div class="row row-cols-md-2"><div>
 
@@ -16,8 +16,15 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-xxx
+TAP network
+
+* `-netdev tap, id=net0,...`
+* `-device xxx,netdev=net0,mac=...` (NIC: model, net, MAC)
+* `ip tuntap add xxx tap0 mode tap`
+
+Random
+
+* `[...],hostfwd=tcp::2222-:22`
+* `-nographic`
 </div><div>
-
-
 </div></div>

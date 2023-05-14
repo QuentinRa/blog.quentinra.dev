@@ -269,6 +269,8 @@ try:
     raise Exception("example")
 except Exception as e: # 👉 "as e" is optional
     print(e.args[0]) # "example"
+finally: # optional, run after either try or except 
+    pass
 ```
 </div></div>
 
@@ -585,11 +587,15 @@ port = 4444
 try:
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.settimeout(0.5)
+    # raise exception on error
+    r = sock.connect((ip, port))
+    # return 0 or ERRNO
     r = sock.connect_ex((ip, port))
     # ...
-    sock.close()
-except Exception as e:
+except socket.error as e: # may be wider
     pass
+finally:
+    sock.close()
 ```
 
 #### paramiko - SSHv2 implementation

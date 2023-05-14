@@ -423,6 +423,8 @@ myBuiltin() {
 ```
 </div><div>
 
+**Exit code**
+
 A builtin function may return something, but you CAN NOT use `exit`, as it would kill the whole process. Use `return` instead.
 
 ```bash
@@ -432,6 +434,19 @@ myBuiltin() {
 
 myBuiltin 5
 echo $? # will be "5"
+```
+
+**Return value**
+
+To return something, simply use `echo`.
+
+```bash
+myBuiltin() {
+  echo "Hello, World!"
+}
+
+text=$(myBuiltin)
+echo $text # Hello, World!
 ```
 </div></div>
 
