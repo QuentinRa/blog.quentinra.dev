@@ -32,12 +32,6 @@ Stuff that I found, but never read/used yet.
 
 * [apparmor](https://www.apparmor.net/) (`aa-status`, shipped with many linux distros)
 * [SELinuxProject](https://github.com/SELinuxProject)
-* SSH
-  * `/etc/ssh/sshd_config`
-  * `PermitRootLogin no`
-  * `PubkeyAuthentication yes`
-  * `PasswordAuthentication no`
-  * `ssh-copy-id username@server`: add to remote server our public key
 * Disable root account (`/sbin/nologin`) +service (`www-data`)
 * Strong password policy
 * Use LTS

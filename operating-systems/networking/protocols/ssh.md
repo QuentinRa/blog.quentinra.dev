@@ -35,7 +35,6 @@ A hacker want to access the target host, and compromise it.
 * The hacker may have found a `.ssh` folder, in which there may be a ssh certificate (`id_rsa`...) to connect to a host. This file may be protected by a password, but it may be [cracked](/cybersecurity/cryptography/algorithms/hashing/index.md#hash-cracking).
 
 * The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s3.exploitation/index.md#password-cracking-).
-
 </div><div>
 </div></div>
 
@@ -49,9 +48,12 @@ Stuff that I found, but never read/used yet.
 
 * `ssh xxx@yyy -T -L xxx:domain:xxx`: create a tunnel mapping one port to another
 * ssh-keygen
-* ssh-copy-id
 * `ssh-keygen -f key`: leave in `>> /root/.ssh/authorized_keys` the pub
 </div><div>
 
-
+* `/etc/ssh/sshd_config`
+  * `PermitRootLogin no`
+  * `PubkeyAuthentication yes`
+  * `PasswordAuthentication no`
+* `ssh-copy-id username@server`: add to remote server our public key
 </div></div>

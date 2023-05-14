@@ -1732,4 +1732,11 @@ WantedBy=multi-user.target
 
 * `getent` <sup>2</sup>: get an entry such as "passwd": `getent passwd` <small>(get entry)</small> instead of `cat /etc/passwd`
 * `sudo -s`
+
+Disk management
+
+* Partition list: `fdisk -l`, `lsblk` or `blkid`
+* Create partition: `fdisk`
+* Mount: `mount xxx yyy`
+* Format: `mkfs.ext4 xxx -L "XXX"`
 </div></div>
