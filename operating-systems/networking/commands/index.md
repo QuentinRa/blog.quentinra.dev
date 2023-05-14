@@ -351,6 +351,12 @@ Hide the source IP address using 50.50.50.50, for any packet passing by our inte
 ```ps
 $ sudo iptables -t NAT -A POSTROUTING -o eth2 -j SNAT --to-source 50.50.50.50
 ```
+
+Common chains are:
+
+* `INPUT`: incoming traffic
+* `OUTPUT`: outgoing traffic
+* `FORWARD`: traffic passing through
 </div><div>
 
 * `-t table`: FILTER by default
@@ -373,6 +379,50 @@ $ sudo iptables -t NAT -A POSTROUTING -o eth2 -j SNAT --to-source 50.50.50.50
 
 **Note**: you can use `!` (NOT), such as `-s !127.0.0.1` meaning every packet not having "127.0.0.1" as `source` will be filtered.
 </div></div>
+
+[**nftables** - traffic rules]
+
+[![linuxsystemhardening](../../../cybersecurity/_badges/thmp/linuxsystemhardening.svg)](https://tryhackme.com/room/linuxsystemhardening)
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: define rules for incoming/outgoing traffic. It's replacing the legacy `iptables`, and supposedly more scalable and performant.
+
+**Example** 🔥:
+
+A table is used to store chains.
+
+```ps
+$ nft add table t_name # create
+$ nft list table t_name # list chain+rules
+$ nft delete table t_name # delete
+```
+
+A chain is a suite of rules.
+
+```ps
+# incoming traffic
+$ nft add chain t_name c_name { type filter hook input priority 0 \; }
+# outgoing traffic
+$ nft add chain t_name c_name { type filter hook output priority 0 \; }
+```
+</div><div>
+
+Add rules.
+
+```ps
+# accept traffic from port 22
+$ nft add fwfilter c_name tcp sport 22 accept
+# drop traffic to port 22
+$ nft add fwfilter c_name tcp dport 22 drop
+```
+
+* `sport`/`dport`: based on the port
+* `saddr`/`daddr`: based on the IP
+* `accept`/`drop`: accept or drop the packet
+* `limit rate 5/minute`: example to limit rate
+</div></div>
+
 ++++++
 
 <hr class="sep-both">
