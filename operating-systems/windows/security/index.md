@@ -111,4 +111,8 @@ A set of tools to protect your Windows. There is an antivirus, which has a "rans
 **BitLocker**
 
 The Trusted Platform Module (TPM) hardware component provides security against tampering along with many other things. BitLocker was designed "to help protect user data and to ensure that a computer has not been tampered with while the system was offline", as per [Microsoft](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview).
+
+* backup the SAM and SYSTEM hashes
+    * `reg save hklm\system C:\XXX\system.hive`
+    * `reg save hklm\sam C:\XXX\sam.hive`
 </div></div>

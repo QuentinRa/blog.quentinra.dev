@@ -627,6 +627,7 @@ Stuff that I found, but never read/used yet.
 * `dir()`: class properties
 * py2exe
 * `apt install python3-xxx`
+* pipx
 
 ```
 a = 5 + \

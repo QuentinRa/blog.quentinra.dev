@@ -18,6 +18,7 @@ It's mostly used to share files internally by connecting computers, printers... 
 $ smbclient -L IP
 $ smbclient -L IP -U username
 $ smbclient -L IP -U username -p port
+PS> net view \\IP
 ```
 
 **Connect to a share** <small>(you may provide username/port too)</small>
@@ -47,6 +48,16 @@ Download everything in a share
 
 ```ps
 $ smbget -R //IP/share_name
+```
+
+**Create a SMB server**
+
+You can use [impacket](tools/impacket.md) to create a SMB server on your machine using a script. When the script is terminated, the server is terminated too.
+
+**Copy a file to a SMB share using current user credentials**
+
+```shell!
+PS> copy file \\IP\share
 ```
 </div></div>
 
