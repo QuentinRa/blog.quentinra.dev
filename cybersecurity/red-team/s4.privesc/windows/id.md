@@ -22,4 +22,5 @@
 * `hostname`: info about the host <small>(ex: `website-dev` -> role of the user)</small>
 * `netstat`: see real-time networking requests
 * `ls Env:`: see environment variables
+* `wmic product get name,version,vendor`: list software installed using "normal" means, e.g., using the OS
 </div></div>

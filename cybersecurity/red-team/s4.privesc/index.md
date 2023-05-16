@@ -83,6 +83,7 @@ There are many **automated scripts** that will investigate usual places, service
 * [WinPeas](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS) <small>(12.2k ⭐, binary, `.\winPEASany_ofs.exe`)</small>
 * [PrivescCheck](https://github.com/itm4n/PrivescCheck) <small>(2.1k ⭐, powershell script, `powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"`)</small>
 * [PowerSploit](https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc) <small>(10.6k ⭐,  powershell script, archived, `powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"`. Older: [PowerTools](https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerUp) and [PowerUp](https://github.com/HarmJ0y/PowerUp))</small>.
+* [wesng](https://github.com/bitsadmin/wesng) <small>(3.5k ⭐, use `xxx` on the target, and run it with the output on YOUR machine, use `wes.py --update`, and `wes.py output.txt`)</small>
 </div></div>
 
 <hr class="sep-both">

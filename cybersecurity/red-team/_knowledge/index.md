@@ -186,6 +186,8 @@ The [Game of Active Directory (GOAD)](https://github.com/Orange-Cyberdefense/GOA
 
 You will often want to transfer files between your machine, and the target. Mostly during privilege escalation and post-exploitation.
 
+➡️ See also: [Windows File Transfer Cheatsheet](https://infinitelogins.com/2020/09/04/windows-file-transfer-cheatsheet/).
+
 #### Python webserver 🐍
 
 <i class="small">On the "host" where the file is:</i>
@@ -223,11 +225,15 @@ $ nc CLIENT_IP port < file.sh
 $ nc -lvp port > file.sh
 ```
 
+<br>
+
 #### services 🕳️
 
 You may use FTP/SCP/NFS/SMB/... if applicable. For instance, you may set up a [SMB](/operating-systems/networking/protocols/smb.md) server on your machine,  and use Windows `copy`/`robocopy ` command to upload/download files.
 
 ➡️ See also [impacket](/operating-systems/networking/protocols/tools/impacket.md)
+
+<br>
 
 #### Copy-paste ✂️
 

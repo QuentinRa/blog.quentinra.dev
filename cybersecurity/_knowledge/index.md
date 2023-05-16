@@ -258,6 +258,7 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [niekdang](https://niekdang.wordpress.com/)
 * [0xdf](https://0xdf.gitlab.io/)
 * [highon.coffee](https://highon.coffee/)
+* [infinitelogins](https://infinitelogins.com/)
 </div>
 
 </div>
