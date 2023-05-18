@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[Elasticsearch](https://github.com/elastic/elasticsearch) (63.6k ⭐) is a RESTful open-sourge search engine with an API and clients in many languages.
+[Elasticsearch](https://github.com/elastic/elasticsearch) (63.8k ⭐) is a RESTful open-sourge search engine with an API and clients in many languages.
 
 You can install version 8.7 using [Docker](/operating-systems/others/virtualization/docker/index.md) as follows:
 
@@ -57,7 +57,6 @@ $client = ClientBuilder::create()
 $response = $client->info();
 echo $response['version']['number'];
 ```
-</div><div>
 
 You can index a document as follows. The `id` is optional, while both the `index` and the `body` are up to you, and it can be JSON too.
 
@@ -70,10 +69,11 @@ $client->index([
     ],
 ]);
 ```
+</div><div>
 
 To search something, you can use `query.match` with `xxx` a key from the user-defined `body`.
 
-```php
+```php!
 $params = [
     'index' => 'same_index_as_before',
     'query' => [
@@ -90,5 +90,16 @@ printf("Max score : %.4f\n", $response['hits']['max_score']);
 printf("Took      : %d ms\n", $response['took']);
 print_r($response['hits']['hits']); // documents
 echo "</pre>";
+```
+
+You can delete all documents in an index using:
+
+```php!
+$client->deleteByQuery([
+    'index' => 'same_index_as_before',
+    'body'=> [
+        'query' => ['match_all' => (object)[]]
+    ]
+]);
 ```
 </div></div>
