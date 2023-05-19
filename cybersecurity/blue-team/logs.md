@@ -118,32 +118,45 @@ Some methods of contact 📨: SMS, email, push notification...
 
 <hr class="sep-both">
 
+## Common log files locations
+
+[![linuxfundamentalspart3](../_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
+
+<div class="row row-cols-md-2"><div>
+
+* `/var/log/syslog` and `/var/log/messages` <small>(general and system logs)</small>
+* `/var/log/auth.log` and `/var/log/secure` <small>(authentication attempts)</small>
+* `/var/log/kern.log` <small>(kernel messages)</small>
+* `/var/log/dmesg` <small>(driver messages)</small>
+* `/var/log/audit/audit.log` <small>(audit logs)</small>
+* `/var/log/nginx/` and `/var/log/apache2/` <small>(webserver logs)</small>
+* `/var/log/mysql/` and `/var/log/postgresql/` <small>(dbms logs)</small>
+* `/var/log/cron` <small>(cron logs)</small>
+* `/var/log/boot.log` <small>(boot messages)</small>
+* `/var/log/lastlog` <small>(last logins)</small>
+</div><div>
+
+* `/var/log/faillog` <small>(failed logins)</small>
+* `/var/log/btmp` <small>(failed logins)</small>
+* `/var/log/utmp` <small>(current users)</small>
+* `/var/log/wtmp` <small>(record of every login/logout)</small>
+* `/var/log/maillog` <small>(mail events)</small>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-[![linuxfundamentalspart3](../_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
-
-* /var/log/messages (general log)
-* /var/log/syslog (general system activity)
-* /var/log/auth.log (debian authentication attempts)
-* /var/log/kern.log (kernel messages)
-* /var/log/boot.log (boot messages)
-* /var/log/faillog (failed logins)
-* /var/log/secure (fedora/redhat authentication attempts)
-* /var/log/lastlog
-* /var/run/utmp (logged users information)
-* /var/run/wtmp (all previously logged users information)
-* /var/run/maillog (mail server)
 * SIEM (SIM+SEM)
 * SIM=Security Information Management=collect, monitor, analyze logs
 * SEM=Security Event Management=real-time analysis, alerts
 * Configuration come at a cost, logs may still have to be checked manually if not correctly configured
 </div><div>
 
-* [Linux logs](https://stackify.com/linux-logs/)
 * Auditing
 * Connected as unusual hours
 * Unusual traffic at unusual hours
