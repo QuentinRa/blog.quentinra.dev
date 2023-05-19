@@ -5,6 +5,7 @@
 [![hash_cracking](../../../_badges/poat/hash_cracking.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Hash%20Cracking.md)
 [![crackthehash](../../../_badges/thm-p/crackthehash.svg)](https://tryhackme.com/room/crackthehash)
 [![c4ptur3th3fl4g](../../../_badges/thm-p/c4ptur3th3fl4g.svg)](https://tryhackme.com/room/c4ptur3th3fl4g)
+[![corridor](../../../_badges/thm-p/corridor.svg)](https://tryhackme.com/room/corridor)
 
 <div class="row row-cols-md-2 mt-4"><div>
 

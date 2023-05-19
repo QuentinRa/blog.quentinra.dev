@@ -52,6 +52,8 @@ $ john myhash --format=raw-sha1
 ```shell!
 $ john hash --format=raw-md4 --wordlist=/usr/share/wordlists/rockyou.txt
 ```
+
+⚠️ It seems that now, you must call `john hash --format=XXX --show` after cracking a hash, to see the password. Remove the leading "`?:`".
 </div></div>
 
 <hr class="sep-both">

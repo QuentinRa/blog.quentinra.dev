@@ -161,6 +161,7 @@ Stuff that I found, but never read/used yet.
 * Configuration come at a cost, logs may still have to be checked manually if not correctly configured
 * [windowseventlogs](https://tryhackme.com/room/windowseventlogs)
 * [endpoint-security-monitoring](https://tryhackme.com/module/endpoint-security-monitoring)
+* [security-information-event-management](https://tryhackme.com/module/security-information-event-management)
 </div><div>
 
 * Auditing

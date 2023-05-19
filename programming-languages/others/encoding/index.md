@@ -29,7 +29,7 @@ A radix or a base is a number of unique digits that we can use to encode a messa
 
 **Some tools to detect the encoding/decode/encode** 🚀
 
-* [CyberChef](https://github.com/gchq/CyberChef) (19.2k ⭐) | [Online version](https://gchq.github.io/CyberChef/)
+* [CyberChef](https://github.com/gchq/CyberChef) (21.2k ⭐) | [Online version](https://gchq.github.io/CyberChef/)
 * [Burp Suite Decoder](/cybersecurity/red-team/s3.exploitation/tools/files/burp_decoder.md)
 * [Decodify](https://github.com/s0md3v/Decodify) (0.8k ⭐)
 * [binaryhexconverter.com](https://www.binaryhexconverter.com/)
@@ -228,6 +228,12 @@ Stuff that I found, but never read/used yet.
 * [urlencoder](https://www.urlencoder.io/)
 * add a section here about URL encoding, instead of having it in many places
 * binary-coded decimal (BCD)
+* Can put a file in cyber chef
+  * Extract strings
+  * Find/Replace to remove patterns
+  * Drop bytes to remove chars
+  * Defang URL (avoid clicking)
+  * Extract URLs
 </div><div>
 
 <details class="details-e">

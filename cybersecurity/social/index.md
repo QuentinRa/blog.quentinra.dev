@@ -25,8 +25,6 @@ Stuff that I found, but never read/used yet.
   * Baiting
 * Shoulder surfing
 * Vishing
-</div><div>
-
 * Smishing
 * Homoglyph
 * Serveur Open Mail Relay
@@ -34,5 +32,19 @@ Stuff that I found, but never read/used yet.
 * Email spoofing
 * Email Attachments
 * **SET** (Social Engineer Toolkit)
+</div><div>
+
+[![adventofcyber4](../_badges/thm/adventofcyber4/day6.svg)](https://tryhackme.com/room/adventofcyber4)
+
+* [phishing](https://tryhackme.com/module/phishing)
+* emlAnalyzer -i File (ex: .eml/.msg)
+  * --header (show headers)
+  * -u (show urls)
+  * --text (show cleartext data)
+  * --extract-all (extract attachment)
+* [emailrep](https://emailrep.io/)
+* InQuest (file analysis)
+* Urlscan/Browserling/Wannabrowser
+* sha256sum file -> pass it to tools
 
 </div></div>
