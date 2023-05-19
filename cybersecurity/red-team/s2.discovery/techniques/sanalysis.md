@@ -1,16 +1,10 @@
-# Code analysis
+# Static analysis
 
 [Go back](../index.md)
 
 [![activerecon](../../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
 
-<div class="row row-cols-md-2"><div>
-
-Code analysis refer to analyzing the code of the website, both statically, and dynamically, while trying to find a flaw.
-
-For starter, you may do a static analysis of the source HTML page. Use <kbd>CTRL+U</kbd> or Right-click and "View page source".
-</div><div>
-</div></div>
+For starter, you may use <kbd>CTRL+U</kbd> or Right-click and "View page source".
 
 <hr class="sep-both">
 
@@ -100,43 +94,4 @@ You may append the snippet this to remove empty comments:
 ```
 
 There are more complex regexes if you want, such as [rt/96517](https://www.regextester.com/96517).
-</div></div>
-
-<hr class="sep-both">
-
-## Dynamic analysis
-
-<div class="row row-cols-md-2"><div>
-
-#### Analyze the javascript
-
-[![walkinganapplication](../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
-
-You may use the console debugger, after adding a breakpoint in the JavaScript, to analyze the javascript code, if needed.
-
-➡️ It's tiring so feel free to explore other techniques first.
-
-<br>
-
-#### Analyze cookies
-
-[![httpindetail](../../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
-
-Refer to the [Cookie](/programming-languages/web/_general/random/cookies.md) for information on cookies.
-</div><div>
-
-#### Analyze the network
-
-[![walkinganapplication](../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
-[![httpindetail](../../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
-[![contentdiscovery](../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
-[![agentsudoctf](../../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
-
-After opening the network tab of your console, every HTTP request is listed inside. You can see where the forms are sent, and examine the [headers](/operating-systems/networking/protocols/http.md#http-headers-in-web-applications) of every request.
-
-🔑 The server <small>(Nginx, Apache, IIS, Node.js)</small> and the version may be exposed in the headers.
-
-👉 You can use the network tab to tune requests and re-send them.
-
-🗺️ There are many web scanner detecting suspicious headers.
 </div></div>

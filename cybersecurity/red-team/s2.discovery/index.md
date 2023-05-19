@@ -91,7 +91,8 @@ Websites
 
 * [Website mapping](techniques/mapping.md) 🧭: before investing a website
 * [OWASP](tools/owasp.md) 🧭: website security/common vulnerabilities
-* [Code analysis](techniques/code_analysis.md) 🚪🔥🔑: comments, hidden code, sensitive data...
+* [Static analysis](techniques/sanalysis.md) 🚪🔥🔑: comments, hidden code...
+* [Dynamic analysis](techniques/danalysis.md) 🚪🔥🔑: JavaScript, headers...
 * [Forced Browsing](techniques/forced_browsing.md) 🚪🔑: find hidden pages/folders
 * [IDOR](techniques/idor.md) 🚪🔑: find if you can access someone else content
 * [Framework detection](techniques/framework.md) 🚪🔥: find the framework in use - if any
