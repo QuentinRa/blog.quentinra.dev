@@ -21,5 +21,5 @@ $ evil-winrm -i IP -u username -p password
 ```
 </div><div>
 
-...
+See also: [RogueWinRM](https://github.com/antonioCoco/RogueWinRM)  (0.5k ⭐).
 </div></div>

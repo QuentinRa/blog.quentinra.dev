@@ -39,8 +39,6 @@ PS> sc.exe start xxx
 
 ➡️ See also: [Potatoes](https://jlajara.gitlab.io/Potatoes_Windows_Privesc) 🥔 and [SweetPotato](https://github.com/CCob/SweetPotato) (1.2k ⭐).
 
-➡️ See also: [RogueWinRM](https://github.com/antonioCoco/RogueWinRM)  (0.5k ⭐).
-
 </div><div>
 
 #### Common flaws

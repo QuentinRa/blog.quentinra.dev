@@ -173,6 +173,7 @@ Each protocol can be represented using a [Message Sequence Chart](https://en.wik
 
 * [SSH](../protocols/ssh.md)
 * [telnet](../protocols/telnet.md)
+* [WinRM](../protocols/winrm.md)
 </td></tr>
 
 <tr><td class="py-0 my-0">Web requests 🌍</td><td class="my-0 py-0">
