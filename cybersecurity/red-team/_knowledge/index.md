@@ -43,6 +43,8 @@ When working with a client, both the penetration tester and the system owner wil
 * ...
 
 Everything outside the scope is illegal. See [SANS ROE template](https://sansorg.egnyte.com/dl/bF4I3yCcnt/).
+
+➡️ Note that it's common to record your screen/terminal during the penetration test, either for review, or for evidence of any actions taken.
 </div></div>
 
 <hr class="sep-both">
