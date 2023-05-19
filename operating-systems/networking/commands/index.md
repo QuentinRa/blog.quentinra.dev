@@ -46,10 +46,12 @@ $ hostname -d
 
 **Example** 🔥:
 
-Show all interfaces <small>(a=addr=address, l=link)</small>
+Show all interfaces <small>(a=addr=address, l=link, s=show)</small>
 
 ```ps
 $ ip a
+$ ip -4 a s # only IPV4
+$ ip -brief a s # only a brief description
 $ ip l
 ```
 
@@ -147,6 +149,31 @@ $ ss -u # udp
 ```
 </div></div>
 
+[**netstat** - network info]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: show network information and stats.
+
+**Example** 🔥:
+
+```ps
+$ netstat -l # list ports
+$ netstat -i # list interfaces
+$ netstat -r # routes
+$ netstat -rn # routable networks
+```
+</div><div>
+
+```ps
+$ netstat -a # all ports
+$ netstat [...] -t # TCP only
+$ netstat [...] -u # UDP only
+$ netstat -s # stats per protocol
+$ netstat -p # service name + pid
+$ netstat -tulpn # common usage
+```
+</div></div>
 ++++++
 
 <hr class="sep-both">
@@ -472,13 +499,4 @@ $ # which will bridge them altogether
 $ sudo ip link set dev xxx up # set up
 ```
 </div><div>
-
-```shell!
-$ ip -4 -brief address show # same as [...] a s
-$ netstat -l # list
-$ netstat -i # list interfaces
-$ netstat -r # routes
-$ netstat -rn # routable networks
-$ netstat -tulpn # ???
-```
 </div></div>

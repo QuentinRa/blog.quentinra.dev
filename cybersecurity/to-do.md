@@ -75,8 +75,7 @@ Mobile
 
 Programming
 
-* [pythonbasics](https://tryhackme.com/room/pythonbasics)
-* [Scripting for Pentesters](https://tryhackme.com/module/scripting-for-pentesters)
+* ...
 
 Knowledge
 
@@ -317,6 +316,7 @@ https://tryhackme.com/room/retro (blaster...)
 * Chisel
 * ptunnel
 * sshuttle
+* [red-team-scripts](https://github.com/threatexpress/red-team-scripts)
 </div></div>
 
 <hr class="sep-both">

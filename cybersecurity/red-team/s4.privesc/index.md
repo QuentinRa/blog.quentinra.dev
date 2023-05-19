@@ -76,6 +76,8 @@ There are many **automated scripts** that will investigate usual places, service
 * 🐸 Exploiting [privileges](windows/perms.md)
 
 You may want to find [who/where you are](windows/id.md) first. To exploit Windows bins/scripts/bins, refer to [LOLBAS](https://lolbas-project.github.io/#) <small>(5.5k ⭐)</small>.
+
+Other checklists: [frizb](https://github.com/frizb/Windows-Privilege-Escalation) (0.7k ⭐)
 </div><div>
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
@@ -84,6 +86,8 @@ There are many **automated scripts** that will investigate usual places, service
 * [PrivescCheck](https://github.com/itm4n/PrivescCheck) <small>(2.1k ⭐, powershell script, `powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"`)</small>
 * [PowerSploit](https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc) <small>(10.6k ⭐,  powershell script, archived, `powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"`. Older: [PowerTools](https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerUp) and [PowerUp](https://github.com/HarmJ0y/PowerUp))</small>.
 * [wesng](https://github.com/bitsadmin/wesng) <small>(3.5k ⭐, use `xxx` on the target, and run it with the output on YOUR machine, use `wes.py --update`, and `wes.py output.txt`)</small>
+* [Seatbelt](https://github.com/GhostPack/Seatbelt) <small>(2.9k ⭐)</small>
+* [JAWS](https://github.com/411Hall/JAWS) <small>(1.4k ⭐)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -94,21 +98,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [Old - Windows](_old/windows/index.md)
 * [WADComs](https://github.com/WADComs/WADComs.github.io) (1k ⭐)/[wadcoms website](https://wadcoms.github.io/)
-
-Windows
-
-* PSReadLine (command history)
-* [Seatbelt](https://github.com/GhostPack/Seatbelt)
-* [JAWS](https://github.com/411Hall/JAWS)
-* [frizb](https://github.com/frizb/Windows-Privilege-Escalation) (0.7k ⭐)
 </div><div>
-
-Rooms
-
-* [linprivesc](https://tryhackme.com/room/linprivesc) (hint/notes, network)
-* [windowsprivesc20](https://tryhackme.com/room/windowsprivesc20) 🐍🐍🐍
 
 Courses
 
