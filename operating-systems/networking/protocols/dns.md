@@ -175,7 +175,7 @@ $ whois example.com
 $ whois 8.8.8.8
 ```
 
-➡️ You can also query the [ICANN](https://lookup.icann.org/en).
+➡️ You can also query the [ICANN](https://lookup.icann.org/en) or [who.is](https://who.is/).
 </div></div>
 
 <hr class="sep-both">

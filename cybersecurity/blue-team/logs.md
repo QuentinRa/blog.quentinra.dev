@@ -121,6 +121,7 @@ Some methods of contact 📨: SMS, email, push notification...
 ## Common log files locations
 
 [![linuxfundamentalspart3](../_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
+[![adventofcyber4](../_badges/thm/adventofcyber4/day2.svg)](https://tryhackme.com/room/adventofcyber4)
 
 <div class="row row-cols-md-2"><div>
 
@@ -141,6 +142,9 @@ Some methods of contact 📨: SMS, email, push notification...
 * `/var/log/utmp` <small>(current users)</small>
 * `/var/log/wtmp` <small>(record of every login/logout)</small>
 * `/var/log/maillog` <small>(mail events)</small>
+* `/var/log/dpkg.log` <small>(installed packages)</small>
+
+On Windows, check out **Windows Event Viewer**.
 </div></div>
 
 <hr class="sep-both">
@@ -155,6 +159,8 @@ Stuff that I found, but never read/used yet.
 * SIM=Security Information Management=collect, monitor, analyze logs
 * SEM=Security Event Management=real-time analysis, alerts
 * Configuration come at a cost, logs may still have to be checked manually if not correctly configured
+* [windowseventlogs](https://tryhackme.com/room/windowseventlogs)
+* [endpoint-security-monitoring](https://tryhackme.com/module/endpoint-security-monitoring)
 </div><div>
 
 * Auditing

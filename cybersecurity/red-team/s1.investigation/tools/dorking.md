@@ -2,6 +2,7 @@
 
 [![googledorking](../../../_badges/thm/googledorking.svg)](https://tryhackme.com/room/googledorking)
 [![contentdiscovery](../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
+[![adventofcyber4](../../../_badges/thm/adventofcyber4/day3.svg)](https://tryhackme.com/room/adventofcyber4)
 
 [Go back](../index.md)
 

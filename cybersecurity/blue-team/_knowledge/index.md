@@ -133,14 +133,14 @@ Least privilege
 * ISO/IEC 19249:2017
 * Trust but Verify (logs and verify)
 
+[![adventofcyber4](../../_badges/thm/adventofcyber4/day1.svg)](https://tryhackme.com/room/adventofcyber4)
+
 * Cybersecurity Framework (CSF) by NIST
 * MITRE ATT&CK Framework (TTPs, [mitre](https://tryhackme.com/room/mitre))
 
 Threat intelligence
 
 [![defensivesecurityhq](../../_badges/thm/defensivesecurityhq.svg)](https://tryhackme.com/room/defensivesecurityhq)
-
-[![adventofcyber4](../../_badges/thm/adventofcyber4/day1.svg)](https://tryhackme.com/room/adventofcyber4)
 
 * AbuseIPDB <small>(database of malicious IPs)</small>
 * Cisco Talos Intelligence <small>(Threat intelligence platform)</small>

@@ -3,6 +3,7 @@
 [Go back](../index.md)
 
 [![contentdiscovery](../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
+[![adventofcyber4](../../../_badges/thm/adventofcyber4/day3.svg)](https://tryhackme.com/room/adventofcyber4)
 
 <div class="row row-cols-md-2"><div>
 

@@ -1274,6 +1274,7 @@ $ head file -n -5
 [**grep** - search by content]
 
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
+[![adventofcyber4](../../../cybersecurity/_badges/thm/adventofcyber4/day2.svg)](https://tryhackme.com/room/adventofcyber4)
 
 <div class="row row-cols-md-2"><div>
 
