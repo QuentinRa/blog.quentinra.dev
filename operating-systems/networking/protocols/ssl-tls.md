@@ -1,6 +1,7 @@
 # SSL/TLS
 
 [![protocolsandservers2](../../../cybersecurity/_badges/thmp/protocolsandservers2.svg)](https://tryhackme.com/room/protocolsandservers2)
+[![networksecurityprotocols](../../../cybersecurity/_badges/thmp/networksecurityprotocols.svg)](https://tryhackme.com/room/networksecurityprotocols)
 
 <div class="row row-cols-md-2"><div>
 
@@ -35,6 +36,7 @@ There are 3 categories of certificates: EV, OV, and DV.
 
 * [SSLLabs](https://www.ssllabs.com/) <small>(detect TLS/SSL versions enabled, cipherlists...)</small>
 * [testssl.sh](https://testssl.sh/) ([GitHub](https://github.com/drwetter/testssl.sh)) <small>(similar, but local testing)</small>
+* [sslshopper](https://www.sslshopper.com/ssl-checker.html) <small>(???)</small>
 </div><div>
 
 ...

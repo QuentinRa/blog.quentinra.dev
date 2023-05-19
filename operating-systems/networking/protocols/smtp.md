@@ -2,6 +2,7 @@
 
 [![protocolsandservers](../../../cybersecurity/_badges/thmp/protocolsandservers.svg)](https://tryhackme.com/room/protocolsandservers)
 [![networkservices2](../../../cybersecurity/_badges/thmp/networkservices2.svg)](https://tryhackme.com/room/networkservices2)
+[![networksecurityprotocols](../../../cybersecurity/_badges/thmp/networksecurityprotocols.svg)](https://tryhackme.com/room/networksecurityprotocols)
 
 <div class="row row-cols-md-2"><div>
 

@@ -216,6 +216,7 @@ Each protocol can be represented using a [Message Sequence Chart](https://en.wik
 **Layer 5: Session Layer** <small>(data)</small> 📶
 
 * [RPC](../protocols/rpc.md)
+* [SOCKS](../protocols/socks.md)
 
 **Layer 4: Transport Layer** <small>(segment/datagram)</small> 📫
 
@@ -308,10 +309,6 @@ Voice over Internet Protocol (VoIP)
     * SEPxxxx.cnf
 </details>
 </div><div>
-
-Protocols
-
-* IPSec Internet Protocol Security (IPsec) encrypts data using the existing Internet Protocol (IP) framework.
 
 Random
 

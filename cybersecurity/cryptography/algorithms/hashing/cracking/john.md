@@ -145,6 +145,7 @@ $ john myhash --format=netntlmv2 --wordlist=wordlist
 
 ## GPG passphrase cracking
 
+[![networksecurityprotocols](../../../../_badges/thmp/networksecurityprotocols.svg)](https://tryhackme.com/room/networksecurityprotocols)
 [![linuxstrengthtraining](../../../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 
 <div class="row row-cols-md-2"><div>

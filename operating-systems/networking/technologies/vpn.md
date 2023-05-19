@@ -1,6 +1,7 @@
 # Virtual private network (VPN)
 
 [![extendingyournetwork](../../../cybersecurity/_badges/thmp/extendingyournetwork.svg)](https://tryhackme.com/room/extendingyournetwork)
+[![networksecurityprotocols](../../../cybersecurity/_badges/thmp/networksecurityprotocols.svg)](https://tryhackme.com/room/networksecurityprotocols)
 
 <div class="row row-cols-md-2"><div>
 

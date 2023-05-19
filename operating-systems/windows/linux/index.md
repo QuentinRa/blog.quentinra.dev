@@ -139,6 +139,7 @@ Add a server
 </div></div>
 
 > There is also [WinSCP](https://winscp.net/eng/index.php) if you want to use FTP/SCP. <br>
+> There is also [CuteFTP](https://www.globalscape.com/cuteftp). <br>
 > You may directly use the scp command without any interface, if you install GitSCM (see SSH).
 
 <hr class="sr">
