@@ -111,6 +111,12 @@ You can [download Kali ISO here](https://www.kali.org/get-kali/#kali-virtual-mac
 
 * In the top-right corner, you can find your IP address (tun0)
 </details>
+
+<br>
+
+#### BackBox Linux 🥔
+
+[backbox](https://linux.backbox.org/) is a penetration testing distro.
 </div><div>
 
 #### Parrot Linux 🦜
@@ -118,13 +124,8 @@ You can [download Kali ISO here](https://www.kali.org/get-kali/#kali-virtual-mac
 [Parrot](https://www.parrotsec.org/) is a popular alternative to Kali Linux.
 
 * There are a wide range of tools pre-installed
+* `sudo 7z x /usr/share/wordlists/rockyou.txt.gz`
 * The `.config` hold the UI configuration... You can copy it to another user. You need to log back in to see the changes.
-
-<br>
-
-#### BackBox Linux 🦜
-
-[backbox](https://linux.backbox.org/) is a penetration testing distro.
 
 <br>
 

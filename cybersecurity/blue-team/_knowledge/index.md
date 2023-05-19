@@ -78,6 +78,7 @@ MFA
 
 * [yubico](https://www.yubico.com/)
 * Google Passkeys / Windows Hello / iCloud Passkeys
+* Something you know, have, are
 
 Stuff
 
