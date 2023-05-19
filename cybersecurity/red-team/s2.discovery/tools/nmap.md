@@ -5,6 +5,7 @@
 [![nmap03](../../../_badges/thmp/nmap03.svg)](https://tryhackme.com/room/nmap03)
 [![nmap04](../../../_badges/thmp/nmap04.svg)](https://tryhackme.com/room/nmap04)
 [![furthernmap](../../../_badges/thm/furthernmap.svg)](https://tryhackme.com/room/furthernmap)
+[![adventofcyber4](../../../_badges/thm/adventofcyber4/day4.svg)](https://tryhackme.com/room/adventofcyber4)
 [![vulnversity](../../../_badges/thm-p/vulnversity.svg)](https://tryhackme.com/room/vulnversity)
 [![blue](../../../_badges/thm-p/blue.svg)](https://tryhackme.com/room/blue)
 [![ice](../../../_badges/thm-p/ice.svg)](https://tryhackme.com/room/ice)

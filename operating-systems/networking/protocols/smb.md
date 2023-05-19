@@ -1,6 +1,7 @@
 # Server Message Block (SMB)
 
 [![networkservices](../../../cybersecurity/_badges/thmp/networkservices.svg)](https://tryhackme.com/room/networkservices)
+[![adventofcyber4](../../../cybersecurity/_badges/thm/adventofcyber4/day4.svg)](https://tryhackme.com/room/adventofcyber4)
 
 <div class="row row-cols-md-2"><div>
 
@@ -12,23 +13,30 @@ Server Message Block (SMB) is a protocol used for Windows file exchange system. 
 
 It's mostly used to share files internally by connecting computers, printers... to a shared folder called **share** 📂.
 
-**List shares** (`-L`)
+For any commands, you can use:
 
 ```ps
-$ smbclient -L IP
-$ smbclient -L IP -U username
-$ smbclient -L IP -U username -p port
+$ smbclient [...] -U username # specify username
+$ smbclient [...] -p port # specify port
+```
+
+**List shares**
+
+```ps
+$ smbclient -L IP [...]
 PS> net view \\IP
 ```
 
-**Connect to a share** <small>(you may provide username/port too)</small>
+**Connect to a share**
 
 ```ps
-$ smbclient //IP/share_name
-$ smbclient smb://IP/share_name # same
+$ smbclient //IP/share_name [...]
+$ smbclient smb://IP/share_name [...] # same
 ```
 
+➡️ You can also enter `smb://[...]` in a file explorer search bar.
 </div><div>
+
 
 Once connected, you can use these:
 
@@ -52,12 +60,12 @@ $ smbget -R //IP/share_name
 
 **Create a SMB server**
 
-You can use [impacket](tools/impacket.md) to create a SMB server on your machine using a script. When the script is terminated, the server is terminated too.
+You can use [impacket](tools/impacket.md) to create a SMB server on your machine using a script. But, when the script is terminated, the server is terminated too.
 
-**Copy a file to a SMB share using current user credentials**
+**Copy a file to a SMB share**
 
 ```shell!
-PS> copy file \\IP\share
+PS> copy file \\IP\share # using current user credentials
 ```
 </div></div>
 
