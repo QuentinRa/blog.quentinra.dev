@@ -24,4 +24,10 @@ A reverse proxy is the opposite of an open proxy. Instead of filtering outgoing 
 ➡️ A reverse proxy can act as a [Load balancer](balancer.md).
 
 ➡️ A reverse proxy can act as a [WAF](firewall.md).
+
+<br>
+
+#### Protocols
+
+➡️ See the [SOCKS](../../protocols/socks.md) proxy protocol.
 </div></div>

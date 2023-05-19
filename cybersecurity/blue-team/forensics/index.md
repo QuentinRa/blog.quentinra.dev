@@ -1,6 +1,7 @@
 # Digital forensics
 
 [![introdigitalforensics](../../_badges/thm/introdigitalforensics.svg)](https://tryhackme.com/room/introdigitalforensics)
+[![defensivesecurityhq](../../_badges/thm/defensivesecurityhq.svg)](https://tryhackme.com/room/defensivesecurityhq)
 
 <div class="row row-cols-md-2"><div>
 

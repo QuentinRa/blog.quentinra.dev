@@ -321,4 +321,7 @@ Stuff that I found, but never read/used yet.
 * `Start-Transcript`
 * encrypt VBox VM
 </div><div>
+
+* [cyberkillchainzmt](https://tryhackme.com/room/cyberkillchainzmt)
+* [unifiedkillchain](https://tryhackme.com/room/unifiedkillchain)
 </div></div>

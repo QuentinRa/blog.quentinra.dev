@@ -20,4 +20,6 @@ Stuff that I found, but never read/used yet.
 * "Those who cannot remember the past are condemned to repeat it" (George Santayana)
 * Document who is responsible of what
 * 3 phases: notify, restore & recuperation, monitoring
+
+[![defensivesecurityhq](../_badges/thm/defensivesecurityhq.svg)](https://tryhackme.com/room/defensivesecurityhq)
 </div></div>
