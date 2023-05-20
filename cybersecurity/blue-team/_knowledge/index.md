@@ -124,7 +124,7 @@ Least privilege
 * Privileged Access Management (PAM): manage the role that a privileged user has.
 * Models: Bell-LaPadula, Biba Model
 
-[![securityprinciples](../../_badges/thm/securityprinciples.svg)](https://tryhackme.com/room/securityprinciples)
+[![securityprinciples](../../_badges/thmp/securityprinciples.svg)](https://tryhackme.com/room/securityprinciples)
 
 * Parkerian Hexad (CIA/...)
 * Bell-LaPadula Model (goal: confidentiality)
@@ -133,6 +133,11 @@ Least privilege
 * Defence-in-Depth refers = Multi-Level Security
 * ISO/IEC 19249:2017
 * Trust but Verify (logs and verify)
+
+[![redteamfundamentals](../../_badges/thm/redteamfundamentals.svg)](https://tryhackme.com/room/redteamfundamentals)
+
+* red-team simulate enough [TTPs](https://csrc.nist.gov/glossary/term/Tactics_Techniques_and_Procedures) for the blue team to learn to react
+* MITRE ATT&CK Framework
 
 [![adventofcyber4](../../_badges/thm/adventofcyber4/day1.svg)](https://tryhackme.com/room/adventofcyber4)
 

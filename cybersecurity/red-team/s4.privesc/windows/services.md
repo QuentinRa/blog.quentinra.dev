@@ -39,6 +39,8 @@ PS> sc.exe start xxx
 
 ➡️ See also: [Potatoes](https://jlajara.gitlab.io/Potatoes_Windows_Privesc) 🥔 and [SweetPotato](https://github.com/CCob/SweetPotato) (1.2k ⭐).
 
+👉 [PrintNightmare](https://github.com/cube0x0/CVE-2021-1675) (CVE-2021-1675) vulnerability in Spooler service.
+
 </div><div>
 
 #### Common flaws

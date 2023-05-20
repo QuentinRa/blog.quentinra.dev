@@ -325,4 +325,7 @@ Stuff that I found, but never read/used yet.
 
 * [cyberkillchainzmt](https://tryhackme.com/room/cyberkillchainzmt)
 * [unifiedkillchain](https://tryhackme.com/room/unifiedkillchain)
+* [redteam.guide](https://redteam.guide/)
+* Varonis Cyber Kill Chain
+* concrete objectives (identify system misconfigurations) and perimeter/scope (ex: no downtime)
 </div></div>

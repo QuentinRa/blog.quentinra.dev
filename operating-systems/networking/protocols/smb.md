@@ -96,6 +96,8 @@ $ smbclient //IP/share_name -U Anonymous -N
 # test Anonymous share
 $ smbclient //IP//Anonymous -U Anonymous -N
 ```
+
+* PsExec <small>(see [impacket](tools/impacket.md#psexec) client)</small> is a tool rely on SMB and allows administrators to run commands on Windows hosts. It may be running on the target.
 </div><div>
 
 * You can also use `smbmap` to find users/shares/files/...
