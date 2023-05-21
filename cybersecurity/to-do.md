@@ -165,6 +165,7 @@ https://tryhackme.com/room/ultratech1 (web - guided?)
 https://tryhackme.com/room/surfer (SSRF?)
 https://tryhackme.com/room/hackpark (windows, guided)
 https://tryhackme.com/room/anonymous (nmap, smb?, ...)
+https://tryhackme.com/room/overpass2hacked
 https://tryhackme.com/room/overpass3hosting (web/...) 
 --- Hard
 https://tryhackme.com/room/mrrobot
@@ -317,6 +318,8 @@ https://tryhackme.com/room/retro (blaster...)
 * ptunnel
 * sshuttle
 * [red-team-scripts](https://github.com/threatexpress/red-team-scripts)
+* NetworkMiner
+* NetWitness
 </div></div>
 
 <hr class="sep-both">

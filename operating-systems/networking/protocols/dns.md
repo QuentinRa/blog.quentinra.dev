@@ -1,6 +1,7 @@
 # DNS protocol
 
 [![dnsindetail](../../../cybersecurity/_badges/thm/dnsindetail.svg)](https://tryhackme.com/room/dnsindetail)
+[![wireshark](../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
 
 <div class="row row-cols-md-2"><div>
 

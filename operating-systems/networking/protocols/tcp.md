@@ -1,6 +1,7 @@
 # Transmission Control Protocol (TCP)
 
 [![packetsframes](../../../cybersecurity/_badges/thmp/packetsframes.svg)](https://tryhackme.com/room/packetsframes)
+[![wireshark](../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
 
 <div class="row row-cols-md-2"><div>
 

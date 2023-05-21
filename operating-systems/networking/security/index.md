@@ -184,6 +184,11 @@ Access
 * Network Access Control (NAC): allow based on user+device
 </div><div>
 
+* Get requests to sniff ([see](https://tryhackme.com/room/wireshark))
+    * Network Taps
+    * MAC flooding
+    * ARP poisoning
+
 Firewall applicative
 
 * Application-level gateway (FTP, SIP, or HTTP)
