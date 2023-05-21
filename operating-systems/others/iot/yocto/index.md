@@ -40,5 +40,25 @@ Stuff that I found, but never read/used yet.
   * Generate image (the base OS) + SDK (what you need for one application)
 </div><div>
 
+* Multiple meta folders = layers, they have a priority, can override settings from layers below
 
+```bb
+# xxx_version.bb
+X = "value"
+V = "${PV}" # version
+DEPENDS += "yyy"
+
+inherit autotools
+inherit autotools xxx # gettext (localization)
+
+yyy_[prepend|append|none]() {
+  # ...
+}
+```
+
+* Default is root with no password
+* Source file (oe-init-build-env)
+* `conf/` to edit local conf, and bbconf
+* https://layers.openembedded.org/layerindex/branch/master/recipes/
+* https://www.youtube.com/watch?v=r8hFRJ9vMWM
 </div></div>
