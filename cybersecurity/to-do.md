@@ -320,6 +320,7 @@ https://tryhackme.com/room/retro (blaster...)
 * [red-team-scripts](https://github.com/threatexpress/red-team-scripts)
 * NetworkMiner
 * NetWitness
+* Ncrack
 </div></div>
 
 <hr class="sep-both">

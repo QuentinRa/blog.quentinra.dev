@@ -14,11 +14,19 @@ File Transfer Protocol (FTP) is a widely used protocol to transfer files. It's m
 
 🔒 There is a secure version called FTPS <small>(port 990, over SSL/TLS)</small>.
 
-```bash
+```shell!
 $ ftp IP # use current user username
 $ ftp username@IP
 $ ftp username@IP -p port
 ftp> help
+```
+
+If `username@IP` doesn't work, you can manually connect:
+
+```shell!
+$ ftp -n IP
+ftp> user username
+Password: xxx
 ```
 
 <details class="details-n">

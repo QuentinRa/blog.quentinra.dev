@@ -127,6 +127,7 @@ You can [download Kali ISO here](https://www.kali.org/get-kali/#kali-virtual-mac
 * There are a wide range of tools pre-installed
 * `sudo 7z x /usr/share/wordlists/rockyou.txt.gz` to extract rockyou.txt wordlist. Location: `/usr/share/wordlists/rockyou.txt`.
 * The `.config` hold the UI configuration... You can copy it to another user. You need to log back in to see the changes.
+* `sudo apt-get -y install ftp`
 
 <br>
 
@@ -247,6 +248,8 @@ Copy-paste may be an option, but not every file can be copy-pasted. One trick is
 <hr class="sep-both">
 
 ## Wordlists ⛪
+
+[![passwordattacks](../../_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
 
 <div class="row row-cols-md-2"><div>
 
