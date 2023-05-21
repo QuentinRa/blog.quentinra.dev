@@ -11,7 +11,8 @@ Secure Socket (SOCKS) is a protocol to exchange data through a [proxy](../topolo
 You can run a SOCKS proxy using [metasploit](/cybersecurity/red-team/s3.exploitation/tools/metasploit.md):
 
 ```shell!
-msf6> # you must use "route add" first 
+msf6> route print # list current routes
+msf6> route add IP/32 -1 # add one IP, can be a range, routed through the last (-1) session 
 msf6> use auxiliary/server/socks_proxy
 exploit> run srvhost=127.0.0.1 srvport=9050 version=4a 
 ```

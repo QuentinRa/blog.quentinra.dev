@@ -14,6 +14,7 @@ You may try to look for credentials.
 * 🛣️ [logs](/cybersecurity/blue-team/logs.md) (`/var/log/`)
 * 🐚 backups <small>(.old, .bak...)</small>
 * ✉️ conversations/mails (`/var/mail/`)
+* 🌳 website configurations (`.env`)
 * ...
 </div><div>
 
