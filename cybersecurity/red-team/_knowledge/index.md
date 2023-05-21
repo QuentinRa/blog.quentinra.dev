@@ -89,6 +89,7 @@ You can [download Kali ISO here](https://www.kali.org/get-kali/#kali-virtual-mac
 
 * **Username**: kali / **Password**: kali
 * Don't forget to use `sudo apt update` / `sudo apt upgrade`
+* Run `wordlists`, press Y to extract rockyou.txt wordlist. Location: `/usr/share/wordlists/rockyou.txt`.
 
 <details class="details-n">
 <summary>Swap to another keyboard layout 🔥</summary>
@@ -124,7 +125,7 @@ You can [download Kali ISO here](https://www.kali.org/get-kali/#kali-virtual-mac
 [Parrot](https://www.parrotsec.org/) is a popular alternative to Kali Linux.
 
 * There are a wide range of tools pre-installed
-* `sudo 7z x /usr/share/wordlists/rockyou.txt.gz`
+* `sudo 7z x /usr/share/wordlists/rockyou.txt.gz` to extract rockyou.txt wordlist. Location: `/usr/share/wordlists/rockyou.txt`.
 * The `.config` hold the UI configuration... You can copy it to another user. You need to log back in to see the changes.
 
 <br>
@@ -273,19 +274,22 @@ On Kali Linux, you can use the commands `wordlists` or `seclists` to move to the
 /usr/share/wordlists/dirb/others/best110.txt
 ...
 ```
-</div><div>
 
-CTFs are usually using the infamous `rockout.txt` for passwords  <small>(from a data breach of rockyou.com in 2009)</small>. On Kali Linux, run `wordlists` and press Y to extract it. Location: `/usr/share/wordlists/rockyou.txt`.
+CTFs are usually using the infamous `rockout.txt` for passwords  <small>(from a data breach of rockyou.com in 2009)</small>.
+</div><div>
 
 #### Fast wordlist generation
 
-See also: [cook](https://github.com/glitchedgitz/cook) (0.6k ⭐) or [CeWL](https://github.com/digininja/CeWL) (1.4k ⭐).
+See also: [cook](https://github.com/glitchedgitz/cook) (0.6k ⭐) or [CeWL](https://github.com/digininja/CeWL) (1.4k ⭐), [cupp](https://github.com/Mebus/cupp) (3.5k ⭐), [username_generator](https://github.com/shroudri/username_generator) (0.03k ⭐).
 
 ```shell!
 $ echo {A..Z} | tr ' ' '\n' > AZ.lst
 $ echo {0..99} | tr ' ' '\n' > 0_to_99.lst
 $ echo user{0..9} | tr ' ' '\n' > user_0_to_9.lst
 $ echo {admin,adm,user} | tr ' ' '\n' > simple_list.lst
+$ cewl -w output.lst -d depth -m word_size URL
+$ crunch minlength maxlength charset -o crunch.txt # BIG
+$ python3 cupp.py -i # based on a profile
 ```
 
 #### Tune wordlists
@@ -301,6 +305,8 @@ You may also want to merge wordlists...
 
 ```shell!
 $ cat wordlist1 wordlist2 wordlist3 > wordlist123
+$ uniq -u wordlist123 > uwordlist # duplicates
+$ sort wordlist123 > swordlist # sort
 ```
 
 </div></div>
