@@ -654,6 +654,9 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+* [pythonanywhere](https://www.pythonanywhere.com/)
+* [peps](https://peps.python.org/pep-0008/) (style guide)
+* [pythonawesome](https://pythonawesome.com/)
 * `del()`: delete a variable
 * `dir()`: class properties
 * py2exe
@@ -671,7 +674,9 @@ a = 5 + \
 str[3:7] # s 3rd to 7th
 str[3:7:2] # step = 2
 str[:5] # 1st to 5th
-str[-5:] # 5th to last
+str[5:] # 5th to last
 str[::-1] # reverse
 ```
+
+* lambda: `lambda x : x[0]`
 </div></div>
