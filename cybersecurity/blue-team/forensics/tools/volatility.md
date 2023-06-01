@@ -23,73 +23,66 @@ Use `-f` to load a memory dump. Assuming the memory dump is `mdump.sav` in the c
 $ python3 vol.py -f mdump.sav [...]
 ```
 
-The **first** step is to find the profile of the capture, to load the correct plugins, such as Windows-specific ones...
-
-```bash
-$ python3 vol.py [...] imageinfo
-# Suggested Profile(s): ...
-```
-
-Later, either use: `--profile=xxx plugin_name` or `xxx.plugin_name`.
+Profiles from volatility 2 are now expressed as [plugins](https://volatility3.readthedocs.io/en/latest/volatility3.plugins.html). You will use `xxx.info` instead of `imageinfo` to learn about the operating system run in a capture; with `xxx` one among `windows`, `linux`, `mac`.
 </div></div>
 
 <hr class="sep-both">
 
-## Volatility
+## Windows notes
 
 <div class="row row-cols-md-2"><div>
 
-Volatility needs to know on which version of Windows it should base its analysis. It's called profiles, and you can run `imageinfo` to find which profiles you can use.
+Assuming that the host is running Windows, we can use:
 
-```bash
-$ vol -f memory_capture_file imageinfo
-# Suggested Profile(s): ...
+* ➡️ Find information about the operating system
+
+```ps
+$ python3 vol.py [...] windows.info
 ```
 
-If the following commands are working, then the profile you took is the right one. You can view active processes/connections
+* ➡️ List running processes
 
-```bash
-# processes
-$ vol -f memory_capture_file --profile=a_profile pslist
-# connections
-$ vol -f memory_capture_file --profile=a_profile netscan
-# hidden processes
-$ vol -f memory_capture_file --profile=a_profile psxview
-# both actives, and actives+hidden
-vol -f memory_capture_file --profile=a_profile ldrmodules > output
+```ps
+$ python3 vol.py [...] windows.pslist
+```
+
+👉 Malicious processes tend to hide themselves.
+
+* ➡️ Scan a specific process
+
+```ps
+$ python3 vol.py [...] windows.psscan
 ```
 </div><div>
 
-Malicious processes will most likely try to hide themselves. If a process is neither InLoad, InInit, nor InMem, then it's suspicious. You can use grep on the output to check if there is a process like this.
+* ➡️ Show processes in which some code may have been injected
 
-```bash
-$ grep -o '^.*False.*False.*False.*' output
+```ps
+$ python3 vol.py [...] windows.malfind
 ```
 
-Processes aren't the only place to inspect. We can also check for unexpected patches in the standard system DLLs.
+* ➡️ Dump a specific process files (DLL/...)
 
-```bash
-$ vol -f memory_capture_file --profile=a_profile apihooks
+```ps
+$ python3 vol.py [...] windows.dumpfiles --pid xxx -o path/to/extract/dll
 ```
 
-Look for injected code, and dump it
+* ➡️ Show network activity
 
-```bash
-$ vol -f memory_capture_file --profile=a_profile malfind -D dest
-```
-
-View all the DLLs loaded into memory
-
-```bash
-$ vol -f memory_capture_file --profile=a_profile dlllist
-# dump them
-$ vol -f memory_capture_file --profile=a_profile --pid=infected_process_pid dlldump -D dest
+```ps
+$ python3 vol.py [...] windows.netstat
 ```
 </div></div>
 
-> **More**
->
-> * [Using Volatility in Kali Linux](https://subscription.packtpub.com/book/security/9781838640804/10/ch10lvl1sec55/using-volatility-in-kali-linux)
-> * [Memory Forensics with Vol(a|u)tility](https://www.youtube.com/watch?v=dB5852eAgpc)
-> * [SANS Windows Forensic Analysis](https://www.sans.org/cyber-security-courses/windows-forensic-analysis/)
-> * [MemLabs](https://github.com/stuxnet999/MemLabs)
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [THM/volatility](https://tryhackme.com/room/volatility)
+* [volatility-cheatsheet](https://blog.onfvp.com/post/volatility-cheatsheet/)
+</div><div>
+</div></div>
