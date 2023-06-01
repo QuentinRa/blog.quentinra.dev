@@ -60,6 +60,8 @@ $ john hash --format=raw-md4 --wordlist=/usr/share/wordlists/rockyou.txt
 
 ## Single crack mode 
 
+[![passwordattacks](../../../../_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
+
 <div class="row row-cols-md-2"><div>
 
 The single crack mode is one of john the ripper modes. In this mode, we define rules 🔏 that are applied on the wordlist, to generate a new "enhanced" wordlist. 🔥 For instance, users tend to
@@ -75,19 +77,9 @@ $ john myhash --single [...]
 ```
 
 👉 Default rules are stored in `/etc/john/john.conf`.
+
+➡️ See Word Mangling, and GECOS fields.
 </div><div>
-
-#### Word Mangling
-
-These are modification such as replacing, uppercasing, lowercasing, prefixing, postfixing, etc.
-
-#### GECOS fields
-
-Using other fields such as username/... in rules.
-
-```text!
-username:password
-```
 
 #### Custom rules
 
@@ -100,6 +92,14 @@ Create a file `xxx.rules` with some rules inside:
 
 ```shell!!
 $ john myhash --single --rules=xxx.rules [...]
+```
+
+#### Wordlist generation
+
+By adding `--stdout` to john, and not providing a hash, john will output a wordlist after applying a rule:
+
+```shell!!
+$ john --wordlist=xxx --rules=yyy --stdout > wordlist
 ```
 </div></div>
 

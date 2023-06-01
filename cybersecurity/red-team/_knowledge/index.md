@@ -286,6 +286,8 @@ CTFs are usually using the infamous `rockout.txt` for passwords  <small>(from a 
 
 See also: [cook](https://github.com/glitchedgitz/cook) (0.6k ⭐) or [CeWL](https://github.com/digininja/CeWL) (1.4k ⭐), [cupp](https://github.com/Mebus/cupp) (3.5k ⭐), [username_generator](https://github.com/shroudri/username_generator) (0.03k ⭐).
 
+You can also use: [JohnTheReaper](/cybersecurity/cryptography/algorithms/hashing/cracking/john.md#wordlist-generation) or [hashcat](/cybersecurity/cryptography/algorithms/hashing/cracking/hashcat.md#wordlist-generation)!
+
 ```shell!
 $ echo {A..Z} | tr ' ' '\n' > AZ.lst
 $ echo {0..99} | tr ' ' '\n' > 0_to_99.lst

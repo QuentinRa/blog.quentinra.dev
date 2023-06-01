@@ -49,6 +49,31 @@ Hashcat stores cracked hashes in `~/.hashcat/hashcat.potfile`.
 
 <hr class="sep-both">
 
+## Wordlist generation
+
+[![passwordattacks](../../../../_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
+
+<div class="row row-cols-md-2"><div>
+
+You can create a wordlist using hashcat using:
+
+```ps
+$ hashcat -a 3 <format> --stdout > wordlist
+```
+</div><div>
+
+The format is a string with meta-character such as:
+
+* `?l`: lower character (a-z)
+* `?u`: upper character (A-Z)
+* `?d`: number (0-9)
+* ...
+
+For instance, `?d?d?d` means 3 numbers.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
