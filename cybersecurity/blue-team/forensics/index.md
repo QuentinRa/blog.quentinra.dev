@@ -7,6 +7,12 @@
 
 Forensics is the art of investigating crimes. Digital forensics is the same, but for cyber crimes.
 
+* 💡 Memory forensics are investigations of a memory capture of a running machine to analyze suspect behaviors. [Volatility](tools/volatility.md) is a well-known memory forensic tool.
+
+* 🎁 [File investigation](../../purple-team/files/index.md) may help to find where a file is from...
+
+* 🔎 ...
+
 </div><div>
 
 ...

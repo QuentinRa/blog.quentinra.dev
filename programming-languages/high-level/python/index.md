@@ -679,4 +679,10 @@ str[::-1] # reverse
 ```
 
 * lambda: `lambda x : x[0]`
+
+```
+$ curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
+$ sudo python2 get-pip.py
+$ pip2 install --upgrade xxx
+```
 </div></div>
