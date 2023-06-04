@@ -321,6 +321,7 @@ https://tryhackme.com/room/retro (blaster...)
 * NetworkMiner
 * NetWitness
 * Ncrack
+* [MailSniper](https://github.com/dafthack/MailSniper)
 </div></div>
 
 <hr class="sep-both">

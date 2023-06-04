@@ -37,7 +37,7 @@ There is [Remmina](https://github.com/FreeRDP/Remmina) (1.9k ⭐, `apt install r
 
 * [BlueKeep Vulnerability](https://en.wikipedia.org/wiki/BlueKeep) (2019)
 
-* You can try a [password spraying attack](), for instance, using [RDPassSpray](https://github.com/xFreed0m/RDPassSpray) (0.6k ⭐)
+* You can try a [password spraying attack](/cybersecurity/red-team/s3.exploitation/techniques/spraying.md), for instance, using [RDPassSpray](https://github.com/xFreed0m/RDPassSpray) (0.6k ⭐)
 
 ```ps
 $ python3 RDPassSpray.py -u username -p password -t IP:port
