@@ -14,52 +14,6 @@
 
 You can use `clear` to clear the terminal, and `gcm command` to find what cmdlet is your alias pointing to.
 
-<details class="details-n">
-<summary><code>Get-ChildItem</code>: list directory content <small>(alias: <code>ls</code>)</small></summary>
-<div class="row row-cols-md-2 mx-0"><div>
-
-List files in the current directory
-
-```powershell
-PS> Get-ChildItem
-PS> Get-ChildItem .
-PS> Get-ChildItem -Path .
-```
-
-List files in the directory "dir"
-
-```powershell
-PS> Get-ChildItem "dir"
-PS> Get-ChildItem -Path "dir"
-```
-
-Filter files by pattern
-
-```powershell
-PS> Get-ChildItem "dir" -Filter "a*"
-```
-</div><div>
-
-Show only files
-
-```powershell
-PS> Get-ChildItem -File
-```
-
-Show only folders
-
-```powershell
-PS> Get-ChildItem -Directory
-```
-
-Show only hidden files/folders
-
-```powershell
-PS> Get-ChildItem -Directory
-```
-</div></div>
-</details>
-
 <div class="row row-cols-md-2"><div>
 <details class="details-n">
 <summary><code>Get-Content</code>: print the content of a file <small>(alias: <code>cat</code>)</small></summary>
@@ -69,17 +23,6 @@ PS> Get-Content file.txt
 ```
 </details>
 </div><div>
-<details class="details-n">
-<summary><code>Set-Location</code>: move to another folder <small>(alias: <code>cd</code>)</small></summary>
-
-```powershell
-PS> Set-Location "C:\\" # it works with one slash
-PS> Set-Location
-PS> Set-Location . # same
-PS> Set-Location .. # parent
-PS> Set-Location ~ # home
-```
-</details>
 </div></div>
 
 <hr class="sr">

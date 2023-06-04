@@ -7,8 +7,8 @@ Powershell is a program offering a shell to run commands called **cmdlets** 🦄
 The usual format of a cmdlet is `VERB-NOUN` such as `Get-help` to get some help about a cmdlet. Its linux equivalent is `man`.
 
 ```ps
-PS> Get-help some_cmdlet_here
-PS> Get-Help some_cmdlet_here -examples
+PS> Get-Help some_cmdlet_here
+PS> Get-Help some_cmdlet_here -Examples
 PS> Update-Help # if help was empty, update it first
 ```
 
@@ -22,14 +22,113 @@ PS> Update-Help # if help was empty, update it first
 Powershell cmdlets output is an **object**, unlike other shell languages which output a text. It means that we can access a specific column (**property**) or calling a **method** on it, without having to call a command such as `grep`/`cut`/... as we would on Linux. 🚀
 
 ```ps
-PS> Get-help | Get-member
+PS> Get-Help | Get-Member
 Name   MemberType    Definition
 ----   ----------    ----------
 xxx    Method        xxxx
 [...]
 xxx    Property      xxxx
+PS> Get-help | Get-member -MemberType Method
+PS> Get-help | Get-member -MemberType Property
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## Basic commands
+
+++++++
+
+[**Get-ChildItem** - list files]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: list files in a directory
+
+**Alias** 💎: `ls`
+
+**Example** 🔥:
+
+```ps
+PS> Get-ChildItem # current
+PS> Get-Childitem "C:/" # give a folder
+PS> Get-Childitem -Path "C:/" # same
+```
+
+Only keep files matching a [glob-pattern](/operating-systems/linux/knowledge/index.md#glob-patterns):
+
+```ps
+PS> Get-Childitem [...] -Filter "a*"
+PS> Get-Childitem [...] -Include "a*" # ~same
+```
+</div><div>
+
+Only show files or folders:
+
+```ps
+PS> Get-Childitem [...] -File
+PS> Get-Childitem [...] -Directory
+```
+
+You can list files recursively:
+
+```ps
+PS> Get-Childitem [...] -r
+PS> Get-Childitem [...] -Recurse
+```
+</div></div>
+
+[**Set-Location** - go to folder]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: change your working directory
+
+**Alias** 💎: `cd`
+
+**Example** 🔥:
+
+```ps
+PS> Set-Location # DO NOTHING
+PS> Set-Location "C:/" # Go to folder
+PS> Set-Location -Path "C:/" # Go to folder
+```
+</div><div>
+</div></div>
+
+[**xxx** - xxx]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: xxx
+
+**Alias** 💎: `xxx`
+
+**Example** 🔥:
+
+```ps
+PS> 
+```
+</div><div>
+</div></div>
+
+[**xxx** - xxx]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: xxx
+
+**Alias** 💎: `xxx`
+
+**Example** 🔥:
+
+```ps
+PS> 
+```
+</div><div>
+</div></div>
+
+++++++
 
 <hr class="sep-both">
 
