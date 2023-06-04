@@ -58,23 +58,23 @@ PS> Get-Childitem -Path "C:/" # same
 Only keep files matching a [glob-pattern](/operating-systems/linux/knowledge/index.md#glob-patterns):
 
 ```ps
-PS> Get-Childitem [...] -Filter "a*"
-PS> Get-Childitem [...] -Include "a*" # ~same
+PS> Get-ChildItem [...] -Filter "a*"
+PS> Get-ChildItem [...] -Include "a*" # ~same
 ```
 </div><div>
 
 Only show files or folders:
 
 ```ps
-PS> Get-Childitem [...] -File
-PS> Get-Childitem [...] -Directory
+PS> Get-ChildItem [...] -File
+PS> Get-ChildItem [...] -Directory
 ```
 
 You can list files recursively:
 
 ```ps
-PS> Get-Childitem [...] -r
-PS> Get-Childitem [...] -Recurse
+PS> Get-ChildItem [...] -r
+PS> Get-ChildItem [...] -Recurse
 ```
 </div></div>
 
@@ -117,7 +117,7 @@ PS> Get-Location
 
 **Usage** 🐚: reads and outputs the content of a file
 
-**Alias** 💎: `cat`
+**Aliases** 💎: `cat`, `gc`
 
 **Example** 🔥:
 
@@ -167,18 +167,19 @@ PS>
 </div><div>
 </div></div>
 
-[**xxx** - xxx]
+[**Sort-Object** - sort lines]
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚: xxx
+**Usage** 🐚: sort lines based on one or more properties.
 
-**Alias** 💎: `xxx`
+**Alias** 💎: `sort`
 
 **Example** 🔥:
 
 ```ps
-PS> 
+PS> [...] | Sort-Object SomeProperty
+PS> [...] | Sort-Object SomeProperty,SomeProperty
 ```
 </div><div>
 </div></div>
@@ -191,34 +192,39 @@ PS>
 
 ++++++
 
-[**xxx** - xxx]
+[**Measure-Object** - count of...]
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚: xxx
+**Usage** 🐚: number of words/lines/...
 
-**Alias** 💎: `xxx`
+**Alias** 💎: `<None>`
 
 **Example** 🔥:
 
 ```ps
-PS> 
+PS> [...] | Measure-Object
+PS> [...] | Measure-Object -Word
+PS> [...] | Measure-Object -Line
+PS> [...] | Measure-Object -Character
 ```
 </div><div>
 </div></div>
 
-[**xxx** - xxx]
+[**Select-String** - grep lines]
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚: xxx
+**Usage** 🐚: only keep lines matching a pattern
 
-**Alias** 💎: `xxx`
+**Alias** 💎: `<None>`
 
 **Example** 🔥:
 
 ```ps
-PS> 
+PS> [...] | Select-String "xxx"
+PS> [...] | Select-String -Pattern "xxx"
+PS> Select-String [...] -Path "xxx"
 ```
 </div><div>
 </div></div>
@@ -231,18 +237,26 @@ PS>
 
 ++++++
 
-[**xxx** - xxx]
+[**Invoke-WebRequest** - http request]
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚: xxx
+**Usage** 🐚: download a file from a URL
 
-**Alias** 💎: `xxx`
+**Aliases** 💎: `wget`/`curl`/`iwr`
 
 **Example** 🔥:
 
 ```ps
-PS> 
+PS> Invoke-WebRequest URL
+PS> Invoke-WebRequest -uri URL
+```
+
+You can save the output somewhere else:
+
+```ps
+PS> Invoke-WebRequest [...] -o output
+PS> Invoke-WebRequest [...] -outfile output
 ```
 </div><div>
 </div></div>
@@ -287,18 +301,19 @@ PS>
 </div><div>
 </div></div>
 
-[**xxx** - xxx]
+[**Get-FileHash** - file hash]
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚: xxx
+**Usage** 🐚: get a file hash
 
-**Alias** 💎: `xxx`
+**Alias** 💎: `<None>`
 
 **Example** 🔥:
 
-```ps
-PS> 
+```powershell
+PS> Get-FileHash file
+PS> Get-FileHash [...] -Algorithm xxx
 ```
 </div><div>
 </div></div>
