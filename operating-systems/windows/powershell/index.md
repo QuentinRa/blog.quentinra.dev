@@ -96,6 +96,181 @@ PS> Set-Location -Path "C:/" # Go to folder
 </div><div>
 </div></div>
 
+[**Get-Location** - get pwd]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: get the path to your working directory
+
+**Alias** 💎: `pwd`
+
+**Example** 🔥:
+
+```ps
+PS> Get-Location
+```
+</div></div>
+
+[**Get-Content** - display file]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: reads and outputs the content of a file
+
+**Alias** 💎: `cat`
+
+**Example** 🔥:
+
+```ps
+PS> Get-Content file.txt
+PS> Get-Content -Path file.txt
+```
+</div></div>
+
+++++++
+
+<hr class="sep-both">
+
+## Output manipulation
+
+++++++
+
+[**xxx** - xxx]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: xxx
+
+**Alias** 💎: `xxx`
+
+**Example** 🔥:
+
+```ps
+PS> 
+```
+</div><div>
+</div></div>
+
+[**xxx** - xxx]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: xxx
+
+**Alias** 💎: `xxx`
+
+**Example** 🔥:
+
+```ps
+PS> 
+```
+</div><div>
+</div></div>
+
+[**xxx** - xxx]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: xxx
+
+**Alias** 💎: `xxx`
+
+**Example** 🔥:
+
+```ps
+PS> 
+```
+</div><div>
+</div></div>
+
+++++++
+
+<hr class="sep-both">
+
+## Text utilities
+
+++++++
+
+[**xxx** - xxx]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: xxx
+
+**Alias** 💎: `xxx`
+
+**Example** 🔥:
+
+```ps
+PS> 
+```
+</div><div>
+</div></div>
+
+[**xxx** - xxx]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: xxx
+
+**Alias** 💎: `xxx`
+
+**Example** 🔥:
+
+```ps
+PS> 
+```
+</div><div>
+</div></div>
+
+++++++
+
+<hr class="sep-both">
+
+## Network utilities
+
+++++++
+
+[**xxx** - xxx]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: xxx
+
+**Alias** 💎: `xxx`
+
+**Example** 🔥:
+
+```ps
+PS> 
+```
+</div><div>
+</div></div>
+
+[**xxx** - xxx]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: xxx
+
+**Alias** 💎: `xxx`
+
+**Example** 🔥:
+
+```ps
+PS> 
+```
+</div><div>
+</div></div>
+
+++++++
+
+<hr class="sep-both">
+
+## System utilities
+
+++++++
+
 [**xxx** - xxx]
 
 <div class="row row-cols-md-2"><div>

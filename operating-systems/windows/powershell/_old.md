@@ -14,17 +14,6 @@
 
 You can use `clear` to clear the terminal, and `gcm command` to find what cmdlet is your alias pointing to.
 
-<div class="row row-cols-md-2"><div>
-<details class="details-n">
-<summary><code>Get-Content</code>: print the content of a file <small>(alias: <code>cat</code>)</small></summary>
-
-```powershell
-PS> Get-Content file.txt
-```
-</details>
-</div><div>
-</div></div>
-
 <hr class="sr">
 
 ## Text utilities
