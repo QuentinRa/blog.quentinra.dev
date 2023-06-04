@@ -1,5 +1,7 @@
 # Powershell
 
+[![powershell](../../../cybersecurity/_badges/thmp/powershell.svg)](https://tryhackme.com/room/powershell)
+
 <div class="row row-cols-md-2"><div>
 
 Powershell is a program offering a shell to run commands called **cmdlets** 🦄. It abstracts .NET Common Language Runtime <small>(CLR)</small>.
@@ -135,34 +137,36 @@ PS> Get-Content -Path file.txt
 
 ++++++
 
-[**xxx** - xxx]
+[**Select-Object** - create object]
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚: xxx
+**Usage** 🐚: create an object; can be used to create a object will less properties from another object.
 
-**Alias** 💎: `xxx`
+**Alias** 💎: `N/A`
 
 **Example** 🔥:
 
+Only keep the properties "A" and "B" from the previous object output.
+
 ```ps
-PS> 
+PS> [...] | Select-Object -Property A, B
 ```
 </div><div>
 </div></div>
 
-[**xxx** - xxx]
+[**Where-Object** - filter lines]
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚: xxx
+**Usage** 🐚: only keep objects matching the conditions.
 
-**Alias** 💎: `xxx`
+**Alias** 💎: `N/A`
 
 **Example** 🔥:
 
 ```ps
-PS> 
+PS> XXX | Where-Object -Property XXX -eq YYY
 ```
 </div><div>
 </div></div>
@@ -261,18 +265,34 @@ PS> Invoke-WebRequest [...] -outfile output
 </div><div>
 </div></div>
 
-[**xxx** - xxx]
+[**Get-NetIPAddress** - list interfaces]
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚: xxx
+**Usage** 🐚: list network interfaces. Similar to Linux `ip a`.
 
-**Alias** 💎: `xxx`
+**Alias** 💎: `<None>`
 
 **Example** 🔥:
 
 ```ps
-PS> 
+PS> Get-NetIPAddress
+```
+</div><div>
+</div></div>
+
+[**Get-NetTCPConnection** - list open ports]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: list open ports. Similar to Linux `netstat`.
+
+**Alias** 💎: `<None>`
+
+**Example** 🔥:
+
+```ps
+PS> Get-NetTCPConnection
 ```
 </div><div>
 </div></div>
@@ -285,18 +305,19 @@ PS>
 
 ++++++
 
-[**xxx** - xxx]
+[**Test-Path** - test if path exists]
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚: xxx
+**Usage** 🐚: test if a given path exists.
 
-**Alias** 💎: `xxx`
+**Alias** 💎: `<None>`
 
 **Example** 🔥:
 
 ```ps
-PS> 
+PS> Test-Path "C:/"
+PS> Test-Path -Path "C:/"
 ```
 </div><div>
 </div></div>
@@ -318,6 +339,36 @@ PS> Get-FileHash [...] -Algorithm xxx
 </div><div>
 </div></div>
 
+[**Get-HotFix** - list hotfixes]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: list hot fixes
+
+**Alias** 💎: `<None>`
+
+**Example** 🔥:
+
+```powershell
+PS> Get-HotFix
+```
+</div></div>
+
+[***-Service** - services]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: you can manipulate services using these.
+
+**Example** 🔥:
+
+```powershell
+PS> Get-Service -name spooler # status
+PS> Stop-Service -name spooler # stop
+PS> Start-Service -name spooler  # start
+```
+</div></div>
+
 ++++++
 
 <hr class="sep-both">
@@ -329,7 +380,11 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [old](_old.md)
-</div><div>
 
+```ps
+$variable_name = value
+foreach($item in $values){}
+```
+</div><div>
 
 </div></div>

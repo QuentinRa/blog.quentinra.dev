@@ -19,9 +19,6 @@ To change the keyboard language to French: `Set-WinUserLanguageList -LanguageLis
 * dot sourcing: `. xxx.ps1`
 * Windows installer files (also known as .msi files) are used to install applications on the system. 
 * AllSigned (and others modes|Get-ExecutionPolicy)
-* Get-Service -name spooler 
-* Stop-Service -name spooler 
-* Start-Service -name spooler 
 * ISE
 
 ```
