@@ -16,7 +16,7 @@ PS> Update-Help # if help was empty, update it first
 
 👉 Commands, and arguments, are **case-insensitive** <small>(e.g. `a` == `A`)</small>
 
-👉 You can list every cmdlet with `Get-Command`
+👉 You can list every cmdlet with `Get-Command` (`gcm`).
 
 👉 Many cmdlets have an alias to a Linux command. For instance, `help` is an alias of `Get-Help`. [Refer to Wikipedia comparison](https://en.wikipedia.org/wiki/PowerShell#Comparison_of_cmdlets_with_similar_commands).
 </div><div>
@@ -379,12 +379,14 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [old](_old.md)
-
 ```ps
+PS> Set-WinUserLanguageList -LanguageList  fr-FR, en-US -force
+PS> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+PS> . xxx.ps1 # dot sourcing
 $variable_name = value
 foreach($item in $values){}
 ```
 </div><div>
 
+* ISE
 </div></div>

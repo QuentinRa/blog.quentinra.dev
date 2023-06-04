@@ -301,4 +301,6 @@ C:\> choco install python vscode git wsl2 openssh openvpn microsoft-windows-term
 C:\> Add-MpPreference -ExclusionPath "C:\Users\xxx\AppData\Local\Temp\chocolatey\"
 ```
 </div><div>
+
+* Windows installer files (also known as .msi files) are used to install applications on the system.
 </div></div>
