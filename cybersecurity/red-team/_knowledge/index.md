@@ -279,7 +279,9 @@ On Kali Linux, you can use the commands `wordlists` or `seclists` to move to the
 ...
 ```
 
-CTFs are usually using the infamous `rockout.txt` for passwords  <small>(from a data breach of rockyou.com in 2009)</small>.
+👉 CTFs are usually using the infamous `rockout.txt` for passwords  <small>(from a data breach of rockyou.com in 2009)</small>.
+
+👉 For default password: [cirt](https://cirt.net/passwords), [default-password](https://default-password.info/), and [data recovery](https://datarecovery.com/rd/default-passwords/).
 </div><div>
 
 #### Fast wordlist generation

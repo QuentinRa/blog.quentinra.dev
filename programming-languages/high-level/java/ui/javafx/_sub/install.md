@@ -11,7 +11,7 @@ The [official installation instructions](https://openjfx.io/openjfx-docs/) 🚀 
 * Navigate to `Project Structure > Libraries`
 * Click on `+` > `From Maven`
   * Enter `org.openjfx:javafx-fxml:18` for version `18`
-  * You should check `sources` and `javadoc` for a better experience
+  * Do not check `sources` and `javadoc` unless you plan to manually handle them as they **can't** be in the same folder as the `.jar` files <small>(edit the library file in `.idea`, and use a separate path)</small>.
 * 🍔 Navigate to `Edit Configurations`
     * press `ALT-V` to show VM options input field
     * write inside `--module-path lib --add-modules javafx.controls,javafx.fxml`
