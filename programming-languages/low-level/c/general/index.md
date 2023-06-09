@@ -824,7 +824,6 @@ sudo apt-get install manpages-dev
 ```
 
 * [onlinegdb](https://learn.onlinegdb.com/)
-* webassembly
 * [unused parameter](https://stackoverflow.com/questions/14492637/warn-when-using-parameter-marked-as-unused)
 
 ```

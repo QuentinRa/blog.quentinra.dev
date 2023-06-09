@@ -482,6 +482,7 @@ Stuff that I found, but never read/used yet.
 * ServiceWorkers ([article](https://levelup.gitconnected.com/boost-your-web-application-performance-with-javascript-web-workers-dcb050ea24a6))
 * [Get QueryParams](https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript)
 * `window.location.href` / `window.location.replace(URL)`
+* partytown
 </div><div>
 
 ```javascript!

@@ -43,4 +43,5 @@ ReactDOM.render(
   * [Next](https://github.com/vercel/next.js/) (98k ⭐)
   * [React Native](https://github.com/facebook/react-native)
   * [reactjsexample](https://reactjsexample.com/) (107k ⭐)
+* [react-philosophies](https://github.com/mithi/react-philosophies)
 </div></div>

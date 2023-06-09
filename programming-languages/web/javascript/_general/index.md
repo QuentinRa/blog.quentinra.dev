@@ -392,6 +392,9 @@ const object = JSON.parse(jsonString)
 const array = Object.entries(object) // object to array
 const map new Map(Object.entries(object)) // object to map
 const object = Object.fromEntries(map) // map to object
+
+const keys = Object.keys(object) // get keys
+const values =  Object.values(object) // get values
 ```
 
 #### Merge objects

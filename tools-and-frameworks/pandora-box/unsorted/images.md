@@ -47,12 +47,13 @@
 * [realfavicongenerator](https://realfavicongenerator.net/)
 * [realfavicongenerator](https://realfavicongenerator.net/svg-favicon/) (SVG)
 
-
 ##### Icons
 
 * [Bootstrap Icons](https://icons.getbootstrap.com/) (free, open-source, SVG)
 * [Feather Icons](https://feathericons.com/) (free, open-source, SVG)
 * [Font Awesome](https://fontawesome.com/search) (free with credits)
+* [iconsflow](https://iconsflow.com/) or [iconscout](https://iconscout.com/)
+* [svgrepo](https://www.svgrepo.com/)
 
 ##### Backgrounds
 

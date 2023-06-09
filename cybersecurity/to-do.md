@@ -322,6 +322,7 @@ https://tryhackme.com/room/retro (blaster...)
 * NetWitness
 * Ncrack
 * [MailSniper](https://github.com/dafthack/MailSniper)
+* [EXOCET](https://github.com/tanc7/EXOCET-AV-Evasion)
 </div></div>
 
 <hr class="sep-both">

@@ -303,4 +303,5 @@ C:\> Add-MpPreference -ExclusionPath "C:\Users\xxx\AppData\Local\Temp\chocolatey
 </div><div>
 
 * Windows installer files (also known as .msi files) are used to install applications on the system.
+* [PowerToys](https://github.com/microsoft/PowerToys)
 </div></div>

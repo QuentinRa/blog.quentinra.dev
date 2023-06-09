@@ -35,7 +35,7 @@ Services (APIs)
 * [formspree](https://formspree.io/) <small>(forms)</small>
 * [algolia](https://www.algolia.com/)/[docsearch](https://github.com/algolia/docsearch) <small>(search)</small>
 * [simpleen](https://simpleen.io/) <small>(localization)</small>
-* [courier](https://www.courier.com/) or [customer](https://customer.io/) <small>(push notifications, SMS, emails...)</small>
+* [courier](https://www.courier.com/) or [customer](https://customer.io/) <small>(push notifications, SMS, emails...)</small> or [textbelt](https://textbelt.com/) <small>(sms)</smal>
 * [pusher](https://pusher.com/) <small>(push notifications, they are interfacing websockets...)</small>
 * [postmarkapp](https://postmarkapp.com/) <small>(push emails...)</small>
 * [ipify](https://www.ipify.org/) or [jsonip](https://jsonip.com/) or [ipgeolocation](https://ipgeolocation.io/) <small>(ip)</small>
