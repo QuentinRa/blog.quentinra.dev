@@ -326,6 +326,7 @@ https://tryhackme.com/room/retro (blaster...)
 * [MailSniper](https://github.com/dafthack/MailSniper)
 * [EXOCET](https://github.com/tanc7/EXOCET-AV-Evasion)
 * [HackBrowserData](https://github.com/moonD4rk/HackBrowserData)
+* [AutoRecon](https://github.com/Tib3rius/AutoRecon)
 </div></div>
 
 <hr class="sep-both">

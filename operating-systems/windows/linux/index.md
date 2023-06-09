@@ -191,5 +191,6 @@ Stuff that I found, but never read/used yet.
 
 * [winpty](https://github.com/rprichard/winpty)
 * `wsl --update`, `wsl --shutdown`, `wsl -l -v`
+* [msys2](https://www.msys2.org/)
 </div><div>
 </div></div>

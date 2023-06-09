@@ -102,6 +102,7 @@ Use a vulnerability in Windows. The exploit was created by the NSA and  stolen b
 * [capturetheflag.withgoogle.com](https://capturetheflag.withgoogle.com/beginners-quest)
 * [List of CTFs websites](https://hacktoday.io/t/list-of-hacking-ctf-challenge-sites/1980)
 * [attackdefense](https://attackdefense.com/)
+* [virtualhackinglabs](https://www.virtualhackinglabs.com/)
 
 <br>
 

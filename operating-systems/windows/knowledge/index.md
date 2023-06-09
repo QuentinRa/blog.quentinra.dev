@@ -21,7 +21,7 @@ Some dates about the latest versions
 
 ## Windows images (ISO)
 
-If you don't have Windows, as a developper, you can use an emulator with one of the images below.
+If you don't have Windows, as a developer, you can install it with one of the images below.
 
 <div class="row row-cols-md-2 mt-3"><div>
 
