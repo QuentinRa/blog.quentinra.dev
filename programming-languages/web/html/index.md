@@ -553,6 +553,7 @@ Stuff that I found, but never read/used yet.
 * Select tag
 * math tag LaTeX Math to HTML
 * PHP comments
+* template tag
 </div><div>
 
 ```html!

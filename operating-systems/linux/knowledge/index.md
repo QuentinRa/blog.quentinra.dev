@@ -439,4 +439,5 @@ Stuff that I found, but never read/used yet.
 * [tldp](https://tldp.org/guides.html)
 * [linuxshelltips](https://www.linuxshelltips.com/)
 * [shellhacks](https://www.shellhacks.com)
+* [modern-unix](https://github.com/ibraheemdev/modern-unix)
 </div></div>

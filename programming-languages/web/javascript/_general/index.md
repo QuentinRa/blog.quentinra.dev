@@ -661,6 +661,9 @@ Stuff that I found, but never read/used yet.
 * `Array.find+index`
 * `Symbols, yield, function*()`
 * [1loc](https://1loc.dev/)
+* `const element = template.content.firstElementChild.cloneNode(true);`
+* `const collator = new Intl.Collator();
+  tabs.sort((a, b) => collator.compare(a.title, b.title));`
 </div><div>
 
 Repositories
@@ -674,4 +677,5 @@ Repositories
 * [js-the-right-way](https://github.com/braziljs/js-the-right-way/)
 * [thejsway](https://github.com/thejsway/thejsway)
 * [jstips](https://github.com/loverajoel/jstips)
+* [modern-js-cheatsheet](https://github.com/mbeaudru/modern-js-cheatsheet)
 </div></div>

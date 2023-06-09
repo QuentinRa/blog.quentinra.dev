@@ -667,6 +667,7 @@ Stuff that I found, but never read/used yet.
 * htmlescapechars
 * `array_reduce`
 * `php -m`
+* [phpstan](https://github.com/phpstan/phpstan)
 
 </div><div>
 

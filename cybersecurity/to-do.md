@@ -54,6 +54,8 @@ Random
 
 * [15 top open-source intelligence tools](https://www.csoonline.com/article/3445357/what-is-osint-top-open-source-intelligence-tools.html)
 * [OSINT 2021 guide](https://www.authentic8.com/blog/OSINT-2021-guide-tools-and-techniques)
+* [hacker-roadmap](https://sundowndev.github.io/hacker-roadmap/)
+* [Practical-Ethical-Hacking](https://github.com/TCM-Course-Resources/Practical-Ethical-Hacking-Resources)
 </div></div>
 
 <hr class="sep-both">
@@ -323,6 +325,7 @@ https://tryhackme.com/room/retro (blaster...)
 * Ncrack
 * [MailSniper](https://github.com/dafthack/MailSniper)
 * [EXOCET](https://github.com/tanc7/EXOCET-AV-Evasion)
+* [HackBrowserData](https://github.com/moonD4rk/HackBrowserData)
 </div></div>
 
 <hr class="sep-both">
