@@ -41,6 +41,7 @@
 ##### OCR (image to text)
 
 * [tesseract](https://tesseract.projectnaptha.com/) (free, open-source)
+* [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
 
 ##### Favicons
 

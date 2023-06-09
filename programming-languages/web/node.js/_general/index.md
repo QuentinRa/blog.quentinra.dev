@@ -225,6 +225,7 @@ Stuff that I found, but never read/used yet.
 * [bcrypt](https://attacomsian.com/blog/nodejs-password-hashing-with-bcrypt)
 * [http2 server-push](https://blog.risingstack.com/node-js-http-2-push/)
 * [nodebestpractices](https://github.com/goldbergyoni/nodebestpractices)
+* [commander](https://github.com/tj/commander.js) (CLI interface)
 
 </div><div>
 

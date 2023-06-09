@@ -657,6 +657,7 @@ Stuff that I found, but never read/used yet.
 * [pythonanywhere](https://www.pythonanywhere.com/)
 * [peps](https://peps.python.org/pep-0008/) (style guide)
 * [pythonawesome](https://pythonawesome.com/)
+* [taichi](https://github.com/taichi-dev/taichi)
 * `del()`: delete a variable
 * `dir()`: class properties
 * py2exe

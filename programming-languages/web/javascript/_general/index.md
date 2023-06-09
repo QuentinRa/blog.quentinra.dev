@@ -660,6 +660,7 @@ Stuff that I found, but never read/used yet.
 * `delete xxx`
 * `Array.find+index`
 * `Symbols, yield, function*()`
+* [1loc](https://1loc.dev/)
 </div><div>
 
 Repositories
@@ -670,4 +671,7 @@ Repositories
 * [33-js-concepts](https://github.com/leonardomso/33-js-concepts)
 * [modern-js-cheatsheet](https://github.com/mbeaudru/modern-js-cheatsheet) (24k ⭐)
 * [jfarmer](https://github.com/jfarmer)
+* [js-the-right-way](https://github.com/braziljs/js-the-right-way/)
+* [thejsway](https://github.com/thejsway/thejsway)
+* [jstips](https://github.com/loverajoel/jstips)
 </div></div>

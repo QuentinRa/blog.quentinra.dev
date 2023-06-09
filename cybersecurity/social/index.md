@@ -46,5 +46,5 @@ Stuff that I found, but never read/used yet.
 * InQuest (file analysis)
 * Urlscan/Browserling/Wannabrowser
 * sha256sum file -> pass it to tools
-
+* [zphisher](https://github.com/htr-tech/zphisher)
 </div></div>

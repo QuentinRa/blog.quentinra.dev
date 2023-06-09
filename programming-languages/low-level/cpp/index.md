@@ -634,4 +634,5 @@ Stuff that I found, but never read/used yet.
 * `getline(cin, string_variable)`/`std::cin`/`std::cerr`
 * [placement new](https://stackoverflow.com/questions/222557/what-uses-are-there-for-placement-new/222578#222578)
 * ENS course
+* [awesome-cpp](https://github.com/fffaraz/awesome-cpp)
 </div></div>

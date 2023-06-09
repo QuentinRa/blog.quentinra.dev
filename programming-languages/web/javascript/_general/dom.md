@@ -483,6 +483,7 @@ Stuff that I found, but never read/used yet.
 * [Get QueryParams](https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript)
 * `window.location.href` / `window.location.replace(URL)`
 * partytown
+* [fingerprintjs](https://github.com/fingerprintjs/fingerprintjs)
 </div><div>
 
 ```javascript!

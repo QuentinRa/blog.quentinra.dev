@@ -192,7 +192,7 @@ The [Game of Active Directory (GOAD)](https://github.com/Orange-Cyberdefense/GOA
 
 You will often want to transfer files between your machine, and the target. Mostly during privilege escalation and post-exploitation.
 
-➡️ See also: [Windows File Transfer Cheatsheet](https://infinitelogins.com/2020/09/04/windows-file-transfer-cheatsheet/).
+➡️ See also: [Windows File Transfer Cheatsheet](https://infinitelogins.com/2020/09/04/windows-file-transfer-cheatsheet/) and [croc](https://github.com/schollz/croc).
 
 #### Python webserver 🐍
 
