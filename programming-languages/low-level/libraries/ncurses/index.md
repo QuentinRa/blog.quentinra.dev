@@ -43,3 +43,93 @@ You may check these resources
 
 
 </div></div>
+
+<hr class="sep-both">
+
+<div class="row row-cols-md-2"><div>
+
+```
+#include <curses.h>
+
+WINDOW* w;
+
+// init screen
+    if ( initscr() == NULL ) {
+        // error
+    }
+
+clear();
+refresh();
+
+// see LINES global variable
+// see COLS global variable
+// if too small, handle
+w = subwin(stdscr, height, width, 0, 0);
+// ex: subwin(stdscr, LINES, COLS, 0, 0);
+box(w, ACS_VLINE, ACS_HLINE);
+
+// close
+bool r = endwin();
+if ( !r )
+    // error
+
+wclear(w);
+mvwprintw(w, 0, 0, " %2d", some_number);
+mvwprintw(mapWindow, 0, 0, "xxx");
+
+wattron(w, color);
+wattroff(w, color);
+attron(A_BOLD);
+attron(A_STANDOUT); // highlight
+
+move(0, 0)
+
+mvwaddstr(w, 0, 0, str);
+waddstr(w, str);
+mvwaddch(w, 0, 0, char);
+mvwdelch(w, 0, 0);
+
+wrefresh(w);
+```
+</div><div>
+
+```c
+// hide cursor
+noecho();
+cbreak();
+curs_set(FALSE);
+keypad(w, TRUE);
+wclear(w);
+// reset
+echo(); //show printed charaters
+nocbreak(); // don't save into buffer until <enter> pressed
+curs_set(TRUE);
+keypad(window, FALSE);
+
+int ch = getch();
+case KEY_RIGHT:
+case KEY_SEND: case KEY_ENTER: // both
+case 'b':
+
+    //init colors
+    if ( has_colors() == FALSE ) {
+        // don't support colors
+    } else {
+        // start colors
+        start_color();
+    }
+
+// colors goes from 0 to 255
+    /*for ( short i = 0; i < 255; i++ ) {
+        // init
+        init_color(i, 0, 0, 0);
+        // new color as foreground, black as background
+        init_pair(i, i, COLOR_BLACK);
+    }*/
+    for ( short i = 0; i < 8; i++ ) {
+        init_pair(i, i, COLOR_BLACK);
+    }
+    
+attr_t color = COLOR_PAIR(COLOR_WHITE);
+```
+</div></div>
