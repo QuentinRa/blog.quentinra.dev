@@ -23,8 +23,8 @@ And, in your program, use:
 * 🎨 Background/Foreground color for text
 * 🪟 Multiple windows
 * 🎹 Keyboard/Mouse input
-* 🎯 Cursor
-* 🐸 Write forms, menus...
+* 🎯 Cursor implementation
+* 🐸 Extensions for forms, menus...
 * ...
 
 **Documentation** 📚
@@ -115,7 +115,6 @@ addstr(char); // or, waddstr(w, char*);
 mvwaddch(w, pos_x, pos_y, char);
 mvwaddstr(w, pos_x, pos_y, char*);
 ```
-</div><div>
 
 #### Delete characters
 
@@ -123,6 +122,44 @@ mvwaddstr(w, pos_x, pos_y, char*);
 deleteln();                // delete a line
 mvwdelch(w, pos_x, pos_y); // delete a character
 ```
+</div><div>
+
+#### Colors
+
+Colors can only be used if the terminal supports it.
+
+```c
+if ( has_colors() == FALSE ) {
+    // don't support colors
+} else {
+    // support colors, enable them
+    start_color();
+}
+```
+
+Colors are represented using a number. It can go from 0 to 256, but some terminals only support 0 to 8. To use a color, you need to wrap it inside a pair. A pair has a foreground color, and a background color.
+
+```cpp
+init_pair(pair_id, foreground, background);
+```
+
+➡️ There are aliases for basic constants: `COLOR_BLACK`...
+
+To create new colors, use:
+
+```cpp
+init_color(color_id, 0, 0, 0); // not support by all
+```
+
+To use a pair:
+
+```cpp
+attron(COLOR_PAIR(pair_id)); // use for following text
+attroff(COLOR_PAIR(pair_id)); // stop
+wattron(w, COLOR_PAIR(pair_id)); // ...
+```
+
+Other text effects that can be enabled: `A_BOLD`, `A_STANDOUT`...
 </div></div>
 
 <hr class="sep-both">
@@ -183,7 +220,5 @@ switch(ch) {
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
-
-* [old](_old.md)
 </div><div>
 </div></div>
