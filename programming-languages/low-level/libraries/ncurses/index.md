@@ -22,10 +22,15 @@ And, in your program, use:
 
 * 🎨 Background/Foreground color for text
 * 🪟 Multiple windows
-* 🎹 Keyboard input
-* 🎯 Cursor position
-* 🐸 Write forms
+* 🎹 Keyboard/Mouse input
+* 🎯 Cursor
+* 🐸 Write forms, menus...
 * ...
+
+**Documentation** 📚
+
+* [NCURSES Programming HOWTO](https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/intro.html) <small>(examples are stored on [git](https://github.com/tony/NCURSES-Programming-HOWTO-examples))</small>
+* Dan Gookin's Guide to Ncurses Programming
 </div></div>
 
 <hr class="sep-both">
@@ -73,6 +78,55 @@ Common functions are:
 
 <hr class="sep-both">
 
+## Display text
+
+<div class="row row-cols-md-2"><div>
+
+#### Cursor
+
+The position of the cursor is where the text will be displayed, unless you specify a position explicitly.
+
+```c
+// get
+int cursor_x = getcurx(w); // cursor column
+int cursor_y = getcury(w); // cursor line
+// set
+move(cursor_x, cursor_y);
+```
+
+#### Display a text using a sort of `printf`
+
+```c
+// print where the cursor is
+printw(format);
+printw(format, args...);
+// print at a specific location
+mvwprintw(w, pos_x, pos_y, format);
+mvwprintw(w, pos_x, pos_y, format, args...);
+```
+
+#### Display characters
+
+```c
+// print where the cursor is
+addch(char); // or, waddch(w, char); 
+addstr(char); // or, waddstr(w, char*);
+// print at a specific location
+mvwaddch(w, pos_x, pos_y, char);
+mvwaddstr(w, pos_x, pos_y, char*);
+```
+</div><div>
+
+#### Delete characters
+
+```c
+deleteln();                // delete a line
+mvwdelch(w, pos_x, pos_y); // delete a character
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Reading input
 
 <div class="row row-cols-md-2"><div>
@@ -93,12 +147,9 @@ keypad(w, TRUE);  // handle arrow keys as characters
 keypad(w, FALSE); // ✅ don't handle arrow keys as characters
 ```
 
-#### Cursor
+#### Mouse
 
-```c
-int cursor_x = getcurx(w); // cursor column
-int cursor_y = getcury(w); // cursor line
-```
+...
 
 </div><div>
 
@@ -123,18 +174,6 @@ switch(ch) {
         break;
 }
 ```
-</div></div>
-
-<hr class="sep-both">
-
-## xxx
-
-<div class="row row-cols-md-2"><div>
-
-...
-</div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">

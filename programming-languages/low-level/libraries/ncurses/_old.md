@@ -2,55 +2,11 @@
 
 <div class="row row-cols-md-2"><div>
 
-...
-</div><div>
-
-...
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-* [gist](https://gist.github.com/alan-mushi/c8a6f34d1df18574f643)
-* [HowTo](https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/forms.html)
-</div><div>
-
-<details class="details-n">
-<summary>Old notes</summary>
-
-You may check these resources
-
-* <https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/>
-* <https://github.com/tony/NCURSES-Programming-HOWTO-examples>
-</details>
-
-
-</div></div>
-
-<hr class="sep-both">
-
-<div class="row row-cols-md-2"><div>
-
 ```
-mvwprintw(w, 0, 0, " %2d", some_number);
-mvwprintw(mapWindow, 0, 0, "xxx");
-
 wattron(w, color);
 wattroff(w, color);
 attron(A_BOLD);
 attron(A_STANDOUT); // highlight
-
-move(0, 0)
-
-mvwaddstr(w, 0, 0, str);
-waddstr(w, str);
-mvwaddch(w, 0, 0, char);
-mvwdelch(w, 0, 0);
 ```
 </div><div>
 
