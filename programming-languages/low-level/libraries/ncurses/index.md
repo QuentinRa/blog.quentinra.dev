@@ -7,6 +7,7 @@ NCurses "new curses" is a successor of the curses library. It's a C library to w
 It's commonly used by Linux programs such as `vim`.
 
 ```shell!
+$ # see also, [...]5-dev and [...]w5-dev
 $ sudo apt-get install libncurses-dev
 ```
 
@@ -64,6 +65,63 @@ Common functions are:
 
 * `refresh()`/`wrefresh(w)`: redraw the window
 * `clear()`/`wclear(w)`: empty the window
+* `endwin()`/`delwin(w)`: destroy a window
+
+👉 Don't forgot to call `endwin()` at the end of your program. It will automatically destroy all sub-windows.
+</div></div>
+
+<hr class="sep-both">
+
+## Reading input
+
+<div class="row row-cols-md-2"><div>
+
+You have to call some methods according to the behavior you want and the default settings (✅).
+
+```cpp
+noecho();    // don't print pressed keys
+echo();      // ✅ do print pressed keys
+
+nocbreak();  // wait for <enter> to process input
+cbreak();    // ✅ don't wait for <enter> to process input
+
+curs_set(TRUE);   // ✅ show cursor
+curs_set(FALSE);  // hide cursor
+
+keypad(w, TRUE);  // handle arrow keys as characters
+keypad(w, FALSE); // ✅ don't handle arrow keys as characters
+```
+
+#### Cursor
+
+```c
+int cursor_x = getcurx(w); // cursor column
+int cursor_y = getcury(w); // cursor line
+```
+
+</div><div>
+
+#### Keyboard
+
+If you're using `cbreak()`, you'll most likely read character by character using `getch()`. Otherwise, refer to `getstr(buffer)` documentation.
+
+🤖 Both calls are blocking the program until they receive input.
+
+```c
+int ch = getch();
+
+switch(ch) {
+    case KEY_UP: // if keypad enabled
+        // ...
+        break;
+    case 'r': // normal key pressed
+        // ...
+        break;
+    case KEY_SEND: case KEY_ENTER: // enter pressed
+        // ...
+        break;
+}
+```
 </div></div>
 
 <hr class="sep-both">

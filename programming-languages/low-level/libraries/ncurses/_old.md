@@ -23,18 +23,6 @@ Stuff that I found, but never read/used yet.
 <details class="details-n">
 <summary>Old notes</summary>
 
-Using ncurses
-
-NCurses is a graphic library to create beautiful
-interfaces in a terminal. I you do know the
-great ``VIM`` editor, then the interface was made with
-ncurses. It's simple and really easy to learn.
-
-You can install ncurses using
-
-* ``sudo apt-get install libncurses5-dev libncursesw5-dev``
-* check installed with ``ls -la /usr/include/ncurses.h``
-
 You may check these resources
 
 * <https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/>
@@ -49,11 +37,6 @@ You may check these resources
 <div class="row row-cols-md-2"><div>
 
 ```
-// close
-bool r = endwin();
-if ( !r )
-    // error
-
 mvwprintw(w, 0, 0, " %2d", some_number);
 mvwprintw(mapWindow, 0, 0, "xxx");
 
@@ -72,23 +55,6 @@ mvwdelch(w, 0, 0);
 </div><div>
 
 ```c
-// hide cursor
-noecho();
-cbreak();
-curs_set(FALSE);
-keypad(w, TRUE);
-wclear(w);
-// reset
-echo(); //show printed charaters
-nocbreak(); // don't save into buffer until <enter> pressed
-curs_set(TRUE);
-keypad(window, FALSE);
-
-int ch = getch();
-case KEY_RIGHT:
-case KEY_SEND: case KEY_ENTER: // both
-case 'b':
-
     //init colors
     if ( has_colors() == FALSE ) {
         // don't support colors
