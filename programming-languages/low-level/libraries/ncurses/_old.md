@@ -49,31 +49,11 @@ You may check these resources
 <div class="row row-cols-md-2"><div>
 
 ```
-#include <curses.h>
-
-WINDOW* w;
-
-// init screen
-    if ( initscr() == NULL ) {
-        // error
-    }
-
-clear();
-refresh();
-
-// see LINES global variable
-// see COLS global variable
-// if too small, handle
-w = subwin(stdscr, height, width, 0, 0);
-// ex: subwin(stdscr, LINES, COLS, 0, 0);
-box(w, ACS_VLINE, ACS_HLINE);
-
 // close
 bool r = endwin();
 if ( !r )
     // error
 
-wclear(w);
 mvwprintw(w, 0, 0, " %2d", some_number);
 mvwprintw(mapWindow, 0, 0, "xxx");
 
@@ -88,8 +68,6 @@ mvwaddstr(w, 0, 0, str);
 waddstr(w, str);
 mvwaddch(w, 0, 0, char);
 mvwdelch(w, 0, 0);
-
-wrefresh(w);
 ```
 </div><div>
 
