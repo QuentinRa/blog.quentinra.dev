@@ -24,6 +24,7 @@ And, in your program, use:
 * 🪟 Multiple windows
 * 🎹 Keyboard input
 * 🎯 Cursor position
+* 🐸 Write forms
 * ...
 </div></div>
 
@@ -122,6 +123,18 @@ switch(ch) {
         break;
 }
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## xxx
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">
