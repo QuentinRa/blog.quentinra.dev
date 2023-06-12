@@ -71,11 +71,19 @@ See also: [Parkerian Hexad](https://en.wikipedia.org/wiki/Parkerian_Hexad) (6 la
 
 <hr class="sep-both">
 
-## Cybersecurity suit 🤵
+## Activities and tools 🤵
 
 <div class="row row-cols-md-2"><div>
 
-#### Security models
+#### Architecture
+
+Designing the architecture involves multiple aspects:
+
+* [Security Architecture](../architecture/architecture.md): plan your organization security
+* [Data governance](../architecture/data.md): how to handle data from creation to destruction
+* ...
+
+#### Security models (conceptual)
 
 [![securityprinciples](../../_badges/thmp/securityprinciples.svg)](https://tryhackme.com/room/securityprinciples)
 
@@ -83,7 +91,14 @@ See also: [Parkerian Hexad](https://en.wikipedia.org/wiki/Parkerian_Hexad) (6 la
 * Biba Model <small>(focus on integrity)</small>
 * Clark-Wilson Model <small>(focus on data integrity)</small>
 
-👉 See also the ISO/IEC 27xxx series.
+#### Security frameworks (practical)
+
+[![adventofcyber4](../../_badges/thm/adventofcyber4/day1.svg)](https://tryhackme.com/room/adventofcyber4)
+[![redteamfundamentals](../../_badges/thm/redteamfundamentals.svg)](https://tryhackme.com/room/redteamfundamentals)
+
+* Cybersecurity Framework (CSF) by NIST
+* ISO/IEC 27000 series
+* MITRE ATT&CK Framework <small>(TTP=Tactics, Techniques and Procedures)</small>
 </div><div>
 
 #### Cyber Threat Intelligence (CTI)
@@ -92,6 +107,8 @@ See also: [Parkerian Hexad](https://en.wikipedia.org/wiki/Parkerian_Hexad) (6 la
 
 Threat intelligence is a process during which a company collects information about potential threats, then prepares against them.
 
+* **Platforms** ☕: [Cisco Talos Intelligence](https://talosintelligence.com/), [Open Threat Exchange](https://otx.alienvault.com/), [cyware](https://cyware.com/), [pulsedive](https://pulsedive.com/)
+* **Alerts** 📢: [secalerts](https://secalerts.co/), [stack.watch](https://stack.watch/)
 * **IP analysis** 🌍: [AbuseIPDB](https://www.abuseipdb.com/) <small>(malicious IPs)</small>, [IPinfo](https://ipinfo.io/) <small>(location)</small>
 * **Malware analysis** 💣: [VirusTotal](https://www.virustotal.com), [Hybrid Analysis](https://www.hybrid-analysis.com/), [joesandbox](https://www.joesandbox.com/#windows)
 
@@ -107,7 +124,14 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [old](_old.md)
+
+Learn
+
+* [THM/mitre](https://tryhackme.com/room/mitre)
 </div><div>
 
+Tools/methods/...
+
+* [Security Control Framework](https://securecontrolsframework.com/)
 
 </div></div>

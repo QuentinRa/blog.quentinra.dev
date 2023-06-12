@@ -15,12 +15,6 @@ Stuff that I found, but never read/used yet.
 * HACKING GOOGLE series
 * XCCDF (Extensible Configuration Checklist Description Format)
 
-MFA
-
-* [yubico](https://www.yubico.com/)
-* Google Passkeys / Windows Hello / iCloud Passkeys
-* Something you know, have, are
-
 R
 
 * **Advanced Persistent Threat** (APT): usually, a hacker wants to remain as long as possible within an infected network. They are using backdoors, and keep updating the code to avoid being discovered.
@@ -41,7 +35,6 @@ CMDB
 * lansweeper
 </div><div>
 
-* [Security Control Framework](https://securecontrolsframework.com/)
 * Identify and Access management (IAM/GIA) - **Lifecycle** (Authorization creep - remove previous roles/lifecycle)
 * XACML
 * The five "As" in security
@@ -54,33 +47,10 @@ Least privilege
 [![redteamfundamentals](../../_badges/thm/redteamfundamentals.svg)](https://tryhackme.com/room/redteamfundamentals)
 
 * red-team simulate enough [TTPs](https://csrc.nist.gov/glossary/term/Tactics_Techniques_and_Procedures) for the blue team to learn to react
-* MITRE ATT&CK Framework
-
-[![adventofcyber4](../../_badges/thm/adventofcyber4/day1.svg)](https://tryhackme.com/room/adventofcyber4)
-
-* Cybersecurity Framework (CSF) by NIST
-* MITRE ATT&CK Framework (TTPs, [mitre](https://tryhackme.com/room/mitre))
-
-Threat intelligence
-
-[![defensivesecurityhq](../../_badges/thm/defensivesecurityhq.svg)](https://tryhackme.com/room/defensivesecurityhq)
-
-* Cisco Talos Intelligence <small>(Threat intelligence platform)</small>
-* internxt <small>(security tools/services)</small>
-* Open Threat Exchange (OTX) <small>(Threat intelligence platform)</small>
-* secalerts <small>(Threat intelligence platform)</small>
-* stack.watch <small>(web apps monitoring)</small>
-* cyware <small>(Threat intelligence platform)</small>
-* [pulsedive](https://pulsedive.com/)
-* fireeye
-
-<details class="details-n">
-<summary>SOC/Threat intelligence/hunting/modeling</summary>
 
 [![defensivesecurityhq](../../_badges/thm/defensivesecurityhq.svg)](https://tryhackme.com/room/defensivesecurityhq)
 
 * Security Operation Center (SOC): a team of cybersecurity professionals working 24/7 <small>(detect unusual activity, vulnerabilities, intrusions, violations, training/awareness)</small>. They are using the firewall/DNS/DHCP/... logs, Network security monitoring (NSM), and they might use a SIEM.
-</details>
 
 <details class="details-n">
 <summary>Random Security Controls</summary>
