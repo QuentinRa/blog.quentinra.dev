@@ -20,7 +20,7 @@ The blue team is specialised in defense which involves protecting the systems, p
 
 Some jobs in the blue team are:
 
-* **Security Architect** 👷‍♂️: plan the security of activities and systems in accordance to the business needs and requirements.
+* **Security Architect** 👷‍♂️: [plan the security](../architecture/architecture.md) of activities and systems in accordance to the business needs and requirements.
 * **Security Analyst** 📝: analyse, and remediate to issues. Develop security plans to keep the company safe, and implement them.
 * **Incident responder** 🧑‍🚒: handle and remediate to incidents
 * **Digital Forensics** 🔎: investigate attacks, and policies violations.

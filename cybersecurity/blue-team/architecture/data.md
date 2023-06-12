@@ -33,12 +33,12 @@ Data is needed by the company, so we can't "lock it" 🔐. This is a challenge o
 
 <div class="row row-cols-md-2"><div class="align-self-center">
 
-While the goal of the [Security Program](/cybersecurity/blue-team/architecture.md#security-program) is to ensure that the organization IT architecture is safe, including data, the goal of the data governance program is to ensure the **efficient usage, management, and protection of data to drive business value** 🚀.
+While the goal of the [Security Program](/cybersecurity/blue-team/architecture/architecture.md#security-program) is to ensure that the organization IT architecture is safe, including data, the goal of the data governance program is to ensure the **efficient usage, management, and protection of data to drive business value** 🚀.
 
 ➡️ Some categories of controls: access, privacy, quality, security...
 </div><div>
 
-👉 According to the [DAMA framework](/cybersecurity/blue-team/frameworks/dama.md), we start by identifying the regulations, then we define policies, then standards/directives and guides, then we evaluate the risks and setup procedures.
+👉 According to the [DAMA framework](/cybersecurity/blue-team/architecture/frameworks/dama.md), we start by identifying the regulations, then we define policies, then standards/directives and guides, then we evaluate the risks and setup procedures.
 
 👉 According to ISO 27001, we first define the scope of the program, the assets, their critical level, their value (impact/loss). Then, we identify the threats, and set up controls and monitoring.
 
@@ -127,7 +127,7 @@ The program must be continuously monitored and improved.
 
 #### Data security
 
-See the [ISO 27002](/cybersecurity/blue-team/frameworks/iso-27002.md) standard.
+See the [ISO 27002](/cybersecurity/blue-team/architecture/frameworks/iso-27002.md) standard.
 </div><div>
 
 #### Metadata management

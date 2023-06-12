@@ -107,7 +107,7 @@ It important that everyone involved in security architecture understand each lay
 
 **2. Information Architecture**: define how information and data is designed and organized <small>(databases, data sources...)</small>.
 
-📚  See [Data governance](/cybersecurity/blue-team/data.md) to efficiently exploit/manage/protect data...
+📚  See [Data governance](/cybersecurity/blue-team/architecture/data.md) to efficiently exploit/manage/protect data...
 
 **3. Applications Architecture**: define the design and organization of applications <small>(interfaces, interactions, ecosystems...)</small>.
 

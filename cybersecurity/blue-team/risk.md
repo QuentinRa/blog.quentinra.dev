@@ -21,7 +21,7 @@ There are many types of risks <small>(financial losses, natural disasters, secur
 * 💰 Improper/illegal use of data <small>(ex: use of a client's credit card)</small>
 * 🔫 Infections, DDoS, hacking, data leak...
 * 🧑‍💻 Communication/passwords being intercepted/compromised
-* 🗃️ See also [data governance risks](/cybersecurity/blue-team/data.md#security-risks-and-business-needs)
+* 🗃️ See also [data governance risks](/cybersecurity/blue-team/architecture/data.md#security-risks-and-business-needs)
 </div></div>
 
 <hr class="sep-both">
