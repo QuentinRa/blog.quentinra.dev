@@ -20,7 +20,7 @@ The blue team is specialised in defense which involves protecting the systems, p
 
 Some jobs in the blue team are:
 
-* **Security Architect** 👷‍♂️: [plan the security](../architecture/architecture.md) of activities and systems in accordance to the business needs and requirements.
+* **Security Architect** 👷‍♂️: plan the security of activities and systems in accordance to the business needs and requirements.
 * **Security Analyst** 📝: analyse, and remediate to issues. Develop security plans to keep the company safe, and implement them.
 * **Incident responder** 🧑‍🚒: handle and remediate to incidents
 * **Digital Forensics** 🔎: investigate attacks, and policies violations.
@@ -34,6 +34,7 @@ Some jobs in the blue team are:
 
 [![adventofcyber4](../../_badges/thm/adventofcyber4/day22.svg)](https://tryhackme.com/room/adventofcyber4)
 [![adventofcyber4](../../_badges/thm/adventofcyber4/day23.svg)](https://tryhackme.com/room/adventofcyber4)
+[![securityprinciples](../../_badges/thmp/securityprinciples.svg)](https://tryhackme.com/room/securityprinciples)
 
 <div class="row row-cols-md-2 mt-3"><div>
 
@@ -48,18 +49,53 @@ There is also the French "DICAI" model that extends CIA with
 * 🔑 Authentication and Identification: verify the identity of users
 * ⌛ Irrevocability: once performed, cannot be undone
 
+See also: [Parkerian Hexad](https://en.wikipedia.org/wiki/Parkerian_Hexad) (6 layers).
+
+<br>
+
 **Reduce the attack surface** 🏄‍♂️: avoid unused software, plugins, solutions/... that are potential attack vectors.
 </div><div>
 
-**Defense-in-depth** 🕸️: use of multiple layers of security, along with various tactics, to slow down/stop an intruder
+**Defense-in-depth**/Multi-Level Security 🕸️: use of multiple layers of security, along with various tactics, to slow down/stop an intruder
 
 **Triple-A principles** 🔒: Authentication <small>(verify the identity)</small>, Authorization <small>(determine the permissions)</small>, and Accounting <small>(logs)</small>.
 
 **Zero trust** 🔎: a concept. No blind trust, verify everything, assume everyone is a threat, and continuously monitor resources.
 
+**Trust but verify** 📇: trust security measures/..., but still log and verify that there is nothing unexpected/not allowed.
+
 **Principle of the least privilege** 👮: everyone, regardless of their role in the company <small>(CEO...)</small>, should have the least privilege that they require to do their job.
 
 **Sweet spot** 🍭: find the right balance between security and productivity. Don't burden users too much.
+</div></div>
+
+<hr class="sep-both">
+
+## Cybersecurity suit 🤵
+
+<div class="row row-cols-md-2"><div>
+
+#### Security models
+
+[![securityprinciples](../../_badges/thmp/securityprinciples.svg)](https://tryhackme.com/room/securityprinciples)
+
+* Bell-LaPadula Model <small>(focus on confidentiality)</small>
+* Biba Model <small>(focus on integrity)</small>
+* Clark-Wilson Model <small>(focus on data integrity)</small>
+
+👉 See also the ISO/IEC 27xxx series.
+</div><div>
+
+#### Cyber Threat Intelligence (CTI)
+
+[![defensivesecurityhq](../../_badges/thm/defensivesecurityhq.svg)](https://tryhackme.com/room/defensivesecurityhq)
+
+Threat intelligence is a process during which a company collects information about potential threats, then prepares against them.
+
+* **IP analysis** 🌍: [AbuseIPDB](https://www.abuseipdb.com/) <small>(malicious IPs)</small>, [IPinfo](https://ipinfo.io/) <small>(location)</small>
+* **Malware analysis** 💣: [VirusTotal](https://www.virustotal.com), [Hybrid Analysis](https://www.hybrid-analysis.com/), [joesandbox](https://www.joesandbox.com/#windows)
+
+➡️ **See also**: Threat hunting <small>(hunt down a suspicious movement)</small>, Threat modeling <small>(review, and improve the security measure, see STRIDE, PASTA)</small>.
 </div></div>
 
 <hr class="sep-both">

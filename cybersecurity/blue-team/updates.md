@@ -12,6 +12,7 @@ Stuff that I found, but never read/used yet.
 * Ensure that OS and applications... are up-to-date
 * Test xxx before updating
 * Do not use internet to update. use an internal server: wsus, sccm
+* Test backing servers/downtimes/... and loading backups
 </div><div>
 
 * Importance of updates

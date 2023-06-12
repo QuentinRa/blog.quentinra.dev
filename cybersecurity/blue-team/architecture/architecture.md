@@ -220,13 +220,17 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-Access control
+Documents/Metrics
 
-* Discretionary Access Control (DAC): the owner of a resource define access rights for others. Ex: Unix File System.
-* Mandatory Access Control (MAC): access based on labels assigned to subjects (ex: users) and objects (ex: files).
-* Role-Based Access Control (RBAC): each role is given permissions, and users are given roles based on what they do in the organization.
-* Rule-Based Access Control (RBAC): rules that determine what someone can do based on who they are <small>(ex: IP...)</small>
-* Time-Based Access Control (TAC): access is granted during an interval of time <small>(ex: working hours)</small>
+* BCP (Business continuity Plan)
+* DRP (Disaster Recovery Plan?)
+* SLAs (Service Level Agreement)
+* SLOs (Service Level Objectives)
+* SLIs (Server Level Indicators)
+* RTO (Recovery Time Objective): max interruption duration allowed
+* RPO (Recovery Point Objective): max data loss duration allowed (1 hour lost?)
+* BIA (Business Impact Analysis)
+* DCP (how much downtime allowed?): 99%/... uptime (maintenance in? we must check. sometimes, we can balance update to not have any downtimes)
 
 </div><div>
 </div></div>

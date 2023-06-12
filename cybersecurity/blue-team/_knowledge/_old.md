@@ -21,19 +21,6 @@ MFA
 * Google Passkeys / Windows Hello / iCloud Passkeys
 * Something you know, have, are
 
-Stuff
-
-* BCP (Business continuity Plan)
-* DRP (Disaster Recovery Plan?)
-* SLAs (Service Level Agreement)
-* SLOs (Service Level Objectives)
-* SLIs (Server Level Indicators)
-* RTO (Recovery Time Objective): max interruption duration allowed
-* RPO (Recovery Point Objective): max data loss duration allowed (1 hour lost?)
-* BIA (Business Impact Analysis)
-* Cyber Threat Intelligence (CTI)
-* DCP (how much downtime allowed?).  Test backing servers/downtimes/... and loading backups 99%/... (maintenance in? we must check. sometimes, we can balance update to not have any downtimes)
-
 R
 
 * **Advanced Persistent Threat** (APT): usually, a hacker wants to remain as long as possible within an infected network. They are using backdoors, and keep updating the code to avoid being discovered.
@@ -63,17 +50,6 @@ Least privilege
 
 * Privileged Identity Management (PIM): from organization role to system role
 * Privileged Access Management (PAM): manage the role that a privileged user has.
-* Models: Bell-LaPadula, Biba Model
-
-[![securityprinciples](../../_badges/thmp/securityprinciples.svg)](https://tryhackme.com/room/securityprinciples)
-
-* Parkerian Hexad (CIA/...)
-* Bell-LaPadula Model (goal: confidentiality)
-* The Biba Integrity Model (integrity)
-* The Clark-Wilson Model (integrity)
-* Defence-in-Depth refers = Multi-Level Security
-* ISO/IEC 19249:2017
-* Trust but Verify (logs and verify)
 
 [![redteamfundamentals](../../_badges/thm/redteamfundamentals.svg)](https://tryhackme.com/room/redteamfundamentals)
 
@@ -89,12 +65,7 @@ Threat intelligence
 
 [![defensivesecurityhq](../../_badges/thm/defensivesecurityhq.svg)](https://tryhackme.com/room/defensivesecurityhq)
 
-* AbuseIPDB <small>(database of malicious IPs)</small>
 * Cisco Talos Intelligence <small>(Threat intelligence platform)</small>
-* IPinfo
-* Hybrid Analysis <small>(malware analysis)</small>
-* VirusTotal <small>(malware analysis)</small>
-* joesandbox <small>(malware analysis)</small>
 * internxt <small>(security tools/services)</small>
 * Open Threat Exchange (OTX) <small>(Threat intelligence platform)</small>
 * secalerts <small>(Threat intelligence platform)</small>
@@ -109,9 +80,6 @@ Threat intelligence
 [![defensivesecurityhq](../../_badges/thm/defensivesecurityhq.svg)](https://tryhackme.com/room/defensivesecurityhq)
 
 * Security Operation Center (SOC): a team of cybersecurity professionals working 24/7 <small>(detect unusual activity, vulnerabilities, intrusions, violations, training/awareness)</small>. They are using the firewall/DNS/DHCP/... logs, Network security monitoring (NSM), and they might use a SIEM.
-* Threat Intelligence: dig information about actual and potential enemies, and prepare in case they attack you.
-* Threat hunting: if a machine is suspected to have been intruded, they start hunting to confirm their assumption.
-* Threat modeling: review, and improve the security measures (STRIDE, PASTA)
 </details>
 
 <details class="details-n">
