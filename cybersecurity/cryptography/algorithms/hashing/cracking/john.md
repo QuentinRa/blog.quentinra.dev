@@ -149,6 +149,7 @@ $ john myhash --format=netntlmv2 --wordlist=wordlist
 
 [![networksecurityprotocols](../../../../_badges/thmp/networksecurityprotocols.svg)](https://tryhackme.com/room/networksecurityprotocols)
 [![linuxstrengthtraining](../../../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
+[![encryptioncrypto101](../../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
 
 <div class="row row-cols-md-2"><div>
 
@@ -187,6 +188,7 @@ $ john --format=gpg myhash --wordlist=wordlist
 
 ## SSH private key - passphrase cracking
 
+[![encryptioncrypto101](../../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
 [![basicpentestingjt](../../../../_badges/thm-p/basicpentestingjt.svg)](https://tryhackme.com/room/basicpentestingjt)
 
 <div class="row row-cols-md-2"><div>

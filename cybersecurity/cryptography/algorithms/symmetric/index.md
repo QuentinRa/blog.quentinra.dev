@@ -1,5 +1,7 @@
 # Symmetric algorithms
 
+[![encryptioncrypto101](../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
+
 <div class="row row-cols-md-2 mt-3"><div>
 
 Symmetric algorithms <small>(a.k.a. secret key algorithm)</small> are algorithms in which the **same key** is used to encrypt and decrypt a cypher.
@@ -34,7 +36,9 @@ These algorithms split the message in blocks of fixed size `n`. If a block is no
 
 👉 Examples: ECB, AES...
 
-➡️ Since the key, the part of the message in the block, and the cipher have the length, this a permutation of `m` to get `c`.
+➡️ Since the key, the block, and the cipher all have the same length, the output `c` can be viewed as a permutation of `m`.
+
+➡️ `n` is usually 128 bits.
 </div></div>
 
 <hr class="sep-both">

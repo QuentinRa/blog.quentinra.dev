@@ -1,5 +1,7 @@
 # Asymmetric algorithms
 
+[![encryptioncrypto101](../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
+
 <div class="row row-cols-md-2 mt-3"><div>
 
 Asymmetric algorithms <small>(a.k.a. public-key algorithm)</small> are algorithms in which **different keys** are used to encrypt and decrypt a cypher.
@@ -96,6 +98,8 @@ We will pick a value $N$ greater than the sum of the values in the Knapsack, and
 
 ## Diffie–Hellman key exchange
 
+[![encryptioncrypto101](../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
+
 <div class="row row-cols-md-2"><div>
 
 It allows two parties to establish a shared secret key over an insecure communication channel. It works as follows:
@@ -118,6 +122,8 @@ It allows two parties to establish a shared secret key over an insecure communic
 <hr class="sep-both">
 
 ## Rivest–Shamir–Adleman (RSA)
+
+[![encryptioncrypto101](../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
 
 <div class="row row-cols-md-2"><div>
 
