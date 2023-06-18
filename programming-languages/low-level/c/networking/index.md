@@ -325,19 +325,19 @@ if (recvfrom(client_fd, buffer, 1024, 0, (struct sockaddr *)&sock_addr, &sock_le
 
 <div class="row row-cols-md-2"><div>
 
-**inet_aton** 🔢: convert an IP (`cp`) in a machine representation (`in_addr`).
+**inet_aton** 🔢: convert an IP (`char*`) to the machine representation (`in_addr`). It stores inside `inp` the result.
 
 ```cpp
 int inet_aton(const char *cp, struct in_addr *inp);
 ```
 
-**inet_aton** 🔤: return from `in_addr` the human-readable IP address.
+**inet_aton** 🔤: return from `in` the human-readable IP address.
 
 ```cpp
 char *inet_ntoa(struct in_addr in);
 ```
 
-**gethostbyname** 🌍: find the IP address from a DNS name.
+**gethostbyname** 🌍: find the IP address from a domain name.
 
 ```cpp
 struct hostent *gethostbyname(const char *name);
