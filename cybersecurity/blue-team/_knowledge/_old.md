@@ -12,20 +12,11 @@ Stuff that I found, but never read/used yet.
 * CIS (cyber-defense, hardening kits - build kit content)
 * ShadowServer
 * Threatmap
-* HACKING GOOGLE series
 * XCCDF (Extensible Configuration Checklist Description Format)
 
 R
 
 * **Advanced Persistent Threat** (APT): usually, a hacker wants to remain as long as possible within an infected network. They are using backdoors, and keep updating the code to avoid being discovered.
-* **Endpoint Detection and Response** (EDS)
-* **Deceptive security**
-
-Endpoint Protection
-
-* antivirus
-* anti-malware
-* intrusion prevention
 
 CMDB
 
@@ -35,22 +26,7 @@ CMDB
 * lansweeper
 </div><div>
 
-* Identify and Access management (IAM/GIA) - **Lifecycle** (Authorization creep - remove previous roles/lifecycle)
-* XACML
-* The five "As" in security
-
-Least privilege
-
-* Privileged Identity Management (PIM): from organization role to system role
-* Privileged Access Management (PAM): manage the role that a privileged user has.
-
-[![redteamfundamentals](../../_badges/thm/redteamfundamentals.svg)](https://tryhackme.com/room/redteamfundamentals)
-
-* red-team simulate enough [TTPs](https://csrc.nist.gov/glossary/term/Tactics_Techniques_and_Procedures) for the blue team to learn to react
-
-[![defensivesecurityhq](../../_badges/thm/defensivesecurityhq.svg)](https://tryhackme.com/room/defensivesecurityhq)
-
-* Security Operation Center (SOC): a team of cybersecurity professionals working 24/7 <small>(detect unusual activity, vulnerabilities, intrusions, violations, training/awareness)</small>. They are using the firewall/DNS/DHCP/... logs, Network security monitoring (NSM), and they might use a SIEM.
+* Network security monitoring (NSM)
 
 <details class="details-n">
 <summary>Random Security Controls</summary>

@@ -192,13 +192,4 @@ Access
 Firewall applicative
 
 * Application-level gateway (FTP, SIP, or HTTP)
-
-ACLs
-
-* DAC: each owner allow access
-* MAC: allowed by a central entity
-* RBAC
-* RB-RBAC: if condition then permission (mails to folder)
-* ABAC: based on the value of the request attributes, resources, env
-* Where ACLs?: Database (no), Middleware/API (usually here), Client (dangerous is directly interacting with the API)
 </div></div>

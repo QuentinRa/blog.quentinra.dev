@@ -117,13 +117,36 @@ Threat intelligence is a process during which a company collects information abo
 
 <hr class="sep-both">
 
+## Security Operation Center (SOC)
+
+[![defensivesecurityhq](../../_badges/thm/defensivesecurityhq.svg)](https://tryhackme.com/room/defensivesecurityhq)
+
+<div class="row row-cols-md-2"><div>
+
+A security operation center is a war room where security professionals work 24/7. They are:
+
+* Detecting unusual activity
+* Detecting intrusions or violations
+* Monitoring vulnerabilities
+* Training or raising awareness
+* ...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+Stuff
+
 * [old](_old.md)
+* The five "As" in security
 
 Learn
 
@@ -133,5 +156,10 @@ Learn
 Tools/methods/...
 
 * [Security Control Framework](https://securecontrolsframework.com/)
+* Endpoint Detection and Response (EDS)
+    * antivirus
+    * anti-malware
+    * intrusion prevention
+* Deceptive security
 
 </div></div>
