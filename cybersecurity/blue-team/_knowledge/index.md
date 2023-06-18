@@ -111,6 +111,7 @@ Threat intelligence is a process during which a company collects information abo
 * **Alerts** 📢: [secalerts](https://secalerts.co/), [stack.watch](https://stack.watch/)
 * **IP analysis** 🌍: [AbuseIPDB](https://www.abuseipdb.com/) <small>(malicious IPs)</small>, [IPinfo](https://ipinfo.io/) <small>(location)</small>
 * **Malware analysis** 💣: [VirusTotal](https://www.virustotal.com), [Hybrid Analysis](https://www.hybrid-analysis.com/), [joesandbox](https://www.joesandbox.com/#windows)
+* **Others** 🎹: Threatmap, ShadowServer...
 
 ➡️ **See also**: Threat hunting <small>(hunt down a suspicious movement)</small>, Threat modeling <small>(review, and improve the security measure, see STRIDE, PASTA)</small>.
 </div></div>
@@ -145,7 +146,6 @@ Stuff that I found, but never read/used yet.
 
 Stuff
 
-* [old](_old.md)
 * The five "As" in security
 
 Learn

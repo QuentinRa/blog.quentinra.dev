@@ -34,9 +34,10 @@ This section regroups common terms used in red and blue team.
 * **Exploits**: code that makes use of a vulnerability to gain access to a machine, install malware, steal data...
 * **0 Day**/Zero day: an unknown vulnerability that was just discovered
 * **CTF** <small>(Capture The Flag)</small>: a training exercise to help students learn about cybersecurity, by solving challenges and capturing the flag.
+* **Advanced Persistent Threat** (APT): a hacker wants to remain as long as possible within an infected network. They are using backdoors, and keep updating the code to avoid being discovered.
 </div><div>
 
-Some well-known cyberattacks ([source](https://www.malwarebytes.com/))
+Some well-known malware types ([source](https://www.malwarebytes.com/))
 
 * **ransomware** 🔒: lock your system, and ask for a ransom.
 * **adware** 📰: hide, and show ads in the browser, may monitor the user to show relevant ads.

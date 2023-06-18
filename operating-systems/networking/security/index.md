@@ -192,4 +192,15 @@ Access
 Firewall applicative
 
 * Application-level gateway (FTP, SIP, or HTTP)
+
+CMDB
+
+* Configuration Managment Database
+* inventory software/hardware/... basically every asset?
+* auto-discovery?
+* lansweeper
+
+Others
+
+* Network security monitoring (NSM)
 </div></div>
