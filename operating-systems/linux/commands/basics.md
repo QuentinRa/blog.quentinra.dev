@@ -387,13 +387,13 @@ Redirect `stdout` to a file (save result)
 ```bash
 $ echo "Hello, World" > myFile
 ```
-</div><div>
 
 Append `stdout` to a file
 
 ```bash
 $ echo "Hello, World" >> myFile
 ```
+</div><div>
 
 Use a file instead of user input
 
@@ -413,6 +413,18 @@ Merge `stderr` with `stdout` <small>(uncommon usage)</small>
 
 ```bash
 $ cat not_found 2>&1
+```
+
+Discard `stdout`, but keep `stderr` <small>(uncommon usage)</small>
+
+```bash
+$ echo xxx &> /dev/null
+```
+
+Redirect both `stdout` and`stderr` <small>(uncommon usage)</small>
+
+```bash
+$ echo xxx > output.txt 2>&1
 ```
 </div></div>
 

@@ -117,7 +117,8 @@ $ docker exec -it name /bin/bash
 $ docker network connect bridge xxx
 $ docker ... --network=bridge
 $ docker network ls
-$ docker network inspect bridge
+$ docker rmi tag
+$ docker tag existing_tag additional_tag
 ```
 </div><div>
 
@@ -133,4 +134,5 @@ restart: always
 
 * [linuxhandbook](https://linuxhandbook.com/tag/docker/)
 * [Kubernetes](https://kubernetes.io)
+* Docker nexus repository
 </div></div>
