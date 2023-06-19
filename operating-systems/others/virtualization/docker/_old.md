@@ -1,35 +1,7 @@
 # Introduction
 
-**Docker is an easy way to share an application**. You will create a configuration in a **Dockerfile**, and using it, you will create a **Docker image** of your application. Any machine that has **Docker** can run your image, meaning your application can be run everywhere.
-
-A virtual machine allows someone to have a Linux (or ...) desktop on Windows. Once installed, one can start a Linux-only application on Windows. But a virtual machine may be too much according to what you want, and that's where Docker comes in handy. It will use your current machine file system, your RAM, your CPU ... 
-to run a container that can have Windows, Linux, or any other system running on it.
-
 Each docker image has its own memory, so each time you create a new container, **it will restart from scratch**. If you restart the same container, then everything you did will still be there ([more explanation on Stack Overflow](https://stackoverflow.com/questions/28574433/do-docker-containers-retain-file-changes)).
 
-A downside of `docker`, at least one that I found, was that it was hard and impossible for me to use some system-specific devices such as sound (<span class="text-muted small">at least in Windows but in Linux or macOS it seems to be possible</span>).
-
-> If you want to use Linux on Windows, install a WSL (Windows subsystem). For instance, you can open the Windows Store,  enter "Debian" and install it.
-
-<hr class="sl">
-
-## Install Docker
-
-Firstly, read the official documentation, it might help more.
-Here is the [official installation page](https://docs.docker.com/engine/install/).
-
-* check if installed with `docker -v`
-* on Windows
-  * install [Docker desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-  * you need to restart it each time you want to use `docker` commands
-  * when the application is started, a message should be shown
-  telling you that you can use `docker` commands
-
-<hr class="sr">
-
-## Some commands you need to know
-
-* `docker pull tag`: download an image
 * `docker build -t tag .`: build an image named `tag` with
 the `DockerFile` in the current folder
 * `docker build -t tag:version .`: specify tag version
@@ -37,11 +9,6 @@ when building
 * `docker run -it tag`: run `tag` image in interactive mode,
 for instance, a bash (where you can input commands) is interactive
 * `docker run tag`: run `tag`
-
-You can find images here [https://hub.docker.com/](https://hub.docker.com/)
-that you can use as a base for your application.
-As an example, there is an image called `gcc` 
-if you need a system configured and with `gcc` command available.
 
 Other commands that you might use
 
