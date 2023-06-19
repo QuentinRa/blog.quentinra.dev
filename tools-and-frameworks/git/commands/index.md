@@ -529,6 +529,7 @@ Learn
 * [dubrayn](https://dubrayn.github.io/IPS-DEV/git.html#1)
 * [Git & Github Desktop](https://docs.google.com/presentation/d/1vtK6LoqwF4rQQZZy-ovuEgsYUwwMRXsqDVMOjAPSBt0/edit#slide=id.p) and [learn-git-milestones](https://github.com/omundy/learn-git-milestones)
 * 👉 An imaged tutorial: [GitHub for collaboration](https://mozillascience.github.io/working-open-workshop/github_for_collaboration/) <small>(quite good)</small>.
+* [learngitbranching](https://learngitbranching.js.org/)
 </div><div>
 
 Cheatsheets

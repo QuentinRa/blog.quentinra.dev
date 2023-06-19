@@ -1740,4 +1740,5 @@ Disk management
 * Create partition: `fdisk`
 * Mount: `mount xxx yyy`
 * Format: `mkfs.ext4 xxx -L "XXX"`
+* `basename`, `dirname`, `realpath`
 </div></div>

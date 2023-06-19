@@ -663,6 +663,10 @@ Stuff that I found, but never read/used yet.
 * py2exe
 * `apt install python3-xxx`
 * pipx
+* `Optional[type]`
+* `class XXX(Enum): XXX = 0, ...`
+* `Enumerate(xxx.items())`
+* `Dict[bool,bool]`
 
 ```
 a = 5 + \

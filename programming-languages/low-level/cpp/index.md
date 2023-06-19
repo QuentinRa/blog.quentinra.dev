@@ -635,4 +635,5 @@ Stuff that I found, but never read/used yet.
 * [placement new](https://stackoverflow.com/questions/222557/what-uses-are-there-for-placement-new/222578#222578)
 * ENS course
 * [awesome-cpp](https://github.com/fffaraz/awesome-cpp)
+* [googlemock](https://github.com/google/googletest/tree/main/googlemock)
 </div></div>

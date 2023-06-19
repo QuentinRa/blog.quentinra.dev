@@ -31,7 +31,7 @@ $ docker -v # test
 
 ## Docker images
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2 mt-4"><div>
 
 To get started, you will have to choose and download an image 🖼️. It will be the base from which you will start adding files, packages, and everything you need for your application.
 
@@ -42,26 +42,65 @@ We usually start from an operating system such as [ubuntu](https://hub.docker.co
 ➡️ If you are using WSL, you might check out [Pengwin](https://github.com/WhitewaterFoundry/Pengwin) <small>(wlinux)</small>.
 </div><div>
 
-To **download an image** locally, use:
+To **download** an image
 
 ```ps
 $ docker pull image_name
 $ docker pull image_name:version
 ```
 
-To **list images**
+To **list** images
 
 ```ps
 $ docker image ls
 ```
 
-To **delete an image**
+To **delete** an image
 
 ```ps
-$ docker image rm image_id
+$ docker image rm image_tag_or_id
 ```
 </div></div>
 
+<hr class="sep-both">
+
+## Containers
+
+<div class="row row-cols-md-2"><div>
+
+An image is static. It's built once, and never modified. From it, you can create runtime instances, called **containers** 📦. 
+
+On a container, you can do things like creating files, adding packages, running commands... <small>(e.g. use it)</small> but these changes will be lost when the container is destroyed <small>(unless you use docker commit)</small>.
+
+There is no limit to the number of containers created from one image.
+
+```ps
+$ docker [...]
+```
+
+To **list** containers
+
+```ps
+$ docker container ls    # running containers 
+$ docker container ls -a # all
+$ docker ps              # running containers
+$ docker ps -a           # all containers
+```
+</div><div>
+
+To **start/stop** a container
+
+```ps
+$ docker start container_tag_or_id
+$ docker stop container_tag_or_id
+```
+
+To **delete** a container
+
+```ps
+$ docker container rm container_tag_or_id
+```
+</div></div>
 
 <hr class="sep-both">
 
@@ -74,14 +113,7 @@ Stuff that I found, but never read/used yet.
 ```shell!
 $ docker network create XXX
 $ docker cp xxx:/docker/path ./local/path
-$ docker image ls -a
-$ docker image rm iid
-$ docker container ps -a
-$ docker container ls -la
-$ docker container rm cid
-$ docker start cid
 $ docker exec -it name /bin/bash
-$ docker stop cid
 $ docker network connect bridge xxx
 $ docker ... --network=bridge
 $ docker network ls
