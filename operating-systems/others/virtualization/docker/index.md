@@ -4,12 +4,12 @@
 
 [Docker](https://www.docker.com/) allows someone to pack an operating system along with stuff on it <small>(apps, files, configurations...)</small> in something called an **image**. You can then distribute it to others.
 
-* 🌍 Easily share applications <small>(get a container, run it, and you're done)</small>
-* ☕ Easy development setup <small>(someone installs, and deploys it to others)</small>
+* 🌍 Easily share applications <small>(everything is within the image)</small>
+* ☕ Easier setup <small>(create an image, and deploy it for others to use)</small>
 * 🚀 Uniformize the environment <small>(same environment for everyone)</small>
 * 👉 Can be run everywhere <small>(Windows, Linux, macOS...)</small>
 * 🔥 Docker, unlike a VM, use the underlying host operating system resources such as the file system, the RAM, or the CPU...
-* ❌ May not support some features, according to the operating system running the docker <small>(graphical interfaces, sound...)</small>
+* ❌ Docker may **not** support some features, according to the operating system running the docker <small>(graphical interfaces, sound...)</small>
 </div><div>
 
 The easiest way to get started is to use [Docker desktop](https://www.docker.com/products/docker-desktop/). You may only install [docker engine](https://docs.docker.com/engine/install/) which only give access to the `docker` command.
