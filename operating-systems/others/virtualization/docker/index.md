@@ -10,29 +10,58 @@
 * 👉 Can be run everywhere <small>(Windows, Linux, macOS...)</small>
 * 🔥 Docker, unlike a VM, use the underlying host operating system resources such as the file system, the RAM, or the CPU...
 * ❌ May not support some features, according to the operating system running the docker <small>(graphical interfaces, sound...)</small>
+</div><div>
 
 The easiest way to get started is to use [Docker desktop](https://www.docker.com/products/docker-desktop/). You may only install [docker engine](https://docs.docker.com/engine/install/) which only give access to the `docker` command.
 
 ```shell!
 $ docker -v # test
 ```
-</div><div>
 
-To get started, you will have to pick and download an image 🖼️. It will be the base from which you will start adding files, packages, and everything you need for your application.
+<br>
+
+**Useful links** 🎉
+
+* [Documentation](https://docs.docker.com/)
+* [Docker Labs](https://github.com/docker/labs)
+* [hello-world image](https://github.com/docker-library/hello-world)
+</div></div>
+
+<hr class="sep-both">
+
+## Docker images
+
+<div class="row row-cols-md-2"><div>
+
+To get started, you will have to choose and download an image 🖼️. It will be the base from which you will start adding files, packages, and everything you need for your application.
 
 👉 Browse images on [Docker Hub](https://hub.docker.com/)
 
 We usually start from an operating system such as [ubuntu](https://hub.docker.com/_/ubuntu), or we may start from an image with our tools installed, such as with [gcc](https://hub.docker.com/_/gcc) image.
 
 ➡️ If you are using WSL, you might check out [Pengwin](https://github.com/WhitewaterFoundry/Pengwin) <small>(wlinux)</small>.
+</div><div>
 
-To download an image locally, use:
+To **download an image** locally, use:
 
 ```ps
 $ docker pull image_name
 $ docker pull image_name:version
 ```
+
+To **list images**
+
+```ps
+$ docker image ls
+```
+
+To **delete an image**
+
+```ps
+$ docker image rm image_id
+```
 </div></div>
+
 
 <hr class="sep-both">
 
@@ -44,7 +73,6 @@ Stuff that I found, but never read/used yet.
 
 ```shell!
 $ docker network create XXX
-$ docker pull XXX:version
 $ docker cp xxx:/docker/path ./local/path
 $ docker image ls -a
 $ docker image rm iid
@@ -54,6 +82,10 @@ $ docker container rm cid
 $ docker start cid
 $ docker exec -it name /bin/bash
 $ docker stop cid
+$ docker network connect bridge xxx
+$ docker ... --network=bridge
+$ docker network ls
+$ docker network inspect bridge
 ```
 </div><div>
 
@@ -64,14 +96,9 @@ $ docker stop cid
 ```shell!
 $ docker compose run xxx
 $ docker compose up -d # ???
+restart: always
 ```
 
-* Unused
-
-```shell!
-$ docker network connect bridge xxx
-$ docker ... --network=bridge
-$ docker network ls
-$ docker network inspect bridge
-```
+* [linuxhandbook](https://linuxhandbook.com/tag/docker/)
+* [Kubernetes](https://kubernetes.io)
 </div></div>
