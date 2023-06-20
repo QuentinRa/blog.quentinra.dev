@@ -104,6 +104,43 @@ $ docker container rm container_tag_or_id
 
 <hr class="sep-both">
 
+## Dockerfile
+
+<div class="row row-cols-md-2"><div>
+
+A `Dokerfile` <small>(no extension)</small> is a file describing what to do to create the image you want.
+
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Build, and deploy images
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+💡 A **tag** is the image's name and it's version. For instance, `fedora:latest` or `fedora:34`. When the version is `latest`, it's implicit, and can be omitted, so `fedora` and `fedora:latest` are the same.
+
+#### Building
+
+You can configure and tune an image by creating a file called `Dokerfile`. Once finished, you can build your image using:
+
+```bash!
+# Assuming "Dockerfile" is inside the current folder
+$ docker build -t some_tag_here .
+```
+
+</div><div>
+
+#### Deploying
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
