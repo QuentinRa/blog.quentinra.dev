@@ -4,7 +4,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-OVAL is used by many files in the project, but there are barely any resources to learn about its syntax 📉.
+OVAL is used in many files of the project, but there are barely any resources to learn about its syntax 📉.
 
 The usual template is something like this:
 
@@ -40,11 +40,13 @@ A criteria may have children of type `criteria`, or `criterion`. For the later, 
 ```
 
 💡 Criterion might not be the only tag that support `negate`.
+
+🎉 As a quick reminder, you can use [**jinja**](jinja.md) macros in your OVAL files!
 </div></div>
 
 <hr class="sep-both">
 
-## tests
+## Tests
 
 <div class="row row-cols-md-2"><div>
 
@@ -58,7 +60,7 @@ Tests are tag ending with `_test`. The usually have one or two children of type 
 A common tag to test file content.
 
 ```xml
-<ind:textfilecontent54_test id="xxx" check="all" check_existence="none_exist" comment="">
+<ind:textfilecontent54_test id="xxx" check="all" comment="">
     <ind:object object_ref="obj_xxx" />
 </ind:textfilecontent54_test>
 
@@ -66,6 +68,13 @@ A common tag to test file content.
     <!-- see ind tags section -->
 </ind:textfilecontent54_object>
 ```
+
+You can use the following attributes on `textfilecontent54_test`
+
+* `check_existence="all_exist"`: all objects found
+* `check_existence="none_exist"`: no valid object found
+
+➡️ See also: `textfilecontent54_state`.
 </div></div>
 
 <hr class="sep-both">
@@ -84,9 +93,13 @@ You can either give the path:
 <ind:filepath>/path/to/file</ind:filepath>
 ```
 
-Or, load files in the current folder using a regex:
+Or, load files in the current folder:
 
-```
+```xml!
+<!-- set current folder -->
+<ind:path>/path/to/</ind:path>
+<!-- pick one -->
+<ind:filename datatype="string">xxx.config</ind:filename>
 <ind:filename operation="pattern match">^*\.config$</ind:filename>
 ```
 </div><div>
@@ -105,6 +118,7 @@ Then, you assert what result you expect
 ```xml!
 <ind:instance datatype="int">1</ind:instance>
 <ind:instance datatype="int" operation="greater than or equal">1</ind:instance>
+<ind:instance datatype="int" operation="equals">1</ind:instance>
 ```
 
 ⚠️ If the second line is missing, build will fail.
@@ -121,6 +135,7 @@ Stuff that I found, but never read/used yet.
 ```xml!
 <extend_definition comment="xxx" definition_ref="yyy" />
 <external_variable datatype="int" id="var_xxx" />
+<xxx var_ref="var_xxx" var_check="at least one" datatype="string" />
 ```
 </div><div>
 </div></div>

@@ -9,6 +9,14 @@ XXX
 * `<br />`
 * `<tt>xxx</tt>`
 * `<pre>xxx</pre>`
+
+```yaml!
+template:
+    name: your_template_name
+    vars:
+        xxx: yyy
+        xxx@zzz: yyy
+```
 </div><div>
 
 **Warnings** ⚠️
