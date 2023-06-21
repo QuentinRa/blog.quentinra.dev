@@ -13,6 +13,7 @@ You will also write a check only for one rule. In some rule folder, create a fil
 
 ```xml
 <def-group>
+  {{{ oval_metadata("XXX") }}}
   <definition class="compliance" id="{{{ _RULE_ID }}}" version="3">
       <criteria>
           <!-- ... -->

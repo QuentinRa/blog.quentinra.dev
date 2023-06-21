@@ -10,13 +10,117 @@ The usual template is something like this:
 
 ```xml
 <def-group>
-  <definition class="..." id="..." version="3">
+  <!-- ... -->
+  <definition class="..." id="..." version="...">
       <criteria>
-          <!-- ... -->
+          <criterion test_ref="..." />
       </criteria>
   </definition>
-  <!-- ... -->
+  <!-- body -->
 </def-group>
+```
+
+The `class`, `id`, `version`, and `test_ref` values are specific to what  kind of file you're creating. Others elements are explained here. 
+
+➡️ Basic concepts are [explained here](https://ovalproject.github.io/getting-started/tutorial/).
+</div><div>
+
+`criteria` define what to do to **pass the check**. You can ask for all checks to be true <small>(AND)</small>, or only at least one <small>(OR)</small>.
+
+```xml!
+<criteria operator="AND" [...] >
+<criteria operator="OR" [...] >
+```
+
+A criteria may have children of type `criteria`, or `criterion`. For the later, they are referencing the test that will be done.
+
+```xml!
+<criterion test_ref="..." />
+<criterion test_ref="..." negate="true" />
+```
+
+💡 Criterion might not be the only tag that support `negate`.
+</div></div>
+
+<hr class="sep-both">
+
+## tests
+
+<div class="row row-cols-md-2"><div>
+
+Tests are tag ending with `_test`. The usually have one or two children of type `_object`, and `_state` respectfully.
+
+⚠️ Absence of the `comment` attribute on a `_test` will make the build crash as they are displayed in the HTML report.
+</div><div>
+
+#### textfilecontent54
+
+A common tag to test file content.
+
+```xml
+<ind:textfilecontent54_test id="xxx" check="all" check_existence="none_exist" comment="">
+    <ind:object object_ref="obj_xxx" />
+</ind:textfilecontent54_test>
+
+<ind:textfilecontent54_object id="obj_xxx">
+    <!-- see ind tags section -->
+</ind:textfilecontent54_object>
+```
+</div></div>
+
+<hr class="sep-both">
+
+## ind tags
+
+<div class="row row-cols-md-2"><div>
+
+While I'm not sure what's `ind`, the following tags are quite handy.
+
+#### Select a file/folder
+
+You can either give the path:
+
+```xml!
+<ind:filepath>/path/to/file</ind:filepath>
+```
+
+Or, load files in the current folder using a regex:
+
+```
+<ind:filename operation="pattern match">^*\.config$</ind:filename>
+```
+</div><div>
+
+#### Check if a pattern is inside a file
+
+You can "grep" to see if a pattern is inside a file. There are no fancy options like "grep" <small>(case insensitive, multiple lines...)</small>.
+
+```xml!
+<ind:pattern operation="pattern match">some_line_here</ind:pattern>
+<ind:pattern operation="pattern match">^some_regex_here$</ind:pattern>
+```
+
+Then, you assert what result you expect
+
+```xml!
+<ind:instance datatype="int">1</ind:instance>
+<ind:instance datatype="int" operation="greater than or equal">1</ind:instance>
+```
+
+⚠️ If the second line is missing, build will fail.
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+```xml!
+<extend_definition comment="xxx" definition_ref="yyy" />
+<external_variable datatype="int" id="var_xxx" />
 ```
 </div><div>
 </div></div>
