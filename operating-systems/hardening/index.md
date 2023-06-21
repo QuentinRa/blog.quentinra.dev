@@ -30,11 +30,11 @@ In most files: `rule.yml`, `some_oval.xml`... You can use [jinja](https://compli
 
 * [Add a new product]()
 * [Loading rules in a profile]()
-* [Adding new rules]()
+* [Adding new rules](content/rules.md)
 * [Adding/Editing templates](content/templates.md)
 * [Building a product]()
 
-Here are some notes about [OVAL](content/oval.md), which is used in `templates`, `checks`, and `applicability` files.
+Here are some notes about [OVAL](content/oval.md), which is used in `templates`, `checks`, and `applicability` files. Here are some notes about [jinja](content/jinja.md) too.
 
 </div></div>
 
