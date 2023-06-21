@@ -24,15 +24,18 @@ In a nutshell, a **product** is an operating system <small>(or an app actually)<
 A **rule**, such as `partition_for_tmp` <small>(checks if there is a separate partition for /tmp)</small>, contains a way to test if the system pass the check, along other stuff such as remediation notes/scripts...
 </div><div>
 
-A **check** is written in OCIL, which is XML-based. They are referred to as **templates**, as they are designed to be reused in multiple rules, but with different arguments passed to them. 
+A **check** is written in [OVAL](https://ovalproject.github.io/getting-started/tutorial/), which is XML-based. Some are referred to as **templates**, if were designed to be reused in multiple rules, but with different arguments passed to them. 
 
-In most files: `rule.yml`, `some_ocil.xml`... You can use [jinja](https://complianceascode.readthedocs.io/en/latest/jinja_macros/01-general.html) <small>([official doc](https://jinja.palletsprojects.com/en/3.0.x/))</small> macros to inject some code within a file <small>(ex: branching, loops...)</small>.
+In most files: `rule.yml`, `some_oval.xml`... You can use [jinja](https://complianceascode.readthedocs.io/en/latest/jinja_macros/01-general.html) <small>([official doc](https://jinja.palletsprojects.com/en/3.0.x/))</small> macros to inject some code within a file <small>(ex: branching, loops...)</small>.
 
 * [Add a new product]()
 * [Loading rules in a profile]()
 * [Adding new rules]()
-* [Adding new templates]()
+* [Adding/Editing templates](content/templates.md)
 * [Building a product]()
+
+Here are some notes about [OVAL](content/oval.md), which is used in `templates`, `checks`, and `applicability` files.
+
 </div></div>
 
 <hr class="sep-both">
