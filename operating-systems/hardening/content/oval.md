@@ -126,6 +126,36 @@ Then, you assert what result you expect
 
 <hr class="sep-both">
 
+## Variables
+
+<div class="row row-cols-md-2"><div>
+
+You can use sets defined in a variable. For instance, if you want to check that at least one file exists and is correct.
+
+From tags such as `ind:path`, you can use these attributes:
+
+```xml!
+<xxx var_ref="var_xxx" var_check="at least one" />
+<xxx var_ref="var_xxx" var_check="at least one" datatype="string" />
+```
+
+The variable can be either `local` or `external`.
+</div><div>
+
+#### Local variable
+
+A local variable is declared inside the OVAL file.
+
+```xml
+<constant_variable datatype="string" comment="XXX"
+  id="var_xxx" version="1">
+    <value>zzz</value> <!-- one per value -->
+  </constant_variable>
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -135,7 +165,6 @@ Stuff that I found, but never read/used yet.
 ```xml!
 <extend_definition comment="xxx" definition_ref="yyy" />
 <external_variable datatype="int" id="var_xxx" />
-<xxx var_ref="var_xxx" var_check="at least one" datatype="string" />
 ```
 </div><div>
 </div></div>

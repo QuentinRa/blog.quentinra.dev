@@ -22,3 +22,17 @@ You will also write a check only for one rule. In some rule folder, create a fil
 </def-group>
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* Uniq ID
+</div><div>
+
+
+</div></div>

@@ -29,6 +29,22 @@ description: |-
 Another example: `{{% if negate %}}negate="true" {{% endif %}}` which optionally show an OVAL attribute based on a user-defined variable called `negate`.
 </div><div>
 
+#### Variables
+
+You can declare variables using `set`:
+
+```text!
+{{%- set xxx = "Hello, " + "World!" -%}}
+```
+
+You can apply transformations on a variable using `|`:
+
+```text!
+{{{ xxx|upper }}}
+```
+
+<br>
+
 #### OVAL Macros
 
 OVAL Macros can be declared in `shared/macros/10-oval.jinja`, or directly inside any OVAL file.
@@ -44,4 +60,18 @@ Relatively to the scope of the macro, you can call it with:
 ```text!
 {{{ some_name(arg='xxx') }}}
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* Test if a variable exists; arguments
+</div><div>
+
+
 </div></div>

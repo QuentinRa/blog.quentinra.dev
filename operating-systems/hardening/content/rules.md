@@ -27,3 +27,21 @@ template:
 
 ...
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+By default, all rules that are loaded in a profile, are considered to be applicable on a product. But, if that's not the case, then each rule should specify the condition in the `platform:` attribute. [Documentation](https://complianceascode.readthedocs.io/en/latest/manual/developer/06_contributing_with_content.html#applicability-by-cpe).
+
+* `/content/shared/applicability`
+* New type, inventory
+* `platform: your_check`
+</div><div>
+
+
+</div></div>
