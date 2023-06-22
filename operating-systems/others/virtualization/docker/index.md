@@ -112,6 +112,19 @@ $ docker container rm container_tag_or_id
 
 A `Dokerfile` <small>(no extension)</small> is a file describing what to do to create the image you want.
 
+```dockerfile!
+FROM fedora:latest
+
+RUN dnf -y upgrade && \
+    # Format: dnf -y install some_packages_here && \
+    # Examples:
+    dnf -y install firefox nano git dnf-utils && \
+    dnf -y install iputils net-tools iproute && \
+    dnf clean all
+
+ENTRYPOINT /bin/bash
+```
+
 </div><div>
 
 ...
@@ -162,13 +175,28 @@ Docker Compose version vX.X.X
 * `docker compose start`: start containers
 * `docker compose stop`: stop containers
 * `docker compose down`: stop, and remove containers
+
+Useful options: `docker compose up --no-recreate --no-start`.
 </div><div>
 
-The syntax is pretty straightforward, here is an example:
+The syntax is pretty straightforward once you're familiar with run options. Much like `docker run` commands, almost all are optional.
 
 ```yaml
+version: '3'
 
+services:
+  service_name_here:              # --name
+    build: .                      # ./Dockerfile
+    image: some_name:some_version # tag
+    hostname: some_hostname       # --hostname
+    volumes:                      # -v
+      - ./content:/content
+    restart: always               # --restart
+    stdin_open: true              # -i
+    tty: true                     # -t
 ```
+
+➡️ `build` isn't associated with a `docker run` option, but since docker compose can build images, you'll have to provide it.
 </div></div>
 
 <hr class="sep-both">

@@ -17,6 +17,7 @@
 [ComplianceAsCode/content](https://github.com/ComplianceAsCode/content) <small>(1.8k ⭐)</small> is a tool to create a platform-specific XML used by **OpenSCAP** 🔎. It allows you to select which rules will be applied, and tune them to fit your target platform 🚀.
 
 * [Documentation](https://complianceascode.readthedocs.io/en/latest/manual/developer/01_introduction.html) <small>(mostly obsolete, or relatively empty)</small>
+* [Fedora docker setup](content/install.md)
 * Note that the project is *somewhat* complex
 
 In a nutshell, a **product** is an operating system <small>(or an app actually)</small> in a specific version, such as `debian11`. It has **profiles**, such as `workstation.profile`, which lists what **rules** we will use.
