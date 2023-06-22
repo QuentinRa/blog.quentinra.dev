@@ -18,6 +18,8 @@ The easiest way to get started is to use [Docker desktop](https://www.docker.com
 $ docker -v # test
 ```
 
+➡️ On Kali Linux/Parrot Sec, follow these [instructions](https://docs.docker.com/engine/install/debian/), and replace the codename in `/etc/apt/sources.list.d/docker.list` with a valid one.
+
 <br>
 
 **Useful links** 🎉
@@ -137,6 +139,36 @@ $ docker build -t some_tag_here .
 #### Deploying
 
 ...
+</div></div>
+
+<hr class="sep-both">
+
+## Docker compose plugin
+
+<div class="row row-cols-md-2"><div>
+
+Docker [compose](https://docs.docker.com/compose/) wraps all arguments passed to `docker run` inside a file called `docker-compose.yml`. It's mainly aimed for services <small>(e.g. tasks with no user interaction)</small>, but it can be used with any docker image 🎊.
+
+```shell!
+$ sudo apt-get install docker-compose-plugin
+$ docker compose version
+Docker Compose version vX.X.X
+```
+
+💡 It's designed to manage, and run multiple containers. All usual commands are now added after `docker compose`:
+
+* `docker compose build`: build images
+* `docker compose up`: create containers and start them
+* `docker compose start`: start containers
+* `docker compose stop`: stop containers
+* `docker compose down`: stop, and remove containers
+</div><div>
+
+The syntax is pretty straightforward, here is an example:
+
+```yaml
+
+```
 </div></div>
 
 <hr class="sep-both">
