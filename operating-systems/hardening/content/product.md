@@ -9,7 +9,9 @@ This section is inspired from the [documentation](https://complianceascode.readt
 * Product name: `parrot` <small>(ex: debian11)</small>
 * Platform name: `parrot` <small>(ex: debian)</small>
 
-First, link your product to the project files
+<br>
+
+**First, link your product to the project files**
 
 <details class="details-n">
 <summary>./CMakeLists.txt</summary>
@@ -76,14 +78,24 @@ all_cmake_products=(
 ...
 ```
 </details>
+
+<details class="details-n">
+<summary>./shared/checks/oval/sysctl_kernel_ipv6_disable.xml</summary>
+
+```diff
+...
+	<platform>multi_platform_parrot</platform>
+...
+```
+</details>
 </div><div>
 
-Then create your product files
+**Then create your product files**
 
 <details class="details-n">
 <summary>./products/parrot/product.yml</summary>
 
-```yaml
+```yaml!
 product: parrot
 full_name: Parrot Linux
 type: platform
@@ -108,6 +120,19 @@ cpes:
 </details>
 
 <details class="details-n">
+<summary>./products/parrot/CMakeLists.txt</summary>
+
+```text!
+# Sometimes our users will try to do: "cd parrot; cmake ." That needs to error in a nice way.
+if("${CMAKE_SOURCE_DIR}" STREQUAL "${CMAKE_CURRENT_SOURCE_DIR}")
+message(FATAL_ERROR "cmake has to be used on the root CMakeLists.txt, see the Building ComplianceAsCode section in the Developer Guide!")
+endif()
+
+ssg_build_product("parrot")
+```
+</details>
+
+<details class="details-n">
 <summary>./products/parrot/transforms/constants.xslt</summary>
 
 ```xml!
@@ -123,6 +148,62 @@ cpes:
 <xsl:variable name="cisuri">empty</xsl:variable>
 
 </xsl:stylesheet>
+```
+</details>
+
+<details class="details-n">
+<summary>./products/parrot/profiles/standard.profile</summary>
+
+```yaml!
+documentation_complete: true
+
+title: 'Standard System Security Profile for Parrot Linux'
+
+description: |-
+    This profile contains rules to ensure standard security baseline
+    of an Parrot Linux system. Regardless of your system's workload
+    all of these checks should pass.
+
+selections:
+    - file_owner_etc_passwd
+    - file_groupowner_etc_passwd
+    - file_permissions_etc_passwd
+```
+</details>
+
+In `product.yml`, we used `installed_OS_is_parrot`. This a check we will define that will mark test as `notapplicable` if we are using Parrot XML on an OS not running Parrot.
+
+To check if the target is running Parrot Linux, we will check if `/etc/debian_version` contains `parrot`.
+
+<details class="details-n">
+<summary>./shared/checks/oval/installed_OS_is_parrot.xml</summary>
+
+```xml!
+<def-group>
+  <definition class="inventory" id="installed_OS_is_parrot" version="3">
+    <metadata>
+      <title>Installed operating system is Parrot Linux</title>
+      <affected family="unix">
+        <platform>multi_platform_all</platform>
+      </affected>
+      <reference ref_id="cpe:/o:parrot:5.3" source="CPE" />
+      <description>The operating system installed on the system is Parrot Linux</description>
+    </metadata>
+    <criteria operator="AND">
+      <extend_definition comment="Installed OS is part of the Unix family" definition_ref="installed_OS_is_part_of_Unix_family" />
+      <criterion comment="Parrot Linux is installed" test_ref="test_os_is_parrot" />
+    </criteria>
+  </definition>
+
+  <ind:textfilecontent54_test check="all" comment="Parrot Linux is installed" id="test_os_is_parrot" version="1">
+    <ind:object object_ref="object_os_is_parrot" />
+  </ind:textfilecontent54_test>
+  <ind:textfilecontent54_object id="object_os_is_parrot" version="1">
+    <ind:filepath>/etc/debian_version</ind:filepath>
+    <ind:pattern operation="pattern match">^parrot$</ind:pattern>
+    <ind:instance datatype="int" operation="equals">1</ind:instance>
+  </ind:textfilecontent54_object>
+</def-group>
 ```
 </details>
 </div></div>
