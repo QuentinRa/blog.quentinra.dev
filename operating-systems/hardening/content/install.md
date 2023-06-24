@@ -1,5 +1,7 @@
 # Fedora docker setup
 
+[Go back](../index.md)
+
 <div class="row row-cols-md-2"><div>
 
 Assuming you have installed [docker](/operating-systems/others/virtualization/docker/index.md) and [docker compose](/operating-systems/others/virtualization/docker/index.md#docker-compose-plugin), you can easily install `ComplianceAsCode/content` on a Fedora docker as follows:
@@ -52,18 +54,24 @@ $ git clone https://github.com/ComplianceAsCode/content.git
 $ docker compose build
 ```
 
-5. Run the docker image
+5. Create a file `run.sh`
 
 ```shell!
-$ docker compose up --no-recreate --no-start
-$ docker compose start
-$ docker ps
-CONTAINER ID   IMAGE [...]
-000000c0b00e   fedora-openscap:1.00 [...]
-$ docker attach 000000c0b00e
+$ cat run.sh
+docker compose up --no-recreate --no-start
+docker compose start
+id=$(docker ps | grep fedora-openscap | cut -d ' ' -f1)
+docker attach $id
 ```
 
-6. Build some product to test if it works
+6. Run `run.sh`
+
+```shell!
+$ chmod +x run.sh
+$ ./run.sh
+```
+
+7. Build some product to test if it works
 
 ```shell!
 $ cd /content

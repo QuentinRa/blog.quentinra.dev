@@ -29,7 +29,7 @@ A **check** is written in [OVAL](https://ovalproject.github.io/getting-started/t
 
 In most files: `rule.yml`, `some_oval.xml`... You can use [jinja](https://complianceascode.readthedocs.io/en/latest/jinja_macros/01-general.html) <small>([official doc](https://jinja.palletsprojects.com/en/3.0.x/))</small> macros to inject some code within a file <small>(ex: branching, loops...)</small>.
 
-* [Add a new product]()
+* [Add a new product](content/product.md)
 * [Loading rules in a profile]()
 * [Adding new rules](content/rules.md)
 * [Adding/Editing templates](content/templates.md)

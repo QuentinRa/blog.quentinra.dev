@@ -150,5 +150,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * Network Adapters (see Active directory)
+* `"C:\Program Files\Oracle\VirtualBox\VBoxManage" list hdds` (in a CMD)
+* Need to update snapshots
 </div><div>
 </div></div>
