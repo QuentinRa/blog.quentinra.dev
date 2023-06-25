@@ -5,6 +5,17 @@
 <div class="row row-cols-md-2"><div>
 
 The [jinja](https://jinja.palletsprojects.com/en/3.0.x/templates/) documentation will most likely have more useful information. Note that unlike in `jinja` templates, we use one more level of accolades, so `{% %}` is now `{{% %}}` <small>(ansible-related reason)</small>.
+
+<br>
+
+#### Print a variable
+
+You can use `{{{ a_variable }}}` almost anywhere to echo a variable:
+
+```xml!
+<some_tag>{{{ xxx }}}</some_tag>
+<some_tag xxx="{{{ xxx }}}">...</some_tag>
+```
 </div><div>
 
 #### Variables
@@ -30,6 +41,7 @@ You can apply transformations on a variable using `|`:
 
 You can use `if/elif/else/endif`. Common conditions are
 
+* `xxx`: true if a variable `xxx` exists, or is `true`
 * `"ubuntu" in product`: true if product contains `ubuntu`
 * `"ubuntu" not in product`: false if product contains `ubuntu`
 * `product in ["debian10", "debian11"]`: true if product in array
@@ -70,19 +82,4 @@ Assuming the macro is within scope <small>(in the general macro file or in the s
 ```text!
 {{{ some_name(arg='xxx') }}}
 ```
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-* Test if a variable exists; arguments
-* Display variable
-</div><div>
-
-
 </div></div>

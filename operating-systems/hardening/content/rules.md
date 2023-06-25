@@ -108,20 +108,50 @@ This rule is only applied if `./shared/applicability/machine.yml` and `./shared/
 
 <hr class="sep-both">
 
+## Rule check
+
+<div class="row row-cols-md-2"><div>
+
+#### Template
+
+Some rules are using a [template](templates.md) to check if a rule was applied or not on the target, **but that's not the only way**.
+
+You can pass arguments to your template using `vars`.
+
+```yaml!
+template:
+    name: your_template_name
+    vars:
+        arg1: value1
+        arg1@product_name: value2
+```
+
+➡️ The syntax `@product_name`, means that for a specific product, the argument will have a different value.
+</div><div>
+
+#### Local OVAL check
+
+An alternative to templates is to use a local OVAL check. It's the same as a template, aside from the fact that it's only usable with one rule.
+
+Given a rule `<rule_id>`, the check will be called `shared.xml`, and stored in `<rule_id>/oval/shared.xml`.
+
+The definition ID is now the **Rule ID**.
+
+```diff
+-<definition class="compliance" id="{{{ _RULE_ID }}}" version="3">
++<definition class="compliance" id="rule_id" version="3">
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-```yaml!
-template:
-    name: your_template_name
-    vars:
-        xxx: yyy
-        xxx@zzz: yyy
-```
-</div><div>
-
 * references are used to sort rules in HTML pages
+* remediation
+</div><div>
 </div></div>
