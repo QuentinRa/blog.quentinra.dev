@@ -18,7 +18,15 @@ selections:
     - ...
 ```
 
-Selections is a list of rules that are tested when selecting this profile.
+<br>
+
+#### Selections
+
+Selections is a list of rules IDs that are tested when selecting this profile. However, **it's not always enough to add a rule here**, you may have to edit the rule `prodtype` attribute too.
+
+👉 See the [Rules#prodtype](rules.md#prodtype) attribute.
+
+☠️ If the `prodtype` attribute is present, you'll either get an error during build <small>(unselects all groups)</small>, or the rule may be silently removed.
 </div><div>
 
 #### controls

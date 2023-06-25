@@ -4,30 +4,47 @@
 
 <div class="row row-cols-md-2"><div>
 
-XXX
+A rule link every information related to the hardening rule. It's described in a `rule.yml`. It defines stuff like:
 
-* `<rule_name>/rule.yml`
-* [format](https://complianceascode.readthedocs.io/en/latest/manual/developer/06_contributing_with_content.html#rules)
-* `<br />`
-* `<tt>xxx</tt>`
-* `<pre>xxx</pre>`
+* 🌱 Description <small>(ex: explain what's this rule about)</small>
+* 🔎 Rule check <small>(ex: test if the rule was applied)</small>
+* 🧯 Remediation utility <small>(ex: bash script, note...)</small>
+* 🌍 Applicability check <small>(ex: package is not present ️→ rule not applicable)</small>
+* 🔒 Product check <small>(ex: can this rule be used with this product?)</small>
+* ...
 
-```yaml!
-template:
-    name: your_template_name
-    vars:
-        xxx: yyy
-        xxx@zzz: yyy
+A rule is stored in a folder. The folder name is the **rule id**.
+
+Below is the rule `file_groupowner_etc_passwd`.
+
 ```
+./linux_os/guide/system/permissions/files/permissions_important_account_files/file_groupowner_etc_passwd/
+```
+
+Rules are stored in groups, e.g. its parent folders, which all have a `group.yml`. You can place a rule in whatever folder you see fit.
 </div><div>
 
-**Warnings** ⚠️
+```yaml!
+documentation_complete: true
 
-* If you used a rule with a `prodtype`, and there isn't your `prodtype` inside, then the rule will be silently removed at build time
+prodtype: xxx,yyy,...
 
-* If there is a problem with the documentation <small>(ex: `<br>` which is a missing auto-closing slash)</small>, build will fail at step 16 <small>(or ~7 sometimes)</small>.
+title: 'XXX'
 
-...
+description: XXX
+rationale: XXX
+severity: medium
+
+platform: machine
+
+references:
+    xxx: xxx
+
+template:
+  name: xxx
+  vars:
+    - ...
+```
 </div></div>
 
 <hr class="sep-both">
@@ -45,5 +62,25 @@ By default, all rules that are loaded in a profile, are considered to be applica
 * `platform: your_check`
 </div><div>
 
+* `<rule_name>/rule.yml`
+* [format](https://complianceascode.readthedocs.io/en/latest/manual/developer/06_contributing_with_content.html#rules)
+* `<br />`
+* `<tt>xxx</tt>`
+* `<pre>xxx</pre>`
 
+```yaml!
+template:
+    name: your_template_name
+    vars:
+        xxx: yyy
+        xxx@zzz: yyy
+```
+
+**Warnings** ⚠️
+
+* ☠️ If the `prodtype` attribute is present, you'll either get an error during build <small>(unselects all groups)</small>
+
+* ☠️ If there is a problem with the documentation <small>(ex: `<br>` which is a missing auto-closing slash)</small>, build will fail at step 9.
+
+...
 </div></div>
