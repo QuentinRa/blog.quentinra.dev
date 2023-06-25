@@ -22,7 +22,11 @@ Below is the rule `file_groupowner_etc_passwd`.
 ```
 
 Rules are stored in groups, e.g. its parent folders, which all have a `group.yml`. You can place a rule in whatever folder you see fit.
+
+➡️ Refer to the section about [rule format](https://complianceascode.readthedocs.io/en/latest/manual/developer/06_contributing_with_content.html#rules).
 </div><div>
+
+💡 Don't forget that you can use [jinja](jinja.md) in any file.
 
 ```yaml!
 documentation_complete: true
@@ -49,9 +53,36 @@ template:
 
 <hr class="sep-both">
 
+## Description
+
+<div class="row row-cols-md-2"><div>
+
+You can use `description`, and `rationale` to provide information. They support HTML tags such as:
+
+* `<br />`: new line
+* `<tt>xxx</tt>`: equivalent of `<code>`
+* `<pre>xxx</pre>`: a line of code
+* ...
+
+☠️ If there is a problem with the documentation <small>(ex: `<br>` which is a missing auto-closing slash)</small>, build will fail at step 9.
+</div><div>
+
+As a reminder, you can create multi-lines texts using `|-`
+
+```yaml!
+description: |-
+    XXX xxx <br />
+    YYY yyy
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## prodtype and platform
 
 <div class="row row-cols-md-2"><div>
+
+#### prodtype
 
 If there is a `prodtype` attribute, then this rule can **only** be used by products that were added in `prodtype`. You can add your product to each rule `prodtype` manually 🤚, or use a script 🤖.
 
@@ -62,7 +93,17 @@ If there is a `prodtype` attribute, then this rule can **only** be used by produ
 ☠️ If the `prodtype` attribute is present, you'll get an error during build <small>(unselects all groups...)</small>.
 </div><div>
 
-...
+#### platform
+
+By default, if a product uses a rule, the rule is considered to be applicable on it. But that's not always the case. We may require a package to be installed, a specific environment...
+
+```yml!
+platform: machine and package[ntp]
+```
+
+This rule is only applied if `./shared/applicability/machine.yml` and `./shared/applicability/package.yml` are true.
+
+➡️ Refer to the [applicability](https://complianceascode.readthedocs.io/en/latest/manual/developer/06_contributing_with_content.html#applicability-by-cpe) section.
 </div></div>
 
 <hr class="sep-both">
@@ -73,19 +114,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-By default, all rules that are loaded in a profile, are considered to be applicable on a product. But, if that's not the case, then each rule should specify the condition in the `platform:` attribute. [Documentation](https://complianceascode.readthedocs.io/en/latest/manual/developer/06_contributing_with_content.html#applicability-by-cpe).
-
-* `/content/shared/applicability`
-* New type, inventory
-* `platform: your_check`
-</div><div>
-
-* `<rule_name>/rule.yml`
-* [format](https://complianceascode.readthedocs.io/en/latest/manual/developer/06_contributing_with_content.html#rules)
-* `<br />`
-* `<tt>xxx</tt>`
-* `<pre>xxx</pre>`
-
 ```yaml!
 template:
     name: your_template_name
@@ -93,12 +121,5 @@ template:
         xxx: yyy
         xxx@zzz: yyy
 ```
-
-**Warnings** ⚠️
-
-* ☠️ If the `prodtype` attribute is present, you'll get an error during build <small>(unselects all groups)</small>
-
-* ☠️ If there is a problem with the documentation <small>(ex: `<br>` which is a missing auto-closing slash)</small>, build will fail at step 9.
-
-...
+</div><div>
 </div></div>
