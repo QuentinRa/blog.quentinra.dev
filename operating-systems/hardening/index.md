@@ -33,10 +33,15 @@ Tasks to do are defined in guides provided by organization such as [CIS](https:/
 * [OpenSCAP website](https://www.open-scap.org/)
 * [User manual, API, and HTML Guides](https://static.open-scap.org/)
 
+#### Install openscap and guides
+
+On debian 10, you can use:
+
 ```shell!
-$ # debian 10
 $ sudo apt-get update && sudo apt-get install libopenscap8
 ```
+
+To check if openscap is installed:
 
 ```ps
 $ oscap -V | head -n 1
@@ -45,6 +50,8 @@ OpenSCAP command line tool (oscap) X.Y.Z
 
 Guides are XML files, such as `ssg-debian11-ds.xml`. They were created with [ComplianceAsCode/content](#complianceascodecontent) project, and you can [download all of them here](https://github.com/ComplianceAsCode/content/releases/). You may put them in ` /usr/share/xml/scap/ssg/content/`.
 </div><div>
+
+#### Profiles
 
 Each guide have **profile**, for instance, some guides have a **workstation** profile testing hardening checks for workstations.
 
@@ -55,6 +62,8 @@ Profiles:
     Title: Standard System Security Profile for Parrot Linux
     Id: xccdf_org.ssgproject.content_profile_standard
 ```
+
+#### Check
 
 To check if a system is hardened given a profile, and a guide:
 
@@ -67,6 +76,8 @@ To generate a HTML report:
 ```shell!
 $ oscap xccdf eval [...] --report report.html some_xml.xml
 ```
+
+💡 You can test a remote system using `oscap-ssh`, as long as the target has openscap installed. Refer to the manual.
 </div></div>
 
 <hr class="sep-both">
@@ -91,10 +102,10 @@ A **check** is written in [OVAL](https://ovalproject.github.io/getting-started/t
 In most files: `rule.yml`, `some_oval.xml`... You can use [jinja](https://complianceascode.readthedocs.io/en/latest/jinja_macros/01-general.html) <small>([official doc](https://jinja.palletsprojects.com/en/3.0.x/))</small> macros to inject some code within a file <small>(ex: branching, loops...)</small>.
 
 * [Add a new product](content/product.md)
-* [Loading rules in a profile]()
+* [Loading rules in a profile](content/profiles.md)
 * [Adding new rules](content/rules.md)
 * [Adding/Editing templates](content/templates.md)
-* [Building a product]()
+* [Building a product](content/compilation.md)
 
 Here are some notes about [OVAL](content/oval.md), which is used in `templates`, `checks`, and `applicability` files. Here are some notes about [jinja](content/jinja.md) too.
 

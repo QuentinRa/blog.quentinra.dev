@@ -128,6 +128,7 @@ You can [download Kali ISO here](https://www.kali.org/get-kali/#kali-virtual-mac
 * `sudo 7z x /usr/share/wordlists/rockyou.txt.gz` to extract rockyou.txt wordlist. Location: `/usr/share/wordlists/rockyou.txt`.
 * The `.config` hold the UI configuration... You can copy it to another user. You need to log back in to see the changes.
 * `sudo apt-get -y install ftp`
+* To download Debian 10 packages, `sudo nano /etc/apt/sources.list` and add `deb http://deb.debian.org/debian buster main`.
 
 <br>
 

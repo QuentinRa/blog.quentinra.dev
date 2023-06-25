@@ -4,29 +4,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-The [jinja](https://jinja.palletsprojects.com/en/3.0.x/templates/) documentation will most likely have more useful information. Note that unlike in `jinja` templates, we use one more level of accolades, so `{% %}` is now `{{{% %}}` <small>(ansible-related reason)</small>.
-
-<br>
-
-#### Branching
-
-You can use `if/elif/else/endif`. Common conditions are
-
-* `"ubuntu" in product`: true if product contains `ubuntu`
-* `product in ["debian10", "debian11"]`: true if product in array
-
-```text!
-description: |-
-{{% if "ubuntu" in product %}}
-        Hello, from Ubuntu.
-{{% elif "debian11" not in product %}}
-        Hello, not from Debian 11.
-{{% else %}}
-        Hello.
-{{% endif %}}
-```
-
-Another example: `{{% if negate %}}negate="true" {{% endif %}}` which optionally show an OVAL attribute based on a user-defined variable called `negate`.
+The [jinja](https://jinja.palletsprojects.com/en/3.0.x/templates/) documentation will most likely have more useful information. Note that unlike in `jinja` templates, we use one more level of accolades, so `{% %}` is now `{{% %}}` <small>(ansible-related reason)</small>.
 </div><div>
 
 #### Variables
@@ -42,10 +20,40 @@ You can apply transformations on a variable using `|`:
 ```text!
 {{{ xxx|upper }}}
 ```
+</div></div>
 
-<br>
+<hr class="sep-both">
 
-#### OVAL Macros
+## Branching
+
+<div class="row row-cols-md-2"><div>
+
+You can use `if/elif/else/endif`. Common conditions are
+
+* `"ubuntu" in product`: true if product contains `ubuntu`
+* `"ubuntu" not in product`: false if product contains `ubuntu`
+* `product in ["debian10", "debian11"]`: true if product in array
+
+Another example: `{{% if negate %}}negate="true" {{% endif %}}` which optionally show an OVAL attribute based on a user-defined variable called `negate`.
+</div><div>
+
+```text!
+description: |-
+{{% if "ubuntu" in product %}}
+        Hello, from Ubuntu.
+{{% elif "debian11" not in product %}}
+        Hello, not from Debian 11.
+{{% else %}}
+        Hello.
+{{% endif %}}
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Macros
+
+<div class="row row-cols-md-2"><div>
 
 OVAL Macros can be declared in `shared/macros/10-oval.jinja`, or directly inside any OVAL file.
 
@@ -55,7 +63,9 @@ OVAL Macros can be declared in `shared/macros/10-oval.jinja`, or directly inside
 {{%- endmacro -%}}
 ```
 
-Relatively to the scope of the macro, you can call it with:
+</div><div>
+
+Assuming the macro is within scope <small>(in the general macro file or in the same file)</small>, you can call it with:
 
 ```text!
 {{{ some_name(arg='xxx') }}}
