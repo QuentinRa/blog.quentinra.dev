@@ -24,6 +24,53 @@ Tasks to do are defined in guides provided by organization such as [CIS](https:/
 
 <hr class="sep-both">
 
+## OpenSCAP
+
+<div class="row row-cols-md-2"><div>
+
+[OpenSCAP](https://github.com/OpenSCAP/openscap) (1.1k ⭐) is a tool to test if a device is hardened given a guide, and may be able to apply remediation automatically.
+
+* [OpenSCAP website](https://www.open-scap.org/)
+* [User manual, API, and HTML Guides](https://static.open-scap.org/)
+
+```shell!
+$ # debian 10
+$ sudo apt-get update && sudo apt-get install libopenscap8
+```
+
+```ps
+$ oscap -V | head -n 1
+OpenSCAP command line tool (oscap) X.Y.Z
+```
+
+Guides are XML files, such as `ssg-debian11-ds.xml`. They were created with [ComplianceAsCode/content](#complianceascodecontent) project, and you can [download all of them here](https://github.com/ComplianceAsCode/content/releases/). You may put them in ` /usr/share/xml/scap/ssg/content/`.
+</div><div>
+
+Each guide have **profile**, for instance, some guides have a **workstation** profile testing hardening checks for workstations.
+
+```shell!
+$ oscap info some_xml.xml
+[...]
+Profiles:
+    Title: Standard System Security Profile for Parrot Linux
+    Id: xccdf_org.ssgproject.content_profile_standard
+```
+
+To check if a system is hardened given a profile, and a guide:
+
+```shell!
+$ oscap xccdf eval --profile xccdf_org.ssgproject.content_profile_standard some_xml.xml
+```
+
+To generate a HTML report:
+
+```shell!
+$ oscap xccdf eval [...] --report report.html some_xml.xml
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## ComplianceAsCode/content
 
 <div class="row row-cols-md-2"><div>
