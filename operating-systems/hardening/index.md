@@ -119,40 +119,13 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* CIS (cyber-defense, hardening kits - build kit content)
-* XCCDF (Extensible Configuration Checklist Description Format)
-* OpenSCAP
-
 ```
 scap-workbench ssg-xxx-ds.xml
-oscap ds sds-validate ssg-xxx-ds.xml
-oscap info ssg-xxx-ds.xml
-oscap-ssh xxx@IP 22 \
-  xccdf eval \
-  --profile xccdf_org.ssgproject.content_profile_xxx \
-  --results-arf results.xml --report report.html \
-  ssg-xxx-ds.xml
 ```
 </div><div>
 
-ComplianceAsCode
-
-```bash
-./build_product xxx
-
-cd /content
-source .pyenv.sh
-./utils/rule_dir_json.py
-cat build/rule_dirs.json | json_pp | grep "service_rsh_disabled"
-   "service_rsh_disabled" : {
-      "dir" : "/content/linux_os/guide/services/obsolete/r_services/service_rsh_disabled",
-      "id" : "service_rsh_disabled",
-./utils/autoprodtyper.py xxx yyy
-```
-
 * Can change some values in the generated XML
 * Test `error`
-* Error during build: try the command yourself, you may see additional information
 * `find linux_os -name *ftp* -type d 2> /dev/null`
 * [control file](https://complianceascode.readthedocs.io/en/latest/manual/developer/03_creating_content.html#controls)
 </div></div>

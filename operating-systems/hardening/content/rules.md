@@ -49,6 +49,24 @@ template:
 
 <hr class="sep-both">
 
+## prodtype and platform
+
+<div class="row row-cols-md-2"><div>
+
+If there is a `prodtype` attribute, then this rule can **only** be used by products that were added in `prodtype`. You can add your product to each rule `prodtype` manually 🤚, or use a script 🤖.
+
+➡️ See [mod_prodtype.py](https://complianceascode.readthedocs.io/en/latest/manual/developer/05_tools_and_utilities.html#utils-mod-prodtype-py-programmatically-modify-prodtype-in-rule-yml) or [autoprodtyper.py](https://complianceascode.readthedocs.io/en/latest/manual/developer/05_tools_and_utilities.html#utils-autoprodtyper-py-automatically-add-product-to-prodtype). To be able to execute scripts, you need [to execute some commands](compilation.md#scripts) first.
+
+⚠️ When using `autoprodtyper` with controls, it **won't** work.
+
+☠️ If the `prodtype` attribute is present, you'll get an error during build <small>(unselects all groups...)</small>.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -78,7 +96,7 @@ template:
 
 **Warnings** ⚠️
 
-* ☠️ If the `prodtype` attribute is present, you'll either get an error during build <small>(unselects all groups)</small>
+* ☠️ If the `prodtype` attribute is present, you'll get an error during build <small>(unselects all groups)</small>
 
 * ☠️ If there is a problem with the documentation <small>(ex: `<br>` which is a missing auto-closing slash)</small>, build will fail at step 9.
 
