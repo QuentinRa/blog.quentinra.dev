@@ -167,4 +167,6 @@ Stuff that I found, but never read/used yet.
 <external_variable datatype="int" id="var_xxx" />
 ```
 </div><div>
+
+* Can change some values in the generated XML
 </div></div>

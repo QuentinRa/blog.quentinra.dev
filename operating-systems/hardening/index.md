@@ -123,9 +123,4 @@ Stuff that I found, but never read/used yet.
 scap-workbench ssg-xxx-ds.xml
 ```
 </div><div>
-
-* Can change some values in the generated XML
-* Test `error`
-* `find linux_os -name *ftp* -type d 2> /dev/null`
-* [control file](https://complianceascode.readthedocs.io/en/latest/manual/developer/03_creating_content.html#controls)
 </div></div>

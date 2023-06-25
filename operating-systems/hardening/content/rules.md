@@ -122,4 +122,6 @@ template:
         xxx@zzz: yyy
 ```
 </div><div>
+
+* references are used to sort rules in HTML pages
 </div></div>

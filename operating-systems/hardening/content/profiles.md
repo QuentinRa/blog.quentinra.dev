@@ -29,9 +29,13 @@ Selections is a list of rules IDs that are tested when selecting this profile. H
 ☠️ If the `prodtype` attribute is present, you'll either get an error during build <small>(unselects all groups)</small>, or the rule may be silently removed.
 </div><div>
 
+#### Find rules
+
+To find rules, you can look at other profiles or controls files, or you can use `find linux_os -name *ftp* -type d 2> /dev/null` <small>(ex: for ftp rules)</small>.
+
 #### controls
 
-Controls are YAML files representing hardening guides. They are stored in `./controls`. Each control may execute multiple rules.
+[Controls](https://complianceascode.readthedocs.io/en/latest/manual/developer/03_creating_content.html#controls) are YAML files representing hardening guides. They are stored in `./controls`. Each control may execute multiple rules.
 
 ```yaml!
 # ./controls/anssi.yml

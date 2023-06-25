@@ -4,41 +4,36 @@
 
 <div class="row row-cols-md-2"><div>
 
-...
-</div><div>
+The easiest way to build a product is to use their script:
 
-#### scripts
-
+```ps
+$ ./build_product parrot
 ```
-xxx
-```
-</div></div>
 
+If you got errors, you may want to execute the fail command yourself, if any, to see more output. Otherwise, good luck 🍀.
 
-<hr class="sep-both">
+Given a generated XML, you can check if it's correct using:
 
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-```
-oscap ds sds-validate ssg-xxx-ds.xml
+```ps
+$ oscap ds sds-validate ssg-xxx-ds.xml
 ```
 </div><div>
 
-```bash
-./build_product xxx
+#### Scripts
 
-cd /content
-source .pyenv.sh
-./utils/rule_dir_json.py
-cat build/rule_dirs.json | json_pp | grep "service_rsh_disabled"
-   "service_rsh_disabled" : {
-      "dir" : "/content/linux_os/guide/services/obsolete/r_services/service_rsh_disabled",
-      "id" : "service_rsh_disabled",
+To execute scripts, you need to source `.pyenv.sh` first, and index rules. After **each** product compilation, build is cleaned, so you need call `./utils/rule_dir_json.py` again.
+
+```ps
+$ alias python=python3 # if python is not found
+$ source .pyenv.sh # run only once
+$ ./utils/rule_dir_json.py # build/rule_dirs.json
 ```
 
-* Error during build: try the command yourself, you may see additional information
+If **build is rather empty** <small>(only rule_dirs.json)</small>, you also have to call:
+
+```ps
+$ cd build
+$ cmake ..
+$ cd ..
+```
 </div></div>
