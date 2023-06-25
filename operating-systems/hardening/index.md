@@ -1,11 +1,25 @@
 # Hardening
 
+[![linuxsystemhardening](../../cybersecurity/_badges/thmp/linuxsystemhardening.svg)](https://tryhackme.com/room/linuxsystemhardening)
+
 <div class="row row-cols-md-2"><div>
 
-...
+Hardening refers to increasing the security <small>(confidentiality, integrity, availability)</small> of:
+
+* 🖥️ Workstations
+* 🛰️ Servers
+* 🌍 Network devices
+* 📂 Apps, tools and services
+* ...
 </div><div>
 
-...
+Tasks to do are defined in guides provided by organization such as [CIS](https://www.cisecurity.org/cis-benchmarks) or [ANSII](https://www.ssi.gouv.fr/uploads/2019/03/linux_configuration-en-v1.2.pdf), while organizations can have their own guide.
+
+👉 See also: [awesome-security-hardening](https://github.com/decalage2/awesome-security-hardening) (4.4k ⭐)
+
+➡️ CIS provide [Build Kits](https://learn.cisecurity.org/build-kits) <small>(GPOs or shell scripts)</small>, and [Hardened Images](https://www.cisecurity.org/cis-hardened-images)...
+
+➡️ On [Tenable](https://www.tenable.com/audits) or others, you can find CIS guides as a checklist.
 </div></div>
 
 <hr class="sep-both">
