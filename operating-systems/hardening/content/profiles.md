@@ -27,11 +27,13 @@ Selections is a list of rules IDs that are tested when selecting this profile. H
 👉 See the [Rules#prodtype](rules.md#prodtype) attribute.
 
 ☠️ If the `prodtype` attribute is present, you'll either get an error during build <small>(unselects all groups)</small>, or the rule may be silently removed.
-</div><div>
+
+<br>
 
 #### Find rules
 
 To find rules, you can look at other profiles or controls files, or you can use `find linux_os -name *ftp* -type d 2> /dev/null` <small>(ex: for ftp rules)</small>.
+</div><div>
 
 #### controls
 
@@ -56,5 +58,11 @@ selections:
     - anssi:R40         # one specific rule
     - anssi:all         # all rules
     - anssi:all:minimal # only keep if minimal in levels
+```
+
+A useful [script](compilation.md#scripts) to learn the [coverage of a profile](https://complianceascode.readthedocs.io/en/latest/manual/developer/05_tools_and_utilities.html#profile-statistics-and-utilities):
+
+```bash
+$ ./build-scripts/profile_tool.py stats --profile xccdf_org.ssgproject.content_profile_standard --benchmark build/ssg-xxx-xccdf.xml
 ```
 </div></div>

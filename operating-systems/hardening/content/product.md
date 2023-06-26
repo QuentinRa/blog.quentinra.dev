@@ -207,3 +207,179 @@ To check if the target is running Parrot Linux, we will check if `/etc/debian_ve
 ```
 </details>
 </div></div>
+
+<hr class="sep-both">
+
+## Support a new package manager
+
+<div class="row row-cols-md-2"><div>
+
+We differentiate **package managers** (yum, dnf, apt_get, ...) from the **package system** (rpm, dpkg). Each package manager is associated with one package system.
+
+For instance, let's say we want to add `pacman`. On Arch Linux, `pacman` is both a package management and system tool.
+
+<details class="details-n">
+<summary>./ssg/constants.py</summary>
+
+```diff
+PKG_MANAGER_TO_SYSTEM = {
+    "yum": "rpm",
+    "zypper": "rpm",
+    "dnf": "rpm",
+    "apt_get": "dpkg",
++    "pacman": "pacman",
+}
+```
+</details>
+
+We need to edit `shared` files that are always compiled. You're supposed to write the [OVAL](oval.md) code according to your package system. 
+
+<details class="details-n">
+<summary>./shared/applicability/oval/installed_env_has_grub2_package.xml</summary>
+
+```xml!
+[...]
+{{% elif pkg_system == "dpkg" %}}
+[...]
+{{% elif pkg_system == "pacman" %}}
+  <ind:textfilecontent54_test comment="Do nothing" id="obj_env_has_grub2_installed" version="1">
+  </ind:textfilecontent54_test>
+{{% endif %}}
+[...]
+```
+</details>
+
+<details class="details-n">
+<summary>./shared/applicability/oval/installed_env_has_login_defs.xml</summary>
+
+```xml!
+[...]
+{{% elif pkg_system == "dpkg" %}}
+[...]
+{{% elif pkg_system == "pacman" %}}
+<ind:textfilecontent54_test comment="Do nothing" id="obj_env_has_login_defs_installed" version="1">
+</ind:textfilecontent54_test>
+{{% endif %}}
+[...]
+```
+</details>
+</div><div>
+
+<details class="details-n">
+<summary>./shared/applicability/oval/krb5_server_older_than_1_17_18.xml</summary>
+
+```xml!
+[...]
+{{% elif pkg_system == "dpkg" %}}
+[...]
+{{% elif pkg_system == "pacman" %}}
+<ind:textfilecontent54_test comment="Do nothing" id="test_krb5_server_version_1_17_18" version="1">
+</ind:textfilecontent54_test>
+{{% endif %}}
+[...]
+```
+</details>
+
+<details class="details-n">
+<summary>./shared/applicability/oval/krb5_workstation_older_than_1_17_18.xml</summary>
+
+```xml!
+[...]
+{{% elif pkg_system == "dpkg" %}}
+[...]
+{{% elif pkg_system == "pacman" %}}
+<ind:textfilecontent54_test comment="Do nothing" id="test_krb5_workstation_version_1_17_18" version="1">
+</ind:textfilecontent54_test>
+{{% endif %}}
+[...]
+```
+</details>
+
+<details class="details-n">
+<summary>./shared/checks/oval/installed_env_has_zipl_package.xml</summary>
+
+```xml!
+[...]
+{{% elif pkg_system == "dpkg" %}}
+[...]
+{{% elif pkg_system == "pacman" %}}
+<ind:textfilecontent54_test comment="Do nothing" id="test_env_has_zipl_installed" version="1">
+</ind:textfilecontent54_test>
+{{% endif %}}
+[...]
+```
+</details>
+
+<details class="details-n">
+<summary>./shared/checks/oval/sshd_version_higher_than_74.xml</summary>
+
+```xml!
+[...]
+{{% elif pkg_system == "dpkg" %}}
+[...]
+{{% elif pkg_system == "pacman" %}}
+<ind:textfilecontent54_test comment="Do nothing" id="test_openssh-server_version" version="1">
+</ind:textfilecontent54_test>
+
+{{% endif %}}
+[...]
+```
+</details>
+
+Then, you have to fix macros:
+
+<details class="details-n">
+<summary>./shared/macros/10-bash.jinja</summary>
+
+```xml!
+[...]
+{{%- macro bash_pkg_conditional(package, op=None, ver=None) -%}}
+[...]
+    {{%- elif pkg_system == "pacman" -%}}
+        false
+[...]
+```
+</details>
+
+<details class="details-n">
+<summary>./shared/macros/10-ocil.jinja</summary>
+
+```xml!
+[...]
+{{% macro ocil_package(package) -%}}
+[...]
+    {{%- elif pkg_system == "pacman" -%}}
+        Nothing.
+    {{%- else -%}}
+[...]
+{{% macro complete_ocil_entry_package(package) -%}}
+[...]
+    {{%- elif pkg_system == "pacman" %}}
+        Nothing.
+    {{%- else -%}}
+[...]
+```
+</details>
+
+<details class="details-n">
+<summary>./shared/macros/10-oval.jinja</summary>
+
+```xml!
+[...]
+{{%- macro oval_test_package_removed(package='', test_id='') -%}}
+[...]
+{{% elif pkg_system == "pacman" %}}
+<ind:textfilecontent54_test comment="Do nothing" id="{{{ test_id }}}" version="1">
+</ind:textfilecontent54_test>
+{{% endif %}}
+[...]
+{{%- macro oval_test_package_installed(package='', evr='', evr_op='greater than or equal', test_id='') -%}}
+[...]
+{{% elif pkg_system == "pacman" %}}
+<ind:textfilecontent54_test comment="Do nothing" id="{{{ test_id }}}" version="1">
+</ind:textfilecontent54_test>
+{{% endif %}}
+[...]
+```
+</details>
+</div></div>
