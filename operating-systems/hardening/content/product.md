@@ -263,7 +263,6 @@ We need to edit `shared` files that are always compiled. You're supposed to writ
 [...]
 ```
 </details>
-</div><div>
 
 <details class="details-n">
 <summary>./shared/applicability/oval/krb5_server_older_than_1_17_18.xml</summary>
@@ -294,6 +293,7 @@ We need to edit `shared` files that are always compiled. You're supposed to writ
 [...]
 ```
 </details>
+</div><div>
 
 <details class="details-n">
 <summary>./shared/checks/oval/installed_env_has_zipl_package.xml</summary>
@@ -382,4 +382,10 @@ Then, you have to fix macros:
 [...]
 ```
 </details>
+
+It should compile now, but you may have to adapt some rules or templates <small>(package managers may be used in applicability or in templates)</small>. 
+
+⚠️ You will most likely have to edit more project files to completely  <small>(remediation...)</small> integrate your package manager/system. 
+
+💡 You can look for occurrences of other package managers/systems to find which files to edit.
 </div></div>
