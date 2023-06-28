@@ -6,7 +6,7 @@ Web development is usually divided between two sides:
 
 👲 **Front-end** 👲
 
-What is displayed to the user.
+This is what is displayed to the user.
 
 * HTML, CSS, JS
 * Bootstrap, tailwindcss...
@@ -16,7 +16,7 @@ What is displayed to the user.
 
 🌍 **Back-end** 🌍
 
-The servers, the databases, and basically everything else.
+The servers, the databases, and everything else.
 
 * PHP, Django, Symfony, Laravel...
 * SQL, NoSQL
@@ -32,22 +32,39 @@ There is also 👑 **Full-Stack** 👑 which is both the front-end and the back-
 
 <div class="row row-cols-md-2"><div>
 
-Browsers are using the [HTTP](/operating-systems/networking/protocols/http.md) protocol to communicate with a webserver. The server is supposed to return an **[HTML page](../html/index.md)**.
+Browsers use the [HTTP](/operating-systems/networking/protocols/http.md) protocol to communicate with a web server. The server responds with an **[HTML page](../html/index.md)**.
 
-* 👉 If there are no routing, the [URL](random/url.md) is associated with a local path on the server, and the file is loaded if present.
+* 👉 If there is no routing, the [URL](random/url.md) is associated with a local path on the server, and the file is loaded if present.
 
-* 👉 If there is no file in the URL, webservers may load `index.html`/`index.php`/... if present.
+```text!
+URL: http://localhost/example/file.html
+Possible path resolved: /var/www/example/file.html
+```
+
+* 👉 If there is no file in the URL, web servers may load `index.html`/`index.php`/... if present.
+
+```text!
+URL: http://localhost/example/
+Possible path resolved: /var/www/example/index.html
+```
 
 * 👉 Modern apps are usually using a router. This reduces securities issues. Every URL will be redirected to a routing file which will determine which HTML page should be returned.
+
+```text!
+URL: http://localhost/example/
+Request send to: some_router.php 
+Possible path resolved: /var/www/file.html
+```
+
 </div><div>
 
 **What do you need?**
 
 To develop simple HTML websites, you don't need anything, you can use the `file://` protocol <small>(drag and drop the HTML in your browser)</small>.
 
-For more complex apps <small>(PHP, HTTPS...)</small>, you must install a webserver such as [Apache](/operating-systems/webservers/apache/index.md), Nginx, Node, IIS...
+For more complex apps <small>(PHP, HTTPS...)</small>, you must install a web server such as [Apache](/operating-systems/webservers/apache/index.md), Nginx, Node, IIS...
 
-➡️ To upload things on a remote server, use variants of [FTP protocol](/operating-systems/networking/protocols/ftp.md) such as [SCP](/operating-systems/networking/protocols/scp.md) or SFTP.
+➡️ To upload files to a remote server, use secure variants of the [FTP](/operating-systems/networking/protocols/ftp.md) protocol such as [SCP](/operating-systems/networking/protocols/scp.md) or SFTP.
 
 Permissions for files/folders.
 
@@ -56,8 +73,8 @@ Permissions for files/folders.
 $ chmod 711 ~
 $ chmod 711 ~/public_html
 # ➡️ The least permissions
-$ chmod 700 file.php # for a .php
-$ chmod 744 file.html # for a .html
+$ chmod 600 file.php # for a .php
+$ chmod 644 file.html # for a .html
 $ chmod 711 folder # for a folder
 ```
 </div></div>
@@ -82,7 +99,7 @@ $ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 ```
 </div><div>
 
-Ex: To generate one certificate for two domains, on an apache server.
+Ex: To generate one certificate for two domains, on an Apache server.
 
 ```powershell
 $ sudo certbot --apache --cert-name xxx.com -d xxx.com -d www.xxx.com
@@ -104,7 +121,7 @@ $ sudo certbot renew --dry-run
 
 <div class="row row-cols-md-2"><div>
 
-The devtools are tools for developer. You can open it using
+The devtools are tools for developers. You can open it using
 
 * <kbd>F12</kbd> or <kbd>Left-click > Inspect</kbd> ✨
 * <kbd>Settings > ... tools > development tools</kbd> 😅
@@ -112,12 +129,12 @@ The devtools are tools for developer. You can open it using
 The 4 most used tools are
 
 * **Tools > elements** <span class="small">(<kbd>CTRL+SHIFT+I</kbd>)</span>: see/edit the HTML/CSS
-* **Tools > <i class="bi bi-box-arrow-in-up-left"></i>** <span class="small">(<kbd>CTRL+SHIFT+C</kbd>)</span>: select a element and see the correspond HTML code in the Element tab.
+* **Tools > <i class="bi bi-box-arrow-in-up-left"></i>** <span class="small">(<kbd>CTRL+SHIFT+C</kbd>)</span>: select an element and see the corresponding HTML code in the Element tab.
 * **Tools > <i class="bi bi-window"></i>** <span class="small">(<kbd>CTRL+SHIFT+M</kbd>)</span>: preview the website on a phone...
 * **Tools > Console**: execute some JavaScript, try: `41+1`
 </div><div>
 
-There are a lot more tools. If some are not available for you, you may have to enabled them <small>(see "+" in Edge, see "... > more tools" in Chrome...)</small>.
+There are a lot more tools. If some are not available for you, you may have to enable them <small>(see "+" in Edge, see "... > more tools" in Chrome...)</small>.
 
 * **Tools > Sources** 🕵️: see the code source of the page
 * **Tools > Application** 🪄: see the local storage, the cookies, etc.
