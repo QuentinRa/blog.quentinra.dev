@@ -4,7 +4,7 @@
 
 [Electron](https://www.electronjs.org/) is a library to develop **cross-platform applications in JavaScript**. You can use it with frameworks such as Vue.js, React, Angular, or simply HTML+CSS.
 
-Electron is actually running your application in a chromium web browser. If enabled, you can open the devtools with **CTRL+SHIFT+I**.
+Electron is running your application in a Chromium web browser. If enabled, you can open the devtools with **CTRL+SHIFT+I**.
 
 Some applications made using electron are VSCode, Discord, GitHub Desktop, MongoDBCompass, and Microsoft Teams...
 

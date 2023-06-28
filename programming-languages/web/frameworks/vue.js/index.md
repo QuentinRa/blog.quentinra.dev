@@ -15,9 +15,9 @@ There are two ways of doing the same thing in Vue.
 
 The official [create-vue](https://github.com/vuejs/create-vue) project is using vite to generate a project
 
-```bash
+```shell!
 $ npm create vue@3 --yes
-$ cd xxx
+$ cd project_name
 $ npm install
 $ npm run dev
 ```
@@ -35,13 +35,13 @@ $ npm run dev
 
 <div class="row row-cols-md-2"><div>
 
-The main component is **App**. It will usually load a view stored in `src/views`. To make views easier to manage, and to recycle parts of the code, we are extracting them inside file in `src/components`.
+The main component is **App**. It will usually load a view stored in `src/views`. To make views easier to manage, and to recycle parts of the code, we are extracting them inside a file in `src/components`.
 
 ➡️ Ex: a component for the pagination. Another for one product...
 
-A **Single-File Components** is a `.vue` file, split in 3 tags: **script**, **template**, and **style**, so everything related to the component is encapsulated in one place.
+A **Single-File Components** is a `.vue` file, split into 3 tags: **script**, **template**, and **style**, so everything related to the component is encapsulated in one place.
 
-```
+```xml!
 <script>
 // JavaScript
 // ex: import a component
@@ -68,7 +68,7 @@ const text = "Hello, World";
 
 A component can receive parameters. They are declared inside `props`.
 
-```
+```xml!
 <script>
 export default {
   props: {
@@ -85,7 +85,7 @@ export default {
 
 If we remove every check, we could shorten the code to:
 
-```
+```xml!
 <script>
 export default {
   props: ['msg', 'other']
@@ -95,7 +95,7 @@ export default {
 
 Inside the template, you can use it with `{{ property_name }}`
 
-```
+```xml!
 <template>
   <p>{{ msg }}</p>
 </template>
@@ -111,7 +111,7 @@ Inside the template, you can use it with `{{ property_name }}`
 
 The Options API is usually wordier, but it looks more declarative from my point of view, so it's easier to understand how Vue.js works.
 
-```xml
+```xml!
 <script>
 // import a component, see components:
 import HelloWorld from '../components/HelloWorld.vue'
@@ -167,7 +167,7 @@ export default {
 
 Example of using the variable `count`
 
-```
+```xml!
 <template>
   <div class="home">
     <!-- example of using count (data) -->
@@ -185,7 +185,7 @@ Example of using the variable `count`
 
 * **v-bind**: uni-directional data binding. When the value is updated, the bound attributes/... are updated, but editing the input field won't update the value.
 
-```
+```xml!
 <input v-bind:value="count">
 <input :value="count"> <!-- same, shortcut -->
 <input :[attributeName]="url"> <!-- custom attribute -->
@@ -197,7 +197,7 @@ Example of using the variable `count`
 
 * **v-model**: bidirectional data-binding. Now, if the value is modified by the element, then the data is modified too.
 
-```
+```xml!
 <input v-model="count">
 <input v-model.lazy="count"> <!-- after changes -->
 <input v-model.trim="count"> <!-- trim -->
@@ -205,7 +205,7 @@ Example of using the variable `count`
 
 * **v-if**: add/remove from the DOM the element
 
-```
+```xml!
 <p v-if="count===0">Zero</p>
 <p v-else-if="count===1">One</p>
 <p v-else>Greater than one</p>
@@ -213,13 +213,13 @@ Example of using the variable `count`
 
 * **v-show**: always add in the DOM, but toggle visibility. When you toggle visibility a lot, it will be less costly than using **v-if**.
 
-```
+```xml!
 <p v-show="count===0">Zero</p>
 ```
 
 * **v-on**/**@**: on event
 
-```
+```xml!
 <button @click="count++">Count is: {{ count }}</button>
 <button v-on:click="count++">Count is: {{ count }}</button>
 <img src=# @error="count--">
@@ -230,7 +230,7 @@ Example of using the variable `count`
 
 * **v-for**
 
-```
+```xml!
 <!-- 0 then 1 -->
 <li v-for="item in [1,2]">
   {{ item }}
@@ -246,9 +246,9 @@ Example of using the variable `count`
 ```
 
 <details class="details-n">
-<summary><code>v-for</code> to replicate a composant</summary>
+<summary><code>v-for</code> to replicate a component</summary>
 
-```
+```xml!
 <MyComponent
   v-for="(item, index) in items"
   :item="item"
@@ -258,7 +258,7 @@ Example of using the variable `count`
 
 In "MyComponent", you could use code like that.
 
-```javascript
+```javascript!
 // good practice: define a class for item
 import Product from "@/classes/Product";
 
@@ -281,7 +281,7 @@ export default {
 
 The code below is the same as declaring `count` inside `data`.
 
-```
+```xml!
 <script setup>
 import { ref } from 'vue'
 const count = ref(0)
@@ -298,7 +298,7 @@ const count = ref(0)
 
 See [Router](https://router.vuejs.org/guide/#html). See also [Data Fetching](https://router.vuejs.org/guide/advanced/data-fetching.html).
 
-```html
+```xml!
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 </script>
@@ -321,7 +321,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 To edit the routes, edit `router/index.js`.
 
-```javascript
+```javascript!
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -345,7 +345,7 @@ const router = createRouter({
 
 You can move to another page with
 
-```javascript
+```javascript!
 this.$router.push({ name:'about' })
 ```
 
@@ -353,7 +353,7 @@ this.$router.push({ name:'about' })
 
 You can get query parameters (`?xxx=yyy`) with.
 
-```javascript
+```javascript!
 this.$route.query.xxx
 ```
 
@@ -365,7 +365,7 @@ To use params, you must declare them inside the `path` of your route.
 
 Then, you can get them back using
 
-```javascript
+```javascript!
 this.$route.params.id
 ```
 
@@ -376,7 +376,7 @@ You can do something before loading the view inside `beforeRouteEnter`. For inst
 <details class="details-e">
 <summary>Load something from an API, set the title dynamically</summary>
 
-```xml
+```xml!
 <script>
 export default {
   data() {
@@ -412,7 +412,7 @@ export default {
 
 First, install bootstrap
 
-```
+```shell!
 $ npm install bootstrap
 ```
 
@@ -462,7 +462,7 @@ Links
 * [templates](https://github.com/vuejs-templates) (mostly deprecated/dropped)
 </div><div>
 
-```
+```xml!
 <!-- in a template -->
 <slot name="xxx"></slot>
 
@@ -476,7 +476,7 @@ Links
 
 * Vue.js - change the page title ([article](https://medium.com/js-dojo/how-to-dynamically-change-the-page-title-with-vue-and-vue-router-99904906ce45))
 
-```javascript
+```javascript!
 // created
 window.document.title = "xxx"
 ```
