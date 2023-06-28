@@ -24,7 +24,7 @@ You can use `npx nuxi init -t v3 <project_name>` to create a new project. Use `n
 
 <div class="row row-cols-md-2"><div>
 
-All ".vue" files for a component are stored in `components`. They are automatically imported in other ".vue" files.
+All ".vue" files for a component are stored in `components`. They are automatically imported inside other ".vue" files.
 
 We are now able to write `script` in another language:
 
@@ -43,7 +43,7 @@ import HelloWorld from "~/components/HelloWorld.vue";
 
 <div class="row row-cols-md-2"><div>
 
-Each page will use a [layout](https://nuxt.com/docs/guide/directory-structure/layouts). Multiple page can use the same layout, but inject some specific components in it.
+Each page will use a [layout](https://nuxt.com/docs/guide/directory-structure/layouts). Multiple pages can use the same layout, but inject some specific components into it.
 
 👉 The default layout used is `./layouts/default.vue`. 
 

@@ -13,7 +13,7 @@ You can add extensions/plugins to your browser, for instance, [DarkReader](https
 * [Microsoft Edge extensions](https://learn.microsoft.com/en-us/microsoft-edge/extensions-chromium/) (👻)
 </div><div>
 
-There are a few difference between Firefox and chrome. The main difference is that in **Chrome** 🌏 you will use
+There are a few differences between Firefox and Chrome. The main difference is that in **Chrome** 🌏 you will use
 
 ```text!
 chrome.xxx.yyy
@@ -114,7 +114,7 @@ console.log("Hello, World")
 ```
 
 * Load your extension
-* Visit a website, open the console, you will see the log
+* Visit a website, open the console, and you will see the log
 </details>
 </div><div>
 
@@ -170,7 +170,7 @@ For JS files in the Manifest, `src/*.ts` will generate a file `js/*.js`.
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-This is a json file defining your extension. The version 2 is being deprecated, consider using the version 3. 🚀
+This is a JSON file defining your extension. Version 2 is being deprecated, consider using version 3. 🚀
 
 ```json!
 {
@@ -207,10 +207,10 @@ Then, you can define your extension
 
 * ➡️ `action`: open a popup when clicking on the icon in the toolbar
 * ➡️ `content_scripts`: to run code on each page using the DOM
-* ➡️ `background`: to run code that do not need to access the DOM
+* ➡️ `background`: to run code that does not need to access the DOM
 * ➡️ `options_page`: a page to configure the extension
 
-⚠️ Inside a `content_scripts`, most of the attributes of `chrome`/`browser` **aren't** available. Moreover, some properties are only available after asking for the [permission](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/) first.
+⚠️ Inside a `content_scripts`, most of the attributes of `chrome`/`browser` **aren't** available. Moreover, some properties are only available after asking for [permission](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/) first.
 
 ```json!
   "host_permissions": [ "://*" ],
@@ -246,7 +246,7 @@ chrome.action.setPopup({ popup: "popup/popup.html" })
 <details class="details-e">
 <summary>popup.html</summary>
 
-This is page as you would create
+This is an [HTML](../../html/index.md) page as you would create for websites.
 
 ```html!
 <html lang="en">
@@ -271,7 +271,7 @@ Note that the code inside the Popup is **only** executed when the popup is shown
 
 #### Execute some code
 
-If you don't open a popup, it's also possible to register an listener, and execute some code when the user clicks on the badge.
+If you don't open a popup, it's also possible to register a listener, and execute some code when the user clicks on the badge.
 
 ```javascript!
 // ➡️ When users click on the badge
@@ -295,7 +295,7 @@ chrome.action.getBadgeText({ tabId: tab.id });
 
 #### Shortcut
 
-To add a shortcut opening the badge, add to your MANIFEST.
+To add a shortcut to open the badge, add to your MANIFEST:
 
 ```json!
   "commands": {
@@ -351,7 +351,7 @@ Then, use `chrome.runtime.getURL("xxx")` to get a URL to it.
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-Service workers can be stopped, and started when an event occurred. They are useful for long-running tasks, or to access Chrome/Firefox API without having to use a popup.
+Service workers can be stopped, and started when an event occurs. They are useful for long-running tasks, or to access the Chrome/Firefox API without having to use a popup.
 
 ```json!
   "background": {
