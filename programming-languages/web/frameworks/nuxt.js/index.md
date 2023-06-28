@@ -95,6 +95,47 @@ console.log(route.query.page)
 
 <hr class="sep-both">
 
+## Metadata
+
+<div class="row row-cols-md-2"><div>
+
+As per the documentation, you can
+
+```xml!
+<script setup lang="ts">
+useHead({
+  title: 'My App',
+  meta: [
+    { name: 'description', content: 'My amazing site.' }
+  ]
+})
+</script>
+```
+</div><div>
+
+To set the config for all pages, edit `/nuxt.config.ts`
+
+```
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig({
+  css: ['bootstrap/dist/css/bootstrap.min.css'],
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      title: 'My App',
+      meta: [
+        { name: 'description', content: 'My amazing site.' }
+      ],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }]
+    }
+  }
+})
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -102,6 +143,14 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [nitro](https://github.com/unjs/nitro)
+
+```js!
+// can only access the localStorage from a client
+// but, don't use this
+if (process.client) {
+  const storage = localStorage.getItem('x')
+}
+```
 </div><div>
 
 

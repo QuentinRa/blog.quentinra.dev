@@ -460,6 +460,7 @@ Links
 * [vuetifyjs](https://next.vuetifyjs.com/en/)
 * Native: [vue-native](https://github.com/GeekyAnts/vue-native-core) (deprecated) and [nativescript-vue](https://github.com/nativescript-vue/nativescript-vue)
 * [templates](https://github.com/vuejs-templates) (mostly deprecated/dropped)
+* [bootstrap-vue-next](https://github.com/bootstrap-vue-next/bootstrap-vue-next)
 </div><div>
 
 ```xml!
