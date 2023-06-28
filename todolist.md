@@ -2,28 +2,36 @@
 
 <div class="row row-cols-md-2"><div>
 
-A super-increasing to-do list in which I keep adding stuff, but there are too many things to-do that they may stay here for a few more years. To increase the amount of "to-do" that I'm tackling, I moved some of them inside "to-do" sections, in separate notes.
+List of courses that have note which were not added yet.
 
-The icon with an arrow (➡️) means that they should be tackled first.
+**Programming Languages > paradigm**
 
-**Topics planned**
+* Programming
 
-* Create browser extensions/plugins
-* JetBrains plugin development
+**Programming Languages > Web**
+
+* Jekyll/pages
+
+**Programming Languages > Others**
+
+* Blockchain
+
 </div><div>
 
-**Courses planned**
+**Programming Languages > Low-Level Languages**
 
-* jekyll/pages
-* cas
-* WordPress
-* latex/rst
-* xml
-* c (processes+threads | networking | ncurses)
-* cpp (ENS courses)
-* build tools
-* assembly
+* CPP - ENS notes
+
+**Programming Languages > High-Level Languages**
+
+* C#
+
+**Tools and Frameworks > Editors**
+
+* JetBrains IDEs
+* JetBrains plugin development
 </div></div>
+
 
 <hr class="sep-both">
 
@@ -151,10 +159,6 @@ Google
 
 * QT
 * Relational modeling
-* WordPress
-* C#
-* Apache
-* CAS
 
 <details class="details-e">
 <summary>Arduino</summary>
@@ -465,4 +469,37 @@ Random stuff...
 * ChatGPT
 * [answersblurb](https://answersblurb.com/)
 * [alternativeto](https://alternativeto.net/) / [similarweb](https://www.similarweb.com/)
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Not sure if it makes sense for a todolist to have a to-do section.
+
+<div class="row row-cols-md-2"><div>
+
+```text!
+Websites
+https://dzone.com
+https://daily.dev
+https://serverguy.com
+https://daily-dev-tips.com/
+https://techhyme.com/
+https://nolongerset.com/
+https://reactgo.com/
+
+Gits
+https://github.com/trimstray/the-book-of-secret-knowledge
+https://github.com/sdmg15/Best-websites-a-programmer-should-visit
+https://github.com/ossu/computer-science
+https://github.com/markodenic/awesome-tech-blogs
+
+News
+https://daily.dev
+https://petri.com/
+```
+</div><div>
+
+
 </div></div>
