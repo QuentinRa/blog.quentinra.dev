@@ -29,7 +29,7 @@ See the [documentation](https://getbootstrap.com/docs/). For **5.2.3**, you coul
 
 <div class="row row-cols-md-2"><div>
 
-➡️ The best way to learn Bootstrap is to copy-and-paste examples. You can find them [here](https://getbootstrap.com/docs/5.2/examples/).
+➡️ The best way to learn Bootstrap is to copy and paste examples. You can find them [here](https://getbootstrap.com/docs/5.2/examples/).
 
 * Click on an example to your liking
 * Use <kbd>CTRL+U</kbd> or "View page source" to see the code
@@ -127,7 +127,7 @@ If you want to hide something on mobile only, you will have to combine two class
 * `d-none`: always hidden
 * `d-md-block`: always shown if the screen is at least 768px long
 
-When the screen size if at least 768px long, the latter being more specific takes precedence over the former.
+When the screen size is at least 768px long, the latter being more specific takes precedence over the former.
 </div></div>
 
 <hr class="sep-both">
@@ -210,7 +210,7 @@ A row is **12 columns**. A row will keep elements on the same line if their sum 
 In the code above, on mobile, each element will take 12 columns (ex: a whole line), but on tablets (md), each element will take 6 columns, so we will be able to put two on the same line.
 </div><div>
 
-This code is a simplified version of the previous one, doing exactly the same. `row-cols-md-2` means that we should have 2 columns on md or higher, otherwise, we will have one <small>(as there is no other rule)</small>.
+This code is a simplified version of the previous one, doing the same. `row-cols-md-2` means that we should have 2 columns on md or higher, otherwise, we will have one <small>(as there is no other rule)</small>.
 
 ```html
 <div class="row row-cols-md-2">

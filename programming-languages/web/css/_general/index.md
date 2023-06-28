@@ -93,9 +93,9 @@ b {
 
 #### Specificity
 
-Styles are applied in **cascade**! There could be many selectors that are defining a rule that could be applied on the same tag.
+Styles are applied in **cascade**! There could be many selectors that are defining a rule that could be applied to the same tag.
 
-If there are conflicts <small>(ex: two selectors defining the same property)</small>, the [**Specificity**](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) is used to determine which rule is applied. In a nutshell, every selector has a weight <small>(~=how much specific the selector is)</small> which is used to determine which rule is more important.
+If there are conflicts <small>(ex: two selectors defining the same property)</small>, the [**Specificity**](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) is used to determine which rule is applied. In a nutshell, every selector has a weight <small>(~=how specific the selector is)</small> which is used to determine which rule is more important.
 
 ```css
 a { color: yellow; }
@@ -187,9 +187,9 @@ p { /* ... */ }
 ```
 </div></div>
 
-#### Id selector
+#### ID selector
 
-The style will be applied to the tag having the matching Id.
+The style will be applied to the tag having the matching ID.
 
 <div class="row row-cols-md-2"><div>
 
@@ -273,7 +273,7 @@ We can select something based on the value of a property.
 They are additional selectors based on a state/condition. These are called Pseudo-classes. See the complete [list on W3Schools](https://www.w3schools.com/CSSref/css_selectors.php).
 
 ```css
-:hover { /* mouse over */ }
+:hover { /* mouseover */ }
 :not(p) { /* every tag aside from "<p>" */ }
 :not(p, a) { /* [...] aside from "<p>" and "<a>" */ }
 :is(h1, h2) { /* either h1 or h2 */ }
@@ -398,7 +398,7 @@ p {
 ```css
 .xxx {
     background: yellow; /* change background */
-    background: url("..."); /** path/url **/
+    background: url("..."); /** path/URL **/
     /* if it's an image, you may use */
     background-size: 100% 100%; /* expand */
     background-size: auto; /* auto */
