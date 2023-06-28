@@ -17,11 +17,11 @@ PHP <small>(PHP Hypertext preprocessor, a recursive acronym)</small> is still a 
 
 </div><div>
 
-To install PHP, you will need a webserver such as [Apache](/operating-systems/webservers/apache/index.md). ➡️ Well-known versions of PHP are: `5.6`, `7.*`, and `8` <small>(latest, since 2020)</small>.
+To install PHP, you will need a web server such as [Apache](/operating-systems/webservers/apache/index.md). ➡️ Well-known versions of PHP are: `5.6`, `7.*`, and `8` <small>(latest, since 2020)</small>.
 
 Additionally, you may install extensions later:
 
-```ps
+```shell!
 $ sudo apt install php-curl
 $ sudo apt install php-intl
 $ sudo apt install php-ext-dom
@@ -45,22 +45,22 @@ Inside a `.php` file, most of the time, there are both HTML and PHP.
 <p><?php echo "Hello, World!"; ?></p>
 ```
 
-The PHP blocs (`<?php ?>`, `<?= ?>`) will be executed, and an HTML file will be generated and send to the client.
+The PHP blocks (`<?php ?>`, `<?= ?>`) will be executed, and an HTML file will be generated and sent to the client.
 
 ```html
 <p>Hello, World!</p>
 ```
 
-👉 As we may have a lot of PHP blocs to echo something, the bloc `<?= ?>` was introduced doing an implicit `echo`.
+👉 As we may have a lot of PHP blocks to echo something, the block `<?= ?>` was introduced as an implicit `echo`.
 
 ```phpt!
 <p><?= "Hello, World!" ?></p>
 ```
 </div><div>
 
-➡️ Sometimes, you have files with only PHP inside. In such scenario, you can omit the closing `?>`.
+➡️ Sometimes, you have files with only PHP inside. In such a scenario, you can omit the closing `?>`.
 
-➡️ You can omit `;` in PHP blocs with only one instruction.
+➡️ You can omit `;` in PHP blocks with only one instruction.
 
 #### Imports another PHP
 
@@ -124,7 +124,7 @@ $someVariableType = gettype($someVariable); // get
 if (is_integer($someVariable)) {} // check
 ```
 
-➡️ PHP use "Type juggling" meaning the variable is converted based on the context <small>(ex: inside a if statement, it is converted to a boolean...)</small>
+➡️ PHP uses "Type juggling" meaning the variable is converted based on the context <small>(ex: inside an if statement, it is converted to a boolean...)</small>
 
 </div><div>
 
@@ -164,7 +164,7 @@ For equality operators, there are two: `===` and `!==` <small>(strict, same valu
 
 #### Existence
 
-PHP do not check that variables were declared before executing some code. `isset` check that the variable exists, while `empty` check both that the variable exists, and that it is not "empty".
+PHP does not check that variables were declared before executing some code. `isset` check that the variable exists, while `empty` check both that the variable exists, and that it is not "empty".
 
 ```php!
 if (!isset($someInputFromAUser)) { /* error */ }
@@ -181,9 +181,9 @@ $yyy = $xxx ?? 0; // or, use default values if not set
 
 <div class="row row-cols-md-2"><div>
 
-If PHP, there are two kind of structures. Those using braces, and those using starting (`:`) and ending tags (`endXXX`). 
+If PHP, there are two kinds of structures. Those using braces, and those using starting (`:`) and ending tags (`endXXX`). 
 
-This is because you may use HTML inside structures, and you may close and re-open a PHP bloc, but it doesn't look clean using braces:
+This is because you may use HTML inside structures, and you may close and re-open a PHP block, but it doesn't look clean using braces:
 
 ```phpt!
 <?php if (...) { ?>
@@ -283,7 +283,7 @@ echo $res; // output: 11
 
 #### Default values
 
-You can give default value to parameters
+You can give default values to parameters
 
 ```php!
 function sum(int $a, int $b = 10) : int {}
@@ -310,7 +310,7 @@ $x = function () { echo "XXX"; };
 $x();
 ```
 
-Anonymous functions can "use" variable from the outside.
+Anonymous functions can "use" variables from the outside.
 
 ```php!
 $a = 10;
@@ -390,7 +390,7 @@ foreach ($associative as $key => $value) {}
 
 <div class="row row-cols-md-2 mx-0"><div>
 
-A class is a template to create objects. A class called table could define attributes such as `cost`, and method such as `"sell"`. 
+A class is a template to create objects. A class called table could define attributes such as `cost`, and methods such as `"sell"`. 
 
 Objects are concrete instances of the class, in which we give value to attributes, such as `TableXXX: cost = 10`.
 
@@ -415,7 +415,7 @@ $name = $somePerson->name; // access an attribute
 
 #### Constructors
 
-We usually fill attributes in a magic method called constructor.
+We usually fill attributes in a magic method called the constructor.
 
 ```php!
 class Person {
@@ -451,7 +451,7 @@ class Person {
 
 #### Static
 
-Classes can have methods/attributes using `static`. As a reminder, static attributes are shared between every object and static method can be called without having to create an object.
+Classes can have methods/attributes using `static`. As a reminder, static attributes are shared between every object and static methods can be called without having to create an object.
 
 ```php!
 class SomeClass {
@@ -487,7 +487,7 @@ class Person implements IPerson {
 class DoeFamilyMember extends Person {}
 ```
 
-You can create abstract class, meaning a class that has 0 or more methods that were not implemented.
+You can create an abstract class, meaning a class that has 0 or more methods that were not implemented.
 
 ```php
 abstract class IncompleteImplementation {
@@ -518,9 +518,9 @@ class Child { // inherit public/protected
 
 <div class="row row-cols-md-2"><div>
 
-PHP error handling is mainly based on exceptions. A programmer can raise a signal called exception when something unexpected, mostly an error, occurred. This signal will stop a function/script and go back to the caller until it's caught. If no one catch and handle it, then it may be displayed to the user <small>(according to the server configuration)</small>.
+PHP error handling is mainly based on exceptions. A programmer can raise a signal called an exception when something unexpected, mostly an error, occurs. This signal will stop a function/script and go back to the caller until it's caught. If no one catches and handles it, then it may be displayed to the user <small>(according to the server configuration)</small>.
 
-For debugging purpose, you can add these two lines to display all errors to the "user" <small>(a.k.a. you, the programmer)</small>.
+For debugging purposes, you can add these two lines to display all errors to the "user" <small>(a.k.a. you, the programmer)</small>.
 
 ```php
 // usually at the start of the script
@@ -550,7 +550,7 @@ try {
 
 ➡️ An alternative to "finally" could be `register_shutdown_function`.
 
-It's also possible to rise user-level warnings/errors/notices/...
+It's also possible to raise user-level warnings/errors/notices/...
 
 ```php
 trigger_error("a message", E_USER_DEPRECATED);
@@ -565,7 +565,7 @@ trigger_error("a message", E_USER_DEPRECATED);
 
 #### Redirection
 
-You can use `header` to redirect a user using PHP. Note that you must call it before rendering anything, otherwise use an HTML redirect. Also note that you must call `exit` right-after, otherwise, the remaining PHP code will still be executed before redirecting.
+You can use `header` to redirect a user using PHP. Note that you must call it before rendering anything, otherwise use an HTML redirect. Also, note that you must call `exit` right after, otherwise, the remaining PHP code will still be executed before redirecting.
 
 ```php!
 header("Location: index.php");
@@ -582,7 +582,7 @@ All data is stored in an array called `$_SESSION` and available after starting t
 session_start(); // 👉 session_destroy to delete it
 ```
 
-Example: add the username if logged, remove it on logout.
+Example: add the username if logged in, remove it on logout.
 
 ```php
 $_SESSION['username'] = 'root'; // on login

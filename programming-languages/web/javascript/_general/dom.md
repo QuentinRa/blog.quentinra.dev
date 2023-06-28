@@ -5,9 +5,9 @@
 [JavaScript](index.md) is used since Web 2.0 to add interactivity
 
 * 👉 Validate a form <small>(errors, autocompletion, ...)</small>
-* 👉 Handling events <small>(clicks, show/hide something, ...)</small>
+* 👉 Handling events <small>(click, visibility change, ...)</small>
 * 👉 Connect to an API <small>(fetch...)</small>
-* 🥂 For a programmer, it can be used on someone else's website, to automate a task, to bypass a restriction... 
+* 🥂 For a programmer, it can be used on someone else's website, to automate a task, bypass a restriction... 
 * ...
 </div><div>
 
@@ -58,7 +58,7 @@ You can link an external file. This is the proper way to do it <small>(CSP polic
 <script src="/path/to/file.js"></script>
 ```
 
-⚠️ **Note**: Modern browsers are usually caching JavaScript files. If you changed a file, and don't see any changes, reload the page while ignoring the cache: <kbd>CTRL+SHIFT+R</kbd> or <kbd>SHIFT+F5</kbd> or <kbd>CTRL+F5</kbd>.
+⚠️ **Note**: Modern browsers usually cache JavaScript files. If you changed a file, and don't see any changes, reload the page while ignoring the cache: <kbd>CTRL+SHIFT+R</kbd> or <kbd>SHIFT+F5</kbd> or <kbd>CTRL+F5</kbd>.
 </td>
 </tr>
 </tbody>
@@ -292,7 +292,7 @@ const value = res.headers.get('header-name')
 ```
 </div><div>
 
-**GET** is the default if no parameters were provided.
+**GET** is the default if no parameters are provided.
 
 ```javascript!
 const params = { method: "GET", }
@@ -380,7 +380,7 @@ if (Notification?.permission === "granted") {
 
 #### LocalStorage
 
-The localStorage is a storage inside the client browser. What's stored inside can be edited inside the devtools, in the "Application" tab.
+The localStorage is a storage are inside the client browser. What's stored inside can be edited inside the devtools, in the "Application" tab.
 
 ```javascript!
 // store
@@ -394,7 +394,7 @@ localStorage.removeItem("key")
 localStorage.clear()
 ```
 
-It's useful to store/cache some data, but you must take into account that the user can add/edit/remove them.
+It's useful to store/cache some data, but you must take into account that the user can add/edit/remove data.
 
 ➡️To store an Object, use `JSON.stringify` and `JSON.parse`.
 
@@ -436,7 +436,7 @@ if (value != null) {
 
 #### jQuery
 
-A long time ago, [jQuery](https://github.com/jquery/jquery) was a popular library shortening/simplifying the DOM manipulations. Nowadays, many features were added to JavaScript, and with technologies with less manipulation of the DOM like React, or Vue.js, the library is nowhere near what it used to be.
+A long time ago, [jQuery](https://github.com/jquery/jquery) was a popular library shortening/simplifying DOM manipulations. Nowadays, many features were added to JavaScript, and with technologies with less manipulation of the DOM like React, or Vue.js, the library is nowhere near what it used to be.
 
 ➡️ Bootstrap removed its jQuery dependencies in its 5th version, to make the library more lightweight.
 

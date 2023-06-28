@@ -41,7 +41,7 @@ $ node index.js
 
 You will usually need to use external libraries such as a library to test your code, or stuff like that. They are referred to as packages, and you will need a **package manager** to install them.
 
-➡️ One package worth mentioning is [nodemon](https://www.npmjs.com/package/nodemon) ("node-mon", 25k ⭐) which is automatically restarting the node client (ex: `node index.js`) when a file in your project changed.
+➡️ One package worth mentioning is [nodemon](https://www.npmjs.com/package/nodemon) ("node-mon", 25k ⭐) which automatically restarts the node client (ex: `node index.js`) when a file in your project changes.
 
 <br>
 
@@ -59,7 +59,7 @@ Node.js includes everything you know about JavaScript, aside from the DOM <small
 const FileSystem = require('fs');
 ```
 
-Access another script A from a script B
+Access another script A from another script B
 
 ```javascript
 // in A.js, you need to export what you want to expose
@@ -87,7 +87,7 @@ $ npm -v
 * See the [documentation here](https://docs.npmjs.com/).
 * Use [npmjs](https://www.npmjs.com/) to find packages ([Registry API](https://registry.npmjs.org/nodemon/2.0.20)).
 
-npm use a file called `package.json` to know which packages to import into your project. As versions are usually based on a rule, the exact version of the package can be found in `package-lock.json`.
+npm uses a file called `package.json` to know which packages to import into your project. As versions are usually based on a rule, the exact version of the package can be found in `package-lock.json`.
 
 #### New Project
 
@@ -97,9 +97,9 @@ Create an empty project with an empty `package.json`.
 $ npm init
 ```
 
-All installed packages are stored in the folder `node_modules`. Add it to your `.gitignore`, because it's heavy+useless. ⚠️
+All installed packages are stored in the folder `node_modules`. Add it to your `.gitignore`, because it's heavy and useless. ⚠️
 
-Instead, commit `package-lock.json`. Someone else will be able to generate back the exact same `node_modules` with a command.
+Instead, commit `package-lock.json`. Someone else will be able to generate back the same `node_modules` with a command.
 
 ➡️ Commit `package.json` too, so that devs can add packages...
 

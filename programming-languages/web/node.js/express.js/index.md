@@ -43,7 +43,7 @@ app.use(function (req, res, next) {
 });
 ```
 
-> ➡️ It's useful to know if there is some code you want to execute for every/some requests.
+> ➡️ It's useful to know if there is some code you want to execute for every or only some requests.
 
 </div><div>
 
