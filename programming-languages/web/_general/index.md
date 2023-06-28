@@ -32,68 +32,22 @@ There is also 👑 **Full-Stack** 👑 which is both the front-end and the back-
 
 <div class="row row-cols-md-2"><div>
 
-Browsers are using the [HTTP](/operating-systems/networking/protocols/http.md) protocol to communicate with a webserver. The server is supposed to return an **HTML page**.
+Browsers are using the [HTTP](/operating-systems/networking/protocols/http.md) protocol to communicate with a webserver. The server is supposed to return an **[HTML page](../html/index.md)**.
 
 * 👉 If there are no routing, the [URL](random/url.md) is associated with a local path on the server, and the file is loaded if present.
 
 * 👉 If there is no file in the URL, webservers may load `index.html`/`index.php`/... if present.
 
-* 👉 Modern apps are usually using a router. This reduces securities issues. Every URL will be redirected to one file, and this file will determine which HTML page should be returned.
+* 👉 Modern apps are usually using a router. This reduces securities issues. Every URL will be redirected to a routing file which will determine which HTML page should be returned.
 </div><div>
 
 **What do you need?**
 
 To develop simple HTML websites, you don't need anything, you can use the `file://` protocol <small>(drag and drop the HTML in your browser)</small>.
 
-For more complex apps <small>(PHP, HTTPS...)</small>, you must install a webserver such as Apache, Nginx, Node, IIS...
+For more complex apps <small>(PHP, HTTPS...)</small>, you must install a webserver such as [Apache](/operating-systems/webservers/apache/index.md), Nginx, Node, IIS...
 
-➡️ To upload things on a remote server, see the [FTP protocol](/operating-systems/networking/protocols/ftp.md).
-
-</div></div>
-
-<hr class="sep-both">
-
-## Webserver configuration notes
-
-😵 *Due to some mistake on my side, these notes were not tested (nor complete) at all* 😵
-
-<div class="row row-cols-md-2"><div>
-
-Change the password of the user provided by the hosting provider.
-
-```powershell
-$ sudo passwd xxx
-```
-
-Upgrade packages.
-
-```
-$ sudo apt update
-$ sudo apt upgrade
-$ sudo apt-get dist-upgrade
-```
-
-Disable `ssh` login for root/..., and change the default port.
-
-```powershell
-$ sudo vim /etc/ssh/sshd_config
-$ sudo systemctl restart sshd
-```
-
-Install a firewall.
-
-```powershell
-$ sudo apt install fail2ban
-$ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
-$ sudo vim /etc/fail2ban/jail.local
-```
-</div><div>
-
-Add a non-root user.
-
-```powershell
-$ sudo adduser yyy
-```
+➡️ To upload things on a remote server, use variants of [FTP protocol](/operating-systems/networking/protocols/ftp.md) such as [SCP](/operating-systems/networking/protocols/scp.md) or SFTP.
 
 Permissions for files/folders.
 
@@ -116,7 +70,7 @@ $ chmod 711 folder # for a folder
 
 You can get free certificates using [Let's encrypt](https://letsencrypt.org/). If you want to have **https**://localhost, [follow this tutorial](https://web.dev/how-to-use-local-https/).
 
-To install a certificate from Let's encrypt, we mainly use [certbot](https://certbot.eff.org/).
+To install a certificate from Let's encrypt, we mostly use [certbot](https://certbot.eff.org/).
 
 ```powershell
 $ sudo apt update
@@ -181,13 +135,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-**Apps**
-
-* progressive web apps (PWA)
-* [Server Side Includes (SSI)](https://en.wikipedia.org/wiki/Server_Side_Includes)
+* Progressive Web Apps (PWA)
+* [Server Side Includes](https://en.wikipedia.org/wiki/Server_Side_Includes) (SSI)
 * WebAssembly
 </div><div>
-
-* [Postfix](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-debian-10) to send mails. See also DMarc, SPF, DKim, and [mail-tester.com](https://www.mail-tester.com/) <small>(wait XXX hours for DNS records changes)</small>.
-* Awstats/[GoAccess](https://goaccess.io/) for stats
 </div></div>

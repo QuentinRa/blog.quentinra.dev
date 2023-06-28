@@ -37,4 +37,27 @@ Stuff that I found, but never read/used yet.
 * Use LTS
   * https://ubuntu.com/about/release-cycle
   * https://access.redhat.com/support/policy/updates/errata/
+
+Upgrade packages.
+
+```
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt-get dist-upgrade
+```
+
+Disable `ssh` login for root/..., and change the default port.
+
+```powershell
+$ sudo vim /etc/ssh/sshd_config
+$ sudo systemctl restart sshd
+```
+
+Install a firewall.
+
+```powershell
+$ sudo apt install fail2ban
+$ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+$ sudo vim /etc/fail2ban/jail.local
+```
 </div></div>
