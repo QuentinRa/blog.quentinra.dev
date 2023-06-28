@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[Socket.io](https://socket.io/) is a library that allows a server to do server-pull and server-push. **Server Push** means the server can send something to the client without the client requesting it.
+[Socket.io](https://socket.io/) is a library that allows a server to do server pull and server push. **Server Push** means the server can send something to the client without the client requesting it.
 
 * [Documentation](https://socket.io/get-started/)
 * [Examples](https://github.com/socketio/socket.io/tree/main/examples)
@@ -25,7 +25,7 @@ Or more generally, making real-time applications. The server can push data to th
 
 <div class="row row-cols-md-2"><div>
 
-Socket.io is really easy to use.
+Socket.io is quite easy to use.
 
 * **Listen to an event**: `on("eventName", callback)`
 * **Stop listening to an event**: `off("eventName")`
@@ -51,7 +51,7 @@ client.on("event", (data) => {
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-This code is targeting Node.js applications running Express.js. You may use Socket.io with other libraries such as Angular...
+This code targets node.js applications running Express.js. You may use Socket.io with other libraries such as Angular...
 
 ```bash
 $ npm i socket.io

@@ -23,7 +23,7 @@ JavaScript (JS) is a popular language used to develop
 
 Most environments support `console.log` to print something.
 
-```js
+```js!
 console.log("message")
 console.error("error message")
 console.warn("warning message")
@@ -55,7 +55,7 @@ JavaScript (JS) is based on ECMAScript. [See JavaScript versions](https://www.w3
 
 There are 3 ways to declare a variable: `const`, `let`, and `var`.
 
-```javascript
+```js!
 // ✅ use CONST as much as possible (unmodifiable)
 const five = 5
 // ✅ let is used for scoped-variable (="normal" variables)
@@ -87,7 +87,7 @@ You can use every usual operator.
 
 Types are implicit in JavaScript. You can use **typeof** or **instanceof** to check the type of something.
 
-```javascript
+```js!
 // Boolean | typeof(b) === 'boolean'
 const b = true || false
 // Number | typeof(n) === 'number'
@@ -112,7 +112,7 @@ There are two "null" values. Both are equals (`null == undefined`).
 
 You can use the operator `?.` and `??` to write null-safe code
 
-```javascript
+```js!
 // ⭐ Nullish coalescing operator
 const x = null ?? default_value // default_value
 const x = undefined ?? default_value // default_value
@@ -139,7 +139,7 @@ const x = null?.toString() ?? default_value // default_value
 
 ##### If and Switch
 
-```javascript
+```js!
 if (boolean) { /* ... */ }
 if (boolean) { /* ... */ } else { /* ... */ }
 if (boolean) { /* ... */ } else if (boolean) { /* ... */ }
@@ -157,7 +157,7 @@ switch (true) {
 
 ##### While / Do while
 
-```javascript
+```js!
 while (cond) { /* ... */ }
 do { /* ... */ } while (boolean)
 ```
@@ -165,13 +165,13 @@ do { /* ... */ } while (boolean)
 
 ##### for (i) and for (each)
 
-```javascript
+```js!
 for(let i = 0; i < 10; i++) { /* ... */ }
 for(let i = 0, j = 0; /* ... */; i++) { /* ... */ }
 for(i = 0; i < 10; i++) { /* ❌ implicit var */ }
 ```
 
-```javascript
+```js!
 for(const i in array) { /* i is an index of array */ }
 for(const i of array) { /* i is a value of array */ }
 ```
@@ -188,7 +188,7 @@ console.log(`the variable value is ${variable}`)
 
 ##### Has property/element
 
-```javascript
+```js!
 // same as 'array.hasOwnProperty(0)'
 if (0 in [0, 1]) {} // true
 // same as 'obj.hasOwnProperty("x")'
@@ -205,7 +205,7 @@ if ("x" in { "x": "..." }) {} // true
 
 #### Arrays
 
-```javascript
+```js!
 const array = []
 // get info
 array.length // 0
@@ -226,7 +226,7 @@ array.slice(0, 1) // clone with 1 values from index 0
 
 Well-known operations
 
-```javascript
+```js!
 const array = [10, 13]
 array.forEach(v => { /* ... */ }) // iterate (...)
 array.filter(v => v === 10) // filter values ([10])
@@ -236,7 +236,7 @@ array.join(" ") // merge separated by ' ' ("10 13"]
 
 Create an Array from an Iterable
 
-```javascript
+```js!
 // ex: HTML NodeList, Map.entries/...
 const array = Array.from(anIterable)
 const array = [...anIterable]
@@ -245,7 +245,7 @@ const array = [...anIterable]
 
 #### Strings
 
-```javascript
+```js!
 const xxx = "xxx"
 // get info
 xxx.length // 4
@@ -269,7 +269,7 @@ xxx.split("xx") // ['', 'x']
 
 [See MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 
-```javascript!
+```js!!
 const map = new Map()
 map.set('key', 5) // add
 map.get('key') // get
@@ -281,7 +281,7 @@ map.entries() | map.keys() | map.values()
 
 Create a Map from an array/object
 
-```javascript!
+```js!!
 new Map([["key", "value"], /* ... */])
 new Map(Object.entries(object))
 ```
@@ -295,7 +295,7 @@ new Map(Object.entries(object))
 
 There are two ways to declare functions:
 
-```javascript!
+```js!!
 // global function
 function xxx() {}
 // scoped function
@@ -313,7 +313,7 @@ if(typeof(xxx) === 'function') {}
 
 ➡️ Every function returns something: `undefined`, or a value. Also, if the expected arguments aren't passed, they will be `undefined`.
 
-```javascript!
+```js!!
 // ✅ All of these are doing the same (v * v)
 function pow(v) { return v * v }
 const pow = function (v) { return v * v }
@@ -327,7 +327,7 @@ const pow = v => ({ key: 'value' })
 
 You can give **default values** to arguments.
 
-```javascript!
+```js!!
 function pow(x, k = 1) { return x ** k; } // 5 ** 2 = 25
 ```
 </div></div>
@@ -340,7 +340,7 @@ function pow(x, k = 1) { return x ** k; } // 5 ** 2 = 25
 
 JavaScript supports [JSON](/_programming/data/json.md) natively, which some changes.
 
-```javascript!
+```js!!
 const object = {
     //  ✅ you don't need to quote keys
     key: "value",
@@ -350,7 +350,7 @@ const object = {
 const object = [{}, [ {}, {} ]] // JSONArray
 ```
 
-```javascript!
+```js!!
 // access a property
 object.key
 object["key"] // 🥂 also works
@@ -360,7 +360,7 @@ object["key"] // 🥂 also works
 
 You can deconstruct an object to easily access its values.
 
-```javascript!
+```js!!
 const {x1, x2} = { x1: 'xxx', x2: 'yyy' }
 const [a, b] = [0, 1]
 ```
@@ -371,7 +371,7 @@ const [a, b] = [0, 1]
 
 <p></p>
 
-```javascript!
+```js!!
 const jsonString = JSON.stringify(object) 
 // pretty format (2/4 spaces)
 const jsonString = JSON.stringify(object, null, 2) 
@@ -382,13 +382,13 @@ const jsonString = JSON.stringify(object, null, 4)
 
 <p></p>
 
-```javascript!
+```js!!
 const object = JSON.parse(jsonString) 
 ```
 
 #### Other conversions
 
-```javascript!
+```js!!
 const array = Object.entries(object) // object to array
 const map new Map(Object.entries(object)) // object to map
 const object = Object.fromEntries(map) // map to object
@@ -399,7 +399,7 @@ const values =  Object.values(object) // get values
 
 #### Merge objects
 
-```javascript!
+```js!!
 Object.assign({name: 'toto', age: 10}, {age: 15})
 // {name: 'toto', age: 15}
 ```
@@ -415,7 +415,7 @@ Object.assign({name: 'toto', age: 10}, {age: 15})
 
 You can create and instantiate a class with a PHP-like syntax.
 
-```javascript
+```js!
 class Person {
     x = 12; // property declared outside the constructor
     // only one per class
@@ -439,14 +439,14 @@ johnDoe.toString() // "John Doe"
 
 JavaScript is a prototyping language. Each variable has access to its definition by using the attribute `__proto__`.
 
-```javascript
+```js!
 const x = 5; x.__proto__;
 (5).__proto__; // same without variable
 ```
 
 If you edit the prototype, then every object using this prototype will be updated. In short, you're dynamically updating their class.
 
-```javascript
+```js!
 x.__proto__.square = function () { return this * this }
 x.square() // 25!
 const y = 10;
@@ -454,9 +454,9 @@ y.square() // 100!
 ```
 </div><div>
 
-You can also dynamically add properties to one object
+You can also dynamically add properties to an object
 
-```javascript
+```js!
 const image = document.images[0] // get an image
 image.wasSelected = true // add a property 'wasSelected'
 image.wasSelected // true
@@ -466,7 +466,7 @@ image.wasSelected // true
 
 <p></p>
 
-```javascript
+```js!
 class X {
     static XXX_TOKEN = "XxX"
     
@@ -508,7 +508,7 @@ new John().toString() // "John!"
 
 Exceptions are used to report that something unexpected occurred, which is mostly an error (`Error`, `EvalError`, `RangeError`...).
 
-```javascript
+```js!
 // raise an exception
 throw new Error();
 // capture an exception
@@ -521,7 +521,7 @@ try {} catch (e) {}
 
 The library [moment.js](https://github.com/moment/moment) (47k ⭐) is quite used to deal with dates/...
 
-```javascript
+```js!
 new Date().getTime() // time since 1970
 new Date().toTimeString().substring(0,8) // hh:mm:ss
 ```
@@ -530,7 +530,7 @@ new Date().toTimeString().substring(0,8) // hh:mm:ss
 
 <p></p>
 
-```javascript
+```js!
 // call after xxx ms (1000 = 1s)
 setTimeout(function () { },  5000);
 // repeat every xxx ms (1000 = 1s)
@@ -543,7 +543,7 @@ clearInterval(it)
 
 The spread syntax allows us to expand something.
 
-```javascript
+```js!
 const powArgs = [5, 2]
 const pow = (n, k) => n ** k
 // instead of
@@ -568,7 +568,7 @@ You can use it
 
 JavaScript executed in the main thread will delay events, and prevent any other script from running. To avoid that, we can use **asynchronous** functions with `async`. 
 
-```javascript
+```js!
 async function doRequestToTheAPI() {
     /* ex: fetch something from the API */
     return result
@@ -579,7 +579,7 @@ const doRequestToTheAPI = async () => { /* ... */ }
 
 These functions return a **Promise** in which we can write code that will be executed when the asynchronous function has finished.
 
-```javascript
+```js!
 doRequestToTheAPI()
     .then(res => /* do something, return xxx */)
     .then(xxx => /* do something */)
@@ -590,7 +590,7 @@ doRequestToTheAPI()
 * You can chain `.then(...)`. The value returned in the previous `.then` is passed to the next one.
 * If any `.then(...)` raises an exception, then the callback passed to `.catch` is called, if there is one.
 
-To avoid the "callback hell", we use **await**. But, 👉 **await can only be used inside an `async` function**, so it's mainly to avoid Promises inside Promises inside [...].
+To avoid the "callback hell", we use **await**. But, 👉 **await can only be used inside an `async` function**, so it's mainly to avoid excessive nesting of Promises.
 
 ```diff
 -doRequestToTheAPI().then(result => /* ... */)
@@ -600,7 +600,7 @@ To avoid the "callback hell", we use **await**. But, 👉 **await can only be us
 
 Working example using the [Fetch API](/_programming/web/javascript/_general/dom.md#-request-an-api-) to get something from an API.
 
-```javascript
+```js!
 async function doRequestToTheAPI() {
     const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
     return await response.json()
@@ -616,11 +616,11 @@ We can improve the code by replacing `return await` with  `return`, as the latte
 
 #### Promises
 
-Promises can be created manually. They are taking two callbacks, one in case of success, and another one in case of failure. 
+Promises can be created manually. They are taking two callbacks, one in case of success, and another in case of failure. 
 
 ➡️ The latter is the same as raising an exception.
 
-```javascript
+```js!
 // example: function sleep in JavaScript
 function sleep(ms) {
     return new Promise((resolve, reject) => {
