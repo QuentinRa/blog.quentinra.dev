@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[React.js](https://react.dev/) (210k ⭐) is a popular front-end framework. Due to it's popularity, there are some front-end framework based on React:
+[React.js](https://react.dev/) (210k ⭐) is a popular front-end framework. Due to its popularity, there are some front-end frameworks based on React:
 
 * [Next](https://github.com/vercel/next.js/) <small>(108k ⭐, web)</small>
 * [React Native](https://github.com/facebook/react-native) <small>(110k ⭐, mobile)</small>
