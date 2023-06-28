@@ -6,7 +6,7 @@ HTML primary, and probably only purpose, is to build web pages 🌍.
 
 * 👉 It can be used in [PHP](../php/_general/index.md) scripts
 * 👉 It can be used in [JavaScript](../javascript/_general/index.md) scripts
-* 👉 It pretty similar to [XML](/programming-languages/others/data/xml.md) which is used on Android/...
+* 👉 It's pretty similar to [XML](/programming-languages/others/data/xml.md) which is used on Android/...
 
 **Where to learn?**
 
@@ -20,7 +20,7 @@ HTML primary, and probably only purpose, is to build web pages 🌍.
 
 **HTML versions**
 
-Since HTML5, similarly to CSS, HTML has become complete, and the versions were dropped. [HTML has now a Living Standard](https://html.spec.whatwg.org/), and new versions <small>(HTML 5.2/5.3)</small> were dropped.
+Since HTML5, similarly to CSS, HTML has become complete, and versioning was dropped. [HTML is now a living standard](https://html.spec.whatwg.org/), and new versions <small>(HTML 5.2/5.3)</small> were dropped.
 
 <br>
 
@@ -37,7 +37,7 @@ Since HTML5, similarly to CSS, HTML has become complete, and the versions were d
 
 <div class="row row-cols-md-2"><div>
 
-A HTML file (`.html`) is a tree of **tags** (`html`, `head`, `body`...). 
+An HTML file (`.html`) is a tree of **tags** (`html`, `head`, `body`...). 
 
 ```html
 <!doctype html>
@@ -68,7 +68,7 @@ Notes
   * 👉 Quotes are optional (`lang="en"` or `lang=en`)
   * 👉 Quotes can be single quotes (`lang="en"` or `lang='en'`)
 * 👉 Indentations are optional
-* 👉 You can put multiples tags on one line
+* 👉 You can put multiple tags on one line
 
 🧼 The most important takeaway is to be consistent.
 </div></div>
@@ -79,19 +79,19 @@ Notes
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-HTML tags are divided in 3 categories
+HTML tags are divided into three categories:
 
 * 🌍 Normal HTML tags: `<a></a>`, `<span></span>`...
 * 🎹 Auto-closing tags: `<img>`, `<input>`, `<br>`...
 * 🗃️ Blocking tags: `<p></p>`, `<div></div>`, `<h1></h1>`...
 
-👑 To be correct, non-blocking tags are called **inline elements**, while blocking tags are called **block-level elements**, and they are usually grouping a bunch of inline elements.
+👑 To be correct, non-blocking tags are called **inline elements**, while blocking tags are called **block-level elements**, and they usually group a bunch of inline elements.
 
 </div><div>
 
 ➡️ For auto-closing tags, `<img>` or `<img />` is the same.
 
-➡️ The browser will try to display as many tags as possible on the **same line**. You can use `<br>` to force a line-break. For **blocking tags**, by default, they will take a whole line for themselves.
+➡️ The browser will try to display as many tags as possible on the **same line**. You can use `<br>` to force a line break. For **blocking tags**, by default, they will take a whole line for themselves.
 
 ```html
 <p>one line for this one</p>
@@ -141,7 +141,7 @@ Note that `<p>` is blocking, while `<span>` is not.
 <span>xxx</span>
 </div></div>
 
-➡️ You can write multilines texts. Note that two or more spaces are merged into one. The indentations/... are NOT kept.
+➡️ You can write multiline texts. Note that two or more spaces are merged into one. Indentations are NOT kept either.
 
 ➡️ You can use `&code;` to encode some characters like: `&nbsp;` (space) `&#244;` (ô) `&#224;` (à) `&lt;` (<) `&gt;` (>)...
 
@@ -178,7 +178,7 @@ If an image cannot be loaded, `alt` will be shown instead.
 
 #### Lists
 
-You can make ordered lists (`1.`, `2.`...) with `<ol>`, and unordered lists with `<ul>`. One entry of the list is inside a tag `<li>`.
+You can make ordered lists (`1.`, `2.`...) with `<ol>`, and unordered lists with `<ul>`. Each entry in the list is inside a tag `<li>`.
 
 <div class="row row-cols-md-2"><div>
 
@@ -212,7 +212,7 @@ You can make ordered lists (`1.`, `2.`...) with `<ol>`, and unordered lists with
 
 #### Containers: div
 
-A `div` is a blocking component that is not visible to the user, and mainly used to group components, either to apply a CSS to the block, or to make the code more readable.
+A `div` is a blocking component that is not visible to the user, and is mainly used to group components, either to apply a CSS to the block, or to make the code more readable.
 
 ```html
 <div>
@@ -315,7 +315,7 @@ We can add some charm to our website without CSS.
 
 #### Others
 
-* Use `<hr>` to create an horizontal separator.
+* Use `<hr>` to create a horizontal separator.
 * Use `<br>` to create a blank line.
 * Use `<wbr>` to force a new line (in a long text).
 * Use `<nobr>xxx</nobr>` to not break a long text.
@@ -364,7 +364,7 @@ These tags are, in my opinion, semantic tags
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-A HTML [form](../_general/random/forms.md) (`<form>`) is a group of input elements (`<input>`, `<textarea>`...). You can use either **GET** or **POST** [HTTP methods](/operating-systems/networking/protocols/http.md).
+An HTML [form](../_general/random/forms.md) (`<form>`) is a group of input elements (`<input>`, `<textarea>`...). You can use either **GET** or **POST** [HTTP methods](/operating-systems/networking/protocols/http.md).
 
 ```html
 <form method="POST" action="https://example.com/login.php">
@@ -380,9 +380,9 @@ A HTML [form](../_general/random/forms.md) (`<form>`) is a group of input elemen
 
 #### Action
 
-The attribute `action` is where the data should be sent. You will need a server <small>(PHP/Node server, an API...)</small> to handle the submission.
+The attribute `action` is where the data should be sent. You will need a server <small>(a PHP/Node server, an API...)</small> to handle the submission.
 
-Each input field must have a unique **name**. This name is what the server will receive, along the value.
+Each input field must have a unique **name**. This name is what the server will receive, along with the value.
 
 <div class="row row-cols-md-2"><div>
 
@@ -412,7 +412,7 @@ Any button inside a form will submit the whole form.
 
 #### External input fields
 
-It's possible to have input fields outside the tag `<form>`. In such case, you must add in `id` to the form, and the input must reference it.
+It's possible to have input fields outside the tag `<form>`. In such a scenario, you must add an `id` to the form, and the input must reference it.
 
 ```html
 <form id="xxx"></form>
@@ -431,7 +431,7 @@ An `input` field has a `type` which could be `text`, `date`, `password`, `tel`, 
 <input type="text" name="xxx" value="default value">
 ```
 
-➡️ For checkbox, you can use the property `checked`.
+➡️ For "checkbox", you can use the property `checked`.
 
 ➡️ For radio buttons, every input field **must have the same name**.
 
@@ -450,7 +450,7 @@ Any button inside a form will submit the whole form.
 
 #### Labels 👑
 
-Labels are used to associate a text with an input field. When clicking on the text, the matching input field is automatically focused.
+Labels are used to associate prompt text with an input field. When clicking on the text, the matching input field is automatically focused.
 
 ```html
 <label>email: <input type="email"></label>
@@ -525,7 +525,7 @@ These can be used on any input elements such as `<input>`.
 
 <div class="row row-cols-md-2"><div>
 
-**Subresource Integrity (SRI)**: to ensure that an external CSS/JS file has not been tampered, we add a hash of the file, and check the integrity. If needed, [you can generate a SRI here](https://www.srihash.org/).
+**Subresource Integrity (SRI)**: to ensure that an external CSS/JS file has not been tampered with, we add a hash of the file, and check the integrity. If needed, [you can generate an SRI here](https://www.srihash.org/).
 
 ```xml!
 <script src="SOME/URL" 
