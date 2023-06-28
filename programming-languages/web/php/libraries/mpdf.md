@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[mpdf](https://github.com/mpdf/mpdf) (4.0k ⭐) is a library to create PDFs files.
+[mpdf](https://github.com/mpdf/mpdf) (4.0k ⭐) is a library to create PDF files.
 
 ```ps
 $ composer require mpdf/mpdf
@@ -21,7 +21,7 @@ $mpdf->Output();
 ```
 </div><div>
 
-A little more advanced examples using HEREDOC and download a file:
+Example using HEREDOC and downloading a file:
 
 ```php!
 $mpdf = new \Mpdf\Mpdf();

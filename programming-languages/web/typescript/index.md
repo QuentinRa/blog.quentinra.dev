@@ -7,7 +7,7 @@
 * 👉 Compiling a `.ts` generates a `.js`
 * 👉 The compiler <small>(and IDEs)</small> can detect errors/mistakes
 * 👉 The code is cleaner <small>(enums...)</small>
-* 👉 You can compile in any version of JavaScript
+* 👉 You can compile into any version of JavaScript
 
 **Where to learn?**
 
@@ -37,7 +37,7 @@ $ npx tsc --project tsconfig.json -w # auto-compile
 
 <div class="row row-cols-md-2"><div>
 
-You need to specify the type of every **variable**, **parameter**... unless it's implicit meaning it can be deduced by the compiler.
+You need to specify the type of every **variable**, **parameter**... unless it's implicit, e.g., it can be deduced by the compiler.
 
 **Some types**
 
@@ -78,7 +78,7 @@ let xxx : XXX = {};
 
 #### Functions
 
-Inside a function, instead of `x: type | undefined | null`, you can use `x?: type` which is exactly the same.
+Inside a function, instead of `x: type | undefined | null`, you can use `x?: type` which is the same.
 
 ```typescript!
 // 👉 A function parameters
@@ -186,7 +186,7 @@ x.five = 5
 
 <br>
 
-#### Getter and setters
+#### Getters and setters
 
 There is a new way to write getters/setters.
 
@@ -233,14 +233,14 @@ If you want to create a library, and use it in another local project, you must a
 }
 ```
 
-You can install it from another project with
+You can install it inside another project with:
 
 ```bash!
 $ npm i ../path/to/your/local/library
 ```
 </div><div>
 
-This will create a link to the library inside your project, so you don't need to update the library each time you changed something.
+This will create a link to the library inside your project, so you don't need to update the library each time you change something.
 
 You may also update your `tsconfig.json` to use `ESNext`
 

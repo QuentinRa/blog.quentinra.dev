@@ -35,7 +35,7 @@ $ composer install vendor/package
 $ composer install vendor/package:version
 ```
 
-Installing packages will generate a `composer.json.lock`. This file keep track of the exact version of packages inside `vendor/`. You can use `composer update` to update them.
+Installing packages will generate a `composer.json.lock`. This file keeps track of the exact version of packages inside `vendor/`. You can use `composer update` to update them.
 
 ➡️ Note that packages are updated according to the ranges/rules defined in `composer.json`, so even if a package has updates, it may not be updated, if the update is not within the allowed range.
 </div></div>
