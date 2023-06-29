@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-To integrate a SQL database in a PHP application, you can use **PDO** to write code regardless of the RDBMS, **or use specific function** for each RDBMS such as `mysqli_*` for MariaDB/MySQL.
+To integrate a SQL database in a PHP application, you can use **PDO** to write code regardless of the RDBMS, **or use a specific function** for each RDBMS such as `mysqli_*` for MariaDB/MySQL.
 
 ⚠️ SQL queries are vulnerable to [SQL injections](/cybersecurity/red-team/s3.exploitation/vulns/injection/sql.md). **Always** use prepared statements to avoid them.
 </div><div>
@@ -45,7 +45,7 @@ $stmt->execute();
 
 <hr class="sr">
 
-## Mariadb / MySQL
+## MariaDB / MySQL
 
 <div class="row row-cols-md-2"><div>
 
@@ -54,7 +54,7 @@ You will use [mysqli](https://www.php.net/manual/en/book.mysqli.php) functions. 
 ```php!
 // connect
 $connexion = mysqli_connect("host","user","passwd","db_name");
-// execute and get result
+// execute and get the result
 $res = mysqli_query($connexion, "SELECT * FROM USER");
 ```
 
@@ -66,7 +66,7 @@ $stmt = mysqli_prepare($connexion, "[...] WHERE user=? AND password=?;");
 mysqli_stmt_bind_param($stmt, "ss", array("some_username", "some_password"));
 // execute
 mysqli_stmt_execute($stmt);
-// get result
+// get the result
 $res = mysqli_stmt_get_result($stmt);
 ```
 

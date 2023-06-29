@@ -59,7 +59,7 @@ SELECT name FROM customer c WHERE age >= ALL (SELECT 0)
 SELECT name FROM customer c WHERE age >= ANY (SELECT 0)
 ```
 
-* Test if a record exists if another table. For instance, to test if a customer has made a purchase. The nested select must return 0 or 1 rows.
+* Test if a record exists in another table. For instance, to test if a customer has made a purchase, we can test if the customer ID is inside the purchases table. The nested select must return zero or one row.
 
 ```
 SELECT name FROM customer c WHERE EXISTS (SELECT [...] WHERE c.id = [...]);

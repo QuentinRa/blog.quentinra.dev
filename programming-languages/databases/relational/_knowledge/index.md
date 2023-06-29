@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-Relational databases are storing data into **tables** and **columns**. Tables are linked together using (foreign) **keys**. You can view a relational database as an Excel table.
+Relational databases are storing data in **tables** and **columns**. Tables are linked together using (foreign) **keys**. You can view a relational database as an Excel table.
 
 <div class="col-12 col-md-8 mx-auto">
 
