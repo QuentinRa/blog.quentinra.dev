@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-The Structured Query Language (SQL) is the most popular query language. The fundamental are the same for many RDBMS.
+The Structured Query Language (SQL) is the most popular query language. The fundamentals are the same for many RDBMS.
 
 A **Request/Query** 👮 is a statement sent to the database to perform some task/get some result. It looks like this:
 
@@ -76,7 +76,7 @@ A clause 👷 is an instruction within the request, such as SELECT. There are 3 
 * Declaration `SELECT`>`FROM`>`WHERE`>`GROUP BY`>`HAVING`>`ORDER BY`>`LIMIT`
 * Execution `FROM`>`WHERE`>`GROUP BY`>`HAVING`>`SELECT`>`ORDER BY`>`LIMIT`
 
-Note that clauses names are case-insensitive <small>(select=SELECT=Select)</small>.
+Note that clause names are case-insensitive <small>(select=SELECT=Select)</small>.
 
 **DDL (Data Definition)** 💼: define a database/table
 
@@ -94,6 +94,8 @@ Note that clauses names are case-insensitive <small>(select=SELECT=Select)</smal
 
 **DML (Data Manipulation)** 💰: manipulate data
 
+Use `USE database_name` first to select a database.
+
 * [SELECT](clauses/select.md) <small>(define what is queried)</small>
 * [FROM](clauses/from.md) <small>(define which tables are queried)</small>
 * [WHERE](clauses/where.md) <small>(define which records are queried)</small>
@@ -101,7 +103,7 @@ Note that clauses names are case-insensitive <small>(select=SELECT=Select)</smal
 * [ORDER BY](clauses/order_by.md) <small>(sort results)</small>
 * [LIMIT](clauses/limit.md) <small>(skip results, limit the number of results)</small>
 
-These statement will change the database (new record/...):
+These statements will change the database (new record/...):
 
 * [INSERT](clauses/insert.md)
 * [UPDATE](clauses/update.md)
@@ -122,7 +124,7 @@ set transaction serializable
 ```
 </div><div>
 
-The transaction "ends" when you use either COMMIT or ROLLBACK. You can also use transactions to only allow some kind of changes.
+The transaction "ends" when you use either COMMIT or ROLLBACK. You can also use transactions to only allow some kinds of changes.
 
 ```sql!
 -- select
@@ -157,12 +159,13 @@ On **MySQL**, if the service is started, you can log in using:
 # sudo apt install default-mysql-client
 $ mysql -u root -p
 $ mysql -u root -p -h SOME_IP
-> source xxx.sql; # import
-> DESCRIBE table_name; # definition of a table
-> SELECT VERSION(); # version
-> SELECT database(); # show current database
-> SHOW DATABASES; # list databases
-> USE a_database; # select one
+> source xxx.sql;                # import
+> DESCRIBE table_name;           # definition of a table
+> SELECT VERSION();              # version
+> SELECT database();             # show current database
+> SHOW DATABASES;                # list databases
+> USE a_database;                # select one
+$ mysql -u root -p db < xxx.sql  # import
 ```
 
 ☠️ By default, there is no password for root (blank).
@@ -175,7 +178,7 @@ $ mysql -u root -p -h SOME_IP
 * Tables: `SELECT table_name FROM information_schema.tables WHERE TABLE_SCHEMA='a_db';`
 * Columns: `SELECT column_name FROM information_schema.columns WHERE TABLE_SCHEMA='a_db' AND TABLE_NAME='a_table';`
 
-A **SQLite** database is a file such as `users.db`.
+An **SQLite** database is a file such as `users.db`.
 
 * SQLite version 🔎: `file users.db`
 * SQLite version 🔎: `select sqlite_version()`
@@ -209,12 +212,24 @@ Views are virtual tables, that may be used to make things easier to access compl
 
 ```sql!
 -- create
-CREATE VIEW nomVue [Attributs] AS requêteSQL
--- check delete/update before creating view
-CREATE VIEW nomVue [ Attributs ] AS requêteSQL WITH CHECK OPTION
+CREATE VIEW viewName [Attributes] AS sqlRequest
+-- check delete/update before creating a view
+CREATE VIEW viewName [ Attributes ] AS sqlRequest WITH CHECK OPTION
 -- delete
-DROP VIEW nom_vue
+DROP VIEW viewName
 ```
+</details>
+
+<details class="details-n">
+<summary>Redis</summary>
+
+* Redis 6379/tcp in-memory db
+* redis-cli `sudo apt install redis-tools` (-h host -p port)
+    * `10.129.15.139:6379> help`
+    * https://redis.io/commands/
+    * info (see version...)
+    * `keys *`
+    * `get flag`
 </details>
 
 <details class="details-n">
@@ -224,7 +239,7 @@ A **schema** 🗃️ is a sort of namespace in which there are tables, and other
 
 ➡️ You may have to use `schema_name.table_name` in your requests.
 
-A **domain** 🌍 refer to the values that an attribute can take. This is determined by the type, and the constraints on it.
+A **domain** 🌍 refers to the values that an attribute can take. This is determined by the type, and the constraints on it.
 </details>
 
 ```sql!
