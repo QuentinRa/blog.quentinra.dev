@@ -153,6 +153,8 @@ var_dump($variable); // print debug information
 
 #### Operators
 
+Every basic [operator](/programming-languages/_paradigm/stuff/operators.md) is available.
+
 * arithmetic: `+`, `-`, `*`, `/`, `+=`, `-=`, `*=`, `/=`, `**` (power), `%` (mod), `^` (xor)
 * comparison: `>`, `>=`, `<=`, `<`
 * booleans: `&&`, `||`, `!` (not)

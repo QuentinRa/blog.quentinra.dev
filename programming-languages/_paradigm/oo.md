@@ -130,5 +130,8 @@ Common modifiers are:
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
+
+* parent, superclass, baseclass
+* child/heir, subclass, derived class
 </div><div>
 </div></div>
