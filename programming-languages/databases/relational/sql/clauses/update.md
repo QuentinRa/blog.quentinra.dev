@@ -1,5 +1,7 @@
 # SQL UPDATE Clause
 
+[Go back](../index.md#sql-clauses-)
+
 <div class="row row-cols-md-2"><div>
 
 Update one or more records.

@@ -1,5 +1,7 @@
 # SQL WHERE Clause
 
+[Go back](../index.md#sql-clauses-)
+
 <div class="row row-cols-md-2"><div>
 
 The WHERE clause is used to filter records that will be in the output.
@@ -18,7 +20,7 @@ SELECT name FROM customer WHERE name IS NOT NULL; -- Both
 SELECT name FROM customer WHERE age BETWEEN 18 AND 24;
 ```
 
-For strings, you can test if an attribute matches a pattern: `_` is an unknown character, and `%` a string that may be empty.
+For strings, you can test if an attribute matches a pattern: `_` is an unknown character, and `%` is a string that may be empty.
 
 ```sql!
 -- any character followed by una
@@ -57,7 +59,7 @@ SELECT name FROM customer c WHERE age >= ALL (SELECT 0)
 SELECT name FROM customer c WHERE age >= ANY (SELECT 0)
 ```
 
-* Test if a record exists if another table. For instance, a customer that have made a purchase. The nested select must return 0 or 1 row.
+* Test if a record exists if another table. For instance, to test if a customer has made a purchase. The nested select must return 0 or 1 rows.
 
 ```
 SELECT name FROM customer c WHERE EXISTS (SELECT [...] WHERE c.id = [...]);

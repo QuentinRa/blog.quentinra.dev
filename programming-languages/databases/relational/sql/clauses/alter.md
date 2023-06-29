@@ -1,5 +1,7 @@
 # SQL ALTER Clause
 
+[Go back](../index.md#sql-clauses-)
+
 The ALTER clause is used to edit tables, databases...
 
 <hr class="sep-both">

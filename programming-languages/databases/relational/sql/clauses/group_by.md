@@ -1,8 +1,10 @@
 # SQL GROUP BY Clause
 
+[Go back](../index.md#sql-clauses-)
+
 <div class="row row-cols-md-2"><div>
 
-There are cases when we want to apply a calculation on a group. For instance, if we want the average age by genre.
+There are cases when we want to apply a calculation to a group. For instance, if we want the average age by genre.
 
 ```sql!
 SELECT gender, AVG(age) FROM customer 

@@ -1,8 +1,10 @@
 # SQL SELECT Clause
 
+[Go back](../index.md#sql-clauses-)
+
 <div class="row row-cols-md-2"><div>
 
-The SELECT clause specify what data we are selecting.
+The SELECT clause specifies what data we are selecting.
 
 * Select all attributes
 

@@ -1,5 +1,7 @@
 # SQL GRANT Clause
 
+[Go back](../index.md#sql-clauses-)
+
 <div class="row row-cols-md-2"><div>
 
 You can **grant permissions to each user**, or grant permission to a role, and **grant the role to each user**. There are tons of privileges, so you should refer to the documentation of your RDBMS.

@@ -1,5 +1,7 @@
 # SQL DROP Clause
 
+[Go back](../index.md#sql-clauses-)
+
 <div class="row row-cols-md-2"><div>
 
 DROP is used to delete users, tables, databases...

@@ -1,5 +1,7 @@
 # SQL LIMIT Clause
 
+[Go back](../index.md#sql-clauses-)
+
 <div class="row row-cols-md-2"><div>
 
 The limit cause can be used to skip the first **k** results, or/and define the max number of results **n**.

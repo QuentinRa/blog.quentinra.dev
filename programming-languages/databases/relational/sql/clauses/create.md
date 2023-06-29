@@ -1,5 +1,7 @@
 # SQL CREATE Clause
 
+[Go back](../index.md#sql-clauses-)
+
 <div class="row row-cols-md-2"><div>
 
 The CREATE clause is used to create

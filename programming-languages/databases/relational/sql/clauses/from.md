@@ -1,5 +1,7 @@
 # SQL FROM Clause
 
+[Go back](../index.md#sql-clauses-)
+
 <div class="row row-cols-md-2"><div>
 
 The FROM clause specify which tables we are selecting data from.

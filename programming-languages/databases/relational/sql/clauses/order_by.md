@@ -1,13 +1,15 @@
 # SQL ORDER BY Clause
 
+[Go back](../index.md#sql-clauses-)
+
 <div class="row row-cols-md-2"><div>
 
 You can sort your results with ORDER BY:
 
-* ⬇️ ASC (default, A -> Z)
-* ⬆️ DESC (Z -> A)
+* ⬇️ ASC (default, A → Z)
+* ⬆️ DESC (Z → A)
 
-```sql
+```sql!
 SELECT name [...] ORDER BY name;
 SELECT name [...] ORDER BY name ASC;
 SELECT name [...] ORDER BY name DESC;
