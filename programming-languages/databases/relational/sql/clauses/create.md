@@ -99,7 +99,7 @@ CREATE USER username@'127.0.0.1'
 We may want to allow the user to connect from another IP.
 
 ```sql!
--- a specific ip
+-- a specific IP
 CREATE USER username@'192.168.0.1'
 -- any IP
 CREATE USER username@'%'

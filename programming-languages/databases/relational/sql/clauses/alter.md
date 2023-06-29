@@ -40,7 +40,7 @@ ALTER TABLE a_table
 ```
 </div><div>
 
-Special case 🔥: transfer data from one table to another.
+Special case 🔥: transferring data from one table to another.
 
 ```sql!
 ALTER TABLE a_table rename tmp_name;

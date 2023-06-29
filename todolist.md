@@ -12,6 +12,14 @@ List of courses that have note which were not added yet.
 
 * Jekyll/pages
 
+**Programming Languages > Databases**
+
+* PLSQL
+* Redis
+* NoSQL
+* MongoDB
+* Cypher
+
 **Programming Languages > Others**
 
 * Blockchain

@@ -17,7 +17,7 @@ The FROM clause specify which tables we are selecting data from.
 ```
 </div><div>
 
-In many scenario, you will select more than one table. If these tables share attributes with the same name, we need to prefix them.
+In many scenarios, you will select more than one table. If these tables share attributes with the same name, we need to prefix them.
 
 ```sql!
 SELECT xxx.* FROM xxx [...]; -- table prefixed
@@ -37,14 +37,17 @@ SELECT c.id, p.id FROM Customer c NATURAL JOIN Purchase p;
 
 <div class="row row-cols-md-2"><div>
 
-Let's say we want to join these customer, and purchase below.
+Let's say we want to link <small>(join)</small> customers to their purchases.
 
 ![Table A](../_images/jointA.png)
 
 ![Table B](../_images/jointB.png)
 
+Notice the `c_id` column with an ID linking products to a customer.
 
-If the join fails, the cartesian product is done instead. Join can be chained and mixed.
+☠️ If the join fails, e.g., there is no link, the cartesian product is done instead <small>(each row is linked to every other row)</small>.
+
+🚀 Join clauses can be chained, and you can mix multiple of them.
 
 <br>
 
@@ -63,10 +66,10 @@ The `c_id` column is the only one present in both tables. The result is `[(1, 'L
 
 #### JOIN on an attribute
 
-The **Equi-join** is an explicit NATURAL JOIN. The second form can be used when column have different names.
+The **Equi-join** is an explicit NATURAL JOIN. The second form can be used when columns have different names.
 
 ```sql!
--- can be used on multiple column with ","
+-- can be used on multiple columns with ","
 [...] FROM customer JOIN purchase USING (c_id)
 [...] FROM customer c JOIN purchase p ON c.c_id = p.c_id
 ```
