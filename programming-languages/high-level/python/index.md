@@ -5,7 +5,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-Python 🐍 is a multi-purpose high-level scripting language. Because it's quite easy to learn/use, it's unfortunately used as a [Golden hammer](https://sourcemaking.com/antipatterns/golden-hammer) 🔨🔥 <small>(AntiPattern)</small> by many developers.
+Python 🐍 is a multipurpose high-level scripting language. Because it's quite easy to learn/use, it's unfortunately used as a [Golden hammer](https://sourcemaking.com/antipatterns/golden-hammer) 🔨🔥 <small>(AntiPattern)</small> by many developers.
 
 You can use **Python interpreter**:
 
@@ -40,7 +40,7 @@ Hello, World
 
 #### Python2
 
-Python is the previous major version of Python. With little changes, most python scripts can be run by python3.
+Python 2 was the previous major version of Python. With little changes, most Python scripts can be run by Python 3.
 
 * `print "xxx"` ➡️ `print("xxx")`
 * `5 / 2 == 2` ➡️ `5 / 2 == 2.5`
@@ -82,16 +82,16 @@ from xxx import *         # import all
 
 #### VENV
 
-Each project need some packages and in some specific versions. To avoid messing with others project when installing/updating/... packages, we usually create one virtual environment **VENV** per project. Once **activated** <small>(by running activate)</small>, new packages will be added to the local copy at `path/to/venv`.
+Each project needs some packages in specific versions. To avoid messing with other projects when installing, updating, or removing packages, we usually create a virtual environment (**VENV**) per project. Once **activated** <small>(by sourcing activate)</small>, new packages will be added to the local copy at `path/to/venv`.
 
 ```ps
-$ python3 -m venv path/to/venv # create
-$ source path/to/venv/bin/activate # load
-(venv) $ echo $VIRTUAL_ENV # see the current VENV
-(venv) $ pip3 install xxx # installed to the VENV
+$ python3 -m venv path/to/venv      # create
+$ source path/to/venv/bin/activate  # load
+(venv) $ echo $VIRTUAL_ENV          # see the current VENV
+(venv) $ pip3 install xxx           # installed to the VENV
 ```
 
-We usually store in a file `requirements.txt` the library and their versions used by the project.
+We usually store in a file `requirements.txt` packages and their versions used by the project.
 
 ```shell!
 $ pip3 freeze > requirements.txt # create
@@ -117,7 +117,7 @@ var4 = str("ab") # constructor
 
 #### Types
 
-Each type is associated to a class 🤖. You can use the **constructor** <small>(`className()`)</small> to convert values: `str(5) == "5"`.
+Each type is associated with a class 🤖. You can use the **constructor** <small>(`className()`)</small> to convert values: `str(5) == "5"`.
 
 ```python
 xxx = True or False           # bool 🤖 | ???
@@ -179,12 +179,12 @@ mod = 7 % 2           # 1
 sum += 1              # same as sum = sum + 1
                       # see also: -=, *=, and /=
 # logical
-if 5 == 5: pass          # true
-if 5 != 5: pass          # false
+if 5 == 5: pass           # true
+if 5 != 5: pass           # false
                           # see also: >, >=, <, <=
-if not False: pass       # logicial NOT => true
-if True or False: pass   # logical OR => true
-if True and False: pass  # logical AND => false
+if not False: pass        # logicial NOT → true
+if True or False: pass    # logical OR → true
+if True and False: pass   # logical AND → false
 ```
 
 ➡️ As long as they have the **SAME TYPE**, you can use `+` between two variables. This result either in **addition**, or in **concatenation**.
@@ -280,7 +280,7 @@ finally: # optional, run after either try or except
 
 <div class="row row-cols-md-2"><div>
 
-Similarily to control-flow structure, you can use `pass` for empty functions. Functions can access outer-scope variables.
+Similarly to control-flow structures, you can use `pass` for empty functions. Functions can access outer-scope variables.
 
 ```python
 def my_function():
@@ -289,14 +289,14 @@ def my_function():
 my_function() # invoke
 ```
 
-Functions parameters can have default value.
+Functions parameters can have a default value.
 
 ```python
 def my_function(a, b=2):
     return a ** b
 ```
 
-🦄 Functions can be strongly typed, but it's NOT enforced by the language, e.g., there is no compilation errors:
+🦄 Functions can be strongly typed, but it's NOT enforced by the language, e.g., there are no compilation errors:
 
 ```python
 def my_function(a: string) -> string:
@@ -320,14 +320,14 @@ fct(1, 2, 3)
 
 #### Options
 
-You can create function with options:
+You can create functions with options:
 
 ```python
-def fct(**opt):
+def fct(..., **opt):
     print(opt.get("key1", "default"))
 
 
-fct(key1= "value")
+fct(..., key1= "value", ...)
 ```
 </div></div>
 
@@ -479,7 +479,7 @@ print(datetime.datetime.now())
 
 #### Files
 
-It's common to open file using `with`, as they are automatically closed <small>(`file.close()`)</small>. The opening mode can be `r` <small>(read)</small>, `w` <small>(write)</small>, or `a` <small>(append)</small>.
+It's common to open a file using `with`, as they are automatically closed <small>(`file.close()`)</small>. The opening mode can be `r` <small>(read)</small>, `w` <small>(write)</small>, or `a` <small>(append)</small>.
 
 ```python
 with open(password_file, 'r') as file:
@@ -526,7 +526,7 @@ if r.status_code == 404:
 
 #### scrapy - manipulate packets
 
-`scrapy` is a library to manipulate packets. A packet is created by combining multiple protocols using `/`. It's send using `send` or other functions such as `srp` for layer 2 packets.
+`scrapy` is a library to manipulate packets. A packet is created by combining multiple protocols using `/`. It's sent using `send` or other functions such as `srp` for layer 2 packets.
 
 ```python
 from scapy.layers.l2 import *
@@ -600,7 +600,7 @@ finally:
 
 #### paramiko - SSHv2 implementation
 
-`paramiko` can connect to a SSH server.
+`paramiko` can connect to an SSH server.
 
 ```python
 import paramiko

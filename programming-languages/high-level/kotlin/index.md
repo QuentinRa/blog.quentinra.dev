@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-Kotlin is a open-source, modern, programming language developed by JetBrains since 2011.
+JetBrains has been developing Kotlin, an open-source and modern programming language, since 2011.
 
 * 😎 More concise, simplified, version of Java
 * ✈️ Main language used for Android applications
@@ -49,12 +49,12 @@ someVar3!!.toString() // Assert non null
 
 Types are implicit. There are a few changes with Java.
 
-* `Unit` (kotlin) is the same as `void` (Java)
-* `Any` (kotlin) is the same as `Object` (Java)
-* `Int` (kotlin) is the same as `Integer` (Java)
+* `Unit` (Kotlin) is the same as `void` (Java)
+* `Any` (Kotlin) is the same as `Object` (Java)
+* `Int` (Kotlin) is the same as `Integer` (Java)
 * `Number`, `Float`, `Double`, `String`, `Char` are unchanged
 
-You can convert an XXX to an YYY with `.toYYY()`
+You can convert a variable to type YYY with `.toYYY()`
 
 ```kotlin
 val d = "5".toDouble()
@@ -83,7 +83,7 @@ i?.inc() // i++ (if not null)
 
 <div class="row row-cols-md-2"><div>
 
-The main function can be put in Any file.
+The main function can be put in any file.
 
 ```kotlin
 fun main(args: Array<String>) : Unit {
@@ -104,7 +104,7 @@ TODO("Not yet implemented")
 
 #### Lambdas
 
-In kotlin, there are many functions taking another function (lambda).
+In Kotlin, many functions take another function (lambda).
 
 ```kt
 fun xxx(yyy: (Int) -> String) { /* ... */ }
@@ -118,7 +118,7 @@ We usually use the **trailing lambda syntax** to call such functions. The parame
 xxx { it.toString() }
 ```
 
-We can explicitely add the return type and/or the argument name.
+We can explicitly add the return type and/or the argument name.
 
 ```kt
 xxx { x: Int ->
@@ -167,7 +167,7 @@ val x = when(xxx) {
 }
 ```
 
-The major change with this new syntax, is that we can do other things in a `when` that simply comparing with `==`.
+The major change with this new syntax, is that we can do other things in a `when` than simply compare with `==`.
 
 ```kotlin
 when (xxx) {
@@ -365,7 +365,7 @@ val another = SomeClass(3)
 
 #### Getters/Setters
 
-You may use backing fields. A private attribute which is either `var`/`val`, along a public attribute which may have a more restrictive type. In the example below, others can't add elements in the list.
+You may use backing fields. Create a private attribute that is either `var`/`val`, and a public attribute, which may have a more restrictive type. In the example below, others can't add elements to the list.
 
 ```kotlin
 class XXX {
@@ -374,7 +374,7 @@ class XXX {
 }
 ```
 
-The syntax below is a shortcut to declare the getter.
+The syntax above is a shortcut to declare the getter below:
 
 ```kotlin
 val list : List<Int>
@@ -424,7 +424,7 @@ SomeClass.zzz()
 
 #### Visibility
 
-By default, classes members (methods, and attributes) are **public**. You can change the visibility to `private`, `protected`, or `internal`.
+By default, class members (methods, and attributes) are **public**. You can change the visibility to `private`, `protected`, or `internal`.
 
 ```kotlin
 class SomeClass {
@@ -464,7 +464,7 @@ class AnotherClass : A, B {
 }
 ```
 
-Attributes can be abstract now
+Attributes can be abstracted now
 
 ```kotlin
 abstract class AClass(){
