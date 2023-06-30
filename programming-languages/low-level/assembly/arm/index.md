@@ -2,9 +2,9 @@
 
 <div class="row row-cols-md-2"><div>
 
-Assembly language are low-level language directly interacting with the processor such as an Intel processor.
+Assembly languages are low-level languages directly interacting with a processor such as an Intel or an ARM processor.
 
-ARM assembly is one of the assembly language used for **RISC processors** <small>(Reduced Instruction Set Computing)</small> such as ARM processors.
+ARM assembly is one of the assembly languages used for **RISC processors** <small>(Reduced Instruction Set Computing)</small> such as ARM processors.
 
 * 🧐 Simplified instruction set compared to CISC processors
 * 🚀 Usually more performant
@@ -61,7 +61,7 @@ They are usually followed by the optional `.arm` directive, to indicate that the
 .arm
 ```
 
-The code is then followed by an optional `.data` directive, in which we can declare variable that we will use in the code.
+The code is then followed by an optional `.data` directive, in which we can declare variables that we will use in the code.
 
 ```arm
 .data
@@ -69,7 +69,7 @@ message: .asciz "Hello, World\n"
 message_len: .word 13
 ```
 
-For a function to be used in another file, it must be global function. This includes the entrypoint function, usually `_start` or `main`.
+For a function to be used in another file, it must be a global function. This includes the entry point function, usually `_start` or `main`.
 
 ```arm
 .global _start
@@ -133,7 +133,7 @@ Registers are used to store values such as function parameters.
 
 #### Variables 🗝️
 
-We usually either use constants or variable to store values. The syntax is `label: type value`, with type:
+We usually either use constants or variables to store values. The syntax is `label: type value`, with type:
 
 * `.ascii`: string converted to ASCII
 * `.asciz`: same but add a `\0` at the end
@@ -160,7 +160,7 @@ Each system call is identified by a code: `exit` (1), `fork` (2),  `read` (3), `
 $ less /usr/include/arm-linux-gnueabihf/asm/unistd.h
 ```
 
-Here some checklist:
+Here is a checklist:
 
 * ✉️ Set the registers `r0-r6` with the arguments for the system call. Refer to [Functions](#functions) as the process is the same.
 
@@ -168,7 +168,7 @@ Here some checklist:
     mov r0, #0 @ the first argument is 0
 ```
 
-* 🏠 Set he `r7` register with the system call number
+* 🏠 Set the `r7` register with the system call number
 
 ```arm
     mov r7, #1 @ example to call exit
@@ -190,7 +190,7 @@ Here some checklist:
 Instructions are operations that we can do. For instance, we can put a value inside a register, or calculate a sum of two registers.
 
 * `Rd` or `Rn` are registers such as `r0`, `r1`...
-* `Operand2` can be a immediate constant, or a register
+* `Operand2` can be an immediate constant, or a register
 
 **Register-related operations** ️📝
 
@@ -211,7 +211,7 @@ str r0, =message
 str r1, [r0]
 ```
 
-You can add a one of these after ldr/str like `ldrb`.
+You can add one of these after ldr/str like `ldrb`.
 
 * `b`: load/store the first byte
 * `h`: load/store the first two bytes.
@@ -232,13 +232,13 @@ rsb Rd, Rn, Operand2
 ; exclusive or
 eor Rd, Rn, Operand2
 
-; Rd = Rn * Rm (32-bits value in Rd)
+; Rd = Rn * Rm (32-bit value in Rd)
 mul Rd, Rn, Rm
 
-; Rd = Rn * Rm (64-bits, signed only)
+; Rd = Rn * Rm (64-bit, signed only)
 smull RdLo, RdHi, Rn, Rm
 
-; Rd = Rn * Rm (64-bits, unsigned only)
+; Rd = Rn * Rm (64-bit, unsigned only)
 umull RdLo, RdHi, Rn, Rm
 ```
 
@@ -280,7 +280,7 @@ The first argument is stored in the first register `r0`, the second in the secon
 You must declare the function as `.global`. Then, implement it as usual.
 
 ```arm
-@ This function expect a .word in r0 (a)
+@ This function expects a .word in r0 (a)
 @ and a .word in r1 (b).
 @ It will store the result (a+b) in r0.
 .global sum
@@ -336,7 +336,7 @@ The process to manually calculate if a value can be immediate is:
 **Test with 748 326**
 
 * 32 bits: $00000000\ 00001011\ 01101011\ 00100110$
-* oh no... 19 bits can't fit a 8 bits value
+* oh no... 19 bits can't fit an 8 bits value
 * fail ❌
 
 **Test with 32000**
@@ -365,7 +365,7 @@ Find the rotation:
 * there is $n=1$ given $2^n = 2$
 * **rotation (4 bits)** 🔁: $0001$ <small>(equals to n=1)</small>
 
-👉 The immediate constant stored is: $0001\ 11101010$.
+👉 The immediate constant stored is $0001\ 11101010$.
 </details>
 </div></div>
 
@@ -382,7 +382,7 @@ You can add a condition for an instruction to be executed only if the condition 
 * **C** 1️⃣: is the last carry value one?
 * **V** 🤯: do we have an overflow?
 
-These flags are either changed after calling a test operation, or by adding the `s` flag to normal operation such as `adds`.
+These flags are either changed after calling a test operation, or by adding the `s` flag to a normal operation such as `adds`.
 
 |NZCV bits|Operator| NZCV   |        Detail         |
 |----|------|---------------|-------------------------|
@@ -429,7 +429,7 @@ addeq r0, #6 ; add 6 to r0
 
 ```arm
 mov r0, #2
-; test if r0 is equals to 6
+; test if r0 is equal to 6
 ; Z = false, N = true...
 cmp r0, #6
 
@@ -484,7 +484,7 @@ You can apply modifications on `Operand2` easily using some operators like `>>` 
 
 #### Usage
 
-Format is: `Rb, shift_type shift_amount`.
+The format is: `Rb, shift_type shift_amount`.
 
 ```arm
 @ r1 is shifted by 2 before being added to r0
@@ -564,11 +564,11 @@ exit:
 
 #### Stack
 
-The stack is a **primordial concept** when calling function inside functions. It's also useful to empty registries as we don't have a lot. 
+The stack is a **primordial concept** when calling a function inside functions. It's also useful to empty registries as we don't have a lot. 
 
 🔥 Basically, we can put values in the stack, and take them back later.
 
-⚠️ When calling a function, they may modify any register. Some register may be unexpectedly changed, and we may have lost our way to go back to the code that called the original function.
+⚠️ When calling a function, they may modify any register. Some registers may be unexpectedly changed, and we may have lost our way to go back to the code that called the original function.
 
 <div class="row row-cols-md-2"><div>
 

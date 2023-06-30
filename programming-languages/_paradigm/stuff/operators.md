@@ -4,9 +4,9 @@
 
 Many programming languages implement the same operators for common operations, with some considerations:
 
-* ☠️ the symbol may be different
-* 🔥 the logic may be different
-* 💡 there may be a function instead of an operator
+* ☠️ The symbol may be different
+* 💥 The logic may be different
+* 💡 There may be a function instead of an operator
 </div><div>
 
 The most common operator is the **assignment** operator, which is usually `=`. It's used to store a value in a container called a variable.
@@ -45,6 +45,8 @@ x -= 1     // same as "x = x - 1"
 x *= 1     // same as "x = x * 1"
 x /= 1     // same as "x = x / 1"
 ```
+
+🔥 Some languages have a shortcut when the operand is `1`, which is common in loops: `x++` <small>(x = x + 1)</small> and `x--` <small>(x = x - 1)</small>.
 </div></div>
 
 <hr class="sep-both">
@@ -57,10 +59,10 @@ Most of the time, we are executing a different code according to the value of a 
 
 * x greater than 1 → `x > 1`
 * x greater equals than 1 → `x >= 1`
-* x lesser equals than 1 → `x <= 1`
-* x lesser than 1 → `x < 1`
-* x equals to 1 → `x == 1`
-* x not equals to 1 → `x != 1` or `x <> 1`
+* x less equals than 1 → `x <= 1`
+* x less than 1 → `x < 1`
+* x equals 1 → `x == 1`
+* x not equals to 1 → `x != 1` or `x <> 1` (☠️)
 
 💥 Languages may implement strict comparison. Strict comparison will also check the type of the variable <small>(ex: 5.0 === 5 is false)</small>.
 
@@ -69,9 +71,11 @@ Most of the time, we are executing a different code according to the value of a 
 
 As we may chain multiple comparisons, we also have logical operators:
 
-* `a && b` / `a and b`: true if both `a` and `b` are true
-* `a || b` / `a or b`: true if at least one is true
-* `!a` / `not a`: negate the result <small>(false → true, true → false)</small>
+* `a && b`: true if both `a` and `b` are true
+* `a || b`: true if at least one is true
+* `!a`: negate the result <small>(false → true, true → false)</small>
 
-🔥 Most languages have implemented [Short-circuit_evaluation](https://en.wikipedia.org/wiki/Short-circuit_evaluation). If we write `true || anythingElse`, then the rest of the condition is not evaluated, as we already know the result is `true`.
+☠️ Some languages use `and`/`or`/`not` instead of `&&`/`||`/`!`.
+
+💥 Most languages have implemented [Short-circuit_evaluation](https://en.wikipedia.org/wiki/Short-circuit_evaluation). If we write `true || anythingElse`, then the rest of the condition is not evaluated, as we already know the result is `true`.
 </div></div>

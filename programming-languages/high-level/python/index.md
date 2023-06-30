@@ -168,6 +168,8 @@ set = range(3, 7, 2) # set = [3, 5]
 
 #### Operators
 
+You can learn more about [operators here](/programming-languages/_paradigm/stuff/operators.md).
+
 ```python
 # arithmetic
 sum = 5 + 5           # 10

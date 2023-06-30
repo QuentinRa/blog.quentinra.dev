@@ -115,24 +115,26 @@ printf("%s, %s\n", "Hello", "World");
 
 #### Operators
 
+You can learn more about [operators here](/programming-languages/_paradigm/stuff/operators.md).
+
 ```c
 // assignation
 int x = 5;
-x++; // 6, same as x = x + 1
-x += 2; // 8, same as x = x + 2
-x--; // 7, same as x = x - 1
+x++;        // 6, same as x = x + 1
+x += 2;     // 8, same as x = x + 2
+x--;        // 7, same as x = x - 1
 x -= 3; x *= 3; x /= 4;
 // arithmetic
-int sum = 5 + 5; // 10
-int by = 5 * 5; // 25
+int sum = 5 + 5;     // 10
+int by = 5 * 5;      // 25
 int divided = 6 / 5; // 1
 // logical
 if (5 == 5) {} // true
 if (5 != 5) {} // false
-if (!0) {} // !0 = 1 = true
+if (!0) {}     // !0 = 1 = true
 if (1 || 0) {} // logical OR, true
 if (1 && 0) {} // logical AND, false
-if (1 ^ 0) {} // logical XOR, true
+if (1 ^ 0) {}  // logical XOR, true
 ```
 
 ➡️ There is also an operator `++x` (or `--x`). The difference with the postfix version is that the `++` is done before anything else.
