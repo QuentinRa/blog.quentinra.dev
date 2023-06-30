@@ -2,12 +2,11 @@
 
 <div class="row row-cols-md-2"><div>
 
-System calls are low-level functions that are directly interacting with the Linux kernel. You would usually use them in assembly, but this will be explained in another course. Rather, this course will focus on system calls in C, as this is hopefully simpler to learn than assembly.
+System calls are low-level functions that directly interact with the Linux kernel. You would usually use them in assembly, but assembly code is out of the scope of this course. We will use [C](../c/general/index.md) instead.
 
 </div><div class="align-self-center">
 
-They are defined in `man 2`, such as `man 2 open`. See `man 2 syscalls`.
-You will find inside
+They are defined in `man 2`, such as `man 2 open`. See `man 2 syscalls`. You will find inside:
 
 * 🎯 **imports**
 * 💪 **signatures**
@@ -31,7 +30,7 @@ void perror(const char *s);
 ```
 </div><div class="align-self-center">
 
-If a system call failed, an error code will be set. You can use `perror` to print the error message, and you can even append your own error message with the parameter `s`.
+If a system call fails, an error code will be set. You can use `perror` to print the error message, and you can even append your own error message with the parameter `s`.
 </div></div>
 
 > **NOTE**: system calls are usually returning **0 upon success, and -1 upon failure**. If an error occurred, they set the global variable `errno` with a code indicating what error occurred. `perror` will use this code to display a human-readable error message.
@@ -65,7 +64,7 @@ int open(const char *pathname, int flags);
 int open(const char *pathname, int flags, mode_t mode);
 ```
 
-This function returns an `int`, usually called `fd`, short for **file descriptor**, and is used by other system calls. If you didn't know, there are 3 already open file descriptors: 
+This function returns an `int`, usually called `fd`, short for **file descriptor**, and is used by other system calls. If you didn't know, there are already three open file descriptors: 
 
 * stdin, standard input: `0`
 * stdout, standard output: `1`
@@ -102,7 +101,7 @@ char str[11];
 ssize_t res = read(0, &str, 10);
 ```
 
-The system call returns `-1` upon failure (see perror), or the number of character read.
+The system call returns `-1` upon failure (see perror), or the number of characters read.
 </div><div class="align-self-center">
 
 * `fd` is the file descriptor from which you want to read
@@ -132,7 +131,7 @@ For instance, here is an example
 ssize_t res = write(1, "Hello, World", 13);
 ```
 
-The system call returns `-1` upon failure (see perror), or the number of character written.
+The system call returns `-1` upon failure (see perror), or the number of characters written.
 </div><div class="align-self-center">
 
 * `fd` is the file descriptor in which you want to write
@@ -162,11 +161,11 @@ Note that the function is returning your new offset in the file. To get your off
 </div><div class="align-self-center">
 
 * `fd` is the file descriptor
-* `offset` is a number (long) of character you want to skip starting from "whence"
+* `offset` is a number (long) of characters you want to skip starting from "whence"
 * `whence` is the location we are moving to before applying the offset.
   * `SEEK_CUR`: do not move, use the current position
-  * `SEEK_SET`: move to the start of the file, and apply offset
-  * `SEEK_END`: move to the end of the file, and apply offset
+  * `SEEK_SET`: move to the start of the file, and apply an offset
+  * `SEEK_END`: move to the end of the file, and apply an offset
 
 If you understood right, to move back to the start, you would do
 

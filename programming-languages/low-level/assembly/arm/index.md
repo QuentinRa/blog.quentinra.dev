@@ -37,7 +37,7 @@ $ ld -O0 file.o
 $ ./a.out
 ```
 
-➡️ It's worth noting that you can use both Assembly and C together by using `gcc -c file.c` to generate an object file <small>(useful for testing a partial assembly code with a function implemented in C)</small>.
+➡️ It's worth noting that you can use both Assembly and C together by using `gcc -c file.c` to generate an object file <small>(useful for testing partial assembly code with a function implemented in C)</small>.
 
 ➡️ You can dump the assembly code of a C program with `objdump -d a.out`. See also the `disassemble` command.
 </div></div>
@@ -48,7 +48,7 @@ $ ./a.out
 
 <div class="row row-cols-md-2"><div>
 
-An ARM file usually starts with `.equ` directives. They are the constants we define, such as the system calls numbers.
+An ARM file usually starts with `.equ` directives. That's where we define constants, such as system calls numbers we will use.
 
 ```arm
 .equ SYS_EXIT, 1
@@ -187,7 +187,7 @@ Here is a checklist:
 
 <div class="row row-cols-md-2"><div>
 
-Instructions are operations that we can do. For instance, we can put a value inside a register, or calculate a sum of two registers.
+Instructions are operations that we can perform. For instance, we can put a value inside a register, or calculate the sum of two registers.
 
 * `Rd` or `Rn` are registers such as `r0`, `r1`...
 * `Operand2` can be an immediate constant, or a register
@@ -242,7 +242,7 @@ smull RdLo, RdHi, Rn, Rm
 umull RdLo, RdHi, Rn, Rm
 ```
 
-➡️ RdLo are the lower 32 bits while RdHi are the upper 32 bits.
+➡️ RdLo are the lower 32 bits, while RdHi are the upper 32 bits.
 </div></div>
 
 <hr class="sep-both">
@@ -316,16 +316,16 @@ Immediate constants are constants passed as Operand2 using `#`.
 The process to manually calculate if a value can be immediate is:
 
 * Write the **value** on 32 bits
-* Rotate the bits by a shift amount which MUST BE a multiple of 2. The goal is to have the number on **8 bits**.
+* Rotate the bits by a shift amount which must be a multiple of 2. The goal is to have the number on **8 bits**.
 * The value for the rotation is $n$ <small>(in binary)</small> in $2^n$
 
 <details class="details-n">
 <summary>Ex: from decimal to immediate constant</summary>
 
-**What's the value for $0001\ 00000001$?**
+**What's the value of $0001\ 00000001$?**
 
 * 32 bits: $00000000\ 00000000\ 00000000\ 00000001$
-* $0001$ mean that $n=1$, and the rotation is $2^1=2$
+* $0001$ means that $n=1$, and the rotation is $2^1=2$
 * $01000000\ 00000000\ 00000000\ 00000000$ <small>(after two rotations)</small>
 * convert back to decimal: $1073741824 = 2^{30}$
 </details>
@@ -336,14 +336,14 @@ The process to manually calculate if a value can be immediate is:
 **Test with 748 326**
 
 * 32 bits: $00000000\ 00001011\ 01101011\ 00100110$
-* oh no... 19 bits can't fit an 8 bits value
+* oh no... 19 bits can't fit an 8-bit value
 * fail ❌
 
 **Test with 32000**
 
 * 32 bits: $00000000\ 00000000\ 01111101\ 00000000$
 * 7 bits fit our 8 bits, so we are good
-* **value (8bits)** 🔢: $01111101$
+* **value (8 bits)** 🔢: $01111101$
 
 Find the rotation:
 
@@ -568,7 +568,7 @@ The stack is a **primordial concept** when calling a function inside functions. 
 
 🔥 Basically, we can put values in the stack, and take them back later.
 
-⚠️ When calling a function, they may modify any register. Some registers may be unexpectedly changed, and we may have lost our way to go back to the code that called the original function.
+⚠️ When calling a function, it may modify registers, potentially leading to unexpected changes. As a result, we may have lost the register value used to return to the calling function.
 
 <div class="row row-cols-md-2"><div>
 
@@ -586,7 +586,7 @@ When calling `max`, `6` is stored in the `lr` register. If we call another funct
 max:
     push {lr}  @ save the return address to the stack
     @ code ...
-    pop {pc} @ load the return address to the stack
+    pop {pc}   @ load the return address from the stack
 .end
 ```
 
@@ -594,7 +594,7 @@ More generically, for normal registers:
 
 ```arm
 push {r0, r1, r2} @ order matters! r0 before r1...
-push {r0-r2} @ can use an interval
+push {r0-r2}      @ can use an interval
 ```
 
 </div></div>
@@ -607,7 +607,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [old](_old.md)
 * SIMD (Single Instruction Multiple Data) instruction set
 * [azerialabs](https://azm.azerialabs.com/)
 </div><div>
@@ -621,5 +620,4 @@ ldr r3, [r2, #-8]!
 @ Post-indexed
 ldr r3, [r2], r1
 ```
-
 </div></div>

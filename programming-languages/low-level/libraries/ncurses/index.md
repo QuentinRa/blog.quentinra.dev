@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-NCurses "new curses" is a successor of the curses library. It's a C library to write text-based interfaces <small>(e.g. interfaces in a terminal)</small>.
+NCurses "new curses" is a successor to the curses library. It's a C library to write text-based interfaces <small>(e.g. interfaces in a terminal)</small>.
 
 It's commonly used by Linux programs such as `vim`.
 
@@ -20,7 +20,7 @@ And, in your program, use:
 
 **Features** ⭐
 
-* 🎨 Background/Foreground color for text
+* 🎨 Background/Foreground color for the text
 * 🪟 Multiple windows
 * 🎹 Keyboard/Mouse input
 * 🎯 Cursor implementation
@@ -50,7 +50,7 @@ if ( initscr() == NULL ) {
 }
 ```
 
-This will fill a global variable `stdscr` of type `Window*` which is the screen of your terminal. You **may** divide it in multiple separate windows:
+This will fill a global variable `stdscr` of type `Window*` which is the screen of your terminal. You **may** divide it into multiple separate windows:
 
 ```cpp
 WINDOW* w = subwin(stdscr, height, width, pos_x, pos_y);
@@ -62,7 +62,7 @@ box(w, ACS_VLINE, ACS_HLINE); // show borders
 
 #### Using windows
 
-There are two kind of macro/functions:
+There are two kinds of macro/functions:
 
 * those taking a window <small>(`Window*`)</small>
 * those not taking a window <small>(`stdscr` is implicit)</small>
@@ -73,7 +73,7 @@ Common functions are:
 * `clear()`/`wclear(w)`: empty the window
 * `endwin()`/`delwin(w)`: destroy a window
 
-👉 Don't forgot to call `endwin()` at the end of your program. It will automatically destroy all sub-windows.
+👉 Don't forget to call `endwin()` at the end of your program. It will automatically destroy all sub-windows.
 </div></div>
 
 <hr class="sep-both">
@@ -126,7 +126,7 @@ mvwdelch(w, pos_x, pos_y); // delete a character
 
 #### Colors
 
-Colors can only be used if the terminal supports it.
+Colors can only be used if the terminal supports them.
 
 ```c
 if ( has_colors() == FALSE ) {
@@ -137,7 +137,7 @@ if ( has_colors() == FALSE ) {
 }
 ```
 
-Colors are represented using a number. It can go from 0 to 256, but some terminals only support 0 to 8. To use a color, you need to wrap it inside a pair. A pair has a foreground color, and a background color.
+Colors are represented by a number. It can go from 0 to 256, but some terminals only support 0 to 8. To use a color, you need to wrap it inside a pair. A pair has a foreground color, and a background color.
 
 ```cpp
 init_pair(pair_id, foreground, background);
