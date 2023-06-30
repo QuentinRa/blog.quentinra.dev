@@ -9,7 +9,7 @@ Many programming languages implement the same operators for common operations, w
 * 💡 there may be a function instead of an operator
 </div><div>
 
-The most common operator is the **assignment** operator, which is usually `=`. It's used to store a value in a container called variable.
+The most common operator is the **assignment** operator, which is usually `=`. It's used to store a value in a container called a variable.
 
 ```ps
 x = 5
@@ -53,7 +53,7 @@ x /= 1     // same as "x = x / 1"
 
 <div class="row row-cols-md-2"><div>
 
-Most of the time, we are executing different code according to the value of a variable. We have operators to compare variables/values.
+Most of the time, we are executing a different code according to the value of a variable. We have operators to compare variables/values.
 
 * x greater than 1 → `x > 1`
 * x greater equals than 1 → `x >= 1`
