@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-The C programming language is a low-level language which allow us to interact with system calls and the memory directly.
+The C programming language is a low-level language that allows us to interact with system calls and memory directly.
 
 You will create a file with the `.c` extension, for instance, `main.c`
 
@@ -45,7 +45,7 @@ int name = 0;
 const int A_CONSTANT = 5;
 ```
 
-➡️ When creating a variable without a default value, the compiler will automatically give them a default value.
+➡️ When creating a variable without a default value, the compiler will automatically give it a default value.
 
 #### Types
 
@@ -232,7 +232,7 @@ int main() {
 }
 ```
 
-The `return 0` is the exit code of your program. `0` mean success, `not 0` means failure. You can use `EXIT_SUCCESS`/`EXIT_FAILURE` instead:
+The `return 0` is the exit code of your program. `0` means success, `not 0` means failure. You can use `EXIT_SUCCESS`/`EXIT_FAILURE` instead:
 
 ```c
 #include <stdlib.h>
@@ -249,7 +249,7 @@ You can pass arguments to your program.
 $ ./a.out "Hello" "World!"
 ```
 
-Use `argc` to know the number of arguments. `argv` is an array of strings (`char *`). There first argument is the path to your executable.
+Use `argc` to know the number of arguments. `argv` is an array of strings (`char *`). The first argument is the path to your executable.
 
 ```c
 int main(int argc, char* argv[]) {
@@ -268,7 +268,7 @@ int main(int argc, char* argv[]) {
 
 <div class="row row-cols-md-2"><div>
 
-A function is a bloc of code that was extracted from the `main` function, mostly to be reused, or to keep things clean.
+A function is a block of code that was extracted from the `main` function, mostly to be reused, or to keep things clean.
 
 <div class="row row-cols-md-2"><div>
 
@@ -313,11 +313,11 @@ int square(int v) {
 
 Every variable is stored at some location inside the memory. 
 
-When calling a function with some variables, they are passed by value, meaning they are **copied** 🤢, and if the new function edit them, the original with remain unchanged 🚫.
+When calling a function with some variables, they are passed by value, meaning they are **copied** 🤢, and if the new function edits them, the original will remain unchanged 🚫.
 
 To avoid losing memory because of copies 🔥, or to allow a function to edit a variable passed to it ✨, you can use pointers 🍀.
 
-A **pointer** is a variable holding the address of another variable. 
+A **pointer** is a variable that holds the address of another variable. 
 
 * ➡️ A pointer has a fixed size in memory
 * ➡️ A pointer can read/edit the value of the original variable
@@ -344,7 +344,7 @@ printf("%p\n", &b); // 0xXXX
 printf("%p\n", &(*a)); // same, 0xXXX
 ```
 
-Without a pointer, `a` is still equals to `0` after `f(a)`.
+Without a pointer, `a` still equals to `0` after `f(a)`.
 
 ```c
 void f(int a) { a++; }
@@ -435,7 +435,7 @@ int first = *(a+0); // same as a[0]
 
 #### Dynamic arrays
 
-Usual arrays have a fixed length. You can use `malloc` to create a pointer to an array of `n` elements.
+Normal arrays have a fixed length. You can use `malloc` to create a pointer to an array of `n` elements.
 
 ```c
 int n = 10;
@@ -527,7 +527,7 @@ Person toto = { "Toto", 18 };
 Person toto = { .name = "Toto", .age = 18 };
 ```
 
-**Private structures**: this is a technique in which we do not allow someone to know how the structure is defined. We will only expose the name of the structure, along with methods to use our structure.
+**Private structures**: this is a technique in which we do not allow someone to know how the structure is defined. We will only expose the name of the structure, along with methods to use it.
 
 <details class="details-e">
 <summary>Example of code with Person</summary>
@@ -586,17 +586,17 @@ inline int get_person_age(Person* person) {
 
 #### stdout, stderr, stdin
 
-A stream is a buffer (array) where we can read/write data from a source. There are 3 known streams that are always open
+A stream is a buffer (array) where we can read/write data from a source. There are three known streams that are always open
 
 * `stdin`/`0`: read input from the terminal
 * `stdout`/`1`: the standard output of the terminal
 * `stderr`/`2`: the error output of the terminal
 
-➡️ All of these are stream of characters.
+➡️ All of these are streams of characters.
 
 #### files
 
-To open a stream to a file, use `fopen`. You must close it after use.
+To open a stream to a file, use `fopen`. You must close it after using it.
 
 ```c
 FILE* f = NULL;
@@ -610,7 +610,7 @@ if ((f = fopen("file.txt", "r")) == NULL) {
 fclose(f);
 ```
 
-Note that when reading/writing in a file, you are moving a **cursor**. The cursor initial location is determined by the mode used when opening the file.
+Note that when reading/writing in a file, you are moving a **cursor**. The cursor's initial location is determined by the mode used when opening the file.
 
 * `r`: read-only, cursor at the start
 * `w`: write-only, clear the file, cursor at the start
@@ -689,7 +689,7 @@ write(1, "Hello, World", (12+1) * sizeof(char));
 
 <div class="row row-cols-md-2"><div>
 
-You can move the declaration of functions/types to another file, called header, such as `main.h`. Other files will only be able to use what you declared inside these.
+You can move the declaration of functions/types to another file, called header, such as `main.h`. Other files will only be able to use what you declared inside them.
 
 ```c
 #ifndef MAIN_H
@@ -708,7 +708,7 @@ In another file, you should use import with `""` to import it.
 ```
 </div><div>
 
-To compile, you must do it in two steps. This step will generated two files: `main.o` and `other.o`.
+To compile, you must do it in two steps. This step will generate two files: `main.o` and `other.o`.
 
 ```ps
 $ gcc -c main.c main.h other.c

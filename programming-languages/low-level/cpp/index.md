@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-The C++ programming language is a middle-level language which is build on top of the [C](/_programming/code/c/index.md) ([compatibility](https://en.wikipedia.org/wiki/Compatibility_of_C_and_C%2B%2B;)), with additional features.
+The C++ programming language is a middle-level language that is built on top of the [C](/programming-languages/low-level/c/general/index.md) ([compatibility](https://en.wikipedia.org/wiki/Compatibility_of_C_and_C%2B%2B;)), with additional features.
 
 You will create a file with the `.cpp` extension, for instance, `main.cpp`
 
@@ -37,7 +37,7 @@ Hello World
 
 ## Basics
 
-*This assume that you're already familiar with the language C.*
+*This assumes that you're already familiar with the language C.*
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -74,7 +74,7 @@ int xxx = int('c'); // the constructor (if any)
 
 #### References
 
-**Reminder**: in C, parameters of a function are passed by value. We could use pointers to allow a function to edit a variable from the outer scope. In C++, we could use references instead of pointers.
+**Reminder**: in C, the parameters of a function are passed by value. We could use pointers to allow a function to edit a variable from the outer scope. In C++, we could use references instead of pointers.
 
 <div class="row row-cols-md-2"><div>
 
@@ -181,7 +181,7 @@ int& abc(int& a, int b, float c) {}
 
 #### Overloading
 
-Overloading (`surchage`) mean having multiple function with the same name, but a different signature.
+Overloading (`surchage`) means having multiple functions with the same name, but a different signature.
 
 * ❌ The return type DOES NOT matter
 * ❌ The name of the arguments DOES NOT matter
@@ -296,7 +296,7 @@ private:
 ```
 </div><div>
 
-We can create public, private, and protected groups in which we will declare attribute and methods.
+We can create public, private, and protected groups in which we will declare attributes and methods.
 
 ➡️ You can use multiple times the same modifier to make your declaration clean and tidy.
 </div></div>
@@ -309,14 +309,14 @@ private: // usually private
     float x;
     float y = 1.0; // 👉 default value
     static int ZZZ; // 👉 class attribute
-    static const int TTT = 200; // 👉 class constant
+    static const int TTT = 200; // 👉 class constants
 };
 // 🎯 to initialize a class attribute,
 // you must add after the declaration:
 int XXX::ZZZ = 0;
 ```
 
-➡️ Attributes without a default values must be initialized in a constructor, unless they have a default constructor.
+➡️ Attributes without a default value must be initialized in a constructor, unless they have a default constructor.
 </div><div>
 
 #### Methods
@@ -344,7 +344,7 @@ void XXX::ddd() { std::cout << x; }
 
 #### Constructors
 
-Every class has a public, parameterless constructor called **default constructor**. Explicitely adding a constructor will delete it.
+Every class has a public, parameterless constructor called **default constructor**. Explicitly adding a constructor will delete it.
 
 ```cpp
 struct XXX {
@@ -356,7 +356,7 @@ public:
 
 ➡️ Note that when entering the body of the constructor, parameters were already initialized once.
 
-🧼 For an empty constructors with no initialization list, use `XXX() = default;` instead of an empty body.
+🧼 For an empty constructor with no initialization list, use `XXX() = default;` instead of an empty body.
 
 🧼 Use `explicit` for constructors with one argument, to avoid implicit casting such as:
 
@@ -493,7 +493,7 @@ bool operator>( const XXX &a, const XXX &b ) {
 
 ➡️ If you declared operators inside a namespace in a header file, you must use `ns::operator>` to reference `operator>` inside the namespace `ns`.
 
-➡️ Note that by default, `||` has a higher priority than `&&`, but if you overload the operator, it will loose this priority.
+➡️ Note that by default, `||` has a higher priority than `&&`, but if you overload the operator, it will lose this priority.
 </details>
 
 <details class="details-n">
@@ -525,7 +525,7 @@ std::cout << XXX(5); // XXX{ x=5 }
 Inheritance (`héritage`) is allowing us to extend another class/struct.
 
 * ➡️ Multiple inheritance is possible, but conflicts must be handled
-* ➡️ The inheritance modifier determine how child class behave
+* ➡️ The inheritance modifier determines how child classes behave
 
 #### Inheritance modifier
 
@@ -542,9 +542,9 @@ struct TTT : private XXX {}; // xxx is private
 
 ➡️ Inheritance (by default): `public` for structs and `private` for classes.
 
-➡️ Inside a method, to explicitely access something from the parent such as `xxx` in the example above, use `XXX::xxx` <small>("super" in Java/...)</small>.
+➡️ Inside a method, to explicitly access something from the parent such as `xxx` in the example above, use `XXX::xxx` <small>("super" in Java/...)</small>.
 
-➡️ If a class is used in multiple inheritance, you may use `YYY : virtual public XXX` if the class extends two classes with the same parent `XXX`, to avoid problems with duplicates.
+➡️ If a class is used in multiple inheritances, you may use `YYY : virtual public XXX` if the class extends two classes with the same parent `XXX`, to avoid problems with duplicates.
 
 #### Constructors and Destructors
 
@@ -565,7 +565,7 @@ Destructors are called in the reverse order, from child to parent 🔄.
 
 Use `virtual` to allow the child class to `override` the code of a method declared in the parent class. 
 
-If the parent call a `virtual` method, and the child `override` this method, then the method in the child will be called.
+If the parent calls a `virtual` method, and the child `override` this method, then the method in the child will be called.
 
 ```cpp
 struct Parent {
@@ -584,7 +584,7 @@ std::cout << xxx.Parent::x(); // 1
 
 #### Liskov Substitution Principle
 
-As a child class inherit everything from it's parent, if a method requires the parent class, then we can pass a child class.
+As a child class inherits everything from its parent, if a method requires the parent class, then we can pass a child class.
 
 ```cpp
 Parent xxx = Child(); // we can store Child inside Parent
@@ -594,7 +594,7 @@ Parent xxx = Child(); // we can store Child inside Parent
 
 #### Abstract classes
 
-A class is abstract is there are still abstract methods in it.
+A class is abstract if there are still abstract methods in it.
 
 ```cpp
 struct Parent {
