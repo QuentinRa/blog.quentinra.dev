@@ -186,6 +186,18 @@ An **SQLite** database is a file such as `users.db`.
 * List tables 🧊: `.tables`
 * List columns 🫕: `PRAGMA table_info(some_table);`
 * Schema: `select sql from sqlite_master`
+
+**Redis** is an in-memory key-value database. It runs on port `6379` by default 🐲. Install it with: `sudo apt install redis-tools`. [Docs](https://redis.io/commands/).
+
+```shell!
+$ redis-cli [-h host] [-p port]
+host:port> help             # list commands
+host:port> info             # get information
+host:port> keys *           # list keys
+host:port> get some_key     # get some value
+host:port> set key value    # set some value
+...
+```
 </div></div>
 
 <hr class="sep-both">
@@ -218,18 +230,6 @@ CREATE VIEW viewName [ Attributes ] AS sqlRequest WITH CHECK OPTION
 -- delete
 DROP VIEW viewName
 ```
-</details>
-
-<details class="details-n">
-<summary>Redis</summary>
-
-* Redis 6379/tcp in-memory db
-* redis-cli `sudo apt install redis-tools` (-h host -p port)
-    * `10.129.15.139:6379> help`
-    * https://redis.io/commands/
-    * info (see version...)
-    * `keys *`
-    * `get flag`
 </details>
 
 <details class="details-n">

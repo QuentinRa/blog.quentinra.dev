@@ -4,10 +4,6 @@
 
 List of courses that have note which were not added yet.
 
-**Programming Languages > paradigm**
-
-* Programming
-
 **Programming Languages > Web**
 
 * Jekyll/pages
@@ -15,7 +11,6 @@ List of courses that have note which were not added yet.
 **Programming Languages > Databases**
 
 * PLSQL
-* Redis
 * NoSQL
 * MongoDB
 * Cypher
