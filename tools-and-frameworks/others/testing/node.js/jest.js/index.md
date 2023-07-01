@@ -37,7 +37,7 @@ Usually, all tests are in a folder `__tests__`, and you will have multiple of th
 
 ## Expect.js
 
-Jest used a alternative syntax of expect.
+Jest uses an alternative syntax of expect.
 
 <div class="row row-cols-md-2"><div>
 

@@ -2,12 +2,12 @@
 
 <div class="row row-cols-md-2"><div>
 
-[PHPUnit](https://phpunit.de/index.html) is a unit testing framework, such as [JUnit](../../java/junit/index.md) in Java.
+[PHPUnit](https://phpunit.de/index.html) is a unit testing framework, similar to [JUnit](../../java/junit/index.md) in Java.
 
 * 📚 [Documentation](https://phpunit.de/documentation.html)
 * 🦄 [GitHub](https://github.com/sebastianbergmann/phpunit) (19k ⭐)
 
-You will define classes with one or more tests (`TestCase`) that uses assertions that check that a condition is valid or raise an error.
+You will define classes with one or more tests (`TestCase`) that use assertions that check that a condition is valid or raise an error.
 </div><div>
 
 You can install PHPUnit using composer

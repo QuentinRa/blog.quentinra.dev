@@ -2,9 +2,9 @@
 
 <div class="row row-cols-md-2"><div>
 
-CAS (Central Authentication Service) is an open-source SSO protocol to authenticate users across multiple webservices.
+CAS (Central Authentication Service) is an open-source SSO protocol to authenticate users across multiple web services.
 
-If a client try to access to protected resource, they are redirect to the authentication page. Once logged, CAS will redirect the user with a ticket allowing the service to verify the identity of the user.
+If a client tries to access a protected resource, they are redirected to the authentication page. Once logged in, CAS will redirect the user with a ticket, allowing the service to verify the identity of the user.
 
 </div><div>
 

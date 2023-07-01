@@ -11,7 +11,7 @@ $ npm i mocha
 The two main components are
 
 * 📦 **describe** which is a suite of tests <small>(it)</small>
-* 🛠️ **it** which is a function making tests
+* 🛠️ **it** which is a test
 
 To run your tests
 
@@ -41,7 +41,7 @@ describe('Some tests', function() {
 })
 ```
 
-Inside your `it` blocs, you will use a testing framework
+Inside your `it` blocks, you will use a testing framework
 
 * [Assert.js](#assertions-with-assert)
 * [Chai.js](https://github.com/chaijs/chai) (7.8k ⭐)
@@ -53,7 +53,7 @@ Inside your `it` blocs, you will use a testing framework
 
 ## Basics
 
-Some additional notes about features that mocha has to offer.
+Some additional notes about the features that mocha has to offer.
 
 <div class="row row-cols-md-2"><div>
 
@@ -143,7 +143,7 @@ let assert = require('assert');
 ```javascript
 it('name', function () {
     // examples
-    assert.equal(actuel, expected);
+    assert.equal(actual, expected);
     assert.ok(boolean);
     assert.fail();
 });

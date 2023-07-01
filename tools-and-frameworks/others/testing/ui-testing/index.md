@@ -20,7 +20,7 @@
 #### Test the compatibility/accessibility
 
 * Test that everything is properly localized <small>(if applicable)</small>
-* Test that there is no typos
+* Test that there are no typos
 * Test that new features don't break existing features
 * Test that everything is available in other browsers/...
 * Test the performances
