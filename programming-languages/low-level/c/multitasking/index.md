@@ -4,7 +4,7 @@
 
 By default, a program can only do one thing at a time. There are many cases when we want to do multiple tasks in parallel.
 
-* 🪄 Splitting long tasks in subtasks executed in parallel
+* 🪄 Splitting long tasks into subtasks executed in parallel
 * 🚀 Running multiple tasks in parallel
 * 👉 Using another program to do a task
 
@@ -24,7 +24,7 @@ There are a few related topics:
 
 <div class="row row-cols-md-2"><div>
 
-A [process](/operating-systems/linux/architecture/index.md#processes-and-scheduling) is both a program, and it's environment.
+A [process](/operating-systems/linux/architecture/index.md#processes-and-scheduling) is both a program and its environment.
 
 * file descriptors <small>(file opened, position of the cursor...)</small>
 * variables and environment variables
@@ -71,7 +71,7 @@ int main() {
 
 #### Wait/Exit code
 
-Usually, we  want to know when our processes are done.
+Usually, we want to know when our processes are done.
 
 ```c
 #include <unistd.h> // fork
@@ -100,7 +100,7 @@ You can also use `while` as wait return `-1` if there is no one to wait for.
 while(wait(NULL) != -1);
 ```
 
-If you want to get the exit code <small>(ex: to check a child failed it's task)</small>
+If you want to get the exit code <small>(ex: to check if a child failed its task)</small>
 
 ```c
 // ➡️ replace "wait(NULL);" with:
@@ -112,7 +112,7 @@ if (WIFEXITED(status)) { // if exited
 }
 ```
 
-⚠️ Actually, `wait` is blocking the parent until a **signal** is received. This could be another signal than the exit one:
+⚠️ Actually, `wait` is blocking the parent until a **signal** is received. This could be another signal other than the exit one:
 
 * `WIFEXITED(status)`: process was killed
 * `WIFSIGNALED(status)`: process was killed (manually)
@@ -142,7 +142,7 @@ waitpid(-1, &status, 0);
 
 #### Signals
 
-When using <kbd>CTRL+C</kbd>, you're actually sending a signal to a program.
+When using <kbd>CTRL+C</kbd>, you're sending a signal to a program.
 
 * `code`: from 1 to 31 included
 * `function`: for instance, for 9 (kill): `exit(130)`.
@@ -168,8 +168,8 @@ int main() {
 You can use `kill` (the function/the command) to send a signal
 
 ```c
-// if pid = 0 then all process in our group
-// if pid = -1 then all process
+// if pid = 0 then all processes in our group
+// if pid = -1 then all processes
 // else send a signal to the one with <pid>
 int kill(pid_t pid, int signal_code);
 ```
@@ -237,7 +237,7 @@ int fd = mkfifo("filename", 0777);
 
 The code executed by a process can be replaced, for instance, if you want to run a command or another executable.
 
-We are using variants of the system call `exec`. If the process is successfully replace, then the code after the exec is NEVER called, otherwise, the `exec` functions will return `-1`.
+We are using variants of the system call "`exec`". If the process is successfully replaced, then the code after the exec is NEVER called, otherwise, the `exec` functions will return `-1`.
 
 ```c
 exec[...]([...]);
@@ -283,7 +283,7 @@ execle("ls", "ls", "-la", ".", NULL);
 
 #### `execv`: use an array instead of a list
 
-There are also variant: `execvp` and `execvpe`... like for `execl`.
+There are also variants: `execvp` and `execvpe`... like for `execl`.
 
 ```c
 // signature 🗺️
@@ -300,9 +300,9 @@ execv("/bin/ls", args);
 
 <div class="row row-cols-md-2"><div>
 
-Threads, also called "light processes" are similar to process, aside from the fact that they share a part of the parent environment 🪸.
+Threads, also called "light processes" are similar to processes, aside from the fact that they share a part of the parent environment 🪸.
 
-It means that a thread can modify a variable in the parent, and if the parent read the variable, they will see the updated value. This causes new problems related to concurrency 💥.
+It means that a thread can modify a variable in the parent, and if the parent reads the variable, they will see the updated value. This causes new problems related to concurrency 💥.
 
 To compile, you must use `-pthread` <small>("modern" `-lpthread`)</small> with `gcc`. 
 
@@ -310,7 +310,7 @@ To compile, you must use `-pthread` <small>("modern" `-lpthread`)</small> with `
 #include <pthread.h> // gcc [...] -pthread
 ```
 
-In a nutshell, a thread is running a function, and dies. The function is taking and returning something of type `void*`. This is because we can store any pointer such as a `int*` in a `void*`.
+In a nutshell, a thread is running a function, and dies. The function is taking and returning something of type `void*`. This is because we can store any pointer such as an `int*` in a `void*`.
 
 ```
 void *my_function(void *arg){
@@ -335,7 +335,7 @@ int arg = 5;
 pthread_create(&thread1, NULL, my_function, (void*) &arg);
 ```
 
-Similarly to process, we want for the thread to die, meaning it finished its task. We can do that using `pthread_join`:
+Similarly to processes, we want to wait for the thread to die, meaning it finished its task. We can do that using `pthread_join`:
 
 ```c
 // int pthread_join(pthread_t thread, void **code);
@@ -389,9 +389,9 @@ void *my_function(void *arg){
 
 #### Load balancing using semaphores
 
-If we have limited resources, we may want to allow up to `n` threads accessing the limited resource at the same time. We can do that using semaphores 🧋🫧.
+If we have limited resources, we may want to allow up to `n` threads to access the limited resource at the same time. We can do that using semaphores 🧋🫧.
 
-👉 Semaphores can be used for synchronisation too, and more...
+👉 Semaphores can be used for synchronization too, and more...
 
 ```c
 #include <semaphore.h>
@@ -428,18 +428,22 @@ void *my_function(void *arg){
 Conditions variables are used to stop executing a thread until a condition is true. You will need a mutex, and a condition variable:
 
 ```c
-// global variable 🗺️
+// global variables 🗺️
+pthread_mutex_t mutex = ...;
 pthread_cond_t cond;
+int n = 0; // current number of threads using the resource
 ```
 
 ```cpp
 void *my_function(void *arg){
     pthread_mutex_lock(&mutex);
-    while(a_condition)
+    while(n == 5) // a_condition
         pthread_cond_wait(&cond, &mutex);
-    
+
+    n++;
     // some code...
-    
+    n--;
+
     // 👉 Notify others to check the condition again
     pthread_cond_broadcast(&cond);
     pthread_mutex_unlock(&mutex);
@@ -449,11 +453,17 @@ void *my_function(void *arg){
 
 **Breakdown** 🍔
 
-Since multiple variable may read/edit the variable used in `a_condition`, we need a mutex.
+Since each thread may read/edit variables used in `a_condition`, we need a mutex.
 
-The condition is something that we define, such as `n != 5`. If the condition is true, `pthread_cond_wait` will unlock the mutex, and wait for a `pthread_cond_broadcast`.
+The condition is something that we define, such as `n == 5`. If the condition is true, `pthread_cond_wait` will unlock the mutex, and wait for `pthread_cond_broadcast`. 
 
-`pthread_cond_broadcast` is a method that we call to notify any waiting thread that they should wake up as `a_condition` may have changed. 
+It means we can't use the resource and wait ⏳.
+
+Otherwise, we can access the resource, and work on it. Once we are done, we need to tell others using `pthread_cond_broadcast` 📢.
+
+`pthread_cond_broadcast` is a method that we call to notify any waiting thread that they should wake up as `a_condition` may have changed.
+
+👉 The condition always changes, but not all threads may be able to access the resource once they wake up; some will go back to sleep.
 
 </div></div>
 
@@ -465,10 +475,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [old](_old.md)
 * `FILE* stream = fopen(FIFO_PATH, "r+");`
 * `dup/dup2/dup3`
-</div><div>
-
 * adding exercises from ens
+</div><div>
 </div></div>
