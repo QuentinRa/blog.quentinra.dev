@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[Elasticsearch](https://github.com/elastic/elasticsearch) (63.8k ⭐) is a RESTful open-sourge search engine with an API and clients in many languages.
+[Elasticsearch](https://github.com/elastic/elasticsearch) (63.8k ⭐) is a RESTful open-source search engine with an API and clients in many languages.
 
 You can install version 8.7 using [Docker](/operating-systems/others/virtualization/docker/index.md) as follows:
 
@@ -15,10 +15,10 @@ $ docker pull docker.elastic.co/kibana/kibana:8.7.0
 $ docker run --name kibana --net elastic -p 5601:5601 docker.elastic.co/kibana/kibana:8.7.0
 ```
 
-Note down the username/password and enrollment token. You can terminate both and start them again from docker desktop.
+Note down the username/password and enrollment token. You can terminate both and start them again from the docker desktop app.
 </div><div>
 
-Navigate to the URL prompted by Kibana: `http://localhost:5601/?code=xxxx` or `http://localhost:5601/` afterward. You can log in from there, and access elasticsearch dashboard.
+Navigate to the URL prompted by Kibana: `http://localhost:5601/?code=xxxx` or `http://localhost:5601/` afterward. You can log in from there, and access the elasticsearch dashboard.
 
 **API notes**
 
@@ -71,7 +71,7 @@ $client->index([
 ```
 </div><div>
 
-To search something, you can use `query.match` with `xxx` a key from the user-defined `body`.
+To search for something, you can use `query.match` with `xxx` a key from the user-defined `body`.
 
 ```php!
 $params = [

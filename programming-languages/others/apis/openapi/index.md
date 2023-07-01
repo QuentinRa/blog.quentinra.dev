@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[OpenAPI](https://swagger.io/specification/) is a wonderful project to create API or generate API documentation. You will define a specification, and you will be able to generate the server code in many languages <small>(ex: node server)</small>.
+[OpenAPI](https://swagger.io/specification/) is a wonderful project to create APIs or generate API documentation. You will define a specification, and you will be able to generate the server code in many languages <small>(ex: node server)</small>.
 
 Many API specifications are available [here](https://app.swaggerhub.com/search).
 
@@ -16,7 +16,7 @@ Many API specifications are available [here](https://app.swaggerhub.com/search).
 
 </div><div>
 
-Base template for a OAS3 <small>(OpenAPI Specification Version 3)</small> in YAML
+Base template for an OAS3 <small>(OpenAPI Specification Version 3)</small> in YAML
 
 ```yaml
 openapi: 3.0.3
@@ -40,7 +40,7 @@ paths:
 
 #### API Server-side code
 
-To generate a server from a specification, you can use [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator) (14.3k ⭐). See [Install](https://openapi-generator.tech/docs/installation).
+To generate a server from a specification, you can use the [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator) (16.9k ⭐). See [Install](https://openapi-generator.tech/docs/installation).
 
 ```
 # ex: generate nodejs-express-server inside gen from xxx.yaml
@@ -52,9 +52,9 @@ $ java -jar openapi-generator-cli.jar generate -g nodejs-express-server -i xxx.y
 
 #### Documentation
 
-I haven't tested other tools, but with the popular [Redoc](https://github.com/Redocly/redoc) (19.1k ⭐) you simply have to
+I haven't tested other tools, but with the popular [Redoc](https://github.com/Redocly/redoc) (20.4k ⭐) you simply have to
 
-* Copy the [following HTML](https://github.com/Redocly/redoc#deployment) on your web server
+* Copy the [following HTML](https://github.com/Redocly/redoc#deployment) to your web server
 * Replace the URL with the link to your YAML file
 
 And you're done. See [Redoc quick start](https://redocly.com/docs/redoc/quickstart/).
@@ -66,7 +66,7 @@ And you're done. See [Redoc quick start](https://redocly.com/docs/redoc/quicksta
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-A schema is a definition of something. It's pretty much like a class in Oriented object programming. 7 types are supported which are `string`, `array`, `object`, `boolean`, `integer`, `number`, and `null`.
+A schema is a definition of something. It's pretty much like a class in [oriented-object programming](/programming-languages/_paradigm/oo.md#classes-and-objects). 7 types are supported which are `string`, `array`, `object`, `boolean`, `integer`, `number`, and `null`.
 
 <div class="row row-cols-md-2"><div>
 
@@ -261,7 +261,7 @@ paths:
 
 Another block always seen in many responses, bodies, or parameters is **content**.
 
-A content is a set of content-types <small>(ex: json)</small> with their associated schema <small>(ex: PersonJSON)</small>.
+The "content" is a set of content-types <small>(ex: JSON)</small> with their associated schema <small>(ex: PersonJSON)</small>.
 </div><div>
 
 ```yaml
@@ -284,7 +284,7 @@ content:
 
 #### Parameters
 
-A query is a parameter in the URL. This is usually used for GET parameters.
+A query is a parameter in the URL. This is usually used in a GET request "parameters" section.
 
 ```yaml
 paths:

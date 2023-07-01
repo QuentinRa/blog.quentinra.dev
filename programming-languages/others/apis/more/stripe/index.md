@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-Stripe is a payment API. You can use it on websites, or mobiles, and you can use your own interface, or theirs.
+Stripe is a payment API. You can use it on websites, or mobiles devices, and you can use your own interface, or theirs.
 
 * [API documentation](https://stripe.com/docs)
 * [API reference](https://stripe.com/docs/api)
@@ -122,11 +122,11 @@ class MainApplication : Application() {
 
 **Create a payment intent** (server-side)
 
-You need to create a [PaymentIntent](https://stripe.com/docs/api/payment_intents/create?lang=node) server-side. In Stripe response, you will get a **client_secret** that must be sent to the client.
+You need to create a [PaymentIntent](https://stripe.com/docs/api/payment_intents/create?lang=node) server-side. In the Stripe response, you will get a **client_secret** that must be sent to the client.
 
 </div><div>
 
-Finally, add this code to the activity with the payment button. You will typically call **init** at the start, **show** when the pay button was pressed.
+Finally, add this code to the activity with the payment button. You will typically call **init** at the start, **show** when the pay button is pressed.
 
 ⚠️ You need to fetch the payment intent from your API. See [Internet](/_programming/web/android/internet/index.md).
 

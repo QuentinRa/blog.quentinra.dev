@@ -151,7 +151,7 @@ Stuff that I found, but never read/used yet.
 
 * REST/RESTful/[REST API guidelines](https://github.com/controlook-zz/standards/blob/master/backend/rest-api-guidelines.md)
   * stateless (do not use previous requests)
-  * uniform (ex: json for all responses)
+  * uniform (ex: JSON for all responses)
   * multiple requests to get one resource (disadvantage)
 * [GraphQL](https://graphql.org/) ([article on best practices](https://stepzen.com/blog/designing-graphql-apis-best-practices-and-learnings-from-rest-api-design))
 </div><div>
