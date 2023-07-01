@@ -23,7 +23,7 @@ $ sudo apt-get install vim
 Learn vim 📚
 
 * `vimtutor`: a command-line course <small>(~30 minutes)</small>
-* [vimsheet](https://vimsheet.com/) or [rtorr](https://vim.rtorr.com/): some vim cheatsheets
+* [vimsheet](https://vimsheet.com/) or [rtorr](https://vim.rtorr.com/): some vim cheat sheets
 </div></div>
 
 <hr class="sep-both">
@@ -39,9 +39,9 @@ The current one is shown at the bottom left of the screen.
 * `VISUAL` : [...]
 </div><div>
 
-To exit VIM, you need to be in the command mode. Press <kbd>ESC</kbd> <small>(at least once)</small> to go back to it. Then, press `:` followed by the exit without saving command: `q!`. 👉 See the command section.
+To exit VIM, you need to be in command mode. Press <kbd>ESC</kbd> <small>(at least once)</small> to go back to it. Then, press `:` followed by the exit without saving command: `q!`. 👉 See the command section.
 
-🦄 Not panicking in the key to success. Being trapped in VIM is a popular gag/meme, see these trolls: [how-to-exit-vim](https://github.com/hakluke/how-to-exit-vim) and [VimKiller](https://github.com/caseykneale/VIMKiller).
+🦄 Not panicking is the key to success. Being trapped in VIM is a popular gag/meme, see these trolls: [how-to-exit-vim](https://github.com/hakluke/how-to-exit-vim) and [VimKiller](https://github.com/caseykneale/VIMKiller).
 </div></div>
 
 <hr class="sep-both">
@@ -52,7 +52,7 @@ To exit VIM, you need to be in the command mode. Press <kbd>ESC</kbd> <small>(at
 
 You can configure your editor by creating a file `~/.virmrc`. You can find useful configurations online. Look for `dotfiles vim`.
 
-You can also add plugins to vim such as [ale](https://github.com/dense-analysis/ale) for IDE-like features.
+You can also add plugins to Vim such as [ale](https://github.com/dense-analysis/ale) for IDE-like features.
 
 <details class="details-n">
 <summary>Add ALE to VIM</summary>
@@ -66,7 +66,7 @@ git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-pl
 * `sudo apt-get install vim-runtime`
 * `sudo apt-get install vim-gui-common`
 
-Using CTRL+P, you got autocompletion.
+Using CTRL+P, you now have autocompletion.
 </details>
 </div><div>
 
@@ -98,7 +98,7 @@ To switch to the INSERTION mode in which you can edit the file:
 
 #### Move the cursor
 
-🎯 You must be in the command mode.
+🎯 You must be in command mode.
 
 <div class="row row-cols-md-2"><div>
 
@@ -158,8 +158,8 @@ You can use `CTRL-F`/`CTRL-B` to go down/up one screen.
 
 #### Search
 
-* `/mot`: search (Descending)
-* `?mot`: search (Ascending)
+* `/mot`: search (descending)
+* `?mot`: search (ascending)
 * `n`: next occurrence
 * `N`: previous occurrence
 * `%symbol`: return the matching symbol
@@ -173,9 +173,9 @@ You can use `CTRL-F`/`CTRL-B` to go down/up one screen.
 
 #### Replace
 
-* `:s/old/new`: replace `old` by `new`
+* `:s/old/new`: replace `old` with `new`
 * `:s/old/new/g`: same, for all lines
-* `:s/old/new/gc`: same but ask confirmation before
+* `:s/old/new/gc`: same but ask for confirmation before
 * `:n,ms/old/new/g`: same but only n to m lines
 
 Apply an operation before switching to the INSERTION mode:
@@ -186,8 +186,8 @@ Apply an operation before switching to the INSERTION mode:
 
 Can only be used in command mode:
 
-* `r`: replace character under the cursor
-* `R`: replace characters while ESC not pressed
+* `r`: replace the character under the cursor
+* `R`: replace characters while ESC is not pressed
 </div></div>
 
 <hr class="sep-both">
@@ -208,7 +208,7 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * `:!`: execute a command
-* `:f nom`: rename file
+* `:f nom`: rename a file
 * `:e fichier`: open another file
 * `:r fichier`: print and insert file
 * `:!gcc`:  compile inside vim
