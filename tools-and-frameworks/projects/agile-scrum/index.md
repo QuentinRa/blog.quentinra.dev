@@ -67,12 +67,12 @@ They are the people doing the work. This is usually a team of 3 to 9 people, but
 
 The Scrum master **makes sure that the developers** <small>(the product owner, and the company too)</small> **are only focusing on their jobs**, and not on applying Scrum. He should **organize (or sometimes facilitate) meetings**, **support the team**, **manage the tools**, do **reporting**, **deal with blockers**, and **"timeboxing"** <small>(a meeting shouldn't last more than it was supposed to)</small>  so that the project is going smoothly.
 
-The Scrum Master is an expert in Scrum, and they must **ensure that Scrum is used properly**, but if the team agrees on changing something, they must be **open to changes** (as he/she follows the principles and values of Scrum).
+The Scrum Master is an expert in Scrum, and they must **ensure that Scrum is used properly**, but if the team agrees on changing something, they must be **open to changes** (as they follows the principles and values of Scrum).
 
 <details class="details-e">
 <summary>Random notes</summary>
 
-(1) Do not ask the intern to grab some cakes, or some coffee, that's the Scrum master's job 🤩 <small>(joke aside, he/she may)</small>.
+(1) Do not ask the intern to grab some cakes, or some coffee; that's the Scrum master's job 🤩 <small>(joke aside, they may)</small>.
 
 (2) The Scrum master may be a member of the dev team, and it may rotate through the team.
 
@@ -133,7 +133,7 @@ The main goal of the **Sprint Planning** is to decide your **Sprint goal**. Your
 * **Duration**: up to 4 hours/4 weeks
 </div></div>
 
-The Product Owner is **proposing a goal**, and the **items** of the **product backlog** that you may do.  The dev team is picking items (=>value for the client, effort), explicitly defining when they are considered to be "done" (doc? tests?), in the **sprint backlog**. You need to have a clear idea of **what makes the sprint successful**, and how you will achieve the **sprint goal**. He/She will redact **two of Scrum's artifacts**:
+The Product Owner is **proposing a goal**, and the **items** of the **product backlog** that you may do.  The dev team is picking items (=>value for the client, effort), explicitly defining when they are considered to be "done" (doc? tests?), in the **sprint backlog**. You need to have a clear idea of **what makes the sprint successful**, and how you will achieve the **sprint goal**. They will redact **two of Scrum's artifacts**:
 
 <div class="row row-cols-md-2"><div>
 
@@ -144,7 +144,7 @@ The **Product backlog**, is a sort of project specification (`cahier des charges
 <details class="details-e">
 <summary>User Stories and Epics</summary>
 
-A **User Story** (**US**) is a text describing a task from the point of view of a user. Ideally, we would only have user stories, but there are always some other stories (technical/...) that are popping up. An **Epic** is a group of **stories** <small>(mostly US)</small> that are "similar" <small>(ex: all stories related to the user management)</small>. You got stories about
+A **User Story** (**US**) is a text describing a task from the point of view of a user. Ideally, we would only have user stories, but there are always some other stories (technical/...) that are popping up. An **Epic** is a group of **stories** <small>(mostly US)</small> that are "similar" <small>(ex: all stories related to the user management)</small>. There are stories about:
 
 * **features** (functional)
 * **bugs** (technical)
@@ -182,12 +182,12 @@ You should ask the client about priorities and suggest priorities too, since som
 <details class="details-e">
 <summary>Estimation of the complexity</summary>
 
-You need to evaluate how much **complex** a task is (or how much **effort** it will require). We are not evaluating the duration like in non-agile projects.
+You need to evaluate how **complex** a task is (or how much **effort** it will require). We are not evaluating the duration like in non-agile projects.
 
 * You may **compare tasks** and sort them by difficulty.
-* You can give a value among a fixed list (`0, 1/2, 1, 2, 3, 5, 8, 13, 20, 40, 100, ?, inf.`) to each task. The average/median value may be used as an answer.
+* You can assign a value from a fixed list (`0, 1/2, 1, 2, 3, 5, 8, 13, 20, 40, 100, ?, inf.`) to each task. The average or median value may be used as an answer.
 
-If you got outliers (`valeurs abérantes`) such as (almost) everyone gave "10", one gave "5", and one gave "20", then it would be a good idea to ask them **why** they gave this value (maybe they thought of something others didn't).
+If you have outliers (`valeurs abérantes`), such as everyone giving a rating of "10", except for one person who gave "5" and another who gave "20", it would be beneficial to inquire about the reasons behind their choices. They may have considered something that others overlooked.
 
 > You should learn from your previous estimates. You may pick a previous task and use it as a reference.
 </details>
@@ -213,13 +213,13 @@ You may create a table, in which each row is a story. You may group them by epic
 <details class="details-e">
 <summary>Notes</summary>
 
-* Entries of the product backlog are also called **items**.
+* Entries in the product backlog are also called **items**.
 
 * Sometimes, the backlog may become too big, so you may remove the less important tasks, and label them as **"out of scope"** <small>(such as Could/Would, or tasks that do not impact the sprint goal if they are removed)</small>
 
 * Reviewing the backlog is sometimes called backlog **grooming** (or refinement)
 
-* Usually, the Product Owner and the Scrum Master are preparing the Product backlog **before** the meeting.
+* Usually, the Product Owner and the Scrum master prepare the Product backlog **before** the meeting.
 </details>
 </div><div>
 
@@ -227,7 +227,7 @@ You may create a table, in which each row is a story. You may group them by epic
 
 The **Sprint backlog** is a list of tasks that the **dev team** took from the product backlog. These are the **tasks that they are planning to do during the sprint**. Tasks are split into smaller tasks, each ideally taking a few hours and up to one day to be marked as "done".
 
-Each developer is taking tasks according to their **capacity**. This is the sum of the **complexity** of tasks they picked in the previous sprint.
+Each developer takes on tasks according to their **capacity**. This is the sum of the **complexity** of the tasks they picked up in the previous sprint.
 
 <details class="details-e">
 <summary>Whiteboard</summary>
@@ -238,7 +238,7 @@ We are using the famous **whiteboard**, with the following columns
 * **In-progress** (`En cours`): working on it
 * **Done** (`Terminé/Fini`): done
 
-Your goal is to move all of your cards in **Done**. You should add on each card the person that will do the task.
+Your goal is to move all of your cards to **Done**. You should add to each card the name of the person who will do the task.
 
 ![Source: scrum.org](_images/SprintBacklog.png)
 
@@ -282,13 +282,15 @@ Here is an example with the main page of a desktop application
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-Check the **progress**. What each one did **yesterday**, what are they planning to do **today**. Identify **blockers** and **challenges**. The purpose is **informative**, a sort of coffee break 🍵 (`pause café`). If you don't drink coffee, maybe chatting while playing a game might be a new way of approaching this (ball ⚾, cards 🃏, etc.). Everyone is supposed to stand up (`rester debout`) 👍 as this shouldn't last long.
+Check the **progress**. What each one did **yesterday**, what they are planning to do **today**. Identify **blockers** and **challenges**. The purpose is **informative**, a sort of coffee break 🍵 (`pause café`). If you don't drink coffee, maybe chatting while playing a game might be a new way of approaching this (ball ⚾, cards 🃏, etc.). Everyone is supposed to stand up (`rester debout`) 👍 as this shouldn't last long.
 
 * You can use **Round Robin**: everyone is answering three questions (yesterday? today? blockers?)
 
-* You can use the **Board-based** method (**walking the board**): from the **right** to the left, ask for each task info about it
+* You can use the **Board-based** method (**walking the board**): from the **right** to the left, ask for information about each task.
 
-* Some are using a token to the one talking (ex: ball ⚾), the person talking will throw the ball to the next person with the constraint of the next one not being their neighbor in the circle.
+* Some utilize a prop, such as a ball ⚾, which is held up by the one talking. They pass it on to the next person with the condition that the recipient should not be their immediate neighbor in the circle.
+
+* Some are using a token given to the one talking (ex: ball ⚾). They will give it to the next person with the constraint of the next one not being their neighbor in the circle.
 </div><div>
 
 * **Involves**: SM, Dev. team, PO?
@@ -297,7 +299,7 @@ Check the **progress**. What each one did **yesterday**, what are they planning 
 <br>
 <p class="text-center">🪙 My two cents 🪙</p>
 
-**As a Scrum master**, try to relay as much as possible information in your group. It may be a good idea to have a **one-to-one talk** with each member, once a day/[...]. This may help them think of new ways of doing something, improve their documentation/comments, think of new tests, and hopefully broaden both your and their horizons.
+**As a Scrum master**, try to relay as much as possible to your group. It may be a good idea to have a **one-on-one talk** with each member, once a day/[...]. This may help them think of new ways of doing something, improve their documentation/comments, think of new tests, and hopefully broaden both your and their horizons.
 </div></div>
 
 <hr class="sep-both">
@@ -306,7 +308,7 @@ Check the **progress**. What each one did **yesterday**, what are they planning 
 
 <div class="row row-cols-md-2"><div>
 
-At the end of the iteration, you must **demonstrate** to the client (and your team sometimes) **what you did**, and the items you completed (also talk about what you planned, but didn't make). Take note of what the client wants to **review** in **the product backlog**.
+At the end of the iteration, you must **demonstrate** to the client (and sometimes your team) **what you did**, and the items you completed (also talk about what you planned, but didn't make). Take note of what the client wants to **review** in **the product backlog**.
 
 Each developer may **demonstrate** what they did (and why?), but do not make it too long, like 5 minutes per person. Do not forget to talk about **key metrics**: you are making a software/website/... for customers, check that it is usable/...
 </div><div class="align-self-center">
@@ -314,7 +316,7 @@ Each developer may **demonstrate** what they did (and why?), but do not make it 
 * **Involves**: PO, SM, Dev. team, the client/users
 * **Duration**: up to 4 hours/4 weeks
 
-Some organizations are making a weekly demo with the team, so that everyone knows what the others are doing, understands a bit more about what they need to do, and keeps track of what the client wants.
+Some organizations do a weekly demo with the team, so that everyone knows what the others are doing, understands a bit more about what they need to do, and keeps track of what the client wants.
 </div></div>
 
 <hr class="sep-both">
@@ -323,7 +325,7 @@ Some organizations are making a weekly demo with the team, so that everyone know
 
 <div class="row row-cols-md-2"><div>
 
-At the end of the iteration, identify the areas of improvement. Find **what didn't work well** and of course **what worked well**.
+At the end of the iteration, identify the areas for improvement. Find out **what didn't work well** and, of course, **what worked well**.
 
 * tools (`outils/logiciels`)
 * peoples
@@ -335,7 +337,7 @@ At the end of the iteration, identify the areas of improvement. Find **what didn
 * **Involves**: PO <small>(may not be here)</small>, SM, Dev. team
 * **Duration**: up to 3 hours/4 weeks
 
-You must select **one thing** and focus on it. Focusing on one is making sure that I least one thing will improve per sprint. You might write an **action plan** of what to do.
+You must select **one thing** and focus on it. Focusing on one thing means making sure that I least one thing will improve per sprint. You might write an **action plan** of what to do.
 
 **Note**: You can do this retrospective in the middle of a sprint.
 </div></div>
@@ -346,9 +348,9 @@ You must select **one thing** and focus on it. Focusing on one is making sure th
 
 <div class="row row-cols-md-2"><div>
 
-The following are ways used to check the progress, or the key indicators of your project.
+The following are ways to check the progress or get key indicators of your project.
 
-* **R.O.T.I** (Return of time invested)
+* **R.O.T.I** (return of time invested)
 
 Ask your team, how much a meeting was useful 
 
@@ -361,9 +363,9 @@ Ask your team, how much a meeting was useful
 
 * **Velocity**
 
-The velocity is the capacity of your team. This is not a value comparable with other teams/projects. This is the **sum of the complexity of the tasks your team took**. You should use it to not take too many stories <small>(both per person and per group)</small>. This value will converge after some iterations. You should usually keep a 10% margin <small>(meetings, technical debt, quality, etc.)</small>.
+The velocity is the capacity of your team. This is not a value comparable to other teams/projects. This is the **sum of the complexity of the tasks your team took on**. You should use it to not take too many stories <small>(both per person and per group)</small>. This value will converge after some iterations. You should usually keep a 10% margin <small>(meetings, technical debt, quality, etc.)</small>.
 
-You may use a **Burndown chart** (or the **Burnup chart**) to represent this graphically.
+You may use a **burn-down chart** (or a **burn-up chart**) to represent this graphically.
 </div></div>
 
 <hr class="sep-both">
