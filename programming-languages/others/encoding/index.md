@@ -5,9 +5,9 @@
 
 <div class="row row-cols-md-2"><div>
 
-Encoding 🖼️️ is a way of presenting data. Unlike encryption 🔒, anyone that can identify the algorithm used can decode the message.
+Encoding 🖼️️ is a way of presenting data. Unlike encryption 🔒, anyone who can identify the algorithm used can decode the message.
 
-A radix or a base is a number of unique digits that we can use to encode a message. The most well-known ones are
+A radix, or base, is a set of unique characters that we can use to encode a message. The most well-known ones are
 
 * binary <small>(radix 2, $[0-1]$)</small>
 * octal <small>(radix 8, $[0-7]$)</small>
@@ -21,7 +21,7 @@ A radix or a base is a number of unique digits that we can use to encode a messa
 
 **Some common rules** 📌
 
-* In a $radix\ n$, values goes from $0$ to $n-1$
+* In a $radix\ n$, values go from $0$ to $n-1$
 * After 9, we are using letters
 * After 35, we are using symbols
 * ...
@@ -43,7 +43,7 @@ A radix or a base is a number of unique digits that we can use to encode a messa
 
 <div class="row row-cols-md-2"><div>
 
-The division by base is a simple and straightforward way to convert number from any base to any base.
+Division by base is a simple and straightforward way to convert numbers from one base to another.
 
 * $a = \text{your_number}$
 * $n = \text{your_radix}$
@@ -54,7 +54,7 @@ The division by base is a simple and straightforward way to convert number from 
 
 The output is a set of $r_i$. You may have to convert them. For instance, $15$ will be converted to $F$. The final value is the concatenation of every $r_i$ **in the reverse order** (from the last to the first).
 
-➡️ There are other techniques such as
+➡️ There are other techniques.
 </div><div>
 
 **Example** 🔥
@@ -72,7 +72,7 @@ The output is a set of $r_i$. You may have to convert them. For instance, $15$ w
     * $r_3 = 1\ mod\ 15 = 1$
     * exit, $a$ is now 0
 
-Then we are converting $12=C$, $14=E$, $11=B$, and concatenating them in reverse order giving us $(6072)\_{10} = (1BEC)\_{15}$.
+Then we convert $12=C$, $14=E$, $11=B$, and concatenating them in reverse order giving us $(6072)\_{10} = (1BEC)\_{15}$.
 </div></div>
 
 <hr class="sep-both">
@@ -83,14 +83,14 @@ Then we are converting $12=C$, $14=E$, $11=B$, and concatenating them in reverse
 
 Radix 2, commonly called binary, is a base made of one and zero. It's the language used by machines 🖥️.
 
-To convert a binary to decimal, and vice-versa, you need to know every power of two ($2^9 = 512 \ldots$).
+To convert a binary to a decimal, and vice versa, you need to know every power of two ($2^9 = 512 \ldots$).
 
 | $2^8$ | $2^7$ | $2^6$ | $2^5$ | $2^4$ | $2^3$ | $2^2$ | $2^1$ | $2^0$ |
 |-------|-------|-------|-------|-------|-------|-------|-------|-------|
 | 256   | 128   | 64    | 32    | 16    | 8     | 4     | 2     | 1     |
 
 
-**Every number can be expressed as a sum of powers of two.** If you used a power of two when expressing a number, then add a 0, else 1.
+**Every number can be expressed as a sum of powers of two.** If you use a power of two when expressing a number, then add a 0, else 1.
 </div><div>
 
 #### Radix 10 to Radix 2
@@ -119,7 +119,7 @@ Radix 8, commonly called octal, is a base made of numbers from zero to seven. It
 
 Radix 8 numbers may, or may not, start with a `0` (zero), such as `07`. The presence of this zero indicates that this is an octal number.
 
-**3 binary digits are equals to one octal number.**
+**3 binary digits are equal to one octal number.**
 
 #### From Radix 8 to Radix 2
 
@@ -135,12 +135,12 @@ Radix 8 numbers may, or may not, start with a `0` (zero), such as `07`. The pres
 * Given $(1111101)\_{2}$, we need 2 leading zeros
 * $(001111101)\_{2}$
 * Convert each group of 3 digits to radix 10 🔦
-  * $(001)\_2$ is equals to $0+0+1=(1)_{10}$
-  * $(111)\_2$ is equals to $4+2+1=(7)_{10}$
-  * $(101)\_2$ is equals to $4+0+1=(5)_{10}$
+  * $(001)\_2$ is equal to $0+0+1=(1)_{10}$
+  * $(111)\_2$ is equal to $4+2+1=(7)_{10}$
+  * $(101)\_2$ is equal to $4+0+1=(5)_{10}$
 * So we have $(1111101)\_{2}=(175)_{8}=0175$
 
-➡️ We convert to radix 10, but it's a same as converting to radix 8, as the maximum value is 7. I said "radix 10" to avoid a recursive problem.
+➡️ We convert each group to radix 10, but it's the same as converting to radix 8, as the maximum value is 7. We say "radix 10" to avoid a recursive explanation.
 </div></div>
 
 <hr class="sep-both">
@@ -153,7 +153,7 @@ Radix 16, commonly called hexadecimal, is a base made of numbers from zero to 9,
 
 Hexadecimal numbers usually start with a `0x` ("zero x"), such as `0x7`.
 
-**4 binary digits are equals to one hexadecimal number.**
+**4 binary digits are equal to one hexadecimal number.**
 
 ##### Radix 10 and Radix 16
 
@@ -173,11 +173,11 @@ From 0 to 9, there are no changes. From 10 to 15, we use letters:
 
 #### Radix 2 to Radix 16
 
-* Given $(1111101)\_{2}$. We need 1 leading zeros for 2 groups of 4.
+* Given $(1111101)\_{2}$. We need 1 leading zero for 2 groups of 4.
 * $(01111101)\_{2}$
 * Convert each group of 3 digits to radix 10 then radix 16 🔦
-  * $(0111)\_2$ is equals to $1+2+4=(7)\_{10}=(7)\_{16}$
-  * $(1101)\_2$ is equals to $1+4+8=(13)\_{10}=(D)\_{16}$
+  * $(0111)\_2$ is equal to $1+2+4=(7)\_{10}=(7)\_{16}$
+  * $(1101)\_2$ is equal to $1+4+8=(13)\_{10}=(D)\_{16}$
 * So we have $(7D)_{16}$ or $\text{0x}7D$
 </div></div>
 
@@ -207,7 +207,9 @@ toto
 
 <div class="row row-cols-md-2"><div>
 
-URL encoding, also known as percent-encoding, in an encoding mostly used in URLs and resources, to encode characters that have a special meaning in URLs.
+URL encoding, also known as percent-encoding, is an encoding mostly used in URLs and resources, to encode characters that have a special meaning in URLs.
+
+👉 See also: [urlencoder](https://www.urlencoder.io/).
 </div><div>
 
 * Example of encoding `%`
@@ -224,9 +226,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* URL encoding
-* [urlencoder](https://www.urlencoder.io/)
-* add a section here about URL encoding, instead of having it in many places
 * binary-coded decimal (BCD)
 * Can put a file in cyber chef
   * Extract strings

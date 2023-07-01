@@ -4,7 +4,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-**Regular expressions** (`expressions régulières`), commonly referred to as **regex**, are an enhanced version of [glob-patterns](/operating-systems/linux/knowledge/index.md#glob-patterns) and present in most, if not all languages.
+**Regular expressions** (`expressions régulières`), commonly referred to as **regex**, are an enhanced version of [glob-patterns](/operating-systems/linux/knowledge/index.md#glob-patterns) and are present in most, if not all languages.
 
 🎯 Everything learned in glob-patterns is still available in regexes, so it won't be covered. ⚠️ The symbol for "one character" is now `.` <small>(dot)</small> and not `?` <small>(question mark)</small> which was given a new meaning.
 </div><div>
@@ -37,7 +37,7 @@ Some new symbols were introduced:
 <tr><td><nobr><code>x{n,m}</code></nobr><br><nobr><code>x{n,}</code></nobr><br><nobr><code>x{,m}</code></nobr><br><nobr><code>x{n}</code></nobr></td><td>at least $n$ times x, up to $m$ times, leave either empty if no limit.<br>The last one means "exactly $n$" times.</td></tr>
 </tbody></table>
 
-Regex introduced **metacharacters** which are shortcut to these charsets:
+Regex introduced **metacharacters** which are shortcuts to these charsets:
 
 * `\d` which is `[0-9]`
 * `\D` which is `[^0-9]`
@@ -48,17 +48,17 @@ Regex introduced **metacharacters** which are shortcut to these charsets:
 
 </div><div>
 
-You can apply a symbol on a group by wrapping them inside parenthesis. For instance, `(ab)+(cd|e)?`. 
+You can apply a symbol to a group by wrapping it inside a parenthesis. For instance, `(ab)+(cd|e)?`. 
 
-Many languages and commands allow us to use **capture groups** 🚩. These are groups wrapped in `\(` and `\)`. It allow us to extract parts of the matching regex, usually because we used a regex to extract data.
+Many languages and commands allow us to use **capture groups** 🚩. These are groups wrapped in `\(` and `\)`. It allows us to extract parts of the matching regex, usually because we used a regex to extract data.
 
-For instance, this regex matches a line with a least 3 characters (`.{3}`), followed by a possible empty string (`.*`). We want to know which were the 3 characters, so we wrap them in a capture group.
+For instance, this regex matches a line with at least 3 characters (`.{3}`), followed by a possibly empty string (`.*`). To know what the three characters are, we can wrap them up in a capture group.
 
 ```ruby
 ^\(.{3}\).*$
 ```
 
-The process to get back the capture group is different everywhere. It may be `$1` or `\1`, while it could also be an array returned by a function.
+The process to get the capture group back is different everywhere. It may be `$1` or `\1`, while it could also be an array returned by a function.
 
 ```ps
 $ echo -e "abc\nde\nfeghi\nklmnop" > example
