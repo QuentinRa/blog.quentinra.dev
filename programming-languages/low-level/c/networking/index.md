@@ -13,7 +13,7 @@ You also need to define an applicative protocol for each app:
 
 * 📃 What's the format of data exchanged? <small>(endianness, types...)</small>
 * ✈️️ What's the common flow for messages? <small>(ex: TCP SYN-ACK...)</small>
-* 🥀 How are error handled?
+* 🥀 How are errors handled?
 * ...
 </div></div>
 
@@ -23,7 +23,7 @@ You also need to define an applicative protocol for each app:
 
 <div class="row row-cols-md-2"><div>
 
-Both the code for the client and the server are starting from the same template, regardless of the type of socket.
+Both the code for the client and the server start from the same template, regardless of the type of socket.
 
 ```c
 #include <sys/socket.h>
@@ -71,7 +71,7 @@ int open_server_fd(int port){
 
 <div class="row row-cols-md-2"><div>
 
-In UDP clients/servers and TCP clients, you will need to generate a `sock_addr` with the address and port of the client/server. You can extract the code in one reusable function: `create_sock_addr` 👑.
+In UDP clients/servers and TCP clients, you will need to generate a `sock_addr` with the address and port of the client/server. You can extract the code into one reusable function: `create_sock_addr` 👑.
 
 ```cpp
 #include <string.h>
@@ -234,7 +234,7 @@ if ((server_fd = socket(AF_INET, SOCK_DGRAM, 0)) < 0)
 
 #### TCP (server)
 
-TCP server need to accept a connection first. Once you did, you will get a client file descriptor, and will be able to use the same functions as in a client (see the section below 📌).
+TCP server needs to accept a connection first. Once you do, you will get a client file descriptor, and will be able to use the same functions as in a client (see the section below 📌).
 
 ```cpp
 int client_fd;
@@ -251,7 +251,7 @@ Inside `client_addr`, you will find the IP address of the client and other data 
 
 #### TCP (client)
 
-If you are familiar with [system calls](/programming-languages/low-level/system_calls/index.md), you should already know that low-level function such as `read` or `write` takes a file descriptor. They work with `client_fd` then.
+If you are familiar with [system calls](/programming-languages/low-level/system_calls/index.md), you should already know that low-level functions such as `read` or `write` take a file descriptor. They work with `client_fd` then.
 
 ```cpp
 int client_fd = [...];
