@@ -33,7 +33,7 @@ Note that you can use HTML inside Markdown files 💫.
 
 #### Paragraphs
 
-A paragraph is a block of text. Leave of blank line to close it.
+A paragraph is a block of text. Leave a blank line to close it.
 
 <div class="row row-cols-md-2"><div>
 
@@ -91,7 +91,7 @@ The more `#` you add, the smaller your title becomes.
 <h6 class="h6">h6 - tiny title</h6>
 </div></div>
 
-**Nice dude** 🧹: make sure to leave a space after `#`.
+**Good practice** 🧹: make sure to leave a space after `#`.
 </div></div>
 
 <hr class="sep-both">
@@ -153,10 +153,10 @@ Use `*`, `+`, or `-` to create unordered lists. Use `n.` for ordered lists.
 
 #### Code
 
-Code inside a sentence is called **inline code**. You can write some using inverted quotes.
+Code inside a sentence is called **inline code**. You can write inline code in inverted quotes.
 
 * `inline code`: <code>\`inline code\`</code>
-* You can write some code-block with syntax highlighting using 3 inverted quotes, then the highlighting language <small>(ex: c, java, diff...)</small>.
+* You can write some code blocks with syntax highlighting using 3 inverted quotes, then the highlighting language <small>(ex: c, java, diff...)</small>.
 
 <div class="row row-cols-md-2"><div>
 
@@ -279,7 +279,7 @@ You can use HTML inside your Markdown.
 | \#\# Title           | &lt;h2&gt;title&lt;/h2&gt;                 |
 | \*\*bold\*\*         | &lt;b&gt;bold&lt;/b&gt;                    |
 | \*italic\*           | &lt;i&gt;bold&lt;/i&gt;                    |
-| \~\~crossed text\~\~ | &lt;s&gt;strikethrough&lt;/s&gt;           |
+| \~\~crossed text\~\~ | &lt;s&gt;strike through&lt;/s&gt;          |
 | a list               | see &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; |
 | \`code\`             | &lt;code&gt;code&lt;/code&gt;              |
 | \[link](url)         | &lt;a href="URL"&gt;link&lt;/a&gt;         |

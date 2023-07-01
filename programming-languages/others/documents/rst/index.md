@@ -24,7 +24,7 @@ What you can do in RST that you can't do in Markdown:
 
 #### Titles
 
-Titles are text underlined, or over- and underlined with symbols. Any non-alphanumeric can be used as long as the syntax is consistent, and that they are longer than the text. Two examples:
+Titles are text underlined, or over- and underlined with symbols. Any non-alphanumeric characters can be used as long as the syntax is consistent, and they are longer than the text. Two examples:
 
 <div class="row row-cols-md-2"><div>
 
@@ -181,7 +181,7 @@ some section
 
 #### Code Blocks
 
-We can insert inline code within a text, or using a code-block.
+We can insert inline code within a text, or use a code block.
 
 ```js!
 :code:`some inline code here`
@@ -196,7 +196,7 @@ We can insert inline code within a text, or using a code-block.
 
 #### Classes and methods
 
-You can document classes/methods/attributes using the syntax below. Note that you can extract method, it can be used outside a class.
+You can document classes/methods/attributes using the syntax below. Note that methods or other directives can be used outside a class.
 
 ```js!
 .. class:: ClassName
@@ -277,7 +277,7 @@ Refer to [PlantUML](https://plantuml.com/) for the syntax.
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-Table are a pain to write. You need the number of equals (`=`) below the title of the column to be higher than any value inside the table.
+Tables are a pain to write. You need the number of equals (`=`) below the title of the column to be higher than any value inside the table.
 
 ```md!
 =====  =====  =======
