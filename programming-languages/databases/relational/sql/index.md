@@ -186,18 +186,6 @@ An **SQLite** database is a file such as `users.db`.
 * List tables 🧊: `.tables`
 * List columns 🫕: `PRAGMA table_info(some_table);`
 * Schema: `select sql from sqlite_master`
-
-**Redis** is an in-memory key-value database. It runs on port `6379` by default 🐲. Install it with: `sudo apt install redis-tools`. [Docs](https://redis.io/commands/).
-
-```shell!
-$ redis-cli [-h host] [-p port]
-host:port> help             # list commands
-host:port> info             # get information
-host:port> keys *           # list keys
-host:port> get some_key     # get some value
-host:port> set key value    # set some value
-...
-```
 </div></div>
 
 <hr class="sep-both">

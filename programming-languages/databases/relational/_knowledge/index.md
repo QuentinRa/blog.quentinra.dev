@@ -16,10 +16,10 @@ The [Structured Query Language (SQL)](../sql/index.md) is the most used language
 Relational databases are managed by a **Database Management System** (DBMS) or RDBMS for Relational DBMS.
 
 * 💵 Oracle
-* 🍰 PostgreSQL
-* 🐈 MariaDB
-* 🍃 MySQL
-* 🦐 SQLite
+* 🍰 [PostgreSQL](../sql/index.md#dbms-specific)
+* 🐈 [MariaDB](../sql/index.md#dbms-specific)
+* 🍃 [MySQL](../sql/index.md#dbms-specific)
+* 🦐 [SQLite](../sql/index.md#dbms-specific)
 * 🐭 Microsoft SQL  Server (MSSQL)
 * ...
 

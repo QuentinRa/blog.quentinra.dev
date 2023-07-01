@@ -11,9 +11,7 @@ List of courses that have note which were not added yet.
 **Programming Languages > Databases**
 
 * PLSQL
-* NoSQL
-* MongoDB
-* Cypher
+* NoSQL, MongoDB, Redis, Cypher
 
 **Programming Languages > Others**
 
@@ -143,19 +141,6 @@ Google
 * [freehtml5](https://freehtml5.co/)
 * [html5boilerplate](https://html5boilerplate.com/)
 
-**Editors**
-
-* [ace](https://github.com/ajaxorg/ace) (web code editor)
-* [stackblitz](https://stackblitz.com/) (???)
-* [glitch](https://glitch.com/) (???)
-* [codepen](https://codepen.io/) (???)
-* [codesandbox](https://codesandbox.io/) (???)
-* [jsfiddle](https://jsfiddle.net/) (???)
-* [jseditor](https://jseditor.io/)
-* [playcode](https://playcode.io/)
-* [codehs](https://dev.codehs.com/)
-* [onlinegdb](https://www.onlinegdb.com/)
-
 **Documentation**
 
 * [Daux](https://daux.io/)
@@ -169,8 +154,6 @@ Google
 **Databases**
 
 * [duckdb](https://github.com/duckdb/duckdb)
-* redis
-* elasticsearch
 
 **Learned** (but there is no notes about them)
 
