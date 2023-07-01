@@ -7,7 +7,7 @@ JUnit is a well-known testing library in Java.
 * ☠️ [JUnit4](https://github.com/junit-team/junit4/wiki/) <small>([download](https://mvnrepository.com/artifact/junit/junit), [hamcrest library](https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all/1.3))</small>
 * 🌹 [JUnit5](https://junit.org/junit5/docs/current/user-guide/) <small>(a.k.a. Jupiter, [download](https://mvnrepository.com/artifact/org.junit.platform))</small>
 
-JUnit5 is a bit less straightforward to use, and unlike JUnit4 where there is only one file, the code was divided into modules, so you need to find and download the ones you need.
+JUnit5 is a bit less straightforward to use, and unlike JUnit4 where there is only one file, the code is now divided into modules, so you need to find and download the ones you need.
 
 You will usually put every required `.jar` in a folder "`libs`". To find the JUnit5 `jar` you need, check the path of the import in the code.
 </div><div>
@@ -73,7 +73,7 @@ import org.junit.Test;
 
 <div class="row row-cols-md-2"><div>
 
-Since JUnit5, there is no easy way to have a main class running all tests. You can run multiple classes using:
+Since JUnit5, there is no easy way to have a main class run all tests. You can run multiple classes using:
 
 ```java
 @Suite
@@ -100,9 +100,9 @@ import org.junit.jupiter.api.Test;
 
 <div class="row row-cols-md-2"><div>
 
-JUnit use assertions in its tests. They are defined in the package `Assertions` <small>(JUnit5)</small> or `Assert` <small>(JUnit4)</small>.
+JUnit uses assertions in its tests. They are defined in the package `Assertions` <small>(JUnit5)</small> or `Assert` <small>(JUnit4)</small>.
 
-An assertion is a function call that will test something, and raise an exception if the check failed.
+An assertion is a function call that will test something, and raise an exception if the check fails.
 
 ```java
 // true if equals
@@ -127,12 +127,12 @@ Assertions.assertNotSame(Object, Object)
 Assertions.assertArrayEquals(t1,t2);
 // true if exception got thrown,
 // method must be a Runnable
-assertThrows(NomException.class, methode);
+assertThrows(SomeException.class, method);
 // fail
 fail()
 ```
 
-Every assert method has an argument usually called `message` to send with the Exception a pertinent error message.
+Every assert method has an argument usually called `message` to send, along with the exception, a more pertinent error message.
 </div></div>
 
 <hr class="sep-both">
@@ -152,15 +152,15 @@ public class XXXTest {
 }
 ```
 
-According to the JUnit version, you can add some annotation to refine how your test is handled by JUnit.
+According to the JUnit version, you can add some annotations to refine how JUnit handles your test.
 
 * `@DisplayName("XXX")`: name displayed by the runner
 * `@Test(expected = XXX.class)`: the test must raise an exception
-* `@Test(timeout = xxx)`: test fails if longer than timeout
+* `@Test(timeout = xxx)`: test fails if longer than the timeout
 * `@Disabled`: don't run this test
 </div><div>
 
-Test suits are usually grouping tests, testing the same method or class. We may have to preprare things before running tests:
+Test suites usually group tests, testing the same method or class. We may have to prepare things before running tests:
 
 ```java
 public class TestSuite {
@@ -170,7 +170,7 @@ public class TestSuite {
     @AfterAll
     public static void classFree(){ /* unset attributes */ }
 
-    // before/all EVERY tests
+    // before/all EVERY test
     @BeforeEach
     public void testInit(){ /* set attributes, ... */ }
     @AfterEach
@@ -187,9 +187,9 @@ public class TestSuite {
 
 <div class="row row-cols-md-2"><div>
 
-Parametric tests are tests that have the same code but different parameters. We will write a method with parameters once, and tell JUnit all parameters that must be tested.
+Parametric tests are tests that have the same code but different parameters. We will write a method with parameters once, and tell JUnit all the parameters that must be tested.
 
-The logic is that we will indicate one or more sources to fill the parameter of our test method. These methods return a `Stream`.
+The logic is that we will indicate one or more sources to fill the parameter with our test method. These methods return a `Stream`.
 
 ```java
 public class XXXTest {

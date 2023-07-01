@@ -2,16 +2,16 @@
 
 <div class="row row-cols-md-2"><div>
 
-Testing is usually applied on two scopes: 
+There are two common scopes for testing: 
 
 * 🛸 **code coverage**: we write tests covering every path <small>(if/exceptions/...)</small> that the code could take.
 
 * 🔎 **unit testing**: we test a part of the code, usually a function
 
-➡️ There are many tools to test the coverage on your code, which are slowy adding to the [Continuous integration](/tools-and-frameworks/git/ci/index.md) page.
+➡️ There are many tools to test the coverage of your code, which are slowly being added to the [Continuous Integration](/tools-and-frameworks/git/ci/index.md) page.
 </div><div>
 
-When writing tests it's important to test both correct cases ✅, and incorrect cases ❌. This is to ensure that when updating the code to add new features/fix bugs, correct cases are still correct.
+When writing tests it's important to test both correct cases ✅, and incorrect cases ❌. This is to ensure that when updating the code to add new features/fix bugs, the correct cases are still correct.
 
 * ⬜ White-box testing: you know about the code
 * ⬛ Black-box testing: you only know about I/O <small>(params/result)</small>
@@ -26,11 +26,11 @@ When writing tests it's important to test both correct cases ✅, and incorrect 
 
 #### RightBICEP
 
-This is an approach to find good test cases:
+This approach aims to identify effective test cases:
 
 * **Right**: test that the output is correct
 * **B**oundary: test boundaries/extremum <small>(ex: MAX_INT...)</small>
-* **I**nverse: test the inverse input/output <small>(ex: 3+2 same as 2+3)</small>
+* **I**nverse: test the inverse input/output <small>(ex: 3+2 is the same as 2+3)</small>
 * **C**ross-check: cross-check the output with another function
 * **E**rrors: test error cases
 * **P**erformance: test performance and resource usage
@@ -38,7 +38,7 @@ This is an approach to find good test cases:
 
 #### CORRECT
 
-This is another approach to find good test cases:
+This approach also aims to identify effective test cases:
 
 * **C**onformance: test that the I/O conforms to what was expected
 * **O**rdering: test that I/O are in the correct order
@@ -46,7 +46,7 @@ This is another approach to find good test cases:
 * **R**eference: test against a known result, test that the correct reference/object in memory is used
 * **E**xistence: test that the required data/result are defined <small>(not null/...)</small>
 * **C**ardinality: test with 0, 1, and more arguments <small>(if applicable)</small>. Test with items of different cardinalities <small>(arrays/lists/...)</small>. 
-* **T**ime: test timing and performance. Test sequencing <small>(login->logout)</small>.
+* **T**ime: test timing and performance. Test sequencing <small>(login→logout)</small>.
 </div></div>
 
 <hr class="sep-both">
@@ -70,9 +70,9 @@ Design by Contract (`Conception par contrat`) is an approach to software develop
 
 #### Contract programming
 
-Contract programming (`Programmation par contrat`) is a programming paradigm. We declare a contract associated to a function, such as "when given two integers, it will return an integer". 
+Contract programming (`Programmation par contrat`) is a programming paradigm. We declare a contract associated with a function, such as "when given two integers, it will return an integer". 
 
-If we call the function with preconditions defined in the contract <small>(e.g. two integers)</small>, and the result is invalid, then the function has a defect. The function can be called with invalid <small>(as per the contract, such as a float and an integer)</small> preconditions, but there is no guaranty of the outcome.
+If we call the function with preconditions defined in the contract <small>(e.g. two integers)</small>, and the result is invalid, then the function has a defect. The function can be called with invalid <small>(as per the contract, such as a float and an integer)</small> preconditions, but there is no guarantee of the outcome.
 
 ➡️ Ex: using `@Contract` <small>(Java)</small>, `@contract` from `contracts` <small>(Python)</small>.
 </div></div>
@@ -85,7 +85,7 @@ If we call the function with preconditions defined in the contract <small>(e.g. 
 
 Defensive programming is implemented by adding checks to prevent errors or unexpected outcomes. 
 
-👉 Defensive programming if often used along contracts,  to implement the error handling and input validation.
+👉 Defensive programming is often used along contracts, to implement error handling and input validation.
 
 ➡️ Use `IllegalArgumentException` <small>(invalid parameters)</small> and `IllegalStateException` <small>(invalid result, invariant...)</small> in Java...
 </div><div>
@@ -104,14 +104,14 @@ Defensive programming is implemented by adding checks to prevent errors or unexp
 
 <div class="row row-cols-md-2"><div>
 
-Behavior-driven development (BDD) is a software development methodology that break down every part of the code into 3 sentences, explaining concretely how the code should behave.
+Behavior-driven development (BDD) is a software development methodology that breaks down every part of the code into 3 sentences, explaining concretely how the code should behave.
 
 👉 These questions are answered for every use case of a function before adding the function to the code base.
 </div><div class="align-self-center">
 
 * <kbd>Given</kbd> some parameters/actions/input
 
-* <kbd>When</kbd> some action triggering the process
+* <kbd>When</kbd> some action triggers the process
 
 * <kbd>Then</kbd> some action/result/output
 
@@ -136,9 +136,9 @@ Test-driven development (TDD) is a development practice in which we write the te
 
 You should always ask yourself
 
-* What my function is supposed to do?
+* What is my function supposed to do?
 * Will adding my function, do what we want?
-* What problems adding my function might cause?
+* What problems might be caused by adding my function?
 </div></div>
 
 <hr class="sep-both">
