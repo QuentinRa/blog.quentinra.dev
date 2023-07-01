@@ -37,9 +37,13 @@ List of courses that have note which were not added yet.
 * Java
 * OCaml
 
-**Tools and Frameworks > Editors**
+**Tools and Frameworks**
 
 * GIT
+* Pandora
+
+**Tools and Frameworks > Editors**
+
 * JetBrains IDEs
 * JetBrains plugin development
 * Online editors
