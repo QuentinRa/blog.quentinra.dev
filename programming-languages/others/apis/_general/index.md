@@ -23,10 +23,10 @@ Application Programming Interfaces (APIs) are used to allow access to internal s
 
 Some APIs <small>(search for APIs on [rapidapi](https://rapidapi.com/hub) 🚀)</small>
 
-* [Github API](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api)
+* [GitHub API](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api)
 * [MyAnimeList API](https://myanimelist.net/apiconfig/references/api/v2) <small>(mangas, anime, ...)</small> or [jikan](https://jikan.moe/) <small>(unofficial MAL API)</small>
-* [Pokemon API](https://pokeapi.co/)
-* [Paypal API](https://developer.paypal.com/docs/api/overview/) <small>(payments)</small>
+* [Pokémon API](https://pokeapi.co/)
+* [PayPal API](https://developer.paypal.com/docs/api/overview/) <small>(payments)</small>
 * [MangaDex API](https://api.mangadex.org/docs/) <small>(manga reader)</small>
 * [todoist](https://todoist.com/) <small>(to-do list)</small>
 
@@ -35,13 +35,13 @@ Services (APIs)
 * [formspree](https://formspree.io/) <small>(forms)</small>
 * [algolia](https://www.algolia.com/)/[docsearch](https://github.com/algolia/docsearch) <small>(search)</small>
 * [simpleen](https://simpleen.io/) <small>(localization)</small>
-* [courier](https://www.courier.com/) or [customer](https://customer.io/) <small>(push notifications, SMS, emails...)</small> or [textbelt](https://textbelt.com/) <small>(sms)</smal>
+* [courier](https://www.courier.com/) or [customer](https://customer.io/) <small>(push notifications, SMS, emails...)</small> or [textbelt](https://textbelt.com/) <small>(sms)</small>
 * [pusher](https://pusher.com/) <small>(push notifications, they are interfacing websockets...)</small>
 * [postmarkapp](https://postmarkapp.com/) <small>(push emails...)</small>
 * [ipify](https://www.ipify.org/) or [jsonip](https://jsonip.com/) or [ipgeolocation](https://ipgeolocation.io/) <small>(ip)</small>
 * [headlessbrowserapi](https://headlessbrowserapi.com/) <small>(scrap)</small> 🚀 / [peekalink](https://www.peekalink.io/) <small>(preview)</small>
 * [gravatar](https://en.gravatar.com/) <small>(avatars)</small> / [disqus](https://disqus.com/api/docs/) <small>(comments)</small>
-* [Google Translate API](https://translate.googleapis.com/translate_a/single?client=gtx&sl=ko&tl=en&dt=t&q=176) / [DeepL API](https://www.deepl.com/pro-api) <small>(translations)</small> /
+* [Google Translate API](https://translate.googleapis.com/translate_a/single?client=gtx&sl=ko&tl=en&dt=t&q=176) / [DeepL API](https://www.deepl.com/pro-api) <small>(translations)</small>
 
 </div></div>
 
@@ -51,8 +51,8 @@ Services (APIs)
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-* **Base endpoint**: the base URL for any request to the API
-* **Endpoint**: a URL with a route of the API
+* **Base endpoint**: the base [URL](/programming-languages/web/_general/random/url.md) for any request to the API
+* **Endpoint**: a [URL](/programming-languages/web/_general/random/url.md) with one route of the API
 * **Path**: the part after the base endpoint
 
 For the endpoint `http://localhost:3000/users/1`, the base endpoint would be `http://localhost:3000` while the path would be `/users/1`.
@@ -60,7 +60,7 @@ For the endpoint `http://localhost:3000/users/1`, the base endpoint would be `ht
 
 **Methods**
 
-An endpoint may allow multiple HTTP methods (GET, POST, PUT...). Refer to the API documentation to know which ones are available. See [HTTP protocol/method](/operating-systems/networking/protocols/http.md) for your own API if needed.
+An endpoint may allow multiple HTTP methods (GET, POST, PUT...). Refer to the API documentation to know which ones are available. See the [HTTP protocol/method](/operating-systems/networking/protocols/http.md) for your own API if needed.
 
 **Responses**
 
@@ -113,7 +113,7 @@ $ curl -X POST 'URL' -d 'key=value' -H 'Content-Type: application/x-www-form-url
 
 #### Drivers
 
-You should look on Google/GitHub for drivers/wrappers of your API.
+You should look on Google/GitHub for drivers/wrappers for an API.
 
 <br>
 

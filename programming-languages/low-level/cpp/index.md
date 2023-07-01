@@ -37,7 +37,7 @@ Hello World
 
 ## Basics
 
-*This assumes that you're already familiar with the language C.*
+*This assumes that you're already familiar with the C language.*
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -132,7 +132,7 @@ std::cout << "Hello " << name << std::endl;
 
 #### Exceptions
 
-Exceptions are signals that are sent when something unexpected happened, such as an error (ex: `1/0`).
+Exceptions are signals that are sent when something unexpected happens, such as an error (ex: `1/0`).
 
 ```cpp
 try {
@@ -149,7 +149,7 @@ catch ( const char* msg ) { std::cerr << msg; }
 catch (...) { std::cerr << "Error: xxx"; }
 ```
 
-➡️ The signal is propagated upwards until someone catches it. If no one does, then the program crash.
+➡️ The signal is propagated upwards until someone catches it. If no one does, then the program crashes.
 </div></div>
 
 <hr class="sep-both">
@@ -169,7 +169,7 @@ int& abc(int& a, int b=1, float c=2.0f) {
 }
 ```
 
-➡️ Default values are only if the declaration (if any), but not in both the implementation and the declaration.
+➡️ Default values are only in the declaration (if any), but not in both the implementation and the declaration.
 
 ```cpp
 // prototype with default values
@@ -246,7 +246,7 @@ int main() {
 }
 ```
 
-`::` is called **scope operator** (`opérateur de résolution de portée`).
+`::` is called the **scope operator** (`opérateur de résolution de portée`).
 </div></div>
 
 <hr class="sep-both">
@@ -298,7 +298,7 @@ private:
 
 We can create public, private, and protected groups in which we will declare attributes and methods.
 
-➡️ You can use multiple times the same modifier to make your declaration clean and tidy.
+➡️ You can use the same modifier multiple times to make your declaration clean and tidy.
 </div></div>
 
 #### Attributes
@@ -344,7 +344,7 @@ void XXX::ddd() { std::cout << x; }
 
 #### Constructors
 
-Every class has a public, parameterless constructor called **default constructor**. Explicitly adding a constructor will delete it.
+Every class has a public, parameterless constructor called the **default constructor**. Explicitly adding a constructor will delete it.
 
 ```cpp
 struct XXX {
@@ -404,7 +404,7 @@ delete xxx;
 
 <div class="row row-cols-md-2"><div>
 
-6 methods available by default in every structure/class
+6 methods are available by default in every structure/class
 
 * Default, Copy, and Move Constructor<sup>1</sup>
 * Move assignment operator (`opérateur de mouvement`)<sup>1</sup>
@@ -414,7 +414,7 @@ delete xxx;
 
 #### Copy constructor
 
-The default copy constructor is copying every attribute using their copy constructor. You should use `= default;` instead of `{}`.
+The default copy constructor copies every attribute using its copy constructor. You should use `= default;` instead of `{}`.
 
 <div class="row row-cols-md-2"><div>
 
