@@ -23,6 +23,7 @@ List of courses that have note which were not added yet.
 **Programming Languages > Others**
 
 * Blockchain
+* Sphinx, Doku
 
 </div><div>
 

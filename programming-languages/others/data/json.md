@@ -4,7 +4,7 @@
 
 JSON is a simple yet very useful way of storing data. It's a plain-text file with some structured data inside.
 
-You got 6 types in JSON: **number** (integer/float), **object**, **array**, **boolean**, **null**, and **string**.
+There are six types in JSON: **number** (integer/float), **object**, **array**, **boolean**, **null**, and **string**.
 
 * **Object** ✨. An object is wrapped inside `{}`. It's a structure with **keys** that are associated with a **value**.
 
@@ -52,7 +52,7 @@ You got 6 types in JSON: **number** (integer/float), **object**, **array**, **bo
 
 #### JSON5
 
-Some are not satisfied with the limited syntax of JSON. Here some limitations
+Some are not satisfied with the limited syntax of JSON. Here are some limitations:
 
 * ✏️ You can't use comments (`// comment`) in JSON
 * 🎡  There are no multiline strings, so it's not easy to read/write long strings in JSON. A good editor would have a feature to wrap the JSON, to avoid very long lines
