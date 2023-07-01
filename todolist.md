@@ -47,6 +47,11 @@ List of courses that have note which were not added yet.
 * JetBrains IDEs
 * JetBrains plugin development
 * Online editors
+
+**Tools and Frameworks > Build tools**
+
+* Gradle
+* Maven
 </div></div>
 
 

@@ -2,15 +2,15 @@
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-Human-machine interfaces (HMI, `IHM`, `Interfaces Homme-machine`) are interfaces connecting humans and machines, for instance, a mail client. More widely, this includes any programs or websites. 
+Human-machine interfaces (HMI, `IHM`, `Interfaces Homme-machine`) are interfaces connecting humans and machines, for instance, a mail client. More broadly, this includes any programs or websites. 
 
 You must think a lot about how you should create one, and that's the purpose of this course. You will need to **think 🤔** about
 
 * **where** 🗺️: layout of your application
-* **what** 🗃️: which element is required, which one isn't...
+* **what** 🗃️: which element is required, and which one isn't...
 * **how** 🖇️: what are your menus, are they simple and intuitive?
 
-We usually create a **mockup** (`maquette`) first. Each screen of the application is called **a wireframe**. Once every screen is created, you will add actions between your screen, which includes stuff like what happens when the user hover/press/click/... on a button/... The final output with interconnected wireframes is called **a wireflow**.
+We usually create a **mockup** (`maquette`) first. Each screen of the application is called **a wireframe**. Once every screen is created, you will add actions between your screens, which include stuff like what happens when the user hover/press/click/... on a button/... The final output with interconnected wireframes is called **a wireflow**.
 </div><div>
 
 You can create wireframes/wireflows using
@@ -48,7 +48,7 @@ Before coding some application, you must think about what kinds of users will us
 * Illiterate?
 </div><div>
 
-You can't make something that would be perfect for everyone, but try to make some categories of users and provide them an application, that would aim to satisfy most of their requests. For instance, you can
+You can't make something that would be perfect for everyone, but try to make some categories of users and provide them with an application, that would aim to satisfy most of their requests. For instance, you can
 
 * Make a website/app per country,
 * Add a settings tab to enable the day/night mode,
@@ -66,7 +66,7 @@ You can't make something that would be perfect for everyone, but try to make som
 Usual steps
 
 1. Create some categories of users
-2. Ask persons matching your categories where they would go to find XXX in the menus, ... to test your interface.
+2. Ask people matching your categories where they would go to find XXX in the menus, ... to test your interface.
 3. Create **UML**'s diagrams to formalize the interactions between the application and users
 4. Make a static mock-up
 5. Test your mock-up

@@ -2,14 +2,14 @@
 
 <div class="row row-cols-md-2"><div>
 
-Makefile are file in which a developer define **rules** ✍️ to compile files, build an executable, and run it. 
+Makefiles are files in which a developers define **rules** ✍️ to compile files, build an executable, and run it. 
 
 * 📃 You define the dependencies between files
-* 🚀 Only changed files and those dependent on it are recompiled
+* 🚀 Only changed files and those dependent on them are recompiled
 * 🏡 Users write simple commands such as `make build` <small>(no "gcc [...]")</small>
 * 🌍 Commonly used to build Linux applications
 
-Makefile are mainly used in C, while they can be for any languages, different tools such as CMake are used instead.
+Makefiles are mainly used in C/C++, while they can be used for any language, different tools such as CMake are used instead.
 
 👉 [Official documentation](https://www.gnu.org/software/make/manual/html_node/) (GNU)
 </div><div>
@@ -59,7 +59,7 @@ a.out: main.c
 
 We can compile and run our program. 
 
-But this is not a correct approach 👎. Imagine, if `main.c` has many dependencies, then they will all be listed as dependencies to `a.out`. It means that every time we ask `make` to compile the latest `a.out`, every dependency will be checked.
+But this is not the correct approach 👎. Imagine, if `main.c` has many dependencies, then they will all be listed as dependencies to `a.out`. It means that every time we ask `make` to compile the latest `a.out`, every dependency will be checked.
 </div><div>
 
 Instead, we usually use intermediate files, such as `.o` in C.
@@ -101,7 +101,7 @@ a.out: main.o
 
 <div class="row row-cols-md-2"><div>
 
-Makefile dependencies are files that, if changed, mean that we need to recompile our target. 
+Makefile dependencies are files that when changed, imply that we need to recompile our target.
 
 In C, we could describe dependencies like this:
 
@@ -129,7 +129,7 @@ file2.o: # none
 
 #### Variables
 
-We usually start a Makefile by defining some variables, to avoid copy-pasting code and easing the maintaining of our Makefile 👌.
+We usually start a Makefile by defining some variables, to avoid copy-pasting code and ease the maintenance of our Makefile 👌.
 
 Some quite used names for variables are `CC` and `CFLAGS`.
 
@@ -157,7 +157,7 @@ O_FILES = file1.o file2.o \
 
 #### PHONY rules
 
-Makefile only call a task if the file or its dependencies were updated. An exception are tasks marked as `.PHONY`
+Makefile only calls a task if the file or its dependencies have been updated. Some exceptions are tasks marked as `.PHONY`.
 
 ```makefile!
 .PHONY: clean xxx yyy zzz
