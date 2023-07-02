@@ -182,7 +182,27 @@ c.insets = new Inset(top, left, bottom, right);  // padding
 aComponent.add(someComponent, c);
 ```
 
+#### GridLayout
 
+In a [GridLayout](https://docs.oracle.com/en/java/javase/20/docs/api/java.desktop/java/awt/GridLayout.html), all rows/columns have the same width/height.
+
+```java
+aComponent.setLayout(new GridLayout(rowCount, colCount));
+```
+
+#### CardLayout
+
+In a [CardLayout](https://docs.oracle.com/en/java/javase/20/docs/api/java.desktop/java/awt/CardLayout.html), we can swap the content displayed with another view.
+
+```java
+CardLayout cardLayout = new CardLayout();
+aComponent.setLayout(cardLayout);
+aComponent.add("key", view);        // adding a view
+cardLayout.show(aComponent, "key"); // select a view
+cardLayout.first(aComponent);       // show the first view
+cardLayout.next(aComponent);        // show the next view
+cardLayout.previous(aComponent);    // show the previous view
+```
 </div></div>
 
 <hr class="sep-both">
