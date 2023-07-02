@@ -107,6 +107,43 @@ public void myMethod() {
 
 <hr class="sep-both">
 
+## Await an async function
+
+<div class="row row-cols-md-2"><div>
+
+Async functions are functions executed in another [thread](#threads). For instance, to query a database/an API. Sometimes, we want to wait for the result resuming the execution.
+
+```java
+public class APIHelper {
+    public static int getResult() throws InterruptedException {
+        CountDownLatch latch = new CountDownLatch(1);
+        AtomicReference<Integer> ref = new AtomicReference<>();
+        // Do an async call here, update ref, and latch
+        latch.await();
+        return ref.get();
+    }
+}
+```
+</div><div>
+
+To simulate an API call, we can create a thread as follows:
+
+```java
+Thread thread = new Thread(() -> {
+    ref.set(10);       // AtomicReference<Integer>
+    latch.countDown(); // decrease the latch by 1
+});
+thread.start();
+```
+
+When the latch is empty, `latch.await()` will stop waiting. 
+
+If you've multiple async functions to call, you can simply increase `CountDownLatch` starting value.
+
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 <div class="row row-cols-md-2"><div>
