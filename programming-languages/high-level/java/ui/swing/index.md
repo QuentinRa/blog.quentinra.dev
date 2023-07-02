@@ -142,8 +142,13 @@ aComponent.setLayout(LayoutManager);
 
 **By default, the layout manager is a FlowLayout**.
 
-###
-</div><div>
+#### FlowLayout
+
+In the [FlowLayout](https://docs.oracle.com/en/java/javase/20/docs/api/java.desktop/java/awt/FlowLayout.html), each component takes its preferred size. Elements could be aligned to the left, to the right, or to the center <small>(default)</small>.
+
+```java
+aComponent.setLayout(new FlowLayout(FlowLayout.LEFT));
+```
 
 #### BorderLayout
 
@@ -157,6 +162,27 @@ aComponent.add(component3, BorderLayout.CENTER); // default
 aComponent.add(component4, BorderLayout.EAST);
 aComponent.add(component5, BorderLayout.WEST);
 ```
+</div><div>
+
+#### GridBagLayout
+
+[GridBagLayout](https://docs.oracle.com/en/java/javase/20/docs/api/java.desktop/java/awt/GridBagLayout.html) is the most versatile layout. Before adding a component, you'll define the constraint on it <small>(position...)</small>.
+
+```java
+aComponent.setLayout(new GridBagLayout());
+
+GridBagConstraints c = new GridBagConstraints();
+c.gridx = 0; c.gridy = 0;                  // position
+c.gridwidth = 1; c.gridheight = 1;         // colspan/rowspan
+c.weightx = 0; c.weighty = 0;              // expand priority
+c.anchor = GridBagConstraints.LINE_START;  // alignement
+c.fill = GridBagConstraints.HORIZONTAL;    // expand behavior
+c.insets = new Inset(top, left, bottom, right);  // padding
+
+aComponent.add(someComponent, c);
+```
+
+
 </div></div>
 
 <hr class="sep-both">

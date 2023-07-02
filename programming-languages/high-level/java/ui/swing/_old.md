@@ -1,17 +1,12 @@
 # Swing and AWT
 
+Events and listeners
+
 ```java
 // events
 aComponent.addMouseListener(null /* listener here */);
 aComponent.removeMouseListener(null /* listener here */);
-
-// layout
-aComponent.setLayout(null /* layout manager here */);
 ```
-
-<hr class="sr">
-
-## Events and listeners
 
 We are calling listeners, classes having a function (handler) called when an action (click, mouse moved, ..) is done. Inside the handler, you will write the code specific to the event.
 
