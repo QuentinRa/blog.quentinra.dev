@@ -9,20 +9,6 @@ aComponent.removeMouseListener(null /* listener here */);
 aComponent.setLayout(null /* layout manager here */);
 ```
 
-<hr class="sl">
-
-## Layout manager
-
-You may have wondered how you could set a component to be somewhere in the frame. All JComponents got a method `setLayout(LayoutManager m)` taking a LayoutManager which is actually defining how the `add` method will work.
-
-**By default, the layout is a FlowLayout**, you may use null to disabled the layout.
-
-* [BorderLayout](layoutr-layout.md)
-* [FlowLayout](layoutlayout.md)
-* [GridLayout](layoutlayout.md)
-* [CardLayout](layoutlayout.md)
-* [GridBagLayout](layoutbag-layout.md)
-
 <hr class="sr">
 
 ## Events and listeners

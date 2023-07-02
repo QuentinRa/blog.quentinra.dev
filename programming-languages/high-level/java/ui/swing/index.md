@@ -85,7 +85,7 @@ JFrame f = new JFrame("title");
 f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // when "x" pressed
 f.setSize(500,500); // size
 f.setLocation(0,0); // location in the screen
-f.add(component);   // add content
+f.add(component);   // add ONE component, usually a JPanel
 f.setVisible(true); // show, false by default
 ```
 
@@ -125,6 +125,38 @@ p.add(xxx);               // add "xxx" to the group
 ```
 
 👉 See also: `JScrollPane` for a scrollable panel.
+</div></div>
+
+<hr class="sep-both">
+
+## Layout managers
+
+<div class="row row-cols-md-2"><div>
+
+Layout Managers determine how children components are displayed. They are commonly used with `JPanel` 🖼️.
+
+```java
+// some constructor can take a layout manager too
+aComponent.setLayout(LayoutManager);
+```
+
+**By default, the layout manager is a FlowLayout**.
+
+###
+</div><div>
+
+#### BorderLayout
+
+The [BorderLayout](https://docs.oracle.com/en/java/javase/20/docs/api/java.desktop/java/awt/BorderLayout.html) divides the container in 5 areas. The center takes the available space. North and South expand as much as possible horizontally. East and West expand as much as possible vertically.
+
+```java
+aComponent.setLayout(new BorderLayout());
+aComponent.add(component1, BorderLayout.NORTH);
+aComponent.add(component2, BorderLayout.SOUTH);
+aComponent.add(component3, BorderLayout.CENTER); // default
+aComponent.add(component4, BorderLayout.EAST);
+aComponent.add(component5, BorderLayout.WEST);
+```
 </div></div>
 
 <hr class="sep-both">
