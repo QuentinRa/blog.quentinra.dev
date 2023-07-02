@@ -20,6 +20,8 @@ And in each IDE, some languages, frameworks, and build tools have additional fea
 🎓 Their IDEs are [free for students](https://www.jetbrains.com/shop/eform/students).
 
 🔥 You can manage all of their IDEs using the [toolbox](https://www.jetbrains.com/toolbox-app/).
+
+🌍 You can invite others to code with you. Use `CTRL+SHIFT+Y` to generate a link. They will have to download a special version of the IDE. You can share your terminal with `+ > shared`.
 </div></div>
 
 <hr class="sep-both">
@@ -105,6 +107,7 @@ Use `CTRL+SHIFT+U` to toggle uppercase/lowercase.
 
 Comments
 
+* <kbd>CTRL+Q</kbd>: show the documentation of the selected element
 * <kbd>CTRL+/</kbd>: comment selected lines <small>(inline comment, such as //)</small>
 * <kbd>CTRL+SHIFT+/</kbd>: comment selected lines <small>(block comment, such as /*)</small>
 
@@ -172,15 +175,10 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [old](_old.md)
-* CTRL+ALT+L (reformat)
-* "+" > shared (code with me)
 * <code>\`\`\`xxx!</code>
 * scratch files
-</div><div>
-
-* Local History
 * Project view
-* CTRL-Q, CTRL-P
-
+* CTRL-P
+* Database (select schema, SSH tunnel, query console)
+</div><div>
 </div></div>
