@@ -23,7 +23,58 @@ import javax.swing.*; // swing
 
 <div class="row row-cols-md-2"><div>
 
+A component is a graphical entity such as a Button.
+
 All Swing components are extending `JComponent` while AWT components are extending `Component`.
+
+```java
+JComponent aComponent = new JButton();
+```
+
+**Child components**
+
+```java
+aComponent.add(anotherOne);
+aComponent.remove(anotherOne);
+aComponent.removeAll();
+```
+
+**Drawing**
+
+```java
+aComponent.repaint();        // redraw if modified
+aComponent.revalidate();     // force redraw
+
+aComponent.setVisible(true); // show
+```
+</div><div>
+
+**Style**
+
+```java
+aComponent.setFont(new Font("name", Font.PLAIN, 20));
+aComponent.setOpaque(true); // mark as having a background
+aComponent.setBackground(Color.RED); // background color if opaque
+aComponent.setForeground(Color.WHITE); // text color
+```
+
+**Size**
+
+```java
+// DO NOT USE setSize, it's ignored by most layouts
+aComponent.setPreferredSize(new Dimension(50,50));
+// MAY BE IGNORED by the layout
+aComponent.setSize(new Dimension(50,50));
+aComponent.setMinimumSize(new Dimension(50,50));
+aComponent.setMaximumSize(new Dimension(50,50));
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Examples of components
+
+<div class="row row-cols-md-2"><div>
 
 #### JFrame - window
 
