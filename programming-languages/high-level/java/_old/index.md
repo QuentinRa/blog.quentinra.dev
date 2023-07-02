@@ -4,9 +4,6 @@
 * [Generating a .exe or an installer](expert/exe.md)
 * [Protect a jar](expert/jar.md)
 * [Records](expert/records.md) (since Java16)
-* [Threads](advanced/threads.md)
-* [Networking](advanced/networking.md)
-* [Files](advanced/files.md)
 * [Databases / API](advanced/database.md)
 * [Preferences / Properties](expert/saving-data.md)
 

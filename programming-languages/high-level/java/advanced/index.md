@@ -114,6 +114,8 @@ public void myMethod() {
 Async functions are functions executed in another [thread](#threads). For instance, to query a database/an API. Sometimes, we want to wait for the result resuming the execution.
 
 ```java
+// import java.util.concurrent.CountDownLatch;
+// import java.util.concurrent.atomic.AtomicReference;
 public class APIHelper {
     public static int getResult() throws InterruptedException {
         CountDownLatch latch = new CountDownLatch(1);
@@ -140,6 +142,52 @@ When the latch is empty, `latch.await()` will stop waiting.
 
 If you've multiple async functions to call, you can simply increase `CountDownLatch` starting value.
 
+</div></div>
+
+<hr class="sep-both">
+
+## Networking
+
+<div class="row row-cols-md-2"><div>
+
+You can create a server from which **local** clients can connect to 🏠. As a client, you can connect to any server <small>(local or not)</small> 🌍.
+
+#### Server
+
+```
+try (ServerSocket serverSocket = new ServerSocket(port)) {
+    while (true) {
+        Socket clientSocket = serverSocket.accept();
+        // handle client, usually in a new thread
+    }
+} catch (IOException e) {
+    throw new RuntimeException(e);
+}
+```
+</div><div>
+
+#### Client
+
+```java
+// "host" could be "localhost" or an IP
+Socket clientSocket = new Socket(host, port);
+```
+
+#### Sockets
+
+Assuming `s` is a `Socket`, you can get [streams](#inputoutput-streams) using:
+
+```java
+InputStream i = s.getInputStream();
+OutputStream o = s.getOutputStream();
+```
+
+Unlike common streams, you will have to flush them after using them:
+
+```java
+i.flush();
+o.flush();
+```
 </div></div>
 
 <hr class="sep-both">
