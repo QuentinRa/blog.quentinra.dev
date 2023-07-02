@@ -32,11 +32,15 @@ Press `CTRL+ALT+MAJ+S` or `⚙️ > Project Structure`.
 
 Navigate to the `Project` tab. From there, you can **download** a JDK, or **select** the JDK used for this project.
 
+<br>
+
 #### Add libraries
 
 Press `CTRL+ALT+MAJ+S` or `⚙️ > Project Structure`.
 
 Navigate to the `Libraries` tab. Click on `+`. By selecting "Java", you can import JARs. By selecting maven, you can download JARs from [maven repository](https://mvnrepository.com/) <small>(use the search bar within the IDE)</small>.
+
+<br>
 
 #### Junit
 
@@ -45,7 +49,7 @@ IDEA natively supports [JUnit5](https://www.jetbrains.com/help/idea/junit.html).
 For JUnit4, [you need to do it manually](stuff/junit4.md).
 </div><div>
 
-#### Configurations
+#### Run Configurations
 
 Similarly to other software, there are configurations were we can set which **javac/java options**, **program arguments**...
 
@@ -53,18 +57,14 @@ Similarly to other software, there are configurations were we can set which **ja
 
 Once inside, not all fields are shown. For instance, to see `javac` options, you need to click on `Modify options > add VM options`.
 
-</div></div>
+#### Project Folders
 
-<hr class="sep-both">
+Press `CTRL+ALT+MAJ+S` or `⚙️ > Project Structure`.
 
-## 👻 To-do 👻
+Navigate to the `Modules` tab, then "Sources". From there, you can set:
 
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-* [old](_old.md)
-</div><div>
-
-
+* Source folders <small>(folders with .java)</small>
+* Build folders <small>(folders with generated files)</small>
+* Tests folders <small>(folders with testing files)</small>
+* Resources folders <small>(folders with images/... for use in a JAR)</small>
 </div></div>

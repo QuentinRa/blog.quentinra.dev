@@ -1,14 +1,23 @@
 # CLion
 
-Examples of cases where you might be using it
+<div class="row row-cols-md-2"><div>
 
-* code in `C`
-* code in `C++`
+...
+</div><div>
 
-CLion was using **CMake** to compile your project, but since 2021.2, it's now really easy to use a **Makefile**. Still, since CMake was not that hard, I'm letting it here.
+...
+</div></div>
 
-* [Starting with CMake](cmake.md)
-* [Makefile project](makefile.md)
-* [Set compiler](compiler.md)
-* [Remote working](remote.md)
-* [Debug](debug.md)
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [old](_old.md)
+</div><div>
+
+
+</div></div>

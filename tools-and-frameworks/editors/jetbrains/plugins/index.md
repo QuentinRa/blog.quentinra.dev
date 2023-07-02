@@ -1,4 +1,4 @@
-# PHPStorm
+# IntelliJ Platform Plugin SDK
 
 <div class="row row-cols-md-2"><div>
 
