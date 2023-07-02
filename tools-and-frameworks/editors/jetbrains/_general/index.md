@@ -83,6 +83,11 @@ Use `CTRL+ENTER` to manually trigger autocompletion.
 
 🔥 There is a search menu to look for files (`CTRL+SHIFT+N`), settings (`CTRL+SHIFT+A`). Open it with `Double Shift`.
 
+* To enable zoom on scroll, search `mouse wheel`.
+* To add a `*` to modified files, search `mark modified`.
+* To set the proofreading language, search `natural language`.
+* To enable soft wraps, search `soft wrap`.
+
 #### Editing shortcuts
 
 * <kbd>CTRL+C</kbd>, <kbd>CTRL+V</kbd>, <kbd>CTRL+X</kbd>, <kbd>CTRL+A</kbd>, <kbd>CTRL+F</kbd>: common ones
@@ -118,16 +123,33 @@ Navigation
 
 <hr class="sep-both">
 
-## Interface
+## Features
 
 <div class="row row-cols-md-2"><div>
+
+#### Interface
 
 The interface has often changed over the years, especially as they are moving to a more compact interface.
 
 👉 Use `CTRL+E` to see available menus.
+
+🔥 There is a GIT menu, and a TODO menu which are helpful.
+
+#### ContextMenu
+
+The context menu is the left-click menu. These are worth a mention:
+
+* Analyze 🔎: list all code smells, typos...
+* Refactor 🎯: rename an element <small>(smart renaming)</small>
+* Reformat 🧼: code cleanup
+* Local History 🖼️: all changes to a file
 </div><div>
 
-...
+#### Refactor 🧼
+
+You can refactor <small>(rename)</small> variables, functions, files. Once you do try, you'll see a list of all detected locations that use the element.
+
+✨ Before confirming the refactoring, you can exclude or remove unwanted changes.
 </div></div>
 
 <hr class="sep-both">
