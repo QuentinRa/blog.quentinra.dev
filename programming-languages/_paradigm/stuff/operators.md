@@ -14,6 +14,8 @@ The most common operator is the **assignment** operator, which is usually `=`. I
 ```ps
 x = 5
 ```
+
+☠️ Some languages use `:=` or `<-`.
 </div></div>
 
 <hr class="sep-both">
@@ -47,6 +49,11 @@ x /= 1     // same as "x = x / 1"
 ```
 
 🔥 Some languages have a shortcut when the operand is `1`, which is common in loops: `x++` <small>(x = x + 1)</small> and `x--` <small>(x = x - 1)</small>.
+
+🔥 Some languages may also implement `++x`, and `--x`. When using this variant, the operation has a higher priority than any other.
+
+* `if (x++ == 1)`: we have `x == 1` then `x = x + 1`
+* `if (++x == 1)`: we have `x = x + 1` then `x == 1`
 </div></div>
 
 <hr class="sep-both">

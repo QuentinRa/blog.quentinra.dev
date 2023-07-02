@@ -27,7 +27,7 @@ List of courses that have note which were not added yet.
 **Programming Languages > High-Level Languages**
 
 * C#
-* Java, LibGDX
+* Java, LibGDX, lwjgl
 * OCaml
 
 **Tools and Frameworks**
@@ -499,5 +499,8 @@ https://petri.com/
 ```
 </div><div>
 
-
+```
+https://beginnersbook.com/
+https://github.com/storybookjs/storybook (js)
+```
 </div></div>

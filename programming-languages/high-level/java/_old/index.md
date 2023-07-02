@@ -1,5 +1,17 @@
 # Java programming
 
+* [Modules](expert/modules.md)
+* [Generating a .exe or an installer](expert/exe.md)
+* [Protect a jar](expert/jar.md)
+* [Records](expert/records.md) (since Java16)
+* [Threads](advanced/threads.md)
+* [Networking](advanced/networking.md)
+* [Files](advanced/files.md)
+* [Databases / API](advanced/database.md)
+* [Preferences / Properties](expert/saving-data.md)
+
+<hr>
+
 * [history](beginner/history.md)
 * [Exceptions](beginner/exceptions.md)
 * [Overload](beginner/overload.md) (Surcharge in French)
@@ -41,10 +53,6 @@ Some new syntax-related stuff
 
 And things you might use
 
-* [Threads](advanced/threads.md)
-* [Networking](advanced/networking.md)
-* [Files](advanced/files.md)
-* [Databases / API](advanced/database.md)
 * [Recursive functions](advanced/recursive.md)
 * [Sorting](advanced/sort.md)
 
@@ -52,25 +60,3 @@ Special notes
 
 * [Special classes](expert/special-classes.md)
 * [UTF-8](expert/utf-8.md)
-* [Preferences / Properties](expert/saving-data.md)
-
-<hr class="sr">
-
-## Expert
-
-**Note**: note that I'm not an expert, so this section is about some notes about the things that I'm discovering while practicing.
-
-* [Modules](expert/modules.md)
-* Gradle
-* [Generating a .exe or an installer](expert/exe.md)
-* [Protect a jar](expert/jar.md)
-
-New things added by Oracle
-
-* [Records](expert/records.md) (since Java16)
-
-<hr class="sl">
-
-## Sources
-
-[References](_files/ref.md)

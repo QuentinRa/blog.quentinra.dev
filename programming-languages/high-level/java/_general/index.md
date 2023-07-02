@@ -78,7 +78,7 @@ int xxx = (int) 13.0f;
 // To parse into an "int", you use Integer 🤖
 int xxx = Integer.parseInt("13");
 
-// From primitive to object (☠️)
+// From primitive to object (☠️, implicit now)
 Float a = Float.valueOf(5);
 float b = a.floatValue();
 ```
@@ -96,7 +96,7 @@ System.err.println("Hello, Exception."); // errors
 
 #### Operators
 
-Here is a list of most operators.
+Here is a list of most [operators](/programming-languages/_paradigm/stuff/operators.md).
 
 ```java
 // arithmetic
@@ -111,7 +111,7 @@ x++;                      // same as x = x + 1
 if (5 == 5) {}         // true
 if (5 != 5) {}         // false
                        // see also: >, >=, <, <=
-if (!false) {}         // logicial NOT => true
+if (!false) {}         // logical NOT => true
 if (true || false) {}  // logical OR => true
 if (true && false) {}  // logical AND => false
 if (true ^ false) {}   // logical XOR => true
@@ -518,4 +518,10 @@ public class Math {
 
 According to some tests, the static constructor seems to be called when the class is loaded in memory, which is not necessarily at the start of the program.
 </details>
-</div></div>
+
+* native keyword
+* `requires jdk.crypto.cryptoki;` (https module info)
+* [baeldung](https://www.baeldung.com/)
+* [Java](https://en.wikibooks.org/wiki/Java_Programming)
+* [yguard](https://www.yworks.com/products/yguard) (Obfuscator, Shrink), [proguard](https://www.guardsquare.com/proguard) (Shrink)
+</div></div> 
