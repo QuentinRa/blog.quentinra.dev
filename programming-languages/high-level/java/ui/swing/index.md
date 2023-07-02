@@ -207,6 +207,83 @@ cardLayout.previous(aComponent);    // show the previous view
 
 <hr class="sep-both">
 
+## Event listeners
+
+<div class="row row-cols-md-2"><div>
+
+Listeners allow us to react when the user interacts with the view, such as clicking on a button.
+
+```
+aComponent.addMouseListener(/* a listener here */);
+aComponent.removeMouseListener(/* a listener here */);
+aButton.addActionListener(/* a listener here */);
+aJFrame.addWindowListener(/* a listener here */);
+// see also: MouseMotionListener, MouseWheelListener...
+```
+
+#### Mouse listener
+
+You can also use `MouseAdapter` (abstract class) implementing MouseListener, MouseWheelListener, and MouseMotionListener.
+
+```java
+public class MyMouseListener implements MouseListener {
+    @Override // click
+    public void mouseClicked(MouseEvent e){}
+    @Override // hover (entering)
+    public void mouseEntered(MouseEvent e){}
+    @Override // hover (exiting)
+    public void mouseExited(MouseEvent e){}
+    @Override
+    public void mousePressed(MouseEvent e){}
+    @Override
+    public void mouseReleased(MouseEvent e){}
+}
+```
+</div><div>
+
+#### Action listener
+
+A listener to react when a button is pressed.
+
+```java
+// public class MyActionListener implements ActionListener
+// public void actionPerformed(ActionEvent e)
+aButton.addActionListener(e -> {
+    // get the button (if needed)
+    Object source = e.getSource();
+    JButton button = (JButton) source;
+    // get the text of the button (if needed)
+    String text = e.getActionCommand();
+    // ...
+});
+```
+
+#### Window listener
+
+You can also use `WindowAdapter` (abstract class) implementing WindowListener, WindowStateListener, and WindowFocusListener
+
+```java
+public class MyWindowListener implements WindowListener {
+    @Override // never called ?
+    public void windowClosed(WindowEvent e){}
+    @Override // before closing
+    public void windowClosing(WindowEvent e){}
+    @Override
+    public void windowActivated(WindowEvent e){}
+    @Override
+    public void windowDeactivated(WindowEvent e){}
+    @Override
+    public void windowIconified(WindowEvent e){}
+    @Override
+    public void windowDeiconified(WindowEvent e){}
+    @Override // never called ?
+    public void windowOpened(WindowEvent e){}
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

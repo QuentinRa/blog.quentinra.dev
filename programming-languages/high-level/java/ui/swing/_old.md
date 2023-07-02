@@ -1,46 +1,4 @@
-# Swing and AWT
-
-Events and listeners
-
-```java
-// events
-aComponent.addMouseListener(null /* listener here */);
-aComponent.removeMouseListener(null /* listener here */);
-```
-
-We are calling listeners, classes having a function (handler) called when an action (click, mouse moved, ..) is done. Inside the handler, you will write the code specific to the event.
-
-You can add listener using methods like `addMouseListener` or `addActionListener` (only on buttons). You can use `addWindowListener` on Windows like a `JFrame`.
-
-* [ActionListener](listenersn-listener.md)
-* [MouseListener](listeners-listener.md)
-* [WindowListener](listenersw-listener.md)
-* MouseMotionListener (drag and drop)
-* MouseWheelListener (scroll)
-
-Lazy (or smart?) ones are using the lambda syntax to declare a listener since they are functional interfaces
-
-```java
-JButton b;
-// ...
-b.addActionListener(e -> {
- // code ici
-});
-
-// or
-b.addActionListener(new ActionListener(){
- @Override
- public void actionPerformed(ActionEvent e){
-        // code ici
- }
-});
-```
-
-but you should create a class (be it inner or not) since that's way better (in most cases).
-
-<hr class="sl">
-
-## Drawing
+# Drawing
 
 Extends JComponent and override `paintComponent` method. Do anything you want inside.
 
