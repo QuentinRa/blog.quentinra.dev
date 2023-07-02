@@ -1,22 +1,5 @@
 # Swing and AWT
 
-[Go back](../../_old#graphical-interfaces)
-
-Swing and AWT are the native way of creating graphical interfaces. AWT was the first library but was quite slow so Swing got introduced. Now, both are the same.
-
-```java
-// awt
-import java.awt.*;
-// swing
-import javax.swing.*;
-```
-
-Why I hating Swing/AWT? A lot of graphical bugs. Using some repaint and co. on components without a background may also draw remnant of the previous draw... I created the same app in Swing and Javafx and in JavaFX the app is faster, with less code and easier to change since I'm using fxml so don't use Swing/AWT.
-
-<hr class="sl">
-
-## Components
-
 Swing and AWT have a lot of similar classes, in SWING the names are starting with a `J then the AWT name.
 
 All swing components extends `JComponent` while AWT components are extending `Component`.

@@ -37,9 +37,7 @@ List of courses that have note which were not added yet.
 
 **Tools and Frameworks > Editors**
 
-* JetBrains IDEs
 * JetBrains plugin development
-* Online editors
 
 **Tools and Frameworks > Build tools**
 
