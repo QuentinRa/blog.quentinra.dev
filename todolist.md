@@ -27,7 +27,7 @@ List of courses that have note which were not added yet.
 **Programming Languages > High-Level Languages**
 
 * C#
-* Java
+* Java, LibGDX
 * OCaml
 
 **Tools and Frameworks**

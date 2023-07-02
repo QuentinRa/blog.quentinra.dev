@@ -284,14 +284,60 @@ public class MyWindowListener implements WindowListener {
 
 <hr class="sep-both">
 
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
+## Drawing
 
 <div class="row row-cols-md-2"><div>
 
-* [old](_old.md)
+You can draw your own component by extending `JComponent` and overriding `paintComponent`.
+
+```
+import javax.swing.JComponent;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Font;
+import java.awt.RenderingHints;
+
+public class Demo extends JComponent {
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        // make a copy just in case
+        Graphics2D copy = (Graphics2D) g.create();
+
+        // do not draw a background if not opaque
+        if (isOpaque()) {
+            copy.setColor(getBackground());
+            copy.fillRect(0, 0, getWidth(), getHeight());
+        }
+
+        // ...
+    }
+}
+```
 </div><div>
 
+Some parts of code you might use:
 
+```java!
+// drawing options
+RenderingHints rh = new RenderingHints(
+    RenderingHints.KEY_ANTIALIASING,
+    RenderingHints.VALUE_ANTIALIAS_OFF);
+copy.setRenderingHints(rh);
+
+// color, font, ...
+copy.setColor(Color.RED);
+copy.setFont(new Font("name", Font.PLAIN, 20));
+
+// forms
+copy.drawLine(int x1, int y1, int x2, int y2);
+copy.drawPolygon( int[] xPoints, int[] yPoints, int nPoints);
+copy.drawRect(int x, int y, int width, int height);
+// ...
+
+// images
+// (Toolkit.getDefaultToolkit().getImage(path) ???)
+copy.drawImage(Image img, int x, int y, ImageObserver observer)
+```
 </div></div>
