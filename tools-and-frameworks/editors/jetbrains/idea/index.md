@@ -46,7 +46,9 @@ Navigate to the `Libraries` tab. Click on `+`. By selecting "Java", you can impo
 
 IDEA natively supports [JUnit5](https://www.jetbrains.com/help/idea/junit.html). Simply write a `@Test` in a class, then they will prompt you to import JUnit5.
 
-For JUnit4, [you need to do it manually](stuff/junit4.md).
+For JUnit4, [you **may** have to do it manually](stuff/junit4.md).
+
+🔥 Use `CTRL+SHIFT+T` to generate a test class.
 </div><div>
 
 #### Run Configurations

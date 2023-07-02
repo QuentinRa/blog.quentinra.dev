@@ -77,6 +77,61 @@ Use `CTRL+ENTER` to manually trigger autocompletion.
 
 <hr class="sep-both">
 
+## Shortcuts
+
+<div class="row row-cols-md-2"><div>
+
+🔥 There is a search menu to look for files (`CTRL+SHIFT+N`), settings (`CTRL+SHIFT+A`). Open it with `Double Shift`.
+
+#### Editing shortcuts
+
+* <kbd>CTRL+C</kbd>, <kbd>CTRL+V</kbd>, <kbd>CTRL+X</kbd>, <kbd>CTRL+A</kbd>, <kbd>CTRL+F</kbd>: common ones
+* <kbd>CTRL+D</kbd>: duplicate line or selection
+* <kbd>SHIFT+ARROWS</kbd>: select a lot of lines
+* <kbd>CTRL+Z</kbd>: undo
+* <kbd>CTRL+SHIFT+Z</kbd>: redo 🙄
+* <kbd>CTRL+SHIFT+F</kbd>: look for a word in a scope <small>(project, folder...)</small>
+
+Use `CTRL+SHIFT+U` to toggle uppercase/lowercase.
+
+</div><div>
+
+#### Programming-specific
+
+Comments
+
+* <kbd>CTRL+/</kbd>: comment selected lines <small>(inline comment, such as //)</small>
+* <kbd>CTRL+SHIFT+/</kbd>: comment selected lines <small>(block comment, such as /*)</small>
+
+Generation
+
+* <kbd>ALT+INSERT</kbd>: generate getters, setters, methods...
+* <kbd>CTRL+ALT+T</kbd>: wrap selection inside a `if`/`for`/...
+* <kbd>CTRL+ALT+MAJ+U</kbd> (paid): generate UML of selected files
+
+Navigation
+
+* <kbd>SHIFT+MouseLeft</kbd>: on a function call/..., navigate to the source
+* <kbd>ALT+F7</kbd>: on a function/variable, list users
+* <kbd>CTRL+SHIFT+E</kbd>: show the last opened/edited files
+</div></div>
+
+<hr class="sep-both">
+
+## Interface
+
+<div class="row row-cols-md-2"><div>
+
+The interface has often changed over the years, especially as they are moving to a more compact interface.
+
+👉 Use `CTRL+E` to see available menus.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
