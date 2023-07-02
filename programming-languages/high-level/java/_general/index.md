@@ -524,4 +524,5 @@ According to some tests, the static constructor seems to be called when the clas
 * [baeldung](https://www.baeldung.com/)
 * [Java](https://en.wikibooks.org/wiki/Java_Programming)
 * [yguard](https://www.yworks.com/products/yguard) (Obfuscator, Shrink), [proguard](https://www.guardsquare.com/proguard) (Shrink)
+* lamba expressions (() -> {}, () -> statement)
 </div></div> 

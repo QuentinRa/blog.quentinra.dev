@@ -53,6 +53,60 @@ BufferedOutputStream writer = new BufferedOutputStream(new FileOutputStream(file
 
 <hr class="sep-both">
 
+## Threads
+
+<div class="row row-cols-md-2"><div>
+
+Threads allow us to run tasks in parallel 🔥. We will create a `Runnable` with the code executed by the thread.
+
+```java
+// version 1
+Runnable r = () -> {
+    System.out.println("Hello, World!");
+};
+// version 2
+class CodeRunByTheThread implements Runnable {
+	@Override
+	public void run() {
+		System.out.println("Hello, World!");
+	}
+}
+Runnable r = new CodeRunByTheThread();
+```
+
+To create and execute a thread:
+
+```java
+Thread thread = new Thread(r);
+thread.start();
+```
+
+👉 Use `Thread.sleep(duration);` to wait for a duration.
+</div><div>
+
+When multiple threads try to access a variable, there may be concurrency problems 💥. You can prevent them by only allowing one thread at a time to call a method using `synchronized`:
+
+```java
+[...]
+    public synchronized void myMethod() { [...] }
+[...]
+```
+
+Otherwise, you can use a `mutex` and `synchronized` to only allow the one that could lock the mutex to run some code:
+
+```java
+private Object lock = new Object();
+
+public void myMethod() {
+    synchronized (lock) { /* ... */ }
+}
+```
+
+⚠️ If you're using threads to update a variable, you need to mark it as `volatile`, to ensure other threads will notice the variable changed. 
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 <div class="row row-cols-md-2"><div>
