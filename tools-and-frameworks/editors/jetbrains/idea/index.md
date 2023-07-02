@@ -32,6 +32,11 @@ Press `CTRL+ALT+MAJ+S` or `⚙️ > Project Structure`.
 
 Navigate to the `Project` tab. From there, you can **download** a JDK, or **select** the JDK used for this project.
 
+#### Add libraries
+
+Press `CTRL+ALT+MAJ+S` or `⚙️ > Project Structure`.
+
+Navigate to the `Libraries` tab. Click on `+`. By selecting "Java", you can import JARs. By selecting maven, you can download JARs from [maven repository](https://mvnrepository.com/) <small>(use the search bar within the IDE)</small>.
 
 #### Junit
 
