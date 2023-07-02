@@ -7,6 +7,8 @@
 <p class="text-center">
 <img src="/courses/tools-and-frameworks/editors/jetbrains/phpstorm/_images/logo.png" width="100"/>
 </p>
+
+👉 JetBrains IDEs share many features [explained here](../_general/index.md).
 </div><div>
 
 **Features**
