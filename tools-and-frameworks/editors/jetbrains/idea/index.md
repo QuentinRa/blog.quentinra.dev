@@ -1,21 +1,23 @@
 # IntelliJ IDEA
 
-Examples of cases where you might be using it
+<div class="row row-cols-md-2"><div>
 
-* code in `Java` (with or not with `Gradle` and `Maven`)
-* code in `Kotlin`
-* code in `R` (with a plugin)
-* code in `OCaml` (with a plugin)
-* code in `JavaFX` and with Scene builder
+...
+</div><div>
 
-One thing to note is the menu `Project structure`(`CTRL+ALT+MAJ+S`). You can
+...
+</div></div>
 
-* change your JDK
-* change your module configuration (set source folder, tests folder, output folder, ...)
-* add libraries (such as JUnit4, ...)
+<hr class="sep-both">
 
-Then some tutorials
+## 👻 To-do 👻
 
-* [Run](run.md)
-* [Run tests](tests.md)
-* [Project Structure](project-structure.md)
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [old](_old.md)
+</div><div>
+
+
+</div></div>

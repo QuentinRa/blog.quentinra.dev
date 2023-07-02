@@ -1,12 +1,23 @@
 # PHPStorm
 
-Examples of cases where you might be using it
+<div class="row row-cols-md-2"><div>
 
-* code in `PHP`
-* code in `HTML/CSS/JS` or `Boostrap` (but WebStorm might be wiser)
-* code in `Node.js`
+...
+</div><div>
 
-Please note that you can directly code on a server, which may be useful for those that were uploading their files each time they changed on a server.
+...
+</div></div>
 
-* [Remote working](remote.md)
-* [Launch website](start.md)
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [old](_old.md)
+</div><div>
+
+
+</div></div>
