@@ -24,6 +24,59 @@ And in each IDE, some languages, frameworks, and build tools have additional fea
 
 <hr class="sep-both">
 
+## Running some code
+
+<div class="row row-cols-md-2"><div>
+
+There is a green play icon next to code that you can run:
+
+![run](_images/run.png)
+
+This will create a **Run configuration**, which is a wrapper to all information related to the execution of your program. You could add compiler option, program arguments...
+</div><div>
+
+You can create, edit, or select a configuration here:
+
+![run_config](_images/run_config.png)
+</div></div>
+
+<hr class="sep-both">
+
+## Basic file edition
+
+<div class="row row-cols-md-2"><div>
+
+When coding, the IDE will highlight or underline problems.
+
+<div class="row row-cols-md-2"><div>
+
+![editing](_images/editing.png)
+</div><div>
+
+* 🟥: this code won't compile
+* 🟨: possible problem/warning
+* 🟩: there may be a typo
+* 🌫️: unused value or variable
+
+In practice, there are more variations according to the specific problem.
+</div></div>
+</div><div>
+
+#### Quick fixes
+
+By hovering a problem, you'll have an explanation, along with suggested fixes. There is the `ALT+ENTER` shortcut for all quick fixes.
+
+![Quick fixes](_images/quick_fixes.png)
+
+#### Autocompletion
+
+When writing something, use `TAB` to select a choice among the suggested list. Use arrows to move up/down.
+
+Use `CTRL+ENTER` to manually trigger autocompletion.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

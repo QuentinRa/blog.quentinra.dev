@@ -2,13 +2,6 @@
 
 JetBrains's IDEs are underlining in
 
-* <span class="text-danger">red</span>: errors
-* <span class="text-my-orange">yellow</span>: warnings
-* <span class="text-success">green</span>: typos
-* or color in <span class="text-muted">grey</span> unused variables
-
-You may click on an underlined word and press `alt+enter` to see a quick fix of it.
-
 * [Interface](presentation/interface.md)
 * [Shortcuts](presentation/shortcuts.md)
 * [Free tips](presentation/tips.md)
