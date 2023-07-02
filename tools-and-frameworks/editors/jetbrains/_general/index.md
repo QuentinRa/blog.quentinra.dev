@@ -119,6 +119,8 @@ Navigation
 * <kbd>SHIFT+MouseLeft</kbd>: on a function call/..., navigate to the source
 * <kbd>ALT+F7</kbd>: on a function/variable, list users
 * <kbd>CTRL+SHIFT+E</kbd>: show the last opened/edited files
+
+👉 Using `todo` or `fixme` in a comment, mark it as a TO-DO.
 </div></div>
 
 <hr class="sep-both">
@@ -145,11 +147,21 @@ The context menu is the left-click menu. These are worth a mention:
 * Local History 🖼️: all changes to a file
 </div><div>
 
+#### GIT 🎒
+
+There are two tabs: the "commit" tab (`ALT+0`), to commit and push, and the "git" tab (`ALT+9`), to see commits, change branch...
+
 #### Refactor 🧼
 
 You can refactor <small>(rename)</small> variables, functions, files. Once you do try, you'll see a list of all detected locations that use the element.
 
 ✨ Before confirming the refactoring, you can exclude or remove unwanted changes.
+
+#### Snippets 🚀
+
+Navigate to `Settings > Editor > Live template`. Create a new live template. Select the scope where it can be used.
+
+You can create variables using `$variable_name$`.
 </div></div>
 
 <hr class="sep-both">
