@@ -270,6 +270,24 @@ try (FileWriter writer = new FileWriter("xxx.properties")) {
 
 <hr class="sep-both">
 
+## JAR files
+
+<div class="row row-cols-md-2"><div>
+
+[JAR](https://docs.oracle.com/javase/tutorial/deployment/jar/index.html) files are used to bundle JAVA code. Some are executable, while others are libraries that can be used in other projects. It can contain files <small>(images...)</small>, libraries, and other stuff needed by your program. 🗃️
+
+```shell!
+$ java -jar some_jar.jar # execute
+```
+
+⚠️ Once bundled, files inside the JAR cannot be modified.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 <div class="row row-cols-md-2"><div>
@@ -282,5 +300,5 @@ try (FileReader reader = new FileReader(file)) {
 ```
 </div><div>
 
-...
+* Complete JAR notes (common functions/asset handling...)
 </div></div>

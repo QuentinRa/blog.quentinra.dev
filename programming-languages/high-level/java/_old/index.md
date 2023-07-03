@@ -5,7 +5,6 @@
 * [Protect a jar](expert/jar.md)
 * [Records](expert/records.md) (since Java16)
 * [Databases / API](advanced/database.md)
-* [Preferences / Properties](expert/saving-data.md)
 
 <hr>
 
