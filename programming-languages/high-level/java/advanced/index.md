@@ -65,6 +65,8 @@ BufferedReader reader = new BufferedReader(fileReader);
 ```
 
 ⚠️ ️ Both raise a [verified `FileNotFoundException`]() that must be caught.
+
+💡 See also: `FileWriter` <small>(write into text files)</small>, and `File` <small>(file operations)</small>.
 </div></div>
 
 <hr class="sep-both">
@@ -239,7 +241,31 @@ preferences.remove("key");                       // delete
 ```
 </div><div>
 
-...
+#### Properties
+
+Properties are `.properties` files such as `gradle.properties`. See [INI](/programming-languages/others/data/ini.md).
+
+```java
+try (FileReader reader = new FileReader("xxx.properties")) {
+    final Properties p = new Properties();
+    p.load(reader);
+    // read values
+    String value = p.getProperty("key", "default");
+} catch (IOException e) {
+    throw new RuntimeException(e);
+}
+```
+
+```java
+try (FileWriter writer = new FileWriter("xxx.properties")) {
+    final Properties p = new Properties();
+    // add/set properties
+    p.put("key", "value");
+    p.store(writer, null);
+} catch (IOException e) {
+    throw new RuntimeException(e);
+}
+```
 </div></div>
 
 <hr class="sep-both">
