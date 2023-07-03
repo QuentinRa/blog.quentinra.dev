@@ -11,9 +11,9 @@ Since the Java course was too long, some content for more advanced users was mov
 
 Files, and sockets <small>(networking)</small> are two examples of streams. We read in an `InputStream` 📖, and we write in an `OutputStream` ✍️. There is also:
 
-* `System.in`: standard input stream <small>(terminal input)</small>
-* `System.out`: standard output stream <small>(terminal output)</small>
-* `System.err`: error output stream  <small>(terminal output)</small>
+* `System.in`: standard input stream <small>(terminal input, stdin)</small>
+* `System.out`: standard output stream <small>(terminal output, stdout)</small>
+* `System.err`: error output stream  <small>(terminal output, stderr)</small>
 
 ```java
 // import java.io.*;
@@ -30,6 +30,16 @@ os.write(5);                  // write one
 
 ⚠️ ️ Both raise a [verified `IOException`]() that must be caught. Whether you have one or multiple `try-catch` is up to your needs.
 
+If you open a stream <small>(not stdin/...)</small>, you have to close it. A new alternative is the `try-ressource` which automatically close a resource.
+
+```java
+// try-with-resources
+try (InputStream is = ...) {
+    // ...
+}
+```
+
+🔥 When closing a buffer, any nested stream is automatically closed.
 </div><div>
 
 #### Buffers
@@ -40,7 +50,10 @@ We usually wrap streams within **buffers** to read more characters in one go. Ea
 // for character streams:
 BufferedReader reader = new BufferedReader(new InputStreamReader(is));
 BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os));
-String s = reader.readLine();     // read a line or NULL
+String line;
+while((line = reader.readLine()) != null) {
+    // read line by line
+}
 writer.write("....");             // write a line
 writer.newLine();                 // write a \n or \r\n
 // for binary streams:
@@ -291,13 +304,6 @@ $ java -jar some_jar.jar # execute
 ## 👻 To-do 👻
 
 <div class="row row-cols-md-2"><div>
-
-```java
-// try-with-resources
-try (FileReader reader = new FileReader(file)) {
-    // ...
-}
-```
 </div><div>
 
 * Complete JAR notes (common functions/asset handling...)
