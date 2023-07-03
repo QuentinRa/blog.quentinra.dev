@@ -8,47 +8,63 @@ Since the Java course was too long, some content for more advanced users was mov
 
 <div class="row row-cols-md-2"><div>
 
-Files, and sockets <small>(networking)</small> are two examples of streams. We read in `InputStream` 📖, and write in an `OutputStream` ✍️. There is also:
 
-```java!
-System.in           // standard input stream
-System.out          // standard output stream
-System.err          // error output stream
+Files, and sockets <small>(networking)</small> are two examples of streams. We read in an `InputStream` 📖, and we write in an `OutputStream` ✍️. There is also:
+
+* `System.in`: standard input stream <small>(terminal input)</small>
+* `System.out`: standard output stream <small>(terminal output)</small>
+* `System.err`: error output stream  <small>(terminal output)</small>
+
+```java
+// import java.io.*;
+InputStream is = System.in;
+OutputStream os = System.out;
 ```
 
 ☠️ With in input/output stream, we can only read/write integers:
 
 ```java
-// import java.io.IOException;
-// import java.io.InputStream;
-// import java.io.OutputStream;
-InputStream reader = System.in;   // example
-OutputStream writer = System.out; // example
-int read = reader.read();         // read one
-writer.write(5);                  // write one
+int read = is.read();         // read one
+os.write(5);                  // write one
 ```
+
+⚠️ ️ Both raise a [verified `IOException`]() that must be caught. Whether you have one or multiple `try-catch` is up to your needs.
+
 </div><div>
 
-So, we usually wrap them within a **buffer**.
+#### Buffers
 
-```
-BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));   // example
-BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out)); // example
-String s = reader.readLine();     // read a line
-writer.write("....");             // write a line
-writer.newLine();                 // write a \n or \r\n
-```
-
-⚠️ Reading/writing may fail. You need to [try-catch]() every `IOException`. Whether you have one or multiple `try-catch` is up to your needs.
-
-#### Streams of bytes
-
-Streams of bytes are not using BufferedReader/Writer.
+We usually wrap streams within **buffers** to read more characters in one go. Each read/write still raise a [verified `IOException`]() to catch.
 
 ```java
-BufferedInputStream reader = new BufferedInputStream(new FileInputStream(file));
-BufferedOutputStream writer = new BufferedOutputStream(new FileOutputStream(file));
+// for character streams:
+BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os));
+String s = reader.readLine();     // read a line or NULL
+writer.write("....");             // write a line
+writer.newLine();                 // write a \n or \r\n
+// for binary streams:
+BufferedInputStream reader = new BufferedInputStream(is);
+BufferedOutputStream writer = new BufferedOutputStream(os);
 ```
+
+#### Files
+
+For **binary** files, you can use:
+
+```java
+InputStream is = new FileInputStream("file");
+OutputStream os = new FileOutputStream("file");
+```
+
+Otherwise, for **text** files, you can use:
+
+```java
+FileReader fileReader = new FileReader("file");
+BufferedReader reader = new BufferedReader(fileReader);
+```
+
+⚠️ ️ Both raise a [verified `FileNotFoundException`]() that must be caught.
 </div></div>
 
 <hr class="sep-both">
