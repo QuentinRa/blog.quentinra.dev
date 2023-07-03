@@ -208,6 +208,42 @@ o.flush();
 
 <hr class="sep-both">
 
+## Properties and Preferences
+
+<div class="row row-cols-md-2"><div>
+
+Properties and preferences are two common ways of storing user settings, such as the user language, the theme...
+
+#### Preferences
+
+Preferences are available at two scopes: user and system. Each preference is associated with a class.
+
+* Static <small>(replace `XXX.class` with any class)</small>
+
+```java
+final Preferences preferences = Preferences.userNodeForPackage(XXX.class);
+```
+
+* Instance
+
+```java
+final Preferences preferences = Preferences.userNodeForPackage(getClass());
+```
+
+Preferences are dictionaries of key-values.
+
+```java
+preferences.put("key", "value");                 // save
+String stored = preferences.get("key", default); // load
+preferences.remove("key");                       // delete
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 <div class="row row-cols-md-2"><div>
