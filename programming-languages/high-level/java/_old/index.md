@@ -2,9 +2,7 @@
 
 * [Modules](expert/modules.md)
 * [Generating a .exe or an installer](expert/exe.md)
-* [Protect a jar](expert/jar.md)
 * [Records](expert/records.md) (since Java16)
-* [Databases / API](advanced/database.md)
 
 <hr>
 

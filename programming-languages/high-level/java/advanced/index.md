@@ -283,6 +283,29 @@ try (FileWriter writer = new FileWriter("xxx.properties")) {
 
 <hr class="sep-both">
 
+## Web requests
+
+<div class="row row-cols-md-2"><div>
+
+You can do an HTTP request using native code as follows:
+
+```java
+try {
+    URL url = new URL("https://example.com");
+    HttpURLConnection req = (HttpURLConnection) url.openConnection();
+    try (InputStream is = req.getInputStream()) {
+        // refer to the streams section
+    }
+    req.disconnect();
+} catch (IOException e) {
+    throw new RuntimeException(e);
+}
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## JAR files
 
 <div class="row row-cols-md-2"><div>
@@ -301,10 +324,27 @@ $ java -jar some_jar.jar # execute
 
 <hr class="sep-both">
 
+## Libraries
+
+<div class="row row-cols-md-2"><div>
+
+#### JSON
+
+You can use [JSON-java](https://github.com/stleary/JSON-java) to parse JSON.
+
+```java
+JSONObject o = new JSONObject("some JSON");
+String string = o.getString("...");
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 <div class="row row-cols-md-2"><div>
-</div><div>
 
 * Complete JAR notes (common functions/asset handling...)
+</div><div>
 </div></div>
