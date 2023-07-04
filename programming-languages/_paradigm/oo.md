@@ -125,6 +125,35 @@ Common modifiers are:
 
 <hr class="sep-both">
 
+## Inheritance
+
+<div class="row row-cols-md-2"><div>
+
+Inheritance allows classes to be based on another class. They will inherit [attributes](#attributes) and [methods](#methods), and may be able to:
+
+* ✍️ Add new methods and attributes
+* 📝 Change the behavior of existing methods
+
+The **ancestor** is usually called:
+
+* parent
+* superclass
+* baseclass
+
+The **inheritor** is usually called
+
+* child/heir
+* subclass
+* derived class
+
+👉 Most languages have a root class, such as `Object` in Java.
+
+👉 Many languages forbid multiple inheritance <small>(multiple parents)</small>.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
