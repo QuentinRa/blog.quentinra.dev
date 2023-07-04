@@ -395,13 +395,65 @@ johnDoe = null;
 
 <hr class="sep-both">
 
+## Inheritance and abstraction
+
+<div class="row row-cols-md-2"><div>
+
+Java implements [inheritance](/programming-languages/_paradigm/oo.md#inheritance) with the keyword `extends`. All classes inherit from [Object](#object) <small>(implicitly)</small>, and classes can only extend **one** class.
+
+👉 Classes inherit any public or protected members <small>(instance or static)</small>.
+
+👉 Final classes (`final class XXX {}`) can't be inherited from.
+
+```java
+public class Person {           // implicit extends Object
+    private final String name;
+
+    protected Person(String name) {
+        this.name = name;
+    }
+
+    // can only be used by inheritor
+    protected String getName() { return name; }
+}
+```
+
+</div><div>
+
+The child class uses `super` to reference the parent class.
+
+```java
+public class CEO extends Person {
+    private final String company;
+
+    public CEO(String name, String company) {
+        super(name); // call to parent constructor
+        this.company = company;
+    }
+
+    @Override
+    public String getName() { return super.getName(); }
+    public String getCompany() { return company; }
+}
+```
+
+```java
+Person person = new CEO("name", "company");
+                        // can't call getName/...
+CEO ceo = (CEO) person;
+ceo.getName();          // ok
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Well-known types
 
 <div class="row row-cols-md-2"><div>
 
 #### Object
 
-Every class inherit from the class Object implicitly.
+Every class inherited from the class Object implicitly.
 
 ```java
 class Object {
@@ -524,6 +576,7 @@ According to some tests, the static constructor seems to be called when the clas
 * [baeldung](https://www.baeldung.com/)
 * [Java](https://en.wikibooks.org/wiki/Java_Programming)
 * [yguard](https://www.yworks.com/products/yguard) (Obfuscator, Shrink), [proguard](https://www.guardsquare.com/proguard) (Shrink)
+* override, inheritance changing visibility...
 * lamba expressions (() -> {}, () -> statement)
 
 ```
