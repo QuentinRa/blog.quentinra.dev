@@ -255,9 +255,9 @@ int main() {
 
 <div class="row row-cols-md-2"><div>
 
-In C++, structures were enhanced, and are the same as the newly introduced classes, aside from one exception 🎯: members <small>(attributes/methods)</small> are public <small>(by default)</small> in a structure, while in a class, they are private <small>(by default)</small>.
+In C++, structures were enhanced and are now similar to the newly introduced [classes](/programming-languages/_paradigm/oo.md#classes-and-objects), with one exception 🎯: members <small>(attributes and methods)</small> of a structure are public by default, whereas in a class, they are private by default.
 
-➡️ We usually use structures for "data classes" <small>(ex: Person)</small>, and classes for everything else <small>(ex: XXXManager, XXXParser...)</small>.
+We usually use structures for "data classes" <small>(ex: Person)</small>, and classes for everything else <small>(ex: XXXManager, XXXParser...)</small>.
 
 ```cpp
 struct XXX {
@@ -303,6 +303,8 @@ We can create public, private, and protected groups in which we will declare att
 
 #### Attributes
 
+See also: [attributes](/programming-languages/_paradigm/oo.md#attributes).
+
 ```cpp
 struct XXX {
 private: // usually private
@@ -320,6 +322,8 @@ int XXX::ZZZ = 0;
 </div><div>
 
 #### Methods
+
+See also: [methods](/programming-languages/_paradigm/oo.md#methods).
 
 ```cpp
 struct XXX {
@@ -344,7 +348,7 @@ void XXX::ddd() { std::cout << x; }
 
 #### Constructors
 
-Every class has a public, parameterless constructor called the **default constructor**. Explicitly adding a constructor will delete it.
+Every class has a public, parameterless [constructor](/programming-languages/_paradigm/oo.md#constructors). called the **default constructor**. Explicitly adding a constructor will delete it.
 
 ```cpp
 struct XXX {
@@ -449,7 +453,7 @@ Every operator is a function, and we can overload them, aside from: `::` <small>
 
 To use an operator, such as `+=`, you can do `x+=?` or `x.operator+=(?)`...
 
-🎯 Note that the **return value** and the **type** of the arguments is **up to you!** Only the number of arguments is fixed.
+🎯 Note that the **return value** and the **type** of the operands is **up to you**! Only the number of operands is fixed.
 
 <details class="details-n">
 <summary>Internal operators: <code>++</code>, <code>--</code>, <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>=</code>, <code>-</code>, <code>()</code>, <code>[]</code>...</summary>
