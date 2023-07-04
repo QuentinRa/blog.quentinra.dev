@@ -132,7 +132,7 @@ Common modifiers are:
 Inheritance allows classes to be based on another class. They will inherit [attributes](#attributes) and [methods](#methods), and may be able to:
 
 * ✍️ Add new methods and attributes
-* 📝 Change the behavior of existing methods
+* 📝 Change the behavior of existing methods (**override**)
 
 The **ancestor** is usually called:
 
@@ -150,6 +150,33 @@ The **inheritor** is usually called
 
 👉 Many languages forbid multiple inheritance <small>(multiple parents)</small>.
 </div><div>
+
+#### Polymorphism
+
+Polymorphism refers to the ability to treat objects of child classes as objects of their parent class.
+
+```java
+class A {}           // A is a parent class of B and C
+class B extends A {} // B is a child class of A
+class C extends A {} // C is a child class of A
+
+B b = new B();       // Stores as B
+b.someMethodInA();   // Calls B's method (if overriden)
+b.someMethodInB();   // Calls B's method
+```
+
+As B and C inherit from A, they can be stored in a variable of type `A`.
+
+```java
+A a = new B();       // Stores as A
+a.someMethodInA();   // Calls B's method (if overriden)
+```
+
+**Liskov substitution principle** refers to the fact that regardless of the child class we use, the program should work as expected.
+
+```
+A a = new B(); // if it works with B, then it works with C
+```
 </div></div>
 
 <hr class="sep-both">
