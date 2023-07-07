@@ -395,7 +395,7 @@ johnDoe = null;
 
 <hr class="sep-both">
 
-## Inheritance and abstraction
+## Inheritance
 
 <div class="row row-cols-md-2"><div>
 
@@ -443,6 +443,18 @@ Person person = new CEO("name", "company");
 CEO ceo = (CEO) person;
 ceo.getName();          // ok
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Abstraction
+
+<div class="row row-cols-md-2"><div>
+
+Abstraction allows us to write a template class that is not usable as if, and need to be implemented by [inheritors](#inheritance). Due to [polymorphism](/programming-languages/_paradigm/oo.md#polymorphism) and [liskov principle](/programming-languages/_paradigm/oo.md#polymorphism), we can still use the abstract class in the code.
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">

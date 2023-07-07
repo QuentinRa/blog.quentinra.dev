@@ -9,10 +9,14 @@
 * [history](beginner/history.md)
 * [Exceptions](beginner/exceptions.md)
 * [Overload](beginner/overload.md) (Surcharge in French)
-* [Inheritance](beginner/inheritance.md)
 * [Override](beginner/override.md)
 * [Abstract classes](beginner/abstract.md)
 * [Interfaces](beginner/interfaces.md)
+
+Inheritance
+
+* subclasses can use superclass static members (protected or public) but you can't write `@Override`, the only thing you can do in a subclass is writing a method with the same name.
+* if a static method is not found in a subclass, then the superclass will be checked.
 
 If we summarize abstract class and interfaces
 
