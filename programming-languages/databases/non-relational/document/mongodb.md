@@ -120,26 +120,41 @@ You can use `$unset: { "name": true }` to remove an attribute.
 You will use `find` or variants to find documents. They usually take two arguments, and return a list of documents.
 
 ```js!
-db.some_collection.find()      // list all documents
+db.some_collection.find()            // list all documents
+db.some_collection.find({}, {})      // list all documents
+db.some_collection.find(filter, projection) // ???
 ```
 
-#### Filter
-
-```js!
-db.some_collection.find()
-db.some_collection.find({})
-db.some_collection.find({}, {})
-```
-</div><div>
-
-#### Projection
+#### Projection parameter
 
 The projection determines which attributes are returned. It's optional, and by default, all attributes are returned.
 
+Here are some examples of projections:
+
 ```js!
-db.some_collection.find(filter)       // all
-db.some_collection.find(filter, {})   // all
-db.some_collection.find(filter, {})   // all
+{}                         // all
+{ name: true }             // name attribute only
+```
+</div><div>
+
+#### Filter parameter
+
+The filter determined which documents are returned. It's optional, and by default, all documents are returned.
+
+Here are some examples of filters:
+
+```js!
+{}                             // no filter
+{ _id: ObjectId('id') }        // find by ID 
+{ name: "xxx" }                // filter by name ==
+{ age: { $gte: 15 } }          // filter by age >= 15
+                               //   $gt (>) $eq (=) $ne (<>)
+                               //   $ne (<>) $lt (<) $lte (<=)
+{ name: { $exists: true } }    // has an attribute "name"
+{ $or: [                       // see also: $and, $nor
+  { name: 'XXX' },
+  { name: 'YYY' }
+] }
 ```
 </div></div>
 
