@@ -8,6 +8,8 @@ MongoDB is a popular **Document** [NoSQL](../index.md) Database. It stores data 
 * [MongoDB Guides](https://www.mongodb.com/docs/guides/)
 
 You can [use Compass GUI](https://www.mongodb.com/products/compass). Otherwise, follow [MongoDB install instructions](https://www.mongodb.com/docs/manual/administration/install-community/) (`mongosh`...), or use the [cloud](https://www.mongodb.com/atlas/database) database.
+
+👉 See my notes about [PHP driver](drivers/mongodb-php.md) and [Node.js driver](drivers/mongodb-node.md).
 </div><div>
 
 The URL is commonly `mongodb://localhost:27017/`.
