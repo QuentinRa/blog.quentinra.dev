@@ -92,11 +92,11 @@ The order of the clauses in a request is `MATCH > WHERE > RETURN > ORDER BY > SK
 
 Use `MATCH` to select nodes/edges. You can chain matches if needed.
 
-```sql!
-MATCH (m:Movie) RETURN m                 -- fetch all movies
-MATCH (m:Movie{released: 2008}) RETURN m -- match + filtering
-MATCH (m), (p) RETURN m, p               -- catesian product
-MATCH g = (:Movie)-[]-() RETURN g        -- store graph
+```cypher
+MATCH (m:Movie) [...]                 // fetch all movies
+MATCH (m:Movie{released: 2008}) [...] // match + filtering
+MATCH (m), (p) [...]                  // catesian product
+MATCH g = (:Movie)-[]-() [...]        // store graph
 ```
 
 #### WHERE `(SQL WHERE)`
@@ -116,7 +116,26 @@ Filter nodes/edges based on a predicate.
 👉 Chain predicates using `AND/OR/XOR`. See also: `NOT/IS`.
 </div><div>
 
-...
+#### RETURN `(SQL SELECT)`
+
+Return specifies which nodes are in the final graph.
+
+```cypher
+[...] RETURN m                    // one node
+[...] RETURN DISTINCT m           // no duplicates results
+[...] RETURN m.title, m.released  // attributes
+[...] RETURN m, n                 // cartesian product 
+```
+
+#### ORDER BY `(SQL ORDER BY)`
+
+Sort results.
+
+```cypher
+[...] ORDER BY m.title       // ASC
+[...] ORDER BY m.title ASC   // ASC
+[...] ORDER BY m.title DESC  // DESC
+```
 </div></div>
 
 <hr class="sep-both">
@@ -125,14 +144,14 @@ Filter nodes/edges based on a predicate.
 
 <div class="row row-cols-md-2"><div>
 
-```sql!
--- released after 2000
+```cypher
+// released after 2000
 MATCH (m) WHERE m:Movie AND exists(m.released) AND m.released > 2000 RETURN m
--- released after 2000 (same)
+// released after 2000 (same)
 MATCH (m:Movie) WHERE exists(m.released) AND m.released > 2000 RETURN m
--- match every node that PRODUCED a movie, and the movie
+// match every node that PRODUCED a movie, and the movie
 MATCH (p)-[:PRODUCED]->(m:Movie) RETURN p, m
--- same using "where"
+// same using "where"
 MATCH (p)--(m) WHERE (p)-[:PRODUCED]->(m:Movie) RETURN p, m
 ```
 </div><div>

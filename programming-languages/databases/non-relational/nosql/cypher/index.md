@@ -50,28 +50,6 @@ RETURN something
 ## Cypher basic clauses
 
 <details class="details-e">
-<summary>RETURN (<code>SQL SELECT</code>)</summary>
-
-```cypher
-MATCH (m:Movie) RETURN m // node
-MATCH (m:Movie) RETURN DISTINCT m // no duplicates results
-MATCH (m:Movie) RETURN m.title, m.released // table with title+released
-MATCH (m:Movie) RETURN {title: m.title, year: m.released} // JSON
-MATCH (m:Movie) RETURN m.title AS title, m.released AS year // rename
-```
-</details>
-
-<details class="details-e">
-<summary>ORDER BY (<code>SQL ORDER BY</code>)</summary>
-
-```cypher
-MATCH (m:Movie) RETURN m.title ORDER BY m.title // ASC
-MATCH (m:Movie) RETURN m.title ORDER BY m.title ASC
-MATCH (m:Movie) RETURN m.title ORDER BY m.title DESC
-```
-</details>
-
-<details class="details-e">
 <summary>LIMIT AND SKIP (<code>SQL LIMIT</code>)</summary>
 
 `SKIP` is used to skip results, while `LIMIT` is used to limit the number of results.
