@@ -91,14 +91,14 @@ db.some_collection.insertMany( [ a_document, ...] )
 See also: `deleteMany(JSONArray)`.
 
 ```js!
-db.persons.deleteOne({ _id: ObjectId('some_id') })
+db.some_collection.deleteOne({ _id: ObjectId('some_id') })
 ```
 </div><div>
 
 #### Update documents
 
 ```js!
-db.persons.updateOne(
+db.some_collection.updateOne(
     { _id: ObjectId('some_id') }, // select
     {
         $set: { "name": "xxx" }   // add or set attributes
@@ -109,6 +109,38 @@ db.persons.updateOne(
 You can use `$unset: { "name": true }` to remove an attribute.
 
 👉 You can use `updateMany` to update an array of documents.
+</div></div>
+
+<hr class="sep-both">
+
+## Find documents
+
+<div class="row row-cols-md-2"><div>
+
+You will use `find` or variants to find documents. They usually take two arguments, and return a list of documents.
+
+```js!
+db.some_collection.find()      // list all documents
+```
+
+#### Filter
+
+```js!
+db.some_collection.find()
+db.some_collection.find({})
+db.some_collection.find({}, {})
+```
+</div><div>
+
+#### Projection
+
+The projection determines which attributes are returned. It's optional, and by default, all attributes are returned.
+
+```js!
+db.some_collection.find(filter)       // all
+db.some_collection.find(filter, {})   // all
+db.some_collection.find(filter, {})   // all
+```
 </div></div>
 
 <hr class="sep-both">

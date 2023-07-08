@@ -182,18 +182,3 @@ db.persons.findOne(
 </div></div>
 
 > **Note**: this is one of the ways to make a relationship between documents. You are simply storing a document inside another. You could give an ObjectId to main referencing another document inside another collection (ex: cars).
-
-<hr class="sl">
-
-## Sources
-
-* <https://www.mongodb.com/basics/examples>
-* <https://docs.mongodb.com/manual/reference/mongo-shell/#command-helpers>
-* <https://docs.mongodb.com/manual/tutorial/insert-documents/>
-* <https://docs.mongodb.com/manual/tutorial/update-documents/>
-* <https://docs.mongodb.com/manual/faq/fundamentals/#how-does-mongodb-address-sql-or-query-injection>
-* <https://betterprogramming.pub/little-bobby-collections-how-to-write-a-mongodb-injection-ad58a4e2d754>
-* <https://stackoverflow.com/questions/46972695/see-setup-a-user-with-mongodb-compass>
-* <https://www.codevscolor.com/pages/mongodb-tutorials/>
-* <https://www.mongodb.com/nodejs-database>
-* <https://scotch.io/@micwanyoike/getting-started-with-mongodb-in-linux>
