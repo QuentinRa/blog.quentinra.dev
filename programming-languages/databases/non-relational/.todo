@@ -9,7 +9,3 @@ host:port> get some_key     # get some value
 host:port> set key value    # set some value
 ...
 ```
-
-BASE (SQL ACID)
-
-GraphQL
