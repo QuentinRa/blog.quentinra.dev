@@ -671,6 +671,13 @@ Stuff that I found, but never read/used yet.
 * `php -m`
 * [phpstan](https://github.com/phpstan/phpstan)
 
+```
+$ php -ini | head
+$ sudo nano /etc/php/v.v/mods-available/xxx.ini # debian
+$ sudo phpenmod xxx
+# https://pecl.php.net/package/xxx
+```
+
 </div><div>
 
 * see generators (yield/...)
