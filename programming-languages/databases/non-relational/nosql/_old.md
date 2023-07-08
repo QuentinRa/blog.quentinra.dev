@@ -1,24 +1,4 @@
-# Cypher
-
-<div class="row row-cols-md-2 mx-0"><div class="align-self-center">
-
-* **Description**: Cypher is Neo4J Graph Query Language
-* **Category**: Graph
-* **Official tutorial**: [Neo4J - Cypher Query Language](https://neo4j.com/developer/cypher/)
-
-[My notes about Cypher](cypher/index.md)
-</div><div>
-
-> * **Account required** 🙄
-> * **Cloud** (free version available) or **self-hosted** (local)
-> * [**Open-source**](https://github.com/neo4j) (10.6k ✨)
-> * The syntax **looks like SQL**
-> * **easy to learn**
-</div></div>
-
-<hr class="sr">
-
-## MongoDB
+# MongoDB
 
 <div class="row row-cols-md-2 mx-0"><div class="align-self-center">
 

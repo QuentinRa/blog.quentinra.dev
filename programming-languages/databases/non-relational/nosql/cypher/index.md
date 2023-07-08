@@ -11,9 +11,6 @@ Cypher is a language close to the SQL language, as you got clauses and the synta
 
 In this course, I will use [this database](https://github.com/memorize-code/memorize-references/raw/main/info/nosql/movies.cypher), created by my teacher, [Stefania Dumbrava](http://web4.ensiie.fr/~stefania.dumbrava/) .
 
-> **Use in another language 🚀**: check the [driver page](https://neo4j.com/developer/language-guides/).<br>
-> **Official documentation 📚**: [Neo4J documentation](https://neo4j.com/developer/get-started/).<br>
-
 <hr class="sl">
 
 ## Core concept

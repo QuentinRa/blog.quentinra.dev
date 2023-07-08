@@ -39,8 +39,8 @@ Document
 
 * MongoDB
 * [RavenDB](https://ravendb.net/)
-* [Apache CouchDB](https://docs.couchdb.org/en/stable/)
 * [RethinkDB](https://rethinkdb.com/)
+* [Apache CouchDB](https://docs.couchdb.org/en/stable/)
 </div><div>
 
 Columnar
@@ -50,7 +50,7 @@ Columnar
 
 Graph
 
-* Neo4j
+* [Neo4j](graph/neo4j.md)
 </div></div>
 
 <hr class="sep-both">
