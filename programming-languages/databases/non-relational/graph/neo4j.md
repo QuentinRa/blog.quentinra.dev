@@ -64,7 +64,18 @@ In a query, we use `()` to represent a node.
 
 #### Edges
 
-...
+In a query, we use `--` to represent an edge.
+
+Similarly to nodes:
+
+* You can capture an edge similarly to a node: `-(v)-`.
+* You can select edges based on a Label: `-(:Label)-`, `-(v:Label)-`.
+* ...
+
+But, you can also add a direction:
+
+* From `a` to `b`: `a-->b`, `a-(v)->b`, etc.
+* From `b` to `a`: `a<--b`, `a<-(v)-b`, etc.
 </div></div>
 
 <hr class="sep-both">
