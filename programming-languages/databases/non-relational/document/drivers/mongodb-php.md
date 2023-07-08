@@ -64,7 +64,7 @@ A simple starter script with no framework:
 <?php
 require 'vendor/autoload.php'; // composer autoloader
 
-$client = new MongoDB\Client('mongodb://xxxx');
+$client = new MongoDB\Client('mongodb://xxx');
 // or
 $client = new MongoDB\Client('mongodb://xxx', [
     'username' => "",
