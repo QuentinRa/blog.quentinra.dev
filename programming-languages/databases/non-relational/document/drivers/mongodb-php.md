@@ -4,10 +4,10 @@
 
 This section is about using [MongoDB](../mongodb.md) in [PHP](/programming-languages/web/php/_general/index.md).
 
-First, you have to install the PHP extension. It can be challenging 😵.
+First, you have to install the PHP extension.
 
 <details class="details-n">
-<summary>Notes on Linux</summary>
+<summary>Linux</summary>
 
 You may [follow this tutorial](https://www.php.net/manual/en/mongodb.installation.pecl.php) or [the documentation](https://www.mongodb.com/docs/drivers/php/).
 
@@ -27,10 +27,11 @@ $ sudo phpenmod mongodb
 $ sudo systemctl restart apache2 # Apache
 ```
 
+To test 👻: `sudo apt install php7.4-mongodb`.
 </details>
 
 <details class="details-n">
-<summary>Notes on Windows</summary>
+<summary>Windows</summary>
 
 You may [follow this tutorial](https://www.php.net/manual/en/mongodb.installation.windows.php).
 
@@ -49,13 +50,13 @@ Edit `php.ini` and add `extension=mongodb.dll` or `extension=mongodb`. Restart y
 
 You should see mongodb in the extension list shown by `phpinfo()`.
 </details>
-</div><div>
 
 Then, you install it using [composer](/programming-languages/web/php/composer/index.md):
 
 ```bash
 composer require mongodb/mongodb
 ```
+</div><div>
 
 A simple starter script with no framework:
 
@@ -63,7 +64,85 @@ A simple starter script with no framework:
 <?php
 require 'vendor/autoload.php'; // composer autoloader
 
-$client = new MongoDB\Client('url');
+$client = new MongoDB\Client('mongodb://xxxx');
+// or
+$client = new MongoDB\Client('mongodb://xxx', [
+    'username' => "",
+    'password' => ""
+]);
 ```
 
+Refer to the [documentation](https://www.mongodb.com/docs/php-library/current/tutorial/).
+</div></div>
+
+<hr class="sep-both">
+
+## Examples
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+#### Get a database
+
+```php!
+$db = $client->db_name;
+$db = $client->{'db_name'};
+```
+
+<br>
+
+#### Get a collection
+
+```php!
+$collection = $db->collection_name;
+$collection = $db->{'collection_name'};
+```
+
+<br>
+
+#### Update a document
+
+```php!
+$result = $collection->updateOne(
+    [ 'attribute' => "value"  ],
+    [
+        '$set' => [ 'attribute' => "new_value"],
+        '$unset' => ['attribute2' => true],
+    ]
+);
+$r = $result->getModifiedCount();
+$r = $result->getMatchedCount();
+```
+
+</div><div>
+
+#### Find documents
+
+```php!
+$result = $collection->find(...)->toArray()
+foreach ($result as $r){
+    // ...
+}
+
+$result = $collection->findOne(...);
+if ($result === null) {
+    // not found
+}
+```
+
+Some examples of values for parameters:
+
+```php!
+$filter = [ 'name' => "..."  ];
+$filter = [ 'name' => ['$exists' => true]  ];
+
+$projection =
+    [
+        'projection' => [
+          'name' => true,
+          'age' => true,
+          'email' => true
+        ]
+    ]
+;
+```
 </div></div>
