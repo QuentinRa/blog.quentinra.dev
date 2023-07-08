@@ -14,41 +14,6 @@ use database_name
 db.createUser( { user: "myuser", pwd: "password", roles: ["readWrite"] })
 ```
 
-<hr class="sl">
-
-## Methods
-
-In MongoDB, you can chain a lot of calls, unless the call is "terminal".
-
-<table class="table table-bordered table-striped border-dark">
-<tr><th>SQL concept</th><th>MongoDB</th></tr>
-
-<tr><td><pre class="language-sql"><code>COUNT(*)</code></pre></td><td>
-
-```mongodb
-db.persons.find().size() // terminal
-```
-</td></tr>
-
-<tr><td><pre class="language-sql"><code>LIMIT 0,1</code></pre></td><td>
-
-```mongodb
-db.persons.find().skip(0).limit(1)
-db.persons.find().skip(countPerPage * page).limit(countPerPage)
-```
-</td></tr>
-
-<tr><td><pre class="language-sql"><code>ORDER BY</code></pre></td><td>
-
-```mongodb
-db.persons.find().sort({name: 1}) // ASC
-db.persons.find().sort({name: -1}) // DESC
-```
-</td></tr>
-</table>
-
-<hr class="sr">
-
 ## Embed documents
 
 You should [read the official documentation](https://www.mongodb.com/basics/embedded-mongodb).

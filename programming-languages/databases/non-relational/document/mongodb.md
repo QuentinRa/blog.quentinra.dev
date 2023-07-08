@@ -125,18 +125,6 @@ db.some_collection.find({}, {})      // list all documents
 db.some_collection.find(filter, projection) // ???
 ```
 
-#### Projection parameter
-
-The projection determines which attributes are returned. It's optional, and by default, all attributes are returned.
-
-Here are some examples of projections:
-
-```js!
-{}                         // all
-{ name: true }             // name attribute only
-```
-</div><div>
-
 #### Filter parameter
 
 The filter determined which documents are returned. It's optional, and by default, all documents are returned.
@@ -155,6 +143,32 @@ Here are some examples of filters:
   { name: 'XXX' },
   { name: 'YYY' }
 ] }
+```
+</div><div>
+
+#### Projection parameter
+
+The projection determines which attributes are returned. It's optional, and by default, all attributes are returned.
+
+Here are some examples of projections:
+
+```js!
+{}                         // all
+{ name: true }             // name attribute only
+```
+
+#### Useful method chains
+
+You may call some methods on the `find` output.
+
+```js!
+db.xxx.find().size()   // number of documents
+db.xxx.find().skip(0)  // skip n first results
+db.xxx.find().limit(1) // only fetch n documents
+db.xxx.find().skip(countPerPage * page).limit(countPerPage)
+db.persons.find().sort({name: 1})  // sort ASC
+db.persons.find().sort({name: -1}) // sort DESC
+// ...
 ```
 </div></div>
 
