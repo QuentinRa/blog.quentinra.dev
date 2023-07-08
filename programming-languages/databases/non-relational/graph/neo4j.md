@@ -156,6 +156,45 @@ Skip results or limit the number of results.
 
 <hr class="sep-both">
 
+## Advanced clauses
+
+<div class="row row-cols-md-2"><div>
+
+#### Functions
+
+Functions are listed [here](https://neo4j.com/docs/cypher-manual/current/functions/).
+
+* `keys(node)`: list a node's attributes
+* `properties(node)`: list a node's attributes and their values
+* `labels(node)`: returns a node's labels
+* `nodes(graph)`: returns all nodes in a graph
+* `relationships(graph)`: returns all edges of a graph
+* `id(node)`: returns a node's ID
+
+And some useful aggregates functions:
+
+* `COUNT(something)`: number of results
+* `MIN(something)`, `MAX(something)`, `SUM(something)`, `AVG(something)`, `ROUND(something)`... which are working like in SQL.
+
+For instance: `MATCH (m:Movie) RETURN ROUND(AVG(m.released))` returns rounds the average release dates of all movies.
+</div><div>
+
+#### WITH `(SQL <none>)`
+
+...
+
+#### OPTIONAL MATCH `(SQL <none>)`
+
+A optional match can be used to select nodes/edges that may be `null`.
+
+```cypher
+MATCH (a:Movie) OPTIONAL MATCH (a)<-[r:ACTED_IN]-()
+RETURN a.title, r // may be null for some movies
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Examples
 
 <div class="row row-cols-md-2"><div>

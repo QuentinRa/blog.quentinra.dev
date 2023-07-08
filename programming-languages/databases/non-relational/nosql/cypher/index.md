@@ -17,20 +17,6 @@ RETURN m
 ```
 </details>
 
-<details class="details-e">
-<summary>OPTIONAL MATCH (<code>No equivalent in SQL</code>)</summary>
-
-This clause is after the MATCH, before the WHERE. You can try to match something, but if there is no match, then the variable will be null.
-
-```cypher
-// for each film, we want to know who acted_in, if someone
-// acted in (otherwise, it will be null)
-MATCH (a:Movie)
-OPTIONAL MATCH (a)<-[r:ACTED_IN]-()
-RETURN a.title, r
-```
-</details>
-
 <hr class="sl">
 
 ## Create-Update-Delete
@@ -77,24 +63,6 @@ MATCH (:ShowbizPerson{name: "My name"})-[r]-() DELETE r
 MATCH (p:ShowbizPerson{name: "My name"}) DETACH DELETE (p)
 ```
 </details>
-
-<hr class="sr">
-
-## Functions
-
-We already saw some functions such as `type`, or `ROUND/AVG`, you got the complete list in the [documentation](https://neo4j.com/docs/cypher-manual/current/functions/), but it's good to know these
-
-* `keys(node)`: names of the attributes of a node
-* `properties(node)`: attributes and values of a node
-* `labels(node)`: returns the labels of a node
-* `nodes(graph)`: returns the nodes in a graph
-* `relationships(graph)`: returns all the edges of a graph
-* `id(node)`: ID of a node
-
-And some useful aggregates functions
-
-* `COUNT(something)`: number of results
-* `MIN(something)`, `MAX(something)`, `SUM(something)`, `AVG(something)`: like in SQL
 
 <hr class="sl">
 
