@@ -31,7 +31,7 @@ await mongoose.connect('mongodb://xxx', {
 
 <hr class="sep-both">
 
-## Object-Document Mapping (ODM)
+## Basic usage
 
 <div class="row row-cols-md-2"><div>
 
@@ -75,5 +75,20 @@ await UsersModel.updateOne(...);
 await UsersModel.updateMany(...);
 await UsersModel.insertOne(...);
 await UsersModel.insertMany(...);
+```
+
+🧼 Don't forget to [catch](/programming-languages/web/javascript/_general/index.md#catch-exceptions) and handle exceptions.
+
+🔥 You **can't** access attributes that are not in your model, even if you can see them with `console.log`.
+
+✍️ Some useful methods when dealing with `ObjectID`:
+
+```js
+// generate an ObjectID
+new mongoose.Types.ObjectId();
+// cast from string to ObjectID
+mongoose.Types.ObjectId("id");
+// verify that an ID is valid
+mongoose.Types.ObjectId.isValid("id")
 ```
 </div></div>
