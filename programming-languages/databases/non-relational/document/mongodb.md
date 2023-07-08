@@ -54,11 +54,11 @@ $ db.name.XXX                   # do XXX on collection "name"
 
 A document is a record within a collection <small>(ex: an user)</small>. It's a [JSON](/programming-languages/others/data/json.md) ([BJSON](https://www.mongodb.com/docs/mongodb-shell/reference/data-types/)) object, and it's the same as a record/tuple in SQL.
 
-```json
+```json!
 {
   "name": "John Doe",
   "email": "john@example.com",
-  "address": []
+  "addresses": { "main": null }
 }
 ```
 
@@ -97,6 +97,8 @@ db.some_collection.deleteOne({ _id: ObjectId('some_id') })
 
 #### Update documents
 
+See also: `updateMany(JSONArray, JSON)`.
+
 ```js!
 db.some_collection.updateOne(
     { _id: ObjectId('some_id') }, // select
@@ -108,7 +110,15 @@ db.some_collection.updateOne(
 
 You can use `$unset: { "name": true }` to remove an attribute.
 
-👉 You can use `updateMany` to update an array of documents.
+For nested documents, use:
+
+```json!
+$set: {
+    addresses: {
+        "main": { /* ... */ }
+    }
+}
+```
 </div></div>
 
 <hr class="sep-both">
@@ -124,6 +134,8 @@ db.some_collection.find()            // list all documents
 db.some_collection.find({}, {})      // list all documents
 db.some_collection.find(filter, projection) // ???
 ```
+
+👉 For nested documents, use a dot, such as `addresses.main`.
 
 #### Filter parameter
 
@@ -207,7 +219,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [_old](../nosql/mongodb/index.md)
 * [_old 2](../nosql/mongo.md)
 * [_old 3](../nosql/drivers/mongodb.md)
 </div><div>
