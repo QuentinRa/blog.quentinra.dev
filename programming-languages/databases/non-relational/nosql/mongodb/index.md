@@ -1,17 +1,5 @@
 # MongoDB
 
-**MongoDB** is a database storing data using **JSON-based (BSON) documents**. You will use JSON everywhere, and there is **almost no syntax**. This comes at the cost: **it's tricky to reference something**. You will have to use the ID of a document, or nest a document inside another 😬.
-
-* Windows
-  * Install [MongoDBCompass](https://www.mongodb.com/products/compass)
-  * Run MongoDBCompass
-  * Enter the local URL `mongodb://localhost:27017/`
-* [Linux](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-debian/#install-mongodb-community-edition)
-* [Cloud database](https://www.mongodb.com/) (account required)
-
-> **Quick official reference** 📚: [mongo Shell Quick Reference](https://docs.mongodb.com/manual/reference/mongo-shell/#command-helpers)<br>
-> **Official documentation** 🤓: [MongoDB documentation](https://docs.mongodb.com/guides/)
-
 <hr class="sl">
 
 ## Console
