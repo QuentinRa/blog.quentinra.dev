@@ -60,6 +60,8 @@ In a query, we use `()` to represent a node.
 👉 We can select nodes having a specific label using: `(:Label)` such as `(:Movie)` or `(m:Movie)`. 
 
 ✂️ We can go further and filter nodes based on their properties `(:{released:2008})`, `(:Movie{released:2008})`, or `(r:{released:2008})` represent nodes with `released == 2008`.
+
+🔥 You can use `variable_name.attribute` to access an attribute later.
 </div><div>
 
 #### Edges
@@ -76,6 +78,66 @@ But, you can also add a direction:
 
 * From `a` to `b`: `a-->b`, `a-(v)->b`, etc.
 * From `b` to `a`: `a<--b`, `a<-(v)-b`, etc.
+</div></div>
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-md-2"><div>
+
+The order of the clauses in a request is `MATCH > WHERE > RETURN > ORDER BY > SKIP > LIMIT`.
+
+#### MATCH `(SQL FROM/WHERE)`
+
+Use `MATCH` to select nodes/edges. You can chain matches if needed.
+
+```sql!
+MATCH (m:Movie) RETURN m                 -- fetch all movies
+MATCH (m:Movie{released: 2008}) RETURN m -- match + filtering
+MATCH (m), (p) RETURN m, p               -- catesian product
+MATCH g = (:Movie)-[]-() RETURN g        -- store graph
+```
+
+#### WHERE `(SQL WHERE)`
+
+Filter nodes/edges based on a predicate.
+
+* `=, !=, <>, >, <, >=, <=, ...`: basic operators
+* `attribute IN [value, value]`: in array
+* `attribut =~ "regex"`: in regex
+* `attribute STARTS WITH, ENDS WITH, CONTAINS`: ...
+* `xxx:label`: true if `xxx` got this label, false else
+* `exists(xxx.attribute)`: check if "attribute" exists
+* `type(edge) == 'name'`: test if an edge got this name
+* an edge <small>(filter nodes not having an edge)</small>
+* ...
+
+👉 Chain predicates using `AND/OR/XOR`. See also: `NOT/IS`.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Examples
+
+<div class="row row-cols-md-2"><div>
+
+```sql!
+-- released after 2000
+MATCH (m) WHERE m:Movie AND exists(m.released) AND m.released > 2000 RETURN m
+-- released after 2000 (same)
+MATCH (m:Movie) WHERE exists(m.released) AND m.released > 2000 RETURN m
+-- match every node that PRODUCED a movie, and the movie
+MATCH (p)-[:PRODUCED]->(m:Movie) RETURN p, m
+-- same using "where"
+MATCH (p)--(m) WHERE (p)-[:PRODUCED]->(m:Movie) RETURN p, m
+```
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">

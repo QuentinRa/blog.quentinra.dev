@@ -4,6 +4,7 @@ Nodes
 
 * otherwise, you will use this to add/update properties of a node
 * **Pro-tip**: you can use `.` to get an attribute from a node.
+* ex: `ref.attribute <> 5`
 
 <hr class="sr">
 
@@ -47,56 +48,6 @@ RETURN something
 <hr class="sl">
 
 ## Cypher basic clauses
-
-The order of the clauses in a request is `MATCH > WHERE > RETURN > ORDER BY > SKIP > LIMIT`.
-
-<details class="details-e">
-<summary>MATCH (<code>SQL FROM/WHERE</code>)</summary>
-
-As we saw, you call `MATCH` with a graph.
-
-```cypher
-MATCH (m:Movie) RETURN m
-MATCH m = (:Movie) RETURN m
-MATCH g = (:Movie)-[]-() RETURN g
-// as a where, but you can only use EQUALS (only released in 2008)
-MATCH (m:Movie{released: 2008}) RETURN m
-// catesian product
-MATCH (m), (p) RETURN m, p
-```
-
-> **Pro tip**: You can chain matches if needed.
-</details>
-
-<details class="details-e">
-<summary>WHERE (<code>SQL WHERE</code>)</summary>
-
-It's working like in SQL. The where will filter the nodes that do not match the condition in the where. Where is taking a boolean, and you can chain conditions with `AND/OR/NOT/IS/XOR`.
-
-* `=, !=, <>, >, <, >=, <=, ...`
-* ex: `ref.attribute <> 5`
-* `attribute IN [value, value]`
-* `attribut =~ "regex"`
-* `attribute STARTS WITH, ENDS WITH, CONTAINS`
-* `ref:label`: true if ref got this label, false else
-* `exists(ref.attribute)`: check if "attribute" exists
-* `type(edge) == 'name'`: test if an edge got this name
-* you can write an edge in the WHERE like you did in the match
-
-The match can help you simplify complex where clauses, so don't hesitate to use it, as follows
-
-```cypher
-// released after 2000
-MATCH (m) WHERE m:Movie AND exists(m.released) AND m.released > 2000 RETURN m
-// could be simplied to
-MATCH (m:Movie) WHERE exists(m.released) AND m.released > 2000 RETURN m
-
-// match every node that PRODUCED a movie, and the movie
-MATCH (p)-[:PRODUCED]->(m:Movie) RETURN p, m
-// version using where
-MATCH (p)--(m) WHERE (p)-[:PRODUCED]->(m:Movie) RETURN p, m
-```
-</details>
 
 <details class="details-e">
 <summary>RETURN (<code>SQL SELECT</code>)</summary>
