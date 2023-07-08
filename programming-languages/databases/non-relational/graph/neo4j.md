@@ -12,24 +12,36 @@ Either use [their cloud sandbox](https://neo4j.com/sandbox/) or [a self-hosted i
 </div><div>
 
 * ❌ Account required, can't delete your account 🙄
-* 🌱 Easy to learn
+* 🪵 A bit hard to use <small>(easy to make mistakes/errors)</small>
 * 🤝 open-source ([GitHub](https://github.com/neo4j), 11.6k ✨)
 * 🚀 Cypher's syntax looks like SQL
 * 🌫️ Cloud <small>(free version available)</small> or self-hosted <small>(local)</small>
 
-[Example database](https://github.com/memorize-code/memorize-references/raw/main/info/nosql/movies.cypher).
+[Example database](https://raw.githubusercontent.com/QuentinRa/references.blog.quentinra.dev/main/info/nosql/movies.cypher).
 </div></div>
 
 <hr class="sep-both">
 
-## XXX
+## Core logic
 
 <div class="row row-cols-md-2"><div>
 
-...
+With Neo4J, each cypher query returns a **graph**.
+
+**Nodes**
+
+* 💰 These are our records
+* 🔥 For instance, the node `Werner Herzog` <small>(actor)</small>
+
+**Edges**
+
+* 🧵 They are the links between records
+* ↔️ They have a direction, and link two nodes
+* 🕸️ There is no limit to the number of edges between two nodes
+* 🔥 For instance, `-ACTED_IN->` between `W. H.` and `What Dreams`...
 </div><div>
 
-...
+![Cypher Graph Example](_images/example.png)
 </div></div>
 
 <hr class="sep-both">
