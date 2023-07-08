@@ -1,40 +1,9 @@
 # Core concept
 
-<hr class="sr">
+Nodes
 
-## Nodes
-
-<div class="row row-cols-md-2 mx-0"><div class="align-self-center">
-
-**Nodes** are represented with something inside two parentheses. It's made of 3 elements, and all three are optional. The syntax is
-
-```none
-(ref:label{})
-```
-
-</div><div>
-
-* **ref**: used to reference this node later in the query
-* **label**: tags that you may give to a node. Useful when looking at nodes having a tag. Nodes can have multiple tags.
-* **{}**: you may give **attributes** and their value here in JSON (`{ attribute:value, ... }`)
-  * if you are selecting a node, this is like a WHERE in SQL
-  * otherwise, you will use this to add/update properties of a node
-</div></div>
-
-<details class="details-e">
-<summary>Examples</summary>
-
-* `()`: every node
-* `(m)`: store every node in m
-* `(:Movie)`: every node having the label "Movie"
-* `(m:Movie)`: store nodes having the label "Movie" inside m
-* `(m:Movie{released:2008})`: store movies released in 2008 in m
-* `(:Movie{released:2008})`: only movies released in 2008
-* `(:{released:2008})`: nodes having released = 2008
-* `(r:{released:2008})`: store nodes having released = 2008 in r
-</details>
-
-> **Pro tip**: you can use `.` to get an attribute from a node.
+* otherwise, you will use this to add/update properties of a node
+* **Pro-tip**: you can use `.` to get an attribute from a node.
 
 <hr class="sl">
 

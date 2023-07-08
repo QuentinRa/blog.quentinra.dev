@@ -31,7 +31,8 @@ With Neo4J, each cypher query returns a **graph**.
 **Nodes**
 
 * 💰 These are our records
-* 🔥 For instance, the node `Werner Herzog` <small>(actor)</small>
+* 🗃️ They may have labels <small>(ex: Person, Actor, ShowBizPerson...)</small>
+* 🔥 For instance, the node `Werner Herzog` <small>(ShowbizPerson)</small>
 
 **Edges**
 
@@ -42,6 +43,28 @@ With Neo4J, each cypher query returns a **graph**.
 </div><div>
 
 ![Cypher Graph Example](_images/example.png)
+</div></div>
+
+<hr class="sep-both">
+
+## Nodes and edges
+
+<div class="row row-cols-md-2"><div>
+
+#### Nodes
+
+In a query, we use `()` to represent a node. 
+
+✍️ If we need to use the captured node, we store it in a variable: `(variable_name)` such as `(m)`.
+
+👉 We can select nodes having a specific label using: `(:Label)` such as `(:Movie)` or `(m:Movie)`. 
+
+✂️ We can go further and filter nodes based on their properties `(:{released:2008})`, `(:Movie{released:2008})`, or `(r:{released:2008})` represent nodes with `released == 2008`.
+</div><div>
+
+#### Edges
+
+...
 </div></div>
 
 <hr class="sep-both">
