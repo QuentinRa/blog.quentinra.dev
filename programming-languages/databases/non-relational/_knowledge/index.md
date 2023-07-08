@@ -9,7 +9,7 @@ Here are some majors NoSQL databases models/stores:
 * **Key-value** 🔑: a key-value system
 * **Document** 📂: data stored as documents
 * **Columnar** 🗄️: using a key-column <small>(values)</small> system
-* **Graph** 🕸️: nodes and edges
+* **Graph** (GDB) 🕸️: nodes and edges
 
 👉 NoSQL means that SQL databases are not the only databases.
 </div><div>
@@ -27,6 +27,34 @@ NoSQL databases became quite popular around 2010, and they are used by a lot of 
 
 <hr class="sep-both">
 
+## Examples of NoSQL databases
+
+<div class="row row-cols-md-2"><div>
+
+Key-value
+
+* Redis
+
+Document
+
+* MongoDB
+* [RavenDB](https://ravendb.net/)
+* [Apache CouchDB](https://docs.couchdb.org/en/stable/)
+* [RethinkDB](https://rethinkdb.com/)
+</div><div>
+
+Columnar
+
+* [Apache Cassandra](https://cassandra.apache.org/_/index.html)
+* [Apache HBase](https://hbase.apache.org/)
+
+Graph
+
+* Neo4j
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -36,5 +64,8 @@ Stuff that I found, but never read/used yet.
 * [old](../nosql/_old.md)
 </div><div>
 
+Graph Query Language ([GQL](https://en.wikipedia.org/wiki/Graph_Query_Language))
 
+* GraphQL
+* SPARQL
 </div></div>

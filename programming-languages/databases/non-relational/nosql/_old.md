@@ -1,10 +1,4 @@
-# Introduction
-
-> **Note**: Since 2019, the [GQL](https://en.wikipedia.org/wiki/Graph_Query_Language) (Graph Query Language) may become the database query language for Graph databases (GDB) like the SQL for relational databases, but it seems they are still working on it.
-
-<hr class="sl">
-
-## Cypher
+# Cypher
 
 <div class="row row-cols-md-2 mx-0"><div class="align-self-center">
 

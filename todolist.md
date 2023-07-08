@@ -12,6 +12,7 @@ List of courses that have note which were not added yet.
 
 * PLSQL
 * NoSQL, MongoDB, Redis, Cypher
+* GraphQL
 
 **Programming Languages > Others**
 
