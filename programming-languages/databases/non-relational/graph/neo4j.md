@@ -82,11 +82,17 @@ But, you can also add a direction:
 
 <hr class="sep-both">
 
-## XXX
+## Basic clauses
 
 <div class="row row-cols-md-2"><div>
 
-The order of the clauses in a request is `MATCH > WHERE > RETURN > ORDER BY > SKIP > LIMIT`.
+Clauses are case insensitive instructions.
+
+* Comments are made with `//` or `/* ... */`
+* Concatenate strings with `+`
+* Use `;` to chain requests.
+
+The order is: `MATCH > WHERE > RETURN > ORDER BY > SKIP > LIMIT`.
 
 #### MATCH `(SQL FROM/WHERE)`
 
@@ -125,6 +131,7 @@ Return specifies which nodes are in the final graph.
 [...] RETURN DISTINCT m           // no duplicates results
 [...] RETURN m.title, m.released  // attributes
 [...] RETURN m, n                 // cartesian product 
+[...] RETURN {title:m.title}      // as JSON
 ```
 
 #### ORDER BY `(SQL ORDER BY)`
@@ -136,6 +143,15 @@ Sort results.
 [...] ORDER BY m.title ASC   // ASC
 [...] ORDER BY m.title DESC  // DESC
 ```
+
+#### LIMIT + SKIP `(SQL LIMIT)`
+
+Skip results or limit the number of results.
+
+```cypher
+[...] SKIP 10    // skip the first 10 results
+[...] LIMIT 3    // return up to 3 results
+```
 </div></div>
 
 <hr class="sep-both">
@@ -143,6 +159,8 @@ Sort results.
 ## Examples
 
 <div class="row row-cols-md-2"><div>
+
+Here are some example queries.
 
 ```cypher
 // released after 2000
@@ -153,10 +171,25 @@ MATCH (m:Movie) WHERE exists(m.released) AND m.released > 2000 RETURN m
 MATCH (p)-[:PRODUCED]->(m:Movie) RETURN p, m
 // same using "where"
 MATCH (p)--(m) WHERE (p)-[:PRODUCED]->(m:Movie) RETURN p, m
+// number of persons that wrote or produced a movie
+MATCH (p:ShowbizPerson)-[r:WROTE|PRODUCED]->(:Movie) RETURN DISTINCT COUNT(p)
 ```
 </div><div>
 
-...
+```cypher
+// Actors that played in a movie with Tom Cruise
+MATCH (s:ShowbizPerson)-[:ACTED_IN]->(:Movie)<-[:ACTED_IN]-(:ShowbizPerson{name: "Tom Cruise"}) RETURN DISTINCT s.name
+// Movies release between 1990-2000 (included)
+MATCH (m:Movie) WHERE m.released>=1990 AND m.released<=2000 RETURN m.title
+// Persons who directed the movie "The Matrix"
+MATCH (:Movie{title: "The Matrix"})-[:DIRECTED]-(s:ShowbizPerson) RETURN s.name
+// Movies Meg Ryan acted in
+MATCH (:ShowbizPerson{name: "Meg Ryan"})-[:ACTED_IN]->(m:Movie) RETURN DISTINCT m.title
+// Thoses that both wrote and produced the same movie
+MATCH (w:ShowbizPerson)-[:WROTE]->(:Movie)<-[:PRODUCED]-(p:ShowbizPerson) WHERE w.name = p.name RETURN DISTINCT w.name
+MATCH (w:ShowbizPerson)-[:WROTE]->(:Movie)<-[:PRODUCED]-(w) RETURN DISTINCT w.name
+MATCH (w:ShowbizPerson)-[:WROTE]->(:Movie) MATCH (w)-[:PRODUCED]->(:Movie) RETURN DISTINCT w.name
+```
 </div></div>
 
 <hr class="sep-both">
