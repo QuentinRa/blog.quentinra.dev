@@ -174,6 +174,33 @@ db.persons.find().sort({name: -1}) // sort DESC
 
 <hr class="sep-both">
 
+## User management
+
+<div class="row row-cols-md-2"><div>
+
+You can create an administrator using:
+
+```js!
+$ mongo -u username --authenticationDatabase admin -p
+use admin
+db.createUser({
+    user: "username",
+    pwd:"password",
+    roles:[{ role: "userAdminAnyDatabase", db: "admin"  }]
+})
+```
+</div><div>
+
+Then, you can create normal users using:
+
+```js!
+use database_name
+db.createUser( { user: "myuser", pwd: "password", roles: ["readWrite"] })
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

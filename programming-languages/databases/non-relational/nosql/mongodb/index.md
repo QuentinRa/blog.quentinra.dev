@@ -1,20 +1,4 @@
-# MongoDB
-
-Create a user (optional)
-
-```mongodb
-// mongo -u username --authenticationDatabase admin -p
-// use admin
-// db.createUser({
-//     user: "username",
-//     pwd:"password",
-//     roles:[{ role: "userAdminAnyDatabase", db: "admin"  }]
-// })
-use database_name
-db.createUser( { user: "myuser", pwd: "password", roles: ["readWrite"] })
-```
-
-## Embed documents
+# Embed documents
 
 You should [read the official documentation](https://www.mongodb.com/basics/embedded-mongodb).
 
