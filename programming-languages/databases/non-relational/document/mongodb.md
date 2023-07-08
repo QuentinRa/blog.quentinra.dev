@@ -58,7 +58,7 @@ A document is a record within a collection <small>(ex: an user)</small>. It's a 
 {
   "name": "John Doe",
   "email": "john@example.com",
-   "address": []
+  "address": []
 }
 ```
 
@@ -69,6 +69,46 @@ A document is a record within a collection <small>(ex: an user)</small>. It's a 
 🔑 Each document as a `_id` attribute of type `ObjectId`
 
 📑 Entries in address are called [embedded documents](https://www.mongodb.com/basics/embedded-mongodb). 
+</div></div>
+
+<hr class="sep-both">
+
+## Manipulate documents
+
+<div class="row row-cols-md-2"><div>
+
+#### Add documents
+
+If a collection doesn't exist, it is created.
+
+```js!
+db.some_collection.insertOne( a_document )
+db.some_collection.insertMany( [ a_document, ...] )
+```
+
+#### Delete documents
+
+See also: `deleteMany(JSONArray)`.
+
+```js!
+db.persons.deleteOne({ _id: ObjectId('some_id') })
+```
+</div><div>
+
+#### Update documents
+
+```js!
+db.persons.updateOne(
+    { _id: ObjectId('some_id') }, // select
+    {
+        $set: { "name": "xxx" }   // add or set attributes
+    }
+)
+```
+
+You can use `$unset: { "name": true }` to remove an attribute.
+
+👉 You can use `updateMany` to update an array of documents.
 </div></div>
 
 <hr class="sep-both">

@@ -1,17 +1,6 @@
 # MongoDB
 
-<hr class="sl">
-
-## Console
-
-* On **Windows**, almost everything is made using the **interface**, but you may open the console by clicking on the small tab at the bottom of the screen.
-* On **Linux**, I used `mongosh`, so I was only using the **command-line**.
-
-This course will mostly cover Mongo from the point of view of a command-line user, as it's easy to execute something using the interface on Windows, given a command, and the driver usually provides something similar to the commands used in `mongosh`.
-
-<hr class="sl">
-
-## Create a user (optional)
+Create a user (optional)
 
 ```mongodb
 // mongo -u username --authenticationDatabase admin -p
@@ -23,29 +12,6 @@ This course will mostly cover Mongo from the point of view of a command-line use
 // })
 use database_name
 db.createUser( { user: "myuser", pwd: "password", roles: ["readWrite"] })
-```
-
-<hr class="sr">
-
-## Insert documents
-
-* **Function**: insertOne(JSON)
-* **Note**: create the collection if it does not exist
-* **Example**
-
-```mongodb
-// insert a document { name: "Calistro" }
-db.persons.insertOne( { name: "Calistro" } )
-// {"_id": "617d8282a6e50c611c8e3c16", "name": "Calistro"}
-```
-
-* **Function**: insertMany(JSONArray)
-* **Note**: create the collection if it does not exist
-* **Example**
-
-```mongodb
-db.persons.insertMany( [ {name: "Suwan", not_used: true }, {name: "Mynasitra"} ] )
-// two new documents
 ```
 
 <hr class="sl">
@@ -140,49 +106,6 @@ db.persons.find( { _id: ObjectId('617d8282a6e50c611c8e3c16') } )
 ```
 
 > **Pro tip**: when using projection, or in some cases such as updating something, you are setting a bool at true for a column. Well, lazy as we are, we are also using `1` or `""` instead of `true`.
-
-<hr class="sr">
-
-## Update and Delete
-
-* use UpdateOne(JSON, JSON) or UpdateMany(JSONArray, JSON)
-
-<details class="details-e">
-<summary>Set attributes</summary>
-
-```mongodb
-db.persons.updateOne(
-    // select
-    { _id: ObjectId('617d8282a6e50c611c8e3c16') },
-    // set selected
-    {
-        // create name with value, or update field
-        $set: { "name": "Mr. Calistro" }
-    }
-)
-```
-</details>
-
-<details class="details-e">
-<summary>Unset attributes</summary>
-
-```mongodb
-db.persons.updateOne(
-    // select
-    { _id: ObjectId('617e5dd65f15583a7c4e06ea') },
-    {
-        // delete this field for this document
-        $unset: { "not_used": true }
-    }
-)
-```
-</details>
-
-* use DeleteOne(JSON) or DeleteMany(JSON)
-
-```mongodb
-db.persons.deleteOne({ _id: ObjectId('617d8282a6e50c611c8e3c16') })
-```
 
 <hr class="sl">
 
