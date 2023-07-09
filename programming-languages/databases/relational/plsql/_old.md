@@ -1,17 +1,7 @@
 # Procedural Language
 
-**PL/SQL** (Procedural Language for SQL), or **PL/pgSQL** (for PostgreSQL) are extensions of the SQL, allowing you to run code in your database. There are some small differences between the procedural language in Oracle, and the procedural language in PostgreSQL, but aside from that, almost everything is the same 👍.
+PL/SQL (Oracle) - particularities
 
-<hr class="sl">
-
-## PL/SQL (Oracle) - particularities
-
-```sql
--- enable output, only done once, off by default
-set serveroutput on
--- print something
-dbms_output.put_line('something'); 
-```
 ```sql
 -- show more information about your errors (need to be called multiples times)
 show errors;

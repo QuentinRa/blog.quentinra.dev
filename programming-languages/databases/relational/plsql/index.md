@@ -2,10 +2,15 @@
 
 <div class="row row-cols-md-2"><div>
 
-...
-</div><div>
+Many [DBMS](../_knowledge/index.md) have their own **procedural languages** which extends SQL and allow us to write procedural code <small>(if statement, loops...)</small> that can be executed within the database.
 
-...
+* 💵 Oracle: **PL/SQL** (Procedural Language for SQL)
+* 🍰 PostgreSQL: **PL/pgSQL** (similar to PL/SQL)
+* 🐭 Microsoft SQL Server: **T-SQL** (Transact-SQL)
+* ...
+
+This course covers PL/SQL and PL/pgSQL.
+</div><div>
 </div></div>
 
 <hr class="sep-both">

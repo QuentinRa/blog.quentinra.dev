@@ -4,6 +4,10 @@
 
 List of courses that have note which were not added yet.
 
+**Programming Languages > Android**
+
+* (review, typos)
+
 **Programming Languages > Web**
 
 * Jekyll/pages
