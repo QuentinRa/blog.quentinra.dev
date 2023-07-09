@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-While it's not a good practice on the long term, there are many online development environment to write and run some code.
+While it's not a good practice in the long term, there are many online development environments to write and run some code.
 
 * [sqliteonline](https://sqliteonline.com/): SQL
 * [ideone](https://www.ideone.com/): support more than 60 languages

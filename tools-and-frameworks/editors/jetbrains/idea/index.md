@@ -53,7 +53,7 @@ For JUnit4, [you **may** have to do it manually](stuff/junit4.md).
 
 #### Run Configurations
 
-Similarly to other software, there are configurations were we can set which **javac/java options**, **program arguments**...
+Similarly to other software, there are configurations where we can set which **javac/java options**, **program arguments**...
 
 ![configurations-idea](_images/edit_conf.png)
 

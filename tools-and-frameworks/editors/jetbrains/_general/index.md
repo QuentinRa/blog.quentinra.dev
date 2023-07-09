@@ -30,11 +30,11 @@ And in each IDE, some languages, frameworks, and build tools have additional fea
 
 <div class="row row-cols-md-2"><div>
 
-There is a green play icon next to code that you can run:
+There is a green play icon next to the code that you can run:
 
 ![run](_images/run.png)
 
-This will create a **Run configuration**, which is a wrapper to all information related to the execution of your program. You could add compiler option, program arguments...
+This will create a **Run configuration**, which is a wrapper to all information related to the execution of your program. You could add compiler options, program arguments...
 </div><div>
 
 You can create, edit, or select a configuration here:
@@ -66,15 +66,15 @@ In practice, there are more variations according to the specific problem.
 
 #### Quick fixes
 
-By hovering a problem, you'll have an explanation, along with suggested fixes. There is the `ALT+ENTER` shortcut for all quick fixes.
+By hovering over a problem, you'll have an explanation, along with suggested fixes. There is the `ALT+ENTER` shortcut for all quick fixes.
 
 ![Quick fixes](_images/quick_fixes.png)
 
 #### Autocompletion
 
-When writing something, use `TAB` to select a choice among the suggested list. Use arrows to move up/down.
+When writing something, use `TAB` to select a choice from the suggested list. Use arrows to move up/down.
 
-Use `CTRL+ENTER` to manually trigger autocompletion.
+Use `CTRL+ENTER` to manually trigger auto-completion.
 </div></div>
 
 <hr class="sep-both">
@@ -138,7 +138,7 @@ The interface has often changed over the years, especially as they are moving to
 
 👉 Use `CTRL+E` to see available menus.
 
-🔥 There is a GIT menu, and a TODO menu which are helpful.
+🔥 There is a GIT menu and a TODO menu which are helpful.
 
 #### ContextMenu
 
@@ -152,7 +152,7 @@ The context menu is the left-click menu. These are worth a mention:
 
 #### GIT 🎒
 
-There are two tabs: the "commit" tab (`ALT+0`), to commit and push, and the "git" tab (`ALT+9`), to see commits, change branch...
+There are two tabs: the "commit" tab (`ALT+0`), to commit and push, and the "git" tab (`ALT+9`), to see commits, checkout branch...
 
 #### Refactor 🧼
 
@@ -179,6 +179,6 @@ Stuff that I found, but never read/used yet.
 * scratch files
 * Project view
 * CTRL-P
-* Database (select schema, SSH tunnel, query console)
+* Database (select a schema, SSH tunnel, query console)
 </div><div>
 </div></div>
