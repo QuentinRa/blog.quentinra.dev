@@ -203,6 +203,53 @@ RETURN a.title, r // may be null for some movies
 
 <hr class="sep-both">
 
+## Create, update, and delete data
+
+<div class="row row-cols-md-2"><div>
+
+#### Create
+
+Create takes a graph and create it.
+
+```cypher
+CREATE (:Movie{title: "My movie", released: 2021})
+// create from something existing
+MATCH (m:Movie{title: "My movie"}) CREATE (m)<-[:ACTED_IN]-(:ShowbizPerson{name: "me"})
+```
+
+#### Update
+
+As in SQL, select nodes first, then update them.
+
+```cypher
+MATCH (p:ShowbizPerson{name: "me"})
+SET p.name = "My name", p.born = 2021
+// same as
+MATCH (p:ShowbizPerson{name: "me"})
+SET p.name = "My name" SET p.born = 2021
+```
+</div><div>
+
+#### Delete
+
+There are 3 clauses, for attributes, edges, and nodes.
+
+```cypher
+// REMOVE an attribute
+MATCH (p:ShowbizPerson{name: "My name"}) REMOVE p.born RETURN p
+
+// DELETE an edge
+MATCH (:ShowbizPerson{name: "My name"})-[r]-() DELETE r
+
+// DETACH DELETE a node
+// DETACH = delete incident edges, optional if they were already deleted
+// DELETE = delete the node
+MATCH (p:ShowbizPerson{name: "My name"}) DETACH DELETE (p)
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Examples
 
 <div class="row row-cols-md-2"><div>
@@ -247,8 +294,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [_old](../nosql/cypher/index.md)
+* [apcjones](http://www.apcjones.com/arrows/#)
+* [graphacademy](https://graphacademy.neo4j.com/categories/)
+* [coursIBDPG](http://web4.ensiie.fr/~stefania.dumbrava/coursIBDPG.pdf)
 </div><div>
-
-
 </div></div>
