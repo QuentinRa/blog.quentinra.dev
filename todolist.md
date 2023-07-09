@@ -11,6 +11,7 @@ List of courses that have note which were not added yet.
 **Programming Languages > Databases**
 
 * PLSQL
+* Relational modeling
 
 **Programming Languages > Others**
 
@@ -22,12 +23,17 @@ List of courses that have note which were not added yet.
 
 * CPP - ENS notes
 * Clang tidy
+* Qt
+* Rust ([crates](https://crates.io/))
 
 **Programming Languages > High-Level Languages**
 
 * C#
 * Java, LibGDX, lwjgl
 * OCaml
+* Lisp
+* Lua
+* Perl
 </div><div>
 
 **Tools and Frameworks**
@@ -78,9 +84,7 @@ Google
 * [firebase](https://firebase.google.com/) <small>(???)</small>
 * FeedBurner <small>(RSS)</small>
 
-**Tools~Software**
-
-➡️ Move some [Git](/_it/dev/git-project/index.md#-to-do-) to-dos here?
+to-dos here?
 
 * [editorconfig](https://editorconfig.org/)
 * [visual-paradigm](https://www.visual-paradigm.com/) <small>(project management)</small>
@@ -102,6 +106,8 @@ Google
 * [prometheus](https://github.com/prometheus/prometheus) <small>(???)</small>
 * [raycast](https://www.raycast.com/) <small>(???)</small>
 
+</div><div>
+
 **Markdown-based**
 
 * [retype](https://retype.com/) <small>(Extended Markdown for websites)</small>
@@ -110,8 +116,6 @@ Google
 * [Obsidian](https://obsidian.md/) <small>(notes?)</small>
 * [notion](https://www.notion.so/) <small>(notes?)</small>
 * [slick](https://kenwheeler.github.io/slick/) <small>(slides)</small>
-
-</div><div>
 
 **Web/Android/UI**
 
@@ -141,6 +145,8 @@ Google
 * [freehtml5](https://freehtml5.co/)
 * [html5boilerplate](https://html5boilerplate.com/)
 
+</div><div>
+
 **Documentation**
 
 * [Daux](https://daux.io/)
@@ -149,21 +155,8 @@ Google
 * [just-the-docs](https://github.com/just-the-docs/just-the-docs)
 * [mkdocs](https://github.com/mkdocs/mkdocs)
 
-</div><div>
-
-**Learned** (but there is no notes about them)
-
-* QT
-* Relational modeling
-
 **Random**
 
-* Moodle
-* Nginx
-* Lua
-* Lisp
-* Rust ([crates](https://crates.io/))
-* Perl
 * Heredoc
 
 ```heredoc
