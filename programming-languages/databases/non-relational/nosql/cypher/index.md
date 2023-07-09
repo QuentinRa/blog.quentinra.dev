@@ -1,25 +1,4 @@
-# Cypher advanced clauses
-
-<details class="details-e">
-<summary>WITH (<code>No equivalent in SQL</code>)</summary>
-
-`WITH` is allowing you to update what you matched, and prepare things for the next matches. You can use WHERE, ORDER BY, LIMIT, etc. inside a WITH!
-
-```cypher
-// what's the average released year for the movies in the database?
-MATCH (m:Movie) RETURN ROUND(AVG(m.released))
-// using a WITH
-MATCH (m:Movie) WITH ROUND(AVG(m.released)) as avg RETURN avg
-// and now, let's say we want the movies released in avg (=1998)
-MATCH (m:Movie) WITH ROUND(AVG(m.released)) as avg 
-MATCH (m{released: avg})
-RETURN m
-```
-</details>
-
-<hr class="sl">
-
-## Create-Update-Delete
+# Create-Update-Delete
 
 <details class="details-e">
 <summary>CREATE (<code>SQL INSERT</code>)</summary>

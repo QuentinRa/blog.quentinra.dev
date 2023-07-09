@@ -181,7 +181,15 @@ For instance: `MATCH (m:Movie) RETURN ROUND(AVG(m.released))` returns rounds the
 
 #### WITH `(SQL <none>)`
 
-...
+With can be used to execute an operation, such as a calculation.
+
+```cypher
+MATCH (m:Movie) WITH ROUND(AVG(m.released)) AS avg RETURN avg
+// which is useful when chaining matches
+MATCH (m:Movie) WITH ROUND(AVG(m.released)) as avg 
+MATCH (m{released: avg})
+RETURN m
+```
 
 #### OPTIONAL MATCH `(SQL <none>)`
 
@@ -239,7 +247,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-xxx
+* [_old](../nosql/cypher/index.md)
 </div><div>
 
 
