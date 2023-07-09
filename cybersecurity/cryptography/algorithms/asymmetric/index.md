@@ -4,14 +4,14 @@
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-Asymmetric algorithms <small>(a.k.a. public-key algorithm)</small> are algorithms in which **different keys** are used to encrypt and decrypt a cypher.
+Asymmetric algorithms <small>(a.k.a. public-key algorithm)</small> are algorithms in which **different keys** are used to encrypt and decrypt a cipher.
 
 👉 Used in key exchange <small>(SSL...)</small>, digital signatures...
 </div><div>
 
-**Encryption**: we generate a cypher (`c`) from a message (`m`), encrypted with a public key (`pk`) using an algorithm `C`: `c = C(pk, m)`
+**Encryption**: we generate a cipher (`c`) from a message (`m`), encrypted with a public key (`pk`) using an algorithm `C`: `c = C(pk, m)`
 
-**Decryption**: we generate back the message (`m`) from the cypher (`c`), a private key (`sk`), and using an algorithm `D`: `m = D(sk, c)`
+**Decryption**: we generate back the message (`m`) from the cipher (`c`), a private key (`sk`), and using an algorithm `D`: `m = D(sk, c)`
 </div></div>
 
 <hr class="sep-both">
@@ -20,12 +20,12 @@ Asymmetric algorithms <small>(a.k.a. public-key algorithm)</small> are algorithm
 
 <div class="row row-cols-md-2"><div>
 
-Merkle-Hellman knapsack problem is one of the earliest public-key algorithm 🐣. The private key is a super-increasing knapsack problem, while the public key is the private key transformed enough so that it becomes a knapsack problem.
+Merkle-Hellman knapsack problem is one of the earliest public-key algorithms 🐣. The private key is a super-increasing knapsack problem, while the public key is the private key transformed enough so that it becomes a knapsack problem.
 
 <details class="details-n">
 <summary>Knapsack problem</summary>
 
-The most know bag/knapsack problem is the **0-1 knapsack problem**. You got a "bag/Knapsack" of numbers <small>(ex: 23, 5, 11, 2, 55)</small>. Your message is made of `0`, and `1`, and using this method `1` means you picked something from the bag, `0` means you didn't. Then, make the sum of the numbers you picked in the bag to create the **cipher**. Note that you **will have to split the message into groups** having the size of the knapsack.
+The most well-known bag/knapsack problem is the **0-1 knapsack problem**. You got a "bag/Knapsack" of numbers <small>(ex: 23, 5, 11, 2, 55)</small>. Your message is made of `0`, and `1`, and using this method `1` means you picked something from the bag, `0` means you didn't. Then, make the sum of the numbers you picked in the bag to create the **cipher**. Note that you **will have to split the message into groups** having the size of the knapsack.
 
 * **Knapsack**: $2, 5, 11, 23, 55$ (up to you, size=6)
 * **Message**: $1100111001 = 11001\ 10001$ (group of 6)
@@ -38,7 +38,7 @@ The most know bag/knapsack problem is the **0-1 knapsack problem**. You got a "b
 <details class="details-n"> 
 <summary>Super-increasing knapsack problem</summary>
 
-An easy knapsack problem is the **super-increasing knapsack problem**, in which every next entry of the bag is greater than the sum of the previous terms. It make it easy to decipher the message without the key, as if the cipher is greater or equals than the current greatest value of the knapsack, then it is inside the knapsack of the message.
+An easy knapsack problem is the **super-increasing knapsack problem**, in which every next entry of the bag is greater than the sum of the previous terms. It makes it easy to decipher the message without the key, as if the cipher is greater than or equal to the current greatest value of the knapsack, then it is inside the knapsack of the message.
 
 * **Knapsack**: $2, 5, 11, 23, 55$
 * **Cipher**: 62
@@ -69,12 +69,12 @@ We will pick a value $N$ greater than the sum of the values in the Knapsack, and
 <summary>Public-key exchange</summary>
 
 * **A** is generating a private-key using the super-increasing knapsack ($(2, 5, 11, 23, 55)$)
-* **A** is generating a public-key $(54, 22, 71, 56, 16)$, using a $N=113$, and $W=27$ that **B** know
-* **A** encrypt a message using the public-key, and send the cipher text to **B**
+* **A** is generating a public key $(54, 22, 71, 56, 16)$, using a $N=113$, and $W=27$ that **B** knows
+* **A** encrypt a message using the public key, and send the cipher text to **B**
     * $54 + 22 + 0 + 0 + 16 = 92$ (first group)
     * $54 + 0 + 0 + 0 + 16 = 70$ (second group)
     * **Cipher text**: $92, 70$
-* **B** generate the private-key using the public-key, and both $W$, and $N$
+* **B** generate the private-key using the public key, and both $W$, and $N$
     * We are multiplying the public key by $W^{-1}$, modulus $N$
     * We get the private key: $2, 5, 11, 23, 55$
 * **B** decrypt the message
@@ -111,7 +111,7 @@ It allows two parties to establish a shared secret key over an insecure communic
 * The shared key is $B^a\ (mod\ p)$ for Alice, and $A^b\ (mod\ p)$ for Bob.
 </div><div>
 
-* **Length of p** 🌻: a least 2048 bits
+* **Length of p** 🌻: at least 2048 bits
 * **Length of each secret number** 🦄: at least as long as p
 * **Attacks** 🧨
     * Man-in-the-middle attacks
@@ -130,7 +130,7 @@ It allows two parties to establish a shared secret key over an insecure communic
 * 🔨 Choose two large prime numbers: **p** and **q**
 * ⛏️ Compute their product: $n = p * q$
 * ⚒️ Compute phi(n): $\phi(n) = (p-1) * (q-1)$
-* 🔒 Compute the exponent used for encryption **e**. $e$ must be coprime with $\phi(n)$, meaning that $gcd(k,\ \phi(n)) = 1$. It must be greater than 3, and it is usually equals to $2^{16}+1=65537$.
+* 🔒 Compute the exponent used for encryption **e**. $e$ must be coprime with $\phi(n)$, meaning that $gcd(k,\ \phi(n)) = 1$. It must be greater than 3, and it is usually equal to $2^{16}+1=65537$.
 * 🔑 Compute the exponent used for decryption **d** using the formula: $d = e^{−1}\ mod\ \phi(n)$.
 
 The public key is **public key is $(n,e)$**, while the **private key is $(n,d)$**.

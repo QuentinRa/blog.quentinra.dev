@@ -4,14 +4,14 @@
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-Symmetric algorithms <small>(a.k.a. secret key algorithm)</small> are algorithms in which the **same key** is used to encrypt and decrypt a cypher.
+Symmetric algorithms <small>(a.k.a. secret key algorithm)</small> are algorithms in which the **same key** is used to encrypt and decrypt a cipher.
 
 🔑 The key length must be at least 128 bits to be acceptable. The longer the key, the more secure the encryption.
 </div><div>
 
-**Encryption**: we generate a cypher (`c`) from a message (`m`) using a key (`k`) and an algorithm `C` giving us: `c = C(k, m)`
+**Encryption**: we generate a cipher (`c`) from a message (`m`) using a key (`k`) and an algorithm `C` giving us: `c = C(k, m)`
 
-**Decryption**: we generate back the message (`m`) from the cypher (`c`) and the same key (`k`) using an algorithm `D` giving us: `m = D(k, c)`
+**Decryption**: we generate back the message (`m`) from the cipher (`c`) and the same key (`k`) using an algorithm `D` giving us: `m = D(k, c)`
 
 ➡️ They are usually faster, with a smaller key, and easier to set up.
 </div></div>
@@ -32,7 +32,7 @@ These algorithms encrypt the message bit by bit/byte by byte. They produce a con
 
 #### Block cipher (<code>chiffrement par bloc</code>)
 
-These algorithms split the message in blocks of fixed size `n`. If a block is not "full", some **padding** is added. Each block is encrypted using an algorithm, generating a block of the final ciphertext. Each key has the same length `n` as the block.
+These algorithms split the message into blocks of fixed size `n`. If a block is not "full", some **padding** is added. Each block is encrypted using an algorithm, generating a block of the final ciphertext. Each key has the same length `n` as the block.
 
 👉 Examples: ECB, AES...
 
@@ -56,7 +56,7 @@ Caesar 👑 was replacing letters such as: $a \to d,\ b \to e,\ ...,\ z \to c$. 
 
 * **Possible values for k** 🦄: 26
 * **Attacks** 🧨
-  * Bruteforce attack
+  * Brute force attack
   * Frequency analysis
 * **Try it online** 🌍: [Caesar cipher online (cryptii.com)](https://cryptii.com/pipes/caesar-cipher)
 * **Still used?** 🟥: no
@@ -68,7 +68,7 @@ Caesar 👑 was replacing letters such as: $a \to d,\ b \to e,\ ...,\ z \to c$. 
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-Similar to caesar cipher. Each letter is associated with another: $a \to w,\ b \to e,\ etc.$ The key is a dictionary of 26 letters (a-z).
+Similar to Caesar's cipher. Each letter is associated with another: $a \to w,\ b \to e,\ etc.$ The key is a dictionary of 26 letters (a-z).
 
 **Encryption**: use the key to replace each letter
 
@@ -89,7 +89,7 @@ Similar to caesar cipher. Each letter is associated with another: $a \to w,\ b \
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-This is a caesar cipher, but split into blocs. The goal was to prevent frequency analysis, because a same letter will *most likely* be enciphered as different ciphertext letters.
+This is a Caesar cipher but split into blocs. The goal was to prevent frequency analysis because the same letter will *most likely* be enciphered as different ciphertext letters.
 
 <details class="details-n">
 <summary>Example of encryption/decryption</summary>
@@ -154,7 +154,7 @@ The **Advanced Encryption Standard**, abbreviated as **AES**, is a part of the *
 Using this mode, each block is encrypted using the same key. 
 
 * **Attacks** 🧨
-  * Brute-force attack
+  * Brute force attack
   * Known plaintext attack
   * Dictionary attack
 * **Still used?** 🟨: yes, in some applications, mostly for integrity rather than confidentiality.
@@ -174,7 +174,7 @@ Using this mode with AES, we introduce a new parameter IV <small>(unique and not
 
 * **Possible values for k** 🦄: a string of 128/192/256 bits
 * **Attacks** 🧨
-  * Brute-force attack
+  * Brute force attack
   * Known plaintext attack
   * Side-channel/timing attacks
 * **Try it online** 🌍: [One Time Pad (boxentriq.com)](https://www.boxentriq.com/code-breaking/one-time-pad)
