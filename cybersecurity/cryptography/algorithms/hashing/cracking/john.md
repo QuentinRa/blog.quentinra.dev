@@ -176,7 +176,7 @@ $ john --format=gpg myhash --wordlist=wordlist
 
 <div class="row row-cols-md-2"><div>
 
-Some users are using a key instead of a password while connecting to a server via [SSH](/operating-systems/networking/protocols/ssh.md), because, as long as the key is not leaked, it's more secure than sending credentials.
+Some users use a key instead of a password while connecting to a server via [SSH](/operating-systems/networking/protocols/ssh.md), because, as long as the key is not leaked, it's more secure than sending credentials.
 
 ```shell!
 $ ssh login@ip -i /path/to/id_rsa

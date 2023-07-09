@@ -12,9 +12,9 @@ Any file you find, be it during [Digital forensics](/cybersecurity/blue-team/for
 * ...
 </div><div>
 
-This is why you should investigate any file you get you hands on.
+This is why you should investigate any file you get your hands on.
  
-➡️ For instance, if you notice a "big" image <small>(usually >1MB)</small>, you may want to check if this is really an image.
+➡️ For instance, if you notice a "big" image <small>(usually >1 MB)</small>, you may want to check if this is really an image.
 </div></div>
 
 <hr class="sep-both">
@@ -25,7 +25,7 @@ This is why you should investigate any file you get you hands on.
 
 <div class="row row-cols-md-2"><div>
 
-Any file has metadata, which is data that provide information on the file, such as the author, the creation date...
+Any file has metadata, which is data that provides information on the file, such as the author, the creation date...
 
 #### PDF metadata
 
@@ -73,7 +73,7 @@ Software                        : www.inkscape.org
 
 <div class="row row-cols-md-2"><div>
 
-Steganography is a technique in which a person hide data inside the pixels of an image. It's used to secretly transfer data.
+Steganography is a technique in which a person hides data inside the pixels of an image. It's used to secretly transfer data.
 
 If the hidden content is not protected by a password, you can extract it using the `steghide` command:
 
@@ -146,7 +146,7 @@ You can use [Audacity]() to analyze audio files.
 $ sudo apt install audacity
 ```
 
-Open the file, click on the filename, select wav to spectrogram.
+Open the file, click on the filename, and select wav to spectrogram.
 </div><div>
 
 See also: [academo spectrum analyzer](https://academo.org/demos/spectrum-analyzer/) or [morsecode audio decoder](https://morsecode.world/international/decoder/audio-decoder-adaptive.html).
