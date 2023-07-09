@@ -288,6 +288,45 @@ MATCH (w:ShowbizPerson)-[:WROTE]->(:Movie) MATCH (w)-[:PRODUCED]->(:Movie) RETUR
 
 <hr class="sep-both">
 
+## Lists
+
+<div class="row row-cols-md-2"><div>
+
+If needed, you can use lists in your queries. See [Python](/programming-languages/high-level/python/index.md#lists) lists.
+
+```cypher
+// return the list of the release dates for the movies linked to "Keanu Reeves"
+MATCH (a:ShowbizPerson {name: 'Keanu Reeves'})
+RETURN [(a)-->(b) WHERE b:Movie | b.released] AS years
+```
+
+Here are two simple queries explained:
+
+* `[x in range(0,5) | x]`: returns [0,1,2,3,4,5]
+* `[x in range(0,5) WHERE x+2<5 | x^2]`: returns [0,1,4]
+    * only 0,1,2 are passing the criteria `x+2<5`
+    * then we are evaluating each value as `x^2`
+</div><div>
+
+Common functions 📑
+
+* `range(min,max)`: returns a list of values [min, max]
+* `head(list)`: return the first element
+* `tail(list)`: remove the list without the head
+* `size(list)`: size of a list
+* `reverse(list)`: reverse a list
+
+Indexes ✨
+
+* `list[0]`: first element
+* `list[-1]`: last element
+* `list[1..3]`: list of `list[1]`+`list[2]`
+* `list[..3]`: list of `list[0]`+`list[1]`+`list[2]`
+* `list[0..]`: list of `list[0]`+`list[1]`+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
