@@ -10,16 +10,16 @@ Cryptography has three main objectives:
 * 🧬 ensure integrity <small>(checksum)</small>
 * ✅ ensure authenticity <small>(certificate, signatures)</small>
 
-There are three kind of cryptographic algorithms
+There are three categories of cryptographic algorithms:
 
 * [Symmetric algorithms](/cybersecurity/cryptography/algorithms/symmetric/index.md): one shared private key
 * [Asymmetric algorithms](/cybersecurity/cryptography/algorithms/asymmetric/index.md): one public key, one private key
 * [Hashing algorithms](/cybersecurity/cryptography/algorithms/hashing/index.md): no key, generate a digest
 </div><div>
 
-Cryptanalysis are those with the duty to analyse and find weakness in the underlying maths of cryptographic algorithms.
+Cryptanalysts are those with the duty to analyze and find weaknesses in the underlying math of cryptographic algorithms.
 
-➡️ Python is quite used in cryptography, because reasons like there are many libraries with cryptographic algorithms, integers are not limited in size, it's popular in mathematical fields...
+➡️ Python is quite used in cryptography, because reasons like there are many libraries with cryptographic algorithms, integers are not limited in size, and it's popular in mathematical fields...
 
 **Where to learn?**
 
@@ -38,7 +38,7 @@ In a nutshell, we use these terms:
 
 * The input is a **plaintext** message 💬.
 
-* It is **encrypted** 🔒 <small>(a.k.a. encipher)</small> using a cryptographic algorithm and a **key** 🔑. The output is called a **cyphertext** (`message encrypté`) 🔐. 
+* It is **encrypted** 🔒 <small>(a.k.a. encipher)</small> using a cryptographic algorithm and a **key** 🔑. The output is called a **ciphertext** (`message encrypté`) 🔐. 
 
 * It is **decrypted** 🔓  using a cryptographic algorithm and a **key** 🗝️.
 </div><div>
@@ -84,13 +84,13 @@ Algorithms can be
 
 #### Congruence
 
-Let a and b two numbers. We are saying that $a$ is **congruent** (`congru`, $\equiv$) with $b$ **modulus** (`modulo`) $m$, if we can find a $q$ giving us
+Let a and b be two numbers. We are saying that $a$ is **congruent** (`congru`, $\equiv$) with $b$ **modulus** (`modulo`) $m$, if we can find a $q$ giving us
 
 @
 a = b + m * q
 @
 
-This is an **euclidean division with $b = r$ in **. We are using one of the notations below
+This is a **Euclidean division with $b = r$ in **. We are using one of the notations below
 
 <div>
 \[
@@ -108,7 +108,7 @@ a \equiv [b]\\
 
 #### Euclidean division (`Division euclidienne`)
 
-Dividing $a$ by $b$, mean solving $a = b * q + r$. You need to find **quotient** $q$ and the **remainder** (`reste`) $r$, with $r \lt b$. Both are unique.
+Dividing $a$ by $b$, means solving $a = b * q + r$. You need to find the **quotient** $q$ and the **remainder** (`reste`) $r$, with $r \lt b$. Both are unique.
 
 We are saying that $a$ is a **divisor** of $b$ if $r = 0$, written $a\ |\ b$. It would also mean that $a$ is a multiple of $b$.
 
@@ -118,7 +118,7 @@ We are saying that $a$ is a **divisor** of $b$ if $r = 0$, written $a\ |\ b$. It
 
 #### Greatest common divisor (<code>Plus grand diviseur commun</code>)
 
-$D(a,b)$ is the set of common divisors between $a$ and $b$. We are calling "**greatest common divisor**" (**GCD** or `PGCD`), the greatest value of $D(a,b)$, written $GCD(a,b)$ or $a \wedge b$.
+$D(a,b)$ is the set of common divisors between $a$ and $b$. We are calling the "**greatest common divisor**" (**GCD** or `PGCD`), the greatest value of $D(a,b)$, written $GCD(a,b)$ or $a \wedge b$.
 
 > Example: what's the GCD of $(27, 15)$
 > <p>
@@ -189,7 +189,7 @@ A number $a$ is invertible modulus $m$ if $\exists a^{-1}$ giving us $a * a^{-1}
 
 <div class="row row-cols-md-2"><div>
 
-A prime number is a number **greater or equals to 2**, which is **only divisible by 1 and itself**.
+A prime number is a number **greater than or equal to 2**, which is **only divisible by 1 and itself**.
 
 * ✅: 2, 3, 5, 7, 11, 13, etc.
 * ❌: 4 (→2), 6 (→2, →3), 9 (→3), 10 (→2, →5), etc.
@@ -202,7 +202,7 @@ We are calling $\xi_p(n)$, the exponent of $p$ in the factorization of a number 
 
 #### GCP with prime numbers
 
-You can calculate the **GCD easily**. Simply express each number with prime numbers. Then, take each **unique** number in both factorizations, they will be in the **GCD**. Their exponent is the lowest exponent that we have for each number in the two factorizations.
+You can calculate the **GCD easily**. Simply express each number with prime numbers. Then, take each **unique** number in both factorizations: they will be in the **GCD**. Their exponent is the lowest exponent that we have for each number in the two factorizations.
 
 <p>
 \begin{split}
@@ -223,7 +223,7 @@ GCP(98, 77) = 2^{min(1, 0)} * 7^{min(2, 1)} * 11^{min(0, 1)}
 
 <div class="row row-cols-md-2"><div>
 
-If you need to manually calculate an euclidean division with big numbers, then you may want to use the prime Factorization shortcut.
+If you need to manually calculate a Euclidean division with big numbers, then you may want to use the prime Factorization shortcut.
 
 #### Prime Factorization (`Décomposition en produit de facteurs premiers`)
 
@@ -247,7 +247,7 @@ Rewrite $a$ as a product of factors, and evaluate each one.
   * $10^3 = 10 * 10 * 10 \equiv 1 \ (\text{mod}\ 3)$
   * $2021= 2 * 1 + 2 * 1 + 1 = 5 \equiv 2 \ (\text{mod}\ 3)$
 
-This is called **Euler theorem** ([wiki](https://en.wikipedia.org/wiki/Euler%27s_theorem)).
+This is called the **Euler theorem** ([wiki](https://en.wikipedia.org/wiki/Euler%27s_theorem)).
 </div></div>
 
 <hr class="sep-both">
