@@ -2,9 +2,9 @@
 
 <div class="row row-cols-md-2"><div>
 
-[JavaFX](https://openjfx.io/) is an open-source java library to create graphical interfaces.
+[JavaFX](https://openjfx.io/) is an open-source [Java](/programming-languages/high-level/java/_general/index.md) library to create graphical interfaces.
 
-JavaFX views are stored `.fxml` files usually created using [Scene Builder](https://gluonhq.com/products/scene-builder/) 🛝 which is a `WYSIWYG` editor <small>(What You See Is What You Get)</small>.
+JavaFX's views are stored `.fxml` files usually created using [Scene Builder](https://gluonhq.com/products/scene-builder/) 🛝 which is a `WYSIWYG` editor <small>(What You See Is What You Get)</small>.
 
 * [Official installation instructions](https://openjfx.io/openjfx-docs/) 🚀
 * [Official Javadoc](https://openjfx.io/javadoc/20/) 🌿
@@ -17,7 +17,7 @@ JavaFX views are stored `.fxml` files usually created using [Scene Builder](http
 
 * `JavaFX runtime component missing`: you are missing a vm option, refer to `--module-path` and `--add-modules`.
 
-* `Can't load FXML error`: the controller do not fit your FXML <small>(duplicate IDs, mismatched type...)</small>
+* `Can't load FXML error`: the controller does not fit your FXML <small>(duplicate IDs, mismatched type...)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -26,7 +26,7 @@ JavaFX views are stored `.fxml` files usually created using [Scene Builder](http
 
 <div class="row row-cols-md-2"><div>
 
-JavaFX Main class must extend `Application`. This code below create a `Scene` with a Label showing `Hello, World!`.
+JavaFX's Main class must extend `Application`. This code below creates a `Scene` with a Label showing `Hello, World!`.
 
 ```java
 import javafx.application.Application;
@@ -108,7 +108,7 @@ Some commonly used **views** are:
 
 * `TextField`/`PasswordField`: input fields
 
-* `TextFlow`: a group of Labels. Used to show a text with some labels having different size/colors/...
+* `TextFlow`: a group of Labels. Used to show a text with some labels having different sizes/colors/...
 
 * [ListView](_sub/listview.md): display a list of items
 
@@ -145,14 +145,14 @@ FXML files are [XML](/programming-languages/others/data/xml.md) files with a syn
 ![Scene Builder Main Frame](_images/mf.png)
 </div><div>
 
-1. **Library** 📚: a searchable list of [components](#components). You can drag and drop then inside "2" or "4".
+1. **Library** 📚: a searchable list of [components](#components). You can drag and drop them inside "2" or "4".
 2. **Hierarchy** 🗃️: the tree representation of your XML. You can rename/move/duplicate/delete components from there.
 3. **Controller** 🚸: you can bind a [controller](#controller) here
 4. **Scene** 🖍️: you can preview your interface here. You can move components within the interface from here too.
 5. **Inspector** 👮‍♀️: when selecting a component <small>(in "2" or "4")</small>, you will be able to edit its properties here. <small>(ex: change the background color)</small>
 6. **MenuBar** 📂: the `Preview` menu is quite handy
 
-The inspector is subdivided in 3 sections:
+The inspector is subdivided into three sections:
 
 * **Properties**: set a value/text, check/uncheck, show/hide, css...
 * **Layout**: to set margins, padding, size, alignment...
@@ -192,7 +192,7 @@ public void onEventName(ActionEvent actionEvent) {}
 public void onEventName() {}
 ```
 
-Inside SceneBuilder, navigate to <kbd>Inspector > Code</kbd>. You can make a event such as `onAction` <small>(click)</small> call a method <small>(e.g. onEventName)</small>.
+Inside SceneBuilder, navigate to <kbd>Inspector > Code</kbd>. You can map an event such as `onAction` <small>(click)</small> to a method <small>(e.g. onEventName)</small>.
 
 </div><div>
 
@@ -234,7 +234,7 @@ public class XXXController {
 
 Drag-and-Drop an image inside a Button/Label/... Select the label, and in the inspector, navigate to Properties:
 
-* Use `Graphic Text Gap` to add gab between the image and the text
+* Use `Graphic Text Gap` to add a gap between the image and the text
 * Use `Content Display` to move the image around. You can select `GRAPHIC_ONLY` or `TEXT_ONLY` to only show one of them.
 
 <br>
@@ -279,7 +279,7 @@ You can also do it inside [SceneBuilder](#scenebuilder). Hover the cog icon next
 
 #### Loading a Locale
 
-To load a FXML using texts from a language file, use:
+To load an FXML using texts from a language file, use:
 
 ```java
 // import java.util.Locale;

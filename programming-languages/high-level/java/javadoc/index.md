@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-The Javadoc is **java documentation engine** ✍️. Developers will write javadoc comments inside their code, and using the `javadoc` command, a website will be generated 🌍.
+The Javadoc is **java documentation engine** ✍️. Developers will write Javadoc comments inside their code, and using the `javadoc` command, a website will be generated 🌍.
 
 Aside from versions before 11, you can change the number in the URL to access the Javadoc for another version of Java at:
 
@@ -39,12 +39,12 @@ Javadoc comments are comments starting with `/**`.
 /**
  * Class description
  *
- * @author autor
- * @version 0.0.0.1 09 november 2019
+ * @author author
+ * @version 0.0.0.1 09 November 2019
  * @see AnotherClassYouMustCheck
  * @see AnotherClassYouMustCheck#aMethodName
  */
-public class Classe{
+public class AClass {
 
     /**
      * Method description
@@ -73,7 +73,7 @@ public class Classe{
 
 **Explanations** ✍️
 
-Most elements are not present in every javadoc comment, albeit you may see some warnings if according to the context, one is missing.
+Most elements are not present in every Javadoc comment, albeit you may see some warnings if according to the context, one is missing.
 
 * `@author author`: can have multiple authors tags or a list of authors
 
@@ -90,15 +90,15 @@ Most elements are not present in every javadoc comment, albeit you may see some 
 * `{@link xxxx}`: inside a param, a return, or some text, you can use this to create a link to a class/method.
 
 * `@param name desc`: describe a param
-* `@return desc`: describe what's the method returns
+* `@return desc`: describe what the method returns
 * `@throws exception_class desc`: if an exception is thrown
 
-To comment a generic class/method parameter, you use `@param` too:
+To comment on a generic class/method parameter, use `@param` too:
 
 ```java
 /**
  * ...
- * @param <T>
+ * @param <T> description
  */
 public class GenericClass<T> {}
 ```

@@ -14,7 +14,7 @@ Here are some majors NoSQL databases models/stores:
 👉 NoSQL means that SQL databases are not the only databases.
 </div><div>
 
-Each NoSQL database model has its pro and cons, but overall, NoSQL databases pro and cons are:
+Each NoSQL database model has its pro and cons, but overall, NoSQL databases' pros and cons are:
 
 * 🌱 They were designed to handle large amounts of data <small>(scalable)</small>
 * ✍️ They are flexible <small>(no schema, semi- or completely unstructured)</small>
@@ -22,7 +22,7 @@ Each NoSQL database model has its pro and cons, but overall, NoSQL databases pro
 * 🚀 They have high performances <small>(required by low-latency apps)</small>
 * 📒 They have limited query features <small>(relatively to SQL/...)</small>
 
-NoSQL databases became quite popular around 2010, and they are used by a lot of actors like Google, Microsoft, Facebook, or Twitter.
+NoSQL databases became quite popular around 2010, and they are used by a lot of actors like Google, Microsoft, Facebook, and Twitter.
 </div></div>
 
 <hr class="sep-both">
