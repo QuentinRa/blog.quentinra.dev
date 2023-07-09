@@ -64,8 +64,8 @@ $ hashcat -a 3 <format> --stdout > wordlist
 
 The format is a string with meta-character such as:
 
-* `?l`: lower character (a-z)
-* `?u`: upper character (A-Z)
+* `?l`: lower characters (a-z)
+* `?u`: upper characters (A-Z)
 * `?d`: number (0-9)
 * ...
 

@@ -23,9 +23,9 @@ Since a hash function is one-way, it's impossible to know the original data. How
 
 * **Hash collision** 👎: two different data generate the same hash. Some well-known vulnerable algorithms are [SHA1](https://shattered.io/), [MD5](https://www.mscs.dal.ca/~selinger/md5collision/)...
 
-* **Determinism** 🛣️: a hash function always generate the same hash given the same data. It allows attackers to precompute hashes for well-known passwords, and perform a **rainbow table** attack. A salt is a parameter <small>(usually, a random string)</small> added to generate different hashes given the same data. Only calling the hash function with the same salt result in the same output.
+* **Determinism** 🛣️: a hash function always generates the same hash given the same data. It allows attackers to precompute hashes for well-known passwords, and perform a **rainbow table** attack. A salt is a parameter <small>(usually, a random string)</small> added to generate different hashes given the same data. Only calling the hash function with the same salt results in the same output.
 
-➡️ They are also brute force attacks using dictionaries of passwords. 
+➡️ They may use brute force with a dictionary of passwords too.
 </div></div>
 
 <hr class="sep-both">
@@ -34,7 +34,7 @@ Since a hash function is one-way, it's impossible to know the original data. How
 
 <div class="row row-cols-md-2"><div>
 
-👉 There are many language specific functions that should be wiser choice, but you can use these for testing.
+👉 There are many language-specific functions, but you can use these commands for testing.
 
 * ➡️ Using `openssl`
 
@@ -138,7 +138,7 @@ Some tools may provide an incorrect format, or not support the format you are lo
 
 <div class="row row-cols-md-2"><div>
 
-Hash cracking usually involves a dictionnary with a list of potential passwords a.k.a. [wordlist](/cybersecurity/red-team/_knowledge/index.md#wordlists-) <small>(Rainbow tables may be used for older systems)</small>.
+Hash cracking usually involves a dictionary with a list of potential passwords a.k.a. [wordlist](/cybersecurity/red-team/_knowledge/index.md#wordlists-) <small>(Rainbow tables may be used for older systems)</small>.
 
 👉 CTFs are usually using `/usr/share/wordlists/rockyou.txt`.
 
@@ -152,7 +152,7 @@ Hash cracking usually involves a dictionnary with a list of potential passwords 
 
 For instance, [crackstation](https://crackstation.net/) <small>(you can download their wordlist!)</small>, [MD5Hashing](https://md5hashing.net/), [decrypt.tools](https://decrypt.tools/), [hashkiller.io](https://hashkiller.io/listmanager), or [hashes.com](https://hashes.com/en/decrypt/hash).
 
-⚠️ Hash cracking tools are usually using your CPU to compute results faster. On a virtual machine, they may be less efficient, as the VM itself is taking a lot of resources.
+⚠️ Hash cracking tools are usually using your CPU to compute results faster. On a virtual machine, they may be less efficient, as the VM itself takes a lot of resources.
 </div></div>
 
 <hr class="sep-both">

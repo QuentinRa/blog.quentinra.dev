@@ -64,13 +64,13 @@ $ john hash --format=raw-md4 --wordlist=/usr/share/wordlists/rockyou.txt
 
 <div class="row row-cols-md-2"><div>
 
-The single crack mode is one of john the ripper modes. In this mode, we define rules 🔏 that are applied on the wordlist, to generate a new "enhanced" wordlist. 🔥 For instance, users tend to
+The single crack mode is one of JtR modes. In this mode, we define rules 🔏 that are applied to the wordlist, to generate a new "enhanced" wordlist. 🔥 For instance, users tend to
 
 * 🔤 capitalize the first letter
 * 🔢 add a number at the end
 * 🔣 add a symbol after the number <small>(if required)</small>
 
-This is the default mode for john. It can be explicitely called with
+This is the default mode for JtR. It can be explicitly called with
 
 ```shell!
 $ john myhash --single [...]
