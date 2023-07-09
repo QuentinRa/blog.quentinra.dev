@@ -35,7 +35,7 @@ To test 👻: `sudo apt install php7.4-mongodb`.
 
 You may [follow this tutorial](https://www.php.net/manual/en/mongodb.installation.windows.php).
 
-First, you have to find if your webserver is thread-safe (TS) or not. Use `phpinfo()` and search for `Thread Safety`.
+First, you have to find out if your web server is thread-safe (TS) or not. Use `phpinfo()` and search for `Thread Safety`.
 
 ```bash!
 # 1.13.0 == MongDB version

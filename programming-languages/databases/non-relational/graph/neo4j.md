@@ -86,7 +86,7 @@ But, you can also add a direction:
 
 <div class="row row-cols-md-2"><div>
 
-Clauses are case insensitive instructions.
+Clauses are case-insensitive instructions.
 
 * Comments are made with `//` or `/* ... */`
 * Concatenate strings with `+`
@@ -101,7 +101,7 @@ Use `MATCH` to select nodes/edges. You can chain matches if needed.
 ```cypher
 MATCH (m:Movie) [...]                 // fetch all movies
 MATCH (m:Movie{released: 2008}) [...] // match + filtering
-MATCH (m), (p) [...]                  // catesian product
+MATCH (m), (p) [...]                  // cartesian product
 MATCH g = (:Movie)-[]-() [...]        // store graph
 ```
 
@@ -176,7 +176,7 @@ And some useful aggregates functions:
 * `COUNT(something)`: number of results
 * `MIN(something)`, `MAX(something)`, `SUM(something)`, `AVG(something)`, `ROUND(something)`... which are working like in SQL.
 
-For instance: `MATCH (m:Movie) RETURN ROUND(AVG(m.released))` returns rounds the average release dates of all movies.
+For instance: `MATCH (m:Movie) RETURN ROUND(AVG(m.released))` returns the rounded average release date of all movies.
 </div><div>
 
 #### WITH `(SQL <none>)`
@@ -193,7 +193,7 @@ RETURN m
 
 #### OPTIONAL MATCH `(SQL <none>)`
 
-A optional match can be used to select nodes/edges that may be `null`.
+An optional match can be used to select nodes/edges that may be `null`.
 
 ```cypher
 MATCH (a:Movie) OPTIONAL MATCH (a)<-[r:ACTED_IN]-()
@@ -209,7 +209,7 @@ RETURN a.title, r // may be null for some movies
 
 #### Create
 
-Create takes a graph and create it.
+Create takes a graph and creates it.
 
 ```cypher
 CREATE (:Movie{title: "My movie", released: 2021})
@@ -273,13 +273,13 @@ MATCH (p:ShowbizPerson)-[r:WROTE|PRODUCED]->(:Movie) RETURN DISTINCT COUNT(p)
 ```cypher
 // Actors that played in a movie with Tom Cruise
 MATCH (s:ShowbizPerson)-[:ACTED_IN]->(:Movie)<-[:ACTED_IN]-(:ShowbizPerson{name: "Tom Cruise"}) RETURN DISTINCT s.name
-// Movies release between 1990-2000 (included)
+// Movies released between 1990-2000 (included)
 MATCH (m:Movie) WHERE m.released>=1990 AND m.released<=2000 RETURN m.title
 // Persons who directed the movie "The Matrix"
 MATCH (:Movie{title: "The Matrix"})-[:DIRECTED]-(s:ShowbizPerson) RETURN s.name
 // Movies Meg Ryan acted in
 MATCH (:ShowbizPerson{name: "Meg Ryan"})-[:ACTED_IN]->(m:Movie) RETURN DISTINCT m.title
-// Thoses that both wrote and produced the same movie
+// Those that both wrote and produced the same movie
 MATCH (w:ShowbizPerson)-[:WROTE]->(:Movie)<-[:PRODUCED]-(p:ShowbizPerson) WHERE w.name = p.name RETURN DISTINCT w.name
 MATCH (w:ShowbizPerson)-[:WROTE]->(:Movie)<-[:PRODUCED]-(w) RETURN DISTINCT w.name
 MATCH (w:ShowbizPerson)-[:WROTE]->(:Movie) MATCH (w)-[:PRODUCED]->(:Movie) RETURN DISTINCT w.name
@@ -305,7 +305,7 @@ Here are two simple queries explained:
 * `[x in range(0,5) | x]`: returns [0,1,2,3,4,5]
 * `[x in range(0,5) WHERE x+2<5 | x^2]`: returns [0,1,4]
     * only 0,1,2 are passing the criteria `x+2<5`
-    * then we are evaluating each value as `x^2`
+    * then we evaluate each value as `x^2`
 </div><div>
 
 Common functions 📑
