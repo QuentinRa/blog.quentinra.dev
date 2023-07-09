@@ -11,15 +11,12 @@ List of courses that have note which were not added yet.
 **Programming Languages > Databases**
 
 * PLSQL
-* NoSQL, MongoDB, Redis, Cypher
-* GraphQL
 
 **Programming Languages > Others**
 
 * Blockchain
 * Sphinx, Doku
-
-</div><div>
+* API > GraphQL
 
 **Programming Languages > Low-Level Languages**
 
@@ -31,11 +28,13 @@ List of courses that have note which were not added yet.
 * C#
 * Java, LibGDX, lwjgl
 * OCaml
+</div><div>
 
 **Tools and Frameworks**
 
 * GIT
 * Pandora
+* Others > SSO > OAuth, OpenID, SAML
 
 **Tools and Frameworks > Editors**
 
@@ -45,6 +44,10 @@ List of courses that have note which were not added yet.
 
 * Gradle
 * Maven
+
+**Operating systems**
+
+* Arduino, Platformio
 </div></div>
 
 
@@ -113,10 +116,7 @@ Google
 **Web/Android/UI**
 
 ➡️ See [Modern web](https://modern-web.dev/guides/)<br>
-➡️ See API/GraphQL (to-do)<br>
-➡️ See API/OpenAPI/tools (to-do)<br>
 ➡️ See JavaScript/libs (to-do)<br>
-➡️ See OAuth ([oauth.net](https://oauth.net/), [oauth-io](https://github.com/oauth-io))<br>
 ➡️ See [Google Code Labs](https://codelabs.developers.google.com/) (Firebase, Flutter...)
 
 * [symfony](https://symfony.com/) ([nelmio](https://github.com/nelmio/NelmioApiDocBundle))
@@ -151,30 +151,10 @@ Google
 
 </div><div>
 
-**Databases**
-
-* [duckdb](https://github.com/duckdb/duckdb)
-
 **Learned** (but there is no notes about them)
 
 * QT
 * Relational modeling
-
-<details class="details-e">
-<summary>Arduino</summary>
-
-* [arduino-songs](https://github.com/robsoncouto/arduino-songs)
-* [arduino.cc](https://create.arduino.cc/projecthub)
-* [platformio](https://docs.platformio.org/en/latest//core/installation/index.html) + [note](https://arduino.stackexchange.com/questions/20294/clion-arduino)
-</details>
-
-<details class="details-e">
-<summary>Blockchains</summary>
-
-* [Bitcoin-like model](https://cea-licia.gitlab.io/max/max.gitlab.io/tutorials/advanced/bitcoin-like-model/)
-* [Solidity](https://soliditylang.org/) ([here](https://medium.com/coinmonks/return-values-in-solidity-contracts-2a034b31d553), [here](https://ethereum.stackexchange.com/questions/67708/should-i-give-names-to-return-values-when-a-function-returns-several-of-them), [here](https://medium.com/blockchannel/the-use-of-revert-assert-and-require-in-solidity-and-the-new-revert-opcode-in-the-evm-1a3a7990e06e), [here](https://anakagung.com/blog/solidity-for-javascript-developer), [here](https://jamesbachini.com/solidity-tutorial/))
-* [metamask](https://metamask.io/)
-</details>
 
 **Random**
 

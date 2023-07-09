@@ -66,5 +66,6 @@ Stuff that I found, but never read/used yet.
 * Data lake
 * Data warehouse
 * ETL tools
+* [duckdb](https://github.com/duckdb/duckdb)
 </div><div>
 </div></div>
