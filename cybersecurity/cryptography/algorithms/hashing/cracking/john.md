@@ -5,15 +5,15 @@
 
 <div class="row row-cols-md-2"><div>
 
-[John the Ripper](https://github.com/openwall/john) (<small>Jumbo</small>, 7.4k ⭐), a.k.a. **john**, is like hashcat, a tool to crack hashes. For convenience's sake, we store the hash in `myhash`.
+[John the Ripper](https://github.com/openwall/john) (<small>Jumbo</small>, 7.4k ⭐), a.k.a. **john**/**JtR** is, like hashcat, a tool to crack hashes. For convenience's sake, we store the hash in `myhash`.
 
 ```ps
-# use quotes, so that $/... aren't interpreted
+# use single quotes, so that $/... aren't interpreted
 $ echo 'some hash here' > myhash
 ```
 </div><div>
 
-List formats <small>(you don't need it with nth/haiti, as they give you the format)</small>. Note that standard formats, such as MD5, are starting with "raw-".
+List formats <small>(you don't need it with nth/haiti, as they give you the format)</small>. Note that standard formats, such as MD5, start with "raw-".
 
 ```shell!
 $ john --list=formats | grep -i "md5"
@@ -70,7 +70,7 @@ The single crack mode is one of JtR modes. In this mode, we define rules 🔏 th
 * 🔢 add a number at the end
 * 🔣 add a symbol after the number <small>(if required)</small>
 
-This is the default mode for JtR. It can be explicitly called with
+This is the default mode. It can be explicitly called with:
 
 ```shell!
 $ john myhash --single [...]
@@ -111,7 +111,7 @@ $ john --wordlist=xxx --rules=yyy --stdout > wordlist
 
 <div class="row row-cols-md-2"><div>
 
-Modern Linux distros are using `sha512crypt`. Use name-that-hash, or any other tools to find the format if needed. The easy way is only passing the hash of the user you want
+Modern Linux distros use `sha512crypt`. Use name-that-hash, or any other tools to find the format if needed. The easy way is only passing the hash of the user you want
 
 ```shell!
 $ john myhash --format=sha512crypt --wordlist=wordlist
@@ -153,35 +153,18 @@ $ john myhash --format=netntlmv2 --wordlist=wordlist
 
 <div class="row row-cols-md-2"><div>
 
-The `gpg` tool can be used to encrypt files, using a passphrase, which is like a password. It can also be used to sign something. For instance, GitHub allows you to sign your commits using GPG keys.
-
-To encrypt something, you could do this. It will generate a `file.gpg`
-
-```shell!
-$ gpg --cipher-algo AES-256 --symmetric file
-```
-
-And, to decrypt <small>(no passphrase is asked if it is cached)</small>
-
-```shell!
-$ gpg -d file.gpg
-# generate back your file
-```
-</div><div>
-
-You can **crack a gpg passphrase** using john too! But, you need to convert the gpg passphrase to a hash first.
+You can try to crack the passphrase of [GPG encrypted files](/cybersecurity/cryptography/commands/gpg.md) using john. You need to convert the gpg passphrase to a hash first.
 
 ```shell!
 $ sudo gpg2john file.pgp > myhash
 ```
+</div><div>
 
 Then, use john as usual, with the format "gpg"
 
 ```shell!
 $ john --format=gpg myhash --wordlist=wordlist 
 ```
-
-> If by any means you got someone's private key that was used to encrypt this file <small>(a key may be used instead of a passphrase)</small>, then use `gpg --import xxx.key` to import it, and decrypt the file as usual.
 </div></div>
 
 <hr class="sep-both">
@@ -214,7 +197,7 @@ $ john --format=ssh myhash --wordlist=wordlist
 
 <div class="row row-cols-md-2"><div>
 
-First convert the password to a file compatible with john.
+First, convert the password to a file compatible with john.
 
 ```shell!
 $ rar2john hello.rar > myhash
@@ -238,7 +221,7 @@ $ unrar x hello.rar
 
 <div class="row row-cols-md-2"><div>
 
-First convert the password to a file compatible with john.
+First, convert the password to a file compatible with john.
 
 ```shell!
 $ zip2john hello.zip > myhash
