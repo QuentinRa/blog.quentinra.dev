@@ -2,9 +2,9 @@
 
 <div class="row row-cols-md-2"><div>
 
-Swing and AWT are libraries bundled with Java to create graphical interfaces. Swing was introduced as a replacement to AWT, but it didn't completely replace AWT.
+Swing and AWT are libraries bundled with Java to create graphical interfaces. Swing was introduced as a replacement for AWT, but it didn't completely replace AWT.
 
-☠️ Modern developers prefer to use [JavaFX](../javafx/index.md), which heavily cut down the quantity of code, and the time invested for the same output.
+☠️ Modern developers prefer to use [JavaFX](../javafx/index.md), which heavily cuts down the quantity of code, and the time invested for the same output.
 </div><div>
 
 These are the two base packages:
@@ -78,7 +78,7 @@ aComponent.setMaximumSize(new Dimension(50,50));
 
 #### JFrame - window
 
-You'll usually create a frame, and add some component inside. Then, you'll make it visible.
+You'll usually create a frame, and add a component inside. Then, you'll make it visible.
 
 ```java
 JFrame f = new JFrame("title");
@@ -133,10 +133,10 @@ p.add(xxx);               // add "xxx" to the group
 
 <div class="row row-cols-md-2"><div>
 
-Layout Managers determine how children components are displayed. They are commonly used with `JPanel` 🖼️.
+Layout Managers determine how child components are displayed. They are commonly used with `JPanel` 🖼️.
 
 ```java
-// some constructor can take a layout manager too
+// some constructors can take a layout manager too
 aComponent.setLayout(LayoutManager);
 ```
 
@@ -152,7 +152,7 @@ aComponent.setLayout(new FlowLayout(FlowLayout.LEFT));
 
 #### BorderLayout
 
-The [BorderLayout](https://docs.oracle.com/en/java/javase/20/docs/api/java.desktop/java/awt/BorderLayout.html) divides the container in 5 areas. The center takes the available space. North and South expand as much as possible horizontally. East and West expand as much as possible vertically.
+The [BorderLayout](https://docs.oracle.com/en/java/javase/20/docs/api/java.desktop/java/awt/BorderLayout.html) divides the container into 5 areas. The center takes up the remaining space. North and South expand as much as possible horizontally. East and West expand as much as possible vertically.
 
 ```java
 aComponent.setLayout(new BorderLayout());
@@ -211,7 +211,7 @@ cardLayout.previous(aComponent);    // show the previous view
 
 <div class="row row-cols-md-2"><div>
 
-Listeners allow us to react when the user interacts with the view, such as clicking on a button.
+Listeners allow us to react when the user interacts with the view, such as by clicking on a button.
 
 ```
 aComponent.addMouseListener(/* a listener here */);
@@ -243,7 +243,7 @@ public class MyMouseListener implements MouseListener {
 
 #### Action listener
 
-A listener to react when a button is pressed.
+This listener is called when a button is pressed.
 
 ```java
 // public class MyActionListener implements ActionListener
@@ -264,7 +264,7 @@ You can also use `WindowAdapter` (abstract class) implementing WindowListener, W
 
 ```java
 public class MyWindowListener implements WindowListener {
-    @Override // never called ?
+    @Override // never called?
     public void windowClosed(WindowEvent e){}
     @Override // before closing
     public void windowClosing(WindowEvent e){}
@@ -276,7 +276,7 @@ public class MyWindowListener implements WindowListener {
     public void windowIconified(WindowEvent e){}
     @Override
     public void windowDeiconified(WindowEvent e){}
-    @Override // never called ?
+    @Override // never called?
     public void windowOpened(WindowEvent e){}
 }
 ```
