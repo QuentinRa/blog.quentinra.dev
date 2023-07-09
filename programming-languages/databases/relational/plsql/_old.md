@@ -33,60 +33,6 @@ call procedure_name(args);
 
 <hr class="sl">
 
-## Declare variables
-
-<div class="row row-cols-md-2 mx-0"><div>
-
-We need variables, either **to store the result of a SQL request**, or because we are a good fellow, and **declare constants** instead of using hardcoded values 🤮.
-
-The syntax is the following <small>([a] means that "a" is optional)</small>
-
-```none
-v_name [CONSTANT] type [NOT NULL] [ := expression ]
-```
-
-> **Pro tip 🚀**: we are adding a `v_` to make it explicit in the name, that this is a variable. It could be a parameter too (if we are inside a function/...).<br>
-> **Pro tip**: you can create types with `CREATE TYPE`.
-</div><div class="align-center">
-
-**Examples**
-
-```sql
--- constant
-v_five CONSTANT integer := 5;
--- not null
-v_real real NOT NULL := 3.0;
--- simple variable
-v_date date;
--- array
-v_array int array[3] := '{0,1,2}';
-```
-</div></div>
-
-<details class="details-e">
-<summary>Inter types 😎</summary>
-
-You may want your variable to not take a hardcoded type, but a type from an attribute
-
-```sql
-v_name table.attr%type; -- type of the attribute "attr" in "table"
-v_name_copy v_name%type; -- type of the variable v_name
-```
-</details>
-
-<details class="details-e">
-<summary>Records/Tuples 👌</summary>
-
-We got a type to **store only ONE row**. You can access an attribute of a record with `.` (dot).
-
-```sql
-v_record record; -- record/tuple
-v_record table%ROWTYPE; -- store a record/tuple of a table "table"
-```
-</details>
-
-<hr class="sl">
-
 ## Statements
 
 <details class="details-e">
@@ -197,47 +143,6 @@ Please, note that exceptions are not working on cursors (e.g.: no NO_DATA_FOUND)
 </details>
 
 <hr class="sl">
-
-## Exceptions
-
-An exception is a signal. Most of the time, it's raised because an error happened. You can handle it in the block exception, but if you didn't, then the signal will be sent upward (=to the caller). If we are back on the request, then the request is crashing with an error.
-
-<div class="row row-cols-md-2 mx-0"><div>
-
-**You can raise an exception** with `RAISE`
-
-```sql
-RAISE 'same as raise notice format' [, values]
-RAISE '...' USING ERRCODE = 'error_code'
-RAISE SOME_EXCEPTION
-RAISE SOME_EXCEPTION USING MESSAGE = 'additional message'
-```
-
-Some examples
-
-```sql
-RAISE 'Error: no records matching id=%', id;
-RAISE DIVISION_BY_ZERO;
-```
-</div><div>
-
-**You can catch an exception**, in `EXCEPTION` with `WHEN`. You can make multiples WHEN in EXCEPTION.
-
-```sql
-WHEN NO_DATA_FOUND THEN some_code;
-WHEN DIVISION_BY_ZERO THEN some_code; -- ZERO_DIVIDE in Oracle
-WHEN UNIQUE_VIOLATION THEN some_code;
--- you tried a select into, with a request
--- returning more than one row.
-WHEN TOO_MANY_ROWS THEN some_code;
--- every exception, fallback
-WHEN OTHERS THEN some_code;
-```
-</div></div>
-
-You got a lot of predefined exceptions, check your database documentation.
-
-<hr class="sr">
 
 ## Functions
 
@@ -428,10 +333,3 @@ CREATE TRIGGER some_trigger BEFORE INSERT ON some_table FOR EACH ROW
 EXECUTE PROCEDURE some_function();
 ```
 </details>
-
-<hr class="sl">
-
-## Sources
-
-* [IUT-SF Teachings](http://www.iut-fbleau.fr/)
-* [ENSIIE Teachings](https://www.ensiie.fr/)
