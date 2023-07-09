@@ -24,7 +24,7 @@ Some common concepts are:
 
 <div class="row row-cols-md-2"><div>
 
-A **class** can be seen as a **template**/blueprint 🖨️ to create objects. It defines an **abstract** concept, such as a person, a computer, an animal... while an **object** is **concrete** such as the person "John Doe" 🪆.
+A **class** can be seen as a **template**/blueprint 🖨️ to create objects. It defines an **abstract** concept, such as a person, a computer, or an animal... while an **object** is **concrete** such as the person "John Doe" 🪆.
 
 ![Class and object](_images/class_and_object.png)
 
@@ -75,7 +75,7 @@ Instantiation is done by calling the constructor. Some languages use the `new` k
 
 ```java
 Person johnDoe = new Person("John Doe");
-// johnDoe.name is equals to "John Doe"
+// johnDoe.name is equal to "John Doe"
 ```
 
 #### Members
@@ -138,7 +138,7 @@ The **ancestor** is usually called:
 
 * parent
 * superclass
-* baseclass
+* base class
 
 The **inheritor** is usually called
 
@@ -161,7 +161,7 @@ class B extends A {} // B is a child class of A
 class C extends A {} // C is a child class of A
 
 B b = new B();       // Stores as B
-b.someMethodInA();   // Calls B's method (if overriden)
+b.someMethodInA();   // Calls B's method (if overridden)
 b.someMethodInB();   // Calls B's method
 ```
 
@@ -169,7 +169,7 @@ As B and C inherit from A, they can be stored in a variable of type `A`.
 
 ```java
 A a = new B();       // Stores as A
-a.someMethodInA();   // Calls B's method (if overriden)
+a.someMethodInA();   // Calls B's method (if overridden)
 ```
 
 **Liskov substitution principle** refers to the fact that regardless of the child class we use, the program should work as expected.

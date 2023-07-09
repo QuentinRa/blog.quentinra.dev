@@ -64,12 +64,12 @@ x /= 1     // same as "x = x / 1"
 
 Most of the time, we are executing a different code according to the value of a variable. We have operators to compare variables/values.
 
-* x greater than 1 → `x > 1`
-* x greater equals than 1 → `x >= 1`
-* x less equals than 1 → `x <= 1`
-* x less than 1 → `x < 1`
-* x equals 1 → `x == 1`
-* x not equals to 1 → `x != 1` or `x <> 1` (☠️)
+* x is greater than 1 → `x > 1`
+* x is greater than or equal to 1 → `x >= 1`
+* x is less than or equal to 1 → `x <= 1`
+* x is less than 1 → `x < 1`
+* x is equal to 1 → `x == 1`
+* x is not equal to 1 → `x != 1` or `x <> 1` (☠️)
 
 💥 Languages may implement strict comparison. Strict comparison will also check the type of the variable <small>(ex: 5.0 === 5 is false)</small>.
 
