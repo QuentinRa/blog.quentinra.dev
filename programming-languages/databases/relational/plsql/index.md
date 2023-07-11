@@ -25,6 +25,7 @@ You need to enable server output to see prints.
 
 ```pgsql
 set serveroutput on
+show errors -- call it each time you got an error
 ```
 
 To print something, use:
@@ -39,6 +40,14 @@ You also need to add a `/` after the `END;` of a [block](#block-of-code):
 [...]
 END;
 /
+```
+
+In oracle, raising your own exceptions is done using:
+
+```pgsql
+exception_name EXCEPTION;
+PRAGMA exception_init(exception_name, code);
+raise_application_error(code, "message");
 ```
 </div><div>
 
@@ -110,6 +119,60 @@ v_real real NOT NULL := 3.0;
 v_date date;
 -- array
 v_array int array[3] := '{0,1,2}';
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Control-flow structures
+
+<div class="row row-cols-md-2"><div>
+
+Usual branching statement.
+
+```pgsql
+IF condition THEN
+    -- ELSIF another_condition THEN
+    -- ELSE THEN
+END IF;
+```
+
+Execute instructions based on a `variable`'s value.
+
+```pgsql
+-- IF ELSEIF ... ELSE
+CASE variable
+	WHEN value1 THEN instructions  -- variable == value1
+	WHEN value2 THEN instructions  -- ...
+	ELSE instructions              -- default
+END CASE;
+```
+</div><div>
+
+Do `something` until `condition` is satisfied.
+
+```pgsql
+LOOP
+    -- something
+    EXIT WHEN condition
+END LOOP;
+```
+
+While `condition` is not satisfied, do `something`.
+
+```pgsql
+WHILE condition LOOP
+    -- something
+END LOOP;
+```
+
+Loops using indexes.
+
+```pgsql
+-- for i in seq / for (i=min; i<max; i++){}
+FOR i IN min AND max LOOP some_code END LOOP;
+-- reverse loop
+FOR i IN REVERSE min AND max LOOP some_code END LOOP;
 ```
 </div></div>
 
@@ -231,6 +294,8 @@ BEGIN
     -- RETURN result; (if any)
 END; -- $$ LANGUAGE plpgsql;
 ```
+
+To use a function: `SELECT some_function()`.
 </div><div>
 
 Args

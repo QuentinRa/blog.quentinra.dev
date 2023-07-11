@@ -1,16 +1,5 @@
 # Procedural Language
 
-PL/SQL (Oracle) - particularities
-
-```sql
--- show more information about your errors (need to be called multiples times)
-show errors;
--- raise an exception
-exception_name EXCEPTION;
-PRAGMA exception_init(exception_name, code);
-raise_application_error(code, "message");
-```
-
 <details>
 <summary>Procedures 🙄</summary>
 
@@ -28,52 +17,6 @@ END;
 -- call (one of these)
 execute procedure_name(args);
 call procedure_name(args);
-```
-</details>
-
-<hr class="sl">
-
-## Statements
-
-<details class="details-e">
-<summary>IF and CASE (switch)</summary>
-
-```sql
-IF something THEN [ELSIF another_condition THEN]
-	[ELSE THEN]
-END IF;
-
--- IF ELSEIF ... ELSE
-CASE variable
-	WHEN value1 THEN instructions
-	WHEN value2 THEN instructions
-	ELSE instructions
-END CASE;
-```
-</details>
-
-<details class="details-e">
-<summary>Loop (do while) and while</summary>
-
-```sql
--- do ... while
-LOOP something
-	EXIT WHEN condition
-END LOOP;
-
--- while
-WHILE something LOOP some_code END LOOP;
-```
-</details>
-
-<details class="details-e">
-<summary>For statement</summary>
-
-```sql
--- for i in seq / for (i=min; i<max; i++){}
-FOR i IN min AND max LOOP some_code END LOOP;
--- reverse loop
-FOR i IN REVERSE min AND max LOOP some_code END LOOP;
 ```
 </details>
 
@@ -147,80 +90,6 @@ DROP TRIGGER IF EXISTS trigger_name ON some_table;
 <hr class="sr">
 
 ## Some templates
-
-<details class="details-e">
-<summary>Function</summary>
-
-```sql
-CREATE OR REPLACE FUNCTION some_function(param1 INTEGER, param2 INTEGER) RETURNS VOID AS $$
-BEGIN
-    RAISE EXCEPTION 'param1 is %. param2 is %.', param1, param2;
-END; $$ LANGUAGE plpgsql;
-```
-
-Then test
-
-```sql
-SELECT some_function(5,10);
--- [...] param1 is 5. param2 is 10.
-```
-</details>
-
-<details class="details-e">
-<summary>Catch an exception</summary>
-
-```sql
-CREATE OR REPLACE FUNCTION some_function() RETURNS VOID AS $$
-BEGIN
-    Select 1/0;
-EXCEPTION
-    WHEN division_by_zero then RAISE EXCEPTION 'catch';
-END; $$ LANGUAGE plpgsql;
-```
-</details>
-
-<details class="details-e">
-<summary>Select into</summary>
-
-```sql
-CREATE OR REPLACE FUNCTION some_function() RETURNS RECORD AS $$
-DECLARE
-    v_record RECORD;
-BEGIN
-    Select 1, 'Luna', 18, 'Woman' INTO v_record;
-    RETURN v_record;
-END; $$ LANGUAGE plpgsql;
-```
-
-Then test
-
-```sql
-SELECT some_function()
--- (1,Luna,18,Woman)
-```
-</details>
-
-<details class="details-e">
-<summary>Using a cursor</summary>
-
-```sql
-CREATE OR REPLACE FUNCTION some_function() RETURNS void AS $$
-DECLARE
-v_cursor CURSOR IS SELECT 'Luna' as NAME; -- some real request 🙄
-BEGIN
-    FOR v_entry IN v_cursor LOOP
-        -- do something
-        -- raise exception :)
-        RAISE '%', v_entry.name;
-	END LOOP;
-END; $$ LANGUAGE plpgsql;
-```
-
-```sql
-SELECT some_function();
--- [...] Luna
-```
-</details>
 
 <details class="details-e">
 <summary>Triggers</summary>
