@@ -314,6 +314,52 @@ Result
 
 <hr class="sep-both">
 
+## Triggers
+
+<div class="row row-cols-md-2"><div>
+
+It's possible to call a `trigger` function when events <small>(insert, update, delete...)</small> occurs. 🔥 Usages: calculate derived fields, archiving...
+
+```pgsql
+CREATE TRIGGER trigger_name
+BEFORE /* or AFTER */ some_event ON some_table
+-- FOR EACH ROW
+-- WHEN some_condition
+-- Then:
+--    some code (ex: BEGIN ... END)
+--    or
+--    EXECUTE PROCEDURE function(args);
+```
+
+* Triggers are either executed `BEFORE` or `AFTER` an event.
+* Events are `INSERT`, `UPDATE`, `UPDATE(column)` or `UPDATE OF column`, `DELETE`... Separate events using `OR` such as `INSERT OR UPDATE`.
+* Add `OR REPLACE` after `CREATE` to update a trigger.
+* Add `FOR EACH ROW` to execute the code for each updated row instead of once for the whole query.
+* Use `WHEN` to add another condition to execute the trigger
+</div><div>
+
+The code executed by the trigger has access to two pseudorecords: **NEW** and **OLD**. The code returns `RETURN NEW` by default <small>(type=TRIGGER)</small>.
+
+✍️ Returning `NULL` cancels INSERT/UPDATE/DELETE.
+
+⚠️ Do not commit/rollback in a commit, or it will be done twice.
+
+🔥 Some rename `OLD/NEW` to `:old/:new` using:
+
+```pgsql
+REFERENCING OLD :old NEW :new
+```
+
+To delete a trigger:
+
+```sql!
+DROP TRIGGER trigger_name ON some_table;
+DROP TRIGGER IF EXISTS trigger_name ON some_table;
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
