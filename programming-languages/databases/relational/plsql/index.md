@@ -300,7 +300,8 @@ To use a function: `SELECT some_function()`.
 
 Args
 
-* `args` is a list of arguments: `arg1 type1[, ...]`.
+* `args` is a list of arguments : `arg1 [IN/OUT] type1[, ...]`.
+* `IN` and `OUT` are optional. By default, all parameters are `IN`. Parameters `IN` are read-only, write those `OUT` must be written to.
 * `$n` is an alias to the nth argument <small>($1 == the first one)</small>.
 
 Result
@@ -370,6 +371,15 @@ Procedures are not available in PL/pgSQL. They are similar to functions, but the
 * 🧳 write the result in a variable marked `OUT`
 * 🌍 can be called outside a SELECT statement.
 
+To execute a procedure, you can use:
+
+```
+procedure_name(args);
+execute procedure_name(args);
+call procedure_name(args);
+```
+</div><div>
+
 ```pgsql
 CREATE OR REPLACE PROCEDURE
 procedure_name(arg1 IN type, arg2 OUT type) IS
@@ -380,17 +390,6 @@ BEGIN
 END;
 / -- compile 
 ```
-</div><div>
-
-To execute a procedure, you can use:
-
-```
-procedure_name(args);
-execute procedure_name(args);
-call procedure_name(args);
-```
-
-`IN` and `OUT` are optional. By default, all parameters are `IN`. Parameters `IN` are read-only, write those `OUT` are read-write.
 </div></div>
 
 <hr class="sep-both">
@@ -400,5 +399,8 @@ call procedure_name(args);
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
+
+* INSTEAD OF
+* `a = 5` or `a := 5` in PL/SQL
 </div><div>
 </div></div>

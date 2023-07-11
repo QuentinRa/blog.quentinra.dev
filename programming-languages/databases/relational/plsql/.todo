@@ -1,4 +1,0 @@
-INSTEAD OF
-[FOR [EACH] ROW/STATEMENT]
-
-| Assignment <small>(PL/SQL only)</small> | `a = 5`, or `a := 5`
