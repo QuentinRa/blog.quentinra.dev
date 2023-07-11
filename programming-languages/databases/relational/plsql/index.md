@@ -156,6 +156,39 @@ You got a lot of predefined exceptions, check your database documentation.
 
 <hr class="sep-both">
 
+## Functions
+
+<div class="row row-cols-md-2"><div>
+
+You can create functions using:
+
+```pgsql
+CREATE OR REPLACE FUNCTION name(args) 
+RETURNS r_type AS $$
+-- declare
+BEGIN
+    -- code
+    -- RETURN result; (if any)
+END; $$ LANGUAGE plpgsql;
+```
+</div><div>
+
+Args
+
+* `args` is a list of arguments: `arg1 type1[, ...]`.
+* `$n` is an alias to the nth argument <small>($1 == the first one)</small>.
+
+Result
+
+* `r_type` is a return type such as `VOID`, `INT`...
+
+✍️ Both `$$` are matching, if you change one, change the other.
+
+
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
