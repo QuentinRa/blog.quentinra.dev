@@ -115,6 +115,66 @@ v_array int array[3] := '{0,1,2}';
 
 <hr class="sep-both">
 
+## SQL SELECT
+
+<div class="row row-cols-md-2"><div>
+
+To exploit the result of a SELECT, you need to store it. You must first declare variables, then you can use them as follows:
+
+#### SQL requests returning zero or one rows
+
+```pgsql
+-- one variable per selected field
+SELECT 42, 'Hello' INTO v_id, v_name FROM /* ... */;
+-- using a variable of type "record"
+SELECT * INTO v_record FROM /* ... */;
+```
+
+#### SQL requests returning n rows
+
+We move the cursor to iterate the result.
+
+```pgsql
+-- use IS or FOR, can use CURSOR before v_cursor
+-- use v_cursor%ROWCOUNT to the number of rows
+v_cursor CURSOR IS sql_request;
+```
+</div><div>
+
+In the code, you can use a `FOR..LOOP`.
+
+```pgsql
+FOR v_entry IN v_cursor LOOP
+    -- use "v_entry.XXX" to access the RECORD fields
+END LOOP;
+```
+
+Cursors do **not** raise exceptions. Use these:
+
+```pgsql
+v_cursor%FOUND    -- true if there are still rows, NULL if fetch never called
+v_cursor%NOTFOUND -- true if no more rows, NULL if fetch never called
+v_cursor%ISOPEN   -- true if the cursor is open
+```
+
+<details class="details-n">
+<summary>Manually open, move, and close the cursor</summary>
+
+```pgsql
+OPEN v_cursor;
+LOOP
+    FETCH v_cursor INTO v_entry; -- store in v_entry
+    EXIT WHEN v_cursor%NOTFOUND;
+    -- v_entry.XXX to access the RECORD fields
+    -- you may use the MOVE clause
+END;
+CLOSE v_cursor;
+````
+</details>
+</div></div>
+
+<hr class="sep-both">
+
 ## Exceptions
 
 An exception is a signal. Most of the time, it's raised because an error occurred. You can handle it in the block exception, but if you didn't, then the signal will be sent upward (=to the caller). If no one catches it, the request crashes with an error.
@@ -164,12 +224,12 @@ You can create functions using:
 
 ```pgsql
 CREATE OR REPLACE FUNCTION name(args) 
-RETURNS r_type AS $$
+RETURNS r_type -- AS $$
 -- declare
 BEGIN
     -- code
     -- RETURN result; (if any)
-END; $$ LANGUAGE plpgsql;
+END; -- $$ LANGUAGE plpgsql;
 ```
 </div><div>
 
@@ -182,7 +242,7 @@ Result
 
 * `r_type` is a return type such as `VOID`, `INT`...
 
-✍️ Both `$$` are matching, if you change one, change the other.
+✍️ When using PL/pgSQL, uncomment "`AS $$`" and "`$$ LANGUAGE plpgsql;`". Both `$$` are matching, if you change one, change the other.
 
 
 </div></div>
