@@ -360,14 +360,45 @@ DROP TRIGGER IF EXISTS trigger_name ON some_table;
 
 <hr class="sep-both">
 
+## Procedures
+
+<div class="row row-cols-md-2"><div>
+
+Procedures are not available in PL/pgSQL. They are similar to functions, but they 
+
+* 🥯 don't return a result
+* 🧳 write the result in a variable marked `OUT`
+* 🌍 can be called outside a SELECT statement.
+
+```pgsql
+CREATE OR REPLACE PROCEDURE
+procedure_name(arg1 IN type, arg2 OUT type) IS
+-- variables
+BEGIN
+    -- code
+    arg2 := arg1 -- write in arg2 the result
+END;
+/ -- compile 
+```
+</div><div>
+
+To execute a procedure, you can use:
+
+```
+procedure_name(args);
+execute procedure_name(args);
+call procedure_name(args);
+```
+
+`IN` and `OUT` are optional. By default, all parameters are `IN`. Parameters `IN` are read-only, write those `OUT` are read-write.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
-
-* [_old](_old.md)
 </div><div>
-
-
 </div></div>
