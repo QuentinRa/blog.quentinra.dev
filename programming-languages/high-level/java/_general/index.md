@@ -460,7 +460,7 @@ An **abstract method** is a method that wasn't implemented yet.
 Abstract classes are the only classes that can have abstract methods, while they may not have any. Aside from that, they are normal classes:
 
 ```java
-public abstract class AbstractXXX {
+public abstract class AbstractXXX { // ✍️ abstract class
     // can have attributes
     private final SomeType someAttribute;
 
@@ -479,7 +479,33 @@ public abstract class AbstractXXX {
 👉 Unless they implement abstract methods, inheritors must be abstract too. Also, you can have `static` and `abstract`.
 </div><div>
 
-...
+#### Interfaces
+
+An interface is a level above an abstract class. We can only inherit one class, but we can **"inherit" (`implement`) multiple interfaces**.
+
+* Interfaces can have `public` methods, `static` or not
+* Interfaces can have `public static final` attributes
+* Everything is `public` by default <small>(keyword can be omitted)</small>
+* Everything is `abstract` by default <small>(keyword can be omitted)</small>
+
+```java
+public interface Human {
+    // can have final attributes
+    public static final int XXX = 0;
+    // can have public abstract instance method
+    public abstract SomeType xxx();
+    // can have public static method
+    public static boolean zzz(...) { /* ... */ }
+}
+```
+
+Since Java 8, interfaces can have methods with a body using `default`:
+
+```java
+public interface XXX {
+    default String XXX() { /* ... */ }
+}
+```
 </div></div>
 
 <hr class="sep-both">

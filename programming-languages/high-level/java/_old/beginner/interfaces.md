@@ -4,8 +4,6 @@
 
 An **interface** is a new type of class, mainly used to ensure that a class will have some methods (as we did using abstract classes, but this time you can "implement" many interfaces)
 
-* everything is public: attributes and methods
-* you can only declare `public static final` kind of attributes (meaning static constants)
 * instance methods usually don't have a body (since Java8 they can using `default` keyword)
 * static methods must have a body
 
@@ -80,20 +78,6 @@ public class Person implements Human, Living {
     public int getHP() { return 0; }
     @Override
     public int getMaxHP() { return 0; }
-}
-```
-
-<hr class="sr">
-
-## Interface: default
-
-Since **Java 8**, methods can have a body
-
-```java
-public interface Human {
-    default String getName() {
-        return "John doe";
-    }
 }
 ```
 
