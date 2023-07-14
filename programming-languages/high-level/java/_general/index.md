@@ -451,7 +451,32 @@ ceo.getName();          // ok
 
 <div class="row row-cols-md-2"><div>
 
-Abstraction allows us to write a template class that is not usable as if, and need to be implemented by [inheritors](#inheritance). Due to [polymorphism](/programming-languages/_paradigm/oo.md#polymorphism) and [liskov principle](/programming-languages/_paradigm/oo.md#polymorphism), we can still use the abstract class in the code.
+Abstraction in Java can be achieved using **abstract classes** or **interfaces**. Both are used to write more generic methods using [polymorphism](/programming-languages/_paradigm/oo.md#polymorphism) and [liskov principle](/programming-languages/_paradigm/oo.md#polymorphism), but they are **not** instantiable.
+
+An **abstract method** is a method that wasn't implemented yet.
+
+#### Abstract classes
+
+Abstract classes are the only classes that can have abstract methods, while they may not have any. Aside from that, they are normal classes:
+
+```java
+public abstract class AbstractXXX {
+    // can have attributes
+    private final SomeType someAttribute;
+
+    // ✍️ can have constructor, but they can't be called
+    protected AbstractXXX(...) {
+        // ...
+    }
+
+    // can have concrete methods
+    public void xxx() { /* ... */ }
+    // ✍️ can have abstract methods
+    public abstract int yyy();
+}
+```
+
+👉 Unless they implement abstract methods, inheritors must be abstract too. Also, you can have `static` and `abstract`.
 </div><div>
 
 ...

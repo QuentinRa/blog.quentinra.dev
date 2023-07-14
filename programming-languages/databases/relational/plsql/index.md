@@ -368,8 +368,8 @@ DROP TRIGGER IF EXISTS trigger_name ON some_table;
 Procedures are not available in PL/pgSQL. They are similar to functions, but they 
 
 * 🥯 don't return a result
-* 🧳 write the result in a variable marked `OUT`
-* 🌍 can be called outside a SELECT statement.
+* 🧳 write any result in variables marked `OUT`
+* 🌍 can be called outside a SELECT statement
 
 To execute a procedure, you can use:
 
