@@ -353,9 +353,11 @@ try {
 
 <hr class="sep-both">
 
-## JAR files
+## Random notes
 
 <div class="row row-cols-md-2"><div>
+
+#### JAR files
 
 [JAR](https://docs.oracle.com/javase/tutorial/deployment/jar/index.html) files are used to bundle JAVA code. Some are executable, while others are libraries that can be used in other projects. It can contain files <small>(images...)</small>, libraries, and other stuff needed by your program. 🗃️
 
@@ -366,7 +368,15 @@ $ java -jar some_jar.jar # execute
 ⚠️ Once bundled, files inside the JAR cannot be modified.
 </div><div>
 
-...
+#### UTF-8
+
+Non-ASCII characters are incorrectly displayed on some machines. You can use [unicode](https://unicode-table.com/en/) to ensure it won't be the case.
+
+```java
+System.out.println("\u00E9"); // print é
+```
+
+Otherwise, you can also use: `java -Dfile.encoding=UTF-8 [...]`.
 </div></div>
 
 <hr class="sep-both">
