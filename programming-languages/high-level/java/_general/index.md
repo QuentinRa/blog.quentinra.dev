@@ -665,6 +665,7 @@ A reference is simply something that's referencing your object meaning that you 
 * control-flow methods
 * streams
 * concatenation operator
+* insist on equals/==
 </div><div>
 
 * final method/class
