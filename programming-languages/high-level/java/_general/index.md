@@ -401,10 +401,27 @@ johnDoe = null;
 
 <div class="row row-cols-md-2"><div>
 
-An **exception** is a signal fired when something unexpected occurs. This is most of the time an error 🔥. If no one handles the signal, then the program crashes. It prints a **stacktrace** with the trace of methods the signal went through. 
+An **exception** is a signal fired when something unexpected occurs. This is most of the time an error 🔥. If no one handles the signal, then the program crashes. It prints a **stacktrace** with the trace of methods the signal went through. There are **two** categories of exceptions.
 
+<br>
 
-</div><div>
+#### Verified exceptions
+
+Verified/Checked exceptions are exceptions that **must** be caught. These are usually raised by methods that may fail for a reason that the developer can't do anything about it <small>(opening a file failed...)</small>.
+
+➡️ `IOException`, `Exception`...
+
+<br>
+
+#### Runtime exceptions
+
+Runtime exceptions are exceptions that usually occur due to a problem in the code that can be patched.
+
+🔥 The most famous one is the NPE: `NullPointerException`, when calling a method on a `null` object.
+
+➡️ `RuntimeException`, `ArrayIndexOutOfBoundsException`,  `IllegalArgumentException`, `IllegalStateException`...
+
+<br>
 
 #### Raise an exception
 
@@ -413,10 +430,43 @@ To raise an exception, use `throw`:
 ```java
 throw new SomeException(args);
 ```
+</div><div>
 
 #### Catch and handle an exception
 
 A `try-catch-finally` block is used to catch and handle exceptions. You can have multiple `catch`, the first one compatible with the exception is used <small>([polymorphism](/programming-languages/_paradigm/oo.md#polymorphism) applies, a parent will catch its subclasses)</small>.
+
+```java
+try {
+  // code raising an exception
+} catch(TypeException e) { // TypeException and subclasses
+  // print the stack trace
+  e.printStackStace();
+  // print error message
+  System.err.println(e.getMessage());
+  // it's common to wrap exceptions
+  throw new RuntimeException(e);
+} // both share the same block
+catch(TypeException1|TypeException2 type1) {}
+// optional, called after try or catch
+// even if there is a "return/throw" in either
+finally {
+    // ...
+}
+```
+
+<br>
+
+#### Explicitly declare raising an exception
+
+If a method does not handle an exception, you can explicitly specify it:
+
+```java
+public void error() throws IllegalArgumentException {
+    // code that may raise an IllegalArgumentException
+    // and that won't be handled by this method
+}
+```
 </div></div>
 
 <hr class="sep-both">
