@@ -478,6 +478,8 @@ public abstract class AbstractXXX { // ✍️ abstract class
 
 👉 Unless they implement abstract methods, inheritors must be abstract too. Also, you can have `static` and `abstract`.
 
+<br>
+
 #### Interfaces
 
 An interface is a level above an abstract class. We can only inherit one class, but we can **"inherit" (`implement`) multiple interfaces**.
@@ -534,6 +536,32 @@ public interface XXX {
     private static void myPrivateMethod2 () {}
 }
 ```
+
+<br>
+
+#### Functional interfaces
+
+Functional interfaces are [interfaces](#interfaces) with only **one** abstract method.
+
+```java
+@FunctionalInterface // optional, enforce "one abstract"
+public interface XXX {
+    String getName(boolean upper); // only one abstract
+    default YYY yyy() { /* ... */ }
+}
+```
+
+They are convenient because they can be implemented dynamically using **lambda expressions** <small>(~= a function stored in a variable)</small>.
+
+```java
+String r = "xxx";
+XXX xxx = (u) -> { // can access out-of-scope variables
+    return u ? r.toUpperCase() : r.toLowerCase();
+};
+```
+
+👉 If there is only one arg/line, braces and parenthesis are optional.
+
 </div></div>
 
 <hr class="sep-both">
