@@ -159,7 +159,7 @@ Polymorphism refers to the ability to treat objects of child classes as objects 
 class A {}           // A is a parent class of B and C
 class B extends A {} // B is a child class of A
 class C extends A {} // C is a child class of A
-
+// usual behavior of a child class
 B b = new B();       // Stores as B
 b.someMethodInA();   // Calls B's method (if overridden)
 b.someMethodInB();   // Calls B's method

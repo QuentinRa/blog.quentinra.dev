@@ -3,15 +3,9 @@
 * [Modules](expert/modules.md)
 * [Generating a .exe or an installer](expert/exe.md)
 * [Records](expert/records.md) (since Java16)
-
-<hr>
-
 * [history](beginner/history.md)
-* [Exceptions](beginner/exceptions.md)
 * [Overload](beginner/overload.md) (Surcharge in French)
 * [Override](beginner/override.md)
-* [Abstract classes](beginner/abstract.md)
-* [Interfaces](beginner/interfaces.md)
 
 Inheritance
 

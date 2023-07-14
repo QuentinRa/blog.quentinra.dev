@@ -108,13 +108,15 @@ x += 1;                   // same as x = x + 1
 x++;                      // same as x = x + 1
                           // see also: --, -=, *=, and /= 
 // logical
-if (5 == 5) {}         // true
+if (5 == 5) {}         // true ⚠️ see also "Object#equals"
 if (5 != 5) {}         // false
                        // see also: >, >=, <, <=
 if (!false) {}         // logical NOT => true
 if (true || false) {}  // logical OR => true
 if (true && false) {}  // logical AND => false
 if (true ^ false) {}   // logical XOR => true
+
+String x = ""+5;       // concatenation (+cast), see String
 ````
 
 <br>
@@ -395,6 +397,30 @@ johnDoe = null;
 
 <hr class="sep-both">
 
+## Exceptions
+
+<div class="row row-cols-md-2"><div>
+
+An **exception** is a signal fired when something unexpected occurs. This is most of the time an error 🔥. If no one handles the signal, then the program crashes. It prints a **stacktrace** with the trace of methods the signal went through. 
+
+
+</div><div>
+
+#### Raise an exception
+
+To raise an exception, use `throw`:
+
+```java
+throw new SomeException(args);
+```
+
+#### Catch and handle an exception
+
+A `try-catch-finally` block is used to catch and handle exceptions. You can have multiple `catch`, the first one compatible with the exception is used <small>([polymorphism](/programming-languages/_paradigm/oo.md#polymorphism) applies, a parent will catch its subclasses)</small>.
+</div></div>
+
+<hr class="sep-both">
+
 ## Inheritance
 
 <div class="row row-cols-md-2"><div>
@@ -664,8 +690,6 @@ A reference is simply something that's referencing your object meaning that you 
 
 * control-flow methods
 * streams
-* concatenation operator
-* insist on equals/==
 </div><div>
 
 * final method/class
@@ -697,7 +721,6 @@ According to some tests, the static constructor seems to be called when the clas
 * [Java](https://en.wikibooks.org/wiki/Java_Programming)
 * [yguard](https://www.yworks.com/products/yguard) (Obfuscator, Shrink), [proguard](https://www.guardsquare.com/proguard) (Shrink)
 * override, inheritance changing visibility...
-* lamba expressions (() -> {}, () -> statement)
 
 ```
 StringBuilder str = new StringBuilder();
