@@ -12,6 +12,10 @@ Annotations such as `@Override` or `@Deprecated` allow us to enforce some compil
 
 For instance, [org.jetbrains:annotations](https://www.jetbrains.com/help/idea/annotating-source-code.html) provides: `@Nullable`, `@NotNull`, or `@Contract` which are helpful for [contract programming](/tools-and-frameworks/others/testing/methodology/index.md#contract-programming).
 
+<br>
+
+#### SuppressWarnings
+
 You can use `@SuppressWarnings` to suppress compiler warnings:
 
 * `@SuppressWarnings("deprecation")`: deprecation
@@ -21,23 +25,27 @@ You can use `@SuppressWarnings` to suppress compiler warnings:
 * ...
 </div><div>
 
+#### Create annotations
+
 You can create annotations.
 
 ```java
-@Retention(...) // RetentionPolicy: SOURCE = compiler, RUNTIME = runtime too
-@Target(...) // ElementType: METHOD, FIELD, PARAMETER,  LOCAL_VARIABLE, TYPE_USE... 
-public @interface name {
-    // optional, args
-    String field1() default "";
-    float field2();
+@Retention(...) // RetentionPolicy: CLASS = compiler, RUNTIME = runtime too
+@Target(...) // ElementType: TYPE, METHOD, FIELD, PARAMETER,  LOCAL_VARIABLE, TYPE_USE... 
+public @interface AnnotationName {
+	// optional, args
+	String field1() default "";
+	int[] field2() default {};
+	float field3();
 }
 ```
 
 Which can be used as follows:
 
 ```java
-@nomAnnotation(field1="", field2=1);
-@nomAnnotation(field2=1);
+@AnnotationName(field1 = "", field2 = {}, field3 = 1)
+@AnnotationName(field2 = {}, field3 = 1)
+@AnnotationName(field3 = 1)
 ```
 </div></div>
 
