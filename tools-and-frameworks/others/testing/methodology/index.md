@@ -72,7 +72,7 @@ Design by Contract (`Conception par contrat`) is an approach to software develop
 
 Contract programming (`Programmation par contrat`) is a programming paradigm. We declare a contract associated with a function, such as "when given two integers, it will return an integer". 
 
-If we call the function with preconditions defined in the contract <small>(e.g. two integers)</small>, and the result is invalid, then the function has a defect. The function can be called with invalid <small>(as per the contract, such as a float and an integer)</small> preconditions, but there is no guarantee of the outcome.
+If we call the function with preconditions defined in the contract <small>(e.g. two integers)</small>, and the result is invalid, then the function has a defect. The function can be called with invalid preconditions <small>(as per the contract, such as a float and an integer)</small>, but there is no guarantee of the outcome.
 
 ➡️ Ex: using `@Contract` <small>(Java)</small>, `@contract` from `contracts` <small>(Python)</small>.
 </div></div>

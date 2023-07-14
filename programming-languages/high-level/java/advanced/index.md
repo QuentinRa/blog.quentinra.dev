@@ -4,6 +4,45 @@ Since the Java course was too long, some content for more advanced users was mov
 
 <hr class="sep-both">
 
+## Annotations
+
+<div class="row row-cols-md-2"><div>
+
+Annotations such as `@Override` or `@Deprecated` allow us to enforce some compiler checks to a method <small>(ex: deprecated trigger a warning)</small>.
+
+For instance, [org.jetbrains:annotations](https://www.jetbrains.com/help/idea/annotating-source-code.html) provides: `@Nullable`, `@NotNull`, or `@Contract` which are helpful for [contract programming](/tools-and-frameworks/others/testing/methodology/index.md#contract-programming).
+
+You can use `@SuppressWarnings` to suppress compiler warnings:
+
+* `@SuppressWarnings("deprecation")`: deprecation
+* `@SuppressWarnings("unchecked")`: unchecked casting
+* `@SuppressWarnings("SameParameterValue")`: a non-public method is always given the same parameters
+* `@SuppressWarnings("MethodDoesntCallSuperMethod")`: missing `super.xxx(...)` when overriding a method
+* ...
+</div><div>
+
+You can create annotations.
+
+```java
+@Retention(...) // RetentionPolicy: SOURCE = compiler, RUNTIME = runtime too
+@Target(...) // ElementType: METHOD, FIELD, PARAMETER,  LOCAL_VARIABLE, TYPE_USE... 
+public @interface name {
+    // optional, args
+    String field1() default "";
+    float field2();
+}
+```
+
+Which can be used as follows:
+
+```java
+@nomAnnotation(field1="", field2=1);
+@nomAnnotation(field2=1);
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Input/output streams
 
 <div class="row row-cols-md-2"><div>
@@ -28,7 +67,7 @@ int read = is.read();         // read one
 os.write(5);                  // write one
 ```
 
-⚠️ ️ Both raise a [verified `IOException`]() that must be caught. Whether you have one or multiple `try-catch` is up to your needs.
+⚠️ ️ Both raise a [verified `IOException`](../_general/index.md#verified-exceptions) that must be caught. Whether you have one or multiple `try-catch` is up to your needs.
 
 If you open a stream <small>(not stdin/...)</small>, you have to close it. A new alternative is the `try-ressource` which automatically close a resource.
 
@@ -44,7 +83,7 @@ try (InputStream is = ...) {
 
 #### Buffers
 
-We usually wrap streams within **buffers** to read more characters in one go. Each read/write still raise a [verified `IOException`]() to catch.
+We usually wrap streams within **buffers** to read more characters in one go. Each read/write still raise a [verified `IOException`](../_general/index.md#verified-exceptions) to catch.
 
 ```java
 // for character streams:
@@ -77,7 +116,7 @@ FileReader fileReader = new FileReader("file");
 BufferedReader reader = new BufferedReader(fileReader);
 ```
 
-⚠️ ️ Both raise a [verified `FileNotFoundException`]() that must be caught.
+⚠️ ️ Both raise a [verified `FileNotFoundException`](../_general/index.md#verified-exceptions) that must be caught.
 
 💡 See also: `FileWriter` <small>(write into text files)</small>, and `File` <small>(file operations)</small>.
 </div></div>
