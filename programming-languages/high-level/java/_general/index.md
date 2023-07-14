@@ -477,7 +477,6 @@ public abstract class AbstractXXX { // ✍️ abstract class
 ```
 
 👉 Unless they implement abstract methods, inheritors must be abstract too. Also, you can have `static` and `abstract`.
-</div><div>
 
 #### Interfaces
 
@@ -489,7 +488,7 @@ An interface is a level above an abstract class. We can only inherit one class, 
 * Everything is `abstract` by default <small>(keyword can be omitted)</small>
 
 ```java
-public interface Human {
+public interface SomeInterface {
     // can have final attributes
     public static final int XXX = 0;
     // can have public abstract instance method
@@ -498,12 +497,41 @@ public interface Human {
     public static boolean zzz(...) { /* ... */ }
 }
 ```
+</div><div>
 
-Since Java 8, interfaces can have methods with a body using `default`:
+Use `implement` to inherit from one or many interfaces. You'll have to implement methods, or use an [abstract class](#abstract-classes):
+
+```java
+public class XXX implements SomeInterface, AnotherInterface {
+  @Override
+  public SomeType xxx() { /* ... */ } 
+}
+```
+
+An interface can [inherit](#inheritance) from another interface using `extends`:
+
+```java
+public interface SomeInterface extends AnotherInterface {
+  // ...
+}
+```
+
+Since **Java 8**, interfaces can have methods with a body using `default`:
 
 ```java
 public interface XXX {
     default String XXX() { /* ... */ }
+}
+```
+
+Since **Java 9**, interfaces can have private concrete methods:
+
+```java
+public interface XXX {
+    // instance
+    private void myPrivateMethod () {}
+    // static
+    private static void myPrivateMethod2 () {}
 }
 ```
 </div></div>
