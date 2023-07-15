@@ -720,6 +720,20 @@ public enum RPGClass {
 // example
 int sorcererBaseHP = RPGClass.SORCERER.getBaseHP();
 ```
+
+#### Records
+
+Records were introduced in Java 16. They are used to store data.
+
+```
+// automatically generate getters, #equals, #toString...
+public record MyRecord(int xxx, int yyy) {}
+public record MyRecord(int xxx, int yyy) {
+  public MyRecord {}                 // canonical constructor
+  public MyRecord() { this(0,0,0); } // additional constructor
+}
+```
+
 </div><div>
 
 #### Inner class
