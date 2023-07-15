@@ -131,6 +131,36 @@ BufferedReader reader = new BufferedReader(fileReader);
 
 <hr class="sep-both">
 
+## Java Generics
+
+<div class="row row-cols-md-2"><div>
+
+It's possible to write generic code using [Polymorphism](/programming-languages/_paradigm/oo.md#polymorphism). For instance, this functions takes instance of AAA or [subclasses](../_general/index.md#inheritance) of AAA.
+
+```java
+public static AAA xxx(AAA aaa){
+    return /* ... */;
+}
+```
+
+But, it's limited to subclasses. Java Generics allow us to factorize methods with the same code but no useful polymorphism usable:
+
+```java
+public static Integer firstElement(Integer[] array){
+    return array.length == 0 ? null : array[0];
+}
+
+public static Float firstElement(Float[] array){
+    return array.length == 0 ? null : array[0];
+}
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Threads
 
 <div class="row row-cols-md-2"><div>
@@ -138,12 +168,12 @@ BufferedReader reader = new BufferedReader(fileReader);
 Threads allow us to run tasks in parallel 🔥. We will create a `Runnable` with the code executed by the thread.
 
 ```java
-// version 1
+// version 1 - lambda expression
 Runnable r = () -> {
     System.out.println("Hello, World!");
 };
-// version 2
-class CodeRunByTheThread implements Runnable {
+// version 2 - CodeRunByTheThread.java
+public class CodeRunByTheThread implements Runnable {
 	@Override
 	public void run() {
 		System.out.println("Hello, World!");
