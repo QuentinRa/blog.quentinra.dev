@@ -273,13 +273,14 @@ package com.lgs.memorize; // ./com/lgs/memorize/Test.java
 public class Test {}
 ```
 
-Aside from bundled classes, every other must imported:
+Aside from default classes, every other class must be imported:
 
 ```java
 import java.io.File;
 import java.io.*; // all classes in "java/io"
 import static java.io.File.createTempFile; // a static method
 ```
+
 <br>
 
 #### Visibility
@@ -295,6 +296,7 @@ For instance, if something is private, only methods/attributes in the same class
 | package (**default**)   | +          | +            |     |     |
 | private   | +          |              |     |     |
 
+🔥 You can have multiple package-private classes in one Java file.
 </div><div>
 
 #### Attributes
@@ -303,6 +305,7 @@ As a reminder, [attributes](/programming-languages/_paradigm/oo.md) are used to 
 
 ```java
 // Class
+public static int xxx;
 public static final float PI = 3.14f;
 // Instance
 public String name;
@@ -382,7 +385,7 @@ johnDoe.setName("Jane Doe");
 johnDoe.resetName();
 ```
 
-For class members, this is the same, but with the name of the class:
+For class members, it's the same, but with the name of the class:
 
 ```java
 double pi = Math.PI;
@@ -727,12 +730,40 @@ Each instance has a class. It's rarely seen/used. The main advantage is that `BB
 public class AAA {       // outer class
     public class BBB {}  // inner class
 }
-
+// Usage
 AAA aaa = new AAA();
 AAA.BBB bbb = aaa.new BBB();
 ```
 
 ➡️ You may use `AAA.this.attribute` for explicit usage.
+
+#### Nested class
+
+A class inside another class. It's commonly used to wrap classes related to the internal implementation <small>(they are usually private)</small>.
+
+````java
+public class AAA {              // outer class
+    private static class BBB {} // nested class, private
+}
+// Usage
+AAA.BBB aaa = new AAA.BBB();
+````
+
+#### Anonymous classes
+
+These are classes dynamically created during compilation.
+
+```java
+// Runnable is an interface
+Runnable r = new Runnable() {
+    @Override
+    public void run() {}
+};
+```
+
+#### Local class
+
+A local class is declared in a method and only exists within its scope.
 </div></div>
 
 <hr class="sep-both">
