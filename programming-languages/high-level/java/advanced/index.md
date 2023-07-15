@@ -156,7 +156,30 @@ public static Float firstElement(Float[] array){
 ```
 </div><div>
 
-...
+We could declare a type `<T>` and use it as follow:
+
+```java
+public static <T> T firstElement(T[] array){
+    return array.length == 0 ? null : array[0];
+}
+
+// Usage:
+Integer[] xxx = {0, 1, 2};
+Integer first = firstElement(xxx); // 0
+```
+
+A generic type can be declared in a method, or in a class. For the latter, you must provide the type when calling the constructor:
+
+```java
+public class XXX<T> {}
+// examples
+XXX<Integer[]> xxx = new XXX<Integer[]>();
+XXX<Integer[]> xxx = new XXX<>(); // omitted (inferred)
+```
+
+👉 You can also add constraints (`<XXX extends ...>`) or declare multiple types (`<K, V>`).
+
+👉 You can use the "`?`" wildcard such as `XXX<?> xxx = ...` when you don't want to declare a generic type or don't need to enforce a type.
 </div></div>
 
 <hr class="sep-both">
