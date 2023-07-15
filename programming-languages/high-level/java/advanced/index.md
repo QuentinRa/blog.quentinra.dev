@@ -1,6 +1,6 @@
 # Java - Advanced
 
-Since the Java course was too long, some content for more advanced users was moved here.
+Since the [Java course](../_general/index.md) was too long, some content for more advanced users was moved here.
 
 <hr class="sep-both">
 

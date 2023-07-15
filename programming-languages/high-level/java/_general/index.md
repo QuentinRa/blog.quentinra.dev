@@ -330,6 +330,10 @@ public static float xxx(float f) { return f; }
 ```
 
 ➡️ Methods to access an attribute are usually starting with `get` such as `getName`. They are called **getters**. Methods to set an attribute are usually starting with `set` and are called **setters**.
+
+✨ You can write [recursive methods](/programming-languages/_paradigm/stuff/recursivity.md).
+
+✨ For sorting algorithms, see [30 Seconds of Java](https://java-design-patterns.com/snippets/#algorithm).
 </div></div>
 
 <hr class="sep-both">

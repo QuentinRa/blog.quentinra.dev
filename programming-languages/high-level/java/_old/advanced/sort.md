@@ -1,24 +1,4 @@
-# Sorting
-
-[Go back](../index.md#advanced)
-
-**French names** for sorting algorithms
-
-* tri par insertion
-* tri par base
-* tri à bulles
-* tri par tas
-* tri arborescent
-* tri fusion
-* tri rapide
-
-You may check this [github](https://github.com/java2blog/Tutorials/tree/master/Algorithms/Sorting-Algorithms) for the english names and implementations in Java.
-
-**I think this may also help**: <https://java-design-patterns.com/snippets.html#quicksort> (you got 4 sorting implementations).
-
-<hr class="sl">
-
-## Comparator
+# Comparator
 
 You might want to sort a list or an Array. You need for that to provide a `Comparator` class.
 
