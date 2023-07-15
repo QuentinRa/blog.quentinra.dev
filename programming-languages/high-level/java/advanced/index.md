@@ -420,6 +420,8 @@ System.out.println("\u00E9"); // print é
 
 Otherwise, you can also use: `java -Dfile.encoding=UTF-8 [...]`.
 
+<br>
+
 #### JAR files
 
 [JAR](https://docs.oracle.com/javase/tutorial/deployment/jar/index.html) files are used to bundle JAVA code. Some are executable, while others are libraries that can be used in other projects. It can contain files <small>(images...)</small>, libraries, and other stuff needed by your program. 🗃️
@@ -429,6 +431,25 @@ $ java -jar some_jar.jar # execute
 ```
 
 ⚠️ Once bundled, files inside the JAR cannot be modified.
+
+🔥 With [Gradle](/tools-and-frameworks/others/build/gradle/index.md), you can use this to build a JAR:
+
+```gradle
+task makeJar(type: Jar) {
+    manifest {
+        attributes(
+            'Main-Class': 'com.xxx.yyy.Main'
+        )
+    }
+    from {
+        configurations.runtimeClasspath.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+    destinationDirectory.set(file("$buildDir/../out/"))
+    with jar
+}
+```
 </div><div>
 
 #### JPackage
@@ -447,6 +468,28 @@ $ jpackage --name eden --type exe --input out --dest "out\dist" --main-jar "xxx.
 #   --java-options  | options, such as "-Dfile.encoding=UTF-8"
 ```
 
+See also: [install4j](https://www.ej-technologies.com/products/install4j/overview.html) and [launch4j](https://launch4j.sourceforge.net/).
+
+<br>
+
+#### JLink
+
+JLink can be used to create a minimal JRE that can be bundled with your application <small>(e.g., there is no need to install Java to run it)</small>. With [Gradle](/tools-and-frameworks/others/build/gradle/index.md):
+
+```gradle
+plugins {
+    id 'org.beryx.jlink' version '2.24.0'
+}
+jlink {
+    addOptions('--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages')
+    launcher {
+        name = 'eden'
+    }
+    imageDir.set(file("$buildDir/../out/myjre"))
+}
+```
+
+The JRE can be found in `out/myjre/`. See also [EasyJRE](https://justinmahar.github.io/easyjre/?path=/story/tools--easy-jre-story).
 </div></div>
 
 <hr class="sep-both">

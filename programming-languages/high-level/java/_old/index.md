@@ -1,7 +1,6 @@
 # Java programming
 
 * [Modules](expert/modules.md)
-* [Generating a .exe or an installer](expert/exe.md)
 * [Records](expert/records.md) (since Java16)
 * [history](beginner/history.md)
 * [Overload](beginner/overload.md) (Surcharge in French)
