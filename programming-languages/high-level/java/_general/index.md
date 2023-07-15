@@ -1257,6 +1257,45 @@ try {
 
 <hr class="sep-both">
 
+## Modules
+
+<div class="row row-cols-md-2"><div>
+
+Modules were introduced in Java 9. They encapsulate projects and require developers to explicitly import SDK packages in their projects. Create a `module-info.java`, with a unique module name:
+
+```java
+module com.example.project {
+}
+```
+
+To import a module, use `requires some_module;`:
+
+```java
+  requires java.base;      // Base packages
+  requires java.desktop;   // AWT + SWING
+  requires jdk.crypto.cryptoki; // HTTP SSL
+```
+</div><div>
+
+You can `export` a package to allow other projects to `requires` it.
+
+```java
+  // one per package, not recursive
+  exports com.example.project.package;
+```
+
+You can give full access to a package to other projects using `open`. Otherwise, they can't do things like introspecting private members.
+
+```java
+    opens com.example.project.package;
+```
+
+Compile with: `javac -d mods /path/to/module-info.java /path/to/com/example/project/Main.java`
+
+</div></div>
+
+<hr class="sep-both">
+
 ## Random notes
 
 <div class="row row-cols-md-2"><div>
@@ -1426,7 +1465,6 @@ According to some tests, the static constructor seems to be called when the clas
 
 * Complete JAR notes (common functions/asset handling...)
 * native keyword
-* `requires jdk.crypto.cryptoki;` (https module info)
 * [baeldung](https://www.baeldung.com/)
 * [Java](https://en.wikibooks.org/wiki/Java_Programming)
 * [yguard](https://www.yworks.com/products/yguard) (Obfuscator, Shrink), [proguard](https://www.guardsquare.com/proguard) (Shrink)
