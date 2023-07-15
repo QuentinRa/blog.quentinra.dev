@@ -531,7 +531,9 @@ public class King extends Person {
 p.getName(); // King John DOE
 ```
 
-✍️ `@Override` is optional, and used to explicit declare an override.
+✍️ `@Override` is optional, and used to explicitly declare an override.
+
+🔥 `final` methods cannot be overridden.
 
 <br>
 
@@ -539,11 +541,13 @@ p.getName(); // King John DOE
 
 You can change, to some extent, the parent class signature when overriding a method.
 
-* **Visibility** 👓: you can make a `protected` method `public`
+* **Visibility** 👓: you can increase the visibility of a method from `protected` to `public`
 
 * **Parameters** 🪙: you can change any argument name, or replace any argument type with a subclass of the same type 
 
 * **Return Type** 🔫: you can use a child class of the return type
+
+You can also add [annotations](../advanced/index.md#annotations) or [throws](#explicitly-declare-raising-an-exception).
 </div></div>
 
 <hr class="sep-both">
@@ -767,7 +771,6 @@ A reference is simply something that's referencing your object meaning that you 
 * streams
 </div><div>
 
-* final method/class
 * overloading constructors
 
 <details class="details-n">
@@ -795,7 +798,6 @@ According to some tests, the static constructor seems to be called when the clas
 * [baeldung](https://www.baeldung.com/)
 * [Java](https://en.wikibooks.org/wiki/Java_Programming)
 * [yguard](https://www.yworks.com/products/yguard) (Obfuscator, Shrink), [proguard](https://www.guardsquare.com/proguard) (Shrink)
-* override, inheritance changing visibility...
 
 ```
 StringBuilder str = new StringBuilder();

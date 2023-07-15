@@ -13,6 +13,11 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 ```
+plugins {
+    id 'xxx' version 'xxx'
+}
+// gradle xxx
+task xxx(arg: XXX) {}
 implementation ('xxx') {
     exclude group: 'org.json', module: 'json'
 }
