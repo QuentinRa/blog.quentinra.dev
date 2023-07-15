@@ -477,7 +477,7 @@ public void error() throws IllegalArgumentException {
 
 Java implements [inheritance](/programming-languages/_paradigm/oo.md#inheritance) with the keyword `extends`. All classes inherit from [Object](#object) <small>(implicitly)</small>, and classes can only extend **one** class.
 
-👉 Classes inherit any public or protected members <small>(instance or static)</small>.
+👉 Classes inherit any public or protected members <small>(instance, ~static)</small>.
 
 👉 Final classes (`final class XXX {}`) can't be inherited from.
 
@@ -494,30 +494,41 @@ public class Person {           // implicit extends Object
 }
 ```
 
+#### Subclass
+
+We can create a subclass `King` inheriting from `Person`. The latter has a constructor with need to call, this is done using `super(args)`.
+
+```java
+public class King extends Person {
+    protected King(String name) {
+        super(name);
+    }
+}
+// Polymorphism: can be stored in a "Person" ✨
+Person p = new King("John DOE");
+```
+
+✍️ Child classes' constructors must call `super(args)` before anything else. If the constructor is trivial, it can be omitted <small>(implicit `super()`)</small>.
+
 </div><div>
+
+#### Override
+
+Child classes can override a method, e.g., change the inner code of a method that was declared within their parent.
 
 The child class uses `super` to reference the parent class.
 
+Below, we call the parent `getName()` but prepend "`King `" to it.
+
 ```java
-public class CEO extends Person {
-    private final String company;
-
-    public CEO(String name, String company) {
-        super(name); // call to parent constructor
-        this.company = company;
-    }
-
+public class King extends Person {
     @Override
-    public String getName() { return super.getName(); }
-    public String getCompany() { return company; }
+    public String getName() {
+        return "King " + super.getName();
+    }
 }
-```
 
-```java
-Person person = new CEO("name", "company");
-                        // can't call getName/...
-CEO ceo = (CEO) person;
-ceo.getName();          // ok
+p.getName(); // King John DOE
 ```
 </div></div>
 
@@ -725,7 +736,7 @@ Stuff that I found, but never read/used yet.
 * java shell
 * const
 * object vs primitive
-  * objects can be null
+    * objects can be null
 
 <details class="details-n">
 <summary>Address 📬</summary>
