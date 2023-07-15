@@ -410,6 +410,16 @@ try {
 
 <div class="row row-cols-md-2"><div>
 
+#### UTF-8
+
+Non-ASCII characters are incorrectly displayed on some machines. You can use [unicode](https://unicode-table.com/en/) to ensure it won't be the case.
+
+```java
+System.out.println("\u00E9"); // print é
+```
+
+Otherwise, you can also use: `java -Dfile.encoding=UTF-8 [...]`.
+
 #### JAR files
 
 [JAR](https://docs.oracle.com/javase/tutorial/deployment/jar/index.html) files are used to bundle JAVA code. Some are executable, while others are libraries that can be used in other projects. It can contain files <small>(images...)</small>, libraries, and other stuff needed by your program. 🗃️
@@ -421,15 +431,22 @@ $ java -jar some_jar.jar # execute
 ⚠️ Once bundled, files inside the JAR cannot be modified.
 </div><div>
 
-#### UTF-8
+#### JPackage
 
-Non-ASCII characters are incorrectly displayed on some machines. You can use [unicode](https://unicode-table.com/en/) to ensure it won't be the case.
+JPackage <small>(JDK 14+)</small> was introduced to package Java applications <small>(.deb, .exe, .zip...)</small>. To build a `.exe` on Windows:
 
-```java
-System.out.println("\u00E9"); // print é
+```ps
+# "out" has a jar "xxx.jar"
+# "out" has .class files
+# "out/dist" will have the .exe
+$ jpackage --name eden --type exe --input out --dest "out\dist" --main-jar "xxx.jar" --icon "path\to\icon.ico" --vendor "XXX" --app-version "X.Y.Z" --description "xxx"
+# Useful options:
+#   --win-shortcut  | create a shortcut
+#   --win-menu      | add in menu
+#   --runtime-image | path to bundled jre
+#   --java-options  | options, such as "-Dfile.encoding=UTF-8"
 ```
 
-Otherwise, you can also use: `java -Dfile.encoding=UTF-8 [...]`.
 </div></div>
 
 <hr class="sep-both">

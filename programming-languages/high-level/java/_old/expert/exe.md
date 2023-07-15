@@ -46,47 +46,6 @@ Then
 
 * `gradle jlink` (create eden/myjre)
 * `gradle jar` (create eden/eden-1.0.0.0-jar) but you should rename it to `eden.jar`
-  
-Then run `jpackage command`.
-
-For jpackage, I have a line like this (don't use `\ ` and put everything in one line)
-
-```bash
-jpackage --name eden \
-  # type of executable created
-  --type exe \
-  # input folder
-  --input eden \
-  # output folder
-  --dest "eden\dist" \
-  # jar file, relative path to input folder
-  --main-jar "eden.jar" \
-  # app icon
-  --icon "docs\icon.ico" \
-  # options
-  --java-options -Dfile.encoding=UTF-8 \
-  # jre path
-  --runtime-image "eden\myjre" \
-  # app vendor
-  --vendor "Legendary Games Studio" \
-  # app version
-  --app-version "1.0.0" \
-  # app desc
-  --description "eden" \
-  # add a shortcut
-  --win-shortcut \
-  # add in menu
-  --win-menu
-```
-
-I'm running this command at my project root with my files in eden folder
-
-* /
-  * eden
-    * eden.jar
-    * myjre/...
-    
-And the result would be an installer in `/eden/dist/`
 
 <hr class="sl">
 
