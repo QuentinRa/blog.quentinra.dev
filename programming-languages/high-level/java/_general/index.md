@@ -1196,6 +1196,17 @@ task makeJar(type: Jar) {
     with jar
 }
 ```
+
+<br>
+
+#### Assertions
+
+Assertions can be used for [testing](/tools-and-frameworks/others/testing/methodology/index.md), for since they are not enabled by default, there are almost never used. Run `java` with `-ea` or `-enableassertions` to see assertions. See also: `-da:package`.
+
+```java
+assert(condition);              // raises "AssertionError"
+assert(condition) : "message";  // custom message
+```
 </div><div>
 
 #### JPackage

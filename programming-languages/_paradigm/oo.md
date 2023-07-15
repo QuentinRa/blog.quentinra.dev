@@ -110,6 +110,8 @@ For instance, **C#** has a modifier called `internal` only allows some classes i
 ```cs!
 internal class XXX {} // same assembly only
 ```
+
+**Iceberg Principle**: this is a commonly used principle of only exposing a small part to the outside, while keeping internals private. The goal is to minimize the impact on others when adding/updating/removing members or rewriting internals.
 </div><div>
 
 Common modifiers are:

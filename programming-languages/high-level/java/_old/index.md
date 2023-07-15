@@ -9,3 +9,4 @@
 * [Streams](advanced/streams.md)
 * [Sorting](advanced/sort.md)
 * [Special classes](expert/special-classes.md)
+* [DP](tests/dp.md)
