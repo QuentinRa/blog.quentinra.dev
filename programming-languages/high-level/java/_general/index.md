@@ -334,6 +334,8 @@ public static float xxx(float f) { return f; }
 ✨ You can write [recursive methods](/programming-languages/_paradigm/stuff/recursivity.md).
 
 ✨ For sorting algorithms, see [30 Seconds of Java](https://java-design-patterns.com/snippets/#algorithm).
+
+🔥 You can create a variadic method e.g., taking a variable number of arguments as follows: `public void myMethod(Integer ... numbers)`. Here, `numbers` has the type `Integer[]`, and  may be empty. This can only be used for the last argument. Call: `myMethod(), myMethod(a, b)`...
 </div></div>
 
 <hr class="sep-both">
@@ -1262,7 +1264,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [old](../_old/index.md)
-* java shell
+* java shell (JShell)
 * const
 * object vs primitive
     * objects can be null
@@ -1282,7 +1284,6 @@ A reference is simply something that's referencing your object meaning that you 
 * streams
 * sealed and hidden classes
 * method references (A::b)
-* JShell
 </div><div>
 
 * overloading constructors

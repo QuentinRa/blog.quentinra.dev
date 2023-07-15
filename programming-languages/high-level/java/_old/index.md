@@ -2,11 +2,8 @@
 
 * [Modules](expert/modules.md)
 * [Records](expert/records.md) (since Java16)
-* [history](beginner/history.md)
 * [Overload](beginner/overload.md) (Surcharge in French)
 * [Iceberg paradigm](advanced/icerberg.md)
-* [Enumerations](advanced/enumerations.md)
-* [Variadic methods](advanced/variadic.md)
 * [Iterable/Iterator](advanced/iterable.md)
 * [Dynamic structures](advanced/dynamic.md)
 * [Streams](advanced/streams.md)

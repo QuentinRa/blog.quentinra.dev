@@ -24,7 +24,7 @@ Some common concepts are:
 
 <div class="row row-cols-md-2"><div>
 
-A **class** can be seen as a **template**/blueprint 🖨️ to create objects. It defines an **abstract** concept, such as a person, a computer, or an animal... while an **object** is **concrete** such as the person "John Doe" 🪆.
+A **class** can be seen as a **template**/blueprint 🖨️ to create objects. It defines an **abstract** concept, such as a person or an animal... while an **object** is **concrete**, for instance, the person "John Doe" 🪆.
 
 ![Class and object](_images/class_and_object.png)
 
