@@ -10,6 +10,5 @@
 * [Iterable/Iterator](advanced/iterable.md)
 * [Dynamic structures](advanced/dynamic.md)
 * [Streams](advanced/streams.md)
-* [Recursive functions](advanced/recursive.md)
 * [Sorting](advanced/sort.md)
 * [Special classes](expert/special-classes.md)
