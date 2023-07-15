@@ -2,31 +2,6 @@
 
 [Go back](../index.md#advanced)
 
-Here we will summarize code related to class declaration.
-
-<hr class="sr">
-
-## Inner classes
-
-It means a class inside another class, the class **is not static**.
-
-```java
-// outer class
-public class OuterClass {
-    // inner class
-    public class InnerClass {}
-}
-```
-
-And you can write
-
-```java
-OuterClass o = new OuterClass();
-OuterClass.InnerClass i = o.new InnerClass();
-```
-
-Usually the `InnerClass` is private so you are not doing that and only using it inside the OuterClass like you would do normally (`new InnerClass()`), but the inner class can access the current instance attribute.
-
 ## Nested classes
 
 It means a class inside another class. If the class is the class **is static**.

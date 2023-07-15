@@ -719,7 +719,20 @@ int sorcererBaseHP = RPGClass.SORCERER.getBaseHP();
 ```
 </div><div>
 
-...
+#### Inner class
+
+Each instance has a class. It's rarely seen/used. The main advantage is that `BBB` can implicitly access attributes declared in `AAA`.
+
+```java
+public class AAA {       // outer class
+    public class BBB {}  // inner class
+}
+
+AAA aaa = new AAA();
+AAA.BBB bbb = aaa.new BBB();
+```
+
+➡️ You may use `AAA.this.attribute` for explicit usage.
 </div></div>
 
 <hr class="sep-both">
