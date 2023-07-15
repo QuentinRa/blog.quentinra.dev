@@ -181,18 +181,18 @@ int& abc(int& a, int b, float c) {}
 
 #### Overloading
 
-Overloading (`surchage`) means having multiple functions with the same name, but a different signature.
+[Overloading](/programming-languages/_paradigm/stuff/overloading.md) (`surchage`) means having multiple functions with the same name, but a different signature.
 
 * ❌ The return type DOES NOT matter
 * ❌ The name of the arguments DOES NOT matter
 
 ```cpp
-int sum(int a, int b); // ✅ (names are optional)
-float sum(float, float); // ✅
+int sum(int a, int b);      // ✅ - names are optional
+float sum(float, float);    // ✅
 double sum(double, double); // ✅
-int sum(int b, int a); // ❌ - same as 1
-int sum(float, float); // ❌ - same as 2
-int sum(int, int, int); // ✅
+int sum(int b, int a);      // ❌ - same as 1
+int sum(float, float);      // ❌ - conflict with 2
+int sum(int, int, int);     // ✅
 ```
 
 * ✅ The attribute `const` attached to a function DOES matter, but it's only available for classes or structures.

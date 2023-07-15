@@ -336,7 +336,7 @@ public static float xxx(float f) { return f; }
 
 ✨ You can write [recursive methods](/programming-languages/_paradigm/stuff/recursivity.md).
 
-✨ For sorting algorithms, see [30 Seconds of Java](https://java-design-patterns.com/snippets/#algorithm).
+✨ You can [overload](/programming-languages/_paradigm/stuff/overloading.md) methods and constructors.
 
 🔥 You can create a variadic method e.g., taking a variable number of arguments as follows: `public void myMethod(Integer ... numbers)`. Here, `numbers` has the type `Integer[]`, and  may be empty. This can only be used for the last argument. Call: `myMethod(), myMethod(a, b)`...
 </div></div>
@@ -1430,6 +1430,7 @@ According to some tests, the static constructor seems to be called when the clas
 * [baeldung](https://www.baeldung.com/)
 * [Java](https://en.wikibooks.org/wiki/Java_Programming)
 * [yguard](https://www.yworks.com/products/yguard) (Obfuscator, Shrink), [proguard](https://www.guardsquare.com/proguard) (Shrink)
+* [30 Seconds of Java](https://java-design-patterns.com/snippets/#algorithm).
 
 ```java
 StringBuilder str = new StringBuilder();
