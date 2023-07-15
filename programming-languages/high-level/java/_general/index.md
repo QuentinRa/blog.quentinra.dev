@@ -677,6 +677,53 @@ XXX xxx = (u) -> { // can access out-of-scope variables
 
 <hr class="sep-both">
 
+## Special classes
+
+<div class="row row-cols-md-2"><div>
+
+#### Enumerations
+
+An enumeration is a class providing static objects. They are already instantiated and can have methods/attributes.
+
+They are commonly used for classes with limited known objects.
+
+```java
+public enum RPGClass {
+  SORCERER, WARRIOR, ARCHER, TANK
+}
+// example
+RPGClass sorcerer = RPGClass.SORCERER;
+```
+
+🔥 Useful: `RPGClass.values()`, `XXX.name()`, `XXX.ordinal()`.
+
+🚸 Enums can't extend classes, but can implement interfaces.
+
+👉 You can add attributes and methods as follows:
+
+```java
+public enum RPGClass {
+  SORCERER(10)
+  ; // don't forget the ";" at the end
+
+  private final int baseHP;
+  RPGClass(int baseHP) { // package-private
+    this.baseHP = baseHP;
+  }
+
+  // some method
+  public int getBaseHP() { return baseHP; }
+}
+// example
+int sorcererBaseHP = RPGClass.SORCERER.getBaseHP();
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Well-known types
 
 <div class="row row-cols-md-2"><div>
@@ -1326,7 +1373,10 @@ According to some tests, the static constructor seems to be called when the clas
 * [Java](https://en.wikibooks.org/wiki/Java_Programming)
 * [yguard](https://www.yworks.com/products/yguard) (Obfuscator, Shrink), [proguard](https://www.guardsquare.com/proguard) (Shrink)
 
-```
+```java
 StringBuilder str = new StringBuilder();
+
+EnumMap<EnumClass, ValueClass> map;
+map = new EnumMap<>(EnumClass.class);
 ```
 </div></div> 
