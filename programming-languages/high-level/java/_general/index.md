@@ -522,14 +522,28 @@ Below, we call the parent `getName()` but prepend "`King `" to it.
 
 ```java
 public class King extends Person {
-    @Override
-    public String getName() {
+    @Override                 // see advanced override
+    public String getName() { // to override the signature
         return "King " + super.getName();
     }
 }
 
 p.getName(); // King John DOE
 ```
+
+✍️ `@Override` is optional, and used to explicit declare an override.
+
+<br>
+
+#### Advanced override
+
+You can change, to some extent, the parent class signature when overriding a method.
+
+* **Visibility** 👓: you can make a `protected` method `public`
+
+* **Parameters** 🪙: you can change any argument name, or replace any argument type with a subclass of the same type 
+
+* **Return Type** 🔫: you can use a child class of the return type
 </div></div>
 
 <hr class="sep-both">

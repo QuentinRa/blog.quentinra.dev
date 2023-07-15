@@ -21,12 +21,3 @@ but not necessarily the same definition,
 ## Notes
 
 Declaring a method final means that no one can override it.
-
-<hr class="sr">
-
-## Example
-
-* `finalize` is declared in class "Object"
-* I want to change the behavior of `finalize` in my class
-* All class are inheriting of Object so I can
-* but I should `@Override` before `finalize` to explicitly tell that I'm overriding a method on purpose
