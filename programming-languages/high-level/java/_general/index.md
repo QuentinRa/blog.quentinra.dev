@@ -220,8 +220,9 @@ do {} while(true); // executed at least once
 The for each is a new loop to iter **Iterables**. Iterables can be arrays or collections <small>(ArrayList/...)</small>.
 
 ```java
-for (int e: new int[]{ 5, 6, 7 }) {
-    // e=5 then e=6 then e=7
+int[] numbers = {5, 6, 7};
+for (int e: numbers) {
+  // e=5 then e=6 then e=7
 }
 ```
 
@@ -1059,7 +1060,7 @@ Comparator/Comparable are [interfaces](#interfaces) implemented by classes whose
 public class MyComparator implements Comparator<XXX> {
   @Override
   public int compare(XXX o1, XXX o2) {
-    // 0 == same, 1 == o1 before o2, -1 = ...
+    // 0 for o1 == o2 | 1 for o1 > o2 | -1 for o1 < o2
     return /* return 0, 1, or -1 */;
   }
 }
@@ -1070,9 +1071,63 @@ public class XXX implements Comparable<XXX> {
   }
 }
 ```
+
+See also: `Integer::compareTo`, ...
 </div><div>
 
-...
+#### Iterator<T>, Iterable<T>: iterate an object
+
+Both classes were made to uniformize a way of iterating an object. Classes implementing `Iterable<T>` can be iterated using [foreach](#loops---for-each).
+
+`Iterable<T>` creates an `Iterator<T>`, which is something with a cursor returning the next value to read when prompted.
+
+<details class="details-n">
+<summary>Common implementation</summary>
+
+The class below is a simplified example. It has an attribute `numbers` which represent the data it has, and that we will iterate.
+
+```java
+public class YYY implements Iterable<Integer> {
+  private final int[] numbers = {5, 6, 7};
+
+  @Override
+  public Iterator<Integer> iterator() {
+    return new YYYIterator();
+  }
+
+  private class YYYIterator implements Iterator<Integer> {
+    private int cursorIndex = -1;
+
+    @Override
+    public boolean hasNext() {
+      return cursorIndex < numbers.length;
+    }
+
+    @Override
+    public Integer next() {
+      if (!hasNext()) throw new NoSuchElementException("Invalid call of next.");
+      // return and move cursor
+      return numbers[cursorIndex++];
+    }
+  }
+}
+```
+</details>
+
+<details class="details-n">
+<summary>🔥 Manually iterating an iterator 🧯</summary>
+
+Some iterators need to be used manually, especially when we need to use `remove`:
+
+```java
+Iterator<Integer> iterator = new YYY().iterator();
+while (iterator.hasNext()) { // ✅ check if we can load "next"
+  Integer next = iterator.next(); // ⚠️ load "next"
+  // next is "5" then "6" then "7"
+  iterator.remove(); // 🔥 if supported
+}
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
