@@ -17,7 +17,7 @@ There are multiple providers providing a Java JDK/JRE. The most well-known is Or
 
 #### Long-term support (LTS) JDK
 
-Long-term support (**LTS**) JDKs are JDKs that it will continue to receive security updates for 5 years after the release <small>(8 years for ETS=Extended)</small>. Java 8, 11 and Java 17 are LTS releases.
+Long-term support (**LTS**) JDKs are JDKs that it will continue to receive security updates for 5 years after the release <small>(8 years for ETS=Extended)</small>. Java 8, 11, 17 and 21 are LTS releases.
 
 Companies tend to use LTS versions to ensure the version they are using is a stable version, and that it's still currently maintained.
 </div></div>

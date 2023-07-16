@@ -6,7 +6,7 @@ Java is a well-known [object-oriented](/programming-languages/_paradigm/oo.md) p
 
 Java was designed as a cross-platform language. We write code once, and on any operating system, we would have the same output. This is done by executing the code on a virtual machine called **JVM**.
 
-➡️ The current version is **Java 20** (2023). The [LTS](files/download.md#lts-jdk) is **Java 17**.
+➡️ The current version is **Java 21** (2023). The last [LTS](files/download.md#lts-jdk) is **Java 21**.
 
 🗺️ Java developers heavily rely on reading/writing the [Javadoc](../javadoc/index.md).
 
@@ -811,9 +811,19 @@ class Object {
 
 👉 `a.equals(b)` is the same as `a == b` by default, but subclasses can override equals. Use `==` with `null`, NOT `equals` <small>(null.equals(...) will fails)</small>.
 
-➡️ An IDE [can generate such methods](files/gen.md).
+➡️ An IDE can generate implementations for [these methods](files/gen.md).
 
-💎 Use `Objects.equals(a, b)` to call `a.equals(b)` on a nullable object.
+<br>
+
+#### Objects 💎
+
+As variables can be null, `a.somMethod()` can raise a [NPE](#runtime-exceptions). Some helpers:
+
+* `Objects.requireNonNull(obj)`: raise an exception if `obj` is null
+* `Objects.toString(obj)`: print `null` or call `obj.toString()`
+* `Objects.equals(a, b)`: check if `a == b`, then if it's false, check that `a != null` and call `a.equals(b)`, else return `false`
+* ...
+
 </div><div>
 
 #### String
