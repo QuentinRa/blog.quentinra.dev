@@ -1018,7 +1018,7 @@ public static Float firstElement(Float[] array){
 ```
 </div><div>
 
-We could declare a type `<T>` and use it as follow:
+We could declare a type `<T>` and use it as follows:
 
 ```java
 public static <T> T firstElement(T[] array){
@@ -1042,6 +1042,8 @@ XXX<Integer[]> xxx = new XXX<>(); // omitted (inferred)
 👉 You can also add constraints (`<XXX extends ...>`) or declare multiple types (`<K, V>`).
 
 👉 You can use the "`?`" wildcard such as `XXX<?> xxx = ...` when you don't want to declare a generic type or don't need to enforce a type.
+
+⚠️ `<T>` or any generic type can only be a class, not a primitive type.
 </div></div>
 
 <hr class="sep-both">
@@ -1096,7 +1098,7 @@ public class YYY implements Iterable<Integer> {
   }
 
   private class YYYIterator implements Iterator<Integer> {
-    private int cursorIndex = -1;
+    private int cursorIndex = 0;
 
     @Override
     public boolean hasNext() {
@@ -1108,6 +1110,12 @@ public class YYY implements Iterable<Integer> {
       if (!hasNext()) throw new NoSuchElementException("Invalid call of next.");
       // return and move cursor
       return numbers[cursorIndex++];
+    }
+    
+    // delete this unless you want to override "remove"
+    @Override
+    public void remove() {
+      Iterator.super.remove();
     }
   }
 }
@@ -1128,6 +1136,19 @@ while (iterator.hasNext()) { // ✅ check if we can load "next"
 }
 ```
 </details>
+
+#### Optional<T>: wrapper for "null"
+
+`Optional<T>` is wrapping a nullable value, allowing you to factorize code or easily write code to handle them.
+
+```java
+Optional<Integer> x = Optional.of(5); // wrap "5"
+int y = 7 + x.get();     // y = 7 + 5
+x = Optional.empty();    // wrap "null"
+y = 7 + x.orElse(3);     // if "x" is null, use "3" | y = 10
+```
+
+See also: `isPresent()` <small>(is not null?)</small> or `isEmpty()` <small>(is null?)</small>.
 </div></div>
 
 <hr class="sep-both">
