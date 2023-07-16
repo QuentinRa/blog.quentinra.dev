@@ -1051,16 +1051,22 @@ XXX<Integer[]> xxx = new XXX<>(); // omitted (inferred)
 
 Java has way too many classes, even if we only keep the most commonly used ones, and I will only put some here.
 
-#### Comparator<T>: compare, sort
+#### Comparator<T>, Comparable<T>: sort
 
-Comparator is an [interface](#interfaces) implemented by classes whose values can be compared. It's needed to use many `sort` functions.
+Comparator/Comparable are [interfaces](#interfaces) implemented by classes whose values can be compared. The only difference is that `Comparator` is usually implemented in a separate class, while `Comparable` is not.
 
 ```java
-public class MyComparator implements Comparator<Integer> {
+public class MyComparator implements Comparator<XXX> {
   @Override
-  public int compare(Integer o1, Integer o2) {
+  public int compare(XXX o1, XXX o2) {
     // 0 == same, 1 == o1 before o2, -1 = ...
-    return o1 == o2 ? 0 : o1 > o2 ? 1 : -1;
+    return /* return 0, 1, or -1 */;
+  }
+}
+public class XXX implements Comparable<XXX> {
+  @Override
+  public int compareTo(XXX o) {
+    return /* o1 == this, o2 == o */;
   }
 }
 ```
