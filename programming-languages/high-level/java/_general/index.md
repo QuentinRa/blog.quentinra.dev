@@ -1045,6 +1045,32 @@ XXX<Integer[]> xxx = new XXX<>(); // omitted (inferred)
 
 <hr class="sep-both">
 
+## Common Java classes
+
+<div class="row row-cols-md-2"><div>
+
+Java has way too many classes, even if we only keep the most commonly used ones, and I will only put some here.
+
+#### Comparator<T>: compare, sort
+
+Comparator is an [interface](#interfaces) implemented by classes whose values can be compared. It's needed to use many `sort` functions.
+
+```java
+public class MyComparator implements Comparator<Integer> {
+  @Override
+  public int compare(Integer o1, Integer o2) {
+    // 0 == same, 1 == o1 before o2, -1 = ...
+    return o1 == o2 ? 0 : o1 > o2 ? 1 : -1;
+  }
+}
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Threads
 
 <div class="row row-cols-md-2"><div>
@@ -1479,6 +1505,7 @@ According to some tests, the static constructor seems to be called when the clas
 * [Java](https://en.wikibooks.org/wiki/Java_Programming)
 * [yguard](https://www.yworks.com/products/yguard) (Obfuscator, Shrink), [proguard](https://www.guardsquare.com/proguard) (Shrink)
 * [30 Seconds of Java](https://java-design-patterns.com/snippets/#algorithm).
+* var
 
 ```java
 StringBuilder str = new StringBuilder();
