@@ -1731,6 +1731,8 @@ Stuff that I found, but never read/used yet.
 * const
 * object vs primitive
     * objects can be null
+    * == between primitive
+    * == between enum values
 
 <details class="details-n">
 <summary>Address 📬</summary>
@@ -1770,5 +1772,10 @@ Class.getSimpleName()
 // OS
 System.lineSeparator();
 System.getenv("os")
+
+List.of(...)
+Arrays.XXX
+Collections.emptyList()
+Collections.singletonList(xxx);
 ```
 </div></div> 

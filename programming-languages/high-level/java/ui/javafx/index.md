@@ -302,5 +302,6 @@ Stuff that I found, but never read/used yet.
   * `fx:include`
 * [lgs/eden](https://github.com/lgs-games/eden)
 * [edencoding](https://edencoding.com/)
+* valueProperty, selectedProperty, bind (uni/bi)
 </div><div>
 </div></div>
