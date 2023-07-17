@@ -1228,6 +1228,26 @@ E peek = queue.peek();                // get last
 E poll = queue.poll();                // take last
 E remove = queue.remove();            // remove last
 ```
+
+#### HashMap<K, V>: a dictionary
+
+A `HashMap` is a dictionary. A key of type `K` is associated with a value of type `V`. It implements the interface `Map<K, V>`.
+
+```java
+HashMap<Integer, String> map = new HashMap<>();
+// 0 is a key, "zero" is a value
+String oldValue = map.put(0, "zero"); // 0 => "zero"
+String value = map.get(0);            // "zero"
+String removed = map.remove(0);       // OK
+boolean in = map.containsKey(0);      // false
+map.clear();
+
+// common template to iterate a map 💎
+for(Map.Entry<Integer, String> entry: map.entrySet()){
+    Integer key = entry.getKey();
+    String value = entry.getValue();
+}
+```
 </div></div>
 
 <hr class="sep-both">
