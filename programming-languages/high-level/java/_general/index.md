@@ -1467,9 +1467,11 @@ try (FileWriter writer = new FileWriter("xxx.properties")) {
 
 <hr class="sep-both">
 
-## Web requests
+## External communication
 
 <div class="row row-cols-md-2"><div>
+
+#### Web requests
 
 You can do an HTTP request using native code as follows:
 
@@ -1485,7 +1487,42 @@ try {
     throw new RuntimeException(e);
 }
 ```
+
+#### Database
+
+[SQLite](/programming-languages/databases/relational/sql/index.md#dbms-specific) databases are limited, but they are easier to handle.
+
+```java
+// connect to SQLite database
+Connection c = DriverManager.getConnection("jdbc:sqlite:host", "username", "password");
+// execute some SQL
+try (Statement stmt = c.createStatement()) {
+    stmt.executeUpdate("sql");
+    // iterate results (if applicable) 
+    ResultSet rs = stmt.getResultSet();
+    while (rs.next()) {
+        System.out.println("x");
+    }
+}
+```
+
+⚠️ You have to catch the [verified `SQLException`](#verified-exceptions).
 </div><div>
+
+#### MariaDB Database
+
+The process is similar for other databases. You'll have to download and load a driver `java -cp ".:/path/to/driver" [...]`.
+
+```java
+// ensure the class is loaded (call it as soon as possible)
+Class.forName("org.mariadb.jdbc.Driver");
+// connection
+Connection c = DriverManager.getConnection("jbdc:mariadb:host", username, password);
+c.close();
+
+```
+
+⚠️ You have to catch the [verified `SQLException`](#verified-exceptions).
 </div></div>
 
 <hr class="sep-both">
@@ -1703,5 +1740,12 @@ StringBuilder str = new StringBuilder();
 
 EnumMap<EnumClass, ValueClass> map;
 map = new EnumMap<>(EnumClass.class);
+// instropection
+.class/getClass()
+Class.isInstance()
+Class.getSimpleName()
+// OS
+System.lineSeparator();
+System.getenv("os")
 ```
 </div></div> 

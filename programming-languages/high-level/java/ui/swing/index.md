@@ -352,6 +352,7 @@ Stuff that I found, but never read/used yet.
 
 * Event thread
 * `SwingUtilities.invokeLater(Runnable);`
+* `JOptionPane`, `JFileChooser`
 </div><div>
 
 

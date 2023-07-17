@@ -1,78 +1,10 @@
------- introspection
-.class/getClass()
-Class.isInstance()
-Class.getSimpleName()
-
----- jni
-
-http://www.swig.org/Doc1.3/Java.html#java_basic_tour
-https://stackoverflow.com/questions/15565947/java-wrapper-for-c-code
-https://nachtimwald.com/2017/06/06/wrapping-a-c-library-in-java/
-https://stackoverflow.com/questions/5963266/call-c-function-from-java
-
------- Classes sympas
-
-JOptionPane //affiche un popup de dialog
-System //retourne un saut de ligne du système, système d'exploitation actuel, ...
-JFileChooser //sélectionner un fichier
-
 ------- database
-
-Une base de données interne à l’application fonctionne comme une base de données externe mais ne nécessite pas de serveur. La base de donnée se trouve en mémoire ou dans un fichier.
-
-SQLite propose une solution, son driver java peut être téléchargé comme les autres drivers (Base de données (externe)).
-
-SQLite
-
-// Connexion
-// host peut être un chemin vers un fichier, par exemple jdbc:sqlite:test.db ou :memory:
-// pour en mémoire
-Connection c = DriverManager.getConnection("jdbc:sqlite:host", username, password);
-
-//L'exécution de requête sans résultats n'est possible que pour les requêtes non préparées
-try (Statement stmt = conn.createStatement()) {
- stmt.executeUpdate(sql);
-}
-
-//La lecture des résultats ne se fait qu'avec next
-while(rs.next()){
- ...
-}
-
-Base de données (externe)
-Il est possible d’utiliser une base de données externe donc sur un serveur (local ou non). Ceci nécessite une connexion contrairement aux bases internes.
-
-Pour vous connecter à une base de données, vous avez besoin de son driver java. Vous pouvez les trouver sur leurs sites ou ici https://mvnrepository.com/ (si vous n’utilisez ni maven ni gradle, ce n’est pas grave, faites les télécharger le .jar puis copiez le dans votre projet).
-
-Une fois le .jar téléchargé, alors copiez le dans votre projet. Il faudra le charger à chaque appel de java (pas javac) pour qu’il soit chargé par le DriverManager, la classe qui sera utilisée pour se connecter.
-
-# lancer Main.class
-# on modifie le classPath pour ajouter en plus de . (dossier courant) le driver.
-# utiliser gradle ou maven pour éviter tout ça
-# sur Intellij IDEA, le .jar s'ajoute via Projet Structure > Librairies (pas besoin de cette commande)
-java -cp ".:chemin/vers/le driver" ... Main
-Méthodes
-Attention, toutes les méthodes lève une SQLException qui doit être capturées. Ceci n’est pas optionnel.
 
 Connexion
 
-// vérifier que le driver a bien été chargé
-// exemple avec le driver mariadb
-// lève class not found exception si le driver n'a pas été trouvé
-Class.forName("org.mariadb.jdbc.Driver");
-
 // -------- Connexion --------
-// une adresse est de la forme jbdc:driver:host par exemple jdbc:mariadb:host
-Connection c = DriverManager.getConnection(adresse, username, password);
-
-// fermer la connexion après utilisation
-// (si vous ne la fermez pas, la connexion reste ouverte même après fermeture du
-// programme côté serveur)
-c.close();
-Requêtes
-
 Statement stmt = c.createStatement();
-stmt.executeUpdate(sql); // requête qui ne retourne rien
+stmt.executeUpdate("sql");
 stmt.close();
 
 // ou
