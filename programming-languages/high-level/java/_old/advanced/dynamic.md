@@ -13,30 +13,6 @@ HashMap is not a collection but a `Map`.
 It's a list of values.
 
 ```java
-import java.util.ArrayList;
-
-ArrayList<Integer> list = new ArrayList<>();;
-
-// add
-boolean add = list.add(element);
-
-// true if element is in list
-// will use equals to check
-boolean isIn = list.contains(element);
-
-// remove by element or index
-boolean remove = list.remove(element);
-
-// 0, 1, ... return by index
-Integer integer = list.get(0);
-
-// convert to array, you should use the same method
-// taking an array since you can't cast
-Object[] objects = list.toArray();
-
-// size
-int size = list.size();
-
 // clone
 ArrayList<Integer> copy = new ArrayList<>(list);
 ```

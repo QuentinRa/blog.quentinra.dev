@@ -837,9 +837,10 @@ String xxx = s.trim();          // remove leading/trailing \s
 boolean xxx = s.isEmpty();      // s.equals("")
 boolean xxx = s.isBlank();      // since JDK 11
 boolean xxx = s.equals(xxx);    // same as ==
-// Printf-like formatting
+// Printf-like formatting (%n == newline)
 System.out.println("%s: %d".formatted("string", 0));
 System.out.printf(("%s: %d") + "%n", "string", 0); // same
+System.out.println(String.format("%4.0f", 5.0));   // "    5"
 ```
 
 ➡️ Since JDK 13, you can use `""" """` for multilines strings.
@@ -1048,11 +1049,11 @@ XXX<Integer[]> xxx = new XXX<>(); // omitted (inferred)
 
 <hr class="sep-both">
 
-## Common Java classes
+## Common Java interfaces
 
 <div class="row row-cols-md-2"><div>
 
-Java has way too many classes, even if we only keep the most commonly used ones, and I will only put some here.
+Java has way too many [interfaces](#interfaces), even if we only keep the most commonly used ones, and I will only put some here.
 
 #### Comparator<T>, Comparable<T>: sort
 
@@ -1149,6 +1150,34 @@ y = 7 + x.orElse(3);     // if "x" is null, use "3" | y = 10
 ```
 
 See also: `isPresent()` <small>(is not null?)</small> or `isEmpty()` <small>(is null?)</small>.
+</div></div>
+
+<hr class="sep-both">
+
+## Collections
+
+<div class="row row-cols-md-2"><div>
+
+Collection is an interface implemented by all datastructures such as arrays, lists, dictionaries, sets...
+
+#### ArrayList<T>: dynamic array
+
+Arrays have a fixed size. An `ArrayList` is datastructure that behaves like an array, but has a variable size as it automatically resize itself.
+
+```java
+ArrayList<XXX> list = new ArrayList<>();
+boolean add = list.add(element);         // append value
+boolean isIn = list.contains(element);   // equals+hashCode
+boolean remove = list.remove(element);   // first match
+XXX xxx = list.get(0);                   // tab[0]
+int size = list.size();                  // number of values
+XXX[] tab = new XXX[size];               // store in "tab"
+tab = list.toArray(tab);    
+ArrayList<XXX> copy = new ArrayList<>(list); // shallow copy
+```
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">
