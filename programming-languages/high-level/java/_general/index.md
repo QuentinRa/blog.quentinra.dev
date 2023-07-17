@@ -1490,11 +1490,15 @@ try {
 
 #### Database
 
-[SQLite](/programming-languages/databases/relational/sql/index.md#dbms-specific) databases are limited, but they are easier to handle.
+You can directly interact with databases such as [SQLite](/programming-languages/databases/relational/sql/index.md#dbms-specific) or [MariaDB](/programming-languages/databases/relational/sql/index.md#dbms-specific) from your Java code while it's recommended to use APIs. You'll have to download and load a driver `java -cp ".:/path/to/driver" [...]`.
+
+⚠️ All methods raise a [verified `SQLException`](#verified-exceptions) that need to be handled.
 
 ```java
 // connect to SQLite database
 Connection c = DriverManager.getConnection("jdbc:sqlite:host", "username", "password");
+c.close();
+
 // execute some SQL
 try (Statement stmt = c.createStatement()) {
     stmt.executeUpdate("sql");
@@ -1503,26 +1507,45 @@ try (Statement stmt = c.createStatement()) {
     while (rs.next()) {
         System.out.println("x");
     }
+    rs.close();
 }
 ```
 
-⚠️ You have to catch the [verified `SQLException`](#verified-exceptions).
 </div><div>
 
-#### MariaDB Database
-
-The process is similar for other databases. You'll have to download and load a driver `java -cp ".:/path/to/driver" [...]`.
+To properly handle user input, we usually use `PreparedStatement`.
 
 ```java
-// ensure the class is loaded (call it as soon as possible)
-Class.forName("org.mariadb.jdbc.Driver");
-// connection
-Connection c = DriverManager.getConnection("jbdc:mariadb:host", username, password);
-c.close();
-
+PreparedStatement stmt = c.prepareStatement("... where x=?");
+// replace the nth "?" by a properly espacted value
+// indexes start at 1
+stmt.setInt(index, value);
+stmt.setString(index, value);
+// execute
+stmt.executeUpdate();                // no result
+ResultSet rs = stmt.executeQuery();  // has result
 ```
 
-⚠️ You have to catch the [verified `SQLException`](#verified-exceptions).
+When reading results, some methods aside from `next()` may be used:
+
+* `rs.previous()`: if available, returns the previous result
+* `rs.first()`: returns the first result
+* `rs.findColumn("name")`: return the index of a column
+* `rs.getInt(0)`: returns the value in column `0` as an `int`
+* `rs.getString(0)`: ... as a `String`
+
+Snippets
+
+<details class="details-n">
+<summary>Get the ID generated for an insert statement</summary>
+
+```java
+try(ResultSet generatedKeys = stmt.getGeneratedKeys()) {
+    if(!generatedKeys.next()) return -1;
+    return (int) generatedKeys.getLong(1);
+}
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
