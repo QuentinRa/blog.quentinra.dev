@@ -1615,7 +1615,7 @@ $ java -jar some_jar.jar # execute
 
 ⚠️ Once bundled, files inside the JAR cannot be modified.
 
-🔥 With [Gradle](/tools-and-frameworks/others/build/gradle/index.md), you can use this to build a JAR:
+🔥 With [Gradle](/tools-and-frameworks/others/build/gradle/index.md), you can use [shadow](https://github.com/johnrengelman/shadow) or this to build a JAR:
 
 ```gradle
 task makeJar(type: Jar) {
@@ -1756,7 +1756,7 @@ A reference is simply something that's referencing your object meaning that you 
 * [baeldung](https://www.baeldung.com/)
 * [Java](https://en.wikibooks.org/wiki/Java_Programming)
 * [yguard](https://www.yworks.com/products/yguard) (Obfuscator, Shrink), [proguard](https://www.guardsquare.com/proguard) (Shrink), [stringer](https://licelus.com/products/stringer) (obfuscator)
-* [30 Seconds of Java](https://java-design-patterns.com/snippets/#algorithm).
+* [30 Seconds of Java](https://java-design-patterns.com/snippets/#algorithm)
 
 ```java
 StringBuilder str = new StringBuilder();
