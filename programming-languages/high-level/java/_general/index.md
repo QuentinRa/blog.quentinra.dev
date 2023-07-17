@@ -1158,22 +1158,42 @@ See also: `isPresent()` <small>(is not null?)</small> or `isEmpty()` <small>(is 
 
 <div class="row row-cols-md-2"><div>
 
-Collection is an interface implemented by all datastructures such as arrays, lists, dictionaries, sets...
+`Collection<E>` is an interface implemented by all datastructures such as arrays, lists, dictionaries, sets...
 
-#### ArrayList<T>: dynamic array
+```java
+// E is a class, element is an instance of E.
+E element = null;
+// common constructors
+SomeCollection<E> c1 = new SomeCollection<>();
+SomeCollection<E> c2 = new SomeCollection<>(c1);
+// common methods
+c1.add(element);
+```
 
-Arrays have a fixed size. An `ArrayList` is datastructure that behaves like an array, but has a variable size as it automatically resize itself.
+#### ArrayList<E>: dynamic array
+
+Arrays have a fixed size. An `ArrayList` is datastructure that behaves like an array, but has a variable size as it automatically resizes itself.
 
 ```java
 ArrayList<XXX> list = new ArrayList<>();
-boolean add = list.add(element);         // append value
 boolean isIn = list.contains(element);   // equals+hashCode
 boolean remove = list.remove(element);   // first match
 XXX xxx = list.get(0);                   // tab[0]
 int size = list.size();                  // number of values
 XXX[] tab = new XXX[size];               // store in "tab"
-tab = list.toArray(tab);    
+tab = list.toArray(tab);
+
 ArrayList<XXX> copy = new ArrayList<>(list); // shallow copy
+set.addAll(list);                     // append a collection
+```
+
+#### HashSet<E>: set of unique values
+
+HashSet implements the same methods as [ArrayList](#arrayliste-dynamic-array) from Collection, but with some modifications to avoid duplicates.
+
+```java
+HashSet<XXX> set = new HashSet<>();
+set.xxx();                           // set ArrayList
 ```
 </div><div>
 

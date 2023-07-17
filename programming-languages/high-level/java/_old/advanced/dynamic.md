@@ -6,17 +6,6 @@ These are structures of data that you will use like ArrayList or HashMap. Theses
 
 HashMap is not a collection but a `Map`.
 
-<hr class="sr">
-
-## ArrayList
-
-It's a list of values.
-
-```java
-// clone
-ArrayList<Integer> copy = new ArrayList<>(list);
-```
-
 <hr class="sl">
 
 ## HashSet
