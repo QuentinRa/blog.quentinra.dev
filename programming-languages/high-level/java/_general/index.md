@@ -1078,11 +1078,11 @@ public class XXX implements Comparable<XXX> {
 See also: `Integer::compareTo`, ...
 </div><div>
 
-#### Iterator<T>, Iterable<T>: iterate an object
+#### Iterator<E>, Iterable<T>: iterate an object
 
 Both classes were made to uniformize a way of iterating an object. Classes implementing `Iterable<T>` can be iterated using [foreach](#loops---for-each).
 
-`Iterable<T>` creates an `Iterator<T>`, which is something with a cursor returning the next value to read when prompted.
+`Iterable<T>` creates an `Iterator<E>`, which is something with a cursor returning the next value to read when prompted.
 
 <details class="details-n">
 <summary>Common implementation</summary>
@@ -1154,11 +1154,11 @@ See also: `isPresent()` <small>(is not null?)</small> or `isEmpty()` <small>(is 
 
 <hr class="sep-both">
 
-## Collections
+## Collections and maps
 
 <div class="row row-cols-md-2"><div>
 
-`Collection<E>` is an interface implemented by all datastructures such as arrays, lists, dictionaries, sets...
+`Collection<E>` is an interface implemented by all datastructures such as arrays, lists, sets... `Map<K, V>` is used for dictionaries.
 
 * `E` is the type of the elements stored in the collection ✨
 
@@ -1178,15 +1178,12 @@ SomeCollection<E> c2 = new SomeCollection<>(c1);
 
 ```java
 c1.add(element);              // add
-c1.add(0, element);           // add at index
 c1.addAll(c2);                // add all from collection
 
-c1.remove(0);                 // remove element at "0"
 c1.remove(element);           // remove element
 c1.clear();                   // remove all
 
 boolean in = c1.contains(element);    // true if in
-E found = c1.get(0);                  // get by index
 Iterator<E> iterator = c1.iterator(); // see Iterator<E>
 Stream<E> stream = c1.stream();       // see Stream<E>
 
@@ -1199,32 +1196,38 @@ tab = c1.toArray(tab);
 
 #### ArrayList<E>: dynamic array
 
-Arrays have a fixed size. An `ArrayList` is datastructure that behaves like an array, but has a variable size as it automatically resizes itself.
+Arrays have a fixed size. An `ArrayList` is a datastructure that behaves like an array, but has a variable size as it automatically resizes itself.
+
+A few methods were added such as:
 
 ```java
-ArrayList<XXX> list = new ArrayList<>();
-boolean isIn = list.contains(element);   // equals+hashCode
-boolean remove = list.remove(element);   // first match
-XXX xxx = list.get(0);                   // tab[0]
-int size = list.size();                  // number of values
-XXX[] tab = new XXX[size];               // store in "tab"
-tab = list.toArray(tab);
-
-ArrayList<XXX> copy = new ArrayList<>(list); // shallow copy
-set.addAll(list);                     // append a collection
-```
-
-#### HashSet<E>: set of unique values
-
-HashSet implements the same methods as [ArrayList](#arrayliste-dynamic-array) from Collection, but with some modifications to avoid duplicates.
-
-```java
-HashSet<XXX> set = new HashSet<>();
-set.xxx();                           // set ArrayList
+c1.add(0, element);           // add at index
+c1.remove(0);                 // remove element at "0"
+E found = c1.get(0);          // get by index
 ```
 </div><div>
 
-...
+#### HashSet<E>: set of unique values
+
+HashSet is a collection with no duplicates.
+
+```java
+// it's common to create a "set" from a "list"
+HashSet<XXX> set = new HashSet<>(list);
+```
+
+#### LinkedList<E> as a queue
+
+`LinkedList<E>` is a class commonly used to implement a queue.
+
+```java
+Queue<E> queue = new LinkedList<>();
+boolean offer = queue.offer(element); // add
+E element = queue.element();          // get last
+E peek = queue.peek();                // get last
+E poll = queue.poll();                // take last
+E remove = queue.remove();            // remove last
+```
 </div></div>
 
 <hr class="sep-both">

@@ -8,42 +8,6 @@ HashMap is not a collection but a `Map`.
 
 <hr class="sl">
 
-## HashSet
-
-Same as ArrayList but values are uniques and if the same value is added twice, then the previous one is removed.
-
-```java
-import java.util.HashSet;
-
-HashSet<Integer> list = new HashSet<>();
-```
-
-Note that you don't have a `get` method so you will need to iterate the list if you want an element.
-
-<hr class="sr">
-
-## LinkedList using Queue
-
-```java
-import java.util.Queue;
-import java.util.LinkedList;
-
-Queue<Integer> queue = new LinkedList<>();
-
-// add
-boolean add = queue.add(element);
-boolean offer = queue.offer(element);
-// return last
-Integer element = queue.element();
-Integer peek = queue.peek();
-// return and remove last
-Integer poll = queue.poll();
-// remove last
-Integer remove = queue.remove();
-```
-
-<hr class="sl">
-
 ## HashMap
 
 It's a dictionary. The key are uniques and each key is associated with a value.
