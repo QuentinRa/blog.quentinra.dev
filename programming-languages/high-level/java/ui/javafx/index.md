@@ -300,6 +300,7 @@ Stuff that I found, but never read/used yet.
 
 * School project
   * `fx:include`
-* [eden](https://github.com/lgs-games/eden)
+* [lgs/eden](https://github.com/lgs-games/eden)
+* [edencoding](https://edencoding.com/)
 </div><div>
 </div></div>

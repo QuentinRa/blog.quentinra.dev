@@ -1,23 +1,7 @@
-## Thread d’événements
-
-Tous les événements sont gérés dans le thread d’événement, par exemple les clics, etc… Lorsqu’une suite d’action
-correspondant à un événement est détecté, alors l’événement est généré (il y a donc un léger décalage).
-
-## Thread graphique
-
-C’est dans ce Thread que tous ce qui est relaté aux composants graphique est fait. Vous pouvez éviter les
-problèmes de « Thread-Safe » en exécutant les modifications/les méthodes liés aux éléments graphiques
-dans ce Thread.
-
-// ajoute du code à exécuter sur le thread graphique
-SwingUtilities.invokeLater(Runnable);
-
 ------ introspection
 .class/getClass()
 Class.isInstance()
 Class.getSimpleName()
-
-final variable;
 
 ---- jni
 

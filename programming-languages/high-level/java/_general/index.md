@@ -1163,7 +1163,8 @@ stream = stream.map(i -> i + 1);      // transform each value
 stream = stream.sorted(Integer::compareTo); // Comparable<T>
 stream.forEach(System.out::println);
 // see also: anyMatch(Predicate), allMatch(Predicate)
-//           noneMatch(Predicate), count()...
+//           noneMatch(Predicate), count(),
+//           flatMap(), collect(Collectors.toList())...
 ```
 </div></div>
 
@@ -1623,6 +1624,22 @@ jlink {
 ```
 
 The JRE can be found in `out/myjre/`. See also [EasyJRE](https://justinmahar.github.io/easyjre/?path=/story/tools--easy-jre-story).
+
+#### Static constructors
+
+There are constructors that can be used to instantiate `static` attributes <small>(including those `final`)</small>.
+
+⚠️ It is called when a class is loaded in memory, which is not necessarily when the program is executed.
+
+```java
+public class Math {
+    private static final float PI;
+
+    static {
+        PI = 3.14f;
+    }
+}
+```
 </div></div>
 
 <hr class="sep-both">
@@ -1650,7 +1667,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [old](../_old/index.md)
 * java shell (JShell)
 * const
 * object vs primitive
@@ -1667,41 +1683,20 @@ In Java, the notion of address doesn't exist. You are calling a method using a p
 A reference is simply something that's referencing your object meaning that you can change the attributes/call methods on it, and the real object will be modified, but you can't "destroy"your object because that's simply a reference.
 </details>
 
-* control-flow methods
-* streams
 * sealed and hidden classes
 * method references (A::b)
-</div><div>
-
-* overloading constructors
-
-<details class="details-n">
-<summary>static constructors</summary>
-
-You have a constructor for instances, but you also have a class constructor! They are not taking parameters since they are more like static blocs but could be used to init static attributes (even though we mainly use inline initialization).
-
-Syntax is
-
-```java
-public class Math {
-    private static final float PI;
-
-    static {
-        PI = 3.14f;
-    }
-}
-```
-
-According to some tests, the static constructor seems to be called when the class is loaded in memory, which is not necessarily at the start of the program.
-</details>
-
 * Complete JAR notes (common functions/asset handling...)
 * native keyword
+* var
+* JNI, [jnicookbook](https://github.com/mkowsiak/jnicookbook) 
+</div><div>
+
+* [bluej](https://www.bluej.org/)
+* [java-best-practices](https://github.com/in28minutes/java-best-practices)
 * [baeldung](https://www.baeldung.com/)
 * [Java](https://en.wikibooks.org/wiki/Java_Programming)
-* [yguard](https://www.yworks.com/products/yguard) (Obfuscator, Shrink), [proguard](https://www.guardsquare.com/proguard) (Shrink)
+* [yguard](https://www.yworks.com/products/yguard) (Obfuscator, Shrink), [proguard](https://www.guardsquare.com/proguard) (Shrink), [stringer](https://licelus.com/products/stringer) (obfuscator)
 * [30 Seconds of Java](https://java-design-patterns.com/snippets/#algorithm).
-* var
 
 ```java
 StringBuilder str = new StringBuilder();
