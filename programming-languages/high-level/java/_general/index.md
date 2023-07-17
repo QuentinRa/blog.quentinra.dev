@@ -1160,14 +1160,41 @@ See also: `isPresent()` <small>(is not null?)</small> or `isEmpty()` <small>(is 
 
 `Collection<E>` is an interface implemented by all datastructures such as arrays, lists, dictionaries, sets...
 
+* `E` is the type of the elements stored in the collection ✨
+
 ```java
-// E is a class, element is an instance of E.
 E element = null;
-// common constructors
+```
+
+* Common constructors 🏡
+
+```java
+//// common constructors 🏡
 SomeCollection<E> c1 = new SomeCollection<>();
 SomeCollection<E> c2 = new SomeCollection<>(c1);
-// common methods
-c1.add(element);
+```
+
+* Common methods 🏘️
+
+```java
+c1.add(element);              // add
+c1.add(0, element);           // add at index
+c1.addAll(c2);                // add all from collection
+
+c1.remove(0);                 // remove element at "0"
+c1.remove(element);           // remove element
+c1.clear();                   // remove all
+
+boolean in = c1.contains(element);    // true if in
+E found = c1.get(0);                  // get by index
+Iterator<E> iterator = c1.iterator(); // see Iterator<E>
+Stream<E> stream = c1.stream();       // see Stream<E>
+
+int size = c1.size();                 // number of elements
+boolean b = c1.isEmpty();             // size == 0
+
+E[] tab = new E[size];                // store in "tab"
+tab = c1.toArray(tab);
 ```
 
 #### ArrayList<E>: dynamic array
