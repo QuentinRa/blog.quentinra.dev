@@ -1076,6 +1076,19 @@ public class XXX implements Comparable<XXX> {
 ```
 
 See also: `Integer::compareTo`, ...
+
+#### Optional<T>: wrapper for "null"
+
+`Optional<T>` is wrapping a nullable value, allowing you to factorize code or easily write code to handle them.
+
+```java
+Optional<Integer> x = Optional.of(5); // wrap "5"
+int y = 7 + x.get();     // y = 7 + 5
+x = Optional.empty();    // wrap "null"
+y = 7 + x.orElse(3);     // if "x" is null, use "3" | y = 10
+```
+
+See also: `isPresent()` <small>(is not null?)</small> or `isEmpty()` <small>(is null?)</small>.
 </div><div>
 
 #### Iterator<E>, Iterable<T>: iterate an object
@@ -1138,18 +1151,20 @@ while (iterator.hasNext()) { // ✅ check if we can load "next"
 ```
 </details>
 
-#### Optional<T>: wrapper for "null"
+#### Stream<E>: a sequence of elements
 
-`Optional<T>` is wrapping a nullable value, allowing you to factorize code or easily write code to handle them.
+A `Stream<E>` is convenient to apply (multiple) operations on a sequence of elements. We call **intermediate methods ⛓️** the ones returning a new stream. All methods are emptying the original stream.
 
 ```java
-Optional<Integer> x = Optional.of(5); // wrap "5"
-int y = 7 + x.get();     // y = 7 + 5
-x = Optional.empty();    // wrap "null"
-y = 7 + x.orElse(3);     // if "x" is null, use "3" | y = 10
+Stream<Integer> stream = someCollection.stream(); // example
+// some examples using lambdas
+stream = stream.filter((i) -> i > 0);  // keep values > 0
+stream = stream.map(i -> i + 1);      // transform each value
+stream = stream.sorted(Integer::compareTo); // Comparable<T>
+stream.forEach(System.out::println);
+// see also: anyMatch(Predicate), allMatch(Predicate)
+//           noneMatch(Predicate), count()...
 ```
-
-See also: `isPresent()` <small>(is not null?)</small> or `isEmpty()` <small>(is null?)</small>.
 </div></div>
 
 <hr class="sep-both">
