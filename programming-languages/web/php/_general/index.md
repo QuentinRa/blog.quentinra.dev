@@ -299,7 +299,7 @@ You can declare a nullable parameter or return type
 function sum(int $a, ?int $b) : ?int {}
 ```
 
-Since PHP8.0, a value can explicitly declare multiple types with `|`
+Since PHP 8.0, we can explicitly declare multiple types with `|`:
 
 ```php!
 function sum(int $a, int | null $b) : int | null {}
@@ -689,4 +689,19 @@ $ sudo phpenmod xxx
 * [roundcube](https://roundcube.net/)
 * [php-fig](https://www.php-fig.org/)
 * [cburch](http://www.cburch.com/books/php/index.html)
+
+```php!
+$files = glob('./*/*.txt');
+$dirIterator = new RecursiveDirectoryIterator($path);
+foreach (new RecursiveIteratorIterator($dirIterator) as $file) {
+    // $file->isFile()
+    // $file->getExtension()
+    // $file->getPathname()
+    // $file->getMTime()
+}
+
+arsort($array);
+array_slice(array_keys($array), 0, $limit);
+reset($xxx)
+```
 </div></div>
