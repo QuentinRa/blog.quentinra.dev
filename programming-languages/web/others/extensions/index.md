@@ -40,6 +40,8 @@ browser.xxx.yyy
 
 * **Chrome**: Go to `chrome://extensions`, enable `Developer mode`, click on `Load unpacked`, and select the folder with your `manifest.json`.
 
+* **Firefox**: to load a packed extension <small>(zip)</small>, use: `about:addons` <small>(settings > install from file)</small>, otherwise, use `about:debugging#/runtime/this-firefox`. The latter are unloaded after closing the browser.
+
 #### Track errors/logs 🐛
 
 On the page where you added your extension
@@ -589,7 +591,6 @@ Stuff that I found, but never read/used yet.
 ```javascript!
 document.addEventListener("pageshow", xxx);
 ```
-</div><div>
 
 ```javascript!
 chrome.contextMenus.create({ id: "xxx", title: "xxx", contexts: ['selection'] });
@@ -600,4 +601,27 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
     }
 });
 ```
+</div><div>
+
+[web-ext](https://github.com/mozilla/web-ext) is a convenient project to build firefox extensions.
+
+```
+$ npm i web-ext
+$ npx web-ext --version
+$ nano public/manifest.json
+...
+ "browser_specific_settings": {
+    "gecko": {
+      "id": "{aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa}"
+    }
+  },
+...
+$ cd dist
+$ npx web-ext build #--overwrite-dest
+# dev browser required
+# https://stackoverflow.com/questions/62237202/firefox-add-ons-how-to-install-my-own-local-add-on-extension-permanently-in-f
+extensions.langpacks.signatures.required
+xpinstall.signatures.required
+```
+
 </div></div>
