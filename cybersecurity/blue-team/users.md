@@ -41,7 +41,9 @@ Others
   * Add strong authentication (two-factor/MFA)
   * [yubico](https://www.yubico.com/)
   * Google Passkeys / Windows Hello / iCloud Passkeys
+  * Authy, Google auth, YubiKey OTP, Duo Security, FIDO2
   * Something you know, have, are
   *  For root/administrator accounts, the password should be updated regularly, and its usage should be justified.
 * [Username policy](https://en.wikipedia.org/wiki/Wikipedia:Username_policy#Inappropriate_usernames)
+* Kaspersky, Bitdefender
 </div></div>

@@ -476,6 +476,7 @@ Links
 ```
 
 * Vue.js - change the page title ([article](https://medium.com/js-dojo/how-to-dynamically-change-the-page-title-with-vue-and-vue-router-99904906ce45))
+* `<span v-html="tags"></span>` to avoid escaping HTML
 
 ```javascript!
 // created

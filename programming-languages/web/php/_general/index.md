@@ -703,5 +703,9 @@ foreach (new RecursiveIteratorIterator($dirIterator) as $file) {
 arsort($array);
 array_slice(array_keys($array), 0, $limit);
 reset($xxx)
+
+$this->$hidden
+
+return new class implements XXXInterface {};
 ```
 </div></div>
