@@ -51,6 +51,12 @@ List of courses that have note which were not added yet.
 **Operating systems**
 
 * Arduino, Platformio
+* Hardening
+* Linux
+* Networking
+* Webservers > nginx, awstats, postfix
+* Windows > Linux, security
+* Others > Cloud, IoT, Docker, vagrant, Qemu, virtualbox, Cloud
 </div></div>
 
 
