@@ -15,7 +15,7 @@ This course covers PL/SQL and PL/pgSQL.
 
 <hr class="sep-both">
 
-## DMBS-specific
+## DBMS-specific
 
 <div class="row row-cols-md-2"><div>
 
@@ -86,7 +86,7 @@ END;
 * **BEGIN** is the code itself.
 * **EXCEPTION** is an optional block to handle unexpected behaviors, which are mostly errors.
 
-⚠️ If you are update records <small>(INSERT, UPDATE, ...)</small>, then you must `COMMIT` (=save) or `ROLLBACK` (=cancel).
+⚠️ If you update records <small>(INSERT, UPDATE, ...)</small>, then you must `COMMIT` (=save) or `ROLLBACK` (=cancel).
 </div></div>
 
 <hr class="sep-both">
@@ -95,7 +95,7 @@ END;
 
 <div class="row row-cols-md-2"><div>
 
-Variables are needed to **to store the result of a SQL request**, otherwise they are used to store constants.
+Variables are needed **to store the result of an SQL request**, otherwise they are used to store constants.
 
 The syntax is <small>(v_ is optional, "v" stands for variable)</small>:
 

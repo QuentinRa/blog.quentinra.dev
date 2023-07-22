@@ -32,27 +32,21 @@ List of courses that have note which were not added yet.
 **Programming Languages > High-Level Languages**
 
 * C#
-* Java, LibGDX, lwjgl
+* Java LibGDX and lwjgl ([litiengine](https://litiengine.com/))
 * OCaml
 * Lisp
-* Lua
+* Lua ([luau](https://github.com/Roblox/luau))
 * Perl
+* Go ([gop](https://github.com/goplus/gop))
 </div><div>
 
 **Tools and Frameworks**
 
 * GIT
 * Pandora
-* Others > SSO > OAuth, OpenID, SAML
-
-**Tools and Frameworks > Editors**
-
+* Gradle, Maven
+* OAuth, OpenID, SAML
 * JetBrains plugin development
-
-**Tools and Frameworks > Build tools**
-
-* Gradle
-* Maven
 
 **Operating systems**
 
