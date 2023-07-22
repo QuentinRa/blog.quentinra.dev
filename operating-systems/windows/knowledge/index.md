@@ -7,7 +7,6 @@
 Microsoft Windows is the most used operating system. Windows versions that were quite used are Windows XP, Windows 7, Windows 10, and now Windows 11 is slowly gaining new users.
 
 There are a lot of things that are similar to [Linux Operating systems](/operating-systems/linux/knowledge/index.md), so I will add fewer details here.
-</div><div>
 
 Some dates about the latest versions
 
@@ -15,26 +14,18 @@ Some dates about the latest versions
 * Windows 10 (2015-2025)
 * Windows 11 (2021-???)
 * Windows 12 (???-???)
-</div></div>
+</div><div>
 
-<hr class="sep-both">
-
-## Windows images (ISO)
-
-If you don't have Windows, as a developer, you can install it with one of the images below.
-
-<div class="row row-cols-md-2 mt-3"><div>
+**Windows images** (ISO): as a developer, if you don't have Windows, you can install it with one of the images below.
 
 * [Windows 10 Enterprise](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise) <small>(official, free, 180 days)</small>
 * [Windows 11](https://www.microsoft.com/en-us/software-download/windows11) <small>(official)</small>
 * [Windows 11 Enterprise](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise) <small>(official,  free, 180 days)</small>
 * [Windows 11 Enterprise (dev)](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/) <small>(official, free)</small>
 * [Windows 7/8/10](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/) <small>(official, free,  90 days, IEUser/Passw0rd!)</small>
-</div><div>
-
 * [Windows XP Professional](https://www.microsoft.com/en-us/download/details.aspx?id=31791) <small>(official, free)</small>
 * [Windows XP Mode](https://download.cnet.com/Windows-XP-Mode/3000-18513_4-77683344.html) <small>(was available for free on the official website)</small> | [Help](https://helpdeskgeek.com/virtualization/how-to-set-up-a-windows-xp-virtual-machine-for-free/)
-* [Windows 10/11/Server 2019/Server 2022 (student)](https://azureforeducation.microsoft.com/devtools) <small>(free for students, official, ISO+Activation key)</small>
+* [Windows 10/11/Server 2019/Server 2022 (student)](https://azureforeducation.microsoft.com/devtools) <small>(free for students, official, activation key)</small>
 </div></div>
 
 <hr class="sep-both">
