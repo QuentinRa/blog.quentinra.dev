@@ -40,7 +40,7 @@ recursive(5)
     1
 ```
 
-By going back with the result of each recursive function call, we can calculate the result which is `14`.
+By going backward with the result of each recursive function call, we can calculate the result which is `14`.
 
 ```text!
 recursive(5) = 1
@@ -51,7 +51,7 @@ recursive(7) = 7 + 7 = 14
 
 #### Terminal vs Non-Terminal
 
-A recursive function may exhaust every resource, as every recursive call adds its own data. When distinguish terminal and non-terminal recursive functions. The latter may never end.
+A recursive function may exhaust every resource, as every recursive call adds its own data. We distinguish terminal and non-terminal recursive functions. The latter may never end.
 
 * **Terminal** ✅: we evaluate "n" before "n+1", e.g., the result is updated **before** the next function call.
 

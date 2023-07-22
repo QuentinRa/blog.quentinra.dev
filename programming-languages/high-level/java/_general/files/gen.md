@@ -69,6 +69,8 @@ You can calculate a hashCode manually <small>(i.g. not using Objects.hashCode)</
 public int hashCode() {
     final int prime = 31; // int max power
     int hash = 1; // return 1
+    
+    // for each attribute, use the correct line
 
     // if attr is a boolean
     hash = prime * hash + (attr ? 1231 : 1237);
@@ -79,9 +81,9 @@ public int hashCode() {
     hash = prime * hash + (int) (doubleTLB ^ (doubleTLB >>> 32));
     // if attr is a float
     hash = prime * hash + Float.floatToIntBits(attr);
-    // if attribute is a int
+    // if attr is an int
     hash = prime * hash + attr;
-    // if attribute is an object
+    // if attr is an object
     hash = prime * hash + (attr == null ? 0 : attr.hashCode());
 
     return hash;
