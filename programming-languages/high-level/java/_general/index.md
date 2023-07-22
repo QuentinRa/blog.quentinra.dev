@@ -52,7 +52,7 @@ Object o = new Object(); // object
 
 Java has **8** non-object types called **primitive types**. Aside from these, every other variable <small>(object)</small> has the type of a **class** 🤖.
 
-*Each primitive type also have a class, as listed below:*
+*Each primitive type also has a class, as listed below:*
 
 ```java
 boolean xxx = true || false; // Boolean 🤖 | 1 bit 
@@ -101,7 +101,7 @@ Here is a list of most [operators](/programming-languages/_paradigm/stuff/operat
 ```java
 // arithmetic
 int sum = 5 + 5;          // 10
-int substraction = 5 - 5; // 0
+int subtraction = 5 - 5;  // 0
 int product = 5 * 5;      // 25
 int division = 6 / 5;     // 1
 x += 1;                   // same as x = x + 1
@@ -228,7 +228,7 @@ for (int e: numbers) {
 
 #### Branching - Instanceof
 
-Due to [Polymorphism](/programming-languages/_paradigm/oo.md#polymorphism), two objects may be stored in a variable of the same type, but have a different classes. You can check the class using:
+Due to [Polymorphism](/programming-languages/_paradigm/oo.md#polymorphism), two objects may be stored in a variable of the same type, but have a different class. You can check the class using:
 
 ```java
 Object value = Integer.valueOf(5);
@@ -243,7 +243,7 @@ if (value instanceof Integer n){
 }
 ```
 
-🔥 `instanceof` returns true is the class is the same as the given one, or a child class of the given one. A stricter approach only allowing the same class would be:
+🔥 `instanceof` returns true if the class of `value` is the same as the given one, or a child class of the given one. A stricter approach only allowing the same class would be:
 
 ```java
 if (a.getClass() == b.getClass()) { /* ... */ }
@@ -339,7 +339,7 @@ public static float xxx(float f) { return f; }
 
 ✨ You can [overload](/programming-languages/_paradigm/stuff/overloading.md) methods and constructors.
 
-🔥 You can create a variadic method e.g., taking a variable number of arguments as follows: `public void myMethod(Integer ... numbers)`. Here, `numbers` has the type `Integer[]`, and  may be empty. This can only be used for the last argument. Call: `myMethod(), myMethod(a, b)`...
+🔥 You can create a variadic method e.g., taking a variable number of arguments as follows: `public void myMethod(Integer ... numbers)`. Here, `numbers` has the type `Integer[]`, and may be empty. This can only be used for the last argument. Call: `myMethod(), myMethod(a, b)`...
 </div></div>
 
 <hr class="sep-both">
@@ -366,7 +366,7 @@ public class Person {
     public Person() {
         this("John Doe", 0); // call another
     }
-    // valuated constructor
+    // valued constructor
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
@@ -379,7 +379,7 @@ public class Person {
 
 #### Dot operator
 
-From an object, you can  call methods or access attributes <small>(according to the visibility of the member)</small> using the operator `.` (dot).
+From an object, you can call methods or access attributes <small>(according to the visibility of the member)</small> using the operator `.` (dot).
 
 ```java
 johnDoe.setName("Jane Doe");
@@ -506,7 +506,7 @@ public class Person {           // implicit extends Object
 
 #### Subclass
 
-We can create a subclass `King` inheriting from `Person`. The latter has a constructor with need to call, this is done using `super(args)`.
+We can create a subclass `King` inheriting from `Person`. The latter has a constructor which we need to call: this is done using `super(args)`.
 
 ```java
 public class King extends Person {
@@ -579,7 +579,7 @@ public abstract class AbstractXXX { // ✍️ abstract class
     // can have attributes
     private final SomeType someAttribute;
 
-    // ✍️ can have constructor, but they can't be called
+    // ✍️ can have constructors, but they can't be called
     protected AbstractXXX(...) {
         // ...
     }
@@ -789,7 +789,7 @@ A local class is declared in a method and only exists within its scope.
 
 #### Object
 
-Every class inherited from the class Object implicitly.
+Every class is inherited from the class Object implicitly.
 
 ```java
 class Object {
@@ -843,7 +843,7 @@ System.out.printf(("%s: %d") + "%n", "string", 0); // same
 System.out.println(String.format("%4.0f", 5.0));   // "    5"
 ```
 
-➡️ Since JDK 13, you can use `""" """` for multilines strings.
+➡️ Since JDK 13, you can use `""" """` for multiline strings.
 
 🔥 Concatenation is done using `+` (plus): `"a" + "b"` gives us `"ab"`.
 
@@ -931,7 +931,7 @@ InputStream is = System.in;
 OutputStream os = System.out;
 ```
 
-☠️ With in input/output stream, we can only read/write integers:
+☠️ With an input/output stream, we can only read/write integers:
 
 ```java
 int read = is.read();         // read one
@@ -940,7 +940,7 @@ os.write(5);                  // write one
 
 ⚠️ ️ Both raise a [verified `IOException`](../_general/index.md#verified-exceptions) that must be caught. Whether you have one or multiple `try-catch` is up to your needs.
 
-If you open a stream <small>(not stdin/...)</small>, you have to close it. A new alternative is the `try-ressource` which automatically close a resource.
+If you open a stream <small>(not stdin/...)</small>, you have to close it. A new alternative is the `try-ressource` which automatically closes a resource.
 
 ```java
 // try-with-resources
@@ -998,7 +998,7 @@ BufferedReader reader = new BufferedReader(fileReader);
 
 <div class="row row-cols-md-2"><div>
 
-It's possible to write generic code using [Polymorphism](/programming-languages/_paradigm/oo.md#polymorphism). For instance, this functions takes instance of AAA or [subclasses](../_general/index.md#inheritance) of AAA.
+It's possible to write generic code using [Polymorphism](/programming-languages/_paradigm/oo.md#polymorphism). For instance, this function takes an instance of AAA or [subclasses](../_general/index.md#inheritance) of AAA.
 
 ```java
 public static AAA xxx(AAA aaa){
@@ -1031,7 +1031,7 @@ Integer[] xxx = {0, 1, 2};
 Integer first = firstElement(xxx); // 0
 ```
 
-A generic type can be declared in a method, or in a class. For the latter, you must provide the type when calling the constructor:
+A generic type can be declared in a method, or a class. For the latter, you must provide the type when calling the constructor:
 
 ```java
 public class XXX<T> {}
@@ -1174,7 +1174,7 @@ stream.forEach(System.out::println);
 
 <div class="row row-cols-md-2"><div>
 
-`Collection<E>` is an interface implemented by all datastructures such as arrays, lists, sets... `Map<K, V>` is used for dictionaries.
+`Collection<E>` is an interface implemented by all data structures such as arrays, lists, sets... `Map<K, V>` is used for dictionaries.
 
 * `E` is the type of the elements stored in the collection ✨
 
@@ -1212,7 +1212,7 @@ tab = c1.toArray(tab);
 
 #### ArrayList<E>: dynamic array
 
-Arrays have a fixed size. An `ArrayList` is a datastructure that behaves like an array, but has a variable size as it automatically resizes itself.
+Arrays have a fixed size. An `ArrayList` is a data structure that behaves like an array, but has a variable size as it automatically resizes itself.
 
 A few methods were added such as:
 
@@ -1326,7 +1326,7 @@ public void myMethod() {
 
 <div class="row row-cols-md-2"><div>
 
-Async functions are functions executed in another [thread](#threads). For instance, to query a database/an API. Sometimes, we want to wait for the result resuming the execution.
+Async functions are functions executed in another [thread](#threads). For instance, to query a database/an API. Sometimes, we want to wait for the result to resume the execution.
 
 ```java
 // import java.util.concurrent.CountDownLatch;
