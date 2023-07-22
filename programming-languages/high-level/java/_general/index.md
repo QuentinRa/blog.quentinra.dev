@@ -1415,7 +1415,7 @@ Properties and preferences are two common ways of storing user settings, such as
 
 #### Preferences
 
-Preferences are available at two scopes: user and system. Each preference is associated with a class.
+Preferences are available in two scopes: user and system. Each preference is associated with a class.
 
 * Static <small>(replace `XXX.class` with any class)</small>
 
@@ -1473,7 +1473,7 @@ try (FileWriter writer = new FileWriter("xxx.properties")) {
 
 #### Web requests
 
-You can do an HTTP request using native code as follows:
+You can make an HTTP request using native code as follows:
 
 ```java
 try {
@@ -1492,7 +1492,7 @@ try {
 
 You can directly interact with databases such as [SQLite](/programming-languages/databases/relational/sql/index.md#dbms-specific) or [MariaDB](/programming-languages/databases/relational/sql/index.md#dbms-specific) from your Java code while it's recommended to use APIs. You'll have to download and load a driver `java -cp ".:/path/to/driver" [...]`.
 
-⚠️ All methods raise a [verified `SQLException`](#verified-exceptions) that need to be handled.
+⚠️ All methods raise a [verified `SQLException`](#verified-exceptions) that needs to be handled.
 
 ```java
 // connect to SQLite database
@@ -1595,13 +1595,11 @@ Compile with: `javac -d mods /path/to/module-info.java /path/to/com/example/proj
 
 #### UTF-8
 
-Non-ASCII characters are incorrectly displayed on some machines. You can use [unicode](https://unicode-table.com/en/) to ensure it won't be the case.
+Non-ASCII characters are incorrectly displayed on most machines. Either use: `java -Dfile.encoding=UTF-8 [...]`, or [unicode](https://unicode-table.com/en/) characters.
 
 ```java
 System.out.println("\u00E9"); // print é
 ```
-
-Otherwise, you can also use: `java -Dfile.encoding=UTF-8 [...]`.
 
 <br>
 
