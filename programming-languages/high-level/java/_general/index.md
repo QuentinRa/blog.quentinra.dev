@@ -217,7 +217,7 @@ do {} while(true); // executed at least once
 
 #### Loops - for each
 
-The for each is a new loop to iter **Iterables**. Iterables can be arrays or collections <small>(ArrayList/...)</small>.
+It is a new loop to iterate **Iterables**. Iterables can be arrays, collections <small>(ArrayList/...)</small>, or basically any class implementing [Iterable](#iteratore-iterablet-iterate-an-object).
 
 ```java
 int[] numbers = {5, 6, 7};
@@ -1006,7 +1006,7 @@ public static AAA xxx(AAA aaa){
 }
 ```
 
-But, it's limited to subclasses. Java Generics allow us to factorize methods with the same code but no useful polymorphism usable:
+But, it's limited to subclasses. Java Generics allow us to factorize methods with the same code <small>(and with no useful polymorphism usable)</small>:
 
 ```java
 public static Integer firstElement(Integer[] array){
@@ -1100,7 +1100,7 @@ Both classes were made to uniformize a way of iterating an object. Classes imple
 <details class="details-n">
 <summary>Common implementation</summary>
 
-The class below is a simplified example. It has an attribute `numbers` which represent the data it has, and that we will iterate.
+The class below is a simplified example. It has an attribute `numbers` which represents the data it has, and that we will iterate on.
 
 ```java
 public class YYY implements Iterable<Integer> {
@@ -1153,7 +1153,7 @@ while (iterator.hasNext()) { // ✅ check if we can load "next"
 
 #### Stream<E>: a sequence of elements
 
-A `Stream<E>` is convenient to apply (multiple) operations on a sequence of elements. We call **intermediate methods ⛓️** the ones returning a new stream. All methods are emptying the original stream.
+A `Stream<E>` is convenient for applying <small>(multiple)</small> operations to a sequence of elements. We call **intermediate methods ⛓️** the ones returning a new stream. All methods empty the original stream.
 
 ```java
 Stream<Integer> stream = someCollection.stream(); // example
@@ -1355,7 +1355,7 @@ thread.start();
 
 When the latch is empty, `latch.await()` will stop waiting.
 
-If you've multiple async functions to call, you can simply increase `CountDownLatch` starting value.
+If you've got multiple async functions to call, you can simply increase `CountDownLatch` starting value.
 
 </div></div>
 
