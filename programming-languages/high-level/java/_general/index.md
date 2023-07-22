@@ -396,7 +396,7 @@ double pi = Math.PI;
 
 #### Garbage collector
 
-The **Garbage collector** is a process looking for unused variables <small>(meaning no more references)</small>, and destroying them, freeing up memory.
+The **garbage collector** is a process that looks for unused variables <small>(meaning no more references)</small>, and destroys them, freeing up memory.
 
 There is no way to know when the garbage collector will destroy a variable, but setting a variable to `null` may speed up the process.
 
@@ -411,7 +411,7 @@ johnDoe = null;
 
 <div class="row row-cols-md-2"><div>
 
-An **exception** is a signal fired when something unexpected occurs. This is most of the time an error 🔥. If no one handles the signal, then the program crashes. It prints a **stacktrace** with the trace of methods the signal went through. There are **two** categories of exceptions.
+An **exception** is a signal fired when something unexpected occurs. This is usually an error 🔥. If no one handles the signal, then the program crashes. It prints a **stacktrace** with the trace of methods the signal went through. There are **two** categories of exceptions.
 
 <br>
 
@@ -568,7 +568,7 @@ You can also add [annotations](../advanced/index.md#annotations) or [throws](#ex
 
 Abstraction in Java can be achieved using **abstract classes** or **interfaces**. Both are used to write more generic methods using [polymorphism](/programming-languages/_paradigm/oo.md#polymorphism) and [liskov principle](/programming-languages/_paradigm/oo.md#polymorphism), but they are **not** instantiable.
 
-An **abstract method** is a method that wasn't implemented yet.
+An **abstract method** is a method that has not been implemented yet.
 
 #### Abstract classes
 
@@ -687,7 +687,7 @@ XXX xxx = (u) -> { // can access out-of-scope variables
 
 #### Enumerations
 
-An enumeration is a class providing static objects. They are already instantiated and can have methods/attributes.
+An enumeration is a class that provides static objects. They are already instantiated and can have methods/attributes.
 
 They are commonly used for classes with limited known objects.
 
@@ -724,7 +724,7 @@ int sorcererBaseHP = RPGClass.SORCERER.getBaseHP();
 
 #### Records
 
-Records were introduced in Java 16. They are used to store data.
+Records were introduced in Java 16 for classes that only handle data.
 
 ```
 // automatically generate getters, #equals, #toString...
@@ -810,7 +810,7 @@ class Object {
 }
 ```
 
-👉 `a.equals(b)` is the same as `a == b` by default, but subclasses can override equals. Use `==` with `null`, NOT `equals` <small>(null.equals(...) will fails)</small>.
+👉 `a.equals(b)` is the same as `a == b` by default, but subclasses can override equals. Use `==` with `null`, NOT `equals` <small>(null.equals(...) will fail)</small>.
 
 ➡️ An IDE can generate implementations for [these methods](files/gen.md).
 
@@ -862,7 +862,7 @@ int one = tab[0];
 int length = tab.length;
 ```
 
-If you try to use an index that does not exist, you will get an Exception: `IndexOutOfBoundsException`.
+If you try to use an index that does not exist, you will get an exception: `IndexOutOfBoundsException`.
 </div></div>
 
 <hr class="sep-both">
@@ -871,7 +871,7 @@ If you try to use an index that does not exist, you will get an Exception: `Inde
 
 <div class="row row-cols-md-2"><div>
 
-Annotations such as `@Override` or `@Deprecated` allow us to enforce some compiler checks to a method <small>(ex: deprecated trigger a warning)</small>.
+Annotations such as `@Override` or `@Deprecated` allow us to enforce some compiler checks on a method <small>(ex: deprecated triggers a warning)</small>.
 
 For instance, [org.jetbrains:annotations](https://www.jetbrains.com/help/idea/annotating-source-code.html) provides: `@Nullable`, `@NotNull`, or `@Contract` which are helpful for [contract programming](/tools-and-frameworks/others/testing/methodology/index.md#contract-programming).
 
@@ -954,7 +954,7 @@ try (InputStream is = ...) {
 
 #### Buffers
 
-We usually wrap streams within **buffers** to read more characters in one go. Each read/write still raise a [verified `IOException`](../_general/index.md#verified-exceptions) to catch.
+We usually wrap streams within **buffers** to read more characters at once. Each read/write still raises a [verified `IOException`](../_general/index.md#verified-exceptions) to catch.
 
 ```java
 // for character streams:
