@@ -4,7 +4,7 @@
 
 Java is a well-known [object-oriented](/programming-languages/_paradigm/oo.md) programming language. It's maintained and owned by Oracle 🍵.
 
-Java was designed as a cross-platform language. We write code once, and on any operating system, we would have the same output. This is done by executing the code on a virtual machine called **JVM**.
+Java was designed as a cross-platform language. We write code once, and on any operating system, we would have the same output. This is done by executing the code on a virtual machine called the **JVM**.
 
 ➡️ The current version is **Java 21** (2023). The last [LTS](files/download.md#lts-jdk) is **Java 21**.
 
@@ -333,7 +333,7 @@ public void resetName() {
 public static float xxx(float f) { return f; }
 ```
 
-➡️ Methods to access an attribute are usually starting with `get` such as `getName`. They are called **getters**. Methods to set an attribute are usually starting with `set` and are called **setters**.
+➡️ Methods to access an attribute are usually starting with `get` such as `getName`. They are called **getters**. Methods to set an attribute usually start with `set` and are called **setters**.
 
 ✨ You can write [recursive methods](/programming-languages/_paradigm/stuff/recursivity.md).
 
@@ -1411,7 +1411,7 @@ o.flush();
 
 <div class="row row-cols-md-2"><div>
 
-Properties and preferences are two common ways of storing user settings, such as the user language, the theme...
+Properties and preferences are two common ways of storing user settings, such as the user language, or the theme...
 
 #### Preferences
 
@@ -1429,7 +1429,7 @@ final Preferences preferences = Preferences.userNodeForPackage(XXX.class);
 final Preferences preferences = Preferences.userNodeForPackage(getClass());
 ```
 
-Preferences are dictionaries of key-values.
+Preferences are dictionaries of key values.
 
 ```java
 preferences.put("key", "value");                 // save
@@ -1517,7 +1517,7 @@ To properly handle user input, we usually use `PreparedStatement`.
 
 ```java
 PreparedStatement stmt = c.prepareStatement("... where x=?");
-// replace the nth "?" by a properly espacted value
+// replace the nth "?" with a properly escaped value
 // indexes start at 1
 stmt.setInt(index, value);
 stmt.setString(index, value);
@@ -1554,7 +1554,7 @@ try(ResultSet generatedKeys = stmt.getGeneratedKeys()) {
 
 <div class="row row-cols-md-2"><div>
 
-Modules were introduced in Java 9. They encapsulate projects and require developers to explicitly import SDK packages in their projects. Create a `module-info.java`, with a unique module name:
+Modules were introduced in Java 9. They encapsulate projects and require developers to explicitly import SDK packages into their projects. Create a `module-info.java`, with a unique module name:
 
 ```java
 module com.example.project {
@@ -1638,7 +1638,7 @@ task makeJar(type: Jar) {
 
 #### Assertions
 
-Assertions can be used for [testing](/tools-and-frameworks/others/testing/methodology/index.md), for since they are not enabled by default, there are almost never used. Run `java` with `-ea` or `-enableassertions` to see assertions. See also: `-da:package`.
+Assertions can be used for [testing](/tools-and-frameworks/others/testing/methodology/index.md), for since they are not enabled by default, they are rarely used. Run `java` with `-ea` or `-enableassertions` to see assertions. See also: `-da:package`.
 
 ```java
 assert(condition);              // raises "AssertionError"
@@ -1656,8 +1656,8 @@ JPackage <small>(JDK 14+)</small> was introduced to package Java applications <s
 # "out/dist" will have the .exe
 $ jpackage --name eden --type exe --input out --dest "out\dist" --main-jar "xxx.jar" --icon "path\to\icon.ico" --vendor "XXX" --app-version "X.Y.Z" --description "xxx"
 # Useful options:
-#   --win-shortcut  | create a shortcut
-#   --win-menu      | add in menu
+#   --win-shortcut  | create a shortcut on the desktop
+#   --win-menu      | add in Windows menu
 #   --runtime-image | path to bundled jre
 #   --java-options  | options, such as "-Dfile.encoding=UTF-8"
 ```
