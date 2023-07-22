@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-Many [DBMS](../_knowledge/index.md) have their own **procedural languages** which extends SQL and allow us to write procedural code <small>(if statement, loops...)</small> that can be executed within the database.
+Many [DBMS](../_knowledge/index.md) have their own **procedural languages** which extend SQL and allow us to write procedural code <small>(if statement, loops...)</small> that can be executed within the database.
 
 * 💵 Oracle: **PL/SQL** (Procedural Language for SQL)
 * 🍰 PostgreSQL: **PL/pgSQL** (similar to PL/SQL)
@@ -42,7 +42,7 @@ END;
 /
 ```
 
-In oracle, raising your own exceptions is done using:
+In Oracle, raising your own exceptions is done using:
 
 ```pgsql
 exception_name EXCEPTION;
@@ -215,7 +215,7 @@ END LOOP;
 Cursors do **not** raise exceptions. Use these:
 
 ```pgsql
-v_cursor%FOUND    -- true if there are still rows, NULL if fetch never called
+v_cursor%FOUND    -- true if there are still rows, NULL if fetch was never called
 v_cursor%NOTFOUND -- true if no more rows, NULL if fetch never called
 v_cursor%ISOPEN   -- true if the cursor is open
 ```
@@ -319,7 +319,7 @@ Result
 
 <div class="row row-cols-md-2"><div>
 
-It's possible to call a `trigger` function when events <small>(insert, update, delete...)</small> occurs. 🔥 Usages: calculate derived fields, archiving...
+It's possible to call a `trigger` function when events <small>(insert, update, delete...)</small> occur. 🔥 Usages: calculate derived fields, archiving...
 
 ```pgsql
 CREATE TRIGGER trigger_name
@@ -339,7 +339,7 @@ BEFORE /* or AFTER */ some_event ON some_table
 * Use `WHEN` to add another condition to execute the trigger
 </div><div>
 
-The code executed by the trigger has access to two pseudorecords: **NEW** and **OLD**. The code returns `RETURN NEW` by default <small>(type=TRIGGER)</small>.
+The code executed by the trigger has access to two pseudo records: **NEW** and **OLD**. The code returns `RETURN NEW` by default <small>(type=TRIGGER)</small>.
 
 ✍️ Returning `NULL` cancels INSERT/UPDATE/DELETE.
 

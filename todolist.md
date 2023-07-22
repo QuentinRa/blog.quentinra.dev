@@ -14,7 +14,6 @@ List of courses that have note which were not added yet.
 
 **Programming Languages > Databases**
 
-* PLSQL
 * Relational modeling
 
 **Programming Languages > Others**
