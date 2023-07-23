@@ -70,7 +70,7 @@ You can open a CMD/PowerShell in a folder by using <kbd>SHIFT+Right-click</kbd> 
 
 [![windowsfundamentals2x0x](../../../cybersecurity/_badges/thm/windowsfundamentals2x0x.svg)](https://tryhackme.com/room/windowsfundamentals2x0x)
 
-If you don't use PowerShell, which is Linux friendly so most Unix commands are available, here are some commands that you will most likely use. See [comparison of cmdlets with similar commands](https://en.wikipedia.org/wiki/PowerShell#Comparison_of_cmdlets_with_similar_commands). If you need help, use `command /?`, `help command`, `command /help`...
+If you don't use PowerShell, which is Linux friendly so most Unix commands are available, here are some commands that you will most likely use. See the [comparison of cmdlets with similar commands](https://en.wikipedia.org/wiki/PowerShell#Comparison_of_cmdlets_with_similar_commands). If you need help, use `command /?`, `help command`, `command /help`...
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -107,7 +107,7 @@ If you don't use PowerShell, which is Linux friendly so most Unix commands are a
 
 **Users** 🧑
 
-* `NT AUTHORITY\SYSTEM`: a built-in account used by the system to do internal tasks. It has the highest level of permissions.
+* `NT AUTHORITY\SYSTEM`: a built-in account used by the system to do internal tasks. It has the highest level of permission.
 * `LocalSystem`: another built-in account, but with less privilege than SYSTEM and still more than Administrator.
 * `Administrator`: admin account to manage users, apps, groups, and system-wide settings...
 * `Standard User`: can use apps, can access their files...
@@ -147,7 +147,7 @@ CMD> icacls xxx /grant username:F
 
 <div class="row row-cols-md-2"><div>
 
-Modern versions of Windows are using the New Technology File System (**NTFS**). Before, FAT16/32, and HPFS were used. FAT is still used for stuff like USB keys. NTFS is a file system that can repair itself in case of failure, using logs. It's known as a journaling file system.
+Modern versions of Windows use the New Technology File System (**NTFS**). Before, FAT16/32, and HPFS were used. FAT is still used for things like USB keys. NTFS is a file system that can repair itself in the event of failure, using logs. It's known as a journaling file system.
 
 **Case-insensitive and separator** 🏝️
 
@@ -162,7 +162,7 @@ CMD> cd \Users\xxx
 
 </div><div>
 
-I'm using below Unix Paths, because it's easier to write. See environment variables for the path, if it was changed.
+I'm using the below Unix paths because they're easier to write. Some paths may have changed, refer to environment variables.
 
 * 🪵 **root**: `/`, which is usually `c:\ `
 * 🌳 **Windows root**: usually `/Windows`
@@ -173,7 +173,7 @@ I'm using below Unix Paths, because it's easier to write. See environment variab
 * 📂 **Installed programs**
   * `"/Program Files/"`
   * `"/Program Files (x86)/"`
-  * `%appdata%`: usually used to install app without administrator privilege <small>(locally installed)</small>, or to store application data.
+  * `%appdata%`: usually used to install apps without administrator privileges <small>(locally installed)</small>, or to store application data.
 </div></div>
 
 <hr class="sep-both">
@@ -220,7 +220,7 @@ Environment variables are
 
 <div class="row row-cols-md-2"><div>
 
-Windows tools can be opened using "execute" (Win  ➕ R) or in a CMD/PowerShell. Extensions that you may see are such as ".exe", or ".msc" optional (see `PATHEXT`). Two well-known tools are:
+Windows tools can be opened using "execute" (Win  ➕ R) or in a CMD/PowerShell. Extensions that you may see, such as ".exe", or ".msc", are optional (see `PATHEXT`). Two well-known tools are:
 
 **Task Manager** (`taskmgr`) 🕰️
 
@@ -231,7 +231,7 @@ Windows tools can be opened using "execute" (Win  ➕ R) or in a CMD/PowerShell.
 **Control panel** (`control.exe`) 🧑‍🍳
 
 * This is the entry point to most settings
-* In the top-right corner, it's possible to switch to another view <small>(ex: small icons)</small>, in which you may discover menus that you (most likely) never opened before, but may but useful one way or another.
+* In the top-right corner, it's possible to switch to another view <small>(ex: small icons)</small>, in which you may discover menus that you (most likely) never opened before, but may be useful in one way or another.
 
 
 ##### lusrmgr.msc
@@ -265,11 +265,11 @@ Windows tools can be opened using "execute" (Win  ➕ R) or in a CMD/PowerShell.
 
 ##### compmgmt.msc
 
-**Usage** 🗺️: many tools to manage the system such as  shares, running tasks, listing events ([doc](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types), monitoring performance (`perfmon`/`resmon`), or even manage device hardware/services.
+**Usage** 🗺️: many tools to manage the system such as shares, running tasks, listing events ([doc](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types), monitoring performance (`perfmon`/`resmon`), or even managing device hardware/services.
 
 ##### regedt32.exe/regedit.exe
 
-**Usage** 🗺️ ([doc](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)): view and edit the system registry. This a database used to store information needed to configure the system for users/applications/devices <small>(ports in use, applications...)</small>.
+**Usage** 🗺️ ([doc](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)): view and edit the system registry. This is a database used to store information needed to configure the system for users/applications/devices <small>(ports in use, applications...)</small>.
 </div></div>
 
 <hr class="sep-both">
@@ -280,7 +280,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* Daemons (linux) are called services on Windows
+* Daemons (Linux) are called services on Windows
 * Hyper-v
 * [wmic](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wmic): a deprecated console since Windows 10 21H1
 

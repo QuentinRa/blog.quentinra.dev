@@ -18,10 +18,10 @@ PS> Update-Help # if help was empty, update it first
 
 👉 You can list every cmdlet with `Get-Command` (`gcm`).
 
-👉 Many cmdlets have an alias to a Linux command. For instance, `help` is an alias of `Get-Help`. [Refer to Wikipedia comparison](https://en.wikipedia.org/wiki/PowerShell#Comparison_of_cmdlets_with_similar_commands).
+👉 Many cmdlets have an alias for a Linux command. For instance, `help` is an alias of `Get-Help`. [Refer to Wikipedia comparison](https://en.wikipedia.org/wiki/PowerShell#Comparison_of_cmdlets_with_similar_commands).
 </div><div>
 
-Powershell cmdlets output is an **object**, unlike other shell languages which output a text. It means that we can access a specific column (**property**) or calling a **method** on it, without having to call a command such as `grep`/`cut`/... as we would on Linux. 🚀
+Powershell cmdlets output an **object**, unlike other shell languages, which output plaintext. It means that we can access a specific column (**property**) or call a **method** on it without having to call a command such as `grep`/`cut`/... as we would on Linux. 🚀
 
 ```ps
 PS> Get-Help | Get-Member
@@ -141,7 +141,7 @@ PS> Get-Content -Path file.txt
 
 <div class="row row-cols-md-2"><div>
 
-**Usage** 🐚: create an object; can be used to create a object will less properties from another object.
+**Usage** 🐚: create an object; can be used to create an object with fewer properties than another object.
 
 **Alias** 💎: `N/A`
 
