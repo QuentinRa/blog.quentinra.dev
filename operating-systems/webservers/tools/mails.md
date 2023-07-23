@@ -36,3 +36,18 @@ $ sudo systemctl restart postfix
 ```
 </div><div>
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* DMarc
+* SPF ([SPF](https://www.digitalocean.com/community/tutorials/how-to-use-an-spf-record-to-prevent-spoofing-improve-e-mail-reliability))
+* DKim ([DKIM with postfix](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-dkim-with-postfix-on-debian-wheezy))
+* [mail-tester.com](https://www.mail-tester.com/) <small>(wait XXX hours for DNS records changes)</small>
+</div><div>
+</div></div>
