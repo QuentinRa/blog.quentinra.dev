@@ -4,7 +4,7 @@
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-Active directory is a centralized database of every network resources:
+Active Directory is a centralized database of every network resource:
 
 * 🖥️ Computers, Servers, Printers
 * 🧑‍🍼️ Users and Groups
@@ -18,25 +18,25 @@ It provides services to manage and authenticate these resources. It's a centrali
 ➡️ LDAP is a protocol used to communicate with Active Directory.
 </div><div>
 
-**Active Directory Domain Services (ADDS)** is the main service that system admins will interact with. 📌 Because of that, Active directory and ADDS are often used interchangeably.
+**Active Directory Domain Services (ADDS)** is the main service that system admins will interact with. 📌 Because of that, Active Directory and ADDS are often used interchangeably.
 
-It's widely used to manage organisation/schools/... They can configure for each user, or groups of users
+It's widely used to manage organizations/schools/... They can configure for each user or group of users:
 
 * 🎯 What files/folders/shared they can access
 * 🏡 Which application they can launch
 * ...
 * 🌿 Basically, their permissions over every resource
 
-🎉 For users, it's convenient, as they log in once, and from any machine over the network and access their files/...
+🎉 For users, it's convenient, as they log in once, from any machine over the network, and they can access their files/...
 </div></div>
 
 <hr class="sep-both">
 
-## Forest and domains
+## Forests and domains
 
 <div class="row row-cols-md-2"><div>
 
-A **schema** 🪨 is a definition on an entity, such as a user. It defines its attributes such as `"Firstname"`, `"Lastname"`... A schema can be extended, meaning, we can add new attributes.
+A **schema** 🪨 is a definition of an entity, such as a user. It defines its attributes such as `"Firstname"`, `"Lastname"`... A schema can be extended, meaning, we can add new attributes.
 
 An **Object** 💰 is a concrete instance of a schema. For instance, the user "John Doe", the computer "PC-B2006-06", or the printer XXX...
 
@@ -47,11 +47,11 @@ A **domain** 🧵 is a logical group of objects... For instance, the domains `ex
 
 There is at least one **Domain controller** 👑 (DC) on each domain. It's used to manage objects on the domain. They all have their own database to store information about their objects.
 
-A **site** 🏘️ is a group of objects that are physically located in the same place, such as a branch office. We usually have one DC per site, which can mean multiple DC for one domain. The DC is **replicated**, and this allows faster response time, and reduce network traffic.
+A **site** 🏘️ is a group of objects that are physically located in the same place, such as a branch office. We usually have one DC per site, which can mean multiple DC for one domain. The DC is **replicated**, and this allows faster response time and reduces network traffic.
 
-A **forest** 🌴  is a collection of one or more domain trees. They share a common schema, along configurations, and global catalogs.
+A **forest** 🌴  is a collection of one or more domain trees. They share a common schema, along with configurations, and global catalogs.
 
-A **global catalog** 📰 stores a copy of the most used attributes of every object, allowing us to search for object across the whole forest.
+A **global catalog** 📰 stores a copy of the most used attributes of every object, allowing us to search for objects across the whole forest.
 </div></div>
 
 <hr class="sep-both">
@@ -94,7 +94,7 @@ Before installing ADDS, you should:
 <details class="details-n">
 <summary>Set your DC name</summary>
 
-👉 This is optional too. The DC name can be used to referencing in commands. For instance, you will be able to use the name instead of the IP address.
+👉 This is optional too. The DC name can be used to reference commands. For instance, you will be able to use the name instead of the IP address.
 
 * Click on "Local Server"
 * Click on your computer name (in blue)
@@ -103,7 +103,7 @@ Before installing ADDS, you should:
 * Restart
 </details>
 
-Then, you can process with the installation:
+Then, you can start the installation:
 
 <details class="details-n">
 <summary>Installation ADDS</summary>
@@ -135,7 +135,7 @@ Then, you can process with the installation:
 <details class="details-n">
 <summary>Installation and configuration of DHCP</summary>
 
-One of the first thing you may do is to configure the DHCP server. When computers will connect to active directory, they will be assigned an IP. You can define here the rules to assign IPs. 🌍
+One of the first things you may do is configure the DHCP server. When computers will connect to Active Directory, they will be assigned an IP. You can define here the rules to assign IPs. 🌍
 
 * Start the **Server Manager**
 * Click on "Add roles and features"
@@ -149,7 +149,7 @@ Configure your DHCP server
 * IPV4 > New Scope
   * Name: Lan1
   * Select a range of addresses
-  * You can prevent person from taking some addresses
+  * You can prevent machines from taking some addresses
   * Select a lock duration <small>(ex: 1 day)</small>
 * We can reserve an IP address for a specific MAC address
 * You can see attributed IPs in "Address leases"
@@ -162,7 +162,7 @@ Configure your DHCP server
 
 ## Manage users and computers
 
-*From the users and computers tool, you can right-click on your domain, then "change domain" to manager a subdomain.*
+*From the users and computers tool, you can right-click on your domain, then "change domain" to manage a subdomain.*
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -170,11 +170,11 @@ We use **Organizational Units (OUs)** 📂 to sort the great number of objects w
 
 They are basically folders. You could have one OU per 
 
-* 🌍 **site**: Paris, New-York, Montreal...
+* 🌍 **site**: Paris, New York, Montreal...
 * 🏢 **business unit**: Direction, Marketing, IT...
 * ...
 
-🔥 For instance, inside an OU called Paris, you could have OUs for each business unit. You could also do it the other way around too.
+🔥 For instance, inside an OU called Paris, you could have OUs for each business unit. You could also do it the other way around.
 
 <details class="details-n">
 <summary>📂 Create an OU</summary>
@@ -207,7 +207,7 @@ They are basically folders. You could have one OU per
 * Go to Tools > Active Directory Users and Computers
 * Right-click on your domain
 * New > User
-* You must at least fill the "Full name" and the "logon" fields
+* You must at least fill in the "Full name" and the "logon" fields
 * Add a password that matches your password policy
 </details>
 
@@ -222,7 +222,7 @@ They are basically folders. You could have one OU per
 ➡️ The local computer account that will be created cannot be used by users. The username is `PC_NAME_HERE$` and the password is a randomly generated string of 120 characters.
 </details>
 
-Once the workstation was added to active directory, you will be able to connect to users account created in active directory. To connect to a specific domain, use `domain\username` such as `example.com\username`.
+Once the workstation was added to Active Directory, you will be able to connect to any enabled accounts. To connect to a specific domain, use `domain\username` such as `example.com\username`.
 
 👉 You can also use `username@domain` or the NetBios name instead of the domain giving us "`example\username`" <small>(set during the ADDS setup)</small>.
 
@@ -240,7 +240,7 @@ It's a good practice to create a local administrator account in case there are i
 7. Click on "Change account type"
 8. Select "Administrator"
 
-➡️ If you're not connected to internet, you can skip 4 and 5.
+➡️ If you're not connected to the internet, you can skip 4 and 5.
 </details>
 
 To log in to a local account, use `.\username`.
@@ -254,7 +254,7 @@ To log in to a local account, use `.\username`.
 
 We usually don't apply permissions on a user, as it is not scalable. Instead, we create groups or apply permissions to OUs.
 
-A **Security Group** 🪅 is a logical group made to grant or deny access to resources for users that are part of this group. A user can be in multiple groups. There are some builtin ones:
+A **Security Group** 🪅 is a logical group made to grant or deny access to resources for users that are part of this group. A user can be in multiple groups. There are some built-in ones:
 
 * `Domain Users`: every user on the domain
 * `Authenticated Users`: every authenticated user on the domain
@@ -280,7 +280,7 @@ To add members, either
 
 You can delegate the control over an OU to a user, or preferably a group of users. They will be able to do administrative tasks such as:
 
-* 🧑 create, manage, delete user accounts
+* 🧑 create, manage, and delete user accounts
 * 🔑 reset user passwords <small>(ex: helpdesk)</small>
 * ...
 
@@ -299,7 +299,7 @@ A **Group Policy Objects (GPO)** 🦈 is a policy applied on some objects <small
 <details class="details-n">
 <summary>✍️ Link a GPO</summary>
 
-Linking a GPO mean associating the GPO with an object. Simply drag-and-drop the GPO on
+Linking a GPO means associating the GPO with an object. Simply drag and drop the GPO on
 
 * an OU
 * a domain
@@ -376,7 +376,7 @@ There, you can enable history, set password length and age <small>(ex: 6 months)
 
 #### Mount a network drive 📂
 
-A network drive is a drive on the server, that can be accessed from any workstation. For employees, they won't use the local folders such as "My documents", but these drives instead. For sysadmins, it means that they only have to backup these drives.
+A network drive is a drive on the server, that can be accessed from any workstation. For employees, they won't use the local folders such as "My documents", but these drives instead. For sysadmins, it means that they only have to back up these drives.
 
 ⛏️ The first thing you may have to do is to create a new hard drive, that will be shared over the network. Let's call it `E:`.
 
@@ -408,7 +408,7 @@ Once created, you can either share the drive or only a folder.
 
 #### Auto-mounting 🚀
 
-Instead of writing the path to a folder each time, sysadmin create a fake hard drive, such as `F:` which will point to a network folder.
+Instead of writing the path to a folder each time, sysadmins create a fake hard drive, such as `F:` which will point to a network folder.
 
 You can do it by creating a GPO. For instance, if you shared a drive called `Data` with a folder `Marketing`, you may configure a GPO so that employees of the marketing unit have a hard drive `M:` pointing to it.
 
@@ -449,14 +449,14 @@ To create home folders, you need a network drive. Inside, you could create an em
 <summary>Define each user home folder</summary>
 
 * Go to Tools > Active Directory Users and Computers
-* Select every user needing an home folder
+* Select every user needing a home folder
 * Right-click on one
 * Go to profile
 * Enter the path `\\ServerName\\SomeFolder\\%username%`, for instance, `\\SerName\\E\\HOME\\%username%`. Note that `%username%` will be replaced by each user username.
 * Save and exit
 </details>
 
-You can go back in the `HOME` folder, and see a folder for each user.
+You can go back to the `HOME` folder, and see a folder for each user.
 
 </div></div>
 
@@ -483,7 +483,7 @@ To configure permissions for a folder 🔐
 * Add or remove Security Groups, OUs, or Users.
 * You can also define the permissions for each group.
 
-➡️ With scalability in mind, we usually allow access to security group or OUs, instead of users.
+➡️ With scalability in mind, we usually allow access to security groups or OUs, instead of users.
 </div></div>
 
 <hr class="sep-both">
@@ -492,18 +492,18 @@ To configure permissions for a folder 🔐
 
 <div class="row row-cols-md-2"><div>
 
-A **trust** 👪 is a relationship between two domains or forest, defining whether each one can access objects of the other.
+A **trust** 👪 is a relationship between two domains or forests, defining whether each one can access objects of the other.
 
-In a forest, all domains are implicitly trusted by each other. But, forests are not trusting other forest.
+In a forest, each domain implicitly trusts every other. But, forests are not trusting other forests.
 
 There are several types of trusts:
 
-* **One-way trusts** ➡️: given a one-way trust from B to A, B is able to access object from A, but not the other way around.
+* **One-way trusts** ➡️: given a one-way trust from B to A, B is able to access objects from A, but not the other way around.
 
 * **Two-way trusts** 🔁: two one-way trust <small>(from B to A, and from A to B.)</small>
 </div><div>
 
-There are other kind of trusts:
+There are other kinds of trusts:
 
 * External trust
 * Forest trust
