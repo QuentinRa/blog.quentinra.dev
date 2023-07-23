@@ -30,7 +30,7 @@ While systems typically offer types such as `boolean`, `integer`, `float`, and `
 * **word**: width of a register. 16, 32, or 64 bits <small>(modern computers)</small>.
 * **dword** (double word): usually 32 or 64 bits
 
-Refer to the [Encoding | Binary](/programming-languages/others/encoding/index.md#radix-2---) to learn more how numbers are represented using 0 and 1.
+Refer to the [Encoding | Binary](/programming-languages/others/encoding/index.md#radix-2---) to learn more about how numbers are represented using 0 and 1.
 
 <br>
 
@@ -53,9 +53,9 @@ Numbers are stored and read according to the endianness of the machine. For inst
 * **Big endian**: we will store/read $1$ then $0$
 * **Little endian**: we will store/read $0$ then $1$
 
-The same number could have two different value according to the endianness of the one that stored it, and the one that read it.
+The same number could have two different values according to the endianness of the one that stored it, and the one that read it.
 
-👉 This do not include the sign bit whose position is fixed.
+👉 This does not include the sign bit whose position is fixed.
 
 <br>
 
@@ -68,7 +68,7 @@ The only operation possible is the addition. `a-b` is handled as `a+(-b)`.
 <details class="details-n">
 <summary>Two's complement - negative numbers</summary>
 
-The two's complement is an "upgrade" to the One's complement, which has the default of having two representation for the number zero. It's as simple as that:
+The two's complement is an "upgrade" to the One's complement, which has the default of having two representations for the number zero. It's as simple as that:
 
 * Invert all bits
 * Add 1
@@ -97,7 +97,7 @@ To add 5 (101) to 5 (101), you need to do like you would have in grad school, wi
 
 <p></p>
 
-* 🔥 [**Overflow**](https://en.wikipedia.org/wiki/Integer_overflow): an overflow occur when the result of a calculation is outside the range of values that can be stored with our number of bits. An overflow is without consequences if the result is valid.
+* 🔥 [**Overflow**](https://en.wikipedia.org/wiki/Integer_overflow): an overflow occurs when the result of a calculation is outside the range of values that can be stored with our number of bits. An overflow is without consequences if the result is valid.
 </div></div>
 
 <hr class="sep-both">
@@ -110,7 +110,7 @@ A floating-point number can be identified by the **decimal point** <small>(a.k.a
 
 #### Fractional part
 
-Similarly to the scientific notation $x * 10^n$ in decimal, a computer represent a fraction part a $y * 2^m$.
+Similarly to the scientific notation $x * 10^n$ in decimal, a computer represents a fraction part a $y * 2^m$.
 
 ➡️ Not every number can be written using scientific notation
 
@@ -132,11 +132,11 @@ Giving us: $.75=(.11)\_2$.
 
 #### Binary Coded Decimal (BCD)
 
-Binary Coded Decimal, a.k.a. Decimal Coded Binary (DCB), is used to store a fixed length floating-point number. It's not used aside from in financial institution or when we need to store a monetary values, as there is **no loss of precision**, but they take more space.
+Binary Coded Decimal, a.k.a. Decimal Coded Binary (DCB), is used to store a fixed-length floating-point number. It's not used aside from in financial institutions or when we need to store monetary values, as there is **no loss of precision**, but they take more space.
 
-Each value is store on 4 bits. For the fractional part, we use the method above.
+Each value is stored on 4 bits. For the fractional part, we use the method above.
 
-In database, we often we use the type: `decimal(n,m)`. It means `n` digits, and `m` fractional part numbers.
+In databases, we often use the type: `decimal(n,m)`. It means `n` digits, and `m` fractional part numbers.
 
 ➡️ In Packed BCD, we convert each block to hexadecimal, which is more space-efficient, but less usage-efficient <small>(need to unpack...)</small>.
 </div><div>
@@ -201,7 +201,7 @@ To find back numerical value, evaluate $(-1)^S * 1.M * 2^{E - q}$.
 
 A string is an array of characters, such as `'a'`.  A string could have a fixed length, or a variable length. For the latter, we may use a null character such as `\0` to mark the end.
 
-A character is encoded to a number following a charset, as we can only store integers. Some charset are ASCII, UTF...
+A character is encoded to a number following a charset, as we can only store integers. Some charsets are ASCII, UTF...
 
 **ASCII table (7 bits)**
 
@@ -209,12 +209,12 @@ The ASCII table is the most well-known table. `'a'` in ASCII is the number `97`.
 
 **Extended ASCII table (8 bits)**
 
-This is an extension of the ASCII table adding 128 characters. The set of character is NOT fixed. For instance, the character `130` can be a different character according to how the extended table is defined.
+This is an extension of the ASCII table adding 128 characters. It is NOT fixed. It means that given a character such as `130`, there is no warranty that all extended tables will have the same character for it.
 </div><div>
 
 **Unicode (UTF)**
 
-UFT-8 and other variants are mainly used in international applications. UTF-8 characters are stored on 4 bytes.
+UFT-8 and other variants are mainly used in international applications. UTF-8 characters are stored in 4 bytes.
 
 <br>
 
@@ -237,8 +237,7 @@ This is a set of rules defining how characters are ordered, compared, how the ca
 
 #### Null value
 
-There is usually a null value to indicate that something exist, but is empty. In most languages, it's `NULL` or `null`.
-
+There is usually a null value to indicate that something exists but is empty. In most languages, it's `NULL` or `null`.
 
 <br>
 
@@ -259,7 +258,7 @@ There may be a value to indicate that a value is not a number. For instance, `1/
 
 #### Dates
 
-Most dates are a number of seconds/milliseconds since a starting point/epoch. In many languages/system, it is the **1st of January 1970**.
+Most dates are a number of seconds/milliseconds since a starting point/epoch. In many languages/systems, it is the **1st of January 1970**.
 
 In some applications/systems, the number may be a number of days. To represent the time, We add a fraction of the day to the number of days. For instance, `12 h = 1/2`, so the day of epoch (`0`) at 12 h (`.5`) would be `0.5`.
 </div></div>
@@ -281,5 +280,5 @@ Stuff that I found, but never read/used yet.
 
 * Little Man Computer (LMC)
 * Each app has its memory space and others can't access it
-* Hypervisor: software to run VMs. Virtually sharing memory and processing resources. Isoled from OS.
+* Hypervisor: software to run VMs. Virtually sharing memory and processing resources. Isolated from OS.
 </div></div>
