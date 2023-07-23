@@ -1,15 +1,15 @@
-# Apache2 webserver
+# Apache2 web server
 
 <div class="row row-cols-md-2"><div>
 
-**Apache** is a thread-per-request server, which is steadily being replaced by event-driven servers such as Nginx or Node.js.
+**Apache** is a thread-per-request server, that is steadily being replaced by event-driven servers such as Nginx or Node.js.
 
 ```ps
 $ sudo apt install apache2
 ```
 </div><div>
 
-👉 You may use an emulator instead of directly installing apache
+👉 You may use an emulator instead of directly installing Apache
 
 * WAMP server <small>(Windows Apache MySQL PHP)</small> | [Notes](wamp.md) 🚀
 * LAMP server <small>(Linux Apache MySQL PHP)</small>
@@ -60,7 +60,7 @@ $ sudo apache2ctl configtest
 ```
 </div><div>
 
-When installing a PHP module, you can enable its configuration, and the specific functions of the module using apache without having to edit each `php.ini`.
+When installing a PHP module, you can enable its configuration, and the specific functions of the module using Apache without having to edit each `php.ini`.
 
 ```shell!
 $ sudo apt install php-mbstring
@@ -77,7 +77,7 @@ $ sudo a2enmod ssl
 $ sudo a2enmod rewrite
 ```
 
-Create a folder `xxx` for a website, in `/var/www/` <small>(usual folder than www-data can read/edit)</small> for a non-root user `yyy`.
+Create a folder `xxx` for a website, in `/var/www/` <small>(usual folder that www-data can read/edit)</small> for a non-root user `yyy`.
 
 ```shell!
 $ sudo mkdir -p /var/www/xxx/
@@ -85,7 +85,7 @@ $ sudo chown -R yyy:yyy /var/www/xxx/
 $ sudo chmod -R 755 /var/www/xxx/
 ```
 
-Sometimes, you may have permissions problems. You need to investigate the problem, but one way to fix it is to give `www-data` the ownership over a directory <small>(allowing they to create/edit files)</small>.
+Sometimes, you may have permission problems. You need to investigate the problem, but one way to fix it is to give `www-data` the ownership over a directory <small>(allowing them to create/edit files)</small>.
 
 ```shell!
 $ sudo chown -R www-data:www-data folder/
@@ -100,7 +100,7 @@ $ sudo chown -R www-data:www-data folder/
 
 See also [http2.pro](https://http2.pro/doc/Apache).
 
-First, you must indicate that your server supports HTTP2, or HTTP1.1 as fallback. You must add this in your virtual hosts `.conf`.
+First, you must indicate that your server supports HTTP2, or HTTP1.1 as a fallback. You must add this to your virtual hosts `.conf`.
 
 ```apacheconf
 Protocols h2 http/1.1
@@ -112,7 +112,7 @@ $ sudo systemctl start apache2 # ❌ don't
 ```
 </div><div>
 
-If you tried to start the server, you will see an error in `error.log`.
+If you try to start the server, you will see an error in `error.log`.
 
 ```shell!
 $ sudo systemctl stop apache2
@@ -134,7 +134,7 @@ $ sudo systemctl start apache2
 
 This is a file used to edit the virtual host configuration locally. Simply create a file `.htaccess` with some instructions inside.
 
-A `.htaccess` is applied to a directory and it's subdirectories. Every `.htaccess` in the path to the resource will be loaded. ➡️ In case of conflit, the nearest (latest) instruction is used.
+A `.htaccess` is applied to a directory and its subdirectories. Every `.htaccess` in the path to the resource will be loaded. ➡️ In cases of conflict, the nearest (latest) instruction is used.
 
 ➡️ See [htaccess cheatsheet](https://htaccesscheatsheet.com/).
 
@@ -177,9 +177,9 @@ allow from 127.0.0.1
 
 <br>
 
-#### Example: ask for basic authentication
+#### Example: prompt for basic authentication
 
-The server will ask for a username, and a password.
+The server shows a popup asking for a username, and a password.
 
 ```apacheconf
 AuthUserFile /path/to/some/.htpasswd
@@ -223,7 +223,7 @@ SSLProtocol -all +TLSv1.3 +TLSv1.2
 
 ```apacheconf
 # edit /etc/apache2/sites-available/some_config.conf
-# add, at the end, either 1) 2), 3) or sometime else
+# append either 1) 2), 3) or sometime else
 # don't forget to restart when you're done
 # sudo service apache2 restart
 SSLCipherSuite SOME_ALGS_HERE
