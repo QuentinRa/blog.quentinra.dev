@@ -9,7 +9,7 @@ WAMP server is a Windows server running Apache, MySQL/MariaDB, and PHP.
 
 </div><div>
 
-Once installed, and started, you will this icon in the system trail.
+Once installed, and started, you will see this icon in the system tray.
 
 <div class="text-center">
 
@@ -36,9 +36,9 @@ Both MySQL and MariaDB are available, you can swap between them.
 
 #### Swap to MariaDB
 
-If you're tired to swap between both, you can disable one.
+If you're tired of swapping between both, you can disable one.
 
-* Right-click on Wamp Icon
+* Right-click on the wamp icon
 * Settings
 * Disabled MySQL
 * Enable MariaDB
@@ -55,7 +55,7 @@ You can [download PostgreSQL here](https://www.enterprisedb.com/downloads/postgr
 
 You can create a fake domain associated with a project on your machine.
 
-* Left-click on Wamp Icon
+* Left-click on the wamp icon
 * Virtual hosts
 * Write any domain you want, and enter your project folder path
 * Restart Wamp
@@ -76,5 +76,5 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * Add PHP modules
-* Change PHP version
+* Change the PHP version
 </div></div>
