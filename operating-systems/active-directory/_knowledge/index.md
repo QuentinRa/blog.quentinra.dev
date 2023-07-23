@@ -47,7 +47,7 @@ A **domain** 🧵 is a logical group of objects... For instance, the domains `ex
 
 There is at least one **Domain controller** 👑 (DC) on each domain. It's used to manage objects on the domain. They all have their own database to store information about their objects.
 
-A **site** 🏘️ is a group of objects that are physically located in the same place, such as a branch office. We usually have one DC per site, which can mean multiple DC for one domain. The DC is **replicated**, and this allows faster response time and reduces network traffic.
+A **site** 🏘️ is a group of objects that are physically located in the same place, such as a branch office. We usually have one DC per site, which can mean multiple DCs for one domain. The DC is **replicated**, which allows for faster response times and reduces network traffic.
 
 A **forest** 🌴  is a collection of one or more domain trees. They share a common schema, along with configurations, and global catalogs.
 
@@ -135,7 +135,7 @@ Then, you can start the installation:
 <details class="details-n">
 <summary>Installation and configuration of DHCP</summary>
 
-One of the first things you may do is configure the DHCP server. When computers will connect to Active Directory, they will be assigned an IP. You can define here the rules to assign IPs. 🌍
+One of the first things you may do is configure the DHCP server. When computers connect to Active Directory, they will be assigned an IP. You can define here the rules for assigning IPs. 🌍
 
 * Start the **Server Manager**
 * Click on "Add roles and features"
@@ -201,7 +201,7 @@ They are basically folders. You could have one OU per
 </div><div>
 
 <details class="details-n">
-<summary>Add an user</summary>
+<summary>Add a user</summary>
 
 * Start the **Server Manager**
 * Go to Tools > Active Directory Users and Computers
@@ -222,7 +222,7 @@ They are basically folders. You could have one OU per
 ➡️ The local computer account that will be created cannot be used by users. The username is `PC_NAME_HERE$` and the password is a randomly generated string of 120 characters.
 </details>
 
-Once the workstation was added to Active Directory, you will be able to connect to any enabled accounts. To connect to a specific domain, use `domain\username` such as `example.com\username`.
+Once the workstation is added to Active Directory, you will be able to connect to any enabled accounts. To connect to a specific domain, use `domain\username` such as `example.com\username`.
 
 👉 You can also use `username@domain` or the NetBios name instead of the domain giving us "`example\username`" <small>(set during the ADDS setup)</small>.
 
