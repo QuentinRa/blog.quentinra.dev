@@ -7,9 +7,9 @@
 * 🔒 An account inside the Domain Admins group should be used instead of the Administrator account which should be disabled.
 * 🔑 Limit the use of administrative accounts
 * 🗺️ Do not name your server after its function <small>(i.g. SQL_SERVER)</small>
-* 🌍 Do not name workstation after its business unit <small>(i.g. sales-xxx)</small>
+* 🌍 Do not name a workstation after its business unit <small>(i.g. sales-xxx)</small>
 * 🏠 Do not use easy to guess usernames <small>(i.g. firstname.lastname)</small>
-* 🪺 Add the least services on your DC <small>(i.g. no ISS/WSUS...)</small>
+* 🪺 Add the fewest services on your DC <small>(i.g. no ISS/WSUS...)</small>
 </div><div>
 
 * 🏄‍♂️ Install the least ISS modules
@@ -24,9 +24,9 @@
 
 Kerberos is a protocol used to provide secure authentication over non-secure networks. It replaces NetNTLM.
 
-When a user log in, their credential are sent to the Kerberos server for verification. Upon successful login, the server generates a **ticket-granting ticket (TGT)** 🎫.
+When a user logs in, their credentials are sent to the Kerberos server for verification. Upon successful login, the server generates a **ticket-granting ticket (TGT)** 🎫.
 
-When the user wants to access a network resource, such as a shared folder, the computer request the Kerberos server using the TGT, and request for access. If the request is accepted, the Kerberos server will give them a **Ticket Granting Service (TGS)** 🎟️.
+When the user wants to access a network resource, such as a shared folder, the computer requests the Kerberos server using the TGT and requests access. If the request is accepted, the Kerberos server will give them a **Ticket Granting Service (TGS)** 🎟️.
 </div><div>
 </div></div>
 

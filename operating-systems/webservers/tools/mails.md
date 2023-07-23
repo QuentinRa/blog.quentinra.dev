@@ -7,7 +7,7 @@ Configuring a mail server involves two aspects:
 * 📩 Sending mails
 * 📨 Receiving mails
 
-To avoid having our mails being marked as spam, we have to properly configure our mail server and DNS records.
+To avoid having our emails marked as spam, we have to properly configure our mail server and DNS records.
 </div><div>
 
 You can send emails after configuring an [MTA](/operating-systems/networking/protocols/smtp.md) using:
@@ -48,6 +48,6 @@ Stuff that I found, but never read/used yet.
 * DMarc
 * SPF ([SPF](https://www.digitalocean.com/community/tutorials/how-to-use-an-spf-record-to-prevent-spoofing-improve-e-mail-reliability))
 * DKim ([DKIM with postfix](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-dkim-with-postfix-on-debian-wheezy))
-* [mail-tester.com](https://www.mail-tester.com/) <small>(wait XXX hours for DNS records changes)</small>
+* [mail-tester.com](https://www.mail-tester.com/) <small>(wait XXX hours for DNS record changes)</small>
 </div><div>
 </div></div>
