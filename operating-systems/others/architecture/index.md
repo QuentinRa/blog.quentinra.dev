@@ -82,7 +82,7 @@ The two's complement is an "upgrade" to the One's complement, which has the defa
 ![addition](_images/addition.png)
 </div><div class="col-md-9">
 
-To add 5 (101) to 5 (101), you need to do like you would have in grad school, with a carry.
+To add 5 (101) to 5 (101), you need to do it like you would in grad school, with a carry.
 
 * $1+1=0$ with $carry={\color{cyan}1}$
 * $0+0+{\color{cyan}1}=1$ with $carry={\color{red}0}$
@@ -114,14 +114,14 @@ Similarly to the scientific notation $x * 10^n$ in decimal, a computer represent
 
 ➡️ Not every number can be written using scientific notation
 
-* $e(a)$ extract the digits after the radix point of $a$ <small>(ex: 1.11 $\to$ 0.11)</small>
+* $e(a)$ extracts the digits after the radix point of $a$ <small>(ex: 1.11 $\to$ 0.11)</small>
 * $a_i = \text{your_number}$
 * do
     * $a_i = e(a_i) * 2$
     * $r_i = \text{if}\ a_i > 1.0\ \text{then}\ 1\ \text{else}\ 0$
 * while $a_i \neq 1.0$
 
-Then concatenate every $r_i$ to get the floating part representation in binary. For instance, with $.75$
+Then concatenate every $r_i$ to get the floating-point representation in binary. For instance, with $.75$
 
 * $a_0 = 0.75 * 2 = 1.5$
 * $r_0 = 1$
@@ -130,11 +130,11 @@ Then concatenate every $r_i$ to get the floating part representation in binary. 
 
 Giving us: $.75=(.11)\_2$.
 
-#### Binary Coded Decimal (BCD)
+#### Binary-coded Decimal (BCD)
 
-Binary Coded Decimal, a.k.a. Decimal Coded Binary (DCB), is used to store a fixed-length floating-point number. It's not used aside from in financial institutions or when we need to store monetary values, as there is **no loss of precision**, but they take more space.
+Binary-coded decimal, a.k.a. decimal-coded binary (DCB), is used to store a fixed-length floating-point number. It's not used aside from in financial institutions or when we need to store monetary values, as there is **no loss of precision**, but it takes more space.
 
-Each value is stored on 4 bits. For the fractional part, we use the method above.
+Each value is stored in 4 bits. For the fractional part, we use the method above.
 
 In databases, we often use the type: `decimal(n,m)`. It means `n` digits, and `m` fractional part numbers.
 
