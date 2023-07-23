@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-This page try to gather notes related to how systems operate at low-level/near the machine.
+Most programs work and process information the same way.
 
 * 🦆 operating system
 * 🗃️ databases
@@ -10,10 +10,10 @@ This page try to gather notes related to how systems operate at low-level/near t
 * ...
 </div><div>
 
-This includes stuff such as:
+This section gathers fundamental concepts to understand how systems operate at low-level/near the machine:
 
 * 📦 storage (numbers, strings...)
-* 🍎 arithmetic
+* 🍎 arithmetic operations
 * ...
 </div></div>
 
