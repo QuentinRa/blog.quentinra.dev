@@ -14,12 +14,12 @@ Cybersecurity involves securing IT systems against external threats. There are 3
 👉 White hats are also called Ethical hackers.
 </div><div>
 
-IT specialists are usually in one of of the following teams:
+IT specialists are usually in one of the following teams:
 
 * 🟥 [Red team](/cybersecurity/red-team/_knowledge/index.md): offensive team
 * 🟦 [Blue team](/cybersecurity/blue-team/_knowledge/index.md): defensive team
 
-There is also the 🟪 Purple team, which is a mix of both. This a modern team created to facilitate exchange between both teams.
+There is also the 🟪 Purple team, which is a mix of both. This is a modern team created to facilitate exchange between both teams.
 </div></div>
 
 <hr class="sep-both">
@@ -28,7 +28,7 @@ There is also the 🟪 Purple team, which is a mix of both. This a modern team c
 
 <div class="row row-cols-md-2"><div>
 
-This section regroups common terms used in red and blue team.
+This section regroups common terms used in red and blue teams.
 
 * **Vulnerability**/**weakness**: a failure/flaw in a system
 * **Exploits**: code that makes use of a vulnerability to gain access to a machine, install malware, steal data...
@@ -39,12 +39,12 @@ This section regroups common terms used in red and blue team.
 
 Some well-known malware types ([source](https://www.malwarebytes.com/))
 
-* **ransomware** 🔒: lock your system, and ask for a ransom.
-* **adware** 📰: hide, and show ads in the browser, may monitor the user to show relevant ads.
-* **spyware** 🕵️: hide, monitor users, steal credentials...
-* **trojans horse** 🎠: programs that pretend to do something, while actually doing something malicious
+* **ransomware** 🔒: lock your system and ask for a ransom.
+* **adware** 📰: they hide and show ads in the browser. They may monitor the user to show relevant ads.
+* **spyware** 🕵️: they hide, monitor users, and steal credentials...
+* **trojans horse** 🎠: they are programs pretending to do something, while actually preforming some malicious activities
 * **cryptojacking** ⛏️: hide, and mine currencies on your computer
-* **virus** 😎: attached to a program, replicate, and spread
+* **virus** 😎: attached to a program, replicates itself, and spreads
 </div></div>
 
 <hr class="sep-both">
@@ -61,7 +61,7 @@ The first major attack against a country. A Russian group used botnets from 87 c
 
 <tr><td>Stuxnet (2010)<br><b>SCADA</b></td><td>
 
-The first attack targeting SCADA systems. An infected USB key was connected a computer on the internal network. One of the 3 viruses of the "olympic games" along **DuQu**, and **Flame**. Supposedly made by the NSA, and Iran.
+The first attack aimed at SCADA systems. An infected USB key was connected to a computer on the internal network. One of the 3 viruses of the "olympic games" along **DuQu**, and **Flame**. Supposedly made by the NSA and Iran.
 </td></tr>
 
 <tr><td>Mirai botnet (2016)<br><b>DDoS</b></td><td>
@@ -71,7 +71,7 @@ The first attack targeting SCADA systems. An infected USB key was connected a co
 
 <tr><td>WannaCry (2017)<br><b>Ransomware</b></td><td>
 
-Use a vulnerability in Windows. The exploit was created by the NSA and  stolen by hackers in 2013. The NSA notified Microsoft when this virus was released so that they patch it. Used in 2017 by North Korea, infected 200 000 computers. Auto-replicating virus, asking for a ransom. The NSA added a kill switch to the exploit, allowing anyone knowing it to stop the propagation.
+Use a vulnerability in Windows. The exploit was created by the NSA and stolen by hackers in 2013. The NSA notified Microsoft when this virus was released so that they patch it. Used in 2017 by North Korea, infected 200 000 computers. Auto-replicating virus, asking for a ransom. The NSA added a kill switch to the exploit, allowing anyone knowing it to stop the propagation.
 </td></tr>
 
 <tr><td>SolarWinds (2020)<br><b>Supply-chain</b></td><td>
