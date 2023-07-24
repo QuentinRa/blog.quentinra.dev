@@ -22,9 +22,9 @@ Some jobs in the blue team are:
 
 * **Security Architect** 👷‍♂️: plan the security of activities and systems in accordance with the business needs and requirements.
 * **Security Analyst** 📝: analyze and remediate issues. Develop security plans to keep the company safe, and implement them.
-* **Incident responder** 🧑‍🚒: handle and remediate to incidents
+* **Incident responder** 🧑‍🚒: handle and remediate incidents
 * **Digital Forensics** 🔎: investigate attacks and policy violations.
-* **Malware Analyst**/**Reverse-engineer** 💥: analyse/detect malware, statically <small>(read the code)</small>, and dynamically <small>(see what it does)</small>.
+* **Malware Analyst**/**Reverse-engineer** 💥: analyze/detect malware, statically <small>(read the code)</small>, and dynamically <small>(see what it does)</small>.
 * **Security researcher** 🔓: research on Linux, hashing algorithms...
 </div></div>
 
@@ -41,13 +41,13 @@ Some jobs in the blue team are:
 **The security triad (CIA)** is a famous principle used everywhere in security. The opposite is DAD <small>(Disclosure, Alteration, and Destruction)</small>.
 
 * 🔒 **Confidentiality**: only those allowed can access resources
-* 🔎 **Integrity**: only allowed modification can modify resources
+* 🔎 **Integrity**: only allowed modifications can modify resources
 * 📂 **Availability**: resources are available when needed
 
-There is also the French "DICAI" model that extends CIA with
+The French "DICAI" model extends the CIA principle with:
 
 * 🔑 Authentication and Identification: verify the identity of users
-* ⌛ Irrevocability: once performed, cannot be undone
+* ⌛ Irrevocability: once performed, it cannot be undone
 
 See also: [Parkerian Hexad](https://en.wikipedia.org/wiki/Parkerian_Hexad) (6 layers).
 
@@ -105,7 +105,7 @@ Designing the architecture involves multiple aspects:
 
 [![defensivesecurityhq](../../_badges/thm/defensivesecurityhq.svg)](https://tryhackme.com/room/defensivesecurityhq)
 
-Threat intelligence is a process during which a company collects information about potential threats, then prepares against them.
+Threat intelligence is a process during which a company collects information about potential threats and prepares for them.
 
 * **Platforms** ☕: [Cisco Talos Intelligence](https://talosintelligence.com/), [Open Threat Exchange](https://otx.alienvault.com/), [cyware](https://cyware.com/), [pulsedive](https://pulsedive.com/)
 * **Alerts** 📢: [secalerts](https://secalerts.co/), [stack.watch](https://stack.watch/)
