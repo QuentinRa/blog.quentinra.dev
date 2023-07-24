@@ -54,9 +54,10 @@ List of courses that have note which were not added yet.
 * Hardening
 * Linux
 * Networking
-* Webservers > nginx, awstats, postfix
+* Webservers > nginx
 * Windows > Linux, security
 * Others > Cloud, IoT, Docker, vagrant, Qemu, virtualbox, Cloud
+* Utils
 </div></div>
 
 
