@@ -39,12 +39,12 @@ This section regroups common terms used in red and blue teams.
 
 Some well-known malware types ([source](https://www.malwarebytes.com/))
 
-* **ransomware** 🔒: lock your system and ask for a ransom.
+* **ransomware** 🔒: locks your system and asks for a ransom.
 * **adware** 📰: they hide and show ads in the browser. They may monitor the user to show relevant ads.
 * **spyware** 🕵️: they hide, monitor users, and steal credentials...
-* **trojans horse** 🎠: they are programs pretending to do something, while actually preforming some malicious activities
-* **cryptojacking** ⛏️: hide, and mine currencies on your computer
-* **virus** 😎: attached to a program, replicates itself, and spreads
+* **trojan horse** 🎠: they are programs pretending to do something, while actually performing some malicious activities.
+* **cryptojacking** ⛏️: hides and mines currencies on your computer.
+* **virus** 😎: attached to a program, replicates itself, and spreads.
 </div></div>
 
 <hr class="sep-both">

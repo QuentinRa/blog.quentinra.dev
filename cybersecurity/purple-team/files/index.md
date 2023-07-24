@@ -140,7 +140,7 @@ file.png file.zip
 
 <div class="row row-cols-md-2"><div>
 
-You can use [Audacity]() to analyze audio files.
+You can use [Audacity](https://www.audacityteam.org/) to analyze audio files.
 
 ```
 $ sudo apt install audacity
