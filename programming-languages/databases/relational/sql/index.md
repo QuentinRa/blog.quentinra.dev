@@ -178,14 +178,15 @@ $ mysql -u root -p db < xxx.sql  # import
 * Tables: `SELECT table_name FROM information_schema.tables WHERE TABLE_SCHEMA='a_db';`
 * Columns: `SELECT column_name FROM information_schema.columns WHERE TABLE_SCHEMA='a_db' AND TABLE_NAME='a_table';`
 
-An **SQLite** database is a file such as `users.db`.
+An **SQLite** database is a file such as `users.db`. To load it ️: `sqlite3 users.db`. You can run a query from there: `sqlite3 xxx.db some_query`.
 
-* SQLite version 🔎: `file users.db`
-* SQLite version 🔎: `select sqlite_version()`
-* Load the SQLite database 🗃️: `sqlite3 users.db`
+* SQLite version v1 🔎: `file users.db`
+* SQLite version v2 🔎: `select sqlite_version()`
+* Dump database 🗃️: `.dump`
 * List tables 🧊: `.tables`
 * List columns 🫕: `PRAGMA table_info(some_table);`
-* Schema: `select sql from sqlite_master`
+* Schema ✍️: `select sql from sqlite_master`
+* Help 🃏: `.help`
 </div></div>
 
 <hr class="sep-both">
