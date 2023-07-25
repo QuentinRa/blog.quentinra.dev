@@ -8,7 +8,7 @@ GitLab [CI/CD](index.md) is relatively limited, especially in the free version. 
 * [Code coverage Documentation](https://docs.gitlab.com/ee/ci/testing/code_coverage.html) ✍️
 * [Code quality Documentation](https://docs.gitlab.com/ee/ci/testing/code_quality.html) 🧼
 * [Unit tests Documentation](https://docs.gitlab.com/ee/ci/testing/unit_test_reports.html) 🧪
-* [Security tools Documentation](https://docs.gitlab.com/ee/user/application_security/secure_your_application.html) 🛡️
+* [Security tools Documentation](https://docs.gitlab.com/ee/user/application_security/secure_your_application.html) 🛡️ <small>(static analysis...)</small>
 
 We assume you're familiar with GitLab, and already have a project created with **Maintainer+** access on it.
 
@@ -88,7 +88,24 @@ Stuff that I found, but never read/used yet.
 * How to register a runner/... (tags...)
 * Logs
 * Artifacts, Jobs retries
+
+```
+job-a:
+  artifacts:
+    paths:
+      - folder/
+
+# inherit folder from "job-a"
+job-b:
+  dependencies:
+    - job-a
+```
+
 </div><div>
 
-
+```
+cache:
+  paths:
+    - /xxx/
+```
 </div></div>
