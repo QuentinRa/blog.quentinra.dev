@@ -52,10 +52,27 @@ Runners are associated with an [**executor**](https://docs.gitlab.com/runner/#ex
 
 <div class="row row-cols-md-2"><div>
 
+It's a [YAML](/programming-languages/others/data/yaml.md) file. When using the online editor, in `CI/CD > Editor` <small>(you can select the file and the branch)</small>:
+
+* you know if the file is valid or not 🚀
+* you can visualize the pipeline 🔎
+* you can see the merged YAMl 💵 <small>(useful if you use templates)</small>
+* ...
+
+#### Stages
+
+The first step is usually to define the stages:
+
+```yaml!
 ...
+```
 </div><div>
 
+#### Variables
+
+```yaml!
 ...
+```
 </div></div>
 
 <hr class="sep-both">
@@ -67,8 +84,10 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * how to trigger the pipeline
-* Shared/Project/Group Runner
 * Fix the path to enable gitlab ci
+* How to register a runner/... (tags...)
+* Logs
+* Artifacts, Jobs retries
 </div><div>
 
 
