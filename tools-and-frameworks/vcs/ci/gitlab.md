@@ -11,5 +11,11 @@ GitLab [CI/CD](index.md) is relatively limited, especially in the free version. 
 * [Security tools Documentation](https://docs.gitlab.com/ee/user/application_security/secure_your_application.html) 🛡️
 </div><div>
 
-...
+**Terminology**
+
+* **Jobs** ⚒️: a task such as "running tests". It's basically a set of commands to accomplish a goal.
+
+* **Stages** 🗃️: tasks are sorted in stages. We usually run tasks from the stage "Build", then "Test", then "Deploy".
+
+* **Pipeline** 🚀: an execution of the tasks on the code associated with a specific commit/branch.
 </div></div>
