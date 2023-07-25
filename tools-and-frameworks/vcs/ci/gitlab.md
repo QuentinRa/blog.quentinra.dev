@@ -12,16 +12,64 @@ GitLab [CI/CD](index.md) is relatively limited, especially in the free version. 
 
 We assume you're familiar with GitLab, and already have a project created with **Maintainer+** access on it.
 
-To enable CI/CD, go to `Settings > General > Visibility [...] > Project` and enable `CI/CD`. Don't forget to save changes.
+To [enable CI/CD](https://docs.gitlab.com/ee/ci/enable_or_disable_ci.html#enable-cicd-in-a-project), go to `Settings > General > Visibility [...] > Repository` and enable `CI/CD`. Don't forget to save changes.
 </div><div>
 
 **Terminology**
 
 * **Jobs** ⚒️: a task such as "build project" or "run tests". It's basically a set of commands to accomplish a goal.
 
-* **Stages** 🗃️: tasks are sorted in stages <small>(ex: Build, Test, Deploy)</small>. We commonly have the order: `Build > Test > Deploy`.
+* **Stages** 🗃️: jobs are sorted in stages <small>(ex: Build, Test, Deploy)</small>. We commonly have the order: `Build > Test > Deploy`.
 
-* **Pipeline** 🚀: an execution of the stages, on the code associated with a specific commit/branch. The pipeline will fails if a task fails.
+* **Pipeline** 🚀: an execution of the stages, on the code associated with a specific commit/branch. The pipeline will fail if a job fails.
 
 The pipeline status is visible next to each commit: ![pipeline success](_images/pipeline_success.png) <small>(passed)</small>.
+</div></div>
+
+<hr class="sep-both">
+
+## Runners
+
+<div class="row row-cols-md-2"><div>
+
+A [**runner**](https://docs.gitlab.com/runner/) is an agent running the jobs, e.g., executing the commands.
+
+* **Project runner** 🏠: available to a single project
+* **Group runner** 🏘️: available to any project in a group
+* **Shared runner** 🍾: available to any project
+
+👉 Only shared runners are available when using [GitLab.com](https://gitlab.com/).
+
+Runners are associated with an [**executor**](https://docs.gitlab.com/runner/#executors). It's the environment used to execute commands, such as a shell or a docker.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## The .gitlab-ci.yml File
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* how to trigger the pipeline
+* Shared/Project/Group Runner
+* Fix the path to enable gitlab ci
+</div><div>
+
+
 </div></div>
