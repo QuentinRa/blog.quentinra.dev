@@ -9,3 +9,50 @@ The biggest strength of Jenkins is that is has a great number of [plugins](https
 
 ...
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* master/slaves
+* freestyle projects (web interface) vs pipeline jobs (as code)
+* Jenkinsfile (groovy)
+
+```java
+pipeline {
+    agent any
+    stages {
+        stage('xxx') {
+            steps {
+                git 'https://github.com/example/my-java-app.git'
+                sh 'xxx'
+            }
+        }
+    }
+}
+```
+</div><div>
+
+* Poll SCM or webhooks to trigger a pipeline
+
+```java
+triggers {
+    cron('H H(0-7) * * 1-5')
+    webhook('')
+}
+```
+
+* Artifacts are the output of the build
+
+```java
+    post {
+        success {
+            archiveArtifacts '*.xml'
+        }
+    }
+```
+</div></div>
