@@ -5,8 +5,7 @@
 
 <h1>blog.quentinra.dev</h1>
 
-This blog (formerly known as **Memorize**) is a gathering of notes, links, tutorials, experiences, along with exercises, to help others. If you are enjoying the website, **please star ⭐ the repository** to give me motivation.
-
+This repository is a collection of notes, links, tutorials, and experiences aimed at helping others. If you find it useful, **please consider giving it a star** ⭐ to keep me motivated.
 <div align="center">
 
 [![GitHub](https://img.shields.io/github/license/quentinra/blog.quentinra.dev)](LICENSE)
@@ -14,5 +13,5 @@ This blog (formerly known as **Memorize**) is a gathering of notes, links, tutor
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/lgs-games/memorize)](https://github.com/QuentinRa/blog.quentinra.dev)
 </div>
 
-Anyone can contribute, and you are more than welcome 🤗!
+Contributions are open to everyone, and you are more than welcome to join 🤗!
 </div>
