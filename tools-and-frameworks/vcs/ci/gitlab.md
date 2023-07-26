@@ -161,6 +161,13 @@ job-b:
 ```
 
 ```yaml!
+image: xxx:5000/docker_img
+# not loading .bashrc
+
+variables:
+  GIT_STRATEGY: none # empty clone
+  # $CI_PROJECT_NAME $CI_COMMIT_REF_NAME
+
   script:
     - xxx || true
     - "command here"
@@ -169,5 +176,13 @@ job-b:
     - "line=$(($(grep -n "xxx" file | cut -d: -f1) - 1))"
     - sed -i $line' i xxx'
     - sed -i $line' i \\txxx'
+before_script:
+after_script:
+
+  artifacts:
+    when: always
+    reports:
+      junit: "*_tests.xml"
+    expire_in: 3 days
 ```
 </div></div>
