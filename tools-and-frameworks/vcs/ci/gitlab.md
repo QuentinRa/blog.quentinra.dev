@@ -185,4 +185,20 @@ after_script:
       junit: "*_tests.xml"
     expire_in: 3 days
 ```
+
+```yaml!
+generate_badges:
+script:
+res=$(true) # some command
+badge_text=$(test $res -eq 0 && echo "OK" || echo "KO")
+badge_text=$(test $res -eq 2 && echo "???" || echo $badge_text)
+badge_color=$(test $res -eq 0 && echo "green" || echo "red")
+badge_color=$(test $res -eq 2 && echo "grey" || echo $badge_color)
+echo "[DEBUG] res($res) := <$badge_text:$badge_color>"
+docker run --rm -v $(PWD):/src xxx:5000/anybadge anybadge --value="$badge_text" --file=badge.svg --label="Some Label" -c=$badge_color -o
+
+artifacts:
+paths:
+  - badge.svg
+```
 </div></div>
