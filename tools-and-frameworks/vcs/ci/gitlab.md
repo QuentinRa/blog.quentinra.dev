@@ -70,6 +70,8 @@ stages:
   - deploy
 ```
 
+<br>
+
 #### Variables
 
 You can declare variables globally or inside a job.
@@ -77,15 +79,42 @@ You can declare variables globally or inside a job.
 ```yaml!
 variables:
   VAR_NAME: "some value"
-  VAR_NAME_2: "$VAR_NAME/2" # can use variables
-  
+  VAR_NAME_2: "$VAR_NAME/2"   # can use variables
+
 job:
+  stage: build
   script: # usages (quoted + ${}, or unquoted)
     - echo "$VAR_NAME ${VAR_NAME_2}" $VAR_NAME
 ```
 
 ➡️ See also: [external secrets](https://docs.gitlab.com/ee/ci/secrets/).
 </div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## CI Templates
+
+<div class="row row-cols-md-2"><div>
+
+```
+variables:
+  VAR_NAME: "some value"
+  
+include:
+  - project: 'whole/path/to/project'
+    file: 'xxx.yml'
+    ref: 'main'
+```
+</div><div>
+
+```
+task:
+  before_script:
+    - xxx
+  script:
+    - yyy    
+```
 </div></div>
 
 <hr class="sep-both">
@@ -129,5 +158,16 @@ job-b:
       when: always
   only:
     - master
+```
+
+```yaml!
+  script:
+    - xxx || true
+    - "command here"
+    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@example.com/XXX
+    - sed -i 's/xxx/yyy'$(echo $XXX | sed 's/\//\\\//g')'\/yyy/g' file
+    - "line=$(($(grep -n "xxx" file | cut -d: -f1) - 1))"
+    - sed -i $line' i xxx'
+    - sed -i $line' i \\txxx'
 ```
 </div></div>
