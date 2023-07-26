@@ -18,7 +18,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* master/slaves
+* master/slaves (a.k.a. workers)
 * freestyle projects (web interface) vs pipeline jobs (as code)
 * Jenkinsfile (groovy)
 
@@ -70,11 +70,18 @@ pipeline {
 
 Bonus:
 
-```
+```java
 stage('xxx') {
     when {
         branch 'development'
     }
 }
+```
+
+```java
+// https://plugins.jenkins.io/warnings-ng/
+recordIssues(
+    tools: [clangTidy(pattern: 'clang-tidy-report.txt')]
+)
 ```
 </div></div>
