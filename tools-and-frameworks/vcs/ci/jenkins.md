@@ -29,30 +29,52 @@ pipeline {
         stage('xxx') {
             steps {
                 git 'https://github.com/example/my-java-app.git'
+                git branch: env.BRANCH_NAME, url: 'URL'
                 sh 'xxx'
             }
         }
     }
 }
 ```
+
+* Options
+
+```java
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '10', daysToKeepStr: '7'))
+    }
+```
 </div><div>
 
 * Poll SCM or webhooks to trigger a pipeline
 
 ```java
-triggers {
-    cron('H H(0-7) * * 1-5')
-    webhook('')
-}
+    triggers {
+        cron('H H(0-7) * * 1-5')
+        webhook('')
+    }
 ```
 
 * Artifacts are the output of the build
 
 ```java
     post {
+        always {
+            junit '*.xml'
+        }
         success {
             archiveArtifacts '*.xml'
         }
     }
+```
+
+Bonus:
+
+```
+stage('xxx') {
+    when {
+        branch 'development'
+    }
+}
 ```
 </div></div>
