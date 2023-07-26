@@ -43,7 +43,12 @@ A [**runner**](https://docs.gitlab.com/runner/) is an agent running the jobs, e.
 Runners are associated with an [**executor**](https://docs.gitlab.com/runner/#executors). It's the environment used to execute commands, such as a shell or a docker.
 </div><div>
 
-...
+Once created, the runner can be configured to some extend by editing `/etc/gitlab-runner/config.toml`. For instance, you could:
+
+* use a custom helper image <small>(docker executor, `helper_image = ""`)</small>
+* change the default docker image <small>(docker executor, `image = ""`)</small>
+* add docker volumes <small>(docker executor, `volumes = []`)</small>
+* ...
 </div></div>
 
 <hr class="sep-both">
@@ -130,6 +135,9 @@ Stuff that I found, but never read/used yet.
 * How to register a runner/... (tags...)
 * Logs
 * Artifacts, Jobs retries
+* Webhook
+* Each task can use a different docker image, different runner, and env is reset between jobs
+* Exit 0, Exit 1
 
 ```
 job-a:
@@ -178,11 +186,13 @@ variables:
     - sed -i $line' i \\txxx'
 before_script:
 after_script:
+allow_failure: true
 
   artifacts:
     when: always
     reports:
       junit: "*_tests.xml"
+      codequality: "report.json"
     expire_in: 3 days
 ```
 
@@ -200,5 +210,15 @@ docker run --rm -v $(PWD):/src xxx:5000/anybadge anybadge --value="$badge_text" 
 artifacts:
 paths:
   - badge.svg
+  
+sudo gitlab-runner -h
+sudo gitlab-runner install --user=xxx --working-directory=yyy
+sudo gitlab-runner list
+sudo gitlab-runner register --url URL --registration-token XXX --tls-ca-file=xxx.crt
+sudo gitlab-runner verify
+sudo gitlab-runner verify --delete
+sudo gitlab-runner restart
+
+https://example.com/%{project_path}/-/jobs/artifacts/%{commit_sha}/raw/badge.svg?job=xxx
 ```
 </div></div>
