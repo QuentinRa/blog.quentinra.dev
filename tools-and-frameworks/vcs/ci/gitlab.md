@@ -64,15 +64,28 @@ It's a [YAML](/programming-languages/others/data/yaml.md) file. When using the o
 The first step is usually to define the stages:
 
 ```yaml!
-...
+stages:
+  - build
+  - test
+  - deploy
 ```
-</div><div>
 
 #### Variables
 
+You can declare variables globally or inside a job.
+
 ```yaml!
-...
+variables:
+  VAR_NAME: "some value"
+  VAR_NAME_2: "$VAR_NAME/2" # can use variables
+  
+job:
+  script: # usages (quoted + ${}, or unquoted)
+    - echo "$VAR_NAME ${VAR_NAME_2}" $VAR_NAME
 ```
+
+➡️ See also: [external secrets](https://docs.gitlab.com/ee/ci/secrets/).
+</div><div>
 </div></div>
 
 <hr class="sep-both">
@@ -107,5 +120,14 @@ job-b:
 cache:
   paths:
     - /xxx/
+
+job-b:
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+      when: always
+    - if: $CI_COMMIT_TAG
+      when: always
+  only:
+    - master
 ```
 </div></div>
