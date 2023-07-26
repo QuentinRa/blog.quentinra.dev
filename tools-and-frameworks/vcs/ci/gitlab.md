@@ -41,14 +41,44 @@ A [**runner**](https://docs.gitlab.com/runner/) is an agent running the jobs, e.
 👉 Only shared runners are available when using [GitLab.com](https://gitlab.com/).
 
 Runners are associated with an [**executor**](https://docs.gitlab.com/runner/#executors). It's the environment used to execute commands, such as a shell or a docker.
+
+GitLab runners are managed by a service called `gitlab-runner`. You can [find instructions here](https://docs.gitlab.com/runner/install/) to install it.
+
+Some commands you might use:
+
+```shell!
+$ sudo gitlab-runner -h
+$ # you may use a new user
+$ sudo gitlab-runner install --user=xxx --working-directory=yyy
+$ sudo gitlab-runner start
+$ sudo gitlab-runner list
+$ sudo gitlab-runner verify --delete # delete "dead" runners
+```
 </div><div>
 
-Once created, the runner can be configured to some extend by editing `/etc/gitlab-runner/config.toml`. For instance, you could:
+```shell!
+$ # use --tls-ca-file=xxx.crt if you've CA problems
+$ sudo gitlab-runner register --url URL --registration-token XXX
+Enter a description
+Enter tags (cannot be edited, can be used to assign jobs)
+Enter a maintenance note
+Enter an executor (docker, shell, ...)
+$ sudo gitlab-runner verify
+$ sudo gitlab-runner restart
+```
+
+Once created, the runner can be configured, to some extent, by editing `/etc/gitlab-runner/config.toml`. For instance, you could:
 
 * use a custom helper image <small>(docker executor, `helper_image = ""`)</small>
 * change the default docker image <small>(docker executor, `image = ""`)</small>
 * add docker volumes <small>(docker executor, `volumes = []`)</small>
 * ...
+
+Don't forget to restart after any change:
+
+```shell!
+$ sudo gitlab-runner restart
+```
 </div></div>
 
 <hr class="sep-both">
@@ -210,15 +240,13 @@ docker run --rm -v $(PWD):/src xxx:5000/anybadge anybadge --value="$badge_text" 
 artifacts:
 paths:
   - badge.svg
-  
-sudo gitlab-runner -h
-sudo gitlab-runner install --user=xxx --working-directory=yyy
-sudo gitlab-runner list
-sudo gitlab-runner register --url URL --registration-token XXX --tls-ca-file=xxx.crt
-sudo gitlab-runner verify
-sudo gitlab-runner verify --delete
-sudo gitlab-runner restart
 
 https://example.com/%{project_path}/-/jobs/artifacts/%{commit_sha}/raw/badge.svg?job=xxx
+
+default:
+  tags:
+    - xx
 ```
+
+[bug](https://docs.gitlab.com/runner/shells/index.html#shell-profile-loading)
 </div></div>
