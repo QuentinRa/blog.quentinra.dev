@@ -160,6 +160,43 @@ some_task:       # task declared in the template
 
 <hr class="sep-both">
 
+## GitLab custom badges
+
+<div class="row row-cols-md-2"><div>
+
+GitLab offers 3 [badges](https://docs.gitlab.com/ee/user/project/badges.html): pipeline status, coverage status, and release status. It's possible to use [external APIs]() for public projects. Otherwise, a common solution is to build badges during CI pipeline.
+
+🧨 A major downside is that badges are NOT shown when a pipeline fails. A possible solution <small>(not tested)</small> is to save badges somewhere instead of using artifacts <small>(ex: make CI commit to a branch)</small>.
+
+👉 You'll need to pull the image `xxx`. In the code sample, it's assumed to be available at `xxx:5000/anybadge`, but you can change it.
+
+To load a badge, go to `Settins > General > Badges`. Assuming the job is called `generate_badges` and the badge is `badge.svg`, the URL is: `https://example.com/%{project_path}/-/jobs/artifacts/%{commit_sha}/raw/badge.svg?job=generate_badges`
+</div><div>
+
+```yaml!
+generate_badges:
+  script:
+    # output is a sort of: [ hello ][  world  ]
+    #              colors: [ black ][  red  ]
+    - badge_label="hello"
+    - badge_text="world"
+    - badge_color="red"
+    - docker run --rm -v $(PWD):/src xxx:5000/anybadge anybadge --value="$badge_text" --file=badge.svg --label="$badge_label" -c=$badge_color -o
+  artifacts:
+    paths:
+      - badge.svg
+```
+
+If needed, you can use `test` and `&&/||` to write conditionals:
+
+```yaml!
+    - res=$(exit 0)
+    - badge_color=$(test $res -eq 0 && echo "green" || echo "red")
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -233,22 +270,6 @@ allow_failure: true
 ```
 
 ```yaml!
-generate_badges:
-script:
-res=$(true) # some command
-badge_text=$(test $res -eq 0 && echo "OK" || echo "KO")
-badge_text=$(test $res -eq 2 && echo "???" || echo $badge_text)
-badge_color=$(test $res -eq 0 && echo "green" || echo "red")
-badge_color=$(test $res -eq 2 && echo "grey" || echo $badge_color)
-echo "[DEBUG] res($res) := <$badge_text:$badge_color>"
-docker run --rm -v $(PWD):/src xxx:5000/anybadge anybadge --value="$badge_text" --file=badge.svg --label="Some Label" -c=$badge_color -o
-
-artifacts:
-paths:
-  - badge.svg
-
-https://example.com/%{project_path}/-/jobs/artifacts/%{commit_sha}/raw/badge.svg?job=xxx
-
 default:
   tags:
     - xx
