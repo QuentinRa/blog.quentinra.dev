@@ -140,6 +140,14 @@ job:
 ```
 </div><div>
 
+#### Image
+
+You can declare the image to use globally or inside a job.
+
+```yaml!
+image: xxx:5000/docker_img
+```
+
 #### Default
 
 You can use the [default](https://docs.gitlab.com/ee/ci/yaml/#default) keyword to set default properties.
@@ -184,6 +192,40 @@ Allowed repositories can be cloned from a pipeline.
    - source xxx.sh              # export XXX="..."
    - echo $XXX                  # XXX is empty
    - source xxx.sh && echo $XXX # XXX is not empty
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Advanced usages
+
+<div class="row row-cols-md-2"><div>
+
+#### allow_failure
+
+You can allow a task to fail without failing the pipeline. In such scenario, an orange icon with an exclamation mark will be shown.
+
+```
+task:
+  allow_failure: true
+```
+</div><div>
+
+#### Artifacts
+
+Artifacts can be used to pass files to following jobs or to export results for users to see or download them.
+
+For instance, for [code quality](https://docs.gitlab.com/ee/ci/testing/code_quality.html) or [unit tests](https://docs.gitlab.com/ee/ci/testing/unit_test_reports.html) which are both free:
+
+```yaml!
+  artifacts:
+    when: always
+    reports:
+      # shown in the pipeline "tests" tab
+      junit: "*_tests.xml"
+      # shown in the pipeline "code quality" tab
+      codequality: "report.json"
+    expire_in: 3 days
 ```
 </div></div>
 
@@ -265,12 +307,8 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * how to trigger the pipeline
-* Fix the path to enable gitlab ci
-* How to register a runner/... (tags...)
 * Logs
-* Artifacts, Jobs retries
 * Webhook
-* Each task can use a different docker image, different runner, and env is reset between jobs
 * Exit 0, Exit 1
 
 ```
@@ -300,19 +338,6 @@ job-b:
       when: always
   only:
     - master
-```
-
-```yaml!
-image: xxx:5000/docker_img
-
-allow_failure: true
-
-  artifacts:
-    when: always
-    reports:
-      junit: "*_tests.xml"
-      codequality: "report.json"
-    expire_in: 3 days
 ```
 
 [bug](https://docs.gitlab.com/runner/shells/index.html#shell-profile-loading)
