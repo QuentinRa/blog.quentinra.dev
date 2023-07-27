@@ -115,6 +115,9 @@ You can declare variables globally or inside a job.
 variables:
   VAR_NAME: "some value"
   VAR_NAME_2: "$VAR_NAME/2"   # can use variables
+  # GIT_STRATEGY: none # empty clone
+  # see also: $CI_PROJECT_NAME (repository name)
+  #           $CI_COMMIT_REF_NAME (commit name)
 
 job:
   stage: build
@@ -122,8 +125,30 @@ job:
     - echo "$VAR_NAME ${VAR_NAME_2}" $VAR_NAME
 ```
 
-➡️ See also: [external secrets](https://docs.gitlab.com/ee/ci/secrets/).
+➡️ See also: [external secrets](https://docs.gitlab.com/ee/ci/secrets/) and [predefined variables](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html).
+
+<br>
+
+#### Tags
+
+If you add a tag to a task, then only runners having this tag can run it.
+
+```yaml!
+job:
+  tags:
+    - xxx
+```
 </div><div>
+
+##### Default
+
+You can use the [default](https://docs.gitlab.com/ee/ci/yaml/#default) keyword to set default properties.
+
+```yaml!
+default:
+  tag:
+    - xxx
+```
 </div></div>
 
 <hr class="sep-both">
@@ -132,7 +157,7 @@ job:
 
 <div class="row row-cols-md-2"><div>
 
-It's possible to extract some logic into a reusable YAML template. The aforementioned template can be included using various ways. One is:
+It's possible to extract some logic into a reusable YAML template. The aforementioned template can be [included](https://docs.gitlab.com/ee/ci/yaml/#include) using various ways. One is:
 
 ```yaml!  
 include:
@@ -245,10 +270,6 @@ job-b:
 image: xxx:5000/docker_img
 # not loading .bashrc
 
-variables:
-  GIT_STRATEGY: none # empty clone
-  # $CI_PROJECT_NAME $CI_COMMIT_REF_NAME
-
   script:
     - xxx || true
     - "command here"
@@ -267,12 +288,6 @@ allow_failure: true
       junit: "*_tests.xml"
       codequality: "report.json"
     expire_in: 3 days
-```
-
-```yaml!
-default:
-  tags:
-    - xx
 ```
 
 [bug](https://docs.gitlab.com/runner/shells/index.html#shell-profile-loading)
