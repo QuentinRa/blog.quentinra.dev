@@ -87,7 +87,7 @@ $ sudo gitlab-runner restart
 
 <div class="row row-cols-md-2"><div>
 
-It's a [YAML](/programming-languages/others/data/yaml.md) file. When using the online editor, in `CI/CD > Editor` <small>(you can select the file and the branch)</small>:
+It's a [YAML](/programming-languages/others/data/yaml.md) file. See the [reference](https://docs.gitlab.com/ee/ci/yaml/). When using the online editor, in `CI/CD > Editor` <small>(you can select the file and the branch)</small>:
 
 * you know if the file is valid or not 🚀
 * you can visualize the pipeline 🔎
@@ -140,7 +140,7 @@ job:
 ```
 </div><div>
 
-##### Default
+#### Default
 
 You can use the [default](https://docs.gitlab.com/ee/ci/yaml/#default) keyword to set default properties.
 
@@ -148,6 +148,42 @@ You can use the [default](https://docs.gitlab.com/ee/ci/yaml/#default) keyword t
 default:
   tag:
     - xxx
+```
+
+#### Script
+
+You can use [`before_script`](https://docs.gitlab.com/ee/ci/yaml/#before_script), [`script`](https://docs.gitlab.com/ee/ci/yaml/#script), and [`after_script`](https://docs.gitlab.com/ee/ci/yaml/#after_script) to write down the commands executed by the runner.
+
+```yaml!
+  script:
+    - pwd          # a simple command call
+    - "pwd"        # some complex command must be quoted
+
+    - exit 0       # job success
+    - exit 1       # job failure
+    
+    - xxx || true  # allow one command to fail
+
+    # some "sed" that may be useful
+    - sed -i 's/xxx/yyy'$(echo $XXX | sed 's/\//\\\//g')'\/yyy/g' file
+    - "line=$(($(grep -n "xxx" file | cut -d: -f1) - 1))"
+    - sed -i $line' i xxx'
+    - sed -i $line' i \\txxx'
+```
+
+Allowed repositories can be cloned from a pipeline.
+
+```yaml!
+    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@example.com/XXX
+```
+
+⚠️ Commands are not exactly behaving the same as in your terminal.
+
+```yaml!
+# tested on a runner with a docker executor
+   - source xxx.sh              # export XXX="..."
+   - echo $XXX                  # XXX is empty
+   - source xxx.sh && echo $XXX # XXX is not empty
 ```
 </div></div>
 
@@ -268,18 +304,7 @@ job-b:
 
 ```yaml!
 image: xxx:5000/docker_img
-# not loading .bashrc
 
-  script:
-    - xxx || true
-    - "command here"
-    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@example.com/XXX
-    - sed -i 's/xxx/yyy'$(echo $XXX | sed 's/\//\\\//g')'\/yyy/g' file
-    - "line=$(($(grep -n "xxx" file | cut -d: -f1) - 1))"
-    - sed -i $line' i xxx'
-    - sed -i $line' i \\txxx'
-before_script:
-after_script:
 allow_failure: true
 
   artifacts:
