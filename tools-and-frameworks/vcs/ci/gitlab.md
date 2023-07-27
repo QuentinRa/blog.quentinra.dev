@@ -132,22 +132,28 @@ job:
 
 <div class="row row-cols-md-2"><div>
 
-```
-variables:
-  VAR_NAME: "some value"
-  
+It's possible to extract some logic into a reusable YAML template. The aforementioned template can be included using various ways. One is:
+
+```yaml!  
 include:
-  - project: 'whole/path/to/project'
+  # include https://example.com/path/to/project
+  - project: 'path/to/project'
     file: 'xxx.yml'
     ref: 'main'
 ```
+
+Once loaded, you can override tasks and variable from the template.
 </div><div>
 
-```
-task:
-  before_script:
+Assuming the template has a variable `VAR_NAME`, declaring a variable with the same name in the including file will override its value.
+
+Assuming the template has a task `some_task`, then we may further tune it in the including file <small>(check the merged YAML view to see what happens)</small>.
+
+```yaml!
+some_task:       # task declared in the template
+  before_script: # we can add new properties
     - xxx
-  script:
+  script:        # we can override a property's value
     - yyy    
 ```
 </div></div>
