@@ -131,7 +131,7 @@ job:
 
 #### Tags
 
-If you add a tag to a task, then only runners having this tag can run it.
+If you add a tag to a job, then only runners having this tag can run it.
 
 ```yaml!
 job:
@@ -179,11 +179,7 @@ You can use [`before_script`](https://docs.gitlab.com/ee/ci/yaml/#before_script)
     - sed -i $line' i \\txxx'
 ```
 
-Allowed repositories can be cloned from a pipeline.
-
-```yaml!
-    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@example.com/XXX
-```
+⚠️ Environment is reset between two jobs. See also: [artifacts](#artifacts).
 
 ⚠️ Commands are not exactly behaving the same as in your terminal.
 
@@ -192,6 +188,12 @@ Allowed repositories can be cloned from a pipeline.
    - source xxx.sh              # export XXX="..."
    - echo $XXX                  # XXX is empty
    - source xxx.sh && echo $XXX # XXX is not empty
+```
+
+Allowed repositories can be cloned from a pipeline.
+
+```yaml!
+    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@example.com/XXX
 ```
 </div></div>
 
@@ -203,17 +205,60 @@ Allowed repositories can be cloned from a pipeline.
 
 #### allow_failure
 
-You can allow a task to fail without failing the pipeline. In such scenario, an orange icon with an exclamation mark will be shown.
+You can allow a job to fail without failing the pipeline. In such scenario, an orange icon with an exclamation mark will be shown.
+
+```yaml!
+job:
+  allow_failure: true
+```
+
+#### when
+
+You can use `when` to execute jobs conditionally.
 
 ```
-task:
-  allow_failure: true
+job:
+  when: on_failure   # a stage failed in the previous stage
+  when: always       # even if pipeline fails
+```
+
+#### rules
+
+You can use `rules` to conditionally add/remove a job.
+
+```yaml!
+job:
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+      when: always
+```
+
+#### only
+
+You can use `only` to execute jobs only on predefined branches.
+
+```
+job:
+  only:
+    - master
 ```
 </div><div>
 
 #### Artifacts
 
 Artifacts can be used to pass files to following jobs or to export results for users to see or download them.
+
+```
+job-a:
+  artifacts:
+    paths:
+      - folder/
+
+# inherit folder from "job-a"
+job-b:
+  dependencies:
+    - job-a
+```
 
 For instance, for [code quality](https://docs.gitlab.com/ee/ci/testing/code_quality.html) or [unit tests](https://docs.gitlab.com/ee/ci/testing/unit_test_reports.html) which are both free:
 
@@ -245,15 +290,15 @@ include:
     ref: 'main'
 ```
 
-Once loaded, you can override tasks and variable from the template.
+Once loaded, you can override jobs and variable from the template.
 </div><div>
 
 Assuming the template has a variable `VAR_NAME`, declaring a variable with the same name in the including file will override its value.
 
-Assuming the template has a task `some_task`, then we may further tune it in the including file <small>(check the merged YAML view to see what happens)</small>.
+Assuming the template has a job `some_job`, then we may further tune it in the including file <small>(check the merged YAML view to see what happens)</small>.
 
 ```yaml!
-some_task:       # task declared in the template
+some_job:       # job declared in the template
   before_script: # we can add new properties
     - xxx
   script:        # we can override a property's value
@@ -309,36 +354,11 @@ Stuff that I found, but never read/used yet.
 * how to trigger the pipeline
 * Logs
 * Webhook
-* Exit 0, Exit 1
-
-```
-job-a:
-  artifacts:
-    paths:
-      - folder/
-
-# inherit folder from "job-a"
-job-b:
-  dependencies:
-    - job-a
-```
-
 </div><div>
 
 ```
 cache:
   paths:
     - /xxx/
-
-job-b:
-  rules:
-    - if: $CI_COMMIT_BRANCH == "main"
-      when: always
-    - if: $CI_COMMIT_TAG
-      when: always
-  only:
-    - master
 ```
-
-[bug](https://docs.gitlab.com/runner/shells/index.html#shell-profile-loading)
 </div></div>
