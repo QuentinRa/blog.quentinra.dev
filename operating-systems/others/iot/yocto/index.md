@@ -2,13 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[Yocto](https://www.yoctoproject.org/) <small>(The Yocto Project)</small> is a referred to as a **meta-distribution**. It's a distribution creating tailored Linux distributions for specific [IoT](../_knowledge/index.md) needs.
-
-It's an universal starting point for defining a custom Linux.
-
-* Templates
-* Methods
-* Tools
+...
 </div><div>
 
 ...
@@ -61,4 +55,12 @@ yyy_[prepend|append|none]() {
 * `conf/` to edit local conf, and bbconf
 * https://layers.openembedded.org/layerindex/branch/master/recipes/
 * https://www.youtube.com/watch?v=r8hFRJ9vMWM
+
+[Yocto](https://www.yoctoproject.org/) <small>(The Yocto Project)</small> is a referred to as a **meta-distribution**. It's a distribution creating tailored Linux distributions for specific [IoT](../_knowledge/index.md) needs.
+
+It's an universal starting point for defining a custom Linux.
+
+* Templates
+* Methods
+* Tools
 </div></div>
