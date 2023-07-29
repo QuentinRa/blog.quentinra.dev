@@ -11,7 +11,15 @@ GitHub Actions were introduced in 2018 to design CI/CD workflow for GitHub proje
 * [GitHub Workflow Syntax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions) (⛪)
 </div><div>
 
-...
+**Terminology**
+
+* **Steps** ⚒️: a command or an action such as `run tests`
+
+* **Jobs** 🗃️: a job is an ordered set of steps to achieve a goal. They can be run in parallel or sequentially.
+
+* **Workflow** 🚀: an automated process made of jobs. For instance, we could have workflow building and testing the project.
+
+The workflow status is visible next to each commit: ![pipeline success](_images/pipeline_success_2.png) <small>(passed)</small>.
 </div></div>
 
 <hr class="sep-both">
@@ -171,23 +179,17 @@ The [`strategy` keyword](https://docs.github.com/en/actions/using-workflows/work
 
 <hr class="sep-both">
 
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
+## Dependabot
 
 <div class="row row-cols-md-2"><div>
 
-* [Running jobs in a container](https://docs.github.com/en/actions/using-jobs/running-jobs-in-a-container)
-</div><div>
+Dependabot is a "bot" checking your dependencies. If it detects that we can upgrade a dependency, it opens a pull-request with the suggested upgrade. Here is the [official tutorial](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuring-dependabot-version-updates#enabling-dependabot-version-updates) 🚀.
 
-**Dependabot**
+It can also detect vulnerabilities in dependencies and notify developers to upgrade their dependencies.
 
-A bot checking your dependencies, and creating pull-request with the new version that you're suggested to update to. [See this tutorial](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuring-dependabot-version-updates#enabling-dependabot-version-updates).
+Here are some `dependabot.yml` examples:
 
-<details class="details-e">
-<summary>Examples</summary>
-
-```yaml
+```yaml!
 version: 2
 updates:
   - package-ecosystem: "gradle"
@@ -195,8 +197,9 @@ updates:
     schedule:
       interval: "daily"
 ```
+</div><div>
 
-```yaml
+```yaml!
 version: 2
 updates:
   - package-ecosystem: "npm"
@@ -207,5 +210,24 @@ updates:
     open-pull-requests-limit: "99"
     versioning-strategy: "increase"
 ```
-</details>
+
+It works by analyzing dependencies in the ecosystem file:
+
+* `npm`: package.json
+* `gradle`: build.gradle
+* `docker`: Dockerfile
+* `pip`: requirements.txt
+* ...
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [Running jobs in a container](https://docs.github.com/en/actions/using-jobs/running-jobs-in-a-container)
+</div><div>
 </div></div>
