@@ -88,14 +88,18 @@ There is no limit to the number of containers created from one image.
 To **create** a container <small>(entrypoint are explained in Dockerfile section)</small>:
 
 ```ps
-$ docker run some_tag         # run the default entrypoint
-$ docker run -it [...]        # interactive (bash...)
-$ docker run -dt [..;]        # run in background
-$ docker run [...] /bin/bash  # run entrypoint /bin/bash
-$ docker run [...] echo xxx   # run entrypoint echo, CMD "xxx"
+$ docker run image_tag        # execute tag's entrypoint
+$ docker run -t image_tag     # explicitly specify the tag
+$ docker run -i [...]         # interactive (bash...)
+$ docker run -d [...]         # run in background
+$ docker run [...] /bin/bash  # CMD = ["/bin/bash"]
+$ docker run [...] echo xxx   # CMD = ["echo", "xxx"]
 $ docker run -p dp:hp [...]   # map docker port to host port
 $ docker run --rm [...]       # auto-deleted once stopped
 $ docker run --entrypoint=xxx [...]  # override the entrypoint
+$ docker run --name=xxx [...] # use fixed name
+$ docker run --net=xxx [...]  # see networks
+$ docker run -e "XXX=xxx" [...] # set env variable
 ```
 
 ➡️ Containers will stop when the entrypoint process terminates.
@@ -122,6 +126,22 @@ To **delete** a container
 ```ps
 $ docker container rm container_name_or_id
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Advanced Docker Containers Internals
+
+<div class="row row-cols-md-2"><div>
+
+#### Docker network
+
+...
+</div><div>
+
+#### Docker UID/GID mapping
+
+...
 </div></div>
 
 <hr class="sep-both">
@@ -186,7 +206,7 @@ ENTRYPOINT ["/bin/sh","-c"]   # default entrypoint
 
 `CMD` allows us to define default arguments passed to the entrypoint. According to the entrypoint, `CMD` may be a command.
 
-```dockerfile
+```dockerfile!
 ENTRYPOINT echo
 CMD command
 CMD "command1;command2;..."
@@ -227,7 +247,7 @@ WORKDIR /usr/project/
 
 `USER` won't create a user, but load (~`su`) the given user.
 
-```dockerfile
+```dockerfile!
 # RUN useradd -ms /bin/bash username (add user on Linux)
 # RUN net user /add username (add user on Windows)
 USER username
@@ -308,7 +328,12 @@ $ docker build -t some_tag_here .
 
 #### Deploying
 
-...
+```ps
+# assuming xxx:5000 is a registry
+# and "xxx:5000/tag" is an image locally
+# use "docker tag" to rename an image
+$ docker push xxx:5000/tag
+```
 </div></div>
 
 <hr class="sep-both">
@@ -328,8 +353,9 @@ Docker Compose version vX.X.X
 💡 It's designed to manage, and run multiple containers. All usual commands are now added after `docker compose`:
 
 * `docker compose build`: build images
-* `docker compose up`: create containers and start them
+* `docker compose up`: create containers and start them <small>(can use -d)</small>
 * `docker compose start`: start containers
+* `docker compose run xxx`: run one service <small>(can use --rm)</small>
 * `docker compose stop`: stop containers
 * `docker compose down`: stop, and remove containers
 
@@ -338,7 +364,7 @@ Useful options: `docker compose up --no-recreate --no-start`.
 
 The syntax is pretty straightforward once you're familiar with run options. Much like `docker run` commands, almost all are optional.
 
-```yaml
+```yaml!
 version: '3'
 
 services:
@@ -370,31 +396,24 @@ Dockerfile
 * ONBUILD
 * ARG
 
-Kubernetes
+Other notes
 
-I still haven't learned how to use it, so nothing is here
-for now. It seems you can use `Kubernetes` to make sure that there are always `x` instances of an image running.
+* [Kubernetes](https://kubernetes.io)
+* [linuxhandbook](https://linuxhandbook.com/tag/docker/)
+* Docker nexus repository
+* `/etc/docker/daemon.json`
+* `sudo systemctl restart docker`
 </div><div>
 
-* instruction in uppercase, followed by their arguments
+* Docker registry
 * Docker maps the container user UID/GID to the UID/GID of a local user on the host system (user namespace)
-* Docker compose (plugin?): create a YAML linking to multiple DockerFile. You write each commands args directly in the YAML.
 
 ```shell!
-$ docker compose run xxx
-$ docker compose up -d # ???
-restart: always
 $ docker network create XXX
 $ docker cp xxx:/docker/path ./local/path
 $ docker exec -it name /bin/bash
 $ docker network connect bridge xxx
 $ docker ... --network=bridge
 $ docker network ls
-$ docker rmi tag
-$ docker tag existing_tag additional_tag
 ```
-
-* [linuxhandbook](https://linuxhandbook.com/tag/docker/)
-* [Kubernetes](https://kubernetes.io)
-* Docker nexus repository
 </div></div>
