@@ -146,6 +146,8 @@ RUN dnf -y upgrade && \
 ENTRYPOINT /bin/bash
 ```
 
+➡️ Read [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/).
+
 #### FROM
 
 You will build an image based on another image.
@@ -177,6 +179,46 @@ ENV MY_HOME /home
 ENV MY_HOME=/home
 RUN echo ${MY_HOME} $MY_HOME 
 RUN echo ${MY_HOME:-value_if_not_set} ${MY_HOME:+value_if_set}
+```
+
+#### ADD/COPY
+
+Use `ADD`/`COPY` to copy a file to the image. Use `COPY` most of the time.
+
+```dockerfile!
+ADD src dest       # ex: ADD URL /usr/project/
+COPY src dest      # ex: COPY ./file /usr/project/
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Advanced Dockerfiles
+
+<div class="row row-cols-md-2"><div>
+
+#### LABEL
+
+Set the image properties that are shown when using the command `docker image inspect image_name_or_tag`.
+
+```dockerfile!
+LABEL name="image name"
+LABEL version="image version"
+LABEL maintainer="maintener"
+LABEL vendor="vendor"
+LABEL environment=dev
+LABEL description="image description"
+```
+</div><div>
+
+#### VOLUME
+
+It's possible to mount a [volume](https://docs.docker.com/storage/volumes/), e.g., creating a folder on the docker whose content is linked to a folder on the host. Adding, editing, or removing files in such folder on the docker remove them on the host. 
+
+```dockerfile!
+VOLUME /var/www          # host=/var/www docker=/var/www 
+VOLUME /var/www:/var/zzz # host=/var/www docker=/var/zzz
+VOLUME ["/var/www/", "/var/log:/var/volatile/log"]
 ```
 </div></div>
 
