@@ -1,13 +1,5 @@
 # Introduction
 
-Each docker image has its own memory, so each time you create a new container, **it will restart from scratch**. If you restart the same container, then everything you did will still be there ([more explanation on Stack Overflow](https://stackoverflow.com/questions/28574433/do-docker-containers-retain-file-changes)).
-
-* `docker run -it tag`: run `tag` image in interactive mode,
-for instance, a bash (where you can input commands) is interactive
-* `docker run tag`: run `tag`
-* `docker run -p ps:pm tag`: start image and bind a port
-of your container `ps` with your machine port `pm`.
-
 <hr class="sl">
 
 ## Dockerfile

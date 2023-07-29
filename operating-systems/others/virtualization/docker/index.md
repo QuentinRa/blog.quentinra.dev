@@ -89,10 +89,12 @@ To **create** a container <small>(entrypoint are explained in Dockerfile section
 
 ```ps
 $ docker run some_tag         # run the default entrypoint
-$ docker run -it some_tag     # interactive (bash...)
-$ docker run -dt some_tag     # run in background
+$ docker run -it [...]        # interactive (bash...)
+$ docker run -dt [..;]        # run in background
 $ docker run [...] /bin/bash  # run entrypoint /bin/bash
 $ docker run [...] echo xxx   # run entrypoint echo, CMD "xxx"
+$ docker run -p ps:pm [...]   # map port ps to host port pm
+$ docker run --rm [...]       # auto-deleted once stopped
 ```
 
 ➡️ Containers will stop when the entrypoint process terminates.
@@ -127,7 +129,7 @@ $ docker container rm container_name_or_id
 
 <div class="row row-cols-md-2"><div>
 
-A `Dokerfile` <small>(no extension)</small> is a file describing what to do to create the image you want.
+A `Dokerfile` <small>(no extension)</small> is a text file used to define the configuration and steps to create a docker image <small>(e.g., the blueprint to create containers)</small>.
 
 ```dockerfile!
 FROM fedora:latest
@@ -137,11 +139,11 @@ RUN dnf -y upgrade && \
     # Examples:
     dnf -y install firefox nano git dnf-utils && \
     dnf -y install iputils net-tools iproute && \
+    # Whe usually clean-up to save disk space
     dnf clean all
 
 ENTRYPOINT /bin/bash
 ```
-
 </div><div>
 
 ...
@@ -149,16 +151,17 @@ ENTRYPOINT /bin/bash
 
 <hr class="sep-both">
 
-## Build, and deploy images
+## Build and deploy images
 
 <div class="row row-cols-md-2 mt-4"><div>
 
 #### Building
 
-You can configure and tune an image by creating a file called `Dokerfile`. Once finished, you can build your image using:
+After creating a [Dockerfile](#dockerfile), you can build your image using:
 
-```bash!
+```ps
 # Assuming "Dockerfile" is inside the current folder
+# ex : docker build -t my_image:latest .
 $ docker build -t some_tag_here .
 ```
 
