@@ -9,6 +9,7 @@ GitLab [CI/CD](index.md) is well-known and popular mature solution for devops. F
 * [Code quality Documentation](https://docs.gitlab.com/ee/ci/testing/code_quality.html) 🧼
 * [Unit tests Documentation](https://docs.gitlab.com/ee/ci/testing/unit_test_reports.html) 🧪
 * [Security tools Documentation](https://docs.gitlab.com/ee/user/application_security/secure_your_application.html) 🛡️ <small>(static analysis...)</small>
+* [GitLab templates](https://gitlab.com/gitlab-org/gitlab/-/tree/master/lib/gitlab/ci/templates) ✨
 
 We assume you're familiar with GitLab, and already have a project created with **Maintainer+** access on it.
 </div><div>

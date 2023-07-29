@@ -1,8 +1,13 @@
-# GitHub
+# GitHub Actions
 
 <div class="row row-cols-md-2"><div>
 
-...
+GitHub Actions were introduced in 2018 to design CI/CD workflow for GitHub projects. Actions are small reusable code that simplifies the process of creating a CI/CD workflow. 
+
+* [GitHub Actions Marketplace](https://github.com/marketplace) (19k actions)
+* [GitHub Actions Documentation](https://docs.github.com/actions)
+* [GitHub Actions Quickstart](https://docs.github.com/en/actions/quickstart)
+* [GitHub Awesome Actions](https://github.com/sdras/awesome-actions) (21.6k ⭐)
 </div><div>
 
 ...
@@ -16,15 +21,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-**GitHub Actions**
-
-GitHub Actions are some code that is run every time a commit/a pull request/... is made. This is up to you. For instance, you could run some tests. [See this tutorial](https://docs.github.com/en/actions/quickstart).
-
-On a repository, go to the action tab, select an action, and it will autogenerate a template for you to add it into your project.
-
-<details class="details-e">
-<summary>Notes</summary>
-
 ```yaml
 # run a command
 - run: git clone URL/repository.git other-repository-folder-name
@@ -36,9 +32,6 @@ Others
 * [awesome-actions](https://github.com/sdras/awesome-actions)
 
 GitHub offers a CI/CD platform called GitHub actions to define CI/CD workflows. Workflows are [YAML](/programming-languages/others/data/yaml.md) files stored in `.github/workflows/`.
-</details>
-
-* [x1]()
 </div><div>
 
 **Dependabot**
