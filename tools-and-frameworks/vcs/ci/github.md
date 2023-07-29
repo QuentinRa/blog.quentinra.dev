@@ -41,21 +41,26 @@ jobs:
 ```
 </div><div>
 
-The `runs-on` determine where the commands are executed by what we call a runner. You can use [GitHub-hosted runners](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#choosing-github-hosted-runners) such as `ubuntu-latest` or `windows-latest` or use [self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners).
+A runner is an agent executing commands. The `runs-on` parameter designates which runner to use. You can use [GitHub-hosted runners](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#choosing-github-hosted-runners) such as `ubuntu-latest` or `windows-latest` or use [self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners).
+
+A common action is `checkout` to clone your repository:
 
 ```yaml!
     - name: Check out repository code
       uses: actions/checkout@v3
 ```
 
+For each step, you may use these optional attributes:
+
 ```
-      - name: Move switch to .opam (Windows)
+      - name: XXX
+        # only execute based on a condition
         if: runner.os == 'Windows'
+        # run multiple commands
         run: |
           xxx
           xxx
-          xxx
-        env:
+        env: # set an environment variable
           XXX: xxx
 ```
 </div></div>
