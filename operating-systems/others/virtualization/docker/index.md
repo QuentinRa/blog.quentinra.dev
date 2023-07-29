@@ -141,12 +141,43 @@ RUN dnf -y upgrade && \
     dnf -y install iputils net-tools iproute && \
     # Whe usually clean-up to save disk space
     dnf clean all
+    # See also: apt update/upgrade/clean/install -y
 
 ENTRYPOINT /bin/bash
 ```
+
+#### FROM
+
+You will build an image based on another image.
+
+```dockerfile!
+FROM image
+FROM image:version
+```
+
+#### RUN
+
+Use `RUN` to execute a command or multiple commands.
+
+```dockerfile!
+RUN command
+RUN "command1;command2;..."
+RUN ["command","arg1","arg2"]
+RUN command && \
+    command
+```
 </div><div>
 
-...
+#### ENV
+
+Use `ENV` to define environment variables.
+
+```dockerfile!
+ENV MY_HOME /home
+ENV MY_HOME=/home
+RUN echo ${MY_HOME} $MY_HOME 
+RUN echo ${MY_HOME:-value_if_not_set} ${MY_HOME:+value_if_set}
+```
 </div></div>
 
 <hr class="sep-both">

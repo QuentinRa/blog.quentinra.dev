@@ -7,26 +7,19 @@
 Here is an example of a `Dockerfile`
 
 ```dockerfile
-# source image
-FROM debian:10
-
 # set the working directory
 WORKDIR path
-
 # run a command
 RUN command
 RUN command_part_1 \
 # the second part of the line above
 command_part_2
-
 # add files to container file system
 ADD path/to/source path/to/dest
 # copy file to container file system
 COPY path/to/source path/to/dest
-
 # allow the use of port 80 (=HTTP) outside
 EXPOSE 80
-
 # a command that's called when the container is run
 CMD ["command", "arg"]
 ```
@@ -46,11 +39,9 @@ that you may have to download if you don't have it
 
 This is a summary of the most used instruction.
 
-* [FROM](tags/from.md): source image
 * [WORKDIR](tags/workdir.md): change the working directory
 * [ADD](tags/add.md): add files
 * [COPY](tags/copy.md): copy files
-* [RUN](tags/run.md): run a command
 * [CMD](tags/cmd.md): run a command when container is started
 * [ENV](tags/env.md): set environment variables
 
