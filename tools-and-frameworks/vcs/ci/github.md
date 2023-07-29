@@ -32,11 +32,23 @@ jobs:
 ```
 </div><div>
 
+* `windows-latest`
 * `ubuntu-latest`
 
 ```yaml!
     - name: Check out repository code
       uses: actions/checkout@v3
+```
+
+```
+      - name: Move switch to .opam (Windows)
+        if: runner.os == 'Windows'
+        run: |
+          xxx
+          xxx
+          xxx
+        env:
+          XXX: xxx
 ```
 </div></div>
 
@@ -50,6 +62,8 @@ jobs:
 
 ```yaml!
 on: [push]              # push on any branch
+on:
+  pull_request:         # on any pull request
 
 on:
   push:                 # push on main
@@ -61,7 +75,18 @@ on:
 ```
 </div><div>
 
-...
+#### Strategy
+
+```yaml!
+    strategy:
+      matrix:
+        some_variable: [10, 11, 12, 13]
+
+    steps:
+      - name: Use Version ${{ matrix.some_variable }}
+        run: echo "use version ${{ matrix.some_variable }}"
+
+```
 </div></div>
 
 <hr class="sep-both">
@@ -70,20 +95,38 @@ on:
 
 <div class="row row-cols-md-2"><div>
 
-#### Java setup
+#### Java actions
 
 [actions/setup-java](https://github.com/actions/setup-java) to install and configure Java.
 
-```yaml!
+```yaml
     - name: Set up JDK 16
       uses: actions/setup-java@v2
       with:
         java-version: '16'
         distribution: 'adopt'
+
+    - name: Run gradle tests
+      uses: gradle/gradle-build-action@v2
+      with:
+        arguments: test
+```
+
+➡️ See also: [gradle-wrapper-validation](https://github.com/gradle/wrapper-validation-action).
+
+#### OCAML actions
+
+[ocaml/setup-ocaml](https://github.com/ocaml/setup-ocaml) to install and configure OCaml.
+
+```yaml!
+      - name: Use OCaml 4.13.1
+        uses: ocaml/setup-ocaml@v2
+        with:
+          ocaml-compiler: 4.13.1
 ```
 </div><div>
 
-#### Node.js setup
+#### Node.js actions
 
 [actions/setup-node](https://github.com/actions/setup-node) to install and configure Node.
 
@@ -103,7 +146,11 @@ on:
 
 #### Static code analysis
 
-[github/codeql-action](https://github.com/github/codeql-action) for CodeQL analysis.
+[github/codeql-action](https://github.com/github/codeql-action) for CodeQL static code analysis.
+
+#### Code quality analysis
+
+[JetBrains/qodana-action](https://github.com/JetBrains/qodana-action) for Qodana code quality analysis.
 </div></div>
 
 <hr class="sep-both">
