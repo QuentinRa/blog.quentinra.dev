@@ -15,6 +15,79 @@ GitHub Actions were introduced in 2018 to design CI/CD workflow for GitHub proje
 
 <hr class="sep-both">
 
+<div class="row row-cols-md-2"><div>
+
+```yaml
+name: Action Name
+
+jobs:
+  job_name:
+    runs-on: yyy
+    steps:
+    # unnamed
+    - run: xxx
+    # named
+    - name: XXX
+      run: xxx
+```
+</div><div>
+
+```yaml!
+    - name: Check out repository code
+      uses: actions/checkout@v3
+```
+</div></div>
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-md-2"><div>
+
+#### Trigger
+
+```yaml!
+on: [push]              # push on any branch
+
+on:
+  push:                 # push on main
+    branches: [ main ]
+  pull_request:         # merge request on main
+    branches: [ main ]
+  schedule:             # automatically
+    - cron: '0 3 * * 5'
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Some actions
+
+<div class="row row-cols-md-2"><div>
+
+#### Java Setup
+
+[actions/setup-java](https://github.com/actions/setup-java) to install and configure Java.
+
+```yaml!
+    - name: Set up JDK 16
+      uses: actions/setup-java@v2
+      with:
+        java-version: '16'
+        distribution: 'adopt'
+```
+</div><div>
+
+#### Cache build
+
+[actions/cache](https://github.com/actions/cache) to cache build results.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
