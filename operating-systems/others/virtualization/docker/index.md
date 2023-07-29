@@ -100,6 +100,7 @@ $ docker run --entrypoint=xxx [...]  # override the entrypoint
 $ docker run --name=xxx [...] # use fixed name
 $ docker run --net=xxx [...]  # see networks
 $ docker run -e "XXX=xxx" [...] # set env variable
+$ docker run -v xxx [...]     # see docker volumes
 ```
 
 ➡️ Containers will stop when the entrypoint process terminates.
@@ -136,7 +137,19 @@ $ docker container rm container_name_or_id
 
 #### Docker network
 
-...
+Docker containers are by default started using `--net=bridge`. It's a virtual bridge `docker0` that allow each container to contact each other.
+
+Using `--net=host`, it means that they share the same network configuration as the host <small>(e.g., same `ip a` output)</small>.
+
+```ps
+$ docker network ls # list
+$ docker network create network_name # create
+$ docker network inspect network_id  # list hosts
+$ docker network connect bridge container_id # add to bridge
+# connect or disconnect a host to a network
+$ docker network connect network_name_or_id container_id
+$ docker network disconnect network_name_or_id container_id
+```
 </div><div>
 
 #### Docker UID/GID mapping
@@ -405,15 +418,19 @@ Other notes
 * `sudo systemctl restart docker`
 </div><div>
 
+Network
+
+```text!
+--cap-add=NET_ADMIN
+--cap-add=NET_ADMIN --device=/dev/net/tun
+mknod /dev/net/tun
+```
+
 * Docker registry
 * Docker maps the container user UID/GID to the UID/GID of a local user on the host system (user namespace)
 
 ```shell!
-$ docker network create XXX
 $ docker cp xxx:/docker/path ./local/path
 $ docker exec -it name /bin/bash
-$ docker network connect bridge xxx
-$ docker ... --network=bridge
-$ docker network ls
 ```
 </div></div>
