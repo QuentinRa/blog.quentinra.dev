@@ -32,6 +32,8 @@ jobs:
 ```
 </div><div>
 
+* `ubuntu-latest`
+
 ```yaml!
     - name: Check out repository code
       uses: actions/checkout@v3
@@ -68,7 +70,7 @@ on:
 
 <div class="row row-cols-md-2"><div>
 
-#### Java Setup
+#### Java setup
 
 [actions/setup-java](https://github.com/actions/setup-java) to install and configure Java.
 
@@ -81,9 +83,27 @@ on:
 ```
 </div><div>
 
+#### Node.js setup
+
+[actions/setup-node](https://github.com/actions/setup-node) to install and configure Node.
+
+```yaml!
+    - name: Use Node.js 16.16.0
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16.16.0
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: npm test
+```
+
 #### Cache build
 
 [actions/cache](https://github.com/actions/cache) to cache build results.
+
+#### Static code analysis
+
+[github/codeql-action](https://github.com/github/codeql-action) for CodeQL analysis.
 </div></div>
 
 <hr class="sep-both">
