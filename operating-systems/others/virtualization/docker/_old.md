@@ -1,51 +1,14 @@
 # Introduction
 
-<hr class="sl">
-
-## Dockerfile
-
-Here is an example of a `Dockerfile`
-
 ```dockerfile
 # allow the use of port 80 (=HTTP) outside
 EXPOSE 80
-# a command that's called when the container is run
-CMD ["command", "arg"]
 ```
 
-Summary
-
 * instruction in uppercase, followed by their arguments
-* you can split a long line with `\ `.
-* the first line is a `FROM` with the image we use as a source,
-that you may have to download if you don't have it 
-  * the `docker pull tag` command
-  * done automatically when running if you didn't
-
-<hr class="sr">
-
-### Most used instructions
-
-This is a summary of the most used instruction.
-
-* [WORKDIR](tags/workdir.md): change the working directory
-* [CMD](tags/cmd.md): run a command when container is started
-
-Less commonly used
-
 * [EXPOSE](tags/expose.md): link/expose a port
-* [USER](tags/user.md): create user
-<small>(such as `/mnt` for WSL)</small>
-
-You may use
-
 * [ONBUILD](tags/onbuild.md) 
-* [STOPSIGNAL](tags/stopsignal.md) 
-* [ENTRYPOINT](tags/entrypoint.md)
-
-And these are not `commands` but may
-be useful
-
+* [STOPSIGNAL](tags/stopsignal.md)
 * [Arguments](tags/args.md)
 * [Directives](tags/directives.md)
 

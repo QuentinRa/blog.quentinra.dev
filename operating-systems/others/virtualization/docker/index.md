@@ -93,8 +93,9 @@ $ docker run -it [...]        # interactive (bash...)
 $ docker run -dt [..;]        # run in background
 $ docker run [...] /bin/bash  # run entrypoint /bin/bash
 $ docker run [...] echo xxx   # run entrypoint echo, CMD "xxx"
-$ docker run -p ps:pm [...]   # map port ps to host port pm
+$ docker run -p dp:hp [...]   # map docker port to host port
 $ docker run --rm [...]       # auto-deleted once stopped
+$ docker run --entrypoint=xxx [...]  # override the entrypoint
 ```
 
 ➡️ Containers will stop when the entrypoint process terminates.
@@ -173,13 +174,26 @@ RUN command && \
 
 When creating a docker container, the entrypoint is the command executed by default <small>(if any)</small>. Users can overload the entrypoint.
 
-```yaml!
+```dockerfile!
 ENTRYPOINT command
-ENTRYPOINT ["command","arg1","arg2"]
-# "docker run tag": execute "command" (with args if any)
-# "docker run tag bash": bash replaces the entrypoint
+ENTRYPOINT ["/bin/sh","-c"]   # default entrypoint
+# "docker run tag": execute "entrypoint"
+# "docker run tag bash": execute "entrypoint bash"
 ```
 </div><div>
+
+#### CMD
+
+`CMD` allows us to define default arguments passed to the entrypoint. According to the entrypoint, `CMD` may be a command.
+
+```dockerfile
+ENTRYPOINT echo
+CMD command
+CMD "command1;command2;..."
+CMD ["Hello", "world"]
+# docker run tag: echo "Hello, World"
+# docker run tag args: echo args
+```
 
 #### ENV
 
