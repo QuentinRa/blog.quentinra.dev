@@ -26,5 +26,6 @@ Random
 
 * `[...],hostfwd=tcp::2222-:22`
 * `-nographic`
+* `shutdown -h now`
 </div><div>
 </div></div>

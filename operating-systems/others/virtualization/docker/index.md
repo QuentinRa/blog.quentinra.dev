@@ -127,6 +127,17 @@ To **delete** a container
 ```ps
 $ docker container rm container_name_or_id
 ```
+
+To **open a terminal** on a running container
+
+```ps
+# duplicate stdin/stdout
+$ docker attach container_name_or_id
+# pop a new bash
+$ docker exec -it container_name_or_id /bin/bash
+# if you have the IP
+$ ssh user@container_ip
+```
 </div></div>
 
 <hr class="sep-both">
@@ -155,6 +166,20 @@ $ docker network disconnect network_name_or_id container_id
 #### Docker UID/GID mapping
 
 ...
+
+#### GUI applications
+
+To run GUI applications on Linux, run `xhost +local:docker` and use:
+
+```yaml!
+# docker run -e "DISPLAY=${DISPLAY}" \
+#            -v /tmp/.X11-unix:/tmp/.X11-unix --net=host [...]
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    network_mode: host
+```
 </div></div>
 
 <hr class="sep-both">
@@ -340,6 +365,8 @@ $ docker build -t some_tag_here .
 </div><div>
 
 #### Deploying
+
+To push images to a registry server:
 
 ```ps
 # assuming xxx:5000 is a registry
