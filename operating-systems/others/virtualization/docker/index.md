@@ -37,23 +37,28 @@ $ docker -v # test
 
 To get started, you will have to choose and download an image 🖼️. It will be the base from which you will start adding files, packages, and everything you need for your application.
 
-👉 Browse images on [Docker Hub](https://hub.docker.com/)
+**Look for images on [Docker Hub](https://hub.docker.com/).**
 
 We usually start from an operating system such as [ubuntu](https://hub.docker.com/_/ubuntu), or we may start from an image with our tools installed, such as with [gcc](https://hub.docker.com/_/gcc) image.
 
-➡️ If you are using WSL, you might check out [Pengwin](https://github.com/WhitewaterFoundry/Pengwin) <small>(wlinux)</small>.
+#### Tags
+
+A **tag** is the image's name and its version. For instance, `fedora:latest` or `fedora:34`. When the version is `latest`, it's implicit, and can be omitted, so `fedora` and `fedora:latest` are the same.
 </div><div>
+
+#### Docker image commands
 
 To **download** an image
 
 ```ps
-$ docker pull image_name
-$ docker pull image_name:version
+$ docker pull image_name         # tag = image_name:latest
+$ docker pull image_name:version # tag = image_name:version
 ```
 
 To **list** images
 
 ```ps
+$ docker images
 $ docker image ls
 ```
 
@@ -77,8 +82,9 @@ On a container, you can do things like creating files, adding packages, running 
 There is no limit to the number of containers created from one image.
 
 ```ps
-$ docker [...]
+$ docker run 
 ```
+</div><div>
 
 To **list** containers
 
@@ -88,7 +94,6 @@ $ docker container ls -a # all
 $ docker ps              # running containers
 $ docker ps -a           # all containers
 ```
-</div><div>
 
 To **start/stop** a container
 
@@ -135,8 +140,6 @@ ENTRYPOINT /bin/bash
 ## Build, and deploy images
 
 <div class="row row-cols-md-2 mt-4"><div>
-
-💡 A **tag** is the image's name and it's version. For instance, `fedora:latest` or `fedora:34`. When the version is `latest`, it's implicit, and can be omitted, so `fedora` and `fedora:latest` are the same.
 
 #### Building
 
