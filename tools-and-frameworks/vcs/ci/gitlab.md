@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-GitLab [CI/CD](index.md) is relatively limited, especially in the free version. For instance, most interfaces to display results are rudimentary or paid.
+GitLab [CI/CD](index.md) is well-known and popular mature solution for devops. From my perspective, GitLab CI free version is relatively limited. For instance, most interfaces to display CI results are rudimentary or paid.
 
 * [CI/CD Documentation](https://docs.gitlab.com/ee/topics/build_your_application.html) ⛪
 * [Code coverage Documentation](https://docs.gitlab.com/ee/ci/testing/code_coverage.html) ✍️
@@ -11,9 +11,9 @@ GitLab [CI/CD](index.md) is relatively limited, especially in the free version. 
 * [Security tools Documentation](https://docs.gitlab.com/ee/user/application_security/secure_your_application.html) 🛡️ <small>(static analysis...)</small>
 
 We assume you're familiar with GitLab, and already have a project created with **Maintainer+** access on it.
+</div><div>
 
 To [enable CI/CD](https://docs.gitlab.com/ee/ci/enable_or_disable_ci.html#enable-cicd-in-a-project), go to `Settings > General > Visibility [...] > Repository` and enable `CI/CD`. Don't forget to save changes.
-</div><div>
 
 **Terminology**
 

@@ -34,7 +34,11 @@ Others
 
 * [actions/setup-java](https://github.com/actions/setup-java): install Java
 * [awesome-actions](https://github.com/sdras/awesome-actions)
+
+GitHub offers a CI/CD platform called GitHub actions to define CI/CD workflows. Workflows are [YAML](/programming-languages/others/data/yaml.md) files stored in `.github/workflows/`.
 </details>
+
+* [x1]()
 </div><div>
 
 **Dependabot**
