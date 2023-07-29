@@ -253,6 +253,15 @@ LABEL vendor="vendor"
 LABEL environment=dev
 LABEL description="image description"
 ```
+
+#### EXPOSE
+
+Some docker may run a webserver or something like that. To access them on your host, you need to `EXPOSE` the port or the protocol.
+
+```dockerfile!
+EXPOSE port            # ex: 8080
+EXPOSE port/protocol   # ex: 80/tcp
+```
 </div><div>
 
 #### VOLUME
@@ -342,7 +351,42 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+Dockerfile
+
+* STOPSIGNAL
+* ONBUILD
+* ARG
+
+Kubernetes
+
+I still haven't learned how to use it, so nothing is here
+for now. It seems you can use `Kubernetes` to make sure that there are always `x` instances of an image running.
+
+.dockerignore
+
+You may have files that you don't want `Docker` to copy
+so you may use a `.dockerignore` using the `.ignore`
+syntax
+
+```gitignore
+# any file someting.exe is ignored
+*.exe
+# we don't ignore a.exe
+!a.exe
+# exclude a directory
+directory/
+```
+
+</div><div>
+
+* instruction in uppercase, followed by their arguments
+* Docker maps the container user UID/GID to the UID/GID of a local user on the host system (user namespace)
+* Docker compose (plugin?): create a YAML linking to multiple DockerFile. You write each commands args directly in the YAML.
+
 ```shell!
+$ docker compose run xxx
+$ docker compose up -d # ???
+restart: always
 $ docker network create XXX
 $ docker cp xxx:/docker/path ./local/path
 $ docker exec -it name /bin/bash
@@ -351,17 +395,6 @@ $ docker ... --network=bridge
 $ docker network ls
 $ docker rmi tag
 $ docker tag existing_tag additional_tag
-```
-</div><div>
-
-* [old](_old.md)
-* Docker maps the container user UID/GID to the UID/GID of a local user on the host system (user namespace)
-* Docker compose (plugin?): create a YAML linking to multiple DockerFile. You write each commands args directly in the YAML.
-
-```shell!
-$ docker compose run xxx
-$ docker compose up -d # ???
-restart: always
 ```
 
 * [linuxhandbook](https://linuxhandbook.com/tag/docker/)
