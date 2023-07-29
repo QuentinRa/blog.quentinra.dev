@@ -168,6 +168,17 @@ RUN ["command","arg1","arg2"]
 RUN command && \
     command
 ```
+
+#### ENTRYPOINT
+
+When creating a docker container, the entrypoint is the command executed by default <small>(if any)</small>. Users can overload the entrypoint.
+
+```yaml!
+ENTRYPOINT command
+ENTRYPOINT ["command","arg1","arg2"]
+# "docker run tag": execute "command" (with args if any)
+# "docker run tag bash": bash replaces the entrypoint
+```
 </div><div>
 
 #### ENV
@@ -188,6 +199,25 @@ Use `ADD`/`COPY` to copy a file to the image. Use `COPY` most of the time.
 ```dockerfile!
 ADD src dest       # ex: ADD URL /usr/project/
 COPY src dest      # ex: COPY ./file /usr/project/
+```
+
+#### WORKDIR
+
+Instead of using `cd`/..., you should use `WORKDIR` to navigate to a folder. If the destination doesn't exist, it's created.
+
+```dockerfile!
+WORKDIR /usr/project/
+```
+
+#### USER
+
+`USER` won't create a user, but load (~`su`) the given user.
+
+```dockerfile
+# RUN useradd -ms /bin/bash username (add user on Linux)
+# RUN net user /add username (add user on Windows)
+USER username
+USER username:group
 ```
 </div></div>
 

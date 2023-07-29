@@ -7,17 +7,6 @@
 Here is an example of a `Dockerfile`
 
 ```dockerfile
-# set the working directory
-WORKDIR path
-# run a command
-RUN command
-RUN command_part_1 \
-# the second part of the line above
-command_part_2
-# add files to container file system
-ADD path/to/source path/to/dest
-# copy file to container file system
-COPY path/to/source path/to/dest
 # allow the use of port 80 (=HTTP) outside
 EXPOSE 80
 # a command that's called when the container is run
@@ -40,17 +29,12 @@ that you may have to download if you don't have it
 This is a summary of the most used instruction.
 
 * [WORKDIR](tags/workdir.md): change the working directory
-* [ADD](tags/add.md): add files
-* [COPY](tags/copy.md): copy files
 * [CMD](tags/cmd.md): run a command when container is started
-* [ENV](tags/env.md): set environment variables
 
 Less commonly used
 
 * [EXPOSE](tags/expose.md): link/expose a port
 * [USER](tags/user.md): create user
-* [LABEL](tags/label.md): image metadata
-* [VOLUME](tags/volume.md): create a mounting point 
 <small>(such as `/mnt` for WSL)</small>
 
 You may use
