@@ -8,6 +8,7 @@ GitHub Actions were introduced in 2018 to design CI/CD workflow for GitHub proje
 * [GitHub Actions Documentation](https://docs.github.com/actions)
 * [GitHub Actions Quickstart](https://docs.github.com/en/actions/quickstart)
 * [GitHub Awesome Actions](https://github.com/sdras/awesome-actions) (21.6k ⭐)
+* [GitHub Workflow Syntax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions) (⛪)
 </div><div>
 
 ...
@@ -17,23 +18,30 @@ GitHub Actions were introduced in 2018 to design CI/CD workflow for GitHub proje
 
 <div class="row row-cols-md-2"><div>
 
-```yaml
+## Basic syntax
+
+Workflows are defined in [YAML](/programming-languages/others/data/yaml.md) files stored in `.github/workflows/`. Their name is based on the YAML file name, e.g., `Build` for `build.yml`.
+
+A basic Action executing `job_name` on every `push`:
+
+```yaml!
 name: Action Name
+
+on: [push]
 
 jobs:
   job_name:
-    runs-on: yyy
+    runs-on: ubuntu-latest
     steps:
-    # unnamed
-    - run: xxx
-    # named
-    - name: XXX
-      run: xxx
+    # unnamed command
+    - run: echo "Hello, World!"
+    # named command
+    - name: Saying Hello
+      run: echo "Hello, World!"
 ```
 </div><div>
 
-* `windows-latest`
-* `ubuntu-latest`
+The `runs-on` determine where the commands are executed by what we call a runner. You can use [GitHub-hosted runners](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#choosing-github-hosted-runners) such as `ubuntu-latest` or `windows-latest` or use [self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners).
 
 ```yaml!
     - name: Check out repository code
@@ -54,14 +62,15 @@ jobs:
 
 <hr class="sep-both">
 
-## XXX
+## Advanced syntax
 
 <div class="row row-cols-md-2"><div>
 
 #### Trigger
 
+The [`on` keyword](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows) determines what events can trigger a workflow.
+
 ```yaml!
-on: [push]              # push on any branch
 on:
   pull_request:         # on any pull request
 
@@ -76,6 +85,8 @@ on:
 </div><div>
 
 #### Strategy
+
+The [`strategy` keyword](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstrategy) let us define variables. The job below will be executed `4` times as we have `4` values <small>(cartesian product of all variables)</small>.
 
 ```yaml!
     strategy:
@@ -161,17 +172,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-```yaml
-# run a command
-- run: git clone URL/repository.git other-repository-folder-name
-```
-
-Others
-
-* [actions/setup-java](https://github.com/actions/setup-java): install Java
-* [awesome-actions](https://github.com/sdras/awesome-actions)
-
-GitHub offers a CI/CD platform called GitHub actions to define CI/CD workflows. Workflows are [YAML](/programming-languages/others/data/yaml.md) files stored in `.github/workflows/`.
+* [Running jobs in a container](https://docs.github.com/en/actions/using-jobs/running-jobs-in-a-container)
 </div><div>
 
 **Dependabot**
