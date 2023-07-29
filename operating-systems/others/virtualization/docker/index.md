@@ -273,6 +273,19 @@ VOLUME /var/www          # host=/var/www docker=/var/www
 VOLUME /var/www:/var/zzz # host=/var/www docker=/var/zzz
 VOLUME ["/var/www/", "/var/log:/var/volatile/log"]
 ```
+
+#### .dockerignore
+
+You can use a `.dockerignore` [ignore file](/programming-languages/others/data/ignore.md) to prevent some files from being copied or added when using `COPY`/`ADD`.
+
+```yaml!
+# any file ending with .exe is ignored
+*.exe
+# we don't ignore runner.exe
+!runner.exe
+# ignore a directory
+directory/
+```
 </div></div>
 
 <hr class="sep-both">
@@ -361,22 +374,6 @@ Kubernetes
 
 I still haven't learned how to use it, so nothing is here
 for now. It seems you can use `Kubernetes` to make sure that there are always `x` instances of an image running.
-
-.dockerignore
-
-You may have files that you don't want `Docker` to copy
-so you may use a `.dockerignore` using the `.ignore`
-syntax
-
-```gitignore
-# any file someting.exe is ignored
-*.exe
-# we don't ignore a.exe
-!a.exe
-# exclude a directory
-directory/
-```
-
 </div><div>
 
 * instruction in uppercase, followed by their arguments
