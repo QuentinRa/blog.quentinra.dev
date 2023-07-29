@@ -99,11 +99,15 @@ $ docker run --rm [...]       # auto-deleted once stopped
 $ docker run --entrypoint=xxx [...]  # override the entrypoint
 $ docker run --name=xxx [...] # use fixed name
 $ docker run --net=xxx [...]  # see networks
-$ docker run -e "XXX=xxx" [...] # set env variable
 $ docker run -v xxx [...]     # see docker volumes
+$ docker run -e "XXX=xxx" [...] # set env variable
 ```
 
 ➡️ Containers will stop when the entrypoint process terminates.
+
+✨ Flags `-t` and `-i` or `-d` can be merged: `-it` or `-dt`
+
+✨ You can have multiple times flags: `-e`, `-v`, and `-p`.
 </div><div>
 
 To **list** containers
@@ -138,6 +142,13 @@ $ docker exec -it container_name_or_id /bin/bash
 # if you have the IP
 $ ssh user@container_ip
 ```
+
+To **copy** a file from or to a docker
+
+```shell!
+$ docker cp container_id:/docker/path ./local/path
+$ docker cp ./local/path container_id:/docker/path
+```
 </div></div>
 
 <hr class="sep-both">
@@ -165,7 +176,15 @@ $ docker network disconnect network_name_or_id container_id
 
 #### Docker UID/GID mapping
 
-...
+Docker uses UID/GID mapping to ensure proper file permissions  by aligning UID and GID inside the container with the corresponding ones on the host system.
+
+For instance, let's say the docker uses a user with UID `1000` and GID `2000`. If there is a matching user/group on the host, they will be used when creating files. Otherwise, the default user will be used <small>(root...)</small>.
+
+```ps
+$ docker run -u uid:gid [...]
+```
+
+➡️ When running a container, all file permissions within the docker are set based on the running user permissions.
 
 #### GUI applications
 
@@ -454,10 +473,4 @@ mknod /dev/net/tun
 ```
 
 * Docker registry
-* Docker maps the container user UID/GID to the UID/GID of a local user on the host system (user namespace)
-
-```shell!
-$ docker cp xxx:/docker/path ./local/path
-$ docker exec -it name /bin/bash
-```
 </div></div>
