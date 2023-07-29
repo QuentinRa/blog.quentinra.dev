@@ -41,9 +41,13 @@ To get started, you will have to choose and download an image 🖼️. It will b
 
 We usually start from an operating system such as [ubuntu](https://hub.docker.com/_/ubuntu), or we may start from an image with our tools installed, such as with [gcc](https://hub.docker.com/_/gcc) image.
 
-#### Tags
+#### Docker tags
 
 A **tag** is the image's name and its version. For instance, `fedora:latest` or `fedora:34`. When the version is `latest`, it's implicit, and can be omitted, so `fedora` and `fedora:latest` are the same.
+
+Tags point to an image. You can create them: `docker tag xxx:34 xxx:latest` <small>(xxx:latest point to xxx:34)</small> or remove them `docker rmi tag`.
+
+👉 An image can only be removed when all tags were removed.
 </div><div>
 
 #### Docker image commands
@@ -81,9 +85,17 @@ On a container, you can do things like creating files, adding packages, running 
 
 There is no limit to the number of containers created from one image.
 
+To **create** a container <small>(entrypoint are explained in Dockerfile section)</small>:
+
 ```ps
-$ docker run 
+$ docker run some_tag         # run the default entrypoint
+$ docker run -it some_tag     # interactive (bash...)
+$ docker run -dt some_tag     # run in background
+$ docker run [...] /bin/bash  # run entrypoint /bin/bash
+$ docker run [...] echo xxx   # run entrypoint echo, CMD "xxx"
 ```
+
+➡️ Containers will stop when the entrypoint process terminates.
 </div><div>
 
 To **list** containers
@@ -98,14 +110,14 @@ $ docker ps -a           # all containers
 To **start/stop** a container
 
 ```ps
-$ docker start container_tag_or_id
-$ docker stop container_tag_or_id
+$ docker start container_name_or_id
+$ docker stop container_name_or_id
 ```
 
 To **delete** a container
 
 ```ps
-$ docker container rm container_tag_or_id
+$ docker container rm container_name_or_id
 ```
 </div></div>
 
