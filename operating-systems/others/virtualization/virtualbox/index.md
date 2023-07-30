@@ -45,7 +45,7 @@ You may need to install Virtual Box Extension pack later
 
 <hr class="sep-both">
 
-## Random features
+## Common features
 
 ➡️ On Windows, the "host" key is CTRL (Right).
 
@@ -70,11 +70,11 @@ Click on the menu icon next to your VM,  and select "Snapshot".
 ➡️ If the machine is started, you can also use the menu <kbd>Machine > Take Snapshot...</kbd> for the menubar.
 </div><div>
 
-#### Shared keyboard/folder
+#### Shared clipboard/folder
 
 Right-click on a machine, and open Settings. 
 
-* In General > Advanced, you can enable bidirectional keyboard
+* In General > Advanced, you can enable bidirectional clipboard
 * In Shared folders, you can create shared folders
 
 ➡️ On Windows VMs, you need to install VB Guest Additions.
@@ -84,7 +84,16 @@ Right-click on a machine, and open Settings.
 * In the menubar: <kbd>View > Seamless mode</kbd>.
 * Use the shortcut: <kbd>HOST + L</kbd>
 
-➡️ On Windows VMs, you need to install VB Guest Additions.
+➡️ For Windows VMs, you need to install VB Guest Additions.
+
+#### VBoxManage
+
+You can use VBoxManage to control VirtualBox from the command line. On Windows, use CMD and not PowerShell.
+
+```ps
+# list hard drives
+$ "C:\Program Files\Oracle\VirtualBox\VBoxManage" list hdds
+```
 </div></div>
 
 <hr class="sep-both">
@@ -131,12 +140,12 @@ On your VM with your VM
 
 #### Bug: no automatic mouse integration
 
-By default, you can freely use your mouse between your host and your virtual machine. But, I had a bug 🪲, when restarting a machine close using "save instance state", in which my mouse was not detected anymore.
+By default, you can freely use your mouse between your host and your virtual machine. But, I have a bug 🪲 when restarting a machine closed using "save instance state" in which my mouse is not detected anymore.
 
-➡️ My "patch" is to lock the VM before closing it.
+➡️ A "patch" is to lock your session before closing the VM.
 </div><div>
 
-#### Bug: bidirectional keyboard not working
+#### Bug: bidirectional clipboard not working
 
 ➡️ Try restarting the VM.
 </div></div>
@@ -148,9 +157,5 @@ By default, you can freely use your mouse between your host and your virtual mac
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
-
-* Network Adapters (see Active directory)
-* `"C:\Program Files\Oracle\VirtualBox\VBoxManage" list hdds` (in a CMD)
-* Need to update snapshots
 </div><div>
 </div></div>
