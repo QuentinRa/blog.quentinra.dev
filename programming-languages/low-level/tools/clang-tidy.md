@@ -8,19 +8,15 @@ Clang-tidy is a tool that performs static code analysis on C++ code, identifying
 $ sudo apt install clang-tidy
 ```
 </div><div>
-
-#### .clang-tidy
-
-Clang-tidy can be configured in a `.clang-tidy` file.
 </div></div>
 
 <hr class="sep-both">
 
-## XXX
+## Basic usage
 
 <div class="row row-cols-md-2"><div>
 
-#### Basic usage
+#### Common commands
 
 We can use clang-tidy without a compilation database, but in such case, it may result in errors.
 
@@ -30,6 +26,10 @@ $ clang-tidy *.cpp > report.txt # save in a file
 $ clang-tidy -fix *.cpp         # run automated fixes
 $ clang-tidy -header-filter='(xxx\.h|include/*)' [...] # skip
 ```
+
+#### .clang-tidy
+
+Clang-tidy can be configured in a `.clang-tidy` file.
 </div><div>
 
 #### compile-commands.json

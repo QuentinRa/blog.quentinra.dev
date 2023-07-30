@@ -94,6 +94,6 @@ Stuff that I found, but never read/used yet.
 
 * [Akagi201/learning-cmake](https://github.com/Akagi201/learning-cmake)
 * include_directories
-
+* see [clang-tidy](/programming-languages/low-level/tools/clang-tidy.md)
 </div><div>
 </div></div>
