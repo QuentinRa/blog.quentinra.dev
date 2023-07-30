@@ -381,6 +381,11 @@ After creating a [Dockerfile](#dockerfile), you can build your image using:
 $ docker build -t some_tag_here .
 ```
 
+<br>
+
+#### Docker registry
+
+A registry is a place where images are stored. Docker Hub is a SAAS registry, but it's possible to deploy a [self-hosted registry](https://docs.docker.com/registry/deploying/).
 </div><div>
 
 #### Deploying
@@ -393,6 +398,16 @@ To push images to a registry server:
 # use "docker tag" to rename an image
 $ docker push xxx:5000/tag
 ```
+
+<br>
+
+#### Docker Layers
+
+Each docker image is composed of multiple read-only layers. They are created during the build process. 
+
+Each instruction in a [Dockerfile](#dockerfile) generates a new layer.
+
+It allows docker to speed up each process, by only building or deploying layers that have changed.
 </div></div>
 
 <hr class="sep-both">
@@ -471,6 +486,4 @@ Network
 --cap-add=NET_ADMIN --device=/dev/net/tun
 mknod /dev/net/tun
 ```
-
-* Docker registry
 </div></div>
