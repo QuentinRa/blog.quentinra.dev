@@ -19,10 +19,10 @@ $ nano CMakeLists.txt # edit
 **Execute a rule** 🌴
 
 ```ps
-# in the directory with the CMakeLists.txt
-$ cmake .
-$ make # example for a makefile
-$ ./my_program # the executable named "my_program"
+$ mkdir build && cd build
+$ cmake ..     # folder with the CMakeLists.txt
+$ make         # execute the generated Makefile
+$ ./my_program # execute our "my_program"
 ```
 </div></div>
 
@@ -94,6 +94,6 @@ Stuff that I found, but never read/used yet.
 
 * [Akagi201/learning-cmake](https://github.com/Akagi201/learning-cmake)
 * include_directories
-* see [clang-tidy](/programming-languages/low-level/tools/clang-tidy.md)
+* see [clang-tidy](/programming-languages/low-level/tools/clang-tidy.md) (`cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON`)
 </div><div>
 </div></div>

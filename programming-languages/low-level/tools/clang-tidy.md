@@ -32,14 +32,19 @@ $ clang-tidy -header-filter='(xxx\.h|include/*)' [...] # skip
 Clang-tidy can be configured in a `.clang-tidy` file.
 </div><div>
 
-#### compile-commands.json
+#### compile_commands.json
 
-For more complex projects, we generate `compile-commands.json` which indicate the command to compile each file. Using [CMake](/tools-and-frameworks/others/build/cmake/index.md):
+For more complex projects, we generate `compile_commands.json` which indicate the command to compile each file. Using [CMake](/tools-and-frameworks/others/build/cmake/index.md):
 
 ```shell!
 $ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 $ # build the project ...
-$ cat folder_with_compile_commands/compile-commands.json
+$ cat folder_with_compile_commands/compile_commands.json
+[{
+    "directory": "src",
+    "command": "g++ src/source.cpp",
+    "file": "source.cpp"
+}]
 $ clang-tidy -p folder_with_compile_commands source.cpp
 ```
 </div></div>
