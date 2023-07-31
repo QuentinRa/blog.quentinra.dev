@@ -46,6 +46,7 @@ $ [...] -smp 2         # 2 cores
 
 ```shell!
 $ [...] -nographic     # disable GUI, terminal-only interface
+shutdown -h now
 $ [...] -sql           # use the SQL
 ```
 
@@ -58,28 +59,45 @@ $ [...] -snapshot      # don't save to hard-drive
 
 <hr class="sep-both">
 
+## Networking
+
+<div class="row row-cols-md-2"><div>
+
+#### NAT network
+
+You can use NAT which is the default. The VM will have the same network configuration as the host, but no one can reach the host.
+
+```shell!
+$ # both are similar, the latter can be more tuned
+$ [...] -net user
+$ [...] -netdev user,id=net0 \
+    -device virtio-net-pci,netdev=usernet
+```
+</div><div>
+
+#### TAP Network
+
+A TAP network simulates that the host and the VM are connected physically. Both are on the same network and can reach each other.
+
+```shell!
+$ sudo ip tuntap add dev tap0 mode tap
+$ sudo ip link set tap0 up
+$ qemu[...] -netdev tap,ifname=tap0,id=br0 \
+    -device virtio-net-pci,netdev=br0 # ,mac=...
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-TAP network
-
-* `-net user` (NAT), `-netdev user,id=net0` (same, but create network net0)
-* `-netdev tap, id=net0,...`
-* `-device xxx,netdev=net0,mac=...` (NIC: model, net, MAC)
-* `ip tuntap add xxx tap0 mode tap`
-* `-device virtio-net-pci,netdev=net0` (attach net0 device)
-
-Random
-
-* `shutdown -h now`
 * QEMU monitor console
-</div><div>
-
 * [baeldung: QEMU from terminal](https://www.baeldung.com/linux/qemu-from-terminal)
-* `[...],hostfwd=tcp::2222-:22`
-* `qemu-system-x86_64 -boot d -cdrom xxx.iso -m 2048 -hda /path/xxx.qcow2`
-* `-enable-kvm`,`--enable-kvm` (faster, if available)
+* `-enable-kvm` (faster, if available)
+* `qemu-system-x86_64 -boot d -cdrom xxx.iso [...]`
+</div><div>
 </div></div>
