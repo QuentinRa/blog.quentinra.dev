@@ -30,6 +30,21 @@ $ clang-tidy -header-filter='(xxx\.h|include/*)' [...] # skip
 #### .clang-tidy
 
 Clang-tidy can be configured in a `.clang-tidy` file.
+
+```yaml!
+Checks: >
+  -*,                 # remove all
+  google-*,           # add all from google
+  -google-runtile-int # but remove this one
+
+# WarningsAsErrors: "*"
+
+# Tune some checks
+CheckOptions:
+  - { key: name, value: xxx }
+  - key: name
+    value: xxx
+```
 </div><div>
 
 #### compile_commands.json
@@ -47,4 +62,6 @@ $ cat folder_with_compile_commands/compile_commands.json
 }]
 $ clang-tidy -p folder_with_compile_commands source.cpp
 ```
+
+⚠️ For some reason, if there is no `compile_commands.json` in the current directory, then the file from `folder_with_compile_commands` is copied into the current directory and used for the following calls.
 </div></div>

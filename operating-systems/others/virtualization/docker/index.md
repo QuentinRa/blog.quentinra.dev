@@ -105,7 +105,7 @@ $ docker run -e "XXX=xxx" [...] # set env variable
 
 ➡️ Containers will stop when the entrypoint process terminates.
 
-✨ Flags `-t` and `-i` or `-d` can be merged: `-it` or `-dt`
+✨ Flags `-t` and `-i` or `-d` can be merged: `-it` or `-dt`.
 
 ✨ You can have multiple times flags: `-e`, `-v`, and `-p`.
 </div><div>
