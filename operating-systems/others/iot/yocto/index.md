@@ -28,23 +28,50 @@ $ source poky/oe-init-build-env # load
 
 #### Configuration files
 
-```shell!
+Configuration files are in the `conf` folder.
+
+```ps
 $ nano conf/local.conf
-...
+# add or remove packages from the image
+IMAGE_INSTALL_append = " xxx"
+IMAGE_INSTALL_remove = " xxx"
+# Enable GUI/...
+DISTRO_FEATURES_append = " feature-name" 
 ```
 
 #### Bitbake
 
-Bitbake is a multi-purpose command. 
+Bitbake is a multipurpose build engine. 
 
 ```shell!
-$ bitbake core-image-minimal
+$ bitbake core-image-minimal   # build an image
+$ bitbake -c <some_task> [...] # run a specific task
 ```
 
-* `<build_folder>/tmp/deploy/images`: store the generated image files
+When building images, it store the generated image files in `<build_folder>/tmp/deploy/images`.
 </div><div>
 
+#### Image recipe
+
+You create multiple image recipes.
+
+```shell!
+$ cat recipes-core/images/custom-image.bb
+DESCRIPTION = "Custom Image"
+LICENSE = "CLOSED"
+PR = "r0"
+
+inherit core-image
+
+// see https://layers.openembedded.org/layerindex/branch/master/recipes/
+// if there are from openembedded-core everything is fine
+// otherwise: conf/bblayers.conf
+IMAGE_INSTALL += " vim"
+$ cat conf/local.conf
 ...
+IMAGE_INSTALL_append = " custom-image"
+$ bitbake custom-image
+```
 </div></div>
 
 <hr class="sep-both">
@@ -57,8 +84,8 @@ Stuff that I found, but never read/used yet.
 
 * [_old](_old.md)
 * OpenEmbedded-Core
-* BitBake (Recipes)
-* Poky
+* Layers
+* Recipes
 </div><div>
 
 ...
