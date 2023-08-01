@@ -24,7 +24,6 @@ We can use clang-tidy without a compilation database, but in such case, it may r
 $ clang-tidy source.cpp         # output report
 $ clang-tidy *.cpp > report.txt # save in a file
 $ clang-tidy -fix *.cpp         # run automated fixes
-$ clang-tidy -header-filter='(xxx\.h|include/*)' [...] # skip
 ```
 
 #### .clang-tidy
