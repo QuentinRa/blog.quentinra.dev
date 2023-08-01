@@ -3,6 +3,12 @@
 <div class="row row-cols-md-2"><div>
 
 Petalinux is a build-system built on [Yocto](index.md), and leveraging yocto components and tools for Xilinx platforms.
+
+```shell!
+$ # assuming PETALINUX was download from Xilinx website
+$ source <PETALINUX_DIR>/settings.sh
+$ petalinux-util --version      # OK
+```
 </div><div>
 
 ...
