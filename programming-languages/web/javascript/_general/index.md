@@ -652,6 +652,9 @@ Stuff that I found, but never read/used yet.
 
 ```
 <script src="./popup.js" type="module"></script>
+
+c.innerText.trim().replace(/, (.*)/, "$1")
+("xxx").replaceAll(/([^-.~?!]) ([^ ]+) /g, (v, v1, v2) => console.log(v, v1, v2))
 ```
 
 * [javascript.com](https://www.javascript.com/learn/strings)
