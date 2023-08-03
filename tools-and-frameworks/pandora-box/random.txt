@@ -12,6 +12,10 @@ Key.Z = Keyboard.W
 Key.Q = Keyboard.A
 Key.A = Keyboard.Q
 
+https://completionist.me/
+https://steamhunters.com/profiles
+https://astats.astats.nl/astats/
+
 https://github.com/JustArchiNET/ArchiSteamFarm
 https://github.com/gibbed/SteamAchievementManager
 

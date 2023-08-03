@@ -270,4 +270,6 @@ Stuff that I found, but never read/used yet.
 * message authentication codes (MACs)
 * HMAC
 * certificates (chain of trust), digital signatures
+* [cryptobook](https://cryptobook.nakov.com/)
+* [keylength](https://www.keylength.com/en/)
 </div></div>
