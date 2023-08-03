@@ -465,6 +465,7 @@ https://daily-dev-tips.com/
 https://techhyme.com/
 https://nolongerset.com/
 https://reactgo.com/
+https://jameshfisher.com/
 
 Gits
 https://github.com/trimstray/the-book-of-secret-knowledge

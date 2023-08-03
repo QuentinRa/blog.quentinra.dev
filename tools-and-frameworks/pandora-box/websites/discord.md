@@ -72,4 +72,5 @@ int main(void){
 * [NitroGen](https://github.com/logicguy1/Discord-Nitro-Generator-and-Checker) (👻)
 * [DiscordChatExporter](https://github.com/Tyrrrz/DiscordChatExporter) (👻)
 * [widgetbot.io](https://widgetbot.io/) <small>(👻, bring discord on a website)</small>
+* [undiscord](https://github.com/victornpb/undiscord) (delete messages)
 </div></div>

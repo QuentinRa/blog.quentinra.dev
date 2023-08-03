@@ -46,4 +46,6 @@ Others
   *  For root/administrator accounts, the password should be updated regularly, and its usage should be justified.
 * [Username policy](https://en.wikipedia.org/wiki/Wikipedia:Username_policy#Inappropriate_usernames)
 * Kaspersky, Bitdefender
+* [keycloak](https://www.keycloak.org/)
+* See also: SSO ([openid](https://openid.net/))
 </div></div>
