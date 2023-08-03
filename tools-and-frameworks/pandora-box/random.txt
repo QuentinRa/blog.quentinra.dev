@@ -1,3 +1,7 @@
+--- Browsers
+
+Firefox search shortcuts (*, %, ^...)
+
 --- Games
 
 https://www.autohotkey.com/
@@ -12,6 +16,7 @@ https://github.com/JustArchiNET/ArchiSteamFarm
 https://github.com/gibbed/SteamAchievementManager
 
 https://gamequitters.com/
+https://gamesbolt.com/
 
 --- Images
 
@@ -30,15 +35,33 @@ https://github.com/phw/peek
 https://www.askcorpora.com/
 https://gptzero.me/
 
+--- Translation
+
+https://www.microsofttranslator.com/bv.aspx?from=&to=en&a=a
+
 --- Software
 
 https://paperform.co/
 https://codespace.app/
 
---- extensions
+Elisa music player
+C:\Users\xxx\AppData\Local\Elisa\cache\qmlcache
+https://www.reddit.com/r/kde/comments/scjtku/windows_okukar_how_to_apply_breeze_dark_theme_i/?rdt=53122
+https://www.voidtools.com/
+
+--- fancy
 
 https://volt.fm
 
 --- extensions
 
 https://github.com/dessant/buster
+
+--- ???
+
+something+opt@anything
+https://libera.chat/
+
+--- Ecology
+
+https://app.electricitymaps.com/map
