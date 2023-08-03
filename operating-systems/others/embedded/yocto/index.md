@@ -16,8 +16,6 @@ $ sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrp
 $ git clone -b <poky_version> git://git.yoctoproject.org/poky.git
 $ source poky/oe-init-build-env # load
 ```
-
-[Petalinux](#petalinux) is a build-system built on Yocto, and leveraging yocto components and tools for Xilinx platforms.
 </div></div>
 
 <hr class="sep-both">
