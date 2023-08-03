@@ -640,4 +640,6 @@ Stuff that I found, but never read/used yet.
 * ENS course
 * [awesome-cpp](https://github.com/fffaraz/awesome-cpp)
 * [googlemock](https://github.com/google/googletest/tree/main/googlemock)
+* [boost](https://theboostcpplibraries.com)
+* `-I/path/to/header -L lib -Z ...`
 </div></div>

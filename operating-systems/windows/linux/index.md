@@ -195,4 +195,5 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * If you are using WSL, you might check out [Pengwin](https://github.com/WhitewaterFoundry/Pengwin) <small>(wlinux)</small>
+* [vcxsrv](https://sourceforge.net/projects/vcxsrv/)
 </div></div>
