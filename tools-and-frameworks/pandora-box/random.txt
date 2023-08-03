@@ -17,6 +17,7 @@ https://github.com/gibbed/SteamAchievementManager
 
 https://gamequitters.com/
 https://gamesbolt.com/
+https://www.humblebundle.com/
 
 --- Images
 
@@ -60,7 +61,15 @@ https://github.com/dessant/buster
 --- ???
 
 something+opt@anything
+
+--- Social
+
 https://libera.chat/
+https://kiwiirc.com/
+https://livestorm.co/
+https://calendly.com/
+
+https://www.panopto.com/
 
 --- Ecology
 

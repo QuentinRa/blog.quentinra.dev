@@ -35,10 +35,11 @@
 
 ##### Password Managers
 
+* [Keepass](https://keepass.info/) (recommended)
 * [1password](https://1password.com/)
 * [BitWarden](https://bitwarden.com/)
 * [keepersecurity](https://www.keepersecurity.com/)
-* [lastpass](https://www.lastpass.com/)
+* [lastpass](https://www.lastpass.com/) (not recommended)
 </div><div>
 
 ##### Nice browser extensions

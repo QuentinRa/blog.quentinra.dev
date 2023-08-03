@@ -466,6 +466,10 @@ https://techhyme.com/
 https://nolongerset.com/
 https://reactgo.com/
 https://jameshfisher.com/
+https://techdirectarchive.com/
+https://rdr-it.com/en/
+https://www.kindsonthegenius.com/
+https://www.techopedia.com/
 
 Gits
 https://github.com/trimstray/the-book-of-secret-knowledge
