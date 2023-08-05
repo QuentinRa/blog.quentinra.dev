@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-GitHub Actions were introduced in 2018 to design CI/CD workflow for GitHub projects. Actions are small reusable code that simplifies the process of creating a CI/CD workflow. 
+GitHub Actions were introduced in 2018 to design [CI/CD](index.md) workflow for GitHub projects. Actions are small reusable code that simplifies the process of creating a CI/CD workflow. 
 
 * [GitHub Actions Marketplace](https://github.com/marketplace) (19k actions)
 * [GitHub Actions Documentation](https://docs.github.com/actions)

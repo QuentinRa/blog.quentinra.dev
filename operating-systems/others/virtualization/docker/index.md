@@ -486,4 +486,7 @@ Network
 --cap-add=NET_ADMIN --device=/dev/net/tun
 mknod /dev/net/tun
 ```
+
+* `docker system prune -f`
+* `docker compose build target`
 </div></div>
