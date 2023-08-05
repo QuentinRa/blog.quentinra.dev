@@ -266,6 +266,7 @@ Stuff that I found, but never read/used yet.
 * [typescript-cheat-sheet](https://www.sitepen.com/blog/typescript-cheat-sheet) and [hoomanb](http://hoomanb.com/cs/quickref/typescript_cheatsheet.pdf)
 * `never`
 * [1loc](https://1loc.dev/)
+* tsup
 
 ```json!
 "module": "ESNext",

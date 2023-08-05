@@ -107,10 +107,12 @@ Stuff that I found, but never read/used yet.
 * Layers (priority/...)
 * Recipes
 * Devtool
+* Steps: download (fetch), compile, generate packages, generate image (sdk? rootfs?)
 </div><div>
 
 * IPK/OPKG files
   * swupdate, entware
-* Steps: download (fetch), compile, generate packages, generate image (sdk? rootfs?)
 * SSTATE
+* Yocto native recipes generate tools for our host that will be used to compile the target recipes
+* `bitbake -c xxx -x yyy`
 </div></div>

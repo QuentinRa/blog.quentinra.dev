@@ -25,6 +25,7 @@ List of courses that have note which were not added yet.
 **Programming Languages > Low-Level Languages**
 
 * CPP - ENS notes
+* GDB, GCC
 * Clang tidy
 * Qt
 * Rust ([crates](https://crates.io/))
