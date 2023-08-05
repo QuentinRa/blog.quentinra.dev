@@ -56,7 +56,7 @@ List of courses that have note which were not added yet.
 * Networking
 * Webservers > nginx
 * Windows > Linux, security
-* Others > Cloud, IoT, Docker, vagrant, Qemu, virtualbox, Cloud
+* Others > Cloud, IoT, vagrant, Cloud
 * Utils
 </div></div>
 

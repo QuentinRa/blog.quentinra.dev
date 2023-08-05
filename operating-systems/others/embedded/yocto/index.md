@@ -109,7 +109,8 @@ Stuff that I found, but never read/used yet.
 * Devtool
 </div><div>
 
-* IPK files
+* IPK/OPKG files
+  * swupdate, entware
 * Steps: download (fetch), compile, generate packages, generate image (sdk? rootfs?)
 * SSTATE
 </div></div>
