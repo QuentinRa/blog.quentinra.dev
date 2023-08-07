@@ -26,7 +26,6 @@ List of courses that have note which were not added yet.
 
 * CPP - ENS notes
 * GDB, GCC
-* Clang tidy
 * Qt
 * Rust ([crates](https://crates.io/))
 
