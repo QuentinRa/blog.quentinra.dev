@@ -17,6 +17,8 @@ Android and iOS native mobile development involves different tools and languages
 | IDE        | Android Studio    | XCode                |
 | Networking | Retrofit          | Alamofire            |
 | Store      | Google Play Store | Apple App Store      |
+
+See also: [Kotlin Multiplatform](https://kotlinlang.org/lp/multiplatform/) for cross-platform native apps <small>(beta)</small>.
 </div></div>
 
 <hr class="sep-both">
