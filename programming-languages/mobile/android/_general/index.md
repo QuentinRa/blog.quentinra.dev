@@ -26,10 +26,47 @@ Android projects are managed by [Gradle](/tools-and-frameworks/others/build/grad
 
 <div class="row row-cols-md-2"><div>
 
-...
+#### Activities and fragments
+
+Android apps are made of **activities**. An activity typically corresponds to a specific task or user interaction such as displaying a login screen.
+
+Activities can have one unique view or use multiple views through **fragments**. A fragment is a modular reusable UI component.
+
+**Example** 🔥: an activity for a checkout process could swap between a shipping information and a payment method fragment. Otherwise, you could have one activity for shipping and one for payment.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## Activities
+
+<div class="row row-cols-md-2"><div>
+
+* 👉 Activities must be declared in AndroidManifest.xml
+* 👉 The first screen is usually called "MainActivity"
+* 👉 Activities are associated with a [View](../views/index.md) <small>(ex: R.layout.activity_main)</small>
+
+```kotlin
+class MainActivity : AppCompatActivity(R.layout.activity_main) {
+}
+```
 </div><div>
 
-...
+Extended (and usual) version
+
+```kotlin
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        // Load the associated View
+        // See View to configure the view (listeners...)
+        setContentView(R.layout.activity_main)
+    }
+}
+```
 </div></div>
 
 <hr class="sep-both">
@@ -48,7 +85,6 @@ Stuff that I found, but never read/used yet.
 * [_internet](../__old/internet/index.md)
 </div><div>
 
-* activities (a screen)
 * views and viewgroups (a visual element and containers)
 * fragment (modular UI components)
 * services (independent processes)

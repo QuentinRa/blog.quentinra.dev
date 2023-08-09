@@ -1,42 +1,4 @@
-# Android Activities
-
-<div class="row row-cols-md-2"><div class="align-self-center">
-
-From a user perspective, an activity is a view of your application.
-
-* 👉 Activities must be declared in AndroidManifest.xml
-* 👉 The first screen is usually called "MainActivity"
-* 👉 Activities are associated with a [View](../views/index.md) <small>(ex: R.layout.activity_main)</small>
-
-Using **Fragments**, a developer can use multiple views in one activity. Fragments are reusable views that can be loaded from any Activity.
-
-```kotlin
-class MainActivity : AppCompatActivity(R.layout.activity_main) {
-}
-```
-
-</div><div>
-
-Extended (and usual) version
-
-```kotlin
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        // Load the associated View
-        // See View to configure the view (listeners...)
-        setContentView(R.layout.activity_main)
-    }
-}
-```
-</div></div>
-
-<hr class="sep-both">
-
-## Android Application
+# Android Application
 
 <div class="row row-cols-md-2"><div>
 
