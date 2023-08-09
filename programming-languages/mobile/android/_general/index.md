@@ -8,6 +8,7 @@ Android is an operating system developed by Google. [Native android applications
 * [Android Docs](https://developer.android.com/docs)
 * [Android Teach](https://developer.android.com/teach#lecture-slides-and-code-samples) (slides...)
 * [Android Guides](https://developer.android.com/guide) and [Android UI](https://developer.android.com/develop/ui)
+* [Material Design](https://mui.com/material-ui/) (Google UI Guidelines)
 
 ➡️ Google recommends using Kotlin over Java since 2019.
 </div><div>
@@ -23,11 +24,19 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+* [_general](../__old/_knowledge/index.md)
+* [_activities](../__old/activities/index.md)
+* [_views](../__old/views/index.md)
+* [_viewmodel](../__old/viewmodel/index.md)
+* [_core](../__old/core/index.md)
+* [_internet](../__old/internet/index.md)
+</div><div>
+
 * activities
 * services
 * content providers
 * broadcast receivers
-</div><div>
-
-
+* AndroidManifest.xml
+* src directory
+* resources directory
 </div></div>
