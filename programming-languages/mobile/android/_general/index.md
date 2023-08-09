@@ -26,6 +26,10 @@ Android projects are managed by [Gradle](/tools-and-frameworks/others/build/grad
 
 <div class="row row-cols-md-2"><div>
 
+#### Application
+
+Basically, an android application is an **Application**. Most of the time, we use the default implementation simply loading the main "activity".
+
 #### Activities and fragments
 
 Android apps are made of **activities**. An activity typically corresponds to a specific task or user interaction such as displaying a login screen.
@@ -84,6 +88,93 @@ class MainActivity : AppCompatActivity() {
     }
 }
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Android Application
+
+<div class="row row-cols-md-2"><div>
+
+When an Android application is started, it instantiates the `Application` class and loads the main activity. The implementation by default is enough. But you may need to extend it when you need to:
+
+* 👉 run code only once <small>(in an Activity, the code will be run when we navigate between application, when we rotate the screen...)</small>
+
+For instance, to run the code to create notification channels, if you want to send notifications.
+
+* 👉 listening for changes on the Application level
+
+<details class="details-n">
+<summary>Ex: app foreground/background</summary>
+
+```diff
+-class MainApplication : Application() {
++class MainApplication : Application(), DefaultLifecycleObserver {
+
+    override fun onCreate() {
+        super<Application>.onCreate()
++        ProcessLifecycleOwner.get().lifecycle.addObserver(this)
+    }
+
++    override fun onStart(owner: LifecycleOwner) {
++        // App in the foreground
++    }
+
++    override fun onStop(owner: LifecycleOwner) {
++        //App in the background
++    }
+}
+```
+</details>
+
+</div><div>
+
+```kotlin
+class MainApplication : Application() {
+    override fun onCreate() {
+        super.onCreate()
+    }
+}
+```
+
+In your AndroidManifest.xml, look for the tag "application", and add an attribute "android:name" pointing to your newly created file.
+
+```
+<application
+        ...
+        android:name=".MainApplication"
+        />
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Activity life-cycle
+
+
+<div class="row row-cols-md-2 mt-4"><div class="align-self-center">
+
+Android activities' lifecycle is a bit complex. To summarize,
+
+* 👉 **onCreate** is where you will configure the view
+* 👉 Before presenting the activity, **onStart** is called. If the user press "home"/the activity isn't visible anymore, **onStop** is called.
+* 👉 Before the user can interact with the activity, **onResume** is called. If the user isn't able to interact with the activity anymore, **onPause** is called. The activity is still be visible.
+
+As for **onDestroy**, it is called
+
+* when the user closes the app
+* when the system terminates the app <small>(to free up memory...)</small>
+* when it's easier to kill and recreate the app
+    * 🔤 the language changed
+    * ⚠️ the rotation changed <small>(don't forget to enable rotation on the phone, especially on emulated devices, as it's disabled by default)</small>
+</div><div>
+
+![android_application_lifecycle](../_images/android_application_lifecycle.png)
+
+
+**Note**: **onPause** must be lightweight, otherwise it will delay the other application from showing up in the front screen <small>(ex: a call)</small>.
+
+**Note** (2): A bundle is a **small, in-memory**, dictionary. It's passed to onCreate, if the app was recreated. See [onRestoreInstanceState](https://developer.android.com/reference/android/app/Activity#onRestoreInstanceState(android.os.Bundle)) and [onSaveInstanceState](https://developer.android.com/reference/android/app/Activity#onSaveInstanceState(android.os.Bundle)) too, if you want to use it to store/load data.
 </div></div>
 
 <hr class="sep-both">
