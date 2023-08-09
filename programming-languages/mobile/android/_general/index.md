@@ -13,6 +13,22 @@ Android is an operating system developed by Google. [Native android applications
 ➡️ Google recommends using Kotlin over Java since 2019.
 </div><div>
 
+Android projects are managed by [Gradle](/tools-and-frameworks/others/build/gradle/index.md). It's used to:
+
+* 🌍 manage dependencies <small>(import a library...)</small>
+* ⚒️ compile the code
+* 🗃️ generate the APK <small>(Android Package)</small> installed on devices
+</div></div>
+
+<hr class="sep-both">
+
+## Android Framework
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
 ...
 </div></div>
 
@@ -32,11 +48,15 @@ Stuff that I found, but never read/used yet.
 * [_internet](../__old/internet/index.md)
 </div><div>
 
-* activities
-* services
-* content providers
-* broadcast receivers
-* AndroidManifest.xml
+* activities (a screen)
+* views and viewgroups (a visual element and containers)
+* fragment (modular UI components)
+* services (independent processes)
+* intents (communication between components)
+* content providers (manage app data, enable data sharing)
+* context (app env info, access to resources)
+* broadcast receivers (listen for events)
+* AndroidManifest.xml (metadata, perms, components)
 * src directory
 * resources directory
 </div></div>
