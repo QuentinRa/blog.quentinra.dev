@@ -2,59 +2,6 @@
 
 <hr class="sep-both">
 
-## 🐛 Debugging 🐛 
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-Use the Logger instead of print/println to keep track of what your application is doing (=logs).
-
-You must give a tag to your log. You will be able to filter messages by tag in the Logcat tab.
-
-```kotlin
-// ❌ improper, but faster
-Log.v("SOME_TAG_NAME", "message")
-```
-
-There are 5 levels of logs. You can increase/decrease the level of logs inside Logcat or by editing the log settings.
-
-* `Log.v`: verbose
-* `Log.d`: debug
-* `Log.i`: info
-* `Log.w`: warn
-* `Log.e`: error
-
-If the level of log is **debug**, then all below are included, meaning that only verbose logs won't be shown/logged.
-
-</div><div>
-
-```kotlin
-// ✅ proper logging
-class XXX : YYY() {
-    companion object {
-        private const val TAG = "SOME_TAG_NAME"
-    }
-    
-    fun xxx() {
-        Log.v(TAG, "verbose message")
-    }
-}
-```
-
-OR, with the TAG outside, and not inside a companion object
-
-```kotlin
-// ✅ proper logging
-private const val TAG = "SOME_TAG_NAME"
-
-class XXX : YYY() {    
-    ...
-}
-```
-
-</div></div>
-
-<hr class="sep-both">
-
 ## ️🚀 Threads and Coroutines ☄️
 
 <div class="row row-cols-md-2 mt-3"><div>

@@ -151,13 +151,7 @@ intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
 
 <div class="row row-cols-md-2"><div>
 
-Fragments are in many ways similar to activities. They are loaded by an activity, but they have their own lifecycle.
-
-* 👉 `Activity#onCreated` was split into 3 methods
 * 👉 The navigation is done with a [Navigation Component](../views/index.md#-navigation-component-)
-* 👉 Some code need to be updated <small>(most "`this`" won't work...)</small>
-  * Use `requireActivity()` to get an Activity
-  * Use `activity` to get an Activity <small>(@Nullable)</small>
 
 ```diff
 - val param = intent?.extras?.getString("param")
@@ -173,6 +167,7 @@ Fragments are in many ways similar to activities. They are loaded by an activity
 + val intent = Intent(requireContext(), MainActivity::class.java)
 + val intent = Intent(context!!, MainActivity::class.java)
 ```
+</div><div>
 
 * Use `view`/`requireView()` to get a View
 
@@ -188,32 +183,4 @@ Fragments are in many ways similar to activities. They are loaded by an activity
 - myLiveData.observe(this) {}
 + myLiveData.observe(viewLifecycleOwner) {}
 ```
-</div><div>
-
-#### Create a fragment
-
-* File > New > fragment > [select a template]
-
-```kotlin
-class BlankFragment : Fragment() {
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Load the associated View
-        return inflater.inflate(R.layout.fragment_blank, container, false)
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        // See View to configure the view (listeners...)
-        // use "view.xxx()" instead of "xxx()".
-    }
-}
-```
-
-The Fragment lifecycle is as follows.
-
-![Fragment lifecycle](./_images/android_fragment_lifecycle.png)
 </div></div>
