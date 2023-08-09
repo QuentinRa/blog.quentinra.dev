@@ -30,10 +30,23 @@ Android projects are managed by [Gradle](/tools-and-frameworks/others/build/grad
 
 Android apps are made of **activities**. An activity typically corresponds to a specific task or user interaction such as displaying a login screen.
 
-Activities can have one unique view or use multiple views through **fragments**. A fragment is a modular reusable UI component.
+Activities can have one unique view or they can have multiple views through **fragments**. A fragment is a modular reusable UI component.
 
 **Example** 🔥: an activity for a checkout process could swap between a shipping information and a payment method fragment. Otherwise, you could have one activity for shipping and one for payment.
 </div><div>
+
+#### View and ViewGroups
+
+A **view** is a visual element such as a Button. They are grouped in containers called **ViewGroups** to apply styles on multiple views or create responsive screens <small>(i.g., adapting to the size of the screen)</small>.
+
+#### AndroidManifest.xml
+
+The Android Manifest define things like:
+
+* 🏠 the first activity executed when starting the application
+* 🔐 the permissions required by the application
+* 🗃️ the activities, services, and other components...
+* ...
 </div></div>
 
 <hr class="sep-both">
@@ -42,9 +55,13 @@ Activities can have one unique view or use multiple views through **fragments**.
 
 <div class="row row-cols-md-2"><div>
 
+Every activity is associated with **one** [view](../views/index.md). If this view uses a fragment view, then we can change the fragment displayed in it, effectively allowing us to display multiple views in one activity.
+
 * 👉 Activities must be declared in AndroidManifest.xml
 * 👉 The first screen is usually called "MainActivity"
-* 👉 Activities are associated with a [View](../views/index.md) <small>(ex: R.layout.activity_main)</small>
+* 👉 Activities are associated with a View <small>(ex: R.layout.activity_main)</small>
+
+A short version to declare an activity:
 
 ```kotlin
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
@@ -52,7 +69,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 ```
 </div><div>
 
-Extended (and usual) version
+The extended and most commonly used version is:
 
 ```kotlin
 import androidx.appcompat.app.AppCompatActivity
@@ -86,7 +103,6 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * views and viewgroups (a visual element and containers)
-* fragment (modular UI components)
 * services (independent processes)
 * intents (communication between components)
 * content providers (manage app data, enable data sharing)
