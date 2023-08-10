@@ -32,11 +32,23 @@ Basically, an android application is an **Application**. Most of the time, we us
 
 #### Activities and fragments
 
-Android apps are made of **activities**. An activity typically corresponds to a specific task or user interaction such as displaying a login screen.
+Applications are made of **activities**. An activity is most of the time a screen of an application <small>(ex: the login screen)</small>.
 
-Activities can have one unique view or they can have multiple views through **fragments**. A fragment is a modular reusable UI component.
+In practice, an activity typically corresponds to a specific task or user interaction <small>(ex: we may group the register and login screen in one activity)</small>.
 
-**Example** 🔥: an activity for a checkout process could swap between a shipping information and a payment method fragment. Otherwise, you could have one activity for shipping and one for payment.
+Activities are associated with **one** "screen". When we choose to display multiple screens during one activity, we can use fragments.
+
+A **fragment** is a modular reusable UI component <small>("screens", menubar...)</small>.
+
+👉 You can create apps without any fragments. Using fragments is a choice based on stuff like data handling, code reuse, modularity...
+
+➡️ See also: Single Activity Pattern.
+
+#### Activity/Fragment life-cycle
+
+Both activities and fragments have a life-cycle which we need to be familiar with in order to know where we will write our code.
+
+For instance, code to handle an event, such as a click on a button, would be in `onCreate()` <small>(activity)</small> or `onViewCreated()` <small>(fragment)</small>.
 </div><div>
 
 #### View and ViewGroups
@@ -53,42 +65,6 @@ The Android Manifest define things like:
 * ...
 </div></div>
 
-<hr class="sep-both">
-
-## Activities
-
-<div class="row row-cols-md-2"><div>
-
-Every activity is associated with **one** [view](../views/index.md). If this view uses a fragment view, then we can change the fragment displayed in it, effectively allowing us to display multiple views in one activity.
-
-* 👉 Activities must be declared in AndroidManifest.xml
-* 👉 The first screen is usually called "MainActivity"
-* 👉 Activities are associated with a View <small>(ex: R.layout.activity_main)</small>
-
-A short version to declare an activity:
-
-```kotlin
-class MainActivity : AppCompatActivity(R.layout.activity_main) {
-}
-```
-</div><div>
-
-The extended and most commonly used version is:
-
-```kotlin
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        // Load the associated View
-        // See View to configure the view (listeners...)
-        setContentView(R.layout.activity_main)
-    }
-}
-```
-</div></div>
 
 <hr class="sep-both">
 
@@ -144,6 +120,43 @@ In your AndroidManifest.xml, look for the tag "application", and add an attribut
         ...
         android:name=".MainApplication"
         />
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Activities
+
+<div class="row row-cols-md-2"><div>
+
+Every activity is associated with **one** [view](../views/index.md). If this view uses a fragment view, then we can change the fragment displayed in it, effectively allowing us to display multiple views in one activity.
+
+* 👉 Activities must be declared in AndroidManifest.xml
+* 👉 The first screen is usually called "MainActivity"
+* 👉 Activities are associated with a View <small>(ex: R.layout.activity_main)</small>
+
+A short version to declare an activity:
+
+```kotlin
+class MainActivity : AppCompatActivity(R.layout.activity_main) {
+}
+```
+</div><div>
+
+The extended and most commonly used version is:
+
+```kotlin
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        // Load the associated View
+        // See View to configure the view (listeners...)
+        setContentView(R.layout.activity_main)
+    }
+}
 ```
 </div></div>
 
