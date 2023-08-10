@@ -43,13 +43,13 @@ A **fragment** is a modular reusable UI component <small>("screens", menubar...)
 👉 You can create apps without any fragments. Using fragments is a choice based on stuff like data handling, code reuse, modularity...
 
 ➡️ See also: Single Activity Pattern.
+</div><div>
 
 #### Activity/Fragment life-cycle
 
 Both activities and fragments have a life-cycle which we need to be familiar with in order to know where we will write our code.
 
 For instance, code to handle an event, such as a click on a button, would be in `onCreate()` <small>(activity)</small> or `onViewCreated()` <small>(fragment)</small>.
-</div><div>
 
 #### View and ViewGroups
 
@@ -72,13 +72,19 @@ The Android Manifest define things like:
 
 <div class="row row-cols-md-2"><div>
 
-When an Android application is started, it instantiates the `Application` class and loads the main activity. The implementation by default is enough. But you may need to extend it when you need to:
+When an Android application is started, it instantiates the `Application` class which loads the main activity. 
 
-* 👉 run code only once <small>(in an Activity, the code will be run when we navigate between application, when we rotate the screen...)</small>
+👉 The default implementation is enough most of the time.
 
-For instance, to run the code to create notification channels, if you want to send notifications.
+#### Use case: run code only once
 
-* 👉 listening for changes on the Application level
+Code loaded in an Activity will be run when we navigate between activities, when we rotate the screen... The only way to run code once is inside `Application#onCreate`.
+
+Ex: the code to create notification channels <small>(see notifications)</small>.
+
+#### Use case: Listen for application-level changes
+
+<p></p>
 
 <details class="details-n">
 <summary>Ex: app foreground/background</summary>
@@ -129,11 +135,11 @@ In your AndroidManifest.xml, look for the tag "application", and add an attribut
 
 <div class="row row-cols-md-2"><div>
 
-Every activity is associated with **one** [view](../views/index.md). If this view uses a fragment view, then we can change the fragment displayed in it, effectively allowing us to display multiple views in one activity.
+Activities are screens of an application, while in fact, one activity can serve multiple screens using fragments according to the app design.
 
 * 👉 Activities must be declared in AndroidManifest.xml
 * 👉 The first screen is usually called "MainActivity"
-* 👉 Activities are associated with a View <small>(ex: R.layout.activity_main)</small>
+* 👉 An activity is associated with **one** [layout](../views/index.md) <small>(ex: R.layout.activity_main)</small>
 
 A short version to declare an activity:
 
@@ -152,8 +158,7 @@ import android.os.Bundle
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // Load the associated View
-        // See View to configure the view (listeners...)
+        // Load the associated layout
         setContentView(R.layout.activity_main)
     }
 }
@@ -232,6 +237,10 @@ class BlankFragment : Fragment() {
 }
 ```
 </details>
+
+#### Load a fragment in an activity
+
+...
 </div><div>
 
 The Fragment lifecycle is as follows.
@@ -300,13 +309,13 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [_general](../__old/_knowledge/index.md)
-* [_activities](../__old/activities/index.md)
 * [_views](../__old/views/index.md)
 * [_viewmodel](../__old/viewmodel/index.md)
 * [_core](../__old/core/index.md)
 * [_internet](../__old/internet/index.md)
 </div><div>
 
+* load a fragment inside an activity
 * views and viewgroups (a visual element and containers)
 * services (independent processes)
 * intents (communication between components)
