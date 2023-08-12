@@ -6,7 +6,7 @@ Each activity or fragment is associated with **one** layout. A layout is an [XML
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<XXXLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:app="http://schemas.android.com/apk/res-auto"
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
@@ -17,7 +17,15 @@ Each activity or fragment is associated with **one** layout. A layout is an [XML
 ```
 </div><div>
 
-...
+XXXLayout is called the `root`. We add view components inside.
+
+<br>
+
+⚒️ `tools:context` point to the associated Fragment/Activity in YOUR code, so you must give it an appropriate value.
+
+✨ `xmlns:` are very important. You can't use `android:` if you didn't add the matching `xmlns:android`. They are added to the **root**.
+
+➡️ Layouts are usually populated using the [Layout Editor](../tools/and/index.md) as doing so manually can be complicated.
 </div></div>
 
 <hr class="sep-both">

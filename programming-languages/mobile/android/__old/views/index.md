@@ -1,17 +1,5 @@
 # Android Views
 
-<div class="row row-cols-md-2"><div>
-</div><div>
-
-If you copy-pasted an XML, or tried to edit it manually, you must know
-
-* 👉 FrameLayout <small>(or the parent of every other)</small> is called the **root**.
-* 👉 `xmlns:` are very important. You can't use `android:` if you didn't add the matching `xmlns:android`. They are added to the **root**.
-* 👉 `tools:context` point to the associated Fragment/Activity in YOUR code, so you must give it an appropriate value.
-
-Aside from that, almost every file is an XML file. This is a sort of HTML with tags `<MyTag></MyTag>`, or `<MyTag />`, in which you can add attributes  `<ImageView src="/path/to/my/image" />`.
-</div></div>
-
 <hr class="sep-both">
 
 ## 📦 Resources 📦
@@ -40,34 +28,6 @@ Go to drawables, and click on "+" > Vector Asset. Then, click on the <i class="b
 
 On Android 20, or older, you need to add this in build.gradle > Android > defaultConfig: `vectorDrawables.useSupportLibrary = true`.
 </div></div>
-
-<hr class="sep-both">
-
-## Layout Editor
-
-Instead of editing the XML manually, you will usually use the Design mode.
-
-<div class="row row-cols-md-2 mx-0"><div class="align-self-center">
-
-<ol style="list-style-type: lower-alpha">
-<li><b>Mode</b>: you can switch to the XML/Layout editor here</li>
-<li><b>Palette</b>: views that you can drag and drop to the design view</li>
-<li><b>Design view</b>: what the user will see</li>
-<li><b>BluePrint view</b>: Design View, but with hidden elements too</li>
-<li><b>Component tree</b>: list of all views of your screen</li>
-<li><b>Attributes</b>: edit the properties of a view</li>
-
-</ol>
-</div><div>
-
-![Layout Editor](_images/layout_editor.png)
-</div></div>
-
-**TIP**: you should rely on <kbd>CTRL+F</kbd> to search for attributes, or by clicking on the search icon at the top of the "Attributes" window.
-
-**TIP**: you will most likely have a time when you want to replace a view with another view. In the component tree, right-click on a view, and use "convert view". You could also manually get the job done by directly editing the `.xml`.
-
-<hr class="sep-both">
 
 ## Views
 
