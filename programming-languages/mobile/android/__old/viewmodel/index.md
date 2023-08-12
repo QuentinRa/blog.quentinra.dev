@@ -7,17 +7,6 @@ A ViewModel is linking the model of your application <small>(=room database, fil
 * 👉 If the view changed, you may want to change the model <small>(process the user input...)</small>
 * 👉 If the model changed, you may want to update the view <small>(serve the updated data to the user)</small>
 </div><div>
-
-Another alternative to ViewModel is using a Bundle, but they are limited in size, so they're not convenient to use.
-
-```kotlin
-class BlankViewModel : ViewModel() {
-    // implement your ViewModel here
-    // ❌ the simplest usage, stock variables
-    var count = 0
-    // ✅ see LiveData for proper usage
-}
-```
 </div></div>
 
 <hr class="sep-both">
