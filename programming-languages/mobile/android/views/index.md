@@ -30,6 +30,77 @@ XXXLayout is called the `root`. We add view components inside.
 
 <hr class="sep-both">
 
+
+## Views
+
+<div class="row row-cols-md-2"><div>
+
+In Android, every component such as an Image is called a **View**. Every view must have at least these two attributes
+
+* **android:layout_width**: wrap, match_parent, a fixed width
+* **android:layout_height**: wrap, match_parent, a fixed height
+
+And these attributes are available on any View
+
+* **android:padding**: internal gap <small>(ex: 10dp)</small>
+* **android:layout_margin**: external gap <small>(ex: 10dp)</small>
+* **android:visibility**: View.VISIBLE / View.INVISIBLE / View.GONE
+
+##### TextView: display a text
+
+[TextView extends View](https://developer.android.com/reference/android/widget/TextView).
+
+```xml
+<TextView
+    android:text="Shown in the app"
+    tools:text="Shown in the DesignView"
+    />
+```
+
+##### Button: a button
+
+[Button extends TextView](https://developer.android.com/reference/android/widget/Button).
+</div><div>
+
+##### ImageView: display an image
+
+[ImageView extends View](https://developer.android.com/reference/android/widget/ImageView)
+
+```
+<!-- scaleType="centerCrop" is used for 9patches scaling -->
+<ImageView 
+    tools:srcCompat="YOUR_IMAGE"
+    android:scaleType="centerCrop"
+    />
+```
+
+##### EditText: an input field
+
+[EditText extends TextView](https://developer.android.com/reference/android/widget/EditText). See also [InputType](https://developer.android.com/develop/ui/views/touch-and-input/keyboard-input/style) and [Autofill](https://developer.android.com/guide/topics/text/autofill-optimize).
+
+```
+<EditText
+    android:inputType="text"
+    android:autofillHints="username"
+    android:hint="Placeholder in the app"
+    tools:hint="Placeholder in the DesignView"
+    />
+```
+
+##### Switch: check or uncheck
+
+[Switch extends Button](https://developer.android.com/reference/android/widget/Switch) <small>(indirectly)</small> and [SwitchCompat](https://developer.android.com/reference/androidx/appcompat/widget/SwitchCompat).
+
+```
+<Switch android:checked="true" />
+<!-- ✅ better -->
+<androidx.appcompat.widget.SwitchCompat
+    android:checked="true" />
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
