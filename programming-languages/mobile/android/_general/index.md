@@ -312,7 +312,6 @@ Stuff that I found, but never read/used yet.
 * [_views](../__old/views/index.md)
 * [_viewmodel](../__old/viewmodel/index.md)
 * [_core](../__old/core/index.md)
-* [_internet](../__old/internet/index.md)
 </div><div>
 
 * load a fragment inside an activity

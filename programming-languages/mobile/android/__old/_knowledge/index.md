@@ -284,14 +284,6 @@ intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
 ```
 </div><div>
 
-* Use `view`/`requireView()` to get a View
-
-```diff
-- val myButton = findViewById<Button>(R.id.myButton)
-+ val myButton = view.findViewById<Button>(R.id.myButton)
-+ val myButton = requireView().findViewById<Button>(R.id.myButton)
-```
-
 * Use `viewLifecycleOwner` to get a LifecycleOwner
 
 ```diff

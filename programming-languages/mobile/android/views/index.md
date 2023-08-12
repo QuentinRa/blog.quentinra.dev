@@ -172,8 +172,10 @@ You can then use `findViewById(some_id)` to get a view.
 
 ```kotlin
 // ➡️ In Activity#onCreate
-// ➡️ In Fragment#onViewCreated
 val x = findViewById<SomeViewHere>(R.id.someUniqIdHere)
+// ➡️ In Fragment#onViewCreated
+val x = view.findViewById<SomeViewHere>(R.id.someUniqIdHere)
+val x = requireView().findViewById<SomeViewHere>(R.id.someUniqIdHere)
 ```
 
 #### TextView
