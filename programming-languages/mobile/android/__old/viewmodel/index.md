@@ -6,15 +6,7 @@ A ViewModel is linking the model of your application <small>(=room database, fil
 
 * 👉 If the view changed, you may want to change the model <small>(process the user input...)</small>
 * 👉 If the model changed, you may want to update the view <small>(serve the updated data to the user)</small>
-
-```gradle
-implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
-```
-
-A ViewModel is created when the **application** is started, and destroyed when the **application** is destroyed <small>(`ViewModel#onCleared()`)</small>.
 </div><div>
-
-When an Activity is destroyed, the ViewModel isn't, so we can use it to fill again our View <small>(ex: rotating the screen clear input fields)</small>.
 
 Another alternative to ViewModel is using a Bundle, but they are limited in size, so they're not convenient to use.
 
