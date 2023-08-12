@@ -34,10 +34,56 @@ Each activity or fragment is associated with **one** layout file. It's an [XML](
 
 <div class="row row-cols-md-2"><div>
 
-...
+Layouts are a category of **ViewGroups**. They are [Views](#views) with predefined settings to arrange children views.
+For instance, a `GridLayout` will arrange its nested views in a grid-like format.
+
+They are also convenient to apply a style. For instance, to add some margin to the left, you may group elements in a layout, and apply the margin to the layout instead of each view.
+
+#### LinearLayout: Horizontal/Vertical
+
+[Documentation](https://developer.android.com/develop/ui/views/layout/linear)
+
+```
+<LinearLayout
+    ...
+    android:orientation="vertical"
+    android:orientation="horizontal"
+    >
+      <!-- optional weight (responsive width/height) -->
+      <XXXView
+           android:layout_weight="1"
+           />
+</LinearLayout>
+```
+
+#### FrameLayout: a layout with only one child.
+
+[Documentation](https://developer.android.com/reference/android/widget/FrameLayout)
+
+```
+<FrameLayout ...>
+  <!-- usually a recycler view, or a fragment container -->
+</FrameLayout>
+```
 </div><div>
 
-...
+
+#### ConstraintLayout: a flexible way to design views
+
+[Documentation](https://developer.android.com/develop/ui/views/layout/constraint-layout)
+```
+implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+```
+
+A constraint layout is rendering elements relatively to another component <small>(which could be the screen)</small>. You will set margins which are the gap with the other component.
+
+![Constraint Layout Margins Relative](../_images/cl_margins_relative.png)
+
+On a screen of 226px, if you define that the component should have a margin-left of 140, and a margin-right of 26. The component will be centered within the 60 remaining px called **free space**.
+
+To change the behavior of how the free space is handled, simply edit the layout width/height OR you can use a shortcut by clicking on arrows such as ">>" right where you added margins.
+
+![Constraint Layout Margins Kind](../_images/cl_margins_kind.png)
 </div></div>
 
 <hr class="sep-both">
