@@ -35,14 +35,120 @@ implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
 To define a basic blank model:
 
 ```kotlin
-class BlankViewModel : ViewModel() {
+class EmptyViewModel : ViewModel() {
     // implement your ViewModel here
     // e.g. methods to store data/query an API...
     // 🔥 the simplest usage, stock data in variables
     var count = 0
 }
 ```
+
+The next step is to load the view model inside an activity or a fragment. The code is different for Activities and Fragments.
+
+#### Activity
+
+This import is **unneeded** if you added the one below for fragments.
+
+```gradle
+implementation "androidx.activity:activity-ktx:1.6.1"
+```
+
+```kotlin
+class MainActivity : AppCompatActivity() {
+    private val viewModel: EmptyViewModel by viewModels()
+    
+    override fun onCreate(savedInstanceState: Bundle?) {
+        // ...
+        // ex: init the view with count
+        val count = viewModel.count
+    }
+}
+```
 </div><div>
+
+#### Fragment
+
+This will import the function for use both in Fragments and Activities.
+
+```gradle
+implementation "androidx.fragment:fragment-ktx:1.5.5"
+```
+
+```kotlin
+class BlankFragment : Fragment() {
+    private val viewModel: EmptyViewModel by viewModels()
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        // ex: init the view with count
+        val count = viewModel.count
+    }
+}
+```
+
+<br>
+
+#### ViewModel sharing
+
+Any viewModel is **not** shared between activities or fragments. For instance, two activities with the code for [activities](#activity) will create two separate viewModel instances.
+
+For fragments, it's possible to create an activity-scoped viewModel, which is shared between all fragments of an activity:
+
+```diff
+class BlankFragment : Fragment() {
+-    private val viewModel: EmptyViewModel by viewModels()
++    private val viewModel: EmptyViewModel by activityViewModels()
+}
+```
+
+#### Other code samples
+
+<p></p>
+
+<details class="details-n">
+<summary>Alternative: <code>ViewModelProvider</code></summary>
+
+```kotlin
+class MainActivity : AppCompatActivity() {
+    private lateinit var viewModel: BlankViewModel
+    
+    override fun onCreate(savedInstanceState: Bundle?) {
+        // ...
+        // init the view with count
+        viewModel = ViewModelProvider(this)[BlankViewModel::class.java]
+        val count = viewModel.count
+    }   
+}
+```
+</details>
+
+<details class="details-n">
+<summary>Pass arguments to your ViewModel</summary>
+
+The example below is with an Integer.
+
+```kotlin
+class XXXViewModel(v: Integer) : ViewModel() {
+    // ...
+}
+```
+
+```kotlin
+class XXXViewModelFactory(private val v: Integer) : ViewModelProvider.Factory {
+    @Suppress("UNCHECKED_CAST")
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        return XXXViewModel(v) as T
+    }
+}
+```
+
+```diff
+- private val viewModel: XXXViewModel by viewModels()
++ private val viewModel: XXXViewModel by viewModels {
++    XXXViewModelFactory(10)
++}
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
