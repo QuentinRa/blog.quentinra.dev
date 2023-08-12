@@ -156,6 +156,152 @@ And these attributes are available on any View
 ```
 </div></div>
 
+
+<hr class="sep-both">
+
+## 🔗 Get access to a view from the code 🖇️
+
+<div class="row row-cols-md-2"><div>
+
+You can then use `findViewById(some_id)` to get a view.
+
+```diff
+<SomeViewHere
++        android:id="@+id/someUniqIdHere"
+```
+
+```kotlin
+// ➡️ In Activity#onCreate
+// ➡️ In Fragment#onViewCreated
+val x = findViewById<SomeViewHere>(R.id.someUniqIdHere)
+```
+
+#### TextView
+
+```kotlin
+var t = findViewById<TextView>(...)
+t.text = "Some text"
+t.setText(R.string.some_string)
+```
+
+#### Button
+
+```kotlin
+val b = findViewById<Button>(...)
+b.setOnClickListener {
+    println("Clicked on myButton")
+}
+```
+</div><div>
+
+#### ImageView
+
+```kotlin
+var i = findViewById<ImageView>(...)
+// set image from the code
+i.setImageResource(R.drawable.some_drawable_here)
+```
+
+#### EditText
+
+```kotlin
+val e = findViewById<EditText>(...)
+// handle key events
+e.setOnKeyListener { v, keyCode, keyEvent ->
+    if (keyCode == KeyEvent.KEYCODE_A) {
+        return@setOnKeyListener true
+    }
+    return@setOnKeyListener false
+}
+```
+
+#### Switch/SwitchCompact
+
+```kotlin
+var s = findViewById<SwitchCompact>(...)
+if(s.isChecked) {}
+```
+</div></div>
+
+
+<hr class="sep-both">
+
+## ✨ View Binding ✨
+
+<div class="row row-cols-md-2"><div>
+
+ViewBinding is a new alternative to `findViewById`.
+
+Ids declared in **activity_main.xml** will be available via a generated class called **ActivityMainBinding** <small>(matching the XML filename)</small>.
+
+First, add the viewBinding build feature.
+
+```diff
+android {
+    ...
+
++    buildFeatures {
++        viewBinding = true
++    }
+}
+```
+
+</div><div>
+
+Assume that we have an XML file with
+
+```xml
+<SomeViewHere
+    android:id="@+id/someUniqIdHere"
+    ...
+/>
+```
+
+This is how you could adapt your previous code with `findViewById`.
+
+<details class="details-e">
+<summary>Ex: activity_main.xml in an Activity</summary>
+
+```diff
+class MainActivity : AppCompatActivity() {
++    private lateinit var binding: ActivityMainBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
++        binding = ActivityMainBinding.inflate(layoutInflater)
+
+-        setContentView(R.layout.activity_main)
++        setContentView(binding.root)
+
+-        val x = findViewById<SomeViewHere>(R.id.someUniqIdHere)
++        val x = binding.someUniqIdHere
+    }
+}
+```
+</details>
+
+<details class="details-e">
+<summary>Ex: fragment_blank.xml in a Fragment</summary>
+
+```diff
+class BlankFragment : Fragment() {
++    private lateinit var binding: FragmentBlankBinding
+
+    override fun onCreateView(...): View? {
+-        return inflater.inflate(R.layout.fragment_blank, container, false)
++        binding = FragmentBlankBinding.inflate(layoutInflater, container, false)
++        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
++        val x = binding.someUniqIdHere
+    }
+}
+```
+</details>
+</div></div>
+
 <hr class="sep-both">
 
 ## 👻 To-do 👻
@@ -164,8 +310,10 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-xxx
+* [RadioButton](https://developer.android.com/reference/android/widget/RadioButton), and [RadioGroup](https://developer.android.com/reference/android/widget/RadioGroup)
+    * RadioGroup#`checkedButton`
+    * RadioGroup#`setOnCheckedChangeListener`: parameters are radio group, and the Id of the checked button.
 </div><div>
 
-
+* `tools:visibility` and the icon in the Design View to swap
 </div></div>
