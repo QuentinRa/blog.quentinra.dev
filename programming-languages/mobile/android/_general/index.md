@@ -65,6 +65,38 @@ The Android Manifest define things like:
 * ...
 </div></div>
 
+<hr class="sep-both">
+
+## Model View ViewModel (MVVM)
+
+<div class="row row-cols-md-2"><div>
+
+**Model View ViewModel**, or MVVM for short, is a popular architectural design pattern in which
+
+* 📦 The **model** is the classes used to store Data
+  * `data class XXX(...)`
+  * They are usually stored in `.data`
+  * Classes interacting with the API/Room/the FileSystem...
+
+<br>
+
+* 🖼️ The **view** is what is displayed to the user
+  * Most XML displayed <small>(res/layout, res/menu...)</small>
+  * They are usually stored in `.ui.viewname`
+</div><div>
+
+* 💍 The **ViewModel** (ViewModel + LiveData)
+  * They are usually stored in `.ui.viewname` with their View
+  * See also: DataBinding
+
+The "main" component is the ViewModel. This is a component that will link the View with the model. When the model is updated, it will update the View. When the View is updated, it will update the model.
+
+<br>
+
+* ➕ Controllers (Activities, Fragments)
+
+There are still controllers like in MVC. They are responsible for rendering the view, and listening to events.
+</div></div>
 
 <hr class="sep-both">
 
@@ -310,8 +342,7 @@ Stuff that I found, but never read/used yet.
 
 * [_general](../__old/_knowledge/index.md)
 * [_views](../__old/views/index.md)
-* [_viewmodel](../__old/viewmodel/index.md)
-* [_core](../__old/core/index.md)
+* [_tuning](../__old/core/tuning.md)
 </div><div>
 
 * load a fragment inside an activity
