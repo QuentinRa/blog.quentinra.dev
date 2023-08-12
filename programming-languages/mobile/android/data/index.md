@@ -234,6 +234,33 @@ viewModel.count.observe(viewLifecycleOwner) {
 </details>
 
 <details class="details-n">
+<summary>Handle Loading or Errors using LiveData</summary>
+
+```
+private val _state = MutableLiveData<LoadingState>()
+val state : LiveData<LoadingState>  = _state
+
+enum class LoadingState {
+    LOADING, SUCCESS, FAILED
+}
+```
+
+The views will observe this state, and show an appropriate message to the user such as a Toast for errors.
+
+Inside the ViewModel, when doing API requests, we set the state:
+
+```kotlin
+// set the state before the request
+_state.value = LoadingState.LOADING
+// ... An API request
+// set the state according to the result
+_state.value =
+    if (...) LoadingState.SUCCESS
+    else LoadingState.FAILED
+```
+</details>
+
+<details class="details-n">
 <summary>📖 Transformations</summary>
 
 Transformations will create a "fake" LiveData from another LiveData. For instance, to convert a string to a date.
