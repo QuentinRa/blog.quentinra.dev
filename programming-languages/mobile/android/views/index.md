@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-Each activity or fragment is associated with **one** layout. A layout is an [XML](/programming-languages/others/data/xml.md) file stored in **app/res/layout**. It defines the appearance of the user interface elements. A layout can also be used in another layout.
+Each activity or fragment is associated with **one** layout file. It's an [XML](/programming-languages/others/data/xml.md) file stored in **app/res/layout**. Inside there is a [layout](#layouts) with children [views](#views) defining the appearance of the user interface.
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -12,24 +12,35 @@ Each activity or fragment is associated with **one** layout. A layout is an [XML
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              tools:context=".MainActivity" >
-  <!-- YOUR VIEW HERE -->
-</FrameLayout>
+  <!-- NESTED TAGS -->
+</XXXLayout>
 ```
 </div><div>
 
-XXXLayout is called the `root`. We add view components inside.
+`XXXLayout` is called the `root`. `<XXXLayout>...</XXXLayout>` is called a tag. They can have attributes such as `<XXX attribute='value'>` and may contain nested tags, which could be [views](#views) or [layouts](#layouts).
 
-<br>
+<p class="text-center">A few things to know</p>
 
 ⚒️ `tools:context` point to the associated Fragment/Activity in YOUR code, so you must give it an appropriate value.
 
 ✨ `xmlns:` are very important. You can't use `android:` if you didn't add the matching `xmlns:android`. They are added to the **root**.
 
-➡️ Layouts are usually populated using the [Layout Editor](../tools/and/index.md) as doing so manually can be complicated.
+🚀 Layouts are usually populated using the [Layout Editor](../tools/and/index.md) as doing so manually can be complicated.
 </div></div>
 
 <hr class="sep-both">
 
+## Layouts
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
 
 ## Views
 
