@@ -153,6 +153,49 @@ class XXXViewModelFactory(private val v: Integer) : ViewModelProvider.Factory {
 
 <hr class="sep-both">
 
+## LiveData
+
+<div class="row row-cols-md-2"><div>
+
+A **LiveData** 📩 is a **life-cycle aware observable** variable.
+
+Observable means we can execute some code when the variable's value changes. [Life-cycle](../_general/index.md#activity-life-cycle) aware means it doesn't check if the variable changed when the application is not either **Started** or **Resumed**.
+
+```gradle
+implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
+```
+
+✅ They are used to update the view when the model changes.
+
+A **LiveData** is wrapping a variable and add to it its logic. For instance, `LiveData<Int>` wrap a value of type `Int`.
+
+The value can be null, so we have to use null-safe operators. <small>(`!!`, `?`, `?:`...)</small>.
+
+```kotlin
+val count : LiveData<Int> = MutableLiveData<Int>(0)
+if (count.value!! == 0) {} // true
+```
+</div><div>
+
+The `value` attribute of a `LiveData<T>` cannot be modified, while we can for a `MutableLiveData<T>`. We usually use `MutableLiveData<T>` internally, and only expose a `LiveData<T>` to other classes.
+
+```
+class MainViewModel : ViewModel() {
+    // use a backing field
+    // count is unmodifiable from the "outside"
+    var _count = MutableLiveData(0)
+    val count : LiveData<Int> = _count
+
+    // only allow count to be increased
+    fun increaseCount() {
+        _count.value = _count.value!!.inc()
+    }
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

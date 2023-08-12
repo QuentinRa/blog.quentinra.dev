@@ -14,35 +14,7 @@ A ViewModel is linking the model of your application <small>(=room database, fil
 ## 🌀 LiveData 🌀
 
 <div class="row row-cols-md-2"><div>
-
-A **LiveData** is an observable variable. It means a component can execute some code when the variable changes.
-
-They are usually used to update the View when a variable in the model changed.
-
-```gradle
-implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
-```
-
-It's worth noting that LiveDatas are **life-cycle aware**, so observers are only called when the app is either **Started** or **Resumed**.
-
-A **LiveData** is wrapping a type inside **value**. For instance, **LiveData<Int>** will have a **value** of type **Int**.
-
-```kotlin
-val count : LiveData<Int> = MutableLiveData<Int>(0)
-if (count.value!! == 0) {} // true
-```
-
-LiveData variables are stored inside a ViewModel.
 </div><div>
-
-As **value may be null**, we need to use null-safe operators <small>(`!!`, `?`, `?:`...)</small>. The difference between a LiveData and a MutableLiveData is that in the latter, you can change `value`.
-
-```kotlin
-// count.value will be null
-val count : MutableLiveData<Int> = MutableLiveData<Int>()
-// count.value is now '10'
-count.value = 10
-```
 
 Each time **value is assigned** <small>(modifying value won't trigger observers)</small>, observers will be called. In an Activity/Fragment
 
@@ -66,22 +38,6 @@ viewModel.count.observe(this) {
 *Listeners, and everything related to Views are explained in [Views](../views/index.md).*
 
 <div class="row row-cols-md-2"><div>
-
-First, we are defining a ViewModel.
-
-```kotlin
-class MainViewModel : ViewModel() {
-    // use a backing field
-    // count is unmodifiable from the "outside"
-    var _count = MutableLiveData(0)
-    val count : LiveData<Int> = _count
-
-    // only allow count to be increased
-    fun increaseCount() {
-        _count.value = _count.value!!.inc()
-    }
-}
-```
 
 It's important to note that you can't simply call `_count.value!!.inc()`. A LiveData is only calling `observe` when the property `value` is assigned to a new value, not when the property is modified.
 

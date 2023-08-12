@@ -315,7 +315,6 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * load a fragment inside an activity
-* views and viewgroups (a visual element and containers)
 * services (independent processes)
 * intents (communication between components)
 * content providers (manage app data, enable data sharing)
