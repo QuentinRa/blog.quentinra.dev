@@ -6,9 +6,10 @@ Android is an operating system developed by Google. [Native android applications
 
 * [Android Courses](https://developer.android.com/courses/) + [CodeLabs](https://codelabs.developers.google.com/?cat=Android) (official, free)
 * [Android Docs](https://developer.android.com/docs)
-* [Android Teach](https://developer.android.com/teach#lecture-slides-and-code-samples) (slides...)
-* [Android Guides](https://developer.android.com/guide) and [Android UI](https://developer.android.com/develop/ui)
-* [Material Design](https://mui.com/material-ui/) (Google UI Guidelines)
+* [Android Guides](https://developer.android.com/guide)
+* [Android Teach](https://developer.android.com/teach#lecture-slides-and-code-samples) <small>(slides...)</small>
+* [Android UI](https://developer.android.com/develop/ui) and [Material Design](https://mui.com/material-ui/) <small>(Google UI Guidelines)</small>
+* [Android Compose](https://developer.android.com/courses/android-basics-compose/course) and [Jetpack Compose](https://developer.android.com/courses/jetpack-compose/course) <small>(New Way To Build UI)</small>
 
 ➡️ Google recommends using Kotlin over Java since 2019.
 </div><div>
@@ -341,7 +342,7 @@ Stuff that I found, but never read/used yet.
 
 * [_general](../__old/_knowledge/index.md)
 * Android ProGuard
-* Modern Android Development (MAD)
+* [Modern Android Development (MAD)](https://developer.android.com/courses/pathways/android-architecture)
 * Android Tests + Advanced testing
 * Recommended App architecture
 </div><div>

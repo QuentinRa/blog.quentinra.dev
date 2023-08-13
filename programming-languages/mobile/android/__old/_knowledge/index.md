@@ -145,21 +145,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-Links
-
-* [Android compose](https://developer.android.com/courses/android-basics-compose/course)
 * [Android coroutines](https://developer.android.com/courses/pathways/android-coroutines)
-* [Jetpack Compose](https://developer.android.com/courses/jetpack-compose/course)
-* [Android architecture](https://developer.android.com/courses/pathways/android-architecture)
-* [KTX](https://developer.android.com/kotlin/ktx)
 </div><div>
-
-Random
-
-```kotlin
-val preferences: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
-if (preferences.getBoolean("key", false)) {}
-```
 
 ```kotlin
 view.context.getString(...)
