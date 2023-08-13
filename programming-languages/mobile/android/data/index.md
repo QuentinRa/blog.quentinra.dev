@@ -325,9 +325,9 @@ Another alternative to ViewModel is using a **Bundle** 🎒, but they are limite
 
 * Datastore
 * File system
-* Room
 * backups (see [autobackups](https://developer.android.com/guide/topics/data/autobackup))
 </div><div>
 
 * Advanced Data Binding
+* [Android Basics: Room](https://developer.android.com/courses/android-basics-kotlin/unit-5)
 </div></div>

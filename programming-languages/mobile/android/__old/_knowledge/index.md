@@ -145,99 +145,13 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* NFC
-* Deep Link
-* Talkback
-* Tint/Dark mode
-
-<details class="details-e">
-<summary>Theming?</summary>
-
-[Theming](https://material.io/design/introduction#theming) and [Colors](https://material.io/design/material-theming/implementing-your-theme.html#color) and [ColorTools](https://m2.material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=00E5FF). [Dark Theme](https://developer.android.com/codelabs/basic-android-kotlin-training-change-app-theme)
-
-```
-style="?attr/materialButtonOutlinedStyle"
-android:textAppearance="?attr/textAppearanceHeadline6"
-name="Theme.XXX"
-
-<item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
-<item name="radioButtonStyle">@style/Widget.TipTime.CompoundButton.RadioButton</item>
-<item name="switchStyle">@style/Widget.TipTime.CompoundButton.Switch</item>
-```
-
-By convention, each style should have a parent, and be named as the parent, while replacing the "MaterialComponents" with "YOUR_APP_NAME".
-
-```xml
-<examples>
-  <style name="Widget.YOUR_APP_NAME.TextView" parent="Widget.MaterialComponents.TextView">
-  </style>
-  <style name="Widget.xxx.CompoundButton.RadioButton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
-    <item name="android:paddingStart">8dp</item>
-    <item name="android:textAppearance">?attr/textAppearanceBody1</item>
-  </style>
-  <style name="Widget.xxx.CompoundButton.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
-    <item name="android:minHeight">48dp</item>
-    <item name="android:gravity">center_vertical</item>
-    <item name="android:textAppearance">?attr/textAppearanceBody1</item>
-  </style>
-  <style name="Widget.xxxx.TextView" parent="Widget.MaterialComponents.TextView">
-    <item name="android:minHeight">48dp</item>
-    <item name="android:gravity">center_vertical</item>
-    <item name="android:textAppearance">?attr/textAppearanceBody1</item>
-  </style>
-</examples>
-```
-</details>
-
-<details class="details-e">
-<summary>Icons</summary>
-
-Different manufacturers may show app icons in different shapes than
-the circular icon shape: square shape, rounded square, or squircle (between a square and circle)...
-
-<https://developer.android.com/training/multiscreen/screendensities#TaskProvideAltBmp>
-
-Adaptive icons since v26
-=> background
-=> foreground
-=> + new image asset
-=> new assets should be moved to the same folder v26
-
-<https://developer.android.com/codelabs/basic-android-kotlin-training-display-list-cards> (3 => easy way to import icon).
-</details>
-
 Links
 
 * [Android compose](https://developer.android.com/courses/android-basics-compose/course)
-* [Android Basics: Room](https://developer.android.com/courses/android-basics-kotlin/unit-5)
-* [Android Basics: Adaptive Layouts](https://developer.android.com/codelabs/basic-android-kotlin-training-adaptive-layouts), [twopane](https://developer.android.com/develop/ui/views/layout/twopane), [cardview](https://developer.android.com/develop/ui/views/layout/cardview)
 * [Android coroutines](https://developer.android.com/courses/pathways/android-coroutines)
 * [Jetpack Compose](https://developer.android.com/courses/jetpack-compose/course)
 * [Android architecture](https://developer.android.com/courses/pathways/android-architecture)
 * [KTX](https://developer.android.com/kotlin/ktx)
-* uses-feature leanback/touchscreen
-
-```
-android:textAlignment="textStart"
-android:textAlignment="center"
-android:textSize="16sp"
-android:textStyle="bold"
-Vertical alignment
-android:gravity="center"
-android:gravity="bottom"
-???
-LinearLayout => android:baselineAligned="false"
-Tint black icon to white
-android:tint="@color/white"
-android:background="#B95EB17C"
-
-TableLayout TableRow
-```
-
-External
-
-* Internet
-* Views
 </div><div>
 
 Random

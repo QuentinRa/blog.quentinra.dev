@@ -354,4 +354,10 @@ Topics
 * broadcast receivers (listen for events)
 * AndroidManifest.xml (metadata, perms, components)
 * src/resources directory
+
+Features
+
+* NFC
+* Talkback
+* leanback/touchscreen
 </div></div>
