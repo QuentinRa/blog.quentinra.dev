@@ -1,11 +1,45 @@
-# Navigation
+# Navigation Management
 
 <div class="row row-cols-md-2"><div>
 
-...
+Navigation management refers to the implementation of how users navigate through different screens, which include:
+
+* 🐔 navigation between activities
+* 🥚 navigation between fragments
+* 🍃 navigation to another app
+* ...
 </div><div>
 
-...
+This usually involves a few classes:
+
+* **Intents** ✈️: to start an activity
+* **Navigation Component** 🚀: to navigate between fragments
+
+It worth noting that navigation involves what we call the **back stack** which may lead to unexpected behaviors if not handled.
+</div></div>
+
+<hr class="sep-both">
+
+## Application back stack
+
+<div class="row row-cols-md-2"><div>
+
+Android activities are pilled up in something called the "back stack". In older devices, users can use the "back arrow" to go back to a previous activity. The current intent is popped out, and the previous activity is started again. If there are none, then the app is terminated.
+
+![img.png](_images/android_back_stack.png)
+</div><div>
+
+It's always the activity at the top that is shown to the user.
+
+At the end of the example, we got two instances of "MainActivity". It's important to consider if this behavior is acceptable or not. If not, you should pass flags to your Intent using [Intent#addFlags](https://developer.android.com/reference/android/content/Intent.html#flags).
+
+👉 For instance, if the user logs out, he should not be able to press "back", and go back to the "connected area".
+
+* Manual "back" <small>(pop out current)</small>
+
+```javascript
+intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+```
 </div></div>
 
 <hr class="sep-both">
@@ -105,30 +139,6 @@ if (packageManager.resolveActivity(intent, 0) != null) {
 }
 ```
 </details>
-</div></div>
-
-<hr class="sep-both">
-
-## Application back stack
-
-<div class="row row-cols-md-2"><div>
-
-Android activities are pilled up in something called the "back stack". In older devices, users can use the "back arrow" to go back to a previous activity. The current intent is popped out, and the previous activity is started again. If there are none, then the app is terminated.
-
-![img.png](_images/android_back_stack.png)
-</div><div>
-
-It's always the activity at the top that is shown to the user.
-
-At the end of the example, we got two instances of "MainActivity". It's important to consider if this behavior is acceptable or not. If not, you should pass flags to your Intent using [Intent#addFlags](https://developer.android.com/reference/android/content/Intent.html#flags).
-
-👉 For instance, if the user logs out, he should not be able to press "back", and go back to the "connected area".
-
-* Manual "back" <small>(pop out current)</small>
-
-```javascript
-intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-```
 </div></div>
 
 <hr class="sep-both">
