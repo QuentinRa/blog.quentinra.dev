@@ -353,6 +353,176 @@ Manually edit the XML and replace AndroidX classes with MaterialUI classes. Asid
 
 <hr class="sep-both">
 
+## ⚡ Data Binding ⚡
+
+<div class="row row-cols-md-2"><div>
+
+DataBinding is an extension of [ViewBinding](#-view-binding-). It allows us to directly connect the data and the view directly inside the XML.
+
+With [LiveData](../data/index.md#livedata), the view is automatically updated when the data has changed, allowing us to get rid of observers.
+
+```diff
+android {
+    ...
+    buildFeatures {
+        viewBinding = true
++        dataBinding = true
+    }
+}
+```
+
+#### Prepare your XML
+
+DataBinding is a bit hard to set up. You need to edit your XML first. To wrap your root inside a tag **layout**. You don't have to move **xmlns:** attributes, or change anything else.
+
+```xml!
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<data>
+</data>
+
+<!-- Your previous root here (unchanged) -->
+</layout>
+```
+
+➡️ Indents will be messed up. Right-click on the file > Reformat code, keep everything checked, and run it by pressing "ok".
+
+<br>
+
+#### Adapt the code
+
+
+The code is the same as ViewBinding, with a minor change.
+
+<details class="details-e">
+<summary>Ex: activity_main.xml in an Activity</summary>
+
+```diff
+class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+-        binding = ActivityMainBinding.inflate(layoutInflater)
++        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        setContentView(binding.root)
+
+        val x = binding.someUniqIdHere
+    }
+}
+```
+</details>
+
+<details class="details-e">
+<summary>Ex: fragment_blank.xml in a Fragment</summary>
+
+```diff
+class BlankFragment : Fragment() {
+    private lateinit var binding: FragmentBlankBinding
+
+    override fun onCreateView(...): View? {
+-        binding = FragmentBlankBinding.inflate(layoutInflater, container, false)
++        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_blank, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val x = binding.someUniqIdHere
+    }
+}
+```
+</details>
+
+🔥 It's worth mentioning that the change above is **unneeded** if were using ViewBinding's code as it automatically binds data.
+</div><div>
+
+
+#### Passing data to the XML
+
+First, you must set the Lifecycle owner.
+
+```kotlin
+// ➡️ In Activity#onCreate
+binding.lifecycleOwner = this
+// ➡️ OR; In Fragment#onViewCreated
+binding.lifecycleOwner = viewLifecycleOwner
+```
+
+Then, you must declare variables in the XML **data** tag.
+
+```diff
+<data>
++  <!-- example with a viewModel variable -->
++  <variable name="viewModel" type=".YourViewModelTypeHere" />
+</data>
+```
+
+Then, right below `binding.lifecycleOwner`, pass the variables.
+
+```kotlin
+// binding.yourVariableName = yourVariableValue
+binding.viewModel = viewModel // an attribute in my class
+```
+
+Then, in your XML, you can use your variables and basic expressions inside `@{}`. Here are some examples:
+
+```xml!
+<example>
+  <!-- user is a LiveData -->
+  <TextView android:text="@{viewModel.user.username}" />
+  <!-- some_key is a string taking a parameter "%s" -->
+  <TextView android:text="@{@string/some_key(viewModel.string)}" />
+  <!-- examples with booleans -->
+  <TextView android:text='@{viewModel.boolean ? "x" : "y" }' />
+  <TextView android:text='@{viewModel.boolean ? @string/toto : "" }' />
+  <!-- state / events -->
+  <Switch android:checked="@{viewModel.xxx.equals(yyy)}" />
+  <Button android:onClick="@{() -> viewModel.xxx()}" />
+</example>
+```
+
+You can't do complex calculations. For instance, you can't convert an Int to a String. Instead, either use **BindingAdapters**, or add a function, for instance, in User here, returning an appropriate value.
+
+<details class="details-e">
+<summary>BindingAdapters: complex, but powerful</summary>
+
+```diff
+plugins {
++    id 'kotlin-kapt'
+}
+```
+
+Either create a specific class, or use a companion object.
+
+```kotlin
+companion object { // inside any appropriate class
+  // ➡️ Add an attribute "app:xxx" on a TextView
+  //  taking a value of type "Type"
+  @BindingAdapter("app:xxx") @JvmStatic
+  fun bindXXXText(textView: TextView, value: Type) {
+     // do what you want the attribute to do
+  }
+
+  // 👻 -- never used this
+  @InverseBindingAdapter(attribute = "app:xxx", event = "android:textAttrChanged") @JvmStatic
+  fun getText(textView: TextView) = textView.text.toString()
+}
+```
+
+You can use the attribute as long as `app` was imported <small>(see the appropriate `xmlns:` at the top of this page if needed)</small>.
+
+```xml
+<TextView
+    app:xxx="@{viewModel.aValueMatchingTheSelectedType}"
+    />
+```
+</details>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
