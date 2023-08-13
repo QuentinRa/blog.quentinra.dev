@@ -27,7 +27,7 @@ Instead of editing the XML manually, you will usually use the Design mode.
 </ol>
 </div><div>
 
-![Layout Editor](../../_images/layout_editor.png)
+![Layout Editor](_images/layout_editor.png)
 </div></div>
 
 **TIP**: you should rely on <kbd>CTRL+F</kbd> to search for attributes, or by clicking on the search icon at the top of the "Attributes" window.

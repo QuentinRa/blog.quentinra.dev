@@ -220,8 +220,7 @@ As for **onDestroy**, it is called
 ➡️ When needed, you can override these methods.
 </div><div>
 
-![android_application_lifecycle](../_images/android_application_lifecycle.png)
-
+![android_application_lifecycle](_images/android_application_lifecycle.png)
 
 **Note**: **onPause** must be lightweight, otherwise it will delay the other application from showing up in the front screen <small>(ex: a call)</small>.
 
@@ -277,7 +276,7 @@ class BlankFragment : Fragment() {
 
 The Fragment lifecycle is as follows.
 
-![Fragment lifecycle](../_images/android_fragment_lifecycle.png)
+![Fragment lifecycle](_images/android_fragment_lifecycle.png)
 </div></div>
 
 <hr class="sep-both">

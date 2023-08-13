@@ -6,7 +6,7 @@ A toast is an ephemeral popup-like message, usually shown at the bottom of the s
 
 <div class="text-center">
 
-![Android Toast](../_images/toast.png)
+![Android Toast](_images/toast.png)
 </div>
 </div><div>
 

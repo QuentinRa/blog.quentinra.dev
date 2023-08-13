@@ -4,7 +4,7 @@
 
 Dialogs are made of a title (optional), a message, and some buttons (accept/close). Clicking on any button will close the popup.
 
-![Android dialog](../_images/dialogs.png)
+![Android dialog](_images/dialogs.png)
 
 ```kotlin
 // ➡️ Replace "this" with "requireContext()" in a Fragment

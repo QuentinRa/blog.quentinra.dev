@@ -77,13 +77,13 @@ implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
 A constraint layout is rendering elements relatively to another component <small>(which could be the screen)</small>. You will set margins which are the gap with the other component.
 
-![Constraint Layout Margins Relative](../_images/cl_margins_relative.png)
+![Constraint Layout Margins Relative](_images/cl_margins_relative.png)
 
 On a screen of 226px, if you define that the component should have a margin-left of 140, and a margin-right of 26. The component will be centered within the 60 remaining px called **free space**.
 
 To change the behavior of how the free space is handled, simply edit the layout width/height OR you can use a shortcut by clicking on arrows such as ">>" right where you added margins.
 
-![Constraint Layout Margins Kind](../_images/cl_margins_kind.png)
+![Constraint Layout Margins Kind](_images/cl_margins_kind.png)
 </div></div>
 
 <hr class="sep-both">
