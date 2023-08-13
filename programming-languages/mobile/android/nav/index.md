@@ -24,14 +24,14 @@ It worth noting that navigation involves what we call the **back stack** which m
 
 <div class="row row-cols-md-2"><div>
 
-Android activities are pilled up in something called the "back stack". In older devices, users can use the "back arrow" to go back to a previous activity. The current intent is popped out, and the previous activity is started again. If there are none, then the app is terminated.
+Android activities are pilled up in something called the "back stack". On older devices, users can use the "back arrow" to "go back": the current activity is popped out, and we load the previous one. If there are none, then the app is terminated.
 
 ![img.png](_images/android_back_stack.png)
 </div><div>
 
 It's always the activity at the top that is shown to the user.
 
-At the end of the example, we got two instances of "MainActivity". It's important to consider if this behavior is acceptable or not. If not, you should pass flags to your Intent using [Intent#addFlags](https://developer.android.com/reference/android/content/Intent.html#flags).
+At the end of the example, we got two instances of "MainActivity". It's important to consider if this behavior is acceptable or not. If not, you should pass flags to your [Intent](#intents) using [Intent#addFlags](https://developer.android.com/reference/android/content/Intent.html#flags).
 
 👉 For instance, if the user logs out, he should not be able to press "back", and go back to the "connected area".
 
@@ -44,29 +44,41 @@ intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
 
 <hr class="sep-both">
 
-## Navigate/open another activity
+## Intents
 
 <div class="row row-cols-md-2"><div>
 
-An [**intent**](https://developer.android.com/guide/components/intents-filters) is an object representing some action to be performed, such as navigating to another activity. There are two kinds of intent
-
+An [**intent**](https://developer.android.com/guide/components/intents-filters) is an object representing an action to be performed, such as navigating to another activity. There are two kinds of intents:
 
 * **Explicit**: ask specifically for something <small>(ex: start the Activity XXX)</small>
 * **Implicit**: request another application/the system <small>(ex: open link)</small>
 
+#### Create an intent
+
 ```kotlin
 // create an intent
 val intent = Intent(SOME_PARAMETERS)
-// optional, you can pass parameters
-intent.putExtra("param", "a value")
 // start
 startActivity(intent)
 ```
 
-If you passed parameters, in the new Activity, use
+#### Pass arguments to the next activity
+
+To pass arguments to the next activity, use:
 
 ```kotlin
+// before using startActivity
+intent.putExtra("param", "a value")
+```
+
+From the started activity, to get back arguments, use:
+
+```kotlin
+// ➡️ Within An Activity
 val param = intent?.extras?.getString("param")
+// ➡️ Within A Fragment
+val param = requireActivity().intent?.extras?.getString("param")
+val param = activity?.intent?.extras?.getString("param")
 ```
 </div><div>
 
@@ -75,8 +87,11 @@ val param = intent?.extras?.getString("param")
 Ex: to navigate to "MainActivity"
 
 ```kotlin
-// this = a context
+// ➡️ Within An Activity
 val intent = Intent(this, MainActivity::class.java)
+// ➡️ Within A Fragment
+val intent = Intent(requireContext(), MainActivity::class.java)
+val intent = Intent(context!!, MainActivity::class.java)
 ```
 
 #### Implicit intent
@@ -139,38 +154,6 @@ if (packageManager.resolveActivity(intent, 0) != null) {
 }
 ```
 </details>
-</div></div>
-
-<hr class="sep-both">
-
-## Fragments
-
-<div class="row row-cols-md-2"><div>
-
-* 👉 The navigation is done with a [Navigation Component](../views/index.md#-navigation-component-)
-
-```diff
-- val param = intent?.extras?.getString("param")
-+ val param = requireActivity().intent?.extras?.getString("param")
-+ val param = activity?.intent?.extras?.getString("param")
-```
-
-* Use `requireContext()` to get a Context
-* Use `context` to get a Context <small>(@Nullable)</small>
-
-```diff
-- val intent = Intent(this, MainActivity::class.java)
-+ val intent = Intent(requireContext(), MainActivity::class.java)
-+ val intent = Intent(context!!, MainActivity::class.java)
-```
-</div><div>
-
-* Use `viewLifecycleOwner` to get a LifecycleOwner
-
-```diff
-- myLiveData.observe(this) {}
-+ myLiveData.observe(viewLifecycleOwner) {}
-```
 </div></div>
 
 <hr class="sep-both">
