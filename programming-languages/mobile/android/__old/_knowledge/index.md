@@ -139,161 +139,6 @@ class MainActivity : AppCompatActivity() {
 
 <hr class="sep-both">
 
-## Navigate/open another activity
-
-<div class="row row-cols-md-2"><div>
-
-An [**intent**](https://developer.android.com/guide/components/intents-filters) is an object representing some action to be performed, such as navigating to another activity. There are two kinds of intent
-
-
-* **Explicit**: ask specifically for something <small>(ex: start the Activity XXX)</small>
-* **Implicit**: request another application/the system <small>(ex: open link)</small>
-
-```kotlin
-// create an intent
-val intent = Intent(SOME_PARAMETERS)
-// optional, you can pass parameters
-intent.putExtra("param", "a value")
-// start
-startActivity(intent)
-```
-
-If you passed parameters, in the new Activity, use
-
-```kotlin
-val param = intent?.extras?.getString("param")
-```
-</div><div>
-
-#### Explicit intent
-
-Ex: to navigate to "MainActivity"
-
-```kotlin
-// this = a context
-val intent = Intent(this, MainActivity::class.java)
-```
-
-#### Implicit intent
-
-[There are a lot of them here](https://developer.android.com/reference/android/content/Intent).
-
-<details class="details-e">
-<summary>Open a link/mail/phone</summary>
-
-Open a URL (`https:`), a mail (`mailto:`), or a telephone (`tel:`). For instance, given a URL, it will try to open it in a browser...
-
-```kotlin
-val intent = Intent(Intent.ACTION_VIEW, Uri.parse("???"))
-```
-</details>
-
-<details class="details-e">
-<summary>Share something</summary>
-
-```kotlin
-val intent = ShareCompat.IntentBuilder.from(this)
-        .setText("...")
-        .setType("text/plain")
-        .intent
-```
-</details>
-
-<details class="details-e">
-<summary>Send an email</summary>
-
-```kotlin
-val intent = Intent(Intent.ACTION_SEND)
-    .setType("text/plain")
-    .putExtra(Intent.EXTRA_SUBJECT, "xxx")
-    .putExtra(Intent.EXTRA_TEXT, "yyy")
-    .putExtra(Intent.EXTRA_EMAIL, "a@b.c")
-```
-</details>
-
-<details class="details-e">
-<summary>⚠️ How to properly run an implicit intent ⚠️</summary>
-
-What if you try to open a link in a browser, but the user uninstalled every browser? It will fail. You have to handle errors!
-
-* Option 1: check if the startActivity fails
-
-```kotlin
-try {
-    startActivity(intent)
-} catch (ex: ActivityNotFoundException) {
-    // use a toast / ...
-}
-```
-
-* Option 2: check before starting the intent
-
-```kotlin
-if (packageManager.resolveActivity(intent, 0) != null) {
-    startActivity(intent)
-}
-```
-</details>
-</div></div>
-
-<hr class="sep-both">
-
-## Application back stack
-
-<div class="row row-cols-md-2"><div>
-
-Android activities are pilled up in something called the "back stack". In older devices, users can use the "back arrow" to go back to a previous activity. The current intent is popped out, and the previous activity is started again. If there are none, then the app is terminated.
-
-![img.png](_images/android_back_stack.png)
-</div><div>
-
-It's always the activity at the top that is shown to the user.
-
-At the end of the example, we got two instances of "MainActivity". It's important to consider if this behavior is acceptable or not. If not, you should pass flags to your Intent using [Intent#addFlags](https://developer.android.com/reference/android/content/Intent.html#flags).
-
-👉 For instance, if the user logs out, he should not be able to press "back", and go back to the "connected area".
-
-* Manual "back" <small>(pop out current)</small>
-
-```javascript
-intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-```
-</div></div>
-
-<hr class="sep-both">
-
-## Fragments
-
-<div class="row row-cols-md-2"><div>
-
-* 👉 The navigation is done with a [Navigation Component](../views/index.md#-navigation-component-)
-
-```diff
-- val param = intent?.extras?.getString("param")
-+ val param = requireActivity().intent?.extras?.getString("param")
-+ val param = activity?.intent?.extras?.getString("param")
-```
-
-* Use `requireContext()` to get a Context
-* Use `context` to get a Context <small>(@Nullable)</small>
-
-```diff
-- val intent = Intent(this, MainActivity::class.java)
-+ val intent = Intent(requireContext(), MainActivity::class.java)
-+ val intent = Intent(context!!, MainActivity::class.java)
-```
-</div><div>
-
-* Use `viewLifecycleOwner` to get a LifecycleOwner
-
-```diff
-- myLiveData.observe(this) {}
-+ myLiveData.observe(viewLifecycleOwner) {}
-```
-</div></div>
-
-<hr class="sep-both">
-
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -459,5 +304,198 @@ val input = EditText(requireContext())
 .setView(input)
 
 input.text.toString().toFloatOrNull()
+```
+</div></div>
+
+<hr class="sep-both">
+
+## 📦 Resources 📦
+
+<div class="row row-cols-md-2"><div>
+
+Resources includes **strings** (texts), **colors**, **dimensions**, **drawables** (images), **mipmap** (icons), and many other things.
+
+You can manage them from the **Resources Manager**
+
+* From the Left side, right under "project"
+* with View > Tools Windows > Resources Manager
+
+![Resources Manager Android Studio](_images/resources_manager_as.png)
+</div><div>
+
+##### Add a local image
+
+Go to drawables, and click on "+" > Import.
+
+<br>
+
+##### Add an icon
+
+Go to drawables, and click on "+" > Vector Asset. Then, click on the <i class="bi bi-android"></i> <small>(android icon)</small> next to "clip art".
+
+On Android 20, or older, you need to add this in build.gradle > Android > defaultConfig: `vectorDrawables.useSupportLibrary = true`.
+</div></div>
+
+<hr class="sep-both">
+
+## 🔤 Localization 🔤
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+Android automatically detects the language of the operating system and loads the appropriate language if available, otherwise fallback to the default language.
+
+The default language is defined inside **res/values/strings.xml**.
+
+#### Add a new language
+
+* Open the Resource Manager
+* Click on "String"
+* Click on "+" and "New resource file"
+    * Give the FileName "strings"
+    * Select "Locale" in "Available qualifiers"
+    * Click on ">>"
+    * Select the language you want. You may select a region too.
+* This will open an empty file
+* Copy-paste inside the default language file.
+
+Now, you can set translations for the new locale.
+
+To add translations, you should use the **Translations Editor** <small>(see the "open edit" at the top of any language file)</small>.
+
+<br>
+
+#### Edit strings.xml
+
+This is a dictionary: a **key** is associated with a **value**.
+
+```xml
+<string name="key">value</string>
+```
+
+Inside another XML, you can reference a string with `@string`
+
+```xml
+<TextView
+    android:text="@string/key" />
+```
+
+Or, in the code
+
+```kotlin
+var value = getString(R.string.key)
+// same (from resources)
+var value = resources.getString(R.string.key)
+// same (from a view)
+var value = view.context.getString(R.string.key)
+```
+</div><div>
+
+#### Parameters
+
+Android use **String.format** to parse the value, so you can pass parameters, as you would to printf in C.
+
+```xml
+<string name="price">The price is %s</string>
+```
+
+Inside the code
+
+```kotlin
+var value = getString(R.string.price, "$3")
+```
+
+#### Plurals
+
+You can provide variants according to the number of elements.
+
+```xml
+<plurals name="count">
+    <item quantity="zero">0</item>
+    <item quantity="one">1</item>
+    <item quantity="two">2</item>
+    <item quantity="few">few</item>
+    <item quantity="many">many</item>
+    <item quantity="other">unknown</item>
+</plurals>
+```
+
+Then, you need to pass a quantity. ⚠️ **NOTE** that the quantity is used along the locale to determine which "item" will be used. For instance, in English, only **one**, and **other** will be used.
+
+```kotlin
+resources.getQuantityString(R.plurals.count, 0)
+```
+
+#### Utilities
+
+##### Currency
+
+You can return the appropriate currency from an int/a double with
+
+```kotlin
+val amount = NumberFormat.getCurrencyInstance().format(1300.74)
+// USA/CA: "$1,300.74"
+// UK: "£1,300.74"
+// FR: "1 300,74€"
+```
+
+##### Dates
+
+See [SimpleDateFormat](https://developer.android.com/reference/java/text/SimpleDateFormat#date-and-time-patterns).
+
+```kotlin
+// ex: "ss" = show seconds on two digits
+val formatter = SimpleDateFormat("ss", Locale.getDefault())
+val calendar = Calendar.getInstance()
+val xxx = formatter.format(calendar.time)
+```
+</div></div>
+
+<hr class="sep-both">
+
+## 🧸 Other notes about resources 🧸
+
+<div class="row row-cols-md-2 mt-3"><div>
+
+#### Arrays
+
+Arrays are lists of hard-coded values such as a list of countries. Go to Resources Manager > Arrays, and create a new one.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="str_array">
+        <item>Toto</item>
+    </string-array>
+    <integer-array name="int_array">
+        <item>5</item>
+    </integer-array>
+</resources>
+```
+
+In the code
+
+```kotlin
+// ✨ .toList() is optional, you can use arrays "as if"
+val stringArray = resources.getStringArray(R.array.str_array).toList()
+val intArray = resources.getIntArray(R.array.int_array).toList()
+```
+</div><div>
+
+#### Dimensions
+
+Every folder in `res` may have multiples "copies" for different devices. For instance, if there is a view for large-screen devices, it will be used instead of the view made of "every" device.
+
+It's also a better practice to avoid hard-coded padding/margins/..., and instead, add them inside a `dimens.xml`, then use `@dimens/key`.
+
+<br>
+
+#### Resources Annotations
+
+Add `@StringRes`, `@DrawableRes`, or `@LayoutRes` before a variable, a parameter, or an attribute.
+
+```kotlin
+fun loadIcon(@DrawableRes drawableId: Int) {
+    val drawable = AppCompatResources.getDrawable(this, drawableId)
+}
 ```
 </div></div>
