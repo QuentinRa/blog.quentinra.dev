@@ -536,7 +536,6 @@ Stuff that I found, but never read/used yet.
 * Tint/Dark mode
 * [Android Basics: Adaptive Layouts](https://developer.android.com/codelabs/basic-android-kotlin-training-adaptive-layouts), [twopane](https://developer.android.com/develop/ui/views/layout/twopane), [cardview](https://developer.android.com/develop/ui/views/layout/cardview)
 
-
 <details class="details-n">
 <summary>Theming?</summary>
 
@@ -609,5 +608,9 @@ android:tint="@color/white"
 android:background="#B95EB17C"
 
 TableLayout TableRow
+
+val input = EditText(requireContext())
+.setView(input)
+input.text.toString().toFloatOrNull()
 ```
 </div></div>

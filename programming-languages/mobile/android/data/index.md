@@ -330,4 +330,23 @@ Another alternative to ViewModel is using a **Bundle** 🎒, but they are limite
 
 * Advanced Data Binding
 * [Android Basics: Room](https://developer.android.com/courses/android-basics-kotlin/unit-5)
+
+<details class="details-n">
+<summary>Flows</summary>
+
+A [flow](https://developer.android.com/kotlin/flow) is canceled when the app goes to the background/rotating the screen (see [here a patch](https://developer.android.com/topic/libraries/architecture/coroutines#lifecycle-aware)). We could also patch that by giving a timeout to "asLiveData", but by doing that, the flow will continue to be run while the app is in the background, until the timeout that is.
+
+```kotlin
+// implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
+val myLiveData : LiveData<Int> = flow {
+    while (true) {
+        val data : Int = 0 /* fetch from the api some data */
+        emit(data) // send
+        delay(60000) // wait 60 seconds
+    }
+}.asLiveData()
+
+public val tasksStateFlow = MutableStateFlow<List<Task>>(emptyList())
+```
+</details>
 </div></div>

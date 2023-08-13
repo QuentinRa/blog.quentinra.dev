@@ -358,5 +358,14 @@ Stuff that I found, but never read/used yet.
 * Deep Link
 </div><div>
 
+```kotlin!
+// Args must be serializable
+@Serializable
+@SerialName("id") // rename field
 
+val xxx =  registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+    val yyy = result.data?.getSerializableExtra("yyy") as YYY
+}
+xxx.launch(intent)
+```
 </div></div>

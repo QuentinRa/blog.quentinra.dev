@@ -240,3 +240,20 @@ See also
 
 * [Scroll to beginning](https://stackoverflow.com/questions/53248736/listadapter-submitlist-how-to-scroll-to-beginning)
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+```kotlin
+binding.recyclerView.itemAnimator = null
+binding.recyclerView.scrollToPosition(0)
+```
+</div><div>
+
+
+</div></div>
