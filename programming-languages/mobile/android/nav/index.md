@@ -175,9 +175,9 @@ dependencies {
 
 #### Create a navigation graph
 
-From the resource manager, go to "navigation", then add a new navigation. For instance, "example_navigation". The generated **example_navigation.xml** is the following
+From the resource manager, go to "navigation", then add a new navigation. For instance, "example_navigation". The generated **example_navigation.xml** is the following:
 
-```xml
+```xml!
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -191,7 +191,7 @@ From the resource manager, go to "navigation", then add a new navigation. For in
 
 <div class="row row-cols-md-2"><div>
 
-Switch to the Design View. Create or import your Fragments by clicking on the phone with the plus/add icon.
+Switch back to the Design View of the XML. Create or import your Fragments by clicking on the phone with the plus/add icon.
 </div><div>
 
 ![New destination](_images/new_destination.png)
@@ -317,7 +317,7 @@ Again, SafeArgs will generate a class **XXXArgs** with XXX the name of the curre
 <details class="details-e">
 <summary>Navigation back stack</summary>
 
-The idea is the same as for [Activities](../activities/index.md#application-back-stack), but **each Activity has a back stack of fragments**.
+It's the same as for the application and activities, but with **each Activity having a back stack of fragments**.
 
 * Remove every fragment until the previous one is either null or a fragment with the Id "**DESTINATION_ID**".
 
@@ -342,5 +342,20 @@ The idea is the same as for [Activities](../activities/index.md#application-back
 findNavController().popBackStack()
 ```
 </details>
+
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* Android bottom navigation
+* [Nested navigation graphs](https://developer.android.com/guide/navigation/navigation-nested-graphs)
+</div><div>
+
 
 </div></div>

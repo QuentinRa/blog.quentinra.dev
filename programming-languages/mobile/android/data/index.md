@@ -322,5 +322,12 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 Another alternative to ViewModel is using a **Bundle** 🎒, but they are limited in size, so they're not convenient to use.
+
+* Datastore
+* File system
+* Room
+* backups (see [autobackups](https://developer.android.com/guide/topics/data/autobackup))
 </div><div>
+
+* Advanced Data Binding
 </div></div>

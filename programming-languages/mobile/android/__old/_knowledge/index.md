@@ -145,18 +145,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* Action on Save: Optimize imports
-* Android ProGuard
-* Datastore
-* File system
-* Android bottom navigation
-* Services
-* [Nested navigation graphs](https://developer.android.com/guide/navigation/navigation-nested-graphs)
-* Room
-* backups (see [autobackups](https://developer.android.com/guide/topics/data/autobackup))
-* Modern Android Development (MAD)
-* Android Tests + Advanced testing
-* Advanced Data Binding, Recommended App architecture
 * NFC
 * Deep Link
 * Talkback

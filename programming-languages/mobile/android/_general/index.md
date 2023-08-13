@@ -271,7 +271,7 @@ class BlankFragment : Fragment() {
 
 #### Load a fragment in an activity
 
-...
+➡️ See also: [Navigation Component](../nav/index.md#-navigation-component--).
 </div><div>
 
 The Fragment lifecycle is as follows.
@@ -340,17 +340,18 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [_general](../__old/_knowledge/index.md)
-* [_views](../__old/views/index.md)
-* [_tuning](../__old/core/tuning.md)
+* Android ProGuard
+* Modern Android Development (MAD)
+* Android Tests + Advanced testing
+* Recommended App architecture
 </div><div>
 
-* load a fragment inside an activity
+Topics
+
 * services (independent processes)
-* intents (communication between components)
 * content providers (manage app data, enable data sharing)
 * context (app env info, access to resources)
 * broadcast receivers (listen for events)
 * AndroidManifest.xml (metadata, perms, components)
-* src directory
-* resources directory
+* src/resources directory
 </div></div>
