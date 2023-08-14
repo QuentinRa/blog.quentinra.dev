@@ -2,17 +2,23 @@
 
 <div class="row row-cols-md-2"><div>
 
-...
+Android Studio is an IDE developped by Google based on [IntelliJ IDEA](/tools-and-frameworks/editors/jetbrains/idea/index.md) and hence sharing [common features](/tools-and-frameworks/editors/jetbrains/_general/index.md) of IDEs developed by JetBrains. It was specifically adapted for Android Projects using Kotlin or Java.
+
+There are a few life-saving shortcuts
+
+* <kbd>CTRL+P</kbd>: in `method(<here>)`, show the arguments of a method
+* <kbd>CTRL+SPACE</kbd>: manually trigger autocompletion <small>(then use <kbd>TAB</kbd>)</small>
+* <kbd>SHIFT+SHIFT</kbd>: search for a method/class/setting...
+* <kbd>ALT+ENTER</kbd>/**hover something** highlighted in red, yellow, gray... to see quick fixes/details.
 </div><div>
 
-* Action on Save: Optimize imports
+**Configure in-editor documentation**
 
-You can manage them from the **Resources Manager**
+To see the documentation of a method, use <kbd>CTRL+Q</kbd> or hover a method. By default, you won't see anything interesting.
 
-* From the Left side, right under "project"
-* with View > Tools Windows > Resources Manager
-
-![Resources Manager Android Studio](_images/resources_manager_as.png)
+* Navigate to the source of any Android class. As a reminder, you can use <kbd>CTRL+(MOUSE LEFT)</kbd> like in VSCode/...
+* Click on "Download sources"
+* Done
 </div></div>
 
 <hr class="sep-both">
@@ -43,39 +49,7 @@ Instead of editing the XML manually, you will usually use the Design mode.
 
 <hr class="sep-both">
 
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-Android Studio <small>(Google)</small> is the most used IDE. It's based on IntelliJ Community <small>(JetBrains)</small> 😎❤️. There are a few life-saving shortcuts
-
-* <kbd>CTRL+P</kbd>: in `method(<here>)`, show the arguments of a method
-* <kbd>CTRL+SPACE</kbd>: manually trigger autocompletion <small>(then use <kbd>TAB</kbd>)</small>
-* <kbd>SHIFT+SHIFT</kbd>: search for a method/class/setting...
-* <kbd>ALT+ENTER</kbd>/**hover something** highlighted in red, yellow, gray... to see quick fixes/details.
-
-<details class="details-e">
-<summary>Configure in-editor documentation</summary>
-
-To see the documentation of a method, use <kbd>CTRL+Q</kbd> or hover a method. By default, you won't see anything interesting.
-
-* Navigate to the source of any Android class. As a reminder, you can use <kbd>CTRL+(MOUSE LEFT)</kbd> like in VSCode/...
-* Click on "Download sources"
-* Done
-</details>
-</div><div>
-
-
-</div></div>
-
-
-<hr class="sep-both">
-
-## 📱 Android Studio 📱
-
-*You should refer to IntelliJ notes if you want to master Android Studio.*
+## 📱 Random features 📱
 
 <div class="row row-cols-md-2"><div>
 
@@ -107,7 +81,8 @@ This is a file that describes
 #### app/java/com.xxx.yyy
 
 This is where your classes will be stored.
-</div><div>
+
+<br>
 
 #### app/res
 
@@ -118,6 +93,16 @@ This is where the resources of your application will be stored.
 * Menu
 * Values <small>(translations, colors/themes...)</small>
 * XML <small>(preferences...)</small>
+</div><div>
+
+#### Resources Manager
+
+You can manage them from the **Resources Manager**
+
+* From the Left side, right under "project"
+* with View > Tools Windows > Resources Manager
+
+![Resources Manager Android Studio](_images/resources_manager_as.png)
 
 <br>
 
@@ -139,5 +124,18 @@ The device emulator allows you to create a virtual device or connect yours. You 
 
 ![device_manager](_images/device_manager.png)
 </div></div>
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* Action on Save: Optimize imports
+</div><div>
+
 
 </div></div>

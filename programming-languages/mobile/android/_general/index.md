@@ -19,6 +19,13 @@ Android projects are managed by [Gradle](/tools-and-frameworks/others/build/grad
 * 🌍 manage dependencies <small>(import a library...)</small>
 * ⚒️ compile the code
 * 🗃️ generate the APK <small>(Android Package)</small> installed on devices
+
+You will have to edit the second `build.gradle (Module: XXX)`.
+
+<div class="text-center">
+
+![gradle](_images/gradle.png)
+</div>
 </div></div>
 
 <hr class="sep-both">
