@@ -78,7 +78,6 @@ Stuff that I found, but never read/used yet.
 
 * `-L lib`
 * `-Z ...`
-* `sudo apt-get install gdb`, `-g` (add info for gdb)
 * `-MM` (deps)
 </div><div>
 </div></div>
