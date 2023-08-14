@@ -56,7 +56,7 @@ This project will generate an executable called `my_program`. To generate this p
 cmake_minimum_required(VERSION 3.18) // cmake version
 project(untitled CXX) // project "untitled" in C++
 
-set(CMAKE_CXX_STANDARD 14) // in C++14
+set(CMAKE_CXX_STANDARD 14) // standard C++14
 
 add_executable(my_program main.cpp main.hpp)
 ```

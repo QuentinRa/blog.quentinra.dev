@@ -10,6 +10,8 @@ You install them, and everything necessary for devs, using:
 $ sudo apt-get install build-essential # gcc, cmake...
 $ sudo apt-get install manpages-dev    # man pages for devs
 ```
+
+➡️ We usually use [CMake](/tools-and-frameworks/others/build/cmake/index.md) and [Makefiles](/tools-and-frameworks/others/build/makefile/index.md) to automate the compilation.
 </div><div>
 </div></div>
 
@@ -39,6 +41,8 @@ $ gcc file1.o file2.o  # generate "a.out"
 ```
 
 ➡️ For `g++`: replace `gcc` with `g++` and `.c` with `.cpp`.
+
+🚀 One-line command: `gcc -c *.c && gcc *.o && rm *.o`
 </div><div>
 
 #### Other options
@@ -47,6 +51,16 @@ Commonly used options:
 
 * `-o`: set the executable name <small>(default=a.out)</small>
 * `-std=value`: specify a standard such as `c99` or `c++11`
+* `-I/path/to/xxx`: include a folder with header files
+* `-g`: add information for debuggers (ex: [GDB](/programming-languages/low-level/compilers/gdb/index.md))
+
+Common compliance/warnings options:
+
+* `-Wall`: enable compiler warnings
+* `-Wextra`: enable additional compiler warnings
+* `-Werror`: mark compiler warnings as compilation errors
+* `-Wpedantic`: enable strict ISO conformance
+* `-ansi`: C89 compliance <small>(rarely used)</small>
 
 Less commonly used options:
 
@@ -62,14 +76,9 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-*  `-I/path/to/header -L lib -Z ...`
-
-```text!
--g # add info for gdb
---MM # deps -ansi # c89 -Wall # warnings -pedantic # conformity
-sudo apt-get install gdb
-```
+* `-L lib`
+* `-Z ...`
+* `sudo apt-get install gdb`, `-g` (add info for gdb)
+* `-MM` (deps)
 </div><div>
-
-
 </div></div>
