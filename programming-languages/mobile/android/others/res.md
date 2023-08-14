@@ -30,25 +30,36 @@ fun loadIcon(@DrawableRes drawableId: Int) { /* ... */ }
 
 <hr class="sep-both">
 
+## Drawables 🖼️
+
 <div class="row row-cols-md-2"><div>
+
+A drawable is an image with a format such as PNG, JPG, or SVG.
+
+#### Add an image
+
+* Open the Resource Manager
+* Navigate to "Drawable"
+* Click on "+" 
+* Import
+
 </div><div>
 
-##### Add a local image
+#### Add an icon
 
-Go to drawables, and click on "+" > Import.
+* Open the Resource Manager
+* Navigate to "Drawable"
+* Click on "+"
+* Vector Asset 
+* Click on the <i class="bi bi-android"></i> <small>(android icon)</small> next to "clip art"
+* Select an icon
 
-<br>
-
-##### Add an icon
-
-Go to drawables, and click on "+" > Vector Asset. Then, click on the <i class="bi bi-android"></i> <small>(android icon)</small> next to "clip art".
-
-On Android 20, or older, you need to add this in build.gradle > Android > defaultConfig: `vectorDrawables.useSupportLibrary = true`.
+⚠️ It's recommended to use the Material Icons library instead.
 </div></div>
 
 <hr class="sep-both">
 
-## 🔤 Localization 🔤
+## Localization 🔤
 
 <div class="row row-cols-md-2 mt-3"><div>
 
@@ -59,7 +70,7 @@ The default language is defined inside **res/values/strings.xml**.
 #### Add a new language
 
 * Open the Resource Manager
-* Click on "String"
+* Navigate to "String"
 * Click on "+" and "New resource file"
     * Give the FileName "strings"
     * Select "Locale" in "Available qualifiers"
@@ -162,7 +173,7 @@ val xxx = formatter.format(calendar.time)
 
 <hr class="sep-both">
 
-## 🧸 Other notes about resources 🧸
+## Other resources 🧸
 
 <div class="row row-cols-md-2 mt-3"><div>
 
@@ -197,29 +208,5 @@ Every folder in `res` may have multiples "copies" for different devices. For ins
 
 It's also a better practice to avoid hard-coded padding/margins/..., and instead, add them inside a `dimens.xml`, then use `@dimens/key`.
 
-<br>
-
-#### Resources Annotations
-
-Add `@StringRes`, `@DrawableRes`, or `@LayoutRes` before a variable, a parameter, or an attribute.
-
-```kotlin
-fun loadIcon(@DrawableRes drawableId: Int) {
-    val drawable = AppCompatResources.getDrawable(this, drawableId)
-}
-```
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-xxx
-</div><div>
-
-
+So, you can have one `dimens.xml` per category of device screen's size.
 </div></div>
