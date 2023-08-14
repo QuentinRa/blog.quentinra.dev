@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-System calls are low-level functions that directly interact with the Linux kernel. You would usually use them in assembly, but assembly code is out of the scope of this course. We will use [C](../c/general/index.md) instead.
+System calls are low-level functions that directly interact with the Linux kernel. You would usually use them in assembly, but assembly code is out of the scope of this course. We will use [C](/programming-languages/low-level/c/general/index.md) instead.
 
 </div><div class="align-self-center">
 
