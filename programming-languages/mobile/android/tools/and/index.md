@@ -6,6 +6,13 @@
 </div><div>
 
 * Action on Save: Optimize imports
+
+You can manage them from the **Resources Manager**
+
+* From the Left side, right under "project"
+* with View > Tools Windows > Resources Manager
+
+![Resources Manager Android Studio](_images/resources_manager_as.png)
 </div></div>
 
 <hr class="sep-both">

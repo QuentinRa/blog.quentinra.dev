@@ -2,24 +2,35 @@
 
 <div class="row row-cols-md-2"><div>
 
-...
+Resources are used everywhere, especially when we try to customize the application <small>(e.g., localization, dark-theme, responsive...)</small>:
+
+* 📝 layouts
+* 💬 strings <small>(texts)</small>
+* 🎨 colors
+* ⚖️ dimensions
+* 🖼️ drawables <small>(images)</small>
+* 🗺️ mipmap <small>(icons)</small>
+* ...
+
+You can manage them from the [Resources Manager](../tools/and/index.md).
 </div><div>
 
-...
+From the code, there is a **dynamically created** class `R` that we use to access our resources:
+
+* `R.layout.fragment_blank`
+* `R.id.some_id`
+* ...
+
+Add `@LayoutRes`, `@DrawableRes`, `@StringRes`... before a variable, parameter, or attribute to enforce the type of resource.
+
+```kotlin
+fun loadIcon(@DrawableRes drawableId: Int) { /* ... */ }
+```
 </div></div>
 
 <hr class="sep-both">
 
 <div class="row row-cols-md-2"><div>
-
-Resources includes **strings** (texts), **colors**, **dimensions**, **drawables** (images), **mipmap** (icons), and many other things.
-
-You can manage them from the **Resources Manager**
-
-* From the Left side, right under "project"
-* with View > Tools Windows > Resources Manager
-
-![Resources Manager Android Studio](_images/resources_manager_as.png)
 </div><div>
 
 ##### Add a local image

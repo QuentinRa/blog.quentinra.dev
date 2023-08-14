@@ -437,7 +437,7 @@ imgView.load(imageURL) {
 
 I assume here that you're already familiar with data binding.
 
-```xml
+```xml!
 <!-- xxx is a variable in <data> with an attribute imageURL -->
 <!--You must import app (xmlns:app="http://schemas.android.com/apk/res-auto" in <layout>)  -->
 <!-- we will create loadImage -->
