@@ -23,24 +23,49 @@ So, when we need to run code that takes a long time, we either:
 
 <hr class="sep-both">
 
+## Asynchronous functions
+
+<div class="row row-cols-md-2"><div>
+
+A synchronous function is a (normal) function that returns the result when the function call is done. For instance:
+
+```kotlin
+fun addNumbers(a: Int, b: Int): Int {
+    return a + b
+}
+val result = addNumbers(5, 3)
+```
+
+But, it's not always possible. For instance, when requesting a resource from an API, it might take a few seconds for us to get a result.
+
+There are two "solutions" that can be found:
+
+* 🐪 using what we call "callbacks"
+* 🐫 using asynchronous functions
+</div><div>
+
+#### suspend
+
+Kotlin uses the keyword `suspend` to declare asynchronous functions.
+
+```kotlin!
+private suspend fun waitFiveSeconds() {
+    // delay 5000 = wait 5s
+    // delay is also a suspend fun
+    delay(5000)
+}
+```
+
+⚠️ You can only call a `suspend` function from another `suspend` function.
+</div></div>
+
+<hr class="sep-both">
+
 ## ️🚀 Threads and Coroutines ☄️
 
 <div class="row row-cols-md-2 mt-3"><div>
 
 * [Android coroutines](https://developer.android.com/courses/pathways/android-coroutines)
-
-To avoid blocking the Main thread for too long, resulting in an **ANR = Android Not Responding = Crash**.
-
-You can use a [Thread](https://developer.android.com/reference/java/lang/Thread) to a run a background task
-
-```kotlin
-Thread {
-    // the code here will be run
-    // in another thread
-}.start()
-```
-
-[Coroutines](https://developer.android.com/kotlin/coroutines) are doing a job, that can be halted/resumed. They will run inside a thread, and one thread will be used to run multiple coroutines.
 
 A coroutine can be used to run **suspend** (async) functions.
 
