@@ -15,7 +15,7 @@ int main() {
 ```
 </div><div>
 
-Then, use `gcc` to generate an executable of your program.
+Then, use [gcc](../../compilers/gcc/index.md) to generate an executable of your program.
 
 ```powershell
 $ gcc main.c -o a.out
@@ -814,17 +814,6 @@ Stuff that I found, but never read/used yet.
 * `void*` / `#define NULL = (void *)0`
 * C89/C99/C11/C23/[cake](https://github.com/thradams/cake)
 * Add notes from exercises
-* GDB
-* Gcc
-
-```text!
-gcc -std=c99 -o xxx -c # .o -g # add info for gdb
---MM # deps -ansi # c89 -Wall # warnings -pedantic # conformity
--E # intermediate files
-sudo apt-get install build-essential gdb
-sudo apt-get install manpages-dev
-```
-
 * [onlinegdb](https://learn.onlinegdb.com/)
 * [unused parameter](https://stackoverflow.com/questions/14492637/warn-when-using-parameter-marked-as-unused)
 
