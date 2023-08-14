@@ -61,38 +61,11 @@ private suspend fun waitFiveSeconds() {
 
 <hr class="sep-both">
 
-## ️🚀 Threads and Coroutines ☄️
+## Coroutines 💎
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-md-2"><div>
 
-* [Android coroutines](https://developer.android.com/courses/pathways/android-coroutines)
-
-A coroutine can be used to run **suspend** (async) functions.
-
-```
-// suspend fun = async
-private suspend fun waitFiveSeconds() {
-    // delay 5000 = wait 5s
-    // delay is also a suspend fun
-    delay(5000)
-}
-```
-
-#### Life-cycle aware coroutines
-
-[See Life-cycle aware coroutines](https://developer.android.com/topic/libraries/architecture/coroutines)
-
-Ex: automatically started/restarted when the application is STARTED.
-
-```
-lifecycleScope.launch {
-    repeatOnLifecycle(Lifecycle.State.STARTED) {
-        // ...
-    }
-}
-```
-
-</div><div>
+A coroutine can be used to run **suspend** functions.
 
 Each coroutine is created from a scope.
 
@@ -151,6 +124,21 @@ CoroutineScope(Job()).launch {
 }
 ```
 </details>
+</div><div>
+
+#### Life-cycle aware coroutines
+
+[See Life-cycle aware coroutines](https://developer.android.com/topic/libraries/architecture/coroutines)
+
+Ex: automatically started/restarted when the application is STARTED.
+
+```
+lifecycleScope.launch {
+    repeatOnLifecycle(Lifecycle.State.STARTED) {
+        // ...
+    }
+}
+```
 
 #### Repeat a task every XXX seconds
 
@@ -163,4 +151,16 @@ while (true) {
     delay(60000)
 }
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [Android coroutines](https://developer.android.com/courses/pathways/android-coroutines)
+</div><div>
 </div></div>
