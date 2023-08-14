@@ -7,6 +7,7 @@ List of courses that have note which were not added yet.
 **Programming Languages > Android**
 
 * (review, typos)
+* Resources, Android Studio, Coroutines
 
 **Programming Languages > Web**
 
@@ -18,14 +19,15 @@ List of courses that have note which were not added yet.
 
 **Programming Languages > Others**
 
+* (review, typos) ignore
 * Blockchain
 * Sphinx, Doku
 * API > GraphQL
 
 **Programming Languages > Low-Level Languages**
 
+* (review, typos) GDB, GCC, clang
 * CPP - ENS notes
-* GDB, GCC
 * Qt
 * Rust ([crates](https://crates.io/))
 
@@ -42,7 +44,7 @@ List of courses that have note which were not added yet.
 
 **Tools and Frameworks**
 
-* GIT
+* (review/typos) GIT, cmake
 * Pandora
 * Gradle, Maven
 * OAuth, OpenID, SAML
@@ -50,6 +52,7 @@ List of courses that have note which were not added yet.
 
 **Operating systems**
 
+* (review, typos) docker, qemu, IoT, yocto, vbox
 * Arduino, Platformio
 * Hardening
 * Linux

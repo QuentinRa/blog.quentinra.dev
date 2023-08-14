@@ -53,18 +53,24 @@ When building images, it store the generated image files in `<build_folder>/tmp/
 
 You create multiple image recipes.
 
+
+
 ```shell!
 $ cat recipes-core/images/custom-image.bb
+```
+```bash!
 DESCRIPTION = "Custom Image"
 LICENSE = "CLOSED"
 PR = "r0"
 
 inherit core-image
 
-// see https://layers.openembedded.org/layerindex/branch/master/recipes/
-// if there are from openembedded-core everything is fine
-// otherwise: conf/bblayers.conf
-IMAGE_INSTALL += " vim"
+# see https://layers.openembedded.org/layerindex/branch/master/recipes/
+# if there are from openembedded-core everything is fine
+# otherwise, edit: conf/bblayers.conf
+IMAGE_INSTALL_append = " vim"
+```
+```shell!
 $ cat conf/local.conf
 ...
 IMAGE_INSTALL_append = " custom-image"
