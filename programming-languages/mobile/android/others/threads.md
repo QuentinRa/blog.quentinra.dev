@@ -2,9 +2,23 @@
 
 <div class="row row-cols-md-2"><div>
 
-...
+A thread is a sequence of instructions. Most Android applications run on **one single main thread** called **UI Thread**. This thread will:
+
+* 🖼️ Render the View
+* 🧑 Handle user interactions
+* 🎉 Process events
+* ...
+
+It's responsible for Android Life-cycle so it's the one executing methods such as `onCreate`, `onResume` and so on.
 </div><div>
 
+As this main thread is responsible for many things, we can't execute some code that takes too long, otherwise it will result in an **ANR = Android Not Responding** which basically mean the app crashed.
+
+So, when we need to run code that takes a long time, we either:
+
+* **Thread** 🎪: we create a new thread for our task
+* **Coroutine** 💎: we run the code in a coroutine
+* **WorkManager** ⏳: we use the [work manager](/programming-languages/mobile/android/others/utils/work.md)
 </div></div>
 
 <hr class="sep-both">
@@ -12,8 +26,6 @@
 ## ️🚀 Threads and Coroutines ☄️
 
 <div class="row row-cols-md-2 mt-3"><div>
-
-Most android applications run on one "main" thread usually called **UI Thread**, which is the one handling rendering the view, processing events, and so on.
 
 * [Android coroutines](https://developer.android.com/courses/pathways/android-coroutines)
 
