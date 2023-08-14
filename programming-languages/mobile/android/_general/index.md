@@ -350,7 +350,7 @@ Stuff that I found, but never read/used yet.
 Topics
 
 * services (independent processes)
-* content providers (manage app data, enable data sharing)
+* content providers (manage app data, enable data sharing),contentResolver, `_deviceId = Settings.Secure.getString(contentResolver, Settings.Secure.ANDROID_ID)`
 * context (app env info, access to resources)
 * broadcast receivers (listen for events)
 * AndroidManifest.xml (metadata, perms, components)
