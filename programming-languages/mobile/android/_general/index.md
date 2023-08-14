@@ -345,6 +345,12 @@ Stuff that I found, but never read/used yet.
 * [Modern Android Development (MAD)](https://developer.android.com/courses/pathways/android-architecture)
 * Android Tests + Advanced testing
 * Recommended App architecture
+
+```kotlin
+// Activity.title: set the title shown in task list
+//  and inside the default menubar
+title = "Some title"
+```
 </div><div>
 
 Topics

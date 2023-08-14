@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-It's highly likely that if you make some Android application, you will want to connect your app to your servers. To avoid putting credentials in the code, or to use external services, Android developers use [APIs](/_programming/web/apis/index.md) to connect to their/external servers.
+Most Android apps do HTTP requests to some servers <small>(database/...)</small>. Most of the time, there is an [APIs](/programming-languages/others/apis/_general/index.md) in-place instead of direct access. API calls are usually done in a [ViewModel](../data/index.md#viewmodel) class, inside a method starting a new [thread/coroutine](threads.md) - to avoid blocking the main thread.
 
 Add the permission in your AndroidManifest.xml <small>(above application)</small> ⭐
 
