@@ -1,20 +1,11 @@
 # Git commands
 
 <div class="row row-cols-md-2"><div>
-
-There are many problems when working on projects, and most can be addressed with Version-control. **Git** is the most used one.
-
-* **code sharing** 📬: allow other to read/edit the code
-* **a need for time travel** 🗃️: find back some code that was removed... Go back to a previous version...
-* **duplicates** 🎭: copies of the project to test something. What if you want to merge/share your changes?
-* **computer dies**/accidental removal/... 😵: [...]
-* **information** 🔎: who added/changed something? when?...
 </div><div>
 
 **Where to learn?**
 
 * [OH MY GIT!](https://ohmygit.org/) <small>(👻, a game to learn Git)</small>
-
 </div></div>
 
 <hr class="sep-both">

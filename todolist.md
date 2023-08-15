@@ -78,8 +78,6 @@ Programming languages (+tools) that I want to check, but never had the time.
 
 ➡️ [chocolatey](https://chocolatey.org/)
 
-* [mercurial](https://www.mercurial-scm.org/) (version-control)
-
 **Tools~API~no**
 
 * [crowdin](https://crowdin.com/) <small>(localization)</small>
