@@ -23,14 +23,20 @@ All tasks may be executed on-demand or on specific events.
 
 <hr class="sep-both">
 
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
+## Benefits
 
 <div class="row row-cols-md-2"><div>
 
-* Save time; make things easier
+#### Testing
+
+You can configure your workflow to test your code in different environments <small>(ex: Linux, Windows, macOS)</small> and using different versions of tools <small>(ex: different versions of node-js/java/...)</small>.
 </div><div>
 
+#### Isolation
 
+Continuous workflow can work in isolated reproducible environment, hence ensuring that the code do work on other machines.
+
+#### Save time
+
+It may take some time to implement complex CI/CD workflows, but once implemented, it reduces the time taken to manually perform tasks that could be automated.
 </div></div>

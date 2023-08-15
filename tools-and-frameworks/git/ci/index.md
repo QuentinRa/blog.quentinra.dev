@@ -1,19 +1,5 @@
 # 🌍 Continuous integration (CI) 🌍
 
-<div class="row row-cols-md-2"><div>
-
-Continuous integration is when scripts such as tests, or script to deploy a website are run each time the developer push changes.
-
-* 👉 Run tests in different pre-configured environments to ensure that everything is still working <small>(ex: GitHub Actions)</small>
-* 👉 Automatically deploys the website <small>(ex: GitHub pages)</small>
-* 👉 Notify someone/a group of persons about the new change
-* ...
-</div><div>
-
-👻 I'm not familiar with DevOps/Continuous integration/..., this is a **draft**, and the content are subject to radical changes.
-
-</div></div>
-
 <hr class="sep-both">
 
 ## 🗃️  Solutions  🗃️
