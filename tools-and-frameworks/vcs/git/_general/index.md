@@ -16,7 +16,10 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-xxx
+* [_commands](_commands.md)
+* [_files](_files.md)
+* [_server-side](server-side.md)
+* [git-scm](https://git-scm.com/)
 </div><div>
 
 
