@@ -2,39 +2,9 @@
 
 <hr class="sep-both">
 
-## Actors
-
-<div class="row row-cols-md-2"><div>
-
-#### Git clients 👲
-
-These are computers that will download project, work on them, upload their changes... You can use:
-
-* The command `git`, and [git-scm](https://git-scm.com/) on Windows
-* [GitHub Desktop](https://desktop.github.com/)
-* [The Git extension in VSCode](https://code.visualstudio.com/docs/sourcecontrol/overview) (👻)
-* [GitKraken](https://www.gitkraken.com/) (👻)
-* JetBrains integrated Git client
-</div><div>
-
-#### Git servers 🖥
-
-They will host the code, and make it available to those allowed, or to everyone if you're working on open-source projects. You can use:
-
-* [GitHub](https://github.com/) <small>(Microsoft, my favorite)</small>
-* [GitLab](https://about.gitlab.com/) <small>(Well-known alternative to GitHub)</small>
-* [Gogs](https://gogs.io/) <small>(open-source, self-hosted)</small>
-* [Gitea](https://gitea.com/) (👻)
-* [Bitbucket](https://bitbucket.org/) (👻)
-</div></div>
-
-<hr class="sep-both">
-
 ## 🐍 Git workflow 🐍
 
 <div class="row row-cols-md-2 mt-4"><div>
-
-Git allows us to create **commits** which are snapshots (`sauvegardes`) of your project. These are stored in **branches** 🪵, which are quite similar to local copies of the project.
 
 ```bash
 # install
