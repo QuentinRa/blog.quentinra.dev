@@ -73,6 +73,8 @@ To download a Git project, use `git clone`.
 To update your local project with the remote one, use `git pull`.
 
 To push to the remote server your commits, use `git push`.
+
+👉 All commands with their arguments are [explained here](../commands/index.md).
 </div></div>
 
 <hr class="sep-both">

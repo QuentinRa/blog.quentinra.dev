@@ -1,21 +1,6 @@
 # Git commands
 
-<hr class="sep-both">
-
-## 🐍 Git workflow 🐍
-
 <div class="row row-cols-md-2 mt-4"><div>
-
-```bash
-# install
-$ sudo apt install git
-# check
-$ git --version
-# required config
-# warning: visible by others, used to sign/attribute commits
-$ git config --global user.name "Example Example"
-$ git config --global user.email "example@example.com"
-```
 
 * ➡️ Create a project on your GIT server
 
