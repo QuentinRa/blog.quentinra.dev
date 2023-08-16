@@ -57,34 +57,6 @@ $ git checkout sha1@{2021-05-05}
 
 <hr class="sep-both">
 
-## 🪵 Branches, and merges 🪵 
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-```bash
-$ git branch "branch_name"
-$ git checkout "branch_name"
-# shortcut to create + checkout
-$ git checkout -b "branch_name"
-# delete a branch
-$ git branch -d "branch_name"
-```
-</div><div>
-
-```bash
-# ex: merge "branch_name" with main
-$ git checkout main
-$ git merge "branch_name"
-```
-
-⚠️ Unfortunately, it doesn't always work out nicely. If the main branch was changed since we created our copy, then it's likely that a file was changed on both branches. 
-
-If this happens, you will have to open every file, and resolve conflicts. Git will put in every file the two versions, and you will have to remove/keep what you want.
-
-</div></div>
-
-<hr class="sep-both">
-
 ## 🧹 Rebase 🧹
 
 <div class="row row-cols-md-2 mt-4"><div>

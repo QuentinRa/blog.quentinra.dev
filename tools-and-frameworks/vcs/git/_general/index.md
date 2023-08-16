@@ -111,6 +111,8 @@ Stuff that I found, but never read/used yet.
 * [git-scm](https://git-scm.com/)
 * origin, `origin/myBranch`
 * git pull merge branch
+* pull vs fetch
+* merge fast-forward vs rebase
 </div><div>
 
 

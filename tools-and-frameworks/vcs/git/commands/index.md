@@ -93,6 +93,68 @@ $ git push
 ```
 </div></div>
 
+<hr class="sep-both">
+
+## Git branching
+
+<div class="row row-cols-md-2"><div>
+
+#### git branch
+
+You can list, create, and delete branches.
+
+```ps
+# list all branches
+$ git branch -a
+# create a branch
+$ git branch "branch_name"
+# delete a branch
+$ git branch -d "branch_name"
+```
+
+#### git checkout
+
+Navigate to the project corresponding to the given commit.
+
+```ps
+# navigate to commit xxx
+$ git checkout xxx
+# navigate to branch "branch_name"
+$ git checkout branch_name
+# create a branch from the current commit,
+# then navigate to it
+$ git checkout -b "branch_name"
+```
+</div><div>
+
+#### git merge
+
+Merge a target's history <small>(e.g., its commits)</small> in our history.
+
+```ps
+$ git merge xxx             # a commit
+$ git merge "branch_name"   # a branch
+```
+
+If we both edited a file, it generates a **conflict**. ⚠️ Conflicts need to be handled for the merge to end.
+
+**Option 1**: Use `git status` to list all problems and solve them. Each file will have conflicts marked like this:
+
+
+```text!
+<<<<<<< HEAD
+This is the content from the current branch.
+=======
+This is the conflicting content from branch_name.
+>>>>>>> branch_name
+```
+
+**Option 2**: Abort the merge
+
+```ps
+$ git merge --abort
+```
+</div></div>
 
 <hr class="sep-both">
 
