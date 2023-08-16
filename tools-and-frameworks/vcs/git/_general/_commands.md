@@ -38,18 +38,6 @@ $ git push
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-* **clone**: fetch a repository (=project) from the server
-
-```bash
-# basic clone
-$ git clone URL
-# clone and store the files in "folder"
-$ git clone URL folder
-# clone a branch
-$ git clone URL -b name
-$ git clone URL --branch name
-```
-
 * **pull/fetch**: get the latest version from the server
 
 ```bash
@@ -58,35 +46,7 @@ $ git pull
 # useful when you want to check the code first
 $ git fetch
 ```
-
-* **add**: select files that were added/modified since the previous snapshot/commit, and should be added to the next commit
-
-```bash
-# all added/modified
-$ git add .
-$ git add *
-# add one file
-$ git add file
-# add one folder
-$ git add folder
-# select the part of a file that you want to add
-$ git add -p file
-```
 </div><div>
-
-* **commit**: create a snapshot with a message
-
-```bash
-# open "vim" to enter the message
-$ git commit
-# pass the message directly
-# press SHIFT+ENTER for multiple comments!
-$ git commit -m "message"
-# automatically add modified files
-$ git commit -am "message"
-# empty commit
-$ git commit -m "message" --allow-empty
-```
 
 * **status**: see files added/changed, commits that were not pushed to the server...
 
