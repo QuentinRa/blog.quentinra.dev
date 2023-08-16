@@ -48,6 +48,35 @@ There are multiple remote Git servers that you can use for free while you may al
 
 <hr class="sep-both">
 
+## Git workflow
+
+<div class="row row-cols-md-2"><div>
+
+Git creates a tree of **commits** which are the snapshots/saves of your project. All files in a Git project are either ([schema](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)):
+
+* **Untracked** 🚮: these files won't be saved
+* **Staged** 📦: these changes will be in the next commit
+* **Unmodified** ✅: there are no changes since the last commit
+* **Modified** 🫧: a tracked file was modified but not staged
+
+To track or stage a file, use `git add`.
+
+To create a commit, use `git commit`.
+
+To see the state of files within a project, use `git status`.
+</div><div>
+
+While you may use Git locally, we mostly use a remote Git server. To get started, you need to download the current version of the project.
+
+To download a Git project, use `git clone`.
+
+To update your local project with the remote one, use `git pull`.
+
+To push to the remote server your commits, use `git push`.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
