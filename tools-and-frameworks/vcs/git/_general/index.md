@@ -99,6 +99,34 @@ To merge branches, use `git merge`.
 
 <hr class="sep-both">
 
+## Commits
+
+<div class="row row-cols-md-2"><div>
+
+Each commit stores information about its changes regarding the previous commit. You can view commits like a timeline or a thread.
+
+When we create a [branch](#-branches-), we actually initiate a divergence in the timeline, effectively creating one more timeline.
+
+The result looks like a tree, hence the name "branch."
+
+**Each commit is identified by a unique SHA1 value.**
+
+➡️ Example: `1ed803c298f6dbfdc95bba1db3322c0f0ed7b6a5`.
+</div><div>
+
+Each branch's name, such as `master` or `feature-xxx`, is actually a named commit pointing to the last commit of their timeline.
+
+It means we can use a SHA1 instead of a branch in commands.
+
+* **Last commit on our branch**: `HEAD` or `@`
+* **Shortened SHA1**: `1ed803c2`
+* **One commit before xxx**: `xxx^`
+* **N commits before xxx**: `xxx^N` or `xxx~N`
+* The closed commit since xxx matching **a predicate**: `xxx@{two month ago}` or `xxx@{2021-05-05}`
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

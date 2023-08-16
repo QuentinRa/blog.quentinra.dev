@@ -19,44 +19,6 @@ $ git fetch
 
 <hr class="sep-both">
 
-## SHA1
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-Every commit is identified by a unique SHA1 value. This allows us to move between commits, or more generically, do any operations on specific commits.
-
-```bash
-# use the shortened SHA1
-$ git checkout 1ed803c2
-# use the whole SHA1
-$ git checkout 1ed803c298f6dbfdc95bba1db3322c0f0ed7b6a5
-```
-
-There are a few shortcuts
-
-* **HEAD**: the last commit
-* **@**: same, the last commit
-
-To identify a commit from a specific branch use `origin/myBranch`.
-</div><div>
-
-And many operators that can be applied on your SHA1
-
-```bash
-# one commit before
-$ git checkout sha1^
-# n commit before
-$ git checkout sha1^n
-$ git checkout sha1~n
-# every commit done 'two month ago' ours
-$ git checkout sha1@{two month ago}
-# the closest commit to a date
-$ git checkout sha1@{2021-05-05}
-```
-</div></div>
-
-<hr class="sep-both">
-
 ## 🧹 Rebase 🧹
 
 <div class="row row-cols-md-2 mt-4"><div>
