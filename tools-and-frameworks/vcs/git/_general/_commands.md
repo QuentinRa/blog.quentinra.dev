@@ -6,61 +6,16 @@
 
   * [Documentation on GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
   * The process is quite similar for others
-
 </div><div>
 
-* ➡ Download the project locally
+* **fetch**: get the latest version from the server
 
 ```bash
-$ git clone URL
-```
-
-* ➡ When working on your project
-
-```bash
-# get the latest snapshot from the server
-$ git pull
-# ... work a lot ...
-# check what changed
-$ git status
-# add files to the snapshot
-$ git add .
-# snapshot named "I worked a lot" 
-$ git commit -m "I worked a lot"
-# send the snapshot to the server
-$ git push
-```
-</div></div>
-
-<hr class="sep-both">
-
-## 🎉 Git commands 🎉
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-* **pull/fetch**: get the latest version from the server
-
-```bash
-$ git pull
 # fetch locally, but don't apply any changes
 # useful when you want to check the code first
 $ git fetch
 ```
-</div><div>
-
-* **status**: see files added/changed, commits that were not pushed to the server...
-
-```bash
-$ git status
-```
-
-* **push**: send your commits to the server
-
-```bash
-$ git push
-```
 </div></div>
-
 
 <hr class="sep-both">
 

@@ -52,6 +52,14 @@ $ git add *
 # stage only specific lines
 $ git add -p file
 ```
+
+#### git status
+
+List information such as untracked, modified, and staged files.
+
+```ps
+$ git status
+```
 </div><div>
 
 #### git commit
@@ -66,6 +74,22 @@ $ git commit
 $ git commit -m "message"
 $ git commit -am "xxx"    # automatically add modified files
 $ git commit -m "xxx" --allow-empty  # allow an empty commit
+```
+
+#### git pull
+
+Download and apply the latest changes, for the current branch, from the remote repository.
+
+```ps
+$ git pull
+```
+
+#### git push
+
+Send the latest commits only present locally, for the current branch, to the remote repository.
+
+```ps
+$ git push
 ```
 </div></div>
 

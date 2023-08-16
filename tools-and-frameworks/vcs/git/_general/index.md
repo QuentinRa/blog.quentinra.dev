@@ -74,7 +74,7 @@ To update your local project with the remote one, use `git pull`.
 
 To push to the remote server your commits, use `git push`.
 
-👉 All commands with their arguments are [explained here](../commands/index.md).
+👉 All commands with their arguments are [explained here](../commands/index.md#basic-git-commands).
 </div></div>
 
 <hr class="sep-both">
@@ -89,6 +89,8 @@ Stuff that I found, but never read/used yet.
 * [_files](_files.md)
 * [_server-side](server-side.md)
 * [git-scm](https://git-scm.com/)
+* origin
+* git pull merge branch
 </div><div>
 
 
