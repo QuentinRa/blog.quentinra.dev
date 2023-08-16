@@ -61,10 +61,6 @@ $ git checkout sha1@{2021-05-05}
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-A branch is a copy of your project. The main branch is usually called **main**/**master** by default, and you will most likely work directly on it.
-
-Sometimes, to avoid breaking the main branch, we create other branches to add/edit a feature, to avoid breaking your teammates project.
-
 ```bash
 $ git branch "branch_name"
 $ git checkout "branch_name"
@@ -74,8 +70,6 @@ $ git checkout -b "branch_name"
 $ git branch -d "branch_name"
 ```
 </div><div>
-
-Once you're finished, you will want to merge your work with another copy (branch) of the project.
 
 ```bash
 # ex: merge "branch_name" with main

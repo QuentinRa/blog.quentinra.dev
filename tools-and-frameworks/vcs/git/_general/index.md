@@ -79,6 +79,26 @@ To push to the remote server your commits, use `git push`.
 
 <hr class="sep-both">
 
+## 🪵 Branches 🪵
+
+<div class="row row-cols-md-2"><div>
+
+When working on a project, it's common to create a copy of our project and work on it, for instance, to test implementing a feature. By doing that, we ensure we still have a working project <small>("just in case" 😅)</small>.
+
+A **branch** 🪵 is a copy of your project. Git provides features to manage them, including support to **merge** them.
+
+The default branch, which is the one you work on by default, is usually called `main` <small>(new term, more neutral)</small> or `master` <small>(previous traditional term)</small>.
+</div><div>
+
+To manage branches, use `git branch`.
+
+To navigate between branches and commits, use `git checkout`.
+
+To merge branches, use `git merge`.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -89,7 +109,7 @@ Stuff that I found, but never read/used yet.
 * [_files](_files.md)
 * [_server-side](server-side.md)
 * [git-scm](https://git-scm.com/)
-* origin
+* origin, `origin/myBranch`
 * git pull merge branch
 </div><div>
 
