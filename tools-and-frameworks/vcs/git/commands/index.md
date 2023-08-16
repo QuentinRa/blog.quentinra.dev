@@ -93,6 +93,53 @@ $ git push
 ```
 </div></div>
 
+
+<hr class="sep-both">
+
+## 🪄 Git extras 🪄
+
+<div class="row row-cols-md-2"><div>
+
+#### 🪄 Git submodules
+
+Git submodules are the appropriate way of having external Git repositories inside a Git repository.
+
+```bash
+# init submodules for a cloned project (v1)
+$ git submodule init
+$ git submodule update
+# init submodules for a cloned project (v2)
+$ git submodule update --init --recursive
+# to clone a project and init submodules
+$ git clone --recursive URL
+$ git clone --recurse-submodules URL
+# to add a Git repository as a submodule
+$ git submodule add CLONE_URL
+$ git submodule add CLONE_URL LOCAL_PATH
+```
+
+You can find your submodules in `.gitmodules`.
+</div><div>
+
+#### 🪄 Git Large File Storage
+
+Git LFS should be used with caution. It offers a dedicated Git storage solution for large files; however, for free users utilizing SaaS Git servers like GitHub, it does have several limitations.
+
+For example, on GitHub, it permits uploading files larger than 50 MB, yet there are impractical bandwidth quotas and storage constraints.
+
+Some commands you might use:
+
+```bash
+$ git lfs init
+$ git lfs update
+$ git lfs ls-files
+$ git lfs fetch --all origin
+$ git lfs uninstall
+```
+
+See also: `.gitattributes`.
+</div></div>
+
 <hr class="sep-both">
 
 ## 👻 To-do 👻

@@ -139,47 +139,6 @@ $ git rebase --continue # next task
 
 <hr class="sep-both">
 
-## 🪄 Git extras 🪄
-
-<div class="row row-cols-md-2"><div>
-
-#### 🪄 Git submodules
-
-Git submodules are the appropriate way of having others Git repositories inside another Git repository. 
-
-```bash
-# version 1
-$ git submodule init
-$ git submodule update
-# version 2
-$ git clone --recursive URL
-$ git clone --recurse-submodules URL
-# Alternative for update
-$ git submodule update --init --recursive
-# Add another git
-$ git submodule add CLONE_URL
-$ git submodule add CLONE_URL LOCAL_PATH
-```
-
-You can find your submodules in `.gitmodules`.
-</div><div>
-
-#### 🪄 Git LFS
-
-Git LFS should not be used. On GitHub, it allows you to upload files bigger than 50 Mo on GitHub, but there are bandwidth quotas/a limited storage for free.
-
-```bash
-# random commands
-$ git lfs init # see .gitattributes
-$ git lfs update
-$ git lfs ls-files
-$ git lfs fetch --all origin
-$ git lfs uninstall
-```
-</div></div>
-
-<hr class="sep-both">
-
 ## 💪 Advanced commands 💪
 
 <div class="row row-cols-md-2 mt-4"><div>
