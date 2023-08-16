@@ -79,27 +79,7 @@ To push to the remote server your commits, use `git push`.
 
 <hr class="sep-both">
 
-## 🪵 Branches 🪵
-
-<div class="row row-cols-md-2"><div>
-
-When working on a project, it's common to create a copy of our project and work on it, for instance, to test implementing a feature. By doing that, we ensure we still have a working project <small>("just in case" 😅)</small>.
-
-A **branch** 🪵 is a copy of your project. Git provides features to manage them, including support to **merge** them.
-
-The default branch, which is the one you work on by default, is usually called `main` <small>(new term, more neutral)</small> or `master` <small>(previous traditional term)</small>.
-</div><div>
-
-To manage branches, use `git branch`.
-
-To navigate between branches and commits, use `git checkout`.
-
-To merge branches, use `git merge`.
-</div></div>
-
-<hr class="sep-both">
-
-## Commits
+## 💴 Commits 💴
 
 <div class="row row-cols-md-2"><div>
 
@@ -114,15 +94,38 @@ The result looks like a tree, hence the name "branch."
 ➡️ Example: `1ed803c298f6dbfdc95bba1db3322c0f0ed7b6a5`.
 </div><div>
 
-Each branch's name, such as `master` or `feature-xxx`, is actually a named commit pointing to the last commit of their timeline.
+To navigate to a commit, use `git checkout`.
 
-It means we can use a SHA1 instead of a branch in commands.
+There are many aliases to make SHA1 easier to use:
 
-* **Last commit on our branch**: `HEAD` or `@`
-* **Shortened SHA1**: `1ed803c2`
-* **One commit before xxx**: `xxx^`
-* **N commits before xxx**: `xxx^N` or `xxx~N`
-* The closed commit since xxx matching **a predicate**: `xxx@{two month ago}` or `xxx@{2021-05-05}`
+* Last commit <small>(of our branch)</small>: `HEAD` or `@`
+* Shortened SHA1: `1ed803c2`
+* One commit before SHA1: `1ed803c2^`
+* N commits before SHA1: `1ed803c2^N` or `1ed803c2~N`
+
+You can also use predicates such as: `xxx@{two month ago}` or `xxx@{2021-05-05}` which will be replaced with the closest commit.
+</div></div>
+
+<hr class="sep-both">
+
+## 🪵 Branches 🪵
+
+<div class="row row-cols-md-2"><div>
+
+When working on a project, it's common to create a copy of our project and work on it, for instance, to test implementing a feature. By doing that, we ensure we still have a working project <small>("just in case" 😅)</small>.
+
+A **branch** 🪵 is a <small>(shallow)</small> copy of your project. Git provides features to manage them, including support to **merge** them.
+
+The default branch, which is the one you work on by default, is usually called `main` <small>(new term, more neutral)</small> or `master` <small>(previous traditional term)</small>.
+
+➡️ Each branch's name, such as `main` or `feature-xxx`, is actually a named commit pointing to the last commit of their timeline <small>(branch)</small>.
+</div><div>
+
+To manage branches, use `git branch`.
+
+To navigate between branches, use `git checkout`.
+
+To merge branches, use `git merge`.
 </div></div>
 
 <hr class="sep-both">
