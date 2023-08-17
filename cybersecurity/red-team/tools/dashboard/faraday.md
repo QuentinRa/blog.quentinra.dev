@@ -13,7 +13,14 @@ Supported tools are [plugins](https://github.com/infobyte/faraday_plugins) in [P
 After installing faraday, you can access it at `http://localhost:5985/`.
 </div><div>
 
-➡️ Use `docker compose down` to shut down all services.
+**Terminology** 📚
+
+* A **workspace** 🏠 is a separate dashboard usually associated with one security assessment.
+* A **host** 🧑 is a device, such as a computer, that was detected, and may contain vulnerabilities. 
+* A host may have **services** 🏭 running such as HTTPS/443.
+* A host may have **vulnerabilities** 🧨 which are either created manually or imported from a file or a command.
+
+See also: [Faraday CLI](https://github.com/infobyte/faraday-cli).
 </div></div>
 
 <hr class="sep-both">
@@ -96,6 +103,10 @@ There are two types of plugins, while one plugin can have both:
 
 * `command`: a plugin parsing a command output
 * `file`: a plugin parsing a file report
+
+**Plugins can only create vulnerabilities**. A new vulnerability is created after each import, unless there is already a vulnerability that is the exact same <small>(e.g., all attributes have the same value)</small>. 
+
+👉 There is one exception: if a vulnerability was marked as "closed," it becomes "re-opened" if re-imported in a scan.
 </div><div>
 
 By default, for file report plugins, the name and type of file determine which plugin will parse it. Only `.xml`, `.txt`, and `.zip` extensions are <small>(currently)</small> allowed. To by-pass this, rename your report file to match this regex: `.*_faraday_plugin_name.*` as it's the first element used to [determines](https://github.com/infobyte/faraday_plugins/blob/master/faraday_plugins/plugins/manager.py#L42) which plugin is loaded.
