@@ -179,10 +179,81 @@ vuln_id = createAndAddVulnWebToService(...) # a web service
 
 <hr class="sep-both">
 
+## Faraday API
+
+<div class="row row-cols-md-2"><div>
+
+Faraday API is documented in their [OpenAPI](https://docs.faradaysec.com/api-swagger/) specification, along inside the [API Server Page](https://docs.faradaysec.com/API-Server/), but some routes are missing.
+
+Assuming the following Python script:
+
+```py
+from requests import Session
+
+username=''
+password=''
+server_address=''
+workspace_name=''
+headers={'Content-Type': 'application/json'}
+
+print('Authentication to server {0}'.format(server_address))
+session = Session()
+```
+
+* Login
+
+```py
+response = session.post(server_address + '/_api/login', json={'email': username, 'password': password})
+# status_code == 200 
+```
+
+* Get all vulnerabilities in a workspace
+
+```py
+response = session.get(server_address + f'/_api/v3/ws/{workspace_name}/vulns', headers=headers)
+result = response.json()
+# status_code == 200
+```
+</div><div>
+
+* Delete a vulnerability by ID
+
+```py
+vuln_id = ''
+response = session.delete(server_address + f'/_api/v3/ws/{workspace_name}/vulns/{vuln_id}')
+# status_code == 204
+```
+
+* Update a vulnerability
+
+```py
+vuln_value = {} # fetch the vulnerability first
+response = session.put(server_address + f'/_api/v3/ws/{workspace_name}/vulns/{vuln_id}', json=vuln_value)
+# status_code == 200
+```
+
+* Upload a report
+
+```py
+response = session.get(server_address + f'/_api/session', headers=headers)
+token = response.json()['csrf_token']
+# status_code == 200
+
+files = {'file': open('xxx','rb')}
+values = {'csrf_token': token}
+response = session.post(server_address + f'/_api/v3/ws/{workspace_name}/upload_report', files=files, data=values)
+# status_code == 200
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
+
+* internal API URL
 </div><div>
 </div></div>
