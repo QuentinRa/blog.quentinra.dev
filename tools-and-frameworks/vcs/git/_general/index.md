@@ -213,12 +213,11 @@ Stuff that I found, but never read/used yet.
 * [_commands](_commands.md)
 * [_files](_files.md)
 * [_server-side](server-side.md)
-* [git-scm](https://git-scm.com/)
 * origin, `origin/myBranch`
 * git pull merge branch
 * pull vs fetch
 * merge fast-forward vs rebase
 </div><div>
 
-
+* gitk, gitg
 </div></div>

@@ -5,7 +5,8 @@
 You can install [Git](../_general/index.md) CLI using:
 
 ```shell!
-$ sudo apt install git
+$ sudo apt install git # Debian, Ubuntu...
+$ brew install git     # macOS
 $ git --version
 ```
 </div><div>
@@ -210,8 +211,18 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-xxx
+* `git tag`
+* `git reset`
+* `git restore`
+* `git switch`
+* `git filter-branch` (see [disable git-lfs](https://stackoverflow.com/questions/48699293/how-do-i-disable-git-lfs), and [here](https://stackoverflow.com/questions/43762338/how-to-remove-file-from-git-history))
 </div><div>
 
+Cheatsheets
 
+* [gitlab.com](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
+* [education.github.com](https://education.github.com/git-cheat-sheet-education.pdf)
+* [training.github.com](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
+* [cheat-sheets.org](http://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf)
+* [atlassian.com](https://www.atlassian.com/dam/jcr:e7e22f25-bba2-4ef1-a197-53f46b6df4a5/SWTM-2088_Atlassian-Git-Cheatsheet.pdf)
 </div></div>

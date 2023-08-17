@@ -256,26 +256,9 @@ Stuff
 
 * Digital Object Identifiers (see [GitHub article](https://guides.github.com/activities/citable-code/))
 * GitGraph.js
-* `git tag`
-* `git reset`
-* `git switch`
-* `git filter-branch` (see [disable git-lfs](https://stackoverflow.com/questions/48699293/how-do-i-disable-git-lfs), and [here](https://stackoverflow.com/questions/43762338/how-to-remove-file-from-git-history))
 
 Learn
 
-* [github.com](https://github.com/git-guides/)
-* [adopteungit](https://github.com/lgiraudel/adopteungit)
-* [dubrayn](https://dubrayn.github.io/IPS-DEV/git.html#1)
-* [Git & Github Desktop](https://docs.google.com/presentation/d/1vtK6LoqwF4rQQZZy-ovuEgsYUwwMRXsqDVMOjAPSBt0/edit#slide=id.p) and [learn-git-milestones](https://github.com/omundy/learn-git-milestones)
-* 👉 An imaged tutorial: [GitHub for collaboration](https://mozillascience.github.io/working-open-workshop/github_for_collaboration/) <small>(quite good)</small>.
-* `git restore`, `git subtree`, [see 2nd answer](https://stackoverflow.com/questions/11706215/how-can-i-fix-the-git-error-object-file-is-empty) (VM crash/shutting down)
+* `git subtree`, [see 2nd answer](https://stackoverflow.com/questions/11706215/how-can-i-fix-the-git-error-object-file-is-empty) (VM crash/shutting down)
 </div><div>
-
-Cheatsheets
-
-* [gitlab.com](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
-* [education.github.com](https://education.github.com/git-cheat-sheet-education.pdf)
-* [training.github.com](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
-* [cheat-sheets.org](http://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf)
-* [atlassian.com](https://www.atlassian.com/dam/jcr:e7e22f25-bba2-4ef1-a197-53f46b6df4a5/SWTM-2088_Atlassian-Git-Cheatsheet.pdf)
 </div></div>
