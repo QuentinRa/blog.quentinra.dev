@@ -66,6 +66,28 @@ By default, configuration files and logs are stored inside `~/.faraday`.
 
 <hr class="sep-both">
 
+## Plugins development
+
+<div class="row row-cols-md-2"><div>
+
+Faraday will look for plugins inside its default plugin folder, and inside the **Custom Plugin Folder** (CPF). 
+
+You first need to change its value, which is stored inside the database. You only have to do it once.
+
+```shell!
+$ faraday-manage settings -a update reports --data '{"custom_plugins_folder": "/home/faraday/.faraday/faraday_plugins/"}'
+```
+
+➡️ Use `faraday-manage settings -a show reports` to check its value.
+
+➡️ The command assumes that `~/.faraday/faraday_plugins` will be used to store your custom plugins <small>(same folder on host and docker)</small>.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
