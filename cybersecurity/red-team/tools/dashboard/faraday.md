@@ -81,9 +81,51 @@ $ faraday-manage settings -a update reports --data '{"custom_plugins_folder": "/
 ➡️ Use `faraday-manage settings -a show reports` to check its value.
 
 ➡️ The command assumes that `~/.faraday/faraday_plugins` will be used to store your custom plugins <small>(same folder on host and docker)</small>.
+
+<br>
+
+#### Basics
+
+Each plugin has its own folder with an empty `__init__.py` and a `plugin.py` file. To develop on the host, you need to install:
+
+```shell!
+$ pip install faraday-plugins
+```
+
+There are two types of plugins, while one plugin can have both:
+
+* `command`: a plugin parsing a command output
+* `file`: a plugin parsing a file report
 </div><div>
 
-...
+#### Notes
+
+<details class="details-n">
+<summary><code>plugin.py</code>: file plugin template</summary>
+
+```py
+from faraday_plugins.plugins.plugin import PluginBase
+
+
+class XXXClass(PluginBase):
+    def __init__(self, *arg, **kwargs):
+        super().__init__(*arg, **kwargs)
+        self.id = "xxx"
+        self.name = "xxx"
+        self.plugin_version = "0.0.1"
+        self.version = "0.0.1"
+
+    # output is a string with all lines of the files
+    # you need to parse them
+    def parseOutputString(self, output):
+        pass
+
+
+def createPlugin(*args, **kwargs):
+    return XXXClass(*args, **kwargs)
+
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
