@@ -98,7 +98,9 @@ There are two types of plugins, while one plugin can have both:
 * `file`: a plugin parsing a file report
 </div><div>
 
-#### Notes
+#### Basic templates
+
+Here are some empty templates to get started:
 
 <details class="details-n">
 <summary><code>plugin.py</code>: file plugin template</summary>
@@ -118,6 +120,8 @@ class XXXClass(PluginBase):
     # output is a string with all lines of the files
     # you need to parse them
     def parseOutputString(self, output):
+        # read the code of others plugins to 
+        # write your parser
         pass
 
 
@@ -126,6 +130,38 @@ def createPlugin(*args, **kwargs):
 
 ```
 </details>
+
+<details class="details-n">
+<summary><code>test.py</code>: template to test your parser</summary>
+
+While there are tools to [easily test your plugin](https://github.com/infobyte/faraday_plugins/tree/master#commands), to test your parser, you may use this sample script:
+
+```py
+# assuming we are in a plugin's folder
+from pathlib import Path
+# ./plugin.py contains "XXXClass"
+from plugin import XXXClass
+
+with Path('my_test_file.txt').open(**{"mode": "rb"}) as f:
+	plugin = XXXClass()
+	plugin.parseOutputString(f.read())
+```
+</details>
+
+#### Faraday commands
+
+Inside your script, using the data you got from parsing a file or a command, you'll call them methods:
+
+```ini!
+# create a host, e.g., a target having vulnerabilities
+host_id = createAndAddHost(...)
+# create a host, and add a service to it (ex: HTTP/80)
+service_id = createAndAddServiceToHost(...)
+# add a vulnerability to...
+vuln_id = createAndAddVulnToHost(...)       # a host
+vuln_id = createAndAddVulnToService(...)    # a service
+vuln_id = createAndAddVulnWebToService(...) # a web service
+```
 </div></div>
 
 <hr class="sep-both">
