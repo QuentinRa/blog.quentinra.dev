@@ -5,20 +5,6 @@
 ## 🔑 SSH/GPG Keys 🔑
 
 <div class="row row-cols-md-2"><div>
-
-Setting up SSH keys is a must in most projects. Without SSH keys, you have to log in everytime you want to pull/push.
-
-```bash
-$ ssh-keygen -t ed25519 -C "email"
-# press ENTER every time.
-# You should add a passphrase to protect your key. If someone want to
-# use your key, the will be prompted to enter the passphrase.
-$ cat ~/.ssh/id_rsa.pub
-$ Copy the key in Settings > SSH Keys on GitHub/...
-```
-
-> See [GitHub tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).<br>
-> Before, we were using `ssh-keygen -t rsa -b 4096 [...]`.
 </div><div>
 
 GPG keys are a bit different. They are used to sign your commits, and prove that you were the one that committed. It's possible for someone that has your email to usurp your identify after all.

@@ -48,6 +48,67 @@ There are multiple remote Git servers that you can use for free while you may al
 
 <hr class="sep-both">
 
+## Authentication
+
+<div class="row row-cols-md-2"><div>
+
+When using Git with a remote server, we **need** to log in for some operations such as `git clone`, `git pull`, `git push`... You may use one of these to log in <small>(the default one being the less convenient)</small>:
+
+* Login/Password authentication 🔑 — default
+* SSH key authentication 🔐
+* Personal access tokens 🎫
+
+#### SSH key authentication
+
+Using an SSH key, you don't need to enter a username/password. 
+
+```shell!
+$ ssh-keygen -t ed25519 -C "email"
+Press ENTER every time.
+You should add a passphrase to protect your key.
+If you did, to use your key, you will have to enter the passphrase.
+$ cat ~/.ssh/id_rsa.pub
+<copy the content>
+```
+
+Read your Git Server documentation to find where you can add a SSH key. It's commonly in <kbd>Settings > SSH Keys</kbd>.
+
+</div><div>
+
+#### GPG commit signature
+
+You can set up GPG keys to sign your commits. Anyone knowing your email can usurp your identity; however, by signing commits, if increase the likeliness that you were the one that created the commit.
+
+* [GitHub tutorial](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/generating-a-new-gpg-key)
+
+<details class="details-n">
+<summary>Tip: increase the delay between passphrase prompts</summary>
+
+You will need to **write a passphrase almost every time you are committing**, unless you provided your passphrase in the last **10 minutes**. You can increase the time your passphrase is cached
+
+```bash
+# note the location of the file
+# this is usually ~/.gnupg/gpg-agent.conf
+$ gpg-agent --gpgconf-list | head -n1
+# create the file, or edit it
+# cached 8 hours
+$ echo "max-cache-ttl 28800" >> ~/.gnupg/gpg-agent.conf
+$ echo "default-cache-ttl 28800" >> ~/.gnupg/gpg-agent.conf
+# reload
+$ gpg-connect-agent reloadagent /bye
+```
+</details>
+
+On GitHub, signed commits are tagged "verified" next to them:
+
+<div class="text-center">
+
+![Verified commit](_images/gpg.png)
+</div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Git workflow
 
 <div class="row row-cols-md-2"><div>
@@ -114,11 +175,11 @@ You can also use predicates such as: `xxx@{two month ago}` or `xxx@{2021-05-05}`
 
 When working on a project, it's common to create a copy of our project and work on it, for instance, to test implementing a feature. By doing that, we ensure we still have a working project <small>("just in case" 😅)</small>.
 
-A **branch** 🪵 is a <small>(shallow)</small> copy of your project. Git provides features to manage them, including support to **merge** them.
+A **branch** 🪵 is like a <small>(shallow)</small> copy of your project. Git provides features to manage them, including support to **merge** them.
 
 The default branch, which is the one you work on by default, is usually called `main` <small>(new term, more neutral)</small> or `master` <small>(previous traditional term)</small>.
 
-➡️ Each branch's name, such as `main` or `feature-xxx`, is actually a named commit pointing to the last commit of their timeline <small>(branch)</small>.
+➡️ Each branch's name, such as `main` or `feature-xxx`, is actually a named commit pointing to the last commit of their timeline <small>(=branch)</small>.
 </div><div>
 
 To manage branches, use `git branch`.
