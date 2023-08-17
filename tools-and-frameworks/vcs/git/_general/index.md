@@ -71,8 +71,9 @@ $ cat ~/.ssh/id_rsa.pub
 <copy the content>
 ```
 
-Read your Git Server documentation to find where you can add a SSH key. It's commonly in <kbd>Settings > SSH Keys</kbd>.
+Read your Git Server documentation to find where you can add an SSH key. It's commonly in <kbd>Settings > SSH Keys</kbd>.
 
+👉 It's the most common password-less method.
 </div><div>
 
 #### GPG commit signature
@@ -105,6 +106,18 @@ On GitHub, signed commits are tagged "verified" next to them:
 
 ![Verified commit](_images/gpg.png)
 </div>
+
+#### Personal access tokens
+
+A personal access token is a string that you can use in multiple commands that acts like a login/password.
+
+```shell!
+$ git clone https://oauth2:ACCESS_TOKEN@example.com/xxx.git  # GitLab
+$ git clone https://username:ACCESS_TOKEN@github.com/xxx.git # GitHub
+$ cd xxx && git pull # no authentication
+```
+
+👉 Refer to your Git Server to create one. Commonly used in scripts.
 </div></div>
 
 <hr class="sep-both">

@@ -1,45 +1,4 @@
-# Server-side features
-
-<hr class="sep-both">
-
-## 🔑 SSH/GPG Keys 🔑
-
-<div class="row row-cols-md-2"><div>
-</div><div>
-
-GPG keys are a bit different. They are used to sign your commits, and prove that you were the one that committed. It's possible for someone that has your email to usurp your identify after all.
-
-* [GitHub tutorial](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/generating-a-new-gpg-key)
-
-<details class="details-e">
-<summary>Increase the delay between passphrase prompts</summary>
-
-You will need to **write a passphrase almost every time you are committing**, unless you provided your passphrase in the last **10 minutes**. You can increase the time your passphrase is cached
-
-```bash
-# note the location of the file
-# this is usually ~/.gnupg/gpg-agent.conf
-$ gpg-agent --gpgconf-list | head -n1
-# create the file, or edit it
-# cached 8 hours
-$ echo "max-cache-ttl 28800" >> ~/.gnupg/gpg-agent.conf
-$ echo "default-cache-ttl 28800" >> ~/.gnupg/gpg-agent.conf
-# reload
-$ gpg-connect-agent reloadagent /bye
-```
-</details>
-
-On GitHub, verified commits are tagged with a tag "verified" next to them:
-
-<div class="text-center">
-
-![Verified commit](_images/gpg.png)
-</div>
-</div></div>
-
-<hr class="sep-both">
-
-## 🏹 Server-side features 🏹
+# 🏹 Server-side features 🏹
 
 <div class="row row-cols-md-2 mt-4"><div>
 
