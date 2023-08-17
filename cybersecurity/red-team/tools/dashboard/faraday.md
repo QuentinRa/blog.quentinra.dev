@@ -44,6 +44,24 @@ To shut down all services, use:
 $ docker compose stop
 ```
 </div><div>
+
+#### Run as a service
+
+When running as a service, faraday will always be running, and you won't have to start/stop/restart it.
+
+Assuming you did the previous commands, do:
+
+```shell!
+$ docker compose down
+$ docker swarm init
+$ docker stack deploy -c docker-compose.yml faraday
+```
+
+➡️ You should use `docker secrets` instead of plaintext passwords inside the `docker-compose.yml`.
+
+#### Configuration
+
+By default, configuration files and logs are stored inside `~/.faraday`.
 </div></div>
 
 <hr class="sep-both">

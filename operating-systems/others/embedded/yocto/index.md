@@ -121,4 +121,12 @@ Stuff that I found, but never read/used yet.
 * SSTATE
 * Yocto native recipes generate tools for our host that will be used to compile the target recipes
 * `bitbake -c xxx -x yyy`
+
+Set the password of "root" to "root"
+
+```text!
+# local.conf
+INHERIT += "extrausers"
+EXTRA_USERS_PARAMS = "usermod -P root root;"
+```
 </div></div>
