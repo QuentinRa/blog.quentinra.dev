@@ -108,43 +108,6 @@ git cherry-pick SHA1 --no-commit
 ## 🧺 Other commands 🧺
 
 <div class="row row-cols-md-2 mt-4"><div>
-
-
-* See previous commits
-
-<details class="details-n">
-<summary>&nbsp;<code>git log</code>: the sad life of client-less dudes 😢</summary>
-
-```bash
-$ git log
-$ git log -n # last n
-$ git log --oneline # one line per commit
-$ git log --decorate # ...
-$ git log --stat # changed files
-$ git log -p # show diff
-$ git log --pretty=fuller # custom: https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-log.html#_pretty_formats
-$ git log --no-walk <COMMIT> # see one commit
-$ git log --graph # draw graph
-$ git log --grep="feat:" # filter by message
-$ git log -- README.md # filter by files
-```
-</details>
-
-<details class="details-n">
-<summary>&nbsp;<code>git shortlog</code>: quick recap of who committed</summary>
-
-```bash
-$ git shortlog
-```
-</details>
-
-<details class="details-n">
-<summary>&nbsp;<code>git reflog</code>: browse your commits</summary>
-
-```bash
-$ git reflog --date=iso
-```
-</details>
 </div><div>
 
 * Random Utilities
@@ -155,16 +118,6 @@ $ git reflog --date=iso
 ```bash
 $ git show
 $ git show -s --pretty=fuller HEAD
-```
-</details>
-
-<details class="details-n">
-<summary>&nbsp;<code>git diff</code>: diff between two commits</summary>
-
-```bash
-$ git diff
-$ git diff <COMMIT>
-$ git diff --check <COMMIT> # markers/whitespace errors
 ```
 </details>
 

@@ -209,6 +209,60 @@ $ git rebase --continue # next task
 
 <hr class="sep-both">
 
+## Git Logs
+
+<div class="row row-cols-md-2"><div>
+
+#### git diff
+
+Show differences between two commits
+
+```shell!
+$ git diff
+$ git diff <COMMIT>
+$ git diff --check <COMMIT> # markers/whitespace errors
+```
+
+#### git log
+
+Browse your commits. Mix options to tune the output.
+
+```ps
+$ git log
+$ git log -n                 # last n commits
+$ git log --oneline          # one line per commit
+$ git log --decorate         # ...
+$ git log --stat             # changed files
+$ git log -p                 # show diff
+$ git log --pretty=fuller    # custom: https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-log.html#_pretty_formats
+$ git log --no-walk <COMMIT> # see one commit
+$ git log --graph            # draw graph
+$ git log --grep="feat:"     # filter by message
+$ git log -- README.md       # filter by files
+```
+</div><div>
+
+Other commands such as `shortlog` and `reflog` are based on `log`.
+
+#### git shortlog
+
+Summary of commits per user.
+
+```shell!
+$ git shortlog
+```
+
+#### git reflog
+
+One-line per commit with the name, data, and SHA1.
+
+```shell!
+$ git reflog
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 🪄 Git extras 🪄
 
 <div class="row row-cols-md-2"><div>
