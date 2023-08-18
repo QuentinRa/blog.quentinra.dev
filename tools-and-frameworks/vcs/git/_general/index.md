@@ -73,12 +73,14 @@ $ cat ~/.ssh/id_rsa.pub
 
 Read your Git Server documentation to find where you can add an SSH key. It's commonly in <kbd>Settings > SSH Keys</kbd>.
 
+Once added, you'll have to use a new URL to clone repositories. You may edit an existing repository [remote URL](#git-remotes) to use the SSH URL.
+
 👉 It's the most common password-less method.
 </div><div>
 
 #### GPG commit signature
 
-You can set up GPG keys to sign your commits. Anyone knowing your email can usurp your identity; however, by signing commits, if increase the likeliness that you were the one that created the commit.
+You can set up GPG keys to sign your commits. Anyone knowing your email can usurp your identity; however, by signing commits, it increases the likeliness that you were the one that created the commit.
 
 * [GitHub tutorial](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/generating-a-new-gpg-key)
 
@@ -109,7 +111,7 @@ On GitHub, signed commits are tagged "verified" next to them:
 
 #### Personal access tokens
 
-A personal access token is a string that you can use in multiple commands that acts like a login/password.
+A personal access token is a string that you can use in multiple commands (such as `git clone`) that acts like a login/password.
 
 ```shell!
 $ git clone https://oauth2:ACCESS_TOKEN@example.com/xxx.git  # GitLab
@@ -220,8 +222,9 @@ To rebase before a merge <small>(cleaner history)</small>, use `git rebase`.
 
 They are automatically set when closing a repository. For [remote git server](#remote-git-server-), the remote is commonly called `origin`. 
 
-For manipulating remotes, use `git remote`.
+For manipulating remotes, use `git remote` ([usage](../commands/index.md#git-remote)).
 </div><div>
+
 </div></div>
 
 <hr class="sep-both">
