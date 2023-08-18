@@ -212,6 +212,70 @@ To rebase before a merge <small>(cleaner history)</small>, use `git rebase`.
 
 <hr class="sep-both">
 
+## Git remotes
+
+<div class="row row-cols-md-2"><div>
+
+**Remotes** are specifying were and how the code is fetched and send when using operations such as `git push`, `git pull`...
+
+```shell!
+$ git remote show <remote_name> # show details
+Fetch URL: xxx.git
+Push  URL: xxx.git
+[...]
+```
+
+They are automatically set when closing a repository. For [remote git server](#remote-git-server-), the remote is commonly called `origin`. 
+
+```shell!
+$ git remote                   # list remotes
+local
+origin
+$ git remote -v                # remote + URLs
+origin  xxx.git
+```
+</div><div>
+
+To add a remote, use:
+
+```ps
+$ git remote add origin CLONE_URL
+```
+
+You can update the URL with <small>(ex: repository renamed/moved, HTTP to SSH)</small>:
+
+```ps
+# get the current URL
+$ git remote get-url origin
+# update the URL
+$ git remote set-url origin NEW_URL
+```
+
+**Other notes** 📚
+
+<details class="details-n">
+<summary>Use commits from a previous project</summary>
+
+The goal is to "steal" commits from another local repository. For instance, if you started a project from scratch, but you want to get back the previous project commits.
+
+```bash!
+# remove everything as you don't want old files
+$ cd AnotherRepository
+$ rm -rf *
+$ git add .
+$ git commit -m "feat: delete everything"
+# move to the other repository
+$ cd ../YourRepository
+$ git remote add other ../AnotherRepository
+$ git fetch other
+$ git merge other/main --allow-unrelated-histories
+# now, your repositories has commits from the previous repository
+```
+</details>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
