@@ -159,6 +159,56 @@ $ git merge --abort
 
 <hr class="sep-both">
 
+## Git Rebase
+
+<div class="row row-cols-md-2"><div>
+
+The command `git rebase` is used to edit a repository commit history. There are many cases, such as
+
+* 🧼 Renaming commits
+* 📦 Merging multiple commits into one
+* 💣 Rearrange/Delete commits
+* 🔫 Delete files that were previously committed
+* ...
+
+You will usually work on a range of commits. The range is starting with your current commit, and ending with the provided commit.
+
+```ps
+# Ex: rebase the last 10 commits
+$ git rebase -i HEAD~10
+```
+
+Once inside the interactive editor (vim), you will see lines such as:
+
+```text!
+pick SHA1_HEADER commit_message
+```
+</div><div>
+
+You can replace the instruction "pick" with
+
+* `reword`: edit commit message
+* `edit`: edit commit
+* `squash`: merge this commit with the previous one
+* `fixup`: squash, and discard commit message
+* `exec`: run a command
+* `drop`: remove/drop commit
+
+Then, close the editor <small>(on Windows: CTRL+C, then `:wq`)</small>. The editor will open itself again, according to the instructions you used.
+
+Process each commit until the rebase is done.
+
+**Additional commands** 🧪
+
+```shell!
+$ git status # check where you are
+$ git commit --amend # modify commit
+$ git rebase --continue # next task
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 🪄 Git extras 🪄
 
 <div class="row row-cols-md-2"><div>

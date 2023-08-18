@@ -163,12 +163,16 @@ When we create a [branch](#-branches-), we actually initiate a divergence in the
 
 The result looks like a tree, hence the name "branch."
 
+To navigate to a commit, use `git checkout`.
+
+To edit a commit, use `git rebase`.
+
+To edit the tree <small>(move commits/...)</small>, use `git rebase`.
+</div><div>
+
 **Each commit is identified by a unique SHA1 value.**
 
 ➡️ Example: `1ed803c298f6dbfdc95bba1db3322c0f0ed7b6a5`.
-</div><div>
-
-To navigate to a commit, use `git checkout`.
 
 There are many aliases to make SHA1 easier to use:
 
@@ -200,6 +204,10 @@ To manage branches, use `git branch`.
 To navigate between branches, use `git checkout`.
 
 To merge branches, use `git merge`.
+
+To rebase before a merge <small>(cleaner history)</small>, use `git rebase`.
+
+👉 Most commands with their arguments are [explained here](../commands/index.md#git-branching).
 </div></div>
 
 <hr class="sep-both">
