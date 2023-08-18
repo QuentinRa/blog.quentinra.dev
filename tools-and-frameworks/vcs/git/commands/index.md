@@ -23,6 +23,15 @@ You'll have to configure GIT before you can use it. The name and the email are u
 $ git config --global user.name "Example Example"
 $ git config --global user.email "example@example.com"
 ```
+
+You may also create aliases:
+
+```shell!
+$ git config --global alias.toto 'add .'
+$ git toto # same as 'git add .'
+```
+
+➡️ See `~/.gitconfig`. You can use `--local` for a per-project configuration. See the configuration using: `git config [...] -l`.
 </div></div>
 
 <hr class="sep-both">
@@ -87,18 +96,29 @@ $ git commit -m "xxx" --allow-empty  # allow an empty commit
 
 #### git pull
 
-Download and apply the latest changes, for the current branch, from the remote repository.
+Ensure the local project is up-to-date with the latest commits, or download them and `git merge` if necessary.
 
 ```ps
-$ git pull
+$ git pull          # current branch
 ```
+
+#### git fetch
+
+Same as `git pull`, but do not apply changes.
+
+```ps
+$ git fetch        # current branch
+$ git fetch origin # all branches on a remote
+```
+
+➡️ You will have to use `git merge` or `git rebase`.
 
 #### git push
 
-Send the latest commits only present locally, for the current branch, to the remote repository.
+Ensure the remote is up-to-date with the latest commits, and push them to the remote if necessary.
 
 ```ps
-$ git push
+$ git push          # current branch
 ```
 </div></div>
 
@@ -400,6 +420,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+* `git show`
 * `git tag`
 * `git reset`
 * `git restore`
