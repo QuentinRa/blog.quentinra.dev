@@ -6,7 +6,6 @@
 
   * [Documentation on GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
   * The process is quite similar for others
-</div><div>
 
 * **fetch**: get the latest version from the server
 
@@ -15,13 +14,6 @@
 # useful when you want to check the code first
 $ git fetch
 ```
-</div></div>
-
-<hr class="sep-both">
-
-## 💪 Advanced commands 💪
-
-<div class="row row-cols-md-2 mt-4"><div>
 
 * 📦 **Convert a normal folder to a Git repository**
 
@@ -101,14 +93,6 @@ git cherry-pick SHA1
 git cherry-pick SHA1 --no-commit
 ```
 </details>
-</div></div>
-
-<hr class="sep-both">
-
-## 🧺 Other commands 🧺
-
-<div class="row row-cols-md-2 mt-4"><div>
-</div><div>
 
 * Random Utilities
 
@@ -136,27 +120,6 @@ $ git config --global init.defaultBranch main
 ```
 </details>
 
-<details class="details-n">
-<summary>&nbsp;<code>git ls-remote</code>: get information about the remote repository</summary>
-
-```bash
-git ls-remote
-git ls-remote --heads
-git ls-remote --tags
-git ls-remote --heads --tags
-```
-</details>
-
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
 Stuff
 
 * Digital Object Identifiers (see [GitHub article](https://guides.github.com/activities/citable-code/))
@@ -165,5 +128,4 @@ Stuff
 Learn
 
 * `git subtree`, [see 2nd answer](https://stackoverflow.com/questions/11706215/how-can-i-fix-the-git-error-object-file-is-empty) (VM crash/shutting down)
-</div><div>
 </div></div>

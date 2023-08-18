@@ -61,6 +61,8 @@ List information such as untracked, modified, and staged files.
 ```ps
 $ git status
 ```
+
+➡️ See also: `git diff` and `git log`.
 </div><div>
 
 #### git commit
@@ -258,6 +260,17 @@ One-line per commit with the name, data, and SHA1.
 
 ```shell!
 $ git reflog
+```
+
+#### git ls-remote
+
+Get information about the remote repository.
+
+```shell!
+$ git ls-remote
+$ git ls-remote --heads
+$ git ls-remote --tags
+$ git ls-remote --heads --tags
 ```
 </div></div>
 
