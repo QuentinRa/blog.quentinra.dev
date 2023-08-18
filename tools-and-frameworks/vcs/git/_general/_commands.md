@@ -14,17 +14,6 @@
 # useful when you want to check the code first
 $ git fetch
 ```
-
-* 📦 **Convert a normal folder to a Git repository**
-
-<details class="details-n">
-<summary>&nbsp;<code>git init</code></summary>
-
-```bash
-# create .git
-$ git init
-```
-</details>
 </div><div>
 
 * 🔎 **Find the commit that messed up your project**

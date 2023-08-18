@@ -9,6 +9,12 @@ $ sudo apt install git # Debian, Ubuntu...
 $ brew install git     # macOS
 $ git --version
 ```
+
+Aside from `git clone`, directories must have a parent with a `.git` to use <samp>git</samp> commands. It's automatically created when cloning a remote Git project, but you can also use <small>(see also: "git remote")</small>:
+
+```shell!
+$ git init # create .git
+```
 </div><div>
 
 You'll have to configure GIT before you can use it. The name and the email are used to sign commits. Anyone that can access the commits knows who committed <small>(name+email)</small> and when.
@@ -272,6 +278,72 @@ $ git ls-remote --heads
 $ git ls-remote --tags
 $ git ls-remote --heads --tags
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## git remote
+
+<div class="row row-cols-md-2"><div>
+
+A few commands you might use when dealing with remotes.
+
+**To list remotes:**
+
+```shell!
+$ git remote                    # list remotes
+local
+origin
+$ git remote -v                 # remote + URLs
+origin  xxx.git
+```
+
+**To get details about a remote:**
+
+```shell!
+$ git remote show <remote_name> # show details
+Fetch URL: xxx.git
+Push  URL: xxx.git
+[...]
+```
+</div><div>
+
+**To add a remote, use:**
+
+```ps
+$ git remote add origin CLONE_URL
+```
+
+**To update a remote URL** <small>(ex: repository renamed/moved, HTTP to SSH)</small>:
+
+```ps
+# get the current URL
+$ git remote get-url origin
+# update the URL
+$ git remote set-url origin NEW_URL
+```
+
+**Other notes** 📚
+
+<details class="details-n">
+<summary>Use commits from a previous project</summary>
+
+The goal is to "steal" commits from another local repository. For instance, if you started a project from scratch, but you want to get back the previous project commits.
+
+```bash!
+# remove everything as you don't want old files
+$ cd AnotherRepository
+$ rm -rf *
+$ git add .
+$ git commit -m "feat: delete everything"
+# move to the other repository
+$ cd ../YourRepository
+$ git remote add other ../AnotherRepository
+$ git fetch other
+$ git merge other/main --allow-unrelated-histories
+# now, your repositories has commits from the previous repository
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
