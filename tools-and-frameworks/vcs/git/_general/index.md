@@ -237,18 +237,22 @@ For manipulating remotes, use `git remote` ([usage](../commands/index.md#git-rem
 
 #### 📦 .gitignore
 
-A "git ignore" is a really useful files to avoid uploading big or sensitive files on GitHub. You can
+A "git ignore" is a really useful files to avoid tracking big or sensitive files. **Any file inside will be ignored by version control**. You can:
 
 * Generate one: [gitignore.io](https://www.toptal.com/developers/gitignore).
 * Find a template: [gitignore](https://github.com/github/gitignore)
 
-```ini
-*.zip # ignore every zip
+The format is similar to [other ignore files](/programming-languages/others/data/ignore.md):
+
+```ini!
+*.zip     # ignore every zip
 !toto.zip # don't ignore toto.zip
-data/ # ignore every folder called 'data'
-data/* # ignore everything inside folders called 'data'
-/data # ignore only the folder data in the root directory
+data/     # ignore every folder called 'data'
+data/*    # ignore everything inside folders called 'data'
+/data     # ignore only the folder data in the root directory
 ```
+
+⚠️ It only applies to untracked files. A file that was staged once won't be ignored. You'll have to remote the file and commit first. The file will still be in the history, see `git filter-branch`.
 </div><div>
 
 #### 🌞 Good commits
@@ -274,10 +278,8 @@ Stuff that I found, but never read/used yet.
 
 * [_server-side](server-side.md)
 * git pull merge branch
-* pull vs fetch
 * merge fast-forward vs rebase
-</div><div>
-
 * GitGraph.js
 * Git hooks (+[husky](https://github.com/typicode/husky))
+</div><div>
 </div></div>

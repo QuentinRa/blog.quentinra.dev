@@ -14,8 +14,11 @@ Most are sharing the same syntax based on [wildcards](/operating-systems/linux/k
 ```yaml!
 *                   # all files
 *.exe               # all files ending with .exe
-!test.exe           # not test.exe
-build               # any build folder
+!test.exe           # do not ignore "test.exe"
+build/              # any build folder
+/build/             # only the build inside the root
 **/build/           # any nested build folder
 ```
+
+➡️ A .ignore file is applied starting from the root directory, which is the directory the .ignore file is in.
 </div></div>
