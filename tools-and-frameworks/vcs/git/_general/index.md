@@ -237,11 +237,12 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [_commands](_commands.md)
 * [_files](_files.md)
 * [_server-side](server-side.md)
 * git pull merge branch
 * pull vs fetch
 * merge fast-forward vs rebase
 </div><div>
+
+* GitGraph.js
 </div></div>

@@ -154,7 +154,28 @@ $ git checkout branch_name
 # then navigate to it
 $ git checkout -b "branch_name"
 ```
+
+#### git bisect
+
+If the project was working in commit **A**, and not working in commit **B**, then you can use `git bisect` to find the bad commit. It uses a binary search algorithm.
+
+```shell!
+$ git bisect start A B
+$ git bisect bad # not this one
+$ git bisect good # it works here
+$ git bisect skip # skip
+$ git bisect reset # exit
+```
 </div><div>
+
+#### git cherry-pick
+
+You can get a commit from another branch with `git cherry-pick`. The commit is added to the history of your branch.
+
+```shell!
+$ git cherry-pick SHA1             # pick a commit
+$ git cherry-pick SHA1 --no-commit # pick only files
+```
 
 #### git merge
 
@@ -399,6 +420,14 @@ $ git submodule add CLONE_URL LOCAL_PATH
 ```
 
 You can find your submodules in `.gitmodules`.
+
+<br>
+
+#### git subtree
+
+Git subtree is similar to [git submodules](#-git-submodules), but external repositories commits are merged and part of the project history.
+
+This can be convenient when **you need to edit the code of an external repository** which you can't do using submodules, but forking the external repository and using it with submodules is better.
 </div><div>
 
 #### 🪄 Git Large File Storage
@@ -443,4 +472,12 @@ Cheatsheets
 * [training.github.com](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
 * [cheat-sheets.org](http://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf)
 * [atlassian.com](https://www.atlassian.com/dam/jcr:e7e22f25-bba2-4ef1-a197-53f46b6df4a5/SWTM-2088_Atlassian-Git-Cheatsheet.pdf)
+
+[corrupt git files](https://stackoverflow.com/questions/11706215/how-can-i-fix-the-git-error-object-file-is-empty)
+
+```
+find .git/objects/ -type f -empty | xargs rm
+git fetch -p
+git fsck --full
+```
 </div></div>
