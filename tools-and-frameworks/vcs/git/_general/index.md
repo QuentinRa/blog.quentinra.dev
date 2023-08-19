@@ -231,6 +231,41 @@ For manipulating remotes, use `git remote` ([usage](../commands/index.md#git-rem
 
 <hr class="sep-both">
 
+## Other topics
+
+<div class="row row-cols-md-2"><div>
+
+#### 📦 .gitignore
+
+A "git ignore" is a really useful files to avoid uploading big or sensitive files on GitHub. You can
+
+* Generate one: [gitignore.io](https://www.toptal.com/developers/gitignore).
+* Find a template: [gitignore](https://github.com/github/gitignore)
+
+```ini
+*.zip # ignore every zip
+!toto.zip # don't ignore toto.zip
+data/ # ignore every folder called 'data'
+data/* # ignore everything inside folders called 'data'
+/data # ignore only the folder data in the root directory
+```
+</div><div>
+
+#### 🌞 Good commits
+
+Commits must be **atomic**, meaning you shouldn't do more than one implementation per commit <small>(ex: adding a small feature)</small>. The second concern is to properly naming commits:
+
+* 📃 Usually, we add a type before any message  <small>(build, docs, feat (=MINOR), fix (=PATCH), style, test, chore, ci, perf, refactor, revert, security, and deps)</small>, followed by `:` giving us: `feat:`/...
+* ✍️Then, we add the commit message, with is a short description
+* 📦  We may then leave a blank line, and add a body describing more the commit, such as adding a list of changes, or labels such as `Co-authored-by`, `Reviewed-by`, `Refs`...
+
+> See [Conventional Commits](https://www.conventionalcommits.org/en/) and [
+commitlint](https://commitlint.js.org/#/).<br>
+> Example: [Atom - Git commit messages](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages) or [commitment](https://github.com/thiagodp/commitment/blob/master/rules-en.md).
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
