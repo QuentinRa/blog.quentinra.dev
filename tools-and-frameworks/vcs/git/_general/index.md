@@ -33,6 +33,7 @@ You can use the [`git` command](../commands/index.md) directly or rely on plugin
 * [GitKraken](https://www.gitkraken.com/) 👻: GUI Git Client 
 * [JetBrains Git Plugin](https://www.jetbrains.com/help/idea/version-control-integration.html) ✅:  GUI Git Client
 * [Sourcetree](https://www.sourcetreeapp.com/) 👻: GUI Git Client
+* [gitg](https://wiki.gnome.org/Apps/Gitg) 👻: GNU GUI Git Client
 </div><div>
 
 #### Remote Git Server 🖥
@@ -220,11 +221,12 @@ To rebase before a merge <small>(cleaner history)</small>, use `git rebase`.
 
 **Remotes** are specifying were and how the code is fetched and send when using operations such as `git push`, `git pull`...
 
-They are automatically set when closing a repository. For [remote git server](#remote-git-server-), the remote is commonly called `origin`. 
+They are automatically set when closing a repository. For [remote git server](#remote-git-server-), the remote is commonly called `origin`.
 
-For manipulating remotes, use `git remote` ([usage](../commands/index.md#git-remote)).
+You can use `remote/myBranch` to use a branch from a specific remote, for instance, `origin/main`.
 </div><div>
 
+For manipulating remotes, use `git remote` ([usage](../commands/index.md#git-remote)).
 </div></div>
 
 <hr class="sep-both">
@@ -238,11 +240,8 @@ Stuff that I found, but never read/used yet.
 * [_commands](_commands.md)
 * [_files](_files.md)
 * [_server-side](server-side.md)
-* origin, `origin/myBranch`
 * git pull merge branch
 * pull vs fetch
 * merge fast-forward vs rebase
 </div><div>
-
-* gitk, gitg
 </div></div>

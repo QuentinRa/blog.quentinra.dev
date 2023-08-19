@@ -268,9 +268,17 @@ $ git log --graph            # draw graph
 $ git log --grep="feat:"     # filter by message
 $ git log -- README.md       # filter by files
 ```
-</div><div>
 
 Other commands such as `shortlog` and `reflog` are based on `log`.
+</div><div>
+
+#### gitk
+
+**GUI** to browse commits.
+
+```shell!
+$ gitk
+```
 
 #### git shortlog
 
