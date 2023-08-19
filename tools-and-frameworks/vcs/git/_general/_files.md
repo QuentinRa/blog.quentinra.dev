@@ -1,39 +1,10 @@
 # Git Files and good practices
 
-<hr class="sep-both">
-
-## 📦 Basic files 📦
-
-<div class="row row-cols-md-2 mt-3"><div>
-
-#### 📦 README.md
-
-> A lot of developers are using badges to show some information about the project such as ![badge](https://img.shields.io/github/license/quentinra/blog.quentinra.dev). See [shields.io](https://shields.io/), [badgen.net](https://badgen.net/), [markdown-badges](https://github.com/Ileriayo/markdown-badges), [unmaintained.tech](https://unmaintained.tech/), and [License badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba).
-
-There are a few things you may also find in use
-
-* [Repository stars over time](https://starchart.cc/)
-* [Show contributors](https://contrib.rocks/)
-* [Show metrics](https://repobeats.axiom.co/)
-</div><div>
-
-#### 📦 LICENSE / LICENSE.txt
-
-A license describes what others can do with your code. No license means that your code is copyrighted. We usually use these
-
-* the MIT license ⭐
-* the Apache license, version 2.0
-* the [creative common kinds of licenses](https://creativecommons.org/)
-* [Creative Commons](https://creativecommons.org/choose/)
-
-> See [choosealicense.com](https://choosealicense.com/), and especially the [licenses](https://choosealicense.com/licenses/) page.
-...
-
-<br>
+<div class="row row-cols-md-2"><div>
 
 #### 📦 .gitignore
 
-A "git ignore" is a really useful files to avoid uploading big or sensitive files on GitHub. You can 
+A "git ignore" is a really useful files to avoid uploading big or sensitive files on GitHub. You can
 
 * Generate one: [gitignore.io](https://www.toptal.com/developers/gitignore).
 * Find a template: [gitignore](https://github.com/github/gitignore)
@@ -45,37 +16,16 @@ data/ # ignore every folder called 'data'
 data/* # ignore everything inside folders called 'data'
 /data # ignore only the folder data in the root directory
 ```
+</div><div>
+
+You may reach a point where you have too many files are the root of your project. On GitHub, you can move these files to a `.github` at the root of your project, and GitHub will still detect them.
 </div></div>
 
 <hr class="sep-both">
 
 ## 🍒 Special files 🍒
 
-You may reach a point where you have too many files are the root of your project. On GitHub, you can move these files to a `.github` at the root of your project, and GitHub will still detect them.
-
 <div class="row row-cols-md-2 mt-3"><div>
-
-#### 🍒 CONTRIBUTING.md
-
-Explain how they can contribute to your project.
-
-* 📦 What is the structure of the code?
-* 👥 How/When should others open issues/Pull-requests?
-* 🧹 Is there guidelines/a style to adopt when coding?
-* 🌳 Is there a forum/place to exchange about the project/...?
-
-> Example: [atom - CONTRIBUTING.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
-
-<br>
-
-#### 🍒 CODE_OF_CONDUCT.md
-
-What behavior is tolerated? What's behavior isn't tolerated?
-
-* [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) (the most used one, ![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg))
-* Write your own
-
-➡️ See also [Contributor License Agreements (CLAs)](https://cla-assistant.io/).
 
 <br>
 
