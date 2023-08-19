@@ -21,6 +21,33 @@ VCS addresses several challenges that arise when working on software development
 
 <hr class="sep-both">
 
+## Versioning 🌞
+
+<div class="row row-cols-md-2"><div>
+
+Given the implementation of version control, the importance of proper versioning has significantly increased.
+
+The commonly adopted approach for assigning version names to projects is known as [Semantic Versioning](https://semver.org/).
+
+* 🗒️ The format is **MAJOR.MINOR.PATCH**
+    * MAJOR: breaking change (of the API)
+    * MINOR: non-breaking change, backward compatible
+    * PATCH: internal change
+* When <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mtext>MAJOR</mtext>
+  <mo>=</mo>
+  <mn>0</mn></math>: in development
+* When <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mtext>MAJOR</mtext>
+  <mo>&#x2265;</mo>
+  <mn>1</mn></math>: Stable
+</div><div>
+
+An alternative is [Calendar Versioning](https://calver.org/).
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
