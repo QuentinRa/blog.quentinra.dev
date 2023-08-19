@@ -23,42 +23,6 @@ You may reach a point where you have too many files are the root of your project
 
 <hr class="sep-both">
 
-## 🍒 Special files 🍒
-
-<div class="row row-cols-md-2 mt-3"><div>
-
-<br>
-
-#### 🍒 SECURITY.md
-
-This file explains which versions are eligible for security patches, for how long they will be receiving patches (LTS/...), and what's the process to report a vulnerability.
-</div><div>
-
-#### 🍒 CHANGELOG.md
-
-Keep track of every change. See [keepachangelog.com](https://keepachangelog.com/en/).
-
-* 🗓️  From the latest changes to the oldest ones
-* ✍️For each version
-  * Give the release date (YYYY-MM-DD)
-  * Tell what was added/changed/deprecated/removed/fixed
-  * You may link issues, pull requests, and commits
-* Changes that were not released are usually in "[Unreleased]"
-
-> See [conventional-changelog](https://github.com/conventional-changelog) and [github-changelog-generator](https://github.com/github-changelog-generator/github-changelog-generator).
-
-<br>
-
-#### 🍒 ROADMAP.md
-
-A roadmap help other know the direction that the project will take, like what features are you planning to add.
-
-* What's the project goal (short/mid/long term)?
-* How can people can get involved?
-</div></div>
-
-<hr class="sep-both">
-
 ## 🌞 Good practices 🌞
 
 <div class="row row-cols-md-2 mt-4"><div>
