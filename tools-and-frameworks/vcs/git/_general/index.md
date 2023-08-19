@@ -259,8 +259,8 @@ Commits must be **atomic**, meaning you shouldn't do more than one implementatio
 * ✍️Then, we add the commit message, with is a short description
 * 📦  We may then leave a blank line, and add a body describing more the commit, such as adding a list of changes, or labels such as `Co-authored-by`, `Reviewed-by`, `Refs`...
 
-> See [Conventional Commits](https://www.conventionalcommits.org/en/) and [
-commitlint](https://commitlint.js.org/#/).<br>
+> See [Conventional Commits](https://www.conventionalcommits.org/en/), [
+commitlint](https://commitlint.js.org/#/), and [7 rules](https://cbea.ms/git-commit/#seven-rules).<br>
 > Example: [Atom - Git commit messages](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages) or [commitment](https://github.com/thiagodp/commitment/blob/master/rules-en.md).
 </div></div>
 
@@ -272,7 +272,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [_files](_files.md)
 * [_server-side](server-side.md)
 * git pull merge branch
 * pull vs fetch
@@ -280,4 +279,5 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * GitGraph.js
+* Git hooks (+[husky](https://github.com/typicode/husky))
 </div></div>

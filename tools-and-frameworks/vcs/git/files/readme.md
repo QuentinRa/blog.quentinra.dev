@@ -10,6 +10,8 @@ The README.md <small>(or README.rst)</small> is a file in Markdown describing th
     * Provide a link to some documentation
 * 📦 Why have you made this project? Who is your audience?
 * 🌳 Credits, maintainers, contributors, License...
+
+➡️ See also: [GitHub - About README.md](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes).
 </div><div>
 
 A lot of developers are using badges to show some information about the project such as ![badge](https://img.shields.io/github/license/quentinra/blog.quentinra.dev). See [shields.io](https://shields.io/), [badgen.net](https://badgen.net/), [markdown-badges](https://github.com/Ileriayo/markdown-badges), [unmaintained.tech](https://unmaintained.tech/), and [License badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba).
