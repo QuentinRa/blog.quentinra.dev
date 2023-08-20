@@ -4,31 +4,19 @@
 
 List of courses that have note which were not added yet.
 
-**Programming Languages > Web**
+**Programming Languages**
 
-* Jekyll/pages
-
-**Programming Languages > Databases**
-
-* Relational modeling
-
-**Programming Languages > Others**
-
+* **Markdown > Jekyll/pages**
+* **Database > Relational modeling**
 * Blockchain
-* Sphinx, Doku
+* **Documentation** > Sphinx, Doku
 * API > GraphQL
-
-**Programming Languages > Low-Level Languages**
-
-* CPP - ENS notes
+* CPP > STD + ENS notes
 * Qt
 * Rust ([crates](https://crates.io/))
-
-**Programming Languages > High-Level Languages**
-
-* C#
-* Java LibGDX and lwjgl ([litiengine](https://litiengine.com/))
-* OCaml
+* **C#**
+* Java > LibGDX and lwjgl ([litiengine](https://litiengine.com/))
+* **OCaml**
 * Lisp
 * Lua ([luau](https://github.com/Roblox/luau))
 * Perl
