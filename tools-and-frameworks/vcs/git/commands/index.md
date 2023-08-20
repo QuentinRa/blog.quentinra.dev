@@ -166,7 +166,6 @@ $ git bisect good # it works here
 $ git bisect skip # skip
 $ git bisect reset # exit
 ```
-</div><div>
 
 #### git cherry-pick
 
@@ -175,6 +174,18 @@ You can get a commit from another branch with `git cherry-pick`. The commit is a
 ```shell!
 $ git cherry-pick SHA1             # pick a commit
 $ git cherry-pick SHA1 --no-commit # pick only files
+```
+</div><div>
+
+#### git stash
+
+Before a merge, you cannot have changes locally that were not committed. You can use `git stash` to put them in a `shelf` and `pop` them when you're done.
+
+```shell!
+$ git status # some files not committed
+$ git stash  # save changes
+$ git [...]  # any command that might do a merge
+$ git stash pop # load back your changes
 ```
 
 #### git merge
