@@ -182,7 +182,7 @@ We need to add a method to compute the difference between two values.
 data class Data(val message: String) {
     companion object DataDiff : DiffUtil.ItemCallback<Data>() {
         override fun areItemsTheSame(oldItem: Data, newItem: Data): Boolean {
-            /* you should something unique */
+            /* you should do something appropriate */
             return oldItem == newItem ||
                     oldItem.message == newItem.message
         }

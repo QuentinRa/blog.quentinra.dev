@@ -84,7 +84,7 @@ val constraints = Constraints.Builder()
     .build()
 ```
 
-Then, you can use `setConstraints` to pass contraints. For instance, for a **OneTimeWorkRequest**, you will have
+Then, you can use `setConstraints` to pass constraints. For instance, for a **OneTimeWorkRequest**, you will have
 
 ```diff
 val request = OneTimeWorkRequestBuilder<XXXWorker>()
@@ -112,7 +112,7 @@ val request = OneTimeWorkRequestBuilder<XXXWorker>()
 </details>
 
 <details class="details-e">
-<summary>Pass data to a worker, between worker, or return a result</summary>
+<summary>Pass data to a worker, between workers, or return a result</summary>
 
 The data passed is a dictionary.
 
@@ -165,7 +165,7 @@ _work = workManager.getWorkInfosByTagLiveData(TAG)
 
 The LiveData contains a list of WorkInfo, one per worker.
 
-To make things easier, we use Transformations, and work will only be non-null when the first task (`it[0]`) in completed.
+To make things easier, we use Transformations, and work will only be non-null when the first task (`it[0]`) is completed.
 
 ```kotlin
 // only one job, no need for a list to be public
