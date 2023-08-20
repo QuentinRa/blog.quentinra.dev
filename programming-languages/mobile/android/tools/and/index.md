@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-Android Studio is an IDE developped by Google based on [IntelliJ IDEA](/tools-and-frameworks/editors/jetbrains/idea/index.md) and hence sharing [common features](/tools-and-frameworks/editors/jetbrains/_general/index.md) of IDEs developed by JetBrains. It was specifically adapted for Android Projects using Kotlin or Java.
+Android Studio is an IDE developed by Google based on [IntelliJ IDEA](/tools-and-frameworks/editors/jetbrains/idea/index.md) and hence sharing [common features](/tools-and-frameworks/editors/jetbrains/_general/index.md) of IDEs developed by JetBrains. It was specifically adapted for Android Projects using Kotlin or Java.
 
 There are a few life-saving shortcuts
 
@@ -73,7 +73,7 @@ This is a file that describes
 * What is the main activity <small>(~=screen)</small>?
 * What activities <small>(~=screens)</small> you defined?
 * What are the permissions that your application needs?
-* If your application defining services <small>(~=tasks)</small>?
+* If your application defines services <small>(~=tasks)</small>?
 * ...
 
 <br>

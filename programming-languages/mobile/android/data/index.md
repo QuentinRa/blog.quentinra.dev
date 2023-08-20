@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-When using Activities or Fragments, you will usually want to store some data. For instance, the user checked some option in the previous activity, and you want to keep track of it.
+When using Activities or Fragments, you will usually want to store some data. For instance, the user checked some options in the previous activity, and you want to keep track of it.
 
 It's even more needed as [many scenarios lead to an Activity being destroyed](../_general/index.md), so you may have to save data to load it back, for instance, when the user rotates the screen.
 </div><div>
@@ -167,7 +167,7 @@ implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
 
 ✅ They are used to update the view when the model changes.
 
-A **LiveData** is wrapping a variable and add to it its logic. For instance, `LiveData<Int>` wrap a value of type `Int`.
+A **LiveData** wraps a variable and adds to it its logic. For instance, `LiveData<Int>` wrap a value of type `Int`.
 
 The value can be null, so we have to use null-safe operators. <small>(`!!`, `?`, `?:`...)</small>.
 
