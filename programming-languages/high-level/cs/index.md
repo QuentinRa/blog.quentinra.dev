@@ -74,7 +74,23 @@ Console.WriteLine("Hello, " + variable + "!");
 Here is a list of most [operators](/programming-languages/_paradigm/stuff/operators.md).
 
 ```cs
-xxx
+int sum = 5 + 5;          // 10
+int subtraction = 5 - 5;  // 0
+int product = 5 * 5;      // 25
+int division = 6 / 5;     // 1
+x += 1;                   // same as x = x + 1
+x++;                      // same as x = x + 1
+// see also: --, -=, *=, and /= 
+// logical
+if (5 == 5) {}         // true ⚠️ see also "Object#equals"
+if (5 != 5) {}         // false
+// see also: >, >=, <, <=
+if (!false) {}         // logical NOT => true
+if (true || false) {}  // logical OR => true
+if (true && false) {}  // logical AND => false
+if (true ^ false) {}   // logical XOR => true
+
+string t = ""+5;       // concatenation (+cast), see String
 ```
 </div></div>
 
@@ -87,11 +103,39 @@ xxx
 #### Branching
 
 Usual if/else.
+
+```cs
+if (true) {} 
+if (true) {} else {}
+if (true) {} else if (false) {} else {}
+```
+
+Ternary operator: `condition ? value_if_true : value_if_value`.
+
+```java
+string value = true ? "true" : "false";
+```
 </div><div>
 
 #### Loops
 
-...
+In every loop, you can use `break` to exit the loop, and you can use `continue` to end the current iteration, and process to the next one.
+
+```java
+// usual loop - i in [0, 10[
+for (var i = 0; i < 10; ++i) {}
+// reverse loop - i in ]0, 10]
+for (var i = 10; i > 0; i--) {}
+// nested loop
+for (var i = 0; i < 5; ++i) {
+    for (var j = 0; j < 5; ++j) {}
+}
+```
+
+```java
+while(true) {}; // repeat while true
+do {} while(true); // executed at least once
+```
 </div></div>
 
 <hr class="sep-both">
@@ -118,5 +162,6 @@ Stuff that I found, but never read/used yet.
 * [NUnit](https://nunit.org/)
 * [Linq](https://docs.microsoft.com/fr-fr/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)
 * [C# Cheatsheet](https://gist.github.com/jwill9999/68c0da6c4c58efb42e25f887152256e1)
+* Switch, foreach
 </div><div>
 </div></div>
