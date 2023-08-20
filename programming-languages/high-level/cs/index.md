@@ -144,7 +144,59 @@ do {} while(true); // executed at least once
 
 <div class="row row-cols-md-2"><div>
 
+Usually, each C# [class](/programming-languages/_paradigm/oo.md#classes-and-objects) is usually in a separate file, while the filename doesn't necessarily dictate the name of the class defined within it.
+
+```cs
+public class ClassNameHere {}
+```
+
+#### Namespaces
+
+To make things cleaner, we usually use namespaces to group classes. A namespace is roughly equal to a folder.
+
+```cs
+namespace Memorize.Code; // ./Memorize/Code/Test.cs
+
+public class Test {}
+```
+
+Aside from default classes, every other class must be imported:
+
+```cs
+using Memorize.Code;
+
+var test = new Test();
+```
+
+#### Visibility
+
+Each class/attribute/method/... has a visibility modifier determining [who](/programming-languages/_paradigm/oo.md#access-control) can use a method/access an attribute/...
+
+➡️ By default, everything is **private**.
+</div><div>
+
 ...
+</div></div>
+
+<hr class="sep-both">
+
+## Inheritance
+
+<div class="row row-cols-md-2"><div>
+
+C# implements [inheritance](/programming-languages/_paradigm/oo.md#content-inheritance) similarly to Java. Classes can have one parent, and implement multiple **interfaces**.
+
+```cs
+public class Parent
+{
+    public Parent() {}
+}
+
+public class Child : Parent
+{
+    public Child() : base() {}
+}
+```
 </div><div>
 
 ...
