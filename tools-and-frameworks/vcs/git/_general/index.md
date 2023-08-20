@@ -34,6 +34,7 @@ You can use the [`git` command](../commands/index.md) directly or rely on plugin
 * [JetBrains Git Plugin](https://www.jetbrains.com/help/idea/version-control-integration.html) ✅:  GUI Git Client
 * [Sourcetree](https://www.sourcetreeapp.com/) 👻: GUI Git Client
 * [gitg](https://wiki.gnome.org/Apps/Gitg) 👻: GNU GUI Git Client
+* [meld](https://meldmerge.org/) 👻: GUI Git Client
 </div><div>
 
 #### Remote Git Server 🖥
@@ -282,6 +283,6 @@ Stuff that I found, but never read/used yet.
 * git pull merge branch
 * merge fast-forward vs rebase
 * GitGraph.js
-* Git hooks (+[husky](https://github.com/typicode/husky))
+* Git hooks (+[husky](https://github.com/typicode/husky)) - `git hook`
 </div><div>
 </div></div>

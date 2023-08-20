@@ -204,6 +204,8 @@ This is the conflicting content from branch_name.
 ```ps
 $ git merge --abort
 ```
+
+➡️ See also: `git mergetool` to use a [merge tool](#diff-and-merge-tools).
 </div></div>
 
 <hr class="sep-both">
@@ -271,6 +273,8 @@ $ git diff
 $ git diff <COMMIT>
 $ git diff --check <COMMIT> # markers/whitespace errors
 ```
+
+➡️ See also: `git difftool` to set up [a tool](#diff-and-merge-tools) to view diffs.
 
 #### git log
 
@@ -428,6 +432,11 @@ You can find your submodules in `.gitmodules`.
 Git subtree is similar to [git submodules](#-git-submodules), but external repositories commits are merged and part of the project history.
 
 This can be convenient when **you need to edit the code of an external repository** which you can't do using submodules, but forking the external repository and using it with submodules is better.
+
+```ps
+$ git subtree add --prefix path/to/folder URL commit -squash
+$ git subtree pull --prefix path/to/folder URL commit -squash
+```
 </div><div>
 
 #### 🪄 Git Large File Storage
@@ -447,6 +456,22 @@ $ git lfs uninstall
 ```
 
 See also: `.gitattributes`.
+
+<br>
+
+#### Diff and merge tools
+
+Git clients
+
+* [meld](https://meldmerge.org/) (👻)
+* [TortoiseGitMerge](https://tortoisegit.org/docs/tortoisegitmerge/) (👻)
+
+Git tools
+
+* [Beyond compare](https://www.scootersoftware.com/) (👻)
+* [diffuse](https://diffuse.sourceforge.net/) (👻)
+* [tkdiff](https://sourceforge.net/projects/tkdiff/) (👻)
+* [kdiff3](https://kdiff3.sourceforge.net/) (👻)
 </div></div>
 
 <hr class="sep-both">
@@ -462,7 +487,8 @@ Stuff that I found, but never read/used yet.
 * `git reset`
 * `git restore`
 * `git switch`
-* `git filter-branch` (see [disable git-lfs](https://stackoverflow.com/questions/48699293/how-do-i-disable-git-lfs), and [here](https://stackoverflow.com/questions/43762338/how-to-remove-file-from-git-history))
+* `git filter-branch` (see [disable git-lfs](https://stackoverflow.com/questions/48699293/how-do-i-disable-git-lfs), and [here](https://stackoverflow.com/questions/43762338/how-to-remove-file-from-git-history)) 
+* `git filter-repo`
 </div><div>
 
 Cheatsheets
@@ -475,7 +501,7 @@ Cheatsheets
 
 [corrupt git files](https://stackoverflow.com/questions/11706215/how-can-i-fix-the-git-error-object-file-is-empty)
 
-```
+```ps
 find .git/objects/ -type f -empty | xargs rm
 git fetch -p
 git fsck --full
