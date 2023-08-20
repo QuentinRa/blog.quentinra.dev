@@ -34,7 +34,7 @@ fun loadIcon(@DrawableRes drawableId: Int) { /* ... */ }
 
 <div class="row row-cols-md-2"><div>
 
-A drawable is an image with a format such as PNG, JPG, or SVG.
+A drawable is an image in a format such as PNG, JPG, or SVG.
 
 #### Add an image
 
@@ -113,7 +113,7 @@ var value = view.context.getString(R.string.key)
 
 #### Parameters
 
-Android use **String.format** to parse the value, so you can pass parameters, as you would to printf in C.
+Android uses **String.format** to parse the value, so you can pass parameters, as you would to printf in C.
 
 ```xml
 <string name="price">The price is %s</string>
@@ -140,7 +140,7 @@ You can provide variants according to the number of elements.
 </plurals>
 ```
 
-Then, you need to pass a quantity. ⚠️ **NOTE** that the quantity is used along the locale to determine which "item" will be used. For instance, in English, only **one**, and **other** will be used.
+Then, you need to pass a quantity. ⚠️ **NOTE** that the quantity is used along the locale to determine which "item" will be used. For instance, in English, only **one**, and **others** will be used.
 
 ```kotlin
 resources.getQuantityString(R.plurals.count, 0)
@@ -208,5 +208,5 @@ Every folder in `res` may have multiples "copies" for different devices. For ins
 
 It's also a better practice to avoid hard-coded padding/margins/..., and instead, add them inside a `dimens.xml`, then use `@dimens/key`.
 
-So, you can have one `dimens.xml` per category of device screen's size.
+So, you can have one `dimens.xml` per category of device screen size.
 </div></div>

@@ -9,10 +9,10 @@ A thread is a sequence of instructions. Most Android applications run on **one s
 * 🎉 Process events
 * ...
 
-It's responsible for Android Life-cycle so it's the one executing methods such as `onCreate`, `onResume` and so on.
+It's responsible for Android Lifecycle, so it's the one executing methods such as `onCreate`, `onResume` and so on.
 </div><div>
 
-As this main thread is responsible for many things, we can't execute some code that takes too long, otherwise it will result in an **ANR = Android Not Responding** which basically mean the app crashed.
+As this main thread is responsible for many things, we can't execute some code that takes too long, otherwise it will result in an **ANR = Android Not Responding** which basically means the app crashed.
 
 So, when we need to run code that takes a long time, we either:
 
@@ -126,9 +126,9 @@ CoroutineScope(Job()).launch {
 </details>
 </div><div>
 
-#### Life-cycle aware coroutines
+#### Lifecycle-aware coroutines
 
-[See Life-cycle aware coroutines](https://developer.android.com/topic/libraries/architecture/coroutines)
+[See Lifecycle-aware coroutines](https://developer.android.com/topic/libraries/architecture/coroutines)
 
 Ex: automatically started/restarted when the application is STARTED.
 
@@ -142,7 +142,7 @@ lifecycleScope.launch {
 
 #### Repeat a task every XXX seconds
 
-See also life-cycle aware coroutines.
+See also the lifecycle-aware coroutines.
 
 ```kotlin
 while (true) {
