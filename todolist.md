@@ -29,6 +29,7 @@ List of courses that have note which were not added yet.
 * Pandora
 * Gradle, Maven
 * OAuth, OpenID, SAML
+* VSCode, Rider
 * JetBrains plugin development
 
 **Operating systems**
