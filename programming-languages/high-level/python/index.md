@@ -522,9 +522,21 @@ r = requests.get("https://example.com")
 r = requests.get("https://example.com", allow_redirects=True)
 if r.status_code == 404:
     pass
+# r.json() r.text()...
 ```
 
 ➡️ If the host is unreachable, a `requests.ConnectionError` is raised.
+
+Requests may be wrapped in a session, which can be used to keep track of things like authentication cookies...
+
+```python
+from requests import Session
+session = Session()
+session.get('', headers={'Content-Type': 'application/json'})
+session.put('', json={})
+session.delete('')
+session.post('', files= {'file': open('xxx','rb')}, data={})
+````
 
 #### scrapy - manipulate packets
 
@@ -646,6 +658,21 @@ def index(request):
 
 If you're using HTML, then you can use template injection: `{% ... %}`. Refer to the documentation, there are multiple instructions possible.
 
+#### Click - command line interfaces
+
+Click is prompting the user for input for arguments that were not given to the program (`script.py --key some_key [...]`).
+
+```
+import click
+
+@click.command()
+@click.option('--key', prompt=True, help='A key')
+@click.option('--value', prompt=True, default='N/A')
+def create_xxx(key, value):
+    print(key, value)
+
+create_xxx()
+```
 </div></div>
 
 <hr class="sep-both">
@@ -687,6 +714,7 @@ str[5:] # 5th to last
 str[::-1] # reverse
 ```
 
+* `# -*- coding: utf-8 -*-`
 * lambda: `lambda x : x[0]`
 
 ```
