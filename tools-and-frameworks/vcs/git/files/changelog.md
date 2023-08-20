@@ -13,4 +13,6 @@ Keep track of every change. See [keepachangelog.com](https://keepachangelog.com/
 
 > See [conventional-changelog](https://github.com/conventional-changelog) and [github-changelog-generator](https://github.com/github-changelog-generator/github-changelog-generator).
 </div><div>
+
+📚 This file is often either at the root or in `.github`.
 </div></div>

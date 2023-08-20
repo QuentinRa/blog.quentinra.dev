@@ -11,4 +11,6 @@ Explain how they can contribute to your project.
 
 > Example: [atom - CONTRIBUTING.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
 </div><div>
+
+📚 This file is often either at the root or in `.github`.
 </div></div>

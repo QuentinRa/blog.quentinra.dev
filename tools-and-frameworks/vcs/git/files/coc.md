@@ -9,4 +9,6 @@ What behavior is tolerated? What's behavior isn't tolerated?
 
 ➡️ See also [Contributor License Agreements (CLAs)](https://cla-assistant.io/).
 </div><div>
+
+📚 This file is often either at the root or in `.github`.
 </div></div>

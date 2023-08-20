@@ -124,5 +124,15 @@ Stuff that I found, but never read/used yet.
 
 * [CITATION files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files) (👻)
 * Templates ([git-repository-template](https://github.com/misitebao/template-git-repository) / [opensource-template](https://github.com/EmbarkStudios/opensource-template))
+* Digital Object Identifiers (see [GitHub article](https://guides.github.com/activities/citable-code/))
+* GitHub Discussions
+* [.gitlab](https://docs.gitlab.com/ee/development/features_inside_dot_gitlab.html)
 </div><div>
+
+* [Introduction to GitHub](https://github.com/skills/introduction-to-github) + [Git/Github Milestones](https://github.com/omundy/learn-git-milestones)
+* [GitHub Cheatsheet](https://github.com/tiimgreen/github-cheat-sheet)
+* [Branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule)
+* [Documentation on GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
+* [Code Review](https://github.com/ryanmcdermott/code-review-tips)
+* [GitHub for Collaboration](https://mozillascience.github.io/working-open-workshop/github_for_collaboration/)
 </div></div>

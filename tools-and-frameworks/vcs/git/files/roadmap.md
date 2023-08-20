@@ -7,4 +7,6 @@ A roadmap help other know the direction that the project will take, like what fe
 * What's the project goal (short/mid/long term)?
 * How can people can get involved?
 </div><div>
+
+📚 This file is often either at the root or in `.github`.
 </div></div>
