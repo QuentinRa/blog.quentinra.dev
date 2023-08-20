@@ -18,7 +18,7 @@ $ sudo apt install clang-tidy
 
 #### Common commands
 
-We can use clang-tidy without a compilation database, but in such case, it may result in errors.
+We can use clang-tidy without a compilation database, but in such cases, it may result in errors.
 
 ```shell!
 $ clang-tidy source.cpp         # output report
@@ -48,7 +48,7 @@ CheckOptions:
 
 #### compile_commands.json
 
-For more complex projects, we generate `compile_commands.json` which indicate the command to compile each file. Using [CMake](/tools-and-frameworks/others/build/cmake/index.md):
+For more complex projects, we generate `compile_commands.json` which defines the command to compile each file. Using [CMake](/tools-and-frameworks/others/build/cmake/index.md):
 
 ```shell!
 $ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON

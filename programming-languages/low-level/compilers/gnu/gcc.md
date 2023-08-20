@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-`gcc` and `g++` are both part of GNU Compiler Collection. `g++` is a version of GCC with pre-defined options for C++ code.
+`gcc` and `g++` are both part of the GNU Compiler Collection. `g++` is a version of GCC with pre-defined options for C++ code.
 
 You install them, and everything necessary for devs, using:
 

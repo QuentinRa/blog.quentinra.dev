@@ -25,7 +25,7 @@ $ gdb --args a.out arg1 arg2 # ./a.out arg1 arg2
 
 <div class="row row-cols-md-2"><div>
 
-You'll place breakpoint in the code. When one is reached, the code will stop, allowing you to inspect variables...
+You'll place a breakpoint in the code. When one is reached, the code will stop, allowing you to inspect variables...
 
 ```text!
 (gdb) break line_number
@@ -37,7 +37,7 @@ To **display the code for line numbers**:
 
 ```text!
 (gdb) list         # or l | list the next 10 lines
-(gdb) l start,end  # code from line from "start" to "end"
+(gdb) l start,end  # code lines from "start" to "end"
 ```
 
 To **run the program** until the next breakpoint:
@@ -63,7 +63,7 @@ To **print** the value of a variable or an expression:
 (gdb) p[s]@n ...  # print n entries of an array
 ```
 
-To **print the stacktrace**:
+To **print the stack trace**:
 
 ```text!
 (gdb) backtrace   # or bt
