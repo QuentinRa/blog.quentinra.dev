@@ -45,6 +45,8 @@ There are multiple remote Git servers that you can use for free while you may al
 * [Gogs](https://gogs.io/) 🤔: self-hosted Git server
 * [Gitea](https://gitea.com/) 👻: self-hosted Git server
 * [Bitbucket](https://bitbucket.org/) 👻: atlassian Git server
+
+To improve collaboration, they usually provide [many new features](server-side.md).
 </div></div>
 
 <hr class="sep-both">

@@ -1,4 +1,4 @@
-# 🏹 Server-side features 🏹
+# Remote Git Server features 🏹
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -47,13 +47,13 @@ I'm still not sure if this is only available on GitHub or not, but every issue/p
 
 <hr class="sep-both">
 
-## ✍️ GitHub exclusive features ✍️
+## ✍️ Less commonly used features ✍️
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-<br>
-
 #### ✍️Co-authors
+
+*Available at least on: GitHub*
 
 If you know someone else email, then you can include them as author of a commit. Note that the one creating the commit (you) will be marked as commiter, so there will always be at least two names, unless you directly edit the GIT configuration 🚓.
 
@@ -66,6 +66,8 @@ Co-authored-by: name <name@example.com>"
 <br>
 
 #### ✍ Reference code in issues
+
+*Available at least on: GitHub*
 
 There is a nice way of referencing code from the same repository inside an issue/a pull request. See [GitHub tutorial](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-code).
 
@@ -82,7 +84,9 @@ There is a nice way of referencing code from the same repository inside an issue
 
 #### ✍️CODEOWNERS
 
-This file is a dictionary with patterns associated with GitHub usernames. Repositories can be configured so that if a file owned by a codeowner is modified, then inside the Pull Request, the CodeOwner will be asked for a review. See [GitHub tutorial](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners).
+*Available at least on: GitHub, GitLab*
+
+This file is a dictionary with patterns associated with GitHub/... usernames. Repositories can be configured so that if a file owned by a codeowner is modified, then inside the Pull Request, the CodeOwner will be asked for a review. See [GitHub tutorial](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners).
 
 ```
 *       @QuentinRa
@@ -92,7 +96,9 @@ This file is a dictionary with patterns associated with GitHub usernames. Reposi
 
 #### ✍️Git attributes
 
-While the file `.gitattribute` is not exclusive to GitHub, it is used by GitHub [linguist](https://github.com/github/linguist/tree/master/docs) if we want to edit the rules that GitHub uses to determine languages used by our project.
+*Available at least on: GitHub*
+
+While the file `.gitattribute` is not exclusive to GitHub/..., it is used by GitHub [linguist](https://github.com/github/linguist/tree/master/docs) if we want to edit the rules that GitHub uses to determine languages used by our project.
 
 ```
 # Ex: add Markdown files in the language list
@@ -103,46 +109,20 @@ While the file `.gitattribute` is not exclusive to GitHub, it is used by GitHub 
 
 #### ✍️Projects
 
+*Available at least on: GitHub*
+
 This is a feature that includes Agile-Scrum Scrum boards. It's actually a bit more complex and less convenient. You can create **tasks**, but you can't do much with them. Once you convert them to **issues**, you can assign people to them along with tags. They are useful to track/sort **issues** and keep track of **milestones**.
-
-<br>
-
-#### ✍️Random
-
-List of stuff that I have yet to test out.
-
-* [CITATION files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files) (👻)
-* **Templates**: see [git-repository-template](https://github.com/misitebao/template-git-repository) / [opensource-template](https://github.com/EmbarkStudios/opensource-template)
 </div></div>
 
 <hr class="sep-both">
 
-## 🎉 Fancy GitHub 🎉
+## 👻 To-do 👻
 
-<div class="row row-cols-md-2 mt-4"><div>
+Stuff that I found, but never read/used yet.
 
-General
+<div class="row row-cols-md-2"><div>
 
-* [Skyline with your contributions](https://skyline.github.com/)
-
-* [GitHub User Profile](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)
-
-* [GitHub Organization Profile](https://github.blog/changelog/2021-09-14-readmes-for-organization-profiles/)
-
-* [GitHub Profile Achievements](https://github.com/Schweinepriester/github-profile-achievements)
-
+* [CITATION files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files) (👻)
+* Templates ([git-repository-template](https://github.com/misitebao/template-git-repository) / [opensource-template](https://github.com/EmbarkStudios/opensource-template))
 </div><div>
-
-Cards (usually added on a profile/...)
-
-* [GitHub Stats Card](https://github.com/anuraghazra/github-readme-stats)
-    * User stats
-    * Repository Card
-    * Most used languages
-    * WakaTime
-* [GitHub Profile Streak](https://github-readme-streak-stats.herokuapp.com/demo/)
-* [GitHub Profile Trophy](https://github.com/ryo-ma/github-profile-trophy)
-* [metrics](https://github.com/lowlighter/metrics) (really nice cards, see [omBratteng profile](https://github.com/omBratteng/omBratteng))
-* [Jokes' Cards](https://readme-jokes.vercel.app/api)
-* Profile View: [antonkomarev](https://github.com/antonkomarev/github-profile-views-counter) or [arturssmirnovs](https://github.com/arturssmirnovs/github-profile-views-counter)
 </div></div>

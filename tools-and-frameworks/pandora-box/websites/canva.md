@@ -64,9 +64,10 @@ scrollToTheBottomOfElement(document.querySelector('main > div > div'))
 <div class="row row-cols-md-2"><div>
 
 ```javascript!
-Array.from(document.querySelectorAll('span[class]')).filter(span => span.innerHTML === '$').map(span => span.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode).forEach(x => x.parentNode.removeChild(x))
-
-Array.from(document.querySelectorAll("*[d~='M7.51']")).map(p => p.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode).filter(p => !p.id).forEach(x => x.parentNode?.removeChild(x))
+setInterval(() => {
+    Array.from(document.querySelectorAll('span[class]')).filter(span => span.innerHTML === '€').map(span => span.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode).forEach(x => x.parentNode.removeChild(x))
+    Array.from(document.querySelectorAll("*[d~='M7.51']")).map(p => p.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode).filter(p => !p.id).forEach(x => x.parentNode?.removeChild(x))}
+    , 2000)
 ```
 </div><div>
 
