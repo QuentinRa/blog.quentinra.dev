@@ -35,20 +35,38 @@ To get started, edit `Program.cs`.
 #### Variables
 
 ```cs
-xxx
+string variable1;       // explicit type
+string variable2 = "";  // default value
+var variable3 = "";     // implicit type
 ```
 
 #### Types
 
+Here are some C# types:
+
 ```cs
-xxx
+int xxx = 42;             // Int32
+float xxx = 21f + 21F;    // Single
+double xxx = 21.0 + 21d;  // Double
+bool xxx = true || false; // Boolean
+char xxx = 'c';           // Char
+string xxx = "xxx";       // String
 ```
+
+To declare a **nullable-type** 🧨, e.g., **explicitly** allowing the variable to be null, add `?` after the type. When using a nullable variable, we will have a reminder that the variable may be null.
+
+```cs
+int? xxx = 42;  // may be null
+```
+
+➡️ To suppress the warning, use `!`, e.g., `xxx!.Something`.
 </div><div>
 
 #### Print some text in the terminal
 
 ```cs
-xxx
+Console.WriteLine("Hello, World!");
+Console.WriteLine("Hello, " + variable + "!");
 ```
 
 #### Operators
