@@ -15,7 +15,7 @@ This usually involves a few classes:
 * **Intents** ✈️: to start an activity
 * **Navigation Component** 🚀: to navigate between fragments
 
-It worth noting that navigation involves what we call the **back stack** which may lead to unexpected behaviors if not handled.
+It's worth noting that navigation involves what we call the **back stack** which may lead to unexpected behaviors if not handled.
 </div></div>
 
 <hr class="sep-both">

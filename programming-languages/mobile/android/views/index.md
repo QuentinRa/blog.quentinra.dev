@@ -21,7 +21,7 @@ Each activity or fragment is associated with **one** layout file. It's an [XML](
 
 <p class="text-center">A few things to know</p>
 
-⚒️ `tools:context` point to the associated Fragment/Activity in YOUR code, so you must give it an appropriate value.
+⚒️ `tools:context` points to the associated Fragment/Activity in YOUR code, so you must give it an appropriate value.
 
 ✨ `xmlns:` are very important. You can't use `android:` if you didn't add the matching `xmlns:android`. They are added to the **root**.
 
@@ -231,7 +231,7 @@ if(s.isChecked) {}
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-If something is only here to decorate the screen, you should make it as not important for accessibility.
+If something is only here to decorate the screen, you should mark it as not important for accessibility.
 
 ```
 <ImageView
@@ -338,7 +338,7 @@ Material design is a library of pre-made components. Google recommends using Mat
 
 Material design provides both
 
-* 👉 Guidelines (padding, sizes...) to make nice UI
+* 👉 Guidelines (padding, sizes...) to make a nice UI
 * 👉 Pre-made Components <small>(padding, sizes...)</small>
 </div><div>
 
@@ -435,7 +435,7 @@ class BlankFragment : Fragment() {
 ```
 </details>
 
-🔥 It's worth mentioning that the change above is **unneeded** if were using ViewBinding's code as it automatically binds data.
+🔥 It's worth mentioning that the change above is **unneeded** if we're using ViewBinding's code as it automatically binds data.
 </div><div>
 
 
