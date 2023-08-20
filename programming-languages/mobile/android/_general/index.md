@@ -36,7 +36,7 @@ You will have to edit the second `build.gradle (Module: XXX)`.
 
 #### Application
 
-Basically, an android application is an **Application**. Most of the time, we use the default implementation simply loading the main "activity".
+An Android application corresponds to an instance of the **Application** class. The default implementation is usually enough.
 
 #### Activities and fragments
 
@@ -53,9 +53,9 @@ A **fragment** is a modular reusable UI component <small>("screens", menubar...)
 ➡️ See also: Single Activity Pattern.
 </div><div>
 
-#### Activity/Fragment life-cycle
+#### Activity/Fragment lifecycle
 
-Both activities and fragments have a life-cycle which we need to be familiar with in order to know where we will write our code.
+Both activities and fragments have a lifecycle which we need to be familiar with in order to know where we will write our code.
 
 For instance, code to handle an event, such as a click on a button, would be in `onCreate()` <small>(activity)</small> or `onViewCreated()` <small>(fragment)</small>.
 
@@ -65,7 +65,7 @@ A **view** is a visual element such as a Button. They are grouped in containers 
 
 #### AndroidManifest.xml
 
-The Android Manifest define things like:
+The Android Manifest defines things like:
 
 * 🏠 the first activity executed when starting the application
 * 🔐 the permissions required by the application
@@ -207,7 +207,7 @@ class MainActivity : AppCompatActivity() {
 
 <hr class="sep-both">
 
-## Activity life-cycle
+## Activity lifecycle
 
 <div class="row row-cols-md-2 mt-4"><div class="align-self-center">
 
@@ -215,7 +215,7 @@ Android activities' lifecycle is a bit complex. To summarize,
 
 * 👉 **onCreate** is where you will configure the view
 * 👉 Before presenting the activity, **onStart** is called. If the user press "home"/the activity isn't visible anymore, **onStop** is called.
-* 👉 Before the user can interact with the activity, **onResume** is called. If the user isn't able to interact with the activity anymore, **onPause** is called. The activity is still be visible.
+* 👉 Before the user can interact with the activity, **onResume** is called. If the user isn't able to interact with the activity anymore, **onPause** is called. The activity is still visible.
 
 As for **onDestroy**, it is called
 
@@ -310,7 +310,7 @@ There are 5 levels of logs. You can increase/decrease the level of logs inside L
 * `Log.w`: warn
 * `Log.e`: error
 
-If the level of log is **debug**, then all below are included, meaning that only verbose logs won't be shown/logged.
+If the level of logging is **debug**, then all below are included, meaning that only verbose logs won't be shown/logged.
 
 </div><div>
 
