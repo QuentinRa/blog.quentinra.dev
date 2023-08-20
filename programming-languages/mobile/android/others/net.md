@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-Most Android apps do HTTP requests to some servers <small>(database/...)</small>. Most of the time, there is an [APIs](/programming-languages/others/apis/_general/index.md) in-place instead of direct access. API calls are usually done in a [ViewModel](../data/index.md#viewmodel) class, inside a method starting a new [thread/coroutine](threads.md) - to avoid blocking the main thread.
+Most Android apps do HTTP requests to some servers <small>(database/...)</small>. Most of the time, there is an [API](/programming-languages/others/apis/_general/index.md) in place instead of direct access. API calls are usually done in a [ViewModel](../data/index.md#viewmodel) class, inside a method starting a new [thread/coroutine](threads.md) - to avoid blocking the main thread.
 
 Add the permission in your AndroidManifest.xml <small>(above application)</small> ⭐
 
@@ -33,7 +33,7 @@ There are many libraries that you may use at some point
 * [fuel](https://github.com/kittinunf/fuel) (4.3k ⭐, 👻): HTTP library
 * [volley](https://github.com/google/volley) (3.3k ⭐, 👻): HTTP library
 
-What I defined as HTTP libraries are libraries that are providing an interface to an HTTP client, so they aren't the ones doing the request.
+What I defined as HTTP libraries are libraries that provide an interface to an HTTP client, so they aren't the ones doing the request.
 </div></div>
 
 <hr class="sep-both">
@@ -157,7 +157,7 @@ object RetrofitService {
 
 Any request will return a big string with the result inside. The JSON isn't converted to Kotlin as we haven't used any converted yet.
 
-➡️That's why every method inside "xxxAPI" is returning a String.
+➡️That's why every method inside "xxxAPI" returns a String.
 
 ➡️That's why the POST's request Body has the type String.
 
@@ -363,7 +363,7 @@ private val retrofit = Retrofit.Builder()
     .build()
 ```
 
-The SimpleCookieJar is a class that is storing cookies received from the server, and loads them in the next requests.
+The SimpleCookieJar is a class that stores cookies received from the server, and loads them in the next requests.
 </div><div>
 
 ```
