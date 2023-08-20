@@ -28,6 +28,68 @@ To get started, edit `Program.cs`.
 
 <hr class="sep-both">
 
+## Core knowledge
+
+<div class="row row-cols-md-2"><div>
+
+#### Variables
+
+```cs
+xxx
+```
+
+#### Types
+
+```cs
+xxx
+```
+</div><div>
+
+#### Print some text in the terminal
+
+```cs
+xxx
+```
+
+#### Operators
+
+Here is a list of most [operators](/programming-languages/_paradigm/stuff/operators.md).
+
+```cs
+xxx
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Control-flow structures
+
+<div class="row row-cols-md-2"><div>
+
+#### Branching
+
+Usual if/else.
+</div><div>
+
+#### Loops
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Classes
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
