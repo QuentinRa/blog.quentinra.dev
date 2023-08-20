@@ -175,7 +175,23 @@ Each class/attribute/method/... has a visibility modifier determining [who](/pro
 ➡️ By default, everything is **private**.
 </div><div>
 
-...
+#### Attributes
+
+```cs
+private string _attribute;
+public string Name { get; private set; }
+public string Name { get;; }
+```
+
+#### Method
+
+```cs
+private void Xxx() {}
+private void Yyy()
+{
+    Xxx(); // same as this.Xxx();
+}
+```
 </div></div>
 
 <hr class="sep-both">
@@ -199,7 +215,22 @@ public class Child : Parent
 ```
 </div><div>
 
-...
+#### Override
+
+Child classes can override a method, e.g., change the inner code of a method that was declared within their parent.
+
+The child class uses `base` to reference the parent class.
+
+We can only override a **virtual** method.
+
+```cs
+// in the parent
+protected virtual void XXX() {}
+// in the inheritor - you can change the code
+protected override int XXX() {
+    return base.XXX(); // default behavior
+}
+```
 </div></div>
 
 <hr class="sep-both">
@@ -215,5 +246,33 @@ Stuff that I found, but never read/used yet.
 * [Linq](https://docs.microsoft.com/fr-fr/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)
 * [C# Cheatsheet](https://gist.github.com/jwill9999/68c0da6c4c58efb42e25f887152256e1)
 * Switch, foreach
+* `[Serializable]`
+* `() => { return z; }`
+* `private void XXX<T>(T xxx)`
+* `throw new NotImplementedException();`
+* `IEnumerator`, `yield break/return null`
+* `struct`
+* `new List<>(); Find Add { null } Exists ForEach`
 </div><div>
+
+```cs
+public string Name { get { return _name; } set { _name = value; } }
+public string Name { get => _name; set { _name = value; } }
+public string Name { get => _name; init => _name = value; }
+public string Name { get; private set; }
+```
+```cs
+public class XXX
+{
+    public static bool operator ==(XXX a, XXX b)
+    {
+        return false;
+    }
+
+    public static bool operator !=(XXX a, XXX b)
+    {
+        return false;
+    }
+}
+```
 </div></div>
