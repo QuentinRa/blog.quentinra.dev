@@ -1,11 +1,1 @@
-=> https://docs.microsoft.com/dotnet/csharp/
-=> https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types
-=> https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8
-=> https://docs.microsoft.com/fr-fr/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries
-=> new List<>(); Find Add { null } Exists ForEach
-=> private protected
-=> private type Name => attribute same as private type Name { get; private set; }
-=> can override operator (static bool operator==(a,b) => implies != )
-=> namespace, struct, class
-
 https://gist.github.com/jwill9999/68c0da6c4c58efb42e25f887152256e1
