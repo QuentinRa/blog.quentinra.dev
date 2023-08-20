@@ -4,11 +4,6 @@
 
 List of courses that have note which were not added yet.
 
-**Programming Languages > Android**
-
-* (review, typos)
-* Resources, Android Studio, Coroutines
-
 **Programming Languages > Web**
 
 * Jekyll/pages
@@ -19,14 +14,12 @@ List of courses that have note which were not added yet.
 
 **Programming Languages > Others**
 
-* (review, typos) ignore
 * Blockchain
 * Sphinx, Doku
 * API > GraphQL
 
 **Programming Languages > Low-Level Languages**
 
-* (review, typos) GDB, GCC, clang
 * CPP - ENS notes
 * Qt
 * Rust ([crates](https://crates.io/))

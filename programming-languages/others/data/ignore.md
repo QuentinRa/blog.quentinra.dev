@@ -8,7 +8,7 @@ Many tools use hidden files ending with `ignore` such as:
 * `.gitignore` ([Git](https://git-scm.com/docs/gitignore))
 * ...
 
-Most are sharing the same syntax based on [wildcards](/operating-systems/linux/knowledge/index.md#glob-patterns). They will "ignore" any matching file.
+Most share the same syntax based on [wildcards](/operating-systems/linux/knowledge/index.md#glob-patterns). They will "ignore" any matching file.
 </div><div>
 
 ```yaml!
