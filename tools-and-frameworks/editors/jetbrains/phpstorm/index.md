@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[PHPStorm](https://www.jetbrains.com/phpstorm/) is a **back-end** IDE <small>(PHP, PHP frameworks, Node.js, Databases, Composer)</small> powered by JetBrains only in a **paid** version.
+[PHPStorm](https://www.jetbrains.com/phpstorm/) is a **back-end** IDE <small>(PHP, PHP frameworks, Node.js, Databases, Composer)</small> powered by JetBrains exclusively available in a **paid** version.
 
 <p class="text-center">
 <img src="/courses/tools-and-frameworks/editors/jetbrains/phpstorm/_images/logo.png" width="100"/>

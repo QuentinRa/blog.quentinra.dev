@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[CLion](https://www.jetbrains.com/clion/) is a **C/C++** IDE powered by JetBrains only in a **paid** version.
+[CLion](https://www.jetbrains.com/clion/) is a **C and C++** IDE powered by JetBrains and exclusively available in a **paid** version.
 
 <p class="text-center">
 <img src="/courses/tools-and-frameworks/editors/jetbrains/clion/_images/logo.png" width="150"/>
