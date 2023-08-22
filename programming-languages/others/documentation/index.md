@@ -22,3 +22,17 @@ Mostly for software or user-documentation, you can [documentation generators](ht
 
 They are separate from the code ⚠️.
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [_old](doxygen/index.md)
+</div><div>
+
+
+</div></div>
