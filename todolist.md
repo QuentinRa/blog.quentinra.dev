@@ -6,6 +6,7 @@ List of courses that have note which were not added yet.
 
 **Programming Languages**
 
+* (review, typos) C#
 * **Markdown > Jekyll/pages**
 * **Database > Relational modeling**
 * Blockchain
@@ -14,7 +15,6 @@ List of courses that have note which were not added yet.
 * CPP > STD + ENS notes
 * Qt
 * Rust ([crates](https://crates.io/))
-* **C#**
 * Java > LibGDX and lwjgl ([litiengine](https://litiengine.com/))
 * **OCaml**
 * Lisp
@@ -25,11 +25,10 @@ List of courses that have note which were not added yet.
 
 **Tools and Frameworks**
 
-* (review/typos) GIT, cmake
+* (review/typos) cmake, VSCode, Rider
 * Pandora
 * Gradle, Maven
 * OAuth, OpenID, SAML
-* VSCode, Rider
 * JetBrains plugin development
 
 **Operating systems**
