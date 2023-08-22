@@ -12,15 +12,15 @@ Developers usually redact some documentation along the code to document some kno
 There are plenty language-specific documentation tools such as [Javadoc](/programming-languages/high-level/java/javadoc/index.md) for [Java](/programming-languages/high-level/java/_general/index.md), [JSDoc](https://jsdoc.app/about-getting-started.html) for [JavaScript](/programming-languages/web/javascript/_general/index.md), or [phpDoc](https://phpdoc.org/) for [PHP](/programming-languages/web/php/_general/index.md)...
 </div><div>
 
-There is also [Doxygen]() which works with many languages.
+There is also [Doxygen](doxygen/index.md) which works with many languages.
 
-Mostly for software or user-documentation, you can [documentation generators](https://en.wikipedia.org/wiki/Comparison_of_documentation_generators) <small>(static documentation site generators)</small>. 
+Mostly for user-documentation, you can use these:
 
 * [mkdocs](https://www.mkdocs.org/)
 * Sphinx and [ReadTheDocs](https://docs.readthedocs.io/en/stable/index.html)
 * [docsify](https://docsify.js.org/)
-
-They are separate from the code ⚠️.
+* [daux](https://daux.io/)
+* [Just the Docs](https://github.com/just-the-docs/just-the-docs)
 </div></div>
 
 <hr class="sep-both">
@@ -31,7 +31,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [_old](doxygen/index.md)
+* [dokuwiki](https://www.dokuwiki.org/dokuwiki)
+* [mediawiki](https://www.mediawiki.org/wiki/MediaWiki)
 </div><div>
 
 

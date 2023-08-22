@@ -6,11 +6,10 @@ List of courses that have note which were not added yet.
 
 **Programming Languages**
 
-* (review, typos) C#
+* (review, typos) C#, Documentation
 * **Markdown > Jekyll/pages**
 * **Database > Relational modeling**
 * Blockchain
-* **Documentation** > Sphinx, Doku
 * API > GraphQL
 * CPP > STD + ENS notes
 * Qt
@@ -132,14 +131,6 @@ to-dos here?
 * [html5boilerplate](https://html5boilerplate.com/)
 
 </div><div>
-
-**Documentation**
-
-* [Daux](https://daux.io/)
-* [ReadTheDocs](https://readthedocs.org/)
-* [Doxygen](https://www.doxygen.nl/)
-* [just-the-docs](https://github.com/just-the-docs/just-the-docs)
-* [mkdocs](https://github.com/mkdocs/mkdocs)
 
 **Random**
 
