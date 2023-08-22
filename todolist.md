@@ -26,7 +26,6 @@ List of courses that have note which were not added yet.
 * (review/typos) cmake, VSCode, Rider
 * Pandora
 * Gradle, Maven
-* OAuth, OpenID, SAML
 * JetBrains plugin development
 
 **Operating systems**
@@ -36,9 +35,8 @@ List of courses that have note which were not added yet.
 * Hardening
 * Linux
 * Networking
-* Webservers > nginx
 * Windows > Linux, security
-* Others > Cloud, IoT, vagrant, Cloud
+* IoT, Cloud
 * Utils
 </div></div>
 
