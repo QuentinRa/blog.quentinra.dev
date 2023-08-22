@@ -9,13 +9,12 @@ List of courses that have note which were not added yet.
 * (review, typos) C#, Documentation
 * **Markdown > Jekyll/pages**
 * **Database > Relational modeling**
-* Blockchain
-* API > GraphQL
-* CPP > STD + ENS notes
+* **Blockchain**
+* **API** > GraphQL
+* **CPP > STD + ENS notes**
 * Qt
 * Rust ([crates](https://crates.io/))
-* Java > LibGDX and lwjgl ([litiengine](https://litiengine.com/))
-* **OCaml**
+* OCaml
 * Lisp
 * Lua ([luau](https://github.com/Roblox/luau))
 * Perl

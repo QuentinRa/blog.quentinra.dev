@@ -1750,6 +1750,7 @@ A reference is simply something that's referencing your object meaning that you 
 * native keyword
 * var
 * JNI, [jnicookbook](https://github.com/mkowsiak/jnicookbook) 
+* LibGDX and lwjgl ([litiengine](https://litiengine.com/))
 </div><div>
 
 * [bluej](https://www.bluej.org/)
