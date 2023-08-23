@@ -51,4 +51,10 @@ Stuff that I found, but never read/used yet.
 * [Server Side Includes](https://en.wikipedia.org/wiki/Server_Side_Includes) (SSI)
 * WebAssembly
 </div><div>
+
+* [Heroku](https://www.heroku.com/home) / [Heroku (student)](https://www.heroku.com/students) (👻)
+* [elm](https://elm-lang.org/)
+* [Dart](https://dart.dev/)
+* [Flutter](https://flutter.dev/)
+* [vercel](https://vercel.com/)
 </div></div>

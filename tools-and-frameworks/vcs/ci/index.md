@@ -92,6 +92,5 @@ Stuff that I found, but never read/used yet.
 * [Basics of CI/CD](https://levelup.gitconnected.com/basics-of-ci-cd-a98340c60b04)
 * [gitpod](https://www.gitpod.io/)
 * [Travis](https://www.travis-ci.com/) (👻)
-* [Heroku](https://www.heroku.com/home) / [Heroku (student)](https://www.heroku.com/students) (👻)
 </div><div>
 </div></div>

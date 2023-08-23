@@ -102,16 +102,7 @@ to-dos here?
 **Web/Android/UI**
 
 ➡️ See [Modern web](https://modern-web.dev/guides/)<br>
-➡️ See JavaScript/libs (to-do)<br>
 ➡️ See [Google Code Labs](https://codelabs.developers.google.com/) (Firebase, Flutter...)
-
-* [symfony](https://symfony.com/) ([nelmio](https://github.com/nelmio/NelmioApiDocBundle))
-* [laravel](https://laravel.com/)
-* [elm](https://elm-lang.org/)
-* [Dart](https://dart.dev/)
-* [Flutter](https://flutter.dev/)
-* [vercel](https://vercel.com/)
-* chrome dev tools snippets
 
 **Templating**
 
@@ -143,7 +134,6 @@ EOF
 * Groovy
 * Swift ([pods](https://cocoapods.org/))
 * Ruby ([gems](https://rubygems.org/))
-* .NET ([nuget](https://www.nuget.org/))
 * [A lot of languages listed here](https://www.jetbrains.com/help/webstorm/application-development-guidelines.html)
 * Other: ML (programming language), [Q#](https://devblogs.microsoft.com/qsharp/)
 
