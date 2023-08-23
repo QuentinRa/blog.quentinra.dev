@@ -19,6 +19,8 @@ JavaScript (JS) is a popular language used to develop
 * [javascript.info](https://javascript.info/) <small>(🚀)</small>
 * [javascripttutorial](https://www.javascripttutorial.net/) <small>(✈️)</small>
 * ...
+
+See also my [notes specific to websites](dom.md).
 </div><div>
 
 Most environments support `console.log` to print something.

@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-[JavaScript](index.md) is used since Web 2.0 to add interactivity
+[JavaScript](index.md) is used since Web 2.0 to add interactivity to web pages:
 
 * 👉 Validate a form <small>(errors, autocompletion, ...)</small>
 * 👉 Handling events <small>(click, visibility change, ...)</small>
@@ -23,7 +23,7 @@ JavaScript (JS) is based on ECMAScript. **ECMAScript2016** (ES6) is fully suppor
 
 ## Getting started
 
-There are 3 ways to write JavaScript for a website.
+There are 3 ways to use JavaScript for a website.
 
 <table class="table border-dark table-striped table-bordered">
 <thead><tr><th>Inline JS 🤮</th><th>SCRIPT tag 🤢</th><th>External JavaScript file 😍</th></tr></thead>
