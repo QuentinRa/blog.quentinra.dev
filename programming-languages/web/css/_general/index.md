@@ -40,7 +40,7 @@ As CSS rules can be complex <small>(responsive design, accessibility)</small>, m
 
 <div class="row row-cols-md-2"><div>
 
-* [Bootstrap](https://github.com/twbs/bootstrap) <small>(+160k ⭐, [see my notes](/_programming/web/css/bootstrap/index.md))</small>
+* [Bootstrap](https://github.com/twbs/bootstrap) <small>(+160k ⭐, [see my notes](/programming-languages/web/css/frameworks/bootstrap/index.md))</small>
 * [tailwindcss](https://github.com/tailwindlabs/tailwindcss) <small>(63.4k ⭐)</small>
 * [semantic](https://github.com/Semantic-Org/Semantic-UI) <small>(50.3k ⭐)</small>
 * [bulma](https://github.com/jgthms/bulma) <small>(46.6k ⭐)</small>
