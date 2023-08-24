@@ -24,3 +24,25 @@ Some features are:
 
 **Code Igniter 4** is the current major version.
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* `App/Config/Database.php`
+* `App/Config/Autoload.php` (autoload helpers)
+* `App/Config/App.php` (base URL)
+* `App/Config/Routes.php` (default, 404, pattern, $n)
+* `App/Models` (CI_MODEL, load model, db insert where set update delete result result_array row close query)
+* Load view in controller
+* Helpers (url|form|form_validation|html, anchor, set_heading, site_url, base_url, redirect, form_open/form_close/...set_value/set_rules...)
+</div><div>
+
+* library session, set_userdata, userdata, has_userdata, destroy
+* library cookies, set_cookie, get_cookie, delete_cookie
+
+</div></div>
