@@ -16,7 +16,6 @@ Special: [emberjs](https://github.com/emberjs) (many solutions).
 
 #### JavaScript environment
 
-* [Deno](https://deno.land/) (87k ⭐, alternative to Node)
 * [meteor](https://github.com/meteor/meteor) (43.2k ⭐, [docs](https://docs.meteor.com/), alternative to Node)
 * [neutralinojs](https://github.com/neutralinojs/neutralinojs) (6.3k ⭐, alternative to Electron)
 * [tauri](https://github.com/tauri-apps/tauri) (56k ⭐, alternative to Electron)
