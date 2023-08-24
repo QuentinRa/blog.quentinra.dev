@@ -40,11 +40,10 @@ Stuff that I found, but never read/used yet.
 * `App/Models` (CI_MODEL, load model, db insert where set update delete result result_array row close query)
 * Load view in controller
 * Helpers (url|form|form_validation|html|download, anchor, set_heading, site_url, base_url, redirect, form_open/form_close/...set_value/set_rules...)
-</div><div>
-
 * library session, set_userdata, userdata, has_userdata, destroy
 * library cookies, set_cookie, get_cookie, delete_cookie
 * Controller routing
+</div><div>
 
 ```php
 $email = Services::email(); // \Config\Services::email();
@@ -64,8 +63,18 @@ $email->send();
 log_message('info', 'message');
 
 lang('File.key');site_url('XXX');base_url('xxx');
-
+redirect('xxx')
+$this->redirect('error404')
+redirect()->to("/xxx") # ?RedirectResponse
 service('request')->getLocale()
+$session = \Config\Services::session();
+
+$throttler = Services::throttler();
+// 10/day
+$throttler->check("uniq_key_per_request", 10, DAY) === false
+$this->request->getIPAddress()
+
+echo view('folder/file.php');
 ```
 
 </div></div>
