@@ -40,5 +40,25 @@ Press `CTRL+ALT+S` or `⚙️ > Settings`. Navigate to `Build...` then `Deployme
 Navigate to `Options` within `Deployment`, and select a condition for uploading files, such as `Always`.
 </div><div>
 
-...
+#### PHP CLI
+
+You can set up the [PHP](/programming-languages/web/php/_general/index.md) interpreter that will be used to execute scripts or install tools when using some IDE features.
+
+* Open the IDE Settings
+* Click on the PHP section
+* Click on `[...]` on the `PHP CLI interpreter` line
+* Add a new interpreter
+  * Set `PHP executable` to the PHP binary
+  * Set `PHP configuration` to the `php.ini` file
+* Go back and select your interpreter in the list
+
+#### Composer install
+
+Instead of installing [composer.phar](/programming-languages/web/php/composer/index.md), you can download `composer.phar` from the IDE and load it using your [PHP CLI](#php-cli).
+
+* Open the IDE Settings
+* Navigate to PHP > Composer
+* Select "composer.phar" in "execution"
+* Click on "download" and select your PHP interpreter
+* Apply and exit
 </div></div>
