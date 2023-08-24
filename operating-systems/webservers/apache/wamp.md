@@ -6,7 +6,7 @@ WAMP server is a Windows server running Apache, MySQL/MariaDB, and PHP.
 
 * 🐓 [Official website](https://www.wampserver.com/)
 * 🥡 [Download link](https://sourceforge.net/projects/wampserver/)
-
+* 🪄 [Download link](https://wampserver.aviatechno.net/) (new)
 </div><div>
 
 Once installed, and started, you will see this icon in the system tray.
@@ -61,6 +61,22 @@ You can create a fake domain associated with a project on your machine.
 * Restart Wamp
 
 ➡️ If you used a real domain, your browser may try to load it...
+
+#### Update WAMP server
+
+Use either of the download links and find the **update** section/folder. Download the updater, run it, and you're done.
+
+⚠️ Ensure you're downloading the update and not the installer.
+
+#### Install a new PHP version
+
+Use either of the download links and find the **addons > PHP** section/folder. Download the PHP version you want and install it.
+
+* Left-click on the wamp icon
+* PHP
+* Version
+* Select yours
+* Restart Wamp
 </div></div>
 
 <hr class="sep-both">
