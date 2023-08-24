@@ -43,6 +43,37 @@ Stuff that I found, but never read/used yet.
 * library session, set_userdata, userdata, has_userdata, destroy
 * library cookies, set_cookie, get_cookie, delete_cookie
 * Controller routing
+
+```php
+public $baseURL = 'https://example.com/';
+public $indexPage = '';
+public $defaultLocale = 'fr';
+public $negotiateLocale = true;
+public $supportedLocales = ['en'];
+
+'username' => 'xxx',
+'password' => 'yyy',
+'database' => 'zzz',
+
+$mailType
+
+$routes->setDefaultController('XXX');
+$routes->set404Override('App\Controllers\XXX::xxx');
+// {locale} (xxx/)?
+
+$db = Database::connect();
+$p = $db->prepare(function($db) {
+    $sql = "SELECT id from user where email = ? LIMIT 0,1;";
+    return (new Query($db))->setQuery($sql);
+});
+// try to fetch results
+$r = ($p->execute($email))->getResultArray();
+if(!isset($r[0])) return false;
+
+$p->_execute([$email])
+
+$db->query($sql)
+```
 </div><div>
 
 ```php
