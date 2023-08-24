@@ -39,10 +39,33 @@ Stuff that I found, but never read/used yet.
 * `App/Config/Routes.php` (default, 404, pattern, $n)
 * `App/Models` (CI_MODEL, load model, db insert where set update delete result result_array row close query)
 * Load view in controller
-* Helpers (url|form|form_validation|html, anchor, set_heading, site_url, base_url, redirect, form_open/form_close/...set_value/set_rules...)
+* Helpers (url|form|form_validation|html|download, anchor, set_heading, site_url, base_url, redirect, form_open/form_close/...set_value/set_rules...)
 </div><div>
 
 * library session, set_userdata, userdata, has_userdata, destroy
 * library cookies, set_cookie, get_cookie, delete_cookie
+* Controller routing
+
+```php
+$email = Services::email(); // \Config\Services::email();
+$email->setFrom('xxx@xxx.xxx', 'XXX xxx');
+$email->setReplyTo('no-reply@xxx.xxx');
+$email->setTo('yyy@xxx.xxx');
+$email->setTo('yyy@xxx.xxx, zzz@xxx.xxx');
+$email->setPriority(1);
+$email->setSubject('[XXX] XXX');
+$email->setMessage("<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <title>send</title>
+</head>
+<body></body>");
+$email->send();
+
+log_message('info', 'message');
+
+lang('File.key');site_url('XXX');base_url('xxx');
+
+service('request')->getLocale()
+```
 
 </div></div>
