@@ -18,8 +18,6 @@ Special: [emberjs](https://github.com/emberjs) (many solutions).
 
 * [neutralinojs](https://github.com/neutralinojs/neutralinojs) (6.3k ⭐, alternative to Electron)
 * [tauri](https://github.com/tauri-apps/tauri) (56k ⭐, alternative to Electron)
-* [babel](https://github.com/babel/babel/tree/master) (42k ⭐, alternative to Typescript)
-* [purescript](https://www.purescript.org/)(1k ⭐, alternative to Typescript)
 
 #### Node servers
 
