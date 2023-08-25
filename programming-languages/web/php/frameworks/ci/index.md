@@ -70,7 +70,7 @@ The most important files are:
 
 * `App.php` - edit `$baseURL` to match your domain name; or the path to the `public` folder during development
 
-* `Routes.php` - ...
+* `Routes.php` - map a route (ex: `/`) to a controller (ex: `Home.php`)
 
 ##### app/Controllers
 
@@ -100,12 +100,91 @@ echo "Hello, World!";
 
 <hr class="sep-both">
 
+## Controllers
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## 🛣️ Routing 🛣️
+
+<div class="row row-cols-md-2"><div>
+
+By default, with file routing, you'll have URLs such as `https://example.com/toto.php` and one PHP per route (`/toto.php`).
+
+Code Igniter use automatic routing. Every request is redirected to `public/index.php` using the `.htaccess` file.
+
+Then, using `app/Config/Routes.php`, Code Igniter will call a method from a [Controller](#controllers) according to the routes we defined.
+
+#### Auto Controller Routing
+
+Before, code igniter was enabling auto routing, meaning that `https://example.com/Controller/method` would call `method` from `Controller`. **This is insecure, don't use it**.
+
+```php!
+$routes->setAutoRoute(true);
+```
+
+#### Default routing
+
+You can edit these two to change the default controller/method used when there is none specified in the routes defined later.
+
+```php!
+$routes->setDefaultController('Home');
+$routes->setDefaultMethod('index');
+```
+</div><div>
+
+#### Specify routing patterns
+
+Routes are declared as follows:
+
+```php!
+$routes->get('/', 'XXXController::index');
+```
+
+➡️ `$base_url/` will load `XXXController#index()`.
+
+You can pass arguments to your method:
+
+```php!
+$routes->get('/', 'XXXController::index/arg1/arg2');
+```
+
+You can create dynamic routes:
+
+```php!
+// the first argument will be the number matching (:num)
+$routes->get('/products/:num', 'Products::show_product/$1');
+// the first argument (:any) is optional
+$routes->get('/xxx/(:any)?', 'XXX::xxx/$1');
+```
+
+➡️ You can replace `get(...)` with `post`, `put`, `delete`...
+
+#### 404 page
+
+If a route is not found, this controller/method will be called if set.
+
+```php!
+$routes->set404Override('App\Controllers\XXX::yyy');
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+* .env
 * `Database.php` - if you use a database, edit `default` and/or test to match your database configuration
 * `App/Config/Autoload.php` (autoload helpers)
 * `App/Config/Routes.php` (default, 404, pattern, $n)
