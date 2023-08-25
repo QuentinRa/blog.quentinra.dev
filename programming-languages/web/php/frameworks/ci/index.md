@@ -298,7 +298,6 @@ $email->setMessage("<head>
 <body></body>");
 $email->send();
 ```
-</div><div>
 
 #### Services/throttler
 
@@ -314,6 +313,47 @@ if ($throttler->check("key", 10, DAY) === false) {
 ```
 
 Each time `check` is called with `key`, the counter increases by one. You could create a key made of an IP to enforce a quota per client.
+</div><div>
+
+#### Localization
+
+To create apps supporting multiple languages, you need to create folders per locale (`en`, `fr`...) in `app/Language`.
+
+Edit `app/Config/App.php` to set available locales and the default one.
+
+```php!
+public string $defaultLocale = 'en';
+public bool $negotiateLocale = false;
+public array $supportedLocales = ['en'];
+```
+
+For instance, let's say you have the file `en/Test.php`.
+
+```php
+<?php
+return [
+    // key => value
+    'greeting' => 'Hello'
+];
+```
+
+Inside the code, instead of a hard-coded text, use:
+
+```diff
+-<p>Hello</p>
++<p><?=lang('Test.greeting')?></p>
+```
+
+You'll create the same file in another language (ex: `fr/Test.php`):
+
+```php
+<?php
+return [
+    'greeting' => 'Bonjour'
+];
+```
+
+Now, according to the locale loaded, the text will change.
 </div></div>
 
 <hr class="sep-both">
