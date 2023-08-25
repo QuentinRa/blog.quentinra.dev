@@ -125,11 +125,8 @@ YWFhYQ==
 EOF
 ```
 
-* Go ([examples](https://golangexample.com/))
 * Groovy
 * Swift ([pods](https://cocoapods.org/))
-* Elixir
-* Ruby ([gems](https://rubygems.org/))
 * [A lot of languages listed here](https://www.jetbrains.com/help/webstorm/application-development-guidelines.html)
 * Other: ML (programming language), [Q#](https://devblogs.microsoft.com/qsharp/)
 
