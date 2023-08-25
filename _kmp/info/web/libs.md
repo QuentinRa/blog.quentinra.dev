@@ -19,22 +19,15 @@ Special: [emberjs](https://github.com/emberjs) (many solutions).
 * [neutralinojs](https://github.com/neutralinojs/neutralinojs) (6.3k ⭐, alternative to Electron)
 * [tauri](https://github.com/tauri-apps/tauri) (56k ⭐, alternative to Electron)
 
-#### Node servers
-
-* [connect](https://github.com/senchalabs/connect) (9.6k ⭐, alternative to Express)
-* [fastify](https://github.com/fastify/fastify) (26k ⭐, alternative to Express)
-* [hapi](https://github.com/hapijs/hapi) (14.1k ⭐, alternative to Express)
-* [nest](https://github.com/nestjs/nest) (53.1k ⭐, relies on both fastify, and express)
-
 #### Package Managers
 
 * [atmospherejs](https://atmospherejs.com/) (meteor, seems dead+no Github)
 * [lerna](https://lerna.js.org/) (34.1k ⭐)
-</div><div>
 
 #### HTTP clients
 
 * [axios](https://axios-http.com/) (97.9k ⭐, alternative to fetch)
+</div><div>
 
 #### Testing
 
@@ -63,7 +56,6 @@ Special: [emberjs](https://github.com/emberjs) (many solutions).
 
 #### Frameworks
 
-* See also [React](/_programming/web/frameworks/front/react.js/index.md)
 * [Riot.js](https://github.com/riot/riot) (15k ⭐)
 * [lit](https://github.com/lit/lit) (13.4k ⭐)
 * [Ionic](https://github.com/ionic-team/ionic-framework) (49k ⭐)
