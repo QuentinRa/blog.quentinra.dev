@@ -33,10 +33,7 @@ Special: [emberjs](https://github.com/emberjs) (many solutions).
 
 **Note**: assert/chai/should/expect/unexpect are in mocha's notes.
 
-* [Jasmine](https://github.com/jasmine/jasmine) (15.5k ⭐, alternative to Mocha)
-* [QUnit](https://github.com/qunitjs/qunit) (4k ⭐, alternative to Mocha)
-* [Karma](https://github.com/karma-runner)) (12k ⭐, alternative to Mocha)
-* [jestjs](https://github.com/facebook/jest) (41k ⭐, alternative to Mocha, [frisby](https://github.com/vlucas/frisby))
+* [Karma](https://github.com/karma-runner) (testing runner)
 
 #### End-to-End testing
 
