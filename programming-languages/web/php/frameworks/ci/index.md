@@ -71,6 +71,31 @@ The most important files are:
 * `App.php` - edit `$baseURL` to match your domain name; or the path to the `public` folder during development
 
 * `Routes.php` - ...
+
+##### app/Controllers
+
+A controller is a PHP script that can render multiple views or your application. We usually create one controller per set of related views.
+
+```php!
+<?php // Home.php
+namespace App\Controllers;
+
+class Home extends BaseController {
+    public function index(): string
+    {
+        return view('welcome_message');
+    }
+}
+```
+
+##### app/Views
+
+This folder contains PHP files that contain or generate the HTML that will be displayed to the user.
+
+```php!
+<?php // welcome_message.php
+echo "Hello, World!";
+```
 </div></div>
 
 <hr class="sep-both">
