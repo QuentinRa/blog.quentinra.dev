@@ -100,11 +100,31 @@ echo "Hello, World!";
 
 <hr class="sep-both">
 
-## Controllers
+## Controllers 🤖
 
 <div class="row row-cols-md-2"><div>
 
-...
+A controller is a PHP class that extends `BaseController`. Each method corresponds to a page of your website. They should fetch data from the model, parse it, and pass it to the views.
+
+For instance, imagine a page that displays the latest post of a website. 
+
+* we will first fetch the latest post (**Model**)
+* then we will display it (**View**)
+
+```php!
+public function index(): void {
+    // Model
+    // imagine that we load this from the model
+    $latest_post = ['title' => '...', 'content' => '...'];
+    
+    // View
+    echo view('header.php');
+    echo view('latest.php', [ 'post' => $latest_post]);
+    echo view('footer.php');
+}
+```
+
+The `view(path)` method will execute the PHP in `app/Views/path`. We can pass variables to these PHP files. When executing `latest.php`, it will have access to the variable `$post` which was set to `$latest_post`.
 </div><div>
 
 ...
@@ -275,6 +295,69 @@ $postModel->whereIn('id', [1, 2, 3])
 
 <hr class="sep-both">
 
+## Localization
+
+<div class="row row-cols-md-2"><div>
+
+To create apps supporting multiple languages, you need to create folders per locale (`en`, `fr`...) in `app/Language`.
+
+Edit `app/Config/App.php` to set available locales and the default one.
+
+```php!
+public string $defaultLocale = 'en';
+public bool $negotiateLocale = false;
+public array $supportedLocales = ['en'];
+// don't fallback to default if the locale is not found
+$routes->useSupportedLocalesOnly(true);
+```
+
+For instance, let's say you have the file `en/Test.php`.
+
+```php
+<?php
+return [
+    // key => value
+    'greeting' => 'Hello'
+];
+```
+
+Inside the code, instead of a hard-coded text, use:
+
+```diff
+-<p>Hello</p>
++<p><?=lang('Test.greeting')?></p>
+```
+</div><div>
+
+You'll create the same file in another language (ex: `fr/Test.php`):
+
+```php
+<?php
+return [
+    'greeting' => 'Bonjour'
+];
+```
+
+Now, according to the locale loaded, the text will change.
+
+* Use `{locale}` in routes (`en/home`, `fr/home`)
+* Auto-detection if `negotiateLocale` is `true`
+* From the code
+
+```php
+// Get the locale
+$locale = $this->request->getLocale();
+$locale = service('request')->getLocale();
+// Set the locale
+$this->request->setLocale('fr');
+service('request')->setLocale('fr');
+```
+
+➡️ See [localization](https://codeigniter.com/user_guide/outgoing/localization.html) for more details.
+</div></div>
+
+<hr class="sep-both">
+
 ## Utilities
 
 <div class="row row-cols-md-2"><div>
@@ -298,6 +381,7 @@ $email->setMessage("<head>
 <body></body>");
 $email->send();
 ```
+</div><div>
 
 #### Services/throttler
 
@@ -313,47 +397,14 @@ if ($throttler->check("key", 10, DAY) === false) {
 ```
 
 Each time `check` is called with `key`, the counter increases by one. You could create a key made of an IP to enforce a quota per client.
-</div><div>
 
-#### Localization
+#### Logging
 
-To create apps supporting multiple languages, you need to create folders per locale (`en`, `fr`...) in `app/Language`.
-
-Edit `app/Config/App.php` to set available locales and the default one.
+To log a message with a log level of `info`:
 
 ```php!
-public string $defaultLocale = 'en';
-public bool $negotiateLocale = false;
-public array $supportedLocales = ['en'];
+log_message('info', 'message');
 ```
-
-For instance, let's say you have the file `en/Test.php`.
-
-```php
-<?php
-return [
-    // key => value
-    'greeting' => 'Hello'
-];
-```
-
-Inside the code, instead of a hard-coded text, use:
-
-```diff
--<p>Hello</p>
-+<p><?=lang('Test.greeting')?></p>
-```
-
-You'll create the same file in another language (ex: `fr/Test.php`):
-
-```php
-<?php
-return [
-    'greeting' => 'Bonjour'
-];
-```
-
-Now, according to the locale loaded, the text will change.
 </div></div>
 
 <hr class="sep-both">
@@ -365,24 +416,13 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * .env
-* `App/Config/Autoload.php` (autoload helpers)
-* Load view in controller
-* Helpers (url|form|form_validation|html|download, anchor, set_heading, site_url, base_url, redirect, form_open/form_close/...set_value/set_rules...)
-* library session, set_userdata, userdata, has_userdata, destroy
-* library cookies, set_cookie, get_cookie, delete_cookie
-
-```php
-public $defaultLocale = 'fr';
-public $negotiateLocale = true;
-public $supportedLocales = ['en'];
-// {locale}
-```
+* Autoload
+* Helpers
+* Session
 </div><div>
 
 ```php
-log_message('info', 'message');
-
-lang('File.key');site_url('XXX');base_url('xxx');
+site_url('XXX');base_url('xxx');
 redirect('xxx')
 $this->redirect('error404')
 redirect()->to("/xxx") # ?RedirectResponse
