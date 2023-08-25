@@ -178,6 +178,49 @@ $routes->set404Override('App\Controllers\XXX::yyy');
 
 <hr class="sep-both">
 
+## Utilities
+
+<div class="row row-cols-md-2"><div>
+
+#### Services/email
+
+You can define the default mail configuration in `apps/Config/Email.php`. Here is a list of methods you can use:
+
+```php!
+$email = \Config\Services::email();;
+$email->setFrom('xxx@xxx.xxx', 'XXX xxx');
+$email->setReplyTo('no-reply@xxx.xxx');
+$email->setTo('yyy@xxx.xxx'); // one
+$email->setTo('yyy@xxx.xxx, zzz@xxx.xxx'); // multiple
+$email->setPriority(1);
+$email->setSubject('[XXX] XXX');
+$email->setMessage("<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <title>send</title>
+</head>
+<body></body>");
+$email->send();
+```
+</div><div>
+
+#### Services/throttler
+
+Using the throttler, you can enforce a limit/quota on webpages, such as only allowing an IP to access a page every X hours.
+
+```php!
+$throttler = Services::throttler();
+// 10 times per day
+if ($throttler->check("key", 10, DAY) === false) {
+    // more than 10 this day
+    return ...;
+}
+```
+
+Each time `check` is called with `key`, the counter increases by one. You could create a key made of an IP to enforce a quota per client.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -228,20 +271,6 @@ $db->query($sql)
 </div><div>
 
 ```php
-$email = Services::email(); // \Config\Services::email();
-$email->setFrom('xxx@xxx.xxx', 'XXX xxx');
-$email->setReplyTo('no-reply@xxx.xxx');
-$email->setTo('yyy@xxx.xxx');
-$email->setTo('yyy@xxx.xxx, zzz@xxx.xxx');
-$email->setPriority(1);
-$email->setSubject('[XXX] XXX');
-$email->setMessage("<head>
-    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
-    <title>send</title>
-</head>
-<body></body>");
-$email->send();
-
 log_message('info', 'message');
 
 lang('File.key');site_url('XXX');base_url('xxx');
@@ -250,10 +279,6 @@ $this->redirect('error404')
 redirect()->to("/xxx") # ?RedirectResponse
 service('request')->getLocale()
 $session = \Config\Services::session();
-
-$throttler = Services::throttler();
-// 10/day
-$throttler->check("uniq_key_per_request", 10, DAY) === false
 $this->request->getIPAddress()
 
 echo view('folder/file.php');
