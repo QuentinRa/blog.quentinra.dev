@@ -22,6 +22,7 @@ List of courses that have note which were not added yet.
 * Pandora
 * **Gradle**
 * JetBrains plugin development
+* Project > Modeling, Tools?
 
 **Operating systems**
 
@@ -64,14 +65,13 @@ Google
 to-dos here?
 
 * [editorconfig](https://editorconfig.org/)
-* [visual-paradigm](https://www.visual-paradigm.com/) <small>(project management)</small>
 * [asdf](https://github.com/asdf-vm/asdf) <small>(package management)</small>
-* [wakatime](https://wakatime.com/) <small>(metrics)</small>
-* [xmind](https://xmind.app/) <small>(brainstorming)</small>
 * Slack
 * [kandi](https://kandi.openweaver.com/) <small>(???)</small>
-* [airtable](https://www.airtable.com/) / [baserow](https://baserow.io/) <small>(???)</small>
-* [make](https://www.make.com/) <small>(???)</small>
+* no code
+  * [airtable](https://www.airtable.com/) <small>(???)</small>
+  * [baserow](https://baserow.io/) <small>(???)</small>
+  * [make](https://www.make.com/) <small>(???)</small>
 * [zapier](https://zapier.com/) <small>(???)</small>
 * [n8n](https://n8n.io/) <small>(???)</small>
 * [appsmith](https://www.appsmith.com/) <small>(???)</small>
