@@ -7,7 +7,7 @@
 * [Documentation](https://codeigniter.com/user_guide/index.html) (⛪)
 * [GitHub](https://github.com/codeigniter4/CodeIgniter4) (4.3k ⭐)
 
-The best way to get started is to use [composer](/programming-languages/web/php/composer/index.md)
+The best way to get started is to use [composer](/programming-languages/web/php/composer/index.md):
 
 ```shell!
 $ composer create-project codeigniter4/appstarter my_project
@@ -23,6 +23,31 @@ Some features are:
 * 🔤 Localization
 
 **Code Igniter 4** is the current major version.
+</div></div>
+
+<hr class="sep-both">
+
+## File structure
+
+<div class="row row-cols-md-2"><div>
+
+Code Igniter files are split in 3 sections: **app**, **public**, and **writable**.
+
+#### Public
+
+A modern secure practice is to not expose the website source (`app`...) to the public. You website [domain name](/programming-languages/web/_general/random/dn.md) such as `example.com` should be  configured to point to `/path/to/my_project/public/`. A user won't be able to write `example.com/../app/sensitive_file`.
+
+☠️ Traditionally, `example.com` pointed to `/path/to/my_project/` that allowed us to do `example.com/app/sensitive_file`.
+
+You will store in `public` any file that the user will be allowed to access using a URL. This include:
+
+* 🖼️ Images (ex: `public/assets/img/`)
+* 🖌️ CSS (ex: `public/assets/css/`)
+* 🤖 JavaScript (ex: `public/assets/js/`)
+* ...
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">
