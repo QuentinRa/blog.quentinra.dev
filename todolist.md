@@ -20,7 +20,7 @@ List of courses that have note which were not added yet.
 
 * (review/typos) cmake, VSCode, Rider, PHPStorm, VCS
 * Pandora
-* Gradle, Maven
+* **Gradle**
 * JetBrains plugin development
 
 **Operating systems**
@@ -124,11 +124,6 @@ to-dos here?
 YWFhYQ==
 EOF
 ```
-
-* Groovy
-* Swift ([pods](https://cocoapods.org/))
-* [A lot of languages listed here](https://www.jetbrains.com/help/webstorm/application-development-guidelines.html)
-* Other: ML (programming language), [Q#](https://devblogs.microsoft.com/qsharp/)
 
 **Fun**
 

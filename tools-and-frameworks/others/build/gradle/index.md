@@ -36,4 +36,6 @@ id("net.saliman.properties") version "1.5.2"
 propertiesPluginEnvironmentNameProperty = branchNumber
 branchNumber = 213
 ```
+
+* Groovy
 </div></div>
