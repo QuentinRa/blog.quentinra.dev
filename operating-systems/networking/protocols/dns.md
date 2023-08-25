@@ -196,4 +196,11 @@ Stuff that I found, but never read/used yet.
 * DNS relay
 * DOT (DNS Over TLS)
 </div><div>
+
+Purchase domain names
+
+* [namecheap](https://nc.me/)
+* [name.com](https://www.name.com/)
+* [instantdomainsearch](https://instantdomainsearch.com/)
+* [gositestat](https://www.gositestat.com/) / [statshow](https://www.statshow.com/)
 </div></div>

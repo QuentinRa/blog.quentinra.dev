@@ -8,13 +8,6 @@
 
 <div class="row row-cols-md-2"><div>
 
-#### Domain names
-
-* [namecheap](https://nc.me/)
-* [name.com](https://www.name.com/)
-* [instantdomainsearch](https://instantdomainsearch.com/)
-* [gositestat](https://www.gositestat.com/) / [statshow](https://www.statshow.com/)
-
 #### Hosting
 
 * webhostapp <small>(free, not recommended)</small>
