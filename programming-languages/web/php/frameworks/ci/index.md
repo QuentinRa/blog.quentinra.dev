@@ -223,6 +223,34 @@ $res = $stmt->_execute([$user_id]);
 
 <hr class="sep-both">
 
+## Models
+
+<div class="row row-cols-md-2"><div>
+
+Code Igniter implements a sort of **Object-Relational Mapping** (ORM) using Models. Each model corresponds to a table in the database.
+
+```php!
+<?php
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class PostModel extends Model
+{
+    protected $table = 'posts';
+    protected $primaryKey = 'id';
+    protected $allowedFields = ['id', 'title', 'content'];
+    protected $validationRules = [
+        'title' => 'required|min_length[3]',
+        'content' => 'required'
+    ];
+}
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Utilities
 
 <div class="row row-cols-md-2"><div>
