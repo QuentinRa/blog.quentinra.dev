@@ -140,6 +140,8 @@ public function index(): ?\CodeIgniter\HTTP\RedirectResponse
     return redirect('login'); // redirect
 }
 ```
+
+You may raise a `throw PageNotFoundException::forPageNotFound("message");` exception if 
 </div></div>
 
 <hr class="sep-both">
@@ -232,6 +234,8 @@ If a route is not found, this controller/method will be called if set.
 ```php!
 $routes->set404Override('App\Controllers\XXX::yyy');
 ```
+
+⚠️ Don't forget to set the HTTP response code to 404 in `yyy`...
 </div></div>
 
 <hr class="sep-both">
@@ -438,10 +442,11 @@ Each time `check` is called with `key`, the counter increases by one. You could 
 
 #### Logging
 
-To log a message with a log level of `info`:
+To log a message with a log level:
 
 ```php!
 log_message('info', 'message');
+log_message('error', 'message');
 ```
 </div></div>
 
@@ -457,5 +462,18 @@ Stuff that I found, but never read/used yet.
 * Autoload
 * Helpers
 * Session
+* Cache pages. Annoying in debug.
+
+````php!
+$this->cachePage(360000)
+````
 </div><div>
+
+````php
+// you can use Controller#attribute
+service('router')->methodName()
+service('request')->getPath()
+service('request')->getIPAddress()
+service('response')->setStatusCode(ResponseInterface::HTTP_NOT_FOUND);
+````
 </div></div>
