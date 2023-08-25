@@ -123,11 +123,49 @@ public function index(): void {
     echo view('footer.php');
 }
 ```
-
-The `view(path)` method will execute the PHP in `app/Views/path`. We can pass variables to these PHP files. When executing `latest.php`, it will have access to the variable `$post` which was set to `$latest_post`.
 </div><div>
 
-...
+The `view(path)` method will execute the PHP in `app/Views/path`. We can pass variables to these PHP files. When executing `latest.php`, it will have access to the variable `$post` which was set to `$latest_post`.
+
+You may redirect the user:
+
+```php!
+public function index(): ?\CodeIgniter\HTTP\RedirectResponse
+{
+    if ($is_connected) {
+        // ...
+        return null; // no redirect
+    }
+    // see also: redirect()->to("/xxx")
+    return redirect('login'); // redirect
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Views
+
+<div class="row row-cols-md-2"><div>
+
+Views are simply PHP files with the HTML to display.
+
+```phpt!
+<?php
+if (!isset($post)) die('Missing required argument: $post');
+?>
+
+<h1>Latest Post</h1>
+
+<p>Title: <?=$post['title']?></p>
+<p>Content: <?=$post['content']?></p>
+```
+</div><div>
+
+You will most likely use:
+
+* `site_url('XXX')`: `https://example.com/index.php/XXX`, for links
+* `base_url('XXX')`: `https://example.com/XXX`, for images
 </div></div>
 
 <hr class="sep-both">
@@ -268,7 +306,7 @@ class PostModel extends Model
 ```
 </div><div>
 
-```php
+```php!
 // créate
 $postModel = new \App\Models\PostModel();         // normal
 $postModel = model(\App\Models\PostModel::class); // shared
@@ -420,17 +458,4 @@ Stuff that I found, but never read/used yet.
 * Helpers
 * Session
 </div><div>
-
-```php
-site_url('XXX');base_url('xxx');
-redirect('xxx')
-$this->redirect('error404')
-redirect()->to("/xxx") # ?RedirectResponse
-service('request')->getLocale()
-$session = \Config\Services::session();
-$this->request->getIPAddress()
-
-echo view('folder/file.php');
-```
-
 </div></div>
