@@ -33,21 +33,44 @@ Some features are:
 
 Code Igniter files are split in 3 sections: **app**, **public**, and **writable**.
 
-#### Public
+#### public
 
 A modern secure practice is to not expose the website source (`app`...) to the public. You website [domain name](/programming-languages/web/_general/random/dn.md) such as `example.com` should be  configured to point to `/path/to/my_project/public/`. A user won't be able to write `example.com/../app/sensitive_file`.
 
 ☠️ Traditionally, `example.com` pointed to `/path/to/my_project/` that allowed us to do `example.com/app/sensitive_file`.
 
-You will store in `public` any file that the user will be allowed to access using a URL. This include:
+You will store in `public` any file that the user will be allowed to access using a URL. This includes:
 
 * 🖼️ Images (ex: `public/assets/img/`)
 * 🖌️ CSS (ex: `public/assets/css/`)
 * 🤖 JavaScript (ex: `public/assets/js/`)
 * ...
+
+The path to this folder is stored in `PUBLICPATH` from the code.
+
+#### writable
+
+This directory contains files created by the application:
+
+* 📄 Logs <small>(debug logs, errors in production)</small>
+* 🚀 Cache files <small>(delete one to clear its page cache)</small>
+* 🧵 Session files <small>(each user created session)</small>
+* 🧑 Uploaded files <small>(any uploaded file that the user shouldn't access)</small>
+
+The path to this folder is stored in `WRITEPATH` from the code.
 </div><div>
 
-...
+#### app
+
+The application folder is split inside more folders.
+
+##### app/Config
+
+The most important files are:
+
+* `App.php` - edit `$baseURL` to match your domain name; or the path to the `public` folder during development
+
+* `Routes.php` - ...
 </div></div>
 
 <hr class="sep-both">
@@ -58,9 +81,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* `App/Config/Database.php`
+* `Database.php` - if you use a database, edit `default` and/or test to match your database configuration
 * `App/Config/Autoload.php` (autoload helpers)
-* `App/Config/App.php` (base URL)
 * `App/Config/Routes.php` (default, 404, pattern, $n)
 * `App/Models` (CI_MODEL, load model, db insert where set update delete result result_array row close query)
 * Load view in controller
