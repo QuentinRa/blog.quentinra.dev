@@ -16,7 +16,6 @@ Special: [emberjs](https://github.com/emberjs) (many solutions).
 
 #### JavaScript environment
 
-* [meteor](https://github.com/meteor/meteor) (43.2k ⭐, [docs](https://docs.meteor.com/), alternative to Node)
 * [neutralinojs](https://github.com/neutralinojs/neutralinojs) (6.3k ⭐, alternative to Electron)
 * [tauri](https://github.com/tauri-apps/tauri) (56k ⭐, alternative to Electron)
 * [babel](https://github.com/babel/babel/tree/master) (42k ⭐, alternative to Typescript)
@@ -31,10 +30,6 @@ Special: [emberjs](https://github.com/emberjs) (many solutions).
 
 #### Package Managers
 
-* [yarn](https://github.com/yarnpkg/yarn) (41k ⭐): Yarn V1
-* [berry](https://github.com/yarnpkg/berry) (6k ⭐): Yarn V2
-* [bower](https://github.com/bower/bower) (15k ⭐)
-* [pnpm](https://github.com/pnpm/pnpm) (21k ⭐)
 * [atmospherejs](https://atmospherejs.com/) (meteor, seems dead+no Github)
 * [lerna](https://lerna.js.org/) (34.1k ⭐)
 </div><div>

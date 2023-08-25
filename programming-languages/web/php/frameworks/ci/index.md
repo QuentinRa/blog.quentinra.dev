@@ -37,7 +37,7 @@ Code Igniter files are split in 3 sections: **app**, **public**, and **writable*
 
 #### public
 
-A modern secure practice is to not expose the website source (`app`...) to the public. You website [domain name](/programming-languages/web/_general/random/dn.md) such as `example.com` should be  configured to point to `/path/to/my_project/public/`. A user won't be able to write `example.com/../app/sensitive_file`.
+A modern secure practice is to not expose the website source (`app`...) to the public. You website [domain name](/operating-systems/networking/protocols/dns.md) such as `example.com` should be  configured to point to `/path/to/my_project/public/`. A user won't be able to write `example.com/../app/sensitive_file`.
 
 ☠️ Traditionally, `example.com` pointed to `/path/to/my_project/` that allowed us to do `example.com/app/sensitive_file`.
 
