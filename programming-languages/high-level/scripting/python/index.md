@@ -1,7 +1,7 @@
 # Python
 
-[![pythonbasics](../../../cybersecurity/_badges/thm/pythonbasics.svg)](https://tryhackme.com/room/pythonbasics)
-[![pythonforcybersecurity](../../../cybersecurity/_badges/thmp/pythonforcybersecurity.svg)](https://tryhackme.com/room/pythonforcybersecurity)
+[![pythonbasics](../../../../cybersecurity/_badges/thm/pythonbasics.svg)](https://tryhackme.com/room/pythonbasics)
+[![pythonforcybersecurity](../../../../cybersecurity/_badges/thmp/pythonforcybersecurity.svg)](https://tryhackme.com/room/pythonforcybersecurity)
 
 <div class="row row-cols-md-2"><div>
 
@@ -630,7 +630,7 @@ ssh.close()
 
 #### Django - create and deploy websites
 
-[![django](../../../cybersecurity/_badges/thm/django.svg)](https://tryhackme.com/room/django)
+[![django](../../../../cybersecurity/_badges/thm/django.svg)](https://tryhackme.com/room/django)
 
 `django` is a library to create and deploy a website.
 
