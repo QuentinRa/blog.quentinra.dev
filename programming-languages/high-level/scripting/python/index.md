@@ -662,7 +662,7 @@ If you're using HTML, then you can use template injection: `{% ... %}`. Refer to
 
 Click is prompting the user for input for arguments that were not given to the program (`script.py --key some_key [...]`).
 
-```
+```python
 import click
 
 @click.command()

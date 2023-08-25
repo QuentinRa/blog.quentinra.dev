@@ -13,17 +13,12 @@ List of courses that have note which were not added yet.
 * **API** > GraphQL
 * **CPP > STD + ENS notes**
 * Qt
-* Rust ([crates](https://crates.io/))
 * OCaml
-* Lisp
-* Lua ([luau](https://github.com/Roblox/luau))
-* Perl
-* Go ([gop](https://github.com/goplus/gop))
 </div><div>
 
 **Tools and Frameworks**
 
-* (review/typos) cmake, VSCode, Rider
+* (review/typos) cmake, VSCode, Rider, PHPStorm, VCS
 * Pandora
 * Gradle, Maven
 * JetBrains plugin development
