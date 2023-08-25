@@ -227,7 +227,7 @@ $res = $stmt->_execute([$user_id]);
 
 <div class="row row-cols-md-2"><div>
 
-Code Igniter implements a sort of **Object-Relational Mapping** (ORM) using Models. Each model corresponds to a table in the database.
+Code Igniter implements a sort of **Object-Relational Mapping** (ORM) using [Models](https://codeigniter.com/user_guide/models/model.html). Each model corresponds to a table in the database.
 
 ```php!
 <?php
@@ -247,6 +247,30 @@ class PostModel extends Model
 }
 ```
 </div><div>
+
+```php
+// créate
+$postModel = new \App\Models\PostModel();         // normal
+$postModel = model(\App\Models\PostModel::class); // shared
+
+// Select id,title,content from posts;
+$posts = $postModel->findAll();
+
+// Select [...] from posts where id = some_id;
+$post = $postModel->find('some_id');
+// Select [...] where id in ['id_1', 'id_2', 'id_3']
+$posts = $postModel->find(['id_1', 'id_2', 'id_3']);
+
+// Select [...] from posts where key = value;
+$posts = $postModel->where('key', 'value')->findAll();
+
+// Update every record
+$postModel->update(['key' => 'value']);
+// you can also use "set"
+$postModel->whereIn('id', [1, 2, 3])
+    ->set(['banned' => 1])
+    ->update();
+```
 </div></div>
 
 <hr class="sep-both">
@@ -302,7 +326,6 @@ Stuff that I found, but never read/used yet.
 
 * .env
 * `App/Config/Autoload.php` (autoload helpers)
-* `App/Models` (CI_MODEL, load model, db insert where set update delete result result_array row close query)
 * Load view in controller
 * Helpers (url|form|form_validation|html|download, anchor, set_heading, site_url, base_url, redirect, form_open/form_close/...set_value/set_rules...)
 * library session, set_userdata, userdata, has_userdata, destroy
