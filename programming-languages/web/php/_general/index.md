@@ -708,5 +708,7 @@ reset($xxx)
 $this->$hidden
 
 return new class implements XXXInterface {};
+
+sprintf("%06d", 33)
 ```
 </div></div>

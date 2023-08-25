@@ -33,6 +33,8 @@ Some features are:
 
 Code Igniter files are split in 3 sections: **app**, **public**, and **writable**.
 
+➡️ Don't forget to rename `env` to `.env`. Set `CI_ENVIRONMENT` to `development` to load debugging features.
+
 #### public
 
 A modern secure practice is to not expose the website source (`app`...) to the public. You website [domain name](/programming-languages/web/_general/random/dn.md) such as `example.com` should be  configured to point to `/path/to/my_project/public/`. A user won't be able to write `example.com/../app/sensitive_file`.
@@ -337,6 +339,44 @@ $postModel->whereIn('id', [1, 2, 3])
 
 <hr class="sep-both">
 
+## Request/Response
+
+<div class="row row-cols-md-2"><div>
+
+From any file, you can access the **request** (the data about the one requesting the page), and the **response** (the response to the request).
+
+```php!
+// REQUEST
+service('request')->getPath()
+service('request')->getIPAddress()
+// RESPONSE
+service('response')->setStatusCode(ResponseInterface::HTTP_NOT_FOUND);
+```
+
+From a Controller, you can use:
+
+```php!
+$this->request->xxx();
+$this->response->xxx();
+```
+</div><div>
+
+#### Request: file upload
+
+You can use Code Igniter file utilities to handle uploads.
+
+```php
+$f = $this->request->getFile("fileID"); // null?
+$file_name = $f->getName(); // empty?
+$size = $f->getSize(); // 1000000=1mb
+$ext = $f->guessExtension(); // ex: 'png'
+$mtype = $f->getMimeType(); // ex: 'image/png'
+$f->store("folderName", "fileName");
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Localization
 
 <div class="row row-cols-md-2"><div>
@@ -388,10 +428,8 @@ Now, according to the locale loaded, the text will change.
 
 ```php
 // Get the locale
-$locale = $this->request->getLocale();
 $locale = service('request')->getLocale();
 // Set the locale
-$this->request->setLocale('fr');
 service('request')->setLocale('fr');
 ```
 
@@ -472,8 +510,5 @@ $this->cachePage(360000)
 ````php
 // you can use Controller#attribute
 service('router')->methodName()
-service('request')->getPath()
-service('request')->getIPAddress()
-service('response')->setStatusCode(ResponseInterface::HTTP_NOT_FOUND);
 ````
 </div></div>
