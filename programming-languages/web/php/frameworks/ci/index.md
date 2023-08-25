@@ -178,6 +178,51 @@ $routes->set404Override('App\Controllers\XXX::yyy');
 
 <hr class="sep-both">
 
+## Database
+
+<div class="row row-cols-md-2"><div>
+
+Define the database configuration in `apps/Config/Database.php`. To avoid writing SQL, Code Igniter has what we call [Models](#models) 🚀.
+
+```php!
+$db = \Config\Database::connect();
+```
+
+To create a non-prepared statement ❌ <small>(vulnerable)</small>:
+
+```php!
+$user_id = "5"; 
+$r $db->query("SELECT * from user where id = ".$user_id." LIMIT 0,1;");
+```
+
+To create a prepared statement ✅:
+
+```php!
+$user_id = "";
+$stmt = $db->prepare(function($db) {
+    $sql = "SELECT * from user where id = ? LIMIT 0,1;";
+    return (new \CodeIgniter\Database\Query($db))->setQuery($sql);
+});
+$r = $stmt->execute($user_id);
+```
+</div><div>
+
+To get the results as an array:
+
+```php!
+$results = $r->getResultArray();
+```
+
+While it's **not** a good practice, you can use the driver specific execute and write code specific to mysqli/...
+
+```php!
+$res = $stmt->_execute([$user_id]);
+// use the driver-specific functions
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Utilities
 
 <div class="row row-cols-md-2"><div>
@@ -228,45 +273,18 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * .env
-* `Database.php` - if you use a database, edit `default` and/or test to match your database configuration
 * `App/Config/Autoload.php` (autoload helpers)
-* `App/Config/Routes.php` (default, 404, pattern, $n)
 * `App/Models` (CI_MODEL, load model, db insert where set update delete result result_array row close query)
 * Load view in controller
 * Helpers (url|form|form_validation|html|download, anchor, set_heading, site_url, base_url, redirect, form_open/form_close/...set_value/set_rules...)
 * library session, set_userdata, userdata, has_userdata, destroy
 * library cookies, set_cookie, get_cookie, delete_cookie
-* Controller routing
 
 ```php
-public $baseURL = 'https://example.com/';
-public $indexPage = '';
 public $defaultLocale = 'fr';
 public $negotiateLocale = true;
 public $supportedLocales = ['en'];
-
-'username' => 'xxx',
-'password' => 'yyy',
-'database' => 'zzz',
-
-$mailType
-
-$routes->setDefaultController('XXX');
-$routes->set404Override('App\Controllers\XXX::xxx');
-// {locale} (xxx/)?
-
-$db = Database::connect();
-$p = $db->prepare(function($db) {
-    $sql = "SELECT id from user where email = ? LIMIT 0,1;";
-    return (new Query($db))->setQuery($sql);
-});
-// try to fetch results
-$r = ($p->execute($email))->getResultArray();
-if(!isset($r[0])) return false;
-
-$p->_execute([$email])
-
-$db->query($sql)
+// {locale}
 ```
 </div><div>
 
