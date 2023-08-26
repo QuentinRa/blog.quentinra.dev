@@ -68,12 +68,11 @@ These are the other project that we need to import to build ours.
 You can import plugins in the `plugins` block at the top.
 
 ```groovy
+// idea, java, java-library, maven-publish
+// application...
 plugins {
-    id 'idea'
-    id 'maven-publish'
-    id 'java'
-    id 'java-library'
-    id 'application'
+    id 'xxx'
+    id 'xxx' version 'xxx'
 }
 ```
 
@@ -123,22 +122,25 @@ tasks.register('hello_world') {
 
 <div class="row row-cols-md-2"><div>
 
+#### Java plugins
+
 ```groovy
 plugins {
     id 'java'
 }
 ```
 
+#### Java dependencies
+
 ```groovy
 dependencies {
-    // only for tests files
+    // use JUnit 5
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
 ```
-</div><div>
 
-#### Tests
+#### Java Tests
 
 ```groovy
 test {
@@ -146,7 +148,33 @@ test {
 }
 ```
 
-#### Jar
+</div><div>
+
+#### Java Compile Options
+
+```groovy
+tasks.withType(JavaCompile).configureEach {
+    // Compiler options
+    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+    options.encoding = "UTF-8"
+    // Ask the compiler to target a SDK
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+```
+
+➡️ An alternative to `sourceCompatibility` and `targetCompatibility` is to use Java toolchain configuration.
+
+```groovy
+// enforce the use of Java 17
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+```
+
+#### Generate a jar
 
 Add this to generate a jar with `./gradlew jar`. Replace the `org.example.Main` with your Main class.
 
@@ -171,11 +199,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 ```
-plugins {
-    id 'xxx' version 'xxx'
-}
-// gradle xxx
-task xxx(arg: XXX) {}
 implementation ('xxx') {
     exclude group: 'org.json', module: 'json'
 }

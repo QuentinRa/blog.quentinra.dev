@@ -6,26 +6,6 @@ application {
     mainModule.set('com.module.name')
     mainClassName = "com.a.package.Main"
 }
-
-//noinspection GroovyAssignabilityCheck
-tasks.withType(JavaCompile) {
-    // add options
-    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
-    // utf-8
-    options.encoding = "UTF-8"
-    // java version examples
-    // sourceCompatibility = 1.16
-    // targetCompatibility = 1.16
-    // sourceCompatibility = 11
-    // targetCompatibility = 11
-}
-// or check gradle toolchains
-// you may be able to use this
-// java {
-//    toolchain {
-//      languageVersion = JavaLanguageVersion.of(11)
-//    }
-// }
 ```
 
 <hr class="sr">
