@@ -49,6 +49,21 @@ IDEA natively supports [JUnit5](https://www.jetbrains.com/help/idea/junit.html).
 For JUnit4, [you **may** have to do it manually](stuff/junit4.md).
 
 🔥 Use `CTRL+SHIFT+T` to generate a test class.
+
+<br>
+
+#### Gradle
+
+Each time you edit Gradle files, you'll have to reload gradle. A "reload" icon will pop up within the file.
+
+On the right, there is a "Gradle" tab to run tasks with one click.
+
+To run gradle from a terminal, set JAVA_HOME and use:
+
+```ps
+PS> $Env:JAVA_HOME="C:\Users\user\.jdks\some_sdk"
+PS> .\gradlew.bat
+```
 </div><div>
 
 #### Run Configurations
