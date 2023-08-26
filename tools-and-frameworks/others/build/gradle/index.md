@@ -39,12 +39,14 @@ See also: `settings.gradle`.
 
 The build file is where we define how a project is built. It contains **tasks**, **plugin**, and **dependencies**.
 
-See also: `build.gradle`.
+See also: `build.gradle` and `println "$buildDir"`.
 </div><div>
 
 #### Tasks
 
 A task is a simple action such as "compiling the code".
+
+➡️ Use `./gradlew task` to run the task `"task"`.
 
 #### Plugins
 
@@ -96,8 +98,8 @@ repositories {
 
 ```groovy
 dependencies {
-    // only for tests files
-    testImplementation 'xxx'
+    implementation 'xxx'     // needed to compile + run
+    testImplementation 'xxx' // needed for tests
 }
 ```
 
@@ -136,11 +138,28 @@ dependencies {
 ```
 </div><div>
 
+#### Tests
+
 ```groovy
 test {
-    useJUnitPlatform()
+    useJUnitPlatform()  // JUnit5
 }
 ```
+
+#### Jar
+
+Add this to generate a jar with `./gradlew jar`. Replace the `org.example.Main` with your Main class.
+
+```groovy
+jar {
+    from sourceSets.main.output
+    manifest {
+        attributes 'Main-Class': 'org.example.Main'
+    }
+}
+```
+
+➡️ The output is usually at `build/libs/xxx-version.jar`.
 </div></div>
 
 <hr class="sep-both">

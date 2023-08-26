@@ -101,26 +101,6 @@ File f = new File(url.toURI());
 
 * you should call `gradle run` to start your application or `gradle build` to build it.
 
-* I'm using this to create a .jar with `gradle jar`
-
-```groovy
-task makeJar(type: Jar) {
-    manifest {
-        // you may add attributes here
-        attributes(
-                'Main-Class': 'a.package.Main'
-        )
-    }
-    from {
-        configurations.runtimeClasspath.collect {
-            it.isDirectory() ? it : zipTree(it)
-        }
-    }
-    destinationDirectory.set(file("$buildDir"))
-    with jar
-}
-```
-
 * you can change the gradle JVM version
     * <https://stackoverflow.com/questions/18487406/how-do-i-tell-gradle-to-use-specific-jdk-version#answer-64220088>
     * in Intellij <https://www.jetbrains.com/help/idea/gradle-jvm-selection.html>
