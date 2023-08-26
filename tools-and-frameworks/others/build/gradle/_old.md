@@ -1,19 +1,5 @@
 # Gradle
 
-[Go back](index.md)
-
-You may use gradle to make your project more easy to manage like a Makefile. You will run one command downloading all libraries or running the project.
-
-I'm not up-to-date about the last practices but here is what I know. You should create some files in order for gradle to understand what it should do.
-
-You may check the documentation [here](https://docs.gradle.org/current/userguide/installation.html#installing_manually), since I'm using IntelliJ, I won't dig into command line or other IDEs stuffs.
-
-* `settings.gradle`
-
-```groovy
-rootProject.name = 'project-name'
-```
-
 * `build.gradle`
 
 ```groovy
@@ -143,16 +129,6 @@ File f = new File(url.toURI());
 <hr class="sr">
 
 ## Notes
-
-* you may use `gradle wrapper` (or `./gradlew wrapper`) to create the gradle jar, check out `/gradle/wrapper/gradle-wrapper.properties` (project root)
-
-```properties
-distributionBase=GRADLE_USER_HOME
-distributionPath=wrapper/dists
-distributionUrl=https\://services.gradle.org/distributions/gradle-6.9-bin.zip
-zipStoreBase=GRADLE_USER_HOME
-zipStorePath=wrapper/dists
-```
 
 * you should call `gradle run` to start your application or `gradle build` to build it.
 

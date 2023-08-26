@@ -25,6 +25,38 @@ $ ./gradlew wrapper --gradle-version 7.2 # change version
 
 <hr class="sep-both">
 
+## Gradle components
+
+<div class="row row-cols-md-2"><div>
+
+#### Project
+
+For Gradle, a project is an application or a library that we are building. A project may be composed of multiple subprojects.
+
+See also: `settings.gradle`.
+
+#### Build file
+
+The build file is where we define how a project is built. It contains **tasks**, **plugin**, and **dependencies**.
+
+See also: `build.gradle`.
+</div><div>
+
+#### Tasks
+
+A task is a simple action such as "compiling the code".
+
+#### Plugins
+
+Gradle plugins contain pre-defined tasks and additional features simplifying build file and task creation.
+
+#### Dependencies
+
+These are the other project that we need to import to build ours.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
