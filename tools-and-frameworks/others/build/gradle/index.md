@@ -1,8 +1,16 @@
 # Gradle
 
-**[Old notes](_old.md)**
+<div class="row row-cols-md-2"><div>
+
+Gradle is an automation tool that can be used to **build** 🏭, **test** 🧪, and **deploy** 🚀 your project. It's an alternative created to address problems with other tools such as **Maven** or **Ant**.
+
+Gradle uses a domain-specific language (DSL) based on the Groovy programming language for defining build scripts. It's possible to use [Kotlin](/programming-languages/high-level/oo/kotlin/index.md) instead of Groovy. 
+
+It's commonly used with [Java](/programming-languages/high-level/oo/java/_general/index.md) and [Kotlin](/programming-languages/high-level/oo/kotlin/index.md) projects.
+</div><div>
 
 ...
+</div></div>
 
 <hr class="sep-both">
 
