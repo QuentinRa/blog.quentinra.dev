@@ -204,7 +204,7 @@ sourceSets {
 }
 ```
 
-### Java run
+#### Java run
 
 You can create a task `run` to use `./gradlew run` and `./gradlew run --args="arg1 arg2 arg3"`.
 
@@ -234,6 +234,49 @@ jar {
 ```
 
 ➡️ The output is usually at `build/libs/xxx-version.jar`.
+</div></div>
+
+<hr class="sep-both">
+
+## gradle.properties
+
+<div class="row row-cols-md-2"><div>
+
+It will allow you to load some variables inside your `build.gradle` that are defined in `.properties` files.
+
+This is useful for projects that need different versions of plugins or dependencies based on the target. We simply edit `gradle.property`.
+
+```ini!
+# gradle.properties
+myVariable=value
+```
+
+```groovy
+// build.gradle
+print "$myVariable" // will print "value"
+```
+
+You may need to learn a bit about `Groovy`/`Kotlin` to write modular build files that uses your variables.
+</div><div>
+
+#### Saliman plugin
+
+If we often need to edit the configuration, we can use `saliman` plugin to easily swap from one `.properties` to another.
+
+```groovy
+id("net.saliman.properties") version "1.5.2"
+```
+
+We will declare `myVariable` as the one determining which `.property` file we will load. You can easily change which file is loaded by changing the variable's value.
+
+```ini!
+# gradle.properties
+# load gradle-$myVariable.properties
+propertiesPluginEnvironmentNameProperty=myVariable
+myVariable=11
+```
+
+Currently, `myVariable=11`, so we will load `gradle-11.properties`.
 </div></div>
 
 <hr class="sep-both">
@@ -297,12 +340,4 @@ application {
 }
 ```
 </div><div>
-
-```
-// Gradle Properties Plugin
-id("net.saliman.properties") version "1.5.2"
-
-propertiesPluginEnvironmentNameProperty = branchNumber
-branchNumber = 213
-```
 </div></div>
