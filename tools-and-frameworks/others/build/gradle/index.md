@@ -7,6 +7,9 @@ Gradle is an automation tool that can be used to **build** 🏭, **test** 🧪, 
 Gradle uses a domain-specific language (DSL) based on the Groovy programming language for defining build scripts. It's possible to use [Kotlin](/programming-languages/high-level/oo/kotlin/index.md) instead of Groovy. 
 
 It's commonly used with [Java](/programming-languages/high-level/oo/java/_general/index.md) and [Kotlin](/programming-languages/high-level/oo/kotlin/index.md) projects.
+
+* [Documentation](https://docs.gradle.org/current/userguide/userguide.html)
+* [Plugins](https://plugins.gradle.org/)
 </div><div>
 
 You can [download gradle here](https://gradle.org/releases/). It's only needed to initialize [gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) which is recommended to use. It allows you to use separate gradle versions per-project, and with it, **others don't need to install gradle to build/test/... the project**.
