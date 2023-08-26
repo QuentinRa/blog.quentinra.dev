@@ -99,6 +99,10 @@ repositories {
 dependencies {
     implementation 'xxx'     // needed to compile + run
     testImplementation 'xxx' // needed for tests
+    // import 'xxx', but do not import its dependency
+    implementation ('xxx') {
+        exclude group: 'org.json', module: 'json'
+    }
 }
 ```
 
@@ -132,6 +136,8 @@ plugins {
 
 #### Java dependencies
 
+You can find dependencies at [mvnrepository](https://mvnrepository.com/).
+
 ```groovy
 dependencies {
     // use JUnit 5
@@ -152,6 +158,8 @@ test {
 
 #### Java Compile Options
 
+Add the block below to set Java compiler and its options.
+
 ```groovy
 tasks.withType(JavaCompile).configureEach {
     // Compiler options
@@ -163,10 +171,9 @@ tasks.withType(JavaCompile).configureEach {
 }
 ```
 
-➡️ An alternative to `sourceCompatibility` and `targetCompatibility` is to use Java toolchain configuration.
+The `xxxCompatibility` attributes does not enforce that the compiler has the target version, e.g., JDK 18 can compile code targeting JDK 17. To enforce the use of JDK 17 when compiling, use:
 
 ```groovy
-// enforce the use of Java 17
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(17)
@@ -192,21 +199,53 @@ jar {
 
 <hr class="sep-both">
 
+## Local dependencies
+
+<div class="row row-cols-md-2"><div>
+
+#### Local project
+
+Assuming the root folder has a folder `mylib` with a `build.gradle`.
+
+* `settings.gradle`
+
+```groovy
+include 'mylib' // load
+```
+
+* `build.gradle`
+
+```groovy
+dependencies {
+    implementation project(':mylib')
+}
+```
+</div><div>
+
+#### Local jar
+
+This code can be used to include a local jar:
+
+```groovy
+repositories {
+    // ...
+    flatDir { dirs 'libs' }
+}
+
+dependencies {
+    // libs/mylib-1.02.jar
+    implementation 'com.example.mylib:mylib-1.02'
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
-
-```
-implementation ('xxx') {
-    exclude group: 'org.json', module: 'json'
-}
-```
-
-* There are notes everywhere 😭 (Java>Exe...)
-
-</div><div>
 
 * [jitpack](https://jitpack.io/)
 
@@ -217,6 +256,5 @@ id("net.saliman.properties") version "1.5.2"
 propertiesPluginEnvironmentNameProperty = branchNumber
 branchNumber = 213
 ```
-
-* Groovy
+</div><div>
 </div></div>

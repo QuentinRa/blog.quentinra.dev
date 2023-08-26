@@ -8,47 +8,6 @@ application {
 }
 ```
 
-<hr class="sr">
-
-## Dependencies
-
-You will add here the maven links format (since we are using maven) for your libraries.
-
-You will find the line you have to add at [https://mvnrepository.com/](https://mvnrepository.com/).
-
-In most cases you will use `implementation ...` since that something you need when coding (source) but you may use `testImplementation` is you need a library only for tests (and you have also Runtime,...).
-
-**Using another project**
-
-```groovy
-dependencies {
-    implementation project(':another')
-}
-```
-
-And in `settings.gradle`
-
-```groovy
-include 'another'
-```
-
-**Using a local jar**
-
-```groovy
-repositories {
-    // ...
-    // jar folder path
-    //noinspection GroovyAssignabilityCheck
-    flatDir { dirs 'libs' }
-}
-
-dependencies {
-    // jar without .jar in the name in the libs folder
-    implementation name: 'name-of-my-jar-1.0.0.0'
-}
-```
-
-
 <hr class="sl">
 
 ## Project Structure
