@@ -9,7 +9,18 @@ Gradle uses a domain-specific language (DSL) based on the Groovy programming lan
 It's commonly used with [Java](/programming-languages/high-level/oo/java/_general/index.md) and [Kotlin](/programming-languages/high-level/oo/kotlin/index.md) projects.
 </div><div>
 
-...
+You can [download gradle here](https://gradle.org/releases/). It's only needed to initialize [gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) which is recommended to use. It allows you to use separate gradle versions per-project, and with it, **others don't need to install gradle to build/test/... the project**.
+
+```ps
+$ cd my_project
+# generate the "gradle" folder (config + downloader)
+# generate gradlew (Unix) gradlew.bat (Windows)
+# generate .gradle (gradle binaries)
+$ gradle wrapper
+$ ./gradlew wrapper --gradle-version 7.2 # change version
+```
+
+⚠️ With Version Control, commit all files aside from `.gradle`.
 </div></div>
 
 <hr class="sep-both">
