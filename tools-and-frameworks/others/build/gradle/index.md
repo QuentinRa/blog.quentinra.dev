@@ -154,6 +154,22 @@ test {
 }
 ```
 
+### Java run
+
+You can create a task `run` to use `./gradlew run` and `./gradlew run --args="arg1 arg2 arg3"`.
+
+```groovy
+tasks.register('run', JavaExec) {
+    mainClass = 'org.example.Main' // set yours
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+// optional, set run options
+tasks.withType(JavaExec).configureEach {
+    systemProperty 'file.encoding', 'UTF-8'
+}
+```
+
 </div><div>
 
 #### Java Compile Options
@@ -248,6 +264,16 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [jitpack](https://jitpack.io/)
+* sourceSets, resourcesSets, access to resources
+
+```groovy
+application {
+    // if you have a module
+    mainModule.set('com.module.name')
+    mainClassName = "com.a.package.Main"
+}
+```
+</div><div>
 
 ```
 // Gradle Properties Plugin
@@ -256,5 +282,4 @@ id("net.saliman.properties") version "1.5.2"
 propertiesPluginEnvironmentNameProperty = branchNumber
 branchNumber = 213
 ```
-</div><div>
 </div></div>
