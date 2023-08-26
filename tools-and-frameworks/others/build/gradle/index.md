@@ -146,32 +146,6 @@ dependencies {
 }
 ```
 
-#### Java Tests
-
-```groovy
-test {
-    useJUnitPlatform()  // JUnit5
-}
-```
-
-### Java run
-
-You can create a task `run` to use `./gradlew run` and `./gradlew run --args="arg1 arg2 arg3"`.
-
-```groovy
-tasks.register('run', JavaExec) {
-    mainClass = 'org.example.Main' // set yours
-    classpath = sourceSets.main.runtimeClasspath
-}
-
-// optional, set run options
-tasks.withType(JavaExec).configureEach {
-    systemProperty 'file.encoding', 'UTF-8'
-}
-```
-
-</div><div>
-
 #### Java Compile Options
 
 Add the block below to set Java compiler and its options.
@@ -194,6 +168,55 @@ java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(17)
     }
+}
+```
+
+➡️ If you only need to set the encoding, it's simpler to use `compileJava.options.encoding = 'UTF-8'`.
+
+#### Java Tests
+
+```groovy
+test {
+    useJUnitPlatform()  // JUnit5
+}
+```
+</div><div>
+
+#### Java folder structure
+
+Gradle separate `source`, and `tests`. Both have a `resources` folder.
+
+* `src/main/java`: your java files
+* `src/resources/java`: your resources (images/...)
+* `src/test/java`: your tests
+* `src/resources/java`: resources only for your tests
+
+You can actually edit them however you want:
+
+```groovy
+sourceSets {
+    main.java.srcDirs = []
+    main.java.srcDirs += []
+    main.resources.srcDirs = []
+
+    test.java.srcDirs = []
+    test.resources.srcDirs = []
+}
+```
+
+### Java run
+
+You can create a task `run` to use `./gradlew run` and `./gradlew run --args="arg1 arg2 arg3"`.
+
+```groovy
+tasks.register('run', JavaExec) {
+    mainClass = 'org.example.Main' // set yours
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+// optional, set run options
+tasks.withType(JavaExec).configureEach {
+    systemProperty 'file.encoding', 'UTF-8'
 }
 ```
 
