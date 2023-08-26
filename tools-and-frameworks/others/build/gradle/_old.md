@@ -1,21 +1,6 @@
 # Gradle
 
-* `build.gradle`
-
 ```groovy
-plugins {
-    // ...
-}
-
-group = 'com.a.name'
-version = '1.0.0.0'
-description = 'A description'
-
-repositories { mavenCentral() }
-
-dependencies {
-}
-
 application {
     // if you have a module
     mainModule.set('com.module.name')
@@ -41,22 +26,6 @@ tasks.withType(JavaCompile) {
 //      languageVersion = JavaLanguageVersion.of(11)
 //    }
 // }
-```
-
-<hr class="sl">
-
-## Plugins
-
-I'm only importing here the line requested when I need something like
-
-```groovy
-plugins {
-    id 'idea'
-    id 'maven-publish'
-    id 'java'
-    id 'java-library'
-    id 'application'
-}
 ```
 
 <hr class="sr">

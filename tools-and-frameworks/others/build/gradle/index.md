@@ -57,6 +57,94 @@ These are the other project that we need to import to build ours.
 
 <hr class="sep-both">
 
+## Groovy Build file
+
+<div class="row row-cols-md-2"><div>
+
+#### Add plugins
+
+You can import plugins in the `plugins` block at the top.
+
+```groovy
+plugins {
+    id 'idea'
+    id 'maven-publish'
+    id 'java'
+    id 'java-library'
+    id 'application'
+}
+```
+
+#### Project metadata
+
+```groovy
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+description = 'Some description [...]' // optional
+```
+
+#### Project repositories
+
+```groovy
+repositories {
+    mavenCentral()
+}
+```
+</div><div>
+
+#### Add dependencies
+
+```groovy
+dependencies {
+    // only for tests files
+    testImplementation 'xxx'
+}
+```
+
+#### Custom tasks
+
+```groovy
+tasks.register('hello_world') {
+    doFirst {
+        println 'Hello, World!'
+    }
+    doLast {
+        println 'Bye, World!'
+    }
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Gradle for Java
+
+<div class="row row-cols-md-2"><div>
+
+```groovy
+plugins {
+    id 'java'
+}
+```
+
+```groovy
+dependencies {
+    // only for tests files
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+```
+</div><div>
+
+```groovy
+test {
+    useJUnitPlatform()
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
