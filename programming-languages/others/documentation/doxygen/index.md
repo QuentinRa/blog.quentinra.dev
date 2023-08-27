@@ -36,18 +36,31 @@ Open the `index.html` file in your browser <small>(ex: double-click on it)</smal
 
 <div class="row row-cols-md-2"><div>
 
+The Doxyfile allows you to define doxygen settings. You can edit it manually, or you can use `doxywizard`.
+
+```ps
+$ doxywizard Doxyfile
+```
+
+The only setting that is required to set is **INPUT**. You will most likely set **EXTRACT_ALL** and maybe **GENERATE_TREEVIEW** too.
+
+
 #### Project metadata
 
-* `PROJECT_NAME = "..."` : project name
-* `PROJECT_NUMBER = "..."` : a version such as `0.0.5`
-* `PROJECT_BRIEF = "desc"` : project description
-* `PROJECT_LOGO = "path"` : project logo
+* `PROJECT_NAME = "..."`: project name
+* `PROJECT_NUMBER = "..."`: a version such as `0.0.5`
+* `PROJECT_BRIEF = "desc"`: project description
+* `PROJECT_LOGO = "path"`: project logo
 
-#### Verbose
+#### HTML settings
 
-* `WARN_IF_UNDOCUMENTED` : show warning of not
-* `WARN_IF_DOC_ERROR` : show warning of not
-* `QUIET = YES` : not verbose, keep it quiet
+* `USE_MATHJAX = TRUE`: enable mathjax.js (for LaTeX)
+* `GENERATE_TREEVIEW = YES`: add a navigation panel
+* `LAYOUT_FILE = "path"`: a layout to change documentation layout
+* `HTML_HEADER = ./header.html`: add your own `header.html`
+* `HTML_FOOTER = ./footer.html`: add your own `footer.html`
+* `HTML_EXTRA_STYLESHEET = style.css`: load a CSS file
+* `HTML_EXTRA_FILES = file.js`: load a JS file
 </div><div>
 
 #### Input/Output settings
@@ -56,25 +69,23 @@ Input
 
 * `INPUT = path` and `INPUT += path`: you need to add your source folders here for their documentation to be generated.
 * `RECURSIVE = YES`: recursively browser input folders
+* `EXTRACT_ALL = YES`: add to the website entries with no documentation <small>(yet?)</small>
 
 Output
 
-* `OUTPUT_DIRECTORY = "path"` : generate website folder
-* `OUTPUT_LANGUAGE = "English"` : documentation language
+* `OUTPUT_DIRECTORY = "path"`: generate website folder
+* `OUTPUT_LANGUAGE = "English"`: documentation language
 
 Others
 
-* `EXCLUDE = path` and `EXCLUDE += path` : exclude some path
-* `IMAGE_PATH = path` : to use image in your documentation, the folder with images must be added to IMAGE_PATH.
+* `EXCLUDE = path` and `EXCLUDE += path`: exclude some path
+* `IMAGE_PATH = path`: to use image in your documentation, the folder with images must be added to IMAGE_PATH.
 
-#### HTML settings
+#### Verbose
 
-* `USE_MATHJAX = TRUE` : enable mathjax.js (for LaTeX)
-* `LAYOUT_FILE = "path"` : a layout to change documentation layout
-* `HTML_HEADER = ./header.html` : add a header, `header.html` is a file that you created
-* `HTML_FOOTER = ./footer.html` : add a footer, `footer.html` is a file that you created
-* `HTML_EXTRA_STYLESHEET = style.css` : add a CSS file
-* `HTML_EXTRA_FILES = file.js` : add a JS file
+* `WARN_IF_UNDOCUMENTED`: show warning of not
+* `WARN_IF_DOC_ERROR`: show warning of not
+* `QUIET = YES`: not verbose, keep it quiet
 </div></div>
 
 <hr class="sep-both">
