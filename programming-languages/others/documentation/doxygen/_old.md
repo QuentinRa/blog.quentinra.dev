@@ -1,26 +1,5 @@
 # In this course
 
-Doxygen is working like the Javadoc, the JSDoc, or a lot of tools allowing you to write documentation and generate a website from it. Doxygen is covering a lot of languages such as C, C++, C#, Java, PHP, and Python.
-
-* you will learn how to use write `doxygen` documentation
-* how to generate documentation with `doxygen`, so how to write a `Doxyfile`
-* how to generate GREAT documentation with `doxygen` (with a beautiful theme)
-* some advice about writing documentation
-
-Based on `doxygen` version `1.9.1`.
-
-<hr class="sr">
-
-## Starting with Doxygen
-
-Doxygen is working like the Javadoc in Java, if you know what I mean.
-
-* write documentation using a special syntax
-* use a command to generates a website
-* open a file called `index.html` in your browser and check it out!
-
-Here is [my tutorial to install Doxygen](install.md), but if **needed** you can check their documentation here [doxygen.nl](https://www.doxygen.nl/index.html) (for me, it's a bit **unreadable** and your documentation should not be like that, hopefully).
-
 <hr class="sl">
 
 ## Write documentation

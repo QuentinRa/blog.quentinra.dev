@@ -642,4 +642,5 @@ Stuff that I found, but never read/used yet.
 * [googlemock](https://github.com/google/googletest/tree/main/googlemock)
 * [boost](https://theboostcpplibraries.com)
 * jason turner c++
+* [vcpkg](https://vcpkg.io/en/)
 </div></div>
