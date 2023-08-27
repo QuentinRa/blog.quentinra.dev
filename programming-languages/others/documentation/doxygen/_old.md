@@ -1,8 +1,4 @@
-# In this course
-
-<hr class="sl">
-
-## Write documentation
+# Write documentation
 
 The main idea is writing comments like this one in a `.h`
 
@@ -29,53 +25,6 @@ Note that `\file`, `\author`, ... are a list of `keywords` that will allow `doxy
 
 * [Write documentation in C](docs/c.md)
 * [Write documentation in Object-Oriented Languages](docs/oo.md)
-
-All tags can be found in this [great reference sheet (PDF)](https://www.mitk.org/images/1/1c/BugSquashingSeminars$2013-07-17-DoxyReference.pdf).
-
-<hr class="sr">
-
-## Generate your documentation website
-
-You will need a file called `Doxyfile` to compile your documentation.
-
-You can create one with default values with `doxygen -g`.
-
-When created, you should check these lines and modify them if wanted
-
-* `PROJECT_NAME = "..."` : project name
-* `PROJECT_NUMBER = "..."` : a version such as `0.0.5`
-* `PROJECT_BRIEF = "desc"` : project description
-* `PROJECT_LOGO = "path"` : project logo
-* `OUTPUT_DIRECTORY = "path"` : where the **generated website** is stored.
-* `OUTPUT_LANGUAGE = "English"` : documentation language
-* `QUIET = YES` : **do not show hundreds of messages**
-* `WARN_IF_UNDOCUMENTED` : show warning of not
-* `WARN_IF_DOC_ERROR` : show warning of not
-* `INPUT = path` : **add a file/folder**. Only these may  have a documentation generated, unless the file extension is excluded.
-* `INPUT += path` : **add more files/folders**. Each time you want to add one, add this line.
-* `RECURSIVE = YES` : **recursive search** of INPUT folders
-* `EXCLUDE = path` : exclude some path
-* `IMAGE_PATH = path` : if you do have a folder of images that you use in your documentation.
-  
-And here we go for the `HTML` specifics options
-
-* `LAYOUT_FILE = "path"` : a layout to change documentation layout
-* `HTML_HEADER = ./header.html` : add a header, `header.html` is a file that you created
-* `HTML_FOOTER = ./footer.html` : add a footer, `footer.html` is a file that you created
-* `HTML_EXTRA_STYLESHEET = style.css` : add a CSS file
-* `HTML_EXTRA_FILES = file.js` : add a JS file
-
-and if you want to enable latex
-
-* `USE_MATHJAX = TRUE` : enable mathjax.js
-
-then you have to use
-
-```bash
-doxygen Doxyfile
-```
-
-To generates your documentation. Check your `OUTPUT_DIRECTORY` for the index.html that you must open in your browser to look at your HTML documentation.
 
 <hr class="sl">
 
