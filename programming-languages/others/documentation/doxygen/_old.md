@@ -21,8 +21,6 @@ The main idea is writing comments like this one in a `.h`
 
 Note that `\file`, `\author`, ... are a list of `keywords` that will allow `doxygen` to give some style to your documentation. They start either with a `\` or a `@` like in `Java`.
 
-> Also before starting, note that you will have to say what you are documenting, before actually starting the documentation. An example would be above, you must use a `\file` to say that you are documenting this file. So you would have to use `\enum` before documenting an enum etc.
-
 * [Write documentation in C](docs/c.md)
 * [Write documentation in Object-Oriented Languages](docs/oo.md)
 

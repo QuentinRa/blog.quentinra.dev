@@ -83,9 +83,62 @@ Others
 
 #### Verbose
 
-* `WARN_IF_UNDOCUMENTED`: show warning of not
-* `WARN_IF_DOC_ERROR`: show warning of not
+* `WARN_IF_UNDOCUMENTED`: warnings for missing documentation
+* `WARN_IF_DOC_ERROR`: warnings for invalid documentation
 * `QUIET = YES`: not verbose, keep it quiet
+</div></div>
+
+<hr class="sep-both">
+
+## Getting started
+
+<div class="row row-cols-md-2"><div>
+
+#### File documentation
+
+Unless using `EXTRACT_ALL`, **doxygen comments** that are **in a file with no documentation attached to it** are **ignored** ⚠️.
+
+```cpp
+/*!
+* \file main.cpp
+*/
+```
+
+➡️ This kind of comment is usually at the top of each file.
+
+<br>
+
+#### Workflow
+
+Doxygen will parse all comments that use its syntax. Inside each comment, we can write **tags** 🏷️.
+
+Tags can use either `\someTag` or `@someTag` syntax.
+
+You can document absolutely everything, from `variables` to `files`, passing by `functions`, `classes`, `structures`, and `imports`...
+</div><div>
+
+#### Doxygen comments
+
+Doxygen comments are those using one of the syntax below:
+
+```cpp
+/**
+* Block Comment
+* Above the target
+*/
+xxx
+
+/*!
+* Block Comment
+* Above the target
+*/
+xxx
+
+//! Inline Comment | Above the target
+xxx
+
+xxx //!< Inline Comment | Same line as the target
+```
 </div></div>
 
 <hr class="sep-both">
