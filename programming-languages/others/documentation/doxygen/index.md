@@ -159,6 +159,7 @@ $ cat DoxyfileMCSS
 GENERATE_HTML           = NO
 GENERATE_XML            = YES
 XML_PROGRAMLISTING      = NO
+XML_NS_MEMB_FILE_SCOPE  = YES
 $ python3 m.css/documentation/doxygen.py DoxyfileMCSS
 ```
 
@@ -182,6 +183,23 @@ documentation
 plugins
 css
 ```
+
+<details class="details-n">
+<summary>Customize the navbar 🎧</summary>
+
+The navbar is defined in two variables. You can use links or use a pre-defined name such as `pages`, `namespaces`, `annotated` or `files`.
+
+```js!
+M_LINKS_NAVBAR1 = \
+"<a href=\"some_html.html\">Some text</a>" \
+"pages" \
+"namespaces" \
+"annotated"
+M_LINKS_NAVBAR2 = \
+"files" \
+"<a href=\"a_link\">GitHub</a>"
+```
+</details>
 </div></div>
 
 <hr class="sep-both">

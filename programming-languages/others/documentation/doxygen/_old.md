@@ -24,49 +24,12 @@ Note that `\file`, `\author`, ... are a list of `keywords` that will allow `doxy
 * [Write documentation in C](docs/c.md)
 * [Write documentation in Object-Oriented Languages](docs/oo.md)
 
-<hr class="sl">
-
-## Make your documentation beautiful
-
-```bash
-# used to become a god
-# style\doxygen.py DoxyfileCSS
-    
-# include original file
-@INCLUDE                = Doxyfile
-    
-# modify some values
-GENERATE_HTML           = NO
-GENERATE_LATEX          = NO
-GENERATE_XML            = YES
-XML_PROGRAMLISTING      = NO
-XML_NS_MEMB_FILE_SCOPE  = YES
-    
-# If you want to change the navbar
-# to find a special name such as a_page.html
-# check the usual output folder then link
-# 
-# M_LINKS_NAVBAR1 = \
-# "<a href=\"a_page.html\">User documentation</a>" \
-# "annotated"
-# M_LINKS_NAVBAR2 = \
-# "files" \
-# "<a href=\"a_page.html\">Functions</a>" \
-# "<a href=\"un_lien">GitHub</a>"
-```
-
-* on Linux `chmod +x style/doxygen.py`
-* then do `style\doxygen.py DoxyfileCSS` (or `/` on Linux)
-* check your usual output folder for your `ìndex.html`
-
 <hr class="sr">
 
 ## Make your documentation great
 
 I think we should think carefully about how to make our documentation. Here is some advice, I hope it helps you find ideas about what would make documentation great.
 
-* document `imports`, one line, why are you using them
-* document `variables`, at their initialization, why do you need it
 * group some part of your code (all `getters`, all `setters`, all `utilities`, all `constructors`, ...)
 
 * do **not** write `@return int, a number` or `@param int a number`: in most cases it's useless
