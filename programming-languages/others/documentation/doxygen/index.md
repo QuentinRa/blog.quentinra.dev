@@ -143,6 +143,49 @@ xxx //!< Inline Comment | Same line as the target
 
 <hr class="sep-both">
 
+## Doxygen m.css theme
+
+<div class="row row-cols-md-2"><div>
+
+A popular Doxygen theme is [m.css](https://github.com/mosra/m.css) 😎. You can see what it looks like by browsing the [magnum](https://doc.magnum.graphics/magnum/) project documentation.
+
+The documentation can be found [here](https://mcss.mosra.cz/documentation/doxygen/). You'll need [Python](/programming-languages/high-level/scripting/python/index.md).
+
+```ps
+$ pip3 install jinja2 Pygments
+$ git clone http://github.com/mosra/m.css
+$ cat DoxyfileMCSS
+@INCLUDE                = Doxyfile
+GENERATE_HTML           = NO
+GENERATE_XML            = YES
+XML_PROGRAMLISTING      = NO
+$ python3 m.css/documentation/doxygen.py DoxyfileMCSS
+```
+
+➡️ Note that `doxygen` must be in the PATH or the script will fail.
+
+⚠️ **M.CSS** ignores the **EXTRACT_ALL** option. You need to comment everything, including directories; otherwise the view will be empty.
+</div><div>
+
+🫧 You can clean `m.css` folder and only keep:
+
+```text!
+documentation
+├── doxygen.py
+├── favicon-dark.png
+├── favicon-light.png
+├── __init__.py
+├── python.py
+├── search.js
+├── _search.py
+└── templates
+plugins
+css
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

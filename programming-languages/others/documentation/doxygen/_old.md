@@ -28,26 +28,6 @@ Note that `\file`, `\author`, ... are a list of `keywords` that will allow `doxy
 
 ## Make your documentation beautiful
 
-If you want to have beautiful documentation such as this one [magnum](https://doc.magnum.graphics/magnum/) then here is my tutorial, but you got the official one here [m.css](https://mcss.mosra.cz/documentation/doxygen/) that will **quite** help you.
-
-* download these files from [https://github.com/mosra/m.css](https://github.com/mosra/m.css)
-
-  * folder `documentation/templates`
-  * files `documentation/__init__.py`, `documentation/_search.py`, `documentation/doxygen.py`, and `documentation/python.py`
-  * file `documentation/favicon-dark.png` and `documentation/favicon-light.png`
-  * file `documentation/search.js`
-  * folder `plugins`
-  * folder `css`
-  
-Put everything in a `style` folder, mine looks like this [style folder](https://github.com/lgs-games/prim/tree/master/version_c/style) or this screen <a target="_blank" href="/courses/tools/doxygen/mcss_folder.png">style folder</a>.
-
-Next
-
-* if `python` and `pip` are not installed, then install them
-* `pip3 install jinja2 Pygments`
-* create `DoxyfileCSS`
-* 
-
 ```bash
 # used to become a god
 # style\doxygen.py DoxyfileCSS
