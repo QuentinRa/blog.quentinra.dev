@@ -25,6 +25,31 @@ Mostly for user-documentation, you can use these:
 
 <hr class="sep-both">
 
+## Documentation tips
+
+<div class="row row-cols-md-2"><div>
+
+**You may do** ✅
+
+* 😍 Provide a [README.md](/tools-and-frameworks/vcs/git/files/readme.md)
+* 🔐 For imports, you may indicate why they are used
+* 🛣️ For variables, their indented usage
+* 🧼 Group similar functions <small>(getter, setters, constructors, visibility...)</small>
+* 🚀 Do provide example code calling your function/class with different use cases or different arguments/program states
+* ❓ Provide a clear description of the purpose of each file
+</div><div>
+
+**You shouldn't do** ❌
+
+* 🧐 Write something useless, such as "the parameter is an integer" when the type is explicit <small>(int xxx)</small>.
+* 🥱 Write documentation for trivial getters
+* ☠️ Copy-paste, use `@see` or something more appropriate
+* 🪦 Don't add `@version` or `@date` unless they will be updated
+* 🕳️ Don't forget normal comments along user documentation
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
