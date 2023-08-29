@@ -18,7 +18,7 @@ This section is inspired from the [documentation](https://complianceascode.readt
 
 ```text!
 [...]
-option(SSG_PRODUCT_PARROT "If enabled, the openSUSE SCAP content will be built" ${SSG_PRODUCT_DEFAULT})
+option(SSG_PRODUCT_PARROT "If enabled, the Parrot SCAP content will be built" ${SSG_PRODUCT_DEFAULT})
 [...]
 message(STATUS "Parrot Linux: ${SSG_PRODUCT_PARROT}")
 [...]

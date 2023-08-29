@@ -204,6 +204,33 @@ M_LINKS_NAVBAR2 = \
 
 <hr class="sep-both">
 
+## Common tags
+
+<div class="row row-cols-md-2"><div>
+
+#### File and folders
+
+You can use:
+
+* `\file filename`: make a file visible in the documentation. It's required if you have functions within this file.
+* `\dir dirname`: make a folder visible in the documentation. 
+
+For directories, we usually create a file `package.dox` and we put some doxygen comment inside using `\dir` tag.
+
+#### Metadata
+
+You can use:
+
+* `\author name`: use it multiple times, or provide a list of authors
+* `\version version`: some version, any format
+* `\date d`: some date, any format
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
