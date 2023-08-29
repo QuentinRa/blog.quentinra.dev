@@ -273,12 +273,22 @@ And `\return` for the return type:
 #define NAME VALUE
 ```
 
+#### Structure
 
-</div><div>
+```c
+/*!
+* \struct NAME
+*/
+struct NAME {
+    int id; //!< brief description of this attribute
+    char* key; /*!< @brief
+        * This is a long description of this attribute
+        * that I'm writing here.
+        */
+};
+```
 
 #### Enum
-
-For an enum, use:
 
 ```c
 /**
@@ -288,20 +298,35 @@ enum NAME {
     A_VALUE //!< brief description
 };
 ```
+</div><div>
 
-If there is a typedef, use:
+#### typedef
+
+It's quite common to use `typedef` with `struct` or `enum`. In such case, you must add `\typedef` must be **before** `\enum`/`struct`/...
 
 ```c
 /**
  * \typedef NEW_NAME
  * \enum NAME
  */
-typedef enum NAME {
-    // ...
-} NEW_NAME;
+typedef enum NAME {} NEW_NAME;
+
+/*!
+* \typedef NEW_NAME
+* \struct NAME
+*/
+typedef struct NAME {
+} NEW_NAME; //!< brief description of this struct
 ```
 
-⚠️ `\typedef` must be **before** `\enum`.
+It the declaration and the typedef are separated:
+
+```c
+/*!
+* \typedef NEW_NAME
+*/
+typedef struct NAME NEW_NAME;
+```
 </div></div>
 
 <hr class="sep-both">
