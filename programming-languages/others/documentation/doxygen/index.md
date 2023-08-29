@@ -128,16 +128,12 @@ Doxygen comments are those using one of the syntax below:
 */
 xxx
 
-/*!
-* Block Comment
-* Above the target
-*/
-xxx
-
 //! Inline Comment | Above the target
 xxx
 
 xxx //!< Inline Comment | Same line as the target
+xxx /*!< Inline Comment | Same line as the target
+    May be on multiple lines. */
 ```
 </div></div>
 
@@ -234,6 +230,19 @@ Code-wise, you can use:
 * `\note desc`: used to add informational notes
 </div><div>
 
+#### Descriptions
+
+Every comment may have a brief and/or a long description. The long description can be written anywhere within the comment.
+
+```cpp
+/**
+* \brief short description
+*
+* This is a long description
+* that may be on multiple lines.
+*/
+```
+
 #### Functions
 
 You can use `\param` for arguments:
@@ -246,6 +255,53 @@ You can use `\param` for arguments:
 And `\return` for the return type:
 
 * `\return ...`: describe what's returned by the function
+</div></div>
+
+<hr class="sep-both">
+
+## Tags mainly used in C
+
+<div class="row row-cols-md-2"><div>
+
+#### Define
+
+```c
+/**
+* \def NAME Brief description.
+* Detailed description.
+*/
+#define NAME VALUE
+```
+
+
+</div><div>
+
+#### Enum
+
+For an enum, use:
+
+```c
+/**
+ * \enum NAME
+ */
+enum NAME {
+    A_VALUE //!< brief description
+};
+```
+
+If there is a typedef, use:
+
+```c
+/**
+ * \typedef NEW_NAME
+ * \enum NAME
+ */
+typedef enum NAME {
+    // ...
+} NEW_NAME;
+```
+
+⚠️ `\typedef` must be **before** `\enum`.
 </div></div>
 
 <hr class="sep-both">
