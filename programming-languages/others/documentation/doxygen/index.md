@@ -224,9 +224,28 @@ You can use:
 * `\author name`: use it multiple times, or provide a list of authors
 * `\version version`: some version, any format
 * `\date d`: some date, any format
+
+#### Semantic
+
+Code-wise, you can use:
+
+* `\deprecated why`: if deprecated and why
+* `\bug desc`: if there is a bug, add a description
+* `\note desc`: used to add informational notes
 </div><div>
 
-...
+#### Functions
+
+You can use `\param` for arguments:
+
+* `\param name`: same as a parameter in
+* `\param[in] name`: read-only parameter, may be `const`
+* `\param[out] name`: a parameter that will be modified
+* `\param[in,out] name`: a parameter that we may read and modify
+
+And `\return` for the return type:
+
+* `\return ...`: describe what's returned by the function
 </div></div>
 
 <hr class="sep-both">

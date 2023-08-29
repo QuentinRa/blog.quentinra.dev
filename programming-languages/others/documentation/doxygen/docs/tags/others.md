@@ -1,16 +1,4 @@
-# Other tags
-
-[Go back](../c.md)
-
-These can be used almost everywhere, but you don't see them often
-
-* `\deprecated why`: if deprecated and why
-* `\bug desc`: if bug found and a description
-* `\note desc`: if you want to write a note with a description
-
-<hr class="sr">
-
-## Test-related tags
+# Test-related tags
 
 An invariant is something (variable, property, ...) whose value after the call of a function, is the same as it was before the call.
 

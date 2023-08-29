@@ -12,7 +12,7 @@ You will use these not only in C but everywhere else, but I wrote `C` since they
 * [For a define](tags/define.md)
 * [For a variable](tags/variable.md)
 * [For a function](tags/function.md)
-* [Others tags](tags/others.md)
+* [Tests](tags/others.md)
 
 <hr class="sr">
 
