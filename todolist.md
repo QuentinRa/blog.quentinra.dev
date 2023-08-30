@@ -18,9 +18,8 @@ List of courses that have note which were not added yet.
 
 **Tools and Frameworks**
 
-* (review/typos) cmake, VSCode, Rider, PHPStorm, VCS
+* (review/typos) cmake, VSCode, Rider, PHPStorm, VCS, Gradle
 * Pandora
-* **Gradle**
 * JetBrains plugin development
 * Project > Modeling, Tools?
 
@@ -98,21 +97,6 @@ to-dos here?
 
 ➡️ See [Modern web](https://modern-web.dev/guides/)<br>
 ➡️ See [Google Code Labs](https://codelabs.developers.google.com/) (Firebase, Flutter...)
-
-**Templating**
-
-* [Twig](https://github.com/twigphp/Twig)
-* [pug](https://github.com/pugjs/pug)
-* [vash](https://github.com/kirbysayshi/vash) (0.5k ⭐)
-* [hogan](https://github.com/twitter/hogan.js/)
-* [express-handlebars](https://github.com/express-handlebars/express-handlebars)
-* [ejs](https://github.com/mde/ejs)
-* [haml](https://haml.info/)
-* [mustache](https://github.com/mustache/mustache)
-* [dustjs](https://github.com/linkedin/dustjs)
-* [freehtml5](https://freehtml5.co/)
-* [html5boilerplate](https://html5boilerplate.com/)
-
 </div><div>
 
 **Random**
@@ -216,7 +200,7 @@ Websites that I found, but never used yet.
 * [logrocket](https://blog.logrocket.com/) <small>(React/Nest, Node, Sidekick/Bun, Kotlin, Rust...)</small>
 * [futurestud](https://futurestud.io/) <small>(Android, Node, nginx...)</small>
 * [ezekielekunola](https://www.blog.ezekielekunola.com/) <small>(Vue/React...)</small>
-* [buddy.works](https://buddy.works/tutorials) <small>(Vue/React/Mocha/..., Node, Docker...)</small>****
+* [buddy.works](https://buddy.works/tutorials) <small>(Vue/React/Mocha/..., Node, Docker...)</small>
 * [sitepen](https://www.sitepen.com/blog) <small>(Typescript, Jest, Deno, Angular...)</small>
 * [unclebigbay](https://unclebigbay.com/) <small>(React, JS, CSS)</small>
 * [freecodecamp](https://www.freecodecamp.org/news) <small>(React, JS)</small>
