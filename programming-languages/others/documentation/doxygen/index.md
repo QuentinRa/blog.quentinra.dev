@@ -229,6 +229,13 @@ Code-wise, you can use:
 * `\deprecated why`: if deprecated and why
 * `\bug desc`: if there is a bug, add a description
 * `\note desc`: used to add informational notes
+
+#### References
+
+* `\see something`: tag to reference something
+* `{@link something}`: macro to reference something in a description
+
+`something` could be a file, a folder, a class...
 </div><div>
 
 #### Descriptions
@@ -237,12 +244,14 @@ Every comment may have a brief and/or a long description. The long description c
 
 ```cpp
 /**
-* \brief short description
-*
-* This is a long description
-* that may be on multiple lines.
-*/
+ * \brief short description
+ *
+ * This is a long description
+ * that may be on multiple lines.
+ */
 ```
+
+➡️ You can use [HTML](/programming-languages/web/html/index.md) in descriptions.
 
 #### Functions
 
@@ -268,9 +277,9 @@ And `\return` for the return type:
 
 ```c
 /**
-* \def NAME Brief description.
-* Detailed description.
-*/
+ * \def NAME Brief description.
+ * Detailed description.
+ */
 #define NAME VALUE
 ```
 
@@ -278,8 +287,8 @@ And `\return` for the return type:
 
 ```c
 /*!
-* \struct NAME
-*/
+ * \struct NAME
+ */
 struct NAME {
     int id; //!< brief description of this attribute
     char* key; /*!< @brief
@@ -313,9 +322,9 @@ It's quite common to use `typedef` with `struct` or `enum`. In such case, you mu
 typedef enum NAME {} NEW_NAME;
 
 /*!
-* \typedef NEW_NAME
-* \struct NAME
-*/
+ * \typedef NEW_NAME
+ * \struct NAME
+ */
 typedef struct NAME {
 } NEW_NAME; //!< brief description of this struct
 ```
@@ -324,8 +333,8 @@ It the declaration and the typedef are separated:
 
 ```c
 /*!
-* \typedef NEW_NAME
-*/
+ * \typedef NEW_NAME
+ */
 typedef struct NAME NEW_NAME;
 ```
 </div></div>
@@ -375,6 +384,36 @@ class Child : public Parent {}
 class XXXInterface {
     virtual void xxx() = 0;
 };
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Additional tags
+
+<div class="row row-cols-md-2"><div>
+
+#### Design By Contract
+
+These tags are related to [Design By Contract](/tools-and-frameworks/others/testing/methodology/index.md#design-by-contract):
+
+```c!
+/**
+ * \pre describe preconditions
+ * \post describe post conditions
+ * \invariant describe invariants
+ */
+```
+</div><div>
+
+#### Test cases
+
+You can use `\test` to document test cases or test-related information.
+
+```c!
+/**
+ * \test xxx
+ */
 ```
 </div></div>
 
