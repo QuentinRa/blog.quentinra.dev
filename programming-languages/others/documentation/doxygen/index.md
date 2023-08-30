@@ -210,8 +210,9 @@ You can use:
 
 * `\file filename`: make a file visible in the documentation. It's required if you have functions within this file.
 * `\dir dirname`: make a folder visible in the documentation. 
+* `\package dirname`: folders are called `packages` in object-oriented
 
-For directories, we usually create a file `package.dox` and we put some doxygen comment inside using `\dir` tag.
+For directories, we usually create a file `index.dox` and we put some doxygen comment inside using `\dir` tag.
 
 #### Metadata
 
@@ -326,6 +327,54 @@ It the declaration and the typedef are separated:
 * \typedef NEW_NAME
 */
 typedef struct NAME NEW_NAME;
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Object-oriented tags
+
+<div class="row row-cols-md-2"><div>
+
+#### Classes
+
+```cpp
+/**
+ * \class ClassName
+ */
+class ClassName {};
+```
+
+#### Exceptions
+
+```cpp
+/**
+ * \throws XXXException reason
+ */
+void xxx() {
+    throw XXXException();
+}
+```
+</div><div>
+
+#### Inheritance
+
+```cpp
+/**
+ * \inheritance{Parent}
+ */
+class Child : public Parent {}
+```
+
+#### Interfaces
+
+```cpp
+/**
+ * \interface XXXInterface
+ */
+class XXXInterface {
+    virtual void xxx() = 0;
+};
 ```
 </div></div>
 
