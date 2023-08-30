@@ -1,27 +1,11 @@
 # 🪨 JavaScript Libraries 🪨
 
-A list of libraries made by companies/users, that may be used both for websites (JavaScript), or servers (Node.js/...).
-
-<hr class="sep-both">
-
-<p class="text-center display-5">👻 To-do 👻</p>
-
-<hr class="sep-both">
-
-## 🔎 General 🔎
-
 <div class="row row-cols-md-2 mt-4"><div>
 
 Special: [emberjs](https://github.com/emberjs) (many solutions).
 
-#### JavaScript environment
-
-* [neutralinojs](https://github.com/neutralinojs/neutralinojs) (6.3k ⭐, alternative to Electron)
-* [tauri](https://github.com/tauri-apps/tauri) (56k ⭐, alternative to Electron)
-
 #### Package Managers
 
-* [atmospherejs](https://atmospherejs.com/) (meteor, seems dead+no Github)
 * [lerna](https://lerna.js.org/) (34.1k ⭐)
 
 #### HTTP clients
