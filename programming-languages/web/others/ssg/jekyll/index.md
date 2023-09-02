@@ -39,6 +39,55 @@ $ jekyll serve
 
 <hr class="sep-both">
 
+## Jekyll basics
+
+<div class="row row-cols-md-2"><div>
+
+#### Jekyll Header
+
+The first lines of every HTML file are Jekyll header:
+
+```html!
+---
+title: XXX
+layout: default
+---
+```
+
+#### Jekyll Include
+
+Inside every HTML, you can use `include` to load another HTML:
+
+```js!
+{% include some_folder/xxx.html %}
+```
+
+#### Jekyll Include Arguments
+
+You'll usually pass arguments to the included file:
+
+```js!
+{% include _partial/xxx.html title="xxx"
+            content="Can be on
+            multiple lines"
+            icon="You must escape \" quotes"
+            %}
+```
+
+Inside the included file, use `include.` to access them:
+
+```html!
+<img src="{{ include.icon }}"></i>
+<h3>{{ include.title }}</h3>
+<p>{{ include.content }}</p>
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
