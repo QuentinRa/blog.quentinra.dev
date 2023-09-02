@@ -238,12 +238,13 @@ class XXXParser extends AbstractBlockContinueParser  implements BlockContinuePar
         // each time you accept to continue
         // parsing, this method is called
         // with the line that you need to parse
+        $this->block->number_of_lines++; // example
     }
     
     public function closeBlock(): void
     {
-        // deal with any logic here
-        // called before parseInlines
+        // for instance, you may have to
+        // process the last element here
     }
     
     public function canHaveLazyContinuationLines(): bool
@@ -253,4 +254,26 @@ class XXXParser extends AbstractBlockContinueParser  implements BlockContinuePar
 }
 ```
 </details>
+
+As you'll create your own renderer, you can do anything you want, such as creating new attributes or methods in `XXX`.
+
+```php!
+class XXX extends AbstractBlock
+{
+    public int $number_of_lines = 0;
+}
+```
+
+Here is how you can get started with the renderer:
+
+```php!
+class XXXRenderer implements NodeRendererInterface
+{
+    public function render(Node $node, ChildNodeRendererInterface $childRenderer): ?HtmlElement {
+        XXX::assertInstanceOf($node);
+        var_dump($node->number_of_lines); // ok
+        return null; // todo
+    }
+}
+```
 </div></div>
