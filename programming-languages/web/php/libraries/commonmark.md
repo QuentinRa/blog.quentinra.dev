@@ -183,10 +183,74 @@ class BootstrapVerticalTabStartParser implements BlockStartParserInterface
     }
 }
 ```
-
-
-
 </div><div>
 
-...
+#### Parser
+
+The logic of a parser can be explained as follows:
+
+* `tryContinue` is called for you to check if the current line is still within the block
+
+* `addLine` is then called for you to parse the Markdown
+
+* `closeBlock` when you parsed all of your lines
+
+Then, `parseInlines` is called. This method will allow you to parse inline symbols such as `**bold**` that were inside of your block.
+
+<details class="details-n">
+<summary>XXXParser sample code</summary>
+
+```php!
+class XXXParser extends AbstractBlockContinueParser  implements BlockContinueParserWithInlinesInterface {
+    private XXX $block;
+
+    public function __construct(Environment $environment)
+    {
+        $this->block = new XXX();
+    }
+
+    public function getBlock(): AbstractBlock
+    {
+        return $this->block;
+    }
+    
+    public function tryContinue(Cursor $cursor, BlockContinueParserInterface $activeBlockParser): ?BlockContinue
+    {
+        // return either by using the cursor methods
+        // to find if you're done or not
+        return BlockContinue::finished();  // done
+        return BlockContinue::at($cursor); // continue
+    }
+
+    public function parseInlines(InlineParserEngineInterface $inlineParser): void
+    {
+        // Ex: store in a Paragraph the line
+        // After parsing its inline elements.
+        // Then store it as a child of our block
+        $xxx = "some content you **parsed**";
+        $p = new Paragraph();
+        $inlineParser->parse($xxx, $p);
+        $this->block->appendChild($p);
+    }
+    
+    public function addLine(string $line): void
+    {
+        // each time you accept to continue
+        // parsing, this method is called
+        // with the line that you need to parse
+    }
+    
+    public function closeBlock(): void
+    {
+        // deal with any logic here
+        // called before parseInlines
+    }
+    
+    public function canHaveLazyContinuationLines(): bool
+    {
+        return true;
+    }
+}
+```
+</details>
 </div></div>
