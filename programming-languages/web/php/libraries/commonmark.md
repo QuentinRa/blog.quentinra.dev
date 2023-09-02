@@ -69,3 +69,42 @@ For instance, you could define that all parsed links starting with HTTP will be 
 
 ➡️ See also: `HtmlDecorator` to only add HTML attributes.
 </div></div>
+
+<hr class="sep-both">
+
+## Custom renderers
+
+<div class="row row-cols-md-2"><div>
+
+#### Add a custom renderer
+
+To add a renderer, you need to define the parsed element that will be rendered using your custom renderer.
+
+```php!
+$environment->addRenderer(Heading::class, new HeadingRenderer());
+```
+
+See also: `Link::class`, `Image::class`, `Table::class`...
+
+#### Custom renderer class
+
+Each renderer implements `render` from `NodeRendererInterface`.
+
+```php!
+class HeadingRenderer implements NodeRendererInterface {
+    public function render(Node $node, ChildNodeRendererInterface $childRenderer)
+    {
+        // ...
+        return new HtmlElement($tag, $attrs, $childRenderer->renderNodes($node->children()));
+    }
+}
+```
+
+It returns a `HtmlElement` which is the HTML element that will be displayed. For instance, for `<h1 id="toto">...</h1>`, you would have:
+
+```
+$tag = "h1";
+$attrs = ["id" => "toto"];
+```
+</div><div>
+</div></div>
