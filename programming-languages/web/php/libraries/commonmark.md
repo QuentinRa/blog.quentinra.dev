@@ -86,6 +86,8 @@ $environment->addRenderer(Heading::class, new HeadingRenderer());
 
 See also: `Link::class`, `Image::class`, `Table::class`...
 
+<br>
+
 #### Custom renderer class
 
 Each renderer implements `render` from `NodeRendererInterface`.
@@ -139,4 +141,52 @@ $innerHtml = $childRenderer->renderNodes($node->children());
 
 * `$node->getLiteral()`: get the fenced code text
 * `$node->getInfoWords()`: get the fenced code language
+</div></div>
+
+<hr class="sep-both">
+
+## Custom parser
+
+<div class="row row-cols-md-2"><div>
+
+You can create your own Markdown syntax and create a parser for it 🚂. You'll have to create a renderer too 🖼️.
+
+There are too categories of parsers: **Inline** and **Block**. The bold syntax `**x**` would be inline, while a table ("`<table>`") would be a block.
+
+Block parsers are split in a `StartParser` that checks if your parser can parse a block and a `Parser` that actually parse it.
+
+```php!
+$environment->addBlockStartParser(new XXXStartParser());
+```
+
+⚠️ The order to add parsers to the environment is important. You may even have to add it before any extension.
+
+<br>
+
+#### StartParser
+
+Return `BlockStart::none()` if your parser is not supposed to parse this block. Otherwise, return `BlockStart::of(...)`.
+
+Use the cursor's methods to move around and find if your parser is supposed to parse this block.
+
+```php!
+class BootstrapVerticalTabStartParser implements BlockStartParserInterface
+{
+    public function tryStart(Cursor $cursor, MarkdownParserStateInterface $parserState): ?BlockStart
+    {
+        $cursor->isIndented();
+        $cursor->advance();
+        $char = $cursor->getNextNonSpaceCharacter();
+        $cursor->advance();
+        $cursor->advanceToNextNonSpaceOrTab();
+        return BlockStart::of(new XXXParser())->at($cursor);
+    }
+}
+```
+
+
+
+</div><div>
+
+...
 </div></div>
