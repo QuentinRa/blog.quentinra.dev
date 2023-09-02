@@ -107,4 +107,36 @@ $tag = "h1";
 $attrs = ["id" => "toto"];
 ```
 </div><div>
+
+You should assert the type of node you're manipulating before using class-specific methods on it.
+
+```php!
+Heading::assertInstanceOf($node); // for Heading::class
+```
+
+Some generic methods:
+
+```php!
+// Get attributes
+$attrs = $node->data->getData('attributes');
+// Call render on all children nodes
+$innerHtml = $childRenderer->renderNodes($node->children());
+```
+
+#### Heading
+
+* `$node->getLevel()`: get the level, such as `2` for `##`
+
+#### Image
+
+* `$node->getUrl()`: get the image URL
+
+#### Link
+
+* `$node->getUrl()`: get the link URL
+
+#### FencedCode
+
+* `$node->getLiteral()`: get the fenced code text
+* `$node->getInfoWords()`: get the fenced code language
 </div></div>
