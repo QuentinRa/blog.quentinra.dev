@@ -24,15 +24,20 @@ require_once __DIR__ . '/vendor/autoload.php;
 </div><div>
 
 * To create a `composer.json`, use `composer init`.
+* To generate `vendor/` from an existing `composer.json`
 
-* To generate `vendor/` from an existing `composer.json`, use `composer install` without any arguments.
+```shell!
+$ composer install # install all dependencies
+$ composer install --no-dev # aside from dev dependencies
+```
 
 * To add new packages to `composer.json` and install them, use
 
-```bash
-$ composer install package
-$ composer install vendor/package
-$ composer install vendor/package:version
+```shell!
+$ composer require package
+$ composer require vendor/package
+$ composer require vendor/package:version
+$ composer require --dev [...] # save as dev dependency
 ```
 
 Installing packages will generate a `composer.json.lock`. This file keeps track of the exact version of packages inside `vendor/`. You can use `composer update` to update them.
