@@ -43,7 +43,9 @@ $ jekyll serve
 
 <div class="row row-cols-md-2"><div>
 
-#### Jekyll Header
+Jekyll use [Liquid](https://jekyllrb.com/docs/liquid/) templating language.
+
+#### Header
 
 The first lines of every HTML file are Jekyll header:
 
@@ -54,7 +56,7 @@ layout: default
 ---
 ```
 
-#### Jekyll Include
+#### Include
 
 Inside every HTML, you can use `include` to load another HTML:
 
@@ -62,7 +64,7 @@ Inside every HTML, you can use `include` to load another HTML:
 {% include some_folder/xxx.html %}
 ```
 
-#### Jekyll Include Arguments
+#### Include Arguments
 
 You'll usually pass arguments to the included file:
 
@@ -78,12 +80,50 @@ Inside the included file, use `include.` to access them:
 
 ```html!
 <img src="{{ include.icon }}"></i>
-<h3>{{ include.title }}</h3>
-<p>{{ include.content }}</p>
+<h1>{{ include.title }}</h1>
+
+<script>
+// works in JavaScript too
+const content = "{{ include.content }}";
+</script>
 ```
 </div><div>
 
-...
+#### Branching
+
+Here is an example of branching:
+
+```html!
+{% if include.show == "true" %}
+<p>Show was set to "true"</p>
+{% else %}
+<p>Show was set to "false"</p>
+{% endif %}
+```
+
+#### Layouts
+
+Layouts are stored in `_layouts`. They are HTML files that are used by other HTML files.
+
+Here is a basic layout for a web page:
+
+```html!
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+<title>{{ page.title }}</title>
+</head>
+<body>
+<header></header>
+<main>
+    <!-- content is replaced with the contents
+    of the HTML file that uses this layout -->
+    {{ content }}
+</main>
+<footer></footer>
+</body>
+```
 </div></div>
 
 <hr class="sep-both">

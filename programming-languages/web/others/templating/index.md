@@ -18,11 +18,12 @@ Template engines are tools that allow you to generate HTML by combining template
 
 **Others** 🏠
 
-* [jinja2](https://jinja.palletsprojects.com/en/2.10.x/)
+* [jinja2](https://jinja.palletsprojects.com/en/2.10.x/) (Python)
 * [haml](https://haml.info/)
 * [hogan](https://github.com/twitter/hogan.js/)
 * [handlebars](https://handlebarsjs.com/)
 * [mustache](https://github.com/mustache/mustache)
+* [liquid](https://shopify.github.io/liquid/) (Ruby)
 
 **Already-made websites** 🗃️
 
