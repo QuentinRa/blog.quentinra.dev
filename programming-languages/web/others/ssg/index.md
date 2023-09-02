@@ -11,9 +11,11 @@ One of the main advantages is Performance 🚀.
 
 **Some Static site generators** 🔥
 
-* [Jekyll]()
+* [Jekyll](jekyll/index.md)
 * [Hugo](https://gohugo.io/)
 * [Gatsby](https://www.gatsbyjs.com/docs/glossary/static-site-generator/)
 * [Next.js](https://nextjs.org/docs/pages/building-your-application/rendering/static-site-generation) <small>(a framework, has an SSG feature)</small>
 * [Vue.js](/programming-languages/web/javascript/frameworks/vue/vue.js/index.md) <small>(a framework, has an SSG feature)</small>
+
+➡️ See also: [awesome-static-generators](https://github.com/myles/awesome-static-generators) and [Jamstack list](https://jamstack.org/generators/).
 </div></div>
