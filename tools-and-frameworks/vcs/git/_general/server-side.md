@@ -80,6 +80,13 @@ There is a nice way of referencing code from the same repository inside an issue
 
 > It won't always work. In such cases, simply click on "..." on a file, get the permalink, and append to it `#LX` <small>(line X)</small> or `#LX-LY` <small>(line X to line Y)</small>.
 
+#### ✍️Pages
+
+*Available at least on: GitHub*
+
+GitHub allow us to create a repository called after our username or an organization name. The [tutorial is here](https://pages.github.com/). The URL to access it is: `https://username.github.io/`.
+
+See [Jekyll](https://jekyllrb.com/docs/deployment/automated/) or [Hugo](https://gohugo.io/hosting-and-deployment/hosting-on-github/) tutorials too.
 </div><div>
 
 #### ✍️CODEOWNERS
