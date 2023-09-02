@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[npm](https://github.com/npm/cli) (~17k ⭐) is the most well-known package manager for Node.js, as it comes bundled with Node.js in most distributions.
+[npm](https://github.com/npm/cli) (7.4k ⭐) is the most well-known package manager for Node.js, as it comes bundled with the official Node.js installer.
 
 ```powershell
 $ npm install -g npm
@@ -34,6 +34,7 @@ Install packages from an existing project (`package-lock.json`).
 
 ```powershell
 $ npm ci
+$ npm ci --production # only non-dev packages
 ```
 
 </div><div>
@@ -44,11 +45,15 @@ Add packages in `package.json/dependencies` and install them.
 
 ```powershell
 # add in package.json/dependencies + install it
-$ npm i express
-$ npm install express
+$ npm i express                  # 🤔
+$ npm install express            # ✅
+$ npm install xxx -D             # install as dev package
+$ npm install xxx --save-dev     # same
+
 # generate package-lock.json from package.json
-$ npm i
-$ npm install
+$ npm install                    # all packages
+$ npm install --production       # only non-dev packages
+
 # Update package-lock.json
 $ npm update
 ```
@@ -78,7 +83,7 @@ $ npm i express@latest
 
 Usually, we store the commands to run/test... a project in `package.json/scripts`. To run "start" below, use `npm start`.
 
-```json
+```json!
 {
   "scripts": {
     // "npm start" will run "node index.js"
@@ -86,4 +91,21 @@ Usually, we store the commands to run/test... a project in `package.json/scripts
   }
 }
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* npx
+* .npmignore
+* `--save` / `-S` <small>(before ~2017, npm install didn't add the dependency in package.json)</small>
+* `-g` (+not recommended)
+</div><div>
+
+
 </div></div>

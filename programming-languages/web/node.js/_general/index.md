@@ -140,9 +140,5 @@ Stuff that I found, but never read/used yet.
 npm
 
 * devDependencies
-* npx
-* .npmignore
-* `--save` / `-S` / `-g` (+not recommended)
-* `npm install --save-dev`/`npm i -D`
 * winston test-debug http logs
 </div></div>
