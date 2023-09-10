@@ -184,7 +184,7 @@ pause(); // won't wake up by itself
 
 #### Pipes
 
-A `pipe` is a read/write stream in which both processes can exchange. To understand pipe, you must first understand **file descriptors** which in short, are numbers representing a file (see [System calls](/_programming/code/c/system_calls/index.md)).
+A `pipe` is a read/write stream in which both processes can exchange. To understand pipe, you must first understand **file descriptors** which in short, are numbers representing a file (see [System calls](/programming-languages/low-level/c/system_calls/index.md)).
 
 The function `pipe` is creating two file descriptors
 

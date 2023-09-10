@@ -557,7 +557,7 @@ You can change, to some extent, the parent class signature when overriding a met
 
 * **Return Type** 🔫: you can use a child class of the return type
 
-You can also add [annotations](../advanced/index.md#annotations) or [throws](#explicitly-declare-raising-an-exception).
+You can also add [annotations](#annotations) or [throws](#explicitly-declare-raising-an-exception).
 </div></div>
 
 <hr class="sep-both">

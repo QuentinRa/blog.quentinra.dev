@@ -292,7 +292,7 @@ MATCH (w:ShowbizPerson)-[:WROTE]->(:Movie) MATCH (w)-[:PRODUCED]->(:Movie) RETUR
 
 <div class="row row-cols-md-2"><div>
 
-If needed, you can use lists in your queries. See [Python](/programming-languages/high-level/python/index.md#lists) lists.
+If needed, you can use lists in your queries. See [Python](/programming-languages/high-level/scripting/python/index.md#lists) lists.
 
 ```cypher
 // return the list of the release dates for the movies linked to "Keanu Reeves"

@@ -8,7 +8,7 @@ JetBrains has been developing Kotlin, an open-source and modern programming lang
 * ✈️ Main language used for Android applications
 * 👌 A Kotlin file (`.kt`) can be compiled to a Java file (`.java`)
 
-Kotlin is interoperable with [Java](/programming-languages/high-level/java/_general/index.md).
+Kotlin is interoperable with [Java](/programming-languages/high-level/oo/java/_general/index.md).
 </div><div>
 
 **Where to learn?**

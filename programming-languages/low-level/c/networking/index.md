@@ -251,7 +251,7 @@ Inside `client_addr`, you will find the IP address of the client and other data 
 
 #### TCP (client)
 
-If you are familiar with [system calls](/programming-languages/low-level/system_calls/index.md), you should already know that low-level functions such as `read` or `write` take a file descriptor. They work with `client_fd` then.
+If you are familiar with [system calls](/programming-languages/low-level/c/system_calls/index.md), you should already know that low-level functions such as `read` or `write` take a file descriptor. They work with `client_fd` then.
 
 ```cpp
 int client_fd = [...];

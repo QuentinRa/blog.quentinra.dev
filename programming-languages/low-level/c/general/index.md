@@ -15,7 +15,7 @@ int main() {
 ```
 </div><div>
 
-Then, use [gcc](../../compilers/gcc/index.md) to generate an executable of your program.
+Then, use [gcc](../../compilers/gnu/gcc.md) to generate an executable of your program.
 
 ```powershell
 $ gcc main.c -o a.out

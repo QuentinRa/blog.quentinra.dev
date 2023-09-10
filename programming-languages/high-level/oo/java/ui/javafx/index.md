@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[JavaFX](https://openjfx.io/) is an open-source [Java](/programming-languages/high-level/java/_general/index.md) library to create graphical interfaces.
+[JavaFX](https://openjfx.io/) is an open-source [Java](/programming-languages/high-level/oo/java/_general/index.md) library to create graphical interfaces.
 
 JavaFX's views are stored `.fxml` files usually created using [Scene Builder](https://gluonhq.com/products/scene-builder/) 🛝 which is a `WYSIWYG` editor <small>(What You See Is What You Get)</small>.
 
