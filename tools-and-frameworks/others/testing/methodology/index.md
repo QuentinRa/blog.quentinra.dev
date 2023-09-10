@@ -8,7 +8,7 @@ There are two common scopes for testing:
 
 * 🔎 **unit testing**: we test a part of the code, usually a function
 
-➡️ There are many tools to test the coverage of your code, which are slowly being added to the [Continuous Integration](/tools-and-frameworks/git/ci/index.md) page.
+➡️ There are many tools to test the coverage of your code, which are slowly being added to the [Continuous Integration](/tools-and-frameworks/vcs/ci/index.md) page.
 </div><div>
 
 When writing tests it's important to test both correct cases ✅, and incorrect cases ❌. This is to ensure that when updating the code to add new features/fix bugs, the correct cases are still correct.

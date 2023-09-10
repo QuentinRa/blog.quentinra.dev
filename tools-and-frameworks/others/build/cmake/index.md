@@ -94,6 +94,6 @@ Stuff that I found, but never read/used yet.
 
 * [Akagi201/learning-cmake](https://github.com/Akagi201/learning-cmake)
 * include_directories
-* see [clang-tidy](/programming-languages/low-level/tools/clang-tidy.md) (`cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON`)
+* see [clang-tidy](/programming-languages/low-level/compilers/clang/clang-tidy.md) (`cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON`)
 </div><div>
 </div></div>

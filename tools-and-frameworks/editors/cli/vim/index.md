@@ -1,6 +1,6 @@
 # Vim text editor
 
-[![toolboxvim](../../../cybersecurity/_badges/thm/toolboxvim.svg)](https://tryhackme.com/room/toolboxvim)
+[![toolboxvim](../../../../cybersecurity/_badges/thm/toolboxvim.svg)](https://tryhackme.com/room/toolboxvim)
 
 <div class="row row-cols-md-2"><div>
 
