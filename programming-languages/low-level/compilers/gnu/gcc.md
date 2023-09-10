@@ -52,7 +52,7 @@ Commonly used options:
 * `-o`: set the executable name <small>(default=a.out)</small>
 * `-std=value`: specify a standard such as `c99` or `c++11`
 * `-I/path/to/xxx`: include a folder with header files
-* `-g`: add information for debuggers (ex: [GDB](/programming-languages/low-level/compilers/gdb/index.md))
+* `-g`: add information for debuggers (ex: [GDB](/programming-languages/low-level/compilers/gnu/gdb.md))
 
 Common compliance/warnings options:
 

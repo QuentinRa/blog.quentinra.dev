@@ -340,7 +340,7 @@ function pow(x, k = 1) { return x ** k; } // 5 ** 2 = 25
 
 <div class="row row-cols-md-2"><div>
 
-JavaScript supports [JSON](/_programming/data/json.md) natively, which some changes.
+JavaScript supports [JSON](/programming-languages/others/data/json.md) natively, which some changes.
 
 ```js!!
 const object = {

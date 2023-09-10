@@ -8,7 +8,7 @@ GNU Debugger (GDB) is a debugging software mainly used to debug C/C++ programs. 
 $ sudo apt-get install gdb
 ```
 
-To use it with [GCC/G++](/programming-languages/low-level/compilers/gcc/index.md) executables <small>(clang and others too)</small>, don't forget to add the `-g` option when you compile them.
+To use it with [GCC/G++](/programming-languages/low-level/compilers/gnu/gdb.md) executables <small>(clang and others too)</small>, don't forget to add the `-g` option when you compile them.
 </div><div>
 
 To load a program within GDB, use:

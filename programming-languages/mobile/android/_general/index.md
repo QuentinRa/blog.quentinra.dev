@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-Android is an operating system developed by Google. [Native android applications](../../_general/index.md) are developed in [Kotlin](/programming-languages/high-level/kotlin/index.md) mostly using [Android Studio](../tools/and/index.md).
+Android is an operating system developed by Google. [Native android applications](../../_general/index.md) are developed in [Kotlin](/programming-languages/high-level/oo/kotlin/index.md) mostly using [Android Studio](../tools/and/index.md).
 
 * [Android Courses](https://developer.android.com/courses/) + [CodeLabs](https://codelabs.developers.google.com/?cat=Android) (official, free)
 * [Android Docs](https://developer.android.com/docs)

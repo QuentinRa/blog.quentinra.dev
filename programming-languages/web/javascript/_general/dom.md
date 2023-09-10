@@ -263,7 +263,7 @@ form.onsubmit = (event) => {
 
 ## ✈ Request an API ✈
 
-*See also, [APIs](/_programming/web/apis/index.md), and [Async, await, and Promises](/_programming/web/javascript/_general/index.md#-asynchronous-work-and-promises-)*
+*See also, [APIs](/programming-languages/others/apis/_general/index.md), and [Async, await, and Promises](/programming-languages/web/javascript/_general/index.md#-asynchronous-work-and-promises-)
 
 <div class="row row-cols-md-2"><div>
 

@@ -17,7 +17,7 @@ int main() {
 ➡️ You can use `.cc` too and `.hpp` for headers <small>(see [.h or .hpp](https://stackoverflow.com/questions/152555/h-or-hpp-for-your-class-definitions), [.ii, .tpp...](https://includestdio.com/6422.html))</small>.
 </div><div>
 
-Then, use [g++](../../compilers/gcc/index.md) to generate an executable of your program.
+Then, use [g++](../../compilers/gnu/gcc.md) to generate an executable of your program.
 
 ```powershell
 $ g++ main.cpp -o a.out

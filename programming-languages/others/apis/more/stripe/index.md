@@ -128,7 +128,7 @@ You need to create a [PaymentIntent](https://stripe.com/docs/api/payment_intents
 
 Finally, add this code to the activity with the payment button. You will typically call **init** at the start, **show** when the pay button is pressed.
 
-⚠️ You need to fetch the payment intent from your API. See [Internet](/_programming/web/android/internet/index.md).
+⚠️ You need to fetch the payment intent from your API. See [Internet](/programming-languages/mobile/android/others/net.md).
 
 ```kotlin
 private lateinit var paymentSheet: PaymentSheet

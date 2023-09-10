@@ -205,7 +205,7 @@ object SocketIOHandler {
 
 </div><div>
 
-If you don't have one, you need to add a class [Application](/_programming/web/android/activities/index.md#android-application). Inside, you will need to initialize and close socket.io client.
+If you don't have one, you need to add a class [Application](/programming-languages/mobile/android/_general/index.md#android-application). Inside, you will need to initialize and close socket.io client.
 
 ```diff
     <application
