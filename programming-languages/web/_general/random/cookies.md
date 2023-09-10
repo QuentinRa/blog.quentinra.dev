@@ -21,7 +21,7 @@ Cookies can be used
   * ...
 * 👑 to store a session ID
 
-☠️️ Some cookies may have an encoded value which is mostly in [base64](/programming-languages/others/encoding/index.md). They may contain sensitive information once decoded.
+☠️️ Some cookies may have an encoded value which is mostly in [base64](/tools-and-frameworks/knowledge/encoding/index.md#base64---). They may contain sensitive information once decoded.
 </div></div>
 
 <hr class="sep-both">

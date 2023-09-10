@@ -14,7 +14,7 @@ $ npm install
 $ npm audit fix --force
 ```
 
-➡️ Don't forget to add a [.gitignore](/_it/dev/git-project/index.md#-gitignore), and maybe a linter too.
+➡️ Don't forget to add a [.gitignore](/tools-and-frameworks/vcs/git/_general/index.md#-gitignore), and maybe a linter too.
 </div><div>
 
 **Understand your generated project**

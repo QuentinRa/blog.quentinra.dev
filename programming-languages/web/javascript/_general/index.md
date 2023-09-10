@@ -600,7 +600,7 @@ To avoid the "callback hell", we use **await**. But, 👉 **await can only be us
 ```
 </div><div>
 
-Working example using the [Fetch API](/_programming/web/javascript/_general/dom.md#-request-an-api-) to get something from an API.
+Working example using the [Fetch API](/programming-languages/web/javascript/_general/dom.md#-request-an-api-) to get something from an API.
 
 ```js!
 async function doRequestToTheAPI() {
