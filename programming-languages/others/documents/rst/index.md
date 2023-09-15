@@ -4,7 +4,7 @@
 
 reStructuredText <small>(a.k.a. reST or RST)</small> is an enhanced markdown with additional syntax for complex documents.
 
-It's mainly used in documentation as an alternative to Markdown. It's quite used with the documentation generator "sphinx" 🦁 and the well-known [readthedocs](https://docs.readthedocs.io/en/stable/index.html) 📚  theme.
+It's mainly used in documentation as an alternative to Markdown. It's quite used with the documentation generator "sphinx" 🦁 and the well-known [readthedocs](https://docs.readthedocs.io/en/stable/index.html) 📚  theme. More information [here](/tools-and-frameworks/others/documentation/index.md).
 </div><div>
 
 What you can do in RST that you can't do in Markdown:
