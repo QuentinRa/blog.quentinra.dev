@@ -47,7 +47,7 @@ $ [...] -smp 2         # 2 cores
 ```shell!
 $ [...] -nographic     # disable GUI, terminal-only interface
 shutdown -h now
-$ [...] -sql           # use the SQL
+$ [...] -sdl           # use the SDL
 ```
 
 #### Other flags

@@ -172,6 +172,8 @@ $ docker network connect bridge container_id # add to bridge
 $ docker network connect network_name_or_id container_id
 $ docker network disconnect network_name_or_id container_id
 ```
+
+It's interesting to know that even when using 
 </div><div>
 
 #### Docker UID/GID mapping
@@ -454,6 +456,35 @@ services:
 ```
 
 ➡️ `build` isn't associated with a `docker run` option, but since docker compose can build images, you'll have to provide it.
+
+<details class="details-n">
+<summary>Docker networking options</summary>
+
+How to use `--net host`?
+
+```yaml!
+    ...
+    network_mode: host
+```
+
+How to use `--net some_bridge`? Note that you can use `X.X.X.1` such as `172.100.0.1` inside the docker to refer to the host.
+
+```yaml!
+    ...
+    networks:
+      my-bridge:
+        ipv4_address: 172.100.0.2
+
+networks:
+  my-bridge:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.100.0.0/24
+
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
