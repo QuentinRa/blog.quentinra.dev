@@ -173,7 +173,18 @@ $ docker network connect network_name_or_id container_id
 $ docker network disconnect network_name_or_id container_id
 ```
 
-It's interesting to know that even when using 
+👉 Even when creating a custom network, you can still reach the host <small>(which is the gateway, `X.X.X.1`)</small> so we don't really *need* host networks.
+
+#### Docker Volumes
+
+Docker volumes are the same as [Dockerfile Volume](#volume) but you can choose which folder on the host is used (more convenient).
+
+```bash!
+-v /var/www              # host=/var/www docker=/var/www 
+-v /var/www:/var/zzz     # host=/var/www docker=/var/zzz
+-v /var/www:/var/zzz:ro  # read-only mount
+-v /var/www:/var/zzz:rw  # read-write mount
+```
 </div><div>
 
 #### Docker UID/GID mapping
@@ -348,10 +359,10 @@ EXPOSE port/protocol   # ex: 80/tcp
 It's possible to mount a [volume](https://docs.docker.com/storage/volumes/), e.g., creating a folder on the docker whose content is linked to a folder on the host. Adding, editing, or removing files in such folder on the docker remove them on the host. 
 
 ```dockerfile!
-VOLUME /var/www          # host=/var/www docker=/var/www 
-VOLUME /var/www:/var/zzz # host=/var/www docker=/var/zzz
-VOLUME ["/var/www/", "/var/log:/var/volatile/log"]
+VOLUME /my_mount  # contents are the same for every container
 ```
+
+See also: `sudo ls /var/lib/docker/volumes/` and `docker volume ls`.
 
 #### .dockerignore
 
@@ -387,7 +398,7 @@ $ docker build -t some_tag_here .
 
 #### Docker registry
 
-A registry is a place where images are stored. Docker Hub is a SAAS registry, but it's possible to deploy a [self-hosted registry](https://docs.docker.com/registry/deploying/).
+A registry is a place where images are stored 🗃️. Docker Hub is a SAAS registry. It's possible to deploy a [self-hosted registry](https://docs.docker.com/registry/deploying/).
 </div><div>
 
 #### Deploying
@@ -395,10 +406,10 @@ A registry is a place where images are stored. Docker Hub is a SAAS registry, bu
 To push images to a registry server:
 
 ```ps
-# assuming xxx:5000 is a registry
-# and "xxx:5000/tag" is an image locally
-# use "docker tag" to rename an image
-$ docker push xxx:5000/tag
+# assuming example.com:5000 is a registry
+# and "example.com:5000:5000/tag" is an image locally
+# (use "docker tag" to rename an image if needed)
+$ docker push example.com:5000/tag
 ```
 
 <br>
@@ -436,6 +447,10 @@ Docker Compose version vX.X.X
 * `docker compose down`: stop, and remove containers
 
 Useful options: `docker compose up --no-recreate --no-start`.
+
+Useful command: `docker attach $(docker compose ps -q)`.
+
+🍔 For most commands, you can add the service name after the command, such as `docker compose build xxx` to work on `xxx`.
 </div><div>
 
 The syntax is pretty straightforward once you're familiar with run options. Much like `docker run` commands, almost all are optional.
@@ -519,5 +534,4 @@ mknod /dev/net/tun
 ```
 
 * `docker system prune -f`
-* `docker compose build target`
 </div></div>
