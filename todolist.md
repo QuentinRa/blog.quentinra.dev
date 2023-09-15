@@ -6,7 +6,7 @@ List of courses that have note which were not added yet.
 
 **Programming Languages**
 
-* (review, typos) C#, Documentation, web (general, code igniter, Jekyll)
+* (review, typos) C#, web (general, code igniter, Jekyll)
 * **Database > Relational modeling**
 * **Blockchain**
 * **API** > GraphQL
@@ -17,7 +17,7 @@ List of courses that have note which were not added yet.
 
 **Tools and Frameworks**
 
-* (review/typos) cmake, VSCode, Rider, PHPStorm, VCS, Gradle, docker
+* (review/typos) cmake, VSCode, Rider, PHPStorm, VCS, Gradle, docker, documentation (doxygen, sphinx)
 * Pandora
 * JetBrains plugin development
 * Project > Modeling, Tools?
