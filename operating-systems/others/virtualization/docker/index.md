@@ -399,6 +399,18 @@ $ docker build -t some_tag_here .
 #### Docker registry
 
 A registry is a place where images are stored 🗃️. Docker Hub is a SAAS registry. It's possible to deploy a [self-hosted registry](https://docs.docker.com/registry/deploying/).
+
+<br>
+
+#### Docker "clean"
+
+To remove untagged images, stopped containers and unused layers:
+
+```shell!
+$ docker system prune -f
+```
+
+👉 Use this after `docker rmi` to ensure cached layers are deleted.
 </div><div>
 
 #### Deploying
@@ -407,9 +419,14 @@ To push images to a registry server:
 
 ```ps
 # assuming example.com:5000 is a registry
-# and "example.com:5000:5000/tag" is an image locally
-# (use "docker tag" to rename an image if needed)
+# and "example.com:5000/tag" is an image locally
 $ docker push example.com:5000/tag
+```
+
+To rename "tag" to "example.com:5000/tag"
+
+```shell!
+$ docker tag tag:latest example.com:5000/tag:latest
 ```
 
 <br>
@@ -523,15 +540,20 @@ Other notes
 * Docker nexus repository
 * `/etc/docker/daemon.json`
 * `sudo systemctl restart docker`
+* `docker secret` and docker compose `secrets`
 </div><div>
-
-Network
 
 ```text!
 --cap-add=NET_ADMIN
 --cap-add=NET_ADMIN --device=/dev/net/tun
 mknod /dev/net/tun
-```
 
-* `docker system prune -f`
+docker swarm init
+docker stack deploy -c docker-compose.yml service_name
+docker stack ls
+docker stack rm service_name
+docker service ls
+docker service logs xxx
+docker service ps xxx
+```
 </div></div>
