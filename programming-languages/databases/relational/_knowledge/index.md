@@ -92,7 +92,26 @@ Each group correspond to a UML `class` and each of their categories are their UM
 
 #### Step 2 — Relational Representation
 
-...
+We represent the database diagram using the relational language. It provides a textual representation of your database structure.
+
+A **relation** is a set of attributes that are mapped to their type.
+
+```scss!
+// Overview of the syntax
+R1(attribute=>type, #key=>type, ...)
+R2(#foreign_key=>R1.key, ...)
+R3(#(r1_key=>R1.key, r2_key=>R2.key), ...)
+
+// Example
+Person(#id=>Integer, name => String, address => Address.id)
+Address(#id=>Integer, city => String)
+```
+
+💡 The representation is usually including notes <small>(ex: xxx is unique...)</small>.
+
+👉 See the list of rules [to map a database diagram here](8rules.md).
+
+<br>
 
 #### Step 3 — Implementation
 
