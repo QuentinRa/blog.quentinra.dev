@@ -66,7 +66,7 @@ Creating a database from a specification is called **Modeling** 🧑‍🎨. It'
 2. ✍️ From the diagram, write down the relational representation
 3. ✅ From the relational representation, create the database
 
-#### Step 1 - how to get started
+#### Step 1 — Get Started
 
 Before creating your [database diagrams](/tools-and-frameworks/projects/modeling/uml/db/index.md), you need to identify some information within the specification.
 
@@ -90,7 +90,21 @@ Each group correspond to a UML `class` and each of their categories are their UM
 ✍️ If there is no identifier, you may create one.
 </div><div>
 
+#### Step 2 — Relational Representation
+
 ...
+
+#### Step 3 — Implementation
+
+For [SQL](/programming-languages/databases/relational/sql/index.md), this is how you do it:
+
+* Each `relation` is mapped to a SQL `table`
+* Each `relation` attributes are its SQL `table` attributes
+* Add all constraints <small>(either on attributes or on the table)</small>
+  * Ex: keys (primary, foreign)
+  * Ex: number of records
+  * Ex: interval, range, null and not null
+  * ...
 </div></div>
 
 <hr class="sep-both">
