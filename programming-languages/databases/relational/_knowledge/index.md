@@ -62,9 +62,32 @@ The attribute `id` is an artificial key. In another table, we can use this numbe
 
 Creating a database from a specification is called **Modeling** 🧑‍🎨. It's a process usually involving 3 steps:
 
-* 📝 From the specification (a text), create a [database diagram](/tools-and-frameworks/projects/modeling/uml/db/index.md)
-* ✍️ From the diagram, write down the relational representation
-* ✅ From both, create the database
+1. 📝 From the specification (a text), create a database diagram
+2. ✍️ From the diagram, write down the relational representation
+3. ✅ From the relational representation, create the database
+
+#### Step 1 - how to get started
+
+Before creating your [database diagrams](/tools-and-frameworks/projects/modeling/uml/db/index.md), you need to identify some information within the specification.
+
+* **highlight** every concrete piece of information
+  * Names, Locations
+  * Values (prices, distances...)
+  * ...
+* **categorize** each information
+  * "John Doe" <small>(piece of information)</small> is a "name" <small>(category)</small>
+  * "Toronto" <small>(piece of information)</small> is a "city" <small>(category)</small>
+  * "Berlin" <small>(piece of information)</small> is a "city" <small>(category)</small>
+  * ...
+* **group** categories by entities
+  * "name" belongs to "person"
+  * "address" belongs to "person"
+  * "city" belongs to "address"
+  * ...
+
+Each group correspond to a UML `class` and each of their categories are their UML `attributes`. Complete the diagram with `identifiers`, `associations`, `multiplicity`, and `generalizations`.
+
+✍️ If there is no identifier, you may create one.
 </div><div>
 
 ...
