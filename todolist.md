@@ -6,8 +6,7 @@ List of courses that have note which were not added yet.
 
 **Programming Languages**
 
-* (review, typos) C#, web (general, code igniter, Jekyll)
-* **Database > Relational modeling**
+* (review, typos) C#, web (general, code igniter, Jekyll), Relational database Modeling
 * **Blockchain**
 * **API** > GraphQL
 * **CPP > STD + ENS notes**

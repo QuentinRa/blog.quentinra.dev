@@ -56,6 +56,22 @@ The attribute `id` is an artificial key. In another table, we can use this numbe
 
 <hr class="sep-both">
 
+## Modeling
+
+<div class="row row-cols-md-2"><div>
+
+Creating a database from a specification is called **Modeling** 🧑‍🎨. It's a process usually involving 3 steps:
+
+* 📝 From the specification (a text), create a [database diagram](/tools-and-frameworks/projects/modeling/uml/db/index.md)
+* ✍️ From the diagram, write down the relational representation
+* ✅ From both, create the database
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
