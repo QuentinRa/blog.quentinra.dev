@@ -22,6 +22,22 @@ Once the software is started, create a **new papyrus model**. A model is made of
 
 <hr class="sep-both">
 
+## Core concepts
+
+<div class="row row-cols-md-2"><div>
+
+#### Model
+
+All diagrams are parts of a **model**. It allows us to connect diagrams and reuse what we defined in other diagrams inside each diagram.
+
+#### XXX
+
+...
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Papyrus Interface
 
 <div class="row row-cols-md-2 mt-4"><div>
@@ -43,6 +59,46 @@ Once the software is started, create a **new papyrus model**. A model is made of
 </div><div class="align-self-center">
 
 ![Papyrus (eclipse) editor](_images/editor.png)
+</div></div>
+
+<hr class="sep-both">
+
+## Tips and recommendations
+
+<div class="row row-cols-md-2"><div>
+
+#### Don't scroll in the property view
+
+You can scroll to change the values of a field <small>(such as checked -> uncheck, or the type of your attribute, etc.)</small> when you are in the **Property view**. 
+
+Unfortunately, you can't control it: you might change something or cancel everything you did by mistake ⚠️.
+
+<br>
+
+#### Modified file symbol
+
+It's common, but there is a little star before every edited filename.
+
+<div class="text-center">
+
+![Papyrus saved](_images/saved.png)
+</div>
+
+<br>
+
+#### Use icons
+
+The palette has quite a lot of elements. It's fasted and easier to change the palette view to a list of icons <small>(Right-click to change the view)</small>.
+
+<div class="text-center">
+
+![palette use icons](_images/icons.png)
+![hover palette](_images/icons_hover.png)
+</div>
+
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">
