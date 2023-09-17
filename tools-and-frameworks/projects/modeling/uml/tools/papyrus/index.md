@@ -296,6 +296,30 @@ You may also have to edit `org.eclipse.acceleo.module.sample` > src > `org/eclip
 	[/for]
 [/for]
 ```
+
+For file: `common/fileUtils.mtl`.
+
+```xml!
+[**
+ * Generates the type in Java given an OCL type
+ * @param aType The OCL Type
+ */]
+[template public genType(aType : String)]
+[if (aType.toUpperFirst() = 'Real')]Float[else][aType.toUpperFirst()/][/if]
+[/template]
+```
+
+You then need to use your newly created function everywhere:
+
+* use `genType(aProperty.type.name)`
+    * instead of `aProperty.type.name`
+    * or instead of `aProperty.type.name.toUpperFirst()`
+* of course, sometimes the variable isn't called aProperty
+
+The locations are
+
+* **classJavaFile**: fields (1), operations (1), parameters (1), accessors (2)
+* **interfaceJavaFile**: genInterfaceJavaFile (1), parameters (1)
 </details>
 </details>
 
@@ -368,6 +392,68 @@ And in **javaOperationDeclaration**
 </details>
 </details>
 
+<details class="details-n">
+<summary>Acceleo: improve import support</summary>
+
+An easy way to do this is to hard code the import, by adding some lines in **genDefaultImport** inside **common/fileUtils.mtl**
+
+```java
+[template public genDefaultImport(aType : Type)]
+// [protected ('for imports')]
+import java.util.*;
+// [/protected]
+[/template]
+```
+
+The problem with this is that it doesn't work for your classes are they are not within a package.
+
+In **fileUtils**, edit these two functions with
+
+```diff
+[template private packagePath(aType : Type)]
+- [ /* something */ /]
++ ['/' + aType.getSourcePackage() + '/' + /* something */ /]
+[/template]
+
+[template public genPackageValue(aType : Type)]
+- [ /* something */ /]
++ [aType.getSourcePackage() + '.' + /* something */ /]
+[/template]
+```
+
+And create the template **getSourcePackage**
+
+```java
+[template public getSourcePackage(aType : Type)]
+[aType.getModel().name/]
+[/template]
+```
+</details>
+
+<details class="details-n">
+<summary>Handle Duplicate Methods</summary>
+
+Obviously, this is a problem in your model, but you can edit **classJavaFile**, template **operations**
+
+```diff
+- [for (anOperation : Operation | aClass.getOperations()->union(aClass.getImplementedInterfaces().ownedOperation))]
++ [for (anOperation : Operation | aClass.getOperations())]
+```
+</details>
+
+<details class="details-n">
+<summary>Do not generate External Classes</summary>
+
+Wrap the code generating aClass inside this if. You can trick this code to make it work with other templates.
+
+```java
+[let c : Classifier = aClass.oclAsType(Classifier)]
+[if (c.getAppliedStereotypes()->collect(name)->count('External') = 0)]
+[/if]
+[/let]
+```
+</details>
+
 </div><div>
 
 #### Runtime Eclipse
@@ -412,7 +498,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [_IGL](igl/index.md)
 * [Papyrus CEA Guide](https://www.eclipse.org/papyrus/resources/TutorialOnPapyrusUSE_d20101001.pdf)
 * Warning: do not create an activity twice (use sync with editor, navigate to find it)
 * Warning: in activities, every call must be Typed
