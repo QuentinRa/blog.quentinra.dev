@@ -16,10 +16,10 @@ List of courses that have note which were not added yet.
 
 **Tools and Frameworks**
 
-* (review/typos) cmake, VSCode, Rider, PHPStorm, VCS, Gradle, docker, documentation (doxygen, sphinx)
+* (review/typos) cmake, VSCode, Rider, PHPStorm, VCS, Gradle, docker, documentation (doxygen, sphinx), modeling
 * Pandora
 * JetBrains plugin development
-* Project > Modeling, Tools?
+* Project > Tools?
 
 **Operating systems**
 

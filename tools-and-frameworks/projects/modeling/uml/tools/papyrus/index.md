@@ -162,7 +162,27 @@ Near the corners of a class, wait a bit while your mouse is on a class and a sho
 
 ![associations shortcut papyrus](_images/associations_shortcut.png)
 </div>
+
+#### Interfaces
+
+As a reminder:
+
+* ➡️ If a class implements/realizes an interface, then the head of the arrow is on the interface.
+* ➡️ If a class extends/generalize another class, then the head of the arrow is on other class.
 </div><div>
+
+#### Types
+
+When clicking on an attribute, there is a field "Type" inside the Property View. Click on "... > Tree > EPackage Primitive Types" and select your type.
+
+![Set type Papyrus](_images/type.png)
+
+
+**Notes**
+
+* "Boolean [1]" after the type mean that the **cardinality** is **1** <small>(=this is a value, more than 1 means this is an array/a list/a queue/...)</small>
+* You could drag and drop a class inside the field, instead of picking a primitive type.
+* If you need to create a new type, use either `DataType` <small>(cannot be instanced)</small> or `Primitive type` or a class if none are what you want
 
 #### Layout/Appearance
 
