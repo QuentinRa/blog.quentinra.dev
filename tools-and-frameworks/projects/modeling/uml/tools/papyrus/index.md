@@ -240,9 +240,30 @@ You need **papyrus.designer**, **Xtend IDE**, and **acceleo**.
 * "I accept" and Finish <small>(wait, check the bottom right of papyrus)</small>
 * Restart <small>(when prompted)</small>
 </details>
+
+#### Runtime Eclipse
+
+* Run > Run Configurations (or Debug Configurations)
+* Double-click on Eclipse
+* You may name the configuration "runtime_eclipse"
+* Press Run (resp. Debug)
+* And click on **proceed** if prompted.
 </div><div>
 
-...
+#### Process With Code Generation
+
+Inside the Runtime Eclipse:
+
+* Import projects
+* Existing Projects Into Workspace
+* Browse > Find SMModel
+* Once imported, double-click on the model
+* In the **Model explorer**
+   * Right-click on "Project SMModel" <small>(or your project)</small>
+   * Generate Code for State Machine
+   * Create JDT <small>(Yes > Set JDK to XXX > Finish)</small>
+
+It will generate a new model with the generated Java classes.
 </div></div>
 
 <hr class="sep-both">
