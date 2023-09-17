@@ -18,3 +18,15 @@ There are several types of [UML diagrams](https://en.wikipedia.org/wiki/Unified_
 * [Object Diagram](): model an instance of a class diagram
 * ...
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [UML-diagrams](https://www.uml-diagrams.org/)
+</div><div>
+</div></div>

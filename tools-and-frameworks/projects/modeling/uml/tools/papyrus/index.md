@@ -196,6 +196,57 @@ You can right-click on a class:
 
 <hr class="sep-both">
 
+## Code Generation
+
+<div class="row row-cols-md-2"><div>
+
+#### Install deps
+
+You need **papyrus.designer**, **Xtend IDE**, and **acceleo**.
+
+<details class="details-n">
+<summary>papyrus.designer</summary>
+
+* Help > Install New Software
+* Enter `https://ci.eclipse.org/papyrus/job/papyrus-designer-2020-06/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.designer.p2/target/repository/` and press enter
+* Select the first `Papyrus base elements for code generation`
+* Select the first `Papyrus Java profile ...`
+* Next (wait)
+* Next
+* "I accept" and Finish <small>(wait, check the bottom right of papyrus)</small>
+* Restart <small>(when prompted)</small>
+</details>
+
+<details class="details-n">
+<summary>Xtend IDE</summary>
+
+* Help > Install New Software
+* Enter `https://download.eclipse.org/modeling/tmf/xtext/updates/composite/latest/` and press enter
+* Select Xtend IDE inside XText
+* Next (wait)
+* Next
+* "I accept" and Finish <small>(wait, check the bottom right of papyrus)</small>
+* Restart <small>(when prompted)</small>
+</details>
+
+<details class="details-n">
+<summary>Acceleo</summary>
+
+* Help > Install New Software
+* Enter `https://download.eclipse.org/acceleo/updates/releases/3.7/R201911060712` and press enter
+* Select Acceleo in Acceleo
+* Next (wait)
+* Next
+* "I accept" and Finish <small>(wait, check the bottom right of papyrus)</small>
+* Restart <small>(when prompted)</small>
+</details>
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -204,6 +255,8 @@ Stuff that I found, but never read/used yet.
 
 * [_IGL](igl/index.md)
 * [Papyrus CEA Guide](https://www.eclipse.org/papyrus/resources/TutorialOnPapyrusUSE_d20101001.pdf)
+* Warning: do not create an activity twice (use sync with editor, navigate to find it)
+* Warning: in activities, every call must be Typed
 </div><div>
 
 
