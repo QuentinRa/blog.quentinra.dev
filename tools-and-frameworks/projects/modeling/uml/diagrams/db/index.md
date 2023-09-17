@@ -20,7 +20,9 @@ Some attributes such as `id` are special attributes called **identifiers**. They
 
 <br>
 
-➡️ In practice, identifiers are usually called **keys** 🔑 while a key is actually the implementation <small>(ex: in SQL)</small> of an identifier.
+👀 In practice, identifiers are usually called **keys** 🔑 while a key is actually the implementation <small>(ex: in SQL)</small> of an identifier.
+
+🚀 We often use [OCL](https://en.wikipedia.org/wiki/Object_Constraint_Language) along the diagram to express constraints.
 </div></div>
 
 <hr class="sep-both">
