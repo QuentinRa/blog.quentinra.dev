@@ -6,15 +6,15 @@ A database diagram seems to be an unofficial diagram mostly based on a simplifie
 
 <div class="text-center">
 
-![_uml/basic.plantuml](_uml/basic.svg)
+![_uml/basic.pu](_uml/basic.svg)
 </div>
 </div><div>
 
-XXX:
+A **class** 🗃️ such as `Person` corresponds to a database table. It has **attributes** 📚 such as `name` of type `String`.
 
-* Classes, Methods, Attributes
-* Associations and multiplicity
-* Generalization and inheritance
+Some attributes such as `id` are special attributes called **keys**. They are used to identify a record <small>(e.g., a person among Persons)</small>.
+
+**Associations** 🔗, **Generalizations** 👨‍👩‍👧‍👦, and **multiplicity** 🔢 are the same as for classes diagrams.
 </div></div>
 
 <hr class="sep-both">
