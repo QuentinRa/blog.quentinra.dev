@@ -299,6 +299,77 @@ You may also have to edit `org.eclipse.acceleo.module.sample` > src > `org/eclip
 </details>
 </details>
 
+<details class="details-n">
+<summary>Support NoCodeGen</summary>
+
+The **NoCodeGen** attribute is ignored during code generation. In `ClassUtils.java`, `requiredClassifiers`, before the return:
+
+```java
+// import
+// import org.eclipse.papyrus.designer.languages.common.profile.Codegen.NoCodeGen;
+EList<Classifier> usedClassesReturn = new UniqueEList<Classifier>();
+for(Classifier c : usedClasses) {
+	if (!GenUtils.hasStereotypeTree(c, NoCodeGen.class)) {
+		usedClassesReturn.add(c);
+	}
+}
+```
+
+Edit **noCodeGen** in **JavaModelElementsCreator**.
+
+```diff
+- GenUtils.hasStereotypeTree(element, ExternLibrary.class) ||
++ GenUtils.hasStereotypeTree(element, ExternLibrary.class) &&
++ GenUtils.hasStereotypeTree(element, NoCodeGen.class);
+```
+</details>
+
+<details class="details-n">
+<summary>Support Code Generation From The Diagram</summary>
+
+<br>
+
+<details class="details-n">
+<summary>Inside a diagram, add the implementation</summary>
+
+* Right-click on a class
+* New Child > Opaque Behavior > Owned ...
+* Name it (ex: `getXXX`)
+* Language > + > Java
+* Write some code
+```java
+// todo
+return false;
+```
+* Click on a method (ex: `getXXX`)
+* In UML, look for the field Method
+* Add your Opaque Behavior
+</details>
+
+<details class="details-n">
+<summary>Default implementation in the generator</summary>
+
+You must change the return type so that it is always a class <small>(ex `float` is now `Float`)</small>. The default behavior will be **return null**, but only if this is not a constructor nor a method returning void.
+
+In **JavaOperations.xtend**, in **javaReturnSpec**
+
+```diff
+- JavaGenUtils.javaQualifiedName(operation.type, operation.owner) + ' ' 
++ JavaGenUtils.javaQualifiedName(operation.type, operation.owner).toFirstUpper() + ' '
+```
+
+And in **javaOperationDeclaration**
+
+```diff
+- «IF mustGenerateBody(operation)»«JavaOperations.javaOperationImplementation(operation)»«ENDIF»
++ «IF mustGenerateBody(operation)»«JavaOperations.javaOperationImplementation(operation)»
++ «IF javaReturnSpec(operation) != 'void ' && !isConstructor(operation)»return null;«ENDIF»«ENDIF»
+```
+</details>
+</details>
+
+</div><div>
+
 #### Runtime Eclipse
 
 * Run > Run Configurations (or Debug Configurations)
@@ -306,7 +377,6 @@ You may also have to edit `org.eclipse.acceleo.module.sample` > src > `org/eclip
 * You may name the configuration "runtime_eclipse"
 * Press Run (resp. Debug)
 * And click on **proceed** if prompted.
-</div><div>
 
 #### Process With Code Generation
 
