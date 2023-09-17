@@ -217,8 +217,10 @@ You need **papyrus.designer**, **Xtend IDE**, and **acceleo**.
 * Restart <small>(when prompted)</small>
 </details>
 
+You'll then have to download a plugin for code generation:
+
 <details class="details-n">
-<summary>Xtend IDE</summary>
+<summary>Xtend IDE 🍬</summary>
 
 * Help > Install New Software
 * Enter `https://download.eclipse.org/modeling/tmf/xtext/updates/composite/latest/` and press enter
@@ -230,7 +232,9 @@ You need **papyrus.designer**, **Xtend IDE**, and **acceleo**.
 </details>
 
 <details class="details-n">
-<summary>Acceleo</summary>
+<summary>Acceleo 🍫</summary>
+
+Acceleo only generates code from class diagrams.
 
 * Help > Install New Software
 * Enter `https://download.eclipse.org/acceleo/updates/releases/3.7/R201911060712` and press enter
@@ -239,6 +243,16 @@ You need **papyrus.designer**, **Xtend IDE**, and **acceleo**.
 * Next
 * "I accept" and Finish <small>(wait, check the bottom right of papyrus)</small>
 * Restart <small>(when prompted)</small>
+</details>
+
+#### Improve the generation
+
+<p></p>
+
+<details class="details-n">
+<summary>Acceleo improvements</summary>
+
+Get started by opening the file: `/org.eclipse.acceleo.examples.uml2java/` > src > `/org/eclipse/acceleo/examples/uml2java/main/uml2java.mtl`.
 </details>
 
 #### Runtime Eclipse
@@ -258,12 +272,22 @@ Inside the Runtime Eclipse:
 * Existing Projects Into Workspace
 * Browse > Find SMModel
 * Once imported, double-click on the model
-* In the **Model explorer**
-   * Right-click on "Project SMModel" <small>(or your project)</small>
-   * Generate Code for State Machine
-   * Create JDT <small>(Yes > Set JDK to XXX > Finish)</small>
 
-It will generate a new model with the generated Java classes.
+For **Xtend** 🍬, in the Model Explorer:
+
+* Right-click on "Project XXX" <small>(your project)</small>
+* Generate Code for State Machine
+* Create JDT <small>(Yes > Set JDK to XXX > Finish)</small>
+
+For **Acceleo** 🍫, in the Project Explorer:
+
+* Expand "Project XXX" <small>(your project)</small> to see the UML file
+* Right-click on the UML file
+    * Acceleo Model To Text
+    * Generate UML2java
+* You got a folder **src-gen**
+
+It will generate a new model with the generated Java classes 👑.
 </div></div>
 
 <hr class="sep-both">
