@@ -4,7 +4,10 @@
 
 A database diagram seems to be an unofficial diagram mostly based on a simplified [Class Diagram]() with some semantic changes.
 
+<div class="text-center">
+
 ![_uml/basic.plantuml](_uml/basic.svg)
+</div>
 </div><div>
 
 XXX:
