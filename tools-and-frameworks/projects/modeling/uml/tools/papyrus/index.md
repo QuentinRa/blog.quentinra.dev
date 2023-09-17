@@ -169,20 +169,6 @@ As a reminder:
 
 * ➡️ If a class implements/realizes an interface, then the head of the arrow is on the interface.
 * ➡️ If a class extends/generalize another class, then the head of the arrow is on other class.
-</div><div>
-
-#### Types
-
-When clicking on an attribute, there is a field "Type" inside the Property View. Click on "... > Tree > EPackage Primitive Types" and select your type.
-
-![Set type Papyrus](_images/type.png)
-
-
-**Notes**
-
-* "Boolean [1]" after the type mean that the **cardinality** is **1** <small>(=this is a value, more than 1 means this is an array/a list/a queue/...)</small>
-* You could drag and drop a class inside the field, instead of picking a primitive type.
-* If you need to create a new type, use either `DataType` <small>(cannot be instanced)</small> or `Primitive type` or a class if none are what you want
 
 #### Layout/Appearance
 
@@ -192,6 +178,44 @@ You can right-click on a class:
 * **Filter**: show/hide attributes/operations/...
 * You can also give colors to classes
 * ...
+</div><div>
+
+#### Types
+
+When clicking on an attribute, there is a field "Type" inside the Property View. Click on "... > Tree > EPackage Primitive Types" and select your type.
+
+![Set type Papyrus](_images/type.png)
+
+**Notes**
+
+* "Boolean [1]" after the type mean that the **cardinality** is **1** <small>(=this is a value, more than 1 means this is an array/a list/a queue/...)</small>
+* You could drag and drop a class inside the field, instead of picking a primitive type.
+* If you need to create a new type, use either `DataType` <small>(cannot be instanced)</small> or `Primitive type` or a class if none are what you want
+
+**External Types**
+
+In Java, you may use classes such as `java.util.Arrays` in your diagrams. ⚠️ It's complicated to do it properly.
+
+<details class="details-n">
+<summary>Initial Configuration</summary>
+
+* Navigate to the model explorer and click on the root
+* Go to **Profile** > Profile Applications
+    * Next to "+" and "x", click on "apply registered profile"
+        * Add "Papyrus Code Generation Profile"
+        * Add "Papyrus Java Profile"
+* Add a new package (new child) "ExternalTypes". Click on it, then Profile, then Applied Stereotypes, and add NoCodeGen.
+* Create a stereotype <small>(Profile > +)</small> "External".
+* Create a new class diagram "Dependencies".
+</details>
+
+<details class="details-n">
+<summary>Step per dependency</summary>
+
+* Add your classname if the "External" Stereotype
+* Add your class to the diagram along with the external class
+* Create a usage relationship to request an import <small>(A to B means A imports B)</small>.
+</details>
 </div></div>
 
 <hr class="sep-both">
@@ -253,6 +277,26 @@ Acceleo only generates code from class diagrams.
 <summary>Acceleo improvements</summary>
 
 Get started by opening the file: `/org.eclipse.acceleo.examples.uml2java/` > src > `/org/eclipse/acceleo/examples/uml2java/main/uml2java.mtl`.
+
+You may also have to edit `org.eclipse.acceleo.module.sample` > src > `org/eclipse/acceleo/module/sample/`.
+
+<details class="details-n">
+<summary>Code samples</summary>
+
+```text!
+[for (p : Package | aModel.nestedPackage->sortedBy(name))]
+	[comment DONE then display Package's name/]
+	Package [p.name/]
+	[comment DONE and indent classes and interfaces names/]
+	[for (c : Class | p.packagedElement->filter(Class)->sortedBy(name))]
+		[generateClassElement(c)/]
+	[/for]
+	[for (i : Interface | p.packagedElement->filter(Interface)->sortedBy(name))]
+		[generateInterfaceElement(i)/]
+	[/for]
+[/for]
+```
+</details>
 </details>
 
 #### Runtime Eclipse
