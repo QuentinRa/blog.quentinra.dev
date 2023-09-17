@@ -28,12 +28,29 @@ Once the software is started, create a **new papyrus model**. A model is made of
 
 #### Model
 
-All diagrams are parts of a **model**. It allows us to connect diagrams and reuse what we defined in other diagrams inside each diagram.
+All diagrams are parts of a **model**. It allows us to connect diagrams and reuse what we defined in other diagrams between diagrams.
 
-#### XXX
+If you change the model, it will be changed everywhere.
 
-...
+<br>
+
+#### View and model
+
+**The Model explorer is the only thing you can trust.**
+
+The view may change and the model may not. It may occur if you try to rename something and the new name is invalid.
 </div><div>
+
+#### Perspectives
+
+Perspectives allow you to view your model from different perspectives. Ensure that you are using the Papyrus perspective when you are creating models.
+
+<div class="text-center">
+
+![Papyrus perspective](_images/perp1.png) and select ![Papyrus select perspective](_images/perp2.png)
+</div>
+
+If you use a perspective at least once, a shortcut will be available right next to the perspective menu. See also:  "Window > Perspective".
 </div></div>
 
 <hr class="sep-both">
@@ -124,14 +141,49 @@ Either by using this icon or <kbd>CTRL+{some arrow}</kbd>, **after selecting ele
 
 <hr class="sep-both">
 
+## Class diagrams in Papyrus
+
+<div class="row row-cols-md-2"><div>
+
+#### Associations
+
+When selecting an association, directed associations are created by default. After using an undirected association, it will use these.
+
+<div class="text-center">
+
+![associations](_images/associations.png)
+</div>
+
+After creating an association, in the **Property view** you can add a direction, set the multiplicity, transform it to a composition or aggregation, etc. rather easily.
+
+Near the corners of a class, wait a bit while your mouse is on a class and a shortcut to create associations will pop:
+
+<div class="text-center">
+
+![associations shortcut papyrus](_images/associations_shortcut.png)
+</div>
+</div><div>
+
+#### Layout/Appearance
+
+You can right-click on a class:
+
+* **Reformat**: reformat what you selected
+* **Filter**: show/hide attributes/operations/...
+* You can also give colors to classes
+* ...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [_old](_old/index.md)
 * [_IGL](igl/index.md)
+* [Papyrus CEA Guide](https://www.eclipse.org/papyrus/resources/TutorialOnPapyrusUSE_d20101001.pdf)
 </div><div>
 
 
