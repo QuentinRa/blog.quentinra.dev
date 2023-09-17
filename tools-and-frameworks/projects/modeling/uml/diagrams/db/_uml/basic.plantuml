@@ -1,0 +1,7 @@
+@startuml
+class Person {
+ ⊛ id: int
+ name: String
+}
+Person "0..* " .. "0..* " Job : work
+@enduml
