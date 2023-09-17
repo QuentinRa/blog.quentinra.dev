@@ -86,7 +86,7 @@ It's common, but there is a little star before every edited filename.
 
 <br>
 
-#### Use icons
+#### Icons for Palette
 
 The palette has quite a lot of elements. It's fasted and easier to change the palette view to a list of icons <small>(Right-click to change the view)</small>.
 
@@ -98,7 +98,28 @@ The palette has quite a lot of elements. It's fasted and easier to change the pa
 
 </div><div>
 
-...
+#### Dark Mode
+
+Navigate to `Window > Preferences` and set your settings.
+
+<br>
+
+#### Fast creation of items
+
+From the palette, you can double-click on something to create a new element, there is no need to drag-and-drop it.
+
+<br>
+
+#### Align items
+
+It's kinda useless but to create nicer diagrams, you may use "align" to cleanly arrange items of a diagram.
+
+<div class="text-center">
+
+![Align classes](_images/align.png)
+</div>
+
+Either by using this icon or <kbd>CTRL+{some arrow}</kbd>, **after selecting elements**, you can align every class based on the position of the last selected class. You can use "distribute" too.
 </div></div>
 
 <hr class="sep-both">
