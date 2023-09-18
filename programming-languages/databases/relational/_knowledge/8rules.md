@@ -71,5 +71,25 @@ What rules to apply?
 
 </div><div>
 
-...
+#### Rule 4: 1 or 0..1 to 0..1 or 1 relationships
+
+Missing.
+
+<br>
+
+#### Rule 5: self relationships
+
+A self-relationship is the same as a relationship between two classes. Refer to rules 2 to 4.
+
+<br>
+
+#### Rule 6: generalizations
+
+Missing.
+
+<br>
+
+#### Rule 7: n-ary associations
+
+Missing.
 </div></div>
