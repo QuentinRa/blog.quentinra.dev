@@ -4,4 +4,9 @@ class Patriarch {
   <u>clanName</u>: String
   age: int
 }
+
+class Member {
+    name: String
+    <u>secretCode</u>: String
+}
 @enduml

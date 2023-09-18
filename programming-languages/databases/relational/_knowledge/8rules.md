@@ -15,13 +15,14 @@ Correspond to the relation:
 
 ```php!
 Patriarch(name: String, #clanName: String, age: int)
+Member(name: String, #secretCode: String)
 ```
 
 <br>
 
 #### Rule 2: n..* to m..* relationships
 
-The class below:
+The association `Leads` below:
 
 <div class="text-center">
 
@@ -31,14 +32,22 @@ The class below:
 Correspond to the relation:
 
 ```php!
-Patriarch(name: String, #clanName: String, age: int)
-Member(name: String, #secretCode: String)
 Leads(#clanName=>Patriarch.clanName, #secretCode=>Member.secretCode, years: int)
+```
 
-clan IN Leads
+And the constraint <small>(as there is a 1..*)</small>:
+
+```php!
+clanName IN Leads
 ```
 
 ➡️ Alternatives syntax are `#clanName=>Patriarch(clanName)`/...
+
+<br>
+
+#### Rule 3: * to 0..1 or 1 relationships
+
+...
 </div><div>
 
 ...
