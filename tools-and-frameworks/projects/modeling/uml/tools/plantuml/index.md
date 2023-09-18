@@ -23,3 +23,22 @@ $ docker run --rm -v $(pwd):/data plantuml/plantuml -tsvg /data/sample.pu
 CMD> docker run --rm -v %cd%:/data plantuml/plantuml -tsvg /data/sample.pu
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## Sample diagrams
+
+<div class="row row-cols-md-2"><div>
+
+#### Class Diagram
+
+```php!
+@startuml
+class ClassName {
+  attribute: Type
+  <u>underlined attribute</u>: Type
+}
+@enduml
+```
+</div><div>
+</div></div>
