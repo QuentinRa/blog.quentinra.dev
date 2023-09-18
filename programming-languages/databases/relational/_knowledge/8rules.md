@@ -22,7 +22,7 @@ Unit(#name: String, location: String)
 
 #### Rule 2: n..* to m..* relationships
 
-The association `Leads` below:
+The association `Belong` below:
 
 <div class="text-center">
 
@@ -45,9 +45,30 @@ secretCode IN Belong
 
 <br>
 
-#### Rule 3: * to 0..1 or 1 relationships
+#### Rule 3: n..* to 0..1 or 1 relationships
 
-...
+The association `Belong` below:
+
+<div class="text-center">
+
+![_uml/rule3.pu](_uml/rule3.svg)
+</div>
+
+Correspond to the relation:
+
+```php!
+Agent(name: String, #secretCode: String, #unitName: Unit.name, age: int)
+
+Unit in Agent
+```
+
+What rules to apply?
+
+* Given `A(0..1)` and `B(???)`, the identifier is A is added in B <small>(🔄️)</small>
+* Given `A(1)` and `B(???)`, the identifier of A in B is NOT NULL <small>(🔄️)</small>
+* Given `A(???)` and `B(1..*)`, every identifier in A must appear in B at least once<small>(🔄️)</small>
+* The association class goes to the side with `n..*`
+
 </div><div>
 
 ...
