@@ -1,0 +1,7 @@
+@startuml
+class Patriarch {
+  name: String
+  <u>clanName</u>: String
+  age: int
+}
+@enduml
