@@ -20,7 +20,7 @@ PS> schtasks /query /tn example_task /fo list /v
 
 When inspecting tasks, look for the binary in **Task To Run**. You may be able to **replace**, **edit** or **inject** some code in the binary.
 
-* Check your [permissions](/operating-systems/windows/knowledge/index.md#permissions-and-users)
+* Check your [permissions](/operating-systems/windows/_knowledge/index.md#permissions-and-users)
 
 ```shell!
 PS> icacls task_to_run

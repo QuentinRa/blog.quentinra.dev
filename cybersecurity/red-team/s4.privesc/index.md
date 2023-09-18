@@ -11,7 +11,7 @@ This is an important step otherwise we may not have enough privilege to access d
 We want to access account with the higher level of privileges:
 
 * `root` > `sudoers` > ALL on [Linux](/operating-systems/linux/knowledge/index.md#sudo)
-* `NT AUTHORITY\SYSTEM` > `Administrator` > ALL on [Windows](/operating-systems/windows/knowledge/index.md#permissions-and-users)
+* `NT AUTHORITY\SYSTEM` > `Administrator` > ALL on [Windows](/operating-systems/windows/_knowledge/index.md#permissions-and-users)
 </div><div>
 
 Escalation can be **horizontally**/laterally <small>(another user with the same level of privileges)</small> and **vertically** <small>(a higher level of privileges)</small>.
@@ -67,7 +67,7 @@ There are many **automated scripts** that will investigate usual places, service
 
 <div class="row row-cols-md-2"><div>
 
-[Windows](/operating-systems/windows/knowledge/index.md) privilege escalation may be achieved by exploiting:
+[Windows](/operating-systems/windows/_knowledge/index.md) privilege escalation may be achieved by exploiting:
 
 * 💎 Exploiting [UAC](windows/uac.md)
 * ⏰ Exploiting [scheduled tasks](windows/tasks.md)
