@@ -1,0 +1,20 @@
+@startuml
+
+class Patriarch {
+    name: String
+    <u>clanName</u>: String
+    age : int
+}
+
+class Member {
+    name: String
+    <u>secretCode</u>: String
+}
+
+Patriarch "0..*" - "1..*" Member
+(Patriarch, Member) "*" .. "*" Leads
+
+class Leads {
+    years: int
+}
+@enduml

@@ -8,7 +8,7 @@ The class below:
 
 <div class="text-center">
 
-![_uml/basic.pu](_uml/basic.svg)
+![_uml/rule1.pu](_uml/rule1.svg)
 </div>
 
 Correspond to the relation:
@@ -16,6 +16,29 @@ Correspond to the relation:
 ```php!
 Patriarch(name: String, #clanName: String, age: int)
 ```
+
+<br>
+
+#### Rule 2: n..* to m..* relationships
+
+The class below:
+
+<div class="text-center">
+
+![_uml/rule2.pu](_uml/rule2.svg)
+</div>
+
+Correspond to the relation:
+
+```php!
+Patriarch(name: String, #clanName: String, age: int)
+Member(name: String, #secretCode: String)
+Leads(#clanName=>Patriarch.clanName, #secretCode=>Member.secretCode, years: int)
+
+clan IN Leads
+```
+
+➡️ Alternatives syntax are `#clanName=>Patriarch(clanName)`/...
 </div><div>
 
 ...
