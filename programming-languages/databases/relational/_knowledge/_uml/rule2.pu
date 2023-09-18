@@ -1,20 +1,20 @@
 @startuml
 
-class Patriarch {
-    name: String
-    <u>clanName</u>: String
-    age : int
+class Agent {
+  name: String
+  age: int
+  <u>secretCode</u>: String
 }
 
-class Member {
-    name: String
-    <u>secretCode</u>: String
+class Unit {
+    <u>name</u>: String
+    location: String
 }
 
-Patriarch "0..*" - "1..*" Member
-(Patriarch, Member) "*" .. "*" Leads
+Agent "0..*" - "1..*" Unit
+(Agent, Unit) "*" .. "*" Belong
 
-class Leads {
+class Belong {
     years: int
 }
 @enduml

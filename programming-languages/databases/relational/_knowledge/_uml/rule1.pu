@@ -1,12 +1,12 @@
 @startuml
-class Patriarch {
+class Agent {
   name: String
-  <u>clanName</u>: String
   age: int
+  <u>secretCode</u>: String
 }
 
-class Member {
-    name: String
-    <u>secretCode</u>: String
+class Unit {
+    <u>name</u>: String
+    location: String
 }
 @enduml

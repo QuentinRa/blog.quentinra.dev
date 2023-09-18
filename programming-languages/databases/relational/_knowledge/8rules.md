@@ -14,8 +14,8 @@ The class below:
 Correspond to the relation:
 
 ```php!
-Patriarch(name: String, #clanName: String, age: int)
-Member(name: String, #secretCode: String)
+Agent(name: String, #secretCode: String, age: int)
+Unit(#name: String, location: String)
 ```
 
 <br>
@@ -32,16 +32,16 @@ The association `Leads` below:
 Correspond to the relation:
 
 ```php!
-Leads(#clanName=>Patriarch.clanName, #secretCode=>Member.secretCode, years: int)
+Belong(#unitName=>Unit.name, #secretCode=>Agent.secretCode, years: int)
 ```
 
 And the constraint <small>(as there is a 1..*)</small>:
 
 ```php!
-clanName IN Leads
+secretCode IN Belong
 ```
 
-➡️ Alternatives syntax are `#clanName=>Patriarch(clanName)`/...
+➡️ Alternatives syntax are `#unitName=>Unit(name)`/...
 
 <br>
 
