@@ -56,11 +56,3 @@ The following constraints, are applied on every association **linked to a line `
 * **partition/exclusive** ``{XT}, {P}, {+}``: only 1 association exist
 
 For the constraint of inclusion, we are not drawing a line, but an arrow from the association X to the association Y. It means that X can only exist if Y exists.
-
-<hr class="sl">
-
-## Packages
-
-You can group classes by packages (=folders) to make something cleaner. Usually, a package name is a path, starting from the project folder. We are using ``.`` as the folder separator. You will usually see names like ``net.sourceforge.plantuml`` for the ``net/sourceforge/plantuml/`` folder.
-
-![packages in UML](images/u-HoA2v9B2efpStXuYf8JCvEJ4zLK7BEIImkpanMSCxFoKbDBidCpojMKb1s0GE5QYu51V-aBA2uWasDhgw2Or5HOgLFPd49Lot2YBpK4htY_DAYvDIq_ABqLBs2dCGya2KOkbrIS_CDWM9WMa4B8c04CieXDIy5g0C0.png)

@@ -85,6 +85,30 @@ Each attribute must have at least a name followed by parenthesis. It may have a 
 
 <hr class="sep-both">
 
+## Associations and multiplicity
+
+<div class="row row-cols-md-2"><div>
+
+Associations represent which classes are linked to which other classes.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Packages
+
+<div class="row row-cols-md-2"><div>
+
+Packages are used to group and sort classes.
+</div><div>
+
+![system](_uml/system.svg)
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
