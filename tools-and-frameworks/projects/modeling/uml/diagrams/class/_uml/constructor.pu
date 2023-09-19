@@ -1,0 +1,9 @@
+@startuml
+class Car {
+  - make: String
+  - model: String
+  <<constructor>> + Car(make: String, model: String)
+  + getMake(): String
+  + updateDetails(newMake: String, newModel: String): void
+}
+@enduml

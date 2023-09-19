@@ -1,0 +1,5 @@
+@startuml
+class AClass {
+  + A_CONSTANT: int = 9 {final}
+}
+@enduml

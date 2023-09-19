@@ -1,55 +1,15 @@
 # Class diagram
 
 * The class' name must starts with an uppercase, using CamelCase syntax <small>(upperCamelCase)</small>
-* The object's name is <u>underlined</u>, you can think of this name as the **variable name** storing this object
 
-<hr class="sr">
-
-## Attributes
-
-Attributes got 
-
-* a visibility
-    * **public** (+, read/write for all classes, default mode)
-    * **private** (-, read/write only for the class's methods)
-    * **package** (~, read/write for all classes inside the class's folder)
-    * **protected** (#, same as package, but read/write for all classes inheriting our class)
-* a name
-* a [type](types.md)
-* a default value (optional)
+Attributes
 
 **Notes**
 
 * if an attribute has a ``/`` before its visibility, this is a **derived attribute**, meaning that its value is calculated using other attributes.
-* an attribute **underlined** is static, meaning that the attribute is shared by all instances, and it belongs to the class
-* a constant is usually static, I'm doing that by adding a ``{final}`` after the type (=OCL syntax)
-
-![final attribute UML](images/SoWkIImgAStDuUBaTCv9B2wsKiZCAr5mZ7VszmiESVGBKR1Li5IeJilCIyof1QfnICrB0Qe60000.png)
-
 * **composite attributes** are attributes made of more attributes. I have only seen that used in JavaScript, since you can create an object that does not have a class
   
 ![composite attribute UML](images/u-HqA2v9B2efpStXukHCpaaiBbPm1f6f2jL00SxgjCpKd9HQXUJyt8ByuioIL8N4afAYpAHI8CiAMO4kMCBGIg6aiY0LKy88Ag70oLaBb7L8pKi1MWa0.png)
-
-<hr class="sl">
-
-## Operations
-
-An operation is the UML name for a method/function. You will have
-
-* a visibility
-* a function name (usually in lowerCamelCase)
-* some arguments
-  * separated by a comma
-  * name:type
-* a return type <small>(none isn't the same as void, like a Java constructor isn't returning void but "nothing")</small>
-
-**Ex**: ``+ getName() : String`` is
-a public ("+") operation named "getName" taking no arguments ("()") and returning a String (": String").
-
-**Notes**
-
-* If your method is creating/destroying objects, then you should add `<<constructor>>`/``<<create>>``, and ``<<destroy>>`` after the visibility
-* an operation **underlined** is static (ex: you don't new an object to call an operation, you can call it on the class, like Math.round)
 
 <hr class="sr">
 
