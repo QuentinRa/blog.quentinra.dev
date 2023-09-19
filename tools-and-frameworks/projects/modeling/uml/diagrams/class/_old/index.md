@@ -1,20 +1,5 @@
 # Class diagram
 
-[Go back](../index.md)
-
-A class diagram is used to represent classes and objects, in object-oriented languages. The database diagram is also quite similar to the class diagram, so you will see this one a lot.
-
-![class](images/NS-n2i903CRn.png)
-
-A **Class** is an abstract representation of a concept, like a person here. We have what we call
-
-* field / attributes (age, name, ...)
-* operations (age)
-
-When we are giving values to our attributes, we are creating an **instance** of the class called an **object** (Gamma here).
-
-Notes
-
 * The class' name must starts with an uppercase, using CamelCase syntax <small>(upperCamelCase)</small>
 * The object's name is <u>underlined</u>, you can think of this name as the **variable name** storing this object
 

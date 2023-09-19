@@ -1,0 +1,15 @@
+@startuml
+class Book {
+  - title: String
+  - author: String
+  + getDetails(): String
+}
+
+class Library {
+  - name: String
+  - location: String
+  + addBook(book: Book): void
+  + removeBook(book: Book): void
+  + listBooks(): List<Book>
+}
+@enduml
