@@ -17,7 +17,7 @@ $ mkdir openscap && cd openscap
 ```dockerfile!
 FROM fedora:latest
 
-RUN dnf -y upgrade && \
+RUN dnf -y update && dnf -y upgrade && \
     dnf -y install cmake ninja-build openscap-utils python3-jinja2 python3-PyYAML && \
     dnf clean all
 
