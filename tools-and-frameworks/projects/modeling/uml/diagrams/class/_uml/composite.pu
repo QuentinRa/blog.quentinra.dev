@@ -1,0 +1,7 @@
+@startuml
+class ClassName {
+    {field} - compositeAttribute:
+    {field}   attribute1: SomeType
+    {field}   attribute2: SomeType
+}
+@enduml

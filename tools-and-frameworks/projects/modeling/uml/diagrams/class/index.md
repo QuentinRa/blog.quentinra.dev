@@ -57,6 +57,10 @@ In UML, such members are **underlined** 🌵.
 
 <div class="row row-cols-md-2"><div>
 
+#### Classes
+
+Classes are made both of attributes and methods separated by a line. The name of the class must always start with an uppercase.
+
 #### Attributes
 
 Each attribute must have at least a name and a type. It may have a modifier and a default value.
@@ -66,6 +70,24 @@ You can have OCL constraints such as `{final}` right-after the attribute.
 <div class="text-center">
 
 ![attribute](_uml/attribute.svg)
+</div>
+
+* Derived attributes
+
+Derived attributes are attributes whose values is calculated using other attributes. They are usually created for convenience.
+
+<div class="text-center">
+
+![derived attribute UML](_uml/derived.svg)
+</div>
+
+* Composite attributes
+
+Composite attributes are attributes composed of multiple attributes. 
+
+<div class="text-center">
+
+![composite attribute UML](_uml/composite.svg)
 </div>
 </div><div>
 

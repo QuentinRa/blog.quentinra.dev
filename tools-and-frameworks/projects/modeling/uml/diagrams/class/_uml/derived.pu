@@ -1,0 +1,5 @@
+@startuml
+class ClassName {
+  + /derivedAttribute: SomeType
+}
+@enduml

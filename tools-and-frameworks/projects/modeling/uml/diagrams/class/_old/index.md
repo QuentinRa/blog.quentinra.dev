@@ -1,15 +1,12 @@
 # Class diagram
 
-* The class' name must starts with an uppercase, using CamelCase syntax <small>(upperCamelCase)</small>
-
 Attributes
 
 **Notes**
 
-* if an attribute has a ``/`` before its visibility, this is a **derived attribute**, meaning that its value is calculated using other attributes.
 * **composite attributes** are attributes made of more attributes. I have only seen that used in JavaScript, since you can create an object that does not have a class
   
-![composite attribute UML](images/u-HqA2v9B2efpStXukHCpaaiBbPm1f6f2jL00SxgjCpKd9HQXUJyt8ByuioIL8N4afAYpAHI8CiAMO4kMCBGIg6aiY0LKy88Ag70oLaBb7L8pKi1MWa0.png)
+![composite attribute UML]()
 
 <hr class="sr">
 
