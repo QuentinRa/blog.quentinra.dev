@@ -1,15 +1,9 @@
 # Associations and multiplicity
 
-Now that you can write a class, we will look at the relationships between classes, represented by what we call associations/relationships. An association is a representation of a link between two classes. We usually write a multiplicity "n..m" characterizing how many instances of the classes are linked with how many of the other classes. We are also adding a name to remember what kind of link it is.
-
-![multiplicity](images/Syv9B2vsL53AKr1IqDLLKCe5qiuWCIS5Ao0pBp4tLGa0.png)
-
-* [Multiplicity](content/multiplicity.md)
 * [association classes](content/association-classes.md)
 * an association from A to A is called self-association (``association réflexive``)
 * you can add a direction
 * adding a name on the association is optional
-* you can have multiples associations between 2 classes
 
 And sometimes you may declare an attribute having the type of another class inside your diagram. Some programmers are adding the attribute **on the association** rather than **inside the class**, but not everyone does this.
 

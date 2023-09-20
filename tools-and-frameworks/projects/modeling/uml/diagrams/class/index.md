@@ -121,10 +121,37 @@ Associations represent which classes are linked to which other classes.
 
 Associations are not necessarily representing attributes while most do.
 
+* There could be multiple associations between two classes
+* You can add arrows if the association is unidirectional. By default, there is no associations meaning it's bidirectional.
+
+<br>
+
+#### Multiplicity
+
+The multiplicity indicates how many instances of a class are associated with instances of another class.
+
+* There are **a..b** instances of **B** associated with **A**.
+* There are **c..d** instances of **A** associated with **B**.
+
 <div class="text-center">
 
 ![association](_uml/association.svg)
 </div>
+
+<details class="details-e">
+<summary>List of possible values</summary>
+
+* <kbd>n</kbd>: same as <kbd>n..n</kbd>
+* <kbd>*</kbd>: same as <kbd>0..\*</kbd>
+* <kbd>0..1</kbd>: 0 or 1
+* <kbd>0..*</kbd>: same as <kbd>\*</kbd>
+* <kbd>1..*</kbd>: 1 or more
+* <kbd>n..*</kbd>: <kbd>n</kbd> or more
+* <kbd>n..m</kbd>: at least <kbd>n</kbd>, and up to <kbd>m</kbd>
+* <kbd>n..n</kbd>: exactly <kbd>n</kbd>
+
+For instance, we could replace <kbd>a..b</kbd> with <kbd>0..1</kbd> <small>(meaning 0 or 1)</small> or with <kbd>*</kbd> (0 or more).
+</details>
 </div><div>
 
 ...
