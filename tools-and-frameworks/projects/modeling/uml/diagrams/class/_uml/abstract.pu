@@ -1,0 +1,13 @@
+@startuml
+abstract class AbstractClass {
+  + <<abstract>> <i>abstractMethod()</i>: void
+  # concreteMethod(): void
+}
+
+class ConcreteClass {
+  + abstractMethod(): void
+  + concreteMethod(): void
+}
+
+AbstractClass <|-- ConcreteClass
+@enduml

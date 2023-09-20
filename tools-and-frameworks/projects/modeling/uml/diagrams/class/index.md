@@ -203,6 +203,23 @@ Generalization is quite used to factorize attributes and methods in a "parent" c
 </div>
 
 ⚠️ Commonly, a child/class can only have **one** parent/super class.
+
+<br>
+
+#### Abstract classes
+
+An abstract class is a normal class aside from the fact that we are allowed to have `<<abstract>>` methods. It means that such class won't write the code for the method and declaring that its subclass will.
+
+<div class="text-center">
+
+![abstract](_uml/abstract.svg)
+</div>
+
+💡 Classes generalizing an abstract class are abstract too unless they implement the abstract methods.
+
+💡 Use italic and/or `<<abstract>>` to mark abstract methods/classes.
+
+🛣️ It's quite used for generic code. We would create a method: `eat(food: Food)` with `Food` an abstract class. Any instance of a class implementing food can be used with `eat`.
 </div><div>
 
 ...
