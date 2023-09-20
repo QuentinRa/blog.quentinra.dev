@@ -1,0 +1,7 @@
+@startuml
+class Addition {
+  - number1: NumberType
+  - number2: NumberType
+  + performAddition(): NumberType
+}
+@enduml

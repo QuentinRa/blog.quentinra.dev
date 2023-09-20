@@ -91,7 +91,7 @@ Composite attributes are attributes composed of multiple attributes.
 </div>
 </div><div>
 
-#### Operation
+#### Operations
 
 Each attribute must have at least a name followed by parenthesis. It may have a modifier, parameters <small>(comma-separated)</small>, and a return type.
 
@@ -112,6 +112,19 @@ Each attribute must have at least a name followed by parenthesis. It may have a 
 <div class="row row-cols-md-2"><div>
 
 Associations represent which classes are linked to which other classes.
+
+<div class="text-center">
+
+![association_1](_uml/association_1.svg)&nbsp;&nbsp;&nbsp;
+![association_2](_uml/association_2.svg)
+</div>
+
+Associations are not necessarily representing attributes while most do.
+
+<div class="text-center">
+
+![association](_uml/association.svg)
+</div>
 </div><div>
 
 ...

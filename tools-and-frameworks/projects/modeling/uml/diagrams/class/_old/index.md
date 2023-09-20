@@ -1,16 +1,4 @@
-# Class diagram
-
-Attributes
-
-**Notes**
-
-* **composite attributes** are attributes made of more attributes. I have only seen that used in JavaScript, since you can create an object that does not have a class
-  
-![composite attribute UML]()
-
-<hr class="sr">
-
-## Associations and multiplicity
+# Associations and multiplicity
 
 Now that you can write a class, we will look at the relationships between classes, represented by what we call associations/relationships. An association is a representation of a link between two classes. We usually write a multiplicity "n..m" characterizing how many instances of the classes are linked with how many of the other classes. We are also adding a name to remember what kind of link it is.
 
