@@ -263,6 +263,32 @@ Packages are used to group and sort classes.
 
 <hr class="sep-both">
 
+## Special associations
+
+<div class="row row-cols-md-2"><div>
+
+#### Compositions
+
+Composition is a special association for a `1` to `n..m` relationship where a "**part**" class from `n..m` side is managed <small>(created, used, destroyed)</small> by the other "**composite**" class. The part can't exist without the composite.
+
+<div class="text-center">
+
+![composite class UML](_uml/ccomposite.svg)
+</div>
+</div><div>
+
+#### Aggregations
+
+An aggregation is a special association for a `1` to `n..m` relationship where a "**aggregator**" class from `n..m` side has a superior relationship over "**aggregated**"  classes.
+
+<div class="text-center">
+
+![composite class UML](_uml/aggregate.svg)
+</div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

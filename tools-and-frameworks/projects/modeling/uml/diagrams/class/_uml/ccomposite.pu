@@ -1,0 +1,3 @@
+@startuml
+Composite *-- " Part " : composition
+@enduml

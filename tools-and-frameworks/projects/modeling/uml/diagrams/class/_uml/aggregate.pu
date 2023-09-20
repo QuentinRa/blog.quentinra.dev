@@ -1,0 +1,6 @@
+@startuml
+aggregator o-- "* " "aggregated"
+set o-- "* " "element"
+all o-- "* " "part"
+teacher o-- "* " "student"
+@enduml
