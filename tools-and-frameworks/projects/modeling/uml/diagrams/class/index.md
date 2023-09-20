@@ -184,6 +184,32 @@ For the inclusion constraint, we use an arrow instead of a dotted line. If the a
 
 <hr class="sep-both">
 
+## Inheritance
+
+<div class="row row-cols-md-2"><div>
+
+#### Generalization
+
+Generalization is quite used to factorize attributes and methods in a "parent" class. Given a class B generalizing A, the class B will have:
+
+* `public` members in A
+* `protected` members in A
+* members declared in B
+
+
+<div class="text-center">
+
+![generalization](_uml/generalization.svg)
+</div>
+
+⚠️ Commonly, a child/class can only have **one** parent/super class.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Packages
 
 <div class="row row-cols-md-2"><div>

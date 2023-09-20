@@ -1,0 +1,4 @@
+@startuml
+Parent <|-- Child
+SuperClass <|-- Class
+@enduml
