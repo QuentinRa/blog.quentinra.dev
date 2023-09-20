@@ -155,6 +155,16 @@ For instance, we could replace <kbd>a..b</kbd> with <kbd>0..1</kbd> <small>(mean
 </details>
 </div><div>
 
+#### Association classes
+
+Association classes are used to represent a relationship with additional attributes. The name of the class is the same of the relationship.
+
+![assos_class](_uml/assos_class.svg)
+
+For instance, `Class1` could be a Student, `Class2` a course, and we could have an association class `Enrollment` linking the two.
+
+<br>
+
 #### Constraints on associations
 
 It's possible to add constraints on associations, such as two associations being mutually exclusive <small>(e.g. can't have both)</small>.

@@ -1,7 +1,5 @@
 # Associations and multiplicity
 
-* [association classes](content/association-classes.md)
-
 You are going to use the generalization a lot to factorize your code logic, aggregation/compositions are used a lot, but they aren't really useful.
 
 * [generalization](content/generalization.md)

@@ -1,0 +1,17 @@
+@startuml
+class Class1 {
+  + attribute1: Type
+}
+
+class Class2 {
+  + attribute2: Type
+}
+
+class AssociationClass {
+  + attribute3: Type
+  + attribute4: Type
+}
+
+Class1 "0..1" - "0..*" Class2
+(Class1, Class2) .. AssociationClass
+@enduml
