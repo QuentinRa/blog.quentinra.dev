@@ -123,6 +123,7 @@ Associations are not necessarily representing attributes while most do.
 
 * There could be multiple associations between two classes
 * You can add arrows if the association is unidirectional. By default, there is no associations meaning it's bidirectional.
+* An association from the class to itself is called self association
 
 <br>
 
@@ -154,7 +155,21 @@ For instance, we could replace <kbd>a..b</kbd> with <kbd>0..1</kbd> <small>(mean
 </details>
 </div><div>
 
-...
+#### Constraints on associations
+
+It's possible to add constraints on associations, such as two associations being mutually exclusive <small>(e.g. can't have both)</small>.
+
+Link two associations or more with a dotted line and add constraints on it that will be applied on all linked associations.
+
+* **Inclusion** `{IN}/{SUBSET}/{I}`: either all associations exist or none
+* **Exclusion** `{X}`: only one may exist
+* **Equality/Simultaneity** ``{=}, {AND}, {S}``: all associations must exist
+* **Total/Coverage/Inclusive** ``{T}, {OR}``: at least 1 association exist
+* **Partition/Exclusive** ``{XT}, {P}, {+}``: only 1 association exist
+
+For the inclusion constraint, we use an arrow instead of a dotted line. If the arrow goes from X to Y, it means that X can only exist if Y exists.
+
+💡 You can also use this syntax to write dynamic constraints, such as `{we can't buy before ordering}`.
 </div></div>
 
 <hr class="sep-both">
