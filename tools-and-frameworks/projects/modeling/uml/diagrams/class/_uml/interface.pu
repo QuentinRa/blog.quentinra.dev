@@ -1,0 +1,6 @@
+@startuml
+class ATM implements Machine
+class Client
+
+Client ..> Machine
+@enduml

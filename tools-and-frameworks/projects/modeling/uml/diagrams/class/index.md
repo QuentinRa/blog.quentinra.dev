@@ -222,7 +222,22 @@ An abstract class is a normal class aside from the fact that we are allowed to h
 🛣️ It's quite used for generic code. We would create a method: `eat(food: Food)` with `Food` an abstract class. Any instance of a class implementing food can be used with `eat`.
 </div><div>
 
-...
+#### Interfaces
+
+There is a limit to abstract classes as we can only inherit from one class <small>(in most languages)</small>. Interfaces are classes only with abstract public methods. You can realize <small>("inherit")</small> multiple interfaces.
+
+➡️ Interfaces can actually have more than methods, such as `class members`, `concrete methods` <small>(`<<default>>` keyword)</small> and `private methods`.
+
+<div class="text-center">
+
+![interface](_uml/interface.svg)
+
+Machine is an interface implemented by `ATM` and used by `Client`.
+</div>
+
+There is an alternative design called lollipop representation. `Interface1` is implemented by `Class1` and used by `Class2`.
+
+![interface lollipop](_uml/lollipop.png)
 </div></div>
 
 <hr class="sep-both">
