@@ -18,6 +18,7 @@ Stuff that I found, but never read/used yet.
 
 * the object name is underlined
 * you can think of it as the variable name storing the object
+* instances of associations are called links
 </div><div>
 
 

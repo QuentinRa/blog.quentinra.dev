@@ -48,7 +48,16 @@ They are commonly used for constants attributes, utilities...
 In UML, such members are **underlined** 🌵.
 </div><div>
 
-...
+#### Types
+
+Natively, there are not many UML types so most are adding their own types based on what types are defined in the language they target.
+
+* `void` is used for "nothing"
+* `int` is used for "a number"
+* `float/real/double` is used for "a real"
+* `boolean` is used for "a boolean" (true/false)
+* `string` is used for "a text"
+* ...
 </div></div>
 
 <hr class="sep-both">
