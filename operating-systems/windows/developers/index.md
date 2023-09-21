@@ -2,10 +2,20 @@
 
 <div class="row row-cols-md-2"><div>
 
-...
+Windows is commonly used by developers 🍃. While it is less convenient than Linux in some ways, there are some ways to make it suitable for developing software and everything else 🐊.
+
+* [WSL]() is commonly used to get a Linux console environment
+* [Cygwin or MinGW]() are commonly used to get a Linux console environment or to get `.exe` versions of Linux commands.
+* [VSCode](/tools-and-frameworks/editors/vscode/index.md) or [JetBrains](/tools-and-frameworks/editors/jetbrains/_general/index.md) are commonly used as editors to write code
+* [WAMP](/operating-systems/webservers/apache/wamp.md) is often used to emulate a webserver for web development
+* ...
 </div><div>
 
-...
+While not specific to Windows, these are often used instead of the Linux command:
+
+* [FileZilla]() mostly for FTP
+* [Putty MobaXTerm...]() mostly for SSH, FTP...
+* ...
 </div></div>
 
 <hr class="sep-both">
