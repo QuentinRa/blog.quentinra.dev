@@ -2,24 +2,16 @@
 
 <div class="row row-cols-md-2"><div>
 
-...
+An object diagram is a concrete version of a [class diagram](../class/index.md). It means we are instantiating classes into `variables` and we are giving values to all attributes. Associations are instantiated into links.
+
+<div class="text-center">
+
+![object_diagram](_uml/example.svg)
+</div>
 </div><div>
 
-...
-</div></div>
+**Some notes** 📝
 
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-* the object name is underlined
-* you can think of it as the variable name storing the object
-* instances of associations are called links
-</div><div>
-
-
+* The object name is underlined
+* Links are indicating which variable "contains" <small>(here, the association is called "contains")</small> others
 </div></div>

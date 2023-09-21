@@ -1,0 +1,19 @@
+@startuml
+object "<u>book1</u>: Book" as book1 {
+  - title: "Sample Title"
+  - author: "Sample Author"
+}
+object "<u>book2</u>: Book" as book2 {
+  - title: "Another Title"
+  - author: "Another Author"
+}
+
+object "<u>library</u>: Library" as library {
+  - name: "My Library"
+  - location: "Library Location"
+}
+
+book1 --> library : contains
+book2 --> library : contains
+
+@enduml
