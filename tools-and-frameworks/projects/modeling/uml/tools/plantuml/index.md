@@ -8,6 +8,8 @@
 * [Online Converter](https://www.plantuml.com/plantuml/uml/) <small>(💫)</small>
 * [Unofficial Online Converter](https://www.planttext.com/)  <small>(✍️)</small>
 * [PlantUML GUI](https://plantuml.com/gui) <small>(☕)</small>
+
+Most [diagrams](/tools-and-frameworks/projects/modeling/uml/_knowledge/index.md) on this website were made using PlantUML.
 </div><div>
 
 You can install the converter using [docker](/operating-systems/others/virtualization/docker/index.md):
@@ -22,23 +24,4 @@ To convert `sample.pu` <small>(in the current folder)</small> to `sample.svg`:
 $ docker run --rm -v $(pwd):/data plantuml/plantuml -tsvg /data/sample.pu
 CMD> docker run --rm -v %cd%:/data plantuml/plantuml -tsvg /data/sample.pu
 ```
-</div></div>
-
-<hr class="sep-both">
-
-## Sample diagrams
-
-<div class="row row-cols-md-2"><div>
-
-#### Class Diagram
-
-```php!
-@startuml
-class ClassName {
-  attribute: Type
-  <u>underlined attribute</u>: Type
-}
-@enduml
-```
-</div><div>
 </div></div>
