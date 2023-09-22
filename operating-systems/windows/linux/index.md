@@ -1,22 +1,4 @@
-# Windows Subsystem for Linux (WSL)
-
-<div class="row row-cols-md-2"><div>
-</div><div>
-
-<details class="details-e">
-<summary>Instead of adding a GUI, use WSL in your GUI</summary>
-
-Instead of adding a low-quality graphical user interface, it would be better to use WSL directly in your text editor (VSCode...), or directly in your IDE (IntelliJ...).
-
-* [IntelliJ](https://www.jetbrains.com/help/idea/how-to-use-wsl-development-environment-in-product.html) can use a Java installed on a WSL, detect installed WSLs, and create a project on one of them.
-* [Configure CLion](https://www.jetbrains.com/help/clion/how-to-use-wsl-development-environment-in-product.html) to use a WSL C Compiler, which make functions such as `fork()` available
-* [Get started using VSCode with WSL](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode), or this for [C/C++, and WSL](https://code.visualstudio.com/docs/cpp/config-wsl)
-</details>
-</div></div>
-
-<hr class="sr">
-
-## Cygwin
+# Cygwin
 
 <div class="row row-cols-md-2"><div>
 

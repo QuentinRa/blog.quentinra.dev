@@ -40,7 +40,7 @@ PS> wsl --install Debian
 
 You can start it as you would with any programs.
 
-💡 You can also download them from the Microsoft Store.
+💡 You can also download them from the Microsoft Store. Doing so will enable auto-updates for you.
 
 ❌ WSL don't natively support graphical apps and some commands.
 
@@ -67,6 +67,17 @@ $ subl -c      # sublime text
 $ emacs -c     # emacs
 $ ./idea.sh -c # IntelliJ
 ```
+
+<br>
+
+#### Common usage of WSL
+
+Most of the time, we integrate WSL within our code environment 🚀. For instance, when pressing the compile/run button from your IDE, it will compile/run the code using the WSL.
+
+* [IntelliJ and WSL](https://www.jetbrains.com/help/idea/how-to-use-wsl-development-environment-in-product.html) (Java IDE)
+* [CLion and WSL](https://www.jetbrains.com/help/clion/how-to-use-wsl-development-environment-in-product.html) (C/C++ IDE)
+* [VSCode C/C++ and WSL](https://code.visualstudio.com/docs/cpp/config-wsl)
+* ...
 </div></div>
 
 <hr class="sep-both">
