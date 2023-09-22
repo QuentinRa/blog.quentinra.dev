@@ -82,6 +82,32 @@ Most of the time, we integrate WSL within our code environment 🚀. For instanc
 
 <hr class="sep-both">
 
+## Cygwin
+
+<div class="row row-cols-md-2"><div>
+
+[Cygwin](https://www.cygwin.com/) is a collection of Unix tools ported to Windows 🐲. It also includes a CLI such as WSL aside from the fact that it only allow us to run installed commands <small>(e.g. there is no APT command...)</small>.
+
+1. [Download Cygwin Installer/Updater](https://www.cygwin.com/install.html)
+2. Run it, press next
+3. Install from the internet, Next, Next, Next, Next
+4. Pick a mirror in the list, Next
+5. In view, select full
+6. From this point, select the commands that you want by replacing "Skip" <small>(in the column "New")</small> with a version of the command.
+7. Complete the installation
+</div><div>
+
+Commands are stored in `C:/cygwin64/bin`. It should have been added to your path so that you can call, for instance, `make` or `make.exe` from any Windows terminal.
+
+```bash!
+$ make -v
+# GNU Make 4.3
+# ...
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## InnoSetup
 
 <div class="row row-cols-md-2"><div>
