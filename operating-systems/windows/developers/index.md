@@ -22,6 +22,29 @@ While not specific to Windows, these are often used instead of the Linux command
 
 <hr class="sep-both">
 
+## Basic knowledge
+
+<div class="row row-cols-md-2"><div>
+
+#### Window Path
+
+On Linux, when we write a command such as `make`, it will look for it in each folder in the `PATH` and execute the binary if found.
+
+There is the same on Windows. The shortest way to find the menu we are looking for is by writing PATH in the search bar.
+
+<div class="text-center">
+
+<img alt="Write PATH in the search bar" src="/courses/operating-systems/windows/developers/_images/path.png" width="300"/>
+</div>
+
+From it, select environment varible then edit `Path` in User variables.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Windows Subsystem for Linux (WSL)
 
 <div class="row row-cols-md-2"><div>
@@ -144,6 +167,9 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-...
+* [winpty](https://github.com/rprichard/winpty)
+* [msys2](https://www.msys2.org/)
+* [Pengwin](https://github.com/WhitewaterFoundry/Pengwin) <small>(wlinux)</small>
+* [vcxsrv](https://sourceforge.net/projects/vcxsrv/)
 </div><div>
 </div></div>
