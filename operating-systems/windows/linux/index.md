@@ -1,33 +1,7 @@
-# Linux on Windows
-
-Knowledge related to using Linux on Windows.
-
-> If you are having some problems, you may [find something in the Windows club](https://www.thewindowsclub.com/).
-
-<hr class="sl">
-
-## Windows Subsystem for Linux (WSL)
+# Windows Subsystem for Linux (WSL)
 
 <div class="row row-cols-md-2"><div>
-
-Windows Subsystem for Linux lets developers run a GNU/Linux environment including most command-line tools, utilities, and applications, directly on Windows [according to the Windows Subsystem for Linux Documentation](https://learn.microsoft.com/en-us/windows/wsl/).
-
-1. Click on the search icon/search for a program
-2. Look for PowerShell
-3. Right-click on it > "Run as administrator"
-
-![run_powershell_as_admin](_images/run_powershell_as_admin.png)
 </div><div>
-
-4. Enter `wsl --install` to install Ubuntu
-5. You can install `debian`, `kali-linux`... See `wsl --list --online`.
-6. You will most likely have to reboot
-
-Once, you did, in the search bar / search for a program, 
-
-7. Search for `WSL`, or `debian` if you installed Debian...
-8. Wait for a few seconds
-9. Enter a username, and a password <small>(there is no echo, you won't see your password)</small>
 
 On Windows, you can browse your WSL files in the Linux section of your file explorer
 
