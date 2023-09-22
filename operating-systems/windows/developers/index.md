@@ -131,6 +131,34 @@ $ make -v
 
 <hr class="sep-both">
 
+## Protocols
+
+<div class="row row-cols-md-2"><div>
+
+#### Secure Shell (SSH)
+
+Some tools:
+
+* [Putty](https://putty.org/) <small>(GUI)</small>
+* [mobaxterm](https://mobaxterm.mobatek.net/) <small>(GUI)</small>
+* [xshell](https://www.xshell.com/en/xshell/) <small>(👻)</small>
+* [mRemoteNG](https://github.com/mRemoteNG/mRemoteNG) <small>(👻)</small>
+* [GitSCM](https://git-scm.com/) <small>(CLI providing SSH among many others)</small>
+* ...
+</div><div>
+
+#### File Transfer Protocol (FTP)
+
+[FileZilla](https://filezilla-project.org/) is commonly used. To add a target server, use the "Site Manager" menu. Drag/Drop files to upload/download them.
+
+* [WinSCP](https://winscp.net/eng/index.php) <small>(👻)</small>
+* [CuteFTP](https://www.globalscape.com/cuteftp) <small>(👻)</small>
+* [GitSCM](https://git-scm.com/) <small>(CLI providing SCP among many others)</small>
+* ...
+</div></div>
+
+<hr class="sep-both">
+
 ## InnoSetup
 
 <div class="row row-cols-md-2"><div>
