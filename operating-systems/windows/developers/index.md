@@ -41,9 +41,32 @@ PS> wsl --install Debian
 You can start it as you would with any programs.
 
 💡 You can also download them from the Microsoft Store.
+
+❌ WSL don't natively support graphical apps and some commands.
+
+<br>
+
+#### Access WSL files from Windows
+
+You can use the file explorer:
+
+<div class="text-center">
+
+![browse_wsl_files](_images/browse_wsl_files.png)
+</div>
+
+> You can also enter the PATH `\\wsl.localhost\` or `\\wsl$`.
 </div><div>
 
-...
+#### Graphical interfaces with XMing
+
+[XMing](http://www.straightrunning.com/XmingNotes/) is a low-quality graphical tool. Install it and [XMing fonts](http://www.straightrunning.com/XmingNotes/) <small>(scroll to "public domain" to find the download links)</small>. To run graphical apps, you will mostly use `-c` to usual commands that support it.
+
+```shell!
+$ subl -c      # sublime text
+$ emacs -c     # emacs
+$ ./idea.sh -c # IntelliJ
+```
 </div></div>
 
 <hr class="sep-both">

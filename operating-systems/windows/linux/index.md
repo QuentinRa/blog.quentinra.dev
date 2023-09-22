@@ -3,38 +3,6 @@
 <div class="row row-cols-md-2"><div>
 </div><div>
 
-On Windows, you can browse your WSL files in the Linux section of your file explorer
-
-![browse_wsl_files](_images/browse_wsl_files.png)
-
-> You can also enter the PATH `\\wsl.localhost\`, or `\\wsl$`.
-</div></div>
-
-> There are a lot of downsides to a WSL, such as the lack of a graphical user interface, or some commands not working, including many of the network-related commands such as "ping".
-
-<div class="row row-cols-md-2"><div>
-
-<details class="details-e">
-<summary>Add a low-quality graphical user interface (GUI)</summary>
-
-It will be a low-quality interface, but it's still an option for some software. You need to install [XMing](http://www.straightrunning.com/XmingNotes/), and [XMing fonts](http://www.straightrunning.com/XmingNotes/). **Scroll to "public domain" to find the download links**. Then, every time you need to use `-c` (graphical version), start XMing first. For instance
-
-```bash
-$ sudo apt-get update
-# editor: sublime text
-$ sudo apt-get install sublime-text
-$ subl -c
-# editor: emacs
-$ sudo apt-get install emacs
-$ emacs -c
-# editor: IntelliJ
-# ... get the tar.gz on their Website, tar xvf idea.tar.gz
-# inside the bin folder, run the .sh
-$ ./idea.sh -c
-```
-</details>
-</div><div>
-
 <details class="details-e">
 <summary>Instead of adding a GUI, use WSL in your GUI</summary>
 
