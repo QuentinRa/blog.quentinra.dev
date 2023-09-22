@@ -5,7 +5,7 @@
 Windows is commonly used by developers 🍃. While it is less convenient than Linux in some ways, there are some ways to make it suitable for developing software and everything else 🐊.
 
 * [WSL](#windows-subsystem-for-linux-wsl) is commonly used to get a Linux console environment
-* [Cygwin or MinGW]() are commonly used to get a Linux console environment or to get `.exe` versions of Linux commands.
+* [Cygwin](#cygwin) or mingw are commonly used to get a Linux console environment or to get `.exe` versions of Linux commands.
 * [VSCode](/tools-and-frameworks/editors/vscode/index.md) or [JetBrains](/tools-and-frameworks/editors/jetbrains/_general/index.md) are commonly used as editors to write code
 * [WAMP](/operating-systems/webservers/apache/wamp.md) is often used to emulate a webserver for web development
 * ...
@@ -13,8 +13,8 @@ Windows is commonly used by developers 🍃. While it is less convenient than Li
 
 While not specific to Windows, these are often used instead of the Linux command:
 
-* [FileZilla]() mostly for FTP
-* [Putty MobaXTerm...]() mostly for SSH, FTP...
+* [FileZilla](#file-transfer-protocol-ftp) mostly for FTP
+* [Putty MobaXTerm...](#secure-shell-ssh) mostly for SSH, FTP...
 * ...
 
 ➡️ For article on Windows, check out the [Windows Club](https://www.thewindowsclub.com/).
@@ -39,8 +39,6 @@ There is the same on Windows. The shortest way to find the menu we are looking f
 
 From it, select environment varible then edit `Path` in User variables.
 </div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">
@@ -195,6 +193,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+* [mingw](https://sourceforge.net/projects/mingw/)
 * [winpty](https://github.com/rprichard/winpty)
 * [msys2](https://www.msys2.org/)
 * [Pengwin](https://github.com/WhitewaterFoundry/Pengwin) <small>(wlinux)</small>
