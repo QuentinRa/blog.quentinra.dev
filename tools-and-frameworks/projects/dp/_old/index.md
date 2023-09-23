@@ -10,12 +10,6 @@ There are 4 great categories of design patterns
 * **architectural**: how to think your code
 * and **anti-patterns**: what you **mustn't** do
 
-Notes
-
-* the authors of this initiative, the Gang Of Four (GOF), made a [tutorial here](https://www.gofpatterns.com/design-patterns/module1/intro-design-patterns.php).
-* **edit 24/06/2021**: I recently found [this website](https://java-design-patterns.com/) and [this GitHub](https://github.com/iluwatar/java-design-patterns),  which are wonderful materials to start learning design-pattern. They are **different** from what I learned in school, but I may improve this course later using them.
-* **edit 21/07/2021**: Again, I found this [great website](https://sourcemaking.com/design_patterns) explaining both design patterns and anti-patterns with examples in a lot of languages.
-
 <hr class="sl">
 
 ## Creation
@@ -166,31 +160,3 @@ GRASP is an acronym for the General Responsibility Assignment Software Patterns.
   * if they are related, then you should handle them together (use interfaces, abstract classes, ...)
 * **Indirection**: use a mediator, an intermediary class, to decrease the coupling between classes
 * **Protected Variations**: you should look for potentials changes and make things easier if this change were to happen.
-
-<hr class="sr">
-
-## Sources
-
-* <https://fr.wikibooks.org/wiki/Patrons_de_conception>
-* <https://www.javatpoint.com/design-patterns-in-java>
-* <https://www.geeksforgeeks.org/the-decorator-pattern-set-2-introduction-and-design/>
-* <https://www.gofpatterns.com/>
-* <https://www.journaldev.com/1827/java-design-patterns-example-tutorial>
-* <https://www.geeksforgeeks.org/null-object-design-pattern/>
-* <https://www.tutorialspoint.com/design_pattern/null_object_pattern.htm>
-* <https://www.tutorialspoint.com/design_pattern/chain_of_responsibility_pattern.htm>
-* <https://www.baeldung.com/java-observer-pattern>
-* <https://www.geeksforgeeks.org/interpreter-design-pattern/>
-* <https://www.tutorialspoint.com/design_pattern/data_access_object_pattern.htm>
-* <https://www.tutorialspoint.com/design_pattern/composite_entity_pattern.htm>
-* <https://www.freecodecamp.org/news/antipatterns-to-avoid-in-code/>
-* <https://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html>
-* <https://sourcemaking.com/antipatterns/software-development-antipatterns>
-* <https://sourcemaking.com/antipatterns/software-architecture-antipatterns>
-
-GRASP
-
-* <https://home.cs.colorado.edu/~kena/classes/5448/f12/presentation-materials/rao.pdf>
-* <http://www.kamilgrzybek.com/design/grasp-explained/>
-* <https://www.codeproject.com/Articles/1166136/S-O-L-I-D-GRASP-And-Other-Basic-Principles-of-Obje#pure-fabrication>
-* <https://www.fluentcpp.com/2021/06/23/grasp-9-must-know-design-principles-for-code/>
