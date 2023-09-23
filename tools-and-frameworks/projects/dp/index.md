@@ -33,10 +33,10 @@ Others: [Java Design Patterns](https://java-design-patterns.com/) + [GitHub Code
 
 Creational patterns focus on object creation mechanisms. It's assumed you already know about [objects and classes](/programming-languages/_paradigm/oo.md#classes-and-objects).
 
-* [Factory](creational/factory.md): xxx
-* [AbstractFactory](creational/abstract.md): xxx
-* [Singleton](creational/singleton.md): xxx
-* [Multiton](creational/multiton.md): xxx
+* [Factory](creational/factory.md): control how/which instances are created
+* [AbstractFactory](creational/abstract.md): control how/which factories are created
+* [Singleton](creational/singleton.md): only allow one instance of a class <small>(at a time)</small>
+* [Multiton](creational/multiton.md): only allow n instances of a class at a time
 * [Prototype](creational/prototype.md): xxx
 * [Builder](creational/builder.md): xxx
 * [Object Pool](creational/object-pool.md): xxx

@@ -1,7 +1,5 @@
 # Creation
 
-* [Factory](creation/factory.md): delegate construction to a factory class (`Something s = Factory.createSomething()`)
-* [AbstractFactory](creation/abstract-factory.md): a factory of factories
 * [Singleton](creation/singleton.md): only one instance of a class
 * [Multiton](creation/multiton.md): only n instances of a class
 * [Prototype](creation/prototype.md): use cloning instead of creating (again) complex objects
