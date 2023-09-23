@@ -12,7 +12,6 @@ List of courses that have note which were not added yet.
 * **CPP > STD + ENS notes**
 * Qt
 * OCaml
-</div><div>
 
 **Tools and Frameworks**
 
@@ -20,17 +19,21 @@ List of courses that have note which were not added yet.
 * Pandora
 * JetBrains plugin development
 * Project > Tools?
+</div><div>
 
 **Operating systems**
 
-* (review, typos) docker, qemu, IoT, yocto, vbox
-* Arduino, Platformio
-* Hardening
+* (review, typos) docker, qemu, yocto, vbox, Windows dev
+* Embedded >  Arduino, Platformio, IoT
+* Cloud
 * Linux
 * Networking
 * Windows > Linux, security
-* IoT, Cloud
 * Utils
+
+**Cybersecurity**
+
+* Hardening
 </div></div>
 
 
@@ -43,10 +46,6 @@ Programming languages (+tools) that I want to check, but never had the time.
 <div class="row row-cols-md-3 mt-4"><div>
 
 ➡️[roadmap.sh](https://roadmap.sh/)
-
-**General**
-
-➡️ [chocolatey](https://chocolatey.org/)
 
 **Tools~API~no**
 

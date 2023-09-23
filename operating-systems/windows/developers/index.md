@@ -198,5 +198,14 @@ Stuff that I found, but never read/used yet.
 * [msys2](https://www.msys2.org/)
 * [Pengwin](https://github.com/WhitewaterFoundry/Pengwin) <small>(wlinux)</small>
 * [vcxsrv](https://sourceforge.net/projects/vcxsrv/)
+* [chocolatey](https://chocolatey.org/)
 </div><div>
+
+```ps
+C:\> IEX((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
+C:\> choco upgrade chocolatey
+C:\> choco install docker-desktop
+C:\> choco install python vscode git wsl2 openssh openvpn microsoft-windows-terminal WSL2
+C:\> Add-MpPreference -ExclusionPath "C:\Users\xxx\AppData\Local\Temp\chocolatey\"
+```
 </div></div>
