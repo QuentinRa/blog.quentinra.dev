@@ -34,7 +34,7 @@ Others: [Java Design Patterns](https://java-design-patterns.com/) + [GitHub Code
 Creational patterns focus on object creation mechanisms. It's assumed you already know about [objects and classes](/programming-languages/_paradigm/oo.md#classes-and-objects).
 
 * [Factory](creational/factory.md): xxx
-* [AbstractFactory](creational/abstract-factory.md): xxx
+* [AbstractFactory](creational/abstract.md): xxx
 * [Singleton](creational/singleton.md): xxx
 * [Multiton](creational/multiton.md): xxx
 * [Prototype](creational/prototype.md): xxx
