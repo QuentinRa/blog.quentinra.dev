@@ -1,18 +1,4 @@
-# Design patterns
-
-Most of the time when coding, you will some code that a lot of developers have written before you. Design patterns are the result of their reflection. We will talk about both GOF and GRASP patterns, along with anti-patterns.
-
-There are 4 great categories of design patterns
-
-* **creation**: how to create objects
-* **structure**: how to structure your code
-* **behavior**: how to make the interactions between objects
-* **architectural**: how to think your code
-* and **anti-patterns**: what you **mustn't** do
-
-<hr class="sl">
-
-## Creation
+# Creation
 
 * [Factory](creation/factory.md): delegate construction to a factory class (`Something s = Factory.createSomething()`)
 * [AbstractFactory](creation/abstract-factory.md): a factory of factories
