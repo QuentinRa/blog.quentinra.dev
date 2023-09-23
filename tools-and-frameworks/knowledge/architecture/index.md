@@ -1,4 +1,4 @@
-# Architecture 🌱
+# Underlying Architecture 🌱
 
 <div class="row row-cols-md-2"><div>
 
@@ -8,12 +8,15 @@ Most programs work and process information the same way.
 * 🗃️ databases
 * 🔦 programming languages
 * ...
+
+This section gathers fundamental concepts to understand how systems operate at low-level/near the machine.
 </div><div>
 
-This section gathers fundamental concepts to understand how systems operate at low-level/near the machine:
 
-* 📦 storage (numbers, strings...)
-* 🍎 arithmetic operations
+This includes topics such as:
+
+* 📦 Signed or Unsigned; Little- or Big- endian...
+* 🍎 Types, arithmetic, overflow, machine representation
 * ...
 </div></div>
 
@@ -30,7 +33,7 @@ While systems typically offer types such as `boolean`, `integer`, `float`, and `
 * **word**: width of a register. 16, 32, or 64 bits <small>(modern computers)</small>.
 * **dword** (double word): usually 32 or 64 bits
 
-Refer to the [Encoding | Binary](/programming-languages/others/encoding/index.md#radix-2---) to learn more about how numbers are represented using 0 and 1.
+Refer to the [Encoding | Binary](/tools-and-frameworks/knowledge/encoding/index.md#radix-2---) to learn more about how numbers are represented using 0 and 1.
 
 <br>
 
