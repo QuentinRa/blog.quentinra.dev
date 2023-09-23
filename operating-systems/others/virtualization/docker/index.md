@@ -89,9 +89,9 @@ To **create** a container <small>(entrypoint are explained in Dockerfile section
 
 ```ps
 $ docker run image_tag        # execute tag's entrypoint
-$ docker run -t image_tag     # explicitly specify the tag
-$ docker run -i [...]         # interactive (bash...)
-$ docker run -d [...]         # run in background
+$ docker run -i -t [...]      # interactive (bash...)
+$ docker run -d -t [...]      # run in background
+$ docker run -t [...]         # tty == connect your terminal
 $ docker run [...] /bin/bash  # CMD = ["/bin/bash"]
 $ docker run [...] echo xxx   # CMD = ["echo", "xxx"]
 $ docker run -p dp:hp [...]   # map docker port to host port
