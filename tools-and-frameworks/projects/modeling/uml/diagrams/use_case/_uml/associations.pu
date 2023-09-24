@@ -1,0 +1,11 @@
+@startuml
+left to right direction
+
+actor Client as C
+
+rectangle ATM {
+  C -- (Withdraw Money)
+  (Withdraw Money) --> (Input Code) : <<include>>
+  (Help) ..> (Withdraw Money) : <<extend>>
+}
+@enduml

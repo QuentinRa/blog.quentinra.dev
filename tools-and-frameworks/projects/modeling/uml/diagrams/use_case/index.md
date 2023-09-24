@@ -6,7 +6,7 @@ An Use Case Diagram is used to visualize the functionality of a **system** 🏠 
 
 <div class="text-center">
 
-![DCU example](images/LOyn2iCm.png)
+![DCU example](_uml/example.svg)
 </div>
 </div><div>
 
@@ -15,6 +15,20 @@ Each of `Order`, `Checkout` and `Eat` are called **use cases** 🎫 and represen
 An actor can be another system. For instance, the restaurant is interacting with providers, so we will another another diagram with "restaurant" as an actor and "Provider" as a system.
 
 It's not a temporal diagram, e.g., it doesn't represent actions that can be performed after performing another action first.
+</div></div>
+
+<hr class="sep-both">
+
+## Associations
+
+<div class="row row-cols-md-2"><div>
+
+Associations are complex. They are only present between the actors and the use cases that the actor "**intends**" to do 📚.
+
+For instance, if a client is trying to withdraw some money but they forgot how to, they will read the help. But, they won't come, read the help, and leave, so there is no association between client and help.
+
+![ATM example](_uml/associations.svg)
+</div><div>
 </div></div>
 
 <hr class="sep-both">

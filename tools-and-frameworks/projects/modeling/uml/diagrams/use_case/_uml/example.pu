@@ -1,0 +1,9 @@
+@startuml
+left to right direction
+actor Client as C
+rectangle Restaurant {
+  C -- (Order)
+  C -- (Checkout)
+  C -- (Eat)
+}
+@enduml
