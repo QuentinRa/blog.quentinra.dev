@@ -38,7 +38,7 @@ Creational patterns focus on object creation mechanisms. It's assumed you alread
 * [Singleton](creational/singleton.md): only allow one instance of a class <small>(at a time)</small>
 * [Multiton](creational/multiton.md): only allow n instances of a class at a time
 * [Prototype](creational/prototype.md): reuse an object by cloning it when calling the constructor is costly
-* [Builder](creational/builder.md): xxx
+* [Builder](creational/builder.md): create complex objects step-by-step
 * [Object Pool](creational/object-pool.md): xxx
 </div><div>
 
