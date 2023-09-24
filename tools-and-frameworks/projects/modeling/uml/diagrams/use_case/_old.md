@@ -1,31 +1,4 @@
-# Use case diagram
-
-[Go back](../index.md)
-
-The "Use case diagram" <small> (or "Diagramme de cas d'utilisation / usage" = DCU) </small> is a diagram representing the interactions between **users** (who: a customer, a user, a person) and a **system** (what: an application, a website, a location).
-
-**Note** that this diagram is not taking into account the timeline, like you **can't** represent the fact that an action will be done after another one. If you think you can, then you are doing it wrong. Check the sequence diagram if you want to take into account the timeline.
-
-<hr class="sr">
-
-## Introduction
-
-A DCU looks like this
-
-![DCU example](images/LOyn2iCm.png)
-
-with
-
-* **the system**: the Restaurant
-* **actors**: only one here, the Client. These are those that are interacting with the system. Note that they are not persons, but roles.
-* **use cases**: "Order", "Eat", "Checkout". What your actors can do in/with the system.
-* an **association**: a link between actors and use cases.
-
-Let's say a shop is interacting with a factory. If the factory is the system, then the shop is an actor. Using that, you can split a big use case diagram into a bunch of smaller ones. You will make a diagram in which the system is the shop, and the factory an actor and vice versa.
-
-<hr class="sr">
-
-## Generalization between actors
+# Generalization between actors
 
 Let's say you got a regular user and a logged user for the system "website". If a logged user can do everything that the regular can do and even more. You can factorize this with a generalization.
 
