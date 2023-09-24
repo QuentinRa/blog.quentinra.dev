@@ -1,8 +1,5 @@
 # Creation
 
-* [Singleton](creation/singleton.md): only one instance of a class
-* [Multiton](creation/multiton.md): only n instances of a class
-* [Prototype](creation/prototype.md): use cloning instead of creating (again) complex objects
 * [Builder](creation/builder.md): break object creation into modules
 * [Object Pool](creation/object-pool.md): create a finite pool of objects, allow others classes to use them, then handles the cleaning afterwards.
 
