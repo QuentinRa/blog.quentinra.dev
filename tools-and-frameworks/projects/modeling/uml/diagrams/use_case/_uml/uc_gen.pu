@@ -1,0 +1,11 @@
+@startuml
+left to right direction
+
+actor Customer as C
+rectangle CoffeeMachine {
+  C -- (Make Coffee)
+  (Make Coffee) <|-- (Make Espresso)
+  (Make Coffee) <|-- (Make Cappuccino)
+  (Make Coffee) <|-- (Make Latte)
+}
+@enduml

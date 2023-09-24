@@ -29,6 +29,16 @@ For instance, if a client is trying to withdraw some money but they forgot how t
 
 ![ATM example](_uml/associations.svg)
 </div><div>
+
+Associations can be connected to other associations.
+
+* A **extend/extension** B: it means that B may call A
+
+* A **include/inclusion** B: it means that A will call B
+
+Finally, it could be a **generalization**. It means that the user interact either with the use case or one of the use cases that generalize it.
+
+![Association Generalization](_uml/uc_gen.svg)
 </div></div>
 
 <hr class="sep-both">
