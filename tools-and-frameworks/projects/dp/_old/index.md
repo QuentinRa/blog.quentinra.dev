@@ -1,11 +1,4 @@
-# Creation
-
-* [Builder](creation/builder.md): break object creation into modules
-* [Object Pool](creation/object-pool.md): create a finite pool of objects, allow others classes to use them, then handles the cleaning afterwards.
-
-<hr class="sr">
-
-## Structure
+# Structure
 
 * [Adaptor](structure/adaptor.md): interface linking what the client wanted with our code
 * [Facade](structure/facade.md): simplified API to use our code
