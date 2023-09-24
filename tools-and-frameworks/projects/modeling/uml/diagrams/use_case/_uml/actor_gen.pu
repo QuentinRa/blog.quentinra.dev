@@ -1,0 +1,4 @@
+@startuml
+:Logged User: as Admin
+:Regular User: <|-- Admin
+@enduml

@@ -43,12 +43,15 @@ Finally, it could be a **generalization**. It means that the user interact eithe
 
 <hr class="sep-both">
 
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
+## Actors
 
 <div class="row row-cols-md-2"><div>
 
-* [_old](_old.md)
+You can create a generalization between actors. It means that the actors inherit all use cases linked to their parent.
+
+<div class="text-center">
+
+![Generalization actors](_uml/actor_gen.svg)
+</div>
 </div><div>
 </div></div>
