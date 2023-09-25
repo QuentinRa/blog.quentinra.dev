@@ -55,12 +55,27 @@ Each state may contain some methods:
 
 <hr class="sep-both">
 
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
+## Transitions
 
 <div class="row row-cols-md-2"><div>
 
-* [_old](_old.md)
+Transitions are the arrows linking a state with another. On each, you may add one of these:
 </div><div>
+
+#### Branching
+
+Both syntaxes are used to use represent a branching. You can have as many branches and conditions as you want.
+
+![UML If Syntax 1](_uml/if.svg)
+![UML If Syntax 2](_uml/if_001.svg)
+
+The most fitting condition if the one that will be used. You may add a note to ensure there is no doubt about it.
+
+<br>
+
+#### Synchronization bar
+
+The synchronization bar is used when we want to do parallelism. The first indicates that the states below are executed in parallel (`fork`) and the second one indicate that we wait for all forks to terminate (`join`).
+
+![Fork](_uml/fork.svg)
 </div></div>

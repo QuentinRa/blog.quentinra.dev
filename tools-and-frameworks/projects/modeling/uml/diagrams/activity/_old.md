@@ -16,24 +16,6 @@ Transitions are the arrows linking a state with another. You may add on the arro
 
 <hr class="sr">
 
-## Conditional branching
-
-This is how you can do conditional branching.
-
-![branching](images/JOqn3e0W34NdSegcavfu1O9dS2GE99P8WWnGxczXSljzVVaVm3K9LVgR3S2ohRZl5kaSZ8oY594E56v2A0yNHQ2Abzhvcg8mgZHkqYVdnjEnFWRDVsU2APKxnT7kDEdq1m00.png)
-
-You could write a condition instead of true/false. And, you can have more than 2 states branched by using that. The automaton will always take the most fitting condition like
-
-* let x = 5
-* cond1: x < 5
-* cond2: x > 0
-* cond3: x == 5
-* then the branch we will take is the one having the condition cond3
-
-Since not anyone may follow this rule, you may add a note saying how your automaton is picking a branch.
-
-<hr class="sr">
-
 ## Synchro bar
 
 A synchro bar may be used if you want to both run State1 and State2 at the same time.

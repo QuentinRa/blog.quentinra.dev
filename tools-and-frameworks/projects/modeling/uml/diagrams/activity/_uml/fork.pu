@@ -1,0 +1,10 @@
+@startuml
+start
+:Start Activity;
+fork
+  :Path 1;
+fork again
+  :Path 2;
+fork end
+stop
+@enduml

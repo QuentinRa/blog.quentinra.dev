@@ -1,0 +1,17 @@
+@startuml
+start
+if (Condition) then (True)
+  :True Path;
+else (False)
+  :False Path;
+endif
+stop
+@enduml
+@startuml
+(*) --> "Start"
+if "Condition" then
+-->[True] "True Path"
+else
+->[False] "False Path"
+endif
+@enduml
