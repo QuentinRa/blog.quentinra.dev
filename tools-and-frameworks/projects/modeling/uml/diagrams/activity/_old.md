@@ -8,12 +8,6 @@ This is a diagram representing all the states of the program and the conditions/
 
 ## States
 
-We got 3 kinds of states
-
-* the initial state(s)
-* the intermediary state(s)
-* and the final state(s)
-
 When the program is starting, we are moving from one of the initial states to another state. Then we are moving from one state to another until one of the final states.
 
 ![begin-end](images/u-HqA2v9B2efpStXukBarD3ILD3LjLDG0WgMf2e1HQ0ii2XG5gJ88JKl1QWU0000.png)
