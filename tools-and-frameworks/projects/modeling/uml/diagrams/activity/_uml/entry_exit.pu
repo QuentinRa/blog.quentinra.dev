@@ -1,0 +1,6 @@
+@startuml
+[*] --> State1
+State1 --> [*]
+State1 : entry/initBoard
+State1 : exit/destroyBoard
+@enduml

@@ -1,27 +1,4 @@
-# Flow chart diagram
-
-[Go back](../index.md)
-
-This is a diagram representing all the states of the program and the conditions/triggers allowing the program to move from one state to another.
-
-<hr class="sr">
-
-## States
-
-When the program is starting, we are moving from one of the initial states to another state. Then we are moving from one state to another until one of the final states.
-
-![begin-end](images/u-HqA2v9B2efpStXukBarD3ILD3LjLDG0WgMf2e1HQ0ii2XG5gJ88JKl1QWU0000.png)
-
-Inside "State", you could add attributes like
-
-* ``entry/action`` where ``action`` is executed when entering this state
-* ``exit/action`` where ``action`` is executed when exiting this state
-
-![states](images/SoWkIImgAStDuUAArefLqDMrKmWkIIn9DUI2K60He0oCQwMGcbTILAcVcPTPufIVM9I2956HMQAVabfSKfHV2P7YSaZDIm6P3G00.png)
-
-<hr class="sl">
-
-## Transitions
+# Transitions
 
 Transitions are the arrows linking a state with another. You may add on the arrow,
 
