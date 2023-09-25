@@ -1,0 +1,12 @@
+@startuml
+[*] -> State1
+State1 --> State2 : SomeTrigger
+@enduml
+@startuml
+[*] -> State1
+State1 --> State2 : /SomeActionRequired
+@enduml
+@startuml
+[*] -> State1
+State1 --> State2 : [SomeCondition]
+@enduml
