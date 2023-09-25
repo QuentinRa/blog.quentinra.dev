@@ -1,0 +1,22 @@
+@startuml
+
+[*] --> MainMenu : Start
+MainMenu --> SelectCharacter : New Game
+MainMenu --> LoadGame : Load Game
+MainMenu --> QuitGame : Quit
+
+SelectCharacter --> CreateCharacter : Create Character
+SelectCharacter --> LoadCharacter : Load Character
+SelectCharacter --> MainMenu : Back
+
+CreateCharacter --> MainMenu : Done
+CreateCharacter --> SelectCharacter : Cancel
+
+LoadCharacter --> MainMenu : Done
+LoadCharacter --> SelectCharacter : Cancel
+
+LoadGame --> MainMenu : Back
+
+QuitGame --> [*] : Confirm Exit
+
+@enduml
