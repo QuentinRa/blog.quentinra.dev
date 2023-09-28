@@ -47,15 +47,17 @@ ninja: no work to do.
 
 ➡️ `cmake ..` is the same as `cmake -B . -S ..` and `make` is the same as `cmake --build .` <small>(if the generator is a Makefile)</small>.
 
+💡 You can build only specific targets using `-t target`.
+
 <br>
 
-#### Basic CMakeLists.txt
+#### Log Level
 
-These two lines are the only required lines.
+You can set the verbosity of cmake to one of `ERROR`, `WARNING`, `NOTICE`, `STATUS`,
+`VERBOSE`, `DEBUG`, or `TRACE`.
 
-```js!
-cmake_minimum_required(VERSION 3.18)
-project(your_project_name)
+```shell!
+$ cmake --log-level=ERROR ...
 ```
 </div><div>
 
@@ -71,21 +73,76 @@ $ cmake -G /usr/bin/ninja   # Use a custom generator
 ...
 ```
 
+You can pass arguments to the build tool:
+
+```shell!
+$ cmake [...] -- -j 4 # ex: "make -j 4"
+```
+
 <br>
 
-#### XXX
+#### Override Variables
 
-Xxx
+You can override the value of some variables using `-D`:
 
 ```shell!
 $ cmake -D VAR_NAME=VAR_VALUE ...
 ```
 
-Common pre-defined variable
+Common pre-defined variables:
 
 * `CMAKE_BUILD_TYPE`: the kind of build such as `Release` or `Debug`
+* ...
 </div></div>
 
+<hr class="sep-both">
+
+## CMake Basic Usage
+
+<div class="row row-cols-md-2"><div>
+
+#### Basic CMakeLists.txt
+
+These two lines are the only required lines.
+
+```js!
+cmake_minimum_required(VERSION 3.18)
+project(your_project_name)
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Multi-modules project
+
+<div class="row row-cols-md-2"><div>
+
+It's common to have big projects made of smaller units that can be configured and manipulated separately. 
+
+You will create a `CMakeLists.txt` inside each submodule.
+
+```js!
+add_library(libA SHARED src/libA.cpp)
+
+target_include_directories(libA PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+```
+</div><div>
+
+The top-level `CMakeLists.txt` will include them.
+
+```cpp
+cmake_minimum_required(VERSION 3.18)
+project(untitled2)
+
+...
+
+# include nested ./libA/CMakeLists.txt
+add_subdirectory(libA)
+```
+</div></div>
 
 <hr class="sep-both">
 
@@ -98,6 +155,10 @@ Stuff that I found, but never read/used yet.
 * [_old](_old.md)
 * cmake-gui
 * ccmake
+* Contextual Logs
+* `cmake --install /path/`
+* `XXX-config.cmake`/`XXXConfig.cmake`
+* `find_package`
 </div><div>
 
 CMake will automatically detect the languages from the sources files extensions. It will then try to find the compiler and call it with CMake default parameters for it.
