@@ -16,7 +16,7 @@ $ touch CMakeLists.txt
 $ nano CMakeLists.txt # edit
 ```
 
-**Execute a rule** 🌴
+**Execute a target** 🌴
 
 ```ps
 $ mkdir build && cd build
@@ -92,6 +92,7 @@ $ cmake -D VAR_NAME=VAR_VALUE ...
 Common pre-defined variables:
 
 * `CMAKE_BUILD_TYPE`: the kind of build such as `Release` or `Debug`
+* `CMAKE_SOURCE_DIR`: path to the folder with the top-level cmakelists
 * ...
 </div></div>
 
@@ -109,6 +110,13 @@ These two lines are the only required lines.
 cmake_minimum_required(VERSION 3.18)
 project(your_project_name)
 ```
+
+The project function is quite powerful:
+
+```js!
+project(your_project_name C CXX) // C and C++
+project(your_project_name VERSION 1.0 LANGUAGES C CXX)
+```
 </div><div>
 
 #### Compiler
@@ -120,6 +128,7 @@ set(CMAKE_SYSTEM_NAME Linux)
 set(CMAKE_C_COMPILER gcc)
 set(CMAKE_CXX_COMPILER g++)
 
+set(CMAKE_C_STANDARD 99)
 set(CMAKE_CXX_STANDARD 17)
 ```
 
@@ -189,12 +198,17 @@ list(LENGTH MY_LIST_LENGTH myList) // get the length
 list(APPEND myList A B...)         // add values
 ```
 
+<br>
+
 #### File Functions
 
-...
+There are many file utilities:
 
 ```js!
+file(READ  filename CONTENT_READ)
 file(WRITE filename "CONTENT")
+file(APPEND filename "CONTENT")
+file(DOWNLOAD URL filename)
 ```
 </div></div>
 
@@ -314,6 +328,18 @@ add_subdirectory(libA)
 ```
 </div><div>
 
+#### Custom Output Directories
+
+This is an example for GNU directories:
+
+```js!
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
+```
+
+<br>
+
 #### Custom Modules and Include
 
 When we include something, it will look for it inside `CMAKE_MODULE_PATH` unless you provide the relative path to it. 
@@ -321,6 +347,13 @@ When we include something, it will look for it inside `CMAKE_MODULE_PATH` unless
 ```js!
 // load custom modules
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/modules")
+```
+
+You can include them using:
+
+```js!
+include(ModuleName)
+include("folder/xxx.cmake")
 ```
 </div></div>
 

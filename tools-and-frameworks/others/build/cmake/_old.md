@@ -1,7 +1,5 @@
 # Basic CMakeLists.txt
 
-👉 *You can support multiple languages, such as both C and C++, by adding languages after the project name: `project("untitled" C CXX)`.*
-
 <div class="row row-cols-md-2"><div>
 
 #### C project
@@ -9,11 +7,6 @@
 This project will generate an executable called `my_program`. To generate this project, it will compile `main.c` and its dependencies.
 
 ```scss!
-cmake_minimum_required(VERSION 3.18.4) // cmake version
-project(untitled C) // project "untitled" in C
-
-set(CMAKE_C_STANDARD 99) // standard C99
-
 add_executable(my_program main.c main.h)
 ```
 </div><div>
@@ -23,11 +16,6 @@ add_executable(my_program main.c main.h)
 This project will generate an executable called `my_program`. To generate this project, it will compile `main.cpp` and its dependencies.
 
 ```scss!
-cmake_minimum_required(VERSION 3.18) // cmake version
-project(untitled CXX) // project "untitled" in C++
-
-set(CMAKE_CXX_STANDARD 14) // standard C++14
-
 add_executable(my_program main.cpp main.hpp)
 ```
 </div></div>
