@@ -216,6 +216,47 @@ endif ()
 
 <hr class="sep-both">
 
+## Functions
+
+<div class="row row-cols-md-2"><div>
+
+The syntax to declare a function is as follows:
+
+```js!
+function(FUNCTION_NAME)
+endfunction()
+
+function(FUNCTION_NAME ARG0)
+endfunction()
+
+function(FUNCTION_NAME ARG0 ARG1)
+endfunction()
+```
+
+To call a function:
+
+```js!
+function_name(ARG0 ARG1)
+FUNCTION_NAME(ARG0 ARG1 ARGN)
+```
+</div><div>
+
+There is some pre-defined variables:
+
+* `${ARGC}`: count of arguments
+* `${ARGV}`: list of arguments
+* `${ARG0}`: the first argument
+* `${ARGN}`: additional arguments after the last expected one
+
+You can't return a value, and variables created within a function are deleted, unless you use:
+
+```js!
+set(VARIABLE_NAME VARIABLE_VALUE PARENT_SCOPE)
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Multi-modules project
 
 <div class="row row-cols-md-2"><div>
@@ -259,7 +300,6 @@ Stuff that I found, but never read/used yet.
 * `cmake --install /path/`
 * `XXX-config.cmake`/`XXXConfig.cmake`
 * `find_package`
-* `PARENT_SCOPE`
 </div><div>
 
 CMake will automatically detect the languages from the sources files extensions. It will then try to find the compiler and call it with CMake default parameters for it.
