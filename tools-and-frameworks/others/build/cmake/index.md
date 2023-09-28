@@ -32,6 +32,10 @@ $ ./my_program # execute our "my_program"
 
 <div class="row row-cols-md-2"><div>
 
+#### Basics
+
+Cmake is commonly used as `cmake ..` then `make` but this is **not** recommended by the documentation.
+
 ```shell!
 $ cmake -B /path/to/build -S /path/to/sources
 -- Configuring done
@@ -40,20 +44,46 @@ $ cmake -B /path/to/build -S /path/to/sources
 $ cmake --build /path/to/build
 ninja: no work to do.
 ```
+
+➡️ `cmake ..` is the same as `cmake -B . -S ..` and `make` is the same as `cmake --build .` <small>(if the generator is a Makefile)</small>.
+
+<br>
+
+#### Basic CMakeLists.txt
+
+These two lines are the only required lines.
+
 ```js!
 cmake_minimum_required(VERSION 3.18)
-project(untitled2)
-```
-
-CMake will automatically detect the languages from the sources files extensions. It will then try to find the compiler and call it with CMake default parameters for it.
-
-```js!
-// ex: add_executable(Hello hello.cpp)
-add_executable(TargetName TargetFiles)
+project(your_project_name)
 ```
 </div><div>
 
+#### Generators
+
+CMake files are compiled to a lower-level tool such as a `Makefile`. This is a generator and CMake supports multiple of them. 
+
+CMake will try to find a suitable generator for your environment, but you can explicitly ask for a generator using:
+
+```shell!
+$ cmake -G Ninja            # Use build.ninja
+$ cmake -G /usr/bin/ninja   # Use a custom generator
 ...
+```
+
+<br>
+
+#### XXX
+
+Xxx
+
+```shell!
+$ cmake -D VAR_NAME=VAR_VALUE ...
+```
+
+Common pre-defined variable
+
+* `CMAKE_BUILD_TYPE`: the kind of build such as `Release` or `Debug`
 </div></div>
 
 
@@ -69,4 +99,11 @@ Stuff that I found, but never read/used yet.
 * cmake-gui
 * ccmake
 </div><div>
+
+CMake will automatically detect the languages from the sources files extensions. It will then try to find the compiler and call it with CMake default parameters for it.
+
+```js!
+// ex: add_executable(Hello hello.cpp)
+add_executable(TargetName TargetFiles)
+```
 </div></div>
