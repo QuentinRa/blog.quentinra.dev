@@ -117,7 +117,33 @@ The project function is quite powerful:
 project(your_project_name C CXX) // C and C++
 project(your_project_name VERSION 1.0 LANGUAGES C CXX)
 ```
+
+A **target** 📍 is like a build artifact, such as a library or an executable. 
+
+CMake will automatically detect the languages for each target from the sources files extensions.
+
+<br>
+
+#### Build Executables
+
+You can generate an executable `targetName` using:
+
+```js!
+// build a binary
+add_executable(targetName file.c file.h [...])
+add_executable(targetName main.cpp main.hpp [...])
+```
 </div><div>
+
+#### Build Librairies
+
+You can generate a library `.so` <small>(shared)</small> or `.a` <small>(static)</small> or header-only:
+
+```js!
+add_library(targetName INTERFACE file.h [...]) // header-only
+```
+
+<br>
 
 #### Compiler
 
@@ -373,11 +399,4 @@ Stuff that I found, but never read/used yet.
 * `XXX-config.cmake`/`XXXConfig.cmake`
 * `find_package`
 </div><div>
-
-CMake will automatically detect the languages from the sources files extensions. It will then try to find the compiler and call it with CMake default parameters for it.
-
-```js!
-// ex: add_executable(Hello hello.cpp)
-add_executable(TargetName TargetFiles)
-```
 </div></div>

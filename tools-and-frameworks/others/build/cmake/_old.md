@@ -1,25 +1,5 @@
 # Basic CMakeLists.txt
 
-<div class="row row-cols-md-2"><div>
-
-#### C project
-
-This project will generate an executable called `my_program`. To generate this project, it will compile `main.c` and its dependencies.
-
-```scss!
-add_executable(my_program main.c main.h)
-```
-</div><div>
-
-#### C++ project
-
-This project will generate an executable called `my_program`. To generate this project, it will compile `main.cpp` and its dependencies.
-
-```scss!
-add_executable(my_program main.cpp main.hpp)
-```
-</div></div>
-
 <hr class="sep-both">
 
 ## Libraries
