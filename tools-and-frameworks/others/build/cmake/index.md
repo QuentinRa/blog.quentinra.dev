@@ -109,9 +109,44 @@ These two lines are the only required lines.
 cmake_minimum_required(VERSION 3.18)
 project(your_project_name)
 ```
+
+<br>
+
+#### Variables
+
+You can use variables with `${VARIABLE_NAME}`.
+
+```js!
+set(VARIABLE_NAME)
+set(VARIABLE_NAME VARIABLE_VALUE)
+unset(VARIABLE_NAME)
+```
 </div><div>
 
+#### Lists Functions
+
+Lists are variables with comma-separated values (`a;b;...`).
+
+```js!
+set(myList "a;b;...")
+set(myList A B...)
+```
+
+You have many functions to operate on lists:
+
+```js!
+// list(OPERATION DESTINATION_VARIABLE ARGS)
+list(LENGTH MY_LIST_LENGTH myList) // get the length
+list(APPEND myList A B...)         // add values
+```
+
+#### File Functions
+
 ...
+
+```js!
+file(WRITE filename "CONTENT")
+```
 </div></div>
 
 <hr class="sep-both">
@@ -159,6 +194,7 @@ Stuff that I found, but never read/used yet.
 * `cmake --install /path/`
 * `XXX-config.cmake`/`XXXConfig.cmake`
 * `find_package`
+* `PARENT_SCOPE`
 </div><div>
 
 CMake will automatically detect the languages from the sources files extensions. It will then try to find the compiler and call it with CMake default parameters for it.
