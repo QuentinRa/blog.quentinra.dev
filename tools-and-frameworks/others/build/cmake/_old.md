@@ -21,17 +21,3 @@ find_package(Threads REQUIRED)
 target_link_libraries(my_app PRIVATE Threads::Threads)
 ```
 </div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-* [Akagi201/learning-cmake](https://github.com/Akagi201/learning-cmake)
-* include_directories
-* see [clang-tidy](/programming-languages/low-level/compilers/clang/clang-tidy.md) (`cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON`)
-</div><div>
-</div></div>

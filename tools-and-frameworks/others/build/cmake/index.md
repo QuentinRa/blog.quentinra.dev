@@ -141,6 +141,9 @@ You can generate a library `.so` <small>(shared)</small> or `.a` <small>(static)
 
 ```js!
 add_library(targetName INTERFACE file.h [...]) // header-only
+add_library(libA SHARED src/file.cpp include/file.h) // .so
+add_library(libA STATIC src/file.cpp include/file.h) // .a
+add_library(libA src/file.cpp include/file.h) // default
 ```
 
 <br>
@@ -163,6 +166,18 @@ The default value is `/`. Mostly used when cross-compiling.
 ```js!
 set(CMAKE_FIND_ROOT_PATH /opt/xxx/)
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Dependencies
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">
@@ -398,5 +413,33 @@ Stuff that I found, but never read/used yet.
 * `cmake --install /path/`
 * `XXX-config.cmake`/`XXXConfig.cmake`
 * `find_package`
+* [Akagi201/learning-cmake](https://github.com/Akagi201/learning-cmake)
+* see [clang-tidy](/programming-languages/low-level/compilers/clang/clang-tidy.md) (`cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON`)
 </div><div>
+
+```js!
+// more compatible than -Ixxx -isystem xxx -DXXX
+target_include_directories(target SYSTEM ...)
+target_include_directories(target ...)
+target_compile_definitions(target PRIVATE DEFINED "XXX=YYY") // #define DEFINED...
+
+target_include_directories(targetName
+    // included files are visible to ours and other targets (api)
+    PUBLIC relative/path/to/include [...]
+    // included files are not visible to ours and other targets (internal)
+    PRIVATE relative/path/to/include [...]
+    // included files are visible to other targets but not ours
+    INTERFACE relative/path/to/include [...]
+    ${CMAKE_CURRENT_BINARY_DIR}
+)
+
+target_compile_options(targetName PRIVATE -Wall -Wextra -Wpedantic)
+//target_compile_features(targetName PRIVATE cxx_std_17)
+
+target_sources(target XXX ...)
+
+// link executable of targetB to targetA
+// allow us to inherit its include directives...
+target_link_libraries(targetA PRIVATE targetB)
+```
 </div></div>
