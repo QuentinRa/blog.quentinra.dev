@@ -28,7 +28,7 @@ $ ./my_program # execute our "my_program"
 
 <hr class="sep-both">
 
-## CMake CLI Usage
+## CLI Usage
 
 <div class="row row-cols-md-2"><div>
 
@@ -97,7 +97,7 @@ Common pre-defined variables:
 
 <hr class="sep-both">
 
-## CMake Basic Usage
+## Basic Usage
 
 <div class="row row-cols-md-2"><div>
 
@@ -109,6 +109,20 @@ These two lines are the only required lines.
 cmake_minimum_required(VERSION 3.18)
 project(your_project_name)
 ```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Core Syntax
+
+<div class="row row-cols-md-2"><div>
+
+#### XXX
+
+...
 
 <br>
 
@@ -120,6 +134,17 @@ You can use variables with `${VARIABLE_NAME}`.
 set(VARIABLE_NAME)
 set(VARIABLE_NAME VARIABLE_VALUE)
 unset(VARIABLE_NAME)
+```
+
+Some examples:
+
+```js!
+set(MY_NUMBER 3.4)
+set(MY_BOOL TRUE)
+set(MY_OPTION ON)
+set(MY_CONDITION YES)
+set(MY_STR something) // risky, always quote strings
+set(MY_STR "something")
 ```
 </div><div>
 
@@ -146,6 +171,46 @@ list(APPEND myList A B...)         // add values
 
 ```js!
 file(WRITE filename "CONTENT")
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Conditions and statements
+
+<div class="row row-cols-md-2"><div>
+
+#### Conditions
+
+`TRUE`, `ON`, `YES` and non-zero numbers are all true. `OFF`, `NO`, `FALSE`, zero, and empty strings are all false.
+
+As always, you have basic operators:
+
+* `NOT CONDITION`
+* `CONDITION1 AND CONDITION2`
+* `CONDITION1 OR CONDITION2`
+
+And there are some utilities:
+
+* `DEFINED VARIABLE`: true if a variable is defined
+* `TARGET VARIABLE`: true if a target is defined
+* `EQUAL`, `LESS`, `LESS_EQUAL`, `GREATER`, and `GREATER_EQUAL` which are used to compare numeric values
+* `A VERSION_XXX B` such as `VERSION_EQUAL`: compare software versions 
+</div><div>
+
+* `"A" STREQUAL "B"`: true if both strings are equal
+* `"STR" MATCHES "REGEX"`: true if `REGEX` matches `STR`
+* `item IN_LIST myList`: true if `item` is inside `myList`
+
+#### Statements
+
+The syntax is:
+
+```php!
+if (CONDITION)
+elseif ()
+else ()
+endif ()
 ```
 </div></div>
 
