@@ -111,7 +111,23 @@ project(your_project_name)
 ```
 </div><div>
 
-...
+#### Compiler
+
+Common compiler-related configuration:
+
+```js!
+set(CMAKE_SYSTEM_NAME Linux)
+set(CMAKE_C_COMPILER gcc)
+set(CMAKE_CXX_COMPILER g++)
+
+set(CMAKE_CXX_STANDARD 17)
+```
+
+The default value is `/`. Mostly used when cross-compiling.
+
+```js!
+set(CMAKE_FIND_ROOT_PATH /opt/xxx/)
+```
 </div></div>
 
 <hr class="sep-both">
@@ -120,9 +136,17 @@ project(your_project_name)
 
 <div class="row row-cols-md-2"><div>
 
-#### XXX
+#### Logging
 
-...
+We commonly add logging messages using `message`:
+
+```js!
+message(STATUS "message")      // messages for users
+message(WARNING "message")     // warning messages
+message(DEBUG "message")       // debug messages
+message(TRACE "message")       // trace
+message(FATAL_ERROR "message") // raise an error
+```
 
 <br>
 
@@ -184,13 +208,13 @@ file(WRITE filename "CONTENT")
 
 `TRUE`, `ON`, `YES` and non-zero numbers are all true. `OFF`, `NO`, `FALSE`, zero, and empty strings are all false.
 
-As always, you have basic operators:
+As always, you have basic utilities:
 
 * `NOT CONDITION`
 * `CONDITION1 AND CONDITION2`
 * `CONDITION1 OR CONDITION2`
 
-And there are some utilities:
+And there are some common operators:
 
 * `DEFINED VARIABLE`: true if a variable is defined
 * `TARGET VARIABLE`: true if a target is defined
@@ -198,9 +222,13 @@ And there are some utilities:
 * `A VERSION_XXX B` such as `VERSION_EQUAL`: compare software versions 
 </div><div>
 
+There are also some special operators:
+
 * `"A" STREQUAL "B"`: true if both strings are equal
 * `"STR" MATCHES "REGEX"`: true if `REGEX` matches `STR`
 * `item IN_LIST myList`: true if `item` is inside `myList`
+
+<br>
 
 #### Statements
 
@@ -257,9 +285,11 @@ set(VARIABLE_NAME VARIABLE_VALUE PARENT_SCOPE)
 
 <hr class="sep-both">
 
-## Multi-modules project
+## Advanced Topics
 
 <div class="row row-cols-md-2"><div>
+
+#### Multi-modules project
 
 It's common to have big projects made of smaller units that can be configured and manipulated separately. 
 
@@ -270,7 +300,6 @@ add_library(libA SHARED src/libA.cpp)
 
 target_include_directories(libA PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 ```
-</div><div>
 
 The top-level `CMakeLists.txt` will include them.
 
@@ -282,6 +311,16 @@ project(untitled2)
 
 # include nested ./libA/CMakeLists.txt
 add_subdirectory(libA)
+```
+</div><div>
+
+#### Custom Modules and Include
+
+When we include something, it will look for it inside `CMAKE_MODULE_PATH` unless you provide the relative path to it. 
+
+```js!
+// load custom modules
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/modules")
 ```
 </div></div>
 
