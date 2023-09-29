@@ -137,10 +137,13 @@ set(CMAKE_C_STANDARD 99)
 set(CMAKE_CXX_STANDARD 17)
 ```
 
-The default value is `/`. Mostly used when cross-compiling.
+You can set compile options for all or one target:
 
 ```cmake
-set(CMAKE_FIND_ROOT_PATH /opt/xxx/)
+target_compile_options(targetName PRIVATE -Wall -Wextra -Wpedantic [...])
+target_compile_features(targetName PRIVATE cxx_std_17)
+# enable #DEFINE XXX etc. (same as -DXXX etc.) 
+target_compile_definitions(target PRIVATE XXX "YYY=ZZZ" [...])
 ```
 </div><div>
 
@@ -178,11 +181,10 @@ target_include_directories(targetName
     PRIVATE internal [...]
     # included files are visible to other targets but not ours
     INTERFACE inc [...]
-    ${CMAKE_CURRENT_BINARY_DIR}
 )
-# include system librairies -isystem xxx (disable warnings)
+# include system librairies (same as -isystem xxx)
 target_include_directories(target SYSTEM ...)
-# include librairies (same as -Ixxx but wider compatibility)
+# include librairies (same as -Ixxx)
 target_include_directories(target ...)
 ```
 </div></div>
@@ -531,18 +533,7 @@ Stuff that I found, but never read/used yet.
 * Contextual Logs
 * `cmake --install /path/`
 * `XXX-config.cmake`/`XXXConfig.cmake`
-* `find_package`
 * [Akagi201/learning-cmake](https://github.com/Akagi201/learning-cmake)
 * see [clang-tidy](/programming-languages/low-level/compilers/clang/clang-tidy.md) (`cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON`)
 </div><div>
-
-```cmake
-# -DXXX
-target_compile_definitions(target PRIVATE DEFINED "XXX=YYY") # #define DEFINED...
-
-target_compile_options(targetName PRIVATE -Wall -Wextra -Wpedantic)
-#target_compile_features(targetName PRIVATE cxx_std_17)
-
-target_sources(target XXX ...)
-```
 </div></div>
