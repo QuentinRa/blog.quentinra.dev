@@ -210,13 +210,13 @@ For external libraries, e.g., the ones not directly [within the project](#multi-
 find_package(LibXml2 REQUIRED)
 ```
 
-The line below changes according to how the finder works.
+The line below changes according to how the finder works. The finder documentation usually documents which variables are set.
 
 ```cmake
 target_link_libraries(libB PRIVATE ${LIBXML2_LIBRARIES})
 ```
 
-By using `find /usr -name "FindLibXml2.cmake"` (the format `Find<PKGNAME>.cmake`)
+By using `find /usr -name "FindLibXml2.cmake"` <small>(the format is `Find<PKGNAME>.cmake`)</small> I could find the finder.
 
 <details class="details-n">
 <summary>Common examples</summary>
@@ -261,6 +261,19 @@ include(FindPackageHandleStandardArgs)
 find_package_handle_standard_args(LibXml2 DEFAULT_MSG LIBXML2_LIBRARIES LIBXML2_INCLUDE_DIRS)
 
 mark_as_advanced(LIBXML2_LIBRARIES LIBXML2_INCLUDE_DIRS)
+```
+</details>
+
+<details class="details-n">
+<summary>Example: Custom <code>FindLibXml2.cmake</code> using PkgConfig</summary>
+
+```cmake
+# sudo apt-get install pkg-config
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(LIBXML2 REQUIRED libxml-2.0)
+
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(LibXml2 DEFAULT_MSG LIBXML2_LIBRARIES LIBXML2_INCLUDE_DIRS)
 ```
 </details>
 </div></div>
