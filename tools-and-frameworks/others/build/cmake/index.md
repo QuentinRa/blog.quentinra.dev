@@ -186,7 +186,8 @@ To do this, you should only have to use:
 target_link_libraries(targetA SCOPE targetB)
 target_link_libraries(targetA SCOPE -lxxx)
 target_link_libraries(targetA SCOPE -L/path/to/lib/)
-target_link_libraries(targetA SCOPE lib.a)
+target_link_libraries(targetA SCOPE /path/to/lib.a)
+target_link_libraries(targetA SCOPE /path/to/lib.so)
 ```
 
 The scope, which is optional, can be one of:
@@ -196,11 +197,26 @@ The scope, which is optional, can be one of:
 * `INTERFACE`: dependencies required to build dependencies that require *targetA* but not *targetA*
 
 👉 It may be obvious, but we almost always use `PRIVATE`.
+
+👉 The default scope is determined according to the target.
 </div><div>
 
 #### External Libraries
 
-...
+For external libraries, e.g., the ones not directly [within the project](#multi-modules-project), we use a **finder** to find some information needed to import them.
+
+```js!
+// sudo apt-get install libxml2 libxml2-dev
+find_package(LibXml2 REQUIRED)
+```
+
+The line below changes according to how the finder works.
+
+```js!
+target_link_libraries(libB PRIVATE ${LIBXML2_LIBRARIES})
+```
+
+By using `find /usr -name "FindLibXml2.cmake"` (the format `Find<PKGNAME>.cmake`)
 
 <details class="details-n">
 <summary>Common examples</summary>
@@ -219,6 +235,10 @@ find_package(Threads REQUIRED)
 target_link_libraries(my_app PRIVATE Threads::Threads)
 ```
 </details>
+
+#### Custom Finders
+
+We can add folders to [`CMAKE_MODULE_PATH`](#cmake-module-path) where our finders will be located. 
 </div></div>
 
 <hr class="sep-both">
@@ -422,20 +442,23 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 
 <br>
 
-#### Custom Modules and Include
+#### CMAKE MODULE PATH
 
-When we include something, it will look for it inside `CMAKE_MODULE_PATH` unless you provide the relative path to it. 
+The `CMAKE_MODULE_PATH` variable determines where cmake will look for some files. We can add our own folder will our own scripts/modules.
 
 ```js!
-// load custom modules
-list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/modules")
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
 ```
 
-You can include them using:
+<br>
+
+#### Create Reusable CMake Files
+
+We can create  `.cmake` files with anything we want from variables to functions. There are some predefined ones and we create ours by adding `.cmakes` files in folders in [CMAKE_MODULE_PATH](#cmake-module-path).
 
 ```js!
-include(ModuleName)
-include("folder/xxx.cmake")
+include(moduleName)
+include(folder/moduleName)
 ```
 </div></div>
 
