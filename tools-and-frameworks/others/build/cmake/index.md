@@ -238,7 +238,31 @@ target_link_libraries(my_app PRIVATE Threads::Threads)
 
 #### Custom Finders
 
-We can add folders to [`CMAKE_MODULE_PATH`](#cmake-module-path) where our finders will be located. 
+We can add folders to [`CMAKE_MODULE_PATH`](#cmake-module-path) where our finders will be located. There is no specific rule/syntax although most follow the same conventions/patterns.
+
+<details class="details-n">
+<summary>Example: Custom <code>FindLibXml2.cmake</code></summary>
+
+```cmake
+# try to find the library
+# store in "LIBXML2_LIBRARIES" the path of the library if found
+# Look for "libxml2.so" or "libxml2.dll" in /usr/lib, /usr/local/lib...
+# Add "PATHS /custom/path/" to function call to use a custom path)
+find_library(LIBXML2_LIBRARIES NAMES xml2 libxml2 REQUIRED)
+
+# find the include directory
+# set the variable "LIBXML2_INCLUDE_DIR" with the path to it
+# specify the header we want to find to ensure that we really have libxml headers
+find_path(LIBXML2_INCLUDE_DIRS NAMES libxml2/libxml/parser.h REQUIRED)
+
+# include another module called FindPackageHandleStandardArgs
+include(FindPackageHandleStandardArgs)
+# use it to check if we can find LibXml2
+find_package_handle_standard_args(LibXml2 DEFAULT_MSG LIBXML2_LIBRARIES LIBXML2_INCLUDE_DIRS)
+
+mark_as_advanced(LIBXML2_LIBRARIES LIBXML2_INCLUDE_DIRS)
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
