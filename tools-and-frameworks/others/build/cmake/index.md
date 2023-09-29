@@ -174,10 +174,51 @@ set(CMAKE_FIND_ROOT_PATH /opt/xxx/)
 
 <div class="row row-cols-md-2"><div>
 
-...
+All projects usually have external or internal dependencies 👨‍👩‍👧‍👦.
+
+* An executable requiring a library
+* A library requiring another library
+* ...
+
+To do this, you should only have to use:
+
+```js!
+target_link_libraries(targetA SCOPE targetB)
+target_link_libraries(targetA SCOPE -lxxx)
+target_link_libraries(targetA SCOPE -L/path/to/lib/)
+target_link_libraries(targetA SCOPE lib.a)
+```
+
+The scope, which is optional, can be one of:
+
+* `PRIVATE`: dependencies only required to build *targetA*
+* `PUBLIC`: dependencies required to build *targetA* and dependencies that require *targetA*
+* `INTERFACE`: dependencies required to build dependencies that require *targetA* but not *targetA*
+
+👉 It may be obvious, but we almost always use `PRIVATE`.
 </div><div>
 
+#### External Libraries
+
 ...
+
+<details class="details-n">
+<summary>Common examples</summary>
+
+Using math.h
+
+```scss!
+target_link_libraries(my_program PRIVATE m)
+```
+
+Using pthread.h
+
+```scss!
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package(Threads REQUIRED)
+target_link_libraries(my_app PRIVATE Threads::Threads)
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
