@@ -106,15 +106,15 @@ Common pre-defined variables:
 
 These two lines are the only required lines.
 
-```js!
+```cmake
 cmake_minimum_required(VERSION 3.18)
 project(your_project_name)
 ```
 
 The project function is quite powerful:
 
-```js!
-project(your_project_name C CXX) // C and C++
+```cmake
+project(your_project_name C CXX) # C and C++
 project(your_project_name VERSION 1.0 LANGUAGES C CXX)
 ```
 
@@ -128,8 +128,8 @@ CMake will automatically detect the languages for each target from the sources f
 
 You can generate an executable `targetName` using:
 
-```js!
-// build a binary
+```cmake
+# build a binary
 add_executable(targetName file.c file.h [...])
 add_executable(targetName main.cpp main.hpp [...])
 ```
@@ -139,11 +139,11 @@ add_executable(targetName main.cpp main.hpp [...])
 
 You can generate a library `.so` <small>(shared)</small> or `.a` <small>(static)</small> or header-only:
 
-```js!
-add_library(targetName INTERFACE file.h [...]) // header-only
-add_library(libA SHARED src/file.cpp include/file.h) // .so
-add_library(libA STATIC src/file.cpp include/file.h) // .a
-add_library(libA src/file.cpp include/file.h) // default
+```cmake
+add_library(targetName INTERFACE file.h [...]) # header-only
+add_library(libA SHARED src/file.cpp include/file.h) # .so
+add_library(libA STATIC src/file.cpp include/file.h) # .a
+add_library(libA src/file.cpp include/file.h) # use default
 ```
 
 <br>
@@ -152,7 +152,7 @@ add_library(libA src/file.cpp include/file.h) // default
 
 Common compiler-related configuration:
 
-```js!
+```cmake
 set(CMAKE_SYSTEM_NAME Linux)
 set(CMAKE_C_COMPILER gcc)
 set(CMAKE_CXX_COMPILER g++)
@@ -163,7 +163,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 The default value is `/`. Mostly used when cross-compiling.
 
-```js!
+```cmake
 set(CMAKE_FIND_ROOT_PATH /opt/xxx/)
 ```
 </div></div>
@@ -182,7 +182,7 @@ All projects usually have external or internal dependencies 👨‍👩‍👧�
 
 To do this, you should only have to use:
 
-```js!
+```cmake
 target_link_libraries(targetA SCOPE targetB)
 target_link_libraries(targetA SCOPE -lxxx)
 target_link_libraries(targetA SCOPE -L/path/to/lib/)
@@ -205,14 +205,14 @@ The scope, which is optional, can be one of:
 
 For external libraries, e.g., the ones not directly [within the project](#multi-modules-project), we use a **finder** to find some information needed to import them.
 
-```js!
-// sudo apt-get install libxml2 libxml2-dev
+```cmake
+# sudo apt-get install libxml2 libxml2-dev
 find_package(LibXml2 REQUIRED)
 ```
 
 The line below changes according to how the finder works.
 
-```js!
+```cmake
 target_link_libraries(libB PRIVATE ${LIBXML2_LIBRARIES})
 ```
 
@@ -223,13 +223,13 @@ By using `find /usr -name "FindLibXml2.cmake"` (the format `Find<PKGNAME>.cmake`
 
 Using math.h
 
-```scss!
+```cmake
 target_link_libraries(my_program PRIVATE m)
 ```
 
 Using pthread.h
 
-```scss!
+```cmake
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 find_package(Threads REQUIRED)
 target_link_libraries(my_app PRIVATE Threads::Threads)
@@ -275,12 +275,12 @@ mark_as_advanced(LIBXML2_LIBRARIES LIBXML2_INCLUDE_DIRS)
 
 We commonly add logging messages using `message`:
 
-```js!
-message(STATUS "message")      // messages for users
-message(WARNING "message")     // warning messages
-message(DEBUG "message")       // debug messages
-message(TRACE "message")       // trace
-message(FATAL_ERROR "message") // raise an error
+```cmake
+message(STATUS "message")      # messages for users
+message(WARNING "message")     # warning messages
+message(DEBUG "message")       # debug messages
+message(TRACE "message")       # trace
+message(FATAL_ERROR "message") # raise an error
 ```
 
 <br>
@@ -289,7 +289,7 @@ message(FATAL_ERROR "message") // raise an error
 
 You can use variables with `${VARIABLE_NAME}`.
 
-```js!
+```cmake
 set(VARIABLE_NAME)
 set(VARIABLE_NAME VARIABLE_VALUE)
 unset(VARIABLE_NAME)
@@ -297,12 +297,12 @@ unset(VARIABLE_NAME)
 
 Some examples:
 
-```js!
+```cmake
 set(MY_NUMBER 3.4)
 set(MY_BOOL TRUE)
 set(MY_OPTION ON)
 set(MY_CONDITION YES)
-set(MY_STR something) // risky, always quote strings
+set(MY_STR something) # risky, always quote strings
 set(MY_STR "something")
 ```
 </div><div>
@@ -311,17 +311,17 @@ set(MY_STR "something")
 
 Lists are variables with comma-separated values (`a;b;...`).
 
-```js!
+```cmake
 set(myList "a;b;...")
 set(myList A B...)
 ```
 
 You have many functions to operate on lists:
 
-```js!
-// list(OPERATION DESTINATION_VARIABLE ARGS)
-list(LENGTH MY_LIST_LENGTH myList) // get the length
-list(APPEND myList A B...)         // add values
+```cmake
+# list(OPERATION DESTINATION_VARIABLE ARGS)
+list(LENGTH MY_LIST_LENGTH myList) # get the length
+list(APPEND myList A B...)         # add values
 ```
 
 <br>
@@ -330,7 +330,7 @@ list(APPEND myList A B...)         // add values
 
 There are many file utilities:
 
-```js!
+```cmake
 file(READ  filename CONTENT_READ)
 file(WRITE filename "CONTENT")
 file(APPEND filename "CONTENT")
@@ -374,7 +374,7 @@ There are also some special operators:
 
 The syntax is:
 
-```php!
+```cmake
 if (CONDITION)
 elseif ()
 else ()
@@ -390,7 +390,7 @@ endif ()
 
 The syntax to declare a function is as follows:
 
-```js!
+```cmake
 function(FUNCTION_NAME)
 endfunction()
 
@@ -403,7 +403,7 @@ endfunction()
 
 To call a function:
 
-```js!
+```cmake
 function_name(ARG0 ARG1)
 FUNCTION_NAME(ARG0 ARG1 ARGN)
 ```
@@ -418,7 +418,7 @@ There is some pre-defined variables:
 
 You can't return a value, and variables created within a function are deleted, unless you use:
 
-```js!
+```cmake
 set(VARIABLE_NAME VARIABLE_VALUE PARENT_SCOPE)
 ```
 </div></div>
@@ -435,7 +435,7 @@ It's common to have big projects made of smaller units that can be configured an
 
 You will create a `CMakeLists.txt` inside each submodule.
 
-```js!
+```cmake
 add_library(libA SHARED src/libA.cpp)
 
 target_include_directories(libA PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
@@ -443,7 +443,7 @@ target_include_directories(libA PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 The top-level `CMakeLists.txt` will include them.
 
-```cpp
+```cmake
 cmake_minimum_required(VERSION 3.18)
 project(untitled2)
 
@@ -458,7 +458,7 @@ add_subdirectory(libA)
 
 This is an example for GNU directories:
 
-```js!
+```cmake
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
@@ -470,7 +470,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 
 The `CMAKE_MODULE_PATH` variable determines where cmake will look for some files. We can add our own folder will our own scripts/modules.
 
-```js!
+```cmake
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
 ```
 
@@ -480,7 +480,7 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
 
 We can create  `.cmake` files with anything we want from variables to functions. There are some predefined ones and we create ours by adding `.cmakes` files in folders in [CMAKE_MODULE_PATH](#cmake-module-path).
 
-```js!
+```cmake
 include(moduleName)
 include(folder/moduleName)
 ```
@@ -505,29 +505,25 @@ Stuff that I found, but never read/used yet.
 * see [clang-tidy](/programming-languages/low-level/compilers/clang/clang-tidy.md) (`cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON`)
 </div><div>
 
-```js!
-// more compatible than -Ixxx -isystem xxx -DXXX
+```cmake
+# more compatible than -Ixxx -isystem xxx -DXXX
 target_include_directories(target SYSTEM ...)
 target_include_directories(target ...)
-target_compile_definitions(target PRIVATE DEFINED "XXX=YYY") // #define DEFINED...
+target_compile_definitions(target PRIVATE DEFINED "XXX=YYY") # #define DEFINED...
 
 target_include_directories(targetName
-    // included files are visible to ours and other targets (api)
+    # included files are visible to ours and other targets (api)
     PUBLIC relative/path/to/include [...]
-    // included files are not visible to ours and other targets (internal)
+    # included files are not visible to ours and other targets (internal)
     PRIVATE relative/path/to/include [...]
-    // included files are visible to other targets but not ours
+    # included files are visible to other targets but not ours
     INTERFACE relative/path/to/include [...]
     ${CMAKE_CURRENT_BINARY_DIR}
 )
 
 target_compile_options(targetName PRIVATE -Wall -Wextra -Wpedantic)
-//target_compile_features(targetName PRIVATE cxx_std_17)
+#target_compile_features(targetName PRIVATE cxx_std_17)
 
 target_sources(target XXX ...)
-
-// link executable of targetB to targetA
-// allow us to inherit its include directives...
-target_link_libraries(targetA PRIVATE targetB)
 ```
 </div></div>
