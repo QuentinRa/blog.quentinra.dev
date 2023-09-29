@@ -124,30 +124,6 @@ CMake will automatically detect the languages for each target from the sources f
 
 <br>
 
-#### Build Executables
-
-You can generate an executable `targetName` using:
-
-```cmake
-# build a binary
-add_executable(targetName file.c file.h [...])
-add_executable(targetName main.cpp main.hpp [...])
-```
-</div><div>
-
-#### Build Librairies
-
-You can generate a library `.so` <small>(shared)</small> or `.a` <small>(static)</small> or header-only:
-
-```cmake
-add_library(targetName INTERFACE file.h [...]) # header-only
-add_library(libA SHARED src/file.cpp include/file.h) # .so
-add_library(libA STATIC src/file.cpp include/file.h) # .a
-add_library(libA src/file.cpp include/file.h) # use default
-```
-
-<br>
-
 #### Compiler
 
 Common compiler-related configuration:
@@ -165,6 +141,49 @@ The default value is `/`. Mostly used when cross-compiling.
 
 ```cmake
 set(CMAKE_FIND_ROOT_PATH /opt/xxx/)
+```
+</div><div>
+
+#### Build Executables
+
+You can generate an executable `targetName` using:
+
+```cmake
+# build a binary
+add_executable(targetName file.c file.h [...])
+add_executable(targetName main.cpp main.hpp [...])
+```
+
+<br>
+
+#### Build Libraries
+
+You can generate a library `.so` <small>(shared)</small> or `.a` <small>(static)</small> or header-only:
+
+```cmake
+add_library(targetName INTERFACE "file.h" [...]) # header-only
+add_library(libA SHARED "src/file.cpp" "include/file.h") # .so
+add_library(libA STATIC "src/file.cpp" "include/file.h") # .a
+add_library(libA "src/file.cpp" "include/file.h") # use default
+```
+
+It's up to each library to determine which of its headers are available to others. So, if you want to use `#include "xxx.h"` in sources of another target, **the library must allow it first**.
+
+```cmake!
+# ex: include headers in "inc" (PRIVATE) "api" (PUBLIC)
+target_include_directories(targetName
+    # included files are visible to ours and other targets (api)
+    PUBLIC api [...]
+    # included files are not visible to ours and other targets (internal)
+    PRIVATE internal [...]
+    # included files are visible to other targets but not ours
+    INTERFACE inc [...]
+    ${CMAKE_CURRENT_BINARY_DIR}
+)
+# include system librairies -isystem xxx (disable warnings)
+target_include_directories(target SYSTEM ...)
+# include librairies (same as -Ixxx but wider compatibility)
+target_include_directories(target ...)
 ```
 </div></div>
 
@@ -507,7 +526,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [_old](_old.md)
 * cmake-gui
 * ccmake
 * Contextual Logs
@@ -519,20 +537,8 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 ```cmake
-# more compatible than -Ixxx -isystem xxx -DXXX
-target_include_directories(target SYSTEM ...)
-target_include_directories(target ...)
+# -DXXX
 target_compile_definitions(target PRIVATE DEFINED "XXX=YYY") # #define DEFINED...
-
-target_include_directories(targetName
-    # included files are visible to ours and other targets (api)
-    PUBLIC relative/path/to/include [...]
-    # included files are not visible to ours and other targets (internal)
-    PRIVATE relative/path/to/include [...]
-    # included files are visible to other targets but not ours
-    INTERFACE relative/path/to/include [...]
-    ${CMAKE_CURRENT_BINARY_DIR}
-)
 
 target_compile_options(targetName PRIVATE -Wall -Wextra -Wpedantic)
 #target_compile_features(targetName PRIVATE cxx_std_17)
