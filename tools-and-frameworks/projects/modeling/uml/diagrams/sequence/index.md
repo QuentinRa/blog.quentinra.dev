@@ -26,6 +26,29 @@ For instance, "Player engages in combat with an enemy character."
 
 <hr class="sep-both">
 
+## Basic Overview
+
+<div class="row row-cols-md-2"><div>
+
+Sequence Diagrams focus on the chronological order interactions among system or actors. They illustrate the **lifetime** of each entity ⏳.
+
+The diagram is read from the top to the bottom, representing time progressing from top to bottom ⌛.
+
+Each **participant** in the sequence can be:
+
+* An actor <small>(refer to [Use Case Diagrams](../use_case/index.md))</small>
+* A class <small>(refer to [Class Diagrams](../class/index.md))</small>
+* An object <small>(refer to [Object Diagrams](../object/index.md))</small>
+* ...
+
+This is determined by the level of abstraction needed.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
