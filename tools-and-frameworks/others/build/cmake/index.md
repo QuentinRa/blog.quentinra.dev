@@ -107,6 +107,8 @@ Common pre-defined variables:
 These two lines are the only required lines.
 
 ```cmake
+# cmake_minimum_required(VERSION A..B)
+# cmake_minimum_required(VERSION A)
 cmake_minimum_required(VERSION 3.18)
 project(your_project_name)
 ```
@@ -523,7 +525,8 @@ project(untitled2)
 # include nested ./libA/CMakeLists.txt
 add_subdirectory(libA)
 ```
-</div><div>
+
+<br>
 
 #### Custom Output Directories
 
@@ -534,8 +537,7 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 ```
-
-<br>
+</div><div>
 
 #### CMAKE MODULE PATH
 
@@ -555,6 +557,14 @@ We can create  `.cmake` files with anything we want from variables to functions.
 include(moduleName)
 include(folder/moduleName)
 ```
+
+<br>
+
+#### Clone External Projects
+
+You can use `ExternalProject` or the newer and improved `FetchContent` to clone, configure, and build an external project.
+
+ExternalProject was operating at build time which was inconvenient, while FetchContent operates at the project configure stage. 
 </div></div>
 
 <hr class="sep-both">
