@@ -4,13 +4,6 @@
 
 This diagram is a representation of the program's lifetime. You will have the timelines of your objects and add the methods called and their arguments.
 
-Usually, this diagram is made of
-
-* a synopsis
-* the diagram itself, which can be either
-  * SSD=System sequence diagram /``Diagramme Séquence système``
-  * Sequence diagram /``Diagramme Séquence détaillé``
-
 <hr class="sr">
 
 ## Synopsis

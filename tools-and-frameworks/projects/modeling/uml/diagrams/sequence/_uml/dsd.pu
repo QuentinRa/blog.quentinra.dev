@@ -1,0 +1,12 @@
+@startuml
+participant Player
+participant Character
+participant Enemy
+Player -> Character: Move Left
+Player -> Character: Jump
+Player -> Character: Attack
+Character -> Enemy: Detect Enemy
+Character -> Enemy: Attack Enemy
+Enemy --> Character: Take Damage
+Character --> Player: Victory
+@enduml

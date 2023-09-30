@@ -1,0 +1,8 @@
+@startuml
+actor Player
+boundary Game
+Player -> Game: Start Game
+Player --> Game: Play Game
+Player -> Game: End Game
+Game --> Player: Game Over
+@enduml
