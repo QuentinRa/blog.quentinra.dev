@@ -135,12 +135,12 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [_old](_old.md)
 * self messages
 * example with fully instantiated diagram
 * we can't get a reply without sending a message first
 * ensure target function existing on target ; link class diagram
 * "create", "destroy"...
-* cross at the end of a timeline
+* cross at the end of a timeline = destroy
+* instantiated vs non-instantiated (cf scenarios)
 </div><div>
 </div></div>
