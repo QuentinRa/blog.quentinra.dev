@@ -1,0 +1,9 @@
+@startuml
+actor User
+participant Game
+
+User -> Game: Start Game
+activate Game
+Game --> User: Game Started
+deactivate Game
+@enduml

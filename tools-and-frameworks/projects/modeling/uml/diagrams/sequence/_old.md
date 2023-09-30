@@ -22,11 +22,7 @@ This is a short story about what the diagram will represent. It's
 
 ## System sequence diagram
 
-A system sequence diagram is a sequence diagram considered to be a black box. You don't know the methods called or the arguments, so you won't be able to add them.
-
-You will write a diagram having a lot of actors with a lifeline, and at the end of it, the actor may die. An actor is an object of your program, but it may be a person if needed. For instance, you can add an actor "Mickael" calling the "main" method to start the program. Anyway, it looks like this
-
-![SSD](images/utGeBaaiAYdDpU7YL7BAJrAmKWX8BIhEprDIq8rMBafDYRLJK7BCoKnEHPAnKiX8pSd91-f0bm7gCG02DxTONQ0-LFEi5FApkJWTKlDIWBO10000.png)
+You don't know the methods called or the arguments, so you won't be able to add them.
 
 You read this diagram as
 

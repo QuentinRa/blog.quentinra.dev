@@ -1,0 +1,4 @@
+@startuml
+"Bob : Person" -[#red]> "Alice : Person" : hello
+"Alice : Person" -[#0000FF]-> "Bob : Person" : ok
+@enduml

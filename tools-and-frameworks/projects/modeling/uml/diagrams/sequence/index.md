@@ -41,10 +41,24 @@ Each **participant** in the sequence can be:
 * An object <small>(refer to [Object Diagrams](../object/index.md))</small>
 * ...
 
-This is determined by the level of abstraction needed.
+This is determined by the level of abstraction needed. Below, we have an object diagram with two instances of `Person`.
+
+<div class="text-center">
+
+![Sequence Diagram Object Participants](_uml/obj.svg)
+</div>
+
+The vertical dotted line is what we call a **lifetime**.
 </div><div>
 
-...
+The interactions between participants are called **messages** 📮. You can view as the same as `function` calls.
+
+The arrow represents a message <small>(ex: a function call)</small> 📤. The rectangle is called **activation bar** and means tha participant is active <small>(ex: executing our function)</small>. The arrow with a dotted line is the reply 📩 <small>(ex: return xxx)</small>.
+
+<div class="text-center">
+
+![Sequence Diagram Message](_uml/msg.svg)
+</div>
 </div></div>
 
 <hr class="sep-both">
