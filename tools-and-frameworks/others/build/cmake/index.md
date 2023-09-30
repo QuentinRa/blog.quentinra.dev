@@ -564,7 +564,59 @@ include(folder/moduleName)
 
 You can use `ExternalProject` or the newer and improved `FetchContent` to clone, configure, and build an external project.
 
-ExternalProject was operating at build time which was inconvenient, while FetchContent operates at the project configure stage. 
+ExternalProject was operating at build time which was inconvenient, while FetchContent operates at the project configure stage.
+
+<details class="details-n">
+<summary>Handle project without a CMakeLists.txt</summary>
+
+This is an overly complex example that:
+
+* Clone a project
+* Add a header and a CMakeLists.txt inside
+* Allow our target to include the header
+
+It shows that we can **patch** a cloned project and use it inside **include** and **link**.
+
+⚠️ `project_name` must be a lowercase string.
+
+```cmake
+set(DEPS_NAME "project_name")
+set(DEPS_SOURCES "${DEPS_NAME}_SOURCE_DIR")
+
+FetchContent_Declare(
+        ${DEPS_NAME}
+        GIT_REPOSITORY "https://github.com/xxx/yyy.git"
+        GIT_TAG "xxx"
+)
+
+# Ensure we don't call the code when it's unneeded
+FetchContent_GetProperties(${DEPS_NAME})
+if(NOT ${DEPS_NAME}_POPULATED)
+    # Use a manual handler
+    FetchContent_Populate(${DEPS_NAME})
+
+    # Do custom stuff to initialize the project
+    # (ex: we are adding a Makefile and a header, that's stupid)
+    file(WRITE ${${DEPS_SOURCES}}/CMakeLists.txt
+            "cmake_minimum_required(VERSION ${CMAKE_VERSION})\n"
+            "project(${DEPS_NAME})\n"
+            "add_library(${DEPS_NAME} INTERFACE)\n"
+            "target_include_directories(${DEPS_NAME} INTERFACE \${CMAKE_CURRENT_SOURCE_DIR})\n"
+    )
+    file(WRITE ${${DEPS_SOURCES}}/xxx.h
+            "#pragma once\n"
+            "void xxx();\n"
+    )
+endif ()
+
+# Fall-back to the default handler (load our CMakeLists.txt)
+FetchContent_MakeAvailable(${DEPS_NAME})
+
+add_executable(someTarget main.cpp)
+target_include_directories(someTarget PRIVATE ${${DEPS_SOURCES}})
+target_link_libraries(someTarget PRIVATE ${DEPS_NAME})
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
