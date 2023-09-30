@@ -31,9 +31,11 @@ Once you installed the software and run it. To start from a clean environment, c
 
 ## Editor Overview
 
-<div class="row row-cols-md-2"><div class="mt-4">
+<div class="row row-cols-md-2 mt-4"><div class="mt-2">
 
 ![StarUML Editor](_images/software.png)
+
+💡 The editor <small>(5)</small> is available after selecting an element, either from the view <small>(4)</small> or the model <small>(1)</small>.
 </div><div>
 
 The editor is divided in five Windows.
@@ -53,14 +55,26 @@ The editor is divided in five Windows.
 
 <hr class="sep-both">
 
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
+## Random Notes
 
 <div class="row row-cols-md-2"><div>
 
-xxx
+#### Export Diagram
+
+You can export a diagram using `File > Export Diagram As`. The main drawback is that diagrams have an **Unregistered** background.
+
+You can still take a screenshot of a diagram for a fast solution.
+
+You could also use the SVG trick: export your diagram to SVG, remove all the `UNREGISTERED`, and convert it to PNG.
 </div><div>
 
+#### Do not trust the view
 
+You can delete an element but it will remain in the model, meaning 
+
+* 🪲 If you use the model explorer, select an element, for instance to edit it, you may pick the wrong one
+* 👻 Others may inadvertently use the incorrect in other diagrams
+* 💩 You will have it in generated code
+
+The model is the **only one you can trust**. Ensure it is up-to-date.
 </div></div>
