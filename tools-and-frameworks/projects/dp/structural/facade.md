@@ -4,21 +4,22 @@
 
 <div class="row row-cols-md-2"><div>
 
-**Aliases** 📌: XXX
+**Aliases** 📌: None
 
-**Description** 📚: Temporibus enim voluptatum necessitatibus aspernatur vel. Omnis cupiditate ipsum eum. Sint alias est dicta rem at voluptatem.
+**Description** 📚: A facade is a class that interfaces some complex code with an easy-to-use interface. By complex, it can mean a function with multiple parameters, or a suite of multiple method calls.
 
 </div><div>
 
 **Advantages** ✅
 
-* xxx
+* Reduces the complexity
+* Simplifies the maintenance
 
 **Disadvantages** 🚫
 
-* xxx
+* It may be complex to implement
 
 **Notes** 📝
 
-* xxx
+* None
 </div></div>
