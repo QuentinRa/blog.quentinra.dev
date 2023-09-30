@@ -1,6 +1,6 @@
 # Adapter Design Pattern
 
-[Go back](../index.md#creational-)
+[Go back](../index.md#structural-)
 
 <div class="row row-cols-md-2"><div>
 

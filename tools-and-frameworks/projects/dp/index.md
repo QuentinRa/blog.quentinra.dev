@@ -47,7 +47,7 @@ Creational patterns focus on object creation mechanisms. It's assumed you alread
 
 Structural patterns focus on how objects are composed and how to manage relationships between objects.
 
-* [Adapter](structural/adapter.md):
+* [Adapter](structural/adapter.md): 'adapt' a class to fit the client needs
 * [Facade](structural/facade.md):
 * [Composite](structural/composite.md):
 * [Bridge](structural/bridge.md):
