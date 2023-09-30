@@ -1,8 +1,5 @@
 # Structure
 
-* [Adaptor](structure/adaptor.md): interface linking what the client wanted with our code
-* [Facade](structure/facade.md): simplified API to use our code
-* [Composite](structure/composite.md): abstract class implemented by children
 * [Bridge](structure/bridge.md): interact with interfaces rather than concrete implementations
 * [Decorator](structure/decorator.md): wrap a class, alternative to inheritance.
 * [Flyweight](structure/flyweight.md): if you got a lot of objects (like bullets in a game) then you may use the flyweight.

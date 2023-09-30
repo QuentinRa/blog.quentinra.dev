@@ -522,18 +522,55 @@ include(folder/moduleName)
 
 <hr class="sep-both">
 
+## Random notes
+
+<div class="row row-cols-md-2"><div>
+
+#### Advanced Strings
+
+The multi-line string below corresponds to one string with newlines.
+
+```cmake
+message([==[
+some text
+some text
+]==])
+```
+
+This is the same as:
+
+```cmake
+message("some text\nsome text")
+```
+
+Or:
+
+```cmake
+message("some text
+some text")
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* cmake-gui
-* ccmake
+* cmake-gui, ccmake
+* ctest, cpack
 * Contextual Logs
-* `cmake --install /path/`
-* `XXX-config.cmake`/`XXXConfig.cmake`
-* [Akagi201/learning-cmake](https://github.com/Akagi201/learning-cmake)
-* see [clang-tidy](/programming-languages/low-level/compilers/clang/clang-tidy.md) (`cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON`)
+* cmake presets, CMakePresets.json, CMakeUserPresets.json (user-speficic override)
+* [ModernCppStarter](https://github.com/TheLartians/ModernCppStarter)
+* [Akagi201/learning-cmake](https://github.com/Akagi201/learning-cmake) and [awesome-cmake](https://github.com/onqtam/awesome-cmake)
 </div><div>
+
+* see [clang-tidy](/programming-languages/low-level/compilers/clang/clang-tidy.md) (`cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON`)
+* `cmake --install /path/ --prefix /path/`
+* `XXX-config.cmake`/`XXXConfig.cmake`
 </div></div>
