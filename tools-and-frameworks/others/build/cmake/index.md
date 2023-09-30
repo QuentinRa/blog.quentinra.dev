@@ -145,7 +145,10 @@ target_compile_features(targetName PRIVATE cxx_std_17)
 # enable #DEFINE XXX etc. (same as -DXXX etc.) 
 target_compile_definitions(target PRIVATE XXX "YYY=ZZZ" [...])
 ```
-</div><div>
+
+Some options are passed according to the type of build selected. See `CMAKE_CXX_FLAGS_DEBUG` and `CMAKE_CXX_FLAGS_RELEASE`.
+
+<br>
 
 #### Build Executables
 
@@ -153,21 +156,20 @@ You can generate an executable `targetName` using:
 
 ```cmake
 # build a binary
-add_executable(targetName file.c file.h [...])
-add_executable(targetName main.cpp main.hpp [...])
+add_executable(targetName xxx.c xxx.h [...])
+add_executable(targetName xxx.cpp xxx.hpp [...])
 ```
-
-<br>
+</div><div>
 
 #### Build Libraries
 
 You can generate a library `.so` <small>(shared)</small> or `.a` <small>(static)</small> or header-only:
 
 ```cmake
-add_library(targetName INTERFACE "file.h" [...]) # header-only
-add_library(libA SHARED "src/file.cpp" "include/file.h") # .so
-add_library(libA STATIC "src/file.cpp" "include/file.h") # .a
-add_library(libA "src/file.cpp" "include/file.h") # use default
+add_library(targetName INTERFACE xxx.h [...]) # header-only
+add_library(libA SHARED src/xxx.cpp inc/xxx.h) # .so
+add_library(libA STATIC src/xxx.cpp inc/xxx.h) # .a
+add_library(libA src/xxx.cpp inc/xxx.h) # see BUILD_SHARED_LIBS
 ```
 
 It's up to each library to determine which of its headers are available to others. So, if you want to use `#include "xxx.h"` in sources of another target, **the library must allow it first**.
@@ -186,6 +188,31 @@ target_include_directories(targetName
 target_include_directories(target SYSTEM ...)
 # include librairies (same as -Ixxx)
 target_include_directories(target ...)
+```
+
+<br>
+
+#### Sources
+
+You can add sources after `add_xxx` using `target_sources`.
+
+```cmake
+target_sources(targetName xxx.h [...])
+target_sources(targetName PUBLIC xxx.h [...])
+target_sources(targetName PRIVATE xxx.h [...])
+target_sources(targetName INTERFACE xxx.h [...])
+```
+
+You **should** enter all sources manually as using functions such as `file(...)` break some generators and some IDEs.
+
+```cmake
+file(GLOB_RECURSE ALL_SOURCES src/*.c src/*.cpp)
+```
+
+At the very least, use `CONFIGURE_DEPENDS`:
+
+```cmake
+file(GLOB_RECURSE ALL_SOURCES CONFIGURE_DEPENDS src/*.c src/*.cpp)
 ```
 </div></div>
 
@@ -237,7 +264,7 @@ The line below changes according to how the finder works. The finder documentati
 target_link_libraries(libB PRIVATE ${LIBXML2_LIBRARIES})
 ```
 
-By using `find /usr -name "FindLibXml2.cmake"` <small>(the format is `Find<PKGNAME>.cmake`)</small> I could find the finder.
+By using `find /usr -name "FindLibXml2.cmake"` <small>(the format is `Find<PKGNAME>.cmake`)</small> I could find the finder. [Online documentation](https://cmake.org/cmake/help/latest/manual/cmake-modules.7.html).
 
 <details class="details-n">
 <summary>Common examples</summary>
@@ -254,6 +281,14 @@ Using pthread.h
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 find_package(Threads REQUIRED)
 target_link_libraries(my_app PRIVATE Threads::Threads)
+```
+
+Using PkgConfig
+
+```cmake
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(XXX REQUIRED IMPORTED_TARGET pkgName)
+# Use "PkgConfig::XXX" instead of "ProjectName::"
 ```
 </details>
 
@@ -551,6 +586,24 @@ Or:
 message("some text
 some text")
 ```
+
+<br>
+
+#### CMake Advanced Compile Options
+
+You can set compile options per file language:
+
+```cmake
+target_compile_options(my_target PRIVATE
+    -Wall                          # Apply to all source files
+    $<$<COMPILE_LANGUAGE:CXX>:
+        -O3                         # Apply to C++ files only
+    >
+    $<$<COMPILE_LANGUAGE:C>:
+        -O2                         # Apply to C files only
+    >
+)
+```
 </div><div>
 
 #### CMake Custom Target
@@ -578,6 +631,24 @@ if(PROJECT_SOURCE_DIR STREQUAL PROJECT_BINARY_DIR)
 endif()
 ```
 
+<br>
+
+#### Generate Headers
+
+You can generate headers from a template filled with CMake Variables:
+
+```bash!
+$ cat configure.h.in
+#cmakedefine XXX "${ZZZ}"
+#cmakedefine YYY "@ZZZ@"
+```
+
+Both syntaxes can be used. Variables are replaced if they are defined, or the "define" line is commented out.
+
+```cmake
+configure_file(configure.h.in configure.h)
+```
+
 </div></div>
 
 <hr class="sep-both">
@@ -594,7 +665,7 @@ Stuff that I found, but never read/used yet.
 * cmake presets, CMakePresets.json, CMakeUserPresets.json (user-speficic override)
 * [ModernCppStarter](https://github.com/TheLartians/ModernCppStarter)
 * [Akagi201/learning-cmake](https://github.com/Akagi201/learning-cmake) and [awesome-cmake](https://github.com/onqtam/awesome-cmake)
-* execute_process
+* execute_process, target_precompile_headers
 </div><div>
 
 * macros (unlike function, no need for PARENT_SCOPE)
