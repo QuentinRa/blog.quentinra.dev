@@ -71,7 +71,7 @@ Some messages are **asynchronous** meaning we are not expecting a response meani
 
 <div class="row row-cols-md-2"><div>
 
-Combined Fragments are used to add various types of control flow and interaction scenarios within a sequence diagram.
+[Combined Fragments](https://www.uml-diagrams.org/sequence-diagrams-combined-fragment.html) are used to add various types of control flow and interaction scenarios within a sequence diagram.
 
 Conditions such as `[isXXX]` are called **guards**.
 
@@ -88,9 +88,29 @@ Both are used for branching. `ALT` is for alternative behavior <small>(execute o
 ![ALT Combined Fragment](_uml/fragment_alt.svg)
 ![OPT Combined Fragment](_uml/fragment_opt.svg)
 </div>
+
+<br>
+
+#### Combined Fragment LOOP 
+
+You can repeat some interaction multiple times.
+
+<div class="text-center">
+
+![LOOP Combined Fragment](_uml/fragment_loop.svg)
+</div>
 </div><div>
 
-...
+#### Combined Fragments: PAR, SEQ/STRICT, CRITICAL
+
+First, `PAR` is used to run instructions in parallel. `SEQ` or `STRICT` are used when we are calling asynchronous methods, and we need to ensure the previous one is done before the next one <small>(STRICT doesn't propagate)</small>.
+
+<div class="text-center">
+
+![PAR Combined Fragment](_uml/fragment_par.svg)
+</div>
+
+🐫 I learnt that `CRITICAL` means that the instructions mustn't fail but documentation say it doesn't mean that <small>(it means an atomic instruction)</small>.
 </div></div>
 
 <hr class="sep-both">

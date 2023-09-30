@@ -1,0 +1,11 @@
+@startuml
+participant Player
+participant Enemy
+
+Player -> Enemy: Attack
+loop 3 times
+  Player <-- Enemy: Counterattack
+  Player -> Enemy: Attack
+end
+Player --> Enemy: Victory
+@enduml
