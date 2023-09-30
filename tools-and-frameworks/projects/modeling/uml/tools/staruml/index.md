@@ -23,16 +23,32 @@ Once you installed the software and run it. To start from a clean environment, c
 
 ![Base Editor Opened Model](_images/base_editor.png)
 </div>
+
+👉 StarUML projects files are `.mdj` files <small>(models + diagrams)</small>.
 </div></div>
 
 <hr class="sep-both">
 
-## Editor
+## Editor Overview
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-md-2"><div class="mt-4">
 
 ![StarUML Editor](_images/software.png)
 </div><div>
+
+The editor is divided in five Windows.
+
+1. **Model Explorer** 🌱: a Model is a collection of diagrams. You can reuse something from a diagram in another diagram.
+
+2. **Working Diagrams** 📇: all recently opened diagrams
+
+3. **Toolbox** 🪛: UML elements available for the opened diagram
+
+4. **View** 🖼️: the opened UML diagram. Click on an element from the toolbox and click somewhere in this window to add it.
+
+5. **Editor** 🧑‍🍳: you can manipulate UML elements properties or add additional information such as documentation.
+
+➡️ In the Model Explorer, the "Untitled" is the project name.
 </div></div>
 
 <hr class="sep-both">
