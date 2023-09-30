@@ -1,0 +1,15 @@
+@startuml
+actor Alice
+participant Monster1
+participant Monster2
+participant DarkDungeon
+
+Alice -> DarkDungeon: explore(LEFT)
+DarkDungeon --> Alice: Monster Appears
+Alice -> Monster1: attack(EXPLOSION)
+par
+    Monster1 --> Alice: Dealt 17 DMG
+else
+    Monster2 --> Alice: Dealt 13 DMG
+end
+@enduml
