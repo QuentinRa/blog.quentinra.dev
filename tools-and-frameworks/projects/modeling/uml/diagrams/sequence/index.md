@@ -53,12 +53,16 @@ The vertical dotted line is what we call a **lifetime**.
 
 The interactions between participants are called **messages** 📮. You can view as the same as `function` calls.
 
-The arrow represents a message <small>(ex: a function call)</small> 📤. The rectangle is called **activation bar** and means tha participant is active <small>(ex: executing our function)</small>. The arrow with a dotted line is the reply 📩 <small>(ex: return xxx)</small>.
+The solid line and arrowhead represents a message <small>(ex: a function call)</small>. The rectangle is an **activation bar**. It means tha participant is active <small>(ex: executing our function)</small>. The dashed arrow is the **reply** <small>(ex: return xxx)</small>.
 
 <div class="text-center">
 
 ![Sequence Diagram Message](_uml/msg.svg)
 </div>
+
+Some messages are **asynchronous** meaning we are not expecting a response meaning the timeline doesn't wait for a reply to continue. They are represented with a dashed line and arrowhead.
+
+👉 For complex diagrams, we may add numbers before every message especially when it involves asynchronous messages.
 </div></div>
 
 <hr class="sep-both">
@@ -70,5 +74,11 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [_old](_old.md)
+* self messages
+* example with fully instantiated diagram
+* we can't get a reply without sending a message first
+* ensure target function existing on target ; link class diagram
+* "create", "destroy"...
+* cross at the end of a timeline
 </div><div>
 </div></div>
