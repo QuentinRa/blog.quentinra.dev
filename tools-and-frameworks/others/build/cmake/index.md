@@ -378,32 +378,6 @@ file(DOWNLOAD URL filename)
 
 <div class="row row-cols-md-2"><div>
 
-#### Conditions
-
-`TRUE`, `ON`, `YES` and non-zero numbers are all true. `OFF`, `NO`, `FALSE`, zero, and empty strings are all false.
-
-As always, you have basic utilities:
-
-* `NOT CONDITION`
-* `CONDITION1 AND CONDITION2`
-* `CONDITION1 OR CONDITION2`
-
-And there are some common operators:
-
-* `DEFINED VARIABLE`: true if a variable is defined
-* `TARGET VARIABLE`: true if a target is defined
-* `EQUAL`, `LESS`, `LESS_EQUAL`, `GREATER`, and `GREATER_EQUAL` which are used to compare numeric values
-* `A VERSION_XXX B` such as `VERSION_EQUAL`: compare software versions 
-</div><div>
-
-There are also some special operators:
-
-* `"A" STREQUAL "B"`: true if both strings are equal
-* `"STR" MATCHES "REGEX"`: true if `REGEX` matches `STR`
-* `item IN_LIST myList`: true if `item` is inside `myList`
-
-<br>
-
 #### Statements
 
 The syntax is:
@@ -414,6 +388,34 @@ elseif ()
 else ()
 endif ()
 ```
+
+<br>
+
+#### Conditions
+
+`TRUE`, `ON`, `YES` and non-zero numbers are all true. `OFF`, `NO`, `FALSE`, zero, and empty strings are all false.
+
+As always, you have basic utilities:
+
+* `NOT CONDITION`
+* `CONDITION1 AND CONDITION2`
+* `CONDITION1 OR CONDITION2`
+</div><div>
+
+And there are some common operators:
+
+* `DEFINED VARIABLE`: true if a variable is defined
+* `TARGET VARIABLE`: true if a target is defined
+* `COMMAND VARIABLE`: true if a command is defined
+* `TEST VARIABLE`: true if a test is defined
+* `EQUAL`, `LESS`, `LESS_EQUAL`, `GREATER`, and `GREATER_EQUAL` which are used to compare numeric values
+* `A VERSION_XXX B` such as `VERSION_EQUAL`: compare software versions
+
+There are also some special operators:
+
+* `"A" STREQUAL "B"`: true if both strings are equal
+* `"STR" MATCHES "REGEX"`: true if `REGEX` matches `STR`
+* `item IN_LIST myList`: true if `item` is inside `myList`
 </div></div>
 
 <hr class="sep-both">
@@ -551,7 +553,31 @@ some text")
 ```
 </div><div>
 
-...
+#### CMake Custom Target
+
+You can execute a command:
+
+```cmake
+add_custom_target(targetName ALL COMMAND xxx)
+
+add_custom_command(OUTPUT xxx.h xxx.cc
+    COMMAND xxx ARGS yyy
+    DEPENDS xxx.yyy
+)
+```
+
+<br>
+
+#### Prevent In-Source Builds
+
+Don't use the same folder as your sources to compile.
+
+```cmake
+if(PROJECT_SOURCE_DIR STREQUAL PROJECT_BINARY_DIR)
+  message(FATAL_ERROR "In-source builds not allowed.")
+endif()
+```
+
 </div></div>
 
 <hr class="sep-both">
@@ -568,8 +594,10 @@ Stuff that I found, but never read/used yet.
 * cmake presets, CMakePresets.json, CMakeUserPresets.json (user-speficic override)
 * [ModernCppStarter](https://github.com/TheLartians/ModernCppStarter)
 * [Akagi201/learning-cmake](https://github.com/Akagi201/learning-cmake) and [awesome-cmake](https://github.com/onqtam/awesome-cmake)
+* execute_process
 </div><div>
 
+* macros (unlike function, no need for PARENT_SCOPE)
 * see [clang-tidy](/programming-languages/low-level/compilers/clang/clang-tidy.md) (`cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON`)
 * `cmake --install /path/ --prefix /path/`
 * `XXX-config.cmake`/`XXXConfig.cmake`
