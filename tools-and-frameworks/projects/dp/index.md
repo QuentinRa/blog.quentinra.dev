@@ -40,7 +40,29 @@ Creational patterns focus on object creation mechanisms. It's assumed you alread
 * [Prototype](creational/prototype.md): reuse an object by cloning it when calling the constructor is costly
 * [Builder](creational/builder.md): create complex objects step-by-step
 * [Object Pool](creational/pool.md): shared reusable instances
+
+<br>
+
+#### Structural 🗃️
+
+Structural patterns focus on how objects are composed and how to manage relationships between objects.
+
+* [Adapter](structural/adapter.md):
+* [Facade](structural/facade.md):
+* [Composite](structural/composite.md):
+* [Bridge](structural/bridge.md):
+* [Decorator](structural/decorator.md):
+* [Flyweight](structural/flyweight.md):
+* [Proxy](structural/proxy.md):
 </div><div>
+
+#### Behavioral 📮
+
+...
+
+<br>
+
+#### Architectural 🏘️
 
 ...
 </div></div>
@@ -54,8 +76,15 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [_old](_old/index.md)
+Creational
+
+* Dependency Injection
+* Lazy initialization
+
+Structual
+
+* Delegation
 </div><div>
 
-
+* [_old](_old/index.md)
 </div></div>
