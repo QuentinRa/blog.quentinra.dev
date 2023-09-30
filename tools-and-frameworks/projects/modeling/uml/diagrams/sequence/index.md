@@ -67,6 +67,34 @@ Some messages are **asynchronous** meaning we are not expecting a response meani
 
 <hr class="sep-both">
 
+## Combined Fragments
+
+<div class="row row-cols-md-2"><div>
+
+Combined Fragments are used to add various types of control flow and interaction scenarios within a sequence diagram.
+
+Conditions such as `[isXXX]` are called **guards**.
+
+Most combined fragments have a dotted line separating something. You can for most scale the number of items.
+
+<br>
+
+#### Combined Fragments: ALT and OPT
+
+Both are used for branching. `ALT` is for alternative behavior <small>(execute one of...)</small> while `OPT` is optional behavior <small>(execute if condition met)</small>.
+
+<div class="text-center">
+
+![ALT Combined Fragment](_uml/fragment_alt.svg)
+![OPT Combined Fragment](_uml/fragment_opt.svg)
+</div>
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

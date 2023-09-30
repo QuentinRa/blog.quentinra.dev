@@ -1,0 +1,10 @@
+@startuml
+participant Player
+participant Character
+
+Player -> Character: Ask for a Gift
+opt Character Decides to Give
+  Character --> Player: Gives a Gift
+end
+Player --> Character: Continue Interaction
+@enduml

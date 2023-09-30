@@ -1,0 +1,13 @@
+@startuml
+participant Player
+participant Character
+
+Player -> Character: Ask for a Gift
+alt Player Chooses Yes
+  Player --> Character: Choose Yes
+  Character --> Player: Gives a Gift
+else Player Chooses No
+  Player --> Character: Choose No
+  Character --> Player: Refuses
+end
+@enduml
