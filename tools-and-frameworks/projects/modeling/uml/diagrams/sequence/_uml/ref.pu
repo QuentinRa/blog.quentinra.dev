@@ -1,0 +1,16 @@
+@startuml
+mainframe sd another_diagram
+participant Alice
+actor Bob
+
+Alice -> Bob : Hello
+
+group ref my_diagram
+participant Alice
+actor Bob
+actor Charlie
+
+Bob ->> Charlie : Alice is here!
+Bob --> Alice : Hello
+end
+@enduml

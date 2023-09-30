@@ -60,7 +60,7 @@ The solid line and arrowhead represents a message <small>(ex: a function call)</
 ![Sequence Diagram Message](_uml/msg.svg)
 </div>
 
-Some messages are **asynchronous** meaning we are not expecting a response meaning the timeline doesn't wait for a reply to continue. They are represented with a dashed line and arrowhead.
+Some messages are **asynchronous** meaning we are not expecting a response meaning the timeline doesn't wait for a reply to continue. They are represented with a different arrowhead.
 
 👉 For complex diagrams, we may add numbers before every message especially when it involves asynchronous messages.
 </div></div>
@@ -111,6 +111,20 @@ First, `PAR` is used to run instructions in parallel. `SEQ` or `STRICT` are used
 </div>
 
 🐫 I learnt that `CRITICAL` means that the instructions mustn't fail but documentation say it doesn't mean that <small>(it means an atomic instruction)</small>.
+
+<br>
+
+#### Combined Fragments "SD" and "REF"
+
+I can't seem to find the documentation for both. Usually, sequence diagrams are wrapped in a combined fragment `sd diagram_name`.
+
+This allows us to use the `ref` to import them.
+
+<div class="text-center">
+
+![SD Combined Fragment](_uml/sd.svg) &nbsp;
+![REF Combined Fragment](_uml/ref.svg)
+</div>
 </div></div>
 
 <hr class="sep-both">
