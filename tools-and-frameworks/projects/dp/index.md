@@ -62,8 +62,8 @@ XXX
 * `Chain of Responsibility`: a client requests something. We create a chain of classes to ask if they can do it.
 * [Iterator](behavioral/iterator.md): iterate an unknown group of objects
 * [Observable](behavioral/observable.md): monitor objects changes and dispatch events
-* [Memento](): xxx
-* [NullObject](): xxx
+* [Memento](behavioral/memento.md): save and restore object states
+* [NullObject](behavioral/nullobject.md): handle "null" objects nicely
 
 <br>
 
