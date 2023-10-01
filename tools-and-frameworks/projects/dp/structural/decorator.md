@@ -22,3 +22,68 @@
 
 * An alternative to inheritance
 </div></div>
+
+<hr class="sep-both">
+
+## Java implementation
+
+<div class="row row-cols-md-2 mt-4"><div>
+
+```java
+public interface Food {
+    String getName();
+    int getPrice();
+
+    default String print() {
+        return "{ name:" + getName() + ", price:" + getPrice() + " }";
+    }
+}
+```
+
+```java
+public class Pizza implements Food {
+    @Override
+    public String getName() {
+        return "Pizza";
+    }
+
+    @Override
+    public int getPrice() {
+        return 7;
+    }
+}
+```
+</div><div>
+
+```java
+public class DriveFood implements Food {
+    private final Food food;
+
+    public DriveFood(Food food) {
+        this.food = food;
+    }
+
+    @Override
+    public int getPrice() {
+        // increase the price
+        return food.getPrice() + 3;
+    }
+
+    @Override
+    public String getName() {
+        return this.food.getName();
+    }
+}
+```
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        Pizza p = new Pizza();
+        System.out.println(p.print()); // { name:Pizza, price:7 }
+        DriveFood f = new DriveFood(p);
+        System.out.println(f.print()); // { name:Pizza, price:10 }
+    }
+}
+```
+</div></div>
