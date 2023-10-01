@@ -81,6 +81,60 @@ Architectural design patterns aren't official patterns.
 * `Data access object` (DAO)
 </div></div>
 
+<hr class="sep-both">
+
+## Anti-Patterns
+
+<div class="row row-cols-md-2"><div>
+
+Anti-Patterns are well-known bad practices used by programmers  and that should be avoided 💀.
+
+#### Spaghetti Code 🍝
+
+...
+
+<br>
+
+#### Magic Numbers and Strings ✨
+
+...
+
+<br>
+
+#### Golden Hammer 🔨
+
+...
+
+<br>
+
+#### Premature Optimization 🐣
+
+...
+</div><div>
+
+
+#### Boat Anchor ⚓
+
+...
+
+<br>
+
+#### God Object/Class or "The Blob" ⛪
+
+...
+
+<br>
+
+#### Cut-and-Paste Programming 📝
+
+...
+
+<br>
+
+#### Lava Flow/Dead code 🔥
+
+...
+</div></div>
 
 <hr class="sep-both">
 
