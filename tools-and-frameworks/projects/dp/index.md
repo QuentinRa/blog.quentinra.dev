@@ -57,13 +57,15 @@ Structural patterns focus on how objects are composed and how to manage relation
 
 #### Behavioral 📮
 
-XXX
+Behavioral patterns focus on how objects communicate and interact with other objects.
 
 * `Chain of Responsibility`: a client requests something. We create a chain of classes to ask if they can do it.
 * [Iterator](behavioral/iterator.md): iterate an unknown group of objects
 * [Observable](behavioral/observable.md): monitor objects changes and dispatch events
 * [Memento](behavioral/memento.md): save and restore object states
 * [NullObject](behavioral/nullobject.md): handle "null" objects nicely
+* [Command](behavioral/command.md): encapsulate commands/requests/actions as an object
+* [Interpreter](behavioral/interpreter.md): write an interpreter for a language
 
 <br>
 

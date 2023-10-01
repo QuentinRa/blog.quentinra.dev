@@ -4,7 +4,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-**Aliases** 📌: XXX
+**Aliases** 📌: None
 
 **Description** 📚: Temporibus enim voluptatum necessitatibus aspernatur vel. Omnis cupiditate ipsum eum. Sint alias est dicta rem at voluptatem.
 
@@ -16,9 +16,9 @@
 
 **Disadvantages** 🚫
 
-* xxx
+* ???
 
 **Notes** 📝
 
-* xxx
+* None
 </div></div>

@@ -1,9 +1,5 @@
 # Behavior
 
-* [Memento](behavior/memento.md): save and load objects
-* [NullObject](behavior/null-object.md): use an empty object instead of null
-* [Command](behavior/command.md): separate the one using the command and the command itself
-* [Interpreter](behavior/interpreter.md): simple language parser
 * [Template method](behavior/template.md): define classes properties
 * [State](behavior/state.md): change objects' behavior according to their state
 * [Strategy](behavior/strategy.md): family of objects
