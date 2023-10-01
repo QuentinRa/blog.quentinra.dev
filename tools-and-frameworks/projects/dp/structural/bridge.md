@@ -8,8 +8,8 @@
 
 **Description** 📚: We are separating an object abstraction from its implementation. For instance, we would separate:
 
-* A document <small>(could be a PDF, a WORD...)</small> from how we render it... 
 * A converter <small>(from X to Y)</small> from how we convert something
+* A figure <small>(Circle, Square)</small> from how we render it
 * ...
 
 Basically, we interact with interfaces rather than concrete classes.

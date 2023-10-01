@@ -4,21 +4,21 @@
 
 <div class="row row-cols-md-2"><div>
 
-**Aliases** 📌: XXX
+**Aliases** 📌: None
 
-**Description** 📚: Temporibus enim voluptatum necessitatibus aspernatur vel. Omnis cupiditate ipsum eum. Sint alias est dicta rem at voluptatem.
+**Description** 📚: A decorator is a class that uses a concrete instance to delegate the implementation of an interface while using its own implementation for one or more methods. 
 
 </div><div>
 
 **Advantages** ✅
 
-* xxx
+* Avoid using inheritance slots <small>(ex: extends in Java)</small>
 
 **Disadvantages** 🚫
 
-* xxx
+* ???
 
 **Notes** 📝
 
-* xxx
+* An alternative to inheritance
 </div></div>
