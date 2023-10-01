@@ -1,7 +1,5 @@
 # Behavior
 
-* [Iterator](behavior/iterator.md): iterates a list of Unknowns items
-* [Observable](behavior/observable.md): watch objects' changes and dispatch events
 * [Memento](behavior/memento.md): save and load objects
 * [NullObject](behavior/null-object.md): use an empty object instead of null
 * [Command](behavior/command.md): separate the one using the command and the command itself
