@@ -4,21 +4,27 @@
 
 <div class="row row-cols-md-2"><div>
 
-**Aliases** 📌: XXX
+**Aliases** 📌: None
 
-**Description** 📚: Temporibus enim voluptatum necessitatibus aspernatur vel. Omnis cupiditate ipsum eum. Sint alias est dicta rem at voluptatem.
+**Description** 📚: We are separating an object abstraction from its implementation. For instance, we would separate:
 
+* A document <small>(could be a PDF, a WORD...)</small> from how we render it... 
+* A converter <small>(from X to Y)</small> from how we convert something
+* ...
+
+Basically, we interact with interfaces rather than concrete classes.
 </div><div>
 
 **Advantages** ✅
 
-* xxx
+* Flexibility
+* Easier to maintain
 
 **Disadvantages** 🚫
 
-* xxx
+* Complexity
 
 **Notes** 📝
 
-* xxx
+* None
 </div></div>
