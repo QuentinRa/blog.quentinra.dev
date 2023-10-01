@@ -57,21 +57,21 @@ public class Pizza implements Food {
 
 ```java
 public class DriveFood implements Food {
-    private final Food food;
+    private final Food decorated;
 
     public DriveFood(Food food) {
-        this.food = food;
+        this.decorated = decorated;
     }
 
     @Override
     public int getPrice() {
         // increase the price
-        return food.getPrice() + 3;
+        return decorated.getPrice() + 3;
     }
 
     @Override
     public String getName() {
-        return this.food.getName();
+        return decorated.getName();
     }
 }
 ```

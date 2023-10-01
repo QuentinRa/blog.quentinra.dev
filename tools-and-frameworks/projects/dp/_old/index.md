@@ -1,13 +1,4 @@
-# Structure
-
-* [Bridge](structure/bridge.md): interact with interfaces rather than concrete implementations
-* [Decorator](structure/decorator.md): wrap a class, alternative to inheritance.
-* [Flyweight](structure/flyweight.md): if you got a lot of objects (like bullets in a game) then you may use the flyweight.
-* [Proxy](structure/proxy.md): call a remote object or use an attribute of a subclass to prevent yourself from coding some methods.
-
-<hr class="sl">
-
-## Behavior
+# Behavior
 
 * [Chain of Responsibility](behavior/chain-of-responsibility.md): ask a list of classes if they will deal with a task
 * [Iterator](behavior/iterator.md): iterates a list of Unknowns items
@@ -21,56 +12,6 @@
 * [Strategy](behavior/strategy.md): family of objects
 * [Visitor](behavior/visitor.md): an object is changing according to who visit it
 * [Mediator](behavior/mediator.md): handles the relations between classes
-
-<hr class="sr">
-
-## Architectural
-
-* [MVC](architectural/mvc.md): Model - View - Controller
-* DAO
-
-<hr class="sl">
-
-## What's the design pattern?
-
-1. I'm using a listener (a class listening to events like input...) `ListChangeListener` with `onChanged` in Java.
-
-<blockquote class="spoiler">
-That's the <code>Observer/Observable</code> pattern since we <code>watch objects' changes and dispatch events</code>.
-</blockquote>
-
-2. A class `Group` extending `Figure`, and containing a lot of `Figure`. `Group` is also a `Figure`.
-
-<blockquote class="spoiler">
-That's the <code>Composite</code> pattern.
-</blockquote>
-
-3. An alternative to inheritance
-
-<blockquote class="spoiler">
-That's <code>Decorator</code> pattern.
-</blockquote>
-
-4. A concrete class calling abstract methods implemented in sub-classes
-
-<blockquote class="spoiler">
-That's <code>Template (method)</code> pattern. You will define some properties in an abstract class that will be used by concrete classes.
-</blockquote>
-
-5. A private attribute having the type of the class and a class method to get the attribute value.
-
-<blockquote class="spoiler">
-That's <code>Singleton</code> pattern.
-</blockquote>
-
-6. In `Java`, `Collection<E>` defines a method `Iterator<E> iterator()` allowing to iterate concrete collections.
-
-<blockquote class="spoiler">
-That's the <code>Iterator</code> pattern. But I have some doubts because, for me, this may also be the
-
-* <code>Factory</code> pattern (since we are creating concrete iterators that are hidden using Iterator class).
-* <code>Template method</code> pattern (Collection is an interface)
-</blockquote>
 
 <hr class="sr">
 

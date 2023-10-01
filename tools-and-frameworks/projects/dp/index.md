@@ -50,10 +50,9 @@ Structural patterns focus on how objects are composed and how to manage relation
 * [Adapter](structural/adapter.md): 'adapt' a class to fit the client needs
 * [Facade](structural/facade.md): create a simplified interface to complex codebase
 * [Composite](structural/composite.md): uniformize the code for individual objects and composition of objects <small>(e.g., a group of individual objects)</small>
-* [Bridge](structural/bridge.md):
-* [Decorator](structural/decorator.md):
-* [Flyweight](structural/flyweight.md):
-* [Proxy](structural/proxy.md):
+* [Bridge](structural/bridge.md): separate object abstraction and its implementation
+* [Decorator](structural/decorator.md): add a custom behavior to an existing class
+* Proxy: access another object from an intermediary
 </div><div>
 
 #### Behavioral 📮
@@ -64,7 +63,8 @@ Structural patterns focus on how objects are composed and how to manage relation
 
 #### Architectural 🏘️
 
-...
+* MVC
+* DAO
 </div></div>
 
 
@@ -76,6 +76,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+* [_old](_old/index.md)
+
 Creational
 
 * Dependency Injection
@@ -84,7 +86,6 @@ Creational
 Structual
 
 * Delegation
+* Flyweight
 </div><div>
-
-* [_old](_old/index.md)
 </div></div>
