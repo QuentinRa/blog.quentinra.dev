@@ -1,6 +1,6 @@
 # XXX Design Pattern
 
-[Go back](../index.md#creational-)
+[Go back](../index.md#behavioral-)
 
 <div class="row row-cols-md-2"><div>
 

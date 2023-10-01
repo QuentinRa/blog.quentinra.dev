@@ -52,16 +52,24 @@ Structural patterns focus on how objects are composed and how to manage relation
 * [Composite](structural/composite.md): uniformize the code for individual objects and composition of objects <small>(e.g., a group of individual objects)</small>
 * [Bridge](structural/bridge.md): separate object abstraction and its implementation
 * [Decorator](structural/decorator.md): add a custom behavior to an existing class
-* Proxy: access another object from an intermediary
+* `Proxy`: access another object from an intermediary
 </div><div>
 
 #### Behavioral 📮
 
-...
+XXX
+
+* `Chain of Responsibility`: a client requests something. We create a chain of classes to ask if they can do it.
+* [Iterator](behavioral/iterator.md): iterate an unknown group of objects
+* [Observable](behavioral): xxx
+* [Memento](): xxx
+* [NullObject](): xxx
 
 <br>
 
 #### Architectural 🏘️
+
+XXX
 
 * MVC
 * DAO

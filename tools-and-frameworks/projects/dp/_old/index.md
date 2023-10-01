@@ -1,6 +1,5 @@
 # Behavior
 
-* [Chain of Responsibility](behavior/chain-of-responsibility.md): ask a list of classes if they will deal with a task
 * [Iterator](behavior/iterator.md): iterates a list of Unknowns items
 * [Observable](behavior/observable.md): watch objects' changes and dispatch events
 * [Memento](behavior/memento.md): save and load objects
