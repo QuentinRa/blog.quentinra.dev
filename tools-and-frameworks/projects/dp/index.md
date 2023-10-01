@@ -91,31 +91,31 @@ Anti-Patterns are well-known bad practices used by programmers  and that should 
 
 #### Spaghetti Code 🍝
 
-...
+The lack of proper reflection before writing code is leading to poorly organized and unstructured code. It may be due to the overuse or misuse of some coding patterns, or the lack of knowledge. 
 
 <br>
 
 #### Magic Numbers and Strings ✨
 
-...
+It's quite common to use hard-coded numbers and strings such as `do(42)`, but it's often obscure as to what such values mean. Try to use named arguments or intermediary variable, add documentation, etc.
 
 <br>
 
 #### Golden Hammer 🔨
 
-...
+The solution to one problem is not the solution to all problems. Always try to look for the most appropriate solution, do not blindly use or reuse something <small>(ex: Python each time you need a tool)</small>. 
 
 <br>
 
 #### Premature Optimization 🐣
 
-...
+Don't try to focus on optimization without having a proper understanding of what you are trying to achieve. This increases the complexity of the code for almost no gain.
 </div><div>
 
 
 #### Boat Anchor ⚓
 
-...
+Don't code something "for later". Only code what you need now. See also: YAGNI <small>(You Ain't Gonna Need It)</small> ☠️.
 
 <br>
 

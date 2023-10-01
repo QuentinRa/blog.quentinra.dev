@@ -1,12 +1,5 @@
 # Anti-Patterns
 
-An anti-pattern is something that programmers often do
-**yet they shouldn't**. [This website](https://sourcemaking.com/antipatterns/software-development-antipatterns) is a great reference, and they are providing better explanations (if you got the time to read them).
-
-* **Spaghetti Code** 🍝
-
-Little to no modularity. In Java, writing a lot of methods in one class, adding on top of that inner/locale/nested classes make the code almost unreadable for me. Same for people who are putting everything in one python script.
-
 * **Magic Numbers and Strings** ✨
 
 One of the most used anti-pattern. Programmers tend to write a lot of numbers/strings inside the code, but they are unnamed and should be stored inside a named constant, so we understand what this value is supposed to be. In some languages, you may be able to use named parameters that are convenient when you are only using a value once.
