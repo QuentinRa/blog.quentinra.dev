@@ -20,7 +20,7 @@ $ nano CMakeLists.txt # edit
 
 ```ps
 $ mkdir build && cd build
-$ cmake ..     # folder with the CMakeLists.txt
+$ cmake ..     # path to folder with the CMakeLists.txt
 $ make         # execute the generated Makefile
 $ ./my_program # execute our "my_program"
 ```
@@ -734,4 +734,9 @@ Stuff that I found, but never read/used yet.
 * see [clang-tidy](/programming-languages/low-level/compilers/clang/clang-tidy.md) (`cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON`)
 * `cmake --install /path/ --prefix /path/`
 * `XXX-config.cmake`/`XXXConfig.cmake`
+
+```cmake
+include(GoogleTest)
+gtest_discover_tests(tests_target)
+```
 </div></div>
