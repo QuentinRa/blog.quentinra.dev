@@ -67,6 +67,8 @@ Behavioral patterns focus on how objects communicate and interact with other obj
 * [Command](behavioral/command.md): encapsulate commands/requests/actions as an object
 * [Interpreter](behavioral/interpreter.md): write an interpreter for a language
 * [State](behavioral/state.md): change objects' behavior according to their state
+* `Strategy`: create a family of interchangeable objects
+* [Mediator](behavioral/mediator.md): encapsulate the access to objects behind a mediator
 
 <br>
 
@@ -103,5 +105,4 @@ Structual
 Behavioral
 
 * Template method
-* State
 </div></div>

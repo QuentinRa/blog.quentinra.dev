@@ -1,6 +1,5 @@
 # Behavior
 
-* [Strategy](behavior/strategy.md): family of objects
 * [Visitor](behavior/visitor.md): an object is changing according to who visit it
 * [Mediator](behavior/mediator.md): handles the relations between classes
 
