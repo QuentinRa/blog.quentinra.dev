@@ -121,19 +121,19 @@ Don't code something "for later". Only code what you need now. See also: YAGNI <
 
 #### God Object/Class or "The Blob" ⛪
 
-...
+An object is used in way to many classes, e.g. the object in question can't be easily updated as many classes depend on it.
 
 <br>
 
 #### Cut-and-Paste Programming 📝
 
-...
+Do not copy-paste code between files. Factorize your code. It reduces the code to maintain. For instance, we don't have to patch something in multiple files.
 
 <br>
 
 #### Lava Flow/Dead code 🔥
 
-...
+A developer wrote some code and didn't provide any documentation. The maintainers do not know why or its impact on the tool, so they don't dare to edit it or remove it.
 </div></div>
 
 <hr class="sep-both">
@@ -143,8 +143,6 @@ Don't code something "for later". Only code what you need now. See also: YAGNI <
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
-
-* [_old](_old/index.md)
 
 Creational
 
