@@ -69,6 +69,7 @@ Behavioral patterns focus on how objects communicate and interact with other obj
 * [State](behavioral/state.md): change objects' behavior according to their state
 * `Strategy`: create a family of interchangeable objects
 * [Mediator](behavioral/mediator.md): encapsulate the access to objects behind a mediator
+* [Visitor](behavioral/visitor.md): execute different code according to the visitor
 
 <br>
 

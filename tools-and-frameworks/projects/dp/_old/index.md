@@ -1,11 +1,4 @@
-# Behavior
-
-* [Visitor](behavior/visitor.md): an object is changing according to who visit it
-* [Mediator](behavior/mediator.md): handles the relations between classes
-
-<hr class="sr">
-
-## Anti-Patterns
+# Anti-Patterns
 
 An anti-pattern is something that programmers often do
 **yet they shouldn't**. [This website](https://sourcemaking.com/antipatterns/software-development-antipatterns) is a great reference, and they are providing better explanations (if you got the time to read them).
