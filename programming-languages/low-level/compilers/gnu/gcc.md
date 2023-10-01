@@ -76,7 +76,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* `-L lib`
+* `-llib`
+* `-L/path/to/lib`
 * `-Z ...`
 * `-MM` (deps)
 </div><div>
