@@ -66,15 +66,16 @@ Behavioral patterns focus on how objects communicate and interact with other obj
 * [NullObject](behavioral/nullobject.md): handle "null" objects nicely
 * [Command](behavioral/command.md): encapsulate commands/requests/actions as an object
 * [Interpreter](behavioral/interpreter.md): write an interpreter for a language
+* [State](behavioral/state.md): change objects' behavior according to their state
 
 <br>
 
 #### Architectural 🏘️
 
-XXX
+Architectural design patterns aren't official patterns. 
 
-* MVC
-* DAO
+* `Model–view–controller` (MVC)
+* `Data access object` (DAO)
 </div></div>
 
 
@@ -98,4 +99,9 @@ Structual
 * Delegation
 * Flyweight
 </div><div>
+
+Behavioral
+
+* Template method
+* State
 </div></div>

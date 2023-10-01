@@ -1,7 +1,5 @@
 # Behavior
 
-* [Template method](behavior/template.md): define classes properties
-* [State](behavior/state.md): change objects' behavior according to their state
 * [Strategy](behavior/strategy.md): family of objects
 * [Visitor](behavior/visitor.md): an object is changing according to who visit it
 * [Mediator](behavior/mediator.md): handles the relations between classes
