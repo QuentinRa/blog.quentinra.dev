@@ -9,8 +9,6 @@ List of courses that have note which were not added yet.
 * (review, typos) C#, web (general, code igniter, Jekyll), Relational database Modeling
 * **Blockchain**
 * **API** > GraphQL
-* **CPP > STD + ENS notes**
-* Qt
 * OCaml
 
 **Tools and Frameworks**
@@ -24,7 +22,7 @@ List of courses that have note which were not added yet.
 **Operating systems**
 
 * (review, typos) docker, qemu, yocto, vbox, Windows dev
-* Embedded >  Arduino, Platformio, IoT
+* Embedded > IoT
 * Cloud
 * Linux
 * Networking
@@ -333,27 +331,6 @@ Random stuff...
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-**Interviews**
-
-* [Summer-Internships](https://github.com/pittcsc/Summer2023s-Internships)
-* [techrez](https://techrez.io/) (tech resumes)
-* [gitconnected](https://gitconnected.com/) (tech resumes)
-* [reverse-interview](https://github.com/viraptor/reverse-interview)
-* [Hiring Without Whiteboards](https://github.com/poteto/hiring-without-whiteboards)
-* [choosemycompany](https://choosemycompany.com/en/)
-* [cvreader](https://www.cvreader.fr/)
-
-**Random projects**
-
-* [monica](https://github.com/monicahq/monica) ("Personal CRM")
-* [officelife](https://github.com/officelifehq/officelife) (...)
-</div><div>
-
-**Entrepreneurship**
-
-* [Promote Your Next Startup](https://github.com/trekhleb/promote-your-next-startup)
-* [shopify](https://www.shopify.com/)
-
 **News**
 
 * [rankred](https://www.rankred.com/)
@@ -366,6 +343,7 @@ Random stuff...
 * [maxboxvr](https://www.maxboxvr.com/)
 * [howsociable](https://howsociable.com/)
 * [sell](https://www.sell.fr/) (games, french...)
+</div><div>
 
 **Help/Search/...**
 
