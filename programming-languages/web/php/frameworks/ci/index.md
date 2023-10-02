@@ -31,13 +31,13 @@ Some features are:
 
 <div class="row row-cols-md-2"><div>
 
-Code Igniter files are split in 3 sections: **app**, **public**, and **writable**.
+Code Igniter files are split into 3 sections: **app**, **public**, and **writable**.
 
 ➡️ Don't forget to rename `env` to `.env`. Set `CI_ENVIRONMENT` to `development` to load debugging features.
 
 #### public
 
-A modern secure practice is to not expose the website source (`app`...) to the public. You website [domain name](/operating-systems/networking/protocols/dns.md) such as `example.com` should be  configured to point to `/path/to/my_project/public/`. A user won't be able to write `example.com/../app/sensitive_file`.
+A modern secure practice is to not expose the website source (`app`...) to the public. Your website [domain name](/operating-systems/networking/protocols/dns.md) such as `example.com` should be configured to point to `/path/to/my_project/public/`. A user won't be able to write `example.com/../app/sensitive_file`.
 
 ☠️ Traditionally, `example.com` pointed to `/path/to/my_project/` that allowed us to do `example.com/app/sensitive_file`.
 
@@ -76,7 +76,7 @@ The most important files are:
 
 ##### app/Controllers
 
-A controller is a PHP script that can render multiple views or your application. We usually create one controller per set of related views.
+A controller is a PHP script that can render multiple views of your application. We usually create one controller per set of related views.
 
 ```php!
 <?php // Home.php
@@ -108,7 +108,7 @@ echo "Hello, World!";
 
 A controller is a PHP class that extends `BaseController`. Each method corresponds to a page of your website. They should fetch data from the model, parse it, and pass it to the views.
 
-For instance, imagine a page that displays the latest post of a website. 
+For instance, imagine a page that displays the latest post on a website. 
 
 * we will first fetch the latest post (**Model**)
 * then we will display it (**View**)
@@ -180,13 +180,13 @@ You will most likely use:
 
 By default, with file routing, you'll have URLs such as `https://example.com/toto.php` and one PHP per route (`/toto.php`).
 
-Code Igniter use automatic routing. Every request is redirected to `public/index.php` using the `.htaccess` file.
+Code Igniter uses automatic routing. Every request is redirected to `public/index.php` using the `.htaccess` file.
 
 Then, using `app/Config/Routes.php`, Code Igniter will call a method from a [Controller](#controllers) according to the routes we defined.
 
 #### Auto Controller Routing
 
-Before, code igniter was enabling auto routing, meaning that `https://example.com/Controller/method` would call `method` from `Controller`. **This is insecure, don't use it**.
+Before, code igniter was enabling auto-routing, meaning that `https://example.com/Controller/method` would call `method` from `Controller`. **This is insecure, don't use it**.
 
 ```php!
 $routes->setAutoRoute(true);
@@ -277,7 +277,7 @@ To get the results as an array:
 $results = $r->getResultArray();
 ```
 
-While it's **not** a good practice, you can use the driver specific execute and write code specific to mysqli/...
+While it's **not** a good practice, you can use the driver-specific execute and write code specific to mysqli/...
 
 ```php!
 $res = $stmt->_execute([$user_id]);

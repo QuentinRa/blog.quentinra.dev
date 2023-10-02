@@ -43,7 +43,7 @@ $ jekyll serve
 
 <div class="row row-cols-md-2"><div>
 
-Jekyll use [Liquid](https://jekyllrb.com/docs/liquid/) templating language.
+Jekyll uses [Liquid](https://jekyllrb.com/docs/liquid/) templating language.
 
 #### Header
 
