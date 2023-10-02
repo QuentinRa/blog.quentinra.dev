@@ -12,7 +12,7 @@ It's commonly used with [Java](/programming-languages/high-level/oo/java/_genera
 * [Plugins](https://plugins.gradle.org/)
 </div><div>
 
-You can [download gradle here](https://gradle.org/releases/). It's only needed to initialize [gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) which is recommended to use. It allows you to use separate gradle versions per-project, and with it, **others don't need to install gradle to build/test/... the project**.
+You can [download Gradle here](https://gradle.org/releases/). It's only needed to initialize [Gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) which is recommended to use. It allows you to use separate Gradle versions per project and with it, **others don't need to install Gradle to build/test/... the project**.
 
 ```ps
 $ cd my_project
@@ -23,7 +23,7 @@ $ gradle wrapper
 $ ./gradlew wrapper --gradle-version 7.2 # change version
 ```
 
-⚠️ With Version Control, commit all files aside from `.gradle`.
+⚠️ With Version Control, commit all files aside from `.gradle` folder.
 </div></div>
 
 <hr class="sep-both">
@@ -57,7 +57,7 @@ Gradle plugins contain pre-defined tasks and additional features simplifying bui
 
 #### Dependencies
 
-These are the other project that we need to import to build ours.
+These are the other projects that we need to import to build ours.
 </div></div>
 
 <hr class="sep-both">
@@ -164,7 +164,7 @@ tasks.withType(JavaCompile).configureEach {
 }
 ```
 
-The `xxxCompatibility` attributes does not enforce that the compiler has the target version, e.g., JDK 18 can compile code targeting JDK 17. To enforce the use of JDK 17 when compiling, use:
+The `xxxCompatibility` attributes do not enforce that the compiler has the target version, e.g., JDK 18 can compile code targeting JDK 17. To enforce the use of JDK 17 when compiling, use:
 
 ```groovy
 java {
@@ -259,7 +259,7 @@ myVariable=value
 print "$myVariable" // will print "value"
 ```
 
-You may need to learn a bit about `Groovy`/`Kotlin` to write modular build files that uses your variables.
+You may need to learn a bit about `Groovy`/`Kotlin` to write modular build files that use your variables.
 </div><div>
 
 #### Saliman plugin

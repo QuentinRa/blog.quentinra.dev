@@ -6,14 +6,14 @@ List of courses that have note which were not added yet.
 
 **Programming Languages**
 
-* (review, typos) web (general), Relational database Modeling
+* (review, typos) web (general)
 * **Blockchain**
 * **API** > GraphQL
 * OCaml
 
 **Tools and Frameworks**
 
-* (review/typos) cmake, VSCode, Rider, PHPStorm, VCS, Gradle, docker, documentation (doxygen, sphinx), modeling
+* (review/typos) VSCode, Rider, PHPStorm, VCS, documentation (doxygen, sphinx), modeling
 * Pandora
 * JetBrains plugin development
 * Project > Tools?
