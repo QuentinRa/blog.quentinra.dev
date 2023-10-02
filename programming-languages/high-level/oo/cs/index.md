@@ -1,10 +1,10 @@
-# C# - CSharp
+# CSharp (C#)
 
 <div class="row row-cols-md-2"><div>
 
-C# <small>(CSharp)</small> is a relatively modern [object-oriented](/programming-languages/_paradigm/oo.md) programming language introduced and maintained by Microsoft 🪟.
+CSharp or C# is a relatively modern [object-oriented](/programming-languages/_paradigm/oo.md) programming language introduced and maintained by Microsoft 🪟.
 
-It's used by [Microsoft .NET framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework) 💻, the [Unity game engine](https://unity.com/) in game development 🕹️, and some web applications 🌍.
+It's used by [Microsoft .NET framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework) 💻, the [Unity game engine](https://unity.com/) for game development 🕹️, and some web applications 🌍.
 
 **Where to learn?** 🎓
 
@@ -13,7 +13,7 @@ It's used by [Microsoft .NET framework](https://dotnet.microsoft.com/en-us/downl
 * [LearnCS](https://www.learncs.org/) (👻)
 </div><div>
 
-You can either download and use [VSCode](/tools-and-frameworks/editors/vscode/index.md), or use another IDE such as [Rider](/tools-and-frameworks/editors/jetbrains/rider/index.md). You may use neither and use [dotnet](https://dotnet.microsoft.com/en-us/download/dotnet) from the command-line.
+You can either download and use [VSCode](/tools-and-frameworks/editors/vscode/index.md), or use another IDE such as [Rider](/tools-and-frameworks/editors/jetbrains/rider/index.md). You may use neither and use [dotnet](https://dotnet.microsoft.com/en-us/download/dotnet) from the command line.
 
 ```shell!
 PS> mkdir project && cd project
