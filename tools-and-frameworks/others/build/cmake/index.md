@@ -4,7 +4,7 @@
 
 [CMake](https://cmake.org/documentation/) 🏝️ is a cross-platform language and tool to build, and run programs. It's a higher-level tool that will generate a file for a lower-level build tool <small>(such as a [Makefile](/tools-and-frameworks/others/build/makefile/index.md))</small> according to your needs.
 
-The syntax of a cmake file is similar to a C program, but it's usually considered harder to learn and to master 🪜.
+The syntax of a CMake file is similar to a C program, but it's usually considered harder to learn and to master 🪜.
 
 💡 CMake automatically detects and handles dependencies, making it easier to use for large or complex projects.
 </div><div>
@@ -34,7 +34,7 @@ $ ./my_program # execute our "my_program"
 
 #### Basics
 
-Cmake is commonly used as `cmake ..` then `make` but this is **not** recommended by the documentation.
+CMake is commonly used as `cmake ..` then `make` but this is **not** recommended by the documentation.
 
 ```shell!
 $ cmake -B /path/to/build -S /path/to/sources
@@ -53,7 +53,7 @@ ninja: no work to do.
 
 #### Log Level
 
-You can set the verbosity of cmake to one of `ERROR`, `WARNING`, `NOTICE`, `STATUS`,
+You can set the verbosity of CMake to one of `ERROR`, `WARNING`, `NOTICE`, `STATUS`,
 `VERBOSE`, `DEBUG`, or `TRACE`.
 
 ```shell!
@@ -186,9 +186,9 @@ target_include_directories(targetName
     # included files are visible to other targets but not ours
     INTERFACE inc [...]
 )
-# include system librairies (same as -isystem xxx)
+# include system libraries (same as -isystem xxx)
 target_include_directories(target SYSTEM ...)
-# include librairies (same as -Ixxx)
+# include libraries (same as -Ixxx)
 target_include_directories(target ...)
 ```
 
@@ -205,7 +205,7 @@ target_sources(targetName PRIVATE xxx.h [...])
 target_sources(targetName INTERFACE xxx.h [...])
 ```
 
-You **should** enter all sources manually as using functions such as `file(...)` break some generators and some IDEs.
+You **should** enter all sources manually, as using functions such as `file(...)`, break some generators and some IDEs.
 
 ```cmake
 file(GLOB_RECURSE ALL_SOURCES src/*.c src/*.cpp)
@@ -482,7 +482,7 @@ FUNCTION_NAME(ARG0 ARG1 ARGN)
 ```
 </div><div>
 
-There is some pre-defined variables:
+There are some pre-defined variables:
 
 * `${ARGC}`: count of arguments
 * `${ARGV}`: list of arguments
@@ -541,7 +541,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 
 #### CMAKE MODULE PATH
 
-The `CMAKE_MODULE_PATH` variable determines where cmake will look for some files. We can add our own folder will our own scripts/modules.
+The `CMAKE_MODULE_PATH` variable determines where CMake will look for some files. We can add our own folder will our own scripts/modules.
 
 ```cmake
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
@@ -738,5 +738,11 @@ Stuff that I found, but never read/used yet.
 ```cmake
 include(GoogleTest)
 gtest_discover_tests(tests_target)
+
+$<XXX:arg>
+$<IF:xxx,yyy,zzz>
+$<IF:xxx,yyy,>
+
+configure_file(xxx.xxx ${CMAKE_BINARY_DIR}/yyy.cmake @ONLY)
 ```
 </div></div>
