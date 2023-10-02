@@ -41,7 +41,7 @@ And the constraint <small>(as there is a 1..*)</small>:
 secretCode IN Belong
 ```
 
-➡️ Alternatives syntax are `#unitName=>Unit(name)`/...
+➡️ An alternative syntax for primary keys is `#unitName=>Unit(name)`.
 
 <br>
 
@@ -57,7 +57,8 @@ The association `Belong` below:
 Correspond to the relation:
 
 ```php!
-Agent(name: String, #secretCode: String, #unitName: Unit.name, age: int)
+Agent(name: String, #secretCode: String, #unitName: Unit.name, years: int)
+Unit(#name: String, location: String)
 
 Unit in Agent
 ```

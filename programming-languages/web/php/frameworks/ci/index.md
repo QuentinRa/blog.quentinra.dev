@@ -64,7 +64,7 @@ The path to this folder is stored in `WRITEPATH` from the code.
 
 #### app
 
-The application folder is split inside more folders.
+The application folder is split into more folders.
 
 ##### app/Config
 

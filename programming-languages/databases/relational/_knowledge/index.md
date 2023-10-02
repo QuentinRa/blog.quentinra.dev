@@ -85,7 +85,7 @@ Before creating your [database diagrams](/tools-and-frameworks/projects/modeling
   * "city" belongs to "address"
   * ...
 
-Each group correspond to a UML `class` and each of their categories are their UML `attributes`. Complete the diagram with `identifiers`, `associations`, `multiplicity`, and `generalizations`.
+Each group corresponds to a UML `class` and each of their categories are their UML `attributes`. Complete the diagram with `identifiers`, `associations`, `multiplicity`, and `generalizations`.
 
 ✍️ If there is no identifier, you may create one.
 </div><div>

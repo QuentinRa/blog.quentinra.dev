@@ -6,7 +6,7 @@ List of courses that have note which were not added yet.
 
 **Programming Languages**
 
-* (review, typos) web (general, code igniter, Jekyll), Relational database Modeling
+* (review, typos) web (general), Relational database Modeling
 * **Blockchain**
 * **API** > GraphQL
 * OCaml
