@@ -29,7 +29,7 @@
 
 #### Solutions
 
-Rider implement the concept called **solution** ([source](https://learn.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio?view=vs-2022)). A solution is a sort of master project composed of multiple related projects.
+Rider implements the concept called **solution** ([source](https://learn.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio?view=vs-2022)). A solution is a sort of master project composed of multiple related projects.
 
 Assuming a ClassLibrary with `MyClass.cs`:
 
@@ -54,7 +54,7 @@ var myClass = new MyClass();
 myClass.Main();
 ```
 
-While benefiting from all jetbrains "smart" features. It will automatically add inside the new project the project reference line.
+By triggering JetBrains import features, you can automatically add the new project to the project file.
 
 ```
 ...
@@ -76,14 +76,4 @@ The dotnet executable is installed at: `C:\Users\<username>\.dotnet\dotnet.exe` 
 You can use this dropdown to see the `.csproj` files and other files hidden by the default solution view.
 
 ![s_to_fs](_images/s_to_fs.png)
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-</div><div>
 </div></div>
