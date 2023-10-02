@@ -14,7 +14,7 @@ There are plenty language-specific documentation tools such as [Javadoc](/progra
 
 There are also [Doxygen](doxygen/index.md) and [Sphinx](sphinx/index.md) which work with many languages.
 
-Mostly for user-documentation, you can use these:
+Mostly for user documentation, you can use these:
 
 * [mkdocs](https://www.mkdocs.org/)
 * [docsify](https://docsify.js.org/)
@@ -46,7 +46,7 @@ Mostly for user-documentation, you can use these:
 * 🥱 Don't write documentation for trivial getters/setters/...
 * ☠️ Don't copy-paste, use `@see` or something more appropriate
 * 🪦 Don't add `@version` or `@date` unless they will be updated
-* 🕳️ Don't forget normal comments along user documentation
+* 🕳️ Don't forget normal comments along with user documentation
 </div></div>
 
 <hr class="sep-both">

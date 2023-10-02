@@ -13,7 +13,7 @@ You can download doxygen from the [GitHub Release page](https://github.com/doxyg
 ➡️ Doxygen folder on Windows: `C:\Program Files\doxygen\bin`.
 </div><div>
 
-To get started, generate doxygen configuration file.
+To get started, generate a doxygen configuration file.
 
 ```ps
 $ doxygen -g Doxyfile  # generate
@@ -119,7 +119,7 @@ You can document absolutely everything, from `variables` to `files`, passing by 
 
 #### Doxygen comments
 
-Doxygen comments are those using one of the syntax below:
+Doxygen comments are those using one of the syntaxes below:
 
 ```cpp
 /**
@@ -161,7 +161,7 @@ $ python3 m.css/documentation/doxygen.py DoxyfileMCSS
 
 ➡️ Note that `doxygen` must be in the PATH or the script will fail.
 
-⚠️ **M.CSS** ignores the **EXTRACT_ALL** option. You need to comment everything, including directories; otherwise the view will be empty.
+⚠️ **M.CSS** ignores the **EXTRACT_ALL** option. You need to comment on everything, including directories; otherwise the view will be empty.
 </div><div>
 
 🫧 You can clean `m.css` folder and only keep:
@@ -183,7 +183,7 @@ css
 <details class="details-n">
 <summary>Customize the navbar 🎧</summary>
 
-The navbar is defined in two variables. You can use links or use a pre-defined name such as `pages`, `namespaces`, `annotated` or `files`.
+The navbar is defined with two variables. You can use links or use a pre-defined name such as `pages`, `namespaces`, `annotated` or `files`.
 
 ```js!
 M_LINKS_NAVBAR1 = \
@@ -329,7 +329,7 @@ typedef struct NAME {
 } NEW_NAME; //!< brief description of this struct
 ```
 
-It the declaration and the typedef are separated:
+If the declaration and the typedef are separated:
 
 ```c
 /*!
@@ -400,7 +400,7 @@ These tags are related to [Design By Contract](/tools-and-frameworks/others/test
 ```c!
 /**
  * \pre describe preconditions
- * \post describe post conditions
+ * \post describe postconditions
  * \invariant describe invariants
  */
 ```
