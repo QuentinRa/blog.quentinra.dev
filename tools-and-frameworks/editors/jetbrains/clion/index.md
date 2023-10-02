@@ -25,8 +25,16 @@
 
 <div class="row row-cols-md-2"><div>
 
-#### Set the compiler
+#### Set Up The Compiler
 
 Press `CTRL+ALT+S` or `⚙️ > Settings`. Navigate to `Build...` then `Toolchains`. From there, create or update a toolchain.
+
+A toolchain defines the environment and the compiler used to run your build tool, compile files, and debug executables.
+
+#### CMake Configurations
+
+Press `CTRL+ALT+S` or `⚙️ > Settings`. Navigate to `Build...` then `CMake`. From there, create or update a configuration.
+
+Information such as the type of build, the toolchain used, or the arguments passed to the build command can be set from there.
 </div><div>
 </div></div>
