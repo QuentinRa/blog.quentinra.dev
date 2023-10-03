@@ -1,51 +1,4 @@
-# OpenSCAP
-
-<div class="row row-cols-md-2"><div>
-
-[OpenSCAP](https://github.com/OpenSCAP/openscap) (1.1k ⭐) is a tool to test if a device is hardened given a guide, and may be able to apply remediation automatically.
-
-* [OpenSCAP website](https://www.open-scap.org/)
-* [User manual, API, and HTML Guides](https://static.open-scap.org/)
-* [Install instructions](openscap/install.md)
-
-<br>
-
-#### XML info
-
-Each guide has **profiles**. For instance, some guides have a **workstation** profile testing the hardening compliance of workstations.
-
-```shell!
-$ oscap info some_compliance_guide.xml
-[...]
-Profiles:
-    Title: Standard System Security Profile for Parrot Linux
-    Id: xccdf_org.ssgproject.content_profile_standard
-```
-</div><div>
-
-#### Compliance test
-
-To check if a system is hardened given a profile, and a guide:
-
-```shell!
-$ oscap xccdf eval \
-    --profile xccdf_org.ssgproject.content_profile_standard \
-    some_compliance_guide.xml
-```
-
-You can add more options right before the XML.
-
-* To generate an HTML report, add `--report report.html`.
-* To add verbosity, add `--verbose INFO`
-
-💡 You can test a remote system using `oscap-ssh`, as long as the target has openscap installed. Refer to the manual.
-
-🚀 You can use a GUI called [scap-workbench](https://github.com/OpenSCAP/scap-workbench) (0.2k ⭐).
-</div></div>
-
-<hr class="sep-both">
-
-## ComplianceAsCode/content
+# ComplianceAsCode/content
 
 <div class="row row-cols-md-2"><div>
 
@@ -72,16 +25,4 @@ In most files: `rule.yml`, `some_oval.xml`... You can use [jinja](https://compli
 
 Here are some notes about [OVAL](content/oval.md), which is used in `templates`, `checks`, and `applicability` files. Here are some notes about [jinja](content/jinja.md) too.
 
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-* [Protection_ring](https://en.wikipedia.org/wiki/Protection_ring)
-</div><div>
 </div></div>

@@ -31,7 +31,7 @@ List of courses that have note which were not added yet.
 
 **Cybersecurity**
 
-* Hardening
+* (review, typos) Hardening
 </div></div>
 
 
