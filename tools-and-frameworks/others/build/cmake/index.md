@@ -728,6 +728,7 @@ Stuff that I found, but never read/used yet.
 * [ModernCppStarter](https://github.com/TheLartians/ModernCppStarter)
 * [Akagi201/learning-cmake](https://github.com/Akagi201/learning-cmake) and [awesome-cmake](https://github.com/onqtam/awesome-cmake)
 * execute_process, target_precompile_headers
+* clang-tidy headers
 </div><div>
 
 * macros (unlike function, no need for PARENT_SCOPE)

@@ -13,7 +13,7 @@ List of courses that have note which were not added yet.
 
 **Tools and Frameworks**
 
-* (review/typos) VSCode, Rider, PHPStorm, VCS, modeling
+* (review/typos) VCS, modeling
 * Pandora
 * JetBrains plugin development
 * Project > Tools?

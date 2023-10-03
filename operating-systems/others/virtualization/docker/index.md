@@ -555,5 +555,9 @@ docker stack rm service_name
 docker service ls
 docker service logs xxx
 docker service ps xxx
+
+localhost:5000/v2/_catalog ==> {"repositories":["xxx"]}
+localhost:5000/v2/xxx/tags/list
+localhost:5000/v2/xxx/manifests/latest
 ```
 </div></div>

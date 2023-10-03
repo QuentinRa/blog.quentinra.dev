@@ -183,7 +183,9 @@ vuln_id = createAndAddVulnWebToService(...) # a web service
 
 <div class="row row-cols-md-2"><div>
 
-Faraday API is documented in their [OpenAPI](https://docs.faradaysec.com/api-swagger/) specification, along inside the [API Server Page](https://docs.faradaysec.com/API-Server/), but some routes are missing.
+Faraday API is documented in their [OpenAPI](https://docs.faradaysec.com/api-swagger/) specification, along inside the [API Server Page](https://docs.faradaysec.com/API-Server/), but some routes are missing. 
+
+You can access the OpenAPI page for a local installation at `http://example.com:5985/api-definitions` or `User > Faraday API`.
 
 Assuming the following Python script:
 
