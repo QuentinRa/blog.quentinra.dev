@@ -11,12 +11,12 @@ A test is written in [OVAL](https://ovalproject.github.io/getting-started/tutori
 
 In most files: `rule.yml`, `some_oval.xml`... You can use [jinja](https://complianceascode.readthedocs.io/en/latest/jinja_macros/01-general.html) <small>([official doc](https://jinja.palletsprojects.com/en/3.0.x/))</small> macros to inject some code within a file <small>(ex: branching, loops, args...)</small>.
 
-* [Add a new product](content/product.md)
-* [Loading rules in a profile](content/profiles.md)
-* [Adding new rules](content/rules.md)
-* [Adding/Editing templates](content/templates.md)
-* [Building a product](content/compilation.md)
+* [Add a new product](_files/product.md)
+* [Loading rules in a profile](_files/profiles.md)
+* [Adding new rules](_files/rules.md)
+* [Adding/Editing templates](_files/templates.md)
+* [Building a product](_files/compilation.md)
 
-Here are some notes about [OVAL](content/oval.md), which is used in `templates`, `checks`, and `applicability` files. Here are some notes about [jinja](content/jinja.md) too.
+Here are some notes about [OVAL](_files/oval.md), which is used in `templates`, `checks`, and `applicability` files. Here are some notes about [jinja](_files/jinja.md) too.
 
 </div></div>

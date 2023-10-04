@@ -15,12 +15,24 @@ There are multiple reasons to get involved with the Compliance As Code project. 
 
 To get started ✨: 
 
-```shell!
-$ git clone --recursive https://github.com/ComplianceNinjas/compliance-as-code-docker.git
+```ps
+$ git clone --recursive "https://github.com/ComplianceNinjas/compliance-as-code-docker.git"
 $ docker compose up -d
 $ docker attach $(docker compose ps -q)
 $ ./build_product debian11 -j $(nproc)
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Project Overview
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">
