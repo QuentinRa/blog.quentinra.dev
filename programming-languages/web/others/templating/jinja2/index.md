@@ -43,9 +43,9 @@ You can use `if/elif/else/endif`. Common conditions are
 * `xxx`: true if a variable `xxx` exists, or is `true`
 * `"xxx" in variable`: true if `variable` contains `xxx`
 * `"xxx" not in variable`: false if `variable` contains `xxx`
-* `variable in ["xxx", "yyy"]`: true if product in array
+* `variable in ["xxx", "yyy"]`: true if `variable` is in the array
 
-Another example: `{% if variable %}xxx {% endif %}` which optionally show `xxx` based on a variable.
+Another example: `{% if variable %}xxx {% endif %}` which optionally shows `xxx` based on a variable.
 </div><div>
 
 ```text!
