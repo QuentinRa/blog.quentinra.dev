@@ -424,5 +424,7 @@ You can use `\test` to document test cases or test-related information.
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
+
+* [doxygen-awesome-css](https://github.com/jothepro/doxygen-awesome-css)
 </div><div>
 </div></div>
