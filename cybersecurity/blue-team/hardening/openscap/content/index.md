@@ -16,7 +16,8 @@ There are multiple reasons to get involved with the Compliance As Code project. 
 To get started ✨: 
 
 ```ps
-$ git clone --recursive "https://github.com/ComplianceNinjas/compliance-as-code-docker.git"
+$ git clone --recursive "https://github.com/ComplianceNinjas/compliance-as-code-docker.git" cac_docker
+$ cd cac_docker
 $ docker compose up -d
 $ docker attach $(docker compose ps -q)
 $ ./build_product debian11 -j $(nproc)
