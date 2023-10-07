@@ -447,6 +447,99 @@ A local variable is declared inside the OVAL file.
 
 <hr class="sep-both">
 
+## Support a new package manager
+
+<div class="row row-cols-md-2"><div>
+
+We differentiate package managers <small>(yum, dnf, apt_get, ...)</small> from the package system <small>(rpm, dpkg)</small>. Each is mapped to the other.
+
+For instance, let's say we want to add `pacman`. On Arch Linux, `pacman` is both a package management and system tool. We need to edit files in `./shared/` that are always compiled.
+
+* `applicability/oval/installed_env_has_grub2_package.xml`
+* `applicability/oval/installed_env_has_login_defs.xml`
+* `applicability/oval/krb5_server_older_than_1_17_18.xml`
+* `applicability/oval/krb5_workstation_older_than_1_17_18.xml`
+* `checks/oval/installed_env_has_zipl_package.xml`
+* `checks/oval/sshd_version_higher_than_74.xml`
+
+```xml!
+[...]
+{{% elif pkg_system == "dpkg" %}}
+[...]
+{{% elif pkg_system == "pacman" %}}
+  <ind:textfilecontent54_test comment="Do nothing" id="<set the correct id here>" version="1">
+  </ind:textfilecontent54_test>
+{{% endif %}}
+[...]
+```
+</div><div>
+
+Then, you have to fix macros:
+
+<details class="details-n">
+<summary>./shared/macros/10-bash.jinja</summary>
+
+```xml!
+[...]
+{{%- macro bash_pkg_conditional(package, op=None, ver=None) -%}}
+[...]
+    {{%- elif pkg_system == "pacman" -%}}
+        false
+[...]
+```
+</details>
+
+<details class="details-n">
+<summary>./shared/macros/10-ocil.jinja</summary>
+
+```xml!
+[...]
+{{% macro ocil_package(package) -%}}
+[...]
+    {{%- elif pkg_system == "pacman" -%}}
+        Nothing.
+    {{%- else -%}}
+[...]
+{{% macro complete_ocil_entry_package(package) -%}}
+[...]
+    {{%- elif pkg_system == "pacman" %}}
+        Nothing.
+    {{%- else -%}}
+[...]
+```
+</details>
+
+<details class="details-n">
+<summary>./shared/macros/10-oval.jinja</summary>
+
+```xml!
+[...]
+{{%- macro oval_test_package_removed(package='', test_id='') -%}}
+[...]
+{{% elif pkg_system == "pacman" %}}
+<ind:textfilecontent54_test comment="Do nothing" id="{{{ test_id }}}" version="1">
+</ind:textfilecontent54_test>
+{{% endif %}}
+[...]
+{{%- macro oval_test_package_installed(package='', evr='', evr_op='greater than or equal', test_id='') -%}}
+[...]
+{{% elif pkg_system == "pacman" %}}
+<ind:textfilecontent54_test comment="Do nothing" id="{{{ test_id }}}" version="1">
+</ind:textfilecontent54_test>
+{{% endif %}}
+[...]
+```
+</details>
+
+It should compile now, but you may have to adapt some rules or templates <small>(package managers may be used in applicability or in templates)</small>.
+
+⚠️ You will most likely have to edit more project files to completely integrate your package manager/system <small>(remediation...)</small>.
+
+💡 You can look for occurrences of other package managers/systems to find which files to edit.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
