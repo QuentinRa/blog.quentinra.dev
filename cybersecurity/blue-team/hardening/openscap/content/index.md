@@ -83,6 +83,55 @@ It automates the process from the [documentation](https://complianceascode.readt
 
 <hr class="sep-both">
 
+## Rule
+
+<div class="row row-cols-md-2"><div>
+
+A rule links every information related to a task of a hardening control. It's described in a `rule.yml`. It defines stuff like:
+
+* 🌱 Description <small>(ex: explain what's this rule about)</small>
+* 🔎 Rule check <small>(ex: to test if the rule was applied)</small>
+* 🧯 Remediation utility <small>(ex: bash script, note...)</small>
+* 🌍 Applicability check <small>(ex: package is not present ️→ rule not applicable)</small>
+* 🔒 Product check <small>(ex: can this rule be used with this product?)</small>
+* ...
+
+A rule is stored in a folder. The folder name is the **rule id**. Rules are stored in groups, e.g. its parent folders, which all have a `group.yml`. You can place a rule in whatever folder you see fit.
+
+<details class="details-n">
+<summary>Common rule template</summary>
+
+```yaml!
+documentation_complete: true
+
+prodtype: xxx,yyy,...
+
+title: 'XXX'
+
+description: XXX
+rationale: XXX
+severity: medium
+
+platform: machine
+
+references:
+    xxx: xxx
+
+template:
+  name: xxx
+  vars:
+    - ...
+```
+</details>
+
+➡️ Refer to the section about [rule format](https://complianceascode.readthedocs.io/en/latest/manual/developer/06_contributing_with_content.html#rules).
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Controls and Profiles
 
 <div class="row row-cols-md-2"><div>
@@ -306,6 +355,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [_old](_old.md)
+* references are used to sort rules in HTML pages
 * remediation
 </div><div>
 </div></div>

@@ -1,56 +1,5 @@
 # Rules
 
-[Go back](../index.md)
-
-<div class="row row-cols-md-2"><div>
-
-A rule link every information related to the hardening rule. It's described in a `rule.yml`. It defines stuff like:
-
-* 🌱 Description <small>(ex: explain what's this rule about)</small>
-* 🔎 Rule check <small>(ex: test if the rule was applied)</small>
-* 🧯 Remediation utility <small>(ex: bash script, note...)</small>
-* 🌍 Applicability check <small>(ex: package is not present ️→ rule not applicable)</small>
-* 🔒 Product check <small>(ex: can this rule be used with this product?)</small>
-* ...
-
-A rule is stored in a folder. The folder name is the **rule id**.
-
-Below is the rule `file_groupowner_etc_passwd`.
-
-```
-./linux_os/guide/system/permissions/files/permissions_important_account_files/file_groupowner_etc_passwd/
-```
-
-Rules are stored in groups, e.g. its parent folders, which all have a `group.yml`. You can place a rule in whatever folder you see fit.
-
-➡️ Refer to the section about [rule format](https://complianceascode.readthedocs.io/en/latest/manual/developer/06_contributing_with_content.html#rules).
-</div><div>
-
-💡 Don't forget that you can use [jinja](jinja.md) in any file.
-
-```yaml!
-documentation_complete: true
-
-prodtype: xxx,yyy,...
-
-title: 'XXX'
-
-description: XXX
-rationale: XXX
-severity: medium
-
-platform: machine
-
-references:
-    xxx: xxx
-
-template:
-  name: xxx
-  vars:
-    - ...
-```
-</div></div>
-
 <hr class="sep-both">
 
 ## Description
@@ -141,17 +90,4 @@ The definition ID is now the **Rule ID**.
 -<definition class="compliance" id="{{{ _RULE_ID }}}" version="3">
 +<definition class="compliance" id="rule_id" version="3">
 ```
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-* references are used to sort rules in HTML pages
-* remediation
-</div><div>
 </div></div>

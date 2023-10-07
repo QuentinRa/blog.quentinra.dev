@@ -10,7 +10,6 @@ In most files: `rule.yml`, `some_oval.xml`... You can use [jinja](https://compli
 * [Loading rules in a profile](_files/profiles.md)
 * [Adding new rules](_files/rules.md)
 * [Adding/Editing templates](_files/templates.md)
-* [Building a product](_files/compilation.md)
 
 Here are some notes about [OVAL](_files/oval.md), which is used in `templates`, `checks`, and `applicability` files. Here are some notes about [jinja](_files/jinja.md) too.
 
