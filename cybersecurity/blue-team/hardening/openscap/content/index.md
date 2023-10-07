@@ -39,9 +39,9 @@ We merge your files in `loader/` into `content/`, then generate/update rules, an
 
 ## Project Overview
 
-Note that the project is *somewhat* complex. ⚠️
-
 <div class="row row-cols-md-2"><div>
+
+Note that the project is *somewhat* complex. ⚠️
 
 A **control** 🔎 is a recommendation of an hardening guide, such as [Ensure /tmp is a separate partition](https://www.tenable.com/audits/items/CIS_Red_Hat_EL9_v1.0.0_L1_Server.audit:cd31711d0572f143d773d53f0c976db1). One control may contain multiple tasks to perform.
 
@@ -59,6 +59,195 @@ A **template** <small>(`shared/templates/`)</small> 🗃️ is a reusable OVAL c
 An **OVAL check** <small>(`oval.template`, `shared.xml`...)</small> 🎯 describes how we can check if a rule was applied.
 
 An **applicability** check <small>(`shared/applicability/`)</small> is used to check if a rule is applicable given the state of the product <small>(package not installed)</small>.
+</div></div>
+
+<hr class="sep-both">
+
+## Product Configuration
+
+<div class="row row-cols-md-2"><div>
+
+#### Creating a new product
+
+After generating a new product using `init.sh`, you will have:
+
+* A standard profile `standard.profile`
+* A basic `product.yml` that describe your product
+* A basic oval check `installed_OS_is_xxx.xml` testing if the tested product is matching the expected product <small>(ex: are we on debian11?)</small>
+
+It automates the process from the [documentation](https://complianceascode.readthedocs.io/en/latest/manual/developer/03_creating_content.html#creating-a-new-product).
+
+⚠️ If most/all tests are marked as `notapplicable`, it means that the tested OS do not pass the check in `installed_OS_is_xxx.xml`.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## Support a new package manager
+
+<div class="row row-cols-md-2"><div>
+
+We differentiate package managers <small>(yum, dnf, apt_get, ...)</small> from the package system <small>(rpm, dpkg)</small>. Each is mapped to the other.
+
+For instance, let's say we want to add `pacman`. On Arch Linux, `pacman` is both a package management and system tool.
+
+We need to edit `shared` files that are always compiled. You're supposed to write the OVAL code according to your package system.
+
+<details class="details-n">
+<summary>./shared/applicability/oval/installed_env_has_grub2_package.xml</summary>
+
+```xml!
+[...]
+{{% elif pkg_system == "dpkg" %}}
+[...]
+{{% elif pkg_system == "pacman" %}}
+  <ind:textfilecontent54_test comment="Do nothing" id="obj_env_has_grub2_installed" version="1">
+  </ind:textfilecontent54_test>
+{{% endif %}}
+[...]
+```
+</details>
+
+<details class="details-n">
+<summary>./shared/applicability/oval/installed_env_has_login_defs.xml</summary>
+
+```xml!
+[...]
+{{% elif pkg_system == "dpkg" %}}
+[...]
+{{% elif pkg_system == "pacman" %}}
+<ind:textfilecontent54_test comment="Do nothing" id="obj_env_has_login_defs_installed" version="1">
+</ind:textfilecontent54_test>
+{{% endif %}}
+[...]
+```
+</details>
+
+<details class="details-n">
+<summary>./shared/applicability/oval/krb5_server_older_than_1_17_18.xml</summary>
+
+```xml!
+[...]
+{{% elif pkg_system == "dpkg" %}}
+[...]
+{{% elif pkg_system == "pacman" %}}
+<ind:textfilecontent54_test comment="Do nothing" id="test_krb5_server_version_1_17_18" version="1">
+</ind:textfilecontent54_test>
+{{% endif %}}
+[...]
+```
+</details>
+
+<details class="details-n">
+<summary>./shared/applicability/oval/krb5_workstation_older_than_1_17_18.xml</summary>
+
+```xml!
+[...]
+{{% elif pkg_system == "dpkg" %}}
+[...]
+{{% elif pkg_system == "pacman" %}}
+<ind:textfilecontent54_test comment="Do nothing" id="test_krb5_workstation_version_1_17_18" version="1">
+</ind:textfilecontent54_test>
+{{% endif %}}
+[...]
+```
+</details>
+</div><div>
+
+
+<details class="details-n">
+<summary>./shared/checks/oval/installed_env_has_zipl_package.xml</summary>
+
+```xml!
+[...]
+{{% elif pkg_system == "dpkg" %}}
+[...]
+{{% elif pkg_system == "pacman" %}}
+<ind:textfilecontent54_test comment="Do nothing" id="test_env_has_zipl_installed" version="1">
+</ind:textfilecontent54_test>
+{{% endif %}}
+[...]
+```
+</details>
+
+<details class="details-n">
+<summary>./shared/checks/oval/sshd_version_higher_than_74.xml</summary>
+
+```xml!
+[...]
+{{% elif pkg_system == "dpkg" %}}
+[...]
+{{% elif pkg_system == "pacman" %}}
+<ind:textfilecontent54_test comment="Do nothing" id="test_openssh-server_version" version="1">
+</ind:textfilecontent54_test>
+
+{{% endif %}}
+[...]
+```
+</details>
+
+Then, you have to fix macros:
+
+<details class="details-n">
+<summary>./shared/macros/10-bash.jinja</summary>
+
+```xml!
+[...]
+{{%- macro bash_pkg_conditional(package, op=None, ver=None) -%}}
+[...]
+    {{%- elif pkg_system == "pacman" -%}}
+        false
+[...]
+```
+</details>
+
+<details class="details-n">
+<summary>./shared/macros/10-ocil.jinja</summary>
+
+```xml!
+[...]
+{{% macro ocil_package(package) -%}}
+[...]
+    {{%- elif pkg_system == "pacman" -%}}
+        Nothing.
+    {{%- else -%}}
+[...]
+{{% macro complete_ocil_entry_package(package) -%}}
+[...]
+    {{%- elif pkg_system == "pacman" %}}
+        Nothing.
+    {{%- else -%}}
+[...]
+```
+</details>
+
+<details class="details-n">
+<summary>./shared/macros/10-oval.jinja</summary>
+
+```xml!
+[...]
+{{%- macro oval_test_package_removed(package='', test_id='') -%}}
+[...]
+{{% elif pkg_system == "pacman" %}}
+<ind:textfilecontent54_test comment="Do nothing" id="{{{ test_id }}}" version="1">
+</ind:textfilecontent54_test>
+{{% endif %}}
+[...]
+{{%- macro oval_test_package_installed(package='', evr='', evr_op='greater than or equal', test_id='') -%}}
+[...]
+{{% elif pkg_system == "pacman" %}}
+<ind:textfilecontent54_test comment="Do nothing" id="{{{ test_id }}}" version="1">
+</ind:textfilecontent54_test>
+{{% endif %}}
+[...]
+```
+</details>
+
+It should compile now, but you may have to adapt some rules or templates <small>(package managers may be used in applicability or in templates)</small>.
+
+⚠️ You will most likely have to edit more project files to completely integrate your package manager/system <small>(remediation...)</small>.
+
+💡 You can look for occurrences of other package managers/systems to find which files to edit.
 </div></div>
 
 <hr class="sep-both">
