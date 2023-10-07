@@ -1,102 +1,7 @@
-# jinja
-
-[Go back](../index.md)
+# Tests
 
 <div class="row row-cols-md-2"><div>
 
-The [jinja](https://jinja.palletsprojects.com/en/3.0.x/templates/) documentation will most likely have more useful information. Note that unlike in `jinja` templates, we use one more level of accolades, so `{% %}` is now `{{% %}}` <small>(ansible-related reason)</small>.
-</div><div>
-
-You can use `if/elif/else/endif`. Common conditions are
-
-* `xxx`: true if a variable `xxx` exists, or is `true`
-* `"ubuntu" in product`: true if product contains `ubuntu`
-* `"ubuntu" not in product`: false if product contains `ubuntu`
-* `product in ["debian10", "debian11"]`: true if product in array
-
-Another example: `{% if negate %}negate="true" {% endif %}` which optionally show an OVAL attribute based on a user-defined variable called `negate`.
-</div></div>
-
-<hr class="sep-both">
-
-## Macros
-
-<div class="row row-cols-md-2"><div>
-
-OVAL Macros can be declared in `shared/macros/10-oval.jinja`, or directly inside any OVAL file.
-
-```text!
-{%- macro some_name(arg, arg2=none) -%}
-    SOME_OVAL
-{%- endmacro -%}
-```
-
-</div><div>
-
-Assuming the macro is within scope <small>(in the general macro file or in the same file)</small>, you can call it with:
-
-```text!
-{{ some_name(arg='xxx') }}
-```
-</div></div>
-
-<hr class="sep-both">
-
-## OVAL
-
-[Go back](../index.md)
-
-<div class="row row-cols-md-2"><div>
-
-OVAL is used in many files of the project, but there are barely any resources to learn about its syntax 📉.
-
-The usual template is something like this:
-
-```xml
-<def-group>
-  <!-- ... -->
-  <definition class="..." id="..." version="...">
-      <criteria>
-          <criterion test_ref="..." />
-      </criteria>
-  </definition>
-  <!-- body -->
-</def-group>
-```
-
-The `class`, `id`, `version`, and `test_ref` values are specific to what  kind of file you're creating. Others elements are explained here.
-
-➡️ Basic concepts are [explained here](https://ovalproject.github.io/getting-started/tutorial/).
-</div><div>
-
-`criteria` define what to do to **pass the check**. You can ask for all checks to be true <small>(AND)</small>, or only at least one <small>(OR)</small>.
-
-```xml!
-<criteria operator="AND" [...] >
-<criteria operator="OR" [...] >
-```
-
-A criteria may have children of type `criteria`, or `criterion`. For the later, they are referencing the test that will be done.
-
-```xml!
-<criterion test_ref="..." />
-<criterion test_ref="..." negate="true" />
-```
-
-💡 Criterion might not be the only tag that support `negate`.
-
-🎉 As a quick reminder, you can use [**jinja**](jinja.md) macros in your OVAL files!
-</div></div>
-
-<hr class="sep-both">
-
-## Tests
-
-<div class="row row-cols-md-2"><div>
-
-Tests are tag ending with `_test`. The usually have one or two children of type `_object`, and `_state` respectfully.
-
-⚠️ Absence of the `comment` attribute on a `_test` will make the build crash as they are displayed in the HTML report.
 </div><div>
 
 #### textfilecontent54
@@ -196,23 +101,6 @@ A local variable is declared inside the OVAL file.
     <value>zzz</value> <!-- one per value -->
   </constant_variable>
 ```
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-```xml!
-<extend_definition comment="xxx" definition_ref="yyy" />
-<external_variable datatype="int" id="var_xxx" />
-```
-</div><div>
-
-* Can change some values in the generated XML
 </div></div>
 
 <hr class="sep-both">

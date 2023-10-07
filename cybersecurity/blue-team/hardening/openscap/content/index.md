@@ -83,7 +83,41 @@ It automates the process from the [documentation](https://complianceascode.readt
 
 <hr class="sep-both">
 
-## Rule
+## Jinja2
+
+<div class="row row-cols-md-2"><div>
+
+The project uses [jinja2](/programming-languages/web/others/templating/jinja2/index.md) allowing us to use macros and variables inside many of the project. 
+
+Note that unlike usual `jinja` templates, we use one more level of accolades, so `{% %}` is now `{{% %}}` <small>(ansible-related reason)</small>.
+
+Some examples of conditions you might use:
+
+* `"ubuntu" in product`: true if product contains `ubuntu`
+* `"ubuntu" not in product`: false if product contains `ubuntu`
+* `product in ["debian10", "debian11"]`: true if product in array
+
+Another example: `{% if negate %}negate="true" {% endif %}` which optionally show an OVAL attribute based on a variable `negate`.
+</div><div>
+
+OVAL Macros can be declared in `shared/macros/10-oval.jinja`, or directly inside any OVAL file.
+
+```text!
+{%- macro some_name(arg, arg2=none) -%}
+    SOME_OVAL
+{%- endmacro -%}
+```
+
+Assuming the macro is within scope <small>(in the general macro file or in the same file)</small>, you can call it with:
+
+```text!
+{{ some_name(arg='xxx') }}
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Rule 🔑
 
 <div class="row row-cols-md-2"><div>
 
@@ -224,6 +258,61 @@ selections:
 
 <hr class="sep-both">
 
+## OVAL Files
+
+<div class="row row-cols-md-2"><div>
+
+[OVAL](https://ovalproject.github.io/getting-started/tutorial/) is XML-based format used by many files of the project.
+Basic concepts are [explained here](https://ovalproject.github.io/getting-started/tutorial/).
+
+```xml!
+<def-group>
+  <!-- ... -->
+  <definition class="..." id="..." version="...">
+      <criteria>
+          <criterion test_ref="..." />
+      </criteria>
+  </definition>
+  <!-- body -->
+</def-group>
+```
+
+The `class`, `id`, `version`, and `test_ref` values are specific to what kind of file you're creating. Others elements are explained here.
+
+`criteria` define what to do to **pass the check**. You can ask for all checks to be true <small>(AND)</small>, or only at least one <small>(OR)</small>.
+
+```xml!
+<criteria operator="AND" [...] >
+<criteria operator="OR" [...] >
+```
+</div><div>
+
+A criteria may have children of type `criteria`, or `criterion`. For the later, they are referencing the test that will be done.
+
+```xml!
+<criterion test_ref="..." />
+<criterion test_ref="..." negate="true" />
+```
+
+💡 Criterion might not be the only tag that support `negate`.
+
+Tests are tags ending with `_test`. The usually have one or two children of type `_object`, and `_state` respectfully.
+
+```xml!
+<xxx:yyy_test id="test_xxx" check="all" comment="">
+    <xxx:object object_ref="obj_xxx" />
+</xxx:yyy_test>
+
+<xxx:yyy_object id="obj_xxx">
+    <!-- ... -->
+</xxx:yyy_object>
+```
+
+⚠️ Absence of the `comment` attribute on a `_test` will make the build crash as they are displayed in the HTML report.
+</div></div>
+
+<hr class="sep-both">
+
 ## OVAL Checks
 
 <div class="row row-cols-md-2"><div>
@@ -248,8 +337,6 @@ Or, you may add a `oval/shared.xml` file inside your rule folder.
 
 #### Template File
 
-A check is written in [OVAL](https://ovalproject.github.io/getting-started/tutorial/) which is XML-based.
-
 There are many [existing templates](https://complianceascode.readthedocs.io/en/latest/templates/template_reference.html) which you can use in your rules. They are located in `shared/templates`, see each `oval.template` file.
 
 ```xml!
@@ -263,8 +350,6 @@ There are many [existing templates](https://complianceascode.readthedocs.io/en/l
   <!-- ... -->
 </def-group>
 ```
-
-👉 Non-template files may use `class` and the `id` may change.
 
 👉 Use `{{{ ARG1 }}}` to access an argument `arg1` passed from a rule.
 </div><div>
@@ -283,10 +368,16 @@ Stuff that I found, but never read/used yet.
 * [_old](_old.md)
 * references are used to sort rules in HTML pages
 * remediation 
+* Can change some values in the generated XML
 * A useful script to learn the [coverage of a profile](https://complianceascode.readthedocs.io/en/latest/manual/developer/05_tools_and_utilities.html#profile-statistics-and-utilities):
 
 ```shell!
 $ ./build-scripts/profile_tool.py stats --profile xccdf_org.ssgproject.content_profile_standard --benchmark build/ssg-xxx-xccdf.xml
 ```
 </div><div>
+
+```xml!
+<extend_definition comment="xxx" definition_ref="yyy" />
+<external_variable datatype="int" id="var_xxx" />
+```
 </div></div>
