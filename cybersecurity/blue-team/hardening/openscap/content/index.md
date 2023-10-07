@@ -13,7 +13,8 @@ $ git clone --recursive "https://github.com/ComplianceNinjas/compliance-as-code-
 $ cd cac_docker
 $ docker compose up -d
 $ docker attach $(docker compose ps -q)
-docker$ cd content && ./build_product debian11 -j $(nproc)
+docker$ cd content
+docker$ ./build_product debian11 -j $(nproc)
 ```
 </div><div>
 
@@ -42,16 +43,16 @@ We merge your files in `loader/` into `content/`, then generate/update rules, an
 
 Note that the project is *somewhat* complex. ⚠️
 
-A **control** <small>(`content/controls/`)</small> xxx.
+A **control file** <small>(`content/controls/`)</small> 📝 correspond to a compliance guide. It contains some of the compliance metadata along with the list of controls that the guide contains.
 
-A **rule** <small>(`content/products/`)</small> xxx. A rule, such as "partition_for_tmp" <small>(it checks if there is a separate partition for /tmp)</small>, contains a way to test the compliance of a system to something, along with other stuff such as remediation notes/scripts...
+A **rule** <small>(`content/products/`)</small> 🔑 correspond to a reusable task in a control. For instance, `partition_for_tmp` that checks if `/tmp` is on a separate partition. A rule contains metadata and link to a template.
 
-A **product** <small>(`content/products/`)</small> xxx. In a nutshell, a product is an operating system or an app on which we run a compliance test, such as "debian11". 
+A **product** <small>(`content/products/`)</small> 🧸 is a target of a compliance guide. It's mostly an operating system such as `fedora` <small>(=all versions)</small> or `debian11`. It links to a list of profiles.
+</div><div>
 
-A **profile** <small>(`content/products/<product>/profiles/`)</small> xxx. It has profiles, such as "workstation.profile", which lists what "rules" we will use.
+A **profile** <small>(`content/products/<product>/profiles/`)</small> 🔎 is a list of rules. It may import rules from a control file.
 
 A **template** <small>(`content/controls/`)</small> xxx.
-</div><div>
 
 An **applicability** check <small>(`content/controls/`)</small> xxx.
 
@@ -67,5 +68,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [_old](_old.md)
+* remediation
 </div><div>
 </div></div>
