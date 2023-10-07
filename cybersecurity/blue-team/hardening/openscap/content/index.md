@@ -125,9 +125,42 @@ template:
 </details>
 
 ➡️ Refer to the section about [rule format](https://complianceascode.readthedocs.io/en/latest/manual/developer/06_contributing_with_content.html#rules).
+
+<br>
+
+#### Rule Description
+
+You can use `description`, and `rationale` to provide information. They support HTML tags such as:
+
+* `<br />`: new line
+* `<tt>xxx</tt>`: equivalent of `<code>`
+* `<pre>xxx</pre>`: a line of code
+* ...
+
+☠️ If there is a problem with the documentation <small>(ex: `<br>` which is a missing auto-closing slash)</small>, build will fail at step 9.
+
+As a reminder, you can create multi-lines texts using `|-`
+
+```yaml!
+description: |-
+    XXX xxx <br />
+    YYY yyy
+```
 </div><div>
 
-...
+#### prodtype
+
+By default, all rules are compiled for all products. It's problematic as some rules may not be applicable to our product, leading to compilation problems.
+
+Inside each rule, there may be a `prodtype`. If there is one,  then this rule can **only** be used by products that were added to it.
+
+You can add your product to each rule `prodtype` manually 🤚 <small>(for the rules you need that have a prodtype)</small>, or use a script 🤖.
+
+➡️ See [mod_prodtype.py](https://complianceascode.readthedocs.io/en/latest/manual/developer/05_tools_and_utilities.html#utils-mod-prodtype-py-programmatically-modify-prodtype-in-rule-yml) or [autoprodtyper.py](https://complianceascode.readthedocs.io/en/latest/manual/developer/05_tools_and_utilities.html#utils-autoprodtyper-py-automatically-add-product-to-prodtype).
+
+⚠️ When using `autoprodtyper` with a control file, it **won't** work.
+
+☠️ If the `prodtype` attribute is present, you'll get an error during build <small>(unselects all groups...)</small>.
 </div></div>
 
 <hr class="sep-both">
@@ -356,6 +389,11 @@ Stuff that I found, but never read/used yet.
 
 * [_old](_old.md)
 * references are used to sort rules in HTML pages
-* remediation
+* remediation 
+* A useful script to learn the [coverage of a profile](https://complianceascode.readthedocs.io/en/latest/manual/developer/05_tools_and_utilities.html#profile-statistics-and-utilities):
+
+```shell!
+$ ./build-scripts/profile_tool.py stats --profile xccdf_org.ssgproject.content_profile_standard --benchmark build/ssg-xxx-xccdf.xml
+```
 </div><div>
 </div></div>
