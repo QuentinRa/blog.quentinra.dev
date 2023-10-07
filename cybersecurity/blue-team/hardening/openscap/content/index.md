@@ -39,24 +39,26 @@ We merge your files in `loader/` into `content/`, then generate/update rules, an
 
 ## Project Overview
 
+Note that the project is *somewhat* complex. ⚠️
+
 <div class="row row-cols-md-2"><div>
 
-Note that the project is *somewhat* complex. ⚠️
+A **control** 🔎 is a recommendation of an hardening guide, such as [Ensure /tmp is a separate partition](https://www.tenable.com/audits/items/CIS_Red_Hat_EL9_v1.0.0_L1_Server.audit:cd31711d0572f143d773d53f0c976db1). One control may contain multiple tasks to perform.
 
 A **control file** <small>(`content/controls/`)</small> 📝 correspond to a compliance guide. It contains some of the compliance metadata along with the list of controls that the guide contains.
 
-A **rule** <small>(`content/products/`)</small> 🔑 correspond to a reusable task in a control. For instance, `partition_for_tmp` that checks if `/tmp` is on a separate partition. A rule contains metadata and link to a template.
+A **rule** <small>(`linux_os/guide/`)</small> 🔑 correspond to a reusable task in a control. For instance, `partition_for_tmp` that checks if `/tmp` is on a separate partition. A rule contains metadata and link to a template.
 
-A **product** <small>(`content/products/`)</small> 🧸 is a target of a compliance guide. It's mostly an operating system such as `fedora` <small>(=all versions)</small> or `debian11`. It links to a list of profiles.
+A **product** <small>(`content/products/<product>/`)</small> 🧸 is a target of a compliance guide. It's mostly an operating system such as `fedora` <small>(=all versions)</small> or `debian11`. It links to a list of profiles.
 </div><div>
 
-A **profile** <small>(`content/products/<product>/profiles/`)</small> 🔎 is a list of rules. It may import rules from a control file.
+A **profile** <small>(`content/products/<product>/profiles/`)</small> ✅ is a list of rules. It may reference some specific rules in a control file <small>(ex: all from level 1)</small>.
 
-A **template** <small>(`content/controls/`)</small> xxx.
+A **template** <small>(`shared/templates/`)</small> 🗃️ is a reusable OVAL check.
 
-An **applicability** check <small>(`content/controls/`)</small> xxx.
+An **OVAL check** <small>(`oval.template`, `shared.xml`...)</small> 🎯 describes how we can check if a rule was applied.
 
-Jinja
+An **applicability** check <small>(`shared/applicability/`)</small> is used to check if a rule is applicable given the state of the product <small>(package not installed)</small>.
 </div></div>
 
 <hr class="sep-both">
