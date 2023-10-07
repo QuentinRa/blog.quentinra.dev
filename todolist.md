@@ -54,27 +54,6 @@ Google
 * [firebase](https://firebase.google.com/) <small>(???)</small>
 * FeedBurner <small>(RSS)</small>
 
-to-dos here?
-
-* [editorconfig](https://editorconfig.org/)
-* [asdf](https://github.com/asdf-vm/asdf) <small>(package management)</small>
-* Slack
-* [kandi](https://kandi.openweaver.com/) <small>(???)</small>
-* no code
-  * [airtable](https://www.airtable.com/) <small>(???)</small>
-  * [baserow](https://baserow.io/) <small>(???)</small>
-  * [make](https://www.make.com/) <small>(???)</small>
-* [zapier](https://zapier.com/) <small>(???)</small>
-* [n8n](https://n8n.io/) <small>(???)</small>
-* [appsmith](https://www.appsmith.com/) <small>(???)</small>
-* [padlet](https://padlet.com/) <small>(???)</small>
-* [squarespace](https://www.squarespace.com/) <small>(???)</small>
-* [toolslick](https://toolslick.com/) <small>(???)</small>
-* [plan.io](https://plan.io/) <small>(???)</small>
-* [grafana.com](https://grafana.com/) <small>(???)</small>
-* [prometheus](https://github.com/prometheus/prometheus) <small>(???)</small>
-* [raycast](https://www.raycast.com/) <small>(???)</small>
-
 </div><div>
 
 **Markdown-based**

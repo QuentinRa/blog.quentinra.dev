@@ -687,6 +687,7 @@ Stuff that I found, but never read/used yet.
 * [peps](https://peps.python.org/pep-0008/) (style guide)
 * [pyenv](https://github.com/pyenv/pyenv), Anaconda, Miniconda
 * [pyzo](https://github.com/pyzo/pyzo)
+* [asdf](https://github.com/asdf-vm/asdf)
 * [pythonawesome](https://pythonawesome.com/)
 * [taichi](https://github.com/taichi-dev/taichi)
 * `del()`: delete a variable

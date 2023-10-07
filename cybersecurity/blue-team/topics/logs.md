@@ -176,4 +176,5 @@ Stuff that I found, but never read/used yet.
 * protect logs
 * confidential data in logs
 * Syslog server/rsyslog
+* [prometheus](https://github.com/prometheus/prometheus)
 </div></div>
