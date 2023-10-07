@@ -54,7 +54,8 @@ Stuff that I found, but never read/used yet.
 
 * [Heroku](https://www.heroku.com/home) / [Heroku (student)](https://www.heroku.com/students) (👻)
 * [elm](https://elm-lang.org/)
-* [Dart](https://dart.dev/)
-* [Flutter](https://flutter.dev/)
 * [vercel](https://vercel.com/)
+* [Modern web](https://modern-web.dev/guides/)
+* [Google Code Labs](https://codelabs.developers.google.com/)
+* Firebase
 </div></div>

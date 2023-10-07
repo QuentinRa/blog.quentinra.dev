@@ -20,6 +20,8 @@ Mostly for user documentation, you can use these:
 * [docsify](https://docsify.js.org/)
 * [daux](https://daux.io/)
 * [Just the Docs](https://github.com/just-the-docs/just-the-docs)
+* [GitBook](https://www.gitbook.com/)
+* [retype](https://retype.com/)
 
 🌍 [ReadTheDocs](https://docs.readthedocs.io/en/stable/index.html) is a popular documentation hosting platform.
 </div></div>
@@ -59,5 +61,6 @@ Stuff that I found, but never read/used yet.
 
 * [dokuwiki](https://www.dokuwiki.org/dokuwiki)
 * [mediawiki](https://www.mediawiki.org/wiki/MediaWiki)
+* [utterances](https://github.com/utterance/utterances)
 </div><div>
 </div></div>

@@ -55,20 +55,6 @@ Google
 * FeedBurner <small>(RSS)</small>
 
 </div><div>
-
-**Markdown-based**
-
-* [retype](https://retype.com/) <small>(Extended Markdown for websites)</small>
-* [utterances](https://github.com/utterance/utterances) <small>(Git-based comments)</small>
-* GitBook
-* [Obsidian](https://obsidian.md/) <small>(notes?)</small>
-* [notion](https://www.notion.so/) <small>(notes?)</small>
-* [slick](https://kenwheeler.github.io/slick/) <small>(slides)</small>
-
-**Web/Android/UI**
-
-➡️ See [Modern web](https://modern-web.dev/guides/)<br>
-➡️ See [Google Code Labs](https://codelabs.developers.google.com/) (Firebase, Flutter...)
 </div><div>
 
 **Random**

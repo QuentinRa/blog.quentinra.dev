@@ -401,7 +401,8 @@ Stuff that I found, but never read/used yet.
 * [sindresorhus.com](https://sindresorhus.com/github-markdown-css/)
 * [JetBrains](https://www.jetbrains.com/help/hub/Markdown-Syntax.html#quick-notes-markdown-headings)
 * [markdown-here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* [commonmark](https://github.com/commonmark/commonmark-java) (Markdown to Java)
 </div><div>
 
-* [commonmark](https://github.com/commonmark/commonmark-java) (Markdown to Java)
+* [slick](https://kenwheeler.github.io/slick/) (slides)
 </div></div>
