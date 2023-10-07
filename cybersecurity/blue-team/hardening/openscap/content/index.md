@@ -224,6 +224,56 @@ selections:
 
 <hr class="sep-both">
 
+## OVAL Checks
+
+<div class="row row-cols-md-2"><div>
+
+#### Link to a rule
+
+A rule may either use a **template**:
+
+```yaml!
+template:
+    name: your_template_name
+    vars:
+        arg1: value1
+        arg1@product_name: value2
+```
+
+Or, you may add a `oval/shared.xml` file inside your rule folder.
+
+➡️ The syntax `@product_name`, means that for a specific product, the argument will have a different value.
+
+<br>
+
+#### Template File
+
+A check is written in [OVAL](https://ovalproject.github.io/getting-started/tutorial/) which is XML-based.
+
+There are many [existing templates](https://complianceascode.readthedocs.io/en/latest/templates/template_reference.html) which you can use in your rules. They are located in `shared/templates`, see each `oval.template` file.
+
+```xml!
+<def-group>
+  {{{ oval_metadata("XXX") }}}
+  <definition class="compliance" id="{{{ _RULE_ID }}}" version="3">
+      <criteria>
+          <!-- ... -->
+      </criteria>
+  </definition>
+  <!-- ... -->
+</def-group>
+```
+
+👉 Non-template files may use `class` and the `id` may change.
+
+👉 Use `{{{ ARG1 }}}` to access an argument `arg1` passed from a rule.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
