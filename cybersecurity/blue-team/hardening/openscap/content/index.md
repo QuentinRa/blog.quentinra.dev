@@ -354,7 +354,95 @@ There are many [existing templates](https://complianceascode.readthedocs.io/en/l
 👉 Use `{{{ ARG1 }}}` to access an argument `arg1` passed from a rule.
 </div><div>
 
-...
+#### textfilecontent54
+
+A common tag to test file content.
+
+```xml
+<ind:textfilecontent54_test id="xxx" check="all" comment="">
+    <ind:object object_ref="obj_xxx" />
+</ind:textfilecontent54_test>
+
+<ind:textfilecontent54_object id="obj_xxx">
+    <!-- see ind tags section -->
+</ind:textfilecontent54_object>
+```
+
+You can use the following attributes on `textfilecontent54_test`
+
+* `check_existence="all_exist"`: all objects found
+* `check_existence="none_exist"`: no valid object found
+
+➡️ See also: `textfilecontent54_state`.
+
+<br>
+
+#### ind tags
+
+While I'm not sure what's `ind`, the following tags are quite handy.
+
+<details class="details-n">
+<summary>Select a file/folder</summary>
+
+You can either give the path:
+
+```xml!
+<ind:filepath>/path/to/file</ind:filepath>
+```
+
+Or, load files in the current folder:
+
+```xml!
+<!-- set current folder -->
+<ind:path>/path/to/</ind:path>
+<!-- pick one -->
+<ind:filename datatype="string">xxx.config</ind:filename>
+<ind:filename operation="pattern match">^*\.config$</ind:filename>
+```
+</details>
+
+<details class="details-n">
+<summary>Check if a pattern is inside a file</summary>
+
+You can "grep" to see if a pattern is inside a file. There are no fancy options like "grep" <small>(case insensitive, multiple lines...)</small>.
+
+```xml!
+<ind:pattern operation="pattern match">some_line_here</ind:pattern>
+<ind:pattern operation="pattern match">^some_regex_here$</ind:pattern>
+```
+
+Then, you assert what result you expect
+
+```xml!
+<ind:instance datatype="int">1</ind:instance>
+<ind:instance datatype="int" operation="greater than or equal">1</ind:instance>
+<ind:instance datatype="int" operation="equals">1</ind:instance>
+```
+
+⚠️ If the second line is missing, build will fail.
+</details>
+
+There are multiple tags that can support a list of values, such as `ind:path`. For instance, we can check if at least one file is valid.
+
+<details class="details-n">
+<summary>Variables and sets</summary>
+
+```xml!
+<ind:path var_ref="var_xxx" var_check="at least one" />
+<ind:path var_ref="var_xxx" var_check="at least one" datatype="string" />
+```
+
+The variable can be either `local` or `external`.
+
+A local variable is declared inside the OVAL file.
+
+```xml
+<constant_variable datatype="string" comment="XXX"
+  id="var_xxx" version="1">
+    <value>zzz</value> <!-- one per value -->
+  </constant_variable>
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
@@ -369,6 +457,7 @@ Stuff that I found, but never read/used yet.
 * references are used to sort rules in HTML pages
 * remediation 
 * Can change some values in the generated XML
+* RCE, `shared.sh`, `platform=xx,yyy`
 * A useful script to learn the [coverage of a profile](https://complianceascode.readthedocs.io/en/latest/manual/developer/05_tools_and_utilities.html#profile-statistics-and-utilities):
 
 ```shell!
