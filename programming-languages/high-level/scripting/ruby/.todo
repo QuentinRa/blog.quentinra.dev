@@ -11,3 +11,5 @@ bundle install
 bundle exec xxx
 bundle config set path 'xxx'
 gem uninstall xxx
+
+asdf

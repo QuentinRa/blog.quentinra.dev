@@ -28,7 +28,7 @@ $ node index
 $ node index.js
 ```
 
-> 🚀 To easily manage multiple versions of Node, see [nvm](https://github.com/nvm-sh/nvm) (64k ⭐), [nvm-windows](https://github.com/coreybutler/nvm-windows) (25k ⭐), or [n](https://github.com/tj/n) (17k ⭐). Alternatively, there are [nvs](https://github.com/jasongin/nvs), [nave](https://github.com/isaacs/nave), [volta](https://github.com/volta-cli/volta) (7.3k ⭐), [nodenv](https://github.com/nodenv/nodenv), [fnm](https://github.com/Schniz/fnm) (9.8k ⭐), and [nodist](https://github.com/nullivex/nodist).
+> 🚀 To easily manage multiple versions of Node, see [nvm](https://github.com/nvm-sh/nvm) (64k ⭐), [nvm-windows](https://github.com/coreybutler/nvm-windows) (25k ⭐), or [n](https://github.com/tj/n) (17k ⭐). Alternatively, there are [nvs](https://github.com/jasongin/nvs), [nave](https://github.com/isaacs/nave), [volta](https://github.com/volta-cli/volta) (7.3k ⭐), [nodenv](https://github.com/nodenv/nodenv), [fnm](https://github.com/Schniz/fnm) (9.8k ⭐), [asdf](https://github.com/asdf-vm/asdf) and [nodist](https://github.com/nullivex/nodist).
 </div></div>
 
 <hr class="sep-both">

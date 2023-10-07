@@ -43,8 +43,6 @@ Programming languages (+tools) that I want to check, but never had the time.
 
 <div class="row row-cols-md-3 mt-4"><div>
 
-➡️[roadmap.sh](https://roadmap.sh/)
-
 **Tools~API~no**
 
 * [crowdin](https://crowdin.com/) <small>(localization)</small>
@@ -108,6 +106,15 @@ EOF
 
 * [emojicode](https://www.emojicode.org/)
 * [holopin](https://www.holopin.io/) (badges)
+
+**Help/Search/...**
+
+* [includestdio](https://includestdio.com/) (<s>dead</s>)
+* [codeproject](https://www.codeproject.com/)
+* [codegrepper](https://www.codegrepper.com/index.php)
+* ChatGPT
+* [answersblurb](https://answersblurb.com/)
+* [alternativeto](https://alternativeto.net/) / [similarweb](https://www.similarweb.com/)
 </div></div>
 
 <hr class="sep-both">
@@ -117,6 +124,8 @@ EOF
 Websites that I found, but never used yet.
 
 <div class="row row-cols-md-3"><div>
+
+➡️[roadmap.sh](https://roadmap.sh/)
 
 **All**
 
@@ -244,6 +253,19 @@ Websites that I found, but never used yet.
 
 * [lucidchart](https://www.lucidchart.com/blog/)
 * [taskade](https://www.taskade.com/blog/)
+
+**News**
+
+* [rankred](https://www.rankred.com/)
+* [daily.dev](https://daily.dev/) ([api](https://api.daily.dev/get?r=xxxx))
+* [polygon](https://www.polygon.com/) (movies, games...)
+* [getdroidtips](https://www.getdroidtips.com/) (games, android...)
+* [80](https://80.lv/) (games...)
+* [techno360](https://www.techno360.in/)
+* [uploadvr](https://uploadvr.com/)
+* [maxboxvr](https://www.maxboxvr.com/)
+* [howsociable](https://howsociable.com/)
+* [sell](https://www.sell.fr/) (games, french...)
 </div><div>
 
 **Blogs**
@@ -321,38 +343,6 @@ Websites that I found, but never used yet.
 * [codehints](https://codehints.io/) and [codingcheats](https://codingcheats.io/) <small>(cheatsheets)</small>
 * [htmlcheatsheet](https://htmlcheatsheet.com/)
 * [iLoveCodingOrg](https://github.com/iLoveCodingOrg)
-</div></div>
-
-<hr class="sep-both">
-
-## 🎉 Random 🎉
-
-Random stuff...
-
-<div class="row row-cols-md-2 mt-4"><div>
-
-**News**
-
-* [rankred](https://www.rankred.com/)
-* [daily.dev](https://daily.dev/) ([api](https://api.daily.dev/get?r=xxxx))
-* [polygon](https://www.polygon.com/) (movies, games...)
-* [getdroidtips](https://www.getdroidtips.com/) (games, android...)
-* [80](https://80.lv/) (games...)
-* [techno360](https://www.techno360.in/)
-* [uploadvr](https://uploadvr.com/)
-* [maxboxvr](https://www.maxboxvr.com/)
-* [howsociable](https://howsociable.com/)
-* [sell](https://www.sell.fr/) (games, french...)
-</div><div>
-
-**Help/Search/...**
-
-* [includestdio](https://includestdio.com/) (<s>dead</s>)
-* [codeproject](https://www.codeproject.com/)
-* [codegrepper](https://www.codegrepper.com/index.php)
-* ChatGPT
-* [answersblurb](https://answersblurb.com/)
-* [alternativeto](https://alternativeto.net/) / [similarweb](https://www.similarweb.com/)
 </div></div>
 
 <hr class="sep-both">

@@ -546,7 +546,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [_old](_old.md)
 * references are used to sort rules in HTML pages
 * remediation 
 * Can change some values in the generated XML
