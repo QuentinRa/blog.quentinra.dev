@@ -83,6 +83,53 @@ It automates the process from the [documentation](https://complianceascode.readt
 
 <hr class="sep-both">
 
+## Controls and Profiles
+
+<div class="row row-cols-md-2"><div>
+
+#### Controls file
+
+[Controls](https://complianceascode.readthedocs.io/en/latest/manual/developer/03_creating_content.html#controls) are YAML files representing hardening guides. They are stored in `./controls`. Each control may execute multiple rules.
+
+```yaml!
+# ./controls/anssi.yml
+  - id: R40
+    title: User authentication running sudo
+    levels:
+    - minimal
+    [...]
+    rules:
+    # load a rule by ID
+    - sudo_remove_nopasswd
+    - sudo_remove_no_authenticate
+```
+</div><div>
+
+#### Profiles
+
+Each product has a folder `./products/<product_name>/profiles` with available profiles. They are YAML files with the extension `.profile`.
+
+```yaml!
+documentation_complete: true
+
+title: '...'
+
+description: |-
+    ...
+
+selections:
+    # load a rule by ID
+    - sudo_remove_nopasswd
+    - ...
+    # load rules from a control file
+    - anssi:R40         # one specific rule
+    - anssi:all         # all rules
+    - anssi:all:minimal # only keep if minimal in levels
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Support a new package manager
 
 <div class="row row-cols-md-2"><div>

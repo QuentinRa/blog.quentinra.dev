@@ -1,24 +1,6 @@
 # Profiles
 
-[Go back](../index.md)
-
 <div class="row row-cols-md-2"><div>
-
-Each product has a folder `./products/<product_name>/profiles` with available profiles. They are YAML files with the extension `.profile`.
-
-```yaml!
-documentation_complete: true
-
-title: '...'
-
-description: |-
-    ...
-
-selections:
-    - ...
-```
-
-<br>
 
 #### Selections
 
@@ -34,35 +16,4 @@ Selections is a list of rules IDs that are tested when selecting this profile. H
 
 To find rules, you can look at other profiles or controls files, or you can use `find linux_os -name *ftp* -type d 2> /dev/null` <small>(ex: for ftp rules)</small>.
 </div><div>
-
-#### controls
-
-[Controls](https://complianceascode.readthedocs.io/en/latest/manual/developer/03_creating_content.html#controls) are YAML files representing hardening guides. They are stored in `./controls`. Each control may execute multiple rules.
-
-```yaml!
-# ./controls/anssi.yml
-  - id: R40
-    title: User authentication running sudo
-    levels:
-    - minimal
-    [...]
-    rules:
-    - sudo_remove_nopasswd
-    - sudo_remove_no_authenticate
-```
-
-To load controls in a profile, you can use these:
-
-```yaml!
-selections:
-    - anssi:R40         # one specific rule
-    - anssi:all         # all rules
-    - anssi:all:minimal # only keep if minimal in levels
-```
-
-A useful [script](compilation.md#scripts) to learn the [coverage of a profile](https://complianceascode.readthedocs.io/en/latest/manual/developer/05_tools_and_utilities.html#profile-statistics-and-utilities):
-
-```bash
-$ ./build-scripts/profile_tool.py stats --profile xccdf_org.ssgproject.content_profile_standard --benchmark build/ssg-xxx-xccdf.xml
-```
 </div></div>

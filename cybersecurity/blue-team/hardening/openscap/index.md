@@ -30,12 +30,20 @@ OpenSCAP command line tool (oscap) X.Y.Z
 
 <div class="row row-cols-md-2"><div>
 
+#### Check if a guide is valid
+
+You may want to check if the XML is valid. If there is no output, then the XML *may* be valid.
+
+```shell!
+$ oscap ds sds-validate ssg-xxx-ds.xml
+```
+
 #### Select A Guide
 
 Each XML file is divided in **profiles** which usually correspond to a guide adapted for a kind of target <small>(ex: CIS Guide for Workstations)</small>.
 
 ```shell!
-$ oscap info some_compliance_guide.xml
+$ oscap info ssg-xxx-ds.xml
 [...]
 Profiles:
     Title: Standard System Security Profile for Parrot Linux
@@ -50,7 +58,7 @@ To check if a system is hardened given a profile, and a guide:
 ```shell!
 $ oscap xccdf eval \
     --profile xccdf_org.ssgproject.content_profile_standard \
-    some_compliance_guide.xml
+    ssg-xxx-ds.xml
 ```
 
 You can add more options right before the XML.
