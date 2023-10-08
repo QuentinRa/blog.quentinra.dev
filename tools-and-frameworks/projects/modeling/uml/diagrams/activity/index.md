@@ -76,18 +76,18 @@ Transitions are the arrows linking a state with another. On each, you may add on
 
 #### Branching
 
-Both syntaxes are used to use represent a branching. You can have as many branches and conditions as you want.
+Both syntaxes are used to represent a branching. You can have as many branches and conditions as you want.
 
 ![UML If Syntax 1](_uml/if.svg)
 ![UML If Syntax 2](_uml/if_001.svg)
 
-The most fitting condition if the one that will be used. You may add a note to ensure there is no doubt about it. A better approach is to only use `True` and `False` and chain them.
+The most fitting condition is the one that will be used. You may add a note to ensure there is no doubt about it. A better approach is to only use `True` and `False` and chain them.
 
 <br>
 
 #### Synchronization bar
 
-The synchronization bar is used when we want to do parallelism. The first indicates that the states below are executed in parallel (`fork`) and the second one indicate that we wait for all forks to terminate (`join`).
+The synchronization bar is used when we want to do parallelism. The first indicates that the states below are executed in parallel (`fork`) and the second one indicates that we wait for all forks to terminate (`join`).
 
 ![Fork](_uml/fork.svg)
 </div></div>
