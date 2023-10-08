@@ -82,7 +82,7 @@ $ git status
 
 #### git commit
 
-Create a commit with all staged files. Every commit must have a message explaining what's in the commit.
+Create a commit with all the staged files. Every commit must have a message explaining what's in the commit.
 
 ```ps
 # open "vim" to enter the message
@@ -418,7 +418,7 @@ $ git merge other/main --allow-unrelated-histories
 
 #### 🪄 Git submodules
 
-Git submodules are the appropriate way of having external Git repositories inside a Git repository.
+Git submodules are the appropriate way to store (link) external Git repositories inside a Git repository.
 
 ```bash
 # init submodules for a cloned project (v1)
