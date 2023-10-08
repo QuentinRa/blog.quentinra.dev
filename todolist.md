@@ -48,21 +48,10 @@ Programming languages (+tools) that I want to check, but never had the time.
 
 Google
 
-* [firebase](https://firebase.google.com/) <small>(???)</small>
 * FeedBurner <small>(RSS)</small>
 
 </div><div>
 </div><div>
-
-**Random**
-
-* Heredoc
-
-```heredoc
-<<EOF
-YWFhYQ==
-EOF
-```
 
 **Fun**
 

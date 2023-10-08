@@ -57,5 +57,5 @@ Stuff that I found, but never read/used yet.
 * [vercel](https://vercel.com/)
 * [Modern web](https://modern-web.dev/guides/)
 * [Google Code Labs](https://codelabs.developers.google.com/)
-* Firebase
+* [Firebase](https://firebase.google.com/)
 </div></div>

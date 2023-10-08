@@ -624,24 +624,35 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) !== false){
 
 #### JSON
 
-```php
+```php!
 $decoded = json_decode("{}", true);
 $json = json_encode($decoded)
 ```
 
 #### Date and time
 
-```php
+```php!
 $date = date("Y-m-d");
 $time = time();
 ```
+
+#### Heredoc Strings
+
+You can use [Heredoc](/tools-and-frameworks/knowledge/heredoc/index.md) strings.
+
+```php!
+$some_variable = <<<EOF
+You can use both ' and "
+EOF;
+```
+
 </div><div>
 
 #### Hash passwords
 
 🙅‍♀️ Don't store/use cleartext passwords, hash your passwords!
 
-```php
+```php!
 // (usually saved in a database)
 $hash = password_hash("apassword", PASSWORD_DEFAULT);
 
