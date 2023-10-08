@@ -29,8 +29,6 @@ List of courses that have note which were not added yet.
 * Utils
 
 **Cybersecurity**
-
-* (review, typos) Hardening
 </div></div>
 
 

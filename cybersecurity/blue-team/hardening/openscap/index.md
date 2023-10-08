@@ -40,7 +40,7 @@ $ oscap ds sds-validate ssg-xxx-ds.xml
 
 #### Select A Guide
 
-Each XML file is divided in **profiles** which usually correspond to a guide adapted for a kind of target <small>(ex: CIS Guide for Workstations)</small>.
+Each XML file is divided into **profiles** which usually correspond to a guide adapted for a kind of target <small>(ex: CIS Guide for Workstations)</small>.
 
 ```shell!
 $ oscap info ssg-xxx-ds.xml
