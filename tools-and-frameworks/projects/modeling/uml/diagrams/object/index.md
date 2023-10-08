@@ -12,6 +12,5 @@ An object diagram is a concrete version of a [class diagram](../class/index.md).
 
 **Some notes** 📝
 
-* The object name is underlined
-* Links are indicating which variable "contains" <small>(here, the association is called "contains")</small> others
+* The object name is usually underlined
 </div></div>

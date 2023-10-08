@@ -9,7 +9,7 @@ A database diagram seems to be an unofficial diagram mostly based on a simplifie
 ![_uml/basic.pu](_uml/basic.svg)
 </div>
 
-A **class** 🗃️ such as `Person` a structured data definition. It has **attributes** 📚 such as `name` of type `String`.
+A **class** 🗃️, such as `Person`, is a structured data definition. It has **attributes** 📚 such as `name` which has the type `String`.
 </div><div>
 
 A **record** 🎫 is a concrete instance of a class, e.g., we gave concrete values to each attribute of the class <small>(ex: Person(id=1, name="John Doe"))</small>.
@@ -54,5 +54,5 @@ Both primary keys and artificial keys are explained [here](/programming-language
 
 * There is no concept of `visibility` <small>(#attr does not mean protected)</small>
 * There is no concept of `class attributes` <small>(<u>attr</u> is not a class attribute)</small>
-* There is usually no `operations`. If there are, it means we will use [PL/SQL](/programming-languages/databases/relational/plsql/index.md) or another procedural language to code them.
+* There are usually no `operations`. If there are, it means we will use [PL/SQL](/programming-languages/databases/relational/plsql/index.md) or another procedural language to code them.
 </div></div>
