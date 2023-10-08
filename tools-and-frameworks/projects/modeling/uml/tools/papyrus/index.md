@@ -62,9 +62,9 @@ If you use a perspective at least once, a shortcut will be available right next 
 1. **Project explorer** 📂: Double-click on a model to open it
     * Export your diagrams <small>(right-click on model -> export)</small>
     * Open your project in the file explorer <small>(right-click on the folder "example" and "show in")</small>
-2. **Model explorer** 🍀: Once you opened a model, add diagrams inside it from here: Right-click on "example" > "New diagram".
+2. **Model explorer** 🍀: Once you open a model, add diagrams into it from this menu: Right-click on "example" > "New diagram".
 3. **Model editor** 🎥: edit your diagram here. You can move things from the palette (4) to here.
-4. **Palette** 🎨: everything element that you can put inside the kind of diagram you opened.
+4. **Palette** 🎨: every element that you can put inside the kind of diagram you opened.
 5. **Property view** 🔐: Edit the properties of what you selected
     * ex: give another name to a class
     * ex: give a type to an attribute
@@ -105,7 +105,7 @@ It's common, but there is a little star before every edited filename.
 
 #### Icons for Palette
 
-The palette has quite a lot of elements. It's fasted and easier to change the palette view to a list of icons <small>(Right-click to change the view)</small>.
+The palette has quite a lot of elements. It's faster and easier to change the palette view to a list of icons <small>(Right-click to change the view)</small>.
 
 <div class="text-center">
 
@@ -129,7 +129,7 @@ From the palette, you can double-click on something to create a new element, the
 
 #### Align items
 
-It's kinda useless but to create nicer diagrams, you may use "align" to cleanly arrange items of a diagram.
+It's kinda useless, but to create nicer diagrams, you may use "align" to cleanly arrange items in a diagram.
 
 <div class="text-center">
 
@@ -168,7 +168,7 @@ Near the corners of a class, wait a bit while your mouse is on a class and a sho
 As a reminder:
 
 * ➡️ If a class implements/realizes an interface, then the head of the arrow is on the interface.
-* ➡️ If a class extends/generalize another class, then the head of the arrow is on other class.
+* ➡️ If a class extends/generalizes another class, then the head of the arrow is on the other class.
 
 #### Layout/Appearance
 
@@ -188,7 +188,7 @@ When clicking on an attribute, there is a field "Type" inside the Property View.
 
 **Notes**
 
-* "Boolean [1]" after the type mean that the **cardinality** is **1** <small>(=this is a value, more than 1 means this is an array/a list/a queue/...)</small>
+* "Boolean [1]" after the type means that the **cardinality** is **1** <small>(=this is a value, more than 1 means this is an array/a list/a queue/...)</small>
 * You could drag and drop a class inside the field, instead of picking a primitive type.
 * If you need to create a new type, use either `DataType` <small>(cannot be instanced)</small> or `Primitive type` or a class if none are what you want
 
@@ -224,7 +224,7 @@ In Java, you may use classes such as `java.util.Arrays` in your diagrams. ⚠️
 
 <div class="row row-cols-md-2"><div>
 
-#### Install deps
+#### Install dependencies
 
 You need **papyrus.designer**, **Xtend IDE**, and **acceleo**.
 
