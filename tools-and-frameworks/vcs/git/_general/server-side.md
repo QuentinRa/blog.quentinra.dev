@@ -51,11 +51,11 @@ Every issue/pull request has an ID, for instance, `#1`. You can reference this I
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-#### ✍️Co-authors
+#### ✍️ Co-authors
 
 *Available at least on: GitHub*
 
-If you know someone else email, then you can include them as the author of a commit. Note that the one creating the commit (you) will be marked as a committer, so there will always be at least two names unless you directly edit the GIT configuration 🚓.
+If you know someone else's email, then you can include them as the author of a commit. Note that the one creating the commit (you) will be marked as a committer, so there will always be at least two names unless you directly edit the GIT configuration 🚓.
 
 ```bash
 git commit -m "xxx
@@ -80,7 +80,7 @@ There is a nice way of referencing code from the same repository inside an issue
 
 > It won't always work. In such cases, simply click on "..." on a file, get the permalink, and append to it `#LX` <small>(line X)</small> or `#LX-LY` <small>(line X to line Y)</small>.
 
-#### ✍️Pages
+#### ✍️ Pages
 
 *Available at least on: GitHub*
 
@@ -105,7 +105,7 @@ This file is a dictionary with patterns associated with GitHub/... usernames. Re
 
 *Available at least on: GitHub*
 
-While the file `.gitattribute` is not exclusive to GitHub/..., it is used by GitHub [linguist](https://github.com/github/linguist/tree/master/docs) if we want to edit the rules that GitHub uses to determine languages used by our project.
+While the file `.gitattribute` is not exclusive to GitHub/..., it is used by GitHub [linguist](https://github.com/github/linguist/tree/master/docs) if we want to edit the rules that GitHub uses to determine the languages used by our project.
 
 ```
 # Ex: add Markdown files in the language list

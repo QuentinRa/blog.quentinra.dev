@@ -17,7 +17,7 @@ $ git init # create .git
 ```
 </div><div>
 
-You'll have to configure GIT before you can use it. The name and the email are used to sign commits. Anyone that can access the commits knows who committed <small>(name+email)</small> and when.
+You'll have to configure GIT before you can use it. The name and the email are used to sign commits. Anyone who can access the commits knows who committed <small>(name+email)</small> and when.
 
 ```shell!
 $ git config --global user.name "Example Example"
@@ -88,7 +88,7 @@ Create a commit with all staged files. Every commit must have a message explaini
 # open "vim" to enter the message
 $ git commit
 # pass the message directly
-# press SHIFT+ENTER for multi-lines messages
+# press SHIFT+ENTER for multi-line messages
 $ git commit -m "message"
 $ git commit -am "xxx"    # automatically add modified files
 $ git commit -m "xxx" --allow-empty  # allow an empty commit
@@ -104,7 +104,7 @@ $ git pull          # current branch
 
 #### git fetch
 
-Same as `git pull`, but do not apply changes.
+Same as `git pull`, but does not merge changes.
 
 ```ps
 $ git fetch        # current branch
@@ -179,7 +179,7 @@ $ git cherry-pick SHA1 --no-commit # pick only files
 
 #### git stash
 
-Before a merge, you cannot have changes locally that were not committed. You can use `git stash` to put them in a `shelf` and `pop` them when you're done.
+Before a merge, you cannot have changes locally that were not committed. You can use `git stash` to put them on a `shelf` and `pop` them when you're done.
 
 ```shell!
 $ git status # some files not committed
@@ -197,7 +197,7 @@ $ git merge xxx             # a commit
 $ git merge "branch_name"   # a branch
 ```
 
-If we both edited a file, it generates a **conflict**. ⚠️ Conflicts need to be handled for the merge to end.
+If we both edited a file, it generated a **conflict**. ⚠️ Conflicts need to be handled for the merge to end.
 
 **Option 1**: Use `git status` to list all problems and solve them. Each file will have conflicts marked like this:
 
@@ -233,7 +233,7 @@ The command `git rebase` is used to edit a repository commit history. There are 
 * 🔫 Delete files that were previously committed
 * ...
 
-You will usually work on a range of commits. The range is starting with your current commit, and ending with the provided commit.
+You will usually work on a range of commits. The range starts with your current commit, and ends with the provided commit.
 
 ```ps
 # Ex: rebase the last 10 commits
@@ -252,7 +252,7 @@ You can replace the instruction "pick" with
 * `reword`: edit commit message
 * `edit`: edit commit
 * `squash`: merge this commit with the previous one
-* `fixup`: squash, and discard commit message
+* `fixup`: squash, and discard the commit message
 * `exec`: run a command
 * `drop`: remove/drop commit
 
@@ -392,7 +392,7 @@ $ git remote set-url origin NEW_URL
 <details class="details-n">
 <summary>Use commits from a previous project</summary>
 
-The goal is to "steal" commits from another local repository. For instance, if you started a project from scratch, but you want to get back the previous project commits.
+The goal is to "steal" commits from another local repository. For instance, if you started a project from scratch, but want to get back the previous project commits.
 
 ```bash!
 # remove everything as you don't want old files
@@ -405,7 +405,7 @@ $ cd ../YourRepository
 $ git remote add other ../AnotherRepository
 $ git fetch other
 $ git merge other/main --allow-unrelated-histories
-# now, your repositories has commits from the previous repository
+# Now, your repository has commits from the previous repository
 ```
 </details>
 </div></div>
@@ -454,7 +454,7 @@ $ git subtree pull --prefix path/to/folder URL commit -squash
 
 Git LFS should be used with caution. It offers a dedicated Git storage solution for large files; however, for free users utilizing SaaS Git servers like GitHub, it does have several limitations.
 
-For example, on GitHub, it permits uploading files larger than 50 MB, yet there are impractical bandwidth quotas and storage constraints.
+For example, GitHub free users have impractical bandwidth quotas and storage constraints.
 
 Some commands you might use:
 
