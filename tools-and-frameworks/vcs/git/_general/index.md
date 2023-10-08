@@ -39,7 +39,7 @@ You can use the [`git` command](../commands/index.md) directly or rely on plugin
 
 #### Remote Git Server 🖥
 
-There are multiple remote Git servers that you can use for free while you may also self-host your Git server.
+There are multiple remote Git servers that you can use for free, while you may also self-host your Git server.
 
 * [GitHub](https://github.com/) ✅: popular Git server by Microsoft
 * [GitLab](https://about.gitlab.com/) ✅: popular alternative to GitHub
@@ -75,7 +75,7 @@ $ cat ~/.ssh/id_rsa.pub
 <copy the content>
 ```
 
-Read your Git Server documentation to find where you can add an SSH key. It's commonly in <kbd>Settings > SSH Keys</kbd>.
+Read your Git Server documentation to find out where you can add an SSH key. It's commonly in <kbd>Settings > SSH Keys</kbd>.
 
 Once added, you'll have to use a new URL to clone repositories. You may edit an existing repository [remote URL](#git-remotes) to use the SSH URL.
 
@@ -84,7 +84,7 @@ Once added, you'll have to use a new URL to clone repositories. You may edit an 
 
 #### GPG commit signature
 
-You can set up GPG keys to sign your commits. Anyone knowing your email can usurp your identity; however, by signing commits, it increases the likeliness that you were the one that created the commit.
+You can set up GPG keys to sign your commits. Anyone knowing your email can usurp your identity; however, signing commits increases the likelihood that you were the one who created the commit.
 
 * [GitHub tutorial](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/generating-a-new-gpg-key)
 
@@ -154,7 +154,7 @@ To update your local project with the remote one, use `git pull`.
 
 To push to the remote server your commits, use `git push`.
 
-👉 All commands with their arguments are [explained here](../commands/index.md#basic-git-commands).
+👉 All commands and their arguments are [explained here](../commands/index.md#basic-git-commands).
 </div></div>
 
 <hr class="sep-both">
@@ -163,7 +163,7 @@ To push to the remote server your commits, use `git push`.
 
 <div class="row row-cols-md-2"><div>
 
-Each commit stores information about its changes regarding the previous commit. You can view commits like a timeline or a thread.
+Each commit stores information about its changes relative to the previous commit. You can view commits like a timeline or a thread.
 
 When we create a [branch](#-branches-), we actually initiate a divergence in the timeline, effectively creating one more timeline.
 
@@ -196,9 +196,9 @@ You can also use predicates such as: `xxx@{two month ago}` or `xxx@{2021-05-05}`
 
 <div class="row row-cols-md-2"><div>
 
-When working on a project, it's common to create a copy of our project and work on it, for instance, to test implementing a feature. By doing that, we ensure we still have a working project <small>("just in case" 😅)</small>.
+When working on a project, it's common to create a copy of the project and work on it, for instance, to test implementing a feature. By doing that, we ensure we still have a working project <small>("just in case" 😅)</small>.
 
-A **branch** 🪵 is like a <small>(shallow)</small> copy of your project. Git provides features to manage them, including support to **merge** them.
+A **branch** 🪵 is like a <small>(shallow)</small> copy of your project. Git provides features to manage them, including support for **merging** them.
 
 The default branch, which is the one you work on by default, is usually called `main` <small>(new term, more neutral)</small> or `master` <small>(previous traditional term)</small>.
 
@@ -213,7 +213,7 @@ To merge branches, use `git merge`.
 
 To rebase before a merge <small>(cleaner history)</small>, use `git rebase`.
 
-👉 Most commands with their arguments are [explained here](../commands/index.md#git-branching).
+👉 Most commands and their arguments are [explained here](../commands/index.md#git-branching).
 </div></div>
 
 <hr class="sep-both">
@@ -222,9 +222,9 @@ To rebase before a merge <small>(cleaner history)</small>, use `git rebase`.
 
 <div class="row row-cols-md-2"><div>
 
-**Remotes** are specifying were and how the code is fetched and send when using operations such as `git push`, `git pull`...
+**Remotes** specify where and how the code is fetched and sent when using operations such as `git push`, `git pull`...
 
-They are automatically set when closing a repository. For [remote git server](#remote-git-server-), the remote is commonly called `origin`.
+They are automatically set when closing a repository. For [remote git servers](#remote-git-server-), the remote is commonly called `origin`.
 
 You can use `remote/myBranch` to use a branch from a specific remote, for instance, `origin/main`.
 </div><div>
@@ -240,7 +240,7 @@ For manipulating remotes, use `git remote` ([usage](../commands/index.md#git-rem
 
 #### 📦 .gitignore
 
-A "git ignore" is a really useful files to avoid tracking big or sensitive files. **Any file inside will be ignored by version control**. You can:
+A "git ignore" is a really useful file to avoid tracking big or sensitive files. **Any file inside will be ignored by version control**. You can:
 
 * Generate one: [gitignore.io](https://www.toptal.com/developers/gitignore).
 * Find a template: [gitignore](https://github.com/github/gitignore)
@@ -255,16 +255,16 @@ data/*    # ignore everything inside folders called 'data'
 /data     # ignore only the folder data in the root directory
 ```
 
-⚠️ It only applies to untracked files. A file that was staged once won't be ignored. You'll have to remote the file and commit first. The file will still be in the history, see `git filter-branch`.
+⚠️ It only applies to untracked files. A file that was staged once won't be ignored. You'll have to remove the file and commit first. The file will still be in the history, see `git filter-branch`.
 </div><div>
 
 #### 🌞 Good commits
 
-Commits must be **atomic**, meaning you shouldn't do more than one implementation per commit <small>(ex: adding a small feature)</small>. The second concern is to properly naming commits:
+Commits must be **atomic**, meaning you shouldn't do more than one implementation per commit <small>(ex: adding a small feature)</small>. The second concern is to properly name commits:
 
 * 📃 Usually, we add a type before any message  <small>(build, docs, feat (=MINOR), fix (=PATCH), style, test, chore, ci, perf, refactor, revert, security, and deps)</small>, followed by `:` giving us: `feat:`/...
-* ✍️Then, we add the commit message, with is a short description
-* 📦  We may then leave a blank line, and add a body describing more the commit, such as adding a list of changes, or labels such as `Co-authored-by`, `Reviewed-by`, `Refs`...
+* ✍️Then, we add the commit message, with a short description
+* 📦  We may then leave a blank line, and add a body further describing the commit, such as adding a list of changes, or labels such as `Co-authored-by`, `Reviewed-by`, `Refs`...
 
 > See [Conventional Commits](https://www.conventionalcommits.org/en/), [
 commitlint](https://commitlint.js.org/#/), and [7 rules](https://cbea.ms/git-commit/#seven-rules).<br>
