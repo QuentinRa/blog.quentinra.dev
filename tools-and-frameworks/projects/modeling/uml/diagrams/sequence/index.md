@@ -4,7 +4,7 @@
 
 There are two categories of sequence diagrams. They serve a different purpose and have a different scope 🗺️.
 
-The first ones are **System Sequence Diagrams** (SSDs) 🪛. They are used during the early stage of the design. They represent the high-level interactions between actors <small>(ex: a person)</small> and systems <small>(ex: a shop)</small>.
+The first ones are **System Sequence Diagrams** (SSDs) 🪛. They are used during the early stages of the design. They represent the high-level interactions between actors <small>(ex: a person)</small> and systems <small>(ex: a shop)</small>.
 
 <div class="text-center">
 
@@ -12,7 +12,7 @@ The first ones are **System Sequence Diagrams** (SSDs) 🪛. They are used durin
 </div>
 </div><div>
 
-On the other hand, a **Detailed Sequence Diagram** (DSD)is a visual representation of [a use case](../use_case/index.md) with all detailed interactions.
+On the other hand, a **Detailed Sequence Diagram** (DSD)is a visual representation of [a use case](../use_case/index.md) with all its detailed interactions.
 
 For instance, "Player engages in combat with an enemy character."
 
@@ -75,7 +75,7 @@ Some messages are **asynchronous** meaning we are not expecting a response meani
 
 Conditions such as `[isXXX]` are called **guards**.
 
-Most combined fragments have a dotted line separating something. You can for most scale the number of items.
+Most combined fragments with guards can have a variable number of blocks. Simply add a dotted line and a guard to the new block.
 
 <br>
 
