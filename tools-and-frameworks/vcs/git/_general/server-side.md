@@ -4,7 +4,7 @@
 
 #### 🏹 Issues
 
-When someone found a bug/problem with the project, they will usually create an issue. [See GitHub tutorial](https://guides.github.com/features/issues/).
+When someone finds a bug/problem with the project, they will usually create an issue. [See GitHub tutorial](https://guides.github.com/features/issues/).
 
 On GitHub/GitLab/???, you can create issue templates.
 
@@ -15,7 +15,7 @@ On GitHub/GitLab/???, you can create issue templates.
 
 #### 🏹 Wiki
 
-The wiki is used by developers to write some primitive documentation that is store "near" your project. You can add images inside, that are stored in your repository <small>(try with/without a leading `/`)</small>.
+The wiki is used by developers to write some primitive documentation that is stored "near" your project. You can add images inside, that are stored in your repository <small>(try with/without a leading `/`)</small>.
 
 You can clone your wiki with `.wiki.git` instead of `.git`!
 
@@ -30,7 +30,7 @@ Usually, repositories do not allow everyone to contribute. Instead, they can for
 
 In most cases, developers establish a formal procedure to merge branches into main. Anyone will have to create a Pull Request asking if they can merge. Then, reviewers will check the code, and allow master/main to be modified. [See GitHub tutorial](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
-On GitHub/???, you can create pull requests templates.
+On GitHub/GitLab/..., you can create pull request templates.
 
 > See [GitHub Issue templates](https://github.com/stevemao/github-issue-templates) (3.5k ⭐)
 
@@ -38,7 +38,7 @@ On GitHub/???, you can create pull requests templates.
 
 #### 🏹 References
 
-I'm still not sure if this is only available on GitHub or not, but every issue/pull request as an Id, for instance, `#1`. You can reference this Id anywhere else, for instance, inside a commit! At least on GitHub, on the issue/Pull request page, we will see the referencing commit SHA1.
+Every issue/pull request has an ID, for instance, `#1`. You can reference this ID anywhere else, for instance, inside a commit! On GitHub, on the issue/pull request page, we will see the referencing commit SHA1.
 
 > On GitHub, you can also reference a user with `@username`.
 
@@ -55,7 +55,7 @@ I'm still not sure if this is only available on GitHub or not, but every issue/p
 
 *Available at least on: GitHub*
 
-If you know someone else email, then you can include them as author of a commit. Note that the one creating the commit (you) will be marked as commiter, so there will always be at least two names, unless you directly edit the GIT configuration 🚓.
+If you know someone else email, then you can include them as the author of a commit. Note that the one creating the commit (you) will be marked as a committer, so there will always be at least two names unless you directly edit the GIT configuration 🚓.
 
 ```bash
 git commit -m "xxx
@@ -84,16 +84,16 @@ There is a nice way of referencing code from the same repository inside an issue
 
 *Available at least on: GitHub*
 
-GitHub allow us to create a repository called after our username or an organization name. The [tutorial is here](https://pages.github.com/). The URL to access it is: `https://username.github.io/`.
+GitHub allows us to create a repository called after our username or an organization name. The [tutorial is here](https://pages.github.com/). The URL to access it is: `https://username.github.io/`.
 
 See [Jekyll](https://jekyllrb.com/docs/deployment/automated/) or [Hugo](https://gohugo.io/hosting-and-deployment/hosting-on-github/) tutorials too.
 </div><div>
 
-#### ✍️CODEOWNERS
+#### ✍️ CODEOWNERS
 
 *Available at least on: GitHub, GitLab*
 
-This file is a dictionary with patterns associated with GitHub/... usernames. Repositories can be configured so that if a file owned by a codeowner is modified, then inside the Pull Request, the CodeOwner will be asked for a review. See [GitHub tutorial](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners).
+This file is a dictionary with patterns associated with GitHub/... usernames. Repositories can be configured so that if a file owned by a code owner is modified, then inside the Pull Request, the CodeOwner will be asked for a review. See [GitHub tutorial](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners).
 
 ```
 *       @QuentinRa
@@ -101,7 +101,7 @@ This file is a dictionary with patterns associated with GitHub/... usernames. Re
 
 <br>
 
-#### ✍️Git attributes
+#### ✍️ Git attributes
 
 *Available at least on: GitHub*
 
@@ -114,11 +114,13 @@ While the file `.gitattribute` is not exclusive to GitHub/..., it is used by Git
 
 <br>
 
-#### ✍️Projects
+#### ✍️ Projects
 
 *Available at least on: GitHub*
 
-This is a feature that includes Agile-Scrum Scrum boards. It's actually a bit more complex and less convenient. You can create **tasks**, but you can't do much with them. Once you convert them to **issues**, you can assign people to them along with tags. They are useful to track/sort **issues** and keep track of **milestones**.
+This is a feature that includes Agile-Scrum Scrum boards. It's actually a bit more complex and less convenient. You can create **tasks**, but you can't do much with them. Once you convert them to **issues**, you can assign people to them along with tags. They are useful for tracking, sorting **issues**, and keeping track of **milestones**.
+
+👉 GitLab has something similar called [Issue boards](https://docs.gitlab.com/ee/user/project/issue_board.html).
 </div></div>
 
 <hr class="sep-both">
