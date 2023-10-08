@@ -11,14 +11,14 @@
 * ...
 </div><div>
 
-**Continuous development** (CD) 🚚 further extend it with the continuous deployment of artifacts. Common tasks are:
+**Continuous development** (CD) 🚚 further extends it with the continuous deployment of artifacts. Common tasks are:
 
 * **Monitoring** 📝: generate and alert about metrics such as tests failed, code analysis failed, code quality not met...
 * **Documentation** 📚: deploy generated documentation website
 * **Release** 🌍: deploy a release build
 * ...
 
-All tasks may be executed on-demand or on specific events.
+All tasks may be executed on-demand or at specific events.
 </div></div>
 
 <hr class="sep-both">
@@ -34,11 +34,11 @@ You can configure your workflow to test your code in different environments <sma
 
 #### Isolation
 
-Continuous workflow can work in isolated reproducible environment, hence ensuring that the code do work on other machines.
+Continuous workflow can work in isolated and reproducible environments, ensuring that the code does work on other machines.
 
 #### Save time
 
-It may take some time to implement complex CI/CD workflows, but once implemented, it reduces the time taken to manually perform tasks that could be automated.
+It may take some time to implement complex CI/CD workflows, but once implemented, they reduce the time taken to manually perform tasks that could be automated.
 </div></div>
 
 <hr class="sep-both">
@@ -47,7 +47,7 @@ It may take some time to implement complex CI/CD workflows, but once implemented
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-There are many tools that can be integrated during CI/CD workflows that provides code quality, security reviews, dependencies monitoring... Most are paid and free for open-source projects.
+There are many tools that can be integrated during CI/CD workflows that provide code quality, security reviews, dependency monitoring... Most are paid and free for open-source projects.
 
 **Code quality, coverage, and reviews**
 
