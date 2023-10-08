@@ -43,7 +43,7 @@ Each member can have a [modifier](/programming-languages/_paradigm/oo.md#access-
 
 Class members <small>(a.k.a. `static` members)</small> are attributes and methods that are shared across every instance.
 
-They are commonly used for constants attributes, utilities...
+They are commonly used for constant attributes, utilities...
 
 In UML, such members are **underlined** 🌵.
 </div><div>
@@ -68,13 +68,13 @@ Natively, there are not many UML types so most are adding their own types based 
 
 #### Classes
 
-Classes are made both of attributes and methods separated by a line. The name of the class must always start with an uppercase.
+Classes are made up of both attributes and methods, separated by a line. The name of the class must always start with an uppercase.
 
 #### Attributes
 
 Each attribute must have at least a name and a type. It may have a modifier and a default value.
 
-You can have OCL constraints such as `{final}` right-after the attribute.
+You can have OCL constraints such as `{final}` right after the attribute.
 
 <div class="text-center">
 
@@ -83,7 +83,7 @@ You can have OCL constraints such as `{final}` right-after the attribute.
 
 * Derived attributes
 
-Derived attributes are attributes whose values is calculated using other attributes. They are usually created for convenience.
+Derived attributes are attributes whose values are calculated using other attributes. They are usually created for convenience.
 
 <div class="text-center">
 
@@ -128,11 +128,11 @@ Associations represent which classes are linked to which other classes.
 ![association_2](_uml/association_2.svg)
 </div>
 
-Associations are not necessarily representing attributes while most do.
+Associations do not necessarily represent attributes while most do.
 
 * There could be multiple associations between two classes
-* You can add arrows if the association is unidirectional. By default, there is no associations meaning it's bidirectional.
-* An association from the class to itself is called self association
+* You can add arrows if the association is unidirectional. By default, there is no orientation meaning it's bidirectional.
+* An association from the class to itself is called self-association
 
 <br>
 
@@ -166,7 +166,7 @@ For instance, we could replace <kbd>a..b</kbd> with <kbd>0..1</kbd> <small>(mean
 
 #### Association classes
 
-Association classes are used to represent a relationship with additional attributes. The name of the class is the same of the relationship.
+Association classes are used to represent relationships with additional attributes. The name of the class is the same as the relationship.
 
 ![assos_class](_uml/assos_class.svg)
 
@@ -176,9 +176,9 @@ For instance, `Class1` could be a Student, `Class2` a course, and we could have 
 
 #### Constraints on associations
 
-It's possible to add constraints on associations, such as two associations being mutually exclusive <small>(e.g. can't have both)</small>.
+It's possible to add constraints to associations, such as two associations being mutually exclusive <small>(e.g. can't have both)</small>.
 
-Link two associations or more with a dotted line and add constraints on it that will be applied on all linked associations.
+Link two associations or more with a dotted line and add constraints on it that will be applied to all linked associations.
 
 * **Inclusion** `{IN}/{SUBSET}/{I}`: either all associations exist or none
 * **Exclusion** `{X}`: only one may exist
@@ -199,7 +199,7 @@ For the inclusion constraint, we use an arrow instead of a dotted line. If the a
 
 #### Generalization
 
-Generalization is quite used to factorize attributes and methods in a "parent" class. Given a class B generalizing A, the class B will have:
+A generalization is used to factorize attributes and methods in a "parent" class. Given a class B generalizing A, the class B will have:
 
 * `public` members in A
 * `protected` members in A
@@ -217,18 +217,18 @@ Generalization is quite used to factorize attributes and methods in a "parent" c
 
 #### Abstract classes
 
-An abstract class is a normal class aside from the fact that we are allowed to have `<<abstract>>` methods. It means that such class won't write the code for the method and declaring that its subclass will.
+An abstract class is a normal class aside from the fact that we are allowed to have `<<abstract>>` methods. It means that such a class won't write the code for the method and declare that its subclass will.
 
 <div class="text-center">
 
 ![abstract](_uml/abstract.svg)
 </div>
 
-💡 Classes generalizing an abstract class are abstract too unless they implement the abstract methods.
+💡 Classes generalizing an abstract class are abstract too unless they implement abstract methods.
 
 💡 Use italic and/or `<<abstract>>` to mark abstract methods/classes.
 
-🛣️ It's quite used for generic code. We would create a method: `eat(food: Food)` with `Food` an abstract class. Any instance of a class implementing food can be used with `eat`.
+🛣️ It's quite used for generic code. We would create a method: `eat(food: Food)` with `Food` being an abstract class. Any instance of a class implementing food can be used with `eat`.
 </div><div>
 
 #### Interfaces
