@@ -4,7 +4,7 @@
 
 Subversion (SVN) is a centralized [version control system](../../_general/index.md). Developers `commit` their changes to a central repository that keeps track of every change. They `checkout` the repository to get a copy of the project.
 
-➡️ [TortoiseSVN](https://tortoisesvn.net/) is a commonly found GUI for SVN.
+➡️ [TortoiseSVN](https://tortoisesvn.net/) is a commonly used GUI for SVN.
 </div><div>
 
 A simple usage:
