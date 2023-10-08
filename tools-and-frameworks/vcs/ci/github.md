@@ -2,12 +2,12 @@
 
 <div class="row row-cols-md-2"><div>
 
-GitHub Actions were introduced in 2018 to design [CI/CD](index.md) workflow for GitHub projects. Actions are small reusable code that simplifies the process of creating a CI/CD workflow. 
+GitHub Actions were introduced in 2018 to design [CI/CD](index.md) workflows for GitHub projects. Actions are relatively short and reusable pieces of code that simplify the process of creating a CI/CD workflow. 
 
-* [GitHub Actions Marketplace](https://github.com/marketplace) (19k actions)
+* [GitHub Actions Marketplace](https://github.com/marketplace) (19k+ actions)
 * [GitHub Actions Documentation](https://docs.github.com/actions)
 * [GitHub Actions Quickstart](https://docs.github.com/en/actions/quickstart)
-* [GitHub Awesome Actions](https://github.com/sdras/awesome-actions) (21.6k ⭐)
+* [GitHub Awesome Actions](https://github.com/sdras/awesome-actions) (22.7k ⭐)
 * [GitHub Workflow Syntax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions) (⛪)
 </div><div>
 
@@ -17,7 +17,7 @@ GitHub Actions were introduced in 2018 to design [CI/CD](index.md) workflow for 
 
 * **Jobs** 🗃️: a job is an ordered set of steps to achieve a goal. They can be run in parallel or sequentially.
 
-* **Workflow** 🚀: an automated process made of jobs. For instance, we could have workflow building and testing the project.
+* **Workflow** 🚀: an automated process made of jobs. For instance, we could have a workflow for building and testing the project.
 
 The workflow status is visible next to each commit: ![pipeline success](_images/pipeline_success_2.png) <small>(passed)</small>.
 </div></div>
@@ -28,7 +28,7 @@ The workflow status is visible next to each commit: ![pipeline success](_images/
 
 ## Basic syntax
 
-Workflows are defined in [YAML](/programming-languages/others/data/yaml.md) files stored in `.github/workflows/`. Their name is based on the YAML file name, e.g., `Build` for `build.yml`.
+Workflows are defined in [YAML](/programming-languages/others/data/yaml.md) files stored in `.github/workflows/`. Their names are based on the YAML file name <small>(e.g., `Build` for `build.yml`)</small>.
 
 A basic Action executing `job_name` on every `push`:
 
@@ -99,7 +99,7 @@ on:
 
 #### Strategy
 
-The [`strategy` keyword](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstrategy) let us define variables. The job below will be executed `4` times as we have `4` values <small>(cartesian product of all variables)</small>.
+The [`strategy` keyword](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstrategy) lets us define variables. The job below will be executed `4` times as we have `4` values <small>(cartesian product of all variables)</small>.
 
 ```yaml!
     strategy:
@@ -170,7 +170,7 @@ The [`strategy` keyword](https://docs.github.com/en/actions/using-workflows/work
 
 #### Static code analysis
 
-[github/codeql-action](https://github.com/github/codeql-action) for CodeQL static code analysis.
+[GitHub/codeql-action](https://github.com/github/codeql-action) for CodeQL static code analysis.
 
 #### Code quality analysis
 
@@ -183,7 +183,7 @@ The [`strategy` keyword](https://docs.github.com/en/actions/using-workflows/work
 
 <div class="row row-cols-md-2"><div>
 
-Dependabot is a "bot" checking your dependencies. If it detects that we can upgrade a dependency, it opens a pull-request with the suggested upgrade. Here is the [official tutorial](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuring-dependabot-version-updates#enabling-dependabot-version-updates) 🚀.
+Dependabot is a "bot" that checks your dependencies. If it detects that we can upgrade a dependency, it opens a pull-request with the suggested upgrade. Here is the [official tutorial](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuring-dependabot-version-updates#enabling-dependabot-version-updates) 🚀.
 
 It can also detect vulnerabilities in dependencies and notify developers to upgrade their dependencies.
 
