@@ -13,7 +13,7 @@ For instance, in a game menu, we may have some states such as:
 * Select Character
 * QuitGame
 
-The transitions are the option we select to navigate between them.
+The transitions are the options we select to navigate between them.
 </div><div>
 
 ![Activity Diagram Example](_uml/example.svg)
@@ -25,7 +25,7 @@ The transitions are the option we select to navigate between them.
 
 <div class="row row-cols-md-2"><div>
 
-A state is literally a state of the program. There are 3 kinds of states:
+A state is essentially one of the program's states. There are 3 kinds:
 
 * ⚽ Initial States
 * 🧑 Intermediary States
@@ -59,7 +59,7 @@ Each state may contain some methods:
 
 <div class="row row-cols-md-2"><div>
 
-Transitions are the arrows linking a state with another. On each, you may add one of these:
+Transitions are the arrows linking one state with another. On each, you may add one of these:
 
 * A trigger/event that we are waiting for
 
@@ -76,7 +76,7 @@ Transitions are the arrows linking a state with another. On each, you may add on
 
 #### Branching
 
-Both syntaxes are used to represent a branching. You can have as many branches and conditions as you want.
+Both syntaxes are used to represent branching. You can have as many branches and conditions as you want.
 
 ![UML If Syntax 1](_uml/if.svg)
 ![UML If Syntax 2](_uml/if_001.svg)
@@ -87,7 +87,7 @@ The most fitting condition is the one that will be used. You may add a note to e
 
 #### Synchronization bar
 
-The synchronization bar is used when we want to do parallelism. The first indicates that the states below are executed in parallel (`fork`) and the second one indicates that we wait for all forks to terminate (`join`).
+The synchronization bar is used when we want to do parallelism. The first indicates that the states below are executed in parallel (`fork`) and the second indicates that we wait for all forks to terminate (`join`).
 
 ![Fork](_uml/fork.svg)
 </div></div>
