@@ -21,7 +21,7 @@ For instance, "Player engages in combat with an enemy character."
 ![Detailed Sequence Diagram](_uml/dsd.svg)
 </div>
 
-💡 When we refer to a "Sequence Diagram", we usually refer to a Detailed Sequence Diagram which may 
+💡 When we refer to a "Sequence Diagram", we usually refer to a Detailed Sequence Diagram.
 </div></div>
 
 <hr class="sep-both">
@@ -30,7 +30,7 @@ For instance, "Player engages in combat with an enemy character."
 
 <div class="row row-cols-md-2"><div>
 
-Sequence Diagrams focus on the chronological order interactions among system or actors. They illustrate the **lifetime** of each entity ⏳.
+Sequence Diagrams focus on the chronological order interactions among systems or actors. They illustrate the **lifetime** of all entities ⏳.
 
 The diagram is read from the top to the bottom, representing time progressing from top to bottom ⌛.
 
@@ -51,9 +51,9 @@ This is determined by the level of abstraction needed. Below, we have an object 
 The vertical dotted line is what we call a **lifetime**.
 </div><div>
 
-The interactions between participants are called **messages** 📮. You can view as the same as `function` calls.
+The interactions between participants are called **messages** 📮. You can view it as the same as `function` calls.
 
-The solid line and arrowhead represents a message <small>(ex: a function call)</small>. The rectangle is an **activation bar**. It means tha participant is active <small>(ex: executing our function)</small>. The dashed arrow is the **reply** <small>(ex: return xxx)</small>.
+The solid line and arrowhead represents a message <small>(ex: a function call)</small>. The rectangle is an **activation bar**. It means the participant is active <small>(ex: executing our function)</small>. The dashed arrow is the **reply** <small>(ex: return xxx)</small>.
 
 <div class="text-center">
 
@@ -93,7 +93,7 @@ Both are used for branching. `ALT` is for alternative behavior <small>(execute o
 
 #### Combined Fragment LOOP 
 
-You can repeat some interaction multiple times.
+You can repeat some interactions multiple times.
 
 <div class="text-center">
 
@@ -110,7 +110,7 @@ First, `PAR` is used to run instructions in parallel. `SEQ` or `STRICT` are used
 ![PAR Combined Fragment](_uml/fragment_par.svg)
 </div>
 
-🐫 I learnt that `CRITICAL` means that the instructions mustn't fail but documentation say it doesn't mean that <small>(it means an atomic instruction)</small>.
+🐫 I learned that `CRITICAL` means that the instructions mustn't fail but documentation says it doesn't mean that <small>(it means an atomic instruction)</small>.
 
 <br>
 
