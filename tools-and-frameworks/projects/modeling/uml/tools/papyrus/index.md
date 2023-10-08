@@ -62,7 +62,7 @@ If you use a perspective at least once, a shortcut will be available right next 
 1. **Project explorer** 📂: Double-click on a model to open it
     * Export your diagrams <small>(right-click on model -> export)</small>
     * Open your project in the file explorer <small>(right-click on the folder "example" and "show in")</small>
-2. **Model explorer** 🍀: Once you open a model, add diagrams into it from this menu: Right-click on "example" > "New diagram".
+2. **Model explorer** 🍀: Once you open a model, add diagrams to it from this menu: Right-click on "example" > "New diagram".
 3. **Model editor** 🎥: edit your diagram here. You can move things from the palette (4) to here.
 4. **Palette** 🎨: every element that you can put inside the kind of diagram you opened.
 5. **Property view** 🔐: Edit the properties of what you selected
@@ -129,7 +129,7 @@ From the palette, you can double-click on something to create a new element, the
 
 #### Align items
 
-It's kinda useless, but to create nicer diagrams, you may use "align" to cleanly arrange items in a diagram.
+It's kind of useless, but to create nicer diagrams, you may use "align" to cleanly arrange items in a diagram.
 
 <div class="text-center">
 
@@ -154,9 +154,9 @@ When selecting an association, directed associations are created by default. Aft
 ![associations](_images/associations.png)
 </div>
 
-After creating an association, in the **Property view** you can add a direction, set the multiplicity, transform it to a composition or aggregation, etc. rather easily.
+After creating an association, in the **Property view** you can add a direction, set the multiplicity, transform it into a composition or aggregation, etc. rather easily.
 
-Near the corners of a class, wait a bit while your mouse is on a class and a shortcut to create associations will pop:
+Wait a bit while your mouse is on top of a class, and a shortcut to create associations will pop up:
 
 <div class="text-center">
 
@@ -206,7 +206,7 @@ In Java, you may use classes such as `java.util.Arrays` in your diagrams. ⚠️
         * Add "Papyrus Java Profile"
 * Add a new package (new child) "ExternalTypes". Click on it, then Profile, then Applied Stereotypes, and add NoCodeGen.
 * Create a stereotype <small>(Profile > +)</small> "External".
-* Create a new class diagram "Dependencies".
+* Create a new class diagram called "Dependencies".
 </details>
 
 <details class="details-n">
@@ -373,7 +373,7 @@ return false;
 <details class="details-n">
 <summary>Default implementation in the generator</summary>
 
-You must change the return type so that it is always a class <small>(ex `float` is now `Float`)</small>. The default behavior will be **return null**, but only if this is not a constructor nor a method returning void.
+You must change the return type so that it is always a class <small>(ex `float` is now `Float`)</small>. The default behavior will be to **return null**, but only if this is not a constructor nor a method returning void.
 
 In **JavaOperations.xtend**, in **javaReturnSpec**
 
@@ -405,7 +405,7 @@ import java.util.*;
 [/template]
 ```
 
-The problem with this is that it doesn't work for your classes are they are not within a package.
+The problem with this is that it doesn't work for your classes as they are not within a package.
 
 In **fileUtils**, edit these two functions with
 
