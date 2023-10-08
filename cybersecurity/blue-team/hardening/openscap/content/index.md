@@ -4,7 +4,7 @@
 
 [ComplianceAsCode/content](https://github.com/ComplianceAsCode/content) <small>(1.9k ⭐)</small> is a tool to create a product-specific XML <small>(ssg-debian11-ds.xml)</small> used by **OpenSCAP** 🔎.
 
-There are multiple reasons to get involved with the Compliance As Code project. Most of the time, we may want to add support for a new product or for a new guide. Assuming that what you want to do, the [Compliance As Code Docker](https://github.com/ComplianceNinjas/compliance-as-code-docker) project might help.
+There are multiple reasons to get involved with the Compliance As Code project. Most of the time, we may want to add support for a new product or for a new guide. Assuming that is what you want to do, the [Compliance As Code Docker](https://github.com/ComplianceNinjas/compliance-as-code-docker) project might help.
 
 To get started with it ✨:
 
@@ -18,7 +18,7 @@ docker$ ./build_product debian11 -j $(nproc)
 ```
 </div><div>
 
-Once you did successfully build an existing product, you might generate your own product using the template.
+Once you have successfully built an existing product, you might generate your own product using the template.
 
 ```ps
 $ cd loader/.template
@@ -43,11 +43,11 @@ We merge your files in `loader/` into `content/`, then generate/update rules, an
 
 Note that the project is *somewhat* complex. ⚠️
 
-A **control** 🔎 is a recommendation of an hardening guide, such as [Ensure /tmp is a separate partition](https://www.tenable.com/audits/items/CIS_Red_Hat_EL9_v1.0.0_L1_Server.audit:cd31711d0572f143d773d53f0c976db1). One control may contain multiple tasks to perform.
+A **control** 🔎 is a recommendation of a hardening guide, such as [Ensure /tmp is a separate partition](https://www.tenable.com/audits/items/CIS_Red_Hat_EL9_v1.0.0_L1_Server.audit:cd31711d0572f143d773d53f0c976db1). One control may contain multiple tasks to perform.
 
 A **control file** <small>(`content/controls/`)</small> 📝 correspond to a compliance guide. It contains some of the compliance metadata along with the list of controls that the guide contains.
 
-A **rule** <small>(`linux_os/guide/`)</small> 🔑 correspond to a reusable task in a control. For instance, `partition_for_tmp` that checks if `/tmp` is on a separate partition. A rule contains metadata and link to a template.
+A **rule** <small>(`linux_os/guide/`)</small> 🔑 corresponds to a reusable task in a control. For instance, `partition_for_tmp` checks if `/tmp` is on a separate partition. A rule contains metadata and links to a template.
 
 A **product** <small>(`content/products/<product>/`)</small> 🧸 is a target of a compliance guide. It's mostly an operating system such as `fedora` <small>(=all versions)</small> or `debian11`. It links to a list of profiles.
 </div><div>
@@ -72,12 +72,12 @@ An **applicability** check <small>(`shared/applicability/`)</small> is used to c
 After generating a new product using `init.sh`, you will have:
 
 * A standard profile `standard.profile`
-* A basic `product.yml` that describe your product
+* A basic `product.yml` that describes your product
 * A basic oval check `installed_OS_is_xxx.xml` testing if the tested product is matching the expected product <small>(ex: are we on debian11?)</small>
 
 It automates the process from the [documentation](https://complianceascode.readthedocs.io/en/latest/manual/developer/03_creating_content.html#creating-a-new-product).
 
-⚠️ If most/all tests are marked as `notapplicable`, it means that the tested OS do not pass the check in `installed_OS_is_xxx.xml`.
+⚠️ If all checks are marked as `notapplicable`, it means that the tested OS does not pass the check defined in `installed_OS_is_xxx.xml`.
 </div><div>
 </div></div>
 
@@ -87,9 +87,9 @@ It automates the process from the [documentation](https://complianceascode.readt
 
 <div class="row row-cols-md-2"><div>
 
-The project uses [jinja2](/programming-languages/web/others/templating/jinja2/index.md) allowing us to use macros and variables inside many of the project. 
+The project uses [jinja2](/programming-languages/web/others/templating/jinja2/index.md) allowing us to use macros and variables inside many files of the project. 
 
-Note that unlike usual `jinja` templates, we use one more level of accolades, so `{% %}` is now `{{% %}}` <small>(ansible-related reason)</small>.
+Note that, unlike usual `jinja` templates, we use one more level of accolades, so `{% %}` is now `{{% %}}` <small>(ansible-related reason)</small>.
 
 Some examples of conditions you might use:
 
@@ -97,7 +97,7 @@ Some examples of conditions you might use:
 * `"ubuntu" not in product`: false if product contains `ubuntu`
 * `product in ["debian10", "debian11"]`: true if product in array
 
-Another example: `{% if negate %}negate="true" {% endif %}` which optionally show an OVAL attribute based on a variable `negate`.
+Another example: `{% if negate %}negate="true" {% endif %}` which optionally shows an OVAL attribute based on a variable `negate`.
 </div><div>
 
 OVAL Macros can be declared in `shared/macros/10-oval.jinja`, or directly inside any OVAL file.
@@ -121,7 +121,7 @@ Assuming the macro is within scope <small>(in the general macro file or in the s
 
 <div class="row row-cols-md-2"><div>
 
-A rule links every information related to a task of a hardening control. It's described in a `rule.yml`. It defines stuff like:
+A rule links every piece of information related to a task of one hardening control. It's described in a `rule.yml`. It defines stuff like:
 
 * 🌱 Description <small>(ex: explain what's this rule about)</small>
 * 🔎 Rule check <small>(ex: to test if the rule was applied)</small>
@@ -130,7 +130,7 @@ A rule links every information related to a task of a hardening control. It's de
 * 🔒 Product check <small>(ex: can this rule be used with this product?)</small>
 * ...
 
-A rule is stored in a folder. The folder name is the **rule id**. Rules are stored in groups, e.g. its parent folders, which all have a `group.yml`. You can place a rule in whatever folder you see fit.
+A rule is stored in a folder. The folder name is the **rule id**. Rules are stored in groups, e.g. parent folders, which all have a `group.yml`. You can place a rule in whatever folder you see fit.
 
 <details class="details-n">
 <summary>Common rule template</summary>
@@ -178,7 +178,7 @@ You can use `description`, and `rationale` to provide information. They support 
 
 By default, all rules are compiled for all products. It's problematic as some rules may not be applicable to our product, leading to compilation problems.
 
-Inside each rule, there may be a `prodtype`. If there is one,  then this rule can **only** be used by products that were added to it.
+Inside each rule, there may be a `prodtype`. If there is one, then this rule can **only** be used <small>(and compiled)</small> by products that were added to it.
 
 You can add your product to each rule `prodtype` manually 🤚 <small>(for the rules you need that have a prodtype)</small>, or use a script 🤖.
 
@@ -192,13 +192,13 @@ You can add your product to each rule `prodtype` manually 🤚 <small>(for the r
 
 #### Find rules
 
-To find rules, you can look at other profiles or controls files, or you can use `find linux_os -name *ftp* -type d 2> /dev/null` <small>(ex: for ftp rules)</small>.
+To find rules, you can look at other profiles or control files, or you can use `find linux_os -name *ftp* -type d 2> /dev/null` <small>(ex: for ftp rules)</small>.
 
 <br>
 
 #### platform
 
-By default, if a product uses a rule, the rule is considered to be applicable on it. But that's not always the case. We may require a package to be installed, a specific environment...
+By default, if a product uses a rule, the rule is considered to be applicable to it. But that's not always the case. We may require a package to be installed, in a specific environment...
 
 ```yml!
 platform: machine and package[ntp]
@@ -262,7 +262,7 @@ selections:
 
 <div class="row row-cols-md-2"><div>
 
-[OVAL](https://ovalproject.github.io/getting-started/tutorial/) is XML-based format used by many files of the project.
+[OVAL](https://ovalproject.github.io/getting-started/tutorial/) is an XML-based format used by many files of the project.
 Basic concepts are [explained here](https://ovalproject.github.io/getting-started/tutorial/).
 
 ```xml!
@@ -277,7 +277,7 @@ Basic concepts are [explained here](https://ovalproject.github.io/getting-starte
 </def-group>
 ```
 
-The `class`, `id`, `version`, and `test_ref` values are specific to what kind of file you're creating. Others elements are explained here.
+The `class`, `id`, `version`, and `test_ref` values are specific to what kind of file you're creating. Other elements are explained here.
 
 `criteria` define what to do to **pass the check**. You can ask for all checks to be true <small>(AND)</small>, or only at least one <small>(OR)</small>.
 
@@ -287,14 +287,14 @@ The `class`, `id`, `version`, and `test_ref` values are specific to what kind of
 ```
 </div><div>
 
-A criteria may have children of type `criteria`, or `criterion`. For the later, they are referencing the test that will be done.
+A criteria may have children of type `criteria`, or `criterion`. For the latter, they are referencing the test that will be done.
 
 ```xml!
 <criterion test_ref="..." />
 <criterion test_ref="..." negate="true" />
 ```
 
-💡 Criterion might not be the only tag that support `negate`.
+💡 Criterion might not be the only tag that supports `negate`.
 
 Tests are tags ending with `_test`. The usually have one or two children of type `_object`, and `_state` respectfully.
 
@@ -358,7 +358,7 @@ There are many [existing templates](https://complianceascode.readthedocs.io/en/l
 
 A common tag to test file content.
 
-```xml
+```xml!
 <ind:textfilecontent54_test id="xxx" check="all" comment="">
     <ind:object object_ref="obj_xxx" />
 </ind:textfilecontent54_test>
