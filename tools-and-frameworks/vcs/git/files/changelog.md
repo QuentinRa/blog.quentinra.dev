@@ -4,8 +4,8 @@
 
 Keep track of every change. See [keepachangelog.com](https://keepachangelog.com/en/).
 
-* 🗓️  From the latest changes to the oldest ones
-* ✍️For each version
+* 🗓️ From the latest changes to the oldest ones
+* ✍️ For each version
     * Give the release date (YYYY-MM-DD)
     * Tell what was added/changed/deprecated/removed/fixed
     * You may link issues, pull requests, and commits
