@@ -4,10 +4,12 @@
 
 Markdown is the language used in `.md` files. It's mostly used to write simple documents such as
 
-* 📝 Git-related documents <small>(README.md, CONTRIBUTING.md...)</small>
-* 🏫 Documentation <small>(GIT wikis)</small>
-* 🗃️ Websites <small>(GitHub Pages...)</small>
-* 🎉 Articles, Presentations...
+* 📝 Git-related documents <small>(ex: README.md, CONTRIBUTING.md...)</small>
+* 🏫 Documentation <small>(ex: GIT wikis, [see documentation tools](/tools-and-frameworks/others/documentation/index.md)...)</small>
+* 🗃️ Websites <small>(ex: GitHub Pages, [see static sites generators](/programming-languages/web/others/ssg/index.md)...)</small>
+* 🎉 Articles
+* 🖼️ Presentations <small>(ex: slick)</small>
+* ...
 </div><div>
 
 Note that you can use HTML inside Markdown files 💫.
@@ -403,6 +405,4 @@ Stuff that I found, but never read/used yet.
 * [markdown-here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [commonmark](https://github.com/commonmark/commonmark-java) (Markdown to Java)
 </div><div>
-
-* [slick](https://kenwheeler.github.io/slick/) (slides)
 </div></div>

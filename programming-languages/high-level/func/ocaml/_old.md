@@ -135,7 +135,7 @@ Also, in OCaml, you can have a comment inside another comment. What I mean, is t
 **French course**
 
 * [ENSIIE Teachings](https://www.ensiie.fr/)
-* [Univ. Lille1 teachings](https://www.fil.univ-lille1.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-1.pdf) (courses 1 to 4, change the number in the URL)
+* [Univ. Lille1 teachings](https://www.fil.univ-lille.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-1.pdf) (courses 1 to 4, change the number in the URL)
 * [Wikipedia](https://en.wikipedia.org/wiki/Functional_programming#Concepts)
 * [GeeksForGeeks](https://www.geeksforgeeks.org/functional-programming-paradigm/)
 

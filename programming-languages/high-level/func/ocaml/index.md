@@ -52,10 +52,8 @@ $ ocaml
 
 OCaml files have the extension `.ml` or `.mli` <small>(interface~=headers)</small>.
 
-```shell!
-$ cat hello_world.ml
-```
 ```ocaml
+(* example filename: hello_world.ml *)
 let _ = Format.printf "Hello, World!@."
 ```
 
@@ -66,6 +64,8 @@ Hello, World!
 ```
 
 ⚠️ All of ocaml statements must start with a keyword such as `let`. Other statements are ignored <small>(unlike in the REPL where they are executed)</small>.
+
+➡️ See also: [Batch compilation (ocamlc)](https://v2.ocaml.org/manual/comp.html). Common options: `-o`, `-c`, `-I`.
 </div></div>
 
 <hr class="sep-both">
