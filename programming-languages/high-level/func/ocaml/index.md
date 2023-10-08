@@ -26,6 +26,50 @@ $ opam install some_package    # see also: update, upgrade
 
 <hr class="sep-both">
 
+## Getting Started
+
+<div class="row row-cols-md-2"><div>
+
+#### OCaml REPL
+
+OCaml Top-Level, a.k.a. REPL, is a console in which we write expression, and they are evaluated on the fly 🚀.
+
+```shell!
+$ ocaml
+        OCaml version 4.14.1
+
+# "Hello, World";;
+- : string = "Hello, World"
+# 
+```
+
+⚠️ Every expression must end with `;;` unlike in OCaml files.
+
+➡️ There is no need to use printing utilities.
+</div><div>
+
+#### OCaml Programs
+
+OCaml files have the extension `.ml` or `.mli` <small>(interface~=headers)</small>.
+
+```shell!
+$ cat hello_world.ml
+```
+```ocaml
+let _ = Format.printf "Hello, World!@."
+```
+
+```shell!
+$ ocamlc hello_world.ml  # generate a.out
+$ ./a.out
+Hello, World!
+```
+
+⚠️ All of ocaml statements must start with a keyword such as `let`. Other statements are ignored <small>(unlike in the REPL where they are executed)</small>.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

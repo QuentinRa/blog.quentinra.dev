@@ -7,7 +7,7 @@ A [here document](https://en.wikipedia.org/wiki/Here_document), which is commonl
 It usually starts with `<<` followed by some `DELIMITER`. The string is closed when we reach the next occurrence of `DELIMITER`.
 </div><div>
 
-**Bash example**
+**Bash example** 🔥
 
 ```bash
 base64 -d <<EOF
@@ -15,7 +15,7 @@ YWFhYQ==
 EOF
 ```
 
-**PHP example**
+**PHP example** 🔥
 
 ```php
 $some_variable = <<<EOF

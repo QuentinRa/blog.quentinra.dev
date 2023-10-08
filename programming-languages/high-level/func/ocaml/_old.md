@@ -18,29 +18,6 @@ ocamlfind ocamlc -o test -package extlib,oUnit -linkpkg -g avl.ml test.ml
 
 <hr class="sr">
 
-## OCaml REPL
-
-The OCaml Top-Level, also called the **REPL**, is something like you got in Python or Java (recently), allowing you to write commands and see the result. You can start it using the command **`ocaml`**. Every expression must end with `;;` (unlike in a `.ml`).
-
-One thing that make the REPL useful, is that every expression is evaluated and its value is printed to the console. In other words, you won't have to call "printf", and you won't have to worry that an expression is not called (as explained below).
-
-<hr class="sl">
-
-## OCaml and .ml files
-
-You will usually write ocaml code in a `.ml` file, such as `main.ml`. Then, you will have to compile it using the command `ocamlc` which is working like `gcc` (in C programming).
-
-* `ocamlc file.ml`: create a `a.out`
-* `./a.out`: execute the code in "file.ml"
-
-Here is a simple ocaml file (ex: file.ml)
-
-```ocaml
-let _ = Format.printf "Hello, World!@."
-```
-
-<hr class="sr">
-
 ## Functional languages
 
 You must declare a variable with `let`. **You can't modify a variable, you will have to create a new one** (concept of **immutability** ✨).
