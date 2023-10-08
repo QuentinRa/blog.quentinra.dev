@@ -2,9 +2,9 @@
 
 <div class="row row-cols-md-2"><div>
 
-[Jenkins](https://www.jenkins.io/) <small>(21.2k ⭐)</small> is an open-source automation server. It means that it's a server hosting code, but it's a server that can be integrated to a GIT server <small>(GitLab, GitHub...)</small> to process [CI/CD](index.md) workflows.
+[Jenkins](https://www.jenkins.io/) <small>(21.2k ⭐)</small> is an open-source automation server. It means that it's not a server hosting code, but it can be connected to a GIT server <small>(GitLab, GitHub...)</small> to process [CI/CD](index.md) workflows.
 
-The biggest strength of Jenkins is that is has a great number of [plugins](https://plugins.jenkins.io/), such as plugins to visualize CI results <small>(tests, coverage...)</small>.
+The biggest strength of Jenkins is that it has a great number of [plugins](https://plugins.jenkins.io/), such as plugins to visualize CI results <small>(tests, coverage...)</small>.
 </div><div>
 
 ...
@@ -21,6 +21,10 @@ Stuff that I found, but never read/used yet.
 * master/slaves (a.k.a. workers)
 * freestyle projects (web interface) vs pipeline jobs (as code)
 * Jenkinsfile (groovy)
+</div><div>
+
+<details class="details-n">
+<summary>Basic file</summary>
 
 ```java
 pipeline {
@@ -36,17 +40,20 @@ pipeline {
     }
 }
 ```
+</details>
 
-* Options
+<details class="details-n">
+<summary>Add options</summary>
 
 ```java
     options {
         buildDiscarder(logRotator(numToKeepStr: '10', daysToKeepStr: '7'))
     }
 ```
-</div><div>
+</details>
 
-* Poll SCM or webhooks to trigger a pipeline
+<details class="details-n">
+<summary>Poll SCM or webhooks to trigger a pipeline</summary>
 
 ```java
     triggers {
@@ -54,8 +61,10 @@ pipeline {
         webhook('')
     }
 ```
+</details>
 
-* Artifacts are the output of the build
+<details class="details-n">
+<summary>Artifacts are the output of the build</summary>
 
 ```java
     post {
@@ -67,8 +76,10 @@ pipeline {
         }
     }
 ```
+</details>
 
-Bonus:
+<details class="details-n">
+<summary>Bonus</summary>
 
 ```java
 stage('xxx') {
@@ -84,4 +95,5 @@ recordIssues(
     tools: [clangTidy(pattern: 'clang-tidy-report.txt')]
 )
 ```
+</details>
 </div></div>

@@ -13,8 +13,7 @@ List of courses that have note which were not added yet.
 
 **Tools and Frameworks**
 
-* (review/typos) VCS, modeling
-* Pandora
+* **Pandora**
 * JetBrains plugin development
 * Project > Tools?
 </div><div>
