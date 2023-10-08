@@ -49,7 +49,7 @@ A **control file** <small>(`content/controls/`)</small> 📝 correspond to a com
 
 A **rule** <small>(`linux_os/guide/`)</small> 🔑 corresponds to a reusable task in a control. For instance, `partition_for_tmp` checks if `/tmp` is on a separate partition. A rule contains metadata and links to a template.
 
-A **product** <small>(`content/products/<product>/`)</small> 🧸 is a target of a compliance guide. It's mostly an operating system such as `fedora` <small>(=all versions)</small> or `debian11`. It links to a list of profiles.
+A **product** <small>(`content/products/<product>/`)</small> 🧸 is the target of a compliance guide. It's mostly an operating system such as `fedora` <small>(=all versions)</small> or `debian11`. It links to a list of profiles.
 </div><div>
 
 A **profile** <small>(`content/products/<product>/profiles/`)</small> ✅ is a list of rules. It may reference some specific rules in a control file <small>(ex: all from level 1)</small>.
@@ -75,7 +75,7 @@ After generating a new product using `init.sh`, you will have:
 * A basic `product.yml` that describes your product
 * A basic oval check `installed_OS_is_xxx.xml` testing if the tested product is matching the expected product <small>(ex: are we on debian11?)</small>
 
-It automates the process from the [documentation](https://complianceascode.readthedocs.io/en/latest/manual/developer/03_creating_content.html#creating-a-new-product).
+It automates the process explained in the [documentation](https://complianceascode.readthedocs.io/en/latest/manual/developer/03_creating_content.html#creating-a-new-product).
 
 ⚠️ If all checks are marked as `notapplicable`, it means that the tested OS does not pass the check defined in `installed_OS_is_xxx.xml`.
 </div><div>
@@ -121,7 +121,7 @@ Assuming the macro is within scope <small>(in the general macro file or in the s
 
 <div class="row row-cols-md-2"><div>
 
-A rule links every piece of information related to a task of one hardening control. It's described in a `rule.yml`. It defines stuff like:
+A rule links every piece of information related to a single hardening control task. It's described in a `rule.yml`. It defines stuff like:
 
 * 🌱 Description <small>(ex: explain what's this rule about)</small>
 * 🔎 Rule check <small>(ex: to test if the rule was applied)</small>
@@ -262,7 +262,7 @@ selections:
 
 <div class="row row-cols-md-2"><div>
 
-[OVAL](https://ovalproject.github.io/getting-started/tutorial/) is an XML-based format used by many files of the project.
+[OVAL](https://ovalproject.github.io/getting-started/tutorial/) is an XML-based format used by many files in the project.
 Basic concepts are [explained here](https://ovalproject.github.io/getting-started/tutorial/).
 
 ```xml!
@@ -296,7 +296,7 @@ A criteria may have children of type `criteria`, or `criterion`. For the latter,
 
 💡 Criterion might not be the only tag that supports `negate`.
 
-Tests are tags ending with `_test`. The usually have one or two children of type `_object`, and `_state` respectfully.
+Tests are tags ending with `_test`. They usually have one or two children of type `_object`, and `_state` respectfully.
 
 ```xml!
 <xxx:yyy_test id="test_xxx" check="all" comment="">
@@ -337,7 +337,7 @@ Or, you may add a `oval/shared.xml` file inside your rule folder.
 
 #### Template File
 
-There are many [existing templates](https://complianceascode.readthedocs.io/en/latest/templates/template_reference.html) which you can use in your rules. They are located in `shared/templates`, see each `oval.template` file.
+There are many [existing templates](https://complianceascode.readthedocs.io/en/latest/templates/template_reference.html) that you can use in your rules. They are located in `shared/templates`, see each `oval.template` file.
 
 ```xml!
 <def-group>
@@ -404,14 +404,14 @@ Or, load files in the current folder:
 <details class="details-n">
 <summary>Check if a pattern is inside a file</summary>
 
-You can "grep" to see if a pattern is inside a file. There are no fancy options like "grep" <small>(case insensitive, multiple lines...)</small>.
+You can "grep" to see if a pattern is inside a file. There are no fancy options like "grep" <small>(case-insensitive, multiple lines...)</small>.
 
 ```xml!
 <ind:pattern operation="pattern match">some_line_here</ind:pattern>
 <ind:pattern operation="pattern match">^some_regex_here$</ind:pattern>
 ```
 
-Then, you assert what result you expect
+Then, you assert the result you expect:
 
 ```xml!
 <ind:instance datatype="int">1</ind:instance>
@@ -419,7 +419,7 @@ Then, you assert what result you expect
 <ind:instance datatype="int" operation="equals">1</ind:instance>
 ```
 
-⚠️ If the second line is missing, build will fail.
+⚠️ If the second line is missing, the build will fail.
 </details>
 
 There are multiple tags that can support a list of values, such as `ind:path`. For instance, we can check if at least one file is valid.
@@ -535,7 +535,7 @@ It should compile now, but you may have to adapt some rules or templates <small>
 
 ⚠️ You will most likely have to edit more project files to completely integrate your package manager/system <small>(remediation...)</small>.
 
-💡 You can look for occurrences of other package managers/systems to find which files to edit.
+💡 You can look for occurrences in other package managers/systems to find which files to edit.
 </div></div>
 
 <hr class="sep-both">
