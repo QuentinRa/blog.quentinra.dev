@@ -5,9 +5,9 @@
 [StarUML](https://staruml.io/) is a simple yet complete free UML design tool. 
 
 * It supports the concept of **Models** 🏘️
-* It supports more than 20 types **diagrams** 🚀
+* It supports more than 20 types of **diagrams** 🚀
 * It supports **many symbols/elements** for each diagram 👌
-* It has many **plugins** 🕹️ ; albeit some are not updated
+* It has many **plugins** 🕹️ ; although some are not updated
   * UML to OpenAPI <small>(An API Specification)</small>
   * UML to Code <small>(C#, SQL, Python, TypeScript, Java, C++...)</small>
   * Code to UML <small>(C#, Java, C++...)</small>
@@ -17,7 +17,7 @@
 But it also has some bugs, including some annoying ones 🐛.
 </div><div>
 
-Once you installed the software and run it. To start from a clean environment, click on "Model" and select "Delete From Model".
+Once you have installed the software, run it. To start from a clean environment, click on "Model" and select "Delete From Model".
 
 <div class="text-center">
 
@@ -38,9 +38,9 @@ Once you installed the software and run it. To start from a clean environment, c
 💡 The editor <small>(5)</small> is available after selecting an element, either from the view <small>(4)</small> or the model <small>(1)</small>.
 </div><div>
 
-The editor is divided in five Windows.
+The editor is divided into five windows.
 
-1. **Model Explorer** 🌱: a Model is a collection of diagrams. You can reuse something from a diagram in another diagram.
+1. **Model Explorer** 🌱: a model is a collection of diagrams. You can reuse something from a diagram in another diagram.
 
 2. **Working Diagrams** 📇: all recently opened diagrams
 
@@ -50,7 +50,7 @@ The editor is divided in five Windows.
 
 5. **Editor** 🧑‍🍳: you can manipulate UML elements properties or add additional information such as documentation.
 
-➡️ In the Model Explorer, the "Untitled" is the project name.
+➡️ In the Model Explorer, "Untitled" is the project name.
 </div></div>
 
 <hr class="sep-both">
@@ -70,11 +70,11 @@ You could also use the SVG trick: export your diagram to SVG, remove all the `UN
 
 #### Do not trust the view
 
-You can delete an element but it will remain in the model, meaning 
+You can delete an element, but it will remain in the model, meaning:
 
-* 🪲 If you use the model explorer, select an element, for instance to edit it, you may pick the wrong one
-* 👻 Others may inadvertently use the incorrect in other diagrams
-* 💩 You will have it in generated code
+* 🪲 If we use the model explorer to select an element, for instance, to edit it, then we may pick the wrong one
+* 👻 If we want to reuse an element in another diagram, we may inadvertently use the wrong element
+* 💩 You will still have them in the generated code
 
 The model is the **only one you can trust**. Ensure it is up-to-date.
 </div></div>

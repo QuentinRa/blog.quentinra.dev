@@ -2,9 +2,9 @@
 
 <div class="row row-cols-md-2"><div>
 
-[Unified Modeling Language (UML)](https://www.omg.org/spec/UML/) is a standardized visual modeling language used to both to **design** ✍️ and **document** 📝 systems.
+[Unified Modeling Language (UML)](https://www.omg.org/spec/UML/) is a standardized visual modeling language used to both **design** ✍️ and **document** 📝 systems.
 
-We use it to create diagrams for our software and their components.
+We use it to create diagrams for our software and its components.
 
 The current standard is **UML 2.5.1** (2017).
 </div><div>
@@ -18,5 +18,5 @@ There are several types of [UML diagrams](https://en.wikipedia.org/wiki/Unified_
 * [Object Diagram](../diagrams/object/index.md): model an instance of a class diagram
 * ...
 
-Refer to [UML-diagrams](https://www.uml-diagrams.org/) website.
+Refer to the [UML-diagrams](https://www.uml-diagrams.org/) website.
 </div></div>
