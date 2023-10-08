@@ -2,19 +2,19 @@
 
 <div class="row row-cols-md-2"><div>
 
-GitLab [CI/CD](index.md) is well-known and popular mature solution for devops. From my perspective, GitLab CI free version is relatively limited. For instance, most interfaces to display CI results are rudimentary or paid.
+GitLab [CI/CD](index.md) is a well-known and popular mature solution for DevOps. From my perspective, GitLab CI free version is relatively limited. For instance, most interfaces to display CI results are rudimentary or paid.
 
 * [CI/CD Documentation](https://docs.gitlab.com/ee/topics/build_your_application.html) ⛪
-* [Code coverage Documentation](https://docs.gitlab.com/ee/ci/testing/code_coverage.html) ✍️
-* [Code quality Documentation](https://docs.gitlab.com/ee/ci/testing/code_quality.html) 🧼
-* [Unit tests Documentation](https://docs.gitlab.com/ee/ci/testing/unit_test_reports.html) 🧪
-* [Security tools Documentation](https://docs.gitlab.com/ee/user/application_security/secure_your_application.html) 🛡️ <small>(static analysis...)</small>
-* [GitLab templates](https://gitlab.com/gitlab-org/gitlab/-/tree/master/lib/gitlab/ci/templates) ✨
+* [Code Coverage Documentation](https://docs.gitlab.com/ee/ci/testing/code_coverage.html) ✍️
+* [Code Quality Documentation](https://docs.gitlab.com/ee/ci/testing/code_quality.html) 🧼
+* [Unit Tests Documentation](https://docs.gitlab.com/ee/ci/testing/unit_test_reports.html) 🧪
+* [Security Tools Documentation](https://docs.gitlab.com/ee/user/application_security/secure_your_application.html) 🛡️ <small>(static analysis...)</small>
+* [GitLab Templates](https://gitlab.com/gitlab-org/gitlab/-/tree/master/lib/gitlab/ci/templates) ✨
 
 We assume you're familiar with GitLab, and already have a project created with **Maintainer+** access on it.
 </div><div>
 
-To [enable CI/CD](https://docs.gitlab.com/ee/ci/enable_or_disable_ci.html#enable-cicd-in-a-project), go to `Settings > General > Visibility [...] > Repository` and enable `CI/CD`. Don't forget to save changes.
+To [enable CI/CD](https://docs.gitlab.com/ee/ci/enable_or_disable_ci.html#enable-cicd-in-a-project), go to `Settings > General > Visibility [...] > Repository` and enable `CI/CD`. Don't forget to save your changes.
 
 **Terminology**
 
@@ -35,15 +35,15 @@ The pipeline status is visible next to each commit: ![pipeline success](_images/
 
 A [**runner**](https://docs.gitlab.com/runner/) is an agent running the jobs, e.g., executing the commands.
 
-* **Project runner** 🏠: available to a single project
-* **Group runner** 🏘️: available to any project in a group
-* **Shared runner** 🍾: available to any project
+* **Project runner** 🏠: available for a single project
+* **Group runner** 🏘️: available for any project in a group
+* **Shared runner** 🍾: available for any project
 
 👉 Only shared runners are available when using [GitLab.com](https://gitlab.com/).
 
 Runners are associated with an [**executor**](https://docs.gitlab.com/runner/#executors). It's the environment used to execute commands, such as a shell or a docker.
 
-GitLab runners are managed by a service called `gitlab-runner`. You can [find instructions here](https://docs.gitlab.com/runner/install/) to install it.
+GitLab runners are managed by a service called `gitlab-runner`. You can [find instructions here](https://docs.gitlab.com/runner/install/) on how to install it.
 
 Some commands you might use:
 
@@ -132,7 +132,7 @@ job:
 
 #### Tags
 
-If you add a tag to a job, then only runners having this tag can run it.
+If you add a tag to a job, then only runners with this tag can run it.
 
 ```yaml!
 job:
@@ -206,7 +206,7 @@ Allowed repositories can be cloned from a pipeline.
 
 #### allow_failure
 
-You can allow a job to fail without failing the pipeline. In such scenario, an orange icon with an exclamation mark will be shown.
+You can allow a job to fail without failing the pipeline. In such a scenario, an orange icon with an exclamation mark will be shown.
 
 ```yaml!
 job:
@@ -220,7 +220,7 @@ You can use `when` to execute jobs conditionally.
 ```
 job:
   when: on_failure   # a stage failed in the previous stage
-  when: always       # even if pipeline fails
+  when: always       # even if the pipeline fails
 ```
 
 #### rules
@@ -291,7 +291,7 @@ include:
     ref: 'main'
 ```
 
-Once loaded, you can override jobs and variable from the template.
+Once loaded, you can override jobs and variables from the template.
 </div><div>
 
 Assuming the template has a variable `VAR_NAME`, declaring a variable with the same name in the including file will override its value.
@@ -313,7 +313,7 @@ some_job:       # job declared in the template
 
 <div class="row row-cols-md-2"><div>
 
-GitLab offers 3 [badges](https://docs.gitlab.com/ee/user/project/badges.html): pipeline status, coverage status, and release status. It's possible to use [external APIs]() for public projects. Otherwise, a common solution is to build badges during CI pipeline.
+GitLab offers 3 [badges](https://docs.gitlab.com/ee/user/project/badges.html): pipeline status, coverage status, and release status. It's possible to use [external APIs]() for public projects. Otherwise, a common solution is to build badges during the CI pipeline.
 
 🧨 A major downside is that badges are NOT shown when a pipeline fails. A possible solution <small>(not tested)</small> is to save badges somewhere instead of using artifacts <small>(ex: make CI commit to a branch)</small>.
 
