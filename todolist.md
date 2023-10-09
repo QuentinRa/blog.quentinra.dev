@@ -6,8 +6,7 @@ List of courses that have note which were not added yet.
 
 **Programming Languages**
 
-* (review, typos) web (general)
-* **Blockchain**
+* (review, typos) web (general), blockchain
 * **API** > GraphQL
 * OCaml
 
