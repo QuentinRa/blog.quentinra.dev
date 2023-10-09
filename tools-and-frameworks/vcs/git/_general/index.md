@@ -283,5 +283,6 @@ Stuff that I found, but never read/used yet.
 * merge fast-forward vs rebase
 * GitGraph.js
 * Git hooks (+[husky](https://github.com/typicode/husky)) - `git hook`
+* Google repo tool
 </div><div>
 </div></div>

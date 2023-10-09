@@ -86,13 +86,20 @@ $ cmake [...] -- -j 4 # ex: "make -j 4"
 You can override the value of some variables using `-D`:
 
 ```shell!
-$ cmake -D VAR_NAME=VAR_VALUE ...
+$ cmake -DVAR_NAME VAR_VALUE [...]
+$ cmake -D VAR_NAME=VAR_VALUE [...]
 ```
 
 Common pre-defined variables:
 
 * `CMAKE_BUILD_TYPE`: the kind of build such as `Release` or `Debug`
-* `CMAKE_SOURCE_DIR`: path to the folder with the top-level cmakelists
+* `CMAKE_SOURCE_DIR`: path to the folder with the top-level CMakeLists
+* `PROJECT_SOURCE_DIR`: path to the nearest parent folder with a CMakeLists that as a call to `project()`
+* `CMAKE_BINARY_DIR`: folder where we build all projects
+* `PROJECT_BINARY_DIR`: folder where we build the current project
+* `CMAKE_INSTALL_PREFIX`: folder to install the project <small>(ex: make install)</small>
+* `CMAKE_INSTALL_DATADIR`: folder to install non-executable files
+* `CMAKE_PREFIX_PATH`: location used to locate dependencies
 * ...
 </div></div>
 
@@ -109,6 +116,7 @@ These two lines are the only required lines.
 ```cmake
 # cmake_minimum_required(VERSION A..B)
 # cmake_minimum_required(VERSION A)
+# cmake_minimum_required(VERSION A FATAL_ERROR)
 cmake_minimum_required(VERSION 3.18)
 project(your_project_name)
 ```
@@ -538,6 +546,8 @@ This is an example for GNU directories:
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
+set(CMAKE_REPORTS_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/reports")
+set(CMAKE_DOC_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/doc")
 ```
 </div><div>
 
@@ -731,6 +741,7 @@ Stuff that I found, but never read/used yet.
 * [Akagi201/learning-cmake](https://github.com/Akagi201/learning-cmake) and [awesome-cmake](https://github.com/onqtam/awesome-cmake)
 * execute_process, target_precompile_headers
 * clang-tidy headers
+* `mark_as_advanced` (show in GUI editor?)
 </div><div>
 
 * macros (unlike function, no need for PARENT_SCOPE)
@@ -747,5 +758,7 @@ $<IF:xxx,yyy,zzz>
 $<IF:xxx,yyy,>
 
 configure_file(xxx.xxx ${CMAKE_BINARY_DIR}/yyy.cmake @ONLY)
+
+option(MY_OPTION "XXX" ON)
 ```
 </div></div>
