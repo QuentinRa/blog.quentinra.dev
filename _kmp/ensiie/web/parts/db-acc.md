@@ -6,17 +6,6 @@ The goal is to **create a database**, **a new user**, and **grant him permission
 
 Connect using SSH to the ENSIIE server. Write the first command to connect using your ENSIIE credentials.
 
-```bash
-# your_login_ensiie = name if your email is name@ensiie.fr
-psql -h pgsql -U your_login_ensiie
-# create a database (replace a_database_name)
-CREATE DATABASE a_database_name;
-# exit
-# ...
-# log in again (replace a_database_name)
-psql -h pgsql -U your_ensiie_login -d a_database_name
-```
-
 Copy this code, BUT replace
 
 * ``username`` by the new user username (0/3)

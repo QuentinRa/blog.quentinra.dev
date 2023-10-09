@@ -246,9 +246,11 @@ The scope, which is optional, can be one of:
 * `PUBLIC`: dependencies required to build *targetA* and dependencies that require *targetA*
 * `INTERFACE`: dependencies required to build dependencies that require *targetA* but not *targetA*
 
-👉 It may be obvious, but we almost always use `PRIVATE`.
+➡️ It may be obvious, but we almost mostly use `PRIVATE`.
 
-👉 The default scope is determined according to the target.
+➡️ The default scope is determined according to the target <small>(a lib...)</small>.
+
+⚠️ If you are exposing headers which depend on a library, then the library must be `PUBLIC`.
 </div><div>
 
 #### External Libraries

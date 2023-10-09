@@ -21,6 +21,8 @@ There are a few metrics you may also show:
 * [Repository stars over time](https://starchart.cc/)
 * [Show contributors](https://contrib.rocks/)
 * [Show metrics](https://repobeats.axiom.co/)
+
+💡 On GitHub, you can put the README.md in `/docs/`.
 </div></div>
 
 <hr class="sep-both">

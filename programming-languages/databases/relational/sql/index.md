@@ -146,17 +146,21 @@ set transaction read write /*code/
 
 <div class="row row-cols-md-2"><div>
 
-Both for **PostgreSQL** and **MySQL**, they are running as a service:
+#### PostgreSQL
+
+If the service is started (`service postgresql status`), log in using:
 
 ```ps
-$ service mysql status
-$ service postgresql status
+$ psql -h SOME_IP -U root
+$ psql -h SOME_IP -U root -d database
 ```
 
-On **MySQL**, if the service is started, you can log in using:
+#### MySQL
+
+If the service is started (`service mysql status`), log in using:
 
 ```ps
-# sudo apt install default-mysql-client
+# requirement: sudo apt install default-mysql-client
 $ mysql -u root -p
 $ mysql -u root -p -h SOME_IP
 > source xxx.sql;                # import
@@ -173,10 +177,16 @@ $ mysql -u root -p db < xxx.sql  # import
 🐲 MySQL/MariaDB default port is 3306.
 </div><div>
 
+#### MySQL or PostgreSQL
+
 **MySQL**/**PostgreSQL** store structural data in `information_schema`:
 
 * Tables: `SELECT table_name FROM information_schema.tables WHERE TABLE_SCHEMA='a_db';`
 * Columns: `SELECT column_name FROM information_schema.columns WHERE TABLE_SCHEMA='a_db' AND TABLE_NAME='a_table';`
+
+<br>
+
+#### SQLite
 
 An **SQLite** database is a file such as `users.db`. To load it ️: `sqlite3 users.db`. You can run a query from there: `sqlite3 xxx.db some_query`.
 
