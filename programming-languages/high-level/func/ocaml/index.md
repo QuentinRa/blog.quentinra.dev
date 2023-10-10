@@ -107,11 +107,20 @@ let res =
 
 ⚠️ You cannot use a variable that was not declared.
 
+🔥 xxxx
+
 <br>
 
 #### Print some text in the terminal
 
-...
+xxx
+
+```
+let
+let
+let
+let
+```
 </div><div>
 
 #### Types
@@ -127,8 +136,6 @@ let var = "5"             (* type = string *)
 let var = ()              (* type = unit *)
 ```
 
-<br>
-
 #### Conversions
 
 Functions to convert a variable of type `a` to `b` have the form `b_of_a`.
@@ -138,11 +145,36 @@ Functions to convert a variable of type `a` to `b` have the form `b_of_a`.
 let var = string_of_int 5
 ```
 
-<br>
-
 #### Operators
 
-...
+Here is a list of most [operators](/programming-languages/_paradigm/stuff/operators.md).
+
+```ocaml
+(* arithmetic betwenn integers *)
+let sum = 5 + 5           (* 10 *)
+let subtraction = 5 - 5   (* 0 *)
+let product = 5 * 5       (* 25 *)
+                          (* see also: / and mod *) 
+
+(* arithmetic betwenn floats *)
+let sum = 5. +. 5.        (* 10. *)    
+let pow = 5. ** 2.        (* 25. *)
+                          (* see also: -. *. /. *)     
+
+let equal = 5 = 5         (* true ⚠️ not "==" *)
+let different = 5 <> 5    (* false ⚠️ not "!=" *)
+let negation = not true   (* false ⚠️ not "!" *)
+                          (* see also: >, >=, <, <= *)
+
+let op = true || false    (* true ⚠️ not "or" *)
+let op = true && false    (* false *)
+
+let str = "ab" ^ "c";     (* concatenation *)
+```
+
+⚠️ `!`, `!=` and `==` are reserved for addresses comparisons.
+
+⚠️ `and` and `or` 
 </div></div>
 
 <hr class="sep-both">
@@ -156,7 +188,9 @@ Stuff that I found, but never read/used yet.
 * [old](_old.md)
 * variable: `_*` is not saved by the compiler
 * do not use "unit"
-* [Functions on string](https://ocaml.org/api/String.html) (String.equal, String.length, ex: `String.length "5"`)
+* [Functions on string](https://ocaml.org/api/String.html) (String.equal, String.length, ex: `String.length "5"`, `"ab" ^ "c"`)
+* Lists: `[]`, `@::[]`, `5::[]`
+* `Stdlib.compare a b`
 </div><div>
 
 </div></div>
