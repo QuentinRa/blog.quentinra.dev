@@ -64,7 +64,7 @@ If starting from scratch, you will create a forest 🌴, with only one domain in
 
 You will install on this computer **Windows Server** 2019/2022/... As a student, you can get an image for free [on azure website](https://azureforeducation.microsoft.com/devtools).
 
-➡️ If you're using Virtual Box, [see these notes](/tools-and-frameworks/others/virtualization/virtualbox/index.md#active-directory-notes).
+➡️ If you're using Virtual Box, [see these notes](/operating-systems/others/virtualization/virtualbox/index.md#active-directory-notes).
 
 After installing the ISO, when starting the machine, the **Server Manager** will automatically open itself. From there, you will be able to install **ADDS** and many other services/tools 📌.
 

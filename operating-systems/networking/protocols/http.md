@@ -52,7 +52,7 @@ In every HTTP/HTTPS request/response, there are headers that are set both by the
 
 ##### HTTP Payload
 
-If you are using `GET`, the payload is inside the URL. For others, the data is inside the body. In both case, [it's URL-encoded](/programming-languages/others/encoding/index.md).
+If you are using `GET`, the payload is inside the URL. For others, the data is inside the body. In both case, [it's URL-encoded](/tools-and-frameworks/knowledge/encoding/index.md).
 
 ##### HTTP Response code
 

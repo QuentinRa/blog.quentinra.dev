@@ -20,7 +20,7 @@ The CREATE clause is used to create
 
 <div class="row row-cols-md-2"><div>
 
-You will usually provide the [charset](/operating-systems/others/architecture/index.md#strings-) when creating a database, to avoid problems with international characters.
+You will usually provide the [charset](/tools-and-frameworks/knowledge/architecture/index.md#strings-) when creating a database, to avoid problems with international characters.
 
 ```sql!
 CREATE DATABASE db_name 

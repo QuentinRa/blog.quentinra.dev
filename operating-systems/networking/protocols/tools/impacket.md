@@ -4,7 +4,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[impacket](https://github.com/fortra/impacket) (11.1k ⭐) is a collection of [python](/programming-languages/high-level/python/index.md) classes for working with network protocols.
+[impacket](https://github.com/fortra/impacket) (11.1k ⭐) is a collection of [python](/programming-languages/high-level/scripting/python/index.md) classes for working with network protocols.
 
 ```shell!
 $ sudo git clone https://github.com/fortra/impacket /opt/impacket

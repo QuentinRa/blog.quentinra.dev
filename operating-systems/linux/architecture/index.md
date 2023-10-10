@@ -1,6 +1,6 @@
 # Linux Architecture 🧪
 
-An experimental set of notes about Linux internals. These notes extends [Architecture](/operating-systems/others/architecture/index.md).
+An experimental set of notes about Linux internals. These notes extend [Architecture](/tools-and-frameworks/knowledge/architecture/index.md).
 
 <hr class="sr">
 

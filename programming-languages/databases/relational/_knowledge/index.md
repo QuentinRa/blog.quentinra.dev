@@ -68,7 +68,7 @@ Creating a database from a specification is called **Modeling** 🧑‍🎨. It'
 
 #### Step 1 — Get Started
 
-Before creating your [database diagrams](/tools-and-frameworks/projects/modeling/uml/db/index.md), you need to identify some information within the specification.
+Before creating your [database diagrams](/tools-and-frameworks/projects/modeling/uml/diagrams/db/index.md), you need to identify some information within the specification.
 
 * **highlight** every concrete piece of information
   * Names, Locations

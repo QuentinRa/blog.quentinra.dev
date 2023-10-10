@@ -1358,7 +1358,7 @@ $ sed '1d' file # delete first
 
 **Example - syntax 2** 🔥: <br>`sed 's/<pattern>/<replacement>/<flag>' <file>`.
 
-* `pattern`: a [regex](/programming-languages/others/regex/index.md)
+* `pattern`: a [regex](/tools-and-frameworks/knowledge/regex/index.md)
 * `flag`:
   * `none`: first match of each line
   * `g`: every match is replaced

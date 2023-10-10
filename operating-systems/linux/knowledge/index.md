@@ -314,7 +314,7 @@ For instance, `*.h` will be replaced with every file -- and directory --, ending
 
 If you write the glob-pattern `a?c`, then it could be `abc`... But if you write `a\?c`, or `a[?]c`, then it will only match `a?c`. This is called "escaping".
 
-👉 Glob-patterns are pretty similar but different to [Regexes](/programming-languages/others/regex/index.md).
+👉 Glob-patterns are pretty similar but different to [Regexes](/tools-and-frameworks/knowledge/regex/index.md).
 </div><div>
 
 Everything defined in `[]` is called a **charset**. If you want every character between 'a', and 'z', then you could write the charset `[a-z]`. There are pre-defined charsets if needed
