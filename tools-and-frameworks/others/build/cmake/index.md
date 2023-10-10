@@ -453,7 +453,7 @@ And there are some common operators:
 
 * `DEFINED VARIABLE`: true if a variable is defined
 * `TARGET VARIABLE`: true if a target is defined
-* `COMMAND VARIABLE`: true if a command is defined
+* `COMMAND VARIABLE`: true if a command/function/macro is defined
 * `TEST VARIABLE`: true if a test is defined
 * `EQUAL`, `LESS`, `LESS_EQUAL`, `GREATER`, and `GREATER_EQUAL` which are used to compare numeric values
 * `A VERSION_XXX B` such as `VERSION_EQUAL`: compare software versions

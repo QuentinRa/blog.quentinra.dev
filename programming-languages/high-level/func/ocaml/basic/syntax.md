@@ -32,10 +32,6 @@ let _ = main (1) ("test") (* working, but unneeded parenthesis should be avoided
 | operators | `+` `-` `*` `/`<br> `mod` | `+.` `-.` `*.` `/.` <br>`**` (pow) | `not` `&&` <code>\|\|</code> | | `^` (concat) | | `@` `::` |
 | example | `5 + 0` | `5.0 +. 0.0` | `not true` | | `"ab" ^ "c"` | | `5::[]` |
 
-* **Note**: You can convert a variable with functions such as `string_of_int` (int -> string).
-* **Note**: unit should not be used, at least when practicing the functional paradigm, this is a sort of `void`. You may use it when a function is not returning something, or not taking something in argument <small>(but try to use it the least possible)</small>
-* **Note**: [Functions on string](https://ocaml.org/api/String.html) (String.equal, String.length, ex: `String.length "5"`)
-
 Types are inferred, but you may add `: type` after a variable name. In functional programming, types are inferred, so **you shouldn't make an explicit declaration of the type of something**.
 
 ```ocaml

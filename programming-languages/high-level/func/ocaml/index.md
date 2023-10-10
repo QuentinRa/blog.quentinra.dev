@@ -95,7 +95,7 @@ Local variables are only available in the scope of the declaration:
 
 ```ocaml
 (* the last expression is the value of "res" *)
-(* res = 750, x/y/z are not defined *)
+(* res = 750, x/y/z are undefined *)
 let res =
 	let x = 5 in
 	let y = 10 in
@@ -103,18 +103,42 @@ let res =
 	x * y * z
 ```
 
-⚠️ The name of the variable must starts with a lowercase.
+⚠️ The name of the variable must start with a lowercase.
 
 ⚠️ You cannot use a variable that was not declared.
-</div><div>
 
-#### Types
-
-...
+<br>
 
 #### Print some text in the terminal
 
 ...
+</div><div>
+
+#### Types
+
+A few of the common types are:
+
+```ocaml
+let var = 5 + 0x29a       (* type = int *)
+let var = 5.0 +. 5.       (* type = float *)
+let var = true && false   (* type = bool *)
+let var = '5'             (* type = char *)
+let var = "5"             (* type = string *)
+let var = ()              (* type = unit *)
+```
+
+<br>
+
+#### Conversions
+
+Functions to convert a variable of type `a` to `b` have the form `b_of_a`.
+
+```ocaml
+(* convert an int to a string *)
+let var = string_of_int 5
+```
+
+<br>
 
 #### Operators
 
@@ -131,6 +155,8 @@ Stuff that I found, but never read/used yet.
 
 * [old](_old.md)
 * variable: `_*` is not saved by the compiler
+* do not use "unit"
+* [Functions on string](https://ocaml.org/api/String.html) (String.equal, String.length, ex: `String.length "5"`)
 </div><div>
 
 </div></div>
