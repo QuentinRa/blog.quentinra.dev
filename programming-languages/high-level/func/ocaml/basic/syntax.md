@@ -26,12 +26,6 @@ let _ = main (1) ("test") (* working, but unneeded parenthesis should be avoided
 
 ## Types
 
-| | int | float | bool | char | string | unit | list |
-|-----|-----|-----|-----|-----|-----|-----|-----|
-| values | `5`, `0x29a` | `5.0`, `5.` | `true` | `'5'` | `"5"` | `()` | `[]` |
-| operators | `+` `-` `*` `/`<br> `mod` | `+.` `-.` `*.` `/.` <br>`**` (pow) | `not` `&&` <code>\|\|</code> | | `^` (concat) | | `@` `::` |
-| example | `5 + 0` | `5.0 +. 0.0` | `not true` | | `"ab" ^ "c"` | | `5::[]` |
-
 Types are inferred, but you may add `: type` after a variable name. In functional programming, types are inferred, so **you shouldn't make an explicit declaration of the type of something**.
 
 ```ocaml
@@ -54,18 +48,6 @@ let f a b = a
 ```
 
 You could see that as `f(a,b) = a` working whatever a or b given (int, string, ...).
-
-<hr class="sl">
-
-## Compare values
-
-* `=` (same content) or `<>` (different content)
-* `==` (same address) or `!=` (different address)
-* Use `not` to inverse a boolean in OCaml (**AND NOT `!bool`**)
-* `>=, >, <=, <`
-* you got a function `Stdlib.compare a b` (-1, 0, 1)
-
-> **A lot of folks are using `!=` for the difference**. That's working most of the time, so it's fine, but they should use `<>`.
 
 <hr class="sr">
 

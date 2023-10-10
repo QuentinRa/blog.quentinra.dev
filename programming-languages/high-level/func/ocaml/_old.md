@@ -32,11 +32,7 @@ In functional languages, there should be no side effects. Hence, **if you are no
 
 ```ocaml
 Printf.printf "%s\n" "Hello, World" (* IGNORED !!! *)
-
-(* all of them are equivalent *)
 let _ = Printf.printf "%s\n" "Hello, World"
-let _ = Format.printf "%s\n" "Hello, World" (* Printf.printf is "weird", use Format *)
-let _ = Format.printf "%s@." "Hello, World" (* do this one *)
 
 (* In OCaml, "1+2" without parenthesis is considered as given 3 parameters '1' '+' '2' to a function, so add parenthesis *)
 let _ = Format.printf "%d@." (1+2)

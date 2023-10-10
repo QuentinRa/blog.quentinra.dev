@@ -107,19 +107,24 @@ let res =
 
 ⚠️ You cannot use a variable that was not declared.
 
-🔥 xxxx
+🔥 If a variable name equal to `_`, it's considered as a temporary variable and discarded by the compiler after evaluating it.
+
+```ocaml
+let _ = (* some expression with a side-effect *)
+(* _ is not defined *)
+```
 
 <br>
 
 #### Print some text in the terminal
 
-xxx
+It's common to use `@.` instead of `\n` as it flushes the buffer too.
 
-```
-let
-let
-let
-let
+```ocaml
+(* all of them are roughly the same *)
+let _ = Printf.printf "%s\n" "Hello, World"
+let _ = Format.printf "%s\n" "Hello, World"
+let _ = Format.printf "%s@." "Hello, World" (* 🚀 *)
 ```
 </div><div>
 
@@ -166,15 +171,13 @@ let different = 5 <> 5    (* false ⚠️ not "!=" *)
 let negation = not true   (* false ⚠️ not "!" *)
                           (* see also: >, >=, <, <= *)
 
-let op = true || false    (* true ⚠️ not "or" *)
+let op = true || false    (* true ☠️ not "or" *)
 let op = true && false    (* false *)
 
 let str = "ab" ^ "c";     (* concatenation *)
 ```
 
 ⚠️ `!`, `!=` and `==` are reserved for addresses comparisons.
-
-⚠️ `and` and `or` 
 </div></div>
 
 <hr class="sep-both">
@@ -186,11 +189,10 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [old](_old.md)
-* variable: `_*` is not saved by the compiler
 * do not use "unit"
 * [Functions on string](https://ocaml.org/api/String.html) (String.equal, String.length, ex: `String.length "5"`, `"ab" ^ "c"`)
 * Lists: `[]`, `@::[]`, `5::[]`
-* `Stdlib.compare a b`
+* `Stdlib.compare a b` (-1, 0, 1)
 </div><div>
 
 </div></div>
