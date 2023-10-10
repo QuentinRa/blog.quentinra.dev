@@ -62,7 +62,6 @@ To be accurate, in OCaml **everything is a value**, so you can give "`-`" (minus
 ## Basic concepts
 
 * [Types, operators and structures](basic/syntax.md)
-* [Declaring a variable](basic/variables.md)
 * [Functions](basic/functions.md)
 * [Recursive functions](basic/rec.md)
 

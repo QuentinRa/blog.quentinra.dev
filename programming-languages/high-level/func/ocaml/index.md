@@ -70,6 +70,59 @@ Hello, World!
 
 <hr class="sep-both">
 
+## OCaml Basics
+
+<div class="row row-cols-md-2"><div>
+
+#### Declare a variable
+
+Simple declarations:
+
+```ocaml
+let x = 5
+let y = "test"
+let x = y      (* cannot edit, only redeclare *)
+```
+
+You can declare multiple variables at once:
+
+```ocaml
+let x = 5 and y = "test"
+(* create two variables *)
+```
+
+Local variables are only available in the scope of the declaration:
+
+```ocaml
+(* the last expression is the value of "res" *)
+(* res = 750, x/y/z are not defined *)
+let res =
+	let x = 5 in
+	let y = 10 in
+	let z = 15 in
+	x * y * z
+```
+
+⚠️ The name of the variable must starts with a lowercase.
+
+⚠️ You cannot use a variable that was not declared.
+</div><div>
+
+#### Types
+
+...
+
+#### Print some text in the terminal
+
+...
+
+#### Operators
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -77,6 +130,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [old](_old.md)
+* variable: `_*` is not saved by the compiler
 </div><div>
 
 </div></div>
