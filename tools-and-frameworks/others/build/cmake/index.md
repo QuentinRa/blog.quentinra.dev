@@ -727,6 +727,87 @@ configure_file(configure.h.in configure.h)
 
 <hr class="sep-both">
 
+## Testing
+
+<div class="row row-cols-md-2"><div>
+
+CMake provides a utility to execute tests called `ctest`. It works with popular testing libraries such as `gtest` below.
+
+<div class="row row-cols-md-2"><div>
+
+File: `src/add.cpp`
+
+```cpp
+#include <iostream>
+
+int add(int a, int b) {
+    return a + b;
+}
+```
+</div><div>
+
+File: `tests/test_add.cpp`
+
+```cpp
+#include <gtest/gtest.h>
+#include "../src/add.cpp"
+
+TEST(AddTest, PositiveNumbers) {
+    EXPECT_EQ(add(3, 4), 7);
+}
+```
+</div></div>
+
+You first need to enable testing, and find your testing library:
+
+```cmake
+enable_testing()    # support "add_test"
+find_package(GTest REQUIRED) # Fill GTest::GTest GTest::Main
+```
+
+Assuming the following target for your sources:
+
+```cmake
+add_library(my_target src/add.cpp) # not necessarily a library
+```
+</div><div>
+
+The way to create a testing target is the same as normal targets:
+
+```cmake
+add_executable(my_testing_target tst/test_add.cpp)
+target_link_libraries(my_testing_target PRIVATE my_target GTest::GTest GTest::Main)
+```
+
+#### Old Traditional Way
+
+We were manually calling `add_test`. We got the test results for each target instead of the results for each test.
+
+```cmake
+add_test(NAME my_testing_target COMMAND my_testing_target)
+```
+
+#### New Modern Way
+
+We let gtest discover the tests. We can see the result of each test.
+
+```cmake
+include(GoogleTest) # import gtest_discover_tests
+gtest_discover_tests(my_testing_target)
+```
+
+#### Run the tests
+
+You can execute the binary manually or use `ctest`:
+
+```shell!
+$ cmake --build .  # don't forget to build
+$ ctest            # use "-V" for verbose
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
