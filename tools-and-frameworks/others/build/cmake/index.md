@@ -508,7 +508,7 @@ set(VARIABLE_NAME VARIABLE_VALUE PARENT_SCOPE)
 
 <hr class="sep-both">
 
-## Advanced Topics
+## Common Topics
 
 <div class="row row-cols-md-2"><div>
 
@@ -572,6 +572,18 @@ include(folder/moduleName)
 
 <br>
 
+#### Prevent In-Source Builds
+
+Don't use the same folder as your sources to compile.
+
+```cmake
+if(PROJECT_SOURCE_DIR STREQUAL PROJECT_BINARY_DIR)
+  message(FATAL_ERROR "In-source builds not allowed.")
+endif()
+```
+
+<br>
+
 #### Clone External Projects
 
 You can use `ExternalProject` or the newer and improved `FetchContent` to clone, configure, and build an external project.
@@ -629,100 +641,6 @@ target_include_directories(someTarget PRIVATE ${${DEPS_SOURCES}})
 target_link_libraries(someTarget PRIVATE ${DEPS_NAME})
 ```
 </details>
-</div></div>
-
-<hr class="sep-both">
-
-## Random notes
-
-<div class="row row-cols-md-2"><div>
-
-#### Advanced Strings
-
-The multi-line string below corresponds to one string with newlines.
-
-```cmake
-message([==[
-some text
-some text
-]==])
-```
-
-This is the same as:
-
-```cmake
-message("some text\nsome text")
-```
-
-Or:
-
-```cmake
-message("some text
-some text")
-```
-
-<br>
-
-#### CMake Advanced Compile Options
-
-You can set compile options per file language:
-
-```cmake
-target_compile_options(my_target PRIVATE
-    -Wall                          # Apply to all source files
-    $<$<COMPILE_LANGUAGE:CXX>:
-        -O3                         # Apply to C++ files only
-    >
-    $<$<COMPILE_LANGUAGE:C>:
-        -O2                         # Apply to C files only
-    >
-)
-```
-</div><div>
-
-#### CMake Custom Target
-
-You can execute a command:
-
-```cmake
-add_custom_target(targetName ALL COMMAND xxx)
-
-add_custom_command(OUTPUT xxx.h xxx.cc
-    COMMAND xxx ARGS yyy
-    DEPENDS xxx.yyy
-)
-```
-
-<br>
-
-#### Prevent In-Source Builds
-
-Don't use the same folder as your sources to compile.
-
-```cmake
-if(PROJECT_SOURCE_DIR STREQUAL PROJECT_BINARY_DIR)
-  message(FATAL_ERROR "In-source builds not allowed.")
-endif()
-```
-
-<br>
-
-#### Generate Headers
-
-You can generate headers from a template filled with CMake Variables:
-
-```bash!
-$ cat configure.h.in
-#cmakedefine XXX "${ZZZ}"
-#cmakedefine YYY "@ZZZ@"
-```
-
-Both syntaxes can be used. Variables are replaced if they are defined, or the "define" line is commented out.
-
-```cmake
-configure_file(configure.h.in configure.h)
-```
-
 </div></div>
 
 <hr class="sep-both">
@@ -804,6 +722,102 @@ You can execute the binary manually or use `ctest`:
 $ cmake --build .  # don't forget to build
 $ ctest            # use "-V" for verbose
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-md-2"><div>
+
+#### CMake Custom Target
+
+You can execute a command:
+
+```cmake
+add_custom_target(targetName ALL COMMAND xxx)
+
+add_custom_command(OUTPUT xxx.h xxx.cc
+    COMMAND xxx ARGS yyy
+    DEPENDS xxx.yyy
+)
+```
+
+<br>
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+<hr class="sep-both">
+
+## Random notes
+
+<div class="row row-cols-md-2"><div>
+
+#### Advanced Strings
+
+The multi-line string below corresponds to one string with newlines.
+
+```cmake
+message([==[
+some text
+some text
+]==])
+```
+
+This is the same as:
+
+```cmake
+message("some text\nsome text")
+```
+
+Or:
+
+```cmake
+message("some text
+some text")
+```
+
+<br>
+
+#### CMake Advanced Compile Options
+
+You can set compile options per file language:
+
+```cmake
+target_compile_options(my_target PRIVATE
+    -Wall                          # Apply to all source files
+    $<$<COMPILE_LANGUAGE:CXX>:
+        -O3                         # Apply to C++ files only
+    >
+    $<$<COMPILE_LANGUAGE:C>:
+        -O2                         # Apply to C files only
+    >
+)
+```
+</div><div>
+
+#### Generate Headers
+
+You can generate headers from a template filled with CMake Variables:
+
+```bash!
+$ cat configure.h.in
+#cmakedefine XXX "${ZZZ}"
+#cmakedefine YYY "@ZZZ@"
+```
+
+Both syntaxes can be used. Variables are replaced if they are defined, or the "define" line is commented out.
+
+```cmake
+configure_file(configure.h.in configure.h)
+```
+
+<br>
+
 </div></div>
 
 <hr class="sep-both">
