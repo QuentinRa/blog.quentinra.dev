@@ -726,30 +726,50 @@ $ ctest            # use "-V" for verbose
 
 <hr class="sep-both">
 
-## XXX
+## CMake Custom Targets
 
 <div class="row row-cols-md-2"><div>
 
-#### CMake Custom Target
+We use custom targets when we need to:
 
-You can execute a command:
+* 🚀️ Execute a command
+* 🗃️ Execute a script
+* ...
+
+A common use case is when we need to generate some files.
+
+#### Declare a custom target
+
+We could declare a task that depends on other tasks.
 
 ```cmake
-add_custom_target(targetName ALL COMMAND xxx)
+# we need header.h (it could be a generated file...)
+add_custom_target(targetName DEPENDS api/header.h)
+```
+</div><div>
 
-add_custom_command(OUTPUT xxx.h xxx.cc
-    COMMAND xxx ARGS yyy
-    DEPENDS xxx.yyy
+#### Declare a custom command
+
+A custom command is a command generating some files based on dependencies. It's often included in the `add_custom_target` call or separate like below.
+
+```cmake
+add_custom_command(
+    OUTPUT # list of generated files
+        api/libH.h
+    COMMAND # command + arguments to get the output
+        script/my_script.sh
+        ${CMAKE_BINARY_DIR}/data/file1.txt
+    DEPENDS # execute the command each time they changed
+        data/file2.txt
+        ${CMAKE_BINARY_DIR}/data/file1.txt
+    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 )
 ```
 
-<br>
-</div><div>
+💡 All parameters aside from `OUTPUT` and `COMMAND` are optional.
 
-...
+✅️ When using cleaning commands such as `make clean` or `ninja clean`, `OUTPUT` files are deleted.
 </div></div>
-
-<hr class="sep-both">
 
 <hr class="sep-both">
 
