@@ -830,7 +830,9 @@ target_compile_options(my_target PRIVATE
 ```
 </div><div>
 
-#### Generate Headers
+#### Configure files
+
+* **Usage**: Generate Headers 🔥
 
 You can generate headers from a template filled with CMake Variables:
 
@@ -846,7 +848,30 @@ Both syntaxes can be used. Variables are replaced if they are defined, or the "d
 configure_file(configure.h.in configure.h)
 ```
 
-<br>
+* **Usage**: Add folders to the build 🔥
+
+We may want to copy some files in the build, for instance if they are not compiled but used by other targets.
+
+```cmake
+configure_file(
+        data/file.txt
+        ${CMAKE_BINARY_DIR}/data/file.txt COPYONLY
+)
+```
+
+* **Usage**: Generate Files 🔥
+
+We often use it to generate headers, but it works for any file.
+
+```shell!
+$ cat template.sh
+XXX=@MY_VARIABLE@
+```
+
+```cmake
+set(MY_VARIABLE "SOME VALUE")
+configure_file(template.sh script.sh @ONLY)
+```
 
 </div></div>
 
@@ -875,14 +900,9 @@ Stuff that I found, but never read/used yet.
 * `XXX-config.cmake`/`XXXConfig.cmake`
 
 ```cmake
-include(GoogleTest)
-gtest_discover_tests(tests_target)
-
 $<XXX:arg>
 $<IF:xxx,yyy,zzz>
 $<IF:xxx,yyy,>
-
-configure_file(xxx.xxx ${CMAKE_BINARY_DIR}/yyy.cmake @ONLY)
 
 option(MY_OPTION "XXX" ON)
 ```
