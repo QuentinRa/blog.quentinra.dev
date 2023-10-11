@@ -48,19 +48,17 @@ CheckOptions:
 
 #### compile_commands.json
 
-For more complex projects, we generate `compile_commands.json` which defines the command to compile each file. Using [CMake](/tools-and-frameworks/others/build/cmake/index.md):
+For more complex projects, we generate `compile_commands.json` which defines the command to compile each file. This file can be generated automatically using [CMake](/tools-and-frameworks/others/build/cmake/index.md):
 
 ```shell!
-$ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
-$ # build the project ...
-$ cat folder_with_compile_commands/compile_commands.json
+$ cat compile_commands.json
 [{
     "directory": "src",
     "command": "g++ src/source.cpp",
     "file": "source.cpp"
 }]
-$ clang-tidy -p folder_with_compile_commands source.cpp
+$ clang-tidy -p . [...]
 ```
 
-⚠️ For some reason, if there is no `compile_commands.json` in the current directory, then the file from `folder_with_compile_commands` is copied into the current directory and used for the following calls.
+⚠️ If the folder with the `compile_commands.json` file is different that the current folder (`.`) and there is no `compile_commands.json` in the current folder, it will be copied in the current folder.
 </div></div>

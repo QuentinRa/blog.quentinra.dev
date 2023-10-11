@@ -733,6 +733,59 @@ $ ctest            # use "-V" for verbose
 
 <hr class="sep-both">
 
+## Static Code Analysis
+
+<div class="row row-cols-md-2"><div>
+
+You can configure static code analyzers. There are multiple tools and multiple ways to do it, each with its own inconvenient.
+
+We will use [clang-tidy](/programming-languages/low-level/compilers/clang/clang-tidy.md) as a reference here.
+
+The easiest way is to set `CMAKE_CXX_CLANG_TIDY`:
+
+```cmake
+# all targets - before any target declaration
+find_program(CLANG_TIDY_PATH clang-tidy REQUIRED)
+set(CMAKE_CXX_CLANG_TIDY "${CLANG_TIDY_PATH};-checks=*")
+
+# per target - after target declaration
+find_program(CLANG_TIDY_PATH clang-tidy REQUIRED)
+set_target_properties(targetName
+        PROPERTIES CXX_CLANG_TIDY
+        "${CLANG_TIDY_PATH};-checks=*"
+)
+```
+
+Unfortunately, clang-tidy is now called after each build. There is a well-known script handle this: [cmake-scripts](https://github.com/StableCoder/cmake-scripts/blob/main/tools.cmake).
+</div><div>
+
+Otherwise, you may use the previous common approach. As long as you provide the list of all sources to compile, it works well.
+
+```cmake
+# tell clang-tidy which options to use (see: -p=.)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+# list all sources to check - use a regex?
+set(ALL_SOURCES "${CMAKE_SOURCE_DIR}/src/example.cpp")
+
+# add a target clang-tidy
+find_program(CLANG_TIDY_PATH clang-tidy REQUIRED)
+set(CLANG_TIDY_ARGS "-p=.;-checks=*")  # Specify your desired checks
+add_custom_target(clang-tidy
+        COMMAND ${CLANG_TIDY_PATH} ${CLANG_TIDY_ARGS} ${ALL_SOURCES}
+        WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+)
+```
+
+The main advantage is that you control when clang-tidy is called, and that you can redirect the output for instance to a file.
+
+```shell!
+$ cmake --build . -t clang-tidy
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## CMake Custom Targets
 
 <div class="row row-cols-md-2"><div>
@@ -890,12 +943,10 @@ Stuff that I found, but never read/used yet.
 * [ModernCppStarter](https://github.com/TheLartians/ModernCppStarter)
 * [Akagi201/learning-cmake](https://github.com/Akagi201/learning-cmake) and [awesome-cmake](https://github.com/onqtam/awesome-cmake)
 * execute_process, target_precompile_headers
-* clang-tidy headers
 * `mark_as_advanced` (show in GUI editor?)
 </div><div>
 
 * macros (unlike function, no need for PARENT_SCOPE)
-* see [clang-tidy](/programming-languages/low-level/compilers/clang/clang-tidy.md) (`cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON`)
 * `cmake --install /path/ --prefix /path/`
 * `XXX-config.cmake`/`XXXConfig.cmake`
 
