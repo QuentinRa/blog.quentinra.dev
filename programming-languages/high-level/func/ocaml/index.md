@@ -26,9 +26,13 @@ $ opam install some_package    # see also: update, upgrade
 
 <hr class="sep-both">
 
-## OCaml Functional Paradigm
+## OCaml as a functional language
 
 <div class="row row-cols-md-2"><div>
+
+#### Implicit types
+
+Types are implicit and should not be made explicit.
 
 #### Immutability
 
@@ -231,6 +235,43 @@ let str = "ab" ^ "c";     (* concatenation *)
 ```
 
 ⚠️ `!`, `!=` and `==` are reserved for addresses comparisons.
+</div></div>
+
+<hr class="sep-both">
+
+## OCaml Functions
+
+<div class="row row-cols-md-2"><div>
+
+#### Declare a function
+
+There are two keywords to declare functions: `fun` or `function`, while you may use neither of them.
+
+```ocaml
+(* f(x,y) = x * y *)
+let f x y = x * y (* 🚀 *)
+let f = fun x y -> x * y
+let f = fun x -> fun y -> x * y
+let f = function x -> function y -> x * y (* 😶 *)
+```
+
+You may notice it, in OCaml, functions are [curried](https://en.wikipedia.org/wiki/Currying) by default, which means that a function that appears to take multiple arguments is actually a series of functions that take one argument each.
+
+Also, functions are only returning one value.
+
+<br>
+
+#### Call a function
+
+The process to call a function is pretty straightforward:
+
+```ocaml
+let v1 = f 5 5        (* 25 *)
+let v2 = f 5 (-1)     (* -5 *)
+let v3 = f 5 (f 6 v2) (* -150 *)
+```
+</div><div>
+
 </div></div>
 
 <hr class="sep-both">

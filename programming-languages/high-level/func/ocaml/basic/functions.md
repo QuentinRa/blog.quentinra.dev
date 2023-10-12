@@ -1,37 +1,5 @@
 # Functions
 
-[Go back](../index.md#basic-concepts)
-
-You got a lot of ways to declare a function such as using `fun` or `function`, but as I do, you may not use any.
-
-<hr class="sl">
-
-## Some logic
-
-A function is only **taking one argument**, and **returning one result**. When you are declaring a function taking two arguments or more, this is the same as a function taking one argument and returning a function with n-1 arguments.
-
-```ocaml
-(* f(x) = x *)
-let f = fun x -> x
-
-(* f(x,y) = x *)
-let f = fun x y -> x
-let f = fun x -> (fun y -> x)
-let f = fun x -> fun y -> x (* unneeded parenthesis *)
-```
-
-<hr class="sr">
-
-## Declaring a function in OCaml
-
-```ocaml
-(* f(x,y) = x * y *)
-let f x y = x * y (* 🚀 *)
-let f = fun x y -> x * y
-let f = fun x -> fun y -> x * y
-let f = function x -> function y -> x * y (* 😶 *)
-```
-
 You can also add the types. Here
 
 * you should notice that we used `*`
@@ -43,19 +11,6 @@ You can also add the types. Here
 let f (x: int) (y: int) : int = x * y
 let f = fun (x: int) (y: int) : int -> x * y
 let f = fun (x: int) -> fun (y: int) : int -> x * y
-```
-
-<hr class="sr">
-
-## Call a function in OCaml
-
-```ocaml
-let f x y = x * y
-
-let f_5_by_5 = f 5 5 (* 25 *)
-let f_5_by_m1 = f 5 (-1) (* -5 *)
-let f_5_by_p1 = f 5 (+1) (* 5 *)
-let f_5_by_1 = f 5 1 (* 5 *)
 ```
 
 <hr class="sl">
