@@ -26,6 +26,37 @@ $ opam install some_package    # see also: update, upgrade
 
 <hr class="sep-both">
 
+## OCaml Functional Paradigm
+
+<div class="row row-cols-md-2"><div>
+
+#### Immutability
+
+The concept of immutability means that we can't modify a variable, e.g., all variables are constants.
+
+```ocaml
+let x = 5
+x = 6 (* ❌ NOT ALLOWED *)
+let x = 6 (* Delete and create a new one *)
+```
+
+<br>
+
+#### Higher-order function
+
+Everything is a value, or said otherwise, every element is a [first-class citizen](https://en.wikipedia.org/wiki/First-class_citizen) in OCaml. For instance, we can pass a function as an argument to another function, called [Higher-order function](https://en.wikipedia.org/wiki/Higher-order_function).
+
+```ocaml
+(* ⚠️ "1+2" is read by ocaml as "1" "+" "2" *)
+(* e.g. three arguments *)
+let _ = Format.printf "%d@." 1+2   (* ❌ *)
+let _ = Format.printf "%d@." (1+2) (* ✅ *)
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Getting Started
 
 <div class="row row-cols-md-2"><div>
@@ -195,4 +226,19 @@ Stuff that I found, but never read/used yet.
 * `Stdlib.compare a b` (-1, 0, 1)
 </div><div>
 
+<details class="details-border">
+<summary>ocamlfind</summary>
+
+OCaml find to do a lot of things involving libraries. One usage could be to compile using `ocamlc` files that use external libraries.
+
+```bash
+# create a file "test"
+# while compiling with debug information (-g)
+# avg.ml and test.ml
+# while linking external libraries: extlib and oUnit
+#
+# Read the documentation if you want to learn more about -package or -linkpkg, while -g/-o are options of ocamlc
+ocamlfind ocamlc -o test -package extlib,oUnit -linkpkg -g avl.ml test.ml
+```
+</details>
 </div></div>

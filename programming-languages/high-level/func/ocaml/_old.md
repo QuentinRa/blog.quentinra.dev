@@ -1,61 +1,6 @@
-# Opam
+# Functional languages
 
-<details class="details-border">
-<summary>ocamlfind</summary>
-
-OCaml find to do a lot of things involving libraries. One usage could be to compile using `ocamlc` files that use external libraries.
-
-```bash
-# create a file "test"
-# while compiling with debug information (-g)
-# avg.ml and test.ml
-# while linking external libraries: extlib and oUnit
-#
-# Read the documentation if you want to learn more about -package or -linkpkg, while -g/-o are options of ocamlc
-ocamlfind ocamlc -o test -package extlib,oUnit -linkpkg -g avl.ml test.ml
-```
-</details>
-
-<hr class="sr">
-
-## Functional languages
-
-You must declare a variable with `let`. **You can't modify a variable, you will have to create a new one** (concept of **immutability** ✨).
-
-```ocaml
-let x = 5
-x = 6 (* NOT POSSIBLE *)
-let x = 6 (* delete the old x, create a new one *)
-```
-
-In functional languages, there should be no side effects. Hence, **if you are not storing something in a variable**, **the compiler will ignore it**, something like "If I don't see you use it later, then it means that you don't need it" (concept of **purity** ✨). In other words, a function returning "void" such as a print is impure. Fortunately, variables starting with a `_` are not stored by the compiler, so you can use this when calling an impure function.
-
-```ocaml
-Printf.printf "%s\n" "Hello, World" (* IGNORED !!! *)
-let _ = Printf.printf "%s\n" "Hello, World"
-
-(* In OCaml, "1+2" without parenthesis is considered as given 3 parameters '1' '+' '2' to a function, so add parenthesis *)
-let _ = Format.printf "%d@." (1+2)
-(* same for "-1" *)
-let _ = Format.printf "%d@." (-1)
-```
-
-To be accurate, in OCaml **everything is a value**, so you can give "`-`" (minus) to a function, as for OCaml "`-`" is a function taking two integers and returning one integer. A function taking another function in argument is called a **higher-order function** ✨ (`fonction d'ordre supérieur`).
-
-<details class="details-border">
-<summary>Summary of functional paradigm</summary>
-
-* **Immutability**: you can modify a variable
-* **Referential transparency**: if `f(x)=y`,
-  writing `y` or `f(x)` must be the same. 
-* **Purity**: `f(x)-f(x)` is equals to 0, there is no side effects, and you can predict the outcome of your code
-* **Implicit types**: types are implicit
-* **First-class citizens**: a function can be given as parameter to another function called higher-order function (`Fonction d'ordre supérieur`)
-</details>
-
-<hr class="sl">
-
-## Basic concepts
+<div class="row row-cols-md-2"><div>
 
 * [Types, operators and structures](basic/syntax.md)
 * [Functions](basic/functions.md)
@@ -65,10 +10,7 @@ You might challenge yourself with these exercises
 
 * [MCQ](basic/mcq.md)
 * [Write some code](basic/exercises.md)
-
-<hr class="sr">
-
-## Intermediary concepts
+</div><div>
 
 * [Composite types](interm/tuples.md)
 * [Creating new types](interm/types.md)
@@ -76,19 +18,14 @@ You might challenge yourself with these exercises
 * [Pattern Matching](interm/match.md) 🚀
 * [Exceptions](interm/exceptions.md)
 * [Asserts](interm/asserts.md)
-
-And here are some exercises
-
-* MCQ (not yet)
 * [Write some code](interm/exercises.md)
 
-<hr class="sl">
-
-## Advanced concepts
+Advanced concepts
 
 * [Interfaces](advanced/interfaces.md)
 * [Modules](advanced/modules.md)
 * [Functors](advanced/functors.md)
+</div></div>
 
 <hr class="sl">
 
