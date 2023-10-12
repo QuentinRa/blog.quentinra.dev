@@ -239,9 +239,11 @@ let str = "ab" ^ "c";     (* concatenation *)
 
 <hr class="sep-both">
 
-## OCaml Branching
+## Control-flow, Branching, and Type Inference
 
 <div class="row row-cols-md-2"><div>
+
+#### OCaml Branching
 
 As a reminder, everything is a value in OCaml, including statements.
 
@@ -256,7 +258,6 @@ let f x =
     let r = if x > 0 then 30 else 15 in
     x + r
 ```
-</div><div>
 
 You can use `else if`:
 
@@ -265,7 +266,33 @@ if ... then ... else if ... then ... else ...
 (* which is actually *)
 if ... then ... else (if ... then ... else ...)
 ```
+</div><div>
 
+#### Type Inference
+
+Types are inferred, but you may add `: type` after a variable name.
+
+```ocaml
+let x : float = 5.0
+```
+
+When a value could be of any type, we use `'a`, `'b` etc.
+
+```ocaml
+let f x = 5.0 (* the type of x is unknown: 'a *)
+```
+
+Types for function are the type of each parameter, with parenthesis if needed, followed by the return type, and separated with `->`.
+
+```ocaml
+(* int -> int -> int *)
+let f x y = x + y (* x = int, y = int, return int *)
+
+(* ('a -> int -> b') -> 'a -> b' *)
+let g h x = h x 10 (* h = function, x = 'a, return b' *)
+```
+
+➡️ Only the type of the second parameter of `h` can be inferred. We could infer that `h` is a function as there is a function call `h x 10`.
 </div></div>
 
 <hr class="sep-both">
@@ -318,6 +345,7 @@ Stuff that I found, but never read/used yet.
 * [Functions on string](https://ocaml.org/api/String.html) (String.equal, String.length, ex: `String.length "5"`, `"ab" ^ "c"`)
 * Lists: `[]`, `@::[]`, `5::[]`
 * `Stdlib.compare a b` (-1, 0, 1)
+* partial function (function not entirely called)
 </div><div>
 
 <details class="details-border">

@@ -2,12 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-* [Types, operators and structures](basic/syntax.md)
-* [Functions](basic/functions.md)
 * [Recursive functions](basic/rec.md)
-
-You might challenge yourself with these exercises
-
 * [MCQ](basic/mcq.md)
 * [Write some code](basic/exercises.md)
 </div><div>
