@@ -53,6 +53,28 @@ let _ = Format.printf "%d@." 1+2   (* ❌ *)
 let _ = Format.printf "%d@." (1+2) (* ✅ *)
 ```
 </div><div>
+
+#### Purity
+
+Functions should not have any side effects. For instance, if I write a line and do not store the result in a variable, removing the line should not have any impact.
+
+```ocaml
+(* not stored in a variable: skipped by the compiler *)
+Printf.printf "%s\n" "Hello, World"
+```
+
+🔥 Every printing function returning `Unit` is not pure.
+
+#### Referential transparency
+
+This concept is quite related to the concept of Purity. As functions are pure, it means that we can replace the function by its result without impacting the program.
+
+```diff
+let f x = x -1
+-let y = f 5
+(* After substitution, it becomes: *)
++let y = 4
+```
 </div></div>
 
 <hr class="sep-both">
