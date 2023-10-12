@@ -239,6 +239,37 @@ let str = "ab" ^ "c";     (* concatenation *)
 
 <hr class="sep-both">
 
+## OCaml Branching
+
+<div class="row row-cols-md-2"><div>
+
+As a reminder, everything is a value in OCaml, including statements.
+
+```ocaml
+let xxx = if condition then value_if_true else value_if_false
+
+(* simple example *)
+let n = if 10 > 0 then 10 else 15
+
+(* example within the code *)
+let f x =
+    let r = if x > 0 then 30 else 15 in
+    x + r
+```
+</div><div>
+
+You can use `else if`:
+
+```ocaml
+if ... then ... else if ... then ... else ...
+(* which is actually *)
+if ... then ... else (if ... then ... else ...)
+```
+
+</div></div>
+
+<hr class="sep-both">
+
 ## OCaml Functions
 
 <div class="row row-cols-md-2"><div>

@@ -22,29 +22,3 @@ let f a b = a
 ```
 
 You could see that as `f(a,b) = a` working whatever a or b given (int, string, ...).
-
-<hr class="sr">
-
-## Structures
-
-Officially, you may only use `if ... else ...`.
-
-```ocaml
-(* normal ifelse *)
-if condition then expression_if_true else expression_if_false
-
-(* else if *)
-if ... then ... else if ... then ... else ...
-(* which is in fact... *)
-if ... then ... else (if ... then ... else ...)
-```
-
-* ✅: You must have an else clause, it's mandatory
-* 🤮: do NOT do this
-
-```ocaml
-(* bad 🤮, 1 > 0 is already returning true or false *)
-let is_1_greater_than_0 = if 1 > 0 then true else false
-(* better 😎 *)
-let is_1_greater_than_0 = 1 > 0
-```
