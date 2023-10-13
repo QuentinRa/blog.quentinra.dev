@@ -7,8 +7,6 @@
 * [Write some code](basic/exercises.md)
 </div><div>
 
-* [Composite types](interm/tuples.md)
-* [Creating new types](interm/types.md)
 * [Lists](interm/lists.md)
 * [Pattern Matching](interm/match.md) 🚀
 * [Exceptions](interm/exceptions.md)

@@ -313,7 +313,26 @@ let v3 = f 5 (f 6 v2) (* -150 *)
 
 <div class="row row-cols-md-2"><div>
 
-...
+#### Composite types
+
+A composite type, commonly called a tuple or record, is a type made of multiple types. It's useful as function can only return one value.
+
+```ocaml
+let person = ("name", 5)
+(* same, but less readable 🙄 *)
+let person = "name", 5
+```
+
+The type is `string * int`.
+
+```ocaml
+let name = fst person (* "name" *)
+let age = snd person (* 5 *)
+(* deconstruct *)
+let (name, age) = person
+let (name, _) = person (* name only *)
+let (_, age) = person (* age only *)
+```
 </div><div>
 
 ...
