@@ -351,6 +351,40 @@ let g h x = h x 10 (* h = function, x = 'a, return b' *)
 
 ➡️ Only the type of the second parameter of `h` can be inferred. We could infer that `h` is a function as there is a function call `h x 10`.
 </div><div>
+
+#### Create a type
+
+You can declare of type composed of other types:
+
+```ocaml
+type person = string * int
+let john : person = ("John Doe", 42)
+```
+
+<br>
+
+#### Constructors
+
+A constructor is a way to create variables of a new type.
+
+```ocaml
+type person = Person of string * int
+let john = Person ("John Doe", 42)
+```
+
+You can have multiple of them:
+
+```ocaml
+type tree = Empty | Node of tree * int * tree
+type tree = | Empty | Node of tree * int * tree
+type tree =
+    | Empty
+    | Node of tree * int * tree
+
+let empty_tree = Empty
+let a_node = Node (empty_tree, 1, empty_tree)
+let another_node = Node (node_1, 1, node_1)
+```
 </div></div>
 
 <hr class="sep-both">
