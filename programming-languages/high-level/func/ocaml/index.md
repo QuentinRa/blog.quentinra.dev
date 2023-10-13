@@ -239,7 +239,7 @@ let str = "ab" ^ "c";     (* concatenation *)
 
 <hr class="sep-both">
 
-## Control-flow, Branching, and Type Inference
+## Control-flow and Branching
 
 <div class="row row-cols-md-2"><div>
 
@@ -268,31 +268,6 @@ if ... then ... else (if ... then ... else ...)
 ```
 </div><div>
 
-#### Type Inference
-
-Types are inferred, but you may add `: type` after a variable name.
-
-```ocaml
-let x : float = 5.0
-```
-
-When a value could be of any type, we use `'a`, `'b` etc.
-
-```ocaml
-let f x = 5.0 (* the type of x is unknown: 'a *)
-```
-
-Types for function are the type of each parameter, with parenthesis if needed, followed by the return type, and separated with `->`.
-
-```ocaml
-(* int -> int -> int *)
-let f x y = x + y (* x = int, y = int, return int *)
-
-(* ('a -> int -> b') -> 'a -> b' *)
-let g h x = h x 10 (* h = function, x = 'a, return b' *)
-```
-
-➡️ Only the type of the second parameter of `h` can be inferred. We could infer that `h` is a function as there is a function call `h x 10`.
 </div></div>
 
 <hr class="sep-both">
@@ -330,6 +305,52 @@ let v3 = f 5 (f 6 v2) (* -150 *)
 ```
 </div><div>
 
+</div></div>
+
+<hr class="sep-both">
+
+## OCaml Advanced Types
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## OCaml Custom Types
+
+<div class="row row-cols-md-2"><div>
+
+#### Type Inference
+
+Types are inferred, but you may add `: type` after a variable name.
+
+```ocaml
+let x : float = 5.0
+```
+
+When a value could be of any type, we use `'a`, `'b` etc.
+
+```ocaml
+let f x = 5.0 (* the type of x is unknown: 'a *)
+```
+
+Types for function are the type of each parameter, with parenthesis if needed, followed by the return type, and separated with `->`.
+
+```ocaml
+(* int -> int -> int *)
+let f x y = x + y (* x = int, y = int, return int *)
+
+(* ('a -> int -> b') -> 'a -> b' *)
+let g h x = h x 10 (* h = function, x = 'a, return b' *)
+```
+
+➡️ Only the type of the second parameter of `h` can be inferred. We could infer that `h` is a function as there is a function call `h x 10`.
+</div><div>
 </div></div>
 
 <hr class="sep-both">
