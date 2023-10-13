@@ -271,6 +271,36 @@ if ... then ... else (if ... then ... else ...)
 ```
 </div><div>
 
+#### Exceptions
+
+An exception means something unexpected occurred. It's commonly used to report errors, while in OCaml, it's often used to stop the execution of a function when we got our result.
+
+<details class="details-n">
+<summary>Example of using exceptions to stop the execution of a function</summary>
+
+Imagine we want to add an element in a set <small>(unique values)</small>. When we notice the element is already in, we raise an exception and return the existing set instead of creating a new one.
+
+```ocaml
+let add_to_uniq_list e list =
+  let rec aux_unique_list acc = function
+    | [] -> List.rev (e::acc) (* not in; add our element *)
+    | x :: xs ->
+        if x = e then (* raise an exception *)
+          raise (Failure "Already in")
+        else (* recreate the set *)
+          aux_unique_list (x :: acc) xs
+  in
+  try
+    aux_unique_list [] list
+  with (* return the list unchanged *)
+  | Failure _ -> list
+;;
+
+(* examples *)
+create_unique_list 5 [3;6;4];;
+create_unique_list 3 [3;6;4];;
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
