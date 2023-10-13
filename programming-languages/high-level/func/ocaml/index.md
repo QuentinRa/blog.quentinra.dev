@@ -8,6 +8,9 @@
 * [Manual](https://v2.ocaml.org/manual/index.html) <small>(⛪)</small>
 * [Online OCaml REPL](https://try.ocamlpro.com/) <small>(🚀)</small>
 * [ocamlverse.net](http://ocamlverse.net/) <small>(🚀)</small>
+* [ocaml-sf](https://ocaml-sf.org/learn-ocaml-public) <small>(👻)</small>
+* [RealWorldOCaml](http://dev.realworldocaml.org/) <small>(📚)</small>
+* [OCaml Programming](https://cs3110.github.io/textbook/cover.html) <small>(📚)</small>
 </div><div>
 
 To most common way to get started is to use the [opam](https://opam.ocaml.org/) package manager to install any version of OCaml we need.
@@ -333,9 +336,52 @@ let (name, age) = person
 let (name, _) = person (* name only *)
 let (_, age) = person (* age only *)
 ```
+
+<br>
+
+#### Strings
+
+There are [multiple functions](https://v2.ocaml.org/api/String.html) for strings.
+
+```ocaml
+let equal = String.equal "a" "b" (* false *)
+let length = String.length "a" (* 1 *)
+```
 </div><div>
 
-...
+#### Lists
+
+There are [multiple functions](https://v2.ocaml.org/api/List.html) for lists. Lists are generic,  as per the `'a`. `[]` is an empty list and `a::list` means adding `a` to `list`.
+
+```ocaml
+(* the official type of a List *)
+type 'a list = [] | (::) of 'a * 'a list
+```
+
+Common uses:
+
+```ocaml
+let empty_list = []
+let list = 7::list  (* add 7 at the front of list *)
+let list = list@[7] (* add 7 at the end of list *)
+let list = 7::5::[] (* same as 7::(5::[]) *)
+let list = [7;5]    (* same as 7::5::[] *)
+```
+
+⚠️ Beware that using `,` such as `[7,5]` means the list `[(7, 5)]` <small>(tuple)</small>.
+
+```ocaml
+let length = List.length [5;6] (* 2 *)
+let merge = List.concat [[5;6];[7;8]] (* [5;6;7;8] *)
+let reversed = List.rev [5;6] (* [6;5] *)
+let head = List.hd [5;6] (* 5 *)
+let tail = List.tl [5;6] (* [6] *)
+let is_inside = List.mem 5 [5;6] (* true *)
+
+(* higher-order function 🚀 *)
+let plus_one = List.map (fun x -> x+1) [5;6] (* [6;7] *)
+let remove_five = List.filter (fun x -> x <> 5) [5;6] (* [6] *)
+```
 </div></div>
 
 <hr class="sep-both">
@@ -416,7 +462,6 @@ Stuff that I found, but never read/used yet.
 
 * [old](_old.md)
 * do not use "unit"
-* [Functions on string](https://ocaml.org/api/String.html) (String.equal, String.length, ex: `String.length "5"`, `"ab" ^ "c"`)
 * Lists: `[]`, `@::[]`, `5::[]`
 * `Stdlib.compare a b` (-1, 0, 1)
 * partial function (function not entirely called)

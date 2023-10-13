@@ -3,11 +3,10 @@
 <div class="row row-cols-md-2"><div>
 
 * [Recursive functions](basic/rec.md)
-* [MCQ](basic/mcq.md)
 * [Write some code](basic/exercises.md)
 </div><div>
 
-* [Lists](interm/lists.md)
+* [Folds](interm/lists.md)
 * [Pattern Matching](interm/match.md) 🚀
 * [Exceptions](interm/exceptions.md)
 * [Asserts](interm/asserts.md)
@@ -52,25 +51,3 @@ Also, in OCaml, you can have a comment inside another comment. What I mean, is t
 ```
 
 </details>
-
-<hr class="sl">
-
-## Sources
-
-**French course**
-
-* [ENSIIE Teachings](https://www.ensiie.fr/)
-* [Univ. Lille1 teachings](https://www.fil.univ-lille.fr/~wegrzyno/portail/Elfe/Doc/Cours-PF/cours-1.pdf) (courses 1 to 4, change the number in the URL)
-* [Wikipedia](https://en.wikipedia.org/wiki/Functional_programming#Concepts)
-* [GeeksForGeeks](https://www.geeksforgeeks.org/functional-programming-paradigm/)
-
-**Exercises**
-
-* [LearnOcaml (GitHub)](https://github.com/ocaml-sf/learn-ocaml) and [Online demo](https://ocaml-sf.org/learn-ocaml-public/)
-
-**Courses**
-
-* [RealWorldOCaml](http://dev.realworldocaml.org/) (an amazing free ebook about OCaml)
-* [The official tutorial](https://ocaml.org/docs) along with [OCaml 4.14 documentation and reference](https://v2.ocaml.org/releases/4.14/ocaml-4.14-refman.pdf)
-* [OCaml: LearnCode](https://ocaml-learn-code.com/) (an app to learn/code OCaml, along with some stuff on their website)
-* [An online free ebook about OCaml](https://cs3110.github.io/textbook/cover.html)
