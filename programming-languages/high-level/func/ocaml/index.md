@@ -681,10 +681,8 @@ Note that everything inside the `.mli` **should be copied to** the `.ml`.
 <div class="tab-pane fade show active" id="mli">
 
 ```ocaml
-(* Others files can use the function add or the type set *)
-
 type set = int list
-(* a set is a list of ints *)
+(* we define a set as list of ints *)
 
 val add : set -> int -> set
 (** [add s e]: take a set, an int, and return the set with the new element inside.
@@ -694,20 +692,19 @@ val add : set -> int -> set
 <div class="tab-pane fade" id="ml">
 
 ```ocaml
-(* copy-paste of the public parts aside from the functions *)
 type set = int list
 
-(* this is private *)
+(* this is private as it was not in the .mli *)
 exception Exit_add
 
-(** "implement add" *)
+(** "implement Set#add" *)
 let add set e = try
-	let rec add_acc s = match s with
-		| [] -> [e]
-		| hd::tl ->
-			if (e = hd) then raise Exit_add
-    	    else if (hd > e) then hd::(add_acc tl) (* head unchanged, checking the rest *)
-    	    else e::s (* add first, as it is the lowest value *)
+  let rec add_acc s = match s with
+  | [] -> [e]
+  | hd::tl ->
+    if (e = hd) then raise Exit_add
+    else if (hd > e) then hd::(add_acc tl) (* head unchanged, checking the rest *)
+    else e::s (* add first, as it is the lowest value *)
     in add_acc set
 with Exit_add -> set (* using exceptions to exit faster, and return the unchanged list *)
 ```
@@ -715,11 +712,9 @@ with Exit_add -> set (* using exceptions to exit faster, and return the unchange
 <div class="tab-pane fade" id="run">
 
 ```ocaml
-(* name of the file, having the function
-we are importing *)
-open Example
+open Example (* import "add"... *)
 
-(* list with five *)
+(* add 5 to empty list *)
 let five = add [] 5
 (* print the first value *)
 let _ = Format.printf "%d@." (List.hd five)
@@ -946,11 +941,11 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [old](_old.md)
 * do not use "unit"
 * `Stdlib.compare a b` (-1, 0, 1)
 * partial function (function not entirely called)
 * odoc, `(** *)`
+* `Some s`, `None`
 
 <details class="details-border">
 <summary>ocamlfind</summary>

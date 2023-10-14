@@ -6,14 +6,12 @@ List of courses that have note which were not added yet.
 
 **Programming Languages**
 
-* (review, typos) web (general), blockchain
+* (review, typos) web (general), blockchain, OCaml
 * **API** > GraphQL
-* OCaml
 
 **Tools and Frameworks**
 
-* **Pandora**
-* JetBrains plugin development
+* (review, typos) Pandora, JetBrains plugin development
 * Project > Tools?
 </div><div>
 
