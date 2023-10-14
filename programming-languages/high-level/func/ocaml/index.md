@@ -269,6 +269,16 @@ if ... then ... else if ... then ... else ...
 (* which is actually *)
 if ... then ... else (if ... then ... else ...)
 ```
+
+#### Assert
+
+Assert is a function taking a boolean and raising an [exception](#exceptions) (`Assert_failure`) if the boolean is false. It's used to test the code.
+
+```ocaml
+let f x = x
+let _ = assert (f 5 = 5)
+```
+
 </div><div>
 
 #### Exceptions
