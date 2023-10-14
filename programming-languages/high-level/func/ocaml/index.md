@@ -275,6 +275,31 @@ if ... then ... else (if ... then ... else ...)
 
 An exception means something unexpected occurred. It's commonly used to report errors, while in OCaml, it's often used to stop the execution of a function when we got our result.
 
+Some pre-defined exceptions: 
+
+* `Division_by_zero`
+* `Failure s`: we can't work with the given arguments
+* `Invalid_argument s`: the given arguments do not make sense
+* `Match_failure (s,i,i)`: missing match case
+* `Not_found`: something was not found
+
+To raise an exception:
+
+```ocaml
+(* Custom Exceptions *)
+exception MyException1
+exception MyException2 of string
+raise MyException1
+raise (MyException2 "message")
+(* raise an exception *)
+invalid_arg "message" (* raise (Invalid_argument "message") *)
+failwith  "message"   (* raise (Failure "message") *)
+(* Catch an exception *)
+try 
+    raise Failure "message"
+with Failure m -> (* do something | m is a variable name *)
+```
+
 <details class="details-n">
 <summary>Example of using exceptions to stop the execution of a function</summary>
 

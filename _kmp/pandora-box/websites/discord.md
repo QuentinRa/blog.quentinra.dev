@@ -34,6 +34,7 @@ int main(void){
 * [disforge.com](https://disforge.com/) <small>(servers, bots)</small>
 * [emoji.gg](https://emoji.gg/) <small>(emojis)</small>
 * [discords.com](https://discords.com/) <small>(servers, bots, emojis)</small>
+* [discadia.com](https://discadia.com/)
 </div><div>
 
 ##### BetterDiscord
