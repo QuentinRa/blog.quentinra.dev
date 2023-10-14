@@ -14,69 +14,6 @@ let node l h r = Node(l, h, max (get_depth l) (get_depth r), r)
 
 > **My note 🙄**: the depth is usually called the height of the tree, but it was disturbing me because we were also calling "h" the head of the tree, now with the depth I'm fine 😬🙄.
 
-<hr class="sr">
-
-## Rotations
-
-We got four rotations, that we will use to balance our tree.
-
-<div class="row mx-0 justify-content-center"><div class="col-4  border border-dark me-3">
-
-[comment]: <> ([h [l] [rh [rl] [rr]] ])
-[comment]: <> ([rh [h [l] [rl]] [rr] ])
-
-![AVL Rotate Left - Begin](_images/rotate_l_1.jpg)
-**Left Rotation**
-![AVL Rotate Left - End](_images/rotate_l_2.jpg)
-
-**(1/4) Left Rotation**: If we are adding a child in **rr**.
-</div><div class="col-4 border border-dark">
-
-[comment]: <> ([h [lh [ll] [lr]] [r]])
-[comment]: <> ([lh [ll] [h [lr] [r]]])  
-
-![AVL Rotate Right - Begin](_images/rotate_r_1.jpg)
-**Right Rotation**
-![AVL Rotate Right - End](_images/rotate_r_2.jpg)
-
-**(2/4) Right Rotation**: If we are adding a child in **ll**.
-</div></div>
-
-<div class="p-3 border border-dark mt-3">
-
-[comment]: <> ([h [lh [ll] [lrh [lrl] [lrr]]] [r]])
-[comment]: <> ([h [lrh [lh [ll] [lrl]] [lrr]] [r]])
-[comment]: <> ([lrh [lh [ll] [lrl]] [h [lrr] [r]]])
-
-![AVL Rotate Left-Right - Begin](_images/rotate_r_1.jpg)
-Inserting in lr
-![AVL Rotate Left-Right - Balance](_images/rotate_lr_1.jpg)
-**Left Rotation**
-![AVL Rotate Left-Right - Half done](_images/rotate_lr_2.jpg)
-**Right Rotation**
-![AVL Rotate Left-Right - End](_images/rotate_lr_3.jpg)
-
-**(3/4) Left-Right Rotation**: If we are adding a child in **lr** <small>(=lrh if lr is empty, otherwise either lrl or lrr)</small>.
-</div>
-
-<div class="p-3 border border-dark mt-3">
-
-[comment]: <> ([h [l] [rh [rlh [rll] [rlr]] [rr]]])
-[comment]: <> ([h [l] [rlh [rll] [rh [rlr] [rr]]]])
-[comment]: <> ([rlh [h [l] [rll]] [rh [rlr] [rr]]])
-
-![AVL Rotate Right-Left - Begin](_images/rotate_l_1.jpg)
-Inserting in rl
-![AVL Rotate Right-Left - Balance](_images/rotate_rl_1.jpg)
-**Right Rotation**
-![AVL Rotate Right-Left - Half done](_images/rotate_rl_2.jpg)
-**Left Rotation**
-![AVL Rotate Right-Left - End](_images/rotate_rl_3.jpg)
-
-**(4/4) Right-Left Rotation**: If we are adding a child in **rl**
-<small>(=rlh if lr is empty, otherwise either rll or rlr)</small>.
-</div>
-
 <hr class="sl">
 
 ## Balance your tree

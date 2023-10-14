@@ -46,7 +46,60 @@ Average time for get_min:                0.002800
 Average time for cardinal:               inf (too long)
 ```
 </details>
+</div></div>
 
+<hr class="sep-both">
+
+## Rotations
+
+<div class="row row-cols-md-2"><div>
+
+Each time we add an element <small>(parent node determined by the algorithm)</small>, we may have to correct imbalances using one of the 4 patterns below:
+
+<div class="text-center">
+
+![AVL Rotate Left - Begin](_images/rotate_l_1.jpg)
+**Left Rotation**
+![AVL Rotate Left - End](_images/rotate_l_2.jpg)
+
+If we are adding a child to rr.
+</div>
+
+<div class="text-center mt-5">
+
+![AVL Rotate Right - Begin](_images/rotate_r_1.jpg)
+**Right Rotation**
+![AVL Rotate Right - End](_images/rotate_r_2.jpg)
+
+If we are adding a child to ll.
+</div>
+</div><div>
+
+<div class="text-center">
+
+![AVL Rotate Left-Right - Begin](_images/rotate_r_1.jpg)
+Inserting in lr
+![AVL Rotate Left-Right - Balance](_images/rotate_lr_1.jpg)
+Apply Left Rotation
+![AVL Rotate Left-Right - Half done](_images/rotate_lr_2.jpg)
+Apply Right Rotation
+![AVL Rotate Left-Right - End](_images/rotate_lr_3.jpg)
+
+If we are adding a child to **lr** <small>(=lrh if lr is empty, otherwise either lrl or lrr)</small>.
+</div>
+
+<div class="text-center mt-5">
+
+![AVL Rotate Right-Left - Begin](_images/rotate_l_1.jpg)
+Inserting in rl
+![AVL Rotate Right-Left - Balance](_images/rotate_rl_1.jpg)
+Apply Right Rotation
+![AVL Rotate Right-Left - Half done](_images/rotate_rl_2.jpg)
+Apply Left Rotation
+![AVL Rotate Right-Left - End](_images/rotate_rl_3.jpg)
+
+If we are adding a child to **rl** <small>(=rlh if lr is empty, otherwise either rll or rlr)</small>.
+</div>
 </div></div>
 
 <hr class="sep-both">
