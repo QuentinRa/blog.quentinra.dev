@@ -44,14 +44,14 @@ The concept of immutability means that we can't modify a variable, e.g., all var
 ```ocaml
 let x = 5
 x = 6 (* ❌ NOT ALLOWED *)
-let x = 6 (* Delete and create a new one *)
+let x = 6 (* = Delete and create a new one *)
 ```
 
 <br>
 
 #### Higher-order function
 
-Everything is a value, or said otherwise, every element is a [first-class citizen](https://en.wikipedia.org/wiki/First-class_citizen) in OCaml. For instance, we can pass a function as an argument to another function, called [Higher-order function](https://en.wikipedia.org/wiki/Higher-order_function).
+Everything is a value, or said otherwise, every element is a [first-class citizen](https://en.wikipedia.org/wiki/First-class_citizen) in OCaml. For instance, we can pass a function as an argument to another function, called a [Higher-order function](https://en.wikipedia.org/wiki/Higher-order_function).
 
 ```ocaml
 (* ⚠️ "1+2" is read by ocaml as "1" "+" "2" *)
@@ -533,7 +533,7 @@ type person = Person of string * int
 let john = Person ("John Doe", 42)
 ```
 
-You can have multiple of them:
+You can have multiple of them <small>(all 3 'tree' are the same)</small>:
 
 ```ocaml
 type tree = Empty | Node of tree * int * tree
@@ -753,7 +753,39 @@ Error: Required module `Example` is unavailable
 ```
 </div><div>
 
-...
+#### Modules
+
+A module is a sort of box in which we declare variables, types, functions, etc. We define the module signature, and anyone can create its own implementation <small>(and the code should work with any of them)</small>.
+
+```ocaml
+module type MyModuleType = sig
+    type set = int list         (* declare a type *)
+    val add : set -> int -> set (* declare a function *)
+end
+```
+
+If you are using a `.mli`, you can declare a module using:
+
+```ocaml
+module MyModuleName : MyModuleType
+```
+
+To implement a module:
+
+```ocaml
+module MyModuleName : MyModuleType = struct
+    type set = int list (* implement the type *)
+    let add set e =     (* implement the function *)
+end
+```
+
+To use a module:
+
+```ocaml
+let five = MyModuleName.add [] 5
+```
+
+➡️ You can define an alias to a module: `module MyAlias = MyModuleName` meaning you can use `MyAlias` now.
 </div></div>
 
 <hr class="sep-both">
@@ -885,6 +917,7 @@ Stuff that I found, but never read/used yet.
 * do not use "unit"
 * `Stdlib.compare a b` (-1, 0, 1)
 * partial function (function not entirely called)
+* odoc, `(** *)`
 
 <details class="details-border">
 <summary>ocamlfind</summary>
