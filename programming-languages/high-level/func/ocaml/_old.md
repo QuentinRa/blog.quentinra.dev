@@ -2,7 +2,6 @@
 
 <div class="row row-cols-md-2"><div>
 
-* [Folds](interm/lists.md)
 * [Interfaces](advanced/interfaces.md)
 * [Modules](advanced/modules.md)
 * [Functors](advanced/functors.md)

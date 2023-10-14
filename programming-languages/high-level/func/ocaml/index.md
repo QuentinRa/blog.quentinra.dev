@@ -640,6 +640,123 @@ let first_two l = match l with
 
 <hr class="sep-both">
 
+## Interfaces and Modules
+
+<div class="row row-cols-md-2"><div>
+
+#### Interfaces
+
+When we compile a `.ml`, OCaml will create a `.mli` with the same contents as the `.ml`. It will compile both giving us a `.cmo` and a `.cmi`.
+
+We can create the `.mli` ourselves. It's an **interface** that represents what other `.ml` importing this file can use. It contains:
+
+* type declarations 🪨
+* function declarations 🌿
+* module declarations 📚
+* exception declarations 🔥
+* ...
+
+Use `open File_name` to import `file_name.ml`.
+
+Note that everything inside the `.mli` **should be copied to** the `.ml`.
+
+<details class="details-n">
+<summary>Example with a simple project</summary>
+
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a href="#mli" class="nav-link tab-link active" data-bs-toggle="tab">example.mli</a>
+    </li>
+    <li class="nav-item">
+        <a href="#ml" class="nav-link tab-link" data-bs-toggle="tab">example.ml</a>
+    </li>
+    <li class="nav-item">
+        <a href="#run" class="nav-link tab-link" data-bs-toggle="tab">example_test.ml</a>
+    </li>
+	<li class="nav-item">
+		<a href="#compile" class="nav-link tab-link" data-bs-toggle="tab">compile</a>
+	</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="mli">
+
+```ocaml
+(* Others files can use the function add or the type set *)
+
+type set = int list
+(* a set is a list of ints *)
+
+val add : set -> int -> set
+(** [add s e]: take a set, an int, and return the set with the new element inside.
+ The set is ordered and the values are uniques. *)
+```
+</div>
+<div class="tab-pane fade" id="ml">
+
+```ocaml
+(* copy-paste of the public parts aside from the functions *)
+type set = int list
+
+(* this is private *)
+exception Exit_add
+
+(** "implement add" *)
+let add set e = try
+	let rec add_acc s = match s with
+		| [] -> [e]
+		| hd::tl ->
+			if (e = hd) then raise Exit_add
+    	    else if (hd > e) then hd::(add_acc tl) (* head unchanged, checking the rest *)
+    	    else e::s (* add first, as it is the lowest value *)
+    in add_acc set
+with Exit_add -> set (* using exceptions to exit faster, and return the unchanged list *)
+```
+</div>
+<div class="tab-pane fade" id="run">
+
+```ocaml
+(* name of the file, having the function
+we are importing *)
+open Example
+
+(* list with five *)
+let five = add [] 5
+(* print the first value *)
+let _ = Format.printf "%d@." (List.hd five)
+```
+</div>
+<div class="tab-pane fade pt-3" id="compile">
+
+You must compile the `.mli` before the `.ml`.
+
+```bash
+$ ocamlc -c example.mli # example.cmi
+$ ocamlc -c example.ml  #  example.cmo
+$ ocamlc -c example_test.ml # both .cmi and .cmo
+# creating an executable
+$ ocamlc example.cmo example_test.cmo -o example_test
+$ ./example_test
+5 # ok
+```
+</div>
+</div>
+</details>
+
+It's worth emphasizing that the order during compilation matters:
+
+```bash
+$ ocamlc example_test.cmo example.cmo -o example_test
+# example.cmo should've been before example_test.cmo
+File "_none_", line 1:
+Error: Required module `Example' is unavailable
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Advanced Content
 
 <div class="row row-cols-md-2"><div>
@@ -719,8 +836,6 @@ let get_min l =
 ```
 </details>
 </div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">
