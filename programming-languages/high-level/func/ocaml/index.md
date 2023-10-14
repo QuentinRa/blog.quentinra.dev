@@ -744,11 +744,12 @@ $ ./example_test
 
 It's worth emphasizing that the order during compilation matters:
 
-```bash
+```ps
 $ ocamlc example_test.cmo example.cmo -o example_test
 # example.cmo should've been before example_test.cmo
+# as the latter include the former
 File "_none_", line 1:
-Error: Required module `Example' is unavailable
+Error: Required module `Example` is unavailable
 ```
 </div><div>
 
@@ -789,20 +790,20 @@ With a fold_left
 
 ```ocaml
 let get_length l =
-	List.fold_left
-		(fun acc _ -> acc + 1) (* update *)
-		0 (* init *)
-		l (* what are we iterating? *)
+  List.fold_left
+    (fun acc _ -> acc + 1) (* update *)
+    0 (* init *)
+    l (* what are we iterating? *)
 ```
 
 With a fold_right
 
 ```ocaml
 let get_length l =
-	List.fold_right
-		(fun acc _ -> acc + 1) (* update *)
-		l (* what are we iterating? *)
-		0 (* init *)
+  List.fold_right
+    (fun _ acc -> acc + 1) (* update *)
+    l (* what are we iterating? *)
+    0 (* init *);;
 ```
 </details>
 
@@ -813,26 +814,28 @@ With a fold_left
 
 ```ocaml
 let get_min l =
-	(* raise exception if not in the list *)
-	if l = [] then raise Not_found
-	(* else do your job *)
-	else List.fold_left
-		 (fun acc v -> if v < acc then v else acc) (* update *)
-		 (List.hd l) (* init *)
-		 l (* what are we iterating? *)
+  (* raise exception if not in the list *)
+  if l = [] then raise Not_found
+  (* else do your job *)
+  else List.fold_left
+      (fun acc v -> if v < acc then v else acc) (* update *)
+      (List.hd l) (* init *)
+      l (* what are we iterating? *)
+        
+;;
 ```
 
 With a fold_right
 
 ```ocaml
 let get_min l =
-	(* raise exception if not in the list *)
-	if l = [] then raise Not_found
-	(* else do your job *)
-	else List.fold_right
-		 (fun v acc -> if v < acc then v else acc) (* update *)
-		 l (* what are we iterating? *)
-		 (List.hd l) (* init *)
+  (* raise exception if not in the list *)
+  if l = [] then raise Not_found
+  (* else do your job *)
+  else List.fold_right
+      (fun v acc -> if v < acc then v else acc) (* update *)
+      l (* what are we iterating? *)
+      (List.hd l) (* init *)
 ```
 </details>
 </div><div>
@@ -880,10 +883,8 @@ Stuff that I found, but never read/used yet.
 
 * [old](_old.md)
 * do not use "unit"
-* Lists: `[]`, `@::[]`, `5::[]`
 * `Stdlib.compare a b` (-1, 0, 1)
 * partial function (function not entirely called)
-</div><div>
 
 <details class="details-border">
 <summary>ocamlfind</summary>
@@ -900,4 +901,5 @@ OCaml find to do a lot of things involving libraries. One usage could be to comp
 ocamlfind ocamlc -o test -package extlib,oUnit -linkpkg -g avl.ml test.ml
 ```
 </details>
+</div><div>
 </div></div>
