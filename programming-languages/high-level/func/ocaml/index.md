@@ -803,7 +803,7 @@ For instance, if we want the sum of the elements in a list. They allow us to get
 * List.fold_left: `('a -> 'b -> 'a) -> 'a -> 'b list -> 'a`
 * List.fold_right: `('a -> 'b -> 'b) -> 'a list -> 'b -> 'b`
 
-`List.fold_left` is terminal while `ist.fold_right` isn't.
+`List.fold_left` is terminal while `List.fold_right` isn't.
 
 <div>$$
 \[
@@ -870,14 +870,8 @@ let get_min l =
       (List.hd l) (* init *)
 ```
 </details>
-</div><div>
-</div></div>
 
-<hr class="sep-both">
-
-## Random Notes
-
-<div class="row row-cols-md-2"><div>
+<br>
 
 #### OCaml Comments
 
@@ -902,7 +896,46 @@ While the following comment is invalid <small>(unterminated string)</small>:
 ```
 </div><div>
 
-...
+#### Functors
+
+Functions are handy to make even more generic modules.
+
+```ocaml
+module type AbstractSet = sig
+    type elt (* we don't know the type *)
+    type set (* we don't know the type *)
+    val add : set -> elt -> set
+    val empty : set
+    val first : set -> elt
+end
+```
+
+We can declare our functor module as taking another module in argument. We also define that the type of `elt` is the inferred from the type of `t` <small>(defined in S, the module passed as argument)</small>.
+
+```ocaml
+module type SetElementType = sig
+    type t
+end
+(* Functor Declaration *)
+module GenericSet (S: SetElementType) : AbstractSet with type elt = S.t
+(* Functor Implementation *)
+module GenericSet (S: SetElementType) = struct
+  type elt = S.t
+  type set = elt list
+  let add set e = e::set
+  let empty = []
+  let first = List.hd
+end
+
+module Int_type = struct
+	type t = int
+end
+(* both are the same *)
+module Int_Set = GenericSet(Int_type)
+module String_Set = GenericSet(struct type t = string end)
+
+let set = Int_Set.add Int_Set.empty 5
+```
 </div></div>
 
 <hr class="sep-both">
