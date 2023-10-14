@@ -58,6 +58,9 @@ Each time we add an element <small>(parent node determined by the algorithm)</sm
 
 <div class="text-center">
 
+[comment]: <> ([h [l] [rh [rl] [rr]] ])
+[comment]: <> ([rh [h [l] [rl]] [rr] ])
+
 ![AVL Rotate Left - Begin](_images/rotate_l_1.jpg)
 **Left Rotation**
 ![AVL Rotate Left - End](_images/rotate_l_2.jpg)
@@ -66,6 +69,9 @@ If we are adding a child to rr.
 </div>
 
 <div class="text-center mt-5">
+
+[comment]: <> ([h [lh [ll] [lr]] [r]])
+[comment]: <> ([lh [ll] [h [lr] [r]]])
 
 ![AVL Rotate Right - Begin](_images/rotate_r_1.jpg)
 **Right Rotation**
@@ -76,6 +82,10 @@ If we are adding a child to ll.
 </div><div>
 
 <div class="text-center">
+
+[comment]: <> ([h [lh [ll] [lrh [lrl] [lrr]]] [r]])
+[comment]: <> ([h [lrh [lh [ll] [lrl]] [lrr]] [r]])
+[comment]: <> ([lrh [lh [ll] [lrl]] [h [lrr] [r]]])
 
 ![AVL Rotate Left-Right - Begin](_images/rotate_r_1.jpg)
 Inserting in lr
@@ -90,6 +100,10 @@ If we are adding a child to **lr** <small>(=lrh if lr is empty, otherwise either
 
 <div class="text-center mt-5">
 
+[comment]: <> ([h [l] [rh [rlh [rll] [rlr]] [rr]]])
+[comment]: <> ([h [l] [rlh [rll] [rh [rlr] [rr]]]])
+[comment]: <> ([rlh [h [l] [rll]] [rh [rlr] [rr]]])
+
 ![AVL Rotate Right-Left - Begin](_images/rotate_l_1.jpg)
 Inserting in rl
 ![AVL Rotate Right-Left - Balance](_images/rotate_rl_1.jpg)
@@ -100,6 +114,40 @@ Apply Left Rotation
 
 If we are adding a child to **rl** <small>(=rlh if lr is empty, otherwise either rll or rlr)</small>.
 </div>
+</div></div>
+
+<hr class="sep-both">
+
+## Algorithm
+
+<div class="row row-cols-md-2"><div>
+
+The **height** means the length of the longest path from that node to a leaf. The **Balance factor** of a node `bf(node)` is the difference of height between two branches <small>(left child node minus right child node)</small>.
+
+<br>
+
+#### Find where the tree is unbalanced
+
+Calculate the balance factor of the root:
+
+* `bf(root) = 2`: the tree is left-balanced
+* `bf(root) = 2`: the tree is right-balanced
+* Otherwise, do nothing
+</div><div>
+
+#### Correct a left-balanced tree
+
+* `bf(right) = 1`: Apply a Rotate Right Left
+* `bf(right) = 0`: ❌ (impossible)
+* `bf(right) = -1`: Apply Rotate Left
+
+<br>
+
+#### Correct a right-balanced tree
+
+* `bf(left) = 1`: Apply a Rotate Right
+* `bf(left) = 0`: ❌ (impossible)
+* `bf(left) = -1`: Apply Rotate Left Right
 </div></div>
 
 <hr class="sep-both">
