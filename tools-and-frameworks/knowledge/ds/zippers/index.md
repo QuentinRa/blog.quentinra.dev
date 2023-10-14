@@ -1,4 +1,4 @@
-# Zippers trees
+# Zippers
 
 <div class="row row-cols-md-2"><div>
 

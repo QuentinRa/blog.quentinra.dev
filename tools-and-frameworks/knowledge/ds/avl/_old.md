@@ -1,48 +1,4 @@
-# AVL trees
-
-[Go back](../index.md#data-structures)
-
-An **AVL** (Adelson-Velsky and Landis) is a balanced **Binary Search Trees**. We are making sure that the depth is $\pm 1$, instead of having something like the tree below with your usual **Binary Search Trees**. The complexity is now $\log{(n)}$.
-
-![ABR bad - complexity O(n)](_images/abr_bad.png)
-
-Everything is the same as for a **Binary Search Trees**, but we will balance our tree in **add** and **remove**.
-
-<hr class="sr">
-
-* ✅: faster than an ordered list for `add, remove`
-* ✅: better than an unbalanced BST
-* ✅: aside from add and remove, same implementation as a BST
-* ❌: add and remove are difficult to understand/implement
-* ❌: sightly slower than an ordered list for `mem`, `get_min`
-* ❌: Unless storing the cardinal, calculating it takes too much time
-
-*The time was tested with a sample of around 500 000 randomly generated values in [0;10000]*.
-
-```none
->>>>>>>>>> TIME FOR LISTS <<<<<<<<<<
-Average time of add:                     0.000046
-Average time of remove:                  0.000047
-Average time for mem:                    0.002340
-Average time for get_min:                0.001870
-Average time for cardinal:               0.353290 (long)
->>>>>>>>>> TIME FOR BST <<<<<<<<<<
-Average time of add:                     0.000002
-Average time of remove:                  0.000002
-Average time for mem:                    0.006270
-Average time for get_min:                0.003290
-Average time for cardinal:               inf (too long)
->>>>>>>>>> TIME FOR AVL <<<<<<<<<<
-Average time of add:                     0.000010
-Average time of remove:                  0.000005
-Average time for mem:                    0.003430
-Average time for get_min:                0.002800
-Average time for cardinal:               inf (too long)
-```
-
-<hr class="sl">
-
-## Depth
+# Depth
 
 You will have to check whether your tree is balanced. The depth is the height of your tree. The depth of the root is the maximum between the depth of its children.
 
