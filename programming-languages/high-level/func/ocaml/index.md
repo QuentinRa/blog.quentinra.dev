@@ -640,6 +640,91 @@ let first_two l = match l with
 
 <hr class="sep-both">
 
+## Advanced Content
+
+<div class="row row-cols-md-2"><div>
+
+#### Folding on Lists
+
+Aside from `List.map` to execute a function on all values of the list, there are two functions on Lists to compute a value from a list:
+
+For instance, if we want the sum of the elements in a list. They allow us to get rid of accumulators when using lists.
+
+* List.fold_left: `('a -> 'b -> 'a) -> 'a -> 'b list -> 'a`
+* List.fold_right: `('a -> 'b -> 'b) -> 'a list -> 'b -> 'b`
+
+`List.fold_left` is terminal while `ist.fold_right` isn't.
+
+<div>$$
+\[
+\begin{split}
+f_{n}(f_{n-1}(...f_{2}(f_{1}(list))...))\quad \scriptsize\text{(fold left)}\\
+\textbf{vs}\\
+f_{1}(f_{2}(...f_{n-1}(f_{n}(x))...))\quad \scriptsize\text{(fold right)}
+\end{split}
+\]
+</div>
+
+<details class="details-n">
+<summary>Ex: List.length with fold 🔥</summary>
+
+With a fold_left
+
+```ocaml
+let get_length l =
+	List.fold_left
+		(fun acc _ -> acc + 1) (* update *)
+		0 (* init *)
+		l (* what are we iterating? *)
+```
+
+With a fold_right
+
+```ocaml
+let get_length l =
+	List.fold_right
+		(fun acc _ -> acc + 1) (* update *)
+		l (* what are we iterating? *)
+		0 (* init *)
+```
+</details>
+
+<details class="details-n">
+<summary>Ex: List.min with fold 🔥</summary>
+
+With a fold_left
+
+```ocaml
+let get_min l =
+	(* raise exception if not in the list *)
+	if l = [] then raise Not_found
+	(* else do your job *)
+	else List.fold_left
+		 (fun acc v -> if v < acc then v else acc) (* update *)
+		 (List.hd l) (* init *)
+		 l (* what are we iterating? *)
+```
+
+With a fold_right
+
+```ocaml
+let get_min l =
+	(* raise exception if not in the list *)
+	if l = [] then raise Not_found
+	(* else do your job *)
+	else List.fold_right
+		 (fun v acc -> if v < acc then v else acc) (* update *)
+		 l (* what are we iterating? *)
+		 (List.hd l) (* init *)
+```
+</details>
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Random Notes
 
 <div class="row row-cols-md-2"><div>
