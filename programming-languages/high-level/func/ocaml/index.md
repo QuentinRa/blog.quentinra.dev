@@ -373,6 +373,34 @@ let v3 = f 5 (f 6 v2) (* -150 *)
 ```
 </div><div>
 
+#### Recursive Functions
+
+A [recursive](/programming-languages/_paradigm/stuff/recursivity.md) function is a function calling itself. You must add the `rec` keyword or you will get an `Unbound value` error.
+
+```ocaml
+let rec pow x power = 
+  if power = 1
+  then x
+  else x * (pow x (power-1))
+
+let _ = pow 5 3 (* 125 *)
+```
+
+To write terminal recursive function, we use an accumulator.
+
+```ocaml
+let pow x power =
+    let rec pow_acc power acc = 
+        if power <= 0
+        then acc (* done, return result *)
+        else let new_acc = x * acc
+            in let new_power = power - 1
+            in pow_acc new_power new_acc
+            (* <=> pow_acc (power-1) (x * acc) *)
+    in pow_acc power 1 (* x^0 = 1 *)
+
+let _ = pow 5 3 (* 125 *)
+```
 </div></div>
 
 <hr class="sep-both">
@@ -515,6 +543,57 @@ let empty_tree = Empty
 let a_node = Node (empty_tree, 1, empty_tree)
 let another_node = Node (node_1, 1, node_1)
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Pattern Matching 🛣️
+
+<div class="row row-cols-md-2"><div>
+
+Pattern Matching can be <small>(implicitly)</small> used with a type that has a constructor to extract its values:
+
+```ocaml
+let Person(name, age) = john
+(* name = "John Doe", age = 42 *)
+```
+
+➡️ Both `name` and `age` are variable names. It could be `_`.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Random Notes
+
+<div class="row row-cols-md-2"><div>
+
+#### OCaml Comments
+
+The following comments are valid in OCaml:
+
+<div class="row row-cols-md-2"><div>
+
+```ocaml
+(* "*)" *)
+```
+</div><div>
+
+```ocaml
+(* (* *) *)
+```
+</div></div>
+
+While the following comment is invalid <small>(unterminated string)</small>:
+
+```ocaml
+(* " *)
+```
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">

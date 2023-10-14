@@ -1,35 +1,4 @@
-# Pattern Matching
-
-[Go back](../index.md#intermediary-concepts)
-
-If you are given an int, you know that you can use some ifelse to find what value was given. But what if you are given a list? Or a new type that we created? That's when Pattern Matching comes in handy, as they are breaking a value in constructors.
-
-<hr class="sl">
-
-## Implicit pattern matching
-
-```ocaml
-type person = Person of string * int
-```
-
-This type is made of only one constructor, that's the only case when you can use implicit pattern matching.
-
-```ocaml
-let henry = Person ("Henry", 24)
-let Person(name, age) = henry
-(* name = "Henry", age = 24 *)
-```
-
-Actually, you may use it for functions such as
-
-```ocaml
-let get_name (Person (name, _)) = name
-let _ = get_name henry (* "Henry" *)
-```
-
-<hr class="sl">
-
-## Explicit pattern matching
+# Explicit pattern matching
 
 ```ocaml
 type person = Anonymous | Person of string * int
