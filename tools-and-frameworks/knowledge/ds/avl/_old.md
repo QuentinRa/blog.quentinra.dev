@@ -4,7 +4,7 @@
 
 An **AVL** (Adelson-Velsky and Landis) is a balanced **Binary Search Trees**. We are making sure that the depth is $\pm 1$, instead of having something like the tree below with your usual **Binary Search Trees**. The complexity is now $\log{(n)}$.
 
-![ABR bad - complexity O(n)](images/abr_bad.png)
+![ABR bad - complexity O(n)](_images/abr_bad.png)
 
 Everything is the same as for a **Binary Search Trees**, but we will balance our tree in **add** and **remove**.
 
@@ -69,9 +69,9 @@ We got four rotations, that we will use to balance our tree.
 [comment]: <> ([h [l] [rh [rl] [rr]] ])
 [comment]: <> ([rh [h [l] [rl]] [rr] ])
 
-![AVL Rotate Left - Begin](images/avl/rotate_l_1.jpg)
+![AVL Rotate Left - Begin](_images/rotate_l_1.jpg)
 **Left Rotation**
-![AVL Rotate Left - End](images/avl/rotate_l_2.jpg)
+![AVL Rotate Left - End](_images/rotate_l_2.jpg)
 
 **(1/4) Left Rotation**: If we are adding a child in **rr**.
 </div><div class="col-4 border border-dark">
@@ -79,9 +79,9 @@ We got four rotations, that we will use to balance our tree.
 [comment]: <> ([h [lh [ll] [lr]] [r]])
 [comment]: <> ([lh [ll] [h [lr] [r]]])  
 
-![AVL Rotate Right - Begin](images/avl/rotate_r_1.jpg)
+![AVL Rotate Right - Begin](_images/rotate_r_1.jpg)
 **Right Rotation**
-![AVL Rotate Right - End](images/avl/rotate_r_2.jpg)
+![AVL Rotate Right - End](_images/rotate_r_2.jpg)
 
 **(2/4) Right Rotation**: If we are adding a child in **ll**.
 </div></div>
@@ -92,13 +92,13 @@ We got four rotations, that we will use to balance our tree.
 [comment]: <> ([h [lrh [lh [ll] [lrl]] [lrr]] [r]])
 [comment]: <> ([lrh [lh [ll] [lrl]] [h [lrr] [r]]])
 
-![AVL Rotate Left-Right - Begin](images/avl/rotate_r_1.jpg)
+![AVL Rotate Left-Right - Begin](_images/rotate_r_1.jpg)
 Inserting in lr
-![AVL Rotate Left-Right - Balance](images/avl/rotate_lr_1.jpg)
+![AVL Rotate Left-Right - Balance](_images/rotate_lr_1.jpg)
 **Left Rotation**
-![AVL Rotate Left-Right - Half done](images/avl/rotate_lr_2.jpg)
+![AVL Rotate Left-Right - Half done](_images/rotate_lr_2.jpg)
 **Right Rotation**
-![AVL Rotate Left-Right - End](images/avl/rotate_lr_3.jpg)
+![AVL Rotate Left-Right - End](_images/rotate_lr_3.jpg)
 
 **(3/4) Left-Right Rotation**: If we are adding a child in **lr** <small>(=lrh if lr is empty, otherwise either lrl or lrr)</small>.
 </div>
@@ -109,13 +109,13 @@ Inserting in lr
 [comment]: <> ([h [l] [rlh [rll] [rh [rlr] [rr]]]])
 [comment]: <> ([rlh [h [l] [rll]] [rh [rlr] [rr]]])
 
-![AVL Rotate Right-Left - Begin](images/avl/rotate_l_1.jpg)
+![AVL Rotate Right-Left - Begin](_images/rotate_l_1.jpg)
 Inserting in rl
-![AVL Rotate Right-Left - Balance](images/avl/rotate_rl_1.jpg)
+![AVL Rotate Right-Left - Balance](_images/rotate_rl_1.jpg)
 **Right Rotation**
-![AVL Rotate Right-Left - Half done](images/avl/rotate_rl_2.jpg)
+![AVL Rotate Right-Left - Half done](_images/rotate_rl_2.jpg)
 **Left Rotation**
-![AVL Rotate Right-Left - End](images/avl/rotate_rl_3.jpg)
+![AVL Rotate Right-Left - End](_images/rotate_rl_3.jpg)
 
 **(4/4) Right-Left Rotation**: If we are adding a child in **rl**
 <small>(=rlh if lr is empty, otherwise either rll or rlr)</small>.
@@ -127,9 +127,9 @@ Inserting in rl
 
 You know about the depth/height. Each node got this information.
 
-![Depth AVL](images/avl/rotate_depth_2.jpg)
+![Depth AVL](_images/rotate_depth_2.jpg)
 The tree was almost balanced, but not anymore after adding **4**
-![Depth AVL](images/avl/rotate_depth.jpg)
+![Depth AVL](_images/rotate_depth.jpg)
 
 Notes
 
@@ -161,7 +161,7 @@ We can see it in our code by checking what we call the **Balance factor** (bf). 
 
 [comment]: <> (["1" ["0"] ["3" ["2"] ["4" [Empty] ["5"]]]])
 
-![AVL example 1 - Rotate left](images/avl/example/ex1_1.jpg)
+![AVL example 1 - Rotate left](_images/example/ex1_1.jpg)
 </div><div class="col-6">
 
 * Adding 5
@@ -175,9 +175,9 @@ We can see it in our code by checking what we call the **Balance factor** (bf). 
 [comment]: <> (["rh=3" ["h=1" ["l=0"] ["rl=2"]] ["rr=4" [Empty] ["5"]]])
 [comment]: <> (["3" ["1" ["0"] ["2"]] ["4" [Empty] ["5"]]])
 
-![AVL example 1 - Rotate left - init](images/avl/example/ex1_2.jpg)
-![AVL example 1 - Rotate left - do](images/avl/example/ex1_3.jpg)
-![AVL example 1 - Rotate left - clean](images/avl/example/ex1_4.jpg)
+![AVL example 1 - Rotate left - init](_images/example/ex1_2.jpg)
+![AVL example 1 - Rotate left - do](_images/example/ex1_3.jpg)
+![AVL example 1 - Rotate left - clean](_images/example/ex1_4.jpg)
 
 ### Example 2 - Rotate Right
 
@@ -185,7 +185,7 @@ We can see it in our code by checking what we call the **Balance factor** (bf). 
 
 [comment]: <> (["4" ["2" ["1" ["0"] [Empty]] ["3"]] ["5"]])
 
-![AVL example 2 - Rotate right](images/avl/example/ex2_1.jpg)
+![AVL example 2 - Rotate right](_images/example/ex2_1.jpg)
 </div><div class="col-6">
 
 * Adding 0
@@ -199,9 +199,9 @@ We can see it in our code by checking what we call the **Balance factor** (bf). 
 [comment]: <> (["lh=2" ["ll=1" ["0"] ["Empty"]] ["h=4" ["lr=3"] ["r=5"]]])
 [comment]: <> (["2" ["1" ["0"] ["Empty"]] ["4" ["3"] ["5"]]])
 
-![AVL example 2 - Rotate right - init](images/avl/example/ex2_2.jpg)
-![AVL example 2 - Rotate right - do](images/avl/example/ex2_3.jpg)
-![AVL example 2 - Rotate right - clean](images/avl/example/ex2_4.jpg)
+![AVL example 2 - Rotate right - init](_images/example/ex2_2.jpg)
+![AVL example 2 - Rotate right - do](_images/example/ex2_3.jpg)
+![AVL example 2 - Rotate right - clean](_images/example/ex2_4.jpg)
 
 ### Example 3 - Rotate Left Right
 
@@ -209,7 +209,7 @@ We can see it in our code by checking what we call the **Balance factor** (bf). 
 
 [comment]: <> (["4" ["1" ["0"] ["3" ["2"] ["Empty"]]] ["5"]])
 
-![AVL example 3 - Rotate Left Right](images/avl/example/ex3_1.jpg)
+![AVL example 3 - Rotate Left Right](_images/example/ex3_1.jpg)
 </div><div class="col-6">
 
 * Adding 2
@@ -226,12 +226,12 @@ We can see it in our code by checking what we call the **Balance factor** (bf). 
 [comment]: <> (["lrh=3" ["lh=1" ["ll=0"] ["lrl=2"]] ["h=4" ["lrr=Empty"] ["r=5"]]])
 [comment]: <> (["3" ["1" ["0"] ["2"]] ["4" ["Empty"] ["5"]]])
 
-![AVL example 3 - Rotate Left Right - Begin](images/avl/example/ex3_2.jpg)
+![AVL example 3 - Rotate Left Right - Begin](_images/example/ex3_2.jpg)
 **Left Rotation**
-![AVL example 3 - Rotate Left Right - Left Rotation](images/avl/example/ex3_3.jpg)
+![AVL example 3 - Rotate Left Right - Left Rotation](_images/example/ex3_3.jpg)
 **Right Rotation**
-![AVL example 3 - Rotate Left Right - Right Rotation](images/avl/example/ex3_4.jpg)
-![AVL example 3 - Rotate Left Right - Done](images/avl/example/ex3_5.jpg)
+![AVL example 3 - Rotate Left Right - Right Rotation](_images/example/ex3_4.jpg)
+![AVL example 3 - Rotate Left Right - Done](_images/example/ex3_5.jpg)
 
 ### Example 4 - Rotate Right Left
 
@@ -239,7 +239,7 @@ We can see it in our code by checking what we call the **Balance factor** (bf). 
 
 [comment]: <> (["1" ["0"] ["4" ["3" ["2"] ["Empty"]] ["5"] ]])
 
-![AVL example 4 - Rotate Right Left](images/avl/example/ex4_1.jpg)
+![AVL example 4 - Rotate Right Left](_images/example/ex4_1.jpg)
 </div><div class="col-6">
 
 * Adding 2
@@ -256,9 +256,9 @@ We can see it in our code by checking what we call the **Balance factor** (bf). 
 [comment]: <> (["rlh=3" ["h=1" ["l=0"] ["rll=2"]] ["rh=4"["rlr=Empty"] ["rr=5"]]])
 [comment]: <> (["3" ["1" ["0"] ["2"]] ["4"["Empty"] ["5"]]])
 
-![AVL example 4 - Rotate Right Left - Begin](images/avl/example/ex4_2.jpg)
+![AVL example 4 - Rotate Right Left - Begin](_images/example/ex4_2.jpg)
 **Right Rotation**
-![AVL example 4 - Rotate Right Left - Right Rotation](images/avl/example/ex4_4.jpg)
+![AVL example 4 - Rotate Right Left - Right Rotation](_images/example/ex4_4.jpg)
 **Left Rotation**
-![AVL example 4 - Rotate Right Left - Left Rotation](images/avl/example/ex4_3.jpg)
-![AVL example 4 - Rotate Right Left - Done](images/avl/example/ex4_5.jpg)
+![AVL example 4 - Rotate Right Left - Left Rotation](_images/example/ex4_3.jpg)
+![AVL example 4 - Rotate Right Left - Done](_images/example/ex4_5.jpg)

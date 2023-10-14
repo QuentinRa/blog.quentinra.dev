@@ -38,7 +38,7 @@ A tree is made of Nodes. Each name can have up to two children. Each node is sto
 
 Simply apply this rule recursively until you can add your node.
 
-![Bst example](images/bst/bst.png)
+![Bst example](_images/bst.png)
 
 <hr class="sl">
 
@@ -46,7 +46,7 @@ Simply apply this rule recursively until you can add your node.
 
 <div class="mt-3">
 
-![BST add](images/bst/add.png)
+![BST add](_images/add.png)
 </div>
 
 * We are adding **2** in the empty tree
@@ -69,7 +69,7 @@ with In -> set
 
 <div class="mt-3">
 
-![BST remove](images/bst/remove.png)
+![BST remove](_images/remove.png)
 </div>
 
 * We are removing **3**: we are taking as the new head **4** (the min in the right)
@@ -93,7 +93,7 @@ with Not_found -> set
   * As **2** greater than **1**, we are checking **2**.
   * Result: IN. 
 
-![BST mem](images/bst/mem.png)
+![BST mem](_images/mem.png)
 
 An element is **not in** if we can't check the next location we were supposed to check.
 
@@ -104,9 +104,9 @@ An element is **not in** if we can't check the next location we were supposed to
 * The minimum is the bottom left value, the value
 that was lesser than every other value
 
-![BST Minimum](images/bst/min.png)
+![BST Minimum](_images/min.png)
 
 * The minimum is the bottom right value, the value
   that was greater than every other value
 
-![BST Maximum](images/bst/max.png)
+![BST Maximum](_images/max.png)
