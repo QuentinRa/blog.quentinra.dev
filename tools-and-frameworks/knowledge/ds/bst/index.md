@@ -84,6 +84,26 @@ We are always replacing the deleted node by the one at its right, unless there i
 
 <hr class="sep-both">
 
+## BST Mem Example
+
+<div class="row row-cols-md-2"><div>
+
+Example of checking if an element is within a tree:
+
+Is `2` inside the tree?
+
+* `2 < 3`: check left
+* `2 > 1`: check right
+* `2 == 2`: IN
+
+If our element `e` is lower than the current node's value `v`, then we check the left node, otherwise we check the right node. If `e == v`, we found our element. An element is not in if we can't check the next location we were supposed to check <small>(no left/right child node)</small>.
+</div><div>
+
+![BST remove](_images/mem.png)
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
