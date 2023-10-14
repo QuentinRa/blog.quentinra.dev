@@ -1,36 +1,6 @@
 # Explicit pattern matching
 
-```ocaml
-type person = Anonymous | Person of string * int
-```
-
-As a person is now complex, we will use `match` to deconstruct a person. 
-
-```ocaml
-let get_name p = match p with
-	| Anonymous -> "Anonymous"
-	| Person (name, _) -> name
-
-let _ = get_name Anonymous (* "Anonymous" *)
-let _ = get_name (Person ("Henry", 24)) (* "Henry" *)
-```
-
-Each line of the match is a constructor (and its parameters). You may have a **fallback/default constructor** (`_`)
-
-```ocaml
-let is_anonymous p = match p with
-	| Anonymous -> true
-	| _ -> false (* any other constructor *)
-
-let _ = is_anonymous Anonymous (* true *)
-let _ = is_anonymous (Person ("Henry", 24)) (* false *)
-```
-
 You may also **merge rules**
-
-```ocaml
-let is_alive p = match p with | Anonymous | Person(_,_) -> true
-```
 
 You may also **match multiples variables** in one `match`
 

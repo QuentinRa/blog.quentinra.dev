@@ -551,6 +551,8 @@ let another_node = Node (node_1, 1, node_1)
 
 <div class="row row-cols-md-2"><div>
 
+#### Implicit Pattern Matching
+
 Pattern Matching can be <small>(implicitly)</small> used with a type that has a constructor to extract its values:
 
 ```ocaml
@@ -559,9 +561,46 @@ let Person(name, age) = john
 ```
 
 ➡️ Both `name` and `age` are variable names. It could be `_`.
+
+<br>
+
+#### Match With Clause
+
+For multiple constructors, we use `match with`:
+
+```ocaml
+type person = Anonymous | Person of string * int
+let get_name p = match p with
+	| Anonymous -> "Anonymous"
+	| Person (name, _) -> name
+
+let _ = get_name (Person ("Henry", 24)) (* "Henry" *)
+```
+
+<br>
+
+#### Match Default clause
+
+We can use `_` for a default clause.
+
+```ocaml
+let is_anonymous p = match p with
+	| Anonymous -> true
+	| _ -> false (* any other constructor *)
+
+let _ = is_anonymous Anonymous (* true *)
+```
 </div><div>
 
-...
+#### Match Merge clauses
+
+You can merge conditions by separating them by `|`:
+
+```ocaml
+let is_alive p = match p with 
+    | Anonymous | Person(_,_) -> true
+```
+
 </div></div>
 
 <hr class="sep-both">
