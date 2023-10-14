@@ -3,8 +3,6 @@
 <div class="row row-cols-md-2"><div>
 
 * [Folds](interm/lists.md)
-* [Pattern Matching](interm/match.md) 🚀
-* [Write some code](interm/exercises.md)
 * [Interfaces](advanced/interfaces.md)
 * [Modules](advanced/modules.md)
 * [Functors](advanced/functors.md)

@@ -517,6 +517,9 @@ You can declare of type composed of other types:
 ```ocaml
 type person = string * int
 let john : person = ("John Doe", 42)
+
+type float_list = float list
+let x : float_list = [5.;3.;6.]
 ```
 
 <br>
@@ -571,8 +574,8 @@ For multiple constructors, we use `match with`:
 ```ocaml
 type person = Anonymous | Person of string * int
 let get_name p = match p with
-	| Anonymous -> "Anonymous"
-	| Person (name, _) -> name
+    | Anonymous -> "Anonymous"
+    | Person (name, _) -> name
 
 let _ = get_name (Person ("Henry", 24)) (* "Henry" *)
 ```
@@ -585,8 +588,8 @@ We can use `_` for a default clause.
 
 ```ocaml
 let is_anonymous p = match p with
-	| Anonymous -> true
-	| _ -> false (* any other constructor *)
+    | Anonymous -> true
+    | _ -> false (* any other constructor *)
 
 let _ = is_anonymous Anonymous (* true *)
 ```
@@ -601,6 +604,38 @@ let is_alive p = match p with
     | Anonymous | Person(_,_) -> true
 ```
 
+<br>
+
+#### Match Multiple Variables
+
+You can match multiple variables in one clause:
+
+```ocaml
+let are_both_anonymous p1 p2 = 
+    match p1, p2 with
+    | Anonymous, Anonymous -> true
+    | _ -> false
+```
+
+<br>
+
+#### Match With Lists
+
+As a reminder, lists have the `[]` and the `a::list` <small>(recursive)</small> constructors.
+
+```ocaml
+let is_empty l = match l with | [] -> true | _ -> false
+
+(* is e inside l ?*)
+let rec mem l e = match l with
+    | [] -> false
+    | hd::tl -> e = hd || mem tl e
+	
+(* return the first two values, or raise Not_found *)
+let first_two l = match l with
+    | a::b::_ -> [a;b]
+    | _ -> raise Not_found
+```
 </div></div>
 
 <hr class="sep-both">
