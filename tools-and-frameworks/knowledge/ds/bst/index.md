@@ -104,12 +104,22 @@ If our element `e` is lower than the current node's value `v`, then we check the
 
 <hr class="sep-both">
 
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
+## Other common functions
 
 <div class="row row-cols-md-2"><div>
 
-* [_old](_old.md)
+#### Minimum
+
+The minimum is the bottom left value, e.g., the value
+that was lower than every other value
+
+![BST Minimum](_images/min.png)
 </div><div>
+
+#### Maximum
+
+The minimum is the bottom right value, e.g., the value
+that was greater than every other value
+
+![BST Maximum](_images/max.png)
 </div></div>

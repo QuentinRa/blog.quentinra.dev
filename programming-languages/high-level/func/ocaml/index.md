@@ -432,6 +432,24 @@ let (_, age) = person (* age only *)
 
 <br>
 
+#### Zippers
+
+A zipper is a data structure, which is like a named composite type.
+
+```ocaml
+type 'a zipper = {
+    left : 'a list;
+    right : 'a list;
+}
+
+(* create *)
+let my_zipper = {left= []; right= [] }
+(* get *)
+let left = my_zipper.left;;
+let right = my_zipper.right;;
+```
+</div><div>
+
 #### Strings
 
 There are [multiple functions](https://v2.ocaml.org/api/String.html) for strings.
@@ -440,7 +458,8 @@ There are [multiple functions](https://v2.ocaml.org/api/String.html) for strings
 let equal = String.equal "a" "b" (* false *)
 let length = String.length "a" (* 1 *)
 ```
-</div><div>
+
+<br>
 
 #### Lists
 
