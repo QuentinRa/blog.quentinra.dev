@@ -20,7 +20,7 @@ Only the implementation of the said function is explained here.
 * ✅: better than an unbalanced BST
 * ✅: implementation is mostly the same as for a BST
 * ❌: add and remove are **difficult** to understand/implement
-* ❌: sightly slower than an ordered list for `mem`, `get_min`
+* ❌: slightly slower than an ordered list for `mem`, `get_min`
 
 <details class="details-n">
 <summary>Time comparisons - 500 000 values between 0 and 10 000</summary>

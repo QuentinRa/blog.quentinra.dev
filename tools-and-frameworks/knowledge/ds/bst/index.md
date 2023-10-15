@@ -9,7 +9,7 @@ The height is the length of the longest path from the root to a leaf.
 
 * ✅: easy to learn, and easy to implement
 * ✅: faster than an ordered list for `add`, `remove`
-* ❌: sightly slower than an ordered list for `mem`, `get_min`
+* ❌: slightly slower than an ordered list for `mem`, `get_min`
 * ❌: [AVL trees](../avl/index.md) are improved BST
 * ❌: Unless storing the cardinal, calculating it takes too much time
 
@@ -76,7 +76,7 @@ Example of removing a few elements:
 * We are removing **6**
 * We are removing **5**: **1** is the new head
 
-We are always replacing the deleted node by the one at its right, unless there is none, in which case, we either delete the node <small>(no left child node)</small> or use its left child node as the head.
+We are always replacing the deleted node with the one at its right, unless there is none, in which case, we simply delete the node and replace it with its left child node <small>(if there is one)</small>.
 </div><div>
 
 ![BST remove](_images/remove.png)
