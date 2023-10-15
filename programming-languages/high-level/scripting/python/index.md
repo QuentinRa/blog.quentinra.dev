@@ -154,6 +154,16 @@ type("xxx") # <class 'str'>
 ```python
 xxx : bool = False
 ```
+
+📚 Finally, there is the notion of tuple: an ordered list of values.
+
+```python
+my_tuple = (1, 2, 3, 4) # same as "my_tuple = 1, 2, 3, 4"
+len(my_tuple)           # 3
+my_tuple[0]             # 1
+my_tuple[0] = 0         # ❌ TypeError, Not modifiable
+a, *_, d = my_tuple     # Unpacking (a=1, <skip>, d=4)
+```
 </div><div>
 
 #### Ranges
