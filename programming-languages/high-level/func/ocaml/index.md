@@ -13,7 +13,7 @@
 * [OCaml Programming](https://cs3110.github.io/textbook/cover.html) <small>(📚)</small>
 </div><div>
 
-To most common way to get started is to use the [opam](https://opam.ocaml.org/) package manager to install any version of OCaml we need.
+The most common way to get started is to use the [opam](https://opam.ocaml.org/) package manager to install any version of OCaml we need.
 
 ```shell!
 $ sudo apt-get install opam
@@ -36,6 +36,8 @@ $ opam install some_package    # see also: update, upgrade
 #### Implicit types
 
 Types are implicit and should not be made explicit.
+
+<br>
 
 #### Immutability
 
@@ -70,7 +72,7 @@ Functions should not have any side effects. For instance, if we write a line and
 Printf.printf "%s\n" "Hello, World"
 ```
 
-🔥 Ex: Every printing function <small>(returning `Unit`, e.g. nothing)</small> are not pure.
+🔥 Ex: Every printing function <small>(returning `Unit`, e.g. nothing)</small> is not pure.
 
 #### Referential transparency
 
@@ -92,7 +94,7 @@ let f x = x -1
 
 #### OCaml REPL
 
-OCaml Top-Level, a.k.a. REPL, is a console in which we write expression, and they are evaluated on the fly 🚀.
+OCaml Top-Level, a.k.a. REPL, is a console in which we write expressions, and they are evaluated on the fly 🚀.
 
 ```shell!
 $ ocaml
@@ -364,7 +366,7 @@ Also, functions are only returning one value.
 
 #### Call a function
 
-The process to call a function is pretty straightforward:
+The process of calling a function is pretty straightforward:
 
 ```ocaml
 let v1 = f 5 5        (* 25 *)
@@ -386,7 +388,7 @@ let rec pow x power =
 let _ = pow 5 3 (* 125 *)
 ```
 
-To write terminal recursive function, we use an accumulator.
+To write a terminal recursive function, we use an accumulator.
 
 ```ocaml
 let pow x power =
@@ -411,7 +413,7 @@ let _ = pow 5 3 (* 125 *)
 
 #### Composite types
 
-A composite type, commonly called a tuple or record, is a type made of multiple types. It's useful as function can only return one value.
+A composite type, commonly called a tuple or record, is a type made of multiple types. It's useful as functions can only return one value.
 
 ```ocaml
 let person = ("name", 5)
@@ -903,7 +905,7 @@ The following comments are valid in OCaml:
 ```
 </div></div>
 
-While the following comment is invalid <small>(unterminated string)</small>:
+While the following comment is invalid <small>(unclosed string)</small>:
 
 ```ocaml
 (* " *)
@@ -969,7 +971,7 @@ Stuff that I found, but never read/used yet.
 <details class="details-border">
 <summary>ocamlfind</summary>
 
-OCaml find to do a lot of things involving libraries. One usage could be to compile using `ocamlc` files that use external libraries.
+OCaml find command does a lot of things involving libraries. One usage could be to compile using `ocamlc` files that use external libraries.
 
 ```bash
 # create a file "test"
