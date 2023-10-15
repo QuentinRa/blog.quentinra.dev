@@ -11,7 +11,7 @@ List of courses that have note which were not added yet.
 
 **Tools and Frameworks**
 
-* (review, typos) Pandora, JetBrains plugin development
+* (review, typos) Data Structures, Pandora, JetBrains plugin development
 * Project > Tools?
 </div><div>
 

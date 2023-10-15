@@ -175,7 +175,8 @@ You can learn more about [operators here](/programming-languages/_paradigm/stuff
 sum = 5 + 5           # 10
 substraction = 5 - 5  # 0
 product = 5 * 5       # 25
-division = 6 / 5      # 1
+division = 6 / 5      # 1.2 (float)
+division = 6 // 5     # 1 (int)
 power = 6 ** 2        # 6^2 = 36
 mod = 7 % 2           # 1
 sum += 1              # same as sum = sum + 1
@@ -184,6 +185,7 @@ sum += 1              # same as sum = sum + 1
 if 5 == 5: pass           # true
 if 5 != 5: pass           # false
                           # see also: >, >=, <, <=
+                          # see also: <= <=, => =>... 
 if not False: pass        # logicial NOT → true
 if True or False: pass    # logical OR → true
 if True and False: pass   # logical AND → false
@@ -197,6 +199,7 @@ You can use `print`:
 
 ```python
 print("Hello, World!")      # normal
+print("Hello", "World!")    # space-separated
 
 msg = "Hello, World"
 print("Message: %s" % msg)  # ❌ old
@@ -228,6 +231,13 @@ else:
 ```
 
 🤡 It's worth noting that `else:` can be used after most blocks such as for/while loops or exceptions. It's executed after the block.
+
+🚀 The ternary operator is available in python:
+
+```python
+x = "a" if True else "x"
+# x = 'a'
+```
 
 #### Branching - if in
 
@@ -427,12 +437,13 @@ tab.append(3)      # add last (=[3, 5, 6, 3])
 tab[0]             # get first (=3)
 tab.count(3)       # occurrences (=2)
 tab = sorted(tab)  # sort (=[3, 3, 5, 6])
+tab = tab + tab    # merge
 ```
 
 You can also generate lists using [list comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions):
 
 ```python
-list = [i for i in in range(0,10) if i%2==0]
+list = [i for i in range(0,10) if i%2==0]
 ```
 
 ➡️ See also `arrays` for homogeneous data <small>(same type for all values)</small>.
