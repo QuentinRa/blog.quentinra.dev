@@ -17,9 +17,6 @@ List of courses that have note which were not added yet.
 
 **Operating systems**
 
-* (review, typos) docker, yocto
-* Embedded > IoT
-* Cloud
 * Linux
 * Networking
 * Utils
@@ -28,8 +25,9 @@ List of courses that have note which were not added yet.
 
 * AD security
 * Windows security
+* IoT
+* Cloud
 </div></div>
-
 
 <hr class="sep-both">
 

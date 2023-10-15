@@ -8,11 +8,11 @@
 * ☕ Easier setup <small>(create an image, and deploy it for others to use)</small>
 * 🚀 Uniformize the environment <small>(same environment for everyone)</small>
 * 👉 Can be run everywhere <small>(Windows, Linux, macOS...)</small>
-* 🔥 Docker, unlike a VM, use the underlying host operating system resources such as the file system, the RAM, or the CPU...
+* 🔥 Docker, unlike a VM, uses the underlying host operating system resources such as the file system, the RAM, or the CPU...
 * ❌ Docker may **not** support some features, according to the operating system running the docker <small>(graphical interfaces, sound...)</small>
 </div><div>
 
-The easiest way to get started is to use [Docker desktop](https://www.docker.com/products/docker-desktop/). You may only install [docker engine](https://docs.docker.com/engine/install/) which only give access to the `docker` command.
+The easiest way to get started is to use [Docker desktop](https://www.docker.com/products/docker-desktop/). You may only install [docker engine](https://docs.docker.com/engine/install/) which only gives access to the `docker` command.
 
 ```shell!
 $ docker -v # test
@@ -47,7 +47,7 @@ A **tag** is the image's name and its version. For instance, `fedora:latest` or 
 
 Tags point to an image. You can create them: `docker tag xxx:34 xxx:latest` <small>(xxx:latest point to xxx:34)</small> or remove them `docker rmi tag`.
 
-👉 An image can only be removed when all tags were removed.
+👉 An image can only be removed after all tags have been removed.
 </div><div>
 
 #### Docker image commands
@@ -159,16 +159,16 @@ $ docker cp ./local/path container_id:/docker/path
 
 #### Docker network
 
-Docker containers are by default started using `--net=bridge`. It's a virtual bridge `docker0` that allow each container to contact each other.
+Docker containers are by default started using `--net=bridge`. It connects them to the virtual bridge `docker0` that allows each container to contact each other.
 
-Using `--net=host`, it means that they share the same network configuration as the host <small>(e.g., same `ip a` output)</small>.
+If we use `--net=host`, it means that containers share the same network configuration as the host <small>(e.g., same `ip a` output)</small>.
 
 ```ps
 $ docker network ls # list
-$ docker network create network_name # create
-$ docker network inspect network_id  # list hosts
+$ docker network create network_name # create a network
+$ docker network inspect network_name_or_id  # list hosts
 $ docker network connect bridge container_id # add to bridge
-# connect or disconnect a host to a network
+# connect or disconnect a host to/from a network
 $ docker network connect network_name_or_id container_id
 $ docker network disconnect network_name_or_id container_id
 ```
@@ -230,7 +230,7 @@ RUN dnf -y upgrade && \
     # Examples:
     dnf -y install firefox nano git dnf-utils && \
     dnf -y install iputils net-tools iproute && \
-    # Whe usually clean-up to save disk space
+    # We usually clean up to save disk space
     dnf clean all
     # See also: apt update/upgrade/clean/install -y
 
@@ -356,7 +356,7 @@ EXPOSE port/protocol   # ex: 80/tcp
 
 #### VOLUME
 
-It's possible to mount a [volume](https://docs.docker.com/storage/volumes/), e.g., creating a folder on the docker whose content is linked to a folder on the host. Adding, editing, or removing files in such folder on the docker remove them on the host. 
+It's possible to mount a [volume](https://docs.docker.com/storage/volumes/), e.g., creating a folder on the docker whose content is linked to a folder on the host. Adding, editing, or removing files in such folder on the docker removes them on the host. 
 
 ```dockerfile!
 VOLUME /my_mount  # contents are the same for every container
@@ -446,7 +446,7 @@ It allows docker to speed up each process, by only building or deploying layers 
 
 <div class="row row-cols-md-2"><div>
 
-Docker [compose](https://docs.docker.com/compose/) wraps all arguments passed to `docker run` inside a file called `docker-compose.yml`. It's mainly aimed for services <small>(e.g. tasks with no user interaction)</small>, but it can be used with any docker image 🎊.
+Docker [compose](https://docs.docker.com/compose/) wraps all arguments passed to `docker run` inside a file called `docker-compose.yml`. It's mainly aimed at services <small>(e.g. tasks with no user interaction)</small>, but it can be used with any docker image 🎊.
 
 ```shell!
 $ sudo apt-get install docker-compose-plugin
