@@ -434,6 +434,14 @@ if b in map: pass   # contains
 for k, v in map:    # iterate
 	pass
 ```
+
+#### Dates
+
+```python
+import datetime
+
+print(datetime.datetime.now())
+```
 </div><div>
 
 #### Lists
@@ -442,18 +450,25 @@ Lists are arrays that can have elements of different types.
 
 ```python
 tab = [3, 5, 6]
-len(tab)           # length (=3)
-tab.append(3)      # add last (=[3, 5, 6, 3])
-tab[0]             # get first (=3)
-tab.count(3)       # occurrences (=2)
-tab = sorted(tab)  # sort (=[3, 3, 5, 6])
-tab = tab + tab    # merge
+length = len(tab)  # length (=3)
+tab.insert(0, 2)   # add 2 at index 0 (tab=[2, 3, 5, 6)
+tab.append(3)      # add last (tab=[2, 3, 5, 6, 3])
+e = tab[0]         # get first (e=2)
+nb = tab.count(3)  # occurrences (nb=2)
+tab = sorted(tab)  # sort (=[2, 3, 3, 5, 6])
+tab = tab1 + tab2  # concat
+tab1.extend(tab2)  # append "tab2" to "tab1"
+# see also: pop, sort, reverse, remove, index...
+tab = tab[:]       # get all elements
+tab = tab[n:m]     # elements at indexes [n,m[
+tab = tab[n:m:s]   # step (i+=s)
 ```
 
 You can also generate lists using [list comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions):
 
 ```python
 list = [i for i in range(0,10) if i%2==0]
+list = [1 if i%2==0 else -1 for i in range(0,10)]
 ```
 
 ➡️ See also `arrays` for homogeneous data <small>(same type for all values)</small>.
@@ -491,14 +506,6 @@ if __name__ == '__main__':
     # ...
 ```
 </div><div>
-
-#### Dates
-
-```python
-import datetime
-
-print(datetime.datetime.now())
-```
 
 #### Files
 
