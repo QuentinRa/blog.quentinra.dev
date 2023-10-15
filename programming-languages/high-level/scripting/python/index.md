@@ -454,6 +454,7 @@ length = len(tab)  # length (=3)
 tab.insert(0, 2)   # add 2 at index 0 (tab=[2, 3, 5, 6)
 tab.append(3)      # add last (tab=[2, 3, 5, 6, 3])
 e = tab[0]         # get first (e=2)
+e = tab[-1]        # get last (e=6)
 nb = tab.count(3)  # occurrences (nb=2)
 tab = sorted(tab)  # sort (=[2, 3, 3, 5, 6])
 tab = tab1 + tab2  # concat
@@ -472,6 +473,8 @@ list = [1 if i%2==0 else -1 for i in range(0,10)]
 ```
 
 ➡️ See also `arrays` for homogeneous data <small>(same type for all values)</small>.
+
+⚠️ Lists are shallowly copied <small>(editing one will edit the other)</small>. For a deep copy, you can use: `tab2 = tab1[:]`.
 </div></div>
 
 <hr class="sep-both">
