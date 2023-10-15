@@ -189,7 +189,7 @@ Docker volumes are the same as [Dockerfile Volume](#volume) but you can choose w
 
 #### Docker UID/GID mapping
 
-Docker uses UID/GID mapping to ensure proper file permissions  by aligning UID and GID inside the container with the corresponding ones on the host system.
+Docker uses UID/GID mapping to ensure proper file permissions by aligning UID and GID inside the container with the corresponding ones on the host system.
 
 For instance, let's say the docker uses a user with UID `1000` and GID `2000`. If there is a matching user/group on the host, they will be used when creating files. Otherwise, the default user will be used <small>(root...)</small>.
 
