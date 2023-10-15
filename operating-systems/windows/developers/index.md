@@ -7,7 +7,8 @@ Windows is commonly used by developers 🍃. While it is less convenient than Li
 * [WSL](#windows-subsystem-for-linux-wsl) is commonly used to get a Linux console environment
 * [Cygwin](#cygwin) or mingw are commonly used to get a Linux console environment or to get `.exe` versions of Linux commands.
 * [VSCode](/tools-and-frameworks/editors/vscode/index.md) or [JetBrains](/tools-and-frameworks/editors/jetbrains/_general/index.md) are commonly used as editors to write code
-* [WAMP](/operating-systems/webservers/apache/wamp.md) is often used to emulate a webserver for web development
+* [WAMP](/operating-systems/webservers/apache/wamp.md) is often used to emulate a web server for web development
+* [Virtual Box](/operating-systems/others/virtualization/virtualbox/index.md) or [VMWare](/operating-systems/others/virtualization/vmware/index.md) are often used to emulate Linux
 * ...
 </div><div>
 
@@ -17,7 +18,7 @@ While not specific to Windows, these are often used instead of the Linux command
 * [Putty MobaXTerm...](#secure-shell-ssh) mostly for SSH, FTP...
 * ...
 
-➡️ For article on Windows, check out the [Windows Club](https://www.thewindowsclub.com/).
+➡️ For articles on Windows, check out the [Windows Club](https://www.thewindowsclub.com/).
 </div></div>
 
 <hr class="sep-both">
@@ -37,7 +38,7 @@ There is the same on Windows. The shortest way to find the menu we are looking f
 <img alt="Write PATH in the search bar" src="/courses/operating-systems/windows/developers/_images/path.png" width="300"/>
 </div>
 
-From it, select environment varible then edit `Path` in User variables.
+From it, select environment variables then edit `Path` in User variables.
 </div><div>
 </div></div>
 
@@ -49,7 +50,7 @@ From it, select environment varible then edit `Path` in User variables.
 
 [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/) is a system that allows us to access a Linux CLI interface. It's basically a [docker](/operating-systems/others/virtualization/docker/index.md).
 
-[Follow the install instructions here](https://learn.microsoft.com/en-us/windows/wsl/setup/environment). Basically, open a PowerShell or a CMD as an admin and install any WSL.
+[Follow the installation instructions here](https://learn.microsoft.com/en-us/windows/wsl/setup/environment). Basically, open a PowerShell or a CMD as an admin and install any WSL as follows:
 
 ```ps
 PS> wsl -l -o
@@ -59,11 +60,11 @@ Debian                                 Debian GNU/Linux
 PS> wsl --install Debian
 ```
 
-You can start it as you would with any programs.
+You can start it as you would with any program.
 
 💡 You can also download them from the Microsoft Store. Doing so will enable auto-updates for you.
 
-❌ WSL don't natively support graphical apps and some commands.
+❌ WSL doesn't natively support graphical apps and some commands.
 
 <br>
 
@@ -81,12 +82,12 @@ You can use the file explorer:
 
 #### Graphical interfaces with XMing
 
-[XMing](http://www.straightrunning.com/XmingNotes/) is a low-quality graphical tool. Install it and [XMing fonts](http://www.straightrunning.com/XmingNotes/) <small>(scroll to "public domain" to find the download links)</small>. To run graphical apps, you will mostly use `-c` to usual commands that support it.
+[XMing](http://www.straightrunning.com/XmingNotes/) is a low-quality graphical tool. Install it and [XMing fonts](http://www.straightrunning.com/XmingNotes/) <small>(scroll to "public domain" to find the download links)</small>. To run graphical apps, you will mostly use `-c` to the commands that support it.
 
 ```shell!
-$ subl -c      # sublime text
-$ emacs -c     # emacs
-$ ./idea.sh -c # IntelliJ
+$ subl -c          # sublime text
+$ emacs -c         # emacs
+$ ./idea.sh -c     # IntelliJ
 ```
 
 <br>
@@ -107,7 +108,7 @@ Most of the time, we integrate WSL within our code environment 🚀. For instanc
 
 <div class="row row-cols-md-2"><div>
 
-[Cygwin](https://www.cygwin.com/) is a collection of Unix tools ported to Windows 🐲. It also includes a CLI such as WSL aside from the fact that it only allow us to run installed commands <small>(e.g. there is no APT command...)</small>.
+[Cygwin](https://www.cygwin.com/) is a collection of Unix tools ported to Windows 🐲. It also includes a CLI such as WSL aside from the fact that it only allows us to run installed commands <small>(e.g. there is no APT command...)</small>.
 
 1. [Download Cygwin Installer/Updater](https://www.cygwin.com/install.html)
 2. Run it, press next
@@ -161,7 +162,7 @@ Some tools:
 
 <div class="row row-cols-md-2"><div>
 
-[InnoSetup](https://github.com/jrsoftware/issrc) is a tool to create modern Windows installers. You can download it [here](https://jrsoftware.org/isdl.php) 🍬. Simply install and run the software.
+[InnoSetup](https://github.com/jrsoftware/issrc) is a tool for creating modern Windows installers. You can download it [here](https://jrsoftware.org/isdl.php) 🍬. Simply install and run the software.
 
 Use the `Create a new file using the Script wizard` wizard. It will generate a `.iss` with the configuration to generate the installer.
 

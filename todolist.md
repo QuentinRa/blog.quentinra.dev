@@ -22,10 +22,12 @@ List of courses that have note which were not added yet.
 * Cloud
 * Linux
 * Networking
-* Windows > Linux, security
 * Utils
 
 **Cybersecurity**
+
+* AD security
+* Windows security
 </div></div>
 
 
