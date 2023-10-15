@@ -4,7 +4,7 @@
 
 Embedded systems have more limitations than usual workstations such as limited disk space or memory.
 
-Because of that, there is a need to create small operating systems with as few packages as possible and properly configured for them to work within an environment with fewer resources.
+Because of that, there is a need to create a minimal operating systems with as few packages as possible and properly configure them to work within an environment with fewer resources.
 
 [Yocto](https://www.yoctoproject.org/) is a collaborative project to create Linux-based systems designed for embedded products.
 </div><div>
@@ -46,7 +46,7 @@ $ bitbake core-image-minimal   # build an image
 $ bitbake -c <some_task> [...] # run a specific task
 ```
 
-When building images, it store the generated image files in `<build_folder>/tmp/deploy/images`.
+When building images, it stores the generated image files in `<build_folder>/tmp/deploy/images`.
 </div><div>
 
 #### Image recipe
