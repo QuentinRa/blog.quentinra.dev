@@ -6,7 +6,7 @@ VirtualBox is a popular free virtualization software.
 
 * [Download VirtualBox](https://www.virtualbox.org/)
 
-➡️ I strongly advise using version 7+, because, as far as I'm concerned, I have less problems in the newer version.
+➡️ I strongly advise using version 7+, because, as far as I'm concerned, I have fewer problems in the newer version.
 </div><div>
 
 * ✨ You can create shared folders between host and VM
@@ -74,7 +74,7 @@ Click on the menu icon next to your VM,  and select "Snapshot".
 
 Right-click on a machine, and open Settings. 
 
-* In General > Advanced, you can enable bidirectional clipboard
+* In General > Advanced, you can enable the bidirectional clipboard
 * In Shared folders, you can create shared folders
 
 ➡️ On Windows VMs, you need to install VB Guest Additions.
@@ -111,7 +111,7 @@ $ "C:\Program Files\Oracle\VirtualBox\VBoxManage" list hdds
 * Power off the machine
 * Remove CD <small>(Settings>Storage>CD, the disk icon on the right)</small>
 
-Go to Tools > Network. Create or select a adapter.
+Go to Tools > Network. Create or select an adapter.
 
 * DHCP server must be disabled
 * Take note of the gateway address <small>(for later, ex: `X.X.X.1`)</small>
@@ -148,14 +148,4 @@ By default, you can freely use your mouse between your host and your virtual mac
 #### Bug: bidirectional clipboard not working
 
 ➡️ Try restarting the VM.
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-</div><div>
 </div></div>

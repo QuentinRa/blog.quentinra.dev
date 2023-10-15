@@ -6,18 +6,18 @@ List of courses that have note which were not added yet.
 
 **Programming Languages**
 
-* (review, typos) web (general), blockchain, OCaml
+* (review, typos) web (general), OCaml
 * **API** > GraphQL
 
 **Tools and Frameworks**
 
-* (review, typos) Data Structures, Pandora, JetBrains plugin development
+* (review, typos) Pandora, JetBrains plugin development
 * Project > Tools?
 </div><div>
 
 **Operating systems**
 
-* (review, typos) docker, qemu, yocto, vbox, Windows dev
+* (review, typos) docker, yocto
 * Embedded > IoT
 * Cloud
 * Linux

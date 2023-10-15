@@ -13,7 +13,7 @@ $ qemu-system-x86_64 -h
 * [Wiki](https://wiki.qemu.org/Documentation) 🔥
 </div><div>
 
-QEMU uses the `.qcow2` <small>(QEMU Copy On Write)</small> format for hard-drives.
+QEMU uses the `.qcow2` <small>(QEMU Copy On Write)</small> format for hard drives.
 
 ```shell!
 $ # format (.qcow2) | drive_name | drive_size
@@ -28,7 +28,7 @@ $ qemu-img create -f qcow2 xxx.qcow2 4G
 
 <div class="row row-cols-md-2"><div>
 
-The most basic usage is to boot on a hard-drive:
+The most basic usage is to boot on a hard drive:
 
 ```shell!
 $ qemu-system-x86_64 -hda xxx.qcow2
