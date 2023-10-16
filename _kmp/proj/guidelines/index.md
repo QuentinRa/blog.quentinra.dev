@@ -1,45 +1,5 @@
 # Code guidelines
 
-
-<hr class="sr">
-
-## Me
-
-Here are some of my troughs before starting.
-
-I think you should really consider using frameworks and tools created by other developers (If they are still maintained) rather than writing everything from scratch. This should
-
-```diff
-- make the "setup" longer (installing a framework might not go smoothly)
-- force you to learn a new framework/... 
-+ broaden your horizons (since you will learn how someone else tackled your need)
-+ reduce the maintainer workload (since another maintainer would deal with the framework)
-+ it should reduce your workload too (since you should have less code to write)
-+ reduce the complexity of your code (if not, pick another or publish your own framework)
-```
-
-Aside from that
-
-* I think you should properly **document** your code (no too much documentation, consider the maintainer when coding)
-* you shouldn't copy-paste code from another part of your code (anyone will tell you this one)
-* give relevant names to your functions/variables, **but** only when that's useful, like `i` is better than   `index` if `i` is a simple index. Declare them at the start of a bloc.
-
-<hr class="sl">
-
-## Principles
-
-**Don’t repeat yourself (DRY)**: Do not copy-paste code, make a function. Otherwise, you need to remember that you will have `n` places to patch if you found a bug, and that's not worth it. You should also use constants rather than writing, again and again, a value like `"toto"` in your code.
-
-**You ain't gonna need it (YAGNI)**: don't write code unless you need it.
-
-**Keep it simple, stupid (KISS)**: simple code means less code. It's easier to debug and modify, so don't make things complicated.
-
-**Code For The Maintainer**: write your code like you will be the one to maintain it. It's hard to maintain some unreadable code, isn't it?
-
-<hr class="sr">
-
-## Practices
-
 **Separation of concerns (SOC)**: simply separate your code according to what part of the program they are dealing with. This may also us to reuse some parts in another application. For instance, you should not have a class called "UndoAndRedo" or "UndoRedo".
 
 **The Rule of One or Curly’s Law**: a part of your code must do only one thing.
