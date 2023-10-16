@@ -26,22 +26,52 @@ Also, avoid reusing hard-coded constants, such as `"Hello, World"`, and store th
 
 ➡️ Apply [Code Reuse](https://en.wikipedia.org/wiki/Code_reuse) as much as possible.
 
+<br>
+
 #### You ain't gonna need it (YAGNI) 🚮
 
 Don't write code for something unless you need it **right now**. Stop writing code that will supposedly be used 'later'.
+
+<br>
+
+#### Separation of concerns (SOC) 🪓
+
+Split each element so that they only handle one thing.
+
+<br>
+
+#### Curly's Law ⚖️
+
+Each function variable or any element of your code should only do and mean one thing at a time.
+
+<br>
+
+#### Murphy's law ✨
+
+*"Anything that can go wrong will go wrong."* For instance, always check that the preconditions of a function are correct, do not expect that they will always be as expected. Test your code.
 </div><div>
 
 #### Keep it simple, stupid (KISS) 😘
 
 Simple code is easier to debug and maintain. Don't make things complicated, write simple code that works.
 
+<br>
+
 #### Code For The Maintainer 🌍
 
 Put yourself in the shoes of the maintainer when writing code to ensure that the code is genuinely maintainable.
 
+<br>
+
 #### Don't reinvent the wheel 🛞
 
 Before creating something from scratch, try to look is there is a maintained stable solution that could start from. It reduces the code to maintain and the time it takes to get a working program. 
+
+<br>
+
+#### Do The Simplest Thing That Could Possibly Work ✅
+
+Write as little code as possible to get a working program. Think about the easiest solution to a problem and code it. You will then improve your code when you need it.
 </div></div>
 
 <hr class="sep-both">

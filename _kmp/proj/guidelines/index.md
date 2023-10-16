@@ -1,15 +1,5 @@
 # Code guidelines
 
-**Separation of concerns (SOC)**: simply separate your code according to what part of the program they are dealing with. This may also us to reuse some parts in another application. For instance, you should not have a class called "UndoAndRedo" or "UndoRedo".
-
-**The Rule of One or Curly’s Law**: a part of your code must do only one thing.
-
-**Rubber duck debugging**: when you got a problem with your code, try explaining it to a rubber duck (`canard en plastique` in French). Sometimes, simply explaining your problem to "someone", helps in solving it. Talk to your rubber duck :)
-
-**Murphy's Law**: "Anything that can go wrong will go wrong.". Don't think "xxx won't do that" and skip some code, because "xxx" will (calling a method using the wrongs parameters, ...).
-
-**Do The Simplest Thing That Could Possibly Work**: Simply write as little as possible, or think about the easiest solution for your problem and code it. You may improve your code later through.
-
 <hr class="sl">
 
 ## SOLID
