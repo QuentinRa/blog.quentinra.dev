@@ -24,6 +24,8 @@ Write your code once. Don't copy and paste. Write functions. It reduces the numb
 
 Also, avoid reusing hard-coded constants, such as `"Hello, World"`, and store them in a constant, for the same reason.
 
+➡️ Apply [Code Reuse](https://en.wikipedia.org/wiki/Code_reuse) as much as possible.
+
 #### You ain't gonna need it (YAGNI) 🚮
 
 Don't write code for something unless you need it **right now**. Stop writing code that will supposedly be used 'later'.
@@ -52,14 +54,14 @@ It's common for developers to have different preferred formatting habits when wr
 
 ```c
 if (condition)              // no braces
-if (condition) {}           // common
+if (condition) {}           // dirty one-line
 if ( condition ) {}         // inner spacing
 if ( condition == true ) {} // explicit 
-if ( true == condition ) {} // ensure "=" won't work 
-if (condition)              // on another line
+if ( true == condition ) {} // "fix" = instead of ==
+if (condition)              // common syntax - new line
 {
 }
-if (condition) {            // on the same line
+if (condition) {            // common syntax - same line
 }
 ```
 </div><div>
@@ -73,19 +75,5 @@ To avoid making the code hard to read and to maintain, developers often define f
 * [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) for C/C++
 * ...
 
-👉 Common topics are: tabulation, spaces, variable names etc.
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-* style
-</div><div>
-
-
+👉 **Common elements**: tabulation, spacing, variables names, lines width, position of symbols/elements in the code, symbols to use, etc.
 </div></div>
