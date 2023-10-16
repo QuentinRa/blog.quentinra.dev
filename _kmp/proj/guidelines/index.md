@@ -1,14 +1,5 @@
 # Code guidelines
 
-Guidelines are used to make your code more maintainable. They are including naming conventions, styling conventions, or everything related to the project. You will learn about famous mnemonics such as SOLID, DRY, YAGNI, and KISS.
-
-You may have learned in other courses that we have
-
-* methods: test-driven, model-driven, ...
-* design patterns (and anti-patterns)
-* frameworks
-
-Using these, you will be backed by the knowledge, experience, and code improved by a lot of developers before you. But you will still have to write some code by yourself, and this course is a gathering of programmers principles that may help you write your code.
 
 <hr class="sr">
 

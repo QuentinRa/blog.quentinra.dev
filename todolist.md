@@ -6,27 +6,31 @@ List of courses that have note which were not added yet.
 
 **Programming Languages**
 
-* (review, typos) web (general), OCaml
-* **API** > GraphQL
+* `(review, typos)` web (general), API
+* SEO
+* LIBS
 
 **Tools and Frameworks**
 
-* (review, typos) Pandora, JetBrains plugin development
-* Project > Tools?
+* `(review, typos)` Pandora, JetBrains plugin development
+* `(current)` **CMake**, **GitLab CI**
+* Project + Tools + Guidelines
 </div><div>
 
 **Operating systems**
 
-* Linux
-* Networking
+* **Linux** (+debugfs, +expect)
+* Networking (+bridges)
 * Utils
+
+**QUID**
+
+* Math
+* Games
 
 **Cybersecurity**
 
-* AD security
-* Windows security
-* IoT
-* Cloud
+* AD security, Windows security, IoT, Cloud
 </div></div>
 
 <hr class="sep-both">
