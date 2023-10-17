@@ -3,13 +3,29 @@
 <div class="row row-cols-md-2"><div>
 
 When developing software, there are well-known guidelines, [patterns](../dp/index.md), methodologies and tools that can help boost developers. 🥇
-
-* 💍 [StackOverflow](https://stackoverflow.com/): most of the time, another developer had a similar question or problem as you and asked about it here.
-
-* 🍼 [ChatGPT](https://chat.openai.com/): a chatbot that is somewhat like a smarter search engine thought it often provides incorrect results
+</div><div>
 
 One of the life-saving methodologies when you have a bug is the [Rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging) method. While you explain the problem to a rubber duck, you might be enlightened and find the solution. 🦆
+</div></div>
+
+<hr class="sep-both">
+
+## Coding Helpers
+
+<div class="row row-cols-md-2"><div>
+
+#### Websites
+
+A few notables:
+
+* [StackOverflow](https://stackoverflow.com/) 🍹: most of the time, another developer had a similar question or problem as us and asked about it here.
 </div><div>
+
+#### Artificial Intelligences
+
+A few notables:
+
+* [ChatGPT](https://chat.openai.com/) 🐈: a chatbot that is somewhat like a smarter search engine thought it often provides incorrect <small>(or outdated)</small> results
 </div></div>
 
 <hr class="sep-both">
@@ -126,14 +142,18 @@ To avoid making the code hard to read and to maintain, developers often define f
 
 #### Data-Driven Programming
 
-Data-driven programming is a paradigm where the behavior of the program is driven by the data we provide ✨.
+[Data-driven programming](https://en.wikipedia.org/wiki/Data-driven_programming) is a paradigm where the behavior of the program is driven by the data we provide ✨.
 
-For instance, in a game, we could define quests directly inside the code or we could create JSON/XML/... for each quest and load them inside the program (DDP). 
+For instance, in a game, we could define quests directly inside the code or we could create JSON/XML/... for each quest and load them inside the program <small>(which is a Data-Driven approach)</small>. 
 
 It allows us to change the data or add new files without editing the code. It's both easier to use and to maintain. Editing data files may not require  any programming knowledge, and they can be processed by other tools <small>(ex: we could develop a graphical editor)</small>.
 </div><div>
 
-...
+#### Documentation-Driven Development
+
+[Literate programming](https://en.wikipedia.org/wiki/Literate_programming) is a coding practice in which we write documentation before and alongside the code to explain its purpose.
+
+It's sometimes called "Documentation-Driven Development" to enforce the idea that we must write documentation before the code, and that it drives what we code.
 </div></div>
 
 <hr class="sep-both">
