@@ -72,6 +72,16 @@ Before creating something from scratch, try to look is there is a maintained sta
 #### Do The Simplest Thing That Could Possibly Work ✅
 
 Write as little code as possible to get a working program. Think about the easiest solution to a problem and code it. You will then improve your code when you need it.
+
+#### SOLID
+
+SOLID is a popular acronym in object-oriented projects:
+
+* **Single** 📝: Each class should have one responsibility
+* **Open/Closed** 🥨: "Open for extension, closed for modification". Use inheritance etc. to modify the behavior of a class.
+* **Liskov substitution** 👻: if B inherits from A, then we must ensure code working with A works with B.
+* **Interfaces segregation** 🪓: keep your interfaces  relevant to the one that uses it (don't force them to implement unneeded stuff)
+* **Dependencies inversion** ⛳: ensure high-level classes do not depend on low-level ones using interfaces, abstract classes etc.
 </div></div>
 
 <hr class="sep-both">
