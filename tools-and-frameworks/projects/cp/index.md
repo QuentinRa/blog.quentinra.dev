@@ -115,5 +115,35 @@ To avoid making the code hard to read and to maintain, developers often define f
 * [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) for C/C++
 * ...
 
-👉 **Common elements**: tabulation, spacing, variables names, lines width, position of symbols/elements in the code, symbols to use, etc.
+👉 **Common elements**: tabulation, spacing, variable names, lines width, position of symbols/elements in the code, symbols to use, etc.
+</div></div>
+
+<hr class="sep-both">
+
+## Other Paradigms
+
+<div class="row row-cols-md-2"><div>
+
+#### Data-Driven Programming
+
+Data-driven programming is a paradigm where the behavior of the program is driven by the data we provide ✨.
+
+For instance, in a game, we could define quests directly inside the code or we could create JSON/XML/... for each quest and load them inside the program (DDP). 
+
+It allows us to change the data or add new files without editing the code. It's both easier to use and to maintain. Editing data files may not require  any programming knowledge, and they can be processed by other tools <small>(ex: we could develop a graphical editor)</small>.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* [_old](_old.md)
+</div><div>
 </div></div>

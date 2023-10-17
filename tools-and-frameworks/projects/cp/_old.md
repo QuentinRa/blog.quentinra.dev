@@ -1,16 +1,4 @@
-# Introduction
-
-These methods are usually used in agile projects, but I think anyone might try the Pair-programming method (or Mob-programming), along with model-driven, data-driven, and documentation-driven methodologies.
-
-If you're looking for
-
-* SOLID, KISS, DRY, ... they are explained in [Code guidelines](../guidelines/index.md)
-* Test-driven, Behavior-driven, they are explained in [Tests](../../../../tools-and-frameworks/others/testing/methodology/index.md)
-* Design patterns, they are explained in [Design patterns](../design-patterns/index.md) (😁)
-
-<hr class="sr">
-
-## Pair-programming
+# Pair-programming
 
 This is quite easy. It's usually used in agile projects, since it's one of the extreme programming methods.
 
