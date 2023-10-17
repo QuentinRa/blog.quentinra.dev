@@ -136,6 +136,33 @@ To avoid making the code hard to read and to maintain, developers often define f
 
 <hr class="sep-both">
 
+## Pair-programming
+
+<div class="row row-cols-md-2"><div>
+
+Pair-programming 🪷 or [Mob programming](https://en.wikipedia.org/wiki/Mob_programming) <small>(when more than two)</small> 🪖 is one of the most well-known coding practices.
+
+Multiple persons are working together on the same computer. One writes code, while the others:
+
+* Provide help 🍻
+* Give advice and suggestions 🎫
+* Ask questions when your code is unclear 🤔
+* Think about potential problems in the code 💥
+* ...
+</div><div>
+
+Make sure to take turns if you are often doing it.
+
+There are many extensions to popular IDEs or text-editors allowing us to do pair-programming on two computers remotely. It's useful as two persons can write the code instead of one.
+
+* [JetBrains Code With Me](https://www.jetbrains.com/code-with-me/)
+* [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/)
+
+*"Two heads are better than one"*
+</div></div>
+
+<hr class="sep-both">
+
 ## Other Paradigms
 
 <div class="row row-cols-md-2"><div>

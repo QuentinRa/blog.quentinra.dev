@@ -1,22 +1,4 @@
-# Pair-programming
-
-This is quite easy. It's usually used in agile projects, since it's one of the extreme programming methods.
-
-> You got **two persons** and **one computer**, one code, while the other
-> 
-> * gives advice (help, improvements)
-> * ask for explications about what's this part of code is supposed to do (hint to add comments)
-> * think about problems that may arise (like a wrong argument or an invalid usage)
-
-The two should switch roles at least once in a while. This will help writing a more maintainable code, maybe faster since <q>Four eyes are better than two</q>. It's quite useful to train a new developer, so I'm practicing that a lot when I'm starting a project with a less experienced developer to make sure that they don't waste time on useless stuff and improve their skills faster.
-
-You got tools like VSC/IntelliJ, allowing you to work on your friend's computer and code with him. This may help for debugging the code too, aside from remotely working in pairs.
-
-An extension of this method, where instead of 2, the whole team (😰) is working on one computer, is called [Mob programming (Wikipedia)](https://en.wikipedia.org/wiki/Mob_programming).
-
-<hr class="sl">
-
-## Model-driven development (MDD)
+# Model-driven development (MDD)
 
 You will create a model during the conception phase. Then your code will be the exact representation of the model (same attributes, classes, ...), at least the "public" part of your code. If you need to add something, then first change the model.
 
