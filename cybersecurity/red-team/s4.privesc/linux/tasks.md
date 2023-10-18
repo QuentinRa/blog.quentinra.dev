@@ -9,7 +9,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-Scheduled tasks on Linux are called [cron jobs](/operating-systems/linux/knowledge/index.md#cron-jobs). You may try [to inject some code](injection.md) for instance, using environment variables.
+Scheduled tasks on Linux are called [cron jobs](/operating-systems/linux/_knowledge/index.md#cron-jobs). You may try [to inject some code](injection.md) for instance, using environment variables.
 
 ```ps
 # tasks of the current user

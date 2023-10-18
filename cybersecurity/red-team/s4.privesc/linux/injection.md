@@ -44,7 +44,7 @@ When the target script is executed, the `bash` command is executed instead of `l
 
 To execute any command with filename starting with `-`, you need to use `--` such as `rm -- -la` to remove the file `-la`.
 
-We can inject arguments when [glob-patterns](/operating-systems/linux/knowledge/index.md#glob-patterns) are replaced.
+We can inject arguments when [glob-patterns](/operating-systems/linux/_knowledge/index.md#glob-patterns) are replaced.
 </div><div>
 
 For instance, to inject `-la` into `ls`:

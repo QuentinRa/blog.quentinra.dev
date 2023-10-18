@@ -19,7 +19,7 @@ An excellent reference to exploit sudo: [SUDO_KILLER](https://github.com/TH3xACE
 
 <div class="row row-cols-md-2"><div>
 
-If you have [administrative privileges](/operating-systems/linux/knowledge/index.md#sudo), you can list them with:
+If you have [administrative privileges](/operating-systems/linux/_knowledge/index.md#sudo), you can list them with:
 
 ```ps
 $ sudo -nl # without a password

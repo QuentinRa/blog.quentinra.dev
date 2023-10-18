@@ -17,7 +17,7 @@ Linux is a family of Unix-like operating systems, often called distros, such as 
 
 🐦 **Common distros**: Ubuntu, Debian, Arch Linux, Red Hat, CentOS, Kali Linux, Parrot Linux, Linux Mint, Fedora...
 
-🎠 **Random distros**: [Gentoo](https://www.gentoo.org/), [Yocto](https://www.yoctoproject.org/), [QubesOS](https://www.qubes-os.org/).
+🎠 **Random distros**: [Gentoo](https://www.gentoo.org/), [QubesOS](https://www.qubes-os.org/).
 </div><div>
 
 Linux in its simplest form is a **command-line interface** (CLI), commonly referred to as terminal/shell <small>(or console/command prompt)</small>.
@@ -41,7 +41,7 @@ Inside the CLI, we can run commands interpreted by a **shell** 🐚.  There are 
 
 <div class="row row-cols-md-2"><div>
 
-A command has **a name**, which may be followed by **arguments**, including some usually called **flag**/**switches** (`options`). The difference between both is that a flag starts with a `-`, while **operands** do not.
+A command has **a name**, which may be followed by **arguments**, including some usually called **flag**/**switches** (`options`). The difference between both is that a flag starts with a `-` while **operands** do not.
 
 Below are some examples with the command `ls`:
 
@@ -49,13 +49,13 @@ Below are some examples with the command `ls`:
 
 No arguments.
 
-```ps
+```shell!
 $ ls
 ```
 
 One operand.
 
-```ps
+```shell!
 $ ls toto.txt
 $ ls "toto.txt"
 ```
@@ -63,14 +63,14 @@ $ ls "toto.txt"
 
 Two flags ➡️ One flag.
 
-```ps
+```shell!
 $ ls -l -a
 $ ls -la
 ```
 
 One flag and one operand.
 
-```ps
+```shell!
 $ ls -la toto/
 ```
 </div></div>
@@ -87,13 +87,13 @@ A few takeaways:
 
 🌍 **Browse the manual** (`man`) to learn more about some command
 
-```bash
+```shell!
 $ man ls
 ```
 
 🤘 Use **tab key to autocomplete** commands/paths
 
-```bash
+```ps
 $ ls /<TAB>
 # will display every path starting with "/"
 ```
@@ -111,7 +111,7 @@ $ ls /<TAB>
 
 A **path** 🛣️ is a suite of one or more folders 📂 that may lead to a regular file 📄. They are separated by a separtor which is: `/` <small>(slash)</small>.
 
-```ps
+```shell!
 $ pwd
 /usr/home/toto/Documents/
 ```
@@ -140,7 +140,7 @@ A path starting by the root is called absolute path. Otherwise, they are called 
 * `..` <small>(dot dot)</small>: will be replaced with the parent folder of `.`
 * `~` <small>(tilde)</small>: path to user home, same as `$HOME`
 
-```ps
+```shell!
 $ pwd
 /home/example
 $ ./toto.txt
@@ -262,14 +262,14 @@ And, there is **PATH**. This variable is used to store a list of folders. When y
 
 Print all environment variables
 
-```bash
+```shell!
 $ env
 $ printenv
 ```
 
 Print the value of one environment variable
 
-```bash
+```shell!
 $ echo $PATH
 $ printenv PATH
 $ env | grep "^PATH="
@@ -277,13 +277,13 @@ $ env | grep "^PATH="
 
 Set an environment variable
 
-```bash
+```shell!
 $ export VAR_NAME=value
 ```
 
 Add `/home/toto/bin` to the PATH
 
-```bash
+```shell!
 $ export PATH=/home/toto/bin:$PATH
 ```
 
@@ -386,14 +386,14 @@ downloads
 
 We can run scheduled tasks on Linux using cron jobs.
 
-```ps
+```shell!
 $ crontab -l # list current user jobs
 $ sudo crontab -l -u xxx # list user 'xxx' jobs
 ```
 
 To add a new scheduled task, use `-e`
 
-```ps
+```shell!
 $ crontab -e
 ```
 </div><div>

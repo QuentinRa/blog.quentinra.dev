@@ -4,7 +4,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-**Regular expressions** (`expressions régulières`), commonly referred to as **regex**, are an enhanced version of [glob-patterns](/operating-systems/linux/knowledge/index.md#glob-patterns) and are present in most, if not all languages.
+**Regular expressions** (`expressions régulières`), commonly referred to as **regex**, are an enhanced version of [glob-patterns](/operating-systems/linux/_knowledge/index.md#glob-patterns) and are present in most, if not all languages.
 
 🎯 Everything learned in glob-patterns is still available in regexes, so it won't be covered. ⚠️ The symbol for "one character" is now `.` <small>(dot)</small> and not `?` <small>(question mark)</small> which was given a new meaning.
 </div><div>

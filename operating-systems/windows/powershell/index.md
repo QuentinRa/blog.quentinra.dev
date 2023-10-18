@@ -57,7 +57,7 @@ PS> Get-Childitem "C:/" # give a folder
 PS> Get-Childitem -Path "C:/" # same
 ```
 
-Only keep files matching a [glob-pattern](/operating-systems/linux/knowledge/index.md#glob-patterns):
+Only keep files matching a [glob-pattern](/operating-systems/linux/_knowledge/index.md#glob-patterns):
 
 ```ps
 PS> Get-ChildItem [...] -Filter "a*"

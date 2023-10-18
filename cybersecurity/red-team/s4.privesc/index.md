@@ -10,7 +10,7 @@ This is an important step otherwise we may not have enough privilege to access d
 
 We want to access account with the higher level of privileges:
 
-* `root` > `sudoers` > ALL on [Linux](/operating-systems/linux/knowledge/index.md#sudo)
+* `root` > `sudoers` > ALL on [Linux](/operating-systems/linux/_knowledge/index.md#sudo)
 * `NT AUTHORITY\SYSTEM` > `Administrator` > ALL on [Windows](/operating-systems/windows/_knowledge/index.md#permissions-and-users)
 </div><div>
 
@@ -36,7 +36,7 @@ Escalation can be **horizontally**/laterally <small>(another user with the same 
 [![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 [![linux_privilege_escalation](../../_badges/poat/linux_privilege_escalation.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md)
 
-[Linux](/operating-systems/linux/knowledge/index.md) privilege escalation may be achieved by exploiting:
+[Linux](/operating-systems/linux/_knowledge/index.md) privilege escalation may be achieved by exploiting:
 
 * 💎 Exploiting [sudo](linux/sudo.md)
 * ⏰ Exploiting [scheduled tasks](linux/tasks.md) <small>(cron tasks)</small>

@@ -6,7 +6,7 @@
 
 Microsoft Windows is the most used operating system. Windows versions that were quite used are Windows XP, Windows 7, Windows 10, and now Windows 11 is slowly gaining new users.
 
-There are a lot of things that are similar to [Linux Operating systems](/operating-systems/linux/knowledge/index.md), so I will add fewer details here.
+There are a lot of things that are similar to [Linux Operating systems](/operating-systems/linux/_knowledge/index.md), so I will add fewer details here.
 
 Some dates about the latest versions
 

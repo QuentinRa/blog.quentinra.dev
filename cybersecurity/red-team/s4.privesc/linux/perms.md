@@ -17,7 +17,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-This is a [permission](/operating-systems/linux/knowledge/index.md#users-and-permissions) on Linux allowing users to execute a file with the permission of the owner (**SUID**) or the group owner (**GUID**).
+This is a [permission](/operating-systems/linux/_knowledge/index.md#users-and-permissions) on Linux allowing users to execute a file with the permission of the owner (**SUID**) or the group owner (**GUID**).
 
 ```bash
 # Variants: "-04000" "-4000" | "-4001"

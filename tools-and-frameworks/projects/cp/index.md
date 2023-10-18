@@ -201,15 +201,3 @@ It allows us to change the data or add new files without editing the code. It's 
 
 It's sometimes called "Documentation-Driven Development" to enforce the idea that we must write documentation before the code, and that it drives what we code.
 </div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-* [_old](_old.md)
-</div><div>
-</div></div>
