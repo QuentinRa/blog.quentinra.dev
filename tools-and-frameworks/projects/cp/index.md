@@ -163,20 +163,39 @@ There are many extensions to popular IDEs or text-editors allowing us to do pair
 
 <hr class="sep-both">
 
-## Other Paradigms
+## Programming Paradigms
 
 <div class="row row-cols-md-2"><div>
 
-#### Data-Driven Programming
+#### Model-Driven Development 🪞
 
-[Data-driven programming](https://en.wikipedia.org/wiki/Data-driven_programming) is a paradigm where the behavior of the program is driven by the data we provide ✨.
+The Model-Driven Development (MDD) means that the code must, at any time, be the mirror of the model that we designed.
 
-For instance, in a game, we could define quests directly inside the code or we could create JSON/XML/... for each quest and load them inside the program <small>(which is a Data-Driven approach)</small>. 
+The model is commonly designed using [UML](/tools-and-frameworks/projects/modeling/uml/_knowledge/index.md). It refers to all diagrams associated with the project <small>(class diagrams, activity diagrams etc.)</small>.
 
-It allows us to change the data or add new files without editing the code. It's both easier to use and to maintain. Editing data files may not require  any programming knowledge, and they can be processed by other tools <small>(ex: we could develop a graphical editor)</small>.
+The procedure to make a good model:
+
+1. **User-Stories** (US) 🛣️: describe each functionality in a few words.
+2. **Use case diagram** 🪴: create a [Use case diagram](/tools-and-frameworks/projects/modeling/uml/diagrams/use_case/index.md) from US
+3. **Basic class diagram** ✍️: identify the first classes and methods and add them to a [Class diagram](/tools-and-frameworks/projects/modeling/uml/diagrams/class/index.md)
+4. **Sequence Diagram** 🙋‍♂️: for each use case, create a [sequence diagram](/tools-and-frameworks/projects/modeling/uml/diagrams/sequence/index.md). You must use actors, classes, and methods from other diagrams. Complete your diagrams each time you something is missing <small>(method, method arguments etc.)</small>.
+5. **Implementation** 📦: generate the code from the model and improve your model as you work on the implementation.
+
+
+➡️ It may be helpful to create a mock-up of the application first to better identify user-stories.
 </div><div>
 
-#### Documentation-Driven Development
+#### Data-Driven Programming 🗃️
+
+[Data-driven programming](https://en.wikipedia.org/wiki/Data-driven_programming) is a paradigm where the behavior of the program is driven by the data we provide.
+
+For instance, in a game, we could define quests directly inside the code or we could create JSON/XML/... for each quest and load them inside the program <small>(which is a Data-Driven approach)</small>.
+
+It allows us to change the data or add new files without editing the code. It's both easier to use and to maintain. Editing data files may not require  any programming knowledge, and they can be processed by other tools <small>(ex: we could develop a graphical editor)</small>.
+
+<br>
+
+#### Documentation-Driven Development 📝
 
 [Literate programming](https://en.wikipedia.org/wiki/Literate_programming) is a coding practice in which we write documentation before and alongside the code to explain its purpose.
 
