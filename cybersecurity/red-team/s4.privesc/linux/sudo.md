@@ -34,7 +34,7 @@ Matching Defaults entries for [...]:
 ```
 </div><div>
 
-The second section is about your [sudoers](/operating-systems/linux/architecture/index.md#etcsudoers) rights. Such commands may be exploited to get root, search the command on [GTOBins #sudo](gtfobins.md).
+The second section is about your [sudoers](/operating-systems/linux/env/index.md#etcsudoers) rights. Such commands may be exploited to get root, search the command on [GTOBins #sudo](gtfobins.md).
 
 ```text!
 User [...] may run the following commands on [...]:

@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-Every linux command is a **process**. While you can learn more about [processes here](/operating-systems/linux/architecture/index.md#processes-and-scheduling) 🤓, some important takeaway are:
+Every linux command is a **process**. While you can learn more about [processes here](/operating-systems/linux/env/index.md#processes-and-scheduling) 🤓, some important takeaway are:
 
 * a process returns `0` if successful ✅, and `not 0` otherwise ❌.
 * each process has a unique identifier called `pid`

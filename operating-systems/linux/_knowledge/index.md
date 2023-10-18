@@ -120,7 +120,7 @@ $ pwd
 
 ➡️ Each user has a home folder with their documents...
 
-🦄 See also: [Common files and folders](/operating-systems/linux/architecture/index.md#common-files-and-folders).
+🦄 See also: [Common files and folders](/operating-systems/linux/env/index.md#common-files-and-folders).
 
 <br>
 

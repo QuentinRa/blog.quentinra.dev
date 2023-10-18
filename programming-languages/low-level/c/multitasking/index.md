@@ -24,7 +24,7 @@ There are a few related topics:
 
 <div class="row row-cols-md-2"><div>
 
-A [process](/operating-systems/linux/architecture/index.md#processes-and-scheduling) is both a program and its environment.
+A [process](/operating-systems/linux/env/index.md#processes-and-scheduling) is both a program and its environment.
 
 * file descriptors <small>(file opened, position of the cursor...)</small>
 * variables and environment variables

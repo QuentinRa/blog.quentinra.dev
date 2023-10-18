@@ -19,7 +19,7 @@ List of courses that have note which were not added yet.
 
 **Operating systems**
 
-* **Linux** (+debugfs, +expect)
+* **Linux** (+debugfs, +expect, architecture, advanced scripts)
 * Networking (+bridges)
 * Utils
 
