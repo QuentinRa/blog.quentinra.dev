@@ -1,6 +1,6 @@
 # Shell scripts
 
-[![bashscripting](../../../cybersecurity/_badges/thm/bashscripting.svg)](https://tryhackme.com/room/bashscripting)
+[![bashscripting](../../../../cybersecurity/_badges/thm/bashscripting.svg)](https://tryhackme.com/room/bashscripting)
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -8,65 +8,61 @@ Scripts are simply files with usually many Linux commands, usually written in Ba
 
 A script is usually written in a file `name.sh`, regardless of the language used in the script, but this isn't mandatory. 
 
+➡️ Scripts are simply files with commands. It means you can execute anything here directly inside a shell, and the other way around.
+</div><div>
+
 1. Create a script `example.sh` with the contents below
 
-```bash
+```bash!
 #!/bin/bash
 
 echo "Hello, World!"
 ```
 
-</div><div>
-
 2. Allow the script to be executed
 
-```bash
+```shell!
 $ chmod +x example.sh
 ```
 
 3. Execute the script
 
-```bash
+```shell!
 $ ./example.sh
 Hello, World!
 ```
 
-➡️ You can also use `bash example.sh` to run a script.
+➡️ You can also use `bash example.sh` to run a script with `bash`.
 </div></div>
-
-➡️ Scripts are simply files with commands, so everything below can be used outside a script.
 
 <hr class="sl">
 
 ## POSIX standard
 
-<div class="row row-cols-md-2 mx-0"><div class="align-self-center">
+<div class="row row-cols-md-2"><div>
 
-The Portable Operating System Interface (**POSIX**) is a family of standards (`normes POSIX`) that defines what we should, and shouldn't do, to make our scripts compatible across a maximum of operating systems.
+The Portable Operating System Interface (POSIX) is a family of standards that defines what we should and shouldn't do to write scripts that work on all POSIX-compliant shells.
 
-**This course will focus on making POSIX-compliant scripts**.
-
-<span class="h4">As such, if you want to make bash-only scripts, read the [Bash course](../bash/index.md) to improve your POSIX scripts by using bash-only syntax </span><small>(usually shorter, faster, and/or simplified)</small>.
-
-</div><div>
-
-**Recap of what isn't allowed by POSIX**
-
-* ❌ **DO NOT USE `((`, `[[`, `]]`, and `))`**
-* ❌ **DO NOT USE `&&`<sup>1</sup>, `||`**<sup>1</sup>
-* ❌ **DO NOT USE `>`<sup>1</sup>, `<`<sup>1</sup>...**
+Each shell, such as [Bash](/operating-systems/linux/shells/bash/index.md) provides syntax that is not POSIX but can make scripts shorter or simpler.
 
 ```bash
 for (( i = 0; i < 10; i++ )); do
-    # code
+  # ❌ Bash | Not POSIX-compliant
 done
 
 if [[ 5 > 3 || 4 > 3 ]]; then
-  # code
+  # ❌ Bash | Not POSIX-compliant
 fi
 ```
+</div><div>
 
-<sup>1</sup> such operators are only doing what you expect inside `[[ ]]`
+Recap of what isn't allowed by POSIX
+
+* ❌ DO NOT USE `((`, `[[`, `]]`, and `))`
+* ❌ DO NOT USE `&&`<sup>1</sup>, `||`<sup>1</sup>
+* ❌ DO NOT USE `>`<sup>1</sup>, `<`<sup>1</sup>...
+
+<sup>1</sup> such operators only do what we expect when used in "`[[ ]]`".
 
 </div></div>
 
@@ -76,7 +72,7 @@ fi
 
 <div class="row row-cols-md-2 mt-2"><div>
 
-Every script **should** start with a directive called **Shebang** telling the shell in which language the script is <small>(e.g. which interpreter to use)</small>.
+Every script should start with a directive called **Shebang** telling the shell in which language the script is <small>(e.g. which interpreter to use)</small>.
 
 * Traditional way for a script <small>(ex: bash)</small>
 
