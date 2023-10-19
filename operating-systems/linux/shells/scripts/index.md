@@ -72,37 +72,45 @@ Recap of what isn't allowed by POSIX
 
 <div class="row row-cols-md-2 mt-2"><div>
 
-Every script should start with a directive called **Shebang** telling the shell in which language the script is <small>(e.g. which interpreter to use)</small>.
+#### Shebang
 
-* Traditional way for a script <small>(ex: bash)</small>
+Every script should start with a directive called **Shebang** 💥 telling the CLI which shell interpreter should be used to run the script.
 
-```bash
+➡️ Traditional way to request `/bin/bash`
+
+```bash!
 #!/bin/bash
 ```
 
-* Best way for a script <small>(ex: bash)</small>
+➡️ Modern way to request `bash`
 
-```bash
+```bash!
 #!/usr/bin/env bash
 ```
 
-Also, this is how you do comments
+#### Comments
+
+This is how you write comments:
 
 ```bash
 # this is a comment
 ```
 </div><div>
 
-It's important for you to remember that in shell, **0 means success**, **anything else**, usually 1, **means failure**. In conditions:
+#### Booleans
 
-* **0 means TRUE**
-* **NOT 0 means FALSE**
+It's important for you to remember that in shell, `0` means success, anything else, usually `1`, means failure. For conditions:
 
-This MUST be engraved in your mind, because in many other languages, such as in C, `if (1)` is TRUE, while in bash, `if (1)` is FALSE.
+* `0` means `TRUE`
+* `NOT 0` means `FALSE`
 
-**Pro-tip**: you can use `echo $?` to see the exit code of the previous command executed.
+This is important to remember that, because in many other languages, such as in C, `if (1)` is TRUE, while in bash, `if (1)` is FALSE.
 
-```bash
+#### Exit Code
+
+You can use `echo $?` use query the exit code of the previously executed command:
+
+```shell!
 $ true # /bin/true is a command returning 0
 $ echo $?
 0
