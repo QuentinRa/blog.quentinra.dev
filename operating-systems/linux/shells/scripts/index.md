@@ -369,18 +369,6 @@ echo $@
 
 There is also `$*` in which is all arguments as a single string.
 
-<br>
-
-#### Proper argument handling
-
-We usually avoid using `$n` directly inside the code. We usually store them inside variables and use them instead.
-
-```bash!
-program_name=$0
-```
-
-</div><div>
-
 #### Handle incorrect usages
 
 We often check the number of arguments and display a "usage" message when required arguments are missing:
@@ -392,6 +380,15 @@ if [ $# -lt 2 ]; then # $0 $1 $2
     exit 1
 fi
 ```
+
+#### Proper argument handling
+
+We usually avoid using `$n` directly inside the code. We usually store them inside variables and use them instead.
+
+```bash!
+program_name=$0
+```
+</div><div>
 
 #### Iterate arguments
 
@@ -416,6 +413,24 @@ while [ $# -gt 0 ]; do
     # ...
   esac
 done
+```
+
+#### Handle command arguments
+
+There are multiple commands that call other commands. To pass command arguments, we commonly use `--` to indicate that all arguments, even if they start with `-`, should be treated as arguments.
+
+```bash!
+# Ex: ./call_command.sh [...] -- -flag arg1 arg2
+# if we were using a while/esac
+# ...
+    --)
+        command_args="$@"
+        break
+    ;;
+# ...
+# call the command with some arguments from our script
+# and pass it the command arguments too
+some_command [...] ${command_args}
 ```
 </div></div>
 
