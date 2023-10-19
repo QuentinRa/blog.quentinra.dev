@@ -107,5 +107,8 @@ Stuff that I found, but never read/used yet.
 * `-g` (+not recommended)
 </div><div>
 
-
+* `npm config`
+* `npm config set xxx yyy`
+* `npm --arch=xxx --target_arch=xxx --no-registry`
+* `npm outdated`
 </div></div>

@@ -43,5 +43,11 @@ Stuff that I found, but never read/used yet.
 * [frp](https://github.com/fatedier/frp)
 </div><div>
 
+```text!
+export http_proxy='http://example.com:4444/'
+export https_proxy='https://example.com:8888/'
 
+Acquire::http::Proxy "http://example.com:4444/";
+Acquire::https::Proxy "https://example.com:8888/";
+```
 </div></div>
