@@ -115,7 +115,6 @@ $ true # /bin/true is a command returning 0
 $ echo $?
 0
 ```
-
 </div></div>
 
 <hr class="sl">
@@ -338,20 +337,22 @@ esac
 
 <div class="row row-cols-md-2 mt-2"><div>
 
-As you can for commands, you can pass arguments to your script.
+#### Pass arguments
 
-```bash
+You can pass arguments to a script in a similar way than commands:
+
+```shell!
 $ ./example arg1 "This is arg2" -o arg4 
 ```
 
-Print the number of arguments, which is stored in `$#`
+You can use `$#` to get the number of arguments:
 
-```bash
+```bash!
 echo $#
 # 4
 ```
 
-Print an argument
+Each argument is stored in a variable "`$n`"
 
 ```bash
 echo $0 # ./example
@@ -359,37 +360,61 @@ echo $1 # arg1
 echo $2 # This is arg2
 ```
 
-List of all arguments
+We can use `$@` to get the list of arguments:
 
-```bash
+```bash!
 echo $@
 # echo ./example arg1 "This is arg2" -o arg4
 ```
 
 There is also `$*` in which is all arguments as a single string.
-</div><div>
 
-**Note 1**: we are usually NOT using `$0`... directly in the code. We are usually storing them in variables, and using these instead.
+<br>
 
-```bash
+#### Proper argument handling
+
+We usually avoid using `$n` directly inside the code. We usually store them inside variables and use them instead.
+
+```bash!
 program_name=$0
 ```
 
-**Note 2**: check the number of arguments! The example below checks that there are at least 2 arguments, prints a message, and exits with 1 otherwise.
+</div><div>
 
-```bash
-if [ $# -lt 2 ]; then
+#### Handle incorrect usages
+
+We often check the number of arguments and display a "usage" message when required arguments are missing:
+
+```bash!
+if [ $# -lt 2 ]; then # $0 $1 $2
     echo "Usage: $0 arg1 arg2"
     echo "Try '$0 -h' for more information."
     exit 1
 fi
 ```
 
-**Note 3**: iterate every argument (DO NOT forget the quotes)
+#### Iterate arguments
 
-```bash
+A common code to iterate arguments <small>(⚠️ do not forget quotes)</small>:
+
+```bash!
 for i in "$@"; do
   echo $i
+done
+```
+
+For more complex uses:
+
+```bash!
+while [ $# -gt 0 ]; do
+  case "$1" in
+    # handle "-xxx yyy"
+    -xxx)
+      xxx_value="$2"
+      shift 2 # consume 2 args
+      ;;
+    # ...
+  esac
 done
 ```
 </div></div>
@@ -592,16 +617,27 @@ done
 
 You may use "sleep" to pause your script
 
-```bash
-# sleep for 50 seconds
-$ sleep 50
+```shell!
+$ sleep 50  # sleep for 50 seconds
 $ sleep 50s # same
 ```
 </div><div>
 
 Don't ask why, but if you want a random number in $[10, 20]$.
 
-```bash
+```shell!
 $ echo $[RANDOM%(20-10+1) + 10]
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* `getopts`
+</div><div>
 </div></div>
