@@ -120,15 +120,7 @@ $ pwd
 
 ➡️ Each user has a home folder with their documents...
 
-🦄 See also: [Common files and folders](/operating-systems/linux/env/index.md#common-files-and-folders).
-
-<br>
-
-#### Regular and non-regular files
-
-On Linux, "everything is a file". Folders, hard drives <small>(/mnt/)</small>, terminals <small>(/dev/)</small>, commands <small>(/bin/)</small>... Regular files are "normal" files.
-
-See the first character of the output of `ls -l`.
+🦄 See also: [Linux Filesystem and Files](/operating-systems/linux/env/files/index.md).
 
 </div><div>
 

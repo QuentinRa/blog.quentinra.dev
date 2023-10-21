@@ -2,12 +2,22 @@
 
 <div class="row row-cols-md-2"><div>
 
-...
+Linux follows a hierarchical file system, known as the Filesystem Hierarchy Standard (FHS). The parent of every folder is called the root and correspond to `/`.
+
+A common Linux philosophy is to think "everything is a file."
+
+* Regular files 🗃️
+* Folders/Directories 📂
+* Hard Drives <small>(/mnt/)</small> 💾
+* Terminals And Devices <small>(/dev/)</small> 🤖
+* ...
+
+See the first character of the output of `ls -l`.
 </div><div>
 
-The root of every folder is `/`.
+Files and Folders starting with <code>.</code> (dot)  are hidden 🤐 <small>(ex: .config)</small>.
 
-Any file starting with <code>.</code> (dot) such as <code>.config</code> are **hidden folders/files** 🤐.
+Linux supports multiple filesystems. Ext4 is the default one for many Linux distributions and one of the most widely used.
 </div></div>
 
 <hr class="sep-both">
@@ -31,13 +41,19 @@ Each user has its own folder, with their documents...
 
 #### Binaries ⚒️
 
-Folders used to store commands... such as `/bin/`, while `/usr/bin/` and `/usr/local/bin/` are also commonly used.
+Folders used to store commands and binaries.
+
+* `/bin/`: system binaries
+* `/usr/bin/`: all users binaries
+* `/usr/local/bin/`: user binaries
 
 </div><div>
 
 #### System folders 🏭
 
-System configurations are commonly stored in `/etc/`. System logs and application logs are usually stored in `/var/log/`.
+System configurations are commonly stored in `/etc/`.
+
+System logs and application logs are usually stored in `/var/log/`.
 
 <br>
 

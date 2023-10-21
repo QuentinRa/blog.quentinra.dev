@@ -17,3 +17,28 @@ Some of the well-known ones are:
 * **Bootloaders** 🪧: `GRUB` or `U-Boot`
 * **Initialization** 🪴: `systemd` or `launchd`
 </div></div>
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* Control Groups (cgroups)
+* journalctl
+</div><div>
+</div></div>
