@@ -110,7 +110,18 @@ Now, we can start writing some tests:
 #include <CUnit/CUnit.h>
 
 void test_example(void) {
-    CU_ASSERT(1 == 1);
+    CU_ASSERT(1 == 1);    // test passed if true
+    CU_ASSERT_TRUE(1);    // test passed if true
+    CU_ASSERT_FALSE(0);   // test passed if false
+    CU_ASSERT_PTR_NULL(NULL);     // test passed if null
+    CU_ASSERT_PTR_NOT_NULL(NULL); // test pass if not null
+    CU_ASSERT_EQUAL(1, 1);        // test passed if equal
+    CU_ASSERT_NOT_EQUAL(5, 0)     // test passed if different
+    CU_ASSERT_STRING_EQUAL("x", "y")     // test passed if equal
+    CU_ASSERT_STRING_NOT_EQUAL("x", "y") // test passed if different
+    CU_PASS("msg");     // mark the test as successful
+    CU_FAIL("msg");     // mark the test as failed
+    // see also: CU_ASSERT_PTR_EQUAL, *_FATAL, etc.
 }
 ```
 
@@ -122,6 +133,12 @@ You will then have to add them to your suite:
         return EXIT_FAILURE;
     }
     // ...
+```
+
+If needed, you can get the error message of a failed test using:
+
+```c
+char* msg = CU_get_error_msg();
 ```
 </div></div>
 
