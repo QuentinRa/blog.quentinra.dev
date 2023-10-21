@@ -75,7 +75,7 @@ CMake files are compiled to a lower-level tool such as a `Makefile`. This is a g
 CMake will try to find a suitable generator for your environment, but you can explicitly ask for a generator using:
 
 ```shell!
-$ cmake -G Ninja            # Use build.ninja
+$ cmake -G Ninja            # Use ninja (build.ninja)
 $ cmake -G /usr/bin/ninja   # Use a custom generator
 ...
 ```
@@ -424,6 +424,8 @@ file(WRITE filename "CONTENT")
 file(APPEND filename "CONTENT")
 file(DOWNLOAD URL filename)
 ```
+
+Refer to [advanced strings](#advanced-strings) for multi-line calls.
 </div></div>
 
 <hr class="sep-both">
@@ -883,9 +885,24 @@ target_compile_options(my_target PRIVATE
 ```
 </div><div>
 
+#### Execute Process
+
+Execute Process can be used to execute a command during the configuration step instead of the build step.
+
+```cmake
+execute_process(
+    COMMAND "command" "arg1" "arg2" "arg3"
+    WORKING_DIRECTORY "${CMAKE_BINARY_DIR}"
+    RESULT_VARIABLE CMD_STATUS
+    OUTPUT_VARIABLE CMD_OUTPUT
+)
+if (NOT ${CMD_STATUS} EQUAL 0) # handle the error
+endif()
+```
+
 #### Configure files
 
-* **Usage**: Generate Headers 🔥
+##### Usage: Generate Headers 🔥
 
 You can generate headers from a template filled with CMake Variables:
 
@@ -901,7 +918,7 @@ Both syntaxes can be used. Variables are replaced if they are defined, or the "d
 configure_file(configure.h.in configure.h)
 ```
 
-* **Usage**: Add folders to the build 🔥
+##### Usage: Add files to the build 🔥
 
 We may want to copy some files in the build, for instance if they are not compiled but used by other targets.
 
@@ -912,7 +929,7 @@ configure_file(
 )
 ```
 
-* **Usage**: Generate Files 🔥
+##### Usage: Generate Files 🔥
 
 We often use it to generate headers, but it works for any file.
 
@@ -942,7 +959,7 @@ Stuff that I found, but never read/used yet.
 * cmake presets, CMakePresets.json, CMakeUserPresets.json (user-speficic override)
 * [ModernCppStarter](https://github.com/TheLartians/ModernCppStarter)
 * [Akagi201/learning-cmake](https://github.com/Akagi201/learning-cmake) and [awesome-cmake](https://github.com/onqtam/awesome-cmake)
-* execute_process, target_precompile_headers
+* target_precompile_headers
 * `mark_as_advanced` (show in GUI editor?)
 </div><div>
 

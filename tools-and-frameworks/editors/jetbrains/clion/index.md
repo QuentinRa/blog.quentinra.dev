@@ -31,10 +31,18 @@ Press `CTRL+ALT+S` or `⚙️ > Settings`. Navigate to `Build...` then `Toolchai
 
 A toolchain defines the environment and the compiler used to run your build tool, compile files, and debug executables.
 
+<br>
+
 #### CMake Configurations
 
 Press `CTRL+ALT+S` or `⚙️ > Settings`. Navigate to `Build...` then `CMake`. From there, create or update a configuration.
 
 Information such as the type of build, the toolchain used, or the arguments passed to the build command can be set from there.
 </div><div>
+
+#### Build
+
+Inside the dropdown with all targets, you can use `CTRL+F` and search for a target <small>(targets will be filtered as you type)</small>.
+
+Inside the `Build` menu, you can build all targets or run clean.
 </div></div>

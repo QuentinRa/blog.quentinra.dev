@@ -101,3 +101,15 @@ Here, `tar` can be run as `user2` without password:
 username ALL=(user2) NOPASSWD:/bin/tar
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## DebugFS
+
+<div class="row row-cols-md-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
