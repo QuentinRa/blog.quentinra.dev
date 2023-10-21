@@ -577,7 +577,6 @@ $ tree .
 ```bash!
 $ cd folder
 ```
-</div><div>
 
 Move to the HOME folder
 
@@ -590,6 +589,19 @@ Move to the previous folder
 
 ```bash!
 $ cd -
+```
+</div><div>
+
+The `pushd` and `popd` commands are quite useful when we are often moving between repositories:
+
+```bash!
+$ cd /path/to/folderA
+$ pushd .    # save
+$ cd /path/to/folderB
+$ pushd .    # save
+$ cd /path/to/folderC
+$ popd       # go back to folderB 
+$ popd       # go back to folderA 
 ```
 </div></div>
 

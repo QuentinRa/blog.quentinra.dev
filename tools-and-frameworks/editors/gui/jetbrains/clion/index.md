@@ -5,7 +5,7 @@
 [CLion](https://www.jetbrains.com/clion/) is a **C and C++** IDE powered by JetBrains and exclusively available in a **paid** version.
 
 <p class="text-center">
-<img src="/courses/tools-and-frameworks/editors/jetbrains/clion/_images/logo.png" width="150"/>
+<img src="/courses/tools-and-frameworks/editors/gui/jetbrains/clion/_images/logo.png" width="150"/>
 </p>
 
 👉 JetBrains IDEs share many features [explained here](../_general/index.md).

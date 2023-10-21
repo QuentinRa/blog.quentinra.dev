@@ -26,6 +26,9 @@ A few notables:
 A few notables:
 
 * [ChatGPT](https://chat.openai.com/) 🐈: a chatbot that is somewhat like a smarter search engine thought it often provides incorrect <small>(or outdated)</small> results
+* [tabnine](https://www.tabnine.com/): TabNine AI coding assistant
+* [Microsoft Copilot](https://adoption.microsoft.com/en-us/copilot/) ⛄: Microsoft AI coding assistant
+* [FauxPilot](https://github.com/fauxpilot/fauxpilot) ☃️: an open-source AI assistant
 </div></div>
 
 <hr class="sep-both">
