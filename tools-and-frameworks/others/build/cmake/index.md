@@ -211,7 +211,7 @@ target_include_directories(target ...)
 
 #### Sources
 
-You can add sources after `add_xxx` using `target_sources`.
+You can add sources after creating a target using `target_sources`.
 
 ```cmake
 target_sources(targetName xxx.h [...])
@@ -410,6 +410,7 @@ You have many functions to operate on lists:
 # list(OPERATION DESTINATION_VARIABLE ARGS)
 list(LENGTH MY_LIST_LENGTH myList) # get the length
 list(APPEND myList A B...)         # add values
+list(GET myList 0 item)            # get value at 0
 ```
 
 <br>
@@ -426,6 +427,14 @@ file(DOWNLOAD URL filename)
 ```
 
 Refer to [advanced strings](#advanced-strings) for multi-line calls.
+
+There are multiple useful functions too:
+
+```cmake
+get_filename_component(VAR /path/to/file DIRECTORY) # get directory
+get_filename_component(VAR /path/to/file NAME) # get filename
+get_filename_component(VAR /path/to/file NAME_WE) # without the extension
+```
 </div></div>
 
 <hr class="sep-both">
@@ -844,6 +853,8 @@ add_custom_command(
 
 #### Advanced Strings
 
+##### multi-line strings
+
 The multi-line string below corresponds to one string with newlines.
 
 ```cmake
@@ -865,6 +876,19 @@ Or:
 message("some text
 some text")
 ```
+
+##### Match Pattern in String
+
+CMake supports [regexes](/tools-and-frameworks/knowledge/regex/index.md) and capture groups.
+
+```cmake
+string(REGEX MATCH "xxx=([^ ]+)" match input_string)
+if (match)
+    # ${CMAKE_MATCH_1} for the first capture group
+endif()
+```
+
+➡️ If you must `MATCHALL`, `match` will be a list.
 
 <br>
 
