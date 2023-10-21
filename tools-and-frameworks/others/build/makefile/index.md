@@ -208,11 +208,11 @@ SRC_DIR := src
 BUILD_DIR := build
 
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp | $(BUILD_DIR)
-	$(CXX) $(CXXFLAGS) -c -o $@ $<
+    $(CXX) $(CXXFLAGS) -c -o $@ $<
 	
 # prerequisite: create the build directory
 $(BUILD_DIR):
-	mkdir -p $@
+    mkdir -p $@
 ```
 </div><div>
 
@@ -224,6 +224,7 @@ Makefiles support many commands inside `$()`:
 * `$(strip string)`: remove leading and trailing whitespaces
 * `$(shell command)`: execute a shell command
 * `$(findstring XXX,input_str)`: execute a shell command
+* `$(eval XXX += yyy)`: you can execute code inside eval
 
 A common usage is to automate source and object files detection:
 
@@ -232,4 +233,27 @@ A common usage is to automate source and object files detection:
 SRCS := $(wildcard $(SRC_DIR)/*.cpp)
 OBJS := $(patsubst $(SRC_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(SRCS))
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Random notes
+
+<div class="row row-cols-md-2"><div>
+
+#### Define macros
+
+You can define macros and call them wherever you want.
+
+```makefile!
+# note: for some variables such as $@, $<, etc.
+#       you need to add another "$": $$@, $$<, etc.
+define my_function
+    @echo "Compiling $(2) into $(1)"
+endef
+
+my_rule:
+    $(call generate_rule, build/main.o, src/main.cpp)
+```
+</div><div>
 </div></div>
