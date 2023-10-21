@@ -141,3 +141,15 @@ You can apply them using either:
 * `Edit > Apply All Operations`
 * `Right-click on pending operations > Apply All Operations`
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-md-2"><div>
+
+* `sync` command
+</div><div>
+</div></div>

@@ -384,47 +384,54 @@ There are multiple and varied uses:
 
 Redirect `stdout` to a file (save result)
 
-```bash
+```shell!
 $ echo "Hello, World" > myFile
 ```
 
 Append `stdout` to a file
 
-```bash
+```shell!
 $ echo "Hello, World" >> myFile
 ```
 </div><div>
 
 Use a file instead of user input
 
-```bash
+```shell!
 $ tee < original.txt
 Hello, World
 ```
 
 Redirect errors to a file/discard them
 
-```bash
+```shell!
 $ cat not_found 2> onl_errors_will_be_stored_here
 $ cat not_found 2> /dev/null # discard them
 ```
 
+Redirect `stdout` to`stderr` <small>(uncommon usage)</small>
+
+```shell!
+$ >&2 echo "xxx"
+$ echo "xxx" >&2
+```
+
 Merge `stderr` with `stdout` <small>(uncommon usage)</small>
 
-```bash
+```shell!
 $ cat not_found 2>&1
 ```
 
 Discard `stdout`, but keep `stderr` <small>(uncommon usage)</small>
 
-```bash
+```shell!
 $ echo xxx &> /dev/null
 ```
 
 Redirect both `stdout` and`stderr` <small>(uncommon usage)</small>
 
-```bash
-$ echo xxx > output.txt 2>&1
+```shell!
+$ echo xxx > output.txt 2>&1 # ⚠️ Order is important
 ```
 </div></div>
 

@@ -8,7 +8,7 @@
 
 <p class="text-center">
 
-<img alt="Linux Logo" src="/courses/operating-systems/linux/knowledge/_images/linux.png" width="128"/>
+<img alt="Linux Logo" src="/courses/operating-systems/linux/_knowledge/_images/linux.png" width="128"/>
 </p>
 
 Linux is a family of Unix-like operating systems, often called distros, such as Debian, Ubuntu, Fedora, or Arch Linux... They were designed to be free, open-source, light, secure, and performant.
