@@ -54,7 +54,7 @@ We got a file `main.c` and we want to generate an executable `a.out`. We will fi
 ```makefile!
 # ❌ bad
 a.out: main.c
-        gcc -o a.out main.c
+    gcc -o a.out main.c
 ```
 
 We can compile and run our program. 
@@ -67,31 +67,31 @@ Instead, we usually use intermediate files, such as `.o` in C.
 ```makefile!
 # ✅ correct
 a.out: main.o
-        gcc -o a.out main.o
+    gcc -o a.out main.o
 ```
 
 We don't need to specify how a `.o` is compiled, as this is one of the **compilation rules** 📝 that Makefile knows. Still, you can do it:
 
 ```makefile!
 main.o: main.c
-        gcc -c main.c -o main.o
+    gcc -c main.c -o main.o
 ```
 
 For other languages or in some cases, you may have to define your own compilation rules, for instance, in C, we would have:
 
 ```makefile!
 %.o: %.c
-        gcc -c $< -o $@
+    gcc -c $< -o $@
 ```
 
 This rule is similar to the pre-existing one to compile a `.o`. The final output would be like this:
 
 ```makefile!
 a.out: main.o
-        gcc -o a.out main.o
+    gcc -o a.out main.o
 
 %.o: %.c
-        gcc -c $< -o $@
+    gcc -c $< -o $@
 ```
 </div></div>
 
@@ -123,7 +123,7 @@ file2.o: # none
 
 <hr class="sep-both">
 
-## Extra
+## Makefile Basics
 
 <div class="row row-cols-md-2"><div>
 
@@ -134,15 +134,18 @@ We usually start a Makefile by defining some variables, to avoid copy-pasting co
 Some quite used names for variables are `CC` and `CFLAGS`.
 
 ```makefile!
-CC=gcc # compiler
-CFLAGS=-Wall # compiler flags, -lm...
+CC=gcc                 # C Compiler
+CFLAGS=-Wall           # C Compiler flags
+
+CXX=g++                # C++ Compiler
+CXXFLAGS=-std=c++11    # C++ Compiler flags
 ```
 
 To use them in some rules:
 
 ```makefile!
-my_program: ...
-        $(CC) $(CFLAGS) -o my_program ...
+my_program: deps
+    $(CC) $(CFLAGS) -o my_program ...
 ```
 </div><div>
 
@@ -157,33 +160,15 @@ O_FILES = file1.o file2.o \
 
 #### PHONY rules
 
-Makefile only calls a task if the file or its dependencies have been updated. Some exceptions are tasks marked as `.PHONY`.
+Makefile only runs a task if the output or its dependencies have been updated. Tasks marked as `.PHONY` are always executed.
 
 ```makefile!
 .PHONY: clean xxx yyy zzz
 
-# make clean
+# 'make clean'
 clean:
     rm -rf a.out *.o
     
 # ...
 ```
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-* `XXX := $(wildcard $(SRC_DIR)/*.c)`
-
-```makefile!
-xxx: yyy
-    @echo "..."
-    @$(CC) ...
-```
-</div><div>
 </div></div>
