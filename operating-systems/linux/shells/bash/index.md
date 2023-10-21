@@ -260,12 +260,12 @@ $ < file
 
 Bash introduced a new redirection that takes some text, and redirects it to the standard output
 
-```bash
-$ tee <<< word
+```ps
+# same as "echo word | command"
+$ command <<< word
 word
-# is the same as
-$ echo word | tee
-word
+# same as "cmd1 2>&1 | cmd2"
+$ cmd1 |& cmd2 
 ```
 </div></div>
 

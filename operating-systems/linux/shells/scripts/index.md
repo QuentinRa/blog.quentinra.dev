@@ -9,6 +9,13 @@ Scripts are simply files with usually many Linux commands, usually written in Ba
 A script is usually written in a file `name.sh`, regardless of the language used in the script, but this isn't mandatory. 
 
 ➡️ Scripts are simply files with commands. It means you can execute anything here directly inside a shell, and the other way around.
+
+➡️ Some scripts are only defining variables, functions or aliases and are not executed but only sourced <small>(e.g. imported in the current shell)</small>:
+
+```shell!
+$ source ~/.bashrc    # most well-known example
+$ . ~/.bashrc         # same as "source"
+```
 </div><div>
 
 1. Create a script `example.sh` with the contents below

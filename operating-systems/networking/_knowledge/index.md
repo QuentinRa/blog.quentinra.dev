@@ -276,6 +276,7 @@ Network segmentation
 * turn off bluetooth 
 * up-to-date 
 * bluetooth scanning tool to identify vulnerable devices do not require pairing
+* bluez, bluetoothclt, devices
 </details>
 
 <details class="details-n">
