@@ -100,6 +100,8 @@ int my_suite_createSuite() {
     return EXIT_SUCCESS;
 }
 ```
+
+➡️ `CU_add_suite` allow you to define two methods which are respectively called before and after all tests.
 </div><div>
 
 Now, we can start writing some tests:
@@ -120,5 +122,75 @@ You will then have to add them to your suite:
         return EXIT_FAILURE;
     }
     // ...
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Running Tests
+
+<div class="row row-cols-md-2"><div>
+
+To run your tests, you will have to initialize CUnit, declare `listSuite`, and pick a runner. First, to initialize CUnit:
+
+```c
+#include <CUnit/CUnit.h>
+#include <stdlib.h>
+
+int main() {
+    CU_pSuite pSuite = NULL;
+    int res;
+
+    /* initialize the CUnit test registry */
+    if (CUE_SUCCESS != CU_initialize_registry())
+        return CU_get_error();
+
+    for (int i = 0; i < NUMBER_OF_SUITES; i++) {
+        res = listSuite[i](pSuite);
+        if (res == EXIT_FAILURE) {
+            CU_cleanup_registry();
+            return CU_get_error();
+        }
+    }
+
+    /* Run all tests using the ??? interface */
+    /* ... */
+
+    /* Clean up registry and return */
+    CU_cleanup_registry();
+    return CU_get_error();
+}
+```
+</div><div>
+
+The `listSuite` array contains all of your suite initialization methods allowing us to connect them to the runner.
+
+```c
+#include "my_suite.h"
+
+// Add all methods to create suites below 
+#define NUMBER_OF_SUITES 1
+int (*listSuite[NUMBER_OF_SUITES])(CU_pSuite) = {
+        my_suite_createSuite
+};
+```
+
+Using the **basic runner** 📝, tests results are printed to the screen.
+
+```c
+#include <CUnit/Basic.h>
+
+/* Run all tests using the basic interface */
+CU_basic_set_mode(CU_BRM_VERBOSE);
+CU_basic_run_tests();
+```
+
+Using the **console runner** 🤖, there is a console interface to run tests:
+
+```c
+#include <CUnit/Console.h>
+
+/* Run all tests using the console interface */
+CU_console_run_tests();
 ```
 </div></div>
