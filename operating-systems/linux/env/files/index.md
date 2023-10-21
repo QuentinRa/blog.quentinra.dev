@@ -113,3 +113,31 @@ username ALL=(user2) NOPASSWD:/bin/tar
 
 ...
 </div></div>
+
+<hr class="sep-both">
+
+## GParted
+
+<div class="row row-cols-md-2"><div>
+
+Gnome Partition Editor (GParted) is a graphical front-end to the `parted` command. It allows us to create, edit, resize, or delete partitions.
+
+```shell!
+$ sudo apt-get install gparted
+$ sudo gparted
+```
+
+1. In the top-right corner, select a disk.
+2. Right-click on an existing partition or on the unallocated disk space.
+3. You can select an operations such as `new` to create a new partition.
+</div><div>
+
+Each planned operation is pending until confirmation:
+
+![GParted Pending](_images/gparted_pending.png)
+
+You can apply them using either:
+
+* `Edit > Apply All Operations`
+* `Right-click on pending operations > Apply All Operations`
+</div></div>
