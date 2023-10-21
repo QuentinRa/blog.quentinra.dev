@@ -59,7 +59,9 @@ a.out: main.c
 
 We can compile and run our program. 
 
-But this is not the correct approach 👎. Imagine, if `main.c` has many dependencies, then they will all be listed as dependencies to `a.out`. It means that every time we ask `make` to compile the latest `a.out`, every dependency will be checked.
+But this is not the correct approach. ⚠️
+
+If `main.c` had many dependencies, then all will be listed as dependencies of `a.out`. Every time we ask `make` to compile the latest `a.out`, every dependency will be checked instead of one.
 </div><div>
 
 Instead, we usually use intermediate files, such as `.o` in C.
@@ -77,14 +79,15 @@ main.o: main.c
     gcc -c main.c -o main.o
 ```
 
-For other languages or in some cases, you may have to define your own compilation rules, for instance, in C, we would have:
+For other languages or in some cases, you may have to define your own compilation rules. For instance, in C, we would have:
 
 ```makefile!
+# define how, from any .c, we can get the .o
 %.o: %.c
     gcc -c $< -o $@
 ```
 
-This rule is similar to the pre-existing one to compile a `.o`. The final output would be like this:
+The final makefile content will be something like this:
 
 ```makefile!
 a.out: main.o
@@ -171,4 +174,27 @@ clean:
     
 # ...
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Advanced Makefiles
+
+<div class="row row-cols-md-2"><div>
+
+#### Assigment Operators
+
+There are multiple operators to assign variables:
+
+* `=`: assign a value to a variable
+* `:=`: immediately compute the value of the variable
+* `::=`: only compute the value when the variable is actually used
+* `?=`: assign if the variable isn't defined
+* `+=`: append our value to the variable
+* `!=`: execute a command and store the output in the variable
+
+➡️ We usually prefer always using `:=` rather than `=`.
+</div><div>
+
+...
 </div></div>
