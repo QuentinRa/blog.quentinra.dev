@@ -84,7 +84,7 @@ For other languages or in some cases, you may have to define your own compilatio
 ```makefile!
 # define how, from any .c, we can get the .o
 %.o: %.c
-    gcc -c $< -o $@
+    gcc -c -o $@ $<
 ```
 
 The final makefile content will be something like this:
@@ -94,7 +94,7 @@ a.out: main.o
     gcc -o a.out main.o
 
 %.o: %.c
-    gcc -c $< -o $@
+    gcc -c -o $@ $<
 ```
 </div></div>
 
@@ -194,7 +194,42 @@ There are multiple operators to assign variables:
 * `!=`: execute a command and store the output in the variable
 
 ➡️ We usually prefer always using `:=` rather than `=`.
+
+<br>
+
+#### External Build Folder
+
+To add a build folder (or a source folder), simply use paths inside all targets. Note that the build folder must be created inside the makefile.
+
+You can do that using prerequisite (`|`) which are rules executed before evaluating any dependencies.
+
+```makefile!
+SRC_DIR := src
+BUILD_DIR := build
+
+$(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp | $(BUILD_DIR)
+	$(CXX) $(CXXFLAGS) -c -o $@ $<
+	
+# prerequisite: create the build directory
+$(BUILD_DIR):
+	mkdir -p $@
+```
 </div><div>
 
-...
+#### Makefile utilities
+
+Makefiles support many commands inside `$()`:
+
+* `$(wildcard *.cpp)`: find files matching the glob-pattern
+* `$(strip string)`: remove leading and trailing whitespaces
+* `$(shell command)`: execute a shell command
+* `$(findstring XXX,input_str)`: execute a shell command
+
+A common usage is to automate source and object files detection:
+
+```makefile!
+# Source files and object files
+SRCS := $(wildcard $(SRC_DIR)/*.cpp)
+OBJS := $(patsubst $(SRC_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(SRCS))
+```
 </div></div>
