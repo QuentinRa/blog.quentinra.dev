@@ -72,7 +72,7 @@ a.out: main.o
     gcc -o a.out main.o
 ```
 
-We don't need to specify how a `.o` is compiled, as this is one of the **compilation rules** 📝 that Makefile knows. Still, you can do it:
+We don't need to specify how a `.o` is compiled, as this is one of the **compilation rules** 📝 that Makefile [knows](https://www.gnu.org/software/make/manual/html_node/Catalogue-of-Rules.html). Still, you can do it:
 
 ```makefile!
 main.o: main.c
@@ -150,6 +150,8 @@ To use them in some rules:
 my_program: deps
     $(CC) $(CFLAGS) -o my_program ...
 ```
+
+⚠️ Variables such as `CC` are known to makefile [pre-defined rules](https://www.gnu.org/software/make/manual/html_node/Catalogue-of-Rules.html), so you don't need to write your own rule to set some compilation flags.
 </div><div>
 
 #### Multilines
@@ -233,6 +235,22 @@ A common usage is to automate source and object files detection:
 SRCS := $(wildcard $(SRC_DIR)/*.cpp)
 OBJS := $(patsubst $(SRC_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(SRCS))
 ```
+
+<br>
+
+#### Makefile if statements
+
+You can use `ifeq` to check if two values are equal <small>(resp. `ifneq`)</small>. You can use `ifdef` to check if a variable is defined <small>(resp. `ifndef`)</small>.
+
+```makefile!
+ifeq (v1,v2)
+    # some code
+endif
+
+ifdef XXX
+    # some code
+endif
+```
 </div></div>
 
 <hr class="sep-both">
@@ -256,4 +274,22 @@ my_rule:
     $(call generate_rule, build/main.o, src/main.cpp)
 ```
 </div><div>
+
+#### Include Another Makefile
+
+You can create separate makefiles, for instance, if you have multiple compilers, you can create a file <small>(often, a `.mk`)</small> with variables for each compiler, and conditionnaly import them.
+
+```makefile!
+include gcc.mk      # include cannot fail
+-include opt.mk     # include can fail
+```
+
+#### Verbosity
+
+By default, when we run a command from a makefile, it is echoed inside the terminal. We can use `@` to disable this "echo".
+
+```makefile!
+my_target:
+    @echo "This is a command"
+```
 </div></div>
