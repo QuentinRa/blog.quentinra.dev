@@ -59,3 +59,66 @@ add_executable(my_testing_target
 target_link_libraries(my_testing_target ${CUNIT_LIBRARIES})
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## Basic Test Suite
+
+<div class="row row-cols-md-2"><div>
+
+A suite is a group of tests that share the same purpose, e.g., for instance, test that are specific to one component.
+
+Let's first define a header `my_suite.h`. It only exposes to others a way to create our suite, which is needed to run it.
+
+```c
+#ifndef MY_SUITE_H
+#define MY_SUITE_H
+
+int my_suite_createSuite();
+
+#endif //MY_SUITE_H
+```
+
+To create a suite, we need to use `CU_add_suite`.
+
+```c
+#include <CUnit/CUnit.h>
+#include <stdlib.h>
+
+int my_suite_createSuite() {
+    CU_pSuite suite = NULL;
+    // Add our suite to the registry
+    suite = CU_add_suite("Suite_Name", NULL, NULL);
+    if (NULL == suite) {
+        CU_cleanup_registry();
+        return CU_get_error();
+    }
+
+    // Add our test to the suite
+    // ...
+
+    return EXIT_SUCCESS;
+}
+```
+</div><div>
+
+Now, we can start writing some tests:
+
+```c
+#include <CUnit/CUnit.h>
+
+void test_example(void) {
+    CU_ASSERT(1 == 1);
+}
+```
+
+You will then have to add them to your suite:
+
+```c
+    // Add our test to the suite
+    if (NULL == CU_add_test(suite, "Test_Name", test_example)) {
+        return EXIT_FAILURE;
+    }
+    // ...
+```
+</div></div>
