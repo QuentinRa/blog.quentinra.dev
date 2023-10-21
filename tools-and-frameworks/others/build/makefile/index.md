@@ -226,7 +226,11 @@ Makefiles support many commands inside `$()`:
 * `$(strip string)`: remove leading and trailing whitespaces
 * `$(shell command)`: execute a shell command
 * `$(findstring XXX,input_str)`: execute a shell command
+* `$(subst from,to,input_str)`: replace `from` with `to` in `input_str`
 * `$(eval XXX += yyy)`: you can execute code inside eval
+* `$(foreach var,list,op)`: execute `op` on each entry  of `list`
+* `$(addprefix prefix, list)`: prefix all elements with `prefix`
+* `$(notdir list)`: generate a list of all filenames
 
 A common usage is to automate source and object files detection:
 
@@ -273,6 +277,10 @@ endef
 my_rule:
     $(call generate_rule, build/main.o, src/main.cpp)
 ```
+
+#### Simple Text Substitution
+
+You can use `text:from=to` to substitute `from` with `to` in `text`.
 </div><div>
 
 #### Include Another Makefile
