@@ -105,6 +105,47 @@ username ALL=(user2) NOPASSWD:/bin/tar
 
 <hr class="sep-both">
 
+## Partitions
+
+<div class="row row-cols-md-2"><div>
+
+Partitions are a way to divide a physical storage device, such as a hard drive. They allow us to isolate and enforce individual restrictions.
+
+Partitions mounted at specific mount points within the FHS. The root partition is often mounted at `/`. We often have separate partitions for folders such as `/home`, `/tmp`, `/var` or `/mnt`.
+
+The file `/etc/fstab` define the partitions to create at system startup. The `/proc/mounts` contains all mounted partitions right-now.
+
+```shell!
+$ cat /etc/fstab
+/dev/sda1 / ext4 defaults    0 2
+...
+$ cat /proc/mounts
+/dev/sda1 / ext4 rw,relatime 0 0
+...
+```
+
+</div><div>
+
+**Related commands** 🔥
+
+* Create a filesystem 🆕: `mkfs` <small>(`mkfs.ext4`...)</small>
+* Devices list 📃: `fdisk`, `lsblk`
+* Devices data 📌: `sudo blkid`, `df -h`
+* List partitions 📚: `parted`, `gparted`
+* Create partition 🆕: `fdisk`, `parted`, `gparted`
+* Edit partition ✍️: `fdisk`, `parted`, `gparted`
+* Delete partition 🚮: `fdisk`, `parted`, `gparted`
+
+The `mount` command is used to mount a partition:
+
+```shell!
+$ sudo mount /path/to/source /path/to/dest
+$ sudo mount -t loop rootfs.ext4 # mounted at /mnt/rootfs.ext4/
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## DebugFS
 
 <div class="row row-cols-md-2"><div>

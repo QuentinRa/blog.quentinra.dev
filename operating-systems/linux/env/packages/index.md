@@ -56,13 +56,13 @@ Download updates for/upgrade all packages
 $ sudo apt update
 $ sudo apt upgrade
 ```
-</div><div>
 
 **Update the OS** 🧪
 
 ```shell!
 $ sudo apt dist-upgrade
 ```
+</div><div>
 
 Remove unused dependencies
 
@@ -75,6 +75,13 @@ When installing packages, you are prompted `Do you want to continue? [Y/n]` <sma
 
 ```shell!
 $ sudo apt install -y aptitude
+```
+
+Configuration files are stored in `/etc/apt/`:
+
+```shell!
+$ cat /etc/apt/sources.list # repositories
+$ ls /etc/apt/apt.conf.d/   # proxy conf etc.
 ```
 </div></div>
 
@@ -209,6 +216,7 @@ Stuff that I found, but never read/used yet.
 $ apt-file
 $ apt-file update
 $ apt autoclean
+$ wget -qO - xxx.gpg | apt-key add -
 ```
 </div><div>
 </div></div>
