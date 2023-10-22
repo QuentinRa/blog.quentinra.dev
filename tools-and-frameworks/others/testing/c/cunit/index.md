@@ -11,8 +11,6 @@ $ sudo apt-get install libcunit1 libcunit1-doc libcunit1-dev
 
 The documentation is [available here](https://cunit.sourceforge.net/).
 </div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">
@@ -21,13 +19,13 @@ The documentation is [available here](https://cunit.sourceforge.net/).
 
 <div class="row row-cols-md-2"><div>
 
-In order to use `cunit` with [cmake](/tools-and-frameworks/others/build/cmake/index.md):
+Assuming you want to use `cunit` with a [cmake](/tools-and-frameworks/others/build/cmake/index.md) project, you'll have to manually write some code first. Add to a `CMakeLists.txt`:
 
 ```cmake
 find_package(CUnit REQUIRED)
 ```
 
-You need to create a finder `cmake/modules/FindCUnit.cmake`.
+You need to create a finder `./cmake/modules/FindCUnit.cmake`.
 
 ```cmake
 find_path(CUNIT_INCLUDE_DIRS CUnit/CUnit.h)
@@ -40,22 +38,25 @@ find_package_handle_standard_args(CUnit
         VERSION_VAR CUNIT_VERSION)
 ```
 
-And ensure it is tracked with cmake:
+Add to a `CMakeLists.txt` before the `find_package` call:
 
 ```cmake
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/modules")
 ```
 </div><div>
 
-There is obviously no support for `ctest`, so we can only generate an executable and run it.
+There is obviously no support for `ctest`. We can only generate an executable and run it.
 
 ```cmake
-# Create an executable for your test suite
+# Create an executable for your test suites
 add_executable(my_testing_target 
+    tests/runner.c
     tests/my_suite.c
+    tests/my_suite.h
+    # ...
 )
 
-# Link CUnit to your test suite
+# Link CUnit to your test target
 target_link_libraries(my_testing_target ${CUNIT_LIBRARIES})
 ```
 </div></div>
@@ -66,7 +67,7 @@ target_link_libraries(my_testing_target ${CUNIT_LIBRARIES})
 
 <div class="row row-cols-md-2"><div>
 
-A suite is a group of tests that share the same purpose, e.g., for instance, test that are specific to one component.
+A suite is a group of tests that share the same purpose, e.g., for instance, tests that are specific to one component/function/file.
 
 Let's first define a header `my_suite.h`. It only exposes to others a way to create our suite, which is needed to run it.
 

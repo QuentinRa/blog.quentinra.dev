@@ -12,7 +12,7 @@ List of courses that have note which were not added yet.
 
 **Tools and Frameworks**
 
-* `(review, typos)` Guidelines, Pandora, JetBrains plugin development
+* `(review, typos)` Guidelines, Pandora, JetBrains plugin development, cunit
 * `(current)` **CMake**, **GitLab CI**
 * Project + Tools
 </div><div>

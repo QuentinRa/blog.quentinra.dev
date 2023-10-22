@@ -12,13 +12,13 @@ You will define classes with one or more tests (`TestCase`) that use assertions 
 
 You can install PHPUnit using composer
 
-```bash!
+```shell!
 $ composer require --dev phpunit/phpunit^9.5
 ```
 
 To run tests, you can use
 
-```bash!
+```shell!
 $ ./vendor/bin/phpunit test_file.php
 ```
 </div></div>
