@@ -26,11 +26,16 @@ Some of the well-known ones are:
 
 Systemd is a system and service manager for Linux operating systems. It is responsible or starting, stopping, and managing system services.
 
+```shell!
+$ ls -la /etc/systemd/system/   # target + enabled services
+$ ls -la /lib/systemd/system/   # services
+```
+
 <br>
 
 #### systemctl command
 
-The `systemctl` allows us to interact with the systemd process/daemon.
+The `systemctl` allows us to interact with the systemd daemon. Note that you can create all files manually without the `systemctl` command.
 
 ```shell!
 $ systemctl status xxx    # status of the service
@@ -48,7 +53,39 @@ $ systemctl link xxx      # create a link in systemd files
 ➡️ You can use `-f` to force an operation.
 </div><div>
 
-...
+#### Systemd Targets
+
+Systemd has a concept of targets to group services. The goal of the initialization often is to reach the `multi-user.target` which means the user can interact with the system and most services are active.
+
+```shell!
+$ ls /lib/systemd/system/*.target
+$ cat my_target.target
+[Unit]
+Description=Some Description
+Requires=multi-user.target
+Conflicts=rescue.service rescue.target
+After=multi-user.target rescue.service rescue.target
+AllowIsolate=yes
+```
+
+➡️ See also: [How to create a systemd target?](https://unix.stackexchange.com/questions/301987/how-to-create-a-systemd-target)
+
+#### Systemd service
+
+Services support a lot of options, especially when we need to define dependencies between services or targets.
+
+```shell!
+$ ls /lib/systemd/system/*.service
+$ cat my_service.service
+[Service]
+Type=oneshot
+ExecStart=/bin/echo "Hello, World!"
+
+[Install]
+WantedBy=my_target.target
+```
+
+➡️ See also: `WorkingDirectory`, `Restart`, `RestartSec`, `StandardOutput`, `StandardError`, `SyslogIdentifier`, `Environment`, `User`, etc.
 </div></div>
 
 <hr class="sep-both">
