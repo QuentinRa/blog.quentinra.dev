@@ -24,7 +24,28 @@ Some of the well-known ones are:
 
 <div class="row row-cols-md-2"><div>
 
-...
+Systemd is a system and service manager for Linux operating systems. It is responsible or starting, stopping, and managing system services.
+
+<br>
+
+#### systemctl command
+
+The `systemctl` allows us to interact with the systemd process/daemon.
+
+```shell!
+$ systemctl status xxx    # status of the service
+$ systemctl start xxx     # start a service
+$ systemctl reload xxx    # reload the configuration
+$ systemctl daemon-reload # reload systemd configuration
+$ systemctl restart xxx   # stop+start a service
+$ systemctl stop xxx      # stop a service
+$ systemctl enable xxx    # enable a service at boot
+$ systemctl enable --now xxx # enable it now
+$ systemctl disable xxx   # disable a service at boot
+$ systemctl link xxx      # create a link in systemd files
+```
+
+➡️ You can use `-f` to force an operation.
 </div><div>
 
 ...

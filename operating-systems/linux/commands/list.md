@@ -1708,41 +1708,6 @@ source ~/.bashrc
 * `env X=val ./myScript`
 * `strace/strings` [link](https://jvns.ca/strace-zine-v3.pdf)
 * `shutdown -h now`
-
-<details class="details-e">
-<summary>Services</summary>
-
-`systemctl /bin/systemctl` allows us to interact with the systemd process/daemon.
-
-```bash
-sudo systemctl stop xxx.service 
-sudo vim /etc/systemd/system/xxx.service 
-sudo systemctl status xxx.service 
-sudo systemctl daemon-reload
-sudo systemctl start xxx.service
-sudo systemctl status xxx.service
-```
-
-```ini
-[Unit]
-Description="Some nice description here"
-
-[Service]
-ExecStart=/usr/local/bin/nodemon /home/bye/index.js
-WorkingDirectory=/home/bye/
-Restart=always
-RestartSec=10
-StandardOutput=syslog
-StandardError=syslog
-; examples
-SyslogIdentifier=byebye
-Environment=NODE_ENV=production
-
-[Install]
-WantedBy=multi-user.target
-```
-</details>
-
 * `getent` <sup>2</sup>: get an entry such as "passwd": `getent passwd` <small>(get entry)</small> instead of `cat /etc/passwd`
 * `sudo -s`
 
