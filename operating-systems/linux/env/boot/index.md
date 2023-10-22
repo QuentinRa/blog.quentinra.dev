@@ -83,6 +83,8 @@ AllowIsolate=yes
 
 ➡️ See also: [How to create a systemd target?](https://unix.stackexchange.com/questions/301987/how-to-create-a-systemd-target)
 
+<br>
+
 #### Systemd service
 
 Services support a lot of options, especially when we need to define dependencies between services or targets.

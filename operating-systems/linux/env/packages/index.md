@@ -2,10 +2,28 @@
 
 <div class="row row-cols-md-2"><div>
 
-...
+On Linux distributions, packages are archives used to share:
+
+* 📚 Libraries <small>(.a and .so files)</small>
+* ✍️ Documentation <small>(packagename-doc)</small>
+* 📄 Headers <small>(packagename-dev)</small>
+* 🕹️ Applications <small>(binaries)</small>
+* ...
+
+Each operating system has a package management system to install and remove packages. We usually don't directly interact with it, and we use a package management tool instead. They allow us to download packages from package repositories and update them too.
 </div><div>
 
-...
+In a nutshell, we often see these combinations:
+
+| Package System 🖥️ | Package Tool 🛠️     | Package format 🗝️ |
+|--------------------|----------------------|--------------------|
+| `dpkg`             | `apt` or `aptitude ` | .deb               |
+| `rpm`              | `dnf` or `yum` ☠️    | .rpm               |
+| `pacman`           | `pacman`             |                    |
+
+* `dpkg` is mainly used by Debian-like distributions.
+* `rpm` is mainly used by Fedora and Red Hat.
+* `pacman` is mainly used by Arch Linux.
 </div></div>
 
 <hr class="sep-both">
