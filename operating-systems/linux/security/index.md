@@ -37,6 +37,8 @@ Stuff that I found, but never read/used yet.
 * Use LTS
   * https://ubuntu.com/about/release-cycle
   * https://access.redhat.com/support/policy/updates/errata/
+* LXC Linux Containers
+* [Protection_ring](https://en.wikipedia.org/wiki/Protection_ring)
 
 Upgrade packages.
 

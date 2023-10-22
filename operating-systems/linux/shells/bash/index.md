@@ -282,6 +282,7 @@ Stuff that I found, but never read/used yet.
 * [Double/Single braces](https://stackoverflow.com/questions/2188199/how-to-use-double-or-single-brackets-parentheses-curly-braces)
 * [converting BASH Scripts to Binary](https://iq.opengenus.org/bash-bourne-again-shell/))
 * `history`
+* `function xxx {}`
 * [GNU bash](https://www.gnu.org/software/bash/manual/bash.html)
 </div><div>
 </div></div>
