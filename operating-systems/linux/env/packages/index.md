@@ -1,5 +1,7 @@
 # Packages
 
+[![linuxfundamentalspart3](../../../../cybersecurity/_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
+
 <div class="row row-cols-md-2"><div>
 
 On Linux distributions, packages are archives used to share:
@@ -28,15 +30,136 @@ In a nutshell, we often see these combinations:
 
 <hr class="sep-both">
 
+## Package Systems And Tools
+
+++++++
+[**apt** - package manager]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: `apt` is the default package manager on well-known Linux distros such as Debian/Ubuntu.
+
+**Example** 🔥:
+
+Install, Update, Remove a package
+
+```shell!
+$ sudo apt install aptitude
+$ sudo apt update aptitude
+$ sudo apt upgrade aptitude
+$ sudo apt remove aptitude
+```
+
+Download updates for/upgrade all packages
+
+```shell!
+$ sudo apt update
+$ sudo apt upgrade
+```
+</div><div>
+
+**Update the OS** 🧪
+
+```shell!
+$ sudo apt dist-upgrade
+```
+
+Remove unused dependencies
+
+```shell!
+$ sudo apt autoremove
+$ sudo apt auto-remove
+```
+
+When installing packages, you are prompted `Do you want to continue? [Y/n]` <small>(you need to enter `Y`)</small>. You can skip this, using `-y`.
+
+```shell!
+$ sudo apt install -y aptitude
+```
+</div></div>
+
+[**aptitude** - package manager]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: `aptitude` <small>(which has to be installed)</small> is the same as `apt`, but there is a graphical interface.
+
+**Example** 🔥:
+
+```shell!
+$ sudo aptitude # press 'q' to quit
+```
+</div><div>
+
+Or, you can use it like `apt`:
+
+```shell!
+$ sudo aptitude install nano
+```
+</div></div>
+
+[**dpkg** - package manager]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: `apt` uses the lower-level package manager `dpkg` to install packages. Some developers may directly interact with it.
+
+**Example** 🔥:
+
+```shell!
+$ sudo dpkg -i xxx.deb
+```
+</div></div>
+
+[**snap** - package manager]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: snap packages are a modern way to share application. They contain all dependencies, and support automatic updates. Some cons are their larger size and sometimes there are performance issues.
+
+👉 Find [Snap packages here](https://snapcraft.io/).
+</div><div>
+
+**Example** 🔥:
+
+```shell!
+$ sudo apt update
+$ sudo apt install snapd
+$ sudo snap install core
+$ sudo snap refresh core
+$ sudo snap install --classic xxx
+```
+</div></div>
+
+[**update-alternatives** - 🛻]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: available on Debian-based distributions. Allow us to switch between multiple versions of a same program.
+
+🛻 c++, cc, nc, php, java...
+
+**Example** 🔥:
+
+```shell!
+$ sudo update-alternatives --config php
+```
+</div></div>
+++++++
+
+<hr class="sep-both">
+
 ## Mirrors
 
 <div class="row row-cols-md-2"><div>
 
-XXX
+To reduce the time it takes to download packages, multiple mirrors of package repositories are set up, and users should use the nearest ones. A mirror is basically a copy of a package repository.
+
+It could be hosted locally.
 
 #### apt-mirror
 
-Apt-mirror is a tool used on Linux to create a local mirror.
+Apt-mirror is a tool used on Linux to create a mirror.
 
 ```shell!
 $ sudo apt-get install apt-mirror
@@ -57,7 +180,7 @@ It will create a folder `mirror` inside `/path/to/mirror` with:
 
 #### Aptly
 
-Aptly is a more complex but powerful tool to create mirrors.
+Aptly is a powerful tool created to simplify the process of creating and maintaining package repositories. It can be used to create mirrors.
 
 ```shell!
 $ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A0546A43624A8331
@@ -82,134 +205,10 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-```text!
-apt-file
-apt-file update
-apt autoremove
-
-* `sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y`
-
-* rpm, yum, dnf, pacman
-
-* packages ([![linuxfundamentalspart3](../../../cybersecurity/_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3))
-  * `dnf update/yum update` (Fedora, Redhat)
-  * `cat /etc/apt/sources.list`
+```shell!
+$ apt-file
+$ apt-file update
+$ apt autoclean
 ```
 </div><div>
 </div></div>
-
-<hr class="sep-both">
-
-++++++
-[**apt** - package manager]
-
-<div class="row row-cols-md-2"><div>
-
-**Usage** 🐚: `apt` is the default package manager on well-known Linux distros such as Debian/Ubuntu.
-
-**Example** 🔥:
-
-Install, Update, Remove a package
-
-```ps
-$ sudo apt install aptitude
-$ sudo apt update aptitude
-$ sudo apt upgrade aptitude
-$ sudo apt remove aptitude
-```
-
-Download updates for/upgrade all packages
-
-```ps
-$ sudo apt update
-$ sudo apt upgrade
-```
-</div><div>
-
-**Update the OS** 🧪
-
-```ps
-$ sudo apt dist-upgrade
-```
-
-Remove unused dependencies
-
-```ps
-$ sudo apt auto-remove
-```
-
-When installing packages, you are prompted `Do you want to continue? [Y/n]` <small>(you need to enter `Y`)</small>. You can skip this, using `-y`.
-
-```ps
-$ sudo apt install -y aptitude
-```
-</div></div>
-
-[**aptitude** - package manager]
-
-<div class="row row-cols-md-2"><div>
-
-**Usage** 🐚: `aptitude` <small>(which has to be installed)</small> is the same as `apt`, but there is a graphical interface.
-
-**Example** 🔥:
-
-```bash!
-$ sudo aptitude # press 'q' to quit
-```
-</div><div>
-
-Or, you can use it like `apt`:
-
-```bash!
-$ sudo aptitude install nano
-```
-</div></div>
-
-[**dpkg** - package manager]
-
-<div class="row row-cols-md-2"><div>
-
-**Usage** 🐚: `apt` uses the lower-level package manager `dpkg` to install packages. Some developers may directly interact with it.
-
-**Example** 🔥:
-
-```bash!
-$ sudo dpkg -i xxx.deb
-```
-</div></div>
-
-[**snap** - package manager]
-
-<div class="row row-cols-md-2"><div>
-
-**Usage** 🐚: snap packages are a modern way to share application. They contain all dependencies, and support automatic updates. Some cons are their larger size and sometimes there are performance issues.
-
-👉 Find [Snap packages here](https://snapcraft.io/).
-</div><div>
-
-**Example** 🔥:
-
-```ps
-$ sudo apt update
-$ sudo apt install snapd
-$ sudo snap install core
-$ sudo snap refresh core
-$ sudo snap install --classic xxx
-```
-</div></div>
-
-[**update-alternatives** - 🛻]
-
-<div class="row row-cols-md-2"><div>
-
-**Usage** 🐚: available on Debian-based distributions. Allow us to switch between multiple versions of a same program.
-
-🛻 c++, cc, nc, php, java...
-
-**Example** 🔥:
-
-```ps
-$ sudo update-alternatives --config php
-```
-</div></div>
-++++++
