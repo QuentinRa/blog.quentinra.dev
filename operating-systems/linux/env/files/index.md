@@ -83,6 +83,7 @@ The file `/dev/null` is a sort of "trash file" in which everything you write ins
 * `/etc/shadow` <small>(root)</small>: users and their hashed password
 * `/etc/group`: list of groups and their GID
 * `/etc/hosts` <small>(root)</small>: map a domain to an IP, can be edited manually
+* `/etc/resolv.conf`: automatically filled when selecting a network card. It contains DNS settings and other related settings.
 </div><div>
 
 #### /etc/sudoers

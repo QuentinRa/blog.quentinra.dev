@@ -413,9 +413,6 @@ Stuff that I found, but never read/used yet.
 * [linux-securite](https://wonderfall.space/linux-securite/)
 * ELF
 * [tcsh](https://www.ibm.com/docs/en/zos/2.3.0?topic=shells-writing-tcsh-shell-scripts)
-* packages ([![linuxfundamentalspart3](../../../cybersecurity/_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3))
-  * `dnf update/yum update` (Fedora, Redhat)
-  * `cat /etc/apt/sources.list`
 
 </div><div>
 

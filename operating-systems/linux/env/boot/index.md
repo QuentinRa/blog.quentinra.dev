@@ -51,6 +51,19 @@ $ systemctl link xxx      # create a link in systemd files
 ```
 
 ➡️ You can use `-f` to force an operation.
+
+<br>
+
+#### journalctl command
+
+We can use `journalctl` to access the system logs.
+
+```shell!
+$ journalctl            # all logs
+$ journalctl -b         # since last boot
+$ journalctl -f         # real-time
+$ journalctl -u xxx     # for a specific service
+```
 </div><div>
 
 #### Systemd Targets
@@ -97,6 +110,5 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * Control Groups (cgroups)
-* journalctl
 </div><div>
 </div></div>

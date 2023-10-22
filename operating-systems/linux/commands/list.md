@@ -373,121 +373,6 @@ Elevate the shell. In an elevated shell, there is no need to add `sudo` before e
 $ sudo -s
 ```
 </div></div>
-
-[<br>]
-
-[**apt** - package manager]
-
-<div class="row row-cols-md-2"><div>
-
-**Usage** 🐚: `apt` is the default package manager on well-known Linux distros such as Debian/Ubuntu.
-
-**Example** 🔥:
-
-Install, Update, Remove a package
-
-```ps
-$ sudo apt install aptitude
-$ sudo apt update aptitude
-$ sudo apt upgrade aptitude
-$ sudo apt remove aptitude
-```
-
-Download updates for/upgrade all packages
-
-```ps
-$ sudo apt update
-$ sudo apt upgrade
-```
-</div><div>
-
-**Update the OS** 🧪
-
-```ps
-$ sudo apt dist-upgrade
-```
-
-Remove unused dependencies
-
-```ps
-$ sudo apt auto-remove
-```
-
-When installing packages, you are prompted `Do you want to continue? [Y/n]` <small>(you need to enter `Y`)</small>. You can skip this, using `-y`.
-
-```ps
-$ sudo apt install -y aptitude
-```
-</div></div>
-
-[**aptitude** - package manager]
-
-<div class="row row-cols-md-2"><div>
-
-**Usage** 🐚: `aptitude` <small>(which has to be installed)</small> is the same as `apt`, but there is a graphical interface.
-
-**Example** 🔥:
-
-```bash!
-$ sudo aptitude # press 'q' to quit
-```
-</div><div>
-
-Or, you can use it like `apt`:
-
-```bash!
-$ sudo aptitude install nano
-```
-</div></div>
-
-[**dpkg** - package manager]
-
-<div class="row row-cols-md-2"><div>
-
-**Usage** 🐚: `apt` uses the lower-level package manager `dpkg` to install packages. Some developers may directly interact with it.
-
-**Example** 🔥:
-
-```bash!
-$ sudo dpkg -i xxx.deb
-```
-</div></div>
-
-[**snap** - package manager]
-
-<div class="row row-cols-md-2"><div>
-
-**Usage** 🐚: snap packages are a modern way to share application. They contain all dependencies, and support automatic updates. Some cons are their larger size and sometimes there are performance issues.
-
-👉 Find [Snap packages here](https://snapcraft.io/).
-</div><div>
-
-**Example** 🔥:
-
-```ps
-$ sudo apt update
-$ sudo apt install snapd
-$ sudo snap install core
-$ sudo snap refresh core
-$ sudo snap install --classic xxx
-```
-</div></div>
-
-[**update-alternatives** - 🛻]
-
-<div class="row row-cols-md-2"><div>
-
-**Usage** 🐚: available on Debian-based distributions. Allow us to switch between multiple versions of a same program.
-
-🛻 c++, cc, nc, php, java...
-
-**Example** 🔥:
-
-```ps
-$ sudo update-alternatives --config php
-```
-</div></div>
-
 ++++++
 
 <hr class="sep-both">
@@ -1687,7 +1572,6 @@ Stuff that I found, but never read/used yet.
 * `mktemp`
 * `ranger`
 * `hexdump`
-* rpm, yum, dnf, pacman
 * use of `-not`/`!` to negate a `find` option
 * pretty CSV ([article](https://www.stefaanlippens.net/pretty-csv.html))
 
@@ -1699,7 +1583,6 @@ source ~/.bashrc
 ```
 
 * Guake/iTerm2/Terminology/[tmux](https://www.youtube.com/watch?v=Lqehvpe_djs)/[terminator](https://github.com/gnome-terminator/terminator)/[tmux](https://www.youtube.com/watch?v=Lqehvpe_djs) + [cheatsheet](https://tmuxcheatsheet.com/)
-* `sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y`
 </div><div>
 
 * `find / -type f -a \( -perm -u+s -o -perm -g+s \) -ls`
@@ -1713,9 +1596,5 @@ source ~/.bashrc
 
 Disk management
 
-* Partition list: `fdisk -l`, `lsblk` or `blkid`
-* Create partition: `fdisk`
-* Mount: `mount xxx yyy`
-* Format: `mkfs.ext4 xxx -L "XXX"`
 * `basename`, `dirname`, `realpath`
 </div></div>
