@@ -150,10 +150,38 @@ $ sudo mount -t loop rootfs.ext4 # mounted at /mnt/rootfs.ext4/
 
 <div class="row row-cols-md-2"><div>
 
-...
+XXX
+
+```shell!
+$ debugfs xxx.ext4     # open as read-only
+$ debugfs -w xxx.ext4  # open as read-write
+$ debugfs
+debugfs> open -w xxx.ext4  # open as...
+debugfs> q                 # quit
+```
+
+```shell!
+debugfs> cd /path/to/dest
+debugfs> write /local/path/to/file file
+```
+```shell!
+debugfs> mkdir folder
+```
+
+```shell!
+debugfs> dump file /local/path/to/file
+```
+
+```shell!
+debugfs> symlink file_to_create /path/to/linked/file
+```
 </div><div>
 
-...
+```shell!
+$ cat file.cmd          # debugfs commands
+q
+$ debugfs -f file.cmd   # run commands in file
+```
 </div></div>
 
 <hr class="sep-both">
