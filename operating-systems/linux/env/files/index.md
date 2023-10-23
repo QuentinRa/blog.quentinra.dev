@@ -146,41 +146,33 @@ $ sudo mount -t loop rootfs.ext4 # mounted at /mnt/rootfs.ext4/
 
 <hr class="sep-both">
 
-## DebugFS
+## Edit a filesystem
 
 <div class="row row-cols-md-2"><div>
-
-XXX
-
-```shell!
-$ debugfs xxx.ext4     # open as read-only
-$ debugfs -w xxx.ext4  # open as read-write
-$ debugfs
-debugfs> open -w xxx.ext4  # open as...
-debugfs> q                 # quit
-```
-
-```shell!
-debugfs> cd /path/to/dest
-debugfs> write /local/path/to/file file
-```
-```shell!
-debugfs> mkdir folder
-```
-
-```shell!
-debugfs> dump file /local/path/to/file
-```
-
-```shell!
-debugfs> symlink file_to_create /path/to/linked/file
-```
 </div><div>
 
+#### DebugFS
+
+Debugfs is a tool that you can use to edit a filesystem without having to extract it <small>(using `mount`/`umount`)</small>.
+
 ```shell!
-$ cat file.cmd          # debugfs commands
-q
-$ debugfs -f file.cmd   # run commands in file
+$ debugfs xxx.ext4 [...]    # open fs as read-only
+$ debugfs -w xxx.ext4 [...] # open fs as read-write
+$ debugfs -f file.cmd [...] # run commands in file
+$ debugfs
+debugfs> open -w xxx.ext4   # open fs as...
+debugfs> ls                 # ls current folder on fs 
+debugfs> cd /path/to/dest   # navigate in fs 
+debugfs> mkdir folder       # create folder in fs
+debugfs> rm file_or_folder  # remove ... in fs
+debugfs> # copy local file to fs
+debugfs> # ⚠️ The right value cannot be a path.
+debugfs> write /local/path/to/file filename
+debugfs> # copy file on fs to host
+debugfs> dump filename /local/path/to/file 
+debugfs> # filename links to /path/to/...
+debugfs> symlink filename /path/to/linked/file
+debugfs> q                 # quit
 ```
 </div></div>
 
