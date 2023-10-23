@@ -149,6 +149,31 @@ $ sudo mount -t loop rootfs.ext4 # mounted at /mnt/rootfs.ext4/
 ## Edit a filesystem
 
 <div class="row row-cols-md-2"><div>
+
+A filesystem may be stored in a file, such as `rootfs.ext4` for an EXT4 filesystem. It could be a backup or something similar.
+
+You can use tools such as `mount` or `debugfs` to inspect the filesystem contents and edit them.
+
+To create an empty filesystem for testing:
+
+```shell!
+$ dd if=/dev/zero of=rootfs.ext4 bs=1M count=200 # 200 MB
+$ mkfs.ext4 rootfs.ext4                          # format
+$ e2fsck -f rootfs.ext4                          # check fs
+```
+
+#### mount
+
+The most common is to use `mount`. It unpacks the filesystem allowing us to use any commands we want:
+
+```shell!
+$ sudo mkdir /mnt/tmp_rootfs        # create mount point 
+$ sudo mount -o loop rootfs.ext4 /mnt/tmp_rootfs # mount
+[do your changes]
+$ sudo umount /mnt/tmp_rootfs       # unmount
+```
+
+️➡️  We can use `chroot` to change the root directory for commands.
 </div><div>
 
 #### DebugFS
