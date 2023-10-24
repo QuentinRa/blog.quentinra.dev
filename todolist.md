@@ -6,13 +6,13 @@ List of courses that have note which were not added yet.
 
 **Programming Languages**
 
-* `(review, typos)` web (general), API
+* `(review, typos)` web (general, highlight.js), API, Java/Gradle (JAR)
 * SEO
 * LIBS
 
 **Tools and Frameworks**
 
-* `(review, typos)` Pandora, JetBrains plugin development
+* `(review, typos)` Pandora, JetBrains plugin development, HMI
 * `(current)` **CMake**, **GitLab CI**
 * Project + Tools
 </div><div>
