@@ -27,7 +27,7 @@ $ man man
 
 Entries in the manual are split into sections. To access a command in a specific section, simply add the section number before the command.
 
-```bash
+```shell!
 $ man 1 man
 ```
 </div></div>
@@ -58,6 +58,20 @@ fopencookie (3)      - opening a custom stream
 $ man 3 fopen
 ```
 
+[**info** - alternative to `man`]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: Alternative to `man`.
+
+**Example** 🔥:
+
+```ps
+$ sudo apt install info
+$ info ls
+```
+</div></div>
+
 ++++++
 
 <hr class="sep-both">
@@ -77,7 +91,7 @@ $ man 3 fopen
 
 **Example** 🔥:
 
-```bash
+```shell!
 $ echo Hello, World
 $ echo 'Hello, World'
 $ echo "Hello, World"
@@ -94,14 +108,14 @@ de
 
 **-n** 🧪: to remove the newline
 
-```bash
+```shell!
 $ echo -n "Hello, World"
 ```
 
 You can also use `printf "format" arguments`:
 
-```bash
-printf "%s\n" "Hello, World"
+```shell!
+$ printf "%s\n" "Hello, World"
 ```
 </div></div>
 
@@ -121,12 +135,12 @@ printf "%s\n" "Hello, World"
 
 **Example** 🔥:
 
-```bash!
+```shell!
 $ cat file
-# the content here
+the content here
 ```
 
-```bash!
+```ps
 # read for stdin
 $ cat -
 ```
@@ -134,14 +148,14 @@ $ cat -
 
 ➡️ Concatenating files
 
-```bash!
+```shell!
 $ cat f0 f1
 f0
 f1 Line 1
 f1 Line 2
 ```
 
-```bash!
+```shell!
 $ tac f0 f1
 f0
 f1 Line 2
@@ -150,7 +164,7 @@ f1 Line 1
 
 Create a file f2 with input from f0, f1, and stdin.
 
-```bash!
+```shell!
 $ cat f0 f1 - > f2
 ```
 </div></div>
@@ -165,7 +179,7 @@ $ cat f0 f1 - > f2
 
 **Example** 🔥:
 
-```bash!
+```shell!
 $ more file
 $ less file
 ```
@@ -217,7 +231,7 @@ $ tee output1 output2 < file
 
 **Example** 🔥:
 
-```bash!
+```shell!
 $ clear
 ```
 </div><div>
@@ -235,14 +249,14 @@ $ clear
 
 Enable an option <small>(ex: nullglob)</small>
 
-```bash
+```shell!
 $ shopt -ps nullglob
 ```
 </div><div>
 
 Disable an option <small>(ex: nullglob)</small>
 
-```bash
+```shell!
 $ shopt -pu nullglob
 ```
 
@@ -290,8 +304,8 @@ $ alias
 
 **Example** 🔥:
 
-```bash!
-$ id # current user
+```shell!
+$ id          # current user
 $ id username # some user
 ```
 </div></div>
@@ -306,7 +320,7 @@ $ id username # some user
 
 **Example** 🔥:
 
-```bash!
+```shell!
 $ whoami
 username
 ```
@@ -389,7 +403,7 @@ $ sudo -s
 
 **Example** 🔥:
 
-```bash
+```shell!
 $ pwd
 /home/listro
 ```
@@ -459,27 +473,27 @@ $ tree .
 
 **Example** 🔥:
 
-```bash!
+```shell!
 $ cd folder
 ```
 
 Move to the HOME folder
 
-```bash!
+```shell!
 $ cd
 $ cd ~
 ```
 
 Move to the previous folder
 
-```bash!
+```shell!
 $ cd -
 ```
 </div><div>
 
 The `pushd` and `popd` commands are quite useful when we are often moving between repositories:
 
-```bash!
+```shell!
 $ cd /path/to/folderA
 $ pushd .    # save
 $ cd /path/to/folderB
@@ -501,14 +515,14 @@ $ popd       # go back to folderA
 
 **Example** 🔥:
 
-```bash!
+```shell!
 $ mkdir folder
 ```
 </div><div>
 
 Create every non-existing folder in a path
 
-```bash!
+```shell!
 $ mkdir -p folder0/folder1/folder2
 ```
 </div></div>
@@ -580,7 +594,7 @@ $ ln -s target output
 
 **Example** 🔥:
 
-```bash!
+```shell!
 $ mv toto ./all_toto/
 $ mv toto -t ./all_toto/ # same
 $ mv toto1 toto_2 ./all_toto/
@@ -589,7 +603,7 @@ $ mv toto1 toto_2 ./all_toto/
 
 **Rename**
 
-```bash!
+```shell!
 $ mv toto toto0
 ```
 </div></div>
@@ -605,7 +619,7 @@ $ mv toto toto0
 
 **Example** 🔥:
 
-```bash!
+```shell!
 $ cp toto ./all_toto/
 $ cp toto1 toto_2 ./all_toto/
 ```
@@ -613,13 +627,13 @@ $ cp toto1 toto_2 ./all_toto/
 
 To create a copy
 
-```bash!
+```shell!
 $ cp toto toto0 # ⚠️ toto still exists
 ```
 
 **-r** ⚠️: required to copy a folder and its content
 
-```bash
+```shell!
 $ cp -r all_toto/ all_toto_copy
 ```
 </div></div>
@@ -635,14 +649,14 @@ $ cp -r all_toto/ all_toto_copy
 
 **Example** 🔥:
 
-```bash!
+```shell!
 $ rm file
 $ rm file0 file1
 ```
 
 👉 `rm` by default is asking for confirmation.
 
-```bash!
+```shell!
 $ rm -f file # do not ask (f=force)
 $ rm -i file # ask
 ```
@@ -650,14 +664,14 @@ $ rm -i file # ask
 
 👉 Delete a folder
 
-```bash
+```shell!
 $ rm -d folder # if the folder is empty
 $ rm -r folder # -R is doing the same
 ```
 
 👉 Delete a folder and to not ask for confirmation
 
-```bash
+```shell!
 $ rm -rf folder # usual f + r
 ```
 </div></div>
@@ -710,7 +724,7 @@ $ diff f0 f1 -y
 
 Generate a patch
 
-```bash
+```shell!
 $ diff f0 f1 -u
 # ...
 $ diff f0 f1 -u > f0.patch 
@@ -718,7 +732,7 @@ $ diff f0 f1 -u > f0.patch
 
 Then, you can use `patch` to apply the differences with `f1` to `f0`.
 
-```bash
+```shell!
 $ patch < f0.patch
 ```
 </div></div>
@@ -798,14 +812,14 @@ $ tar -xvf archive_name.tar.gz
 
 **Example** 🔥:
 
-```bash!
+```shell!
 $ su root
 ```
 </div><div>
 
 👉 Log in as another user <small>(move the their home...)</small>
 
-```bash
+```shell!
 $ su -l root
 $ su - root # same
 ```
@@ -966,7 +980,7 @@ $ delgroup group_name
 
 Use <kbd>+</kbd> to grant perms..
 
-```bash
+```shell!
 $ chmod u+x target
 $ chmod g+rw target
 $ chmod ug+r target
@@ -975,7 +989,7 @@ $ chmod g+x,o+rx target
 
 Grant to <kbd>a</kbd> <smalll>(all, alias of <kbd>ugo</kbd>)</small>
 
-```bash
+```shell!
 $ chmod +x target
 $ chmod a+x target # same
 $ chmod ugo+x target # same
@@ -984,7 +998,7 @@ $ chmod ugo+x target # same
 
 Use <kbd>-</kbd> instead of <kbd>+</kbd> to revoke permissions.
 
-```bash
+```shell!
 $ chmod -x target
 $ chmod u-x target
 $ chmod ug-rw target
@@ -1060,7 +1074,7 @@ $ which find
 
 Find any executable for a command in the PATH
 
-```bash
+```shell!
 $ whereis ls
 ls: /bin/ls /usr/share/man/man1/ls.1.gz
 ```
@@ -1119,6 +1133,10 @@ These are rarely used:
 * `-group xxx`: files belonging to users in xxx
 
 👉 You can add a `+` or `-` such as `-size +4M`.
+
+👉 You can use `!`/`-not` to negate an option. For example, you can use `-not -name`.
+
+👉 You can group conditions too: `\( -name xxx -o -name yyy \)`. Use `-o` for OR and `-a` for AND.
 </div></div>
 
 [**locate** - file]
@@ -1327,7 +1345,7 @@ $ awk 'NR > 3 {print $1 $3}' file
 
 **Usage** 🐚: extract "fields" from a table For instance, given the following file:
 
-```bash
+```shell!
 $ cat /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 ```
@@ -1569,13 +1587,13 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
+* [modern-unix](https://github.com/ibraheemdev/modern-unix)
 * `mktemp`
 * `ranger`
 * `hexdump`
-* use of `-not`/`!` to negate a `find` option
 * pretty CSV ([article](https://www.stefaanlippens.net/pretty-csv.html))
 
-```bash
+```shell!
 wget https://github.com/alexhallam/tv/releases/download/1.4.30/tidy-viewer_1.4.30_amd64.deb
 sudo dpkg -i tidy-viewer_1.4.30_amd64.deb
 echo "alias tv='tidy-viewer'" >> ~/.bashrc
@@ -1585,16 +1603,5 @@ source ~/.bashrc
 * Guake/iTerm2/Terminology/[tmux](https://www.youtube.com/watch?v=Lqehvpe_djs)/[terminator](https://github.com/gnome-terminator/terminator)/[tmux](https://www.youtube.com/watch?v=Lqehvpe_djs) + [cheatsheet](https://tmuxcheatsheet.com/)
 </div><div>
 
-* `find / -type f -a \( -perm -u+s -o -perm -g+s \) -ls`
-* `help`/`info`
-* `xargs`
-* `env X=val ./myScript`
-* `strace/strings` [link](https://jvns.ca/strace-zine-v3.pdf)
-* `shutdown -h now`
 * `getent` <sup>2</sup>: get an entry such as "passwd": `getent passwd` <small>(get entry)</small> instead of `cat /etc/passwd`
-* `sudo -s`
-
-Disk management
-
-* `basename`, `dirname`, `realpath`
 </div></div>

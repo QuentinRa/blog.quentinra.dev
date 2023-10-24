@@ -479,6 +479,4 @@ Stuff that I found, but never read/used yet.
 
 * terminal shortcuts <small>(CTRL +/-/L/D, scroll button...)</small> and CTRL+SHIFT+T to open a terminal.
 </div><div>
-
-
 </div></div>

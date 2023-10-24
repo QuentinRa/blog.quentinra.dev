@@ -662,5 +662,6 @@ Stuff that I found, but never read/used yet.
 
 * `getopts`
 * `readonly var=value`
+* `env X=val ./myScript`
 </div><div>
 </div></div>
