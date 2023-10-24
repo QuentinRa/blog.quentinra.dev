@@ -184,7 +184,7 @@ clean:
 
 <div class="row row-cols-md-2"><div>
 
-#### Assigment Operators
+#### Assignment Operators
 
 There are multiple operators to assign variables:
 
@@ -285,7 +285,7 @@ You can use `text:from=to` to substitute `from` with `to` in `text`.
 
 #### Include Another Makefile
 
-You can create separate makefiles, for instance, if you have multiple compilers, you can create a file <small>(often, a `.mk`)</small> with variables for each compiler, and conditionnaly import them.
+You can create separate makefiles, for instance, if you have multiple compilers, you can create a file <small>(often, a `.mk`)</small> with variables for each compiler, and conditionally import them.
 
 ```makefile!
 include gcc.mk      # include cannot fail
