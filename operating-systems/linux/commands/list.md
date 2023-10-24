@@ -387,6 +387,29 @@ Elevate the shell. In an elevated shell, there is no need to add `sudo` before e
 $ sudo -s
 ```
 </div></div>
+
+[**shutdown** - stop/reboot/...]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: stop or reboot an operating system.
+
+**Example** 🔥:
+
+To shutdown an operating system, use:
+
+```ps
+$ shutdown -h now
+```
+</div><div>
+
+To reboot an operating system, use:
+
+```ps
+$ shutdown -r now
+$ reboot
+```
+</div></div>
 ++++++
 
 <hr class="sep-both">

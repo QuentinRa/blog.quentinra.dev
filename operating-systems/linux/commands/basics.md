@@ -12,7 +12,7 @@ Every linux command is a **process**. While you can learn more about [processes 
 
 Commands usually have an option "help". ⛪
 
-```bash
+```shell!
 $ man -h
 $ find -help
 $ gcc --help
@@ -174,7 +174,7 @@ Other signals:
 
 You can use `-l` to see the code for a given signal
 
-```bash
+```shell!
 $ kill -l SIGSTOP
 19
 ```
@@ -223,21 +223,21 @@ $ ls /Documents/my\ bookmarks/ # ✅
 
 Length of a string
 
-```bash
+```shell!
 $ expr length "Sarah"
 5
 ```
 
 Extract a substring <small>("3" characters in "Sarah" from index "2")</small>
 
-```bash
+```shell!
 $ expr substr "Sarah" 2 3
 ara
 ```
 
 Index of a character in a string <small>(index of S/w in Sarah)</small>
 
-```bash
+```shell!
 $ expr index "Sarah" S
 1
 $ expr index "Sarah" w
@@ -262,7 +262,7 @@ $ four=$((3+1)) # same
 
 Example of increasing a variable by one <small>(loops are covered in scripts)</small>.
 
-```bash
+```shell!
 i=0
 while [ $i -lt 5 ]; do
    i=$[i+1] 
@@ -460,7 +460,7 @@ A subshell is a shell that is launched within another shell, allowing us to exec
 
 **Example** 🔥: In the example below, we create a variable in a subshell, and print it. We also try to print the variable outside the subshell, but since the variable does not exist, the output is empty.
 
-```bash!
+```shell!
 $ (cat=toto; echo "1. $cat") && echo "2. $cat"
 1. toto
 2.
@@ -477,6 +477,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* terminal shortcuts <small>(CTRL +/-/L/D, scroll button...)</small> and CTRL+SHIFT+T to open a terminal.
+* terminal shortcuts <small>(CTRL +/-/L/D, scroll button...)</small>
+* CTRL+SHIFT+T to open a terminal.
 </div><div>
 </div></div>
