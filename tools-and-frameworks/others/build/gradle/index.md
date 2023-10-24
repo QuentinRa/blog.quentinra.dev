@@ -207,6 +207,8 @@ sourceSets {
 }
 ```
 
+⚠️ From the code, to access a file that is inside the resources folder, you must use the [ClassLoader Utilities](/programming-languages/high-level/oo/java/_general/index.md#jar-files), as we would in JAR files.
+
 #### Java run
 
 You can create a task `run` to use `./gradlew run` and `./gradlew run --args="arg1 arg2 arg3"`.
@@ -237,6 +239,8 @@ jar {
 ```
 
 ➡️ The output is usually at `build/libs/xxx-version.jar`.
+
+🚀 See also: [shadow plugin](https://github.com/johnrengelman/shadow).
 </div></div>
 
 <hr class="sep-both">

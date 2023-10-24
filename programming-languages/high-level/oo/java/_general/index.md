@@ -1613,23 +1613,18 @@ $ java -jar some_jar.jar # execute
 
 ⚠️ Once bundled, files inside the JAR cannot be modified.
 
-🔥 With [Gradle](/tools-and-frameworks/others/build/gradle/index.md), you can use [shadow](https://github.com/johnrengelman/shadow) or this to build a JAR:
+🔥 You can create a JAR manually, or you can use tools such as [gradle](/tools-and-frameworks/others/build/gradle/index.md#generate-a-jar).
 
-```gradle
-task makeJar(type: Jar) {
-    manifest {
-        attributes(
-            'Main-Class': 'com.xxx.yyy.Main'
-        )
-    }
-    from {
-        configurations.runtimeClasspath.collect {
-            it.isDirectory() ? it : zipTree(it)
-        }
-    }
-    destinationDirectory.set(file("$buildDir/../out/"))
-    with jar
-}
+From the code, there are 3 ways to read a file that is inside a JAR.
+
+```java
+// Method 1
+InputStream s = this.getClass().getResourceAsStream("/path");
+// Method 2
+InputStream s = AClass.class.getResourceAsStream("/path");
+// Method 3
+URL url = this.getClass().getResource("/path");
+File f = new File(url.toURI());
 ```
 
 <br>
