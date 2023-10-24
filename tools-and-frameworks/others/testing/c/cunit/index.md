@@ -102,7 +102,7 @@ int my_suite_createSuite() {
 }
 ```
 
-➡️ `CU_add_suite` allow you to define two methods which are respectively called before and after all tests.
+➡️ `CU_add_suite` allows you to define two methods which are respectively called before and after all tests.
 </div><div>
 
 Now, we can start writing some tests:
@@ -193,7 +193,7 @@ int (*listSuite[NUMBER_OF_SUITES])(CU_pSuite) = {
 };
 ```
 
-Using the **basic runner** 📝, tests results are printed to the screen.
+Using the **basic runner** 📝, test results are printed on the screen.
 
 ```c
 #include <CUnit/Basic.h>
