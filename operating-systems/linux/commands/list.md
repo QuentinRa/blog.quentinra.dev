@@ -1657,19 +1657,10 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [modern-unix](https://github.com/ibraheemdev/modern-unix)
+* [pretty CSV](https://www.stefaanlippens.net/pretty-csv.html)
 * `mktemp`
 * `ranger`
 * `hexdump`
-* pretty CSV ([article](https://www.stefaanlippens.net/pretty-csv.html))
-
-```shell!
-wget https://github.com/alexhallam/tv/releases/download/1.4.30/tidy-viewer_1.4.30_amd64.deb
-sudo dpkg -i tidy-viewer_1.4.30_amd64.deb
-echo "alias tv='tidy-viewer'" >> ~/.bashrc
-source ~/.bashrc
-```
-
-* Guake/iTerm2/Terminology/[tmux](https://www.youtube.com/watch?v=Lqehvpe_djs)/[terminator](https://github.com/gnome-terminator/terminator)/[tmux](https://www.youtube.com/watch?v=Lqehvpe_djs) + [cheatsheet](https://tmuxcheatsheet.com/)
 </div><div>
 
 * `getent` <sup>2</sup>: get an entry such as "passwd": `getent passwd` <small>(get entry)</small> instead of `cat /etc/passwd`
