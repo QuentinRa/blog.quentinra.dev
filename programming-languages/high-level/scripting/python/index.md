@@ -242,7 +242,7 @@ else:
 
 🤡 It's worth noting that `else:` can be used after most blocks such as for/while loops or exceptions. It's executed after the block.
 
-🚀 The ternary operator is available in python:
+🚀 The ternary operator is available in Python:
 
 ```python
 x = "a" if True else "x"
