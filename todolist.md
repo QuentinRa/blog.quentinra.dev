@@ -19,9 +19,8 @@ List of courses that have note which were not added yet.
 
 **Operating systems**
 
-* **Linux** (+debugfs, +expect, architecture, advanced scripts)
+* `(review, typos)` Linux
 * Networking (+bridges)
-* Utils
 
 **QUID**
 
@@ -30,7 +29,7 @@ List of courses that have note which were not added yet.
 
 **Cybersecurity**
 
-* AD security, Windows security, IoT, Cloud
+* AD Windows Linux Security, IoT, Cloud
 </div></div>
 
 <hr class="sep-both">
