@@ -137,7 +137,7 @@ project(your_project_name VERSION 1.0 LANGUAGES C CXX)
 
 A **target** 📍 is like a build artifact, such as a library or an executable. 
 
-CMake will automatically detect the languages for each target from the sources files extensions.
+CMake will automatically detect the languages for each target from each source file extension.
 
 <br>
 
@@ -226,7 +226,7 @@ You **should** enter all sources manually, as using functions such as `file(...)
 file(GLOB_RECURSE ALL_SOURCES src/*.c src/*.cpp)
 ```
 
-If supported by generator, use `CONFIGURE_DEPENDS` which adds a cmake hook checking if every glob pattern changed:
+If supported by your generator, use `CONFIGURE_DEPENDS` to adds a cmake hook checking if any glob pattern changed:
 
 ```cmake
 file(GLOB_RECURSE ALL_SOURCES CONFIGURE_DEPENDS src/*.c src/*.cpp)
@@ -265,7 +265,7 @@ The scope, which is optional, can be one of:
 
 ➡️ The default scope is determined according to the target <small>(a lib...)</small>.
 
-⚠️ If you are exposing headers which depend on a library, then the library must be `PUBLIC`.
+⚠️ If you are exposing headers that depend on a library, then the library must be `PUBLIC`.
 </div><div>
 
 #### External Libraries
@@ -473,7 +473,7 @@ And there are some common operators:
 * `TARGET VARIABLE`: true if a target is defined
 * `COMMAND VARIABLE`: true if a command/function/macro is defined
 * `TEST VARIABLE`: true if a test is defined
-* `EQUAL`, `LESS`, `LESS_EQUAL`, `GREATER`, and `GREATER_EQUAL` which are used to compare numeric values
+* `EQUAL`, `LESS`, `LESS_EQUAL`, `GREATER`, and `GREATER_EQUAL`: used to compare numeric values
 * `A VERSION_XXX B` such as `VERSION_EQUAL`: compare software versions
 
 There are also some special operators:
@@ -558,7 +558,7 @@ add_subdirectory(libA)
 
 #### Custom Output Directories
 
-This is an example for GNU directories:
+There are a few variables you can set:
 
 ```cmake
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
@@ -651,7 +651,7 @@ if(NOT ${DEPS_NAME}_POPULATED)
     )
 endif ()
 
-# Fall-back to the default handler (load our CMakeLists.txt)
+# Fall back to the default handler (load our CMakeLists.txt)
 FetchContent_MakeAvailable(${DEPS_NAME})
 
 add_executable(someTarget main.cpp)
@@ -748,7 +748,7 @@ $ ctest            # use "-V" for verbose
 
 <div class="row row-cols-md-2"><div>
 
-You can configure static code analyzers. There are multiple tools and multiple ways to do it, each with its own inconvenient.
+You can configure static code analyzers. There are multiple tools and multiple ways to do it, each with its own pros and cons.
 
 We will use [clang-tidy](/programming-languages/low-level/compilers/clang/clang-tidy.md) as a reference here.
 
@@ -767,7 +767,7 @@ set_target_properties(targetName
 )
 ```
 
-Unfortunately, clang-tidy is now called after each build. There is a well-known script handle this: [cmake-scripts](https://github.com/StableCoder/cmake-scripts/blob/main/tools.cmake).
+Unfortunately, clang-tidy is now called after each build. There is a well-known script that handles this: [cmake-scripts/tools.cmake](https://github.com/StableCoder/cmake-scripts/blob/main/tools.cmake).
 </div><div>
 
 Otherwise, you may use the previous common approach. As long as you provide the list of all sources to compile, it works well.
@@ -824,7 +824,7 @@ add_dependencies(targetName customTargetName)
 
 #### Declare a custom command
 
-A custom command is wrapper for a command generating some files (`OUTPUT`) often based on dependencies (`DEPENDS`) using `COMMAND`.
+A custom command is a wrapper for a command generating some files (`OUTPUT`) often based on dependencies (`DEPENDS`) using `COMMAND`.
 
 ```cmake
 add_custom_command(
@@ -833,7 +833,7 @@ add_custom_command(
     COMMAND # command + arguments to get the output
         script/my_script.sh
         ${CMAKE_BINARY_DIR}/data/file1.txt
-    DEPENDS # execute the command each time they changed
+    DEPENDS # execute the command each time they change
         data/file2.txt
         ${CMAKE_BINARY_DIR}/data/file1.txt
     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
@@ -944,7 +944,7 @@ configure_file(configure.h.in configure.h)
 
 ##### Usage: Add files to the build 🔥
 
-We may want to copy some files in the build, for instance if they are not compiled but used by other targets.
+We may want to copy some files in the build, for instance, if they are not compiled but used by other targets.
 
 ```cmake
 configure_file(
