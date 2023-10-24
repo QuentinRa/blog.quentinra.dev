@@ -2,8 +2,6 @@
 
 <div class="row row-cols-md-2"><div>
 
-</div><div>
-
 Commands usually have an option "help". ⛪
 
 ```shell!
@@ -13,6 +11,7 @@ $ gcc --help
 ```
 
 ⚠️ There is no echo/feedback when writing a password.
+</div><div>
 </div></div>
 
 <hr class="sep-both">

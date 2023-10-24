@@ -1,6 +1,18 @@
 # Linux commands
 
+<div class="row row-cols-md-2"><div>
+
+Many Linux commands are complexes and have multiple options or multiple ways to achieve the same purpose. This page describes some uses and some options of commands that are frequently used.
+
+It's possible for each line of a command to become the arguments of another command using `xargs`:
+
+```shell!
+$ echo "/" | xargs ls    # ls "/"
+```
+</div><div>
+
 ⛪ If there is a command that you don't understand, **check out** [explain shell](https://explainshell.com/) 🚀.
+</div></div>
 
 <hr class="sep-both">
 
