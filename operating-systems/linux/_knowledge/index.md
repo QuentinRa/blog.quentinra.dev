@@ -409,24 +409,20 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* OSS Course
-* [linux-securite](https://wonderfall.space/linux-securite/)
 * ELF
-* [tcsh](https://www.ibm.com/docs/en/zos/2.3.0?topic=shells-writing-tcsh-shell-scripts)
-
-</div><div>
-
 * [linuxhandbook](https://linuxhandbook.com/)
 * [linuxhint](https://linuxhint.com/)
 * [linuxize](https://linuxize.com/)
 * [shell-tips](https://www.shell-tips.com/)
 * [howtouselinux](https://www.howtouselinux.com/)
 * [linuxconfig](https://linuxconfig.org/)
+
+</div><div>
+
 * [tecmint](https://www.tecmint.com/)
 * [linux-audit](https://linux-audit.com/)
 * [oreilly](https://www.oreilly.com/library/view/linux-command-line/9780470251287/)
 * [tldp](https://tldp.org/guides.html)
 * [linuxshelltips](https://www.linuxshelltips.com/)
 * [shellhacks](https://www.shellhacks.com)
-* [modern-unix](https://github.com/ibraheemdev/modern-unix)
 </div></div>

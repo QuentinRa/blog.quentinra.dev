@@ -30,6 +30,7 @@ Stuff that I found, but never read/used yet.
   * `sudo mount /dev/mapper/name dest`
 </div><div>
 
+* [linux-securite](https://wonderfall.space/linux-securite/)
 * [apparmor](https://www.apparmor.net/) (`aa-status`, shipped with many linux distros)
 * [SELinuxProject](https://github.com/SELinuxProject)
 * Disable root account (`/sbin/nologin`) +service (`www-data`)
