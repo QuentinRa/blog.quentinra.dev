@@ -349,6 +349,8 @@ Stuff that I found, but never read/used yet.
 
 * Android ProGuard
 * [Modern Android Development (MAD)](https://developer.android.com/courses/pathways/android-architecture)
+* [/e/OS](https://doc.e.foundation/devices)
+* [LineageOS](https://lineageos.org/)
 * Android Tests + Advanced testing
 * Recommended App architecture
 

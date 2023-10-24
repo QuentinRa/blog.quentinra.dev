@@ -1590,8 +1590,21 @@ $ uniq -c < file
 **Example** 🔥:
 
 ```ps
-$ wget https://path/to/file
-$ wget -d https://path/to/folder/
+$ wget https://path/to/file [...]
+$ wget -r [...]          # download a folder
+$ wget -O xxx [...]      # output name
+$ wget -P xxx [...]      # output location
+```
+</div><div>
+
+Other helpful options:
+
+```ps
+$ wget -d [...]         # debug
+$ wget --no-parent [...] # maxdepth 1
+$ wget -t 2 [...]        # number of tries
+$ wget -T 30 [...]       # timeout
+$ wget --no-check-certificate [...] # no SSL
 ```
 </div></div>
 
