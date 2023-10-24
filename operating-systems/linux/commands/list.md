@@ -769,6 +769,9 @@ Then, you can use `patch` to apply the differences with `f1` to `f0`.
 
 ```shell!
 $ patch < f0.patch
+$ patch -d path/to/xxx [...]  # folder to apply patch on
+$ patch -R [...]              # reverse patch
+$ patch -p0 [...]             # n slashes skipped
 ```
 </div></div>
 
