@@ -30,6 +30,7 @@ List of courses that have note which were not added yet.
 **Cybersecurity**
 
 * AD Windows Linux Security, IoT, Cloud
+* Guake/iTerm2/Terminology/[tmux](https://www.youtube.com/watch?v=Lqehvpe_djs)/[terminator](https://github.com/gnome-terminator/terminator)/[tmux](https://www.youtube.com/watch?v=Lqehvpe_djs) + [cheatsheet](https://tmuxcheatsheet.com/)
 </div></div>
 
 <hr class="sep-both">

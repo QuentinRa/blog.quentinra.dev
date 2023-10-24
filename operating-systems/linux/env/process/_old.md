@@ -1,6 +1,17 @@
 # Linux Architecture 🧪
 
-An experimental set of notes about Linux internals. These notes extend [Architecture](/tools-and-frameworks/knowledge/architecture/index.md).
+<div class="row row-cols-md-2"><div>
+
+Every linux command is a **process**. While you can learn more about [processes here](/operating-systems/linux/env/index.md#processes-and-scheduling) 🤓, some important takeaway are:
+
+* a process returns `0` if successful ✅, and `not 0` otherwise ❌.
+* each process has a unique identifier called `pid`
+* a process can be killed using `CTRL+C`
+* use `&` to run a process in the background
+</div><div>
+
+...
+</div></div>
 
 <hr class="sep-both">
 
