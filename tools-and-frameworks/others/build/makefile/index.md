@@ -2,14 +2,14 @@
 
 <div class="row row-cols-md-2"><div>
 
-Makefiles are files in which a developers define **rules** ✍️ to compile files, build an executable, and run it. 
+Makefiles are files in which developers define **rules** ✍️ to compile their sources, build an executable, and run it. 
 
-* 📃 You define the dependencies between files
-* 🚀 Only changed files and those dependent on them are recompiled
+* 📃 You define the dependencies between source files
+* 🚀 Only the strict minimum is recompiled
 * 🏡 Users write simple commands such as `make build` <small>(no "gcc [...]")</small>
-* 🌍 Commonly used to build Linux applications
+* 🌍 Commonly used to build projects on Linux
 
-Makefiles are mainly used in C/C++, while they can be used for any language, different tools such as CMake are used instead.
+Makefiles are mainly used in C/C++, while they can be used for any language. Modern projects usually use [CMake]() <small>(can generate a Makefile)</small>.
 
 👉 [Official documentation](https://www.gnu.org/software/make/manual/html_node/) (GNU)
 </div><div>
@@ -17,16 +17,16 @@ Makefiles are mainly used in C/C++, while they can be used for any language, dif
 **Create an empty Makefile** 🌱
 
 ```ps
-$ touch Makefile
-$ nano Makefile # edit
+$ touch Makefile # alt: "makefile" "GNUmakefile"
+$ nano Makefile  # edit
 ```
 
 **Execute a rule** 🌴
 
 ```ps
 # in the directory with the Makefile
-$ make # the first rule
-$ make rule_name # a specific rule
+$ make # run the first rule
+$ make rule_name # run a specific rule
 ```
 </div></div>
 
