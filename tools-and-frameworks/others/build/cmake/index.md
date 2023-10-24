@@ -226,7 +226,7 @@ You **should** enter all sources manually, as using functions such as `file(...)
 file(GLOB_RECURSE ALL_SOURCES src/*.c src/*.cpp)
 ```
 
-If supported by your generator, use `CONFIGURE_DEPENDS` to adds a cmake hook checking if any glob pattern changed:
+If supported by your generator, use `CONFIGURE_DEPENDS` to add a CMake hook checking if any glob pattern changed:
 
 ```cmake
 file(GLOB_RECURSE ALL_SOURCES CONFIGURE_DEPENDS src/*.c src/*.cpp)

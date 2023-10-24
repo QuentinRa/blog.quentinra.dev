@@ -60,5 +60,5 @@ $ cat compile_commands.json
 $ clang-tidy -p . [...]
 ```
 
-⚠️ If the folder with the `compile_commands.json` file is different that the current folder (`.`) and there is no `compile_commands.json` in the current folder, it will be copied in the current folder.
+⚠️ If the folder with the `compile_commands.json` file is different from the current folder (`.`) and there is no `compile_commands.json` in the current folder, it will be copied in the current folder.
 </div></div>
