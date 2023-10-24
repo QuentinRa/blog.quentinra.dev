@@ -776,6 +776,52 @@ $ du -sh folder
 
 [<br>]
 
+[**basename** - get the filename]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: get the filename from a path.
+
+**Example** 🔥:
+
+```shell!
+$ basename /etc/passwd
+passwd
+```
+</div></div>
+
+[**dirname** - parent folder]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: get the parent folder of a file.
+
+**Example** 🔥:
+
+```shell!
+$ dirname /etc/passwd
+/etc
+$ dirname /etc
+/
+```
+</div></div>
+
+[**realpath** - resolve path]
+
+<div class="row row-cols-md-2"><div>
+
+**Usage** 🐚: get the absolute path to the given argument. Patterns are evaluated and symoblic links are resolved.
+
+**Example** 🔥:
+
+```shell!
+$ realpath ~
+/home/folder
+```
+</div></div>
+
+[<br>]
+
 [**zip/unzip/...** - zip files]
 
 <div class="row row-cols-md-2"><div>
