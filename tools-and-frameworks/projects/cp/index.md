@@ -5,7 +5,7 @@
 When developing software, there are well-known guidelines, [patterns](../dp/index.md), methodologies and tools that can help boost developers. 🥇
 </div><div>
 
-One of the life-saving methodologies when you have a bug is the [Rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging) method. While you explain the problem to a rubber duck, you might be enlightened and find the solution. 🦆
+One of the life-saving methodologies, when you have a bug, is the [Rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging) method. While you explain the problem to a rubber duck, you might be enlightened and find the solution. 🦆
 </div></div>
 
 <hr class="sep-both">
@@ -25,7 +25,7 @@ A few notables:
 
 A few notables:
 
-* [ChatGPT](https://chat.openai.com/) 🐈: a chatbot that is somewhat like a smarter search engine thought it often provides incorrect <small>(or outdated)</small> results
+* [ChatGPT](https://chat.openai.com/) 🐈: a chatbot that is somewhat like a smarter search engine though it often provides incorrect <small>(or outdated)</small> results
 * [tabnine](https://www.tabnine.com/): TabNine AI coding assistant
 * [Microsoft Copilot](https://adoption.microsoft.com/en-us/copilot/) ⛄: Microsoft AI coding assistant
 * [FauxPilot](https://github.com/fauxpilot/fauxpilot) ☃️: an open-source AI assistant
@@ -84,7 +84,7 @@ Put yourself in the shoes of the maintainer when writing code to ensure that the
 
 #### Don't reinvent the wheel 🛞
 
-Before creating something from scratch, try to look is there is a maintained stable solution that could start from. It reduces the code to maintain and the time it takes to get a working program. 
+Before creating something from scratch, try to find if there is a maintained stable solution that could start from. It reduces the code to maintain and the time it takes to get a working program. 
 
 <br>
 
@@ -125,7 +125,7 @@ if (condition) {            // common syntax - same line
 ```
 </div><div>
 
-To avoid making the code hard to read and to maintain, developers often define formatting rules. There are a lot of **linters** 🫧, at least one per programming language, that can detect and automatically clean-up the code according to the formatting rules defined.
+To avoid making the code hard to read and maintain, developers often define formatting rules. There are a lot of **linters** 🫧, at least one per programming language, that can detect and automatically clean up the code according to the formatting rules defined.
 
 * [ESLint](https://eslint.org/) for JavaScript
 * [pylint](https://pylint.org/) for Python
@@ -156,7 +156,7 @@ Multiple persons are working together on the same computer. One writes code, whi
 
 Make sure to take turns if you are often doing it.
 
-There are many extensions to popular IDEs or text-editors allowing us to do pair-programming on two computers remotely. It's useful as two persons can write the code instead of one.
+There are many extensions to popular IDEs or text editors allowing us to do pair-programming on two computers remotely. It's useful as two persons can write the code instead of one.
 
 * [JetBrains Code With Me](https://www.jetbrains.com/code-with-me/)
 * [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/)
@@ -178,14 +178,14 @@ The model is commonly designed using [UML](/tools-and-frameworks/projects/modeli
 
 The procedure to make a good model:
 
-1. **User-Stories** (US) 🛣️: describe each functionality in a few words.
+1. **User Stories** (US) 🛣️: describe each functionality in a few words.
 2. **Use case diagram** 🪴: create a [Use case diagram](/tools-and-frameworks/projects/modeling/uml/diagrams/use_case/index.md) from US
 3. **Basic class diagram** ✍️: identify the first classes and methods and add them to a [Class diagram](/tools-and-frameworks/projects/modeling/uml/diagrams/class/index.md)
 4. **Sequence Diagram** 🙋‍♂️: for each use case, create a [sequence diagram](/tools-and-frameworks/projects/modeling/uml/diagrams/sequence/index.md). You must use actors, classes, and methods from other diagrams. Complete your diagrams each time you something is missing <small>(method, method arguments etc.)</small>.
 5. **Implementation** 📦: generate the code from the model and improve your model as you work on the implementation.
 
 
-➡️ It may be helpful to create a mock-up of the application first to better identify user-stories.
+➡️ It may be helpful to create a mock-up of the application first to better identify user stories.
 </div><div>
 
 #### Data-Driven Programming 🗃️
