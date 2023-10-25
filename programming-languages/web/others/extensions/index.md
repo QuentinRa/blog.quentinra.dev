@@ -129,7 +129,7 @@ console.log("Hello, World")
 
 ➡️ **Get started**
 
-```bash!
+```shell!
 $ git clone https://github.com/chibat/chrome-extension-typescript-starter.git my-extension
 $ cd .\my-extension\
 $ npm install

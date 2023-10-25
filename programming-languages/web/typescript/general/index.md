@@ -16,14 +16,14 @@
 
 ➡️ Install <small>(don't use -g, be clean)</small>
 
-```bash!
+```shell!
 $ npm install typescript
 $ npx tsc --init # create a tsconfig.json
 ```
 
 ➡️ Compile
 
-```bash!
+```shell!
 $ npx tsc --project tsconfig.json
 $ npx tsc --project tsconfig.json -w # auto-compile
 ```
@@ -235,7 +235,7 @@ If you want to create a library, and use it in another local project, you must a
 
 You can install it inside another project with:
 
-```bash!
+```shell!
 $ npm i ../path/to/your/local/library
 ```
 </div><div>

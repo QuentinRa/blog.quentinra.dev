@@ -21,19 +21,19 @@ ARM assembly is one of the assembly languages used for **RISC processors** <smal
 
 👉 **Assemble**: transform an assembly file `.s` into an object file `.o`
 
-```bash!
+```shell!
 $ as -gstabs -o file.o file.s
 ```
 
 👉 **Link**: link one or more object files into an executable `a.out`
 
-```bash!
+```shell!
 $ ld -O0 file.o
 ```
 
 👉 **Execute**: execute your program
 
-```bash!
+```shell!
 $ ./a.out
 ```
 
@@ -156,7 +156,7 @@ While you can use some functions such as printf <small>(if imported)</small>, mo
 
 Each system call is identified by a code: `exit` (1), `fork` (2),  `read` (3), `write` (4), `open` (5), and `close` (6). You can find them here:
 
-```bash!
+```shell!
 $ less /usr/include/arm-linux-gnueabihf/asm/unistd.h
 ```
 

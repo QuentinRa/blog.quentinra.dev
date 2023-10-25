@@ -11,7 +11,7 @@ First, you have to install the PHP extension.
 
 You may [follow this tutorial](https://www.php.net/manual/en/mongodb.installation.pecl.php) or [the documentation](https://www.mongodb.com/docs/drivers/php/).
 
-```bash!
+```shell!
 $ sudo apt-get update
 $ sudo apt-get install php-dev php-pear
 $ sudo pecl install mongodb # add -version if needed
@@ -20,7 +20,7 @@ $ # sudo pecl uninstall mongodb # if needed
 
 On Debian, **do not** edit `php.ini`.
 
-```bash!
+```shell!
 $ sudo nano /etc/php/x.x/mods-available/mongodb.ini
 extension=mongodb.so
 $ sudo phpenmod mongodb
@@ -53,8 +53,8 @@ You should see mongodb in the extension list shown by `phpinfo()`.
 
 Then, you install it using [composer](/programming-languages/web/php/composer/index.md):
 
-```bash
-composer require mongodb/mongodb
+```shell!
+$ composer require mongodb/mongodb
 ```
 </div><div>
 
