@@ -214,6 +214,30 @@ $ kill -l SIGSTOP
 
 <hr class="sep-both">
 
+## Random Notes
+
+<div class="row row-cols-md-2"><div>
+
+#### Process scheduling
+
+The scheduler job is to to maximize the use of available resources while ensuring that each process receives a fair share of the CPU time.
+
+To the user, it looks like applications are running in parallel, but its pseudo-parallelism. As the scheduler lets each process use the CPU a little bit, they are all running a little, and we won't notice that they are not executed at the same time.
+
+👉 Some scheduling algorithm: round-robin, priority based...
+</div><div>
+
+#### Sessions
+
+Every process is attached to a session identifiable with the **SID** <small>(Session identifier)</small> attribute. Most sessions are attached to a terminal (`/dev/tty`).
+
+Sessions are partitioned into [groups of processes](https://en.wikipedia.org/wiki/Process_group). A signal sent to a group is dispatched to every process of the group.
+
+If a session dies, then the [signal](#signal) SIGHUP is sent to every process.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -226,6 +250,8 @@ Stuff that I found, but never read/used yet.
 * Semaphores
 * Mutexes
 * Condition variables
+
+➡️ Signals are used by processes to communicate. For instance, `CTRL+C` is firing a signal to forcefully kill a foreground process.
 </div><div>
 
 * [_old](_old.md)
