@@ -21,6 +21,38 @@ Processes are stored in `/proc/`, in a folder named after their PID.
 
 <hr class="sep-both">
 
+## Process States
+
+<div class="row row-cols-md-2"><div>
+
+Processes can be in various states, including:
+
+* Running 🛣️: actively executed on the CPU 
+* Sleeping 💤: waiting for an event or a resource <small>(ex: I/O)</small>
+* Stopped 🤖: halted or paused
+* ...
+
+When a process finishes its task, it will terminate itself. We can forcefully terminate a process using the [signal](#signal) `CTRL+C`.
+</div><div>
+
+When a process is terminated, it returns an exit code:
+
+* If the process successfully executed the task ✅: `0`
+* Otherwise, if it failed ❌: `not 0` <small>(usually from 1 to 255)</small>
+
+We can use `$?` to query the exit code of the previous process:
+
+```shell!
+$ /bin/false
+$ echo $?
+1
+$ /bin/true && echo $?
+0
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Process-related commands
 
 ++++++
@@ -197,4 +229,5 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * [_old](_old.md)
+* [multi-tasking in C](/programming-languages/low-level/c/multitasking)
 </div></div>

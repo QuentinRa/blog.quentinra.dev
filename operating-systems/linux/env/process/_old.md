@@ -2,13 +2,8 @@
 
 <div class="row row-cols-md-2"><div>
 
-* a process returns `0` if successful ✅, and `not 0` otherwise ❌.
-* each process has a unique identifier called `pid`
-* a process can be killed using `CTRL+C`
 * use `&` to run a process in the background
 </div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">
@@ -31,16 +26,6 @@ To the user, it looks like applications are running in parallel, but its pseudo-
 
 👉 Some scheduling algorithm: round-robin, priority based...
 </div><div>
-
-#### Process termination
-
-When a process dies, they are returning a code: $0$ is everything went fine ✅, and not $0$, if an error occurred ❌. You can use `$?` to see the exit code of the last process that died.
-
-```shell!
-$ echo $?
-```
-
-<br>
 
 #### Sessions
 
