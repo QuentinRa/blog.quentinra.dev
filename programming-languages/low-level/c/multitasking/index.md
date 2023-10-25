@@ -8,7 +8,7 @@ By default, a program can only do one thing at a time. There are many cases when
 * 🚀 Running multiple tasks in parallel
 * 👉 Using another program to do a task
 
-Multitasking can be done using **Threads** or **Processes**.
+Multitasking can be done using **Processes** or **Threads**.
 </div><div>
 
 There are a few related topics:
@@ -28,8 +28,7 @@ A [process](/operating-systems/linux/env/process/index.md) is both a program and
 
 * file descriptors <small>(file opened, position of the cursor...)</small>
 * variables and environment variables
-* pid <small>(process id, unique)</small>
-* ppid <small>(process id of the parent, -1 if the parent is dead)</small>
+* ...
 
 When executing `./a.out`, the code is executed by the `main` process.
 

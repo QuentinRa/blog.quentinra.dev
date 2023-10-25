@@ -19,7 +19,7 @@ List of courses that have note which were not added yet.
 
 **Operating systems**
 
-* `(review, typos)` Linux
+* `(review, typos)` Linux, Linux Process
 * Networking (+bridges)
 
 **QUID**

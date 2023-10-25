@@ -1689,6 +1689,7 @@ Stuff that I found, but never read/used yet.
 * `mktemp`
 * `ranger`
 * `hexdump`
+* `cloc`, `sloc`
 </div><div>
 
 * `getent` <sup>2</sup>: get an entry such as "passwd": `getent passwd` <small>(get entry)</small> instead of `cat /etc/passwd`

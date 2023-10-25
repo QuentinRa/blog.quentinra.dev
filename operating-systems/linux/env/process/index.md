@@ -32,7 +32,7 @@ Processes can be in various states, including:
 * Stopped 🤖: halted or paused
 * ...
 
-When a process finishes its task, it will terminate itself. We can forcefully terminate a process using the [signal](#signal) `CTRL+C`.
+When a process finishes its task, it will terminate itself. We can forcefully terminate a process using the [signal](#signals) `CTRL+C`.
 </div><div>
 
 When a process is terminated, it returns an exit code:
@@ -248,6 +248,12 @@ The scheduler job is to to maximize the use of available resources while ensurin
 To the user, it looks like applications are running in parallel, but its pseudo-parallelism. As the scheduler lets each process use the CPU a little bit, they are all running a little, and we won't notice that they are not executed at the same time.
 
 👉 Some scheduling algorithm: round-robin, priority based...
+
+<br>
+
+#### Signals
+
+Signals can be used for communication between processes or between a user and a process. The most well-known process is `CTRL+C`. It forcefully terminates a foreground process.
 </div><div>
 
 #### Sessions
@@ -256,5 +262,5 @@ Every process is attached to a session identifiable with the **SID** <small>(Ses
 
 Sessions are partitioned into [groups of processes](https://en.wikipedia.org/wiki/Process_group). A signal sent to a group is dispatched to every process of the group.
 
-If a session dies, then the [signal](#signal) SIGHUP is sent to every process.
+If a session dies, then the [signal](#signals) SIGHUP is sent to every process.
 </div></div>
