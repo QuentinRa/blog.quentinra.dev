@@ -53,6 +53,29 @@ $ /bin/true && echo $?
 
 <hr class="sep-both">
 
+## Foreground and background
+
+[![linuxfundamentalspart1](../../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
+
+<div class="row row-cols-md-2"><div>
+
+A foreground process is a process receiving input from the user, while a background process is running but not receiving input.
+
+They can only be one foreground process at a time inside a [session](#sessions). We use background processes to run long tasks that are not requiring user input. Background processes:
+
+* 😵 can't read and may not be able to write output on the terminal
+* 🔕 aren't receiving signals, except **CTRL-Z** (suspend)
+</div><div>
+
+To run a command in the background, use `&`:
+
+```shell!
+$ sleep 10 &
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Process-related commands
 
 ++++++
@@ -234,26 +257,4 @@ Every process is attached to a session identifiable with the **SID** <small>(Ses
 Sessions are partitioned into [groups of processes](https://en.wikipedia.org/wiki/Process_group). A signal sent to a group is dispatched to every process of the group.
 
 If a session dies, then the [signal](#signal) SIGHUP is sent to every process.
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-* Signals
-* Pipes
-* Sockets
-* Semaphores
-* Mutexes
-* Condition variables
-
-➡️ Signals are used by processes to communicate. For instance, `CTRL+C` is firing a signal to forcefully kill a foreground process.
-</div><div>
-
-* [_old](_old.md)
-* [multi-tasking in C](/programming-languages/low-level/c/multitasking)
 </div></div>
