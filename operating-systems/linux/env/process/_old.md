@@ -2,8 +2,6 @@
 
 <div class="row row-cols-md-2"><div>
 
-Every linux command is a **process**. While you can learn more about [processes here](/operating-systems/linux/env/index.md#processes-and-scheduling) 🤓, some important takeaway are:
-
 * a process returns `0` if successful ✅, and `not 0` otherwise ❌.
 * each process has a unique identifier called `pid`
 * a process can be killed using `CTRL+C`
@@ -17,26 +15,9 @@ Every linux command is a **process**. While you can learn more about [processes 
 
 ## Processes and scheduling
 
-*🚢 This section is further developed in the [Multitasking notes](/programming-languages/low-level/c/multitasking/index.md) in C programming.* <small>(**Signals, pipes, sockets, semaphores, mutexes, condition variables...**)</small>
-
 <div class="row row-cols-md-2"><div>
 
-A process is a box with stuff related to the execution of a program:
-
-* 🔑 a pid <small>(process id, unique)</small>
-* 💍 a ppid <small>(process id of the parent, -1 if the parent is dead)</small>
-* 📄 a code to execute <small>(current instruction, next instruction...)</small>
-* 🪸 an environment <small>(file descriptors, parameters, permissions...)</small>
-* 🧪 some data <small>(variables, environment variables, stack...)</small>
-* ...
-
 When a machine boots up, the kernel process is started, with the pid 0. It starts a **daemon process** called `init` or `systemd` with the pid 1, which is the parent of every process.
-
-👉 A **daemon** is a process that never ends. By convention, their name usually ends with `d`.
-
-👉 Processes are stored in `/proc/`, in a folder named after their PID.
-
-👉 If a parent process dies, their children **won't die**, and will be assigned $-1$ as their PPID.
 
 ➡️ Signals are used by processes to communicate. For instance, `CTRL+C` is firing a signal to forcefully kill a foreground process.
 
@@ -55,7 +36,7 @@ To the user, it looks like applications are running in parallel, but its pseudo-
 
 When a process dies, they are returning a code: $0$ is everything went fine ✅, and not $0$, if an error occurred ❌. You can use `$?` to see the exit code of the last process that died.
 
-```bash!
+```shell!
 $ echo $?
 ```
 
@@ -84,7 +65,7 @@ They can only be one foreground process at a time inside a session. We use backg
 
 To run a command in the background, use `&`:
 
-```ps
+```shell!
 $ sleep 10 &
 ```
 </div></div>

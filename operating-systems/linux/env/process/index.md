@@ -2,10 +2,21 @@
 
 <div class="row row-cols-md-2"><div>
 
-...
+A process represents a running program or application. It includes information about the context of execution:
+
+* 🔑 a pid <small>(process id, unique)</small>
+* 💍 a ppid <small>(process id of the parent, -1 if the parent is dead)</small>
+* 📄 a code to execute <small>(current instruction, next instruction...)</small>
+* 🪸 an environment <small>(file descriptors, parameters, permissions...)</small>
+* 🧪 some data <small>(variables, environment variables, stack...)</small>
+* ...
+
+Processes are stored in `/proc/`, in a folder named after their PID.
 </div><div>
 
-...
+➡️ A **daemon** is a process that never ends. By convention, their name usually ends with `d` such as `systemd`.
+
+➡️ If a parent process dies, their children won't die, and will be assigned $-1$ as their PPID.
 </div></div>
 
 <hr class="sep-both">
@@ -147,9 +158,9 @@ All are sending "SIGTERM" <small>(soft kill, allow cleanup)</small>
 
 ```ps
 $ kill pid
-$ kill 15  pid
-$ kill -s TERM  pid
-$ kill -SIGTERM  pid
+$ kill 15 pid
+$ kill -s TERM pid
+$ kill -SIGTERM pid
 ```
 </div><div>
 
@@ -177,6 +188,13 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [_old](_old.md)
+* Signals
+* Pipes
+* Sockets
+* Semaphores
+* Mutexes
+* Condition variables
 </div><div>
+
+* [_old](_old.md)
 </div></div>
