@@ -15,9 +15,46 @@ default content</textarea>
         integrity="sha256-FFV66UtTp49ryn2U5JZS7IM96dx4/qy+aBAGekRPjao="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
+
+You will then have to configure and run the editor:
+
+```xml!
+<script>
+  const editor = new EasyMDE({
+    autofocus: true,
+    element: document.getElementById("editor"),
+    lineWrapping: true,
+    height: "700px",
+    maxHeight: "700px"
+  });
+  editor.toggleSideBySide();
+</script>
+```
 </div><div>
 
-...
+```xml!
+<script>
+  const editor = new EasyMDE({
+    insertTexts: {
+      // text shown when clicking on the "table" icon
+      table: ["", "\n\n| Column 1 | Column 2 | Column 3 |\n| -------- | -------- | -------- |\n| Text     | Text      | Text     |\n\n"],
+    },
+    shortcuts: { drawTable: "Cmd-Alt-T" },
+    showIcons: ["code", "table", "horizontal-rule"],
+    toolbar: [
+      // list all icons you want
+      'bold', 'italic', 'heading',
+      // custom icon
+      'side-by-side', {
+        name: "guide",
+        action: "http://example.com",
+        className: "fa fa-question-circle",
+        title: "SomeTitle",
+      },
+    ]
+  });
+</script>
+```
 </div></div>
 
 <hr class="sep-both">
@@ -26,7 +63,7 @@ default content</textarea>
 
 <div class="row row-cols-md-2"><div>
 
-Adding Math support can be somewhat complicated.
+Adding Math support can be somewhat complicated. You can use MathJax for rendering and KaTex for parsing.
 
 ```xml!
 <script>
@@ -48,6 +85,19 @@ Adding Math support can be somewhat complicated.
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css" integrity="sha512-nii0D5CrWiLjtPcfU3pQJifaRLxKKVut/hbsazsodCcIOERZbwLH7dQxzOKy3Ey/Fv8fXCA9+Rf+wQzqklbEJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.js" integrity="sha512-DAZH0Wu7q9Hnm0Fw8tRZsTeQBzIugiUy6k2r7E0KKMlC2nBvvrNSH/LVnGueCXRfDs5epP+Ieoh3L+VzSKi0Aw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+```
+
+Use the following code to use the custom renderer:
+
+```xml!
+<script>
+  const editor = new EasyMDE({
+    // custom parser
+    previewRender: function(plainText) {
+      return marked(plainText); // Returns HTML from a custom parser
+    },
+  });
+</script>
 ```
 </div><div>
 
@@ -100,6 +150,8 @@ Adding Math support can be somewhat complicated.
       }
     }
   });
+  
+  // ...
 </script>
 ```
 </div></div>
@@ -110,7 +162,7 @@ Adding Math support can be somewhat complicated.
 
 <div class="row row-cols-md-2"><div>
 
-XXX
+This is an example of using highlight.js to highlight code.
 
 ```xml!
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/materia.min.css" integrity="sha512-OekoFypwczt07fw6kJhvvRo4rbmyK/o6fh4NTw7tKeSPO9SXRZH+2sln1h51KPj0zSBA6/WUiW/eJog2YVn9lA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -121,6 +173,8 @@ XXX
 
 ```xml!
 <script>
+  // ...
+
   marked.setOptions({
     highlight: function (code, language) {
       if (language && hljs.getLanguage(language)) {
@@ -130,54 +184,23 @@ XXX
       }
     }
   });
+  
+  // ...
 </script>
 ```
 </div></div>
 
 <hr class="sep-both">
 
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
+## Random Notes
 
 <div class="row row-cols-md-2"><div>
 
-#### Markdown
+#### Keystrokes
 
-<details class="details-e">
-<summary>Using EasyMde with a custom highlighter and Mathjax</summary>
+You can keep track of keystrokes using this:
 
-This code is **old**, and **need to be completely rewritten**.
-
-```html
-<script>
-  function createLocalURL(URL) {
-    return URL;
-  }
-
-  const editor = new EasyMDE({
-    autofocus: true,
-    element: document.getElementById("editor"),
-    forceSync: true,
-    indentWithTabs: true,
-    insertTexts: {
-      horizontalRule: ["", "\n\n-----\n\n"],
-      image: ["![](<?=$folder?>", ")"],
-      link: ["[", "](<?=$folder?>)",")"],
-      table: ["", "\n\n| Column 1 | Column 2 | Column 3 |\n| -------- | -------- | -------- |\n| Text     | Text      | Text     |\n\n"],
-    },
-    lineWrapping: true,
-    height: "700px",
-    maxHeight: "700px",
-    parsingConfig: {
-      allowAtxHeaderWithoutSpace: false,
-      strikethrough: false,
-      underscoresBreakWords: true,
-    },
-    placeholder: "Type here...",
-    shortcuts: { drawTable: "Cmd-Alt-T" },
-    showIcons: ["code", "table", "horizontal-rule"],
-    spellChecker: true,
+```js!
     status: ["autosave", "lines", "words", "cursor", {
       className: "keystrokes",
       defaultValue: function(el) {
@@ -187,33 +210,7 @@ This code is **old**, and **need to be completely rewritten**.
       onUpdate: function(el) {
         el.innerHTML = ++this.keystrokes + " Keystrokes";
       },
-    }], // Another optional usage, with a custom status bar item that counts keystrokes
-    styleSelectedText: true,
-    sideBySideFullscreen: false,
-    syncSideBySidePreviewScroll: true,
-    tabSize: 4,
-    toolbar: [
-      'bold', 'italic', 'heading',
-      '|',
-      'code', 'quote', 'unordered-list', 'ordered-list',
-      '|',
-      'link', 'image', 'table', 'horizontal-rule',
-      '|',
-      'side-by-side', {
-        name: "guide",
-        action: "<?=site_url("syntax")?>",
-        className: "fa fa-question-circle",
-        title: "Syntax",
-      }, 'undo', 'redo',
-    ],
-    toolbarTips: true,
-    previewRender: function(plainText) {
-      return marked(plainText); // Returns HTML from a custom parser
-    },
-  });
-  editor.toggleSideBySide();
-</script>
+    }],
 ```
-</details>
 </div><div>
 </div></div>
