@@ -25,6 +25,7 @@ Note that you can use HTML inside Markdown files 💫.
 * [madoko](https://www.madoko.net/editor.html) (👻, web)
 * [zettlr](https://www.zettlr.com/)  (👻, desktop)
 * [obsidian](https://obsidian.md/)
+* [EasyMDE](easymde/index.md) <small>(JavaScript Editor)</small>
 </div></div>
 
 <hr class="sep-both">

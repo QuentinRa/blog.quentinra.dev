@@ -6,7 +6,7 @@ List of courses that have note which were not added yet.
 
 **Programming Languages**
 
-* `(review, typos)` web (general, highlight.js), API, Java/Gradle (JAR)
+* `(review, typos)` web (general, highlight.js), API, Java/Gradle (JAR), EasyMDE
 * SEO
 * LIBS
 
