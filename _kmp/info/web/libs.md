@@ -2,25 +2,6 @@
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-Special: [emberjs](https://github.com/emberjs) (many solutions).
-</div><div>
-
-#### End-to-End testing
-
-* [browserstack](https://www.browserstack.com/) (run playwright, cypress...)
-* [playwright](https://github.com/microsoft/playwright) (46k ⭐)
-* [nightwatch](https://github.com/nightwatchjs/nightwatch) (11.3k ⭐)
-* [puppeteer](https://github.com/puppeteer/puppeteer) (81.3k ⭐)
-* [cypress](https://github.com/cypress-io/cypress) (42.1k ⭐)
-
-</div></div>
-
-<hr class="sep-both">
-
-## 🚀 Client-side 🚀
-
-<div class="row row-cols-md-2 mt-4"><div>
-
 #### Tools
 
 * [vite](https://vitejs.dev/) (50.9k ⭐, +vitest)
