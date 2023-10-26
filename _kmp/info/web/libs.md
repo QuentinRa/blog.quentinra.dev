@@ -3,10 +3,6 @@
 <div class="row row-cols-md-2 mt-4"><div>
 
 Special: [emberjs](https://github.com/emberjs) (many solutions).
-
-#### HTTP clients
-
-* [axios](https://axios-http.com/) (97.9k ⭐, alternative to fetch)
 </div><div>
 
 #### End-to-End testing
