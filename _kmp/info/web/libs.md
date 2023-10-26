@@ -13,12 +13,6 @@ Special: [emberjs](https://github.com/emberjs) (many solutions).
 * [axios](https://axios-http.com/) (97.9k ⭐, alternative to fetch)
 </div><div>
 
-#### Testing
-
-**Note**: assert/chai/should/expect/unexpect are in mocha's notes.
-
-* [Karma](https://github.com/karma-runner) (testing runner)
-
 #### End-to-End testing
 
 * [browserstack](https://www.browserstack.com/) (run playwright, cypress...)
@@ -35,22 +29,6 @@ Special: [emberjs](https://github.com/emberjs) (many solutions).
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-#### Frameworks
-
-* [Riot.js](https://github.com/riot/riot) (15k ⭐)
-* [lit](https://github.com/lit/lit) (13.4k ⭐)
-* [Ionic](https://github.com/ionic-team/ionic-framework) (49k ⭐)
-* [Angular](https://github.com/angular/angular) (86k ⭐)
-* [gatsby](https://github.com/gatsbyjs/gatsby) (54k ⭐)
-* [weex](https://github.com/alibaba/weex) (18k ⭐)
-* [foundation](https://github.com/foundation/foundation-sites) (29.4k ⭐)
-* [OnsenUI](https://github.com/OnsenUI/OnsenUI) (8.7k ⭐)
-
-Random
-
-* [Mosaic](https://github.com/Authman2/Mosaic) (0.4k ⭐)
-</div><div>
-
 #### Tools
 
 * [vite](https://vitejs.dev/) (50.9k ⭐, +vitest)
@@ -59,6 +37,7 @@ Random
 * [parcel.js](https://github.com/parcel-bundler/parcel) (41.8k ⭐)
 * [yeoman](https://github.com/yeoman/yeoman) (9.5k ⭐)
 * [monaca](https://monaca.io/)
+</div><div>
 
 #### Bundles
 
@@ -75,10 +54,6 @@ Random
 
 <hr class="sep-both">
 
-<p class="text-center display-5">🔎 Unsorted libraries 🔎</p>
-
-<hr class="sep-both">
-
 ## 🗃️ Random 🗃 ️
 
 <div class="row row-cols-md-2 mt-4"><div>
@@ -90,7 +65,6 @@ Validation
 Dates
 
 * [moment.js](https://github.com/moment/moment/) (47.1k ⭐)
-* [humanize](https://www.npmjs.com/package/humanize) (0.3k ⭐, dead)
 </div><div>
 
 Localization

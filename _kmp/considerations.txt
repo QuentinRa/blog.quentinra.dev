@@ -1,3 +1,0 @@
-Register
-=> check username not already in use
-=> ensure min size for username/password

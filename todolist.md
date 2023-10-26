@@ -13,13 +13,13 @@ List of courses that have note which were not added yet.
 **Tools and Frameworks**
 
 * `(review, typos)` Pandora, JetBrains plugin development, HMI
-* `(current)` **CMake**, **GitLab CI**
+* `(current)` **GitLab CI**
 * Project + Tools
 </div><div>
 
 **Operating systems**
 
-* `(review, typos)` Linux, Linux Process
+* `(review, typos)` Linux + Processes + Expect
 * Networking (+bridges)
 
 **QUID**

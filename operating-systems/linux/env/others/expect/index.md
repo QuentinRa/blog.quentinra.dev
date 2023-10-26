@@ -60,8 +60,8 @@ send -- "username\r"
 You can define variables using `set`:
 
 ```tcl
-set varname varvalue   # define
-spawn echo "$varname"  # usage
+set varname varvalue
+spawn echo "$varname"
 ```
 
 #### Multiple processes
