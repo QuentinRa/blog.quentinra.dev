@@ -44,6 +44,45 @@ code: |+
 
 <hr class="sep-both">
 
+## Read YAML files in Node.js
+
+<div class="row row-cols-md-2"><div>
+
+#### js-yaml
+
+[js-yaml](https://www.npmjs.com/package/js-yaml) (6.1k ⭐) is frequently updated.
+
+```js!
+const yaml = require('js-yaml');
+const fs   = require('fs');
+
+const xxx = yaml.load(fs.readFileSync('test.yaml', 'utf8'));
+console.log(xxx);
+```
+
+In TypeScript, you may use the following import:
+
+```ts!
+// @ts-ignore
+import { load } from 'js-yaml';
+```
+</div><div>
+
+#### yamljs
+
+[yamljs](https://www.npmjs.com/package/yamljs) (0.9k ⭐) was not updated for years.
+
+```js!
+const YAML = require('yamljs');
+const fs   = require('fs');
+
+const xxx = YAML.parse(fs.readFileSync('test.yaml', 'utf8'));
+console.log(xxx)
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

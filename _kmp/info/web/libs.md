@@ -4,10 +4,6 @@
 
 Special: [emberjs](https://github.com/emberjs) (many solutions).
 
-#### Package Managers
-
-* [lerna](https://lerna.js.org/) (34.1k ⭐)
-
 #### HTTP clients
 
 * [axios](https://axios-http.com/) (97.9k ⭐, alternative to fetch)
@@ -71,45 +67,6 @@ Localization
 
 * [localizejs](https://localizejs.com/)
 * [tesseract](https://github.com/naptha/tesseract.js) (OCR)
-</div></div>
-
-<hr class="sep-both">
-
-## Read YAML files in Node
-
-<div class="row row-cols-md-2"><div>
-
-#### js-yaml
-
-[js-yaml](https://www.npmjs.com/package/js-yaml) (5.8k ⭐) is frequently updated.
-
-```javascript
-const yaml = require('js-yaml');
-const fs   = require('fs');
-
-const xxx = yaml.load(fs.readFileSync('test.yaml', 'utf8'));
-console.log(xxx);
-```
-
-In TypeScript, use
-
-```typescript
-// @ts-ignore
-import { load } from 'js-yaml';
-```
-</div><div>
-
-#### yamljs
-
-[yamljs](https://www.npmjs.com/package/yamljs) (0.9k ⭐) was not updated for years.
-
-```javascript
-const YAML = require('yamljs');
-const fs   = require('fs');
-
-const xxx = YAML.parse(fs.readFileSync('test.yaml', 'utf8'));
-console.log(xxx)
-```
 </div></div>
 
 <hr class="sep-both">
