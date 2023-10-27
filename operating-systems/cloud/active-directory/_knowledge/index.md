@@ -1,6 +1,6 @@
 # Active Directory (AD)
 
-[![principlesofsecurity](../../../cybersecurity/_badges/thm/winadbasics.svg)](https://tryhackme.com/room/principlesofsecurity)
+[![principlesofsecurity](../../../../cybersecurity/_badges/thm/winadbasics.svg)](https://tryhackme.com/room/principlesofsecurity)
 
 <div class="row row-cols-md-2 mt-4"><div>
 

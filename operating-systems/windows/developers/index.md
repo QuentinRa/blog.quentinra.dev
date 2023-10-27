@@ -6,8 +6,8 @@ Windows is commonly used by developers 🍃. While it is less convenient than Li
 
 * [WSL](#windows-subsystem-for-linux-wsl) is commonly used to get a Linux console environment
 * [Cygwin](#cygwin) or mingw are commonly used to get a Linux console environment or to get `.exe` versions of Linux commands.
-* [VSCode](/tools-and-frameworks/editors/vscode/index.md) or [JetBrains](/tools-and-frameworks/editors/jetbrains/_general/index.md) are commonly used as editors to write code
-* [WAMP](/operating-systems/webservers/apache/wamp.md) is often used to emulate a web server for web development
+* [VSCode](/tools-and-frameworks/editors/gui/vscode/index.md) or [JetBrains](/tools-and-frameworks/editors/gui/jetbrains/_general/index.md) are commonly used as editors to write code
+* [WAMP](/operating-systems/cloud/webservers/apache/wamp.md) is often used to emulate a web server for web development
 * [Virtual Box](/operating-systems/others/virtualization/virtualbox/index.md) or [VMWare](/operating-systems/others/virtualization/vmware/index.md) are often used to emulate Linux
 * ...
 </div><div>

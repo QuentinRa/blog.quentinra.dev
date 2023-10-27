@@ -1,4 +1,4 @@
-# Basics
+# Command Basics
 
 <div class="row row-cols-md-2"><div>
 
@@ -48,7 +48,7 @@ $ ls '/Documents/my bookmarks/' # ✅
 $ ls /Documents/my\ bookmarks/ # ✅
 ```
 
-👉 The main difference between single and double quote is that in the former, variable are NOT interpreted. Refer to the [scripts section](/operating-systems/linux/scripts/index.md).
+👉 The main difference between single and double quote is that in the former, variable are NOT interpreted. Refer to the [scripts section](/operating-systems/linux/shells/scripts/index.md).
 
 <details class="details-n">
 <summary><code>expr</code>: substring, indexOf...</summary>

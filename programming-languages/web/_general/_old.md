@@ -32,7 +32,7 @@ Possible path resolved: /var/www/file.html
 
 To develop simple HTML websites, you don't need anything, you can use the `file://` protocol <small>(drag and drop the HTML in your browser)</small>.
 
-For more complex apps <small>(PHP, HTTPS...)</small>, you must install a web server such as [Apache](/operating-systems/webservers/apache/index.md), Nginx, Node, IIS...
+For more complex apps <small>(PHP, HTTPS...)</small>, you must install a web server such as [Apache](/operating-systems/cloud/webservers/apache/index.md), Nginx, Node, IIS...
 
 ➡️ To upload files to a remote server, use secure variants of the [FTP](/operating-systems/networking/protocols/ftp.md) protocol such as [SCP](/operating-systems/networking/protocols/scp.md) or SFTP.
 

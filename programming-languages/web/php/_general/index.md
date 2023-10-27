@@ -17,7 +17,7 @@ PHP <small>(PHP Hypertext preprocessor, a recursive acronym)</small> is still a 
 
 </div><div>
 
-To install PHP, you will need a web server such as [Apache](/operating-systems/webservers/apache/index.md). ➡️ Well-known versions of PHP are: `5.6`, `7.*`, and `8` <small>(latest, since 2020)</small>.
+To install PHP, you will need a web server such as [Apache](/operating-systems/cloud/webservers/apache/index.md). ➡️ Well-known versions of PHP are: `5.6`, `7.*`, and `8` <small>(latest, since 2020)</small>.
 
 Additionally, you may install extensions later:
 
