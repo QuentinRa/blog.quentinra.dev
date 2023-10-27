@@ -1,6 +1,14 @@
-# ✏️ Canva  ✏️ 
+# Canva
 
-A bunch of hacky solutions just in case someone wonders how you could achieve these using JavaScript.
+<div class="row row-cols-md-2"><div>
+
+Canva is a popular website to create multiple documents such as slides, resumes, simple text documents etc. ✏️
+
+This page mostly contains some hacky solutions in JavaScript to automate painful and tiring tasks.
+
+⚠️ Use at your own risk. Written for developers.
+</div><div>
+</div></div>
 
 <hr class="sep-both">
 
@@ -22,7 +30,7 @@ This JavaScript code is selecting all images that you have on Canva.
 * Step 3: find a way to get the checkbox for one image
 * Step 4: click on every checkbox
 
-The script can be modified, for instance to only select some images based on their name...
+The script can be modified, for instance, to only select some images based on their name...
 </div><div>
 
 ```javascript
@@ -61,7 +69,7 @@ scrollToTheBottomOfElement(document.querySelector('main > div > div'))
 
 ### Canva: remove paid templates
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-md-2 mt-4"><div>
 
 ```javascript!
 setInterval(() => {
@@ -76,6 +84,7 @@ This script will remove from the currently displayed entries:
 * templates with the "paid" icon
 * templates with the "premium" icon
 
+Called every 2 seconds <small>(e.g. continue to delete as you scroll)</small>.
 </div></div>
 
 <hr class="sep-both">
