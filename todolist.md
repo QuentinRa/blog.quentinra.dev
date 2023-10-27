@@ -427,5 +427,9 @@ https://beginnersbook.com/
 https://github.com/storybookjs/storybook (js)
 
 xxx.adoc
+
+https://github.com/mikeerickson/validatorjs
+https://localizejs.com/
+https://github.com/naptha/tesseract.js
 ```
 </div></div>

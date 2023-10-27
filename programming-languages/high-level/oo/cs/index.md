@@ -13,7 +13,7 @@ It's used by [Microsoft .NET framework](https://dotnet.microsoft.com/en-us/downl
 * [LearnCS](https://www.learncs.org/) (👻)
 </div><div>
 
-You can either download and use [VSCode](/tools-and-frameworks/editors/vscode/index.md), or use another IDE such as [Rider](/tools-and-frameworks/editors/jetbrains/rider/index.md). You may use neither and use [dotnet](https://dotnet.microsoft.com/en-us/download/dotnet) from the command line.
+You can either download and use [VSCode](/tools-and-frameworks/editors/gui/vscode/index.md), or use another IDE such as [Rider](/tools-and-frameworks/editors/gui/jetbrains/rider/index.md). You may use neither and use [dotnet](https://dotnet.microsoft.com/en-us/download/dotnet) from the command line.
 
 ```shell!
 PS> mkdir project && cd project

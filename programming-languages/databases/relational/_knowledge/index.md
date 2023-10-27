@@ -23,7 +23,7 @@ Relational databases are managed by a **Database Management System** (DBMS) or R
 * 🐭 Microsoft SQL  Server (MSSQL)
 * ...
 
-➡️ You may try a few of them online at [sqliteonline](https://sqliteonline.com/). When installing a [WAMP Server](/operating-systems/webservers/apache/wamp.md), you will install a database (MariaDB or MySQL).
+➡️ You may try a few of them online at [sqliteonline](https://sqliteonline.com/). When installing a [WAMP Server](/operating-systems/cloud/webservers/apache/wamp.md), you will install a database (MariaDB or MySQL).
 </div></div>
 
 <hr class="sep-both">

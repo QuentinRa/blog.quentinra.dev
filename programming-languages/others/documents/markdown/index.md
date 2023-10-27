@@ -405,5 +405,7 @@ Stuff that I found, but never read/used yet.
 * [JetBrains](https://www.jetbrains.com/help/hub/Markdown-Syntax.html#quick-notes-markdown-headings)
 * [markdown-here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [commonmark](https://github.com/commonmark/commonmark-java) (Markdown to Java)
+* [remark](https://github.com/remarkjs/remark)
+* [unified](https://github.com/unifiedjs/unified)
 </div><div>
 </div></div>
