@@ -21,7 +21,7 @@ If a client tries to access a protected resource, they are redirected to the aut
 
 I will download the PHP CAS client in a folder `../cas` without composer, because I couldn't install `composer` (not allowed).
 
-```bash!
+```ps
 $ mkdir ../cas
 $ git clone https://github.com/apereo/phpCAS ../cas
 ```
