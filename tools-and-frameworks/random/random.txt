@@ -1,37 +1,4 @@
---- IA
-
-https://www.askcorpora.com/
-https://gptzero.me/
-
---- Translation
-
-https://www.microsofttranslator.com/bv.aspx?from=&to=en&a=a
-
---- Software
-
-https://paperform.co/
-https://codespace.app/
-
-Elisa music player
-C:\Users\xxx\AppData\Local\Elisa\cache\qmlcache
-https://www.reddit.com/r/kde/comments/scjtku/windows_okukar_how_to_apply_breeze_dark_theme_i/?rdt=53122
-https://www.voidtools.com/
-
---- fancy
-
-https://volt.fm
 something+opt@anything
-
---- Social
-
-https://libera.chat/
-https://kiwiirc.com/
-https://livestorm.co/
-https://calendly.com/
-
-https://www.panopto.com/
-
---- XC
 
 https://libgen.is/search.php?req=kali+linux&lg_topic=libgen&open=0&view=simple&res=25&phrase=1&column=def
 https://rigorousthemes.com/blog/best-z-library-alternatives/

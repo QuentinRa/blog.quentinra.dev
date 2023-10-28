@@ -201,6 +201,7 @@ Stuff that I found, but never read/used yet.
 * [vcxsrv](https://sourceforge.net/projects/vcxsrv/)
 * [chocolatey](https://chocolatey.org/)
 * [autohotkey](https://www.autohotkey.com/)
+* [voidtools](https://www.voidtools.com/)
 </div><div>
 
 ```ps

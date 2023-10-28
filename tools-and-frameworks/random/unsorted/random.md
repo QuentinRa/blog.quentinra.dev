@@ -39,6 +39,7 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 * [AdobeConnect](https://www.adobe.com/products/adobeconnect.html)
 * [Teams](https://www.microsoft.com/en-us/microsoft-teams/log-in)
 * [jitsi](https://meet.jit.si/) (😍)
+* [livestorm](https://livestorm.co/) (👻)
 
 ##### Notes
 
@@ -77,6 +78,8 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 * [goodfirms.co](https://www.goodfirms.co/) (👻, review/promote tools?)
 * [confluent.io](https://www.confluent.io/) (👻)
 * [sentry.io](https://sentry.io/welcome/) (👻)
+* [calendly](https://calendly.com/) (👻)
+* [paperform](https://paperform.co/) (👻)
 </div></div>
 
 <hr class="sep-both">
@@ -97,4 +100,30 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 ##### Graphs
 
 * [webgraphviz](http://webgraphviz.com/) (with [GraphViz Pocket Reference](https://graphs.grevian.org/example))
+</div></div>
+
+<hr class="sep-both">
+
+## Others
+
+<div class="row row-cols-md-2"><div>
+
+##### AI
+
+* [scrol.ai](https://www.scrol.ai/)
+* [gptzero](https://gptzero.me/)
+
+##### Chat
+
+* [libera](https://libera.chat/)
+* [kiwiirc](https://kiwiirc.com/)
+</div><div>
+
+##### Translators
+
+* [microsofttranslator](https://www.microsofttranslator.com/bv.aspx?from=&to=en&a=a)
+
+##### Stats
+
+* [volt.fm](https://volt.fm/)
 </div></div>

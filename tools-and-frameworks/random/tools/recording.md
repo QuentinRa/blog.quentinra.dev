@@ -28,4 +28,5 @@
 * [loom](https://www.loom.com/) <small>(free with an account, record yourself with your slides)</small>
 * [wyzowl](https://www.wyzowl.com/) (👻)
 * [yopbox](https://www.yopbox.com/) (👻)
+* [panopto](https://www.panopto.com/) (👻)
 </div></div>
