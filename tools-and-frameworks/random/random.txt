@@ -1,15 +1,3 @@
---- Images
-
-motion leap
-MidJourney
-https://github.com/flameshot-org/flameshot + https://flameshot.org/
-
-https://internxt.com/
-
---- Record
-
-https://github.com/phw/peek
-
 --- IA
 
 https://www.askcorpora.com/
@@ -32,13 +20,6 @@ https://www.voidtools.com/
 --- fancy
 
 https://volt.fm
-
---- extensions
-
-https://github.com/dessant/buster
-
---- ???
-
 something+opt@anything
 
 --- Social

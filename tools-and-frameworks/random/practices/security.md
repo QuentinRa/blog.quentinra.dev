@@ -49,6 +49,7 @@
 * [adblock](https://adblockplus.org/): block most ads/trackers
 * [uBlock Origin](https://ublockorigin.com/): block most ads/trackers, can disable JavaScript...
 * [noscript](https://noscript.net/): disable JavaScript
+* [buster](https://github.com/dessant/buster): captcha solver
 
 <br>
 

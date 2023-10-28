@@ -128,4 +128,6 @@ Stuff that I found, but never read/used yet.
 * [photofeeler](https://www.photofeeler.com/)
 * [pfpmaker](https://pfpmaker.com/)
 * [icons8](https://icons8.com/)
+* motion leap
+* MidJourney
 </div></div>

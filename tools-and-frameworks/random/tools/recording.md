@@ -15,9 +15,15 @@
 * [split-video](https://split-video.com/) <small>(split a video online)</small>
 </div><div>
 
+##### Screenshots
+
+* [flameshot](https://github.com/flameshot-org/flameshot)
+* [LightShot](https://app.prntscr.com/en/index.html)
+
 ##### Special
 
 * [ScreenToGif](https://www.screentogif.com/) <small>(free, create a GIF, WindowsStore, [GitHub](https://github.com/NickeManarin/ScreenToGif))</small>
+* [peek](https://github.com/phw/peek)
 * [TTYGIF](https://github.com/icholy/ttygif) or [asciinema](https://asciinema.org/) <small>(record a terminal)</small>
 * [loom](https://www.loom.com/) <small>(free with an account, record yourself with your slides)</small>
 * [wyzowl](https://www.wyzowl.com/) (👻)
