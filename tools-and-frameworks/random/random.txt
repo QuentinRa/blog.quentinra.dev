@@ -1,7 +1,3 @@
---- Browsers
-
-Firefox search shortcuts (*, %, ^...)
-
 --- Games
 
 https://www.autohotkey.com/
@@ -15,17 +11,9 @@ Key.A = Keyboard.Q
 https://completionist.me/
 https://steamhunters.com/profiles
 https://astats.astats.nl/astats/
-
 https://github.com/JustArchiNET/ArchiSteamFarm
 https://github.com/gibbed/SteamAchievementManager
-
 https://gamequitters.com/
-https://gamesbolt.com/
-https://www.humblebundle.com/
-
-https://www.indiegamebundles.com/
-https://www.fanatical.com/en/
-https://www.eneba.com/store/steam-games?drms[]=steam&page=2&rangeTo=10&regions[]=europe&regions[]=global&types[]=game
 
 --- Images
 
@@ -78,10 +66,6 @@ https://livestorm.co/
 https://calendly.com/
 
 https://www.panopto.com/
-
---- Ecology
-
-https://app.electricitymaps.com/map
 
 --- XC
 
