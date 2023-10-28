@@ -30,4 +30,9 @@
 ##### Music
 
 * [fl-studio](https://www.image-line.com/fl-studio/) (👻)
+
+##### Editors
+
+* [ephtracy](https://ephtracy.github.io/) (voxel art editor)
+* [boundingboxsoftware](https://boundingboxsoftware.com/materialize/) (image to material)
 </div></div>

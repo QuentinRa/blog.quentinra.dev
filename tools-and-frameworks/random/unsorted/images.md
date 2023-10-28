@@ -94,10 +94,6 @@ You can use the shortcut <kbd>Win + ;</kbd> to open a menu to pick emojis like o
 
 <div class="row row-cols-md-2"><div>
 
-##### Editors
-
-* [ephtracy](https://ephtracy.github.io/) (voxel art editor)
-* [boundingboxsoftware](https://boundingboxsoftware.com/materialize/) (image to material)
 </div><div>
 
 ##### Text to image

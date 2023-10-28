@@ -3,6 +3,10 @@
 <div class="row row-cols-md-2"><div>
 
 [Discord](https://discord.com/) is a popular voice and text messaging application.
+
+<p class="text-center mt-5">
+<img src="/courses/tools-and-frameworks/random/websites/_images/discord.png" width="300"/>
+</p>
 </div><div>
 
 Discord utilities

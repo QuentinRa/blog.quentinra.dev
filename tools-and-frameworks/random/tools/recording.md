@@ -1,4 +1,4 @@
-# 🎥 Desktop recording 🎥
+# 🎥 Screen Recording 🎥
 
 <div class="row row-cols-md-2 mt-4"><div>
 
@@ -18,7 +18,7 @@
 ##### Special
 
 * [ScreenToGif](https://www.screentogif.com/) <small>(free, create a GIF, WindowsStore, [GitHub](https://github.com/NickeManarin/ScreenToGif))</small>
-* [TTYGIF](https://github.com/icholy/ttygif) <small>(record a terminal)</small>
+* [TTYGIF](https://github.com/icholy/ttygif) or [asciinema](https://asciinema.org/) <small>(record a terminal)</small>
 * [loom](https://www.loom.com/) <small>(free with an account, record yourself with your slides)</small>
 * [wyzowl](https://www.wyzowl.com/) (👻)
 * [yopbox](https://www.yopbox.com/) (👻)
