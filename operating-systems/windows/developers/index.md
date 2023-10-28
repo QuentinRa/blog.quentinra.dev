@@ -200,6 +200,7 @@ Stuff that I found, but never read/used yet.
 * [Pengwin](https://github.com/WhitewaterFoundry/Pengwin) <small>(wlinux)</small>
 * [vcxsrv](https://sourceforge.net/projects/vcxsrv/)
 * [chocolatey](https://chocolatey.org/)
+* [autohotkey](https://www.autohotkey.com/)
 </div><div>
 
 ```ps
