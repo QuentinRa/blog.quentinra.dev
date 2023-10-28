@@ -117,6 +117,15 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 * [libera](https://libera.chat/)
 * [kiwiirc](https://kiwiirc.com/)
+
+##### Books
+
+* [theses](https://theses.fr/)
+* [figshare](https://figshare.com/)
+* [zenodo](https://zenodo.org/)
+* [sci-hub](https://www.sci-hub.st/)
+* zlib
+* libgen
 </div><div>
 
 ##### Translators
