@@ -1,6 +1,6 @@
 # Nano
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Nano is the easiest command-line text editor to learn 🐉.
 

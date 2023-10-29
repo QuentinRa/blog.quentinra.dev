@@ -1,6 +1,6 @@
 # IntelliJ Platform Plugin SDK
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 These notes are an additional support to the documentation. More of my notes are from my plugin ([intellij-ocaml](https://github.com/QuentinRa/intellij-ocaml)).
 
@@ -17,7 +17,7 @@ The best way to learn is to see how others implemented the API <small>("extensio
 
 ## Important files
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Resources/META-INF/plugin.xml
 
@@ -95,7 +95,7 @@ sourceSets {
 
 ## Important classes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Icons
 
@@ -156,7 +156,7 @@ object XXXBundle : DynamicBundle(BUNDLE) {
 
 👉 This basically summarize every step of me adding support for OCAML in IntelliJ 👈
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Support a new type of file | [Official Tutorial](https://plugins.jetbrains.com/docs/intellij/language-and-filetype.html)
 
@@ -220,7 +220,7 @@ object OCamlLanguage : Language("OCaml") {
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [Gradle IntelliJ Plugin](https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html) + [IntelliJ Platform Configuration](https://plugins.jetbrains.com/docs/intellij/configuring-plugin-project.html#intellij-platform-configuration)
 * [Using kotlin](https://plugins.jetbrains.com/docs/intellij/using-kotlin.html)

@@ -1,6 +1,6 @@
 # PHPStorm
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [PHPStorm](https://www.jetbrains.com/phpstorm/) is a **back-end** IDE <small>(PHP, PHP frameworks, Node.js, Databases, Composer)</small> powered by JetBrains exclusively available in a **paid** version.
 
@@ -24,7 +24,7 @@
 
 ## Product-specific features
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Remote development
 

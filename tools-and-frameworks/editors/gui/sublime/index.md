@@ -1,6 +1,6 @@
 # Sublime Text
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Sublime Text](https://www.sublimetext.com) is a well-known graphical text editor 🦄.
 

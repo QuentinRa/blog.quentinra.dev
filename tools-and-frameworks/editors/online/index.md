@@ -1,6 +1,6 @@
 # Online IDEs 🌍
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 While it's not a good practice in the long term, there are many online development environments to write and run some code.
 
@@ -27,7 +27,7 @@ For web applications, there are a ton of editors:
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [ace](https://ace.c9.io/)
 </div><div>

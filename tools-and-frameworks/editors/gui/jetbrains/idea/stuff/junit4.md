@@ -1,6 +1,6 @@
 # Junit4 in IntelliJ IDEA
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You'll add to [add the following libraries from maven](../index.md#add-libraries):
 

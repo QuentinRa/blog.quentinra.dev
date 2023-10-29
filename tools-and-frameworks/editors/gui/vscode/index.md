@@ -1,6 +1,6 @@
 # Visual Studio Code
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Visual Studio Code](https://code.visualstudio.com/) <small>(a.k.a. VSCode, VSC)</small> is a free 💸 **text-editor** which can become as powerful as an IDE by adding extensions to it 🌟.
 

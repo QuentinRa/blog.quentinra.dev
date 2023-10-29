@@ -1,6 +1,6 @@
 # IntelliJ IDEA
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) is a **Java** <small>(Maven, Gradle, JavaFX, Junit)</small> and **Kotlin** IDE powered by JetBrains in a **free** and a **paid** version.
 
@@ -24,7 +24,7 @@
 
 ## Product-specific features
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Java JDKs
 

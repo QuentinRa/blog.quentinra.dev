@@ -2,7 +2,7 @@
 
 [![toolboxvim](../../../../cybersecurity/_badges/thm/toolboxvim.svg)](https://tryhackme.com/room/toolboxvim)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Vim <small>(vi improved)</small> is a terminal text editor that is often used along nano mostly when there is no graphical interface 🐉.
 
@@ -30,7 +30,7 @@ Learn vim 📚
 
 ## Get started
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The current one is shown at the bottom left of the screen.
 
@@ -48,7 +48,7 @@ To exit VIM, you need to be in command mode. Press <kbd>ESC</kbd> <small>(at lea
 
 ## Configuration
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can configure your editor by creating a file `~/.virmrc`. You can find useful configurations online. Look for `dotfiles vim`.
 
@@ -86,7 +86,7 @@ set tabstop=4 "tabulation size
 
 ## Basics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Start editing
 
@@ -100,7 +100,7 @@ To switch to the INSERTION mode in which you can edit the file:
 
 🎯 You must be in command mode.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * `h`: move left ⬅️
 * `j`: move down ⬇️
@@ -120,7 +120,7 @@ You can use `CTRL-F`/`CTRL-B` to go down/up one screen.
 
 #### Commands
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * `:w`: save
 * `:wq`: save and exit
@@ -154,7 +154,7 @@ You can use `CTRL-F`/`CTRL-B` to go down/up one screen.
 
 ## Intermediate
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Search
 
@@ -196,7 +196,7 @@ Can only be used in command mode:
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * `:w !sudo tee %`
 * investigate the `.` (current line?)

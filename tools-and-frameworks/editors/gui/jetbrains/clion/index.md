@@ -1,6 +1,6 @@
 # CLion
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [CLion](https://www.jetbrains.com/clion/) is a **C and C++** IDE powered by JetBrains and exclusively available in a **paid** version.
 
@@ -23,7 +23,7 @@
 
 ## Product-specific features
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Set Up The Compiler
 

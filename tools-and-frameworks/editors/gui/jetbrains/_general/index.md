@@ -1,6 +1,6 @@
 # JetBrains IDEs
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 All JetBrains IDEs share the same interface, and many common features such as:
 
@@ -28,7 +28,7 @@ And in each IDE, some languages, frameworks, and build tools have additional fea
 
 ## Running some code
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 There is a green play icon next to the code that you can run:
 
@@ -46,11 +46,11 @@ You can create, edit, or select a configuration here:
 
 ## Basic file edition
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 When coding, the IDE will highlight or underline problems.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ![editing](_images/editing.png)
 </div><div>
@@ -81,7 +81,7 @@ Use `CTRL+ENTER` to manually trigger auto-completion.
 
 ## Shortcuts
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 🔥 There is a search menu to look for files (`CTRL+SHIFT+N`), settings (`CTRL+SHIFT+A`). Open it with `Double Shift`.
 
@@ -130,7 +130,7 @@ Navigation
 
 ## Features
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Interface
 
@@ -173,7 +173,7 @@ You can create variables using `$variable_name$`.
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * <code>\`\`\`xxx!</code>
 * scratch files
