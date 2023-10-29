@@ -39,6 +39,13 @@ $ Rscript my_script.R
 
 <div class="row row-cols-lg-2"><div>
 
+#### General Notes
+
+* Use `#` for comments
+* Adding `;` (semicolon) at the end of a line is optional
+
+<br>
+
 #### Declare a variable
 
 We use `<-` to assign a variable.
@@ -49,6 +56,8 @@ assign(a, 5)
 ```
 
 ⚠️ You can use the `=` symbol too as [described here](https://developer.r-project.org/equalAssign.html).
+
+<br>
 
 #### Types
 
@@ -77,6 +86,8 @@ Useful methods:
 * `mode(v)`: returns the mode of `v`
 * `is.classname(v)`: returns true if `v` is an instance of `classname`
 * `as.classname(v)`: convert `v` to an instance of `classname`
+
+<br>
 </div><div>
 
 #### Print some text in the terminal
@@ -84,9 +95,10 @@ Useful methods:
 ```R
 myvar                                     # implicit
 print(myvar)                              # explicit
-print(paste("Hello", "World"))            # concatenation
 cat(paste("Hello", "World"), sep = "\n")  # using "cat"
 ```
+
+<br>
 
 #### Operators
 
@@ -116,6 +128,18 @@ T || F        # Logical OR
 ```
 
 👉 There is also `&` and `|` for the logical AND/OR on vectors. When using `&&` or `||` with a vector, they operate on the first element. 
+
+<br>
+
+#### Libraries
+
+Libraries are code written by others. You can install one using:
+
+```R
+install.packages("libName")
+```
+
+When you need the library, load it using: `library("libName")`.
 </div></div>
 
 <hr class="sep-both">
@@ -223,6 +247,46 @@ names(r)                   # vector("yes" "no")
 match(c("no"), names(r))   # index of the name
 ```
 
+#### Vector functions
+
+Common functions:
+
+* `head(v)`: first values
+* `tail(v)`: last values
+* `View(v)`: visual of the vector content
+* `length(v)`: size
+* `value %in% v`: true if value is in v
+* `is.element(e,v)`: true if e is in v
+
+Other functions:
+
+* `attributes(v)`: get attributes (dim, ...)
+* `rev(v)`: reverse
+* `sort(v)`/`order(v)`: sort
+* `identical(v1,v2)`: true if they are the same
+* `any(v op value)`: true if at least one value make the condition true
+* `all(v op value)`: true if all values make the condition true
+* `duplicated(v)`: true if a value is duplicated, for each value
+</div></div>
+
+<hr class="sep-both">
+
+## Maths
+
+<div class="row row-cols-lg-2"><div>
+
+#### Math Vector Functions
+
+* `which.min(v)`: index of the min value
+* `which.max(v)`: index of the max value
+* `sum(v)`: sum of all elements
+* `prod(v)`: product of all elements
+* `intersect(x,y)`
+* `union(x,y)`
+* `setdiff(x,y)`
+* `mlv` (library `modeest`): get the mode
+</div><div>
+
 ...
 </div></div>
 
@@ -254,6 +318,7 @@ v <- sapply(v, FUN = function (x) { x > 0.5 })
 # you can fill it
 # (random values between [1,5])
 sapply(v, function (unused){ return(sample(1:5, 1)) })
+sapply(one_to_ten, function (i) { print(i) } )
 # [1] 2 5 2 3 4
 
 # generate 10 integers within [0,100]

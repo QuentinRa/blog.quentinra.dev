@@ -1,18 +1,5 @@
 # R programming
 
-You may have to install packages or libraries in the future, simply do
-
-* install a library : `install.packages("name")`
-* **load a library** (runtime) : `library("name");`
-
-<hr class="sr">
-
-## Basic course
-
-You can check this fast course to learn the basics of R without details [Learn R in 5 minutes](5min.md).
-
-Then here is the real course.
-
 * [Strings](syntax/types/strings.md)
 * [Matrix](syntax/types/matrix.md)
 * [Lists](syntax/types/lists.md)
@@ -20,16 +7,8 @@ Then here is the real course.
 * [Factors](syntax/types/factors.md)
 * [Data.frame](syntax/types/data-frame.md)
 * [Functions](syntax/functions.md)
-* [Vector Functions](syntax/types/vectors-fun.md)
 
 <table class="table border-dark table-bordered table-striped">
-<tr><th class="text-center">Other notes about the Language</th></tr>
-<tr><td>
-The semicolon <code>;</code> at the end of a line is optional. You may use it if you make more than one expression per line.
-</td></tr>
-<tr><td> 
-Use <code>#</code> for comments
-</td></tr>
 <tr><td>
 
 You will use this a lot, you can **see the help for a function** with `?my_function`
@@ -46,9 +25,6 @@ Either look for or load a dataset with <code>data()/data('dataset')</code>.
 <tr><td>
 In R, when you are making a generalization of something, you usually name it <code>name.generalization_name</code>. For instance, if you got a vector of numbers <code>data$numbers</code>, then you would have <code>data$numbers.pos</code>. Same for functions like <code>mean</code>, <code>mean.test</code>,
 ...
-</td></tr>
-<tr><td>
-There are a lot of shortened words or it seems so. For instance, you can use <code>T</code> for <code>TRUE</code>. For functions, you can use <code>prob/proba</code> for <code>probability</code> etc.
 </td></tr>
 </table>
 
