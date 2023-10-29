@@ -2,7 +2,7 @@
 
 [![adventofcyber4](../../../../../cybersecurity/_badges/thm/adventofcyber4/day8.svg)](https://tryhackme.com/room/adventofcyber4)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Solidity](https://soliditylang.org/) is a high-level [object-oriented](/programming-languages/_paradigm/oo.md) language used to implement smart contracts, most notably on the Ethereum blockchain.
 

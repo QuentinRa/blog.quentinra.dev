@@ -1,6 +1,6 @@
 # Elasticsearch
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Elasticsearch](https://github.com/elastic/elasticsearch) (63.8k ⭐) is a RESTful open-source search engine with an API and clients in many languages.
 
@@ -29,7 +29,7 @@ Elasticsearch will ask you to [index](https://www.elastic.co/guide/en/elasticsea
 
 ## Elasticsearch in PHP
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 After setting up elasticsearch, you need to install [elasticsearch-php](https://github.com/elastic/elasticsearch-php):
 

@@ -1,6 +1,6 @@
 # OpenAPI
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [OpenAPI](https://swagger.io/specification/) is a wonderful project to create APIs or generate API documentation. You will define a specification, and you will be able to generate the server code in many languages <small>(ex: node server)</small>.
 
@@ -18,7 +18,7 @@ Many API specifications are available [here](https://app.swaggerhub.com/search).
 
 Base template for an OAS3 <small>(OpenAPI Specification Version 3)</small> in YAML
 
-```yaml
+```yaml!
 openapi: 3.0.3
 info:
   title: API NAME
@@ -36,7 +36,7 @@ paths:
 
 ## 🚀 Generation 🚀
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### API Server-side code
 
@@ -64,22 +64,22 @@ And you're done. See [Redoc quick start](https://redocly.com/docs/redoc/quicksta
 
 ## 🪵 Schema 🪵
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 A schema is a definition of something. It's pretty much like a class in [oriented-object programming](/programming-languages/_paradigm/oo.md#classes-and-objects). 7 types are supported which are `string`, `array`, `object`, `boolean`, `integer`, `number`, and `null`.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **String example**
 
-```yaml
+```yaml!
 schema:
   type: string
 ```
 
 **Array example**
 
-```yaml
+```yaml!
 schema:
   type: array
   # type of one element
@@ -89,7 +89,7 @@ schema:
 
 **String (enum)**
 
-```yaml
+```yaml!
 schema:
   type: string
   enum: [value1, value2, value3]
@@ -99,7 +99,7 @@ schema:
 
 **Object example**
 
-```json
+```json!
 {
     "username": "toto",
     "age": 0
@@ -108,7 +108,7 @@ schema:
 
 Give us the schema:
 
-```yaml
+```yaml!
 schema:
   type: object
   properties:
@@ -125,15 +125,15 @@ schema:
 
 Schemas have more attributes than just a type if you need them.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
-```yaml
+```yaml!
 schema:
   type: string
   format: email
 ```
 
-```yaml
+```yaml!
 schema:
   type: array
   uniqueItems: true
@@ -141,7 +141,7 @@ schema:
   maxItems: 5
 ```
 
-```yaml
+```yaml!
 schema:
   type: xxx
   readOnly: true # GET only
@@ -151,14 +151,14 @@ schema:
 ```
 </div><div>
 
-```yaml
+```yaml!
 schema:
   type: integer
   format: int64
   minimum: 0
 ```
 
-```yaml
+```yaml!
 schema:
   type: object
   additionalProperties: true
@@ -175,9 +175,9 @@ schema:
 
 You may want to avoid copy-pasting the same schema. You can store them in a section **components** <small>(above "paths:" for me)</small>
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
-```yaml
+```yaml!
 components:
   schemas:
     ProductIdParameter:
@@ -188,7 +188,7 @@ components:
 
 In the code, you will use **$ref**
 
-```yaml
+```yaml!
 schema:
   $ref: '#/components/schemas/ProductIdParameter'
 ```
@@ -200,7 +200,7 @@ schema:
 
 ## 🛣️ Paths 🛣️
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 Given `http://localhost:3000/products`, if the endpoint is `http://localhost:3000`, then `/products` is a path of your API.
 
@@ -257,7 +257,7 @@ paths:
 
 ## 📦 Content 📦
 
-<div class="row row-cols-md-2"><div class="align-self-center">
+<div class="row row-cols-lg-2"><div class="align-self-center">
 
 Another block always seen in many responses, bodies, or parameters is **content**.
 
@@ -280,7 +280,7 @@ content:
 
 ## Requests
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Parameters
 
@@ -332,7 +332,7 @@ paths:
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [Basic Structure](https://swagger.io/docs/specification/basic-structure/)
 * [Full spec](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md)

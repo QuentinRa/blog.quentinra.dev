@@ -1,6 +1,6 @@
 # YAML
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 YAML is way more complex than JSON. In fact, JSON syntax is included in YAML. YAML is quite human-readable 🚀, so in some cases, it may be better to use YAML rather than JSON.
 
@@ -46,7 +46,7 @@ code: |+
 
 ## Read YAML files in Node.js
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### js-yaml
 
@@ -87,7 +87,7 @@ console.log(xxx)
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [circleci](https://circleci.com/docs/introduction-to-yaml-configurations/)
 </div><div>

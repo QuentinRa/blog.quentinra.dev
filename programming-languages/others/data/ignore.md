@@ -1,6 +1,6 @@
 # .ignore files
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Many tools use hidden files ending with `ignore` such as:
 

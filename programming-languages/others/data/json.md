@@ -1,6 +1,6 @@
 # JSON
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 JSON is a simple yet very useful way of storing data. It's a plain-text file with some structured data inside.
 
@@ -48,7 +48,7 @@ There are six types in JSON: **number** (integer/float), **object**, **array**, 
 
 ## Extensions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### JSON5
 

@@ -1,6 +1,6 @@
 # INI files
 
-<div class="row row-cols-md-2"><div class="align-self-center">
+<div class="row row-cols-lg-2"><div class="align-self-center">
 
 The **INI** file format was originally only used by Windows to store initialization data and configurations. It's now used by many applications even on Linux, such as `php`.
 

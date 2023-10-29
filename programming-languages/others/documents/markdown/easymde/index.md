@@ -1,6 +1,6 @@
 # EasyMDE
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [EasyMDE](https://github.com/Ionaru/easy-markdown-editor) is an HTML and JavaScript editor. It uses [marked](https://github.com/markedjs/marked) to parse Markdown and [codemirror](https://github.com/codemirror/dev/) for the editor ✍️.
 
@@ -61,7 +61,7 @@ You will then have to configure and run the editor:
 
 ## Add Math Support
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Adding Math support can be somewhat complicated. You can use MathJax for rendering and KaTex for parsing.
 
@@ -160,7 +160,7 @@ Use the following code to use the custom renderer:
 
 ## Add Syntax Highlighting Support
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 This is an example of using highlight.js to highlight code.
 
@@ -194,7 +194,7 @@ This is an example of using highlight.js to highlight code.
 
 ## Random Notes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Keystrokes
 

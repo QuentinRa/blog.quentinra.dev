@@ -1,6 +1,6 @@
 # Stripe API
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 Stripe is a payment API. You can use it on websites, or mobiles devices, and you can use your own interface, or theirs.
 
@@ -17,8 +17,6 @@ Some useful pages
 * [Accept a payment](https://stripe.com/docs/payments/accept-a-payment?platform=android&ui=payment-sheet) (client web/mobile + server)
 * [Custom payment flow](https://stripe.com/docs/payments/quickstart?platform=android&lang=node) (client web/mobile + server)
 
-<br>
-
 > ➡️You need an account at some point, but you can use the public (secret) test key provided in the samples to test the API
 </div></div>
 
@@ -26,7 +24,7 @@ Some useful pages
 
 ## Basics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 To use the Stripe API, you will have to use two tokens.
 
@@ -48,11 +46,11 @@ Testing
 
 ## Node.js (server)
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 Generate a payment intent
 
-```javascript
+```javascript!
 await stripe.paymentIntents.create({
     amount: 1400, // calculate the price
     currency: "usd",
@@ -66,7 +64,7 @@ await stripe.paymentIntents.create({
 
 Retrieve a payment intent
 
-```javascript
+```javascript!
 const paymentIntent = await stripe.paymentIntents.retrieve('pi_id')
 // see status
 if (paymentIntent.status === 'succeeded') { /* ... */ }
@@ -75,7 +73,7 @@ if (paymentIntent.status === 'succeeded') { /* ... */ }
 
 Delete a payment intent
 
-```javascript
+```javascript!
 const paymentIntent = await stripe.paymentIntents.cancel('pi_id')
 ```
 </div></div>
@@ -86,7 +84,7 @@ const paymentIntent = await stripe.paymentIntents.cancel('pi_id')
 
 Reference: [Accept a payment](https://stripe.com/docs/payments/accept-a-payment?platform=android).
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Edit your build.gradle**
 
@@ -169,7 +167,7 @@ private fun onPaymentSheetResult(paymentSheetResult: PaymentSheetResult) {
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [Android basic integration](https://stripe.com/docs/mobile/android/basic)
 * [VueStripe](https://vuestripe.com/) / [docs](https://docs.vuestripe.com/vue-stripe/)

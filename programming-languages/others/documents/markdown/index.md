@@ -1,6 +1,6 @@
 # Markdown
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Markdown is the language used in `.md` files. It's mostly used to write simple documents such as
 
@@ -32,13 +32,13 @@ Note that you can use HTML inside Markdown files 💫.
 
 ## 🪵 Most used elements 🪵
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Paragraphs
 
 A paragraph is a block of text. Leave a blank line to close it.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```markdown
 Here is a text
@@ -74,7 +74,7 @@ that continues here. Do not use this uncommon syntax.
 
 The more `#` you add, the smaller your title becomes.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```markdown
 # h1 - huge title
@@ -101,13 +101,13 @@ The more `#` you add, the smaller your title becomes.
 
 ## 🌿 Other elements 🌿
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Lists
 
 Use `*`, `+`, or `-` to create unordered lists. Use `n.` for ordered lists.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```markdown
 1. an item
@@ -161,7 +161,7 @@ Code inside a sentence is called **inline code**. You can write inline code in i
 * `inline code`: <code>\`inline code\`</code>
 * You can write some code blocks with syntax highlighting using 3 inverted quotes, then the highlighting language <small>(ex: c, java, diff...)</small>.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 <pre><code class="language-markdown"
 >```diff
@@ -217,11 +217,11 @@ It will work the same if you add more than 3 stars/...
 
 Extended features are available on most Markdown interpreters (ex: GitHub), but they are not available by default.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Tables
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```markdown
 | Column name | Column name |
@@ -272,7 +272,7 @@ You can write `:emoji:` to render an emoji, with "emoji" the one you want. It wo
 
 ## 🍹 Using HTML 🍹
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can use HTML inside your Markdown.
 
@@ -297,7 +297,7 @@ You can use HTML inside your Markdown.
 
 You can use Markdown inside HTML, but you need to leave a blank line after the leading tag.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```markdown
 <div>
@@ -398,7 +398,7 @@ A long description
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [GitHub Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * [sindresorhus.com](https://sindresorhus.com/github-markdown-css/)

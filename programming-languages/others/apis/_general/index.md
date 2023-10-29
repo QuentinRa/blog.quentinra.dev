@@ -1,6 +1,6 @@
 # 🛳️ Application Programming Interface 🛳️
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 Application Programming Interfaces (APIs) are used to allow access to internal services such as a database to both internal and external entities, but with a layer of abstraction called "interface".
 
@@ -49,7 +49,7 @@ Services (APIs)
 
 ## 📖 Terminology 📖
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 * **Base endpoint**: the base [URL](/programming-languages/web/_general/random/url.md) for any request to the API
 * **Endpoint**: a [URL](/programming-languages/web/_general/random/url.md) with one route of the API
@@ -76,7 +76,7 @@ Usually, only one format is supported, but developers may allow the developer to
 
 *Something like: "How to make API requests?"*
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Postman
 
@@ -130,15 +130,13 @@ You should look on Google/GitHub for drivers/wrappers for an API.
 
 ## 🤙 API documentation 👈️
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 To write API documentation, you can use
 
 * [apiary](https://apiary.io/) <small>(Oracle, easy/manual, not recommended)</small>
 * [stoplight](https://stoplight.io/) (👻)
 </div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">
@@ -147,7 +145,7 @@ To write API documentation, you can use
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * REST/RESTful/[REST API guidelines](https://github.com/controlook-zz/standards/blob/master/backend/rest-api-guidelines.md)
   * stateless (do not use previous requests)

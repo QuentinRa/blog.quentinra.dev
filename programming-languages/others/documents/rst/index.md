@@ -1,6 +1,6 @@
 # reStructuredText
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 reStructuredText <small>(a.k.a. reST or RST)</small> is an enhanced markdown with additional syntax for complex documents.
 
@@ -20,13 +20,13 @@ What you can do in RST that you can't do in Markdown:
 
 ## Basics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Titles
 
 Titles are text underlined, or over- and underlined with symbols. Any non-alphanumeric characters can be used as long as the syntax is consistent, and they are longer than the text. Two examples:
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```
 Document Title
@@ -138,7 +138,7 @@ b. ordered list item
 
 ## Intermediate
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Comments
 
@@ -225,7 +225,7 @@ You can document classes/methods/attributes using the syntax below. Note that me
 
 ## Advanced
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Math
 
@@ -317,7 +317,7 @@ XXX    YYY     ZZZ
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [anaconda](https://docs.anaconda.com/restructuredtext/detailed/)
 * [dupuy](https://gist.github.com/dupuy/1855764)

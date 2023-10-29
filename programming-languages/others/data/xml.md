@@ -1,6 +1,6 @@
 # XML
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 📝 XML (eXtensible Markup Language) is a language like JSON used to store/share data. XML is like HTML: a tree of nodes, with a root, and child elements. An XML file usually starts with a tag called XML prolog.
 
@@ -24,7 +24,7 @@ The names/attributes/hierarchy of tags/... are defined by you!
 
 ## Document Type Definition (DTD) 🗺️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Usually, we define a Document Type Definition (DTD) for an XML. It defines which tags, and attributes are allowed, along the hierarchy between tags. It's mainly used to ensure the XML is valid.
 
@@ -50,7 +50,7 @@ After the XML Prolog, add a DOCTYPE tag. For the XML above, we may use a DTD suc
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * XML Schema Definition (XSD)
 </div><div>

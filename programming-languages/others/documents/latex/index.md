@@ -1,6 +1,6 @@
 # LaTeX
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 LaTeX is the language used in `.tex` files. It's mostly used to write formal documents such as
 
@@ -34,7 +34,7 @@ Some ways to write LaTeX:
 
 ## Basics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A basic document looks like this. You can import packages, and you start writing inside the document block.
 
@@ -50,7 +50,7 @@ A basic document looks like this. You can import packages, and you start writing
 
 #### Document
 
-<div class="row row-cols-md-2"><div class="align-self-center">
+<div class="row row-cols-lg-2"><div class="align-self-center">
 
 ```tex
 \title{A title}
@@ -97,7 +97,7 @@ Use `enumerate` for ordered lists, and `itemize` for unordered lists.
 
 ## Code in LaTeX
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can use the minted to write code in LaTeX.
 
@@ -131,7 +131,7 @@ You need to define a language, for instance, `ocaml`.
 
 ## Math in LaTeX
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Math symbols or formulas can be either **inline** meaning inside a text, or **block-level** meaning they will take up a whole line.
 
@@ -160,7 +160,7 @@ Math symbols or formulas can be either **inline** meaning inside a text, or **bl
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```latex
 \verb! http://localhost:3000/!
