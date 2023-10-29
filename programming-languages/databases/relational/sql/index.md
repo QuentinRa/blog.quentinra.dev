@@ -1,6 +1,6 @@
 # Structured Query Language (SQL)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The Structured Query Language (SQL) is the most popular query language. The fundamentals are the same for many RDBMS.
 
@@ -20,7 +20,7 @@ WHERE username = 'admin';
 
 ## SQL Basics 🃏
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Types
 
@@ -69,7 +69,7 @@ Refer to [W3Schools - SQL Server Functions](https://www.w3schools.com/SQL/sql_re
 
 ## SQL Clauses 👷
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A clause 👷 is an instruction within the request, such as SELECT. There are 3 categories of clauses: DML, DDL, and DCL.
 
@@ -114,7 +114,7 @@ These statements will change the database (new record/...):
 
 ## Transactions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Sometimes, you need to chain the queries in order to keep the database coherent. Every query in the transaction will be executed before another transaction (or query) is proceeded.
 
@@ -144,7 +144,7 @@ set transaction read write /*code/
 [![linuxprivesc](../../../../cybersecurity/_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![owasptop10](../../../../cybersecurity/_badges/thm/owasptop10.svg)](https://tryhackme.com/room/owasptop10)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### PostgreSQL
 
@@ -205,7 +205,7 @@ An **SQLite** database is a file such as `users.db`. To load it ️: `sqlite3 us
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [SQL.sh](https://sql.sh/) (french)
 * [fxjollois](https://fxjollois.github.io/cours-sql/) (french)

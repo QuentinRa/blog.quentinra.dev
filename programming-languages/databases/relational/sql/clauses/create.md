@@ -2,7 +2,7 @@
 
 [Go back](../index.md#sql-clauses-)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The CREATE clause is used to create
 
@@ -18,7 +18,7 @@ The CREATE clause is used to create
 
 #### CREATE DATABASE
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You will usually provide the [charset](/tools-and-frameworks/knowledge/architecture/index.md#strings-) when creating a database, to avoid problems with international characters.
 
@@ -33,7 +33,7 @@ CREATE DATABASE db_name CHARACTER SET utf8mb4
 
 #### CREATE TABLE
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 To create a table, you must give every attribute, and their constraints.
 
@@ -83,7 +83,7 @@ CHECK (id_user IN (/* some request */))
 
 #### CREATE USER
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```sql!
 CREATE USER username
@@ -117,7 +117,7 @@ CREATE USER username@'xx.xx.xx.%'
 
 #### CREATE ROLE
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A role is like a group, used to grant permissions to everyone having this role.
 

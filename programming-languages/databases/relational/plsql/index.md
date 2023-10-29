@@ -1,6 +1,6 @@
 # PL/SQL
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Many [DBMS](../_knowledge/index.md) have their own **procedural languages** which extend SQL and allow us to write procedural code <small>(if statement, loops...)</small> that can be executed within the database.
 
@@ -17,7 +17,7 @@ This course covers PL/SQL and PL/pgSQL.
 
 ## DBMS-specific
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### PL/SQL-specific
 
@@ -66,7 +66,7 @@ RAISE NOTICE '... % ... % ...', 5, 7;
 
 ## Block of code
 
-<div class="row row-cols-md-2 mx-0"><div>
+<div class="row row-cols-lg-2"><div>
 
 The usual block of code:
 
@@ -93,7 +93,7 @@ END;
 
 ## Variables
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Variables are needed **to store the result of an SQL request**, otherwise they are used to store constants.
 
@@ -126,7 +126,7 @@ v_array int array[3] := '{0,1,2}';
 
 ## Control-flow structures
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Usual branching statement.
 
@@ -180,7 +180,7 @@ FOR i IN REVERSE min AND max LOOP some_code END LOOP;
 
 ## SQL SELECT
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 To exploit the result of a SELECT, you need to store it. You must first declare variables, then you can use them as follows:
 
@@ -242,7 +242,7 @@ CLOSE v_cursor;
 
 An exception is a signal. Most of the time, it's raised because an error occurred. You can handle it in the block exception, but if you didn't, then the signal will be sent upward (=to the caller). If no one catches it, the request crashes with an error.
 
-<div class="row row-cols-md-2 mx-0"><div>
+<div class="row row-cols-lg-2"><div>
 
 **You can raise an exception** with `RAISE`
 
@@ -281,7 +281,7 @@ You got a lot of predefined exceptions, check your database documentation.
 
 ## Functions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can create functions using:
 
@@ -317,7 +317,7 @@ Result
 
 ## Triggers
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 It's possible to call a `trigger` function when events <small>(insert, update, delete...)</small> occur. 🔥 Usages: calculate derived fields, archiving...
 
@@ -363,7 +363,7 @@ DROP TRIGGER IF EXISTS trigger_name ON some_table;
 
 ## Procedures
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Procedures are not available in PL/pgSQL. They are similar to functions, but they 
 
@@ -398,7 +398,7 @@ END;
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * INSTEAD OF
 * `a = 5` or `a := 5` in PL/SQL

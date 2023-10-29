@@ -1,6 +1,6 @@
 # MongoDB - PHP Driver
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 This section is about using [MongoDB](../mongodb.md) in [PHP](/programming-languages/web/php/_general/index.md).
 
@@ -60,7 +60,7 @@ $ composer require mongodb/mongodb
 
 A simple starter script with no framework:
 
-```php
+```php!
 <?php
 require 'vendor/autoload.php'; // composer autoloader
 
@@ -79,7 +79,7 @@ Refer to the [documentation](https://www.mongodb.com/docs/php-library/current/tu
 
 ## Examples
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Get a database
 

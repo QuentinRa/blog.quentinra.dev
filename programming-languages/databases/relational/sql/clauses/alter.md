@@ -8,7 +8,7 @@ The ALTER clause is used to edit tables, databases...
 
 ## ALTER Database
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```sql!
 ALTER DATABASE db_name
@@ -22,7 +22,7 @@ ALTER DATABASE db_name
 
 ## ALTER Table
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```sql!
 ALTER TABLE a_table

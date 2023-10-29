@@ -2,7 +2,7 @@
 
 [Go back](../index.md#sql-clauses-)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 There are cases when we want to apply a calculation to a group. For instance, if we want the average age by genre.
 

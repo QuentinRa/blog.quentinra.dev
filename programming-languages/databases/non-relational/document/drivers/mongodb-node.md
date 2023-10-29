@@ -1,6 +1,6 @@
 # MongoDB - Node Driver
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 There are two libraries to use [MongoDB](../mongodb.md) in [Node.js](/programming-languages/web/node.js/_general/index.md):
 
@@ -33,7 +33,7 @@ await mongoose.connect('mongodb://xxx', {
 
 ## Basic usage
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Mongoose is an Object-Document Mapping <small>(ODM)</small> library. It means we'll abstract the database as a JSON Schema, and mongoose will act as a **bridge** between objects <small>(JavaScript)</small> and documents <small>(MongoDB)</small>. 
 

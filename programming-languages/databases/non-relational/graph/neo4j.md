@@ -1,6 +1,6 @@
 # Neo4J
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Neo4J is a popular **Graph** [NoSQL](../index.md) Database. It provides the cypher query language to interact with the graph data.
 
@@ -24,7 +24,7 @@ Either use [their cloud sandbox](https://neo4j.com/sandbox/) or [a self-hosted i
 
 ## Core logic
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 With Neo4J, each cypher query returns a **graph**.
 
@@ -49,7 +49,7 @@ With Neo4J, each cypher query returns a **graph**.
 
 ## Nodes and edges
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Nodes
 
@@ -84,7 +84,7 @@ But, you can also add a direction:
 
 ## Basic clauses
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Clauses are case-insensitive instructions.
 
@@ -158,7 +158,7 @@ Skip results or limit the number of results.
 
 ## Advanced clauses
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Functions
 
@@ -205,7 +205,7 @@ RETURN a.title, r // may be null for some movies
 
 ## Create, update, and delete data
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Create
 
@@ -252,7 +252,7 @@ MATCH (p:ShowbizPerson{name: "My name"}) DETACH DELETE (p)
 
 ## Examples
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Here are some example queries.
 
@@ -290,7 +290,7 @@ MATCH (w:ShowbizPerson)-[:WROTE]->(:Movie) MATCH (w)-[:PRODUCED]->(:Movie) RETUR
 
 ## Lists
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 If needed, you can use lists in your queries. See [Python](/programming-languages/high-level/scripting/python/index.md#lists) lists.
 
@@ -331,7 +331,7 @@ Indexes ✨
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [apcjones](http://www.apcjones.com/arrows/#)
 * [graphacademy](https://graphacademy.neo4j.com/categories/)

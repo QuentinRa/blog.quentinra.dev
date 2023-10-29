@@ -1,6 +1,6 @@
 # Redis
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Redis** is an in-memory key-value database. See also: [NoSQL](../index.md).
 

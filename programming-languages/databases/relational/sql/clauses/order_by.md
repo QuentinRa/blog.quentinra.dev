@@ -2,7 +2,7 @@
 
 [Go back](../index.md#sql-clauses-)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can sort your results with ORDER BY:
 

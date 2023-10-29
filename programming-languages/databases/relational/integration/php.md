@@ -1,6 +1,6 @@
 # SQL in PHP
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 To integrate a SQL database in a PHP application, you can use **PDO** to write code regardless of the RDBMS, **or use a specific function** for each RDBMS such as `mysqli_*` for MariaDB/MySQL.
 
@@ -12,7 +12,7 @@ To integrate a SQL database in a PHP application, you can use **PDO** to write c
 
 ## Using PDO
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```php!
 $db = new PDO("dbms_name:host=hostname;charset=UTF8;dbname=db_name", "user","password");
@@ -47,7 +47,7 @@ $stmt->execute();
 
 ## MariaDB / MySQL
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You will use [mysqli](https://www.php.net/manual/en/book.mysqli.php) functions. To create a non-prepared statement:
 

@@ -2,7 +2,7 @@
 
 [Go back](../index.md#sql-clauses-)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The SELECT clause specifies what data we are selecting.
 
@@ -51,7 +51,7 @@ FROM customer
 
 ## Calculations
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Simple calculation
 

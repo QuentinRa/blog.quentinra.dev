@@ -1,6 +1,6 @@
 # MongoDB
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 MongoDB is a popular **Document** [NoSQL](../index.md) Database. It stores data as **JSON-based (BSON) documents**. All queries use [JSON](/programming-languages/others/data/json.md), so there is almost no MongoDB-specific syntax.
 
@@ -26,7 +26,7 @@ The URL is commonly `mongodb://localhost:27017/`.
 
 ## Core logic
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 As MongoDB is a NoSQL database, it's common for documents <small>(e.g. a user)</small> to have missing fields <small>(ex: missing address, if no purchases yet)</small>.
 
@@ -77,7 +77,7 @@ A document is a record within a collection <small>(ex: a user)</small>. It's a [
 
 ## Manipulate documents
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Add documents
 
@@ -127,7 +127,7 @@ $set: {
 
 ## Find documents
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You will use `find` or variants to find documents. They usually take two arguments, and return a list of documents.
 
@@ -190,7 +190,7 @@ db.persons.find().sort({name: -1}) // sort DESC
 
 ## User management
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can create an administrator using:
 
@@ -219,7 +219,7 @@ db.createUser( { user: "myuser", pwd: "password", roles: ["readWrite"] })
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```js!
 // mixed content

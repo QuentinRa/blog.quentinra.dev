@@ -2,7 +2,7 @@
 
 [Go back](../index.md#sql-clauses-)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The WHERE clause is used to filter records that will be in the output.
 

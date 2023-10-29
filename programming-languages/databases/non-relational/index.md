@@ -1,6 +1,6 @@
 # Non-relational databases
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Non-relational databases**, a.k.a. **NoSQL** (**NotOnlySQL**), are databases using a different approach to data storage and manipulation compared to [relational databases](/programming-languages/databases/relational/_knowledge/index.md) ✨.
 
@@ -29,7 +29,7 @@ NoSQL databases became quite popular around 2010, and they are used by a lot of 
 
 ## Examples of NoSQL databases
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Key-value
 
@@ -59,7 +59,7 @@ Graph
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * BASE (SQL ACID)
 </div><div>
