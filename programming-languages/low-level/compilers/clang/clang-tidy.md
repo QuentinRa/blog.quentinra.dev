@@ -1,6 +1,6 @@
 # Clang-tidy
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Clang-tidy is a tool that performs static code analysis on C++ code, identifying code smells, potential bugs, and other common issues.
 
@@ -14,7 +14,7 @@ $ sudo apt install clang-tidy
 
 ## Basic usage
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Common commands
 

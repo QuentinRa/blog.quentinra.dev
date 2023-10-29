@@ -1,6 +1,6 @@
 # ARM Assembly
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Assembly languages are low-level languages directly interacting with a processor such as an Intel or an ARM processor.
 
@@ -46,7 +46,7 @@ $ ./a.out
 
 ## File structure
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 An ARM file usually starts with `.equ` directives. That's where we define constants, such as system calls numbers we will use.
 
@@ -115,7 +115,7 @@ _start:
 
 ## ARM basics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Registers 🗃️
 
@@ -185,7 +185,7 @@ Here is a checklist:
 
 ## Instructions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Instructions are operations that we can perform. For instance, we can put a value inside a register, or calculate the sum of two registers.
 
@@ -249,7 +249,7 @@ umull RdLo, RdHi, Rn, Rm
 
 ## Functions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Let's say we have this code in C:
 
@@ -297,7 +297,7 @@ sum:
 
 ## Immediate constants
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Immediate constants are constants passed as Operand2 using `#`.
 
@@ -373,7 +373,7 @@ Find the rotation:
 
 ## Conditions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can add a condition for an instruction to be executed only if the condition is true. These conditions are checking the 4 flags:
 
@@ -443,7 +443,7 @@ addnes r0, #4 ; add 4 + set flags (Z = false, N = false...)
 
 ## Barrel shifter
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can apply modifications on `Operand2` easily using some operators like `>>` or `<<` in C. It's useful to transform a value "on the fly" 🕺 as the registers are not modified 🥏.
 
@@ -496,7 +496,7 @@ add r0, r0, r1, lsl #2
 
 ## Arrays
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 To declare an array, simply list the values.
 
@@ -535,7 +535,7 @@ str r2, [r0, r1, LSL #2] @ array[0] = 77;
 
 ## Advanced
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Loops
 
@@ -570,7 +570,7 @@ The stack is a **primordial concept** when calling a function inside functions. 
 
 ⚠️ When calling a function, it may modify registers, potentially leading to unexpected changes. As a result, we may have lost the register value used to return to the calling function.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```arm
 4: mov r1, #13
@@ -605,7 +605,7 @@ push {r0-r2}      @ can use an interval
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * SIMD (Single Instruction Multiple Data) instruction set
 * [azerialabs](https://azm.azerialabs.com/)

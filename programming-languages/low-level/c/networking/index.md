@@ -1,6 +1,6 @@
 # Networking in C
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 Networking in C is done by creating sockets, which are either:
 
@@ -21,7 +21,7 @@ You also need to define an applicative protocol for each app:
 
 ## Base template
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Both the code for the client and the server start from the same template, regardless of the type of socket.
 
@@ -69,7 +69,7 @@ int open_server_fd(int port){
 
 ## Filling the common parts
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 In UDP clients/servers and TCP clients, you will need to generate a `sock_addr` with the address and port of the client/server. You can extract the code into one reusable function: `create_sock_addr` 👑.
 
@@ -125,7 +125,7 @@ if (bind(server_fd, (SA *)&server_addr, sizeof(server_addr)) < 0)
 
 ## TCP client/server
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Client
 
@@ -180,7 +180,7 @@ if (listen(server_fd, 1024) < 0)
 
 ## UDP client/server
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Client
 
@@ -230,7 +230,7 @@ if ((server_fd = socket(AF_INET, SOCK_DGRAM, 0)) < 0)
 
 ## Read and write
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### TCP (server)
 
@@ -323,7 +323,7 @@ if (recvfrom(client_fd, buffer, 1024, 0, (struct sockaddr *)&sock_addr, &sock_le
 
 ## Common functions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **inet_aton** 🔢: convert an IP (`char*`) to the machine representation (`in_addr`). It stores inside `inp` the result.
 

@@ -1,6 +1,6 @@
 # Clang-format
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Clang-format is a tool to automatically apply formatting rules on C/C++ code.
 
@@ -24,7 +24,7 @@ some code here
 
 ## Common usage
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Run clang-format and automatically (`-i`) fix the files.
 

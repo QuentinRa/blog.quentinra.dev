@@ -1,6 +1,6 @@
 # C++ programming
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The C++ programming language is a middle-level language that is built on top of the [C](/programming-languages/low-level/c/general/index.md) ([compatibility](https://en.wikipedia.org/wiki/Compatibility_of_C_and_C%2B%2B;)), with additional features.
 
@@ -39,7 +39,7 @@ Hello World
 
 *This assumes that you're already familiar with the C language.*
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Declare a variable
 
@@ -76,7 +76,7 @@ int xxx = int('c'); // the constructor (if any)
 
 **Reminder**: in C, the parameters of a function are passed by value. We could use pointers to allow a function to edit a variable from the outer scope. In C++, we could use references instead of pointers.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **C** (using a pointer)
 
@@ -125,7 +125,7 @@ std::cout << "Hello " << name << std::endl;
 
 ## Control-flow structures
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 ...
 </div><div>
@@ -156,7 +156,7 @@ catch (...) { std::cerr << "Error: xxx"; }
 
 ## Functions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Default values for parameters
 
@@ -209,7 +209,7 @@ struct XXX {
 
 ## Namespaces
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Namespaces** (`espaces de noms`) are the same as packages in other languages. For instance, all functions of the STD are in the namespace `std::`. This allows us to declare functions/classes/... with the same name as one of the STD without causing conflicts.
 
@@ -227,7 +227,7 @@ namespace xxx {
 ```
 </div><div>
 
-```
+```cpp
 int main() {
     float v1 = xxx::yyy;
     float v2 = xxx::zzz::ttt();
@@ -236,7 +236,7 @@ int main() {
 
 You can import a namespace, it's a [bad](https://stackoverflow.com/questions/1265039/using-std-Namespace) practice with `std::` through.
 
-```
+```cpp
 using xxx::yyy; // import one ✨
 using namespace xxx::zzz; // import all 🚀
 
@@ -253,7 +253,7 @@ int main() {
 
 ## Structures and Classes: Basics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 In C++, structures were enhanced and are now similar to the newly introduced [classes](/programming-languages/_paradigm/oo.md#classes-and-objects), with one exception 🎯: members <small>(attributes and methods)</small> of a structure are public by default, whereas in a class, they are private by default.
 
@@ -282,7 +282,7 @@ int main() {
 
 #### Visibility
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```
 struct XXX {
@@ -364,7 +364,7 @@ public:
 
 🧼 Use `explicit` for constructors with one argument, to avoid implicit casting such as:
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```cpp
 struct XXX {
@@ -383,7 +383,7 @@ XXX xxx = 1.0;
 
 A destructor is automatically called when the object is destroyed. They are used to free/... resources allocated by the constructor.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```cpp
 struct XXX {
@@ -406,7 +406,7 @@ delete xxx;
 
 ## Structures and Classes: Advanced
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 6 methods are available by default in every structure/class
 
@@ -420,7 +420,7 @@ delete xxx;
 
 The default copy constructor copies every attribute using its copy constructor. You should use `= default;` instead of `{}`.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```cpp
 struct XXX {
@@ -524,7 +524,7 @@ std::cout << XXX(5); // XXX{ x=5 }
 
 ## Abstraction and inheritance
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 Inheritance (`héritage`) is allowing us to extend another class/struct.
 
@@ -616,7 +616,7 @@ struct Child : Parent {
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [cpp-cheatsheet](https://github.com/mortennobel/cpp-cheatsheet)
 * [clang](https://clang.llvm.org/extra/index.html)

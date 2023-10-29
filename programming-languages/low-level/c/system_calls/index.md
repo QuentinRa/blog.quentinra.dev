@@ -1,6 +1,6 @@
 # System calls
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 System calls are low-level functions that directly interact with the Linux kernel. You would usually use them in assembly, but assembly code is out of the scope of this course. We will use [C](/programming-languages/low-level/c/general/index.md) instead.
 
@@ -21,7 +21,7 @@ They are defined in `man 2`, such as `man 2 open`. See `man 2 syscalls`. You wil
 
 *This is not a system call, but let's make one exception*.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```c
 #include <stdio.h>
@@ -39,7 +39,7 @@ If a system call fails, an error code will be set. You can use `perror` to print
 
 ## `exit` - kill the process
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```c
 #include <unistd.h>
@@ -55,7 +55,7 @@ You will use this to terminate the program.
 
 ## `open` - open a file
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```c
 #include <fcntl.h>
@@ -86,7 +86,7 @@ This function returns an `int`, usually called `fd`, short for **file descriptor
 
 ## `read` - read a file descriptor
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```c
 #include <unistd.h>
@@ -117,7 +117,7 @@ The system call returns `-1` upon failure (see perror), or the number of charact
 
 ## `write` - write in a file descriptor
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```c
 #include <unistd.h>
@@ -145,7 +145,7 @@ The system call returns `-1` upon failure (see perror), or the number of charact
 
 ## `lseek` - move through a file
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```c
 #include <unistd.h>
@@ -178,7 +178,7 @@ If you understood right, to move back to the start, you would do
 
 ## `close` - close a file descriptor
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```c
 #include <unistd.h>
@@ -197,7 +197,7 @@ Aside from 0, 1, and 2, every file descriptor should be closed.
 
 ## `stat` - close a file descriptor
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```c
 #include <unistd.h>
@@ -241,7 +241,7 @@ struct stat {
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * adding exercises from texas
 </div><div>

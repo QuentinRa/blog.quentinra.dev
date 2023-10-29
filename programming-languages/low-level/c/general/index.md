@@ -1,6 +1,6 @@
 # C programming
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The C programming language is a low-level language that allows us to interact with system calls and memory directly.
 
@@ -35,7 +35,7 @@ Hello World
 
 ## Basics
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Declare a variable
 
@@ -164,7 +164,7 @@ int main() {
 
 ## Control-flow structures
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Branching
 
@@ -221,7 +221,7 @@ do {} while(1); // executed at least once
 
 ## The function <code>main</code>
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The `main` function is called when executing your program.
 
@@ -266,11 +266,11 @@ int main(int argc, char* argv[]) {
 
 ## Functions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A function is a block of code that was extracted from the `main` function, mostly to be reused, or to keep things clean.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```c
 int square(int v) {
@@ -309,7 +309,7 @@ int square(int v) {
 
 ## Pointer and addresses
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Every variable is stored at some location inside the memory. 
 
@@ -373,7 +373,7 @@ int main() {
 
 ## Arrays
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 An array is a list of values. The first value is at the index `0`.
 
@@ -461,7 +461,7 @@ a = (int*) realloc(a, n*sizeof(int));
 
 ## Structures/Records
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A structure/record is a type made of multiple types.
 
@@ -582,7 +582,7 @@ inline int get_person_age(Person* person) {
 
 ## Streams and files
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### stdout, stderr, stdin
 
@@ -687,7 +687,7 @@ write(1, "Hello, World", (12+1) * sizeof(char));
 
 ## Multiple files, and headers
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can move the declaration of functions/types to another file, called header, such as `main.h`. Other files will only be able to use what you declared inside them.
 
@@ -728,7 +728,7 @@ $ gcc main.o other.o -o a.out
 
 ## Libraries
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Random number
 
@@ -807,7 +807,7 @@ long five = atol("5");
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [w3schools.in](https://www.w3schools.in/c-tutorial/c99/)
 * [w3schools.com](https://www.w3schools.com/c/index.php)

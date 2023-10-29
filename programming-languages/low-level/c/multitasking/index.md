@@ -1,6 +1,6 @@
 # Multitasking
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 By default, a program can only do one thing at a time. There are many cases when we want to do multiple tasks in parallel.
 
@@ -22,7 +22,7 @@ There are a few related topics:
 
 ## Processes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A [process](/operating-systems/linux/env/process/index.md) is both a program and its environment.
 
@@ -66,7 +66,7 @@ int main() {
 
 ## Communication between processes
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Wait/Exit code
 
@@ -232,7 +232,7 @@ int fd = mkfifo("filename", 0777);
 
 ## Process replacement
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The code executed by a process can be replaced, for instance, if you want to run a command or another executable.
 
@@ -297,7 +297,7 @@ execv("/bin/ls", args);
 
 ## Threads
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Threads, also called "light processes" are similar to processes, aside from the fact that they share a part of the parent environment 🪸.
 
@@ -348,7 +348,7 @@ pthread_join(thread1, NULL);
 
 ## Threads: concurrency
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Synchronisation using mutex
 
@@ -422,7 +422,7 @@ void *my_function(void *arg){
 
 ## Threads: condition variables
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Conditions variables are used to stop executing a thread until a condition is true. You will need a mutex, and a condition variable:
 
@@ -472,7 +472,7 @@ Otherwise, we can access the resource, and work on it. Once we are done, we need
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * `FILE* stream = fopen(FIFO_PATH, "r+");`
 * `dup/dup2/dup3`

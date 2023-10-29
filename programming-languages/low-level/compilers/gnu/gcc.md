@@ -1,6 +1,6 @@
 # GNU Compiler Collection
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 `gcc` and `g++` are both part of the GNU Compiler Collection. `g++` is a version of GCC with pre-defined options for C++ code.
 
@@ -19,7 +19,7 @@ $ sudo apt-get install manpages-dev    # man pages for devs
 
 ## GCC/G++ Usage
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Basic usage
 
@@ -74,7 +74,7 @@ Less commonly used options:
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * `-llib`
 * `-L/path/to/lib`

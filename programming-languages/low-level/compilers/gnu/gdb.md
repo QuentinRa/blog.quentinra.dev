@@ -1,6 +1,6 @@
 # GNU Debugger
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 GNU Debugger (GDB) is a debugging software mainly used to debug C/C++ programs. It can be installed using:
 
@@ -23,7 +23,7 @@ $ gdb --args a.out arg1 arg2 # ./a.out arg1 arg2
 
 ## Common Usage
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You'll place a breakpoint in the code. When one is reached, the code will stop, allowing you to inspect variables...
 
@@ -82,7 +82,7 @@ To **quit**:
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * `watch`
 * `x`
