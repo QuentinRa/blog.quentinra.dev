@@ -11,7 +11,10 @@ $ R -q
 > quit()
 ```
 
-We often use [R Studio](https://www.rstudio.com/) or [IntelliJ](https://plugins.jetbrains.com/plugin/6632-r-language-for-intellij) to write R code.
+**Where to learn?** 🔥
+
+* [Swirl](https://swirlstats.com/) <small>(⛪)</small>
+* [WikiBooks](https://en.wikibooks.org/wiki/R_Programming) <small>(🏫)</small>
 </div><div>
 
 A basic script `my_script.R` file:
@@ -26,6 +29,8 @@ From the terminal, you can run the script using:
 ```shell!
 $ Rscript my_script.R
 ```
+
+👉 We often use [R Studio](https://www.rstudio.com/) or [IntelliJ](https://plugins.jetbrains.com/plugin/6632-r-language-for-intellij) to write R code.
 </div></div>
 
 <hr class="sep-both">

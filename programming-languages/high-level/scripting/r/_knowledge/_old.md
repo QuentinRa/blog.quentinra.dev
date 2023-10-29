@@ -30,18 +30,6 @@ The semicolon <code>;</code> at the end of a line is optional. You may use it if
 <tr><td> 
 Use <code>#</code> for comments
 </td></tr>
-<tr><td> 
-Use <code>print(value)</code> to print something.
-
-```r
-x <- "Hello"
-y <- "World"
-print(paste(x, y))
-# [1] "Hello World"
-cat(paste(x, y), sep = "\n")
-# Hello World
-```
-</td></tr>
 <tr><td>
 
 You will use this a lot, you can **see the help for a function** with `?my_function`
@@ -95,17 +83,3 @@ updateR()
 list <- as.data.frame(installed.packages(.libPaths()[1]), stringsAsFactors = F)
 install.packages(list$Package)
 ```
-
-<hr class="sl">
-
-## Sources
-
-* « Take only pictures, leave only footprints. »
-* Swirl, R programming
-* <https://pbil.univ-lyon1.fr/R/pdf/lang01.pdf> (01-04)
-* Initiation à R - Eric Preud’homme
-* Introduction à R - Christophe Lalanne & Bruno Falissard
-* R - Vincent ISOZ, Daname KOLANI
-* Régression avec R - Pierre-André Cornillonn & Eric Matzner-Løber
-
-[References](refs.md)
