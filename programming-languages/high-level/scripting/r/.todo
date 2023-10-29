@@ -1,3 +1,11 @@
+```R
+x <- 5
+```
+
+* `;` is optional
+* `#` for comments
+*
+
 - ?formula, X ~ qual (X explained by qual), ...
 - swirl / https://swirlstats.com/students.html
 

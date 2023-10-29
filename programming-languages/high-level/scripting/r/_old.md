@@ -1,17 +1,5 @@
 # R programming
 
-R is a language that may be helpful to do mathematics. We will use it in other course such as **Statistics**, **Matrices**,  **Numerical analysis** or **Optimization**.
-
-You can use other languages such as Python, Julia, OCaml, according to what you want to do.
-
-<hr class="sl">
-
-## Introduction
-
-The file extension is `.R` but we also write `.Rmd` files that are files with documentation and runnable R code. You may also directly run some code in the console.
-
-Most people code in R using [R Studio](https://www.rstudio.com/), but I will use [R plugin for IntelliJ](https://plugins.jetbrains.com/plugin/6632-r-language-for-intellij) that working exactly the same as R Studio (same interface elements, console, etc.) but in IntelliJ.
-
 You may have to install packages or libraries in the future, simply do
 
 * install a library : `install.packages("name")`
@@ -25,7 +13,6 @@ You can check this fast course to learn the basics of R without details [Learn R
 
 Then here is the real course.
 
-* [Variables](syntax/variables.md)
 * [Types](syntax/types.md)
   * [Strings](syntax/types/strings.md)
   * [Vectors](syntax/types/vectors.md)
