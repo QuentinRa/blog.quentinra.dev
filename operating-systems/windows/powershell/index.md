@@ -2,7 +2,7 @@
 
 [![powershell](../../../cybersecurity/_badges/thmp/powershell.svg)](https://tryhackme.com/room/powershell)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Powershell is a program offering a shell to run commands called **cmdlets** 🦄. It abstracts .NET Common Language Runtime <small>(CLR)</small>.
 
@@ -43,7 +43,7 @@ PS> Get-help | Get-member -MemberType Property
 
 [**Get-ChildItem** - list files]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: list files in a directory
 
@@ -82,7 +82,7 @@ PS> Get-ChildItem [...] -Recurse
 
 [**Set-Location** - go to folder]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: change your working directory
 
@@ -100,7 +100,7 @@ PS> Set-Location -Path "C:/" # Go to folder
 
 [**Get-Location** - get pwd]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: get the path to your working directory
 
@@ -115,7 +115,7 @@ PS> Get-Location
 
 [**Get-Content** - display file]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: reads and outputs the content of a file
 
@@ -139,7 +139,7 @@ PS> Get-Content -Path file.txt
 
 [**Select-Object** - create object]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: create an object; can be used to create an object with fewer properties than another object.
 
@@ -157,7 +157,7 @@ PS> [...] | Select-Object -Property A, B
 
 [**Where-Object** - filter lines]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: only keep objects matching the conditions.
 
@@ -173,7 +173,7 @@ PS> XXX | Where-Object -Property XXX -eq YYY
 
 [**Sort-Object** - sort lines]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: sort lines based on one or more properties.
 
@@ -198,7 +198,7 @@ PS> [...] | Sort-Object SomeProperty,SomeProperty
 
 [**Measure-Object** - count of...]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: number of words/lines/...
 
@@ -217,7 +217,7 @@ PS> [...] | Measure-Object -Character
 
 [**Select-String** - grep lines]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: only keep lines matching a pattern
 
@@ -243,7 +243,7 @@ PS> Select-String [...] -Path "xxx"
 
 [**Invoke-WebRequest** - http request]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: download a file from a URL
 
@@ -267,7 +267,7 @@ PS> Invoke-WebRequest [...] -outfile output
 
 [**Get-NetIPAddress** - list interfaces]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: list network interfaces. Similar to Linux `ip a`.
 
@@ -283,7 +283,7 @@ PS> Get-NetIPAddress
 
 [**Get-NetTCPConnection** - list open ports]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: list open ports. Similar to Linux `netstat`.
 
@@ -307,7 +307,7 @@ PS> Get-NetTCPConnection
 
 [**Test-Path** - test if path exists]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: test if a given path exists.
 
@@ -324,7 +324,7 @@ PS> Test-Path -Path "C:/"
 
 [**Get-FileHash** - file hash]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: get a file hash
 
@@ -341,7 +341,7 @@ PS> Get-FileHash [...] -Algorithm xxx
 
 [**Get-HotFix** - list hotfixes]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: list hot fixes
 
@@ -356,7 +356,7 @@ PS> Get-HotFix
 
 [***-Service** - services]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: you can manipulate services using these.
 
@@ -377,7 +377,7 @@ PS> Start-Service -name spooler  # start
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```ps
 PS> Set-WinUserLanguageList -LanguageList  fr-FR, en-US -force

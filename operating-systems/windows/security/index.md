@@ -2,7 +2,7 @@
 
 [![windowsfundamentals3xzx](../../../cybersecurity/_badges/thm/windowsfundamentals3xzx.svg)](https://tryhackme.com/room/windowsfundamentals3xzx)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ...
 </div><div>
@@ -16,7 +16,7 @@
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [![windowsfundamentals2x0x](../../../cybersecurity/_badges/thm/windowsfundamentals2x0x.svg)](https://tryhackme.com/room/windowsfundamentals2x0x)
 [![windowsfundamentals3xzx](../../../cybersecurity/_badges/thm/windowsfundamentals3xzx.svg)](https://tryhackme.com/room/windowsfundamentals3xzx)
@@ -41,7 +41,7 @@ Stuff that I found, but never read/used yet.
 <details class="details-n">
 <summary>Alternate Data Streams (ADS)</summary>
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 On a file system using NTFS, ADS allows files to have more than one stream (`flux`) of data. By default, every file has only one stream: **:$DATA**. You can inspect a file using
 
@@ -78,7 +78,7 @@ More about it:
 <details class="details-n">
 <summary>Volume Shadow Copy Service (VSS)</summary>
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The Volume Shadow Copy Service (VSS) is handling the creation, and management of **shadow copies**/**snapshot** of the data backed up.
 

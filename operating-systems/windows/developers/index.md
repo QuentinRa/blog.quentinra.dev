@@ -1,6 +1,6 @@
 # Windows For Developers
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Windows is commonly used by developers 🍃. While it is less convenient than Linux in some ways, there are some ways to make it suitable for developing software and everything else 🐊.
 
@@ -25,7 +25,7 @@ While not specific to Windows, these are often used instead of the Linux command
 
 ## Basic knowledge
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Window Path
 
@@ -46,7 +46,7 @@ From it, select environment variables then edit `Path` in User variables.
 
 ## Windows Subsystem for Linux (WSL)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/) is a system that allows us to access a Linux CLI interface. It's basically a [docker](/operating-systems/others/virtualization/docker/index.md).
 
@@ -106,7 +106,7 @@ Most of the time, we integrate WSL within our code environment 🚀. For instanc
 
 ## Cygwin
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Cygwin](https://www.cygwin.com/) is a collection of Unix tools ported to Windows 🐲. It also includes a CLI such as WSL aside from the fact that it only allows us to run installed commands <small>(e.g. there is no APT command...)</small>.
 
@@ -132,7 +132,7 @@ $ make -v
 
 ## Protocols
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Secure Shell (SSH)
 
@@ -160,7 +160,7 @@ Some tools:
 
 ## InnoSetup
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [InnoSetup](https://github.com/jrsoftware/issrc) is a tool for creating modern Windows installers. You can download it [here](https://jrsoftware.org/isdl.php) 🍬. Simply install and run the software.
 
@@ -192,7 +192,7 @@ PS> file.exe /VERYSILENT /MERGETASKS="desktopicon,postinstall"
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [mingw](https://sourceforge.net/projects/mingw/)
 * [winpty](https://github.com/rprichard/winpty)

@@ -2,7 +2,7 @@
 
 [![windowsfundamentals1xbx](../../../cybersecurity/_badges/thm/windowsfundamentals1xbx.svg)](https://tryhackme.com/room/windowsfundamentals1xbx)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Microsoft Windows is the most used operating system. Windows versions that were quite used are Windows XP, Windows 7, Windows 10, and now Windows 11 is slowly gaining new users.
 
@@ -32,7 +32,7 @@ Some dates about the latest versions
 
 ## Windows console
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can run commands on Windows inside a **CMD** (Command Prompt), or inside a [**PowerShell**](../powershell/index.md). The latter is an improved version of the former, which is retro compatible: commands working in a CMD are, ⚠️for most ⚠️, working inside a PowerShell.
 
@@ -103,7 +103,7 @@ If you don't use PowerShell, which is Linux friendly so most Unix commands are a
 [![windowsfundamentals1xbx](../../../cybersecurity/_badges/thm/windowsfundamentals1xbx.svg)](https://tryhackme.com/room/windowsfundamentals1xbx)
 [![windowsfundamentals2x0x](../../../cybersecurity/_badges/thm/windowsfundamentals2x0x.svg)](https://tryhackme.com/room/windowsfundamentals2x0x)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Users** 🧑
 
@@ -145,7 +145,7 @@ CMD> icacls xxx /grant username:F
 
 [![windowsfundamentals1xbx](../../../cybersecurity/_badges/thm/windowsfundamentals1xbx.svg)](https://tryhackme.com/room/windowsfundamentals1xbx)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Modern versions of Windows use the New Technology File System (**NTFS**). Before, FAT16/32, and HPFS were used. FAT is still used for things like USB keys. NTFS is a file system that can repair itself in the event of failure, using logs. It's known as a journaling file system.
 
@@ -180,7 +180,7 @@ I'm using the below Unix paths because they're easier to write. Some paths may h
 
 ## Environment variables
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The syntax to display/use an environment variable is different.
 
@@ -218,7 +218,7 @@ Environment variables are
 [![windowsfundamentals1xbx](../../../cybersecurity/_badges/thm/windowsfundamentals1xbx.svg)](https://tryhackme.com/room/windowsfundamentals1xbx)
 [![windowsfundamentals2x0x](../../../cybersecurity/_badges/thm/windowsfundamentals2x0x.svg)](https://tryhackme.com/room/windowsfundamentals2x0x)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Windows tools can be opened using "execute" (Win  ➕ R) or in a CMD/PowerShell. Extensions that you may see, such as ".exe", or ".msc", are optional (see `PATHEXT`). Two well-known tools are:
 
@@ -278,7 +278,7 @@ Windows tools can be opened using "execute" (Win  ➕ R) or in a CMD/PowerShell.
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Daemons (Linux) are called services on Windows
 * Hyper-v
