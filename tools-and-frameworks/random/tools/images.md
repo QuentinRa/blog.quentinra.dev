@@ -6,7 +6,7 @@ Tools and websites that are useful when dealing with images 🖼️.
 
 ## Search
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 See also: [Game Assets](../content/assets.md).
 
@@ -41,7 +41,7 @@ See also: [Game Assets](../content/assets.md).
 
 ## Creation
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ##### GIFs
 
@@ -84,7 +84,7 @@ See also: [Game Assets](../content/assets.md).
 
 ## Edition
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ##### Remove a background
 
@@ -113,7 +113,7 @@ See also: [Game Assets](../content/assets.md).
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [avif.io](https://avif.io/)
 * [watermarks.io](https://watermarks.io/)

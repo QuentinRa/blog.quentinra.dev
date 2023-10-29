@@ -1,6 +1,6 @@
 # 🎥 Screen Recording 🎥
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 ##### Tools
 

@@ -6,7 +6,7 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 ## 🧑‍🏫 Create polls/forms/... 🧑‍🏫
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 ##### Create Forms 📃
 
@@ -50,7 +50,7 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 ##  🏢 Solutions for companies 🏢
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 ##### AdBlock
 
@@ -102,7 +102,7 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 ## Others
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ##### AI
 

@@ -1,6 +1,6 @@
 # Discord
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Discord](https://discord.com/) is a popular voice and text messaging application.
 
@@ -24,7 +24,7 @@ Discord utilities
 
 ## Basics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Markdown Messages
 
@@ -71,7 +71,7 @@ A few useful links:
 
 ## Advanced
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### BetterDiscord
 

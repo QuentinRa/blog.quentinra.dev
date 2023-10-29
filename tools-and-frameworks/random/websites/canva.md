@@ -1,6 +1,6 @@
 # Canva
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Canva is a popular website to create multiple documents such as slides, resumes, simple text documents etc. ✏️
 
@@ -12,7 +12,7 @@ This page mostly contains some hacky solutions in JavaScript to automate painful
 
 <hr class="sep-both">
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ### Canva: select all of your images
 
@@ -69,7 +69,7 @@ scrollToTheBottomOfElement(document.querySelector('main > div > div'))
 
 ### Canva: remove paid templates
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div class="mt-2 mt-lg-4">
 
 ```javascript!
 setInterval(() => {
@@ -77,7 +77,7 @@ setInterval(() => {
     Array.from(document.querySelectorAll("*[d~='M7.51']")).map(p => p.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode).filter(p => !p.id).forEach(x => x.parentNode?.removeChild(x))}
     , 2000)
 ```
-</div><div>
+</div><div class="mt-lg-4">
 
 This script will remove from the currently displayed entries:
 
@@ -91,7 +91,7 @@ Called every 2 seconds <small>(e.g. continue to delete as you scroll)</small>.
 
 ### Canva: delete all images in the trash automatically
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 There is this video [Canva - How to delete ALL images from trash folder automatically](https://www.youtube.com/watch?v=eCCk5EFYHDM) which uses an auto-clicker, but
 

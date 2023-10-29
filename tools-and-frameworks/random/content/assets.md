@@ -1,6 +1,6 @@
 # 💰 Find 2D/3D assets 💰
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 ##### Platforms for creators
 
