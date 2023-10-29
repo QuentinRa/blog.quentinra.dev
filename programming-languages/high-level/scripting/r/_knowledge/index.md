@@ -95,6 +95,7 @@ x %/% 3       # 1   | integer division
               # see also: "-" /" "*" 
 # Functions
 sqrt(x)       # 2.2 | Square root
+round(x)      # 5   | round down
 abs(x)        # 5   | absolute value
 log(x)        # 1.6 | log10
 xor(T, F)     # T   | Logical XOR
@@ -163,11 +164,45 @@ for (var in vector){
 
 <hr class="sep-both">
 
-## XXX
+## Vectors
 
 <div class="row row-cols-lg-2"><div>
 
-...
+#### Creation
+
+A vector is a set of values. Use `c()` to create a vector. All values must have the same type.
+
+```R
+v <- c(1,2,3,4,5)                # vector: (1 2 3 4 5)
+v <- 1:5                         # vector: (1 2 3 4 5)
+v <- seq(1,5)                    # vector: (1 2 3 4 5)
+v <- vector(mode = "numeric", 5) # empty vector
+```
+
+#### Operations
+
+⚠️ Operators such as `+` or `&&` behave differently on vectors.
+
+```R
+c(1, 2, 3, 4) + c(0,10)
+# implicit: c(1, 2, 3, 4) + c(0,10,0,10)
+# result: vector(1 12 3 14)
+```
+
+#### Indexes
+
+You can use `[]` to access values by their position:
+
+```R
+v[1]         # access the first value
+v[c(1,2)]    # return 2 values
+v[-1]        # all aside from the first value
+v[v > 2]     # only values greater than 2 
+```
+
+⚠️ When using an incorrect index, the value is `NA`.
+
+🚀 `which(cond)` returns a vector of all indexes given a condition.
 </div><div>
 
 ...
@@ -182,10 +217,9 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * [_old](_old.md)
-* `.Rmd` for documentation
 * magrittr [documentation here](https://cran.r-project.org/web/packages/magrittr/magrittr.pdf)
 * `%in%`
-* vector, matrix, data.frame (excel), list (named indexes, diff types)
+* matrix, data.frame (excel), list (named indexes, diff types)
 
 ```
 r <- c(NULL, 3)
@@ -197,4 +231,14 @@ v <- runif(10, 0, 1)
 v <- sapply(v, FUN = function (x) { x > 0.5 })
 ```
 </div><div>
+
+```r
+# you can fill it
+# (random values between [1,5])
+sapply(v, function (unused){ return(sample(1:5, 1)) })
+# [1] 2 5 2 3 4
+
+# generate 10 integers within [0,100]
+runif(10,0,100)
+```
 </div></div>
