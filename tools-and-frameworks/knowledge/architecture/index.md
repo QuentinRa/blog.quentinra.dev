@@ -1,6 +1,6 @@
 # Underlying Architecture 🌱
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Most programs work and process information the same way.
 
@@ -24,7 +24,7 @@ This includes topics such as:
 
 ## Numbers 🔢
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 While systems typically offer types such as `boolean`, `integer`, `float`, and `string`, for a machine, there are usually 4 types:
 
@@ -107,7 +107,7 @@ To add 5 (101) to 5 (101), you need to do it like you would in grad school, with
 
 ## Floating-point numbers
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A floating-point number can be identified by the **decimal point** <small>(a.k.a. radix point)</small>, which is usually either `.` (dot), or `,` (comma).
 
@@ -200,7 +200,7 @@ To find back numerical value, evaluate $(-1)^S * 1.M * 2^{E - q}$.
 
 ## Strings 💬
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A string is an array of characters, such as `'a'`.  A string could have a fixed length, or a variable length. For the latter, we may use a null character such as `\0` to mark the end.
 
@@ -236,7 +236,7 @@ This is a set of rules defining how characters are ordered, compared, how the ca
 
 ## Others
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Null value
 
@@ -272,7 +272,7 @@ In some applications/systems, the number may be a number of days. To represent t
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * bios/uefi (secure boot)
 * cpu

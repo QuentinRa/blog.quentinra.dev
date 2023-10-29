@@ -1,6 +1,6 @@
 # Zipper
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A zipper is a data structure that aggregates multiple data structures. It's often used where there is some concept of "focus" or "cursor". It's present in multiple functional languages such as [OCaml](/programming-languages/high-level/func/ocaml/index.md).
 

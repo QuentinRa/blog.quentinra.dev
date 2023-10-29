@@ -3,7 +3,7 @@
 [![linuxstrengthtraining](../../../cybersecurity/_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 [![c4ptur3th3fl4g](../../../cybersecurity/_badges/thm-p/c4ptur3th3fl4g.svg)](https://tryhackme.com/room/c4ptur3th3fl4g)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Encoding 🖼️️ is a way of presenting data. Unlike encryption 🔒, anyone who can identify the algorithm used can decode the message.
 
@@ -41,7 +41,7 @@ A radix, or base, is a set of unique characters that we can use to encode a mess
 
 ## Division by base
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Division by base is a simple and straightforward way to convert numbers from one base to another.
 
@@ -79,7 +79,7 @@ Then we convert $12=C$, $14=E$, $11=B$, and concatenating them in reverse order 
 
 ## Radix 2 - 🖥️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Radix 2, commonly called binary, is a base made of one and zero. It's the language used by machines 🖥️.
 
@@ -113,7 +113,7 @@ To convert a binary to a decimal, and vice versa, you need to know every power o
 
 ## Radix 8 - 💀
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Radix 8, commonly called octal, is a base made of numbers from zero to seven. It's not commonly used  💀.
 
@@ -147,7 +147,7 @@ Radix 8 numbers may, or may not, start with a `0` (zero), such as `07`. The pres
 
 ## Radix 16 - 🚀
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Radix 16, commonly called hexadecimal, is a base made of numbers from zero to 9, and letters from A to F. It replaced octal, and is the most popular way to write shorter binary numbers 🚀.
 
@@ -185,7 +185,7 @@ From 0 to 9, there are no changes. From 10 to 15, we use letters:
 
 ## Base64 - ✉️
 
-<div class="row row-cols-md-2"><div class="align-self-center">
+<div class="row row-cols-lg-2"><div class="align-self-center">
 
 Base64 is usually used to encode an image/..., so that we can transfer it as a string. Most base64 strings are ending with "=", or "==", which is the padding.
 
@@ -205,7 +205,7 @@ toto
 
 ## URL encoding - 🌍
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 URL encoding, also known as percent-encoding, is an encoding mostly used in URLs and resources, to encode characters that have a special meaning in URLs.
 
@@ -224,7 +224,7 @@ URL encoding, also known as percent-encoding, is an encoding mostly used in URLs
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * binary-coded decimal (BCD)
 * Can put a file in cyber chef

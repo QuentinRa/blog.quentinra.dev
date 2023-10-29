@@ -1,6 +1,6 @@
 # Heredoc
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A [here document](https://en.wikipedia.org/wiki/Here_document), which is commonly shortened to heredoc is a multiline string literal syntax supported by multiple programming languages such as **Bash**, **PHP**, **Ruby**, etc.
 

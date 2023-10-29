@@ -1,6 +1,6 @@
 # Central Authentication Service (CAS)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 CAS (Central Authentication Service) is an open-source SSO protocol to authenticate users across multiple web services.
 
@@ -17,7 +17,7 @@ If a client tries to access a protected resource, they are redirected to the aut
 
 ## CAS in PHP
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 I will download the PHP CAS client in a folder `../cas` without composer, because I couldn't install `composer` (not allowed).
 

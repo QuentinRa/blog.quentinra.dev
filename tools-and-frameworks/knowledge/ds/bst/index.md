@@ -1,6 +1,6 @@
 # Binary Search Tree (BST)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A Binary Search Tree (BST) is a tree with each node having up to two children nodes. The complexity is $O{(n)}$, but, on average, we got $O{(h)}$ with $h$ the height of the tree.
 
@@ -39,7 +39,7 @@ Average time for cardinal:               inf (too long)
 
 ## BST Add Example
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Example of adding a few elements:
 
@@ -67,7 +67,7 @@ The idea is quite simple. To add an element `e`, for each node, starting from th
 
 ## BST Remove Example
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Example of removing a few elements:
 
@@ -86,7 +86,7 @@ We are always replacing the deleted node with the one at its right, unless there
 
 ## BST Mem Example
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Example of checking if an element is within a tree:
 
@@ -106,7 +106,7 @@ If our element `e` is lower than the current node's value `v`, then we check the
 
 ## Other common functions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Minimum
 

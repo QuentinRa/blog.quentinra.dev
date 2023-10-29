@@ -1,6 +1,6 @@
 # AVL trees
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 An AVL (Adelson-Velsky and Landis) is a balanced [Binary Search Tree](../bst/index.md). We will ensure that there is no more than one level of "depth" between branches. The complexity is now $\log{(n)}$.
 
@@ -54,7 +54,7 @@ Average time for cardinal:               inf (too long)
 
 ## Rotations
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Each time we add an element <small>(parent node determined by the algorithm)</small>, we may have to correct imbalances using one of the 4 patterns below:
 
@@ -122,7 +122,7 @@ If we are adding a child to **rl** <small>(=rlh if lr is empty, otherwise either
 
 ## Balancing Algorithm
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The **height** means the length of the longest path from that node to a leaf. The **Balance factor** of a node `bf(node)` is the difference of height between two branches <small>(left child node minus right child node)</small>.
 
