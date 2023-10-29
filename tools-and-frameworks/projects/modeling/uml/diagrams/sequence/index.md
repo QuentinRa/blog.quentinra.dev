@@ -1,6 +1,6 @@
 # Sequence Diagram
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 There are two categories of sequence diagrams. They serve a different purpose and have a different scope 🗺️.
 
@@ -28,7 +28,7 @@ For instance, "Player engages in combat with an enemy character."
 
 ## Basic Overview
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Sequence Diagrams focus on the chronological order interactions among systems or actors. They illustrate the **lifetime** of all entities ⏳.
 
@@ -69,7 +69,7 @@ Some messages are **asynchronous** meaning we are not expecting a response meani
 
 ## Combined Fragments
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Combined Fragments](https://www.uml-diagrams.org/sequence-diagrams-combined-fragment.html) are used to add various types of control flow and interaction scenarios within a sequence diagram.
 
@@ -133,7 +133,7 @@ This allows us to use the `ref` to import them.
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * self messages
 * example with fully instantiated diagram

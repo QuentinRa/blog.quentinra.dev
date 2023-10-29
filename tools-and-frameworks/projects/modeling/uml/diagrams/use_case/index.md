@@ -1,6 +1,6 @@
 # Use Case Diagram
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A Use Case Diagram is used to visualize the functionality of a **system** 🏠 <small>(ex: a restaurant)</small> from the perspective of its **actors** <small>(ex: a client)</small> 🧑.
 
@@ -21,7 +21,7 @@ It's not a temporal diagram, e.g., it doesn't represent actions that can be perf
 
 ## Associations
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Associations are complex. They are only present between the actors and the use cases that the actor "**intends**" to do 📚.
 
@@ -45,7 +45,7 @@ Finally, it could be a **generalization**. It means that the user interacts eith
 
 ## Actors
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can create a generalization between actors. It means that the actors inherit all use cases linked to their parents.
 

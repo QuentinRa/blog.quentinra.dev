@@ -1,6 +1,6 @@
 # StarUML
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [StarUML](https://staruml.io/) is a simple yet complete free UML design tool. 
 
@@ -31,12 +31,12 @@ Once you have installed the software, run it. To start from a clean environment,
 
 ## Editor Overview
 
-<div class="row row-cols-md-2 mt-4"><div class="mt-2">
+<div class="row row-cols-lg-2"><div class="pt-2 mt-3">
 
 ![StarUML Editor](_images/software.png)
 
 💡 The editor <small>(5)</small> is available after selecting an element, either from the view <small>(4)</small> or the model <small>(1)</small>.
-</div><div>
+</div><div class="mt-3">
 
 The editor is divided into five windows.
 
@@ -57,7 +57,7 @@ The editor is divided into five windows.
 
 ## Random Notes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Export Diagram
 

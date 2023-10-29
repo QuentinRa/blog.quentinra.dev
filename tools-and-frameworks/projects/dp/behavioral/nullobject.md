@@ -2,7 +2,7 @@
 
 [Go back](../index.md#behavioral-)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Aliases** 📌: None
 
@@ -29,7 +29,7 @@ For instance, if we fetch records from a database and some have null attributes,
 
 ## Java Implementation
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div class="mt-lg-4 mt-2">
 
 ```java
 public interface IPerson {
@@ -50,7 +50,7 @@ public class NullPerson implements IPerson {
     }
 }
 ```
-</div><div>
+</div><div class="mt-lg-4">
 
 We can code the default behavior however we want:
 

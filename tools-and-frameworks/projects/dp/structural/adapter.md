@@ -2,7 +2,7 @@
 
 [Go back](../index.md#structural-)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Aliases** 📌: Wrapper, Translator
 
@@ -28,7 +28,7 @@ The Adapter is a class that connects the two.
 
 ## Java implementation
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Assuming, you defined that characters could only attack:
 

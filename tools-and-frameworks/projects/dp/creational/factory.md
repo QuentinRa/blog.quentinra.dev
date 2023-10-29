@@ -2,7 +2,7 @@
 
 [Go back](../index.md#creational-)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Aliases** 📌: Virtual constructor
 
@@ -33,7 +33,7 @@ public A someMethod() { return new XXX(); }
 
 ## Java implementations
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div class="mt-4">
 
 ```java
 // ------------ factory related ------------- //
@@ -70,7 +70,7 @@ public class Game implements UnitCreator {
     }
 }
 ```
-</div><div>
+</div><div class="mt-4">
 
 ```java
 // ------------ created ------------- //

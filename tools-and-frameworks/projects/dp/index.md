@@ -1,6 +1,6 @@
 # Design Patterns
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Design patterns are typical solutions used to solve recurring problems in software design 🌺. The initiative was started by the **Gang Of Four**. It was completed [GRASP patterns](https://en.wikipedia.org/wiki/GRASP_(object-oriented_design)) and [Anti-Patterns](https://en.wikipedia.org/wiki/Anti-pattern).
 
@@ -27,7 +27,7 @@ Others: [Java Design Patterns](https://java-design-patterns.com/) + [GitHub Code
 
 ## Common Design Patterns
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Creational 📚
 
@@ -85,7 +85,7 @@ Architectural design patterns aren't official patterns.
 
 ## Anti-Patterns
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Anti-Patterns are well-known bad practices used by programmers  and that should be avoided 💀.
 
@@ -142,7 +142,7 @@ A developer wrote some code and didn't provide any documentation. The maintainer
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Creational
 

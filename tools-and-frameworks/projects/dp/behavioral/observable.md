@@ -2,7 +2,7 @@
 
 [Go back](../index.md#behavioral-)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Aliases** 📌: None
 
@@ -29,7 +29,7 @@ For instance, `A` class `B` will register itself as an observer of class `B`. If
 
 ## Java Implementation
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 For instance, a `game` class might want to be notified when the player does something. The game will be registered as an Observer. 
 

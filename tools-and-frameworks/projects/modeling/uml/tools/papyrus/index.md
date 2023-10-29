@@ -1,6 +1,6 @@
 # Papyrus
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Papyrus](https://eclipse.dev/papyrus/index.php) is an open-source UML tool based on Eclipse. It's a multipurpose software allowing us to:
 
@@ -24,7 +24,7 @@ Once the software is started, create a **new papyrus model**. A model is made of
 
 ## Core concepts
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Model
 
@@ -57,7 +57,7 @@ If you use a perspective at least once, a shortcut will be available right next 
 
 ## Papyrus Interface
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div class="mt-4">
 
 1. **Project explorer** 📂: Double-click on a model to open it
     * Export your diagrams <small>(right-click on model -> export)</small>
@@ -73,7 +73,7 @@ If you use a perspective at least once, a shortcut will be available right next 
 6. **Outline view** 🌍: you can move faster in the model editor view using the Outline tab.
     * You can use it to view your diagram from afar
     * You can change the outline view <small>(by clicking on the tree-like icon)</small> to see your model as a tree
-</div><div class="align-self-center">
+</div><div class="align-self-center mt-4">
 
 ![Papyrus (eclipse) editor](_images/editor.png)
 </div></div>
@@ -82,7 +82,7 @@ If you use a perspective at least once, a shortcut will be available right next 
 
 ## Tips and recommendations
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Don't scroll in the property view
 
@@ -143,7 +143,7 @@ Either by using this icon or <kbd>CTRL+{some arrow}</kbd>, **after selecting ele
 
 ## Class diagrams in Papyrus
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Associations
 
@@ -222,7 +222,7 @@ In Java, you may use classes such as `java.util.Arrays` in your diagrams. ⚠️
 
 ## Code Generation
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Install dependencies
 
@@ -496,7 +496,7 @@ It will generate a new model with the generated Java classes 👑.
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [Papyrus CEA Guide](https://www.eclipse.org/papyrus/resources/TutorialOnPapyrusUSE_d20101001.pdf)
 * Warning: do not create an activity twice (use sync with editor, navigate to find it)

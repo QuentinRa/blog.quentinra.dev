@@ -1,6 +1,6 @@
 # Object Diagram
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 An object diagram is a concrete version of a [class diagram](../class/index.md). It means we are instantiating classes into `variables` and we are giving values to all attributes. Associations are instantiated into links.
 

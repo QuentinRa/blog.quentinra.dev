@@ -1,6 +1,6 @@
 # Activity Diagram
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Activity diagrams <small>(UML)</small> are often confused with Flowchart diagrams <small>(not UML nor specific to programming)</small> as they are similar 🗺️.
 
@@ -23,7 +23,7 @@ The transitions are the options we select to navigate between them.
 
 ## States
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A state is essentially one of the program's states. There are 3 kinds:
 
@@ -57,7 +57,7 @@ Each state may contain some methods:
 
 ## Transitions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Transitions are the arrows linking one state with another. On each, you may add one of these:
 

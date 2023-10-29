@@ -1,6 +1,6 @@
 # Diagrams.net
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The website [diagrams.net](https://app.diagrams.net/) is a quite popular online tool for creating simple and non-standardized diagrams.
 

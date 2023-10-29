@@ -1,6 +1,6 @@
 # Coding Practices
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 When developing software, there are well-known guidelines, [patterns](../dp/index.md), methodologies and tools that can help boost developers. 🥇
 </div><div>
@@ -12,7 +12,7 @@ One of the life-saving methodologies, when you have a bug, is the [Rubber duck d
 
 ## Coding Helpers
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Websites
 
@@ -35,7 +35,7 @@ A few notables:
 
 ## Coding Principles
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Don’t repeat yourself (DRY) 🎰
 
@@ -107,7 +107,7 @@ SOLID is a popular acronym in object-oriented projects:
 
 ## Code Formatting 🧼
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 It's common for developers to have different preferred formatting habits when writing code. A few examples with a simple "if" 😱:
 
@@ -141,7 +141,7 @@ To avoid making the code hard to read and maintain, developers often define form
 
 ## Pair-programming
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Pair-programming 🪷 or [Mob programming](https://en.wikipedia.org/wiki/Mob_programming) <small>(when more than two)</small> 🪖 is one of the most well-known coding practices.
 
@@ -168,7 +168,7 @@ There are many extensions to popular IDEs or text editors allowing us to do pair
 
 ## Programming Paradigms
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Model-Driven Development 🪞
 

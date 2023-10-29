@@ -2,7 +2,7 @@
 
 [Go back](../index.md#creational-)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Aliases** 📌: None
 
@@ -27,7 +27,7 @@
 
 ## Java implementation
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Lazy instantiation
 

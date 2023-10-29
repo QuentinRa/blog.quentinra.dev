@@ -2,7 +2,7 @@
 
 [Go back](../index.md#creational-)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Aliases** 📌: None
 
@@ -27,7 +27,7 @@
 
 ## Java implementation
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div class="mt-lg-4 mt-2">
 
 ```java
 public class BankAccount implements Cloneable {
@@ -59,7 +59,7 @@ public class Main {
     }
 }
 ```
-</div><div>
+</div><div class="mt-lg-4">
 
 If implementing `Cloneable` isn't working, you can always fallback to the previous way of doing it.
 

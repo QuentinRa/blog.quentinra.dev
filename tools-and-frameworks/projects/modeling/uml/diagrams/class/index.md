@@ -1,6 +1,6 @@
 # Class Diagrams
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A class diagram is used to represent the structure of a system. It's mostly used for [object-oriented](/programming-languages/_paradigm/oo.md) modeling.
 
@@ -24,7 +24,7 @@ There are also **associations** 🛣️ which represent the relationships betwee
 
 ## Basics syntax
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 We use "member" to refer to both attributes and operations.
 
@@ -64,7 +64,7 @@ Natively, there are not many UML types so most are adding their own types based 
 
 ## Overview
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Classes
 
@@ -118,7 +118,7 @@ Each attribute must have at least a name followed by parenthesis. It may have a 
 
 ## Associations and multiplicity
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Associations represent which classes are linked to which other classes.
 
@@ -195,7 +195,7 @@ For the inclusion constraint, we use an arrow instead of a dotted line. If the a
 
 ## Inheritance
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Generalization
 
@@ -253,7 +253,7 @@ There is an alternative design called lollipop representation. `Interface1` is i
 
 ## Packages
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Packages are used to group and sort classes.
 </div><div>
@@ -265,7 +265,7 @@ Packages are used to group and sort classes.
 
 ## Special associations
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Compositions
 

@@ -1,6 +1,6 @@
 # Agile Scrum 🚀
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Agile **Scrum** (`Mêlée au rugby`) is one of the most widely used **Agile methodologies** (`méthodes agiles`). This is a kind of incremental method ([wiki](https://en.wikipedia.org/wiki/Incremental_build_model)) that is repeating small cycles (**sprints/iterations**).
 
@@ -20,7 +20,7 @@ The Agile manifesto (`Manifeste Agile`), signed in 2001, defines the guidelines 
 
 **Agile** is a **mindset** (`état d'esprit`) 🤓, and **Scrum** is a framework (`cadre de travail`~=methodology) 🛠. You need to learn both 🚀.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Agile-Scrum is based on **3 pillars** (transparency, inspection, adaptation), and **5 values**
 
@@ -48,7 +48,7 @@ Agile methodologies are based on **12 principles** and **4 values** ([principles
 
 Scrum involves **3 roles** in a team
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### 👑 Product Owner (PO)
 
@@ -84,7 +84,7 @@ The Scrum Master is an expert in Scrum, and they must **ensure that Scrum is use
 
 ## 📜 Scrum 📜
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The development is made of iterations, a repetition of cycles, called **sprints** (=**iteration**). The result of your sprint is usually called an **increment**. A sprint is made of **4 ceremonies** (`rituels`).
 
@@ -103,7 +103,7 @@ A sprint is considered a project as a whole, so you have to write tests and docu
 
 ## Sprint 0
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 This is the first sprint, but it's labeled as **Sprint 0**, because this is not a real sprint and this is before the first sprint. You will set up everything during this sprint, and create the workflow of the application. It means, you **have to**
 
@@ -123,7 +123,7 @@ And **write some code**, but only **the bare minimum** so that everyone can star
 
 ## 1. Sprint Planning
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The main goal of the **Sprint Planning** is to decide your **Sprint goal**. Your **Sprint goal** is what you want to achieve at the end of the sprint.
 
@@ -135,7 +135,7 @@ The main goal of the **Sprint Planning** is to decide your **Sprint goal**. Your
 
 The Product Owner is **proposing a goal**, and the **items** of the **product backlog** that you may do.  The dev team is picking items (=>value for the client, effort), explicitly defining when they are considered to be "done" (doc? tests?), in the **sprint backlog**. You need to have a clear idea of **what makes the sprint successful**, and how you will achieve the **sprint goal**. They will redact **two of Scrum's artifacts**:
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### 🪀️  Product backlog
 
@@ -280,7 +280,7 @@ Here is an example with the main page of a desktop application
 
 ## 2. Daily Scrum or standup/stand-up
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 Check the **progress**. What each one did **yesterday**, what they are planning to do **today**. Identify **blockers** and **challenges**. The purpose is **informative**, a sort of coffee break 🍵 (`pause café`). If you don't drink coffee, maybe chatting while playing a game might be a new way of approaching this (ball ⚾, cards 🃏, etc.). Everyone is supposed to stand up (`rester debout`) 👍 as this shouldn't last long.
 
@@ -306,7 +306,7 @@ Check the **progress**. What each one did **yesterday**, what they are planning 
 
 ## 3. Sprint review
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 At the end of the iteration, you must **demonstrate** to the client (and sometimes your team) **what you did**, and the items you completed (also talk about what you planned, but didn't make). Take note of what the client wants to **review** in **the product backlog**.
 
@@ -323,7 +323,7 @@ Some organizations do a weekly demo with the team, so that everyone knows what t
 
 ## 4. Sprint retrospective
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 At the end of the iteration, identify the areas for improvement. Find out **what didn't work well** and, of course, **what worked well**.
 
@@ -346,7 +346,7 @@ You must select **one thing** and focus on it. Focusing on one thing means makin
 
 ## Metrics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The following are ways to check the progress or get key indicators of your project.
 
@@ -374,7 +374,7 @@ You may use a **burn-down chart** (or a **burn-up chart**) to represent this gra
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Concepts
 

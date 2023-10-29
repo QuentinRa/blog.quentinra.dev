@@ -1,6 +1,6 @@
 # PlantUML
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [PlantUML](https://plantuml.com/) (8.6k ⭐) is a tool and a website to generate UML diagrams from code instructions.
 

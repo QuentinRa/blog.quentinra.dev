@@ -2,7 +2,7 @@
 
 [Go back](../index.md#structural-)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Aliases** 📌: None
 
@@ -34,7 +34,7 @@ Each group can contain other groups and/or components.
 
 ## Java implementation
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div class="mt-lg-4 mt-2">
 
 ```java
 // Component (Abstract Class)
@@ -73,7 +73,7 @@ public class Folder implements FileSystemComponent {
     }
 }
 ```
-</div><div>
+</div><div class="mt-lg-4">
 
 ```java
 public class Main {

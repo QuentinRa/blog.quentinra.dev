@@ -1,6 +1,6 @@
 # Unified Modeling Language (UML)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Unified Modeling Language (UML)](https://www.omg.org/spec/UML/) is a standardized visual modeling language used to both **design** ✍️ and **document** 📝 systems.
 

@@ -1,6 +1,6 @@
 # Human-machine interfaces
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 Human-machine interfaces (HMI, `IHM`, `Interfaces Homme-machine`) are interfaces connecting humans and machines, for instance, a mail client. More broadly, this includes any programs or websites. 
 
@@ -33,7 +33,7 @@ Other tools
 
 ## 👲 Users 👲
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Before coding some application, you must think about what kinds of users will use it
 
@@ -61,7 +61,7 @@ You can't make something that would be perfect for everyone, but try to make som
 
 ## 📄 Steps 📄
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Usual steps
 
@@ -89,7 +89,7 @@ OR you can follow my steps
 
 Jakob Nielsen wrote the **10 principles** that you should <s>MUST 😠</s> take into account. See [ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/).
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 1. Keep the user updated on what's happening
 
@@ -145,10 +145,10 @@ Jakob Nielsen wrote the **10 principles** that you should <s>MUST 😠</s> take 
 
 ## Additional notes
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div class="mt-3">
 
 * 🤔️ It's better to have one relatively long loading time rather than many for resources that the user is likely to request
-</div><div>
+</div><div class="mt-3">
 
 * 🦣 A screen will most likely have more width than height, so you should exploit the width.
 
@@ -161,7 +161,7 @@ Jakob Nielsen wrote the **10 principles** that you should <s>MUST 😠</s> take 
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Skeuomorph
 </div><div>

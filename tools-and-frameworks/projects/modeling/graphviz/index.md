@@ -1,6 +1,6 @@
 # Graphviz
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Graphviz](https://graphviz.org/) is a popular tool to  generate graphs.
 

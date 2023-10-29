@@ -1,6 +1,6 @@
 # Database Diagram
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A database diagram seems to be an unofficial diagram mostly based on a simplified [Class Diagram]() with some semantic changes.
 
@@ -29,7 +29,7 @@ Some attributes such as `id` are special attributes called **identifiers**. They
 
 ## My notes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Identifiers
 

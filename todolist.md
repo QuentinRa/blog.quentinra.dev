@@ -12,7 +12,7 @@ List of courses that have note which were not added yet.
 
 **Tools and Frameworks**
 
-* `(review, typos)` Pandora, JetBrains plugin development, HMI, Graphviz
+* `(review, typos)` Pandora, JetBrains plugin development, HMI, Graphviz, Agile Scrum
 * `(current)` **GitLab CI**
 * Project + Tools
 </div><div>
