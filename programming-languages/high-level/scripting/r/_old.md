@@ -21,7 +21,6 @@ Then here is the real course.
   * [Contingency tables](syntax/types/table.md)
   * [Factors](syntax/types/factors.md)
   * [Data.frame](syntax/types/data-frame.md)
-* [Operators](syntax/operators.md)
 * [Structures](syntax/structures.md)
 * [Functions](syntax/functions.md)
 * [Vector Functions](syntax/types/vectors-fun.md)
