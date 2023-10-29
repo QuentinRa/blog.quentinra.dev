@@ -115,14 +115,47 @@ T || F        # Logical OR
 
 <div class="row row-cols-lg-2"><div>
 
+While R has some control-flow structures, it's better and recommended to use functions instead.
+
 #### Branching
 
-...
+```r
+if (condition) {
+  # code
+}
+
+if (condition) {} else {}
+
+# res = condition ? if_true : if_false
+res <- ifelse(condition, if_true, if_false)
+```
+
+**switch**
+
+```r
+res <- switch(value, case_1, case_2, case_n)
+```
 </div><div>
 
 #### Loops
 
-...
+* `next`: in a loop, go to the next iteration
+* `break`: in a loop, exit the loop
+
+```r
+while(condition) {}
+
+# use break to exit
+repeat {}
+```
+
+**foreach / for i in**
+
+```r
+for (var in vector){
+  
+}
+```
 </div></div>
 
 <hr class="sep-both">
