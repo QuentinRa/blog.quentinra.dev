@@ -38,21 +38,39 @@ $ Rscript my_script.R
 We use `<-` to assign a variable.
 
 ```R
-a <- "test"
-b <- 5
-r <- NULL
-assign(a, "test")
+a <- 5
+assign(a, 5)
 ```
 
 ⚠️ You can use the `=` symbol too as [described here](https://developer.r-project.org/equalAssign.html).
 
 #### Types
 
-...
+In R, all types are vectors. `5` is a vector of size `1`.
 
-#### Conversions
+```R
+v <- 5 + 5.3        # numeric
+v <- i              # complex
+v <- "a text"       # character
+v <- "a text"       # character
+v <- T && F         # logical
+v <- TRUE && FALSE  # logical
+v <- NULL           # Null (empty/no value)
+v <- NA             # Not Available (missing value)
+```
 
-...
+To declare an empty string/..., you can use:
+
+```R
+str <- character(1) # 1 == vector of size 1
+```
+
+Useful methods:
+
+* `class(v)`: returns the class of `v`
+* `mode(v)`: returns the mode of `v`
+* `is.classname(v)`: returns true if `v` is an instance of `classname`
+* `as.classname(v)`: convert `v` to an instance of `classname`
 </div><div>
 
 #### Print some text in the terminal
@@ -83,6 +101,7 @@ xor(T, F)     # T   | Logical XOR
 # Logicial
 x > 5         # see also: >, >=, <=, <
               # see also: ==, !=, !
+              # see also: identical(x, y)
 T && F        # Logical AND
 T || F        # Logical OR
 ```
@@ -118,6 +137,7 @@ Stuff that I found, but never read/used yet.
 * `.Rmd` for documentation
 * magrittr [documentation here](https://cran.r-project.org/web/packages/magrittr/magrittr.pdf)
 * `%in%`
+* vector, matrix, data.frame (excel), list (named indexes, diff types)
 
 ```
 r <- c(NULL, 3)
