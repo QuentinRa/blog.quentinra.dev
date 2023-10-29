@@ -431,5 +431,9 @@ xxx.adoc
 https://github.com/mikeerickson/validatorjs
 https://localizejs.com/
 https://github.com/naptha/tesseract.js
+
+https://stackify.com/blog/
+https://zbib.org/
+https://github.com/myles/awesome-static-generators#documentation
 ```
 </div></div>

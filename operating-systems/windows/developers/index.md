@@ -202,6 +202,7 @@ Stuff that I found, but never read/used yet.
 * [chocolatey](https://chocolatey.org/)
 * [autohotkey](https://www.autohotkey.com/)
 * [voidtools](https://www.voidtools.com/)
+* [cyberduck](https://cyberduck.io/)
 </div><div>
 
 ```ps

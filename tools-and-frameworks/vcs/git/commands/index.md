@@ -500,6 +500,8 @@ Stuff that I found, but never read/used yet.
 * `git switch`
 * `git filter-branch` (see [disable git-lfs](https://stackoverflow.com/questions/48699293/how-do-i-disable-git-lfs), and [here](https://stackoverflow.com/questions/43762338/how-to-remove-file-from-git-history)) 
 * `git filter-repo`
+* `git diff -U3 > xxx.patch`
+* `git apply xxx.patch`
 </div><div>
 
 Cheatsheets

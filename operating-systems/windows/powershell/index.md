@@ -389,4 +389,5 @@ foreach($item in $values){}
 </div><div>
 
 * ISE
+* `$Env:path = "$Env:path;${pwd}\bin"`
 </div></div>

@@ -15,6 +15,7 @@
 * [fanatical](https://www.fanatical.com/) (👻, games)
 * [eneba](https://www.eneba.com/) (👻, games)
 * [humblebundle](https://www.humblebundle.com/) (👻, books and games)
+* [packtpub](https://www.packtpub.com/) (👻, books)
 </div><div>
 
 ##### Money
