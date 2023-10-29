@@ -1,6 +1,6 @@
 # Recursivity
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Recursivity/Recursion is a concept that can be used in various programming paradigms. It mostly refers to a function **calling itself**.
 

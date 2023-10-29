@@ -1,6 +1,6 @@
 # Operators
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Many programming languages implement the same operators for common operations, with some considerations:
 
@@ -22,7 +22,7 @@ x = 5
 
 ## Arithmetic operators
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 These operators represent arithmetic operations.
 
@@ -60,7 +60,7 @@ x /= 1     // same as "x = x / 1"
 
 ## Comparison operators
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Most of the time, we are executing a different code according to the value of a variable. We have operators to compare variables/values.
 

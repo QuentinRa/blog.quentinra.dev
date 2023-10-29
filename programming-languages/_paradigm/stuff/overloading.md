@@ -1,6 +1,6 @@
 # Function Overloading
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Function overloading in the traditional sense refers to a feature allowing multiple functions to have the **same name**, but with different parameter lists <small>(more or fewer arguments, different types...)</small>.
 

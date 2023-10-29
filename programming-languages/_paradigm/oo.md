@@ -1,6 +1,6 @@
 # Oriented-Object programming
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Object-Oriented Programming (**OOP**) 🧸 is a paradigm emphasizing the use of **objects** to encapsulate both data and code.
 
@@ -22,7 +22,7 @@ Some common concepts are:
 
 ## Classes and objects
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A **class** can be seen as a **template**/blueprint 🖨️ to create objects. It defines an **abstract** concept, such as a person or an animal... while an **object** is **concrete**, for instance, the person "John Doe" 🪆.
 
@@ -101,7 +101,7 @@ String defaultName = Person.DEFAULT_NAME;
 
 ## Access control
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Classes, methods, attributes, and many other concepts have some form of access control commonly done using a visibility modifier.
 
@@ -129,7 +129,7 @@ Common modifiers are:
 
 ## Inheritance
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Inheritance allows classes to be based on another class. They will inherit [attributes](#attributes) and [methods](#methods), and may be able to:
 
@@ -187,6 +187,6 @@ A a = new B(); // if it works with B, then it works with C
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 </div><div>
 </div></div>
