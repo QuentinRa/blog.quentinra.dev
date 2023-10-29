@@ -23,8 +23,6 @@ Then here is the real course.
 * [Functions](syntax/functions.md)
 * [Vector Functions](syntax/types/vectors-fun.md)
 
-And here you can learn how to write [Rmd documentation](rmd.md).
-
 <table class="table border-dark table-bordered table-striped">
 <tr><th class="text-center">Other notes about the Language</th></tr>
 <tr><td>

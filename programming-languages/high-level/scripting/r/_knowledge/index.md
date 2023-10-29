@@ -130,17 +130,21 @@ if (condition) {} else {}
 res <- ifelse(condition, if_true, if_false)
 ```
 
-**switch**
+There is also the `switch`:
 
 ```r
-res <- switch(value, case_1, case_2, case_n)
+res <- switch(index, value_0, value_1, value_n)
 ```
 </div><div>
 
 #### Loops
 
+Inside any loop, you can use:
+
 * `next`: in a loop, go to the next iteration
 * `break`: in a loop, exit the loop
+
+To repeat some code until you are done:
 
 ```r
 while(condition) {}
@@ -149,13 +153,24 @@ while(condition) {}
 repeat {}
 ```
 
-**foreach / for i in**
+To iterate vectors, you can use `for`:
 
 ```r
 for (var in vector){
-  
 }
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-lg-2"><div>
+
+...
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">

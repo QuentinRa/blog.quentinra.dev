@@ -1,22 +1,4 @@
-# Learn basics in 5 minutes
-
-[Go back](index.md)
-
-You will learn the most basic things you need to know to write some code. You may need to check the files/plots functions later if you are planning to do some statistics.
-
-<hr class="sl">
-
-## Variables
-
-You can assign a variable `x` to a value `5` using `<-`.
-
-```r
-x <- 5
-```
-
-<hr class="sr">
-
-## Expressions
+# Expressions
 
 You can do comments with `#`. You may or not add a `;` at the end of a line.
 
@@ -42,18 +24,6 @@ my_function <- function (x, y=2){
 
 my_function(5) # y = 2
 my_function(y=3, x=5) # use names
-```
-
-<hr class="sl">
-
-## Statements
-
-Aside from `if` and `for i in` (explained later), you won't use and should not use any structure.
-
-```r
-if ( condition ) {
-    // ...
-}
 ```
 
 <hr class="sl">
