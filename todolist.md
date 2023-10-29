@@ -6,7 +6,7 @@ List of courses that have note which were not added yet.
 
 **Programming Languages**
 
-* `(review, typos)` web (general, highlight.js), API, Java/Gradle (JAR), EasyMDE
+* `(review, typos)` web (general, highlight.js), API, Java/Gradle (JAR), EasyMDE, R
 * SEO
 * LIBS
 
@@ -21,6 +21,10 @@ List of courses that have note which were not added yet.
 
 * `(review, typos)` Linux + Processes + Expect
 * Networking (+bridges)
+
+**Math**
+
+* Probabilities, Matrices, Graphs
 
 **QUID**
 
