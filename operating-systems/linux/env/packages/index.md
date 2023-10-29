@@ -2,7 +2,7 @@
 
 [![linuxfundamentalspart3](../../../../cybersecurity/_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 On Linux distributions, packages are archives used to share:
 
@@ -35,7 +35,7 @@ In a nutshell, we often see these combinations:
 ++++++
 [**apt** - package manager]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: `apt` is the default package manager on well-known Linux distros such as Debian/Ubuntu.
 
@@ -87,7 +87,7 @@ $ ls /etc/apt/apt.conf.d/   # proxy conf etc.
 
 [**aptitude** - package manager]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: `aptitude` <small>(which has to be installed)</small> is the same as `apt`, but there is a graphical interface.
 
@@ -107,7 +107,7 @@ $ sudo aptitude install nano
 
 [**dpkg** - package manager]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: `apt` uses the lower-level package manager `dpkg` to install packages. Some developers may directly interact with it.
 
@@ -120,7 +120,7 @@ $ sudo dpkg -i xxx.deb
 
 [**snap** - package manager]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: snap packages are a modern way to share application. They contain all dependencies, and support automatic updates. Some cons are their larger size and sometimes there are performance issues.
 
@@ -140,7 +140,7 @@ $ sudo snap install --classic xxx
 
 [**update-alternatives** - 🛻]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: available on Debian-based distributions. Allow us to switch between multiple versions of a same program.
 
@@ -158,7 +158,7 @@ $ sudo update-alternatives --config php
 
 ## Mirrors
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 To reduce the time it takes to download packages, multiple mirrors of package repositories are set up, and users should use the nearest ones. A mirror is basically a copy of a package repository.
 
@@ -210,7 +210,7 @@ $ aptly mirror update node20
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [flatpak](https://www.flatpak.org/)
 

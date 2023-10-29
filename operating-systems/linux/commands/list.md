@@ -1,6 +1,6 @@
 # Linux commands
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Many Linux commands are complexes and have multiple options or multiple ways to achieve the same purpose. This page describes some uses and some options of commands that are frequently used.
 
@@ -22,7 +22,7 @@ $ echo "/" | xargs ls    # ls "/"
 
 [**man** - commands manual]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: `man` is a manual for many commands. It may have to be installed.
 
@@ -72,7 +72,7 @@ $ man 3 fopen
 
 [**info** - alternative to `man`]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: Alternative to `man`.
 
@@ -97,7 +97,7 @@ $ info ls
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 [![linux1](../../../cybersecurity/_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: print text, usually for debugging or displaying instructions/results
 
@@ -136,7 +136,7 @@ $ printf "%s\n" "Hello, World"
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 [![linux1](../../../cybersecurity/_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚:
 
@@ -183,7 +183,7 @@ $ cat f0 f1 - > f2
 
 [**less/more** - read a file]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: both are used to browse files/content from the CLI.
 
@@ -220,7 +220,7 @@ $ xdg-open URL
 
 [**tee** 🧽 - one to many]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: tee can be used to redirect one input to multiple sources. For instance, you can redirect the output to a file and `stdout`.
 
@@ -237,7 +237,7 @@ $ tee output1 output2 < file
 
 [**clear** - clear the terminal]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: clear the terminal
 
@@ -253,7 +253,7 @@ $ clear
 
 [**shopt** - configure the shell]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: change the terminal behavior
 
@@ -277,7 +277,7 @@ $ shopt -pu nullglob
 
 [**alias** - aliases of commands]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: create a command that is an alias of another commands with usually some arguments.
 
@@ -310,7 +310,7 @@ $ alias
 
 [**id** - user info]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: info about a user
 
@@ -326,7 +326,7 @@ $ id username # some user
 
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: username of the current user
 
@@ -340,7 +340,7 @@ username
 
 [**uname** - machine info]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: info about the machine
 
@@ -357,7 +357,7 @@ $ uname -a # all
 
 [**date** - date & time]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: info about the machine
 
@@ -379,7 +379,7 @@ Mon 12 Oct 2020 08:32:11 PM EDT
 
 [**sudo** - run as]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: Execute a command `<command>` with elevated privileges.
 
@@ -402,7 +402,7 @@ $ sudo -s
 
 [**shutdown** - stop/reboot/...]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: stop or reboot an operating system.
 
@@ -448,7 +448,7 @@ $ pwd
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 [![linux1](../../../cybersecurity/_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: list all files in a directory. Both are the same, but `dir` is rarely used. `tree` display files in a tree-like format.
 
@@ -502,7 +502,7 @@ $ tree .
 
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: move to another directory
 
@@ -544,7 +544,7 @@ $ popd       # go back to folderA
 [![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 [![linuxstrengthtraining](../../../cybersecurity/_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: create one or more folders
 
@@ -567,7 +567,7 @@ $ mkdir -p folder0/folder1/folder2
 [![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 [![linux1](../../../cybersecurity/_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: there is no specific command to create a file, but there are multiple ways to achieve it: `touch`, `cp`, `truncate`, `>`, `:>`...
 
@@ -604,7 +604,7 @@ $ truncate -s 0 file
 
 [**ln** - create a link]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: create a symbolic/hard link
 
@@ -623,7 +623,7 @@ $ ln -s target output
 [![linuxstrengthtraining](../../../cybersecurity/_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 [![linux2](../../../cybersecurity/_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: takes a list of folders/files to move, and a destination. Move all files/folders to the destination.
 
@@ -648,7 +648,7 @@ $ mv toto toto0
 [![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 [![linuxstrengthtraining](../../../cybersecurity/_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: takes a list of folders/files to copy, and a destination. Copy all files/folders to the destination.
 
@@ -678,7 +678,7 @@ $ cp -r all_toto/ all_toto_copy
 [![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 [![linux2](../../../cybersecurity/_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: use `rm` to remove files/folders. `rmdir` is usually not used.
 
@@ -739,7 +739,7 @@ Size: 4096 -- Name: toto -- Perms: 755 / drwxr-xr-x -- type: directory
 
 [**diff/patch** - diff and patch]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: you can examine the difference between two files using `diff`. You can use `patch` to fix some differences.
 
@@ -793,7 +793,7 @@ $ du -sh folder
 
 [**basename** - get the filename]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: get the filename from a path.
 
@@ -807,7 +807,7 @@ passwd
 
 [**dirname** - parent folder]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: get the parent folder of a file.
 
@@ -823,7 +823,7 @@ $ dirname /etc
 
 [**realpath** - resolve path]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: get the absolute path to the given argument. Patterns are evaluated and symoblic links are resolved.
 
@@ -839,7 +839,7 @@ $ realpath ~
 
 [**zip/unzip/...** - zip files]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: zip/unzip a .zip.
 
@@ -890,7 +890,7 @@ $ tar -xvf archive_name.tar.gz
 
 [![linux1](../../../cybersecurity/_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: swap/log in as another user
 
@@ -928,7 +928,7 @@ $ useradd username -g usergroup -b custom/path/to/home -m
 
 [**usermod** - edit users]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: add users to a group... Don't forget to log back in for the changes to be applied.
 
@@ -963,7 +963,7 @@ $ sudo usermod -u newUID oldUID
 
 [**deluser** - delete a user]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: delete a user
 
@@ -976,7 +976,7 @@ $ deluser username
 
 [**passwd** - change password]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: change a user's password
 
@@ -1004,7 +1004,7 @@ $ passwd username
 
 [**groupadd** - create a group]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: create a group
 
@@ -1017,7 +1017,7 @@ $ groupadd group_name
 
 [**groupmod** - edit groups]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: edit a group information.
 
@@ -1039,7 +1039,7 @@ $ sudo groupmod -n newname oldname
 
 [**delgroup** - delete a group]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: delete a group
 
@@ -1056,7 +1056,7 @@ $ delgroup group_name
 
 [![linux2](../../../cybersecurity/_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: manage a file/folder permissions
 
@@ -1142,7 +1142,7 @@ $ umask u=rwx,g=rx,o=r
 
 [**which/whereis** - command]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: find a command
 
@@ -1168,7 +1168,7 @@ ls: /bin/ls /usr/share/man/man1/ls.1.gz
 
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: find a file/folder. There are a ton of options.
 
@@ -1225,7 +1225,7 @@ These are rarely used:
 
 [**locate** - file]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: search a file in a local database of files. The database must be updated manually `sudo updatedb`.
 
@@ -1249,7 +1249,7 @@ This sections does NOT include file editors.
 
 [**head/tail** - head/tail of a file]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: show the $n$ first/last lines of a file. Both a working the same, `head` is for the first lines, `tail` is for the last lines.
 
@@ -1275,7 +1275,7 @@ $ head file -n -5
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 [![adventofcyber4](../../../cybersecurity/_badges/thm/adventofcyber4/day2.svg)](https://tryhackme.com/room/adventofcyber4)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: search files based on their content.
 
@@ -1320,7 +1320,7 @@ $ egrep "opt?" * # ✅ same as grep -E
 
 [**sed** - search and replace]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: sed has many uses. You can apply simple modification on the file, or search and replace something.
 
@@ -1387,7 +1387,7 @@ $ sed "s/^\(S.*\)/# \1./" file
 
 [**awk** - data extraction]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: most of the time, there are other solutions that are more appropriate such as `sed`. `awk` is a mix of `sed`, `cut`, `tr`...
 
@@ -1425,7 +1425,7 @@ $ awk 'NR > 3 {print $1 $3}' file
 
 [**cut** - data extraction]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: extract "fields" from a table For instance, given the following file:
 
@@ -1451,7 +1451,7 @@ root:0
 
 [**tr** - replace character]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: replace a character with another, or delete a character.
 
@@ -1473,7 +1473,7 @@ $ cat file | tr -d 'W'
 
 [**nl** - line numbering]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: number lines of files
 
@@ -1496,7 +1496,7 @@ $ nl -ba file
 
 [**wc** - number of lines/...]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: count words/lines/characters
 
@@ -1522,7 +1522,7 @@ World # <CTRL+D>
 
 [**sort** - sort lines]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: output the sorted file
 
@@ -1551,7 +1551,7 @@ $ sort s -t: -k2.0,2.1 # range
 
 [**uniq** - duplicates lines]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: remove lines or indicate how many duplicates there are for each unique line.
 
@@ -1586,7 +1586,7 @@ $ uniq -c < file
 
 [![linuxfundamentalspart3](../../../cybersecurity/_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: download files/folders.
 
@@ -1613,7 +1613,7 @@ $ wget --no-check-certificate [...] # no SSL
 
 [**curl** - do HTTP requests]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: do GET/POST/... requests.
 
@@ -1643,7 +1643,7 @@ $ curl -X POST 'URL' -d 'key=value' -H 'Content-Type: application/x-www-form-url
 
 [**time** - execution time]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: track the time a command takes.
 
@@ -1661,7 +1661,7 @@ sys     0m0.000s
 
 [**xrandr** - display settings]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: set the size, orientation, brightness of the screen...
 
@@ -1682,7 +1682,7 @@ $ xrandr --output DP-2 --brightness 0.5
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [modern-unix](https://github.com/ibraheemdev/modern-unix)
 * [pretty CSV](https://www.stefaanlippens.net/pretty-csv.html)

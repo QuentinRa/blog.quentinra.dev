@@ -1,6 +1,6 @@
 # expect
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [expect](https://linux.die.net/man/1/expect) is an automation tool for automating interactive tasks. 🤖. For instance, we could automatically enter credentials to a command.
 
@@ -26,7 +26,7 @@ $ ./myscript.exp
 
 ## Expect Basics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Basic Usage
 

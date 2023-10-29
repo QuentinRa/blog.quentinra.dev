@@ -1,6 +1,6 @@
 # Files and Filesystem
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Linux follows a hierarchical file system, known as the Filesystem Hierarchy Standard (FHS). The parent of every folder is called the root and correspond to `/`.
 
@@ -26,7 +26,7 @@ Linux supports multiple filesystems. Ext4 is the default one for many Linux dist
 
 [![linuxfundamentalspart2](../../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### User  Home (<code>domicile</code>) 🏡
 
@@ -69,7 +69,7 @@ System logs and application logs are usually stored in `/var/log/`.
 
 [![linuxfundamentalspart2](../../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Empty file 🧭
 
@@ -107,7 +107,7 @@ username ALL=(user2) NOPASSWD:/bin/tar
 
 ## Partitions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Partitions are a way to divide a physical storage device, such as a hard drive. They allow us to isolate and enforce individual restrictions.
 
@@ -148,7 +148,7 @@ $ sudo mount -t loop rootfs.ext4 # mounted at /mnt/rootfs.ext4/
 
 ## Edit a filesystem
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A filesystem may be stored in a file, such as `rootfs.ext4` for an EXT4 filesystem. It could be a backup or something similar.
 
@@ -205,7 +205,7 @@ debugfs> q                 # quit
 
 ## GParted
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Gnome Partition Editor (GParted) is a graphical front-end to the `parted` command. It allows us to create, edit, resize, or delete partitions.
 
@@ -235,7 +235,7 @@ You can apply them using either:
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * `sync` command
 </div><div>

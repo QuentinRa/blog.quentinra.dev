@@ -1,6 +1,6 @@
 # Bash
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Bash is a common default shell language for many distributions. This course will introduce bash-specific knowledge that should help you write simpler, and maybe better code/commands, using some enhancements introduced with Bash ✨. 
 
@@ -23,7 +23,7 @@ Some nice information
 
 ## Debugging 🪲
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div class="mt-lg-4 mt-2">
 
 ```bash
 $ bash -x script.sh
@@ -33,7 +33,7 @@ Toto
 + ls .
 # ...
 ```
-</div><div>
+</div><div class="mt-lg-4">
 
 You can use `-x` to debug your scripts. Each line prefixed with a `+` is the command executed, then you have the command output. It should help you find the command that failed.
 
@@ -65,7 +65,7 @@ Not debugged
 
 ## History expansion 🕊️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Bash introduced some patterns that are expanded into a previous command from your history. Your history of commands is stored in `~/.bash_history`
 
@@ -111,7 +111,7 @@ There is also `!#` which repeats the command-line typed so far. It seems kinda u
 
 ## Braces expansion 🍁
 
-<div class="row row-cols-md-2"><div class="align-self-center">
+<div class="row row-cols-lg-2"><div class="align-self-center">
 
 This is most likely one of the coolest features, as we can use this everywhere.
 
@@ -145,7 +145,7 @@ done
 
 ## Enhanced control-flow structures 🚀
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div class="mt-2">
 
 * You can use `&&` (AND), and `&&` (OR)
 * You can use `>`... to compare numbers/strings
@@ -159,7 +159,7 @@ if [[ 5 > 3  || false ]]; then
   echo "ok";
 fi
 ```
-</div><div>
+</div><div class="mt-2">
 
 * You can use "for i, i++"
 
@@ -185,7 +185,7 @@ done
 
 ## Arrays 🗃️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Create an array
 
@@ -243,7 +243,7 @@ done
 
 ## Random notes 🎉
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 This is a command taking a variable number of parameters, and literally doing nothing
 
@@ -275,7 +275,7 @@ $ cmd1 |& cmd2
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [man bash](https://linux.die.net/man/1/bash)
 * [devhints.io](https://devhints.io/bash)

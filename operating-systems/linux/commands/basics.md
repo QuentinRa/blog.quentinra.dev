@@ -1,6 +1,6 @@
 # Command Basics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Commands usually have an option "help". ⛪
 
@@ -18,7 +18,7 @@ $ gcc --help
 
 ## Strings manipulation
 
-<div class="row row-cols-md-2 mx-0"><div>
+<div class="row row-cols-lg-2"><div>
 
 When using commands, you will most likely use, or have to use strings. Most of the time, quotes are optional, and command arguments do not need to be quoted 🎯.
 
@@ -82,7 +82,7 @@ $ expr index "Sarah" w
 
 ## Calculations
 
-<div class="row row-cols-md-2 mx-0"><div>
+<div class="row row-cols-lg-2"><div>
 
 You may want to do some stuff involving calculations. The shell won't interpret any calculations, so you must use `$[...]` or `$((...))` to evaluate something.
 
@@ -108,7 +108,7 @@ done
 
 [![linux2](../../../cybersecurity/_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 It's possible for a command output, to be used as the next command input using a pipe: **their_output | is_my_input**.
 
@@ -151,7 +151,7 @@ $ find . -name toto | wc -l
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 [![linux2](../../../cybersecurity/_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 There are three reasons to chain commands:
 
@@ -196,7 +196,7 @@ $ ls toto || ls tata
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 [![linux2](../../../cybersecurity/_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Redirections allow us to:
 
@@ -271,7 +271,7 @@ $ echo xxx > output.txt 2>&1 # ⚠️ Order is important
 
 ## Special
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Command substitution
 
@@ -307,7 +307,7 @@ $ (cat=toto; echo "1. $cat") && echo "2. $cat"
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * terminal shortcuts <small>(CTRL +/-/L/D, scroll button...)</small>
 * CTRL+SHIFT+T to open a terminal.

@@ -1,6 +1,6 @@
 # Processes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A process represents a running program or application. It includes information about the context of execution:
 
@@ -23,7 +23,7 @@ Processes are stored in `/proc/`, in a folder named after their PID.
 
 ## Process States
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Processes can be in various states, including:
 
@@ -57,7 +57,7 @@ $ /bin/true && echo $?
 
 [![linuxfundamentalspart1](../../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A foreground process is a process receiving input from the user, while a background process is running but not receiving input.
 
@@ -82,7 +82,7 @@ $ sleep 10 &
 
 [**top/htop** - list processes]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: list all running processes, and their memory usage. This is the same as Windows task manager.
 
@@ -95,7 +95,7 @@ $ top
 
 [**ps** - list/find processes]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: list processes according to some criteria.
 
@@ -152,7 +152,7 @@ $ ps -o pid,ppid,pgid,tpgid,sid
 
 [**fg** - to foreground]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: bring processes from the background to the foreground.
 
@@ -169,7 +169,7 @@ $ fg %1 # same
 
 [**bg** - to background]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: bring processes, that were not started using `&`, to the background.
 
@@ -187,7 +187,7 @@ $ bg %1 # same
 
 [**jobs** - background processes]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: list running background processes. Not available in every shell.
 
@@ -203,7 +203,7 @@ $ jobs
 
 [**kill** - send signals]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: kill a process/send a signal.
 
@@ -239,7 +239,7 @@ $ kill -l SIGSTOP
 
 ## Random Notes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Process scheduling
 

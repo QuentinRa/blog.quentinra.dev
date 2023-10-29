@@ -1,6 +1,6 @@
 # Linux Boot Process
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The boot process with the system's firmware initializing the hardware and loading the bootloader. 🧳
 
@@ -22,7 +22,7 @@ Some of the well-known ones are:
 
 ## Systemd
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Systemd is a system and service manager for Linux operating systems. It is responsible or starting, stopping, and managing system services.
 
@@ -109,7 +109,7 @@ WantedBy=my_target.target
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Control Groups (cgroups)
 </div><div>

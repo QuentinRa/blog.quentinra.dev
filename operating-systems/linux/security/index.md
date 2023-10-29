@@ -2,7 +2,7 @@
 
 [![linuxsystemhardening](../../../cybersecurity/_badges/thmp/linuxsystemhardening.svg)](https://tryhackme.com/room/linuxsystemhardening)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 ...
 </div><div>
 
@@ -15,7 +15,7 @@
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * 💀 Grub (Linux bootloader) to reset the root password
   * ✅ BIOS and UEFI firmwares allow a boot Password

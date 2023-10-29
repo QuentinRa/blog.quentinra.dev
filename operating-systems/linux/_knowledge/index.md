@@ -2,7 +2,7 @@
 
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 <br>
 
@@ -39,13 +39,13 @@ Inside the CLI, we can run commands interpreted by a **shell** 🐚.  There are 
 [![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 [![linux1](../../../cybersecurity/_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A command has **a name**, which may be followed by **arguments**, including some usually called **flag**/**switches** (`options`). The difference between both is that a flag starts with a `-` while **operands** do not.
 
 Below are some examples with the command `ls`:
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 No arguments.
 
@@ -107,9 +107,9 @@ $ ls /<TAB>
 [![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 [![linux1](../../../cybersecurity/_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
-A **path** 🛣️ is a suite of one or more folders 📂 that may lead to a regular file 📄. They are separated by a separtor which is: `/` <small>(slash)</small>.
+A **path** 🛣️ is a suite of one or more folders 📂 that may lead to a regular file 📄. They are separated by a separator which is: `/` <small>(slash)</small>.
 
 ```shell!
 $ pwd
@@ -150,7 +150,7 @@ $ /home/example/toto.txt # same
 
 [![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Permissions are assigned on a file/folder, and are applied according to the target 🎯 of the permissions (ownership)
 
@@ -235,7 +235,7 @@ If you are giving one of these, in a context where you couldn't (such as giving 
 
 ## Environment variables
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Environment variables (`Variables d’environnement`) are global variables, mostly used by commands/applications to access information about the system, save configurations...
 
@@ -285,7 +285,7 @@ $ export PATH=/home/toto/bin:$PATH
 
 ## Glob-patterns
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A **glob-pattern** is an expression using **wildcards** (`motifs`), that when evaluated by the shell, will be replaced with a list of files.
 
@@ -374,7 +374,7 @@ downloads
 
 [![linuxfundamentalspart3](../../../cybersecurity/_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 We can run scheduled tasks on Linux using cron jobs.
 
@@ -407,7 +407,7 @@ You can generate a schedule using [crontab.guru](https://crontab.guru/) or [cron
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * ELF
 * shift+insert, middle button of the mouse, primary clipboard, most recently selected text

@@ -2,7 +2,7 @@
 
 [![bashscripting](../../../../cybersecurity/_badges/thm/bashscripting.svg)](https://tryhackme.com/room/bashscripting)
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 Scripts are simply files with usually many Linux commands, usually written in Bash, as it is the default shell language in many Linux-based distributions. You can see scripts as programs, and you will execute them as you do with programs.
 
@@ -46,7 +46,7 @@ Hello, World!
 
 ## POSIX standard
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The Portable Operating System Interface (POSIX) is a family of standards that defines what we should and shouldn't do to write scripts that work on all POSIX-compliant shells.
 
@@ -77,7 +77,7 @@ Recap of what isn't allowed by POSIX
 
 ## Introduction
 
-<div class="row row-cols-md-2 mt-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Shebang
 
@@ -128,11 +128,11 @@ $ echo $?
 
 ## Variables, and their usage
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can assign a variable with `=`, without ANY SPACES. **Note**: a variable exists even without being assigned, but it's empty <small>(=sort of "")</small>.
 
-```bash
+```bash!
 number=5
 text1=Hello
 text2="Hello, World"
@@ -140,7 +140,7 @@ text2="Hello, World"
 
 You can even store the output of a command to work on it
 
-```bash
+```bash!
 command_output1=`ls -la .`
 command_output2=$(ls -la .)
 ```
@@ -148,14 +148,14 @@ command_output2=$(ls -la .)
 
 Add **$ before a variable name**.
 
-```bash
+```bash!
 echo $number
 echo ${number} # same
 ```
 
 There is no need to use "quotes" to concatenate
 
-```bash
+```bash!
 $ echo $text1 $number
 Hello 5
 $ echo "$text1 $number" # same
@@ -167,11 +167,11 @@ $ echo "$text1" $number # same
 
 ## Branching, and the command `test`
 
-<div class="row row-cols-md-2 mx-0"><div>
+<div class="row row-cols-lg-2"><div>
 
 The usual if, else if (elif), and else.
 
-```bash
+```bash!
 if test1; then
   # code
 fi
@@ -191,7 +191,7 @@ fi
 
 A test is a **command** exiting with the code 0 (TRUE), or a number between 1, and 255 (FALSE). This could be expressed as follows
 
-```bash
+```bash!
 if `exit 1`; then 
   echo "ok";
 else 
@@ -205,7 +205,7 @@ While `exit 1` could be replaced with `false`, as if you followed, `false` is a 
 
 Fortunately, you got a command called <kbd>test</kbd> which is taking a condition, and returning 0 if true, and 1 otherwise. This command has a shortcut: <kbd>[]</kbd> which is doing the exact same thing.
 
-```bash
+```bash!
 if test toto == toto; then 
   echo "ok";
 fi
@@ -246,7 +246,7 @@ Others
 
 Of course, you can chain expressions, with equivalents of `&&`, and `!!`
 
-```bash
+```bash!
 # and
 $ test toto == toto -a test toto == toto
 # or
@@ -259,7 +259,7 @@ $ test toto != tata
 
 Examples
 
-```bash
+```shell!
 $ path=~/some_folder_that_exists
 $ test -f $path; echo $?
 1
@@ -274,11 +274,11 @@ Folder+exists.
 
 ## Loops
 
-<div class="row row-cols-md-2 mx-0"><div>
+<div class="row row-cols-lg-2"><div>
 
 **for i in**: this loop is taking values separated by a space
 
-```bash
+```bash!
 for i in "Hello, World!" word2 word3 ; do
     # i will be: Hello, World!
     # ...
@@ -287,7 +287,7 @@ done
 
 **iterative for**
 
-```bash
+```bash!
 # for ((i = 1; i <= 5; i++))
 for i in `seq 1 5`; do
     # code
@@ -300,7 +300,7 @@ done
 
 You can use **break** to forcefully exit a for/while/until, and you can use **continue** to forcefully finish the current iteration, and start the next one. You may apply the keyword on more than one loop.
 
-```bash
+```bash!
 for i in {1..5} ; do
     break
     break 1 # same, break 1 loop
@@ -311,7 +311,7 @@ done
 
 **while**/**until**: while is taking a "test" like if.
 
-```bash
+```bash!
 while test; do
     # code
 done
@@ -322,7 +322,7 @@ done
 
 You can merge if/elif/else into a **case** statement
 
-```bash
+```bash!
 case $x in
 pattern)
   # if $x == pattern
@@ -342,7 +342,7 @@ esac
 
 ## Command-line arguments
 
-<div class="row row-cols-md-2 mt-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Pass arguments
 
@@ -361,7 +361,7 @@ echo $#
 
 Each argument is stored in a variable "`$n`"
 
-```bash
+```bash!
 echo $0 # ./example
 echo $1 # arg1
 echo $2 # This is arg2
@@ -445,11 +445,11 @@ some_command [...] ${command_args}
 
 ## Builtin functions
 
-<div class="row row-cols-md-2 mt-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Builtin functions, are functions that are declared inside your script.
 
-```bash
+```bash!
 myBuiltin() {
   # code
 }
@@ -457,13 +457,13 @@ myBuiltin() {
 
 Then, you can call the builtin function in your script like this
 
-```bash
+```bash!
 myBuiltin arg1 arg2
 ```
 
 The myBuiltin may take arguments, but the parentheses will always remain empty `()`. In the builtin function, you will access args as you would for command-line arguments!
 
-```bash
+```bash!
 # myBuiltin arg1 arg2
 myBuiltin() {
   echo $0 # ./example (not myBuiltin)
@@ -478,7 +478,7 @@ myBuiltin() {
 
 A builtin function may return something, but you CAN NOT use `exit`, as it would kill the whole process. Use `return` instead.
 
-```bash
+```bash!
 myBuiltin() {
   return $1
 }
@@ -491,7 +491,7 @@ echo $? # will be "5"
 
 To return something, simply use `echo`.
 
-```bash
+```bash!
 myBuiltin() {
   echo "Hello, World!"
 }
@@ -505,11 +505,11 @@ echo $text # Hello, World!
 
 ## Read input from the user
 
-<div class="row row-cols-md-2 mx-0"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can use the command `read` to read input. This command takes a suite of 1, or more variables, and stores a word in each variable. If there are not enough variables, then the last variable is used to store everything that could not be stored.
 
-```bash
+```bash!
 $ read x
 toto
 $ echo $x
@@ -517,7 +517,7 @@ toto
 ```
 </div><div>
 
-```bash
+```bash!
 $ read x
 toto tata
 $ echo $x
@@ -538,7 +538,7 @@ tata titi
 
 This code is running indefinitely until `read` fails. Each time the user press <kbd>ENTER</kbd>, the code will loop, and ask for input again. A user can notify the script that the input is done using <kbd>CTRL+D</kbd>, which will make `read` fail, and end the loop.
 
-```bash
+```bash!
 while read x; do
   echo $x
 done
@@ -547,7 +547,7 @@ done
 
 You can use a nested `for` to extract each word that was entered.
 
-```bash
+```bash!
 while read line; do
   for word in $line; do
     echo $word
@@ -560,7 +560,7 @@ done
 
 **Note**: `<CR>`, for carriage return, means that I pressed enter.
 
-```bash
+```bash!
 $ ./example
 toto tata <CR>
 toto
@@ -578,7 +578,7 @@ tata
 
 ## Read a file, or Write content in a file
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 We are mainly using redirections to read/write files, as the process is the same as reading input from a user, but this time the input/output source is different.
 
@@ -635,7 +635,7 @@ done
 
 ## Random
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You may use "sleep" to pause your script
 
@@ -658,7 +658,7 @@ $ echo $[RANDOM%(20-10+1) + 10]
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * `getopts`
 * `readonly var=value`
