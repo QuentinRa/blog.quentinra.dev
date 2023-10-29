@@ -1,6 +1,6 @@
 # Relational databases
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Relational databases are storing data in **tables** and **columns**. Tables are linked together using (foreign) **keys**. You can view a relational database as an Excel table.
 
@@ -30,7 +30,7 @@ Relational databases are managed by a **Database Management System** (DBMS) or R
 
 ## Terminology
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A **record/tuple/row** 💵 is an entry in a table, such as `(1, Luna, 18, 'Woman')` or `(2, Henry, 24, 'Not specified')`.
 
@@ -58,7 +58,7 @@ The attribute `id` is an artificial key. In another table, we can use this numbe
 
 ## Modeling
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Creating a database from a specification is called **Modeling** 🧑‍🎨. It's a process usually involving 3 steps:
 
@@ -132,7 +132,7 @@ For [SQL](/programming-languages/databases/relational/sql/index.md), this is how
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * CRUD/ACID
 * Data lake

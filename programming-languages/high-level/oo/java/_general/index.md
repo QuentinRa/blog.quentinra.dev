@@ -1,6 +1,6 @@
 # Java
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Java is a well-known [object-oriented](/programming-languages/_paradigm/oo.md) programming language. It's maintained and owned by Oracle 🍵.
 
@@ -37,7 +37,7 @@ Hello, World!
 
 ## Core knowledge
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Declare a variable
 
@@ -142,7 +142,7 @@ person = null; // ❌ doesn't work
 
 ## Control-flow structures
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Branching
 
@@ -254,7 +254,7 @@ if (a.getClass() == b.getClass()) { /* ... */ }
 
 ## Classes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Java [classes](/programming-languages/_paradigm/oo.md#classes-and-objects) usually have their own file. It's named after the class. A class name is in **upper camel case** by convention.
 
@@ -346,7 +346,7 @@ public static float xxx(float f) { return f; }
 
 ## Instantiation
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Classes are instantiated using the `new` keyword.
 
@@ -409,7 +409,7 @@ johnDoe = null;
 
 ## Exceptions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 An **exception** is a signal fired when something unexpected occurs. This is usually an error 🔥. If no one handles the signal, then the program crashes. It prints a **stacktrace** with the trace of methods the signal went through. There are **two** categories of exceptions.
 
@@ -483,7 +483,7 @@ public void error() throws IllegalArgumentException {
 
 ## Inheritance
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Java implements [inheritance](/programming-languages/_paradigm/oo.md#inheritance) with the keyword `extends`. All classes inherit from [Object](#object) <small>(implicitly)</small>, and classes can only extend **one** class.
 
@@ -564,7 +564,7 @@ You can also add [annotations](#annotations) or [throws](#explicitly-declare-rai
 
 ## Abstraction
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Abstraction in Java can be achieved using **abstract classes** or **interfaces**. Both are used to write more generic methods using [polymorphism](/programming-languages/_paradigm/oo.md#polymorphism) and [liskov principle](/programming-languages/_paradigm/oo.md#polymorphism), but they are **not** instantiable.
 
@@ -683,7 +683,7 @@ XXX xxx = (u) -> { // can access out-of-scope variables
 
 ## Special classes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Enumerations
 
@@ -785,7 +785,7 @@ A local class is declared in a method and only exists within its scope.
 
 ## Well-known types
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Object
 
@@ -869,7 +869,7 @@ If you try to use an index that does not exist, you will get an exception: `Inde
 
 ## Annotations
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Annotations such as `@Override` or `@Deprecated` allow us to enforce some compiler checks on a method <small>(ex: deprecated triggers a warning)</small>.
 
@@ -916,7 +916,7 @@ Which can be used as follows:
 
 ## Input/output streams
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 
 Files, and sockets <small>(networking)</small> are two examples of streams. We read in an `InputStream` 📖, and we write in an `OutputStream` ✍️. There is also:
@@ -996,7 +996,7 @@ BufferedReader reader = new BufferedReader(fileReader);
 
 ## Java Generics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 It's possible to write generic code using [Polymorphism](/programming-languages/_paradigm/oo.md#polymorphism). For instance, this function takes an instance of AAA or [subclasses](../_general/index.md#inheritance) of AAA.
 
@@ -1051,7 +1051,7 @@ XXX<Integer[]> xxx = new XXX<>(); // omitted (inferred)
 
 ## Common Java interfaces
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Java has way too many [interfaces](#interfaces), even if we only keep the most commonly used ones, and I will only put some here.
 
@@ -1172,7 +1172,7 @@ stream.forEach(System.out::println);
 
 ## Collections and maps
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 `Collection<E>` is an interface implemented by all data structures such as arrays, lists, sets... `Map<K, V>` is used for dictionaries.
 
@@ -1270,7 +1270,7 @@ for(Map.Entry<Integer, String> entry: map.entrySet()){
 
 ## Threads
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Threads allow us to run tasks in parallel 🔥. We will create a `Runnable` with the code executed by the thread.
 
@@ -1324,7 +1324,7 @@ public void myMethod() {
 
 ## Await an async function
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Async functions are functions executed in another [thread](#threads). For instance, to query a database/an API. Sometimes, we want to wait for the result to resume the execution.
 
@@ -1363,7 +1363,7 @@ If you've got multiple async functions to call, you can simply increase `CountDo
 
 ## Networking
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can create a server from which **local** clients can connect to 🏠. As a client, you can connect to any server <small>(local or not)</small> 🌍.
 
@@ -1409,7 +1409,7 @@ o.flush();
 
 ## Properties and Preferences
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Properties and preferences are two common ways of storing user settings, such as the user language, or the theme...
 
@@ -1469,7 +1469,7 @@ try (FileWriter writer = new FileWriter("xxx.properties")) {
 
 ## External communication
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Web requests
 
@@ -1552,7 +1552,7 @@ try(ResultSet generatedKeys = stmt.getGeneratedKeys()) {
 
 ## Modules
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Modules were introduced in Java 9. They encapsulate projects and require developers to explicitly import SDK packages into their projects. Create a `module-info.java`, with a unique module name:
 
@@ -1591,7 +1591,7 @@ Compile with: `javac -d mods /path/to/module-info.java /path/to/com/example/proj
 
 ## Random notes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### UTF-8
 
@@ -1699,7 +1699,7 @@ public class Math {
 
 ## Libraries
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### JSON
 
@@ -1718,7 +1718,7 @@ String string = o.getString("...");
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * jar module path first
 * java shell (JShell)
