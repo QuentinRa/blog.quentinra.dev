@@ -1,6 +1,6 @@
 # ListView
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 JavaFX has the ListView to display a scrollable list of items. Simply add a JavaFX ListView component in your FXML. You can load data from your [controller](../index.md#controller), and use a custom view for cells:
 

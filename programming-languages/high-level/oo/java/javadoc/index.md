@@ -1,6 +1,6 @@
 # Javadoc
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The Javadoc is **java documentation engine** ✍️. Developers will write Javadoc comments inside their code, and using the `javadoc` command, a website will be generated 🌍.
 
@@ -31,7 +31,7 @@ Aside from versions before 11, you can change the number in the URL to access th
 
 ## Writing Javadoc
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Javadoc comments are comments starting with `/**`.
 
@@ -108,7 +108,7 @@ public class GenericClass<T> {}
 
 ## package-info.java
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A `package-info.java` is a file used to document a [package](../_general/index.md#packages).
 

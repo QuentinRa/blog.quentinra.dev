@@ -1,6 +1,6 @@
 # Kotlin programming
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 JetBrains has been developing Kotlin, an open-source and modern programming language, since 2011.
 
@@ -21,7 +21,7 @@ Kotlin is interoperable with [Java](/programming-languages/high-level/oo/java/_g
 
 ## Basics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Use **var** to declare a variable
 
@@ -83,7 +83,7 @@ i?.inc() // i++ (if not null)
 
 ## Core
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The main function can be put in any file.
 
@@ -133,7 +133,7 @@ xxx { x: Int ->
 
 ## Control-flow structures
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 There are a few major changes compared to Java.
 
@@ -253,7 +253,7 @@ xxx?.let { xxxNonNull -> {} }
 
 ## Functions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 We use the keyword `fun` to declare a function.
 
@@ -320,7 +320,7 @@ fun x(vararg x: Int) {
 
 ## Classes, and objects
 
-<div class="row row-cols-md-2 mx-0"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Basics
 
@@ -533,7 +533,7 @@ enum class AAA(val ddd: Int) {
 
 ## Collections
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Create a list
 
@@ -600,7 +600,7 @@ val value : String? = map["key"]
 
 ## Random
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Thread
 
@@ -614,8 +614,6 @@ val thread = Thread {
 thread.start()
 ```
 </div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">
@@ -624,7 +622,7 @@ thread.start()
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Interaction types (`T extends XXX<YYY, ZZZ>  & TTT &  UUU`)
 * top-level function (not in a class)

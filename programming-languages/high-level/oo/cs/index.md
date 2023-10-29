@@ -1,6 +1,6 @@
 # CSharp (C#)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 CSharp or C# is a relatively modern [object-oriented](/programming-languages/_paradigm/oo.md) programming language introduced and maintained by Microsoft 🪟.
 
@@ -30,7 +30,7 @@ To get started, edit `Program.cs`.
 
 ## Core knowledge
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Variables
 
@@ -98,7 +98,7 @@ string t = ""+5;       // concatenation (+cast), see String
 
 ## Control-flow structures
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Branching
 
@@ -142,7 +142,7 @@ do {} while(true); // executed at least once
 
 ## Classes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Usually, each C# [class](/programming-languages/_paradigm/oo.md#classes-and-objects) is usually in a separate file, while the filename doesn't necessarily dictate the name of the class defined within it.
 
@@ -198,7 +198,7 @@ private void Yyy()
 
 ## Inheritance
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 C# implements [inheritance](/programming-languages/_paradigm/oo.md#content-inheritance) similarly to Java. Classes can have one parent, and implement multiple **interfaces**.
 
@@ -239,7 +239,7 @@ protected override int XXX() {
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Nuget packages
 * [NUnit](https://nunit.org/)

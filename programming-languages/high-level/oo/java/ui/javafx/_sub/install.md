@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The [official installation instructions](https://openjfx.io/openjfx-docs/) 🚀 are quite complete, but it may be useful to add additional approaches if they don't work for you.
 

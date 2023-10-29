@@ -1,6 +1,6 @@
 # Swing/AWT
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Swing and AWT are libraries bundled with Java to create graphical interfaces. Swing was introduced as a replacement for AWT, but it didn't completely replace AWT.
 
@@ -21,7 +21,7 @@ import javax.swing.*; // swing
 
 ## Components
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A component is a graphical entity such as a Button.
 
@@ -74,7 +74,7 @@ aComponent.setMaximumSize(new Dimension(50,50));
 
 ## Examples of components
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### JFrame - window
 
@@ -131,7 +131,7 @@ p.add(xxx);               // add "xxx" to the group
 
 ## Layout managers
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Layout Managers determine how child components are displayed. They are commonly used with `JPanel` 🖼️.
 
@@ -209,7 +209,7 @@ cardLayout.previous(aComponent);    // show the previous view
 
 ## Event listeners
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Listeners allow us to react when the user interacts with the view, such as by clicking on a button.
 
@@ -286,7 +286,7 @@ public class MyWindowListener implements WindowListener {
 
 ## Drawing
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can draw your own component by extending `JComponent` and overriding `paintComponent`.
 
@@ -348,7 +348,7 @@ copy.drawImage(Image img, int x, int y, ImageObserver observer)
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Event thread
 * `SwingUtilities.invokeLater(Runnable);`

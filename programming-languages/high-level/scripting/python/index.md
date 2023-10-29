@@ -3,7 +3,7 @@
 [![pythonbasics](../../../../cybersecurity/_badges/thm/pythonbasics.svg)](https://tryhackme.com/room/pythonbasics)
 [![pythonforcybersecurity](../../../../cybersecurity/_badges/thmp/pythonforcybersecurity.svg)](https://tryhackme.com/room/pythonforcybersecurity)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Python 🐍 is a multipurpose high-level scripting language. Because it's quite easy to learn/use, it's unfortunately used as a [Golden hammer](https://sourcemaking.com/antipatterns/golden-hammer) 🔨🔥 <small>(AntiPattern)</small> by many developers.
 
@@ -36,7 +36,7 @@ Hello, World
 
 ## Python ecosystem
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Python2
 
@@ -105,7 +105,7 @@ $ pip3 install -r requirements.txt # load
 
 ## Python basics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Variables
 
@@ -225,7 +225,7 @@ print("Code: "+ str(5))     # 🤔 concatenation
 
 ## Control-flow structures
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Inside any statement, you can use `pass` to indicate a statement without any code. It's useful for blocks that are not coded yet.
 
@@ -300,7 +300,7 @@ finally: # optional, run after either try or except
 
 ## Functions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Similarly to control-flow structures, you can use `pass` for empty functions. Functions can access outer-scope variables.
 
@@ -357,7 +357,7 @@ fct(..., key1= "value", ...)
 
 ## Classes and objects
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Example with a [class](/programming-languages/_paradigm/oo.md#classes-and-objects) object with two attributes and one method:
 
@@ -409,7 +409,7 @@ class Person:
 
 ## Common types
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### String
 
@@ -481,7 +481,7 @@ list = [1 if i%2==0 else -1 for i in range(0,10)]
 
 ## Common usages
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Program arguments
 
@@ -529,7 +529,7 @@ with open(password_file, 'r') as file:
 
 ## Some libraries
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### numpy - manipulate lists
 
@@ -712,7 +712,7 @@ create_xxx()
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [pythonanywhere](https://www.pythonanywhere.com/)
 * [peps](https://peps.python.org/pep-0008/) (style guide)

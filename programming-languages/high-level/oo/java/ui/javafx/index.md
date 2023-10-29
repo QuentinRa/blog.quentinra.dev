@@ -1,6 +1,6 @@
 # JavaFX
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [JavaFX](https://openjfx.io/) is an open-source [Java](/programming-languages/high-level/oo/java/_general/index.md) library to create graphical interfaces.
 
@@ -24,7 +24,7 @@ JavaFX's views are stored `.fxml` files usually created using [Scene Builder](ht
 
 ## Main
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 JavaFX's Main class must extend `Application`. This code below creates a `Scene` with a Label showing `Hello, World!`.
 
@@ -80,7 +80,7 @@ controller.init(primaryStage);
 
 ## Components
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 
 Components can be **layout** managers or **views**. It means you can put a layout inside a layout, or a view otherwise.
@@ -119,7 +119,7 @@ Some commonly used **views** are:
 
 ## FXML
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 FXML files are [XML](/programming-languages/others/data/xml.md) files with a syntax specific to JavaFX ☕. A starter FXML file using a [BorderPane](https://openjfx.io/javadoc/20/javafx.graphics/javafx/scene/layout/BorderPane.html) as the **root** could be:
 
@@ -138,7 +138,7 @@ FXML files are [XML](/programming-languages/others/data/xml.md) files with a syn
 
 ## SceneBuilder
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Scene Builder](https://gluonhq.com/products/scene-builder/) is a Java editor to edit [FXML](#fxml) files. 
 
@@ -163,7 +163,7 @@ The inspector is subdivided into three sections:
 
 ## Controller
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Each [FXML](#fxml) file can have up to one controller. A controller is a class linking a [view](#components) with the code. Add `fx:controller` to the root element of the FXML, either manually or using [SceneBuilder](#scenebuilder).
 
@@ -228,7 +228,7 @@ public class XXXController {
 
 ## Style 🍔
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Icon next to a text
 
@@ -253,7 +253,7 @@ You can manually edit the FXML and add this between two views:
 
 ## Localization
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 First, you will have to create a file for each language. For instance, `i18n_en.properties` for English, `i18n_fr.properties` for French...
 
@@ -296,7 +296,7 @@ loader.setResources(bundle);
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * School project
   * `fx:include`

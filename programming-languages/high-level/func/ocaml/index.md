@@ -1,6 +1,6 @@
 # OCaml
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [OCaml](https://ocaml.org/) is a functional language. It's part of the family of [Meta Language](https://en.wikipedia.org/wiki/ML_(programming_language)) (ML). It adds object-oriented features to Caml.
 
@@ -31,7 +31,7 @@ $ opam install some_package    # see also: update, upgrade
 
 ## OCaml as a functional language
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Implicit types
 
@@ -90,7 +90,7 @@ let f x = x -1
 
 ## Getting Started
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### OCaml REPL
 
@@ -134,7 +134,7 @@ Hello, World!
 
 ## OCaml Basics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Declare a variable
 
@@ -246,7 +246,7 @@ let str = "ab" ^ "c";     (* concatenation *)
 
 ## Control-flow and Branching
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### OCaml Branching
 
@@ -344,7 +344,7 @@ create_unique_list 3 [3;6;4];;
 
 ## OCaml Functions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Declare a function
 
@@ -409,7 +409,7 @@ let _ = pow 5 3 (* 125 *)
 
 ## OCaml Advanced Types
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Composite types
 
@@ -502,7 +502,7 @@ let remove_five = List.filter (fun x -> x <> 5) [5;6] (* [6] *)
 
 ## OCaml Custom Types
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Type Inference
 
@@ -573,7 +573,7 @@ let another_node = Node (node_1, 1, node_1)
 
 ## Pattern Matching 🛣️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Implicit Pattern Matching
 
@@ -663,7 +663,7 @@ let first_two l = match l with
 
 ## Interfaces and Modules
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Interfaces
 
@@ -808,7 +808,7 @@ let five = MyModuleName.add [] 5
 
 ## Advanced Content
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Folding on Lists
 
@@ -893,7 +893,7 @@ let get_min l =
 
 The following comments are valid in OCaml:
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```ocaml
 (* "*)" *)
@@ -960,7 +960,7 @@ let set = Int_Set.add Int_Set.empty 5
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * do not use "unit"
 * `Stdlib.compare a b` (-1, 0, 1)
