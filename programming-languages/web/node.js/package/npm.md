@@ -1,6 +1,6 @@
 # npm package manager 🤖
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [npm](https://github.com/npm/cli) (7.4k ⭐) is the most well-known package manager for Node.js, as it comes bundled with the official Node.js installer.
 
@@ -99,7 +99,7 @@ Usually, we store the commands to run/test... a project in `package.json/scripts
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * npx
 * .npmignore

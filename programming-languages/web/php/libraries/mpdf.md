@@ -1,6 +1,6 @@
 # mpdf
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [mpdf](https://github.com/mpdf/mpdf) (4.0k ⭐) is a library to create PDF files.
 
@@ -21,7 +21,7 @@ $mpdf->Output();
 ```
 </div><div>
 
-Example using HEREDOC and downloading a file:
+Example using a [heredoc](/tools-and-frameworks/knowledge/heredoc/index.md) and downloading a file:
 
 ```php!
 $mpdf = new \Mpdf\Mpdf();

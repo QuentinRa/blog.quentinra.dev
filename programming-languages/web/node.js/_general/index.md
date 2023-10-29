@@ -1,6 +1,6 @@
 # 🚀 Node.js 🚀
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Node.js](https://nodejs.org/) is a modern JavaScript environment that can be used
 
@@ -35,7 +35,7 @@ $ node index.js
 
 ## Node.js basics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Packages
 
@@ -75,7 +75,7 @@ console.log(A.five)
 
 ## Node FileSystem (<code>fs</code>)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Import 'fs'
 
@@ -126,7 +126,7 @@ fs.rename(path, newPath, (err) => { /* ... */ });
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * .env / [nconf](https://nodejs.org/en/knowledge/file-system/how-to-store-local-config-data/) / [node-config](https://github.com/node-config/node-config)
 * See JavaScript, what are modules/...?

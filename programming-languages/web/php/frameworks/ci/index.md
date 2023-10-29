@@ -1,6 +1,6 @@
 # Code Igniter
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Code Igniter](https://codeigniter.com/) is a simple and easy-to-learn PHP framework following the Model-View-Controller (MVC) architectural pattern.
 
@@ -29,7 +29,7 @@ Some features are:
 
 ## File structure
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Code Igniter files are split into 3 sections: **app**, **public**, and **writable**.
 
@@ -104,7 +104,7 @@ echo "Hello, World!";
 
 ## Controllers 🤖
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A controller is a PHP class that extends `BaseController`. Each method corresponds to a page of your website. They should fetch data from the model, parse it, and pass it to the views.
 
@@ -150,7 +150,7 @@ You may raise a `throw PageNotFoundException::forPageNotFound("message");` excep
 
 ## Views
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Views are simply PHP files with the HTML to display.
 
@@ -176,7 +176,7 @@ You will most likely use:
 
 ## 🛣️ Routing 🛣️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 By default, with file routing, you'll have URLs such as `https://example.com/toto.php` and one PHP per route (`/toto.php`).
 
@@ -244,7 +244,7 @@ $routes->set404Override('App\Controllers\XXX::yyy');
 
 ## Database
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Define the database configuration in `apps/Config/Database.php`. To avoid writing SQL, Code Igniter has what we call [Models](#models) 🚀.
 
@@ -289,7 +289,7 @@ $res = $stmt->_execute([$user_id]);
 
 ## Models
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Code Igniter implements a sort of **Object-Relational Mapping** (ORM) using [Models](https://codeigniter.com/user_guide/models/model.html). Each model corresponds to a table in the database.
 
@@ -341,7 +341,7 @@ $postModel->whereIn('id', [1, 2, 3])
 
 ## Request/Response
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 From any file, you can access the **request** (the data about the one requesting the page), and the **response** (the response to the request).
 
@@ -379,7 +379,7 @@ $f->store("folderName", "fileName");
 
 ## Localization
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 To create apps supporting multiple languages, you need to create folders per locale (`en`, `fr`...) in `app/Language`.
 
@@ -440,7 +440,7 @@ service('request')->setLocale('fr');
 
 ## Utilities
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Services/email
 
@@ -494,7 +494,7 @@ log_message('error', 'message');
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * .env
 * Autoload

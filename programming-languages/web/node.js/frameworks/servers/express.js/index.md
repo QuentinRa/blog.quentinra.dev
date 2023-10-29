@@ -1,6 +1,6 @@
 # 📟 Express.js 📟
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Express can be used to create websites or APIs.
 
@@ -32,7 +32,7 @@ If you are not familiar with routes, HTTP methods/response codes... Then you sho
 
 ## Middlewares
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 In **app.js** you should see a lot of `app.use(xxx)`. These are called middleware. A middleware is a function that will prepare the request (**req**) or the response (**res**) for usage in routes later.
 
@@ -111,7 +111,7 @@ app.use(function (req, res, next) {
 
 ## Routers
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 In **app.js**, you will also define routes. To make things cleaner, we are moving routes to "local" routers in `./routes`. In **app.js**, we are importing (require) local routers, and associating them with an API endpoint.
 
@@ -152,7 +152,7 @@ module.exports = router;
 
 ## Routing
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can use every HTTP method
 
@@ -211,7 +211,7 @@ res.redirect('URL');
 
 ## Express handle login
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You may want to use [cookies](/programming-languages/web/_general/random/cookies.md) to store some data, such as the logged user. We use a special cookie called session for this purpose. A session is a file on the server in which we can store data.
 
@@ -265,7 +265,7 @@ await req.session.destroy(() => {}) // destroy session
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Express
   * [Stripe](https://www.youtube.com/watch?v=rPR2aJ6XnAc)

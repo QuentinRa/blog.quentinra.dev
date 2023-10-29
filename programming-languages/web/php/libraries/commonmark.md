@@ -1,6 +1,6 @@
 # commonmark for PHP
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [CommonMark for PHP](https://commonmark.thephpleague.com/) is a PHP library to parse [Markdown](/programming-languages/others/documents/markdown/index.md) files to [HTML](/programming-languages/web/html/index.md). It supports [extended syntax](/programming-languages/others/documents/markdown/index.md#-extended-markdown-), and you can define your own.
 
@@ -27,7 +27,7 @@ echo $converter->convert("**Hello, World**")->getContent();
 
 ## Custom Converter
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 To create a custom convert that you can tune however you want, you can use the `MarkdownConverter` class.
 
@@ -74,7 +74,7 @@ For instance, you could define that all parsed links starting with HTTP will be 
 
 ## Custom renderers
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Add a custom renderer
 
@@ -147,7 +147,7 @@ $innerHtml = $childRenderer->renderNodes($node->children());
 
 ## Custom parser
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can create your own Markdown syntax and create a parser for it 🚂. You'll have to create a renderer too 🖼️.
 

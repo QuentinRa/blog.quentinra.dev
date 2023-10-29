@@ -1,6 +1,6 @@
 # TypeScript
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [TypeScript](https://www.typescriptlang.org/) is a **typed**, **compiled**, **generic**, and **enhanced** JavaScript.
 
@@ -35,7 +35,7 @@ $ npx tsc --project tsconfig.json -w # auto-compile
 
 ## 🔎 General overview 🔎
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You need to specify the type of every **variable**, **parameter**... unless it's implicit, e.g., it can be deduced by the compiler.
 
@@ -132,7 +132,7 @@ import { xxx, YYY, ZZZ } from "../files/file";
 
 ## 🗃️ Classes 🗃️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The syntax is mostly the same as in JavaScript. Modifiers to change the visibility were added: **public**, **private**, and **protected**.
 
@@ -222,7 +222,7 @@ class B extends A {
 
 ## 🥊 Create a TypeScript library 🥊
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 If you want to create a library, and use it in another local project, you must at least provide a name and a version inside your package.json.
 
@@ -260,7 +260,7 @@ You may also update your `tsconfig.json` to use `ESNext`
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [clean-code-typescript](https://github.com/labs42io/clean-code-typescript)
 * [typescript-cheat-sheet](https://www.sitepen.com/blog/typescript-cheat-sheet) and [hoomanb](http://hoomanb.com/cs/quickref/typescript_cheatsheet.pdf)

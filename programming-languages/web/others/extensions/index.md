@@ -1,10 +1,8 @@
 # Browser plugins/extensions
 
-<div class="row row-cols-md-2 mb-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can add extensions/plugins to your browser, for instance, [DarkReader](https://darkreader.org/) or [uBlock](https://ublockorigin.com/). It's quite easy to write your own! 🚀
-
-<br>
 
 **Where to learn?** 🏫
 
@@ -30,7 +28,7 @@ browser.xxx.yyy
 
 ## 🐍 Extension Workflow 🐍
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Add a local extension 🚀
 
@@ -77,7 +75,7 @@ But, you don't need to if you only edited an HTML file.
 
 ## 📦 Templates 📦
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 Extension Templates can make working with extensions easier.
 
@@ -170,7 +168,7 @@ For JS files in the Manifest, `src/*.ts` will generate a file `js/*.js`.
 
 [See Manifest.json](https://developer.chrome.com/docs/extensions/mv3/manifest/)
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 This is a JSON file defining your extension. Version 2 is being deprecated, consider using version 3. 🚀
 
@@ -228,7 +226,7 @@ Then, you can define your extension
 
 👉 One of the changes from Manifest V2 to Manifest V3 is `browserAction` being renamed `action` both in the Manifest, and in the code.
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 It's possible to show a popup when the user clicks on the icon in the toolbar, which is called **badge**. You can do it inside the Manifest
 
@@ -315,7 +313,7 @@ To add a shortcut to open the badge, add to your MANIFEST:
 
 ## Content scripts
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 Content scripts are used if you want your extension to interact with the **DOM** of the loaded page, for instance, to inject some code.
 
@@ -351,7 +349,7 @@ Then, use `chrome.runtime.getURL("xxx")` to get a URL to it.
 
 ## Background and Service Worker
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 Service workers can be stopped, and started when an event occurs. They are useful for long-running tasks, or to access the Chrome/Firefox API without having to use a popup.
 
@@ -369,7 +367,7 @@ Service workers can be stopped, and started when an event occurs. They are usefu
 
 ⚠️ Reminder: most of these are only available inside a background script, or a script executed by your popup. ⚠️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 🎯 Just so you know, you can use `async`/`await` instead of callbacks. You can use this trick if you're not able to use `await`:
 
@@ -583,7 +581,7 @@ chrome.runtime.onInstalled.addListener(() => {});
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [Polyfill](https://github.com/mozilla/webextension-polyfill)
 * [plasmo](https://github.com/PlasmoHQ/plasmo) / [chrome-types](https://www.npmjs.com/package/chrome-types)

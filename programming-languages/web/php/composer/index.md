@@ -1,6 +1,6 @@
 # Composer
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 Composer is a popular package manager for PHP. It's used to install packages (libraries/frameworks/...) rather seamlessly.
 
@@ -51,7 +51,7 @@ Installing packages will generate a `composer.json.lock`. This file keeps track 
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * `composer require --dev`
 * `php composer.phar -v` (no install required)

@@ -1,6 +1,6 @@
 # Jekyll
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Jekyll](https://jekyllrb.com/) is a popular static site generator that allows you to develop static websites with ease 🖼️.
 
@@ -41,7 +41,7 @@ $ jekyll serve
 
 ## Jekyll basics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Jekyll uses [Liquid](https://jekyllrb.com/docs/liquid/) templating language.
 
@@ -132,7 +132,7 @@ Here is a basic layout for a web page:
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [Beautiful Jekyll](https://beautifuljekyll.com/)
 * [Jekyll Themes](http://jekyllthemes.org/)

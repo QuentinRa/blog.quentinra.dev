@@ -1,6 +1,6 @@
 # Static site generators
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Static site generators (SSGs) are tools or frameworks that help developers build websites where the content is pre-rendered and delivered as **static HTML, CSS, and JavaScript files** 🏭.
 

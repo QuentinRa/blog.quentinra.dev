@@ -1,6 +1,6 @@
 # PHP
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 PHP <small>(PHP Hypertext preprocessor, a recursive acronym)</small> is still a quite used language to dynamically generate HTML pages. You can use
 
@@ -37,7 +37,7 @@ You can enable extensions on the server level, or you can edit each `php.ini` ma
 
 ## Get started
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Inside a `.php` file, most of the time, there are both HTML and PHP.
 
@@ -78,7 +78,7 @@ require_once "test.php";
 
 ## Basics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Declare a variable
 
@@ -181,7 +181,7 @@ $yyy = $xxx ?? 0; // or, use default values if not set
 
 ## Control-flow structures
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 If PHP, there are two kinds of structures. Those using braces, and those using starting (`:`) and ending tags (`endXXX`). 
 
@@ -252,7 +252,7 @@ do { /* code */ } while ($condition);
 
 ## Functions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Since PHP 7.*, you can type parameters and the return type.
 
@@ -326,7 +326,7 @@ $x(); // output: 10
 
 ## Arrays
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Arrays in PHP can be multi-types, and can be either indexed using integers <small>(starting from 0)</small>, or they can be associative, meaning a string is associated with a value.
 
@@ -390,7 +390,7 @@ foreach ($associative as $key => $value) {}
 
 ## Classes and objects
 
-<div class="row row-cols-md-2 mx-0"><div>
+<div class="row row-cols-lg-2"><div>
 
 A class is a template to create objects. A class called table could define attributes such as `cost`, and methods such as `"sell"`. 
 
@@ -518,7 +518,7 @@ class Child { // inherit public/protected
 
 ## Error handling
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 PHP error handling is mainly based on exceptions. A programmer can raise a signal called an exception when something unexpected, mostly an error, occurs. This signal will stop a function/script and go back to the caller until it's caught. If no one catches and handles it, then it may be displayed to the user <small>(according to the server configuration)</small>.
 
@@ -563,7 +563,7 @@ trigger_error("a message", E_USER_DEPRECATED);
 
 ## Website specific
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Redirection
 
@@ -620,7 +620,7 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) !== false){
 
 ## Additional notes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### JSON
 
@@ -668,7 +668,7 @@ $boolean = password_verify("apassword", $hash);
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * spaceship (`<=>`) operator PHP 8 to compare two values (0, 1, -1)
 * `type TypeName = integer;` (or int before PHP8)

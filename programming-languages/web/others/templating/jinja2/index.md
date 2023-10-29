@@ -1,6 +1,6 @@
 # Jinja2
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Jinja](https://jinja.palletsprojects.com/en/) is a template engine. We will use Jinja syntax in static files such as [HTML](/programming-languages/web/html/index.md) or [XML](/programming-languages/others/data/xml.md) files. We then use Jinja to process our templates and generate the resulting file.
 
@@ -36,7 +36,7 @@ You can apply transformations on a variable using `|`:
 
 ## Branching
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can use `if/elif/else/endif`. Common conditions are
 

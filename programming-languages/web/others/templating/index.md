@@ -1,6 +1,6 @@
 # Templating
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Template engines are tools that allow you to generate HTML by combining template files with data.
 
