@@ -1,6 +1,6 @@
 # Intrusion Systems
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Intrusion Systems are separated into two categories:
 
@@ -27,7 +27,7 @@ An IDS/IPS can operate at different levels:
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Anti-malware/EDR
 * [snort](https://www.snort.org/)

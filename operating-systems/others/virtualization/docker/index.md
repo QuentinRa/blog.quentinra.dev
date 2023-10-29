@@ -1,6 +1,6 @@
 # Docker
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Docker](https://www.docker.com/) allows someone to pack an operating system along with stuff on it <small>(apps, files, configurations...)</small> in something called an **image**. You can then distribute it to others.
 
@@ -33,7 +33,7 @@ $ docker -v # test
 
 ## Docker images
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 To get started, you will have to choose and download an image 🖼️. It will be the base from which you will start adding files, packages, and everything you need for your application.
 
@@ -77,7 +77,7 @@ $ docker image rm image_tag_or_id
 
 ## Containers
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 An image is static. It's built once, and never modified. From it, you can create runtime instances, called **containers** 📦. 
 
@@ -155,7 +155,7 @@ $ docker cp ./local/path container_id:/docker/path
 
 ## Advanced Docker Containers Internals
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Docker network
 
@@ -218,7 +218,7 @@ To run GUI applications on Linux, run `xhost +local:docker` and use:
 
 ## Dockerfile
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A `Dokerfile` <small>(no extension)</small> is a text file used to define the configuration and steps to create a docker image <small>(e.g., the blueprint to create containers)</small>.
 
@@ -329,7 +329,7 @@ USER username:group
 
 ## Advanced Dockerfiles
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### LABEL
 
@@ -382,7 +382,7 @@ directory/
 
 ## Build and deploy images
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Building
 
@@ -444,7 +444,7 @@ It allows docker to speed up each process, by only building or deploying layers 
 
 ## Docker compose plugin
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Docker [compose](https://docs.docker.com/compose/) wraps all arguments passed to `docker run` inside a file called `docker-compose.yml`. It's mainly aimed at services <small>(e.g. tasks with no user interaction)</small>, but it can be used with any docker image 🎊.
 
@@ -525,7 +525,7 @@ networks:
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Dockerfile
 

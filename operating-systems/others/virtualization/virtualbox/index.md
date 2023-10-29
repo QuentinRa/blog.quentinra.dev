@@ -1,6 +1,6 @@
 # VirtualBox
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 VirtualBox is a popular free virtualization software.
 
@@ -21,7 +21,7 @@ VirtualBox is a popular free virtualization software.
 
 ## Additional setup
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### VB Guest Additions
 
@@ -49,7 +49,7 @@ You may need to install Virtual Box Extension pack later
 
 ➡️ On Windows, the "host" key is CTRL (Right).
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### CTRL+ALT+DEL
 
@@ -100,7 +100,7 @@ $ "C:\Program Files\Oracle\VirtualBox\VBoxManage" list hdds
 
 ## Active directory notes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Install Windows Server ISO
 
@@ -136,7 +136,7 @@ On your VM with your VM
 
 ## Random notes
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Bug: no automatic mouse integration
 

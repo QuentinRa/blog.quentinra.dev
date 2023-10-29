@@ -1,6 +1,6 @@
 # Yocto for embedded systems
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Embedded systems have more limitations than usual workstations such as limited disk space or memory.
 
@@ -22,7 +22,7 @@ $ source poky/oe-init-build-env # load
 
 ## Random notes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Configuration files
 
@@ -82,7 +82,7 @@ $ bitbake custom-image
 
 ## Petalinux
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Petalinux is a build-system built on Yocto, and leveraging yocto components and tools for Xilinx platforms.
 
@@ -108,7 +108,7 @@ $ petalinux-build
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Layers (priority/...)
 * Recipes

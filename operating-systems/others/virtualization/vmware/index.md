@@ -1,6 +1,6 @@
 # VMWare Workstation
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 VMWare Workstation is a common virtualization software along with [Virtual Box](../virtualbox/index.md). There is a free version called Player, but it lacks features such as snapshots, Mac support, and some configurations.
 

@@ -1,6 +1,6 @@
 # QEMU
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [QEMU](https://github.com/qemu/qemu) is an open-source emulator.  There is a GUI called [virt-manager](https://github.com/virt-manager/virt-manager).
 
@@ -26,7 +26,7 @@ $ qemu-img create -f qcow2 xxx.qcow2 4G
 
 ## Common usage
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The most basic usage is to boot on a hard drive:
 
@@ -61,7 +61,7 @@ $ [...] -snapshot      # don't save to hard-drive
 
 ## Networking
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### NAT network
 
@@ -93,7 +93,7 @@ $ qemu[...] -netdev tap,ifname=tap0,id=br0 \
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * QEMU monitor console
 * [baeldung: QEMU from terminal](https://www.baeldung.com/linux/qemu-from-terminal)
