@@ -1,6 +1,6 @@
 # Logs analyzers
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Logs analyzers can analyze [Apache logs](../apache/index.md) or other webservers and provide reports about stuff like:
 
@@ -27,7 +27,7 @@ Logs analyzers can analyze [Apache logs](../apache/index.md) or other webservers
 
 ## AWStats
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Advanced Web Statistics](https://github.com/eldy/awstats/) <small>(AWStats, 0.3k ⭐)</small> is an open-source log file analyzer supporting many log formats.
 

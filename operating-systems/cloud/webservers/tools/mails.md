@@ -1,6 +1,6 @@
 # Mail server
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Configuring a mail server involves two aspects:
 
@@ -22,7 +22,7 @@ $ echo "body" | mail -s "subject" email
 
 ## Postfix
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Postfix](https://github.com/vdukhovni/postfix) <small>(0.3k ⭐)</small> is a well-known MTA.
 
@@ -43,7 +43,7 @@ $ sudo systemctl restart postfix
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * DMarc
 * SPF ([SPF](https://www.digitalocean.com/community/tutorials/how-to-use-an-spf-record-to-prevent-spoofing-improve-e-mail-reliability))

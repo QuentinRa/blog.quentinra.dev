@@ -1,6 +1,6 @@
 # Active Directory Security
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Common good practices**
 
@@ -20,7 +20,7 @@
 
 ## Kerberos
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Kerberos is a protocol used to provide secure authentication over non-secure networks. It replaces NetNTLM.
 
@@ -36,7 +36,7 @@ When the user wants to access a network resource, such as a shared folder, the c
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * BloodHound (map AD environment, identify attack paths/priv. esc.)
 * Strong password policy

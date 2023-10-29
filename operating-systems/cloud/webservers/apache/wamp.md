@@ -1,6 +1,6 @@
 # WAMP Server
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 WAMP server is a Windows server running Apache, MySQL/MariaDB, and PHP.
 
@@ -24,7 +24,7 @@ Once installed, and started, you will see this icon in the system tray.
 
 ## Random notes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Access the database
 
@@ -85,7 +85,7 @@ Use either of the download links and find the **addons > PHP** section/folder. D
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Updates
 * Add-ons

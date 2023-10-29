@@ -2,7 +2,7 @@
 
 [![principlesofsecurity](../../../../cybersecurity/_badges/thm/winadbasics.svg)](https://tryhackme.com/room/principlesofsecurity)
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 Active Directory is a centralized database of every network resource:
 
@@ -34,7 +34,7 @@ It's widely used to manage organizations/schools/... They can configure for each
 
 ## Forests and domains
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A **schema** 🪨 is a definition of an entity, such as a user. It defines its attributes such as `"Firstname"`, `"Lastname"`... A schema can be extended, meaning, we can add new attributes.
 
@@ -58,7 +58,7 @@ A **global catalog** 📰 stores a copy of the most used attributes of every obj
 
 ## Getting started
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 If starting from scratch, you will create a forest 🌴, with only one domain inside 🧵, for instance, `example.com`. To do so, you will need a computer that will serve as a domain controller 👑.
 
@@ -164,7 +164,7 @@ Configure your DHCP server
 
 *From the users and computers tool, you can right-click on your domain, then "change domain" to manage a subdomain.*
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 We use **Organizational Units (OUs)** 📂 to sort the great number of objects within a domain: users, computers, printers, security groups...
 
@@ -250,7 +250,7 @@ To log in to a local account, use `.\username`.
 
 ## Permissions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 We usually don't apply permissions on a user, as it is not scalable. Instead, we create groups or apply permissions to OUs.
 
@@ -372,7 +372,7 @@ There, you can enable history, set password length and age <small>(ex: 6 months)
 
 ## Files and folders
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Mount a network drive 📂
 
@@ -464,7 +464,7 @@ You can go back to the `HOME` folder, and see a folder for each user.
 
 ## Permissions on folders
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A **security principal** ([doc](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-principals)) 🔒 is an entity that can be authenticated and given access to a resource, such as a folder.
 
@@ -490,7 +490,7 @@ To configure permissions for a folder 🔐
 
 ## Forest and trusts
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A **trust** 👪 is a relationship between two domains or forests, defining whether each one can access objects of the other.
 
@@ -516,7 +516,7 @@ There are other kinds of trusts:
 
 ## Windows Server Update Services (WSUS)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The WSUS service is used to manage and deploy updates to Windows workstation within the domain from a centralized server.
 
@@ -537,7 +537,7 @@ Before updating, it's always wiser [to prepare properly](/cybersecurity/blue-tea
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Microsoft System Center Configuration Manager (SCCM)
 * SConfig <small>(relies on PowerShell to manage ADDS)</small>

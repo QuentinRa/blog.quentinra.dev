@@ -1,6 +1,6 @@
 # MAMP Server
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [MAMP](https://www.mamp.info/en/mamp/mac/) is a macOS server running Apache, MySQL/MariaDB, and PHP. 
 

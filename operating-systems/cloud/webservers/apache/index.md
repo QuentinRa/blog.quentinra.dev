@@ -1,6 +1,6 @@
 # Apache2 web server
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Apache** is a thread-per-request server, that is steadily being replaced by event-driven servers such as Nginx or Node.js.
 
@@ -25,7 +25,7 @@ $ sudo apt install apache2
 
 ## List of commands
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can use `systemctl` to handle the `apache2` service.
 
@@ -96,7 +96,7 @@ $ sudo chown -R www-data:www-data folder/
 
 ## HTTP2
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 See also [http2.pro](https://http2.pro/doc/Apache).
 
@@ -130,7 +130,7 @@ $ sudo systemctl start apache2
 
 ## Apache .htaccess
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 This is a file used to edit the virtual host configuration locally. Simply create a file `.htaccess` with some instructions inside.
 
@@ -203,7 +203,7 @@ xxx:$apr1$8KSS.TIW$qWKI88AFeMSl3iemCuUCk/
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * `apache2ctl restart`
 * [Apache Security](https://www.tecmint.com/apache-security-tips/)
