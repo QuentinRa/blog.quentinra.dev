@@ -1,6 +1,6 @@
 # GitLab CI/CD workflow
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 GitLab [CI/CD](index.md) is a well-known and popular mature solution for DevOps. From my perspective, GitLab CI free version is relatively limited. For instance, most interfaces to display CI results are rudimentary or paid.
 
@@ -31,7 +31,7 @@ The pipeline status is visible next to each commit: ![pipeline success](_images/
 
 ## Runners
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A [**runner**](https://docs.gitlab.com/runner/) is an agent running the jobs, e.g., executing the commands.
 
@@ -86,7 +86,7 @@ $ sudo gitlab-runner restart
 
 ## The .gitlab-ci.yml File
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 It's a [YAML](/programming-languages/others/data/yaml.md) file. See the [reference](https://docs.gitlab.com/ee/ci/yaml/). When using the online editor, in `CI/CD > Editor` <small>(you can select the file and the branch)</small>:
 
@@ -202,7 +202,7 @@ Allowed repositories can be cloned from a pipeline.
 
 ## Advanced usages
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### allow_failure
 
@@ -279,7 +279,7 @@ For instance, for [code quality](https://docs.gitlab.com/ee/ci/testing/code_qual
 
 ## CI Templates
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 It's possible to extract some logic into a reusable YAML template. The aforementioned template can be [included](https://docs.gitlab.com/ee/ci/yaml/#include) using various ways. One is:
 
@@ -311,7 +311,7 @@ some_job:       # job declared in the template
 
 ## GitLab custom badges
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 GitLab offers 3 [badges](https://docs.gitlab.com/ee/user/project/badges.html): pipeline status, coverage status, and release status. It's possible to use [external APIs]() for public projects. Otherwise, a common solution is to build badges during the CI pipeline.
 
@@ -350,7 +350,7 @@ If needed, you can use `test` and `&&/||` to write conditionals:
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * how to trigger the pipeline
 * Logs

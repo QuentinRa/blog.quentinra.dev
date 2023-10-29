@@ -1,6 +1,6 @@
 # <samp>git</samp>
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Git](https://git-scm.com/) is a popular and widely used [version control system](../../_general/index.md) (DVCS). We create snapshots of our project called **commits** 🔐. They are stored in **branches** 🪵, which are quite similar to local copies of a project.
 
@@ -21,7 +21,7 @@ Git usually involves two sides:
 
 ## Pick your software
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Git clients 👲
 
@@ -54,7 +54,7 @@ To improve collaboration, they usually provide [many new features](server-side.m
 
 ## Authentication
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 When using Git with a remote server, we **need** to log in for some operations such as `git clone`, `git pull`, `git push`... You may use one of these to log in <small>(the default one being the less convenient)</small>:
 
@@ -130,7 +130,7 @@ $ cd xxx && git pull # no authentication
 
 ## Git workflow
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Git creates a tree of **commits** which are the snapshots/saves of your project. All files in a Git project are either ([schema](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)):
 
@@ -161,7 +161,7 @@ To push to the remote server your commits, use `git push`.
 
 ## 💴 Commits 💴
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Each commit stores information about its changes relative to the previous commit. You can view commits like a timeline or a thread.
 
@@ -194,7 +194,7 @@ You can also use predicates such as: `xxx@{two month ago}` or `xxx@{2021-05-05}`
 
 ## 🪵 Branches 🪵
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 When working on a project, it's common to create a copy of the project and work on it, for instance, to test implementing a feature. By doing that, we ensure we still have a working project <small>("just in case" 😅)</small>.
 
@@ -220,7 +220,7 @@ To rebase before a merge <small>(cleaner history)</small>, use `git rebase`.
 
 ## Git remotes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Remotes** specify where and how the code is fetched and sent when using operations such as `git push`, `git pull`...
 
@@ -236,7 +236,7 @@ For manipulating remotes, use `git remote` ([usage](../commands/index.md#git-rem
 
 ## Other topics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### 📦 .gitignore
 
@@ -277,7 +277,7 @@ commitlint](https://commitlint.js.org/#/), and [7 rules](https://cbea.ms/git-com
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * git pull merge branch
 * merge fast-forward vs rebase

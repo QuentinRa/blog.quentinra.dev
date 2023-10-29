@@ -1,6 +1,6 @@
 # 🍒 CODE_OF_CONDUCT.md
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 What behavior is tolerated? What behavior isn't tolerated?
 

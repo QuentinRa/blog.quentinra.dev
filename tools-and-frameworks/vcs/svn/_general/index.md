@@ -1,6 +1,6 @@
 # Subversion (SVN)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Subversion (SVN) is a centralized [version control system](../../_general/index.md). Developers `commit` their changes to a central repository that keeps track of every change. They `checkout` the repository to get a copy of the project.
 
@@ -26,7 +26,7 @@ $ svn update                        # Get latest version
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * `svn copy`
 * `svn merge`

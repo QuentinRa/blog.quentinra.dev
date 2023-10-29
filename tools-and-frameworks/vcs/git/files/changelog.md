@@ -1,6 +1,6 @@
 # 🍒 CHANGELOG.md
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Keep track of every change. See [keepachangelog.com](https://keepachangelog.com/en/).
 

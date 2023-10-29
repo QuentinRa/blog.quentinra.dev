@@ -1,6 +1,6 @@
 # 📦 LICENSE / LICENSE.txt
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A license describes what others can do with your code. No license means that your code is copyrighted. We usually use these
 

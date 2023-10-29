@@ -1,6 +1,6 @@
 # README.md
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The README.md <small>(or README.rst)</small> is a file in Markdown describing the project, how to install it, how to use it... [See makeareadme.com](https://www.makeareadme.com/)
 
@@ -29,7 +29,7 @@ There are a few metrics you may also show:
 
 ## 🎉 Fancy GitHub 🎉
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 On GitHub, READMES are used for many things other than just the README of a project. For instance, we may use a README.md to populate our profile, or our organization profile.
 

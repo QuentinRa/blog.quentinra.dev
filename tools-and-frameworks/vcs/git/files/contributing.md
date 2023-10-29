@@ -1,6 +1,6 @@
 # 🍒 CONTRIBUTING.md
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Explain how they can contribute to your project.
 

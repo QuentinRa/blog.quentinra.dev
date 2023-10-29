@@ -1,6 +1,6 @@
 # Remote Git Server features 🏹
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### 🏹 Issues
 
@@ -49,7 +49,7 @@ Every issue/pull request has an ID, for instance, `#1`. You can reference this I
 
 ## ✍️ Less commonly used features ✍️
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### ✍️ Co-authors
 
@@ -129,7 +129,7 @@ This is a feature that includes Agile-Scrum Scrum boards. It's actually a bit mo
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [CITATION files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files) (👻)
 * Templates ([git-repository-template](https://github.com/misitebao/template-git-repository) / [opensource-template](https://github.com/EmbarkStudios/opensource-template))

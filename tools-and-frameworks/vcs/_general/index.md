@@ -1,6 +1,6 @@
 # Version Control
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Version control, a.k.a. source control is a system that manages changes to files in a project over time. Version control systems (VCS) are either:
 
@@ -23,7 +23,7 @@ VCS addresses several challenges that arise when working on software development
 
 ## Versioning 🌞
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Given the implementation of version control, the importance of proper versioning has significantly increased.
 
@@ -52,7 +52,7 @@ An alternative is [Calendar Versioning](https://calver.org/).
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Plastic SCM
 </div><div>

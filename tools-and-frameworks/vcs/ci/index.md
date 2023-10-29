@@ -1,6 +1,6 @@
 # CI/CD workflow
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Continuous integration** (CI) 🏭 refers to the implementation of an ongoing workflow that is executed regularly within the development process. Common tasks often found in CI workflows:
 
@@ -25,7 +25,7 @@ All tasks may be executed on-demand or at specific events.
 
 ## Benefits
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Testing
 
@@ -45,7 +45,7 @@ It may take some time to implement complex CI/CD workflows, but once implemented
 
 ## 🗃️  External Solutions  🗃️
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 There are many tools that can be integrated during CI/CD workflows that provide code quality, security reviews, dependency monitoring... Most are paid and free for open-source projects.
 
@@ -87,7 +87,7 @@ There are many tools that can be integrated during CI/CD workflows that provide 
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [Basics of CI/CD](https://levelup.gitconnected.com/basics-of-ci-cd-a98340c60b04)
 * [gitpod](https://www.gitpod.io/)

@@ -1,13 +1,11 @@
 # Jenkins
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Jenkins](https://www.jenkins.io/) <small>(21.2k ⭐)</small> is an open-source automation server. It means that it's not a server hosting code, but it can be connected to a GIT server <small>(GitLab, GitHub...)</small> to process [CI/CD](index.md) workflows.
 
 The biggest strength of Jenkins is that it has a great number of [plugins](https://plugins.jenkins.io/), such as plugins to visualize CI results <small>(tests, coverage...)</small>.
 </div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">
@@ -16,7 +14,7 @@ The biggest strength of Jenkins is that it has a great number of [plugins](https
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * master/slaves (a.k.a. workers)
 * freestyle projects (web interface) vs pipeline jobs (as code)

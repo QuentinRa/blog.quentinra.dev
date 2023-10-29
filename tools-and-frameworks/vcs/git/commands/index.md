@@ -1,6 +1,6 @@
 # <samp>git</samp> commands
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can install [Git](../_general/index.md) CLI using:
 
@@ -38,7 +38,7 @@ $ git toto # same as 'git add .'
 
 ## Basic Git commands
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### git clone
 
@@ -126,7 +126,7 @@ $ git push          # current branch
 
 ## Git branching
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### git branch
 
@@ -223,7 +223,7 @@ $ git merge --abort
 
 ## Git Rebase
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The command `git rebase` is used to edit a repository commit history. There are many cases, such as
 
@@ -273,7 +273,7 @@ $ git rebase --continue # next task
 
 ## Git Logs
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### git diff
 
@@ -348,7 +348,7 @@ $ git ls-remote --heads --tags
 
 ## git remote
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A few commands you might use when dealing with remotes.
 
@@ -414,7 +414,7 @@ $ git merge other/main --allow-unrelated-histories
 
 ## 🪄 Git extras 🪄
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### 🪄 Git submodules
 
@@ -491,7 +491,7 @@ Git tools
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * `git show`
 * `git tag`

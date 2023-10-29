@@ -1,6 +1,6 @@
 # GitHub Actions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 GitHub Actions were introduced in 2018 to design [CI/CD](index.md) workflows for GitHub projects. Actions are relatively short and reusable pieces of code that simplify the process of creating a CI/CD workflow. 
 
@@ -24,7 +24,7 @@ The workflow status is visible next to each commit: ![pipeline success](_images/
 
 <hr class="sep-both">
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ## Basic syntax
 
@@ -77,7 +77,7 @@ For each step, you may use these optional attributes:
 
 ## Advanced syntax
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Trigger
 
@@ -117,7 +117,7 @@ The [`strategy` keyword](https://docs.github.com/en/actions/using-workflows/work
 
 ## Some actions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Java actions
 
@@ -181,7 +181,7 @@ The [`strategy` keyword](https://docs.github.com/en/actions/using-workflows/work
 
 ## Dependabot
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Dependabot is a "bot" that checks your dependencies. If it detects that we can upgrade a dependency, it opens a pull-request with the suggested upgrade. Here is the [official tutorial](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuring-dependabot-version-updates#enabling-dependabot-version-updates) 🚀.
 
@@ -226,7 +226,7 @@ It works by analyzing dependencies in the ecosystem file:
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [Running jobs in a container](https://docs.github.com/en/actions/using-jobs/running-jobs-in-a-container)
 </div><div>
