@@ -1,6 +1,6 @@
 # Threads
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A thread is a sequence of instructions. Most Android applications run on **one single main thread** called **UI Thread**. This thread will:
 
@@ -25,7 +25,7 @@ So, when we need to run code that takes a long time, we either:
 
 ## Asynchronous functions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A synchronous function is a (normal) function that returns the result when the function call is done. For instance:
 
@@ -63,7 +63,7 @@ private suspend fun waitFiveSeconds() {
 
 ## Coroutines 💎
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A coroutine can be used to run **suspend** functions.
 
@@ -159,7 +159,7 @@ while (true) {
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [Android coroutines](https://developer.android.com/courses/pathways/android-coroutines)
 </div><div>

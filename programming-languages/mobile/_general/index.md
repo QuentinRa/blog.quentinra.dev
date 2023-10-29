@@ -1,6 +1,6 @@
 # Mobile development 
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Mobile development refers to developing applications that run on mobiles. They can be **native** or **hybrid**/**cross-platform**.
 

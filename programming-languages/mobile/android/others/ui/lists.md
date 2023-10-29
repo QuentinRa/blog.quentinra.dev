@@ -1,6 +1,6 @@
 # 🚃 Display a list of items 🚃
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [RecyclerView](https://developer.android.com/develop/ui/views/layout/recyclerview) is a "new" way of displaying lists, that is more efficient, and uses less memory, as it is recycling views that disappeared, to show the new elements of the list that showed up.
 
@@ -247,7 +247,7 @@ See also
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```kotlin
 binding.recyclerView.itemAnimator = null

@@ -1,6 +1,6 @@
 # 📦 Resources 📦
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Resources are used everywhere, especially when we try to customize the application <small>(e.g., localization, dark-theme, responsive...)</small>:
 
@@ -32,7 +32,7 @@ fun loadIcon(@DrawableRes drawableId: Int) { /* ... */ }
 
 ## Drawables 🖼️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A drawable is an image in a format such as PNG, JPG, or SVG.
 
@@ -61,7 +61,7 @@ A drawable is an image in a format such as PNG, JPG, or SVG.
 
 ## Localization 🔤
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 Android automatically detects the language of the operating system and loads the appropriate language if available, otherwise fallback to the default language.
 
@@ -89,13 +89,13 @@ To add translations, you should use the **Translations Editor** <small>(see the 
 
 This is a dictionary: a **key** is associated with a **value**.
 
-```xml
+```xml!
 <string name="key">value</string>
 ```
 
 Inside another XML, you can reference a string with `@string`
 
-```xml
+```xml!
 <TextView
     android:text="@string/key" />
 ```
@@ -115,7 +115,7 @@ var value = view.context.getString(R.string.key)
 
 Android uses **String.format** to parse the value, so you can pass parameters, as you would to printf in C.
 
-```xml
+```xml!
 <string name="price">The price is %s</string>
 ```
 
@@ -129,7 +129,7 @@ var value = getString(R.string.price, "$3")
 
 You can provide variants according to the number of elements.
 
-```xml
+```xml!
 <plurals name="count">
     <item quantity="zero">0</item>
     <item quantity="one">1</item>
@@ -175,7 +175,7 @@ val xxx = formatter.format(calendar.time)
 
 ## Other resources 🧸
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Arrays
 

@@ -1,6 +1,6 @@
 # Data management
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 When using Activities or Fragments, you will usually want to store some data. For instance, the user checked some options in the previous activity, and you want to keep track of it.
 
@@ -20,7 +20,7 @@ A model may be temporary <small>(a variable)</small>, or persistent <small>(a da
 
 ## ViewModel
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 We commonly use the **ViewModel** 🏠 class to handle data.
 
@@ -155,7 +155,7 @@ class XXXViewModelFactory(private val v: Integer) : ViewModelProvider.Factory {
 
 ## LiveData
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A **LiveData** 📩 is a **life-cycle aware observable** variable.
 
@@ -319,7 +319,7 @@ See also [Transformations with multiple arguments](https://stackoverflow.com/que
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Another alternative to ViewModel is using a **Bundle** 🎒, but they are limited in size, so they're not convenient to use.
 

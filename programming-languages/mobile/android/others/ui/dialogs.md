@@ -1,6 +1,6 @@
 # 📧 Dialogs 📧
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Dialogs are made of a title (optional), a message, and some buttons (accept/close). Clicking on any button will close the popup.
 

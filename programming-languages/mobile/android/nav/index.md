@@ -1,6 +1,6 @@
 # Navigation Management
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Navigation management refers to the implementation of how users navigate through different screens, which include:
 
@@ -22,7 +22,7 @@ It's worth noting that navigation involves what we call the **back stack** which
 
 ## Application back stack
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Android activities are pilled up in something called the "back stack". On older devices, users can use the "back arrow" to "go back": the current activity is popped out, and we load the previous one. If there are none, then the app is terminated.
 
@@ -46,7 +46,7 @@ intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
 
 ## Intents
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 An [**intent**](https://developer.android.com/guide/components/intents-filters) is an object representing an action to be performed, such as navigating to another activity. There are two kinds of intents:
 
@@ -160,7 +160,7 @@ if (packageManager.resolveActivity(intent, 0) != null) {
 
 ## 🧭 Navigation Component 🧭 
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The [navigation component](https://developer.android.com/guide/navigation/navigation-getting-started) is a Jetpack component to handle the navigation between fragments.
 
@@ -189,7 +189,7 @@ From the resource manager, go to "navigation", then add a new navigation. For in
 
 #### Add destinations
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Switch back to the Design View of the XML. Create or import your Fragments by clicking on the phone with the plus/add icon.
 </div><div>
@@ -351,7 +351,7 @@ findNavController().popBackStack()
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Android bottom navigation
 * [Nested navigation graphs](https://developer.android.com/guide/navigation/navigation-nested-graphs)

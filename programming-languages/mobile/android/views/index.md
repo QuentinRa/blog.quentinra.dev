@@ -1,10 +1,10 @@
 # Views
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Each activity or fragment is associated with **one** layout file. It's an [XML](/programming-languages/others/data/xml.md) file stored in **app/res/layout**. Inside there is a [layout](#layouts) with children [views](#views) defining the appearance of the user interface.
 
-```
+```xml!
 <?xml version="1.0" encoding="utf-8"?>
 <XXXLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -32,7 +32,7 @@ Each activity or fragment is associated with **one** layout file. It's an [XML](
 
 ## Layouts
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Layouts are a category of **ViewGroups**. They are [Views](#views) with predefined settings to arrange children views.
 For instance, a `GridLayout` will arrange its nested views in a grid-like format.
@@ -43,7 +43,7 @@ They are also convenient to apply a style. For instance, to add some margin to t
 
 [Documentation](https://developer.android.com/develop/ui/views/layout/linear)
 
-```
+```xml!
 <LinearLayout
     ...
     android:orientation="vertical"
@@ -60,7 +60,7 @@ They are also convenient to apply a style. For instance, to add some margin to t
 
 [Documentation](https://developer.android.com/reference/android/widget/FrameLayout)
 
-```
+```xml!
 <FrameLayout ...>
   <!-- usually a recycler view, or a fragment container -->
 </FrameLayout>
@@ -71,7 +71,8 @@ They are also convenient to apply a style. For instance, to add some margin to t
 #### ConstraintLayout: a flexible way to design views
 
 [Documentation](https://developer.android.com/develop/ui/views/layout/constraint-layout)
-```
+
+```js!
 implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 ```
 
@@ -90,7 +91,7 @@ To change the behavior of how the free space is handled, simply edit the layout 
 
 ## Views
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 In Android, every component such as an Image is called a **View**. Every view must have at least these two attributes
 
@@ -107,7 +108,7 @@ And these attributes are available on any View
 
 [TextView extends View](https://developer.android.com/reference/android/widget/TextView).
 
-```xml
+```xml!
 <TextView
     android:text="Shown in the app"
     tools:text="Shown in the DesignView"
@@ -123,7 +124,7 @@ And these attributes are available on any View
 
 [ImageView extends View](https://developer.android.com/reference/android/widget/ImageView)
 
-```
+```xml!
 <!-- scaleType="centerCrop" is used for 9patches scaling -->
 <ImageView 
     tools:srcCompat="YOUR_IMAGE"
@@ -135,7 +136,7 @@ And these attributes are available on any View
 
 [EditText extends TextView](https://developer.android.com/reference/android/widget/EditText). See also [InputType](https://developer.android.com/develop/ui/views/touch-and-input/keyboard-input/style) and [Autofill](https://developer.android.com/guide/topics/text/autofill-optimize).
 
-```
+```xml!
 <EditText
     android:inputType="text"
     android:autofillHints="username"
@@ -148,7 +149,7 @@ And these attributes are available on any View
 
 [Switch extends Button](https://developer.android.com/reference/android/widget/Switch) <small>(indirectly)</small> and [SwitchCompat](https://developer.android.com/reference/androidx/appcompat/widget/SwitchCompat).
 
-```
+```xml!
 <Switch android:checked="true" />
 <!-- ✅ better -->
 <androidx.appcompat.widget.SwitchCompat
@@ -161,7 +162,7 @@ And these attributes are available on any View
 
 ## 🔗 Get access to a view from the code 🖇️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can then use `findViewById(some_id)` to get a view.
 
@@ -229,11 +230,11 @@ if(s.isChecked) {}
 
 ## 🔥 Accessibility 🔥
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 If something is only here to decorate the screen, you should mark it as not important for accessibility.
 
-```
+```xml!
 <ImageView
   android:importantForAccessibility="no" />
 ```
@@ -241,7 +242,7 @@ If something is only here to decorate the screen, you should mark it as not impo
 
 For images, if they are important for accessibility, you should provide a content description. ⚠️If the image is modified from the code, the content description should be updated.
 
-```
+```xml!
 <ImageView
   android:contentDescription="Describe this image" />
 ```
@@ -251,7 +252,7 @@ For images, if they are important for accessibility, you should provide a conten
 
 ## ✨ View Binding ✨
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ViewBinding is a new alternative to `findViewById`.
 
@@ -273,7 +274,7 @@ android {
 
 Assume that we have an XML file with
 
-```xml
+```xml!
 <SomeViewHere
     android:id="@+id/someUniqIdHere"
     ...
@@ -329,7 +330,7 @@ class BlankFragment : Fragment() {
 
 ## 🎨 Material Design 🎨
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Material design is a library of pre-made components. Google recommends using Material UI components as much as possible.
 
@@ -355,7 +356,7 @@ Manually edit the XML and replace AndroidX classes with MaterialUI classes. Asid
 
 ## ⚡ Data Binding ⚡
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 DataBinding is an extension of [ViewBinding](#-view-binding-). It allows us to directly connect the data and the view directly inside the XML.
 
@@ -527,7 +528,7 @@ You can use the attribute as long as `app` was imported <small>(see the appropri
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [RadioButton](https://developer.android.com/reference/android/widget/RadioButton), and [RadioGroup](https://developer.android.com/reference/android/widget/RadioGroup)
     * RadioGroup#`checkedButton`

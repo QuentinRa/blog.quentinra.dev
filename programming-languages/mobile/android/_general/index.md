@@ -1,6 +1,6 @@
 # Android
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Android is an operating system developed by Google. [Native android applications](../../_general/index.md) are developed in [Kotlin](/programming-languages/high-level/oo/kotlin/index.md) mostly using [Android Studio](../tools/and/index.md).
 
@@ -32,7 +32,7 @@ You will have to edit the second `build.gradle (Module: XXX)`.
 
 ## Android Framework
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Application
 
@@ -77,7 +77,7 @@ The Android Manifest defines things like:
 
 ## Model View ViewModel (MVVM)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Model View ViewModel**, or MVVM for short, is a popular architectural design pattern in which
 
@@ -110,7 +110,7 @@ There are still controllers like in MVC. They are responsible for rendering the 
 
 ## Android Application
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 When an Android application is started, it instantiates the `Application` class which loads the main activity. 
 
@@ -173,7 +173,7 @@ In your AndroidManifest.xml, look for the tag "application", and add an attribut
 
 ## Activities
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Activities are screens of an application, while in fact, one activity can serve multiple screens using fragments according to the app design.
 
@@ -209,7 +209,7 @@ class MainActivity : AppCompatActivity() {
 
 ## Activity lifecycle
 
-<div class="row row-cols-md-2 mt-4"><div class="align-self-center">
+<div class="row row-cols-lg-2"><div class="align-self-center">
 
 Android activities' lifecycle is a bit complex. To summarize,
 
@@ -239,7 +239,7 @@ As for **onDestroy**, it is called
 
 ## Fragments
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Fragments are in many ways similar to activities. They are loaded by an activity, but they have their own lifecycle.
 
@@ -291,7 +291,7 @@ The Fragment lifecycle is as follows.
 
 ## 🐛 Debugging 🐛
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 Use the Logger instead of print/println to keep track of what your application is doing (=logs).
 
@@ -345,7 +345,7 @@ class XXX : YYY() {
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Android ProGuard
 * [Modern Android Development (MAD)](https://developer.android.com/courses/pathways/android-architecture)

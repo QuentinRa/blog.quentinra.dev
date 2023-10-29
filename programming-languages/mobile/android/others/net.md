@@ -1,6 +1,6 @@
 # Internet
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 Most Android apps do HTTP requests to some servers <small>(database/...)</small>. Most of the time, there is an [API](/programming-languages/others/apis/_general/index.md) in place instead of direct access. API calls are usually done in a [ViewModel](../data/index.md#viewmodel) class, inside a method starting a new [thread/coroutine](threads.md) - to avoid blocking the main thread.
 
@@ -40,7 +40,7 @@ What I defined as HTTP libraries are libraries that provide an interface to an H
 
 ## Retrofit
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Retrofit](https://github.com/square/retrofit) is the most used HTTP client.
 
@@ -168,7 +168,7 @@ The output is available in the logcat tab after a few seconds.
 
 ## Retrofit - Moshi
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Moshi](https://github.com/square/moshi) is one of the [converters](https://github.com/square/retrofit/tree/master/retrofit-converters) supported by Retrofit. It's very similar to the popular Gson converter.
 
@@ -349,7 +349,7 @@ suspend fun getXXX() : YYY
 
 ## Retrofit: cookies/sessions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 By default, Retrofit does not store/load cookies. It can be solved easily by creating a CookieJar.
 
@@ -389,7 +389,7 @@ class SimpleCookieJar : CookieJar {
 
 ## Coil: Load images from the internet
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can use the [coil](https://github.com/coil-kt/coil) (8.8k ⭐) library.
 
@@ -475,7 +475,7 @@ imgView.load(imgUri)
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [glide](https://github.com/bumptech/glide) (33.2k ⭐, images)
 * [Fuel example (stripe)](https://stripe.com/docs/payments/accept-a-payment?platform=android&ui=payment-sheet#android-collect-payment-details)

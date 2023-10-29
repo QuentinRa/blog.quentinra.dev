@@ -1,6 +1,6 @@
 # 🪜 WorkManager 🪜
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A WorkManager is used to run **long**, **periodic**, or **battery intensive tasks**. Unlike previous APIs, you are guaranteed that your job will be executed, even if the app is closed, or the phone restarted.
 

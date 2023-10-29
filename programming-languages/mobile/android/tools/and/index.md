@@ -1,6 +1,6 @@
 # Android Studio
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Android Studio is an IDE developed by Google based on [IntelliJ IDEA](/tools-and-frameworks/editors/gui/jetbrains/idea/index.md) and hence sharing [common features](/tools-and-frameworks/editors/gui/jetbrains/_general/index.md) of IDEs developed by JetBrains. It was specifically adapted for Android Projects using Kotlin or Java.
 
@@ -27,7 +27,7 @@ To see the documentation of a method, use <kbd>CTRL+Q</kbd> or hover a method. B
 
 Instead of editing the XML manually, you will usually use the Design mode.
 
-<div class="row row-cols-md-2 mx-0"><div class="align-self-center">
+<div class="row row-cols-lg-2"><div class="align-self-center">
 
 <ol style="list-style-type: lower-alpha">
 <li><b>Mode</b>: you can switch to the XML/Layout editor here</li>
@@ -51,7 +51,7 @@ Instead of editing the XML manually, you will usually use the Design mode.
 
 ## 📱 Random features 📱
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Gradle
 
@@ -132,7 +132,7 @@ The device emulator allows you to create a virtual device or connect yours. You 
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Action on Save: Optimize imports
 </div><div>
