@@ -4,7 +4,6 @@
 
 Tools
 
-* <http://webgraphviz.com/>
 * <http://atomurl.net/math/>
 
 French, old references

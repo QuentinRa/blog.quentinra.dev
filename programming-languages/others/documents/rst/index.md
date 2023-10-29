@@ -239,7 +239,7 @@ Some inline latex formula :math:`a \gt b`.
 
 #### Plots
 
-You can use [Graphviz](https://graphviz.org/). Ensure that the executable was added to the path, and that `dot.exe -c`/`dot -c` was called at least once.
+You can use [Graphviz](/tools-and-frameworks/projects/modeling/graphviz/index.md) diagrams:
 
 ```js!
 .. graphviz::

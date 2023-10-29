@@ -96,10 +96,6 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 * [ironcreek](https://ironcreek.net/syntaxtree/)   (👻, syntaxtree)
 </div><div>
-
-##### Graphs
-
-* [webgraphviz](http://webgraphviz.com/) (with [GraphViz Pocket Reference](https://graphs.grevian.org/example))
 </div></div>
 
 <hr class="sep-both">
