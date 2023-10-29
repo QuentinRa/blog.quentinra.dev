@@ -17,6 +17,7 @@ We often use [R Studio](https://www.rstudio.com/) or [IntelliJ](https://plugins.
 A basic script `my_script.R` file:
 
 ```R
+# Display "Hello, World!"
 cat("Hello, World!\n")
 ```
 
@@ -76,8 +77,10 @@ Useful methods:
 #### Print some text in the terminal
 
 ```R
-myvar        # implicit
-print(myvar) # explicit
+myvar                                     # implicit
+print(myvar)                              # explicit
+print(paste("Hello", "World"))            # concatenation
+cat(paste("Hello", "World"), sep = "\n")  # using "cat"
 ```
 
 #### Operators
@@ -177,6 +180,8 @@ v <- c(1,2,3,4,5)                # vector: (1 2 3 4 5)
 v <- 1:5                         # vector: (1 2 3 4 5)
 v <- seq(1,5)                    # vector: (1 2 3 4 5)
 v <- vector(mode = "numeric", 5) # empty vector
+v <- c(v, 2)                     # add a value
+v <- c(v, NULL)                  # ignore "NULL"
 ```
 
 #### Operations
@@ -204,6 +209,14 @@ v[v > 2]     # only values greater than 2
 
 🚀 `which(cond)` returns a vector of all indexes given a condition.
 </div><div>
+
+#### Named Indexes
+
+```R
+v <- c(yes = 1, no = 0)    # named indexes
+names(r)                   # vector("yes" "no")
+match(c("no"), names(r))   # index of the name
+```
 
 ...
 </div></div>

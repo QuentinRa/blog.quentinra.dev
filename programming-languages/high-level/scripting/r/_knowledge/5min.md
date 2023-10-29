@@ -1,19 +1,4 @@
-# Expressions
-
-You can do comments with `#`. You may or not add a `;` at the end of a line.
-
-If a line is evaluated to be a **value** then R will print it. For example, when I do `x <- 5` I assign something so that's not a value. But if I write `x` or `"test"` **it's a value** so R will print it.
-
-```r
-# will print 5
-x
-# explicit call to print
-print("test")
-```
-
-<hr class="sl">
-
-## Functions
+# Functions
 
 You can write a function using the keyword `function`. Parameters can have a default value and they can be passed in whatever order you want if you use named arguments.
 

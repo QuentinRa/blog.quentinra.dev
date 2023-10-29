@@ -14,7 +14,6 @@ You can check this fast course to learn the basics of R without details [Learn R
 Then here is the real course.
 
 * [Strings](syntax/types/strings.md)
-* [Vectors](syntax/types/vectors.md)
 * [Matrix](syntax/types/matrix.md)
 * [Lists](syntax/types/lists.md)
 * [Contingency tables](syntax/types/table.md)
