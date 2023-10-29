@@ -1,6 +1,6 @@
 # PHPUnit
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [PHPUnit](https://phpunit.de/index.html) is a unit testing framework, similar to [JUnit](../../java/junit/index.md) in Java.
 
@@ -27,7 +27,9 @@ $ ./vendor/bin/phpunit test_file.php
 
 ## TestCases
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
+
+A basic test class:
 
 ```php
 <?php declare(strict_types=1);
@@ -42,7 +44,7 @@ class XXXTest extends TestCase {
 }
 ```
 
-You can execute some code before/after **every** test
+You can execute some code before/after **all** tests
 
 ```php
 // ...
@@ -66,7 +68,7 @@ class XXXTest extends TestCase {
 
 </div><div>
 
-Inside a test, here are examples of assertions you can use
+Inside a test, here are examples of assertions you can use:
 
 ```php
 // boolean true/false

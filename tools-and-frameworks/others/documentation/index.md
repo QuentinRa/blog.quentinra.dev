@@ -1,6 +1,6 @@
 # Code Documentation
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Developers usually redact some documentation along the code to document some knowledge related to their code, such as:
 
@@ -30,7 +30,7 @@ Mostly for user documentation, you can use these:
 
 ## Documentation tips
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **You may do** ✅
 
@@ -57,7 +57,7 @@ Mostly for user documentation, you can use these:
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [dokuwiki](https://www.dokuwiki.org/dokuwiki)
 * [mediawiki](https://www.mediawiki.org/wiki/MediaWiki)

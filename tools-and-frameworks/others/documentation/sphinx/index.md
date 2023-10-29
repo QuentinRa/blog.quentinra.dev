@@ -1,6 +1,6 @@
 # Sphinx 🦁
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Sphinx is a well-known documentation generation tool, mainly used in Python projects. It generates documentation from special comments within the source code ✨ or from separate [ReStructured Text](/programming-languages/others/documents/rst/index.md) files ✍️.
 

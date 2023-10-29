@@ -1,6 +1,6 @@
 # JUnit
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 JUnit is a well-known testing library in Java. 
 
@@ -31,7 +31,7 @@ $ java -jar junit-platform-console-standalone.jar -cp "out" --scan-classpath
 
 ## JUnit4
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 In JUnit4, it was common to have a class to run all tests.
 
@@ -71,7 +71,7 @@ import org.junit.Test;
 
 ## JUnit5
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Since JUnit5, there is no easy way to have a main class run all tests. You can run multiple classes using:
 
@@ -98,7 +98,7 @@ import org.junit.jupiter.api.Test;
 
 ## Assertions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 JUnit uses assertions in its tests. They are defined in the package `Assertions` <small>(JUnit5)</small> or `Assert` <small>(JUnit4)</small>.
 
@@ -139,7 +139,7 @@ Every assert method has an argument usually called `message` to send, along with
 
 ## Test suites
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Test suite are java classes with tests. Most test methods are named starting with `test[...]`. They are annotated with `@Test`.
 
@@ -185,7 +185,7 @@ public class TestSuite {
 
 ## Parametric tests
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Parametric tests are tests that have the same code but different parameters. We will write a method with parameters once, and tell JUnit all the parameters that must be tested.
 
@@ -236,7 +236,7 @@ private static Stream<Integer> test2() {
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [JUnit5 JB](https://blog.jetbrains.com/idea/2020/09/writing-tests-with-junit-5/)
 </div><div>

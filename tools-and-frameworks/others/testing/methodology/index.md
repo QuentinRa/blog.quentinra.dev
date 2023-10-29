@@ -1,6 +1,6 @@
 # Testing Methodology
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 There are two common scopes for testing: 
 
@@ -22,7 +22,7 @@ When writing tests it's important to test both correct cases ✅, and incorrect 
 
 ## Find tests
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### RightBICEP
 
@@ -53,7 +53,7 @@ This approach also aims to identify effective test cases:
 
 ## Approach: contracts
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Assuming that
 
@@ -81,7 +81,7 @@ If we call the function with preconditions defined in the contract <small>(e.g. 
 
 ## Approach: defensive programming
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Defensive programming is implemented by adding checks to prevent errors or unexpected outcomes. 
 
@@ -102,7 +102,7 @@ Defensive programming is implemented by adding checks to prevent errors or unexp
 
 ## Behavior-driven development (BDD)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Behavior-driven development (BDD) is a software development methodology that breaks down every part of the code into 3 sentences, explaining concretely how the code should behave.
 
@@ -121,7 +121,7 @@ Behavior-driven development (BDD) is a software development methodology that bre
 
 ## Test-driven development (TDD)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Test-driven development (TDD) is a development practice in which we write the tests before the code. For instance, in Java/OO,
 
@@ -147,7 +147,7 @@ You should always ask yourself
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * A/B testing
 * SOLID

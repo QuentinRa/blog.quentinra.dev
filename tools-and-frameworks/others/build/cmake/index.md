@@ -1,6 +1,6 @@
 # CMake
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [CMake](https://cmake.org/documentation/) 🏝️ is a cross-platform language and tool to build, and run programs. It's a higher-level tool that will generate a file for a lower-level build tool <small>(such as a [Makefile](/tools-and-frameworks/others/build/makefile/index.md))</small> according to your needs.
 
@@ -30,7 +30,7 @@ $ ./my_program # execute our "my_program"
 
 ## CLI Usage
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Basics
 
@@ -114,7 +114,7 @@ Common pre-defined variables:
 
 ## Basic Usage
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Basic CMakeLists.txt
 
@@ -237,7 +237,7 @@ file(GLOB_RECURSE ALL_SOURCES CONFIGURE_DEPENDS src/*.c src/*.cpp)
 
 ## Dependencies
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 All projects usually have external or internal dependencies 👨‍👩‍👧‍👦.
 
@@ -357,7 +357,7 @@ find_package_handle_standard_args(LibXml2 DEFAULT_MSG LIBXML2_LIBRARIES LIBXML2_
 
 ## Core Syntax
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Logging
 
@@ -441,7 +441,7 @@ get_filename_component(VAR /path/to/file NAME_WE) # without the extension
 
 ## Conditions and statements
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Statements
 
@@ -487,7 +487,7 @@ There are also some special operators:
 
 ## Functions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The syntax to declare a function is as follows:
 
@@ -528,7 +528,7 @@ set(VARIABLE_NAME VARIABLE_VALUE PARENT_SCOPE)
 
 ## Common Topics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Multi-modules project
 
@@ -665,11 +665,11 @@ target_link_libraries(someTarget PRIVATE ${DEPS_NAME})
 
 ## Testing
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 CMake provides a utility to execute tests called `ctest`. It works with popular testing libraries such as `gtest` below.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 File: `src/add.cpp`
 
@@ -746,7 +746,7 @@ $ ctest            # use "-V" for verbose
 
 ## Static Code Analysis
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can configure static code analyzers. There are multiple tools and multiple ways to do it, each with its own pros and cons.
 
@@ -799,7 +799,7 @@ $ cmake --build . -t clang-tidy
 
 ## CMake Custom Targets
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 We use custom targets when we need to:
 
@@ -849,7 +849,7 @@ add_custom_command(
 
 ## Random notes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Advanced Strings
 
@@ -975,7 +975,7 @@ configure_file(template.sh script.sh @ONLY)
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * cmake-gui, ccmake
 * ctest, cpack

@@ -1,6 +1,6 @@
 # Testing with mocha.js
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Mocha is a **testing-framework**. See [GitHub](https://github.com/mochajs/mocha) (21.8k ⭐).
 
@@ -55,7 +55,7 @@ Inside your `it` blocks, you will use a testing framework
 
 Some additional notes about the features that mocha has to offer.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### General notes
 
@@ -129,7 +129,7 @@ describe('name', function() {
 
 ## Assertions with assert
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Node.js provides an assertion library called [assert.js](https://nodejs.org/api/assert.html).
 
@@ -154,7 +154,7 @@ it('name', function () {
 
 ## Testing requests with chai-http
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 This is an extension of chai to deal with HTTP requests.
 
@@ -270,7 +270,7 @@ expect(req).to.have.cookie('zzz');
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [unexpected.js](https://unexpected.js.org/) (0.4k ⭐)
 * Node Mocha Chai

@@ -1,6 +1,6 @@
 # Jest.js
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [jestjs](https://github.com/facebook/jest) (41k ⭐) is an alternative to mocha. Both have roughly the same syntax to declare test suites.
 
@@ -39,7 +39,7 @@ Usually, all tests are in a folder `__tests__`, and you will have multiple of th
 
 Jest uses an alternative syntax of expect.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```javascript
 expect(xxx).toBeDefined()
@@ -62,7 +62,7 @@ expect(xxx).toBeLessThanOrEqual(yyy)
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [frisby](https://github.com/vlucas/frisby) (1.5k ⭐, HTTP)
 </div><div>

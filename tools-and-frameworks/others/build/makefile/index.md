@@ -1,6 +1,6 @@
 # Makefile
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Makefiles are files in which developers define **rules** ✍️ to compile their sources, build an executable, and run it. 
 
@@ -34,7 +34,7 @@ $ make rule_name # run a specific rule
 
 ## Getting started
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Breakdown of a rule** 🏡
 
@@ -102,7 +102,7 @@ a.out: main.o
 
 ## Dependencies
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Makefile dependencies are files that when changed, imply that we need to recompile our target.
 
@@ -128,7 +128,7 @@ file2.o: # none
 
 ## Makefile Basics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Variables
 
@@ -182,7 +182,7 @@ clean:
 
 ## Advanced Makefiles
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Assignment Operators
 
@@ -261,7 +261,7 @@ endif
 
 ## Random notes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Define macros
 

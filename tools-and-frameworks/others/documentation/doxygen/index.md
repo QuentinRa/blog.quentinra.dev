@@ -1,6 +1,6 @@
 # Doxygen
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Doxygen is a widely used documentation generation tool, especially for C/C++ projects. It generates documentation from specially formatted comments within the source code ✨.
 
@@ -34,7 +34,7 @@ Open the `index.html` file in your browser <small>(ex: double-click on it)</smal
 
 ## Doxyfile
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The Doxyfile allows you to define doxygen settings. You can edit it manually, or you can use `doxywizard`.
 
@@ -92,7 +92,7 @@ Others
 
 ## Getting started
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### File documentation
 
@@ -141,7 +141,7 @@ xxx /*!< Inline Comment | Same line as the target
 
 ## Doxygen m.css theme
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A popular Doxygen theme is [m.css](https://github.com/mosra/m.css) 😎. You can see what it looks like by browsing the [magnum](https://doc.magnum.graphics/magnum/) project documentation.
 
@@ -202,7 +202,7 @@ M_LINKS_NAVBAR2 = \
 
 ## Common tags
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### File and folders
 
@@ -271,7 +271,7 @@ And `\return` for the return type:
 
 ## Tags mainly used in C
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Define
 
@@ -343,7 +343,7 @@ typedef struct NAME NEW_NAME;
 
 ## Object-oriented tags
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Classes
 
@@ -391,7 +391,7 @@ class XXXInterface {
 
 ## Additional tags
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Design By Contract
 
@@ -423,7 +423,7 @@ You can use `\test` to document test cases or test-related information.
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [doxygen-awesome-css](https://github.com/jothepro/doxygen-awesome-css)
 </div><div>

@@ -1,6 +1,6 @@
 # Gradle
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Gradle is an automation tool that can be used to **build** 🏭, **test** 🧪, and **deploy** 🚀 your project. It's an alternative created to address problems with other tools such as **Maven** or **Ant**.
 
@@ -30,7 +30,7 @@ $ ./gradlew wrapper --gradle-version 7.2 # change version
 
 ## Gradle components
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Project
 
@@ -64,7 +64,7 @@ These are the other projects that we need to import to build ours.
 
 ## Groovy Build file
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Add plugins
 
@@ -127,7 +127,7 @@ tasks.register('hello_world') {
 
 ## Gradle for Java
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Java plugins
 
@@ -247,7 +247,7 @@ jar {
 
 ## gradle.properties
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 It will allow you to load some variables inside your `build.gradle` that are defined in `.properties` files.
 
@@ -290,7 +290,7 @@ Currently, `myVariable=11`, so we will load `gradle-11.properties`.
 
 ## Local dependencies
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Local project
 
@@ -334,7 +334,7 @@ dependencies {
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [jitpack](https://jitpack.io/)
 * sourceSets, resourcesSets, access to resources

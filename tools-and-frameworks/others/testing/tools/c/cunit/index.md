@@ -1,6 +1,6 @@
 # CUnit
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [CUnit](https://linux.die.net/man/3/cunit) is a testing framework for the C programming language. It's not a popular testing framework, nor it is commonly used. ☠️
 
@@ -17,7 +17,7 @@ The documentation is [available here](https://cunit.sourceforge.net/).
 
 ## Get Started with CMake
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Assuming you want to use `cunit` with a [cmake](/tools-and-frameworks/others/build/cmake/index.md) project, you'll have to manually write some code first. Add to a `CMakeLists.txt`:
 
@@ -65,7 +65,7 @@ target_link_libraries(my_testing_target ${CUNIT_LIBRARIES})
 
 ## Basic Test Suite
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A suite is a group of tests that share the same purpose, e.g., for instance, tests that are specific to one component/function/file.
 
@@ -147,7 +147,7 @@ char* msg = CU_get_error_msg();
 
 ## Running Tests
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 To run your tests, you will have to initialize CUnit, declare `listSuite`, and pick a runner. First, to initialize CUnit:
 
