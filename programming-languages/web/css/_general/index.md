@@ -1,6 +1,6 @@
 # Cascading Style Sheets (CSS)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Cascading Style Sheets (CSS) are used to style and animate
 
@@ -38,7 +38,7 @@ Cascading Style Sheets (CSS) are used to style and animate
 
 As CSS rules can be complex <small>(responsive design, accessibility)</small>, many CSS frameworks with predefined rules were created.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [Bootstrap](https://github.com/twbs/bootstrap) <small>(+160k ⭐, [see my notes](/programming-languages/web/css/frameworks/bootstrap/index.md))</small>
 * [tailwindcss](https://github.com/tailwindlabs/tailwindcss) <small>(63.4k ⭐)</small>
@@ -59,7 +59,7 @@ Based on Material Design (Google UX Guidelines)
 
 ## 🏫 About CSS 🏫
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 CSS files (`.css`) are defining **rules** to apply on a target called **selector**. A rule is made of a **property**, and its **value**.
 
@@ -68,7 +68,7 @@ CSS files (`.css`) are defining **rules** to apply on a target called **selector
 
 <p></p>
 
-```css
+```css!
 a {
     color: yellow;
 }
@@ -97,14 +97,14 @@ Styles are applied in **cascade**! There could be many selectors that are defini
 
 If there are conflicts <small>(ex: two selectors defining the same property)</small>, the [**Specificity**](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) is used to determine which rule is applied. In a nutshell, every selector has a weight <small>(~=how specific the selector is)</small> which is used to determine which rule is more important.
 
-```css
+```css!
 a { color: yellow; }
 a:hover { color: red; } /* will override the other */
 ```
 
 ➡️ You can use `!important` to manually force a style to be applied.
 
-```css
+```css!
 a { color: yellow !important; }
 a:hover { color: red; } /* won't override the other */
 ```
@@ -116,6 +116,7 @@ a:hover { color: red; } /* won't override the other */
 
 There are 3 ways to write CSS for a website.
 
+<div class="overflow-auto">
 <table class="table border-dark table-striped table-bordered">
 <thead><tr><th>Inline CSS 🤮</th><th>STYLE tag 🤢</th><th>External CSS file 😍</th></tr></thead>
 <tbody>
@@ -124,7 +125,7 @@ There are 3 ways to write CSS for a website.
 
 You can use the attribute `style` to add inline CSS. It's convenient for testing.
 
-```HTML
+```html!
 <p style="background: darkcyan">
     ...
 </p>
@@ -134,7 +135,7 @@ You can use the attribute `style` to add inline CSS. It's convenient for testing
 
 You can use `<style>` tags. They are usually added in the `head`, but you can add them everywhere.
 
-```HTML
+```html!
 <style>
     p {
         background: darkcyan;
@@ -146,7 +147,7 @@ You can use `<style>` tags. They are usually added in the `head`, but you can ad
 
 You can link an external CSS file. This is the proper way to do it <small>(CSP policy+caching, CDNs, SoC...)</small>.
 
-```html
+```html!
 <link rel="stylesheet"
       href="/path/to/style.css">
 ```
@@ -156,12 +157,13 @@ You can link an external CSS file. This is the proper way to do it <small>(CSP p
 </tr>
 </tbody>
 </table>
+</div>
 
 <hr class="sep-both">
 
 ## Selectors
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A selector is a target, or a set of targets, on which the style will be applied. ➡️ To test a selector, we usually change the background. If the background changes, it means that the selector works.
 
@@ -175,7 +177,7 @@ YOUR_SELECTOR_HERE {
 
 The style will be applied to every element having this tag.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```html
 <p>xxx</p>
@@ -191,7 +193,7 @@ p { /* ... */ }
 
 The style will be applied to the tag having the matching ID.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```html
 <p id="my-id">xxx</p>
@@ -207,7 +209,7 @@ The style will be applied to the tag having the matching ID.
 
 The style will be applied to any tag having this class.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```html
 <p class="name ...">xxx</p>
@@ -223,7 +225,7 @@ The style will be applied to any tag having this class.
 
 The style will be applied to every element.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```html
 <p>xxx</p>
@@ -239,7 +241,7 @@ The style will be applied to every element.
 
 We can select something based on them having a property.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```html
 <p hidden>xxx</p>
@@ -253,7 +255,7 @@ We can select something based on them having a property.
 
 We can select something based on the value of a property.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```html
 <input type="text" />
@@ -290,7 +292,7 @@ They are additional selectors based on a state/condition. These are called Pseud
 
 We can chain any selectors!
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```html
 <p class="one two">xxx</p>
@@ -331,7 +333,7 @@ p + a { /* an adjacent "link" right after a "p" */ }
 Properties <small>(ex: background)</small> are taking values <small>(ex: a color)</small>.
 </p>
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Colors
 
@@ -391,7 +393,7 @@ p {
 👻 I'm not too familiar with CSS, these examples are properties that I used before moving to CSS frameworks. 👻
 </p>
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Background
 
@@ -516,7 +518,7 @@ p {
 
 ## Responsive design & Accessibility
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You should adapt your website according to
 
@@ -567,7 +569,7 @@ You can add a media query directly inside the CSS too.
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **PostCSS**
 

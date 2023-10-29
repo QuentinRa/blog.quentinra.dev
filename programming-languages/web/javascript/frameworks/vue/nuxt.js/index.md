@@ -1,6 +1,6 @@
 # Nuxt.js
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Nuxt.js](https://github.com/nuxt/nuxt) is a front-end framework based on [Vue.js](../vue.js/index.md). To build websites on Windows, you need [Visual Studio Build tools](https://visualstudio.microsoft.com/downloads/):
 
@@ -22,7 +22,7 @@ You can use `npx nuxi init -t v3 <project_name>` to create a new project. Use `n
 
 ## Components
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 All ".vue" files for a component are stored in `components`. They are automatically imported inside other ".vue" files.
 
@@ -41,7 +41,7 @@ import HelloWorld from "~/components/HelloWorld.vue";
 
 ## Layouts
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Each page will use a [layout](https://nuxt.com/docs/guide/directory-structure/layouts). Multiple pages can use the same layout, but inject some specific components into it.
 
@@ -73,7 +73,7 @@ A page can use a layout as follows:
 
 ## Routing
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Refer to the [Routing documentation](https://nuxt.com/docs/getting-started/routing).
 
@@ -97,7 +97,7 @@ console.log(route.query.page)
 
 ## Metadata
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 As per the documentation, you can
 
@@ -140,7 +140,7 @@ export default defineNuxtConfig({
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [nitro](https://github.com/unjs/nitro)
 

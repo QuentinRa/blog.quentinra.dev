@@ -1,6 +1,6 @@
 # highlight.js
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Highlight.js](https://highlightjs.org/) <small>(22.2k ⭐)</small> is an open-source library to syntax highlight code snippets on web pages. [Prism](https://prismjs.com/) is the main alternative.
 

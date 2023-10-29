@@ -1,6 +1,6 @@
 # React.js
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [React.js](https://react.dev/) (210k ⭐) is a popular front-end framework. Due to its popularity, there are some front-end frameworks based on React:
 
@@ -21,7 +21,7 @@ There are also libraries of components such as [MUI](https://github.com/mui/mate
 
 ## React notes ☠️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You'll write components returning some HTML.
 

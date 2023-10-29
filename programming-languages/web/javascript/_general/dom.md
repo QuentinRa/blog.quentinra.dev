@@ -1,6 +1,6 @@
 # JavaScript for Websites
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 [JavaScript](index.md) is used since Web 2.0 to add interactivity to web pages:
 
@@ -25,6 +25,7 @@ JavaScript (JS) is based on ECMAScript. **ECMAScript2016** (ES6) is fully suppor
 
 There are 3 ways to use JavaScript for a website.
 
+<div class="overflow-auto">
 <table class="table border-dark table-striped table-bordered">
 <thead><tr><th>Inline JS 🤮</th><th>SCRIPT tag 🤢</th><th>External JavaScript file 😍</th></tr></thead>
 <tbody>
@@ -63,12 +64,13 @@ You can link an external file. This is the proper way to do it <small>(CSP polic
 </tr>
 </tbody>
 </table>
+</div>
 
 <hr class="sep-both">
 
 ## Document Object Model
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 There is one big difference with usual JavaScript: there is a variable `window` for the tab in which the page is displayed. 
 
@@ -153,7 +155,7 @@ if (style.visibility === 'hidden') { /* ..; */ }
 
 ## 🚀 Events 🚀
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Listen to events
 
@@ -215,7 +217,7 @@ document.onkeydown = e => {
 
 ## 🔎 Validating Forms 🔎
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can listen to a [form](../../_general/random/forms.md) submission with `submit`/`onsubmit`. This event is particular, as **true** must be returned if we can send the form, **false** otherwise. It's used to validate a form, before sending it.
 
@@ -265,7 +267,7 @@ form.onsubmit = (event) => {
 
 *See also, [APIs](/programming-languages/others/apis/_general/index.md), and [Async, await, and Promises](/programming-languages/web/javascript/_general/index.md#-asynchronous-work-and-promises-)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) is the easiest, and most used to do API requests.
 
@@ -360,7 +362,7 @@ fetchXXX('https://jsonplaceholder.typicode.com/posts')
 
 ## ⚡ Special features ⚡
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Notifications
 
@@ -422,7 +424,7 @@ if (value != null) {
 
 ## Libraries
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [anime.js](https://github.com/juliangarnier/anime/) (animations, 44k ⭐)
 * [typed.js](https://github.com/mattboldt/typed.js/) (typing, 12.6k ⭐)
@@ -447,7 +449,7 @@ A long time ago, [jQuery](https://github.com/jquery/jquery) was a popular librar
 
 ## Snippets
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Scroll to the bottom of an element
 
@@ -462,8 +464,6 @@ const scrollToTheBottomOfElement = (e) => {
 }
 ```
 </div><div>
-
-...
 </div></div>
 
 
@@ -473,7 +473,7 @@ const scrollToTheBottomOfElement = (e) => {
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * `data-*`
 * blob URL

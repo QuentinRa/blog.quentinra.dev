@@ -1,6 +1,6 @@
 # Extended CSS
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 There are compilers allowing us to write an extended/enhanced CSS, that once compiled, will generate a `.css`.
 
@@ -16,7 +16,7 @@ They are used to make the CSS files much more readable and cleaner.
 
 ## 🐲 SASS 🐲
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [SASS](https://github.com/sass/sass) (14.3k ⭐) is one of the two most-used ones.
 
@@ -128,7 +128,7 @@ You can use "`use`" or "`import`" to import a module <small>(ex: `_other.scss`)<
 
 ## 🥂 Less 🥂
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Less](https://github.com/less/less.js) (16.9k ⭐) is one of the two most-used ones.
 
@@ -143,7 +143,7 @@ You can use "`use`" or "`import`" to import a module <small>(ex: `_other.scss`)<
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [SASS nesting](https://markdotto.com/2015/07/20/css-nesting/)
 * [PHPStorm watchers](https://www.jetbrains.com/help/phpstorm/transpiling-sass-less-and-scss-to-css.html#ws_sass_less_scss_syntax_highlighting)

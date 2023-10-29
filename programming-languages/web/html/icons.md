@@ -1,6 +1,6 @@
 # Icons
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 There are many ways to add icons to a website
 

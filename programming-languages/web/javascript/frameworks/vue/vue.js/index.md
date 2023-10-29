@@ -1,6 +1,6 @@
 # Vue.js
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Vue.js](https://vuejs.org/) is a simplified yet robust alternative to popular front-end frameworks like React or Angular. It's nice to learn this one first, as it has a smaller learning curve, meaning it's easier to learn.
 
@@ -33,7 +33,7 @@ $ npm run dev
 
 ## 📦 Vue Single-File Components (<code>.vue</code>) 📦
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The main component is **App**. It will usually load a view stored in `src/views`. To make views easier to manage, and to recycle parts of the code, we are extracting them inside a file in `src/components`.
 
@@ -107,7 +107,7 @@ Inside the template, you can use it with `{{ property_name }}`
 
 ## 📖 Options API 📖️
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 The Options API is usually wordier, but it looks more declarative from my point of view, so it's easier to understand how Vue.js works.
 
@@ -277,7 +277,7 @@ export default {
 
 ## 📕 Composition API 📕
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The code below is the same as declaring `count` inside `data`.
 
@@ -294,7 +294,7 @@ const count = ref(0)
 
 ## 🛣️ Routing 🛣️ 
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 See [Router](https://router.vuejs.org/guide/#html). See also [Data Fetching](https://router.vuejs.org/guide/advanced/data-fetching.html).
 
@@ -408,7 +408,7 @@ export default {
 
 ## 🥂 Using Bootstrap in Vue 🥂
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 First, install bootstrap
 
@@ -443,7 +443,7 @@ Done! 🥂
 
 ## 🐏 Notes 🐏
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * nextTick in Methods
 * writable computed

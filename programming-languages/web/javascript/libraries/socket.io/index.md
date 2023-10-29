@@ -1,6 +1,6 @@
 # Socket.io
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Socket.io](https://socket.io/) is a library that allows a server to do server pull and server push. **Server Push** means the server can send something to the client without the client requesting it.
 
@@ -23,7 +23,7 @@ Or more generally, making real-time applications. The server can push data to th
 
 ## Basic usage
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Socket.io is quite easy to use.
 
@@ -49,11 +49,11 @@ client.on("event", (data) => {
 
 ## Express Node.js server
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 This code targets node.js applications running Express.js. You may use Socket.io with other libraries such as Angular...
 
-```bash
+```shell!
 $ npm i socket.io
 ```
 
@@ -112,7 +112,7 @@ There are many other alternatives, but I like this one because we are using a fu
 
 ## Node.js client
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You could create a socket.io client to test your code
 
@@ -134,7 +134,7 @@ client.on('connect', () => {
 
 ## HTML client
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You need to add the following script (version 4.5.3). See [cdnjs](https://cdnjs.com/libraries/socket.io).
 
@@ -155,7 +155,7 @@ client.on('connect', () => {
 
 ## Android client (Kotlin)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 See Also
 

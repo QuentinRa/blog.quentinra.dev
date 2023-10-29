@@ -1,6 +1,6 @@
 # Forms
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Forms are used when requesting data from the user to perform an action. Common forms often found on websites are: 
 

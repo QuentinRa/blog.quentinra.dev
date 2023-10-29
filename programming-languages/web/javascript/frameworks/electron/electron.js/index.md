@@ -1,6 +1,6 @@
 # Electron
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Electron](https://www.electronjs.org/) is a library to develop **cross-platform applications in JavaScript**. You can use it with frameworks such as Vue.js, React, Angular, or simply HTML+CSS.
 
@@ -29,7 +29,7 @@ Other interesting projects
 
 ## ☄️ Electron ~v12 ☄️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Run electron in the current directory
 
@@ -82,7 +82,7 @@ mainWindow.webContents.on("devtools-opened", () => {
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [electron-build-service](https://github.com/electron-userland/electron-build-service)
 * [electron-devtools-installer](https://github.com/MarshallOfSound/electron-devtools-installer)

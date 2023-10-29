@@ -1,6 +1,6 @@
 # Bootstrap
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Bootstrap](https://getbootstrap.com/) is the most popular CSS framework with more than 160k ⭐ on [GitHub](https://github.com/twbs/bootstrap). Some redeeming features from my point of view are
 
@@ -27,7 +27,7 @@ See the [documentation](https://getbootstrap.com/docs/). For **5.2.3**, you coul
 
 ## Learn Bootstrap
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ➡️ The best way to learn Bootstrap is to copy and paste examples. You can find them [here](https://getbootstrap.com/docs/5.2/examples/).
 
@@ -48,11 +48,11 @@ See the [documentation](https://getbootstrap.com/docs/). For **5.2.3**, you coul
 
 ## 📖 Bootstrap basics 📖
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 Like all CSS frameworks, Bootstrap is defining CSS classes, and you will simply have to use them on your HTML elements.
 
-```html
+```html!
 <someHTMLtag class="add bootstrap classes here" />
 ```
 
@@ -63,7 +63,7 @@ For instance, to have this button: <button class="btn btn-warning text-dark">xxx
 
 You will have to set the text to black (`text-dark`), to have rounded corners, you will have to add `btn`, and to have a yellow button, you need `btn-warning`.
 
-```
+```html!
 <button class="btn btn-warning text-dark">xxx</button>
 ```
 </div></div>
@@ -72,14 +72,14 @@ You will have to set the text to black (`text-dark`), to have rounded corners, y
 
 ## 🎨 Colors 🖌️ 
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Usage:
 
 * Change the color of one element: `text-<color>`
 * Change the background of one element: `bg-<color>`
 
-```
+```html!
 <p class="text-success">green text</p>
 <p class="bg-success">green background</p>
 ```
@@ -101,7 +101,7 @@ See [Colors](https://getbootstrap.com/docs/5.2/utilities/colors/).
 
 See [breakpoints](https://getbootstrap.com/docs/5.2/layout/breakpoints/).
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 Many CSS classes have variants based on a breakpoint. Basically, these are **classes based on a media query** that will only "enable" them if the screen fits the condition.
 
@@ -134,7 +134,7 @@ When the screen size is at least 768px long, the latter being more specific take
 
 ## 📦 Useful classes 📦
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Visibility**
 
@@ -172,7 +172,7 @@ Less used/useful
 * `px-<level>`/`py-<level>`: padding on both s/e or t/b
 * `mx-auto`/`my-auto`: center horizontally/vertically
 
-```html
+```html!
 <p class="pt-5 mx-0">Padding-top level 5 (=3rem)</p>
 <p class="mx-3">Margin x and y, level 3 (=1rem)</p>
 ```
@@ -194,7 +194,7 @@ Less used/useful
 
 ## 🏙️ Row and columns 🏙️
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 Rows are allowing us to add items next to each other. Using breakpoints, we can do things like display one element per "row" on mobile, two on tablets, and three or more on computers.
 
@@ -213,7 +213,7 @@ In the code above, on mobile, each element will take 12 columns (ex: a whole lin
 This code is a simplified version of the previous one, doing the same. `row-cols-md-2` means that we should have 2 columns on md or higher, otherwise, we will have one <small>(as there is no other rule)</small>.
 
 ```html
-<div class="row row-cols-md-2">
+<div class="row row-cols-lg-2">
     <div></div>
     <div></div>
 </div>
@@ -230,11 +230,11 @@ Other notes
 
 See [Tables](https://getbootstrap.com/docs/5.2/content/tables/).
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 Everything is starting by adding the `table` class.
 
-```html
+```html!
 <table class="table"></table>
 ```
 
@@ -264,7 +264,7 @@ By default, there are only borders between rows.
 
 ## 🌠 Components 🌠️
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [Alerts](https://getbootstrap.com/docs/5.2/components/alerts/): useful to show a message (ex: announcement, errors...)
 
@@ -294,7 +294,7 @@ By default, there are only borders between rows.
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * container/container-fluid
 * update this old content

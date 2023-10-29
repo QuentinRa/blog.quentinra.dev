@@ -1,6 +1,6 @@
 # JavaScript (JS)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 JavaScript (JS) is a popular language used to develop
 
@@ -51,7 +51,7 @@ console.clear();
 
 ## Basics
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 JavaScript (JS) is based on ECMAScript. [See JavaScript versions](https://www.w3schools.com/Js/js_versions.asp).
 
@@ -85,7 +85,7 @@ You can use every usual operator.
 
 ## Variables and Types
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Types are implicit in JavaScript. You can use **typeof** or **instanceof** to check the type of something.
 
@@ -133,7 +133,7 @@ const x = null?.toString() ?? default_value // default_value
 
 ## 🗃️ Control flow and usual functions 🗃️
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 ⚠️ It's important to note that any non-boolean value will be cast to a boolean. For instance, `" "` is equals to `false` <small>(`" " == true` is `false`)</small>.
 
@@ -203,7 +203,7 @@ if ("x" in { "x": "..." }) {} // true
 
 ## Advanced notes on usual types
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Arrays
 
@@ -293,7 +293,7 @@ new Map(Object.entries(object))
 
 ## Functions
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 There are two ways to declare functions:
 
@@ -338,7 +338,7 @@ function pow(x, k = 1) { return x ** k; } // 5 ** 2 = 25
 
 ## Objects
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 JavaScript supports [JSON](/programming-languages/others/data/json.md) natively, which some changes.
 
@@ -413,7 +413,7 @@ Object.assign({name: 'toto', age: 10}, {age: 15})
 
 *➡️ As a reminder, a class can be said to be a template used to create objects.*
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can create and instantiate a class with a PHP-like syntax.
 
@@ -504,7 +504,7 @@ new John().toString() // "John!"
 
 ## Utilities
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Catch exceptions
 
@@ -566,7 +566,7 @@ You can use it
 
 ## 🪨 Asynchronous work and Promises 🪨
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 JavaScript executed in the main thread will delay events, and prevent any other script from running. To avoid that, we can use **asynchronous** functions with `async`. 
 
@@ -645,7 +645,7 @@ callSleep() // ignore .then / .catch
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * `match (/xxx/ and /x/g /x/i)`
 * [airbnb guidelines](https://github.com/airbnb/javascript)

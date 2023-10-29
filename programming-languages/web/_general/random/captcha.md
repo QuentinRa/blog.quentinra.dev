@@ -1,6 +1,6 @@
 # Captcha
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A captcha is used in forms to prevent attacks such as brute forcing a login form or a reset password form. It is used to try to determine or ensure the requester is human "**I'm not a robot**" 🤖.
 
@@ -18,7 +18,7 @@ The most well-known alternative is [**hcaptcha**](https://www.hcaptcha.com/). It
 
 ## reCAPTCHAV2
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 First, you need to create a [site key](https://developers.google.com/recaptcha/intro) and allow your website domain. Then, add a reCAPTCHA `div` where you want to see the captcha.
 

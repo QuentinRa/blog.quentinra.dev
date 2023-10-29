@@ -1,6 +1,6 @@
 # HTML
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 HTML primary, and probably only purpose, is to build web pages 🌍.
 
@@ -35,7 +35,7 @@ Since HTML5, similarly to CSS, HTML has become complete, and versioning was drop
 
 ## HTML syntax
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 An HTML file (`.html`) is a tree of **tags** (`html`, `head`, `body`...). 
 
@@ -77,7 +77,7 @@ Notes
 
 ## HTML tags
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 HTML tags are divided into three categories:
 
@@ -105,13 +105,13 @@ HTML tags are divided into three categories:
 
 ## HTML elements
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Headers
 
 From `h1` to `h6`, the lower the number, the bigger the title.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```html
 <h6>Some small title</h6>
@@ -129,7 +129,7 @@ From `h1` to `h6`, the lower the number, the bigger the title.
 
 Note that `<p>` is blocking, while `<span>` is not.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```html
 <p>xxx</p>
@@ -180,7 +180,7 @@ If an image cannot be loaded, `alt` will be shown instead.
 
 You can make ordered lists (`1.`, `2.`...) with `<ol>`, and unordered lists with `<ul>`. Each entry in the list is inside a tag `<li>`.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```html
 <ol>
@@ -279,7 +279,7 @@ Use <code>table</code>, <code>tr</code>, <code>th/td</code> to make tables.
 
 We can add some charm to our website without CSS.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ```html
 <b>bold</b>
@@ -332,7 +332,7 @@ We can add some charm to our website without CSS.
 
 ## HTML5 tags
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 HTML5, or more HTML now, is something toward giving a semantic to each part of the website. It's more for robots than humans. All of them are simply named `div`.
 
@@ -362,11 +362,11 @@ These tags are, in my opinion, semantic tags
 
 ## Forms
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 An HTML [form](../_general/random/forms.md) (`<form>`) is a group of input elements (`<input>`, `<textarea>`...). You can use either **GET** or **POST** [HTTP methods](/operating-systems/networking/protocols/http.md).
 
-```html
+```html!
 <form method="POST" action="https://example.com/login.php">
     <!-- ... -->
 </form>
@@ -384,9 +384,9 @@ The attribute `action` is where the data should be sent. You will need a server 
 
 Each input field must have a unique **name**. This name is what the server will receive, along with the value.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
-```html
+```html!
 <input name="username" value="toto" />
 <input name="password" value="toto" />
 ```
@@ -401,7 +401,7 @@ What the server receives: `username=toto&password=toto`.
 
 Any button inside a form will submit the whole form.
 
-```html
+```html!
 <button>submit the form</button>
 <button type="submit">submit the form</button>
 <button type="button">won't submit the form</button>
@@ -414,7 +414,7 @@ Any button inside a form will submit the whole form.
 
 It's possible to have input fields outside the tag `<form>`. In such a scenario, you must add an `id` to the form, and the input must reference it.
 
-```html
+```html!
 <form id="xxx"></form>
 <input form="xxx"> <!-- reference id="xxx" -->
 ```
@@ -425,7 +425,7 @@ It's possible to have input fields outside the tag `<form>`. In such a scenario,
 
 An `input` field has a `type` which could be `text`, `date`, `password`, `tel`, `range`, `checkbox`, `radio`, `number`, `email`...
 
-```html
+```html!
 <input type="text" name="xxx">
 <!-- many useful attributes -->
 <input type="text" name="xxx" value="default value">
@@ -441,7 +441,7 @@ An `input` field has a `type` which could be `text`, `date`, `password`, `tel`, 
 
 Any button inside a form will submit the whole form.
 
-```html
+```html!
 <textarea name="xxx">simple text area</textarea>
 <textarea name="xxx" rows="10" cols="50"></textarea>
 ```
@@ -452,7 +452,7 @@ Any button inside a form will submit the whole form.
 
 Labels are used to associate prompt text with an input field. When clicking on the text, the matching input field is automatically focused.
 
-```html
+```html!
 <label>email: <input type="email"></label>
 <!-- OR -->
 <label for="email">email:</label>
@@ -465,7 +465,7 @@ Labels are used to associate prompt text with an input field. When clicking on t
 
 These can be used on any input elements such as `<input>`.
 
-```html
+```html!
 <input required> <!-- must have a value -->
 <input hidden> <!-- hidden -->
 <input disabled> <!-- cannot be edited -->
@@ -480,7 +480,7 @@ These can be used on any input elements such as `<input>`.
 
 ## Metadata
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 * ➡️ The icon of the website
 
@@ -490,14 +490,14 @@ These can be used on any input elements such as `<input>`.
 
 * ➡️ Basic information
 
-```html
+```html!
 <meta name="author" content="...">
 <meta name="copyright" content="...">
 <meta name="keywords" content="....">
 <meta name="description" content="...">
 ```
 
-➡️ See also [metatags](https://metatags.io/) for social network tags.
+👉 See also [metatags](https://metatags.io/) for social network tags.
 </div><div>
 
 * ➡️ Crawlers <small>(robots indexing your website)</small>
@@ -523,7 +523,7 @@ These can be used on any input elements such as `<input>`.
 
 ## HTML security 🛡️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Subresource Integrity (SRI)**: to ensure that an external CSS/JS file has not been tampered with, we add a hash of the file, and check the integrity. If needed, [you can generate an SRI here](https://www.srihash.org/).
 
@@ -544,7 +544,7 @@ These can be used on any input elements such as `<input>`.
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * aria (`aria-label`)
 * role attribute (`role="search"/role="tab"`)

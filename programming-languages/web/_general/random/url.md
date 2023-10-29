@@ -1,6 +1,6 @@
 # URL
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A URL (Uniform Resource Locator) is something used to locate a resource, such as a page of a website, or a file on a computer...
 

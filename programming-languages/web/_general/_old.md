@@ -1,6 +1,6 @@
 # Get started
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Browsers use the [HTTP](/operating-systems/networking/protocols/http.md) protocol to communicate with a web server. The server responds with an **[HTML page](../html/index.md)**.
 
@@ -53,7 +53,7 @@ $ chmod 711 folder # for a folder
 
 ## HTTPS, and TLS/SSL
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can get free certificates using [Let's encrypt](https://letsencrypt.org/). If you want to have **https**://localhost, [follow this tutorial](https://web.dev/how-to-use-local-https/).
 
@@ -89,7 +89,7 @@ $ sudo certbot renew --dry-run
 
 ## 😍 Developer tools (devtools) 😍
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The devtools are tools for developers. You can open it using
 
