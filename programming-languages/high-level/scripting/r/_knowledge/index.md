@@ -186,11 +186,56 @@ while(condition) {}
 repeat {}
 ```
 
-To iterate vectors, you can use `for`:
+To iterate a vector, you can use `for`:
 
 ```r
 for (var in vector){
 }
+```
+</div></div>
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-lg-2"><div>
+
+#### Declare a function
+
+We can group some code in a function.
+
+```R
+modulo <- function (x, mod=3) {
+  return(x %% mod)
+}
+
+# no return == return the last expression
+modulo <- function (x, mod=3) { x %% mod }
+```
+
+⚠️ A function must return something.
+
+#### Error Messages Helpers
+
+We often use these in our functions to handle errors/warnings:
+
+```R
+warning(paste("mod (", mod, ") must be >= 2")) # warn
+stop(paste("mod (", mod, ") must be >= 2"))    # fail
+```
+</div><div>
+
+#### Calling a function
+
+There are a lot of different ways to call a function:
+
+```R
+modulo(5, 3)
+modulo(5)           # "same" as mod = 3
+modulo(x=5, mod=3)  # same
+modulo(mod=3, x=5)  # same
+modulo(mod=3, 5)    # same
+modulo(5, mod=3)    # same
 ```
 </div></div>
 
@@ -466,13 +511,8 @@ Stuff that I found, but never read/used yet.
 * setting selected indexes
 
 ```
-r <- c(NULL, 3)
-# [1] 3
-
 # generating random values
 v <- runif(10, 0, 1)
-# making a vector of booleans
-v <- sapply(v, FUN = function (x) { x > 0.5 })
 ```
 </div><div>
 
