@@ -303,7 +303,30 @@ Other functions:
 * `tolower(str)`: return `str` as lowercase
 * `gsub(src, dest, str)`: replace `src` with `dest` in `str`
 * `trimws(str)`: trim, remove leading and trailing spaces
+
+<br>
+
+#### XXX
+
+xxx
 </div><div>
+
+#### Dataframe
+
+A dataframe represents a CSV table. We function to create a dataframe is using the format: `column_name = values`.
+
+```R
+> df <- data.frame(number = 1:3, name = "Rosé")
+> df
+  number name
+1      1 Rosé
+2      2 Rosé
+3      3 Rosé
+> df$number
+[1] 1 2 3
+```
+
+💡 Each column has the same number of rows. If we give vector of values having different lengths, vectors are recycled.
 </div></div>
 
 <hr class="sep-both">
