@@ -53,6 +53,8 @@ send -- "username\r"
 ```
 
 ⚠️ The process is only started when we call `send`. The process is terminated if there is no more `expect`.
+
+➡️ Use `interact` to execute manual tasks.
 </div><div>
 
 #### Variables
@@ -86,4 +88,16 @@ You can use `source` to import another script:
 ```tcl
 source ./xxx.exp
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* `autoexpect my_script`
+</div><div>
 </div></div>

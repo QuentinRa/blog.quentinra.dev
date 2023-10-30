@@ -480,6 +480,34 @@ A dataframe represents a CSV table. We function to create a dataframe is using t
 
 <hr class="sep-both">
 
+## Environment
+
+<div class="row row-cols-lg-2"><div>
+
+All variables that we declare are stored in the environment.
+
+```R
+> ls()              # list all variables
+> rm(varName)       # unset a variable
+> rm(list = ls())   # unset all variables
+# print all variables and their values
+# both are the same
+> for (i in ls()) { print(paste(i,"=",eval(as.symbol(i)))) }
+> sapply(ls(), function (i) { paste(i,"=",eval(as.symbol(i))) }  )
+```
+</div><div>
+
+Some useful functions:
+
+* `save(x, y, ..., file="x.rdata")`: save variables in a file
+* `load("x.rdata")`: load variables into the environment
+* `write.table(v,file="file.txt")`: write a table to a file
+* `read.table("file.txt")`: load a table to a file
+* `cat(file="file", "x=", x, append=TRUE)`: add a value in a file
+</div></div>
+
+<hr class="sep-both">
+
 ## Maths
 
 <div class="row row-cols-lg-2"><div>
