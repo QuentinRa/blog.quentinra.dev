@@ -550,6 +550,70 @@ Some useful functions:
 
 <hr class="sep-both">
 
+## Plots
+
+<div class="row row-cols-lg-2"><div>
+
+#### Plots
+
+```R
+> plot(x)                  # basic
+> plot(x, type = "l", ...) # line == line, b==dot lines
+> plot(jitter(x))          # handle points near each other
+```
+
+#### Histograms
+
+```R
+> hist(x)                         # basic
+> hist(x, border = color, ...)    # change colors
+> hist(x, breaks = seq(...), ...) # create more columns
+> hist(x, nclass = v, ...)        # split in v intervals
+> hist(x, prob = TRUE, ...)       # show frequencies
+```
+
+#### Bar chart
+
+```R
+> barplot(table(v))
+```
+
+#### Pie chart
+
+```R
+> pie(table(v))
+```
+</div><div>
+
+#### Box plot
+
+The highest bar is the 3rd quantile, the lowest one is the first quantile and the black bar is the median (2nd quantile).
+
+```R
+> boxplot(v)
+> boxplot(quant ~ qual)
+# example
+> data('mtcars')
+> cars <- mtcars
+> cars$cyl.qual <- factor(cars$cyl)
+> boxplot(cars$hp ~ cars$cyl.qual)
+```
+
+#### Temporal
+
+Used to see the evolution of a quantitative variable with a temporal qualitative variable. The value at a time $t$ is the mean of the values observed at the time $t$.
+
+```R
+# option 1:
+> interaction.plot(qual, quant, quant, lty=1, legend=FALSE)
+# option 2:
+> library(gplots)
+> plotmeans(quant~qual)
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Random notes
 
 <div class="row row-cols-lg-2"><div>
