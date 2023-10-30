@@ -243,7 +243,8 @@ v[v > 2]     # only values greater than 2
 ⚠️ When using an incorrect index, the value is `NA`.
 
 🚀 `which(cond)` returns a vector of all indexes given a condition.
-</div><div>
+
+<br>
 
 #### Named Indexes
 
@@ -252,8 +253,18 @@ v <- c(yes = 1, no = 0)    # named indexes
 names(r)                   # vector("yes" "no")
 match(c("no"), names(r))   # index of the name
 ```
+</div><div>
 
-<br>
+#### Update Indexes
+
+A fundamental concept in R is that you can update the values at the indexes we selected. Many data structures support this.
+
+```R
+> v <- c(1, 4, 5)   # create a vector
+> v[v > 2] <- 2     # v[2] = 2 and v[3] = 2
+> v                 # print the result
+[1] 1 2 2
+```
 
 #### Vector functions
 
@@ -268,13 +279,22 @@ Common functions:
 
 Other functions:
 
-* `attributes(v)`: get attributes (dim, ...)
 * `rev(v)`: reverse
 * `sort(v)`/`order(v)`: sort
 * `identical(v1,v2)`: true if they are the same
 * `any(v op value)`: true if at least one value make the condition true
 * `all(v op value)`: true if all values make the condition true
 * `duplicated(v)`: true if a value is duplicated, for each value
+
+#### Processing Functions
+
+We often use functions instead of loops:
+
+* `lapply(v, f)`: apply `f` on each element in `v`. Returns a list.
+* `sapply(v, f)`: apply `f` on each element in `v`. Returns a vector.
+* `aapply(m, f, 1)`: apply `f` on each element in a matrix `m`.
+* `tapply(v, k, 1)`: apply `f` on each group of elements.
+* `by(v, k, f, na.rm=TRUE)`: wrapper to `tapply(v, k, 1)`
 </div></div>
 
 <hr class="sep-both">

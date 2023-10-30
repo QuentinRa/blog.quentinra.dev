@@ -1,7 +1,5 @@
 # R programming
 
-* [Matrix](syntax/types/matrix.md)
-* [Lists](syntax/types/lists.md)
 * [Functions](syntax/functions.md)
 
 <table class="table border-dark table-bordered table-striped">
