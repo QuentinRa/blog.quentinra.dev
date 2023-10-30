@@ -583,6 +583,12 @@ Some useful functions:
 ```R
 > pie(table(v))
 ```
+
+#### Contingency table
+
+```R
+> balloonplot(table(x))
+```
 </div><div>
 
 #### Box plot
@@ -609,6 +615,19 @@ Used to see the evolution of a quantitative variable with a temporal qualitative
 # option 2:
 > library(gplots)
 > plotmeans(quant~qual)
+```
+
+#### Save a diagram
+
+Every plot is rendered in a device that we opened.
+
+```R
+# open a device
+> pdf(path) # see also: jpeg(path), png(path)
+# save to a file
+> dev.copy(device=format, "path")
+# close
+> dev.off() # or: dev.off(number)
 ```
 </div></div>
 
