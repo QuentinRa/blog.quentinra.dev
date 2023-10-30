@@ -531,8 +531,6 @@ list <- as.data.frame(installed.packages(.libPaths()[1]), stringsAsFactors = F)
 install.packages(list$Package)
 ```
 </div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">
