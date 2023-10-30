@@ -311,6 +311,21 @@ Other functions:
 xxx
 </div><div>
 
+#### Factors
+
+Factors are used to store data that has a limited number of distinct values called `levels` such as `Yes` `No`.
+
+```R
+> values <- c("yes", "yes", "no", "idk", "yes","no")
+> f <- factor(values, levels = c("yes","no", "idk"))
+> f <- factor(values)  # try to auto-detect the levels
+> levels(f)            # list levels
+> droplevels(f, "idk") # remove a level ("idk" => <NA>)
+> levels(f) <- c(levels(f), "idk")  # add a level
+```
+
+<br>
+
 #### Dataframe
 
 A dataframe represents a CSV table. We function to create a dataframe is using the format: `column_name = values`.
