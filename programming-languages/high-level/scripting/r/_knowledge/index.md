@@ -319,6 +319,31 @@ A list is a named vector that can have values of different types.
 ```
 
 👉 Most functions are returning a list of named indexes <small>(=an object)</small>.
+
+<br>
+
+#### Matrix
+
+A matrix is a 2-dimension vector. When creating a matrix, values are put in cells from top to bottom, from left to right, unless setting `byrow`.
+
+```R
+> values <- 1:6
+> matrix(values, nrow = 2, ncol = 3)
+> matrix(values, nrow = 2, ncol = 3, byrow = T)
+> m[,]      # whole matrix
+> m[1,]     # first line
+> m[,1]     # first column
+> m[1,1]    # value at 1,1 (first line, first column)
+> m[i,j,drop=FALSE]  # do not convert to a vector
+```
+
+Useful functions
+
+* `dim(m)`: vector of `ncol(m)` and `nrow(m)`
+* `cbind(...)`, `rbind(...)`: merge vectors/matrices
+* `dimnames(m)`: column/rows names
+* `colnames(m)`: column names
+* `rownames(m)`: rows names
 </div><div>
 
 #### Contingency tables
@@ -397,7 +422,14 @@ A dataframe represents a CSV table. We function to create a dataframe is using t
 * `mlv` (library `modeest`): get the mode
 </div><div>
 
-...
+#### Math Matrices Functions
+
+* `t(m)`: transpose of a matrix
+* `solve(m)`: inverse of a matrix
+* `solve(A,b)`: solve $Ax=b$
+* `diag(...)`: create a diagonal matrix
+* `m1 %*% m2`: scalar product
+* `eigen(m)`: eigenvalues
 </div></div>
 
 <hr class="sep-both">
@@ -411,7 +443,7 @@ Stuff that I found, but never read/used yet.
 * [_old](_old.md)
 * magrittr [documentation here](https://cran.r-project.org/web/packages/magrittr/magrittr.pdf)
 * `%in%`
-* matrix, data.frame (excel), list (named indexes, diff types)
+* setting selected indexes
 
 ```
 r <- c(NULL, 3)
