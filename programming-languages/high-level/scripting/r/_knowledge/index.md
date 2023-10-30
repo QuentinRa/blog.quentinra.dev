@@ -213,15 +213,21 @@ v <- c(v, 2)                     # add a value
 v <- c(v, NULL)                  # ignore "NULL"
 ```
 
+<br>
+
 #### Operations
 
-⚠️ Operators such as `+` or `&&` behave differently on vectors.
+Operators such as `+` or `&&` behave differently on vectors.
 
 ```R
 c(1, 2, 3, 4) + c(0,10)
 # implicit: c(1, 2, 3, 4) + c(0,10,0,10)
 # result: vector(1 12 3 14)
 ```
+
+⚠️  Both vectors are **recycled** until they have the same size.
+
+<br>
 
 #### Indexes
 
@@ -247,6 +253,8 @@ names(r)                   # vector("yes" "no")
 match(c("no"), names(r))   # index of the name
 ```
 
+<br>
+
 #### Vector functions
 
 Common functions:
@@ -267,6 +275,35 @@ Other functions:
 * `any(v op value)`: true if at least one value make the condition true
 * `all(v op value)`: true if all values make the condition true
 * `duplicated(v)`: true if a value is duplicated, for each value
+</div></div>
+
+<hr class="sep-both">
+
+## Common types
+
+<div class="row row-cols-lg-2"><div>
+
+#### Strings
+
+```R
+# Length
+nchar("Hello, World!")
+
+# Concatenate
+paste("Hello,", "World!")
+paste("a", "b", sep = "\n")         # 'a\nb'
+paste(c("a", "b"), collapse = "\n") # same, for a vector
+```
+
+Other functions:
+
+* `substring(str, s, e)`: return a substring from indexes `s` to `e`
+* `strsplit(str, pattern)`: split a string on `pattern`
+* `toupper(str)`: return `str` as uppercase
+* `tolower(str)`: return `str` as lowercase
+* `gsub(src, dest, str)`: replace `src` with `dest` in `str`
+* `trimws(str)`: trim, remove leading and trailing spaces
+</div><div>
 </div></div>
 
 <hr class="sep-both">
@@ -323,5 +360,7 @@ sapply(one_to_ten, function (i) { print(i) } )
 
 # generate 10 integers within [0,100]
 runif(10,0,100)
+
+sample(1:100, 6)
 ```
 </div></div>
