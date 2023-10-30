@@ -15,6 +15,8 @@ $ R -q
 
 * [Swirl](https://swirlstats.com/) <small>(⛪)</small>
 * [WikiBooks](https://en.wikibooks.org/wiki/R_Programming) <small>(🏫)</small>
+* [R_inferno](https://www.burns-stat.com/pages/Tutor/R_inferno.pdf) <small>(😈)</small>
+* [Advanced R](https://adv-r.hadley.nz/) <small>(📚)</small>
 </div><div>
 
 A basic script `my_script.R` file:
@@ -554,6 +556,15 @@ Some useful functions:
 
 <div class="row row-cols-lg-2"><div>
 
+Almost all the plots functions support these arguments:
+
+* `main = "title"`: plot title
+* `xlab = "title x"`: x-axis title
+* `ylab = "title y"`: y-axis title
+* `xlim = lim`: x's values goes up to lim
+* `ylim = lim`: y's values goes up to lim
+* `col = 'color'`: set the color (ex: `'red'` or `red(1.0)` in `crayon`)
+
 #### Plots
 
 ```R
@@ -584,13 +595,6 @@ Some useful functions:
 > pie(table(v))
 ```
 
-#### Contingency table
-
-```R
-> balloonplot(table(x))
-```
-</div><div>
-
 #### Box plot
 
 The highest bar is the 3rd quantile, the lowest one is the first quantile and the black bar is the median (2nd quantile).
@@ -603,6 +607,13 @@ The highest bar is the 3rd quantile, the lowest one is the first quantile and th
 > cars <- mtcars
 > cars$cyl.qual <- factor(cars$cyl)
 > boxplot(cars$hp ~ cars$cyl.qual)
+```
+</div><div>
+
+#### Contingency table
+
+```R
+> balloonplot(table(x))
 ```
 
 #### Temporal
@@ -629,6 +640,20 @@ Every plot is rendered in a device that we opened.
 # close
 > dev.off() # or: dev.off(number)
 ```
+
+#### Utilities
+
+Commonly used functions:
+
+* `abline(...)` : draw a line $y=ax+b$ (you may use h=x or v=y)
+* `legend(...)`: add a legend
+* `title(...)`: add a title
+
+Some functions you might use: 
+
+* `rect`, `segments`, `polygon`, `box`, `grid`, `points`, `line`...
+
+You may add a background or save some settings before drawing using `par` function like `par(bg="...")`.
 </div></div>
 
 <hr class="sep-both">
@@ -666,16 +691,24 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [_old](_old.md)
 * magrittr [documentation here](https://cran.r-project.org/web/packages/magrittr/magrittr.pdf)
 * `%in%`
-* setting selected indexes
+* ?formula, X ~ qual (X explained by qual), ...
 
 ```
 # generating random values
 v <- runif(10, 0, 1)
 ```
-</div><div>
+
+<table class="table border-dark table-bordered table-striped">
+<tr><td>
+Either look for or load a dataset with <code>data()/data('dataset')</code>.
+</td></tr>
+<tr><td>
+In R, when you are making a generalization of something, you usually name it <code>name.generalization_name</code>. For instance, if you got a vector of numbers <code>data$numbers</code>, then you would have <code>data$numbers.pos</code>. Same for functions like <code>mean</code>, <code>mean.test</code>,
+...
+</td></tr>
+</table>
 
 ```r
 table(ech$qual, ech$quant) # uniq valeus => the values
@@ -693,4 +726,35 @@ runif(10,0,100)
 
 sample(1:100, 6)
 ```
+</div><div>
+
+They are supposed to work the same on any OS.
+
+You may use them to move from a directory to another (`cd`/`ls`)
+
+* `getwd()`: equivalent of Linux command `pwd`, returns current directory
+* `sedwd(path)`: equivalent of Linux command `cd path`, change the current directory
+* `dir()/list.files()`: equivalent of Linux command `ls .`, list the current directory files
+
+Read a file
+
+* `read.csv('path')`: read a csv, separated by commas (,)
+* `read.csv2('path')`: read a csv, separated by semicolons (;)
+* `source(path)`: run an R file (path can be a URL)
+* `cat(path, sep = '\n')`: print a file
+* `readLines(path)`: read a file
+
+If you are doing this in statistics, then beware. By default, a string is considered as a quantitative variable even if it's "yes"/"no" so you may have to add the parameter "stringsAsFactors=TRUE" or manually convert the variables.
+
+Note that you can replace "read" in all functions above by "write" and get the write function (aside from cat, where you have to add the argument "file").
+
+Other functions
+
+* `file.path(folder, folder, ...)`: create a path (`/` Linux, `\` Windows)
+* `dir.create(path)`: create folder
+* `file.create(path)`: create file
+* `file.exists(path)`: true if the file exists
+* `file.info(path)`: returns file information
+* `file.copy(path,new_path)`: copy file
+* `file.rename(path,new_path)`: rename file
 </div></div>
