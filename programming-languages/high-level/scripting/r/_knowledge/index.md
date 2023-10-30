@@ -311,6 +311,31 @@ Other functions:
 xxx
 </div><div>
 
+#### Contingency tables
+
+Contingency tables give the frequency of each value.
+
+```R
+> values <- c(5, 10, 7, 10, 3, 5, 10)
+> table(values)
+values
+ 3  5  7 10
+ 1  2  1  3
+```
+
+For the relative frequencies of each unique value:
+
+```R
+> prop.table(table(values))
+values
+        3         5         7        10
+0.1428571 0.2857143 0.1428571 0.4285714
+```
+
+➡️ See also: `prop.table(..., 1)`/`prop.table(..., 2)`.
+
+<br>
+
 #### Factors
 
 Factors are used to store data that has a limited number of distinct values called `levels` such as `Yes` `No`.
@@ -390,6 +415,10 @@ v <- sapply(v, FUN = function (x) { x > 0.5 })
 </div><div>
 
 ```r
+table(ech$qual, ech$quant) # uniq valeus => the values
+xtabs(~ qual + quant, ech) # use formulas
+
+vect <- sample(0:10, 50, replace = TRUE)
 # you can fill it
 # (random values between [1,5])
 sapply(v, function (unused){ return(sample(1:5, 1)) })

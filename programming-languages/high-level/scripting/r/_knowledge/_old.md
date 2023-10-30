@@ -1,11 +1,7 @@
 # R programming
 
-* [Strings](syntax/types/strings.md)
 * [Matrix](syntax/types/matrix.md)
 * [Lists](syntax/types/lists.md)
-* [Contingency tables](syntax/types/table.md)
-* [Factors](syntax/types/factors.md)
-* [Data.frame](syntax/types/data-frame.md)
 * [Functions](syntax/functions.md)
 
 <table class="table border-dark table-bordered table-striped">
