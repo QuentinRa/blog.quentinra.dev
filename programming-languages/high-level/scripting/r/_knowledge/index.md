@@ -196,7 +196,7 @@ for (var in vector){
 
 <hr class="sep-both">
 
-## XXX
+## Functions
 
 <div class="row row-cols-lg-2"><div>
 
@@ -237,6 +237,15 @@ modulo(mod=3, x=5)  # same
 modulo(mod=3, 5)    # same
 modulo(5, mod=3)    # same
 ```
+
+#### Help And Documentation
+
+Use `help.start()` to start the documentation web engine.
+
+* `?afunction`: show the help
+* `examples(afunction)`: show some examples
+* `args(afunction)`: list the arguments
+* `body(afunction)`: display the source code
 </div></div>
 
 <hr class="sep-both">
@@ -495,6 +504,35 @@ A dataframe represents a CSV table. We function to create a dataframe is using t
 * `diag(...)`: create a diagonal matrix
 * `m1 %*% m2`: scalar product
 * `eigen(m)`: eigenvalues
+</div></div>
+
+<hr class="sep-both">
+
+## Random notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### Update R
+
+You can use this code to update R on Windows:
+
+```R
+if (!require(installr)) {
+  install.packages("installr"); 
+  require(installr)
+}
+updateR()
+```
+
+You can use this code to update R on Linux:
+
+```R
+list <- as.data.frame(installed.packages(.libPaths()[1]), stringsAsFactors = F)
+install.packages(list$Package)
+```
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">
