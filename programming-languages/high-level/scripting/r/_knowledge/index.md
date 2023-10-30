@@ -330,9 +330,14 @@ Common functions:
 * `length(v)`: size
 * `value %in% v`: true if value is in v
 * `is.element(e,v)`: true if e is in v
+* `sample(v, n)`: extract $n$ elements from $v$
+* `sample(v, n, replace = T)`: allow reuse of elements
+* `subset(v, condition, var)`: create a vector with all elements of `v$var` that are satisfying the condition.
+* `cut(v, breaks = b,include.lowest = TRUE)`: split a vector
 
 Other functions:
 
+* `rep(v, n)`: repeat a vector `n` times
 * `rev(v)`: reverse
 * `sort(v)`/`order(v)`: sort
 * `identical(v1,v2)`: true if they are the same
@@ -522,7 +527,6 @@ Some useful functions:
 * `union(x,y)`
 * `setdiff(x,y)`
 * `mlv` (library `modeest`): get the mode
-</div><div>
 
 #### Math Matrices Functions
 
@@ -532,6 +536,16 @@ Some useful functions:
 * `diag(...)`: create a diagonal matrix
 * `m1 %*% m2`: scalar product
 * `eigen(m)`: eigenvalues
+</div><div>
+
+#### Analysis Functions
+
+* `summary(v)`: mean, min...
+* `min(v)`/`max(v)`/`mean(v)`/`median(v)`: min/max/mean/median
+* `var(v)`/`cov(v)`/`cor(v)`: variance/covariance/correlation
+* `runif(n)`: n random values between 0 and 1
+* `choose(n,k)`: $C^k_n$ (picking $k$ elements among $n$)
+* `factorial(n)`: $n!$
 </div></div>
 
 <hr class="sep-both">

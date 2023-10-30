@@ -1,8 +1,6 @@
 # R programming
 
-* [Environment](utils/environment.md)
 * [Files](utils/files.md)
-* [Maths](utils/math.md)
 * [Plots](utils/plot.md)
 
 <table class="table border-dark table-bordered table-striped">
