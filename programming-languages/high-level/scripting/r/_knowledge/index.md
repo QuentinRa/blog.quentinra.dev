@@ -306,9 +306,19 @@ Other functions:
 
 <br>
 
-#### XXX
+#### Lists
 
-xxx
+A list is a named vector that can have values of different types.
+
+```r
+> l <- list(1, age = 42, name = "Joseph")
+> l[1]       # get the first value
+> l[[1]]     # get the first value
+> l$age      # get one value
+42
+```
+
+👉 Most functions are returning a list of named indexes <small>(=an object)</small>.
 </div><div>
 
 #### Contingency tables
