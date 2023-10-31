@@ -487,9 +487,11 @@ A dataframe represents a CSV table. We function to create a dataframe is using t
 
 <hr class="sep-both">
 
-## Environment
+## Environment Utilities
 
 <div class="row row-cols-lg-2"><div>
+
+#### Environment Context
 
 All variables that we declare are stored in the environment.
 
@@ -502,7 +504,6 @@ All variables that we declare are stored in the environment.
 > for (i in ls()) { print(paste(i,"=",eval(as.symbol(i)))) }
 > sapply(ls(), function (i) { paste(i,"=",eval(as.symbol(i))) }  )
 ```
-</div><div>
 
 Some useful functions:
 
@@ -511,6 +512,29 @@ Some useful functions:
 * `write.table(v,file="file.txt")`: write a table to a file
 * `read.table("file.txt")`: load a table to a file
 * `cat(file="file", "x=", x, append=TRUE)`: add a value in a file
+</div><div>
+
+#### File Utilities
+
+A few commands supposed to work the same on any OS:
+
+* `getwd()`: return the path to the current directory
+* `sedwd(path)`: move to another working directory
+* `dir()/list.files()`: list the current directory files
+
+Read a file
+
+* `read.csv('path')`: read a csv, separated by commas (,)
+* `read.csv2('path')`: read a csv, separated by semicolons (;)
+* `source('path_or_URL')`: run an R script
+* `cat(path, sep = '\n')`: print the contents of a file
+* `readLines(path)`: read a file
+
+💡 In statistics, we use `stringsAsFactors=TRUE` to handle factors.
+
+🚀 See also: `write.csv(...)`, `write.csv2(...)`, `writeLines(...)`, etc.
+
+Other functions: `file.path(paths)`, `dir.create(path)`, `file.create(path)`, `file.exists(path)`, `file.info(path)`, `file.copy(path,new_path)`, `file.rename(path,new_path)`.
 </div></div>
 
 <hr class="sep-both">
@@ -545,7 +569,7 @@ Some useful functions:
 * `summary(v)`: mean, min...
 * `min(v)`/`max(v)`/`mean(v)`/`median(v)`: min/max/mean/median
 * `var(v)`/`cov(v)`/`cor(v)`: variance/covariance/correlation
-* `runif(n)`: n random values between 0 and 1
+* `runif(n)`==`runif(n, 0, 1)`: n random values in [0, 1]
 * `choose(n,k)`: $C^k_n$ (picking $k$ elements among $n$)
 * `factorial(n)`: $n!$
 </div></div>
@@ -681,6 +705,19 @@ list <- as.data.frame(installed.packages(.libPaths()[1]), stringsAsFactors = F)
 install.packages(list$Package)
 ```
 </div><div>
+
+#### Formulas
+
+Missing explanation.
+
+```R
+> ?formula
+> X ~ qual
+# $qual == uniq values | $quant == the values
+> table(ech$qual, ech$quant)
+> xtabs(~ qual + quant, ech) # with formulas
+```
+
 </div></div>
 
 <hr class="sep-both">
@@ -693,12 +730,6 @@ Stuff that I found, but never read/used yet.
 
 * magrittr [documentation here](https://cran.r-project.org/web/packages/magrittr/magrittr.pdf)
 * `%in%`
-* ?formula, X ~ qual (X explained by qual), ...
-
-```
-# generating random values
-v <- runif(10, 0, 1)
-```
 
 <table class="table border-dark table-bordered table-striped">
 <tr><td>
@@ -709,52 +740,5 @@ In R, when you are making a generalization of something, you usually name it <co
 ...
 </td></tr>
 </table>
-
-```r
-table(ech$qual, ech$quant) # uniq valeus => the values
-xtabs(~ qual + quant, ech) # use formulas
-
-vect <- sample(0:10, 50, replace = TRUE)
-# you can fill it
-# (random values between [1,5])
-sapply(v, function (unused){ return(sample(1:5, 1)) })
-sapply(one_to_ten, function (i) { print(i) } )
-# [1] 2 5 2 3 4
-
-# generate 10 integers within [0,100]
-runif(10,0,100)
-
-sample(1:100, 6)
-```
 </div><div>
-
-They are supposed to work the same on any OS.
-
-You may use them to move from a directory to another (`cd`/`ls`)
-
-* `getwd()`: equivalent of Linux command `pwd`, returns current directory
-* `sedwd(path)`: equivalent of Linux command `cd path`, change the current directory
-* `dir()/list.files()`: equivalent of Linux command `ls .`, list the current directory files
-
-Read a file
-
-* `read.csv('path')`: read a csv, separated by commas (,)
-* `read.csv2('path')`: read a csv, separated by semicolons (;)
-* `source(path)`: run an R file (path can be a URL)
-* `cat(path, sep = '\n')`: print a file
-* `readLines(path)`: read a file
-
-If you are doing this in statistics, then beware. By default, a string is considered as a quantitative variable even if it's "yes"/"no" so you may have to add the parameter "stringsAsFactors=TRUE" or manually convert the variables.
-
-Note that you can replace "read" in all functions above by "write" and get the write function (aside from cat, where you have to add the argument "file").
-
-Other functions
-
-* `file.path(folder, folder, ...)`: create a path (`/` Linux, `\` Windows)
-* `dir.create(path)`: create folder
-* `file.create(path)`: create file
-* `file.exists(path)`: true if the file exists
-* `file.info(path)`: returns file information
-* `file.copy(path,new_path)`: copy file
-* `file.rename(path,new_path)`: rename file
 </div></div>
