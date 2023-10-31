@@ -28,14 +28,29 @@ There is also 👑 **Full-Stack** 👑 which is both the front-end and the back-
 
 <hr class="sep-both">
 
-## Get started
+## Get Started
 
 <div class="row row-cols-lg-2"><div>
 
-...
+#### Client
+
+A client is a browser that will be used to access a website. Most of the front-end languages can be used without a server:
+
+* HTML
+* CSS
+* JavaScript
+
+Simply drag-and-drop your HTML file inside your browser. Notice that the protocol is `file://` instead of `http://` or `https://`.
 </div><div>
 
-...
+#### Server
+
+Most apps use a client-server approach. A client will request pages of a website <small>(HTML, CSS, JS...)</small> to a webserver that can use a server-side technology to generate them.
+
+It means that we need to set up a web server:
+
+* We often use [Apache](/operating-systems/cloud/webservers/apache/index.md) or nginx for PHP apps.
+* [Node.js](/programming-languages/web/node.js/_general/index.md) apps are usually creating a server  from the code.
 </div></div>
 
 <hr class="sep-both">
@@ -46,7 +61,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* [_old](_old.md)
 * Progressive Web Apps (PWA)
 * [Server Side Includes](https://en.wikipedia.org/wiki/Server_Side_Includes) (SSI)
 * WebAssembly
