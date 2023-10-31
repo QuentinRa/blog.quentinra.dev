@@ -131,6 +131,8 @@ T || F        # Logical OR
 
 👉 There is also `&` and `|` for the logical AND/OR on vectors. When using `&&` or `||` with a vector, they operate on the first element. 
 
+📌 The [magrittr](https://cran.r-project.org/web/packages/magrittr/magrittr.pdf) provides functions to simplify the use of complex operators, mostly those that are hard to remember.
+
 <br>
 
 #### Libraries
@@ -543,6 +545,15 @@ Other functions: `file.path(paths)`, `dir.create(path)`, `file.create(path)`, `f
 
 <div class="row row-cols-lg-2"><div>
 
+#### Datasets
+
+Datasets are variables with data to experiment with.
+
+```R
+> data()            # see all existing datasets
+> data('dataset')   # import a dataset
+```
+
 #### Math Vector Functions
 
 * `which.min(v)`: index of the min value
@@ -718,27 +729,4 @@ Missing explanation.
 > xtabs(~ qual + quant, ech) # with formulas
 ```
 
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-* magrittr [documentation here](https://cran.r-project.org/web/packages/magrittr/magrittr.pdf)
-* `%in%`
-
-<table class="table border-dark table-bordered table-striped">
-<tr><td>
-Either look for or load a dataset with <code>data()/data('dataset')</code>.
-</td></tr>
-<tr><td>
-In R, when you are making a generalization of something, you usually name it <code>name.generalization_name</code>. For instance, if you got a vector of numbers <code>data$numbers</code>, then you would have <code>data$numbers.pos</code>. Same for functions like <code>mean</code>, <code>mean.test</code>,
-...
-</td></tr>
-</table>
-</div><div>
 </div></div>
