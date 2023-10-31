@@ -51,6 +51,39 @@ It means that we need to set up a web server:
 
 * We often use [Apache](/operating-systems/cloud/webservers/apache/index.md) or nginx for PHP apps.
 * [Node.js](/programming-languages/web/node.js/_general/index.md) apps are usually creating a server  from the code.
+
+➡️ See also: [Webserver Routing](/operating-systems/cloud/webservers/_knowledge/routing.md).
+
+➡️ To upload files to a remote server, use: [SCP](/operating-systems/networking/protocols/scp.md), [FileZilla](/operating-systems/windows/developers/index.md#file-transfer-protocol-ftp), etc.
+</div></div>
+
+<hr class="sep-both">
+
+## 😍 Developer tools (devtools) 😍
+
+<div class="row row-cols-lg-2"><div>
+
+The devtools are tools for developers. You can open it using
+
+* <kbd>F12</kbd> or <kbd>Left-click > Inspect</kbd> ✨
+* <kbd>Settings > ... tools > development tools</kbd> 😅
+
+The 4 most used tools are
+
+* **Tools > elements** <span class="small">(<kbd>CTRL+SHIFT+I</kbd>)</span>: see/edit the HTML/CSS
+* **Tools > <i class="bi bi-box-arrow-in-up-left"></i>** <span class="small">(<kbd>CTRL+SHIFT+C</kbd>)</span>: select an element and see the corresponding HTML code in the Element tab.
+* **Tools > <i class="bi bi-window"></i>** <span class="small">(<kbd>CTRL+SHIFT+M</kbd>)</span>: preview the website on a phone...
+* **Tools > Console**: execute some JavaScript, try: `41+1`
+</div><div>
+
+There are a lot more tools. If some are not available for you, you may have to enable them <small>(see "+" in Edge, see "... > more tools" in Chrome...)</small>.
+
+* **Tools > Sources** 🕵️: see the code source of the page
+* **Tools > Application** 🪄: see the local storage, the cookies, etc.
+* **Tools > Problems** 🧟: you can see problems using webhint
+* **Tools > LightHouse** 🥇: you can see the evaluation of a page by LightHouse (Google)
+
+➡️ There is also a color picker, allowing you to find which color was used somewhere on a website.
 </div></div>
 
 <hr class="sep-both">

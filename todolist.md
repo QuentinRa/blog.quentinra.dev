@@ -19,7 +19,7 @@ List of courses that have note which were not added yet.
 
 **Operating systems**
 
-* `(review, typos)` Linux + Processes + Expect, HTTPS
+* `(review, typos)` Linux + Processes + Expect, HTTPS, Routing
 * Networking (+bridges)
 
 **Math**

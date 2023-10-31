@@ -265,4 +265,16 @@ SSLStaplingCache shmcb:${APACHE_RUN_DIR}/ssl_stapling(32768)
 ```apacheconf
 SSLSessionTickets off
 ```
+
+Permissions for files/folders.
+
+```powershell
+# ➡️ If you're using public_html
+$ chmod 711 ~
+$ chmod 711 ~/public_html
+# ➡️ The least permissions
+$ chmod 600 file.php # for a .php
+$ chmod 644 file.html # for a .html
+$ chmod 711 folder # for a folder
+```
 </div></div>
