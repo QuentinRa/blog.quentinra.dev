@@ -94,6 +94,12 @@ $ curl --location --request POST 'URL' --header 'Content-Type: application/x-www
 # simplified command
 $ curl -X POST 'URL' -d 'key=value' -H 'Content-Type: application/x-www-form-urlencoded'
 ```
+
+#### Others
+
+* Use your web browser with fetch <small>(JavaScript)</small>
+* Use [JetBrains HTTP client](https://www.jetbrains.com/help/phpstorm/http-client-in-product-code-editor.html)
+* Use [reqbin](https://reqbin.com/) to do/generate code to do requests
 </div><div>
 
 #### Postman Software
@@ -114,16 +120,6 @@ $ curl -X POST 'URL' -d 'key=value' -H 'Content-Type: application/x-www-form-url
 ➡️ Instead of editing your request to test another endpoint. Save it <small>(CTRL+S/save button)</small>, and create a new one.
 
 ➡️ In the right-side panel, there is a code tag. Click on it, and you will be able to generate the API request in many languages.
-
-<br>
-
-#### Others
-
-* Use your web browser with fetch (JavaScript)
-
-* Use [JetBrains HTTP client](https://www.jetbrains.com/help/phpstorm/http-client-in-product-code-editor.html)
-
-* Use [reqbin](https://reqbin.com/) to do/generate code to do requests
 </div></div>
 
 <hr class="sep-both">
@@ -141,6 +137,34 @@ A few tools/platforms you may use 📚:
 
 See also: [OpenAPI tools](/programming-languages/others/apis/openapi/index.md).
 </div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## API Reference
+
+<div class="row row-cols-lg-2"><div>
+
+Search for APIs on [rapidapi](https://rapidapi.com/hub) 🚀.
+
+* [GitHub](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api)
+* [MyAnimeList](https://myanimelist.net/apiconfig/references/api/v2) <small>(mangas, anime, ...)</small> or [jikan](https://jikan.moe/) <small>(unofficial MAL API)</small>
+* [Pokémon](https://pokeapi.co/)
+* [PayPal](https://developer.paypal.com/docs/api/overview/)/[Stripe](../more/stripe/index.md) <small>(payments)</small>
+* [MangaDex](https://api.mangadex.org/docs/) <small>(manga reader)</small>
+* [todoist](https://todoist.com/) <small>(to-do list)</small>
+</div><div>
+
+* [formspree](https://formspree.io/) <small>(forms)</small>
+* [algolia](https://www.algolia.com/)/[docsearch](https://github.com/algolia/docsearch) <small>(search)</small>
+* [simpleen](https://simpleen.io/) <small>(localization)</small>
+* [courier](https://www.courier.com/) or [customer](https://customer.io/) <small>(push notifications, SMS, emails...)</small> or [textbelt](https://textbelt.com/) <small>(sms)</small>
+* [pusher](https://pusher.com/) <small>(push notifications, they are interfacing websockets...)</small>
+* [postmarkapp](https://postmarkapp.com/) <small>(push emails...)</small>
+* [ipify](https://www.ipify.org/) or [jsonip](https://jsonip.com/) or [ipgeolocation](https://ipgeolocation.io/) <small>(ip)</small>
+* [headlessbrowserapi](https://headlessbrowserapi.com/) <small>(scrap)</small> 🚀 / [peekalink](https://www.peekalink.io/) <small>(preview)</small>
+* [gravatar](https://en.gravatar.com/) <small>(avatars)</small> / [disqus](https://disqus.com/api/docs/) <small>(comments)</small>
+* [Google Translate API](https://translate.googleapis.com/translate_a/single?client=gtx&sl=ko&tl=en&dt=t&q=176) / [DeepL API](https://www.deepl.com/pro-api) <small>(translations)</small>
 </div></div>
 
 <hr class="sep-both">
