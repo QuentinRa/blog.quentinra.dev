@@ -439,5 +439,7 @@ https://github.com/naptha/tesseract.js
 https://stackify.com/blog/
 https://zbib.org/
 https://github.com/myles/awesome-static-generators#documentation
+
+https://monorepo.tools/
 ```
 </div></div>

@@ -109,7 +109,8 @@ Stuff that I found, but never read/used yet.
 
 * `npm config`
 * `npm config set xxx yyy`
-* `npm --arch=xxx --target_arch=xxx --no-registry`
+* `npm --arch=xxx --target_arch=xxx`
 * `npm outdated`
 * `npm prune`
+* `npm cache add` + `npm install --no-registry`
 </div></div>

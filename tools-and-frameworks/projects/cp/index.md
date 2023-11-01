@@ -132,6 +132,7 @@ To avoid making the code hard to read and maintain, developers often define form
 * [markdownlint](https://github.com/DavidAnson/markdownlint) for Markdown
 * [ShellCheck](https://www.shellcheck.net/) for Shell Scripts
 * [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) for C/C++
+* [prettier](https://prettier.io/) for HTML, CSS, JavaScript, Markdown...
 * ...
 
 👉 **Common elements**: tabulation, spacing, variable names, lines width, position of symbols/elements in the code, symbols to use, etc.
@@ -203,4 +204,22 @@ It allows us to change the data or add new files without editing the code. It's 
 [Literate programming](https://en.wikipedia.org/wiki/Literate_programming) is a coding practice in which we write documentation before and alongside the code to explain its purpose.
 
 It's sometimes called "Documentation-Driven Development" to enforce the idea that we must write documentation before the code, and that it drives what we code.
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+Static Code Analysis
+
+* [JSHint](https://jshint.com/) for JavaScript
+
+Static Type Checker
+
+* [Flow](https://flow.org/) for JavaScript
+</div><div>
 </div></div>

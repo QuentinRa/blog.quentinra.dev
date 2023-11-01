@@ -126,6 +126,8 @@ $ make -v
 # GNU Make 4.3
 # ...
 ```
+
+➡️ See also: [cygwin](https://github.com/transcode-open/apt-cyg).
 </div></div>
 
 <hr class="sep-both">
