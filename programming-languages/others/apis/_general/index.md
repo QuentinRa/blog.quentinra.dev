@@ -63,6 +63,62 @@ Usually, only one format is supported, but developers may allow the developer to
 
 <hr class="sep-both">
 
+## Query an API
+
+<div class="row row-cols-lg-2"><div>
+
+Each API often has what we call a **wrapper** or **driver** per programming language. Often, it is a library defining functions which we will call and that will handle the API HTTP request for us. 
+
+➡️ Ex: [PHP GitHub API](https://github.com/KnpLabs/php-github-api) to use [GitHub API](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api) in [PHP](/programming-languages/web/php/_general/index.md).
+
+If there is no wrapper or we want to make some tests, we can query the API ourselves, by sending HTTP requests.
+
+<br>
+
+#### cURL
+
+[cURL](/operating-systems/linux/commands/list.md#command-curl) is a command that is useful for quick tests.
+
+```ps
+# postman generated command
+$ curl --location --request POST 'URL' --header 'Content-Type: application/x-www-form-urlencoded' --data-urlencode 'key=value'
+# simplified command
+$ curl -X POST 'URL' -d 'key=value' -H 'Content-Type: application/x-www-form-urlencoded'
+```
+</div><div>
+
+#### Postman Software
+
+[PostMan](https://www.postman.com/) is a popular tool to test an API. Once downloaded,
+
+* Go to the collection tab
+* Create a new collection
+* Add a request
+    * Click on "GET" to select the method
+    * Fill the URL with an endpoint of the API
+    * You can add
+        * Query parameters <small>(GET, tab Params)</small>
+        * Headers <small>(tab Headers)</small>
+        * Body <small>(POST, x-www-form-encoded, tab Body)</small>
+* Then, click on send
+
+➡️ Instead of editing your request to test another endpoint. Save it <small>(CTRL+S/save button)</small>, and create a new one.
+
+➡️ In the right-side panel, there is a code tag. Click on it, and you will be able to generate the API request in many languages.
+
+<br>
+
+#### Others
+
+* Use your web browser with fetch (JavaScript)
+
+* Use [JetBrains HTTP client](https://www.jetbrains.com/help/phpstorm/http-client-in-product-code-editor.html)
+
+* Use [reqbin](https://reqbin.com/) to do/generate code to do requests
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
