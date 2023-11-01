@@ -14,6 +14,7 @@ A few services commonly interfaced by APIs:
 
 An API can interface both internal and external services, e.g. developed by the company or another company.
 
+For testing, you can use the fake [jsonplaceholder](https://jsonplaceholder.typicode.com/) API 🚀.
 </div><div>
 
 For the client of the API
@@ -46,11 +47,19 @@ A few common terms:
 * **Path**: the part after the base endpoint
 
 For the endpoint `http://localhost:3000/users/1`, the base endpoint would be `http://localhost:3000` while the path would be `/users/1`.
+
+<br>
+
+#### HTTP requests
+
+We can interact with an API from our browser, as our browser will send the [HTTP request](/operating-systems/networking/protocols/http.md) for us. Outside a browser, we create one manually.
 </div><div>
 
 #### Methods
 
 An endpoint may allow multiple HTTP methods (GET, POST, PUT...). Refer to each API documentation to know which ones are available. See the [HTTP protocol/method](/operating-systems/networking/protocols/http.md#method) for your own API if needed.
+
+<br>
 
 #### Responses
 
@@ -119,12 +128,39 @@ $ curl -X POST 'URL' -d 'key=value' -H 'Content-Type: application/x-www-form-url
 
 <hr class="sep-both">
 
+## Random
+
+<div class="row row-cols-lg-2"><div>
+
+#### API Documentation
+
+A few tools/platforms you may use 📚:
+
+* [apiary](https://apiary.io/) <small>(not recommended)</small>
+* [stoplight](https://stoplight.io/) (👻)
+
+See also: [OpenAPI tools](/programming-languages/others/apis/openapi/index.md).
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* [_old](_old.md)
+* REST/RESTful/[REST API guidelines](https://github.com/controlook-zz/standards/blob/master/backend/rest-api-guidelines.md)
+    * stateless (do not use previous requests)
+    * uniform (ex: JSON for all responses)
+    * multiple requests to get one resource (disadvantage)
+* [GraphQL](https://graphql.org/) ([article on best practices](https://stepzen.com/blog/designing-graphql-apis-best-practices-and-learnings-from-rest-api-design))
 </div><div>
+
+* [insomnia](https://birdie0.github.io/discord-webhooks-guide/tools/insomnia.html)
+* [httpie](https://birdie0.github.io/discord-webhooks-guide/tools/httpie.html)
+* OData (Open Data)
+* SOAP (Simple Object Access Protocol)
+* WSDL (Web Services Description Language)
 </div></div>
