@@ -26,10 +26,9 @@ List of courses that have note which were not added yet.
 
 * Probabilities, Matrices, Graphs
 
-**QUID**
+**Games**
 
-* Math
-* Games
+* ???
 
 **Cybersecurity**
 

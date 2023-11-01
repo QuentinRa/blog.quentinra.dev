@@ -34,8 +34,6 @@ $ sudo systemctl stop apache2
 $ sudo systemctl start apache2
 $ sudo systemctl reload apache2
 $ sudo systemctl restart apache2
-$ sudo systemctl status apache2
-# non-root
 $ systemctl status apache2
 ```
 
@@ -142,7 +140,7 @@ A `.htaccess` is applied to a directory and its subdirectories. Every `.htaccess
 
 <p></p>
 
-```apacheconf
+```apacheconf!
 # Disable directory browsing
 Options All -Indexes
 
@@ -169,7 +167,7 @@ LimitRequestBody 512000
 
 This could be used to only allow a website to access some files such as uploaded avatars. Only `127.0.0.1` can request a resource.
 
-```apacheconf
+```apacheconf!
 order deny,allow
 deny from all
 allow from 127.0.0.1
@@ -181,7 +179,7 @@ allow from 127.0.0.1
 
 The server shows a popup asking for a username, and a password.
 
-```apacheconf
+```apacheconf!
 AuthUserFile /path/to/some/.htpasswd
 AuthName "Protected Files"
 AuthType Basic
@@ -191,7 +189,7 @@ Require user xxx
 
 And you need an additional file: `/path/to/some/.htpasswd`
 
-```apacheconf
+```apacheconf!
 # username:hashed_password (htpasswd command?)
 xxx:$apr1$8KSS.TIW$qWKI88AFeMSl3iemCuUCk/
 ```
@@ -208,20 +206,20 @@ Stuff that I found, but never read/used yet.
 * `apache2ctl restart`
 * [Apache Security](https://www.tecmint.com/apache-security-tips/)
 
-```apacheconf
+```apacheconf!
 AllowOverride All
 ```
 
 * Disable all ssl aside from TLS 1.2+
 
-```apacheconf
+```apacheconf!
 # edit /etc/apache2/sites-available/some_config.conf
 # Protocols: TLS 1.2, TLS 1.3
 SSLProtocol -all +TLSv1.3 +TLSv1.2
 # restart: sudo service apache2 restart
 ```
 
-```apacheconf
+```apacheconf!
 # edit /etc/apache2/sites-available/some_config.conf
 # append either 1) 2), 3) or sometime else
 # don't forget to restart when you're done
@@ -241,7 +239,7 @@ sudo nano /etc/apache2/conf-enabled/security.conf
 
 OCSP Stapling
 
-```apacheconf
+```apacheconf!
 # use either 1) or 2), don't forget to restart
 # restart: sudo service apache2 restart
 
