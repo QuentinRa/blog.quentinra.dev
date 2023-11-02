@@ -40,19 +40,19 @@ A client is a browser that will be used to access a website. Most of the front-e
 * CSS
 * JavaScript
 
-Simply drag-and-drop your HTML file inside your browser. Notice that the protocol is `file://` instead of `http://` or `https://`.
+Simply drag and drop your HTML file inside your browser. Notice that the protocol is `file://` instead of `http://` or `https://`.
 </div><div>
 
 #### Server
 
-Most apps use a client-server approach. A client will request pages of a website <small>(HTML, CSS, JS...)</small> to a webserver that can use a server-side technology to generate them.
+Most apps use a client-server approach. A client will request pages of a website <small>(HTML, CSS, JS...)</small> to a web server that can use a server-side technology to generate them.
 
 It means that we need to set up a web server:
 
 * We often use [Apache](/operating-systems/cloud/webservers/apache/index.md) or nginx for PHP apps.
 * [Node.js](/programming-languages/web/node.js/_general/index.md) apps are usually creating a server  from the code.
 
-➡️ See also: [Webserver Routing](/operating-systems/cloud/webservers/_knowledge/routing.md).
+➡️ See also: [Web server Routing](/operating-systems/cloud/webservers/_knowledge/routing.md).
 
 ➡️ To upload files to a remote server, use: [SCP](/operating-systems/networking/protocols/scp.md), [FileZilla](/operating-systems/windows/developers/index.md#file-transfer-protocol-ftp), etc.
 </div></div>
