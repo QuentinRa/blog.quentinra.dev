@@ -8,7 +8,7 @@
 $ sudo apt-get install expect
 ```
 
-We will define a text/pattern that we are expecting <small>(ex: "login: ")</small>. We it is found, we will determine which text to send.
+We will define a text/pattern that we are expecting <small>(ex: "login: ")</small>. When it is found, we will determine which text to send.
 </div><div>
 
 We often create a `.exp` file with all commands:

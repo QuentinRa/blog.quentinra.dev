@@ -61,7 +61,7 @@ $ /bin/true && echo $?
 
 A foreground process is a process receiving input from the user, while a background process is running but not receiving input.
 
-They can only be one foreground process at a time inside a [session](#sessions). We use background processes to run long tasks that are not requiring user input. Background processes:
+There can only be one foreground process at a time inside a [session](#sessions). We use background processes to run long tasks that do not require user input. Background processes:
 
 * 😵 can't read and may not be able to write output on the terminal
 * 🔕 aren't receiving signals, except **CTRL-Z** (suspend)
@@ -247,7 +247,7 @@ The scheduler job is to to maximize the use of available resources while ensurin
 
 To the user, it looks like applications are running in parallel, but its pseudo-parallelism. As the scheduler lets each process use the CPU a little bit, they are all running a little, and we won't notice that they are not executed at the same time.
 
-👉 Some scheduling algorithm: round-robin, priority based...
+👉 Some scheduling algorithm: round-robin, priority-based...
 
 <br>
 
