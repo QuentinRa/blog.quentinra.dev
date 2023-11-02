@@ -1613,7 +1613,7 @@ $ java -jar some_jar.jar # execute
 
 ⚠️ Once bundled, files inside the JAR cannot be modified.
 
-🔥 You can create a JAR manually, or you can use tools such as [gradle](/tools-and-frameworks/others/build/gradle/index.md#generate-a-jar).
+🔥 You can create a JAR manually, or you can use tools such as [Gradle](/tools-and-frameworks/others/build/gradle/index.md#generate-a-jar).
 
 From the code, there are 3 ways to read a file that is inside a JAR.
 

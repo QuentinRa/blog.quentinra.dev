@@ -8,13 +8,13 @@
 * 🌍 Supports [many languages](https://highlightjs.readthedocs.io/en/latest/supported-languages.html) <small>(192+)</small>
 * 🎨 Supports many themes <small>(496+)</small>
 
-It's the library used by the popular [StackOverflow](https://stackoverflow.com/) and [Discord](https://discordapp.com/).
+It's the library used by the popular [Stack Overflow](https://stackoverflow.com/) and [Discord](https://discordapp.com/).
 
 <br>
 
 **Load the library** 📚
 
-You can find the tag to load it on the [cdnjs](https://cdnjs.com/libraries/highlight.js) website. You should add tags for all languages you want to use, which is more secure that letting the script automatically import them ☠️.
+You can find the tag to load it on the [cdnjs](https://cdnjs.com/libraries/highlight.js) website. You should add tags for all languages you want to use, which is more secure than letting the script automatically import them ☠️.
 
 ```html!
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/X.Y.Z/highlight.min.js" [...]></script>
@@ -36,7 +36,7 @@ You can find the tag to load it on the [cdnjs](https://cdnjs.com/libraries/highl
 
 **Highlight Code** 🚀
 
-Once the content to highlight was rendered, you need to call `hljs`:
+Once the content to highlight is rendered, you need to call `hljs`:
 
 ```xml!
 <script>
