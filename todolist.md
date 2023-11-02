@@ -10,14 +10,12 @@ List of courses that have note which were not added yet.
 
 **Tools and Frameworks**
 
-* `(review, typos)` JetBrains plugin development
-* Project + Tools
+* `(review, typos)` JetBrains plugin development, Random, Project
 </div><div>
 
 **Operating systems**
 
-* `(review, typos)` Linux + Processes + Expect, HTTPS, Routing
-* Networking (+bridges)
+* `(review, typos)` Networking (+bridges)
 
 **Math**
 

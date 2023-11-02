@@ -301,3 +301,22 @@ my_target:
     @echo "This is a command"
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+```shell!
+$ automake --add-missing
+$ autoreconf
+$ automake
+automake: error: 'configure.ac' is required
+$ autoreconf
+autoreconf: 'configure.ac' or 'configure.in' is required
+```
+</div><div>
+</div></div>

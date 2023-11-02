@@ -30,5 +30,6 @@ Stuff that I found, but never read/used yet.
 
 * `svn copy`
 * `svn merge`
+* `~/.subversion`
 </div><div>
 </div></div>

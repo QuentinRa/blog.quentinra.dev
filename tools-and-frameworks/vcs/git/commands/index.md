@@ -494,7 +494,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * `git show`
-* `git tag`
+* `git tag`, `git tag -a xxx -m yyy`, `git push origin xxx`
 * `git reset`
 * `git restore`
 * `git switch`

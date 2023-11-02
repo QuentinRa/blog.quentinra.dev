@@ -985,6 +985,7 @@ Stuff that I found, but never read/used yet.
 * [Akagi201/learning-cmake](https://github.com/Akagi201/learning-cmake) and [awesome-cmake](https://github.com/onqtam/awesome-cmake)
 * target_precompile_headers
 * `mark_as_advanced` (show in GUI editor?)
+* [An Introduction to Modern CMake](https://cliutils.gitlab.io/modern-cmake/)
 </div><div>
 
 * macros (unlike function, no need for PARENT_SCOPE)
