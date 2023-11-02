@@ -1622,16 +1622,19 @@ $ wget --no-check-certificate [...] # no SSL
 GET request.
 
 ```ps
-$ curl https://example.com
-$ curl --request GET https://example.com
-$ curl -X GET https://example.com
+$ curl https://example.com    # GET an URL
+$ curl -I [...]               # request headers
+$ curl -k [...]               # ignore SSL errors
+$ curl --silent [...]         # only print the output
 ```
 </div><div>
 
-Request headers
+Craft an [HTTP](/operating-systems/networking/protocols/http.md) request:
 
 ```ps
-$ curl -I https://example.com
+$ curl -X GET [...]           # same as "--request"
+$ curl -H "Name: Value" [...] # same as "--header"
+$ curl -d "key=value" [...]   # same as "--data"
 ```
 
 POST request.
@@ -1690,6 +1693,7 @@ Stuff that I found, but never read/used yet.
 * `ranger`
 * `hexdump`
 * `cloc`, `sloc`
+* `rsync`
 </div><div>
 
 * `getent` <sup>2</sup>: get an entry such as "passwd": `getent passwd` <small>(get entry)</small> instead of `cat /etc/passwd`
