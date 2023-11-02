@@ -76,7 +76,7 @@ Usually, only one format is supported, but developers may allow the developer to
 
 <div class="row row-cols-lg-2"><div>
 
-Each API often has what we call a **wrapper** or **driver** per programming language. Often, it is a library defining functions which we will call and that will handle the API HTTP request for us. 
+Each API often has what we call a **wrapper** or **driver** per programming language. Often, it is a library defining functions that we will call and that will handle the API HTTP request for us. 
 
 ➡️ Ex: [PHP GitHub API](https://github.com/KnpLabs/php-github-api) to use [GitHub API](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api) in [PHP](/programming-languages/web/php/_general/index.md).
 

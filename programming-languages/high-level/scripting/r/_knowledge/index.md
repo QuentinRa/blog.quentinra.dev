@@ -336,7 +336,7 @@ Common functions:
 * `is.element(e,v)`: true if e is in v
 * `sample(v, n)`: extract $n$ elements from $v$
 * `sample(v, n, replace = T)`: allow reuse of elements
-* `subset(v, condition, var)`: create a vector with all elements of `v$var` that are satisfying the condition.
+* `subset(v, condition, var)`: create a vector with all elements of `v$var` that satisfy the condition.
 * `cut(v, breaks = b,include.lowest = TRUE)`: split a vector
 
 Other functions:
@@ -345,7 +345,7 @@ Other functions:
 * `rev(v)`: reverse
 * `sort(v)`/`order(v)`: sort
 * `identical(v1,v2)`: true if they are the same
-* `any(v op value)`: true if at least one value make the condition true
+* `any(v op value)`: true if at least one value makes the condition true
 * `all(v op value)`: true if all values make the condition true
 * `duplicated(v)`: true if a value is duplicated, for each value
 
@@ -353,10 +353,10 @@ Other functions:
 
 We often use functions instead of loops:
 
-* `lapply(v, f)`: apply `f` on each element in `v`. Returns a list.
-* `sapply(v, f)`: apply `f` on each element in `v`. Returns a vector.
-* `aapply(m, f, 1)`: apply `f` on each element in a matrix `m`.
-* `tapply(v, k, 1)`: apply `f` on each group of elements.
+* `lapply(v, f)`: apply `f` to each element in `v`. Returns a list.
+* `sapply(v, f)`: apply `f` to each element in `v`. Returns a vector.
+* `aapply(m, f, 1)`: apply `f` to each element in a matrix `m`.
+* `tapply(v, k, 1)`: apply `f` to each group of elements.
 * `by(v, k, f, na.rm=TRUE)`: wrapper to `tapply(v, k, 1)`
 </div></div>
 
@@ -385,7 +385,7 @@ Other functions:
 * `toupper(str)`: return `str` as uppercase
 * `tolower(str)`: return `str` as lowercase
 * `gsub(src, dest, str)`: replace `src` with `dest` in `str`
-* `trimws(str)`: trim, remove leading and trailing spaces
+* `trimws(str)`: trim, e.g., remove leading and trailing spaces
 
 <br>
 
@@ -401,7 +401,7 @@ A list is a named vector that can have values of different types.
 42
 ```
 
-👉 Most functions are returning a list of named indexes <small>(=an object)</small>.
+👉 Most functions return a list of named indexes <small>(=an object)</small>.
 
 <br>
 
@@ -518,7 +518,7 @@ Some useful functions:
 
 #### File Utilities
 
-A few commands supposed to work the same on any OS:
+A few commands are supposed to work the same on any OS:
 
 * `getwd()`: return the path to the current directory
 * `sedwd(path)`: move to another working directory
@@ -591,7 +591,7 @@ Datasets are variables with data to experiment with.
 
 <div class="row row-cols-lg-2"><div>
 
-Almost all the plots functions support these arguments:
+Almost all the plot functions support these arguments:
 
 * `main = "title"`: plot title
 * `xlab = "title x"`: x-axis title
