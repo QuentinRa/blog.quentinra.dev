@@ -56,5 +56,6 @@ Stuff that I found, but never read/used yet.
   * `PermitRootLogin no`
   * `PubkeyAuthentication yes`
   * `PasswordAuthentication no`
+* `sudo systemctl restart sshd`
 * `ssh-copy-id username@server`: add to remote server our public key
 </div></div>

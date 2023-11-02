@@ -15,9 +15,8 @@ PHP <small>(PHP Hypertext preprocessor, a recursive acronym)</small> is still a 
 * The [PHP manual](https://www.php.net/manual/en/langref.php) <small>(⛪, surprisingly easy to read)</small>
 * [W3Schools/PHP](https://www.w3schools.com/php/default.asp) <small>(⛪)</small>
 
-</div><div>
-
 To install PHP, you will need a web server such as [Apache](/operating-systems/cloud/webservers/apache/index.md). ➡️ Well-known versions of PHP are: `5.6`, `7.*`, and `8` <small>(latest, since 2020)</small>.
+</div><div>
 
 Additionally, you may install extensions later:
 
@@ -31,6 +30,13 @@ $ sudo apt install php-mysql
 ```
 
 You can enable extensions on the server level, or you can edit each `php.ini` manually. On Linux, you can also use `sudo phpenmod xxx`.
+
+```shell!
+$ sudo phpenmod mod_rewrite       # enable module
+$ sudo systemctl restart apache2  # restart web server
+```
+
+➡️ Installed mods are stored in: `/etc/php/X.Y/mods-available`.
 </div></div>
 
 <hr class="sep-both">

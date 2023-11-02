@@ -33,6 +33,13 @@ Stuff that I found, but never read/used yet.
 * [snort](https://www.snort.org/)
 * [suricata](https://suricata.io/)
 * [pfsense](https://www.pfsense.org/)
+
+```shell!
+$ sudo apt install fail2ban
+$ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+$ sudo vim /etc/fail2ban/jail.local # nothing
+$ sudo service fail2ban restart
+```
 </div><div>
 
 * Tripwire (integrity, database of expected states)

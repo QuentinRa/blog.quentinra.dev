@@ -923,7 +923,8 @@ Create a username, give them a group, and define their home folder.
 
 ```ps
 # -m = create home
-$ useradd username -g usergroup -b custom/path/to/home -m
+$ useradd username -g usergroup -b /path/to/user/home -m
+$ adduser username # create everything at once
 ```
 
 [**usermod** - edit users]

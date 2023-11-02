@@ -40,15 +40,15 @@ $ systemctl status apache2
 Apache2 files are located in
 
 ```shell!
-$ cd /etc/apache2/conf-available/
-$ cd /etc/apache2/conf-enabled/ # copies
-$ cd /etc/apache2/sites-available/
-$ cd /etc/apache2/sites-enabled/ # copies
+$ cd /etc/apache2/conf-available/  # configurations
+$ cd /etc/apache2/conf-enabled/    # copies
+$ cd /etc/apache2/sites-available/ # websites
+$ cd /etc/apache2/sites-enabled/   # copies
 $ tail /var/log/apache2/access.log
 $ tail /var/log/apache2/error.log
 ```
 
-Enable configs/virtual hosts
+Enable a website
 
 ```shell!
 $ cp 000-default.conf example.com.conf # one per website
@@ -56,20 +56,18 @@ $ sudo a2ensite example.com.conf
 $ sudo a2dissite example.com.conf
 $ sudo apache2ctl configtest
 ```
-</div><div>
 
-When installing a PHP module, you can enable its configuration, and the specific functions of the module using Apache without having to edit each `php.ini`.
+Enable a configuration
 
 ```shell!
-$ sudo apt install php-mbstring
-$ sudo a2enconf php7.4-mbstring
-$ sudo a2enmod php7.4-mbstring
+$ sudo a2enconf some_header.conf
 ```
+</div><div>
 
 Some modules
 
 ```shell!
-$ sudo a2enmod mod_headers
+$ sudo a2enmod http2
 $ sudo a2enmod headers
 $ sudo a2enmod ssl
 $ sudo a2enmod rewrite
