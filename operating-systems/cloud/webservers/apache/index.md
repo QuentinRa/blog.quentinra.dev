@@ -111,14 +111,14 @@ $ sudo systemctl start apache2 # ❌ don't
 If you try to start the server, you will see an error in `error.log`.
 
 ```shell!
-$ sudo systemctl stop apache2
-$ sudo apt install php7.1-fpm
+$ version=7.1
+$ sudo apt install php-fpm
 $ sudo a2enmod proxy_fcgi setenvif
-$ sudo a2enconf php7.1-fpm
-$ sudo a2dismod php7.1
+$ sudo a2enconf php${version}-fpm
+$ sudo a2dismod php${version}
 $ sudo a2dismod mpm_prefork
 $ sudo a2enmod mpm_event
-$ sudo systemctl start apache2
+$ sudo systemctl restart apache2
 ```
 </div></div>
 
@@ -129,6 +129,14 @@ $ sudo systemctl start apache2
 <div class="row row-cols-lg-2"><div>
 
 This is a file used to edit the virtual host configuration locally. Simply create a file `.htaccess` with some instructions inside.
+
+```apacheconf!
+    # add to your configuration
+    <Directory /path/to/our/website>
+        AllowOverride All
+        Require all granted
+    </Directory>
+```
 
 A `.htaccess` is applied to a directory and its subdirectories. Every `.htaccess` in the path to the resource will be loaded. ➡️ In cases of conflict, the nearest (latest) instruction is used.
 
@@ -232,6 +240,12 @@ Headers
 sudo nano /etc/apache2/conf-enabled/security.conf
 # ServerSignature Off
 # ServerTokens Prod
+```
+
+```shell!
+$ sudo a2query -m
+$ sudo a2enconf # select a conf
+$ sudo a2enmod  # select a mod
 ```
 </div><div>
 

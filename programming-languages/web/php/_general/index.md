@@ -688,6 +688,7 @@ Stuff that I found, but never read/used yet.
 * `php -m`
 * [phpDoc](https://phpdoc.org/)
 * [phpstan](https://github.com/phpstan/phpstan)
+* `php spark serve`
 
 ```
 $ php -ini | head
