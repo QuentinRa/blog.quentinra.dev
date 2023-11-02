@@ -6,7 +6,7 @@ Bash is a common default shell language for many distributions. This course will
 
 Note that the features introduced here shouldn't work on every machine, as they will most likely not use bash <small>(zsh. ash, csh, ksh...)</small>.
 
-The [man page for bash](https://linux.die.net/man/1/bash) is explaining everything about bash, such as environment variables, or control-flow structures...
+The [man page for bash](https://linux.die.net/man/1/bash) explains everything about bash, such as environment variables, or control-flow structures...
 </div><div>
 
 Some nice information

@@ -2,21 +2,21 @@
 
 <div class="row row-cols-lg-2"><div>
 
-#### What's the sauce? 🗺️
+##### What's the sauce? 🗺️
 
 * Ask on Reddit
 * Try [saucenao.com](https://saucenao.com)
 
 <br>
 
-#### Look for animes/...
+##### Look for animes/...
 
 * [anime-planet](https://www.anime-planet.com/)
 * [novelupdates](https://www.novelupdates.com/)
 
 <br>
 
-#### Manga/Anime/... Lists
+##### Manga/Anime/... Lists
 
 * [myanimelist](https://myanimelist.net/) (anime/manga tracker)
 * [anilist](https://anilist.co/) (👻)
@@ -24,21 +24,21 @@
 
 <br>
 
-#### Raws
+##### Raws
 
 * `https://newtoki168.com/` (Manhwas)
 * `https://booktoki168.com/` (Novels)
 
 </div><div>
 
-#### Random
+##### Random
 
 * [anime-cli](https://github.com/pystardust/ani-cli) (👻)
 * [cubari.moe](https://cubari.moe/) (manga reader)
 
 <br>
 
-#### Websites
+##### Websites
 
 Clean aggregators
 

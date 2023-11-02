@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-Canva is a popular website to create multiple documents such as slides, resumes, simple text documents etc. ✏️
+Canva is a popular website for creating multiple documents such as slides, resumes, simple text documents, etc. ✏️
 
 This page mostly contains some hacky solutions in JavaScript to automate painful and tiring tasks.
 
@@ -23,7 +23,7 @@ This page mostly contains some hacky solutions in JavaScript to automate painful
 
 **About**
 
-This JavaScript code is selecting all images that you have on Canva.
+This JavaScript code selects all images that you have on Canva. 
 
 * Step 1: switch to list view (if needed)
 * Step 2: scroll to the bottom of the page
@@ -123,7 +123,7 @@ You must run the script on the page: `https://canva.com/folder/trash`.
 
 1. Fetching the first delete icon (see `popup`)
 
-2. It will open a popup to restore/delete permanently the associated element. The script waits for **0.8s** for the popup to open, then click on delete permanently (see `deleteNode`)
+2. It will open a popup to restore/delete permanently the associated element. The script waits for **0.8s** for the popup to open, then clicks on delete permanently (see `deleteNode`)
 
 3. The script will wait for **0.8s** for the big popup with the last confirmation to open. Then, it will check the checkbox saying that it may break your designs (see `checkbox`)
 
