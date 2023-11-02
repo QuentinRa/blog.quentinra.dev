@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-Linux follows a hierarchical file system, known as the Filesystem Hierarchy Standard (FHS). The parent of every folder is called the root and correspond to `/`.
+Linux follows a hierarchical file system, known as the Filesystem Hierarchy Standard (FHS). The parent of every folder is called the root and corresponds to `/`.
 
 A common Linux philosophy is to think "everything is a file."
 
@@ -30,7 +30,7 @@ Linux supports multiple filesystems. Ext4 is the default one for many Linux dist
 
 #### User  Home (<code>domicile</code>) 🏡
 
-Each user has its own folder, with their documents...
+Each user has their own folder, with their documents...
 
 * The home of `username` is commonly at `/home/username/`
 * See the environment variable `$HOME`.
@@ -41,7 +41,7 @@ Each user has its own folder, with their documents...
 
 #### Binaries ⚒️
 
-Folders used to store commands and binaries.
+Folders are used to store commands and binaries.
 
 * `/bin/`: system binaries
 * `/usr/bin/`: all users binaries
@@ -96,7 +96,7 @@ For instance, to run any command as `root` without a password:
 username ALL=(ALL) NOPASSWD:ALL 
 ```
 
-Here, `tar` can be run as `user2` without password:
+Here, `tar` can be run as `user2` without a password:
 
 ```ps
 username ALL=(user2) NOPASSWD:/bin/tar
@@ -111,9 +111,9 @@ username ALL=(user2) NOPASSWD:/bin/tar
 
 Partitions are a way to divide a physical storage device, such as a hard drive. They allow us to isolate and enforce individual restrictions.
 
-Partitions mounted at specific mount points within the FHS. The root partition is often mounted at `/`. We often have separate partitions for folders such as `/home`, `/tmp`, `/var` or `/mnt`.
+Partitions are mounted at specific mount points within the FHS. The root partition is often mounted at `/`. We often have separate partitions for folders such as `/home`, `/tmp`, `/var` or `/mnt`.
 
-The file `/etc/fstab` define the partitions to create at system startup. The `/proc/mounts` contains all mounted partitions right-now.
+The file `/etc/fstab` defines the partitions to create at system startup. The `/proc/mounts` contains all mounted partitions right now.
 
 ```shell!
 $ cat /etc/fstab
@@ -216,7 +216,7 @@ $ sudo gparted
 
 1. In the top-right corner, select a disk.
 2. Right-click on an existing partition or on the unallocated disk space.
-3. You can select an operations such as `new` to create a new partition.
+3. You can select operations such as `new` to create a new partition.
 </div><div>
 
 Each planned operation is pending until confirmation:

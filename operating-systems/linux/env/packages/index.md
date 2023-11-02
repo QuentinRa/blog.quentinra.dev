@@ -122,7 +122,7 @@ $ sudo dpkg -i xxx.deb
 
 <div class="row row-cols-lg-2"><div>
 
-**Usage** 🐚: snap packages are a modern way to share application. They contain all dependencies, and support automatic updates. Some cons are their larger size and sometimes there are performance issues.
+**Usage** 🐚: snap packages are a modern way to share applications. They contain all dependencies, and support automatic updates. Some cons are their larger size and sometimes there are performance issues.
 
 👉 Find [Snap packages here](https://snapcraft.io/).
 </div><div>
@@ -142,7 +142,7 @@ $ sudo snap install --classic xxx
 
 <div class="row row-cols-lg-2"><div>
 
-**Usage** 🐚: available on Debian-based distributions. Allow us to switch between multiple versions of a same program.
+**Usage** 🐚: available on Debian-based distributions. Allow us to switch between multiple versions of the same program.
 
 🛻 c++, cc, nc, php, java...
 
