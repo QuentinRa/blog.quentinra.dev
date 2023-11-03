@@ -15,6 +15,8 @@ A matrix is a two-dimensional table with columns, rows, and values. We use the n
 </div>
 
 ⚠️ The coefficients $i$ and $j$ are starting from 1.
+
+📚 The number of columns and lines is called the dimension.
 </div><div>
 
 A linear system is a set of equations that can be solved together. Matrices are often used to represent and solve linear systems of equations.
@@ -48,6 +50,98 @@ S = \begin{pmatrix}
 \end{split}
 \]
 </div>
+</div></div>
+
+<hr class="sep-both">
+
+## Basic Operations
+
+<div class="row row-cols-lg-2"><div>
+
+#### Addition between matrices
+
+To add two matrices, they must have the same dimensions. The addition is defined by the sum coefficient by coefficient.
+
+<div class="overflow-auto">
+\[
+\begin{split}        \begin{pmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6
+ \end{pmatrix}
+ +
+ \begin{pmatrix}
+0 & 1 & 2 \\
+1 & 2 & 3
+ \end{pmatrix} = \begin{pmatrix}
+1 & 3 & 5 \\
+5 & 7 & 9
+ \end{pmatrix}\end{split}
+\]
+</div>
+
+#### Subtraction
+
+The subtraction is not defined, but we can do $A + -1 * B$.
+
+#### Scalar multiplication
+
+Multiply each coefficient by the scalar.
+
+<div class="overflow-auto">
+\[
+\begin{split}-2 *
+\begin{pmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6
+\end{pmatrix}
+\ = \
+\begin{pmatrix}
+-2 & -4 & -6 \\
+-8 & -10 & -12
+\end{pmatrix}\end{split}
+\]
+</div>
+</div><div>
+
+#### Matrix multiplication
+
+The required is for both matrices to share a common row/column value `c` so that we have: $M1_{n1, \ {\color{red}c}} * M2_{\ {\color{red}c}, p2}$. The result is $M_{n1,p2}$.
+
+<div class="overflow-auto mb-2">
+\[
+\begin{split}\ \ \  \  \  \  \  \  \  \  \  \  \ \  \  \  \  \  \  \  \  \  \  \ \  \
+M1\ \begin{pmatrix}
+\color{yellow}{1} & 4 \\
+\color{yellow}{2} & 5  \\
+\color{yellow}{3} & 6
+\end{pmatrix}\end{split}
+\]
+\[
+\begin{split}M2
+\begin{pmatrix}
+\color{red}{9} & \color{red}{8} & \color{red}{7} \\
+6 & 5 & 4
+\end{pmatrix}
+\
+M
+\begin{pmatrix}
+\color{red}{9}*\color{yellow}{1}+\color{red}{8}*\color{yellow}{2}+\color{red}{7}*\color{yellow}{3}=46 & 9*4+8*5+7*6=118 \\
+6*1+5*2+4*3=28 & 6*4+5*5+4*6=73
+\end{pmatrix}\end{split}
+\]
+</div>
+
+For each coefficient, we are doing the following operation:
+
+<div>
+\[
+a_{\color{red}{u}\color{yellow}{v}} = \sum_{i=1}^n a_{{\color{red}u},i} * b_{i, \color{yellow}{v}}
+\]
+</div>
+
+#### Matrix division
+
+$A / B$ is not possible, but you can do $A * B^{-1}$ <small>(inverse of a matrix)</small>.
 </div></div>
 
 <hr class="sep-both">

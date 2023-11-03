@@ -1,16 +1,4 @@
-# Basic operations
-
-The basic operation you can use are
-
-* [Add a matrix with another](props/add.md)
-* $A - B$ is not possible, but you can do $A + -1 * B$
-* [Multiply a matrix by a real](props/mul-real.md)
-* [Multiply a matrix by a matrix](props/mul-matrix.md)
-* $A / B$ is not possible, but you can do $A * B^{-1}$
-
-<hr class="sr">
-
-## Gaussian elimination
+# Gaussian elimination
 
 We have a system. We are converting it to a matrix. Then, using Gauss, we get a matrix with an increasing sequence of 0 before the coefficients $p_i$. We can convert back the matrix to a system.
 
