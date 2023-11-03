@@ -18,20 +18,10 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 * [doodle](https://doodle.com/en/)
 * [framadate](https://framadate.org/abc/en/)
 
-##### Links
-
-* [peek.link](https://peek.link/index.html)
-
 ##### Slides
 
 * [slidesgo](https://slidesgo.com/) (templates)
 </div><div>
-
-##### QR Codes
-
-* [qrgenerator](https://qrgenerator.org/) (🚀, static)
-* [onelink.to](https://www.onelink.to/) (👻)
-
 ##### Video conferencing
 
 * [Zoom](https://zoom.us/)

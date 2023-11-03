@@ -135,7 +135,7 @@ For each coefficient, we are doing the following operation:
 
 <div>
 \[
-a_{\color{red}{u}\color{yellow}{v}} = \sum_{i=1}^n a_{{\color{red}u},i} * b_{i, \color{yellow}{v}}
+M_{\color{red}{u}\color{yellow}{v}} = \sum_{i=1}^c M1_{{\color{red}u},i} * M2_{i, \color{yellow}{v}}
 \]
 </div>
 
@@ -309,10 +309,23 @@ All values below the diagonal are 0, including the diagonal.
 
 <div class="row row-cols-lg-2"><div>
 
-Gauss can be used to solve a system represented as a matrix. The goal is to get a matrix with a strictly increasing number of zeros before the leading coefficients/pivots, e.g., the first non-null value.
+Gauss can be used to solve a system represented as a matrix. The goal is to get a matrix with a strictly increasing number of zeros before the leading coefficients/pivots $p_i$; which are the first non-null values.
 
 If the leading coefficients are all $1$, the result is called a reduced row echelon form. Otherwise, it's called the row echelon form.
 
+<div class="overflow-auto">
+\[
+\begin{split}
+\begin{pmatrix}a & b & ... & s_1 \\a & b & ... & s_2 \\  \cdots \end{pmatrix}
+\Leftrightarrow^{Gauss}
+\begin{pmatrix}p_1 & v_1 & ... & s_1 \\0 & p_2 & ... & s_2  \\  \cdots \end{pmatrix}
+\Leftrightarrow
+\begin{cases}
+p_1 * x = s_1 + v_1 * s_2 + \ldots \\
+p_2 * y = s_2 + \ldots
+\end{cases}\end{split}
+\]
+</div>
 </div><div>
 
 The operations you can use are to transform the matrix are:

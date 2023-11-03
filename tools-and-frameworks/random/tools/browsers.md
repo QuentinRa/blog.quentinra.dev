@@ -17,6 +17,9 @@
 ##### Shorten URLs
 
 * [shorturl.at](https://www.shorturl.at/)
+* [qrgenerator](https://qrgenerator.org/) (🚀, static QR Code)
+* [onelink.to](https://www.onelink.to/) (👻)
+* [peek.link](https://peek.link/index.html) (👻)
 </div><div>
 
 ##### Search engines

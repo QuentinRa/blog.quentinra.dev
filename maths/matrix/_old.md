@@ -1,25 +1,4 @@
-# Gaussian elimination
-
-We have a system. We are converting it to a matrix. Then, using Gauss, we get a matrix with an increasing sequence of 0 before the coefficients $p_i$. We can convert back the matrix to a system.
-
-<div class="overflow-auto">
-\[
-\begin{split}\begin{cases}ax + by + ... = s_1\\ax + by + ... = s_2\\  ...  \end{cases}
-\Leftrightarrow
-\begin{pmatrix}a & b & ... & | s_1 \\a & b & ... & | s_2 \\  \cdots \end{pmatrix}
-\Leftrightarrow^{Gauss}
-\begin{pmatrix}p_1 & v_1 & ... & | s_1 \\0 & p_2 & ... & | s_2  \\  \cdots \end{pmatrix}
-\Leftrightarrow
-\begin{cases}p_1 * x = s_1 + v_1 * s_2 + ... \\ p_2 * y = s_2 + ...  \end{cases}\end{split}
-\]
-</div>
-
-* [Solving a matrix with Gauss](gauss/index.md)
-* [Gauss - Example](gauss/example.md)
-
-<hr class="sl">
-
-## Matrix inversion
+# Matrix inversion
 
 The determinant of $A$, $det(A)=|A|$ is a value that is indicating if we can invert or not a matrix. A matrix is invertible (also written as $A \in Gl_n(\mathbb{R})$) if **the determinant is not null**, so $det(A) \neq 0$.
 
@@ -82,15 +61,3 @@ det(\lambda{I_n}-A_n) = 0
 
 * [Eigendecomposition - steps](eigen/steps.md)
 * [Eigendecomposition - example](eigen/example.md)
-
-<hr class="sl">
-
-## Sources
-
-* <https://en.wikipedia.org/wiki/Matrix_(mathematics)>
-* <https://en.wikipedia.org/wiki/List_of_named_matrices>
-* <https://en.wikipedia.org/wiki/Determinant>
-* <https://en.wikipedia.org/wiki/Eigendecomposition_of_a_matrix>
-* <https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors>
-* <https://en.wikipedia.org/wiki/Definite_matrix>
-* <https://en.wikipedia.org/wiki/Minor_(linear_algebra)>
