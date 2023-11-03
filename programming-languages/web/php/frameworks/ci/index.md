@@ -11,6 +11,7 @@ The best way to get started is to use [composer](/programming-languages/web/php/
 
 ```shell!
 $ composer create-project codeigniter4/appstarter my_project
+$ cd my_project && php spark serve # test that it works
 ```
 </div><div>
 
@@ -182,35 +183,42 @@ By default, with file routing, you'll have URLs such as `https://example.com/tot
 
 Code Igniter uses automatic routing. Every request is redirected to `public/index.php` using the `.htaccess` file.
 
-Then, using `app/Config/Routes.php`, Code Igniter will call a method from a [Controller](#controllers) according to the routes we defined.
+Then, using `app/Config/Routes.php` and `app/Config/Routing.php`, it will call a method from a [Controller](#controllers) according to the routes we defined.
+
+<br>
 
 #### Auto Controller Routing
 
 Before, code igniter was enabling auto-routing, meaning that `https://example.com/Controller/method` would call `method` from `Controller`. **This is insecure, don't use it**.
 
 ```php!
-$routes->setAutoRoute(true);
+// app/Config/Routing.php
+public bool $autoRoute = false;
 ```
+
+<br>
 
 #### Default routing
 
 You can edit these two to change the default controller/method used when there is none specified in the routes defined later.
 
 ```php!
-$routes->setDefaultController('Home');
-$routes->setDefaultMethod('index');
+// app/Config/Routing.php
+public string $defaultNamespace = 'App\Controllers';
+public string $defaultController = 'Home';
+public string $defaultMethod = 'index';
 ```
 </div><div>
 
 #### Specify routing patterns
 
-Routes are declared as follows:
+Routes are declared in `app/Config/Routes.php`:
 
 ```php!
 $routes->get('/', 'XXXController::index');
 ```
 
-➡️ `$base_url/` will load `XXXController#index()`.
+➡️ It means `$base_url/` will call `XXXController#index()`.
 
 You can pass arguments to your method:
 
@@ -234,7 +242,8 @@ $routes->get('/xxx/(:any)?', 'XXX::xxx/$1');
 If a route is not found, this controller/method will be called if set.
 
 ```php!
-$routes->set404Override('App\Controllers\XXX::yyy');
+// app/Config/Routing.php
+public ?string $override404 = 'App\Controllers\XXX::yyy';
 ```
 
 ⚠️ Don't forget to set the HTTP response code to 404 in `yyy`...
