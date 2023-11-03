@@ -28,6 +28,7 @@
 * Yahoo
 * Bing <small>(Microsoft)</small>
 * Yandex <small>(Russian)</small>
+* StartPage
 
 ##### Saving one page
 

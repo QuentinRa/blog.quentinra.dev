@@ -311,8 +311,6 @@ You have 4 algorithms explained here (out of 6)
 
 * [Dijkstra's algorithm](sp/dijkstra.md)
 * [Bellman–Ford algorithm](sp/bellman-ford.md)
-* [Floyd–Warshall algorithm](sp/floyd-warshall.md)
-* [Johnson's algorithm](sp/johnson.md)
 * [Distance and Diameter](sp/distance.md)
 
 <hr class="sr">

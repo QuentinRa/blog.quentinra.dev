@@ -60,10 +60,37 @@ Graphs can be simple/complex and directed/undirected.
 
 <div class="row row-cols-lg-2"><div>
 
+#### Dijkstra's Algorithm
+
+...
+
+#### Bellman–Ford Algorithm
+
 ...
 </div><div>
 
-...
+#### Floyd–Warshall Algorithm
+
+This algorithm works with positive and negative weights. It has a complexity of $O(m^2)$. It gives the shortest path starting from any vertex to any vertex. First, create the incidence matrix:
+
+* put the weight if you have one
+* if vertex = self, then set $0$
+* otherwise set $+\infty$
+
+Then, $\forall{k, i, j}$ to $n$, apply this instruction: if the distance i,j $d(i,j)$ is greater than $z = d(i,k) + d(k,j)$, then $d(i,j) = z$.
+
+<br>
+
+#### Johnson's Algorithm
+
+Johnson algorithm makes use of both Bellman-Ford and Dijkstra's Algorithms. The shortest distance from $q$ to $X$ will be in $h[X]$.
+
+* we are adding a vertex $q$ to our graph
+* we are connecting this vertex to all vertices <small>(weight=0)</small>
+* we are evaluating Bellman-Ford <small>(starting from $q$)</small>
+* we got $n$ distances, stored in an array $h$
+
+We then revaluate each weight: $w(X,Y) = w(X,Y) + h[X] - h[Y]$. Once the new graph is complete, we use Dijkstra's algorithm on it.
 </div></div>
 
 <hr class="sep-both">
