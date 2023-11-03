@@ -93,6 +93,9 @@ Stuff that I found, but never read/used yet.
 
 * [telegram.org](https://telegram.org/)
 * [joinmastodon.org](https://joinmastodon.org/)
+* [labnol.org](https://www.labnol.org/internet/direct-links-for-google-drive/28356/) (URL Tricks for Google Drive)
+* [optout](https://optout.aboutads.info/?c=2&lang=EN)
+* [youronlinechoices](https://www.youronlinechoices.com/uk/)
 </div><div>
 
 * [degooglisons-internet](https://degooglisons-internet.org/en/alternatives/) (old)

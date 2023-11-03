@@ -17,6 +17,9 @@
 
 ##### Screenshots
 
+* <kbd>CTRL+SHIFT+S</kbd> to take a screenshot inside a browser
+* <kbd>CTRL+SHIFT+5</kbd> to take a screenshot inside a Opera browser
+* <kbd>Win+SHIFT+S</kbd> to take a screenshot on Windows 10+
 * [flameshot](https://github.com/flameshot-org/flameshot)
 * [LightShot](https://app.prntscr.com/en/index.html)
 

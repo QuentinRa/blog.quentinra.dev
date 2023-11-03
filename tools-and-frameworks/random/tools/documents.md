@@ -14,6 +14,14 @@
 * [InBrowser](https://inbrowser.github.io/) <small>(tools running locally in your browser)</small>
 * [ilovepdf](https://www.ilovepdf.com/) <small>(a lot of tools, great)</small>
 * [png2pdf](https://www.png2pdf.com/) <small>(not many tools, but the best)</small>
+
+##### Scan a document
+
+* Install Windows Scanner for the Windows Store
+
+##### Sync files between drives
+
+* [freefilesync](https://freefilesync.org/download.php)
 </div><div>
 
 ##### Share Files
@@ -28,4 +36,8 @@
 * [Google Drive](https://www.google.com/drive/)
 * [filerun](https://filerun.com/) (👻)
 * [nextcloud](https://nextcloud.com/) (👻)
+
+##### Windows4Free/Office4Free
+
+* See [msguides.com](https://msguides.com/)
 </div></div>

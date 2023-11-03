@@ -124,11 +124,11 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 * libgen
 </div><div>
 
-##### Translators
-
-* [microsofttranslator](https://www.microsofttranslator.com/bv.aspx?from=&to=en&a=a)
-
 ##### Stats
 
 * [volt.fm](https://volt.fm/)
+
+##### Watch videos together
+
+* [w2g.tv](https://w2g.tv)
 </div></div>
