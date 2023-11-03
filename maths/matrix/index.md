@@ -32,13 +32,13 @@ x_1 \ \ + \ 2x_2 \ \ \ \ \ \ \ \ \ \ = 0
 \]
 </div>
 
-We often create a matrix $A$ for the equations, a vector $b$ for the right-hand side. And the matrix $S$, is made by concatenating the two.
+We create a matrix $A$ for the variables coefficients, a vector $b$ for the right-hand side. The matrix $S$ is made by concatenating the two.
 
 <div>
 \[
 A = \begin{split}\begin{pmatrix}
-1 & -1 & 2 & 3 \\
-1 & 2 & 0 & 0
+1 & -1 & 2 \\
+1 & 2 & 0
 \end{pmatrix}
 \quad
 b = \begin{pmatrix}3 \\ 0\end{pmatrix}
@@ -302,6 +302,32 @@ All values below the diagonal are 0, including the diagonal.
 </tr>
 </tbody>
 </table>
+
+<hr class="sep-both">
+
+## Gaussian elimination
+
+<div class="row row-cols-lg-2"><div>
+
+Gauss can be used to solve a system represented as a matrix. The goal is to get a matrix with a strictly increasing number of zeros before the leading coefficients/pivots, e.g., the first non-null value.
+
+If the leading coefficients are all $1$, the result is called a reduced row echelon form. Otherwise, it's called the row echelon form.
+
+</div><div>
+
+The operations you can use are to transform the matrix are:
+
+* Swapping two rows: $L_i \iff L_j$
+* Adding a row: $L_i = L_i + L_j$
+* Adding a row, multiplied by $c$: $L_i \leftarrow L_i + cL_j$
+* Subtracting a row: $L_i \leftarrow L_i + -1 * L_j$
+* Dividing a row by $c$: $L_i \leftarrow L_i + \frac{1}{c} * L_j$
+* Multiply a row by $c$: $L_i \leftarrow c * L_i$
+
+📚 All other operations are examples from $L_i \leftarrow a * L_i + b * L_j$.
+
+➡️ See also: [Gauss Example](_examples/gauss.md).
+</div></div>
 
 <hr class="sep-both">
 

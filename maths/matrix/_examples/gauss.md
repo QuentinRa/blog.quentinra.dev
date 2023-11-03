@@ -2,7 +2,7 @@
 
 [Go back](../index.md#gaussian-elimination)
 
-We will solve by ourselves the following system, using the GAUSS method. If you're wondering how you can do that in **R**, this was [explained on this page](../linear-system/example-r.md).
+We will solve by ourselves the following system, using the GAUSS method.
 
 <div class="overflow-auto">
 \[
@@ -92,7 +92,7 @@ x_1 - 2x_2 + 3x_3 + 17x_4 = 4\\
 \]
 </blockquote>
 
-But let's make the reduced row echelon form!
+But let's continue until we get the reduced row echelon form!
 
 <hr class="sl">
 
