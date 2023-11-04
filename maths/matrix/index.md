@@ -380,27 +380,49 @@ det(A) = ad-bc
 
 ➡️ The formulas above are also working for upper/lower triangular matrices. Simply consider both as the same as $D_n$.
 
-➡️ You can use [Gauss](#gaussian-elimination) to get a triangular matrix.
+➡️ You can use [Gauss](#gaussian-elimination) to get a triangular matrix. ⚠️ If you swapped lines $n$ times, you need to multiply the determinant by $(-1)^n$.
+
+➡️ You can also use [cofactors](#cofactor-matrix) to compute the determinant.
+
+➡️ See also: [Determinant Example](_examples/det.md).
 </div><div>
 
-➡️ See also: [Determinant Example](_examples/det.md) and [Inverse Example](_examples/inverse.md).
-</div></div>
+To calculate the inverse, we can use:
 
-<hr class="sep-both">
+* **GAUSS** 🏔️: we work on two matrices $A_n$ and $I_n$. The goal is to transform $A_n$ to an identity matrix using Gauss. By repeating all operations we did on $A_n$ to $I_n$, we get $A_n^{-1}$.
 
-<div class="row row-cols-lg-2"><div>
+* **Cofactor Matrix** 🐔: we create a matrices of cofactors. We have more calculations, but each calculation is relatively simple.
 
-# GAUSS elimination
+➡️ See also: [Inverse Example](_examples/inverse.md).
 
-To find the determinant, you need to reduce a matrix to an upper diagonal matrix, then use the property "$det(A)$=product of the values on the diagonal" to find the determinant.
+#### Cofactor Matrix
 
-If you swapped lines, then multiply the result by
+We are calling **minor** of a matrix $A$, the matrix $M_{i,p}$ created by removing the row $i$ and the column $p$ of $A$.
 
-* $det(A) = det(A) * (-1)^s$
-* with $s$ the number of swaps
-</div><div>
+We are calling **cofactor** $C_{i,p} = (-1)^{i+p} * det(M_{i,p})$.
 
-...
+The cofactor matrix of $A$ is the matrix of the cofactors.
+
+<div class="overflow-auto">
+\[
+\begin{split}
+C = 
+\begin{bmatrix}
+C_{11}&C_{12}&\cdots &C_{1n}\\
+C_{21}&C_{22}&\cdots &C_{2n}\\
+\vdots &\vdots &\ddots &\vdots \\
+C_{n1}&C_{n2}&\cdots &C_{nn}
+\end{bmatrix}\quad
+A^{-1} =
+\frac{1}{det(A)} C^T\\
+det(A) = \sum_{i=1}^n a_{i,p} * C_{i,p}
+\end{split}
+\]
+</div>
+
+What is convenient is that the minor is often a $M_2$ matrix so we have the formula $ad-bc$ to calculate the determinant.
+
+📚 We usually pick the column $p$ with the highest coefficients.
 </div></div>
 
 <hr class="sep-both">

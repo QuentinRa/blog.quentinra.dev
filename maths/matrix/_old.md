@@ -1,17 +1,4 @@
-# Matrix inversion
-
-* You can calculate the determinant
-  * using the [cofactor expansion](inversion/minor.md)
-  * using [GAUSS elimination](inversion/gauss-det.md)
-
-Then, once you have checked the determinant, you can invert a matrix using
-
-* using [GAUSS elimination](inversion/gauss-inv.md)
-* using [the cofactor matrix "comatrix"](inversion/comatrix.md)
-
-<hr class="sr">
-
-## Definiteness of a matrix
+# Definiteness of a matrix
 
 Many times, you will be asked to check the definiteness of a matrix. You can either find the eigenvalues ($\lambda$, as you can learn in the next section), or check the leading minors ($\Delta$, that you will learn in this section).
 
