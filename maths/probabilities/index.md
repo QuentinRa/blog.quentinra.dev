@@ -228,6 +228,18 @@ random variables.
 * $cov(A+B,C) = cov(A,C) + cov(B,C)$
 * if $X \perp Y$ then $cov(XY) = 0$
 * $\mathbb{P}(X, Y) = \frac{cov(X,Y)}{\sqrt{V(X)*V(Y)}}$
+
+#### Independence
+
+Random variables are independent ($\perp$ perp) if the product of the probabilities is equals to the probability of the events  $X_1, ..., X_n$.
+
+<div>
+\[
+\mathbb{P}(X_1 = x_1\ \cap\ \ldots\ \cap\ X_n = x_n) = \prod_{i=1}^n \mathbb{P}(X_i = x_i)
+\]
+</div>
+
+➡️ Alternative way: checking $\mathbb{P}(A|B) = \mathbb{P}(A)$ or $\mathbb{P}(B|A) = \mathbb{P}(B)$.
 </div></div>
 
 <hr class="sep-both">
