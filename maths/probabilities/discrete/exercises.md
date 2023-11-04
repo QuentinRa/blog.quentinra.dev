@@ -1,42 +1,4 @@
-# Exercises
-
-[Go back](..)
-
-<hr class="sl">
-
-**Exercise 2 (Conditional probability)**
-
-We got 3 bags, B1, B2, and B3. We got two white marbles (=`billes`) and 3 red ones. Inside B2, we got 2 green marbles and 4 white ones. Inside B3, we got 5 black marbles and 2 red ones.
-
-We are picking a marble in B1, and add it into B2. Then, we are picking one B2 to B3. And finally, we are picking one into B3. **What's the probability that the 3 marbles we picked have different colors**?
-
-<blockquote class="spoiler">
-
-1. random variables
-    * $W_i$ = "white marble picked inside B_i"
-    * We are also considering $R_i$ Red, $G_i$ Green, $B_i$ Black
-2. Our goal
-    * A = "the 3 marbles are different"
-    * There are 4 cases: $WGB$, $WGR$, $RGB$, $RWB$
-    * $\mathbb{P}(A)=P(B_1V_2N_3)+P(B_1V_2R_3)+P(R_1V_2N_3)+P(R_1B_2N_3)$
-3. Solving
-    * $\mathbb{P}(W_1G_2B_3)=\frac{2\*2\*5}{5\*7\*8}=20/280$
-    * $\mathbb{P}(W_1G_2R_3)=\frac{2\*2\*2}{5\*7\*8}=8/280$
-    * $\mathbb{P}(R_1G_2B_3)=\frac{3\*2\*5}{5\*7\*8}=30/280$
-    * $\mathbb{P}(R_1B_2B_3)=\frac{3\*4\*5}{5\*7\*8}=60/280$
-    * $\mathbb{P}(A)=20/280 + 8/280 + 30/280 + 60/280 = 118/280$
-4. Explanation
-    * how did we got $\mathbb{P}(W_1G_2N_3)=\frac{2\*2\*5}{5\*7\*8}=20/280$?
-    * we got 5 marbles, 2 are white: $\mathbb{P}(W_1)=2/5$
-    * we got 6(+1) marbles, 2 are green: $\mathbb{P}(G_2|W_1)=2/7$
-    * we got 7(+1) marbles, 5 are black: $\mathbb{P}(B_3|W_1 \cap G_2)=5/8$
-    * we know: $\mathbb{P}(W_1G_2B_3)=\mathbb{P}(W_1)\*\mathbb{P}(G_2|W_1)\*\mathbb{P}(B_3|W_1 \cap G_2)$
-    * so we have $\mathbb{P}(B_1V_2N_3)=\frac{2\*2\*5}{5\*7\*8}$
-</blockquote>
-
-<hr class="sr">
-
-**Exercise 3 (Bayes' theorem)**
+# Exercise 3 (Bayes' theorem)
 
 We are using a test to check if the patient got the disease or not. If got the decease then the test is positive 96% of the time. The test is a false-positive in 2% of the cases. $0.05%$ of the patients got the decease.
 
