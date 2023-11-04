@@ -311,18 +311,18 @@ All values below the diagonal are 0, including the diagonal.
 
 Gauss can be used to solve a system represented as a matrix. The goal is to get a matrix with a strictly increasing number of zeros before the leading coefficients/pivots $p_i$; which are the first non-null values.
 
-If the leading coefficients are all $1$, the result is called a reduced row echelon form. Otherwise, it's called the row echelon form.
+The result of Gauss is called the row echelon form. It all leading coefficients are $1$ and there is only $0$ in their columns, the result is called a reduced row echelon form.
 
 <div class="overflow-auto">
 \[
 \begin{split}
-\begin{pmatrix}a & b & ... & s_1 \\a & b & ... & s_2 \\  \cdots \end{pmatrix}
+\begin{pmatrix}a_1 & b_1 & ... & s_1 \\a_2 & b_2 & ... & s_2 \\  \cdots \end{pmatrix}
 \Leftrightarrow^{Gauss}
-\begin{pmatrix}p_1 & v_1 & ... & s_1 \\0 & p_2 & ... & s_2  \\  \cdots \end{pmatrix}
+\begin{pmatrix}p_1 & v_1 & ... & s_1' \\0 & p_2 & ... & s_2'  \\  \cdots \end{pmatrix}
 \Leftrightarrow
 \begin{cases}
-p_1 * x = s_1 + v_1 * s_2 + \ldots \\
-p_2 * y = s_2 + \ldots
+p_1 * x = s_1' + v_1 * s_2' + \ldots \\
+p_2 * y = s_2' + \ldots
 \end{cases}\end{split}
 \]
 </div>
