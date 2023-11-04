@@ -1,4 +1,8 @@
-# Leading minors of a matrix (example)
+# Definiteness Examples
+
+<hr class="sep-both">
+
+## Leading minors Example
 
 [Go back](../index.md#definiteness-of-a-matrix)
 
@@ -14,13 +18,13 @@ A = \begin{pmatrix}
 \]
 </p>
 
-The **leading minors** of **A** are
+The **leading minors** of **A** are:
 
 * $det(\Delta_1) = 4$
 * $det(\Delta_2) = 4 * 10 - 2 * 2 = 36$
 * $det(\Delta_3)$
-  * $= 4 * (10 * 21 - 7 * 7) - 2 * (2* 21 -2 * 7) + 2 * ( 2 * 7 - 2 * 10)$
-  * $= 4 * 161 - 68 = 3 * 161 + 93$
-  * $= (3*16)*10 + 100 - 7 + 3 = 576$
+    * $= 4 * (10 * 21 - 7 * 7) - 2 * (2* 21 -2 * 7) + 2 * ( 2 * 7 - 2 * 10)$
+    * $= 4 * 161 - 68 = 3 * 161 + 93$
+    * $= (3*16)*10 + 100 - 7 + 3 = 576$
 
 Every leading minor is greater than $0$, so the matrix is **positive definite**.

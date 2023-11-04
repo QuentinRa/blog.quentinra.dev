@@ -439,16 +439,38 @@ Many calculations will require a specific "definiteness" for the matrix. We can 
 | **negative semi-definite**| $\forall \text{k aside $k=e$},\quad \lambda_k \lt 0,\quad \lambda_{e} = 0$ | $\forall k < n,\quad (-1)^k\Delta_{k}>0 \text{. and } \Delta_{n}=0$ |
 | **indefinite**| $\exists k\exists n,\quad \lambda_k \gt 0,\quad \lambda_n \lt 0$ | $\Delta_{n} < 0$, and the dimension n is pairwise |
 
+➡️ See also: [Definiteness Examples](_examples/definiteness.md)
+
 <hr class="sep-both">
 
 ## Leading Minors
 
 <div class="row row-cols-lg-2"><div>
 
-...
+From a square matrix $A_n$, we can create a smaller matrix $A_i$ with $i$ the number of rows==columns we kept.
+
+The leading minors or principal minors formula is: $\Delta_{i}=det(A_{i})$.
+
+<div>
+\[
+\begin{split}A= \begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & \cdots & a_{nn}
+\end{pmatrix}\end{split}
+\]
+</div>
 </div><div>
 
-...
+The leading minors would be:
+
+<ul>
+<li>\(\Delta_{1}=a_{11}\)</li>
+<li>\(\Delta_{2}=det (A_{2})= \begin{pmatrix}a_{11} & a_{12} \\ a_{21} & a_{22}\end{pmatrix} = a_{11} * a_{22} - a_{12} * a_{21}\)</li>
+<li>...</li>
+<li>\(\Delta_{n}=det(A)\)</li>
+</ul>
 </div></div>
 
 <hr class="sep-both">

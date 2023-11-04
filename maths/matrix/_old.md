@@ -1,13 +1,4 @@
-# Definiteness of a matrix
-
-Many times, you will be asked to check the definiteness of a matrix. You can either find the eigenvalues ($\lambda$, as you can learn in the next section), or check the leading minors ($\Delta$, that you will learn in this section).
-
-* [Leading minors of a matrix](inversion/minor-lead.md)
-* [Leading minors of a matrix - example](inversion/minor-ex.md)
-
-<hr class="sl">
-
-## Eigendecomposition of a matrix
+# Eigendecomposition of a matrix
 
 This is called `Réduction d’endomorphisme` in French. The goal is to calculate $A^n$ or $exp(A)$. Our goal is to calculate some matrix so that we have $A^n = P * D^n * P^{-1}$
 
