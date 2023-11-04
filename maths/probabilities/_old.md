@@ -1,23 +1,4 @@
-# Probabilities
-
-Probabilities are a way to evaluate how much likely something is true, or likely to happens. For instance, if you're playing dice, you may want to know how much likely it is that you got 3 times "6" in a row.
-
-* $\omega$ (small-omega) is an outcome possible <small>(such as 1 for a dice)</small>
-* $\Omega$ (big-omega) is a set of all possible outcomes, also called sample/probability space <small>(such as {1,2,3,4,5,6} for a dice or {$\ x \mid x \in [1,6]\ $})</small>.
-* $A$ is an event included in <span>$\Omega$. <small>It's almost everytime defined by a sentence like "the result is pair" giving a set like {2,4,6} for a dice.</small>
-* $\overline{A}$ or $A^c$ means the opposite event of A, called complementary event and read as "not A".
-* $\emptyset$ (empty set) means an impossible event.
-* $Card(E) \Leftrightarrow |E| \Leftrightarrow \\#E$ is the cardinal of a set E, meaning the number of elements.
-
-You may see/use these too
-
-* an event of one element (singleton) is called an elementary event
-* events that's can't happen simultaneously are called incompatible/disjoints/mutually exclusive events ([wiki](https://fr.wikipedia.org/wiki/%C3%89v%C3%A9nements_incompatibles))
-* an event that will certainly happen is called a certain event.
-
-<hr class="sl">
-
-## Vocabulary and properties
+# Vocabulary and properties
 
 $\mathbb{P}(A)$ means the probability of A happening and that's a value in $[0,1]$
 
