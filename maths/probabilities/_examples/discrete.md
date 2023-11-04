@@ -131,21 +131,23 @@ We are using a test to check if the patient got the disease or not. On a sick pa
 
 <div class="row row-cols-lg-2"><div>
 
-We got 2 white marbles and 3 black ones in a box. 4 players (A, B, C, and D) taking in this order a marble. The first one taking a white marble win $10.
+We got two white marbles and three black ones in a box. Four players A, B, C, and D are picking one marble one by one. The first one that picks a white marble wins $10.
 
 ##### What's the expected gain for each person?
 
-* $\mathbb{W}_A$ = "The player A got a white marble"
-* ...
+* $\mathbb{W}_A$ = "The player A picked a white marble"
+* $\mathbb{W}_B$ = "The player B picked a white marble"
+* $\mathbb{W}_C$ = "The player C picked a white marble"
+* $\mathbb{W}_D$ = "The player D picked a white marble"
 
-So we got
+We can calculate the probabilities for each event:
 
 * $\mathbb{P}(W_A) = 2/5$
 * $\mathbb{P}(W_B) = \mathbb{P}(W_B|\overline{W_A}) = 2/4 * 3/5 = 6/20 = 3/10$
 * $\mathbb{P}(W_C) = \mathbb{P}(W_C|\overline{W_A \cap W_B}) = 2/3 * 3/5 * 2/4 = 12/60 = 1/5$
 * $\mathbb{P}(W_D) = \mathbb{P}(W_D|\overline{W_A \cap W_B \cap W_C}) = 1 * 3/5 * 2/4 * 1/3 = 1/10$
 
-And
+And the expected value for each event:
 
 * $\mathbb{E}[W_A] = 2/5 * 10 = 4$
 * $\mathbb{E}[W_B] = 3/10 * 10 = 3$
@@ -156,48 +158,19 @@ And
 
 <hr class="sep-both">
 
-## XXX
+## Cumulative Distribution Function Example
 
 <div class="row row-cols-lg-2"><div>
 
 
 We are working with the function $f(x) = \frac{e^{-1}}{x!},\quad x \in \mathbb{Z}^*$.
 
-1. $P(X=2)$
+##### Calculate $P(X=2)$
 
-<blockquote class="spoiler">
-The answer is $\mathbb{P}(X=2) = \frac{e^{-1}}{2!}$.
-</blockquote>
+$\mathbb{P}(X=2) = \frac{e^{-1}}{2!}$.
 
-2. $P(X < 2)$
+##### Calculate $P(X < 2)$
 
-<blockquote class="spoiler">
-The answer is $\mathbb{P}(X < 2) = P(X=0) + P(X=1) = \frac{e^{-1}}{0!} + \frac{e^{-1}}{1!} = e^{-1} + e^{-1} = 2 e^{-1}$.
-</blockquote>
-
-3. Demonstrate that $e^{-1}$ is the constant making $\frac{c}{x!}$ a mass function?
-
-<blockquote class="spoiler">
-<div>
-\[
-\begin{split}
-\text{mass function} := \sum_{k=0}^{+\infty} f(k) = 1 \\
-\Leftrightarrow
-\sum_{k=0}^{+\infty} \frac{c}{k!} = 1
-\Leftrightarrow
-c * \sum_{k=0}^{+\infty} \frac{1}{k!} = 1
-\Leftrightarrow^{because\ 1^k = 1}
-c * \sum_{k=0}^{+\infty} \frac{1^k}{k!} = 1\\
-\Leftrightarrow^\text{exponential series}
-c * e = 1 \Leftrightarrow  c = \frac{1}{e} \Leftrightarrow c = e^{-1}\end{split}
-\]
-</div>
-
-We also need to check that the values are $\ge 0$ so that $\frac{e^{-1}}{x!} \ge 0$.
-
-Since $x! \ge 0$ (because x \in R^*) and $e^{-1} \ge 0$ then the function is a mass function.
-</blockquote>
+$\mathbb{P}(X < 2) = P(X=0) + P(X=1) = \frac{e^{-1}}{0!} + \frac{e^{-1}}{1!} = e^{-1} + e^{-1} = 2 e^{-1}$
 </div><div>
-
-...
 </div></div>

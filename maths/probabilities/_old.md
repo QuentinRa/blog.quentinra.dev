@@ -1,12 +1,5 @@
 # Vocabulary and properties
 
-A few others formulas that may be handy:
-
-* $\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cap B)$
-* $A \subset B \to \mathbb{P}(A) \le \mathbb{P}(B)$ <small>(A included in B)</small>
-* $A \subset B \to \mathbb{P}(A \cap B) = \mathbb{P}(A)$
-* $A \subset B \to \mathbb{P}(A \cup B) = \mathbb{P}(B)$
-
 We call **distribution function**, a strictly positive function where the sum of all values (=probabilities) is 1. It's a function associating each value of $\Omega$ to their probability of happening ($f(x) \to \Omega$). When $x$ is taking finite values, we are using discrete probability otherwise, we are using continuous probabilities.
 
 We call **support of X** $\bigtriangleup_X$ or $X(\Omega)$ the domain of the distribution function of X. The probability outside the support is 0. You can use that to make a sum on the support.
@@ -106,72 +99,4 @@ Continuous distributions
 * [Continuous Uniform distribution](dist/uniform-c.md)
 * [Exponential distribution](dist/exp.md)
 
-<hr class="sr">
-
-## Convergence
-
-We are considering n random variables Y and X a variable giving us with a function $f$
-
-@
-X_n = f(Y_1,\ \ldots,\ Y_n)
-@
-
-We 4 notions of convergence
-
-* [Almost sure convergence](limit/as.md)
-* [Convergence in probability](limit/proba.md)
-* [Convergence in distribution](limit/dist.md)
-* [Convergence in (quadratic/square) mean](limit/mean.md)
-
-And according to the Central limit theorem/`Théorème de la limite centrale`, a sequence of random variables when $n \to +\infty$ converges to a normal distribution.
-
-<hr class="sl">
-
-## CheatSheet
-
-Here are some sheets that I looked up for you. I didn't read them yet.
-
-* [probability_cheatsheet.pdf](https://www.sas.upenn.edu/~astocker/lab/teaching-files/PSYC739-2016/probability_cheatsheet.pdf)
-* [probability-and-statistics](https://github.com/shervinea/stanford-cme-106-probability-and-statistics)
-* [cheatsheet-probability](https://stanford.edu/~shervine/teaching/cme-106/cheatsheet-probability)
-
 And here is a summary of all [distributions](dist/summary.md).
-
-<hr class="sr">
-
-## Sources
-
-This is a list of all Wikipedia pages that you may want to check
-
-* <https://en.wikipedia.org/wiki/Expected_value>
-* <https://en.wikipedia.org/wiki/Variance>
-* <https://en.wikipedia.org/wiki/Chebyshev%27s_inequality>
-* <https://en.wikipedia.org/wiki/Probability_mass_function>
-* <https://en.wikipedia.org/wiki/Cumulative_distribution_function>
-* <https://en.wikipedia.org/wiki/Quantile_function>
-* <https://en.wikipedia.org/wiki/Moment-generating_function>
-* <https://en.wikipedia.org/wiki/Indicator_function>
-* <https://en.wikipedia.org/wiki/Chebyshev%27s_inequality>
-* <https://en.wikipedia.org/wiki/Conditional_expectation>
-
-Distributions
-
-* <https://en.wikipedia.org/wiki/Marginal_distribution>
-* <https://en.wikipedia.org/wiki/Joint_probability_distribution>
-* <https://en.wikipedia.org/wiki/Bernoulli_distribution>
-* <https://en.wikipedia.org/wiki/Binomial_distribution>
-* <https://en.wikipedia.org/wiki/Discrete_uniform_distribution>
-* <https://en.wikipedia.org/wiki/Geometric_distribution>
-* <https://en.wikipedia.org/wiki/Hypergeometric_distribution>
-* <https://en.wikipedia.org/wiki/Poisson_distribution>
-* <https://en.wikipedia.org/wiki/Normal_distribution>
-* <https://en.wikipedia.org/wiki/Continuous_uniform_distribution>
-* <https://en.wikipedia.org/wiki/Exponential_distribution>
-
-Convergence
-
-* <https://en.wikipedia.org/wiki/Convergence_of_random_variables>
-* <https://en.wikipedia.org/wiki/Law_of_large_numbers>
-* <https://en.wikipedia.org/wiki/Central_limit_theorem>
-
-[other references](refs.md)
