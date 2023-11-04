@@ -1,7 +1,5 @@
 # Gauss Example
 
-[Go back](../index.md#gaussian-elimination)
-
 We will solve the following system using the GAUSS method.
 
 <div class="overflow-auto">

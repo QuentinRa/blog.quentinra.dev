@@ -1,7 +1,5 @@
 # Eigendecomposition example
 
-[Go back](../index.md#eigendecomposition-of-a-matrix)
-
 Let's look for the eigendecomposition of $A$
 
 <div class="overflow-auto">

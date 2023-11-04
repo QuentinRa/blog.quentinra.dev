@@ -429,7 +429,7 @@ What is convenient is that the minor is often a $M_2$ matrix so we have the form
 
 ## Definiteness of a matrix
 
-Many calculations will require a specific "definiteness" for the matrix. We can get this property using either [eigenvalues](#eigen-values) or [leading minors](#leading-minors).
+Many calculations will require a specific "definiteness" for the matrix. We can get this property using either [eigenvalues](#eigendecomposition-of-a-matrix) or [leading minors](#leading-minors).
 
 |          Name           | **eigenvalues** | **minors** |
 |-------------------------|-----------------|-----------------|
@@ -475,24 +475,49 @@ The leading minors would be:
 
 <hr class="sep-both">
 
-## Eigen values
+## Eigendecomposition of a matrix
 
 <div class="row row-cols-lg-2"><div>
 
-...
+The eigendecomposition is a process to generate an expression of matrices allowing us to calculate $A^n$ or $exp(A)$.
+
+<div>
+\[
+\begin{split}
+A^n = P * D^n * P^{-1}
+\end{split}
+\]
+</div>
+
+* $D$ is a diagonal matrix, with the eigenvalues of $A$ on the diagonal
+* $P$ is an invertible matrix that we must find
 </div><div>
 
+#### Eigendecomposition steps
+
+1. Calculate $\lambda{I_n}-A_n$
+2. Solve $det(\lambda{I_n}-A_n) = 0$ to get the values for all $\lambda$ <small>(no order)</small>.
+3. You now have $D$.
+
+For each eigenvalue $\lambda_i$, compute an eigenvector. It's the result of solving $A - \lambda_n * Id_n = 0$ or the following system:
+
+<div>
+\[
+\begin{split}\left \{
+\begin{array}{r c l}
+(a_1 - \lambda_n) x + b_1 y + ... = 0 \\
+a_2 x + (b_2 - \lambda_n) y + ... = 0 \\
 ...
-</div></div>
+\end{array}
+\right .\end{split}
+\]
+</div>
 
-<hr class="sep-both">
+By concatenating all eigenvectors, we got $P$. Compute  $P^{-1}$, and check that $P\*D^1\*P^{-1}=A$.
 
-## 👻 To-do 👻
+➡️ $\sigma(A)$ is called spectrum. It's a set of all eigenvalues.
 
-Stuff that I found, but never read/used yet.
+➡️ $\rho$ is called Rho. It's the highest eigenvalue.
 
-<div class="row row-cols-lg-2"><div>
-
-* [old](_old.md)
-</div><div>
+➡️ See also: [Eigendecomposition Example](_examples/eigen.md)
 </div></div>
