@@ -106,6 +106,8 @@ We are defining $\mathbb{P}(X=k)$ the probability that a discrete random variabl
 * The sum of all probabilities is 1
 * $\forall{x},\ f(x) \ge 0$
 
+➡️ See also: [Discrete Probability Examples](_examples/discrete.md).
+
 #### Formulas
 
 Using combinatorics to get the cardinal:
@@ -240,6 +242,18 @@ Random variables are independent ($\perp$ perp) if the product of the probabilit
 </div>
 
 ➡️ Alternative way: checking $\mathbb{P}(A|B) = \mathbb{P}(A)$ or $\mathbb{P}(B|A) = \mathbb{P}(B)$.
+
+#### Cumulative distribution function
+
+The cumulative distribution function (CDF) $F_X(k)$ is the primitive of the mass function, meaning that deriving the CDF will give you the mass function. $F_X(k)$ is the probability of $\mathbb{P}(X \le k)$.
+
+<div class="mb-3">
+\[
+\mathbb{P}(X \le k) = \sum_{i=0}^{k} \mathbb{P}(X=i)
+\]
+</div>
+
+For instance, $P(X\le3) = P(X=0) + P(X=1) + P(X=2) + P(X=3)$.
 </div></div>
 
 <hr class="sep-both">

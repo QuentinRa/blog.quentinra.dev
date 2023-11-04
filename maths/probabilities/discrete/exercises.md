@@ -2,35 +2,6 @@
 
 [Go back](..)
 
-This is a batch of exercises on discrete probabilities (probabilities, counting, conditional probability, Bayes's formula, expected value, variance).
-
-<hr class="sl">
-
-**Exercise 1 (Counting / Conditional probability)**
-
-Two players X and Y are drawing five cards in a 32 cards deck.
-
-What's the probability of X having at least one ace?
-
-<blockquote class="spoiler">
-
-We are introducing A = "at least one ace" but we would have a hard time evaluating this so we will use $\mathbb{P}(A) = 1 - \overline{A}$ (with $\overline{A}$=0 ace) and
-@
-\mathbb{P}(\overline{A}) := \frac{|\overline{A}|}{|\Omega|} = \frac{C_{28}^5}{C_{32}^5}
-@
-We could explain that by the fact that $|\overline{A}|$ is the same as picking 5 cards in a deck after we removed the 4 aces (32-4=28).
-</blockquote>
-
-Now Y got one ace. What's the probability of X having at least one?
-
-<blockquote class="spoiler">
-
-Now since Y took 5 cards including 1 ace, we are simply removing them from our deck and doing the same thing.
-@
-\mathbb{P}(\overline{A}) = \frac{C_{25}^5}{C_{28}^5}
-@
-</blockquote>
-
 <hr class="sl">
 
 **Exercise 2 (Conditional probability)**

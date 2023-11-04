@@ -13,20 +13,6 @@ We call **support of X** $\bigtriangleup_X$ or $X(\Omega)$ the domain of the dis
 
 * [Generating Functions](discrete/gf.md)
 
-<hr class="sr">
-
-## Discrete probability
-
-* [Calculate a discrete probability](discrete/calculate.md)
-* [Independence](discrete/independence.md)
-* [Expected value E(X)](discrete/expected-value.md)
-* [Variance V(X)](discrete/variance.md)
-* [Cumulative distribution function](discrete/cdf.md)
-
-Now practice,
-
-* [Exercises](discrete/exercises.md)
-
 <hr class="sl">
 
 ## Continuous probability
