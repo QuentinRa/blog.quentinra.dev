@@ -1,10 +1,5 @@
 # Vocabulary and properties
 
-$\mathbb{P}(A)$ means the probability of A happening. It's a value in $[0,1]$.
-
-* $\mathbb{P}(\Omega) = 1$ and $\mathbb{P}(\emptyset) = 0$
-* $\mathbb{P}(\overline{A}) = 1 - \mathbb{P}(A)$
-
 A few others formulas that may be handy:
 
 * $\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cap B)$
@@ -16,28 +11,11 @@ We call **distribution function**, a strictly positive function where the sum of
 
 We call **support of X** $\bigtriangleup_X$ or $X(\Omega)$ the domain of the distribution function of X. The probability outside the support is 0. You can use that to make a sum on the support.
 
-* [Counting techniques / combinatorics](discrete/counting.md)
 * [Generating Functions](discrete/gf.md)
 
 <hr class="sr">
 
 ## Discrete probability
-
-When $\Omega$ is a finite set, then we are using discrete probabilities. That means the support is in $\mathbb{N}$ or $\mathbb{Z}$.
-
-We are defining $\mathbb{P}(X=k)$ the probability that a discrete random variable (`variable aléatoire discrète`, v.a.d.) $X$ is taking the value $k$.
-
-* We could write $P(X = 1) = y$ for a dice where y is the probability that we got 1 (<small>it's 1 out of 6 so y=1/6</small>).
-* we may add a number $w$: $\mathbb{P}(X_w=k)$ if someone is using lazy naming like $X_1$, $X_2$, ...
-
-We are calling **mass function** (`Fonction de masse`) the function giving us the value for $\mathbb{P}(X=k)$. A mass function is valid if
-
-* the sum of the probabilities is **1**
-* $\forall{x},\ f(x) \ge 0$
-
-A lot of people are also calling this function the density function (implicitly "discrete density function") but I think this is confusing since the density function is associated with continuous variables. You could also see "(continuous) mass function" used with continuous variables, and my opinion is the same.
-
-Let's dig more into it.
 
 * [Calculate a discrete probability](discrete/calculate.md)
 * [Independence](discrete/independence.md)

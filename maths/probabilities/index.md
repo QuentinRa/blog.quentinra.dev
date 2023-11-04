@@ -9,7 +9,14 @@ A probability is a value between zero and one characterizing how likely an event
 * 📌 $A$ is an event included in <span>$\Omega$. It's often  defined by a sentence. If it has only one outcome, it's called an elementary event.
 * 🌍 $\overline{A}$ or $A^c$ is opposite/complementary event of A <small>(read as "not A")</small>.
 * ⛔ $\emptyset$ (empty set) means an impossible event.
+
+👉 Events "incompatible/disjoints/mutually exclusive events" are events that can't happen simultaneously.
 </div><div>
+
+We write $\mathbb{P}(A)$ the probability of A occuring. It's a value in $[0,1]$.
+
+* $\mathbb{P}(\Omega) = 1$ and $\mathbb{P}(\emptyset) = 0$
+* $\mathbb{P}(\overline{A}) = 1 - \mathbb{P}(A)$
 
 For instance, we are rolling a die 3 times in a row 🎲.
 
@@ -18,8 +25,7 @@ For instance, we are rolling a die 3 times in a row 🎲.
 * An event $A$ 📌: having 3 times 6, e.g., $(6, 6, 6)$
 * Complementary event $\overline{A}$ 🌍: not having 3 times 6
 * An impossible event ⛔: ...
-
-👉 Events "incompatible/disjoints/mutually exclusive events" are events that can't happen simultaneously.
+* $P(A) = \frac{1}{6^3}$
 </div></div>
 
 <hr class="sep-both">
@@ -37,9 +43,22 @@ We have a few techniques we can use. Assuming $card(E) = k$, according to the ev
 * `without replacement`: we can take an element only once
 * `ordered`: we consider $(1, 2)$ and $(2, 1)$ to be different
 
+📚 We use `{...}` for unordered outcomes, and `(...)` for ordered outcomes: `{(5,1),(1,5)}` <small>(ordered)</small> vs `{{1,5}}` <small>(unordered)</small>.
+
 ➡️ See also: [Counting Examples](_examples/counting.md).
 
 <br>
+
+#### Ordered sampling with replacement
+
+It means each value can be picked $n$ times.
+
+@
+k^n
+@
+
+⚠️ You must make sure that you are not inverting $k$ and $n$.
+</div><div>
 
 #### Ordered sampling without replacement
 
@@ -55,18 +74,7 @@ When $k = n$, $A^k_n = k!$, we call it a permutation. When the elements are not 
 \frac{n!}{\prod_i o_i!}
 @
 
-➡️ $A^k_n$ is called an an Arrangement.
-</div><div>
-
-#### Ordered sampling with replacement
-
-It means each value can be picked $n$ times.
-
-@
-k^n
-@
-
-⚠️ You must make sure that you are not inverting $k$ and $n$.
+➡️ $A^k_n$ is called an Arrangement.
 
 #### Unordered sampling without replacement
 
@@ -76,13 +84,30 @@ k^n
 \frac{A^k_n}{n!}
 @
 
-#### Unordered distribution (with replacement)
+#### Unordered sampling with replacement
 
 @
 C^{k-1}_{n+k-1} = \frac{(n+k-1)!}{(k-1)! * n!}
 @
 
 ➡️ $C^k_n$ is called a Combination.
+</div></div>
+
+<hr class="sep-both">
+
+## Discrete probability
+
+<div class="row row-cols-lg-2"><div>
+
+Discrete probability refers to the branch of probability theory that deals with finite random variables, e.g., in $\mathbb{N}$ or $\mathbb{Z}$.
+
+We are defining $\mathbb{P}(X=k)$ the probability that a discrete random variable $X$ is taking the value $k$. We are calling mass function the function giving us the result of $\mathbb{P}(X=k)$. This function is valid if:
+
+* The sum of all probabilities is 1
+* $\forall{x},\ f(x) \ge 0$
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">
