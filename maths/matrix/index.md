@@ -311,7 +311,7 @@ All values below the diagonal are 0, including the diagonal.
 
 Gauss can be used to solve a system represented as a matrix. The goal is to get a matrix with a strictly increasing number of zeros before the leading coefficients/pivots $p_i$; which are the first non-null values.
 
-The result of Gauss is called the row echelon form. It all leading coefficients are $1$ and there is only $0$ in their columns, the result is called a reduced row echelon form.
+The result of Gauss is called the row echelon form. It all leading coefficients are $1$ and there is only $0$ in their columns, the result is called a reduced row echelon form. Both are upper triangular matrices.
 
 <div class="overflow-auto">
 \[
@@ -378,7 +378,26 @@ det(A) = ad-bc
 \]
 </div>
 
-➡️ The formulas above are also working for upper/lower triangular matrices. Simply consider then the same as $D_n$.
+➡️ The formulas above are also working for upper/lower triangular matrices. Simply consider both as the same as $D_n$.
+
+➡️ You can use [Gauss](#gaussian-elimination) to get a triangular matrix.
+</div><div>
+
+➡️ See also: [Determinant Example](_examples/det.md) and [Inverse Example](_examples/inverse.md).
+</div></div>
+
+<hr class="sep-both">
+
+<div class="row row-cols-lg-2"><div>
+
+# GAUSS elimination
+
+To find the determinant, you need to reduce a matrix to an upper diagonal matrix, then use the property "$det(A)$=product of the values on the diagonal" to find the determinant.
+
+If you swapped lines, then multiply the result by
+
+* $det(A) = det(A) * (-1)^s$
+* with $s$ the number of swaps
 </div><div>
 
 ...

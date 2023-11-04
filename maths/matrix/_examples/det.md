@@ -1,17 +1,8 @@
-# GAUSS elimination
+# Determinant Example
 
-[Go back](../index.md#matrix-inversion)
+<hr class="sep-both">
 
-To find the determinant, you need to reduce a matrix to an upper diagonal matrix, then use the property "$det(A)$=product of the values on the diagonal" to find the determinant.
-
-If you swapped lines, then multiply the result by
-
-* $det(A) = det(A) * (-1)^s$
-* with $s$ the number of swaps
-
-<hr class="sl">
-
-## Example 1
+## Gauss Example 1
 
 What's the determinant of A?
 
@@ -55,9 +46,9 @@ since we swapped lines 2 times, then
 $det(A) = 1 * (-1)^2 = 1$.
 </blockquote>
 
-<hr class="sl">
+<hr class="sep-both">
 
-## Example 2
+## Gauss Example 2
 
 What's the determinant of A?
 
