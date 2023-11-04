@@ -193,6 +193,41 @@ The expected value noted $\mathbb{E}(X)$, $\mathbb{E}X$, or $\mathbb{E}[X]$ is d
 * $\mathbb{E}[X * Y] = \mathbb{E}[X] * \mathbb{E}[Y]$ if both are independant, otherwise $\mathbb{E}[X * Y] = \sum_{i,j} x_i * y_i * p_{ij}$.
 * $\mathbb{E}(X) = \frac{n+1}{2}$ for an uniform probability
 * Cauchy-Schwarz: $\mathbb{E}[XY]^2 \le \mathbb{E}[X^2] * \mathbb{E}[Y^2]$
+
+#### Variance
+
+The variance is the square deviation around the expected value.
+
+<div>
+\[
+\begin{align}\begin{aligned}V(X) = \mathbb{E}[(X - \mathbb{E}[X])^2]\\V(X) = \mathbb{E}[X^2] - \mathbb{E}[X]^2\end{aligned}\end{align}
+\]
+</div>
+
+* $V(X) = \sigma^2$ with sigma the standard deviation
+* $V(\lambda X^2) = \lambda^2 V(X)$
+* $V(a + \lambda X^2) = \lambda^2 V(X)$
+* $V(X + Y) = V(X) + V(Y) - 2cov(XY)$
+* $V(X)$ is also called [the second central moment](https://en.wikipedia.org/wiki/Moment_(mathematics)#Variance)
+
+#### Covariance/co-variance (cov)
+
+It's used to evaluate the conjoint variance of two
+random variables.
+
+<div>
+\[
+\begin{align}\begin{aligned}cov(x,y) = \mathbb{E}[ ( X - \mathbb{E}[X]) (Y - \mathbb{E}[Y]) ]\\cov(x,y) = \mathbb{E}[XY] - \mathbb{E}[X] \mathbb{E}[Y]\end{aligned}\end{align}
+\]
+</div>
+
+* $cov(X,X) = V(X)$
+* $cov(X,Y) = cov(Y,X)$
+* $cov(\lambda * X,Y) =  \lambda *cov(Y,X)$
+* $cov(\lambda * X) =  \lambda^2 *cov(X)$
+* $cov(A+B,C) = cov(A,C) + cov(B,C)$
+* if $X \perp Y$ then $cov(XY) = 0$
+* $\mathbb{P}(X, Y) = \frac{cov(X,Y)}{\sqrt{V(X)*V(Y)}}$
 </div></div>
 
 <hr class="sep-both">
