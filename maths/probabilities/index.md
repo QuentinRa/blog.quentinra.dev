@@ -128,6 +128,52 @@ A conditional probability is when, knowing that another event $B$ occured, we wa
 
 * $\mathbb{P}(\overline{A}|B) = 1 - \mathbb{P}(A|B)$
 * $\mathbb{P} (B \cup C|A) = \mathbb{P}(B|A) + \mathbb{P}(C|A) − \mathbb{P}(B ∩ C|A)$
+* You may be able to compute $\mathbb{P}(A|B)$ with the first formula
+
+#### Transformations
+
+We can use Bayes theorem:
+
+@
+\mathbb{P}(A \cap B) = \mathbb{P}(B) * \mathbb{P}(A|B)
+\equiv \mathbb{P}(A) * \mathbb{P}(B|A)
+@
+
+We can use the law of total probability:
+
+<div>
+\[
+\begin{split}
+\mathbb{P}(B) = \mathbb{P}(B \cap \Omega)
+= \mathbb{P}((A_1 \cap B) \cup (A_2 \cap B) \cup \ldots) 
+\\ = \mathbb{P}(A_1 \cap B) + \mathbb{P}(A_2 \cap B) + \ldots \\
+= \mathbb{P}(A_1) * \mathbb{P}(B|A_1) + \mathbb{P}(A_2) * \mathbb{P}(B|A_2) + \ldots
+\end{split}
+\]
+</div>
+
+And we can use the probability chain rule:
+
+<div>
+\[
+\prod_{i=1}^n \mathbb{P}(A_i | \bigcap_{j=1}^{i-1} A_j)
+\]
+</div>
+
+For instance if $n=4$, we got
+
+<div>
+\[
+\begin{split}
+\mathbb{P}(A_4 \cap A_3 \cap A_2 \cap A_1) 
+= \\
+\mathbb{P}(A_1) *
+\mathbb{P}(A_2|\ A_1) *
+\mathbb{P}(A_3|\ A_2 \cap A_1) *
+\mathbb{P}(A_4|\ A_3 \cap A_2 \cap A_1)
+\end{split}
+\]
+</div>
 </div><div>
 
 ...
