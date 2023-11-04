@@ -40,32 +40,3 @@ x^{12}
 
 We are reading the coefficients to get the cardinal.
 </div></div>
-
-<hr class="sep-both">
-
-## Cakes Generating Function Example
-
-<div class="row row-cols-lg-2"><div>
-
-We have $12$ cakes with different flavors: chocolate, vanilla, and strawberry. There is an equal number of cakes of each flavor.
-
-* each person must have at least two flavors 🍰
-* each person can't have chocolate more than 4 times 🍫
-
-<div>
-\[
-\sum_{i=2}^{12} x^i *
-\sum_{i=2}^{12} x^i *
-\sum_{i=2}^{4} x^i
-\]
-</div>
-
-Chocolate ranges from 2 to 4. Others range from 2 to 12. Using online tools to expand the expression, we have:
-
-<div>
-\[
-x^{28} + ... + 18 x^{12} + ... + x^6
-\]
-</div>
-</div><div>
-</div></div>

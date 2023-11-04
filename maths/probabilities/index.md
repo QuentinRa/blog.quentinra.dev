@@ -271,24 +271,7 @@ For instance, $P(X\le3) = P(X=0) + P(X=1) + P(X=2) + P(X=3)$.
 
 #### Generating function
 
-Generating functions are handy when doing combinatorics.
-
-You will write a function, in which having $a_k * x^k$ means that
-
-* for $n=k$
-* the number of distributions is $a_k$
-
-For instance, let's say your result is $5 x^2 + 4 x^3 + ...$ then that's means that if $n=2$ then the number of distributions is $5$...
-
-It's usually defined like this
-
-<div>
-\[
-G(x) = \sum_{k \in N} a_k * x^k
-\]
-</div>
-
-If we got $k$ issues and $m$ experiments ($m = Card(X)$ for instance) then we would have
+Generating functions are handy when doing combinatorics. If we got $k$ issues and $m$ experiments, we perform the following product:
 
 <div>
 \[
@@ -296,17 +279,7 @@ G(x) = \prod_{j=1}^{m} \sum_{i=k_j}^{n_j} x^i
 \]
 </div>
 
-* this is a product of sums
-* for each value of X (indexed by $j$)
-* we calculate a sum,
-* from $k_j$ (the minimum of times you want this value)
-* to $n_j$ (the maximum of times you want this value)
-* once you multiplied and factorized the result, $a$ in $a * x^i$ is the number of distributions for $n=i$.
-
-You may also use the other methods as explained on these websites
-
-* [math.mit.edu (slides)](https://math.mit.edu/research/highschool/primes/materials/2018/conf/15-1%20Manne.pdf)
-* [openmathbooks (text)](http://discrete.openmathbooks.org/dmoi2/section-27.html)
+Once you develop the expression, each $a$ in $a * x^i$ is the number of distributions for $n=i$.
 
 ➡️ See also: [Generating Function Examples](_examples/gen.md)
 </div><div>
