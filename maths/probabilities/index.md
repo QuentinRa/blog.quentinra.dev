@@ -30,12 +30,16 @@ For instance, we are rolling a die 3 times in a row 🎲.
 
 The cardinal of $E$ means the number of elements of $E$. We use these notations: $card(E) \Leftrightarrow |E| \Leftrightarrow \\#E$. We will need to know the cardinal of $\Omega$ or an event to use most formulas.
 
-Assuming $card(\Omega) = k$, according to the event $A$, we will pick $n$ outcomes from $\Omega$. If we can take an element only once, we call that a sampling **without replacement**. If the order of the outcomes in $A$ is important, we call that a sampling **with order**.
+For instance, let's say you have a sample space `"rolling a die 9 times"` and an event $A=$`"having a sum > 50"`. What is $card(A)$?
 
-Ordered and unordered sets are syntactically different:
+We have a few techniques we can use. Assuming $card(E) = k$, according to the event $A$, we will pick $n$ outcomes from $E$.
 
-* Pick one and two: $\lbrace (1, 2),(2, 1) \rbrace$ <small>(ordered set)</small>
-* Pick one and two: $\lbrace \lbrace{1,2}\rbrace\rbrace$ <small>(unordered set)</small>
+* `no replacement`: we can take an element only once
+* `ordered`: we consider $(1, 2)$ and $(2, 1)$ to be different
+
+➡️ See also: [Counting Examples](_examples/counting.md).
+
+<br>
 
 #### Ordered distribution (no replacement)
 

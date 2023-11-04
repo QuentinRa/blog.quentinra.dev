@@ -1,28 +1,19 @@
 # Counting techniques / Combinatorics
 
-[Go back](..)
+<div class="row row-cols-lg-2"><div>
 
-We are distinguishing 
+Ordered and unordered sets are syntactically different:
+
+* Pick one and two: $\lbrace (1, 2),(2, 1) \rbrace$ <small>(ordered set)</small>
+* Pick one and two: $\lbrace \lbrace{1,2}\rbrace\rbrace$ <small>(unordered set)</small>
+</div><div>
+
+We are distinguishing
 
 * Permutations: shuffle of your set
 * Arrangement $A^k_n$: randomly picking elements, order matter
 * Combination $C^k_n$: randomly picking elements, order do not matter
-
-<hr class="sr">
-
-## Ordered distribution (no repetition/replacement)
-
-The most used example is "how many words can we create with the letters of Mississippi?".
-
-* we got 1 M ($o_1$)
-* we got 4 I ($o_2$)
-* we got 4 S ($o_3$)
-* we got 2 P ($o_4$)
-* we got 11 letters
-
-@
-\frac{11!}{1! * 4! * 4! * 2!}
-@
+</div></div>
 
 <hr class="sl">
 
