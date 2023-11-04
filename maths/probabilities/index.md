@@ -34,16 +34,16 @@ For instance, let's say you have a sample space `"rolling a die 9 times"` and an
 
 We have a few techniques we can use. Assuming $card(E) = k$, according to the event $A$, we will pick $n$ outcomes from $E$.
 
-* `no replacement`: we can take an element only once
+* `without replacement`: we can take an element only once
 * `ordered`: we consider $(1, 2)$ and $(2, 1)$ to be different
 
 ➡️ See also: [Counting Examples](_examples/counting.md).
 
 <br>
 
-#### Ordered distribution (no replacement)
+#### Ordered sampling without replacement
 
-Since k is decreasing by 1 after each pick, it's a factorial: $5!=5\*4\*3\*2\*1$.
+Since k is decreasing by 1 after each pick, it's a factorial: $n! = n * (n-1)!$ and $1! = 1$. For example, $5!=5\*4\*3\*2\*1$.
 
 @
 A^k_n = \frac{k!}{(k-n)!}
@@ -54,9 +54,35 @@ When $k = n$, $A^k_n = k!$, we call it a permutation. When the elements are not 
 @
 \frac{n!}{\prod_i o_i!}
 @
+
+➡️ $A^k_n$ is called an an Arrangement.
 </div><div>
 
-...
+#### Ordered sampling with replacement
+
+It means each value can be picked $n$ times.
+
+@
+k^n
+@
+
+⚠️ You must make sure that you are not inverting $k$ and $n$.
+
+#### Unordered sampling without replacement
+
+@
+\frac{k!}{(k-n)! * n!}
+\Leftrightarrow
+\frac{A^k_n}{n!}
+@
+
+#### Unordered distribution (with replacement)
+
+@
+C^{k-1}_{n+k-1} = \frac{(n+k-1)!}{(k-1)! * n!}
+@
+
+➡️ $C^k_n$ is called a Combination.
 </div></div>
 
 <hr class="sep-both">
