@@ -1,11 +1,14 @@
 # Vocabulary and properties
 
-$\mathbb{P}(A)$ means the probability of A happening and that's a value in $[0,1]$
+$\mathbb{P}(A)$ means the probability of A happening. It's a value in $[0,1]$.
 
 * $\mathbb{P}(\Omega) = 1$ and $\mathbb{P}(\emptyset) = 0$
 * $\mathbb{P}(\overline{A}) = 1 - \mathbb{P}(A)$
+
+A few others formulas that may be handy:
+
 * $\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cap B)$
-* $A \subset B \to \mathbb{P}(A) \le \mathbb{P}(B)$ (A included in B)
+* $A \subset B \to \mathbb{P}(A) \le \mathbb{P}(B)$ <small>(A included in B)</small>
 * $A \subset B \to \mathbb{P}(A \cap B) = \mathbb{P}(A)$
 * $A \subset B \to \mathbb{P}(A \cup B) = \mathbb{P}(B)$
 
