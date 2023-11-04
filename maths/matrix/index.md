@@ -344,6 +344,48 @@ The operations you can use are to transform the matrix are:
 
 <hr class="sep-both">
 
+## Inverse of a matrix
+
+<div class="row row-cols-lg-2"><div>
+
+The inverse of a matrix when multiplied by the original matrix, results in the identity matrix. In mathematical notation, $A^{-1}$ represents the inverse of $A$. Only square matrices may be invertible.
+
+<div class="overflow-auto">
+\[
+\begin{split}
+A_n * A_n^{-1} = A_n^{-1} * A_n = I_n
+\end{split}
+\]
+</div>
+
+The determinant $det(A)$ or $|A|$ is a scalar that we can calculate. When $det(A) \neq 0$, the matrix is invertible, e.g., $A \in Gl_n(\mathbb{R})$.
+
+* $A_{1}=\begin{pmatrix} a \end{pmatrix} \quad \to \quad det(A) = a$
+* $D_{n}=\ldots \quad \to \quad det(A) = \prod_1^n a_{ii}$
+* $det(AB) = det(A) * det(B)$
+* $det(A^t) = det(A)$
+* For a square matrix $A_2$: 
+
+<div class="overflow-auto">
+\[
+\begin{split}
+A_2=\begin{pmatrix} a & b \\ c & d \end{pmatrix}
+\quad
+\to
+\quad
+det(A) = ad-bc
+\end{split}
+\]
+</div>
+
+➡️ The formulas above are also working for upper/lower triangular matrices. Simply consider then the same as $D_n$.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

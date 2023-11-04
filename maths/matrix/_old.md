@@ -1,18 +1,8 @@
 # Matrix inversion
 
-The determinant of $A$, $det(A)=|A|$ is a value that is indicating if we can invert or not a matrix. A matrix is invertible (also written as $A \in Gl_n(\mathbb{R})$) if **the determinant is not null**, so $det(A) \neq 0$.
-
-* Determinant properties
-  * Let $A_{1,1}=\begin{pmatrix} a \end{pmatrix}$, then we have $det(A) = a$
-  * $det(AB) = det(A) * det(B)$
-  * $det(A^t) = det(A)$
-  * Let $A$, a diagonal matrix, $det(A)$=product of the values on the diagonal
-  * The property above is working for upper/lower diagonal matrices
 * You can calculate the determinant
-  * using the [simplified formula for 2x2 matrix](inversion/2x2.md)
   * using the [cofactor expansion](inversion/minor.md)
   * using [GAUSS elimination](inversion/gauss-det.md)
-  * in **R**, use the function `det` as follows `det(A)`
 
 Then, once you have checked the determinant, you can invert a matrix using
 
