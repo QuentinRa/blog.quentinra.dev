@@ -160,7 +160,7 @@ And we can use the probability chain rule:
 \]
 </div>
 
-For instance if $n=4$, we got
+For instance, if $n=4$, we got
 
 <div>
 \[
@@ -176,7 +176,23 @@ For instance if $n=4$, we got
 </div>
 </div><div>
 
-...
+#### Expected value
+
+The expected value noted $\mathbb{E}(X)$, $\mathbb{E}X$, or $\mathbb{E}[X]$ is defined by:
+
+<div>
+\[
+\sum_{x_i \in \Omega}^{} x_i \mathbb{P}{(X_w = x_i )}
+\]
+</div>
+
+* $\mathbb{E}(X)$ is also called the (weighted) mean
+* $\mathbb{E}(X)$ is also called [the first moment](https://en.wikipedia.org/wiki/Moment_(mathematics)#Mean)
+* $\mathbb{E}[X, \lambda Y] = \mathbb{E}[Y] + \lambda \mathbb{E}[Y]$
+* $\mathbb{E}(X) \ge 0$ and if $X \ge Y$ then $\mathbb{E}(X) \ge \mathbb{E}(Y)$
+* $\mathbb{E}[X * Y] = \mathbb{E}[X] * \mathbb{E}[Y]$ if both are independant, otherwise $\mathbb{E}[X * Y] = \sum_{i,j} x_i * y_i * p_{ij}$.
+* $\mathbb{E}(X) = \frac{n+1}{2}$ for an uniform probability
+* Cauchy-Schwarz: $\mathbb{E}[XY]^2 \le \mathbb{E}[X^2] * \mathbb{E}[Y^2]$
 </div></div>
 
 <hr class="sep-both">
