@@ -2,14 +2,6 @@
 
 Many times, you will be asked to check the definiteness of a matrix. You can either find the eigenvalues ($\lambda$, as you can learn in the next section), or check the leading minors ($\Delta$, that you will learn in this section).
 
-|          Name              | **eigenvalues** | **minors** |
-|----------------------------|-----------------|-----------------|
-| **positive definite** <br> `définie positive`| $\forall k,\quad \lambda_k \gt 0$ | $\forall k,\quad \Delta_k  \gt 0$ |
-| **positive semi-definite**<br>`semi-définie positive`| $\forall \text{k aside $k=e$},\quad \lambda_k \gt 0,\quad \lambda_{e} = 0$ | $\forall k < n,\quad \Delta_{k}>0 \text{. and } \Delta_{n}=0$ |
-| **negative definite** <br> `définie négative` | $\forall k,\quad \lambda_k \lt 0$ | $\forall k,\quad (-1)^k \Delta_k \gt 0$ |
-| **negative semi-definite** <br>`semi-définie négative` | $\forall \text{k aside $k=e$},\quad \lambda_k \lt 0,\quad \lambda_{e} = 0$ | $\forall k < n,\quad (-1)^k\Delta_{k}>0 \text{. and } \Delta_{n}=0$ |
-| **indefinite** <br> `indéfinie`| $\exists k\exists n,\quad \lambda_k \gt 0,\quad \lambda_n \lt 0$ | $\Delta_{n} < 0$, and the dimension n is pairwise |
-
 * [Leading minors of a matrix](inversion/minor-lead.md)
 * [Leading minors of a matrix - example](inversion/minor-ex.md)
 

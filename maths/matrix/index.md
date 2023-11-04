@@ -427,6 +427,44 @@ What is convenient is that the minor is often a $M_2$ matrix so we have the form
 
 <hr class="sep-both">
 
+## Definiteness of a matrix
+
+Many calculations will require a specific "definiteness" for the matrix. We can get this property using either [eigenvalues](#eigen-values) or [leading minors](#leading-minors).
+
+|          Name           | **eigenvalues** | **minors** |
+|-------------------------|-----------------|-----------------|
+| **positive definite**| $\forall k,\quad \lambda_k \gt 0$ | $\forall k,\quad \Delta_k  \gt 0$ |
+| **positive semi-definite**| $\forall \text{k aside $k=e$},\quad \lambda_k \gt 0,\quad \lambda_{e} = 0$ | $\forall k < n,\quad \Delta_{k}>0 \text{. and } \Delta_{n}=0$ |
+| **negative definite**| $\forall k,\quad \lambda_k \lt 0$ | $\forall k,\quad (-1)^k \Delta_k \gt 0$ |
+| **negative semi-definite**| $\forall \text{k aside $k=e$},\quad \lambda_k \lt 0,\quad \lambda_{e} = 0$ | $\forall k < n,\quad (-1)^k\Delta_{k}>0 \text{. and } \Delta_{n}=0$ |
+| **indefinite**| $\exists k\exists n,\quad \lambda_k \gt 0,\quad \lambda_n \lt 0$ | $\Delta_{n} < 0$, and the dimension n is pairwise |
+
+<hr class="sep-both">
+
+## Leading Minors
+
+<div class="row row-cols-lg-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Eigen values
+
+<div class="row row-cols-lg-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
