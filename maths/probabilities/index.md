@@ -105,6 +105,29 @@ We are defining $\mathbb{P}(X=k)$ the probability that a discrete random variabl
 
 * The sum of all probabilities is 1
 * $\forall{x},\ f(x) \ge 0$
+
+#### Formulas
+
+Using combinatorics to get the cardinal:
+
+@
+\mathbb{P}(A) = \frac{card(A)}{card(\Omega)} = \frac{|A|}{|\Omega|}
+@
+
+When each event has the same probability of occuring, it's called an uniform probability and the formula is simpler:
+
+@
+\forall{w} \in \Omega\quad \text{then}\quad \mathbb{P}(w) = \frac{1}{card(\Omega)}
+@
+
+A conditional probability is when, knowing that another event $B$ occured, we want to know of probability of $A$ occurring.
+
+@
+\mathbb{P}(A|B) = P_B(A) = P(B \wedge A) := \frac{\mathbb{P}(A \cap B)}{\mathbb{P}(B)}
+@
+
+* $\mathbb{P}(\overline{A}|B) = 1 - \mathbb{P}(A|B)$
+* $\mathbb{P} (B \cup C|A) = \mathbb{P}(B|A) + \mathbb{P}(C|A) − \mathbb{P}(B ∩ C|A)$
 </div><div>
 
 ...
