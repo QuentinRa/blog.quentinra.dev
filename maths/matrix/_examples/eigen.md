@@ -13,10 +13,6 @@ A =
 \]
 </div>
 
-```r
-A <- matrix(c(1,2,2,4), nrow = 2)
-```
-
 <hr class="sl">
 
 ## Step 1
@@ -57,12 +53,6 @@ det(X) = (\lambda-1) * (\lambda -4) - (-2*-2) = 0
 
 We got $\lambda_1=0$ and $\lambda_2=5$.
 
-```r
-eigen(A)$values
-# [1] 5 0
-# ok
-```
-
 <hr class="sl">
 
 ## Step 3 ($\lambda_0$)
@@ -91,13 +81,6 @@ The first eigenvector is
 \begin{pmatrix}-2\alpha \\1\alpha \end{pmatrix}
 \]
 </div>
-
-```r
-gaussianElimination(A-0*diag(2), c(0,0))
-#     [,1] [,2] [,3]
-# [1,]    1    2    0
-# [2,]    0    0    0
-```
 
 <hr class="sr">
 
@@ -138,13 +121,6 @@ The second eigenvector is
 \]
 </div>
 
-```r
-gaussianElimination(A-5*diag(2), c(0,0))
-#     [,1] [,2] [,3]
-# [1,]    1 -0.5    0
-# [2,]    0  0.0    0
-```
-
 <hr class="sl">
 
 ## Step 4
@@ -161,10 +137,6 @@ We can create $P$
 \end{split}
 \]
 </div>
-
-```r
-P <- matrix(c(-2,1,0.5,1), 2)
-```
 
 <hr class="sr">
 
@@ -188,16 +160,7 @@ We solve $P^{-1}$
 \]
 </div>
 
-```r
-P.inv <- solve(P)
-#      [,1] [,2]
-# [1,] -0.4  0.2
-# [2,]  0.4  0.8
-
-# check
-identical(P %*% P.inv, diag(2))
-# [1] TRUE
-```
+📚 Test that $P_n * P_n^{-1} = I_n$.
 
 <hr class="sl">
 
@@ -212,13 +175,6 @@ We can create $A^n$
 \]
 </div>
 
-```r
-D <- matrix(c(0,0,0,5), 2)
+📚 Test that $A = P * D^1 * D^{-1}$.
 
-identical(A, P %*% D^1 %*% P.inv)
-# [1] TRUE
-identical(A %*% A, P %*% D^2 %*% P.inv)
-# [1] TRUE
-identical(A %*% A %*% A, P %*% D^3 %*% P.inv)
-# [1] TRUE
-```
+📚 Test that $A * A = P * D^2 * D^{-1}$.
