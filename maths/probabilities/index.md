@@ -154,7 +154,7 @@ We can use the law of total probability:
 \]
 </div>
 
-And we can use the probability chain rule:
+We can use the probability chain rule:
 
 <div>
 \[
@@ -176,6 +176,13 @@ For instance, if $n=4$, we got
 \end{split}
 \]
 </div>
+
+A few other formulas that may be handy:
+
+* $\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cap B)$
+* $A \subset B \to \mathbb{P}(A) \le \mathbb{P}(B)$ <small>(A included in B)</small>
+* $A \subset B \to \mathbb{P}(A \cap B) = \mathbb{P}(A)$
+* $A \subset B \to \mathbb{P}(A \cup B) = \mathbb{P}(B)$
 </div><div>
 
 #### Expected value
@@ -247,13 +254,64 @@ Random variables are independent ($\perp$ perp) if the product of the probabilit
 
 The cumulative distribution function (CDF) $F_X(k)$ is the primitive of the mass function, meaning that deriving the CDF will give you the mass function. $F_X(k)$ is the probability of $\mathbb{P}(X \le k)$.
 
-<div class="mb-3">
+<div>
 \[
 \mathbb{P}(X \le k) = \sum_{i=0}^{k} \mathbb{P}(X=i)
 \]
 </div>
 
 For instance, $P(X\le3) = P(X=0) + P(X=1) + P(X=2) + P(X=3)$.
+</div></div>
+
+<hr class="sep-both">
+
+## Random Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### Generating function
+
+Generating functions are handy when doing combinatorics.
+
+You will write a function, in which having $a_k * x^k$ means that
+
+* for $n=k$
+* the number of distributions is $a_k$
+
+For instance, let's say your result is $5 x^2 + 4 x^3 + ...$ then that's means that if $n=2$ then the number of distributions is $5$...
+
+It's usually defined like this
+
+<div>
+\[
+G(x) = \sum_{k \in N} a_k * x^k
+\]
+</div>
+
+If we got $k$ issues and $m$ experiments ($m = Card(X)$ for instance) then we would have
+
+<div>
+\[
+G(x) = \prod_{j=1}^{m} \sum_{i=k_j}^{n_j} x^i
+\]
+</div>
+
+* this is a product of sums
+* for each value of X (indexed by $j$)
+* we calculate a sum,
+* from $k_j$ (the minimum of times you want this value)
+* to $n_j$ (the maximum of times you want this value)
+* once you multiplied and factorized the result, $a$ in $a * x^i$ is the number of distributions for $n=i$.
+
+You may also use the other methods as explained on these websites
+
+* [math.mit.edu (slides)](https://math.mit.edu/research/highschool/primes/materials/2018/conf/15-1%20Manne.pdf)
+* [openmathbooks (text)](http://discrete.openmathbooks.org/dmoi2/section-27.html)
+
+➡️ See also: [Generating Function Examples](_examples/gen.md)
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">
