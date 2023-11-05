@@ -273,6 +273,8 @@ Continuous probability refers to the branch of probability theory that deals wit
 
 The probability of taking a value is 0: $P(X=k)=0$ because the probability of each elementary event is converging to 0, while the sum of all elementary events is converging to 1.
 
+➡️ See also: [Continuous Probability Examples](_examples/continuous.md).
+
 #### Probability Density Function
 
 The probability density function $f_X(x)$ (or $f(x)$) is defined as:
@@ -349,6 +351,28 @@ The variance $V(X)$ is defined by
 @
 V[X] = \int_{-\infty}^{+\infty} (x-\mathbb{E}[X])^2\ f_X(x)\ dx
 @
+
+#### Moment-Generating Function (MGF)
+
+The Moment-generating function helps in finding the expected value, the variance, and other moments.
+
+<div>
+\[
+M_X(t) = \mathbb{E}(\exp(tX)) =
+\int \exp(tx)\ f_X(x)\ dx
+\]
+</div>
+
+<div>
+\[
+\mathbb{E}(X) = \frac{\delta M_X (t)}{\delta t}
+= M'_X(0)
+\]
+\[
+V(X) = \frac{\delta^2 M_X (t)}{\delta t^2} - \mathbb{E}(X)^2
+= M''_X(0) - \mathbb{E}(X)^2
+\]
+</div>
 </div></div>
 
 

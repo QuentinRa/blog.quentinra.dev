@@ -1,11 +1,6 @@
 # Continuous probability
 
-* [Cumulative distribution function](continuous/cdf.md)
-* [Expected value and variance](continuous/moments.md)
-* [Moment-generating function](continuous/mgf.md)
-* the idea behind the independence is the same
 * [Characteristic function](continuous/characteristic.md)
-* [Other notes](continuous/notes.md)
 
 Now practice,
 
