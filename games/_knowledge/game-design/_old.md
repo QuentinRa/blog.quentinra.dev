@@ -3,44 +3,6 @@
 > **Tip**: don't put things under the carpet, "that will be easy" or "...", because most, if not all the time, things aren't easy. That's also why you should start with nearly any content, and add things little by little.
 
 <details class="details-e">
-<summary>Metadata</summary>
-
-**Metadata - basic**
-
-* **Name**, **Genre** (RPG 🚀, FPS, ...)
-* **Short description**
-* **End users** (`Audience`): age, country, language, new players/experienced, platforms
-
-**Metadata - advanced**
-
-* What's the goal? What's the **plus-value** of your game?
-* Why should we play your game?
-  * Is it the Hero? It is the story?
-  * What feelings are you expecting the player to feel?
-* What's making the game fun to play?
-
-> In one sentence, we could resume that: YOU ARE NOT THE PLAYER. You got your tastes, and others do too. For instance, you may like bashing/farming a lot of mobs, while others may enjoy an easy game while only focusing on the story. **Ask feedback and dig into this a lot before actually making something**.
-</details>
-
-<details class="details-e">
-<summary>The game overall</summary>
-
-* What's the world of your game? (open-world?)
-* What's the story?
-* What's the goal of your Hero?
-  * Short-term
-  * Mid-term
-  * Long-term
-* What are the obstacles to the goal?
-  * Traps
-  * Enemies
-* Can the player die? How would he get a "Game over"? Is there "save points"?
-* What kind of graphics are you planning to use? Something realist, or more something fantasist?
-
-You should try to find what your game got, that other games didn't.
-</details>
-
-<details class="details-e">
 <summary>Game Mechanics</summary>
 
 These are the rules of your game. Basically, what the player can do, and what the player can't do.
