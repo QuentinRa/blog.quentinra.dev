@@ -25,9 +25,3 @@ The name Bi-variate distribution is used for the joint distribution of two varia
 * [Marginal Distribution](jp/marginal.md)
 * [Moments, Independence, ...](jp/props.md)
 * [Conditional Distribution](jp/conditional.md)
-
-<hr class="sl">
-
-## Distributions
-
-And here is a summary of all [distributions](dist/summary.md).

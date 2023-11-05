@@ -292,11 +292,13 @@ We can use it to compute probabilities:
 or\ \mathbb{P}(a \le X \le b) = \int_{a}^{b} f_X(x)dx \\
 or\ \mathbb{P}(x \le a) = \mathbb{P}(x \lt a) = \int_{a}^{+\infty} f_X(x)dx \\
 or\ \mathbb{P}(x \ge b) = \mathbb{P}(x \gt b) = \int_{-\infty}^{b} f_X(x)dx
+\\
+or\ \mathbb{P}(X \ge a) = 1 - \mathbb{P}(X \le a)
 \end{split}
 \]
 </div>
 
-📚 The support of X $\bigtriangleup_X$ or $X(\Omega)$ is the domain of the density function. It means a probability outside of the support is $0$. 
+📚 The support of X $\bigtriangleup_X$ or $X(\Omega)$ is the domain of the density function. It means a probability outside of the support is $0$.
 
 #### Continuous Cumulative distribution function
 
@@ -439,85 +441,53 @@ This distribution $\mathbb{G}(p)$ answers the question "If I have a probability 
 
 The HyperGeometric distribution $H(N, K, n)$ is representing the probability of having a number of successes $K$ in a finite set of size $N$, given that we made $n$ trials without replacement.
 
-* $n$ is the number of trials/draws
-* $K$ is the number of successes
-* $N$ is the total number of elements
-* without replacement
-
-So we have
-
 * The mass function is $\mathbb{P}(X=k) = {{{K \choose k}{{N-K} \choose {n-k}}} \over {N \choose n}}$
 * $\mathbb{E}(X) = \ n * \frac{K}{N}$
 * $\mathbb{V}(X) = \ \mathbb{E}(X) * (1 - \frac{K}{N}) * \frac{N-n}{N-1}$
 
 #### Poisson distribution (discrete)
 
-It's called the `loi des événements/phénomènes rares` in French. The Poisson distribution $\mathbb{P}(\lambda)$ require that the probability $p$ is relatively smaller than $n$, while the parameter $\lambda$ is equals to $n*p$.
+The Poisson distribution $\mathbb{P}(\lambda)$ require that the probability $p$ is relatively smaller than $n$, while the parameter $\lambda$ is equals to $n*p$.
 
 * The mass function is $\mathbb{P}(X=k) = \frac{\lambda^k *  e^{-\lambda}}{k!}$
 * $E(X) = \lambda$
 * $V(X) = \lambda$
 
-Demonstration
+#### Exponential distribution (continuous)
 
-You need to understand this demonstration because you are going to do something like this a lot, and it's easy
+The exponential distribution is $E(\lambda)$.
 
-**Demonstration of $E[X]=\lambda$**
-
-With the expected value formula, we have
-
-* $\sum_{k \in \mathbb{N}} k * P(X=k)$
-* $= \sum_{k \in \mathbb{N}} k *  \frac{\lambda^k *  e^{-\lambda}}{k!}$
-* $e$ is a constant, so we can extract it
-* $= e^{-\lambda} * \sum_{k \in \mathbb{N}}  \frac{\lambda^k}{(k-1)!}$
-* I'm taking one $\lambda$ out (it's a constant too)
-* $= \lambda e^{-\lambda} * \sum_{k \in \mathbb{N}} \frac{\lambda^{k-1}}{(k-1)!}$
-
-Here we are starting the magic. There are well-known series that can be replaced by a function.
-
-Check [them here](https://en.wikipedia.org/wiki/List_of_mathematical_series), but this is the only one that we will use: $\sum_{k \in \mathbb{N}} \frac{\lambda^{k}}{k!} = e^k$
-
-* so using the exponential series development
-* $= \lambda e^{-\lambda} * e^{\lambda}$
-* $= \lambda e^{-\lambda+\lambda}$
-* $= \lambda e^{0}$
-* $= \lambda * 1$
-* $= \lambda$
-
-Remember the magic trick, it's useful.
+* The density function is $f_X(x) = \lambda e^{-\lambda{x}}$
+* $\mathbb{E}(X) = \ \frac{1}{\lambda}$
+* $\mathbb{V}(X) = \ \frac{1}{\lambda^2}$
 </div><div>
 
 #### Normal distribution (continuous)
 
-The distribution is the most important one, also called **Normal** distribution/`Loi normale`, **Gaussian** distribution/`Loi gaussienne` and Laplace–Gauss distribution/`Loi de Laplace-Gauss`. The short name is $N(\mu, \sigma^2)$.
+Also called the Gaussian distribution and noted $N(\mu, \sigma^2)$.
 
 * $\mu$ (mu) is the mean ($\mathbb{E}(X)$)
-* $\sigma$ (sigma) is the deviation around the mean,
-  known as Standard deviation/`écart-type`.
+* $\sigma$ (sigma) is the standard deviation
 * $\sigma^2$ (sigma-square) is the variance ($\mathbb{V}(X)$)
 
-So we have
+The key formulas are:
 
 * The density function is $f_X(x) = {\frac {1}{\sigma {\sqrt {2\pi }}}}e^{-{\frac {1}{2}}\left({\frac {x-\mu }{\sigma }}\right)^{2}}$
 * $\mathbb{E}(X) = \ \mu$
 * $\mathbb{V}(X) = \ \sigma^2$
 
-**Standard normal distribution**
+#### Standard Normal distribution (continuous)
 
-The standard normal distribution/`loi normale centrée réduite` is a normal distribution with $\mu=0$ and $\sigma=1$ giving us $N(0,\ 1)$.
-
-We can create a new variable $Y \sim N(0,\ 1)$ from X with the following formula ()
+The standard normal distribution is a normal distribution with $\mu=0$ and $\sigma=1$ giving us $N(0,\ 1)$. We can define $Y \sim N(0,\ 1)$ from X:
 
 @
 Y \sim \frac{X-\mu}{\sigma}
 @
 
-* the density function is noted $\phi_X(x)$ (phi) instead of $f_X(x)$
-* the cumulative distribution function is noted $\Phi_X(x)$ (Phi) instead of $F_X(x)$
+* The density function is now noted $\phi_X(x)$ (phi)
+* The cumulative distribution function is now noted $\Phi_X(x)$ (Phi)
 
-**Standard normal table**
-
-If you have $X \sim N(\mu,\ \sigma^2)$, then
+If you have $X \sim N(\mu,\ \sigma^2)$, then we have:
 
 <div>
 \[
@@ -527,48 +497,28 @@ F_X(c) = \mathbb{P}(X \le c)
 \]
 </div>
 
-You already know some of them, but here is a recap
-
-* $\mathbb{P}(X \le c) \Leftrightarrow \mathbb{P}(X \lt c)$
-* $\mathbb{P}(X \ge c) \Leftrightarrow \mathbb{P}(X \gt c)$
-* $\mathbb{P}(X \ge c) = 1 - \mathbb{P}(X \le c)$
 * $\phi(0.5) = 0$
-* $\phi(-x) = 1 - \phi(x)$ (**note that even if you can find is a table for $x \lt 0$, you are only given the table with $x \ge 0$** so use this)
+* $\phi(-x) = 1 - \phi(x)$
 
-And now, you need to use this table to calculate $\phi(x)$. Note that the value at the first line (ex: 0.0) and the first column (ex: 0.00) is the result for $\phi(0.0 + 0.00)$.
+Using, the [Standard normal table](https://en.wikipedia.org/wiki/Standard_normal_table), we can get $\phi(x)$. To use it, simply split $x$ in $a+b$ where $a$ is the line and $b$ is the column of the table.
 
-* [Wikipedia](https://en.wikipedia.org/wiki/Standard_normal_table)
-* [another one as PDF here](https://www.math.arizona.edu/~jwatkins/normal-table.pdf)
-
-This image is an image from the second link
-
-<div style="height: 300px;overflow: auto;">
+<div style="height: 300px;overflow: auto;" class="mb-3">
 
 ![normal-table](_images/normal-table.png)
 </div>
 
-**Inverse cumulative distribution function**
-
-We know that
-
-@
-\alpha = \mathbb{P}(X \le k) = F_X^{-1}(\alpha)
-@
-
-so given an alpha, we need to evaluate $F_X^{-1}(\alpha)$ to find the k giving this alpha. For a normal distribution, it's easier since we have
+We have a simplified formula to calculate $F_X^{-1}(\alpha)$:
 
 @
 F_X^{-1}(\alpha) = \mu + \sigma * \phi^{-1}(\alpha)
 @
 
-As for $\phi^{-1}(\alpha)$
+To find $\phi^{-1}(\alpha)$: Is $\alpha \ge 0.5$?
 
-* if $\alpha \ge 0.5$, you simply need to find the z (sum of line+column) in the table associated with the closest value of $\alpha$
-* else $\phi^{-1}(\alpha) = -\phi(1-\alpha)$
+* ✅: Find the $z$ <small>(sum of a+b, e.g., line+column)</small> in the table that is associated with the closest value of $\alpha$
+* ❌: Calculate $\phi^{-1}(\alpha) = -\phi(1-\alpha)$
 
-For instance, if $\alpha = 0.95$, then you need to search the closest value in the table. We got $\phi(1.64)=0.9495$ and $1.65=0.9505$ giving us $k \in [1.64,1.65]$.
-
-If $\alpha = 0.05$, then we have $\phi^{-1}(0.05) = -\phi(1-0.05) = -\phi(0.95)$ so $k \in [-1.65,-1.64]$.
+Ex: if $\alpha = 0.95$, we search in the table. We got $\phi(1.64)=0.9495$ and $1.65=0.9505$ giving us $k \in [1.64,1.65]$. If $\alpha = 0.05$, then we have $\phi^{-1}(0.05) = -\phi(1-0.05) = -\phi(0.95)$ so $k \in [-1.65,-1.64]$.
 
 #### Continuous uniform distribution
 
@@ -578,14 +528,9 @@ A distribution, on an interval $[a,b]$, in which each value has the same probabi
 * $\mathbb{E}(X) = \ \frac{a+b}{2}$
 * $\mathbb{V}(X) = \ \frac{(b-a)^2}{12}$
 
-**Standard uniform distribution**
+#### Standard uniform distribution (continuous)
 
-We are calling standard uniform distribution/`loi uniforme standard` a uniform distribution where
-
-* $a=0$
-* $b=1$
-
-For more information, here is the [wiki](https://en.wikipedia.org/wiki/Continuous_uniform_distribution#Standard_uniform).
+A continuous uniform distribution where $a=0$ and $b=1$.
 
 Let $F_Y(y)$ be the cumulative distribution function of the continuous random variable Y. Then $X = F_Y(y)$ can follow a standard uniform distribution
 
@@ -594,14 +539,6 @@ X = F_Y(Y) \sim U([0,1])
 @
 
 Using the [Probability integral transform (PIP)](https://en.wikipedia.org/wiki/Probability_integral_transform).
-
-#### Exponential distribution (continuous)
-
-The exponential distribution is $E(\lambda)$. You should look at [Wikipedia](https://en.wikipedia.org/wiki/Exponential_distribution) if you want to know why it's used.
-
-* The density function is $f_X(x) = \lambda e^{-\lambda{x}}$
-* $\mathbb{E}(X) = \ \frac{1}{\lambda}$
-* $\mathbb{V}(X) = \ \frac{1}{\lambda^2}$
 </div></div>
 
 <hr class="sep-both">
