@@ -36,7 +36,7 @@ Game development is structured in at least 4 phases:
 
 The User Interface (UI) represents everything that we are showing to the user, such as a health/stamina/mana bar, a minimap, shortcuts for skills, an in-game chat, a settings icon, dialogs, looting messages, etc.
 
-The majors aspects when dealing with UI are
+The major aspects when dealing with UI are:
 
 * 🐣 Usability <small>(easy to learn, easy to remember actions, easy to use)</small>
 * 🦋 Aesthetics <small>(match the style of your game, immersive, look good)</small>
@@ -55,5 +55,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [Art of User Interface](https://www.taskade.com/blog/user-interface-design-gaming-productivity/)
+* [Game Development](https://gamedevelopment.tutsplus.com/)
 </div><div>
 </div></div>
