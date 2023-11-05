@@ -1,14 +1,4 @@
-# Continuous probability
-
-* [Characteristic function](continuous/characteristic.md)
-
-Now practice,
-
-* [Exercises](continuous/exercises.md)
-
-<hr class="sr">
-
-## Joint probability distribution
+# Joint probability distribution
 
 Let X, Y be two random variables. The Joint probability $(X,Y) \in X(\Omega) * Y(\Omega)$ (cartesian product) is defined, for discrete variables, by
 

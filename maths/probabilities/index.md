@@ -395,6 +395,34 @@ G(x) = \prod_{j=1}^{m} \sum_{i=k_j}^{n_j} x^i
 Once you develop the expression, each $a$ in $a * x^i$ is the number of distributions for $n=i$.
 
 ➡️ See also: [Generating Function Examples](_examples/gen.md)
+
+<br>
+
+#### Indicator Function
+
+The indicator function, also sometimes called characteristic function, of a set B is represented as $\mathbb{1}_{ B }(x)$ and defined as:
+
+* $1$ if $x \in B$
+* $0$ else
+
+It means we can shorten an expression like that:
+
+<div>
+\[
+\begin{split}\begin{cases}
+\mathbb{P}(X=k) = 0 & if & k > n  \\
+\mathbb{P}(X=k) =  C_n^k * p^k * (1-p)^{n-k}  & else  \\
+\end{cases}\end{split}
+\]
+</div>
+
+To this expression:
+
+<div>
+\[
+\mathbb{P}(X=k) =  C_n^k * p^k * (1-p)^{n-k} *  \mathbb{1}_{ [[0,n]] }(k)
+\]
+</div>
 </div><div>
 
 #### Transfer Theorem

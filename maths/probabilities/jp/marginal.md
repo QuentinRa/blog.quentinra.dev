@@ -2,7 +2,7 @@
 
 [Go back](..#joint-probability)
 
-This page is about the discrete marginal distribution and the continuous marginal distribution.
+This page is about the discrete marginal distribution and the continuous marginal distribution. $a$
 
 <hr class="sl">
 
