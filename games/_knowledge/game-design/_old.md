@@ -3,47 +3,6 @@
 > **Tip**: don't put things under the carpet, "that will be easy" or "...", because most, if not all the time, things aren't easy. That's also why you should start with nearly any content, and add things little by little.
 
 <details class="details-e">
-<summary>Game Mechanics</summary>
-
-These are the rules of your game. Basically, what the player can do, and what the player can't do.
-
-* Can the Hero, Jump? Walk? Run? Open a door/chest/...?
-* What are the items? (perks, loot, usage)
-* Is there a looting system? How does it work?
-* How are money, player life, time, etc. handled?
-* Is the user influencing the world? (ex: `The Witcher 3`, ...)
-* What are the places of your game? Give pics/a list of places such as
-  * Shops
-  * Houses
-  * Cities
-  * ...
-
-You would also have to define the stats of the player
-
-* is there HP, MP, ATK, ...?
-* is there stamina?
-* is there an inventory? what's its size? etc.
-
-Things about this carefully, for instance, if you are making a zombie game, you may add a stat "infected" turning the player in a zombie if the stat reached 100 (`game over?`).
-</details>
-
-<details class="details-e">
-<summary>Game design</summary>
-
-* What's shown on the screen?
-  * Is there a mini-map?
-  * Is there some skills shortcuts?
-  * Is there a life/mana/stamina bar?
-  * Is there an icon for the settings? the sound?
-  * Is there icons for other players?
-  * Is there a chat?
-* What are the screens of your game? <small>(you may make a mockup of each screen)</small>
-  * Inventory?
-  * Play/Pause/Game Over/...
-* Is there an animation when switching screens? Describe...
-</details>
-
-<details class="details-e">
 <summary>Technical specifications</summary>
 
 * How is the user interacting with the game
