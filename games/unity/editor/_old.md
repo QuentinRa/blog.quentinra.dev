@@ -122,7 +122,7 @@ When **running** your game, you can go edit things <small>(either by going back 
 
 Simply right-click in the hierarchy window, and select what you want to create.
 
-![Hierarchy - Create game objects](images/create.png)
+![Hierarchy - Create game objects](_images/create.png)
 </details>
 
 <details class="details-e">
@@ -132,7 +132,7 @@ Simply right-click in the hierarchy window, and select what you want to create.
 
 To create a group, create a new game object inside another one (right-click on the parent > create). You can also drag and drop an existing object inside another game object.
 
-![Hierarchy - groups](images/groups.png)
+![Hierarchy - groups](_images/groups.png)
 
 > **Tip 1**: Sometimes, we are using an "Empty game object" as the parent to sort things.<br>
 > **Tip 2**: If you are hiding the parent, its children are also hidden. This is useful, but if this is not what you want, you can simply prevent the parent from being rendered by disabling its rendered rather than disabling the parent itself.
@@ -153,11 +153,11 @@ Note: in complex games, you may define "selections". It means that pressing a sh
 
 Select in this list of icons (or using their shortcut) a tool. You can move, rotate, and scale game objects in the scene. You will be able to do that using the **inspector window** too <small>(ex: with the move tool, two arrows will be available on the selected game object, click on one, and try moving it)</small>.
 
-![Scene window - icons](images/scene_icons.png)
+![Scene window - icons](_images/scene_icons.png)
 
 You can also change your point of view by clicking on one axis here. Click back on the square to go back to Perspective.
 
-![Unity Point of View Axis](images/axis_pov.png)
+![Unity Point of View Axis](_images/axis_pov.png)
 
 > **Pro tips**
 > * <kbd>F</kbd> to focus a game object
@@ -175,7 +175,7 @@ In the inspector, **you can edit the properties of the selected game object**, e
 
 <div class="row row-cols-md-2 mx-0"><div>
 
-![Unity inspector](images/inspector.png)
+![Unity inspector](_images/inspector.png)
 </div><div class="align-self-center">
 
 1. Enable/Disable
@@ -187,7 +187,7 @@ In the inspector, **you can edit the properties of the selected game object**, e
 
 <div class="row mx-0"><div class="col-md-4">
 
-![Unity inspector - remove component](images/inspector_remove.png)
+![Unity inspector - remove component](_images/inspector_remove.png)
 </div><div class="align-self-center col-md-8">
 
 Later, you may have to remove a component. You can do it by clicking on the 3 small dots, then "remove components".
