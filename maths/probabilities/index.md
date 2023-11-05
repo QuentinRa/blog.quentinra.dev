@@ -108,7 +108,7 @@ We are defining $\mathbb{P}(X=k)$ the probability that a discrete random variabl
 
 ➡️ See also: [Discrete Probability Examples](_examples/discrete.md).
 
-#### Formulas
+#### Discrete Formulas
 
 Using combinatorics to get the cardinal:
 
@@ -132,7 +132,7 @@ A conditional probability is when, knowing that another event $B$ occured, we wa
 * $\mathbb{P} (B \cup C|A) = \mathbb{P}(B|A) + \mathbb{P}(C|A) − \mathbb{P}(B ∩ C|A)$
 * You may be able to compute $\mathbb{P}(A|B)$ with the first formula
 
-#### Transformations
+#### Discrete Transformations
 
 We can use Bayes theorem:
 
@@ -185,7 +185,7 @@ A few other formulas that may be handy:
 * $A \subset B \to \mathbb{P}(A \cup B) = \mathbb{P}(B)$
 </div><div>
 
-#### Expected value
+#### Discrete Expected value
 
 The expected value noted $\mathbb{E}(X)$, $\mathbb{E}X$, or $\mathbb{E}[X]$ is defined by:
 
@@ -203,7 +203,7 @@ The expected value noted $\mathbb{E}(X)$, $\mathbb{E}X$, or $\mathbb{E}[X]$ is d
 * $\mathbb{E}(X) = \frac{n+1}{2}$ for an uniform probability
 * Cauchy-Schwarz: $\mathbb{E}[XY]^2 \le \mathbb{E}[X^2] * \mathbb{E}[Y^2]$
 
-#### Variance
+#### Discrete Variance
 
 The variance is the square deviation around the expected value.
 
@@ -219,7 +219,7 @@ The variance is the square deviation around the expected value.
 * $V(X + Y) = V(X) + V(Y) - 2cov(XY)$
 * $V(X)$ is also called [the second central moment](https://en.wikipedia.org/wiki/Moment_(mathematics)#Variance)
 
-#### Covariance/co-variance (cov)
+#### Discrete Covariance/co-variance (cov)
 
 It's used to evaluate the conjoint variance of two
 random variables.
@@ -238,7 +238,7 @@ random variables.
 * if $X \perp Y$ then $cov(XY) = 0$
 * $\mathbb{P}(X, Y) = \frac{cov(X,Y)}{\sqrt{V(X)*V(Y)}}$
 
-#### Independence
+#### Discrete Independence
 
 Random variables are independent ($\perp$ perp) if the product of the probabilities is equals to the probability of the events  $X_1, ..., X_n$.
 
@@ -250,7 +250,7 @@ Random variables are independent ($\perp$ perp) if the product of the probabilit
 
 ➡️ Alternative way: checking $\mathbb{P}(A|B) = \mathbb{P}(A)$ or $\mathbb{P}(B|A) = \mathbb{P}(B)$.
 
-#### Cumulative distribution function
+#### Discrete Cumulative distribution function
 
 The cumulative distribution function (CDF) $F_X(k)$ is the primitive of the mass function, meaning that deriving the CDF will give you the mass function. $F_X(k)$ is the probability of $\mathbb{P}(X \le k)$.
 
@@ -273,8 +273,6 @@ Continuous probability refers to the branch of probability theory that deals wit
 
 The probability of taking a value is 0: $P(X=k)=0$ because the probability of each elementary event is converging to 0, while the sum of all elementary events is converging to 1.
 
-We call support of X $\bigtriangleup_X$ or $X(\Omega)$ the domain of the distribution function of X. The probability of an event outside the support is 0. A distribution function is a strictly positive function where the sum of all values <small>(=probabilities)</small> is 1. It associates each value of $\Omega$ to a probability.
-
 #### Probability Density Function
 
 The probability density function $f_X(x)$ (or $f(x)$) is defined as:
@@ -295,6 +293,28 @@ or\ \mathbb{P}(x \ge b) = \mathbb{P}(x \gt b) = \int_{-\infty}^{b} f_X(x)dx
 \end{split}
 \]
 </div>
+
+#### Continuous Cumulative distribution function
+
+The cumulative distribution function (CDF) $F_X(k)$ is the primitive of the density function, meaning that deriving the CDF will give you the density function. $F_X(k)$ is the probability of $\mathbb{P}(X \le k)$.
+
+* $0 \le F_X(x) \le 1$
+* F is increasing and continue
+* $\mathbb{P}(a \le X \le b) = F_X(b) - F_X(a) = \int_{a}^{b} f_X(x)dx$
+
+#### Continuous Transformations
+
+If we can express $Y$ as $Y=aX+b$, we can find $F_Y(x)$ from $F_X(x)$.
+
+@
+F_Y(y) = F_X(\frac{y-b}{a})
+@
+
+With an increasing monotone function, we can use the formula $Y = \varphi(X)$. For example, $Y = \exp(X)$ and $\varphi^{-1}(y) = ln(y)$.
+
+@
+F_Y(y) = F_X(\varphi^{-1}(y))
+@
 </div><div>
 
 ...
