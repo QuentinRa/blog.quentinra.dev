@@ -30,15 +30,4 @@ The name Bi-variate distribution is used for the joint distribution of two varia
 
 ## Distributions
 
-Discrete distributions
-
-* [Hypergeometric distribution](dist/hyper-geometric.md)
-* [Poisson distribution](dist/poisson.md)
-
-Continuous distributions
-
-* [Normal distribution](dist/normal.md)
-* [Continuous Uniform distribution](dist/uniform-c.md)
-* [Exponential distribution](dist/exp.md)
-
 And here is a summary of all [distributions](dist/summary.md).
