@@ -49,3 +49,16 @@ Unfortunately, the graphic card may not call the game loop with a constant time 
 
 The side effect is that moving objects may not move smoothly. To fix this behavior, we use the **delta time** <small>(=time since when the last update)</small> every time we are moving something. ✍️
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* 9patches technique
+* 2D Tile maps
+</div><div>
+</div></div>

@@ -8,6 +8,7 @@ Links to find your assets (backgrounds, sprites, music, sounds, SFX, ...) for yo
 * You got quite a long [list of websites here](https://hotpot.ai/free-game-assets) ([GitHub](https://github.com/HotpotDesign/Game-Assets-And-Resources))
 * A [GitHub repository with another long list](https://github.com/Kavex/GameDev-Resources)
 * If you are on unity, [you got the Unity Assets Store](https://assetstore.unity.com/) 🙄
+* [GameDev-Resources](https://github.com/Kavex/GameDev-Resources)
 
 <hr class="sl">
 

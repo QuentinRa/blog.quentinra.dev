@@ -56,7 +56,7 @@ Games designers are redacting a **Game design document** (GDD) that covers every
 
 #### Game Mechanics
 
-Mechanics are the rules of your game. Basically, what the player can do, and what the player can't do.
+[Mechanics](https://boardgamegeek.com/browse/boardgamemechanic) are the rules of your game. Basically, what the player can do, and what the player can't do.
 
 * Can the Hero, Jump? Walk? Run? Open a door/chest/...?
 * What are the items? (perks, loot, usage)
@@ -135,6 +135,8 @@ In most games, we are not teaching everything at once. We slowly add tutorial as
 * How can users report bugs?
 * How do we plan to organize tests?
 * Will we add credits? Where?
+
+➡️ See also: [xsolla](https://xsolla.com/).
 </div><div>
 
 ### Replay value
