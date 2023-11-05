@@ -18,20 +18,6 @@ The value called **Frames Per Second** (FPS, `images par second`) is **the numbe
 
 > **TL;DR**: check for something called the "delta time" when you are updating the values of something, to make sure that you are moving something at a **constant** speed, etc.
 
-<hr class="sr">
-
-## User Interface (UI)
-
-The UserInterface (UI) is representing everything that we are showing to the user, such as a health/stamina/mana bar, a minimap, shortcuts for skills, an in-game chat, a settings icon, dialogs, looting messages, etc.
-
-The three majors aspects when dealing with UI are
-
-* Usability (easy to learn, easy to remember actions, easy to use)
-* Aesthetics (`esthétique`, match the style of your game, immersive, look good)
-* Entertaining (Microinteractions, feedback)
-
-When there isn't much interface (ex: Skyrim), we are talking about **diegetic interfaces**, by opposition with **Non-diegetic interfaces** (ex: WOW).
-
 <hr class="sl">
 
 ## Sources
@@ -39,4 +25,3 @@ When there isn't much interface (ex: Skyrim), we are talking about **diegetic in
 * [Game Development](https://gamedevelopment.tutsplus.com/) for everything related to the Game engine infrastructure and the Game Loop
 * Tutorials about the libGDX and the lwjgl3 libraries, such as [LWJGL3 - Timing](https://github.com/SilverTiger/lwjgl3-tutorial/wiki/Timing) to understand the underlay of a Game
 * Teachings at the [ENSIIE](https://www.ensiie.fr/)
-* [Art of User Interface](https://www.taskade.com/blog/user-interface-design-gaming-productivity/)
