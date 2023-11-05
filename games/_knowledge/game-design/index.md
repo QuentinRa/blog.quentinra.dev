@@ -94,6 +94,52 @@ For instance, if you are making a zombie game, you may add a stat "infected" tur
 
 <hr class="sep-both">
 
+## Game Development
+
+<div class="row row-cols-lg-2"><div>
+
+#### Technical Specifications
+
+* How is the user interacting with the game?
+    * Full Screen with F12?
+    * Settings with Escape?
+    * ...
+* Does the user need a keyboard? A mouse?
+* Is a joystick supported?
+* How can the user become strong? <small>(combos/...)</small>
+* What kind of play style should be encouraged? discouraged?
+  * are the mobs/monsters respawning?
+  * you can prevent the user from accessing some quests/areas
+
+In most games, we are not teaching everything at once. We slowly add tutorial as the users get by with the game.
+</div><div>
+
+#### Development Tools
+
+* Will you use a game engine? Which one?
+* Will you use a game templates? Which ones?
+* Which coding editors will you use?
+</div></div>
+
+<hr class="sep-both">
+
+## Production/Release
+
+<div class="row row-cols-lg-2"><div>
+
+#### Release planning
+
+* Which platforms?
+* Which platforms?
+* Will we release an Alpha? A beta?
+* How can users report bugs?
+* How do we plan to organize tests?
+* Will we add credits? Where?
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
