@@ -385,23 +385,17 @@ We write $X \sim L$ a random variable $X$ following a distribution $L$.
 
 #### Bernoulli distribution (discrete)
 
-Bernoulli is used when a random variable is either 0 or 1 (like flipping a coin, also called a binary variable).
-
-This distribution $B(p)$ represents the probability of $k$ successes with a probability of $p$.
+Bernoulli is used for binary random variables, e.g., either 0 or 1. $B(p)$ represents the probability of $k$ successes with a probability of $p$.
 
 * The mass function is $\mathbb{P}(X=k) = p^k * (1-p)^{1-k}$
 * $\mathbb{E}(X) = \ p$
 * $\mathbb{V}(X) = \ p * (1-p)$
 
-A binomial distribution is a repetition of Bernoulli distributions, so you should check binomial distribution to understand Bernoulli better.
+👉 Ex: flipping a coin.
 
 #### Binomial distribution (discrete)
 
-# Binomial distribution
-
-[Go back](..)
-
-The binomial distribution $B(n,p)$ represents the probability of success on $n$ trials with a probability of $p$.
+The binomial distribution $B(n,p)$ represents the probability of $k$ success on $n$ trials with a probability of $p$.
 
 * The mass function is
 
@@ -417,16 +411,7 @@ The binomial distribution $B(n,p)$ represents the probability of success on $n$ 
 * $\mathbb{E}(X) = \ n * p$
 * $\mathbb{V}(X) = \ n * p * (1-p)$
 
-> The probability of having $k$ successes on $n$ trials means that
->
-> * we got $k$ successes
-> * we got $n-k$ failures (the remaining trials)
->
-> So we have the probability
->
-> * $p^k$ because we want $k$ successes with p the probability of success
-> * $(1-p)^{(n-k)}$ because we want $n-k$ failures and $1-p$ if the probability of failure.
-> * and since we don't care about the order, we need to multiply by the permutations $C_n^k$
+📚 A binomial distribution is a repetition of Bernoulli distributions.
 
 #### Discrete Uniform distribution
 
@@ -444,16 +429,11 @@ Considering $[1,n]$, we would have
 
 #### Geometric distribution (discrete)
 
-The geometric distribution $\mathbb{G}(p)$ is determining the probability of the first success given a probability $p$. This is answering the question "If I have a probability of success $p$, what's the probability of the trial $k$ being the first success?".
+This distribution $\mathbb{G}(p)$ answers the question "If I have a probability of success $p$, what's the probability of the trial $k$ being the first success?"
 
 * The mass function is $\mathbb{P}(X=k) = (1-p)^{k-1} * p$
 * $\mathbb{E}(X) = \ \frac{1}{p}$
 * $\mathbb{V}(X) = \ \frac{1-p}{p^2}$
-
-> If you didn't understand the distribution function, that was quite easy. If the trial $k$ is the first success, that means that the $k-1$ first trials were failure while the trial $k$ is a success.
->
-> * $(1-p)^{k-1}$: $k-1$ failures
-> * $p$: the success
 </div><div>
 
 ...
