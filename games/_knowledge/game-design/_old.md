@@ -1,7 +1,5 @@
 # 1. Planning
 
-If you don't actually know what kind of game you will make, or at least you got some ideas, the planning is supposed to define all that. **Usually**, you may use what we call a **Game design document**, which is a document telling everything about the game. This is a sort of Scrum board, for Agile developers.
-
 > **Tip**: don't put things under the carpet, "that will be easy" or "...", because most, if not all the time, things aren't easy. That's also why you should start with nearly any content, and add things little by little.
 
 <details class="details-e">
@@ -102,11 +100,6 @@ In most games, we are not telling every combo at the start, because it would be 
 </details>
 
 > **Pro tip**: check out what others did, what's worked, what did work, what you enjoyed, what you didn't enjoy, etc., when you lack ideas.
->
-> * [1-Page Game Design Document](https://vitalzigns.itch.io/1-page-gdd)
-> * [Game Design Document (GDD) Template](https://vitalzigns.itch.io/gdd)
-> * [Game Design Document Template](https://retrocademedia.itch.io/gddtemplate)
-> * [Game Design Document Template](https://toddmitchell.itch.io/game-design-document)
 
 <hr class="sr">
 
