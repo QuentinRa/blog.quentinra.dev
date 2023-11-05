@@ -1,39 +1,4 @@
-# Vocabulary and properties
-
-We call **distribution function**, a strictly positive function where the sum of all values (=probabilities) is 1. It's a function associating each value of $\Omega$ to their probability of happening ($f(x) \to \Omega$). When $x$ is taking finite values, we are using discrete probability otherwise, we are using continuous probabilities.
-
-We call **support of X** $\bigtriangleup_X$ or $X(\Omega)$ the domain of the distribution function of X. The probability outside the support is 0. You can use that to make a sum on the support.
-
-* [Generating Functions](discrete/gf.md)
-
-<hr class="sl">
-
-## Continuous probability
-
-When $\Omega$ isn't finite, then we are using continuous probabilities. That means the support is in $\mathbb{R}$.
-
-The probability of taking a value is 0 for a continuous probability: $P(X=k)=0$. That's because the probability of each elementary event is converging to 0. And, the sum of every elementary event is converging to 1.
-
-We need to introduce the **(probability) density function** (PDF) or `fonction de densité` $f_X(x)$ (or $f(x)$). The function is defined by
-
-<div>
-\[
-\begin{split}
-\mathbb{P}(x \in X) = \int_{x \in \Delta X}^{} f_X(x)dx \\
-or\ \mathbb{P}(a \le X \le b) = \int_{a}^{b} f_X(x)dx \\
-or\ \mathbb{P}(x \le a) = \mathbb{P}(x \lt a) = \int_{a}^{+\infty} f_X(x)dx \\
-or\ \mathbb{P}(x \ge b) = \mathbb{P}(x \gt b) = \int_{-\infty}^{b} f_X(x)dx
-\end{split}
-\]
-</div>
-
-The density function **is valid if**
-
-* $\int_{-\infty}^{+\infty} f_X(x)dx = 1$. <small>Sometimes you have some restrictions like $\lambda>0$, so you can reduce the interval.</small>
-* $\forall{x},\ f_X(x) \ge 0$
-* $f_X$ is continuous
-
-The random variable $X$ is called continuous random variable (`variable aléatoire continue/réelle`).
+# Continuous probability
 
 * [Cumulative distribution function](continuous/cdf.md)
 * [Expected value and variance](continuous/moments.md)

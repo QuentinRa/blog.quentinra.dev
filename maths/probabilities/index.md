@@ -265,6 +265,44 @@ For instance, $P(X\le3) = P(X=0) + P(X=1) + P(X=2) + P(X=3)$.
 
 <hr class="sep-both">
 
+## Continuous probability
+
+<div class="row row-cols-lg-2"><div>
+
+Continuous probability refers to the branch of probability theory that deals with non-finite random variables, e.g., in $\mathbb{R}$.
+
+The probability of taking a value is 0: $P(X=k)=0$ because the probability of each elementary event is converging to 0, while the sum of all elementary events is converging to 1.
+
+We call support of X $\bigtriangleup_X$ or $X(\Omega)$ the domain of the distribution function of X. The probability of an event outside the support is 0. A distribution function is a strictly positive function where the sum of all values <small>(=probabilities)</small> is 1. It associates each value of $\Omega$ to a probability.
+
+#### Probability Density Function
+
+The probability density function $f_X(x)$ (or $f(x)$) is defined as:
+
+* $\int_{-\infty}^{+\infty} f_X(x)dx = 1$ <small>(we can reduce the interval if we have constraints)</small>
+* $\forall{x},\ f_X(x) \ge 0$
+* $f_X$ is continuous
+
+We can use it to compute probabilities:
+
+<div>
+\[
+\begin{split}
+\mathbb{P}(x \in X) = \int_{x \in \Delta X}^{} f_X(x)dx \\
+or\ \mathbb{P}(a \le X \le b) = \int_{a}^{b} f_X(x)dx \\
+or\ \mathbb{P}(x \le a) = \mathbb{P}(x \lt a) = \int_{a}^{+\infty} f_X(x)dx \\
+or\ \mathbb{P}(x \ge b) = \mathbb{P}(x \gt b) = \int_{-\infty}^{b} f_X(x)dx
+\end{split}
+\]
+</div>
+</div><div>
+
+...
+</div></div>
+
+
+<hr class="sep-both">
+
 ## Random Notes
 
 <div class="row row-cols-lg-2"><div>
