@@ -294,6 +294,8 @@ or\ \mathbb{P}(x \ge b) = \mathbb{P}(x \gt b) = \int_{-\infty}^{b} f_X(x)dx
 \]
 </div>
 
+📚 The support of X $\bigtriangleup_X$ or $X(\Omega)$ is the domain of the density function. It means a probability outside of the support is $0$. 
+
 #### Continuous Cumulative distribution function
 
 The cumulative distribution function (CDF) $F_X(k)$ is the primitive of the density function, meaning that deriving the CDF will give you the density function. $F_X(k)$ is the probability of $\mathbb{P}(X \le k)$.
@@ -301,6 +303,17 @@ The cumulative distribution function (CDF) $F_X(k)$ is the primitive of the dens
 * $0 \le F_X(x) \le 1$
 * F is increasing and continue
 * $\mathbb{P}(a \le X \le b) = F_X(b) - F_X(a) = \int_{a}^{b} f_X(x)dx$
+
+#### Continuous Inverse cumulative distribution function
+
+The Inverse cumulative distribution function or Quantile function is used when given the result $\alpha$, we are trying to find $k$.
+
+@
+\alpha = \mathbb{P}(X \le k)
+@
+
+It's written $F_X^{-1}(\alpha)$ or $Q_\alpha$.
+</div><div>
 
 #### Continuous Transformations
 
@@ -315,9 +328,27 @@ With an increasing monotone function, we can use the formula $Y = \varphi(X)$. F
 @
 F_Y(y) = F_X(\varphi^{-1}(y))
 @
-</div><div>
 
-...
+#### Continuous Expected Value
+
+The expected value $\mathbb{E}(X)$ is defined by:
+
+@
+\mathbb{E}[X] = \int_{-\infty}^{+\infty} xf_X(x)dx
+@
+
+* The density function must be integrable <small>(or the EV doesn't exist)</small>
+* if $\mathbb{E}(X) = 0$ then $X$ is centered
+* if $\mathbb{E}(X)$ is finite, then $X$ may be centered
+* $\mathbb{E}[X * Y] = \int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} x * y * f_{XY}(x , y)\ dx dy$
+
+#### Continuous Variance
+
+The variance $V(X)$ is defined by
+
+@
+V[X] = \int_{-\infty}^{+\infty} (x-\mathbb{E}[X])^2\ f_X(x)\ dx
+@
 </div></div>
 
 
@@ -342,7 +373,19 @@ Once you develop the expression, each $a$ in $a * x^i$ is the number of distribu
 ➡️ See also: [Generating Function Examples](_examples/gen.md)
 </div><div>
 
-...
+#### Transfer Theorem
+
+For a discrete variable, we will have:
+
+@
+\mathbb{E}(g(X)) = \sum_{i} g(x_i) \mathbb{P}(X = x_i)
+@
+
+For continuous variables, we will have:
+
+@
+\mathbb{E}[g(X)] = \int_{-\infty}^{+\infty} g(x) * f_X(x)\ dx
+@
 </div></div>
 
 <hr class="sep-both">
