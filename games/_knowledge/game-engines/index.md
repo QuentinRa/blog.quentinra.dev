@@ -14,6 +14,8 @@ Picking a game engine is usually a choice based on:
 * The price and/or the license constraints ✨
 * The community, support, and documentation 📚
 
+Some developpers are building frameworks and tools on top of game engines called game templates. For example, [MoreMountains](https://moremountains.com/unity-assets).
+
 </div><div class="text-center">
 
 ![Game engine](_images/architecture.png)

@@ -1,26 +1,4 @@
-# 1. Planning
-
-> **Tip**: don't put things under the carpet, "that will be easy" or "...", because most, if not all the time, things aren't easy. That's also why you should start with nearly any content, and add things little by little.
-
-> **Pro tip**: check out what others did, what's worked, what did work, what you enjoyed, what you didn't enjoy, etc., when you lack ideas.
-
-<hr class="sr">
-
-## Replay value
-
-The **replay value** or **replayability** is a score of how much more content the user could discover after completing the game once.
-
-* Alternate/different scenario
-* New challenges (new places, new classes, open-world, new difficulties, new play styles)
-* Completing the game (i.g. without missing one-time events/items, etc.)
-* Multiplayer
-* Achievements
-
-More [on Wikipedia](https://en.wikipedia.org/wiki/Replay_value#Performance_grading).
-
-<hr class="sep-both">
-
-## Game assets
+# Game assets
 
 Links to find your assets (backgrounds, sprites, music, sounds, SFX, ...) for your game.
 

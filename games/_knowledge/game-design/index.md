@@ -123,7 +123,7 @@ In most games, we are not teaching everything at once. We slowly add tutorial as
 
 <hr class="sep-both">
 
-## Production/Release
+## Others
 
 <div class="row row-cols-lg-2"><div>
 
@@ -136,16 +136,15 @@ In most games, we are not teaching everything at once. We slowly add tutorial as
 * How do we plan to organize tests?
 * Will we add credits? Where?
 </div><div>
-</div></div>
 
-<hr class="sep-both">
+### Replay value
 
-## 👻 To-do 👻
+The [replay value](https://en.wikipedia.org/wiki/Replay_value) or replayability is a score of how much more content the user could discover after completing the game once.
 
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-lg-2"><div>
-
-* [_old](_old.md)
-</div><div>
+* Alternate/different scenario
+* New challenges <small>(new locations/classes/difficulties/play styles)</small>
+* Reaching 100% of completion <small>(e.g., all quests, etc.)</small>
+* Add Multiplayer Content
+* Add Achievements
+* ...
 </div></div>
