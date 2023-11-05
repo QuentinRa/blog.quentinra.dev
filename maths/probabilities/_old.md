@@ -30,16 +30,8 @@ The name Bi-variate distribution is used for the joint distribution of two varia
 
 ## Distributions
 
-Here are some well-known distributions (Functions/Laws also called `Fonctions` or `Lois` in French)
-
-We usually write $X \sim L$ that you should read as "X follows a L distribution" (with L a distribution like Poisson/...).
-
 Discrete distributions
 
-* [Bernoulli distribution](dist/bernoulli.md)
-* [Binomial distribution](dist/binom.md)
-* [Discrete Uniform distribution](dist/uniform-d.md)
-* [Geometric distribution](dist/geometric.md)
 * [Hypergeometric distribution](dist/hyper-geometric.md)
 * [Poisson distribution](dist/poisson.md)
 
