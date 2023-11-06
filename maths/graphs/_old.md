@@ -1,12 +1,6 @@
 # Advanced Terminology
 
-* Matrix
-  * [Adjacency matrix](terms/adj.md)
-  * [Incidence matrix](terms/inc.md)
-  * [Degree matrix](terms/degree.md)
-* [Transitive closure](terms/tc.md)
 * [Spanning graph](terms/partial.md)
-* [Connected graphs](terms/connected.md)
 * [Planar graph](terms/planar.md)
 * [Graph matching](terms/matching.md)
 * [Independent set](terms/independence.md)

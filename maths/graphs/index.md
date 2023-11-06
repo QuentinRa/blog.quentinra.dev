@@ -43,7 +43,6 @@ A vertex is incident to an edge if they are connected.
 #### Order of a graph
 
 The order of a graph is $|V|$, its number of vertices. Alternative notations are: $|V(G)|$, $\\#V$, or $Card(V)$.
-</div><div>
 
 #### Predecessor and successor
 
@@ -51,6 +50,7 @@ For directed graphs, given $A \to B$:
 
 * $A$ is the predecessor of $B$
 * $B$ is the successor of $A$
+</div><div>
 
 #### Subgraph $G'$
 
@@ -61,6 +61,14 @@ A subgraph $G'$ is a graph formed from a subset of the vertices and edges of the
 The complement of a graph is a graph in which we are connecting all vertices that were not connected, and disconnected vertices that were connected.
 
 ➡️ Ex: The complementary graph of $A-B-C$ is $C-A\hspace{.5cm}B$.
+
+#### Minor of a graph
+
+The minor of a graph $G$ is graph created under these constraints:
+
+* We can remove an edge
+* We can merge connected vertices
+* We can remove a vertex $v$ of degree $d(v)=1$
 
 #### Isomorphism
 
@@ -217,7 +225,6 @@ A connected component $C$ is a subgraph of a graph in which every vertex is conn
 ➡️ When iterate vertices, it's faster to look for vertices that are not in a connected component and that are incident to a vertex in your $C_i$.
 
 📚 An articulation point is a vertex that disconnects the graph if we remove it. If it's an edge, we call it a bridge.
-</div><div>
 
 #### Super-connectivity
 
@@ -226,12 +233,33 @@ A graph is super-connected if, from any vertex, we can go to any other vertex. A
 **Algorithm**
 
 * while there are vertices not marked
-  * pick a vertex and mark it "+" and "-"
-  * mark all vertices we can reach from it with "+"
-  * mark all vertices that can reach it with "-"
-  * all marked vertices with "+" and "-" are part of the same super-connected component.
+    * pick a vertex and mark it "+" and "-"
+    * mark all vertices we can reach from it with "+"
+    * mark all vertices that can reach it with "-"
+    * all marked vertices with "+" and "-" are part of the same super-connected component.
 
 📚 If $C_1, C_2, C_3$ are super-connected components, then a graph having for nodes $C_1, C_2, C_3$ is called reduced graph. If $A \in C_1$ was adjacent to $B \in C_2$ then $C_1$ is adjacent to $C_2$.
+</div><div>
+
+#### Planar Graph
+
+A planar graph is a graph that could be drawn in such a way that no edges cross each other. 
+
+A face is a surface of the graph delimited by edges. It can be bounded (finite) or external/outer/unbounded (infinite) face.
+
+The bounds are a list of edges delimiting a face.
+
+Assuming $m=|E|$, $n=|V|$ and $f=|faces|$.
+
+* **Euler's formula**: $n-m+f=2$. It means $f=m-n+2$.
+* **Euler's formula**: Planar if $m < 3n - 5$ in a connected graph
+* **Kuratowski's + Robertson–Seymour theorems**: $K_{3,3}$, $K_5$, their subgraphs, and their graph minor are not planar.
+* if $\forall{i \in V},\ d(i) \gt 5$ then the graph is not planar
+* if $\exists{i \in V},\ d(i) \lt 6$ is false, then the graph is not planar
+* if $f \le 2n - 4$, then the graph is planar
+* if there are no cycles of length 3, and $m \le 2n-4$, then the graph is planar
+
+📚 A dual graph is made by using the faces as vertices. If $A \in F_1$ was adjacent to $B \in F_2$ then we $F_1$ is adjacent to $F_2$.
 </div></div>
 
 <hr class="sep-both">
