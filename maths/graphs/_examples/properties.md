@@ -119,3 +119,49 @@ The complete algorithm (text)
 * **picking F**
 * done
 </div></div>
+
+<hr class="sep-both">
+
+## Planar Graph Example
+
+<div class="row row-cols-lg-2"><div>
+
+Are the following graphs planar?
+
+![Determine If They Are Planar Graph](../_images/planar/planar1.png)
+
+##### Planar Graph Example Graph 1
+
+The first graph is planar because it's $K_5$.
+
+##### Planar Graph Example Graph 2
+
+The second one is planar as it as at least one planar representation.
+
+![Planar 1 Graph 1](../_images/planar/planar1-2.png)
+
+✅ $n + m = f = 2$ <small>($n=5$, $m=9$, $f=6$=five+the outer face)</small>.
+
+##### Planar Graph Example Graph 3
+
+A subgraph of the third graph is $K_{3,3}$ so it's not a planar graph.
+
+![Planar Graph Invalid 1](../_images/planar/planar1-3.png)
+</div><div>
+
+##### Planar Graph Example Graph 4
+
+The fourth graph $m=12 \le 6 * 3 - 5 \le 13$, so the graph is planar. Simply move the vertices "4" and "5" to the locations I marked.
+
+![Planar Graph 4](../_images/planar/planar1-4.png)
+
+##### Planar Graph Example Graph 5
+
+All degrees are equals to $6$, so the graph is not planar. Alternatively, we could have used the formula $m < 3n - 5$.
+
+##### Planar Graph Example Graph 6
+
+We can merge vertices and get the minor of the graph which is $K_6$. If we remove any vertex, we got the subgraph $K_5$. As per Robertson–Seymour theorem, it's not a planar graph.
+
+![Planar Graph Invalid 2](../_images/planar/planar1-5.png)
+</div></div>
