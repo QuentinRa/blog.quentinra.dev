@@ -1,33 +1,5 @@
 # Cycle basis
 
-[Go back](..#advanced-terminology)
-
-Let $E$ the set of edges, **ordered**. If you are not given an order for the edges, create one. If the graph is not directed, arbitrarily pick a direction for each edge.
-
-We are writing each cycle as a vector of values such as $C_n = (0, ...,1,-1)$
-
-* $0$: if the edge is not inside the cycle
-* $1$: if the edge is inside the cycle, in the same direction
-* $-1$: if the edge is inside the cycle, not in the same direction
-
-A cycle basis $B$ is a set of cycles as vectors, so that the basis is linearly independent and generating (``libre et génératrice``). Something like $B=\\{C_1,C_2\\}$.
-
-We are written $\mu(G)$ (mu) the number of elements of a cycle basis, with $\mu(G) = m − n + p$ and $p$ the number of connected components.
-
-<hr class="sl">
-
-# Co-cycle basis
-
-We are calling co-cycles (`cocycles`) of $A$, the set of arcs incident of $A$, noted $\omega{(A)}$.
-
-* $1$: if an edge $(a,b)$ got $a$ inside the co-cycle, $b$ outside
-* $-1$: if an edge $(a,b)$ got $b$ inside the co-cycle, $a$ outside
-* $0$: otherwise
-
-A co-cycle basis $B$ is a set of co-cycles as vectors so that the basis is linearly independent and generating (``libre et génératrice``). Something like $B=\\{C_1,C_2\\}$.
-
-We are written $\gamma(G)$ (gamma) the number of elements of a cycle basis, with $\gamma(G) = n - p$ and $p$ the number of connected components.
-
 <hr class="sr">
 
 ## Exercise 1 - cycle basis

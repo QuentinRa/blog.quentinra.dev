@@ -260,6 +260,28 @@ Assuming $m=|E|$, $n=|V|$ and $f=|faces|$.
 * if there are no cycles of length 3, and $m \le 2n-4$, then the graph is planar
 
 📚 A dual graph is made by using the faces as vertices. If $A \in F_1$ was adjacent to $B \in F_2$ then we $F_1$ is adjacent to $F_2$.
+
+#### Cycle basis
+
+First, all edges must be ordered. For undirected graphs, arbitrarily pick a direction for each edge. We will have a vector $C_n = (0, ...,1,-1)$ for each cycle where:
+
+* $0$ represents an edge not inside the cycle
+* $1$ represents an edge inside the cycle and in the same direction
+* $-1$ represents an edge inside the cycle and in another direction
+
+A cycle basis $B$ is a set of cycles as vectors, so that the basis is linearly independent and generating. The notation is: $B=\\{C_1,\ldots,C_n\\}$.
+
+Mu $\mu(G)$ is the number of elements of a cycle basis, with $\mu(G) = m − n + p$ and $p$ the number of connected components.
+
+#### Co-cycle basis
+
+The co-cycles of $A$ is the set of arcs incident of $A$, noted $\omega{(A)}$. It is slightly different from a cycle basis.
+
+* If given $(a,b)$, $a$ is inside and $b$, we use $1$
+* If given $(a,b)$, $b$ is inside and $a$, we use $-1$
+* Otherwise, we use $0$
+
+We use $\gamma(G)$ (gamma) instead of $\mu(G)$, with $\gamma(G) = n - p$.
 </div></div>
 
 <hr class="sep-both">
