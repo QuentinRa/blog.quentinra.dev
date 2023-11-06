@@ -138,6 +138,43 @@ In a bipartite graph, each vertex in the first group must be adjacent to $a$ ver
 
 <hr class="sep-both">
 
+## Graph Representations
+
+<div class="row row-cols-lg-2"><div>
+
+➡️ See also: [Graph Representations Examples](_examples/representations.md). 
+
+#### Adjacency Matrix
+
+This is a square matrix. Assuming we are at row=A and col=B, 
+
+* If $A \to B$ exists, the element is $1$
+* Otherwise, the element is $0$
+
+➡️ In an undirected graph, the matrix is symmetric.
+
+➡️ If there is a loop, e.g., $A\to A$, the element's value is $2$.
+
+📚 $M^p$ is the adjacent matrix after $p$ transition.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Graph Properties and Concepts
+
+<div class="row row-cols-lg-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Sorting and search
 
 <div class="row row-cols-lg-2"><div>
