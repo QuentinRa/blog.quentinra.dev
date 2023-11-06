@@ -73,46 +73,67 @@ Two graphs G and H are isomorphic if you can relabel the vertices of one of them
 
 <div class="row row-cols-lg-2"><div>
 
-➡️ Each graph can be directed or not, e.g., "directed walk".
+➡️ Each graph name can be directed or not, e.g., "directed walk."
 
-##### Walk
+#### Walk
 
 A sequence of edges and vertices. A walk may include repeated vertices and edges, and all vertices must be connected.
 
-##### Chain
+#### Chain
 
 It is a walk in which all vertices have degree 2 except for the two endpoints, which have degree 1.
 
-##### Trail
+#### Trail
 
 A walk in which all edges are distinct.
 
-##### Path $P_n$
+#### Path $P_n$
 
 A trail in which all vertices are distinct.
+
+#### k-regular graph
+
+A regular graph or k-regular graph is a graph where all vertices have the same degree $d=k$. For instance, a 3-regular graph means $d=3$.
+
+#### Complete graph $K_n$
+
+Every vertex is adjacent to all other vertices aside from itself. It means that $|V| = \frac{n(n-1)}{2}$.
+
+📚 We call density the number of edges of our graph divided by the number of edges of the associated complete graph.
+
+📚 A clique is a subgraph that is complete. 
 </div><div>
 
-##### Circuit $C_n$
+#### Circuit $C_n$
 
 A closed trail in which the first and last vertices are equal.
 
-##### Cycle $C_n$
+#### Cycle $C_n$
 
 A closed path that starts and ends at the same vertex. Basically, it's a circuit in which **only** the first and last vertices are equal.
 
 📚 A graph without cycles is called an acyclic graph.
 
-##### Star $S_n$
+#### Star $S_n$
 
 One vertex is connected to all other vertices. It has a  degree of $d(v_i)=|V|-1$ while the others have a degree of $d(v_i)=(v)=1$.
 
-##### Wheel $W_n$
+#### Wheel $W_n$
 
 A vertex is connected to all other vertices ($d(v_i)=|V|-1$) that are connected to two vertices aside from the "center" ($d(v_i)=3$).
 
-##### Butterfly/Hourglass
+#### Butterfly/Hourglass
 
 One vertex degree is $|V|-1=4$ and the others are of degree $2$. The graph is made of $6$ edges and $5$ vertices.
+
+#### Bipartite graph $K_{a,b}$
+
+Assuming we can isolate the vertex if two groups:
+
+* The group of vertices of degree $a$
+* The group of vertices of degree $b$ with $b > a \ge 1$
+
+In a bipartite graph, each vertex in the first group must be adjacent to $a$ vertex in the second <small>(resp. second group and $b$)</small>.
 </div></div>
 
 <hr class="sep-both">
