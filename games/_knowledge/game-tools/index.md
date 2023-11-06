@@ -5,6 +5,7 @@
 #### Game Content Tools
 
 * [rapidquest](https://github.com/radiantone/rapidquest) (quests)
+* [Donjon.bin.sh](https://donjon.bin.sh/) (generate data for RPG)
 
 #### Map Generation Tools
 
@@ -36,9 +37,13 @@
 
 #### Platforms for creators
 
+* [itch.io](https://itch.io/)
 * [patreon.com](https://www.patreon.com/home)
 * [gumroad.com](https://gumroad.com/) (👻)
 * [thingiverse](https://www.thingiverse.com/) (👻)
+* [Kavex / GameDev-Resources ](https://github.com/Kavex/GameDev-Resources)
+* [HotpotDesign#Free Game Assets](https://github.com/HotpotDesign/Game-Assets-And-Resources) + [Hotpot Design](https://hotpot.ai/free-game-assets)
+* [Unity Asset Store](https://assetstore.unity.com/) (UAS)
 
 #### Mesh
 
@@ -48,9 +53,22 @@
 
 * [wenrexa](https://wenrexa.itch.io/wenrexa-game-assets-1) (content creator)
 * [Free Game Assets](https://itch.io/s/11302/november-2023-mega-bundle-game-assets-save-97) (content creator)
+
+#### 3D assets
+
+* [polyhaven](https://polyhaven.com/) (beautiful, free)
+* [textures](https://textures.com/) (beautiful, paid)
+* [Plaintextures](https://www.plaintextures.com/index)
+* [gametextures](https://gametextures.com/shop?order=new&s=) (paid)
+* [quixel](https://quixel.com/megascans/home) (paid)
+* Hum?
+    * [free3d](https://free3d.com/)
+    * [archive3d](https://archive3d.net/)
+* [Quaternius](https://quaternius.com/index.html) (beautiful 😱, poly)
+* [3dmodelscc0](https://www.3dmodelscc0.com/) (CC0)
 </div><div>
 
-##### 2D/3D/AR/VR assets
+#### 2D/3D/AR/VR assets
 
 * [sketchfab.com](https://sketchfab.com/) (3D/AR, 👻)
 * [3dwarehouse](https://3dwarehouse.sketchup.com/) (3D, 👻)
@@ -58,12 +76,26 @@
 * [quaternius](https://quaternius.com/index.html) (👻)
 * [polyhaven](https://polyhaven.com/) (CC0, 👻)
 
-##### Music
+#### Music, sounds, and SFX
 
 * [fl-studio](https://www.image-line.com/fl-studio/) (👻)
+* [FreePD](https://freepd.com/) (✨, CC0)
+* [unminus](https://www.unminus.com/)
+* [ccmixter](http://dig.ccmixter.org/)
+* [freesfx](https://freesfx.co.uk/Default.aspx) (SFX)
+* [zapsplat](https://www.zapsplat.com/) (SFX)
+* [gamesounds](https://gamesounds.xyz/) (Royalty Free)
+* [jamendo](https://www.jamendo.com/start) (Royalty Free)
+* [musopen](https://musopen.org/) (Royalty Free, piano/...)
+* [Octave/8ve](http://raisedbeaches.com/octave/index.html) (UI SFX)
+* [PacDV](https://www.pacdv.com/sounds/index.html) (Royalty Free)
 
 #### Random
 
 * [pvgames](https://pvgames.itch.io/) (2.5D, 🚀)
+* [pipoya](https://pipoya.itch.io/) (2D Assets)
 * [kaylousberg](https://kaylousberg.itch.io/) (👻)
+* [Superpowers Asset Packs](https://github.com/sparklinlabs/superpowers-asset-packs)
+* [Rpg Maker VX Resource Planet](https://vxresource.wordpress.com/)
+* [Pokemon Fan Game Assets](https://pokemonfangames.com/resource/pokemon-essentials-bw/)
 </div></div>

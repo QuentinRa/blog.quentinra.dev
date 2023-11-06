@@ -8,11 +8,17 @@ Tools and websites that are useful when dealing with images 🖼️.
 
 <div class="row row-cols-lg-2"><div>
 
-See also: [Game Assets](../content/assets.md).
+See also: [Game Assets](/games/_knowledge/game-tools/index.md#game-assets).
 
 ##### Backgrounds
 
 * [hdqwalls](https://hdqwalls.com/)
+* [pixabay](https://pixabay.com/)
+* [unsplash](https://unsplash.com/)
+* [Wallpaper Abyss](https://wall.alphacoders.com/)
+* [vecteezy](https://www.vecteezy.com/)
+* [Haikei](https://haikei.app/) (👻)
+* [kronbits](https://kronbits.itch.io/backgrounds)
 
 <br>
 
@@ -133,6 +139,7 @@ Stuff that I found, but never read/used yet.
 * [IRA Design](https://iradesign.io/) (illustrations)
 * [humaaans](https://humaaans.com/) (illustrations)
 * [joesch.moe](https://joesch.moe/)
+* [artbreeder](https://www.artbreeder.com/)
 * motion leap
 * MidJourney
 </div></div>
