@@ -26,14 +26,6 @@ Graphs can be simple/complex and directed/undirected.
 
 [Glossary of graph theory](https://en.wikipedia.org/wiki/Glossary_of_graph_theory)
 </div><div>
-
-##### Cycle
-
-Closed walk.
-
-##### Tour/Circuit
-
-Closed trail.
 </div></div>
 
 <hr class="sep-both">
@@ -61,7 +53,27 @@ A walk in which all edges are distinct.
 A trail in which all vertices are distinct.
 </div><div>
 
-...
+#### Circuit $C_n$
+
+A closed trail in which the first and last vertices are equal.
+
+#### Cycle $C_n$
+
+A closed path that starts and ends at the same vertex. Basically, it's a circuit in which **only** the first and last vertices are equal.
+
+📚 A graph without cycles is called an acyclic graph.
+
+#### Star $S_n$
+
+One vertex is connected to all other vertices. It has a  degree of $d(v_i)=|V|-1$ while the others have a degree of $d(v_i)=(v)=1$.
+
+#### Wheel $W_n$
+
+A vertex is connected to all other vertices ($d(v_i)=|V|-1$) that are connected to two vertices aside from the "center" ($d(v_i)=3$).
+
+#### Butterfly/Hourglass
+
+One vertex degree is $|V|-1=4$ and the others are of degree $2$. The graph is made of $6$ edges and $5$ vertices.
 </div></div>
 
 <hr class="sep-both">
