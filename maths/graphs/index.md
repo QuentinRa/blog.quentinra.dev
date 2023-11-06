@@ -168,7 +168,25 @@ The incident matrix extends the adjacency matrix by integrating the notion of di
 If both $-1$ and $1$ are possible, pick one. If you remove all the minus signs, you get back the adjacency matrix.
 </div><div>
 
-...
+#### Degree Matrix
+
+It's a diagonal matrix with the degree of each vertex. For instance, if $d(A)=4$ then $a_{A,A} = 4$.
+
+#### Transitive closure
+
+The transitive closure $\tau$ (tau) is achieved by adding all the edges that can be deduced by transitivity.
+
+For instance, if we have $(a,b)$ and $(b,c)$, then we will create $(a,c)$ if $(a,c)$ doesn't exist.
+
+**Roy–Warshall algorithm** (also called Floyd–Warshall)
+
+* for each vertex $V$
+    * for each predecessor of $V$, $p$
+        * for each successor of $V$, $s$
+            * if $p \neq s$
+            * add $(p,s)$ if $(p,s)$ does not exist
+
+Complexity: $O(n * n * n)$
 </div></div>
 
 <hr class="sep-both">
