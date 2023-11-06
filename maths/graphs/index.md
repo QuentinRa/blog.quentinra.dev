@@ -290,6 +290,8 @@ We use $\gamma(G)$ (gamma) instead of $\mu(G)$, with $\gamma(G) = n - p$.
 
 <div class="row row-cols-lg-2"><div>
 
+➡️ See also: [Sorting and search Examples](_examples/search.md).
+
 #### Topological sorting
 
 It's a process to sort vertices. Each vertex is before its successors.
@@ -300,7 +302,7 @@ It's a process to sort vertices. Each vertex is before its successors.
 
 #### Depth-first search
 
-A technique to search a vertex. We will explore a path until the end, then go back and explore its branches until we traversed every branch.
+A technique to explore a graph. We will explore a path until the end, then go back and explore its branches until we traversed every branch.
 
 **Algorithm**
 
@@ -315,7 +317,7 @@ Complexity: $O(|V|+|E|)$.
 
 #### Breadth-first search
 
-A technique to search a vertex. We will progressively explore the neighbors of each vertex.
+A technique to explore a graph. We progressively explore the neighbors of each vertex until we have visited every vertex.
 
 **Algorithm**
 

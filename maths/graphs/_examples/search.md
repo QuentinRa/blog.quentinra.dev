@@ -1,19 +1,20 @@
-# XXX Examples
+# Sorting and search Examples
 
 <hr class="sep-both">
 
 ## Depth-first search Example
 
-Use the Depth-first search on this graph.
+<div class="row row-cols-lg-2"><div>
 
-![Depth-first search](images/dfs.svg)
+Use the Depth-first search to explore the following graph:
 
-We are starting at **h** because that's my choice. I will use the syntax $\text{a, b, c} \to \text{a}$ to say that among the available neighbor vertex, I picked $a$.
+![Depth-first search](../_images/search/dfs.svg)
+</div><div>
 
-* a vertex is available if it's not inside "done"
-* when picking a vertex, it's random among the vertices that are not in Marked
+The starting point is **h** (arbitrarily).
 
-I used a table to make things easier to look at.
+Below, $\text{a, b, c} \to \text{a}$, means that among the vertices, I picked the vertex $a$, according to the algorithm after examining "marked" and "done".
+</div></div>
 
 <table class="table table-bordered table-striped">
     <thead>
@@ -168,48 +169,51 @@ I used a table to make things easier to look at.
     </tbody>
 </table>
 
-"Marked" is the algorithm result, as you can see exactly what path we took. But if you want all the vertex we found, then that's the value of "done".
-
 <hr class="sep-both">
 
 ## Breadth-first search Example
 
-Use the Breadth-first search on this graph.
+<div class="row row-cols-lg-2"><div>
 
-![](images/dfs.svg)
+Use the Breadth-first search to explore the following graph:
 
-I'm starting from $\text{h}$.
+![Breadth-first search](../_images/search/bfs.svg)
+
+The starting point is **h** (arbitrarily).
 
 * h
-    * $n(\text{h}) = \text{i}$
-    * $\text{list} = \text{( i )}$
+  * $n(\text{h}) = \text{i}$
+  * $\text{list} = \text{( i )}$
 * i
-    * $n(\text{i}) = \text{j, g}$
-    * $\text{list} = \text{( j, g )}$
+  * $n(\text{i}) = \text{j, g}$
+  * $\text{list} = \text{( j, g )}$
 * j
-    * $n(\text{j}) = \text{e}$
-    * $\text{list} = \text{( g, e )}$
+  * $n(\text{j}) = \text{e}$
+  * $\text{list} = \text{( g, e )}$
 * g
-    * $n(\text{j}) = \text{f, d}$
-    * $\text{list} = \text{( e, f, d )}$
-* e
-    * $n(\text{e}) = \text{b, a}$
-    * $\text{list} = \text{( f, d, b, a )}$
-* f
-    * $\text{list} = \text{( d, b, b, a )}$
-* d
-    * $n(\text{d}) = \text{k, c}$
-    * $\text{list} = \text{( b, a, k, c )}$
-* b
-    * $\text{list} = \text{( a, k, c )}$
-* a
-    * $\text{list} = \text{( k, c )}$
-* k
-    * $\text{list} = \text{( c )}$
-* c
-    * $\text{list} = \text{empty}$
+  * $n(\text{j}) = \text{f, d}$
+  * $\text{list} = \text{( e, f, d )}$
+</div><div>
 
-So the result is $h-i-j-g-e-f-d-b-a-k-c$.
+* e
+  * $n(\text{e}) = \text{b, a}$
+  * $\text{list} = \text{( f, d, b, a )}$
+* f
+  * $\text{list} = \text{( d, b, b, a )}$
+* d
+  * $n(\text{d}) = \text{k, c}$
+  * $\text{list} = \text{( b, a, k, c )}$
+* b
+  * $\text{list} = \text{( a, k, c )}$
+* a
+  * $\text{list} = \text{( k, c )}$
+* k
+  * $\text{list} = \text{( c )}$
+* c
+  * $\text{list} = \text{empty}$
+
+We found the vertices: $h-i-j-g-e-f-d-b-a-k-c$.
+</div></div>
 
 <hr class="sep-both">
 
