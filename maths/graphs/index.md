@@ -25,24 +25,7 @@ Graphs can be simple/complex and directed/undirected.
 <div class="row row-cols-lg-2"><div>
 
 [Glossary of graph theory](https://en.wikipedia.org/wiki/Glossary_of_graph_theory)
-
-#### Special Graphs
-
-➡️ Can be directed or not.
-
-##### Path
-
-Unique edges + vertices.
-
-##### Trail
-
-Unique edges.
-
-##### Walk/Chain
-
-Sequence edges + vertices.
 </div><div>
-
 
 ##### Cycle
 
@@ -51,6 +34,34 @@ Closed walk.
 ##### Tour/Circuit
 
 Closed trail.
+</div></div>
+
+<hr class="sep-both">
+
+## Well-known Graphs
+
+<div class="row row-cols-lg-2"><div>
+
+➡️ Each graph can be directed or not, e.g., "directed walk".
+
+##### Walk
+
+A sequence of edges and vertices. A walk may include repeated vertices and edges, and all vertices must be connected.
+
+##### Chain
+
+It is a walk in which all vertices have degree 2 except for the two endpoints, which have degree 1.
+
+##### Trail
+
+A walk in which all edges are distinct.
+
+##### Path ($P_n$)
+
+A trail in which all vertices are distinct.
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">

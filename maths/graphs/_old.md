@@ -15,19 +15,6 @@
     <tbody>
         <tr>
             <td>
-                chain/walk $P_n$ <br>
-                <code>Chaine</code>
-            </td>
-            <td>
-                path/trail $P_n$ <br>
-                <code>chemin</code>
-            </td>
-            <td>
-                Each vertex degree is 2 aside from the extremities (degree=1). If the graph is directed, we must be able to go from one extremity to the other.
-            </td>
-        </tr>
-        <tr>
-            <td>
                 cycle/tour $C_n$ <br>
                 <code>cycle</code>
             </td>
