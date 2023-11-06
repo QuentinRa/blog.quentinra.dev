@@ -292,52 +292,39 @@ We use $\gamma(G)$ (gamma) instead of $\mu(G)$, with $\gamma(G) = n - p$.
 
 #### Topological sorting
 
-You can sort a graph using
+It's a process to sort vertices. Each vertex is before its successors.
 
-This is an order in which each vertex is before its successors. You will start with the vertex having no successors, then
-
-* remove them from the Graph
-* new vertex without successor (or with less successor) should appear
-
-Repeat until the graph is empty.
+* While there are still vertices
+  * Pick the vertex with the fewest successors
+  * Remove it from the graph
 
 #### Depth-first search
 
-You can search a graph using
-
-In French it's called `Parcours en profondeur`. To summarize, you will traverse a path until you can't go further, then come back to a previous branching and do it again until you traversed every branch.
+A technique to search a vertex. We will explore a path until the end, then go back and explore its branches until we traversed every branch.
 
 **Algorithm**
 
-* randomly pick a starting vertex
-* make it as traversed
-* then
-    * randomly pick of a neighbor not traversed and not "done"
-    * if you can
-        * then mark the vertex as traversed
-        * repeat
-    * else
-        * then mark this vertex as "done"
-        * go back to the previously traversed vertex
-        * if there is no traversed vertex remaining, then you are done
+* Randomly pick a starting vertex
+* Mark it as traversed
+* Repeat until the vertex is found or all vertices are tagged "done"
+  * Try to randomly pick of a neighbor not traversed and not done
+  * If it's possible, mark the vertex as traversed
+  * Otherwise, mark the vertex as "done", and go back to the previously traversed vertex.
 
 Complexity: $O(|V|+|E|)$.
 
 #### Breadth-first search
 
-You can search a graph using
-
-In French it's called `Parcours en largeur`. You will pick a vertex, mark its neighbors until each vertex's neighbors are marked.
+A technique to search a vertex. We will progressively explore the neighbors of each vertex.
 
 **Algorithm**
 
-* randomly pick a starting vertex
-* add your vertex's neighbors in a list $S$
-* mark your vertex
-* then until you have a vertex in the list $S$
-    * pick the first vertex
-    * mark it, and remove it from $S$
-    * add its neighbors in $S$, if they aren't already inside, or already marked
+* Randomly pick a starting vertex
+* Add the vertex neighbors in $S$ and tag it "done"
+* Repeat until $S$ is empty
+  * Pick the first vertex in the list
+  * Tag it "done" and remove it from $S$
+  * Add its neighbors in $S$ if they aren't in $S$ nor tagged "done"
 
 Complexity: $O(|V|+|E|)$.
 </div><div>
