@@ -16,31 +16,6 @@ Links to find your assets (backgrounds, sprites, music, sounds, SFX, ...) for yo
 
 * [Donjon.bin.sh](https://donjon.bin.sh/) (generate data for RPG)
 * [boardgamizer](http://www.boardgamizer.com/) ("Board Game Design Idea Generator")
-* [Video Game Name Generator](https://videogamena.me/) (😂)
-
-<hr class="sr">
-
-## Sprites
-
-* [RpgMaker kind of characters - generator](https://junkhunt.net/vx/charachip.shtml) (generate 2D characters in many directions+faces, using RPGMaker character generator, online, free, in Japanese)
-* [Game Character Hub](https://www.gamecharacterhub.com/) (generate 2D characters in many directions+faces, using RPGMaker character generator, paid?)
-* If you are using PVGames sprites, you can use [Nightmare_82 tool](https://gitlab.com/Nightmare_82/charactercreator/) to generate faces, sprites in a lot of versions (jump, walk, sleeping, etc.), and in 8 directions.
-
-> Generate some avatars with [joeschmoe](https://joeschmoe.io/). You can check [humaaans](https://humaaans.com/) or [ira](https://iradesign.io/) too. I doubt you will use any of these in a game, but maybe somewhere else?
-
-<hr class="sl">
-
-## Interface
-
-* [wenrexa](https://wenrexa.itch.io/wenrexa-game-assets-1) (the **best** for UI-related stuff 😍, around $50)
-* [Free Game Assets (MEGA BUNDLE, each a month)](https://itch.io/s/11302/august-2021-mega-bundle-game-assets-save-97) (a lot of stuff, but I didn't use them yet 🤔)
-
-<hr class="sr">
-
-## Icons
-
-* [freepik](https://www.freepik.com/)
-* [flaticon](https://www.flaticon.com/)
 
 <hr class="sr">
 

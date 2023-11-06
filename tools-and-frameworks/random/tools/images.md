@@ -29,6 +29,8 @@ See also: [Game Assets](../content/assets.md).
 * [Font Awesome](https://fontawesome.com/search) (free with credits)
 * [iconsflow](https://iconsflow.com/) or [iconscout](https://iconscout.com/)
 * [svgrepo](https://www.svgrepo.com/)
+* [freepik](https://www.freepik.com/)
+* [flaticon](https://www.flaticon.com/)
 
 <br>
 
@@ -128,6 +130,9 @@ Stuff that I found, but never read/used yet.
 * [photofeeler](https://www.photofeeler.com/)
 * [pfpmaker](https://pfpmaker.com/)
 * [icons8](https://icons8.com/)
+* [IRA Design](https://iradesign.io/) (illustrations)
+* [humaaans](https://humaaans.com/) (illustrations)
+* [joesch.moe](https://joesch.moe/)
 * motion leap
 * MidJourney
 </div></div>
