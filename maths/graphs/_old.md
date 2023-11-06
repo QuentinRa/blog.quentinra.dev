@@ -1,28 +1,8 @@
 # Advanced Terminology
 
 * [Spanning graph](terms/partial.md)
-* [Planar graph](terms/planar.md)
 * [Graph matching](terms/matching.md)
 * [Independent set](terms/independence.md)
-* [Cycle basis](terms/cycle_basis.md)
-
-<hr class="sr">
-
-## Sorting and search
-
-You can sort a graph using
-
-* [Topological sorting](manip/ts.md)
-
-You can search a graph using
-
-* [Depth-first search](manip/dfs.md)
-* [Breadth-first search](manip/bfs.md)
-
-And you can solve the problems of passing once by an edge/a vertex with
-
-* [Eulerian graph](manip/euler.md)
-* [Hamiltonian graph](manip/hamilton.md)
 
 <hr class="sl">
 

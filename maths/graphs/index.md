@@ -290,10 +290,97 @@ We use $\gamma(G)$ (gamma) instead of $\mu(G)$, with $\gamma(G) = n - p$.
 
 <div class="row row-cols-lg-2"><div>
 
-...
+#### Topological sorting
+
+You can sort a graph using
+
+This is an order in which each vertex is before its successors. You will start with the vertex having no successors, then
+
+* remove them from the Graph
+* new vertex without successor (or with less successor) should appear
+
+Repeat until the graph is empty.
+
+#### Depth-first search
+
+You can search a graph using
+
+In French it's called `Parcours en profondeur`. To summarize, you will traverse a path until you can't go further, then come back to a previous branching and do it again until you traversed every branch.
+
+**Algorithm**
+
+* randomly pick a starting vertex
+* make it as traversed
+* then
+    * randomly pick of a neighbor not traversed and not "done"
+    * if you can
+        * then mark the vertex as traversed
+        * repeat
+    * else
+        * then mark this vertex as "done"
+        * go back to the previously traversed vertex
+        * if there is no traversed vertex remaining, then you are done
+
+Complexity: $O(|V|+|E|)$.
+
+#### Breadth-first search
+
+You can search a graph using
+
+In French it's called `Parcours en largeur`. You will pick a vertex, mark its neighbors until each vertex's neighbors are marked.
+
+**Algorithm**
+
+* randomly pick a starting vertex
+* add your vertex's neighbors in a list $S$
+* mark your vertex
+* then until you have a vertex in the list $S$
+    * pick the first vertex
+    * mark it, and remove it from $S$
+    * add its neighbors in $S$, if they aren't already inside, or already marked
+
+Complexity: $O(|V|+|E|)$.
 </div><div>
 
-...
+And you can solve the problems of passing once by an edge/a vertex with
+
+#### Eulerian graph
+
+A graph is Eulerian if **all vertex's degrees are even**, and it has a **cycle/circuit** traversing **each edge once** (=Eulerian cycle/circuit).
+
+A graph is **semi-Eulerian** if
+
+* exactly 2 degrees are odd
+* it has an Eulerian chain/path traversing **each edge once**
+
+Legends are saying that we are adding "semi-" before Eulerian because adding one vertex will make the graph Eulerian.
+
+**Algorithm**
+
+Remember: a bridge (=`isthme`) is an edge that once removed will disconnect the graph. You got one in semi-eulerian graphs.
+
+* let $S$ be the list of traversed edges
+* randomly pick a vertex (unless you got a bridge, as you must start at one of the bridge extremities)
+* while all the edges are not in $S$
+    * we are looking at our current vertex incident edges
+    * if all of them are in $S$ then "fail"
+    * else if we have exactly one edge that isn't in $S$, then we traverse it
+    * else we randomly traverse one of the edges that are nor bridge, nor in $S$
+
+Traversing means adding it to $S$ and changing our current vertex.
+
+#### Hamiltonian graph
+
+A Hamiltonian graph is a **connected graph**, that has a cycle/circuit traversing **each vertex once** (=Hamiltonian cycle/circuit).
+
+We are adding "semi-" before Hamiltonian if the graph has a chain/path traversing **each vertex once** instead of a cycle/circuit.
+
+**Algorithm**
+
+There isn't a proper algorithm. A graph will be Hamiltonian for sure if
+
+* $n \ge 3$ and all degrees are $\ge \frac{n}{2}$
+* or, $n \ge 3$ and $\forall{x,y}$ not neighbor, $d(x)+d(y) \ge n$
 </div></div>
 
 <hr class="sep-both">
