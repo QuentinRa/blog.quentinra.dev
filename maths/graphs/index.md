@@ -156,6 +156,16 @@ This is a square matrix. Assuming we are at row=A and col=B,
 ➡️ If there is a loop, e.g., $A\to A$, the element's value is $2$.
 
 📚 $M^p$ is the adjacent matrix after $p$ transition.
+
+#### Incidence Matrix
+
+The incident matrix extends the adjacency matrix by integrating the notion of direction needed by directed graphs. At row=A and col=B:
+
+* If $A \to B$ exists, the element is $-1$
+* If $B \to A$ exists, the element is $1$
+* Otherwise, the element is $0$
+
+If both $-1$ and $1$ are possible, pick one. If you remove all the minus signs, you get back the adjacency matrix.
 </div><div>
 
 ...

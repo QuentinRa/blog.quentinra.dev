@@ -56,3 +56,35 @@ The adjacency matrix is:
 \]
 </div>
 </div></div>
+
+<hr class="sep-both">
+
+## Incidence Matrix Example
+
+<div class="row row-cols-lg-2"><div>
+
+Given the following graph:
+
+![incidence matrix example 2](../_images/incidence/inc.svg)
+
+The incidence matrix is:
+
+<div>
+\[
+\displaylines{
+\hspace{0.7cm}\begin{array}{}\ a&\ \ \ b&\ \ \ c&\ \ \ d&\ \ \ h&i \end{array} \ \ \
+\\
+\begin{array}{} a\\b\\c\\d\\h\\i \end{array}
+\begin{pmatrix}
+0 & 1 & -1 & 1 & 0 & 0  \\
+1 & 0 & 0 & 1 & 1 & 0  \\
+1 & 0 & 0 & -1 & 0 & 1  \\
+-1 & -1 & 1 & 0 & 1 & 0  \\
+0 & -1 & 0 & -1 & 0 & 1  \\
+0 & 0 & -1 & 0 & 1 & 0  \\
+\end{pmatrix}
+}
+\]
+</div>
+</div><div>
+</div></div>
