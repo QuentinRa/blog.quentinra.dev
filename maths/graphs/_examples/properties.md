@@ -227,43 +227,42 @@ You must look for cycles that have an arc that is not in a cycle you already cre
 
 <div class="row row-cols-lg-2"><div>
 
-...
-</div><div>
+Given the following graph:
 
-...
-</div></div>
+![Co-Cycle basis Example - graph](../_images/basis/cycle_basis2.png)
 
-<hr class="sr">
-
-The edges' set for the following graph is
+We will use the following ordered edges:
 
 @
 E = \\{(a,b),(a,c),(a,d),(b,c),(b,f),(c,e),(c,f),(d,e),(e,f)\\}
 @
 
-![Exercise 2 - graph](images/cycle_basis2.png)
+##### What's the vector for $(abf)$?
 
-1. Give the vectors for the co-cycles
-    * $(abf)$
-    * $(ae)$
-2. $(ae)$ is a linear combination of 2 co-cycles. Which ones?
-3. What's $\gamma(G)$?
-4. Give a cycle basis $B$, which mustn't contain co-cycles of one vertex.
+$(abf) \to (0,1,1,1,0,0,-1,0,-1)$
 
-<blockquote class="spoiler">
+* ...
+* the $2^{nd}$ value $(a,c)$, $a$ is inside, $c$ outside so $1$
+* ...
+* the $7^{th}$ value $(c,f)$, $c$ is outside, $f$ inside so $-1$
+* ...
+</div><div>
 
-1. we are simply doing what is explained above
-    * $(abf) \to (0,1,1,1,0,0,-1,0,-1)$
-        * the $2^{nd}$ value $(a,c)$, $a$ is inside, $c$ outside so $1$
-        * the $7^{th}$ value $(c,f)$, $c$ is outside, $f$ inside so $-1$
+##### What's the vector for $(ae)$?
 
-    * $(ae) \to (1, 1, 1, 0, 0, -1, 0, -1, 1)$
+$(ae) \to (1, 1, 1, 0, 0, -1, 0, -1, 1)$.
 
-2. one answer would be $(ae) = (a) + (e)$ (because they are a stable set)
-3. $\gamma(G) = n - p \Leftrightarrow 6-1 = 5$
+##### $(ae)$ is a linear combination of 2 co-cycles. Which ones?
 
-4. $B' = \\{(abc), (bcf), (cfe), (aced), (abfed)\\}$
+Possible answer: $(ae) = (a) + (e)$ <small>(because they are a stable set)</small>
 
-Notice that we got $5$ co-cycles inside $B$, as expected.
+##### What's $\gamma(G)$?
 
-</blockquote>
+$\gamma(G) = n - p \Leftrightarrow 6-1 = 5$
+
+##### Give a cycle basis $B$ which doesn't include co-cycles of one vertex.
+
+$B' = \\{(abc), (bcf), (cfe), (aced), (abfed)\\}$
+
+Notice that we got $5$ co-cycles inside $B$, as calculated.
+</div></div>
