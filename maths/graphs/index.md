@@ -195,6 +195,8 @@ Complexity: $O(n * n * n)$
 
 <div class="row row-cols-lg-2"><div>
 
+➡️ See also: [Graph Properties Examples](_examples/properties.md).
+
 #### Connected graphs
 
 A connected graph only has one connected component. 
@@ -213,6 +215,8 @@ A connected component $C$ is a subgraph of a graph in which every vertex is conn
     * i++
 
 ➡️ When iterate vertices, it's faster to look for vertices that are not in a connected component and that are incident to a vertex in your $C_i$.
+
+📚 An articulation point is a vertex that disconnects the graph if we remove it. If it's an edge, we call it a bridge.
 </div><div>
 
 #### Super-connectivity
@@ -226,6 +230,8 @@ A graph is super-connected if, from any vertex, we can go to any other vertex. A
   * mark all vertices we can reach from it with "+"
   * mark all vertices that can reach it with "-"
   * all marked vertices with "+" and "-" are part of the same super-connected component.
+
+📚 If $C_1, C_2, C_3$ are super-connected components, then a graph having for nodes $C_1, C_2, C_3$ is called reduced graph. If $A \in C_1$ was adjacent to $B \in C_2$ then $C_1$ is adjacent to $C_2$.
 </div></div>
 
 <hr class="sep-both">
