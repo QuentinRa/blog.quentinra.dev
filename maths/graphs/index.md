@@ -24,7 +24,7 @@ Graphs can be simple/complex and directed/undirected.
 
 <div class="row row-cols-lg-2"><div>
 
-[Glossary of Graph theory](https://en.wikipedia.org/wiki/Glossary_of_graph_theory).
+[Glossary of Graph theory](https://en.wikipedia.org/wiki/Glossary_of_graph_theory) and [Terminology Examples](_examples/terminology.md).
 
 #### Adjacent/Neighbor
 
