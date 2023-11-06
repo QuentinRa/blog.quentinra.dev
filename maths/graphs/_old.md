@@ -17,33 +17,6 @@
                 This is the number of edges of our graph divided by the number of edge of the complete graph (see below).
             </td>
         </tr>
-    </tbody>
-</table>
-
-You may also note that, if we have an arc $A \to B$, then
-
-* $A$ is the predecessor of $B$ (`prédécesseur`)
-* $B$ is the successor of $A$ (`successeur`)
-
-There are names for graphs having some properties
-
-<table class="table table-bordered border-dark table-striped">
-    <thead>
-        <tr>
-            <th>name</th>
-            <th>description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                closed path* <br>
-                <code>cycle/chaine élémentaire</code>
-            </td>
-            <td>
-                A cycle/circuit in which each traversed vertex is only traversed once. <small>If the use of path is disturbing for you, then read the RandomFolkNote at the end of the course.</small>
-            </td>
-        </tr>
         <tr>
             <td>
                 d-regular graph <br>
@@ -73,38 +46,11 @@ We can split the vertices into 2 groups: the group having a degree a and the gro
         </tr>
         <tr>
             <td>
-                subgraph $G'$ <br>
-                <code>Sous-graphe/Graphe induit</code>
-            </td>
-            <td>
-$G'$ is a subgraph of $G$ if we only removed $G$ vertices and their incident edges (like you can't remove an edge alone). 
-            </td>
-        </tr>
-        <tr>
-            <td>
                 clique<br>
                 <code>Clique</code>
             </td>
             <td>
                 A clique is a complete subgraph.
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Complement/inverse*<br>
-                <code>Complémentaire</code>
-            </td>
-            <td>
-The complement of a graph is a graph in which we are creating all the edges that didn't exist while removing the existing ones. Like if we have $A-B-C$ then the complementary graph would be $A-C\hspace{.5cm}B$.
-            </td>
-        </tr>
-        <tr>
-            <td>
-                isomorphism*<br>
-                <code>Isomorphe</code>
-            </td>
-            <td>
-Let two graphs $G$ and $H$. If we can move some nodes and get the same graph, then there is an isomorphism. More formally, if there is a bijection between them, then there is an isomorphism.
             </td>
         </tr>
     </tbody>

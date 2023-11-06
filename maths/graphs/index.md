@@ -44,6 +44,27 @@ A vertex is incident to an edge if they are connected.
 
 The order of a graph is $|V|$, its number of vertices. Alternative notations are: $|V(G)|$, $\\#V$, or $Card(V)$.
 </div><div>
+
+#### Predecessor and successor
+
+For directed graphs, given $A \to B$:
+
+* $A$ is the predecessor of $B$
+* $B$ is the successor of $A$
+
+#### Subgraph $G'$
+
+A subgraph $G'$ is a graph formed from a subset of the vertices and edges of the graph $G$. An induced subgraph is a variant where we can only remove a vertex and their incident edges.
+
+#### Complement of a graph
+
+The complement of a graph is a graph in which we are connecting all vertices that were not connected, and disconnected vertices that were connected.
+
+➡️ Ex: The complementary graph of $A-B-C$ is $C-A\hspace{.5cm}B$.
+
+#### Isomorphism
+
+Two graphs G and H are isomorphic if you can relabel the vertices of one of them in a way that preserves the edge relationships, resulting in the other graph. It means there is a bijection between them.
 </div></div>
 
 <hr class="sep-both">
@@ -71,25 +92,25 @@ A walk in which all edges are distinct.
 A trail in which all vertices are distinct.
 </div><div>
 
-#### Circuit $C_n$
+##### Circuit $C_n$
 
 A closed trail in which the first and last vertices are equal.
 
-#### Cycle $C_n$
+##### Cycle $C_n$
 
 A closed path that starts and ends at the same vertex. Basically, it's a circuit in which **only** the first and last vertices are equal.
 
 📚 A graph without cycles is called an acyclic graph.
 
-#### Star $S_n$
+##### Star $S_n$
 
 One vertex is connected to all other vertices. It has a  degree of $d(v_i)=|V|-1$ while the others have a degree of $d(v_i)=(v)=1$.
 
-#### Wheel $W_n$
+##### Wheel $W_n$
 
 A vertex is connected to all other vertices ($d(v_i)=|V|-1$) that are connected to two vertices aside from the "center" ($d(v_i)=3$).
 
-#### Butterfly/Hourglass
+##### Butterfly/Hourglass
 
 One vertex degree is $|V|-1=4$ and the others are of degree $2$. The graph is made of $6$ edges and $5$ vertices.
 </div></div>
