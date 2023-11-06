@@ -165,3 +165,105 @@ We can merge vertices and get the minor of the graph which is $K_6$. If we remov
 
 ![Planar Graph Invalid 2](../_images/planar/planar1-5.png)
 </div></div>
+
+<hr class="sep-both">
+
+## Cycle basis Example
+
+<div class="row row-cols-lg-2"><div>
+
+Given the following graph:
+
+![Cycle basis Example - graph](../_images/basis/cycle_basis1.png)
+
+We will use the following ordered edges:
+
+@
+E = \\{(a,b),(a,c),(a,d),(b,c),(b,f),(c,e),(c,f),(d,e),(e,f)\\}
+@
+
+##### What's the vector for $(bcfb)$?
+
+$(bcfb) \to (0,0,0,1,-1,0,1,0,0)$.
+
+* ...
+* the 4th value is $1$ since $bc$ is in $bcfb$ in the same order
+* the 5th value is $-1$ since $bf$ is in $bcfb$ ($fb$) in another order
+* ...
+</div><div>
+
+##### What's the vector for $(abfeda)$?
+
+$(abfeda) \to (1,0,-1,0,1,0,0,-1,-1)$.
+
+##### $(bcfb)$ is a linear combination of 2 cycles. Which ones?
+
+One answer would be $(bcfb) = (bcefb) + (ecfe)$.
+
+<div>
+\[
+\begin{split}
+(bcfb) \to (0,0,0,1,-1,0,1,0,0) =\\
+(0,0,0,1,-1,1,0,0,1) + (0,0,0,0,0,-1,1,0,-1) =\\
+(bcefb) + (ecfe)
+\end{split}
+\]
+</div>
+
+##### What's $\mu(G)$?
+
+$\mu(G) = m - n + p \Leftrightarrow 9-6+1 = 4$
+
+##### Give a cycle basis $B$ which doesn't include both $(bcfb)$ and $(abfeda)$.
+
+$B = \\{(abca), (cfec), (acefba), (adeca)\\}$
+
+You must look for cycles that have an arc that is not in a cycle you already created, so that you are sure that can't get it by linear combination. Notice that we got $4$ cycles inside $B$, as calculated.
+</div></div>
+
+<hr class="sep-both">
+
+## Co-cycle basis Exercise
+
+<div class="row row-cols-lg-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sr">
+
+The edges' set for the following graph is
+
+@
+E = \\{(a,b),(a,c),(a,d),(b,c),(b,f),(c,e),(c,f),(d,e),(e,f)\\}
+@
+
+![Exercise 2 - graph](images/cycle_basis2.png)
+
+1. Give the vectors for the co-cycles
+    * $(abf)$
+    * $(ae)$
+2. $(ae)$ is a linear combination of 2 co-cycles. Which ones?
+3. What's $\gamma(G)$?
+4. Give a cycle basis $B$, which mustn't contain co-cycles of one vertex.
+
+<blockquote class="spoiler">
+
+1. we are simply doing what is explained above
+    * $(abf) \to (0,1,1,1,0,0,-1,0,-1)$
+        * the $2^{nd}$ value $(a,c)$, $a$ is inside, $c$ outside so $1$
+        * the $7^{th}$ value $(c,f)$, $c$ is outside, $f$ inside so $-1$
+
+    * $(ae) \to (1, 1, 1, 0, 0, -1, 0, -1, 1)$
+
+2. one answer would be $(ae) = (a) + (e)$ (because they are a stable set)
+3. $\gamma(G) = n - p \Leftrightarrow 6-1 = 5$
+
+4. $B' = \\{(abc), (bcf), (cfe), (aced), (abfed)\\}$
+
+Notice that we got $5$ co-cycles inside $B$, as expected.
+
+</blockquote>
