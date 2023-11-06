@@ -1,7 +1,5 @@
 # Terminology
 
-I marked with a little star `*`, the keywords that we are not using often (and that you may learn later).
-
 <table class="table table-bordered border-dark table-striped">
     <thead>
         <tr>
@@ -10,43 +8,6 @@ I marked with a little star `*`, the keywords that we are not using often (and t
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>
-                adjacent/neighbor <br>
-                <code>Adjacent/Voisins</code>
-            </td>
-            <td>
-                Two nodes are adjacent if they are linked by an edge. <br><br>  The notation is $N(X)$ or $\Gamma(X)$ (gamma) for the adjacent nodes of X. With arcs, we use$N^{+}(X)$ (arc entering/arriving, in-degree) and $N^{-}(X)$ (arc exiting, out-degree).
-            </td>
-        </tr>
-        <tr>
-            <td>
-                degree <br>
-                <code>Degré</code>
-            </td>
-            <td>
-                The number of neighbors. <br><br>
-                The notation is $d(X) = |\Gamma(X)|$. In a directed graph, this is $|\Gamma^{+}(X)| + |\Gamma^{-}(X)| = d^+(X) + d^-(X)$. (called <code>demi degré extérieur/prédécesseur (entrants)</code> and <code>demi degré intérieur/successeur (sortants)</code>).
-            </td>
-        </tr>
-        <tr>
-            <td>
-                incidence <br>
-                <code>incidence</code>
-            </td>
-            <td>
-                A vertex is incident to an edge if they are linked.
-            </td>
-        </tr>
-        <tr>
-            <td>
-                order <br>
-                <code>ordre</code>
-            </td>
-            <td>
-                The number of vertices, $|V|$, $|V(G)|$ while the cardinal $|V|$ (=the number of elements of a set V) can also be noted, $\#V$ or $Card(V)$.
-            </td>
-        </tr>
         <tr>
             <td>
                 density*<br>

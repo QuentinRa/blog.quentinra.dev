@@ -24,7 +24,25 @@ Graphs can be simple/complex and directed/undirected.
 
 <div class="row row-cols-lg-2"><div>
 
-[Glossary of graph theory](https://en.wikipedia.org/wiki/Glossary_of_graph_theory)
+[Glossary of Graph theory](https://en.wikipedia.org/wiki/Glossary_of_graph_theory).
+
+#### Adjacent/Neighbor
+
+Two nodes are adjacent if they are connected by an edge. For a node X, the notation is $N(X)$ or $\Gamma(X)$ (gamma).
+
+For oriented graphs, we use $N^{+}(X)$ <small>(in)</small> and $N^{-}(X)$ <small>(out)</small>.
+
+#### Vertex degree
+
+The number of neighbors. The notation is $d(X) = |\Gamma(X)|$. In a directed graph, this is $|\Gamma^{+}(X)| + |\Gamma^{-}(X)| = d^+(X) + d^-(X)$.
+
+#### Vertex incidence
+
+A vertex is incident to an edge if they are connected.
+
+#### Order of a graph
+
+The order of a graph is $|V|$, its number of vertices. Alternative notations are: $|V(G)|$, $\\#V$, or $Card(V)$.
 </div><div>
 </div></div>
 
@@ -48,7 +66,7 @@ It is a walk in which all vertices have degree 2 except for the two endpoints, w
 
 A walk in which all edges are distinct.
 
-##### Path ($P_n$)
+##### Path $P_n$
 
 A trail in which all vertices are distinct.
 </div><div>
