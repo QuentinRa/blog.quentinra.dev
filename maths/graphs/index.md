@@ -20,6 +20,41 @@ Graphs can be simple/complex and directed/undirected.
 
 <hr class="sep-both">
 
+## Terminology
+
+<div class="row row-cols-lg-2"><div>
+
+[Glossary of graph theory](https://en.wikipedia.org/wiki/Glossary_of_graph_theory)
+
+#### Special Graphs
+
+➡️ Can be directed or not.
+
+##### Path
+
+Unique edges + vertices.
+
+##### Trail
+
+Unique edges.
+
+##### Walk/Chain
+
+Sequence edges + vertices.
+</div><div>
+
+
+##### Cycle
+
+Closed walk.
+
+##### Tour/Circuit
+
+Closed trail.
+</div></div>
+
+<hr class="sep-both">
+
 ## Sorting and search
 
 <div class="row row-cols-lg-2"><div>
