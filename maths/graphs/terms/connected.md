@@ -1,41 +1,5 @@
 # Connected graphs
 
-[Go back](..#advanced-terminology)
-
-A graph is connected (`connexe`) if we only have one connected component (`composante connexe`). Otherwise, we are calling the graph disconnected (`non connexe`).
-
-A connected component $C$, is a subgraph of $G$ in which every vertex inside is connected to at least one other vertex inside $C$. A strong component (`composante connexe maximale`) is a connected component in which we can't add more vertex inside.
-
-**Algorithm**
-
-* pick a vertex
-* start with the first connected component $C_i$, $i=0$
-* while there are vertex remaining
-  * for each vertex
-    * if $C_i$ is empty or this vertex is adjacent to a vertex inside $C_i$
-    * then: we add it
-    * else: we go to the next vertex
-  * i++
-
-When iterating the vertices, you should do it by looking at the vertex in the edges that incident to a vertex inside your connected component.
-
-<hr class="sl">
-
-## Super-connectivity
-
-A graph is super-connected `Forte connexité/f-connexe`, if, from any vertex, we can go to any other vertex.
-
-**Algorithm**
-
-* pick a vertex
-* mark it "+" and "-"
-* mark all vertex we can reach with "+"
-* mark all vertex we can be reached from "-"
-* you got a first super-connected component (All nodes with "+" and "-")
-* if there are remaining edges, restart from one of them
-
-Note: a complete graph is super-connected.
-
 <hr class="sl">
 
 ## Terminology

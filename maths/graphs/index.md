@@ -195,10 +195,37 @@ Complexity: $O(n * n * n)$
 
 <div class="row row-cols-lg-2"><div>
 
-...
+#### Connected graphs
+
+A connected graph only has one connected component. 
+
+A connected component $C$ is a subgraph of a graph in which every vertex is connected to at least one other vertex within that subgraph. A component is said to be strong if we can't add more edges to it.
+
+**Algorithm** to create connected components
+
+* pick a vertex
+* $i=0$, we will create the i-th component $C_i$
+* while there are still vertices not in a component
+    * for each vertex
+        * if $C_i$ is empty or this vertex is adjacent to a vertex inside $C_i$
+        * then: we add it to $C_i$
+        * else: we go to the next vertex
+    * i++
+
+➡️ When iterate vertices, it's faster to look for vertices that are not in a connected component and that are incident to a vertex in your $C_i$.
 </div><div>
 
-...
+#### Super-connectivity
+
+A graph is super-connected if, from any vertex, we can go to any other vertex. A complete graph is super-connected.
+
+**Algorithm**
+
+* while there are vertices not marked
+  * pick a vertex and mark it "+" and "-"
+  * mark all vertices we can reach from it with "+"
+  * mark all vertices that can reach it with "-"
+  * all marked vertices with "+" and "-" are part of the same super-connected component.
 </div></div>
 
 <hr class="sep-both">
