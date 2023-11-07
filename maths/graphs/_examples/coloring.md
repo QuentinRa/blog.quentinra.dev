@@ -1,28 +1,24 @@
-# Vertex coloring
+# Graph Coloring Problems Examples
 
-[Go back](..#graph-coloring-problems)
+<hr class="sep-both">
 
-<hr class="sl">
+## Vertex coloring Greedy Algorithm Example
 
-## Exercise 1 - Greedy algorithm
+<div class="row row-cols-lg-2"><div>
 
 Use Welsh-Powell greedy algorithm and find the coloration for the following graph. Is it the optimal solution?
 
-![](images/coloring1.png)
-
-<blockquote class="spoiler">
+![Vertex coloring Greedy algorithm Example Graph](../_images/coloring/coloring1.png)
 
 * $d(D)=7$
 * $d(F)=6$
 * $d(A)=d(C)=5$
 * $d(B)=d(G)=d(H)=4$
 * $d(E)=3$
+</div><div>
 
-Giving us the following table
+Giving us the following table:
 
-* o=colored
-* x=not colored since neighbor to a colored
-* "nothing"=already colored
 
 | Colors\Vertex | D | F | A | C | B | G | H | E |
 |---------------|---|---|---|---|---|---|---|---|
@@ -31,33 +27,42 @@ Giving us the following table
 | Green         |   |   | o |   | x | x | o | x |
 | Blue          |   |   |   |   | o | o |   | o |
 
-We are checking: the longest clique is $D-C-A-H$ (size=4) and we colored the graph in $4$ colors, this is the optimal solution. We had the clique $F-D-G-E$ too.
-</blockquote>
+* o=colored
+* x=not colored since neighbor to a colored
+* "nothing"=already colored
 
-<hr class="sr">
+The longest clique is $D-C-A-H$ (size=4) and we colored the graph in $4$ colors, so this is the optimal solution. We had the clique $F-D-G-E$ too.
+</div></div>
 
-## Exercise 2 - Contraction
+<hr class="sep-both">
 
-Use the contraction algorithm and find the coloration for the following graph.
+## Vertex coloring Contraction Algorithm Example
 
-![](images/coloring2.png)
+<div class="row row-cols-lg-2"><div>
 
-<blockquote class="spoiler">
+Use the contraction algorithm to find a coloration for this graph:
 
-We got 4 missing edges so up to $2^4=16$ graphs we will have to make for $[c,b], [d,b], [e,b], [c,f]$.
+![Vertex coloring Contraction Algorithm Example Graph](../_images/coloring/coloring2.png)
+</div><div>
 
-![](images/coloring2-1.png)
+We got 4 missing edges, so we will have up to $2^4=16$ subgraphs. We are missing the following edges: $[c,b], [d,b], [e,b], [c,f]$.
 
-And the result is
+![](../_images/coloring/coloring2-1.png)
+</div></div>
 
-![](images/coloring2-2.png)
+Let's apply the algorithm <small>(note: C=Contraction, L=Link=Connect)</small>:
 
-With L=Link and C=Contraction. The smallest clique (we are among the graphs with the symbol ✔️) is
+![](../_images/coloring/coloring2-2.png)
+
+<div class="row row-cols-lg-2"><div>
+
+The smallest clique among the **7** graphs with the symbol ✔️ is:
 
 * $CF-DB-E-A$: 4 colors
 * $CF-D-BE-A$: 4 colors
+</div><div>
 
-So we can color our graph like this
+It means one way to color the graph is:
 
-![](images/coloring2-3.png)
-</blockquote>
+![](../_images/coloring/coloring2-3.png)
+</div></div>

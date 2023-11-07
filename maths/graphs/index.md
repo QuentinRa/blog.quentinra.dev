@@ -366,6 +366,8 @@ There is no generic algorithm. We know for sure a graph is Hamiltonian if either
 
 <div class="row row-cols-lg-2"><div>
 
+➡️ See also: [Graph coloring problems Examples](_examples/coloring.md).
+
 #### Vertex Coloring
 
 We color vertices while using the fewest colors and under the constraint that neighbors can't have the same color.
