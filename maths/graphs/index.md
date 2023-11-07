@@ -444,6 +444,10 @@ A tree is a graph having one of these properties (they are equivalent)
 * Acyclic and $|E| = |V| - 1$
 * ...
 
+➡️ See also: [Trees Examples](_examples/trees.md).
+
+<br>
+
 #### Spanning tree
 
 A spanning tree $T$ is a tree that is a partial graph obtained by removing edges from a graph $G$.
