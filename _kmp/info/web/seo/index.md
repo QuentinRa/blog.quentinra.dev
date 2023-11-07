@@ -1,18 +1,6 @@
-# Enhancements (draft)
-
-*😵 A list of old+random notes, an update+cleanup is required... 😵*
-
-<hr class="sep-both">
-
-## General
+# General
 
 <div class="row row-cols-md-2"><div>
-
-#### Hosting
-
-* webhostapp <small>(free, not recommended)</small>
-* [kinsta](https://kinsta.com/) <small>(👻)</small>
-* GitHub pages
 </div><div>
 
 #### Tools
