@@ -8,24 +8,6 @@ What you learned here is very similar to the notion of an independent set. In fa
 
 A graph coloring problem could be something like "A, B, C, D, E" must pass some tests, but they can't be in the same room for the same test. We are giving you a table of which tests they are passing, and your goal is to find the minimum of rooms needed. You can also have a similar problem like "A, B, C, D, E" can't be in the same room (you got a table of which one can't be with which one) and you have to find at least how many rooms are needed (make a graph of which can't be with which and solve it).
 
-<hr class="sr">
-
-## Trees
-
-A tree is a graph having one of these properties (they are equivalent)
-
-* connected and acyclic (=no cycles)
-* one path between two nodes
-* connected but would be disconnected if we are removing a vertex
-* acyclic but would be cyclic if we are adding one vertex
-* connected and $|E| = |V| - 1$
-* acyclic and $|E| = |V| - 1$
-
-And here are new notions for trees
-
-* [Spanning tree](trees/def.md) (`Arbre couvrant`)
-* [Minimum weight spanning tree (MST)](trees/opti.md) (`Arbre couvrant de poids minimum (ACM)`)
-
 <hr class="sl">
 
 ## The shortest path problem

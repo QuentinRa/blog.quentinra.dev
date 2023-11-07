@@ -434,10 +434,44 @@ We will use a [Vertex Coloring](#vertex-coloring) algorithm to color our graph. 
 
 <div class="row row-cols-lg-2"><div>
 
-...
+A tree is a graph having one of these properties (they are equivalent)
+
+* Connected and acyclic
+* Any two vertices can be connected by a unique path
+* Connected but would be disconnected if we are removing an edge
+* Acyclic but would be cyclic if we are adding one edge
+* Connected and $|E| = |V| - 1$
+* Acyclic and $|E| = |V| - 1$
+* ...
+
+#### Spanning tree
+
+A spanning tree $T$ is a tree that is a partial graph obtained by removing edges from a graph $G$.
+
+* It does not exist if $G$ is disconnected
+* T is a partial connected and acyclic graph of G
+* Removed edges are forming a cycle basis
 </div><div>
 
-...
+#### Minimum weight spanning tree (MST)
+
+We consider non-oriented graphs with a weight on each edge. We want to create a spanning tree while minimizing the total weight.
+
+**Kruskal's algorithm**
+
+1. Start by drawing all the vertices
+2. While the graph is not yet a tree
+   1. List the edges in ascending order of their weights.
+   2. For each edge in the list: try adding it to the tree if adding it doesn't create a cycle.
+
+**Prim's algorithm**
+
+1. Pick a starting vertex and add its linked edges to a set $S$.
+2. While $S$ isn't empty:
+   1. Pick the edge in $S$ with the least weight
+   2. Add it to the tree if it doesn't create a cycle
+   3. Remove the edge from $S$
+   4. Add the edges connected to the newly added vertex and that are not in our tree into $S$
 </div></div>
 
 <hr class="sep-both">
