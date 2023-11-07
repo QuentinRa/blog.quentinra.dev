@@ -56,6 +56,5 @@ Stuff that I found, but never read/used yet.
 
 * [Art of User Interface](https://www.taskade.com/blog/user-interface-design-gaming-productivity/)
 * [Game Development](https://gamedevelopment.tutsplus.com/)
-* [_old](_old.md)
 </div><div>
 </div></div>
