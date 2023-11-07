@@ -1,15 +1,6 @@
 # 🪨 JavaScript Libraries 🪨
 
 <div class="row row-cols-md-2 mt-4"><div>
-
-#### Tools
-
-* [vite](https://vitejs.dev/) (50.9k ⭐, +vitest)
-* [Snowpack](https://www.snowpack.dev/) (19.7k ⭐, dropped)
-* [WMR](https://github.com/preactjs/wmr) (4.7k ⭐)
-* [parcel.js](https://github.com/parcel-bundler/parcel) (41.8k ⭐)
-* [yeoman](https://github.com/yeoman/yeoman) (9.5k ⭐)
-* [monaca](https://monaca.io/)
 </div><div>
 
 #### Bundles
