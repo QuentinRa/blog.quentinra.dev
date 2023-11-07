@@ -10,11 +10,11 @@ The **Diameter** $diam(G)$, is the greatest of the minimal distances for a graph
 
 ## Example
 
-![Distance in a graph - example - graph](shortest/distance.png)
+![Distance in a graph - example - graph](../_images/shortest/distance.png)
 
 We would create the following table
 
-![Distance in a graph - example - table](shortest/distance2.png)
+![Distance in a graph - example - table](../_images/shortest/distance2.png)
 
 The value for $d(x, 2) * d(1, y) = 1$ means that when the starting vertex is $1$ and the ending vertex is $2$, then the distance is $1$.
 

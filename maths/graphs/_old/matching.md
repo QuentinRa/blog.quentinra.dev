@@ -23,7 +23,7 @@ Algorithm
 
 Give a maximal matching, maximum matching, and perfect matching of the graph $G$.
 
-![Example - Graph G](images/matching1.png)
+![Example - Graph G](matching/matching1.png)
 
 Note: this graph is called the Petersen graph.
 
@@ -35,9 +35,9 @@ Note
 
 Using the algorithm, I could get the following maximal matching
 
-![Example - Maximal matching](images/matching1-1.png)
+![Example - Maximal matching](matching/matching1-1.png)
 
 I found this perfect matching, which means that I also found a maximal and a maximum matching
 
-![Example - Perfect matching](images/matching1-2.png)
+![Example - Perfect matching](matching/matching1-2.png)
 </blockquote>

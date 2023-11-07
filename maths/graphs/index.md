@@ -536,7 +536,11 @@ The complexity is: $O(n^2)$.
 
 #### Bellman–Ford Algorithm
 
-...
+This algorithm is similar to Dijkstra's algorithm, but the weight can be either positive or negative (complexity $O(n*m)$). The algorithm won't work if there is a negative-weight cycle because we can always make another iteration and reduce the shortest path value.
+
+You will have up to $|V|-1$ iterations. If you have an iteration with no changes, then the algorithm is done.
+
+The differences with Dijkstra are for $i+1$: each time we updated the shortest path, we check update every successor.
 </div><div>
 
 #### Floyd–Warshall Algorithm
