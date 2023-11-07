@@ -383,41 +383,36 @@ We are calling chromatic number $\gamma(G)$ (gamma) or $\chi(G)$ (chi) of $G$ th
 
 The solution is said to be optimal when we can't find a better one.
 
-<hr class="sr">
+#### Vertex Coloring Welsh-Powell greedy algorithm
 
-## Welsh-Powell greedy algorithm
+This algorithm will color the graph, but it may not use the lowest number of colors.
 
-* order the vertices by decreasing degree
-* while all vertices are not colored
-    * pick the first not colored vertex
-    * pick an unused color
-    * while conserving the order above, color every uncolored vertex, not adjacent to the ones we are coloring with this color
+* Order the vertices by decreasing degree
+* While all vertices are not colored
+    * Pick the first not colored vertex
+    * Pick an unused color
+    * While conserving the order above, color every uncolored vertex that is not adjacent to the ones we are coloring with this color
 
-To check if the solution is the best one, check if the solution is
-
-* greater than the minoring: not the best one
-* equals than the minoring: good
-
-<hr class="sl">
-
-## Contraction
-
-In French, it's called `Algorithme Reliement-contraction`. We are either
-
-* contracting two vertices
-* linking two vertices with an edge
-
-Your goal is to get a clique. This algorithm is evaluated as $2^z$ graph to make, with $z$ the number of edges missing for the graph to be complete.
-
-Algorithm
-
-* until every subgraph is complete
-* create 2 subgraphs
-    * one contracting two vertices
-    * one linking two vertices
-
-Once you are done, the degree of the smallest clique is the chromatic number. Note that the vertex in the smallest clique that are contracted together will have the same color.
+To check if the solution is the best one, check the properties of $\gamma(G)$. 
 </div><div>
+
+#### Vertex Coloring Contraction Algorithm
+
+The goal of this algorithm is to create a clique. We can:
+
+* Contract two vertices
+* Connect two vertices with an edge
+
+This algorithm complexity is evaluated as $2^z$ graph to make, with $z$ the number of edges missing for the graph to be complete.
+
+**Algorithm**
+
+* Until every subgraph is complete
+* Create 2 subgraphs from each non-complete subgraph
+    * One contracting two vertices
+    * One linking two vertices
+
+The degree of the smallest clique is the chromatic number. The groups of vertices in the smallest clique will have the same color.
 
 #### Edge Coloring
 
