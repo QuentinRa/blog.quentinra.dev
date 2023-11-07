@@ -5,7 +5,7 @@
 [PHPStorm](https://www.jetbrains.com/phpstorm/) is a **back-end** IDE <small>(PHP, PHP frameworks, Node.js, Databases, Composer)</small> powered by JetBrains exclusively available in a **paid** version.
 
 <p class="text-center">
-<img src="/courses/tools-and-frameworks/editors/gui/jetbrains/phpstorm/_images/logo.png" width="100"/>
+<img src="_images/logo.png" width="100"/>
 </p>
 
 👉 JetBrains IDEs share many features [explained here](../_general/index.md).

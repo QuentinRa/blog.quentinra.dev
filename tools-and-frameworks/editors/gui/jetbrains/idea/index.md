@@ -5,7 +5,7 @@
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) is a **Java** <small>(Maven, Gradle, JavaFX, Junit)</small> and **Kotlin** IDE powered by JetBrains in a **free** and a **paid** version.
 
 <p class="text-center">
-<img src="/courses/tools-and-frameworks/editors/gui/jetbrains/idea/_images/logo.png" width="100"/>
+<img src="_images/logo.png" width="100"/>
 </p>
 
 👉 JetBrains IDEs share many features [explained here](../_general/index.md).

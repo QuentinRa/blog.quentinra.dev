@@ -16,7 +16,7 @@ We have $C_1=\{e,f,g\}$ and $C_2=\{a,b,c,d,h,i\}$ using the algorithm.
 
 <div class="overflow-scroll mb-3">
 
-<img src="/courses/maths/graphs/_examples/../_images/connected/connected1-1.png" class="" alt="Example 1 - connected algorithm" title="Example 1 - connected algorithm">
+<img src="../_images/connected/connected1-1.png" class="" alt="Example 1 - connected algorithm" title="Example 1 - connected algorithm">
 </div>
 
 #### Is the graph connected?
@@ -36,7 +36,7 @@ We got only one component, so the graph is connected. The graph does seem to be 
 
 <div class="overflow-scroll mb-3">
 
-<img src="/courses/maths/graphs/_examples/../_images/connected/connected1-3.png" class="" alt="Example 1 - super-connected algorithm" title="Example 1 - super-connected algorithm">
+<img src="../_images/connected/connected1-3.png" class="" alt="Example 1 - super-connected algorithm" title="Example 1 - super-connected algorithm">
 </div>
 
 All vertices are marked with "+" and "-", the graph is super-connected.
@@ -55,7 +55,7 @@ Use the transitive closure to determine if $G$ is super-connected.
 Using Roy-Warshall's algorithm, we got the transitive closure:
 
 <div class="overflow-scroll mb-3">
-<img src="/courses/maths/graphs/_examples/../_images/connected/connected2-1.svg" class="" alt="Example 2 - Roy-Warshall's algorithm - result" title="Example 2 - Roy-Warshall's algorithm - result">
+<img src="../_images/connected/connected2-1.svg" class="" alt="Example 2 - Roy-Warshall's algorithm - result" title="Example 2 - Roy-Warshall's algorithm - result">
 </div>
 
 This is a complete graph $K_{6}$. Since the transitive closure is a complete graph, then $G$ is super-connected.
@@ -64,7 +64,7 @@ This is a complete graph $K_{6}$. Since the transitive closure is a complete gra
 For reference, here is Roy-Warshall's algorithm:
 
 <div class="overflow-scroll mb-3">
-<img src="/courses/maths/graphs/_examples/../_images/connected/connected2-2.png" class="" alt="Example 2 - Roy-Warshall's algorithm - process" title="Example 2 - Roy-Warshall's algorithm - process">
+<img src="../_images/connected/connected2-2.png" class="" alt="Example 2 - Roy-Warshall's algorithm - process" title="Example 2 - Roy-Warshall's algorithm - process">
 </div>
 
 The complete algorithm (text)
