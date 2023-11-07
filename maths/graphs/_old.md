@@ -1,6 +1,5 @@
 # Advanced Terminology
 
-* [Spanning graph](terms/partial.md)
 * [Graph matching](terms/matching.md)
 * [Independent set](terms/independence.md)
 

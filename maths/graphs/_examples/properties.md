@@ -266,3 +266,37 @@ $B' = \\{(abc), (bcf), (cfe), (aced), (abfed)\\}$
 
 Notice that we got $5$ co-cycles inside $B$, as calculated.
 </div></div>
+
+<hr class="sep-both">
+
+## Spanning Subgraph Examples
+
+<div class="row row-cols-lg-2"><div>
+
+#### Spanning Subgraph Example 1
+
+Starting from the graph $G$, create:
+
+* $G'$: $\tau$-minimal $\tau$-equivalent
+* $G''$: $\tau$-minimum $\tau$-equivalent
+
+![panning Subgraph Example 1 Graph](../_images/spanning/partial1.png)
+
+One possible answer:
+
+![panning Subgraph Example 1 Answer](../_images/spanning/partial1-ans.png)
+</div><div>
+
+#### Spanning Subgraph Example 2
+
+Starting from the graph $G$, create:
+
+* $G'$: $\tau$-minimal $\tau$-equivalent
+* $G''$: $\tau$-minimum $\tau$-equivalent
+
+![panning Subgraph Example 2 Graph](../_images/spanning/partial2.png)
+
+One possible answer:
+
+![panning Subgraph Example 2 Answer](../_images/spanning/partial2-ans.png)
+</div></div>

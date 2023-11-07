@@ -239,6 +239,16 @@ A graph is super-connected if, from any vertex, we can go to any other vertex. A
     * all marked vertices with "+" and "-" are part of the same super-connected component.
 
 📚 If $C_1, C_2, C_3$ are super-connected components, then a graph having for nodes $C_1, C_2, C_3$ is called reduced graph. If $A \in C_1$ was adjacent to $B \in C_2$ then $C_1$ is adjacent to $C_2$.
+
+#### Spanning subgraph
+
+A spanning subgraph $G'$ of $G$ is a graph in which we removed edges. It means $V_{G'} = V_G$ and $E_{G'}\ \subset\ E_G$.
+
+📚 $G$ and $G'$ are $\tau$-equivalent if they have the same transitive closure and $G'$ is a subgraph of $G$.
+
+📚 Let $G'$ be a $\tau$-equivalent of $G$. $G'$ is $\tau$-minimal $\tau$-equivalent if removing one edge makes it lose the $\tau$-equivalent property.  $\tau$-maximal $\tau$-equivalent is the same with "adding" one edge.
+
+📚 Let graph $G'$ be $\tau$-minimal $\tau$-equivalent of $G$. If we can't find another graph $G'$ with a fewer edges while still being $\tau$-minimal $\tau$-equivalent, then $G'$ is $\tau$-minimum $\tau$-equivalent <small>(resp. maximum)</small>.
 </div><div>
 
 #### Planar Graph
@@ -450,7 +460,7 @@ A tree is a graph having one of these properties (they are equivalent)
 
 #### Spanning tree
 
-A spanning tree $T$ is a tree that is a partial graph obtained by removing edges from a graph $G$.
+A spanning tree $T$ is a spanning subgraph that is a tree.
 
 * It does not exist if $G$ is disconnected
 * T is a partial connected and acyclic graph of G
