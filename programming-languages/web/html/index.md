@@ -521,6 +521,38 @@ These can be used on any input elements such as `<input>`.
 
 <hr class="sep-both">
 
+## Accessibility
+
+<div class="row row-cols-md-2"><div>
+
+#### Apple touch icon
+
+More at [webhint.io/Apple Touch Icon](https://webhint.io/docs/user-guide/hints/hint-apple-touch-icons/).
+
+```html!
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+```
+</div><div>
+
+#### URL/humans.txt
+
+Learn more about it at [humanstxt.org](https://humanstxt.org/),
+and [humanstxt.org - Standard](https://humanstxt.org/Standard.html).
+
+```html!
+<link type="text/plain" rel="author" href="URL/humans.txt"/>
+```
+
+<br>
+
+#### Semantic Web
+
+The goal was to make page easy to understand for robots. Some languages were introduced like RDF, a triple model, in which every piece of knowledge is broken down into `(subject, predicate, object)`. A query language called SPARQL can query RDF triples.
+</div></div>
+
+<hr class="sep-both">
+
 ## HTML security 🛡️
 
 <div class="row row-cols-lg-2"><div>

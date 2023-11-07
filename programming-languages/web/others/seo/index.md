@@ -1,55 +1,27 @@
-# General
+# Search Engine Optimization (SEO)
 
 <div class="row row-cols-md-2"><div>
-</div><div>
 
-#### Tools
+Search Engine Optimization, commonly known as SEO, is a set of practices and strategies aimed at improving the visibility and ranking of a website in search engine results pages (SERPs).
+
+SEO is an ongoing process as search engines continually update their algorithms. It means that the content below may be obsolete.
 
 * [webhint](https://webhint.io/) (hints to improve your website)
 * [seo-peek](https://www.sanderheilbron.nl/seo-peek) (extension)
-
-#### Crawlers
-
-* [siteliner](https://www.siteliner.com/) (crawler, 250 pages max)
-* [drlinkcheck](https://www.drlinkcheck.com/) (crawler, broken links)
-* [snyk.io](https://snyk.io/website-scanner/) (crawler, vulnerabilities)
-</div></div>
-
-<hr class="sep-both">
-
-## Accessibility
-
-<div class="row row-cols-md-2"><div>
-
-#### Apple touch icon
-
-More at [webhint.io/Apple Touch Icon](https://webhint.io/docs/user-guide/hints/hint-apple-touch-icons/).
-
-```html!
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
-```
 </div><div>
 
-#### URL/humans.txt
+Search engines are using crawlers to index websites. They are basically bots inspecting each page and navigating on the website.
 
-Learn more about it at [humanstxt.org](https://humanstxt.org/),
-and [humanstxt.org - Standard](https://humanstxt.org/Standard.html).
+A few crawlers we can use to check a website:
 
-```html!
-<link type="text/plain" rel="author" href="URL/humans.txt"/>
-```
-
-<br>
-
-#### Semantic Web
-
-The goal was to make page easy to understand for robots. Some languages were introduced like RDF, a triple model, in which every piece of knowledge is broken down into `(subject, predicate, object)`. A query language called SPARQL can query RDF triples.
+* [siteliner](https://www.siteliner.com/) (250 pages max)
+* [drlinkcheck](https://www.drlinkcheck.com/) (broken links)
+* [snyk.io](https://snyk.io/website-scanner/) (vulnerabilities)
 </div></div>
 
 <hr class="sep-both">
 
-## Search Engine Optimization (SEO)
+## Basic Practices
 
 <div class="row row-cols-md-2 mt-3"><div>
 
@@ -59,7 +31,7 @@ The goal was to make page easy to understand for robots. Some languages were int
 
 More at [robots-txt.com](http://robots-txt.com/). Test your [robots.txt using Google Search Console](http://robots-txt.com/ressources/robots-txt-tester/). You got [examples here](http://robots-txt.com/ressources/).
 
-```yaml
+```yaml!
 # allows everyone
 User-agent: *
 Disallow:
@@ -74,11 +46,11 @@ Sitemap: URL/sitemap.xml
 
 It could be that two URLs are actually the same page. For instance, `https://example.com` and `https://example.com/index.php`. You need to tell search engines that the former is the same as the later. For both, you need to return the same canonical URL.
 
-```php
+```php!
 header("Link: <https://example.com/index.php>; rel=\"canonical\"");
 ```
 
-```html
+```html!
 <link rel="canonical" href="https://example.com/index.php" />
 ```
 
@@ -89,11 +61,11 @@ header("Link: <https://example.com/index.php>; rel=\"canonical\"");
 * You must use exactly one header "h1"
 * Title's length should be between 55-65 characters
 
-```html
+```html!
 <title>MainTopic - title1, title2, title3</title>
 ```
 
-```html
+```html!
 <title>MainTopic - title1, title2 | Organization</title>
 ```
 
@@ -107,7 +79,7 @@ You should write a good and unique description of your pages. The size displayed
 
 #### URL/sitemap.xml
 
-➡️ Help search engines to properly index your website, and provide additional information on resources such as videos/images... The format is an XML file, you can these to generate one on
+➡️ Ensure the search engine crawlers properly index your website. Provide additional information on resources such as videos/images... The format is an XML file, you can these to generate one on
 
 * <https://www.xml-sitemaps.com/> (max. 500 pages)
 * <https://www.sitemapgenie.com/> (no limit, or it seems so)
@@ -115,10 +87,10 @@ You should write a good and unique description of your pages. The size displayed
 
 Once you created a sitemap, you have to share it, as explained [here](https://ahrefs.com/blog/submit-website-to-search-engines/).
 
-<details class="details-e">
+<details class="details-n">
 <summary>Example</summary>
 
-```xml
+```xml!
 <?xml version="1.0" encoding="UTF-8" ?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -137,7 +109,7 @@ Once you created a sitemap, you have to share it, as explained [here](https://ah
 
 #### Structured Data
 
-I'm unsure if this helps with SEO, but it allows search engines, if they want to, to display **rich results**, like the Wikipedia page shown for some results.
+I'm unsure if this helps with SEO, but it allows search engines, if they want to, to display rich results. For instance, when we type a name, we often see the Wikipedia page on the right.
 
 * [Test your structured data (Google)](https://developers.google.com/search/docs/advanced/structured-data)
 * [structured-data.org](http://www.structured-data.org/)
@@ -147,10 +119,10 @@ I'm unsure if this helps with SEO, but it allows search engines, if they want to
 
 You can look for websites to generate structural data, to learn the syntax, [such as this one](https://attrock.com/schema-markup-generator/). Note that you may need to escape the "\\".
 
-<details class="details-e">
+<details class="details-n">
 <summary>Example</summary>
 
-```html
+```html!
 <script type="application/ld+json">
 {
     "@context": "https:\/\/schema.org",
@@ -181,62 +153,4 @@ You can look for websites to generate structural data, to learn the syntax, [suc
 ```
 </details>
 
-
-</div></div>
-
-<hr class="sep-both">
-
-## Performances
-
-➡️ Improving loading times/... will also improve the SEO.
-
-<div class="row row-cols-md-2"><div>
-
-#### Content delivery network (CDN)
-
-Basically, resources are cached on nearby servers to reduce the loading time of static resources <small>(CSS, images, videos, audios...)</small>.
-
-* [jsdeliver](https://www.jsdelivr.com/) <small>(free, works with [GitHub](https://cdn.jsdelivr.net/gh/user/repo/path/to/file.png))</small>
-* [cdnjs](https://cdnjs.com/) <small>(free, but not decentralized)</small>
-* [gitcdn](https://github.com/schme16/gitcdn.xyz) <small>(same as jsdeliver, but slower)</small>
-* [unpkg.com](https://unpkg.com/) <small>(👻)</small>
-* [keycdn.com](https://www.keycdn.com/) <small>(👻)</small>
-* [raw.githack.com](https://raw.githack.com/) <small>(👻)</small>
-</div><div>
-
-#### Images
-
-* Compress images
-* Use `.webp` instead of `.jpg`/`.png`
-* See [imagekit](https://imagekit.io/) (👻)
-* Cache images ([see article](https://web.dev/http-cache/))
-
-<br>
-
-#### Tools
-
-* [pagespeed](https://pagespeed.web.dev/)
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-md-2"><div>
-
-* [biq.cloud](https://biq.cloud/rank-intelligence/) <small>(see your website ranking for a keyword, account required)</small>
-* [woorank](https://www.woorank.com/)
-* [webpagetest](https://www.webpagetest.org/)
-* [website-checker](https://www.ionos.com/tools/website-checker)
-* [sitechecker](https://sitechecker.pro/)
-* [protege](https://protege.stanford.edu/)
-</div><div>
-
-* [websiteplanet](https://www.websiteplanet.com/webtools/)
-* [sanderheilbron](https://www.sanderheilbron.nl/)
-* [uptrends](https://www.uptrends.com/tools)
-* [seositecheckup](https://seositecheckup.com/tools)
-* [nitropack](https://nitropack.io/)
 </div></div>
