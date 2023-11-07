@@ -22,7 +22,7 @@ It can be summarized as "at each iteration, you will try to find if you can have
 
 We are starting from A
 
-![](images/bellman.svg)
+![](shortest/bellman.svg)
 
 | Step |   A  |   B  |   C  |   D  |   E  |   F  |
 |------|------|------|------|------|------|------|

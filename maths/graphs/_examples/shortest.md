@@ -1,27 +1,8 @@
-# Dijkstra's algorithm
+# Shortest Path Problem Examples
 
-[Go back](..)
+<hr class="sep-both">
 
-If $G$ is a weighted graph with **only positives weights**, then you can use Dijkstra's algorithm (complexity $O(n^2)$).
-
-Dijkstra will give you the shortest path starting from a vertex (`A` for instance) to any other vertices (B, ...).
-
-The easiest way to use Dijkstra's algorithm is a table of the steps (i=0 to n) by the vertices (A, B, ...). A case like (0,A) is representing the shortest path value after 0 iterations.
-
-At $i=0$, the shortest path value is $0$ for your starting vertex and $+\infty$ for all other vertices. You will also consider your selected vertex done, meaning that the value as the shortest path value is the final result.
-
-At $i+1$, (**it's a bit hard to explain, learn with the example**)
-
-* if there is an edge between the last done vertex and another one having the weight $w$
-* if the other one is not "done"
-* and the other one weight is greater $w+\text{last done value}$
-* then we replace the shortest path value by $w+\text{last done value}$
-
-Then, once you did all that, you will set as done the vertex having the least weight until all of them are done.
-
-<hr class="sr">
-
-## Example
+## Dijkstra's Algorithm Example
 
 ![Dijkstra's algorithm](images/dijkstra.svg)
 

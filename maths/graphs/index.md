@@ -459,6 +459,8 @@ This function gives a value to each vertex. If the value is $0$, then the vertex
 The Grundy function result is not unique, unless we sorted the vertices beforehand. We will usually sort the vertices by the number of successors before using the algorithm.
 
 The result can be used to color a graph. Each group of vertices having the same value will have the same color.
+
+➡️ See also: [Grundy Number](https://en.wikipedia.org/wiki/Grundy_number).
 </div></div>
 
 <hr class="sep-both">
@@ -513,13 +515,24 @@ We consider non-oriented graphs with a weight on each edge. We want to create a 
 
 <hr class="sep-both">
 
-## The shortest path problem
+## Shortest Path Problem
 
 <div class="row row-cols-lg-2"><div>
 
+➡️ See also: [Shortest Path Problem Examples](_examples/shortest.md).
+
 #### Dijkstra's Algorithm
 
-...
+If $G$ is a weighted graph with only positives weights, we can use Dijkstra's Algorithm to find the shortest path.
+
+1. At $i=0$, the shortest path value is 0 for the starting vertex, and it's set to $+\infty$ for all other vertices. The starting vertex is considered "done," meaning its shortest path value is the final result.
+2. At $i+1$, we follow these rules:
+   * If there is an edge between the last "done" vertex and another vertex not marked as "done" with a weight of 'w'
+   * And if the sum of 'w' and the shortest path value of the last "done" vertex is less than the current shortest path value of the other vertex.
+   * Then, we update the shortest path value for the other vertex to 'w' plus the shortest path value of the last "done" vertex.
+3. After applying these rules to all vertices, we mark the vertex with the least weight as "done." We repeat step 2 and 3 until all vertices are marked as "done."
+
+The complexity is: $O(n^2)$.
 
 #### Bellman–Ford Algorithm
 
