@@ -14,6 +14,7 @@
 * [InBrowser](https://inbrowser.github.io/) <small>(tools running locally in your browser)</small>
 * [ilovepdf](https://www.ilovepdf.com/) <small>(a lot of tools, great)</small>
 * [png2pdf](https://www.png2pdf.com/) <small>(not many tools, but the best)</small>
+* [dangerzone.rocks](https://dangerzone.rocks/index.html) <small>(convert "potentially dangerous" PDFs to "safe" PDFs)</small>
 
 ##### Scan a document
 

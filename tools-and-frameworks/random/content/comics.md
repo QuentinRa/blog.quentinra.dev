@@ -54,6 +54,7 @@ Clean aggregators
 * [mangareader.to](https://mangareader.to/)
 * [webtoon.xyz](https://www.webtoon.xyz/)
 * [manhuascan.us](https://manhuascan.us/)
+* [rawkuma.com](https://rawkuma.com/) (RAWs)
 </details>
 
 <details class="details-n">

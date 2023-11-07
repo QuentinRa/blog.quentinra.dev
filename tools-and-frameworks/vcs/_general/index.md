@@ -56,4 +56,12 @@ Stuff that I found, but never read/used yet.
 
 * Plastic SCM
 </div><div>
+
+* [Open Source Guides](https://opensource.guide/) <small>(👻)</small>
+* [OpenSSF/CII](https://github.com/coreinfrastructure/best-practices-badge) <small>(👻, Best practices)</small>
+* [OpenSSF Scorecard](https://github.com/ossf/scorecard)
+* [FOSSA](https://fossa.com/) <small>(👻, "Audit-Grade Open Source Risk Management")</small>
+* [CodeTriage](https://www.codetriage.com/) <small>(👻, Look for issues to tackle)</small>
+* [OpenCollective](https://opencollective.com/) <small>(👻, Raise funds)</small>
+* [Gitter](https://gitter.im/)
 </div></div>
