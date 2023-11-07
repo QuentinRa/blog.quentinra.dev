@@ -331,32 +331,20 @@ A technique to explore a graph. We progressively explore the neighbors of each v
 Complexity: $O(|V|+|E|)$.
 </div><div>
 
-And you can solve the problems of passing once by an edge/a vertex with
-
 #### Eulerian graph
 
-A graph is Eulerian if **all vertex's degrees are even**, and it has a **cycle/circuit** traversing **each edge once** (=Eulerian cycle/circuit).
+An eulerian graph is a connected graph where every edge is traversed exactly once in a continuous path or circuit. Every vertex in the graph must have an even degree.
 
-A graph is **semi-Eulerian** if
-
-* exactly 2 degrees are odd
-* it has an Eulerian chain/path traversing **each edge once**
-
-Legends are saying that we are adding "semi-" before Eulerian because adding one vertex will make the graph Eulerian.
+📚 A Semi-Eulerian Graph has exactly two vertices with an odd degree while all other vertices must have an even degree. The difference with an Eulerian graph is that the starting and ending points are different.
 
 **Algorithm**
 
-Remember: a bridge (=`isthme`) is an edge that once removed will disconnect the graph. You got one in semi-eulerian graphs.
-
-* let $S$ be the list of traversed edges
-* randomly pick a vertex (unless you got a bridge, as you must start at one of the bridge extremities)
-* while all the edges are not in $S$
-    * we are looking at our current vertex incident edges
-    * if all of them are in $S$ then "fail"
-    * else if we have exactly one edge that isn't in $S$, then we traverse it
-    * else we randomly traverse one of the edges that are nor bridge, nor in $S$
-
-Traversing means adding it to $S$ and changing our current vertex.
+* Initialize an empty list $S$ to keep track of traversed edges.
+* Check if the graph contains any bridges. If there is a bridge, pick a vertex connected to it as the starting vertex. If not, you can start from any arbitrary vertex in the graph.
+* Repeat until all edges are in $S$:
+    * Let $I$ be the list of incident edges of the current vertex. 
+    * Check if $I$ is a subset of $S$. If it is, the graph is not Eulerian.
+    * Otherwise, pick an edge in $I$ that is not in $S$, traverse it, and add it to $S$. If there is an edge that is a bridge, pick it last.
 
 #### Hamiltonian graph
 
