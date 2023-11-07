@@ -22,25 +22,25 @@ You could read that the diameter is $4$ because the longest path is $7-6-4-5-2$ 
 
 <hr class="sep-both">
 
-## Graph Matching Example
+## Matching In A Graph Example
 
-Give a maximal matching, maximum matching, and perfect matching of the graph $G$.
+<div class="row row-cols-lg-2"><div>
+
+Give a maximal matching, maximum matching, and perfect matching of the Petersen graph $G$.
 
 ![Example - Graph G](../_images/matching/matching1.png)
+</div><div>
 
-Note: this graph is called the Petersen graph.
+Legend
 
-<blockquote class="spoiler">
-Note
+* Red 🔴: we picked this edge
+* Blue 🔵: we removed this edge
 
-* red: picked
-* blue: removed
-
-Using the algorithm, I could get the following maximal matching
+Maximal matching:
 
 ![Example - Maximal matching](../_images/matching/matching1-1.png)
 
-I found this perfect matching, which means that I also found a maximal and a maximum matching
+Perfect/Maximum/Maximal matching:
 
 ![Example - Perfect matching](../_images/matching/matching1-2.png)
-</blockquote>
+</div></div>

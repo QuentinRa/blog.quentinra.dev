@@ -582,20 +582,20 @@ The distance $d(A, B)$ is the length of the path with the least nodes connecting
 The Diameter $diam(G)$ is the greatest distance.
 </div><div>
 
-#### Graph matching
+#### Matching (graph theory)
 
-A matching graph (`couplage d'un graphe`) is a graph $G'$ having a subset of $G$ edges without common vertices (two vertices are not adjacent). To summarize, you simply have to pick paths of 2 vertices, while making sure that you didn't use a vertex in another path you picked. The edges you used in your paths are forming the matching graph.
+A matching in a graph is a set of edges without common vertices (adjacent vertices). The matching is:
 
-* **Maximal**: if we add one more edge of $G$, then this isn't a matching graph anymore
-* **Maximum**: we can't make a matching graph with more edges
-* **Perfect/Complete**: every vertex of $G$ is used in $G'$ in a path.
+* **Maximal**: we cannot add more edges to the matching
+* **Maximum**: we cannot create a matching with more edges
+* **Perfect/Complete**: every vertex in the matching is part of a path
 
 A perfect matching is both maximum and maximal. A maximum matching is also maximal.
 
-Algorithm
+**Algorithm**
 
-* pick an edge
-* delete all edges incident to your two incident vertex (aside from the one you picked)
-* mark the edge as "picked"
-* again, until all the edges are either "picked" or "removed"
+* Pick an edge, for instance, $(A,B)$
+* Remove all edges connected to $A$ or $B$
+* Mark the edge as "picked"
+* Repeat until all edges are either "picked" or "removed"
 </div></div>
