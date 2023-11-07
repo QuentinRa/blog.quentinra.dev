@@ -348,16 +348,16 @@ An eulerian graph is a connected graph where every edge is traversed exactly onc
 
 #### Hamiltonian graph
 
-A Hamiltonian graph is a **connected graph**, that has a cycle/circuit traversing **each vertex once** (=Hamiltonian cycle/circuit).
+An hamiltonian graph is a connected graph where every vertex is traversed exactly once in a (hamiltonian) path or cycle.
 
-We are adding "semi-" before Hamiltonian if the graph has a chain/path traversing **each vertex once** instead of a cycle/circuit.
+📚 If there is an hamiltonian path but no hamiltonian cycle, the graph is said to be semi-hamiltonian.
 
 **Algorithm**
 
-There isn't a proper algorithm. A graph will be Hamiltonian for sure if
+There is no generic algorithm. We know for sure a graph is Hamiltonian if either:
 
 * $n \ge 3$ and all degrees are $\ge \frac{n}{2}$
-* or, $n \ge 3$ and $\forall{x,y}$ not neighbor, $d(x)+d(y) \ge n$
+* $n \ge 3$ and $\forall{x,y}$ that are not neighbor, $d(x)+d(y) \ge n$
 </div></div>
 
 <hr class="sep-both">
@@ -366,10 +366,69 @@ There isn't a proper algorithm. A graph will be Hamiltonian for sure if
 
 <div class="row row-cols-lg-2"><div>
 
-...
+#### Vertex Coloring
+
+We color vertices while using the fewest colors and under the constraint that neighbors can't have the same color.
+
+We are calling chromatic number $\gamma(G)$ (gamma) or $\chi(G)$ (chi) of $G$ the minimum number of colors we need to use.
+
+* $1 \le \gamma(G) \le n$
+* if a graph is not planar: $\gamma(G)=|V|$
+* if a graph is planar: $\gamma(G) \le 4$
+* if a graph is stable: $\gamma(G)=1$
+* if a graph is bipartite: $\gamma(G)=2$
+* if a graph is complete: $\gamma(G)=|V|$
+* $\gamma(G) \ge |\text{longest_clique_of_G}|$
+* $\gamma(G) \le d_{max}(G)+1$ <small>(max degree+1)</small>
+
+The solution is said to be optimal when we can't find a better one.
+
+<hr class="sr">
+
+## Welsh-Powell greedy algorithm
+
+* order the vertices by decreasing degree
+* while all vertices are not colored
+    * pick the first not colored vertex
+    * pick an unused color
+    * while conserving the order above, color every uncolored vertex, not adjacent to the ones we are coloring with this color
+
+To check if the solution is the best one, check if the solution is
+
+* greater than the minoring: not the best one
+* equals than the minoring: good
+
+<hr class="sl">
+
+## Contraction
+
+In French, it's called `Algorithme Reliement-contraction`. We are either
+
+* contracting two vertices
+* linking two vertices with an edge
+
+Your goal is to get a clique. This algorithm is evaluated as $2^z$ graph to make, with $z$ the number of edges missing for the graph to be complete.
+
+Algorithm
+
+* until every subgraph is complete
+* create 2 subgraphs
+    * one contracting two vertices
+    * one linking two vertices
+
+Once you are done, the degree of the smallest clique is the chromatic number. Note that the vertex in the smallest clique that are contracted together will have the same color.
 </div><div>
 
-...
+#### Edge Coloring
+
+The line graph $L(G)$ of a graph made from the graph $G$.
+
+* A vertex of $L$ is an edge of $G$
+* Two vertices of $L$ are connected if they are incident to the same vertex in $G$
+
+We will use a [Vertex Coloring](#vertex-coloring) algorithm to color our graph. The chromatic number of $L(G)$ is the chromatic index of $G$.
+
+✍️ We use "index" instead of "number" for Edge Coloring.
 </div></div>
 
 <hr class="sep-both">
