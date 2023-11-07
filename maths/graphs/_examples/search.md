@@ -217,33 +217,47 @@ We found the vertices: $h-i-j-g-e-f-d-b-a-k-c$.
 
 <hr class="sep-both">
 
-## Eulerian graph Example
+## Eulerian Graph Example
 
-![](images/euler.svg)
+<div class="row row-cols-lg-2"><div>
 
-All degrees aside from $d(5)$ and $d(7)$ are even, so we may have a semi-Eulerian graph. We can only start at 5 or 7 because we got a bridge here, let's start at 7 and look for an Eulerian chain.
+Is the following graph Eulerian? Give an Eulerian path.
 
-* go to 7
-* we can traverse (7,0), (7,1), or (7,5: bridge): (7,0)
-* go to 0
+![Eulerian Graph Example](../_images/search/euler.svg)
+
+All degrees aside from $d(5)$ and $d(7)$ are even, so we may have a semi-Eulerian graph. We can only start at 5 or 7 as $(5,7)$ is a bridge.
+</div><div>
+
+* Starting: 7
+* We can traverse (7,0), (7,1), or (7,5: bridge)
+* Go to 0: (7,0)
 * no choice, go to 1: (0,1)
 * no choice, go to 7: (1,7)
 * no choice, we are destroying the bridge, go to 5: (7,5)
-* we can traverse (5,6) or (5,2) : (5,2)
-* go to 2
+* we can traverse (5,6) or (5,2): (5,2)
+* Go to 2: (5,2)
 * no choice, go to 6: (2,6)
 * no choice, go to 5: (6,5)
 
-So we got the Eulerian chain/walk $7-0-1-7-5-2-6-5$ or $(7,0)-(0,1)-(1,7)-(7,5)-(5,2)-(2,6)-(6,5)$.
+So we got the Eulerian path $7-0-1-7-5-2-6-5$ or $(7,0)-(0,1)-(1,7)-(7,5)-(5,2)-(2,6)-(6,5)$.
+</div></div>
 
 <hr class="sep-both">
 
-## Hamiltonian graph Example
+## Hamiltonian Graph Example
+
+<div class="row row-cols-lg-2"><div>
 
 Find a Hamiltonian path.
 
-![](search/hamilton.png)
+![Hamiltonian Graph Example](../_images/search/hamilton.png)
+</div><div>
 
-<blockquote class="spoiler">
-There is the path $(b,a,c,e,d,f)$. We have $(f,b,a,c,e,d)$ too. And we have $(a,c,e,d,f,b)$ too. Did you notice? That's the same path, but we are starting at a different node, so it seems that we only have one answer.
-</blockquote>
+There is the path $(b,a,c,e,d,f)$. 
+
+We have $(f,b,a,c,e,d)$ too. 
+
+And we have $(a,c,e,d,f,b)$ too. 
+
+Did you notice? That's the same path, but we are starting at a different vertex. It seems that we only have one answer.
+</div></div>
