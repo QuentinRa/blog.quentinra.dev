@@ -484,6 +484,7 @@ Stuff that I found, but never read/used yet.
 * `window.location.href` / `window.location.replace(URL)`
 * partytown
 * [fingerprintjs](https://github.com/fingerprintjs/fingerprintjs)
+* [nw.js](https://github.com/nwjs/nw.js/)
 </div><div>
 
 ```javascript!

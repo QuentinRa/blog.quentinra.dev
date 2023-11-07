@@ -43,7 +43,7 @@ console.clear();
 * Documentation ✅: [JSDoc](https://jsdoc.app/)
 * Guidelines ‍🎓 : [clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript)
 * Benchmarks 🚀: [jsben.ch](https://jsben.ch/) / [jsperf](https://github.com/jsperf/jsperf.com)
-* Minifier 🐲: [javascript minifier](https://javascriptminifier.com/)
+* Minifier 🐲: [javascript minifier](https://javascriptminifier.com/) or [terser](https://github.com/terser/terser)
 * Lint 🧹: [eslint](https://github.com/eslint/eslint) and/or [unsupported browser features linter](https://github.com/amilajack/eslint-plugin-compat)
 </div></div>
 
@@ -650,6 +650,7 @@ Stuff that I found, but never read/used yet.
 * `match (/xxx/ and /x/g /x/i)`
 * [airbnb guidelines](https://github.com/airbnb/javascript)
 * [interesting code](https://stackoverflow.com/questions/21692646/how-does-facebook-disable-the-browsers-integrated-developer-tools)
+* [browserify](https://github.com/browserify/browserify)
 * ESM import: `<script type="module">` (see [socket.io](https://socket.io/docs/v4/client-initialization/)). See also Node.js notes. Top-level await possible... ESNext.
 
 ```
@@ -670,6 +671,9 @@ c.innerText.trim().replace(/, (.*)/, "$1")
 * `const collator = new Intl.Collator();
   tabs.sort((a, b) => collator.compare(a.title, b.title));`
 </div><div>
+
+* [rollupjs](https://github.com/rollup/rollup)
+* [webpack](https://webpack.js.org/) <small>([compat](https://github.com/ElemeFE/obsolete-webpack-plugin))
 
 Repositories
 
