@@ -405,8 +405,7 @@ This algorithm will color the graph, but it may not use the lowest number of col
     * Pick an unused color
     * While conserving the order above, color every uncolored vertex that is not adjacent to the ones we are coloring with this color
 
-To check if the solution is the best one, check the properties of $\gamma(G)$. 
-</div><div>
+To check if the solution is the best one, check the properties of $\gamma(G)$.
 
 #### Vertex Coloring Contraction Algorithm
 
@@ -425,6 +424,7 @@ This algorithm complexity is evaluated as $2^z$ graph to make, with $z$ the numb
     * One linking two vertices
 
 The degree of the smallest clique is the chromatic number. The groups of vertices in the smallest clique will have the same color.
+</div><div>
 
 #### Edge Coloring
 
@@ -436,6 +436,29 @@ The line graph $L(G)$ of a graph made from the graph $G$.
 We will use a [Vertex Coloring](#vertex-coloring) algorithm to color our graph. The chromatic number of $L(G)$ is the chromatic index of $G$.
 
 ✍️ We use "index" instead of "number" for Edge Coloring.
+
+#### Sprague–Grundy function
+
+The independence set, also called stable set, is a set $S$ in which there aren't any vertices that are adjacent to another vertex in the set.
+
+An Absorbing set is a set where each vertex outside the set is connected to at least one vertex inside the set.
+
+A kernel is a set both stable and absorbing. A graph can have $0$, $1$, or more kernels.
+
+**Sprague–Grundy function**
+
+This function gives a value to each vertex. If the value is $0$, then the vertex is inside the Kernel.
+
+* Try to start with the vertex with the least predecessors
+* Give the vertex the value 0
+* Until every vertex has received a value
+    * Navigate to the vertex successors
+    * Give them the lowest value not taken by a predecessor ($\ge 0$)
+    * You can change a vertex value if the constraint above is not respected <small> (a vertex took the same value as an adjacent vertex)</small>
+
+The Grundy function result is not unique, unless we sorted the vertices beforehand. We will usually sort the vertices by the number of successors before using the algorithm.
+
+The result can be used to color a graph. Each group of vertices having the same value will have the same color.
 </div></div>
 
 <hr class="sep-both">

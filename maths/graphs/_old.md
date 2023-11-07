@@ -16,23 +16,3 @@ You have 4 algorithms explained here (out of 6)
 * [Dijkstra's algorithm](sp/dijkstra.md)
 * [Bellman–Ford algorithm](sp/bellman-ford.md)
 * [Distance and Diameter](sp/distance.md)
-
-<hr class="sr">
-
-## Scheduling problem
-
-In French, it's called `Ordonnancement`. You are given
-
-* a list of tasks and their dependencies (like a task need another one to be done first)
-* the duration of each task
-
-And your job is to create the best schedule, meaning that you must find the best way to organize the tasks making the project the shorter possible (it's not only used in projects).
-
-Here, we are considering that we can execute an unlimited number of tasks in parallel, and we do not take delays into account, so it's a simplified version of scheduling's problems.
-
-* [Terminology](scheduling/index.md)
-* [Critical path analysis](scheduling/cpa.md)
-* [Metra potential method](scheduling/pt.md)
-* [P.E.R.T. method](scheduling/pert.md)
-
-You should have noticed, but our two methods are giving the same result (same critical path, same optimal duration, ...). This is a way of checking that you did things right. Note that there will be some differences with the early_start/last_start values.
