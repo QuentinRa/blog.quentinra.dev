@@ -187,7 +187,21 @@ Nested objects are rendered relatively to their parents. It means that moving th
 
 #### Prefabs 🤖
 
-xxx
+We can save a Game Object inside a file as a prefab. Each time we add a prefab to a scene, it creates a new instance. 
+
+When we modify the prefab, every instance is modified. But each instance can independently make some changes. In that scenario, the changes of the prefab are not overriding the local changes.
+
+* ✅ We update only one game object to update all instances
+* ✅ Changing the Transform Component doesn't impact instances
+* ❌ It we change the prefab, we may create problems as we have very little control on what instances did change on their side.
+
+To create a prefab, drag-and-drop a game object from the scene or the hierarchy to a folder in the project window. Do the reverse process to create an instance. Instances have a blue logo in the hierarchy 🟦.
+
+If an instance modifies the prefab, a blue bar is shown next to each modified property and any different value  is in bold. Use right-click on a property to apply/revert changes. You can see every overridden property by clicking on "override," right below "layer."
+
+Double-click on a prefab to edit it. From the inspector, you can also use the arrow at the top.
+
+📚 Prefab means "Prefabricated Game Object."
 </div></div>
 
 <hr class="sep-both">

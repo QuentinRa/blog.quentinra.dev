@@ -16,38 +16,6 @@ If you got things that you don't want to lose between scenes
 
 <hr class="sl">
 
-## Create Prefabs 📚✨
-
-You may want to create a "**template**" for your Game Objects. For instance, every bullet is the same. You could duplicate the Game Object. But what if you want to change something? Will you manually edit everything? No way! You should create a **Prefab** (Prefabricated game object).
-
-**Create a prefab**
-
-* Simply **drag and drop** an existing game object, **from** the **hierarchy** window, **to** the **project window**, inside a folder "Prefabs"
-
-**Instances of a prefab**
-
-* **Drag and drop a prefab**, either **inside the scene**, or inside the **hierarchy**
-* Every instance of this Prefab is now blue inside the hierarchy window
-
-**Edit the prefab**
-
-* Simply 
-  * **double-click** on the **prefab** inside the **project window**
-  * Or click on the arrow on the line of the prefab instance in the hierarchy
-* It will open a prefab inside the scene window, with its hierarchy window
-* **It will update the values for every instance** (aside from transform, or properties modified by the instance)
-
-**Edit one instance**
-
-* You can edit prefabs instances as you always did, it won't alter the prefab
-* **If the prefab and the instance got different values in a field**, then
-  * the **line** with a different value will have a **blue left border**
-  * the different **value** will be in **bold**
-* You can **revert/update the prefab** a value with a **right-click on the name of the field**
-* **You can see every overridden property by clicking on "override"**, right below "layer" in the inspector.
-
-<hr class="sr">
-
 ## Components
 
 You may refine your game object with what we call **components**. They are extensions such as collision, physics, etc. that you can add to your game objects. You can do that in the inspector (as we saw before), or by dropping a component on a game object in the hierarchy. You can write scripts that are also components to add things such as movement, etc.
