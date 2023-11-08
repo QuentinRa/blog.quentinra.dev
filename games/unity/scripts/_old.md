@@ -1,84 +1,4 @@
-# Serialize Field
-
-When creating a Script, it's shown) in the inspector. You can add <small>(we are saying "expose" too)</small> fields inside the inspector too, to allow someone (or yourself) to easily change some values/parameters.
-
-The **bad way** to do this, is to set an **attribute public**. Indeed, as a "side effect", it will be shown inside the editor, but it also means that any other class knows this attribute, and this may lead to problems later.
-
-The **right way** to do this, is to declare a serialized field.
-
-```cs
-[SerializeField] private int number = 0;
-// or on two lines 😶
-[SerializeField]
-private int number = 0;
-// or 🙄 (bad 👎)
-public int number = 0;
-```
-
-Resulting in
-
-![Create field inspector unity](images/fields.png)
-
-> **Pro tip**: Unity will show the right field, according to the type of the attribute. You can request a game object, or a component, and in both cases, you will be able to drag and drop a game object from the hierarchy, to the field. You can also use the small circle with a dot, to browse values for this field (![Unity pick value](images/picker.png)).
-
-<hr class="sr">
-
-## Serialize Field : basic
-
-<details class="details-e">
-<summary>Rename a Serialize Field 👍</summary>
-
-```cs
-[SerializeField]
-[FormerlySerializedAs("oldName")] private int number = 0;
-```
-</details>
-
-<details class="details-e">
-<summary>Tooltips 😎</summary>
-
-Maybe, the name of your attribute isn't providing enough information for the user to know what should be in this field. You should always add a **Tooltip**, shown when the user is hovering (=mouse stay over) the field.
-
-```cs
-[Tooltip("Some description blah blah blah")]
-[SerializeField] private int number = 0;
-```
-
-![Unity Serialize Field - tooltip](images/tooltip.png) (mouse hovering "key")
-
-> **Pro tip**: this is not an excuse to give bad names to your fields (as I did with "number" or "key").
-</details>
-
-<details class="details-e">
-<summary>Headers ✨</summary>
-
-You can make categories with Headers. This is a great way of sorting your serialized fields, if you got a lot of them.
-
-```cs
-[Header("Some header")]
-[SerializeField] private int a;
-[SerializeField] private float b;
-[SerializeField] private bool c;
-```
-
-![Unity Serialize Field - header](images/header.png)
-</details>
-
-<details class="details-e">
-<summary>Spaces ✨✨</summary>
-
-If headers aren't enough, you can add some spacing too.
-
-```cs
-[Header("Some header")]
-[SerializeField] private int a;
-[Space(2)]
-[Header("Some header")]
-[SerializeField] private int b;
-```
-
-![Unity Serialize Field - spacing](images/spacing.png)
-</details>
+# Serialize Field : basic
 
 <details class="details-e">
 <summary>New Menu 🚀</summary>
@@ -91,8 +11,8 @@ When clicking on "adding component", you got a list of menus such as "Audio", ..
 public class MovementManager : MonoBehaviour {}
 ```
 
-![Unity Serialize Field - New Menu1](images/new_menu_1.png)
-![Unity Serialize Field - New Menu2](images/new_menu_2.png)
+![Unity Serialize Field - New Menu1](_images/new_menu_1.png)
+![Unity Serialize Field - New Menu2](_images/new_menu_2.png)
 </details>
 
 > **Pro tip**: `[Space(2)][Header("name")]` is the same as `[Space(2), Header("name")]`

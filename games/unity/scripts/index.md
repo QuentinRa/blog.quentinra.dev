@@ -121,6 +121,80 @@ transform.Rotate(axis, Time.deltaTime * angle, Space.World); // or Space.Self
 
 <hr class="sep-both">
 
+## Serialize Field
+
+<div class="row row-cols-lg-2"><div>
+
+SerializeField makes the attributes of the script visible from the inspector, allowing users to edit them.
+
+```cs
+[SerializeField]
+private int number = 0;
+// Can be on one line
+[SerializeField] private int number = 0;
+```
+
+The result is:
+
+![Create field inspector unity](_images/fields.png)
+
+⚠️ Any "public" attribute is visible in the editor, but it's a side effect.
+
+<br>
+
+#### Serialize Field Tooltip
+
+Add a message shown when hovering the property.
+
+```cs
+[Tooltip("Some description blah blah blah")]
+[SerializeField] private int number = 0;
+```
+
+<br>
+
+#### Serialize Field Header
+
+Display a header before attributes to visually group them.
+
+```cs
+[Header("Some header")]
+// some attributes
+```
+</div><div>
+
+#### Serialize Field Spacing
+
+You can add some vertical spacing to increase readability.
+
+<div class="row row-cols-lg-2"><div>
+
+```cs
+[Header("Some header")]
+[SerializeField] private int a;
+[Space(2)]
+[Header("Some header")]
+[SerializeField] private int b;
+```
+</div><div>
+
+![Unity Serialize Field - spacing](_images/spacing.png)
+</div></div>
+
+<br>
+
+#### Serialize Field FormerlySerializedAs
+
+Backward compatibility when renaming an attribute:
+
+```cs
+[SerializeField]
+[FormerlySerializedAs("oldName")] private int number = 0;
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Coding Conventions
 
 <div class="row row-cols-lg-2"><div>
