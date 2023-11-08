@@ -278,6 +278,36 @@ The last instruction must not be an "if" statement.
 
 <hr class="sep-both">
 
+## Random Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### Console Logs 📺
+
+The console is a tab of the Project window. You can clear the console with `clear`. From the code, we can print logs in the console using:
+
+* Normal Logs (Debug)
+
+```cs
+Debug.Log("message");
+```
+
+* Warnings
+
+```cs
+Debug.LogWarning("warning");
+```
+
+* Errors
+
+```cs
+Debug.LogError("error");
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

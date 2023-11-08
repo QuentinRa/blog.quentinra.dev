@@ -1,22 +1,4 @@
-# Game object
-
-<div class="row row-cols-lg-2"><div>
-
-drag and drop a game object from the hierarchy, to the field. You can also use the small circle with a dot, to browse values for this field (![Unity pick value](images/picker.png))
-</div><div>
-
-...
-</div></div>
-
-> **Pro tip**: avoid changing the scale, it can cause performances issues, and this will be tiring to manage later.<br>
-> **Note**: you will learn more about "**components**" in another section.<br>
-> **Note**: you will learn about methods available for game objects in another section.
-
-<hr class="sr">
-
-## Scenes
-
-**Scenes are screens of your games**. For instance, you may have StartMenuScene, LoadingScene, GameScene, GameOverScene, InventoryScene, etc. Of course, you are free, you may split our GameScene in more scenes <small>(ex: one per level?)</small>, or you may merge scenes <small>(ex: GameScene with InventoryScene)</small>. By default, Unity is opening a new project in the "SampleScene".
+# Scenes
 
 In Unity, creating a scene will not be enough to make it a part of your game. You need to
 
@@ -41,52 +23,9 @@ If you got things that you don't want to lose between scenes
 > **Pro tip**: saving a scene do no means saving the project. You can use save to save your scene or save project to [...]. It will save settings, or things that were not saved. Closing the project will trigger that too.
 > **Pro tip**: you can open multiples scenes in the hierarchy. You can use "Set active"
 
-<hr class="sr">
-
-## Inspector window
-
-<div class="row mx-0"><div class="col-md-4">
-
-![Unity inspector - remove component](_images/inspector_remove.png)
-</div><div class="align-self-center col-md-8">
-
-Later, you may have to remove a component. You can do it by clicking on the 3 small dots, then "remove components".
-
-You may also use "Copy component" and "Paste component as new" or "Paste component values".
-
-> **Pro tip**: you need to reduce the number of components as possible<br>
-> **Pro tip**: as per the previous statement, in a group of game objects, try to merge some components (ex: the colliders, etc.)
-</div></div>
-
-> **Pro tip**: in the container in which you got "inspector", on the same line, you got three small dots too. You can switch from "normal" to "debug" mode here, which will show you way more fields in the inspector.<br>
-> **Pro tip**: some are giving icons to game objects. This is done by clicking on the "cube" next to (1). These icons are only visible in the scene view.
-
 <hr class="sl">
 
-## Project window
-
-The project window is, as a wise man said, a warehouse. This is a file explorer allowing you to explore your scenes, your assets <small>(images, textures, materials, sounds, etc.)</small> and works on them. **The project files should be split into folders**, such as
-
-* **Animations**, **Audio**, **Cutscene**
-* **Images**, **Materials**
-* **Plugins**, **Prefabs**, **Scenes**
-* **Scripts**: your C# scripts (.cs)
-* **Settings**, **Shaders**
-
-That's not the only thing you can do here! This is not a simple explorer.
-
-<details class="details-e">
-<summary>Create new scenes/materials/script/... 🚀</summary>
-
-You can create a folder with <code>Right-click > Create > Folder</code>. Once you did, double-click to move inside your new folder, and you can
-
-* Create a **new scene** with <code>Right-click > Create > Scene</code>
-* Create a **new material** with <code>Right-click > Create > Material</code>
-* Create a **new script** with <code>Right-click > Create > C# Script</code>
-</details>
-
-<details class="details-e">
-<summary>Create Prefabs 📚✨</summary>
+## Create Prefabs 📚✨
 
 You may want to create a "**template**" for your Game Objects. For instance, every bullet is the same. You could duplicate the Game Object. But what if you want to change something? Will you manually edit everything? No way! You should create a **Prefab** (Prefabricated game object).
 
@@ -115,46 +54,12 @@ You may want to create a "**template**" for your Game Objects. For instance, eve
   * the different **value** will be in **bold**
 * You can **revert/update the prefab** a value with a **right-click on the name of the field**
 * **You can see every overridden property by clicking on "override"**, right below "layer" in the inspector.
-</details>
-
-<details class="details-e">
-<summary>Console 📺</summary>
-
-The console is a tab of the **Project window**. You can clear the console with "clear". In the console, you got different kinds of logs such as
-
-* Normal Logs (Debug)
-
-```cs
-Debug.Log("message");
-```
-
-* Warnings
-
-```cs
-Debug.LogWarning("warning");
-```
-
-* Errors
-
-```cs
-Debug.LogError("error");
-```
-</details>
-
-> **Pro tip**: please remember the word "assets". Everything that you are creating in the project explorer (scripts/materials/...) are called **assets**.
 
 <hr class="sr">
 
 ## Components
 
 You may refine your game object with what we call **components**. They are extensions such as collision, physics, etc. that you can add to your game objects. You can do that in the inspector (as we saw before), or by dropping a component on a game object in the hierarchy. You can write scripts that are also components to add things such as movement, etc.
-
-> **Add a component**:
-> * you can click on Add component in the inspector
-> * you can drag and drop a component from the project window to a game object
->	* in the inspector
->	* in the scene <small>(not used often as you may add it on the wrong game object)</small>
->	* in the hierarchy
 
 You can use these methods to get a component, either applied on our game object, its children, or its parent. **Note that these methods are called on a game object, here it's the attribute "gameObject" in `MonoBehaviour`**, but it's implicit.
 
@@ -243,12 +148,6 @@ GetComponent<Renderer>().bounds.Intersects(anotherBounds);
 > **Pro tip**: on the same line that you use to remove a component, you got a question mark inside a circle. Click on it to open the documentation of a component.
 
 <hr class="sep-both">
-
-## General knowledge
-
-> ⚠️ A wise one would regularly save its work, and use a version-control tool too ⚠️
-
-<hr class="sl">
 
 ## Unity Settings
 

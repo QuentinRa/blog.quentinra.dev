@@ -97,7 +97,8 @@ The order of elements is important in 2D. Elements at the top are rendered befor
 * <kbd>CTRL+D</kbd> to duplicate the selected item
 * <kbd>ALT</kbd>+`expand/hide`: to expand/hide all children of a group
 * <kbd>SearchBar</kbd>: search game objects or components <small>(write the fullname)</small>
-</div><div>
+
+<br>
 
 #### Scene window
 
@@ -115,6 +116,31 @@ You can move, rotate, and scale game objects. You can also change your point of 
 * <kbd>CTRL</kbd> when moving something will update the position by 0.25
 * <kbd>CTRL</kbd>/<kbd>SHIFT</kbd> to select multiple game objects
 
+</div><div>
+
+#### Inspector Window
+
+We can edit the properties of any selected game objected <small>(from the hierarchy or from the project view)</small>. We can also manipulate components:
+
+![Unity inspector - remove component](_images/inspector_remove.png)
+
+Some values are game objects or files. You can drag-and-drop the game object/file to the field. You can also use the small circle with a dot, to browse values for this field (![Unity pick value](_images/picker.png)).
+
+📚 You can drag-and-drop a component to a game object in the hierarchy/scene to add it to a game object <small>(a shortcut)</small>.
+
+<br>
+
+#### Project Window
+
+The project window is like a warehouse. It's a file explorer allowing you to browse your scenes, your assets and open them in Unity. We usually sort our assets in folders such as:
+
+* Animations, Audio, Cutscene
+* Images, Materials
+* Plugins, Prefabs, Scenes
+* Scripts
+* Settings, Shaders
+
+➡️ You can create scene, materials, scripts, etc. from there.
 </div></div>
 
 <hr class="sep-both">
@@ -138,6 +164,10 @@ Every Game object has the same properties:
 </div></div>
 
 A game object that is disabled is not update nor rendered.
+
+Pros are disabling game objects that are far from the camera and only enabling those near the camera. In some cases, we may show objects that are far if they are visible to the player <small>(ex: building, etc.)</small>.
+
+⚠️ Avoid using scaling. It may cause performance issues.
 </div><div>
 
 #### Game Object Nesting
@@ -152,6 +182,18 @@ Nested objects are rendered relatively to their parents. It means that moving th
 </div>
 
 📚 If the parent is disabled, its nested game objects are disabled too. One trick is to disable the renderer instead of the game object.
+</div></div>
+
+<hr class="sep-both">
+
+## Random Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### Debug Inspector Window
+
+On the top of the inspector window, there are three small dots. You can switch from "normal" to "debug" mode here, which will show you way more fields in the inspector.
+</div><div>
 </div></div>
 
 <hr class="sep-both">
