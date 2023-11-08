@@ -1,12 +1,5 @@
 # Scenes
 
-In Unity, creating a scene will not be enough to make it a part of your game. You need to
-
-* Open the new scene
-* File > Build Settings
-  * Click on "add opened scenes in build" <small>(you may take note of the build index)</small>
-  * Or drag and drop scenes from the project window to the list
-
 Now, you will be able later to switch scenes using this sample of code
 
 ```cs
@@ -19,8 +12,6 @@ If you got things that you don't want to lose between scenes
 * you may create `static variables`. Instances are destroyed, but static variables aren't reset.
 * you may create a singleton, if you don't want to instance an object twice (check [DontDestroyOnLoad](https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html), or [Unity Singleton](https://blog.mzikmund.com/2019/01/a-modern-singleton-in-unity/), or [DontDestroyOnLoad+Singleton](https://gist.github.com/mstevenson/4325117))
 
-> **Pro tip?**: it seems that scenes are removed from the build after updating Unity. If you sorted your scenes and used indexes in your code, it may break. Make sure to keep a copy of your scenes indexes.<br>
-> **Pro tip**: saving a scene do no means saving the project. You can use save to save your scene or save project to [...]. It will save settings, or things that were not saved. Closing the project will trigger that too.
 > **Pro tip**: you can open multiples scenes in the hierarchy. You can use "Set active"
 
 <hr class="sl">
@@ -149,15 +140,6 @@ GetComponent<Renderer>().bounds.Intersects(anotherBounds);
 
 <hr class="sep-both">
 
-## Unity Settings
-
-Go to **Edit, Then Preferences**.
-
-* **General > Disable editor analytics**: up to you, [more info here](https://docs.unity3d.com/Manual/EditorAnalytics.html)
-* **General > Editor Theme**: Light/Dark
-
-<hr class="sr">
-
 ## Asset Store
 
 This is one of the places that you may use to look for assets. The [Asset Store](https://assetstore.unity.com/) needs you to log in to your unity account to import an asset in the editor. Fortunately, if Unity is open, you can do **Window > Asset store**, which will open the asset store in your browser and log you.
@@ -171,8 +153,6 @@ Once you added an asset to your list of assets, in Unity, you can find your asse
 <hr class="sl">
 
 ## Build game
-
-It's release time 🚀? When you picked your unity version, you picked the platforms that you can target. If you didn't, you can go inside the unity hub, then "install", right-click on your unity, and add modules.
 
 Inside Unity, before building something, let's first configure our game. Go to `Edit > Project Settings > Player`. You could also find the menu in `File > Build`, the bottom-left button "Player settings...".
 
@@ -190,5 +170,3 @@ Inside Unity, before building something, let's first configure our game. Go to `
 * [**Should**] You may set the background too
 
 > **Pro tip**: it's sometimes advised to check `Edit > Project Settings > Quality`, because you may be able to reduce your build size quite a lot, mostly by decreasing the number of levels.
-
-Then, you simply have to go to `File > Build` or `File > Build and Run`.

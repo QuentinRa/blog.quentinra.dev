@@ -186,6 +186,36 @@ Nested objects are rendered relatively to their parents. It means that moving th
 
 <hr class="sep-both">
 
+## Build A Game
+
+<div class="row row-cols-lg-2"><div>
+
+#### Scene Manager
+
+You need to add your scene in the SceneManager for them to be in the game that will be built. 
+
+* File > Build Settings
+* You may use "Add opened scenes in build"
+* You may drag-and-drop scenes in the list
+
+🪲 It seems updating Unity will empty the list.
+
+⚠️ Save project settings after changes, e.g., not just the scene.
+
+#### Unity Editor Modules
+
+To compile to a specific platform, you need to have the required modules installed. Open Unity Hub, navigate to the "Installs" tab, Right-click on your Unity version, and select "Add Modules".
+
+#### Generate A Build
+
+Navigate to `File > Build` or `File > Build and Run`.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Random Notes
 
 <div class="row row-cols-lg-2"><div>
@@ -194,6 +224,13 @@ Nested objects are rendered relatively to their parents. It means that moving th
 
 On the top of the inspector window, there are three small dots. You can switch from "normal" to "debug" mode here, which will show you way more fields in the inspector.
 </div><div>
+
+#### Unity Editor Settings
+
+Go to <kbd>Edit, Then Preferences</kbd>.
+
+* <kbd>General > Disable editor analytics</kbd>: up to you, [more info here](https://docs.unity3d.com/Manual/EditorAnalytics.html)
+* <kbd>General > Editor Theme</kbd>: Light/Dark
 </div></div>
 
 <hr class="sep-both">
