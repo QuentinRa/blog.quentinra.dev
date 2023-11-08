@@ -80,6 +80,38 @@ The editor is divided into four windows:
 
 <hr class="sep-both">
 
+## Basic Editor Usage
+
+<div class="row row-cols-lg-2"><div>
+
+#### Hierarchy window
+
+The order of elements is important in 2D. Elements at the top are rendered before/below the ones at the bottom.
+
+You can nest game objects inside game objects. While it make everything looks cleaner, too much nesting decreases performance.
+</div><div>
+
+#### Scene window
+
+You can move, rotate, and scale game objects. You can also change your point of view by clicking on an axis. Click back on the square to go back to Perspective.
+
+<div class="text-center">
+
+![Scene window - icons](_images/scene_icons.png) &nbsp;
+![Unity Point of View Axis](_images/axis_pov.png)
+</div>
+
+A few shortcuts:
+
+* <kbd>F</kbd> to focus a game object
+* <kbd>Mouse Wheel</kbd> to zoom/de-zoom
+* <kbd>Left-Click/Middle-click</kbd> to move your point of view
+* <kbd>CTRL</kbd> when moving something will update the position by 0.25
+* <kbd>CTRL</kbd>/<kbd>SHIFT</kbd> to select multiple game objects
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
