@@ -57,6 +57,29 @@ Scenes are individual levels or sections of your game. We often have one scene p
 
 <hr class="sep-both">
 
+## Unity Editor Interface
+
+<div class="row row-cols-lg-2"><div class="mt-3">
+
+![Editor Interface](_images/editor_interface.png)
+</div><div>
+
+The editor is divided into four windows:
+
+1. **hierarchy window** 📚: list of all game objects in the scene
+2. **scene window** 🛠: show the scene tab by default.
+    * **scene tab**: edit your scene 
+    * **game tab**: run your scene
+3. **inspector window** ⚙: edit the properties of the selected object
+4. **project window** 🗄: all of your project files
+
+➡️ When running the game, the scene tab will still be available, but any changes to it will be discarded when the simulation stops.
+
+✍️ Some are using a color tint <small>(Edit > Preferences > Colors > Playmode tint)</small> to visually see when their changes will be discarded.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

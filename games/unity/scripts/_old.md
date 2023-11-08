@@ -15,8 +15,6 @@ public class MovementManager : MonoBehaviour {}
 ![Unity Serialize Field - New Menu2](_images/new_menu_2.png)
 </details>
 
-> **Pro tip**: `[Space(2)][Header("name")]` is the same as `[Space(2), Header("name")]`
-
 <hr class="sl">
 
 ## Serialize Field: more

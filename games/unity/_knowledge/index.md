@@ -56,3 +56,15 @@ There are also Git plugins inside Unity:
 
 The main problem is that they store big files using [Git LFS](/tools-and-frameworks/vcs/git/commands/index.md#-git-large-file-storage) which is mostly a paid service as it has impractical limitations for free users.
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [Unity Version Control](https://unity.com/solutions/version-control) (PlasticSCM)
+</div><div>
+</div></div>

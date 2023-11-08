@@ -45,25 +45,6 @@ If you got things that you don't want to lose between scenes
 > **Pro tip**: saving a scene do no means saving the project. You can use save to save your scene or save project to [...]. It will save settings, or things that were not saved. Closing the project will trigger that too.
 > **Pro tip**: you can open multiples scenes in the hierarchy. You can use "Set active"
 
-<hr class="sl">
-
-## Interface
-
-When you are opening a project, by default you got 4 windows.
-
-* **hierarchy window** 📚 (left): list of all **GameObjects** of your scene
-* **scene window** 🛠 (middle)
-	* **scene tab**: edit your scene
-	* **game tab**: run your scene
-		* press play to run
-		* press play again to stop
-		* press pause to pause the simulation
-
-When **running** your game, you can go edit things <small>(either by going back to the scene, or by clicking on a game object in the game/hierarchy)</small>, to test things. **Note that everything will be reverted once you stopped playing**. Some are changing the color of the editor in play mode <small>(Edit > Preferences > Colors > Playmode tint)</small>.
-
-* **inspector window** ⚙ (right): you can edit the properties of the selected **GameObject**
-* **project window** 🗄 (bottom): all of your project files
-
 <hr class="sr">
 
 ## Hierarchy window
