@@ -1,31 +1,6 @@
 # General knowledge
 
-Unity is a **game engine** providing support for multiple platforms <small>(Windows, Linux, Mac, Web, Android, iOS)</small>. The editor is written in **C++**, but the scripts (=your code) will be in **C#**. You can [download Unity here](https://store.unity.com/#plans-individual).
-
-* **unity hub**: software to manage unity versions and projects
-* **unity**: downloaded through unity hub
-
 > ⚠️ A wise one would regularly save its work, and use a version-control tool too ⚠️
-
-<hr class="sl">
-
-## Pick Unity version 🚀
-
-Usually **you should use LTS** <small>(Long-term support)</small> **versions** of Unity, **because** they will still receive patches (bugs), while no new features will be added, for 2 years, so **they are stable versions**.
-
-<hr class="sr">
-
-## Student plan
-
-You may <b>apply for a student plan 📚</b> <small>(if you are a student)</small>.
-
-* go to [Unity Student Plan](https://unity.com/products/unity-student)
-* click on High school students
-* Log in/Register
-* Fill the form, powered by SheerID
-* Send a pic of your student ID
-* Done, wait a bit, you should receive a mail telling you **welcome** and **how to get started**
-* [**Claim your rewards**](https://assetstore.unity.com/browse/student-plan-pack) **for 1$** with the code sent by mail (optional)
 
 <hr class="sl">
 
