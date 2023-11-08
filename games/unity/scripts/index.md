@@ -121,6 +121,71 @@ transform.Rotate(axis, Time.deltaTime * angle, Space.World); // or Space.Self
 
 <hr class="sep-both">
 
+## Coding Conventions
+
+<div class="row row-cols-lg-2"><div>
+
+The name of a method should start with an uppercase.
+
+```diff
+- private void myMethod() {}
++ private void MyMethod() {}
+```
+
+You should explicitly add the qualifier.
+
+```diff
+- void MyMethod() {}
++ private void MyMethod() {}
+```
+
+Private attributes should start/end with an underscore (<code>_</code>).
+
+```diff
+- private int myAttribute;
++ private int _myAttribute;
+```
+
+Attributes should be private or protected
+
+```diff
+- int myAttribute;            // not private (implicit)
+- public int myAttribute;     // not public
++ protected int _myAttribute; // either explicit protected
++ private int _myAttribute;   // or explicit private
+```
+</div><div>
+
+Public attributes should NOT start/end with an underscore (<code>_</code>).
+
+```diff
+- public int _myAttribute;
+- [SerializeField] private int _myAttribute;
++ public int myAttribute;
++ [SerializeField] private int myAttribute;
+```
+
+The last instruction must not be an "if" statement.
+
+```diff
+- private void MyMethod()
+- {
+- 	// some code here (optionnal)
+- 	if (something) {
+- 	    // some code here
+- 	}
+- }
++ private void MyMethod()
++ {
++ 	// some code here (optionnal)
++ 	if (!something) return; // faster return
++ 	// some code here
++ }
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
