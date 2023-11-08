@@ -420,7 +420,7 @@ $ git merge other/main --allow-unrelated-histories
 
 Git submodules are the appropriate way to store (link) external Git repositories inside a Git repository.
 
-```bash
+```ps
 # init submodules for a cloned project (v1)
 $ git submodule init
 $ git submodule update
@@ -458,7 +458,7 @@ For example, GitHub free users have impractical bandwidth quotas and storage con
 
 Some commands you might use:
 
-```bash
+```shell!
 $ git lfs init
 $ git lfs update
 $ git lfs ls-files

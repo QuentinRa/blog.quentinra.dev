@@ -77,4 +77,15 @@ The dotnet executable is installed at: `C:\Users\<username>\.dotnet\dotnet.exe` 
 You can use this dropdown to see the `.csproj` files and other files hidden by the default solution view.
 
 ![s_to_fs](_images/s_to_fs.png)
+
+#### Unity Game Engine
+
+To use Rider as the script editor in Unity, navigate to: <kbd>Edit > Preferences > External tools</kbd>. If Rider is not detected, browse it:
+
+* Search Rider in Windows Search bar
+* Right-click > Shown in explorer
+* Right-click again > Shown in explorer
+* Double-click on the path > copy the path
+* Then in Unity, paste the path
+* And select "rider64"
 </div></div>
