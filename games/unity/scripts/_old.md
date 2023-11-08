@@ -194,10 +194,3 @@ You got way more attributes, you can
 * add an **entry** in the **toolbar** with [MenuItem](https://docs.unity3d.com/ScriptReference/MenuItem.html)
 * add an **entry** in the **assets list** with [CreateAssetMenu](https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html) (attached to a class extending ScriptableObject)
 * make this component show up when **selecting multiples game objects** with [CanEditMultipleObjects](https://docs.unity3d.com/ScriptReference/CanEditMultipleObjects.html)
-
-More?
-
-* This [extension adding new attributes](https://github.com/dbrizov/NaughtyAttributes) may be helpful 🚀
-* This [extension is adding new attributes too](https://github.com/gasgiant/Markup-Attributes) ✨
-* This [repository is providing examples for every attribute](https://github.com/LastAssertor/Unity-Attributes-Example) 🤓
-* [Odin](https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041) (paid unity plugin)

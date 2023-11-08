@@ -138,11 +138,31 @@ The result is:
 
 ![Create field inspector unity](_images/fields.png)
 
+📚 The field shown is determined based on the attribute type.
+
+</div><div>
+
+We can customize the inspector for our script. There are a few existing attributes we can use, while there are libraries with new attributes.
+
+* [Existing Attributes](#unity-scripts-existing-attributes)
+* [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes): an open-source library 🚀
+* [Markup-Attributes](https://github.com/gasgiant/Markup-Attributes): another open-source library ✨
+* [Odin](https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041): paid unity plugin
+
+➡️ The archived [Unity-Attributes-Example](https://github.com/LastAssertor/Unity-Attributes-Example/tree/master) project listed quite a lot of examples to learn how to use the existing attributes.
+
 ⚠️ Any "public" attribute is visible in the editor, but it's a side effect.
 
-<br>
+📚 You can merge attributes: `[A][B]` and `[A,B]` is the same.
+</div></div>
 
-#### Serialize Field Tooltip
+<hr class="sep-both">
+
+## Unity Scripts Existing Attributes
+
+<div class="row row-cols-lg-2"><div>
+
+##### Serialize Field Tooltip
 
 Add a message shown when hovering the property.
 
@@ -151,9 +171,7 @@ Add a message shown when hovering the property.
 [SerializeField] private int number = 0;
 ```
 
-<br>
-
-#### Serialize Field Header
+##### Serialize Field Header
 
 Display a header before attributes to visually group them.
 
@@ -161,9 +179,8 @@ Display a header before attributes to visually group them.
 [Header("Some header")]
 // some attributes
 ```
-</div><div>
 
-#### Serialize Field Spacing
+##### Serialize Field Spacing
 
 You can add some vertical spacing to increase readability.
 
@@ -181,9 +198,7 @@ You can add some vertical spacing to increase readability.
 ![Unity Serialize Field - spacing](_images/spacing.png)
 </div></div>
 
-<br>
-
-#### Serialize Field FormerlySerializedAs
+##### Serialize Field FormerlySerializedAs
 
 Backward compatibility when renaming an attribute:
 
@@ -191,6 +206,9 @@ Backward compatibility when renaming an attribute:
 [SerializeField]
 [FormerlySerializedAs("oldName")] private int number = 0;
 ```
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">
