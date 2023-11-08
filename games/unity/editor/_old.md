@@ -1,44 +1,8 @@
 # Game object
 
-<details class="details-s">
-<summary>A <b>name</b> ✨: for you to know what's this game object</summary>
-
-```cs
-string myName = name; // or this.name or this.gameObject.name
-```
-</details>
-
-<details class="details-s">
-<summary>A <b>tag</b> 🏷: Quite useful. You can add a tag "enemy" <small>(you can create tags)</small> and check the tag of a game object to know if this is an "enemy". You can also find game objects by tag name.</summary>
-
-```cs
-string myTag = tag; // or this.tag or this.gameObject.tag
-GameObject g = GameObject.FindWithTag("tag"); // null if not found
-GameObject obj = GameObject.FindGameObjectWithTag("tag"); // FindWithTag is an alias of this one
-GameObject[] objects = GameObject.FindGameObjectsWithTag("tag");
-```
-</details>
-
-<details class="details-s">
-<summary>A state "<b>enabled</b>" 🤚. You can enable/disable your game object. If a game object is disabled, it won't be updated anymore.</summary>
-
-```cs
-bool isEnabled = enabled;
-```
-
-> **Pros**: they are disabling game objects that are far from the camera, and enabling game objects near the camera. Some game objects may be visible even if the camera is far, you may handle that too.
-</details>
-
-<details class="details-s">
-<summary><b>Transform</b> ⚙: a <b>component</b> handling the position, rotation, and scale of a Game object.</summary>
-
-```cs
-Transform myTransform = transform; // transform.position, ...
-myTransform.LookAt(target);
-myTransform.Rotate(axis, angle);
-myTransform.Rotate(axis, Time.deltaTime * angle, Space.World); // or Space.Self
-```
-</details>
+* Set the name
+* A <b>tag</b> 🏷: Quite useful. You can add a tag "enemy" <small>(you can create tags)</small> and check the tag of a game object to know if this is an "enemy". You can also find game objects by tag name.
+* A state "<b>enabled</b>" 🤚. You can enable/disable your game object. If a game object is disabled, it won't be updated anymore. Pros are disabling game objects that are far from the camera, and enabling game objects near the camera. Some game objects may be visible even if the camera is far, you may handle that too.
 
 > **Pro tip**: avoid changing the scale, it can cause performances issues, and this will be tiring to manage later.<br>
 > **Note**: you will learn more about "**components**" in another section.<br>

@@ -49,6 +49,10 @@ Unity uses a component-based architecture, where you attach various components t
 Every game object has a TransformComponent handling the position, rotation, and scale of a Game object.
 
 We can create our components using [Scripts](/games/unity/scripts/index.md).
+
+#### Scenes
+
+Scenes are individual levels or sections of your game. We often have one scene per screen.
 </div></div>
 
 <hr class="sep-both">

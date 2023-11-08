@@ -32,6 +32,41 @@ public class Example : MonoBehaviour
 
 <hr class="sep-both">
 
+## Game Objects and MonoBehavior
+
+<div class="row row-cols-lg-2"><div>
+
+Most unity scripts are inheriting the class [MonoBehaviour](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) as it is the base class for components that can be attached to GameObjects.
+
+#### Associated Game Object
+
+The associated game object is available in the `gameObject` attribute. You can edit any value as you would in the editor.
+
+```cs
+// Name of the game object (attribute 'name')
+// Tag of the game object (attribute 'tag')
+// State of the game object (attribute 'enabled')
+// Access the TransformComponent (attribute 'transform')
+string previousName = name;  // store in a variable
+name = "Hello, World";       // change the name
+```
+
+➡️ You can use `this.attribute` or `gameObject.attribute` too.
+</div><div>
+
+#### Accessing Other Game Objects
+
+You can find game objects that have a tag `tagName`:
+
+```cs
+GameObject obj = GameObject.FindWithTag("tagName"); // null if not found
+GameObject obj = GameObject.FindGameObjectWithTag("tagNametagName"); // same
+GameObject[] objects = GameObject.FindGameObjectsWithTag("tagName");
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -39,6 +74,12 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [_old](_old.md)
-* `UnityEngine.MonoBehaviour`
+
+```cs
+// transform.position, ...
+myTransform.LookAt(target);
+myTransform.Rotate(axis, angle);
+myTransform.Rotate(axis, Time.deltaTime * angle, Space.World); // or Space.Self
+```
 </div><div>
 </div></div>
