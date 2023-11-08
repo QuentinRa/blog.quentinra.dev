@@ -8,7 +8,7 @@ It's used by [Microsoft .NET framework](https://dotnet.microsoft.com/en-us/downl
 
 **Where to learn?** 🎓
 
-* [Documentation](https://learn.microsoft.com/en-us/dotnet/csharp/) (⛪)
+* [Documentation](https://learn.microsoft.com/en-us/dotnet/csharp/) + [Tour](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/) (⛪)
 * [C# Yellow Book](https://www.robmiles.com/c-yellow-book/) (👻)
 * [LearnCS](https://www.learncs.org/) (👻)
 </div><div>
