@@ -84,11 +84,19 @@ The editor is divided into four windows:
 
 <div class="row row-cols-lg-2"><div>
 
+In most windows, using right-click, you can create game objects, components, scripts, etc.
+
+![Hierarchy - Create game objects](_images/create.png)
+
 #### Hierarchy window
 
 The order of elements is important in 2D. Elements at the top are rendered before/below the ones at the bottom.
 
-You can nest game objects inside game objects. While it make everything looks cleaner, too much nesting decreases performance.
+* <kbd>Double-click</kbd> on a item to focus it in the scene view
+* <kbd>F2</kbd> to rename the selected item
+* <kbd>CTRL+D</kbd> to duplicate the selected item
+* <kbd>ALT</kbd>+`expand/hide`: to expand/hide all children of a group
+* <kbd>SearchBar</kbd>: search game objects or components <small>(write the fullname)</small>
 </div><div>
 
 #### Scene window
@@ -101,13 +109,49 @@ You can move, rotate, and scale game objects. You can also change your point of 
 ![Unity Point of View Axis](_images/axis_pov.png)
 </div>
 
-A few shortcuts:
-
 * <kbd>F</kbd> to focus a game object
 * <kbd>Mouse Wheel</kbd> to zoom/de-zoom
 * <kbd>Left-Click/Middle-click</kbd> to move your point of view
 * <kbd>CTRL</kbd> when moving something will update the position by 0.25
 * <kbd>CTRL</kbd>/<kbd>SHIFT</kbd> to select multiple game objects
+
+</div></div>
+
+<hr class="sep-both">
+
+## Manipulating Game Objects
+
+<div class="row row-cols-lg-2"><div>
+
+Every Game object has the same properties:
+
+<div class="row row-cols-md-2 mx-0"><div>
+
+![Unity inspector](_images/inspector.png)
+</div><div class="align-self-center">
+
+1. Enable/Disable
+2. Name
+3. Tag
+4. Transform
+5. Add new components
+</div></div>
+
+A game object that is disabled is not update nor rendered.
+</div><div>
+
+#### Game Object Nesting
+
+You can nest game objects inside game objects. While it make everything looks cleaner, too much nesting decreases performance.
+
+Nested objects are rendered relatively to their parents. It means that moving the parent will move the children.
+
+<div class="text-center">
+
+![Hierarchy - groups](_images/groups.png)
+</div>
+
+📚 If the parent is disabled, its nested game objects are disabled too. One trick is to disable the renderer instead of the game object.
 </div></div>
 
 <hr class="sep-both">
@@ -119,5 +163,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [_old](_old.md)
+* Selections
+* Tags
 </div><div>
 </div></div>

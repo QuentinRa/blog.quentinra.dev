@@ -8,10 +8,6 @@ drag and drop a game object from the hierarchy, to the field. You can also use t
 ...
 </div></div>
 
-* Set the name
-* A <b>tag</b> 🏷: Quite useful. You can add a tag "enemy" <small>(you can create tags)</small> and check the tag of a game object to know if this is an "enemy". You can also find game objects by tag name.
-* A state "<b>enabled</b>" 🤚. You can enable/disable your game object. If a game object is disabled, it won't be updated anymore. Pros are disabling game objects that are far from the camera, and enabling game objects near the camera. Some game objects may be visible even if the camera is far, you may handle that too.
-
 > **Pro tip**: avoid changing the scale, it can cause performances issues, and this will be tiring to manage later.<br>
 > **Note**: you will learn more about "**components**" in another section.<br>
 > **Note**: you will learn about methods available for game objects in another section.
@@ -47,55 +43,7 @@ If you got things that you don't want to lose between scenes
 
 <hr class="sr">
 
-## Hierarchy window
-
-<details class="details-e">
-<summary>Create game objects</summary>
-
-Simply right-click in the hierarchy window, and select what you want to create.
-
-![Hierarchy - Create game objects](_images/create.png)
-</details>
-
-<details class="details-e">
-<summary>Group game objects</summary>
-
-**You can group game objects**, which is making nested game objects rendered at a position relative to their parent. This is useful when you want to make sure that a gun is always rendered at a fixed position to a player <small>(or, mostly, when you want something to be rendered relative to something else)</small>.
-
-To create a group, create a new game object inside another one (right-click on the parent > create). You can also drag and drop an existing object inside another game object.
-
-![Hierarchy - groups](_images/groups.png)
-
-> **Tip 1**: Sometimes, we are using an "Empty game object" as the parent to sort things.<br>
-> **Tip 2**: If you are hiding the parent, its children are also hidden. This is useful, but if this is not what you want, you can simply prevent the parent from being rendered by disabling its rendered rather than disabling the parent itself.
-</details>
-
-> **Pro tips**
-> * <kbd>Double-click</kbd> on a item in the hierarchy to focus it in the scene view
-> * <kbd>F2</kbd> to rename the selected item
-> * <kbd>CTRL+D</kbd> to duplicate the selected item
-> * <kbd>ALT+expand or hide</kbd> to expand/hide all children of a group
-> * you can use the search bar to look for a game object by name, or for game objects having a component <small>(you must write the full name of the component)</small>
-
-Note: in complex games, you may define "selections". It means that pressing a shortcut (or toggling a menu item) will automatically select a game object. Click on a game object, then edit, then selection, and save it. Then use the shortcut, or use edit > selection > load, to load your selected game object.
-
-<hr class="sr">
-
 ## Inspector window
-
-In the inspector, **you can edit the properties of the selected game object**, even if this game object isn't inside the hierarchy window <small>(ex: files in the project window)</small>.
-
-<div class="row row-cols-md-2 mx-0"><div>
-
-![Unity inspector](_images/inspector.png)
-</div><div class="align-self-center">
-
-1. Enable/Disable
-2. Name
-3. Tag
-4. Transform (set the position, rotation, scale)
-5. Add new components (explained later)
-</div></div>
 
 <div class="row mx-0"><div class="col-md-4">
 
