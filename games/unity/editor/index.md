@@ -168,7 +168,8 @@ A game object that is disabled is not update nor rendered.
 Pros are disabling game objects that are far from the camera and only enabling those near the camera. In some cases, we may show objects that are far if they are visible to the player <small>(ex: building, etc.)</small>.
 
 ⚠️ Avoid using scaling. It may cause performance issues.
-</div><div>
+
+<br>
 
 #### Game Object Nesting
 
@@ -182,6 +183,11 @@ Nested objects are rendered relatively to their parents. It means that moving th
 </div>
 
 📚 If the parent is disabled, its nested game objects are disabled too. One trick is to disable the renderer instead of the game object.
+</div><div>
+
+#### Prefabs 🤖
+
+xxx
 </div></div>
 
 <hr class="sep-both">
@@ -211,7 +217,24 @@ To compile to a specific platform, you need to have the required modules install
 Navigate to `File > Build` or `File > Build and Run`.
 </div><div>
 
-...
+#### Build Configuration
+
+Go to `Edit > Project Settings > Player`. You could also find the menu in `File > Build` at the bottom-left button "Player settings...".
+
+* Set the company name, the product name, the version
+* You may set the icon 🚀 <small>(and multiple icons for each resolution)</small>
+* You can define the initial configuration
+* In splash image
+   * You may remove the unity logo <small>(up to you, or You can move it)</small>
+   * Add a splash screen with your own logo
+      * First, exit and add your logo in the project files
+      * Click on your logo, in texture type, set sprite 2D, and apply
+      * Go back to the splash screen
+      * Click on "+" and drag and drop your logo inside the field
+      * You may set the duration
+* You may set the background too
+
+It's sometimes advised to check `Edit > Project Settings > Quality` as you may be able to reduce your build size.
 </div></div>
 
 <hr class="sep-both">

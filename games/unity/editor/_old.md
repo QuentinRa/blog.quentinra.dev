@@ -149,24 +149,3 @@ Once you added an asset to your list of assets, in Unity, you can find your asse
 * **My assets** (you can download and import your assets here)
 * **Unity Registry** (verified plugins)
 * **In Project** (you can update/remove your packages here)
-
-<hr class="sl">
-
-## Build game
-
-Inside Unity, before building something, let's first configure our game. Go to `Edit > Project Settings > Player`. You could also find the menu in `File > Build`, the bottom-left button "Player settings...".
-
-* [**Should**] Set the company name, the product name, the version
-* [**Could**] You may set the icon 🚀 (and multiple icons for each resolution)
-* [**Could**] You can define the initial configuration
-* [**Should**] In Splash image
-    * you may remove the unity logo (up to you, or you can move it)
-    * add a splash screen with your own logo
-        * First, exit and add your logo in the project files
-        * Click on your logo, in **texture type**, set **sprite 2D**, and apply your changes
-        * Go back to the splash screen
-        * Click on "+" and drag and drop your logo inside the field
-        * You may set the duration
-* [**Should**] You may set the background too
-
-> **Pro tip**: it's sometimes advised to check `Edit > Project Settings > Quality`, because you may be able to reduce your build size quite a lot, mostly by decreasing the number of levels.
