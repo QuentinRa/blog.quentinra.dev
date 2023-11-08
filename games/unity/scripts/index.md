@@ -67,6 +67,60 @@ GameObject[] objects = GameObject.FindGameObjectsWithTag("tagName");
 
 <hr class="sep-both">
 
+## Basic Methods
+
+<div class="row row-cols-lg-2"><div>
+
+#### Game Object Methods
+
+Clone a game object, e.g., create a new one.
+
+```cs
+var _obj = Instantiate(obj);
+var _obj = Instantiate(obj, pos, rot);
+var _obj = Instantiate(obj, pos, Quaternion.identity);
+```
+
+Destroy a game object.
+
+```cs
+Destroy(obj);
+Destroy(obj, time_before_death);
+```
+
+Call a method on every MonoBehavior of our game object.
+
+```cs
+SendMessage("methodName");
+SendMessageUpwards("methodName"); // and on its ancestors
+```
+</div><div>
+
+#### Position-Related Methods
+
+A class used to represent a position (x,y) or (x,y,z).
+
+```cs
+// shortcuts to create vectors
+Vector3.back, Vector3.down, Vector3.up, ...
+someVector.normalized; // magnitude=1, just a direction
+Vector3.MoveTowards(current, target, maxDistancePerStep);
+Vector3.Reflex(inDirection, inNormal) // sort of mirror, bounce
+if (Vector3.Distance(a, b) <= 0.0001f) {} // a near b?
+```
+
+We can use these functions with transforms:
+
+```cs
+// transform.position, ...
+transform.LookAt(target);
+transform.Rotate(axis, angle);
+transform.Rotate(axis, Time.deltaTime * angle, Space.World); // or Space.Self
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -74,12 +128,5 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [_old](_old.md)
-
-```cs
-// transform.position, ...
-myTransform.LookAt(target);
-myTransform.Rotate(axis, angle);
-myTransform.Rotate(axis, Time.deltaTime * angle, Space.World); // or Space.Self
-```
 </div><div>
 </div></div>
