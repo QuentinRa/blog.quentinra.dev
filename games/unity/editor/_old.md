@@ -1,7 +1,5 @@
 # Game object
 
-Everything in Unity is a **game object**. **Players**, **enemies**, **items**, **camera**, **sounds**, **UI elements**, **lights**, and so on, are **game objects**. It means that they got the following properties
-
 <details class="details-s">
 <summary>A <b>name</b> ✨: for you to know what's this game object</summary>
 

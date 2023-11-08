@@ -23,6 +23,36 @@ This content is further developed in other pages:
 
 <hr class="sep-both">
 
+## Component-based architecture
+
+<div class="row row-cols-lg-2"><div>
+
+#### Game Object
+
+Every entity in the game world is a game object:
+
+* Characters and Items
+* Lights and Cameras
+* Sounds and Musics
+* UI Elements
+* ...
+
+A game object can contain other game objects.
+
+📚 Prefabs are preconfigured GameObjects that we can create and reuse throughout our project.
+</div><div>
+
+#### Components
+
+Unity uses a component-based architecture, where you attach various components to GameObjects to give them specific functionality.
+
+Every game object has a TransformComponent handling the position, rotation, and scale of a Game object.
+
+We can create our components using [Scripts](/games/unity/scripts/index.md).
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
