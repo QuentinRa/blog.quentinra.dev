@@ -1,20 +1,4 @@
-# Rigidbody (Physics 🐱‍🏍)
-
-
-**Pro tip**: updating physics must be done in the method `FixedUpdate` <small>(running at 50 FPS, even if the game is running at 20 FPS)</small> instead of `Update`. In `Update`, you will process input (calls to Input.Something), and in `FixedUpdate`, you will ONLY update the force, you won't call Input.Something (use attributes to remember what key/... were pressed).
-
-```cs
-// if up then Jump, etc.
-rb.AddForce(Vector3.left); // move to the left
-rb.AddForce(Vector3.left * speed);
-rb.AddForce(Vector3.left * speed, ForceMode.A_MODE_HERE);
-rb.MovePosition(position);
-rb.AddExplosionForce(power, explosionPos, radius, 3.0F);
-```
-
-<hr class="sep-both">
-
-## Colliders
+# Colliders
 
 Colliders are used to check if our game object is colliding with another object. You will define a collider covering your game object (up to you, whether only touching the bust is considered as colliding=more efficient, etc.). Once you created your collider, **it will be triggered each time a game object having a Rigidbody is entering your collider**.
 
