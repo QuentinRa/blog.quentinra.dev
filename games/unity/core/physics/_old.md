@@ -1,20 +1,5 @@
 # Rigidbody (Physics 🐱‍🏍)
 
-First, Rigidbody is for 3D games, and you have Rigidbody2D for 2D games. A game object with a rigid body **is subject to gravity** and **colliders**. If you ever add this to a game object, **you can't use transform to move your game object**, as you need to apply forces to move it. **If you are not planning to use force, be sure to toggle " is kinematic" on your Rigidbody component**.
-
-1. `is kinematics: true`: no forces (including gravity) applied on this game object (ex: a wall).
-2. `use gravity: false`: still apply forces, but no gravity.
-3. **Notes**
-    * lower mass = pushed back by others
-    * increasing drag = slow down the velocity (speed)
-4. **Constraints**
-    * you can freeze the Rotation (ex: x, y, z = no rotation)
-    * you can freeze the position (ex: z in 2D)
-5. **Interpolate**: turn it on for the player's character ([source](https://docs.unity3d.com/ScriptReference/Rigidbody-interpolation.html)), it makes collision smoother <small>(but a collision between two interpolated objects may produce the reverse result)</small>
-6. **Settings** (Edit > Project Settings > Physics)
-    * You can change the gravity
-    * You got a Layer Collision Matrix, explained in Collider
-7. **Some code**
 
 **Pro tip**: updating physics must be done in the method `FixedUpdate` <small>(running at 50 FPS, even if the game is running at 20 FPS)</small> instead of `Update`. In `Update`, you will process input (calls to Input.Something), and in `FixedUpdate`, you will ONLY update the force, you won't call Input.Something (use attributes to remember what key/... were pressed).
 
