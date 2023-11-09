@@ -322,6 +322,41 @@ We can customize the input field for strings:
 // or [TextArea( minLines, maxLines )]
 [TextArea] public string textarea = "";
 ```
+
+#### Add Menus to ContentMenu
+
+You can add menus shown when using Right-click on your component. Each menu is associated to a function.
+
+```cs
+[ContextMenuItem("reset", "ResetIntWithMenuItem")] 
+public int intWithMenuItem;
+private void ResetIntWithMenuItem()
+{
+	intWithMenuItem = 12;
+}
+```
+
+#### Advanced Types
+
+```cs
+[Serializable] // using System
+public class NestedClass // <=> struct
+{
+	public int nestedAttribute; 
+}
+[SerializeField] private NestedClass nestedClass;
+```
+
+#### Custom Inspector Names For Enum Values
+
+```cs
+private enum Axis
+{
+	[InspectorName("X-axis")] X, 
+	[InspectorName("Y-axis")] Y
+}
+[SerializeField] private Axis axis = Axis.X;
+```
 </div></div>
 
 <hr class="sep-both">
@@ -437,6 +472,10 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* [_old](_old.md)
+* [SelectionBase](https://docs.unity3d.com/ScriptReference/SelectionBaseAttribute.html)
+* [SettingsProvider](https://docs.unity3d.com/ScriptReference/SettingsProvider.html) (new version of [PreferenceItem](https://docs.unity3d.com/ScriptReference/PreferenceItem.html)): Preferences
+* [MenuItem](https://docs.unity3d.com/ScriptReference/MenuItem.html): toolbar
+* [CreateAssetMenu](https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html) (ScriptableObject): asset list
+* [CanEditMultipleObjects](https://docs.unity3d.com/ScriptReference/CanEditMultipleObjects.html): can be set when selecting multiple game objects
 </div><div>
 </div></div>
