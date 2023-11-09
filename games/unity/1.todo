@@ -1,92 +1,16 @@
-https://blog.unity.com/technology/a-lightning-round-of-great-tips-for-2d-games
-
 -----------------------------------------------------------------
 ------------------------- Game Objects
 -----------------------------------------------------------------
+
+3D GO using Rigidbody, one unit = one meter
+
+Z-fighting
+=> two items at the same location, overlapping
+=> bug when rendering
+=> trick: increase the z-values by 0.01
 
 2D GO Rigidbody, base sprite size one meter and one unit.
 For example 32px = 1 meter and 1 unit. (Pixel Per Unit)
 
 Z-axis rendering
-=> Hierarchy (last => last rendered)
 => layers
-
------------------------------------------------------------------
-------------------------- Components
------------------------------------------------------------------
-
-Distance Joint
-
------------------------------------------------------------------
-------------------------- Tilemap 2D
------------------------------------------------------------------
-
-https://github.com/OndrejNepozitek/Edgar-Unity
-https://www.raywenderlich.com/23-introduction-to-the-new-unity-2d-tilemap-system#toc-anchor-006
-https://hexiledgames.itch.io/25d-tilemaps-and-voxel-terrain-generator
-
-A tilemap is a map of tiles, and a tile is an image. You can have a Rectangular or an Isometric tilemap.
-This is a convenient way of creating 2D maps since
-
-* you create a palette
-* you create tiles layers (ground, ...)
-* and you move your tiles (grass, ...) to your map, in the right layer
-
-Creating a layer allows you to put things on top of another. In Unity, you will have a grid and
- each tilemap is a layer. If you want something to be above or below the player, then play with the property `Order in Layer`.
-
------------------------------------------------------------------
-------------------------- Sprites
------------------------------------------------------------------
-
-Then drag and drop an image into the slot.
-You may have to transform your image into a sprite.
-
-The image size must be a power of two, so you can compress it. You can compress sounds too (50% seems good).
-
-A sprite is an image, and a sprite sheet is a big image having a lot of sprites.
-In unity, click on a sprite sheet then in property, set `Sprite mode` to `Multiple` to tell unity that this image is composed of multiples images. Then in sprite editor, slide the image (either using automatic or grid) and apply your changes. You should now see only one frame/sprite when dragging your sprite inside the scene.
-
-You may (or not)
-
-* change filter mode (to point)
-* disable compression
-* change the pixel by unit
-
------------------------------------------------------------------
-------------------------- Animations
------------------------------------------------------------------
-
-"Animations" are made of an animator (handling the animations/states) and animations.
-An animation would be idle, running, jumping, ... while the animator would define what makes you move from idle to running.
-
-Create and add an animator controller to a GameObject. Then create animations (you need to select the time
-and the image loaded at this time). Then in the animator, you must add the transitions.
-
-* select a parameter
-	* in animator, create a parameter
-	* in the transition, add a condition on the parameter
-	* in the code, change the parameter
-
-```cs
-// let's say that at some point you did
-Animator anim = GetComponent<Animator>();
-// then you can write in Update
-// (you should not use a string but an ID, stored in a static
-// const using Animator.StringToHash("name"))
-anim.SetBool("name", false);;
-anim.SetFloat("name", 0);;
-anim.SetInteger("name", 0);;
-anim.SetTrigger("name");;
-
-// some are also using this
-// instead of parameters and so on (so you are
-// manually asking for an animation)
-anim.Play("anim_name");
-```
-
-* you may uncheck ``Has exit time`` so you don't have a delay when changing state
-* ``Any state`` means that if the condition is true, then from any state you can move to another state
-
-This is a summary of this
-[great video](https://www.youtube.com/watch?v=Gf8LOFNnils&ab_channel=PandemoniumGames) if you can watch it, that's better.

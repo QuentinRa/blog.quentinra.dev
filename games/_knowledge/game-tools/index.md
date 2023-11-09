@@ -6,6 +6,7 @@
 
 * [rapidquest](https://github.com/radiantone/rapidquest) (Quests Management)
 * [Donjon.bin.sh](https://donjon.bin.sh/) (RPG Data Generation)
+* [Game UI Database](https://www.gameuidatabase.com/) (Screenshots from other games)
 
 #### Map Generation Tools
 
@@ -32,6 +33,7 @@
 * [Video Game Name Generator](https://videogamena.me/)
 * [Nightmare_82/RpgTools](https://gitlab.com/Nightmare_82/charactercreator) (RPG Engine for PVGames Assets)
 * [wwise](https://www.audiokinetic.com/fr/products/wwise/) or [fmod](https://www.fmod.com/)
+* [Photon](https://www.photonengine.com/) (multiplayer)
 </div></div>
 
 <hr class="sep-both">
