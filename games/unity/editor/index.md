@@ -305,5 +305,8 @@ Stuff that I found, but never read/used yet.
 * Tags + Hell
 * [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html) to save stuff
 * Active Scene and Additive Scenes
+* Game resolution
+* Profiler + IDE debugger
+* Scene templates
 </div><div>
 </div></div>

@@ -108,5 +108,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [UI Builder](https://www.youtube.com/watch?v=NQYHIH0BJbs&ab_channel=CocoCode): new way to build interfaces
+* TextMeshPro to write text as a game object
 </div><div>
 </div></div>

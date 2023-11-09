@@ -472,6 +472,8 @@ The console is a tab of the Project window. You can clear the console with `clea
 
 ```cs
 Debug.Log("message");
+Debug.Log("<color=red>Warning!</color>");
+Debug.Log($"$(variable)");
 ```
 
 * Warnings
@@ -485,6 +487,8 @@ Debug.LogWarning("warning");
 ```cs
 Debug.LogError("error");
 ```
+
+⚠️ Debug slows the game as it save logs to a file too.
 </div><div>
 </div></div>
 
@@ -501,5 +505,16 @@ Stuff that I found, but never read/used yet.
 * [MenuItem](https://docs.unity3d.com/ScriptReference/MenuItem.html): toolbar
 * [CreateAssetMenu](https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html) (ScriptableObject): asset list
 * [CanEditMultipleObjects](https://docs.unity3d.com/ScriptReference/CanEditMultipleObjects.html): can be set when selecting multiple game objects
+
+```cs
+transform.GetSiblingIndex # (hierarchy)
+#OnEnable
+```
 </div><div>
+
+Concepts
+
+* StateMachine => OnStateEnter / OnStateUpdate / OnStateExit
+* Avoid using DontDestroyOnLoad for passing data. use `SceneManager.LoadScene(<path>, LoadSceneMode.Additive)` and `SceneManager.UnloadScene`.
+* [Conditional Compilation](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html)
 </div></div>
