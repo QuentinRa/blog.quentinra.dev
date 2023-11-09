@@ -69,13 +69,55 @@ We [turn on Interpolate for the player character](https://docs.unity3d.com/Scrip
 
 <hr class="sep-both">
 
+## Colliders
+
 <div class="row row-cols-lg-2"><div>
 
-📚 Use `Edit > Project Settings > Physics` to change the gravity or edit the Layer Collision Matrix.
+A collider is an invisible component that will detect when a rigidbody enters a pre-defined space around the game object.
+
+Simple colliders, e.g., with as few edges/vertices as possible, are more performant. According to what kind of games you are doing, try using the simplest collider as possible, even if there is some loss.
+
+Click on a collider to edit it. You'll see some green dots to resize it.
+
+#### Trigger Colliders
+
+By toggling "is trigger," the collider will path through the other collider instead of colliding with it.
+
+#### Layers and Colliders
+
+By default, objects may collide even if there are not on the same layer. This is determined by the Layer Collision Matrix.
+
+Use `Edit > Project Settings > Physics` to configure it.
 </div><div>
 
-...
+#### Physical material
+
+It's an asset that you may create "Create > Physic Material". You can set every friction to 0 and set combine to "minimum" to disable it.
+
+#### Scripts
+
+You can use these methods to find if game objects are colliding:
+
+```cs
+// 1. return every collider inside this sphere
+Physics.OverlapsSphere(position, radius)
+// only layers in mask (ex: mask = LayerMask.GetMask("Default", "Water"))
+Physics.OverlapsSphere(position, radius, mask)
+// 2. you can use Vector3.Distance (or Vector2)
+// 3. you can use Bounds.Intersects
+GetComponent<Collider>().bounds.Intersects(anotherBounds);
+GetComponent<Renderer>().bounds.Intersects(anotherBounds);
+```
+
+Each Game Object has the methods `OnTrigger*` and `OnCollision*` that will be called according to what kind of game objects are colliding:
 </div></div>
+
+| | Collider | Collider (isTrigger) | Collider+Rigidbody | Collider+Rigidbody (kinematic) |
+| --- | --- | --- | --- | --- |
+| Collider | x | x | OnCollisionEnter | x |
+| Collider (isTrigger) | x  | x | OnTriggerEnter | OnTriggerEnter |
+| Collider+Rigidbody | OnCollisionEnter | OnTriggerEnter | OnCollisionEnter | OnCollisionEnter |
+| Collider+Rigidbody (kinematic) | x | OnTriggerEnter | OnCollisionEnter | x |
 
 <hr class="sep-both">
 

@@ -274,6 +274,16 @@ The last instruction must not be an "if" statement.
 + 	// some code here
 + }
 ```
+
+Don't call `GetComponent<T>()` often. Do it once.
+
+```diff
+-GetComponent<T>().smth()
+-GetComponent<T>().smth()
++var component = GetComponent<T>(); // or an attribute
++component.smth()
++component.smth()
+```
 </div></div>
 
 <hr class="sep-both">
