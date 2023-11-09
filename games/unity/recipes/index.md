@@ -2,6 +2,26 @@
 
 <hr class="sep-both">
 
+## Common Implementations
+
+<div class="row row-cols-lg-2"><div>
+
+#### Game Inventory
+
+* Array or List? Fixed size?
+* Each entry is a slot?
+* `Swap(index, index)`: swap two items. Don't if they have the same index? Handle merge items if they are stackable.
+* `GetTotalQuantity(item)`: Don't forget to check every slot.
+* `HasItem(item)`
+* `AddItem(slot)`: add or increase stack
+* `RemoveItem(slot, q)`: remove a quantity from the inventory. Check every slot if needed.
+* `RemoteAt(index)`
+* `GetSlotByIndex(index)`
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Platformers
 
 > A platformer is a game such as Super Mario Bros, in which a player is jumping/climbing between platforms, to reach a goal.
