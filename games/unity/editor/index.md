@@ -284,5 +284,6 @@ Stuff that I found, but never read/used yet.
 * [old features](../../unity-features/index.md)
 * Selections
 * Tags
+* [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html) to save stuff
 </div><div>
 </div></div>
