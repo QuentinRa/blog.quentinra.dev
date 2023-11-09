@@ -93,4 +93,5 @@ Set the priority to tell the cinemachine which camera it should pick.
 Random
 
 * Post extrapolate
+* CTRL-D to extract animation from a model
 </div></div>

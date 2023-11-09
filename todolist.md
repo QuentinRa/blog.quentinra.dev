@@ -359,6 +359,8 @@ https://vercel.com/
 https://www.netlify.com/
 https://codepen.io/
 
+https://gamedevbeginner.com/
+
 ---------------
 ----- SEO
 ---------------

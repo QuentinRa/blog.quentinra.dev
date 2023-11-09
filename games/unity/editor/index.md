@@ -317,4 +317,7 @@ Stuff that I found, but never read/used yet.
 * Burst
 * Recorder
 * Shader Graph
+* Unity Remote 5 (Editor > Device)
+* [Unity-Editor-Toolbox](https://github.com/arimger/Unity-Editor-Toolbox)
+* [Open Source Unity Package Registry](https://openupm.com/)
 </div></div>

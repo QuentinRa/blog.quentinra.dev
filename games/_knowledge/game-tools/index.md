@@ -36,6 +36,7 @@
 * [Nightmare_82/RpgTools](https://gitlab.com/Nightmare_82/charactercreator) (RPG Engine for PVGames Assets)
 * [wwise](https://www.audiokinetic.com/fr/products/wwise/) or [fmod](https://www.fmod.com/)
 * [Photon](https://www.photonengine.com/) (multiplayer)
+* [clara.io](https://clara.io/) (~blender online? 3D assets)
 </div></div>
 
 <hr class="sep-both">
@@ -75,6 +76,9 @@
     * [archive3d](https://archive3d.net/)
 * [Quaternius](https://quaternius.com/index.html) (beautiful 😱, poly)
 * [3dmodelscc0](https://www.3dmodelscc0.com/) (CC0)
+* [cgtrader](https://www.cgtrader.com/)
+* [renderhub](https://www.renderhub.com/)
+* [done3d](https://done3d.com/)
 </div><div>
 
 #### 2D/3D/AR/VR assets
@@ -107,4 +111,17 @@
 * [Superpowers Asset Packs](https://github.com/sparklinlabs/superpowers-asset-packs)
 * [Rpg Maker VX Resource Planet](https://vxresource.wordpress.com/)
 * [Pokemon Fan Game Assets](https://pokemonfangames.com/resource/pokemon-essentials-bw/)
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [poly.cam](https://poly.cam/)
+* [filebase](https://filebase.gamedevhq.com/)
+</div><div>
 </div></div>

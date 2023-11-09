@@ -496,9 +496,10 @@ Stuff that I found, but never read/used yet.
 * [MenuItem](https://docs.unity3d.com/ScriptReference/MenuItem.html): toolbar
 * [CreateAssetMenu](https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html) (ScriptableObject): asset list
 * [CanEditMultipleObjects](https://docs.unity3d.com/ScriptReference/CanEditMultipleObjects.html): can be set when selecting multiple game objects
+* Icons for scripts https://github.com/halak/unity-editor-icons
 
 ```cs
-#OnEnable
+MonoBehavior#OnEnable
 ```
 </div><div>
 
@@ -507,5 +508,5 @@ Concepts
 * StateMachine => OnStateEnter / OnStateUpdate / OnStateExit
 * Object pooling
 * Avoid using DontDestroyOnLoad for passing data. use `SceneManager.LoadScene(<path>, LoadSceneMode.Additive)` and `SceneManager.UnloadScene`.
-* [Conditional Compilation](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html). Assembly Definition Files (ADF) (one DDL per ???, default without ADF): everything recompiled on every change
+* [Conditional Compilation](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html). Assembly Definition Files (ADF) (one DDL per ???, default without ADF): everything recompiled on every change. Assembly def + ref.
 </div></div>

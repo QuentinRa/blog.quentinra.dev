@@ -121,4 +121,9 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 ##### Watch videos together
 
 * [w2g.tv](https://w2g.tv)
+
+#### Fonts
+
+* [fontspace](https://www.fontspace.com/)
+* [dafont](https://www.dafont.com/)
 </div></div>
