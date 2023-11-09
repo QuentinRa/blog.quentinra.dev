@@ -9,50 +9,6 @@
 <tr><td>
 
 ```cs
-[HideInInspector] public float hide;
-```
-</td><td><br>
-
-No field "hide".
-</td></tr>
-
-<tr><td>
-
-```cs
-[RequireComponent(typeof(Collider))]
-// [RequireComponent(typeof(Collider), typeof(Rigidbody))]
-public class SomeClass : MonoBehaviour {}
-```
-</td><td><br>
-
-You can't add this class as a component of a game object, if this class does not have a collider.
-</td></tr>
-
-<tr><td>
-
-```cs
-[DisallowMultipleComponent]
-public class SomeClass : MonoBehaviour {}
-```
-</td><td><br>
-
-You can't have more than one instance of this component per game object.
-</td></tr>
-
-<tr><td>
-
-```cs
-[HelpURL("https://memorize.be/games")]
-public class SomeClass : MonoBehaviour {}
-```
-</td><td><br>
-
-You can set the link opened when clicking on the "?" mark, next to the 3 dots, to remove a component.
-</td></tr>
-
-<tr><td>
-
-```cs
 [ContextMenuItem("reset", "ResetIntWithMenuItem")] 
 public int intWithMenuItem;
 private void ResetIntWithMenuItem()
@@ -102,67 +58,6 @@ You can use this to rename the values of your enum in the inspector. It does not
 ![Attributes Unity - InspectorName](attributes/InspectorName.png)
 
 </td></tr>
-</table>
-</details>
-
-<details class="details-e">
-<summary>Numbers 🔢</summary>
-<br>
-<table class="table table-striped table-bordered border-dark">
-<tr><th>Code</th><th>Editor/Description</th></tr>
-
-<tr><td>
-
-```cs
-[Min(10)] public int speed = 15;
-```
-</td><td>
-
-![Attributes Unity - min](attributes/min.png)
-
-If the value is lower than min, then value = min.
-</td></tr>
-
-<tr><td>
-
-```cs
-[Range(0, 1)] public float volume;
-```
-</td><td><br>
-
-![Attributes Unity - range](attributes/range.png)
-</td></tr>
-
-</table>
-</details>
-
-<details class="details-e">
-<summary>Strings 📚</summary>
-<br>
-<table class="table table-striped table-bordered border-dark">
-<tr><th>Code</th><th>Editor/Description</th></tr>
-
-<tr><td>
-
-```cs
-[Multiline(2)] public string text = "";
-```
-</td><td><br>
-
-![Attributes Unity - multiline](attributes/multiline.png)
-</td></tr>
-
-<tr><td>
-
-```cs
-// or [TextArea( minLines, maxLines )]
-[TextArea] public string textarea = "";
-```
-</td><td><br>
-
-![Attributes Unity - textarea](attributes/textarea.png)
-</td></tr>
-
 </table>
 </details>
 

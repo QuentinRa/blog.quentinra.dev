@@ -267,6 +267,23 @@ public class MovementManager : MonoBehaviour {}
 
 ![Unity Serialize Field - New Menu1](_images/new_menu_1.png)
 ![Unity Serialize Field - New Menu2](_images/new_menu_2.png)
+
+##### Help URL
+
+You can define the link opened when clicking on the "?".
+
+```cs
+[HelpURL("https://example.com/documentation/SomeClass.html")]
+public class SomeClass : MonoBehaviour {}
+```
+
+##### Hide Public Attributes
+
+To hide a public attributes from the inspector, use:
+
+```cs
+[HideInInspector] public float hide;
+```
 </div><div>
 
 ##### Component Usage Restrictions
@@ -280,6 +297,31 @@ public class SomeClass : MonoBehaviour {} // One
 public class SomeClass : MonoBehaviour {} // Multiple
 ```
 
+We can prevent users from using this component more than once to the same game object using:
+
+```cs
+[DisallowMultipleComponent]
+public class SomeClass : MonoBehaviour {}
+```
+
+#### Input Numbers
+
+We can customize the input field for numbers:
+
+```cs
+[Min(10)] public int speed = 15;   // max value
+[Range(0, 1)] public float volume; // show a slider
+```
+
+#### Input Strings
+
+We can customize the input field for strings:
+
+```cs
+[Multiline(2)] public string text = "";
+// or [TextArea( minLines, maxLines )]
+[TextArea] public string textarea = "";
+```
 </div></div>
 
 <hr class="sep-both">
