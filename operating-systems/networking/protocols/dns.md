@@ -204,4 +204,5 @@ Purchase domain names
 * [instantdomainsearch](https://instantdomainsearch.com/)
 * [gositestat](https://www.gositestat.com/) / [statshow](https://www.statshow.com/)
 * [dnsimple](https://dnsimple.com/) <small>(dns)</small>
+* [WWW2](https://en.wikipedia.org/wiki/Subdomain#Server_cluster)
 </div></div>

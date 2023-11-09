@@ -145,6 +145,10 @@ Websites that I found, but never used yet.
 * [lucidchart](https://www.lucidchart.com/blog/)
 * [taskade](https://www.taskade.com/blog/)
 
+**Games**
+
+* [gamedevbeginner](https://gamedevbeginner.com/)
+
 **News**
 
 * [rankred](https://www.rankred.com/)

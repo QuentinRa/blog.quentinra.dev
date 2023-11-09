@@ -29,6 +29,8 @@ A few notables:
 * [tabnine](https://www.tabnine.com/): TabNine AI coding assistant
 * [Microsoft Copilot](https://adoption.microsoft.com/en-us/copilot/) ⛄: Microsoft AI coding assistant
 * [FauxPilot](https://github.com/fauxpilot/fauxpilot) ☃️: an open-source AI assistant
+* [codeproject](https://www.codeproject.com/): 👻
+* [codegrepper](https://www.codegrepper.com/index.php): 👻
 </div></div>
 
 <hr class="sep-both">
@@ -222,4 +224,6 @@ Static Type Checker
 
 * [Flow](https://flow.org/) for JavaScript
 </div><div>
+
+* [holopin](https://www.holopin.io/) (badges)
 </div></div>

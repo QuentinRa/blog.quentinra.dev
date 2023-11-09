@@ -202,6 +202,7 @@ Stuff that I found, but never read/used yet.
 * [website-checker](https://www.ionos.com/tools/website-checker)
 * [sitechecker](https://sitechecker.pro/)
 * [protege](https://protege.stanford.edu/)
+* [similarweb](https://www.similarweb.com/)
 </div><div>
 
 * [websiteplanet](https://www.websiteplanet.com/webtools/)

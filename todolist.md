@@ -34,102 +34,15 @@ List of courses that have note which were not added yet.
 
 <hr class="sep-both">
 
-## ⭐ Programming languages ⭐
-
-Programming languages (+tools) that I want to check, but never had the time.
-
-<div class="row row-cols-md-3 mt-4"><div>
-
-Google
-
-* FeedBurner <small>(RSS)</small>
-
-</div><div>
-</div><div>
-
-**Fun**
-
-* [emojicode](https://www.emojicode.org/)
-* [holopin](https://www.holopin.io/) (badges)
-
-**Help/Search/...**
-
-* [includestdio](https://includestdio.com/) (<s>dead</s>)
-* [codeproject](https://www.codeproject.com/)
-* [codegrepper](https://www.codegrepper.com/index.php)
-* ChatGPT
-* [answersblurb](https://answersblurb.com/)
-* [alternativeto](https://alternativeto.net/) / [similarweb](https://www.similarweb.com/)
-</div></div>
-
-<hr class="sep-both">
-
 ## Random
 
 <div class="row row-cols-md-2"><div>
-
-```text!
---------------
----- Tutorials
---------------
-
-https://jamstack.org/
-
-https://github.com/futurice/backend-best-practices
-
-https://francoisbrucker.github.io/cours_informatique/2A/mie_web_back.html
-https://francoisbrucker.github.io/cours_informatique/2A/option_web_front.html
-https://francoisbrucker.github.io/cours_informatique/3A/MD2_methode_de_developpement.html
-
-https://medium.com/dwarves-foundation/remove-unused-css-styles-from-bootstrap-using-purgecss-88395a2c5772
-https://webspeedtools.com/should-i-minify-html-css-js/
-https://css-tricks.com/how-do-you-remove-unused-css-from-a-site/
-
-https://bitsofco.de/what-i-wish-i-knew-about-react/
-
-https://www.w3.org/WAI/tutorials/
-https://www.w3.org/WAI/standards-guidelines/wcag/
-https://webaim.org/intro/
-https://wave.webaim.org/
-
-https://github.com/iLoveCodingOrg/skill-roadmap/blob/master/skill-roadmap.pdf
-
-https://en.wikipedia.org/wiki/WWW2
-
-https://javascript.plainenglish.io/17-killer-websites-for-web-developers-13e1e30345b8
-https://javascript.plainenglish.io/roadmap-to-become-a-frontend-web-developer-in-2021-ee06abb21489
-
-https://blog.bitsrc.io/google-chrome-experimental-features-for-developers-a9a7cc9d1b30
-
-https://javascript.plainenglish.io/10-best-websites-for-practising-and-perfecting-front-end-development-56e382b2c0ac
-https://dev.to/ali6nx404/cheat-sheets-that-always-save-my-time-during-web-development-2ga4
-```
 </div><div>
 
 ```text!
---------------------
----- Tools
---------------------
-
-https://babeljs.io/
-https://haml.info/
-
-https://www.browserstack.com/
-https://percy.io/
-
-https://whichbrowser.net/
-
-https://codesandbox.io/
-https://vercel.com/
-https://www.netlify.com/
-https://codepen.io/
-
-https://gamedevbeginner.com/
-
 ---------------
 ----- SEO
 ---------------
-
 https://unmetric.com/
 
 https://www.semrush.com/
