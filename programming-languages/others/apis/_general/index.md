@@ -153,6 +153,7 @@ Search for APIs on [rapidapi](https://rapidapi.com/hub) 🚀.
 * [PayPal](https://developer.paypal.com/docs/api/overview/)/[Stripe](../more/stripe/index.md) <small>(payments)</small>
 * [MangaDex](https://api.mangadex.org/docs/) <small>(manga reader)</small>
 * [todoist](https://todoist.com/) <small>(to-do list)</small>
+* [locize](https://locize.com/) <small>(localization)</small>
 </div><div>
 
 * [formspree](https://formspree.io/) <small>(forms)</small>

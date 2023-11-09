@@ -203,4 +203,5 @@ Purchase domain names
 * [name.com](https://www.name.com/)
 * [instantdomainsearch](https://instantdomainsearch.com/)
 * [gositestat](https://www.gositestat.com/) / [statshow](https://www.statshow.com/)
+* [dnsimple](https://dnsimple.com/) <small>(dns)</small>
 </div></div>

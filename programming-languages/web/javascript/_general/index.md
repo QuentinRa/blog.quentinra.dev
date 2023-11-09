@@ -674,6 +674,8 @@ c.innerText.trim().replace(/, (.*)/, "$1")
 
 * [rollupjs](https://github.com/rollup/rollup)
 * [webpack](https://webpack.js.org/) <small>([compat](https://github.com/ElemeFE/obsolete-webpack-plugin))
+* [i18next](https://www.i18next.com/)
+* [project-guidelines](https://github.com/elsewhencode/project-guidelines)
 
 Repositories
 
