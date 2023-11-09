@@ -1,4 +1,8 @@
-# Unity Meshs 🩻
+# Unity Meshes & Sprites 🩻
+
+<hr class="sep-both">
+
+## Unity Meshes
 
 <div class="row row-cols-lg-2"><div>
 

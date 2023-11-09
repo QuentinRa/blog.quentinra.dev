@@ -13,12 +13,16 @@ It's recommended to pick a LTS version of the Unity Editor, as they are stable v
 
 This content is further developed in other pages:
 
-* [XXX]() (*some short description*)
-* [XXX]() (*some short description*)
-* [XXX]() (*some short description*)
-* [XXX]() (*some short description*)
-* [XXX]() (*some short description*)
-* [XXX]() (*some short description*)
+* [Input](../core/input/index.md) (*handle user input*)
+* [Physics & Collision](../core/physics/index.md) (*handle collisions and physics*)
+* [Camera & Cursor](../core/camera/index.md) (*manipulate cameras and handle the cursor*)
+* [Animations](../core/animations/index.md) (*handle animations and particle systems*)
+* [Audio](../core/animations/index.md) (*handle sounds, music, and SFX*)
+* [Materials & Textures](../core/animations/index.md) (*handle 2D Textures and 3D Materials*)
+* [Meshes & Sprites](../core/mesh/index.md) (*handle 2D Sprites and 3D Meshes*)
+* [User Interfaces](../core/mesh/index.md) (*handle user interfaces*)
+
+⚠️ Warning: content under development. Last update: 2021.
 </div></div>
 
 <hr class="sep-both">
@@ -206,6 +210,25 @@ Double-click on a prefab to edit it. From the inspector, you can also use the ar
 
 <hr class="sep-both">
 
+## Unity Asset Store 🏪
+
+<div class="row row-cols-lg-2"><div>
+
+You can access [Unity Asset Store](https://assetstore.unity.com/) directly from Unity Editor. 
+
+* **Window > Asset store**: open the asset store in your browser
+* **Window > Package manager**: browser assets
+
+Packages are categorized in different views. Right next to the "+", you can set the package view to:
+
+* **My assets**: download and import your assets here
+* **Unity Registry**: download and install verified plugins
+* **In Project**: manage anything installed in the current project
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Build A Game
 
 <div class="row row-cols-lg-2"><div>
@@ -278,12 +301,9 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* [_old](_old.md)
-* old 2d
-* [old 3d](../../unity-3d/index.md)
-* [old features](../../unity-features/index.md)
-* Selections
-* Tags
+* Selections=Shortcuts to Game Object
+* Tags + Hell
 * [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html) to save stuff
+* Active Scene and Additive Scenes
 </div><div>
 </div></div>

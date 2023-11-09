@@ -54,6 +54,19 @@ name = "Hello, World";       // change the name
 ➡️ You can use `this.attribute` or `gameObject.attribute` too.
 </div><div>
 
+#### Access Components Of A Game Object
+
+```cs
+// the component is Rigidbody
+Rigidbody r = GetComponent<Rigidbody>();
+Rigidbody r = gameObject.GetComponent<Rigidbody>(); // same
+r = GetComponentInChildren<Rigidbody>(); // us + nested
+r = GetComponentInParent<Rigidbody>();   // parent
+r = FindObjectOfType<Rigidbody>();       // accross all
+```
+
+You can disable a component `c` with `c.enabled = false`.
+
 #### Accessing Other Game Objects
 
 You can find game objects that have a tag `tagName`:
@@ -94,6 +107,17 @@ Call a method on every MonoBehavior of our game object.
 SendMessage("methodName");
 SendMessageUpwards("methodName"); // and on its ancestors
 ```
+
+#### Navigation Between Scenes
+
+You can use the following methods to navigate between scenes registered in the [SceneManager](../editor/index.md#scene-manager).
+
+```cs
+SceneManager.LoadScene(buildIndex);
+SceneManager.LoadScene("SceneName");
+```
+
+⚠️ When navigating between scenes, every game object is destroyed, aside from the game objects marked as [DontDestroyOnLoad](https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html) and `static` variables. We often use Singletons and Dependency Injection.
 </div><div>
 
 #### Position-Related Methods
