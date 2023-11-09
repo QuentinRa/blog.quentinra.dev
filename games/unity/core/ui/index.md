@@ -37,11 +37,11 @@ Here is an example of positioning an image near the top:
 Layout managers are components allowing you to arrange elements more easily. We often create an empty game object for the layout, but it's not mandatory.
 
 The children of the layout game object will be arranged in a specific way, according to the selected layout.
+</div><div>
 
 #### Horizontal Layout
 
 Components are on the same line with a gap (0 by default).
-</div><div>
 
 #### Vertical Layout
 
@@ -73,6 +73,30 @@ GetComponent<Button>().onClick.AddListener(MyMethod);
 You need to add an entry inside "On Click" <small>(ex: Button > On Click)</small>.
 
 Select "Runtime Only" and drag and drop a component having the script in which you got the method you want to call. Then select the method in "No Function."
+</div></div>
+
+<hr class="sep-both">
+
+## Random Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### Canvas Scaler
+
+Assuming you didn't use anchors, you can use the "Canva Scaler" component to scale the UI according to the size of the screen.
+
+Set mode to "scale with the screen size" and define the size.
+
+#### UI Element Background
+
+Any element having the component "Image" can have a background. Drag and drop a [sprite](../mesh/index.md) in "Source Image".
+</div><div>
+
+#### UI Elements Dimensions
+
+Layouts manage the dimensions of the items, but you can override them. Add a **Layout element component** and define the custom dimensions/... on the game object.
+
+You can make the text adapt itself to the size of the component using a **Content Size Fitter** component and setting either or both fields to "Preferred size".
 </div></div>
 
 <hr class="sep-both">
