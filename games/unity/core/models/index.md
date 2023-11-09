@@ -42,3 +42,20 @@ The **Mesh renderer** is used to configure how to render the mesh.
 * Lightning
 * ...
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+Import FBX in unity
+
+* Animation type => humanoid
+* Configure avatar definition => match our character
+* Animation => loop => bake into pose???
+* Click on materials => extract => fix now
+</div><div>
+</div></div>

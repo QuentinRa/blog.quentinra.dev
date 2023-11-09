@@ -23,6 +23,8 @@
 
 * [Game Character Hub](https://www.gamecharacterhub.com) (2D Characters)
 * [RPG Maker VX Material](https://junkhunt.net/vx/charachip.shtml) (2D Characters)
+* [ReadyPlayerMe](https://readyplayer.me/) (3D Characters+Animations)
+* [Mixamo](https://www.mixamo.com/#/) (3D Characters+Animations). Select a FBX model, import it, select the animations and download.
 
 #### Asset Management Tools
 
