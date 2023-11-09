@@ -158,6 +158,55 @@ We can customize the inspector for our script. There are a few existing attribut
 
 <hr class="sep-both">
 
+## Coroutines
+
+<div class="row row-cols-lg-2"><div>
+
+A coroutines is a task that can be paused. They are quite used for tasks such as animations and delays. It's a normal function that has multiple returns according to our need:
+
+* `yield return null`: pause until the next frame/update call
+* `yield return ...`
+    * `new WaitForSeconds(1f);`: wait for roughly 1 second
+    * `new WaitUntil(Function);`: wait until `Function` returns true
+    * `new WaitWhile(Function);`:  wait until `Function` returns false
+    * `new WaitForSecondsRealtime(1f)`: wait for 1 real second
+    * You can create new ones by extending `CustomYieldInstruction`
+    * ...
+* `yield break`: mark the task as done
+* `return`/End-Of-Function: implicit `yield break`
+
+👉 `Function` could be an inline function: `() => true`.
+
+📚 Use `Invoke(methodName, n)` to call `methodName` after waiting `n` s.
+</div><div>
+
+#### Declare a coroutine function
+
+```cs
+private IEnumerator MyCoroutine()
+{
+    // when started, wait for one second then print "some code"
+    yield return new WaitForSeconds(1f);
+    Debug.Log("Some code");
+}
+```
+
+#### Start/Stop your coroutine
+
+```cs
+StartCoroutine(MyCoroutine());
+StartCoroutine(nameof(MyCoroutine)); // same
+StartCoroutine("MyCoroutine");       // same
+// You need to store the result to stop it manually
+var c = MyCoroutine();
+StartCoroutine(c);
+StopCoroutine(c);
+StopAllCoroutines();
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Unity Scripts Existing Attributes
 
 <div class="row row-cols-lg-2"><div>
