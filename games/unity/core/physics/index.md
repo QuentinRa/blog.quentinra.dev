@@ -118,15 +118,3 @@ Each Game Object has the methods `OnTrigger*` and `OnCollision*` that will be ca
 | Collider (isTrigger) | x  | x | OnTriggerEnter | OnTriggerEnter |
 | Collider+Rigidbody | OnCollisionEnter | OnTriggerEnter | OnCollisionEnter | OnCollisionEnter |
 | Collider+Rigidbody (kinematic) | x | OnTriggerEnter | OnCollisionEnter | x |
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-lg-2"><div>
-
-* [_old](_old.md)
-</div><div>
-</div></div>
