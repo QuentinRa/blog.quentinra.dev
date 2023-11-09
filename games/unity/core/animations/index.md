@@ -22,12 +22,35 @@ Aside from the initial transition, click on any transition to define the conditi
 
 Transitions can be immediate or progressive. Edit the transition settings to define how long the two states are overlapping.
 
+From the code, you can set a parameter to trigger a trigger:
+
+```cs
+Animator anim = GetComponent<Animator>(); // Awake
+anim.SetBool("name", false);
+anim.SetFloat("name", 0);
+anim.SetInteger("name", 0);
+anim.SetTrigger("name");
+anim.Play("anim_name");
+```
+
 📚 You can attach a `StateMachineBehaviour` script to a state.
+
+⚠️ Using `"name"` is not optimal, use the ID that you got using `Animator.StringToHash("name")`. Store it in a static constant.
 </div><div>
 
 #### Animator
 
 To animate a component, we need to add an Animator component to it, and link an Animator Controller to it.
+
+#### Animation
+
+You can record an animation. From the "Project Window," create an animation and open it. Select a game object with an animator. Press the record button and manually animate the game object.
+
+You will define the position, rotation, etc. at one point of the timeline. Select another point in the timeline and continue your work.
+
+![Animation Timeline](_images/animation.png)
+
+⚠️ The timeline is in tenths of a second. Use the scroll to zoom out.
 </div></div>
 
 <hr class="sep-both">

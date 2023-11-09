@@ -15,7 +15,7 @@ Unity is a popular game-engine that can be used to create:
 The editor is written in `C++` while our code is written in `C#`.
 </div><div>
 
-To use and download Unity, you need to subscribe to a plan: personal, student, professional, etc.
+To use and download Unity, you need to subscribe to a plan: personal, student, or professional.
 
 * [Unity Plans & Pricing Page](https://unity.com/pricing#plans-student-and-hobbyist)
 * [Unity Asset Store](https://assetstore.unity.com/) (Game Assets)
@@ -23,7 +23,7 @@ To use and download Unity, you need to subscribe to a plan: personal, student, p
 * [Unity Gaming Services](https://unity.com/solutions/gaming-services) (Multiplayer, Ads, Tools, etc.)
 * [Unity Learning Platform](https://learn.unity.com/) (Learn How To Make Games in Unity)
 
-🏫 Before, Unity offered [Snaps student bundle](https://assetstore.unity.com/browse/student-plan-pack) at $1 for students. Now, they can redeem the [Synty student bundle](https://assetstore.unity.com/student-plan-pack1).
+🏫 Before, Unity offered [Snaps student bundle](https://assetstore.unity.com/browse/student-plan-pack) at $1 for students. Now, students can redeem the [Synty student bundle](https://assetstore.unity.com/student-plan-pack1).
 </div></div>
 
 <hr class="sep-both">

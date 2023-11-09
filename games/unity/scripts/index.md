@@ -107,6 +107,7 @@ Call a method on every MonoBehavior of our game object.
 SendMessage("methodName");
 SendMessageUpwards("methodName"); // and on its ancestors
 ```
+</div><div>
 
 #### Navigation Between Scenes
 
@@ -118,7 +119,6 @@ SceneManager.LoadScene("SceneName");
 ```
 
 ⚠️ When navigating between scenes, every game object is destroyed, aside from the game objects marked as [DontDestroyOnLoad](https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html) and `static` variables. We often use Singletons and Dependency Injection.
-</div><div>
 
 #### Position-Related Methods
 
@@ -131,15 +131,6 @@ someVector.normalized; // magnitude=1, just a direction
 Vector3.MoveTowards(current, target, maxDistancePerStep);
 Vector3.Reflex(inDirection, inNormal) // sort of mirror, bounce
 if (Vector3.Distance(a, b) <= 0.0001f) {} // a near b?
-```
-
-We can use these functions with transforms:
-
-```cs
-// transform.position, ...
-transform.LookAt(target);
-transform.Rotate(axis, angle);
-transform.Rotate(axis, Time.deltaTime * angle, Space.World); // or Space.Self
 ```
 </div></div>
 
@@ -507,7 +498,6 @@ Stuff that I found, but never read/used yet.
 * [CanEditMultipleObjects](https://docs.unity3d.com/ScriptReference/CanEditMultipleObjects.html): can be set when selecting multiple game objects
 
 ```cs
-transform.GetSiblingIndex # (hierarchy)
 #OnEnable
 ```
 </div><div>
