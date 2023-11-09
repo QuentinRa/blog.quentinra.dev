@@ -19,8 +19,8 @@ This content is further developed in other pages:
 * [Animations](../core/animations/index.md) (*handle animations and particle systems*)
 * [Audio](../core/animations/index.md) (*handle sounds, music, and SFX*)
 * [Materials & Textures](../core/animations/index.md) (*handle 2D Textures and 3D Materials*)
-* [Meshes & Sprites](../core/mesh/index.md) (*handle 2D Sprites and 3D Meshes*)
-* [User Interfaces](../core/mesh/index.md) (*handle user interfaces*)
+* [Models & Sprites](../core/models/index.md) (*handle 2D Sprites and 3D Models/Meshes*)
+* [User Interfaces](../core/models/index.md) (*handle user interfaces*)
 
 ⚠️ Warning: content under development. Last update: 2021.
 </div></div>

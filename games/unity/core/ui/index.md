@@ -89,7 +89,7 @@ Set mode to "scale with the screen size" and define the size.
 
 #### UI Element Background
 
-Any element having the component "Image" can have a background. Drag and drop a [sprite](../mesh/index.md) in "Source Image".
+Any element having the component "Image" can have a background. Drag and drop a [sprite](../models/index.md) in "Source Image".
 </div><div>
 
 #### UI Elements Dimensions

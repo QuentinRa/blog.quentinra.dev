@@ -2,6 +2,21 @@
 
 <hr class="sep-both">
 
+## Textures
+
+<div class="row row-cols-lg-2"><div>
+
+An image is internally called a texture.
+
+* You may modify "filter mode" to "point"
+* You may configure/disable compression. The image size must be a power of two, so you can compress it.
+
+⚠️ Don't forget to apply changes after editing a texture.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Materials
 
 <div class="row row-cols-lg-2"><div>
@@ -15,7 +30,7 @@ In the Project window, usually in a folder called Materials: <kbd>Right-click > 
 Options:
 
 * 🎨 You can change the material color with the property "Albedo"
-* 🖼️ You can set an image with the little circle right before "Albedo"
+* 🖼️ You can use a texture with the little circle right before "Albedo"
 * 💡 You can se the material as transparent for a light
 * 💡 You can set the smoothness to 0 <small>(=not shinny)</small>
 * 💡 You can enable emission and set a color, if you want this color to be emitted from your material
