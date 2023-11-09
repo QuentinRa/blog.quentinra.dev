@@ -211,7 +211,7 @@ StopAllCoroutines();
 
 <div class="row row-cols-lg-2"><div>
 
-##### Serialize Field Tooltip
+##### Add Tooltips
 
 Add a message shown when hovering the property.
 
@@ -220,7 +220,7 @@ Add a message shown when hovering the property.
 [SerializeField] private int number = 0;
 ```
 
-##### Serialize Field Header
+##### Add Headers
 
 Display a header before attributes to visually group them.
 
@@ -229,7 +229,7 @@ Display a header before attributes to visually group them.
 // some attributes
 ```
 
-##### Serialize Field Spacing
+##### Add Spacing
 
 You can add some vertical spacing to increase readability.
 
@@ -247,7 +247,7 @@ You can add some vertical spacing to increase readability.
 ![Unity Serialize Field - spacing](_images/spacing.png)
 </div></div>
 
-##### Serialize Field FormerlySerializedAs
+##### Backward compatibility
 
 Backward compatibility when renaming an attribute:
 
@@ -255,9 +255,31 @@ Backward compatibility when renaming an attribute:
 [SerializeField]
 [FormerlySerializedAs("oldName")] private int number = 0;
 ```
+
+##### Add Entry To Create Menu
+
+You can sort your new components in the "create" menu, similarly to how the existing components are sorted <small>(Audio, UI, etc.)</small>.
+
+```cs
+[AddComponentMenu("CubeMaster/Movement")] // [Path/]Name
+public class MovementManager : MonoBehaviour {}
+```
+
+![Unity Serialize Field - New Menu1](_images/new_menu_1.png)
+![Unity Serialize Field - New Menu2](_images/new_menu_2.png)
 </div><div>
 
-...
+##### Component Usage Restrictions
+
+When adding this component, required components are automatically added. If it's not possible, we can't use this component.
+
+```cs
+[RequireComponent(typeof(Collider))]
+public class SomeClass : MonoBehaviour {} // One
+[RequireComponent(typeof(Collider), typeof(Rigidbody))]
+public class SomeClass : MonoBehaviour {} // Multiple
+```
+
 </div></div>
 
 <hr class="sep-both">

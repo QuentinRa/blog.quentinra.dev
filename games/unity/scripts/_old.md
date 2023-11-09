@@ -1,23 +1,4 @@
-# Serialize Field : basic
-
-<details class="details-e">
-<summary>New Menu 🚀</summary>
-
-When clicking on "adding component", you got a list of menus such as "Audio", ... You can add a new menu here 🚀!
-
-```cs
-// this is a path, you can subfolders (=nested menus) with /
-[AddComponentMenu("CubeMaster/Movement")]
-public class MovementManager : MonoBehaviour {}
-```
-
-![Unity Serialize Field - New Menu1](_images/new_menu_1.png)
-![Unity Serialize Field - New Menu2](_images/new_menu_2.png)
-</details>
-
-<hr class="sl">
-
-## Serialize Field: more
+# Serialize Field: more
 
 <details class="details-e">
 <summary>General 🛠</summary>
