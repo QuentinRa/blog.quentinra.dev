@@ -8,6 +8,30 @@ Unity Cinematic capabilities are quite powerful. They are fully illustrated in [
 
 <hr class="sep-both">
 
+## Animations 🚸
+
+<div class="row row-cols-lg-2"><div>
+
+We define the states of a game object. For a character, we could have "Idle," "Walking," and "Shooting." We will define how we change from one state to another.
+
+#### Animator Controller
+
+From the "Project Window," create an animation controller. Double-click on it to open the Animator Editor. Drag-and-drop animations to it or create empty states. Right-click on a state to create a transition.
+
+Aside from the initial transition, click on any transition to define the conditions using parameters. On the left column of the animator window, click on the "parameter," tab. You can define the variable used in conditions here.
+
+Transitions can be immediate or progressive. Edit the transition settings to define how long the two states are overlapping.
+
+📚 You can attach a `StateMachineBehaviour` script to a state.
+</div><div>
+
+#### Animator
+
+To animate a component, we need to add an Animator component to it, and link an Animator Controller to it.
+</div></div>
+
+<hr class="sep-both">
+
 ## Particles ✨
 
 <div class="row row-cols-lg-2"><div>
