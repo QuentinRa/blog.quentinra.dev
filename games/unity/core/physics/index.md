@@ -118,3 +118,29 @@ Each Game Object has the methods `OnTrigger*` and `OnCollision*` that will be ca
 | Collider (isTrigger) | x  | x | OnTriggerEnter | OnTriggerEnter |
 | Collider+Rigidbody | OnCollisionEnter | OnTriggerEnter | OnCollisionEnter | OnCollisionEnter |
 | Collider+Rigidbody (kinematic) | x | OnTriggerEnter | OnCollisionEnter | x |
+
+<hr class="sep-both">
+
+## Raycast
+
+<div class="row row-cols-lg-2"><div>
+
+We can generate a ray in a direction and detect which game object is colling with it. The ray has an origin which is a point where the ray is coming from. It could be from the camera position if we simulate the player eyes. ⚠️ Too much raycasting will cause performance issues.
+
+```cs
+var ray = new Ray(origin, direction)
+Physics.Raycast(ray, out RaycastHit hit)
+Physics.Raycast(ray, distance, layerMask)
+Physics.Raycast(ray, out hit, distance)
+Physics.RaycastAll(...)
+```
+
+➡️ See also: `Camera.ScreenPointToRay`.
+</div><div>
+
+For debugging purposes, we can draw a ray using:
+
+```cs
+Debug.DrawRay(origin, direction * distance, color)
+```
+</div></div>

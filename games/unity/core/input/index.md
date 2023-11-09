@@ -133,4 +133,16 @@ private void OnMouseEnter() {}
 private void OnMouseExit() {}
 ```
 </div><div>
+
+#### Drag Events
+
+You may use the following interfaces:
+
+```cs
+using UnityEngine.EventSystems;
+
+public class XXX : 
+    IDragHandler, IBeginHandler, IEndDragHandler,
+    IPointerEnterHandler IPointerExitHandler {}
+```
 </div></div>
