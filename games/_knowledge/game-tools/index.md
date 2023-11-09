@@ -31,6 +31,7 @@
 
 * [Video Game Name Generator](https://videogamena.me/)
 * [Nightmare_82/RpgTools](https://gitlab.com/Nightmare_82/charactercreator) (RPG Engine for PVGames Assets)
+* [wwise](https://www.audiokinetic.com/fr/products/wwise/) or [fmod](https://www.fmod.com/)
 </div></div>
 
 <hr class="sep-both">

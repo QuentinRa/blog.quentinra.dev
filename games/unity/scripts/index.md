@@ -515,6 +515,7 @@ transform.GetSiblingIndex # (hierarchy)
 Concepts
 
 * StateMachine => OnStateEnter / OnStateUpdate / OnStateExit
+* Object pooling
 * Avoid using DontDestroyOnLoad for passing data. use `SceneManager.LoadScene(<path>, LoadSceneMode.Additive)` and `SceneManager.UnloadScene`.
-* [Conditional Compilation](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html)
+* [Conditional Compilation](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html). Assembly Definition Files (ADF) (one DDL per ???, default without ADF): everything recompiled on every change
 </div></div>

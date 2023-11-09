@@ -33,37 +33,13 @@ ALL
 https://www.adobe.com/ie/products/fuse.html
 https://www.gamecodeur.fr/
 
-=> https://docs.unity3d.com/Manual/PostProcessingOverview.html
-
-Object pooling => List register/unregister entries inside => function to use "entries"
-
 => https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/performance-recommendations-for-unity
 => https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/contributing/coding-guidelines?view=mrtkunity-2021-05
-
-=> https://danielilett.com/2019-08-05-unity-tips-1-garbage-collection/
-
-Assembly Definition Files (ADF)
-=> one DDL per script
-=> (default without ADF): everything recompiled on every changes
-
-Hierarchies
-=> changes are tracked per hierarchy
-=> multi-thread
 
 Cheat function
 => speed-up development
 => use that function before a function [Condition(DEVELOPMENT_BUILD || UNITY_EDITOR)] (ignore in production build)
 => wrap code in this (aside from functions) #if DEVELOPMENT_BUILD || UNITY_EDITOR #endif
-
-Test Scenes
-=> test a single feature
-=> check new features didn't broke old features
-
-========================================
-====================== C#
-========================================
-
-=> var
 
 ========================================
 ====================== TOOLS
@@ -78,81 +54,3 @@ Test Scenes
 => https://github.com/vis2k/Mirror
 => https://www.resemble.ai/
 => https://github.com/febucci/unitypackage-custom-hierarchy / https://www.youtube.com/watch?v=Gma7IXPj4wI&ab_channel=CocoCode
-
-========================================
-====================== CONCEPTS
-========================================
-
-* [Unity Journey of Discovery](https://www.youtube.com/watch?v=8GE2SqTF76U&list=PLnn2bgFFpnzZDjV5AdVd1WDQETMLTIGzw&index=1)
-* [Learn Unity Engine and C# by creating a real top down RPG](https://www.youtube.com/watch?v=b8YUfee_pzc&ab_channel=Epitome) (7 hours)
-* [How to Make a Game](https://www.youtube.com/watch?v=Lu76c85LhGY&ab_channel=JasonWeimann) (2h43)
-* [Unity 3D Lessons](https://www.youtube.com/watch?v=J9HaHHx-GWA&list=PLrswC5B90hKy5gZZX_u8tmnkl3GoOrkcw&index=17&ab_channel=WickedCatStudios)
-* [Unity 5 - From Beginner to Pro](https://www.youtube.com/playlist?list=PLrswC5B90hKyr9SQk9ldmwOsh-jGePFzB)
-
-Animations
-=> https://www.youtube.com/watch?v=7jzC4a9Nzes
-=> https://www.youtube.com/watch?v=Ll3yujn9GVQ
-=> https://www.youtube.com/watch?v=76Lh0UApjNI&ab_channel=UGuruz (mixamo)
-=> https://www.youtube.com/watch?v=0CGHRHCKHhk&ab_channel=UnityForFilmmaking (mixamo)
-
-Combat
-=> https://www.youtube.com/watch?v=e2PRI19Igbo
-
-Input
-=> https://www.youtube.com/watch?v=YHC-6I_LSos&ab_channel=OneWheelStudio
-=> https://www.youtube.com/watch?v=Ikt5T-v2ZrM&list=PLS6sInD7ThM3LqdgQBGawJkSihuisN-ES&index=6&ab_channel=DapperDino
-
-Light
-=> https://thoughtbot.com/blog/unity-lighting-basics
-
-Minimap
-=> https://www.youtube.com/watch?v=v5GGXm791-M
-
-Multiplayer
-=> https://www.youtube.com/watch?v=nmPukdOsYQA
-=> https://www.youtube.com/watch?v=93SkbMpWCGo
-=> https://www.youtube.com/watch?v=Nt9QfRrm30c
-=> https://www.youtube.com/watch?v=DQWYMfZyMNU
-
-UI
-=> https://www.youtube.com/watch?v=oDT8-7c0Ezg (Canvases And Anchors)
-=> https://www.youtube.com/watch?v=zbUVWnq9j20 (scroll list)
-=> https://www.youtube.com/watch?v=cjfNgra1uWk (blur)
-=> https://www.youtube.com/watch?v=MH8a1G93mW8 (popup manager?)
-=> https://www.youtube.com/watch?v=wT7Oh1pZElk (grid)
-=> https://www.youtube.com/watch?v=_Nw2LjEeU8c (inventory)
-=> https://www.youtube.com/watch?v=XZ4A1H82F7Q (toggle)
-=> https://www.youtube.com/watch?v=hiRdux33UCs (effects)
-=> https://www.youtube.com/watch?v=NiveHx8wsUg (transitions)
-=> https://www.youtube.com/watch?v=CGsEJToeXmA (grid)
-=> https://www.youtube.com/watch?v=cW-E4WEogzE (round buttons)
-=> https://www.youtube.com/watch?v=CZ39btQ0XlE (UIElements)
-=> https://www.youtube.com/watch?v=0bvDmqqMXcA (UIElement stick to the player)
-=> https://www.youtube.com/watch?v=iXWFTgFNRdM (LoadingScreen)
-=> https://www.youtube.com/watch?v=zObWVOv1GlE (Work with multiple scenes)
-
-========================================
-====================== KIND OF GAMES
-========================================
-
-Base-Building / Simulation
-=> https://github.com/Fy-/FyWorld
-
-Tetris
-=> https://github.com/Mukarillo/UnityTetris
-
-Hex Game
-=> https://www.youtube.com/playlist?list=PLnn2bgFFpnzYDn9bW5QAIqSsFZXU7-mcB
-
-Minecraft
-=> https://www.youtube.com/playlist?list=PLOkGH8jdwMJTjyqCb6kNHeMH8u0a8N30l
-
-Endless runner
-=> https://www.instructables.com/Make-A-2D-Infinite-Runner-with-Unity/
-=> GeometryDash
-	=> https://www.youtube.com/watch?v=8rdfcq-jePw&list=PLB5_EOMkLx_WJNuMfYmdl8YK2dEOafsNk&index=39
-=> TempleRun
-	=> https://www.youtube.com/playlist?list=PLZ1b66Z1KFKit4cSry_LWBisrSbVkEF4t
-=> Flappy bird
-	=> https://www.youtube.com/watch?v=Lu76c85LhGY&list=PLB5_EOMkLx_WJNuMfYmdl8YK2dEOafsNk&index=27
-	=> https://www.youtube.com/watch?v=OR0e-1UBEOU&list=PLB5_EOMkLx_WJNuMfYmdl8YK2dEOafsNk&index=16

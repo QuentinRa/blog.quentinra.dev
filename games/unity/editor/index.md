@@ -308,5 +308,9 @@ Stuff that I found, but never read/used yet.
 * Game resolution
 * Profiler + IDE debugger
 * Scene templates
+* NavMeshAgent/SetDestination (AI)
 </div><div>
+
+* Enable post-processing in the scene bar (enabled by default)
+* You can use calculations in the editor, they are evaluated
 </div></div>
