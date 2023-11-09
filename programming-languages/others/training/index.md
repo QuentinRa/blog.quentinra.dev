@@ -1,18 +1,4 @@
-# Programming Training
-
-<div class="row row-cols-lg-2"><div>
-
-...
-</div><div>
-
-...
-</div></div>
-
-<hr class="sep-both">
-
-## 📚 Websites 📚
-
-Websites that I found, but never used yet.
+# 📚 Programming Training 📚
 
 <div class="row row-cols-md-3"><div>
 
@@ -49,6 +35,7 @@ Websites that I found, but never used yet.
 * [bitdegree/learn](https://www.bitdegree.org/learn/) <small>(many)</small>
 * [codeproject](https://www.codeproject.com/) <small>(???)</small>
 * [tutorialkart](https://www.tutorialkart.com/) <small>(many)</small>
+* [beginnersbook](https://beginnersbook.com/) <small>(???)</small>
 
 **MOOCs**
 

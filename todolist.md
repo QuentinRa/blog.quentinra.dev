@@ -37,41 +37,6 @@ List of courses that have note which were not added yet.
 ## Random
 
 <div class="row row-cols-md-2"><div>
-</div><div>
-
-```text!
----------------
------ SEO
----------------
-https://unmetric.com/
-
-https://www.semrush.com/
-
-https://blog.stackpath.com/http-request-tools/
-
-https://www.webpresencesolutions.net/metadata-meta-tags-web-page-titles-page-descriptions-explained/
-https://blog.ezmarketing.com/write-good-title-tags-and-meta-descriptions
-https://bloggerspassion.com/seo-friendly-titles/#2_Length_of_your_titles_matters
-https://www.instafollowers.co/blog/how-to-optimize-title-description-and-url-for-seo
-https://aviddemand.com/google-title-tag-serp-preview-tool
-https://github.com/garmeeh/next-seo
-
-https://levelup.gitconnected.com/factors-behind-a-great-seo-optimized-web-application-155ad5453e32
-
-Extensions
-https://chrome.google.com/webstore/detail/seo-peek/lkkpfhgjmocgneajknedjhodkjkkclod/related
-https://microsoftedge.microsoft.com/addons/detail/seoinfo/lmpbhhpcahclepjgbfanililjnghjeah
-VisBug
-```
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Not sure if it makes sense for a todolist to have a to-do section.
-
-<div class="row row-cols-md-2"><div>
 
 ```text!
 Websites
@@ -94,27 +59,43 @@ https://github.com/trimstray/the-book-of-secret-knowledge
 https://github.com/sdmg15/Best-websites-a-programmer-should-visit
 https://github.com/ossu/computer-science
 https://github.com/markodenic/awesome-tech-blogs
-
-News
-https://daily.dev
-https://petri.com/
 ```
+
 </div><div>
 
-```
-https://beginnersbook.com/
-https://github.com/storybookjs/storybook (js)
-
+```text!
 xxx.adoc
 
 https://github.com/mikeerickson/validatorjs
 https://localizejs.com/
-https://github.com/naptha/tesseract.js
 
 https://stackify.com/blog/
 https://zbib.org/
 https://github.com/myles/awesome-static-generators#documentation
 
 https://monorepo.tools/
+
+---------------
+----- SEO
+---------------
+https://unmetric.com/
+
+https://www.semrush.com/
+
+https://blog.stackpath.com/http-request-tools/
+
+https://www.webpresencesolutions.net/metadata-meta-tags-web-page-titles-page-descriptions-explained/
+https://blog.ezmarketing.com/write-good-title-tags-and-meta-descriptions
+https://bloggerspassion.com/seo-friendly-titles/#2_Length_of_your_titles_matters
+https://www.instafollowers.co/blog/how-to-optimize-title-description-and-url-for-seo
+https://aviddemand.com/google-title-tag-serp-preview-tool
+https://github.com/garmeeh/next-seo
+
+https://levelup.gitconnected.com/factors-behind-a-great-seo-optimized-web-application-155ad5453e32
+
+Extensions
+https://chrome.google.com/webstore/detail/seo-peek/lkkpfhgjmocgneajknedjhodkjkkclod/related
+https://microsoftedge.microsoft.com/addons/detail/seoinfo/lmpbhhpcahclepjgbfanililjnghjeah
+VisBug
 ```
 </div></div>

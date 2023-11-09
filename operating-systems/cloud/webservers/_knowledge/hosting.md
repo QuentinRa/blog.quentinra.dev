@@ -2,6 +2,11 @@
 
 <div class="row row-cols-lg-2"><div>
 
+Deployment and hosting solutions:
+
+* [netlify](https://www.netlify.com/)
+* [vercel](https://vercel.com/)
+
 Random websites:
 
 * [OVHCloud](https://www.ovhcloud.com/en/)
