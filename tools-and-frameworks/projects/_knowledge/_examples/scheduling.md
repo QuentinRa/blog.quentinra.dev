@@ -1,4 +1,4 @@
-# Scheduling Example
+# Scheduling Problems Examples
 
 <hr class="sep-both">
 

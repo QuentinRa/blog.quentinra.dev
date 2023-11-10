@@ -106,15 +106,21 @@ Given a list of tasks and their dependencies, and the duration for each task, we
 
 Each task has the following properties:
 
-* Early start time
-* Last start time
-* Free margin (optional)
-* Total margin (optional)
+* Early start time <small>(days before this task can be started)</small>
+* Last start time <small>(maximum delay without impacting the expected duration)</small>
+* Total margin <small>(maximum delay without impacting the expected duration)</small>
+* Free margin <small>(maximum delay without impacting the dependencies start)</small>
 
 Remove redundant transitive arrows. If we have $A \to C$, $C \to D$, and $A \to D$, we only need to keep $A \to C \to D$.
 
 📚 In practice, we don't have the capability of having an unlimited number of tasks in parallel.
+
+🛣️ To calculate the last start time, we start from the end, and we subtract each task duration.
 </div><div>
+
+See also: [Scheduling Problems Examples](_examples/scheduling.md).
+
+<br>
 
 #### Metra Potential Method
 
@@ -183,4 +189,11 @@ Stuff that I found, but never read/used yet.
 * Steering Meetings: for key stakeholders and decision-makers to provide guidance and direction for a project
 * Periodic Meetings: at regular intervals, discuss ongoing work/challenges/progress.
 </div><div>
+
+Keywords and formulas for scheduling
+
+* "optimistic time estimate" instead of total margin
+* "normal time estimate" instead of free margin
+* "pessimistic time estimate" instead of certain margin
+* see deleted examples
 </div></div>
