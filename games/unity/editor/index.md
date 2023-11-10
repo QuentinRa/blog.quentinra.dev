@@ -4,7 +4,7 @@
 
 The Unity Editor is where we will build and assemble our games. Unity Editor versions are managed by [Unity Hub](https://unity.com/unity-hub) which can download [here](https://unity.com/pricing#plans-student-and-hobbyist).
 
-It's recommended to pick a LTS version of the Unity Editor, as they are stable versions. They will still receive patches for 2 years.
+It's recommended to pick an LTS version of the Unity Editor, as they are stable versions. They will still receive patches for 2 years.
 
 ✍️ Heavily refer to the [Official Documentation](https://docs.unity3d.com/Manual/index.html).
 
@@ -96,7 +96,7 @@ In most windows, using right-click, you can create game objects, components, scr
 
 The order of elements is important in 2D. Elements at the top are rendered before/below the ones at the bottom.
 
-* <kbd>Double-click</kbd> on a item to focus it in the scene view
+* <kbd>Double-click</kbd> on an item to focus it in the scene view
 * <kbd>F2</kbd> to rename the selected item
 * <kbd>CTRL+D</kbd> to duplicate the selected item
 * <kbd>ALT</kbd>+`expand/hide`: to expand/hide all children of a group
@@ -115,7 +115,7 @@ You can move, rotate, and scale game objects. You can also change your point of 
 </div>
 
 * <kbd>F</kbd> to focus a game object
-* <kbd>Mouse Wheel</kbd> to zoom/de-zoom
+* <kbd>Mouse Wheel</kbd> to zoom/unzoom
 * <kbd>Left-Click/Middle-click</kbd> to move your point of view
 * <kbd>CTRL</kbd> when moving something will update the position by 0.25
 * <kbd>CTRL</kbd>/<kbd>SHIFT</kbd> to select multiple game objects
@@ -128,7 +128,7 @@ We can edit the properties of any selected game objected <small>(from the hierar
 
 ![Unity inspector - remove component](_images/inspector_remove.png)
 
-Some values are game objects or files. You can drag-and-drop the game object/file to the field. You can also use the small circle with a dot, to browse values for this field (![Unity pick value](_images/picker.png)).
+Some values are game objects or files. You can drag and drop the game object/file to the field. You can also use the small circle with a dot, to browse values for this field (![Unity pick value](_images/picker.png)).
 
 📚 You can drag-and-drop a component to a game object in the hierarchy/scene to add it to a game object <small>(a shortcut)</small>.
 
@@ -144,7 +144,7 @@ The project window is like a warehouse. It's a file explorer allowing you to bro
 * Scripts
 * Settings, Shaders
 
-➡️ You can create scene, materials, scripts, etc. from there.
+➡️ You can create scenes, materials, scripts, etc. from there.
 </div></div>
 
 <hr class="sep-both">
@@ -167,9 +167,9 @@ Every Game object has the same properties:
 5. Add new components
 </div></div>
 
-A game object that is disabled is not update nor rendered.
+A game object that is disabled is neither updated nor rendered.
 
-Pros are disabling game objects that are far from the camera and only enabling those near the camera. In some cases, we may show objects that are far if they are visible to the player <small>(ex: building, etc.)</small>.
+Pros are disabling game objects that are far from the camera and only enabling those near the camera. In some cases, we may show objects that are far away if they are visible to the player <small>(ex: building, etc.)</small>.
 
 ⚠️ Avoid using scaling. It may cause performance issues.
 
@@ -177,7 +177,7 @@ Pros are disabling game objects that are far from the camera and only enabling t
 
 #### Game Object Nesting
 
-You can nest game objects inside game objects. While it make everything looks cleaner, too much nesting decreases performance.
+You can nest game objects inside game objects. While it makes everything look cleaner, too much nesting decreases performance.
 
 Nested objects are rendered relatively to their parents. It means that moving the parent will move the children.
 
@@ -197,9 +197,9 @@ When we modify the prefab, every instance is modified. But each instance can ind
 
 * ✅ We update only one game object to update all instances
 * ✅ Changing the Transform Component doesn't impact instances
-* ❌ It we change the prefab, we may create problems as we have very little control on what instances did change on their side.
+* ❌ If we change the prefab, we may create problems as we have very little control over what instances did change on their side.
 
-To create a prefab, drag-and-drop a game object from the scene or the hierarchy to a folder in the project window. Do the reverse process to create an instance. Instances have a blue logo in the hierarchy 🟦.
+To create a prefab, drag and drop a game object from the scene or the hierarchy to a folder in the project window. Do the reverse process to create an instance. Instances have a blue logo in the hierarchy 🟦.
 
 If an instance modifies the prefab, a blue bar is shown next to each modified property and any different value  is in bold. Use right-click on a property to apply/revert changes. You can see every overridden property by clicking on "override," right below "layer."
 
@@ -239,7 +239,7 @@ You need to add your scene in the SceneManager for them to be in the game that w
 
 * File > Build Settings
 * You may use "Add opened scenes in build"
-* You may drag-and-drop scenes in the list
+* You may drag and drop scenes in the list
 
 🪲 It seems updating Unity will empty the list.
 
@@ -256,7 +256,7 @@ Navigate to `File > Build` or `File > Build and Run`.
 
 #### Build Configuration
 
-Go to `Edit > Project Settings > Player`. You could also find the menu in `File > Build` at the bottom-left button "Player settings...".
+Go to `Edit > Project Settings > Player`. You can also find the menu in `File > Build` at the bottom-left button "Player settings...".
 
 * Set the company name, the product name, the version
 * You may set the icon 🚀 <small>(and multiple icons for each resolution)</small>
@@ -264,7 +264,7 @@ Go to `Edit > Project Settings > Player`. You could also find the menu in `File 
 * In splash image
    * You may remove the unity logo <small>(up to you, or You can move it)</small>
    * Add a splash screen with your own logo
-      * First, exit and add your logo in the project files
+      * First, exit and add your logo to the project files
       * Click on your logo, in texture type, set sprite 2D, and apply
       * Go back to the splash screen
       * Click on "+" and drag and drop your logo inside the field
