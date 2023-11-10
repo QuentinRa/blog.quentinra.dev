@@ -92,10 +92,55 @@ You must evaluate the risks that may occur and determine how to handle them. It 
 
 <div class="row row-cols-lg-2"><div>
 
-...
-</div><div>
+#### Work Breakdown Structure (WBS)
+
+WBS is a hierarchical decomposition of the tasks.  It's a breakdown of a project into smaller and more manageable components.
+
+For each component, we usually add a duration, a cost, and optionally the result expected or the resources needed.
+
+![WBS Example](_uml/wbs.svg)
+
+#### Scheduling Problems
 
 ...
+
+#### Metra potential method
+
+* first, create a graph of all of your tasks
+* the tasks are linked with edges having a weight which is the duration of the task
+* We are usually starting at a node called START, and ending at a node called END
+
+The task (nodes) will have properties
+
+* early start time
+* last start time
+* free margin (optional)
+* total margin (optional)
+
+**Note**: You may have some cases of **redundancy** like C is dependent on A, and D is dependent on C and A. You must remove $A \to D$ because we got by transitivity since we have $A \to C \to D$.
+</div><div>
+
+#### P.E.R.T.
+
+In the P.E.R.T. method, the vertices aren't the tasks anymore, they are the states of our project. When you're doing a task, you're moving your project in another state. A task that needs other tasks, will now be depending on the state of the project where the do tasks got tackled.
+
+* we got nodes like 1, 2, 3, ... that are the states of our project (1 may not be before 2)
+* they have properties
+  * early start time
+  * last start time
+  * free margin (optional)
+  * total margin (optional)
+* we have a node START
+* we have a node END
+
+From one state of your project (START), you may do some tasks like A and B. In P.E.R.T., this is 2 states (1 and 2), and on each edge ($START \to 1$, and $START \to 2$), we will put
+
+* the name of the task
+* the cost of the task
+
+But, if the task "C" is dependent on "A" and "B", this is the same as being dependent on state 1 and state 2. What we do is adding a directed dotted arrow $1 \to 2$ (or $2 \to 1$) with the duration $0$. Then we start the edge with $C(cost)$ from $1$ (resp. $2$, up to the one you picked) giving us $2 \to 3$ (resp. $1 \to 3$).
+
+**Note**: You may have some cases of **redundancy** like C is dependent on A, and D is dependent on C and A. You must remove $A \to D$ because we got it by transitivity since we have $A \to C \to D$.
 </div></div>
 
 <hr class="sep-both">
