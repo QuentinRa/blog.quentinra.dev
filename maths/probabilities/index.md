@@ -6,14 +6,14 @@ A probability is a value between zero and one characterizing how likely an event
 
 * 🛣️ $\omega$ (small-omega) is an outcome possible
 * 🗺️ $\Omega$ (big-omega) is a set of all possible outcomes, also called sample/probability space
-* 📌 $A$ is an event included in <span>$\Omega$. It's often  defined by a sentence. If it has only one outcome, it's called an elementary event.
+* 📌 $A$ is an event included in <span>$\Omega$. It's often defined by a sentence. If it has only one outcome, it's called an elementary event.
 * 🌍 $\overline{A}$ or $A^c$ is opposite/complementary event of A <small>(read as "not A")</small>.
 * ⛔ $\emptyset$ (empty set) means an impossible event.
 
 👉 Events "incompatible/disjoints/mutually exclusive events" are events that can't happen simultaneously.
 </div><div>
 
-We write $\mathbb{P}(A)$ the probability of A occuring. It's a value in $[0,1]$.
+We write $\mathbb{P}(A)$ the probability of A occurring. It's a value in $[0,1]$.
 
 * $\mathbb{P}(\Omega) = 1$ and $\mathbb{P}(\emptyset) = 0$
 * $\mathbb{P}(\overline{A}) = 1 - \mathbb{P}(A)$
@@ -122,7 +122,7 @@ When each event has the same probability of occuring, it's called an uniform pro
 \forall{w} \in \Omega\quad \text{then}\quad \mathbb{P}(w) = \frac{1}{card(\Omega)}
 @
 
-A conditional probability is when, knowing that another event $B$ occured, we want to know of probability of $A$ occurring.
+A conditional probability is when, knowing that another event $B$ occurred, we want to know of probability of $A$ occurring.
 
 @
 \mathbb{P}(A|B) = P_B(A) = P(B \wedge A) := \frac{\mathbb{P}(A \cap B)}{\mathbb{P}(B)}
@@ -240,7 +240,7 @@ random variables.
 
 #### Discrete Independence
 
-Random variables are independent ($\perp$ perp) if the product of the probabilities is equals to the probability of the events  $X_1, ..., X_n$.
+Random variables are independent ($\perp$ perp) if the product of the probabilities is equal to the probability of the events  $X_1, ..., X_n$.
 
 <div>
 \[
@@ -447,7 +447,7 @@ The HyperGeometric distribution $H(N, K, n)$ is representing the probability of 
 
 #### Poisson distribution (discrete)
 
-The Poisson distribution $\mathbb{P}(\lambda)$ require that the probability $p$ is relatively smaller than $n$, while the parameter $\lambda$ is equals to $n*p$.
+The Poisson distribution $\mathbb{P}(\lambda)$ requires that the probability $p$ is relatively smaller than $n$, while the parameter $\lambda$ is equal to $n*p$.
 
 * The mass function is $\mathbb{P}(X=k) = \frac{\lambda^k *  e^{-\lambda}}{k!}$
 * $E(X) = \lambda$
@@ -570,7 +570,7 @@ The indicator function, also sometimes called characteristic function, of a set 
 * $1$ if $x \in B$
 * $0$ else
 
-It means we can shorten an expression like that:
+It means we can shorten an expression like this:
 
 <div>
 \[

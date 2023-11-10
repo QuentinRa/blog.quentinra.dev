@@ -4,10 +4,6 @@
 
 List of courses that have note which were not added yet.
 
-**Programming Languages**
-
-* `(review, typos)` SEO, R
-
 **Tools and Frameworks**
 
 * `(review, typos, res)` JetBrains plugin development, Random, Project Management
@@ -16,10 +12,6 @@ List of courses that have note which were not added yet.
 **Operating systems**
 
 * `(review, typos, res)` Networking (+bridges)
-
-**Math**
-
-* `(review, typos, res)` Probabilities, Matrices, Graphs
 
 **Games**
 
