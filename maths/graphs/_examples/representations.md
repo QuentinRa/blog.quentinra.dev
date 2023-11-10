@@ -100,7 +100,7 @@ Given the following graph:
 
 ![Transitive Closure Example 1](../_images/closure/tc.png)
 
-Apply Roy-Warshall algorithm.
+Apply the Roy-Warshall algorithm.
 
 <blockquote class="spoiler">
 
@@ -118,7 +118,7 @@ Apply Roy-Warshall algorithm.
 </blockquote>
 </div><div>
 
-#### Exemple 2 (Roy-Warshall algorithm)
+#### Example 2 (Roy-Warshall algorithm)
 
 Given the following adjacency matrix with $V=\lbrace A, B, C, D\rbrace$:
 
@@ -133,7 +133,7 @@ Given the following adjacency matrix with $V=\lbrace A, B, C, D\rbrace$:
 \]
 </div>
 
-Apply Roy-Warshall algorithm. 💡 Predecessors are in the column and successors are in the line of the vertex we picked.
+Apply the Roy-Warshall algorithm. 💡 Predecessors are in the column and successors are in the line of the vertex we picked.
 
 <blockquote class="spoiler">
 

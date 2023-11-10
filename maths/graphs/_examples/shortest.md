@@ -14,7 +14,7 @@ Given the following graph, use Dijkstra's Algorithm from $A$.
 |------|------|------|------|------|------|------|
 | $0$  | $0$  | $+\infty$ | $+\infty$ | $+\infty$ | $+\infty$ | $A$ |
 
-$A$ is connected to $B$ by 10 and to $E$ by 5. We replace both $+\infty$ since the new weights are smaller ($0+10$ and $0+5$). We are writing $A(10)$ to remember what value was used for B sum ($0+10$, the $0$ is A value).
+$A$ is connected to $B$ by 10 and to $E$ by 5. We replaced both $+\infty$ since the new weights are smaller ($0+10$ and $0+5$). We are writing $A(10)$ to remember what value was used for B sum ($0+10$, the $0$ is A value).
 
 | Step |   A  |   B  |   C  |   D  |   E  | Done |
 |------|------|------|------|------|------|------|
@@ -53,7 +53,7 @@ Explanation: forr $A\ to\ B$, in B's column, we can read the path:
 
 <div class="row row-cols-lg-2"><div>
 
-Given the following graph, use Bellman–Ford Algorithm from $A$.
+Given the following graph, use the Bellman–Ford Algorithm from $A$.
 
 ![Bellman–Ford's algorithm](../_images/shortest/bellman.svg)
 </div><div>

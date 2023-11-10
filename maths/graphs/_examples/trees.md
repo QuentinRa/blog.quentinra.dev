@@ -32,7 +32,7 @@ Another answer: $(b,f),(e,h),(h,d),(b,g)$.
 
 <div class="row row-cols-lg-2"><div>
 
-The cost for constructing a road from "N" (Neuilly) to "Châtelet" is represented by the value located at the intersection of the "Châtelet" row and the "N" column. Create a tree from this table.
+The cost of constructing a road from "N" (Neuilly) to "Châtelet" is represented by the value located at the intersection of the "Châtelet" row and the "N" column. Create a tree from this table.
 
 ![Minimum Weight Spanning Tree Kruskal Example Table](../_images/trees/mst1-1.png)
 </div><div>
