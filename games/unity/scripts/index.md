@@ -547,6 +547,10 @@ Stuff that I found, but never read/used yet.
 
 ```cs
 MonoBehavior#OnEnable
+var editingScope = new PrefabUtility.EditPrefabContentsScope(assetPath)
+IReadOnlyList
+AssetDatabase
+LoadAssetAtPath<T>
 ```
 </div><div>
 

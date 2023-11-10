@@ -144,3 +144,17 @@ For debugging purposes, we can draw a ray using:
 Debug.DrawRay(origin, direction * distance, color)
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* Rigidbody: one unit = one meter
+* Rigidbody2D: one unit = base sprite size, see Pixel Per Unit
+* Z-fighting: increase z by 0.01
+</div><div>
+</div></div>

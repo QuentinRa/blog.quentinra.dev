@@ -245,14 +245,20 @@ Stuff that I found, but never read/used yet.
 * [NUnit](https://nunit.org/)
 * [Linq](https://docs.microsoft.com/fr-fr/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)
 * [C# Cheatsheet](https://gist.github.com/jwill9999/68c0da6c4c58efb42e25f887152256e1)
-* Switch, foreach
+* Switch (`v switch { y => g, _ => d}`), foreach
 * `[Serializable]`
+* `sealed override`/`static`
+* `is type`/`as type`
+* `where X : struct, new(), ...`
+* `typeof`/`nameof`/`using (){}`/`Func<return, arg1>`
 * `() => { return z; }`
 * `private void XXX<T>(T xxx)`
 * `throw new NotImplementedException();`
 * `IEnumerator`, `yield break/return null`
-* `struct`
+* `struct`, `return default;`, `string.IsNullOrEmpty`
 * `new List<>(); Find Add { null } Exists ForEach`
+* `public static void XXX<ZZZ>( this YYY<ZZZ> caller ) where ZZZ : struct`
+* `IReadOnlyList`
 </div><div>
 
 ```cs
