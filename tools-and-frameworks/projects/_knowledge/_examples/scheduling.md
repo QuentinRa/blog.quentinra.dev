@@ -4,18 +4,14 @@
 
 ## P.E.R.T. Example
 
-This is a specifications' table, but the words are in French. Nothing complicated, you got the task ID (A, B, ...), the task full name, the duration (=cost), and the dependencies.
+<div class="row row-cols-lg-2"><div>
 
-![](images/pert.png)
+Given the following tasks and their dependencies:
 
-And the resulting P.E.R.T diagram is
+![Scheduling Specification Example P.E.R.T. Table](_images/pert.png)
 
-<div class="overflow-auto" style="max-height: 500px;">
-
-![](images/pert.svg)
-</div>
-
-<br>
+<details class="details-n">
+<summary>Detailed Explanations</summary>
 
 **Explanations (dependencies)**
 
@@ -62,23 +58,29 @@ As for the free margin
 **Explanations (note)**
 
 The critical path is $(Start, A, C, E, F, G, End)$.
+</details>
+</div><div>
 
-<hr class="sep-both">
-
-## Metra potential method Example
-
-This is a specifications' table, but the words are in French. Nothing complicated, you got the task id (A, B, ...), the task full name, the duration (=cost), and the dependencies.
-
-![](images/pt.png)
-
-And the resulting Metra potential diagram is
+The resulting P.E.R.T diagram is:
 
 <div class="overflow-auto" style="max-height: 500px;">
 
-![](images/pt.svg)
+![P.E.R.T. Example Table](_images/pert.svg)
 </div>
+</div></div>
 
-<br>
+<hr class="sep-both">
+
+## Metra potential Example
+
+<div class="row row-cols-lg-2"><div>
+
+Given the following tasks and their dependencies:
+
+![Scheduling Specification Example Metra potential Table](_images/pt.png)
+
+<details class="details-n">
+<summary>Detailed Explanations</summary>
 
 **Explanations (dependencies)**
 
@@ -121,11 +123,13 @@ As for the free margin
 **Explanations (note)**
 
 The critical path is $(Start, A, C, E, F, G, End)$.
+</details>
+</div><div>
 
-P.E.R.T. is a method to solve scheduling problems (critical paths, margins). What we will use below is a simplified version of P.E.R.T., without margins, and paths.
+And the resulting Metra potential diagram is
 
-In this simplified version of PERT, the initial node is the project, and we are using arrows to move from one state to another state of our project after doing a task. We use `------` to represent a task that will take longer than the other one.
+<div class="overflow-auto" style="max-height: 500px;">
 
-To summarize, this will helps us because we will be able to visually see which tasks we can delay, and which ones we cannot. In this simplified version, you will see the dependencies between tasks, and it well helps when making the GanTT.
-
-![Simplified pert](images/pert.png)
+![Metra potential Example Table](_images/pert.svg)
+</div>
+</div></div>
