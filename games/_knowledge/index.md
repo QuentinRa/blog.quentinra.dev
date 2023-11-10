@@ -56,5 +56,6 @@ Stuff that I found, but never read/used yet.
 
 * [Art of User Interface](https://www.taskade.com/blog/user-interface-design-gaming-productivity/)
 * [Game Development](https://gamedevelopment.tutsplus.com/)
+* [gamecodeur](https://www.gamecodeur.fr/)
 </div><div>
 </div></div>

@@ -94,4 +94,5 @@ Random
 
 * Post extrapolate
 * CTRL-D to extract animation from a model
+* [VFXToolbox](https://github.com/Unity-Technologies/VFXToolbox)
 </div></div>
