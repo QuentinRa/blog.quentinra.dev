@@ -309,6 +309,7 @@ Stuff that I found, but never read/used yet.
 * Profiler + IDE debugger
 * Scene templates
 * NavMeshAgent/SetDestination (AI)
+* [Static](https://docs.unity3d.com/Manual/StaticObjects.html) vs Dynamic Game Objects
 </div><div>
 
 * Enable post-processing in the scene bar (enabled by default)

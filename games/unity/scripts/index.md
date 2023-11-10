@@ -435,6 +435,28 @@ Debug.unityLogger.logEnabled = Debug.isDebugBuild;
 
 <hr class="sep-both">
 
+## Scriptable Objects
+
+<div class="row row-cols-lg-2"><div>
+
+Scriptable objects are data container to store and manipulate data in a way that is easy to use, share, and extend. They are often used to define game items data, character data, settings, etc.
+
+```
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "XXX", menuName = "YYY/XXX", order = 1)]
+public class XXX : ScriptableObject
+{
+    // define attributes, methods, etc.
+}
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Coding Conventions
 
 <div class="row row-cols-lg-2"><div>
