@@ -6,16 +6,12 @@ List of courses that have note which were not added yet.
 
 **Tools and Frameworks**
 
-* `(review, typos, res)` JetBrains plugin development, Random, Project Management
+* `(review, typos, res)` JetBrains plugin development
 </div><div>
 
 **Operating systems**
 
 * `(review, typos, res)` Networking (+bridges)
-
-**Games**
-
-* `(review, typos, res)` games, game engines, game design, Unity
 
 **Cybersecurity**
 

@@ -40,7 +40,7 @@ A simple specification document may include:
 
 #### Functional Specifications
 
-This section focuses on the functionalities of the product. It could be a table with basic information about each task, along their priority.
+This section focuses on the functionalities of the product. It could be a table with basic information about each task, along with their priority.
 
 | N°| Task name | Duration (days) | Man-days | Priority |
 | ------ | ------ | ------ | ------ | ------ |
@@ -60,7 +60,7 @@ You will have to further develop each task, by describing as much as possible, w
 
 * You could design a mockup
 * Don't forget error messages, events, animations/colors such as when a button is pressed, etc.
-* Describe the task from the point of a view of a user
+* Describe the task from the point of view of a user
 * Define UML diagrams to formally define the task
 * ...
 

@@ -8,7 +8,7 @@
 
 #### Game Inventory
 
-* Array or List? Fixed size?
+* Array or List? Fixed-size?
 * Each entry is a slot?
 * `Swap(index, index)`: swap two items. Don't if they have the same index? Handle merge items if they are stackable.
 * `GetTotalQuantity(item)`: Don't forget to check every slot.
@@ -58,7 +58,7 @@ We are considering that you are in Unity 3D, without the Z-axis.
     * 📘: make the ball bounce when colliding
         * 🗒: using Vector3.Reflect
     * 📘: destroy the ball when lost
-        * 🗒: check if renderer is visible
+        * 🗒: check if the renderer is visible
 * 🗒: Set the camera mode to orthographic
 * 📘: Create a brick (ex: flat cube) with a collider
     * 📘: the brick should be destroyed after X hits
