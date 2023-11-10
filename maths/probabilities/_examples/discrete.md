@@ -16,7 +16,7 @@ For a normal dice, we have the same probability of having each one of the 6 valu
 
 <div class="row row-cols-lg-2"><div>
 
-Two players X and Y are drawing five cards in a 32-cards deck. 
+Two players X and Y are drawing five cards in a 32-card deck. 
 
 ##### What's the probability of X having at least one ace?
 
@@ -29,7 +29,7 @@ We are introducing A = "at least one ace". It would be easier to calculate $\mat
 For $|\overline{A}|$, we are basically calculating the event of picking 5 cards among the 28 remaining cards, e.g., the deck without the aces.
 </div><div>
 
-##### Same question if Y took once ace
+##### Same question if Y took one ace
 
 Since Y took 5 cards including 1 ace, we are simply removing them from our deck and doing the same calculation.
 @
@@ -104,7 +104,7 @@ We are using a test to check if the patient got the disease or not. On a sick pa
 </div>
 </div><div>
 
-##### What's the probability of someone having the disease after two positives tests?
+##### What's the probability of someone having the disease after two positive tests?
 
 * $D$ = "2 positives tests"
 * $P_1$ = "The first test is positive"

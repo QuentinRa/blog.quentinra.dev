@@ -6,7 +6,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-Assume we got two dices ($m=2$). Each dice range from $1$ to $6$.
+Assume we got two dice ($m=2$). Each die ranges from $1$ to $6$.
 
 <div>
 \[

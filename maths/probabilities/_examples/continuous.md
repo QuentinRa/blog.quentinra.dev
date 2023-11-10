@@ -8,7 +8,7 @@
 
 The density function of an exponential distribution is $f_X(x) = \lambda \exp^{-\lambda x}$ (with $lambda \ge 0$).
 
-The formulas is $M_X(t) = \int \exp(tx)\ f_X(x)\ dx$.
+The formula is $M_X(t) = \int \exp(tx)\ f_X(x)\ dx$.
 
 #### Calculate The Function
 
