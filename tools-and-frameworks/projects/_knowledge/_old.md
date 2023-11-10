@@ -1,22 +1,4 @@
-# Specifications
-
-You will need to write a document called specifications (``Cahier des charges CDC``), summarizing everything that you have to do.
-
-* **present the company**  : name, logo?, background
-* **present the project** : client, what we want, ...
-* **present the public** : who will use the product(language, age, IT knowledge, ...)
-* **the team** : organization, roles, ...
-* **graphic chard** : if you have one
-
-Then, start digging into the real stuff
-
-* [Functional specifications](cdc/fs.md)
-* [Technical specifications](cdc/ts.md)
-* [Risks](cdc/risks.md)
-
-<hr class="sr">
-
-## Organize your project
+# Organize your project
 
 You would usually write a Gantt project to organize your tasks, even in an Agile-project (though it may have less content).
 
