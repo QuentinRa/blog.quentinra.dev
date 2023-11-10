@@ -97,7 +97,7 @@ Stuff that I found, but never read/used yet.
 * Progressive Web Apps (PWA)
 * [Server Side Includes](https://en.wikipedia.org/wiki/Server_Side_Includes) (SSI)
 * WebAssembly
-* [WAI](https://www.w3.org/WAI/) + [WebAIM](https://webaim.org/intro/) + [Wave](https://wave.webaim.org/)
+* [WAI](https://www.w3.org/WAI/) + [WebAIM](https://webaim.org/intro/) + [Wave](https://wave.webaim.org/) + VisBug
 </div><div>
 
 * [Heroku](https://www.heroku.com/home) / [Heroku (student)](https://www.heroku.com/students) (👻)

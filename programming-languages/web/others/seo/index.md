@@ -7,7 +7,7 @@ Search Engine Optimization, commonly known as SEO, is a set of practices and str
 SEO is an ongoing process as search engines continually update their algorithms. It means that the content below may be obsolete.
 
 * [webhint](https://webhint.io/) (hints to improve your website)
-* [seo-peek](https://www.sanderheilbron.nl/seo-peek) (extension)
+* [seo-peek](https://www.sanderheilbron.nl/seo-peek)/[SEOInfo](https://addons.mozilla.org/en-US/firefox/addon/seoinfo/) (extensions)
 </div><div>
 
 Search engines are using crawlers to index websites. They are basically bots inspecting each page and navigating on the website.
@@ -210,4 +210,6 @@ Stuff that I found, but never read/used yet.
 * [uptrends](https://www.uptrends.com/tools)
 * [seositecheckup](https://seositecheckup.com/tools)
 * [nitropack](https://nitropack.io/)
+* [brandwatch](https://www.brandwatch.com/)
+* [semrush](https://www.semrush.com/)
 </div></div>

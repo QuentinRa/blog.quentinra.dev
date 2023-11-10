@@ -31,37 +31,3 @@ List of courses that have note which were not added yet.
 * Guake/iTerm2/Terminology/[tmux](https://www.youtube.com/watch?v=Lqehvpe_djs)/[terminator](https://github.com/gnome-terminator/terminator)/[tmux](https://www.youtube.com/watch?v=Lqehvpe_djs) + [cheatsheet](https://tmuxcheatsheet.com/)
 * `strace/strings` [link](https://jvns.ca/strace-zine-v3.pdf)
 </div></div>
-
-<hr class="sep-both">
-
-## Random
-
-<div class="row row-cols-md-2"><div>
-</div><div>
-
-```text!
-xxx.adoc
----------------
------ SEO
----------------
-https://unmetric.com/
-
-https://www.semrush.com/
-
-https://blog.stackpath.com/http-request-tools/
-
-https://www.webpresencesolutions.net/metadata-meta-tags-web-page-titles-page-descriptions-explained/
-https://blog.ezmarketing.com/write-good-title-tags-and-meta-descriptions
-https://bloggerspassion.com/seo-friendly-titles/#2_Length_of_your_titles_matters
-https://www.instafollowers.co/blog/how-to-optimize-title-description-and-url-for-seo
-https://aviddemand.com/google-title-tag-serp-preview-tool
-https://github.com/garmeeh/next-seo
-
-https://levelup.gitconnected.com/factors-behind-a-great-seo-optimized-web-application-155ad5453e32
-
-Extensions
-https://chrome.google.com/webstore/detail/seo-peek/lkkpfhgjmocgneajknedjhodkjkkclod/related
-https://microsoftedge.microsoft.com/addons/detail/seoinfo/lmpbhhpcahclepjgbfanililjnghjeah
-VisBug
-```
-</div></div>
