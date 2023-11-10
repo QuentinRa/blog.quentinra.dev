@@ -20,7 +20,7 @@ Arbitrarily arranging elements in a canvas is not responsive, e.g., the elements
 
 We often use anchors to place elements. Each element is rendered relatively to a border or another element.
 
-Click on a UI element, and check the "Rect Transform". Then click on this (**Anchor presets**) ![Unity UI Anchor presets](_images/anchor_presets.png). By pressing **ALT** and selecting an element of the grid, it will automatically position your component somewhere in the canvas, and you can stretch it too if you selected one of the stretching icons <small>(increase width, height, both)</small>.
+Click on a UI element, and check the "Rect Transform". Then click on this (**Anchor presets**) ![Unity UI Anchor presets](_images/anchor_presets.png). By pressing **ALT** and selecting an element of the grid, it will automatically position your component somewhere in the canvas, and you can stretch it too if you select one of the stretching icons <small>(increase width, height, both)</small>.
 </div><div>
 
 Here is an example of positioning an image near the top:

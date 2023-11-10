@@ -13,7 +13,7 @@ There are 3 ways of handling user input in Unity Games:
 
 #### Delta Time
 
-As per what is explained of the [Game Loop](/games/_knowledge/game-engines/index.md#frames-per-second-fps), the time between updates is inconsistent. To ensure something move at `10 m/s`, we use `Time.deltaTime` in the update method:
+As per what is explained about the [Game Loop](/games/_knowledge/game-engines/index.md#frames-per-second-fps), the time between updates is inconsistent. To ensure something moves at `10 m/s`, we use `Time.deltaTime` in the update method:
 
 ```cs
 // defaultSpeed is an attribute with the value "10"
@@ -39,7 +39,7 @@ You will define each "control" of the game. For instance, you can define that "J
 
 To add more keys, increase the size of the array.
 
-➡️ The "dead" properties is a range where if a value is within that range, then it's considered as "null"/0.
+➡️ The "dead" property is a range where if a value is within that range, then it's considered as "null"/0.
 
 ➡️ The "negative" means the value will be negative in "GetAxis".
 
@@ -47,7 +47,7 @@ To add more keys, increase the size of the array.
 
 #### Raw Input
 
-When using non-raw input, for instance, when moving a character, the character will still move a bit after the key was released. If this behavior is not acceptable, we can use:
+When using non-raw input, for instance, when moving a character, the character will still move a bit after the key is released. If this behavior is not acceptable, we can use:
 
 ```cs
 float axisX = Input.GetAxisRaw("Horizontal");
@@ -74,7 +74,7 @@ if (Input.GetButton("Jump")) // if "Jump" triggered
 
 #### Continuous Input
 
-User hold a key.
+User holds a key.
 
 ```cs
 if (Input.GetButtonDown("Jump"))

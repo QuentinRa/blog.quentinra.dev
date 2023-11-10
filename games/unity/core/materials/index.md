@@ -31,7 +31,7 @@ Options:
 
 * 🎨 You can change the material color with the property "Albedo"
 * 🖼️ You can use a texture with the little circle right before "Albedo"
-* 💡 You can se the material as transparent for a light
+* 💡 You can set the material as transparent for a light
 * 💡 You can set the smoothness to 0 <small>(=not shinny)</small>
 * 💡 You can enable emission and set a color, if you want this color to be emitted from your material
 </div><div>

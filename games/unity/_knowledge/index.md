@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-Unity is a popular game-engine that can be used to create:
+Unity is a popular game engine that can be used to create:
 
 * 🖥️ PC Games
 * ☎️ Mobile Games
@@ -32,7 +32,7 @@ To use and download Unity, you need to subscribe to a plan: personal, student, o
 
 <div class="row row-cols-lg-2"><div>
 
-Version Controls systems are used to keep track of the different versions of a project. Learn more about [Version Control](/tools-and-frameworks/vcs/_general/index.md) here. 
+Version control systems are used to keep track of the different versions of a project. Learn more about [Version Control](/tools-and-frameworks/vcs/_general/index.md) here. 
 
 Unity projects commonly use [Git](/tools-and-frameworks/vcs/git/_general/index.md). 
 

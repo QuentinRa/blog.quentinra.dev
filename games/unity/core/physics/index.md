@@ -85,7 +85,7 @@ By toggling "is trigger," the collider will path through the other collider inst
 
 #### Layers and Colliders
 
-By default, objects may collide even if there are not on the same layer. This is determined by the Layer Collision Matrix.
+By default, objects may collide even if they are not on the same layer. This is determined by the Layer Collision Matrix.
 
 Use `Edit > Project Settings > Physics` to configure it.
 </div><div>
@@ -125,7 +125,7 @@ Each Game Object has the methods `OnTrigger*` and `OnCollision*` that will be ca
 
 <div class="row row-cols-lg-2"><div>
 
-We can generate a ray in a direction and detect which game object is colling with it. The ray has an origin which is a point where the ray is coming from. It could be from the camera position if we simulate the player eyes. ⚠️ Too much raycasting will cause performance issues.
+We can generate a ray in a direction and detect which game object is colliding with it. The ray has an origin which is a point where the ray is coming from. It could be from the camera position if we simulate the player eyes. ⚠️ Too much raycasting will cause performance issues.
 
 ```cs
 var ray = new Ray(origin, direction)
