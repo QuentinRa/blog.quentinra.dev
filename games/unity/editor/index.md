@@ -201,7 +201,7 @@ When we modify the prefab, every instance is modified. But each instance can ind
 
 To create a prefab, drag and drop a game object from the scene or the hierarchy to a folder in the project window. Do the reverse process to create an instance. Instances have a blue logo in the hierarchy 🟦.
 
-If an instance modifies the prefab, a blue bar is shown next to each modified property and any different value  is in bold. Use right-click on a property to apply/revert changes. You can see every overridden property by clicking on "override," right below "layer."
+If an instance modifies the prefab, a blue bar is shown next to each modified property and any different value is in bold. Use right-click on a property to apply/revert changes. You can see every overridden property by clicking on "override," right below "layer."
 
 Double-click on a prefab to edit it. From the inspector, you can also use the arrow at the top.
 

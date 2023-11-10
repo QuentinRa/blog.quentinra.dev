@@ -62,7 +62,7 @@ Rigidbody r = GetComponent<Rigidbody>();
 Rigidbody r = gameObject.GetComponent<Rigidbody>(); // same
 r = GetComponentInChildren<Rigidbody>(); // us + nested
 r = GetComponentInParent<Rigidbody>();   // parent
-r = FindObjectOfType<Rigidbody>();       // accross all
+r = FindObjectOfType<Rigidbody>();       // across all
 ```
 
 You can disable a component `c` with `c.enabled = false`.
@@ -177,7 +177,7 @@ We can customize the inspector for our script. There are a few existing attribut
 
 <div class="row row-cols-lg-2"><div>
 
-A coroutines is a task that can be paused. They are quite used for tasks such as animations and delays. It's a normal function that has multiple returns according to our need:
+A coroutine is a task that can be paused. They are quite used for tasks such as animations and delays. It's a normal function that has multiple returns according to our needs:
 
 * `yield return null`: pause until the next frame/update call
 * `yield return ...`
@@ -312,7 +312,7 @@ public class SomeClass : MonoBehaviour {} // One
 public class SomeClass : MonoBehaviour {} // Multiple
 ```
 
-We can prevent users from using this component more than once to the same game object using:
+We can prevent users from using this component more than once on the same game object using:
 
 ```cs
 [DisallowMultipleComponent]
@@ -340,7 +340,7 @@ We can customize the input field for strings:
 
 #### Add Menus to ContentMenu
 
-You can add menus shown when using Right-click on your component. Each menu is associated to a function.
+You can add menus shown when using right-clicking on your component. Each menu is associated with a function.
 
 ```cs
 [ContextMenuItem("reset", "ResetIntWithMenuItem")] 
@@ -439,9 +439,9 @@ Debug.unityLogger.logEnabled = Debug.isDebugBuild;
 
 <div class="row row-cols-lg-2"><div>
 
-Scriptable objects are data container to store and manipulate data in a way that is easy to use, share, and extend. They are often used to define game items data, character data, settings, etc.
+Scriptable objects are data containers to store and manipulate data in a way that is easy to use, share, and extend. They are often used to define game item data, character data, settings, etc.
 
-```
+```cs
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "XXX", menuName = "YYY/XXX", order = 1)]
@@ -451,8 +451,6 @@ public class XXX : ScriptableObject
 }
 ```
 </div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">
@@ -506,14 +504,14 @@ The last instruction must not be an "if" statement.
 ```diff
 - private void MyMethod()
 - {
-- 	// some code here (optionnal)
+- 	// some code here (optional)
 - 	if (something) {
 - 	    // some code here
 - 	}
 - }
 + private void MyMethod()
 + {
-+ 	// some code here (optionnal)
++ 	// some code here (optional)
 + 	if (!something) return; // faster return
 + 	// some code here
 + }
@@ -560,5 +558,5 @@ Concepts
 * StateMachine => OnStateEnter / OnStateUpdate / OnStateExit
 * Object pooling
 * Avoid using DontDestroyOnLoad for passing data. use `SceneManager.LoadScene(<path>, LoadSceneMode.Additive)` and `SceneManager.UnloadScene`.
-* [Conditional Compilation](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html). Assembly Definition Files (ADF) (one DDL per ???, default without ADF): everything recompiled on every change. Assembly def + ref.
+* [Conditional Compilation](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html). Assembly Definition Files (ADF) (one DDL per ???, default without ADF): everything is recompiled on every change. Assembly def + ref.
 </div></div>
