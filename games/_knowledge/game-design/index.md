@@ -33,7 +33,7 @@ Games designers are redacting a **Game design document** (GDD) that covers every
 * Why should we play your game?
     * Is it the Hero? It is the story?
     * What feelings are you expecting the player to feel?
-* What's making the game fun to play?
+* What makes the game fun to play?
 
 ⚠️ You are NOT the player. Ask for feedback a lot of times.
 
@@ -48,7 +48,7 @@ Games designers are redacting a **Game design document** (GDD) that covers every
 * What are the obstacles to the goal?
   * Traps
   * Enemies
-* Can the player die? How would he get a "Game over"? Is there "save points"?
+* Can the player die? How would he get a "Game over"? Are there "save points"?
 * What kind of graphics are you planning to use? Something realist, or more something fantasist?
 
 📚 Take inspiration from other successful games.
@@ -71,20 +71,20 @@ Games designers are redacting a **Game design document** (GDD) that covers every
 
 You would also have to define the stats of the player
 
-* is there HP, MP, ATK, ...?
-* is there stamina?
-* is there an inventory? what's its size? etc.
+* Is there HP, MP, ATK, ...?
+* Is there a notion of stamina?
+* Is there an inventory? what's its size? etc.
 
-For instance, if you are making a zombie game, you may add a stat "infected" turning the player in a zombie if the stat reached 100.
+For instance, if you are making a zombie game, you may add a stat "infected" turning the player into a zombie if the stat reaches 100.
 
 #### User Interfaces
 
 * What's shown on the screen?
     * Is there a mini-map?
-    * Is there some skills shortcuts?
+    * Are there some skills shortcuts?
     * Is there a life/mana/stamina bar?
     * Is there an icon for the settings? the sound?
-    * Is there icons for other players?
+    * Are there icons for other players?
     * Is there a chat?
 * What are the screens of your game? <small>(draw a mockup)</small>
     * Inventory?
@@ -111,13 +111,13 @@ For instance, if you are making a zombie game, you may add a stat "infected" tur
   * are the mobs/monsters respawning?
   * you can prevent the user from accessing some quests/areas
 
-In most games, we are not teaching everything at once. We slowly add tutorial as the users get by with the game.
+In most games, we are not teaching everything at once. We slowly add tutorials as the users get by with the game.
 </div><div>
 
 #### Development Tools
 
 * Will you use a game engine? Which one?
-* Will you use a game templates? Which ones?
+* Will you use a game template? Which ones?
 * Which coding editors will you use?
 </div></div>
 
@@ -141,7 +141,7 @@ In most games, we are not teaching everything at once. We slowly add tutorial as
 
 ### Replay value
 
-The [replay value](https://en.wikipedia.org/wiki/Replay_value) or replayability is a score of how much more content the user could discover after completing the game once.
+The [replay value](https://en.wikipedia.org/wiki/Replay_value) or replayability is a score of how much more content the user can discover after completing the game once.
 
 * Alternate/different scenario
 * New challenges <small>(new locations/classes/difficulties/play styles)</small>
