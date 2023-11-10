@@ -38,7 +38,7 @@ A simple specification document may include:
 * **Introduce the team**: members, roles, etc.
 * **Introduce the graphic chart**: if you have one
 
-#### Functional specifications
+#### Functional Specifications
 
 This section focuses on the functionalities of the product. It could be a table with basic information about each task, along their priority.
 
@@ -63,6 +63,27 @@ You will have to further develop each task, by describing as much as possible, w
 * Describe the task from the point of a view of a user
 * Define UML diagrams to formally define the task
 * ...
+
+#### Technical Specifications
+
+The technical specifications define which languages, tools, and which technical constraints the development team will have.
+
+* **Methods**: Agile-Scrum, Kanban, etc.
+* **Technologies**
+    * name (MariaDB? MySQL? Java? PHP? Etc.)
+    * version (at least? Up to? Exact value?)
+* **Platforms**: target platform(s)
+* **Language**: French, English, etc.
+* **Storage**: How do we manage persistence? (Database? File?)
+* **Restrictions**: other restrictions, such as forbidding cookies.
+* **Hardware**: are additional devices/components/... required?
+* **Others**: version control, team communications, etc.
+
+#### Risk Evaluation
+
+You must evaluate the risks that may occur and determine how to handle them. It could be a person/tool/... that is not available, a task complexity that was incorrectly evaluated, a required dependency whose delivery was delayed, etc.
+
+📚 See also: [Probabilistic risk assessment](https://en.wikipedia.org/wiki/Probabilistic_risk_assessment) and [Risk Matrix](https://en.wikipedia.org/wiki/Risk_matrix).
 </div></div>
 
 <hr class="sep-both">
