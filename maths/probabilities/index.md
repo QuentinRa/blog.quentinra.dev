@@ -7,7 +7,7 @@ A probability is a value between zero and one characterizing how likely an event
 * 🛣️ $\omega$ (small-omega) is an outcome possible
 * 🗺️ $\Omega$ (big-omega) is a set of all possible outcomes, also called sample/probability space
 * 📌 $A$ is an event included in <span>$\Omega$. It's often defined by a sentence. If it has only one outcome, it's called an elementary event.
-* 🌍 $\overline{A}$ or $A^c$ is opposite/complementary event of A <small>(read as "not A")</small>.
+* 🌍 $\overline{A}$ or $A^c$ is the opposite/complementary event of A <small>("not A")</small>.
 * ⛔ $\emptyset$ (empty set) means an impossible event.
 
 👉 Events "incompatible/disjoints/mutually exclusive events" are events that can't happen simultaneously.
@@ -116,7 +116,7 @@ Using combinatorics to get the cardinal:
 \mathbb{P}(A) = \frac{card(A)}{card(\Omega)} = \frac{|A|}{|\Omega|}
 @
 
-When each event has the same probability of occuring, it's called an uniform probability and the formula is simpler:
+When each event has the same probability of occurring, it's called an uniform probability and the formula is simpler:
 
 @
 \forall{w} \in \Omega\quad \text{then}\quad \mathbb{P}(w) = \frac{1}{card(\Omega)}
@@ -199,7 +199,7 @@ The expected value noted $\mathbb{E}(X)$, $\mathbb{E}X$, or $\mathbb{E}[X]$ is d
 * $\mathbb{E}(X)$ is also called [the first moment](https://en.wikipedia.org/wiki/Moment_(mathematics)#Mean)
 * $\mathbb{E}[X, \lambda Y] = \mathbb{E}[Y] + \lambda \mathbb{E}[Y]$
 * $\mathbb{E}(X) \ge 0$ and if $X \ge Y$ then $\mathbb{E}(X) \ge \mathbb{E}(Y)$
-* $\mathbb{E}[X * Y] = \mathbb{E}[X] * \mathbb{E}[Y]$ if both are independant, otherwise $\mathbb{E}[X * Y] = \sum_{i,j} x_i * y_i * p_{ij}$.
+* $\mathbb{E}[X * Y] = \mathbb{E}[X] * \mathbb{E}[Y]$ if both are independent, otherwise $\mathbb{E}[X * Y] = \sum_{i,j} x_i * y_i * p_{ij}$.
 * $\mathbb{E}(X) = \frac{n+1}{2}$ for an uniform probability
 * Cauchy-Schwarz: $\mathbb{E}[XY]^2 \le \mathbb{E}[X^2] * \mathbb{E}[Y^2]$
 
