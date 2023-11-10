@@ -1,44 +1,4 @@
-# Make a project
-
-If you're wondering what's the vocabulary used when doing a project, how you could write your specifications or organize your project, then you're in the right place. If you're making an IT project, then we have some [additional knowledge here](../../../_it/dev/git-project/todo/index.md).
-
-Honestly, this is a boring yet interesting theoretical course. You will learn a lot of things, but there is a lot of vocabulary. I will try to present it to you in a useful way so that you will enjoy the course. You will learn
-
-* Projects' vocabulary and structure
-* How you can write specifications (``CDC``)
-* How reporting works
-* How you can deal with bugs/issues
-
-<hr class="sl">
-
-## Vocabulary
-
-* **Nature of the project**/**Need** (``Besoin``): what the client wants
-* **Deliverables** (``Livrables``): what you will give to the client
-* **Milestones** (``Jalons``): important dates of your project
-* **Scope** (``Périmètre``): tasks, deliverables, budget, ... everything related to the project.
-* **Man-days** (`Homme-Jour HJ`): an indicator of how many resources a task will require
-* **Engineer**/**Architect** (``Maitre d’ouvrage``): interactions with the client, planned the project
-* **General contractor** (``Maitre d’oeuvre``): interactions with programmers/technical staff, work on the project
-
-<hr class="sr">
-
-## Project Structure
-
-Usually,
-
-* a **build-team**/**project-team** is formed to create a version (ex: 1.0)
-* then a **run-team**/**exploitation-team** will keep the project running, make updates, fix bugs ...
-
-It's usually looking like this.
-
-![Project lifetime](lifecycle.svg)
-
-Personally, I barely ever saw the use of run/exploitation-team, but I'm seeing quite a lot "maintainer", at least in IT projects.
-
-<hr class="sl">
-
-## Specifications
+# Specifications
 
 You will need to write a document called specifications (``Cahier des charges CDC``), summarizing everything that you have to do.
 
