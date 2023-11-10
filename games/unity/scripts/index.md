@@ -544,6 +544,7 @@ Stuff that I found, but never read/used yet.
 * [CreateAssetMenu](https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html) (ScriptableObject): asset list
 * [CanEditMultipleObjects](https://docs.unity3d.com/ScriptReference/CanEditMultipleObjects.html): can be set when selecting multiple game objects
 * [Icons for scripts](https://github.com/halak/unity-editor-icons)
+* [Unity Script Collection](https://github.com/michidk/Unity-Script-Collection)
 
 ```cs
 MonoBehavior#OnEnable

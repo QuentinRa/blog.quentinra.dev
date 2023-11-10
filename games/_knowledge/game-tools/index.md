@@ -40,6 +40,7 @@
 * [Photon](https://www.photonengine.com/) (multiplayer)
 * [clara.io](https://clara.io/) (~blender online? 3D assets)
 * [Blender](https://www.blender.org/) (Create 3D Models)
+* [Ressemble.ai](https://www.resemble.ai/) (AI Voice Generation)
 </div></div>
 
 <hr class="sep-both">

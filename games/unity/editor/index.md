@@ -312,6 +312,7 @@ Stuff that I found, but never read/used yet.
 * [Static](https://docs.unity3d.com/Manual/StaticObjects.html) vs Dynamic Game Objects
 </div><div>
 
+* [Unity Library](https://github.com/UnityCommunity/UnityLibrary)
 * Enable post-processing in the scene bar (enabled by default)
 * You can use calculations in the editor, they are evaluated
 * Constraints
@@ -319,6 +320,6 @@ Stuff that I found, but never read/used yet.
 * Recorder
 * Shader Graph + [Shaders](https://github.com/adrian-miasik/unity-shaders)
 * Unity Remote 5 (Editor > Device)
-* [Unity-Editor-Toolbox](https://github.com/arimger/Unity-Editor-Toolbox)
+* [Unity-Editor-Toolbox](https://github.com/arimger/Unity-Editor-Toolbox), [Mirror](https://github.com/MirrorNetworking/Mirror), [Unity2D-Components](https://github.com/cmilr/Unity2D-Components)
 * [Open Source Unity Package Registry](https://openupm.com/)
 </div></div>
