@@ -567,12 +567,15 @@ Datasets are variables with data to experiment with.
 
 #### Math Matrices Functions
 
-* `t(m)`: transpose of a matrix
-* `solve(m)`: inverse of a matrix
+* `t(A)`: transpose of a matrix
+* `det(A)`: determinant of a matrix
+* `solve(A)`: inverse of a matrix
 * `solve(A,b)`: solve $Ax=b$
-* `diag(...)`: create a diagonal matrix
-* `m1 %*% m2`: scalar product
+* `diag(n)/diag(c(...))`: create a diagonal matrix
+* `A %*% B`: matrices product
 * `eigen(m)`: eigenvalues
+* `library('matlib');gaussianElimination(A, b)`: Gauss
+* `library('MASS'); fractions(A)`: convert to fractions
 </div><div>
 
 #### Analysis Functions

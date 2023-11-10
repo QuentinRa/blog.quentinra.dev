@@ -238,5 +238,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * `sync` command
+* `.local/share/Trash`
+* `.config`
 </div><div>
 </div></div>

@@ -1698,4 +1698,6 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * `getent` <sup>2</sup>: get an entry such as "passwd": `getent passwd` <small>(get entry)</small> instead of `cat /etc/passwd`
+* `dd if=/dev/zero of=bigfile bs=1M`
+* `jq '.x.y '`,`'a,b'`
 </div></div>
