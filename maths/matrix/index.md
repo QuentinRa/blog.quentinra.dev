@@ -156,7 +156,7 @@ $A / B$ is not possible, but you can do $A * B^{-1}$ <small>(inverse of a matrix
 </thead>
 <tbody>
 
-<tr><td>This is a diagonal matrix having $1$ on the diagonal, which mean we have $A_n * Id_n = Id_n * A_n = A_n$.</td></tr>
+<tr><td>This is a diagonal matrix having $1$ on the diagonal, which means we have $A_n * Id_n = Id_n * A_n = A_n$.</td></tr>
 
 </tbody></table>
 
@@ -262,11 +262,11 @@ A_{1,2}=\ \begin{pmatrix}
 </td>
 <td>
 
-This is a matrix equals to its transpose.
+This is a matrix equal to its transpose.
 </td>
 <td>
 
-This is a matrix whose inverse is equals to its transpose.
+This is a matrix whose inverse is equal to its transpose.
 </td>
 </tr>
 </tbody>
@@ -311,7 +311,7 @@ All values below the diagonal are 0, including the diagonal.
 
 Gauss can be used to solve a system represented as a matrix. The goal is to get a matrix with a strictly increasing number of zeros before the leading coefficients/pivots $p_i$; which are the first non-null values.
 
-The result of Gauss is called the row echelon form. It all leading coefficients are $1$ and there is only $0$ in their columns, the result is called a reduced row echelon form. Both are upper triangular matrices.
+The result of Gauss is called the row echelon form. If all leading coefficients are $1$ and there is only $0$ in their columns, the result is called a reduced row echelon form. Both are upper triangular matrices.
 
 <div class="overflow-auto">
 \[
@@ -328,7 +328,7 @@ p_2 * y = s_2' + \ldots
 </div>
 </div><div>
 
-The operations you can use are to transform the matrix are:
+The operations you can use to transform the matrix are:
 
 * Swapping two rows: $L_i \iff L_j$
 * Adding a row: $L_i = L_i + L_j$
@@ -391,7 +391,7 @@ To calculate the inverse, we can use:
 
 * **GAUSS** 🏔️: we work on two matrices $A_n$ and $I_n$. The goal is to transform $A_n$ to an identity matrix using Gauss. By repeating all operations we did on $A_n$ to $I_n$, we get $A_n^{-1}$.
 
-* **Cofactor Matrix** 🐔: we create a matrices of cofactors. We have more calculations, but each calculation is relatively simple.
+* **Cofactor Matrix** 🐔: we create a matrix of cofactors. We have more calculations, but each calculation is relatively simple.
 
 ➡️ See also: [Inverse Example](_examples/inverse.md).
 
