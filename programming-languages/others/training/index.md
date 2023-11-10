@@ -6,7 +6,8 @@
 
 **All**
 
-* [guru99](https://www.guru99.com/) <small>(too much :/)</small>
+* [the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge)
+* [guru99](https://www.guru99.com/) <small>(too many :/)</small>
 * [exercism](https://exercism.org/) <small>(C, C#, Go, Bash...)</small>
 * [studytonight](https://www.studytonight.com/library/) <small>(C, C++, Android...)</small> + Tests
 * [skillshare](https://www.skillshare.com/) <small>(non-programming topics)</small>
@@ -63,6 +64,7 @@
 * [knowledgehut](https://www.knowledgehut.com/tutorials) <small>(R, Node, Ionic, C#...)</small>
 * [gorails](https://gorails.com/) <small>(Ruby)</small>
 * [data-flair](https://data-flair.training/) <small>(Java, Python, Scala)</small>
+* [riptutorial](https://riptutorial.com/) <small>(???)</small>
 
 **No-code**
 
@@ -117,6 +119,7 @@
 * [moderncss](https://moderncss.dev/)+[smolcss](https://smolcss.dev/) <small>(👻, modern css)</small>
 * [dofactory](https://www.dofactory.com/) <small>(???)</small>
 * [sitepoint](https://www.sitepoint.com/) <small>(web, mobile...)</small>
+* [stackify](https://stackify.com/blog/) <small>(???)</small>
 
 **Blockchains focused**
 
@@ -135,11 +138,16 @@
 **Games**
 
 * [gamedevbeginner](https://gamedevbeginner.com/)
+* [danielilett](https://danielilett.com/)
 
 **News**
 
 * [rankred](https://www.rankred.com/)
 * [daily.dev](https://daily.dev/) (+[api](https://api.daily.dev/get?r=xxxx))
+
+**Special**
+
+* [monorepo](https://monorepo.tools/)
 </div><div>
 
 **Blogs**
@@ -185,6 +193,7 @@
 * [ppawar](https://ppawar.github.io/) <small>(???)</small>
 * [makeawebsitehub](https://makeawebsitehub.com/blog/) <small>(???)</small>
 * [lambdatest]https://www.lambdatest.com/blog/) <small>(Java, C#, PHP...)</small>
+* [techhyme](https://techhyme.com/) <small>(???)</small>
 
 **YouTube**
 
@@ -196,6 +205,9 @@
 * [developer-y](https://github.com/Developer-Y/cs-video-courses)
 * [build-your-own-x](https://github.com/codecrafters-io/build-your-own-x)
 * [Zero To Mastery](https://github.com/zero-to-mastery)
+* [Best-websites-a-programmer-should-visit](https://github.com/sdmg15/Best-websites-a-programmer-should-visit)
+* [Open Source Society University](https://github.com/ossu/computer-science)
+* [Awesome Tech Blogs](https://github.com/markodenic/awesome-tech-blogs)
 
 **Practice**
 

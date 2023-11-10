@@ -37,44 +37,10 @@ List of courses that have note which were not added yet.
 ## Random
 
 <div class="row row-cols-md-2"><div>
-
-```text!
-Websites
-https://dzone.com
-https://daily.dev
-https://serverguy.com
-https://daily-dev-tips.com/
-https://techhyme.com/
-https://nolongerset.com/
-https://reactgo.com/
-https://jameshfisher.com/
-https://techdirectarchive.com/
-https://rdr-it.com/en/
-https://www.kindsonthegenius.com/
-https://www.techopedia.com/
-https://devrescue.com/
-
-Gits
-https://github.com/trimstray/the-book-of-secret-knowledge
-https://github.com/sdmg15/Best-websites-a-programmer-should-visit
-https://github.com/ossu/computer-science
-https://github.com/markodenic/awesome-tech-blogs
-```
-
 </div><div>
 
 ```text!
 xxx.adoc
-
-https://github.com/mikeerickson/validatorjs
-https://localizejs.com/
-
-https://stackify.com/blog/
-https://zbib.org/
-https://github.com/myles/awesome-static-generators#documentation
-
-https://monorepo.tools/
-
 ---------------
 ----- SEO
 ---------------
