@@ -22,6 +22,16 @@ Creating Layers allows us to superpose tiles. In Unity, we create a Grid, and ea
 
 <hr class="sep-both">
 
+## Terrain
+
+<div class="row row-cols-lg-2"><div>
+
+A terrain is a game object used to create large outdoor realistic landscapes. It's used in 3D Levels.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -33,6 +43,14 @@ Stuff that I found, but never read/used yet.
 * Tilesets
 * Snaps
 * [Edgar for Unity](https://github.com/OndrejNepozitek/Edgar-Unity)
+* [MAST](https://fertile-soil-productions.itch.io/mast)
+
+Terrains:
+
+* Terrain settings: you may change material to legacy diffuse
+* Terrain Texture: add both the texture and its normal map. Target strength and opacity to put textures one above another
+* increase height (shift decrease) => soften
+* 5th icon is a tree, 6th is a leaf+leaf group?
 </div><div>
 
 Lighting

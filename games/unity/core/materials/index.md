@@ -45,8 +45,13 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-Material
+Materials
 
 * `smooth 0`
 </div><div>
+
+Textures
+
+* normal map, grayscale
+* 
 </div></div>
