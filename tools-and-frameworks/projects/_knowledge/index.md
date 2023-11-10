@@ -131,6 +131,25 @@ On each edge, we add the name and cost of a task.
 A critical path is a path of tasks that must not be delayed, otherwise, the whole project will be delayed. You can have more than one.
 
 In both methods, it's the path with tasks that have the same value for the early and last start time properties.
+
+#### Gantt chart
+
+Gantt is a chart that illustrates a project schedule over time.
+
+* [GanttProject](https://www.ganttproject.biz/download#download30) (software)
+* [office timeline](https://www.officetimeline.com/) (website)
+
+<details class="details-n">
+<summary>GanTTProject Notes</summary>
+
+1. list all steps
+2. sort and indent child tasks
+3. create dependencies
+4. set date and duration
+5. add milestones
+6. add your team
+7. attribute tasks to your teammates
+</details>
 </div></div>
 
 <hr class="sep-both">
