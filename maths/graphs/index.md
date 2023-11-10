@@ -54,7 +54,7 @@ For directed graphs, given $A \to B$:
 
 #### Subgraph $G'$
 
-A subgraph $G'$ is a graph formed from a subset of the vertices and edges of the graph $G$. An induced subgraph is a variant where we can only remove a vertex and their incident edges.
+A subgraph $G'$ is a graph formed from a subset of the vertices and edges of the graph $G$. An induced subgraph is a variant where we can only remove a vertex and its incident edges.
 
 #### Complement of a graph
 
@@ -64,7 +64,7 @@ The complement of a graph is a graph in which we are connecting all vertices tha
 
 #### Minor of a graph
 
-The minor of a graph $G$ is graph created under these constraints:
+The minor of a graph $G$ is a graph created under these constraints:
 
 * We can remove an edge
 * We can merge connected vertices
@@ -248,14 +248,14 @@ A spanning subgraph $G'$ of $G$ is a graph in which we removed edges. It means $
 
 📚 Let $G'$ be a $\tau$-equivalent of $G$. $G'$ is $\tau$-minimal $\tau$-equivalent if removing one edge makes it lose the $\tau$-equivalent property.  $\tau$-maximal $\tau$-equivalent is the same with "adding" one edge.
 
-📚 Let graph $G'$ be $\tau$-minimal $\tau$-equivalent of $G$. If we can't find another graph $G'$ with a fewer edges while still being $\tau$-minimal $\tau$-equivalent, then $G'$ is $\tau$-minimum $\tau$-equivalent <small>(resp. maximum)</small>.
+📚 Let graph $G'$ be $\tau$-minimal $\tau$-equivalent of $G$. If we can't find another graph $G'$ with fewer edges while still being $\tau$-minimal $\tau$-equivalent, then $G'$ is $\tau$-minimum $\tau$-equivalent <small>(resp. maximum)</small>.
 </div><div>
 
 #### Planar Graph
 
-A planar graph is a graph that could be drawn in such a way that no edges cross each other. 
+A planar graph is a graph that can be drawn in such a way that no edges cross each other. 
 
-A face is a surface of the graph delimited by edges. It can be bounded (finite) or external/outer/unbounded (infinite) face.
+A face is a surface of the graph delimited by edges. It can be a bounded (finite) or external/outer/unbounded (infinite) face.
 
 The bounds are a list of edges delimiting a face.
 
@@ -358,9 +358,9 @@ An eulerian graph is a connected graph where every edge is traversed exactly onc
 
 #### Hamiltonian graph
 
-An hamiltonian graph is a connected graph where every vertex is traversed exactly once in a (hamiltonian) path or cycle.
+A Hamiltonian graph is a connected graph where every vertex is traversed exactly once in a (Hamiltonian) path or cycle.
 
-📚 If there is an hamiltonian path but no hamiltonian cycle, the graph is said to be semi-hamiltonian.
+📚 If there is a Hamiltonian path but no Hamiltonian cycle, the graph is said to be semi-hamiltonian.
 
 **Algorithm**
 
@@ -488,7 +488,7 @@ A tree is a graph having one of these properties (they are equivalent)
 A spanning tree $T$ is a spanning subgraph that is a tree.
 
 * It does not exist if $G$ is disconnected
-* T is a partial connected and acyclic graph of G
+* T is a partially connected and acyclic graph of G
 * Removed edges are forming a cycle basis
 </div><div>
 
@@ -540,7 +540,7 @@ This algorithm is similar to Dijkstra's algorithm, but the weight can be either 
 
 You will have up to $|V|-1$ iterations. If you have an iteration with no changes, then the algorithm is done.
 
-The differences with Dijkstra are for $i+1$: each time we updated the shortest path, we check update every successor.
+The differences with Dijkstra are for $i+1$: each time we update the shortest path, we check and update every successor.
 </div><div>
 
 #### Floyd–Warshall Algorithm
@@ -557,7 +557,7 @@ Then, $\forall{k, i, j}$ to $n$, apply this instruction: if the distance i,j $d(
 
 #### Johnson's Algorithm
 
-Johnson algorithm makes use of both Bellman-Ford and Dijkstra's Algorithms. The shortest distance from $q$ to $X$ will be in $h[X]$.
+Johnson's algorithm makes use of both Bellman-Ford and Dijkstra's Algorithms. The shortest distance from $q$ to $X$ will be in $h[X]$.
 
 * we are adding a vertex $q$ to our graph
 * we are connecting this vertex to all vertices <small>(weight=0)</small>
