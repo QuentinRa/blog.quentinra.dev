@@ -21,7 +21,7 @@ We have $C_1=\{e,f,g\}$ and $C_2=\{a,b,c,d,h,i\}$ using the algorithm.
 
 #### Is the graph connected?
 
-No, we got more than one connected component.
+No, we have more than one connected component.
 </div><div>
 
 #### Create a subgraph $G'$ with $\text{\{a,b,c,d\}}$.
@@ -32,7 +32,7 @@ We extract the vertices and their edges.
 
 #### Is $G'$ connected? And super-connected?
 
-We got only one component, so the graph is connected. The graph does seem to be super-connected. We apply the algorithm:
+We only have one component, so the graph is connected. The graph does seem to be super-connected. We apply the algorithm:
 
 <div class="overflow-scroll mb-3">
 
@@ -136,7 +136,7 @@ The first graph is planar because it's $K_5$.
 
 ##### Planar Graph Example Graph 2
 
-The second one is planar as it as at least one planar representation.
+The second one is planar as it has at least one planar representation.
 
 ![Planar 1 Graph 1](../_images/planar/planar1-2.png)
 
@@ -157,11 +157,11 @@ The fourth graph $m=12 \le 6 * 3 - 5 \le 13$, so the graph is planar. Simply mov
 
 ##### Planar Graph Example Graph 5
 
-All degrees are equals to $6$, so the graph is not planar. Alternatively, we could have used the formula $m < 3n - 5$.
+All degrees are equal to $6$, so the graph is not planar. Alternatively, we could have used the formula $m < 3n - 5$.
 
 ##### Planar Graph Example Graph 6
 
-We can merge vertices and get the minor of the graph which is $K_6$. If we remove any vertex, we got the subgraph $K_5$. As per Robertson–Seymour theorem, it's not a planar graph.
+We can merge vertices and get the minor of the graph which is $K_6$. If we remove any vertex, we get the subgraph $K_5$. As per Robertson–Seymour theorem, it's not a planar graph.
 
 ![Planar Graph Invalid 2](../_images/planar/planar1-5.png)
 </div></div>

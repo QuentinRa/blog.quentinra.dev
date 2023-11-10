@@ -6,7 +6,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-Use Welsh-Powell greedy algorithm and find the coloration for the following graph. Is it the optimal solution?
+Use the Welsh-Powell greedy algorithm and find the coloration for the following graph. Is it the optimal solution?
 
 ![Vertex coloring Greedy algorithm Example Graph](../_images/coloring/coloring1.png)
 
@@ -45,7 +45,7 @@ Use the contraction algorithm to find a coloration for this graph:
 ![Vertex coloring Contraction Algorithm Example Graph](../_images/coloring/coloring2.png)
 </div><div>
 
-We got 4 missing edges, so we will have up to $2^4=16$ subgraphs. We are missing the following edges: $[c,b], [d,b], [e,b], [c,f]$.
+We have 4 missing edges, so we will have up to $2^4=16$ subgraphs. We are missing the following edges: $[c,b], [d,b], [e,b], [c,f]$.
 
 ![Vertex coloring Contraction Algorithm Example Graph Corrected](../_images/coloring/coloring2-1.png)
 </div></div>
