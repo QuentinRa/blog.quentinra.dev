@@ -44,7 +44,7 @@ Sitemap: URL/sitemap.xml
 
 #### Canonical URLs
 
-It could be that two URLs are actually the same page. For instance, `https://example.com` and `https://example.com/index.php`. You need to tell search engines that the former is the same as the later. For both, you need to return the same canonical URL.
+It could be that two URLs are leading to the same page. For instance, `https://example.com` and `https://example.com/index.php`. You need to inform search engines, by setting the same canonical URL for both.
 
 ```php!
 header("Link: <https://example.com/index.php>; rel=\"canonical\"");
@@ -73,19 +73,19 @@ header("Link: <https://example.com/index.php>; rel=\"canonical\"");
 
 #### Descriptions
 
-You should write a good and unique description of your pages. The size displayed in the results is usually 110 characters (mobile), and around 130 on a computers.
+You should write a good and unique description of your pages. The size displayed in the results is usually 110 characters (mobile), and around 130 on a computer.
 
 <br>
 
 #### URL/sitemap.xml
 
-➡️ Ensure the search engine crawlers properly index your website. Provide additional information on resources such as videos/images... The format is an XML file, you can these to generate one on
+➡️ Ensure the search engine crawlers properly index your website. Provide additional information on resources such as videos/images... The format is an XML file, you can these to generate one on:
 
 * <https://www.xml-sitemaps.com/> (max. 500 pages)
 * <https://www.sitemapgenie.com/> (no limit, or it seems so)
 * You can find some tools on GitHub
 
-Once you created a sitemap, you have to share it, as explained [here](https://ahrefs.com/blog/submit-website-to-search-engines/).
+After creating a sitemap, you have to share it, as explained [here](https://ahrefs.com/blog/submit-website-to-search-engines/).
 
 <details class="details-n">
 <summary>Example</summary>
