@@ -88,12 +88,45 @@ You must evaluate the risks that may occur and determine how to handle them. It 
 
 <hr class="sep-both">
 
+## Project Scheduling
+
+<div class="row row-cols-lg-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Project Tools
+
+<div class="row row-cols-lg-2"><div>
+
+#### Project Management Tools
+
+* [Redmine](https://www.redmine.org/)
+</div><div>
+
+#### Bug And Issues Management Tools
+
+* [YouTrack](https://www.jetbrains.com/youtrack/) (JetBrains)
+* [Jira](https://www.atlassian.com/software/jira) (Atlassian)
+* [GitHub Issues](https://github.com/features/issues), [GitLab Issues](https://docs.gitlab.com/ee/user/project/issues/), etc.
+* [Redmine](https://www.redmine.org/)
+* ...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* [_old](_old.md)
+* Steering Meetings: for key stakeholders and decision-makers to provide guidance and direction for a project
+* Periodic Meetings: at regular intervals, discuss ongoing work/challenges/progress.
 </div><div>
 </div></div>
