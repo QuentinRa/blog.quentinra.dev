@@ -134,6 +134,17 @@ private void OnMouseExit() {}
 ```
 </div><div>
 
+#### Hold Events
+
+You may use the following interfaces:
+
+```cs
+using UnityEngine.EventSystems;
+
+public class XXX : 
+    IPointerUpHandler, IPointerDownHandler {}
+```
+
 #### Drag Events
 
 You may use the following interfaces:
@@ -145,4 +156,18 @@ public class XXX :
     IDragHandler, IBeginHandler, IEndDragHandler,
     IPointerEnterHandler IPointerExitHandler {}
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+```cs
+EventSystem.current.IsMouseOverGameObject()
+```
+</div><div>
 </div></div>

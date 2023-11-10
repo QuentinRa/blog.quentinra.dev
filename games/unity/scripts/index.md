@@ -376,6 +376,65 @@ private enum Axis
 
 <hr class="sep-both">
 
+## Console Logs 📺
+
+<div class="row row-cols-lg-2"><div>
+
+The console is a tab of the Project window. You can clear the console with `clear`. From the code, we can print logs in the console using:
+
+* Normal Logs (Debug)
+
+```cs
+Debug.Log("message");
+Debug.Log("<color=red>Warning!</color>");
+Debug.Log($"$(variable)");
+Debug.LogFormat("{0}", variable);
+// <color=#cd542a>, <b></b>, <i></i>, <size=25></size>
+```
+
+* Warnings
+
+```cs
+Debug.LogWarning("warning");
+```
+
+* Errors
+
+```cs
+Debug.LogError("error");
+```
+</div><div>
+
+* Pause The Game
+
+```cs
+Debug.Break();
+```
+
+* Assert Condition Is True
+
+```cs
+Debug.Assert(condition, "message");
+```
+
+Debug slows the game as it saves logs to a file too ⚠️. A common practice is to wrap them in a conditional compilation clock:
+
+```cs
+#if UNITY_EDITOR
+Debug.Log("message");
+#endif
+```
+
+We usually create a Logging class to handle that logic. We can disable logging from the code:
+
+```cs
+Debug.unityLogger.logEnabled = false;
+Debug.unityLogger.logEnabled = Debug.isDebugBuild;
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Coding Conventions
 
 <div class="row row-cols-lg-2"><div>
@@ -451,40 +510,6 @@ Don't call `GetComponent<T>()` often. Do it once.
 
 <hr class="sep-both">
 
-## Random Notes
-
-<div class="row row-cols-lg-2"><div>
-
-#### Console Logs 📺
-
-The console is a tab of the Project window. You can clear the console with `clear`. From the code, we can print logs in the console using:
-
-* Normal Logs (Debug)
-
-```cs
-Debug.Log("message");
-Debug.Log("<color=red>Warning!</color>");
-Debug.Log($"$(variable)");
-```
-
-* Warnings
-
-```cs
-Debug.LogWarning("warning");
-```
-
-* Errors
-
-```cs
-Debug.LogError("error");
-```
-
-⚠️ Debug slows the game as it save logs to a file too.
-</div><div>
-</div></div>
-
-<hr class="sep-both">
-
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -496,7 +521,7 @@ Stuff that I found, but never read/used yet.
 * [MenuItem](https://docs.unity3d.com/ScriptReference/MenuItem.html): toolbar
 * [CreateAssetMenu](https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html) (ScriptableObject): asset list
 * [CanEditMultipleObjects](https://docs.unity3d.com/ScriptReference/CanEditMultipleObjects.html): can be set when selecting multiple game objects
-* Icons for scripts https://github.com/halak/unity-editor-icons
+* [Icons for scripts](https://github.com/halak/unity-editor-icons)
 
 ```cs
 MonoBehavior#OnEnable

@@ -109,5 +109,7 @@ Stuff that I found, but never read/used yet.
 
 * [UI Builder](https://www.youtube.com/watch?v=NQYHIH0BJbs&ab_channel=CocoCode): new way to build interfaces
 * TextMeshPro to write text as a game object
+* Button: navigation "automatic"/visualize
+* Image: type "Filled", fill amount, slider
 </div><div>
 </div></div>
