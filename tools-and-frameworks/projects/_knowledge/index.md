@@ -102,45 +102,35 @@ For each component, we usually add a duration, a cost, and optionally the result
 
 #### Scheduling Problems
 
-...
+Given a list of tasks and their dependencies, and the duration for each task, we want to create the best schedule.
 
-#### Metra potential method
+Each task has the following properties:
 
-* first, create a graph of all of your tasks
-* the tasks are linked with edges having a weight which is the duration of the task
-* We are usually starting at a node called START, and ending at a node called END
+* Early start time
+* Last start time
+* Free margin (optional)
+* Total margin (optional)
 
-The task (nodes) will have properties
+Remove redundant transitive arrows. If we have $A \to C$, $C \to D$, and $A \to D$, we only need to keep $A \to C \to D$.
 
-* early start time
-* last start time
-* free margin (optional)
-* total margin (optional)
-
-**Note**: You may have some cases of **redundancy** like C is dependent on A, and D is dependent on C and A. You must remove $A \to D$ because we got by transitivity since we have $A \to C \to D$.
+📚 In practice, we don't have the capability of having an unlimited number of tasks in parallel.
 </div><div>
+
+#### Metra Potential Method
+
+Create a [graph](/maths/graphs/index.md) with all tasks. The arrows are weighted with the duration of each task. 
 
 #### P.E.R.T.
 
-In the P.E.R.T. method, the vertices aren't the tasks anymore, they are the states of our project. When you're doing a task, you're moving your project in another state. A task that needs other tasks, will now be depending on the state of the project where the do tasks got tackled.
+We will create a [graph](/maths/graphs/index.md). The vertices are an ordered set of numbers representing the states of the project, and each edge is a task.
 
-* we got nodes like 1, 2, 3, ... that are the states of our project (1 may not be before 2)
-* they have properties
-  * early start time
-  * last start time
-  * free margin (optional)
-  * total margin (optional)
-* we have a node START
-* we have a node END
+On each edge, we add the name and cost of a task.
 
-From one state of your project (START), you may do some tasks like A and B. In P.E.R.T., this is 2 states (1 and 2), and on each edge ($START \to 1$, and $START \to 2$), we will put
+#### Critical path analysis
 
-* the name of the task
-* the cost of the task
+A critical path is a path of tasks that must not be delayed, otherwise, the whole project will be delayed. You can have more than one.
 
-But, if the task "C" is dependent on "A" and "B", this is the same as being dependent on state 1 and state 2. What we do is adding a directed dotted arrow $1 \to 2$ (or $2 \to 1$) with the duration $0$. Then we start the edge with $C(cost)$ from $1$ (resp. $2$, up to the one you picked) giving us $2 \to 3$ (resp. $1 \to 3$).
-
-**Note**: You may have some cases of **redundancy** like C is dependent on A, and D is dependent on C and A. You must remove $A \to D$ because we got it by transitivity since we have $A \to C \to D$.
+In both methods, it's the path with tasks that have the same value for the early and last start time properties.
 </div></div>
 
 <hr class="sep-both">
