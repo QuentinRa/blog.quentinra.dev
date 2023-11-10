@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-Starting developing a video game from scratch is a bad idea. Most video games are sharing the same base that can be reused.
+Starting developing a video game from scratch is a bad idea. Most video games share the same base that can be reused.
 
 A game engine will deal with a lot of things related to the hardware <small>(sound, io, graphics)</small> and let us focus on our game <small>(quests, inventory, levels)</small>.
 
@@ -14,7 +14,7 @@ Picking a game engine is usually a choice based on:
 * The price and/or the license constraints ✨
 * The community, support, and documentation 📚
 
-Some developpers are building frameworks and tools on top of game engines called game templates. For example, [MoreMountains](https://moremountains.com/unity-assets).
+Some developers are building frameworks and tools on top of game engines called game templates. For example, [MoreMountains](https://moremountains.com/unity-assets).
 
 </div><div class="text-center">
 
@@ -59,7 +59,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * 9patches technique
-* 2D Tile maps
+* 2D Tilemaps
 </div><div>
 
 Game Engines

@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-Video games are complex and involves multiple disciplines.
+Video games are complex and involve multiple disciplines.
 
 * Game Design ✍️ <small>(mechanics, rules, story, etc.)</small>
 * Level Design 🗺️ <small>(layouts, areas, interactions, etc.)</small>
@@ -14,7 +14,7 @@ Video games are complex and involves multiple disciplines.
 There are many tools and online resources that leverage the process of making a game, allowing independent developers to publish their games. They mostly use the [itch.io](https://itch.io/) platform.
 </div><div>
 
-Many projects are cancelled, especially games. 
+Many projects are canceled, especially games.
 
 * 🕹️ Always have a working version for others to test it
 * 🗺️ Do the minimum first, don't try to do everything at once
