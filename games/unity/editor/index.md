@@ -316,7 +316,7 @@ Stuff that I found, but never read/used yet.
 * Constraints
 * Burst
 * Recorder
-* Shader Graph
+* Shader Graph + [Shaders](https://github.com/adrian-miasik/unity-shaders)
 * Unity Remote 5 (Editor > Device)
 * [Unity-Editor-Toolbox](https://github.com/arimger/Unity-Editor-Toolbox)
 * [Open Source Unity Package Registry](https://openupm.com/)
