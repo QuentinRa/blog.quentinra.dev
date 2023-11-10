@@ -188,6 +188,12 @@ Stuff that I found, but never read/used yet.
 
 * Steering Meetings: for key stakeholders and decision-makers to provide guidance and direction for a project
 * Periodic Meetings: at regular intervals, discuss ongoing work/challenges/progress.
+
+Others
+
+* Trendline, 45-Degree Line
+* Lean Canvas
+* Slack, Notion
 </div><div>
 
 Keywords and formulas for scheduling
@@ -196,4 +202,13 @@ Keywords and formulas for scheduling
 * "normal time estimate" instead of free margin
 * "pessimistic time estimate" instead of certain margin
 * see deleted examples
+
+Env
+
+* Formation
+* Prod
+* Pre-prod (test with prod data)
+* integration (with other software/...)
+* quality control (functional)
+* dev (continuous integration=>send your work=>tests=>deploy to envs=>continuous deployment)
 </div></div>
