@@ -50,6 +50,62 @@ Run the Gradle task <kbd>Run Plugin</kbd> and see if your plugin is in the list 
 
 <hr class="sep-both">
 
+## Defining File Types
+
+<div class="row row-cols-lg-2"><div>
+
+Add a `fileType` with all information that is also defined in the class `com.ocaml.ide.files.OCamlFileType`.
+
+```xml!
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- FILES -->
+        <fileType extensions="ml" hashBangs="ml" name="OCaml File" language="OCaml"
+                  fieldName="INSTANCE" implementationClass="com.ocaml.ide.files.OCamlFileType"/>
+    </extensions>
+```
+
+You may have to define the language of the file:
+
+```kt
+import com.intellij.lang.Language
+
+object OCamlLanguage : Language("OCaml") {
+    private fun readResolve(): Any = OCamlLanguage
+    override fun getDisplayName(): String = "OCaml"
+    override fun isCaseSensitive(): Boolean = true
+}
+```
+
+🍰 You should see an icon in files having the selected extension.
+</div><div>
+
+Using variables for the extension is not needed, but it's useful if we need this information in other classes.
+
+```kt
+import com.intellij.openapi.fileTypes.LanguageFileType
+import com.ocaml.OCamlBundle
+import com.ocaml.icons.OCamlIcons
+import javax.swing.Icon
+
+object OCamlFileType : LanguageFileType(OCamlLanguage) {
+    // Extension-Related Constants
+    private const val DEFAULT_EXTENSION = "ml"
+    private const val DOT_DEFAULT_EXTENSION = ".$DEFAULT_EXTENSION"
+
+    // LanguageFileType implementation
+    override fun getName(): String  = "OCaml File"
+    override fun getDescription(): String = OCamlBundle.message("filetype.ml.description")
+    override fun getDefaultExtension(): String = DEFAULT_EXTENSION
+    override fun getIcon(): Icon = OCamlIcons.FileTypes.OCAML_SOURCE
+    override fun getDisplayName(): String  = description
+}
+```
+
+⚠️ There is no `INSTANCE` in the Kotlin Class as it's a static object.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -57,5 +113,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [old](_old.md)
+* versions + multiple versions + different IDEs
 </div><div>
 </div></div>
