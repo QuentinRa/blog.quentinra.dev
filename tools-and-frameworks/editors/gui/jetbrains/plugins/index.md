@@ -165,6 +165,38 @@ object OCamlFileType : LanguageFileType(OCamlLanguage) {
 
 <hr class="sep-both">
 
+## Parser and Lexer
+
+<div class="row row-cols-lg-2"><div>
+
+This section is the **hardest** ⚠️. We need to define the syntax of our language inside a `.bnf` file, such as `OCaml.bnf`.
+
+```json!
+{
+  [...]
+   tokens=[
+        AND = "and"
+        [...]
+   ]
+}
+
+ocamlFile ::= structure
+[...]
+```
+
+While it may not be accurate,
+
+* A file, a keyword, a literal, etc. are **elements** of the language
+* Int, New, String, etc. are **tokens** of the language
+
+We first need to define the list of tokens. Then, you have to elements that will use these tokens. For instance, a statement such as `let x = 5` is defined as a keyword <small>(token `let`)</small>, a name <small>(token `LIDENT`)</small>, an assignment operator <small>(token `=`)</small> and an expression <small>(a literal, a number, `5`)</small>.
+</div><div>
+
+Assuming you managed to write a syntax file, right-click on it to generate both the parser code and the lexer file. 
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
