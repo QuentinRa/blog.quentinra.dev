@@ -176,6 +176,7 @@ This section is the **hardest** ⚠️. We need to define the syntax of our lang
   [...]
    tokens=[
         AND = "and"
+        NUMBER='regexp:\d+'
         [...]
    ]
 }
@@ -186,13 +187,31 @@ ocamlFile ::= structure
 
 While it may not be accurate,
 
-* A file, a keyword, a literal, etc. are **elements** of the language
-* Int, New, String, etc. are **tokens** of the language
+* A file, a keyword, a literal, etc. are elements of the language
+* Int, New, String, etc. are tokens of the language
 
 We first need to define the list of tokens. Then, you have to elements that will use these tokens. For instance, a statement such as `let x = 5` is defined as a keyword <small>(token `let`)</small>, a name <small>(token `LIDENT`)</small>, an assignment operator <small>(token `=`)</small> and an expression <small>(a literal, a number, `5`)</small>.
 </div><div>
 
-Assuming you managed to write a syntax file, right-click on it to generate both the parser code and the lexer file. 
+Right-click on the BNF syntax file to generate both the parser code and the lexer file. From the lexer file, you can further define how the parser will handle each token. It can handle "complex tokens":
+
+* Integers <small>(5, 0x5, 0X5, 0xF, etc.)</small>
+* Floats <small>(5., 5.0, 0x9.5, etc.)</small>
+* Chars <small>(escape characters, etc.)</small>
+* Strings <small>(multilines string, '' and "", escape characters, etc.)</small>
+* Comments <small>(Multiline comments, documentation comments, etc.)</small>
+
+Right-click on the lexer file to generate a Lexer.
+
+📚 Having the list of tokens is enough to get started with the lexer, but you should create a "temporary" element with every token.
+
+👉 We don't use the lexer directly, create an adapter. It should have the path package path as generated lexer class.
+
+```kt
+import com.intellij.lexer.FlexAdapter // generated
+
+class OCamlLexerAdapter : FlexAdapter(_OCamlLexer(null))
+```
 </div></div>
 
 <hr class="sep-both">
