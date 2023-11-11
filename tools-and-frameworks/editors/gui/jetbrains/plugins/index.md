@@ -191,7 +191,6 @@ While it may not be accurate,
 * Int, New, String, etc. are tokens of the language
 
 We first need to define the list of tokens. Then, you have to elements that will use these tokens. For instance, a statement such as `let x = 5` is defined as a keyword <small>(token `let`)</small>, a name <small>(token `LIDENT`)</small>, an assignment operator <small>(token `=`)</small> and an expression <small>(a literal, a number, `5`)</small>.
-</div><div>
 
 Right-click on the BNF syntax file to generate both the parser code and the lexer file. From the lexer file, you can further define how the parser will handle each token. It can handle "complex tokens":
 
@@ -200,6 +199,7 @@ Right-click on the BNF syntax file to generate both the parser code and the lexe
 * Chars <small>(escape characters, etc.)</small>
 * Strings <small>(multilines string, '' and "", escape characters, etc.)</small>
 * Comments <small>(Multiline comments, documentation comments, etc.)</small>
+</div><div>
 
 Right-click on the lexer file to generate a Lexer.
 
@@ -211,6 +211,35 @@ Right-click on the lexer file to generate a Lexer.
 import com.intellij.lexer.FlexAdapter // generated
 
 class OCamlLexerAdapter : FlexAdapter(_OCamlLexer(null))
+```
+
+We must then link all classes using from `ParserDefinition`:
+
+```kt
+internal class OCamlParserDefinition : ParserDefinition {
+    override fun createLexer(project: Project?): Lexer = OCamlLexerAdapter()
+    override fun getCommentTokens(): TokenSet = ParserDefinitionUtils.COMMENTS
+    override fun getStringLiteralElements(): TokenSet = ParserDefinitionUtils.STRINGS
+    override fun createParser(project: Project?): PsiParser = OCamlParser()
+    override fun getFileNodeType(): IFileElementType = ParserDefinitionUtils.FILE
+    override fun createFile(viewProvider: FileViewProvider): PsiFile = OCamlFile(viewProvider)
+    override fun createElement(node: ASTNode?): PsiElement = OCamlTypes.Factory.createElement(node)
+
+    object ParserDefinitionUtils {
+        val FILE = IFileElementType(OCamlLanguage)
+        val COMMENTS = TokenSet.create(OCamlTypes.COMMENT)
+        val STRINGS = TokenSet.create(OCamlTypes.STRING_VALUE)
+    }
+}
+```
+
+And link it inside the Manifest.
+
+```xml!
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- PARSER -->
+        <lang.parserDefinition language="OCaml" implementationClass="com.ocaml.language.parser.OCamlParserDefinition"/>
+    </extensions>
 ```
 </div></div>
 
