@@ -1,18 +1,5 @@
 # IntelliJ Platform Plugin SDK
 
-<div class="row row-cols-lg-2"><div>
-
-These notes are an additional support to the documentation. More of my notes are from my plugin ([intellij-ocaml](https://github.com/QuentinRa/intellij-ocaml)).
-
-The best way to learn is to see how others implemented the API <small>("extension points")</small>: [intellij-platform-explorer](https://plugins.jetbrains.com/intellij-platform-explorer/extensions) 👑.
-</div><div>
-
-* 🌍 [Documentation](https://plugins.jetbrains.com/docs/intellij/welcome.html)
-* 🚀 [Examples](https://github.com/JetBrains/intellij-sdk-code-samples)
-* 🪨 [Template](https://github.com/JetBrains/intellij-platform-plugin-template)
-* 🤗 [Forum](https://intellij-support.jetbrains.com/hc/en-us/community/topics/200366979-IntelliJ-IDEA-Open-API-and-Plugin-Development)
-</div></div>
-
 <hr class="sep-both">
 
 ## Important files
@@ -225,6 +212,15 @@ Stuff that I found, but never read/used yet.
 * [Gradle IntelliJ Plugin](https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html) + [IntelliJ Platform Configuration](https://plugins.jetbrains.com/docs/intellij/configuring-plugin-project.html#intellij-platform-configuration)
 * [Using kotlin](https://plugins.jetbrains.com/docs/intellij/using-kotlin.html)
 * Enabling Auto-Reload
+* .form
 </div><div>
 
+```kotlin
+MyBundle.message("applicationService")
+MyBundle.message("projectService", project.name)
+
+System.getenv("CI")
+
+project.service<MyProjectService>()
+```
 </div></div>
