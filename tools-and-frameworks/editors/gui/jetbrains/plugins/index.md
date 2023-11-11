@@ -50,6 +50,65 @@ Run the Gradle task <kbd>Run Plugin</kbd> and see if your plugin is in the list 
 
 <hr class="sep-both">
 
+## Basic Utilities
+
+<div class="row row-cols-lg-2"><div>
+
+#### Icons
+
+Create a class to centralize access to icons. 
+
+Useful links: [Working with Icons and Images](https://plugins.jetbrains.com/docs/intellij/work-with-icons-and-images.html),  [IntelliJ Platform UI Guidelines](https://jetbrains.design/intellij/principles/icons/), [IntelliJ Platform Icons](https://intellij-icons.jetbrains.design/),  [intellij-icon-generator](https://github.com/bjansen/intellij-icon-generator).
+
+```kt
+/**
+ * @see com.intellij.icons.AllIcons
+ * @see com.intellij.icons.AllIcons.FileTypes
+ * @see com.intellij.icons.AllIcons.General
+ * @see com.intellij.icons.AllIcons.Gutter
+ * @see com.intellij.icons.AllIcons.Nodes
+ */
+ object OCamlIcons {
+    private fun loadIcon(path: String): Icon {
+        return IconLoader.getIcon(path, OCamlIcons::class.java)
+    }
+
+    object FileTypes {
+        val OCAML_SOURCE = loadIcon("/icons/mlFile.svg")
+    }
+}
+```
+</div><div>
+
+#### Bundle
+
+IntelliJ recommends avoiding hard-coded texts, mostly are they may be [translated](https://plugins.jetbrains.com/docs/intellij/localization-guide.html). We store translatable strings in a file, and access them from the code:
+
+```kt
+import com.intellij.DynamicBundle
+import org.jetbrains.annotations.PropertyKey
+
+private const val BUNDLE = "messages.OCamlBundle"
+
+// ex: OCamlBundle.message("filetype.ml.description")
+object OCamlBundle : DynamicBundle(BUNDLE) {
+    fun message(@PropertyKey(resourceBundle = BUNDLE) key: String,
+                vararg params: Any): String {
+        return getMessage(key, *params)
+    }
+}
+```
+
+With `src/main/resources/messages/OCamlBundle.properties`:
+
+```ini!
+# Filetype
+filetype.ml.description=OCaml file
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Defining File Types
 
 <div class="row row-cols-lg-2"><div>
