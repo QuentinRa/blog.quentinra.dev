@@ -171,6 +171,9 @@ object OCamlFileType : LanguageFileType(OCamlLanguage) {
 
 JetBrains uses the [Backus–Naur form](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form) (BNF) language to define the parsing rules of a language. We create a `.bnf` syntax file, such as `OCaml.bnf`, and use [JetBrains Grammar-Kit](https://github.com/JetBrains/Grammar-Kit) to generate a parser from it.
 
+* [Grammar Kit Overview](https://github.com/JetBrains/Grammar-Kit/blob/master/TUTORIAL.md)
+* [Grammar Kit How To](https://github.com/JetBrains/Grammar-Kit/blob/master/HOWTO.md)
+
 This section is the **hardest** ⚠️. The [OCaml Manual](https://v2.ocaml.org/releases/4.14/htmlman/lex.html) along the [extended](https://v2.ocaml.org/releases/4.14/htmlman/extn.html) page describe language elements and explanations in a BNF-like format, which you may use as a reference.
 
 ```kt
@@ -190,7 +193,46 @@ expression ::= { A ";" B } * // must quote characters
 another_expression ::= [A B]
 | (A | B)* // Alternative to braces
 ```
+
+⚠️ An element can reference itself as long as there is no "left recursive" call, e.g. the first element is not itself.
+
+⚠️ Some elements may be handled in the [Lexer](#lexer).
 </div><div>
+
+At the start of the file, we may configure the parser generation, the lexer file generation, and create tokens.
+
+```json!
+{
+    // Parser class
+    parserClass="com.xxx.OCamlParser"
+    extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+    // Generated class with all elements+tokens instances
+    elementTypeHolderClass="com.ocaml.language.psi.OCamlTypes"
+
+    // Generated files prefix/suffix
+    psiClassPrefix="OCaml"
+    psiImplClassSuffix="Impl"
+    // Where to store generated files
+    psiPackage="com.ocaml.language.psi"
+    psiImplPackage="com.ocaml.language.psi.impl"
+
+    // Base classes for elements/tokens
+    elementTypeClass="com.ocaml.language.psi.OCamlElementType"
+    tokenTypeClass="com.ocaml.language.psi.OCamlTokenType"
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Lexical Analysis
+
+<div class="row row-cols-lg-2"><div>
+
+...
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">
