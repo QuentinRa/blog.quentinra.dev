@@ -165,6 +165,36 @@ object OCamlFileType : LanguageFileType(OCamlLanguage) {
 
 <hr class="sep-both">
 
+## Language Parsing
+
+<div class="row row-cols-lg-2"><div>
+
+JetBrains uses the [Backus–Naur form](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form) (BNF) language to define the parsing rules of a language. We create a `.bnf` syntax file, such as `OCaml.bnf`, and use [JetBrains Grammar-Kit](https://github.com/JetBrains/Grammar-Kit) to generate a parser from it.
+
+This section is the **hardest** ⚠️. The [OCaml Manual](https://v2.ocaml.org/releases/4.14/htmlman/lex.html) along the [extended](https://v2.ocaml.org/releases/4.14/htmlman/extn.html) page describe language elements and explanations in a BNF-like format, which you may use as a reference.
+
+```kt
+// Left: an element of the language
+// Right: how the element is structured
+file ::= expressions*
+
+// Braces can be used to group tokens
+// "?" means the expression is optional
+// "*" means "0+" times the expression
+// "+" means "1+" times the expression
+// "|" is an alternative structure
+expression ::= { A ";" B } * // must quote characters
+| another_expression // Reference another element
+
+// Brackets can be used to group an optional sequence
+another_expression ::= [A B]
+| (A | B)* // Alternative to braces
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Parser and Lexer
 
 <div class="row row-cols-lg-2"><div>
