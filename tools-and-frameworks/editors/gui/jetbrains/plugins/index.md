@@ -187,25 +187,25 @@ file ::= expressions*
 // "+" means "1+" times the expression
 // "|" is an alternative structure
 expression ::= { A ";" B } * // must quote characters
+| (A | B)*           // Alternative to braces
 | another_expression // Reference another element
 
 // Brackets can be used to group an optional sequence
 another_expression ::= [A B]
-| (A | B)* // Alternative to braces
+| (A B)?            // Alternative to brackets
 ```
 
 ⚠️ An element can reference itself as long as there is no "left recursive" call, e.g. the first element is not itself.
 
-⚠️ Some elements may be handled in the [Lexer](#lexer).
+⚠️ The parser is applied on the [Lexed](#lexical-analysis) tokens!
 </div><div>
 
-At the start of the file, we may configure the parser generation, the lexer file generation, and create tokens.
+At the start of the file, we may configure the parser generation.
 
 ```json!
 {
     // Parser class
     parserClass="com.xxx.OCamlParser"
-    extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
     // Generated class with all elements+tokens instances
     elementTypeHolderClass="com.ocaml.language.psi.OCamlTypes"
 
@@ -216,11 +216,57 @@ At the start of the file, we may configure the parser generation, the lexer file
     psiPackage="com.ocaml.language.psi"
     psiImplPackage="com.ocaml.language.psi.impl"
 
-    // Base classes for elements/tokens
+    // Base classes for elements/tokens instances
+    // That we can access from the "elementTypeHolderClass"
     elementTypeClass="com.ocaml.language.psi.OCamlElementType"
     tokenTypeClass="com.ocaml.language.psi.OCamlTokenType"
 }
 ```
+
+<details class="details-n">
+<summary>Examples of Custom TypeClass</summary>
+
+```kt!
+// Elements are Composite Elements
+// elementTypeClass="com.ocaml.language.psi.OCamlElementType"
+class OCamlElementType(debugName: String) : IElementType(debugName, OCamlLanguage), ICompositeElementType {
+    override fun createCompositeNode(): ASTNode {
+        return OCamlTypes.Factory.createElement(this)
+    }
+}
+```
+```kt!
+// Tokens are IElementType tokens 
+// tokenTypeClass="com.ocaml.language.psi.OCamlTokenType"
+class OCamlTokenType(debugName: String) : IElementType(debugName, OCamlLanguage)
+```
+</details>
+
+All elements extend `PsiElement`, but you can use your own class:
+
+```kt
+// implements='com.ocaml.language.psi.api.OCamlElement'
+interface OCamlElement : PsiElement, UserDataHolderEx
+```
+
+All implementations extend `ASTWrapperPsiElement`, but you can use your own class:
+
+```
+// extends='com.ocaml.language.psi.api.OCamlElementImpl'
+abstract class OCamlElementImpl(type: IElementType) : CompositePsiElement(type)
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Parsing Elements
+
+<div class="row row-cols-lg-2"><div>
+
+By default, a class will be generated for each **public**
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">
