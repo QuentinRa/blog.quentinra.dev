@@ -387,7 +387,26 @@ internal class OCamlParserDefinition : ParserDefinition {
     }
 }
 ```
+
+📚 Add to `getCommentTokens()` any token that must be ignored by the parser, e.g., treated as a comment.
+
+⚠️ Use `OCamlTypes.Factory.createElement(node.elementType)` when using `CompositePsiElement`.
 </div><div>
+
+The OCamlFile class:
+
+```
+import com.intellij.extapi.psi.PsiFileBase
+import com.intellij.openapi.fileTypes.FileType
+import com.intellij.psi.FileViewProvider
+import com.ocaml.ide.files.OCamlFileType
+import com.ocaml.ide.files.OCamlLanguage
+
+class OCamlFile(viewProvider: FileViewProvider) : PsiFileBase(viewProvider, OCamlLanguage) {
+    override fun getFileType(): FileType = OCamlFileType
+    override fun toString(): String = "OCaml File"
+}
+```
 
 Add to the Manifest:
 
@@ -397,10 +416,88 @@ Add to the Manifest:
         <lang.parserDefinition language="OCaml" implementationClass="com.ocaml.language.parser.OCamlParserDefinition"/>
     </extensions>
 ```
+</div></div>
 
-📚 Add to `getCommentTokens()` any token that must be ignored by the parser, e.g., treated as a comment.
+<hr class="sep-both">
 
-⚠️ Use `OCamlTypes.Factory.createElement(node.elementType)` when using `CompositePsiElement`.
+## Advanced BNF Grammar File
+
+<div class="row row-cols-lg-2"><div>
+
+You can use an utility class for the implementations.
+
+```json!
+{
+    psiImplUtilClass="com.ocaml.language.parser.OCamlParserUtils"
+}
+
+element ::= xxx
+{
+    methods = [getName setName]
+}
+```
+
+You can create mixins:
+
+```kt!
+// mixin="com.xxx.yyy.OCamlValDeclMixin"
+abstract class OCamlValDeclMixin(node: ASTNode) : ASTWrapperPsiElement(node), OCamlValDecl, PsiNamedElement {
+    override fun getName(): String? {
+        return this.text
+    }
+
+    @Throws(IncorrectOperationException::class)
+    override fun setName(@NonNls name: String): PsiElement {
+        return this
+    }
+}
+```
+
+You can define an ancestor:
+
+```js!
+// extends="com.xxx.yyy.XXX"
+```
+</div><div>
+
+You can also add an implementation:
+
+```js!
+// at the top: implements(".*")="com.intellij.psi.PsiNamedElement"
+implements = "com.intellij.psi.PsiNamedElement"
+implements = ["com.intellij.psi.PsiNamedElement"]
+```
+
+PsiNotes:
+
+```kt!
+PsiElement element
+
+ASTNode node = element.node
+node.text
+
+IElementType type = node.elementType
+type.getLanguage()
+```
+
+Others
+
+```
+// elementTypeFactory = ""
+elementTypeFactory(".*") = "com.xxx.yyy.AAA"
+consumeTokenMethod(".*") = "consumeTokenFast"
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Stub Elements
+
+<div class="row row-cols-lg-2"><div>
+
+* `IStubElementType`
+* `stubClass=""`
+</div><div>
 </div></div>
 
 <hr class="sep-both">
@@ -413,5 +510,13 @@ Stuff that I found, but never read/used yet.
 
 * [old](_old.md)
 * versions + multiple versions + different IDEs
+
+```gradle
+idea {
+    module {
+        generatedSourceDirs.add(file("src/gen"))
+    }
+}
+```
 </div><div>
 </div></div>
