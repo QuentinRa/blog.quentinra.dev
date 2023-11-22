@@ -207,7 +207,7 @@ At the start of the file, we may configure the parser generation. Refer to the [
 ```json!
 {
     // Parser class
-    parserClass="com.xxx.OCamlParser"
+    parserClass="com.ocaml.language.parser.OCamlParser"
     // Generated class with all elements+tokens instances
     elementTypeHolderClass="com.ocaml.language.psi.OCamlTypes"
 
@@ -516,7 +516,7 @@ We can use `<lang.commenter language="..." implementationClass="com.xxx.OCamlCom
 import com.intellij.lang.Commenter
 
 class OCamlCommenter : Commenter {
-    override fun getLineCommentPrefix(): String? = "//
+    override fun getLineCommentPrefix(): String? = "//"
     override fun getBlockCommentPrefix(): String  = "/*"
     override fun getBlockCommentSuffix(): String  = "*/"
     override fun getCommentedBlockCommentPrefix(): String  = "/*"
@@ -525,9 +525,62 @@ class OCamlCommenter : Commenter {
 ```
 
 It automatically supports uncommenting. Related classes: `CommenterDataHolder`, `CustomUncommenter`, `SelfManagingCommenter<T>`.
+
+#### Spell Checker
+
+You can define which elements should be analyzed by the spell checker using: `<spellchecker.support language="..." implementationClass="com.xxx.OCamlSpellcheckingStrategy"/>`
+
+```kt
+import com.intellij.psi.PsiElement
+import com.intellij.spellchecker.tokenizer.SpellcheckingStrategy
+import com.intellij.spellchecker.tokenizer.Tokenizer
+import com.ocaml.ide.files.OCamlLanguage
+import com.ocaml.language.psi.OCamlTypes
+
+class OCamlSpellcheckingStrategy : SpellcheckingStrategy() {
+    override fun isMyContext(element: PsiElement) = OCamlLanguage.isKindOf(element.language)
+
+    override fun getTokenizer(element: PsiElement?): Tokenizer<*> = when {
+        element?.node?.elementType == OCamlTypes.STRING_LITERAL -> TEXT_TOKENIZER
+        // add variables, etc.
+        else -> super.getTokenizer(element)
+    }
+}
+```
+
+The default tokenizer can handle comments, but it doesn't handle elements of the language such as STRINGS or variable names etc.
 </div><div>
 
-...
+#### Braces Matching
+
+You can add support to automatically detect the matching brace/token using `<lang.braceMatcher language="..." implementationClass="com.xxx.OCamlBraceMatcher"/>`:
+
+```kotlin
+package com.ocaml.ide.typing
+
+import com.intellij.lang.BracePair
+import com.intellij.lang.PairedBraceMatcher
+import com.intellij.psi.PsiFile
+import com.intellij.psi.tree.IElementType
+import com.ocaml.language.psi.OCamlTypes
+
+class OCamlBraceMatcher : PairedBraceMatcher {
+    override fun getPairs() = Constants.PAIRS
+
+    override fun isPairedBracesAllowedBeforeType(lbraceType: IElementType, next: IElementType?): Boolean = 
+        true
+    override fun getCodeConstructStart(file: PsiFile?, openingBraceOffset: Int): Int = 
+        openingBraceOffset
+
+    internal object Constants {
+        val PAIRS: Array<BracePair> = arrayOf(
+            BracePair(OCamlTypes.LBRACE, OCamlTypes.RBRACE, false),
+            BracePair(OCamlTypes.BEGIN, OCamlTypes.END, false),
+            // ...
+        )
+    }
+}
+```
 </div></div>
 
 <hr class="sep-both">
