@@ -200,7 +200,7 @@ another_expression ::= [A B]
 ⚠️ The parser is applied on the [Lexed](#lexical-analysis) tokens!
 </div><div>
 
-At the start of the file, we may configure the parser generation.
+At the start of the file, we may configure the parser generation. Refer to the [Generated Files Section](#generated-parser-files) to learn more about these.
 
 ```json!
 {
@@ -220,11 +220,37 @@ At the start of the file, we may configure the parser generation.
     // That we can access from the "elementTypeHolderClass"
     elementTypeClass="com.ocaml.language.psi.OCamlElementType"
     tokenTypeClass="com.ocaml.language.psi.OCamlTokenType"
+    
+    // ...
+   tokens=[
+        AND = "and"
+        NUMBER='regexp:\d+'
+        [...]
+   ]
 }
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Generated Parser Files
+
+<div class="row row-cols-lg-2"><div>
+
+Right-click on the BNF syntax file to generate the parser code.
+
+#### Psi Type Holder
+
+The tool will also generate a `elementTypeHolderClass` with every an element type for each token and element of the language, allowing us to reference an element or a token in the code.
+
+```kt
+IElementType COMMENT = new OCamlTokenType("COMMENT");
+```
+
+The type of the tokens/elements in the type folder class can be customized using `elementTypeClass` and `tokenTypeClass`.
 
 <details class="details-n">
-<summary>Examples of Custom TypeClass</summary>
+<summary>Example of Type Classes</summary>
 
 ```kt!
 // Elements are Composite Elements
@@ -235,6 +261,7 @@ class OCamlElementType(debugName: String) : IElementType(debugName, OCamlLanguag
     }
 }
 ```
+
 ```kt!
 // Tokens are IElementType tokens 
 // tokenTypeClass="com.ocaml.language.psi.OCamlTokenType"
@@ -242,7 +269,26 @@ class OCamlTokenType(debugName: String) : IElementType(debugName, OCamlLanguage)
 ```
 </details>
 
-All elements extend `PsiElement`, but you can use your own class:
+👉 See also: `generateTokens=true` (default).
+
+<br>
+
+#### Psi Files And Interfaces
+
+The tool will generate an interface <small>(stored in `psiPackage`)</small> and its implementation <small>(stored in `psiImplPackage`)</small> for every element.
+
+You can exclude some by marking them as private:
+
+```kt
+private abc ::= /* some definition */
+```
+
+Each interface will define getters allowing us to fetch the children elements. Methods/types are computed from the *whole* rule.
+
+👉 See also: `generateTokenAccessors=false` (default).
+</div><div>
+
+All interfaces extend `PsiElement`, but you can use your own interface:
 
 ```kt
 // implements='com.ocaml.language.psi.api.OCamlElement'
@@ -255,18 +301,6 @@ All implementations extend `ASTWrapperPsiElement`, but you can use your own clas
 // extends='com.ocaml.language.psi.api.OCamlElementImpl'
 abstract class OCamlElementImpl(type: IElementType) : CompositePsiElement(type)
 ```
-</div></div>
-
-<hr class="sep-both">
-
-## Parsing Elements
-
-<div class="row row-cols-lg-2"><div>
-
-By default, a class will be generated for each **public**
-</div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">
@@ -287,30 +321,7 @@ By default, a class will be generated for each **public**
 
 <div class="row row-cols-lg-2"><div>
 
-This section is the **hardest** ⚠️. We need to define the syntax of our language inside a `.bnf` file, such as `OCaml.bnf`.
-
-```json!
-{
-  [...]
-   tokens=[
-        AND = "and"
-        NUMBER='regexp:\d+'
-        [...]
-   ]
-}
-
-ocamlFile ::= structure
-[...]
-```
-
-While it may not be accurate,
-
-* A file, a keyword, a literal, etc. are elements of the language
-* Int, New, String, etc. are tokens of the language
-
-We first need to define the list of tokens. Then, you have to elements that will use these tokens. For instance, a statement such as `let x = 5` is defined as a keyword <small>(token `let`)</small>, a name <small>(token `LIDENT`)</small>, an assignment operator <small>(token `=`)</small> and an expression <small>(a literal, a number, `5`)</small>.
-
-Right-click on the BNF syntax file to generate both the parser code and the lexer file. From the lexer file, you can further define how the parser will handle each token. It can handle "complex tokens":
+Right-click on the BNF syntax file to generate the lexer file. From the lexer file, you can further define how the parser will handle each token. It can handle "complex tokens":
 
 * Integers <small>(5, 0x5, 0X5, 0xF, etc.)</small>
 * Floats <small>(5., 5.0, 0x9.5, etc.)</small>
