@@ -422,6 +422,116 @@ Add to the Manifest:
 
 <hr class="sep-both">
 
+## Syntax Highlighter
+
+<div class="row row-cols-lg-2"><div>
+
+The syntax highlighter is coloring the tokens that were lexed by the [Lexer](#lexical-analysis). For parsed elements, we need to use an annotator.
+
+First, define colors:
+
+```kt
+import com.intellij.openapi.editor.colors.TextAttributesKey
+import com.intellij.openapi.options.OptionsBundle
+import com.intellij.openapi.options.colors.AttributesDescriptor
+import com.intellij.openapi.editor.DefaultLanguageHighlighterColors as Default
+
+// Token(text_shown_in_settings, color_used)
+// Use "//" in translations to group colors in folders
+enum class OCamlColor(humanText: String, attr: TextAttributesKey? = null) {
+    VARIABLE(OCamlBundle.message("settings.ocaml.color.variables.default"), Default.IDENTIFIER),
+    
+    // See also: OptionsBundle for existing texts
+    BRACES(OptionsBundle.message("options.language.defaults.braces"), Default.BRACES),
+    ;
+
+    // For The Highlighter
+    val textAttributesKey = TextAttributesKey.createTextAttributesKey("com.ocaml.$name", attr)
+    // For Highlight Color Settings
+    val attributesDescriptor = AttributesDescriptor(humanText, textAttributesKey)
+}
+```
+
+Then we can write an highlighter:
+
+```kt
+import com.intellij.openapi.fileTypes.SyntaxHighlighter
+import com.intellij.openapi.fileTypes.SyntaxHighlighterBase.pack
+import com.intellij.psi.tree.IElementType
+
+class OCamlSyntaxHighlighter : SyntaxHighlighter {
+    override fun getHighlightingLexer(): Lexer = OCamlLexerAdapter()
+
+    override fun getTokenHighlights(tokenType: IElementType): Array<TextAttributesKey> =
+        pack(map(tokenType)?.textAttributesKey)
+
+    companion object {
+        fun map(tokenType: IElementType): OCamlColor? = when (tokenType) {
+            CHAR_VALUE -> OCamlColor.CHAR
+            // ...
+            LPAREN, RPAREN -> OCamlColor.PARENTHESES
+            // ...
+            in OCAML_KEYWORDS -> OCamlColor.KEYWORD
+            // ...
+            else -> null
+        }
+
+        private val OCAML_KEYWORDS = setOf<IElementType>(
+            AS, CLASS, ELSE, FOR, IF, // ...
+        )
+    }
+}
+```
+
+</div><div>
+
+You need to create a factory and add it to the Manifest:
+
+```kt
+// <lang.syntaxHighlighterFactory language="..." implementationClass="com.xxx.highlight.OCamlSyntaxHighlighterFactory"/>
+class OCamlSyntaxHighlighterFactory : SyntaxHighlighterFactory() {
+    override fun getSyntaxHighlighter(project: Project?, virtualFile: VirtualFile?): SyntaxHighlighter {
+        return OCamlSyntaxHighlighter()
+    }
+}
+```
+
+To add the highlight color settings page in `Editor > Color Scheme`:
+
+```kt
+// <colorSettingsPage implementation="com.xxx.OCamlColorSettingsPage"/>
+import com.intellij.openapi.editor.colors.TextAttributesKey
+import com.intellij.openapi.fileTypes.SyntaxHighlighter
+import com.intellij.openapi.options.colors.AttributesDescriptor
+import com.intellij.openapi.options.colors.ColorDescriptor
+import com.intellij.openapi.options.colors.ColorSettingsPage
+import javax.swing.Icon
+
+class OCamlColorSettingsPage : ColorSettingsPage {
+    override fun getDisplayName(): String = "OCaml"
+    override fun getIcon(): Icon = OCamlIcons.FileTypes.OCAML_SOURCE
+    override fun getAttributeDescriptors() = Constants.ATTRS
+    override fun getColorDescriptors(): Array<ColorDescriptor> = ColorDescriptor.EMPTY_ARRAY
+    override fun getHighlighter(): SyntaxHighlighter = OCamlSyntaxHighlighter()
+    override fun getAdditionalHighlightingTagToDescriptorMap() = Constants.ANNOTATOR_TAGS
+    override fun getDemoText() = Constants.DEMO_TEXT
+
+    internal object Constants {
+        val ATTRS: Array<AttributesDescriptor> = OCamlColor.values().map{ it.attributesDescriptor }.toTypedArray()
+        val ANNOTATOR_TAGS: Map<String, TextAttributesKey> = OCamlColor.values().associateBy({ it.name }, { it.textAttributesKey })
+        val DEMO_TEXT: String by lazy {
+            """
+            (* write some code *)
+            """
+        }
+    }
+
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Advanced BNF Grammar File
 
 <div class="row row-cols-lg-2"><div>
