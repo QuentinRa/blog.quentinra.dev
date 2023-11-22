@@ -82,7 +82,7 @@ Useful links: [Working with Icons and Images](https://plugins.jetbrains.com/docs
 
 #### Bundle
 
-IntelliJ recommends avoiding hard-coded texts, mostly are they may be [translated](https://plugins.jetbrains.com/docs/intellij/localization-guide.html). We store translatable strings in a file, and access them from the code:
+IntelliJ recommends avoiding hard-coded [translatable texts](https://plugins.jetbrains.com/docs/intellij/localization-guide.html). We store translatable strings in a file, and access them from the code:
 
 ```kt
 import com.intellij.DynamicBundle
@@ -136,6 +136,8 @@ object OCamlLanguage : Language("OCaml") {
 ```
 
 🍰 You should see an icon in files having the selected extension.
+
+👉 You can use `Language(OCamlLanguage, "OCamli")` to declare an language inheriting from `OCamlLanguage` <small>(same highlighter, etc.)</small>.
 </div><div>
 
 Using variables for the extension is not needed, but it's useful if we need this information in other classes.
@@ -498,6 +500,34 @@ consumeTokenMethod(".*") = "consumeTokenFast"
 * `IStubElementType`
 * `stubClass=""`
 </div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## Random Features
+
+<div class="row row-cols-lg-2"><div>
+
+#### Commenter
+
+We can use `<lang.commenter language="..." implementationClass="com.xxx.OCamlCommenter"/>` to support the comment line <small>(CTRL+/)</small> and the comment block <small>(CTRL+SHIFT+/)</small> features.
+
+```kt
+import com.intellij.lang.Commenter
+
+class OCamlCommenter : Commenter {
+    override fun getLineCommentPrefix(): String? = "//
+    override fun getBlockCommentPrefix(): String  = "/*"
+    override fun getBlockCommentSuffix(): String  = "*/"
+    override fun getCommentedBlockCommentPrefix(): String  = "/*"
+    override fun getCommentedBlockCommentSuffix(): String  = "*/"
+}
+```
+
+It automatically supports uncommenting. Related classes: `CommenterDataHolder`, `CustomUncommenter`, `SelfManagingCommenter<T>`.
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">
