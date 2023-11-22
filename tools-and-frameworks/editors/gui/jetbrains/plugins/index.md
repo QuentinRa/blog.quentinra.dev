@@ -181,14 +181,14 @@ This section is the **hardest** ⚠️. The [OCaml Manual](https://v2.ocaml.org/
 // Right: how the element is structured
 file ::= expressions*
 
-// Braces can be used to group tokens
+// Braces can be used to group expressions
 // "?" means the expression is optional
 // "*" means "0+" times the expression
 // "+" means "1+" times the expression
-// "|" is an alternative structure
-expression ::= { A ";" B } * // must quote characters
-| (A | B)*           // Alternative to braces
-| another_expression // Reference another element
+// "|" is used for each alternative structure
+expression ::= { A ";" B } * // Must quote characters
+| (A | B)*                   // Alternative to braces
+| another_expression         // Reference another element
 
 // Brackets can be used to group an optional sequence
 another_expression ::= [A B]
@@ -221,14 +221,17 @@ At the start of the file, we may configure the parser generation. Refer to the [
     elementTypeClass="com.ocaml.language.psi.OCamlElementType"
     tokenTypeClass="com.ocaml.language.psi.OCamlTokenType"
     
-    // ...
-   tokens=[
+    tokens=[
         AND = "and"
         NUMBER='regexp:\d+'
         [...]
-   ]
+    ]
+    
+    // ...
 }
 ```
+
+Inside the `tokens`, you can define the language tokens. For instance, `SEMI=";"` means you can use `SEMI` instead of `";"`. See also: [Lexer](#lexical-analysis).
 </div></div>
 
 <hr class="sep-both">
@@ -309,40 +312,63 @@ abstract class OCamlElementImpl(type: IElementType) : CompositePsiElement(type)
 
 <div class="row row-cols-lg-2"><div>
 
-...
-</div><div>
-
-...
-</div></div>
-
-<hr class="sep-both">
-
-## Parser and Lexer
-
-<div class="row row-cols-lg-2"><div>
-
-Right-click on the BNF syntax file to generate the lexer file. From the lexer file, you can further define how the parser will handle each token. It can handle "complex tokens":
+Before parsing a file, we convert the stream of characters to a stream of tokens using a Lexer. Right-click on the BNF syntax file to generate the base lexer file. For instance, if we have `/* xxx */` in the file, the lexer could return that this text is a `COMMENT` token.
 
 * Integers <small>(5, 0x5, 0X5, 0xF, etc.)</small>
 * Floats <small>(5., 5.0, 0x9.5, etc.)</small>
 * Chars <small>(escape characters, etc.)</small>
 * Strings <small>(multilines string, '' and "", escape characters, etc.)</small>
 * Comments <small>(Multiline comments, documentation comments, etc.)</small>
-</div><div>
+* Operators <small>(";", "(", ")", etc.)</small>
+* Keywords <small>("and", "if", "fun", etc.)</small>
+* ...
 
-Right-click on the lexer file to generate a Lexer.
-
-📚 Having the list of tokens is enough to get started with the lexer, but you should create a "temporary" element with every token.
-
-👉 We don't use the lexer directly, create an adapter. It should have the path package path as generated lexer class.
+Right-click on the lexer file to generate a Lexer. We don't use the lexer directly in the code, so create an adapter. It should have the same package path as generated lexer class.
 
 ```kt
 import com.intellij.lexer.FlexAdapter // generated
 
 class OCamlLexerAdapter : FlexAdapter(_OCamlLexer(null))
 ```
+</div><div>
 
-We must then link all classes using from `ParserDefinition`:
+An overview of a lexing file:
+
+```js!
+[...]          // class definition (omitted)
+DIGIT=[0-9]    // variables
+%state INITIAL // parsing states
+%state IN_XXX
+%%
+<INITIAL> { // Link to the Type Holder Variables
+   "and"       { return AND; } // OCamlTypes.AND
+   "A" "B"     { return AB; }  // Same as "AB"
+   // You can use variables, etc.
+   {DIGIT}* ("i"|"I")? { return INTEGER_VALUE; }
+   
+   // you can move to custom state for complex tokens
+   "/*" { yybegin(XXX); /* ... */ }
+}
+
+<IN_XXX> {
+    "*/" { /*...*/; return BLOCK_COMMENT; }
+    . { }
+    <<EOF>> { /*...*/ }
+}
+
+// Every state can have a default case
+[^] { return BAD_CHARACTER; }
+```
+
+</div></div>
+
+<hr class="sep-both">
+
+## Parser Definition
+
+<div class="row row-cols-lg-2"><div>
+
+The parser definition connects all classes defined above:
 
 ```kt
 internal class OCamlParserDefinition : ParserDefinition {
@@ -361,8 +387,9 @@ internal class OCamlParserDefinition : ParserDefinition {
     }
 }
 ```
+</div><div>
 
-And link it inside the Manifest.
+Add to the Manifest:
 
 ```xml!
     <extensions defaultExtensionNs="com.intellij">
@@ -370,6 +397,10 @@ And link it inside the Manifest.
         <lang.parserDefinition language="OCaml" implementationClass="com.ocaml.language.parser.OCamlParserDefinition"/>
     </extensions>
 ```
+
+📚 Add to `getCommentTokens()` any token that must be ignored by the parser, e.g., treated as a comment.
+
+⚠️ Use `OCamlTypes.Factory.createElement(node.elementType)` when using `CompositePsiElement`.
 </div></div>
 
 <hr class="sep-both">
