@@ -503,6 +503,7 @@ Stuff that I found, but never read/used yet.
 * `git diff -U3 > xxx.patch`
 * `git apply xxx.patch`
 * `git format-patch -1 HEAD`
+* `git grep`
 </div><div>
 
 Cheatsheets

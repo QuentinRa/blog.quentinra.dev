@@ -614,6 +614,8 @@ abstract class LetBindingMixin : OCamlElementImpl, OCamlLetBinding {
 * `PsiNameIdentifierOwner`: elements that contain a name identifier, e.g., an element that has a name
 * `PsiNamedElement`: elements that have a name
 * `NavigatablePsiElement`: elements that we can navigate to
+
+Ensure the relevant elements implement the relevant interfaces.
 </div></div>
 
 <hr class="sep-both">
@@ -715,20 +717,23 @@ is OCamlLetBindings -> psi.letBindingList
 And, you need to define how each element is rendered in the view:
 
 ```kt
-// Dummy Code For Testing
 override fun getPresentation(): ItemPresentation {
-    myElement?.let {
-        val psi = myElement as? NavigatablePsiElement
-        psi?.let {
-            if (psi.presentation != null) return psi.presentation!!
-            val pres = PresentationData()
-            pres.presentableText = psi.name ?: "<unknown:${psi.text.subSequence(0, 10)}>"
-            return pres
-        }
+    return myElement?.let(::getPresentationForStructure)
+        ?: PresentationData("unknown", null, null, null)
+}
+private fun getPresentationForStructure(psi: PsiElement): ItemPresentation {
+    val presentation =  when(psi) { // text shown for each element
+        is OCamlNamedElement -> psi.name
+        else -> null
     }
-    return  PresentationData("unknown", "", null, null)
+    val icon = when(psi) { // icon shown | implement it in each element
+        else -> psi.getIcon(Iconable.ICON_FLAG_VISIBILITY)
+    }
+    return PresentationData(presentation, null, icon, null)
 }
 ```
+
+➡️ See also related classes: `SortableTreeElement`, `Queryable`.
 </div></div>
 
 <hr class="sep-both">
