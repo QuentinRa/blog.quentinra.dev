@@ -275,8 +275,7 @@ class OCamlTokenType(debugName: String) : IElementType(debugName, OCamlLanguage)
 </details>
 
 👉 See also: `generateTokens=true` (default).
-
-<br>
+</div><div>
 
 #### Psi Files And Interfaces
 
@@ -290,22 +289,21 @@ private abc ::= /* some definition */
 
 Each interface will define getters allowing us to fetch the children elements. Methods/types are computed from the *whole* rule.
 
-👉 See also: `generateTokenAccessors=false` (default).
-</div><div>
-
 All interfaces extend `PsiElement`, but you can use your own interface:
 
 ```kt
-// implements='com.ocaml.language.psi.api.OCamlElement'
+// Add: implements='com.ocaml.language.psi.api.OCamlElement'
 interface OCamlElement : PsiElement, UserDataHolderEx
 ```
 
 All implementations extend `ASTWrapperPsiElement`, but you can use your own class:
 
 ```
-// extends='com.ocaml.language.psi.api.OCamlElementImpl'
+// Add: extends='com.ocaml.language.psi.api.OCamlElementImpl'
 abstract class OCamlElementImpl(type: IElementType) : CompositePsiElement(type)
 ```
+
+👉 See also: `generateTokenAccessors=false` (default).
 </div></div>
 
 <hr class="sep-both">
@@ -532,6 +530,43 @@ class OCamlColorSettingsPage : ColorSettingsPage {
 
 <hr class="sep-both">
 
+## Customizing Parser Generated Classes
+
+<div class="row row-cols-lg-2"><div>
+
+At the top of the file, you can define the `extends`/`implements` restrictions on elements and their interface.
+
+```kt
+{
+    // We use a regex to select elements
+    // implements: selected element will implement this interface
+    implements("A|B")="com.intellij.psi.PsiNamedElement"
+    // extends: selected elements implementation will inherit from this class
+    extends(".*expr")=expr
+    // ⚠️ You can have multiple "extends" but an element
+    // is only associated to the first extends that matches it
+}
+```
+
+You can alternatively define properties locally, e.g., after an element.
+
+```kt
+element ::= /* some definition */
+{
+    methods = [getName setName]
+    mixin="com.xxx.yyy.OCamlValDeclMixin"
+    extends="com.xxx.yyy.XXX"
+    implements = "com.intellij.psi.PsiNamedElement"
+    //or: implements = ["com.intellij.psi.PsiNamedElement"]
+}
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Advanced BNF Grammar File
 
 <div class="row row-cols-lg-2"><div>
@@ -565,32 +600,7 @@ abstract class OCamlValDeclMixin(node: ASTNode) : ASTWrapperPsiElement(node), OC
 }
 ```
 
-You can define an ancestor:
-
-```js!
-// extends="com.xxx.yyy.XXX"
-```
 </div><div>
-
-You can also add an implementation:
-
-```js!
-// at the top: implements(".*")="com.intellij.psi.PsiNamedElement"
-implements = "com.intellij.psi.PsiNamedElement"
-implements = ["com.intellij.psi.PsiNamedElement"]
-```
-
-PsiNotes:
-
-```kt!
-PsiElement element
-
-ASTNode node = element.node
-node.text
-
-IElementType type = node.elementType
-type.getLanguage()
-```
 
 Others
 
@@ -599,17 +609,6 @@ Others
 elementTypeFactory(".*") = "com.xxx.yyy.AAA"
 consumeTokenMethod(".*") = "consumeTokenFast"
 ```
-</div></div>
-
-<hr class="sep-both">
-
-## Stub Elements
-
-<div class="row row-cols-lg-2"><div>
-
-* `IStubElementType`
-* `stubClass=""`
-</div><div>
 </div></div>
 
 <hr class="sep-both">
@@ -706,10 +705,16 @@ Stuff that I found, but never read/used yet.
 
 ```gradle
 idea {
-    module {
-        generatedSourceDirs.add(file("src/gen"))
-    }
+  module {
+    generatedSourceDirs.add(file("src/main/gen"))
+  }
 }
 ```
 </div><div>
+
+Stubs
+
+* `IStubElementType`
+* `stubClass=""`
+* `elementTypeFactory="""`
 </div></div>
