@@ -553,6 +553,7 @@ You can alternatively define properties locally, e.g., after an element.
 ```kt
 element ::= /* some definition */
 {
+    name = "my_element" // Generate class: {Prefix}MyElement
     methods = [getName setName]
     mixin="com.xxx.yyy.OCamlValDeclMixin"
     extends="com.xxx.yyy.XXX"
@@ -560,54 +561,52 @@ element ::= /* some definition */
     //or: implements = ["com.intellij.psi.PsiNamedElement"]
 }
 ```
+
+#### Methods
+
+Using methods, you can inject a method in the generated class. First, in the top-level block, add a psi implementation util class: `psiImplUtilClass="com.xxx.OCamlImplUtils"`.
+
+The first argument is the interface of the associated element. You can add as many argument as you need.
+
+```kt
+internal object OCamlImplUtils {
+    @JvmStatic // my_element ::= and prefix = "XXX"
+    fun getName(myElement: XXXMyElement): String? {
+        return myElement.text
+    }
+    // ...
+}
+```
 </div><div>
 
-...
-</div></div>
+#### Mixins
 
-<hr class="sep-both">
+Instead of using method injection, we can mix the generated class with the contents of another "mixin" class.
 
-## Advanced BNF Grammar File
+* The generated class will inherit from the mixin class
+* The generated class will explicitly copy every constructor
+* The mixin class must extend an element implementation class, such as the OCamlElementImpl in the examples above.
 
-<div class="row row-cols-lg-2"><div>
+```kt
+// OCamlLetBinding is a generated interface
+// Allowing us to use the implementation methods in the mixin
+abstract class LetBindingMixin : OCamlElementImpl, OCamlLetBinding {
 
-You can use an utility class for the implementations.
+    // example of declaring multiple constructors
+    constructor(type: IElementType) : super(type) {}
+    constructor(node: ASTNode) : super(node.elementType) {}
 
-```json!
-{
-    psiImplUtilClass="com.ocaml.language.parser.OCamlParserUtils"
-}
-
-element ::= xxx
-{
-    methods = [getName setName]
-}
-```
-
-You can create mixins:
-
-```kt!
-// mixin="com.xxx.yyy.OCamlValDeclMixin"
-abstract class OCamlValDeclMixin(node: ASTNode) : ASTWrapperPsiElement(node), OCamlValDecl, PsiNamedElement {
-    override fun getName(): String? {
-        return this.text
+    // declare methods
+    override fun getNameIdentifier(): PsiElement? {
+        TODO("Not yet implemented")
     }
 
-    @Throws(IncorrectOperationException::class)
-    override fun setName(@NonNls name: String): PsiElement {
-        return this
+    override fun getName(): String? = nameIdentifier?.text
+
+    override fun setName(name: String): PsiElement {
+        TODO("Not yet implemented")
     }
 }
-```
-
-</div><div>
-
-Others
-
-```
-// elementTypeFactory = ""
-elementTypeFactory(".*") = "com.xxx.yyy.AAA"
-consumeTokenMethod(".*") = "consumeTokenFast"
 ```
 </div></div>
 
@@ -717,4 +716,11 @@ Stubs
 * `IStubElementType`
 * `stubClass=""`
 * `elementTypeFactory="""`
+
+BNF Grammar File
+
+```
+elementTypeFactory(".*") = "com.xxx.yyy.AAA"
+consumeTokenMethod(".*") = "consumeTokenFast"
+```
 </div></div>
