@@ -1,9 +1,5 @@
 # IntelliJ Platform Plugin SDK
 
-<hr class="sep-both">
-
-## Important files
-
 <div class="row row-cols-lg-2"><div>
 
 #### Resources/META-INF/plugin.xml
@@ -28,7 +24,8 @@ You can add more information about the vendor, and directly add the description 
 +<xi:include href="/META-INF/other.xml" xpointer="xpointer(/idea-plugin/*)"/>
 ```
 </details>
-</div><div>
+
+<br>
 
 #### build.gradle
 
@@ -47,7 +44,6 @@ intellij {
 }
 ```
 </details>
-
 
 <details class="details-e">
 <summary>Add new folders as src/res</summary>
@@ -76,14 +72,6 @@ sourceSets {
 }
 ```
 </details>
-</div></div>
-
-<hr class="sep-both">
-
-## Important classes
-
-<div class="row row-cols-lg-2"><div>
-
 </div><div>
 
 #### Bundle

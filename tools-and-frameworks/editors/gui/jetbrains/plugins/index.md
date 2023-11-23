@@ -618,6 +618,18 @@ abstract class LetBindingMixin : OCamlElementImpl, OCamlLetBinding {
 
 <hr class="sep-both">
 
+## Structure View
+
+<div class="row row-cols-lg-2"><div>
+
+The structure view 
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Random Features
 
 <div class="row row-cols-lg-2"><div>
