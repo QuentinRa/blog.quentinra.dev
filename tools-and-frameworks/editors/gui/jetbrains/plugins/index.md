@@ -840,6 +840,11 @@ Stuff that I found, but never read/used yet.
 
 * [old](_old.md)
 * versions + multiple versions + different IDEs
+* Gradle Configuration
+* [Gradle IntelliJ Plugin](https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html) + [IntelliJ Platform Configuration](https://plugins.jetbrains.com/docs/intellij/configuring-plugin-project.html#intellij-platform-configuration)
+* [Using kotlin](https://plugins.jetbrains.com/docs/intellij/using-kotlin.html)
+* Enabling Auto-Reload
+* .form
 
 ```gradle
 idea {
@@ -848,6 +853,69 @@ idea {
   }
 }
 ```
+
+```kotlin
+MyBundle.message("applicationService")
+MyBundle.message("projectService", project.name)
+
+System.getenv("CI")
+
+project.service<MyProjectService>()
+```
+
+
+<details class="details-n">
+<summary>Split the XML into sub-files</summary>
+
+```diff
+-<idea-plugin>
++<idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+
++<xi:include href="/META-INF/other.xml" xpointer="xpointer(/idea-plugin/*)"/>
+```
+</details>
+
+<details class="details-n">
+<summary>Set the sandbox Directory</summary>
+
+➡️  If you change the IDE version often, you might want to use different sandbox, to start where you left.
+
+Kotlin
+
+```kotlin
+intellij {
+    sandboxDir.set("$buildDir/idea-sandbox-${properties("platformVersion")}")
+}
+```
+</details>
+
+<details class="details-n">
+<summary>Add new folders as src/res</summary>
+
+Groovy
+
+```gradle
+sourceSets {
+    main.java.srcDirs = ["src/xxx", "src/main"]
+    main.java.srcDirs += ["src/yyy"]
+    main.resources.srcDirs = ["resources/main", "resources/zzz"]
+    test.java.srcDirs = ["test/xxx/", "test/main"]
+    test.resources.srcDirs = ["resources/main", "resources/xxx", "test/testData"]
+}
+```
+
+Kotlin
+
+```kotlin
+sourceSets {
+    main.configure {
+        java.srcDir("src/xxx/")
+        java.srcDir("src/xxx/kotlin")
+        resources.srcDir("src/xxx/resources")
+    }
+}
+```
+</details>
 </div><div>
 
 Stubs
@@ -868,5 +936,29 @@ Random
 ```
 TreeAnchorizer.getService().createAnchor(element)
 TreeAnchorizer.getService().retrieveElement(psiAnchor)
+```
+
+Bundles
+
+```kotlin
+import com.intellij.DynamicBundle
+import org.jetbrains.annotations.NonNls
+import org.jetbrains.annotations.PropertyKey
+
+@NonNls
+private const val BUNDLE = "messages.xxx"
+
+object XXXBundle : DynamicBundle(BUNDLE) {
+
+    @Suppress("SpreadOperator")
+    @JvmStatic
+    fun message(@PropertyKey(resourceBundle = BUNDLE) key: String, vararg params: Any) =
+        getMessage(key, *params)
+
+    @Suppress("SpreadOperator", "unused")
+    @JvmStatic
+    fun messagePointer(@PropertyKey(resourceBundle = BUNDLE) key: String, vararg params: Any) =
+        getLazyMessage(key, *params)
+}
 ```
 </div></div>
