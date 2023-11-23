@@ -622,10 +622,113 @@ abstract class LetBindingMixin : OCamlElementImpl, OCamlLetBinding {
 
 <div class="row row-cols-lg-2"><div>
 
-The structure view 
+The structure view is a tab listing all variables, types/classes, functions, etc. of a file. Add to the Manifest:
+
+```xml!
+<lang.psiStructureViewFactory language="..." implementationClass="com.xxx.OCamlStructureViewFactory"/>
+```
+
+And create the entrypoint factory:
+
+```kt
+import com.intellij.ide.structureView.StructureViewBuilder
+import com.intellij.ide.structureView.StructureViewModel
+import com.intellij.ide.structureView.TreeBasedStructureViewBuilder
+import com.intellij.lang.PsiStructureViewFactory
+import com.intellij.openapi.editor.Editor
+import com.intellij.psi.PsiFile
+
+internal class OCamlStructureViewFactory : PsiStructureViewFactory {
+    override fun getStructureViewBuilder(psiFile: PsiFile): StructureViewBuilder {
+        return object : TreeBasedStructureViewBuilder() {
+            override fun createStructureViewModel(editor: Editor?): StructureViewModel {
+                return OCamlStructureViewModel(editor, psiFile)
+            }
+        }
+    }
+}
+```
+
+And the model:
+
+```kt
+import com.intellij.ide.structureView.StructureViewModel
+import com.intellij.ide.structureView.StructureViewModelBase
+import com.intellij.ide.structureView.StructureViewTreeElement
+import com.intellij.ide.util.treeView.smartTree.Filter
+import com.intellij.ide.util.treeView.smartTree.Sorter
+import com.intellij.openapi.editor.Editor
+import com.intellij.psi.PsiFile
+
+class OCamlStructureViewModel(editor: Editor?, psiFile: PsiFile) :
+    StructureViewModelBase(psiFile, editor, OCamlStructureViewElement(psiFile)),
+    StructureViewModel.ElementInfoProvider {
+
+    override fun getSorters(): Array<Sorter> = arrayOf(Sorter.ALPHA_SORTER)
+    override fun getFilters(): Array<Filter> = super.getFilters()
+    override fun isAlwaysShowsPlus(element: StructureViewTreeElement): Boolean = element.value is OCamlFileBase // your Psi File Class
+    override fun isAlwaysLeaf(element: StructureViewTreeElement): Boolean = when (element.value) {
+        // list of generated interfaces of "always leaf" elements
+        is OCamlLetBinding -> true
+        else -> false
+    }
+}
+```
 </div><div>
 
-...
+The structure view element requires quite a lot of language-specific code. The base "template" would be something like this:
+
+```kt
+class OCamlStructureViewElement(element: PsiElement) : StructureViewTreeElement {
+    private val psiAnchor = TreeAnchorizer.getService().createAnchor(element)
+    private val myElement: PsiElement? get() = TreeAnchorizer.getService().retrieveElement(psiAnchor) as? PsiElement
+    private val childElements: List<PsiElement>
+        get() {
+            return when (val psi = myElement) {
+                else -> emptyList()
+            }
+        }
+
+    override fun getValue(): PsiElement? = myElement
+    override fun navigate(requestFocus: Boolean) { (myElement as? Navigatable)?.navigate(requestFocus) }
+    override fun canNavigate(): Boolean = (myElement as? Navigatable)?.canNavigate() == true
+    override fun canNavigateToSource(): Boolean = (myElement as? Navigatable)?.canNavigateToSource() == true
+    override fun getPresentation(): ItemPresentation {
+        return  PresentationData("unknown", "", null, null)
+    }
+    override fun getChildren(): Array<out TreeElement> =
+        childElements.map2Array { OCamlStructureViewElement(it) }
+}
+```
+
+You must then define how, starting from the PsiFile, we can get the list of children nodes in `childElements`.
+
+```kt
+// for instance, in OCaml (let_bindings="let x = 5 and y = 7"
+is OCamlFile -> {
+    psi.childrenOfType<OCamlLetBindings>() // all variables
+}
+// letBindingList=["x=5", "y=7"]
+is OCamlLetBindings -> psi.letBindingList
+```
+
+And, you need to define how each element is rendered in the view:
+
+```kt
+// Dummy Code For Testing
+override fun getPresentation(): ItemPresentation {
+    myElement?.let {
+        val psi = myElement as? NavigatablePsiElement
+        psi?.let {
+            if (psi.presentation != null) return psi.presentation!!
+            val pres = PresentationData()
+            pres.presentableText = psi.name ?: "<unknown:${psi.text.subSequence(0, 10)}>"
+            return pres
+        }
+    }
+    return  PresentationData("unknown", "", null, null)
+}
+```
 </div></div>
 
 <hr class="sep-both">
@@ -758,5 +861,12 @@ BNF Grammar File
 ```
 elementTypeFactory(".*") = "com.xxx.yyy.AAA"
 consumeTokenMethod(".*") = "consumeTokenFast"
+```
+
+Random
+
+```
+TreeAnchorizer.getService().createAnchor(element)
+TreeAnchorizer.getService().retrieveElement(psiAnchor)
 ```
 </div></div>
