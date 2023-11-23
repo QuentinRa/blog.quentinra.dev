@@ -608,6 +608,12 @@ abstract class LetBindingMixin : OCamlElementImpl, OCamlLetBinding {
     }
 }
 ```
+
+#### Interfaces
+
+* `PsiNameIdentifierOwner`: elements that contain a name identifier, e.g., an element that has a name
+* `PsiNamedElement`: elements that have a name
+* `NavigatablePsiElement`: elements that we can navigate to
 </div></div>
 
 <hr class="sep-both">
@@ -615,24 +621,6 @@ abstract class LetBindingMixin : OCamlElementImpl, OCamlLetBinding {
 ## Random Features
 
 <div class="row row-cols-lg-2"><div>
-
-#### Commenter
-
-We can use `<lang.commenter language="..." implementationClass="com.xxx.OCamlCommenter"/>` to support the comment line <small>(CTRL+/)</small> and the comment block <small>(CTRL+SHIFT+/)</small> features.
-
-```kt
-import com.intellij.lang.Commenter
-
-class OCamlCommenter : Commenter {
-    override fun getLineCommentPrefix(): String? = "//"
-    override fun getBlockCommentPrefix(): String  = "/*"
-    override fun getBlockCommentSuffix(): String  = "*/"
-    override fun getCommentedBlockCommentPrefix(): String  = "/*"
-    override fun getCommentedBlockCommentSuffix(): String  = "*/"
-}
-```
-
-It automatically supports uncommenting. Related classes: `CommenterDataHolder`, `CustomUncommenter`, `SelfManagingCommenter<T>`.
 
 #### Spell Checker
 
@@ -657,7 +645,43 @@ class OCamlSpellcheckingStrategy : SpellcheckingStrategy() {
 ```
 
 The default tokenizer can handle comments, but it doesn't handle elements of the language such as STRINGS or variable names etc.
+
+For instance, assuming that `OCamlNameIdentifierOwner` is an element that own an element that has a name, we would add `element is OCamlNameIdentifierOwner -> OCamlNameIdentifierOwnerTokenizer`.
+
+We would then develop a custom tokenizer:
+
+```kt
+import com.intellij.spellchecker.inspections.IdentifierSplitter
+import com.intellij.spellchecker.tokenizer.TokenConsumer
+import com.intellij.spellchecker.tokenizer.Tokenizer
+
+object OCamlNameIdentifierOwnerTokenizer : Tokenizer<OCamlNameIdentifierOwner>() {
+    override fun tokenize(element: OCamlNameIdentifierOwner, consumer: TokenConsumer) {
+        val identifier = element.nameIdentifier ?: return
+        consumer.consumeToken(identifier, IdentifierSplitter.getInstance())
+        // you can add a more complex logic here
+    }
+}
+```
 </div><div>
+
+#### Commenter
+
+We can use `<lang.commenter language="..." implementationClass="com.xxx.OCamlCommenter"/>` to support the comment line <small>(CTRL+/)</small> and the comment block <small>(CTRL+SHIFT+/)</small> features.
+
+```kt
+import com.intellij.lang.Commenter
+
+class OCamlCommenter : Commenter {
+    override fun getLineCommentPrefix(): String? = "//"
+    override fun getBlockCommentPrefix(): String  = "/*"
+    override fun getBlockCommentSuffix(): String  = "*/"
+    override fun getCommentedBlockCommentPrefix(): String  = "/*"
+    override fun getCommentedBlockCommentSuffix(): String  = "*/"
+}
+```
+
+It automatically supports uncommenting. Related classes: `CommenterDataHolder`, `CustomUncommenter`, `SelfManagingCommenter<T>`.
 
 #### Braces Matching
 
