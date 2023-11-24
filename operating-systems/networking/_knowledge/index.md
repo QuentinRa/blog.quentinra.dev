@@ -11,15 +11,15 @@ These devices need to communicate <small>(securely!)</small> between each other 
 
 Some elements that are involved, shown in the simplified schema:
 
-* **IP Address** 🌍: each network device has an IP address. This allows us to find **where** a machine is. Example: `188.155.18.0`.
+* **IP Address** 🌍: each network device has an IP address. This allows us to find where a machine is. Example: `188.155.18.0`.
 
-* **MAC Address** 🏠: an IP address is not fixed. If a network device is connected to another network, they will have a new IP address. A MAC address is a **unique identifier** to find **who** is this device.
+* **MAC Address** 🏠: an IP address is not fixed. If a network device is connected to another network, it will have a new IP address. A MAC address is a unique identifier to identify a device.
 
-* **Network interface** 📶: this is the logical representation of the network card used to connect to the network. Example: `eth0`. This is what is connecting the device to the network.
+* **Network interface** 📶: this is the logical representation of the network card used to connect a  device to a network. We can have multiple of them. Example: `eth0`.
 
-* **Protocol** 🔐: we define a common language for messages, so that both devices can understand each other. Example: `SSH`.
+* **Protocol** 🔐: a format/language for exchanging messages, so that different devices can communicate with each other. Example: `SSH`.
 
-* **Port** 🐊: this is where <small>(logically)</small> a machine expect a message in a pre-defined protocol. For instance, if a machine receives a message on port `22`, they will expect the protocol to be `SSH`...
+* **Port** 🐊: each protocol uses a specific <small>(logical)</small> channel for messages. For example, if a machine receives a message on port `22`, they will expect the protocol to be `SSH`...
 </div></div>
 
 <hr class="sep-both">
@@ -62,13 +62,13 @@ Each [Network interface](#interfaces) has one.
 
 #### Interfaces
 
-A **network interface (NIC)/adapter/card** is a physical component connecting your machine and the network. A **virtual network interface** is the virtual representation of the physical component 📶.
+A network interface (NIC)/adapter/card is a physical component connecting your machine and the network. A virtual network interface is the virtual representation of the physical component 📶.
 
 Common (virtual network) interfaces are
 
 * `eth0`, `eth1`... 🧦: for ethernet adapters
 * `tun0`, `tun1`... 🪂: for VPN adapters
-* `lo` <small>(loopback)</small> 🏡: for the **localhost** virtual network (127.0.0.1)
+* `lo` <small>(loopback)</small> 🏡: for the localhost virtual network (127.0.0.1)
 
 The loopback interface is used by local applications to share data between themselves, over the localhost network.
 
@@ -79,19 +79,19 @@ The loopback interface is used by local applications to share data between thems
 
 [![packetsframes](../../../cybersecurity/_badges/thmp/packetsframes.svg)](https://tryhackme.com/room/packetsframes)
 
-A port is a virtual messaging channel which is only associated with **one protocol**, such as `22` associated with `SSH`. This association allows a machine to correctly handle a message using the correct protocol.
+A port is a virtual messaging channel which is only associated with one protocol, such as `22` associated with `SSH`. This association allows a machine to correctly handle a message using the correct protocol.
 
 * 🗃️ There are 65535 <small>(or in short $2^{16}$)</small> available ports
 * 🔒 The first 1024 ports are called "well-known/system ports"
 * ☘️ Ports 1024 to 49151 are called "registered ports"
-* 🍀 Ports 1024 to 49151 are called "dynamic/private ports"
+* 🍀 Ports 49152 to 65535 are called "dynamic/private ports"
 
 🗺️ List of [TCP/UDP ports](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers) and their protocols.
 
-* 🤔 Protocols can be assigned to another port <small>(for security...)</small>
-* ✅ Ports can be "open", "filtered" <small>(firewall)</small>, and "closed"
-* 🍸 A port can, according to the protocol, receive TCP, UDP, or TCP and UDP... messages.
-* 🔥 Port 0 is called wildcard port, and when used by a program, will automatically bind them to a non system port.
+* 🤔 A protocol can be re-assigned to another port <small>(for security...)</small>
+* ✅ Ports can be "open", "filtered" <small>(firewall)</small>, or "closed"
+* 🍸 A port can, according to the protocol, receive TCP, UDP, or both TCP and UDP messages.
+* 🔥 Port 0 is called wildcard port. When used by a program, it automatically be replaced by any available port.
 </div></div>
 
 <hr class="sep-both">
