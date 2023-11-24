@@ -104,7 +104,7 @@ To convert a binary to a decimal, and vice versa, you need to know every power o
 
 * $(1111101)\_{2}$
 * There are 7 digits, so the first is $2^6$
-* $1 * 2^6 + 0 * 2^5 + 1 * 2^4+ 1 * 2^3+ 1 * 2^2+ 0 * 2^1+ 1 * 2^0$
+* $1 * 2^6 + 1 * 2^5 + 1 * 2^4+ 1 * 2^3+ 1 * 2^2+ 0 * 2^1+ 1 * 2^0$
 * $64 + 32 + 16 + 8 + 4 + 0 + 1$
 * $125$
 </div></div>

@@ -1,8 +1,24 @@
-# IPV4
+# Internet Protocol version 4
 
 [Go back](../index.md)
 
-Internet Protocol version 4 (**IPV4**) addresses are **32-bits long addresses**.
+<div class="row row-cols-lg-2"><div>
+
+Internet Protocol version 4 (IPV4) addresses are 32-bits long addresses. Ex: `01001101001000011110000100000000`. The bits in the IP address are actually separated into 2 parts:
+
+* **id_net** 🏠: it is the same bits for every address in a network.
+* **id_host** 💻: The remaining bits. Identify a network device. If there are only null bits (0), then this is the **network address**.
+
+You can't guess the number of bits used by **id_net**. Either it is given by an organism <small>(such as an ISP)</small>, or you are given the [netmask](#netmask-).
+</div><div>
+
+**Example** 🔥: is `01001101001000011110000100000000` a network address?  We are told that the fixed part is 17 bits long.
+
+* id_net: `01001101001000011` (17 bits)
+* id_host: `110000100000000` (32-17=15 bits)
+
+The id_host has non-null bits, so it's not a network address.
+</div></div>
 
 <hr class="sep-both">
 
@@ -10,43 +26,20 @@ Internet Protocol version 4 (**IPV4**) addresses are **32-bits long addresses**.
 
 <div class="row row-cols-md-2"><div>
 
-This is the most-known representation of an IPV4 address. We are splitting ours **32 bits** into **4 groups of 8 bits** called **bytes**/octets, we are converting them to decimal, and separating them with a **dot** 🤓.
+This is the most-known representation of an IPV4 address. We are splitting ours 32 bits into 4 groups of 8 bits called bytes/octets. Then, convert them to decimal, and separate them with a dot 🤓.
 
-* Starting with a binary IP <small>(ex: `0101100010[...]01`)</small>
-* We are ending with **n.n.n.n** <small>(with each $n \in \[0,\ 255]$)</small>
+* Start with a binary IP <small>(e.g., `0101100010[...]01`)</small>
+* End up with **n.n.n.n** <small>(where each $n \in \[0,\ 255]$)</small>
 * Example: `127.0.0.1`
 </div><div>
 
-Given this IP (binary): `01001101001000011110000100000000`
+Given the following IP: `01001101001000011110000100000000`
 
-* Split into 4 blocs: `01001101`, `00100001`, `11100001`, and `00000000`
-* We convert each bloc: `77`, `33`, `225`, and `0`
-* We separate them with a dot: `77.33.225.0`
-* [Online tool to convert bin to IP](https://www.browserling.com/tools/bin-to-ip)
-</div></div>
+* Split it into four blocks: `01001101`, `00100001`, `11100001`, and `00000000`
+* Convert each block to decimal: `77`, `33`, `225`, and `0`
+* Separate them with a dot: `77.33.225.0`
 
-<hr class="sep-both">
-
-## Host and network addresses
-
-<div class="row row-cols-md-2"><div>
-
-The bits in the IP address are actually separated into 2 parts:
-
-* **id_net**: fixed for every address in a network. Identify the network.
-* **id_host**: every remaining bit. Pointing to a host in a network, but if there are only null bits (0), then this is the **address of the network**.
-
-You can't guess the number of fixed bits, either it is given by an organism <small>(such as your ISP)</small>, or you are given something called the netmask (which is explained a bit further).
-</div><div>
-
-**Example** 🔥: is `77.33.225.0` a network address?
-
-We consider the IP `01001101001000011110000100000000` (`77.33.225.0`). We are told that the fixed part is 17 bits long.
-
-* id_net: `01001101001000011` (17 bits)
-* id_host: `110000100000000` (32-17=15 bits)
-
-The id_host has non-null bits, so it's not a network address.
+See also: [Online tool to convert bin to IP](https://www.browserling.com/tools/bin-to-ip) and [Encoding](/tools-and-frameworks/knowledge/encoding/index.md#from-radix-2-to-radix-10).
 </div></div>
 
 <hr class="sep-both">
