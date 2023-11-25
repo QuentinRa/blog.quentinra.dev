@@ -19,7 +19,7 @@ You could use the analogy of a MSA being the postman that takes mail from your i
 The Mail Transfer Agent will send the mail to a **Mail Delivery Agent** which is the server that the client will query to access his/her emails. It's common for a MTA to also be a MDA.
 </div><div>
 
-```bash
+```shell!
 $ telnet IP 25
 helo hostname
 mail from:
@@ -43,22 +43,21 @@ SMTP credentials, if compromised, may have been reused.
 
 * Metasploit
 
-```bash
-msf6 > use auxiliary/scanner/smtp/smtp_version # version
-msf6 > use auxiliary/scanner/smtp/smtp_enum # users...
+```shell!
+msf6> use auxiliary/scanner/smtp/smtp_version # version
+msf6> use auxiliary/scanner/smtp/smtp_enum # users...
 ```
 </div><div>
 
 * Dig info using nmap
 
-```bash
+```shell!
 $ nmap IP -p 25 --script "*smtp*"
 ```
 
-* Using `smtp-user-enum` <small>(not always working)</small>
+* Using `smtp-user-enum` <small>(not always working, [doc](https://www.kali.org/tools/smtp-user-enum/))</small>
 
-```bash
-# https://www.kali.org/tools/smtp-user-enum/
+```shell!
 $ smtp-user-enum -M VRFY -u root -t IP
 ```
 </div></div>

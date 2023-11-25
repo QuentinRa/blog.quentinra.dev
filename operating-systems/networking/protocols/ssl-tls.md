@@ -38,8 +38,6 @@ There are 3 categories of certificates: EV, OV, and DV.
 * [testssl.sh](https://testssl.sh/) ([GitHub](https://github.com/drwetter/testssl.sh)) <small>(similar, but local testing)</small>
 * [sslshopper](https://www.sslshopper.com/ssl-checker.html) <small>(???)</small>
 </div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">
