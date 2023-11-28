@@ -28,4 +28,5 @@ Stuff that I found, but never read/used yet.
 * WI-FI IoT SSID "XXX-IOT"
 * hidden from users
 * [rust-embedded](https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials)
+* Zigbee and Z-Wave
 </div></div>

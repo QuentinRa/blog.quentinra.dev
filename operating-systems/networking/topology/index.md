@@ -52,6 +52,7 @@ Networking devices are interconnected by cables.
 **Layer 2: Data Link Layer** <small>(frames)</small> 🔢
 
 * [Switches](devices/switch.md)
+* [Wireless Access Points](devices/wap.md) (WAP)
 
 **Layer 1: Physical Layer** <small>(stream)</small> 💺
 

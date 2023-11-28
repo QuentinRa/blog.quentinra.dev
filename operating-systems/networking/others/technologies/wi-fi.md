@@ -6,12 +6,17 @@
 
 Wi-Fi is a family of protocols commonly used for local area networking along with Ethernet. Exchanges are done using radio waves. Wireless adapters are responsible for converting data to radio frequency (RF).
 
-Each Wi-Fi network has a SSID (Service Set Identifier) which is the name of the network shown to others.
+Each Wi-Fi network has a SSID (Service Set Identifier) which is the name of the network shown to others <small>(ESSID)</small>. 
 
-They often have a password.
+They often have a password. WPA <small>(Wi-Fi Protected Access)</small> is the replacement of WEP <small>(Wired Equivalent Privacy)</small> and a protocol to prevent unauthorized access to the network.
+
+* WPA2-EAP uses a Radius Server
+* WPA2-PSk uses a password/passphrase/code
+* Cisco used LEAP/PEAP and now uses EAP-TLS
+* Cisco uses a TACACS+ Server
 </div><div>
 
-...
+Wi-Fi is commonly used to connect a device to an [access point](/operating-systems/networking/topology/devices/wap.md), which is connecting us to another network such as the internet.
 </div></div>
 
 <hr class="sep-both">
@@ -46,25 +51,7 @@ Stuff that I found, but never read/used yet.
   * https://github.com/ZerBea/hcxtools
   * `hcxpcaptool -j hash xxx.cap`
   * `john --format=wpapsk --wordlist=/usr/share/wordlists/rockyou.txt hash`
-
 </div><div>
 
-Notes
-
-Wi-Fi
-
-* WiFi
-  * connection request frame or association request (first when joining)
-* ask WAP before sending
-* Lightweight Extensible Authentication Protocol (LEAP) and Protected Extensible Authentication Protocol (PEAP) -> EAP-TLS
-* Terminal Access Controller Access-Control System Plus (TACACS+) server
-
-**https://tryhackme.com/room/wifihacking101**
-
-* SSID = network name, ESSID = AP sharing a same SSID (act as a SALT, make each key unique to the access point)
-* RADIUS = Auth server
-* WEP (Wired Equivalent Privacy)
-* WPA
-    * WPA2-EAP: use RADIUS
-    * WPA2-PSk: password/passphrase/code
+* Radius: Auth Server
 </div></div>
