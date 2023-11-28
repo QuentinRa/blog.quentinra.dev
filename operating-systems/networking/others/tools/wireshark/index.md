@@ -1,7 +1,7 @@
 # Wireshark
 
-[![wireshark](../../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
-[![startup](../../../../cybersecurity/_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
+[![wireshark](../../../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
+[![startup](../../../../../cybersecurity/_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 
 <div class="row row-cols-md-2"><div>
 

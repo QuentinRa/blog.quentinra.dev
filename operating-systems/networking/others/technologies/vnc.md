@@ -1,6 +1,6 @@
 # Virtual Network Computing (VNC)
 
-[![adventofcyber4](../../../cybersecurity/_badges/thm/adventofcyber4/day5.svg)](https://tryhackme.com/room/adventofcyber4)
+[![adventofcyber4](../../../../cybersecurity/_badges/thm/adventofcyber4/day5.svg)](https://tryhackme.com/room/adventofcyber4)
 
 <div class="row row-cols-md-2"><div>
 

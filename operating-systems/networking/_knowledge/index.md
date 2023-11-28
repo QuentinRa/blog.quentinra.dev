@@ -263,23 +263,6 @@ Network segmentation
 * VRFs (Virtual Routing and Forwarding)
 
 <details class="details-n">
-<summary>Bluetooth</summary>
-
-* sniffing 
-* unauthorized access 
-* malware and viruses to be transmitted 
-* BlueBorne (attackers take control of devices without user interaction)
-* Bluejacking to send unsolicited messages or spam to the device 
-* Bluesnarfing to access data stored on the device 
-* Bluetooth device spoofing attack 
-* avoid pairing with unknown/untrusted devices 
-* turn off bluetooth 
-* up-to-date 
-* bluetooth scanning tool to identify vulnerable devices do not require pairing
-* bluez, bluetoothclt, devices
-</details>
-
-<details class="details-n">
 <summary>VoIP</summary>
 
 Voice over Internet Protocol (VoIP)
