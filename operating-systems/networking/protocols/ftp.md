@@ -4,7 +4,7 @@
 [![networkservices](../../../cybersecurity/_badges/thmp/networkservices.svg)](https://tryhackme.com/room/networkservices)
 [![networksecurityprotocols](../../../cybersecurity/_badges/thmp/networksecurityprotocols.svg)](https://tryhackme.com/room/networksecurityprotocols)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 File Transfer Protocol (FTP) is a widely used protocol to transfer files. It's mostly used externally, unlike SMB or NFS.
 
@@ -71,7 +71,7 @@ ftp> stat # same, but there is the version+ftp client name
 [![startup](../../../cybersecurity/_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 [![cowboyhacker](../../../cybersecurity/_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 FTP may be used by hackers to find interesting files.
 
@@ -94,7 +94,7 @@ $ ftp anonymous@IP
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * `ftp -p` (passive mode, may bypass some firewall)
 </div><div>

@@ -3,7 +3,7 @@
 [![introtolan](../../../cybersecurity/_badges/thm/introtolan.svg)](https://tryhackme.com/room/introtolan)
 [![wireshark](../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The Address Resolution Protocol (ARP) is used **to find a MAC given an IPV4 address**. Once found, the MAC is stored in the ARP cache.
 
@@ -45,7 +45,7 @@ There are two kind of messages:
 
 ## ARP vulnerabilities
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 * **ARP cache poisoning**
 
@@ -65,7 +65,7 @@ DHCP servers are used to assign an IP address to a host, and may keep track of I
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * ARP snooping 
 * ARP, no auth, poisoning

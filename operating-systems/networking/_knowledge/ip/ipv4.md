@@ -24,7 +24,7 @@ The id_host has non-null bits, so it's not a network address.
 
 ## Dot-Decimal Notation (DDN)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 This is the most-known representation of an IPV4 address. We are splitting ours 32 bits into 4 groups of 8 bits called bytes/octets. Then, convert them to decimal, and separate them with a dot 🤓.
 
@@ -46,7 +46,7 @@ See also: [Online tool to convert bin to IP](https://www.browserling.com/tools/b
 
 ## Classless Inter-Domain Routing (CIDR)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 CIDR is a way to write/share an IP address along the number of bits of the fixed part. The syntax is `IP/n`, such as `192.168.0.0/12` 🚀.
 
@@ -70,7 +70,7 @@ The CIDR notation is `77.33.225.0/24`.
 
 ## Netmask 🕸️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 This IP address is called a mask, as it was not created to be assigned to a machine, but to find the number of fixed bits in another IP address.
 
@@ -95,7 +95,7 @@ It's even easier to find the netmask. <small>Example with `77.33.128.0/17`.</sma
 
 ## Broadcast mask 📶
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 This is also a mask for the same reason as the netmask. It is used to send a message to EVERY machine in the network.
 
@@ -114,7 +114,7 @@ Giving us `01001101001000011110000111111111` which is `77.33.225.255`.
 
 ## Reserved/Private IP addresses
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 There are 3 ranges of IPV4 addresses that are "reserved" for internal use. They are also called private addresses.
 

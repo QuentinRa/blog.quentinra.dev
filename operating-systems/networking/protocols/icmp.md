@@ -2,7 +2,7 @@
 
 [![wireshark](../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The Internet Control Message Protocol (ICMP) is used by a machine to indicate success or failure when communicating with another machine.
 
@@ -37,7 +37,7 @@ Each code is associated with a type. Here are some of them (code: type). See [Co
 
 ## ICMP vulnerabilities
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 * **Echo request and reply ICMP**
 

@@ -2,7 +2,7 @@
 
 [![networkservices2](../../../cybersecurity/_badges/thmp/networkservices2.svg)](https://tryhackme.com/room/networkservices2)
 
-<div class="row row-cols-md-2 mt-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Network File System (NFS) is a protocol allowing a computer to mount a remote folder on its local file system.
 
@@ -42,7 +42,7 @@ $ sudo umount /tmp/share
 [![linuxprivesc](../../../cybersecurity/_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![kenobi](../../../cybersecurity/_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * It's possible to use `nmap` to get information about NFS shares:
 
@@ -72,7 +72,7 @@ $ /share/sbash -p
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 NFS
 

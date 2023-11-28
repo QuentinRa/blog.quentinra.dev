@@ -1,6 +1,6 @@
 # Internet Protocol (IP)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The Internet Protocol (IP) add necessary information to data allowing routing and internetworking communication.
 

@@ -1,6 +1,6 @@
 # Internet Printing Protocol (IPP)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The Internet Printing Protocol (IPP) is protocol to manage printers and print jobs, query printer status, and other tasks.
 
@@ -16,7 +16,7 @@ Refer to the [IPP Guide](https://www.pwg.org/ipp/ippguide.html).
 
 [![printerhacking101](../../../cybersecurity/_badges/thm/printerhacking101.svg)](https://tryhackme.com/room/printerhacking101)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 👉 See the [Printer Security Testing Cheat Sheet](http://hacking-printers.net/wiki/index.php/Printer_Security_Testing_Cheat_Sheet).
 

@@ -3,7 +3,7 @@
 [![protocolsandservers2](../../../cybersecurity/_badges/thmp/protocolsandservers2.svg)](https://tryhackme.com/room/protocolsandservers2)
 [![networksecurityprotocols](../../../cybersecurity/_badges/thmp/networksecurityprotocols.svg)](https://tryhackme.com/room/networksecurityprotocols)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 SSL and TLS are cryptographic 🔒 protocols used to securely transfer data. They are used to secure many protocols such as HTTP <small>(HTTPS)</small>, SMTP <small>(SMTPS)</small>, FTP <small>(FTPS)</small>... that were sending data as plaintext 🔥.
 
@@ -25,7 +25,7 @@ There are 3 categories of certificates: EV, OV, and DV.
 
 ## Tools
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Find certificates given a domain
 
@@ -46,7 +46,7 @@ There are 3 categories of certificates: EV, OV, and DV.
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * CertDB
 * SSLMate

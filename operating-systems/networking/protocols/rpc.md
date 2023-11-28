@@ -1,6 +1,6 @@
 # Remote procedure call (RPC)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Remote procedure call (RPC) is a protocol in which a process can communicate with another process on a different host.
 
@@ -16,7 +16,7 @@ RPC can be used to find on which port is a service running. This is done by the 
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * buffer overflow
 * malicious port redirect

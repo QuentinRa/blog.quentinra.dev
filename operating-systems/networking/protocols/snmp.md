@@ -1,6 +1,6 @@
 # Simple Network Management Protocol (SNMP)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The Simple Network Management Protocol (SNMP) is an old protocol from 1990-2000 that is still quite used by companies to manage and monitor network devices <small>(routers, switch, firewalls...)</small>.
 
@@ -18,7 +18,7 @@ The goal is to ensure that network devices are operating efficiently and effecti
 
 ## Knowledge
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The **Management Information Base (MIB)** 📂 is a component used to store information about network devices. This is a tree-like structure with each node called an **object** 📰 and carrying information such as:
 
@@ -40,7 +40,7 @@ Agents can send messages also known as "traps" without being request, for instan
 
 ## Configuration
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can configure SNMP using commands, such as:
 
@@ -65,7 +65,7 @@ Once installed, open "Services" and find the SNMP service. Right-click on edit, 
 
 ## SNMPv2c
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 SNMPv2c is still used by some companies even if it's advised to use SNMPv3 as the latter is more secure. SNMPv2c
 
@@ -85,7 +85,7 @@ Commands: `snmpget`, `snmpwalk`, `snmpset`, `snmptrap`...
 
 ## SNMPv3
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Migrating to SNMPv3 can be hard, but it may be required to comply with some regulations <small>(PCI DSS, HIPAA)</small>. Overall it's more robust, performant, reliable and secure.
 
@@ -105,7 +105,7 @@ Commands: `snmpget`, `snmpwalk`, `snmpset`, `snmpinform`...
 
 ## SNMP vulnerabilities ☠️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Common SNMPv2c community strings
 
@@ -133,7 +133,7 @@ $ onesixtyone -c wordlist IP
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * SNMP ACLs (SNMP tcp/161): separate ACLs specifically for SNMP, they are more granular than the generic ACLs
     * ip/range of ips

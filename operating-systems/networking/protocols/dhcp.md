@@ -2,7 +2,7 @@
 
 [![introtolan](../../../cybersecurity/_badges/thm/introtolan.svg)](https://tryhackme.com/room/introtolan)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 IPV4 addresses are usually not attributed to a host manually. We use a Dynamic Host Configuration Protocol (DHCP) server instead.
 
@@ -29,7 +29,7 @@ If a new device with no address IP is connecting to the network
 
 ## DHCP vulnerabilities
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * **Rogue DHCP server attacks**
 
@@ -47,7 +47,7 @@ If a new device with no address IP is connecting to the network
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * DHCP, hacker answer before DHCP server
 </div><div>

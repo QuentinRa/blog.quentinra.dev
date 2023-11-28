@@ -3,7 +3,7 @@
 [![dnsindetail](../../../cybersecurity/_badges/thm/dnsindetail.svg)](https://tryhackme.com/room/dnsindetail)
 [![wireshark](../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The Domain Name System (DNS) protocol is used to convert a **domain name** such as `example.com` to an IP address `93.184.216.34`. A domain name is for humans, while IP address are for machines 🏭.
 
@@ -27,7 +27,7 @@ There are [multiple type](https://www.ietf.org/rfc/rfc1035.txt) of records for a
 
 ## DNS resolution process 📞
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 DNS nameservers have a tree-like hierarchy starting from the root.
 
@@ -69,7 +69,7 @@ A client will usually ask **recursive servers** 🦀 such as the one maintained 
 
 ## Fully Qualified Domain Name 🎯
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A Fully Qualified Domain Name (FQDN) is a name with both a hostname <small>(subdomain, server...)</small> and a domain name to unambiguous identify a specific domain 🎯.
 
@@ -85,7 +85,7 @@ Given the FQDN `www.example.com`, `www` is the hostname, while `example.com` is 
 
 ## DNS vulnerabilities ☠️
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 * **Open DNS resolvers** <small>(DNS allowing everyone to poll data)</small>
 
@@ -113,7 +113,7 @@ Given the FQDN `www.example.com`, `www` is the hostname, while `example.com` is 
 
 ## DNS commands
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### `dig`: ip/domain lookup
 
@@ -186,7 +186,7 @@ $ whois 8.8.8.8
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Multiple domains can point to the same IP address
 * DNS zones

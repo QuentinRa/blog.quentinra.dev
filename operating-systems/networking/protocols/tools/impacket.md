@@ -2,7 +2,7 @@
 
 [![windowsprivesc20](../../../../cybersecurity/_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [impacket](https://github.com/fortra/impacket) (11.1k ⭐) is a collection of [python](/programming-languages/high-level/scripting/python/index.md) classes for working with network protocols.
 

@@ -1,6 +1,6 @@
 # Networking
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A network is a net of devices connected to each other, such as all the devices connected to your internet box 💻.
 
@@ -26,7 +26,7 @@ Some elements that are involved, shown in the simplified schema:
 
 ## IP Addresses and MAC address
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### IP addresses 🌍
 
@@ -58,7 +58,7 @@ Each [Network interface](#interfaces) has one.
 
 ## Interfaces and ports
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Interfaces
 
@@ -98,7 +98,7 @@ A port is a virtual messaging channel which is only associated with one protocol
 
 ## Networking models
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### OSI model
 
@@ -144,7 +144,7 @@ The TCP/IP model was introduced before the OSI model, but remains the most used 
 
 [![packetsframes](../../../cybersecurity/_badges/thmp/packetsframes.svg)](https://tryhackme.com/room/packetsframes)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A protocol is a set of instructions formalizing the way of communicating between devices <small>(endianness, floating numbers format, charset, separators, integrity, errors...)</small>.
 
@@ -247,7 +247,7 @@ Each protocol can be represented using a [Message Sequence Chart](https://en.wik
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * see SRM notes
 * IPV6 EUI64 (texas)

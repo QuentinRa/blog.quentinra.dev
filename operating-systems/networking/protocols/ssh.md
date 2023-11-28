@@ -3,7 +3,7 @@
 [![protocolsandservers2](../../../cybersecurity/_badges/thmp/protocolsandservers2.svg)](https://tryhackme.com/room/protocolsandservers2)
 [![linux2](../../../cybersecurity/_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Secure shell (SSH) is the most commonly used protocol to access a remote shell on a remote host.
 
@@ -28,7 +28,7 @@ $ ssh username@IP -i /path/to/id_rsa
 
 ## SSH vulnerabilities ☠️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A hacker want to access the target host, and compromise it. 
 
@@ -44,7 +44,7 @@ A hacker want to access the target host, and compromise it.
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * `ssh xxx@yyy -T -L xxx:domain:xxx`: create a tunnel mapping one port to another
 * ssh-keygen

@@ -5,7 +5,7 @@
 [![networksecurityprotocols](../../../cybersecurity/_badges/thmp/networksecurityprotocols.svg)](https://tryhackme.com/room/networksecurityprotocols)
 [![wireshark](../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 HTTP is a protocol used to exchange with a webserver. Your browser is sending an HTTP request to a webserver, receives a response with HTML inside, and displays the page in your browser.
 
@@ -71,7 +71,7 @@ You can use [httpstatus](https://httpstatus.io/) to test the response code for a
 
 ## HTTP Headers in web applications
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 HTTP Headers are commonly used to determine the web browser behavior for a website. Common usages are:
 

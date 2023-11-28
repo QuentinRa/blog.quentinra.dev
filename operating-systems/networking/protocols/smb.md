@@ -3,7 +3,7 @@
 [![networkservices](../../../cybersecurity/_badges/thmp/networkservices.svg)](https://tryhackme.com/room/networkservices)
 [![adventofcyber4](../../../cybersecurity/_badges/thm/adventofcyber4/day4.svg)](https://tryhackme.com/room/adventofcyber4)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Server Message Block (SMB) is a protocol used for Windows file exchange system. It's similar to [NFS](nfs.md) for Linux.
 
@@ -75,7 +75,7 @@ PS> copy file \\IP\share # using current user credentials
 
 [![kenobi](../../../cybersecurity/_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Using nmap you can try to:
 
@@ -133,7 +133,7 @@ A vulnerability in the SMB protocol allowing Remote Code Execution (RCE). It was
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * SMBenum
 </div><div>

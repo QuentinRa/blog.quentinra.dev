@@ -1,6 +1,6 @@
 # Remote Desktop Protocol (RDP)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Remote Desktop Protocol (RDP) is a protocol used to connect a desktop with a graphical interface to another computer over a network connection.
 
@@ -33,7 +33,7 @@ There is [Remmina](https://github.com/FreeRDP/Remmina) (1.9k ⭐, `apt install r
 
 [![passwordattacks](../../../cybersecurity/_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [BlueKeep Vulnerability](https://en.wikipedia.org/wiki/BlueKeep) (2019)
 
@@ -54,7 +54,7 @@ $ python3 RDPassSpray.py [...] -T rdp_servers.lst
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * rlogin
 </div><div>
