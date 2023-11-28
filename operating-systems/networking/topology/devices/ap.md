@@ -1,6 +1,6 @@
 # Access points
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 An access point (AP) is a device providing wireless connectivity to a wired network 📶.
 
@@ -41,7 +41,7 @@ A hacker create an access point using the SSID of another network. Users may con
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * MAC filtering
 * Radius client/server

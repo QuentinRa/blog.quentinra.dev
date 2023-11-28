@@ -5,7 +5,7 @@
 
 [Go back](../index.md#networking-devices)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A router is a device usually connecting a LAN network with a WAN network, while more generically, it connects two networks. 
 
@@ -26,7 +26,7 @@ These algorithms are using information such as the shortest number of devices to
 
 ## Routing table
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A router will use a routing table to determine
 

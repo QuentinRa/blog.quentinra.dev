@@ -1,6 +1,6 @@
 # Microsoft Visio
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Microsoft visio is a tool in the Office 365 suite allowing to draw diagrams, including network diagrams.
 
@@ -14,7 +14,7 @@ It's a **paid tool** 💵. Refer to the [Microsoft visio page](https://www.micro
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [Network Diagram Using Microsoft Visio 2021](https://www.youtube.com/watch?v=D4OxpdjfjeI)
 </div><div>

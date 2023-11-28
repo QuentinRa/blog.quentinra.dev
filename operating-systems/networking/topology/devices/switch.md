@@ -5,7 +5,7 @@
 
 [Go back](../index.md#networking-devices)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 They connect physically multiple devices in a network. Switches are a smarter and widely used alternative to [Hubs](hub.md).
 

@@ -2,7 +2,7 @@
 
 [Go back](../index.md#networking-devices)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A network firewall is a type of [Gateway](gateway.md) device that focuses on monitoring 🔎 and filtering traffic ⛔.
 

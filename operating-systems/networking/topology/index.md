@@ -1,6 +1,6 @@
 # Network topology
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Network topology is the physical or logical layout of a network. It impacts performance, reliability, scalability, and security.
 
@@ -20,7 +20,7 @@ There are a few different kind of networks:
 
 ## Networking devices
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Networking devices are interconnected by cables.
 
@@ -71,7 +71,7 @@ Networking devices are interconnected by cables.
 
 [![introtolan](../../../cybersecurity/_badges/thm/introtolan.svg)](https://tryhackme.com/room/introtolan)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Star Topology ✨
 
@@ -107,7 +107,7 @@ Combine two or more network topologies according to the need. It can be harder t
 
 ## Logical network topology
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Peer-to-Peer Topology (P2P)
 
@@ -125,7 +125,7 @@ Some network devices act as servers, and others as clients. It's the common appr
 
 ## Network segmentation
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Network segmentation is the process of dividing a large network into smaller networks, isolated from each other.
 
@@ -167,7 +167,7 @@ Each network is made by permutations of the newly added $n$ bits.
 
 ## Topology design 🗺️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Plan the scalability**
 
@@ -203,7 +203,7 @@ And select an appropriate topology.
 
 ## Network devices features
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### High Availability (HA)
 
@@ -221,7 +221,7 @@ This feature is available on many network switches. It allows us to duplicate th
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Topologies
 

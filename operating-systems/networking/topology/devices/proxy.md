@@ -2,7 +2,7 @@
 
 [Go back](../index.md#networking-devices)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 There are multiple types of proxy, and their features are different.
 
@@ -38,7 +38,7 @@ A reverse proxy is the opposite of an open proxy. Instead of filtering outgoing 
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [frp](https://github.com/fatedier/frp)
 </div><div>

@@ -3,7 +3,7 @@
 [![wireshark](../../../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
 [![startup](../../../../../cybersecurity/_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Wireshark](https://www.wireshark.org/download.html) is a well-known and popular GUI for packet analysis. When starting wireshark, select an interface to capture traffic. You can also load a saved capture (`.pcap`, `.pcapng`).
 
@@ -56,7 +56,7 @@ If packets are encrypted, you need the private key. You can load it at: `Edit > 
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Right-click on a packet > Follow TCP Stream, and you will see in a human-readable way the data exchanged.
 

@@ -2,7 +2,7 @@
 
 [Go back](../index.md#networking-devices)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A gateway is a device that serves connecting two or more networks. It's mostly used to connect networking using different protocols or technologies.
 
@@ -22,7 +22,7 @@ A gateway can:
 
 ## Network rules
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Network filters are behaviors applied to a packet matching predefined rules. This section will highly refer to the command `iptables`.
 

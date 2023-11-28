@@ -2,7 +2,7 @@
 
 [Go back](../index.md#networking-devices)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A load balancer is a device sitting between clients and servers. Its main purpose is to ensure the charge is appropriately balanced between every server, to avoid overcooking servers.
 

@@ -2,7 +2,7 @@
 
 [Go back](../index.md#networking-devices)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Ethernet is a widely used technology in LAN networks. Usually, devices are connected to a switch/hub using Ethernet.
 

@@ -1,6 +1,6 @@
 # Imunes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [imunes](http://imunes.net/) is a free open-source network emulator. You can create and configure multiple network devices a.k.a. nodes
 
@@ -32,7 +32,7 @@ $ imunes -b -e <id> # kill
 
 ## Notes 📝
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Using the GUI:
 

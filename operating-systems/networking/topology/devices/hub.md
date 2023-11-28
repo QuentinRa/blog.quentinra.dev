@@ -2,7 +2,7 @@
 
 [Go back](../index.md#networking-devices)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 They connect physically multiple devices in a network. They receive packets from connected devices, and send them to the target device.
 

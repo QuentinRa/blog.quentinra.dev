@@ -3,7 +3,7 @@
 [![extendingyournetwork](../../../../cybersecurity/_badges/thmp/extendingyournetwork.svg)](https://tryhackme.com/room/extendingyournetwork)
 [![networksecurityprotocols](../../../../cybersecurity/_badges/thmp/networksecurityprotocols.svg)](https://tryhackme.com/room/networksecurityprotocols)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A **virtual private network** (**VPN**) is a technology allowing two or more computers on different networks to communicate securely as if they were on the same network segment.
 

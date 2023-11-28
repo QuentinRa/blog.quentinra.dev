@@ -6,7 +6,7 @@
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ACLs (std <small>(1-99, 1300-1999)</small>, extended <small>(100-199, 2000-2699)</small>, can be a string)
 
