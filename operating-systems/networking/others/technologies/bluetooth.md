@@ -2,10 +2,32 @@
 
 <div class="row row-cols-lg-2"><div>
 
-...
+Bluetooth is a wireless technology standard for exchanging data between between devices over short distances. It operates on the 2.4 GHz frequency band and uses short-range radio waves.
+
+The latest version is **5.4** (2023).
+
+🔒 Ensure you disabled bluetooth if you don't use it.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## Bluetooth vulnerabilities ☠️
+
+<div class="row row-cols-lg-2"><div>
+
+Well-known Bluetooth attacks:
+
+* **Bluetooth Scanning** 🗺️: without pairing, a hacker can scan bluetooth devices and identify those that are vulnerable
+
+* **Bluejacking** 📢: send unsolicited messages or files, spam
+
+* **BlueSnarfing** 💵: gain access to sensitive data <small>(calendar, messages, etc.)</small> without pairing <small>(mostly old bluetooth implementations)</small>
 </div><div>
 
-...
+* **BlueBugging** 🪲: hacker can access all phone features.
+
+* **Blueborne** 🤖: 8 vulnerabilities including vulnerability allowing attackers to take control of devices without user interaction
 </div></div>
 
 <hr class="sep-both">
@@ -16,19 +38,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* sniffing
-* unauthorized access
-* malware and viruses to be transmitted
-* BlueBorne (attackers take control of devices without user interaction)
-* Bluejacking to send unsolicited messages or spam to the device
-* Bluesnarfing to access data stored on the device
-* Bluetooth device spoofing attack
-* avoid pairing with unknown/untrusted devices
-* turn off bluetooth
-* up-to-date
-* bluetooth scanning tool to identify vulnerable devices do not require pairing
-* bluez, bluetoothclt, devices
+* bluez
+* bluetoothclt > devices
 </div><div>
-
-
 </div></div>
