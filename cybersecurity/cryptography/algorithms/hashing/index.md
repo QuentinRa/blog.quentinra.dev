@@ -7,7 +7,7 @@
 [![c4ptur3th3fl4g](../../../_badges/thm-p/c4ptur3th3fl4g.svg)](https://tryhackme.com/room/c4ptur3th3fl4g)
 [![corridor](../../../_badges/thm-p/corridor.svg)](https://tryhackme.com/room/corridor)
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 A hashing algorithm is a one-way function taking data and generating a  hash/digest. They are mainly used to:
 
@@ -32,7 +32,7 @@ Since a hash function is one-way, it's impossible to know the original data. How
 
 ## Generate a hash 🔑
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 👉 There are many language-specific functions, but you can use these commands for testing.
 
@@ -85,7 +85,7 @@ For instance, [decrypt.tools](https://decrypt.tools/encrypt) <small>(not many al
 
 [![linuxstrengthtraining](../../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Let's say we got some hash, and we want to find which algorithm generated this hash, such as MD5, SHA1...
 
@@ -136,7 +136,7 @@ Some tools may provide an incorrect format, or not support the format you are lo
 
 ## Hash cracking
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Hash cracking usually involves a dictionary with a list of potential passwords a.k.a. [wordlist](/cybersecurity/red-team/_knowledge/index.md#wordlists-) <small>(Rainbow tables may be used for older systems)</small>.
 
@@ -161,7 +161,7 @@ For instance, [crackstation](https://crackstation.net/) <small>(you can download
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [Hash-Buster](https://github.com/s0md3v/Hash-Buster)
 </div><div>

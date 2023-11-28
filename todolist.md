@@ -15,7 +15,7 @@ List of courses that have note which were not added yet.
 
 **Cybersecurity**
 
-* AD Windows Linux Security, IoT, Cloud
+* AD Windows Linux Security, IoT, Cloud, Networking
 * Guake/iTerm2/Terminology/[tmux](https://www.youtube.com/watch?v=Lqehvpe_djs)/[terminator](https://github.com/gnome-terminator/terminator)/[tmux](https://www.youtube.com/watch?v=Lqehvpe_djs) + [cheatsheet](https://tmuxcheatsheet.com/)
 * `strace/strings` [link](https://jvns.ca/strace-zine-v3.pdf)
 </div></div>

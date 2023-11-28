@@ -2,7 +2,7 @@
 
 [![encryptioncrypto101](../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 Symmetric algorithms <small>(a.k.a. secret key algorithm)</small> are algorithms in which the **same key** is used to encrypt and decrypt a cipher.
 
@@ -20,7 +20,7 @@ Symmetric algorithms <small>(a.k.a. secret key algorithm)</small> are algorithms
 
 ## Two types of algorithms 👪
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Stream cipher (<code>chiffrement par flot</code>)
 
@@ -45,7 +45,7 @@ These algorithms split the message into blocks of fixed size `n`. If a block is 
 
 ## Caesar cipher (<code>Code de César</code>)
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 Caesar 👑 was replacing letters such as: $a \to d,\ b \to e,\ ...,\ z \to c$. We shift each letter by amount which is the key ($k=3$ here).
 
@@ -66,7 +66,7 @@ Caesar 👑 was replacing letters such as: $a \to d,\ b \to e,\ ...,\ z \to c$. 
 
 ## Substitution cipher (<code>Chiffrement par substitution</code>)
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 Similar to Caesar's cipher. Each letter is associated with another: $a \to w,\ b \to e,\ etc.$ The key is a dictionary of 26 letters (a-z).
 
@@ -87,7 +87,7 @@ Similar to Caesar's cipher. Each letter is associated with another: $a \to w,\ b
 
 ## Vigenère cipher (<code>Cryptage en bloc de Vigenère</code>)
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 This is a Caesar cipher but split into blocs. The goal was to prevent frequency analysis because the same letter will *most likely* be enciphered as different ciphertext letters.
 
@@ -122,7 +122,7 @@ This is a Caesar cipher but split into blocs. The goal was to prevent frequency 
 
 ## One Time Pad (`Masque jetable`)
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 The **One Time Pad**, or One Time password, abbreviated as **OTP**, is theoretically unbreakable if used correctly. It's not quite used because the key must be as long as the message.
 
@@ -144,7 +144,7 @@ Since both $m$ and $k$ are letters, we need to convert them to binary to use the
 
 ## Advanced Encryption Standard (AES)
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 The **Advanced Encryption Standard**, abbreviated as **AES**, is a part of the **Block ciphers** algorithms.
 

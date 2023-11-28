@@ -2,7 +2,7 @@
 
 [![encryptioncrypto101](../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 Asymmetric algorithms <small>(a.k.a. public-key algorithm)</small> are algorithms in which **different keys** are used to encrypt and decrypt a cipher.
 
@@ -18,7 +18,7 @@ Asymmetric algorithms <small>(a.k.a. public-key algorithm)</small> are algorithm
 
 ## Knapsack problem (`sac-à-dos`) of Merkle-Hellman
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Merkle-Hellman knapsack problem is one of the earliest public-key algorithms 🐣. The private key is a super-increasing knapsack problem, while the public key is the private key transformed enough so that it becomes a knapsack problem.
 
@@ -100,7 +100,7 @@ We will pick a value $N$ greater than the sum of the values in the Knapsack, and
 
 [![encryptioncrypto101](../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 It allows two parties to establish a shared secret key over an insecure communication channel. It works as follows:
 
@@ -125,7 +125,7 @@ It allows two parties to establish a shared secret key over an insecure communic
 
 [![encryptioncrypto101](../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * 🔨 Choose two large prime numbers: **p** and **q**
 * ⛏️ Compute their product: $n = p * q$

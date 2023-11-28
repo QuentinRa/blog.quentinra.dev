@@ -4,7 +4,7 @@
 [![linuxstrengthtraining](../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 [![encryptioncrypto101](../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The `gpg` tool can be used to encrypt files, using a passphrase, which is like a password. It can also be used to sign something. For instance, GitHub allows you to sign your commits using GPG keys.
 
@@ -27,4 +27,16 @@ A **private key** can be used instead of a passphrase. To decrypt a file that wa
 ```ps
 $ gpg --import xxx.key [...]
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* PGP (Pretty Good Privacy). GnuPG/GPG = implementation from the GNU project.
+</div><div>
 </div></div>

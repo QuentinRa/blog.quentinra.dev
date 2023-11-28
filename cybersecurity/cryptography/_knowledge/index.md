@@ -2,7 +2,7 @@
 
 [![encryptioncrypto101](../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Cryptography has three main objectives:
 
@@ -32,13 +32,13 @@ Cryptanalysts are those with the duty to analyze and find weaknesses in the unde
 
 ## Terminology
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
 
 In a nutshell, we use these terms:
 
 * The input is a **plaintext** message 💬.
 
-* It is **encrypted** 🔒 <small>(a.k.a. encipher)</small> using a cryptographic algorithm and a **key** 🔑. The output is called a **ciphertext** (`message encrypté`) 🔐. 
+* It is **encrypted** 🔒 <small>(a.k.a. encipher)</small> using a cryptographic algorithm and a **key** 🔑. The output is called a **ciphertext** 🔐. 
 
 * It is **decrypted** 🔓  using a cryptographic algorithm and a **key** 🗝️.
 </div><div>
@@ -55,7 +55,7 @@ Algorithms can be
 
 ## Cryptographic attacks
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Brute force attack** 🧨: trying all possible values until the correct one is found.
 
@@ -80,7 +80,7 @@ Algorithms can be
 
 ## Mathematical fundaments
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Congruence
 
@@ -135,7 +135,7 @@ $D(a,b)$ is the set of common divisors between $a$ and $b$. We are calling the "
 
 ## Modular inverse
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Bézout's identity (<code>Thèorème de Bezout</code>)
 
@@ -187,7 +187,7 @@ A number $a$ is invertible modulus $m$ if $\exists a^{-1}$ giving us $a * a^{-1}
 
 ## Prime numbers (`Nombres premiers`)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A prime number is a number **greater than or equal to 2**, which is **only divisible by 1 and itself**.
 
@@ -221,7 +221,7 @@ GCP(98, 77) = 2^{min(1, 0)} * 7^{min(2, 1)} * 11^{min(0, 1)}
 
 ## Calculation shortcut
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 If you need to manually calculate a Euclidean division with big numbers, then you may want to use the prime Factorization shortcut.
 
@@ -256,12 +256,11 @@ This is called the **Euler theorem** ([wiki](https://en.wikipedia.org/wiki/Euler
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [justcryptography](https://justcryptography.com/)
 * [angelique-renaud](https://www.angelique-renaud.com/cryptage.php)
 * [wikipedia portal](https://fr.wikipedia.org/wiki/Portail:Cryptologie)
-* PGP (Pretty Good Privacy). GnuPG/GPG = implementation from the GNU project.
 </div><div>
 
 * SRM (error-correcting code)

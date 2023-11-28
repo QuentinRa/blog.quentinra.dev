@@ -3,7 +3,7 @@
 [![johntheripper0](../../../../_badges/thmp/johntheripper0.svg)](https://tryhackme.com/room/johntheripper0)
 [![linuxstrengthtraining](../../../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [John the Ripper](https://github.com/openwall/john) (<small>Jumbo</small>, 7.4k ⭐), a.k.a. **john**/**JtR** is, like hashcat, a tool to crack hashes. For convenience's sake, we store the hash in `myhash`.
 
@@ -24,7 +24,7 @@ $ john --list=formats | grep -i "md5"
 
 ## Formats and wordlists
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 Reminder: the wordlist is the list of passwords to test, while the format is the kind of hash, such as MD5.
 
@@ -62,7 +62,7 @@ $ john hash --format=raw-md4 --wordlist=/usr/share/wordlists/rockyou.txt
 
 [![passwordattacks](../../../../_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The single crack mode is one of JtR modes. In this mode, we define rules 🔏 that are applied to the wordlist, to generate a new "enhanced" wordlist. 🔥 For instance, users tend to
 
@@ -109,7 +109,7 @@ $ john --wordlist=xxx --rules=yyy --stdout > wordlist
 
 [![linprivesc](../../../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Modern Linux distros use `sha512crypt`. Use name-that-hash, or any other tools to find the format if needed. The easy way is only passing the hash of the user you want
 
@@ -130,7 +130,7 @@ $ john myhash --format=sha512crypt --wordlist=wordlist
 
 ## Windows password cracking
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Modern Windows are using the hash format "NT", also referred to as "NTLM", because "LM" was the previous hash format.
 
@@ -151,7 +151,7 @@ $ john myhash --format=netntlmv2 --wordlist=wordlist
 [![linuxstrengthtraining](../../../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 [![encryptioncrypto101](../../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can try to crack the passphrase of [GPG encrypted files](/cybersecurity/cryptography/commands/gpg.md) using john. You need to convert the gpg passphrase to a hash first.
 
@@ -174,7 +174,7 @@ $ john --format=gpg myhash --wordlist=wordlist
 [![encryptioncrypto101](../../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
 [![basicpentestingjt](../../../../_badges/thm-p/basicpentestingjt.svg)](https://tryhackme.com/room/basicpentestingjt)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Some users use a key instead of a password while connecting to a server via [SSH](/operating-systems/networking/protocols/ssh.md), because, as long as the key is not leaked, it's more secure than sending credentials.
 
@@ -195,7 +195,7 @@ $ john --format=ssh myhash --wordlist=wordlist
 
 ## RAR password cracking
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 First, convert the password to a file compatible with john.
 
@@ -219,7 +219,7 @@ $ unrar x hello.rar
 
 [![agentsudoctf](../../../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 First, convert the password to a file compatible with john.
 
