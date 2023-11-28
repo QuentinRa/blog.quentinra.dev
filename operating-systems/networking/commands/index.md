@@ -1,15 +1,14 @@
 # Networking commands
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 This section gather commands that are used quite used in networking. It doesn't include commands for each protocol, such as `ftp` or `ssh`.
 
-➡️ See [Protocols](../_knowledge/index.md#protocols)
-</div><div>
-
-Special shortcuts
-
 * [DNS protocol](../protocols/dns.md#dns-commands): dig, whois...
+* ...
+
+Refer to the list of [protocols](../_knowledge/index.md#protocols).
+</div><div>
 </div></div>
 
 <hr class="sep-both">
@@ -20,7 +19,7 @@ Special shortcuts
 
 [**hostname** - host name]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: show the name of the host
 
@@ -40,7 +39,7 @@ $ hostname -d
 
 [**ip** - all in one]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: merge of multiple commands <small>(`route`, `arp`, `ipconfig`)</small>. Note that `ipconfig` is still used on Windows.
 
@@ -86,7 +85,7 @@ $ ip n
 
 [**ipconfig** - Windows 'ip']
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: on Linux, `ipconfig` is deprecated over `ip a`, but on Windows, it's still the command used.
 
@@ -135,7 +134,7 @@ Show Routing table. Obsolete, see `ip r`.
 
 [**ss** - list open ports]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: list open ports
 
@@ -151,7 +150,7 @@ $ ss -u # udp
 
 [**netstat** - network info]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: show network information and stats.
 
@@ -186,7 +185,7 @@ $ netstat -tulpn # common usage
 
 [![introtonetworking](../../../cybersecurity/_badges/thm/introtonetworking.svg)](https://tryhackme.com/room/introtonetworking)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: send a message to see if a host is up and replying to pings.
 
@@ -216,7 +215,7 @@ Other options
 
 [**nc** - open a connection]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [![activerecon](../../../cybersecurity/_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
 
@@ -252,7 +251,7 @@ $ nc ip -p port
 
 [![introtonetworking](../../../cybersecurity/_badges/thm/introtonetworking.svg)](https://tryhackme.com/room/introtonetworking)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: trace the route that a packet is taking.
 
@@ -305,7 +304,7 @@ CMD> tracert ip
 
 [**tcpdump** - monitor network]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: monitor the network. Root required.
 
@@ -355,7 +354,7 @@ A popular tool to monitor a network. See [Wireshark](../tools/wireshark/index.md
 
 [**ufw** - traffic rules]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: [UFW](https://help.ubuntu.com/community/UFW), Uncomplicated Firewall, is the default firewall for Ubuntu. Like others, you define rules for incoming/outgoing traffic.
 
@@ -380,7 +379,7 @@ $ sudo ufw allow from CIDR to any port 22
 
 [**iptables** - traffic rules]
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: define rules for incoming/outgoing traffic.
 
@@ -436,7 +435,7 @@ Common chains are:
 
 [![linuxsystemhardening](../../../cybersecurity/_badges/thmp/linuxsystemhardening.svg)](https://tryhackme.com/room/linuxsystemhardening)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: define rules for incoming/outgoing traffic. It's replacing the legacy `iptables`, and supposedly more scalable and performant.
 
@@ -482,7 +481,7 @@ $ nft add fwfilter c_name tcp dport 22 drop
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [DNS commands](../protocols/dns.md#-to-do-)
 * [NFS commands](../protocols/nfs.md#-to-do-)

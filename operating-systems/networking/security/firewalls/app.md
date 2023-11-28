@@ -2,7 +2,7 @@
 
 [Go back](../index.md#firewalls)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Applicative firewall operate at the layer 7 of the OSI model. It's designed to protect application or services from attacks. For instance, they could be set up to protect
 

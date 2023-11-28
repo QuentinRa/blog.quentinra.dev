@@ -2,7 +2,7 @@
 
 [![intronetworksecurity](../../../cybersecurity/_badges/thmp/intronetworksecurity.svg)](https://tryhackme.com/room/intronetworksecurity)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Common security controls** 🛫
 
@@ -27,7 +27,7 @@ Security controls are determined based on the type of traffic.
 
 [![protocolsandservers2](../../../cybersecurity/_badges/thmp/protocolsandservers2.svg)](https://tryhackme.com/room/protocolsandservers2)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Sniffing** 🐛: without or with a weak encryption, an actor can listen to exchanged packets, to learn more about the network architecture, and to find the weak point.
 
@@ -51,7 +51,7 @@ Security controls are determined based on the type of traffic.
 
 [![extendingyournetwork](../../../cybersecurity/_badges/thmp/extendingyournetwork.svg)](https://tryhackme.com/room/extendingyournetwork)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A firewall is a solution present in every modern secure network. It is used to filter 👮, and block unauthorized traffic ⛔.
 
@@ -76,7 +76,7 @@ There are two kind of firewall architectures:
 
 ## Network zoning
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Network zoning is a form of [network segmentation](../topology/index.md#network-segmentation) that focuses on security rather than performances or similar reasons that could lead to network segmentation.
 
@@ -103,7 +103,7 @@ A Demilitarized Zone (DMZ) is a physical or logical subnet separating two networ
 
 ## Access control lists (ACLs)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Access control lists (ACLs) are used to control traffic flow on a network interface by allowing or denying traffic based on specific criteria.
 
@@ -130,7 +130,7 @@ Standard ACLs are usually placed near the destination of the traffic, and they f
 
 ## TCP/IP Protocol Stack Security
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 The set of protocols that make up the TCP/IP suite, a.k.a. as the TCP/IP protocol Stack, is exposed to some vulnerabilities.
 
@@ -166,7 +166,7 @@ The set of protocols that make up the TCP/IP suite, a.k.a. as the TCP/IP protoco
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Advanced Malware Protection (AMP)
 * Duo (two-factor)
