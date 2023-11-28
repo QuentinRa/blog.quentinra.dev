@@ -490,6 +490,7 @@ Stuff that I found, but never read/used yet.
 * `(timeout 1 bash -c '</dev/tcp/IP/port' && echo OPEN || echo CLOSED) 2> /dev/null`
 
 ```shell!
+$ # sudo apt install bridge-utils
 $ sudo brctl addbr xxx
 $ sudo brctl show
 $ sudo brctl delbr

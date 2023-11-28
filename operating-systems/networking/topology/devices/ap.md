@@ -14,7 +14,7 @@ WI-FI is the most used technology to connect to an access point. Access point br
 
 ## Access point vulnerabilities ☠️
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 * **💥 Evil twin attack**
 
@@ -26,7 +26,7 @@ A hacker create an access point using the SSID of another network. Users may con
 
 ## Access point security 🔒
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Limit the range to the company
 * Disable SSID broadcasting <small>(if applicable)</small>

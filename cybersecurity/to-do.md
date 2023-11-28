@@ -327,6 +327,7 @@ https://tryhackme.com/room/retro (blaster...)
 * [EXOCET](https://github.com/tanc7/EXOCET-AV-Evasion)
 * [HackBrowserData](https://github.com/moonD4rk/HackBrowserData)
 * [AutoRecon](https://github.com/Tib3rius/AutoRecon)
+* Kismet
 </div></div>
 
 <hr class="sep-both">
