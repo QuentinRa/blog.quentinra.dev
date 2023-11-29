@@ -524,7 +524,7 @@ The WSUS service is used to manage and deploy updates to Windows workstation wit
 * **Client**: receive the selected downloaded updates, and install them.
 </div><div>
 
-Before updating, it's always wiser [to prepare properly](/cybersecurity/blue-team/updates.md).
+Before updating, it's always wiser [to prepare properly](/cybersecurity/blue-team/topics/updates.md).
 
 🔥 Microsoft webserver (IIS) is a dependancy, and is automatically installed. This can be an attack vector if not handled.
 

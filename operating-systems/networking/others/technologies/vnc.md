@@ -4,7 +4,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-Virtual Network Computing (VNC) is a graphical desktop-sharing system similar to [RDP](../protocols/rdp.md), but using the RFB protocol.
+Virtual Network Computing (VNC) is a graphical desktop-sharing system similar to [RDP](/operating-systems/networking/protocols/rdp.md), but using the RFB protocol.
 
 It can optionally allow the remote user to control the keyboard and the mouse, on top of the remote computer.
 

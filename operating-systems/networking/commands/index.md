@@ -334,7 +334,7 @@ $ sudo tcpdump ip proto \\icmp -i tun0
 
 **Example** 🔥:
 
-* `-f "filter"`: see [wireshark capture filters](../tools/wireshark/index.md)
+* `-f "filter"`: see [wireshark capture filters](/operating-systems/networking/others/tools/wireshark/index.md)
 * `-F file`: read from a file
 
 ```ps
@@ -343,7 +343,8 @@ $ tshark -i eth0 -f "host some_ip"
 
 [**wireshark** - monitor network]
 
-A popular tool to monitor a network. See [Wireshark](../tools/wireshark/index.md)
+A popular tool to monitor a network. See [Wireshark](/operating-systems/networking/others/tools/wireshark/index.md).
+
 ++++++
 
 <hr class="sep-both">

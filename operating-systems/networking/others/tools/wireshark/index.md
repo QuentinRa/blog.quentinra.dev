@@ -31,7 +31,7 @@ To find the interesting line, you can apply filters. Check out the bookmark icon
 
 #### Packets
 
-Double-click on a packet to see details. They are divided in dropdowns for each [OSI layer](../../_knowledge/index.md#osi-model).
+Double-click on a packet to see details. They are divided in dropdowns for each [OSI layer](/operating-systems/networking/_knowledge/index.md#osi-model).
 
 Usually, the last dropdown is the one that you will want to inspect.
 

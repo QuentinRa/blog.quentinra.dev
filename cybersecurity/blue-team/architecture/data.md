@@ -15,7 +15,7 @@ Data governance starts by considering data as a critical asset of the company. I
 And, define how 🔑 data is protected at every step.
 </div><div>
 
-We need to identify the **needs**, **requirements**, and the **risks** related to the data, as defined in [Risk management](/cybersecurity/blue-team/risk.md), to reduce risks under an acceptable level. Some risks related to data are:
+We need to identify the **needs**, **requirements**, and the **risks** related to the data, as defined in [Risk management](/cybersecurity/blue-team/topics/risk.md), to reduce risks under an acceptable level. Some risks related to data are:
 
 * 💰 Fines due to non-compliance with legal requirements <small>(GDPR...)</small>
 * 🔥 Reputation loss <small>(data breaches usually cause distrust)</small>
@@ -193,7 +193,7 @@ Elements are in the same class if they share the same controls. A common classif
 
 ➡️ Clearly define what information is in which level. It's usually based on the valuation. You should not have more than 7.
 
-🔥 An organization may add a class or a subclass in every class called **Critical data** for data essential for the organization to operate. They are usually identified when performing a [risk assessment](/cybersecurity/blue-team/risk.md#risk-assessment).
+🔥 An organization may add a class or a subclass in every class called **Critical data** for data essential for the organization to operate. They are usually identified when performing a [risk assessment](/cybersecurity/blue-team/topics/risk.md#risk-assessment).
 
 🧨 An organization may also add a class or a subclass in every class called **Sensitive data** for data that may harm users or the organization if disclosed/accessed by unauthorized individuals..
 </div><div>

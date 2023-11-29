@@ -36,7 +36,7 @@ Additionally, some security controls may be enforced:
 
 It's important that before thinking about "security" or what makes something "secure", a security architect must think what values it has for the company.
 
-This is done by identifying [risks](/cybersecurity/blue-team/risk.md), prioritizing them, and evaluating their impact along the cost to mitigate them under an acceptable level of risk. Based on these, the security architect will implement more or less security controls as long as "it is worth it".
+This is done by identifying [risks](/cybersecurity/blue-team/topics/risk.md), prioritizing them, and evaluating their impact along the cost to mitigate them under an acceptable level of risk. Based on these, the security architect will implement more or less security controls as long as "it is worth it".
 
 * The losses are significant
 * The losses are not lower than the cost to set up controls
@@ -70,7 +70,7 @@ This is done by identifying [risks](/cybersecurity/blue-team/risk.md), prioritiz
 
 Security controls are security measures to reduce/prevent risks.
 
-👉 Examples: Firewalls, IDS/IPS, Access control, [Updates management](/cybersecurity/blue-team/updates.md), [Logging and monitoring](/cybersecurity/blue-team/logs.md), Awareness training, Background checks, Two-factor authentication, Physical security controls...
+👉 Examples: Firewalls, IDS/IPS, Access control, [Updates management](/cybersecurity/blue-team/topics/updates.md), [Logging and monitoring](/cybersecurity/blue-team/topics/logs.md), Awareness training, Background checks, Two-factor authentication, Physical security controls...
 
 👉 There are 3 types of controls: Preventive, Detective, and Corrective.
 

@@ -843,7 +843,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* [old](_old.md)
 * versions + multiple versions + different IDEs
 * Gradle Configuration
 * [Gradle IntelliJ Plugin](https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html) + [IntelliJ Platform Configuration](https://plugins.jetbrains.com/docs/intellij/configuring-plugin-project.html#intellij-platform-configuration)

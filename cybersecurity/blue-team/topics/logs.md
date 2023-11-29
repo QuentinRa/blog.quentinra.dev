@@ -120,8 +120,8 @@ Some methods of contact 📨: SMS, email, push notification...
 
 ## Common log files locations
 
-[![linuxfundamentalspart3](../_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
-[![adventofcyber4](../_badges/thm/adventofcyber4/day2.svg)](https://tryhackme.com/room/adventofcyber4)
+[![linuxfundamentalspart3](../../_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
+[![adventofcyber4](../../_badges/thm/adventofcyber4/day2.svg)](https://tryhackme.com/room/adventofcyber4)
 
 <div class="row row-cols-lg-2"><div>
 

@@ -25,5 +25,5 @@ Tasks to do are defined in guides provided by organizations such as [CIS](https:
 
 **Useful tools** 🛠️
 
-* [OpenSCAP](openscap/index.md): automatic scan and application of a compliance guide 
+* [OpenSCAP](/cybersecurity/blue-team/tools/hardening/openscap/index.md): automatic scan and application of a compliance guide 
 </div></div>

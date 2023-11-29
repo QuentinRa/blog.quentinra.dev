@@ -21,5 +21,5 @@ Stuff that I found, but never read/used yet.
 * Document who is responsible of what
 * 3 phases: notify, restore & recuperation, monitoring
 
-[![defensivesecurityhq](../_badges/thm/defensivesecurityhq.svg)](https://tryhackme.com/room/defensivesecurityhq)
+[![defensivesecurityhq](../../_badges/thm/defensivesecurityhq.svg)](https://tryhackme.com/room/defensivesecurityhq)
 </div></div>
