@@ -1,6 +1,6 @@
 # ComplianceAsCode
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [ComplianceAsCode/content](https://github.com/ComplianceAsCode/content) <small>(1.9k ⭐)</small> is a tool to create a product-specific XML <small>(ssg-debian11-ds.xml)</small> used by **OpenSCAP** 🔎.
 
@@ -39,7 +39,7 @@ We merge your files in `loader/` into `content/`, then generate/update rules, an
 
 ## Project Overview
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Note that the project is *somewhat* complex. ⚠️
 
@@ -65,7 +65,7 @@ An **applicability** check <small>(`shared/applicability/`)</small> is used to c
 
 ## Product Configuration
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Creating a new product
 
@@ -85,7 +85,7 @@ It automates the process explained in the [documentation](https://complianceasco
 
 ## Jinja2
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The project uses [jinja2](/programming-languages/web/others/templating/jinja2/index.md) allowing us to use macros and variables inside many files of the project. 
 
@@ -119,7 +119,7 @@ Assuming the macro is within scope <small>(in the general macro file or in the s
 
 ## Rule 🔑
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A rule links every piece of information related to a single hardening control task. It's described in a `rule.yml`. It defines stuff like:
 
@@ -213,7 +213,7 @@ This rule is only applied if `./shared/applicability/machine.yml` and `./shared/
 
 ## Controls and Profiles
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Controls file
 
@@ -260,7 +260,7 @@ selections:
 
 ## OVAL Files
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [OVAL](https://ovalproject.github.io/getting-started/tutorial/) is an XML-based format used by many files in the project.
 Basic concepts are [explained here](https://ovalproject.github.io/getting-started/tutorial/).
@@ -315,7 +315,7 @@ Tests are tags ending with `_test`. They usually have one or two children of typ
 
 ## OVAL Checks
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Link to a rule
 
@@ -449,7 +449,7 @@ A local variable is declared inside the OVAL file.
 
 ## Support a new package manager
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 We differentiate package managers <small>(yum, dnf, apt_get, ...)</small> from the package system <small>(rpm, dpkg)</small>. Each is mapped to the other.
 
@@ -544,7 +544,7 @@ It should compile now, but you may have to adapt some rules or templates <small>
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * references are used to sort rules in HTML pages
 * remediation 

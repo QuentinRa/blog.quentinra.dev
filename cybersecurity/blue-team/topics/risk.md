@@ -1,6 +1,6 @@
 # Risk management
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Risk management is the process of identifying, assessing, and prioritizing risks. If the losses are significant enough 💰, and the loss is greater than the cost to handle the risk 🔥, the organization will most likely not ignore the risk and try to:
 
@@ -28,7 +28,7 @@ There are many types of risks <small>(financial losses, natural disasters, secur
 
 ## Risk assessment
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 There are many ways to assess the impact of a risk on the organization, which will help to prioritize them or to request a budget.
 
@@ -70,7 +70,7 @@ Cells are the operation <small>(ex: create)</small>, and the level of criticalit
 
 ## Risk mitigation
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 Common strategies are:
 

@@ -3,7 +3,7 @@
 [![bpvolatility](../../../_badges/thm/bpvolatility.svg)](https://tryhackme.com/room/bpvolatility)
 [![adventofcyber4](../../../_badges/thm/adventofcyber4/day11.svg)](https://tryhackme.com/room/adventofcyber4)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Volatility is a popular free memory forensics tool. There is a deprecated [python2](https://github.com/volatilityfoundation/volatility) version <small>(which is hard to install, 6.3k ⭐)</small>, and there is a [python3](https://github.com/volatilityfoundation/volatility3) version <small>(1.6k ⭐, in-development)</small>.
 
@@ -30,7 +30,7 @@ Profiles from volatility 2 are now expressed as [plugins](https://volatility3.re
 
 ## Windows notes
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Assuming that the host is running Windows, we can use:
 
@@ -80,7 +80,7 @@ $ python3 vol.py [...] windows.netstat
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [THM/volatility](https://tryhackme.com/room/volatility)
 * [volatility-cheatsheet](https://blog.onfvp.com/post/volatility-cheatsheet/)

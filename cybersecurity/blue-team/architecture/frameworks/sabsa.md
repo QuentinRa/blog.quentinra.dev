@@ -2,7 +2,7 @@
 
 [Go Back](../architecture.md)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The Sherwood Applied Business Security Architecture (**SABSA**) model is a six-layer security architecture framework:
 

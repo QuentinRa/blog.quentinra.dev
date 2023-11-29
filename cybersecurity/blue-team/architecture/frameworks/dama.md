@@ -1,6 +1,6 @@
 # DAMA framework
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The Data Management Association (DAMA) framework is an approach to data governance. A visual representation of it is called the DAMA wheel. Some core aspects are:
 

@@ -2,7 +2,7 @@
 
 [![linuxsystemhardening](../../../cybersecurity/_badges/thmp/linuxsystemhardening.svg)](https://tryhackme.com/room/linuxsystemhardening)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Hardening refers to increasing the security <small>(confidentiality, integrity, availability)</small> by reducing the attack surface of:
 

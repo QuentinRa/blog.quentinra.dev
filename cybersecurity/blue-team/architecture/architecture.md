@@ -1,6 +1,6 @@
 # Security Architecture
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Security architecture is the process of designing and oversee the implementation of security controls within an organization's IT infrastructure to protect IT assets for harmful actions such as unauthorized access modification or deletion, data disclosure...
 
@@ -32,7 +32,7 @@ Additionally, some security controls may be enforced:
 
 ## Mindset
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 It's important that before thinking about "security" or what makes something "secure", a security architect must think what values it has for the company.
 
@@ -66,7 +66,7 @@ This is done by identifying [risks](/cybersecurity/blue-team/risk.md), prioritiz
 
 ## Security controls
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Security controls are security measures to reduce/prevent risks.
 
@@ -90,7 +90,7 @@ Security controls can be technical or administrative, physical or digital, and s
 
 ## Model for business architecture
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A company architecture is made up of smaller sub-architectures. By following this model, it ensures that security architects find both risks and security controls for each level.
 
@@ -122,7 +122,7 @@ It important that everyone involved in security architecture understand each lay
 
 ## Systems approach to security architecture
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A systems approach is a structured way to think about the security of a system, as they are becoming more complex <small>(cloud...)</small>. It ensures that:
 
@@ -147,7 +147,7 @@ all aspects of the system <small>(ex: external services...)</small>.
 
 ## Security Program
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 A security program must be public, realist, simple, accurate, and adapted to the business of the company.
 
@@ -191,7 +191,7 @@ These are usually based on industry best practices and standards.
 
 ## Roles and responsibilities
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 For a program to be successful, it's important to define roles and responsibilities of each stakeholder, so that they are aware of what they should do to make the security program successful.
 
@@ -218,7 +218,7 @@ For instance,
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Documents/Metrics
 

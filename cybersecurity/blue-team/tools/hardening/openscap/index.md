@@ -1,6 +1,6 @@
 # OpenSCAP
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [OpenSCAP](https://www.open-scap.org/) (1.2k ⭐) is a tool that can automatically scan if a hardening guide was applied and even automatically apply the guide.
 
@@ -28,7 +28,7 @@ OpenSCAP command line tool (oscap) X.Y.Z
 
 ## Basic Usage
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Check if a guide is valid
 

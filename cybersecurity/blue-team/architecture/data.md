@@ -1,6 +1,6 @@
 # Data governance
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Data governance is usually involved in the early stages of security architecture, focusing on the data.
 
@@ -31,7 +31,7 @@ Data is needed by the company, so we can't "lock it" 🔐. This is a challenge o
 
 ## Data governance program
 
-<div class="row row-cols-md-2"><div class="align-self-center">
+<div class="row row-cols-lg-2"><div class="align-self-center">
 
 While the goal of the [Security Program](/cybersecurity/blue-team/architecture/architecture.md#security-program) is to ensure that the organization IT architecture is safe, including data, the goal of the data governance program is to ensure the **efficient usage, management, and protection of data to drive business value** 🚀.
 
@@ -49,7 +49,7 @@ While the goal of the [Security Program](/cybersecurity/blue-team/architecture/a
 
 ## Inventory data assets
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The first step is to inventory data assets, and find problems or elements needing improvement, along with their causes.
 
@@ -107,7 +107,7 @@ Example: Raw data <small>(ex: 1984)</small> is transformed to information by add
 
 ## Structuring the program I
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The second step is to define and structure the governance program.
 
@@ -180,7 +180,7 @@ Data models are used to explain in a standardized way something. According to th
 
 ## Structuring the program II
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Data classification
 
@@ -216,7 +216,7 @@ We call **Master data** the structural, organizational, and operational data alt
 
 ## Structuring the program III
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Data quality
 
@@ -258,7 +258,7 @@ You may have to design validation/verification processes, and will have to desig
 
 ## Structuring the program IV
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Data Anonymization Policy
 
@@ -297,7 +297,7 @@ There are also: **Noise addition** 🔊, **Perturbation** 🥞, and **Differenti
 
 ## Structuring the program V
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Data Retention Policy
 
@@ -330,7 +330,7 @@ It's important to ensure that data is erased beyond recovery 🔐. For instance,
 
 ## Data management
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 One of the goal of data governance by defining data quality policies, metadata management policies... to ensure an efficient data management. There are five levels of data management:
 
@@ -359,7 +359,7 @@ The goal is to move from the lower levels to the higher levels, where data is ma
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Retention policy, a business continuity plan <small>(step 4 of data life-cycle)</small>
 * Data Stewardship

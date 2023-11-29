@@ -1,6 +1,6 @@
 # Logging and monitoring
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Logging is the process of monitoring events, mostly to
 
@@ -24,7 +24,7 @@ Logs can be generated from multiple sources which must be identified
 
 ## What to log?
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 There are 4 main categories of logs:
 
@@ -49,7 +49,7 @@ Usually, the minimal information needed to provide useful logs are:
 
 ## How to collect logs
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 There are two methods to collect logs:
 
@@ -102,7 +102,7 @@ A SIEM is a centralized logging solution that should detect attacks by correlati
 
 ## Prioritization and alerting
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 As we will have many logs, we need to prioritize them
 
@@ -123,7 +123,7 @@ Some methods of contact 📨: SMS, email, push notification...
 [![linuxfundamentalspart3](../_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
 [![adventofcyber4](../_badges/thm/adventofcyber4/day2.svg)](https://tryhackme.com/room/adventofcyber4)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * `/var/log/syslog` and `/var/log/messages` <small>(general and system logs)</small>
 * `/var/log/auth.log` and `/var/log/secure` <small>(authentication attempts)</small>
@@ -153,7 +153,7 @@ On Windows, check out **Windows Event Viewer**.
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * SIEM (SIM+SEM)
 * SIM=Security Information Management=collect, monitor, analyze logs

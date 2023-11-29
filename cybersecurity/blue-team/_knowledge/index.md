@@ -5,7 +5,7 @@
 [![defensivesecurity](../../_badges/thmp/defensivesecurity.svg)](https://tryhackme.com/room/defensivesecurity)
 [![principlesofsecurity](../../_badges/thm/principlesofsecurity.svg)](https://tryhackme.com/room/principlesofsecurity)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The blue team is specialized in defense, which involves protecting the systems, whether proactively or not.
 
@@ -36,7 +36,7 @@ Some jobs in the blue team are:
 [![adventofcyber4](../../_badges/thm/adventofcyber4/day23.svg)](https://tryhackme.com/room/adventofcyber4)
 [![securityprinciples](../../_badges/thmp/securityprinciples.svg)](https://tryhackme.com/room/securityprinciples)
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div>
 
 **The security triad (CIA)** is a famous principle used everywhere in security. The opposite is DAD <small>(Disclosure, Alteration, and Destruction)</small>.
 
@@ -73,7 +73,7 @@ See also: [Parkerian Hexad](https://en.wikipedia.org/wiki/Parkerian_Hexad) (6 la
 
 ## Activities and tools 🤵
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Architecture
 
@@ -122,7 +122,7 @@ Threat intelligence is a process during which a company collects information abo
 
 [![defensivesecurityhq](../../_badges/thm/defensivesecurityhq.svg)](https://tryhackme.com/room/defensivesecurityhq)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A security operation center is a war room where security professionals work 24/7. They are:
 
@@ -142,7 +142,7 @@ A security operation center is a war room where security professionals work 24/7
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Stuff
 
