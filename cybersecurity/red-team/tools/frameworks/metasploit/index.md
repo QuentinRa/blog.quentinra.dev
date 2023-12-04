@@ -122,6 +122,8 @@ msf6> db_status
 [*] Connected to msf. Connection type: postgresql.
 ```
 
+You can export results using: `db_export -f xml db.xml`.
+
 <br>
 
 #### workspaces
@@ -142,7 +144,8 @@ msf6> workspace -d xxx # delete xxx
 The command `db_nmap` is the same as `nmap`. You will have to first set up [metasploit database](#metasploit-database).
 
 ```shell!
-msf6> db_nmap -sV -p- IP
+msf6> db_nmap -sV -p- -A IP
+msf6> db_import nmap_result.xml # or, load scan result
 ```
 
 <br>
@@ -172,6 +175,7 @@ The msfconsole can be used along [Nessus](/cybersecurity/red-team/tools/scanners
 
 ```shell!
 msf6> load nessus
+msf6> nessus_help # list commands
 msf6> # Connect
 msf6> nessus_connect user:pass@localhost:8834
 msf6> # List the scans that you did
@@ -188,6 +192,8 @@ Once you stored something in the database (nmap/nessus/...), you can use these c
 msf6> help hosts
 msf6> help services
 msf6> help vulns
+msf6> help creds
+msf6> help loot
 ```
 </div></div>
 
@@ -200,9 +206,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-md-2"><div>
 
 * Commands:
-  * `run -j`
-  * `jobs`
-  * `jobs -i 0`
+  * Jobs are cancellable processes (`kill`): `run -j`, `jobs`, `jobs -i 0`
   * `exploit -k -z`
 * `get xxx`
 * `spool`
@@ -219,4 +223,5 @@ You can prepend any command using `grep` to filter lines. You can chain them too
 
 * Meterpreter: `steal_token <pid>`
 * Hashdump not working on some Windows: `load kiwi` then `lsa_dump_sam` do the job. See also: `lsa_dump_secrets`.
+* Plugins: `/usr/share/metasploit-framework/plugins`
 </div></div>
