@@ -1,5 +1,7 @@
 # Meterpreter post-exploitation commands
 
+[Go back](../index.md#meterpreter)
+
 <div class="row row-cols-md-2 mt-4"><div>
 
 You can pivot using a [SOCKS proxy server](/operating-systems/networking/protocols/socks.md).

@@ -1,6 +1,6 @@
 # Searching exploits - msfconsole
 
-[Go back](../metasploit.md#msfconsole)
+[Go back](../index.md#msfconsole)
 
 <div class="row row-cols-md-2"><div>
 

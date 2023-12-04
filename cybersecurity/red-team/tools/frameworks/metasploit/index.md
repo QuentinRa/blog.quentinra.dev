@@ -1,11 +1,12 @@
 # Metasploit framework
 
-[![metasploitintro](../../../_badges/thm/metasploitintro.svg)](https://tryhackme.com/room/metasploitintro)
-[![rpmetasploit](../../../_badges/thm/rpmetasploit.svg)](https://tryhackme.com/room/rpmetasploit)
-[![rpmetasploit](../../../_badges/thmp/rpmetasploit.svg)](https://tryhackme.com/room/rpmetasploit)
-[![metasploitexploitation](../../../_badges/thmp/metasploitexploitation.svg)](https://tryhackme.com/room/metasploitexploitation)
-[![meterpreter](../../../_badges/thmp/meterpreter.svg)](https://tryhackme.com/room/meterpreter)
-[![adventofcyber4](../../../_badges/thm/adventofcyber4/day9.svg)](https://tryhackme.com/room/adventofcyber4)
+[![metasploitintro](../../../../_badges/thm/metasploitintro.svg)](https://tryhackme.com/room/metasploitintro)
+[![rpmetasploit](../../../../_badges/thm/rpmetasploit.svg)](https://tryhackme.com/room/rpmetasploit)
+[![rpmetasploit](../../../../_badges/thmp/rpmetasploit.svg)](https://tryhackme.com/room/rpmetasploit)
+[![metasploitexploitation](../../../../_badges/thmp/metasploitexploitation.svg)](https://tryhackme.com/room/metasploitexploitation)
+[![meterpreter](../../../../_badges/thmp/meterpreter.svg)](https://tryhackme.com/room/meterpreter)
+[![adventofcyber4](../../../../_badges/thm/adventofcyber4/day9.svg)](https://tryhackme.com/room/adventofcyber4)
+[![metasploitframework](../../../../_badges/htb/metasploitframework.svg)](https://academy.hackthebox.com/module/details/39)
 
 <div class="row row-cols-md-2"><div>
 
@@ -48,13 +49,13 @@ msf6> help help # example
 You can see every command you used with `history`.
 </div><div>
 
-* [Searching exploits](files/msf_search.md) (`search`)
-* [Learn about an exploit](files/msf_info.md) (`info`)
-* [Select an exploit](files/msf_use.md) (`use`, `back`)
-* [Configure an exploit](files/msf_configuration.md) (`options`, `show`, `set`, `setg`, `unset`)
-* [Execute an exploit](files/msf_exploit.md) (`run`/`exploit`, `check`)
+* [Searching exploits](_files/msf_search.md) (`search`)
+* [Learn about an exploit](_files/msf_info.md) (`info`)
+* [Select an exploit](_files/msf_use.md) (`use`, `back`)
+* [Configure an exploit](_files/msf_configuration.md) (`options`, `show`, `set`, `setg`, `unset`)
+* [Execute an exploit](_files/msf_exploit.md) (`run`/`exploit`, `check`)
 
-Each remote access is wrapped in a [session](files/msf_session.md). 
+Each remote access is wrapped in a [session](_files/msf_session.md). 
 
 You can also configure and execute an exploit in one go:
 
@@ -98,9 +99,9 @@ meterpreter > help # list commands that you can use
 
 **Common commands** 🪴
 
-* [Basic commands](files/msf_common.md)
-* [Exploitation commands](files/msf_exploitation.md)
-* [Post-exploitation commands](files/msf_post.md)
+* [Basic commands](_files/msf_common.md)
+* [Exploitation commands](_files/msf_exploitation.md)
+* [Post-exploitation commands](_files/msf_post.md)
 
 </div></div>
 
@@ -166,7 +167,7 @@ msf6> use auxiliary/admin/postgres/postgres_sql # ...
 
 #### nessus
 
-The msfconsole can be used along [Nessus](/cybersecurity/red-team/s2.discovery/tools/nessus.md). See [this tutorial](https://scubarda.com/2015/11/16/launching-nessus-scans-inside-metasploit/) and [these tips](https://www.offensive-security.com/metasploit-unleashed/working-with-nessus/). Note that you need to start [metasploit database](#metasploit-database) first.
+The msfconsole can be used along [Nessus](/cybersecurity/red-team/tools/scanners/vulns/nessus.md). See [this tutorial](https://scubarda.com/2015/11/16/launching-nessus-scans-inside-metasploit/) and [these tips](https://www.offensive-security.com/metasploit-unleashed/working-with-nessus/). Note that you need to start [metasploit database](#metasploit-database) first.
 
 ```shell!
 msf6> load nessus

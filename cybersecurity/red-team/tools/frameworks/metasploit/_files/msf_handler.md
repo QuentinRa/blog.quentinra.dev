@@ -1,10 +1,10 @@
 # msfhandler
 
-[![metasploitexploitation](../../../../_badges/thmp/metasploitexploitation.svg)](https://tryhackme.com/room/metasploitexploitation)
+[![metasploitexploitation](../../../../../_badges/thmp/metasploitexploitation.svg)](https://tryhackme.com/room/metasploitexploitation)
 
 <div class="row row-cols-md-2"><div>
 
-The msfconsole can be used to catch reverse shells. Some reverse shell may be upgradable to a [meterpreter](../metasploit.md#meterpreter), which is the main goal.
+The msfconsole can be used to catch reverse shells. Some reverse shell may be upgradable to a [meterpreter](../index.md#meterpreter), which is the main goal.
 
 * First, load the exploit, and define LHOST/LPORT 
 
@@ -32,5 +32,5 @@ msf6 exploit('multi/handler') > run
 meterpreter> help # see what you can do
 ```
 
-➡️ Your shell may not be a meterpreter, so you may try to [upgrade it](../metasploit.md#meterpreter).
+➡️ Your shell may not be a meterpreter, so you may try to [upgrade it](../index.md#meterpreter).
 </div></div>

@@ -1,6 +1,6 @@
 # Common meterpreter commands - msfconsole
 
-[Go back](../metasploit.md#meterpreter)
+[Go back](../index.md#meterpreter)
 
 <div class="row row-cols-md-2"><div>
 
