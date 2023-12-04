@@ -63,6 +63,18 @@ We usually don't only rely on our web browser to recon/exploit websites, as they
 
 <hr class="sep-both">
 
+## Considerations ⚠️
+
+<div class="row row-cols-lg-2"><div>
+
+Automated scans can impact the network.
+
+During an assignment, ensure you know which hosts can be automatically scanned (e.g., using Nessus) and which hosts should be excluded and manually tested.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Tools and methods 🗺️
 
 <div class="row row-cols-md-2"><div>
@@ -81,7 +93,8 @@ Network mapping
 
 Vulnerabilities scanners
 
-* [Nessus](tools/nessus.md): port scanning, find vulnerabilities, quite noisy/slow
+* [Nessus](/cybersecurity/red-team/tools/scanners/vulns/nessus.md): port scanning, find vulnerabilities, quite noisy/slow
+* [OpenVAS](/cybersecurity/red-team/tools/scanners/vulns/openvas.md): ???
 * [Nikto](tools/nikto.md): website vulnerability scanner
 </div><div>
 

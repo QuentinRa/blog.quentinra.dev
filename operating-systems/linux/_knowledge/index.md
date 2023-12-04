@@ -388,6 +388,8 @@ To add a new scheduled task, use `-e`
 ```shell!
 $ crontab -e
 ```
+
+➡️ See also: `/etc/cron*`, `/var/spool/cron/crontabs/*`.
 </div><div>
 
 The format of the file is `schedule /path/to/your/script`. Schedule is made of 5 numbers whitespace-separated.

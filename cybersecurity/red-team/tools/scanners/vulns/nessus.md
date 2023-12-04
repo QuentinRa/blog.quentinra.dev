@@ -1,16 +1,14 @@
 # Nessus vulnerability scanner
 
-[Go back](../index.md)
-
-[![rpnessusredux](../../../_badges/thm/rpnessusredux.svg)](https://tryhackme.com/room/rpnessusredux)
+[![rpnessusredux](../../../../_badges/thm/rpnessusredux.svg)](https://tryhackme.com/room/rpnessusredux)
 
 <div class="row row-cols-md-2"><div>
 
-**Nessus vulnerability scanner** is a tool to find, and report vulnerabilities.
+Nessus vulnerability scanner is a tool to find, and report vulnerabilities.
 
 * [Download Nessus](https://www.tenable.com/downloads/nessus)
 
-```bash
+```shell!
 $ sudo dpkg -i Nessus-10.3.0-ubuntu1404_amd64.deb
 $ sudo systemctl start nessusd.service
 ```
@@ -39,3 +37,19 @@ It's important to note that Nessus is generating a lot of traffic, and may not f
 </div></div>
 
 > **Note**: if you have a scope/knowledge of specific ports/... to scan, you can define a policy in the Policy tab.<br>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* Basic network scan: can brute force auth
+* Scan policies are templates for scans
+* Can create [plugins](https://en.wikipedia.org/wiki/Nessus_Attack_Scripting_Language) and rules (plugin configuration for target)
+* Performance options for some networks
+* Look for `[INFO]` to find information about the target
+</div><div>
+</div></div>
