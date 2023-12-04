@@ -1,10 +1,12 @@
 # OpenVAS
 
+[![vulnerabilityassessment](../../../../_badges/htb/vulnerabilityassessment.svg)](https://academy.hackthebox.com/module/details/108)
+
 <div class="row row-cols-lg-2"><div>
 
 [OpenVAS](https://github.com/greenbone/openvas-scanner) <small>(2.6k ⭐)</small> is an open-source vulnerability scanner.
 
-```ps
+```shell!
 $ sudo apt-get install gvm
 $ openvas
 $ gvm-setup

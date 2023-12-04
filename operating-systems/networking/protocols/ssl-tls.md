@@ -37,6 +37,11 @@ There are 3 categories of certificates: EV, OV, and DV.
 * [SSLLabs](https://www.ssllabs.com/) <small>(detect TLS/SSL versions enabled, cipherlists...)</small>
 * [testssl.sh](https://testssl.sh/) ([GitHub](https://github.com/drwetter/testssl.sh)) <small>(similar, but local testing)</small>
 * [sslshopper](https://www.sslshopper.com/ssl-checker.html) <small>(???)</small>
+* [sslscan](https://github.com/rbsec/sslscan): invalid or null cipher suites...
+
+```ps
+$ sslscan URL
+```
 </div><div>
 </div></div>
 
@@ -50,7 +55,6 @@ Stuff that I found, but never read/used yet.
 
 * CertDB
 * SSLMate
-* [SSLScan](https://github.com/rbsec/sslscan)
 * Monitor > Renew certificate > Avoid expired problems
 * Let's encrypt notes in Web
 * SSL decryption

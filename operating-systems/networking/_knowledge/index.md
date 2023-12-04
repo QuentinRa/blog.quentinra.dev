@@ -184,6 +184,7 @@ Each protocol can be represented using a [Message Sequence Chart](https://en.wik
 <tr><td class="py-0 my-0">Remote desktop access 💻</td><td class="my-0 py-0">
 
 * [RDP](../protocols/rdp.md)
+* [VNC](../protocols/vnc.md)
 </td></tr>
 
 <tr><td class="py-0 my-0">Domain resolution 📍</td><td class="my-0 py-0">

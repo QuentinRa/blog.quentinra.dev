@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-Remote Desktop Protocol (RDP) is a protocol used to connect a desktop with a graphical interface to another computer over a network connection.
+Remote Desktop Protocol (RDP) is a protocol used to access a  desktop with a graphical interface from another computer over a network connection.
 
 🐊️ **Port**: 3389 (TCP)
 

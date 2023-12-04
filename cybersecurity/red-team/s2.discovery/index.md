@@ -94,7 +94,7 @@ Network mapping
 Vulnerabilities scanners
 
 * [Nessus](/cybersecurity/red-team/tools/scanners/vulns/nessus.md): port scanning, find vulnerabilities, quite noisy/slow
-* [OpenVAS](/cybersecurity/red-team/tools/scanners/vulns/openvas.md): ???
+* [OpenVAS](/cybersecurity/red-team/tools/scanners/vulns/openvas.md): port scanning, find vulnerabilities, quite noisy/slow
 * [Nikto](tools/nikto.md): website vulnerability scanner
 </div><div>
 
