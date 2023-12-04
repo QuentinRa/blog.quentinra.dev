@@ -213,7 +213,6 @@ https://tryhackme.com/room/retro (blaster...)
 * [**Photon**](https://github.com/s0md3v/Photon) (🏝) <small>(web enumeration, subdomains)</small>
 * aquatone (🏝) <small>(visual web scrapping, subdomains)</small>
 * **Hping3** (💥) <small>(firewall bypass, port/os scanning, -S -p SA/RA --flood)</small>
-* OpenVAS (🔎🔑✈️) <small>(network vulnerability scanner)</small>
 * QualysGuard (🔎🔑✈️) <small>(cloud-based vulnerability scanner)</small>
 * **Acunetix** (🔎💥) <small>(web vulnerability scanner)</small>
 * Nexpose (🔎🔑✈️) <small>(network vulnerability scanner)</small>

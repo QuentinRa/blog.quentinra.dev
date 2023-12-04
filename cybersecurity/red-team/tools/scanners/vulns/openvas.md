@@ -2,20 +2,24 @@
 
 <div class="row row-cols-lg-2"><div>
 
-...
+[OpenVAS](https://github.com/greenbone/openvas-scanner) <small>(2.6k ⭐)</small> is an open-source vulnerability scanner.
+
+```ps
+$ sudo apt-get install gvm
+$ openvas
+$ gvm-setup
+$ gvm-start
+```
+
+Click on the top-left icon to configure the targets to scan.
 </div><div>
 
-...
-</div></div>
+**Scans Available** 🔥
 
-<hr class="sep-both">
+* **Basic** 🔎: identify host status and operating system
+* **Host Discovery** 🗺️: identify live hosts <small>(reachable and responsive)</small>
+* **System Discovery** 🐟: identify host, services, ports, hardware, etc.
+* **Fast**/**Full** 🪲: vulnerability scans
 
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-lg-2"><div>
-
-...
-</div><div>
+➡️ See also: [OpenVAS Reporting](https://github.com/TheGroundZero/openvasreporting).
 </div></div>
