@@ -1,6 +1,7 @@
 # Knowledge about Linux
 
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
+[![linuxfundamentals](../../../cybersecurity/_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/module/details/18)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -8,7 +9,7 @@
 
 <p class="text-center">
 
-<img alt="Linux Logo" src="/courses/operating-systems/linux/_knowledge/_images/linux.png" width="128"/>
+<img src="_images/linux.png" alt="Linux Logo" width="128"/>
 </p>
 
 Linux is a family of Unix-like operating systems, often called distros, such as Debian, Ubuntu, Fedora, or Arch Linux... They were designed to be free, open-source, light, secure, and performant.
@@ -24,7 +25,9 @@ Linux in its simplest form is a **command-line interface** (CLI), commonly refer
 
 ![Linux: Terminal](_images/terminal.png)
 
-Inside the CLI, we can run commands interpreted by a **shell** 🐚.  There are multiple shell languages <small>(sh, csh, tcsh, ksh, bash)</small>, however most Linux distributions are using **bash** <small>(bourne again shell)</small> 🔥. Most shell languages are improved versions of sh 🪦.
+Inside the CLI, we can run commands interpreted by a **shell** 🐚.  There are multiple shell languages <small>(sh, csh, tcsh, ksh, bash)</small>, however most Linux distributions are using **bash** <small>(bourne again shell)</small> 🔥.
+
+🏠 Customize your prompt: [Bash Prompt Generator](https://bash-prompt-generator.org/)/[powerline](https://github.com/powerline/powerline).
 
 👉 Note that shell, the CLI, and a terminal are not the same thing, although they are closely related, hence the common misuse.
 
@@ -38,6 +41,7 @@ Inside the CLI, we can run commands interpreted by a **shell** 🐚.  There are 
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 [![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 [![linux1](../../../cybersecurity/_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
+[![linuxfundamentals](../../../cybersecurity/_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/module/details/18)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -74,22 +78,13 @@ One flag and one operand.
 $ ls -la toto/
 ```
 </div></div>
-</div><div>
-
-A few takeaways:
-
-* 🛣️ you are writing commands right after the `$`
-* 👉 press <kbd>ENTER</kbd> to execute a command
-* 💥 press <kbd>CTRL-C</kbd> to cancel/kill a command
-* ✅ press <kbd>CTRL-D</kbd> to end the input
-* 🚀 Usually, flags can be merged <small>(ex: `-l -a` is the same as `-la`)</small>.
-* 🗺️ Most commands have an option "help": `-h`, `-help`, or `--help`
 
 🌍 **Browse the manual** (`man`) to learn more about some command
 
 ```shell!
 $ man ls
 ```
+</div><div>
 
 🤘 Use **tab key to autocomplete** commands/paths
 
@@ -97,6 +92,19 @@ $ man ls
 $ ls /<TAB>
 # will display every path starting with "/"
 ```
+
+A few takeaways:
+
+* 🛣️ you are writing commands right after the `$`
+* 👉 press <kbd>ENTER</kbd> to execute a command
+* 💥 press <kbd>CTRL-C</kbd> to cancel/kill a command
+* ✅ press <kbd>CTRL-D</kbd> to end the input
+* 🧓 press <kbd>CTRL-R</kbd> to search in the command history
+* 🏎️ press <kbd>CTRL-E</kbd> to move the cursor to the end
+* 🧼 press <kbd>CTRL-U</kbd> to remove everything before the cursor
+* 🛣️ press <kbd>ALT+B</kbd>/<kbd>CTRL+arrow</kbd> to move between words
+* 🚀 Usually, flags can be merged <small>(ex: `-l -a` is the same as `-la`)</small>.
+* 🗺️ Most commands have an option "help": `-h`, `-help`, or `--help`
 </div></div>
 
 <hr class="sep-both">
@@ -106,6 +114,7 @@ $ ls /<TAB>
 [![linuxfundamentalspart1](../../../cybersecurity/_badges/thm/linuxfundamentalspart1.svg)](https://tryhackme.com/room/linuxfundamentalspart1)
 [![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
 [![linux1](../../../cybersecurity/_badges/thm/linux1.svg)](https://tryhackme.com/room/linux1)
+[![linuxfundamentals](../../../cybersecurity/_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/module/details/18)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -149,6 +158,7 @@ $ /home/example/toto.txt # same
 ## Users and permissions
 
 [![linuxfundamentalspart2](../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
+[![linuxfundamentals](../../../cybersecurity/_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/module/details/18)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -373,6 +383,7 @@ downloads
 ## Cron jobs
 
 [![linuxfundamentalspart3](../../../cybersecurity/_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
+[![linuxfundamentals](../../../cybersecurity/_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/module/details/18)
 
 <div class="row row-cols-lg-2"><div>
 

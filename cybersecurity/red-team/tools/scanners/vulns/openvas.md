@@ -8,9 +8,15 @@
 
 ```shell!
 $ sudo apt-get install gvm
-$ openvas
-$ gvm-setup
-$ gvm-start
+$ sudo ls /etc/postgresql
+15 16
+$ # we can't change gvm port, so use postgresql 15
+$ # we could also edit postgresql ports to swap their ports
+$ sudo cat /usr/share/gvmd/postgresql-version
+15
+$ sudo gvm-setup
+$ #sudo openvas
+$ #gvm-start
 ```
 
 Click on the top-left icon to configure the targets to scan.
