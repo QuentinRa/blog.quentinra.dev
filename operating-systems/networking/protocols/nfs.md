@@ -76,7 +76,7 @@ Stuff that I found, but never read/used yet.
 
 NFS
 
-* nfs-utils
+* nfs-utils (ubuntu), nfs-ganesha (solaris), openNFS (RedHat)
 * rpcinfo
 * nfsstat
 * nfswatch

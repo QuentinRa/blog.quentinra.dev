@@ -1711,7 +1711,7 @@ Stuff that I found, but never read/used yet.
 ```text!
 lsblk==block devices
 lsusb==USB devices
-lsof==opened files
+lsof==opened files (ex: see if device files are in-use)
 lspci==opened PCI devices
 ```
 </div></div>

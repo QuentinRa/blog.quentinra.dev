@@ -1,6 +1,7 @@
-# Security
+# Linux Security
 
 [![linuxsystemhardening](../../../cybersecurity/_badges/thmp/linuxsystemhardening.svg)](https://tryhackme.com/room/linuxsystemhardening)
+[![linuxfundamentals](../../../cybersecurity/_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/module/details/18)
 
 <div class="row row-cols-lg-2"><div>
 ...
@@ -28,18 +29,31 @@ Stuff that I found, but never read/used yet.
   * `sudo cryptsetup luksOpen --type luks device name`
   * `sudo cryptsetup luksDump device`
   * `sudo mount /dev/mapper/name dest`
-</div><div>
-
 * [linux-securite](https://wonderfall.space/linux-securite/)
-* [apparmor](https://www.apparmor.net/) (`aa-status`, shipped with many linux distros)
-* [SELinuxProject](https://github.com/SELinuxProject)
+* [apparmor](https://www.apparmor.net/) (`aa-status`, shipped with many linux distros, application profiles to define which resources they can access)
+* [SELinuxProject](https://github.com/SELinuxProject) (enforce access control on processes/files, labels, policy rules between labeled)
 * Disable root account (`/sbin/nologin`) +service (`www-data`)
 * Strong password policy
 * Use LTS
   * https://ubuntu.com/about/release-cycle
   * https://access.redhat.com/support/policy/updates/errata/
-* LXC Linux Containers
 * [Protection_ring](https://en.wikipedia.org/wiki/Protection_ring)
+</div><div>
+
+<details class="details-n">
+<summary>LXC Linux Containers</summary>
+
+Linux Containers (LXC). Virtualization technology. Uses cgroups and namespaces for isolation. Lightweight. Can have docker + LXC? Kernel must support virtualization.
+
+```shell!
+$ sudo apt-get install lxc lxc-utils -y
+$ sudo lxc-create -n xxx -t yyy
+$ lxc-ls 
+$ lxc-start/stop/restart -n xxx
+$ lxc-config -n xxx -s storage/network/security
+$ lxc-attach -n xxx [-f /path/to/share]
+```
+</details>
 
 Upgrade packages.
 

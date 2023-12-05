@@ -34,3 +34,17 @@ $ sudo openvpn user_config.ovpn # connect
 
 * ...
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* L2TP/IPsec
+* SSTP
+* SoftEther
+</div><div>
+</div></div>

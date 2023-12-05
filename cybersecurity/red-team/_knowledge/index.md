@@ -239,6 +239,11 @@ $ nc -lvp port > file.sh
 
 You may use FTP/SCP/NFS/SMB/... if applicable. For instance, you may set up a [SMB](/operating-systems/networking/protocols/smb.md) server on your machine,  and use Windows `copy`/`robocopy ` command to upload/download files.
 
+```shell!
+$ php -S 127.0.0.1:8080 # php
+$ http-server -p 8080   # node "http-server" package
+```
+
 ➡️ See also [impacket](/operating-systems/networking/protocols/tools/impacket.md)
 
 <br>
