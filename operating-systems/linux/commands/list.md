@@ -1620,6 +1620,8 @@ $ wget --no-check-certificate [...] # no SSL
 
 [**curl** - do HTTP requests]
 
+[![webrequests](../../../cybersecurity/_badges/htb/webrequests.svg)](https://academy.hackthebox.com/module/details/35)
+
 <div class="row row-cols-lg-2"><div>
 
 **Usage** 🐚: do GET/POST/... requests.
@@ -1630,9 +1632,12 @@ GET request.
 
 ```ps
 $ curl https://example.com    # GET an URL
-$ curl -I [...]               # request headers
+$ curl -u username:pass [...] # HTTP Basic Auth
+$ curl -i [...]               # request headers (any request)
 $ curl -k [...]               # ignore SSL errors
-$ curl --silent [...]         # only print the output
+$ curl -O [...]               # save ; use remote filename
+$ curl -o xxx [...]           # save ; use custom filename
+$ curl --silent [...]         # -s | only print the output
 ```
 </div><div>
 
@@ -1642,6 +1647,9 @@ Craft an [HTTP](/operating-systems/networking/protocols/http.md) request:
 $ curl -X GET [...]           # same as "--request"
 $ curl -H "Name: Value" [...] # same as "--header"
 $ curl -d "key=value" [...]   # same as "--data"
+$ curl -d '{"key":"value"}' [...] # ex: json
+$ curl -A "xxx" [...]         # set user-agent
+$ curl -b "NAME=VALUE" [...]  # set cookie
 ```
 
 POST request.

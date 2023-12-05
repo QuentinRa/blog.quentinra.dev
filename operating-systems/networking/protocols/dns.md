@@ -195,6 +195,7 @@ Stuff that I found, but never read/used yet.
 * DNS poisoning
 * DNS relay
 * DOT (DNS Over TLS)
+* `/etc/hosts` on Linux (local DNS)
 </div><div>
 
 Purchase domain names

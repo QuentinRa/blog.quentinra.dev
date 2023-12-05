@@ -4,6 +4,7 @@
 [![protocolsandservers](../../../cybersecurity/_badges/thmp/protocolsandservers.svg)](https://tryhackme.com/room/protocolsandservers)
 [![networksecurityprotocols](../../../cybersecurity/_badges/thmp/networksecurityprotocols.svg)](https://tryhackme.com/room/networksecurityprotocols)
 [![wireshark](../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
+[![webrequests](../../../cybersecurity/_badges/htb/webrequests.svg)](https://academy.hackthebox.com/module/details/35)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -13,7 +14,7 @@ HTTP is a protocol used to exchange with a webserver. Your browser is sending an
 
 🔒 There is a secure version called HTTPS <small>(port 443, over SSL/TLS)</small>.
 
-```bash
+```bash!
 $ telnet IP 80
 GET / HTTP/1.1
 Host: example.com
@@ -22,13 +23,15 @@ Host: example.com
 
 ##### Method
 
-The **first** element in a request is the method.
+The **first** element in a request is the [method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods).
 
 * `GET`: get a resource  <small>(ex: return `/index.html`)</small>
 * `POST`: create a resource <small>(ex: create a user)</small>
 * `PUT`: update ONE field of a resource <small>(ex: update user password)</small>
 * `PATCH`: update a resource <small>(ex: update user data)</small>
 * `DELETE`: delete a resource  <small>(ex: delete a user)</small>
+* `HEAD`: returns the headers for a GET request
+* `OPTIONS`: returns a list of allowed methods for an endpoint
 * ...
 
 ##### Path/Route
@@ -48,6 +51,8 @@ In every HTTP/HTTPS request/response, there are headers that are set both by the
 * `Cookie`: The client send in every request the created cookies
 * `Host`: one of the domain names hosted by the server
 * `Server`: name of the HTTP server, maybe the version/OS too
+* `Accept`: media types that the client can understand
+* `User-Agent`: describe the client initiating the request
 * ...
 
 ##### HTTP Payload
@@ -60,6 +65,7 @@ When the server answers, it returns an [HTTP response code](https://developer.mo
 
 * `200`: OK
 * `301/303`: Redirected
+* `403`: Forbidden
 * `404`: Not found
 * `500`: Internal server error
 * ...
