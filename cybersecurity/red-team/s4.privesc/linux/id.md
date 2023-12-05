@@ -23,7 +23,7 @@
 * `/proc/version`: information about the machine
 * `/etc/*release`: information about the operating system
 * `/etc/issue`: an alternative to find the OS/version
-* `ps -e` / `top`: see running process
+* `ps -e` / `top`: see running processes, first column==owner
 * `env`: see environment variables
 </div><div>
 

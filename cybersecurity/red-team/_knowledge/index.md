@@ -201,6 +201,7 @@ You will often want to transfer files between your machine, and the target. Most
 
 ```shell!
 $ python -m http.server port # port > 1023
+$ python [...] --directory /path/to/server/root
 $ sudo python -m http.server port # port <= 1023
 ```
 

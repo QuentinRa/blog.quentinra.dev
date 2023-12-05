@@ -264,3 +264,15 @@ Sessions are partitioned into [groups of processes](https://en.wikipedia.org/wik
 
 If a session dies, then the [signal](#signals) SIGHUP is sent to every process.
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* `pkill`, `pgrep`, and `killall`
+</div><div>
+</div></div>

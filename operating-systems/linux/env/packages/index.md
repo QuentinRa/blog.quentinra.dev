@@ -1,6 +1,7 @@
 # Packages
 
 [![linuxfundamentalspart3](../../../../cybersecurity/_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
+[![linuxfundamentals](../../../../cybersecurity/_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/module/details/18)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -82,6 +83,12 @@ Configuration files are stored in `/etc/apt/`:
 ```shell!
 $ cat /etc/apt/sources.list # repositories
 $ ls /etc/apt/apt.conf.d/   # proxy conf etc.
+```
+
+List installed packages:
+
+```shell!
+$ apt list --installed
 ```
 </div></div>
 
@@ -221,4 +228,11 @@ $ apt autoclean
 $ wget -qO - xxx.gpg | apt-key add -
 ```
 </div><div>
+
+* APT store information about packages in a local database for offline use.
+
+```shell!
+$ apt-cache search <name>
+$ apt-cache show <package_name>
+```
 </div></div>

@@ -960,6 +960,12 @@ Change user UID. You can't change the current user UID.
 ```ps
 $ sudo usermod -u newUID oldUID
 ```
+
+Lock Account
+
+```ps
+$ sudo usermod --lock [...]
+```
 </div></div>
 
 [**deluser** - delete a user]
@@ -1695,9 +1701,17 @@ Stuff that I found, but never read/used yet.
 * `hexdump`
 * `cloc`, `sloc`
 * `rsync`
+* `column -t` (t=as table)
 </div><div>
 
 * `getent` <sup>2</sup>: get an entry such as "passwd": `getent passwd` <small>(get entry)</small> instead of `cat /etc/passwd`
 * `dd if=/dev/zero of=bigfile bs=1M`
 * `jq '.x.y '`,`'a,b'`
+
+```text!
+lsblk==block devices
+lsusb==USB devices
+lsof==opened files
+lspci==opened PCI devices
+```
 </div></div>

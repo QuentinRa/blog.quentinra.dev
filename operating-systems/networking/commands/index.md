@@ -132,7 +132,7 @@ Show ARP cache. Obsolete, see `ip n`.
 [**route** - obsolete]
 Show Routing table. Obsolete, see `ip r`.
 
-[**ss** - list open ports]
+[**ss** - sockets stats]
 
 <div class="row row-cols-lg-2"><div>
 
@@ -144,7 +144,10 @@ Show Routing table. Obsolete, see `ip r`.
 $ ss
 $ ss -a # all
 $ ss -4 # ipv4
+$ ss -t # tcp
 $ ss -u # udp
+$ ss -l # listening
+$ ss -n # no resolve
 ```
 </div></div>
 

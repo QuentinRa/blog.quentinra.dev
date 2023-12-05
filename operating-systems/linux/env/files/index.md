@@ -25,6 +25,7 @@ Linux supports multiple filesystems. Ext4 is the default one for many Linux dist
 ## Common folders
 
 [![linuxfundamentalspart2](../../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
+[![linuxfundamentals](../../../../cybersecurity/_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/module/details/18)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -68,6 +69,7 @@ System logs and application logs are usually stored in `/var/log/`.
 ## Common files
 
 [![linuxfundamentalspart2](../../../../cybersecurity/_badges/thm/linuxfundamentalspart2.svg)](https://tryhackme.com/room/linuxfundamentalspart2)
+[![linuxfundamentals](../../../../cybersecurity/_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/module/details/18)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -106,6 +108,8 @@ username ALL=(user2) NOPASSWD:/bin/tar
 <hr class="sep-both">
 
 ## Partitions
+
+[![linuxfundamentals](../../../../cybersecurity/_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/module/details/18)
 
 <div class="row row-cols-lg-2"><div>
 

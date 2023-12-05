@@ -38,6 +38,8 @@ $ ls -la /lib/systemd/system/   # services
 The `systemctl` allows us to interact with the systemd daemon. Note that you can create all files manually without the `systemctl` command.
 
 ```shell!
+$ systemctl list-units --type=service # list all services
+$ systemctl show xxx      # show information, use -p to filter
 $ systemctl status xxx    # status of the service
 $ systemctl start xxx     # start a service
 $ systemctl reload xxx    # reload the configuration
