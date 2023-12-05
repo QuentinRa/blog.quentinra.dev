@@ -46,10 +46,11 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* `ssh xxx@yyy -T -L xxx:domain:xxx`: create a tunnel mapping one port to another
+* `ssh xxx@yyy -T -L sp:domain:dp`: create a tunnel mapping one port to another. `ssh -N -f -l username IP`
 * ssh-keygen
 * `ssh-keygen -f key`: leave in `>> /root/.ssh/authorized_keys` the pub
 * `-R "xxx"`
+* `ssh -X` with `X11Forwarding` enabled
 </div><div>
 
 * `/etc/ssh/sshd_config`
