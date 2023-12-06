@@ -6,7 +6,7 @@
 [![metasploitexploitation](../../../../_badges/thmp/metasploitexploitation.svg)](https://tryhackme.com/room/metasploitexploitation)
 [![meterpreter](../../../../_badges/thmp/meterpreter.svg)](https://tryhackme.com/room/meterpreter)
 [![adventofcyber4](../../../../_badges/thm/adventofcyber4/day9.svg)](https://tryhackme.com/room/adventofcyber4)
-[![metasploitframework](../../../../_badges/htb/metasploitframework.svg)](https://academy.hackthebox.com/module/details/39)
+[![metasploitframework](../../../../_badges/htb/metasploitframework.svg)](https://academy.hackthebox.com/course/preview/using-the-metasploit-framework)
 
 <div class="row row-cols-md-2"><div>
 

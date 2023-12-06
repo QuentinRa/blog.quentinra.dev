@@ -104,7 +104,7 @@ $ sudo -u#4294967295 tar [...]
 
 #### sudo before 1.9.5p2 (CVE-2021-3156)
 
-[![metasploitframework](../../../_badges/htb/metasploitframework.svg)](https://academy.hackthebox.com/module/details/39)
+[![metasploitframework](../../../_badges/htb/metasploitframework.svg)](https://academy.hackthebox.com/course/preview/using-the-metasploit-framework)
 
 See metasploit module: `exploit/linux/local/sudo_baron_samedit`.
 </div></div>

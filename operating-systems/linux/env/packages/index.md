@@ -1,7 +1,7 @@
 # Packages
 
 [![linuxfundamentalspart3](../../../../cybersecurity/_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
-[![linuxfundamentals](../../../../cybersecurity/_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/module/details/18)
+[![linuxfundamentals](../../../../cybersecurity/_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/course/preview/linux-fundamentals)
 
 <div class="row row-cols-lg-2"><div>
 

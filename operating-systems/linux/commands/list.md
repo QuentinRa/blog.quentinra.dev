@@ -1620,7 +1620,7 @@ $ wget --no-check-certificate [...] # no SSL
 
 [**curl** - do HTTP requests]
 
-[![webrequests](../../../cybersecurity/_badges/htb/webrequests.svg)](https://academy.hackthebox.com/module/details/35)
+[![webrequests](../../../cybersecurity/_badges/htb/webrequests.svg)](https://academy.hackthebox.com/course/preview/web-requests)
 
 <div class="row row-cols-lg-2"><div>
 

@@ -4,7 +4,7 @@
 [![protocolsandservers](../../../cybersecurity/_badges/thmp/protocolsandservers.svg)](https://tryhackme.com/room/protocolsandservers)
 [![networksecurityprotocols](../../../cybersecurity/_badges/thmp/networksecurityprotocols.svg)](https://tryhackme.com/room/networksecurityprotocols)
 [![wireshark](../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
-[![webrequests](../../../cybersecurity/_badges/htb/webrequests.svg)](https://academy.hackthebox.com/module/details/35)
+[![webrequests](../../../cybersecurity/_badges/htb/webrequests.svg)](https://academy.hackthebox.com/course/preview/web-requests)
 
 <div class="row row-cols-lg-2"><div>
 

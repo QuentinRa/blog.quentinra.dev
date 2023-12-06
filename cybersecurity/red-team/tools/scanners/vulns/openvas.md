@@ -1,6 +1,6 @@
 # OpenVAS
 
-[![vulnerabilityassessment](../../../../_badges/htb/vulnerabilityassessment.svg)](https://academy.hackthebox.com/module/details/108)
+[![vulnerabilityassessment](../../../../_badges/htb/vulnerabilityassessment.svg)](https://academy.hackthebox.com/course/preview/vulnerability-assessment)
 
 <div class="row row-cols-lg-2"><div>
 
