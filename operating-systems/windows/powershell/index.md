@@ -390,4 +390,13 @@ foreach($item in $values){}
 
 * ISE
 * `$Env:path = "$Env:path;${pwd}\bin"`
+
+```
+# operating system info
+Get-CimInstance -ClassName Win32_OperatingSystem
+# installed programs
+Get-WmiObject -Class Win32_Product
+# running processes
+Get-Process
+```
 </div></div>

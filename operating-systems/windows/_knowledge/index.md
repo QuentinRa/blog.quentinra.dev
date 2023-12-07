@@ -1,6 +1,7 @@
 # Operating System (Windows)
 
 [![windowsfundamentals1xbx](../../../cybersecurity/_badges/thm/windowsfundamentals1xbx.svg)](https://tryhackme.com/room/windowsfundamentals1xbx)
+[![windowsfundamentals](../../../cybersecurity/_badges/htb/windowsfundamentals.svg)](https://academy.hackthebox.com/course/preview/windows-fundamentals)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -94,6 +95,49 @@ If you don't use PowerShell, which is Linux friendly so most Unix commands are a
 
 * 🕸️ `ipconfig`: see the network configuration
 
+</div></div>
+
+<hr class="sep-both">
+
+## WMIC
+
+[![windowsfundamentals](../../../cybersecurity/_badges/htb/windowsfundamentals.svg)](https://academy.hackthebox.com/course/preview/windows-fundamentals)
+
+<div class="row row-cols-lg-2"><div>
+
+[Windows Management Instrumentation](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page) Command-line (WMIC) is an utility provides a command-line interface for Windows management tasks. Since Windows 10, using powershell is recommended 📢.
+
+```ps
+PS> wmic
+wmic:root\cli> # commands are not prefixed by wmic
+PS> wmic /?    # show the help
+```
+
+Example commands:
+
+* `wmic computersystem`: computer information <small>(`username,domain,name`)</small>
+* `wmic os`: OS information <small>(`caption,registeredUser,serialNumber,version`)</small>
+* `wmic product`: installed programs
+* `wmic logicaldisk`: connected hard drives
+* `wmic process`: running processes
+* ...
+</div><div>
+
+You can filter attributes using `get`:
+
+```ps
+PS> wmic computersystem get username,domain,name
+Domain     Name  UserName
+WORKGROUP  PC    PC\john
+```
+
+You can use `list <format>` to use list display formats:
+
+```ps
+PS> wmic os list brief # 6 columns, see "/?"
+BuildNumber  Organization  RegisteredUser
+SerialNumber SystemDirectory Version
+```
 </div></div>
 
 <hr class="sep-both">
