@@ -95,6 +95,8 @@ If you don't use PowerShell, which is Linux friendly so most Unix commands are a
 
 * 🕸️ `ipconfig`: see the network configuration
 
+* 🪵 `tree`: display folder structure, same as `tree`
+
 </div></div>
 
 <hr class="sep-both">
@@ -120,6 +122,9 @@ Example commands:
 * `wmic product`: installed programs
 * `wmic logicaldisk`: connected hard drives
 * `wmic process`: running processes
+* `wmic service`: list services
+* `wmic useraccount`: local user accounts
+* `wmic group`: local groups
 * ...
 </div><div>
 
@@ -156,7 +161,7 @@ SerialNumber SystemDirectory Version
 * `Administrator`: admin account to manage users, apps, groups, and system-wide settings...
 * `Standard User`: can use apps, can access their files...
 
-**Groups** 👪
+**Groups** (Security Groups) 👪
 
 Administrators can set permissions for a group, and users may be in multiple groups.
 
@@ -191,7 +196,7 @@ CMD> icacls xxx /grant username:F
 
 <div class="row row-cols-lg-2"><div>
 
-Modern versions of Windows use the New Technology File System (**NTFS**). Before, FAT16/32, and HPFS were used. FAT is still used for things like USB keys. NTFS is a file system that can repair itself in the event of failure, using logs. It's known as a journaling file system.
+Modern versions of Windows use the New Technology File System (**NTFS**). Before, FAT16/32, and HPFS were used. FAT is still used for devices like USB keys. NTFS is a file system that can repair itself in the event of failure, using logs. It's known as a journaling file system.
 
 **Case-insensitive and separator** 🏝️
 
@@ -261,6 +266,7 @@ Environment variables are
 
 [![windowsfundamentals1xbx](../../../cybersecurity/_badges/thm/windowsfundamentals1xbx.svg)](https://tryhackme.com/room/windowsfundamentals1xbx)
 [![windowsfundamentals2x0x](../../../cybersecurity/_badges/thm/windowsfundamentals2x0x.svg)](https://tryhackme.com/room/windowsfundamentals2x0x)
+[![windowsfundamentals](../../../cybersecurity/_badges/htb/windowsfundamentals.svg)](https://academy.hackthebox.com/course/preview/windows-fundamentals)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -277,10 +283,17 @@ Windows tools can be opened using "execute" (Win  ➕ R) or in a CMD/PowerShell.
 * This is the entry point to most settings
 * In the top-right corner, it's possible to switch to another view <small>(ex: small icons)</small>, in which you may discover menus that you (most likely) never opened before, but may be useful in one way or another.
 
+**Computer Management** (`compmgmt.msc`) 👑
+
+* A core tool to manage a computer
+* Can be used to create/manage users/groups
+* Can be used to manage disks, devices, network shares
+* Can be used to manage running tasks, services, listing events ([doc](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types), monitoring performance (`perfmon`/`resmon`), etc.
 
 ##### lusrmgr.msc
 
 **Usage** 🗺️: Manage local users and groups.
+</div><div>
 
 ##### msconfig.exe
 
@@ -289,7 +302,6 @@ Windows tools can be opened using "execute" (Win  ➕ R) or in a CMD/PowerShell.
 ##### lsass.exe
 
 **Usage** 🗺️: a process handling authentication, password management...
-</div><div>
 
 ##### winver.exe
 
@@ -307,10 +319,6 @@ Windows tools can be opened using "execute" (Win  ➕ R) or in a CMD/PowerShell.
 
 **Usage** 🗺️: change UAC settings
 
-##### compmgmt.msc
-
-**Usage** 🗺️: many tools to manage the system such as shares, running tasks, listing events ([doc](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types), monitoring performance (`perfmon`/`resmon`), or even managing device hardware/services.
-
 ##### regedt32.exe/regedit.exe
 
 **Usage** 🗺️ ([doc](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)): view and edit the system registry. This is a database used to store information needed to configure the system for users/applications/devices <small>(ports in use, applications...)</small>.
@@ -326,7 +334,6 @@ Stuff that I found, but never read/used yet.
 
 * Daemons (Linux) are called services on Windows
 * Hyper-v
-* [wmic](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wmic): a deprecated console since Windows 10 21H1
 * Windows installer files (also known as .msi files) are used to install applications on the system.
 * [PowerToys](https://github.com/microsoft/PowerToys)
 </div><div>

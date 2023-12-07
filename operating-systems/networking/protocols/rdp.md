@@ -1,17 +1,21 @@
 # Remote Desktop Protocol (RDP)
 
+[![windowsfundamentals](../../../cybersecurity/_badges/htb/windowsfundamentals.svg)](https://academy.hackthebox.com/course/preview/windows-fundamentals)
+
 <div class="row row-cols-lg-2"><div>
 
 Remote Desktop Protocol (RDP) is a protocol used to access a  desktop with a graphical interface from another computer over a network connection.
 
 🐊️ **Port**: 3389 (TCP)
 
+On Windows, there is the built-in Windows RDP Client: `mstsc.exe`.
+
 There is [rdesktop](https://github.com/rdesktop/rdesktop) (1.1k ⭐).
 
 There is [FreeRDP](https://github.com/FreeRDP/FreeRDP) (7.5k ⭐), and there is a graphical version too [xfreerdp-gui](https://github.com/wyllianbs/xfreerdp-gui) (29 ⭐).
 
 ```ps
-$ xfreerdp /u:x /p:y /v:IP
+$ xfreerdp /u:username /p:password /v:IP
 $ xfreerdp /dynamic-resolution +clipboard /cert:ignore /v:IP /u:x /p:y
 ```
 </div><div>

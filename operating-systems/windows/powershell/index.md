@@ -396,7 +396,12 @@ foreach($item in $values){}
 Get-CimInstance -ClassName Win32_OperatingSystem
 # installed programs
 Get-WmiObject -Class Win32_Product
+Get-WmiObject -Class Win32_Bios
+Get-WmiObject -Class Win32_Service
+Get-WmiObject -Class Win32_Process
+Get-WmiObject -Class Win32_OperatingSystem
 # running processes
 Get-Process
+Get-LocalUser
 ```
 </div></div>
