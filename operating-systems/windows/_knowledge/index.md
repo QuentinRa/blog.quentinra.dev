@@ -147,49 +147,6 @@ SerialNumber SystemDirectory Version
 
 <hr class="sep-both">
 
-## Permissions, and users
-
-[![windowsfundamentals1xbx](../../../cybersecurity/_badges/thm/windowsfundamentals1xbx.svg)](https://tryhackme.com/room/windowsfundamentals1xbx)
-[![windowsfundamentals2x0x](../../../cybersecurity/_badges/thm/windowsfundamentals2x0x.svg)](https://tryhackme.com/room/windowsfundamentals2x0x)
-
-<div class="row row-cols-lg-2"><div>
-
-**Users** 🧑
-
-* `NT AUTHORITY\SYSTEM`: a built-in account used by the system to do internal tasks. It has the highest level of permission.
-* `LocalSystem`: another built-in account, but with less privilege than SYSTEM and still more than Administrator.
-* `Administrator`: admin account to manage users, apps, groups, and system-wide settings...
-* `Standard User`: can use apps, can access their files...
-
-**Groups** (Security Groups) 👪
-
-Administrators can set permissions for a group, and users may be in multiple groups.
-
-**User Account Control (UAC)** (=sudo) 🫅
-
-When there is a need for a user to elevate, Windows will show the User Account Control (UAC), in which a root user can press "yes", and a non-root user will have to log in using an account having sufficient privileges to do the requested action.
-</div><div>
-
-**Permissions** ([doc](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb727008(v=technet.10)#understanding-file-and-folder-permissions)) 🔐
-
-Windows has 7 categories of permissions: Read <small>(**R**)</small>, Write <small>(**W**)</small>, List Folder Contents <small>(**X**)</small>, Read & Execute <small>(**RX**)</small>, Modify <small>(**M**)</small>, Full Control <small>(**F**)</small> and Special permissions.
-
-There are advanced permissions: Create Directory <small>(**AD**)</small>, Create File <small>(**WD**)</small>, Delete <small>(**D**)</small>, Execute/Traverse <small>(**X**, not the one for List folder content)</small>...
-
-Permissions are controlled by Discretionary Access Control List (DACLs), see the [icacls](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/icacls) command.
-
-```ps
-CMD> icacls xxx
-xxx  NT AUTHORITY\SYSTEM:(I)(F)
-     BUILTIN\Administrators:(I)(F)
-     Local\username:(I)(F)
-CMD> icacls xxx /grant Everyone:F
-CMD> icacls xxx /grant username:F
-```
-</div></div>
-
-<hr class="sep-both">
-
 ## File system
 
 [![windowsfundamentals1xbx](../../../cybersecurity/_badges/thm/windowsfundamentals1xbx.svg)](https://tryhackme.com/room/windowsfundamentals1xbx)
@@ -216,13 +173,59 @@ I'm using the below Unix paths because they're easier to write. Some paths may h
 * 🪵 **root**: `/`, which is usually `c:\ `
 * 🌳 **Windows root**: usually `/Windows`
 * 🛝 **user content**: Files belonging to a user
-    * `/Users`
-    * `/Users/xxx/Desktop` (ex: user `xxx`)
-    * `/Users/xxx/Documents`  (ex: user `xxx`)
+  * `/Users`
+  * `/Users/xxx/Desktop` (ex: user `xxx`)
+  * `/Users/xxx/Documents`  (ex: user `xxx`)
 * 📂 **Installed programs**
   * `"/Program Files/"`
   * `"/Program Files (x86)/"`
   * `%appdata%`: usually used to install apps without administrator privileges <small>(locally installed)</small>, or to store application data.
+</div></div>
+
+<hr class="sep-both">
+
+## Permissions, and users
+
+[![windowsfundamentals1xbx](../../../cybersecurity/_badges/thm/windowsfundamentals1xbx.svg)](https://tryhackme.com/room/windowsfundamentals1xbx)
+[![windowsfundamentals2x0x](../../../cybersecurity/_badges/thm/windowsfundamentals2x0x.svg)](https://tryhackme.com/room/windowsfundamentals2x0x)
+
+<div class="row row-cols-lg-2"><div>
+
+**Users** 🧑
+
+* `NT AUTHORITY\SYSTEM`: a built-in account used by the system to do internal tasks. It has the highest level of permission.
+* `LocalSystem`: another built-in account, but with less privilege than SYSTEM and still more than Administrator.
+* `Administrator`: admin account to manage users, apps, groups, and system-wide settings...
+* `Standard User`: can use apps, can access their files...
+
+**Groups** (Security Groups) 👪
+
+Administrators can set permissions for a group, and users may be in multiple groups.
+
+**User Account Control (UAC)** (=sudo) 🫅
+
+When there is a need for a user to elevate, Windows will show the User Account Control (UAC), in which a root user can press "yes", and a non-root user will have to log in using an account having sufficient privileges to do the requested action.
+</div><div>
+
+(NTFS) **Permissions** ([doc](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb727008(v=technet.10)#understanding-file-and-folder-permissions)) 🔐
+
+Windows has 7 categories of permissions for files on a filesystem: Read <small>(**R**)</small>, Write <small>(**W**)</small>, List Folder Contents <small>(**X**)</small>, Read & Execute <small>(**RX**)</small>, Modify <small>(**M**)</small>, Full Control <small>(**F**)</small> and Special permissions.
+
+There are advanced permissions: Create Directory <small>(**AD**)</small>, Create File <small>(**WD**)</small>, Delete <small>(**D**)</small>, Execute/Traverse <small>(**X**, not the one for List folder content)</small>...
+
+You can use the "security" tab from a file/folder properties or use th [icacls](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/icacls) command to manipulate permissions. 
+
+```ps
+CMD> icacls xxx
+xxx  NT AUTHORITY\SYSTEM:(I)(F)
+     BUILTIN\Administrators:(I)(F)
+     Local\username:(I)(F)
+CMD> icacls xxx /grant Everyone:F  # group
+CMD> icacls xxx /grant username:F  # username
+CMD> icacls xxx /remove username
+```
+
+Permissions are inherited <small>(**I**)</small> by children  while they may not <small>(**NP**)</small>. It's also possible to define if folders <small>(**CI**)</small> or files <small>(**OI**)</small> inherit ACE.
 </div></div>
 
 <hr class="sep-both">
