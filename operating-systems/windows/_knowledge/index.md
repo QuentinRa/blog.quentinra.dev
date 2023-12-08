@@ -343,10 +343,10 @@ In "Advanced Sharing," you can set the share name, the maximum number of simulta
 
 Share permissions are only applied for remote users, along NTFS permissions. They are only three: Full Control, Change, Read.
 
+🔒 It uses the [CIFS](/operating-systems/networking/protocols/cifs.md) protocol.
+
 ➡️ Shares are mostly used with `Network Attached Storage (NAS)`, `Storage Area Network (SAN)`, or [Active Directory](/operating-systems/cloud/active-directory/_knowledge/index.md).
 </div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">

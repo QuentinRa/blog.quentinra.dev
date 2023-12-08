@@ -115,4 +115,6 @@ The Trusted Platform Module (TPM) hardware component provides security against t
 * backup the SAM and SYSTEM hashes
     * `reg save hklm\system C:\XXX\system.hive`
     * `reg save hklm\sam C:\XXX\sam.hive`
+* Windows Defender Firewall
+  * Block access to share if not in the same workgroup?
 </div></div>

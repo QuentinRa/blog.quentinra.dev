@@ -394,6 +394,7 @@ foreach($item in $values){}
 ```
 # operating system info
 Get-CimInstance -ClassName Win32_OperatingSystem
+Get-CimInstance -ClassName Win32_StartupCommand
 # installed programs
 Get-WmiObject -Class Win32_Product
 Get-WmiObject -Class Win32_Bios
