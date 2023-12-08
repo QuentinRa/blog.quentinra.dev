@@ -1,13 +1,27 @@
-# XXX
+# Windows Security
 
 [![windowsfundamentals3xzx](../../../cybersecurity/_badges/thm/windowsfundamentals3xzx.svg)](https://tryhackme.com/room/windowsfundamentals3xzx)
 
 <div class="row row-cols-lg-2"><div>
 
-...
+Windows has built-in tools and features to increase the security and reduce the attack surface exploitable for hackers.
+
+Formerly known as Windows Defender, Windows Security provides features to help ensure the safety and privacy of the system.
+
+* 🪲 Antivirus
+* 💰 Ransomware protection
+* 🔫 Network Firewall
+* 🔒 [SmartScreen](https://learn.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
+* ...
 </div><div>
 
-...
+It's important to keep the operating system [up to date](/cybersecurity/blue-team/topics/updates.md). Windows Update is responsible for downloading and installing them.
+
+Updates are usually released on the 2nd Tuesday of each month, which is often called "Patch Tuesday."
+
+You can open Windows Update from a terminal using: `control /name Microsoft.WindowsUpdate`.
+
+Microsoft frequently release [security updates](https://msrc.microsoft.com/update-guide/en-us) for their products.
 </div></div>
 
 <hr class="sep-both">
@@ -99,14 +113,6 @@ To manage them
 
 * `/Windows/System32/config/`: location where the Security Account Manager (**SAM**) database file is stored. This file is used to store users, their passwords, their groups... Modern versions of Windows use the NT hash format, commonly referred to as NTLM, as the previous format was LM.
 * [Windows credential guard](https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-how-it-works)
-
-**Windows Update** (`control /name Microsoft.WindowsUpdate`)
-
-A service looking for updates, downloading them, and asking <small>(forcing since Windows 10)</small> the user to install them. They are usually released on the 2nd Tuesday of each month (Patch Tuesday).
-
-**Windows security** / **Windows defender**
-
-A set of tools to protect your Windows. There is an antivirus, which has a "ransomware protection" feature. There is a firewall to set rules for your network traffic. [SmartScreen](https://learn.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) was designed to protect against phishing or malware, and there is a tab with security features such as Core isolation.
 
 **BitLocker**
 
