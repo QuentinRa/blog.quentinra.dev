@@ -211,7 +211,7 @@ When there is a need for a user to elevate, Windows will show the User Account C
 
 Windows has 7 categories of permissions for files on a filesystem: Read <small>(**R**)</small>, Write <small>(**W**)</small>, List Folder Contents <small>(**X**)</small>, Read & Execute <small>(**RX**)</small>, Modify <small>(**M**)</small>, Full Control <small>(**F**)</small> and Special permissions.
 
-There are advanced permissions: Create Directory <small>(**AD**)</small>, Create File <small>(**WD**)</small>, Delete <small>(**D**)</small>, Execute/Traverse <small>(**X**, not the one for List folder content)</small>...
+There are advanced permissions: Create Directory <small>(**AD**)</small>, Create File <small>(**WD**)</small>, Delete <small>(**D**)</small>, Execute/Traverse <small>(**X**)</small>, Change Permissions...
 
 You can use the "security" tab from a file/folder properties or use th [icacls](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/icacls) command to manipulate permissions. 
 
@@ -325,6 +325,28 @@ Windows tools can be opened using "execute" (Win  ➕ R) or in a CMD/PowerShell.
 ##### regedt32.exe/regedit.exe
 
 **Usage** 🗺️ ([doc](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)): view and edit the system registry. This is a database used to store information needed to configure the system for users/applications/devices <small>(ports in use, applications...)</small>.
+</div></div>
+
+<hr class="sep-both">
+
+## Random Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### Shared Folders
+
+[![windowsfundamentals](../../../cybersecurity/_badges/htb/windowsfundamentals.svg)](https://academy.hackthebox.com/course/preview/windows-fundamentals)
+
+It's possible to share a folder over a network, allowing others on the network to access it. Right-click on a folder and open its properties, then navigate to the "Sharing" tab and share the folder.
+
+In "Advanced Sharing," you can set the share name, the maximum number of simultaneous users, and set the share permissions.
+
+Share permissions are only applied for remote users, along NTFS permissions. They are only three: Full Control, Change, Read.
+
+➡️ Shares are mostly used with `Network Attached Storage (NAS)`, `Storage Area Network (SAN)`, or [Active Directory](/operating-systems/cloud/active-directory/_knowledge/index.md).
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">
