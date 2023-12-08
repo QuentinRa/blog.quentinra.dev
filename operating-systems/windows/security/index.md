@@ -26,11 +26,43 @@ Microsoft frequently releases [security updates](https://msrc.microsoft.com/upda
 
 <hr class="sep-both">
 
+## Authentication & Authorization
+
+[![windowsfundamentals3xzx](../../../cybersecurity/_badges/thm/windowsfundamentals3xzx.svg)](https://tryhackme.com/room/windowsfundamentals3xzx)
+[![windowsfundamentals](../../../cybersecurity/_badges/htb/windowsfundamentals.svg)](https://academy.hackthebox.com/course/preview/windows-fundamentals)
+
+<div class="row row-cols-lg-2"><div>
+
+#### Security Accounts Manager (SAM)
+
+The SAM (Security Accounts Manager) database is a local database present on every Windows computer. It is used for authentication. It stores account information including usernames and password hashes.
+
+Modern versions of Windows use the NT hash format, commonly referred to as NTLM, as the previous format was LM.
+
+The database is stored in: `/Windows/System32/config/SAM/` <small>(admin-only)</small>.
+
+#### Security Identifier (SID)
+
+Each object (user, service, etc.) that can be authenticated is called "Security Principal," and has a security identifier (SID). They are used to verify that the user is authorized to an action.
+
+A SID is a concatenation of a domain identifier and a relative identifier (RID). They start with `S-`. The last  hyphen-separated value is the RID.
+
+```ps
+PS> whoami /user
+PS> wmic useraccount get name,sid
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Random Notes
 
 <div class="row row-cols-lg-2"><div>
 
 #### Alternate Data Streams (ADS)
+
+[![adventofcyber2](../../../cybersecurity/_badges/thm/adventofcyber2/day21.svg)](https://tryhackme.com/room/adventofcyber2)
 
 On NTFS filesystem, ADS allows files to have more than one stream of data. By default, every file has one stream called `:$DATA`.
 
@@ -57,6 +89,8 @@ PS> $(Resolve-Path .\file.exe:stream) # vulnerable PS call
 </div><div>
 
 #### Volume Shadow Copy Service (VSS)
+
+[![adventofcyber2](../../../cybersecurity/_badges/thm/adventofcyber2/day23.svg)](https://tryhackme.com/room/adventofcyber2)
 
 The Volume Shadow Copy Service (VSS) is handling the creation, and management of shadow copies/snapshots of the data backed up. 
 
@@ -87,7 +121,6 @@ Stuff that I found, but never read/used yet.
 * Mimikatz...
 * Microsoft Security Compliance Toolkit (SCT)
 * CIS-CAT
-* SAM database
 * Microsoft Defender Application Control
 * device guard
 * applocker
@@ -97,7 +130,6 @@ Stuff that I found, but never read/used yet.
 * [Introduction to Alternate Data Streams](https://www.malwarebytes.com/blog/news/2015/07/introduction-to-alternate-data-streams)
 </div><div>
 
-* `/Windows/System32/config/`: location where the Security Account Manager (**SAM**) database file is stored. This file is used to store users, their passwords, their groups... Modern versions of Windows use the NT hash format, commonly referred to as NTLM, as the previous format was LM.
 * [Windows credential guard](https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-how-it-works)
 
 **BitLocker**
