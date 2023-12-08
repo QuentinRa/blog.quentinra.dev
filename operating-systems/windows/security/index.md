@@ -52,6 +52,17 @@ PS> whoami /user
 PS> wmic useraccount get name,sid
 ```
 </div><div>
+
+#### Access Control
+
+The access to any resources is managed by Access Control Entries (ACEs) in Access Control Lists (ACLs). An ACL is a set of ACEs.
+
+Each ACE specifies the permissions <small>(R, W, X, etc.)</small> granted or denied for a particular user or group <small>(a SID)</small> over a "securable object". A securable object refers to a resource that can be secured <small>(files, services, etc.)</small>.
+
+A security descriptor is a data structure associated with a securable object. It contains information such as:
+ 
+* **Discretionary Access Control List (DACL)**: A list of ACEs 
+* **System Access Control List (SACL)**: Optionally, a list that specifies which security events should be audited.
 </div></div>
 
 <hr class="sep-both">
