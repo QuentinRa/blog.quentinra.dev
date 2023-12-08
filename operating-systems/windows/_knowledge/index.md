@@ -193,9 +193,10 @@ I'm using the below Unix paths because they're easier to write. Some paths may h
 
 **Users** 🧑
 
-* `NT AUTHORITY\SYSTEM`: a built-in account used by the system to do internal tasks. It has the highest level of permission.
-* `LocalSystem`: another built-in account, but with less privilege than SYSTEM and still more than Administrator.
-* `Administrator`: admin account to manage users, apps, groups, and system-wide settings...
+* `NT AUTHORITY\SYSTEM` or `LocalSystem`: a built-in account used by the system to do internal tasks. It has the highest level of permission.
+* `NT AUTHORITY\LocalService`: a built-in account that can start some services and has few permissions.
+* `NT AUTHORITY\NetworkService`: a built-in account that can establish authenticated sessions for network services. It has few permissions.
+* `Administrator`: administrator account to manage users, apps, groups, and system-wide settings...
 * `Standard User`: can use apps, can access their files...
 
 **Groups** (Security Groups) 👪
