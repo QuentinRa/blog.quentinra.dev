@@ -21,7 +21,50 @@ Updates are usually released on the 2nd Tuesday of each month, which is often ca
 
 You can open Windows Update from a terminal using: `control /name Microsoft.WindowsUpdate`.
 
-Microsoft frequently release [security updates](https://msrc.microsoft.com/update-guide/en-us) for their products.
+Microsoft frequently releases [security updates](https://msrc.microsoft.com/update-guide/en-us) for their products.
+</div></div>
+
+<hr class="sep-both">
+
+## Random Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### Alternate Data Streams (ADS)
+
+On NTFS filesystem, ADS allows files to have more than one stream of data. By default, every file has one stream called `:$DATA`.
+
+```ps
+PS> Get-Item -Path SomeFile -Stream * # list streams
+PSPath        : Microsoft.PowerShell.Core\FileSystem::XXX\toto.pdf::$DATA
+PSParentPath  : Microsoft.PowerShell.Core\FileSystem::XXX
+PSChildName   : toto.pdf::$DATA
+PSDrive       : XXX
+PSProvider    : Microsoft.PowerShell.Core\FileSystem
+PSIsContainer : False
+FileName      : XXX\toto.pdf
+Stream        : :$DATA
+Length        : 0
+```
+
+They can be used by Windows to store data, such as identifiers telling Windows that this file was downloaded from the Internet.
+
+Hackers can use that to store malicious code inside a file. This code may be executed by a vulnerable application loading the file.
+
+```ps
+PS> $(Resolve-Path .\file.exe:stream) # vulnerable PS call
+```
+</div><div>
+
+#### Volume Shadow Copy Service (VSS)
+
+The Volume Shadow Copy Service (VSS) is handling the creation, and management of shadow copies/snapshots of the data backed up. 
+
+It stores data in the "volume information" of each drive that has the feature enabled. They may allow a system admin to restore the system after an attack. Hackers will most likely check them and delete them.
+
+To manage them, right-click on a hard-drive, and select "Shadow copies." Shadow copies can be stored externally.
+
+➡️ See also: [Volume Shadow Copy Service](https://learn.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service).
 </div></div>
 
 <hr class="sep-both">
@@ -51,64 +94,7 @@ Stuff that I found, but never read/used yet.
 * Hiren's bootcd
 * [SASE](https://www.microsoft.com/en-us/security/business/security-101/what-is-sase)
 * sysmon
-
-<details class="details-n">
-<summary>Alternate Data Streams (ADS)</summary>
-
-<div class="row row-cols-lg-2"><div>
-
-On a file system using NTFS, ADS allows files to have more than one stream (`flux`) of data. By default, every file has only one stream: **:$DATA**. You can inspect a file using
-
-```powershell
-> Get-Item -Path SomeFile -Stream *
-
-PSPath        : Microsoft.PowerShell.Core\FileSystem::XXX\toto.pdf::$DATA
-PSParentPath  : Microsoft.PowerShell.Core\FileSystem::XXX
-PSChildName   : toto.pdf::$DATA
-PSDrive       : XXX
-PSProvider    : Microsoft.PowerShell.Core\FileSystem
-PSIsContainer : False
-FileName      : XXX\toto.pdf
-Stream        : :$DATA
-Length        : 0
-```
-</div><div>
-
-They can be used by Windows to store data, such as identifiers telling Windows that this file was downloaded from the Internet.
-
-Hackers can use that to store malicious code inside a file. They can execute it like this later, for instance using a legit/non-malicious application
-
-```powershell
-> $(Resolve-Path .\file.exe:stream)
-```
-
-More about it:
-
 * [Introduction to Alternate Data Streams](https://www.malwarebytes.com/blog/news/2015/07/introduction-to-alternate-data-streams)
-</div></div>
-</details>
-
-
-<details class="details-n">
-<summary>Volume Shadow Copy Service (VSS)</summary>
-
-<div class="row row-cols-lg-2"><div>
-
-The Volume Shadow Copy Service (VSS) is handling the creation, and management of **shadow copies**/**snapshot** of the data backed up.
-
-They are stored in the volume information of each drive that has the feature enabled.
-
-They may allow a system admin to restore the system after an attack. So, hackers will most likely check them, and delete them. There may exist an "offline" version of these shadow copies.
-</div><div>
-
-To manage them
-
-* Right-click on a hard-drive
-* Select Shadow copies
-
-> See [Volume Shadow Copy Service](https://learn.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service)
-</div></div>
-</details>
 </div><div>
 
 * `/Windows/System32/config/`: location where the Security Account Manager (**SAM**) database file is stored. This file is used to store users, their passwords, their groups... Modern versions of Windows use the NT hash format, commonly referred to as NTLM, as the previous format was LM.
