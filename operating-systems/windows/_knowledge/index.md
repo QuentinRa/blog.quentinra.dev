@@ -188,6 +188,7 @@ I'm using the below Unix paths because they're easier to write. Some paths may h
 
 [![windowsfundamentals1xbx](../../../cybersecurity/_badges/thm/windowsfundamentals1xbx.svg)](https://tryhackme.com/room/windowsfundamentals1xbx)
 [![windowsfundamentals2x0x](../../../cybersecurity/_badges/thm/windowsfundamentals2x0x.svg)](https://tryhackme.com/room/windowsfundamentals2x0x)
+[![windowsfundamentals](../../../cybersecurity/_badges/htb/windowsfundamentals.svg)](https://academy.hackthebox.com/course/preview/windows-fundamentals)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -205,7 +206,7 @@ Administrators can set permissions for a group, and users may be in multiple gro
 
 **User Account Control (UAC)** (=sudo) 🫅
 
-When there is a need for a user to elevate, Windows will show the User Account Control (UAC), in which a root user can press "yes", and a non-root user will have to log in using an account having sufficient privileges to do the requested action.
+This is the Admin Approval Mode. When higher privileges are required, Windows will display the UAC Window. Administrator can press yes, while other users will have to log in using an account having sufficient privileges to perform the requested action.
 </div><div>
 
 (NTFS) **Permissions** ([doc](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb727008(v=technet.10)#understanding-file-and-folder-permissions)) 🔐
@@ -302,10 +303,6 @@ Windows tools can be opened using "execute" (Win  ➕ R) or in a CMD/PowerShell.
 ##### msconfig.exe
 
 **Usage** 🗺️: manage startup programs and services...
-
-##### lsass.exe
-
-**Usage** 🗺️: a process handling authentication, password management...
 
 ##### winver.exe
 

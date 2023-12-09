@@ -58,9 +58,10 @@ Ubuntu                                 Ubuntu
 Debian                                 Debian GNU/Linux
 ...
 PS> wsl --install Debian
+PS> bash # pop a bash shell
 ```
 
-You can start it as you would with any program.
+You can start it as you would with any program too.
 
 💡 You can also download them from the Microsoft Store. Doing so will enable auto-updates for you.
 

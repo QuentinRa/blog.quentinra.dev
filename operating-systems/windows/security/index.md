@@ -63,6 +63,16 @@ A security descriptor is a data structure associated with a securable object. It
  
 * **Discretionary Access Control List (DACL)**: A list of ACEs 
 * **System Access Control List (SACL)**: Optionally, a list that specifies which security events should be audited.
+
+#### Local Security Authority (LSA)
+
+The Local Security Authority (LSA) is a process responsible for security-related functions in the operating system.
+
+* Authenticating users
+* Enforcing security policies
+* Generating access tokens <small>(contains security information such as privileges, used by processes/... to authorize users)</small>
+
+It's managed by `lsass.exe`, the Local Security Authority Subsystem Service (LSASS).
 </div></div>
 
 <hr class="sep-both">
@@ -125,7 +135,7 @@ Stuff that I found, but never read/used yet.
 
 * lusrmgr.msc: can be used to find entrypoints (weak passwords, groups with too many perms)
 * msconfig (find malware?)/winver (outdated?)/control system (open ports...)/msinfo32 (outdated?)/compmgmt (scheduled tasks...)/regedit (misconfiguration...): info can help in find vulnerabilities
-* lsass (bypass?)/UserAccountControlSettings: identify weakness
+* UserAccountControlSettings: identify weakness
 * Process Explorer
 * Sysinternals Suite
 * PowerSploit...
