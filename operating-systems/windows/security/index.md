@@ -136,8 +136,6 @@ Stuff that I found, but never read/used yet.
 * lusrmgr.msc: can be used to find entrypoints (weak passwords, groups with too many perms)
 * msconfig (find malware?)/winver (outdated?)/control system (open ports...)/msinfo32 (outdated?)/compmgmt (scheduled tasks...)/regedit (misconfiguration...): info can help in find vulnerabilities
 * UserAccountControlSettings: identify weakness
-* Process Explorer
-* Sysinternals Suite
 * PowerSploit...
 * Mimikatz...
 * Microsoft Security Compliance Toolkit (SCT)

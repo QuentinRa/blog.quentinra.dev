@@ -391,6 +391,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * Windows installer files (also known as .msi files) are used to install applications on the system.
+* SysInternals Suite: tools. Can be installed or loaded remotely (`\\live.sysinternals.com\tools\xxx.exe`)
 * Hyper-v
 * [PowerToys](https://github.com/microsoft/PowerToys)
 </div><div>

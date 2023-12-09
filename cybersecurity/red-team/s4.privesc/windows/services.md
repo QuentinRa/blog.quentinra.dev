@@ -69,3 +69,17 @@ PS> # LocalSystem is the highest privileged account available
 PS> sc.exe config xxx binPath=C:\[...]\malicious.exe  obj= LocalSystem
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* It's recommended to use service accounts for services.
+* Most services run with LocalSystem privileges by default
+* From the SCM, we can configure an application to be executed if a service fails. If one was configured, it can be exploited.
+</div><div>
+</div></div>
