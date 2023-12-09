@@ -327,6 +327,41 @@ Windows tools can be opened using "execute" (Win  ➕ R) or in a CMD/PowerShell.
 
 <hr class="sep-both">
 
+## Windows Services
+
+[![windowsfundamentals](../../../cybersecurity/_badges/htb/windowsfundamentals.svg)](https://academy.hackthebox.com/course/preview/windows-fundamentals)
+
+<div class="row row-cols-lg-2"><div>
+
+Services are similar to daemons on Linux. They are long-running processes that runs in the background. They were designed to start automatically when the computer starts.
+
+Services are managed from the Service Control Manager (SCM), accessible by executing `services.msc`.
+
+You can also use the `sc.exe` utility. Inside CMD, you can use `sc` while in powershell, you must use `sc.exe`.
+
+```shell!
+PS> sc.exe query                # list all services
+PS> sc.exe qc <service>         # info for a service
+PS> sc.exe sdshow <service>     # service permissions (SDDL)
+PS> Get-ACL -Path <service_exe> # same
+```
+</div><div>
+
+A services can be in one of the following states:
+
+* Running
+* Paused
+* Stopped
+* StartPending
+* StopPending
+* ContinuePending
+* PausePending
+
+Some [critical services](https://learn.microsoft.com/en-us/windows/win32/rstmgr/critical-system-services) cannot be stopped and restarted without a system restart.
+</div></div>
+
+<hr class="sep-both">
+
 ## Random Notes
 
 <div class="row row-cols-lg-2"><div>
@@ -355,9 +390,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* Daemons (Linux) are called services on Windows
-* Hyper-v
 * Windows installer files (also known as .msi files) are used to install applications on the system.
+* Hyper-v
 * [PowerToys](https://github.com/microsoft/PowerToys)
 </div><div>
 </div></div>

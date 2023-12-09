@@ -7,7 +7,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-Windows services are managed by the Service Control Manager <small>(SCM)</small>.
+You can learn more about Windows services [here](/operating-systems/windows/_knowledge/index.md#windows-services).
 
 * 🗺️ List services
 

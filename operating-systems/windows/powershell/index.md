@@ -482,4 +482,6 @@ PS> $variable_name = value
 PS> foreach($item in $values){}
 ```
 </div><div>
+
+* `Format-List`: pretty print as list
 </div></div>
