@@ -301,6 +301,55 @@ PS> Get-NetTCPConnection
 
 <hr class="sep-both">
 
+## Management utilities
+
+<div class="row row-cols-lg-2"><div>
+
+The commands are alternatives to the wmic commands:
+
+* Operating System Information
+
+```ps
+PS> Get-CimInstance -ClassName Win32_OperatingSystem
+PS> Get-WmiObject -Class Win32_OperatingSystem
+```
+
+* Installed Programs
+
+```ps
+PS> Get-WmiObject -Class Win32_Product
+```
+
+* Apps run at startup
+
+```ps
+PS> Get-CimInstance -ClassName Win32_StartupCommand
+```
+</div><div>
+
+* User Information
+
+```ps
+PS> Get-LocalUser
+```
+
+* List processes/services
+
+```ps
+PS> Get-WmiObject -Class Win32_Service
+PS> Get-WmiObject -Class Win32_Process
+PS> Get-Process
+```
+
+* BIOS information
+
+```ps
+PS> Get-WmiObject -Class Win32_Bios
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## System utilities
 
 ++++++
@@ -390,19 +439,4 @@ foreach($item in $values){}
 
 * ISE
 * `$Env:path = "$Env:path;${pwd}\bin"`
-
-```
-# operating system info
-Get-CimInstance -ClassName Win32_OperatingSystem
-Get-CimInstance -ClassName Win32_StartupCommand
-# installed programs
-Get-WmiObject -Class Win32_Product
-Get-WmiObject -Class Win32_Bios
-Get-WmiObject -Class Win32_Service
-Get-WmiObject -Class Win32_Process
-Get-WmiObject -Class Win32_OperatingSystem
-# running processes
-Get-Process
-Get-LocalUser
-```
 </div></div>
