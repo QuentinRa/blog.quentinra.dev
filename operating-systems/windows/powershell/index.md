@@ -1,6 +1,7 @@
 # Powershell
 
 [![powershell](../../../cybersecurity/_badges/thmp/powershell.svg)](https://tryhackme.com/room/powershell)
+[![windowsfundamentals](../../../cybersecurity/_badges/htb/windowsfundamentals.svg)](https://academy.hackthebox.com/course/preview/windows-fundamentals)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -18,7 +19,7 @@ PS> Update-Help # if help was empty, update it first
 
 👉 You can list every cmdlet with `Get-Command` (`gcm`).
 
-👉 Many cmdlets have an alias for a Linux command. For instance, `help` is an alias of `Get-Help`. [Refer to Wikipedia comparison](https://en.wikipedia.org/wiki/PowerShell#Comparison_of_cmdlets_with_similar_commands).
+👉 Many cmdlets have an alias for a Linux command. For instance, `help` for `Get-Help`. See `Get-Alias` or [refer to Wikipedia comparison](https://en.wikipedia.org/wiki/PowerShell#Comparison_of_cmdlets_with_similar_commands).
 </div><div>
 
 Powershell cmdlets output an **object**, unlike other shell languages, which output plaintext. It means that we can access a specific column (**property**) or call a **method** on it without having to call a command such as `grep`/`cut`/... as we would on Linux. 🚀
@@ -32,6 +33,52 @@ xxx    Method        xxxx
 xxx    Property      xxxx
 PS> Get-help | Get-member -MemberType Method
 PS> Get-help | Get-member -MemberType Property
+```
+
+👉 Use <kbd>TAB</kbd> to iterate through arguments.
+</div></div>
+
+<hr class="sep-both">
+
+## Basic Overview
+
+<div class="row row-cols-lg-2"><div>
+
+#### Execute a script
+
+For a normal `.ps1` script, use dot sourcing:
+
+```ps
+PS> . .\MyScript.ps1
+```
+
+For a PSI module (`.psm1`), import the module:
+
+```ps
+PS> Import-Module .\MyModule.psm1
+```
+
+#### Powershell ISE
+
+The PowerShell ISE (Integrated Scripting Environment) is an editor for writing, testing, and debugging PowerShell scripts.
+</div><div>
+
+#### Execution Policy
+
+Normal users can't execute scripts by default. There are a few configurations that may be selected. They can be easily by-passed by typing the script contents directly into the shell.
+
+* `AllSigned`: allow signed scripts to be executed
+* `Bypass`: no restrictions ☠️ and no warnings
+* `Default`: use the default policy (`Restricted`)
+* `RemoteSigned`: downloaded scripts must be signed to be executed
+* `Restricted`: cannot run scripts, only commands
+* `Undefined`: no policy
+* `Unrestricted`: no restrictions ️☠️ | warning for remote scripts ⚠️
+
+```ps
+PS> Get-ExecutionPolicy -List
+PS> Set-ExecutionPolicy Bypass -Scope Process
+PS> Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
 ```
 </div></div>
 
@@ -430,13 +477,9 @@ Stuff that I found, but never read/used yet.
 
 ```ps
 PS> Set-WinUserLanguageList -LanguageList  fr-FR, en-US -force
-PS> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
-PS> . xxx.ps1 # dot sourcing
-$variable_name = value
-foreach($item in $values){}
+PS> $Env:path = "$Env:path;${pwd}\bin"
+PS> $variable_name = value
+PS> foreach($item in $values){}
 ```
 </div><div>
-
-* ISE
-* `$Env:path = "$Env:path;${pwd}\bin"`
 </div></div>
