@@ -1,5 +1,7 @@
 # Application Programming Interfaces
 
+[![introductiontowebapplications](../../../../cybersecurity/_badges/htb/introductiontowebapplications.svg)](https://academy.hackthebox.com/course/preview/introduction-to-web-applications)
+
 <div class="row row-cols-lg-2"><div>
 
 Application Programming Interfaces (APIs) are used to create a layer of abstraction called "interface" between clients and services.

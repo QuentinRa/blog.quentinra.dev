@@ -210,7 +210,9 @@ toto
 
 URL encoding, also known as percent-encoding, is an encoding mostly used in URLs and resources, to encode characters that have a special meaning in URLs.
 
-👉 See also: [urlencoder](https://www.urlencoder.io/).
+👉 See also: [urlencoder](https://www.urlencoder.io/) or [url-encode-decode](https://www.url-encode-decode.com/).
+
+👉 [W3School URL Encoding Reference](https://www.w3schools.com/tags/ref_urlencode.ASP).
 </div><div>
 
 * Example of encoding `%`

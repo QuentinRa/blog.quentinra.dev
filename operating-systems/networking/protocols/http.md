@@ -5,6 +5,7 @@
 [![networksecurityprotocols](../../../cybersecurity/_badges/thmp/networksecurityprotocols.svg)](https://tryhackme.com/room/networksecurityprotocols)
 [![wireshark](../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
 [![webrequests](../../../cybersecurity/_badges/htb/webrequests.svg)](https://academy.hackthebox.com/course/preview/web-requests)
+[![introductiontowebapplications](../../../cybersecurity/_badges/htb/introductiontowebapplications.svg)](https://academy.hackthebox.com/course/preview/introduction-to-web-applications)
 
 <div class="row row-cols-lg-2"><div>
 

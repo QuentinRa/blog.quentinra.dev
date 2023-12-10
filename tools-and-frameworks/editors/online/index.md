@@ -19,6 +19,8 @@ For web applications, there are a ton of editors:
 * [jsfiddle.net](https://jsfiddle.net/)
 * [jseditor.io](https://jseditor.io/)
 * [playcode.io](https://playcode.io/)
+* [html-css-js](https://html-css-js.com/)
+* [html6](https://html6.com/editor/)
 </div></div>
 
 <hr class="sep-both">

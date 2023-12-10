@@ -19,3 +19,15 @@ Applications are rendered by a Window Manager which is optionally managed by a d
 * Unity
 * Cinnamon
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* `xset`: command to control various X server settings
+</div><div>
+</div></div>

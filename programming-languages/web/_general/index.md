@@ -1,5 +1,7 @@
 # Web development
 
+[![introductiontowebapplications](../../../cybersecurity/_badges/htb/introductiontowebapplications.svg)](https://academy.hackthebox.com/course/preview/introduction-to-web-applications)
+
 Web development is usually divided between two sides:
 
 <div class="row row-cols-lg-2"><div>
