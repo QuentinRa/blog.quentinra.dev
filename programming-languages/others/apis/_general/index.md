@@ -74,6 +74,27 @@ Usually, only one format is supported, but developers may allow the developer to
 
 <hr class="sep-both">
 
+## API Architectures
+
+<div class="row row-cols-lg-2"><div>
+
+The Representational State Transfer (REST) API is the most common API architecture. It adheres to the following principles:
+
+* **Statelessness** 🙌: each request is self-sufficient. The server doesn't need to store additional external information.
+* **Uniform** 🛣️: consistent way of getting resources, such as using URI paths and HTTP methods to manipulate resources.
+* **Cacheability** 🐈: when possible resources must be cached. The server must communicate the caching rules (ex: request headers).
+* **Client-server** 🎫: both the client and the server should be independent of each other.
+
+The format of the answers is often either [JSON](/programming-languages/others/data/json.md) or [XML](/programming-languages/others/data/xml.md).
+
+It has a few disadvantages, such as the lack of standardization, or the over-fetching and under-fetching problems.
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## Query an API
 
 <div class="row row-cols-lg-2"><div>
@@ -178,16 +199,10 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* REST/RESTful/[REST API guidelines](https://github.com/controlook-zz/standards/blob/master/backend/rest-api-guidelines.md)
-    * stateless (do not use previous requests)
-    * uniform (ex: JSON for all responses)
-    * multiple requests to get one resource (disadvantage)
 * [GraphQL](https://graphql.org/) ([article on best practices](https://stepzen.com/blog/designing-graphql-apis-best-practices-and-learnings-from-rest-api-design))
-</div><div>
-
 * [insomnia](https://birdie0.github.io/discord-webhooks-guide/tools/insomnia.html)
 * [httpie](https://birdie0.github.io/discord-webhooks-guide/tools/httpie.html)
 * OData (Open Data)
-* SOAP (Simple Object Access Protocol)
 * WSDL (Web Services Description Language)
+</div><div>
 </div></div>
