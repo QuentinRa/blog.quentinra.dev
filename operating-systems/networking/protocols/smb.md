@@ -25,6 +25,7 @@ $ smbclient [...] -p port # specify port
 ```ps
 $ smbclient -L IP [...]
 PS> net view \\IP
+PS> net share
 ```
 
 **Connect to a share**

@@ -25,8 +25,14 @@ Template engines are tools that allow you to generate HTML by combining template
 * [mustache](https://github.com/mustache/mustache)
 * [liquid](https://shopify.github.io/liquid/) (Ruby)
 
-**Already-made websites** 🗃️
+**Websites Templates** 🗃️
 
 * [freehtml5](https://freehtml5.co/)
 * [html5boilerplate](https://html5boilerplate.com/)
+
+**Proprietary Websites** 💵
+
+* Wix
+* Shopify
+* OpenCart
 </div></div>

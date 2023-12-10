@@ -404,6 +404,8 @@ Once created, you can either share the drive or only a folder.
 </details>
 
 👉 TL;DR mounted drive/folders will be shown at `\\ServerName` with the servername the name that you defined before installing ADDS.
+
+👉 See also the notes for [Windows shares](/operating-systems/windows/_knowledge/index.md#shared-folders).
 </div><div>
 
 #### Auto-mounting 🚀

@@ -13,3 +13,5 @@ bundle config set path 'xxx'
 gem uninstall xxx
 
 asdf
+
+Rails ("Django but in ruby")

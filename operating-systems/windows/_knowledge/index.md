@@ -374,9 +374,9 @@ It's possible to share a folder over a network, allowing others on the network t
 
 In "Advanced Sharing," you can set the share name, the maximum number of simultaneous users, and set the share permissions.
 
-Share permissions are only applied for remote users, along NTFS permissions. They are only three: Full Control, Change, Read.
+Share permissions are only applied for remote users, along NTFS permissions. There are only three: Full Control, Change, Read.
 
-🔒 It uses the [CIFS](/operating-systems/networking/protocols/cifs.md) protocol.
+🔒 They use the [CIFS](/operating-systems/networking/protocols/cifs.md) protocol.
 
 ➡️ Shares are mostly used with `Network Attached Storage (NAS)`, `Storage Area Network (SAN)`, or [Active Directory](/operating-systems/cloud/active-directory/_knowledge/index.md).
 </div><div>

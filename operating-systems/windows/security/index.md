@@ -147,9 +147,8 @@ Stuff that I found, but never read/used yet.
 * [SASE](https://www.microsoft.com/en-us/security/business/security-101/what-is-sase)
 * sysmon
 * [Introduction to Alternate Data Streams](https://www.malwarebytes.com/blog/news/2015/07/introduction-to-alternate-data-streams)
-</div><div>
-
 * [Windows credential guard](https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-how-it-works)
+</div><div>
 
 **BitLocker**
 
@@ -160,4 +159,13 @@ The Trusted Platform Module (TPM) hardware component provides security against t
     * `reg save hklm\sam C:\XXX\sam.hive`
 * Windows Defender Firewall
   * Block access to share if not in the same workgroup?
+* Application Whitelisting 
+* AppLocker
+* Local Group Policy (gpedit.msc)
+
+```ps
+PS> # list enable protection settings
+PS> Get-MpComputerStatus
+PS> Get-MpComputerStatus | findstr "True"
+```
 </div></div>
