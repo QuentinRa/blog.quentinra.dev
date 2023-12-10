@@ -113,6 +113,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* Control Groups (cgroups)
+* Systemd Timers: using systemd for task scheduling. `xxx.timer` files.
 </div><div>
 </div></div>

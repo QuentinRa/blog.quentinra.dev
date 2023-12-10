@@ -122,6 +122,7 @@ Some methods of contact 📨: SMS, email, push notification...
 
 [![linuxfundamentalspart3](../../_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
 [![adventofcyber4](../../_badges/thm/adventofcyber4/day2.svg)](https://tryhackme.com/room/adventofcyber4)
+[![linuxfundamentals](../../_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/module/details/18)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -162,6 +163,8 @@ Stuff that I found, but never read/used yet.
 * [windowseventlogs](https://tryhackme.com/room/windowseventlogs)
 * [endpoint-security-monitoring](https://tryhackme.com/module/endpoint-security-monitoring)
 * [security-information-event-management](https://tryhackme.com/module/security-information-event-management)
+* var/log/kern.log (outdated drivers, system crashes,  resource limitations)
+* Application logs (`/var/log/fail2ban.log`, apache, etc.)
 </div><div>
 
 * Auditing

@@ -387,7 +387,7 @@ downloads
 
 <div class="row row-cols-lg-2"><div>
 
-We can run scheduled tasks on Linux using cron jobs.
+We can run scheduled tasks on Linux using cron jobs. They are an alternative to [System Timers](/operating-systems/linux/env/boot/index.md).
 
 ```shell!
 $ crontab -l # list current user jobs
@@ -439,4 +439,13 @@ Stuff that I found, but never read/used yet.
 * [tldp](https://tldp.org/guides.html)
 * [linuxshelltips](https://www.linuxshelltips.com/)
 * [shellhacks](https://www.shellhacks.com)
+
+<details class="details-n">
+<summary>Memory Swapping</summary>
+
+* Used for memory managment
+* Free inactive memory pages and give it to others
+* `mkswap`: set up a swap area
+* `swapon`: activate a swap area
+</details>
 </div></div>

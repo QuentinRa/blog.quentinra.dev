@@ -501,6 +501,10 @@ $ sudo brctl delbr
 $ sudo brctl addif name interface # can more multiple interfaces
 $ # which will bridge them altogether
 $ sudo ip link set dev xxx up # set up
+$ sudo ip link set eth0 up # sudo ifconfig eth0 up
+$ sudo ifconfig eth0 IP # assign IP to interface
+$ sudo route add default gw IP eth0 # gateway for interface
+// /etc/network/interfaces: persistent changes
 ```
 </div><div>
 

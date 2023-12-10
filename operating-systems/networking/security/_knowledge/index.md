@@ -1,6 +1,7 @@
 # Network security
 
 [![intronetworksecurity](../../../../cybersecurity/_badges/thmp/intronetworksecurity.svg)](https://tryhackme.com/room/intronetworksecurity)
+[![linuxfundamentals](../../../../cybersecurity/_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/module/details/18)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -181,7 +182,7 @@ Stuff that I found, but never read/used yet.
 
 Access
 
-* Network Access Control (NAC): allow based on user+device
+* Network Access Control (NAC): allow based on user+device (DAC, MAC, RBAC)
 </div><div>
 
 * Get requests to sniff ([see](https://tryhackme.com/room/wireshark))

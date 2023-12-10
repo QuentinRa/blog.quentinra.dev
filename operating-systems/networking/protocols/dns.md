@@ -196,6 +196,7 @@ Stuff that I found, but never read/used yet.
 * DNS relay
 * DOT (DNS Over TLS)
 * `/etc/hosts` on Linux (local DNS)
+* `/etc/resolv.conf` on Linux (local DNS)
 </div><div>
 
 Purchase domain names

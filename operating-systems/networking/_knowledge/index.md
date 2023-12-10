@@ -280,7 +280,6 @@ Voice over Internet Protocol (VoIP)
 Random
 
 * Streaming network telemetry
-* Network Access Control
 * [faidherbe](https://www.faidherbe.org/tutoriel/)
 
 Traffic mirroring: See also NetFlow to collect and analyze network traffic data.

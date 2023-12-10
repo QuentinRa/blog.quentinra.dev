@@ -74,4 +74,12 @@ $ sudo apt install fail2ban
 $ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 $ sudo vim /etc/fail2ban/jail.local
 ```
+
+Random
+
+* Remove/Disable unused apps/services/...
+* NTP, Syslog
+* password policy and account lock
+* rootkis: chkrootkit, rkhunter
+* Hardening: Lynis
 </div></div>
