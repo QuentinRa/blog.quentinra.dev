@@ -30,5 +30,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [ace](https://ace.c9.io/)
+* [jsconsole](https://jsconsole.com/)
 </div><div>
 </div></div>

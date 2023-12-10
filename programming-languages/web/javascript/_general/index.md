@@ -43,7 +43,7 @@ console.clear();
 * Documentation ✅: [JSDoc](https://jsdoc.app/)
 * Guidelines ‍🎓 : [clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript)
 * Benchmarks 🚀: [jsben.ch](https://jsben.ch/) / [jsperf](https://github.com/jsperf/jsperf.com)
-* Minifier 🐲: [javascript minifier](https://javascriptminifier.com/) or [terser](https://github.com/terser/terser)
+* Minifier 🐲: [javascript minifier](https://www.toptal.com/developers/javascript-minifier) or [terser](https://github.com/terser/terser)
 * Lint 🧹: [eslint](https://github.com/eslint/eslint) and/or [unsupported browser features linter](https://github.com/amilajack/eslint-plugin-compat)
 </div></div>
 
