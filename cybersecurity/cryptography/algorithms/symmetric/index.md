@@ -49,6 +49,8 @@ These algorithms split the message into blocks of fixed size `n`. If a block is 
 
 Caesar 👑 was replacing letters such as: $a \to d,\ b \to e,\ ...,\ z \to c$. We shift each letter by amount which is the key ($k=3$ here).
 
+It's also a rotation cipher (rot). As $k=13$, it is called rot13.
+
 **Encryption**: shift each letter $k$ times
 
 **Decryption**: apply the reverse operation 🔄️

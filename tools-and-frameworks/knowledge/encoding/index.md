@@ -1,6 +1,7 @@
 # Encoding
 
 [![linuxstrengthtraining](../../../cybersecurity/_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
+[![javascriptdeobfuscation](../../../cybersecurity/_badges/htb/javascriptdeobfuscation.svg)](https://academy.hackthebox.com/course/preview/javascript-deobfuscation)
 [![c4ptur3th3fl4g](../../../cybersecurity/_badges/thm-p/c4ptur3th3fl4g.svg)](https://tryhackme.com/room/c4ptur3th3fl4g)
 
 <div class="row row-cols-lg-2"><div>
@@ -242,7 +243,7 @@ Stuff that I found, but never read/used yet.
 * `-C`: to hexadecimal
 * `-e`: customize
 
-```bash
+```bash!
 $ hexdump <<< "Hello, World" > hello_world.hex
 $ cat hello_world.hex
 0000000 6548 6c6c 2c6f 5720 726f 646c 000a
@@ -258,6 +259,8 @@ $ xxd <<< "Hello, World" | tee hello_world.hex
 # reverse
 $ xxd -r hello_world.hex
 Hello, World
+$ sudo apt install xxd
+$ xxd -p -rd <<< <SomeHexa>
 ```
 </details>
 <details class="details-e">

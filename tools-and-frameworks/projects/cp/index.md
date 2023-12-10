@@ -129,7 +129,7 @@ if (condition) {            // common syntax - same line
 
 To avoid making the code hard to read and maintain, developers often define formatting rules. There are a lot of **linters** 🫧, at least one per programming language, that can detect and automatically clean up the code according to the formatting rules defined.
 
-* [ESLint](https://eslint.org/) for JavaScript
+* [ESLint](https://eslint.org/) or [js-beautify](https://beautifier.io/) for JavaScript
 * [pylint](https://pylint.org/) for Python
 * [markdownlint](https://github.com/DavidAnson/markdownlint) for Markdown
 * [ShellCheck](https://www.shellcheck.net/) for Shell Scripts

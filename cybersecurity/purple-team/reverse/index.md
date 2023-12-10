@@ -21,9 +21,17 @@ It can be used to understand how a malware works 🛡️ or to find vulnerabilit
 Code obfuscation is an automated process to make the code less-readable for humans. A simple example would be by replacing variables names with less readable names such as `_0x565`.
 
 Code obfuscation doesn't impact the program functionality, but it may impact its performance: obfuscated code is usually slower.
-
-➡️ Ex: [Beautify Tools Obfuscator](http://beautifytools.com/javascript-obfuscator.php) for JavaScript.
 </div><div>
+
+A few obfuscators for JavaScript:
+
+* [beautifytools](http://beautifytools.com/javascript-obfuscator.php)
+* [obfuscator.io](https://obfuscator.io/)
+* [jjencode](https://utf-8.jp/public/jjencode.html)
+* [aaencode](https://utf-8.jp/public/aaencode.html)
+
+You may try [unpacker](https://matthewfl.com/unPacker.html) to un-obfuscate Javascript code.
+
 </div></div>
 
 <hr class="sep-both">
@@ -35,5 +43,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * Minify code to make it less readable
+* Use of encoding
 </div><div>
 </div></div>
