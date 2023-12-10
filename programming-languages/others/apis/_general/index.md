@@ -90,7 +90,9 @@ The format of the answers is often either [JSON](/programming-languages/others/d
 It has a few disadvantages, such as the lack of standardization, or the over-fetching and under-fetching problems.
 </div><div>
 
-...
+An alternative to rest is the SOAP (Simple Object Access Protocol) APIs. The request is made in XML through an HTTP request, and the response is also in XML.
+
+SOAP is mainly used when sharing, often complex, structured data. The main disadvantage is that it's harder to learn.
 </div></div>
 
 <hr class="sep-both">

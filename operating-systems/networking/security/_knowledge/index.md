@@ -1,6 +1,6 @@
 # Network security
 
-[![intronetworksecurity](../../../cybersecurity/_badges/thmp/intronetworksecurity.svg)](https://tryhackme.com/room/intronetworksecurity)
+[![intronetworksecurity](../../../../cybersecurity/_badges/thmp/intronetworksecurity.svg)](https://tryhackme.com/room/intronetworksecurity)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -25,7 +25,7 @@ Security controls are determined based on the type of traffic.
 
 ## Common networking attacks
 
-[![protocolsandservers2](../../../cybersecurity/_badges/thmp/protocolsandservers2.svg)](https://tryhackme.com/room/protocolsandservers2)
+[![protocolsandservers2](../../../../cybersecurity/_badges/thmp/protocolsandservers2.svg)](https://tryhackme.com/room/protocolsandservers2)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -49,7 +49,7 @@ Security controls are determined based on the type of traffic.
 
 ## Firewalls
 
-[![extendingyournetwork](../../../cybersecurity/_badges/thmp/extendingyournetwork.svg)](https://tryhackme.com/room/extendingyournetwork)
+[![extendingyournetwork](../../../../cybersecurity/_badges/thmp/extendingyournetwork.svg)](https://tryhackme.com/room/extendingyournetwork)
 
 <div class="row row-cols-lg-2"><div>
 

@@ -4,10 +4,7 @@
 [![linuxfundamentals](../../../cybersecurity/_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/course/preview/linux-fundamentals)
 
 <div class="row row-cols-lg-2"><div>
-...
 </div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">
