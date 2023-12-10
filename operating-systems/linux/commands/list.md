@@ -1708,7 +1708,7 @@ Stuff that I found, but never read/used yet.
 * `ranger`
 * `hexdump`
 * `cloc`, `sloc`
-* `rsync`
+* `rsync`:  sync two folders, often used for large amount of data, `rsync -av s d` (archive verbose) `-z` `--backup --backup-dir=/xxx` (restore) `--delete` `-e ssh`. See also: Deja Dup, Duplicity.
 * `column -t` (t=as table)
 </div><div>
 

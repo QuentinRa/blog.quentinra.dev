@@ -490,7 +490,7 @@ Stuff that I found, but never read/used yet.
 * [DNS commands](../protocols/dns.md#-to-do-)
 * [NFS commands](../protocols/nfs.md#-to-do-)
 * `arp -a`, `arp -a -d`
-* `iptables [...] -j REJECT --reject-with tcp-reset`
+* `iptables [...] -j REJECT --reject-with tcp-reset`, `iptables -m`
 * `(timeout 1 bash -c '</dev/tcp/IP/port' && echo OPEN || echo CLOSED) 2> /dev/null`
 
 ```shell!

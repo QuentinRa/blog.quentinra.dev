@@ -423,6 +423,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * ELF
+* Solaris
 * shift+insert, middle button of the mouse, primary clipboard, most recently selected text
 * [linuxhandbook](https://linuxhandbook.com/)
 * [linuxhint](https://linuxhint.com/)

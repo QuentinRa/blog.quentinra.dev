@@ -362,6 +362,28 @@ Some [critical services](https://learn.microsoft.com/en-us/windows/win32/rstmgr/
 
 <hr class="sep-both">
 
+## Windows Registry
+
+[![windowsfundamentals](../../../cybersecurity/_badges/htb/windowsfundamentals.svg)](https://academy.hackthebox.com/course/preview/windows-fundamentals)
+
+<div class="row row-cols-lg-2"><div>
+
+The Windows Registry is a hierarchical database that stores system, hardware, software, user preferences, and other settings.
+
+The Registry is organized into a tree-like structure. The top-level nodes are called "hives," and each hive contains "keys" and "subkeys."
+
+Administrator privileges are required to open and edit the registry. Caution is advised. Use `regedit` to open the registry.
+
+There are computer- and user-specific keys. The former hives names are starting with `HKEY` while the latter are starting with `HKCU`.
+</div><div>
+
+The user registry is stored in `C:\Users\<USERNAME>\Ntuser.dat`.
+
+The computer registry is stored in `C:\Windows\System32\Config\`.
+</div></div>
+
+<hr class="sep-both">
+
 ## Random Notes
 
 <div class="row row-cols-lg-2"><div>

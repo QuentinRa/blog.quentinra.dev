@@ -1,7 +1,6 @@
 # Network security
 
 [![intronetworksecurity](../../../../cybersecurity/_badges/thmp/intronetworksecurity.svg)](https://tryhackme.com/room/intronetworksecurity)
-[![linuxfundamentals](../../../../cybersecurity/_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/module/details/18)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -129,6 +128,21 @@ Standard ACLs are usually placed near the destination of the traffic, and they f
 
 <hr class="sep-both">
 
+## TCP Wrappers
+
+[![linuxfundamentals](../../../../cybersecurity/_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/module/details/18)
+
+<div class="row row-cols-lg-2"><div>
+
+TCP Wrappers is a host-based networking ACL system for Linux. It can be used to control access to network services based on the IP address of the client requesting access.
+
+* `/etc/hosts.allow`: list allowed hosts (whitelist)
+* `/etc/hosts.deny`: list forbidden hosts (blacklist)
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## TCP/IP Protocol Stack Security
 
 <div class="row row-cols-lg-2"><div>
@@ -193,6 +207,7 @@ Access
 Firewall applicative
 
 * Application-level gateway (FTP, SIP, or HTTP)
+* FirewallD, Netfilter (Linux)
 
 CMDB
 
