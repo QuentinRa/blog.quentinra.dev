@@ -377,9 +377,16 @@ Administrator privileges are required to open and edit the registry. Caution is 
 There are computer- and user-specific keys. The former hives names are starting with `HKEY` while the latter are starting with `HKCU`.
 </div><div>
 
-The user registry is stored in `C:\Users\<USERNAME>\Ntuser.dat`.
+The user registry is stored in `C:\Users\<USERNAME>\NTUSER.DAT`.
 
 The computer registry is stored in `C:\Windows\System32\Config\`.
+
+```ps
+PS> reg query xxx # query the registry
+PS> reg query hklm\sam
+PS> reg query HKEY_LOCAL_MACHINE\sam\SAM
+PS> # see also: reg save
+```
 </div></div>
 
 <hr class="sep-both">

@@ -1,6 +1,6 @@
 # Gobuster
 
-[![webenumerationv2](../../../_badges/thmp/webenumerationv2.svg)](https://tryhackme.com/room/webenumerationv2)
+[![webenumerationv2](../../../../_badges/thmp/webenumerationv2.svg)](https://tryhackme.com/room/webenumerationv2)
 
 <div class="row row-cols-md-2"><div>
 
@@ -56,16 +56,21 @@ Refer to [gobuster fuzz](https://github.com/OJ/gobuster#fuzz-mode) 👻.
 
 #### subdomains brute force
 
+For [subdomains brute force](/cybersecurity/red-team/s2.discovery/techniques/subdomains.md), you can use:
+
 ```ps
 $ gobuster dns -d URL -w wordlist
+$ gobuster dns -d example.com -w wordlist # example
 ```
 </div><div>
 
 #### vhost brute force
 
-In newer versions, you need to add `--append-domain` to check `xxx.example.com`, and not just `xxx`.
+For [vhosts brute force](/cybersecurity/red-team/s2.discovery/techniques/vhosts.md), you can use:
 
 ```ps
 $ gobuster vhost -u URL -w wordlist --append-domain
 ```
+
+In newer versions, you need to add `--append-domain` to check `xxx.example.com`, and not just `xxx`.
 </div></div>

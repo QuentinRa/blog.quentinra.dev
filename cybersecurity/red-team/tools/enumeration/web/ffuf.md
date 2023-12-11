@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[ffuf](https://github.com/ffuf/ffuf) <small>(**f**uzz **f**aster **u** **f**ool)</small> (9.2k ⭐) is a [Fuzzing](../techniques/fuzzing.md) tool in Go. It's written to be a faster, modern, version of wfuzz.
+[ffuf](https://github.com/ffuf/ffuf) <small>(**f**uzz **f**aster **u** **f**ool)</small> (9.2k ⭐) is a [Fuzzing](/cybersecurity/red-team/s2.discovery/techniques/fuzzing.md) tool in Go. It's written to be a faster, modern, version of wfuzz.
 
 Common examples are:
 
@@ -54,18 +54,22 @@ $ ffuf -fs 5230 [...] # hides responses with size=5230
 
 #### vhost brute force
 
+For [vhosts brute force](/cybersecurity/red-team/s2.discovery/techniques/vhosts.md), you can use:
+
 ```ps
 $ ffuf -w wordlist -H "Host: FUZZ.example.com" -u example.com
 ```
 
-⚠️ As every response may have the same size, they are most likely the same answer (failure).
+⚠️ Similar responses are most likely the same answer (failure).
 </div><div>
 
 #### subdomains brute force
+
+For [subdomains brute force](/cybersecurity/red-team/s2.discovery/techniques/subdomains.md), you can use:
 
 ```ps
 $ ffuf -w wordlist -u FUZZ.example.com
 ```
 
-⚠️ As every response may have the same size, they are most likely the same answer (failure).
+⚠️ Similar responses are most likely the same answer (failure).
 </div></div>

@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[wfuzz](https://github.com/xmendez/wfuzz) (5k ⭐) is a [Fuzzing](../techniques/fuzzing.md) tool in Python. There are new modern alternatives, and it has not been updated since 2020.
+[wfuzz](https://github.com/xmendez/wfuzz) (5.4k ⭐) is a [Fuzzing](/cybersecurity/red-team/s2.discovery/techniques/fuzzing.md) tool in Python. There are new modern alternatives, and it has not been updated since 2020.
 
 Example
 

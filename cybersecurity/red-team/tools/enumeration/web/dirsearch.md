@@ -2,16 +2,16 @@
 
 <div class="row row-cols-md-2"><div>
 
-[dirsearch](https://github.com/maurosoria/dirsearch) (9.5k ⭐) can be installed with `apt install dirsearch`, and there is an implementation in GO if you want to.
+[dirsearch](https://github.com/maurosoria/dirsearch) (10.6k ⭐) can be installed with `apt install dirsearch`, and there is an implementation in GO if you want to.
 
-```bash!
+```ps
 $ dirsearch -u URL # use default wordlist
 $ dirsearch -u URL -w wordlist
 ```
 
 Ignore some error codes
 
-```bash!
+```ps
 $ dirsearch [...] -x 404
 $ dirsearch [...] -x 404,500
 ```
@@ -19,7 +19,7 @@ $ dirsearch [...] -x 404,500
 
 You can append some extensions
 
-```bash
+```ps
 $ dirsearch [...] -e php
 $ dirsearch [...] -e php,html
 ```
