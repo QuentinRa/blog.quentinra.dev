@@ -10,10 +10,11 @@ A same webserver can be used to host multiple sites. Each site is identified by 
 
 As we don't usually know the IP, there are [DNS](/operating-systems/networking/protocols/dns.md) servers mapping a domain to an IP. Once we found the IP, the HTTP request is similar to:
 
-```bash!
-$ telnet SOME_IP_YOU_FOUND 80 # tell the webserver at IP
+```shell!
+$ # tell the webserver at IP
+$ telnet SOME_IP 80 # we want to see test.example.com
 [...]
-Host: test.example.com # we want to see test.example.com
+Host: test.example.com
 [...]
 ```
 
@@ -28,7 +29,7 @@ Mapping from a domain to a website are done locally using what we call **virtual
 
 To avoid manually edit the Host, users will usually add a "DNS record" on their machine in their host file, mapping the domain to the IP.
 
-* `/etc/hosts`
+* `/etc/hosts` (see also: [Linux DNS Configuration](/operating-systems/networking/protocols/dns.md#linux-dns-configuration))
 * `c:\windows\system32\drivers\etc\hosts`
 
 Common tools to find <small>(brute force)</small> virtual hosts are:

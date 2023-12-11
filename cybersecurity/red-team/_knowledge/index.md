@@ -298,8 +298,8 @@ See also: [cook](https://github.com/glitchedgitz/cook) (0.6k ⭐) or [CeWL](http
 You can also use: [JohnTheReaper](/cybersecurity/cryptography/algorithms/hashing/cracking/john.md#wordlist-generation) or [hashcat](/cybersecurity/cryptography/algorithms/hashing/cracking/hashcat.md#wordlist-generation)!
 
 ```shell!
+$ seq 0 99 > 0_to_99.lst
 $ echo {A..Z} | tr ' ' '\n' > AZ.lst
-$ echo {0..99} | tr ' ' '\n' > 0_to_99.lst
 $ echo user{0..9} | tr ' ' '\n' > user_0_to_9.lst
 $ echo {admin,adm,user} | tr ' ' '\n' > simple_list.lst
 $ cewl -w output.lst -d depth -m word_size URL

@@ -22,6 +22,11 @@ $ ffuf -w wordlist -u URL -X POST -d "xxx=FUZZ" -H 'Content-Type: application/x-
 * `-H header_value`: a header, or a list of headers comma separated
 * `-X method`: the method used (GET/POST..;). Default: GET.
 * `-d payload`: POST payload
+* `-t 40`: number of threads, default to 40
+* `-timeout 10`: timeout, default to 10, you may use 1
+* `-ic`: ignore wordlist comments such as copyrights
+* `-v`: enable verbose
+* `-e .xxx,.yyy`: also test appending extensions to `FUZZ`
 
 You can use multiple wordlists, in such cases, you won't use FUZZ, but your own keyword, such as W1/W2.
 
@@ -29,6 +34,12 @@ You can use multiple wordlists, in such cases, you won't use FUZZ, but your own 
 $ ffuf -w wordlist1:W1,wordlist2:W2 -u URL?w1=W1&w2=W2 [...]
 ```
 </div><div>
+
+You may recursively fuzz while it's advised to set a maximum depth to avoid long fuzzing and waiting times.
+
+```ps
+$ ffuf [...] -recursion -recursion-depth 1
+```
 
 You will most likely want to only show some answers, or filter=hide some answers, based on a criterion. A filter switch is starting with `-f`, while a show switch is starting with `-m`.
 
@@ -41,12 +52,14 @@ You will most likely want to only show some answers, or filter=hide some answers
 ```shell!
 $ ffuf -fc 404,500 [...] # hides 404,500
 $ ffuf -fc 400-404 [...] # hides 400 to 404
-$ ffuf -mc 200 [...] # show only 200
+$ ffuf -mc 200 [...]     # show only 200
 $ ffuf -mc 200,301 [...] # show only 200,301
-$ ffuf -fs 5230 [...] # hides responses with size=5230
+$ ffuf -fs 5230 [...]    # hides responses with size=5230
 ```
 
 ➡️ In theory, the repository [ffuf-scripts](https://github.com/ffuf/ffuf-scripts) should have a list of scripts useful with ffuf.
+
+☠️ You may have to use `-H "User-Agent: Mozilla/5.0"` if you got 403.
 </div></div>
 
 <hr class="sep-both">

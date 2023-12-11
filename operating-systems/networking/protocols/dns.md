@@ -182,6 +182,29 @@ $ whois 8.8.8.8
 
 <hr class="sep-both">
 
+## Linux DNS Configuration
+
+<div class="row row-cols-lg-2"><div>
+
+On Linux, the operating system will first try to resolve a domain using `/etc/hosts` before testing an external DNS server.
+
+```text!
+SOME_IP example.com
+SOME_IP admin.example.com test.example.com
+```
+
+You can add an entry using:
+
+```shell!
+$ sudo sh -c 'echo "SOME_IP my.example.com" >> /etc/hosts'
+```
+</div><div>
+
+The file `/etc/resolv.conf` is used to determine which nameserver is used to resolve domains, along other settings.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -195,8 +218,6 @@ Stuff that I found, but never read/used yet.
 * DNS poisoning
 * DNS relay
 * DOT (DNS Over TLS)
-* `/etc/hosts` on Linux (local DNS)
-* `/etc/resolv.conf` on Linux (local DNS)
 </div><div>
 
 Purchase domain names
