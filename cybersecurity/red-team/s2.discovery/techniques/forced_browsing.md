@@ -15,7 +15,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-Forced browsing is a technique in which we test URLs crafted with from a list of common files/folders and we try to find something juicy.
+Forced browsing is a technique in which we test URLs crafted from a list of common files/folders and we try to find something juicy.
 
 * 🧃 Configuration files <small>(ex: .config)</small>
 * 👀 Old files <small>(ex: index.php.old)</small>
@@ -37,10 +37,10 @@ You should use `common.txt` first, then move to `small`, and sometimes `medium`.
 
 Common tools are:
 
-* [Gobuster](../tools/gobuster.md)
-* [dirsearch](../tools/dirsearch.md)
-* [ffuf](../tools/ffuf.md)
-* [wfuzz](../tools/wfuzz.md)
+* [Gobuster](/cybersecurity/red-team/tools/enumeration/web/gobuster.md)
+* [dirsearch](/cybersecurity/red-team/tools/enumeration/web/dirsearch.md)
+* [ffuf](/cybersecurity/red-team/tools/enumeration/web/ffuf.md)
+* [wfuzz](/cybersecurity/red-team/tools/enumeration/web/wfuzz.md)
 * [feroxbuster](https://github.com/epi052/feroxbuster) (4.1k ⭐, Rust)
 * [dirb](https://dirb.sourceforge.net/) (installable on any Debian)
 * [DirBuster](https://github.com/KajanM/DirBuster) (0.1k ⭐)

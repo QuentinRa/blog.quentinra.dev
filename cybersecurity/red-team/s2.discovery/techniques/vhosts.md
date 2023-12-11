@@ -33,8 +33,8 @@ To avoid manually edit the Host, users will usually add a "DNS record" on their 
 
 Common tools to find <small>(brute force)</small> virtual hosts are:
 
-* [gobuster](../tools/gobuster.md#vhost-brute-force)
-* [ffuf](../tools/ffuf.md#vhost-brute-force)
+* [gobuster](/cybersecurity/red-team/tools/enumeration/web/gobuster.md#vhost-brute-force)
+* [ffuf](/cybersecurity/red-team/tools/enumeration/web/ffuf.md#vhost-brute-force)
 
 Common [wordlists](/cybersecurity/red-team/_knowledge/index.md#wordlists-) that can be used are the same as for [Subdomains](subdomains.md).
 </div></div>

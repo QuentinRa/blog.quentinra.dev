@@ -1,17 +1,20 @@
 # ffuf
 
+[![attacking_with_ffuf](../../../../../cybersecurity/_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
+
 <div class="row row-cols-md-2"><div>
 
-[ffuf](https://github.com/ffuf/ffuf) <small>(**f**uzz **f**aster **u** **f**ool)</small> (9.2k ⭐) is a [Fuzzing](/cybersecurity/red-team/s2.discovery/techniques/fuzzing.md) tool in Go. It's written to be a faster, modern, version of wfuzz.
+[ffuf](https://github.com/ffuf/ffuf) <small>(**f**uzz **f**aster **u** **f**ool)</small> (10.6k ⭐) is a [Fuzzing](/cybersecurity/red-team/s2.discovery/techniques/fuzzing.md) tool in Go. It was designed to be a faster and modern alternative to wfuzz.
 
 Common examples are:
 
 ```ps
 $ ffuf -w wordlist -u URL/FUZZ # Forced browsing
 $ ffuf -w wordlist -u URL?FUZZ=value # GET
-$ ffuf -w wordlist -u URL?key=FUZZ # GET
+$ ffuf -w wordlist -u URL?key=FUZZ   # GET
 $ ffuf -w wordlist -u URL/FUZZ -H "Header: value" # Header
-$ ffuf -w wordlist -u URL -X POST -d "xxx=FUZZ" # POST
+$ ffuf -w wordlist -u URL -X POST -d "xxx=FUZZ" # POST//BELOW
+$ ffuf -w wordlist -u URL -X POST -d "xxx=FUZZ" -H 'Content-Type: application/x-www-form-urlencoded'
 ```
 
 * `-w wordlist`: FUZZ will be replaced with each entry in the wordlist

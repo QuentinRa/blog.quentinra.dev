@@ -4,7 +4,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-[Gobuster](https://github.com/OJ/gobuster) (7.5k ⭐) is a popular web scanner.
+[Gobuster](https://github.com/OJ/gobuster) (8.5k ⭐) is a popular web scanner.
 
 ```ps
 $ gobuster dir -u URL -w wordlist

@@ -14,8 +14,8 @@ These subdomains may be hosted as a [Virtual host](vhosts.md) or not.
 
 Common tools to find <small>(brute force)</small> hidden/non-public subdomains are:
 
-* [gobuster](../tools/gobuster.md#subdomains-brute-force)
-* [ffuf](../tools/ffuf.md#subdomains-brute-force)
+* [gobuster](/cybersecurity/red-team/tools/enumeration/web/gobuster.md#subdomains-brute-force)
+* [ffuf](/cybersecurity/red-team/tools/enumeration/web/ffuf.md#subdomains-brute-force)
 * [DNSRecon](../tools/dnsrecon.md)
 </div><div>
 
