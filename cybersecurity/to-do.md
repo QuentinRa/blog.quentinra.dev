@@ -387,3 +387,18 @@ https://tryhackme.com/room/retro (blaster...)
 * Test: `wpscan --url http://10.10.162.222/wordpress/ --detection-mode aggressive`
 * `php://filter/convert.base64-encode/resource=../../../../../wp-config.php` (file inclusion, https://www.idontplaydarts.com/2011/02/using-php-filter-for-local-file-inclusion/)
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+```text!
+https://github.com/vitalysim/Awesome-Hacking-Resources
+https://redteam.guide/ (book)
+```
+</div><div>
+</div></div>

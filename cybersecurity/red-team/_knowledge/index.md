@@ -38,8 +38,9 @@ Some jobs in the red team are:
 
 When working with a client, both the penetration tester and the system owner will define **Rules of Engagement (ROE)**
 
-* 🎯 The scope of the test <small>(servers)</small>
-* 🤠 The rules of the test <small>(techniques allowed)</small> 
+* 🎯 The scope of the test <small>(servers, hosts, etc.)</small>
+* 🤠 The rules of the test <small>(techniques allowed, no downtime, etc.)</small>
+* 💵 Concrete Objectives <small>(system misconfiguration, etc.)</small>
 * ...
 
 Everything outside the scope is illegal. See [SANS ROE template](https://sansorg.egnyte.com/dl/bF4I3yCcnt/).
@@ -309,7 +310,7 @@ $ python3 cupp.py -i # based on a profile
 
 #### Tune wordlists
 
-If the minimum length for a password is 6 characters, you may want to remove shorter passwords. Refer to the [regex](/programming-languages/others/regex/index.md) section.
+If the minimum length for a password is 6 characters, you may want to remove shorter passwords. Refer to the [regex](/tools-and-frameworks/knowledge/regex/index.md) section.
 
 ```shell!
 $ # only keep 4 letters passwords
@@ -334,19 +335,12 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources)
-* [CAPEC](https://capec.mitre.org/)
-* [Attack tatics](https://attack.mitre.org/tactics/enterprise/)
-* [pwndoc](https://github.com/pwndoc/pwndoc) (pentest report)
-* [writehat](https://github.com/blacklanternsecurity/writehat) (pentest report)
-* Log date/time of pentest, so in case of attack, you can proove it wasn't you.
-* `Start-Transcript`
-* encrypt VBox VM
-</div><div>
-
+* Varonis Cyber Kill Chain
 * [cyberkillchainzmt](https://tryhackme.com/room/cyberkillchainzmt)
 * [unifiedkillchain](https://tryhackme.com/room/unifiedkillchain)
-* [redteam.guide](https://redteam.guide/)
-* Varonis Cyber Kill Chain
-* concrete objectives (identify system misconfigurations) and perimeter/scope (ex: no downtime)
+* [pwndoc](https://github.com/pwndoc/pwndoc) (pentest report)
+* [writehat](https://github.com/blacklanternsecurity/writehat) (pentest report)
+* Log date/time of pentest, so in the case of attack, you can prove it wasn't you (ex: `Start-Transcript`).
+* encrypt VBox VM
+</div><div>
 </div></div>
