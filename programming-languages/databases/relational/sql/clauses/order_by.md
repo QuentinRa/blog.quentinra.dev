@@ -14,6 +14,7 @@ SELECT name [...] ORDER BY name;
 SELECT name [...] ORDER BY name ASC;
 SELECT name [...] ORDER BY name DESC;
 SELECT name [...] ORDER BY name, age DESC;
+SELECT name [...] ORDER BY name ASC, age DESC;
 ```
 </div><div>
 

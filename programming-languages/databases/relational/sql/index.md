@@ -161,8 +161,8 @@ If the service is started (`service mysql status`), log in using:
 
 ```ps
 # requirement: sudo apt install default-mysql-client
+$ mysql -u <username> -p -h <ip> -P <port>
 $ mysql -u root -p
-$ mysql -u root -p -h SOME_IP
 > source xxx.sql;                # import
 > DESCRIBE table_name;           # definition of a table
 > SELECT VERSION();              # version
@@ -232,7 +232,7 @@ DROP VIEW viewName
 </details>
 
 <details class="details-n">
-<summary>V</summary>
+<summary>Schema/Domain</summary>
 
 A **schema** 🗃️ is a sort of namespace in which there are tables, and other related stuff. See the table `INFORMATION_SCHEMA` <small>(TABLES, USERS, COLUMNS/DOMAINS, CHECK_CONSTRAINTS)</small>.
 
