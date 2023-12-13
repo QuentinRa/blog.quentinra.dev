@@ -7,6 +7,8 @@
 ```ps
 $ sudo apt install apache2
 ```
+
+Apache's configuration is found at `/etc/apache2/apache2.conf`.
 </div><div>
 
 👉 You may use an emulator instead of directly installing Apache
