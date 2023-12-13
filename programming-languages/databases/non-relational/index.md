@@ -62,6 +62,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * BASE (SQL ACID)
+* Wide-column store (subset of columnar)
 </div><div>
 
 Graph Query Language ([GQL](https://en.wikipedia.org/wiki/Graph_Query_Language))
