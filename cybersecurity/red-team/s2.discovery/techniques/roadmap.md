@@ -14,9 +14,12 @@ Based on the topics in [Discovery > Tools and methods](../index.md#tools-and-met
 On each page found:
 
 * [ ] [Find hidden comments/tags](../techniques/code_analysis.md)
-* [ ] Test forms 
+* [ ] Test forms/parameters
   * to find useful/vulnerable [HTTP Headers](../techniques/code_analysis.md#analyze-the-network)
-  * to find [SQLi/XSS/...](../../s3.exploitation/index.md#common-techniques)
+  * to find basic vulnerabilities [SQLi/XSS/LFI/...](../../s3.exploitation/index.md#common-techniques)
+  * [Fuzz](/cybersecurity/red-team/s2.discovery/techniques/fuzzing.md) weak/default accounts
+  * with compromised accounts (if any) to check for reuse
   * ...
+* [ ] Try testing the page under different contexts <small>(logged or anonymous, correct cookies vs poisonous cookies, etc.)</small>
 * ...
 </div></div>

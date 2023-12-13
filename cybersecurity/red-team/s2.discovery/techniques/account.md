@@ -13,4 +13,6 @@ Account discovery is a self-made name to categorize techniques to find users tha
 </div><div>
 
 During the exploitation, we may try to brute force these accounts. We may also try other techniques such as SQL truncation, according to what we discovered.
+
+We may also test weak/default credentials using fuzzing.
 </div></div>
