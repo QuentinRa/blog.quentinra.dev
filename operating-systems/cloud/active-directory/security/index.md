@@ -44,6 +44,7 @@ Stuff that I found, but never read/used yet.
 * [adPEAS](https://github.com/61106960/adPEAS) (0.4k ⭐)
 * [UltimateAppLockerByPassList](https://github.com/api0cradle/UltimateAppLockerByPassList) (1.5k ⭐)
 * [Active Directory Exploitation Cheat Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet) (3.4k ⭐)
+* [AD mindmap orange](https://orange-cyberdefense.github.io/ocd-mindmaps/)
 * [kerbrute](https://github.com/ropnop/kerbrute)
 </div><div>
 

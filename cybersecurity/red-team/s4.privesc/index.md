@@ -98,11 +98,17 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-md-2"><div>
 
-* [WADComs](https://github.com/WADComs/WADComs.github.io) (1k ⭐)/[wadcoms website](https://wadcoms.github.io/)
-</div><div>
-
 Courses
 
 * [payatu.com](https://payatu.com/guide-linux-privilege-escalation)
 * [udemy.com](https://www.udemy.com/course/linux-privilege-escalation/)
+
+Random
+
+* [WADComs](https://github.com/WADComs/WADComs.github.io) (1k ⭐)/[wadcoms website](https://wadcoms.github.io/)
+</div><div>
+
+Exploiting Services
+
+* [MySQL user-defined functions](https://redteamnation.com/mysql-user-defined-functions/)
 </div></div>
