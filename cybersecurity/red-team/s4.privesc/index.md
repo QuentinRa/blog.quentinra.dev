@@ -46,6 +46,8 @@ Escalation can be **horizontally**/laterally <small>(another user with the same 
 * 🎠 Misconfigured [NFS shares](/operating-systems/networking/protocols/nfs.md#nfs-vulnerabilities-)
 
 You may want to find [who/where you are](linux/id.md) first.
+
+👉 Multiple techniques may try to exploit [injection](linux/injection.md).
 </div><div>
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...

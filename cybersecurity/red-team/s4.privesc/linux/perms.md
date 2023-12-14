@@ -19,7 +19,7 @@
 
 This is a [permission](/operating-systems/linux/_knowledge/index.md#users-and-permissions) on Linux allowing users to execute a file with the permission of the owner (**SUID**) or the group owner (**GUID**).
 
-```bash
+```bash!
 # Variants: "-04000" "-4000" | "-4001"
 $ find / -perm -u=s -type f -ls 2>/dev/null
 $ find / -perm -g=s -type f -ls 2>/dev/null

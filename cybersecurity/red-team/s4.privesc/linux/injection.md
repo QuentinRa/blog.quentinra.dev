@@ -2,16 +2,16 @@
 
 <div class="row row-cols-md-2"><div>
 
-If there is some code that can is executed as another user, for instance, a [scheduled task](tasks.md) or a [program with the SUID bit](perms.md#suidguid-bit), you may be able to modify the code behavior.
+If there is some code that can is executed as another user, for instance, a [scheduled task](tasks.md) or a [program with the SUID bit](perms.md#suidguid-bit), you may be able to modify the code behavior using injection.
+</div><div>
 
-There are basic scenarios in which you can directly exploit the executable, but in other scenarios, you may have to exploit the environment, meaning:
+There are basic scenarios in which you can directly exploit the executable, but in other scenarios, you may have to exploit the environment itself. In short, it means you may:
 
 * 🌸 edit the environment variables
 * 🌿 edit the files used by the program
 * 🎭 create a file named after the parameters of the command. For instance, if the code uses a glob-pattern, the pattern will be replaced with the matching files. So, you may inject parameters.
 * 🐦 use a flaw in the script language
 * ...
-</div><div>
 </div></div>
 
 <hr class="sep-both">
@@ -70,7 +70,7 @@ drwxr-xr-x 9 xxx xxx 4096 Apr 29 18:50 ..
 
 **Bash versions <4.2-048**: it is possible to create functions named after a path, which allows us to execute a command instead. If the path is accessed by a script, then using `-p`, we can create a bash while inheriting the permissions of its creator.
 
-```bash
+```bash!
 function /some/path { /bin/bash -p; }
 export -f /some/path
 ```
@@ -78,7 +78,7 @@ export -f /some/path
 
 **Bash <4.4**: if debug is enabled, we can inject code in the environment variable PS4 used by bash. If the script has the SUID bit, then using this, we could create a bash with the SUID bit too.
 
-```bash
+```shell!
 $ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/; chmod +xs /tmp/bash)' ./script
 ```
 </div></div>
