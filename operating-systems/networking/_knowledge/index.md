@@ -152,7 +152,7 @@ Each protocol can be represented using a [Message Sequence Chart](https://en.wik
 
 **Layer 7: Application Layer** <small>(data)</small> 🧑
 
-<table class="table table-borderless w-75 table-striped border-dark">
+<table class="table table-borderless table-dark bg-transparent w-75">
 <tbody>
 
 <tr><td class="py-0 my-0">File transfer 📂</td><td class="py-0 my-0">

@@ -23,7 +23,7 @@
 
 Some new symbols were introduced:
 
-<table class="table table-bordered table-striped border-dark">
+<table class="table table-bordered table-striped border-dark table-dark">
 <thead>
 <tr><th></th><th>Description</th></tr>
 </thead>

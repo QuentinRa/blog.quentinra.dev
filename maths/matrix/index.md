@@ -150,7 +150,7 @@ $A / B$ is not possible, but you can do $A * B^{-1}$ <small>(inverse of a matrix
 
 <p></p>
 
-<table class="table table-bordered table-striped border-dark">
+<table class="table table-bordered table-striped border-dark table-dark">
 <thead>
 <tr><th>Identity matrix $Id_n$ or $I_n$</th></tr>
 </thead>

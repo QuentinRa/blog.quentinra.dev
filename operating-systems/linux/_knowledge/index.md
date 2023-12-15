@@ -212,7 +212,7 @@ $ sudo cat /etc/shadow
 <details class="details-n">
 <summary>The 3 not well-known permissions</summary>
 
-<table class="table table-bordered table-striped border-dark mt-4">
+<table class="table table-bordered table-striped border-dark table-dark mt-4">
 <thead>
 <tr><th></th><th>SUID bit (on user)</th><th>SGID bit (on group)</th><th>Sticky bit (on others)</th></tr>
 </thead>
@@ -301,7 +301,7 @@ A **glob-pattern** is an expression using **wildcards** (`motifs`), that when ev
 
 For instance, `*.h` will be replaced with every file -- and directory --, ending with `.h`. They are mostly used on commands taking too many filenames, in which you don't want to manually write all of them 😎.
 
-<table class="table table-bordered table-striped border-dark">
+<table class="table table-bordered table-striped border-dark table-dark">
 <thead>
 <tr><th>Wildcards</th><th>Description</th></tr>
 </thead>
@@ -327,7 +327,7 @@ Everything defined in `[]` is called a **charset**. If you want every character 
 * `[[:space:]]` which is `[ \n\t]`
 * `[[:alnum:]]` which is `[a-zA-Z0-9._]`
 
-<table class="table table-bordered table-striped border-dark">
+<table class="table table-bordered table-striped border-dark table-dark">
 <thead>
 <tr><th>GP</th><th>Description</th><th>Examples</th></tr>
 </thead>

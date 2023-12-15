@@ -118,7 +118,7 @@ a:hover { color: red; } /* won't override the other */
 There are 3 ways to write CSS for a website.
 
 <div class="overflow-auto">
-<table class="table border-dark table-striped table-bordered">
+<table class="table table-bordered table-striped border-dark table-dark">
 <thead><tr><th>Inline CSS 🤮</th><th>STYLE tag 🤢</th><th>External CSS file 😍</th></tr></thead>
 <tbody>
 <tr>

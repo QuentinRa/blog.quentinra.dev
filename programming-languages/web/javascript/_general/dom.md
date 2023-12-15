@@ -26,7 +26,7 @@ JavaScript (JS) is based on ECMAScript. **ECMAScript2016** (ES6) is fully suppor
 There are 3 ways to use JavaScript for a website.
 
 <div class="overflow-auto">
-<table class="table border-dark table-striped table-bordered">
+<table class="table table-bordered table-striped border-dark table-dark">
 <thead><tr><th>Inline JS 🤮</th><th>SCRIPT tag 🤢</th><th>External JavaScript file 😍</th></tr></thead>
 <tbody>
 <tr>
