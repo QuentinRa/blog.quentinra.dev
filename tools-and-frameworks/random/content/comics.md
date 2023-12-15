@@ -35,6 +35,7 @@
 
 * [anime-cli](https://github.com/pystardust/ani-cli) (👻)
 * [cubari.moe](https://cubari.moe/) (manga reader)
+* [scan-translator](https://scan-translator.com/) (Paid AI translation)
 
 <br>
 

@@ -82,9 +82,9 @@ During an assignment, ensure you know which hosts can be automatically scanned (
 Scanning and enumeration
 
 * [banner grabbing](techniques/banner_grabbing.md) ☠️: get a service banner
-* [nmap](tools/nmap.md) 🚪🔥: a stealthy and powerful port scanner
-* [Rustscan](tools/rustscan.md) 🚪🔥: a fast port scanner for CTFs
-* [Masscan](tools/masscan.md) 🚪: an aggressive port scanner in mass
+* [nmap](/cybersecurity/red-team/tools/scanners/ports/nmap.md) 🚪🔥: a stealthy and powerful port scanner
+* [Rustscan](/cybersecurity/red-team/tools/scanners/ports/rustscan.md) 🚪🔥: a fast port scanner for CTFs
+* [Masscan](/cybersecurity/red-team/tools/scanners/ports/masscan.md) 🚪: an aggressive port scanner in mass
 
 Network mapping
 

@@ -11,7 +11,7 @@ You may try to look for credentials.
 
 * 🔐 command history <small>(ex: ~/.bash_history)</small>
 * 🌍 browser history
-* 🛣️ [logs](/cybersecurity/blue-team/logs.md) (`/var/log/`)
+* 🛣️ [logs](/cybersecurity/blue-team/topics/logs.md) (`/var/log/`)
 * 🐚 backups <small>(.old, .bak...)</small>
 * ✉️ conversations/mails (`/var/mail/`)
 * 🌳 website configurations (`.env`)

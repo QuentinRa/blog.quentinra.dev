@@ -8,7 +8,7 @@
 * [Open-source](https://github.com/infobyte/faraday/) (4.2k ⭐) with a paid-plan
 * [Supported tools](https://docs.faradaysec.com/import/#supported-file-formats) <small>(nmap, metasploit, ping, ZAP, W3af, Nessus...)</small>
 
-Supported tools are [plugins](https://github.com/infobyte/faraday_plugins) in [Python](/programming-languages/high-level/python/index.md). It's quite easy to write your own. The [plugin development](https://docs.faradaysec.com/Basic-plugin-development/) section is a good start.
+Supported tools are [plugins](https://github.com/infobyte/faraday_plugins) in [Python](/programming-languages/high-level/scripting/python/index.md). It's quite easy to write your own. The [plugin development](https://docs.faradaysec.com/Basic-plugin-development/) section is a good start.
 
 After installing faraday, you can access it at `http://localhost:5985/`.
 </div><div>

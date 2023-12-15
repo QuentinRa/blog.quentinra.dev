@@ -1,8 +1,6 @@
 # Masscan
 
-[Go back](../index.md)
-
-[![nmap01](../../../_badges/thm/nmap01.svg)](https://tryhackme.com/room/nmap01)
+[![nmap01](../../../../_badges/thm/nmap01.svg)](https://tryhackme.com/room/nmap01)
 
 <div class="row row-cols-md-2"><div class="align-self-center">
 

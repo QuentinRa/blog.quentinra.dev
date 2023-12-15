@@ -173,7 +173,7 @@ DarkStar is a THM staff that made a many rooms on THM. [You can download the VM 
 
 #### Active Directory 🛟
 
-The [Game of Active Directory (GOAD)](https://github.com/Orange-Cyberdefense/GOAD) (1.9k ⭐) is an [Active directory](/operating-systems/active-directory/_knowledge/index.md) Lab. It was designed by the French company "Orange".
+The [Game of Active Directory (GOAD)](https://github.com/Orange-Cyberdefense/GOAD) (1.9k ⭐) is an [Active directory](/operating-systems/cloud/active-directory/_knowledge/index.md) Lab. It was designed by the French company "Orange".
 
 <br>
 

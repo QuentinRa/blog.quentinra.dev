@@ -9,7 +9,7 @@
 You may try to look for credentials.
 
 * 🌍 browser history
-* 🛣️ [logs](/cybersecurity/blue-team/logs.md)
+* 🛣️ [logs](/cybersecurity/blue-team/topics/logs.md)
 * 🐚 backups <small>(.old, .bak...)</small>
 * ✉️ conversations/mails
 * 👜 check the registry <small>(admin required)</small>
