@@ -111,7 +111,7 @@ We are defining F, G, H as propositions and $\Gamma$ a set of propositions. We w
 
 Everything at the left of $\vdash$ is true, at first, you got nothing here, and your expression at the right of $\vdash$, but your goal will be to move as many propositions as possible inside Gamma using the sequent calculus then when you can, you need to try to get axioms (the sequent ax) for each expression with a $\vdash$.
 
-<table class="table table-bordered table-striped border-dark table-dark">
+<table class="table table-bordered border-dark table-dark bg-transparent">
     <tr>
         <td>@1.\quad\frac{}{\Gamma, F \vdash F} (ax)@</td>
         <td>@2.\quad\frac{\Gamma, F \vdash F}{\Gamma, G \vdash F} (aff)@</td>

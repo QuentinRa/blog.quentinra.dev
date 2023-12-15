@@ -51,7 +51,7 @@ Some well-known malware types ([source](https://www.malwarebytes.com/))
 
 ## Famous attacks
 
-<table class="table table-bordered table-striped border-dark table-dark mt-4">
+<table class="table table-bordered border-dark table-dark bg-transparent mt-4">
 <thead><tr><th>Classification</th><th>Notes</th></tr></thead>
 
 <tr><td>Estonia (2007)<br><b>DDOS</b></td><td>

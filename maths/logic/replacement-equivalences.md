@@ -19,7 +19,7 @@ From there, you have some additionnal rules (including all the equivalences pres
 
 ## Equivalences
 
-<table class="table table-bordered table-striped border-dark table-dark">
+<table class="table table-bordered border-dark table-dark bg-transparent">
     <tr>
         <td>@F \wedge F \equiv F@</td>
         <td>@F \vee F \equiv F@</td>    </tr>

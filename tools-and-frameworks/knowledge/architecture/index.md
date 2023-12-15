@@ -148,7 +148,7 @@ In databases, we often use the type: `decimal(n,m)`. It means `n` digits, and `m
 
 [**IEEE754**](https://en.wikipedia.org/wiki/IEEE_754) is the norm modern computers are using to store a floating-point number. 3 integers are needed to do so:
 
-<table class="table table-bordered table-striped border-dark table-dark">
+<table class="table table-bordered border-dark table-dark bg-transparent">
 <thead>
 <tr><th></th><th>float<br>(32 bits)</th><th>double<br>(64 bits)</th></tr>
 </thead>

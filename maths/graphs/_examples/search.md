@@ -16,7 +16,7 @@ The starting point is **h** (arbitrarily).
 Below, $\text{a, b, c} \to \text{a}$, means that among the vertices, I picked the vertex $a$, according to the algorithm after examining "marked" and "done".
 </div></div>
 
-<table class="table table-bordered table-striped">
+<table class="table table-bordered border-dark table-dark bg-transparent">
     <thead>
         <tr>
             <th>Current</th>

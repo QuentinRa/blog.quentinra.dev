@@ -22,7 +22,7 @@ GRANT xxx ON sometable TO someuser WITH GRANT OPTION
 
 **Note** : you can only grant privileges on one table at once, and to one user per request.
 
-<table class="table table-bordered table-striped border-dark table-dark">
+<table class="table table-bordered border-dark table-dark bg-transparent">
 <thead><tr><th colspan="2">Some privileges</th></tr></thead>
 <tbody>
 <tr><td>SELECT</td><td>DELETE</td></tr>

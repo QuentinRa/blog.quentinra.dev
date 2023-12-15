@@ -150,7 +150,7 @@ $A / B$ is not possible, but you can do $A * B^{-1}$ <small>(inverse of a matrix
 
 <p></p>
 
-<table class="table table-bordered table-striped border-dark table-dark">
+<table class="table table-bordered border-dark table-dark bg-transparent">
 <thead>
 <tr><th>Identity matrix $Id_n$ or $I_n$</th></tr>
 </thead>
@@ -160,7 +160,7 @@ $A / B$ is not possible, but you can do $A * B^{-1}$ <small>(inverse of a matrix
 
 </tbody></table>
 
-<table class="table table-striped border-dark table-bordered table-responsive">
+<table class="table table-bordered border-dark table-dark bg-transparent table-responsive">
 <thead>
 <tr>
 <th>Zero matrix $O_{np}$</th>
@@ -217,7 +217,7 @@ transpose.
 </tbody>
 </table>
 
-<table class="table table-striped border-dark table-bordered table-responsive">
+<table class="table table-bordered border-dark table-dark bg-transparent table-responsive">
 <thead>
 <tr>
 <th>Transpose matrix $A^{T}$</th>
@@ -272,7 +272,7 @@ This is a matrix whose inverse is equal to its transpose.
 </tbody>
 </table>
 
-<table class="table table-striped border-dark table-bordered table-responsive">
+<table class="table table-bordered border-dark table-dark bg-transparent table-responsive">
 <thead>
 <tr>
 <th>Lower triangular $L$</th>
