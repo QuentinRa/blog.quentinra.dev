@@ -104,6 +104,7 @@ A port is a virtual messaging channel which is only associated with one protocol
 
 [![osimodelzi](../../../cybersecurity/_badges/thmp/osimodelzi.svg)](https://tryhackme.com/room/osimodelzi)
 [![introtonetworking](../../../cybersecurity/_badges/thm/introtonetworking.svg)](https://tryhackme.com/room/introtonetworking)
+[![introductiontonetworking](../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
 
 The Open Systems Interconnection (**OSI** or ISO/OSI) model is a standardized representation of how we could send a message between two machines 🤝. It's made of 7 layers:
 
@@ -125,6 +126,7 @@ The **Protocol Data Unit** 📜 (PDU) is generated at each layer. It's both the 
 #### TCP/IP model
 
 [![introtonetworking](../../../cybersecurity/_badges/thm/introtonetworking.svg)](https://tryhackme.com/room/introtonetworking)
+[![introductiontonetworking](../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
 
 The TCP/IP model was introduced before the OSI model, but remains the most used because it's more compact 🤏. It's made of 4 layers:
 
@@ -265,6 +267,8 @@ Network segmentation
 
 <details class="details-n">
 <summary>VoIP</summary>
+
+[![introductiontonetworking](../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
 
 Voice over Internet Protocol (VoIP)
 

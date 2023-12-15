@@ -1,5 +1,6 @@
 # Internet Control Message Protocol (ICMP)
 
+[![introductiontonetworking](../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
 [![wireshark](../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
 
 <div class="row row-cols-lg-2"><div>

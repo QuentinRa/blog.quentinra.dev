@@ -146,6 +146,8 @@ Since both $m$ and $k$ are letters, we need to convert them to binary to use the
 
 ## Advanced Encryption Standard (AES)
 
+[![introductiontonetworking](../../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
+
 <div class="row row-cols-lg-2"><div>
 
 The **Advanced Encryption Standard**, abbreviated as **AES**, is a part of the **Block ciphers** algorithms.

@@ -2,6 +2,8 @@
 
 [Go back](../index.md#networking-devices)
 
+[![introductiontonetworking](../../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
+
 <div class="row row-cols-lg-2"><div>
 
 There are multiple types of proxy, and their features are different.

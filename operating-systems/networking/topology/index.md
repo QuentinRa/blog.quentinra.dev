@@ -1,5 +1,7 @@
 # Network topology
 
+[![introductiontonetworking](../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
+
 <div class="row row-cols-lg-2"><div>
 
 Network topology is the physical or logical layout of a network. It impacts performance, reliability, scalability, and security.
@@ -71,6 +73,7 @@ Networking devices are interconnected by cables.
 ## Physical network topology
 
 [![introtolan](../../../cybersecurity/_badges/thm/introtolan.svg)](https://tryhackme.com/room/introtolan)
+[![introductiontonetworking](../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -136,6 +139,7 @@ It can be done for multiple reasons, such as increasing performances, security, 
 #### Subnetting
 
 [![introtolan](../../../cybersecurity/_badges/thm/introtolan.svg)](https://tryhackme.com/room/introtolan)
+[![introductiontonetworking](../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
 
 This is a technique to segment a network. We divide a large network into smaller subnetworks. Each subnet has its own address and can be managed separately.
 
@@ -243,4 +247,5 @@ Devices
 Random
 
 * Port-forwarding
+* VLAN on HTB/IntroNetworking/1878
 </div></div>

@@ -2,6 +2,8 @@
 
 [Go back](../index.md)
 
+[![introductiontonetworking](../../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
+
 <div class="row row-cols-lg-2"><div>
 
 The Internet Protocol version 6 (**IPV6**) address is a **128-bit long address** such as `2002:6963:6961:2046:616c:636f:6e20:3c33`. It's 8 blocks of 16 bits, separated with `:`. 

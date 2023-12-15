@@ -1,5 +1,6 @@
 # User Datagram Protocol (UDP)
 
+[![introductiontonetworking](../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
 [![packetsframes](../../../cybersecurity/_badges/thmp/packetsframes.svg)](https://tryhackme.com/room/packetsframes)
 
 <div class="row row-cols-lg-2"><div>

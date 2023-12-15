@@ -2,6 +2,8 @@
 
 [Go back](../index.md)
 
+[![introductiontonetworking](../../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
+
 <div class="row row-cols-lg-2"><div>
 
 Internet Protocol version 4 (IPV4) addresses are 32-bits long addresses. Ex: `01001101001000011110000100000000`. The bits in the IP address are actually separated into 2 parts:
