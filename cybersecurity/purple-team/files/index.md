@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-Any file you find, be it during [Digital forensics](/cybersecurity/blue-team/forensics/index.md) or during the red team activities, may have:
+Any file you find, be it during [Digital forensics](/cybersecurity/blue-team/topics/forensics.md) or during the red team activities, may have:
 
 * 🐟 Hidden content in a file
   * A file inside another file

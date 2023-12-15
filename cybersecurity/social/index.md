@@ -7,7 +7,7 @@ The weakest link in companies are humans. They are likely to commit mistakes �
 **Phishing** 🎣: trick the victim using fraudulent emails/sms/messages leading them to revealing sensitive or private information.
 </div><div>
 
-**Spear Phishing**/`Fraude au président` 🔫: the attacker investigate a victim in order to create a convincing mail/call that will lead them to compromise the organization. For instance, an email from the director on a friday <small>(right before going home)</small> asking them to URGENTLY transfer money without notifying anyone.
+**Spear Phishing**/`Fraude au président` 🔫: the attacker investigates a victim in order to create a convincing mail/call that will lead them to compromise the organization. For instance, an email from the director on a friday <small>(right before going home)</small> asking them to URGENTLY transfer money without notifying anyone.
 </div></div>
 
 <hr class="sep-both">

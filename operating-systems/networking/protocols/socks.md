@@ -9,7 +9,7 @@ Secure Socket (SOCKS) is a protocol to exchange data through a [proxy](../topolo
 
 🐊️ **Port**: 1080 (TCP) or 9050 (TCP) with Tor
 
-You can run a SOCKS proxy using [metasploit](/cybersecurity/red-team/s3.exploitation/tools/metasploit.md):
+You can run a SOCKS proxy using [metasploit](/cybersecurity/red-team/tools/frameworks/metasploit/index.md):
 
 ```shell!
 msf6> route print # list current routes

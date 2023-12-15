@@ -1,6 +1,6 @@
 # Applicative firewall
 
-[Go back](../index.md#firewalls)
+[Go back](../_knowledge/index.md#firewalls)
 
 <div class="row row-cols-lg-2"><div>
 
