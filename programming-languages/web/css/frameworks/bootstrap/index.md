@@ -11,7 +11,7 @@
 * 📖 relatively nice looking
 </div><div>
 
-See the [documentation](https://getbootstrap.com/docs/). For **5.2.3**, you could use the code below
+Refer to the [documentation](https://getbootstrap.com/docs/). For **5.2.3**, you could use the code below
 
 ```diff
 <head>

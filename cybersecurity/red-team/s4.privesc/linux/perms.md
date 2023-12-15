@@ -90,18 +90,17 @@ If `/etc/passwd` was <s>intentionally</s> misconfigured
 
 ```ps
 $ cat /etc/passwd
-# if you can read it: try to brute force the password
-# if you can write it: change the root password
-# (copy a password / generate one mkpasswd -m sha-512 toto)
+# if you can write it: make your user part of root group
+# if you can write it: add a new user that is part of root group
 ```
 
 If `/etc/shadow` was <s>intentionally</s> misconfigured
 
 ```ps
 $ cat /etc/shadow
-# if you can write it: make your user part of root group
-# if you can write it: add a new user that is part of root group
-# (copy a password / generate one mkpasswd -m sha-512 toto)
+# if you can read it: try to brute force the password
+# if you can write it: change the root password
+# (copy a password or generate one mkpasswd -m sha-512 toto)
 ```
 </div><div>
 
