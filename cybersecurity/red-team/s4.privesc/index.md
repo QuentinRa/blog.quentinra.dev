@@ -22,7 +22,7 @@ Escalation can be **horizontally**/laterally <small>(another user with the same 
 
 **Tools**
 
-* [Meterpreter](../s3.exploitation/tools/metasploit.md#meterpreter) (scripts for Linux/Windows)
+* [Meterpreter](/cybersecurity/red-team/tools/frameworks/metasploit/index.md#meterpreter) (scripts for Linux/Windows)
 </div></div>
 
 <hr class="sep-both">
@@ -108,6 +108,8 @@ Courses
 Random
 
 * [WADComs](https://github.com/WADComs/WADComs.github.io) (1k ⭐)/[wadcoms website](https://wadcoms.github.io/)
+* Metasploit PRO
+* Create custom modules, `-m` or `loadpath` to load them, [doc](https://www.rubydoc.info/github/rapid7/metasploit-framework/Msf)
 </div><div>
 
 Exploiting Services

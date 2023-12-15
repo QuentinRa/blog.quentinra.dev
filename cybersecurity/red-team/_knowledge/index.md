@@ -103,7 +103,17 @@ You can [download Kali ISO here](https://www.kali.org/get-kali/#kali-virtual-mac
 * Add a keyboard layout <small>(ex: fr-FR/AZERTY)</small>
 * Remove the unused QWERTY layout
 
-> The change is applied immediately... But on the login screen, the keyboard layout will still be QWERTY ⚠️.
+The change is applied immediately... But on the login screen, the keyboard layout will still be QWERTY. ⚠️.
+
+To change the login keyboard, you can use:
+
+```shell!
+$ sudo nano /etc/lightdm/lightdm.conf
+# add the correct setxkbmap line
+[Seat:*]
+greeter-setup-script=/usr/bin/setxkbmap fr
+$ sudo systemctl restart lightdm
+```
 </details>
 
 <details class="details-n">
@@ -343,4 +353,10 @@ Stuff that I found, but never read/used yet.
 * Log date/time of pentest, so in the case of attack, you can prove it wasn't you (ex: `Start-Transcript`).
 * encrypt VBox VM
 </div><div>
+
+* [Penetration Testing Execution Standard](http://www.pentest-standard.org/index.php/Main_Page) (PTES)
+* [Open Source Security Testing Methodology Manual](https://www.isecom.org/OSSTMM.3.pdf) OSSTMM
+* [MSTG](https://owasp.org/www-project-mobile-security-testing-guide/)
+* [Firmware Security Testing Methodology](https://github.com/scriptingxss/owasp-fstm)
+* [DREAD](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model))
 </div></div>
