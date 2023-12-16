@@ -34,6 +34,7 @@ Escalation can be **horizontally**/laterally <small>(another user with the same 
 [![linprivesc](../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 [![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
+[![linuxprivilegeescalation](../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![linux_privilege_escalation](../../_badges/poat/linux_privilege_escalation.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md)
 
 [Linux](/operating-systems/linux/_knowledge/index.md) privilege escalation may be achieved by exploiting:
@@ -79,17 +80,24 @@ There are many **automated scripts** that will investigate usual places, service
 
 You may want to find [who/where you are](windows/id.md) first. To exploit Windows bins/scripts/bins, refer to [LOLBAS](https://lolbas-project.github.io/#) <small>(5.5k ⭐)</small>.
 
-Other checklists: [frizb](https://github.com/frizb/Windows-Privilege-Escalation) (0.7k ⭐)
+Other checklists: [frizb](https://github.com/frizb/Windows-Privilege-Escalation) <small>(0.7k ⭐, 2020 🪦)</small>.
 </div><div>
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
 
-* [WinPeas](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS) <small>(13.9k ⭐, binary, `.\winPEASany_ofs.exe`)</small>
-* [PrivescCheck](https://github.com/itm4n/PrivescCheck) <small>(2.4k ⭐, powershell script, `powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"`)</small>
-* [PowerSploit](https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc) <small>(11.2k ⭐ | powershell script | 2017 🪦 | `powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"`. [PowerTools](https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerUp) and [PowerUp](https://github.com/HarmJ0y/PowerUp))</small>.
-* [wesng](https://github.com/bitsadmin/wesng) <small>(3.8k ⭐, use `<command>` on the target, and run wesng with the output on YOUR machine, use `wes.py --update` + `wes.py [...] output.txt`)</small>
+* [WinPeas](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS) <small>(13.9k ⭐ | binary | Download and Run `.\winPEASany_ofs.exe`)</small>
+* [wesng](https://github.com/bitsadmin/wesng) <small>(3.8k ⭐ | Work locally from an output file 🙌)</small>
 * [Seatbelt](https://github.com/GhostPack/Seatbelt) <small>(3.2k ⭐)</small>
+* [PrivescCheck](https://github.com/itm4n/PrivescCheck) <small>(2.4k ⭐ | powershell script)</small>
 * [JAWS](https://github.com/411Hall/JAWS) <small>(1.5k ⭐ | 2020 🪦)</small>
+* [PowerSploit](https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc) <small>(11.2k ⭐ | powershell script | 2017 🪦 | This is the latest version of [PowerTools](https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerUp) and [PowerUp](https://github.com/HarmJ0y/PowerUp) which are dead too since 2014/2015)</small>.
+
+```ps
+$ wes.py --update         # update local database
+$ wes.py [...] output.txt # process the selected tool output
+PS> powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"
+PS> powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"
+```
 </div></div>
 
 <hr class="sep-both">
