@@ -2,7 +2,7 @@
 
 <div class="row row-cols-md-2"><div>
 
-**[GTFOBins](https://gtfobins.github.io/)** (8.3k ⭐) a.k.a. "Get The Fuck Out" is a list of way to exploit binaries such as `sed`/`tar`/... to get root.
+**[GTFOBins](https://gtfobins.github.io/)** (9.5k ⭐) a.k.a. "Get The Fuck Out" is a list of way to exploit binaries such as `sed`/`tar`/... to get root.
 
 Common use cases are:
 

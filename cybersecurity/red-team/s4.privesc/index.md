@@ -1,4 +1,4 @@
-# Fourth step - Privilege Escalation
+# Red Team - Fourth step - Privilege Escalation
 
 [![operatingsystemsecurity](../../_badges/thmp/operatingsystemsecurity.svg)](https://tryhackme.com/room/operatingsystemsecurity)
 
@@ -47,17 +47,17 @@ Escalation can be **horizontally**/laterally <small>(another user with the same 
 
 You may want to find [who/where you are](linux/id.md) first.
 
-👉 Multiple techniques may try to exploit [injection](linux/injection.md).
+👉 Multiple techniques may try to exploit [injection](linux/injection.md) or [GTFOBins](linux/gtfobins.md).
 </div><div>
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
 
-* [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) <small>(12.2k ⭐, shell script)</small>
-* [LinEnum](https://github.com/rebootuser/LinEnum) <small>(5.9k ⭐, shell script)</small>
-* [traitor](https://github.com/liamg/traitor)  <small>(5.9k ⭐, go script, 👻)</small>
-* [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) a.k.a. LSE <small>(2.7k ⭐n shell script)</small>
-* [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) <small>(1.3k ⭐, python script)</small>
-* [pwncat-cs](/cybersecurity/red-team/s3.exploitation/shell/pwncat.md) <small>(2.0k ⭐, reverse shell with escalation suggester)</small>
+* [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) <small>(13.9k ⭐ | shell script)</small>
+* [LinEnum](https://github.com/rebootuser/LinEnum) <small>(6.4k ⭐ | shell script | 2020 🪦)</small>
+* [traitor](linux/tools/traitor.md)  <small>(6.3k ⭐ | go script compiled to binary | 2022 ☠️)</small>
+* [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) a.k.a. LSE <small>(3.0k ⭐ | shell script)</small>
+* [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) <small>(1.4k ⭐ | python script, 2021 🪦)</small>
+* [pwncat-cs](/cybersecurity/red-team/s3.exploitation/shell/pwncat.md) <small>(2.3k ⭐ | reverse shell with priv. esc. suggester | 2022 ☠️)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -84,12 +84,12 @@ Other checklists: [frizb](https://github.com/frizb/Windows-Privilege-Escalation)
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
 
-* [WinPeas](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS) <small>(12.2k ⭐, binary, `.\winPEASany_ofs.exe`)</small>
-* [PrivescCheck](https://github.com/itm4n/PrivescCheck) <small>(2.1k ⭐, powershell script, `powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"`)</small>
-* [PowerSploit](https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc) <small>(10.6k ⭐,  powershell script, archived, `powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"`. Older: [PowerTools](https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerUp) and [PowerUp](https://github.com/HarmJ0y/PowerUp))</small>.
-* [wesng](https://github.com/bitsadmin/wesng) <small>(3.5k ⭐, use `xxx` on the target, and run it with the output on YOUR machine, use `wes.py --update`, and `wes.py output.txt`)</small>
-* [Seatbelt](https://github.com/GhostPack/Seatbelt) <small>(2.9k ⭐)</small>
-* [JAWS](https://github.com/411Hall/JAWS) <small>(1.4k ⭐)</small>
+* [WinPeas](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS) <small>(13.9k ⭐, binary, `.\winPEASany_ofs.exe`)</small>
+* [PrivescCheck](https://github.com/itm4n/PrivescCheck) <small>(2.4k ⭐, powershell script, `powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"`)</small>
+* [PowerSploit](https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc) <small>(11.2k ⭐ | powershell script | 2017 🪦 | `powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"`. [PowerTools](https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerUp) and [PowerUp](https://github.com/HarmJ0y/PowerUp))</small>.
+* [wesng](https://github.com/bitsadmin/wesng) <small>(3.8k ⭐, use `<command>` on the target, and run wesng with the output on YOUR machine, use `wes.py --update` + `wes.py [...] output.txt`)</small>
+* [Seatbelt](https://github.com/GhostPack/Seatbelt) <small>(3.2k ⭐)</small>
+* [JAWS](https://github.com/411Hall/JAWS) <small>(1.5k ⭐ | 2020 🪦)</small>
 </div></div>
 
 <hr class="sep-both">
