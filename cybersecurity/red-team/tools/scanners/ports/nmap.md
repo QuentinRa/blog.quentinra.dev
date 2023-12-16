@@ -17,6 +17,7 @@
 [![startup](../../../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 [![cowboyhacker](../../../../_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
 [![steelmountain](../../../../_badges/thmp-p/steelmountain.svg)](https://tryhackme.com/room/steelmountain)
+[![networkenumerationwithnmap](../../../../_badges/htb/networkenumerationwithnmap.svg)](https://academy.hackthebox.com/course/preview/network-enumeration-with-nmap)
 ![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 
@@ -40,6 +41,41 @@ According to nmap, a [port](/operating-systems/networking/_knowledge/index.md#po
 * `closed`: cannot be reached
 
 Once you found a port, refer to the [protocols](/operating-systems/networking/_knowledge/index.md#protocols) section to find more about each protocols and its vulnerabilities.
+</div></div>
+
+<hr class="sep-both">
+
+## Pentesting Overview
+
+<div class="row row-cols-lg-2"><div>
+
+The most common usage in CTF is to run an initial `-sS` <small>(faster)</small> scan:
+
+```ps
+$ sudo nmap -sS IP     # top ports
+```
+
+Then, while working on the ports we found, we run:
+
+```ps
+$ sudo nmap -sS IP -p- # all ports
+```
+
+However, this doesn't often work. NMap use an [ICMP Scan](#icmp-scans) to check if the host is up, which is blocked by multiple hosts such as Windows.
+
+```ps
+$ sudo nmap [...] -Pn  # assume host is up, don't ping
+```
+</div><div>
+
+A few common options:
+
+* `-p`: don't scan all ports twice, use `-p` to specify which one you want nmap to further analyze
+* `-sV`: try to dig service names and versions
+* `-sC`: run default scripts to find some vulnerabilities
+* `-oA`: store results
+
+As the port may be protected by a firewall, we may add stealth options and use firewall detection or by-pass techniques.
 </div></div>
 
 <hr class="sep-both">
