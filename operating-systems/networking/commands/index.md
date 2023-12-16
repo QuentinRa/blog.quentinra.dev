@@ -317,6 +317,7 @@ Listen for ICMP requests passing by the interface `tun0`
 
 ```ps
 $ sudo tcpdump ip proto \\icmp -i tun0
+$ sudo tcpdump -i tun0 host IP and IP
 ```
 </div><div>
 

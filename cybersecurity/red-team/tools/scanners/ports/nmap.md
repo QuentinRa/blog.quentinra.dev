@@ -66,9 +66,9 @@ However, this doesn't often work. NMap uses an [ICMP Scan](#icmp-scans) to check
 ```ps
 $ sudo nmap [...] -Pn  # assume host is up, don't ping
 ```
-</div><div>
 
 ⚠️ It also worth noting that nmap uses a timeout, which may cause low latency ports to not be shown in scan results.
+</div><div>
 
 A few common options:
 
@@ -79,6 +79,10 @@ A few common options:
 * `-oA`: store results
 
 As the port may be protected by a firewall, we may add stealth options and use firewall detection or by-pass techniques.
+
+⚠️ NMap uses banner grabbing or signature-based matching to identify the running services. It also good to cross-check as nmap may not have presented to us all information returned by a service.
+
+🔫 CTF notes, delayed banners may take 30 seconds before popping.
 </div></div>
 
 <hr class="sep-both">
@@ -299,7 +303,7 @@ $ nmap -O [...]
 $ nmap -sC [...]
 ```
 
-* **All**: operating system, script, services, and traceroute
+* **All**/Aggressive: operating system, script, services, and traceroute
 
 ```ps
 $ nmap -A [...]
@@ -318,7 +322,18 @@ nmap can send more or less stealthy by adding a timing between requests. It rang
 $ nmap [...] -T4
 ```
 
-➡️ See also `--min-rate`/`--mix-parallelism` (resp. max).
+<br>
+
+##### Fragmentation
+
+You can fragment packets which may be used to bypass firewalls
+
+```ps
+$ nmap -f # create packets of 8 bytes or less
+$ nmap -ff # create packets of 16 bytes or less
+$ nmap --mtu xxx # maximum transfer unit (multiple of 8)
+$ nmap --data-length length # split by length
+```
 
 <br>
 
@@ -327,7 +342,7 @@ $ nmap [...] -T4
 Spoof the requester IP. It's useless if you can't get the response.
 
 ```ps
-$ nmap [...] -S SOME_OTHER_IP
+$ nmap [...] -S IP -e tun0 # IP must be up 
 ```
 </div><div>
 
@@ -345,11 +360,15 @@ Simulate that multiple IP are making the request, to hide yours in the list of p
 
 ```ps
 $ nmap [...] -D XXX,YYY,YOUR_IP
+$ nmap [...] -D RND:5 # random IPs, beware of SYN-flooding
+# generated IPs must be up, your IP is randomly mixed in
 ```
 
 ##### ️🧟️ Zombies/Idle host `-sI` 🧟 
 
-An idle host is not making any requests, such as a printer. We can use it to make requests instead of us. Every packet has an ID that is usually incrementing by one at every request. We will query the zombie once to know the starting number, spoof a request using the zombie IP, then query again the packet ID, and we will know if the target replied to them, or not.
+An idle host is not making any requests, such as a printer. 
+
+We can exploit them to perform requests for us. Every packet has an ID that is usually incrementing by one at every request. We will query the zombie once to know the starting number, spoof a request using the zombie IP, then query again the packet ID, and we will know if the target replied to them, or not according to the new value.
 </div></div>
 
 <hr class="sep-both">
@@ -384,16 +403,12 @@ $ nmap [...] --traceroute
 $ nmap [...] --packet-trace # sort of log of every request
 ```
 
-##### Fragmentation
+##### Performance
 
-You can fragment packets which may be used to bypass firewalls
-
-```ps
-$ nmap -f # create packets of 8 bytes or less
-$ nmap -ff # create packets of 16 bytes or less
-$ nmap --mtu xxx # maximum transfer unit (multiple of 8)
-$ nmap --data-length length # split by length
-```
+* `--min-RTT-timeout`, `--initial-rtt-timeout`, `--max-rtt-timeout`: timeout, can be shorter, but will impact results
+* `--max-retries`: can be reduced, but will impact results
+* `--min-rate`/`--max-rate`: how many simultaneously packets
+* `--min-parallelism`/`--max-parallelism`: frequency
 </div></div>
 
 <hr class="sep-both">
@@ -461,8 +476,6 @@ $ nmap IP -p 22 --script ssh-brute --script-args userdb=users.lst,passdb=pass.ls
 $ nmap IP --script "*brute*" --script-args userdb=users.lst,passdb=pass.lst
 ```
 </div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">
@@ -499,6 +512,8 @@ Stuff that I found, but never read/used yet.
 * `--script-trace`
 * `mysql-enum`
 * map the company network `nmap range -sn`
+* `--stats-every=5s` instead of space
+* sacrifice one VPS to test the firewall limits. Each time you are caught, move to another VPS and be quieter.
 </div><div>
 
 Host probing

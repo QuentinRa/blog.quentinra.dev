@@ -53,5 +53,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * XML Schema Definition (XSD)
+* `xsltproc target.xml -o target.html`
 </div><div>
 </div></div>
