@@ -61,15 +61,18 @@ Then, while working on the ports we found, we run:
 $ sudo nmap -sS IP -p- # all ports
 ```
 
-However, this doesn't often work. NMap use an [ICMP Scan](#icmp-scans) to check if the host is up, which is blocked by multiple hosts such as Windows.
+However, this doesn't often work. NMap uses an [ICMP Scan](#icmp-scans) to check if the host is up, which is blocked by multiple hosts such as Windows.
 
 ```ps
 $ sudo nmap [...] -Pn  # assume host is up, don't ping
 ```
 </div><div>
 
+⚠️ It also worth noting that nmap uses a timeout, which may cause low latency ports to not be shown in scan results.
+
 A few common options:
 
+* `-n`: we often don't need DNS resolution
 * `-p`: don't scan all ports twice, use `-p` to specify which one you want nmap to further analyze
 * `-sV`: try to dig service names and versions
 * `-sC`: run default scripts to find some vulnerabilities
@@ -112,7 +115,7 @@ $ nmap -vv [...]
 
 ##### Host probing
 
-nmap will try to see if a host is up before scanning it. Many hosts, including Windows hosts, do not reply to ICMP requests, so the scan will fail. In such case, you should skip this check:
+⚠️ nmap will try to see if a host is up before scanning it. Many hosts, including Windows hosts, do not reply to ICMP requests, **so the scan will fail**. In such case, you should skip this check:
 
 ```ps
 $ nmap -Pn [...]
@@ -138,15 +141,16 @@ $ nmap [...] -oX output_file_name # xml
 We often only limit the scan to some **ports**. By default, the top 1000 most common ports are randomly tested.
 
 ```ps
-$ nmap [...] -F # Fast, only top 100
-$ nmap [...] -p 22 # only port 22
-$ nmap [...] -p 22,23 # both 22, and 23
-$ nmap [...] -p 0-65535 # from x to y
-$ nmap [...] -p- # same as 0-65535
+$ nmap [...] -F             # Fast, only top 100
+$ nmap [...] -p 22          # only port 22
+$ nmap [...] -p 22,23       # both 22, and 23
+$ nmap [...] -p 0-65535     # from x to y
+$ nmap [...] -p-            # same as 0-65535
 $ nmap [...] -p22-25,80,443 # mix
-$ nmap [...] -top-ports 20 # top 20
-$ nmap [...] -p T:21 # TCP port 21
-$ nmap [...] -p U:53 # UDP port 53
+$ nmap [...] -top-ports 20  # top 20
+$ nmap [...] --top-ports=20 # top 20
+$ nmap [...] -p T:21        # TCP port 21
+$ nmap [...] -p U:53        # UDP port 53
 ```
 
 ➡️ Use `-r` to sequentially test ports.
@@ -229,12 +233,12 @@ Nmap can scan one or more hosts
 
 ```ps
 $ nmap 192.168.0.0
-$ nmap 192.168.0.* # from 0 to 254
-$ nmap 192.168.0.0-254 # same
-$ nmap 192.168.0.0/24 # same
-$ nmap scanme.nmap.org # a domain name
-$ nmap -iL hosts.txt # file
-$ nmap xxx yyy zzz # list
+$ nmap 192.168.0.*      # from 0 to 254
+$ nmap 192.168.0.0-254  # same
+$ nmap 192.168.0.0/24   # same
+$ nmap scanme.nmap.org  # a domain name
+$ nmap -iL hosts.txt    # file
+$ nmap xxx yyy zzz      # list
 ```
 
 You can exclude a machine from a scan
@@ -272,13 +276,15 @@ $ nmap -sL -n 192.168.0/29 [...]
 
 nmap can try to guess the [protocols](/operating-systems/networking/_knowledge/index.md#protocols) and service running on a port, along with its version. If a service has been secured, then it may not leak much information <small>(i.g. the version may be hidden...)</small>.
 
-* **Service and versions**: guess the service and version used by an open port <small>(ex: 80 $\to$ Apache x.xx.xx)</small>. May expose the OS too.
+* **Service and versions**: guess the service and version used by an open port <small>(ex: 80 $\to$ Apache x.xx.xx)</small>.
 
 ```ps
 $ nmap -sV [...]
 ```
 
-➡️ You may set the intensity with `--version-intensity level` <small>(from 0 to 9)</small>. There are shortcuts `--version-light` (2), and `--version-all` (9).
+👉 It may also include the hostname, the OS, and the CPE.
+
+👉 You may set the intensity with `--version-intensity level` <small>(from 0 to 9)</small>. There are shortcuts `--version-light` (2), and `--version-all` (9).
 </div><div>
 
 * **Operating system**: try to guess the OS. Sometimes `-sV` or others may be more reliable.
@@ -375,6 +381,7 @@ You can ask nmap to do a traceroute, much like with `traceroute`.
 
 ```ps
 $ nmap [...] --traceroute
+$ nmap [...] --packet-trace # sort of log of every request
 ```
 
 ##### Fragmentation
@@ -491,6 +498,7 @@ Stuff that I found, but never read/used yet.
 * `nmap --badsum`: if answer, should be from a firewall/IDS
 * `--script-trace`
 * `mysql-enum`
+* map the company network `nmap range -sn`
 </div><div>
 
 Host probing
@@ -501,4 +509,5 @@ Host probing
 * `-PS`: TCP SYN packet to port 80
 * `-PA`: TCP ACK packet to port 80
 * `-PU`: UDP packet to a random port
+* `--disable-arp-ping`: disable ARP
 </div></div>

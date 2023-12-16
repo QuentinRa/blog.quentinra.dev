@@ -225,6 +225,7 @@ Each protocol can be represented using a [Message Sequence Chart](https://en.wik
 
 * [TCP](../protocols/tcp.md)
 * [UDP](../protocols/udp.md)
+* SCTP
 
 **Layer 3: Network Layer** <small>(packets)</small> 🌍
 

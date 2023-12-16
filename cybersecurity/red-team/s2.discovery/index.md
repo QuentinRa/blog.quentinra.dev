@@ -90,6 +90,7 @@ Network mapping
 
 * [ping](tools/ping.md) 🥅: check if a host respond to pings
 * [Packet tracing](tools/trace.md) 🥅: map a network
+* The TTL can be used to primitively guess an operating system
 
 Vulnerabilities scanners
 
