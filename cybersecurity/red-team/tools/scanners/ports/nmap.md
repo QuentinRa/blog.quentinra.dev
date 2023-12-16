@@ -58,7 +58,10 @@ $ sudo nmap -sS IP     # top ports
 Then, while working on the ports we found, we run:
 
 ```ps
-$ sudo nmap -sS IP -p- # all ports
+$ sudo nmap -sS IP -p-   # all TCP ports
+$ sudo nmap -sU IP -p-   # all UDP ports
+$ sudo nmap -sS -sU IP -p-   # all ports
+$ sudo nmap -sSU IP -p-      # same
 ```
 
 However, this doesn't often work. NMap uses an [ICMP Scan](#icmp-scans) to check if the host is up, which is blocked by multiple hosts such as Windows.
@@ -344,7 +347,30 @@ Spoof the requester IP. It's useless if you can't get the response.
 ```ps
 $ nmap [...] -S IP -e tun0 # IP must be up 
 ```
+
+<br>
+
+##### Explicit DNS
+
+You can explicitly specify the DNS server, such as an internal DNS server of a company, using:
+
+```ps
+$ nmap [...] --dns-server ns 
+$ nmap [...] --dns-server ns1,ns2 
+```
 </div><div>
+
+##### Custom Source Port
+
+We can use a custom source ports, which may by-pass some misconfigured systems:
+
+```ps
+$ sudo nmap [...] -g 53
+$ sudo nmap [...] --source-port 53
+# use "nc --source-port 53 [...]"
+```
+
+<br>
 
 ##### MAC spoofing
 

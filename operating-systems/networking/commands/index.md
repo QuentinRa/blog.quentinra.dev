@@ -235,6 +235,7 @@ $ nc ip -lp port
 $ nc ip -lnvp port # 👈
 # keep listening after last client disconnect
 $ nc ip -lnvpk port
+$ nc --source-port port [...]
 ```
 </div><div>
 
