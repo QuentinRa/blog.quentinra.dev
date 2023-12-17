@@ -25,6 +25,19 @@ $ hashcat -m hcode --show myhash            # unique hashes
 $ hashcat -m hcode --show --username myhash # all
 ```
 </div><div>
+
+Common options:
+
+* `-m hcode`: the hashing algorithm code | provided by nth/haiti/...
+    * MD5 <small>(0)</small> / MD4 <small>(900)</small> / SHA1 <small>(100)</small> / NTLM <small>(1000)</small>
+    * SHA256 <small>(1400)</small> / bcrypt <small>(3200)</small> / sha512crypt <small>(1800)</small>
+    * See the hashcat help or [hashcat reference](https://hashcat.net/wiki/doku.php?id=example_hashes)
+* `-a acode`: the kind of attack <small>(Default is 0=Straight)</small>
+* `-o output`: file to store cracked passwords
+* `--show`: show cracked passwords
+* `--remove`: remove cracked hashes
+* `--username`: can be used to ignore username in hash `user:password`
+* `-r /path/to/xxx.rule`: load a rule file
 </div></div>
 
 <hr class="sep-both">
