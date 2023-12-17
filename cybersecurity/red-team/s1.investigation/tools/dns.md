@@ -33,3 +33,16 @@ See [SSL Tools](/operating-systems/networking/protocols/ssl-tls.md#find-certific
 
 ➡️ Find attack vectors: subdomains or other domains. 
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [netcraft search DNS](https://searchdns.netcraft.com/)
+* [virus total domain details](https://www.virustotal.com/gui/domain/example.com/details)
+</div><div>
+</div></div>

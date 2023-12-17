@@ -29,7 +29,8 @@ There are 3 categories of certificates: EV, OV, and DV.
 
 #### Find certificates given a domain
 
-* [crt.sh](https://crt.sh/)
+* [crt.sh](https://crt.sh/) <small>(website)</small>
+* [ctfr](https://github.com/UnaPibaGeek/ctfr) <small>(1.9k ⭐, script, 2020 🪦)</small>
 * [ct search](https://ui.ctsearch.entrust.com/ui/ctsearchui) <small>(include expired certificates)</small>
 
 #### Examinate SSL configuration

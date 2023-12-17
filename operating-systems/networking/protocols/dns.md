@@ -101,7 +101,36 @@ A DNS zone represents a portion of the domain records that the DNS server manage
 The primary DNS servers are transferring changes to secondary DNS servers using what we call "Zone Transferts." There are two types of zone transfers: `AXFR` and `IXFR`.
 </div><div>
 
-...
+⚠️ On Misconfigured DNS servers <small>(no authentication/no list of trusted hosts)</small>, we may be able to query the whole zone file.
+
+```ps
+# select the domain that you want to "fetch"
+# from the primary dns server
+$ dig axfr some_domain.com @primary_dns_server
+```
+
+<details class="details-n">
+<summary>Sample Python Script For Subdomain Enumeration Using Zone Transfer On A Vulnerable DNS</summary>
+
+```python
+# Requirements:  pip install dnspython3
+# Usage: script.py <domain> <dns>
+# Note: errors are not handled at all
+# License: https://en.wikipedia.org/wiki/Unlicense
+import dns.resolver
+import sys
+
+domain = sys.argv[1]
+resolver = dns.resolver.Resolver()
+resolver.nameservers = [sys.argv[2]]
+
+for nameserver in resolver.nameservers:
+    response = dns.query.xfr(nameserver, domain)
+    xfr = dns.zone.from_xfr(response)
+    for record in xfr:
+        print(f'{record.to_text()}.{domain}')
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
@@ -146,6 +175,9 @@ You can give a domain name, or an IP (`-x`).
 
 ```ps
 $ dig example.com
+$ dig A example.com       # IPV4 records
+$ dig example.com -t A    # same
+$ dig example.com -t ANY  # every record
 $ dig -x 8.8.8.8
 ```
 
@@ -159,7 +191,7 @@ You can pick which DNS server should be used with `@`
 $ dig example.com @8.8.8.8
 ```
 
-We can explicitly ask for some data by using the option `-t`
+Some examples of `dig` command output:
 
 ```shell!
 $ dig example.com -t A
