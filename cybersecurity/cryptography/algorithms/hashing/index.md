@@ -184,6 +184,8 @@ $ unshadow /path/to/passwd /path/to/shadow > hashes
 $ john hashes --format=sha512crypt --wordlist=wordlist
 ```
 
+<br>
+
 #### Windows password hash cracking
 
 Modern Windows are using the hash format "NT", also referred to as "NTLM", because "LM" was the previous hash format.
@@ -192,6 +194,8 @@ Modern Windows are using the hash format "NT", also referred to as "NTLM", becau
 $ john myhash --format=nt --wordlist=wordlist
 $ john myhash --format=netntlmv2 --wordlist=wordlist
 ```
+
+<br>
 
 #### GPG passphrase cracking
 
@@ -205,8 +209,48 @@ To crack the passphrase of [GPG encrypted files](/cybersecurity/cryptography/com
 $ sudo gpg2john file.pgp > myhash
 $ john --format=gpg myhash --wordlist=wordlist 
 ```
+
+<br>
+
+#### SSH private key - passphrase cracking
+
+[![encryptioncrypto101](../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
+[![basicpentestingjt](../../../_badges/thm-p/basicpentestingjt.svg)](https://tryhackme.com/room/basicpentestingjt)
+
+SSH may have been configured to use a passphrase-protected [ssh keys](/operating-systems/networking/protocols/ssh.md). You must convert the file to a crackable file for john:
+
+```shell!
+$ ssh2john key > myhash
+$ john --format=ssh myhash --wordlist=wordlist
+```
 </div><div>
 
+#### RAR password cracking
+
+You must convert the RAR file to a crackable file for john:
+
+```shell!
+$ rar2john hello.rar > myhash
+$ john myhash --wordlist=wordlist
+$ unrar x hello.rar # enter password
+```
+
+#### ZIP password cracking
+
+[![crackingpasswordswithhashcat](../../../_badges/htb/crackingpasswordswithhashcat.svg)](https://academy.hackthebox.com/course/preview/cracking-passwords-with-hashcat)
+[![agentsudoctf](../../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
+
+You must convert the ZIP file to a crackable file for john:
+
+```shell!
+$ zip2john hello.zip > myhash
+$ john myhash --wordlist=wordlist
+$ unzip hello.zip # enter password
+```
+
+➡️ There is also [fcrackzip](https://github.com/hyc/fcrackzip) (0.4k ⭐)
+
+👉 The same tool can be used with `hashcat`, but ensure you only keep the hash. See the references, modes `17200-17230`.
 </div></div>
 
 <hr class="sep-both">

@@ -12,6 +12,8 @@ Secure shell (SSH) is the most commonly used protocol to access a remote shell o
 🥊 SSH can be used to create a secure connection for an insecure protocol. For instance, SFTP is for FTP over SSH.
 </div><div>
 
+Basic usage:
+
 ```ps
 $ ssh username@IP
 $ ssh username@IP -p port
