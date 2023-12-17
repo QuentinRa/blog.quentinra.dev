@@ -134,8 +134,40 @@ Hashcat rules allow us to define complex password rules/patterns. The complete l
 * Reverse words
 * ...
 
-Existing rules are stored in: `/usr/share/hashcat/rules/`.
+Existing rules are stored in: `/usr/share/hashcat/rules/`. You can use `-g n` to generate and use `n` random rules.
 </div><div>
+
+For instance, `example.rule` contains 3 rules:
+
+```bash!
+# replace "o" with "0"
+so0
+# replace "a" with "@" and append "00" 
+sa@ $0 $0 
+# capitalize and append 1
+c $1
+```
+
+<details class="details-n">
+<summary>Debugging Example.rule</summary>
+
+```shell!
+$ cat ./wordlist
+toto
+tata
+titi
+$ hashcat -a 0 --stdout -r ./example.rule ./wordlist
+t0t0
+toto00
+Toto1
+tata
+t@t@00
+Tata1
+titi
+titi00
+Titi1
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
@@ -160,6 +192,14 @@ $ hashcat -a 3 <mask> --stdout
 <brute force wordlist from the mask>
 ```
 </div><div>
+
+If you are using a rule:
+
+```ps
+$ hashcat -a 0 --stdout -r /path/to/xxx.rule wordlist
+<wordlist from the rule>
+```
+
 </div></div>
 
 <hr class="sep-both">
