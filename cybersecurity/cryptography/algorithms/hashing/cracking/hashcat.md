@@ -56,6 +56,51 @@ $ hashcat -m hcode [...] -w 3 # 1="half power", 3="full power"
 
 <hr class="sep-both">
 
+## Hashcat Attack Modes
+
+<div class="row row-cols-lg-2"><div>
+
+#### Combination Attack Mode
+
+The combination attack mode takes a variable number of wordlists and generate a wordlist that is a combination of them. The final wordlist is used to crack the hashes.
+
+```ps
+$ hashcat -a 1 -m hcode myhash <list of wordlists>
+```
+
+#### Brute force Attack Mode
+
+Generate or use a mask and try every combination until either the password is found or the character set is exhausted.
+
+```ps
+$ hashcat -a 3 <mask>
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+## Wordlist generation
+
+[![passwordattacks](../../../../_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
+
+<div class="row row-cols-lg-2"><div>
+
+You can use hashcat to generate a wordlist using `--stdout`. The kind of generated wordlist is determined by the attack mode selected.
+
+```ps
+$ hashcat -a 1 --stdout wordlist1 wordlist2
+<combination wordlist>
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
