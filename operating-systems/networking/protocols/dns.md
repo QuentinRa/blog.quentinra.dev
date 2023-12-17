@@ -21,6 +21,7 @@ There are [multiple type](https://www.ietf.org/rfc/rfc1035.txt) of records for a
 * **CNAME** ➡️: a domain may point to another
 * **MX** ✉️: a domain may have a mail server
 * **TXT** ✍️: used to store information, mostly used to verify ownership by third-party websites...
+* See also [Wikipedia Reference](https://en.wikipedia.org/wiki/List_of_DNS_record_types)
 </div></div>
 
 <hr class="sep-both">
@@ -79,6 +80,28 @@ Given the FQDN `www.example.com`, `www` is the hostname, while `example.com` is 
 👉 All subdomains are written as FQDN.
 
 👉 Any domain ending with `.` (DNS root) is written as a FQDN. For instance, `example.com` is NOT a FQDN, while `example.com.` is.
+</div></div>
+
+
+<hr class="sep-both">
+
+## DNS Internals
+
+[![dnsenumerationusingpython](../../../cybersecurity/_badges/htb/dnsenumerationusingpython.svg)](https://academy.hackthebox.com/course/preview/dns-enumeration-using-python)
+
+<div class="row row-cols-lg-2"><div>
+
+DNS mainly use [UDP](/operating-systems/networking/protocols/udp.md) for DNS queries, while it mainly use [TCP](/operating-systems/networking/protocols/tcp.md) for zone transfers or large responses. With IPV6/DNSSEC, TCP seems to be more and more used for queries too.
+
+A DNS zone represents a portion of the domain records that the DNS server manages. DNS records are stored in zone files.
+
+* **Primary zones** 🌹: authoritative source for the DNS information
+* **Secondary zones** 🌿: read-only copies of the DNS records
+
+The primary DNS servers are transferring changes to secondary DNS servers using what we call "Zone Transferts." There are two types of zone transfers: `AXFR` and `IXFR`.
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">
@@ -218,6 +241,7 @@ Stuff that I found, but never read/used yet.
 * DNS poisoning
 * DNS relay
 * DOT (DNS Over TLS)
+* DNSSEC (HTB/27180)
 </div><div>
 
 Purchase domain names
