@@ -265,7 +265,21 @@ $ unzip hello.zip # enter password
 
 #### Wireless password cracking
 
-Please refer to the [Wi-FI](/operating-systems/networking/others/technologies/wi-fi.md) page.
+[![crackingpasswordswithhashcat](../../../_badges/htb/crackingpasswordswithhashcat.svg)](https://academy.hackthebox.com/course/preview/cracking-passwords-with-hashcat)
+[![wifihacking101](../../../../cybersecurity/_badges/thm-p/wifihacking101.svg)](https://tryhackme.com/room/wifihacking101)
+
+For [Wi-Fi](/operating-systems/networking/others/technologies/wi-fi.md) password cracking, use [hcxtools](https://github.com/ZerBea/hcxtools) to create a crackable file: 
+
+```shell!
+$ sudo apt-get install hcxtools
+$ hcxpcapngtool xxx.cap -o hash
+$ hcxpcapngtool xxx.hccapx -o hash
+$ hashcat -m 22000 [...]
+$ john --format=wpapsk [...]
+$ hcxpcaptool -j hash xxx.cap        # alternative?
+$ /usr/lib/hashcat-utils/cap2hccapx.bin in.cap out.hccapx
+$ hccapx2john out.hccapx > hash      # only for john
+```
 
 #### Others converters
 

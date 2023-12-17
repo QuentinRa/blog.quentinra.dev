@@ -33,7 +33,7 @@ Well-known Wi-Fi attacks:
 * **Radio jamming** 📶: a hacker disrupt communications
 </div><div>
 
-...
+* Credentials can be sniffed and [cracked](/cybersecurity/cryptography/algorithms/hashing/index.md#wireless-password-cracking)
 </div></div>
 
 <hr class="sep-both">
@@ -50,6 +50,11 @@ Stuff that I found, but never read/used yet.
 * Airmon-ng: start/stop monitoring interface?
 * <s>`aircrack-ng -b xx:xx:xx:xx:xx:xx -e 'xxx' -j hash xxx.cap` generates `hash.hccapx`</s>
 * Refer to hash cracking
+
+[![crackingpasswordswithhashcat](../../../../cybersecurity/_badges/htb/crackingpasswordswithhashcat.svg)](https://academy.hackthebox.com/course/preview/cracking-passwords-with-hashcat)
+
+* PMKID, MAC
+* ...
 </div><div>
 
 * Radius: Auth Server
