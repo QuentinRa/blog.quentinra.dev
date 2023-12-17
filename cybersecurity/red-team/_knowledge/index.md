@@ -270,74 +270,7 @@ Copy-paste may be an option, but not every file can be copy-pasted. One trick is
 
 ## Wordlists ⛪
 
-[![passwordattacks](../../_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
-
-<div class="row row-cols-md-2"><div>
-
-A wordlist is a list of words, mostly used during discovery, exploitation for enumeration or password cracking.
-
-* 🏝️ Find common hidden directories on a web server
-* 🔑 Test common passwords
-* ...
-
-On Kali Linux, you can use the commands `wordlists` or `seclists` to move to the location where the wordlists are stored.
-
-* package seclists | [GitHub](https://github.com/danielmiessler/SecLists) (43k ⭐)
-
-```
-/usr/share/seclists/Passwords/darkweb2017-top10000.txt
-/usr/share/seclists/Usernames/xato-net-10-million-usernames.txt
-...
-```
-
-* package wordlists | [GitHub](https://github.com/drtychai/wordlists) (0.1k ⭐)
-
-```
-/usr/share/wordlists/rockyou.txt
-/usr/share/wordlists/dirb/others/best1050.txt
-/usr/share/wordlists/dirb/others/best110.txt
-...
-```
-
-👉 CTFs are usually using the infamous `rockout.txt` for passwords  <small>(from a data breach of rockyou.com in 2009)</small>.
-
-👉 For default password: [cirt](https://cirt.net/passwords), [default-password](https://default-password.info/), and [data recovery](https://datarecovery.com/rd/default-passwords/).
-</div><div>
-
-#### Fast wordlist generation
-
-See also: [cook](https://github.com/glitchedgitz/cook) (0.6k ⭐) or [CeWL](https://github.com/digininja/CeWL) (1.4k ⭐), [cupp](https://github.com/Mebus/cupp) (3.5k ⭐), [username_generator](https://github.com/shroudri/username_generator) (0.03k ⭐).
-
-You can also use: [JohnTheReaper](/cybersecurity/cryptography/algorithms/hashing/cracking/john.md#wordlist-generation) or [hashcat](/cybersecurity/cryptography/algorithms/hashing/cracking/hashcat.md#wordlist-generation)!
-
-```shell!
-$ seq 0 99 > 0_to_99.lst
-$ echo {A..Z} | tr ' ' '\n' > AZ.lst
-$ echo user{0..9} | tr ' ' '\n' > user_0_to_9.lst
-$ echo {admin,adm,user} | tr ' ' '\n' > simple_list.lst
-$ cewl -w output.lst -d depth -m word_size URL
-$ crunch minlength maxlength charset -o crunch.txt # BIG
-$ python3 cupp.py -i # based on a profile
-```
-
-#### Tune wordlists
-
-If the minimum length for a password is 6 characters, you may want to remove shorter passwords. Refer to the [regex](/tools-and-frameworks/knowledge/regex/index.md) section.
-
-```shell!
-$ # only keep 4 letters passwords
-$ egrep '^.{4}$' /usr/share/wordlists/rockyou.txt > /tmp/4rock.lst
-```
-
-You may also want to merge wordlists...
-
-```shell!
-$ cat wordlist1 wordlist2 wordlist3 > wordlist123
-$ uniq -u wordlist123 > uwordlist # duplicates
-$ sort wordlist123 > swordlist # sort
-```
-
-</div></div>
+Moved to a separate page: [wordlists](topics/wordlists.md).
 
 <hr class="sep-both">
 
