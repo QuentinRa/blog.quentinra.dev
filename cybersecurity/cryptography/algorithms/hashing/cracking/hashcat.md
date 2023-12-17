@@ -76,6 +76,20 @@ Generate or use a mask and try every combination until either the password is fo
 $ hashcat -a 3 <mask>
 ```
 </div><div>
+
+#### Hybrid Attack Modes
+
+You can append (`6`) a mask to a wordlist:
+
+```ps
+$ hashcat -a 6 wordlist <mask>
+```
+
+You can prepend (`7`) a mask to a wordlist:
+
+```ps
+$ hashcat -a 7 <mask> wordlist
+```
 </div></div>
 
 <hr class="sep-both">
@@ -102,6 +116,26 @@ Examples with/without a custom charset:
 $ hashcat [...] "?u?l?l?l"         # Matches: Toto
 $ hashcat [...] -1 ?u?l "?1?l?l?l" # Matches: Toto or toto
 ```
+
+See also: `--increment`, `--increment-max`.
+</div></div>
+
+<hr class="sep-both">
+
+## Hashcat Rules
+
+<div class="row row-cols-lg-2"><div>
+
+Hashcat rules allow us to define complex password rules/patterns. The complete list is available [here](https://hashcat.net/wiki/doku.php?id=rule_based_attack#implemented_compatible_functions) but in short, we can:
+
+* Append/Prepend letters
+* Delete letters/Truncate words
+* Duplicate letters
+* Reverse words
+* ...
+
+Existing rules are stored in: `/usr/share/hashcat/rules/`.
+</div><div>
 </div></div>
 
 <hr class="sep-both">
@@ -118,7 +152,6 @@ You can use hashcat to generate a wordlist using `--stdout`. The kind of generat
 $ hashcat -a 1 --stdout wordlist1 wordlist2
 <combination wordlist>
 ```
-</div><div>
 
 You can do the same with masks:
 
@@ -126,4 +159,19 @@ You can do the same with masks:
 $ hashcat -a 3 <mask> --stdout
 <brute force wordlist from the mask>
 ```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [nsa-rules](https://github.com/NSAKEY/nsa-rules) (0.5k ⭐, 2016 🪦)
+* [Hob0Rules](https://github.com/praetorian-inc/Hob0Rules) (1.3k ⭐, 2016 🪦)
+* [Hob0Rules](https://github.com/praetorian-inc/Hob0Rules) (0.1k ⭐, 2022 ☠️)
+</div><div>
 </div></div>
