@@ -15,6 +15,8 @@ Crack a password/hash:
 
 ```ps
 $ hashcat -m hcode myhash wordlist
+$ hashcat -m hcode myhash /usr/share/wordlists/rockyou.txt
+# you can provide a list of hashes too
 $ hashcat -m hcode myhashes wordlist -o hashes_cracked
 ```
 
@@ -38,6 +40,18 @@ Common options:
 * `--remove`: remove cracked hashes
 * `--username`: can be used to ignore username in hash `user:password`
 * `-r /path/to/xxx.rule`: load a rule file
+
+You can run a benchmark test and add optimization parameters:
+
+```
+$ hashcat -m hcode -b
+$ hashcat -m hcode [...] -O   # kernel optimization
+$ hashcat -m hcode [...] -w 3 # 1="half power", 3="full power"
+```
+
+⚠️ Test with and then without kernel optimization.
+
+⚠️ Never use `--force`, try to troubleshoot the root cause.
 </div></div>
 
 <hr class="sep-both">

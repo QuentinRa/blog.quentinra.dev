@@ -36,9 +36,13 @@ Since a hash function is one-way, it's impossible to know the original data. How
 
 👉 There are many language-specific functions, but you can use these commands for testing.
 
+```
+$ echo -n 'password' | <command> | cut -f1 -d' ' > myhash
+```
+
 * ➡️ Using `openssl`
 
-```bash
+```ps
 # list formats
 $ openssl list --digest-commands
 md4 md5 sha1 [...]
@@ -48,7 +52,7 @@ $ echo -n "toto" | openssl dgst -md4
 
 * ➡️compute and check XXX message digest ([gnu](https://www.gnu.org/software/coreutils/manual/html_node/Summarizing-files.html))
 
-```bash
+```ps
 # if you don't use -n, it won't work
 $ echo -n 'toto' | sha1sum
 $ echo -n 'toto' | md5sum
@@ -59,7 +63,7 @@ $ echo -n 'toto' | sha512sum
 
 * ➡️ Using `mkpasswd`
 
-```bash
+```ps
 # list formats
 $ mkpasswd -m help
 bcrypt          bcrypt
@@ -127,7 +131,13 @@ For instance, [hashes.com](https://hashes.com/en/tools/hash_identifier) or [md5h
 
 * ➡️ Manually
 
-Some tools may provide an incorrect format, or not support the format you are looking for. Some hashes are starting with well-known patterns:  "\\$1\\$" <small>(crypt, cisco, old Linux)</small>, "\\$2\\$, \\$2a\\$, \\$2b\\$, \\$2x\\$, \\$2y\\$" <small>(bcrypt, web)</small>, or "$6" <small>(sha512crypt, modern Linux)</small>. 
+Some tools may suggest an incorrect format or not support the format you are looking for. You can still try to do it manually.
+
+Some hashes are starting with well-known formats: `$id$salt$hash` or `hash:salt`. Some known values for `id` are: `1` <small>(crypt, cisco, old Linux)</small>, `2`/`2a`/`2b`/`2x`/`2y` <small>(bcrypt, web)</small>, `5` <small>(sha256crypt)</small>, `6` <small>(sha512crypt, modern Linux)</small>.
+
+Apache uses `$apr1$hash` while WordPress uses `$P$hash`.
+
+Some hashes can be identified by their length.
 
 👉 You can find a lot of examples [on hashcat website](https://hashcat.net/wiki/doku.php?id=example_hashes).
 </div></div>
@@ -164,5 +174,8 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [Hash-Buster](https://github.com/s0md3v/Hash-Buster)
+* Blowfish and BCrypt (rounds of Blowfish)
+* Use a smaller targeted wordlist for bcrypt
+* Argon2
 </div><div>
 </div></div>
