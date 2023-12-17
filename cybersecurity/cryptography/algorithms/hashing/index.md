@@ -150,19 +150,63 @@ Some hashes can be identified by their length.
 
 Hash cracking usually involves a dictionary with a list of potential passwords a.k.a. [wordlist](/cybersecurity/red-team/_knowledge/index.md#wordlists-) <small>(Rainbow tables may be used for older systems)</small>.
 
-👉 CTFs are usually using `/usr/share/wordlists/rockyou.txt`.
-
 * ➡️ [hashcat](/cybersecurity/cryptography/algorithms/hashing/cracking/hashcat.md) (hc)
 
-
 * ➡️ [John the Ripper](/cybersecurity/cryptography/algorithms/hashing/cracking/john.md) (JtR)
+
+⚠️ Hash cracking tools may be able to use your GPU to compute results faster. On a virtual machine, they may be less efficient, as the VM itself takes a lot of resources. Consider using your host.
 </div><div>
 
 * ➡️ Online tools
 
 For instance, [crackstation](https://crackstation.net/) <small>(you can download their wordlist!)</small>, [MD5Hashing](https://md5hashing.net/), [decrypt.tools](https://decrypt.tools/), [hashkiller.io](https://hashkiller.io/listmanager), or [hashes.com](https://hashes.com/en/decrypt/hash).
 
-⚠️ Hash cracking tools are usually using your CPU to compute results faster. On a virtual machine, they may be less efficient, as the VM itself takes a lot of resources.
+
+👉 CTFs usually use the wordlist `/usr/share/wordlists/rockyou.txt`.
+</div></div>
+
+<hr class="sep-both">
+
+## Special cracking cases
+
+<div class="row row-cols-lg-2"><div>
+
+Some special cases of using john/hashcat along other tools.
+
+#### Linux shadow hash cracking
+
+[![linprivesc](../../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
+
+To crack the whole shadow file, you may use `unshadow`:
+
+```shell!
+$ unshadow /path/to/passwd /path/to/shadow > hashes
+$ john hashes --format=sha512crypt --wordlist=wordlist
+```
+
+#### Windows password hash cracking
+
+Modern Windows are using the hash format "NT", also referred to as "NTLM", because "LM" was the previous hash format.
+
+```shell!
+$ john myhash --format=nt --wordlist=wordlist
+$ john myhash --format=netntlmv2 --wordlist=wordlist
+```
+
+#### GPG passphrase cracking
+
+[![networksecurityprotocols](../../../_badges/thmp/networksecurityprotocols.svg)](https://tryhackme.com/room/networksecurityprotocols)
+[![linuxstrengthtraining](../../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
+[![encryptioncrypto101](../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
+
+To crack the passphrase of [GPG encrypted files](/cybersecurity/cryptography/commands/gpg.md), you must convert the file to a crackable file for john:
+
+```shell!
+$ sudo gpg2john file.pgp > myhash
+$ john --format=gpg myhash --wordlist=wordlist 
+```
+</div><div>
+
 </div></div>
 
 <hr class="sep-both">
