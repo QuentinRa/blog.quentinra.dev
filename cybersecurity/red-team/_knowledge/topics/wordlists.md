@@ -43,41 +43,60 @@ $ wordlists  # extract rockyou.txt, press Y
 
 ## Custom Wordlists
 
+[![crackingpasswordswithhashcat](../../../_badges/htb/crackingpasswordswithhashcat.svg)](https://academy.hackthebox.com/course/preview/cracking-passwords-with-hashcat)
+[![passwordattacks](../../../_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
+
 <div class="row row-cols-md-2"><div>
 
-#### Fast wordlist generation
-
-See also: [cook](https://github.com/glitchedgitz/cook) (0.6k ⭐) or [CeWL](https://github.com/digininja/CeWL) (1.4k ⭐), [cupp](https://github.com/Mebus/cupp) (3.5k ⭐), [username_generator](https://github.com/shroudri/username_generator) (0.03k ⭐).
-
-You can also use: [JohnTheReaper](/cybersecurity/cryptography/algorithms/hashing/cracking/john.md#wordlist-generation) or [hashcat](/cybersecurity/cryptography/algorithms/hashing/cracking/hashcat.md#wordlist-generation)!
+#### Simple wordlists
 
 ```shell!
 $ seq 0 99 > 0_to_99.lst
 $ echo {A..Z} | tr ' ' '\n' > AZ.lst
 $ echo user{0..9} | tr ' ' '\n' > user_0_to_9.lst
 $ echo {admin,adm,user} | tr ' ' '\n' > simple_list.lst
+```
+
+You can also use: [JohnTheReaper](/cybersecurity/cryptography/algorithms/hashing/cracking/john.md#wordlist-generation) or [hashcat](/cybersecurity/cryptography/algorithms/hashing/cracking/hashcat.md#wordlist-generation)!
+
+<br>
+
+#### CeWL wordlist generation
+
+Users may generate a password based on the environment they are in. [CeWL](https://github.com/digininja/CeWL) <small>(1.6k ⭐)</small> will scrap their website to generate a list of words.  
+
+```ps
 $ cewl -w output.lst -d depth -m word_size URL
-$ crunch minlength maxlength charset -o crunch.txt # BIG
-$ python3 cupp.py -i # based on a profile
 ```
 </div><div>
+</div></div>
 
-#### Tune wordlists
+<hr class="sep-both">
 
-If the minimum length for a password is 6 characters, you may want to remove shorter passwords. Refer to the [regex](/tools-and-frameworks/knowledge/regex/index.md) section.
+## Tune wordlists
+
+[![passwordattacks](../../../_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
+
+<div class="row row-cols-lg-2"><div>
+
+If the minimum length for a password is 6 characters, we may want to remove shorter passwords. This is something we can easily do using [regexes](/tools-and-frameworks/knowledge/regex/index.md). For instance, to only keep four letters passwords:
 
 ```shell!
-$ # only keep 4 letters passwords
 $ egrep '^.{4}$' /usr/share/wordlists/rockyou.txt > /tmp/4rock.lst
 ```
 
-You may also want to merge wordlists...
+We can also merge, remove duplicates, or sort words:
 
 ```shell!
 $ cat wordlist1 wordlist2 wordlist3 > wordlist123
-$ uniq -u wordlist123 > uwordlist # duplicates
-$ sort wordlist123 > swordlist # sort
+$ sort wordlist123 > swordlist    # sort
+$ uniq -u swordlist > uwordlist   # duplicates
 ```
+
+⚠️ To remove duplicates, you must sort the list first.
+</div><div>
+
+If worth mentioning again that tools such as [JohnTheReaper](/cybersecurity/cryptography/algorithms/hashing/cracking/john.md#wordlist-generation) or [hashcat](/cybersecurity/cryptography/algorithms/hashing/cracking/hashcat.md#wordlist-generation) may have the capabilities to perform these operations.
 </div></div>
 
 <hr class="sep-both">
@@ -90,5 +109,6 @@ Stuff that I found, but never read/used yet.
 
 * [big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings) <small>(45.5k ⭐)</small>
 * [fuzzdb](https://github.com/fuzzdb-project/fuzzdb) <small>(7.8k ⭐, 2020 🪦)</small>
+* crunch, `-d` (repetitions), `-t` (pattern)
 </div><div>
 </div></div>
