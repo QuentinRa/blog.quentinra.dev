@@ -47,6 +47,7 @@ Stuff that I found, but never read/used yet.
 * [AD mindmap orange](https://orange-cyberdefense.github.io/ocd-mindmaps/)
 * [kerbrute](https://github.com/ropnop/kerbrute)
 * [DPAT](https://github.com/clr2of8/DPAT)/[NtdsAudit](https://github.com/dionach/NtdsAudit)
+* [kerbrute](https://github.com/ropnop/kerbrute) + [username_generator](https://github.com/shroudri/username_generator)
 </div><div>
 
 * Hardening AD ([ref](https://blog.netwrix.fr/2019/05/06/securiser-votre-annuaire-ad-contre-les-attaques-de-malware/))

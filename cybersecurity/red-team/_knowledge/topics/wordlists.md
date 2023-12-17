@@ -13,7 +13,7 @@ They are mainly used to automate tasks. For instance, to perform a password atta
 * 🥷 Find hidden form parameters, headers, etc.
 * ...
 
-CTFs are usually using the infamous `rockout.txt` for passwords  <small>(from the data breach of rockyou.com in 2009)</small>. For default passwords, you might want to check out [cirt](https://cirt.net/passwords), [default-password](https://default-password.info/), and [data recovery](https://datarecovery.com/rd/default-passwords/).
+CTFs are usually using the infamous `rockout.txt` for passwords  <small>(from the data breach of rockyou.com in 2009)</small>. For default passwords, you might want to check out [cirt](https://cirt.net/passwords), [default-password](https://default-password.info/), and [data recovery](https://datarecovery.com/rd/default-passwords/). You may also use the cracked passwords to create a wordlist.
 
 
 </div><div>
@@ -67,8 +67,49 @@ Users may generate a password based on the environment they are in. [CeWL](https
 
 ```ps
 $ cewl -w output.lst -d depth -m word_size URL
+$ cewl -w output.lst -d depth -m word_size -e URL
+```
+
+<br>
+
+#### crunch wordlist generation
+
+crunch is a tool on debian to generate wordlists.
+
+```shell!
+$ crunch minlength maxlength charset -o crunch.txt # BIG
+$ crunch [...] -t pattern
+$ crunch [...] -d 1 # "aa" "aaa" etc. are not allowed
 ```
 </div><div>
+
+#### CUPP wordlist generation
+
+[cupp](https://github.com/Mebus/cupp) <small>(4.0k ⭐, 2020 🪦)</small> is a python script that generates a wordlist based on the information you gathered about the target.
+
+```shell!
+$ python3 cupp.py -i
+```
+
+<br>
+
+#### cook wordlist generation
+
+[cook](https://github.com/glitchedgitz/cook) <small>(0.7k ⭐)</small> is a tool/engine to create wordlists, sort of like a recipe.
+
+```shell!
+$ cook [...]
+```
+
+<br>
+
+#### hashcat utilities
+
+hashcat has a few utilities that it uses to generate wordlists:
+
+* [maskprocessor](https://github.com/hashcat/maskprocessor): generate wordlists from a mask
+* [kwprocessor](https://github.com/hashcat/kwprocessor): generate wordlists with keyboard walks
+* [princeprocessor](https://github.com/hashcat/princeprocessor): generate wordlists using the PRINCE algorithm
 </div></div>
 
 <hr class="sep-both">
@@ -109,6 +150,5 @@ Stuff that I found, but never read/used yet.
 
 * [big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings) <small>(45.5k ⭐)</small>
 * [fuzzdb](https://github.com/fuzzdb-project/fuzzdb) <small>(7.8k ⭐, 2020 🪦)</small>
-* crunch, `-d` (repetitions), `-t` (pattern)
 </div><div>
 </div></div>
