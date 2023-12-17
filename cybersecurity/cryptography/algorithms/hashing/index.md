@@ -235,6 +235,17 @@ $ john myhash --wordlist=wordlist
 $ unrar x hello.rar # enter password
 ```
 
+#### 7ZIP password cracking
+
+[![crackingpasswordswithhashcat](../../../_badges/htb/crackingpasswordswithhashcat.svg)](https://academy.hackthebox.com/course/preview/cracking-passwords-with-hashcat)
+
+You must convert the RAR file to a crackable file for john/hashcat:
+
+```shell!
+$ 7z2john test.7z > myhash
+$ hashcat -m 11600 [...]
+```
+
 #### ZIP password cracking
 
 [![crackingpasswordswithhashcat](../../../_badges/htb/crackingpasswordswithhashcat.svg)](https://academy.hackthebox.com/course/preview/cracking-passwords-with-hashcat)
@@ -251,6 +262,16 @@ $ unzip hello.zip # enter password
 ➡️ There is also [fcrackzip](https://github.com/hyc/fcrackzip) (0.4k ⭐)
 
 👉 The same tool can be used with `hashcat`, but ensure you only keep the hash. See the references, modes `17200-17230`.
+
+#### Wireless password cracking
+
+Please refer to the [Wi-FI](/operating-systems/networking/others/technologies/wi-fi.md) page.
+
+#### Others converters
+
+* `office2john`: office files
+* `pdf2john`: PDF files
+* `keepass2john`: keepass files
 </div></div>
 
 <hr class="sep-both">

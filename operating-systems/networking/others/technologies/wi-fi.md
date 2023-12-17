@@ -49,9 +49,7 @@ Stuff that I found, but never read/used yet.
 * [AirCrack Documentation](https://aircrack-ng.org/documentation.html)
 * Airmon-ng: start/stop monitoring interface?
 * <s>`aircrack-ng -b xx:xx:xx:xx:xx:xx -e 'xxx' -j hash xxx.cap` generates `hash.hccapx`</s>
-  * https://github.com/ZerBea/hcxtools
-  * `hcxpcaptool -j hash xxx.cap`
-  * `john --format=wpapsk --wordlist=/usr/share/wordlists/rockyou.txt hash`
+* Refer to hash cracking
 </div><div>
 
 * Radius: Auth Server

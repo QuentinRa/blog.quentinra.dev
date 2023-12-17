@@ -122,6 +122,8 @@ $ sudo systemctl restart lightdm
 * Use the <kbd>right arrow</kbd> key to use the suggested command
 
 * In the top-right corner, you can find your IP address (tun0)
+
+* Heavily use `locate <name>` (don't forget `sudo updatedb`) to search for installed scripts/wordlists/...
 </details>
 
 <br>
