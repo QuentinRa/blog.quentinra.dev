@@ -76,8 +76,32 @@ Generate or use a mask and try every combination until either the password is fo
 $ hashcat -a 3 <mask>
 ```
 </div><div>
+</div></div>
 
-...
+<hr class="sep-both">
+
+## Hashcat Masks
+
+<div class="row row-cols-lg-2"><div>
+
+A mask is similar to a pattern/regex but with hashcat specific rules. Everything is explained in the [documentation](https://hashcat.net/wiki/doku.php?id=mask_attack).
+
+* `?l`: lower characters (a-z)
+* `?u`: upper characters (A-Z)
+* `?d`: number (0-9)
+* `?h`: same as `?l` + `?d`
+* `?H`: same as `?u` + `?d`
+* ...
+
+We can use placeholders: `?1`, `?2`, `?3`, and `?4` to specify a custom charset. Other characters are not replaced.
+</div><div>
+
+Examples with/without a custom charset:
+
+```ps
+$ hashcat [...] "?u?l?l?l"         # Matches: Toto
+$ hashcat [...] -1 ?u?l "?1?l?l?l" # Matches: Toto or toto
+```
 </div></div>
 
 <hr class="sep-both">
@@ -96,17 +120,10 @@ $ hashcat -a 1 --stdout wordlist1 wordlist2
 ```
 </div><div>
 
-...
-</div></div>
+You can do the same with masks:
 
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-lg-2"><div>
-
-* [old](_old.md)
-</div><div>
+```ps
+$ hashcat -a 3 <mask> --stdout
+<brute force wordlist from the mask>
+```
 </div></div>
