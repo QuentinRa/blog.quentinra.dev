@@ -35,6 +35,9 @@ WordPress Hardening
 * Use security plugins <small>(change login page URL, ban IPs...)</small>
 * Admins can write HTML in comments, it will be executed, but not normal users
 * Deactivating plugins doesn't remove its files
+* Auto-update? (themes and plugins too)
+* Install only trusted themes/plugins
+* sucuri-scanner, better-wp-security, wordfence
 
 Configuration
 
