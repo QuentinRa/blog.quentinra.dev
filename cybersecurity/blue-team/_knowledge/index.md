@@ -161,5 +161,7 @@ Tools/methods/...
     * anti-malware
     * intrusion prevention
 * Deceptive security
-
+* Building Security In Maturity Model (BSIMM)
+* [OWASP SAMM](https://owaspsamm.org/)
+* Microsoft Security Development Lifecycle
 </div></div>

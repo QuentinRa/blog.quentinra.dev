@@ -40,7 +40,7 @@ Use cases below don't have their own page unlike others.
 
 [![attacking_with_ffuf](../../../../cybersecurity/_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
 
-You can use Fuzzing to find query parameters, for instance, using the URL ``example.com?FUZZ=value``. Common [wordlists](/cybersecurity/red-team/_knowledge/index.md#wordlists-) are:
+You can use Fuzzing to find query parameters, for instance, using the URL ``example.com?FUZZ=value``. Common [wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md) are:
 
 ```text!
 /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt
@@ -53,7 +53,7 @@ You can use Fuzzing to find query parameters, for instance, using the URL ``exam
 
 We may want to find which extension the server uses, to fine tune our fuzzing. We may guess it based on the webserver <small>(PHP for Apache, ASPX OR ASP for ISS)</small>, but this is unreliable.
 
-Most websites have a file called `index` which can be used for fuzzing. For example, the URL `example.com/indexFUZZ`. Common [wordlists](/cybersecurity/red-team/_knowledge/index.md#wordlists-) are:
+Most websites have a file called `index` which can be used for fuzzing. For example, the URL `example.com/indexFUZZ`. Common [wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md) are:
 
 ```text!
 /usr/share/seclists/Discovery/Web-Content/web-extensions.txt

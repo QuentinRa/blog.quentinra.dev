@@ -195,6 +195,7 @@ The [Game of Active Directory (GOAD)](https://github.com/Orange-Cyberdefense/GOA
 * [Root the Box](https://github.com/moloch--/RootTheBox) (0.7k ⭐)
 * [fbctf](https://github.com/facebookarchive/fbctf) (6.5k ⭐)
 * [picoctf](https://www.picoctf.org/) (event)
+* [esaip ctf](https://ctf.esaip.org/) (event)
 * [MemLabs](https://github.com/stuxnet999/MemLabs) (memory forensics)
 </div></div>
 

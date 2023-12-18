@@ -683,7 +683,7 @@ Stuff that I found, but never read/used yet.
 * enums
 * str functions (str_length, substr, str_split...)
 * `??=`
-* htmlescapechars
+* htmlescapechars, htmlspecialchars
 * `array_reduce`
 * `php -m`
 * [phpDoc](https://phpdoc.org/)

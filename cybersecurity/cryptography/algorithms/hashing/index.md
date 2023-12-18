@@ -148,7 +148,7 @@ Some hashes can be identified by their length.
 
 <div class="row row-cols-lg-2"><div>
 
-Hash cracking usually involves a dictionary with a list of potential passwords a.k.a. [wordlist](/cybersecurity/red-team/_knowledge/index.md#wordlists-) <small>(Rainbow tables may be used for older systems)</small>.
+Hash cracking usually involves a dictionary with a list of potential passwords a.k.a. [wordlist](/cybersecurity/red-team/_knowledge/topics/wordlists.md) <small>(Rainbow tables may be used for older systems)</small>.
 
 * ➡️ [hashcat](/cybersecurity/cryptography/algorithms/hashing/cracking/hashcat.md) (hc)
 

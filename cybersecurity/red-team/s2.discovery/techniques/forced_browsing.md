@@ -23,7 +23,7 @@ Forced browsing is a technique in which we test URLs crafted from a list of comm
 * 🔑 Admin/CMS panels <small>(ex: WordPress admin login page)</small>
 * 💰 Private files <small>(ex: documents...)</small>
 
-Most tools, namely web scanners, are used with [wordlists](/cybersecurity/red-team/_knowledge/index.md#wordlists-) below:
+Most tools, namely web scanners, are used with [wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md) below:
 
 ```text!
 /usr/share/wordlists/dirb/common.txt

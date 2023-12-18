@@ -19,7 +19,7 @@ Common tools to find <small>(brute force)</small> hidden/non-public subdomains a
 * [DNSRecon](../tools/dnsrecon.md)
 </div><div>
 
-Common [wordlists](/cybersecurity/red-team/_knowledge/index.md#wordlists-) that can be used are:
+Common [wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md) that can be used are:
 
 * package wordlist: `/usr/share/wordlists/amass/`
 * package seclists 📌: `/usr/share/seclists/Discovery/DNS/`

@@ -27,6 +27,8 @@ A **private key** can be used instead of a passphrase. To decrypt a file that wa
 ```ps
 $ gpg --import xxx.key [...]
 ```
+
+🔐 To crack a gpg encrypted file, refer to [password brute force](/cybersecurity/cryptography/algorithms/hashing/index.md#gpg-passphrase-cracking).
 </div></div>
 
 <hr class="sep-both">

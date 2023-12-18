@@ -37,5 +37,5 @@ Common tools to find <small>(brute force)</small> virtual hosts are:
 * [gobuster](/cybersecurity/red-team/tools/enumeration/web/gobuster.md#vhost-brute-force)
 * [ffuf](/cybersecurity/red-team/tools/enumeration/web/ffuf.md#vhost-brute-force)
 
-Common [wordlists](/cybersecurity/red-team/_knowledge/index.md#wordlists-) that can be used are the same as for [Subdomains](subdomains.md).
+Common [wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md) that can be used are the same as for [Subdomains](subdomains.md).
 </div></div>
