@@ -754,4 +754,15 @@ $ curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
 $ sudo python2 get-pip.py
 $ pip2 install --upgrade xxx
 ```
+
+```py
+# ArgParser
+parser = argparse.ArgumentParser(prog="xxx.py", epilog="XXX Script", usage="xxx.py [options]", prefix_chars='-', add_help=True)
+parser.add_argument('-d', action='store', metavar='xxx', type=str, help='XXX.\tXXX', required=True)
+args = parser.parse_args()
+```
+
+* [python pep](https://www.python.org/dev/peps/pep-0008/)
+* [ipython](https://ipython.org/install.html)
+* [enthought](https://docs.enthought.com/canopy/2.1/index.html)
 </div></div>
