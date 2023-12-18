@@ -399,6 +399,14 @@ Stuff that I found, but never read/used yet.
 ```text!
 https://github.com/vitalysim/Awesome-Hacking-Resources
 https://redteam.guide/ (book)
+https://www.hackers-arise.com (book)
 ```
 </div><div>
+
+OSINT
+
+* [mitaka](https://github.com/ninoseki/mitaka)
+* bulitwith, spyse, [intelligence x](https://intelx.io/)
+* source code: [grep.app](https://grep.app/), [searchcode](https://searchcode.com/)
+* documents: metagoofil
 </div></div>

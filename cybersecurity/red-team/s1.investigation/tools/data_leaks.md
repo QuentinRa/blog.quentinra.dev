@@ -11,6 +11,7 @@ Given an email, you can find whether it's in a disclosed dataset.
 * [leakcheck](https://leakcheck.io/)
 * [dehashed](https://dehashed.com/)
 * [monitor.firefox.com](https://monitor.firefox.com/)
+* [avast hackcheck](https://www.avast.com/hackcheck)
 
 You can also look for breaches per company:
 

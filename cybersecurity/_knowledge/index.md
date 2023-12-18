@@ -147,6 +147,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [securityawareness](https://securityawareness.usalearning.gov/)
 * [bugbountyhunter training](https://www.bugbountyhunter.com/training/)
 * [notsosecure](https://notsosecure.com/security-training)
+* [cyberhack](https://cyberhack.site/)
 * Udemy, Coursera...
 </div></div>
 
@@ -261,6 +262,7 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [0xdf](https://0xdf.gitlab.io/)
 * [highon.coffee](https://highon.coffee/)
 * [infinitelogins](https://infinitelogins.com/)
+* [4nuit](https://github.com/4nuit/Hacking)
 </div>
 
 </div>

@@ -44,5 +44,6 @@ Stuff that I found, but never read/used yet.
 
 * Minify code to make it less readable
 * Use of encoding
+* [scoding.de](https://scoding.de/uploads/r2_cs.pdf)
 </div><div>
 </div></div>
