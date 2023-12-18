@@ -123,4 +123,9 @@ Random
 Exploiting Services
 
 * [MySQL user-defined functions](https://redteamnation.com/mysql-user-defined-functions/)
+
+Credentials
+
+* Mimikatz, Kiwi, pypykatz
+* [LaZagne](https://github.com/AlessandroZ/LaZagne)
 </div></div>

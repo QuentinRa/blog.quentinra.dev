@@ -164,4 +164,5 @@ Tools/methods/...
 * Building Security In Maturity Model (BSIMM)
 * [OWASP SAMM](https://owaspsamm.org/)
 * Microsoft Security Development Lifecycle
+* [STIGS](https://public.cyber.mil/stigs/)
 </div></div>

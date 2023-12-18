@@ -59,3 +59,15 @@ Most websites have a file called `index` which can be used for fuzzing. For exam
 /usr/share/seclists/Discovery/Web-Content/web-extensions.txt
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [fuzzingbook](https://www.fuzzingbook.org/) (software testing)
+</div><div>
+</div></div>

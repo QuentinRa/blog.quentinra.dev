@@ -327,6 +327,8 @@ https://tryhackme.com/room/retro (blaster...)
 * [HackBrowserData](https://github.com/moonD4rk/HackBrowserData)
 * [AutoRecon](https://github.com/Tib3rius/AutoRecon)
 * Kismet
+* [ssf](https://github.com/securesocketfunneling/ssf)
+* [pupy](https://github.com/n1nj4sec/pupy/)
 </div></div>
 
 <hr class="sep-both">

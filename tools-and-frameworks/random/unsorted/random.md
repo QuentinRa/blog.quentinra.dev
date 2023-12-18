@@ -126,4 +126,8 @@ As a student, you may enjoy the benefits of the [GitHub student pack](https://ed
 
 * [fontspace](https://www.fontspace.com/)
 * [dafont](https://www.dafont.com/)
+
+#### Tools
+
+* [clipdiary](http://clipdiary.com/)
 </div></div>

@@ -29,5 +29,6 @@ Stuff that I found, but never read/used yet.
 * hidden from users
 * [rust-embedded](https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials)
 * [iothacking101](https://www.iothacking101.com/)
+* [EMBA](https://github.com/e-m-b-a/emba)
 * Zigbee and Z-Wave
 </div></div>
