@@ -1,6 +1,6 @@
 # Fuzzing
 
-[![attacking_with_ffuf](../../../../cybersecurity/_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
+[![attacking_with_ffuf](../../../_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
 
 <div class="row row-cols-md-2"><div>
 
@@ -38,7 +38,7 @@ Use cases below don't have their own page unlike others.
 
 #### Parameter Fuzzing
 
-[![attacking_with_ffuf](../../../../cybersecurity/_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
+[![attacking_with_ffuf](../../../_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
 
 You can use Fuzzing to find query parameters, for instance, using the URL ``example.com?FUZZ=value``. Common [wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md) are:
 
@@ -49,7 +49,7 @@ You can use Fuzzing to find query parameters, for instance, using the URL ``exam
 
 #### Extension Fuzzing
 
-[![attacking_with_ffuf](../../../../cybersecurity/_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
+[![attacking_with_ffuf](../../../_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
 
 We may want to find which extension the server uses, to fine tune our fuzzing. We may guess it based on the webserver <small>(PHP for Apache, ASPX OR ASP for ISS)</small>, but this is unreliable.
 

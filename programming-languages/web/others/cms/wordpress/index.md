@@ -1,5 +1,7 @@
 # WordPress
 
+[![hackingwordpress](../../../../../cybersecurity/_badges/htb/hackingwordpress.svg)](https://academy.hackthebox.com/course/preview/hacking-wordpress)
+
 <div class="row row-cols-lg-2"><div>
 
 [WordPress](https://wordpress.com/) is a system that was created to build and manage blogs. It's now widely used for any kind of website. There are **ton** of plugins making it fast and easy to create websites 🚀.
@@ -32,14 +34,26 @@ WordPress Hardening
 * Disable register
 * Use security plugins <small>(change login page URL, ban IPs...)</small>
 * Admins can write HTML in comments, it will be executed, but not normal users
-</div><div>
+* Deactivating plugins doesn't remove its files
 
 Configuration
 
 * wp-config.php > can enable debug with "WP_DEBUG"
 * set the main page > settings > reading > static page
+* usually apache (`/var/www/html`) and mysql
+</div><div>
 
 Plugins
 
 * Elementor
+
+Stuff
+
+* CMA, CDA
+* WYSIWYG
+* `/wp-admin/`, `login.php`, `wp-login.php`
+* `xmlrpc.php` (XML API)
+* `wp-content/uploads/`, `wp-content/plugins/`, `wp-content/themes/`
+* `wp-includes`
+* 5 levels of access
 </div></div>
