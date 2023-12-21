@@ -402,6 +402,7 @@ Stuff that I found, but never read/used yet.
 https://github.com/vitalysim/Awesome-Hacking-Resources
 https://redteam.guide/ (book)
 https://www.hackers-arise.com (book)
+Hack Like a LEGEND (book)
 ```
 </div><div>
 

@@ -236,6 +236,7 @@ Stuff that I found, but never read/used yet.
   * Drop bytes to remove chars
   * Defang URL (avoid clicking)
   * Extract URLs
+* leetspeak
 </div><div>
 
 <details class="details-e">
