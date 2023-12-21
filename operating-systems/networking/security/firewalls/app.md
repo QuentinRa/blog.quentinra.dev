@@ -15,3 +15,15 @@ Web Application Firewalls (**WAF**) are a category of application firewall focus
 
 ➡️ [ModSecurity](https://github.com/SpiderLabs/ModSecurity) (6.3k ⭐) is an open-source WAF.
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [identYwaf](https://github.com/stamparm/identYwaf)
+</div><div>
+</div></div>
