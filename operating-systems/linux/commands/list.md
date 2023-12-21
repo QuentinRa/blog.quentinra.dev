@@ -1274,6 +1274,7 @@ $ head file -n 5
 $ head file -n +5
 # all lines, aside from the last 5 lines
 $ head file -n -5
+$ tail -c nchars file
 ```
 </div></div>
 

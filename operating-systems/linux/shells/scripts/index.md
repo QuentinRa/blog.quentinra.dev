@@ -1,6 +1,7 @@
 # Shell scripts
 
 [![bashscripting](../../../../cybersecurity/_badges/thm/bashscripting.svg)](https://tryhackme.com/room/bashscripting)
+[![introductiontobashscripting](../../../../cybersecurity/_badges/htb/introductiontobashscripting.svg)](https://academy.hackthebox.com/course/preview/introduction-to-bash-scripting)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -439,6 +440,10 @@ There are multiple commands that call other commands. To pass command arguments,
 # and pass it the command arguments too
 some_command [...] ${command_args}
 ```
+
+#### Input  Field Separator (IPS)
+
+The `$IPS` variable to determine what is an argument.
 </div></div>
 
 <hr class="sl">

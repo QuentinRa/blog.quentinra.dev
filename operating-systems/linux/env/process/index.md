@@ -17,6 +17,8 @@ Processes are stored in `/proc/`, in a folder named after their PID.
 ➡️ A **daemon** is a process that never ends. By convention, their name usually ends with `d` such as `systemd`.
 
 ➡️ If a parent process dies, their children won't die, and will be assigned $-1$ as their PPID.
+
+👉 You can get the current process PID using from the variable `$$`.
 </div></div>
 
 <hr class="sep-both">
