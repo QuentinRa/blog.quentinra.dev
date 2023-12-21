@@ -7,7 +7,7 @@
 
 Secure Socket (SOCKS) is a protocol to exchange data through a [proxy](../topology/devices/proxy.md) server called SOCKS proxy. It operates at the session layer <small>(layer 5)</small>.
 
-🐊️ **Port**: 1080 (TCP) or 9050 (TCP) with Tor
+🐊️ **Port**: 1080 (TCP) or 9050/9150 (TCP) with Tor
 
 You can run a SOCKS proxy using [metasploit](/cybersecurity/red-team/tools/frameworks/metasploit/index.md):
 
@@ -33,4 +33,17 @@ $ curl --proxy socks4a://localhost:9050 [...]
 $ proxychains [Some command]
 $ proxychains -q [Some command]
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* `socks4://IP:port`
+* [check.torproject.org](https://check.torproject.org/)
+</div><div>
 </div></div>
