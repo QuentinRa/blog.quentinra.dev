@@ -10,8 +10,8 @@ This is an important step otherwise we may not have enough privilege to access d
 
 We want to access account with the higher level of privileges:
 
-* `root` > `sudoers` > ALL on [Linux](/operating-systems/linux/_knowledge/index.md#sudo)
-* `NT AUTHORITY\SYSTEM` > `Administrator` > ALL on [Windows](/operating-systems/windows/_knowledge/index.md#permissions-and-users)
+* `root` > `sudoers` > [...] on [Linux](/operating-systems/linux/_knowledge/index.md#sudo)
+* `NT AUTHORITY\SYSTEM` > `Administrator` > [...] on [Windows](/operating-systems/windows/_knowledge/index.md#permissions-and-users)
 </div><div>
 
 Escalation can be **horizontally**/laterally <small>(another user with the same level of privileges)</small> and **vertically** <small>(a higher level of privileges)</small>.
