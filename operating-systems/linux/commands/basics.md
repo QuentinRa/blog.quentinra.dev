@@ -50,10 +50,17 @@ $ ls /Documents/my\ bookmarks/ # ✅
 
 👉 The main difference between single and double quote is that in the former, variable are NOT interpreted. Refer to the [scripts section](/operating-systems/linux/shells/scripts/index.md).
 
+To calculate the length of a string:
+
+```shell!
+$ echo -n "xxx" | wc -c  # use wc
+$ v="xxx"; echo ${#v}    # use variable length 
+```
+
 <details class="details-n">
 <summary><code>expr</code>: substring, indexOf...</summary>
 
-Length of a string
+Length of a string (👎)
 
 ```shell!
 $ expr length "Sarah"
@@ -94,7 +101,7 @@ $ four=$((3+1)) # same
 
 Example of increasing a variable by one <small>(loops are covered in scripts)</small>.
 
-```shell!
+```bash!
 i=0
 while [ $i -lt 5 ]; do
    i=$[i+1] 

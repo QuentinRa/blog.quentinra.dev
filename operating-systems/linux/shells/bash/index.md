@@ -171,7 +171,7 @@ done
 
 * You can use a select statement to select an option
 
-```bash
+```bash!
 select name in option1 option2 ; do
   # name is either empty or equal to option1/option2,
   # and $REPLY is your REPLY
@@ -189,50 +189,50 @@ done
 
 Create an array
 
-```bash
+```bash!
 $ array=(1 2 3 4 5)
 ```
 
 Get a value
 
-```bash
+```bash!
 $ echo ${array[0]}
 ```
 
 Print all values
 
-```bash
+```bash!
 $ echo ${array[@]}
 ```
 
 Length
 
-```bash
+```bash!
 $ echo ${#array[@]}
 ```
 </div><div>
 
 Add a value
 
-```bash
+```bash!
 $ array+=(1)
 ```
 
 Set a value
 
-```bash
+```bash!
 $ array[0]=1
 ```
 
 Remove a value
 
-```bash
+```bash!
 $ unset array[0]
 ```
 
 Iterate an array
 
-```bash
+```bash!
 for i in ${array[@]}; do
   echo $i
 done
@@ -284,6 +284,7 @@ Stuff that I found, but never read/used yet.
 * `help`
 * `history`
 * `function xxx {}`
+* `((xxx++))` (new calculation operator)
 * [GNU bash](https://www.gnu.org/software/bash/manual/bash.html)
 </div><div>
 </div></div>

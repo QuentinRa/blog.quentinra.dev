@@ -231,6 +231,8 @@ Output to both files and the standard output.
 ```ps
 $ tee output1 output2 < file
 ```
+
+Use `-a`/`--append` to append content.
 </div></div>
 
 [<br>]

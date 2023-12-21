@@ -69,6 +69,7 @@ Recap of what isn't allowed by POSIX
 * ❌ DO NOT USE `((`, `[[`, `]]`, and `))`
 * ❌ DO NOT USE `&&`<sup>1</sup>, `||`<sup>1</sup>
 * ❌ DO NOT USE `>`<sup>1</sup>, `<`<sup>1</sup>...
+* ❌ DO NOT USE `((i++))` for [calculations](/operating-systems/linux/commands/basics.md#calculations)
 
 <sup>1</sup> such operators only do what we expect when used in "`[[ ]]`".
 
@@ -514,15 +515,16 @@ echo $text # Hello, World!
 
 You can use the command `read` to read input. This command takes a suite of 1, or more variables, and stores a word in each variable. If there are not enough variables, then the last variable is used to store everything that could not be stored.
 
-```bash!
+```shell!
 $ read x
 toto
 $ echo $x
 toto
+$ read -p "Prompt: " x  # Prompt for input
 ```
 </div><div>
 
-```bash!
+```shell!
 $ read x
 toto tata
 $ echo $x
