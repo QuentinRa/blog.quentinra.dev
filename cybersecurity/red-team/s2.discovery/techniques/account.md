@@ -26,5 +26,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * `something+opt@anything`
+* `admin, administrator, wpadmin, root, adm`
+* `/usr/share/seclists/Passwords/Default-Credentials/ftp-betterdefaultpasslist.txt`
 </div><div>
 </div></div>

@@ -18,12 +18,13 @@
 $ wordlist=/usr/share/wordlists/rockyou.txt
 # use ssh, ftp...
 $ hydra -l username -P $wordlist ssh://IP
+$ hydra -l username -P $wordlist ssh://IP:port
 $ hydra -l username -P $wordlist ftp://IP
 $ hydra -l username -P $wordlist rdp://IP
 $ hydra -l xxx@xxx.xxx -P $wordlist smtp://IP
 $ [...]
 # alternate form
-$ hydra -l username -P $wordlist IP ssh
+$ hydra -l username -P $wordlist IP ssh -s port
 ```
 
 ➡️ I use a variable `$wordlist` to write shorter commands. <br>
@@ -45,6 +46,8 @@ $ hydra -l username -P $wordlist IP ssh
     * `n`: try null password
     * `s`: try login as pass
     * `r`: try reversed login
+* `-f`: quit on first log in found
+* `-u`: try all usernames for each password
 </div></div>
 
 <hr class="sep-both">
@@ -62,6 +65,18 @@ $ hydra -l toto -P wordlist IP http-get-form "/login.php:username=^USER^&passwor
 $ hydra -l toto -P wordlist IP http-post-form "/login.php:username=^USER^&password=^PASS^:F=incorrect" -V
 ```
 </div><div>
+</div></div>
 
-...
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* HTTP Basic Auth: `[...] IP http-get /`
+</div><div>
+
+
 </div></div>

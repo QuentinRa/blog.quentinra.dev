@@ -44,6 +44,7 @@ $ wordlists  # extract rockyou.txt, press Y
 ## Custom Wordlists
 
 [![crackingpasswordswithhashcat](../../../_badges/htb/crackingpasswordswithhashcat.svg)](https://academy.hackthebox.com/course/preview/cracking-passwords-with-hashcat)
+[![loginbruteforcing](../../../_badges/htb/loginbruteforcing.svg)](https://academy.hackthebox.com/course/preview/login-brute-forcing)
 [![passwordattacks](../../../_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
 
 <div class="row row-cols-md-2"><div>
@@ -88,8 +89,11 @@ $ crunch [...] -d 1 # "aa" "aaa" etc. are not allowed
 [cupp](https://github.com/Mebus/cupp) <small>(4.0k ⭐, 2020 🪦)</small> is a python script that generates a wordlist based on the information you gathered about the target.
 
 ```shell!
-$ python3 cupp.py -i
+$ sudo apt-get install cupp
+$ cupp -i
 ```
+
+Even if you gathered a lot of information, you may want to start with small wordlist first.
 
 <br>
 
@@ -150,5 +154,19 @@ Stuff that I found, but never read/used yet.
 
 * [big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings) <small>(45.5k ⭐)</small>
 * [fuzzdb](https://github.com/fuzzdb-project/fuzzdb) <small>(7.8k ⭐, 2020 🪦)</small>
+* [username-anarchy](https://github.com/urbanadventurer/username-anarchy)
+
+Mangling
+
+* [rsmangler](https://github.com/digininja/RSMangler)
+* [The Mentalist](https://github.com/sc0tfree/mentalist)
 </div><div>
+
+Usernames
+
+* `/usr/share/seclists/Usernames/Names/names.txt`
+
+Defaults Credentials
+
+* `/usr/share/seclists/Passwords/Default-Credentials/ftp-betterdefaultpasslist.txt`
 </div></div>

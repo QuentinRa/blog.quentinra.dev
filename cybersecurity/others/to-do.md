@@ -219,7 +219,6 @@ https://tryhackme.com/room/retro (blaster...)
 * **Retina** (🔎🔑✈️) <small>(vulnerability scanner)</small>
 * Nipper (🔎) <small>(network devices scanner)</small>
 * **Nettacker** (🏝💥) <small>(port scanning, vulnerability scanning)</small>
-* Medusa (💥) <small>(password cracking)</small>
 * **Empire** (✈️) <small>(post-exploitation framework)</small>
 * [DSSS](https://github.com/stamparm/DSSS) (🏝💥) <small>(SQL vulnerability scanner)</small>
 * [whitewidow](https://github.com/WhitewidowScanner/whitewidow) (🏝💥) <small>(SQL/XSS vulnerability scanner)</small>
@@ -321,7 +320,6 @@ https://tryhackme.com/room/retro (blaster...)
 * [red-team-scripts](https://github.com/threatexpress/red-team-scripts)
 * NetworkMiner
 * NetWitness
-* Ncrack
 * [MailSniper](https://github.com/dafthack/MailSniper)
 * [EXOCET](https://github.com/tanc7/EXOCET-AV-Evasion)
 * [HackBrowserData](https://github.com/moonD4rk/HackBrowserData)
