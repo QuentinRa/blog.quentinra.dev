@@ -39,7 +39,7 @@ $ hydra -l username -P $wordlist IP ssh -s port
 * `-P file`: try a list of passwords
 * `-C file`: instead of L/P, provide a list of "username:password"
 * `-s port`: use another port
-* `-t n`: use $n$ threads (default: 16)
+* `-t n`: use $n$ threads <small>(default: 16)</small> | `4` for services
 * `-v` / `-d` : verbose / debug
 * `-V`: show login+password for every attempt
 * `-e [values]` such as `-e nsr` for all three

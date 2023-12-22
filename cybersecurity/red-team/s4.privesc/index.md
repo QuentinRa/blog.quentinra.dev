@@ -27,6 +27,30 @@ Escalation can be **horizontally**/laterally <small>(another user with the same 
 
 <hr class="sep-both">
 
+## Privilege Escalation Basics
+
+<div class="row row-cols-lg-2"><div>
+
+Each operating system has its own set of escalation vectors while they share similarities. Some tools or services may have been installed and may be misconfigured or vulnerable.
+
+If you detect an external service/tool:
+
+* Look for [CVEs and exploits](/cybersecurity/red-team/s3.exploitation/index.md#vulnerability-databases)
+* In case of misconfiguration, exploit the generic escalation vector
+* ...
+
+You might discover services such as FTP or others that may not have been shown during the initial recon step.
+</div><div>
+
+On Linux, you may use a command such as:
+
+```ps
+$ netstat -antp | grep -i list
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Linux privilege escalation 🦆
 
 <div class="row row-cols-md-2"><div>
