@@ -155,6 +155,7 @@ Stuff that I found, but never read/used yet.
 * [big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings) <small>(45.5k ⭐)</small>
 * [fuzzdb](https://github.com/fuzzdb-project/fuzzdb) <small>(7.8k ⭐, 2020 🪦)</small>
 * [username-anarchy](https://github.com/urbanadventurer/username-anarchy)
+* [Security-Wordlist](https://github.com/DragonJAR/Security-Wordlist/)
 
 Mangling
 

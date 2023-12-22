@@ -211,6 +211,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
+* `/etc/apache2/envvars`
 * `apache2ctl restart`
 * [Apache Security](https://www.tecmint.com/apache-security-tips/)
 
