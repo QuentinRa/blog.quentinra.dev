@@ -18,7 +18,7 @@ Escalation can be **horizontally**/laterally <small>(another user with the same 
 
 **Learn** 🎓
 
-* [Ignitetechnologies/Privilege-Escalation](https://github.com/Ignitetechnologies/Privilege-Escalation) (2.8k ⭐, CTFs)
+* [Ignitetechnologies/Privilege-Escalation](https://github.com/Ignitetechnologies/Privilege-Escalation) <small>(3.0k ⭐, CTFs)</small>
 
 **Tools**
 
