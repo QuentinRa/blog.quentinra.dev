@@ -215,10 +215,10 @@ URL encoding, also known as percent-encoding, is an encoding mostly used in URLs
 👉 [W3School URL Encoding Reference](https://www.w3schools.com/tags/ref_urlencode.ASP).
 </div><div>
 
-* Example of encoding `%`
-* Find the ASCII of `%`: `37`
-* Convert the value to hexadecimal: `25`
-* Add `%` before the result: `%25`
+* Example of encoding `.`
+* Find the ASCII of `.`: `46`
+* Convert the value to hexadecimal: `2e`
+* Add `%` before the result: `%2e`
 </div></div>
 
 <hr class="sep-both">
