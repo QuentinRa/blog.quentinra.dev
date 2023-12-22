@@ -15,5 +15,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * `/etc/nginx/nginx.conf`: configuration file
+* `/var/log/nginx/`: logs
 </div><div>
 </div></div>
