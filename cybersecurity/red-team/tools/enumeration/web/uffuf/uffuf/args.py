@@ -23,10 +23,12 @@ def parse_arguments():
     parser.add_argument("-F", dest="file", help="Path to the file to upload.", required=True)
     parser.add_argument("-Fn", dest="filename", default=uffuf.constants.auto, help="Name of the file to upload (default: %(default)s).")
     parser.add_argument("-Ft", dest="filetype", default=uffuf.constants.auto, help="MIME types tested with the file (default: %(default)s).")
+    parser.add_argument("--spoof", dest="should_spoof", action="store_true", help="Modify file contents to inject the MIME type.")
 
     # General Options
     general_options.add_argument("-V", "--version", action="version", version=uffuf.constants.version, help="Show version information")
     general_options.add_argument("-t", dest="threads", type=int, default=10, help="Number of concurrent threads (default: %(default)s)")
+    general_options.add_argument("-v", dest="is_verbose", action="store_true", help="Verbose output")
 
     # Matcher Options
     matcher_options.add_argument("-mc", metavar="mc", default=uffuf.constants.default_status_codes, help="Match HTTP status codes, or 'all' for everything (default: %(default)s)")
@@ -51,7 +53,10 @@ def parse_arguments():
 
 
 def verify_arguments(args):
-    data = type('ProgramData', (), {'file': args.file, 'param': args.param, 'threads': args.threads })
+    data = type('ProgramData', (), {
+        'file': args.file, 'param': args.param, 'threads': args.threads,
+        'is_verbose': args.is_verbose, 'should_spoof': args.should_spoof
+    })
 
     if args.url.startswith("http"):
         data.url = args.url

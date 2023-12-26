@@ -1,5 +1,5 @@
-import logging
 import requests
+import uffuf.constants
 
 
 def execute_worker_task(args):
@@ -13,11 +13,18 @@ def execute_worker_task(args):
 
 
 def process_word(args, word):
+    contents = args.file_content
+    filetype = args.filetype.replace(args.keyword, word)
+    if args.should_spoof:
+        if filetype in uffuf.constants.mimetypes_to_bytes:
+            contents = uffuf.constants.mimetypes_to_bytes[filetype] + contents
+        else:
+            print(f'[WARN] Cannot spoof file: MIME type {filetype} is not supported.')
+
     files = {
         args.param: (
             args.filename.replace(args.keyword, word),
-            args.file_content,
-            args.filetype.replace(args.keyword, word)
+            contents, filetype
         )
     }
 
@@ -37,5 +44,9 @@ def process_word(args, word):
             return
 
         print(f'{word:<25} [Status: {res_code}, Size: {res_size}, Words: {words_count}, Lines: {lines_count}]')
+
+        if args.is_verbose:
+            line = content.split('\n')[0]
+            print(f'{"":<25} [INFO] Output Content: {line}\n')
     except Exception as e:
         print(f'{word:<25} [Error {e}]')

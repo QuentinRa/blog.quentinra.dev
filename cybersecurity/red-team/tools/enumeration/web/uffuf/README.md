@@ -4,6 +4,8 @@
 
 uffuf is a specialized tool inspired by the popular fuzzer [ffuf](https://github.com/ffuf/ffuf). It allows users to fuzz file names, content types, and other parameters, to assist in identifying vulnerabilities related to unrestricted file uploads in web applications. It's an alternative to Burp Suite or other web proxies.
 
+#### Basic Usage
+
 * Filename Fuzzing - Bypassing Filename Checks
 
 ```shell!
@@ -48,3 +50,14 @@ $ file webshell.php.jpg
 webshell.php.jpg: JPEG image data
 $ ./main.py -u <IP:port>/upload.php -p uploadFile -w web-extensions.txt -F webshell.php.jpg -Fn test.jpgFUZZ -Ft image/jpg -mr "File successfully uploaded"
 ```
+
+Alternatively, we can use the `--spoof` flag:
+
+```shell!
+$ ./main.py -u <IP:port>/upload.php -p uploadFile -w web-extensions.txt -F webshell.php -Fn test.jpgFUZZ -Ft image/jpg -mr "File successfully uploaded" --spoof
+```
+
+#### Missing Features
+
+* Verbose (-v == see payloads, -vv == see first line of content)
+* Add option to test if uploaded file is executable?
