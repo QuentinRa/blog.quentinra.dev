@@ -1,6 +1,6 @@
 # ffuf
 
-[![attacking_with_ffuf](../../../../../cybersecurity/_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
+[![attacking_with_ffuf](../../../../_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
 
 <div class="row row-cols-md-2"><div>
 

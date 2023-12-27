@@ -6,7 +6,7 @@ uffuf is a specialized tool inspired by the popular fuzzer [ffuf](https://github
 
 #### Basic Usage
 
-* Filename Fuzzing - Bypassing Filename Checks
+* Filename Fuzzing — Bypassing Filename Checks
 
 ```shell!
 $ ./main.py -u https://example.com -p uploadFile -F myFile -w myWordlist -Fn dummyFUZZ
@@ -16,17 +16,20 @@ $ # Attempt by appending a valid extension (misconfiguration, rare)
 $ ./main.py -u https://example.com -p uploadFile -F myFile -w myWordlist -Fn dummyFUZZ.jpg
 ```
 
-* ... And use a custom mime-type to see if it works
+* MIME type — Investigate the filter
 
 ```shell!
 $ # Attempt basic MIME type bypass
 $ ./main.py [...] -Ft image/jpeg
+$ # Edit the file MIME type to fit the provided MIME type 
+$ ./main.py [...] -Ft image/jpeg --spoof
 ```
 
-* MIME type Fuzzing - Detect MIME type filtering
+* MIME type Fuzzing — Detect Allowed MIME types
 
 ```shell!
-$ ./main.py -u https://example.com -p uploadFile -F myFile -w myWordlist -Ft FUZZ
+$ # --spoof is optional if the server uses the request MIME type 
+$ ./main.py -u https://example.com -p uploadFile -F myFile -w myWordlist -Ft FUZZ --spoof
 ```
 
 #### Testing
@@ -59,5 +62,6 @@ $ ./main.py -u <IP:port>/upload.php -p uploadFile -w web-extensions.txt -F websh
 
 #### Missing Features
 
-* Verbose (-v == see payloads, -vv == see first line of content)
+* Add an initial dummy test
+* Improve Verbose Mode
 * Add option to test if uploaded file is executable?
