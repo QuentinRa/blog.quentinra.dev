@@ -37,6 +37,8 @@ $ wordlists  # extract rockyou.txt, press Y
 /usr/share/wordlists/dirb/others/best110.txt
 ...
 ```
+
+Finally, `payloadsallthethings` contains some wordlists.
 </div></div>
 
 <hr class="sep-both">
@@ -162,6 +164,13 @@ Extensions
 
 ```text!
 /usr/share/seclists/Discovery/Web-Content/web-extensions.txt
+/usr/share/seclists/Discovery/Web-Content/web-extensions-big.txt
+```
+
+Shells per language/extension
+
+```shell!
+$ ll "/usr/share/payloadsallthethings/Upload Insecure Files/"
 ```
 </div><div>
 </div></div>
