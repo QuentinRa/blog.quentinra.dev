@@ -11,7 +11,7 @@ Server Message Block (SMB) is a protocol used for Windows file exchange system. 
 
 🐊️ **Port**: 445 (TCP) <small>(139/TCP before)</small>
 
-It's mostly used to share files internally by connecting computers, printers... to a shared folder called **share** 📂.
+It's mostly used to share files internally by connecting computers, printers... to a shared folder called **share** 📂 ([def](/operating-systems/windows/_knowledge/index.md#shared-folders)).
 
 For any commands, you can use:
 
@@ -24,6 +24,7 @@ $ smbclient [...] -p port # specify port
 
 ```ps
 $ smbclient -L IP [...]
+# Sharename       Type      Comment
 PS> net view \\IP
 PS> net share
 ```
@@ -85,6 +86,8 @@ PS> copy file \\IP\share # using current user credentials
 $ nmap IP -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse
 # find the operating system
 $ nmap IP -p 445 --script smb-os-discovery.nse
+# run every smb script
+$ nmap IP -p 445 --script "*smb*"
 ```
 
 * Try `Anonymous` user with no password (`-N`)
@@ -99,19 +102,30 @@ $ smbclient //IP//Anonymous -U Anonymous -N
 ```
 
 * PsExec <small>(see [impacket](tools/impacket.md#psexec) client)</small> is a tool rely on SMB and allows administrators to run commands on Windows hosts. It may be running on the target.
+
+* You can use [crackmapexec](https://github.com/byt3bl33d3r/CrackMapExec) <small>(7.9k ⭐)</small> to list shares+accesses, and some basic information about the host.
+
+```ps
+$ crackmapexec smb IP --shares -u 'username' -p 'password'
+```
 </div><div>
 
-* You can also use `smbmap` to find users/shares/files/...
+* You can also use [smbmap](https://github.com/ShawnDEvans/smbmap) <small>(1.6k ⭐)</small> to find users/shares+access/files/...
 
 ```ps
 $ smbmap -H IP
+$ smbmap -H IP -u 'username' -p 'password'
 ```
 
-* You can use [enum4linux](https://github.com/CiscoCXSecurity/enum4linux) (0.7k ⭐) to find shares, and users.
+* You can use [enum4linux](https://github.com/CiscoCXSecurity/enum4linux) <small>(1.0k ⭐)</small> or [enum4linux-ng](https://github.com/cddmp/enum4linux-ng) <small>(1.0k ⭐)</small> to find shares, and users.
 
+```shell!
+$ sudo apt-get install enum4linux-ng
+$ enum4linux-ng IP -a
+$ enum4linux-ng IP <options>
+$ enum4linux-ng IP <options> -u 'username' -p 'password'
+```
 ```ps
-$ enum4linux options IP
-$ enum4linux -a IP
 # -a : list all
 # -U : list of users
 # -M : list of devices
