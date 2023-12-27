@@ -2,12 +2,13 @@
 
 [![networkservices](../../../cybersecurity/_badges/thmp/networkservices.svg)](https://tryhackme.com/room/networkservices)
 [![adventofcyber4](../../../cybersecurity/_badges/thm/adventofcyber4/day4.svg)](https://tryhackme.com/room/adventofcyber4)
+[![footprinting](../../../cybersecurity/_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
 
 <div class="row row-cols-lg-2"><div>
 
-Server Message Block (SMB) is a protocol used for Windows file exchange system. It's similar to [NFS](nfs.md) for Linux.
+Server Message Block (SMB) is a protocol used for Windows file exchange system. It's similar to [NFS](/operating-systems/networking/protocols/nfs.md) for Linux.
 
-[Samba](https://www.samba.org/) is making both file exchange systems of Linux (NFS), and Windows (SMB) work together.
+[Samba](https://www.samba.org/) is making both file exchange systems of Linux (NFS), and Windows (SMB) work together. It implements [CIFS](/operating-systems/networking/protocols/cifs.md).
 
 🐊️ **Port**: 445 (TCP) <small>(139/TCP before)</small>
 
@@ -101,6 +102,8 @@ $ smbclient //IP/share_name -U Anonymous -N
 $ smbclient //IP//Anonymous -U Anonymous -N
 ```
 
+* If [RPC](rpc.md) is available, we may be able to use it to query information such as users, host information, os information, etc.
+
 * PsExec <small>(see [impacket](tools/impacket.md#psexec) client)</small> is a tool rely on SMB and allows administrators to run commands on Windows hosts. It may be running on the target.
 
 * You can use [crackmapexec](https://github.com/byt3bl33d3r/CrackMapExec) <small>(7.9k ⭐)</small> to list shares+accesses, and some basic information about the host.
@@ -110,7 +113,7 @@ $ crackmapexec smb IP --shares -u 'username' -p 'password'
 ```
 </div><div>
 
-* You can also use [smbmap](https://github.com/ShawnDEvans/smbmap) <small>(1.6k ⭐)</small> to find users/shares+access/files/...
+* You can use [smbmap](https://github.com/ShawnDEvans/smbmap) <small>(1.6k ⭐)</small> to find users/shares+access/files/...
 
 ```ps
 $ smbmap -H IP
@@ -151,5 +154,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * SMBenum
+* smbclient can run commands (`!cmd`)
 </div><div>
 </div></div>

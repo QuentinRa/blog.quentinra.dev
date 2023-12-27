@@ -2,9 +2,9 @@
 
 <div class="row row-cols-lg-2"><div>
 
-The Common Internet File System (CIFS) protocol was developed by Microsoft for file sharing. It's build over [SMB](/operating-systems/networking/protocols/smb.md).
+The Common Internet File System (CIFS) protocol was developed by Microsoft for file sharing. It's built over the [SMB](/operating-systems/networking/protocols/smb.md) protocol.
 
-🐊️ **Ports**: N/A <small>(uses SMB)</small>
+🐊️ **Ports**: 445 (TCP) <small>(the only SMB port used by CIFS)</small>
 
 To mount a remote file system that supports the CIFS protocol:
 
