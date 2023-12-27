@@ -150,6 +150,8 @@ Stuff that I found, but never read/used yet.
 * [Windows credential guard](https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-how-it-works)
 </div><div>
 
+* [Windows filename](https://en.wikipedia.org/wiki/8.3_filename) (`hello~1.TXT`=>first `hello_world.txt`)
+
 **BitLocker**
 
 The Trusted Platform Module (TPM) hardware component provides security against tampering along with many other things. BitLocker was designed "to help protect user data and to ensure that a computer has not been tampered with while the system was offline", as per [Microsoft](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview).
