@@ -45,5 +45,19 @@ Stuff that I found, but never read/used yet.
 * Minify code to make it less readable
 * Use of encoding
 * [scoding.de](https://scoding.de/uploads/r2_cs.pdf)
+* [DOSfuscation](https://github.com/danielbohannon/Invoke-DOSfuscation)
+
+```ps
+Invoke-DOSfuscation> SET COMMAND type <path>
+Invoke-DOSfuscation> encoding
+Invoke-DOSfuscation\Encoding> 1
+```
 </div><div>
+
+* [Bashfuscator](https://github.com/Bashfuscator/Bashfuscator)
+
+```ps
+$ bashfuscator -c 'cat /etc/passwd'
+$ bashfuscator -c 'cat /etc/passwd' -s 1 -t 1 --no-mangling --layers 1
+```
 </div></div>
