@@ -146,6 +146,28 @@ If worth mentioning again that tools such as [JohnTheReaper](/cybersecurity/cryp
 
 <hr class="sep-both">
 
+## Wordlists Index
+
+<div class="row row-cols-lg-2"><div>
+
+#### File Upload
+
+MIME type/Content Type
+
+```text!
+/usr/share/seclists/Miscellaneous/web/content-type.txt
+```
+
+Extensions
+
+```text!
+/usr/share/seclists/Discovery/Web-Content/web-extensions.txt
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

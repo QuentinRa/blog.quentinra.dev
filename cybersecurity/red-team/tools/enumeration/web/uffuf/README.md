@@ -19,16 +19,16 @@ $ ./main.py -u https://example.com -p uploadFile -F myFile -w myWordlist -Fn dum
 * MIME type — Investigate the filter
 
 ```shell!
-$ # Attempt basic MIME type bypass
+$ # Attempt MIME type bypass
 $ ./main.py [...] -Ft image/jpeg
-$ # Edit the file MIME type to fit the provided MIME type 
+$ # Attempt magic number bypass
 $ ./main.py [...] -Ft image/jpeg --spoof
 ```
 
 * MIME type Fuzzing — Detect Allowed MIME types
 
 ```shell!
-$ # --spoof is optional if the server uses the request MIME type 
+$ # --spoof is optional if the server don't check the magic number
 $ ./main.py -u https://example.com -p uploadFile -F myFile -w myWordlist -Ft FUZZ --spoof
 ```
 
@@ -46,7 +46,7 @@ $ ./main.py -u <IP:port>/upload.php -p uploadFile -w web-extensions.txt -Fn test
 $ ./main.py -u <IP:port>/upload.php -p uploadFile -w web-extensions.txt -Fn testFUZZ.jpg -mr "File successfully uploaded"
 ```
 
-* Blacklist and whitelist extensions, MIME type checking `https://academy.hackthebox.com/module/136/section/1290`
+* Blacklist and whitelist extensions, MIME type and magic number checking (`https://academy.hackthebox.com/module/136/section/1290`)
 
 ```shell!
 $ file webshell.php.jpg
