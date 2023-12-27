@@ -26,6 +26,15 @@ And use a length command to invoke them:
 $ python /opt/impacket/examples/secretsdump.py [...]
 ```
 
+<br>
+
+#### Samrdump
+
+List users and domains.
+
+```shell!
+$ impacket-samrdump IP
+```
 </div><div>
 
 #### Dump hashes from backup

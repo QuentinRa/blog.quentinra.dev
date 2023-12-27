@@ -512,6 +512,8 @@ $ nmap IP --script "*brute*" --script-args userdb=users.lst,passdb=pass.lst
 
 #### Banner grabbing
 
+See also: [banner grabbing](/cybersecurity/red-team/s2.discovery/techniques/banner_grabbing.md).
+
 ```ps
 $ nmap [...] --script=banner
 $ nmap [...] --script=http-server-header.nse
@@ -540,6 +542,10 @@ Stuff that I found, but never read/used yet.
 * map the company network `nmap range -sn`
 * `--stats-every=5s` instead of space
 * sacrifice one VPS to test the firewall limits. Each time you are caught, move to another VPS and be quieter.
+
+```ps
+$ sudo nmap --script-updatedb
+```
 </div><div>
 
 Host probing

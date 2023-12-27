@@ -3,6 +3,7 @@
 [![protocolsandservers](../../../cybersecurity/_badges/thmp/protocolsandservers.svg)](https://tryhackme.com/room/protocolsandservers)
 [![networkservices](../../../cybersecurity/_badges/thmp/networkservices.svg)](https://tryhackme.com/room/networkservices)
 [![networksecurityprotocols](../../../cybersecurity/_badges/thmp/networksecurityprotocols.svg)](https://tryhackme.com/room/networksecurityprotocols)
+[![footprinting](../../../cybersecurity/_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -42,7 +43,7 @@ There are two channels in an FTP connection: a channel to send commands <small>(
 
 Once in an FTP shell, here some [commands](https://www.rfc-editor.org/rfc/rfc959) you may use:
 
-```bash
+```shell!
 ftp> pwd # path to the current folder
 ftp> ls folder # list files
 ftp> cd folder # move to folder
@@ -53,11 +54,18 @@ ftp> exit # exit
 ftp> bye # same
 ```
 
-And
+To download all files:
 
-```bash
+```ps
+$ wget -m --no-passive ftp://username:password@IP
+```
+
+And to query information about the server:
+
+```shell!
 ftp> syst # information about the system
 ftp> stat # same, but there is the version+ftp client name
+ftp> status # same as 'stat'
 ```
 
 ➡️ If `put/get` keep failing, try moving to the target folder first.
@@ -80,12 +88,13 @@ FTP may be used by hackers to find interesting files.
 ```ps
 $ ftp anonymous@IP
 ```
+
+⚠️ Don't forget `-la` for hidden files. See also: `-R`.
 </div><div>
 
 * The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s3.exploitation/index.md#password-cracking-).
 
 * **ProFTPD 1.3.5**: There was a failure that allowed users to move files from a non-mounted path to the mounted path. You could steal an id_rsa for instance.
-
 </div></div>
 
 <hr class="sep-both">
@@ -97,5 +106,9 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * `ftp -p` (passive mode, may bypass some firewall)
+* `tftp`
+* configuration (`/etc/vsftpd.conf`, `/etc/ftpusers`=deny FTP access)
+* hide usernames (`hide_ids=YES`, use `ftp:ftp`)
+* nmap `ftp-anon`, `ftp-syst`
 </div><div>
 </div></div>
