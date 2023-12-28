@@ -1,5 +1,7 @@
 # Simple Network Management Protocol (SNMP)
 
+[![footprinting](../../../cybersecurity/_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
+
 <div class="row row-cols-lg-2"><div>
 
 The Simple Network Management Protocol (SNMP) is an old protocol from 1990-2000 that is still quite used by companies to manage and monitor network devices <small>(routers, switch, firewalls...)</small>.
@@ -22,18 +24,19 @@ The goal is to ensure that network devices are operating efficiently and effecti
 
 The **Management Information Base (MIB)** 📂 is a component used to store information about network devices. This is a tree-like structure with each node called an **object** 📰 and carrying information such as:
 
+* 🔑 at least one Object Identifier (OID)
 * ✈️ the number of packet that transited by this node
 * 💦 the CPU utilization of a server
 * ...
 
-A **agent** 👮 is a module that runs on a network device and read/store information about the device inside the MIB.
+A **agent** 👮 is a module that runs on a network device and read/store information about the device inside the MIB. ⚠️ There is no data in the MIB, only definition of the types of objects and their location.
 </div><div>
 
 The **SNMP manager** 👑 is a software that retrieves data from the MIB by asking the agent associated with each device. It runs on a network management system (NMS).
 
 The SNMP manager can also send instructions to the agent to set or change the values of objects. The agent will update its associated device to match the instruction.
 
-Agents can send messages also known as "traps" without being request, for instance, when a problem is detected 🔥.
+Agents can send messages also known as "traps" without being requested, for instance, when a problem is detected 🔥.
 </div></div>
 
 <hr class="sep-both">
@@ -67,7 +70,7 @@ Once installed, open "Services" and find the SNMP service. Right-click on edit, 
 
 <div class="row row-cols-lg-2"><div>
 
-SNMPv2c is still used by some companies even if it's advised to use SNMPv3 as the latter is more secure. SNMPv2c
+SNMPv2c is the community-string based version of SNMPv2, and the only one that is still used by some companies. If it's advised to use SNMPv3 as the latter is more secure. SNMPv2c
 
 * ❌ is not scalable. Companies will experience performance problems that may lead to longer delays, and decrease the employees' efficiency.
 * ❌ is not reliable: error messages can be misinterpreted as they may be incomplete or incorrect.
@@ -112,18 +115,38 @@ Commands: `snmpget`, `snmpwalk`, `snmpset`, `snmpinform`...
 You can use `snmpwalk` to list SNMP variables from SNMP devices. Two common community strings are `public` and `private`.
 
 ```
+$ snmpwalk -v 2c -c community_string IP
 $ snmpwalk -v 2c -c community_string IP OID
 ```
 
 ➡️ The OID for sysName is `1.3.6.1.2.1.1.5.0`.
+
+#### Explore SNMP MIB
+
+Once you found a community string, you can use [braa](https://manpages.debian.org/bullseye/braa/braa.1.en.html) to list information. Without providing a pattern, the output is quite long.
+
+```
+$ sudo apt install braa
+$ braa community_string@IP:.1.3.6.*
+```
+
+You may find emails, and other useful information.
 </div><div>
 
 #### Brute force SNMPv2c community strings
+
+Common wordlists:
+
+```text!
+(common) /usr/share/metasploit-framework/data/wordlists/snmp_default_pass.txt
+(full)   /usr/share/seclists/Discovery/SNMP/snmp.txt
+```
 
 You can brute force community strings with [onesixtyone](https://github.com/trailofbits/onesixtyone) (0.4k ⭐):
 
 ```ps
 $ onesixtyone -c wordlist IP
+IP [string_found] <info>
 ```
 </div></div>
 

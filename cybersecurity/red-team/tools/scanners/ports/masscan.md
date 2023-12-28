@@ -5,7 +5,7 @@
 <div class="row row-cols-lg-2"><div class="align-self-center">
 
 * `masscan` is a fast, quite aggressive, port scanner.
-* [Masscan GitHub](https://github.com/robertdavidgraham/masscan) (22.0k ⭐)
+* [Masscan GitHub](https://github.com/robertdavidgraham/masscan) (22.1k ⭐)
 * Most options are the same as in nmap (see `masscan --nmap`)
 * It uses a TCP SYN Scan.
 </div><div>

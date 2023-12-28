@@ -23,7 +23,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-nmap <small>([nmap book](https://nmap.org/book/), [GitHub](https://github.com/nmap/nmap) 7.7k ⭐)</small> is the most popular tool to scan hosts and map a network. This includes
+nmap <small>([nmap book](https://nmap.org/book/), [GitHub](https://github.com/nmap/nmap) 8.7k ⭐)</small> is the most popular tool to scan hosts and map a network. This includes
 
 * 🔎 Detecting open ports <small>(+may find the running protocol and version)</small>
 * 📻 Guessing the host operating system
