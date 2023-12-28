@@ -7,8 +7,9 @@ The [openssl](https://www.openssl.org/) tool is a command for general-purpose cr
 * Securely connect to a remote host
 
 ```ps
-$ openssl s_client -connect hostname:port
-$ openssl s_client -connect hostname:port -starttls ftp
+$ openssl s_client -connect IP:port
+$ openssl s_client -connect IP:protocol
+$ openssl s_client -connect IP:port -starttls protocol
 ```
 </div><div>
 

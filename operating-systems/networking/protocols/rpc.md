@@ -8,6 +8,12 @@ Remote procedure call (RPC) is a protocol in which a process can communicate wit
 
 RPC can be used to find on which port is a service running. This is done by the `rpcbind` service <small>(a.k.a. `port mapper`)</small>. It takes a program number, and a version number, and respond with the port.
 </div><div>
+
+List RPC programs:
+
+```ps
+$ rpcinfo IP
+```
 </div></div>
 
 <hr class="sep-both">

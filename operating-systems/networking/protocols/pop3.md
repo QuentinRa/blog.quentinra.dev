@@ -2,6 +2,7 @@
 
 [![protocolsandservers](../../../cybersecurity/_badges/thmp/protocolsandservers.svg)](https://tryhackme.com/room/protocolsandservers)
 [![networksecurityprotocols](../../../cybersecurity/_badges/thmp/networksecurityprotocols.svg)](https://tryhackme.com/room/networksecurityprotocols)
+[![footprinting](../../../cybersecurity/_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -16,12 +17,27 @@ Post Office Protocol version 3 is a protocol that opens the box, checks if there
 It's possible to configure POP3 so that emails aren't removed, but due to how it works, mails will remain marked as "new", and the client will lose track of whether a mail was read or not.
 </div><div>
 
-```bash
+```ps
 $ telnet IP 110
 USER xxx
 PASS xxx
 STAT # find if there mails
 LIST # list new messages
 RETR 1 # retrieve the first message
+$ curl -k 'pop3s://IP' --user username:password
+$ openssl s_client -connect IP:pop3s
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* dovecot-pop3d
+* `sudo nmap IP -p110,995 -sV -sC`
+</div><div>
 </div></div>
