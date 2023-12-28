@@ -52,16 +52,17 @@ Once you found a port, refer to the [protocols](/operating-systems/networking/_k
 The most common usage in CTF is to run an initial `-sS` <small>(faster)</small> scan:
 
 ```ps
-$ sudo nmap -sS IP     # top ports
+$ sudo nmap -sS IP                     # top TCP ports
+$ sudo nmap -sU IP --top-ports=20 -vv  # top UDP ports
 ```
 
-Then, while working on the ports we found, we run:
+Then, while working on the ports we found, we may run:
 
 ```ps
 $ sudo nmap -sS IP -p-   # all TCP ports
-$ sudo nmap -sU IP -p-   # all UDP ports
-$ sudo nmap -sS -sU IP -p-   # all ports
-$ sudo nmap -sSU IP -p-      # same
+$ sudo nmap -sU IP -p-   # all UDP ports (rare)
+$ sudo nmap -sS -sU IP -p-   # all ports (very rare)
+$ sudo nmap -sSU IP -p-      # same      (very rare)
 ```
 
 However, this doesn't often work. NMap uses an [ICMP Scan](#icmp-scans) to check if the host is up, which is blocked by multiple hosts such as Windows.

@@ -17,6 +17,7 @@ Basic usage
 
 ```ps
 $ rustscan -a IP --ulimit 10000
+$ rustscan -a IP --ulimit 20000 # 10k may miss some ports
 ```
 
 ```ps

@@ -46,8 +46,8 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * DMarc
-* SPF ([SPF](https://www.digitalocean.com/community/tutorials/how-to-use-an-spf-record-to-prevent-spoofing-improve-e-mail-reliability))
-* DKim ([DKIM with postfix](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-dkim-with-postfix-on-debian-wheezy))
+* SPF ([SPF](https://www.digitalocean.com/community/tutorials/how-to-use-an-spf-record-to-prevent-spoofing-improve-e-mail-reliability), [SPF](https://dmarcian.com/what-is-spf/))
+* [DKim](http://dkim.org/) ([DKIM with postfix](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-dkim-with-postfix-on-debian-wheezy))
 * [mail-tester.com](https://www.mail-tester.com/) <small>(wait XXX hours for DNS record changes)</small>
 </div><div>
 </div></div>
