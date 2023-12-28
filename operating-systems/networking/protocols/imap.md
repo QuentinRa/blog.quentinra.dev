@@ -37,6 +37,41 @@ a LOGOUT            # logout
 
 <hr class="sep-both">
 
+## Alternatives to CLI
+
+<div class="row row-cols-lg-2"><div>
+
+#### Using cURL to fetch emails
+
+You can use cURL to fetch emails.
+
+```ps
+$ curl -k 'imaps://IP' --user username:password
+$ curl -k 'imaps://IP/INBOX?ALL' --user username:password
+$ curl -k 'imaps://IP/INBOX;MAILINDEX=1' --user username:password
+```
+</div><div>
+
+#### Using evolution to fetch emails
+
+You can use [evolution](https://en.wikipedia.org/wiki/GNOME_Evolution) to fetch emails. It's a graphical mail client.
+
+```ps
+$ sudo apt install evolution
+$ evolution
+```
+
+Configure a new mailbox.
+
+* **Step 1**: Add a random full name, and the targeted email, and optionally toggle "Don't lookup."
+* **Step 2**: Fill `server`, `port`, and `username`
+* **Step 4**: Unselect all
+* **Step 5**: Select 'None'
+* Done
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
