@@ -20,7 +20,7 @@ The server-side service that listens for clients is called a listener. Its confi
 
 <div class="row row-cols-lg-2"><div>
 
-List databases:
+List databases using brute force:
 
 ```shell!
 $ sudo nmap IP -p 1521 -sV --script oracle-sid-brute
