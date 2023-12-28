@@ -16,5 +16,6 @@ Stuff that I found, but never read/used yet.
 
 * `/etc/nginx/nginx.conf`: configuration file
 * `/var/log/nginx/`: logs
+* [lemp](https://lemp.io/)
 </div><div>
 </div></div>

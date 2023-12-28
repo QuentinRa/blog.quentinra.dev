@@ -20,7 +20,7 @@ $ mysql -u root -ppassword                  # no space
 ```
 </div><div>
 
-XXX.
+Some commands:
 
 ```sql!
 source xxx.sql;                -- import
@@ -29,7 +29,13 @@ SELECT VERSION();              -- version
 SELECT database();             -- show current database
 SHOW DATABASES;                -- list databases
 USE a_database;                -- select one
+SHOW TABLES;                   -- list tables
 ```
+
+MySQL store structural data in `information_schema`:
+
+* Tables: `SELECT table_name FROM information_schema.tables WHERE TABLE_SCHEMA='db_name';`
+* Columns: `SELECT column_name FROM information_schema.columns WHERE TABLE_SCHEMA='db_name' AND TABLE_NAME='table_name';`
 </div></div>
 
 <hr class="sep-both">
@@ -41,10 +47,5 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * `service mysql status`: check if service started
-</div><div>
-
-**MySQL**/**PostgreSQL** store structural data in `information_schema`:
-
-* Tables: `SELECT table_name FROM information_schema.tables WHERE TABLE_SCHEMA='a_db';`
-* Columns: `SELECT column_name FROM information_schema.columns WHERE TABLE_SCHEMA='a_db' AND TABLE_NAME='a_table';`
+</div><div>`
 </div></div>
