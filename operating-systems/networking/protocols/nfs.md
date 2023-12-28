@@ -1,6 +1,7 @@
 # Network File System (NFS)
 
 [![networkservices2](../../../cybersecurity/_badges/thmp/networkservices2.svg)](https://tryhackme.com/room/networkservices2)
+[![footprinting](../../../cybersecurity/_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -8,7 +9,7 @@ Network File System (NFS) is a protocol allowing a computer to mount a remote fo
 
 🐊️ **Port**: 2049 (TCP)
 
-Remote Procedure Calls (RPC) are used to exchange with the server.
+NFS is based and utilises [RPC](rpc.md) for exchanges. It uses External Data Representation (XDR) for data serialization.
 
 **List mounts** 🗺️
 
@@ -24,9 +25,9 @@ $ cat /etc/exports
 The command below will mount the remote folder `/share` inside `/tmp/share` on our machine. It means that when we browse `/tmp/share`, we will see the files inside `/share` on the remote host.
 
 ```ps
-#  sudo apt install nfs-common
+# sudo apt install nfs-common
 $ mkdir /tmp/share
-$ sudo mount -t nfs IP:/share /tmp/share/ -nolock
+$ sudo mount -t nfs IP:/share /tmp/share/ # [-nolock]
 # there is also variants (with/without vers=2): 
 # sudo mount -o rw,vers=2 IP:/share /tmp/share/
 # unmount
@@ -48,12 +49,14 @@ $ sudo umount /tmp/share
 
 ```ps
 $ nmap IP -p 2049 --script=nfs-ls,nfs-statfs,nfs-showmount
+$ sudo nmap IP -p111,2049 -sV --script nfs*
+$ sudo nmap IP -p111,2049 -sV -sC
 ```
 </div><div>
 
 * When **root_squashing** is disabled, a local root user is mapped to the remote root user, allowing them to create [SUID](/cybersecurity/red-team/s4.privesc/linux/perms.md#suidguid-bit) files.
 
-```bash
+```ps
 # on the remote host, we create a bash inside the share
 $ cp /bin/bash /share/sbash
 # on the local host
@@ -82,4 +85,10 @@ NFS
 * nfswatch
 * DoS
 </div><div>
+
+* `systemctl restart nfs-kernel-server ; exportfs`
+
+Add an export
+
+* `echo '/tmp/share  CIDR(sync,no_subtree_check)' >> /etc/exports`
 </div></div>

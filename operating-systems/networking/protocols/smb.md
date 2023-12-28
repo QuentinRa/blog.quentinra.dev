@@ -102,7 +102,7 @@ $ smbclient //IP/share_name -U Anonymous -N
 $ smbclient //IP//Anonymous -U Anonymous -N
 ```
 
-* If [RPC](rpc.md) is available, we may be able to use it to query information such as users, host information, os information, etc.
+* If [msrpc](rpc.md) is available, we may be able to use it to query information such as users, host information, os information, etc.
 
 * PsExec <small>(see [impacket](tools/impacket.md#psexec) client)</small> is a tool rely on SMB and allows administrators to run commands on Windows hosts. It may be running on the target.
 

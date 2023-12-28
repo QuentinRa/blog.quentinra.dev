@@ -20,8 +20,10 @@ RPC can be used to find on which port is a service running. This is done by the 
 
 [![footprinting](../../../cybersecurity/_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
 
+If `msrpc` is running <small>(often on port 135)</small>, we may be able to exploit it:
+
 ```shell!
-$ rpcclient -U "" --password "" 10.129.128.15
+$ rpcclient -U "" --password "" IP
 client> srvinfo # SMB Server Information
 client> netshareenumall # SMB Shares + Local Path
 client> netsharegetinfo share_name # Permissions, SID, etc.
@@ -30,7 +32,7 @@ client> queryuser <hexid>
 client> querygroup <hexid>
 ```
 
-We can use [samrdump](tools/impacket.md#samrdump) to get the same output as `enumdomusers`. If no users are found, we may still be able to find users by brute forcing hexadecimal IDs.
+We can also use [samrdump](tools/impacket.md#samrdump) to list users. If no users are found, we may still be able to find users by brute forcing hexadecimal IDs.
 
 ```ps
 $ for i in $(seq 500 1100);do rpcclient [...] -c "queryuser 0x$(printf '%x\n' $i)" | grep "User Name\|user_rid\|group_rid" && echo "";done
