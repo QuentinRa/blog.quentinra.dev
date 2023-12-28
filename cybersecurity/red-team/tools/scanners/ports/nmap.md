@@ -538,8 +538,7 @@ Stuff that I found, but never read/used yet.
 
 * `nmap --log-errors `
 * `nmap --badsum`: if answer, should be from a firewall/IDS
-* `--script-trace`
-* `mysql-enum`
+* `--script-trace`, `--open`
 * map the company network `nmap range -sn`
 * `--stats-every=5s` instead of space
 * sacrifice one VPS to test the firewall limits. Each time you are caught, move to another VPS and be quieter.

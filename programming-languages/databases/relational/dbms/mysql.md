@@ -49,5 +49,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * `service mysql status`: check if service started
+* nmap `mysql-*`
 </div><div>`
 </div></div>
