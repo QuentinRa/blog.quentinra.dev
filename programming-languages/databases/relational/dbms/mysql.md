@@ -1,5 +1,7 @@
 # MySQL 🍃
 
+[![footprinting](../../../../cybersecurity/_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
+
 <div class="row row-cols-lg-2"><div>
 
 [MySQL](https://github.com/mysql) is an open-source relational database management system. It was acquired by Oracle. There is a well-known fork called [MariaDB](mariadb.md).
