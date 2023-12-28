@@ -137,70 +137,6 @@ set transaction read write /*code/
 
 <hr class="sep-both">
 
-## DBMS-specific
-
-[![linuxstrengthtraining](../../../../cybersecurity/_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
-[![networkservices2](../../../../cybersecurity/_badges/thmp/networkservices2.svg)](https://tryhackme.com/room/networkservices2)
-[![linuxprivesc](../../../../cybersecurity/_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
-[![owasptop10](../../../../cybersecurity/_badges/thm/owasptop10.svg)](https://tryhackme.com/room/owasptop10)
-
-<div class="row row-cols-lg-2"><div>
-
-#### PostgreSQL
-
-If the service is started (`service postgresql status`), log in using:
-
-```ps
-$ psql -h SOME_IP -U root
-$ psql -h SOME_IP -U root -d database
-```
-
-#### MySQL
-
-If the service is started (`service mysql status`), log in using:
-
-```ps
-# requirement: sudo apt install default-mysql-client
-$ mysql -u <username> -p -h <ip> -P <port>
-$ mysql -u root -p
-> source xxx.sql;                # import
-> DESCRIBE table_name;           # definition of a table
-> SELECT VERSION();              # version
-> SELECT database();             # show current database
-> SHOW DATABASES;                # list databases
-> USE a_database;                # select one
-$ mysql -u root -p db < xxx.sql  # import
-```
-
-☠️ By default, there is no password for root (blank).
-
-🐲 MySQL/MariaDB default port is 3306.
-</div><div>
-
-#### MySQL or PostgreSQL
-
-**MySQL**/**PostgreSQL** store structural data in `information_schema`:
-
-* Tables: `SELECT table_name FROM information_schema.tables WHERE TABLE_SCHEMA='a_db';`
-* Columns: `SELECT column_name FROM information_schema.columns WHERE TABLE_SCHEMA='a_db' AND TABLE_NAME='a_table';`
-
-<br>
-
-#### SQLite
-
-An **SQLite** database is a file such as `users.db`. To load it ️: `sqlite3 users.db`. You can run a query from there: `sqlite3 xxx.db some_query`.
-
-* SQLite version v1 🔎: `file users.db`
-* SQLite version v2 🔎: `select sqlite_version()`
-* Dump database 🗃️: `.dump`
-* List tables 🧊: `.tables`
-* List columns 🫕: `PRAGMA table_info(some_table);`
-* Schema ✍️: `select sql from sqlite_master`
-* Help 🃏: `.help`
-</div></div>
-
-<hr class="sep-both">
-
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -213,7 +149,6 @@ Stuff that I found, but never read/used yet.
 * [learnsql](https://learnsql.com/)
 * ROLLBACK/COMMIT
 * UNION/INTERSECT/EXCEPT (same number of values in SELECT/NULL). ORDER, or LIMIT can only be applied on the whole request.
-* [SQL-specific stuff](/cybersecurity/red-team/s3.exploitation/vulns/injection/files/union_sqli.md#manual-union-based-sqli)
 </div><div>
 
 <details class="details-n">

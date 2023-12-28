@@ -15,12 +15,12 @@ The [Structured Query Language (SQL)](../sql/index.md) is the most used language
 
 Relational databases are managed by a **Database Management System** (DBMS) or RDBMS for Relational DBMS.
 
-* 💵 Oracle
-* 🍰 [PostgreSQL](../sql/index.md#dbms-specific)
-* 🐈 [MariaDB](../sql/index.md#dbms-specific)
-* 🍃 [MySQL](../sql/index.md#dbms-specific)
-* 🦐 [SQLite](../sql/index.md#dbms-specific)
-* 🐭 Microsoft SQL  Server (MSSQL)
+* 💵 [Oracle](../dbms/oracle.md)
+* 🍰 [PostgreSQL](../dbms/postgresql.md)
+* 🐈 [MariaDB](../dbms/mariadb.md)
+* 🍃 [MySQL](../dbms/mysql.md)
+* 🦐 [SQLite](../dbms/sqlite.md)
+* 🐭 [MSSQL](../dbms/mssql.md)
 * ...
 
 ➡️ You may try a few of them online at [sqliteonline](https://sqliteonline.com/). When installing a [WAMP Server](/operating-systems/cloud/webservers/apache/wamp.md), you will install a database (MariaDB or MySQL).
