@@ -1490,7 +1490,7 @@ try {
 
 #### Database
 
-You can directly interact with databases such as [SQLite](/programming-languages/databases/relational/sql/index.md#dbms-specific) or [MariaDB](/programming-languages/databases/relational/sql/index.md#dbms-specific) from your Java code while it's recommended to use APIs. You'll have to download and load a driver `java -cp ".:/path/to/driver" [...]`.
+You can directly interact with databases such as [SQLite](/programming-languages/databases/relational/dbms/sqlite.md) or [MariaDB](/programming-languages/databases/relational/dbms/mariadb.md) from your Java code while it's recommended to use APIs. You'll have to download and load a driver `java -cp ".:/path/to/driver" [...]`.
 
 ⚠️ All methods raise a [verified `SQLException`](#verified-exceptions) that needs to be handled.
 
