@@ -15,7 +15,7 @@
 [![linprivesc](../../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
 [![cowboyhacker](../../../_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 This is a [permission](/operating-systems/linux/_knowledge/index.md#users-and-permissions) on Linux allowing users to execute a file with the permission of the owner (**SUID**) or the group owner (**GUID**).
 
@@ -59,7 +59,7 @@ When exploiting a command, you will usually want to run another executable. Two 
 
 [![linprivesc](../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Capabilities are a level below SUID/GUID permissions. 
 
@@ -84,7 +84,7 @@ $ getcap -r / 2>/dev/null
 [![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![commonlinuxprivesc](../../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 If `/etc/passwd` was <s>intentionally</s> misconfigured
 

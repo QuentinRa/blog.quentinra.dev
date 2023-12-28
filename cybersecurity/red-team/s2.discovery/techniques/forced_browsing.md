@@ -13,7 +13,7 @@
 [![wgelctf](../../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
 ![nibbles](../../../_badges/htb-p/nibbles.svg)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Forced browsing is a technique in which we test URLs crafted from a list of common files/folders and we try to find something juicy.
 

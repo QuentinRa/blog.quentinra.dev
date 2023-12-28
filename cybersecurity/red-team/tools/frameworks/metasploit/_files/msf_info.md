@@ -2,7 +2,7 @@
 
 [Go back](../index.md#msfconsole)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Once you [found results](msf_search.md), you can query information about a module if you want to know more about it using either:
 

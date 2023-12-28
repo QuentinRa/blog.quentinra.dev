@@ -2,7 +2,7 @@
 
 [Go back](../index.md#meterpreter)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Linux-like commands
 

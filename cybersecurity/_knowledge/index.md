@@ -3,7 +3,7 @@
 [![beginnerpathintro](../_badges/thm/beginnerpathintro.svg)](https://tryhackme.com/room/beginnerpathintro)
 [![startingoutincybersec](../_badges/thm/startingoutincybersec.svg)](https://tryhackme.com/room/startingoutincybersec)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Cybersecurity involves securing IT systems against external threats. There are 3 categories of people:
 
@@ -26,7 +26,7 @@ There is also the 🟪 Purple team, which is a mix of both. This is a modern tea
 
 ## Terminology
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 This section regroups common terms used in red and blue teams.
 
@@ -84,7 +84,7 @@ Use a vulnerability in Windows. The exploit was created by the NSA and stolen by
 
 ## Learn 🎓
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Theoretical** 🔨
 
@@ -276,7 +276,7 @@ This is a list of blogs that I want to check out one day. There are too many pil
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [darknetdiaries](https://darknetdiaries.com/)
 </div><div>

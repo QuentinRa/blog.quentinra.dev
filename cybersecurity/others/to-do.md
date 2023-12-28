@@ -1,6 +1,6 @@
 # 👻 To-do 👻
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Stuff that I found, but never read/used yet. See also the [Blogs](/cybersecurity/_knowledge/index.md#blogs-) section.
 
@@ -24,7 +24,7 @@ GitHub Topics
 
 ## Reading articles
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 THM
 
@@ -62,7 +62,7 @@ Random
 
 ## Practice
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Web
 
@@ -181,7 +181,7 @@ https://tryhackme.com/room/retro (blaster...)
 
 ## Long list of tools
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Legend**
 
@@ -332,7 +332,7 @@ https://tryhackme.com/room/retro (blaster...)
 
 ## Specific tools
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Android**
 
@@ -366,7 +366,7 @@ https://tryhackme.com/room/retro (blaster...)
 
 ## CTFs not done
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **https://tryhackme.com/room/easyctf** 🐍🐍⭐
 

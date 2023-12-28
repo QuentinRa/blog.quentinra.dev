@@ -1,6 +1,6 @@
 # Faraday
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Faraday](https://faradaysec.com/) is a platform to facilitate security assessments, by providing a dashboard interfacing the results of many cybersecurity tools.
 
@@ -27,7 +27,7 @@ See also: [Faraday CLI](https://github.com/infobyte/faraday-cli).
 
 ## Install and configure Faraday
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can install faraday using [Docker Compose](/operating-systems/others/virtualization/docker/index.md#docker-compose-plugin):
 
@@ -75,7 +75,7 @@ By default, configuration files and logs are stored inside `~/.faraday`.
 
 ## Plugins development
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Faraday will look for plugins inside its default plugin folder, and inside the **Custom Plugin Folder** (CPF). 
 
@@ -181,7 +181,7 @@ vuln_id = createAndAddVulnWebToService(...) # a web service
 
 ## Faraday API
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Faraday API is documented in their [OpenAPI](https://docs.faradaysec.com/api-swagger/) specification, along inside the [API Server Page](https://docs.faradaysec.com/API-Server/), but some routes are missing. 
 
@@ -254,7 +254,7 @@ response = session.post(server_address + f'/_api/v3/ws/{workspace_name}/upload_r
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * internal API URL
 </div><div>

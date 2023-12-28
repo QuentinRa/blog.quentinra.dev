@@ -2,7 +2,7 @@
 
 [Go back](../index.md#windows-privilege-escalation-)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The [User Account Control (UAC)](/operating-systems/windows/_knowledge/index.md#permissions-and-users) is the equivalent of `sudo` on Linux. It's shown when administrative privileges are required, for instance, to install applications.
 

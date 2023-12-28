@@ -17,7 +17,7 @@ An excellent reference to exploit sudo: [SUDO_KILLER](https://github.com/TH3xACE
 ![nibbles](../../../_badges/htb-p/nibbles.svg)
 ![getsimplecms](../../../_badges/htb-p/getsimplecms.svg)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 If you have [administrative privileges](/operating-systems/linux/_knowledge/index.md#sudo), you can list them with:
 
@@ -51,7 +51,7 @@ User [...] may run the following commands on [...]:
 [![linprivesc](../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 If there is `env_keep += LD_PRELOAD` in the permissions displayed by `sudo -l`, then it means that the user can run some code before executing a command as administrator.
 
@@ -86,7 +86,7 @@ $ sudo LD_PRELOAD=/tmp/init.so tar
 
 ## Well-known Vulnerabilities
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### sudo before 1.8.28 (CVE-2019-14287)
 

@@ -12,7 +12,7 @@ For starter, you may use <kbd>CTRL+U</kbd> or Right-click and "View page source"
 
 [![walkinganapplication](../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 This sample of script below is fetching every HTML tag that is hidden aside from some uninteresting ones.
 
@@ -44,7 +44,7 @@ Array.from(document.querySelectorAll('*')).filter(x => {
 [![contentdiscovery](../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
 [![picklerick](../../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 To ensure you visited every page, you may want to check every link on every page. You can use this command:
 
@@ -72,7 +72,7 @@ There is also a file `robots.txt` with the pages that robots should not crawl/in
 [![picklerick](../../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
 [![wgelctf](../../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 I'm using this snippet to grab every HTML comments.
 

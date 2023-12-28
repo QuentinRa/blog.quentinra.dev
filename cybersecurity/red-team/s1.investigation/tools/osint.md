@@ -5,7 +5,7 @@
 [![contentdiscovery](../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
 [![adventofcyber4](../../../_badges/thm/adventofcyber4/day3.svg)](https://tryhackme.com/room/adventofcyber4)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Open-source intelligence (**OSINT**) is any information that you gather from public sources. Most of the tools used during investigation are OSINT tools 👑.
 

@@ -2,7 +2,7 @@
 
 [![webenumerationv2](../../../../_badges/thmp/webenumerationv2.svg)](https://tryhackme.com/room/webenumerationv2)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Gobuster](https://github.com/OJ/gobuster) (8.5k ⭐) is a popular web scanner.
 
@@ -46,7 +46,7 @@ Other options
 
 ## Special uses
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Fuzzing
 

@@ -21,7 +21,7 @@
 ![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 nmap <small>([nmap book](https://nmap.org/book/), [GitHub](https://github.com/nmap/nmap) 7.7k ⭐)</small> is the most popular tool to scan hosts and map a network. This includes
 
@@ -92,7 +92,7 @@ As the port may be protected by a firewall, we may add stealth options and use f
 
 ## Basic usage 🚸
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 nmap is quite complex. First, provide some **hosts**. We can use `scanme.nmap.org` for testing purposes. 
 
@@ -167,7 +167,7 @@ $ nmap [...] -p U:53        # UDP port 53
 
 ## Scan types 🤯
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 There are many types of scans, and we will usually use the most appropriate given the target host network architecture <small>(firewall...)</small>, and what action we want to perform <small>(detect TCP ports...)</small>.
 
@@ -279,7 +279,7 @@ $ nmap -sL -n 192.168.0/29 [...]
 
 ## Target host information 🎣
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 nmap can try to guess the [protocols](/operating-systems/networking/_knowledge/index.md#protocols) and service running on a port, along with its version. If a service has been secured, then it may not leak much information <small>(i.g. the version may be hidden...)</small>.
 
@@ -317,7 +317,7 @@ $ nmap -A [...]
 
 ## Stealth 🐈
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 nmap can send more or less stealthy by adding a timing between requests. It ranges from 0 to 5, while 0 means one request per 5 minutes <small>(paranoid (0), sneaky (1), polite (2), normal (3), aggressive (4), and insane (5))</small>. `3` is the default, `0`/`1` are usually used for stealth, `4` is used in CTFs, and `5` can be inaccurate as many packets may be lost.
 
@@ -401,7 +401,7 @@ We can exploit them to perform requests for us. Every packet has an ID that is u
 
 ## Other options 🥾
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 ##### Select a network interface
 
@@ -441,7 +441,7 @@ $ nmap [...] --packet-trace # sort of log of every request
 
 ## Nmap Scripting Engine (NSE) 📌
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 When using flags such as `-sV` or `-sC`, you are actually using [nmap scripts](https://nmap.org/book/nse-usage.html). They are categorized in 6 categories as follows:
 
@@ -488,7 +488,7 @@ $ nmap [...] --script "ftp*"
 
 ## Common scripts
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Brute force scripts
 
@@ -508,7 +508,7 @@ $ nmap IP --script "*brute*" --script-args userdb=users.lst,passdb=pass.lst
 
 ## Uncommon usages
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Banner grabbing
 
@@ -533,7 +533,7 @@ $ nmap [...] --script=http-enum
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * `nmap --log-errors `
 * `nmap --badsum`: if answer, should be from a firewall/IDS

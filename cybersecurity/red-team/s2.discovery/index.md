@@ -2,7 +2,7 @@
 
 [![activerecon](../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Discovery 🏝️, a.k.a. active recon (reconnaissance) is the second step of the pentester activities.
 
@@ -36,7 +36,7 @@ Common activities are:
 
 ## Arsenal 🌱
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Spoof User-Agent
 
@@ -77,7 +77,7 @@ During an assignment, ensure you know which hosts can be automatically scanned (
 
 ## Tools and methods 🗺️
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Scanning and enumeration
 
@@ -140,7 +140,7 @@ Websites
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * `sudo arp-scan -l -I eth0`
 * [clFrex](https://cifrex.org/)

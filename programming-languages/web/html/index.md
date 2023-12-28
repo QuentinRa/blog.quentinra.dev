@@ -523,7 +523,7 @@ These can be used on any input elements such as `<input>`.
 
 ## Accessibility
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Apple touch icon
 

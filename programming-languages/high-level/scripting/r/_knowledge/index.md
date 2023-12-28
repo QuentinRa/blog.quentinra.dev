@@ -1,6 +1,6 @@
 # R Language
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [R](https://www.r-project.org/) is primarily used for statistical computing and data analysis.
 

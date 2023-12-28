@@ -49,7 +49,7 @@ Finally, `payloadsallthethings` contains some wordlists.
 [![loginbruteforcing](../../../_badges/htb/loginbruteforcing.svg)](https://academy.hackthebox.com/course/preview/login-brute-forcing)
 [![passwordattacks](../../../_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Simple wordlists
 

@@ -6,7 +6,7 @@
 
 [Go back](../index.md)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Search engines are using bots, called **crawlers** to index websites. They go from one page to another, or from one website to another, by following links. The file **robots.txt** is listing the pages that "good" crawlers shouldn't index, along with the path to a file called **sitemap** which is literally a map of every page/resource of the websites, allowing crawlers to easily crawl the website.
 
@@ -40,7 +40,7 @@ You may also use
 
 ## Examples
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Subdomains
 

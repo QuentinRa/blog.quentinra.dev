@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Given an email, you can find whether it's in a disclosed dataset.
 

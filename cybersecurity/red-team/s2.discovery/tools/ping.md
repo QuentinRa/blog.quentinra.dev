@@ -4,7 +4,7 @@
 
 [Go back](../index.md)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Ping is usually to check if the host is up. If the host answers, it means that we can assume that the host is up, and we can interact with it.
 

@@ -1,6 +1,6 @@
 # Search Engine Optimization (SEO)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Search Engine Optimization, commonly known as SEO, is a set of practices and strategies aimed at improving the visibility and ranking of a website in search engine results pages (SERPs).
 
@@ -23,7 +23,7 @@ A few crawlers we can use to check a website:
 
 ## Basic Practices
 
-<div class="row row-cols-md-2 mt-3"><div>
+<div class="row row-cols-lg-2"><div class="mt-lg-3">
 
 #### URL/robots.txt
 
@@ -158,7 +158,7 @@ You can look for websites to generate structural data, to learn the syntax, [suc
 
 ## Performance Optimization
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Content delivery network (CDN)
 
@@ -194,7 +194,7 @@ Clients must download every image, and it slows page loading.
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [biq.cloud](https://biq.cloud/rank-intelligence/) <small>(see your website ranking for a keyword, account required)</small>
 * [woorank](https://www.woorank.com/)

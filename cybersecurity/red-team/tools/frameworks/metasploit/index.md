@@ -8,7 +8,7 @@
 [![adventofcyber4](../../../../_badges/thm/adventofcyber4/day9.svg)](https://tryhackme.com/room/adventofcyber4)
 [![metasploitframework](../../../../_badges/htb/metasploitframework.svg)](https://academy.hackthebox.com/course/preview/using-the-metasploit-framework)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The [Metasploit Framework](https://github.com/rapid7/metasploit-framework) is a penetration testing framework that you can use to test a system.
 
@@ -36,7 +36,7 @@ Scripts are divided into **modules** 📌
 
 ## msfconsole
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The `msfconsole` is a component of the metasploit framework used to search and  configure modules to exploit a vulnerability, and eventually, spawn a remote shell, which may be a meterpreter shell.
 
@@ -70,7 +70,7 @@ exploit> check opt=value opt2=value [...]
 
 ## meterpreter
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The meterpreter is one of the components of the metasploit framework. It's a reverse shell with common scripts loaded to make [Privilege escalation](/cybersecurity/red-team/s4.privesc/index.md) and [Post-exploitation](/cybersecurity/red-team/s5.post-exploitation/index.md) easier.
 
@@ -110,7 +110,7 @@ meterpreter > help # list commands that you can use
 
 ## Uncommon usages
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### Metasploit database
 
@@ -203,7 +203,7 @@ msf6> help loot
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Commands:
   * Jobs are cancellable processes (`kill`): `run -j`, `jobs`, `jobs -i 0`

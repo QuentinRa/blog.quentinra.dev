@@ -2,7 +2,7 @@
 
 [Go back](../index.md#msfconsole)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The first thing you want to do is to find exploits <small>(to perform an attack)</small> or auxiliaries <small>(to see if the target is vulnerable)</small>.
 

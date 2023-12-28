@@ -2,7 +2,7 @@
 
 [![attacking_with_ffuf](../../../_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Fuzzing refers to injecting data into something to study how it reacts. A keyword "FUZZ" is replaced with a word from a wordlist. It can be used to easily inject words in a URL, a form, or basically anything 💥.
 

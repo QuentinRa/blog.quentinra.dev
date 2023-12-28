@@ -1,6 +1,6 @@
 # Website penetration checklist
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Based on the topics in [Discovery > Tools and methods](../index.md#tools-and-methods-), a checklist would be <small>(work in-progress)</small>:
 

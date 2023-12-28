@@ -7,7 +7,7 @@
 [![redteamengagements](../../_badges/thm/redteamengagements.svg)](https://tryhackme.com/room/redteamengagements)
 [![pentestingfundamentals](../../_badges/thm/pentestingfundamentals.svg)](https://tryhackme.com/room/pentestingfundamentals)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The offensive team, also known as the red team 📕, is the team that attack the company, in a pre-defined scope, to help them harden their systems and processes.
 
@@ -52,7 +52,7 @@ Everything outside the scope is illegal. See [SANS ROE template](https://sansorg
 
 ## Methodology
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The [Cyber Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html) model identifies 7 steps in the hacking process
 
@@ -80,7 +80,7 @@ For a penetration tester, it's more something like that
 
 ## Operating system 🦘
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 We usually use a Linux distro, mostly on a VM, to practice.
 
@@ -154,7 +154,7 @@ $ sudo systemctl restart lightdm
 
 ## CTF virtual machines 🔫
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You may install a system/application on a Virtual Machine, to locally attempt to break into it or test some commands/tools.
 
@@ -203,7 +203,7 @@ The [Game of Active Directory (GOAD)](https://github.com/Orange-Cyberdefense/GOA
 
 ## Transfer files 🛅
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You will often want to transfer files between your machine, and the target. Mostly during privilege escalation and post-exploitation.
 
@@ -279,7 +279,7 @@ Moved to a separate page: [wordlists](topics/wordlists.md).
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Varonis Cyber Kill Chain
 * [cyberkillchainzmt](https://tryhackme.com/room/cyberkillchainzmt)

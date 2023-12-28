@@ -4,7 +4,7 @@
 
 [Go back](../index.md)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Shodan.io](https://www.shodan.io/) is a search engine indexing IoT devices and information such as:
 
@@ -30,7 +30,7 @@ You can even view statistics, such as the top ports used with on apache servers!
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * [THM Shodan](https://tryhackme.com/room/shodan)
 </div><div>

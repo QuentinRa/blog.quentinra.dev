@@ -1,6 +1,6 @@
 # Rustscan
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [RustScan](https://github.com/RustScan/RustScan) (11.2k ⭐) is a very fast and noisy port scanner designed for CTFs. You can scan all 65k ports in a few seconds.
 

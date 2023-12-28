@@ -2,7 +2,7 @@
 
 [![passiverecon](../../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Investigation 🔎, a.k.a. passive recon (reconnaissance) is the first step of the pentester activities.
 
@@ -50,7 +50,7 @@ Websites
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * cloud-based services and platforms investigation
 * Wireless network reconnaissance

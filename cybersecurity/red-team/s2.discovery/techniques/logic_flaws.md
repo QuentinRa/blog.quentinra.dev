@@ -4,7 +4,7 @@
 
 [![owasptop10](../../../_badges/thm/owasptop10.svg)](https://tryhackme.com/room/owasptop10)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A logic flaw occurs when a programmer thinks a user will do always as they expect, and fail to handle scenario in which they don't.
 
@@ -21,7 +21,7 @@ A more concrete example is that if the developer used an HTML `SELECT` tag with 
 
 [![authenticationbypass](../../../_badges/thmp/authenticationbypass.svg)](https://tryhackme.com/room/authenticationbypass)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The [PHP](/programming-languages/web/php/_general/index.md) variable `$_REQUEST` is sometimes used to access `$_GET` and `$_POST`. It's a merge of both, in case of conflict, `$_POST` values win.
 

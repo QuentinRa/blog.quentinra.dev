@@ -1,6 +1,6 @@
 # dirsearch
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [dirsearch](https://github.com/maurosoria/dirsearch) (10.6k ⭐) can be installed with `apt install dirsearch`, and there is an implementation in GO if you want to.
 

@@ -4,7 +4,7 @@
 
 [Go back](../index.md)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Packet tracing is a technique to find the number of hosts between us and our target. Sometimes, we may even get information about intermediate hosts 🗺️.
 

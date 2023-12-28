@@ -4,7 +4,7 @@
 
 [![subdomainenumeration](../../../_badges/thmp/subdomainenumeration.svg)](https://tryhackme.com/room/subdomainenumeration)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 A same webserver can be used to host multiple sites. Each site is identified by a domain, such as `test.example.com`. When we request a website, we need the **IP** of the webserver, and a **domain name**.
 

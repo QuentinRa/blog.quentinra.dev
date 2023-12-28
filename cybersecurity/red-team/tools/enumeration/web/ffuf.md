@@ -2,7 +2,7 @@
 
 [![attacking_with_ffuf](../../../../_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [ffuf](https://github.com/ffuf/ffuf) <small>(**f**uzz **f**aster **u** **f**ool)</small> (10.6k ⭐) is a [Fuzzing](/cybersecurity/red-team/s2.discovery/techniques/fuzzing.md) tool in Go. It was designed to be a faster and modern alternative to wfuzz.
 
@@ -66,7 +66,7 @@ $ ffuf -fs 5230 [...]    # hides responses with size=5230
 
 ## Special uses
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### vhost brute force
 

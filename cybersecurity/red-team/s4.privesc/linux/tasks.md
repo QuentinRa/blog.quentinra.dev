@@ -7,7 +7,7 @@
 [![commonlinuxprivesc](../../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 [![startup](../../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Scheduled tasks on Linux are called [cron jobs](/operating-systems/linux/_knowledge/index.md#cron-jobs). You may try [to inject some code](injection.md) for instance, using environment variables.
 

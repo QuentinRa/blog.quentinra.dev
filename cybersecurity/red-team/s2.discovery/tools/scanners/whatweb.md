@@ -1,6 +1,6 @@
 # whatweb
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [whatweb](https://github.com/urbanadventurer/WhatWeb) (4.4k ⭐) is a common webscanner used to find some common information about websites.
 

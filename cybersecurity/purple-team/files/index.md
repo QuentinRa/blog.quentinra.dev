@@ -1,6 +1,6 @@
 # File investigation
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Any file you find, be it during [Digital forensics](/cybersecurity/blue-team/topics/forensics.md) or during the red team activities, may have:
 
@@ -23,7 +23,7 @@ This is why you should investigate any file you get your hands on.
 
 [![introdigitalforensics](../../_badges/thm/introdigitalforensics.svg)](https://tryhackme.com/room/introdigitalforensics)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Any file has metadata, which is data that provides information on the file, such as the author, the creation date...
 
@@ -71,7 +71,7 @@ Software                        : www.inkscape.org
 [![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 [![c4ptur3th3fl4g](../../_badges/thm-p/c4ptur3th3fl4g.svg)](https://tryhackme.com/room/c4ptur3th3fl4g)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Steganography is a technique in which a person hides data inside the pixels of an image. It's used to secretly transfer data.
 
@@ -103,7 +103,7 @@ $ stegseek file wordlist
 
 [![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 File steganography is a subcategory of steganography in which a file is hidden in another file. Using [binwalk](https://github.com/ReFirmLabs/binwalk) (8.7k ⭐) you can investigate:
 
@@ -138,7 +138,7 @@ file.png file.zip
 
 [![c4ptur3th3fl4g](../../_badges/thm-p/c4ptur3th3fl4g.svg)](https://tryhackme.com/room/c4ptur3th3fl4g)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 You can use [Audacity](https://www.audacityteam.org/) to analyze audio files.
 
@@ -158,7 +158,7 @@ See also: [academo spectrum analyzer](https://academo.org/demos/spectrum-analyze
 
 Stuff that I found, but never read/used yet.
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 * Stegosploit
 * reverse search

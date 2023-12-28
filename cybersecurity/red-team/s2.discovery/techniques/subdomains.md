@@ -4,7 +4,7 @@
 
 [![subdomainenumeration](../../../_badges/thmp/subdomainenumeration.svg)](https://tryhackme.com/room/subdomainenumeration)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 As per the [DNS](/operating-systems/networking/protocols/dns.md) protocol, recursive servers are first queried, then the authoritative servers.
 

@@ -2,7 +2,7 @@
 
 [Go back](../index.md)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Developers often use framework to write websites faster and more easily, as they provide pre-written common features.
 

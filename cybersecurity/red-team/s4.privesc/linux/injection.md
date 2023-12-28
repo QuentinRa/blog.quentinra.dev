@@ -1,6 +1,6 @@
 # Injection
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 If there is some code that can is executed as another user, for instance, a [scheduled task](tasks.md) or a [program with the SUID bit](perms.md#suidguid-bit), you may be able to modify the code behavior using injection.
 </div><div>
@@ -18,7 +18,7 @@ There are basic scenarios in which you can directly exploit the executable, but 
 
 ## Environment variables 🌸
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### PATH
 
@@ -40,7 +40,7 @@ When the target script is executed, the `bash` command is executed instead of `l
 
 [![linuxstrengthtraining](../../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 To execute any command with filename starting with `-`, you need to use `--` such as `rm -- -la` to remove the file `-la`.
 
@@ -66,7 +66,7 @@ drwxr-xr-x 9 xxx xxx 4096 Apr 29 18:50 ..
 
 ## Bash scripts failures 🐦
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 **Bash versions <4.2-048**: it is possible to create functions named after a path, which allows us to execute a command instead. If the path is accessed by a script, then using `-p`, we can create a bash while inheriting the permissions of its creator.
 

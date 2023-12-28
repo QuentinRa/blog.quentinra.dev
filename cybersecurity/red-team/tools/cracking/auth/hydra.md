@@ -10,7 +10,7 @@
 [![cowboyhacker](../../../../_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
 [![loginbruteforcing](../../../../../cybersecurity/_badges/htb/loginbruteforcing.svg)](https://academy.hackthebox.com/course/preview/login-brute-forcing)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [Hydra](https://github.com/vanhauser-thc/thc-hydra) (7.6k ⭐) is a well-known tool to brute force authentication services such SSH, FTP, RDP, MySQL... It can even be used on login forms too, but that's uncommon.
 
@@ -54,7 +54,7 @@ $ hydra -l username -P $wordlist IP ssh -s port
 
 ## Special uses
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 #### form brute force
 

@@ -10,7 +10,7 @@
 [![agentsudoctf](../../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 [![agentt](../../../_badges/thm-p/agentt.svg)](https://tryhackme.com/room/agentt)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 After opening the network tab of your console, every HTTP request is now listed inside. You can see where the forms are sent, and examine the [headers](/operating-systems/networking/protocols/http.md#http-headers-in-web-applications) of every request.
 
@@ -34,7 +34,7 @@ $ curl -I https://example.com/
 
 ## Analyze the javascript
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 [![walkinganapplication](../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
 
@@ -50,7 +50,7 @@ You may use the console debugger, after adding a breakpoint in the JavaScript, t
 
 [![httpindetail](../../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 Refer to the [Cookie](/programming-languages/web/_general/random/cookies.md) for information on cookies.
 </div><div>

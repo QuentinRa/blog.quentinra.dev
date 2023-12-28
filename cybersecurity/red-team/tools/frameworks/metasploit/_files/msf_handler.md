@@ -2,7 +2,7 @@
 
 [![metasploitexploitation](../../../../../_badges/thmp/metasploitexploitation.svg)](https://tryhackme.com/room/metasploitexploitation)
 
-<div class="row row-cols-md-2"><div>
+<div class="row row-cols-lg-2"><div>
 
 The msfconsole can be used to catch reverse shells. Some reverse shell may be upgradable to a [meterpreter](../index.md#meterpreter), which is the main goal.
 
