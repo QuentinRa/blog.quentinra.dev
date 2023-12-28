@@ -37,6 +37,16 @@ $ impacket-samrdump IP
 ```
 </div><div>
 
+#### mssqlclient
+
+Connect to a MSSQL database.
+
+```shell!
+$ impacket-samrdump IP
+```
+
+<br>
+
 #### Dump hashes from backup
 
 Dump hashes from a backup of SAM and SYSTEM hashes.
