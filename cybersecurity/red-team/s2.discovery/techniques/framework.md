@@ -18,9 +18,9 @@ Developers often use framework to write websites faster and more easily, as they
 
 ```ps
 # Linux
-curl url/favicon.ico | md5sum
-# Windows (on a download favicon)
-Get-FileHash .\favicon.ico -Algorithm MD5
+$ curl url/favicon.ico | md5sum
+# Windows (on a downloaded favicon)
+$ Get-FileHash .\favicon.ico -Algorithm MD5
 ```
 </div><div>
 

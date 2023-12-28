@@ -290,6 +290,24 @@ $ hccapx2john out.hccapx > hash      # only for john
 
 <hr class="sep-both">
 
+## Random Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### File Checksum
+
+The same functions we use to generate hashes may also be used to generate a checksum for a file. Two identical files have the same checksum. MD5 is not reliable, but often used:
+
+```ps
+$ md5sum /etc/passwd
+$ cat /etc/passwd | md5sum
+$ Get-FileHash .\file.txt -Algorithm MD5
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
