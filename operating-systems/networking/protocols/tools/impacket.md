@@ -42,7 +42,9 @@ $ impacket-samrdump IP
 Connect to a MSSQL database.
 
 ```shell!
-$ impacket-samrdump IP
+$ impacket-mssqlclient username@IP -windows-auth
+$ impacket-mssqlclient username:password@IP -windows-auth
+SQL> exit
 ```
 
 <br>
