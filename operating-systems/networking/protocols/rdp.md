@@ -60,8 +60,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* rlogin
+* ms-wbt-server (Windows RDP implementation)
 </div><div>
-
-
 </div></div>
