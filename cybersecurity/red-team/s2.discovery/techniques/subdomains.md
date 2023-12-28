@@ -17,6 +17,7 @@ Common tools to find <small>(brute force)</small> hidden/non-public subdomains a
 * [gobuster](/cybersecurity/red-team/tools/enumeration/web/gobuster.md#subdomains-brute-force)
 * [ffuf](/cybersecurity/red-team/tools/enumeration/web/ffuf.md#subdomains-brute-force)
 * [DNSRecon](../tools/dnsrecon.md)
+* [dnsenum](../tools/dnsenum.md)
 </div><div>
 
 Common [wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md) that can be used are:

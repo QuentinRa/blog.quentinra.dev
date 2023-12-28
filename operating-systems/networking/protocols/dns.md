@@ -2,6 +2,7 @@
 
 [![dnsindetail](../../../cybersecurity/_badges/thm/dnsindetail.svg)](https://tryhackme.com/room/dnsindetail)
 [![wireshark](../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
+[![footprinting](../../../cybersecurity/_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -9,7 +10,7 @@ The Domain Name System (DNS) protocol is used to convert a **domain name** such 
 
 🐊️ **Port**: 53 (TCP/UDP)
 
-🔒 The DNS protocol is not secure. See DNS Secure (DNSSEC).
+🔒 The DNS protocol is not secure. See DNS Secure (DNSSEC). See also: DNS over TLS <small>(DoT)</small> or DNS over HTTPS <small>(DoH)</small> or DNSCrypt.
 
 DNS server servers are storing data called **DNS records**. When updated by the domain owner, it's propagated to DNS servers after some time <small>(12 hours, 24 hours, 48 hours, sometimes more)</small>.
 </div><div>
@@ -93,7 +94,7 @@ Given the FQDN `www.example.com`, `www` is the hostname, while `example.com` is 
 
 DNS mainly use [UDP](/operating-systems/networking/protocols/udp.md) for DNS queries, while it mainly use [TCP](/operating-systems/networking/protocols/tcp.md) for zone transfers or large responses. With IPV6/DNSSEC, TCP seems to be more and more used for queries too.
 
-A DNS zone represents a portion of the domain records that the DNS server manages. DNS records are stored in zone files.
+A DNS zone represents a portion of the domain records that the DNS server manages. DNS records are stored in zone files <small>(BIND format)</small>.
 
 * **Primary zones** 🌹: authoritative source for the DNS information
 * **Secondary zones** 🌿: read-only copies of the DNS records
@@ -101,12 +102,14 @@ A DNS zone represents a portion of the domain records that the DNS server manage
 The primary DNS servers are transferring changes to secondary DNS servers using what we call "Zone Transferts." There are two types of zone transfers: `AXFR` and `IXFR`.
 </div><div>
 
-⚠️ On Misconfigured DNS servers <small>(no authentication/no list of trusted hosts)</small>, we may be able to query the whole zone file.
+⚠️ On Misconfigured DNS servers <small>(no authentication/no list of trusted hosts/no RNDC Key)</small>, we may be able to query the whole zone file.
 
 ```ps
 # select the domain that you want to "fetch"
 # from the primary dns server
 $ dig axfr some_domain.com @primary_dns_server
+# return a list, we may then try axfr in each return item
+# it it doesn't work, we can try brute forcing
 ```
 
 <details class="details-n">
@@ -266,22 +269,13 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* Multiple domains can point to the same IP address
-* DNS zones
-* [An Introduction to DNS Terminology, Components, and Concepts
-  (digitalocean)](https://www.digitalocean.com/community/tutorials/an-introduction-to-dns-terminology-components-and-concepts)
-* DNS poisoning
-* DNS relay
-* DOT (DNS Over TLS)
 * DNSSEC (HTB/27180)
+* Multiple domains can point to the same IP address
+* Caching DNS Server
+* Forwarding/Relay Server
+* 3 configs (local DNS, reverse DNS, zone file)
 </div><div>
 
-Purchase domain names
-
-* [namecheap](https://nc.me/)
-* [name.com](https://www.name.com/)
-* [instantdomainsearch](https://instantdomainsearch.com/)
-* [gositestat](https://www.gositestat.com/) / [statshow](https://www.statshow.com/)
-* [dnsimple](https://dnsimple.com/) <small>(dns)</small>
-* [WWW2](https://en.wikipedia.org/wiki/Subdomain#Server_cluster)
+* `dig CH TXT version.bind IP`: CHAOS query
+* Bind9
 </div></div>

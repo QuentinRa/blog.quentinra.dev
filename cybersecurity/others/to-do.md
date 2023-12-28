@@ -224,7 +224,6 @@ https://tryhackme.com/room/retro (blaster...)
 * [whitewidow](https://github.com/WhitewidowScanner/whitewidow) (🏝💥) <small>(SQL/XSS vulnerability scanner)</small>
 * [**Beef**](https://github.com/beefproject/beef) (💥✈️🛡️) <small>(7.8k ⭐, client-side vulnerability scanner)</small>
 * host (🔎🏝) <small>(DNS lookup)</small>
-* **dnsenum** (🔎🏝) <small>(DNS lookup, vhost brute force)</small>
 * dnswalk (🔎🏝) <small>(DNS investigation)</small>
 * dnsmap  (🔎🏝) <small>(vhost brute force)</small>
 * **Netsparker** (🏝💥✈️) <small>(web vulnerability scanner)</small>
