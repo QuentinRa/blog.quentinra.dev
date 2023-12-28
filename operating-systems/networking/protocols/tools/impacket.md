@@ -34,6 +34,18 @@ List users and domains.
 
 ```shell!
 $ impacket-samrdump IP
+$ impacket-samrdump username:password@IP
+```
+
+<br>
+
+#### wmiexec
+
+Pop a powershell or run commands using [DCOM](/operating-systems/networking/protocols/dcom.md):
+
+```shell!
+$ impacket-wmiexec -shell-type powershell username:password@IP
+$ impacket-wmiexec -shell-type powershell username:password@IP "hostname"
 ```
 </div><div>
 

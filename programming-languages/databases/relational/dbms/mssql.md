@@ -46,7 +46,7 @@ The `-windows-auth` option is optional because the administrator might have set 
 
 #### Leverage WMI to access the powershell client
 
-If [WMI](/operating-systems/networking/protocols/wmi.md) is available, you can use the powershell client:
+If [WMI (DCOM)](/operating-systems/networking/protocols/wmi.md) is available, you can use the powershell client:
 
 ```shell!
 $ impacket-wmiexec username:password@IP -shell-type powershell
