@@ -203,7 +203,7 @@ The [Game of Active Directory (GOAD)](https://github.com/Orange-Cyberdefense/GOA
 
 ## Transfer files 🛅
 
-Moved to a separate page: [Files Transfer](topics/files_transfer.md).
+Moved to a separate page: [Files Transfer](topics/file_transfer.md).
 
 <hr class="sep-both">
 
