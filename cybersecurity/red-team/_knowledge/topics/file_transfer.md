@@ -29,7 +29,7 @@ We may use checksum functions/commands to check that the file was correctly tran
 
 <hr class="sep-both">
 
-## Exposing a file to others 🔒
+## Sending a file to others 🔒
 
 <i class="small">On the "host" where the file is:</i>
 
@@ -37,7 +37,7 @@ We may use checksum functions/commands to check that the file was correctly tran
 
 #### Python webserver 🐍
 
-You may try with `python2`, and `python3` if `python` is unavailable.
+Start a webserver allowing clients to download the files. You may try with `python2`, and `python3` if `python` is unavailable.
 
 ```shell!
 $ python -m http.server port # port > 1023 | expose pwd
@@ -47,7 +47,7 @@ $ sudo python -m http.server port # port <= 1023
 
 #### Upload To SMB Share
 
-You can use `copy` to upload a file to a SMB share:
+You can use `copy` to upload a file to a client SMB share:
 
 ```shell!
 PS> copy file.txt \\HOST_IP\share_name\path
@@ -76,7 +76,7 @@ ftp> bye
 
 #### Other webservers 🎡
 
-You may leverage an installed web development tool/package:
+You may leverage an installed web development tool/package to start a webserver allowing clients to download files:
 
 ```shell!
 $ php -S 127.0.0.1:8080 # php
@@ -86,7 +86,7 @@ $ http-server -p 8080   # node "http-server" package
 
 <hr class="sep-both">
 
-## Downloading an exposed file 🔑
+## Receiving/Fetching a file 🔑
 
 <i class="small">On the "client" that need the file:</i>
 
@@ -110,6 +110,17 @@ $ curl HOST_IP:port/script.sh -o /tmp/script.sh
 PS> curl HOST_IP:port/script.ps1 -o $Env:TMP/script.ps1
 PS> iws HOST_IP:port/script.ps1 -o $Env:TMP/script.ps1
 ```
+
+#### Host A Simple Upload Server
+
+Run a webserver with an upload file form, such as the one below:
+
+```ps
+$ sudo pip3 install uploadserver
+$ python3 -m uploadserver
+```
+
+And make the client use it to upload the file.
 </div><div>
 
 #### Download From SMB Share
@@ -142,16 +153,25 @@ ftp> bye
 
 <hr class="sep-both">
 
-## Other methods
+## Additional Elements
 
 <div class="row row-cols-lg-2"><div>
 
 #### services 🕳️
 
-You may use FTP/SCP/NFS/SMB/... if applicable. You can easily create a SMB server on your machine using [impacket](/operating-systems/networking/protocols/tools/impacket.md) scripts.
+You may use FTP/SCP/NFS/SMB/... if applicable.
 
 * [Simple SMB Server](/operating-systems/networking/protocols/smb.md) (Linux Host)
 * [Simple FTP Server](/operating-systems/networking/protocols/ftp.md#simple-ftp-server) (Linux Host)
+
+An alternative to SMB that uses HTTP is WebDav.
+
+```shell!
+$ sudo apt install python3-wsgidav
+$ wsgidav --host=0.0.0.0 --port=8080 --root=/tmp/smbshare --auth=anonymous
+PS> iwr -Uri "http:/IP:8080/<file>"
+PS> copy \\IP\DavWWWRoot\<file> # 👻 // didn't work
+```
 </div><div>
 
 #### netcat 🐈
