@@ -187,7 +187,7 @@ $ nc -lvp port > file.sh
 
 #### Copy-paste ✂️
 
-Copy-paste may be an option, but not every file can be copy-pasted. One trick is to encode the file using base64, copy-paste the base64 payload on a file on the target, and decode the file on the target.
+Copy-paste may be an option, but not every file can be copy-pasted. One trick is to encode the file using [base64](/tools-and-frameworks/knowledge/encoding/index.md#base64---), copy-paste the base64 payload on a file on the target, and decode the file on the target.
 </div></div>
 
 <hr class="sep-both">

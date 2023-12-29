@@ -192,13 +192,32 @@ Base64 is usually used to encode an image/..., so that we can transfer it as a s
 
 * [base64encode](https://www.base64encode.org/)
 * [base64decode](https://www.base64decode.org/)
+
+On Linux
+
+```shell!
+$ echo -n "toto" | base64
+dG90bw==
+$ cat /etc/passwd | base64 -w 0 # inline
+...
+$ echo 'dG90bw==' | base64 -d
+toto
+```
 </div><div>
 
-```bash
-$ echo "toto" | base64
-dG90bwo=
-$ echo "dG90bw=" | base64 -d
+On Windows
+
+```ps
+PS> [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes('toto'))
+dG90bw==
+PS> [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes('toto'))
+dABvAHQAbwA=
+PS> [System.Text.Encoding]::UTF8.GetString([Convert]::FromBase64String("dG90bw=="))
+PS> [IO.File]::WriteAllBytes("file", [Convert]::FromBase64String("dABvAHQAbwA="))
+PS> cat file
 toto
+PS> [Convert]::ToBase64String((Get-Content -path "someFile" -Encoding byte))
+...
 ```
 </div></div>
 

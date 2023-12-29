@@ -480,7 +480,6 @@ PS> Set-WinUserLanguageList -LanguageList  fr-FR, en-US -force
 PS> $Env:path = "$Env:path;${pwd}\bin"
 PS> $variable_name = value
 PS> foreach($item in $values){}
-PS> [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes('whoami'))
 PS> iex "$([System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String('utf16_base64_encoded')))"
 ```
 </div><div>
