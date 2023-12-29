@@ -33,6 +33,7 @@ $ openssl passwd toto # for usage in /etc/passwd
 ```ps
 $ openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365
 $ openssl req -x509 -newkey rsa:4096 -nodes -keyout key.pem -out cert.pem -days 365
+$ openssl req -x509 -newkey rsa:2048 -nodes -keyout server.pem -out cert.pem -sha256 -subj '/CN=xxx'
 $ openssl x509 -in cert.pem -text -noout
 ```
 </div></div>

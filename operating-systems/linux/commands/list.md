@@ -850,6 +850,7 @@ $ realpath ~
 ```ps
 $ zip toto.zip f0 f1 f2
 $ unzip toto.zip
+$ gunzip -S .zip toto.zip
 ```
 </div><div>
 
@@ -1653,6 +1654,7 @@ $ curl -d "key=value" [...]   # same as "--data"
 $ curl -d '{"key":"value"}' [...] # ex: json
 $ curl -A "xxx" [...]         # set user-agent
 $ curl -b "NAME=VALUE" [...]  # set cookie
+$ curl -T file [...]          # upload file using PUT
 ```
 
 POST request.
