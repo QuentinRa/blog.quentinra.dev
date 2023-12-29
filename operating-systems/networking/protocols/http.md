@@ -110,3 +110,16 @@ To see the website headers, you can use
 * `curl -I https://example.com/`
 * [Postman](https://www.postman.com/) (software)
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [User-Agents](https://useragentstring.com/pages/useragentstring.php)
+* PowerShell Class `PSUserAgent`
+</div><div>
+</div></div>

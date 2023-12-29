@@ -4,7 +4,10 @@
 
 WinRM is a protocol that if enabled, allows administrators to remotely connect to a server using a remote shell.
 
-🐊️ Port: 5985 (TCP)
+🐊️ **Ports**
+
+* 5985 (TCP, HTTP)
+* 5986 (TCP, HTTPS)
 </div><div>
 </div></div>
 

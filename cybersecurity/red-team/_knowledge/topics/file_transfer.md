@@ -188,6 +188,13 @@ $ wsgidav --host=0.0.0.0 --port=8080 --root=/tmp/smbshare --auth=anonymous
 PS> iwr -Uri "http:/IP:8080/<file>"
 PS> copy \\IP\DavWWWRoot\<file> # 👻 // didn't work
 ```
+
+We may be able to mount a drive using RDP. On Windows, in the options of the RDP client, we can configure the mapping too.
+
+```shell!
+$ rdesktop [...] -r disk:linux='/path/to/folder'
+$ xfreerdp [...] /drive:linux,/path/to/folder
+```
 </div><div>
 
 #### netcat 🐈
@@ -197,6 +204,7 @@ PS> copy \\IP\DavWWWRoot\<file> # 👻 // didn't work
 $ nc CLIENT_IP port < file.sh
 # client
 $ nc -lvp port > file.sh
+$ # --recv-only | -q 0 | --send-only
 ```
 
 <br>

@@ -147,6 +147,7 @@ Random
 Exploiting Services
 
 * [MySQL user-defined functions](https://redteamnation.com/mysql-user-defined-functions/)
+* [PrintSpoofer](https://github.com/itm4n/PrintSpoofer)
 
 Credentials
 
