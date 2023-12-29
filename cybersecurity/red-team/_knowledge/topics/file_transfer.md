@@ -57,6 +57,23 @@ PS> robocopy file.txt \\HOST_IP\share_name\path
 If guest access is not allowed, try [mounting the share](/operating-systems/networking/protocols/smb.md).
 </div><div>
 
+#### Upload To FTP Server
+
+You can use the URL `ftp://HOST_IP/<target_file_name>` with a HTTP upload tool or the [FTP](/operating-systems/networking/protocols/ftp.md) PowerShell client:
+
+```shell!
+PS> (New-Object Net.WebClient).UploadFile('ftp://X/abc', 'C:\path\to\abc')
+PS> ftp -v -n
+ftp> open IP
+ftp> USER anonymous
+password: <blank>
+ftp> dir # list files
+ftp> put <file>
+ftp> bye
+```
+
+<br>
+
 #### Other webservers 🎡
 
 You may leverage an installed web development tool/package:
@@ -105,6 +122,22 @@ PS> robocopy \\HOST_IP\share_name\file_path .
 ```
 
 If guest access is not allowed, try [mounting the share](/operating-systems/networking/protocols/smb.md).
+
+<br>
+
+#### Download From FTP Server
+
+You can use the URL `ftp://HOST_IP/<file_name>` with a HTTP client such as `wget` or the [FTP](/operating-systems/networking/protocols/ftp.md) PowerShell client:
+
+```shell!
+PS> ftp -v -n
+ftp> open IP
+ftp> USER anonymous
+password: <blank>
+ftp> dir # list files
+ftp> get <file>
+ftp> bye
+```
 </div></div>
 
 <hr class="sep-both">
@@ -116,6 +149,9 @@ If guest access is not allowed, try [mounting the share](/operating-systems/netw
 #### services 🕳️
 
 You may use FTP/SCP/NFS/SMB/... if applicable. You can easily create a SMB server on your machine using [impacket](/operating-systems/networking/protocols/tools/impacket.md) scripts.
+
+* [Simple SMB Server](/operating-systems/networking/protocols/smb.md) (Linux Host)
+* [Simple FTP Server](/operating-systems/networking/protocols/ftp.md#simple-ftp-server) (Linux Host)
 </div><div>
 
 #### netcat 🐈
@@ -144,5 +180,6 @@ Stuff that I found, but never read/used yet.
 
 * [Windows File Transfer Cheatsheet](https://infinitelogins.com/2020/09/04/windows-file-transfer-cheatsheet/)
 * [croc](https://github.com/schollz/croc)
+* [PSUpload](https://github.com/juliourena/plaintext/blob/master/Powershell/PSUpload.ps1)
 </div><div>
 </div></div>

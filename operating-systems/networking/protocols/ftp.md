@@ -99,6 +99,24 @@ $ ftp anonymous@IP
 
 <hr class="sep-both">
 
+## Random Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### Simple FTP Server
+
+You can use `pyftpdlib`:
+
+```shell!
+$ sudo apt install python3-pyftpdlib
+$ python3 -m pyftpdlib --port 21
+$ python3 -m pyftpdlib --port 21 --write
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
