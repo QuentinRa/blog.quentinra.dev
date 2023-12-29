@@ -44,6 +44,17 @@ $ python -m http.server port # port > 1023 | expose pwd
 $ python [...] --directory /path/to/server/root
 $ sudo python -m http.server port # port <= 1023
 ```
+
+#### Upload To SMB Share
+
+You can use `copy` to upload a file to a SMB share:
+
+```shell!
+PS> copy file.txt \\HOST_IP\share_name\path
+PS> robocopy file.txt \\HOST_IP\share_name\path
+```
+
+If guest access is not allowed, try [mounting the share](/operating-systems/networking/protocols/smb.md).
 </div><div>
 
 #### Other webservers 🎡
@@ -84,9 +95,16 @@ PS> iws HOST_IP:port/script.ps1 -o $Env:TMP/script.ps1
 ```
 </div><div>
 
-**To-do** 👻
+#### Download From SMB Share
 
-* `copy`/`robocopy ` command to upload/download (SMB?) files
+You can use `copy` to download a file from a share:
+
+```shell!
+PS> copy \\HOST_IP\share_name\file_path
+PS> robocopy \\HOST_IP\share_name\file_path .
+```
+
+If guest access is not allowed, try [mounting the share](/operating-systems/networking/protocols/smb.md).
 </div></div>
 
 <hr class="sep-both">

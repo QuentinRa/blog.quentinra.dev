@@ -65,16 +65,24 @@ $ smbget -R //IP/share_name
 
 You can use [impacket](tools/impacket.md) to create a SMB server on your machine using a script. But, when the script is terminated, the server is terminated too.
 
-**Copy a file to a SMB share**
+**Copy a file from/to a SMB share**
 
 ```shell!
-PS> copy file \\IP\share # using current user credentials
+PS> # use current user credentials to log in
+PS> copy \\IP\share\file # Download
+PS> copy file \\IP\share # Upload
+```
+
+You can mount the share as a network drive (`s:`) if you need to use different credentials. This will make `copy` use these credentials.
+
+```shell!
+PS> net use s: \\IP\share_name /user:username password
 ```
 </div></div>
 
 <hr class="sep-both">
 
-## SMB vulnerabilities ☠️
+## SMB Pentester Notes ☠️
 
 [![kenobi](../../../cybersecurity/_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
 
