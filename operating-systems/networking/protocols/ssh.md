@@ -2,6 +2,7 @@
 
 [![protocolsandservers2](../../../cybersecurity/_badges/thmp/protocolsandservers2.svg)](https://tryhackme.com/room/protocolsandservers2)
 [![linux2](../../../cybersecurity/_badges/thm/linux2.svg)](https://tryhackme.com/room/linux2)
+[![footprinting](../../../cybersecurity/_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -38,6 +39,14 @@ A hacker want to access the target host, and compromise it.
 
 * The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s3.exploitation/index.md#password-cracking-).
 </div><div>
+
+* Run [ssh-audit](https://github.com/jtesta/ssh-audit) <small>(2.9k ⭐)</small>
+
+* Use `-v` to detect allowed authentication modes and force one that is convenient for us.
+
+```ps
+$ ssh [...] -v -o PreferredAuthentications=password
+```
 </div></div>
 
 <hr class="sep-both">
@@ -59,6 +68,7 @@ Stuff that I found, but never read/used yet.
   * `PermitRootLogin no`
   * `PubkeyAuthentication yes`
   * `PasswordAuthentication no`
+  * [Hardening](https://www.ssh-audit.com/hardening_guides.html)
 * `sudo systemctl restart sshd`
 * `ssh-copy-id username@server`: add to remote server our public key
 </div></div>
