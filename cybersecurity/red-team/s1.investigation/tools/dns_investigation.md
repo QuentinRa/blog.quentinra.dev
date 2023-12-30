@@ -2,6 +2,7 @@
 
 [![passiverecon](../../../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
 [![footprinting](../../../_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
+[![web_information_gathering](../../../_badges/htb/web_information_gathering.svg)](https://academy.hackthebox.com/course/preview/information-gathering---web-edition)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -41,7 +42,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* [netcraft search DNS](https://searchdns.netcraft.com/)
+* netcraft [search DNS](https://searchdns.netcraft.com/) or [sitereport](https://sitereport.netcraft.com)
 * [virus total domain details](https://www.virustotal.com/gui/domain/example.com/details) (+Relations tab)
 * [domain.glass](https://domain.glass/)
 </div><div>
