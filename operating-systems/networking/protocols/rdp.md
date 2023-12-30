@@ -1,12 +1,13 @@
 # Remote Desktop Protocol (RDP)
 
 [![windowsfundamentals](../../../cybersecurity/_badges/htb/windowsfundamentals.svg)](https://academy.hackthebox.com/course/preview/windows-fundamentals)
+[![footprinting](../../../cybersecurity/_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
 
 <div class="row row-cols-lg-2"><div>
 
 Remote Desktop Protocol (RDP) is a protocol used to access a  desktop with a graphical interface from another computer over a network connection.
 
-🐊️ **Port**: 3389 (TCP)
+🐊️ **Port**: 3389 <small>(TCP or rarely UDP)</small>
 
 On Windows, there is the built-in Windows RDP Client: `mstsc.exe`.
 
@@ -14,7 +15,7 @@ There is [rdesktop](https://github.com/rdesktop/rdesktop) (1.1k ⭐).
 
 There is [FreeRDP](https://github.com/FreeRDP/FreeRDP) (7.5k ⭐), and there is a graphical version too [xfreerdp-gui](https://github.com/wyllianbs/xfreerdp-gui) (29 ⭐).
 
-```ps
+```shell!
 $ xfreerdp /u:username /p:password /v:IP
 $ xfreerdp /dynamic-resolution +clipboard /cert:ignore /v:IP /u:x /p:y
 ```
@@ -33,7 +34,7 @@ There is [Remmina](https://github.com/FreeRDP/Remmina) (1.9k ⭐, `apt install r
 
 <hr class="sep-both">
 
-## RDP vulnerabilities ☠️
+## RDP Pentester Notes ☠️
 
 [![passwordattacks](../../../cybersecurity/_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
 
@@ -50,6 +51,15 @@ $ python3 RDPassSpray.py [...] -d domain
 $ python3 RDPassSpray.py [...] -T rdp_servers.lst
 ```
 </div><div>
+
+* Using [nmap](/cybersecurity/red-team/tools/scanners/ports/nmap.md) to run scripts
+
+```ps
+$ # nmap RDP cookies are leaving traces (--packet-trace)
+$ sudo nmap -sV -sC -p 3389 --script rdp* 10.129.201.248
+```
+
+* [rdp-sec-check.pl](https://github.com/CiscoCXSecurity/rdp-sec-check) <small>(0.2k ⭐, 2021 🪦)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -61,5 +71,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * ms-wbt-server (Windows RDP implementation)
+* [Network Level Authentication (NLA)](https://en.wikipedia.org/wiki/Remote_Desktop_Services#Network_Level_Authentication)
 </div><div>
 </div></div>
