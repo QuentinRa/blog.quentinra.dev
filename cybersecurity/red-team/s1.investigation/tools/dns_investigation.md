@@ -11,7 +11,7 @@ You can use the commands [nslookup](/operating-systems/networking/protocols/dns.
 
 You can also check [DNSRecon](/cybersecurity/red-team/s2.discovery/tools/dnsrecon.md), but it's mainly used during discovery.
 
-➡️ Find attack vectors: domains, subdomains, mail servers...
+➡️ Find attack vectors: domains, subdomains, mail servers... They may also expose, with the TXT records, third-party apps and services.
 
 <br>
 
@@ -43,5 +43,6 @@ Stuff that I found, but never read/used yet.
 
 * [netcraft search DNS](https://searchdns.netcraft.com/)
 * [virus total domain details](https://www.virustotal.com/gui/domain/example.com/details)
+* [domain.glass](https://domain.glass/)
 </div><div>
 </div></div>

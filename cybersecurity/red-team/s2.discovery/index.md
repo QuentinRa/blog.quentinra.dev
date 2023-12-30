@@ -149,6 +149,7 @@ Stuff that I found, but never read/used yet.
 * `sudo arp-scan -l -I eth0`
 * [clFrex](https://cifrex.org/)
 * find S3 Buckets `awscli` (https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html, [![contentdiscovery](../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery))
+* S3 buckets (AWS), blobs (Azure), cloud storage (GCP): may be accessible without auth [grayhatwarfare](https://grayhatwarfare.com/)
 * OS fingerprinting
   * Use service version format
   * Use default TTL

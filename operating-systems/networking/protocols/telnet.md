@@ -26,4 +26,6 @@ GET / HTTP/1.1
 Host: example.com
 # leave two blank lines (press ENTER twice)
 ```
+
+To exit, use `CTRL+]` then `CTRL+D` or `exit`/`quit`.
 </div></div>

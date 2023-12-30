@@ -80,6 +80,7 @@ A few common options:
 * `-p`: don't scan all ports twice, use `-p` to specify which one you want nmap to further analyze
 * `-sV`: try to dig service names and versions
 * `-sC`: run default scripts to find some vulnerabilities
+* `-sCV -A`: mainly in CTFs for maximum information
 * `-oA`: store results
 
 As the port may be protected by a firewall, we may add stealth options and use firewall detection or by-pass techniques.

@@ -16,7 +16,7 @@ It involves gathering information about the target from afar 👓️, meaning wi
 
 Common activities:
 
-* 🧑‍💻 Learn more about the company <small>(roles, services...)</small>, the programming languages and software they use...
+* 🧑‍💻 Learn more about the company <small>(roles, services...)</small>, the technologies, programming languages and software they use...
 
 * 🐟 Find a potential attack vector
 
