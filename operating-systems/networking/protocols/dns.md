@@ -208,6 +208,20 @@ example.com.    0  IN  AAAA 2606:2800:220:1:248:1893:25c8:1946
 You can also add options: `+stats +trace +nodnssec`.
 </div><div>
 
+#### `host`: domain lookup
+
+The `host` command is very similar to `dig`.
+
+```ps
+$ host -t ANY example.com
+example.com has address <IPV4>
+example.com has XXX record [...]
+example.com has IPv6 address <IPV6>
+example.com name server a.iana-servers.net.
+$ host -v -t ANY example.com
+# similar output as dig
+```
+
 #### `nslookup`: ip/domain lookup
 
 This tool is quite similar to dig.

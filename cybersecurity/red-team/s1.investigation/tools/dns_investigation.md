@@ -1,8 +1,7 @@
 # DNS analysis
 
 [![passiverecon](../../../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
-
-[Go back](../index.md)
+[![footprinting](../../../_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -23,7 +22,7 @@ You can use [whois](/operating-systems/networking/protocols/dns.md#whois-domain-
 ➡️ Find a (human) target to attack.
 </div><div>
 
-#### Certificates
+#### Certificate Transparency
 
 [![subdomainenumeration](../../../_badges/thmp/subdomainenumeration.svg)](https://tryhackme.com/room/subdomainenumeration)
 

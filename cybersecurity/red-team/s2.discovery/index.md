@@ -70,6 +70,10 @@ We usually don't only rely on our web browser to recon/exploit websites, as they
 Automated scans can impact the network.
 
 During an assignment, ensure you know which hosts can be automatically scanned (e.g., using Nessus) and which hosts should be excluded and manually tested.
+
+When discovering something, it's important to question why we discovered something, e.g. why is this service present/enabled.
+
+According to the kind of business, we may be able to guess their needs, and also guess some services that should be present.
 </div><div>
 </div></div>
 

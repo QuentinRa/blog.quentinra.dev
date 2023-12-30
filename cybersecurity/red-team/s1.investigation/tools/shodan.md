@@ -2,19 +2,17 @@
 
 [![passiverecon](../../../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
 
-[Go back](../index.md)
-
 <div class="row row-cols-lg-2"><div>
 
-[Shodan.io](https://www.shodan.io/) is a search engine indexing IoT devices and information such as:
+[Shodan.io](https://www.shodan.io/) is a search engine indexing IoT devices and information:
 
-* ⚒️ apps running on it
-* 🌍 the webserver running on it <small>(apache/...)</small>
-* 🗺️ the location
-* 🔓 open ports
+* ⚒️ The apps running on it
+* 🌍 The webserver <small>(e.g., Apache)</small> running on it
+* 🗺️ The server location
+* 🔓 Any open ports
 * ... 
 
-You can even view statistics, such as the top ports used with on apache servers!
+You can even query statistics, such as, given a web server, which are the top ports commonly open.
 </div><div>
 
 **Where to learn?** 🎓
@@ -33,6 +31,11 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [THM Shodan](https://tryhackme.com/room/shodan)
+
+```ps
+$ shodan init <api key>
+$ shodan host example.com
+```
 </div><div>
 
 
