@@ -173,8 +173,9 @@ for nameserver in resolver.nameservers:
 #### `dig`: ip/domain lookup
 
 [![introtonetworking](../../../cybersecurity/_badges/thm/introtonetworking.svg)](https://tryhackme.com/room/introtonetworking)
+[![web_information_gathering](../../../cybersecurity/_badges/htb/web_information_gathering.svg)](https://academy.hackthebox.com/course/preview/information-gathering---web-edition)
 
-You can give a domain name, or an IP (`-x`).
+You can give a domain name, or an IP (`-x`). The request type `ANY` is deprecated since RFC8482 ⚠️.
 
 ```ps
 $ dig example.com
@@ -242,7 +243,7 @@ $ nslookup -type=A example.com 1.1.1.1
 [![introtonetworking](../../../cybersecurity/_badges/thm/introtonetworking.svg)](https://tryhackme.com/room/introtonetworking)
 [![adventofcyber4](../../../cybersecurity/_badges/thm/adventofcyber4/day3.svg)](https://tryhackme.com/room/adventofcyber4)
 
-You can also use [their website](https://www.whois.com/whois/) or [domaintools](https://whois.domaintools.com/).
+You can also use [their website](https://www.whois.com/whois/) or [domaintools](https://whois.domaintools.com/). Whois is a protocol using port 43. Use [sysinternals whois](https://docs.microsoft.com/en-gb/sysinternals/downloads/whois) on Windows.
 
 ```ps
 $ whois example.com
@@ -290,6 +291,7 @@ Stuff that I found, but never read/used yet.
 * 3 configs (local DNS, reverse DNS, zone file)
 </div><div>
 
+* Record Classes (Internet, Hesiod, Chaos)
 * `dig CH TXT version.bind IP`: CHAOS query
 * Bind9
 </div></div>

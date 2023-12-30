@@ -22,7 +22,7 @@ You can use [whois](/operating-systems/networking/protocols/dns.md#whois-domain-
 ➡️ Find a (human) target to attack.
 </div><div>
 
-#### Certificate Transparency
+#### Certificate Transparency (CT)
 
 [![subdomainenumeration](../../../_badges/thmp/subdomainenumeration.svg)](https://tryhackme.com/room/subdomainenumeration)
 
@@ -42,7 +42,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [netcraft search DNS](https://searchdns.netcraft.com/)
-* [virus total domain details](https://www.virustotal.com/gui/domain/example.com/details)
+* [virus total domain details](https://www.virustotal.com/gui/domain/example.com/details) (+Relations tab)
 * [domain.glass](https://domain.glass/)
 </div><div>
 </div></div>

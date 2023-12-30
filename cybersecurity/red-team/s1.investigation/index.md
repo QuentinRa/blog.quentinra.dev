@@ -42,6 +42,10 @@ Common activities:
 Websites
 
 * [Wayback machine](tools/wayback.md) 🐟: see previous versions of the website
+
+Others
+
+* [TheHarvester](tools/theHarvester.md) (Automated OSINT+DNS checking)
 </div></div>
 
 <hr class="sep-both">

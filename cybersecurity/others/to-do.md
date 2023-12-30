@@ -251,7 +251,6 @@ https://tryhackme.com/room/retro (blaster...)
 * [**Burp Collaborator client**](https://portswigger.net/burp/documentation/desktop/tools/collaborator-client) (🃏) <small>(server for SSRF/XXE/...)</small>
 * [requestbin](https://requestbin.com/) (🃏) <small>(HTTP endpoint for inspection)</small>
 * [**fierce**](https://github.com/mschwager/fierce) (🏝) <small>(DNS)</small>
-* **theHarvester** (🔎🏝) <small>(OSINT including ports and banners)</small>
 * recon-ng (🔎) <small>(reconnaissance framework)</small>
 * Archive.is (🔎) <small>(web archive)</small>
 * CommonCrawl (🔎) <small>(web crawler)</small>
