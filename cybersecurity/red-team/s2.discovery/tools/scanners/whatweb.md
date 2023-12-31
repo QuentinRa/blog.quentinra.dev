@@ -1,5 +1,7 @@
 # whatweb
 
+[![web_information_gathering](../../../../_badges/htb/web_information_gathering.svg)](https://academy.hackthebox.com/course/preview/information-gathering---web-edition)
+
 <div class="row row-cols-lg-2"><div>
 
 [whatweb](https://github.com/urbanadventurer/WhatWeb) <small>(4.9k ⭐, 2022 ☠️)</small> is a common webscanner used to find some common information about websites.

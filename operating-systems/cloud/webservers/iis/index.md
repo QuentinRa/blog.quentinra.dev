@@ -15,6 +15,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * `%WinDir%\System32\Inetsrv\Config\ApplicationHost.config`: configuration file
+* Window Version to infer IIS version (default one)
 </div><div>
 
 

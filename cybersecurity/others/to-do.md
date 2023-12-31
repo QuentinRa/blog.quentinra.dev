@@ -211,7 +211,6 @@ https://tryhackme.com/room/retro (blaster...)
 * [hackertarget](https://hackertarget.com/)  (🏝) <small>(port scanning, traceroute, and reverse IP)</small>
 * [**Raccoon**](https://github.com/evyatarmeged/Raccoon) (🏝) <small>(subdomain, OSINT)</small>
 * [**Photon**](https://github.com/s0md3v/Photon) (🏝) <small>(web enumeration, subdomains)</small>
-* aquatone (🏝) <small>(visual web scrapping, subdomains)</small>
 * **Hping3** (💥) <small>(firewall bypass, port/os scanning, -S -p SA/RA --flood)</small>
 * QualysGuard (🔎🔑✈️) <small>(cloud-based vulnerability scanner)</small>
 * **Acunetix** (🔎💥) <small>(web vulnerability scanner)</small>

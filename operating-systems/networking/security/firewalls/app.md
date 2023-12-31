@@ -26,5 +26,11 @@ Stuff that I found, but never read/used yet.
 
 * [identYwaf](https://github.com/stamparm/identYwaf)
 * `Cloudflare`, `Fortinet`, `Imperva`...
+* [wafw00f](https://github.com/EnableSecurity/wafw00f) (WAF fingerprinting tool)
+
+```ps
+$ sudo apt install wafw00f -y
+$ wafw00f -v example.com
+```
 </div><div>
 </div></div>

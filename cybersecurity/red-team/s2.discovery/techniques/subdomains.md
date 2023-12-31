@@ -1,7 +1,5 @@
 # Subdomains
 
-[Go back](../index.md)
-
 [![subdomainenumeration](../../../_badges/thmp/subdomainenumeration.svg)](https://tryhackme.com/room/subdomainenumeration)
 
 <div class="row row-cols-lg-2"><div>
@@ -33,4 +31,6 @@ deepmagic.com-prefixes-top500.txt    shubs-stackoverflow.txt                    
 dns-Jhaddix.txt                      shubs-subdomains.txt
 fierce-hostlist.txt                  sortedcombined-knock-dnsrecon-fierce-reconng.txt
 ```
+
+Once you found a list, you may use [aquatone](../tools/aquatone.md).
 </div></div>
