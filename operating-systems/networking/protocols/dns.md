@@ -89,6 +89,7 @@ Given the FQDN `www.example.com`, `www` is the hostname, while `example.com` is 
 ## DNS Internals
 
 [![dnsenumerationusingpython](../../../cybersecurity/_badges/htb/dnsenumerationusingpython.svg)](https://academy.hackthebox.com/course/preview/dns-enumeration-using-python)
+[![web_information_gathering](../../../cybersecurity/_badges/htb/web_information_gathering.svg)](https://academy.hackthebox.com/course/preview/information-gathering---web-edition)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -111,6 +112,8 @@ $ dig axfr some_domain.com @primary_dns_server
 # return a list, we may then try axfr in each return item
 # it it doesn't work, we can try brute forcing
 ```
+
+You can try it [online](https://hackertarget.com/zone-transfer/) or with [zonetransfer.me](https://digi.ninja/projects/zonetransferme.php).
 
 <details class="details-n">
 <summary>Sample Python Script For Subdomain Enumeration Using Zone Transfer On A Vulnerable DNS</summary>
@@ -294,4 +297,11 @@ Stuff that I found, but never read/used yet.
 * Record Classes (Internet, Hesiod, Chaos)
 * `dig CH TXT version.bind IP`: CHAOS query
 * Bind9
+
+```shell!
+$ dig axfr domain @IP > /tmp/list.dig
+$ cat /tmp/list.dig | column -t | cut -d ' ' -f1 | grep '\.' | sed 's/\.$//' > /tmp/list.dig.clean
+$ cat /tmp/list.dig.clean | while read x ; do dig ANY $x ; done > /tmp/domains.dig
+$ grep -v '^;' /tmp/domains.dig | grep -v '^$' > /tmp/domains.dig.clean
+```
 </div></div>

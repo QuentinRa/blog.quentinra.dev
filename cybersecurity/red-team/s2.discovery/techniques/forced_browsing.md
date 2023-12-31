@@ -30,6 +30,7 @@ Most tools, namely web scanners, are used with [wordlists](/cybersecurity/red-te
 /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
 /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 /usr/share/wordlists/dirb/extensions_common.txt
+/usr/share/seclists/Discovery/Web-Content/raft-small-directories-lowercase.txt
 ```
 </div><div>
 

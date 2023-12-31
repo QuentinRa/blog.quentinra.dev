@@ -71,6 +71,7 @@ Users may generate a password based on the environment they are in. [CeWL](https
 ```ps
 $ cewl -w output.lst -d depth -m word_size URL
 $ cewl -w output.lst -d depth -m word_size -e URL
+$ cewl -w output.lst -m5 --lowercase URL
 ```
 
 <br>

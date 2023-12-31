@@ -1,7 +1,5 @@
 # Virtual hosts
 
-[Go back](../index.md)
-
 [![subdomainenumeration](../../../_badges/thmp/subdomainenumeration.svg)](https://tryhackme.com/room/subdomainenumeration)
 
 <div class="row row-cols-lg-2"><div>

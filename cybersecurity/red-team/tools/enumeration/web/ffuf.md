@@ -74,6 +74,7 @@ For [vhosts brute force](/cybersecurity/red-team/s2.discovery/techniques/vhosts.
 
 ```ps
 $ ffuf -w wordlist -H "Host: FUZZ.example.com" -u example.com
+$ ffuf -w wordlist -H "Host: FUZZ.example.com" -u http://IP
 ```
 
 ⚠️ Similar responses are most likely the same answer (failure).
