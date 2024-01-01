@@ -26,7 +26,7 @@ Scripts are divided into **modules** 📌
 * **Payloads**: the data sent to perform the attack
     * Single/inline/stageless payloads <small>(1 exchange)</small>
     * Staged payloads <small>(2 exchanges)</small>
-    * See [msfvenom](/cybersecurity/red-team/s3.exploitation/shell/msfvenom.md) for details and payload creation.
+    * See [msfvenom](/cybersecurity/red-team/s3.exploitation/shell/tools/msfvenom.md) for details and payload creation.
 * **Exploits**: code exploiting a vulnerability
 * Encoders/Evasion/NOPs
 * **Post**: scripts that you can use once on the target
