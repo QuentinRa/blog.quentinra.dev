@@ -161,18 +161,22 @@ MIME type/Content Type
 /usr/share/seclists/Miscellaneous/web/content-type.txt
 ```
 
-Extensions
+➡️ See also: [Extension Wordlists](#extensions).
+
+<br>
+
+#### Forced Browsing
+
+Sorted by recommended order of usage.
 
 ```text!
-/usr/share/seclists/Discovery/Web-Content/web-extensions.txt
-/usr/share/seclists/Discovery/Web-Content/web-extensions-big.txt
+/usr/share/wordlists/dirb/common.txt
+/usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+/usr/share/seclists/Discovery/Web-Content/raft-small-directories-lowercase.txt
 ```
 
-Shells per language/extension
-
-```shell!
-$ ll "/usr/share/payloadsallthethings/Upload Insecure Files/"
-```
+➡️ See also: [Extension Wordlists](#extensions).
 </div><div>
 
 #### Accounts
@@ -198,6 +202,26 @@ $ ll /usr/share/seclists/Passwords/Default-Credentials/*passlist.txt
 ```
 
 📚 You may also use short username/password wordlists.
+</div></div>
+
+<hr class="sep-both">
+
+## Minor Wordlists Index
+
+<div class="row row-cols-lg-2"><div>
+
+#### Extensions
+
+Mostly bad extensions <small>(no `.jpeg` or normal extensions)</small>
+
+```text!
+/usr/share/wordlists/dirb/extensions_common.txt
+/usr/share/seclists/Discovery/Web-Content/web-extensions.txt
+/usr/share/seclists/Discovery/Web-Content/web-extensions-big.txt
+```
+</div><div>
+
+...
 </div></div>
 
 <hr class="sep-both">

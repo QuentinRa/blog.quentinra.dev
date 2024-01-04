@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[dirsearch](https://github.com/maurosoria/dirsearch) (10.6k ⭐) can be installed with `apt install dirsearch`, and there is an implementation in GO if you want to.
+[dirsearch](https://github.com/maurosoria/dirsearch) (10.7k ⭐) can be installed with `apt install dirsearch`, and there is an implementation in GO if you want to.
 
 ```ps
 $ dirsearch -u URL # use default wordlist
@@ -23,4 +23,6 @@ You can append some extensions
 $ dirsearch [...] -e php
 $ dirsearch [...] -e php,html
 ```
+
+Refer to [wordlists#forced browsing](/cybersecurity/red-team/_knowledge/topics/wordlists.md#forced-browsing) for wordlists.
 </div></div>

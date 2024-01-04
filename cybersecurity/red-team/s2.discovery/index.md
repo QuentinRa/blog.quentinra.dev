@@ -109,9 +109,9 @@ Websites
 * [Static analysis](techniques/websites/sanalysis.md) 🚪🔥🔑: comments, hidden code...
 * [Dynamic analysis](techniques/websites/danalysis.md) 🚪🔥🔑: JavaScript, headers...
 * [Forced Browsing](techniques/websites/forced_browsing.md) 🚪🔑: find hidden pages/folders
-* [IDOR](techniques/idor.md) 🚪🔑: find if you can access someone else content
-* [Framework detection](techniques/framework.md) 🚪🔥: find the framework in use - if any
-* [Logic flaws](techniques/logic_flaws.md) 🚪: find logic flaws
+* [IDOR](techniques/websites/idor.md) 🚪🔑: find if you can access someone else content
+* [Framework detection](techniques/websites/framework.md) 🚪🔥: find the framework in use - if any
+* [Logic flaws](techniques/websites/logic_flaws.md) 🚪: find logic flaws
 * [Account discovery](techniques/account.md) 🔑: find accounts
 * [Virtual hosts](techniques/vhosts.md) 🚪: find virtual hosts
 * [Subdomains](techniques/subdomains.md) 🚪: find subdomains

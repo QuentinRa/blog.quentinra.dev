@@ -4,12 +4,11 @@
 
 [wfuzz](https://github.com/xmendez/wfuzz) (5.4k ⭐) is a [Fuzzing](/cybersecurity/red-team/s2.discovery/techniques/fuzzing.md) tool in Python. There are new modern alternatives, and it has not been updated since 2020.
 
-Example
+Examples
 
 ```ps
-$ wfuzz -w wordlist -u URL/FUZZ # Forced browsing
-$ wfuzz -w wordlist URL/account?id=FUZZZ # GET
-$ wfuzz -w wordlist -d "xxx=yyy" URL/login.php # POST
+$ wfuzz -w wordlist URL/account?id=FUZZZ        # GET
+$ wfuzz -w wordlist -d "xxx=FUZZ" URL/login.php # POST
 # ...
 ```
 
@@ -34,4 +33,20 @@ $ wfuzz -w wordlist --hc 404,500 xxx.tld/account?id=FUZZ
 # show only 200
 $ wfuzz -w wordlist --sc 200 xxx.tld/account?id=FUZZ
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Special uses
+
+<div class="row row-cols-lg-2"><div>
+
+#### Forced Browsing
+
+For [forced browsing](/cybersecurity/red-team/s2.discovery/techniques/websites/forced_browsing.md), you can use:
+
+```ps
+$ wfuzz -w wordlist -u URL/FUZZ # Forced browsing
+```
+</div><div>
 </div></div>

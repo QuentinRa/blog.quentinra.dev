@@ -5,7 +5,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[Gobuster](https://github.com/OJ/gobuster) (8.5k ⭐) is a popular web scanner.
+[Gobuster](https://github.com/OJ/gobuster) (8.6k ⭐) is a popular web scanner. [wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md#forced-browsing).
 
 ```ps
 $ gobuster dir -u URL -w wordlist

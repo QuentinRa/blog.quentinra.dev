@@ -1,6 +1,6 @@
 # Logic flaws
 
-[![owasptop10](../../../_badges/thm/owasptop10.svg)](https://tryhackme.com/room/owasptop10)
+[![owasptop10](../../../../_badges/thm/owasptop10.svg)](https://tryhackme.com/room/owasptop10)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -17,7 +17,7 @@ A more concrete example is that if the developer used an HTML `SELECT` tag with 
 
 ## PHP $_REQUEST logic flaw
 
-[![authenticationbypass](../../../_badges/thmp/authenticationbypass.svg)](https://tryhackme.com/room/authenticationbypass)
+[![authenticationbypass](../../../../_badges/thmp/authenticationbypass.svg)](https://tryhackme.com/room/authenticationbypass)
 
 <div class="row row-cols-lg-2"><div>
 

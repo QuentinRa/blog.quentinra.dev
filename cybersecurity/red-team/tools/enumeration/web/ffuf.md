@@ -9,11 +9,11 @@
 Common examples are:
 
 ```ps
-$ ffuf -w wordlist -u URL/FUZZ # Forced browsing
+$ ffuf -w wordlist -u URL/FUZZ       # Forced browsing
 $ ffuf -w wordlist -u URL?FUZZ=value # GET
 $ ffuf -w wordlist -u URL?key=FUZZ   # GET
 $ ffuf -w wordlist -u URL/FUZZ -H "Header: value" # Header
-$ ffuf -w wordlist -u URL -X POST -d "xxx=FUZZ" # POST//BELOW
+$ ffuf -w wordlist -u URL -X POST -d "xxx=FUZZ"   # POST//BELOW
 $ ffuf -w wordlist -u URL -X POST -d "xxx=FUZZ" -H 'Content-Type: application/x-www-form-urlencoded'
 ```
 
@@ -26,7 +26,6 @@ $ ffuf -w wordlist -u URL -X POST -d "xxx=FUZZ" -H 'Content-Type: application/x-
 * `-timeout 10`: timeout, default to 10, you may use 1
 * `-ic`: ignore wordlist comments such as copyrights
 * `-v`: enable verbose
-* `-e .xxx,.yyy`: also test appending extensions to `FUZZ`
 
 You can use multiple wordlists, in such cases, you won't use FUZZ, but your own keyword, such as W1/W2.
 
@@ -78,6 +77,18 @@ $ ffuf -w wordlist -H "Host: FUZZ.example.com" -u http://IP
 ```
 
 ⚠️ Similar responses are most likely the same answer (failure).
+
+<br>
+
+#### Forced Browsing
+
+For [forced browsing](/cybersecurity/red-team/s2.discovery/techniques/websites/forced_browsing.md), you can use:
+
+```ps
+$ ffuf -w wordlist -u URL/FUZZ
+```
+
+Use `-e .xxx,.yyy` to test appending extensions to `FUZZ`. The initial behavior without any extension is still tested.
 </div><div>
 
 #### subdomains brute force

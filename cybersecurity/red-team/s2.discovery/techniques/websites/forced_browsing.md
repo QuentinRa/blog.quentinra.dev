@@ -1,0 +1,36 @@
+# Forced Browsing
+
+[![contentdiscovery](../../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
+[![webenumerationv2](../../../../_badges/thmp/webenumerationv2.svg)](https://tryhackme.com/room/webenumerationv2)
+[![picklerick](../../../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
+[![vulnversity](../../../../_badges/thm-p/vulnversity.svg)](https://tryhackme.com/room/vulnversity)
+[![basicpentestingjt](../../../../_badges/thm-p/basicpentestingjt.svg)](https://tryhackme.com/room/basicpentestingjt)
+[![blaster](../../../../_badges/thm-p/blaster.svg)](https://tryhackme.com/room/blaster)
+[![rrootme](../../../../_badges/thm-p/rrootme.svg)](https://tryhackme.com/room/rrootme)
+[![startup](../../../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
+[![wgelctf](../../../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
+![nibbles](../../../../_badges/htb-p/nibbles.svg)
+
+<div class="row row-cols-lg-2"><div>
+
+Forced browsing is a technique in which we test URLs crafted from a list of common files/folders and we try to find something juicy.
+
+* 🧃 Configuration files <small>(ex: .config)</small>
+* 👀 Old files <small>(ex: index.php.old)</small>
+* 💵 Backup files <small>(ex: xxx.bak, backup.xxx)</small>
+* 🔑 Admin/CMS panels <small>(ex: WordPress admin login page)</small>
+* 💰 Private files <small>(ex: documents...)</small>
+
+Refer to [wordlists#forced browsing](/cybersecurity/red-team/_knowledge/topics/wordlists.md#forced-browsing) for wordlists. ⚠️ Start with small wordlists, then move to bigger one. They don't have the same entries. 
+</div><div>
+
+Common tools are:
+
+* [Gobuster](/cybersecurity/red-team/tools/enumeration/web/gobuster.md)
+* [dirsearch](/cybersecurity/red-team/tools/enumeration/web/dirsearch.md)
+* [ffuf](/cybersecurity/red-team/tools/enumeration/web/ffuf.md#ffuf)
+* [wfuzz](/cybersecurity/red-team/tools/enumeration/web/wfuzz.md)
+* [feroxbuster](https://github.com/epi052/feroxbuster) (4.1k ⭐, Rust)
+* [dirb](https://dirb.sourceforge.net/) (installable on any Debian)
+* [DirBuster](https://github.com/KajanM/DirBuster) (0.1k ⭐)
+</div></div>
