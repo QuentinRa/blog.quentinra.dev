@@ -100,14 +100,14 @@ Vulnerabilities scanners
 
 * [Nessus](/cybersecurity/red-team/tools/scanners/vulns/nessus.md): port scanning, find vulnerabilities, quite noisy/slow
 * [OpenVAS](/cybersecurity/red-team/tools/scanners/vulns/openvas.md): port scanning, find vulnerabilities, quite noisy/slow
-* [Nikto](tools/nikto.md): website vulnerability scanner
+* [Nikto](/cybersecurity/red-team/tools/scanners/web/nikto.md): website vulnerability scanner
 </div><div>
 
 Websites
 
 [![introwebapplicationsecurity](../../_badges/thm/introwebapplicationsecurity.svg)](https://tryhackme.com/room/introwebapplicationsecurity)
 
-* [Website mapping](techniques/mapping.md) 🧭: before investing a website
+* [Website mapping](techniques/websites/mapping.md) 🧭: before investing a website
 * [OWASP](tools/owasp.md) 🧭: website security/common vulnerabilities
 * [Static analysis](techniques/sanalysis.md) 🚪🔥🔑: comments, hidden code...
 * [Dynamic analysis](techniques/danalysis.md) 🚪🔥🔑: JavaScript, headers...
@@ -152,6 +152,5 @@ Stuff that I found, but never read/used yet.
 * S3 buckets (AWS), blobs (Azure), cloud storage (GCP): may be accessible without auth [grayhatwarfare](https://grayhatwarfare.com/)
 * OS fingerprinting
   * Use service version format
-  * Use default TTL
 </div><div>
 </div></div>

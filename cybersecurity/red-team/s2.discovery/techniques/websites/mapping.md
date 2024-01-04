@@ -1,7 +1,5 @@
 # Website mapping
 
-[Go back](../index.md)
-
 <div class="row row-cols-lg-2"><div>
 
 A penetration tester will have to list every feature of the website along their route. For instance,

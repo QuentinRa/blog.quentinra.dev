@@ -174,6 +174,30 @@ Shells per language/extension
 $ ll "/usr/share/payloadsallthethings/Upload Insecure Files/"
 ```
 </div><div>
+
+#### Accounts
+
+Usernames
+
+```text!
+/usr/share/seclists/Usernames/Names/names.txt
+```
+
+Passwords
+
+```text!
+/usr/share/wordlists/rockyou.txt
+/usr/share/seclists/Passwords/Common-Credentials/best110.txt
+```
+
+Default credentials
+
+```text!
+/usr/share/seclists/Passwords/Default-Credentials/ftp-betterdefaultpasslist.txt
+$ ll /usr/share/seclists/Passwords/Default-Credentials/*passlist.txt
+```
+
+📚 You may also use short username/password wordlists.
 </div></div>
 
 <hr class="sep-both">
@@ -194,12 +218,4 @@ Mangling
 * [rsmangler](https://github.com/digininja/RSMangler)
 * [The Mentalist](https://github.com/sc0tfree/mentalist)
 </div><div>
-
-Usernames
-
-* `/usr/share/seclists/Usernames/Names/names.txt`
-
-Defaults Credentials
-
-* `/usr/share/seclists/Passwords/Default-Credentials/ftp-betterdefaultpasslist.txt`
 </div></div>

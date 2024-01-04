@@ -1,7 +1,5 @@
 # Nikto
 
-[Go back](../index.md)
-
 [![webenumerationv2](../../../_badges/thmp/webenumerationv2.svg)](https://tryhackme.com/room/webenumerationv2)
 [![adventofcyber4](../../../_badges/thm/adventofcyber4/day4.svg)](https://tryhackme.com/room/adventofcyber4)
 
