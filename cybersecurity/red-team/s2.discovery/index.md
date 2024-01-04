@@ -83,18 +83,16 @@ According to the kind of business, we may be able to guess their needs, and also
 
 <div class="row row-cols-lg-2"><div>
 
-Scanning and enumeration
-
-* [banner grabbing](techniques/banner_grabbing.md) ☠️: get a service banner
-* [nmap](/cybersecurity/red-team/tools/scanners/ports/nmap.md) 🚪🔥: a stealthy and powerful port scanner
-* [Rustscan](/cybersecurity/red-team/tools/scanners/ports/rustscan.md) 🚪🔥: a fast port scanner for CTFs
-* [Masscan](/cybersecurity/red-team/tools/scanners/ports/masscan.md) 🚪: an aggressive port scanner in mass
-
 Network mapping
 
 * [ping](tools/ping.md) 🥅: check if a host respond to pings
 * [Packet tracing](tools/trace.md) 🥅: map a network
 * The TTL can be used to primitively guess an operating system
+
+Scanning and enumeration
+
+* [port scanning](techniques/network/port_scanning.md) 🚪🔥: discover running services
+* [banner grabbing](techniques/banner_grabbing.md) ☠️: get a service banner
 
 Vulnerabilities scanners
 

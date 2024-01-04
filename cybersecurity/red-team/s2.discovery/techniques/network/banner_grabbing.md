@@ -1,9 +1,7 @@
 # Banner grabbing
 
-[Go back](../index.md)
-
-[![activerecon](../../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
-[![netsecchallenge](../../../_badges/thmp-p/netsecchallenge.svg)](https://tryhackme.com/room/netsecchallenge)
+[![activerecon](../../../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
+[![netsecchallenge](../../../../_badges/thmp-p/netsecchallenge.svg)](https://tryhackme.com/room/netsecchallenge)
 
 <div class="row row-cols-lg-2"><div>
 

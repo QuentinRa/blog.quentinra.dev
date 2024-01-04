@@ -1,11 +1,11 @@
 # Nikto
 
-[![webenumerationv2](../../../_badges/thmp/webenumerationv2.svg)](https://tryhackme.com/room/webenumerationv2)
-[![adventofcyber4](../../../_badges/thm/adventofcyber4/day4.svg)](https://tryhackme.com/room/adventofcyber4)
+[![webenumerationv2](../../../../_badges/thmp/webenumerationv2.svg)](https://tryhackme.com/room/webenumerationv2)
+[![adventofcyber4](../../../../_badges/thm/adventofcyber4/day4.svg)](https://tryhackme.com/room/adventofcyber4)
 
 <div class="row row-cols-lg-2"><div>
 
-[Nikto](https://github.com/sullo/nikto) (6.6k ⭐) is a common website vulnerability scanning tool:
+[Nikto](https://github.com/sullo/nikto) (7.5k ⭐) is a common website vulnerability scanning tool:
 
 * 💥 to find known vulnerabilities
 * 🔏 to find known misconfigurations
@@ -21,7 +21,7 @@ Usage:
 ```ps
 $ nikto -h URL
 $ nikto [...] -p 80,8000,8080 # ports
-$ nikto [...] -Display V # ex: verbose
-$ nikto [...] -Tuning 9 # ex: SQL injection
+$ nikto [...] -Display V      # ex: verbose
+$ nikto [...] -Tuning 9       # ex: SQL injection
 ```
 </div></div>

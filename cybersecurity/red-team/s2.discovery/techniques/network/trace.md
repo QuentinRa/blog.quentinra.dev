@@ -1,6 +1,6 @@
 # Packet tracing
 
-[![activerecon](../../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
+[![activerecon](../../../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
 
 <div class="row row-cols-lg-2"><div>
 

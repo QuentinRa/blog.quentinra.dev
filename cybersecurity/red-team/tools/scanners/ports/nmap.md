@@ -6,20 +6,7 @@
 [![nmap04](../../../../_badges/thmp/nmap04.svg)](https://tryhackme.com/room/nmap04)
 [![furthernmap](../../../../_badges/thm/furthernmap.svg)](https://tryhackme.com/room/furthernmap)
 [![adventofcyber4](../../../../_badges/thm/adventofcyber4/day4.svg)](https://tryhackme.com/room/adventofcyber4)
-[![vulnversity](../../../../_badges/thm-p/vulnversity.svg)](https://tryhackme.com/room/vulnversity)
-[![blue](../../../../_badges/thm-p/blue.svg)](https://tryhackme.com/room/blue)
-[![ice](../../../../_badges/thm-p/ice.svg)](https://tryhackme.com/room/ice)
-[![blaster](../../../../_badges/thm-p/blaster.svg)](https://tryhackme.com/room/blaster)
-[![kenobi](../../../../_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
-[![rrootme](../../../../_badges/thm-p/rrootme.svg)](https://tryhackme.com/room/rrootme)
-[![basicpentestingjt](../../../../_badges/thm-p/basicpentestingjt.svg)](https://tryhackme.com/room/basicpentestingjt)
-[![netsecchallenge](../../../../_badges/thmp-p/netsecchallenge.svg)](https://tryhackme.com/room/netsecchallenge)
-[![startup](../../../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
-[![cowboyhacker](../../../../_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
-[![steelmountain](../../../../_badges/thmp-p/steelmountain.svg)](https://tryhackme.com/room/steelmountain)
 [![networkenumerationwithnmap](../../../../_badges/htb/networkenumerationwithnmap.svg)](https://academy.hackthebox.com/course/preview/network-enumeration-with-nmap)
-![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
-![nibbles](../../../../_badges/htb-p/nibbles.svg)
 
 <div class="row row-cols-lg-2"><div>
 
