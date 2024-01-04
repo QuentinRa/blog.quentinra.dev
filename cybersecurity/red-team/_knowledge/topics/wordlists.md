@@ -184,6 +184,7 @@ Sorted by recommended order of usage.
 Usernames
 
 ```text!
+admin, administrator, wpadmin, root, adm
 /usr/share/seclists/Usernames/Names/names.txt
 ```
 

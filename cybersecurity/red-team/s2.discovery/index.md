@@ -63,36 +63,21 @@ We usually don't only rely on our web browser to recon/exploit websites, as they
 
 <hr class="sep-both">
 
-## Considerations ⚠️
-
-<div class="row row-cols-lg-2"><div>
-
-Automated scans can impact the network.
-
-During an assignment, ensure you know which hosts can be automatically scanned (e.g., using Nessus) and which hosts should be excluded and manually tested.
-
-When discovering something, it's important to question why we discovered something, e.g. why is this service present/enabled.
-
-According to the kind of business, we may be able to guess their needs, and also guess some services that should be present.
-</div><div>
-</div></div>
-
-<hr class="sep-both">
-
 ## Tools and methods 🗺️
 
 <div class="row row-cols-lg-2"><div>
 
 Network mapping
 
-* [ping](tools/ping.md) 🥅: check if a host respond to pings
-* [Packet tracing](tools/trace.md) 🥅: map a network
-* The TTL can be used to primitively guess an operating system
+* [ping](techniques/network/ping.md) 🥅: check if a host respond to pings
+* [Packet tracing](techniques/network/trace.md) 🥅: map a network
+* The TTL can be used to primitively guess the OS
 
 Scanning and enumeration
 
 * [port scanning](techniques/network/port_scanning.md) 🚪🔥: discover running services
-* [banner grabbing](techniques/banner_grabbing.md) ☠️: get a service banner
+* [banner grabbing](techniques/network/banner_grabbing.md) ☠️: get a service banner
+* The banner format may be used to primitively guess the OS
 
 Vulnerabilities scanners
 
@@ -106,33 +91,45 @@ Websites
 [![introwebapplicationsecurity](../../_badges/thm/introwebapplicationsecurity.svg)](https://tryhackme.com/room/introwebapplicationsecurity)
 
 * [Website mapping](techniques/websites/mapping.md) 🧭: before investing a website
+* [Account discovery](techniques/websites/account.md) 🔑: find accounts
 * [Static analysis](techniques/websites/sanalysis.md) 🚪🔥🔑: comments, hidden code...
 * [Dynamic analysis](techniques/websites/danalysis.md) 🚪🔥🔑: JavaScript, headers...
 * [Forced Browsing](techniques/websites/forced_browsing.md) 🚪🔑: find hidden pages/folders
 * [IDOR](techniques/websites/idor.md) 🚪🔑: find if you can access someone else content
 * [Framework detection](techniques/websites/framework.md) 🚪🔥: find the framework in use - if any
 * [Logic flaws](techniques/websites/logic_flaws.md) 🚪: find logic flaws
-* [Account discovery](techniques/account.md) 🔑: find accounts
-* [Virtual hosts](techniques/vhosts.md) 🚪: find virtual hosts
-* [Subdomains](techniques/subdomains.md) 🚪: find subdomains
+* [Virtual hosts](techniques/websites/vhosts.md) 🚪: find virtual hosts
+* [Subdomains](techniques/websites/subdomains.md) 🚪: find subdomains
 
-➡️ You should check for signs of [well-known vulnerabilities](../s3.exploitation/index.md#common-vulnerabilities-). Note that not all browsers are the same, only some may be vulnerable.
-
-🦄 [My website penetration checklist](techniques/roadmap.md)
+➡️ You should check for signs of [well-known vulnerabilities](../s3.exploitation/index.md#common-vulnerabilities-).
 </div></div>
 
 <hr class="sep-both">
 
-## Mitigations 🛡️
+## Additional Notes
 
-<div class="row row-cols-md-2 mt-4"><div>
+<div class="row row-cols-lg-2"><div>
+
+#### Remediation 🛡️
+
+<p></p>
 
 * 🔒 Display generic error messages, disable errors messages, and do not give much information <small>(ex: on invalid login, display the message 'credentials invalid', instead of 'username invalid' or 'password invalid')</small>
 
-* 🚧 Test your endpoints with invalid values: 0, -1, characters, symbols... Test your pages with/without excepted parameters, especially if a hacker tries to access pages in an unexpected order.
+* 🚧 Test your endpoints with invalid values: 0, -1, characters, symbols... Test your pages with/without expected parameters, especially if a hacker tries to access pages in an unexpected order.
+
+* 🔫 Do not trust anything coming from the user, its browser, or even your database. In a nutshell, do not trust anyone.
 </div><div>
 
-* 🔫 Do not trust anything coming from the user, its browser, or even your database. Basically, Zero Trust.
+#### Pentest Considerations ⚠️
+
+Automated scans can impact the network.
+
+During an assignment, ensure you know which hosts can be automatically scanned (e.g., using Nessus) and which hosts should be excluded and manually tested.
+
+When discovering something, it's important to question why we discovered something, e.g. why is this service present/enabled.
+
+According to the kind of business, we may be able to guess their needs, and also guess some services that should be present.
 </div></div>
 
 <hr class="sep-both">
@@ -147,7 +144,5 @@ Stuff that I found, but never read/used yet.
 * [clFrex](https://cifrex.org/)
 * find S3 Buckets `awscli` (https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html, [![contentdiscovery](../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery))
 * S3 buckets (AWS), blobs (Azure), cloud storage (GCP): may be accessible without auth [grayhatwarfare](https://grayhatwarfare.com/)
-* OS fingerprinting
-  * Use service version format
 </div><div>
 </div></div>
