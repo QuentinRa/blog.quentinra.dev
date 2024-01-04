@@ -1,8 +1,16 @@
-# Dynamic Analysis
+# Website Fingerprint
+
+<div class="row row-cols-lg-2"><div>
+
+...
+</div><div>
+
+...
+</div></div>
 
 <hr class="sep-both">
 
-## Analyze the network
+## Analyze Web Requests
 
 [![walkinganapplication](../../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
 [![httpindetail](../../../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
@@ -12,12 +20,14 @@
 
 <div class="row row-cols-lg-2"><div>
 
-After opening the network tab of your console, every HTTP request is now listed inside. You can see where the forms are sent, and examine the [headers](/operating-systems/networking/protocols/http.md#http-headers-in-web-applications) of every request.
+You can do it from the command line, from your web proxy if you use one, or from the network tab of the devtools console. 
 
-You can also use the command `curl`:
+The network tab is unreliable as requests are deleted when the page is reloaded, or some requests might not be exploitable.
+
+A common source of information are the request [headers](/operating-systems/networking/protocols/http.md#http-headers-in-web-applications).
 
 ```ps
-$ curl -I https://example.com/ 
+$ curl -I https://example.com/  # query headers using cURL
 ```
 </div><div>
 
@@ -28,20 +38,6 @@ $ curl -I https://example.com/
 👉 You can use the network tab to tune requests and re-send them.
 
 🗺️ There are many web scanner detecting suspicious headers.
-</div></div>
-
-<hr class="sep-both">
-
-## Analyze the javascript
-
-<div class="row row-cols-lg-2"><div>
-
-[![walkinganapplication](../../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
-
-You may use the console debugger, after adding a breakpoint in the JavaScript, to analyze the javascript code, if needed.
-
-➡️ It's hard, so feel free to explore other techniques first.
-</div><div>
 </div></div>
 
 <hr class="sep-both">

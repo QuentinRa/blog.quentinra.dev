@@ -93,3 +93,17 @@ You may append the snippet this to remove empty comments:
 
 There are more complex regexes if you want, such as [rt/96517](https://www.regextester.com/96517).
 </div></div>
+
+<hr class="sep-both">
+
+## Analyze the javascript
+
+<div class="row row-cols-lg-2"><div>
+
+[![walkinganapplication](../../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
+
+You may use the console debugger, after adding a breakpoint in the JavaScript, to analyze the javascript code, if needed.
+
+➡️ It's hard, so feel free to explore other techniques first.
+</div><div>
+</div></div>

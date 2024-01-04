@@ -91,9 +91,9 @@ Websites
 [![introwebapplicationsecurity](../../_badges/thm/introwebapplicationsecurity.svg)](https://tryhackme.com/room/introwebapplicationsecurity)
 
 * [Website mapping](techniques/websites/mapping.md) 🧭: before investing a website
+* [Website fingerprinting](techniques/websites/fingerprint.md) 🧭: understand your target
+* [Source code analysis](techniques/websites/sanalysis.md) 🚪🔥🔑: comments, hidden code...
 * [Account discovery](techniques/websites/account.md) 🔑: find accounts
-* [Static analysis](techniques/websites/sanalysis.md) 🚪🔥🔑: comments, hidden code...
-* [Dynamic analysis](techniques/websites/danalysis.md) 🚪🔥🔑: JavaScript, headers...
 * [Forced Browsing](techniques/websites/forced_browsing.md) 🚪🔑: find hidden pages/folders
 * [IDOR](techniques/websites/idor.md) 🚪🔑: find if you can access someone else content
 * [Framework detection](techniques/websites/framework.md) 🚪🔥: find the framework in use - if any
