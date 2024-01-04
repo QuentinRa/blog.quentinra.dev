@@ -292,6 +292,7 @@ Stuff that I found, but never read/used yet.
 * Caching DNS Server
 * Forwarding/Relay Server
 * 3 configs (local DNS, reverse DNS, zone file)
+* `c:\windows\system32\drivers\etc\hosts`
 </div><div>
 
 * Record Classes (Internet, Hesiod, Chaos)
