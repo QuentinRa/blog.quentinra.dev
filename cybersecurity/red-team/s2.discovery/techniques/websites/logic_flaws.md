@@ -1,7 +1,5 @@
 # Logic flaws
 
-[Go back](../index.md)
-
 [![owasptop10](../../../_badges/thm/owasptop10.svg)](https://tryhackme.com/room/owasptop10)
 
 <div class="row row-cols-lg-2"><div>

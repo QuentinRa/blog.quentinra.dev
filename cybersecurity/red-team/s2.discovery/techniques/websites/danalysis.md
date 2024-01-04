@@ -4,11 +4,11 @@
 
 ## Analyze the network
 
-[![walkinganapplication](../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
-[![httpindetail](../../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
-[![contentdiscovery](../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
-[![agentsudoctf](../../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
-[![agentt](../../../_badges/thm-p/agentt.svg)](https://tryhackme.com/room/agentt)
+[![walkinganapplication](../../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
+[![httpindetail](../../../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
+[![contentdiscovery](../../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
+[![agentsudoctf](../../../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
+[![agentt](../../../../_badges/thm-p/agentt.svg)](https://tryhackme.com/room/agentt)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -36,7 +36,7 @@ $ curl -I https://example.com/
 
 <div class="row row-cols-lg-2"><div>
 
-[![walkinganapplication](../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
+[![walkinganapplication](../../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
 
 You may use the console debugger, after adding a breakpoint in the JavaScript, to analyze the javascript code, if needed.
 
@@ -48,7 +48,7 @@ You may use the console debugger, after adding a breakpoint in the JavaScript, t
 
 ## Analyze cookies
 
-[![httpindetail](../../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
+[![httpindetail](../../../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
 
 <div class="row row-cols-lg-2"><div>
 

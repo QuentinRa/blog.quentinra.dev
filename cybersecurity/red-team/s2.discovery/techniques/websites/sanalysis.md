@@ -1,8 +1,6 @@
 # Static analysis
 
-[Go back](../index.md)
-
-[![activerecon](../../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
+[![activerecon](../../../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
 
 For starter, you may use <kbd>CTRL+U</kbd> or Right-click and "View page source".
 
@@ -10,7 +8,7 @@ For starter, you may use <kbd>CTRL+U</kbd> or Right-click and "View page source"
 
 ## Hidden HTML tags
 
-[![walkinganapplication](../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
+[![walkinganapplication](../../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -41,8 +39,8 @@ Array.from(document.querySelectorAll('*')).filter(x => {
 
 ## Links
 
-[![contentdiscovery](../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
-[![picklerick](../../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
+[![contentdiscovery](../../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
+[![picklerick](../../../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -67,10 +65,10 @@ There is also a file `robots.txt` with the pages that robots should not crawl/in
 
 ## Comments
 
-[![howwebsiteswork](../../../_badges/thmp/howwebsiteswork.svg)](https://tryhackme.com/room/howwebsiteswork)
-[![walkinganapplication](../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
-[![picklerick](../../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
-[![wgelctf](../../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
+[![howwebsiteswork](../../../../_badges/thmp/howwebsiteswork.svg)](https://tryhackme.com/room/howwebsiteswork)
+[![walkinganapplication](../../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
+[![picklerick](../../../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
+[![wgelctf](../../../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
 
 <div class="row row-cols-lg-2"><div>
 

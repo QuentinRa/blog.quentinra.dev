@@ -106,10 +106,9 @@ Websites
 [![introwebapplicationsecurity](../../_badges/thm/introwebapplicationsecurity.svg)](https://tryhackme.com/room/introwebapplicationsecurity)
 
 * [Website mapping](techniques/websites/mapping.md) 🧭: before investing a website
-* [OWASP](tools/owasp.md) 🧭: website security/common vulnerabilities
-* [Static analysis](techniques/sanalysis.md) 🚪🔥🔑: comments, hidden code...
-* [Dynamic analysis](techniques/danalysis.md) 🚪🔥🔑: JavaScript, headers...
-* [Forced Browsing](techniques/forced_browsing.md) 🚪🔑: find hidden pages/folders
+* [Static analysis](techniques/websites/sanalysis.md) 🚪🔥🔑: comments, hidden code...
+* [Dynamic analysis](techniques/websites/danalysis.md) 🚪🔥🔑: JavaScript, headers...
+* [Forced Browsing](techniques/websites/forced_browsing.md) 🚪🔑: find hidden pages/folders
 * [IDOR](techniques/idor.md) 🚪🔑: find if you can access someone else content
 * [Framework detection](techniques/framework.md) 🚪🔥: find the framework in use - if any
 * [Logic flaws](techniques/logic_flaws.md) 🚪: find logic flaws
