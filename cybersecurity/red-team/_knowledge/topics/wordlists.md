@@ -149,21 +149,9 @@ If worth mentioning again that tools such as [JohnTheReaper](/cybersecurity/cryp
 
 <hr class="sep-both">
 
-## Wordlists Index
+## Enumeration Wordlists Index
 
 <div class="row row-cols-lg-2"><div>
-
-#### File Upload
-
-MIME type/Content Type
-
-```text!
-/usr/share/seclists/Miscellaneous/web/content-type.txt
-```
-
-➡️ See also: [Extension Wordlists](#extensions).
-
-<br>
 
 #### Forced Browsing
 
@@ -177,6 +165,22 @@ Sorted by recommended order of usage.
 ```
 
 ➡️ See also: [Extension Wordlists](#extensions).
+
+<br>
+
+#### Subdomains
+
+Sorted by recommended order of usage.
+
+```text!
+/usr/share/seclists/Discovery/DNS/fierce-hostlist.txt
+/usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt
+/usr/share/seclists/Discovery/DNS/ubdomains-top1million-20000.txt
+/usr/share/seclists/Discovery/DNS/namelist.txt
+/usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt
+/usr/share/seclists/Discovery/DNS/dns-Jhaddix.txt
+/usr/share/wordlists/amass/*
+```
 </div><div>
 
 #### Accounts
@@ -207,6 +211,24 @@ $ ll /usr/share/seclists/Passwords/Default-Credentials/*passlist.txt
 
 <hr class="sep-both">
 
+## Exploitation Wordlists Index
+
+<div class="row row-cols-lg-2"><div>
+
+#### File Upload
+
+MIME type/Content Type
+
+```text!
+/usr/share/seclists/Miscellaneous/web/content-type.txt
+```
+
+➡️ See also: [Extension Wordlists](#extensions).
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Minor Wordlists Index
 
 <div class="row row-cols-lg-2"><div>
@@ -221,8 +243,6 @@ Mostly bad extensions <small>(no `.jpeg` or normal extensions)</small>
 /usr/share/seclists/Discovery/Web-Content/web-extensions-big.txt
 ```
 </div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">

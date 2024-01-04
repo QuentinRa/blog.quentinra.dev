@@ -1,10 +1,8 @@
 # DNSRecon
 
-[Go back](../index.md)
-
 <div class="row row-cols-lg-2"><div>
 
-[DNSRecon](https://github.com/darkoperator/dnsrecon) (2.2k ⭐) is a Python script that can be used to brute force vhosts, and do OSINT checks <small>(std, bing, yandex, and crt)</small>.
+[DNSRecon](https://github.com/darkoperator/dnsrecon) (2.4k ⭐) is a Python script that can be used to brute force vhosts, and do OSINT checks <small>(std, bing, yandex, and crt)</small>.
 
 ```ps
 $ dnsrecon -d URL -D wordlist -t a_type
