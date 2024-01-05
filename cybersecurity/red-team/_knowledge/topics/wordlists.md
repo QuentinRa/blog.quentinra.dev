@@ -243,6 +243,14 @@ Mostly bad extensions <small>(no `.jpeg` or normal extensions)</small>
 /usr/share/seclists/Discovery/Web-Content/web-extensions-big.txt
 ```
 </div><div>
+
+#### Parameters
+
+Common wordlists to find hidden query/body parameters:
+
+```text!
+/usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt
+```
 </div></div>
 
 <hr class="sep-both">

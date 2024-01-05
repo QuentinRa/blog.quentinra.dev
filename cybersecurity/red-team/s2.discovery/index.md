@@ -96,10 +96,10 @@ Websites
 * [Account discovery](techniques/websites/account.md) 🔑: find accounts
 * [Forced Browsing](techniques/websites/forced_browsing.md) 🚪🔑: find hidden pages/folders
 * [IDOR](techniques/websites/idor.md) 🚪🔑: find if you can access someone else content
-* [Framework detection](techniques/websites/framework.md) 🚪🔥: find the framework in use - if any
 * [Logic flaws](techniques/websites/logic_flaws.md) 🚪: find logic flaws
 * [Virtual hosts](techniques/websites/vhosts.md) 🚪: find virtual hosts
 * [Subdomains](techniques/websites/subdomains.md) 🚪: find subdomains
+* [Parameters](techniques/websites/parameters.md) 🚪: find hidden parameters
 
 ➡️ You should check for signs of [well-known vulnerabilities](../s3.exploitation/index.md#common-vulnerabilities-).
 </div></div>

@@ -79,6 +79,18 @@ You can use automated tools to see if they can detect the underlying technologie
 
 <br>
 
+#### Extension Fuzzing
+
+[![attacking_with_ffuf](../../../../_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
+
+We may want to find which extension the server uses, to fine tune our attacks. We may guess it based on the webserver but this is unreliable.
+
+Most websites have a file called `index` which can be used for [fuzzing](fuzzing.md). For example, with the URL `example.com/indexFUZZ`.
+
+
+Refer to [wordlists#extensions](/cybersecurity/red-team/_knowledge/topics/wordlists.md#extensions) for wordlists.
+</div><div>
+
 #### Manual Framework Identification
 
 [![contentdiscovery](../../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
@@ -86,10 +98,10 @@ You can use automated tools to see if they can detect the underlying technologie
 
 * Look if the framework is credited at the bottom of the page
 * Look if there is an HTML comment with the framework name/...
-* Try to find the version <small>(comments, check the dependencies, features...)</small>
+* Try to find the version (comments, dependencies, features...)
 * Look for the login page / CMS panel (if any)
 
-</div><div>
+<br>
 
 #### Favicon Fingerprint
 

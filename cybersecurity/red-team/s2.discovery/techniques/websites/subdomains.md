@@ -23,3 +23,15 @@ Common tools to find subdomains are:
 
 Common wordlists are listed in [wordlists#subdomains](/cybersecurity/red-team/_knowledge/topics/wordlists.md#subdomains)
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [aquatone](../../tools/aquatone.md)
+</div><div>
+</div></div>
