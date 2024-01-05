@@ -4,8 +4,6 @@
 [![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![overlayfs](../../../_badges/thm-p/overlayfs.svg)](https://tryhackme.com/room/overlayfs)
 
-[Go back](../index.md#linux-privilege-escalation-)
-
 <div class="row row-cols-lg-2"><div>
 
 Kernel exploits should be used as the **last resort**, as they will most probably severely impact the machine state, or even crash the machine if they fail.

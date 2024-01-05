@@ -1,7 +1,5 @@
 # Identification
 
-[Go back](../index.md#linux-privilege-escalation-)
-
 <div class="row row-cols-lg-2"><div>
 
 **Users**

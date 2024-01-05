@@ -1,7 +1,5 @@
 # Credentials
 
-[Go back](../index.md#linux-privilege-escalation-)
-
 [![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![ignite](../../../_badges/thm-p/ignite.svg)](https://tryhackme.com/room/ignite)
 

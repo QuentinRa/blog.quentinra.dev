@@ -81,6 +81,11 @@ There are many **automated scripts** that will investigate usual places, service
 * [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) a.k.a. LSE <small>(3.0k ⭐ | shell script)</small>
 * [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) <small>(1.4k ⭐ | python script, 2021 🪦)</small>
 * [pwncat-cs](/cybersecurity/red-team/s3.exploitation/shell/pwncat.md) <small>(2.3k ⭐ | reverse shell with priv. esc. suggester | 2022 ☠️)</small>
+
+Additional references
+
+* [GTFOBins](linux/gtfobins.md)
+* [Injection](linux/injection.md)
 </div></div>
 
 <hr class="sep-both">
@@ -100,8 +105,13 @@ There are many **automated scripts** that will investigate usual places, service
 * 💥 Exploiting [services](windows/services.md)
 * 🐸 Exploiting [privileges](windows/perms.md)
 
+<br>
 
-Other checklists: [frizb](https://github.com/frizb/Windows-Privilege-Escalation) <small>(0.7k ⭐, 2020 🪦)</small>.
+Additional references
+
+* [LOLBAS](https://lolbas-project.github.io/#) <small>(6.3k ⭐)</small> 
+* [hijacklibs](https://hijacklibs.net/) <small>(0.5k ⭐)</small>
+* [frizb](https://github.com/frizb/Windows-Privilege-Escalation) <small>(0.7k ⭐, checklist, 2020 🪦)</small>
 </div><div>
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...

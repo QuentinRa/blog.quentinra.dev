@@ -1,7 +1,5 @@
 # File permissions
 
-[Go back](../index.md#linux-privilege-escalation-)
-
 <hr class="sep-both">
 
 ## SUID/GUID bit

@@ -1,12 +1,6 @@
-# sudo
+# sudo privilege escalation
 
-[Go back](../index.md#linux-privilege-escalation-)
-
-An excellent reference to exploit sudo: [SUDO_KILLER](https://github.com/TH3xACE/SUDO_KILLER) (1.9k ⭐).
-
-<hr class="sep-both">
-
-## Administrative privileges
+*An excellent reference to exploit sudo: [SUDO_KILLER](https://github.com/TH3xACE/SUDO_KILLER) (2.0k ⭐)*
 
 [![linprivesc](../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
@@ -14,6 +8,7 @@ An excellent reference to exploit sudo: [SUDO_KILLER](https://github.com/TH3xACE
 [![picklerick](../../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
 [![linprivesc](../../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
 [![wgelctf](../../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
+[![easyctf](../../../_badges/thm-p/easyctf.svg)](https://tryhackme.com/room/easyctf)
 ![nibbles](../../../_badges/htb-p/nibbles.svg)
 ![getsimplecms](../../../_badges/htb-p/getsimplecms.svg)
 
@@ -39,6 +34,7 @@ The second section is about your [sudoers](/operating-systems/linux/env/files/in
 ```text!
 User [...] may run the following commands on [...]:
     (root) /bin/tar
+    (root) NOPASSWD: /usr/bin/vim
 ```
 
 ➡️ For instance, the user below can run `/bin/tar` as `root`.

