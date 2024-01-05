@@ -213,4 +213,8 @@ Credentials
 
 * Mimikatz, Kiwi, pypykatz
 * [LaZagne](https://github.com/AlessandroZ/LaZagne)
+
+Training
+
+* [allinonemj](https://tryhackme.com/room/allinonemj) (LXC)
 </div></div>
