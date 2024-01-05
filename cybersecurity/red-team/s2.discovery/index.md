@@ -77,6 +77,7 @@ Scanning and enumeration
 
 * [port scanning](techniques/network/port_scanning.md) 🚪🔥: discover running services
 * [banner grabbing](techniques/network/banner_grabbing.md) ☠️: get a service banner
+* [brute force service credentials](techniques/network/auth.md) 🚪: try to force your way in
 * The banner format may be used to primitively guess the OS
 
 Vulnerabilities scanners
