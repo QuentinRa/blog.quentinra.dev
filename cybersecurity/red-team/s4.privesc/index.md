@@ -86,6 +86,7 @@ Additional references
 
 * [GTFOBins](linux/gtfobins.md)
 * [Injection](linux/injection.md)
+* [Rootbash](linux/rootbash.md)
 </div></div>
 
 <hr class="sep-both">

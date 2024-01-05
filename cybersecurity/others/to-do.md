@@ -134,6 +134,10 @@ Cloud
 <summary>Big THM CTF List</summary>
 
 ```
+https://tryhackme.com/room/easyctf (notes below?)
+https://tryhackme.com/room/puttingitalltogether (no tags?)
+https://tryhackme.com/room/surfer
+https://tryhackme.com/room/lazyadmin
 https://tryhackme.com/room/ninjaskills
 https://tryhackme.com/room/gamezone
 https://tryhackme.com/room/skynet
@@ -164,7 +168,6 @@ https://tryhackme.com/room/adventofcyber2
 https://tryhackme.com/room/adventofcyber3
 --- Medium
 https://tryhackme.com/room/ultratech1 (web - guided?)
-https://tryhackme.com/room/surfer (SSRF?)
 https://tryhackme.com/room/hackpark (windows, guided)
 https://tryhackme.com/room/anonymous (nmap, smb?, ...)
 https://tryhackme.com/room/overpass2hacked

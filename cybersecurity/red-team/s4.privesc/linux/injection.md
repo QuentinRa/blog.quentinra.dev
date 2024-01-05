@@ -3,6 +3,8 @@
 <div class="row row-cols-lg-2"><div>
 
 If there is some code that can is executed as another user, for instance, a [scheduled task](tasks.md) or a [program with the SUID bit](perms.md#suidguid-bit), you may be able to modify the code behavior using injection.
+
+➡️ You may need/want to create a [root bash](rootbash.md).
 </div><div>
 
 There are basic scenarios in which you can directly exploit the executable, but in other scenarios, you may have to exploit the environment itself. In short, it means you may:
