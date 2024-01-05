@@ -213,6 +213,7 @@ Stuff that I found, but never read/used yet.
 * `run autoroute -h` (autoroute module)
   * socks
   * proxychains
+* `show advanced options`, `advanced`
 </div><div>
 
 * [Web delivery](https://www.offsec.com/metasploit-unleashed/web-delivery/)

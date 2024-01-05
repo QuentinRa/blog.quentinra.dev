@@ -58,5 +58,6 @@ Stuff
 * `xmlrpc.php` (XML API)
 * `wp-content/uploads/`, `wp-content/plugins/`, `wp-content/themes/`
 * `wp-includes`
+* `select user_login,user_pass from wp_users;`
 * 5 levels of access
 </div></div>

@@ -9,6 +9,7 @@
 [![linprivesc](../../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
 [![wgelctf](../../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
 [![easyctf](../../../_badges/thm-p/easyctf.svg)](https://tryhackme.com/room/easyctf)
+[![colddboxeasy](../../../_badges/thm-p/colddboxeasy.svg)](https://tryhackme.com/room/colddboxeasy)
 ![nibbles](../../../_badges/htb-p/nibbles.svg)
 ![getsimplecms](../../../_badges/htb-p/getsimplecms.svg)
 
