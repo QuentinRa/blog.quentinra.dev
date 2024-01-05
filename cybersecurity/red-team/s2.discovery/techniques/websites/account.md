@@ -20,5 +20,7 @@ We often test weak or mostly default credentials. You can do it manually, or use
 
 * Brute forcing accounts is usually done if there is nothing else we can try, while fuzzing for default credentials is acceptable.
 
+Refer to use [Fuzzing](fuzzing.md) or [network authentification tools](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md) such as hydra, which may also be used to brute force forms.
+
 * Try using `xxx+anything@xxx` to register multiple accounts with the 'same' address email `xxx@xxx`. It may be handy to 'farm' accounts.
 </div></div>

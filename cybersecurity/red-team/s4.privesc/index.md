@@ -31,22 +31,21 @@ Escalation can be **horizontally**/laterally <small>(another user with the same 
 
 <div class="row row-cols-lg-2"><div>
 
-Each operating system has its own set of escalation vectors while they share similarities. Some tools or services may have been installed and may be misconfigured or vulnerable.
+Each operating system has its own set of escalation vectors while they share similarities. The most common point is that we want to gather information about the environnement.
 
-If you detect an external service/tool:
+* **User information** 🧑: it may be used to determine your level of access, your role, along with username naming conventions
 
-* Look for [CVEs and exploits](/cybersecurity/red-team/s3.exploitation/index.md#vulnerability-databases)
-* In case of misconfiguration, exploit the generic escalation vector
-* ...
+* **Host information** 💻: it may be used to find if there are well-known vulnerabilities or misconfigurations.
 
-You might discover services such as FTP or others that may not have been shown during the initial recon step.
+* **Network information** 🌍: from the outside, we mostly only saw a portion of the internal network. We find find that the host is running a FTP server only available from the inside.
 </div><div>
 
-On Linux, you may use a command such as:
+I compiled a list of handy commands per operating system:
 
-```ps
-$ netstat -antp | grep -i list
-```
+* [Linux Environment Identification](linux/id.md)
+* [Windows Environment Identification](windows/id.md)
+
+You will also have to look for installed tools and apps along with their versions. You will need these to look for [CVEs and exploits](/cybersecurity/red-team/s3.exploitation/index.md#vulnerability-databases) related to local escalation privilege.
 </div></div>
 
 <hr class="sep-both">
@@ -68,11 +67,10 @@ $ netstat -antp | grep -i list
 * 🔑 Finding [credentials](linux/credentials.md) <small>(config, logs, ssh keys...)</small>
 * 💥 Exploiting the [kernel](linux/kernel.md)
 * 🐸 Misconfigured [file permissions](linux/perms.md)
+
+External tools/services
+
 * 🎠 Misconfigured [NFS shares](/operating-systems/networking/protocols/nfs.md#nfs-vulnerabilities-)
-
-You may want to find [who/where you are](linux/id.md) first.
-
-👉 Multiple techniques may try to exploit [injection](linux/injection.md) or [GTFOBins](linux/gtfobins.md).
 </div><div>
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
@@ -102,7 +100,6 @@ There are many **automated scripts** that will investigate usual places, service
 * 💥 Exploiting [services](windows/services.md)
 * 🐸 Exploiting [privileges](windows/perms.md)
 
-You may want to find [who/where you are](windows/id.md) first. To exploit Windows bins/scripts/bins, refer to [LOLBAS](https://lolbas-project.github.io/#) <small>(5.5k ⭐)</small>.
 
 Other checklists: [frizb](https://github.com/frizb/Windows-Privilege-Escalation) <small>(0.7k ⭐, 2020 🪦)</small>.
 </div><div>

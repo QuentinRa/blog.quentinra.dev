@@ -16,3 +16,15 @@ Anyway, it's a good practice to test the website features as a user before tryin
 
 👉 Don't forget special pages, such as the password reset page.
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+Try testing the page under different contexts <small>(logged or anonymous, correct cookies vs poisonous cookies, etc.).
+</div><div>
+</div></div>

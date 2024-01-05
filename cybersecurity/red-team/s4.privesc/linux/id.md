@@ -43,4 +43,8 @@
 * MySQL: `mysql --version`
 * Port and services: `/etc/services`
 * Apps: `dpkg -l`
+
+**Network**
+
+* Ports: `netstat -antp | grep -i list`
 </div></div>
