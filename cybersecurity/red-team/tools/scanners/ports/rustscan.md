@@ -16,11 +16,6 @@ $ sudo dpkg -i rustscan_2.0.1_amd64.deb
 Basic usage
 
 ```ps
-$ rustscan -a IP --ulimit 10000
-$ rustscan -a IP --ulimit 20000 # 10k may miss some ports
-```
-
-```ps
 $ rustscan -a IP -p 21
 $ rustscan -a IP -p 21,22,80
 $ rustscan -a IP --range 1-1023
@@ -28,4 +23,6 @@ $ rustscan -a IP --range 1-1023
 $ rustscan -a IP -- -sC -A
 $ rustscan -a IP -- -sV
 ```
+
+Using `--ulimit` make it faster, but you will miss some ports.
 </div></div>
