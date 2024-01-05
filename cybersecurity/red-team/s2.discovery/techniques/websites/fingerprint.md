@@ -16,7 +16,9 @@ Having this information may allow us to exploit known vulnerabilities (CVEs), bu
 
 If the webserver is Apache, the OS is most likely a Linux. We may choose to use Linux-only [wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md) or configure differently our tools.
 
-If we detect the use of a framework, we can use common techniques and automated tools to find internal informations <small>(users, plugins, etc.)</small> to hopefully find an attack vector.
+If we detect the use of a framework, we can use common techniques and automated tools to find internal informations <small>(users, plugins, etc.)</small> to hopefully find an attack vector. See also: [Framework Exploitation](/cybersecurity/red-team/s3.exploitation/techniques/framework.md).
+
+⚠️ Don't forget [robots.txt/sitemap.xml](sanalysis.md#links).
 </div></div>
 
 <hr class="sep-both">
@@ -77,11 +79,10 @@ You can use automated tools to see if they can detect the underlying technologie
 
 <br>
 
-#### Framework Identification
+#### Manual Framework Identification
 
+[![contentdiscovery](../../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
 ![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
-
-Common techniques
 
 * Look if the framework is credited at the bottom of the page
 * Look if there is an HTML comment with the framework name/...
