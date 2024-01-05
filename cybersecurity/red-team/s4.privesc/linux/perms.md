@@ -17,7 +17,7 @@
 
 This is a [permission](/operating-systems/linux/_knowledge/index.md#users-and-permissions) on Linux allowing users to execute a file with the permission of the owner (**SUID**) or the group owner (**GUID**).
 
-```bash!
+```ps
 # Variants: "-04000" "-4000" | "-4001"
 $ find / -perm -u=s -type f -ls 2>/dev/null
 $ find / -perm -g=s -type f -ls 2>/dev/null
@@ -65,7 +65,7 @@ It's possible for an administrator to allow an executable to use some "features"
 
 Find executables with capabilities
 
-```bash
+```ps
 $ getcap -r / 2>/dev/null
 ```
 </div><div>

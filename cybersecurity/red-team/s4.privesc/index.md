@@ -64,7 +64,7 @@ You will also have to look for installed tools and apps along with their version
 
 * 💎 Exploiting [sudo](linux/sudo.md)
 * ⏰ Exploiting [scheduled tasks](linux/tasks.md) <small>(cron tasks)</small>
-* 🔑 Finding [credentials](linux/credentials.md) <small>(config, logs, ssh keys...)</small>
+* 🔑 Finding [credentials/files](linux/credentials.md) <small>(config, logs, ssh keys...)</small>
 * 💥 Exploiting the [kernel](linux/kernel.md)
 * 🐸 Misconfigured [file permissions](linux/perms.md)
 
@@ -130,6 +130,57 @@ $ wes.py [...] output.txt # process the selected tool output
 PS> powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"
 PS> powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Linux Escalation Recipe
+
+<div class="row row-cols-lg-2"><div>
+
+First, find who you are, if you are in interesting groups:
+
+```ps
+$ id
+```
+
+If you're in `sudo`, try running sudo without/with password.
+
+```ps
+$ sudo -l -n
+```
+
+Look for interesting files "relatively" to your current user:
+
+```ps
+$ find / -user $(whoami) -type f 2>/dev/null | grep -v /proc | grep -v /sys
+$ find / -type f -writable 2>/dev/null | grep -v /proc | grep -v /sys
+```
+
+Look for suspicious permissions:
+
+```ps
+$ find / -perm -u=s -type f -ls 2>/dev/null
+$ find / -perm -g=s -type f -ls 2>/dev/null
+$ getcap -r / 2>/dev/null
+```
+</div><div>
+
+Look for interesting network services:
+
+```ps
+$ netstat -antp | grep -i list
+```
+
+Finally, look for users and services in `/etc/passwd`. Also, go look in `/home` for user homes, and try to see if you can access them.
+
+Once this is done, you can try to run automated tools. They will return a large output, but it will way less than if you did it manually.
+
+* Interesting configuration files
+* Interesting files that may contain a password
+* Interesting sockets
+* Interesting kernel exploits 
+* ...
 </div></div>
 
 <hr class="sep-both">

@@ -14,14 +14,23 @@ You may try to look for credentials.
 * ✉️ conversations/mails (`/var/mail/`)
 * 🌳 website configurations (`.env`)
 * ...
+
+You often find interesting files in easy CTFs using:
+
+```shell!
+$ find / -user $(whoami) -type f 2>/dev/null | grep -v /proc | grep -v /sys
+$ find / -type f -writable 2>/dev/null | grep -v /proc | grep -v /sys
+```
 </div><div>
 
-Find interesting files
+Manually find interesting files
 
-* `ls -ahl /root/`: see if there are readable files in root's home
+* `ls -ahl /root/`: test if root's home is readable
 * `ls /`: look for unexpected folders in `/`
 
-Find [SSH](/operating-systems/networking/protocols/ssh.md) credentials
+<br>
+
+Find credentials, keys, tokens, passwords:
 
 ```ps
 $ find / -name .ssh 2> /dev/null
