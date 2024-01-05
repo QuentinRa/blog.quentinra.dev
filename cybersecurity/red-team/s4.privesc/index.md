@@ -87,6 +87,14 @@ Additional references
 * [GTFOBins](linux/gtfobins.md)
 * [Injection](linux/injection.md)
 * [Rootbash](linux/rootbash.md)
+
+<details class="details-n">
+<summary>Special escalation vectors</summary>
+
+[![ctf](../../_badges/thm-p/ctf.svg)](https://tryhackme.com/room/ctf)
+
+* The SSH banner (`/etc/update-motd.d/00-header`), which is executed as root, is using a script that we would edit.
+</details>
 </div></div>
 
 <hr class="sep-both">
@@ -155,6 +163,7 @@ Look for interesting files "relatively" to your current user:
 ```ps
 $ find / -user $(whoami) -type f 2>/dev/null | grep -v /proc | grep -v /sys
 $ find / -type f -writable 2>/dev/null | grep -v /proc | grep -v /sys
+$ ls /opt # why not
 ```
 
 Look for suspicious permissions:

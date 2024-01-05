@@ -37,6 +37,22 @@ a LOGOUT            # logout
 
 <hr class="sep-both">
 
+## Pentester Notes ☠️
+
+<div class="row row-cols-lg-2"><div>
+
+You may try to use [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md):
+
+```ps
+$ hydra -L /path/to/users.lst -P /path/to/pass.lst imap://IP
+```
+
+If you compromise an email account, make sure to take note of the internal employees emails as they may be their usernames.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Alternatives to CLI
 
 <div class="row row-cols-lg-2"><div>
@@ -65,9 +81,9 @@ Configure a new mailbox.
 
 * **Step 1**: Add a random full name, and the targeted email, and optionally toggle "Don't lookup."
 * **Step 2**: Fill `server`, `port`, and `username`
-* **Step 4**: Unselect all
-* **Step 5**: Select 'None'
-* Done
+* **Step 3**: Unselect all
+* **Step 4**: Select 'None'
+* Finish, Apply
 </div></div>
 
 <hr class="sep-both">
