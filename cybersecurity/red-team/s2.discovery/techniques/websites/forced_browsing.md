@@ -10,6 +10,7 @@
 [![startup](../../../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 [![wgelctf](../../../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
 [![allinonemj](../../../../_badges/thm-p/allinonemj.svg)](https://tryhackme.com/room/allinonemj)
+[![mustacchio](../../../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 
 <div class="row row-cols-lg-2"><div>
