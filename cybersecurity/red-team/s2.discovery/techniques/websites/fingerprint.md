@@ -2,10 +2,21 @@
 
 <div class="row row-cols-lg-2"><div>
 
-...
+The most important part of the website discovery step is to identify the architecture of the website.
+
+* 🤖 Are they using any frameworks? <small>(WordPress, Laravel, etc.)</small>
+* 📚 Which engine are they using? <small>(PHP, Node.js, ASP, Java, etc.)</small>
+* 📁 Which webserver are they using? <small>(Apache, Nginx, IIS)</small>
+* ...
+
+Having this information may allow us to exploit known vulnerabilities (CVEs), but it's mostly handy to fine tune the rest of the steps.
 </div><div>
 
-...
+**Pentester Notes** 🔥
+
+If the webserver is Apache, the OS is most likely a Linux. We may choose to use Linux-only [wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md) or configure differently our tools.
+
+If we detect the use of a framework, we can use common techniques and automated tools to find internal informations <small>(users, plugins, etc.)</small> to hopefully find an attack vector.
 </div></div>
 
 <hr class="sep-both">
@@ -50,4 +61,45 @@ $ curl -I https://example.com/  # query headers using cURL
 
 Refer to the [Cookie](/programming-languages/web/_general/random/cookies.md) for information on cookies.
 </div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## Architecture Analysis
+
+<div class="row row-cols-lg-2"><div>
+
+You can use automated tools to see if they can detect the underlying technologies and the presence of a framework.
+
+* [wappalyzer](/cybersecurity/red-team/tools/scanners/web/wappalyzer.md): plugin/website to ???
+* [whatweb](/cybersecurity/red-team/tools/scanners/web/whatweb.md): command to ???
+* [nikto](/cybersecurity/red-team/tools/scanners/web/nikto.md): ???
+
+<br>
+
+#### Framework Identification
+
+![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
+
+Common techniques
+
+* Look if the framework is credited at the bottom of the page
+* Look if there is an HTML comment with the framework name/...
+* Try to find the version <small>(comments, check the dependencies, features...)</small>
+* Look for the login page / CMS panel (if any)
+
+</div><div>
+
+#### Favicon Fingerprint
+
+[![contentdiscovery](../../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
+
+Look for the default favicon of the framework. Usually, it's stored at `/favicon.ico`, although it's usually removed. If you do find one, download it, hash it (MD5), and [find it in OWASP favicon database](https://wiki.owasp.org/index.php/OWASP_favicon_database)
+
+```ps
+# Linux
+$ curl URL/favicon.ico | md5sum
+# Windows (on a downloaded favicon)
+$ Get-FileHash .\favicon.ico -Algorithm MD5
+```
 </div></div>
