@@ -92,11 +92,11 @@ PS> net use s: \\IP\share_name /user:username password
 
 ```ps
 # find users and shares
-$ nmap IP -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse
+$ nmap -p 139,445 --script=smb-enum-shares.nse,smb-enum-users.nse IP
 # find the operating system
-$ nmap IP -p 445 --script smb-os-discovery.nse
+$ nmap -p 139,445 --script smb-os-discovery.nse IP
 # run every smb script
-$ nmap IP -p 445 --script "*smb*"
+$ nmap -p 139,445 --script "*smb*" IP
 ```
 
 * Try `Anonymous` user with no password (`-N`)
@@ -114,7 +114,7 @@ $ smbclient //IP//Anonymous -U Anonymous -N
 
 * PsExec <small>(see [impacket](tools/impacket.md#psexec) client)</small> is a tool rely on SMB and allows administrators to run commands on Windows hosts. It may be running on the target.
 
-* You can use [crackmapexec](https://github.com/byt3bl33d3r/CrackMapExec) <small>(7.9k ⭐)</small> to list shares+accesses, and some basic information about the host.
+* You can use [crackmapexec](https://github.com/byt3bl33d3r/CrackMapExec) <small>(8.0k ⭐)</small> to list shares+accesses, and some basic information about the host.
 
 ```ps
 $ crackmapexec smb IP --shares -u 'username' -p 'password'
@@ -150,7 +150,9 @@ $ enum4linux-ng IP <options> -u 'username' -p 'password'
 
 [![blue](../../../cybersecurity/_badges/thm-p/blue.svg)](https://tryhackme.com/room/blue)
 
-A vulnerability in the SMB protocol allowing Remote Code Execution (RCE). It was discovered by the NSA and stolen by hackers,
+A vulnerability in the SMB protocol allowing Remote Code Execution (RCE). It was discovered by the NSA and stolen by hackers.
+
+* You can try a [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md) attack
 </div></div>
 
 <hr class="sep-both">

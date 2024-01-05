@@ -73,11 +73,12 @@ ftp> status # same as 'stat'
 
 <hr class="sep-both">
 
-## FTP vulnerabilities ☠️
+## FTP Pentester notes ☠️
 
 [![kenobi](../../../cybersecurity/_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
 [![startup](../../../cybersecurity/_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 [![cowboyhacker](../../../cybersecurity/_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
+[![easyctf](../../../cybersecurity/_badges/thm-p/easyctf.svg)](https://tryhackme.com/room/easyctf)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -92,7 +93,7 @@ $ ftp anonymous@IP
 ⚠️ Don't forget `-la` for hidden files. See also: `-R`.
 </div><div>
 
-* The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s3.exploitation/index.md#password-cracking-).
+* The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md).
 
 * **ProFTPD 1.3.5**: There was a failure that allowed users to move files from a non-mounted path to the mounted path. You could steal an id_rsa for instance.
 </div></div>

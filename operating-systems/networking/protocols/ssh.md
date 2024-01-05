@@ -29,18 +29,16 @@ $ ssh username@IP -i /path/to/id_rsa
 
 <hr class="sep-both">
 
-## SSH vulnerabilities ☠️
+## SSH Pentester Notes ☠️
 
 <div class="row row-cols-lg-2"><div>
 
-A hacker want to access the target host, and compromise it. 
+* The `.ssh` folder may contain a ssh key <small>(often called `id_rsa`)</small> to connect to a host. This file may be protected by a password, but using offline [hash cracking](/cybersecurity/cryptography/algorithms/hashing/index.md#ssh-private-key---passphrase-cracking), we may be able to find it.
 
-* The hacker may have found a `.ssh` folder, in which there may be a ssh certificate (`id_rsa`...) to connect to a host. This file may be protected by a password, but it may be [cracked](/cybersecurity/cryptography/algorithms/hashing/index.md#hash-cracking).
-
-* The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s3.exploitation/index.md#password-cracking-).
+* The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md).
 </div><div>
 
-* Run [ssh-audit](https://github.com/jtesta/ssh-audit) <small>(2.9k ⭐)</small>
+* Try to run [ssh-audit](https://github.com/jtesta/ssh-audit) <small>(2.9k ⭐)</small>
 
 * Use `-v` to detect allowed authentication modes and force one that is convenient for us.
 

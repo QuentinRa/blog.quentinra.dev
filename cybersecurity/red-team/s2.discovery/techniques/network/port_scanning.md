@@ -11,6 +11,7 @@
 [![startup](../../../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 [![cowboyhacker](../../../../_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
 [![steelmountain](../../../../_badges/thmp-p/steelmountain.svg)](https://tryhackme.com/room/steelmountain)
+[![easyctf](../../../../_badges/thm-p/easyctf.svg)](https://tryhackme.com/room/easyctf)
 ![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 
