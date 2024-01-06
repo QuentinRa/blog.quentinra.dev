@@ -1,6 +1,7 @@
 # MySQL 🍃
 
 [![footprinting](../../../../cybersecurity/_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
+[![devvortex](../../../../cybersecurity/_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
 
 <div class="row row-cols-lg-2"><div>
 

