@@ -552,8 +552,6 @@ $ docker -H unix:///run/docker.sock run --rm -d --privileged -v /:/hostfs xxx ba
 $ docker -H unix:///run/docker.sock run --privileged -v /:/hostfs xxx ls
 ```
 </div><div>
-
-...
 </div></div>
 
 <hr class="sep-both">

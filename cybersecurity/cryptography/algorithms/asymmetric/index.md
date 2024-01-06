@@ -176,3 +176,27 @@ You can use Bézout on $\phi(n)$, and $e$, to find $d$.
 
 An attacker would have a lot of prime numbers to test ($10^{497}$ for $n \approx 10^{1000}$) to find back $\phi(n) = (p-1) * (q-1)$ from $n$.
 </div></div>
+
+<hr class="sep-both">
+
+## Pentester Notes ☠️
+
+<div class="row row-cols-lg-2"><div>
+
+#### Cracking RSA
+
+[![weak_rsa](../../../../cybersecurity/_badges/htb-c/weak_rsa.svg)](https://app.hackthebox.com/challenges/Weak%20RSA)
+
+You can install and use [RsaCtfTool](https://github.com/RsaCtfTool/RsaCtfTool) (5.0k ⭐):
+
+```ps
+$ pip3 install gmpy2
+$ sudo git clone https://github.com/RsaCtfTool/RsaCtfTool.git rsactftool
+$ sudo ln -s /opt/rsactftool/RsaCtfTool.py /usr/bin/rsactftool
+$ rsactftool -h
+$ rsactftool --publickey key.pub --private
+```
+</div><div>
+
+...
+</div></div>

@@ -94,7 +94,7 @@ Additional references
 
 [![ctf](../../_badges/thm-p/ctf.svg)](https://tryhackme.com/room/ctf)
 
-* The SSH banner (`/etc/update-motd.d/00-header`), which is executed as root, is using a script that we would edit.
+* The SSH banner (`/etc/update-motd.d/00-header`), which is executed as root, is using a script that we could edit.
 </details>
 </div></div>
 
