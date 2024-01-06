@@ -187,6 +187,38 @@ Using this mode with AES, we introduce a new parameter IV <small>(unique and not
 
 <hr class="sep-both">
 
+## Pentester Notes ☠️
+
+<div class="row row-cols-lg-2"><div>
+
+#### XOR Attacks
+
+[![the-last-dance](../../../../cybersecurity/_badges/htb-c/the-last-dance.svg)](https://app.hackthebox.com/challenges/the-last-dance)
+
+ChaCha20 is a stream cipher algorithm that uses XOR similarly to the OTP algorithm. Given the plaintext and the cipher text, we can use XOR to get the key stream <small>(key+nonce)</small>.
+
+```py
+def xor_strings(s1, s2):
+    return bytes(b1 ^ b2 for b1, b2 in zip(s1, s2))
+    
+message = b''
+ciphertext = b''
+key_stream = xor_strings(message, ciphertext)
+```
+
+If the key and the nonce were reused to encrypt another message, then we can use the key stream to decrypt it.
+
+```py
+ciphertext_2 = b''
+padding_length = len(key_stream) - len(ciphertext_2)
+ciphertext_2 += b'\x00' * padding_length
+message_2 = xor_strings(key_stream, flag)
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Random Notes
 
 <div class="row row-cols-lg-2"><div>
