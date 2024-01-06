@@ -11,6 +11,7 @@
 [![easyctf](../../../_badges/thm-p/easyctf.svg)](https://tryhackme.com/room/easyctf)
 [![colddboxeasy](../../../_badges/thm-p/colddboxeasy.svg)](https://tryhackme.com/room/colddboxeasy)
 [![allinonemj](../../../_badges/thm-p/allinonemj.svg)](https://tryhackme.com/room/allinonemj)
+[![chillhack](../../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
 ![nibbles](../../../_badges/htb-p/nibbles.svg)
 ![getsimplecms](../../../_badges/htb-p/getsimplecms.svg)
 
@@ -37,9 +38,13 @@ The second section is about your [sudoers](/operating-systems/linux/env/files/in
 User [...] may run the following commands on [...]:
     (root) /bin/tar
     (root) NOPASSWD: /usr/bin/vim
+    (ALL) NOPASSWD: /usr/bin/vim
+    (xxx) NOPASSWD: /opt/script.sh
 ```
 
-➡️ For instance, the user below can run `/bin/tar` as `root`.
+➡️ For instance, the user below can run `/bin/tar` as `root`. 
+
+📚 Sometimes, instead of root, we may be able to run commands as another user, such as `/opt/script.sh` as user `xxx`. Use `sudo -u xxx`.
 </div></div>
 
 <hr class="sep-both">
