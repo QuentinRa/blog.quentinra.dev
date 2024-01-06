@@ -46,7 +46,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-[![weak_rsa](../../../cybersecurity/_badges/htb-c/weak_rsa.svg)](https://app.hackthebox.com/challenges/Weak%20RSA)
+[![weak_rsa](../../_badges/htb-c/weak_rsa.svg)](https://app.hackthebox.com/challenges/Weak%20RSA)
 
 ```ps
 # display Exponent and Modulus

@@ -69,13 +69,15 @@ Refer to the [Cookie](/programming-languages/web/_general/random/cookies.md) for
 
 ## Architecture Analysis
 
+[![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
+
 <div class="row row-cols-lg-2"><div>
 
 You can use automated tools to see if they can detect the underlying technologies and the presence of a framework.
 
-* [wappalyzer](/cybersecurity/red-team/tools/scanners/web/wappalyzer.md): plugin/website to ???
-* [whatweb](/cybersecurity/red-team/tools/scanners/web/whatweb.md): command to ???
-* [nikto](/cybersecurity/red-team/tools/scanners/web/nikto.md): ???
+* [wappalyzer](/cybersecurity/red-team/tools/scanners/web/wappalyzer.md): list front-end components
+* [whatweb](/cybersecurity/red-team/tools/scanners/web/whatweb.md): list front-end and back-end information
+* [nikto](/cybersecurity/red-team/tools/scanners/web/nikto.md): look for common vulnerabilities, which may expose the architecture and the framework indirectly.
 
 <br>
 

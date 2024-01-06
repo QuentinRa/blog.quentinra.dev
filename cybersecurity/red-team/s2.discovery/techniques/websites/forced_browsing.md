@@ -13,6 +13,7 @@
 [![mustacchio](../../../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
 [![chillhack](../../../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
+[![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
 
 <div class="row row-cols-lg-2"><div>
 

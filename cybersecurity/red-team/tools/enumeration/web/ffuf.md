@@ -72,8 +72,8 @@ $ ffuf -fs 5230 [...]    # hides responses with size=5230
 For [vhosts brute force](/cybersecurity/red-team/s2.discovery/techniques/vhosts.md), you can use:
 
 ```ps
-$ ffuf -w wordlist -H "Host: FUZZ.example.com" -u example.com
 $ ffuf -w wordlist -H "Host: FUZZ.example.com" -u http://IP
+$ ffuf -w wordlist -H "Host: FUZZ.example.com" -u http://example.com
 ```
 
 ⚠️ Similar responses are most likely the same answer (failure).

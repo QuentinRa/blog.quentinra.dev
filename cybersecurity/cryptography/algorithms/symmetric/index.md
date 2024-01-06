@@ -193,7 +193,7 @@ Using this mode with AES, we introduce a new parameter IV <small>(unique and not
 
 #### XOR Attacks
 
-[![the-last-dance](../../../../cybersecurity/_badges/htb-c/the-last-dance.svg)](https://app.hackthebox.com/challenges/the-last-dance)
+[![the-last-dance](../../../_badges/htb-c/the-last-dance.svg)](https://app.hackthebox.com/challenges/the-last-dance)
 
 ChaCha20 is a stream cipher algorithm that uses XOR similarly to the OTP algorithm. Given the plaintext and the cipher text, we can use XOR to get the key stream <small>(key+nonce)</small>.
 
@@ -225,7 +225,7 @@ message_2 = xor_strings(key_stream, flag)
 
 #### Modulus with subtraction Algorithm
 
-[![babyencryption](../../../../cybersecurity/_badges/htb-c/babyencryption.svg)](https://app.hackthebox.com/challenges/babyencryption)
+[![babyencryption](../../../_badges/htb-c/babyencryption.svg)](https://app.hackthebox.com/challenges/babyencryption)
 
 To decode a message encoded with `(a * x - b) % c`, we need to reverse each operation giving us `(a^{-1} * (x+b)) % c`.
 
