@@ -71,6 +71,7 @@ You will also have to look for installed tools and apps along with their version
 External tools/services
 
 * 🎠 Misconfigured [NFS shares](/operating-systems/networking/protocols/nfs.md#nfs-vulnerabilities-)
+* 🎠 Misconfigured [Docker Socket/Permissions](/operating-systems/others/virtualization/docker/index.md#docker-pentester-notes-)
 </div><div>
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
@@ -84,7 +85,7 @@ There are many **automated scripts** that will investigate usual places, service
 
 Additional references
 
-* [GTFOBins](linux/gtfobins.md)
+* [GTFOBins](linux/tools/gtfobins.md)
 * [Injection](linux/injection.md)
 * [Rootbash](linux/rootbash.md)
 

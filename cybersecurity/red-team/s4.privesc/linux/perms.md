@@ -23,7 +23,7 @@ $ find / -perm -u=s -type f -ls 2>/dev/null
 $ find / -perm -g=s -type f -ls 2>/dev/null
 ```
 
-Once you found a file with the SUID bit, either there is a known way to exploit it using [GTFOBins](gtfobins.md), or you have to investigate manually.
+Once you found a file with the SUID bit, either there is a known way to exploit it using [GTFOBins](tools/gtfobins.md), or you have to investigate manually.
 
 <br>
 
@@ -72,7 +72,7 @@ $ getcap -r / 2>/dev/null
 ```
 </div><div>
 
-➡️ Look for the executable on [GTFOBins](gtfobins.md)
+➡️ Look for the executable on [GTFOBins](tools/gtfobins.md)
 
 ➡️ Use the same techniques as for [SUID/GUID](#suidguid-bit) files not on GTFOBins
 </div></div>

