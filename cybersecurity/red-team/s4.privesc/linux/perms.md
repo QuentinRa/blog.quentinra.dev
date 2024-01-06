@@ -34,10 +34,12 @@ Once you found a file with the SUID bit, either there is a known way to exploit 
 
 #### Manual investigation
 
-If the script **hand-made**, or **not on GTFOBins**, then you can use the commands below to hopefully find which files and environment variables the script is using
+[![mustacchio](../../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
 
-* `strace script`: see every system call
-* `strings script`: extract every readable string, may not be installed
+If the script **hand-made**, or **not on GTFOBins**, then you can use refer to (basic) [Reverse Engineering](/cybersecurity/purple-team/reverse/index.md), e.g., the commands below to hopefully find which files and environment variables the script is using
+
+* `strace`: see every system call
+* `strings`: extract every readable string
 
 You may be able to make the script do what you want by editing [environment variables or files](injection.md) that it uses.
 

@@ -8,6 +8,13 @@ It often means getting back the original code/system using disassembling, decomp
 
 It can be used to understand how a malware works 🛡️ or to find vulnerabilities in a program/system in a black-box assessment 💥.
 </div><div>
+
+[![mustacchio](../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
+
+For simple programs, we might be able to get the information we need using the commands below:
+
+* `strace`: see every system call
+* `strings`: extract every readable string, may not be installed
 </div></div>
 
 <hr class="sep-both">

