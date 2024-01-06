@@ -17,6 +17,7 @@
 [![source](../../../../_badges/thm-p/source.svg)](https://tryhackme.com/room/source)
 [![ctf](../../../../_badges/thm-p/ctf.svg)](https://tryhackme.com/room/ctf)
 [![mustacchio](../../../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
+[![chillhack](../../../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
 ![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 

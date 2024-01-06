@@ -70,6 +70,7 @@ Software                        : www.inkscape.org
 
 [![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 [![c4ptur3th3fl4g](../../_badges/thm-p/c4ptur3th3fl4g.svg)](https://tryhackme.com/room/c4ptur3th3fl4g)
+[![chillhack](../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -82,7 +83,7 @@ $ steghide info file # check
 $ steghide extract -sf file # extract
 ```
 
-➡️ If prompted for a password, try a blank password.
+⚠️ If prompted for a password, **try a blank password**.
 </div><div>
 
 Otherwise, you may try to [crack](/cybersecurity/red-team/s3.exploitation/index.md#password-cracking-) the password.

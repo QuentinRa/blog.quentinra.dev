@@ -2,6 +2,7 @@
 
 [![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![ignite](../../../_badges/thm-p/ignite.svg)](https://tryhackme.com/room/ignite)
+[![chillhack](../../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
 
 <div class="row row-cols-lg-2"><div>
 
