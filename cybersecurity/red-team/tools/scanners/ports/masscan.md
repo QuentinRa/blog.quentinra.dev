@@ -21,3 +21,17 @@ $ sudo masscan --top-ports 10 45.33.32.156
 $ sudo masscan --top-ports 10 --rate 1000 45.33.32.156
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+```ps
+$ masscan -p- IP --rate=1000 -e tun0 > ports
+```
+</div><div>
+</div></div>
