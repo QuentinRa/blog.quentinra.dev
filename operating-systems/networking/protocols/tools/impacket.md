@@ -89,4 +89,18 @@ Run a [SMB](../smb.md) server to which user will connect with the username XXX a
 $ impacket-smbserver -smb2support -username XXX -password YYY share_name /path/to/share
 $ impacket-smbserver -smb2support share_name /path/to/share
 ```
+
+<br>
+
+#### SMB Client
+
+Alternative to `smbclient`. It works even when the former doesn't.
+
+```shell!
+$ impacket-smbclient IP
+# shares
+<list of shares>
+# use <sharename>
+# ls
+```
 </div></div>

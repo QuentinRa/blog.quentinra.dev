@@ -38,6 +38,8 @@ $ smbclient smb://IP/share_name [...] # same
 ```
 
 ➡️ You can also enter `smb://[...]` in a file explorer search bar.
+
+➡️ You can also use [impacket-client](tools/impacket.md#smb-client) if smbclient doesn't work.
 </div><div>
 
 
@@ -85,6 +87,7 @@ PS> net use s: \\IP\share_name /user:username password
 ## SMB Pentester Notes ☠️
 
 [![kenobi](../../../cybersecurity/_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
+[![lame](../../../cybersecurity/_badges/htb-p/lame.svg)](https://app.hackthebox.com/machines/Lame)
 
 <div class="row row-cols-lg-2"><div>
 

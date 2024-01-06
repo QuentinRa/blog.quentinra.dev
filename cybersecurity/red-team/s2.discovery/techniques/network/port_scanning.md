@@ -22,6 +22,7 @@
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 [![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
 [![jerry](../../../../_badges/htb-p/jerry.svg)](https://app.hackthebox.com/machines/Jerry)
+[![lame](../../../../_badges/htb-p/lame.svg)](https://app.hackthebox.com/machines/Lame)
 
 <div class="row row-cols-lg-2"><div>
 

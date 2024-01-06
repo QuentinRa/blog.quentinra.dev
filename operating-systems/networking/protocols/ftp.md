@@ -80,6 +80,7 @@ ftp> status # same as 'stat'
 [![cowboyhacker](../../../cybersecurity/_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
 [![easyctf](../../../cybersecurity/_badges/thm-p/easyctf.svg)](https://tryhackme.com/room/easyctf)
 [![chillhack](../../../cybersecurity/_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
+[![lame](../../../cybersecurity/_badges/htb-p/lame.svg)](https://app.hackthebox.com/machines/Lame)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -97,6 +98,8 @@ $ ftp anonymous@IP
 * The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md).
 
 * **ProFTPD 1.3.5**: There was a failure that allowed users to move files from a non-mounted path to the mounted path. You could steal an id_rsa for instance.
+
+* **vsFTPd 2.3.4**: has a backdoor as per [CVE-2011-2523](https://nvd.nist.gov/vuln/detail/CVE-2011-2523).
 </div></div>
 
 <hr class="sep-both">
