@@ -18,6 +18,8 @@ Tested on:
 Roadmap
 
 * [ ] Add support for verbose mode
+* [ ] Add support for the sitemap.xml
+* [ ] Add support for robots.txt
 * [ ] Test it on sqlmap HTB final assessment
 
 ## Host Editor

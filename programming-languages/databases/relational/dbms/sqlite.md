@@ -1,5 +1,7 @@
 # SQLite 🦐
 
+[![mustacchio](../../../../cybersecurity/_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
+
 <div class="row row-cols-lg-2"><div>
 
 SQLite is a file-based database. The database is stored in a file such as `users.db` and queried using SQL.
