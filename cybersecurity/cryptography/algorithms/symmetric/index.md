@@ -184,3 +184,29 @@ Using this mode with AES, we introduce a new parameter IV <small>(unique and not
 * **Try it online** 🌍: [One Time Pad (boxentriq.com)](https://www.boxentriq.com/code-breaking/one-time-pad)
 * **Still used?** 🟩: yes, it's widely used <small>(AES-GCM/AES-CCM/...)</small>
 </div></div>
+
+<hr class="sep-both">
+
+## Random Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### Modulus with subtraction Algorithm
+
+[![babyencryption](../../../../cybersecurity/_badges/htb-c/babyencryption.svg)](https://app.hackthebox.com/challenges/babyencryption)
+
+To decode a message encoded with `(a * x - b) % c`, we need to reverse each operation giving us `(a^{-1} * (x+b)) % c`.
+
+```py
+with open('./msg.enc','rb') as f:
+    # Reverse hexa encoding + byte encoding
+    text = bytes.fromhex(f.read().decode())
+    pt = []
+    for byte in text:
+        # Reverse Modulus and Addition
+        pt.append(chr((179 * (byte - 18)) % 256))
+    # Print the Result
+    print(''.join(pt))
+```
+</div><div>
+</div></div>
