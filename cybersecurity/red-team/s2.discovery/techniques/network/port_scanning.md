@@ -24,6 +24,7 @@
 [![jerry](../../../../_badges/htb-p/jerry.svg)](https://app.hackthebox.com/machines/Jerry)
 [![lame](../../../../_badges/htb-p/lame.svg)](https://app.hackthebox.com/machines/Lame)
 [![sau](../../../../_badges/htb-p/sau.svg)](https://app.hackthebox.com/machines/Sau)
+[![cozyhosting](../../../../_badges/htb-p/cozyhosting.svg)](https://app.hackthebox.com/machines/CozyHosting)
 
 <div class="row row-cols-lg-2"><div>
 

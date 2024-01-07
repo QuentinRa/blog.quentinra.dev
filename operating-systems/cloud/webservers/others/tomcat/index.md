@@ -23,6 +23,7 @@ The admin panel to upload applications if usually at `/manager/html`. To upload 
 ## Pentester Notes ☠️
 
 [![jerry](../../../../../cybersecurity/_badges/htb-p/jerry.svg)](https://app.hackthebox.com/machines/Jerry)
+[![cozyhosting](../../../../../cybersecurity/_badges/htb-p/cozyhosting.svg)](https://app.hackthebox.com/machines/CozyHosting)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -38,6 +39,8 @@ $ sudo nmap 10.10.10.95 -sCV -v
 * If you have access to the manager, you can try to upload a reverse shell. Refer to [reverse shell#tomcat](/cybersecurity/red-team/s3.exploitation/shell/reverse_shell.md#tomcat-reverse-shell) for more information.
 
 * You can try [tomcatWarDeployer](https://github.com/mgeeky/tomcatWarDeployer) <small>(0.4k ⭐, 2022 🪦)</small>, but it's memory hungry, buggy, unstable, and you need to patch the code first 🪦.
+
+* Maybe [Sprint Boot Actuators](/programming-languages/high-level/oo/java/others/boot/actuators.md) are being used.
 </div><div>
 
 * We can try to brute force the manager account using [metasploit](/cybersecurity/red-team/tools/frameworks/metasploit/index.md).
