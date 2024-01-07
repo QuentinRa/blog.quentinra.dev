@@ -25,6 +25,7 @@
 [![lame](../../../../_badges/htb-p/lame.svg)](https://app.hackthebox.com/machines/Lame)
 [![sau](../../../../_badges/htb-p/sau.svg)](https://app.hackthebox.com/machines/Sau)
 [![cozyhosting](../../../../_badges/htb-p/cozyhosting.svg)](https://app.hackthebox.com/machines/CozyHosting)
+[![netmon](../../../../_badges/htb-p/netmon.svg)](https://app.hackthebox.com/machines/Netmon)
 
 <div class="row row-cols-lg-2"><div>
 
