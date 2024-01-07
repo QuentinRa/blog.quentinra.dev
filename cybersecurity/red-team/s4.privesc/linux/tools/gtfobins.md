@@ -142,5 +142,9 @@ $ sudo /usr/bin/apport-cli --file-bug
 ```
 </div><div>
 
-...
+* `/usr/bin/systemctl status xxx.service`
+
+[![sau](../../../../_badges/htb-p/sau.svg)](https://app.hackthebox.com/machines/Sau)
+
+While it seems secure, the reader opened is `less` which can be leveraged to run commands: `!/bin/bash`.
 </div></div>
