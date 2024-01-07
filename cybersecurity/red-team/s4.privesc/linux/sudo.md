@@ -15,6 +15,7 @@
 ![nibbles](../../../_badges/htb-p/nibbles.svg)
 ![getsimplecms](../../../_badges/htb-p/getsimplecms.svg)
 [![devvortex](../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
+[![cozyhosting](../../../_badges/htb-p/cozyhosting.svg)](https://app.hackthebox.com/machines/CozyHosting)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -41,6 +42,7 @@ User [...] may run the following commands on [...]:
     (root) NOPASSWD: /usr/bin/vim
     (ALL) NOPASSWD: /usr/bin/vim
     (xxx) NOPASSWD: /opt/script.sh
+    (root) /usr/bin/ssh *
 ```
 
 ➡️ For instance, the user below can run `/bin/tar` as `root`. 
