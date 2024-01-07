@@ -214,6 +214,8 @@ Stuff that I found, but never read/used yet.
   * socks
   * proxychains
 * `show advanced options`, `advanced`
+* `search type:exploit platform:windows target:xp smb`
+* `exploit/windows/smb/ms08_067_netapi`
 </div><div>
 
 * [Web delivery](https://www.offsec.com/metasploit-unleashed/web-delivery/)

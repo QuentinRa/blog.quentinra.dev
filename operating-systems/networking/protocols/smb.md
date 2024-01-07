@@ -88,6 +88,7 @@ PS> net use s: \\IP\share_name /user:username password
 
 [![kenobi](../../../cybersecurity/_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
 [![lame](../../../cybersecurity/_badges/htb-p/lame.svg)](https://app.hackthebox.com/machines/Lame)
+[![legacy](../../../cybersecurity/_badges/htb-p/legacy.svg)](https://app.hackthebox.com/machines/Legacy)
 
 <div class="row row-cols-lg-2"><div>
 
