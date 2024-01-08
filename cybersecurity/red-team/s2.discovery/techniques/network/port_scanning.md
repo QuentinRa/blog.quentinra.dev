@@ -29,6 +29,7 @@
 [![blue](../../../../_badges/htb-p/blue.svg)](https://app.hackthebox.com/machines/Blue)
 [![legacy](../../../../_badges/htb-p/legacy.svg)](https://app.hackthebox.com/machines/Legacy)
 [![cap](../../../../_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
+[![wifinetic](../../../../_badges/htb-p/wifinetic.svg)](https://app.hackthebox.com/machines/Wifinetic)
 
 <div class="row row-cols-lg-2"><div>
 
