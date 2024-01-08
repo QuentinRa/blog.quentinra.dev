@@ -2,6 +2,7 @@
 
 [![wireshark](../../../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
 [![startup](../../../../../cybersecurity/_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
+[![cap](../../../../../cybersecurity/_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
 
 <div class="row row-cols-lg-2"><div>
 

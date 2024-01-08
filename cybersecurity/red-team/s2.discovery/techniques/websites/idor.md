@@ -6,6 +6,7 @@
 [![adventofcyber4](../../../../_badges/thm/adventofcyber4/day14.svg)](https://tryhackme.com/room/adventofcyber4)
 [![neighbour](../../../../_badges/thm-p/neighbour.svg)](https://tryhackme.com/room/neighbour)
 [![corridor](../../../../_badges/thm-p/corridor.svg)](https://tryhackme.com/room/corridor)
+[![cap](../../../../_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
 
 <div class="row row-cols-lg-2"><div>
 

