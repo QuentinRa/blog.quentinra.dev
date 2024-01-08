@@ -12,7 +12,7 @@ Each Wi-Fi network has a SSID (Service Set Identifier) which is the name of the 
 They often have a password. WPA <small>(Wi-Fi Protected Access)</small> is the replacement of WEP <small>(Wired Equivalent Privacy)</small> and a protocol to prevent unauthorized access to the network.
 
 * WPA2-EAP uses a Radius Server
-* WPA2-PSk uses a password/passphrase/code
+* WPA2-PSK uses a password/passphrase/code
 * Cisco used LEAP/PEAP and now uses EAP-TLS
 * Cisco uses a TACACS+ Server
 </div><div>
