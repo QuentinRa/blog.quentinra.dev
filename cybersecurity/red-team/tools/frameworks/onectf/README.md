@@ -21,6 +21,8 @@ Roadmap
 * [ ] Add support for the sitemap.xml
 * [ ] Add support for robots.txt
 * [ ] Test it on sqlmap HTB final assessment
+* [ ] Add custom filtering options
+* [ ] Add custom crawling options
 
 ## Host Editor
 

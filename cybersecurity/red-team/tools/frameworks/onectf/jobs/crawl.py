@@ -1,16 +1,19 @@
 import queue
 import re
+import sys
 import threading
 import urllib.parse
 import bs4
 import requests
+import urllib3
 
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 set_lock = threading.Lock()
 
 
 def init(args):
     args.links = queue.Queue()  # what we didn't explore
-    args.found_urls = set()  # what we found
+    args.found_urls = set()     # what we found
     add_to_set(args, args.url)
     # we don't want to crawl these pages
     args.crawl_url_filter_match = re.compile('.*(css|js|png|jpg)$')
@@ -27,27 +30,45 @@ def execute_worker_task(args):
 
 
 def do_job(args, url):
+    root = url
     print(f'[*] Crawl {url}')
 
-    response = requests.get(url)
+    response = requests.get(url, verify=args.ssl_verify, allow_redirects=True)
+
     if response.status_code != 200:
         print(f'[{response.status_code}] Unable to access {url}')
         return
+
+    if response.url != url:
+        url = response.url
+        with set_lock:
+            # we need to explore it
+            if url not in args.found_urls:
+                print(f'[*] Crawl {root} => Crawl {url}')
+                args.found_urls.add(url)
+            else:
+                print(f'[*] Crawl {root} => Already crawled.')
+                return
 
     soup = bs4.BeautifulSoup(response.content, 'html.parser')
 
     # Tags using href
     for tag in soup.find_all('a', href=True):
-        absolute_url = urllib.parse.urljoin(url, tag['href'])
-        if not re.match(args.crawl_url_filter_match, absolute_url):
-            add_to_set(args, absolute_url)
-        else:
-            add_to_set(args, truncated_url(absolute_url))
+        parse_href_link(args, root, url, tag['href'])
 
     # Tags using src
     for tag in soup.find_all(['img', 'script'], src=True):
         absolute_url = urllib.parse.urljoin(url, tag['src'])
-        add_to_set(args, truncated_url(absolute_url))
+        add_to_set(args, truncated_file_url(absolute_url))
+
+    # Tags using onclick
+    for tag in  soup.find_all(attrs={"onclick": True}):
+        onclick_value = tag['onclick']
+        if 'location.href' in onclick_value:
+            start_index = onclick_value.find("'") + 1
+            end_index = onclick_value.rfind("'")
+            href = onclick_value[start_index:end_index]
+            parse_href_link(args, root, url, href)
 
 
 def add_to_set(args, value):
@@ -59,7 +80,16 @@ def add_to_set(args, value):
         if value not in args.found_urls:
             args.found_urls.add(value)
             args.links.put(value)
-            # print("[*] ", value)
+
+
+def parse_href_link(args, root, url, href):
+    if href.startswith("/"):
+        url = root
+    absolute_url = urllib.parse.urljoin(url, href)
+    if not re.match(args.crawl_url_filter_match, absolute_url):
+        add_to_set(args, truncate_link_url(absolute_url))
+    else:
+        add_to_set(args, truncated_file_url(absolute_url))
 
 
 def url_extension(url):
@@ -67,10 +97,15 @@ def url_extension(url):
     return parts[-1].lower() if len(parts) > 1 else ''
 
 
-def truncated_url(url):
+def truncated_file_url(url):
     parsed_url = urllib.parse.urlparse(url)
-    path_without_file = '/'.join(parsed_url.path.split('/')[:-1])
-    return f"{parsed_url.scheme}://{parsed_url.netloc}{path_without_file}/"
+    path_without_file = '/'.join(parsed_url.path.split('/')[:-1]) + '/'
+    return urllib.parse.urlunparse((parsed_url.scheme, parsed_url.netloc, path_without_file, parsed_url.params, '', ''))
+
+
+def truncate_link_url(url):
+    parsed_url = urllib.parse.urlparse(url)
+    return urllib.parse.urlunparse((parsed_url.scheme, parsed_url.netloc, parsed_url.path, parsed_url.params, '', ''))
 
 
 def done(args):

@@ -23,6 +23,7 @@ def parse_arguments():
     command_crawl.add_argument('-u', dest='url', help='The target website URL.', required=True)
     command_crawl.add_argument('-t', metavar='threads', dest='threads', default=10, help='Number of threads (default=%(default)s).')
     command_crawl.add_argument('-o', metavar='output', dest='output_file', help='Write the output to a file.')
+    command_crawl.add_argument('-k', dest='ssl_verify', default=True, action='store_false', help='Write the output to a file.')
 
     return parser.parse_args()
 
