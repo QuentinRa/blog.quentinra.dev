@@ -32,6 +32,7 @@
 [![wifinetic](../../../../_badges/htb-p/wifinetic.svg)](https://app.hackthebox.com/machines/Wifinetic)
 [![knife](../../../../_badges/htb-p/knife.svg)](https://app.hackthebox.com/machines/Knife)
 [![return](../../../../_badges/htb-p/return.svg)](https://app.hackthebox.com/machines/Return)
+[![broker](../../../../_badges/htb-p/broker.svg)](https://app.hackthebox.com/machines/Broker)
 
 <div class="row row-cols-lg-2"><div>
 

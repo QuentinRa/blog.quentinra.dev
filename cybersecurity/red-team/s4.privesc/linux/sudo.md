@@ -17,6 +17,7 @@
 [![devvortex](../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
 [![cozyhosting](../../../_badges/htb-p/cozyhosting.svg)](https://app.hackthebox.com/machines/CozyHosting)
 [![knife](../../../_badges/htb-p/knife.svg)](https://app.hackthebox.com/machines/Knife)
+[![broker](../../../_badges/htb-p/broker.svg)](https://app.hackthebox.com/machines/Broker)
 
 <div class="row row-cols-lg-2"><div>
 

