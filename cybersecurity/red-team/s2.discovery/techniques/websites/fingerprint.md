@@ -30,6 +30,7 @@ If we detect the use of a framework, we can use common techniques and automated 
 [![contentdiscovery](../../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
 [![agentsudoctf](../../../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 [![agentt](../../../../_badges/thm-p/agentt.svg)](https://tryhackme.com/room/agentt)
+[![knife](../../../../_badges/htb-p/knife.svg)](https://app.hackthebox.com/machines/Knife)
 
 <div class="row row-cols-lg-2"><div>
 

@@ -16,6 +16,7 @@
 ![getsimplecms](../../../_badges/htb-p/getsimplecms.svg)
 [![devvortex](../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
 [![cozyhosting](../../../_badges/htb-p/cozyhosting.svg)](https://app.hackthebox.com/machines/CozyHosting)
+[![knife](../../../_badges/htb-p/knife.svg)](https://app.hackthebox.com/machines/Knife)
 
 <div class="row row-cols-lg-2"><div>
 
