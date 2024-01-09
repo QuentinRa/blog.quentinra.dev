@@ -20,7 +20,7 @@ $ pip install -r requirements.txt
 $ pip install .
 ```
 
-And use a length command to invoke them:
+And use a lengthy command to invoke them:
 
 ```ps
 $ python /opt/impacket/examples/secretsdump.py [...]
@@ -97,10 +97,12 @@ $ impacket-smbserver -smb2support share_name /path/to/share
 Alternative to `smbclient`. It works even when the former doesn't.
 
 ```shell!
+$ impacket-smbclient 'username':'password'@IP
 $ impacket-smbclient IP
 # shares
 <list of shares>
 # use <sharename>
 # ls
+# tree
 ```
 </div></div>

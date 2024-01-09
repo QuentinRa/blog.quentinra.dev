@@ -15,7 +15,7 @@ DCOM is built on top of [MSRPC](rpc.md#rpc-smb-footprinting), which is why it us
 
 <hr class="sep-both">
 
-## MSSQL Pentester Notes ☠️
+## DCOM Pentester Notes ☠️
 
 <div class="row row-cols-lg-2"><div>
 

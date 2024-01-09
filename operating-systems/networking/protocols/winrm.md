@@ -23,6 +23,7 @@ You can use [evil-winrm](https://github.com/Hackplayers/evil-winrm) (3.9k ⭐) t
 
 ```ps
 $ evil-winrm -i IP -u username -p password
+$ evil-winrm -i IP -u 'username' -p 'password'
 ```
 </div><div>
 
