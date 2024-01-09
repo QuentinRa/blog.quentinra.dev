@@ -35,6 +35,7 @@
 [![broker](../../../../_badges/htb-p/broker.svg)](https://app.hackthebox.com/machines/Broker)
 [![bashed](../../../../_badges/htb-p/bashed.svg)](https://app.hackthebox.com/machines/Bashed)
 [![celestial](../../../../_badges/htb-p/celestial.svg)](https://app.hackthebox.com/machines/Celestial)
+[![optimum](../../../../_badges/htb-p/optimum.svg)](https://app.hackthebox.com/machines/Optimum)
 
 <div class="row row-cols-lg-2"><div>
 
