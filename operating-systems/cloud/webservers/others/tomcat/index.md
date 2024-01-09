@@ -73,5 +73,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [apache-tomcat-pentesting](https://exploit-notes.hdks.org/exploit/web/apache-tomcat-pentesting/)
+* Jetty - it seems like an alternative
 </div><div>
 </div></div>
