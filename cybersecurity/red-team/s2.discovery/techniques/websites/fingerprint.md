@@ -59,11 +59,19 @@ $ curl -I https://example.com/  # query headers using cURL
 ## Analyze cookies
 
 [![httpindetail](../../../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
+[![celestial](../../../../_badges/htb-p/celestial.svg)](https://app.hackthebox.com/machines/Celestial)
 
 <div class="row row-cols-lg-2"><div>
 
-Refer to the [Cookie](/programming-languages/web/_general/random/cookies.md) for information on cookies.
+Cookies can be used to determine the framework/technology/webserver. Some well-known cookies are:
+
+* JSESSIONID — commonly associated with Java Servlets
+* PHPSESSID — commonly associated with PHP
+
+Some cookies might contain easily modifiable values or [encoded](/tools-and-frameworks/knowledge/encoding/index.md) values. It's interesting to see how much we can fuzz its values.
 </div><div>
+
+Refer to the [Cookie](/programming-languages/web/_general/random/cookies.md) for information on cookies.
 </div></div>
 
 <hr class="sep-both">

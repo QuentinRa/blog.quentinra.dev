@@ -3,6 +3,7 @@
 [![linuxstrengthtraining](../../../cybersecurity/_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 [![javascriptdeobfuscation](../../../cybersecurity/_badges/htb/javascriptdeobfuscation.svg)](https://academy.hackthebox.com/course/preview/javascript-deobfuscation)
 [![c4ptur3th3fl4g](../../../cybersecurity/_badges/thm-p/c4ptur3th3fl4g.svg)](https://tryhackme.com/room/c4ptur3th3fl4g)
+[![celestial](../../../cybersecurity/_badges/htb-p/celestial.svg)](https://app.hackthebox.com/machines/Celestial)
 
 <div class="row row-cols-lg-2"><div>
 
