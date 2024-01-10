@@ -36,5 +36,6 @@ Find credentials, keys, tokens, passwords:
 ```ps
 $ find / -name .ssh 2> /dev/null
 $ find / -name *id_dsa* 2> /dev/null
+$ find / -wholename "*.git/config" 2> /dev/null | xargs grep "url"
 ```
 </div></div>

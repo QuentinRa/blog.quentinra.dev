@@ -765,4 +765,5 @@ args = parser.parse_args()
 * [python pep](https://www.python.org/dev/peps/pep-0008/)
 * [ipython](https://ipython.org/install.html)
 * [enthought](https://docs.enthought.com/canopy/2.1/index.html)
+* Werkzeug, check if `/console` is enabled
 </div></div>
