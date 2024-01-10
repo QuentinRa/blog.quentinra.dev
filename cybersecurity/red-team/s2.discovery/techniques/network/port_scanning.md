@@ -38,6 +38,7 @@
 [![optimum](../../../../_badges/htb-p/optimum.svg)](https://app.hackthebox.com/machines/Optimum)
 [![busqueda](../../../../_badges/htb-p/busqueda.svg)](https://app.hackthebox.com/machines/Busqueda)
 [![granny](../../../../_badges/htb-p/granny.svg)](https://app.hackthebox.com/machines/Granny)
+[![antique](../../../../_badges/htb-p/antique.svg)](https://app.hackthebox.com/machines/Antique)
 
 <div class="row row-cols-lg-2"><div>
 
