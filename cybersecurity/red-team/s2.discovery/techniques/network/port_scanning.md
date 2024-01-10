@@ -39,6 +39,7 @@
 [![busqueda](../../../../_badges/htb-p/busqueda.svg)](https://app.hackthebox.com/machines/Busqueda)
 [![granny](../../../../_badges/htb-p/granny.svg)](https://app.hackthebox.com/machines/Granny)
 [![antique](../../../../_badges/htb-p/antique.svg)](https://app.hackthebox.com/machines/Antique)
+![bizness](../../../../_badges/htb-p/bizness.svg)
 
 <div class="row row-cols-lg-2"><div>
 

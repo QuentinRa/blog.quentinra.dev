@@ -24,6 +24,7 @@ The admin panel to upload applications if usually at `/manager/html`. To upload 
 
 [![jerry](../../../../../cybersecurity/_badges/htb-p/jerry.svg)](https://app.hackthebox.com/machines/Jerry)
 [![cozyhosting](../../../../../cybersecurity/_badges/htb-p/cozyhosting.svg)](https://app.hackthebox.com/machines/CozyHosting)
+![bizness](../../../../../cybersecurity/_badges/htb-p/bizness.svg)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -42,6 +43,8 @@ $ sudo nmap 10.10.10.95 -sCV -v
 
 * Maybe [Sprint Boot Actuators](/programming-languages/high-level/oo/java/others/boot/actuators.md) are being used.
 </div><div>
+
+* We can disclose tomcat version by sending a query using an invalid method that should raise a 405 (ex: `curl -X PUT URL`)
 
 * We can try to brute force the manager account using [metasploit](/cybersecurity/red-team/tools/frameworks/metasploit/index.md).
 
@@ -80,4 +83,12 @@ Stuff that I found, but never read/used yet.
 * `jar -ft revshell.jar`/`jd-gui`: to see metasploit endpoint name
 * when pressing ESC on login, it may print the message with the default credentials
 </div><div>
+
+While not really related:
+
+![bizness](../../../../../cybersecurity/_badges/htb-p/bizness.svg)
+
+* `/control/xmlrpc`, `/webtools/control/main`, `/control/checkLogin`
+* Try default credentials (`admin:ofbiz`)
+* [CVE-2023-50164](https://github.com/jakabakos/Apache-OFBiz-Authentication-Bypass) lead to RCE
 </div></div>
