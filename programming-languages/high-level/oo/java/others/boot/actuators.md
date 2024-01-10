@@ -29,5 +29,6 @@ Stuff that I found, but never read/used yet.
 
 * `jar xf xxx.jar`
 * `cat BOOT-INF/classes/application.properties | grep datasource`
+* We can easily recognize spring from the 404 page (`Whitelabel error page` or format)
 </div><div>
 </div></div>

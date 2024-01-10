@@ -163,6 +163,7 @@ Sorted by recommended order of usage.
 /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
 /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 /usr/share/seclists/Discovery/Web-Content/raft-small-directories-lowercase.txt
+/usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt
 ```
 
 ➡️ See also: [Extension Wordlists](#extensions).

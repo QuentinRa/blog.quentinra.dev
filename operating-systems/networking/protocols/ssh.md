@@ -60,6 +60,8 @@ Stuff that I found, but never read/used yet.
 * `ssh-keygen -f key`: leave in `>> /root/.ssh/authorized_keys` the pub
 * `-R "xxx"`
 * `ssh -X` with `X11Forwarding` enabled
+* `sshpass -p 'XXX' ssh xxx@IP`
+* Authorized keys
 </div><div>
 
 * `/etc/ssh/sshd_config`

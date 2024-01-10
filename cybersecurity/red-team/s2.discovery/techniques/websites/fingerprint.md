@@ -71,7 +71,9 @@ Cookies can be used to determine the framework/technology/webserver. Some well-k
 Some cookies might contain easily modifiable values or [encoded](/tools-and-frameworks/knowledge/encoding/index.md) values. It's interesting to see how much we can fuzz its values.
 </div><div>
 
-Refer to the [Cookie](/programming-languages/web/_general/random/cookies.md) for information on cookies.
+Refer to the [Cookie](/programming-languages/web/_general/random/cookies.md) for information on cookies. 
+
+➡️ You can use the [cookie-editor extension](https://cookie-editor.com/) if you don't find it comfortable to use the developer tools.
 </div></div>
 
 <hr class="sep-both">

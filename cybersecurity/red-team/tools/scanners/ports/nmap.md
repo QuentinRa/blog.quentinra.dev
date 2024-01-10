@@ -58,7 +58,12 @@ However, this doesn't often work. NMap uses an [ICMP Scan](#icmp-scans) to check
 $ sudo nmap [...] -Pn  # assume host is up, don't ping
 ```
 
-⚠️ It also worth noting that nmap uses a timeout, which may cause low latency ports to not be shown in scan results.
+On practice, during CTFs, we want to be fast, so we use these two:
+
+```ps
+$ sudo nmap -Pn -sU -p- --min-rate 10000 IP -v
+$ sudo nmap -Pn -sT -p- -min-rate 5000 IP -v
+```
 </div><div>
 
 A few common options:
@@ -73,6 +78,8 @@ A few common options:
 As the port may be protected by a firewall, we may add stealth options and use firewall detection or by-pass techniques.
 
 ⚠️ NMap uses banner grabbing or signature-based matching to identify the running services. It also good to cross-check as nmap may not have presented to us all information returned by a service.
+
+⚠️ It also worth noting that nmap uses a timeout, which may cause low latency ports to not be shown in scan results.
 
 🔫 CTF notes, delayed banners may take 30 seconds before popping.
 </div></div>

@@ -74,5 +74,10 @@ Stuff that I found, but never read/used yet.
 
 * [apache-tomcat-pentesting](https://exploit-notes.hdks.org/exploit/web/apache-tomcat-pentesting/)
 * Jetty - it seems like an alternative
+* `/manager/status` server status (admin:admin)
+* not the same credentials on each page
+* when uploading, on the same page, there are information about the server architecture, which we can use to fine tune the payload
+* `jar -ft revshell.jar`/`jd-gui`: to see metasploit endpoint name
+* when pressing ESC on login, it may print the message with the default credentials
 </div><div>
 </div></div>
