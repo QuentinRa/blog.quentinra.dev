@@ -37,6 +37,7 @@
 [![celestial](../../../../_badges/htb-p/celestial.svg)](https://app.hackthebox.com/machines/Celestial)
 [![optimum](../../../../_badges/htb-p/optimum.svg)](https://app.hackthebox.com/machines/Optimum)
 [![busqueda](../../../../_badges/htb-p/busqueda.svg)](https://app.hackthebox.com/machines/Busqueda)
+[![granny](../../../../_badges/htb-p/granny.svg)](https://app.hackthebox.com/machines/Granny)
 
 <div class="row row-cols-lg-2"><div>
 

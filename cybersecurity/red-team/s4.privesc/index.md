@@ -165,6 +165,7 @@ Look for interesting files "relatively" to your current user:
 $ find / -user $(whoami) -type f 2>/dev/null | grep -v /proc | grep -v /sys
 $ find / -type f -writable 2>/dev/null | grep -v /proc | grep -v /sys
 $ ls /opt # why not
+$ find /opt/ \( -amin -5 -o -mmin -5 \) 2> /dev/null # recently modified/edited?
 ```
 
 Look for suspicious permissions:

@@ -18,6 +18,7 @@
 [![cozyhosting](../../../_badges/htb-p/cozyhosting.svg)](https://app.hackthebox.com/machines/CozyHosting)
 [![knife](../../../_badges/htb-p/knife.svg)](https://app.hackthebox.com/machines/Knife)
 [![broker](../../../_badges/htb-p/broker.svg)](https://app.hackthebox.com/machines/Broker)
+[![busqueda](../../../_badges/htb-p/busqueda.svg)](https://app.hackthebox.com/machines/Busqueda)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -50,6 +51,8 @@ User [...] may run the following commands on [...]:
 ➡️ For instance, the user below can run `/bin/tar` as `root`. 
 
 📚 Sometimes, instead of root, we may be able to run commands as another user, such as `/opt/script.sh` as user `xxx`. Use `sudo -u xxx`.
+
+☠️ If you can only execute the script and not read it, either try to see if the script use an [injectable](injection.md) parameter or try to find if the source code is available somewhere else <small>(ex: on Git)</small>.
 </div></div>
 
 <hr class="sep-both">

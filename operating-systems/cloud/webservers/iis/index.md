@@ -16,7 +16,9 @@ Stuff that I found, but never read/used yet.
 
 * `%WinDir%\System32\Inetsrv\Config\ApplicationHost.config`: configuration file
 * Window Version to infer IIS version (default one)
+
+[![granny](../../../../cybersecurity/_badges/htb-p/granny.svg)](https://app.hackthebox.com/machines/Granny)
+
+* IIS v6 RCE (`iis_webdav_scstoragepathfromurl`)
 </div><div>
-
-
 </div></div>
