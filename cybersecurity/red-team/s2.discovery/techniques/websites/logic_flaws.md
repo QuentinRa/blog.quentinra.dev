@@ -50,3 +50,17 @@ $ curl 'URL/step2?n=5' -d 'square=36&n=6'
 
 Then, in `$_REQUEST['n']` there would be `6`, an uncheck value.
 </div></div>
+
+<hr class="sep-both">
+
+## Random Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### Client-Side Logic
+
+[![http_post](../../../../_badges/rootme/http_post.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-POST)
+
+While uncommon, if the logic is client-side and only the result is sent to the server, we can do whatever we want.
+</div><div>
+</div></div>
