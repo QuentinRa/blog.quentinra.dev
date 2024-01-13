@@ -24,6 +24,8 @@ There are basic scenarios in which you can directly exploit the executable, but 
 [![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![commonlinuxprivesc](../../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 [![mustacchio](../../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
+[![bash_system_1](../../../_badges/rootme/bash_system_1.svg)](https://www.root-me.org/en/Challenges/App-Script/ELF32-System-1)
+[![bash_system_2](../../../_badges/rootme/bash_system_2.svg)](https://www.root-me.org/en/Challenges/App-Script/ELF32-System-2)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -34,8 +36,6 @@ $ bash -c 'export PATH=; <execute the script>'
 "xxx" command not found ====> OK!
 ```
 
-⚠️ If you are not able to edit the PATH, try to see if you can write files in a folder in the PATH that is before the original folder.
-
 You can then try to replace the command binary by a [rootbash](rootbash.md). 
 
 ```
@@ -44,6 +44,8 @@ $ ln -s /tmp/rootbash # replace the command "xxx"
 $ bash -c 'export PATH=/tmp:$PATH; <execute the script>'
 <your bash is called>
 ```
+
+⚠️ If you are not able to edit the PATH, try to see if you can write files in a folder in the PATH that is before the original folder.
 </div><div>
 
 Unfortunately, this doesn't work when the command is invoked with some options, such as `tail -f /var/log/nginx/access.log`.

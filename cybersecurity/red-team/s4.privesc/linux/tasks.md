@@ -6,6 +6,7 @@
 [![startup](../../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 [![bashed](../../../_badges/htb-p/bashed.svg)](https://app.hackthebox.com/machines/Bashed)
 [![celestial](../../../_badges/htb-p/celestial.svg)](https://app.hackthebox.com/machines/Celestial)
+[![bash_cron](../../../_badges/rootme/bash_cron.svg)](https://www.root-me.org/en/Challenges/App-Script/Bash-cron)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -36,4 +37,6 @@ $ /tmp/pspy
 ```
 
 ⏰ In CTFs, they usually run every minute or every 5 minutes.
+
+⚠️ If you create a script that is executed by a cron task, ensure the user reading the file has access to it <small>(if they are not root)</small>.
 </div></div>

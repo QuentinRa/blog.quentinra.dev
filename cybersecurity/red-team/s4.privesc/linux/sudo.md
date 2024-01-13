@@ -19,6 +19,7 @@
 [![knife](../../../_badges/htb-p/knife.svg)](https://app.hackthebox.com/machines/Knife)
 [![broker](../../../_badges/htb-p/broker.svg)](https://app.hackthebox.com/machines/Broker)
 [![busqueda](../../../_badges/htb-p/busqueda.svg)](https://app.hackthebox.com/machines/Busqueda)
+[![sudo_weak_configuration](../../../_badges/rootme/sudo_weak_configuration.svg)](https://www.root-me.org/en/Challenges/App-Script/sudo-weak-configuration)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -35,22 +36,28 @@ The first section is about settings and environment variables that may be exploi
 Matching Defaults entries for [...]:
     [...] # something here
 ```
-</div><div>
 
 The second section is about your [sudoers](/operating-systems/linux/env/files/index.md#etcsudoers) rights. Such commands may be exploited to get root, search the command on [GTOBins #sudo](tools/gtfobins.md).
 
 ```text!
 User [...] may run the following commands on [...]:
     (root) /bin/tar
-    (root) NOPASSWD: /usr/bin/vim
-    (ALL) NOPASSWD: /usr/bin/vim
-    (xxx) NOPASSWD: /opt/script.sh
-    (root) /usr/bin/ssh *
 ```
 
-➡️ For instance, the user below can run `/bin/tar` as `root`. 
+➡️ For instance, the user below can run `/bin/tar` as `root`.
+</div><div>
 
 📚 Sometimes, instead of root, we may be able to run commands as another user, such as `/opt/script.sh` as user `xxx`. Use `sudo -u xxx`.
+
+🍀 Sometimes, patterns are used in commands/paths. In a path, it means we can use `../`. In a command, we can use any option.
+
+```text!
+User [...] may run the following commands on [...]:
+    (root) NOPASSWD: /usr/bin/vim
+    (ALL) NOPASSWD: /usr/bin/vim
+    (xxx) NOPASSWD: /opt/*.sh
+    (root) /usr/bin/ssh *
+```
 
 ☠️ If you can only execute the script and not read it, either try to see if the script use an [injectable](injection.md) parameter or try to find if the source code is available somewhere else <small>(ex: on Git)</small>.
 </div></div>
