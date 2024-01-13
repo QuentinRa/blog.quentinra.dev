@@ -1,10 +1,10 @@
 Hacktricks == Purple      | White
 HTB        == Red         | Black
-HTB (c)    == Grey        | Black
+HTB (c)    == Orange        | Black
 HTB (p)    == Pink        | Black
 OWASP      == Blue        | Black
-Random     == Orange      | Black
+Random     == White       | Black
 POAT       == Green       | Black
 THM        == Yellow      | Black
 THM (p)    == Green-Blue  | Black
-Root-me    == ???         | Black
+Root-me    == Grey        | Black

@@ -12,6 +12,7 @@
 [![colddboxeasy](../../../_badges/thm-p/colddboxeasy.svg)](https://tryhackme.com/room/colddboxeasy)
 [![allinonemj](../../../_badges/thm-p/allinonemj.svg)](https://tryhackme.com/room/allinonemj)
 [![chillhack](../../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
+[![sudo_weak_configuration](../../../_badges/rootme/sudo_weak_configuration.svg)](https://www.root-me.org/en/Challenges/App-Script/sudo-weak-configuration)
 ![nibbles](../../../_badges/htb-p/nibbles.svg)
 ![getsimplecms](../../../_badges/htb-p/getsimplecms.svg)
 [![devvortex](../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
@@ -19,7 +20,6 @@
 [![knife](../../../_badges/htb-p/knife.svg)](https://app.hackthebox.com/machines/Knife)
 [![broker](../../../_badges/htb-p/broker.svg)](https://app.hackthebox.com/machines/Broker)
 [![busqueda](../../../_badges/htb-p/busqueda.svg)](https://app.hackthebox.com/machines/Busqueda)
-[![sudo_weak_configuration](../../../_badges/rootme/sudo_weak_configuration.svg)](https://www.root-me.org/en/Challenges/App-Script/sudo-weak-configuration)
 
 <div class="row row-cols-lg-2"><div>
 

