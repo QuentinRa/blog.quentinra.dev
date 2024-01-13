@@ -32,6 +32,8 @@ If we detect the use of a framework, we can use common techniques and automated 
 [![agentt](../../../../_badges/thm-p/agentt.svg)](https://tryhackme.com/room/agentt)
 [![knife](../../../../_badges/htb-p/knife.svg)](https://app.hackthebox.com/machines/Knife)
 [![http_ip_restriction_bypass](../../../../_badges/rootme/http_ip_restriction_bypass.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-IP-restriction-bypass)
+[![http_user-agent](../../../../_badges/rootme/http_user-agent.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-User-agent)
+[![http_headers-agent](../../../../_badges/rootme/http_headers.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Headers)
 
 <div class="row row-cols-lg-2"><div>
 

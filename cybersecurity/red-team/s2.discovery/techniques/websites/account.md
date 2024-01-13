@@ -2,6 +2,7 @@
 
 [![authenticationbypass](../../../../_badges/thmp/authenticationbypass.svg)](https://tryhackme.com/room/authenticationbypass)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
+[![weak_password](../../../../_badges/rootme/weak_password.svg)](https://www.root-me.org/en/Challenges/Web-Server/Weak-password)
 
 <div class="row row-cols-lg-2"><div>
 
