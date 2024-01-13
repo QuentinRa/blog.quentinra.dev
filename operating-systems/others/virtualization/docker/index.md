@@ -560,6 +560,16 @@ Docker inspect may be used to find credentials.
 $ docker inspect xxx -f '{{json .Config }}' | jq
 $ docker inspect xxx -f '{{json .Config.Env }}' | jq
 ```
+
+If we are in a container as root, and we can access hard drives <small>(fdisk output is not empty)</small>, then we can mount the drive and read its files:
+
+[![docker_i_am_groot](../../../../cybersecurity/_badges/rootme/docker_i_am_groot.svg)](https://www.root-me.org/en/Challenges/App-Script/Docker-I-am-groot)
+
+```ps
+$ fdisk -l
+$ mkdir -p /mnt/sda1
+$ mount /dev/sda1 /mnt/sda1
+```
 </div></div>
 
 <hr class="sep-both">

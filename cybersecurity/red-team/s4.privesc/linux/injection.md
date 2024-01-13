@@ -139,4 +139,16 @@ If we can compile LaTeX, we may be able to
 
 * Execute commands
 * Read non-LaTeX files using `\input{path_to_file}` or using `\usepackage{verbatim} \verbatiminput{myfile.txt}` (comments)
+
+#### Bash Script Arguments
+
+[![bash_unquoted](../../../_badges/rootme/bash_unquoted.svg)](https://www.root-me.org/en/Challenges/App-Script/Bash-unquoted-expression-injection)
+
+If the script uses the argument without quoting them nor validating them, we may be able to inject parameters.
+
+```
+$ cat xxx.sh
+ls $1
+$ ./xxx.sh "-la ."
+```
 </div></div>
