@@ -54,6 +54,7 @@ In every HTTP/HTTPS request/response, there are headers that are set both by the
 * `Server`: name of the HTTP server, maybe the version/OS too
 * `Accept`: media types that the client can understand
 * `User-Agent`: describe the client initiating the request
+* `X-Forwarded-For`: can be used to find the client IP when the client is behind an HTTP proxy or a load balancer
 * ...
 
 ##### HTTP Payload

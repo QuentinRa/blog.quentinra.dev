@@ -72,6 +72,7 @@ There is also a file `robots.txt` with the pages that robots should not crawl/in
 [![picklerick](../../../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
 [![wgelctf](../../../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
+[![html_source_code](../../../../_badges/rootme/html_source_code.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTML-Source-code)
 
 <div class="row row-cols-lg-2"><div>
 

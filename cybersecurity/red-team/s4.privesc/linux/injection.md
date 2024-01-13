@@ -123,7 +123,20 @@ This command is used to prompt the user for input. The problem is that we can wr
 ```py
 open('/tmp/passwd_dump', 'w').write(open('/etc/passwd', 'r').read())
 ```
+
+#### Perl open() 
+
+[![perl_command_injection](../../../_badges/rootme/perl_command_injection.svg)](https://www.root-me.org/en/Challenges/App-Script/Perl-Command-injection)
+
+The open function is perl can execute commands when we use `|` in the filename. For instance, `| cat /etc/passwd`. The code is not vulnerable if there is a `<` before our filename in the `open` function call.
 </div><div>
 
-...
+#### Latex directives
+
+[![latex_input](../../../_badges/rootme/latex_input.svg)](https://www.root-me.org/en/Challenges/App-Script/LaTeX-Input)
+
+If we can compile LaTeX, we may be able to 
+
+* Execute commands
+* Read non-LaTeX files using `\input{path_to_file}` or using `\usepackage{verbatim} \verbatiminput{myfile.txt}` (comments)
 </div></div>
