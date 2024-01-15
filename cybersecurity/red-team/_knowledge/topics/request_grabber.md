@@ -11,9 +11,7 @@ $ nc -lnvp PORT
 <send request to YOUR_PUBLIC_IP:PORT>
 ```
 
-Otherwise, we can use online solutions.
-
-* `https://public.requestbin.com/r/`
+Otherwise, we may use online public solutions.
 </div><div>
 
 For instance, we can use API Testing Platforms:
