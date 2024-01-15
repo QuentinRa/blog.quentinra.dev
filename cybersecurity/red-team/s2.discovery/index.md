@@ -101,6 +101,7 @@ Websites
 * [Virtual hosts](techniques/websites/vhosts.md) 🚪: find virtual hosts
 * [Subdomains](techniques/websites/subdomains.md) 🚪: find subdomains
 * [Parameters](techniques/websites/parameters.md) 🚪: find hidden parameters
+* [Json Web Tokens](techniques/others/jwt.md) 🚪🔑: find and exploit these
 
 ➡️ You should check for signs of [well-known vulnerabilities](../s3.exploitation/index.md#common-vulnerabilities-).
 </div></div>
