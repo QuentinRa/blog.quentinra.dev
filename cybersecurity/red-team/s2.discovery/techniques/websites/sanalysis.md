@@ -75,6 +75,7 @@ There is also a file `robots.txt` with the pages that robots should not crawl/in
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 [![html_source_code](../../../../_badges/rootme/web_server/html_source_code.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTML-Source-code)
 [![http_directory_indexing](../../../../_badges/rootme/web_server/http_directory_indexing.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Directory-indexing)
+[![phpbb_install_files](../../../../_badges/rootme/web_server/phpbb_install_files.svg)](https://www.root-me.org/en/Challenges/Web-Server/Install-files)
 
 <div class="row row-cols-lg-2"><div>
 

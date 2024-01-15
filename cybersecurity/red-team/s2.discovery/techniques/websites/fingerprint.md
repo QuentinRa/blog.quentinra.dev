@@ -133,3 +133,17 @@ $ curl URL/favicon.ico | md5sum
 $ Get-FileHash .\favicon.ico -Algorithm MD5
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## Additional Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### PHP Bulletin Board (phpBB)
+
+[![phpbb_install_files](../../../../_badges/rootme/web_server/phpbb_install_files.svg)](https://www.root-me.org/en/Challenges/Web-Server/Install-files)
+
+When installing a framework, such as [phpBB](https://github.com/phpbb/phpbb), it's important to properly configure it and remove install files.
+</div><div>
+</div></div>

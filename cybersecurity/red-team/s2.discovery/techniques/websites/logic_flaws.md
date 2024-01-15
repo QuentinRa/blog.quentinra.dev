@@ -63,4 +63,20 @@ Then, in `$_REQUEST['n']` there would be `6`, an uncheck value.
 
 While uncommon, if the logic is client-side and only the result is sent to the server, we can do whatever we want.
 </div><div>
+
+#### Execution After Redirect (EAR)
+
+[![http_improper_redirect](../../../../_badges/rootme/web_server/http_improper_redirect.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Improper-redirect)
+
+It occurs when a user is redirected, but if they don't follow the redirection, then they can still access the page.
+
+In PHP, it would occur if the developper forgot to call `exit` as any code after the redirecting is still executed.
+
+You can use `ncat` to read a page without being redirected.
+
+```shell!
+$ nc domain 80
+GET /URI HTTP/1.1
+Host: domain
+```
 </div></div>

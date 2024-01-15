@@ -16,6 +16,7 @@
 [![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
 [![cozyhosting](../../../../_badges/htb-p/cozyhosting.svg)](https://app.hackthebox.com/machines/CozyHosting)
 [![bashed](../../../../_badges/htb-p/bashed.svg)](https://app.hackthebox.com/machines/Bashed)
+[![backup_file](../../../../_badges/rootme/web_server/backup_file.svg)](https://www.root-me.org/en/Challenges/Web-Server/Backup-file)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -23,7 +24,7 @@ Forced browsing is a technique in which we test URLs crafted from a list of comm
 
 * 🧃 Configuration files <small>(ex: .config)</small>
 * 👀 Old files <small>(ex: index.php.old)</small>
-* 💵 Backup files <small>(ex: xxx.bak, backup.xxx)</small>
+* 💵 Backup files <small>(ex: xxx.bak, backup.xxx, xxx~)</small>
 * 🔑 Admin/CMS panels <small>(ex: WordPress admin login page)</small>
 * 💰 Private files <small>(ex: documents...)</small>
 
