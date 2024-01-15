@@ -41,3 +41,22 @@ Common tools are:
 * [dirb](https://dirb.sourceforge.net/) (installable on any Debian)
 * [DirBuster](https://github.com/KajanM/DirBuster) (0.1k ⭐)
 </div></div>
+
+<hr class="sep-both">
+
+## Additional Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### Version Control Files
+
+Sometimes, version control files such as [.git for GIT](/tools-and-frameworks/vcs/git/_general/index.md) may be exposed. They can be used to find the current and the previous versions of the code. For instance, after downloading a `.git`:
+
+```ps
+$ cd .git
+$ git diff                  # it says the code is missing
+$ git restore *             # restore current version
+$ git log -p -- config.php  # look at config.php history
+```
+</div><div>
+</div></div>

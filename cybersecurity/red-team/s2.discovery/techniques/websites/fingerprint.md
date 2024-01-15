@@ -63,7 +63,7 @@ $ curl -I https://example.com/  # query headers using cURL
 
 [![httpindetail](../../../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
 [![celestial](../../../../_badges/htb-p/celestial.svg)](https://app.hackthebox.com/machines/Celestial)
-[![http_cookies](../../../../_badges/rootme/http_cookies.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Cookies)
+[![http_cookies](../../../../_badges/rootme/web_server/http_cookies.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Cookies)
 
 <div class="row row-cols-lg-2"><div>
 
