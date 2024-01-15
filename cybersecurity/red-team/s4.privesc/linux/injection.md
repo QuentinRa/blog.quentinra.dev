@@ -24,8 +24,8 @@ There are basic scenarios in which you can directly exploit the executable, but 
 [![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![commonlinuxprivesc](../../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 [![mustacchio](../../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
-[![bash_system_1](../../../_badges/rootme/bash_system_1.svg)](https://www.root-me.org/en/Challenges/App-Script/ELF32-System-1)
-[![bash_system_2](../../../_badges/rootme/bash_system_2.svg)](https://www.root-me.org/en/Challenges/App-Script/ELF32-System-2)
+[![bash_system_1](../../../_badges/rootme/app_script/bash_system_1.svg)](https://www.root-me.org/en/Challenges/App-Script/ELF32-System-1)
+[![bash_system_2](../../../_badges/rootme/app_script/bash_system_2.svg)](https://www.root-me.org/en/Challenges/App-Script/ELF32-System-2)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -116,7 +116,7 @@ $ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/; chmod +xs /tmp/bash)' ./scr
 
 #### Python input() function
 
-[![python_input](../../../_badges/rootme/python_input.svg)](https://www.root-me.org/en/Challenges/App-Script/Python-input)
+[![python_input](../../../_badges/rootme/app_script/python_input.svg)](https://www.root-me.org/en/Challenges/App-Script/Python-input)
 
 This command is used to prompt the user for input. The problem is that we can write python code <small>(e.g., 5+5)</small>.
 
@@ -126,14 +126,14 @@ open('/tmp/passwd_dump', 'w').write(open('/etc/passwd', 'r').read())
 
 #### Perl open() 
 
-[![perl_command_injection](../../../_badges/rootme/perl_command_injection.svg)](https://www.root-me.org/en/Challenges/App-Script/Perl-Command-injection)
+[![perl_command_injection](../../../_badges/rootme/app_script/perl_command_injection.svg)](https://www.root-me.org/en/Challenges/App-Script/Perl-Command-injection)
 
 The open function is perl can execute commands when we use `|` in the filename. For instance, `| cat /etc/passwd`. The code is not vulnerable if there is a `<` before our filename in the `open` function call.
 </div><div>
 
 #### Latex directives
 
-[![latex_input](../../../_badges/rootme/latex_input.svg)](https://www.root-me.org/en/Challenges/App-Script/LaTeX-Input)
+[![latex_input](../../../_badges/rootme/app_script/latex_input.svg)](https://www.root-me.org/en/Challenges/App-Script/LaTeX-Input)
 
 If we can compile LaTeX, we may be able to 
 
@@ -142,7 +142,7 @@ If we can compile LaTeX, we may be able to
 
 #### Bash Script Arguments
 
-[![bash_unquoted](../../../_badges/rootme/bash_unquoted.svg)](https://www.root-me.org/en/Challenges/App-Script/Bash-unquoted-expression-injection)
+[![bash_unquoted](../../../_badges/rootme/app_script/bash_unquoted.svg)](https://www.root-me.org/en/Challenges/App-Script/Bash-unquoted-expression-injection)
 
 If the script uses the argument without quoting them nor validating them, we may be able to inject parameters.
 

@@ -563,7 +563,7 @@ $ docker inspect xxx -f '{{json .Config.Env }}' | jq
 
 If we are in a container as root, and we can access hard drives <small>(fdisk output is not empty)</small>, then we can mount the drive and read its files:
 
-[![docker_i_am_groot](../../../../cybersecurity/_badges/rootme/docker_i_am_groot.svg)](https://www.root-me.org/en/Challenges/App-Script/Docker-I-am-groot)
+[![docker_i_am_groot](../../../../cybersecurity/_badges/rootme/app_script/docker_i_am_groot.svg)](https://www.root-me.org/en/Challenges/App-Script/Docker-I-am-groot)
 
 ```ps
 $ fdisk -l

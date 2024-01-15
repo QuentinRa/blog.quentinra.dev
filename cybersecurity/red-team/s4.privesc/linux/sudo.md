@@ -12,7 +12,7 @@
 [![colddboxeasy](../../../_badges/thm-p/colddboxeasy.svg)](https://tryhackme.com/room/colddboxeasy)
 [![allinonemj](../../../_badges/thm-p/allinonemj.svg)](https://tryhackme.com/room/allinonemj)
 [![chillhack](../../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
-[![sudo_weak_configuration](../../../_badges/rootme/sudo_weak_configuration.svg)](https://www.root-me.org/en/Challenges/App-Script/sudo-weak-configuration)
+[![sudo_weak_configuration](../../../_badges/rootme/app_script/sudo_weak_configuration.svg)](https://www.root-me.org/en/Challenges/App-Script/sudo-weak-configuration)
 ![nibbles](../../../_badges/htb-p/nibbles.svg)
 ![getsimplecms](../../../_badges/htb-p/getsimplecms.svg)
 [![devvortex](../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)

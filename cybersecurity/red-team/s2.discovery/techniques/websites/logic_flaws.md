@@ -59,7 +59,7 @@ Then, in `$_REQUEST['n']` there would be `6`, an uncheck value.
 
 #### Client-Side Logic
 
-[![http_post](../../../../_badges/rootme/http_post.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-POST)
+[![http_post](../../../../_badges/rootme/web_server/http_post.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-POST)
 
 While uncommon, if the logic is client-side and only the result is sent to the server, we can do whatever we want.
 </div><div>
