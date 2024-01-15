@@ -9,7 +9,7 @@
 
 JSON Web Token (JWT) are used to represent signed data. They are commonly used in for authentication and authorization.
 
-The format is: `<algo>.<data>.<signature>`. The final string is encoded to be URL-safe while it can be easily decoded.
+The format is: `<algo>.<data>.<signature>`. Each part is base64 encoded, so the final string is URL-safe while it can be easily decoded.
 
 The data is signed using a secret key. If the secret key is compromised, everyone can sign messages 🔏.
 
@@ -59,5 +59,7 @@ Stuff that I found, but never read/used yet.
 
 * [PortSwigger JWT](https://portswigger.net/web-security/jwt)
 * `hashcat -a 0 -m 16500`
+* Attach algo=none means signature is ignored.
+* [JWT](https://jwt.io/), (Bearer, encrypted token), modern alternative to (apache) HTTP basic auth? (from=35). HTB/170. [RFC](https://tools.ietf.org/html/rfc7617).
 </div><div>
 </div></div>
