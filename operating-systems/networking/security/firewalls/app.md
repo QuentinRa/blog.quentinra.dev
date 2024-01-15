@@ -6,7 +6,7 @@
 
 Applicative firewall operate at the layer 7 of the OSI model. It's designed to protect application or services from attacks. For instance, they could be set up to protect
 
-* a database from [SQL Injection](/cybersecurity/red-team/s3.exploitation/vulns/injection/sql.md) (SQLi)
+* a database from [SQL Injection](/cybersecurity/red-team/s3.exploitation/vulns/injection/sqli.md) (SQLi)
 * a website from [XSS](/cybersecurity/red-team/s3.exploitation/vulns/web/xss.md)
 * ...
 </div><div>
