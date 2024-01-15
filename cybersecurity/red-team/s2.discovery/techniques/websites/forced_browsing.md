@@ -50,6 +50,8 @@ Common tools are:
 
 #### Version Control Files
 
+[![insecure_code_management](../../../../_badges/rootme/web_server/insecure_code_management.svg)](https://www.root-me.org/en/Challenges/Web-Server/Insecure-Code-Management)
+
 Sometimes, version control files such as [.git for GIT](/tools-and-frameworks/vcs/git/_general/index.md) may be exposed. They can be used to find the current and the previous versions of the code. For instance, after downloading a `.git`:
 
 ```ps
