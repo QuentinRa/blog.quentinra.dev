@@ -6,13 +6,16 @@ For starter, you may use <kbd>CTRL+U</kbd> or Right-click and "View page source"
 
 <hr class="sep-both">
 
-## Hidden HTML tags
+## HTML tags
 
 [![walkinganapplication](../../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
+[![html_disabled_buttons](../../../../_badges/rootme/web_client/html_disabled_buttons.svg)](https://www.root-me.org/en/Challenges/Web-Client/HTML-disabled-buttons)
 
 <div class="row row-cols-lg-2"><div>
 
-This sample of script below is fetching every HTML tag that is hidden aside from some uninteresting ones.
+A webpage often have hidden or disabled HTML tags.
+
+This sample script below is fetching every HTML tag that is hidden aside from some uninteresting ones.
 
 ➡️ Find hidden input fields, hidden content...
 </div><div>
@@ -105,9 +108,12 @@ There are more complex regexes if you want, such as [rt/96517](https://www.regex
 
 ## Analyze the javascript
 
-<div class="row row-cols-lg-2"><div>
-
 [![walkinganapplication](../../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
+[![javascript_authentication](../../../../_badges/rootme/web_client/javascript_authentication.svg)](https://www.root-me.org/en/Challenges/Web-Client/Javascript-Authentication)
+[![javascript_authentication_2](../../../../_badges/rootme/web_client/javascript_authentication_2.svg)](https://www.root-me.org/en/Challenges/Web-Client/Javascript-Authentication-2)
+[![javascript_source](../../../../_badges/rootme/web_client/javascript_source.svg)](https://www.root-me.org/en/Challenges/Web-Client/Javascript-Source)
+
+<div class="row row-cols-lg-2"><div>
 
 You may use the console debugger, after adding a breakpoint in the JavaScript, to analyze the javascript code, if needed.
 

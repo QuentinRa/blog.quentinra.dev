@@ -21,7 +21,12 @@ For simple programs, we might be able to get the information we need using the c
 
 ## Code Obfuscation
 
-[![javascriptdeobfuscation](../../../cybersecurity/_badges/htb/javascriptdeobfuscation.svg)](https://academy.hackthebox.com/course/preview/javascript-deobfuscation)
+[![javascriptdeobfuscation](../../_badges/htb/javascriptdeobfuscation.svg)](https://academy.hackthebox.com/course/preview/javascript-deobfuscation)
+[![javascript_obfuscation_1](../../_badges/rootme/web_client/javascript_obfuscation_1.svg)](https://www.root-me.org/en/Challenges/Web-Client/Javascript-Obfuscation-1)
+[![javascript_obfuscation_2](../../_badges/rootme/web_client/javascript_obfuscation_2.svg)](https://www.root-me.org/en/Challenges/Web-Client/Javascript-Obfuscation-2)
+[![javascript_obfuscation_3](../../_badges/rootme/web_client/javascript_obfuscation_3.svg)](https://www.root-me.org/en/Challenges/Web-Client/Javascript-Obfuscation-3)
+[![javascript_native_code](../../_badges/rootme/web_client/javascript_native_code.svg)](https://www.root-me.org/en/Challenges/Web-Client/Javascript-Native-code)
+[![ast_deobfuscation](../../_badges/rootme/web_client/ast_deobfuscation.svg)](https://www.root-me.org/en/Challenges/Web-Client/AST-Deobfuscation)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -30,6 +35,8 @@ Code obfuscation is an automated process to make the code less-readable for huma
 Code obfuscation doesn't impact the program functionality, but it may impact its performance: obfuscated code is usually slower.
 </div><div>
 
+#### Javascript Obfuscation
+
 A few obfuscators for JavaScript:
 
 * [beautifytools](http://beautifytools.com/javascript-obfuscator.php)
@@ -37,8 +44,16 @@ A few obfuscators for JavaScript:
 * [jjencode](https://utf-8.jp/public/jjencode.html)
 * [aaencode](https://utf-8.jp/public/aaencode.html)
 
-You may try [unpacker](https://matthewfl.com/unPacker.html) to un-obfuscate Javascript code.
+You may try [unpacker](https://matthewfl.com/unPacker.html) to unpack code while you can try [relative.im](https://deobfuscate.relative.im/) or [deobfuscate.io](https://deobfuscate.io/) to undo simple obfuscation.
 
+Native code or using a [abstract syntax tree](https://astexplorer.net/) are also possible. You can decode an AST using [escodegen](https://github.com/estools/escodegen) <small>(2.6k ⭐)</small>.
+
+```js!
+const { generate } = require('escodegen');
+const ast = {}; // add the JSON AST here
+const generatedCode = generate(ast);
+console.log(generatedCode);
+```
 </div></div>
 
 <hr class="sep-both">
