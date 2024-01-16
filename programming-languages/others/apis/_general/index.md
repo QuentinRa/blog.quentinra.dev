@@ -201,7 +201,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* [GraphQL](https://graphql.org/) ([article on best practices](https://stepzen.com/blog/designing-graphql-apis-best-practices-and-learnings-from-rest-api-design))
 * [insomnia](https://birdie0.github.io/discord-webhooks-guide/tools/insomnia.html)
 * [httpie](https://birdie0.github.io/discord-webhooks-guide/tools/httpie.html)
 * OData (Open Data)

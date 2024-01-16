@@ -67,6 +67,5 @@ Stuff that I found, but never read/used yet.
 
 Graph Query Language ([GQL](https://en.wikipedia.org/wiki/Graph_Query_Language))
 
-* GraphQL
 * SPARQL
 </div></div>

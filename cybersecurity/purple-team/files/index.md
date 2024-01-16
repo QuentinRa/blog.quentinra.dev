@@ -46,6 +46,7 @@ PDF version:    1.7
 #### Image metadata
 
 [![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
+[![exif_metadata](../../_badges/rootme/steganography/exif_metadata.svg)](https://www.root-me.org/fr/Challenges/Steganographie/EXIF-Metadata)
 
 You can use `exiftool`, [jimpl](https://jimpl.com/), [IMV](https://www.geekyhumans.com/tools/image-metadata-viewer)... Also, do a reverse image search 🧵.
 

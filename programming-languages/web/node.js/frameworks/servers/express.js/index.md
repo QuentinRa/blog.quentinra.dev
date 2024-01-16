@@ -19,12 +19,12 @@ $ npm audit fix --force
 
 **Understand your generated project**
 
-* ✨ Your server is created inside `/bin/www`. <small>You will most likely never have to edit this file.</small>
-* 🍹 It will load routes your application `/app.js`. <small>You will add "routes" and "middlewares" here.</small>
-* 🔥 Your routes are stored inside `/routes`.
-* 💐 Your public files are stored inside `/public`.
+* ✨ Your server file is created inside `/bin/www`. <small>You will most likely never have to edit this file.</small>
+* 🍹 It will load the application "routes" from `/app.js`. <small>You will add "routes" and "middlewares" here.</small>
+* 🔥 The associated routes files are stored inside `/routes`.
+* 💐 Your publicly URL accessible files are stored inside `/public`.
 
-If you are not familiar with routes, HTTP methods/response codes... Then you should learn that first. [See HTTP protocol](/operating-systems/networking/protocols/http.md).
+If you are not familiar with routes, HTTP methods/response codes... Then you should learn that first. [Refer to the HTTP protocol](/operating-systems/networking/protocols/http.md).
 
 </div></div>
 
