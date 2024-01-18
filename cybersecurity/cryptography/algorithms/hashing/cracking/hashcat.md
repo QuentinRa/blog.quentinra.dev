@@ -213,5 +213,6 @@ Stuff that I found, but never read/used yet.
 * [nsa-rules](https://github.com/NSAKEY/nsa-rules) (0.5k ⭐, 2016 🪦)
 * [Hob0Rules](https://github.com/praetorian-inc/Hob0Rules) (1.3k ⭐, 2016 🪦)
 * [Hob0Rules](https://github.com/praetorian-inc/Hob0Rules) (0.1k ⭐, 2022 ☠️)
+* `/usr/share/hashcat/rules/best64.rule`
 </div><div>
 </div></div>

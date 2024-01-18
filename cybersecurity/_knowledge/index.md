@@ -266,6 +266,7 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [infinitelogins](https://infinitelogins.com/)
 * [4nuit](https://github.com/4nuit/Hacking)
 * [Anlominus](https://github.com/Anlominus)
+* [thehacker.recipes](https://www.thehacker.recipes)
 </div>
 
 </div>

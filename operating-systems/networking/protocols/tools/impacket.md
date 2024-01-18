@@ -63,7 +63,7 @@ SQL> exit
 
 #### Dump hashes from backup
 
-Dump hashes from a backup of SAM and SYSTEM hashes.
+Dump hashes from a backup of SAM and SYSTEM hashes. There are local credentials and domain cached credentials.
 
 ```shell!
 $ impacket-secretsdump -sam XXX -system YYY LOCAL

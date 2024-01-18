@@ -14,6 +14,12 @@
 [![cowboyhacker](../../../_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
 [![devvortex](../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
 [![cozyhosting](../../../_badges/htb-p/cozyhosting.svg)](https://app.hackthebox.com/machines/CozyHosting)
+[![file_pkzip](../../../_badges/rootme/cryptanalysis/file_pkzip.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/File-PKZIP)
+[![hash_dcc](../../../_badges/rootme/cryptanalysis/hash_dcc.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-DCC)
+[![hash_dcc2](../../../_badges/rootme/cryptanalysis/hash_dcc2.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-DCC2)
+[![hash_lm](../../../_badges/rootme/cryptanalysis/hash_lm.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-LM)
+[![hash_md5](../../../_badges/rootme/cryptanalysis/hash_md5.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-Message-Digest-5)
+[![hash_nt](../../../_badges/rootme/cryptanalysis/hash_nt.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-NT)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -196,11 +202,25 @@ $ john hashes --format=sha512crypt --wordlist=wordlist
 
 #### Windows password hash cracking
 
+[![hash_dcc](../../../_badges/rootme/cryptanalysis/hash_dcc.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-DCC)
+[![hash_dcc2](../../../_badges/rootme/cryptanalysis/hash_dcc2.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-DCC2)
+[![hash_lm](../../../_badges/rootme/cryptanalysis/hash_lm.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-LM)
+[![hash_nt](../../../_badges/rootme/cryptanalysis/hash_nt.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-NT)
+
 Modern Windows are using the hash format "NT", also referred to as "NTLM", because "LM" was the previous hash format.
 
 ```shell!
 $ john myhash --format=nt --wordlist=wordlist
 $ john myhash --format=netntlmv2 --wordlist=wordlist
+$ hashcat -a 0 -m 1000 myhash # NTLM
+$ hashcat -a 0 -m 3000 myhash # LM
+```
+
+There are also Domain Cached Credentials.
+
+```ps
+$ hashcat -a 0 -m 1100 hash wordlist # password:username
+$ hashcat -a 0 -m 2100 hash wordlist # $DCC2$salt#username#hash
 ```
 
 <br>
@@ -260,6 +280,7 @@ $ hashcat -m 11600 [...]
 [![crackingpasswordswithhashcat](../../../_badges/htb/crackingpasswordswithhashcat.svg)](https://academy.hackthebox.com/course/preview/cracking-passwords-with-hashcat)
 [![agentsudoctf](../../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 [![chillhack](../../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
+[![file_pkzip](../../../_badges/rootme/cryptanalysis/file_pkzip.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/File-PKZIP)
 
 You must convert the ZIP file to a crackable file for john:
 
@@ -325,6 +346,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [Hash-Buster](https://github.com/s0md3v/Hash-Buster)
+* [password_cracking_rules](https://github.com/NotSoSecure/password_cracking_rules) and [OneRuleToRuleThemStill](https://github.com/stealthsploit/OneRuleToRuleThemStill)
 * Blowfish and BCrypt (rounds of Blowfish)
 * Use a smaller targeted wordlist for bcrypt
 * Argon2
