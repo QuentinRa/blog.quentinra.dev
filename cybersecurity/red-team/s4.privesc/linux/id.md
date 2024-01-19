@@ -18,11 +18,12 @@
 * `echo $0`: language used by the current shell
 * `uname -a`: info about the kernel
 * `hostname`: info about the host <small>(ex: `website-dev` -> role of the user)</small>
-* `/proc/version`: information about the machine
+* `/proc/version`: information about the machine kernel
 * `/etc/*release`: information about the operating system
 * `/etc/issue`: an alternative to find the OS/version
 * `ps -e` / `top`: see running processes, first column==owner
 * `env`: see environment variables
+* `lscpu`: list information about the CPU
 </div><div>
 
 **Permissions**

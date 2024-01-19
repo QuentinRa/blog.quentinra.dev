@@ -38,6 +38,8 @@ Each operating system has its own set of escalation vectors while they share sim
 * **Host information** 💻: it may be used to find if there are well-known vulnerabilities or misconfigurations.
 
 * **Network information** 🌍: from the outside, we mostly only saw a portion of the internal network. We find find that the host is running a FTP server only available from the inside.
+
+Additionally, look for folders where you can download and run scripts, along with the machine configuration to configure them properly. 
 </div><div>
 
 I compiled a list of handy commands per operating system:
@@ -67,11 +69,15 @@ You will also have to look for installed tools and apps along with their version
 * 🔑 Finding [credentials/files](#credential-hunting) <small>(config, logs, ssh keys...)</small>
 * 💥 Exploiting the [kernel](linux/kernel.md)
 * 🐸 Misconfigured [file permissions](linux/perms.md)
+* 👻 Look for unmounted drives
+* 👻 Look for printers (`lpstat`)
 
 External tools/services
 
 * 🎠 Misconfigured [NFS shares](/operating-systems/networking/protocols/nfs.md#nfs-vulnerabilities-)
 * 🎠 Misconfigured [Docker Socket/Permissions](/operating-systems/others/virtualization/docker/index.md#docker-pentester-notes-)
+
+⚠️ Don't forget hidden files.
 </div><div>
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
@@ -154,7 +160,7 @@ PS> powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"
 
 You may try to look for credentials.
 
-* 🔐 command history <small>(ex: ~/.bash_history)</small>
+* 🔐 command history <small>(ex: ~/.bash_history, \*hist\*)</small>
 * 🌍 browser history and [saved passwords](others/browser.md)
 * 🛣️ [logs](/cybersecurity/blue-team/topics/logs.md) (`/var/log/`)
 * 🐚 backups <small>(.old, .bak...)</small>

