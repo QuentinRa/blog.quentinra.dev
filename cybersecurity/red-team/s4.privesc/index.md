@@ -64,7 +64,7 @@ You will also have to look for installed tools and apps along with their version
 
 * 💎 Exploiting [sudo](linux/sudo.md)
 * ⏰ Exploiting [scheduled tasks](linux/tasks.md) <small>(cron tasks)</small>
-* 🔑 Finding [credentials/files](linux/credentials.md) <small>(config, logs, ssh keys...)</small>
+* 🔑 Finding [credentials/files](#credential-hunting) <small>(config, logs, ssh keys...)</small>
 * 💥 Exploiting the [kernel](linux/kernel.md)
 * 🐸 Misconfigured [file permissions](linux/perms.md)
 
@@ -111,7 +111,7 @@ Additional references
 
 * 💎 Exploiting [UAC](windows/uac.md)
 * ⏰ Exploiting [scheduled tasks](windows/tasks.md)
-* 🔑 Finding [credentials](windows/credentials.md) <small>(config, logs, passwords...)</small>
+* 🔑 Finding [credentials](#credential-hunting) <small>(config, logs, passwords...)</small>
 * 💥 Exploiting [services](windows/services.md)
 * 🐸 Exploiting [privileges](windows/perms.md)
 
@@ -138,6 +138,89 @@ $ wes.py --update         # update local database
 $ wes.py [...] output.txt # process the selected tool output
 PS> powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"
 PS> powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Credential Hunting
+
+[![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
+[![windowsprivesc20](../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
+[![ignite](../../_badges/thm-p/ignite.svg)](https://tryhackme.com/room/ignite)
+[![chillhack](../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
+
+<div class="row row-cols-lg-2"><div>
+
+You may try to look for credentials.
+
+* 🔐 command history <small>(ex: ~/.bash_history)</small>
+* 🌍 browser history and [saved passwords](others/browser.md)
+* 🛣️ [logs](/cybersecurity/blue-team/topics/logs.md) (`/var/log/`)
+* 🐚 backups <small>(.old, .bak...)</small>
+* ✉️ conversations/mails (`/var/mail/`)
+* 🌳 website configurations (`.env`)
+* 👜 check the registry <small>(Windows, admin required)</small>
+* ...
+
+You often find interesting files in easy CTFs using:
+
+```shell!
+$ find / -user $(whoami) -type f 2>/dev/null | grep -v /proc | grep -v /sys
+$ find / -type f -writable 2>/dev/null | grep -v /proc | grep -v /sys
+```
+
+Manually find interesting files
+
+* `ls -ahl /root/`: test if root's home is readable
+* `ls /`: look for unexpected folders in `/`
+* `~/Desktop`: look for documents, passwords...
+* `~/Documents`: look for documents, passwords...
+* `%appdata%`: look for sensitive applications data
+
+Find credentials, keys, tokens, passwords:
+
+```ps
+$ find / -name .ssh 2> /dev/null
+$ find / -name *id_dsa* 2> /dev/null
+$ find / -wholename "*.git/config" 2> /dev/null | xargs grep "url"
+```
+</div><div>
+
+Read PowerShell console history:
+
+```shell!
+PS> type $Env:userprofile\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
+CMD> type %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
+```
+
+List saved credentials by Windows:
+
+```shell!
+PS> cmdkey /list
+PS> # use 'admin' saved credentials to start cmd.exe
+PS> runas /savecred /user:admin cmd.exe
+```
+
+Some known locations:
+
+```powershell
+# Internet Information Services (IIS) = the default web server
+PS> type C:\inetpub\wwwroot\web.config | findstr connectionString
+PS> type C:\Windows\Microsoft.NET\Framework64\vX.X.XXXXX\Config\web.config | findstr connectionString
+# Windows Deployment Services (credentials of the admin that
+# deployed the OS image to several hosts, referred as "Unattended")
+PS> type C:\Unattend.xml
+PS> type C:\Windows\Panther\Unattend.xml
+PS> type C:\Windows\Panther\Unattend\Unattend.xml
+PS> type C:\Windows\system32\sysprep.inf
+PS> type C:\Windows\system32\sysprep\sysprep.xml
+# Putty
+PS> reg query HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\ /f "Proxy" /s
+# VNC servers
+# FileZilla
+PS> type C:\xampp\FileZilla Server\FileZilla Server.xml
+PS> type C:\Program Files\FileZilla Server\FileZilla Server.xml
 ```
 </div></div>
 
