@@ -523,6 +523,7 @@ networks:
 
 ## Docker Pentester Notes ☠️
 
+[![linuxprivilegeescalation](../../../../cybersecurity/_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![chillhack](../../../../cybersecurity/_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
 [![busqueda](../../../../cybersecurity/_badges/htb-p/busqueda.svg)](https://app.hackthebox.com/machines/Busqueda)
 

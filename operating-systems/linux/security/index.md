@@ -38,20 +38,7 @@ Stuff that I found, but never read/used yet.
 * Exec Shield
 </div><div>
 
-<details class="details-n">
-<summary>LXC Linux Containers</summary>
-
-Linux Containers (LXC). Virtualization technology. Uses cgroups and namespaces for isolation. Lightweight. Can have docker + LXC? Kernel must support virtualization.
-
-```shell!
-$ sudo apt-get install lxc lxc-utils -y
-$ sudo lxc-create -n xxx -t yyy
-$ lxc-ls 
-$ lxc-start/stop/restart -n xxx
-$ lxc-config -n xxx -s storage/network/security
-$ lxc-attach -n xxx [-f /path/to/share]
-```
-</details>
+* LXC
 
 Upgrade packages.
 
