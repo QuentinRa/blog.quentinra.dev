@@ -46,7 +46,10 @@ The in-browser HUB can be enabled by toggling the 'map' button. There is a tutor
 ![ZAP HUD](_images/hud.png)
 </div>
 
-To intercept a request, we must first click on the green button.
+* There is a button to show hidden comments/fields
+* There is a button to enable all disabled fields
+
+To intercept a request, we must first click on the green button. We can alternatively use the shortcut: `CTRL+B`.
 
 <div class="text-center">
 
@@ -54,4 +57,32 @@ To intercept a request, we must first click on the green button.
 </div>
 
 The first button will send the request and catch the response. The second button will send the request and won't catch the response.
+</div></div>
+
+<hr class="sep-both">
+
+## ZAProxy Features
+
+<div class="row row-cols-lg-2"><div>
+
+#### ZAProxy Requester
+
+ZAProxy is very similar to Burp Suite Repeater. From any request, right click on it, and select 'Open In Requester tab...'. Alternatively, use the shortcut <kbd>CTRL+W</kbd>.
+
+You should double-click on requester to get a better view of the 4 panels. Double-click back on requester to get back the usual UI.
+
+* The top-level left panel is for the request headers
+* The top-level right panel is for the response headers
+* The bottom-left panel is for the request body
+* The bottom-right panel is for the response body
+
+Click on 'send' to send the request. 
+
+
+#### ZAProxy Encoder
+
+The request body is automatically URL encoded. After selecting some text, you can right-click on it and select 'Encode/Decode/Hash'.
+
+This can be handy to easily decode or get the encoding of a text.
+</div><div>
 </div></div>
