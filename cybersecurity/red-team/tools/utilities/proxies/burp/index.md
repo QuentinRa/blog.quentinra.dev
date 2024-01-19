@@ -1,10 +1,10 @@
 # Burp Suite
 
-[![burpsuitebasics](../../../_badges/thm/burpsuitebasics.svg)](https://tryhackme.com/room/burpsuitebasics)
-[![burpsuiterepeater](../../../_badges/thmp/burpsuiterepeater.svg)](https://tryhackme.com/room/burpsuiterepeater)
-[![burpsuiteintruder](../../../_badges/thmp/burpsuiteintruder.svg)](https://tryhackme.com/room/burpsuiteintruder)
-[![burpsuiteom](../../../_badges/thmp/burpsuiteom.svg)](https://tryhackme.com/room/burpsuiteom)
-[![burpsuiteextender](../../../_badges/thmp/burpsuiteextender.svg)](https://tryhackme.com/room/burpsuiteextender)
+[![burpsuitebasics](../../../../../_badges/thm/burpsuitebasics.svg)](https://tryhackme.com/room/burpsuitebasics)
+[![burpsuiterepeater](../../../../../_badges/thmp/burpsuiterepeater.svg)](https://tryhackme.com/room/burpsuiterepeater)
+[![burpsuiteintruder](../../../../../_badges/thmp/burpsuiteintruder.svg)](https://tryhackme.com/room/burpsuiteintruder)
+[![burpsuiteom](../../../../../_badges/thmp/burpsuiteom.svg)](https://tryhackme.com/room/burpsuiteom)
+[![burpsuiteextender](../../../../../_badges/thmp/burpsuiteextender.svg)](https://tryhackme.com/room/burpsuiteextender)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -28,12 +28,12 @@ Burp Suite Community is free, and most features are included in 😎, through th
 
 There are 6 modules in the suite:
 
-* [Proxy](files/burp_proxy.md): intercept, and modify requests
-* [Repeater](files/burp_repeater.md): intercept, modify, and resend multiple times
-* [Intruder](files/burp_intruder.md): try to brute force entry point/forms/...
-* [Decoder](files/burp_decoder.md): decode something, or encode a payload
-* [Comparer](files/burp_comparer.md): compare data
-* [Sequencer](files/burp_sequencer.md): check algorithm generating tokens/...
+* [Proxy](modules/proxy.md): intercept, and modify requests
+* [Repeater](modules/repeater.md): intercept, modify, and resend multiple times
+* [Intruder](modules/intruder.md): try to brute force entry point/forms/...
+* [Decoder](modules/decoder.md): decode something, or encode a payload
+* [Comparer](modules/comparer.md): compare data
+* [Sequencer](modules/sequencer.md): check algorithm generating tokens/...
 </div><div>
 
 You can use <kbd>CTRL+SHIFT</kbd> and a letter to switch to a tab:

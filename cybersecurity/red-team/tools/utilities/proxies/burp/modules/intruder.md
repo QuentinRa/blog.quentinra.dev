@@ -1,9 +1,7 @@
 # Burp Intruder
 
-[![burpsuiteintruder](../../../../_badges/thmp/burpsuiteintruder.svg)](https://tryhackme.com/room/burpsuiteintruder)
-[![fileuploadattacks](../../../../_badges/htb/fileuploadattacks.svg)](https://academy.hackthebox.com/course/preview/file-upload-attacks)
-
-[Go back](../burp.md)
+[![burpsuiteintruder](../../../../../../_badges/thmp/burpsuiteintruder.svg)](https://tryhackme.com/room/burpsuiteintruder)
+[![fileuploadattacks](../../../../../../_badges/htb/fileuploadattacks.svg)](https://academy.hackthebox.com/course/preview/file-upload-attacks)
 
 <div class="row row-cols-lg-2"><div>
 

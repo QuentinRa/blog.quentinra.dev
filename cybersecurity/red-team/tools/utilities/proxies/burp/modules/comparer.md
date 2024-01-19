@@ -1,8 +1,6 @@
 # Burp Comparer
 
-[Go back](../burp.md)
-
-[![burpsuiteom](../../../../_badges/thmp/burpsuiteom.svg)](https://tryhackme.com/room/burpsuiteom)
+[![burpsuiteom](../../../../../../_badges/thmp/burpsuiteom.svg)](https://tryhackme.com/room/burpsuiteom)
 
 <div class="row row-cols-lg-2"><div>
 

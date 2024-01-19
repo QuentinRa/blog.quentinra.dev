@@ -2,6 +2,7 @@
 
 [![linuxsystemhardening](../../../cybersecurity/_badges/thmp/linuxsystemhardening.svg)](https://tryhackme.com/room/linuxsystemhardening)
 [![linuxfundamentals](../../../cybersecurity/_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/course/preview/linux-fundamentals)
+[![linuxprivilegeescalation](../../../cybersecurity/_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 
 <div class="row row-cols-lg-2"><div>
 </div><div>
@@ -36,6 +37,7 @@ Stuff that I found, but never read/used yet.
   * https://access.redhat.com/support/policy/updates/errata/
 * [Protection_ring](https://en.wikipedia.org/wiki/Protection_ring)
 * Exec Shield
+* `unattended-upgrades`, read HT2TB notes
 </div><div>
 
 * LXC

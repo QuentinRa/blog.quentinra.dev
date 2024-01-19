@@ -1,8 +1,6 @@
 # Burp Repeater
 
-[Go back](../burp.md)
-
-[![burpsuiterepeater](../../../../_badges/thmp/burpsuiterepeater.svg)](https://tryhackme.com/room/burpsuiterepeater)
+[![burpsuiterepeater](../../../../../../_badges/thmp/burpsuiterepeater.svg)](https://tryhackme.com/room/burpsuiterepeater)
 
 <div class="row row-cols-lg-2"><div>
 

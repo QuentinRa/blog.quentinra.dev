@@ -1,6 +1,6 @@
 # Burp Proxy
 
-[![burpsuitebasics](../../../../_badges/thm/burpsuitebasics.svg)](https://tryhackme.com/room/burpsuitebasics)
+[![burpsuitebasics](../../../../../../_badges/thm/burpsuitebasics.svg)](https://tryhackme.com/room/burpsuitebasics)
 
 <div class="row row-cols-lg-2"><div>
 
