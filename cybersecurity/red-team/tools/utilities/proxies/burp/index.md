@@ -5,6 +5,7 @@
 [![burpsuiteintruder](../../../../../_badges/thmp/burpsuiteintruder.svg)](https://tryhackme.com/room/burpsuiteintruder)
 [![burpsuiteom](../../../../../_badges/thmp/burpsuiteom.svg)](https://tryhackme.com/room/burpsuiteom)
 [![burpsuiteextender](../../../../../_badges/thmp/burpsuiteextender.svg)](https://tryhackme.com/room/burpsuiteextender)
+[![usingwebproxies](../../../../../_badges/htb/usingwebproxies.svg)](https://academy.hackthebox.com/course/preview/linux-fundamentals)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -18,6 +19,14 @@ Burp Suite Community is free, and most features are included in 😎, through th
 ➡️ You can set options for the project according to your needs for this project, or/and for the user, such as using the dark theme.
 </div><div>
 
+On Kali Linux, Burp Suite is installed by default:
+
+```ps
+$ sudo apt install burpsuite # if not installed
+$ burpsuite
+```
+
+📚 As a student, you can apply for a [free trial](https://portswigger.net/burp/pro/trial).
 </div></div>
 
 <hr class="sep-both">

@@ -9,33 +9,21 @@ This is Burp **core** module. It's used to intercept requests <small>(and respon
 First, you must configure your browser to send requests to Burp.
 
 * **Solution 1**: Use burp preconfigured chromium web browser
-* **Solution 2** ✅: Add the "foxyproxy" plugin to your browser
-* **Solution 3**: change any settings (browser...) to redirect your browser requests `127.0.0.1:8080`
+* **Solution 2** ✅: Add the [FoxyProxy](/cybersecurity/red-team/tools/utilities/proxies/foxyproxy.md) extension to your browser and configure it to use `127.0.0.1:8080`
+* **Solution 3**: change any settings such as your browser settings to redirect your browser requests `127.0.0.1:8080`
 </div><div>
 
-<details class="details-n">
-<summary>Configuration foxyproxy</summary>
+When not using the first solution, you need to [configure](https://portswigger.net/burp/documentation/desktop/external-browser-config/certificate) **SSL** ⚠️! 
 
-* Click on the plugin | options
-* Create a new config with title=Burp, Proxy IP: 127.0.0.1, and Port: 8080
-
-Now, when you click on the plugin, and then the configuration, any request will be sent to Burp. It also means that when enabled, you "can't" browser your pages unless you allow the request to be sent in burp suite. Click on the plugin, and "turn off" the plugin when you are done.
-</details>
-
-<details class="details-n">
-<summary>Configuration SSL (avoid an error for HTTPS websites)</summary>
-
-Aside from solution 1, regardless of the mean you used to redirect requests, it won't with HTTPS requests. There is documentation as to how you should fix it [here](https://portswigger.net/burp/documentation/desktop/external-browser-config/certificate).
-
-* Intercept must be on in Burp Suite
-* Go to `http://burpsuite/` | Click on "CA". Alternatively, you can use `http://burp/cert`.
-* Add the CA to your browser, as explained in the doc. For Firefox
-  * Go to settings | search certificates
-  * View certificates
+* Intercept must be 'on' in Burp Suite
+* Navigate to `http://burpsuite/` or `http://burp/cert`
+* Download the certificate 'CA'
+* Add it to your browser, as explained in the documentation
+  * Navigate to settings OR search 'certificate'
+  * Click on 'view' certificates
   * Import the downloaded certificate
-  * Check "Trust this CA to identify websites"
+  * Toggle "Trust this CA to identify websites"
   * Done
-</details>
 </div></div>
 
 <hr class="sep-both">
