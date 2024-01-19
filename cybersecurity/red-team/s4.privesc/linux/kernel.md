@@ -2,6 +2,7 @@
 
 [![linprivesc](../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
+[![linuxprivilegeescalation](../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![overlayfs](../../../_badges/thm-p/overlayfs.svg)](https://tryhackme.com/room/overlayfs)
 
 <div class="row row-cols-lg-2"><div>

