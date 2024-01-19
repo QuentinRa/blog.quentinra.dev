@@ -87,6 +87,18 @@ $ /usr/bin/python3 -c 'import os; os.execl("/bin/sh", "sh", "-p")'
 
 <hr class="sep-both">
 
+## Special Groups
+
+[![linuxprivilegeescalation](../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+
+<div class="row row-cols-lg-2"><div>
+
+Users in the `adm` group are able to read all logs. Log management utilities such as [logrotate](https://linux.die.net/man/8/logrotate) may be vulnerable. See also: [logrotten](https://github.com/whotwagner/logrotten).
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Misconfigured system files
 
 [![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
@@ -100,6 +112,7 @@ If `/etc/passwd` was <s>intentionally</s> misconfigured or if it is a misconfigu
 $ cat /etc/passwd
 # if you can write it: make your user part of root group
 # if you can write it: add a new user that is part of root group
+# if you can write it: remove the 'x' to su without password
 ```
 
 If `/etc/shadow` was <s>intentionally</s> misconfigured

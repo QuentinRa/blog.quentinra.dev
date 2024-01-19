@@ -66,6 +66,7 @@ Stuff that I found, but never read/used yet.
 
 * Minify code to make it less readable
 * Use of encoding
+* `strace/strings` [link](https://jvns.ca/strace-zine-v3.pdf)
 * [scoding.de](https://scoding.de/uploads/r2_cs.pdf)
 * [DOSfuscation](https://github.com/danielbohannon/Invoke-DOSfuscation)
 
