@@ -23,6 +23,7 @@ There are basic scenarios in which you can directly exploit the executable, but 
 [![linprivesc](../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![commonlinuxprivesc](../../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
+[![linuxprivilegeescalation](../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![mustacchio](../../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
 [![bash_system_1](../../../_badges/rootme/app_script/bash_system_1.svg)](https://www.root-me.org/en/Challenges/App-Script/ELF32-System-1)
 [![bash_system_2](../../../_badges/rootme/app_script/bash_system_2.svg)](https://www.root-me.org/en/Challenges/App-Script/ELF32-System-2)
@@ -64,6 +65,7 @@ $ bash -c 'export PATH=/tmp:$PATH; <execute the script>'
 ## Parameters injection  🎭
 
 [![linuxstrengthtraining](../../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
+[![linuxprivilegeescalation](../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 
 <div class="row row-cols-lg-2"><div>
 

@@ -58,6 +58,7 @@ When exploiting a command, you will usually want to run another executable. Two 
 ## Capabilities
 
 [![linprivesc](../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
+[![linuxprivilegeescalation](../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![cap](../../../_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
 
 <div class="row row-cols-lg-2"><div>
