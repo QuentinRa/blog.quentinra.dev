@@ -58,6 +58,7 @@ User [...] may run the following commands on [...]:
     (ALL) NOPASSWD: /usr/bin/vim
     (xxx) NOPASSWD: /opt/*.sh
     (root) /usr/bin/ssh *
+    (ALL : ALL) SETENV: NOPASSWD: /usr/bin/python3
 ```
 
 ☠️ If you can only execute the script and not read it, either try to see if the script use an [injectable](injection.md) parameter or try to find if the source code is available somewhere else <small>(ex: on Git)</small>.

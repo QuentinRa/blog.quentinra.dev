@@ -11,6 +11,7 @@ Kernel exploits should be used as the **last resort**, as they will most probabl
 
 You can find the complete list of CVEs for the Linux Kernel [here](https://www.linuxkernelcves.com/cves).
 
+* [Dirty Pipe](https://github.com/AlexisAhmed/CVE-2022-0847-DirtyPipe-Exploits) on Linux Kernel >5.8 and <5.17
 * [Dirty COW](https://en.wikipedia.org/wiki/Dirty_COW) on Linux kernel <4.8.3
 * [CVE-2021-3493/OverlayFS](https://en.wikipedia.org/wiki/OverlayFS) mostly on Ubuntu kernels prior to Ubuntu 20.10. See [ssd-disclosure PoC](https://ssd-disclosure.com/ssd-advisory-overlayfs-pe/).
 </div><div>

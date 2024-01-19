@@ -22,6 +22,7 @@ The admin panel to upload applications if usually at `/manager/html`. To upload 
 
 ## Pentester Notes ☠️
 
+[![linuxprivilegeescalation](../../../../../cybersecurity/_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![jerry](../../../../../cybersecurity/_badges/htb-p/jerry.svg)](https://app.hackthebox.com/machines/Jerry)
 [![cozyhosting](../../../../../cybersecurity/_badges/htb-p/cozyhosting.svg)](https://app.hackthebox.com/machines/CozyHosting)
 ![bizness](../../../../../cybersecurity/_badges/htb-p/bizness.svg)
@@ -83,6 +84,8 @@ Stuff that I found, but never read/used yet.
 * `jar -ft revshell.jar`/`jd-gui`: to see metasploit endpoint name
 * when pressing ESC on login, it may print the message with the default credentials
 </div><div>
+
+* `/etc/tomcat9/<config files>`
 
 While not really related:
 

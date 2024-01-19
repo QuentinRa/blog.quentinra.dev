@@ -91,7 +91,7 @@ drwxr-xr-x 9 xxx xxx 4096 Apr 29 18:50 ..
 
 <hr class="sep-both">
 
-## Shared Object Hijacking
+## Library Hijacking
 
 [![linuxprivilegeescalation](../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 
@@ -112,6 +112,14 @@ $ readelf -d <binary>
 If the binary has the `RUNPATH` folder set, then, if we can write `.so` to this folder, we can compromise it.
 
 To write a static binary, [refer to LD_PRELOAD](sudo.md#ld_preload).
+
+Misconfigured Python installations may also be vulnerable if we are able to write python script in the module path.
+
+```shell!
+$ python3 -c 'import sys; print("\n".join(sys.path))'
+```
+
+Then, check every imported package using `pip3 show <package>`. If the package is imported from a location that is below a folder in which you can write to, then you can inject your own code.
 </div></div>
 
 <hr class="sep-both">

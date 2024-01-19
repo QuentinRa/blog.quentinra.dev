@@ -29,7 +29,13 @@ Once you found a file with the SUID bit, either there is a known way to exploit 
 
 #### pkexec - CVE-2021-4034
 
+[![linuxprivilegeescalation](../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+
 `/usr/bin/pkexec` a file installed by default on every major Linux distribution with a **SUID bit** could be exploited to get root. See [arthepsy PoC](https://github.com/arthepsy/CVE-2021-4034) (0.9k ⭐), or [berdav PoC](https://github.com/berdav/CVE-2021-4034) (1.7k ⭐).
+
+Pkexec is one of the programs that are part of PolicyKit (polkit).
+
+➡️ See also: `cve_2021_4034_pwnkit_lpe_pkexec` on Metasploit.
 </div><div>
 
 #### Manual investigation
