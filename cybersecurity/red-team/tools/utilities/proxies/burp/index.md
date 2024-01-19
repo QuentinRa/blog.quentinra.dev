@@ -5,7 +5,7 @@
 [![burpsuiteintruder](../../../../../_badges/thmp/burpsuiteintruder.svg)](https://tryhackme.com/room/burpsuiteintruder)
 [![burpsuiteom](../../../../../_badges/thmp/burpsuiteom.svg)](https://tryhackme.com/room/burpsuiteom)
 [![burpsuiteextender](../../../../../_badges/thmp/burpsuiteextender.svg)](https://tryhackme.com/room/burpsuiteextender)
-[![usingwebproxies](../../../../../_badges/htb/usingwebproxies.svg)](https://academy.hackthebox.com/course/preview/linux-fundamentals)
+[![usingwebproxies](../../../../../_badges/htb/usingwebproxies.svg)](https://academy.hackthebox.com/course/preview/using-web-proxies)
 
 <div class="row row-cols-lg-2"><div>
 

@@ -1,7 +1,7 @@
 # FoxyProxy
 
 [![burpsuitebasics](../../../../_badges/thm/burpsuitebasics.svg)](https://tryhackme.com/room/burpsuitebasics)
-[![usingwebproxies](../../../../_badges/htb/usingwebproxies.svg)](https://academy.hackthebox.com/course/preview/linux-fundamentals)
+[![usingwebproxies](../../../../_badges/htb/usingwebproxies.svg)](https://academy.hackthebox.com/course/preview/using-web-proxies)
 
 <div class="row row-cols-lg-2"><div>
 

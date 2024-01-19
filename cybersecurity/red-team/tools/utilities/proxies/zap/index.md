@@ -1,6 +1,6 @@
 # OWASP ZAProxy
 
-[![usingwebproxies](../../../../../_badges/htb/usingwebproxies.svg)](https://academy.hackthebox.com/course/preview/linux-fundamentals)
+[![usingwebproxies](../../../../../_badges/htb/usingwebproxies.svg)](https://academy.hackthebox.com/course/preview/using-web-proxies)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -39,7 +39,7 @@ By default, ZAP is catching every request by doesn't intercept them. Additionall
 </div>
 </div><div>
 
-The in-browser HUB can be enabled by toggling the 'map' button. There is a tutorial with a few steps to get accustomed to the HUD.
+The in-browser HUD can be enabled by toggling the 'radar' button. There is a tutorial with a few steps to get accustomed to the HUD.
 
 <div class="text-center">
 
@@ -48,6 +48,8 @@ The in-browser HUB can be enabled by toggling the 'map' button. There is a tutor
 
 * There is a button to show hidden comments/fields
 * There is a button to enable all disabled fields
+* The flags are for the alerts generated passively
+* We can access most of ZAP tabs using the HUD
 
 To intercept a request, we must first click on the green button. We can alternatively use the shortcut: `CTRL+B`.
 
@@ -85,4 +87,10 @@ The request body is automatically URL encoded. After selecting some text, you ca
 
 This can be handy to easily decode or get the encoding of a text.
 </div><div>
+
+#### ZAProxy Proxy
+
+ZAP gradually map the website as it catches HTTP requests/responses. While the result of that is shown in the 'Site' tab, we can use the 'History' tab to observe the sequence of HTTP requests.
+
+Similarly to Burp, you can add websites to the scope.
 </div></div>
