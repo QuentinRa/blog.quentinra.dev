@@ -233,7 +233,7 @@ User can't delete files belonging to another user.
 <tr>
 <td></td>
 <td>Add: <code>u+s</code> Remove: <code>u-s</code><br>Ex: <code>-rwsr--r--</code> </td>
-<td>Add: <code>g+s</code> Remove: <code>g-s</code><br>Ex: <code>-rwsr-sr--</code> </td>
+<td>Add: <code>g+s</code> Remove: <code>g-s</code><br>Ex: <code>-rwxr-sr--</code> </td>
 <td>Add: <code>o+t</code> Remove: <code>o-t</code><br>Ex: <code>-rwxrw-rwt</code> </td>
 </tr>
 </tbody></table>
