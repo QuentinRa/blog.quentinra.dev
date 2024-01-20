@@ -8,6 +8,7 @@
 [![corridor](../../../../_badges/thm-p/corridor.svg)](https://tryhackme.com/room/corridor)
 [![cap](../../../../_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
 [![api_broken_access](../../../../_badges/rootme/web_server/api_broken_access.svg)](https://www.root-me.org/en/Challenges/Web-Server/API-Broken-Access)
+[![web_attacks](../../../../_badges/htb/web_attacks.svg)](https://academy.hackthebox.com/course/preview/web-attacks)
 
 <div class="row row-cols-lg-2"><div>
 

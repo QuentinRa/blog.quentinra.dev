@@ -13,5 +13,5 @@ In orange, you can see the two values that will be compared. In each box you can
 Once you picked your two values, simply press **Words** or **Bytes** in the bottom left of the screen to process the comparison.
 </div><div>
 
-![burp_comparer.png](../../_images/burp_comparer.png)
+![burp_comparer.png](../_images/burp_comparer.png)
 </div></div>

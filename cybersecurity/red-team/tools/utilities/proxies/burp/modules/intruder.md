@@ -2,25 +2,28 @@
 
 [![burpsuiteintruder](../../../../../../_badges/thmp/burpsuiteintruder.svg)](https://tryhackme.com/room/burpsuiteintruder)
 [![fileuploadattacks](../../../../../../_badges/htb/fileuploadattacks.svg)](https://academy.hackthebox.com/course/preview/file-upload-attacks)
+[![usingwebproxies](../../../../../../_badges/htb/usingwebproxies.svg)](https://academy.hackthebox.com/course/preview/using-web-proxies)
 
 <div class="row row-cols-lg-2"><div>
 
-The intruder module is most probably the most complex module; yet it's also the one that community users will use the least, as it's **heavily rate-limited** in the community version.
+The intruder module is most probably the most complex module; yet it's also the one that community users will use the least, as it's **heavily rate-limited** (1/s) in the community version.
 
-It's a module to do [Web fuzzing](/cybersecurity/red-team/s2.discovery/techniques/fuzzing.md). Once you caught a request, send it to the intruder. You can use <kbd>CTRL+U</kbd>.
+It's a module to do [Web fuzzing](/cybersecurity/red-team/s2.discovery/techniques/websites/fuzzing.md). Once you caught a request, send it to the intruder. You can use <kbd>CTRL+I</kbd>.
 
 **Parameters**
 
-Burp will automatically detect the parameters that will be injected, and wrap them between two **silcrows** (§). The first parameter since the start will be later referred to as 1, the second as 2...
+Burp will automatically detect the parameters that will be injected, and wrap them between two **silcrows** (§). The first parameter since the start will be later referred to as '1', the second as '2', and so on.
 
 **Payload sets** ([wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md)...)
 
 Burp Suite is using the term **payload set** to refer to the values that will be used in the attack. It could be a list, a sequence of numbers... You will have to go to the tab **???** to set the payload.
 
+📚 For large wordlist, use 'Runtime file' instead of 'File'.
+</div><div>
+
 **Rules**
 
 Burp allow us to do transformations on an item from the payload set, such as capitalizing/prefixing/... them.
-</div><div>
 
 **Results**
 

@@ -1,6 +1,7 @@
 # Burp Proxy
 
 [![burpsuitebasics](../../../../../../_badges/thm/burpsuitebasics.svg)](https://tryhackme.com/room/burpsuitebasics)
+[![usingwebproxies](../../../../../../_badges/htb/usingwebproxies.svg)](https://academy.hackthebox.com/course/preview/using-web-proxies)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -32,7 +33,7 @@ When not using the first solution, you need to [configure](https://portswigger.n
 
 <div class="row row-cols-lg-2"><div>
 
-![burp_suite_proxy_tab](../../_images/burp_suite_proxy_tab.png)
+![burp_suite_proxy_tab](../_images/burp_suite_proxy_tab.png)
 
 Click on **intercept is on** to intercept requests. The web page will keep loading until you unblock the request ⚠️.
 
@@ -88,5 +89,5 @@ You may want to intercept a JavaScript file to edit the code before sending it t
 </details>
 </div><div>
 
-![burp_suite_proxy_scope_options](../../_images/burp_suite_proxy_scope_options.png)
+![burp_suite_proxy_scope_options](../_images/burp_suite_proxy_scope_options.png)
 </div></div>

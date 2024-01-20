@@ -1,6 +1,7 @@
 # Burp Decoder
 
 [![burpsuiteom](../../../../../../_badges/thmp/burpsuiteom.svg)](https://tryhackme.com/room/burpsuiteom)
+[![usingwebproxies](../../../../../../_badges/htb/usingwebproxies.svg)](https://academy.hackthebox.com/course/preview/using-web-proxies)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -15,5 +16,5 @@ For instance, `"Hello, World"` is in yellow, which means that I used "encode | b
 ➡️ Highlight = decode, colored = encode, color = algorithm.
 </div><div>
 
-![burp_suite_decoder](../../_images/burp_suite_decoder.png)
+![burp_suite_decoder](../_images/burp_suite_decoder.png)
 </div></div>
