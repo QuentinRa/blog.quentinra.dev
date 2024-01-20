@@ -192,6 +192,7 @@ Usernames
 ```text!
 admin, administrator, wpadmin, root, adm
 /usr/share/seclists/Usernames/Names/names.txt
+/usr/share/seclists/Usernames/top-usernames-shortlist.txt
 ```
 
 Passwords

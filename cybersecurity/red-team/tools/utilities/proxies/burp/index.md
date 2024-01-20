@@ -74,3 +74,15 @@ To install some plugins, you may have to install some adapters as not every plug
 * [JRuby](https://github.com/jruby/jruby) (Ruby)
 * ...
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* `Proxy>Options>Match and Replace` for automatic injection
+</div><div>
+</div></div>
