@@ -245,6 +245,14 @@ Mostly bad extensions <small>(no `.jpeg` or normal extensions)</small>
 /usr/share/seclists/Discovery/Web-Content/web-extensions.txt
 /usr/share/seclists/Discovery/Web-Content/web-extensions-big.txt
 ```
+
+#### Characters
+
+Random wordlists about characters.
+
+```text!
+/usr/share/seclists/Fuzzing/alphanum-case.txt
+```
 </div><div>
 
 #### Parameters

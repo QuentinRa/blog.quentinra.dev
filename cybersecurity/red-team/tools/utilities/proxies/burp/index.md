@@ -60,7 +60,7 @@ You can use <kbd>CTRL+SHIFT</kbd> and a letter to switch to a tab:
 
 <div class="row row-cols-lg-2"><div>
 
-Like most community-friendly software, you can write extensions/plugins to enhance them. You can find extensions in the <kbd>Extender | BApp Store</kbd> tab. There are useful extensions such as
+Like most community-friendly software, you can write extensions/plugins to enhance them. You can find extensions in the `Extender | BApp Store` tab. There are useful extensions such as:
 
 * **Logger++**: "[...] logging extension for Burp Suite."
 * **WordPress Scanner**: "Find known vulnerabilities in WordPress plugins and themes using WPScan database."
@@ -84,5 +84,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * `Proxy>Options>Match and Replace` for automatic injection
+* Burp Scanner (paid, see HTB notes)
 </div><div>
 </div></div>

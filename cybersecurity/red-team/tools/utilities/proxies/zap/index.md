@@ -67,11 +67,11 @@ The first button will send the request and catch the response. The second button
 
 ## ZAProxy Features
 
+[![usingwebproxies](../../../../../_badges/htb/usingwebproxies.svg)](https://academy.hackthebox.com/course/preview/using-web-proxies)
+
 <div class="row row-cols-lg-2"><div>
 
 #### ZAProxy Requester
-
-[![usingwebproxies](../../../../../_badges/htb/usingwebproxies.svg)](https://academy.hackthebox.com/course/preview/using-web-proxies)
 
 ZAProxy is very similar to Burp Suite Repeater. From any request, right click on it, and select 'Open In Requester tab...'. Alternatively, use the shortcut <kbd>CTRL+W</kbd>.
 
@@ -84,39 +84,50 @@ You should double-click on requester to get a better view of the 4 panels. Doubl
 
 Click on 'send' to send the request.
 
-#### ZAProxy Encoder
+#### ZAProxy Proxy
 
-[![usingwebproxies](../../../../../_badges/htb/usingwebproxies.svg)](https://academy.hackthebox.com/course/preview/using-web-proxies)
+ZAP gradually map the website as it catches HTTP requests/responses. While the result of that is shown in the 'Site' tab, we can use the 'History' tab to observe the sequence of HTTP requests.
+
+Similarly to Burp, you can add websites to the scope.
+
+#### ZAProxy Encoder
 
 The request body is automatically URL encoded. After selecting some text, you can right-click on it and select 'Encode/Decode/Hash'.
 
 This can be handy to easily decode or get the encoding of a text.
 </div><div>
 
-#### ZAProxy Proxy
-
-[![usingwebproxies](../../../../../_badges/htb/usingwebproxies.svg)](https://academy.hackthebox.com/course/preview/using-web-proxies)
-
-ZAP gradually map the website as it catches HTTP requests/responses. While the result of that is shown in the 'Site' tab, we can use the 'History' tab to observe the sequence of HTTP requests.
-
-Similarly to Burp, you can add websites to the scope.
-
 #### ZAProxy Replacer
-
-[![usingwebproxies](../../../../../_badges/htb/usingwebproxies.svg)](https://academy.hackthebox.com/course/preview/using-web-proxies)
 
 You can automatically edit a request/response using ZAProxy Replacer. Open it using `CTRL+R` or navigate to `options>replacer`.
 
 #### ZAProxy Fuzzer
 
-[![usingwebproxies](../../../../../_badges/htb/usingwebproxies.svg)](https://academy.hackthebox.com/course/preview/using-web-proxies)
-
 Right-click on a request and navigate to `attack>fuzz...` to FUZZ a request. Similarly to the history, you can right-click on a request and send it to the requester if you want to work on it.
 
 #### ZAProxy Spider
 
-[![usingwebproxies](../../../../../_badges/htb/usingwebproxies.svg)](https://academy.hackthebox.com/course/preview/using-web-proxies)
 [![web_information_gathering](../../../../../_badges/htb/web_information_gathering.svg)](https://academy.hackthebox.com/course/preview/information-gathering---web-edition)
 
 ZAP has two spiders that can be used to crawl a website. One traditionally spider, and another 'ajax' spider for dynamic websites. Right-click on a request  and navigate to `attack>spider...` to start crawling a website.
+
+#### ZAProxy Scanner
+
+ZAProxy can passively detect security problems in the website as it discovers URLs. We can run an active scan on the URLs we found to actively look for vulnerabilities.
+
+📚 Run the spider first, then the active scan, to completely make use of what ZAProxy can detect.
+
+📚 ZAProxy can generate a report <small>(Report>Generate Report...)</small>.
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [ZAProxy Marketplace](https://www.zaproxy.org/addons/)
+</div><div>
 </div></div>
