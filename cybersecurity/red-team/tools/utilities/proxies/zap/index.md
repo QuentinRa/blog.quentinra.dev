@@ -19,6 +19,8 @@ There is an embedded pre-configured browser that can be opened using the "firefo
 Alternatively, we can use our browser and [Foxy Proxy](/cybersecurity/red-team/tools/utilities/proxies/foxyproxy.md) configured to point to `127.0.0.1:8080`. You will need to add Burp Certificate to your browser. Navigate to `https://zap/` or to `Options > Network`, and download and add the certificate to your browser.
 
 📚 You can use a different port if you plan to use multiple proxies. Navigate to `Options > Network > Local Servers`.
+
+➡️ When using a command, refer to [socks](/operating-systems/networking/protocols/socks.md).
 </div></div>
 
 <hr class="sep-both">

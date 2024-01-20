@@ -12,6 +12,7 @@ First, you must configure your browser to send requests to Burp.
 * **Solution 1**: Use burp preconfigured chromium web browser
 * **Solution 2** ✅: Add the [FoxyProxy](/cybersecurity/red-team/tools/utilities/proxies/foxyproxy.md) extension to your browser and configure it to use `127.0.0.1:8080`
 * **Solution 3**: change any settings such as your browser settings to redirect your browser requests `127.0.0.1:8080`
+* **Solution 4**: when using a command, refer to [socks](/operating-systems/networking/protocols/socks.md)
 </div><div>
 
 When not using the first solution, you need to [configure](https://portswigger.net/burp/documentation/desktop/external-browser-config/certificate) **SSL** ⚠️! 

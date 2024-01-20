@@ -2,6 +2,7 @@
 
 [![networksecurityprotocols](../../../cybersecurity/_badges/thmp/networksecurityprotocols.svg)](https://tryhackme.com/room/networksecurityprotocols)
 [![adventofcyber4](../../../cybersecurity/_badges/thm/adventofcyber4/day9.svg)](https://tryhackme.com/room/adventofcyber4)
+[![usingwebproxies](../../../cybersecurity/_badges/htb/usingwebproxies.svg)](https://academy.hackthebox.com/course/preview/using-web-proxies)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -21,13 +22,13 @@ exploit> run srvhost=127.0.0.1 srvport=9050 version=4a
 
 Once a SOCKS proxy is started, you can use it with either
 
-* The `--proxy` flag, if it's supported
+* The `--proxy` flag, if it's supported:
 
 ```ps
 $ curl --proxy socks4a://localhost:9050 [...]
 ```
 
-* The `proxychains` wrapper
+* The `proxychains` wrapper:
 
 ```ps
 $ proxychains [Some command]
@@ -44,6 +45,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * `socks4://IP:port`
+* `/etc/proxychains.conf`, `http 127.0.0.1 8080`
 * [check.torproject.org](https://check.torproject.org/)
 </div><div>
 </div></div>
