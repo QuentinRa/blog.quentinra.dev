@@ -18,10 +18,14 @@ An IDOR vulnerability is when a user can change a value, such as a number in a U
 * a folder with predictable filenames: `/user1.png` <math xmlns="http://www.w3.org/1998/Math/MathML"><mo accent="false" stretchy="false">&#x2192;</mo></math> `/user2.png`
 * a cookie
 
-The best way to test for IDOR is to create two accounts, and see if from one, you can access the content of the other.
+The best way to test for IDOR is to create two accounts, and see if from one, you can access the content of the other. If you can't, try to find the difference between them in the requests.
 </div><div>
 
 **What's next?** 🔥
 
 * You can use [Fuzzing](fuzzing.md) to try to discover more content
+
+* It may be possible to reset someone's else password
+
+* It may be possible to modify someone's else account information such as a profile item to perform a [XSS](/cybersecurity/red-team/s3.exploitation/vulns/web/xss.md) attack
 </div></div>
