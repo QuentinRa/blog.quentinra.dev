@@ -33,5 +33,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [aquatone](../../tools/aquatone.md)
+* [EyeWitness](../../tools/eyewitness.md)
 </div><div>
 </div></div>

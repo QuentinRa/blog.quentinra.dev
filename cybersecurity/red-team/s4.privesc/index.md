@@ -75,7 +75,8 @@ You will also have to look for installed tools and apps along with their version
 External tools/services
 
 * 🎠 Misconfigured [NFS shares](/operating-systems/networking/protocols/nfs.md#nfs-vulnerabilities-)
-* 🎠 Misconfigured [Docker Socket/Permissions](/operating-systems/others/virtualization/docker/index.md#docker-pentester-notes-)
+* 🎠 Misconfigured [Docker socket/permissions](/operating-systems/others/virtualization/docker/index.md#docker-pentester-notes-)
+* 🎠 Misconfigured [Tmux sessions](/operating-systems/linux/env/others/tmux/index.md)
 
 ⚠️ Don't forget hidden files.
 </div><div>

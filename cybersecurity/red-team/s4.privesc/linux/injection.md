@@ -149,6 +149,10 @@ $ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/; chmod +xs /tmp/bash)' ./scr
 
 <div class="row row-cols-lg-2"><div>
 
+As a reminder, if you can execute commands, then refer to [command injection](/cybersecurity/red-team/s3.exploitation/vulns/injection/command.md) for a list of tips and tricks.
+
+<br>
+
 #### Python input() function
 
 [![python_input](../../../_badges/rootme/app_script/python_input.svg)](https://www.root-me.org/en/Challenges/App-Script/Python-input)
@@ -158,12 +162,6 @@ This command is used to prompt the user for input. The problem is that we can wr
 ```py
 open('/tmp/passwd_dump', 'w').write(open('/etc/passwd', 'r').read())
 ```
-
-#### Perl open() 
-
-[![perl_command_injection](../../../_badges/rootme/app_script/perl_command_injection.svg)](https://www.root-me.org/en/Challenges/App-Script/Perl-Command-injection)
-
-The open function is perl can execute commands when we use `|` in the filename. For instance, `| cat /etc/passwd`. The code is not vulnerable if there is a `<` before our filename in the `open` function call.
 </div><div>
 
 #### Latex directives

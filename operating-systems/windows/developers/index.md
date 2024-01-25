@@ -122,13 +122,13 @@ Most of the time, we integrate WSL within our code environment 🚀. For instanc
 
 Commands are stored in `C:/cygwin64/bin`. It should have been added to your path so that you can call, for instance, `make` or `make.exe` from any Windows terminal.
 
-```bash!
+```ps
 $ make -v
 # GNU Make 4.3
 # ...
 ```
 
-➡️ See also: [cygwin](https://github.com/transcode-open/apt-cyg).
+➡️ See also: [apt-cyg](https://github.com/transcode-open/apt-cyg) <small>(2.9k ⭐, 2017 🪦)</small>.
 </div></div>
 
 <hr class="sep-both">

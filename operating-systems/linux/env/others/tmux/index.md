@@ -16,12 +16,12 @@
 
 Each time we use tmux, it creates a socket. We can connect back to this socket to reconnect to the tmux session.
 
-By default, sessions are stored in `/tmp`. Users can define a custom socket. If the permissions are incorrectly set on it <small>(manually edited)</small>, we may be able to exploit them.
+By default, sessions are stored in `/tmp`. Users can define a custom socket. If the permissions are incorrectly set on it <small>(if they were edited)</small>, we may be able to exploit them.
 
 ```ps
 $ sudo tmux -S /my/socket new -s session_name
-$ sudo chown root:some_group /my/socket # misconfiguration ⚠️
-$ tmux -S /my/socket # if we are in some_group => root
+$ sudo chown root:xxx /my/socket # misconfiguration ⚠️
+$ tmux -S /my/socket             # if we are in 'xxx' => root
 ```
 </div><div>
 </div></div>
