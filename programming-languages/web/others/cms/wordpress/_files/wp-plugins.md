@@ -1,6 +1,6 @@
 # WordPress Plugins Exploitation
 
-[![allinonemj](../../../../_badges/thm-p/allinonemj.svg)](https://tryhackme.com/room/allinonemj)
+[![allinonemj](../../../../../../cybersecurity/_badges/thm-p/allinonemj.svg)](https://tryhackme.com/room/allinonemj)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -13,7 +13,7 @@ $ searchsploit WordPress Plugin <plugin_name_space_separated>
 ```
 </div><div>
 
-I wrote a [short Python script]() for `mail-masta 1.0` [LFI](/cybersecurity/red-team/s3.exploitation/vulns/web/inclusion.md):
+I wrote a [short Python script](https://github.com/QuentinRa/blog.quentinra.dev/tree/master/programming-languages/web/others/cms/wordpress/_scripts/wp-mail-masta.py) for `mail-masta 1.0` LFI:
 
 ```shell!
 $ # try to access a file you know it works

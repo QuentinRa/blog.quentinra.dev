@@ -5,8 +5,10 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[wappalyzer](https://github.com/wappalyzer/wappalyzer) <s>(8.1k ⭐)</s> is common tool to find frameworks, and their versions. It can be installed as a browser extension or used via their [website](https://www.wappalyzer.com/). If you are using the extension, you might want to uncheck the option to send anonymous data to their website.
+[wappalyzer](https://github.com/wappalyzer/wappalyzer) <small>(<s>8.1k ⭐</s>, privatised)</small> is common tool used to identify frameworks, libraries, and other components along with their versions. It can be installed as a browser extension or used via their [website](https://www.wappalyzer.com/). 
 
-It seems that they removed their open-source GIT, and the tool became since then more limited for free users.
+If you are using the extension, you might want to uncheck the option to send anonymous data to their website.
+
+🪦 It seems that their tool became more limited for free users after they deleted the open-source repository.
 </div><div>
 </div></div>

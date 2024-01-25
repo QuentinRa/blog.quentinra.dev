@@ -24,6 +24,7 @@
 ## WordPress Pentester Notes ☠️
 
 [![hackingwordpress](../../../../../cybersecurity/_badges/htb/hackingwordpress.svg)](https://academy.hackthebox.com/course/preview/hacking-wordpress)
+[![attacking_common_applications](../../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 [![webenumerationv2](../../../../../cybersecurity/_badges/thmp/webenumerationv2.svg)](https://tryhackme.com/room/webenumerationv2)
 [![colddboxeasy](../../../../../cybersecurity/_badges/thm-p/colddboxeasy.svg)](https://tryhackme.com/room/colddboxeasy)
 [![allinonemj](../../../../../cybersecurity/_badges/thm-p/allinonemj.svg)](https://tryhackme.com/room/allinonemj)
@@ -99,11 +100,11 @@ $ wpscan --url URL -e vp
 * Plugin and Theme names/versions are often loaded from the source code (link/script). The URL may include the version.
 * Both WordPress, Plugins, and Themes may have a `readme.html`
 * Look for links to user accounts, iterate `/?author=<id>`, or use `/wp-json/wp/v2/users` for versions before 4.7.1
-* You can try to use `/xmlrpc.php` if available
+* You can try to look in `/robots.txt` for something unexpected
 
 **Exploit WordPress**
 
-* [WordPress Plugins Exploitation](_files/wp-plugins.md).
+* [WordPress Plugins Exploitation](_files/wp-plugins.md)
 * [WordPress Admin RCE](_files/wp-rce.md)
 </div></div>
 
@@ -147,5 +148,5 @@ Stuff
 * `wp-content/uploads/`, `wp-content/plugins/`, `wp-content/themes/`
 * `wp-includes`
 * `select user_login,user_pass from wp_users;`
-* 5 levels of access
+* 10 levels of access, 5 (actually 6 with SA) roles
 </div></div>
