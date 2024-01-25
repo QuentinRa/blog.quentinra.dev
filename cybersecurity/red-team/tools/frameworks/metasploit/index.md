@@ -213,6 +213,7 @@ Stuff that I found, but never read/used yet.
 * `run autoroute -h` (autoroute module)
   * socks
   * proxychains
+  * `set PROXIES HTTP:127.0.0.1:8080`
 * `show advanced options`, `advanced`
 * `search type:exploit platform:windows target:xp smb`
 * `exploit/windows/smb/ms08_067_netapi`

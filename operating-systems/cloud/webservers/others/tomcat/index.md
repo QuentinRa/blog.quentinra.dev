@@ -23,11 +23,14 @@ The admin panel to upload applications if usually at `/manager/html`. To upload 
 ## Pentester Notes ☠️
 
 [![linuxprivilegeescalation](../../../../../cybersecurity/_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![attacking_common_applications](../../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 [![jerry](../../../../../cybersecurity/_badges/htb-p/jerry.svg)](https://app.hackthebox.com/machines/Jerry)
 [![cozyhosting](../../../../../cybersecurity/_badges/htb-p/cozyhosting.svg)](https://app.hackthebox.com/machines/CozyHosting)
 ![bizness](../../../../../cybersecurity/_badges/htb-p/bizness.svg)
 
 <div class="row row-cols-lg-2"><div>
+
+#### Enumeration
 
 * You can use [nmap](/cybersecurity/red-team/tools/scanners/ports/nmap.md). It often runs on port 8080.
 
@@ -36,16 +39,15 @@ $ sudo nmap 10.10.10.95 -sCV -v
 8080/tcp open  http    Apache Tomcat/Coyote JSP engine 1.1
 ```
 
-* We can often easily recognize a website using Apache Tomcat from the presence of the `JSESSIONID` cookie while we may also trigger an error to see the error message page layout.
-
-* If you have access to the manager, you can try to upload a reverse shell. Refer to [reverse shell#tomcat](/cybersecurity/red-team/s3.exploitation/shell/reverse_shell.md#tomcat-reverse-shell) for more information.
-
-* You can try [tomcatWarDeployer](https://github.com/mgeeky/tomcatWarDeployer) <small>(0.4k ⭐, 2022 🪦)</small>, but it's memory hungry, buggy, unstable, and you need to patch the code first 🪦.
+* We can often easily recognize a website using Apache Tomcat from the presence of the `JSESSIONID` cookie while we may also trigger an error to see the error message page layout. Additionally, the URI `/docs` may be available and expose Tomcat version.
 
 * Maybe [Sprint Boot Actuators](/programming-languages/high-level/oo/java/others/boot/actuators.md) are being used.
-</div><div>
 
 * We can disclose tomcat version by sending a query using an invalid method that should raise a 405 (ex: `curl -X PUT URL`)
+
+#### Foothold
+
+* If you close the login prompt, you may see default credentials
 
 * We can try to brute force the manager account using [metasploit](/cybersecurity/red-team/tools/frameworks/metasploit/index.md).
 
@@ -58,6 +60,11 @@ msf6> set ANONYMOUS_LOGIN true
 msf6> set BLANK_PASSWORDS true
 msf6> run
 ```
+</div><div>
+
+#### Exploitation
+
+* If you have access to the manager, you can try to upload a reverse shell. Refer to [reverse shell#tomcat](/cybersecurity/red-team/s3.exploitation/shell/reverse_shell.md#tomcat-reverse-shell) for more information.
 
 * You can also try to use metasploit to [upload a reverse shell](/cybersecurity/red-team/s3.exploitation/shell/reverse_shell.md#tomcat-reverse-shell)
 
@@ -66,6 +73,22 @@ msf6> run
 ```ps
 $ curl --upload-file revshell.war -u 'username:password' "URL/manager/text/deploy?path=/shell"
 ```
+
+#### Well-known CVEs
+
+[![attacking_common_applications](../../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+
+* [CVE-2020-1938](https://nvd.nist.gov/vuln/detail/CVE-2020-1938): unauthenticated LFI that can be used to read files in the webroot, such as `WEB-INF/web.xml` or `WEB-INF/cgi/xxx.bat`. Apache JServ which usually runs on port `8009` must be exposed.
+
+It can be exploited using metasploit:
+
+```shell!
+msf6> use auxiliary/admin/http/tomcat_ghostcat
+```
+
+#### Others
+
+* You can try [tomcatWarDeployer](https://github.com/mgeeky/tomcatWarDeployer) <small>(0.4k ⭐, 2022 🪦)</small>, but it's memory hungry, buggy, unstable, and you need to patch the code first 🪦.
 </div></div>
 
 <hr class="sep-both">
@@ -86,6 +109,7 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * `/etc/tomcat9/<config files>`
+* `web.xml`, `tomcat-users.xml`
 
 While not really related:
 
