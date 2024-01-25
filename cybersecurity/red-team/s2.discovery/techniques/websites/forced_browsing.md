@@ -62,4 +62,16 @@ $ git restore *             # restore current version
 $ git log -p -- config.php  # look at config.php history
 ```
 </div><div>
+
+#### CGI Scripts
+
+[![attacking_common_applications](../../../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+
+Missing description. Example with `ffuf`:
+
+```shell!
+$ ffuf -w /usr/share/seclists/Discovery/Web-Content/common.txt -u URL/cgi/FUZZ -e .bat,.cmd
+```
+
+📚 Apache Tomcat runs 404 for `/cgi` even when it exists.
 </div></div>

@@ -26,11 +26,14 @@ The admin panel to upload applications if usually at `/manager/html`. To upload 
 [![attacking_common_applications](../../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 [![jerry](../../../../../cybersecurity/_badges/htb-p/jerry.svg)](https://app.hackthebox.com/machines/Jerry)
 [![cozyhosting](../../../../../cybersecurity/_badges/htb-p/cozyhosting.svg)](https://app.hackthebox.com/machines/CozyHosting)
-![bizness](../../../../../cybersecurity/_badges/htb-p/bizness.svg)
 
 <div class="row row-cols-lg-2"><div>
 
+* You can try [tomcatWarDeployer](https://github.com/mgeeky/tomcatWarDeployer) <small>(0.4k ⭐, 2022 🪦)</small>, but it's memory hungry, buggy, unstable, and you need to patch the code first 🪦. It's a multipurpose tool <small>(from enumeration to exploitation, albeit basic)</small>.
+
 #### Enumeration
+
+![bizness](../../../../../cybersecurity/_badges/htb-p/bizness.svg)
 
 * You can use [nmap](/cybersecurity/red-team/tools/scanners/ports/nmap.md). It often runs on port 8080.
 
@@ -86,9 +89,15 @@ It can be exploited using metasploit:
 msf6> use auxiliary/admin/http/tomcat_ghostcat
 ```
 
-#### Others
+The file `web.xml` contains the manager credentials if they were defined.
 
-* You can try [tomcatWarDeployer](https://github.com/mgeeky/tomcatWarDeployer) <small>(0.4k ⭐, 2022 🪦)</small>, but it's memory hungry, buggy, unstable, and you need to patch the code first 🪦.
+<br>
+
+[![attacking_common_applications](../../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+
+* [CVE-2019-0232](https://nvd.nist.gov/vuln/detail/CVE-2019-0232): on Windows host, if there is a cgi script and `enableCmdLineArguments` is was enabled <small>(not default!)</small>, it can be exploited to arbitrarily run commands. 
+
+Use `URL/xxx.bat?&dir` to execute `dir`. Use `+` instead of spaces. Use <code>\\</code> in paths. Don't forgot to URL encode them. If `PATH` is not set (`&set`), use the full path to a command <small>(e.g. `c:\windows\system32\whoami.exe`)</small>. You can use directions to create files <small>(e.g. `dir+>+output` to create 'output')</small>.
 </div></div>
 
 <hr class="sep-both">
