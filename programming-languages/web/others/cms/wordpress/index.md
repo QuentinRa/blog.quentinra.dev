@@ -1,13 +1,14 @@
 # WordPress
 
 [![hackingwordpress](../../../../../cybersecurity/_badges/htb/hackingwordpress.svg)](https://academy.hackthebox.com/course/preview/hacking-wordpress)
+[![attacking_common_applications](../../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 
 <div class="row row-cols-lg-2"><div>
 
 [WordPress](https://wordpress.com/) is a system that was created to build and manage blogs. It's now widely used for any kind of website. There are **ton** of plugins making it fast and easy to create websites 🚀.
 
-* **Learning websites**: search for "LMS" plugins
-* **Manga websites**: search for "madara" or "MangaStream"
+* **Learning websites** 🧑‍🎓: search for "LMS" plugins
+* **Manga websites** 📚: search for "madara" or "MangaStream"
 * ...
 
 ☠️ Note that most themes/plugins are paid.

@@ -13,9 +13,7 @@ They are mainly used to automate tasks. For instance, to perform a password atta
 * 🥷 Find hidden form parameters, headers, etc.
 * ...
 
-CTFs are usually using the infamous `rockout.txt` for passwords  <small>(from the data breach of rockyou.com in 2009)</small>. For default passwords, you might want to check out [cirt](https://cirt.net/passwords), [default-password](https://default-password.info/), and [data recovery](https://datarecovery.com/rd/default-passwords/). You may also use the cracked passwords to create a wordlist.
-
-
+CTFs are usually using the infamous `rockout.txt` for passwords  <small>(from the data breach of rockyou.com in 2009)</small>.
 </div><div>
 
 [SecLists](https://github.com/danielmiessler/SecLists) (50.6k ⭐) is the most popular place to find wordlists.
@@ -206,10 +204,13 @@ Default credentials
 
 ```text!
 /usr/share/seclists/Passwords/Default-Credentials/ftp-betterdefaultpasslist.txt
+/usr/share/metasploit-framework/data/wordlists/http_default_pass.txt
 $ ll /usr/share/seclists/Passwords/Default-Credentials/*passlist.txt
 ```
 
 📚 You may also use short username/password wordlists.
+
+📚 For default passwords, you might want to check out [cirt](https://cirt.net/passwords), [default-password](https://default-password.info/), and [data recovery](https://datarecovery.com/rd/default-passwords/). You may also use the cracked passwords to create a wordlist.
 </div></div>
 
 <hr class="sep-both">
