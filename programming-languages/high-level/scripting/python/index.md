@@ -689,6 +689,8 @@ def index(request):
 
 If you're using HTML, then you can use template injection: `{% ... %}`. Refer to the documentation, there are multiple instructions possible.
 
+The default admin page is at URI: `/admin`.
+
 #### Click - command line interfaces
 
 Click is prompting the user for input for arguments that were not given to the program (`script.py --key some_key [...]`).

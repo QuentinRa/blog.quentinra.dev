@@ -16,7 +16,7 @@ Having this information may allow us to exploit known vulnerabilities (CVEs), bu
 
 If the webserver is Apache, the OS is most likely a Linux. We may choose to use Linux-only [wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md) or configure differently our tools.
 
-If we detect the use of a framework, we can use common techniques and automated tools to find internal informations <small>(users, plugins, etc.)</small> to hopefully find an attack vector. See also: [Framework Exploitation](/cybersecurity/red-team/s3.exploitation/techniques/framework.md).
+If we detect the use of a framework, we can use common techniques and automated tools to find internal informations <small>(users, plugins, etc.)</small> to hopefully find an attack vector.
 
 ⚠️ Don't forget [robots.txt/sitemap.xml](sanalysis.md#links).
 </div></div>
@@ -106,17 +106,6 @@ Most websites have a file called `index` which can be used for [fuzzing](fuzzing
 
 
 Refer to [wordlists#extensions](/cybersecurity/red-team/_knowledge/topics/wordlists.md#extensions) for wordlists.
-</div><div>
-
-#### Manual Framework Identification
-
-[![contentdiscovery](../../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
-![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
-
-* Look if the framework is credited at the bottom of the page
-* Look if there is an HTML comment with the framework name/...
-* Try to find the version (comments, dependencies, features...)
-* Look for the login page / CMS panel (if any)
 
 <br>
 
@@ -124,7 +113,7 @@ Refer to [wordlists#extensions](/cybersecurity/red-team/_knowledge/topics/wordli
 
 [![contentdiscovery](../../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
 
-Look for the default favicon of the framework. Usually, it's stored at `/favicon.ico`, although it's usually removed. If you do find one, download it, hash it (MD5), and [find it in OWASP favicon database](https://wiki.owasp.org/index.php/OWASP_favicon_database)
+Look for the default favicon of the framework. Usually, it's stored at `/favicon.ico`, although it's usually removed. If you do find one, download it, hash it (MD5), and [look for it in OWASP favicon database](https://wiki.owasp.org/index.php/OWASP_favicon_database).
 
 ```ps
 # Linux
@@ -132,6 +121,32 @@ $ curl URL/favicon.ico | md5sum
 # Windows (on a downloaded favicon)
 $ Get-FileHash .\favicon.ico -Algorithm MD5
 ```
+</div><div>
+
+#### Manual Framework Identification
+
+[![contentdiscovery](../../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
+![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
+
+Frameworks and CMS such as WordPress make it easier to develop websites by providing a generic implementation of common website features. It's often advised to use a framework both to ease the work of the developers, and reduce the number of vulnerabilities.
+
+Fewer vulnerabilities don't mean that there are no vulnerabilities. Frameworks may be misconfigured or misused. They may not be updated or users may have installed vulnerable third-party extensions.
+
+* Look if the framework is credited at the bottom of the page
+* Look if there is an HTML comment with the framework name/...
+* Try to find the version <small>(comments, dependencies, features...)</small>
+* Look for the login page / CMS panel and its layout
+* Look for the error page and its layout
+* Look for `<meta name="generator" content="<here>">`
+
+Common Frameworks/CMS:
+
+* [WordPress](/programming-languages/web/others/cms/wordpress/index.md): most used content-management system (CMS)
+* [Joomla](/programming-languages/web/others/cms/joomla/index.md): popular content-management system (CMS)
+
+Uncommon Frameworks/CMS:
+
+* [GetSimple CMS](#getsimple-cms)
 </div></div>
 
 <hr class="sep-both">
@@ -146,4 +161,19 @@ $ Get-FileHash .\favicon.ico -Algorithm MD5
 
 When installing a framework, such as [phpBB](https://github.com/phpbb/phpbb), it's important to properly configure it and remove install files.
 </div><div>
+
+#### GetSimple CMS
+
+![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
+
+Getting access to an account
+
+* There is no default credentials
+* The username is `admin`
+* You may try brute forcing the password <small>(ex: test `admin`)</small>
+
+Pop a reverse shell
+
+* You can try to upload a reverse shell as an image
+* You can replace the template code with a reverse shell, and navigate to the template page shown when editing the template
 </div></div>
