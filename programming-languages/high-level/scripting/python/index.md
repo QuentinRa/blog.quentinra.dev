@@ -659,38 +659,6 @@ except paramiko.AuthenticationException:
 ssh.close()
 ```
 
-#### Django - create and deploy websites
-
-[![django](../../../../cybersecurity/_badges/thm/django.svg)](https://tryhackme.com/room/django)
-
-`django` is a library to create and deploy a website.
-
-```shell!
-$ django-admin startproject <project_name>
-$ python3 manage.py migrate # apply configuration
-$ python3 manage.py runserver
-$ python3 manage.py runserver 0.0.0.0:8080
-$ python3 manage.py startapp <app_name>
-```
-
-You will usually edit `urls.py` to add a route which is a `path`, a `function`, and optionally a name. For instance:
-
-```python
-from django.http import HttpResponse
-
-def index(request):
-	return HttpResponse("Hello, World!")
-	
-from django.shortcuts import render
-
-def index(request):
-	return render(request, 'index.html')
-```
-
-If you're using HTML, then you can use template injection: `{% ... %}`. Refer to the documentation, there are multiple instructions possible.
-
-The default admin page is at URI: `/admin`.
-
 #### Click - command line interfaces
 
 Click is prompting the user for input for arguments that were not given to the program (`script.py --key some_key [...]`).
