@@ -150,7 +150,7 @@ Stuff that I found, but never read/used yet.
 * [Windows credential guard](https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-how-it-works)
 </div><div>
 
-* [Windows filename](https://en.wikipedia.org/wiki/8.3_filename) (`hello~1.TXT`=>first `hello_world.txt`)
+* Windows Tilde Filenames (Refer to IIS)
 
 **BitLocker**
 
