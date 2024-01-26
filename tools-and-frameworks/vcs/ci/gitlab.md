@@ -346,6 +346,45 @@ If needed, you can use `test` and `&&/||` to write conditionals:
 
 <hr class="sep-both">
 
+## GitLab Pentesting Notes ☠️
+
+<div class="row row-cols-lg-2"><div>
+
+#### Enumeration
+
+* Custom installations are often at `gitlab.example.com`
+* Navigate to `/help` to expose the version <small>(logged)</small>
+* Username [fuzzing](/cybersecurity/red-team/s2.discovery/techniques/websites/fuzzing.md) with [username wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md#accounts)
+
+```shell!
+$ ffuf -u 'URL/FUZZ' -w wordlist -mc 200,301
+```
+
+#### Foothold
+
+* Look for public repositories (`/explore`)
+* Look if you can log in using Windows
+* Look if you can create accounts (`/users/sign_up`). We often need to use the company email which may block us.
+* Look if the newly created account need admin verification. If they don't, we may be able to access internal repositories (`/explore`).
+</div><div>
+
+#### Exploitation
+
+* May contains token, ssh keys, credentials, passwords
+
+#### Well-known CVEs
+
+Gitlab 13.10.2 RCE:
+
+```shell!
+$ sudo apt install djvulibre-bin
+$ searchsploit -p 49951
+$ python3 49951.py -u xxx -p xxx -t URL -c 'command'
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
