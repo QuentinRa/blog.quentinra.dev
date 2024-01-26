@@ -38,7 +38,7 @@ Common tools are:
 * [dirsearch](/cybersecurity/red-team/tools/enumeration/web/dirsearch.md)
 * [ffuf](/cybersecurity/red-team/tools/enumeration/web/ffuf.md#ffuf)
 * [wfuzz](/cybersecurity/red-team/tools/enumeration/web/wfuzz.md)
-* [feroxbuster](https://github.com/epi052/feroxbuster) (4.1k ⭐, Rust)
+* [feroxbuster](https://github.com/epi052/feroxbuster) (5.0k ⭐, Rust)
 * [dirb](https://dirb.sourceforge.net/) (installable on any Debian)
 * [DirBuster](https://github.com/KajanM/DirBuster) (0.1k ⭐)
 </div></div>
