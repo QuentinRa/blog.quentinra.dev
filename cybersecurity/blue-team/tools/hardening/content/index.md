@@ -87,7 +87,7 @@ It automates the process explained in the [documentation](https://complianceasco
 
 <div class="row row-cols-lg-2"><div>
 
-The project uses [jinja2](/programming-languages/web/others/templating/jinja2/index.md) allowing us to use macros and variables inside many files of the project. 
+The project uses [jinja2](/programming-languages/web/topics/templating/jinja2/index.md) allowing us to use macros and variables inside many files of the project. 
 
 Note that, unlike usual `jinja` templates, we use one more level of accolades, so `{% %}` is now `{{% %}}` <small>(ansible-related reason)</small>.
 

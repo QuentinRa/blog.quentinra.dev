@@ -6,7 +6,7 @@ Markdown is the language used in `.md` files. It's mostly used to write simple d
 
 * 📝 Git-related documents <small>(ex: README.md, CONTRIBUTING.md...)</small>
 * 🏫 Documentation <small>(ex: GIT wikis, [see documentation tools](/tools-and-frameworks/others/documentation/index.md)...)</small>
-* 🗃️ Websites <small>(ex: GitHub Pages, [see static sites generators](/programming-languages/web/others/ssg/index.md)...)</small>
+* 🗃️ Websites <small>(ex: GitHub Pages, [see static sites generators](/programming-languages/web/topics/ssg/index.md)...)</small>
 * 🎉 Articles
 * 🖼️ Presentations <small>(ex: slick)</small>
 * ...
@@ -223,7 +223,7 @@ Extended features are available on most Markdown interpreters (ex: GitHub), but 
 
 <div class="row row-cols-lg-2"><div>
 
-```markdown
+```markdown!
 | Column name | Column name |
 | --- | --- |
 | tab[0][0] | tab[0][1] |
@@ -248,7 +248,7 @@ You may also note that you can add more than 3 hyphens (`---`). And, you can use
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-```markdown
+```markdown!
 * [ ] not checked
 * [x] checked
 ```
@@ -321,7 +321,7 @@ Markdown.
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-```markdown
+```markdown!
 <div align="center">
 
 This text is **centered**
@@ -341,7 +341,7 @@ This text is **centered**
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-```html
+```html!
 <details open>
 <summary>Dropdown open</summary>
 Content
