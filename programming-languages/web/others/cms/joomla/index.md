@@ -7,7 +7,7 @@
 [Joomla](https://www.joomla.org/) is an open-source Content Management System (CMS) written in PHP. The version 5 is currently in development (2024).
 
 * [GitHub](https://github.com/joomla/joomla-cms) <small>(4.4k ⭐)</small>
-* [Documentation](https://github.com/joomla/joomla-cms) <small>(⛪)</small>
+* [Documentation](https://docs.joomla.org/) <small>(⛪)</small>
 
 You can see the repartition of active Joomla installations [here](https://developer.joomla.org/stats/cms_version).
 </div><div>
