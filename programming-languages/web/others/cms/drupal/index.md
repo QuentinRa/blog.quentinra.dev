@@ -1,5 +1,7 @@
 # Drupal
 
+[![attacking_common_applications](../../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+
 <div class="row row-cols-lg-2"><div>
 
 Drupal is an open-source Content Management System (CMS) written in PHP. The version 11 is currently in development (2024).
@@ -14,6 +16,8 @@ It supports MySQL, PostgreSQL, or sqlite.
 <hr class="sep-both">
 
 ## Drupal Pentester Notes ☠️
+
+[![attacking_common_applications](../../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 
 <div class="row row-cols-lg-2"><div>
 

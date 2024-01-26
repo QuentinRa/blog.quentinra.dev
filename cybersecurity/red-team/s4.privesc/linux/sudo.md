@@ -21,6 +21,7 @@
 [![knife](../../../_badges/htb-p/knife.svg)](https://app.hackthebox.com/machines/Knife)
 [![broker](../../../_badges/htb-p/broker.svg)](https://app.hackthebox.com/machines/Broker)
 [![busqueda](../../../_badges/htb-p/busqueda.svg)](https://app.hackthebox.com/machines/Busqueda)
+[![shocker](../../../_badges/htb-p/shocker.svg)](https://app.hackthebox.com/machines/Shocker)
 
 <div class="row row-cols-lg-2"><div>
 

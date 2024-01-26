@@ -1,5 +1,6 @@
 # PRTG Network Monitor
 
+[![attacking_common_applications](../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 [![netmon](../../../../cybersecurity/_badges/htb-p/netmon.svg)](https://app.hackthebox.com/machines/Netmon)
 
 <div class="row row-cols-lg-2"><div>
@@ -36,5 +37,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * Default credentials (`prtgadmin:prtgadmin`)
+* Nmap (`Indy httpd <version>`)
+* [CVE-2018-9276](https://nvd.nist.gov/vuln/detail/CVE-2018-9276) (`<18.2.39`): command injection ([poc](https://github.com/wildkindcc/CVE-2018-9276/tree/master))
 </div><div>
 </div></div>
