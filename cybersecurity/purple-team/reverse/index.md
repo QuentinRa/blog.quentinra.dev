@@ -19,11 +19,33 @@ For simple programs, we might be able to get the information we need using the c
 
 <hr class="sep-both">
 
+## .NET Reverse Engineering
+
+<div class="row row-cols-lg-2"><div>
+
+#### .NET De4Dot - Reverse
+
+[![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+
+You can use [de4dot](https://github.com/de4dot/de4dot) <small>(6.6k ⭐, 2020 🪦)</small> to reverse your binary. On Windows, drag and drop your binary onto the de4dot executable.
+
+<br>
+
+#### .NET dnSpy - Debug/Editor
+
+[![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+
+You can use [dnSpy](https://github.com/dnSpy/dnSpy) <small>(24.8k ⭐, 2020 🪦)</small> to explore .NET source code.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Debugging Analysis
 
 <div class="row row-cols-lg-2"><div>
 
-#### Windows Debug
+#### Windows x64dbg debugger
 
 [![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 
