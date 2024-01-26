@@ -108,4 +108,5 @@ Stuff that I found, but never read/used yet.
 * [Modern web](https://modern-web.dev/guides/)
 * [Google Code Labs](https://codelabs.developers.google.com/)
 * [Firebase](https://firebase.google.com/)
+* thick clients
 </div></div>

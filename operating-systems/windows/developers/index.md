@@ -35,7 +35,7 @@ There is the same on Windows. The shortest way to find the menu we are looking f
 
 <div class="text-center">
 
-<img alt="Write PATH in the search bar" src="/courses/operating-systems/windows/developers/_images/path.png" width="300"/>
+<img src="_images/path.png" alt="Write PATH in the search bar" width="300"/>
 </div>
 
 From it, select environment variables then edit `Path` in User variables.

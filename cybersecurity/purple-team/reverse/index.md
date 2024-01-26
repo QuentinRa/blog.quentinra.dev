@@ -19,6 +19,28 @@ For simple programs, we might be able to get the information we need using the c
 
 <hr class="sep-both">
 
+## Debugging Analysis
+
+<div class="row row-cols-lg-2"><div>
+
+#### Windows Debug
+
+[![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+
+You can use [x64dbg](https://github.com/x64dbg/x64dbg) <small>(42.5k ⭐)</small> to debug binaries.
+
+* You can navigate to options to define the breakpoints. For instance, uncheck everything except Exit Breakpoint.
+* The memory map tab can be used to find stuff like [memory-mapped files](https://en.wikipedia.org/wiki/Memory-mapped_file) <small>(a file mapped to a memory region like a buffer)</small>.
+  * Double-click on an entry to see its bytes
+  * You may recognize a file from the magic code bytes
+  * Right-click on an address to dump its contents to a file
+
+➡️ See also: [x64dbg unpack malware](https://www.varonis.com/blog/x64dbg-unpack-malware).
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Code Obfuscation
 
 [![javascriptdeobfuscation](../../_badges/htb/javascriptdeobfuscation.svg)](https://academy.hackthebox.com/course/preview/javascript-deobfuscation)
