@@ -175,6 +175,7 @@ Gantt is a chart that illustrates a project schedule over time.
 * [Jira](https://www.atlassian.com/software/jira) (Atlassian)
 * [GitHub Issues](https://github.com/features/issues), [GitLab Issues](https://docs.gitlab.com/ee/user/project/issues/), etc.
 * [Redmine](https://www.redmine.org/)
+* [osTicket](tools/osticket.md)
 * ...
 </div></div>
 
