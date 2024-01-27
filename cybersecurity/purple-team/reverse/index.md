@@ -19,6 +19,60 @@ For simple programs, we might be able to get the information we need using the c
 
 <hr class="sep-both">
 
+## Java Reverse Engineering
+
+<div class="row row-cols-lg-2"><div>
+
+#### JAR application
+
+[![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+
+You can extract a JAR archive using archive tools or:
+
+```shell!
+$ jar xf xxx.jar
+```
+
+You can also create a JAR archive using archive tools or:
+
+```shell!
+$ jar -cvf ../xxx.war *
+$ jar -cmf ./META-INF/MANIFEST.MF ../xxx.jar *
+```
+
+If you plan to edit the JAR, you may have to remove every checksum from the MANIFEST.MF along with `.RSA/.SF` to by-pass integrity checks. ⚠️ Note that MANIFEST.MF must ends with a blank line.
+</div><div>
+
+#### Java Decompiler
+
+You can use [jd-gui](https://github.com/java-decompiler/jd-gui) <small>(13.2k ⭐)</small> to reverse a Java application. Run `jd-gui`, and oad the JAR in it. You can then either:
+
+* Explore the reversed sources from `jd-gui`
+* Use `File> Save all sources` and read/modify them in your editor
+
+Before you modify a file, you need to create a raw copy in which you will inject `.class` before bundling them back to a JAR:
+
+```shell!
+$ mkdir raw && cd raw
+$ jar xvf ../xxx.jar && cd ..
+```
+
+Now, you can edit a file and transfer its compiled `.class` to "raw": 
+
+```shell!
+$ javac -cp xxx.jar source_code/path/to/file.java
+$ cp -r source_code/path/to/*.class raw/path/to/file
+```
+
+Once you are done, pack "raw" back to a JAR:
+
+```shell!
+$ jar -cmf raw/META-INF/MANIFEST.MF xxx.jar raw
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## .NET Reverse Engineering
 
 <div class="row row-cols-lg-2"><div>
@@ -110,6 +164,7 @@ Stuff that I found, but never read/used yet.
 
 * Minify code to make it less readable
 * Use of encoding
+* `Get-FileMetaData xxx.dll`
 * `strace/strings` [link](https://jvns.ca/strace-zine-v3.pdf)
 * [scoding.de](https://scoding.de/uploads/r2_cs.pdf)
 * [DOSfuscation](https://github.com/danielbohannon/Invoke-DOSfuscation)
