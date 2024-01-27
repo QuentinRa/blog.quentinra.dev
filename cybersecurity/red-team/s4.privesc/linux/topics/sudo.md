@@ -14,6 +14,7 @@
 [![allinonemj](../../../../_badges/thm-p/allinonemj.svg)](https://tryhackme.com/room/allinonemj)
 [![chillhack](../../../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
 [![sudo_weak_configuration](../../../../_badges/rootme/app_script/sudo_weak_configuration.svg)](https://www.root-me.org/en/Challenges/App-Script/sudo-weak-configuration)
+[![bash_restricted_shells](../../../../_badges/rootme/app_script/bash_restricted_shells.svg)](https://www.root-me.org/en/Challenges/App-Script/Bash-Restricted-shells)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 ![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
 [![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)

