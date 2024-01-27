@@ -170,9 +170,7 @@ open('/tmp/passwd_dump', 'w').write(open('/etc/passwd', 'r').read())
 [![python_format_string](../../../../_badges/hacktricks/generic_methodologies_and_resources/python/bypass_python_sandboxes/python_format_string.svg)](https://book.hacktricks.xyz/generic-methodologies-and-resources/python/bypass-python-sandboxes#python-format-string)
 [![python_format_string](../../../../_badges/rootme/app_script/python_format_string.svg)](https://www.root-me.org/en/Challenges/App-Script/Python-format-string)
 
-The python format function may be exploited to access variables from the code and display them. 
-
-In the example below, we access the method `__init__` while any methods of the class would work. We can then relatively access other members of the class, or move up and access members of the parent `global` namespace.
+The python format function may be exploited to access variables from the code and display them. In the example below, we access the method `__init__` while any methods of the class would work. We can then relatively access other members of the class, or move up and access members of the parent `global` namespace.
 
 ```py
 class X:
