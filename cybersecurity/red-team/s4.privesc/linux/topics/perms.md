@@ -4,14 +4,14 @@
 
 ## SUID/GUID bit
 
-[![linprivesc](../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
-[![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
-[![commonlinuxprivesc](../../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
-[![vulnversity](../../../_badges/thm-p/vulnversity.svg)](https://tryhackme.com/room/vulnversity)
-[![kenobi](../../../_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
-[![rrootme](../../../_badges/thm-p/rrootme.svg)](https://tryhackme.com/room/rrootme)
-[![linprivesc](../../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
-[![cowboyhacker](../../../_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
+[![linprivesc](../../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
+[![linuxprivesc](../../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
+[![commonlinuxprivesc](../../../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
+[![vulnversity](../../../../_badges/thm-p/vulnversity.svg)](https://tryhackme.com/room/vulnversity)
+[![kenobi](../../../../_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
+[![rrootme](../../../../_badges/thm-p/rrootme.svg)](https://tryhackme.com/room/rrootme)
+[![linprivesc](../../../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
+[![cowboyhacker](../../../../_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -23,13 +23,13 @@ $ find / -perm -u=s -type f -ls 2>/dev/null
 $ find / -perm -g=s -type f -ls 2>/dev/null
 ```
 
-Once you found a file with the SUID bit, either there is a known way to exploit it using [GTFOBins](tools/gtfobins.md), or you have to investigate manually.
+Once you found a file with the SUID bit, either there is a known way to exploit it using [GTFOBins](../tools/gtfobins.md), or you have to investigate manually.
 
 <br>
 
 #### pkexec - CVE-2021-4034
 
-[![linuxprivilegeescalation](../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 
 `/usr/bin/pkexec` a file installed by default on every major Linux distribution with a **SUID bit** could be exploited to get root. See [arthepsy PoC](https://github.com/arthepsy/CVE-2021-4034) (0.9k ⭐), or [berdav PoC](https://github.com/berdav/CVE-2021-4034) (1.7k ⭐).
 
@@ -40,14 +40,14 @@ Pkexec is one of the programs that are part of PolicyKit (polkit).
 
 #### Manual investigation
 
-[![mustacchio](../../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
+[![mustacchio](../../../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
 
 If the script **hand-made**, or **not on GTFOBins**, then you can use refer to (basic) [Reverse Engineering](/cybersecurity/purple-team/reverse/index.md), e.g., the commands below to hopefully find which files and environment variables the script is using
 
 * `strace`: see every system call
 * `strings`: extract every readable string
 
-You may be able to make the script do what you want by editing [environment variables or files](injection.md) that it uses.
+You may be able to make the script do what you want by editing [environment variables or files](../utils/injection.md) that it uses.
 
 <br>
 
@@ -63,9 +63,9 @@ When exploiting a command, you will usually want to run another executable. Two 
 
 ## Capabilities
 
-[![linprivesc](../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
-[![linuxprivilegeescalation](../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
-[![cap](../../../_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
+[![linprivesc](../../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
+[![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![cap](../../../../_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -80,7 +80,7 @@ $ getcap -r / 2>/dev/null
 ```
 </div><div>
 
-➡️ Look for the executable on [GTFOBins](tools/gtfobins.md)
+➡️ Look for the executable on [GTFOBins](../tools/gtfobins.md)
 
 ➡️ Use the same techniques as for [SUID/GUID](#suidguid-bit) files not on GTFOBins
 
@@ -95,7 +95,7 @@ $ /usr/bin/python3 -c 'import os; os.execl("/bin/sh", "sh", "-p")'
 
 ## Special Groups
 
-[![linuxprivilegeescalation](../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -107,8 +107,8 @@ Users in the `adm` group are able to read all logs. Log management utilities suc
 
 ## Misconfigured system files
 
-[![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
-[![commonlinuxprivesc](../../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
+[![linuxprivesc](../../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
+[![commonlinuxprivesc](../../../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 
 <div class="row row-cols-lg-2"><div>
 

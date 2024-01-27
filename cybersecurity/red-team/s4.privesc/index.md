@@ -44,7 +44,7 @@ Additionally, look for folders where you can download and run scripts, along wit
 
 I compiled a list of handy commands per operating system:
 
-* [Linux Environment Identification](linux/id.md)
+* [Linux Environment Identification](linux/utils/id.md)
 * [Windows Environment Identification](windows/id.md)
 
 You will also have to look for installed tools and apps along with their versions. You will need these to look for [CVEs and exploits](/cybersecurity/red-team/s3.exploitation/index.md#vulnerability-databases) related to local escalation privilege.
@@ -64,11 +64,11 @@ You will also have to look for installed tools and apps along with their version
 
 [Linux](/operating-systems/linux/_knowledge/index.md) privilege escalation may be achieved by exploiting:
 
-* 💎 Exploiting [sudo](linux/sudo.md)
-* ⏰ Exploiting [scheduled tasks](linux/tasks.md) <small>(cron tasks)</small>
+* 💎 Exploiting [sudo](linux/topics/sudo.md)
+* ⏰ Exploiting [scheduled tasks](linux/topics/tasks.md) <small>(cron tasks)</small>
 * 🔑 Finding [credentials/files](#credential-hunting) <small>(config, logs, ssh keys...)</small>
-* 💥 Exploiting the [kernel](linux/kernel.md)
-* 🐸 Misconfigured [file permissions](linux/perms.md)
+* 💥 Exploiting the [kernel](linux/topics/kernel.md)
+* 🐸 Misconfigured [file permissions](linux/topics/perms.md)
 * 👻 Look for unmounted drives
 * 👻 Look for printers (`lpstat`)
 
@@ -88,14 +88,14 @@ There are many **automated scripts** that will investigate usual places, service
 * [traitor](linux/tools/traitor.md)  <small>(6.3k ⭐ | go script compiled to binary | 2022 ☠️)</small>
 * [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) a.k.a. LSE <small>(3.0k ⭐ | shell script)</small>
 * [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) <small>(1.4k ⭐ | python script, 2021 🪦)</small>
-* [pwncat-cs](/cybersecurity/red-team/s3.exploitation/shell/pwncat.md) <small>(2.3k ⭐ | reverse shell with priv. esc. suggester | 2022 ☠️)</small>
+* [pwncat-cs](/cybersecurity/red-team/s3.exploitation/shell/tools/pwncat.md) <small>(2.3k ⭐ | reverse shell with priv. esc. suggester | 2022 ☠️)</small>
 
 Additional references
 
 * [GTFOBins](linux/tools/gtfobins.md)
-* [Injection](linux/injection.md)
-* [Rootbash](linux/rootbash.md)
-* [Restricted Shells](linux/restricted_shells.md)
+* [Injection](linux/utils/injection.md)
+* [Rootbash](linux/utils/rootbash.md)
+* [Restricted Shells](linux/random/restricted_shells.md)
 
 <details class="details-n">
 <summary>Special escalation vectors</summary>

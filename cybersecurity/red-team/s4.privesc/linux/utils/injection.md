@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-If there is some code that can is executed as another user, for instance, a [scheduled task](tasks.md) or a [program with the SUID bit](perms.md#suidguid-bit), you may be able to modify the code behavior using injection.
+If there is some code that can is executed as another user, for instance, a [scheduled task](../topics/tasks.md) or a [program with the SUID bit](../topics/perms.md#suidguid-bit), you may be able to modify the code behavior using injection.
 
 ➡️ You may need/want to create a [root bash](rootbash.md).
 </div><div>
@@ -20,13 +20,13 @@ There are basic scenarios in which you can directly exploit the executable, but 
 
 ## Path Environment variable 🌸
 
-[![linprivesc](../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
-[![linuxprivesc](../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
-[![commonlinuxprivesc](../../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
-[![linuxprivilegeescalation](../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
-[![mustacchio](../../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
-[![bash_system_1](../../../_badges/rootme/app_script/bash_system_1.svg)](https://www.root-me.org/en/Challenges/App-Script/ELF32-System-1)
-[![bash_system_2](../../../_badges/rootme/app_script/bash_system_2.svg)](https://www.root-me.org/en/Challenges/App-Script/ELF32-System-2)
+[![linprivesc](../../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
+[![linuxprivesc](../../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
+[![commonlinuxprivesc](../../../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
+[![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![mustacchio](../../../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
+[![bash_system_1](../../../../_badges/rootme/app_script/bash_system_1.svg)](https://www.root-me.org/en/Challenges/App-Script/ELF32-System-1)
+[![bash_system_2](../../../../_badges/rootme/app_script/bash_system_2.svg)](https://www.root-me.org/en/Challenges/App-Script/ELF32-System-2)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -64,8 +64,8 @@ $ bash -c 'export PATH=/tmp:$PATH; <execute the script>'
 
 ## Parameters injection  🎭
 
-[![linuxstrengthtraining](../../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
-[![linuxprivilegeescalation](../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![linuxstrengthtraining](../../../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
+[![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -93,7 +93,7 @@ drwxr-xr-x 9 xxx xxx 4096 Apr 29 18:50 ..
 
 ## Library Hijacking
 
-[![linuxprivilegeescalation](../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -111,7 +111,7 @@ $ readelf -d <binary>
 
 If the binary has the `RUNPATH` folder set, then, if we can write `.so` to this folder, we can compromise it.
 
-To write a static binary, [refer to LD_PRELOAD](sudo.md#ld_preload).
+To write a static binary, [refer to LD_PRELOAD](../topics/sudo.md#ld_preload).
 
 Misconfigured Python installations may also be vulnerable if we are able to write python script in the module path.
 
@@ -155,7 +155,7 @@ As a reminder, if you can execute commands, then refer to [command injection](/c
 
 #### Python input() function
 
-[![python_input](../../../_badges/rootme/app_script/python_input.svg)](https://www.root-me.org/en/Challenges/App-Script/Python-input)
+[![python_input](../../../../_badges/rootme/app_script/python_input.svg)](https://www.root-me.org/en/Challenges/App-Script/Python-input)
 
 This command is used to prompt the user for input. The problem is that we can write python code <small>(e.g., 5+5)</small>.
 
@@ -166,7 +166,7 @@ open('/tmp/passwd_dump', 'w').write(open('/etc/passwd', 'r').read())
 
 #### Latex directives
 
-[![latex_input](../../../_badges/rootme/app_script/latex_input.svg)](https://www.root-me.org/en/Challenges/App-Script/LaTeX-Input)
+[![latex_input](../../../../_badges/rootme/app_script/latex_input.svg)](https://www.root-me.org/en/Challenges/App-Script/LaTeX-Input)
 
 If we can compile LaTeX, we may be able to 
 
@@ -175,7 +175,7 @@ If we can compile LaTeX, we may be able to
 
 #### Bash Script Arguments
 
-[![bash_unquoted](../../../_badges/rootme/app_script/bash_unquoted.svg)](https://www.root-me.org/en/Challenges/App-Script/Bash-unquoted-expression-injection)
+[![bash_unquoted](../../../../_badges/rootme/app_script/bash_unquoted.svg)](https://www.root-me.org/en/Challenges/App-Script/Bash-unquoted-expression-injection)
 
 If the script uses the argument without quoting them nor validating them, we may be able to inject parameters.
 
