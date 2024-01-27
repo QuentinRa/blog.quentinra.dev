@@ -1,5 +1,27 @@
 # Change Log
 
+## v6.1.0 (2024-01-27)
+
+**Added**
+
+* `course`: Added "games" category
+* `course`: Added "math" category
+* `course`: Added "cybersecurity" category
+* `course`: Hundreds of courses over all categories
+* `feature`: Added Search bar
+* `feature`: Badges for cybersecurity platforms
+* `feature`: Added Breadcrumb navigation
+
+**Changed**
+
+* `rendering`: improved small screens/mobile rendering
+* `internal`: removed emojis characters from URLs
+* `feature`: added some redirections when courses were moved
+
+**Removed**
+
+* `feature`: removed the centralized to-do list
+
 ## v6.0.0 (2022-11-23)
 
 **Major changes**
