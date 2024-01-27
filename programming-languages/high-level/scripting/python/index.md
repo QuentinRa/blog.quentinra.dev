@@ -598,9 +598,18 @@ r = requests.get("https://example.com")
 r = requests.get("https://example.com", allow_redirects=True)
 r = requests.get(url, headers={"Header": "value"})
 r = requests.get(url, verify=True) # SSL verify?
+r = requests.request("GET", url, data={})
+r = requests.request("GET", url, json={})
 if r.status_code == 404:
     pass
 # Use: r.json() | r.text | r.content
+
+files = {
+        "paramName": (
+            "file.txt", b'Hello, World!', "file_type"
+        )
+    }
+r = requests.post(url, files=files)
 ```
 
 ➡️ If the host is unreachable, a `requests.ConnectionError` is raised.
@@ -625,6 +634,16 @@ soup.find_all('a', href=True)
 soup.find_all(['a', 'img'])
 soup.find_all(attrs={"onclick": True}
 soup.find_all(string=lambda text: isinstance(text, bs4.Comment)))
+```
+
+#### html2text - HTML parsing
+
+Parse HTML code to only keep the rendered text.
+
+```python
+import html2text
+text = "<b>Hello, World!</b>"
+content = html2text.html2text(text)
 ```
 </div></div>
 
