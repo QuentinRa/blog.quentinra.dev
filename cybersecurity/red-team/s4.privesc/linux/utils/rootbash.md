@@ -101,6 +101,23 @@ $ gcc -shared -fPIC init.c -o init.so -nostartfiles
 ```shell!
 $ chmod 777 init.so       # 😏 - avoid it
 ```
+
+<details class="details-n">
+<summary>Read a file in C</summary>
+
+```c
+FILE *file = fopen("/etc/passwd", "r");
+if (file == NULL) {
+    printf("Error opening the file.\n");
+    return;
+}
+char buffer[256];
+while (fgets(buffer, sizeof(buffer), file) != NULL) {
+    printf("%s", buffer);
+}
+fclose(file);
+```
+</details>
 </div></div>
 
 <hr class="sep-both">

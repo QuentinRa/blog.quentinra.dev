@@ -94,6 +94,7 @@ drwxr-xr-x 9 xxx xxx 4096 Apr 29 18:50 ..
 ## Library Hijacking
 
 [![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![shared_objects_hijacking](../../../../_badges/rootme/app_script/shared_objects_hijacking.svg)](https://www.root-me.org/en/Challenges/App-Script/Shared-Objects-hijacking)
 
 <div class="row row-cols-lg-2"><div>
 

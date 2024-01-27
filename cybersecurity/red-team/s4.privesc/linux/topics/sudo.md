@@ -15,6 +15,7 @@
 [![chillhack](../../../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
 [![sudo_weak_configuration](../../../../_badges/rootme/app_script/sudo_weak_configuration.svg)](https://www.root-me.org/en/Challenges/App-Script/sudo-weak-configuration)
 [![bash_restricted_shells](../../../../_badges/rootme/app_script/bash_restricted_shells.svg)](https://www.root-me.org/en/Challenges/App-Script/Bash-Restricted-shells)
+[![shared_objects_hijacking](../../../../_badges/rootme/app_script/shared_objects_hijacking.svg)](https://www.root-me.org/en/Challenges/App-Script/Shared-Objects-hijacking)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 ![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
 [![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
@@ -149,4 +150,20 @@ msf6> run
 ```
 </div></div>
 
+<hr class="sep-both">
 
+## Additional Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### LD_LIBRARY_PATH
+
+[![shared_objects_hijacking](../../../../_badges/rootme/app_script/shared_objects_hijacking.svg)](https://www.root-me.org/en/Challenges/App-Script/Shared-Objects-hijacking)
+
+While uncommon, if the sudo configuration include `env_keep+=LD_LIBRARY_PATH`, we are able to set a custom folder for `.so`. Refer to [Shared Object Hijacking](../utils/injection.md#library-hijacking).
+
+```shell!
+$ sudo LD_LIBRARY_PATH=/path/to/xx/ [...]
+```
+</div><div>
+</div></div>
