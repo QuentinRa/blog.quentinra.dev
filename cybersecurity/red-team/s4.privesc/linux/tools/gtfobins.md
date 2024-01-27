@@ -139,9 +139,10 @@ $ sudo /usr/bin/apport-cli --file-bug
 
 * `/usr/bin/systemctl status xxx.service`
 
+[![attacking_common_applications](../../../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 [![sau](../../../../_badges/htb-p/sau.svg)](https://app.hackthebox.com/machines/Sau)
 
-While it seems secure, the reader opened is `less` which can be leveraged to run commands: `!/bin/bash`.
+While it may be secure, if a reader is opened, such as `less`, it may be leveraged to run commands e.g. using `!/bin/bash` for `less`.
 </div><div>
 
 * `/usr/bin/knife`: [knife](http://manpages.ubuntu.com/manpages/bionic/man1/knife.1.html) can be exploited in many ways

@@ -23,6 +23,12 @@ Access control
 * XACML
 
 ➡️ Tell users when they are not allowed to access something, or when it is monitored, and when it can lead to prosecution.
+
+TLDR
+
+* 2FA for admins
+* Disable default accounts/change default usernames
+* Integration with AD can make it easier
 </div><div>
 
 IAM

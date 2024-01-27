@@ -16,4 +16,7 @@ List of courses that have note which were not added yet.
 **Cybersecurity**
 
 * AD Windows Linux Security, IoT, Cloud, Networking
+* Axis2 aar webshell 
+* Websphere system:manager war webshell 
+* Zabbix (quite a few CVEs, API)
 </div></div>
