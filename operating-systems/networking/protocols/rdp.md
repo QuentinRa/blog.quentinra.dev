@@ -17,7 +17,7 @@ There is [FreeRDP](https://github.com/FreeRDP/FreeRDP) (7.5k ⭐), and there is 
 
 ```shell!
 $ xfreerdp /u:username /p:password /v:IP
-$ xfreerdp /dynamic-resolution +clipboard /cert:ignore /v:IP /u:x /p:y
+$ xfreerdp /dynamic-resolution +clipboard /timeout:50000 /cert:ignore /v:IP /u:x /p:y
 ```
 </div><div>
 

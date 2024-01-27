@@ -45,6 +45,8 @@ If you plan to edit the JAR, you may have to remove every checksum from the MANI
 
 #### Java Decompiler
 
+[![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+
 You can use [jd-gui](https://github.com/java-decompiler/jd-gui) <small>(13.2k ⭐)</small> to reverse a Java application. Run `jd-gui`, and oad the JAR in it. You can then either:
 
 * Explore the reversed sources from `jd-gui`
@@ -113,6 +115,22 @@ You can use [x64dbg](https://github.com/x64dbg/x64dbg) <small>(42.5k ⭐)</small
 
 ➡️ See also: [x64dbg unpack malware](https://www.varonis.com/blog/x64dbg-unpack-malware).
 </div><div>
+
+#### Linux PEDA debugger
+
+[![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+
+You can use [peda](https://github.com/longld/peda) <small>(5.7k ⭐)</small> to debug Linux binaries. It's a Python script over GDB that make it easier to use [GDB](/programming-languages/low-level/compilers/gnu/gdb.md).
+
+```shell!
+$ git clone https://github.com/longld/peda.git ~/peda
+$ echo "source ~/peda/peda.py" >> ~/.gdbinit
+$ gdb ./some_program
+(gdb) set disassembly-flavor intel
+(gdb) disas main
+(gdb) b *address
+(gdb) run
+```
 </div></div>
 
 <hr class="sep-both">

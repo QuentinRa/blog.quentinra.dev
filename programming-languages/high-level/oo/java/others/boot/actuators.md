@@ -27,7 +27,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* `jar xf xxx.jar`
+* See also: JAR Reverse Engineering
+* `/beans.xml` (Spring configuration metadata)
 * `cat BOOT-INF/classes/application.properties | grep datasource`
 * We can easily recognize spring from the 404 page (`Whitelabel error page` or format)
 * `/actuators` is for v2, in v1 they are at the root and not censored while there is no database configuration
