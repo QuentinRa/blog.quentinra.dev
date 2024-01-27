@@ -97,29 +97,29 @@ drwxr-xr-x 9 xxx xxx 4096 Apr 29 18:50 ..
 
 <div class="row row-cols-lg-2"><div>
 
-Shared Object Hijacking or Linker Hijacking is a technique in which we load a malicious `.so` file when executing a binary such as `ls` in a misconfigured environment.
+Shared Object Hijacking or Linker Hijacking is a technique in which we load a malicious `.so` file when executing a potentially misconfigured binary such as `ls` in a potentially misconfigured environment.
 
-For instance, we may have write access to a folder such as `/lib` or `/usr/lib` which are used by default when linking an executable. It's also possible that `/etc/ld.so.conf` was misconfigured.
+A environment is misconfigured when we have write access to a folder defined in `/etc/ld.so.conf`. Such folders are checked in order when looking for a `.so`. It includes standard folders such as `/lib` or `/usr/lib` and may include non-standard writable paths.
 
-If we found a suspicious binary, we can examine it:
+If we find a suspicious binary, we can examine it:
 
 ```ps
 $ ldd <binary>
 $ readelf -d <binary>
 ```
+
+If the binary has the `RUNPATH` folder set and it points to a file/folder we can write to, then we can load our `.so`.
 </div><div>
 
-If the binary has the `RUNPATH` folder set, then, if we can write `.so` to this folder, we can compromise it.
+To write a static binary (`.so`), [refer to rootbash#static binary](../utils/rootbash.md#root-bash-static-library) section.
 
-To write a static binary, [refer to LD_PRELOAD](../topics/sudo.md#ld_preload).
-
-Misconfigured Python installations may also be vulnerable if we are able to write python script in the module path.
+Misconfigured Python installations may also be vulnerable if we are able to write python scripts in the module path.
 
 ```shell!
 $ python3 -c 'import sys; print("\n".join(sys.path))'
 ```
 
-Then, check every imported package using `pip3 show <package>`. If the package is imported from a location that is below a folder in which you can write to, then you can inject your own code.
+Check every imported package using `pip3 show <package>`. If the package is imported from a location that is below a folder in which you can write to, then you can inject your own code.
 </div></div>
 
 <hr class="sep-both">
