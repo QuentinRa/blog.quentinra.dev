@@ -98,6 +98,12 @@ Even if you gathered a lot of information, you may want to start with small word
 
 <br>
 
+#### Linkedin2Username
+
+[linkedin2username](https://github.com/initstring/linkedin2username) <small>(1.1k ⭐)</small> uses **your** Linkedin account to explore the target Linkedin pages and generate a wordlist of usernames.
+
+<br>
+
 #### cook wordlist generation
 
 [cook](https://github.com/glitchedgitz/cook) <small>(0.7k ⭐)</small> is a tool/engine to create wordlists, sort of like a recipe.
