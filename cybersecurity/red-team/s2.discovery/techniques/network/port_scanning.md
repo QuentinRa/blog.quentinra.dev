@@ -42,6 +42,8 @@
 ![bizness](../../../../_badges/htb-p/bizness.svg)
 [![shocker](../../../../_badges/htb-p/shocker.svg)](https://app.hackthebox.com/machines/Shocker)
 [![blocky](../../../../_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
+[![mirai](../../../../_badges/htb-p/mirai.svg)](https://app.hackthebox.com/machines/Mirai)
+
 <div class="row row-cols-lg-2"><div>
 
 When we discover a host, we scan for every port to find which services are running, and get a deeper understanding of the attack surface.
