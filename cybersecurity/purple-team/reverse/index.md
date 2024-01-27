@@ -41,17 +41,6 @@ $ jar -cmf ./META-INF/MANIFEST.MF ../xxx.jar *
 ```
 
 If you plan to edit the JAR, you may have to remove every checksum from the MANIFEST.MF along with `.RSA/.SF` to by-pass integrity checks. ⚠️ Note that MANIFEST.MF must ends with a blank line.
-</div><div>
-
-#### Java Decompiler
-
-[![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
-[![blocky](../../_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
-
-You can use [jd-gui](https://github.com/java-decompiler/jd-gui) <small>(13.2k ⭐)</small> to reverse a Java application. Run `jd-gui`, and oad the JAR in it. You can then either:
-
-* Explore the reversed sources from `jd-gui`
-* Use `File> Save all sources` and read/modify them in your editor
 
 Before you modify a file, you need to create a raw copy in which you will inject `.class` before bundling them back to a JAR:
 
@@ -60,7 +49,7 @@ $ mkdir raw && cd raw
 $ jar xvf ../xxx.jar && cd ..
 ```
 
-Now, you can edit a file and transfer its compiled `.class` to "raw": 
+Now, you can edit a file and transfer its compiled `.class` to "raw":
 
 ```shell!
 $ javac -cp xxx.jar source_code/path/to/file.java
@@ -72,6 +61,25 @@ Once you are done, pack "raw" back to a JAR:
 ```shell!
 $ jar -cmf raw/META-INF/MANIFEST.MF xxx.jar raw
 ```
+
+</div><div>
+
+#### Java jd - Decompiler
+
+[![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+[![blocky](../../_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
+
+You can use [jd-gui](https://github.com/java-decompiler/jd-gui) <small>(13.2k ⭐)</small> to reverse a Java application. Run `jd-gui`, and oad the JAR in it. You can then either:
+
+* Explore the reversed sources from `jd-gui`
+* Use `File> Save all sources` and read/modify them in your editor
+
+#### Java - Other Decompilers
+
+Other well-known decompilers:
+
+* [Recaf](https://github.com/Col-E/Recaf) <small>(5.4k ⭐)</small>
+* [JetBrains IntelliJ](https://github.com/JetBrains/intellij-community) <small>(16.2k ⭐)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -80,7 +88,7 @@ $ jar -cmf raw/META-INF/MANIFEST.MF xxx.jar raw
 
 <div class="row row-cols-lg-2"><div>
 
-#### .NET De4Dot - Reverse
+#### .NET De4Dot - Decompiler
 
 [![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 
@@ -94,6 +102,13 @@ You can use [de4dot](https://github.com/de4dot/de4dot) <small>(6.6k ⭐, 2020 �
 
 You can use [dnSpy](https://github.com/dnSpy/dnSpy) <small>(24.8k ⭐, 2020 🪦)</small> to explore .NET source code.
 </div><div>
+
+#### .NET - Other Decompilers
+
+Other well-known decompilers:
+
+* [ILSpy](https://github.com/icsharpcode/ILSpy) <small>(19.6k ⭐)</small>
+* [JetBrains dotPeek](https://www.jetbrains.com/decompiler/) <small>(paid)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -211,7 +226,7 @@ Common tools
 
 * [Ghidra](https://www.ghidra-sre.org/)
 * [IDA](https://hex-rays.com/ida-pro/)
-* [radare](https://www.radare.org/r/index.html)
+* [radare](https://www.radare.org/r/index.html) (convert binary to assembly, [github](https://github.com/radareorg/radare2))
 * [jadx](https://github.com/skylot/jadx) (DEX/APK to Java)
 * [frida](https://frida.re/)
 </div></div>
