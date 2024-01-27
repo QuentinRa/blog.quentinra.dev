@@ -350,5 +350,6 @@ Stuff that I found, but never read/used yet.
 * Blowfish and BCrypt (rounds of Blowfish)
 * Use a smaller targeted wordlist for bcrypt
 * Argon2
+* [penglab](https://github.com/mxrch/penglab)
 </div><div>
 </div></div>

@@ -26,6 +26,7 @@ Open-source intelligence (**OSINT**) is any information that you gather from pub
 
 * **GitHub**: [Gitrob 💀](https://github.com/michenriksen/gitrob) <small>(5.6k ⭐, dev names, languages, projects...)</small>
 * **Git**: [shhgit 💀](https://github.com/eth0izzle/shhgit) <small>(3.7k ⭐, find secrets)</small>
+* **Github**: [GitFive](https://github.com/mxrch/GitFive) <small>(0.7k ⭐, search by email/username)</small>
 </div><div>
 
 **Social Media Investigations** (SOCMINT) 🗺️: gather any information
