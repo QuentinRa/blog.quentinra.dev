@@ -527,47 +527,25 @@ with open(password_file, 'r') as file:
 
 <hr class="sep-both">
 
-## Some libraries
+## Network Libraries
 
 <div class="row row-cols-lg-2"><div>
 
-#### numpy - manipulate lists
+#### paramiko - SSHv2 implementation
 
-`numpy` is a library simplifying and optimizing operations on lists.
-
-```python
-import numpy
-
-tab = numpy.array([2, 5, 7])
-tab_square = tab ** 2  # ex: [4, 25, 49]
-```
-
-#### requests - http requests
-
-`requests` is a library to do HTTP requests.
+`paramiko` can connect to an SSH server.
 
 ```python
-import requests
+import paramiko
 
-r = requests.get("https://example.com")
-r = requests.get("https://example.com", allow_redirects=True)
-if r.status_code == 404:
+ssh = paramiko.SSHClient()
+ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+try:
+    ssh.connect(target, port=22, username=username, password=password)
+except paramiko.AuthenticationException:
     pass
-# r.json() r.text()...
+ssh.close()
 ```
-
-➡️ If the host is unreachable, a `requests.ConnectionError` is raised.
-
-Requests may be wrapped in a session, which can be used to keep track of things like authentication cookies...
-
-```python
-from requests import Session
-session = Session()
-session.get('', headers={'Content-Type': 'application/json'})
-session.put('', json={})
-session.delete('')
-session.post('', files= {'file': open('xxx','rb')}, data={})
-````
 
 #### scrapy - manipulate packets
 
@@ -583,42 +561,6 @@ r, u = srp(p, timeout=2, iface="tun0", inter=0.1)
 for s,r in r:
     print(r.sprintf(r"%Ether.src% - %ARP.psrc%"))
 ```
-
-#### keyboard - grab keystrokes
-
-`keyboard` can capture keyboard strokes.
-
-```python
-import keyboard
-
-keys = keyboard.record(until ='ENTER')  # until ENTER
-print(keys)                             # see key down/up
-keyboard.play(keys)                     # replay input
-```
-
-#### pyfiglet - banner
-
-`pyfiglet` can be used to show your "program name" using ASCII art.
-
-```python
-import pyfiglet
-
-print(pyfiglet.figlet_format("Metasploit"))
-```
-
-#### hashlib - hash manipulation
-
-`hashlib` can hash a password.
-
-```python
-import hashlib
-
-m = hashlib.md5("a password".strip().encode())
-digest = m.hexdigest()
-if digest == "your hash":
-    pass
-```
-</div><div>
 
 #### socket - networking
 
@@ -643,23 +585,103 @@ finally:
     sock.close()
 ```
 
-#### paramiko - SSHv2 implementation
+</div><div>
 
-`paramiko` can connect to an SSH server.
+#### requests - http requests
+
+`requests` is a library to do HTTP requests.
 
 ```python
-import paramiko
+import requests
 
-ssh = paramiko.SSHClient()
-ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-try:
-    ssh.connect(target, port=22, username=username, password=password)
-except paramiko.AuthenticationException:
+r = requests.get("https://example.com")
+r = requests.get("https://example.com", allow_redirects=True)
+r = requests.get(url, headers={"Header": "value"})
+r = requests.get(url, verify=True) # SSL verify?
+if r.status_code == 404:
     pass
-ssh.close()
+# Use: r.json() | r.text | r.content
 ```
 
-#### Click - command line interfaces
+➡️ If the host is unreachable, a `requests.ConnectionError` is raised.
+
+Requests may be wrapped in a session, which can be used to keep track of things like authentication cookies...
+
+```python
+from requests import Session
+session = Session()
+session.get('', headers={'Content-Type': 'application/json'})
+session.put('', json={})
+session.delete('')
+session.post('', files= {'file': open('xxx','rb')}, data={})
+```
+
+#### BeautifulSoup - HTML parsing
+
+```python
+import bs4
+soup = bs4.BeautifulSoup(response.content, 'html.parser')
+soup.find_all('a', href=True)
+soup.find_all(['a', 'img'])
+soup.find_all(attrs={"onclick": True}
+soup.find_all(string=lambda text: isinstance(text, bs4.Comment)))
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Random libraries
+
+<div class="row row-cols-lg-2"><div>
+
+#### numpy - manipulate lists
+
+`numpy` is a library simplifying and optimizing operations on lists.
+
+```python
+import numpy
+
+tab = numpy.array([2, 5, 7])
+tab_square = tab ** 2  # ex: [4, 25, 49]
+```
+
+#### keyboard - grab keystrokes
+
+`keyboard` can capture keyboard strokes.
+
+```python
+import keyboard
+
+keys = keyboard.record(until ='ENTER')  # until ENTER
+print(keys)                             # see key down/up
+keyboard.play(keys)                     # replay input
+```
+
+#### pyfiglet - banner
+
+`pyfiglet` can be used to show your "program name" using ASCII art.
+
+```python
+import pyfiglet
+
+print(pyfiglet.figlet_format("Metasploit"))
+```
+</div><div>
+
+#### hashlib - hash manipulation
+
+`hashlib` can hash a password.
+
+```python
+import hashlib
+
+m = hashlib.md5("a password".strip().encode())
+digest = m.hexdigest()
+if digest == "your hash":
+    pass
+```
+
+#### click - command line interfaces
 
 Click is prompting the user for input for arguments that were not given to the program (`script.py --key some_key [...]`).
 
