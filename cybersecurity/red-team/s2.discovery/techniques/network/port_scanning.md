@@ -39,9 +39,9 @@
 [![busqueda](../../../../_badges/htb-p/busqueda.svg)](https://app.hackthebox.com/machines/Busqueda)
 [![granny](../../../../_badges/htb-p/granny.svg)](https://app.hackthebox.com/machines/Granny)
 [![antique](../../../../_badges/htb-p/antique.svg)](https://app.hackthebox.com/machines/Antique)
-[![shocker](../../../../_badges/htb-p/shocker.svg)](https://app.hackthebox.com/machines/Shocker)
 ![bizness](../../../../_badges/htb-p/bizness.svg)
-
+[![shocker](../../../../_badges/htb-p/shocker.svg)](https://app.hackthebox.com/machines/Shocker)
+[![blocky](../../../../_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
 <div class="row row-cols-lg-2"><div>
 
 When we discover a host, we scan for every port to find which services are running, and get a deeper understanding of the attack surface.

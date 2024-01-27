@@ -81,6 +81,7 @@ ftp> status # same as 'stat'
 [![easyctf](../../../cybersecurity/_badges/thm-p/easyctf.svg)](https://tryhackme.com/room/easyctf)
 [![chillhack](../../../cybersecurity/_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
 [![lame](../../../cybersecurity/_badges/htb-p/lame.svg)](https://app.hackthebox.com/machines/Lame)
+[![blocky](../../../cybersecurity/_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
 
 <div class="row row-cols-lg-2"><div>
 

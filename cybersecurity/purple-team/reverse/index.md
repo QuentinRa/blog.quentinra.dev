@@ -46,6 +46,7 @@ If you plan to edit the JAR, you may have to remove every checksum from the MANI
 #### Java Decompiler
 
 [![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+[![blocky](../../_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
 
 You can use [jd-gui](https://github.com/java-decompiler/jd-gui) <small>(13.2k ⭐)</small> to reverse a Java application. Run `jd-gui`, and oad the JAR in it. You can then either:
 

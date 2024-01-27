@@ -29,6 +29,7 @@
 [![webenumerationv2](../../../../../cybersecurity/_badges/thmp/webenumerationv2.svg)](https://tryhackme.com/room/webenumerationv2)
 [![colddboxeasy](../../../../../cybersecurity/_badges/thm-p/colddboxeasy.svg)](https://tryhackme.com/room/colddboxeasy)
 [![allinonemj](../../../../../cybersecurity/_badges/thm-p/allinonemj.svg)](https://tryhackme.com/room/allinonemj)
+[![blocky](../../../../../cybersecurity/_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
 [![wordpress](../../../../../cybersecurity/_badges/hacktricks/wordpress.svg)](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/wordpress)
 
 <div class="row row-cols-lg-2"><div>
