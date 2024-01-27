@@ -113,7 +113,7 @@ You can use [x64dbg](https://github.com/x64dbg/x64dbg) <small>(42.5k ⭐)</small
   * You may recognize a file from the magic code bytes
   * Right-click on an address to dump its contents to a file
 
-➡️ See also: [x64dbg unpack malware](https://www.varonis.com/blog/x64dbg-unpack-malware).
+➡️ See also: [x64dbg unpack malware](https://www.varonis.com/blog/x64dbg-unpack-malware) and [OllyDbg](https://github.com/x64dbg/OllyDbg).
 </div><div>
 
 #### Linux PEDA debugger
@@ -192,6 +192,11 @@ Invoke-DOSfuscation> SET COMMAND type <path>
 Invoke-DOSfuscation> encoding
 Invoke-DOSfuscation\Encoding> 1
 ```
+
+Analysis
+
+* [Detect-It-Easy](https://github.com/horsicq/Detect-It-Easy) (target insight)
+* [CFF explorer](https://ntcore.com/?page_id=388)
 </div><div>
 
 * [Bashfuscator](https://github.com/Bashfuscator/Bashfuscator)
@@ -200,4 +205,12 @@ Invoke-DOSfuscation\Encoding> 1
 $ bashfuscator -c 'cat /etc/passwd'
 $ bashfuscator -c 'cat /etc/passwd' -s 1 -t 1 --no-mangling --layers 1
 ```
+
+Common tools
+
+* [Ghidra](https://www.ghidra-sre.org/)
+* [IDA](https://hex-rays.com/ida-pro/)
+* [radare](https://www.radare.org/r/index.html)
+* [jadx](https://github.com/skylot/jadx) (DEX/APK to Java)
+* [frida](https://frida.re/)
 </div></div>

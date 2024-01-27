@@ -206,6 +206,13 @@ Stuff that I found, but never read/used yet.
 * [autohotkey](https://www.autohotkey.com/)
 * [voidtools](https://www.voidtools.com/)
 * [cyberduck](https://cyberduck.io/)
+
+SysInternals
+
+* [procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon) (admin required, see _image)
+* [strings](https://learn.microsoft.com/en-us/sysinternals/downloads/strings): similar to Linux strings.
+* [tpcView](https://learn.microsoft.com/en-us/sysinternals/downloads/tcpview): Windows tcpdump
+* SysInternals Suite: tools. Can be installed or loaded remotely (`\\live.sysinternals.com\tools\xxx.exe`)
 </div><div>
 
 ```ps
