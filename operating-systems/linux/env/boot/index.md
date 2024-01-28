@@ -107,6 +107,31 @@ WantedBy=my_target.target
 
 <hr class="sep-both">
 
+## Grub
+
+[![oh_my_grub](../../../../cybersecurity/_badges/rootme/forensic/oh_my_grub.svg)](https://www.root-me.org/en/Challenges/Forensic/Oh-My-Grub)
+
+<div class="row row-cols-lg-2"><div>
+
+GRUB (GRand Unified Bootloader) is a widely used bootloader on Linux. It allow users to select which operating system or kernel to boot. It automatically boots using the first one after 5 seconds.
+
+📚 It worth noting that a file system is just a file. If we have access to an image such as a `.vmdk`, we can read its content without booting it.
+</div><div>
+
+If the GRUB configuration is not password protected and insecurely configured, we may be able to edit it during boot ⚠️.
+
+* Press <kbd>Esc</kbd> to cancel the automatic selection
+* Press <kbd>E</kbd> to edit GRUB configuration
+* Look for a line `linux [...]`
+* Edit it to your liking
+
+You may remove `quiet` and add `init=/bin/bash` to start the system with a bash as root with no password.
+
+* Press <kbd>CTRL+X</kbd> or <kbd>F10</kbd>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
