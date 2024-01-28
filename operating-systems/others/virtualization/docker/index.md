@@ -428,16 +428,6 @@ To rename "tag" to "example.com:5000/tag"
 ```shell!
 $ docker tag tag:latest example.com:5000/tag:latest
 ```
-
-<br>
-
-#### Docker Layers
-
-Each docker image is composed of multiple read-only layers. They are created during the build process. 
-
-Each instruction in a [Dockerfile](#dockerfile) generates a new layer.
-
-It allows docker to speed up each process, by only building or deploying layers that have changed.
 </div></div>
 
 <hr class="sep-both">
@@ -517,6 +507,43 @@ networks:
 
 ```
 </details>
+</div></div>
+
+<hr class="sep-both">
+
+## Docker Layers 🍷
+
+[![docker_layers](../../../../cybersecurity/_badges/rootme/forensic/docker_layers.svg)](https://www.root-me.org/en/Challenges/Forensic/Docker-layers)
+
+<div class="row row-cols-lg-2"><div>
+
+Each docker image is composed of multiple read-only layers. They are created during the build process.
+
+Each instruction in a [Dockerfile](#dockerfile) generates a new layer.
+
+It allows docker to speed up each process, by only building or deploying layers that have changed.
+
+We may also export an image to manually explore it.
+
+```ps
+$ docker image save <image_id> --output hello.tar
+$ docker import output hello.tar # import to docker
+$ tar xvf hello.tar              # extract and explore
+```
+
+if you don't want to export the image to explore it layers, navigate and try to make use of `/var/lib/docker/overlay2`.
+</div><div>
+
+Each layer can have multiple files such as:
+
+* 🗺️ `<image_hash>.json`: image information
+* 🔎 `manifest.json` and `repositories`: docker information
+* 📦 Nested layers
+  * `json`: layer information
+  * `layer.tar` : recursively extract them
+  * `VERSION`: layer version
+
+By exploring these files, you can see every changes applied to a docker image from the root image up to the current image.
 </div></div>
 
 <hr class="sep-both">
