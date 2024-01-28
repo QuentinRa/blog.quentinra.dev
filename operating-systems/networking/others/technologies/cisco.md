@@ -8,6 +8,16 @@ Cisco is company that specializes in the development of networking devices along
 * 🛣️ Switches
 * 🔥 Firewalls
 * ...
+
+[![cisco_password](../../../../cybersecurity/_badges/rootme/network/cisco_password.svg)](https://www.root-me.org/en/Challenges/Network/CISCO-password)
+
+Cisco configuration file. Only cisco type 5 is considered secure.
+
+```shell!
+username secret password 0 <plaintext_password>
+username secret password 5 <md5_encrypted>
+username secret password 7 <weak_encrypted>
+```
 </div><div>
 
 Cisco switches and routers support [ACLs](/operating-systems/networking/security/_knowledge/index.md#access-control-lists-acls). We call standard ACLs the ones in `[1-99, 1300-1999]`, in contrast those in `[100-199, 2000-2699]` that we refer to as extended ACLs. Some commands:

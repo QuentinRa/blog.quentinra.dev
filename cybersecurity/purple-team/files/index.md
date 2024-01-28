@@ -104,6 +104,7 @@ $ stegseek file wordlist
 ## File steganography
 
 [![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
+[![exif_thumbnail](../../_badges/rootme/steganography/exif_thumbnail.svg)](https://www.root-me.org/en/Challenges/Steganography/EXIF-Thumbnail)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -119,6 +120,12 @@ And you can extract files using `-e`
 
 ```ps
 $ binwalk -e file.png
+```
+
+If the image is a thumbnail, you could also use:
+
+```ps
+$ exiftool -b -ThumbnailImage file.jpg > extracted.jpg
 ```
 </div><div>
 
@@ -152,6 +159,26 @@ Open the file, click on the filename, and select wav to spectrogram.
 </div><div>
 
 See also: [academo spectrum analyzer](https://academo.org/demos/spectrum-analyzer/) or [morsecode audio decoder](https://morsecode.world/international/decoder/audio-decoder-adaptive.html).
+</div></div>
+
+<hr class="sep-both">
+
+## Additional Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### APNG - PNG GIF
+
+[![apng_just_a_png](../../_badges/rootme/steganography/apng_just_a_png.svg)](https://www.root-me.org/fr/Challenges/Steganographie/APNG-Just-A-PNG-2995)
+
+An image similar to a GIF that contains images and delays between each. It loads the next image after the delay.
+
+```shell!
+$ sudo apt-get install apngdis
+$ apngdis image.apng
+$ cat *.txt | cut -d '=' -f2 | cut -d '/' -f1 | xargs | tr ' ' ','
+```
+</div><div>
 </div></div>
 
 <hr class="sep-both">
