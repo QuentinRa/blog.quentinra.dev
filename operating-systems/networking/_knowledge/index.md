@@ -209,6 +209,11 @@ Each protocol can be represented using a [Message Sequence Chart](https://en.wik
 
 * [SNMP](../protocols/snmp.md)
 </td></tr>
+
+<tr><td class="py-0 my-0">Others 🗃️</td><td class="my-0 py-0">
+
+* [IPP](../protocols/ipp.md)
+</td></tr>
 </tbody></table>
 </div><div>
 
@@ -256,7 +261,6 @@ Stuff that I found, but never read/used yet.
 * see SRM notes
 * IPV6 EUI64 (texas)
 * VIP (virtual IP?)
-* LDAP
 
 Certification
 
@@ -265,21 +269,6 @@ Certification
 Network segmentation
 
 * VRFs (Virtual Routing and Forwarding)
-
-<details class="details-n">
-<summary>VoIP</summary>
-
-[![introductiontonetworking](../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
-
-Voice over Internet Protocol (VoIP)
-
-* transmitting voice and multimedia communications
-* TCP/5060 and TCP/5061 (SIP, more used)
-    * OPTIONS to enumerate users
-* TCP/1720 (H.323 Protocol)
-* Cisco Unified Communications Manager, formerly known as Cisco CallManager
-    * SEPxxxx.cnf
-</details>
 </div><div>
 
 Random
