@@ -38,4 +38,24 @@ $ testdisk /dev/sdb # similar to debugfs
 ```
 </div><div>
 
+[![oh_my_grub](../../_badges/rootme/forensic/oh_my_grub.svg)](https://www.root-me.org/en/Challenges/Forensic/Oh-My-Grub)
+
+Source: [jasonmurray](https://jasonmurray.org/posts/2021/mountvmdk/).
+
+```shell!
+sudo apt install qemu-utils
+sudo modprobe nbd
+sudo qemu-nbd -r -c /dev/nbd1 root-disk001.vmdk 
+ls -al /dev/nbd1p*
+mkdir p1 && sudo mount /dev/nbd1p1 ./p1
+sudo SHELL=/bin/bash chroot p1
+
+sudo apt-get install libguestfs-tools
+sudo mkdir /mnt/vmdk
+sudo guestmount -a root-disk001.vmdk -i --ro /mnt/vmdk
+sudo ls -lah /mnt/vmdk/
+sudo SHELL=/bin/bash chroot /mnt/vmdk/
+sudo umount /mnt/vmdk
+sudo rm -rf /mnt/vmdk
+```
 </div></div>
