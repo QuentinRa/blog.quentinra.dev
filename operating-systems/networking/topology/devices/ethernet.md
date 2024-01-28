@@ -1,6 +1,6 @@
 # Ethernet
 
-[Go back](../index.md#networking-devices)
+[![ethernet_frame](../../../../cybersecurity/_badges/rootme/network/ethernet_frame.svg)](https://www.root-me.org/en/Challenges/Network/ETHERNET-frame)
 
 <div class="row row-cols-lg-2"><div>
 
