@@ -622,6 +622,17 @@ Other notes
 * `/etc/docker/daemon.json`
 * `sudo systemctl restart docker`
 * `docker secret` and docker compose `secrets`
+
+```text!
+sudo usermod -aG docker $USER
+reboot
+sudo systemctl disable docker
+sudo systemctl disable docker.socket
+sudo systemctl stop docker
+sudo systemctl stop docker.socket
+sudo systemctl start docker
+sudo systemctl start docker.socket
+```
 </div><div>
 
 ```text!

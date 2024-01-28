@@ -11,6 +11,14 @@ $ openssl s_client -connect IP:port
 $ openssl s_client -connect IP:protocol
 $ openssl s_client -connect IP:port -starttls protocol
 ```
+
+* Password Hashes
+
+```ps
+$ echo -n "toto" | openssl md4 # MD4 Hash
+$ echo -n "toto" | openssl dgst -md4 # same
+$ openssl passwd toto # for usage in /etc/passwd
+```
 </div><div>
 
 * Encryption and Decryption
@@ -20,12 +28,9 @@ $ openssl enc -pbkdf2 -in plaintext -out ciphertext
 $ openssl enc -d -pbkdf2 -in ciphertext -out plaintext
 ```
 
-* Password Hashes
-
 ```ps
-$ echo -n "toto" | openssl md4 # MD4 Hash
-$ echo -n "toto" | openssl dgst -md4 # same
-$ openssl passwd toto # for usage in /etc/passwd
+$ openssl enc -aes-256-cbc -iter 10 -pass pass:<...> -out ciphertext -in plaintext
+$ openssl enc -d -aes-256-cbc -iter 10 -pass pass:<...> -in ciphertext -out plaintext
 ```
 
 * Generate a SSL/TLS certificate
