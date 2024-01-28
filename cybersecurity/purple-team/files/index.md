@@ -146,19 +146,43 @@ file.png file.zip
 ## Audio files
 
 [![c4ptur3th3fl4g](../../_badges/thm-p/c4ptur3th3fl4g.svg)](https://tryhackme.com/room/c4ptur3th3fl4g)
+[![wav_spectral_analysis](../../_badges/rootme/steganography/wav_spectral_analysis.svg)](https://www.root-me.org/en/Challenges/Steganography/WAV-Spectral-analysis)
 
 <div class="row row-cols-lg-2"><div>
 
+#### Audacity
+
 You can use [Audacity](https://www.audacityteam.org/) to analyze audio files.
 
-```
+```shell!
 $ sudo apt install audacity
+$ audacity file.wav
 ```
 
-Open the file, click on the filename, and select wav to spectrogram.
+Click on the filename, and select "spectrogram." If the text is not readable, you will have to zoom. You can either or both:
+
+* Reduce the frequency interval, by clicking on the filename again, selecting "spectrogram settings", and setting the min/max frequency <small>(the current scale is shown at the start of the track window)</small>
+
+* Increase the height of the track window
 </div><div>
 
-See also: [academo spectrum analyzer](https://academo.org/demos/spectrum-analyzer/) or [morsecode audio decoder](https://morsecode.world/international/decoder/audio-decoder-adaptive.html).
+#### sonic-visualiser
+
+You can also use [sonic-visualiser](https://github.com/sonic-visualiser/sonic-visualiser) <small>(0.4k ⭐)</small>:
+
+```shell!
+$ sudo apt install sonic-visualiser
+$ sonic-visualiser file.wav
+```
+
+Right-click on the track and in "Layers," select "Spectrogram." Use your mouse to zoom in.
+
+#### Others
+
+* [academo spectrum analyzer](https://academo.org/demos/spectrum-analyzer/)
+* [dcode spectrum analyzer](https://www.dcode.fr/spectral-analysis)
+* [morsecode audio decoder](https://morsecode.world/international/decoder/audio-decoder-adaptive.html)
+* `spek` command
 </div></div>
 
 <hr class="sep-both">
