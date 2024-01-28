@@ -62,6 +62,8 @@ Stuff that I found, but never read/used yet.
 * `ssh -X` with `X11Forwarding` enabled
 * `sshpass -p 'XXX' ssh xxx@IP`
 * Authorized keys
+* `sudo systemctl restart sshd`
+* `ssh-copy-id username@server`: add to remote server our public key
 </div><div>
 
 * `/etc/ssh/sshd_config`
@@ -69,6 +71,14 @@ Stuff that I found, but never read/used yet.
   * `PubkeyAuthentication yes`
   * `PasswordAuthentication no`
   * [Hardening](https://www.ssh-audit.com/hardening_guides.html)
-* `sudo systemctl restart sshd`
-* `ssh-copy-id username@server`: add to remote server our public key
+
+SSH Forward Agent tests
+
+```shell!
+$ ssh xxx@yyy -A
+ssh> ssh-add -l
+ssh> cat /proc/$$/environ | tr '\0' '\n' | grep SSH_AUTH_SOCK
+ssh> cat /proc/*/environ 2> /dev/null | tr '\0' '\n' | grep SSH_AUTH_SOCK
+ssh> SSH_AUTH_SOCK=/tmp/ssh-XXX/agent.$pid <something?>
+```
 </div></div>

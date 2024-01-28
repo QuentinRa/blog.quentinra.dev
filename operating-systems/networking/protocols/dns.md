@@ -177,6 +177,7 @@ for nameserver in resolver.nameservers:
 
 [![introtonetworking](../../../cybersecurity/_badges/thm/introtonetworking.svg)](https://tryhackme.com/room/introtonetworking)
 [![web_information_gathering](../../../cybersecurity/_badges/htb/web_information_gathering.svg)](https://academy.hackthebox.com/course/preview/information-gathering---web-edition)
+[![dns_zone_transfert](../../../cybersecurity/_badges/rootme/network/dns_zone_transfert.svg)](https://www.root-me.org/en/Challenges/Network/DNS-zone-transfert)
 
 You can give a domain name, or an IP (`-x`). The request type `ANY` is deprecated since RFC8482 ⚠️.
 
@@ -186,6 +187,7 @@ $ dig A example.com       # IPV4 records
 $ dig example.com -t A    # same
 $ dig example.com -t ANY  # every record
 $ dig -x 8.8.8.8
+$ dig [...] -p port
 ```
 
 You can pick which DNS server should be used with `@` 

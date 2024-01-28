@@ -3,6 +3,9 @@
 [![wireshark](../../../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
 [![startup](../../../../../cybersecurity/_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 [![cap](../../../../../cybersecurity/_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
+[![ftp_authentication](../../../../../cybersecurity/_badges/rootme/network/ftp_authentication.svg)](https://www.root-me.org/en/Challenges/Network/FTP-authentication)
+[![telnet_authentication](../../../../../cybersecurity/_badges/rootme/network/telnet_authentication.svg)](https://www.root-me.org/en/Challenges/Network/TELNET-authentication)
+[![twitter_authentication](../../../../../cybersecurity/_badges/rootme/network/twitter_authentication.svg)](https://www.root-me.org/en/Challenges/Network/Twitter-authentication-101)
 
 <div class="row row-cols-lg-2"><div>
 
