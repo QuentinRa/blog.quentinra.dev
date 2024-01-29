@@ -198,7 +198,6 @@ https://tryhackme.com/room/retro (blaster...)
 
 **Tools**
 
-* [faraday](https://github.com/infobyte/faraday) (🔎💥) <small>(vulnerability management/testing)</small>
 * [legion](https://github.com/carlospolop/legion) (🏝️💥✈️) <small>(automated penetration framework)</small>
 * [**beyondsecurity**](https://www.beyondsecurity.com/) (🔎🏝💥) <small>(vulnerability scanner)</small>
 * [KitHack](https://github.com/AdrMXR/KitHack) (🔎🏝💥✈️) <small>(penetration testing framework)</small>
@@ -223,21 +222,17 @@ https://tryhackme.com/room/retro (blaster...)
 * **Nettacker** (🏝💥) <small>(port scanning, vulnerability scanning)</small>
 * **Empire** (✈️) <small>(post-exploitation framework)</small>
 * [DSSS](https://github.com/stamparm/DSSS) (🏝💥) <small>(SQL vulnerability scanner)</small>
-* [whitewidow](https://github.com/WhitewidowScanner/whitewidow) (🏝💥) <small>(SQL/XSS vulnerability scanner)</small>
 * [**Beef**](https://github.com/beefproject/beef) (💥✈️🛡️) <small>(7.8k ⭐, client-side vulnerability scanner)</small>
 * host (🔎🏝) <small>(DNS lookup)</small>
 * dnswalk (🔎🏝) <small>(DNS investigation)</small>
 * dnsmap  (🔎🏝) <small>(vhost brute force)</small>
 * **Netsparker** (🏝💥✈️) <small>(web vulnerability scanner)</small>
-* [**XSStrike**](https://github.com/s0md3v/XSStrike) (🏝💥) <small>(XSS scanner)</small>
 * Skipfish (🏝) <small>(11.4k ⭐, web vulnerability scanner)</small>
 * **W3af** (🏝💥🔑) <small>(web vulnerability scanner)</small>
 * **Arachni** (🏝💥) <small>(web vulnerability scanner)</small>
 * **AppScan** (🏝💥) <small>(web vulnerability scanner)</small>
 * IronWASP (🏝💥) <small>(web vulnerability scanner)</small>
 * Grabber (🏝💥) <small>(web vulnerability scanner)</small>
-* [**XSS Hunter**](https://github.com/mandatoryprogrammer/xsshunter) (🏝) <small>(1.3k ⭐, XSS scanner)</small>
-* Domato (🏝) <small>(DOM-based XSS scanner)</small>
 * proxify (✈️) <small>(HTTP proxy)</small>
 * interactsh (✈️) <small>(rogue server)</small>
 * naabu (🏝) <small>(network scanner)</small>
@@ -247,11 +242,8 @@ https://tryhackme.com/room/retro (blaster...)
 * bettercap (💥) <small>(sniffing, MITM)</small>
 * evilgrade (💥✈️) <small>(exploiting update systems, MITM)</small>
 * CodeSec (🏝💥) <small>(web vulnerability scanner)</small>
-</div><div>
-
 * [venom](https://github.com/ovh/venom) (🔎🏝💥🔑✈️) <small>(payloads? -h/-c/-u/-p/-s, scan/crawl/portscan)</small>
 * [**Burp Collaborator client**](https://portswigger.net/burp/documentation/desktop/tools/collaborator-client) (🃏) <small>(server for SSRF/XXE/...)</small>
-* [requestbin](https://requestbin.com/) (🃏) <small>(HTTP endpoint for inspection)</small>
 * [**fierce**](https://github.com/mschwager/fierce) (🏝) <small>(DNS)</small>
 * recon-ng (🔎) <small>(reconnaissance framework)</small>
 * Archive.is (🔎) <small>(web archive)</small>
@@ -267,6 +259,9 @@ https://tryhackme.com/room/retro (blaster...)
 * Social Mapper (🔎🏝) <small>(socmint)</small>
 * StalkScan (🔎) <small>(facebook recon)</small>
 * [**SpiderFoot**](https://github.com/smicallef/spiderfoot)  (🔎🏝✈️) <small>(9.4k ⭐, Automated OSINT)</small>
+
+</div><div>
+
 * BeautifulSoup (🔎) <small>(Web scrapping)</small>
 * Scrapy (🔎) <small>(Web scrapping)</small>
 * FMiner (🔎🏝) <small>(Web scrapping)</small>
@@ -284,11 +279,9 @@ https://tryhackme.com/room/retro (blaster...)
 * unicorn (💥) <small>(payload, shellcode injection)</small>
 * **cobalt strike** (💥✈️) <small>(penetration testing tool)</small>
 * searchlight (🔎) <small>(OSINT)</small>
-* **OWASP ZAP** (🔎🏝) <small>(web application scanner)</small> 
 * WebScarab (🔎🏝) <small>(intercept HTTP requests)</small>
 * Vega (🔎🏝) <small>(web application scanner)</small>
 * Aircrack-ng (💥🔑) <small>(analyze traffic, crack WEP/WPA/... passwords)</small>
-* Reaver (💥) <small>(crack WPS, identify vulnerable wireless networks)</small>
 * Kismet (🏝) <small>(wireless network detection and analysis)</small>
 * MBSA (🏝) <small>(scan Windows-based computers for vulnerabilities)</small>
 * Cain and Abel (💥🔑✈️) <small>(password recovery, sniffing, MITM, spoofing)</small>
@@ -314,7 +307,6 @@ https://tryhackme.com/room/retro (blaster...)
 * FavFreak (🏝) <small>(favicon recon)</small>
 * [waybackurls](https://github.com/tomnomnom/waybackurls) (🔎) <small>(wayback tool)</small>
 * [EyeWitness](https://github.com/FortyNorthSecurity/EyeWitness)
-* Chisel
 * ptunnel
 * sshuttle
 * [red-team-scripts](https://github.com/threatexpress/red-team-scripts)
@@ -356,7 +348,7 @@ https://tryhackme.com/room/retro (blaster...)
 
 **CMS**
 
-* [joomscan](https://github.com/OWASP/joomscan) (🔎🏝) <small>(Joomla CMS)</small>
+* None
 
 **Defense**
 
