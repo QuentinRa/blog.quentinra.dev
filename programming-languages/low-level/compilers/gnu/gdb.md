@@ -106,6 +106,7 @@ Query the value of a register.
 ```txt!
 (gdb) info registers eip
 (gdb) info frame
+(gdb) info proc all
 ```
 </div><div>
 
