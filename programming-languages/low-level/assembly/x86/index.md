@@ -39,4 +39,12 @@ Statically allocated variables. [ref](https://stackoverflow.com/questions/814524
 
 Contains the assembler instructions. Can be read-only.
 </div><div>
+
+#### Common Instructions
+
+Random instructions:
+
+```x86asm
+mov destination, source ; put value into registry
+```
 </div></div>

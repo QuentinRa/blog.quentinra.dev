@@ -106,7 +106,8 @@ $ gdb ./some_program
 You can disassemble the code using:
 
 ```shell!
-(gdb) set disassembly-flavor intel
+(gdb) set disassembly-flavor att   # Linux team, default
+(gdb) set disassembly-flavor intel # Windows team
 (gdb) disassemble main
 (gdb) disas main
 ```
@@ -117,6 +118,12 @@ The format is something like:
 * Address jump <small>(e.g., `+x` since the previous address)</small>
 * Assembler instruction
 * Operands <small>(e.g., registers and suffixes)</small>
+
+For a permanent change ✨:
+
+```shell!
+$ echo "set disassembly-flavor intel" >> ~/.gdbinit
+```
 </div></div>
 
 
