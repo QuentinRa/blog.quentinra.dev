@@ -274,14 +274,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* bios/uefi (secure boot)
-* cpu
-* bus
-* RAW (volatile): DRAM (SDRAM, EDO DRAM, BEDO DRAM, DDR SDRAM), Static (SRAM), Cache
-* ROW (not volatile): ROM (PROM, EPROM, EEPROM), Flash (USB...)
-</div><div>
-
 * Little Man Computer (LMC)
-* Each app has its memory space and others can't access it
 * Hypervisor: software to run VMs. Virtually sharing memory and processing resources. Isolated from OS.
+</div><div>
 </div></div>
