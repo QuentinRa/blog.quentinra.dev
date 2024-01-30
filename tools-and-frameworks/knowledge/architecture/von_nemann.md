@@ -65,9 +65,39 @@ Refer to your processor [ISA](https://en.wikipedia.org/wiki/Instruction_set_arch
 * **RISC**: only the more common operations
 * **See also**: VLIW, EPIC, MISC, and OISC
 
+#### Bus system
+
+A communication system used by system components such as the CPU or I/O devices to transfer data between each other.
+
 #### Registers
 
 xxx
+</div></div>
+
+<hr class="sep-both">
+
+## Computer Memory
+
+<div class="row row-cols-lg-2"><div>
+
+#### Primary Memory
+
+Primary memory is volatile, meaning that its contents are lost when the power is turned off. It includes the RAM and cache memory.
+
+The Random Access Memory (RAM) is used to store data that is actively being used or processed by the CPU.
+
+➡️ See also:  DRAM <small>(SDRAM, EDO/BEDO DRAM, DDR SDRAM)</small>
+
+➡️ See also: SRAM (Static Random Access Memory)
+</div><div>
+
+#### Secondary Memory
+
+Secondary memory refers to storage devices that are used to store data for the long term. It includes hard disk drives (HDDs), solid-state drives (SSDs), CDs, DVDs, and USB drives.
+
+📚 Electronic devices have the Read-Only Memory (ROM) that they use to store the firmware <small>(see also:  PROM, EPROM, EEPROM)</small>.
+
+📚 Flash memory is a non-volatile memory that can be electrically erased and reprogrammed.
 </div></div>
 
 <hr class="sep-both">
@@ -78,9 +108,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* bus
 * RAW (volatile): DRAM (SDRAM, EDO DRAM, BEDO DRAM, DDR SDRAM), Static (SRAM), Cache
-* ROW (not volatile): ROM (PROM, EPROM, EEPROM), Flash (USB...)
 * Each app has its memory space and others can't access it
 </div><div>
 
