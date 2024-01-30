@@ -132,11 +132,12 @@ You can use [x64dbg](https://github.com/x64dbg/x64dbg) <small>(42.5k ⭐)</small
 ➡️ See also: [x64dbg unpack malware](https://www.varonis.com/blog/x64dbg-unpack-malware) and [OllyDbg](https://github.com/x64dbg/OllyDbg).
 </div><div>
 
-#### Linux PEDA debugger
+#### Linux GDB debugger
 
+[![stack_based_buffer_overflows_linux_x86](../../_badges/htb/stack_based_buffer_overflows_linux_x86.svg)](https://academy.hackthebox.com/course/preview/stack-based-buffer-overflows-on-linux-x86)
 [![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 
-You can use [peda](https://github.com/longld/peda) <small>(5.7k ⭐)</small> to debug Linux binaries. It's a Python script over GDB that make it easier to use [GDB](/programming-languages/low-level/compilers/gnu/gdb.md).
+You can use [peda](https://github.com/longld/peda) and [GDB](/programming-languages/low-level/compilers/gnu/gdb.md).
 
 ```shell!
 $ git clone https://github.com/longld/peda.git ~/peda
