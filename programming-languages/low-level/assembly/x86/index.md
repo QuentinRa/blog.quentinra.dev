@@ -48,3 +48,41 @@ Random instructions:
 mov destination, source ; put value into registry
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## X86 Registers
+
+[![stack_based_buffer_overflows_linux_x86](../../../../cybersecurity/_badges/htb/stack_based_buffer_overflows_linux_x86.svg)](https://academy.hackthebox.com/course/preview/stack-based-buffer-overflows-on-linux-x86)
+
+<div class="row row-cols-lg-2"><div>
+
+#### General-Purpose Registers
+
+Used for general-purpose computation and storage.
+
+| x86 | x86-x64 | Description                                          |
+|-----|---------|------------------------------------------------------|
+| EAX    | RAX     | Accumulator register for arithmetic/data operations  |
+| EBX    | RBX     | Base register, often used as a pointer to data.      |
+| ECX    | RCX     | Counter register, frequently used as a loop counter. |
+| EDX    | RDX     | Data register, used in some operations.              |
+
+#### Pointer Registers
+
+| x86 | x86-x64 | Description                                    |
+|-----|---------|------------------------------------------------|
+| EIP    | RIP     | Instruction Pointer. Next instruction address. |
+</div><div>
+
+#### Stack Registers
+
+As the stack grows, it is logically divided into sections called Stack Frames, with each frame corresponding to an individual function.
+
+| x86 | x86-x64 | Description                        |
+|-----|---------|------------------------------------|
+| ESP | RSP     | Stack pointer. Head of the stack.  |
+| EBP | RBP     | Base pointer. Bottom of the stack. |
+
+⚠️ As a reminder, the head is the last value added (LIFO).
+</div></div>
