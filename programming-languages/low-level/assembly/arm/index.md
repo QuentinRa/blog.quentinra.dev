@@ -8,7 +8,7 @@ ARM assembly is one of the assembly languages used for **RISC processors** <smal
 
 * 🧐 Simplified instruction set compared to CISC processors
 * 🚀 Usually more performant
-* ⚡ Usually has a lower power consumption
+* ⚡ Usually has lower power consumption
 * 📱 ARM processors are quite used in IoT/embedded systems/...
 
 **Where to learn?** 🎓
