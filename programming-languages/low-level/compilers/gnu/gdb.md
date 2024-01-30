@@ -33,6 +33,7 @@ You'll place a breakpoint in the code. When one is reached, the code will stop, 
 (gdb) b line_number
 (gdb) break file.c:line_number      
 (gdb) b *address
+(gdb) delete breakpoint 1
 ```
 
 To **display the code for line numbers**:
@@ -96,6 +97,15 @@ $ git clone https://github.com/longld/peda.git ~/peda
 $ echo "source ~/peda/peda.py" >> ~/.gdbinit
 $ gdb ./some_program
 (gdb) do_as_usual
+```
+
+#### Additional Commands
+
+Query the value of a register.
+
+```txt!
+(gdb) info registers eip
+(gdb) info frame
 ```
 </div><div>
 
