@@ -18,3 +18,25 @@ X86 transitioned from 32-bit to 64-bit architecture with x86-64.
 
 * [x86-64 Stanford Reference](https://web.stanford.edu/class/cs107/resources/x86-64-reference.pdf) <small>(👻)</small>
 </div></div>
+
+<hr class="sep-both">
+
+## Basic Overview
+
+[![stack_based_buffer_overflows_linux_x86](../../../../cybersecurity/_badges/htb/stack_based_buffer_overflows_linux_x86.svg)](https://academy.hackthebox.com/course/preview/stack-based-buffer-overflows-on-linux-x86)
+
+<div class="row row-cols-lg-2"><div>
+
+#### .data
+
+Global and static variables.
+
+#### .bss
+
+Statically allocated variables. [ref](https://stackoverflow.com/questions/8145243/x86-asm-linux-using-the-bss-section#8145374).
+
+#### .text
+
+Contains the assembler instructions. Can be read-only.
+</div><div>
+</div></div>

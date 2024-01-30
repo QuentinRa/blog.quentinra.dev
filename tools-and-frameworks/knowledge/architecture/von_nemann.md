@@ -104,6 +104,8 @@ Secondary memory refers to storage devices that are used to store data for the l
 
 ## Registers
 
+[![stack_based_buffer_overflows_linux_x86](../../../cybersecurity/_badges/htb/stack_based_buffer_overflows_linux_x86.svg)](https://academy.hackthebox.com/course/preview/stack-based-buffer-overflows-on-linux-x86)
+
 <div class="row row-cols-lg-2"><div>
 
 Registers are small, fast storage locations within the CPU itself.
@@ -117,6 +119,26 @@ It's sometimes called instruction address register (IAR).
 #### Instruction Register (IR)
 
 The instruction register (IR) is a register that contains the current instructions being decoded or executed.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## Heap and Stack
+
+[![stack_based_buffer_overflows_linux_x86](../../../cybersecurity/_badges/htb/stack_based_buffer_overflows_linux_x86.svg)](https://academy.hackthebox.com/course/preview/stack-based-buffer-overflows-on-linux-x86)
+
+<div class="row row-cols-lg-2"><div>
+
+The Stack memory is a LIFO data structure in the RAM containing:
+
+* The return address of the executed function
+* The function parameters of the executed function
+* Frame pointers, if added during compilation
+* Local variables
+* Compiled code
+
+The head of the stack address is stored in the stack pointer (SP).
 </div><div>
 </div></div>
 
