@@ -101,6 +101,18 @@ As the stack grows, it is logically divided into sections called Stack Frames, w
 ## X86 Functions
 
 <div class="row row-cols-lg-2"><div>
+
+The `call` instruction is used to call a subroutine/function. It pushes the return address to the stack and set the `EIP`/`RIP`.
+
+```x86asm
+_start:
+    call my_function
+    
+my_function:
+    ; ...
+    ret
+```
+
 </div><div>
 
 #### Function Prologue And Epilogue

@@ -45,7 +45,8 @@ To **display the code for line numbers**:
 To **run the program** until the next breakpoint:
 
 ```text!
-(gdb) run      # or r 
+(gdb) run      # or r
+(gdb) run args # ./a.out args
 ```
 
 A few commands you might use **once the execution was halted**:
