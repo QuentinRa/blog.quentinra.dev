@@ -68,11 +68,14 @@ Used for general-purpose computation and storage.
 | ECX    | RCX     | Counter register, frequently used as a loop counter. |
 | EDX    | RDX     | Data register, used in some operations.              |
 
-#### Pointer Registers
+#### Index Registers
 
-| x86 | x86-x64 | Description                                    |
-|-----|---------|------------------------------------------------|
-| EIP    | RIP     | Instruction Pointer. Next instruction address. |
+They can be used to access/write values in arrays.
+
+| x86 | x86-x64 | Description             |
+|-----|---------|-------------------------|
+| ESI | RSI     | Index to access a value |
+| EDI | RDI     | Index to write a value  |
 </div><div>
 
 #### Stack Registers
@@ -85,4 +88,36 @@ As the stack grows, it is logically divided into sections called Stack Frames, w
 | EBP | RBP     | Base pointer. Bottom of the stack. |
 
 ⚠️ As a reminder, the head is the last value added (LIFO).
+
+#### Pointer Registers
+
+| x86 | x86-x64 | Description                                    |
+|-----|---------|------------------------------------------------|
+| EIP    | RIP     | Instruction Pointer. Next instruction address. |
+</div></div>
+
+<hr class="sep-both">
+
+## X86 Functions
+
+<div class="row row-cols-lg-2"><div>
+</div><div>
+
+#### Function Prologue And Epilogue
+
+[![stack_based_buffer_overflows_linux_x86](../../../../cybersecurity/_badges/htb/stack_based_buffer_overflows_linux_x86.svg)](https://academy.hackthebox.com/course/preview/stack-based-buffer-overflows-on-linux-x86)
+
+Each function using stack frames will perform a suite of steps called the prologue and the epilogue to save the previous pointers values during the execution and restore them at the end.
+
+```x86asm
+push ebp        ; prologue
+mov ebp,esp
+sub esp,value   ; allocate space for variables
+...
+mov esp, ebp    ; epilogue
+pop ebp
+ret
+```
+
+You can alternatively use `leave` for the epilogue.
 </div></div>
