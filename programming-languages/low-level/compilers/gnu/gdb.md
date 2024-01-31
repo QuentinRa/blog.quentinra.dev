@@ -67,6 +67,12 @@ To **print** the value of a variable or an expression:
 (gdb) p[s]@n ...  # print n entries of an array
 ```
 
+To **examine the memory**:
+
+```text!
+(gdb) x/s 0xXXX   # show a strings
+```
+
 To **print the stack trace**:
 
 ```text!

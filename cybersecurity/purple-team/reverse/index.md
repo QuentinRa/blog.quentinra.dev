@@ -113,7 +113,7 @@ Other well-known decompilers:
 
 <hr class="sep-both">
 
-## Debugging Analysis
+## Windows Binaries
 
 <div class="row row-cols-lg-2"><div>
 
@@ -131,8 +131,18 @@ You can use [x64dbg](https://github.com/x64dbg/x64dbg) <small>(42.5k ⭐)</small
 
 ➡️ See also: [x64dbg unpack malware](https://www.varonis.com/blog/x64dbg-unpack-malware) and [OllyDbg](https://github.com/x64dbg/OllyDbg).
 </div><div>
+</div></div>
 
-#### Linux GDB debugger
+<hr class="sep-both">
+
+## Linux Binaries
+
+[![elf_x86_0_protection](../../_badges/rootme/cracking/elf_x86_0_protection.svg)](https://www.root-me.org/en/Challenges/Cracking/ELF-x86-0-protection)
+[![elf_x86_basic](../../_badges/rootme/cracking/elf_x86_basic.svg)](https://www.root-me.org/en/Challenges/Cracking/ELF-x86-Basic)
+
+<div class="row row-cols-lg-2"><div>
+
+#### Linux GDB Disassembly
 
 [![stack_based_buffer_overflows_linux_x86](../../_badges/htb/stack_based_buffer_overflows_linux_x86.svg)](https://academy.hackthebox.com/course/preview/stack-based-buffer-overflows-on-linux-x86)
 [![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
@@ -142,11 +152,23 @@ You can use [peda](https://github.com/longld/peda) and [GDB](/programming-langua
 ```shell!
 $ git clone https://github.com/longld/peda.git ~/peda
 $ echo "source ~/peda/peda.py" >> ~/.gdbinit
-$ gdb ./some_program
-(gdb) set disassembly-flavor intel
+$ echo "set disassembly-flavor intel" >> ~/.gdbinit
+$ gdb -q xxx.bin
 (gdb) disas main
-(gdb) b *address
+(gdb) # refer to GDB documentation
 (gdb) run
+```
+</div><div>
+
+#### Linux Radare Disassembly
+
+[Radare](https://github.com/radareorg/radare2) <small>(19.2k ⭐)</small> is similar to GDB, but it somewhat easier to use if we only need to disassemble the code.
+
+```shell!
+$ rabin2 -I xxx.bin # get information
+$ rabin2 -z xxx.bin # list strings
+$ r2 -A xxx.bin     # disassemble
+(r2) pdf @main
 ```
 </div></div>
 
