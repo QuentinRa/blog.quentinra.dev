@@ -9,8 +9,6 @@ It often means getting back the original code/system using disassembling, decomp
 It can be used to understand how a malware works 🛡️ or to find vulnerabilities in a program/system in a black-box assessment 💥.
 </div><div>
 
-[![mustacchio](../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
-
 For simple programs, we might be able to get the information we need using the commands below:
 
 * `strace`: see every system call
@@ -170,6 +168,17 @@ $ rabin2 -z xxx.bin # list strings
 $ r2 -A xxx.bin     # disassemble
 (r2) pdf @main
 ```
+
+#### Linux Tracers
+
+[![mustacchio](../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
+
+Linux commands [strace](https://www.man7.org/linux/man-pages/man1/strace.1.html) and [ltrace](https://www.man7.org/linux/man-pages/man1/ltrace.1.html) are very helpful to identify system and library calls in a program, which is helpful to reverse it.
+
+```shell!
+$ strace xxx.bin
+$ ltrace xxx.bin
+```
 </div></div>
 
 <hr class="sep-both">
@@ -248,8 +257,8 @@ $ bashfuscator -c 'cat /etc/passwd' -s 1 -t 1 --no-mangling --layers 1
 Common tools
 
 * [Ghidra](https://www.ghidra-sre.org/)
-* [IDA](https://hex-rays.com/ida-pro/)
-* [radare](https://www.radare.org/r/index.html) (convert binary to assembly, [github](https://github.com/radareorg/radare2))
+* [IDA](https://hex-rays.com/ida-pro/) (ex: Linux disassembly)
+* [boomerang](https://github.com/BoomerangDecompiler/boomerang) (Linux X86 Binary Decompiler)
 * [jadx](https://github.com/skylot/jadx) (DEX/APK to Java)
 * [frida](https://frida.re/)
 </div></div>
