@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-DCOM is a Microsoft technology that allows applications to communicate with each other over a network. For instance, it's used to remotely access [Windows Management Instrumentation](/operating-systems/windows/_knowledge/index.md#content-wmic) (WMI).
+DCOM is a Microsoft technology that allows applications to communicate with each other over a network. For instance, it's used to remotely access [Windows Management Instrumentation](/operating-systems/windows/_knowledge/index.md#wmic) (WMI).
 
 🐊️ **Ports**:
 

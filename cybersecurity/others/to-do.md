@@ -209,7 +209,6 @@ https://tryhackme.com/room/retro (blaster...)
 * [Phantom-Evasion](https://github.com/oddcod3/Phantom-Evasion) (💥✈️) <small>(generate and obfuscate Windows payload)</small>
 * [**msfpc**](https://github.com/g0tmi1k/msfpc) (💥✈️) <small>(generating Metasploit payloads)</small>
 * [arsenal](https://github.com/Orange-Cyberdefense/arsenal) (✈️) <small>(data exfiltration)</small>
-* [**CrackMapExec**](https://github.com/Porchetta-Industries/CrackMapExec) (🔑✈️) <small>(identify weak passwords)</small>
 * [hackertarget](https://hackertarget.com/)  (🏝) <small>(port scanning, traceroute, and reverse IP)</small>
 * [**Raccoon**](https://github.com/evyatarmeged/Raccoon) (🏝) <small>(subdomain, OSINT)</small>
 * [**Photon**](https://github.com/s0md3v/Photon) (🏝) <small>(web enumeration, subdomains)</small>
