@@ -17,3 +17,15 @@ PS> whoami /priv
 
 🔥 You can find [way to exploit them on Priv2Admin](https://github.com/gtworek/Priv2Admin) (1.4k ⭐).
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [RogueWinRM](/operating-systems/networking/protocols/winrm.md) when `SeImpersonatePrivilege`
+</div><div>
+</div></div>

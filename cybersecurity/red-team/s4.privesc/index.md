@@ -279,6 +279,8 @@ As a reminder, you may use tunneling tools to access internal local websites suc
 
 Finally, look for users and services in `/etc/passwd`. Also, go look in `/home` for user homes, and try to see if you can access them.
 
+Remember to test for password reuse and [default credentials](/cybersecurity/red-team/_knowledge/topics/wordlists.md#accounts).
+
 Once this is done, you can try to run automated tools. They will return a large output, but it will way less than if you did it manually.
 
 * Interesting configuration files
