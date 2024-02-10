@@ -2,6 +2,7 @@
 
 [![johntheripper0](../../../../_badges/thmp/johntheripper0.svg)](https://tryhackme.com/room/johntheripper0)
 [![linuxstrengthtraining](../../../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
+[![password_attacks](../../../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -11,12 +12,19 @@
 # use single quotes, so that $/... aren't interpreted
 $ echo 'some hash here' > myhash
 ```
-</div><div>
 
-List formats <small>(you don't need it with nth/haiti, as they give you the format)</small>. Note that standard formats, such as MD5, start with "raw-".
+List hash formats. Standard formats such as MD5 start with "raw-".
 
 ```shell!
 $ john --list=formats | grep -i "md5"
+```
+</div><div>
+
+Cracked passwords are usually stored in `~/.john/john.pot`. If a hash was already cracked, you can show it using:
+
+```shell!
+$ john myhash --show
+hash:password
 ```
 </div></div>
 
@@ -61,6 +69,7 @@ $ john hash --format=raw-md4 --wordlist=/usr/share/wordlists/rockyou.txt
 ## Single crack mode 
 
 [![passwordattacks](../../../../_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
+[![password_attacks](../../../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -87,7 +96,7 @@ Create a file `xxx.rules` with some rules inside:
 
 ```ini!
 [List.Rules:RuleName]
-; see the documentation
+; refer to the documentation
 ```
 
 ```shell!!
@@ -101,4 +110,16 @@ By adding `--stdout` to john, and not providing a hash, john will output a wordl
 ```shell!!
 $ john --wordlist=xxx --rules=yyy --stdout > wordlist
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* `--incremental` mode
+</div><div>
 </div></div>
