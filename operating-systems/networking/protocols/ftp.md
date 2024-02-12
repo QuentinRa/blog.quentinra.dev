@@ -75,30 +75,34 @@ ftp> status # same as 'stat'
 
 ## FTP Pentester notes ☠️
 
+FTP may be used by hackers to find interesting files.  Remember to check for hidden files. ⚠️
+
+<div class="row row-cols-lg-2"><div>
+
+#### Foothold
+
+[![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![kenobi](../../../cybersecurity/_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
 [![startup](../../../cybersecurity/_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 [![cowboyhacker](../../../cybersecurity/_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
 [![easyctf](../../../cybersecurity/_badges/thm-p/easyctf.svg)](https://tryhackme.com/room/easyctf)
 [![chillhack](../../../cybersecurity/_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
-[![lame](../../../cybersecurity/_badges/htb-p/lame.svg)](https://app.hackthebox.com/machines/Lame)
 [![blocky](../../../cybersecurity/_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
 
-<div class="row row-cols-lg-2"><div>
-
-FTP may be used by hackers to find interesting files.
-
-* Anonymous users may have been enabled. Try a blank password if prompted. <small>(access to sensitive files, incorrect upload permissions...)</small>
+* Anonymous users may have been enabled. Try a blank password.
 
 ```ps
 $ ftp anonymous@IP
 ```
 
-⚠️ Don't forget `-la` for hidden files. See also: `-R`.
+* The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md).
 </div><div>
 
-* The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md).
+#### Well-known CVEs
 
-* **ProFTPD 1.3.5**: There was a failure that allowed users to move files from a non-mounted path to the mounted path. You could steal an id_rsa for instance.
+[![lame](../../../cybersecurity/_badges/htb-p/lame.svg)](https://app.hackthebox.com/machines/Lame)
+
+* **ProFTPD 1.3.5**: users could move files from a non-mounted path to the mounted path. You could steal an id_rsa for instance.
 
 * **vsFTPd 2.3.4**: has a backdoor as per [CVE-2011-2523](https://nvd.nist.gov/vuln/detail/CVE-2011-2523).
 </div></div>

@@ -33,18 +33,28 @@ $ ssh username@IP -i /path/to/id_rsa
 
 <div class="row row-cols-lg-2"><div>
 
+#### Foothold
+
+[![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+
 * The `.ssh` folder may contain a ssh key <small>(often called `id_rsa`)</small> to connect to a host. This file may be protected by a password, but using offline [hash cracking](/cybersecurity/cryptography/algorithms/hashing/index.md#ssh-private-key---passphrase-cracking), we may be able to find it.
-
-* The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md).
-</div><div>
-
-* Try to run [ssh-audit](https://github.com/jtesta/ssh-audit) <small>(2.9k ⭐)</small>
 
 * Use `-v` to detect allowed authentication modes and force one that is convenient for us.
 
 ```ps
 $ ssh [...] -v -o PreferredAuthentications=password
 ```
+
+* The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md).
+
+```shell!
+$ hydra -L user.list -P password.list ssh://IP -V
+```
+</div><div>
+
+#### Additional Ressources
+
+* Run [ssh-audit](https://github.com/jtesta/ssh-audit) <small>(3.0k ⭐)</small> and analyze the output
 </div></div>
 
 <hr class="sep-both">

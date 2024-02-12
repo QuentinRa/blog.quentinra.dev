@@ -17,6 +17,8 @@ WinRM is a SOAP-based protocol. See also: WMI, WBEM, DCOM.
 
 ## WinRM vulnerabilities ☠️
 
+[![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+
 <div class="row row-cols-lg-2"><div>
 
 You can use [evil-winrm](https://github.com/Hackplayers/evil-winrm) (3.9k ⭐) on Linux to spawn a powershell using WinRM. On a Windows host, we can use `Test-WSMan`.
