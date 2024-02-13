@@ -135,6 +135,9 @@ You can use [x64dbg](https://github.com/x64dbg/x64dbg) <small>(42.5k ⭐)</small
 
 ## Linux Binaries
 
+[![getting_started](../../_badges/htb-c/getting_started.svg)](https://app.hackthebox.com/challenges/getting-started)
+[![questionnaire](../../_badges/htb-c/questionnaire.svg)](https://app.hackthebox.com/challenges/Questionnaire)
+[![reg](../../_badges/htb-c/reg.svg)](https://app.hackthebox.com/challenges/Reg)
 [![elf_x86_0_protection](../../_badges/rootme/cracking/elf_x86_0_protection.svg)](https://www.root-me.org/en/Challenges/Cracking/ELF-x86-0-protection)
 [![elf_x86_basic](../../_badges/rootme/cracking/elf_x86_basic.svg)](https://www.root-me.org/en/Challenges/Cracking/ELF-x86-Basic)
 
@@ -156,6 +159,17 @@ $ gdb -q xxx.bin
 (gdb) # refer to GDB documentation
 (gdb) run
 ```
+
+#### Linux Tracers
+
+[![mustacchio](../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
+
+Linux commands [strace](https://www.man7.org/linux/man-pages/man1/strace.1.html) and [ltrace](https://www.man7.org/linux/man-pages/man1/ltrace.1.html) are very helpful to identify system and library calls in a program, which is helpful to reverse it.
+
+```shell!
+$ strace xxx.bin
+$ ltrace xxx.bin
+```
 </div><div>
 
 #### Linux Radare Disassembly
@@ -169,16 +183,50 @@ $ r2 -A xxx.bin     # disassemble
 (r2) pdf @main
 ```
 
-#### Linux Tracers
+#### Boomerang
 
-[![mustacchio](../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
+[boomerang](https://github.com/BoomerangDecompiler/boomerang) <small>(0.3k ⭐)</small> that is somewhat able to reverse x86 binaries in an unreadable uncompilable C file.
 
-Linux commands [strace](https://www.man7.org/linux/man-pages/man1/strace.1.html) and [ltrace](https://www.man7.org/linux/man-pages/man1/ltrace.1.html) are very helpful to identify system and library calls in a program, which is helpful to reverse it.
+<details class="details-n">
+<summary>Docker Installation</summary>
+
+Save the code below in a dockerfile and run `docker build -t boomrangcli:latest .` to build the docker image.
+
+```dockerfile!
+FROM ubuntu:22.04
+
+# From https://github.com/BoomerangDecompiler/boomerang#building-on-linux
+# [CHANGE] qt5-default => libqt5core5a libqt5gui5 libqt5widgets5 qtbase5-dev
+RUN apt-get update && \
+    apt-get install -y git build-essential cmake \
+    qtbase5-dev libqt5core5a libqt5gui5 libqt5widgets5 \
+    libcapstone-dev flex bison
+
+# [CHANGE] Used /opt
+WORKDIR /opt
+RUN git clone https://github.com/BoomerangDecompiler/boomerang.git
+WORKDIR /opt/boomerang/build
+
+RUN cmake .. && make -j$(nproc) && make install
+
+# Remove the build folder
+RUN rm -rf /opt/boomerang
+
+# Don't run the tool as root
+RUN useradd -ms /usr/sbin/nologin boomerang
+WORKDIR /builds/
+RUN chown -R boomerang:boomerang /builds/
+USER boomerang
+
+ENTRYPOINT ["/usr/local/bin/boomerang-cli"]
+```
+
+For instance to decompile `ch1.bin`:
 
 ```shell!
-$ strace xxx.bin
-$ ltrace xxx.bin
+$ docker run -it -v $(pwd):/builds boomrangcli:latest ch1.bin
 ```
+</details>
 </div></div>
 
 <hr class="sep-both">
