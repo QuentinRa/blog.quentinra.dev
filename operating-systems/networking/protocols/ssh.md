@@ -54,7 +54,11 @@ $ hydra -L user.list -P password.list ssh://IP -V
 
 #### Additional Ressources
 
+[![keeper](../../../cybersecurity/_badges/htb-p/keeper.svg)](https://app.hackthebox.com/machines/Keeper)
+
 * Run [ssh-audit](https://github.com/jtesta/ssh-audit) <small>(3.0k ⭐)</small> and analyze the output
+
+* Use `puttygen saved_key.ppk -O private-openssh -o id_rsa` to convert a Putty key file to a Linux SSH file.
 </div></div>
 
 <hr class="sep-both">

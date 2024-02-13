@@ -104,6 +104,7 @@ Use a vulnerability in Windows. The exploit was created by the NSA and stolen by
 * [List of CTFs websites](https://hacktoday.io/t/list-of-hacking-ctf-challenge-sites/1980)
 * [attackdefense](https://attackdefense.com/)
 * [virtualhackinglabs](https://www.virtualhackinglabs.com/)
+* [pwnable.kr](https://pwnable.kr/)
 
 <br>
 
@@ -153,6 +154,33 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * Udemy, Coursera...
 </div></div>
 
+
+<hr class="sep-both">
+
+## Websites 🌍
+
+<div class="row row-cols-lg-2"><div>
+
+#### HackTheBox Write-Ups
+
+* [dhilipsanjay](https://dhilipsanjay.gitbook.io/ctfs/)
+* [0xrick](https://0xrick.github.io/categories/#hack-the-box)
+* [TheDutchHacker](https://www.thedutchhacker.com/category/write-ups/hack-the-box/)
+
+#### TryHackMe Write-Ups
+
+* [dhilipsanjay](https://dhilipsanjay.gitbook.io/ctfs/)
+* [TheDutchHacker](https://www.thedutchhacker.com/category/write-ups/tryhackme/)
+</div><div>
+
+#### Useful bits of knowledge 🌱
+
+Note: Low is 0–20.
+
+* [0xrick](https://0xrick.github.io/categories/#hack-the-box) <small>(Low)</small>
+* [mikadmin.fr](https://mikadmin.fr/blog/) <small>(French, Low)</small>
+</div></div>
+
 <hr class="sep-both">
 
 ## Blogs 🌍
@@ -162,13 +190,10 @@ This is a list of blogs that I want to check out one day. There are too many pil
 <div class="row row-cols-md-4 mt-3"><div>
 
 * [CrackItDown](https://web.archive.org/web/20210923121550/https://www.crackitdown.com/)
-* [hacktricks.xyz](https://book.hacktricks.xyz/welcome/readme)
 * [guru99.com](https://www.guru99.com/ethical-hacking-tutorials.html)
-* [PayloadsAllTheThingsWeb](https://swisskyrepo.github.io/PayloadsAllTheThingsWeb/)
 * [amandinegh](https://amandinegh.gitbook.io/cyberadventure/)
 * [PENTESTING-BIBLE](https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE) (11k ⭐)
 * [Infosec_Reference](https://github.com/rmusser01/Infosec_Reference) (4.6k ⭐)
-* [0xrick](https://0xrick.github.io/categories/)
 * [cyber-security-base-19](https://github.com/rage/cyber-security-base-19)
 * [ctf101.org](https://ctf101.org/)
 * [tbhaxor.com](https://tbhaxor.com/)

