@@ -43,6 +43,7 @@
 [![shocker](../../../../_badges/htb-p/shocker.svg)](https://app.hackthebox.com/machines/Shocker)
 [![blocky](../../../../_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
 [![mirai](../../../../_badges/htb-p/mirai.svg)](https://app.hackthebox.com/machines/Mirai)
+[![validation](../../../../_badges/htb-p/validation.svg)](https://app.hackthebox.com/machines/Validation)
 
 <div class="row row-cols-lg-2"><div>
 

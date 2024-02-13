@@ -161,7 +161,7 @@ PS> powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"
 
 <div class="row row-cols-lg-2"><div>
 
-You may try to look for credentials.
+You may try to look for credentials. **Try password reuse**.
 
 * 🔐 command history <small>(ex: ~/.bash_history, \*hist\*)</small>
 * 🌍 browser history and [saved passwords](others/browser.md)
