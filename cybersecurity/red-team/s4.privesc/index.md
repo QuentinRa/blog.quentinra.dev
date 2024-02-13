@@ -158,6 +158,7 @@ PS> powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"
 [![linuxprivilegeescalation](../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![ignite](../../_badges/thm-p/ignite.svg)](https://tryhackme.com/room/ignite)
 [![chillhack](../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
+[![validation](../../_badges/htb-p/validation.svg)](https://app.hackthebox.com/machines/Validation)
 
 <div class="row row-cols-lg-2"><div>
 
