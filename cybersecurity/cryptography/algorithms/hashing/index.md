@@ -316,7 +316,7 @@ $ hccapx2john out.hccapx > hash      # only for john
 
 * `office2john`: office files
 * `pdf2john`: PDF files
-* `keepass2john`: keepass files
+* `keepass2john`: keepass files, refer to [KeePass](/cybersecurity/blue-team/tools/passwords/keepass.md#keepass-pentester-notes-) notes
 </div></div>
 
 <hr class="sep-both">
