@@ -105,6 +105,10 @@ $ gdb ./some_program
 (gdb) do_as_usual
 ```
 
+#### GDB GEF Assistance
+
+Refer to [GEF](https://github.com/hugsy/gef) <small>(6.3k ⭐)</small>.
+
 #### Additional Commands
 
 Query the value of a register.

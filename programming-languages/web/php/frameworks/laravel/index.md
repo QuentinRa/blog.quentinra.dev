@@ -28,6 +28,8 @@ $ php artisan key:generate && php artisan serve # test that it works
 
 #### Enumeration
 
+[![baby_bonechewercon](../../../../../cybersecurity/_badges/htb-c/baby_bonechewercon.svg)](https://app.hackthebox.com/challenges/baby-bonechewercon)
+
 * If `APP_DEBUG` was enabled in `.env`, triggering an error will lead to sensitive data exposure such as API tokens.
 </div><div>
 </div></div>
