@@ -44,6 +44,7 @@
 [![blocky](../../../../_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
 [![mirai](../../../../_badges/htb-p/mirai.svg)](https://app.hackthebox.com/machines/Mirai)
 [![validation](../../../../_badges/htb-p/validation.svg)](https://app.hackthebox.com/machines/Validation)
+[![keeper](../../../../_badges/htb-p/keeper.svg)](https://app.hackthebox.com/machines/Keeper)
 
 <div class="row row-cols-lg-2"><div>
 
