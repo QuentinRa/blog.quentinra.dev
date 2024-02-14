@@ -105,7 +105,29 @@ prctl.cap_effective.setuid=True
 There are roughly 40 capabilities:
 
 * `cap_chown`: could take over `/etc/shadow` to edit a password
-* `cap_setuid`: could set the current user to be root (`0`)
+* `cap_setuid`: set current user to be root (`0`)
+* `cap_setgid`: set the current group to be root, shadow, docker, etc.
+* `cap_dac_read_search`: arbitrary file reading, directory listing
+* `cap_dac_override`: can write to any file
+* `cap_sys_admin`: can mount filesystems
+* `cap_sys_time`: arbitrary change the date and time, affect cron tasks
+* `cap_kill`: kill a process, which may help if we need to restart it
+* `cap_fowner`: we can change the permissions (`chmod`) to /etc/shadow
+* `cap_setfcap`: we can set capabilities on any file
+* `cap_linux_immutable`: can write to immutable files
+* `cap_net_raw`: can create raw packets and sniff raw packets
+* `cap_net_bind_service`: can use ports below 1024
+* `cap_net_admin`: edit firewall configuration
+* `cap_sys_ptrace`: can inject a shellcode into a process memory
+* `cap_sys_module`: add and remove kernel modules
+
+To add or remove capabilities, you can use:
+
+```shell!
+$ sudo setcap cap_setuid=eip your_binary
+$ sudo setcap -r your_binary
+$ sudo setcap --drop=cap_setuid your_binary
+```
 </div></div>
 
 <hr class="sep-both">
