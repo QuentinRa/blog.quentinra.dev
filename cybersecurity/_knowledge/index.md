@@ -175,10 +175,10 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 
 #### Useful bits of knowledge 🌱
 
-Note: Low is 0–20.
+Still at human scale and useful to learn some topics.
 
-* [0xrick](https://0xrick.github.io/categories/#hack-the-box) <small>(Low)</small>
-* [mikadmin.fr](https://mikadmin.fr/blog/) <small>(French, Low)</small>
+* [0xrick](https://0xrick.github.io/categories/#hack-the-box), [mikadmin](https://mikadmin.fr/blog/) <small>(20 or so)</small>
+* [tbhaxor.com](https://tbhaxor.com/) <small>(150 articles or so)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -196,7 +196,6 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [Infosec_Reference](https://github.com/rmusser01/Infosec_Reference) (4.6k ⭐)
 * [cyber-security-base-19](https://github.com/rage/cyber-security-base-19)
 * [ctf101.org](https://ctf101.org/)
-* [tbhaxor.com](https://tbhaxor.com/)
 * [zachkenney](https://zachkenney.me/)
 * [n3t-hunt3r](https://n3t-hunt3r.gitbook.io/pentest-book/)
 * [ropnop](https://blog.ropnop.com/)

