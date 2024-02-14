@@ -93,6 +93,9 @@ You can use automated tools to see if they can detect the underlying technologie
 * [wappalyzer](/cybersecurity/red-team/tools/scanners/web/wappalyzer.md): list front-end components
 * [whatweb](/cybersecurity/red-team/tools/scanners/web/whatweb.md): list front-end and back-end information
 * [nikto](/cybersecurity/red-team/tools/scanners/web/nikto.md): look for common vulnerabilities, which may expose the architecture and the framework indirectly.
+* [CMSeek](https://github.com/Tuhinshubhra/CMSeeK): not tested 👻 
+* [builtwith](https://builtwith.com/): not tested 👻
+* [whatruns](https://www.whatruns.com/): not tested 👻
 
 <br>
 

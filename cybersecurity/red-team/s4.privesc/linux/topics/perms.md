@@ -65,6 +65,7 @@ When exploiting a command, you will usually want to run another executable. Two 
 
 [![linprivesc](../../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![linux_capabilities](../../../../_badges/hacktricks/linux_hardening/privilege_escalation/linux_capabilities.svg)](https://book.hacktricks.xyz/linux-hardening/privilege-escalation/linux-capabilities)
 [![cap](../../../../_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
 
 <div class="row row-cols-lg-2"><div>
@@ -83,23 +84,23 @@ $ /usr/bin/python3 -c 'import os; os.execl("/bin/sh", "sh", "-p")'
 
 ⚠️ Capabilities are often followed by `+` and a modifier.
 
-* Effective (`e`): applied on the process only
+* Effective (`e`): the permissions the process can use
 * Permitted (`p`): the process can use or drop permissions
-* Inheritable (`i`): inherited by child processes
+* Inheritable (`i`): permissions are inherited by child processes
 
 To retain permitted capabilities when creating a new process, refer to [this thread](https://stackoverflow.com/questions/12141420/losing-capabilities-after-setuid). In Python, you could use [python-prctl](https://pythonhosted.org/python-prctl/).
 
 ```py
-# Example: can now use setuid with only +p
+# Example: binary has 'setuid' with '+p'
 # sudo apt install libcap-dev
 # pip install python-prctl
 import prctl
 prctl.cap_effective.setuid=True
 ```
 
-➡️ Look for the executable on [GTFOBins](../tools/gtfobins.md)
+➡️ Look for the executable on [GTFOBins](../tools/gtfobins.md) or HackTricks.
 
-➡️ Use the same techniques as for [SUID/GUID](#suidguid-bit) files not on GTFOBins
+➡️ Use [Linux Tracers](/cybersecurity/purple-team/reverse/index.md#linux-tracers) and alternatives for files not on GTFOBins
 </div><div>
 
 There are roughly 40 capabilities:
@@ -120,6 +121,7 @@ There are roughly 40 capabilities:
 * `cap_net_admin`: edit firewall configuration
 * `cap_sys_ptrace`: can inject a shellcode into a process memory
 * `cap_sys_module`: add and remove kernel modules
+* ...
 
 To add or remove capabilities, you can use:
 

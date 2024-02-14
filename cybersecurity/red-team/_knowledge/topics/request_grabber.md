@@ -18,5 +18,6 @@ For instance, we can use API Testing Platforms:
 
 * [requestbin](https://public.requestbin.com/r/)
 * [postbin](https://www.toptal.com/developers/postbin/)
+* [ngrok](https://ngrok.com/)
 * ...
 </div></div>

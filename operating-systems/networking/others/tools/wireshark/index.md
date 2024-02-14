@@ -65,5 +65,8 @@ Stuff that I found, but never read/used yet.
 Right-click on a packet > Follow TCP Stream, and you will see in a human-readable way the data exchanged.
 
 * [wireshark](https://unit42.paloaltonetworks.com/wireshark-workshop-videos/)
+* Port scanning: look for packets matching the scan (ex: SYN=1;ACK=0)
+* `tshark -Y 'http contains "User-Agent"'`
+* `tshark -r xxx.pcapng -T fields -e data.txt`
 </div><div>
 </div></div>
