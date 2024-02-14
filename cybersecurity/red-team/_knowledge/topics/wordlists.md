@@ -83,6 +83,16 @@ $ crunch minlength maxlength charset -o crunch.txt # BIG
 $ crunch [...] -t pattern
 $ crunch [...] -d 1 # "aa" "aaa" etc. are not allowed
 ```
+
+<br>
+
+#### cook wordlist generation
+
+[cook](https://github.com/glitchedgitz/cook) <small>(0.7k ⭐)</small> is a tool/engine to create wordlists, sort of like a recipe.
+
+```shell!
+$ cook [...]
+```
 </div><div>
 
 #### CUPP wordlist generation
@@ -104,16 +114,6 @@ Even if you gathered a lot of information, you may want to start with small word
 
 <br>
 
-#### cook wordlist generation
-
-[cook](https://github.com/glitchedgitz/cook) <small>(0.7k ⭐)</small> is a tool/engine to create wordlists, sort of like a recipe.
-
-```shell!
-$ cook [...]
-```
-
-<br>
-
 #### hashcat utilities
 
 hashcat has a few utilities that it uses to generate wordlists:
@@ -121,6 +121,15 @@ hashcat has a few utilities that it uses to generate wordlists:
 * [maskprocessor](https://github.com/hashcat/maskprocessor): generate wordlists from a mask
 * [kwprocessor](https://github.com/hashcat/kwprocessor): generate wordlists with keyboard walks
 * [princeprocessor](https://github.com/hashcat/princeprocessor): generate wordlists using the PRINCE algorithm
+
+<br>
+
+#### Random Tools
+
+* [TTPassGen](https://github.com/tp7309/TTPassGen) <small>(0.1k ⭐)</small>: generate password wordlists
+* [pnwgen](https://github.com/toxydose/pnwgen) <small>(0.05k ⭐, 2021 🪦)</small>: generate phone number wordlists
+* [lyricpass](https://github.com/initstring/lyricpass) <small>(0.87k ⭐, 2019 🪦)</small>: generate song lyrics wordlists
+* [mentalist](https://github.com/sc0tfree/mentalist) <small>(1.7k ⭐, 2017 🪦)</small>: generate password wordlists
 </div></div>
 
 <hr class="sep-both">
