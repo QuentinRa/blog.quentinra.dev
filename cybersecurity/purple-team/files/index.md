@@ -77,26 +77,33 @@ Software                        : www.inkscape.org
 
 Steganography is a technique in which a person hides data inside the pixels of an image. It's used to secretly transfer data.
 
-If the hidden content is not protected by a password, you can extract it using the `steghide` command:
+If the hidden content is not protected by a password, you can extract it using the `steghide` command or [zsteg](https://github.com/zed-0xff/zsteg)/[stegoveritas](https://github.com/bannsec/stegoVeritas) for PNGs:
 
 ```ps
-$ steghide info file # check
+$ steghide info file        # check
 $ steghide extract -sf file # extract
+$ zsteg file                # refer to the help
+$ stegoveritas file         # refer to the help
 ```
 
 ⚠️ If prompted for a password, **try a blank password**.
+
+💎 It's possible that when using the `strings` command we see some interesting parts of the hidden content.
 </div><div>
 
-Otherwise, you may try to [crack](/cybersecurity/red-team/s3.exploitation/index.md#password-cracking-) the password.
+Otherwise, you may try to brute force the password using tools such as [stegseek](https://github.com/RickdeJager/stegseek) <small>(0.8k ⭐)</small> or [StegCracker](https://github.com/Paradoxis/StegCracker) <small>(0.5k ⭐, 2020 🪦)</small>.
 
 ```ps
 # https://github.com/RickdeJager/stegseek
 $ stegseek file wordlist
+$ stegcracker file wordlist
 ```
 
-🐸 See also [futureboy](https://futureboy.us/stegano/) steg tools.
+**Additional tools** 👻
 
-💎 It's possible that when using the `strings` command we see some interesting parts of the hidden content.
+* See also [futureboy](https://futureboy.us/stegano/) steg tools.
+* See also [330k encoders](https://330k.github.io/misc_tools/unicode_steganography.html) <small>(Unicode Steganography)</small>
+* See also [steganographr](https://neatnik.net/steganographr/) <small>(zero-width characters)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -108,7 +115,7 @@ $ stegseek file wordlist
 
 <div class="row row-cols-lg-2"><div>
 
-File steganography is a subcategory of steganography in which a file is hidden in another file. Using [binwalk](https://github.com/ReFirmLabs/binwalk) (8.7k ⭐) you can investigate:
+File steganography is a subcategory of steganography in which a file is hidden in another file. Using [binwalk](https://github.com/ReFirmLabs/binwalk) <small>(10.0k ⭐)</small> you can investigate:
 
 ```ps
 $ binwalk file.png

@@ -309,4 +309,5 @@ Common tools
 * [boomerang](https://github.com/BoomerangDecompiler/boomerang) (Linux X86 Binary Decompiler)
 * [jadx](https://github.com/skylot/jadx) (DEX/APK to Java)
 * [frida](https://frida.re/)
+* [Rizin](https://github.com/rizinorg/rizin) and [cutter](https://github.com/rizinorg/cutter)
 </div></div>
