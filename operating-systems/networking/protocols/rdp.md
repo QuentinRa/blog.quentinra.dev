@@ -40,9 +40,24 @@ There is [Remmina](https://github.com/FreeRDP/Remmina) (1.9k ⭐, `apt install r
 
 <div class="row row-cols-lg-2"><div>
 
-* [BlueKeep Vulnerability](https://en.wikipedia.org/wiki/BlueKeep) (2019)
+#### Enumeration
 
-* You can try a [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md) or [password spraying attack](/cybersecurity/red-team/s2.discovery/techniques/spraying.md), for instance, using [RDPassSpray](https://github.com/xFreed0m/RDPassSpray) (0.6k ⭐)
+* Using [nmap](/cybersecurity/red-team/tools/scanners/ports/nmap.md) to run scripts
+
+```ps
+$ # nmap RDP cookies are leaving traces (--packet-trace)
+$ sudo nmap -sV -sC -p 3389 --script rdp* 10.129.201.248
+```
+
+#### Foothold
+
+* The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md).
+
+```shell!
+$ hydra -L user.list -P password.list rdp://IP -V
+```
+
+There is also [RDPassSpray](https://github.com/xFreed0m/RDPassSpray) <small>(0.6k ⭐)</small>.
 
 ```ps
 $ python3 RDPassSpray.py -u username -p password -t IP:port
@@ -52,12 +67,11 @@ $ python3 RDPassSpray.py [...] -T rdp_servers.lst
 ```
 </div><div>
 
-* Using [nmap](/cybersecurity/red-team/tools/scanners/ports/nmap.md) to run scripts
+#### Well-known CVEs
 
-```ps
-$ # nmap RDP cookies are leaving traces (--packet-trace)
-$ sudo nmap -sV -sC -p 3389 --script rdp* 10.129.201.248
-```
+* [BlueKeep Vulnerability](https://en.wikipedia.org/wiki/BlueKeep) (2019)
+
+#### Additional Tools
 
 * [rdp-sec-check.pl](https://github.com/CiscoCXSecurity/rdp-sec-check) <small>(0.2k ⭐, 2021 🪦)</small>
 </div></div>

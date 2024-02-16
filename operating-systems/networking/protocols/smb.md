@@ -92,6 +92,8 @@ PS> net use s: \\IP\share_name /user:username password
 
 <div class="row row-cols-lg-2"><div>
 
+#### Enumeration
+
 * Using nmap you can try to:
 
 ```ps
@@ -102,6 +104,10 @@ $ nmap -p 139,445 --script smb-os-discovery.nse IP
 # run every smb script
 $ nmap -p 139,445 --script "*smb*" IP
 ```
+
+* If [msrpc](rpc.md) is available, we may be able to use it to query information such as users, host information, os information, etc.
+
+#### FootHold
 
 * Try `Anonymous` user with no password (`-N`)
 
@@ -114,25 +120,29 @@ $ smbclient //IP/share_name -U Anonymous -N
 $ smbclient //IP//Anonymous -U Anonymous -N
 ```
 
-* If [msrpc](rpc.md) is available, we may be able to use it to query information such as users, host information, os information, etc.
+* The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md).
 
-* PsExec <small>(see [impacket](tools/impacket.md#psexec) client)</small> is a tool rely on SMB and allows administrators to run commands on Windows hosts. It may be running on the target.
+```shell!
+$ hydra -L user.list -P password.list smb://IP -V
+```
+</div><div>
 
-* You can use [crackmapexec](https://github.com/byt3bl33d3r/CrackMapExec) <small>(8.0k ⭐)</small> to list shares+accesses, and some basic information about the host.
+#### Exploitation
+
+* You can use [crackmapexec](/cybersecurity/red-team/tools/cracking/auth/cme.md)/[nxc](/cybersecurity/red-team/tools/cracking/auth/nxc.md) to list shares+accesses, and automatically fetch some basic information about the host.
 
 ```ps
 $ crackmapexec smb IP --shares -u 'username' -p 'password'
 ```
-</div><div>
 
-* You can use [smbmap](https://github.com/ShawnDEvans/smbmap) <small>(1.6k ⭐)</small> to find users/shares+access/files/...
+* You can use [smbmap](https://github.com/ShawnDEvans/smbmap) <small>(1.6k ⭐)</small> to list users/shares+access/files/...
 
 ```ps
 $ smbmap -H IP
 $ smbmap -H IP -u 'username' -p 'password'
 ```
 
-* You can use [enum4linux](https://github.com/CiscoCXSecurity/enum4linux) <small>(1.0k ⭐)</small> or [enum4linux-ng](https://github.com/cddmp/enum4linux-ng) <small>(1.0k ⭐)</small> to find shares, and users.
+* You can use [enum4linux](https://github.com/CiscoCXSecurity/enum4linux) <small>(1.0k ⭐)</small> or [enum4linux-ng](https://github.com/cddmp/enum4linux-ng) <small>(1.0k ⭐)</small> to list shares, devices, users, along basic information about the host.
 
 ```shell!
 $ sudo apt-get install enum4linux-ng
@@ -147,8 +157,9 @@ $ enum4linux-ng IP <options> -u 'username' -p 'password'
 # -S : list of shares
 # -o : print os information
 # -i : print printer information
-# -v : verbose
 ```
+
+#### Well-Known CVEs
 
 * [CVE-2017-0144](https://attackerkb.com/topics/xI1y9OoEgq/cve-2017-0144-ms17-010) - EternalBlue - MS17-010
 
@@ -157,7 +168,9 @@ $ enum4linux-ng IP <options> -u 'username' -p 'password'
 
 A vulnerability in the SMB protocol allowing Remote Code Execution (RCE). It was discovered by the NSA and stolen by hackers.
 
-* You can try a [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md) attack
+#### Additional Notes
+
+* PsExec <small>(see [impacket](tools/impacket.md#psexec) client)</small> is a tool that allows administrators to run commands on Windows hosts. It relies on SMB.
 </div></div>
 
 <hr class="sep-both">

@@ -50,7 +50,7 @@ Common tools are:
 
 <div class="row row-cols-lg-2"><div>
 
-#### Version Control Files
+#### Version Control Files Disclosure
 
 [![insecure_code_management](../../../../_badges/rootme/web_server/insecure_code_management.svg)](https://www.root-me.org/en/Challenges/Web-Server/Insecure-Code-Management)
 
@@ -62,6 +62,10 @@ $ git diff                  # it says the code is missing
 $ git restore *             # restore current version
 $ git log -p -- config.php  # look at config.php history
 ```
+
+👻 Automated tools: [GitHacker](https://github.com/WangYihang/GitHacker), [GitTools](https://github.com/internetwache/GitTools), [GitHack](https://github.com/lijiejie/GitHack), etc.
+
+📚 `.git` may be blocked (403) but `.git/index`, `.git/HEAD`, etc. may not.
 </div><div>
 
 #### CGI Scripts

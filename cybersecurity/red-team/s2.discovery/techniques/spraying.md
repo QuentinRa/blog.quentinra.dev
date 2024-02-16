@@ -14,4 +14,6 @@ One advantage is that we will most likely not get locked as we test different ac
 * [SprayingToolkit](https://github.com/byt3bl33d3r/SprayingToolkit) (1.3k ⭐, archived)
 * [TREVORspray](https://github.com/blacklanternsecurity/TREVORspray) (0.7k ⭐)
 * [CredMaster](https://github.com/knavesec/CredMaster) (0.7k ⭐)
+
+Many [network authentication tools](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md) can be used too.
 </div></div>
