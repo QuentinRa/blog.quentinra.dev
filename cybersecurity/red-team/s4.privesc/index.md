@@ -157,9 +157,6 @@ PS> powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"
 [![windowsprivesc20](../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![linuxprivilegeescalation](../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
-[![ignite](../../_badges/thm-p/ignite.svg)](https://tryhackme.com/room/ignite)
-[![chillhack](../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
-[![validation](../../_badges/htb-p/validation.svg)](https://app.hackthebox.com/machines/Validation)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -168,11 +165,28 @@ You may try to look for credentials. **Try password/key reuse**.
 * 🔐 command history <small>(ex: ~/.bash_history, \*hist\*)</small>
 * 🌍 browser history and [saved passwords](others/browser.md)
 * 🛣️ [logs](/cybersecurity/blue-team/topics/logs.md) (`/var/log/`)
-* 🐚 backups <small>(.old, .bak...)</small>
+* 🐚 backups <small>(.old, .bak, xxx~...)</small>
 * ✉️ conversations/mails (`/var/mail/`)
 * 🌳 website configurations (`.env`)
 * 👜 check the registry <small>(Windows, admin required)</small>
 * ...
+
+Manually dig for interesting or unexpected files
+
+* `/`: look for unexpected folders in `/`
+* `/root/`: test if administrator home is readable
+* `~/Desktop`: look for documents, passwords...
+* `~/Documents`: look for documents, passwords...
+* `%appdata%`: look for sensitive applications data
+
+#### Linux Juicy Notes
+
+[![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
+[![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![linuxprivilegeescalation](../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![ignite](../../_badges/thm-p/ignite.svg)](https://tryhackme.com/room/ignite)
+[![chillhack](../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
+[![validation](../../_badges/htb-p/validation.svg)](https://app.hackthebox.com/machines/Validation)
 
 You often find interesting files in easy CTFs using:
 
@@ -181,22 +195,19 @@ $ find / -user $(whoami) -type f 2>/dev/null | grep -v /proc | grep -v /sys
 $ find / -type f -writable 2>/dev/null | grep -v /proc | grep -v /sys
 ```
 
-Manually find interesting files
-
-* `ls -ahl /root/`: test if root's home is readable
-* `ls /`: look for unexpected folders in `/`
-* `~/Desktop`: look for documents, passwords...
-* `~/Documents`: look for documents, passwords...
-* `%appdata%`: look for sensitive applications data
-
 Find credentials, keys, tokens, passwords:
 
 ```ps
 $ find / -name .ssh 2> /dev/null
-$ find / -name *id_dsa* 2> /dev/null
+$ find / -name *id_rsa* 2> /dev/null
 $ find / -wholename "*.git/config" 2> /dev/null | xargs grep "url"
 ```
 </div><div>
+
+#### Windows Juicy Notes
+
+[![windowsprivesc20](../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
+[![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
 Read PowerShell console history:
 

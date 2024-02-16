@@ -1,11 +1,10 @@
 # impacket
 
 [![windowsprivesc20](../../../../cybersecurity/_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
-[![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
 <div class="row row-cols-lg-2"><div>
 
-[impacket](https://github.com/fortra/impacket) (12.1k ⭐) is a collection of [python](/programming-languages/high-level/scripting/python/index.md) classes for working with network protocols. They are already installed on Kali:
+[impacket](https://github.com/fortra/impacket) <small>(12.4k ⭐)</small> is a collection of [python](/programming-languages/high-level/scripting/python/index.md) classes for working with network protocols. They are already installed on Kali:
 
 ```shell!
 $ impacket-secretsdump # secretsdump.py
@@ -19,11 +18,6 @@ $ sudo git clone https://github.com/fortra/impacket /opt/impacket
 $ cd /opt/impacket
 $ pip install -r requirements.txt
 $ pip install .
-```
-
-And use a lengthy command to invoke them:
-
-```ps
 $ python /opt/impacket/examples/secretsdump.py [...]
 ```
 
@@ -48,7 +42,8 @@ Pop a powershell or run commands using [DCOM](/operating-systems/networking/prot
 $ impacket-wmiexec -shell-type powershell username:password@IP
 $ impacket-wmiexec -shell-type powershell username:password@IP "hostname"
 ```
-</div><div>
+
+<br>
 
 #### mssqlclient
 
@@ -59,15 +54,17 @@ $ impacket-mssqlclient username@IP -windows-auth
 $ impacket-mssqlclient username:password@IP -windows-auth
 SQL> exit
 ```
-
-<br>
+</div><div>
 
 #### Dump hashes from backup
+
+[![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
 Dump hashes from a backup of SAM and SYSTEM hashes. There are local credentials and domain cached credentials.
 
 ```shell!
 $ impacket-secretsdump -sam XXX -system YYY LOCAL
+<output format is explained in the output>
 ```
 
 <br>
@@ -83,6 +80,8 @@ $ impacket-psexec -hashes usernamehash:sessionhash username@IP
 <br>
 
 #### SMB server
+
+[![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
 Run a [SMB](../smb.md) server to which user will connect with the username XXX and the password YYY. Files will be stored in `/path/to/share`.
 
