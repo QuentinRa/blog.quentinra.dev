@@ -43,9 +43,10 @@ Finally, `payloadsallthethings` contains some wordlists.
 
 ## Custom Wordlists
 
+[![passwordattacks](../../../_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
 [![crackingpasswordswithhashcat](../../../_badges/htb/crackingpasswordswithhashcat.svg)](https://academy.hackthebox.com/course/preview/cracking-passwords-with-hashcat)
 [![loginbruteforcing](../../../_badges/htb/loginbruteforcing.svg)](https://academy.hackthebox.com/course/preview/login-brute-forcing)
-[![passwordattacks](../../../_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
+[![password_attacks](../../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -200,7 +201,9 @@ Sorted by recommended order of usage.
 
 #### Accounts
 
-Usernames
+[![password_attacks](../../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+
+**Usernames**
 
 ```text!
 admin, administrator, wpadmin, root, adm
@@ -208,24 +211,25 @@ admin, administrator, wpadmin, root, adm
 /usr/share/seclists/Usernames/top-usernames-shortlist.txt
 ```
 
-Passwords
+**Passwords**
 
 ```text!
 /usr/share/wordlists/rockyou.txt
 /usr/share/seclists/Passwords/Common-Credentials/best110.txt
 ```
 
-Default credentials
+📚 You may also use the cracked passwords to create a wordlist.
+
+**Default credentials** <small>(=Credential Stuffing)</small>
 
 ```text!
 /usr/share/seclists/Passwords/Default-Credentials/ftp-betterdefaultpasslist.txt
 /usr/share/metasploit-framework/data/wordlists/http_default_pass.txt
 $ ll /usr/share/seclists/Passwords/Default-Credentials/*passlist.txt
+$ # see also: short username/password wordlists
 ```
 
-📚 You may also use short username/password wordlists.
-
-📚 For default passwords, you might want to check out [cirt](https://cirt.net/passwords), [default-password](https://default-password.info/), and [data recovery](https://datarecovery.com/rd/default-passwords/). You may also use the cracked passwords to create a wordlist.
+📚 You might want to check out [cirt](https://cirt.net/passwords), [default-password](https://default-password.info/), and [data recovery](https://datarecovery.com/rd/default-passwords/). See also: [Default Credentials Cheat Sheet](https://github.com/ihebski/DefaultCreds-cheat-sheet) <small>(5.1k ⭐)</small>.
 </div></div>
 
 <hr class="sep-both">

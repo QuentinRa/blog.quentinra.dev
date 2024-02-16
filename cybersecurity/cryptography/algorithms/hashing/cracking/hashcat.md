@@ -58,6 +58,8 @@ $ hashcat -m hcode [...] -w 3 # 1="half power", 3="full power"
 
 ## Hashcat Attack Modes
 
+[![crackingpasswordswithhashcat](../../../../_badges/htb/crackingpasswordswithhashcat.svg)](https://academy.hackthebox.com/course/preview/cracking-passwords-with-hashcat)
+
 <div class="row row-cols-lg-2"><div>
 
 #### Combination Attack Mode
@@ -96,6 +98,8 @@ $ hashcat -a 7 <mask> wordlist
 
 ## Hashcat Masks
 
+[![crackingpasswordswithhashcat](../../../../_badges/htb/crackingpasswordswithhashcat.svg)](https://academy.hackthebox.com/course/preview/cracking-passwords-with-hashcat)
+
 <div class="row row-cols-lg-2"><div>
 
 A mask is similar to a pattern/regex but with hashcat specific rules. Everything is explained in the [documentation](https://hashcat.net/wiki/doku.php?id=mask_attack).
@@ -123,6 +127,9 @@ See also: `--increment`, `--increment-max`.
 <hr class="sep-both">
 
 ## Hashcat Rules
+
+[![crackingpasswordswithhashcat](../../../../_badges/htb/crackingpasswordswithhashcat.svg)](https://academy.hackthebox.com/course/preview/cracking-passwords-with-hashcat)
+[![password_attacks](../../../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -212,7 +219,6 @@ Stuff that I found, but never read/used yet.
 
 * [nsa-rules](https://github.com/NSAKEY/nsa-rules) (0.5k ⭐, 2016 🪦)
 * [Hob0Rules](https://github.com/praetorian-inc/Hob0Rules) (1.3k ⭐, 2016 🪦)
-* [Hob0Rules](https://github.com/praetorian-inc/Hob0Rules) (0.1k ⭐, 2022 ☠️)
 * `/usr/share/hashcat/rules/best64.rule`
 </div><div>
 </div></div>
