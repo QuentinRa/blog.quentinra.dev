@@ -20,6 +20,8 @@ KeePass is storing passwords locally in a `.kdbx` database.
 
 #### FootHold
 
+[![password_attacks](../../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+
 * You can try to [brute force](/cybersecurity/cryptography/algorithms/hashing/index.md) the master password:
 
 ```shell!

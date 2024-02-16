@@ -113,19 +113,19 @@ $ echo -n "some hash here" > myhash
 
 * ➡️ Historically, we used [hash-identifier](https://github.com/blackploit/hash-identifier) (0.4k⭐). Obsolete (2011).
 
-```bash
+```bash!
 $ cat myhash | hash-identifier
 ```
 
 * ➡️ [hashID](https://github.com/psypanda/hashID) (1.2k ⭐). Not updated since 2015.
 
-```bash
+```bash!
 $ cat myhash | hashid
 ```
 
 * ➡️ [Name-that-hash](https://github.com/HashPals/Name-That-Hash) (1.2k ⭐). [Online version here](https://nth.skerritt.blog/). Gives the John (JtR) and the hashcat (hc) format for each.
 
-```bash
+```bash!
 # sudo apt install name-that-hash
 $ nth -t "some hash here"
 $ nth -f myhash
@@ -134,7 +134,7 @@ $ nth -f myhash
 
 * ➡️ [haiti](https://github.com/noraj/haiti/) (0.4k ⭐). Similar to Name-that-hash, different results.
 
-```bash
+```bash!
 # sudo gem install haiti-hash
 $ haiti "some hash here"
 ```
@@ -242,6 +242,7 @@ $ john --format=gpg myhash --wordlist=wordlist
 
 #### SSH private key - passphrase cracking
 
+[![password_attacks](../../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![encryptioncrypto101](../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
 [![basicpentestingjt](../../../_badges/thm-p/basicpentestingjt.svg)](https://tryhackme.com/room/basicpentestingjt)
 [![mustacchio](../../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
@@ -251,6 +252,25 @@ SSH may have been configured to use a passphrase-protected [ssh keys](/operating
 ```shell!
 $ ssh2john key > myhash
 $ john --format=ssh myhash --wordlist=wordlist
+```
+
+<br>
+
+#### Documents - password cracking
+
+[![password_attacks](../../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+
+You can crack [Office](https://en.wikipedia.org/wiki/Microsoft_Office) documents and [PDF](https://en.wikipedia.org/wiki/PDF) documents using:
+
+```shell!
+$ office2john xxx.docx > myhash
+$ john myhash --wordlist=wordlist
+$ john myhash --show
+```
+
+```shell!
+$ pdf2john xxx.pdf > myhash
+$ john myhash --wordlist=wordlist
 ```
 </div><div>
 
@@ -277,6 +297,7 @@ $ hashcat -m 11600 [...]
 
 #### ZIP password cracking
 
+[![password_attacks](../../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![crackingpasswordswithhashcat](../../../_badges/htb/crackingpasswordswithhashcat.svg)](https://academy.hackthebox.com/course/preview/cracking-passwords-with-hashcat)
 [![agentsudoctf](../../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 [![chillhack](../../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
@@ -314,8 +335,6 @@ $ hccapx2john out.hccapx > hash      # only for john
 
 #### Others converters
 
-* `office2john`: office files
-* `pdf2john`: PDF files
 * `keepass2john`: keepass files, refer to [KeePass](/cybersecurity/blue-team/tools/passwords/keepass.md#keepass-pentester-notes-) notes
 </div></div>
 

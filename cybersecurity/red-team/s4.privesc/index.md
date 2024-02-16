@@ -155,6 +155,7 @@ PS> powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"
 
 [![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![windowsprivesc20](../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
+[![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![linuxprivilegeescalation](../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![ignite](../../_badges/thm-p/ignite.svg)](https://tryhackme.com/room/ignite)
 [![chillhack](../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
@@ -162,7 +163,7 @@ PS> powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"
 
 <div class="row row-cols-lg-2"><div>
 
-You may try to look for credentials. **Try password reuse**.
+You may try to look for credentials. **Try password/key reuse**.
 
 * 🔐 command history <small>(ex: ~/.bash_history, \*hist\*)</small>
 * 🌍 browser history and [saved passwords](others/browser.md)

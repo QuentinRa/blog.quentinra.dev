@@ -109,6 +109,8 @@ $ nmap -p 139,445 --script "*smb*" IP
 
 #### FootHold
 
+[![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+
 * Try `Anonymous` user with no password (`-N`)
 
 ```ps
