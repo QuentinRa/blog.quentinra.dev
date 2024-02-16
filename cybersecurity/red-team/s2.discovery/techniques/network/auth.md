@@ -19,6 +19,7 @@ We often use one of these tools:
 * [nmap](/cybersecurity/red-team/tools/scanners/ports/nmap.md#brute-force-scripts)
 * [CrackMapExec](/cybersecurity/red-team/tools/cracking/auth/cme.md)
 * [NetExec](/cybersecurity/red-team/tools/cracking/auth/nxc.md)
+* [Crowbar](/cybersecurity/red-team/tools/cracking/auth/crowbar.md)
 * ncrack
 * patator
 * medusa

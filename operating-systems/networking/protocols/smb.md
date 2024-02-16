@@ -123,7 +123,15 @@ $ smbclient //IP//Anonymous -U Anonymous -N
 * The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md).
 
 ```shell!
-$ hydra -L user.list -P password.list smb://IP -V
+$ hydra -L user.list -P password.list smb://IP -V -f
+$ nxc smb IP -u username -p password.list
+```
+
+If you got some error like `invalid reply from target`, it may indicate that the tool doesn't support this SMB dialect. Try metasploit:
+
+```shell!
+$ msfconsole -q
+msf6> use auxiliary/scanner/smb/smb_login
 ```
 </div><div>
 
@@ -159,6 +167,8 @@ $ enum4linux-ng IP <options> -u 'username' -p 'password'
 # -i : print printer information
 ```
 
+* PsExec <small>(see [impacket](tools/impacket.md#psexec) client)</small> is a tool that allows administrators to run commands on Windows hosts. It relies on SMB.
+
 #### Well-Known CVEs
 
 * [CVE-2017-0144](https://attackerkb.com/topics/xI1y9OoEgq/cve-2017-0144-ms17-010) - EternalBlue - MS17-010
@@ -167,10 +177,6 @@ $ enum4linux-ng IP <options> -u 'username' -p 'password'
 [![blue](../../../cybersecurity/_badges/htb-p/blue.svg)](https://app.hackthebox.com/machines/Blue)
 
 A vulnerability in the SMB protocol allowing Remote Code Execution (RCE). It was discovered by the NSA and stolen by hackers.
-
-#### Additional Notes
-
-* PsExec <small>(see [impacket](tools/impacket.md#psexec) client)</small> is a tool that allows administrators to run commands on Windows hosts. It relies on SMB.
 </div></div>
 
 <hr class="sep-both">

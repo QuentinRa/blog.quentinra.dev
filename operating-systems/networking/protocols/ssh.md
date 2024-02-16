@@ -48,7 +48,7 @@ $ ssh [...] -v -o PreferredAuthentications=password
 * The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md).
 
 ```shell!
-$ hydra -L user.list -P password.list ssh://IP -V
+$ hydra -L user.list -P password.list ssh://IP -V -f
 ```
 </div><div>
 

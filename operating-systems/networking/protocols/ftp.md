@@ -96,6 +96,10 @@ $ ftp anonymous@IP
 ```
 
 * The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md).
+
+```shell!
+$ hydra -L user.list -P password.list ftp://IP -V -f
+```
 </div><div>
 
 #### Well-known CVEs

