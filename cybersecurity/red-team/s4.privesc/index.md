@@ -209,6 +209,8 @@ Find credentials, keys, tokens, passwords:
 ```ps
 $ find / -name .ssh 2> /dev/null
 $ find / -name *id_rsa* 2> /dev/null
+$ grep -rnw "PRIVATE KEY" / 2>/dev/null | grep ":1" # private keys
+$ grep -rnw "ssh-rsa" / 2>/dev/null | grep ":1"     # public keys
 $ find / -wholename "*.git/config" 2> /dev/null | xargs grep "url"
 ```
 </div><div>
