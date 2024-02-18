@@ -208,16 +208,16 @@ Then, you can define your extension
 * ➡️ `action`: open a popup when clicking on the icon in the toolbar
 * ➡️ `content_scripts`: to run code on each page using the DOM
 * ➡️ `background`: to run code that does not need to access the DOM
-* ➡️ `options_page`: a page to configure the extension
+* ➡️ `options_ui`: a page to configure the extension
 
-⚠️ Inside a `content_scripts`, most of the attributes of `chrome`/`browser` **aren't** available. Moreover, some properties are only available after asking for [permission](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/) first.
+⚠️ Inside a `content_scripts`, most of the attributes of `chrome`/`browser` extension variable **aren't** available. Moreover, some properties are only available after asking for [permission](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/) first using both:
 
 ```json!
-  "host_permissions": [ "://*" ],
+  "host_permissions": [ "<all_urls>" ], // OR, add URLs here
   "permissions": ["activeTab"]
 ```
 
-✨ Usually, to have access to `chrome.xxx`, the permission is called `xxx`.
+✨ Usually, the permission `xxx` grants access to `browser.xxx`.
 </div></div>
 
 <hr class="sep-both">
@@ -282,7 +282,7 @@ chrome.action.onClicked.addListener((tab) => {});
 
 #### Badge
 
-The icon inside the toolbar is called a `badge`. You can add a text "below", like the number of ads blocked on a site.
+The icon inside the toolbar is called a `badge`. You can add a text next to it, like the number of ads blocked on the current tab.
 
 ```javascript!
 // ➡️ Inside popup.html/popup.js/...
@@ -326,7 +326,7 @@ Content scripts are used if you want your extension to interact with the **DOM**
   ]
 ```
 
-The attribute `matches` can take patterns such as `https://example.com/*`. ➡️ [See match patterns](https://developer.chrome.com/docs/extensions/mv3/match_patterns/).
+The attribute `matches` takes patterns such as `https://example.com/*`. ➡️ [Refer to the match patterns documentation.](https://developer.chrome.com/docs/extensions/mv3/match_patterns/)
 </div><div>
 
 #### web_accessible_resources
@@ -336,8 +336,8 @@ If you need to access a resource stored inside the plugin folder, first, declare
 ```json!
   "web_accessible_resources": [
     {
-      "resources": ["xxx"], 
-      "matches": ["<all_urls>"]
+      "matches": ["<all_urls>"],
+      "resources": ["xxx"]
     }
   ]
 ```
@@ -347,9 +347,11 @@ Then, use `chrome.runtime.getURL("xxx")` to get a URL to it.
 
 <hr class="sep-both">
 
-## Background and Service Worker
+## Additional Components
 
 <div class="row row-cols-lg-2"><div>
+
+#### Background and Service Worker
 
 Service workers can be stopped, and started when an event occurs. They are useful for long-running tasks, or to access the Chrome/Firefox API without having to use a popup.
 
@@ -359,6 +361,17 @@ Service workers can be stopped, and started when an event occurs. They are usefu
   },
 ```
 </div><div>
+
+#### Option Page
+
+You can create an option page to allow user to customize the extension. We usually save these settings in the `storage.sync` storage.
+
+```json!
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+```
 </div></div>
 
 <hr class="sep-both">
