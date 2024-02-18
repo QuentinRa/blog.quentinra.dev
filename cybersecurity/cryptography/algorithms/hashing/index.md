@@ -333,6 +333,19 @@ $ /usr/lib/hashcat-utils/cap2hccapx.bin in.cap out.hccapx
 $ hccapx2john out.hccapx > hash      # only for john
 ```
 
+#### OpenSSL Key Cracking (GZIP example)
+
+GZIP (GNU Zip) is a file compression and decompression utility. The result can then be encrypted using tools such as [openssl](/cybersecurity/cryptography/commands/openssl.md) or [gpg](/cybersecurity/cryptography/commands/gpg.md).
+
+```shell!
+$ gzip id_rsa # => id_rsa.gz
+$ openssl enc -aes-256-cbc -salt -in id_rsa.gz -out xxx.gzip -k SomeKey
+$ openssl enc -d -aes-256-cbc -in xxx.gzip -out id_rsa.gz -k SomeKey
+$ gzip -d id_rsa.gz # If the key is correct, terminate with code 0
+```
+
+I am not aware of any tool to automate this when `openssl` was used.
+
 #### Others converters
 
 * `bitlocker2john`: bitlocker protected drive, refer to [Bitlocker](/operating-systems/windows/security/index.md#bitlocker-encrypted-drive) notes

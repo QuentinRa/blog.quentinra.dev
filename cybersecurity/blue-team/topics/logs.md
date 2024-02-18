@@ -120,16 +120,17 @@ Some methods of contact 📨: SMS, email, push notification...
 
 ## Common log files locations
 
+[![linuxfundamentals](../../_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/course/preview/linux-fundamentals)
+[![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![linuxfundamentalspart3](../../_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
 [![adventofcyber4](../../_badges/thm/adventofcyber4/day2.svg)](https://tryhackme.com/room/adventofcyber4)
-[![linuxfundamentals](../../_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/course/preview/linux-fundamentals)
 
 <div class="row row-cols-lg-2"><div>
 
 * `/var/log/syslog` and `/var/log/messages` <small>(general and system logs)</small>
 * `/var/log/auth.log` and `/var/log/secure` <small>(authentication attempts)</small>
 * `/var/log/kern.log` <small>(kernel messages)</small>
-* `/var/log/dmesg` <small>(driver messages)</small>
+* `/var/log/dmesg` <small>(hardware and driver messages)</small>
 * `/var/log/audit/audit.log` <small>(audit logs)</small>
 * `/var/log/nginx/` and `/var/log/apache2/` <small>(webserver logs)</small>
 * `/var/log/mysql/` and `/var/log/postgresql/` <small>(dbms logs)</small>
