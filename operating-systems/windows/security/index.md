@@ -77,6 +77,44 @@ It's managed by `lsass.exe`, the Local Security Authority Subsystem Service (LSA
 
 <hr class="sep-both">
 
+## BitLocker Encrypted Drive
+
+[![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+
+<div class="row row-cols-lg-2"><div>
+
+BitLocker is a full disk encryption feature on Windows. We must unlock the drive at boot in order to read its contents.
+
+* 🌱 USB key
+* 😎 Pin or Password 
+* 🍷 Trusted Platform Module (TPM)
+* ⚠️ Network Unlock
+
+A recovery key can alternatively be used. It's a randomly generated 48-digit string of numbers. It can be saved on [Active Directory](/operating-systems/cloud/active-directory/_knowledge/index.md), on your Microsoft Account, on an external drive, etc.
+</div><div>
+
+Bitlocker needs the drive to have two partitions. The first partition has the necessary files to start the system, while the other has the full operating system and our files.
+
+Assuming you mounted the locked partition in `/dev/xxxp2`:
+
+```shell!
+$ # unlock and map in /dev/mapper/mytag
+$ sudo cryptsetup bitlkOpen /dev/xxxp2 mytag
+$ sudo cryptsetup bitlkClose mytag
+```
+
+You can extract the user password (`$0`/`$1`) or the recovery key (`$2`/`$3`). You can then try [hash cracking](/cybersecurity/cryptography/algorithms/hashing/index.md#hash-cracking) or [bitcracker](https://github.com/e-ago/bitcracker) <small>(0.7k ⭐, 2021 🪦)</small>.
+
+```shell!
+$ # https://openwall.info/wiki/john/OpenCL-BitLocker
+$ bitlocker2john -i xxx.vhd > myhashes
+$ grep "bitlocker\$0" myhashes > myhash
+$ hashcat -m 22100 myhash wordlist
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Random Notes
 
 <div class="row row-cols-lg-2"><div>
@@ -151,11 +189,6 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * Windows Tilde Filenames (Refer to IIS)
-
-**BitLocker**
-
-The Trusted Platform Module (TPM) hardware component provides security against tampering along with many other things. BitLocker was designed "to help protect user data and to ensure that a computer has not been tampered with while the system was offline", as per [Microsoft](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview).
-
 * backup the SAM and SYSTEM hashes
     * `reg save hklm\system C:\XXX\system.hive`
     * `reg save hklm\sam C:\XXX\sam.hive`

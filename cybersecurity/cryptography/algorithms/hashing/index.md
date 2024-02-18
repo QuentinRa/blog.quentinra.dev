@@ -335,6 +335,7 @@ $ hccapx2john out.hccapx > hash      # only for john
 
 #### Others converters
 
+* `bitlocker2john`: bitlocker protected drive, refer to [Bitlocker](/operating-systems/windows/security/index.md#bitlocker-encrypted-drive) notes
 * `keepass2john`: keepass files, refer to [KeePass](/cybersecurity/blue-team/tools/passwords/keepass.md#keepass-pentester-notes-) notes
 </div></div>
 

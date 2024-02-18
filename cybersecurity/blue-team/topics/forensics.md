@@ -62,9 +62,10 @@ $ testdisk data.bin
 
 #### Investigate A Virtual Machine
 
+[![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![oh_my_grub](../../_badges/rootme/forensic/oh_my_grub.svg)](https://www.root-me.org/en/Challenges/Forensic/Oh-My-Grub)
 
-You can mount a `.vmdk` on Kali Linux using either:
+You can mount a `.vmdk`/`.vhd` on Kali Linux using either:
 
 ```shell!
 $ sudo apt install libguestfs-tools
@@ -80,8 +81,15 @@ $ sudo rm -rf /mnt/vmdk
 $ sudo apt install qemu-utils
 $ sudo modprobe nbd
 $ sudo qemu-nbd -r -c /dev/nbd1 xxx.vmdk 
-$ ls -al /dev/nbd1p*
+$ ls -al /dev/nbd1p* # list the disk partitions
+```
+
+You can now mount any partition one by one.
+
+```shell!
 $ mkdir p1 && sudo mount /dev/nbd1p1 ./p1
 $ sudo SHELL=/bin/bash chroot p1
 ```
+
+The drive may be [encrypted using BitLocker](/operating-systems/windows/security/index.md#bitlocker-encrypted-drive).
 </div></div>
