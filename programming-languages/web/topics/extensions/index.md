@@ -590,6 +590,55 @@ chrome.runtime.onInstalled.addListener(() => {});
 
 <hr class="sep-both">
 
+## Additional Notes For Firefox Extensions
+
+<div class="row row-cols-lg-2"><div>
+
+You can get started by using the [chrome-extension-typescript-starter](#chrome-extension-typescript-starter) template. Replace `chrome` with `browser` and update `package.json`.
+
+```diff
+-    "build": "webpack --config webpack/webpack.prod.js",
++    "build": "webpack --config webpack/webpack.prod.js && cd dist && npx web-ext build",
+```
+
+```diff
+  "dependencies": {
+     ...,
++    "web-ext": "^X.X.X"
+  }
+  "devDependencies": {
+-    "@types/chrome": "X.X.X",
++    "@types/firefox-webext-browser": "^X.X.X",
+     ...
+  }
+```
+
+The ZIP will be built in `dist/web-ext-artifacts/`.
+</div><div>
+
+You will also have to add an ID in your extension manifest:
+
+```json!
+{
+ "browser_specific_settings": {
+    "gecko": {
+      "id": "{aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa}"
+    }
+  },
+  ...
+}
+```
+
+To test a non-signed extension, you must use [Firefox Developper](). Refer to [this StackOverflow thread](https://stackoverflow.com/questions/62237202/firefox-add-ons-how-to-install-my-own-local-add-on-extension-permanently-in-f) to set the following variables:
+
+```text!
+extensions.langpacks.signatures.required
+xpinstall.signatures.required
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -598,10 +647,6 @@ Stuff that I found, but never read/used yet.
 
 * [Polyfill](https://github.com/mozilla/webextension-polyfill)
 * [plasmo](https://github.com/PlasmoHQ/plasmo) / [chrome-types](https://www.npmjs.com/package/chrome-types)
-
-```javascript!
-document.addEventListener("pageshow", xxx);
-```
 
 ```javascript!
 chrome.contextMenus.create({ id: "xxx", title: "xxx", contexts: ['selection'] });
@@ -614,25 +659,7 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 ```
 </div><div>
 
-[web-ext](https://github.com/mozilla/web-ext) is a convenient project to build firefox extensions.
-
+```javascript!
+document.addEventListener("pageshow", xxx);
 ```
-$ npm i web-ext
-$ npx web-ext --version
-$ nano public/manifest.json
-...
- "browser_specific_settings": {
-    "gecko": {
-      "id": "{aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa}"
-    }
-  },
-...
-$ cd dist
-$ npx web-ext build #--overwrite-dest
-# dev browser required
-# https://stackoverflow.com/questions/62237202/firefox-add-ons-how-to-install-my-own-local-add-on-extension-permanently-in-f
-extensions.langpacks.signatures.required
-xpinstall.signatures.required
-```
-
 </div></div>
