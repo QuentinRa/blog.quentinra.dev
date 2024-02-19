@@ -42,7 +42,30 @@ Modern versions of Windows use the NT hash format, commonly referred to as NTLM,
 
 The database is stored in: `/Windows/System32/config/SAM/` <small>(admin-only)</small>.
 
-📚 The SAM database is mounted in registry at `HKLM/SAM`.
+📚 The SAM database is mounted in the registry at `hklm/sam`.
+
+⚠️ The SAM database is often partially encrypted using SYSKEY.
+
+#### SYSKEY, Bootkey, and System Hive
+
+[![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+
+SYSKEY is a security feature that partially encrypts the SAM database with a key to protect against offline cracking.
+
+* SYSKEY define the configuration of the bootkey
+* The bootkey is the key used to encrypt the SAM database
+* The system hive contains the bootkey.
+
+📚 The system hive is stored in: `/Windows/System32/config/System/` <small>(admin-only)</small> and mounted in the registry at `hklm/system`.
+
+#### Security Hive
+
+[![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+
+The security hive is used to store security configuration, but it's also used to store cached domain-joined credentials.
+
+📚 It is mounted in the registry at `hklm/security`.
+</div><div>
 
 #### Security Identifier (SID)
 
@@ -56,7 +79,6 @@ A SID is a concatenation of a domain identifier and a relative identifier (RID).
 PS> whoami /user
 PS> wmic useraccount get name,sid
 ```
-</div><div>
 
 #### Access Control
 
@@ -123,6 +145,16 @@ $ bitlocker2john -i xxx.vhd > myhashes
 $ grep "bitlocker\$0" myhashes > myhash
 $ hashcat -m 22100 myhash wordlist
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Windows Pentester Notes ☠️
+
+<div class="row row-cols-lg-2"><div>
+
+...
+</div><div>
 </div></div>
 
 <hr class="sep-both">
