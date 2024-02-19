@@ -64,6 +64,7 @@ Dump hashes from a backup of SAM and SYSTEM hashes. There are local credentials 
 
 ```shell!
 $ impacket-secretsdump -sam XXX -system YYY LOCAL
+$ impacket-secretsdump -sam XXX -security XXX -system XXX LOCAL
 <output format is explained in the output>
 ```
 

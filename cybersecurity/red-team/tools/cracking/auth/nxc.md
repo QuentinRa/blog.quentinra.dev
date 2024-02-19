@@ -17,5 +17,7 @@ Example usage:
 
 ```shell!
 $ nxc smb IP -u 'username' -p password.list
+$ nxc smb IP --local-auth -u 'xxx' -p 'yyy' --lsa
+$ nxc smb IP --local-auth -u 'xxx' -p 'yyy' --sam
 ```
 </div></div>
