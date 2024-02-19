@@ -18,16 +18,26 @@
 
 <hr class="sep-both">
 
-## Kerberos
+## Authentication & Authorization
 
 <div class="row row-cols-lg-2"><div>
+
+#### Active Directory database
+
+[![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+
+Active directory database is stored on the domain controller at `%SystemRoot%\ntds.dit`. It's used to validate credentials.
+
+It contains user/computer/group accounts, group policies, etc. 
+</div><div>
+
+#### Kerberos
 
 Kerberos is a protocol used to provide secure authentication over non-secure networks. It replaces NetNTLM.
 
 When a user logs in, their credentials are sent to the Kerberos server for verification. Upon successful login, the server generates a **ticket-granting ticket (TGT)** 🎫.
 
 When the user wants to access a network resource, such as a shared folder, the computer requests the Kerberos server using the TGT and requests access. If the request is accepted, the Kerberos server will give them a **Ticket Granting Service (TGS)** 🎟️.
-</div><div>
 </div></div>
 
 <hr class="sep-both">

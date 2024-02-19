@@ -28,12 +28,13 @@ Microsoft frequently releases [security updates](https://msrc.microsoft.com/upda
 
 ## Authentication & Authorization
 
-[![windowsfundamentals3xzx](../../../cybersecurity/_badges/thm/windowsfundamentals3xzx.svg)](https://tryhackme.com/room/windowsfundamentals3xzx)
-[![windowsfundamentals](../../../cybersecurity/_badges/htb/windowsfundamentals.svg)](https://academy.hackthebox.com/course/preview/windows-fundamentals)
-
 <div class="row row-cols-lg-2"><div>
 
 #### Security Accounts Manager (SAM)
+
+[![windowsfundamentals](../../../cybersecurity/_badges/htb/windowsfundamentals.svg)](https://academy.hackthebox.com/course/preview/windows-fundamentals)
+[![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![windowsfundamentals3xzx](../../../cybersecurity/_badges/thm/windowsfundamentals3xzx.svg)](https://tryhackme.com/room/windowsfundamentals3xzx)
 
 The SAM (Security Accounts Manager) database is a local database present on every Windows computer. It is used for authentication. It stores account information including usernames and password hashes.
 
@@ -41,7 +42,11 @@ Modern versions of Windows use the NT hash format, commonly referred to as NTLM,
 
 The database is stored in: `/Windows/System32/config/SAM/` <small>(admin-only)</small>.
 
+📚 The SAM database is mounted in registry at `HKLM/SAM`.
+
 #### Security Identifier (SID)
+
+[![windowsfundamentals](../../../cybersecurity/_badges/htb/windowsfundamentals.svg)](https://academy.hackthebox.com/course/preview/windows-fundamentals)
 
 Each object (user, service, etc.) that can be authenticated is called "Security Principal," and has a security identifier (SID). They are used to verify that the user is authorized to an action.
 
@@ -55,6 +60,9 @@ PS> wmic useraccount get name,sid
 
 #### Access Control
 
+[![windowsfundamentals](../../../cybersecurity/_badges/htb/windowsfundamentals.svg)](https://academy.hackthebox.com/course/preview/windows-fundamentals)
+[![windowsfundamentals3xzx](../../../cybersecurity/_badges/thm/windowsfundamentals3xzx.svg)](https://tryhackme.com/room/windowsfundamentals3xzx)
+
 The access to any resources is managed by Access Control Entries (ACEs) in Access Control Lists (ACLs). An ACL is a set of ACEs.
 
 Each ACE specifies the permissions <small>(R, W, X, etc.)</small> granted or denied for a particular user or group <small>(a SID)</small> over a "securable object". A securable object refers to a resource that can be secured <small>(files, services, etc.)</small>.
@@ -65,6 +73,10 @@ A security descriptor is a data structure associated with a securable object. It
 * **System Access Control List (SACL)**: Optionally, a list that specifies which security events should be audited.
 
 #### Local Security Authority (LSA)
+
+[![windowsfundamentals](../../../cybersecurity/_badges/htb/windowsfundamentals.svg)](https://academy.hackthebox.com/course/preview/windows-fundamentals)
+[![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![windowsfundamentals3xzx](../../../cybersecurity/_badges/thm/windowsfundamentals3xzx.svg)](https://tryhackme.com/room/windowsfundamentals3xzx)
 
 The Local Security Authority (LSA) is a process responsible for security-related functions in the operating system.
 
