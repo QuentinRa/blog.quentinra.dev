@@ -525,7 +525,7 @@ There are other kinds of trusts:
 While uncommon, it's possible for Linux clients to be connected to Active Directory. We can use the `realm` command to dig information:
 
 ```shell!
-$ realm list
+$ realm list # see also: sssd, winbind
   ...
   permitted-logins: username@xxx.yyy
   permitted-groups: XXX
@@ -542,13 +542,15 @@ $ klist # information about the current ticket
 
 ☠️ We can use someone else's ticket as long as we got `rw` on it.
 
-Users and scripts can use a [keytab](https://kb.iu.edu/d/aumh) file to store Kerberos principals and encrypted keys that can be used to create tickets without having to store the plaintext password.
+Users and scripts can use a [keytab](https://kb.iu.edu/d/aumh) file to store Kerberos principals and encrypted keys that can be used to create tickets without having to store the plaintext password. To use it, we need `rw` on it.
 
 ```shell!
 $ find / -name "*keytab*" -readable -writable -ls 2>/dev/null
+$ kinit xxx@yyy.zzz -k -t /path/to/xxx.keytab
+$ klist # new ticket associated with xxx@yyy.zzz
 ```
 
-☠️ If you find a readable keytab file, you can create tickets.
+☠️ If you find a readable keytab file, you can create tickets. You can also use [KeyTabExtract](https://github.com/sosdave/KeyTabExtract) <small>(0.1k ⭐)</small> to dump the hash and crack it.
 </div></div>
 
 <hr class="sep-both">

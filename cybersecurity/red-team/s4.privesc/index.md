@@ -175,7 +175,7 @@ Common places to dig for credentials are:
 * 🌳 configurations <small>(.env, .ini/.config/.cfg/.conf/.cnf, .sql)</small>
 * 🤖 scripts and tasks <small>(.sh/.ps1/.bat, cronjob)</small>
 * 👜 check the registry <small>(Windows, privilege required)</small>
-* 💎 Databases <small>(.\*db\*)</small>, Password Managers, Applications
+* 💎 Databases <small>(.\*db\*)</small>, Password Managers, Applications, [Files](https://fileinfo.com/filetypes/encoded)
 * ...
 
 Manually dig for interesting or unexpected files
