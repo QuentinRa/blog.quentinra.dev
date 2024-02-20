@@ -111,7 +111,7 @@ $ nmap -p 139,445 --script "*smb*" IP
 
 [![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
-* Try `Anonymous` user with no password (`-N`)
+* Try `Anonymous` user with no password (`-N`/`-no-pass`)
 
 ```ps
 # list shares
