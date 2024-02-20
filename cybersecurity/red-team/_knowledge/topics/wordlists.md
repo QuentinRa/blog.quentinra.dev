@@ -214,8 +214,9 @@ admin, administrator, wpadmin, root, adm
 **Passwords**
 
 ```text!
-/usr/share/wordlists/rockyou.txt
 /usr/share/seclists/Passwords/Common-Credentials/best110.txt
+/usr/share/wordlists/fasttrack.txt
+/usr/share/wordlists/rockyou.txt
 ```
 
 📚 You may also use the cracked passwords to create a wordlist.

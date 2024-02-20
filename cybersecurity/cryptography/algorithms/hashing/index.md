@@ -189,6 +189,7 @@ Some special cases of using john/hashcat along other tools.
 
 #### Linux shadow hash cracking
 
+[![password_attacks](../../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![linprivesc](../../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
 
 To crack the whole shadow file, you may use `unshadow`:
@@ -196,12 +197,14 @@ To crack the whole shadow file, you may use `unshadow`:
 ```shell!
 $ unshadow /path/to/passwd /path/to/shadow > hashes
 $ john hashes --format=sha512crypt --wordlist=wordlist
+$ hashcat -m 1800 -a 0 hashes wordlist
 ```
 
 <br>
 
 #### Windows password hash cracking
 
+[![password_attacks](../../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![hash_dcc](../../../_badges/rootme/cryptanalysis/hash_dcc.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-DCC)
 [![hash_dcc2](../../../_badges/rootme/cryptanalysis/hash_dcc2.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-DCC2)
 [![hash_lm](../../../_badges/rootme/cryptanalysis/hash_lm.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-LM)
@@ -334,6 +337,8 @@ $ hccapx2john out.hccapx > hash      # only for john
 ```
 
 #### OpenSSL Key Cracking (GZIP example)
+
+[![password_attacks](../../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
 GZIP (GNU Zip) is a file compression and decompression utility. The result can then be encrypted using tools such as [openssl](/cybersecurity/cryptography/commands/openssl.md) or [gpg](/cybersecurity/cryptography/commands/gpg.md).
 
