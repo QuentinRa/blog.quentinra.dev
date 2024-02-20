@@ -26,6 +26,7 @@ You can use [evil-winrm](https://github.com/Hackplayers/evil-winrm) (3.9k ⭐) o
 ```ps
 $ evil-winrm -i IP -u username -p password
 $ evil-winrm -i IP -u 'username' -p 'password'
+$ evil-winrm -i IP -u 'username' -H 'hash'
 ```
 
 You can try to [brute force credentials](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md):
