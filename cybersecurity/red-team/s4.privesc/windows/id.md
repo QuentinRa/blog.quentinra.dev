@@ -6,7 +6,7 @@
 
 * `whoami`: username
 * `whoami /groups`: your groups
-* `Get-LocalGroup`: list groups
+* `Get-LocalGroup`+`net localgroup`: list groups
 * `Get-LocalUser`: list users
 * `net localgroup users`: list users in the group "users"
 * `net user username`: info about a user

@@ -240,6 +240,7 @@ PS> $(Resolve-Path .\file.exe:stream) # vulnerable PS call
 
 #### Volume Shadow Copy Service (VSS)
 
+[![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![adventofcyber2](../../../cybersecurity/_badges/thm/adventofcyber2/day23.svg)](https://tryhackme.com/room/adventofcyber2)
 
 The Volume Shadow Copy Service (VSS) is handling the creation, and management of shadow copies/snapshots of the data backed up. 
