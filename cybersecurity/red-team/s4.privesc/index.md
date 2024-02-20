@@ -270,6 +270,26 @@ PS> .\LaZagne.exe all
 
 <hr class="sep-both">
 
+## Pass-the-xxx
+
+<div class="row row-cols-lg-2"><div>
+
+#### Pass-the-hash
+
+There are some scenarios in which we got hold of a hash, but haven't managed to crack it. We may try to use the hash.
+
+* Legacy systems using NTLM instead of Kerberos <small>(or alternatives)</small> may be vulnerable as hashes are not salted and may be reused
+
+```shell!
+$ evil-winrm -i IP -u username -H "hash" # WinRM protocol
+```
+
+We can use the popular [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md) tool.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
