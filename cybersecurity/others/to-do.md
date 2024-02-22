@@ -238,14 +238,12 @@ https://tryhackme.com/room/retro (blaster...)
 * interactsh (✈️) <small>(rogue server)</small>
 * naabu (🏝) <small>(network scanner)</small>
 * nuclei (🏝💥) <small>(web application scanner)</small>
-* subfinder (🏝) <small>(subdomains enumeration)</small>
 * dnsx (🏝) <small>(dns enumeration)</small>
 * bettercap (💥) <small>(sniffing, MITM)</small>
 * evilgrade (💥✈️) <small>(exploiting update systems, MITM)</small>
 * CodeSec (🏝💥) <small>(web vulnerability scanner)</small>
 * [venom](https://github.com/ovh/venom) (🔎🏝💥🔑✈️) <small>(payloads? -h/-c/-u/-p/-s, scan/crawl/portscan)</small>
 * [**Burp Collaborator client**](https://portswigger.net/burp/documentation/desktop/tools/collaborator-client) (🃏) <small>(server for SSRF/XXE/...)</small>
-* [**fierce**](https://github.com/mschwager/fierce) (🏝) <small>(DNS)</small>
 * recon-ng (🔎) <small>(reconnaissance framework)</small>
 * Archive.is (🔎) <small>(web archive)</small>
 * CommonCrawl (🔎) <small>(web crawler)</small>
@@ -256,7 +254,6 @@ https://tryhackme.com/room/retro (blaster...)
 * **Pipl** (🔎) <small>(people search engines)</small>
 * [awesome-osint](https://github.com/jivoi/awesome-osint) (🔎) <small>(12.1k ⭐, list of tools)</small>
 * [OSINT-Tools](https://github.com/mgp25/OSINT-Tools) (🔎) <small>(list of tools)</small>
-* [**Sublist3r**](https://github.com/aboul3la/Sublist3r)  (🏝) <small>(8.2k ⭐, subdomains)</small>
 * Social Mapper (🔎🏝) <small>(socmint)</small>
 * StalkScan (🔎) <small>(facebook recon)</small>
 * [**SpiderFoot**](https://github.com/smicallef/spiderfoot)  (🔎🏝✈️) <small>(9.4k ⭐, Automated OSINT)</small>

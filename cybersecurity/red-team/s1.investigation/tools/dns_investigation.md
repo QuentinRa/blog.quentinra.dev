@@ -46,4 +46,12 @@ Stuff that I found, but never read/used yet.
 * [virus total domain details](https://www.virustotal.com/gui/domain/example.com/details) (+Relations tab)
 * [domain.glass](https://domain.glass/)
 </div><div>
+
+* [Sublist3r](https://github.com/aboul3la/Sublist3r)
+* [subfinder](https://github.com/projectdiscovery/subfinder)
+
+```ps
+$ sudo apt install subfinder
+$ subfinder -d example.com
+```
 </div></div>

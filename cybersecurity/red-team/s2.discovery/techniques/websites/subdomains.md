@@ -18,8 +18,9 @@ Common tools to find subdomains are:
 
 * [gobuster](/cybersecurity/red-team/tools/enumeration/web/gobuster.md#subdomains-brute-force)
 * [ffuf](/cybersecurity/red-team/tools/enumeration/web/ffuf.md#subdomains-brute-force)
-* [DNSRecon](../tools/dnsrecon.md)
-* [dnsenum](../tools/dnsenum.md)
+* [DNSRecon](/cybersecurity/red-team/tools/enumeration/dns/dnsrecon.md)
+* [dnsenum](/cybersecurity/red-team/tools/enumeration/dns/dnsenum.md)
+* [subbrute](/cybersecurity/red-team/tools/enumeration/dns/subbrute.md)
 
 Common wordlists are listed in [wordlists#subdomains](/cybersecurity/red-team/_knowledge/topics/wordlists.md#subdomains)
 </div></div>
