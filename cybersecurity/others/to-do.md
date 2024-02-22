@@ -1,5 +1,7 @@
 # 👻 To-do 👻
 
+To stuff to read: [ired.team](https://www.ired.team/).
+
 <div class="row row-cols-lg-2"><div>
 
 Stuff that I found, but never read/used yet. See also the [Blogs](/cybersecurity/_knowledge/index.md#blogs-) section.

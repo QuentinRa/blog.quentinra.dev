@@ -195,6 +195,7 @@ Some special cases of using john/hashcat along other tools.
 To crack the whole shadow file, you may use `unshadow`:
 
 ```shell!
+$ # hash format is $id$salt$hashed
 $ unshadow /path/to/passwd /path/to/shadow > hashes
 $ john hashes --format=sha512crypt --wordlist=wordlist
 $ hashcat -m 1800 -a 0 hashes wordlist

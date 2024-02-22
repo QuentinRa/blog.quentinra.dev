@@ -31,6 +31,7 @@ $ curl --proxy socks4a://localhost:9050 [...]
 * The `proxychains` wrapper:
 
 ```ps
+$ cat /etc/proxychains.conf
 $ proxychains [Some command]
 $ proxychains -q [Some command]
 ```

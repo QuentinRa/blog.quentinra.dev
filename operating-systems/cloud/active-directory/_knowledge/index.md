@@ -538,6 +538,7 @@ $ realm list # see also: sssd, winbind
 $ export KRB5CCNAME=FILE:/tmp/krb5cc_xxx_yyy
 $ export KRB5CCNAME=FILE:/var/lib/sss/db/ccache_XXX.YYY
 $ klist # information about the current ticket
+$ impacket-ticketConverter xxx yyy.kirbi # from ccache to kirbi
 ```
 
 ☠️ We can use someone else's ticket as long as we got `rw` on it.

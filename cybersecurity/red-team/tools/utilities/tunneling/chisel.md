@@ -22,5 +22,6 @@ Using the configuration below, `http://localhost:8080` on Kali will show the web
 
 ```ps
 $ ./chisel client host_ip:port_a R:8080:localhost:80
+$ ./chisel client host_ip:port_a R:socks
 ```
 </div></div>

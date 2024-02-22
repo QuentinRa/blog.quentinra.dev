@@ -29,6 +29,13 @@ TLDR
 * 2FA for admins
 * Disable default accounts/change default usernames
 * Integration with AD can make it easier
+
+[![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+
+See also: KeePass, and Security#PM.
+
+* Dashlane, Keeper, NordPass, RoboForm, KWalletManager, Pleasant Password Server, Password Safe
+* [passwordmonster](https://www.passwordmonster.com/) (PMS)
 </div><div>
 
 IAM
@@ -47,7 +54,8 @@ Others
   * Add strong authentication (two-factor/MFA)
   * [yubico](https://www.yubico.com/)
   * Google Passkeys / Windows Hello / iCloud Passkeys
-  * Authy, Google auth, YubiKey OTP, Duo Security, FIDO2
+  * Authy, Google auth, YubiKey OTP/TOPT, Duo Security, FIDO2
+  * Passwordless (Auth0, Okta, Ping Identity)
   * Something you know, have, are
   *  For root/administrator accounts, the password should be updated regularly, and its usage should be justified.
 * [Username policy](https://en.wikipedia.org/wiki/Wikipedia:Username_policy#Inappropriate_usernames)
