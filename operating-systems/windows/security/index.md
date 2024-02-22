@@ -153,7 +153,7 @@ $ hashcat -m 22100 myhash wordlist
 
 <div class="row row-cols-lg-2"><div>
 
-#### Credentials Gathering (Static)
+#### Dump Credentials From The SAM Database
 
 [![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
@@ -173,11 +173,17 @@ $ impacket-secretsdump -sam sam.hive -security security.hive -system system.hive
 ```
 </div><div>
 
-#### Credential Hunting (Dynamic)
+#### Dump Credentials From The Credential Manager 
 
 [![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
-You can also dump credentials saved in process memory. There are two methods: dumping the LSA process and analyzing it on Linux OR dumping and analyzing the result on Windows.
+Windows has a feature called [credential manager](https://learn.microsoft.com/en-us/windows-server/security/windows-authentication/credentials-processes-in-windows-authentication) used by apps to store credentials. Each user has one. It location is often `%appdata%\Local\Microsoft\[Vault|Credentials]\`. It is accessed from the LSASS process that contains the 'master key.'
+
+##### Dump using Mimikatz
+
+Refer to the [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md) notes for usage. See also: [pass-the-xxx](/cybersecurity/red-team/s4.privesc/index.md#pass-the-xxx).
+
+##### Dump and analyze it on Linux with pypykatz
 
 * **Dump LSA Process Memory** <small>(Admin Shell Required/No Admin for TM?)</small>
 
