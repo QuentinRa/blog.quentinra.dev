@@ -9,6 +9,7 @@ While this tool is not maintained anymore, it's faster than alternative tools su
 ```shell!
 $ sudo apt install crowbar
 $ crowbar -b rdp -s IP/32 -u username -C password.list -v -n 64
+$ crowbar -b rdp -s IP/32 -U users.lst -C password.list -v -n 64
 $ cat crowbar.out # displays valid credentials found
 ```
 </div><div>

