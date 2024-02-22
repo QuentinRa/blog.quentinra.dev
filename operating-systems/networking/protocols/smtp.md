@@ -43,17 +43,13 @@ SMTP also has the commands `VRFY` to check if a user exists, and `EXPN` to see t
 
 <div class="row row-cols-lg-2"><div>
 
-SMTP credentials, if compromised, may have been reused.
+#### Enumeration
 
 * Metasploit
 
 ```shell!
 msf6> use auxiliary/scanner/smtp/smtp_version # version
-msf6> use auxiliary/scanner/smtp/smtp_enum # users...
 ```
-
-📚 Metasploit is more reliable as it is able to find users even when `smtp-user-enum` fails to do so.
-</div><div>
 
 * Dig info using nmap
 
@@ -62,12 +58,40 @@ $ nmap IP -p 25,465 --script "*smtp*"
 $ nmap IP -p 25,465 --script smtp-open-relay
 ```
 
-* Using `smtp-user-enum` <small>(not always working, code 252, [doc](https://www.kali.org/tools/smtp-user-enum/))</small>
+#### Foothold
+
+[![attacking_common_services](../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
+
+* We can use [Metasploit](/cybersecurity/red-team/tools/frameworks/metasploit/index.md), which is quite reliable
+
+```shell!
+msf6> use auxiliary/scanner/smtp/smtp_enum # users...
+```
+
+* We can use `smtp-user-enum` which supports 3 methods: `VRFY` <small>(not always working, code 252, [doc](https://www.kali.org/tools/smtp-user-enum/))</small>, `RCPT` <small>(needs -D)</small> and `EXPN`
 
 ```shell!
 $ sudo apt install smtp-user-enum
 $ smtp-user-enum -M VRFY -u root -t IP
 $ smtp-user-enum -M VRFY -U wordlist.txt -t IP
+```
+</div><div>
+
+#### Well-known CVEs
+
+* **OpenSMTPD 6.6.2**: unauthenticated RCE. [CVE-2020-7247](https://nvd.nist.gov/vuln/detail/CVE-2020-7247).
+
+#### Additional Notes
+
+[![attacking_common_services](../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
+
+* [o365spray](https://github.com/0xZDH/o365spray) can be used to brute force usernames and passwords of Microsoft Office 365 accounts.
+
+```
+$ git clone https://github.com/0xZDH/o365spray
+$ cd o365spray
+$ python3 o365spray.py --validate --domain xxx.yyy # valid?
+$ python3 o365spray.py --enum -U users.txt --domain xxx.yyy
 ```
 </div></div>
 

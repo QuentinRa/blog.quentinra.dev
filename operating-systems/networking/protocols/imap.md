@@ -41,7 +41,9 @@ a LOGOUT            # logout
 
 <div class="row row-cols-lg-2"><div>
 
-You may try to use [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md):
+#### Foothold
+
+* You may try to use [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md):
 
 ```ps
 $ hydra -L /path/to/users.lst -P /path/to/pass.lst imap://IP
