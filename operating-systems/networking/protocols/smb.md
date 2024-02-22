@@ -94,7 +94,7 @@ PS> net use s: \\IP\share_name /user:username password
 
 #### Enumeration
 
-* Using nmap you can try to:
+* Using [nmap](/cybersecurity/red-team/tools/scanners/ports/nmap.md) you can try to:
 
 ```ps
 # find users and shares

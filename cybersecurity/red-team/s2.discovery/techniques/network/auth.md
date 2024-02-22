@@ -22,7 +22,7 @@ We often use one of these tools:
 * [Crowbar](/cybersecurity/red-team/tools/cracking/auth/crowbar.md)
 * ncrack
 * patator
-* medusa
+* [medusa](/cybersecurity/red-team/tools/cracking/auth/medusa.md)
 
 Look at [wordlists#accounts](/cybersecurity/red-team/_knowledge/topics/wordlists.md#accounts) to find handy wordlists.
 </div><div>

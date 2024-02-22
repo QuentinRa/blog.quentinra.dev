@@ -79,6 +79,22 @@ FTP may be used by hackers to find interesting files.  Remember to check for hid
 
 <div class="row row-cols-lg-2"><div>
 
+#### Enumeration
+
+[![attacking_common_services](../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
+
+* We can use [nmap](/cybersecurity/red-team/tools/scanners/ports/nmap.md) to run basic scripts
+
+```shell!
+$ nmap -sC -sV -p 21 IP
+```
+
+* We may be able to use FTP bounce to scan for ports
+
+```shell!
+$ nmap [...] -b ftp:username:password@IP INTERNAL_IP
+```
+
 #### Foothold
 
 [![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
@@ -109,6 +125,8 @@ $ hydra -L user.list -P password.list ftp://IP -V -f
 * **ProFTPD 1.3.5**: users could move files from a non-mounted path to the mounted path. You could steal an id_rsa for instance.
 
 * **vsFTPd 2.3.4**: has a backdoor as per [CVE-2011-2523](https://nvd.nist.gov/vuln/detail/CVE-2011-2523).
+
+* **CoreFTP 727** ([ref](https://nvd.nist.gov/vuln/detail/CVE-2022-22836)): can use PUT to arbitrarily upload files
 </div></div>
 
 <hr class="sep-both">
