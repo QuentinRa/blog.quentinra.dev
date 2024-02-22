@@ -86,10 +86,11 @@ Given the FQDN `www.example.com`, `www` is the hostname, while `example.com` is 
 
 <hr class="sep-both">
 
-## DNS Internals
+## DNS Zones & Zone Transfer
 
 [![dnsenumerationusingpython](../../../cybersecurity/_badges/htb/dnsenumerationusingpython.svg)](https://academy.hackthebox.com/course/preview/dns-enumeration-using-python)
 [![web_information_gathering](../../../cybersecurity/_badges/htb/web_information_gathering.svg)](https://academy.hackthebox.com/course/preview/information-gathering---web-edition)
+[![attacking_common_services](../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -137,34 +138,6 @@ for nameserver in resolver.nameservers:
         print(f'{record.to_text()}.{domain}')
 ```
 </details>
-</div></div>
-
-<hr class="sep-both">
-
-## DNS vulnerabilities ☠️
-
-<div class="row row-cols-lg-2"><div>
-
-* **Open DNS resolvers** <small>(DNS allowing everyone to poll data)</small>
-
-👉 An attacker can use them to amplify DDoS attacks. 💥 DDoS ➡️ Configure DNS to not respond to everyone, use rate-limiting.
-
-* **Stealthy DNS attacks**
-
-👉 An attacker attempt to secretly alter a DNS records <small>(ex: redirect to a malicious site)</small> ➡️ See DNSSEC.
-
-* **DNS cloaking attacks**
-
-👉 An attacker create malicious subdomains to a compromised domain ➡️ Monitor unauthorized DNS changes, DNS pinning...
-</div><div>
-
-* **DNS Cache poisoning**
-
-👉 An attacker tries to send a reply to a DNS query before the DNS nameservers. The hacker much match the correct timing <small>(caching...)</small> and the correct query ID, which is relatively complicated. 💥 See the Kaminsky Cache poisoning attack (2008).
-
-* **DNS tunneling attacks**
-
-👉 Use the DNS protocol to send malicious payload in DNS query to bypass firewalls/... ➡️ DNS firewalls...
 </div></div>
 
 <hr class="sep-both">
@@ -279,6 +252,46 @@ $ sudo sh -c 'echo "SOME_IP my.example.com" >> /etc/hosts'
 </div><div>
 
 The file `/etc/resolv.conf` is used to determine which nameserver is used to resolve domains, along other settings.
+</div></div>
+
+<hr class="sep-both">
+
+## DNS Pentester Notes ☠️
+
+<div class="row row-cols-lg-2"><div>
+
+#### Enumeration
+
+Refer to [DNS investigation](/cybersecurity/red-team/s1.investigation/tools/dns_investigation.md) to find targets.
+
+Refer to [Subdomains](/cybersecurity/red-team/s2.discovery/techniques/websites/subdomains.md)/[vhosts](/cybersecurity/red-team/s2.discovery/techniques/websites/vhosts.md) to look for hidden subdomains.
+
+#### Exploitation
+
+* **Domain Takeover**: an existing record points to a deleted domain. If the hackers can purchase it, then may perform social engineering attacks <small>(or more advanced attacks)</small>. [can-i-take-over-xyz](https://github.com/EdOverflow/can-i-take-over-xyz) <small>(4.3k ⭐)</small>
+</div><div>
+
+#### Well-Known Attacks
+
+* **Open DNS resolvers** <small>(DNS allowing everyone to poll data)</small>
+
+👉 An attacker can use them to amplify DDoS attacks. 💥 DDoS ➡️ Configure DNS to not respond to everyone, use rate-limiting.
+
+* **Stealthy DNS attacks**
+
+👉 An attacker attempt to secretly alter a DNS records <small>(ex: redirect to a malicious site)</small> ➡️ See DNSSEC.
+
+* **DNS cloaking attacks**
+
+👉 An attacker create malicious subdomains to a compromised domain ➡️ Monitor unauthorized DNS changes, DNS pinning...
+
+* **DNS Cache poisoning**/**DNS Spoofing**
+
+👉 An attacker tries to send a reply to a DNS query before the DNS nameservers. The hacker much match the correct timing <small>(caching...)</small> and the correct query ID, which is relatively complicated. 💥 See the Kaminsky Cache poisoning attack (2008).
+
+* **DNS tunneling attacks**
+
+👉 Use the DNS protocol to send malicious payload in DNS query to bypass firewalls/... ➡️ DNS firewalls...
 </div></div>
 
 <hr class="sep-both">
