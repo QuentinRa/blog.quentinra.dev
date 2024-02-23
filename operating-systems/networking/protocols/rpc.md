@@ -25,10 +25,12 @@ $ rpcinfo IP
 #### RPC SMB Footprinting
 
 [![footprinting](../../../cybersecurity/_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
+[![attacking_common_services](../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
 
 If `msrpc` is running <small>(often on port 135)</small>, we may be able to exploit it:
 
 ```shell!
+$ rpcclient -U "%" IP
 $ rpcclient -U "" --password "" IP
 client> srvinfo # SMB Server Information
 client> netshareenumall # SMB Shares + Local Path
@@ -43,6 +45,8 @@ We can also use [samrdump](tools/impacket.md#samrdump) to list users. If no user
 ```ps
 $ for i in $(seq 500 1100);do rpcclient [...] -c "queryuser 0x$(printf '%x\n' $i)" | grep "User Name\|user_rid\|group_rid" && echo "";done
 ```
+
+👻 Refer to this [cheatsheet from SANS](https://www.willhackforsushi.com/sec504/SMB-Access-from-Linux.pdf).
 </div><div>
 </div></div>
 

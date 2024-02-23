@@ -16,4 +16,6 @@ Example usage:
 ```ps
 $ crackmapexec smb IP --shares -u 'username' -p 'password'
 ```
+
+Please refer to [nxc](nxc.md).
 </div></div>

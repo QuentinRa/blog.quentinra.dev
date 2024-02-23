@@ -22,3 +22,17 @@ $ nxc smb IP --local-auth -u 'xxx' -p 'yyy' --sam
 $ nxc smb IP -u 'xxx' -d . -H hash -x whoami
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* `--continue-on-success`
+* `--local-auth`: non-domain joined
+</div><div>
+
+</div></div>

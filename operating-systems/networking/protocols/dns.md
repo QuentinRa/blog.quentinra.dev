@@ -269,6 +269,12 @@ Refer to [Subdomains](/cybersecurity/red-team/s2.discovery/techniques/websites/s
 #### Exploitation
 
 * **Domain Takeover**: an existing record points to a deleted domain. If the hackers can purchase it, then may perform social engineering attacks <small>(or more advanced attacks)</small>. [can-i-take-over-xyz](https://github.com/EdOverflow/can-i-take-over-xyz) <small>(4.3k ⭐)</small>
+
+* You can use [onectf axfr](https://github.com/QuentinRa/onectf/blob/main/docs/axfr.md) <small>(0.0k ⭐)</small> to find hidden subdomains accepting zone transfer. It's useful when a subdomain has no public records which in turn makes every tool miss it.
+
+```ps
+$ onectf axfr -D xxx.yyy -r IP -w wordlist
+```
 </div><div>
 
 #### Well-Known Attacks

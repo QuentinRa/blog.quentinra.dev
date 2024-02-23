@@ -94,6 +94,8 @@ PS> net use s: \\IP\share_name /user:username password
 
 #### Enumeration
 
+[![attacking_common_services](../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
+
 * Using [nmap](/cybersecurity/red-team/tools/scanners/ports/nmap.md) you can try to:
 
 ```ps
@@ -110,8 +112,9 @@ $ nmap -p 139,445 --script "*smb*" IP
 #### FootHold
 
 [![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![attacking_common_services](../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
 
-* Try `Anonymous` user with no password (`-N`/`-no-pass`)
+* Try `Anonymous` user with no password <small>(`-N` or `-no-pass`, a.k.a. no session)</small>
 
 ```ps
 # list shares
