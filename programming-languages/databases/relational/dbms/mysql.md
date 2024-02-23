@@ -52,5 +52,12 @@ Stuff that I found, but never read/used yet.
 
 * `service mysql status`: check if service started
 * nmap `mysql-*`
-</div><div>`
+</div><div>
+
+MySQL custom commands
+
+* `select * from mysql.func` (if empty no user defined functions)
+* `sys_exec` function
+* `select @@plugin_dir;` (if writable, we may inject a shellcode)
+* mysql exploitdb UDF exploit
 </div></div>

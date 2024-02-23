@@ -22,6 +22,8 @@ use db_name;                      -- select a database
 select table_name from information_schema.tables where table_type = 'base table';
 -- list the columns of the table "table_name_here"
 select column_name, data_type from information_schema.columns where table_name = 'table_name_here';
+-- list users?
+SELECT name, password,sysadmin FROM syslogins
 ```
 </div></div>
 
@@ -149,6 +151,8 @@ REVERT # cancel impersonation
 * User Defined Functions in C/C++ ([ex](https://github.com/mysqludf/lib_mysqludf_sys))
 
 #### Lateral Movement
+
+[![attacking_common_services](../../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
 
 The current server may be linked to other servers. If we compromise it, we may be able to run SQL queries on linked servers.
 
