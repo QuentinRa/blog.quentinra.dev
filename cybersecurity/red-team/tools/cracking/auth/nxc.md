@@ -33,6 +33,12 @@ Stuff that I found, but never read/used yet.
 
 * `--continue-on-success`
 * `--local-auth`: non-domain joined
+
+```shell!
+$ nxc smb 10.10.110.17 IP -u 'username' -p 'password' -x 'whoami' --exec-method smbexec
+$ nxc smb 10.10.110.17 IP -u 'username' -p 'password' -X 'whoami' --exec-method smbexec
+$ nxc smb 10.10.110.17 IP -u 'username' -p 'password' --loggedon-users
+```
 </div><div>
 
 </div></div>

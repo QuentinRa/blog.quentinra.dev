@@ -182,6 +182,8 @@ $ enum4linux-ng IP <options> -u 'username' -p 'password'
 [![blue](../../../cybersecurity/_badges/htb-p/blue.svg)](https://app.hackthebox.com/machines/Blue)
 
 A vulnerability in the SMB protocol allowing Remote Code Execution (RCE). It was discovered by the NSA and stolen by hackers.
+
+* [CVE-2020-0796](https://nvd.nist.gov/vuln/detail/CVE-2020-0796) - SMBGhost - Unauthenticated RCE
 </div></div>
 
 <hr class="sep-both">

