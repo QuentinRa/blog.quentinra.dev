@@ -171,13 +171,27 @@ Use [file transfer methods](/cybersecurity/red-team/_knowledge/topics/file_trans
 ```shell!
 $ impacket-secretsdump -sam sam.hive -security security.hive -system system.hive LOCAL
 ```
+
+#### Dump Credentials From The Credential Manager
+
+[![dpapi_extracting_passwords](../../../cybersecurity/_badges/hacktricks/windows_hardening/windows_local_privilege_escalation/dpapi_extracting_passwords.svg)](https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation/dpapi-extracting-passwords)
+
+Windows has a feature called [credential manager](https://learn.microsoft.com/en-us/windows-server/security/windows-authentication/credentials-processes-in-windows-authentication) used by apps to store credentials. Each user has one usually stored in `%appdata%\Local\Microsoft\Credentials\`.
+
+It can be accessed from the GUI, or using the command line:
+
+```ps
+PS> vaultcmd /list
+PS> vaultcmd /listcreds:"Web Credentials" /all
+PS> vaultcmd /listcreds:"Windows Credentials" /all
+```
 </div><div>
 
-#### Dump Credentials From The Credential Manager 
+#### Dump Credentials From LSASS process
 
 [![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
-Windows has a feature called [credential manager](https://learn.microsoft.com/en-us/windows-server/security/windows-authentication/credentials-processes-in-windows-authentication) used by apps to store credentials. Each user has one. It location is often `%appdata%\Local\Microsoft\[Vault|Credentials]\`. It is accessed from the LSASS process that contains the 'master key.'
+The LSASS process that contains the credential manager masterkey  for the logged user. It can be used to decrypt credentials for applications that use it. It also contains tickets, and [wDIGEST](https://learn.microsoft.com/en-us/windows/win32/secauthn/microsoft-digest-authentication) cleartext credentials.
 
 ##### Dump using Mimikatz
 
@@ -203,8 +217,6 @@ $ nxc smb IP --local-auth -u xxx -p yyy --lsa # remote dump
 ```
 
 Lastly, you can also open the task manager, right-click on the LSAP process and select 'Create dump file.'
-
-📚 The LSASS memory contains the DPAPI masterkey for the logged user. It can be used to decrypt credentials for applications that use it. It also contains tickets, and [wDIGEST](https://learn.microsoft.com/en-us/windows/win32/secauthn/microsoft-digest-authentication) cleartext credentials.
 
 * **Analyzing LSA Process Dump** on Linux using [pypykatz](https://github.com/skelsec/pypykatz) <small>(2.6k ⭐)</small>
 
