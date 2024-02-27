@@ -157,7 +157,7 @@ $ hydra -L user.list -P password.list smb://IP -V -f
 $ nxc smb IP -u username -p password.list
 ```
 
-If you got some error like `invalid reply from target`, it may indicate that the tool doesn't support this SMB dialect. Try metasploit:
+* You can also use [metasploit](/cybersecurity/red-team/tools/frameworks/metasploit/index.md)
 
 ```shell!
 $ msfconsole -q

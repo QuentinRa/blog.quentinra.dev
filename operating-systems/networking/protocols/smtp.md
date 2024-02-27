@@ -68,12 +68,19 @@ $ nmap IP -p 25,465 --script smtp-open-relay
 msf6> use auxiliary/scanner/smtp/smtp_enum # users...
 ```
 
-* We can use `smtp-user-enum` which supports 3 methods: `VRFY` <small>(not always working, code 252, [doc](https://www.kali.org/tools/smtp-user-enum/))</small>, `RCPT` <small>(needs -D)</small> and `EXPN`
+* We can use `smtp-user-enum` which supports 3 methods: `VRFY` <small>(not always working, code 252, [doc](https://www.kali.org/tools/smtp-user-enum/))</small>, `RCPT` <small>(along with -D)</small> and `EXPN`
 
 ```shell!
 $ sudo apt install smtp-user-enum
 $ smtp-user-enum -M VRFY -u root -t IP
-$ smtp-user-enum -M VRFY -U wordlist.txt -t IP
+$ smtp-user-enum -M VRFY -U users.lst -t IP
+$ smtp-user-enum -M RCPT -U users.lst -D example.com -t IP
+```
+
+* The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md).
+
+```shell!
+$ hydra -l username@example.com -P passwords.lst smtp://IP -v
 ```
 </div><div>
 
