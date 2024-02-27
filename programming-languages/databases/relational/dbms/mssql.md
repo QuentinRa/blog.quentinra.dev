@@ -22,8 +22,9 @@ use db_name;                      -- select a database
 select table_name from information_schema.tables where table_type = 'base table';
 -- list the columns of the table "table_name_here"
 select column_name, data_type from information_schema.columns where table_name = 'table_name_here';
--- list users?
+-- list users (1), and sysadmins (2)
 SELECT name, password,sysadmin FROM syslogins
+SELECT name FROM sys.server_principals WHERE IS_SRVROLEMEMBER('sysadmin', name) = 1;
 ```
 </div></div>
 
@@ -58,6 +59,8 @@ You can use [sqlsh](https://en.wikipedia.org/wiki/Sqsh) on Linux.
 ```shell!
 $ sqsh -S IP -U 'username' -P 'password' -h
 $ sqsh -S IP -U '.\\username' -P 'password' -h
+1> some query
+2> go
 ```
 
 #### Linux client - impacket
@@ -115,9 +118,9 @@ mfs6> run
 * [`xp_cmdshell`](https://learn.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/xp-cmdshell-transact-sql?view=sql-server-ver16) can be used to run commands. It's disabled by default. The command is runs with the same permissions as the server.
 
 ```sql!
--- EXECUTE sp_configure 'show advanced options', 1
+-- [EXECUTE] sp_configure 'show advanced options', 1
 -- RECONFIGURE
--- EXECUTE sp_configure 'xp_cmdshell', 1
+-- [EXECUTE] sp_configure 'xp_cmdshell', 1
 -- RECONFIGURE
 xp_cmdshell 'whoami'
 ```
@@ -165,6 +168,7 @@ SELECT srvname, isremote FROM sysservers
 * Execute a SQL Query on a Linked Server
 
 ```sql!
+EXEC('select @@servername, @@version, system_user, is_srvrolemember(''sysadmin'')') AT [your_target_here]
 EXECUTE('select @@servername, @@version, system_user, is_srvrolemember(''sysadmin'')') AT [your_target_here]
 ```
 
