@@ -14,36 +14,32 @@ Server Message Block (SMB) is a protocol used for Windows file exchange system. 
 
 It's mostly used to share files internally by connecting computers, printers... to a shared folder called **share** 📂 ([def](/operating-systems/windows/_knowledge/index.md#shared-folders)).
 
-For any commands, you can use:
+
+For any `smbclient` commands, you can use:
 
 ```ps
-$ smbclient [...] -U username # specify username
-$ smbclient [...] -p port # specify port
+$ smbclient -U username [...] # specify username
+$ smbclient -p port [...]     # specify port
 ```
 
 **List shares**
 
 ```ps
-$ smbclient -L IP [...]
-# Sharename       Type      Comment
+$ smbclient [...] -L IP
 PS> net view \\IP
 PS> net share
 ```
+</div><div>
 
 **Connect to a share**
 
-```ps
+```shell!
 $ smbclient //IP/share_name [...]
 $ smbclient smb://IP/share_name [...] # same
+$ impacket-smbclient 'username':'password'@IP
 ```
 
-➡️ You can also enter `smb://[...]` in a file explorer search bar.
-
-➡️ You can also use [impacket-client](tools/impacket.md#smb-client) if smbclient doesn't work.
-</div><div>
-
-
-Once connected, you can use these:
+**Common commands**
 
 ```shell!
 smb> help # list every command
@@ -56,18 +52,33 @@ smb> put /local/path /remote/path # upload
 smb> get /remote/path /local/path # download
 smb> exit # there is also "q" and "quit"
 ```
+</div></div>
 
-Download everything in a share
+<hr class="sep-both">
+
+## Common SMB Usages
+
+<div class="row row-cols-lg-2"><div>
+
+#### Dump everything in a share
+
+You can use `smbget`:
 
 ```ps
-$ smbget -R //IP/share_name
+$ smbget --recursive smb://username@IP/share_name
+$ smbget --recursive smb://username:password@IP/share_name
 ```
 
-**Create a SMB server**
+#### Linux — Set up a SMB server
 
 You can use [impacket](tools/impacket.md) to create a SMB server on your machine using a script. But, when the script is terminated, the server is terminated too.
 
-**Copy a file from/to a SMB share**
+📚 This is useful to transfer files between Windows and Linux.
+</div><div>
+
+#### Windows Share Access
+
+* You can use `copy` to download/upload files. You must mount the share if guest access is not allowed.
 
 ```shell!
 PS> # use current user credentials to log in
@@ -75,20 +86,20 @@ PS> copy \\IP\share\file # Download
 PS> copy file \\IP\share # Upload
 ```
 
-You can mount the share as a network drive (`s:`) if you need to use different credentials. This will make `copy` use these credentials.
+* You can mount a share as a network drive (`s:`).
 
 ```shell!
 PS> net use s: \\IP\share_name /user:username password
+PS> copy \\IP\share\file # no authentication
 ```
+
+* You can access a share from the file explorer using `smb://[...]`
 </div></div>
+
 
 <hr class="sep-both">
 
 ## SMB Pentester Notes ☠️
-
-[![kenobi](../../../cybersecurity/_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
-[![lame](../../../cybersecurity/_badges/htb-p/lame.svg)](https://app.hackthebox.com/machines/Lame)
-[![legacy](../../../cybersecurity/_badges/htb-p/legacy.svg)](https://app.hackthebox.com/machines/Legacy)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -113,6 +124,7 @@ $ nmap -p 139,445 --script "*smb*" IP
 
 [![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![attacking_common_services](../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
+[![kenobi](../../../cybersecurity/_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
 
 * Try `Anonymous` user with no password <small>(`-N` or `-no-pass`, a.k.a. no session)</small>
 
@@ -124,6 +136,8 @@ $ smbclient //IP/share_name -U Anonymous -N
 # test Anonymous share
 $ smbclient //IP//Anonymous -U Anonymous -N
 ```
+
+You may have to add `--option='client min protocol=NT1'` <small>(old target)</small>.
 
 * The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md).
 
@@ -184,6 +198,14 @@ $ enum4linux-ng IP <options> -u 'username' -p 'password'
 A vulnerability in the SMB protocol allowing Remote Code Execution (RCE). It was discovered by the NSA and stolen by hackers.
 
 * [CVE-2020-0796](https://nvd.nist.gov/vuln/detail/CVE-2020-0796) - SMBGhost - Unauthenticated RCE
+
+* [CVE-2008-4250](https://nvd.nist.gov/vuln/detail/CVE-2008-4250) - Unauthenticated RCE
+
+[![legacy](../../../cybersecurity/_badges/htb-p/legacy.svg)](https://app.hackthebox.com/machines/Legacy)
+
+* Samba username map script - Command Execution
+
+[![lame](../../../cybersecurity/_badges/htb-p/lame.svg)](https://app.hackthebox.com/machines/Lame)
 </div></div>
 
 <hr class="sep-both">
