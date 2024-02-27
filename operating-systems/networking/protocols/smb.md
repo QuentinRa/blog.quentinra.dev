@@ -39,11 +39,13 @@ $ smbclient smb://IP/share_name [...] # same
 $ impacket-smbclient 'username':'password'@IP
 ```
 
+You may have to add `--option='client min protocol=NT1'` <small>(old target)</small>.
+
 **Common commands**
 
 ```shell!
-smb> help # list every command
-smb> pwd # get current folder
+smb> help      # list every command
+smb> pwd       # get the current folder
 smb> ls folder # list files in folder
 smb> cd folder # move to folder
 smb> stat file # show information
@@ -52,6 +54,8 @@ smb> put /local/path /remote/path # upload
 smb> get /remote/path /local/path # download
 smb> exit # there is also "q" and "quit"
 ```
+
+⚠️ Don't forget to look for hidden files.
 </div></div>
 
 <hr class="sep-both">
@@ -78,7 +82,7 @@ You can use [impacket](tools/impacket.md) to create a SMB server on your machine
 
 #### Windows Share Access
 
-* You can use `copy` to download/upload files. You must mount the share if guest access is not allowed.
+* You can use `copy` to download/upload files.
 
 ```shell!
 PS> # use current user credentials to log in
@@ -86,14 +90,23 @@ PS> copy \\IP\share\file # Download
 PS> copy file \\IP\share # Upload
 ```
 
-* You can mount a share as a network drive (`s:`).
+* You can mount a share as a network drive (`s:`). This allows you to access the share with custom credentials.
 
 ```shell!
-PS> net use s: \\IP\share_name /user:username password
-PS> copy \\IP\share\file # no authentication
+CMD> net use s: \\IP\share_name /user:username password
+```
+```ps
+PS> $credential = New-Object System.Management.Automation.PSCredential 'username', $(ConvertTo-SecureString 'password' -AsPlainText -Force)
+PS> New-PSDrive -Name "S" -Root "\\IP\share_name" -PSProvider "FileSystem" -Credential $credential
 ```
 
 * You can access a share from the file explorer using `smb://[...]`
+* You may use `dir` to list the contents of a share
+
+```ps
+$ dir \\wsl$
+$ dir s:\* /s /b
+```
 </div></div>
 
 
@@ -136,8 +149,6 @@ $ smbclient //IP/share_name -U Anonymous -N
 # test Anonymous share
 $ smbclient //IP//Anonymous -U Anonymous -N
 ```
-
-You may have to add `--option='client min protocol=NT1'` <small>(old target)</small>.
 
 * The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md).
 
