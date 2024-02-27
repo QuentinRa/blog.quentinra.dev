@@ -72,6 +72,8 @@ $ curl -k 'imaps://IP/INBOX;MAILINDEX=1' --user username:password
 
 #### Using evolution to fetch emails
 
+[![attacking_common_services](../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
+
 You can use [evolution](https://en.wikipedia.org/wiki/GNOME_Evolution) to fetch emails. It's a graphical mail client.
 
 ```ps

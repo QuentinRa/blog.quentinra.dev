@@ -52,6 +52,7 @@ Stuff that I found, but never read/used yet.
 
 * `service mysql status`: check if service started
 * nmap `mysql-*`
+* MySQL Workbench
 </div><div>
 
 MySQL custom commands

@@ -1,4 +1,6 @@
-#  Common Internet File System (CIFS) 
+#  Common Internet File System (CIFS)
+
+[![attacking_common_services](../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
 
 <div class="row row-cols-lg-2"><div>
 

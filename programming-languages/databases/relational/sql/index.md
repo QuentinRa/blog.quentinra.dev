@@ -14,6 +14,18 @@ WHERE username = 'admin';
 
 ➡️ You can put everything on one line. The semicolon (`;`) is optional for simple queries, but you should always use it.
 </div><div>
+
+**Where to Learn?** 🎓
+
+* [W3Schools/SQL](https://www.w3schools.com/sql/) <small>(⛪)</small>
+* [SQL.sh](https://sql.sh/) and [fxjollois](https://fxjollois.github.io/cours-sql/) <small>(French 🐔)</small>
+* [learnsql](https://learnsql.com/) <small>(👻)</small>
+
+<br>
+
+**Useful tools** 🐲
+
+* [dbeaver](https://github.com/dbeaver/dbeaver) <small>(36.1k ⭐)</small>: multi-database GUI client
 </div></div>
 
 <hr class="sep-both">
@@ -143,10 +155,12 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* [SQL.sh](https://sql.sh/) (french)
-* [fxjollois](https://fxjollois.github.io/cours-sql/) (french)
-* [angelique-renaud](https://www.angelique-renaud.com/bdd.php) (french)
-* [learnsql](https://learnsql.com/)
+```sql!
+SELECT now();
+SELECT DATE('2020-12-03');
+SELECT @@global.time_zone;
+```
+
 * ROLLBACK/COMMIT
 * UNION/INTERSECT/EXCEPT (same number of values in SELECT/NULL). ORDER, or LIMIT can only be applied on the whole request.
 </div><div>
@@ -175,10 +189,4 @@ A **schema** 🗃️ is a sort of namespace in which there are tables, and other
 
 A **domain** 🌍 refers to the values that an attribute can take. This is determined by the type, and the constraints on it.
 </details>
-
-```sql!
-SELECT now();
-SELECT DATE('2020-12-03');
-SELECT @@global.time_zone;
-```
 </div></div>
