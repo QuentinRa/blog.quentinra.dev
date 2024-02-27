@@ -108,6 +108,7 @@ There are more complex regexes if you want, such as [rt/96517](https://www.regex
 
 ## Analyze the javascript
 
+[![server_side_attacks](../../../../_badges/htb/server_side_attacks.svg)](https://academy.hackthebox.com/course/preview/server-side-attacks)
 [![walkinganapplication](../../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
 [![javascript_authentication](../../../../_badges/rootme/web_client/javascript_authentication.svg)](https://www.root-me.org/en/Challenges/Web-Client/Javascript-Authentication)
 [![javascript_authentication_2](../../../../_badges/rootme/web_client/javascript_authentication_2.svg)](https://www.root-me.org/en/Challenges/Web-Client/Javascript-Authentication-2)
@@ -116,6 +117,8 @@ There are more complex regexes if you want, such as [rt/96517](https://www.regex
 <div class="row row-cols-lg-2"><div>
 
 You may use the console debugger, after adding a breakpoint in the JavaScript, to analyze the javascript code, if needed.
+
+📚 Some developers might use well-known script name to hide their scripts such as `jquery.js`.
 
 ➡️ It's hard, so feel free to explore other techniques first.
 </div><div>

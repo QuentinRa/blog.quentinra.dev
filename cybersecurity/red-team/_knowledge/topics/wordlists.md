@@ -293,6 +293,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
+* [Auto_Wordlists](https://github.com/carlospolop/Auto_Wordlists)
 * [big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings) <small>(45.5k ⭐)</small>
 * [fuzzdb](https://github.com/fuzzdb-project/fuzzdb) <small>(7.8k ⭐, 2020 🪦)</small>
 * [username-anarchy](https://github.com/urbanadventurer/username-anarchy)
