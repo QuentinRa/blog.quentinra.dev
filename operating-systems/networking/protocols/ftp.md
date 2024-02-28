@@ -144,6 +144,13 @@ $ sudo apt install python3-pyftpdlib
 $ python3 -m pyftpdlib --port 21
 $ python3 -m pyftpdlib --port 21 --write
 ```
+
+You can use `twisted` 👻:
+
+```shell!
+$ sudo pip3 install twisted
+$ sudo python3 -m twisted ftp -p 21 -r .
+```
 </div><div>
 </div></div>
 

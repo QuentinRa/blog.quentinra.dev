@@ -102,7 +102,7 @@ Apache AJP is a wire protocol. It allows a web server such as Apache to talk to 
 
 While uncommon, if a tomcat website is behind a firewall, but the AJP port is exposed, we can use AJP to access the 'hidden' tomcat website.
 
-#### Exploitation
+#### AJP Exploitation
 
 [![server_side_attacks](../../../../../cybersecurity/_badges/htb/server_side_attacks.svg)](https://academy.hackthebox.com/course/preview/server-side-attacks)
 [![ajp](../../../../../cybersecurity/_badges/hacktricks/network_services_pentesting/ajp.svg)](https://book.hacktricks.xyz/network-services-pentesting/8009-pentesting-apache-jserv-protocol-ajp)
@@ -118,7 +118,7 @@ $ python tomcat.py --port 8009 "version" IP
 ```
 </div><div>
 
-#### Well-known CVEs
+#### AJP Well-known CVEs
 
 [![attacking_common_applications](../../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 

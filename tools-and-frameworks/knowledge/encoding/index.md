@@ -230,15 +230,26 @@ PS> [Convert]::ToBase64String((Get-Content -path "someFile" -Encoding byte))
 
 URL encoding, also known as percent-encoding, is an encoding mostly used in URLs and resources, to encode characters that have a special meaning in URLs.
 
+```ps
+$ echo "encode me" | jq -sRr @uri
+```
+
 👉 See also: [urlencoder](https://www.urlencoder.io/) or [url-encode-decode](https://www.url-encode-decode.com/).
 
 👉 [W3School URL Encoding Reference](https://www.w3schools.com/tags/ref_urlencode.ASP).
 </div><div>
 
-* Example of encoding `.`
-* Find the ASCII of `.`: `46`
+Example of encoding `.`
+
+* Find the ASCII of "`.`": `46`
 * Convert the value to hexadecimal: `2e`
 * Add `%` before the result: `%2e`
+
+Double URL encoding for `.`:
+
+* The encoding of `%` is `%25`
+* The encoding of `.` is `%2e`
+* The result: `urlencode(urlencode(.)) == urlencode(%2e) == %252e`
 </div></div>
 
 <hr class="sep-both">
