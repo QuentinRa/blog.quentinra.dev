@@ -81,6 +81,47 @@ $ curl --upload-file revshell.war -u 'username:password' "URL/manager/text/deplo
 
 [![attacking_common_applications](../../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 
+* [CVE-2019-0232](https://nvd.nist.gov/vuln/detail/CVE-2019-0232): on Windows host, if there is a cgi script and `enableCmdLineArguments` is was enabled <small>(not default!)</small>, it can be exploited to arbitrarily run commands. 
+
+Use `URL/xxx.bat?&dir` to execute `dir`. Use `+` instead of spaces. Use <code>\\</code> in paths. Don't forgot to URL encode them. If `PATH` is not set (`&set`), use the full path to a command <small>(e.g. `c:\windows\system32\whoami.exe`)</small>. You can use directions to create files <small>(e.g. `dir+>+output` to create 'output')</small>.
+</div></div>
+
+<hr class="sep-both">
+
+## Apache AJP
+
+[![server_side_attacks](../../../../../cybersecurity/_badges/htb/server_side_attacks.svg)](https://academy.hackthebox.com/course/preview/server-side-attacks)
+
+<div class="row row-cols-lg-2"><div>
+
+Apache AJP is a wire protocol. It allows a web server such as Apache to talk to tomcat. A few notes:
+
+* 🐲 It runs on port 8009/TCP <small>(by default)</small>
+* 🪦 It's not often exposed
+* 📚 We need to configure a webserver to communicate with it
+
+While uncommon, if a tomcat website is behind a firewall, but the AJP port is exposed, we can use AJP to access the 'hidden' tomcat website.
+
+#### Exploitation
+
+[![server_side_attacks](../../../../../cybersecurity/_badges/htb/server_side_attacks.svg)](https://academy.hackthebox.com/course/preview/server-side-attacks)
+[![ajp](../../../../../cybersecurity/_badges/hacktricks/network_services_pentesting/ajp.svg)](https://book.hacktricks.xyz/network-services-pentesting/8009-pentesting-apache-jserv-protocol-ajp)
+
+* We can use [nginx](/operating-systems/cloud/webservers/nginx/index.md) with `nginx_ajp_module`
+* We can use [Apache](/operating-systems/cloud/webservers/apache/index.md) with `proxy_ajp`
+* We can use [AJPy](https://github.com/hypn0s/AJPy) <small>(0.4k ⭐)</small>
+
+```
+$ git clone https://github.com/hypn0s/AJPy.git && cd AJPy
+$ python tomcat.py --port 8009 "version" IP
+<print tomcat manager version>
+```
+</div><div>
+
+#### Well-known CVEs
+
+[![attacking_common_applications](../../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+
 * [CVE-2020-1938](https://nvd.nist.gov/vuln/detail/CVE-2020-1938): unauthenticated LFI that can be used to read files in the webroot, such as `WEB-INF/web.xml` or `WEB-INF/cgi/xxx.bat`. Apache JServ which usually runs on port `8009` must be exposed.
 
 It can be exploited using metasploit:
@@ -90,14 +131,6 @@ msf6> use auxiliary/admin/http/tomcat_ghostcat
 ```
 
 The file `web.xml` contains the manager credentials if they were defined.
-
-<br>
-
-[![attacking_common_applications](../../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
-
-* [CVE-2019-0232](https://nvd.nist.gov/vuln/detail/CVE-2019-0232): on Windows host, if there is a cgi script and `enableCmdLineArguments` is was enabled <small>(not default!)</small>, it can be exploited to arbitrarily run commands. 
-
-Use `URL/xxx.bat?&dir` to execute `dir`. Use `+` instead of spaces. Use <code>\\</code> in paths. Don't forgot to URL encode them. If `PATH` is not set (`&set`), use the full path to a command <small>(e.g. `c:\windows\system32\whoami.exe`)</small>. You can use directions to create files <small>(e.g. `dir+>+output` to create 'output')</small>.
 </div></div>
 
 <hr class="sep-both">
