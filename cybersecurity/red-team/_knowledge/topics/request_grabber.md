@@ -30,6 +30,7 @@ For instance, we can use API Testing Platforms:
 
 #### Responder
 
+[![server_side_attacks](../../../_badges/htb/server_side_attacks.svg)](https://academy.hackthebox.com/course/preview/server-side-attacks)
 [![attacking_common_services](../../../_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
 [![return](../../../_badges/htb-p/return.svg)](https://app.hackthebox.com/machines/Return)
 
