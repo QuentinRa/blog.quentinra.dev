@@ -6,7 +6,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-Volatility is a popular free [memory forensics tool](/cybersecurity/blue-team/topics/forensics.md#memory-forensics). There is a deprecated [python2](https://github.com/volatilityfoundation/volatility) version <small>(which is hard to install, 6.8k ⭐)</small>, and there is a [python3](https://github.com/volatilityfoundation/volatility3) version <small>(2.1k ⭐, in-development)</small>.
+Volatility is a popular free [memory forensics tool](/cybersecurity/blue-team/topics/forensics.md). There is a deprecated [python2](https://github.com/volatilityfoundation/volatility) version <small>(which is hard to install, 6.8k ⭐)</small>, and there is a [python3](https://github.com/volatilityfoundation/volatility3) version <small>(2.1k ⭐, in-development)</small>.
 
 ```ps
 $ pipx install git+https://github.com/volatilityfoundation/volatility3

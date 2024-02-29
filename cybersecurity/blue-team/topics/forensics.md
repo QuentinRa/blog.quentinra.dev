@@ -32,19 +32,21 @@ These categories further involve tasks such as:
 #### Disk Forensics Tools
 
 [![introduction_to_digital_forensics](../../_badges/htb/introduction_to_digital_forensics.svg)](https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics)
+[![introduction_to_malware_analysis](../../_badges/htb/introduction_to_malware_analysis.svg)](https://academy.hackthebox.com/course/preview/introduction-to-malware-analysis)
 
 You can create an image of a disk using:
 
 * [FTK Imager](https://www.exterro.com/digital-forensics-software/ftk-imager) <small>(popular)</small>
 * [OSFClone](https://www.osforensics.com/tools/create-disk-images.html)
 * [dd/dcfldd](/cybersecurity/red-team/s4.privesc/linux/topics/drives.md)
+* [AFF4 Imager](https://github.com/Velocidex/c-aff4)
 * ...
-
-<br>
+</div><div>
 
 #### Memory Forensics Tools
 
 [![introduction_to_digital_forensics](../../_badges/htb/introduction_to_digital_forensics.svg)](https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics)
+[![introduction_to_malware_analysis](../../_badges/htb/introduction_to_malware_analysis.svg)](https://academy.hackthebox.com/course/preview/introduction-to-malware-analysis)
 [![bpvolatility](../../_badges/thm/bpvolatility.svg)](https://tryhackme.com/room/bpvolatility)
 
 To create a memory dump, you can use:
@@ -53,26 +55,13 @@ To create a memory dump, you can use:
 * [WinPmem](https://github.com/Velocidex/WinPmem) <small>(0.6k ⭐)</small>
 * [Redline](https://fireeye.market/apps/211364)
 * [FTK Imager](https://www.exterro.com/ftk-imager)
+* [memdump](https://www.kali.org/tools/memdump/)
+* [LiME](https://github.com/504ensicsLabs/LiME) <small>(1.6k ⭐)</small>
 * ...
 
 You can investigate a memory dump using:
 
 * [Volatility](../tools/forensics/volatility.md) is a well-known memory forensic tool.
-</div><div>
-
-#### Malware Analysis
-
-[![introduction_to_digital_forensics](../../_badges/htb/introduction_to_digital_forensics.svg)](https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics)
-
-You can use the following sources to find malware:
-
-* [theZoo](https://github.com/ytisf/theZoo) <small>(10.5k ⭐)</small>
-* [virusshare](https://virusshare.com/) <small>(👻)</small>
-* [hybrid-analysis](https://www.hybrid-analysis.com/file-collections) <small>(👻)</small>
-* [malware-traffic-analysis](https://malware-traffic-analysis.net/) <small>(👻)</small>
-* [app.any.run](https://app.any.run/) <small>(👻)</small>
-* [contagiodump](https://contagiodump.blogspot.com/) <small>(👻)</small>
-* [vx-underground](https://vx-underground.org/) <small>(👻)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -147,4 +136,38 @@ $ sudo SHELL=/bin/bash chroot p1
 ```
 
 The drive may be [encrypted using BitLocker](/operating-systems/windows/security/index.md#bitlocker-encrypted-drive).
+</div></div>
+
+<hr class="sep-both">
+
+## Malware Analysis
+
+[![introduction_to_digital_forensics](../../_badges/htb/introduction_to_digital_forensics.svg)](https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics)
+
+<div class="row row-cols-lg-2"><div>
+
+#### Malware Acquisition Tools
+
+You can use the following sources to find malware:
+
+* [theZoo](https://github.com/ytisf/theZoo) <small>(10.5k ⭐)</small>
+* [virusshare](https://virusshare.com/) <small>(👻)</small>
+* [hybrid-analysis](https://www.hybrid-analysis.com/file-collections) <small>(👻)</small>
+* [malware-traffic-analysis](https://malware-traffic-analysis.net/) <small>(👻)</small>
+* [app.any.run](https://app.any.run/) <small>(👻)</small>
+* [contagiodump](https://contagiodump.blogspot.com/) <small>(👻)</small>
+* [vx-underground](https://vx-underground.org/) <small>(👻)</small>
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [Arsenal Image Mounter](https://arsenalrecon.com/products/arsenal-image-mounter)
+</div><div>
 </div></div>
