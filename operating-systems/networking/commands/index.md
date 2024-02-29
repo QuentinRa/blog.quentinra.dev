@@ -314,23 +314,43 @@ CMD> tracert ip
 
 **Example** 🔥:
 
-Listen for ICMP requests passing by the interface `tun0`
+Listen for requests passing by the interface `tun0`
 
 ```ps
-$ sudo tcpdump ip proto \\icmp -i tun0
-$ sudo tcpdump -i tun0 host IP and IP
+$ sudo tcpdump -i tun0
 ```
+
+Common general options are:
+
+* `-D` : list interfaces
+* `-i interface` : listen to this interface
+* `-w /path/to/file.pcap`: write results to this file
+* `-l`: copy results in a buffer <small>(`XXX | tee file`)</small>
+* `-F`: read from a file
+* `-o`: no optimizations
+* `-v`, and `-vv`: show more, or even more verbosity
 </div><div>
 
-* `-i interface` : listen to this interface
+Common display options are:
+
 * `-e`: show the header of the request
 * `-n`: show names instead of addresses
-* `-l`: copy results in a buffer (`tcpdump -l | tee file`)
-* `-o`: no optimizations (listen take a lot of resources)
-* `-F`: read from a file
-* `-v`, and `-vv`: show more, or even more verbosity
 * `-t`: do not show time
-* `host name_or_address`: listen to only one host, you can add other hots with `AND host ...`
+
+You can apply filters:
+
+```ps
+$ sudo tcpdump -i tun0 host IP  # a specific IP
+$ sudo tcpdump -i tun0 net IP/n # a specific network
+$ sudo tcpdump -i tun0 port XXX # a specific port
+$ sudo tcpdump -i tun0 portrange 0-1024 # a range of ports
+$ sudo tcpdump -i tun0 less 64     # size in bytes
+$ sudo tcpdump -i tun0 greater 500 # size in bytes
+$ sudo tcpdump -i tun0 ip proto [icmp|ip|tcp] # a protocol
+$ sudo tcpdump -i tun0 ip proto 17 # a protocol by number
+```
+
+📚 Before every filter such as `host`, `net`, `port`, etc., you can add `src` or `dest` to specify where the filter is applied. It defaults to both.
 </div></div>
 
 [**tshark** - monitor network]
@@ -344,11 +364,16 @@ $ sudo tcpdump -i tun0 host IP and IP
 
 ```ps
 $ tshark -i eth0 -f "host some_ip"
+$ tshark -i eth0 -w /tmp/test.pcap
 ```
 
 [**wireshark** - monitor network]
 
 A popular tool to monitor a network. See [Wireshark](/operating-systems/networking/others/tools/wireshark/index.md).
+
+[**termshark** - monitor network]
+
+[Termshark](https://github.com/gcla/termshark) <small>(8.6k ⭐)</small> is a text-based user interface similar to wireshark.
 
 ++++++
 
