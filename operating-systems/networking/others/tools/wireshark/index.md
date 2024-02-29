@@ -27,6 +27,9 @@ If packets are encrypted, you need the private key. You can load it at: `Edit > 
 
 ## Wireshark Basic Overview
 
+[![intro_to_network_traffic_analysis](../../../../../cybersecurity/_badges/htb/intro_to_network_traffic_analysis.svg)](https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis)
+[![wireshark](../../../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
+
 <div class="row row-cols-lg-2"><div>
 
 Wireshark interface after opening a capture/capturing packets:
@@ -51,43 +54,52 @@ The GUI can be divided into the following sections:
 
 <hr class="sep-both">
 
+## Common Features
+
 <div class="row row-cols-lg-2"><div>
-<br>
 
-### Filters
+### Display Filter
 
-To find the interesting line, you can apply filters. Check out the bookmark icon to find saved filtering rules.
+[![intro_to_network_traffic_analysis](../../../../../cybersecurity/_badges/htb/intro_to_network_traffic_analysis.svg)](https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis)
+[![wireshark](../../../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
+
+To find interesting packets, you can apply filters on the packet list. Check out the bookmark icon to find saved filtering rules.
 
 ![Filter icon](_images/filter.png)
+
+Additional insight on filtering rules:
 
 * `ip.src == some_IP`, or `ip.dest == some_IP`
 * `ip.addr == some_IP`
 * `tcp.port == some_port`, or `udp.port == some_port`
 * You also have options for each protocol, use autocompletion
   * arp: `arp.opcode == 1`...
-  * http: `http.request.method == GET`...
+  * http: `http.request.method == GET`, `http contains "User-Agent"`...
+  * ftp: `ftp.request.command` <small>(port 21)</small> and `ftp-data` <small>(port 20)</small>
   * ...
 * You can enter a protocol to only see this one <small>(ex: `arp`)</small>
 * You can use operators such as `==, !=, >, <, ...` and logical operators such as `&&, ||, !`. You can also use the text version: `eq, ne, lt, gt, and, or, not...`. [Refer to the documentation](https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html) + [wiki](https://gitlab.com/wireshark/wireshark/-/wikis/CaptureFilters).
 </div><div>
 
-#### Packets
+#### Follow Stream
 
-Double-click on a packet to see details. They are divided in dropdowns for each [OSI layer](/operating-systems/networking/_knowledge/index.md#osi-model). Usually, the last dropdown is the one that you will want to inspect.
+[![intro_to_network_traffic_analysis](../../../../../cybersecurity/_badges/htb/intro_to_network_traffic_analysis.svg)](https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis)
+[![wireshark](../../../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
 
-➡️ Right-click on a field and go to filter, to see how to add a rule filtering this field in your search bar.
+Right-click on a packet and select `Follow > TCP Stream`. This will apply the filter `tcp.stream eq <stream_id>` with a stream being a set of packets forming a conversation and open a window allowing us to easily view the message exchanged.
 
-<br>
+In the bottom right corner of the newly opened window, you can navigate through the streams using arrows.
 
 #### Useful menus
+
+[![intro_to_network_traffic_analysis](../../../../../cybersecurity/_badges/htb/intro_to_network_traffic_analysis.svg)](https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis)
+[![wireshark](../../../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
 
 * **Download HTTP file**: File > Export Objects > HTTP
 * **Replace MAC with hostname**: View > Name Resolution > Resolve Physical Addresses
 * **Copy [...]**: When inspecting a packet, right-click on a field, and go to "Copy" to copy the value/... Use CTRL+C for the whole line.
 * **Protocol stats**: Statistics > Protocol Hierarchy
 * **Stats per IP**: Statistics > Endpoints
-
-If packets are encrypted, you need the private key. You can load it at: `Edit > Preferences > Protocols > TLS > RSA Key list > +`
 </div></div>
 
 <hr class="sep-both">
@@ -102,7 +114,6 @@ Right-click on a packet > Follow TCP Stream, and you will see in a human-readabl
 
 * [wireshark](https://unit42.paloaltonetworks.com/wireshark-workshop-videos/)
 * Port scanning: look for packets matching the scan (ex: SYN=1;ACK=0)
-* `tshark -Y 'http contains "User-Agent"'`
-* `tshark -r xxx.pcapng -T fields -e data.txt`
+* `tshark -Y`, `tshark -r xxx.pcapng -T fields -e data.txt`
 </div><div>
 </div></div>
