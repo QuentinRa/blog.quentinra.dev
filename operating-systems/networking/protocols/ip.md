@@ -1,6 +1,7 @@
 # Internet Protocol (IP)
 
 [![introductiontonetworking](../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
+[![intro_to_network_traffic_analysis](../../../cybersecurity/_badges/htb/intro_to_network_traffic_analysis.svg)](https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis)
 
 <div class="row row-cols-lg-2"><div>
 

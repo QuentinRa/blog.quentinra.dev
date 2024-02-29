@@ -1,8 +1,7 @@
 # IPV6 address
 
-[Go back](../index.md)
-
 [![introductiontonetworking](../../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
+[![intro_to_network_traffic_analysis](../../../../cybersecurity/_badges/htb/intro_to_network_traffic_analysis.svg)](https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -27,7 +26,7 @@ There are 8 kinds of IPV6 addresses
 
 | Type/Name                        | Prefix (128 bits) | IPV6 notation            |
 |----------------------------------|-------------------|--------------------------|
-| Unspecified (`non spécifié`)     | 0...0             | ::/128                   |
+| Unspecified                      | 0...0             | ::/128                   |
 | LoopBack (=localhost)            | 0...01            | ::1/128                  |
 | Multicast (=broadcast)           | 111111110...0     | ff00::/8                 |
 | Multicast (using ARP)            |                   | ff02::/8                 |

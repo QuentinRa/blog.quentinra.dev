@@ -1,6 +1,7 @@
 # Transmission Control Protocol (TCP)
 
 [![introductiontonetworking](../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
+[![intro_to_network_traffic_analysis](../../../cybersecurity/_badges/htb/intro_to_network_traffic_analysis.svg)](https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis)
 [![packetsframes](../../../cybersecurity/_badges/thmp/packetsframes.svg)](https://tryhackme.com/room/packetsframes)
 [![wireshark](../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
 
@@ -32,7 +33,7 @@ TCP messages all have a [flag](https://en.wikipedia.org/wiki/Transmission_Contro
 
 **TCP three-way handshake** 📌
 
-Using TCP, we establish a session between two machines A and B. A start with a SYN. B replies with SYN, ACK. A receives SYN, ACk, and replies with ACK.
+Using TCP, we establish a session between two machines A and B. A start with a SYN. B replies with SYN, ACK. A receives SYN, ACK, and replies with ACK. The closing handshake is the same with FIN.
 
 There are sequence numbers and ack numbers on every message. The first SYN has a random value $a$. The second SYN has a random value $b$, while the ACK has the value $a+1$. The final ACK has the value $b+1$.
 

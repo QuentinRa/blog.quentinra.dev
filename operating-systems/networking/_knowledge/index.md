@@ -42,6 +42,7 @@ There is a shortage of IPV4 since many years, due to the great amount of connect
 
 #### MAC address 🏠
 
+[![intro_to_network_traffic_analysis](../../../cybersecurity/_badges/htb/intro_to_network_traffic_analysis.svg)](https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis)
 [![whatisnetworking](../../../cybersecurity/_badges/thm/whatisnetworking.svg)](https://tryhackme.com/room/whatisnetworking)
 
 A media access control address (MAC address) is a unique address set by the network interface vendor.
@@ -102,9 +103,10 @@ A port is a virtual messaging channel which is only associated with one protocol
 
 #### OSI model
 
+[![intro_to_network_traffic_analysis](../../../cybersecurity/_badges/htb/intro_to_network_traffic_analysis.svg)](https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis)
+[![introductiontonetworking](../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
 [![osimodelzi](../../../cybersecurity/_badges/thmp/osimodelzi.svg)](https://tryhackme.com/room/osimodelzi)
 [![introtonetworking](../../../cybersecurity/_badges/thm/introtonetworking.svg)](https://tryhackme.com/room/introtonetworking)
-[![introductiontonetworking](../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
 
 The Open Systems Interconnection (**OSI** or ISO/OSI) model is a standardized representation of how we could send a message between two machines 🤝. It's made of 7 layers:
 
@@ -125,8 +127,9 @@ The **Protocol Data Unit** 📜 (PDU) is generated at each layer. It's both the 
 
 #### TCP/IP model
 
-[![introtonetworking](../../../cybersecurity/_badges/thm/introtonetworking.svg)](https://tryhackme.com/room/introtonetworking)
+[![intro_to_network_traffic_analysis](../../../cybersecurity/_badges/htb/intro_to_network_traffic_analysis.svg)](https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis)
 [![introductiontonetworking](../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
+[![introtonetworking](../../../cybersecurity/_badges/thm/introtonetworking.svg)](https://tryhackme.com/room/introtonetworking)
 
 The TCP/IP model was introduced before the OSI model, but remains the most used because it's more compact 🤏. It's made of 4 layers:
 

@@ -1,5 +1,6 @@
 # Wireshark
 
+[![intro_to_network_traffic_analysis](../../../../../cybersecurity/_badges/htb/intro_to_network_traffic_analysis.svg)](https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis)
 [![wireshark](../../../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
 [![startup](../../../../../cybersecurity/_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 [![cap](../../../../../cybersecurity/_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
@@ -14,6 +15,43 @@
 * [Documentation](https://www.wireshark.org/docs/)
 * [Sample captures](https://wiki.wireshark.org/SampleCaptures)
 
+There is a CLI version called [tshark](/operating-systems/networking/commands/index.md#command-tshark) and a TUI version called [termshark](/operating-systems/networking/commands/index.md#command-termshark).
+</div><div>
+
+If packets are encrypted, you need the private key. You can load it at: `Edit > Preferences > Protocols > TLS > RSA Key list > +`. Set the keyfile, while you might also set the server IP and port.
+
+➡️ Protocols such as SSH, RDP, HTTPS, etc.
+</div></div>
+
+<hr class="sep-both">
+
+## Wireshark Basic Overview
+
+<div class="row row-cols-lg-2"><div>
+
+Wireshark interface after opening a capture/capturing packets:
+
+![wireshark GUI](_images/wireshark.png)
+</div><div>
+
+The GUI can be divided into the following sections:
+
+1. **Menu Bar** 🌾: refer to [useful menus](#useful-menus)
+
+2. **Display Filter** 🥅: filters applied to the packet list
+
+3. **Packet List** 🗃️: list of captured packets
+
+4. **Packet Details** 📚: Double-click on a packet to see its details. They are divided in dropdowns for each [OSI layer](/operating-systems/networking/_knowledge/index.md#osi-model) in the reverse order. Usually, the last dropdown is the one that you will want to inspect.
+
+5. **Packet Bytes** 👽: nothing of interest?
+
+6. **Capture Summary** ✍️: total number of packets
+</div></div>
+
+<hr class="sep-both">
+
+<div class="row row-cols-lg-2"><div>
 <br>
 
 ### Filters
@@ -35,9 +73,7 @@ To find the interesting line, you can apply filters. Check out the bookmark icon
 
 #### Packets
 
-Double-click on a packet to see details. They are divided in dropdowns for each [OSI layer](/operating-systems/networking/_knowledge/index.md#osi-model).
-
-Usually, the last dropdown is the one that you will want to inspect.
+Double-click on a packet to see details. They are divided in dropdowns for each [OSI layer](/operating-systems/networking/_knowledge/index.md#osi-model). Usually, the last dropdown is the one that you will want to inspect.
 
 ➡️ Right-click on a field and go to filter, to see how to add a rule filtering this field in your search bar.
 
