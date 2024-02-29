@@ -118,6 +118,7 @@ Other well-known decompilers:
 #### Windows x64dbg debugger
 
 [![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+[![introduction_to_malware_analysis](../../_badges/htb/introduction_to_malware_analysis.svg)](https://academy.hackthebox.com/course/preview/introduction-to-malware-analysis)
 
 You can use [x64dbg](https://github.com/x64dbg/x64dbg) <small>(42.5k ⭐)</small> to debug binaries.
 
@@ -126,6 +127,9 @@ You can use [x64dbg](https://github.com/x64dbg/x64dbg) <small>(42.5k ⭐)</small
   * Double-click on an entry to see its bytes
   * You may recognize a file from the magic code bytes
   * Right-click on an address to dump its contents to a file
+* Use 'Search for > Current Module > String references' to see strings and their address. You can double-click on an address to navigate to it <small>(see also: Right-click > 'Toggle Breakpoint.')</small>
+* Place the cursor on an instruction, and press 'Spacebar' to edit it.
+* Use CTRL+P to save the patched instructions.
 
 ➡️ See also: [x64dbg unpack malware](https://www.varonis.com/blog/x64dbg-unpack-malware) and [OllyDbg](https://github.com/x64dbg/OllyDbg).
 </div><div>

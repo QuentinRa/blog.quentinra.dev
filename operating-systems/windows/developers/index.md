@@ -213,6 +213,8 @@ SysInternals
 * [strings](https://learn.microsoft.com/en-us/sysinternals/downloads/strings): similar to Linux strings.
 * [tpcView](https://learn.microsoft.com/en-us/sysinternals/downloads/tcpview): Windows tcpdump
 * SysInternals Suite: tools. Can be installed or loaded remotely (`\\live.sysinternals.com\tools\xxx.exe`)
+* ProcMon > Process Monitor Filter > Process Name is xxx.exe then Include
+* [Noriben](https://github.com/Rurik/Noriben) wrapper to procmon but may miss some stuff
 </div><div>
 
 ```ps

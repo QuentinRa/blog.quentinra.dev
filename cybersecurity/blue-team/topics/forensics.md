@@ -144,7 +144,7 @@ The drive may be [encrypted using BitLocker](/operating-systems/windows/security
 
 ## Malware Analysis
 
-[![introduction_to_digital_forensics](../../_badges/htb/introduction_to_digital_forensics.svg)](https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics)
+[![introduction_to_malware_analysis](../../_badges/htb/introduction_to_malware_analysis.svg)](https://academy.hackthebox.com/course/preview/introduction-to-malware-analysis)
 
 <div class="row row-cols-lg-2"><div>
 
