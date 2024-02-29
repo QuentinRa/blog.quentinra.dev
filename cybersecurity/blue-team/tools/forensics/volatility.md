@@ -12,9 +12,6 @@ Volatility is a popular free [memory forensics tool](/cybersecurity/blue-team/to
 $ pipx install git+https://github.com/volatilityfoundation/volatility3
 $ vol -h
 ```
-
-To use Volatility, you need a memory capture. You can use [DumpIt.exe](https://www.aldeid.com/wiki/Dumpit), [WinPmem](https://github.com/Velocidex/WinPmem) (0.4k ⭐), [Redline](https://fireeye.market/apps/211364), [FTK Imager](https://www.exterro.com/ftk-imager)... 
-
 </div><div>
 
 Use `-f` to load a memory dump. Assuming the memory dump is `mdump.sav` in the current folder, you would use:

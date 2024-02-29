@@ -23,26 +23,46 @@ These categories further involve tasks such as:
 
 <hr class="sep-both">
 
-## Memory Forensics
+## Forensics Tools
 
-[![introduction_to_digital_forensics](../../_badges/htb/introduction_to_digital_forensics.svg)](https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics)
+*See also: [ForensicsTools](https://github.com/mesquidar/ForensicsTools) <small>(0.8k ⭐)</small>.*
 
 <div class="row row-cols-lg-2"><div>
 
-...
-</div><div>
+#### Disk Forensics Tools
 
+[![introduction_to_digital_forensics](../../_badges/htb/introduction_to_digital_forensics.svg)](https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics)
+
+You can create an image of a disk using:
+
+* [FTK Imager](https://www.exterro.com/digital-forensics-software/ftk-imager) <small>(popular)</small>
+* [OSFClone](https://www.osforensics.com/tools/create-disk-images.html)
+* [dd/dcfldd](/cybersecurity/red-team/s4.privesc/linux/topics/drives.md)
+* ...
+
+<br>
+
+#### Memory Forensics Tools
+
+[![introduction_to_digital_forensics](../../_badges/htb/introduction_to_digital_forensics.svg)](https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics)
+[![bpvolatility](../../_badges/thm/bpvolatility.svg)](https://tryhackme.com/room/bpvolatility)
+
+To create a memory dump, you can use:
+
+* [DumpIt.exe](https://www.aldeid.com/wiki/Dumpit)
+* [WinPmem](https://github.com/Velocidex/WinPmem) <small>(0.6k ⭐)</small>
+* [Redline](https://fireeye.market/apps/211364)
+* [FTK Imager](https://www.exterro.com/ftk-imager)
+* ...
+
+You can investigate a memory dump using:
 
 * [Volatility](../tools/forensics/volatility.md) is a well-known memory forensic tool.
-</div></div>
+</div><div>
 
-<hr class="sep-both">
-
-## Malware Analysis
+#### Malware Analysis
 
 [![introduction_to_digital_forensics](../../_badges/htb/introduction_to_digital_forensics.svg)](https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics)
-
-<div class="row row-cols-lg-2"><div>
 
 You can use the following sources to find malware:
 
@@ -53,16 +73,15 @@ You can use the following sources to find malware:
 * [app.any.run](https://app.any.run/) <small>(👻)</small>
 * [contagiodump](https://contagiodump.blogspot.com/) <small>(👻)</small>
 * [vx-underground](https://vx-underground.org/) <small>(👻)</small>
-</div><div>
 </div></div>
 
 <hr class="sep-both">
 
-## Random Topics
+## Disk Forensics
 
 <div class="row row-cols-lg-2"><div>
 
-#### Investigate Delete Files
+#### Investigate Deleted Files
 
 [![mirai](../../_badges/htb-p/mirai.svg)](https://app.hackthebox.com/machines/Mirai)
 [![deleted_file](../../_badges/rootme/forensic/deleted_file.svg)](https://www.root-me.org/en/Challenges/Forensic/Deleted-file)
