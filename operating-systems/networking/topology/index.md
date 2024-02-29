@@ -60,6 +60,7 @@ Networking devices are interconnected by cables.
 
 * [Hubs](devices/hub.md)
 * [Ethernet](devices/ethernet.md)
+* Network taps
 * Repeaters
 * Modems
 
@@ -236,6 +237,8 @@ Topologies
 * Virtual Network Functions (VNFs)
 * [Request-response](https://en.wikipedia.org/wiki/Request%E2%80%93response)
 * HSM device
+* Network taps
+  * copy network traffic and dispatch it to multiple devices
 </div><div>
 
 Devices

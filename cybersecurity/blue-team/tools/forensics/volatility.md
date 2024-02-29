@@ -1,34 +1,38 @@
 # Volatility
 
+[![introduction_to_digital_forensics](../../../_badges/htb/introduction_to_digital_forensics.svg)](https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics)
 [![bpvolatility](../../../_badges/thm/bpvolatility.svg)](https://tryhackme.com/room/bpvolatility)
 [![adventofcyber4](../../../_badges/thm/adventofcyber4/day11.svg)](https://tryhackme.com/room/adventofcyber4)
 
 <div class="row row-cols-lg-2"><div>
 
-Volatility is a popular free memory forensics tool. There is a deprecated [python2](https://github.com/volatilityfoundation/volatility) version <small>(which is hard to install, 6.3k ⭐)</small>, and there is a [python3](https://github.com/volatilityfoundation/volatility3) version <small>(1.6k ⭐, in-development)</small>.
+Volatility is a popular free memory forensics tool. There is a deprecated [python2](https://github.com/volatilityfoundation/volatility) version <small>(which is hard to install, 6.8k ⭐)</small>, and there is a [python3](https://github.com/volatilityfoundation/volatility3) version <small>(2.1k ⭐, in-development)</small>.
 
 ```ps
-$ git clone https://github.com/volatilityfoundation/volatility3
-$ cd volatility3
-$ python3 vol.py -h
+$ pipx install git+https://github.com/volatilityfoundation/volatility3
+$ vol -h
 ```
 
 To use Volatility, you need a memory capture. You can use [DumpIt.exe](https://www.aldeid.com/wiki/Dumpit), [WinPmem](https://github.com/Velocidex/WinPmem) (0.4k ⭐), [Redline](https://fireeye.market/apps/211364), [FTK Imager](https://www.exterro.com/ftk-imager)... 
 
 </div><div>
 
-Use `-f` to load a memory dump. Assuming the memory dump is `mdump.sav` in the current folder:
+Use `-f` to load a memory dump. Assuming the memory dump is `mdump.sav` in the current folder, you would use:
 
 ```ps
-$ python3 vol.py -f mdump.sav [...]
+$ vol -f mdump.sav [...]
 ```
 
-Profiles from volatility 2 are now expressed as [plugins](https://volatility3.readthedocs.io/en/latest/volatility3.plugins.html). You will use `xxx.info` instead of `imageinfo` to learn about the operating system run in a capture; with `xxx` one among `windows`, `linux`, `mac`.
+Profiles from volatility 2 are now expressed as [plugins](https://volatility3.readthedocs.io/en/latest/volatility3.plugins.html). You will use `xxx.info` instead of `imageinfo` <small>(to learn about the operating system in use in the capture)</small> with `xxx` a value among `windows`, `linux`, or `mac`.
 </div></div>
 
 <hr class="sep-both">
 
 ## Windows notes
+
+[![introduction_to_digital_forensics](../../../_badges/htb/introduction_to_digital_forensics.svg)](https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics)
+[![bpvolatility](../../../_badges/thm/bpvolatility.svg)](https://tryhackme.com/room/bpvolatility)
+[![adventofcyber4](../../../_badges/thm/adventofcyber4/day11.svg)](https://tryhackme.com/room/adventofcyber4)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -37,13 +41,15 @@ Assuming that the host is running Windows, we can use:
 * ➡️ Find information about the operating system
 
 ```ps
-$ python3 vol.py [...] windows.info
+$ vol [...] windows.info
 ```
 
 * ➡️ List running processes
 
 ```ps
-$ python3 vol.py [...] windows.pslist
+$ vol [...] windows.pslist
+$ vol [...] windows.pstree
+$ vol [...] windows.cmdline
 ```
 
 👉 Malicious processes tend to hide themselves.
@@ -51,26 +57,30 @@ $ python3 vol.py [...] windows.pslist
 * ➡️ Scan a specific process
 
 ```ps
-$ python3 vol.py [...] windows.psscan
+$ vol [...] windows.psscan
+$ vol [...] windows.handles --pid XXX
+$ vol [...] windows.memmap --pid XXX --dump
+$ vol [...] windows.dlllist --pid XXX
 ```
 </div><div>
 
 * ➡️ Show processes in which some code may have been injected
 
 ```ps
-$ python3 vol.py [...] windows.malfind
+$ vol [...] windows.malfind
+$ vol [...] windows.malfind --pid=XXX
 ```
 
-* ➡️ Dump a specific process files (DLL/...)
+* ➡️ Dump a specific process files
 
 ```ps
-$ python3 vol.py [...] windows.dumpfiles --pid xxx -o path/to/extract/dll
+$ vol [...] windows.dumpfiles --pid xxx -o path/to/extract/dll
 ```
 
 * ➡️ Show network activity
 
 ```ps
-$ python3 vol.py [...] windows.netstat
+$ vol [...] windows.netstat
 ```
 </div></div>
 
