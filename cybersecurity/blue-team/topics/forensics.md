@@ -1,5 +1,6 @@
 # Digital forensics
 
+[![introduction_to_digital_forensics](../../_badges/htb/introduction_to_digital_forensics.svg)](https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics)
 [![introdigitalforensics](../../_badges/thm/introdigitalforensics.svg)](https://tryhackme.com/room/introdigitalforensics)
 [![defensivesecurityhq](../../_badges/thm/defensivesecurityhq.svg)](https://tryhackme.com/room/defensivesecurityhq)
 [![adventofcyber4](../../_badges/thm/adventofcyber4/day11.svg)](https://tryhackme.com/room/adventofcyber4)
@@ -8,16 +9,51 @@
 
 Forensics is the art of investigating crimes. Digital forensics is the same, but for cyber crimes.
 
-* **Memory forensics** 🗺️: dig into a memory capture of a machine to investigate suspect behaviors.
+* **Memory forensics** 🗺️: dig into a memory capture of a machine to investigate suspect behaviors and map the attack path.
 
 * **Reverse engineering** 🤖: try to understand and investigate suspicious programs. Refer to [this page](/cybersecurity/purple-team/reverse/index.md).
 
 * **File Investigation** ✈️: try to find hidden files, hidden messages, and hidden information in files. Refer to [this page](/cybersecurity/purple-team/files/index.md).
 </div><div>
 
-Additional notes
+These categories further involve tasks such as:
+
+* **Malware Analysis** 🪲: investigate malware to find what they did, what they do, how they work, etc.
+</div></div>
+
+<hr class="sep-both">
+
+## Memory Forensics
+
+[![introduction_to_digital_forensics](../../_badges/htb/introduction_to_digital_forensics.svg)](https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics)
+
+<div class="row row-cols-lg-2"><div>
+
+...
+</div><div>
+
 
 * [Volatility](../tools/forensics/volatility.md) is a well-known memory forensic tool.
+</div></div>
+
+<hr class="sep-both">
+
+## Malware Analysis
+
+[![introduction_to_digital_forensics](../../_badges/htb/introduction_to_digital_forensics.svg)](https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics)
+
+<div class="row row-cols-lg-2"><div>
+
+You can use the following sources to find malware:
+
+* [theZoo](https://github.com/ytisf/theZoo) <small>(10.5k ⭐)</small>
+* [virusshare](https://virusshare.com/) <small>(👻)</small>
+* [hybrid-analysis](https://www.hybrid-analysis.com/file-collections) <small>(👻)</small>
+* [malware-traffic-analysis](https://malware-traffic-analysis.net/) <small>(👻)</small>
+* [app.any.run](https://app.any.run/) <small>(👻)</small>
+* [contagiodump](https://contagiodump.blogspot.com/) <small>(👻)</small>
+* [vx-underground](https://vx-underground.org/) <small>(👻)</small>
+</div><div>
 </div></div>
 
 <hr class="sep-both">
@@ -60,7 +96,7 @@ $ testdisk data.bin
 ```
 </div><div>
 
-#### Investigate A Virtual Machine
+#### Investigate A Virtual Machine Dump
 
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![oh_my_grub](../../_badges/rootme/forensic/oh_my_grub.svg)](https://www.root-me.org/en/Challenges/Forensic/Oh-My-Grub)
