@@ -57,6 +57,7 @@ To create a memory dump, you can use:
 * [FTK Imager](https://www.exterro.com/ftk-imager)
 * [memdump](https://www.kali.org/tools/memdump/)
 * [LiME](https://github.com/504ensicsLabs/LiME) <small>(1.6k ⭐)</small>
+* For VMWare, suspend the machine and locate the `.vmem`
 * ...
 
 You can investigate a memory dump using:
@@ -81,6 +82,7 @@ Given the image `data.bin`, these methods may be helpful:
 
 ```shell!
 $ strings data.bin
+$ strings -n xxx data.bin
 ```
 
 ```shell!
@@ -157,7 +159,42 @@ You can use the following sources to find malware:
 * [app.any.run](https://app.any.run/) <small>(👻)</small>
 * [contagiodump](https://contagiodump.blogspot.com/) <small>(👻)</small>
 * [vx-underground](https://vx-underground.org/) <small>(👻)</small>
+
+
+#### Malware Hashing Techniques
+
+* Import Hashing (IMPHASH)
+
+```py
+import sys
+import pefile
+import peutils
+pe = pefile.PE(sys.argv[1])
+print(pe.get_imphash())
+```
+
+* Fuzzy Hashing (SSDEEP/CTPH)
+
+```ps
+$ ssdeep xxx.exe
+```
 </div><div>
+
+#### Malware Analysis Tools
+
+* [FLOSS](https://github.com/mandiant/flare-floss) <small>(2.6k ⭐)</small>
+
+```ps
+$ floss xxx.exe
+```
+
+* Section hashing — identify modified sections
+
+```py
+for section in pe.sections:
+    print (section.Name, "MD5 hash:", section.get_hash_md5())
+    print (section.Name, "SHA256 hash:", section.get_hash_sha256())
+```
 </div></div>
 
 <hr class="sep-both">
@@ -169,5 +206,14 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [Arsenal Image Mounter](https://arsenalrecon.com/products/arsenal-image-mounter)
+* [KAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) (triage), [KapeFiles](https://github.com/EricZimmerman/KapeFiles)
+* [velociraptor](https://github.com/Velocidex/velociraptor) (artifact gathering)
 </div><div>
+
+Intesting files
+
+* `C:\Windows\Prefetch`: programs executed+last execution date
+* `%AppData%\Microsoft\Windows\Recent`: recent files
+* `USN Journal`: logs of file system changes
+* [mftexplorer](https://www.sans.org/tools/mftexplorer/): metadata for all files
 </div></div>

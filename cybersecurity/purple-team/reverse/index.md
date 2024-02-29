@@ -245,6 +245,14 @@ $ docker run -it -v $(pwd):/builds boomrangcli:latest ch1.bin
 Code obfuscation is an automated process to make the code less-readable for humans. A simple example would be by replacing variables names with less readable names such as `_0x565`.
 
 Code obfuscation doesn't impact the program functionality, but it may impact its performance: obfuscated code is usually slower.
+
+#### UPX-packed Malware
+
+Ultimate Packer for eXecutables (UPX) is a popular packer for malware.
+
+```ps
+$ upx -d -o unpacked_xxx.exe xxx.exe
+```
 </div><div>
 
 #### Javascript Obfuscation
