@@ -201,12 +201,15 @@ $ enum4linux-ng IP <options> -u 'username' -p 'password'
 
 #### Well-Known CVEs
 
+[![shells_and_payloads](../../../cybersecurity/_badges/htb/shells_and_payloads.svg)](https://academy.hackthebox.com/course/preview/shells--payloads)
 [![blue](../../../cybersecurity/_badges/thm-p/blue.svg)](https://tryhackme.com/room/blue)
 [![blue](../../../cybersecurity/_badges/htb-p/blue.svg)](https://app.hackthebox.com/machines/Blue)
 
 * [CVE-2017-0144](https://attackerkb.com/topics/xI1y9OoEgq/cve-2017-0144-ms17-010) - EternalBlue - MS17-010
 
 A vulnerability in the SMB protocol allowing Remote Code Execution (RCE). It was discovered by the NSA and stolen by hackers.
+
+➡️ See: `ms17_010_eternalblue`, `ms17_010_psexec`, etc.
 
 * [CVE-2020-0796](https://nvd.nist.gov/vuln/detail/CVE-2020-0796) - SMBGhost - Unauthenticated RCE
 

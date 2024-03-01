@@ -1,5 +1,6 @@
 # Banner grabbing
 
+[![shells_and_payloads](../../../../_badges/htb/shells_and_payloads.svg)](https://academy.hackthebox.com/course/preview/shells--payloads)
 [![activerecon](../../../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
 [![netsecchallenge](../../../../_badges/thmp-p/netsecchallenge.svg)](https://tryhackme.com/room/netsecchallenge)
 
