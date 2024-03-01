@@ -317,6 +317,7 @@ https://tryhackme.com/room/retro (blaster...)
 * Kismet
 * [ssf](https://github.com/securesocketfunneling/ssf)
 * [pupy](https://github.com/n1nj4sec/pupy/)
+* [nishang](https://github.com/samratashok/nishang/)
 </div></div>
 
 <hr class="sep-both">
