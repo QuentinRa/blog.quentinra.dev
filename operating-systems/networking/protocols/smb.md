@@ -1,8 +1,8 @@
 # Server Message Block (SMB)
 
+[![footprinting](../../../cybersecurity/_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
 [![networkservices](../../../cybersecurity/_badges/thmp/networkservices.svg)](https://tryhackme.com/room/networkservices)
 [![adventofcyber4](../../../cybersecurity/_badges/thm/adventofcyber4/day4.svg)](https://tryhackme.com/room/adventofcyber4)
-[![footprinting](../../../cybersecurity/_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -201,22 +201,22 @@ $ enum4linux-ng IP <options> -u 'username' -p 'password'
 
 #### Well-Known CVEs
 
-* [CVE-2017-0144](https://attackerkb.com/topics/xI1y9OoEgq/cve-2017-0144-ms17-010) - EternalBlue - MS17-010
-
 [![blue](../../../cybersecurity/_badges/thm-p/blue.svg)](https://tryhackme.com/room/blue)
 [![blue](../../../cybersecurity/_badges/htb-p/blue.svg)](https://app.hackthebox.com/machines/Blue)
+
+* [CVE-2017-0144](https://attackerkb.com/topics/xI1y9OoEgq/cve-2017-0144-ms17-010) - EternalBlue - MS17-010
 
 A vulnerability in the SMB protocol allowing Remote Code Execution (RCE). It was discovered by the NSA and stolen by hackers.
 
 * [CVE-2020-0796](https://nvd.nist.gov/vuln/detail/CVE-2020-0796) - SMBGhost - Unauthenticated RCE
 
-* [CVE-2008-4250](https://nvd.nist.gov/vuln/detail/CVE-2008-4250) - Unauthenticated RCE
-
 [![legacy](../../../cybersecurity/_badges/htb-p/legacy.svg)](https://app.hackthebox.com/machines/Legacy)
 
-* Samba username map script - Command Execution
+* [CVE-2008-4250](https://nvd.nist.gov/vuln/detail/CVE-2008-4250) - Unauthenticated RCE
 
 [![lame](../../../cybersecurity/_badges/htb-p/lame.svg)](https://app.hackthebox.com/machines/Lame)
+
+* Samba username map script - Command Execution
 </div></div>
 
 <hr class="sep-both">
