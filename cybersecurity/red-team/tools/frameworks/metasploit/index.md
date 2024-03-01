@@ -229,4 +229,5 @@ You can prepend any command using `grep` to filter lines. You can chain them too
 * Meterpreter: `steal_token <pid>`
 * Hashdump not working on some Windows: `load kiwi` then `lsa_dump_sam` do the job. See also: `lsa_dump_secrets`.
 * Plugins: `/usr/share/metasploit-framework/plugins`
+* `use /path/to/xxx.rb` (tested: relative to exploit)
 </div></div>
