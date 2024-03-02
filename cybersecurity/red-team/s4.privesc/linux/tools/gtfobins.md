@@ -24,7 +24,7 @@ $ sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/
 
 ➡️ You can use [GTFOBLookup](https://github.com/nccgroup/GTFOBLookup) (0.2k ⭐) for offline browsing.
 
-➡️ You may need/want to create a [root bash](rootbash.md).
+➡️ You may need/want to create a [root bash](/cybersecurity/red-team/s4.privesc/linux/utils/rootbash.md).
 </div></div>
 
 <hr class="sep-both">
