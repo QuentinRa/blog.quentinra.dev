@@ -57,9 +57,9 @@ A firewall is a solution present in every modern secure network. It is used to f
 
 There are many kind of firewalls, that operate at multiple OSI layers.
 
-* [Network firewall](../topology/devices/firewall.md)
-* [Host-based firewall](firewalls/host.md)
-* [Applicative firewall](firewalls/app.md)
+* [Network firewall](../../topology/devices/firewall.md)
+* [Host-based firewall](../firewalls/host.md)
+* [Applicative firewall](../firewalls/app.md)
 * Proxy firewall
 * Next-generation firewall (NGFW) <small>(combine application and network firewalls. Intrusion prevention, deep packet inspection, block malware...)</small>
 * Hybrid firewall
@@ -78,7 +78,7 @@ There are two kind of firewall architectures:
 
 <div class="row row-cols-lg-2"><div>
 
-Network zoning is a form of [network segmentation](../topology/index.md#network-segmentation) that focuses on security rather than performances or similar reasons that could lead to network segmentation.
+Network zoning is a form of [network segmentation](../../topology/index.md#network-segmentation) that focuses on security rather than performances or similar reasons that could lead to network segmentation.
 
 The focuses is in creating zones with devices that shares the same security requirements/level, to apply specific appropriate security controls according to the security level of the group.
 

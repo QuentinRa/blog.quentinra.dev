@@ -32,7 +32,7 @@ A radix, or base, is a set of unique characters that we can use to encode a mess
 **Some tools to detect the encoding/decode/encode** 🚀
 
 * [CyberChef](https://github.com/gchq/CyberChef) (21.2k ⭐) | [Online version](https://gchq.github.io/CyberChef/)
-* [Burp Suite Decoder](/cybersecurity/red-team/s3.exploitation/tools/files/burp_decoder.md)
+* [Burp Suite Decoder](/cybersecurity/red-team/tools/utilities/proxies/burp/modules/decoder.md)
 * [Decodify](https://github.com/s0md3v/Decodify) (0.8k ⭐)
 * [binaryhexconverter.com](https://www.binaryhexconverter.com/)
 * [rapidtables.com/base converter](https://www.rapidtables.com/convert/number/base-converter.html)

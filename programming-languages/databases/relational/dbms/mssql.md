@@ -45,7 +45,7 @@ PS> sqlcmd -E -i query.sql
 PS> sqlcmd -S server_name -U sa -P password [...]
 ```
 
-If [WMI (DCOM)](/operating-systems/networking/protocols/wmi.md) is available, from a Linux host, you can access `sqlcmd` after popping a powershell:
+If [WMI (DCOM)](/operating-systems/networking/protocols/dcom.md) is available, from a Linux host, you can access `sqlcmd` after popping a powershell:
 
 ```shell!
 $ impacket-wmiexec username:password@IP -shell-type powershell

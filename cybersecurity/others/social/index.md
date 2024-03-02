@@ -36,7 +36,7 @@ Stuff that I found, but never read/used yet.
 
 * If we compromise a ticketing system, we can use it to receive mails (e.g. maybe, with company email, each ticket may have a thread). Can be used to join Slack or create accounts maybe.
 
-[![adventofcyber4](../_badges/thm/adventofcyber4/day6.svg)](https://tryhackme.com/room/adventofcyber4)
+[![adventofcyber4](../../_badges/thm/adventofcyber4/day6.svg)](https://tryhackme.com/room/adventofcyber4)
 
 * [phishing](https://tryhackme.com/module/phishing)
 * emlAnalyzer -i File (ex: .eml/.msg)

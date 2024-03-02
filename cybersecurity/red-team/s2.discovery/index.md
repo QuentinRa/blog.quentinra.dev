@@ -57,7 +57,7 @@ You may do that to bypass JavaScript verifications. You can use plugins such as 
 
 * HTTP clients
 
-We usually don't only rely on our web browser to recon/exploit websites, as they are unreliable. You can use [Postman, curl](/programming-languages/others/apis/_general/index.md#-testuse-an-api-) or tools such as the [Burp Suite](../s3.exploitation/tools/burp.md)...
+We usually don't only rely on our web browser to recon/exploit websites, as they are unreliable. You can use [Postman, curl](/programming-languages/others/apis/_general/index.md#query-an-api) or tools such as the [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md)...
 
 </div></div>
 

@@ -1,8 +1,8 @@
 # Network File System (NFS)
 
-[![networkservices2](../../../cybersecurity/_badges/thmp/networkservices2.svg)](https://tryhackme.com/room/networkservices2)
 [![footprinting](../../../cybersecurity/_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
 [![linuxprivilegeescalation](../../../cybersecurity/_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![networkservices2](../../../cybersecurity/_badges/thmp/networkservices2.svg)](https://tryhackme.com/room/networkservices2)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -55,7 +55,7 @@ $ sudo nmap IP -p111,2049 -sV -sC
 ```
 </div><div>
 
-* When **root_squashing** is disabled, a local root user is mapped to the remote root user, allowing them to create [SUID](/cybersecurity/red-team/s4.privesc/linux/perms.md#suidguid-bit) files.
+* When **root_squashing** is disabled, a local root user is mapped to the remote root user, allowing them to create [SUID](/cybersecurity/red-team/s4.privesc/linux/topics/perms.md#suidguid-bit) files.
 
 ```ps
 # on the remote host, we create a bash inside the share
