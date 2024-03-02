@@ -1,5 +1,7 @@
-archives/*.md linguist-documentation=false linguist-detectable=true
 cybersecurity/*.md linguist-documentation=false linguist-detectable=true
-it/*.md linguist-documentation=false linguist-detectable=true
+games/*.md linguist-documentation=false linguist-detectable=true
+maths/*.md linguist-documentation=false linguist-detectable=true
 operating-systems/*.md linguist-documentation=false linguist-detectable=true
-programming/*.md linguist-documentation=false linguist-detectable=true
+programming-languages/*.md linguist-documentation=false linguist-detectable=true
+tools-and-frameworks/*.md linguist-documentation=false linguist-detectable=true
+*.py linguist-documentation=false linguist-detectable=false
