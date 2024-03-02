@@ -318,6 +318,8 @@ https://tryhackme.com/room/retro (blaster...)
 * [ssf](https://github.com/securesocketfunneling/ssf)
 * [pupy](https://github.com/n1nj4sec/pupy/)
 * [nishang](https://github.com/samratashok/nishang/)
+* [Mythic](https://github.com/its-a-feature/Mythic) <small>(c2 framework)</small>
+* [darkarmour](https://github.com/bats3c/darkarmour) <small>(antivirus evasion tool)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -392,6 +394,7 @@ https://github.com/vitalysim/Awesome-Hacking-Resources
 https://redteam.guide/ (book)
 https://www.hackers-arise.com (book)
 Hack Like a LEGEND (book)
+https://ippsec.rocks/?#
 ```
 </div><div>
 

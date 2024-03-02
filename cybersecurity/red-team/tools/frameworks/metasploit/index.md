@@ -1,12 +1,12 @@
 # Metasploit framework
 
+[![metasploitframework](../../../../_badges/htb/metasploitframework.svg)](https://academy.hackthebox.com/course/preview/using-the-metasploit-framework)
 [![metasploitintro](../../../../_badges/thm/metasploitintro.svg)](https://tryhackme.com/room/metasploitintro)
 [![rpmetasploit](../../../../_badges/thm/rpmetasploit.svg)](https://tryhackme.com/room/rpmetasploit)
 [![rpmetasploit](../../../../_badges/thmp/rpmetasploit.svg)](https://tryhackme.com/room/rpmetasploit)
 [![metasploitexploitation](../../../../_badges/thmp/metasploitexploitation.svg)](https://tryhackme.com/room/metasploitexploitation)
 [![meterpreter](../../../../_badges/thmp/meterpreter.svg)](https://tryhackme.com/room/meterpreter)
 [![adventofcyber4](../../../../_badges/thm/adventofcyber4/day9.svg)](https://tryhackme.com/room/adventofcyber4)
-[![metasploitframework](../../../../_badges/htb/metasploitframework.svg)](https://academy.hackthebox.com/course/preview/using-the-metasploit-framework)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -35,6 +35,8 @@ Scripts are divided into **modules** 📌
 <hr class="sep-both">
 
 ## msfconsole
+
+[![shells_and_payloads](../../../../_badges/htb/shells_and_payloads.svg)](https://academy.hackthebox.com/course/preview/shells--payloads)
 
 <div class="row row-cols-lg-2"><div>
 

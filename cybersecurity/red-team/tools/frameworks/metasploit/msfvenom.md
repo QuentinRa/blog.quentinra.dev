@@ -1,8 +1,9 @@
 # 🐍 msfvenom 🐍
 
+[![shells_and_payloads](../../../../_badges/htb/shells_and_payloads.svg)](https://academy.hackthebox.com/course/preview/shells--payloads)
+[![fileuploadattacks](../../../../_badges/htb/fileuploadattacks.svg)](https://academy.hackthebox.com/course/preview/file-upload-attacks)
 [![introtoshells](../../../../_badges/thmp/introtoshells.svg)](https://tryhackme.com/room/introtoshells)
 [![metasploitexploitation](../../../../_badges/thmp/metasploitexploitation.svg)](https://tryhackme.com/room/metasploitexploitation)
-[![fileuploadattacks](../../../../_badges/htb/fileuploadattacks.svg)](https://academy.hackthebox.com/course/preview/file-upload-attacks)
 
 <div class="row row-cols-lg-2"><div>
 
