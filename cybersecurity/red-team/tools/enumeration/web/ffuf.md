@@ -4,7 +4,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[ffuf](https://github.com/ffuf/ffuf) <small>(**f**uzz **f**aster **u** **f**ool)</small> (10.6k ⭐) is a [Fuzzing](/cybersecurity/red-team/s2.discovery/techniques/fuzzing.md) tool in Go. It was designed to be a faster and modern alternative to wfuzz.
+[ffuf](https://github.com/ffuf/ffuf) <small>(**f**uzz **f**aster **u** **f**ool)</small> (10.6k ⭐) is a [Fuzzing](/cybersecurity/red-team/s2.discovery/techniques/websites/fuzzing.md) tool in Go. It was designed to be a faster and modern alternative to wfuzz.
 
 Common examples are:
 
@@ -69,7 +69,7 @@ $ ffuf -fs 5230 [...]    # hides responses with size=5230
 
 #### vhost brute force
 
-For [vhosts brute force](/cybersecurity/red-team/s2.discovery/techniques/vhosts.md), you can use:
+For [vhosts brute force](/cybersecurity/red-team/s2.discovery/techniques/websites/vhosts.md), you can use:
 
 ```ps
 $ ffuf -w wordlist -H "Host: FUZZ.example.com" -u http://IP
@@ -93,7 +93,7 @@ Use `-e .xxx,.yyy` to test appending extensions to `FUZZ`. The initial behavior 
 
 #### subdomains brute force
 
-For [subdomains brute force](/cybersecurity/red-team/s2.discovery/techniques/subdomains.md), you can use:
+For [subdomains brute force](/cybersecurity/red-team/s2.discovery/techniques/websites/subdomains.md), you can use:
 
 ```ps
 $ ffuf -w wordlist -u FUZZ.example.com

@@ -6,9 +6,9 @@
 
 Common use cases are:
 
-* [Binary was given SUID/GUID permissions](perms.md#suidguid-bit)
-* [Binary was given capabilities](perms.md#capabilities)
-* [Binary was delegate sudo permission](sudo.md#administrative-privileges)
+* [Binary was given SUID/GUID permissions](/cybersecurity/red-team/s4.privesc/linux/topics/perms.md#suidguid-bit)
+* [Binary was given capabilities](/cybersecurity/red-team/s4.privesc/linux/topics/perms.md#capabilities)
+* [User was granted sudo permission to binary](/cybersecurity/red-team/s4.privesc/linux/topics/sudo.md)
 * ...
 
 Note that not every exploit may pop a shell. Some only allow you to edit some files, which may help getting root.

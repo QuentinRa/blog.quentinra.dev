@@ -58,7 +58,7 @@ Refer to [gobuster fuzz](https://github.com/OJ/gobuster#fuzz-mode) 👻.
 
 #### subdomains brute force
 
-For [subdomains brute force](/cybersecurity/red-team/s2.discovery/techniques/subdomains.md), you can use:
+For [subdomains brute force](/cybersecurity/red-team/s2.discovery/techniques/websites/subdomains.md), you can use:
 
 ```ps
 $ gobuster dns -d URL -w wordlist
@@ -69,7 +69,7 @@ $ gobuster dns -d example.com -w wordlist # example
 
 #### vhost brute force
 
-For [vhosts brute force](/cybersecurity/red-team/s2.discovery/techniques/vhosts.md), you can use:
+For [vhosts brute force](/cybersecurity/red-team/s2.discovery/techniques/websites/vhosts.md), you can use:
 
 ```ps
 $ gobuster vhost -u URL -w wordlist --append-domain

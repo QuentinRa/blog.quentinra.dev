@@ -34,5 +34,5 @@ meterpreter> help # See what you can do
 
 ➡️ Your shell may not be a meterpreter, so you may try to [upgrade it](../index.md#meterpreter).
 
-📚 Refer to [msfvenom](/cybersecurity/red-team/s3.exploitation/shell/tools/msfvenom.md) to find payloads.
+📚 Refer to [msfvenom](/cybersecurity/red-team/tools/frameworks/metasploit/msfvenom.md) to find payloads.
 </div></div>
