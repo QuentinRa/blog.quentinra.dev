@@ -12,7 +12,7 @@ Volatility is a popular free [memory forensics tool](/cybersecurity/blue-team/to
 
 ```ps
 $ pipx install git+https://github.com/volatilityfoundation/volatility3
-$ # patch - start
+$ # patch - setup.py using minimal requirements - start
 $ wget https://raw.githubusercontent.com/volatilityfoundation/volatility3/develop/requirements.txt -O /tmp/volatility3_requirements.txt
 $ pipx runpip volatility3 install -r /tmp/volatility3_requirements.txt
 $ # patch - end
@@ -20,12 +20,12 @@ $ vol -h
 ```
 </div><div>
 
-Use `-f` to load a memory dump. Assuming the memory dump is `mdump.sav` in the current folder, you would use:
+Use `-f` to load a memory dump. Use `-r pretty` for a prettier display.
 
 ```ps
 $ vol mdump.sav [...]
-$ vol -f mdump.dmp [...]
-$ vol -f mdump.dmp [...]
+$ vol -f mdump.sav [...]
+$ vol -r pretty -f mdump.sav [...]
 ```
 
 **Changes with V2**:
@@ -40,6 +40,8 @@ $ vol -f mdump.dmp [...]
 [![introduction_to_digital_forensics](../../../_badges/htb/introduction_to_digital_forensics.svg)](https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics)
 [![bpvolatility](../../../_badges/thm/bpvolatility.svg)](https://tryhackme.com/room/bpvolatility)
 [![adventofcyber4](../../../_badges/thm/adventofcyber4/day11.svg)](https://tryhackme.com/room/adventofcyber4)
+[![command_control_level_2](../../../_badges/rootme/forensic/command_control_level_2.svg)](https://www.root-me.org/en/Challenges/Forensic/Command-Control-level-2)
+[![command_control_level_5](../../../_badges/rootme/forensic/command_control_level_5.svg)](https://www.root-me.org/en/Challenges/Forensic/Command-Control-level-5)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -49,6 +51,7 @@ Assuming that the host is running Windows, we can use:
 
 ```ps
 $ vol [...] windows.info
+$ vol [...] windows.envars
 ```
 
 * ➡️ List running processes
@@ -61,6 +64,23 @@ $ vol [...] windows.cmdline
 
 👉 Malicious processes tend to hide themselves.
 
+* ➡️ List and dump registry entries
+
+```ps
+$ vol [...] windows.registry.hivelist.HiveList
+$ # either look in all registries, or in registry at --offset
+$ vol [...] windows.registry.printkey.PrintKey --key 'ControlSet001\Control\ComputerName\ComputerName'
+$ vol [...] windows.registry.printkey.PrintKey --offset 0xAAAAAAAA--key 'ControlSet001\Control\ComputerName\ComputerName'
+```
+
+* ➡️ List and dump passwords, hashes, keys, etc.
+
+```ps
+$ vol [...] windows.hashdump.Hashdump
+$ vol [...] windows.lsadump.Lsadump
+```
+</div><div>
+
 * ➡️ Scan a specific process
 
 ```ps
@@ -69,7 +89,6 @@ $ vol [...] windows.handles --pid XXX
 $ vol [...] windows.memmap --pid XXX --dump
 $ vol [...] windows.dlllist --pid XXX
 ```
-</div><div>
 
 * ➡️ Show processes in which some code may have been injected
 
@@ -101,5 +120,6 @@ Stuff that I found, but never read/used yet.
 
 * [THM/volatility](https://tryhackme.com/room/volatility)
 * [volatility-cheatsheet](https://blog.onfvp.com/post/volatility-cheatsheet/)
+* [aldeid wiki](https://www.aldeid.com/wiki/Volatility)
 </div><div>
 </div></div>
