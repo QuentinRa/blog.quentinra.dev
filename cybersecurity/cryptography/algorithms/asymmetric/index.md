@@ -190,11 +190,13 @@ An attacker would have a lot of prime numbers to test ($10^{497}$ for $n \approx
 You can install and use [RsaCtfTool](https://github.com/RsaCtfTool/RsaCtfTool) (5.0k ⭐):
 
 ```ps
-$ pip3 install gmpy2
+$ cd /opt
 $ sudo git clone https://github.com/RsaCtfTool/RsaCtfTool.git rsactftool
+$ cd rsactftool && pip install -r requirements.txt
 $ sudo ln -s /opt/rsactftool/RsaCtfTool.py /usr/bin/rsactftool
 $ rsactftool -h
 $ rsactftool --publickey key.pub --private
+$ rsactftool --publickey key.pub --private --output key.priv
 ```
 </div><div>
 

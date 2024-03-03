@@ -8,8 +8,14 @@
 
 Volatility is a popular free [memory forensics tool](/cybersecurity/blue-team/topics/forensics.md). There is a deprecated [python2](https://github.com/volatilityfoundation/volatility) version <small>(which is hard to install, 6.8k ⭐)</small>, and there is a [python3](https://github.com/volatilityfoundation/volatility3) version <small>(2.1k ⭐, in-development)</small>.
 
+<span class="small">*This method contains a few extra lines due to 'incorrect' `volatility3/setup.py`:*</span>
+
 ```ps
 $ pipx install git+https://github.com/volatilityfoundation/volatility3
+$ # patch - start
+$ wget https://raw.githubusercontent.com/volatilityfoundation/volatility3/develop/requirements.txt -O /tmp/volatility3_requirements.txt
+$ pipx runpip volatility3 install -r /tmp/volatility3_requirements.txt
+$ # patch - end
 $ vol -h
 ```
 </div><div>
@@ -17,10 +23,14 @@ $ vol -h
 Use `-f` to load a memory dump. Assuming the memory dump is `mdump.sav` in the current folder, you would use:
 
 ```ps
-$ vol -f mdump.sav [...]
+$ vol mdump.sav [...]
+$ vol -f mdump.dmp [...]
+$ vol -f mdump.dmp [...]
 ```
 
-Profiles from volatility 2 are now expressed as [plugins](https://volatility3.readthedocs.io/en/latest/volatility3.plugins.html). You will use `xxx.info` instead of `imageinfo` <small>(to learn about the operating system in use in the capture)</small> with `xxx` a value among `windows`, `linux`, or `mac`.
+**Changes with V2**:
+
+ 🗃️ Profiles from volatility 2 are now within the [plugins](https://volatility3.readthedocs.io/en/latest/volatility3.plugins.html) path. You will use `xxx.info` instead of `imageinfo` <small>(to learn about the operating system in use in the capture)</small> with `xxx` a value among `windows`, `linux`, or `mac`.
 </div></div>
 
 <hr class="sep-both">
