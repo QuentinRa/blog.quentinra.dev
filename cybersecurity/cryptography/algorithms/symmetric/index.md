@@ -45,6 +45,8 @@ These algorithms split the message into blocks of fixed size `n`. If a block is 
 
 ## Caesar cipher (<code>Code de César</code>)
 
+[![monoalphabetic_substitution_caesar](../../../_badges/rootme/cryptanalysis/monoalphabetic_substitution_caesar.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Monoalphabetic-substitution-Caesar)
+
 <div class="row row-cols-lg-2"><div>
 
 Caesar 👑 was replacing letters such as: $a \to d,\ b \to e,\ ...,\ z \to c$. We shift each letter by amount which is the key ($k=3$ here).

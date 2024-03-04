@@ -186,6 +186,7 @@ An attacker would have a lot of prime numbers to test ($10^{497}$ for $n \approx
 #### Cracking RSA
 
 [![weak_rsa](../../../_badges/htb-c/weak_rsa.svg)](https://app.hackthebox.com/challenges/Weak%20RSA)
+[![rsa_factorisation](../../../_badges/rootme/cryptanalysis/rsa_factorisation.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/RSA-Factorisation)
 
 You can install and use [RsaCtfTool](https://github.com/RsaCtfTool/RsaCtfTool) (5.0k ⭐):
 
@@ -199,6 +200,4 @@ $ rsactftool --publickey key.pub --private
 $ rsactftool --publickey key.pub --private --output key.priv
 ```
 </div><div>
-
-...
 </div></div>

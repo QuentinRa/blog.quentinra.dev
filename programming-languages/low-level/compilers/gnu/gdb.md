@@ -65,6 +65,7 @@ To **print** the value of a variable or an expression:
 (gdb) print ...
 (gdb) p ...
 (gdb) p[s]@n ...  # print n entries of an array
+(gdb) p main      # print the address of 'main'
 ```
 
 To **examine the memory**:
@@ -111,12 +112,13 @@ Refer to [GEF](https://github.com/hugsy/gef) <small>(6.3k ⭐)</small>.
 
 #### Additional Commands
 
-Query the value of a register.
+Query the value of a register, the list of functions, etc.
 
 ```txt!
 (gdb) info registers eip
 (gdb) info frame
 (gdb) info proc all
+(gdb) info functions
 ```
 </div><div>
 
