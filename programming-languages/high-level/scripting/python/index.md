@@ -64,7 +64,7 @@ $ pip3 install -U xxx # update
 🦄 To upgrade `pip`, you can use:
 
 ```ps
-$ python3 -m pip install --upgrade pip
+$ python3 -m pip install --upgrade pip # upgrade
 ```
 </div><div>
 
