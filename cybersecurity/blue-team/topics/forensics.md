@@ -143,6 +143,36 @@ The drive may be [encrypted using BitLocker](/operating-systems/windows/security
 
 <hr class="sep-both">
 
+## Android Digital Forensics
+
+<div class="row row-cols-lg-2"><div>
+
+#### Android Gesture Lock Pattern
+
+[![system_android_lock_pattern](../../_badges/rootme/cryptanalysis/system_android_lock_pattern.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/System-Android-lock-pattern)
+
+Android phones can be protected by a lock patterns. The  minimum length is often 4, while there is no maximum length.
+
+The top-left dot is index 0, the bottom-right is index 8. The sequence is SHA-1 hashed and store in `/data/system/gesture.key`.
+
+```shell!
+$ xxd -p data/system/gesture.key
+[...] <--- gesture hash here
+```
+
+The fatest way to crack one is to use a rainbow table:
+
+```ps
+$ wget https://github.com/mspreitz/ADEL/raw/master/GestureRainbowTable.db
+$ sqlite3 GestureRainbowTable.db 'Select * from RainbowTable where hash = "[...]"'
+```
+
+➡️ See also: [ADEL](https://github.com/mspreitz/ADEL) <small>(0.1k ⭐)</small>, [androidpatternlock](https://github.com/sch3m4/androidpatternlock) <small>(0.4k ⭐)</small>.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Malware Analysis
 
 [![introduction_to_malware_analysis](../../_badges/htb/introduction_to_malware_analysis.svg)](https://academy.hackthebox.com/course/preview/introduction-to-malware-analysis)
