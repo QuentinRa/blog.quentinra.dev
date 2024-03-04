@@ -271,6 +271,24 @@ It stores data in the "volume information" of each drive that has the feature en
 To manage them, right-click on a hard-drive, and select "Shadow copies." Shadow copies can be stored externally.
 
 ➡️ See also: [Volume Shadow Copy Service](https://learn.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service).
+
+#### PowerShell SecureString
+
+[![powershell_securestring](../../../cybersecurity/_badges/rootme/app_script/powershell_securestring.svg)](https://www.root-me.org/en/Challenges/App-Script/Powershell-SecureString)
+
+PowerShell SecureString class represents text that should be kept confidential. You can create one using:
+
+```ps
+PS> $SecurePassword = ConvertTo-SecureString "Toto" -AsPlainText -Force
+PS> $SecurePassword = Get-Content xxx.enc | ConvertTo-SecureString -key $(Get-Content "xxx.key")
+```
+
+To decrypt one, there are various methods:
+
+```ps
+PS> $UnsecurePassword = ConvertFrom-SecureString -SecureString $SecurePassword -AsPlainText
+PS> $UnsecurePassword = (New-Object PSCredential 0, $SecurePassword).GetNetworkCredential().Password
+```
 </div></div>
 
 <hr class="sep-both">

@@ -879,6 +879,7 @@ Decompress <small>(`x`=decompress, `v`=verbose, `f`=archive name)</small>
 
 ```ps
 $ tar -xvf archive_name.tar.gz
+$ tar -xvjf archive_name.tbz2
 ```
 
 ++++++
