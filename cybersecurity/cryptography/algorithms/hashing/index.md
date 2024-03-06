@@ -405,4 +405,10 @@ Stuff that I found, but never read/used yet.
 * Argon2
 * [penglab](https://github.com/mxrch/penglab)
 </div><div>
+
+[![easypeasyctf](../../../_badges/thm-p/easypeasyctf.svg)](https://tryhackme.com/room/easypeasyctf)
+
+Russian government GOST Hash Function
+
+* `john hash --format=gost --wordlist=wordlist.txt`
 </div></div>

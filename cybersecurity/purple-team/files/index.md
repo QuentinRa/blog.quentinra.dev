@@ -80,14 +80,22 @@ Steganography is a technique in which a person hides data inside the pixels of a
 [![c4ptur3th3fl4g](../../_badges/thm-p/c4ptur3th3fl4g.svg)](https://tryhackme.com/room/c4ptur3th3fl4g)
 [![chillhack](../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
 [![ctfcollectionvol1](../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
+[![lianyu](../../_badges/thm-p/lianyu.svg)](https://tryhackme.com/room/lianyu)
+[![easypeasyctf](../../_badges/thm-p/easypeasyctf.svg)](https://tryhackme.com/room/easypeasyctf)
 
 If the hidden content is not protected by a password, you can extract it using the `steghide` command or [zsteg](https://github.com/zed-0xff/zsteg)/[stegoveritas](https://github.com/bannsec/stegoVeritas) for PNGs:
 
 ```ps
-$ steghide info file        # check
-$ steghide extract -sf file # extract
-$ zsteg file                # refer to the help
-$ stegoveritas file         # refer to the help
+$ steghide info file.jpg        # check
+$ steghide extract -sf file.jpg # extract
+```
+```ps
+$ zsteg file.png                # refer to the help
+```
+```ps
+$ pipx install git+https://github.com/bannsec/stegoVeritas
+$ stegoveritas_install_deps
+$ stegoveritas file.png
 ```
 
 ⚠️ If prompted for a password, **try a blank password**.

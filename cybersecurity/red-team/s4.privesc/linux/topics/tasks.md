@@ -5,6 +5,7 @@
 [![linuxprivesc](../../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![commonlinuxprivesc](../../../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 [![startup](../../../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
+[![easypeasyctf](../../../../_badges/thm-p/easypeasyctf.svg)](https://tryhackme.com/room/easypeasyctf)
 [![bashed](../../../../_badges/htb-p/bashed.svg)](https://app.hackthebox.com/machines/Bashed)
 [![celestial](../../../../_badges/htb-p/celestial.svg)](https://app.hackthebox.com/machines/Celestial)
 [![bash_cron](../../../../_badges/rootme/app_script/bash_cron.svg)](https://www.root-me.org/en/Challenges/App-Script/Bash-cron)
@@ -18,6 +19,7 @@ Scheduled tasks on Linux are called [cron jobs](/operating-systems/linux/_knowle
 $ crontab -l
 # list every system-wide cron task
 $ ls -la /etc/cron*
+$ cat /etc/crontab
 ```
 
 ⚠️ System-wide cron tasks and user tasks are **not** stored in the same place. Only root can browse/list other users' cron tasks.

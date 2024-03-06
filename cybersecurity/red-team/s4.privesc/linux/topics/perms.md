@@ -35,6 +35,8 @@ Once you found a file with the SUID bit, either there is a known way to exploit 
 
 Pkexec is one of the programs that are part of PolicyKit (polkit).
 
+📚 Example Usage: `/usr/bin/pkexec bash`
+
 ➡️ See also: `cve_2021_4034_pwnkit_lpe_pkexec` on Metasploit.
 </div><div>
 

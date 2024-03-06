@@ -127,6 +127,12 @@ $ hydra -L user.list -P password.list ftp://IP -V -f
 * **vsFTPd 2.3.4**: has a backdoor as per [CVE-2011-2523](https://nvd.nist.gov/vuln/detail/CVE-2011-2523).
 
 * **CoreFTP 727** ([ref](https://nvd.nist.gov/vuln/detail/CVE-2022-22836)): can use PUT to arbitrarily upload files
+
+#### Additional Notes
+
+[![lianyu](../../../cybersecurity/_badges/thm-p/lianyu.svg)](https://tryhackme.com/room/lianyu)
+
+* **vsFTPd 3.0.2**: the FTP server may have been misconfigured, and allows access to any file on the host using "`cd ..`".
 </div></div>
 
 <hr class="sep-both">
