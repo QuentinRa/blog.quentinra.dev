@@ -183,9 +183,12 @@ Use [file transfer methods](/cybersecurity/red-team/_knowledge/topics/file_trans
 $ impacket-secretsdump -sam sam.hive -security security.hive -system system.hive LOCAL
 ```
 
-#### Dump Credentials Protected By the DPAPI
+<br>
+
+#### Dump Credentials Protected By The DPAPI
 
 [![dpapi_extracting_passwords](../../../cybersecurity/_badges/hacktricks/windows_hardening/windows_local_privilege_escalation/dpapi_extracting_passwords.svg)](https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation/dpapi-extracting-passwords)
+[![chrome](../../../cybersecurity/_badges/thm-p/chrome.svg)](https://tryhackme.com/room/chrome)
 
 The [Data Protection API](https://en.wikipedia.org/wiki/Data_Protection_API) (DPAPI) is a component of Windows that can be used to encrypt data, and is used by software such as for the Google Chrome saved passwords feature ([more on that here](/cybersecurity/red-team/s4.privesc/others/browser.md)).
 
@@ -226,7 +229,9 @@ mimikatz# vault::list
 mimikatz# vault::cred
 ```
 
-#### Dump Credentials From LSASS process
+<br>
+
+#### Dump Credentials From LSASS Process
 
 [![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 

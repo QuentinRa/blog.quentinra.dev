@@ -29,9 +29,7 @@ $ cat .mozilla/firefox/xxx.default-release/logins.json | jq.
 
 [![chrome](../../../_badges/thm-p/chrome.svg)](https://tryhackme.com/room/chrome)
 
-*👻 To-do: you can use mimikatz for all of this...*
-
-On Windows, you can find the user sensitive files at:
+On Windows, you can find the user browser sensitive files at:
 
 ```text!
 AppData\Local\Microsoft\Edge\User Data
@@ -39,18 +37,23 @@ AppData\Local\Google\Chrome\User Data
 AppData\Local\BraveSoftware\Brave-Browser\User Data\
 ```
 
-The [SQLite](/programming-languages/databases/relational/dbms/sqlite.md) database with user passwords is stored at `./<profile>/Login Data`. The default profile is called `Default`.
-
-Passwords are encrypted using a base64 encoded secret key in:
+Passwords are stored [SQLite](/programming-languages/databases/relational/dbms/sqlite.md) database in `./<profile>/Login Data` such as `./Default/Login Data`. They are encrypted using a base64-encoded key in `./Local State`. You can display it using:
 
 ```ps
 $ cat "./Local State" | jq | grep "encrypted_key"
-"encrypted_key": "<secret key here>"
+"encrypted_key": "<encrypted secret key here>"
 ```
 
-You can use [dcp](https://github.com/palmenas/dcp/tree/main) <small>(0.02k ⭐)</small>, a Linux port of [decrypt-chrome-passwords](https://github.com/ohyicong/decrypt-chrome-passwords/) <small>(0.7k ⭐)</small>, to decrypt passwords using the secret key:
+On Windows, the key is encrypted using [DPAPI master key](/operating-systems/windows/security/index.md#dump-credentials-protected-by-the-dpapi). Once you got it, you can decrypt the database using [pypykatz](/cybersecurity/red-team/tools/utilities/creds/pypykatz.md):
 
-```ps
-$ python3 dcp.py -S secret_key -P "./Default/Login Data"
+```shell!
+$ cat mkf # master kejson file created by pypykatz
+{
+    "backupkeys": {},
+    "masterkeys": {
+        "H-I-J-K-L": "master_key_here"
+    }
+}
+$ pypykatz dpapi chrome ./mkf "AppData/Local/Google/Chrome/User Data/Local State" --logindata "AppData/Local/Google/Chrome/User Data/Default/Login Data"
 ```
 </div></div>
