@@ -238,7 +238,7 @@ $ hashcat -a 0 -m 2100 hash wordlist # $DCC2$salt#username#hash
 To crack the passphrase of [GPG encrypted files](/cybersecurity/cryptography/commands/gpg.md), you must convert the file to a crackable file for john:
 
 ```shell!
-$ sudo gpg2john file.pgp > myhash
+$ gpg2john file.pgp > myhash
 $ john --format=gpg myhash --wordlist=wordlist 
 ```
 
