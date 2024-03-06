@@ -84,9 +84,11 @@ Other well-known decompilers:
 
 ## .NET Reverse Engineering
 
+[![chrome](../../_badges/thm-p/chrome.svg)](https://tryhackme.com/room/chrome)
+
 <div class="row row-cols-lg-2"><div>
 
-#### .NET De4Dot - Decompiler
+#### De4Dot - .NET Decompiler
 
 [![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 
@@ -94,19 +96,36 @@ You can use [de4dot](https://github.com/de4dot/de4dot) <small>(6.6k ⭐, 2020 �
 
 <br>
 
-#### .NET dnSpy - Debug/Editor
+#### dnSpy - .NET Debug/Editor
 
 [![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 
 You can use [dnSpy](https://github.com/dnSpy/dnSpy) <small>(24.8k ⭐, 2020 🪦)</small> to explore .NET source code.
+
+<br>
+
+#### dotPeek - .NET Decompiler/Editor
+
+You can use [JetBrains dotPeek](https://www.jetbrains.com/decompiler/) <small>(paid 💵)</small> to reverse your binary and explore the source code. Opening the file will automatically load the executable .NET modules.
 </div><div>
 
-#### .NET - Other Decompilers
+#### ILSpy - .NET Decompiler/Editor
 
-Other well-known decompilers:
+[ILSpy](https://github.com/icsharpcode/ILSpy) <small>(19.8k ⭐)</small> is the most popular open-source .NET decompiler. It can be integrated in editors such as [VSCode](https://code.visualstudio.com/) or standalone editors.
 
-* [ILSpy](https://github.com/icsharpcode/ILSpy) <small>(19.6k ⭐)</small>
-* [JetBrains dotPeek](https://www.jetbrains.com/decompiler/) <small>(paid)</small>
+On Linux, you can use the [AvaloniaILSpy](https://github.com/icsharpcode/AvaloniaILSpy) <small>(1.4k ⭐)</small> port.
+
+```shell!
+$ cd /tmp
+$ # download a release at https://github.com/icsharpcode/AvaloniaILSpy/releases
+$ unzip Linux.x64.Release.zip && unzip ILSpy-linux-x64-Release.zip
+$ sudo mv artifacts/linux-x64/ /opt/AvaloniaILSpy
+$ rm -rf Linux.x64.Release.zip ILSpy-linux-x64-Release.zip artifacts # cleanup
+$ sudo ln -s /opt/AvaloniaILSpy/ILSpy /usr/local/bin/ILSpy
+$ ILSpy # run
+```
+
+Opening the file will automatically load the executable .NET modules.
 </div></div>
 
 <hr class="sep-both">

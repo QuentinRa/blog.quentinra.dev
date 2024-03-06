@@ -19,6 +19,7 @@ For instance, we can use API Testing Platforms:
 * [requestbin](https://public.requestbin.com/r/) <small>(HTTP 🌍)</small>
 * [postbin](https://www.toptal.com/developers/postbin/) <small>(HTTP 🌍)</small>
 * [ngrok](https://ngrok.com/) <small>(HTTP 🌍 and TCP ⭐, account required 🪦)</small>
+* [requestinspector](https://requestinspector.com/) <small>(HTTP 🌍)</small>
 * ...
 
 ```ps
