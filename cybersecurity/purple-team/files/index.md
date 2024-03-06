@@ -70,14 +70,16 @@ Software                        : www.inkscape.org
 
 ## Steganography
 
+<div class="row row-cols-lg-2"><div>
+
+Steganography is a technique in which a person hides data inside the pixels of an image. It's used to secretly transfer data.
+
+#### Extract Data From An Image
+
 [![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 [![c4ptur3th3fl4g](../../_badges/thm-p/c4ptur3th3fl4g.svg)](https://tryhackme.com/room/c4ptur3th3fl4g)
 [![chillhack](../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
 [![ctfcollectionvol1](../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
-
-<div class="row row-cols-lg-2"><div>
-
-Steganography is a technique in which a person hides data inside the pixels of an image. It's used to secretly transfer data.
 
 If the hidden content is not protected by a password, you can extract it using the `steghide` command or [zsteg](https://github.com/zed-0xff/zsteg)/[stegoveritas](https://github.com/bannsec/stegoVeritas) for PNGs:
 
@@ -90,66 +92,55 @@ $ stegoveritas file         # refer to the help
 
 ⚠️ If prompted for a password, **try a blank password**.
 
-💎 It's possible that when using the `strings` command we see some interesting parts of the hidden content.
-</div><div>
-
-Otherwise, you may try to brute force the password using tools such as [stegseek](https://github.com/RickdeJager/stegseek) <small>(0.8k ⭐)</small> or [StegCracker](https://github.com/Paradoxis/StegCracker) <small>(0.5k ⭐, 2020 🪦)</small>.
+Otherwise, you may try to brute force the password using tools such as [stegseek](https://github.com/RickdeJager/stegseek) <small>(0.9k ⭐)</small> or [StegCracker](https://github.com/Paradoxis/StegCracker) <small>(0.5k ⭐, 2020 🪦)</small>.
 
 ```ps
-# https://github.com/RickdeJager/stegseek
 $ stegseek file wordlist
+```
+```ps
 $ stegcracker file wordlist
 ```
 
-**Additional tools** 👻
+💎 It's possible that when using the `strings` command we see some interesting parts of the hidden content.
+</div><div>
 
-* See also [futureboy](https://futureboy.us/stegano/) steg tools.
-* See also [330k encoders](https://330k.github.io/misc_tools/unicode_steganography.html) <small>(Unicode Steganography)</small>
-* See also [steganographr](https://neatnik.net/steganographr/) <small>(zero-width characters)</small>
-* See also: [stegsolve](https://wiki.bi0s.in/steganography/stegsolve/) <small>(hidden text)</small>
-</div></div>
-
-<hr class="sep-both">
-
-## File steganography
+#### Extract Files Nested In Other Files
 
 [![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 [![ctfcollectionvol1](../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
 [![exif_thumbnail](../../_badges/rootme/steganography/exif_thumbnail.svg)](https://www.root-me.org/en/Challenges/Steganography/EXIF-Thumbnail)
 
-<div class="row row-cols-lg-2"><div>
-
-File steganography is a subcategory of steganography in which a file is hidden in another file. Using [binwalk](https://github.com/ReFirmLabs/binwalk) <small>(10.0k ⭐)</small> you can investigate:
+Using [binwalk](https://github.com/ReFirmLabs/binwalk) <small>(10.0k ⭐)</small> you can investigate nested files:
 
 ```ps
 $ binwalk file.png
 # from xxx to yyy: PNG
 # from zzz to ttt: ZIP
-```
-
-And you can extract files using `-e`
-
-```ps
 $ binwalk -e file.png
 ```
 
-If the image is a thumbnail, you could also use:
+You can alternatively use `dd`:
+
+```ps
+# extract the file by skipping the zzz first bytes
+$ dd bs=zzz skip=1 if=file.png of=file.zip
+<output is file.zip>
+```
+
+If the image is a thumbnail, you could alternatively use:
 
 ```ps
 $ exiftool -b -ThumbnailImage file.jpg > extracted.jpg
 ```
-</div><div>
 
-You can alternatively use `dd` to extract a file:
+#### Additional Steganography Tools 
 
-```ps
-# extract the size by skipping the 34562 bytes
-$ dd bs=34562 skip=1 if=file.png of=file.zip
-$ ls
-file.png file.zip
-```
+[![ctfcollectionvol1](../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
 
-👉 If there was a ZIP inside the PNG, and you can't unzip it, try with `7z x xxx.zip` or use `dd` to extract the file.
+* See also [futureboy](https://futureboy.us/stegano/) steg tools.
+* See also [330k encoders](https://330k.github.io/misc_tools/unicode_steganography.html) <small>(Unicode Steganography)</small>
+* See also [steganographr](https://neatnik.net/steganographr/) <small>(zero-width characters)</small>
+* See also: [stegsolve](https://wiki.bi0s.in/steganography/stegsolve/) <small>(hidden text)</small>
 </div></div>
 
 <hr class="sep-both">
