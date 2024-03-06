@@ -11,6 +11,8 @@ To run SQL, either use `sqlite3 users.db` to open a prompt, or directly run a qu
 * SQLite version v1 🔎: `file users.db`
 * SQLite version v2 🔎: `select sqlite_version()`
 * Help 🃏: `.help`
+
+✍️ You can use [sqlitebrowser](https://github.com/sqlitebrowser/sqlitebrowser) <small>(19.7k ⭐)</small> to visualize the database.
 </div><div>
 
 Common commands:

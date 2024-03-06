@@ -54,7 +54,7 @@ $ cat mkf # master kejson file created by pypykatz
         "H-I-J-K-L": "master_key_here"
     }
 }
-$ pypykatz dpapi chrome ./mkf "AppData/Local/Google/Chrome/User Data/Local State" --logindata "AppData/Local/Google/Chrome/User Data/Default/Login Data"
+$ pypykatz dpapi chrome ./mkf "./Local State" --logindata "./Default/Login Data"
 ```
 
 ➡️ We can use [decrypt-chrome-passwords](https://github.com/ohyicong/decrypt-chrome-passwords/) <small>(0.7k ⭐)</small> on Windows that actually automates the whole process.
