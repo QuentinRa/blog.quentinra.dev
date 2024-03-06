@@ -223,8 +223,21 @@ $ hashcat -a 0 -m 3000 myhash # LM
 There are also Domain Cached Credentials.
 
 ```ps
-$ hashcat -a 0 -m 1100 hash wordlist # password:username
-$ hashcat -a 0 -m 2100 hash wordlist # $DCC2$salt#username#hash
+$ hashcat -a 0 -m 1100 myhash wordlist # password:username
+$ hashcat -a 0 -m 2100 myhash wordlist # $DCC2$salt#username#hash
+```
+
+<br>
+
+#### Windows DPAPI Masterkey file
+
+[![chrome](../../../_badges/thm-p/chrome.svg)](https://tryhackme.com/room/chrome)
+
+To get the user password from the [DPAPI](/operating-systems/windows/security/index.md#dump-credentials-protected-by-the-dpapi) Master key file, assuming the SID is `S-A-B-C-D-E-F-G` and the filename is `H-I-J-K-L`:
+
+```shell!
+$ /usr/share/john/DPAPImk2john.py --masterkey H-I-J-K-L --sid S-A-B-C-D-E-F-G --context local > myhash
+$ john myhash --wordlist=wordlist
 ```
 
 <br>

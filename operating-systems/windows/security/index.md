@@ -187,7 +187,24 @@ $ impacket-secretsdump -sam sam.hive -security security.hive -system system.hive
 
 [![dpapi_extracting_passwords](../../../cybersecurity/_badges/hacktricks/windows_hardening/windows_local_privilege_escalation/dpapi_extracting_passwords.svg)](https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation/dpapi-extracting-passwords)
 
-...
+The [Data Protection API](https://en.wikipedia.org/wiki/Data_Protection_API) (DPAPI) is a component of Windows that can be used to encrypt data, and is used by software such as for the Google Chrome saved passwords feature ([more on that here](/cybersecurity/red-team/s4.privesc/others/browser.md)).
+
+The user password is encrypted to generate a **DPAPI master key**, usually stored in `%appdata%\Roaming\Microsoft\Protect\` <small>(hidden)</small>.
+
+* 📚 Each folder name is from the [SID](#security-identifier-sid) of the associated user
+* 📚 The file inside the SID folder is the user DPAPI master key file
+* 🔐 We can [crack the user password from the master key file](/cybersecurity/cryptography/algorithms/hashing/index.md)
+* 🔐 If we have the user password, we can extract the master key. With the SID `S-A-B-C-D-E-F-G` and the filename `H-I-J-K-L`:
+
+```shell!
+$ pypykatz dpapi prekey password S-A-B-C-D-E-F-G password -o prekey
+$ pypykatz dpapi masterkey H-I-J-K-L prekey -o mkf
+```
+```shell!
+$ impacket-dpapi masterkey -file H-I-J-K-L -sid S-A-B-C-D-E-F-G -password password
+```
+
+* 🔐 We can extract the master key from the LSASS process memory
 </div><div>
 
 #### Dump Credentials From The Credential Manager
