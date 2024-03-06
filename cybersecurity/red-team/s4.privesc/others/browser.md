@@ -29,6 +29,8 @@ $ cat .mozilla/firefox/xxx.default-release/logins.json | jq.
 
 [![chrome](../../../_badges/thm-p/chrome.svg)](https://tryhackme.com/room/chrome)
 
+*👻 To-do: you can use mimikatz for all of this...*
+
 On Windows, you can find the user sensitive files at:
 
 ```text!

