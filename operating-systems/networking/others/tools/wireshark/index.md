@@ -94,6 +94,7 @@ In the bottom right corner of the newly opened window, you can navigate through 
 
 [![intro_to_network_traffic_analysis](../../../../../cybersecurity/_badges/htb/intro_to_network_traffic_analysis.svg)](https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis)
 [![wireshark](../../../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
+[![chrome](../../../../../cybersecurity/_badges/thm-p/chrome.svg)](https://tryhackme.com/room/chrome)
 
 * **Download HTTP file**: File > Export Objects > HTTP
 * **Replace MAC with hostname**: View > Name Resolution > Resolve Physical Addresses
