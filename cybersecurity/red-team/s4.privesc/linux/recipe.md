@@ -8,6 +8,7 @@ First, find who you are, and if you are in interesting groups:
 
 ```ps
 $ id # sudo? docker? adm?
+# ⚠️ not being in sudo doesn't exclude custom configurations
 ```
 
 If you're in `sudo`, try running sudo without/with password.

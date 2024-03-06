@@ -9,6 +9,7 @@ For starter, you may use <kbd>CTRL+U</kbd> or Right-click and "View page source"
 ## HTML tags
 
 [![walkinganapplication](../../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
+[![ctfcollectionvol1](../../../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
 [![html_disabled_buttons](../../../../_badges/rootme/web_client/html_disabled_buttons.svg)](https://www.root-me.org/en/Challenges/Web-Client/HTML-disabled-buttons)
 
 <div class="row row-cols-lg-2"><div>

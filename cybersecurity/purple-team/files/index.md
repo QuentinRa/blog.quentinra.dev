@@ -46,6 +46,7 @@ PDF version:    1.7
 #### Image metadata
 
 [![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
+[![ctfcollectionvol1](../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
 [![exif_metadata](../../_badges/rootme/steganography/exif_metadata.svg)](https://www.root-me.org/fr/Challenges/Steganographie/EXIF-Metadata)
 
 You can use `exiftool`, [jimpl](https://jimpl.com/), [IMV](https://www.geekyhumans.com/tools/image-metadata-viewer)... Also, do a reverse image search 🧵.
@@ -72,6 +73,7 @@ Software                        : www.inkscape.org
 [![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 [![c4ptur3th3fl4g](../../_badges/thm-p/c4ptur3th3fl4g.svg)](https://tryhackme.com/room/c4ptur3th3fl4g)
 [![chillhack](../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
+[![ctfcollectionvol1](../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -104,6 +106,7 @@ $ stegcracker file wordlist
 * See also [futureboy](https://futureboy.us/stegano/) steg tools.
 * See also [330k encoders](https://330k.github.io/misc_tools/unicode_steganography.html) <small>(Unicode Steganography)</small>
 * See also [steganographr](https://neatnik.net/steganographr/) <small>(zero-width characters)</small>
+* See also: [stegsolve](https://wiki.bi0s.in/steganography/stegsolve/) <small>(hidden text)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -111,6 +114,7 @@ $ stegcracker file wordlist
 ## File steganography
 
 [![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
+[![ctfcollectionvol1](../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
 [![exif_thumbnail](../../_badges/rootme/steganography/exif_thumbnail.svg)](https://www.root-me.org/en/Challenges/Steganography/EXIF-Thumbnail)
 
 <div class="row row-cols-lg-2"><div>

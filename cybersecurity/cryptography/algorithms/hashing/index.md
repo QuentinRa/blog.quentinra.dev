@@ -247,6 +247,7 @@ $ john myhash --wordlist=wordlist
 [![networksecurityprotocols](../../../_badges/thmp/networksecurityprotocols.svg)](https://tryhackme.com/room/networksecurityprotocols)
 [![linuxstrengthtraining](../../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 [![encryptioncrypto101](../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
+[![tomghost](../../../_badges/thm-p/tomghost.svg)](https://tryhackme.com/room/tomghost)
 
 To crack the passphrase of [GPG encrypted files](/cybersecurity/cryptography/commands/gpg.md), you must convert the file to a crackable file for john:
 

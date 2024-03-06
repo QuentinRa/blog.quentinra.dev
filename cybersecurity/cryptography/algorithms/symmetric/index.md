@@ -46,6 +46,7 @@ These algorithms split the message into blocks of fixed size `n`. If a block is 
 ## Caesar cipher (<code>Code de César</code>)
 
 [![monoalphabetic_substitution_caesar](../../../_badges/rootme/cryptanalysis/monoalphabetic_substitution_caesar.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Monoalphabetic-substitution-Caesar)
+[![ctfcollectionvol1](../../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -91,6 +92,8 @@ Similar to Caesar's cipher. Each letter is associated with another: $a \to w,\ b
 
 ## Vigenère cipher (<code>Cryptage en bloc de Vigenère</code>)
 
+[![ctfcollectionvol1](../../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
+
 <div class="row row-cols-lg-2"><div>
 
 This is a Caesar cipher but split into blocs. The goal was to prevent frequency analysis because the same letter will *most likely* be enciphered as different ciphertext letters.
@@ -125,6 +128,8 @@ This is a Caesar cipher but split into blocs. The goal was to prevent frequency 
 <hr class="sep-both">
 
 ## One Time Pad (`Masque jetable`)
+
+[![ctfcollectionvol1](../../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -194,7 +199,7 @@ Using this mode with AES, we introduce a new parameter IV <small>(unique and not
 
 <div class="row row-cols-lg-2"><div>
 
-#### XOR Attacks
+#### ChaCha20 (XOR)
 
 [![the-last-dance](../../../_badges/htb-c/the-last-dance.svg)](https://app.hackthebox.com/challenges/the-last-dance)
 

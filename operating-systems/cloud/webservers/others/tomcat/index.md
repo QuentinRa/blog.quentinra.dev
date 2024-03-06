@@ -121,6 +121,7 @@ $ python tomcat.py --port 8009 "version" IP
 #### AJP Well-known CVEs
 
 [![attacking_common_applications](../../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+[![tomghost](../../../../../cybersecurity/_badges/thm-p/tomghost.svg)](https://tryhackme.com/room/tomghost)
 
 * [CVE-2020-1938](https://nvd.nist.gov/vuln/detail/CVE-2020-1938): unauthenticated LFI that can be used to read files in the webroot, such as `WEB-INF/web.xml` or `WEB-INF/cgi/xxx.bat`. Apache JServ which usually runs on port `8009` must be exposed.
 

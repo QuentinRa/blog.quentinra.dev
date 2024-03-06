@@ -18,6 +18,7 @@
 [![ctf](../../../../_badges/thm-p/ctf.svg)](https://tryhackme.com/room/ctf)
 [![mustacchio](../../../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
 [![chillhack](../../../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
+[![tomghost](../../../../_badges/thm-p/tomghost.svg)](https://tryhackme.com/room/tomghost)
 ![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 [![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)

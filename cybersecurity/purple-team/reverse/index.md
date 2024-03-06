@@ -85,6 +85,7 @@ Other well-known decompilers:
 ## .NET Reverse Engineering
 
 [![chrome](../../_badges/thm-p/chrome.svg)](https://tryhackme.com/room/chrome)
+[![ctfcollectionvol1](../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
 
 <div class="row row-cols-lg-2"><div>
 
