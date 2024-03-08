@@ -151,6 +151,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [cyberhack](https://cyberhack.site/)
 * [application.security](https://application.security/)
 * [securecodewarrior](https://www.securecodewarrior.com/)
+* [hacksplaining](https://www.hacksplaining.com/)
 * Udemy, Coursera...
 </div></div>
 
@@ -215,33 +216,11 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [amandinegh](https://amandinegh.gitbook.io/cyberadventure/)
 * [PENTESTING-BIBLE](https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE) (11k ⭐)
 * [Infosec_Reference](https://github.com/rmusser01/Infosec_Reference) (4.6k ⭐)
-* [cyber-security-base-19](https://github.com/rage/cyber-security-base-19)
-* [ctf101.org](https://ctf101.org/)
-* [zachkenney](https://zachkenney.me/)
-* [n3t-hunt3r](https://n3t-hunt3r.gitbook.io/pentest-book/)
-* [ropnop](https://blog.ropnop.com/)
-* [infosecinstitute](https://resources.infosecinstitute.com/)
-* [hacksplaining](https://www.hacksplaining.com/lessons)
-* [complexsecurity](https://complexsecurity.io/)
-* [cnil](https://www.cnil.fr/fr/cybersecurite)
-* [unicornsec](https://unicornsec.com/)
-* [n0w4n](https://n0w4n.nl/)
-* [hackedpatched](https://hackedpatched.wordpress.com/)
-* [xavag3djang0](https://xavag3djang0.github.io/)
 </div><div>
 
 * [auth0.com](https://auth0.com/blog/)
 * [MayADevBe](https://mayadevbe.me/)
 * [ryanplatten](https://ryanplatten.com/various-journal-entries/)
-* [kalilinuxtutorials](https://kalilinuxtutorials.com/)
-* [mrash.co](https://mrash.co/)
-* [ctf.ac](https://ctf.ac/)
-* [narancsblog](https://narancsblog.com/category/thm/)
-* [xapax](https://xapax.github.io/security/#)
-* [total-oscp-guide](https://github.com/alexb49/total-oscp-guide)
-* [fr33s0ul.tech](https://fr33s0ul.tech/index.html)
-* [yberethical](https://blog.cyberethical.me/)
-* [dailycompute](https://dailycompute.net/)
 * [hacking-capture](https://hacking-capture.github.io/)
 * [steflan](https://steflan-security.com/)
 * [g0tmi1k](https://blog.g0tmi1k.com/)
@@ -268,7 +247,6 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [hackofalltrades](https://hackofalltrades.dev/)
 * [cybersecnerds](https://cybersecnerds.com/)
 * [raw.pm](https://blog.raw.pm/)
-* [nairitya03](https://nairitya03.github.io/CTF-WriteUps/)
 * [robertmuwanga](https://robertmuwanga.netlify.app/)
 * [hacktoday](https://hacktoday.io/)
 * [ThePacketBender](https://github.com/ThePacketBender/notes)
@@ -287,9 +265,6 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [6rian](https://www.6rian.com/)
 * [cybersecbits](https://cybersecbits.com/)
 * [jarrodrizor](https://jarrodrizor.com/)
-* [0xv3r4x](https://0xv3r4x.github.io/)
-* [trailofbits](https://trailofbits.github.io/ctf/)
-* [lkmidas](https://lkmidas.github.io/)
 * [bees](https://bees.substack.com/archive)
 * [goron](https://gitlab.com/goron/security_whitepapers/-/tree/master)
 * [pentestlab](https://pentestlab.blog/)
@@ -299,7 +274,6 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [0xnirvana](https://0xnirvana.gitbook.io/writeups/)
 * [robertmuwanga](https://robertmuwanga.netlify.app/)
 * [niekdang](https://niekdang.wordpress.com/)
-* [0xdf](https://0xdf.gitlab.io/)
 * [highon.coffee](https://highon.coffee/)
 * [infinitelogins](https://infinitelogins.com/)
 * [4nuit](https://github.com/4nuit/Hacking)
@@ -318,5 +292,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [darknetdiaries](https://darknetdiaries.com/)
+* [infosecinstitute](https://resources.infosecinstitute.com/)
+* [cnil](https://www.cnil.fr/fr/cybersecurite)
 </div><div>
 </div></div>
