@@ -171,19 +171,34 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [h0axhacks](https://h0axhacks.com/)
 * [bluewalle](https://bluewalle.github.io/)
 * [sh1n0bi](https://sh1n0bi.github.io/blog)
+* [complexsecurity](https://complexsecurity.io/hack-the-box)
 
 #### TryHackMe Write-Ups
 
 * [dhilipsanjay](https://dhilipsanjay.gitbook.io/ctfs/)
 * [TheDutchHacker](https://www.thedutchhacker.com/category/write-ups/tryhackme/)
 * [bluewalle](https://bluewalle.github.io/)
+* [fr33s0ul](https://fr33s0ul.tech/tag/ctf/)
+* [nairitya03](https://nairitya03.github.io/CTF-WriteUps/)
+* [0xv3r4x](https://0xv3r4x.github.io/)
+* [complexsecurity](https://complexsecurity.io/try-hack-me)
+
+#### PortSwigger Write-Ups
+
+* [complexsecurity](https://complexsecurity.io/portswigger-academy)
 </div><div>
+
+#### CTF Write-Ups 🤖
+
+* [lkmidas](https://lkmidas.github.io/)
+* [trailofbits](https://trailofbits.github.io/ctf/exploits/binary1.html)
 
 #### Useful bits of knowledge 🌱
 
 Still at human scale and useful to learn some topics.
 
 * [0xrick](https://0xrick.github.io/categories/#hack-the-box), [mikadmin](https://mikadmin.fr/blog/) <small>(20 or so)</small>
+* [n3t-hunt3r](https://n3t-hunt3r.gitbook.io/pentest-book/), [ctf101](https://ctf101.org/) <small>(20 or so)</small>
 * [tbhaxor.com](https://tbhaxor.com/) <small>(150 articles or so)</small>
 </div></div>
 
@@ -220,7 +235,6 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [ryanplatten](https://ryanplatten.com/various-journal-entries/)
 * [kalilinuxtutorials](https://kalilinuxtutorials.com/)
 * [mrash.co](https://mrash.co/)
-* [sckull](https://sckull.github.io/)
 * [ctf.ac](https://ctf.ac/)
 * [narancsblog](https://narancsblog.com/category/thm/)
 * [xapax](https://xapax.github.io/security/#)
@@ -228,7 +242,6 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [fr33s0ul.tech](https://fr33s0ul.tech/index.html)
 * [yberethical](https://blog.cyberethical.me/)
 * [dailycompute](https://dailycompute.net/)
-* [ammmy7580](https://ammmy7580.gitbook.io/)
 * [hacking-capture](https://hacking-capture.github.io/)
 * [steflan](https://steflan-security.com/)
 * [g0tmi1k](https://blog.g0tmi1k.com/)
@@ -269,7 +282,6 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [codecurmudgeon](https://codecurmudgeon.com/wp/)
 </div><div>
 
-* [deltreey](https://deltreey.blogspot.com/)
 * [bryce-simpson](https://bryce-simpson.netlify.app/)
 * [hambyhacks](https://hambyhacks.github.io/)
 * [6rian](https://www.6rian.com/)
@@ -281,7 +293,6 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [bees](https://bees.substack.com/archive)
 * [goron](https://gitlab.com/goron/security_whitepapers/-/tree/master)
 * [pentestlab](https://pentestlab.blog/)
-* [enigma0x3](https://enigma0x3.net/)
 * [hackingarticles](https://www.hackingarticles.in)
 * [motasem](https://motasem-notes.net/)
 * [exploits.run](https://exploits.run/)
