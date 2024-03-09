@@ -183,6 +183,8 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [nairitya03](https://nairitya03.github.io/CTF-WriteUps/)
 * [0xv3r4x](https://0xv3r4x.github.io/)
 * [complexsecurity](https://complexsecurity.io/try-hack-me)
+* [mrash](https://mrash.co)
+* [narancsblog](https://narancsblog.com/)
 
 #### PortSwigger Write-Ups
 
@@ -216,6 +218,8 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [amandinegh](https://amandinegh.gitbook.io/cyberadventure/)
 * [PENTESTING-BIBLE](https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE) (11k ⭐)
 * [Infosec_Reference](https://github.com/rmusser01/Infosec_Reference) (4.6k ⭐)
+* [xapax](https://github.com/xapax/security)
+* [kalilinuxtutorials](https://kalilinuxtutorials.com/)
 </div><div>
 
 * [auth0.com](https://auth0.com/blog/)

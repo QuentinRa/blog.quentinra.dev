@@ -66,6 +66,14 @@ $ pip3 install -U xxx # update
 ```ps
 $ python3 -m pip install --upgrade pip # upgrade
 ```
+
+🐲 To install python application, you can use `pipx` that automatically install the application within a [venv](#venv).
+
+```ps
+$ sudo apt install pipx
+$ pipx ensurepath
+$ pipx install git+https://github.com/xxx/yyy.git
+```
 </div><div>
 
 #### Imports
