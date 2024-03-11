@@ -139,10 +139,19 @@ $ sudo setcap --drop=cap_setuid your_binary
 ## Special Groups
 
 [![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![busqueda](../../../../_badges/htb-p/busqueda.svg)](https://app.hackthebox.com/machines/Busqueda)
+[![gamingserver](../../../../_badges/thm-p/gamingserver.svg)](https://tryhackme.com/room/gamingserver)
+[![chillhack](../../../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
 
 <div class="row row-cols-lg-2"><div>
 
-Users in the `adm` group are able to read all logs. Log management utilities such as [logrotate](https://linux.die.net/man/8/logrotate) may be vulnerable. See also: [logrotten](https://github.com/whotwagner/logrotten).
+DO NOT ASSUME ANYTHING. A user not in a group <small>(not in the `sudo` group</small>, may still be able to perform the action <small>(e.g. run sudo)</small>.
+
+* Users in the `adm` group are able to read all logs. Log management utilities such as [logrotate](https://linux.die.net/man/8/logrotate) may be vulnerable. See also: [logrotten](https://github.com/whotwagner/logrotten).
+
+* See also: [Docker socket/permissions](/operating-systems/others/virtualization/docker/index.md#docker-pentester-notes-)
+
+* See also: [LXC/LXD permissions](/operating-systems/others/virtualization/lxc/index.md#pentester-notes-)
 </div><div>
 </div></div>
 

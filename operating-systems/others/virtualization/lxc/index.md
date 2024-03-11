@@ -47,6 +47,7 @@ $ lxc image import xxx.tar.gz --alias image_name
 
 #### LXD Group Privilege Escalation
 
+[![linuxprivilegeescalation](../../../../cybersecurity/_badges/hacktricks/linux_hardening/privilege_escalation/interesting_groups_linux_pe/lxd_privilege_escalation.svg)](https://book.hacktricks.xyz/linux-hardening/privilege-escalation/interesting-groups-linux-pe/lxd-privilege-escalation)
 [![linuxprivilegeescalation](../../../../cybersecurity/_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![gamingserver](../../../../cybersecurity/_badges/thm-p/gamingserver.svg)](https://tryhackme.com/room/gamingserver)
 
