@@ -105,6 +105,22 @@ debugfs> lsdel
 ```shell!
 $ testdisk data.bin
 ```
+
+<br>
+
+#### Investigate A Disk Dump
+
+Run the command `fdisk -l mydisk` to learn more about the disk such as the unit size and the partitions <small>(note down the Start value)</small>.
+
+You can mount it using `losetup`. Use `losetup -a` to check mounted disks. Assuming `/dev/loop0` is not used and the partition starts at `xxx`:
+
+```
+$ sudo losetup -o $((xxx*512)) /dev/loop0 mydisk
+$ sudo mount -t vfat /dev/loop0 /mnt/mydisk
+$ cd /mnt/mydisk # do what you want
+$ sudo umount /mnt/mydisk
+$ sudo losetup -d /dev/loop0
+```
 </div><div>
 
 #### Investigate A Virtual Machine Dump

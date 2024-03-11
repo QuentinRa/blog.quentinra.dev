@@ -211,6 +211,8 @@ admin, administrator, wpadmin, root, adm
 /usr/share/seclists/Usernames/top-usernames-shortlist.txt
 ```
 
+📚 Common tools are: [username-anarchy](https://github.com/urbanadventurer/username-anarchy) <small>(0.6k ⭐, 2016 🪦)</small> and [username_generator](https://github.com/shroudri/username_generator) <small>(0.04k ⭐)</small>.
+
 **Passwords**
 
 ```text!
@@ -226,8 +228,8 @@ admin, administrator, wpadmin, root, adm
 ```text!
 /usr/share/seclists/Passwords/Default-Credentials/ftp-betterdefaultpasslist.txt
 /usr/share/metasploit-framework/data/wordlists/http_default_pass.txt
-$ ll /usr/share/seclists/Passwords/Default-Credentials/*passlist.txt
-$ # see also: short username/password wordlists
+/usr/share/seclists/Passwords/Default-Credentials/*passlist.txt
+# see also: short username/password wordlists
 ```
 
 📚 You might want to check out [cirt](https://cirt.net/passwords), [default-password](https://default-password.info/), and [data recovery](https://datarecovery.com/rd/default-passwords/). See also: [Default Credentials Cheat Sheet](https://github.com/ihebski/DefaultCreds-cheat-sheet) <small>(5.1k ⭐)</small>.
@@ -296,7 +298,6 @@ Stuff that I found, but never read/used yet.
 * [Auto_Wordlists](https://github.com/carlospolop/Auto_Wordlists)
 * [big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings) <small>(45.5k ⭐)</small>
 * [fuzzdb](https://github.com/fuzzdb-project/fuzzdb) <small>(7.8k ⭐, 2020 🪦)</small>
-* [username-anarchy](https://github.com/urbanadventurer/username-anarchy)
 * [Security-Wordlist](https://github.com/DragonJAR/Security-Wordlist/)
 
 Mangling
