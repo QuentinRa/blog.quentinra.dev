@@ -15,7 +15,7 @@ All modules support multi-threading using `-t <nb_threads>`.
 The documentation for each module:
 
 * [AXFR](https://github.com/QuentinRa/onectf/blob/main/docs/axfr.md): find hidden subdomains vulnerable to zone transfer
-* [Crawl](https://github.com/QuentinRa/onectf/blob/main/docs/crawl): HTML web crawler
+* [Crawl](https://github.com/QuentinRa/onectf/blob/main/docs/crawl.md): HTML web crawler
 * [Hosts](https://github.com/QuentinRa/onectf/blob/main/docs/hosts.md): host file management utility
 * [Request](https://github.com/QuentinRa/onectf/blob/main/docs/request.md): request encoder
 * [uffuf](https://github.com/QuentinRa/onectf/blob/main/docs/uffuf.md): file upload fuzzer

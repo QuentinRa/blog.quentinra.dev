@@ -86,6 +86,8 @@ Other well-known decompilers:
 
 [![chrome](../../_badges/thm-p/chrome.svg)](https://tryhackme.com/room/chrome)
 [![ctfcollectionvol1](../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
+[![pe_dotnet_0_protection](../../_badges/rootme/cracking/pe_dotnet_0_protection.svg)](https://www.root-me.org/en/Challenges/Cracking/PE-DotNet-0-protection)
+[![pe_dotnet_basic_anti_debug](../../_badges/rootme/cracking/pe_dotnet_basic_anti_debug.svg)](https://www.root-me.org/en/Challenges/Cracking/PE-DotNet-Basic-Anti-Debug)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -107,7 +109,7 @@ You can use [dnSpy](https://github.com/dnSpy/dnSpy) <small>(24.8k ⭐, 2020 🪦
 
 #### dotPeek - .NET Decompiler/Editor
 
-You can use [JetBrains dotPeek](https://www.jetbrains.com/decompiler/) <small>(paid 💵)</small> to reverse your binary and explore the source code. Opening the file will automatically load the executable .NET modules.
+You can use [JetBrains dotPeek](https://www.jetbrains.com/decompiler/) <small>(paid 💵)</small> to reverse your binary and explore the source code. Opening the file will automatically load the .NET solutions contained in the executable.
 </div><div>
 
 #### ILSpy - .NET Decompiler/Editor
@@ -126,7 +128,7 @@ $ sudo ln -s /opt/AvaloniaILSpy/ILSpy /usr/local/bin/ILSpy
 $ ILSpy # run
 ```
 
-Opening the file will automatically load the executable .NET modules.
+Opening the executable will automatically load its .NET solutions. You can save an entire reversed solution or specific files by right-clicking on the target you want to save and selecting 'Save Code.'
 </div></div>
 
 <hr class="sep-both">

@@ -47,6 +47,7 @@ Array.from(document.querySelectorAll('*')).filter(x => {
 
 [![contentdiscovery](../../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
 [![picklerick](../../../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
+[![gamingserver](../../../../_badges/thm-p/gamingserver.svg)](https://tryhackme.com/room/gamingserver)
 [![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
 [![cap](../../../../_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
 [![http_directory_indexing](../../../../_badges/rootme/web_server/http_directory_indexing.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Directory-indexing)
@@ -58,6 +59,13 @@ To ensure you visited every page, you may want to check every link on every page
 ```javascript!
 // list every element with a href
 document.querySelectorAll('*[href]') 
+```
+
+Another way is to use [onectf](/cybersecurity/red-team/tools/frameworks/onectf/index.md#onectf-crawl-module) or [ZAProxy](/cybersecurity/red-team/tools/utilities/proxies/zap/index.md).
+
+```ps
+$ # crawl internal URLs (same domain)
+$ onectf crawl -u https://example.com/
 ```
 </div><div>
 
@@ -78,6 +86,7 @@ There is also a file `robots.txt` with the pages that robots should not crawl/in
 [![walkinganapplication](../../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
 [![picklerick](../../../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
 [![wgelctf](../../../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
+[![gamingserver](../../../../_badges/thm-p/gamingserver.svg)](https://tryhackme.com/room/gamingserver)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 [![html_source_code](../../../../_badges/rootme/web_server/html_source_code.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTML-Source-code)
 [![http_directory_indexing](../../../../_badges/rootme/web_server/http_directory_indexing.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Directory-indexing)
@@ -85,26 +94,27 @@ There is also a file `robots.txt` with the pages that robots should not crawl/in
 
 <div class="row row-cols-lg-2"><div>
 
-I'm using this snippet to grab every HTML comments.
+You can use JavaScript to fetch every HTML comment ([rt/96517](https://www.regextester.com/96517)):
 
-```javascript!
+```js!
 document.querySelector('html').innerHTML.replaceAll('\n', ' ').match(/<!--.*?-->/g)
 ```
-
-Since newlines are removed, you can use the modified version below if you still need them:
-
-```javascript!
+```js!
 document.querySelector('html').innerHTML.replaceAll('\n', '/n').match(/<!--.*?-->/g).map(x => x.replaceAll('/n', '\n'))
 ```
-</div><div>
 
 You may append the snippet this to remove empty comments:
 
 ```javascript!
 [...].filter(r => r !== "<!---->")
 ```
+</div><div>
 
-There are more complex regexes if you want, such as [rt/96517](https://www.regextester.com/96517).
+You can use [onectf](/cybersecurity/red-team/tools/frameworks/onectf/index.md#onectf-crawl-module) to crawl a website and display HTML comments:
+
+```ps
+$ onectf crawl -u https://example.com/ --pc
+```
 </div></div>
 
 <hr class="sep-both">
