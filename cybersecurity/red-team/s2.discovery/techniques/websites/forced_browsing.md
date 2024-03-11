@@ -78,6 +78,7 @@ $ git log -p -- config.php  # look at config.php history
 #### CGI Scripts
 
 [![attacking_common_applications](../../../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+[![adventofcyber2](../../../../_badges/thm/adventofcyber2/day12.svg)](https://tryhackme.com/room/adventofcyber2)
 [![shocker](../../../../_badges/htb-p/shocker.svg)](https://app.hackthebox.com/machines/Shocker)
 
 Common Gateway Interface (CGI) Applications are rarely used as they are dangerous. They were often used to connect multiple applications. CGI scripts can be written in many languages. They have a few advantages and many major disadvantages. To look for them:
@@ -89,7 +90,7 @@ $ ffuf -w /usr/share/seclists/Discovery/Web-Content/common.txt -u URL/cgi-bin/FU
 
 📚 Apache Tomcat returns 404 for `/cgi` even when it exists.
 
-⚠️ Bash `[<4.3]` has a vulnerability called [shellshock](https://nvd.nist.gov/vuln/detail/CVE-2014-6271):
+⚠️ Bash `[<4.3]` has a vulnerability called [shellshock](https://nvd.nist.gov/vuln/detail/CVE-2014-6271), that can also be exploited with metasploit (`apache_mod_cgi_bash_env_exec`):
 
 ```shell!
 $ curl -H 'User-Agent: () { :; }; <write code here>' 'URL/cgi-bin/some_script'

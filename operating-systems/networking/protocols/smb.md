@@ -2,6 +2,7 @@
 
 [![footprinting](../../../cybersecurity/_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
 [![networkservices](../../../cybersecurity/_badges/thmp/networkservices.svg)](https://tryhackme.com/room/networkservices)
+[![adventofcyber2](../../../cybersecurity/_badges/thm/adventofcyber2/day10.svg)](https://tryhackme.com/room/adventofcyber2)
 [![adventofcyber4](../../../cybersecurity/_badges/thm/adventofcyber4/day4.svg)](https://tryhackme.com/room/adventofcyber4)
 
 <div class="row row-cols-lg-2"><div>
@@ -167,6 +168,8 @@ msf6> use auxiliary/scanner/smb/smb_login
 
 #### Exploitation
 
+[![adventofcyber2](../../../cybersecurity/_badges/thm/adventofcyber2/day10.svg)](https://tryhackme.com/room/adventofcyber2)
+
 * You can use [crackmapexec](/cybersecurity/red-team/tools/cracking/auth/cme.md)/[nxc](/cybersecurity/red-team/tools/cracking/auth/nxc.md) to list shares+accesses, and automatically fetch some basic information about the host.
 
 ```ps
@@ -189,7 +192,7 @@ $ enum4linux-ng IP <options>
 $ enum4linux-ng IP <options> -u 'username' -p 'password'
 ```
 ```ps
-# -a : list all
+# -A : list all
 # -U : list of users
 # -M : list of devices
 # -S : list of shares

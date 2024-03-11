@@ -80,10 +80,18 @@ $ curl --upload-file revshell.war -u 'username:password' "URL/manager/text/deplo
 #### Well-known CVEs
 
 [![attacking_common_applications](../../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+[![adventofcyber2](../../../../../cybersecurity/_badges/thm/adventofcyber2/day12.svg)](https://tryhackme.com/room/adventofcyber2)
 
-* [CVE-2019-0232](https://nvd.nist.gov/vuln/detail/CVE-2019-0232): on Windows host, if there is a cgi script and `enableCmdLineArguments` is was enabled <small>(not default!)</small>, it can be exploited to arbitrarily run commands. 
+* [CVE-2019-0232](https://nvd.nist.gov/vuln/detail/CVE-2019-0232): on Windows host, if there is a cgi script and `enableCmdLineArguments` was enabled <small>(default to disabled)</small>, it can be exploited to arbitrarily run commands.
 
-Use `URL/xxx.bat?&dir` to execute `dir`. Use `+` instead of spaces. Use <code>\\</code> in paths. Don't forgot to URL encode them. If `PATH` is not set (`&set`), use the full path to a command <small>(e.g. `c:\windows\system32\whoami.exe`)</small>. You can use directions to create files <small>(e.g. `dir+>+output` to create 'output')</small>.
+You must find the [CGI](/cybersecurity/red-team/s2.discovery/techniques/websites/forced_browsing.md#cgi-scripts) directory which is often `/cgi` or `/cgi-bin/` and find at least one script. Use `URL/xxx/yyy.bat?&dir` to execute `dir`.
+
+* Use `+` instead of spaces. Use <code>\\</code> in paths. 
+* Don't forgot to URL encode the payload.
+* Use redirections when needed <small>(e.g. `dir+>+output` to create 'output')</small>.
+* Display environment variables using `&set`. If `PATH` is not set, you have to use the full path <small>(e.g. `c:\windows\system32\whoami.exe`)</small>.
+
+You can use the metasploit module `tomcat_cgi_cmdlineargs`.
 </div></div>
 
 <hr class="sep-both">

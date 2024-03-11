@@ -4,6 +4,7 @@
 [![linprivesc](../../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![linuxprivesc](../../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![commonlinuxprivesc](../../../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
+[![adventofcyber2](../../../../_badges/thm/adventofcyber2/day9.svg)](https://tryhackme.com/room/adventofcyber2)
 [![startup](../../../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 [![easypeasyctf](../../../../_badges/thm-p/easypeasyctf.svg)](https://tryhackme.com/room/easypeasyctf)
 [![bashed](../../../../_badges/htb-p/bashed.svg)](https://app.hackthebox.com/machines/Bashed)

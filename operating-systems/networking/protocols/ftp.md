@@ -3,6 +3,7 @@
 [![protocolsandservers](../../../cybersecurity/_badges/thmp/protocolsandservers.svg)](https://tryhackme.com/room/protocolsandservers)
 [![networkservices](../../../cybersecurity/_badges/thmp/networkservices.svg)](https://tryhackme.com/room/networkservices)
 [![networksecurityprotocols](../../../cybersecurity/_badges/thmp/networksecurityprotocols.svg)](https://tryhackme.com/room/networksecurityprotocols)
+[![adventofcyber2](../../../cybersecurity/_badges/thm/adventofcyber2/day9.svg)](https://tryhackme.com/room/adventofcyber2)
 [![footprinting](../../../cybersecurity/_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
 
 <div class="row row-cols-lg-2"><div>
@@ -98,6 +99,7 @@ $ nmap [...] -b ftp:username:password@IP INTERNAL_IP
 #### Foothold
 
 [![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![adventofcyber2](../../../cybersecurity/_badges/thm/adventofcyber2/day9.svg)](https://tryhackme.com/room/adventofcyber2)
 [![kenobi](../../../cybersecurity/_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
 [![startup](../../../cybersecurity/_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 [![cowboyhacker](../../../cybersecurity/_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)

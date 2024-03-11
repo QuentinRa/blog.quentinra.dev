@@ -1,6 +1,7 @@
 # Red Team - Fourth step - Privilege Escalation
 
 [![operatingsystemsecurity](../../_badges/thmp/operatingsystemsecurity.svg)](https://tryhackme.com/room/operatingsystemsecurity)
+[![adventofcyber2](../../_badges/thm/adventofcyber2/day11.svg)](https://tryhackme.com/room/adventofcyber2)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -59,6 +60,7 @@ You will also have to look for installed tools and apps along with their version
 [![linprivesc](../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 [![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
+[![adventofcyber2](../../_badges/thm/adventofcyber2/day11.svg)](https://tryhackme.com/room/adventofcyber2)
 [![linuxprivilegeescalation](../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![linux_privilege_escalation](../../_badges/poat/linux_privilege_escalation.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md)
 
@@ -111,6 +113,7 @@ Additional references
 
 ## Windows privilege escalation 🪟
 
+[![adventofcyber2](../../../cybersecurity/_badges/thm/adventofcyber2/day12.svg)](https://tryhackme.com/room/adventofcyber2)
 [![windowsprivesc20](../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
 [![windows_privilege_escalation](../../_badges/poat/windows_privilege_escalation.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md)
 
