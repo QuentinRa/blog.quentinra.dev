@@ -56,7 +56,7 @@ SQL> exit
 ```
 </div><div>
 
-#### Dump hashes from backup
+#### SecretsDump
 
 [![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
@@ -65,6 +65,7 @@ Dump hashes from a backup of SAM and SYSTEM hashes. There are local credentials 
 ```shell!
 $ impacket-secretsdump -sam XXX -system YYY LOCAL
 $ impacket-secretsdump -sam XXX -security XXX -system XXX LOCAL
+$ impacket-secretsdump -system ./system.hive -ntds ./ntds.dit LOCAL
 <output format is explained in the output>
 ```
 

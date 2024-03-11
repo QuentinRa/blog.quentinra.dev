@@ -59,6 +59,33 @@ When the user wants to access a network resource, such as a shared folder or a d
 
 <hr class="sep-both">
 
+## Active Directory Pentester Notes ☠️
+
+<div class="row row-cols-lg-2"><div>
+
+#### Dump Secrets From Active Directory database
+
+[![windows_ntds_secret_extraction](../../../../cybersecurity/_badges/rootme/forensic/windows_ntds_secret_extraction.svg)](https://www.root-me.org/en/Challenges/Forensic/Windows-NTDS-Secret-extraction)
+
+The active directory, similarly to the SAM database, is partially encrypted using a [bootkey](/operating-systems/windows/security/index.md#syskey-bootkey-and-system-hive) stored in the SYSTEM registry.
+
+You can [dump the SYSTEM registry hive](/operating-systems/windows/security/index.md#dump-credentials-from-the-sam-database) using:
+
+```shell!
+PS> reg save hklm\system C:\XXX\system.hive
+```
+
+You can use impacket [secretsdump](/operating-systems/networking/protocols/tools/impacket.md#secretsdump) script to dump its contents.
+
+```shell!
+$ impacket-secretsdump -system ./system.hive -ntds ./ntds.dit LOCAL -outputfile cracked
+$ grep "krbtgt" cracked.ntds.kerberos # kerberos tickets
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
