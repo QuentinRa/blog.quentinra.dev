@@ -53,7 +53,8 @@ Finally, `payloadsallthethings` contains some wordlists.
 #### Simple wordlists
 
 ```shell!
-$ seq 0 99 > 0_to_99.lst
+$ seq 0 100 > 0_to_100.lst        # 0 1 2 3 4
+$ seq 0 2 100 > even_0_to_100.lst # 0 2 4 etc.
 $ echo {A..Z} | tr ' ' '\n' > AZ.lst
 $ echo user{0..9} | tr ' ' '\n' > user_0_to_9.lst
 $ echo {admin,adm,user} | tr ' ' '\n' > simple_list.lst

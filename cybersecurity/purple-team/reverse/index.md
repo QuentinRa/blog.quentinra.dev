@@ -84,6 +84,7 @@ Other well-known decompilers:
 
 ## .NET Reverse Engineering
 
+[![adventofcyber2](../../_badges/thm/adventofcyber2/day18.svg)](https://tryhackme.com/room/adventofcyber2)
 [![chrome](../../_badges/thm-p/chrome.svg)](https://tryhackme.com/room/chrome)
 [![ctfcollectionvol1](../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
 [![pe_dotnet_0_protection](../../_badges/rootme/cracking/pe_dotnet_0_protection.svg)](https://www.root-me.org/en/Challenges/Cracking/PE-DotNet-0-protection)
@@ -109,10 +110,14 @@ You can use [dnSpy](https://github.com/dnSpy/dnSpy) <small>(24.8k ⭐, 2020 🪦
 
 #### dotPeek - .NET Decompiler/Editor
 
+[![adventofcyber2](../../_badges/thm/adventofcyber2/day18.svg)](https://tryhackme.com/room/adventofcyber2)
+
 You can use [JetBrains dotPeek](https://www.jetbrains.com/decompiler/) <small>(paid 💵)</small> to reverse your binary and explore the source code. Opening the file will automatically load the .NET solutions contained in the executable.
 </div><div>
 
 #### ILSpy - .NET Decompiler/Editor
+
+[![adventofcyber2](../../_badges/thm/adventofcyber2/day18.svg)](https://tryhackme.com/room/adventofcyber2)
 
 [ILSpy](https://github.com/icsharpcode/ILSpy) <small>(19.8k ⭐)</small> is the most popular open-source .NET decompiler. It can be integrated in editors such as [VSCode](https://code.visualstudio.com/) or standalone editors.
 
@@ -122,9 +127,9 @@ On Linux, you can use the [AvaloniaILSpy](https://github.com/icsharpcode/Avaloni
 $ cd /tmp
 $ # download a release at https://github.com/icsharpcode/AvaloniaILSpy/releases
 $ unzip Linux.x64.Release.zip && unzip ILSpy-linux-x64-Release.zip
-$ sudo mv artifacts/linux-x64/ /opt/AvaloniaILSpy
+$ mkdir -p $HOME/tools/ && mv artifacts/linux-x64/ $HOME/tools/AvaloniaILSpy
 $ rm -rf Linux.x64.Release.zip ILSpy-linux-x64-Release.zip artifacts # cleanup
-$ sudo ln -s /opt/AvaloniaILSpy/ILSpy /usr/local/bin/ILSpy
+$ ln -s $HOME/tools/AvaloniaILSpy/ILSpy $HOME/.local/bin/ILSpy
 $ ILSpy # run
 ```
 

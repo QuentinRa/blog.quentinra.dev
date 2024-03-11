@@ -302,6 +302,7 @@ Hackers can use that to store malicious code inside a file. This code may be exe
 
 ```ps
 PS> $(Resolve-Path .\file.exe:stream) # vulnerable PS call
+PS> wmic process call create $(Resolve-Path file.exe:stream)
 ```
 </div><div>
 
@@ -315,6 +316,13 @@ The Volume Shadow Copy Service (VSS) is handling the creation, and management of
 It stores data in the "volume information" of each drive that has the feature enabled. They may allow a system admin to restore the system after an attack. Hackers will most likely check them and delete them.
 
 To manage them, right-click on a hard-drive, and select "Shadow copies." Shadow copies can be stored externally.
+
+```ps
+PS> vssadmin CREATE SHADOW /For=C:
+PS> vssadmin list volumes
+```
+
+📚 To restore a shadow copy, right-click on a folder, navigate to 'previous versions', select one, and press 'restore.'
 
 ➡️ See also: [Volume Shadow Copy Service](https://learn.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service).
 

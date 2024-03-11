@@ -3,6 +3,7 @@
 [![linuxfundamentals](../../../../cybersecurity/_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/course/preview/linux-fundamentals)
 [![linuxprivilegeescalation](../../../../cybersecurity/_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![linuxsystemhardening](../../../../cybersecurity/_badges/thmp/linuxsystemhardening.svg)](https://tryhackme.com/room/linuxsystemhardening)
+[![adventofcyber2](../../../../cybersecurity/_badges/thm/adventofcyber2/day24.svg)](https://tryhackme.com/room/adventofcyber2)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -49,6 +50,7 @@ $ lxc image import xxx.tar.gz --alias image_name
 
 [![linuxprivilegeescalation](../../../../cybersecurity/_badges/hacktricks/linux_hardening/privilege_escalation/interesting_groups_linux_pe/lxd_privilege_escalation.svg)](https://book.hacktricks.xyz/linux-hardening/privilege-escalation/interesting-groups-linux-pe/lxd-privilege-escalation)
 [![linuxprivilegeescalation](../../../../cybersecurity/_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![adventofcyber2](../../../../cybersecurity/_badges/thm/adventofcyber2/day24.svg)](https://tryhackme.com/room/adventofcyber2)
 [![gamingserver](../../../../cybersecurity/_badges/thm-p/gamingserver.svg)](https://tryhackme.com/room/gamingserver)
 
 A member of the LXD group can be leveraged for [privilege escalation](/cybersecurity/red-team/s4.privesc/index.md). You will mount the folder `/` within the container inside `/mnt/hostfs/` allowing you to access any file or edit any file.

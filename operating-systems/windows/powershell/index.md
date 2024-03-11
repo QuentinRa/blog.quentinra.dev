@@ -1,6 +1,7 @@
 # Powershell
 
 [![powershell](../../../cybersecurity/_badges/thmp/powershell.svg)](https://tryhackme.com/room/powershell)
+[![adventofcyber2](../../../cybersecurity/_badges/thm/adventofcyber2/day20.svg)](https://tryhackme.com/room/adventofcyber2)
 [![windowsfundamentals](../../../cybersecurity/_badges/htb/windowsfundamentals.svg)](https://academy.hackthebox.com/course/preview/windows-fundamentals)
 
 <div class="row row-cols-lg-2"><div>
@@ -124,6 +125,13 @@ You can list files recursively:
 ```ps
 PS> Get-ChildItem [...] -r
 PS> Get-ChildItem [...] -Recurse
+```
+
+Additional options:
+
+```ps
+PS> Get-ChildItem [...] -Hidden
+PS> Get-ChildItem [...] -ErrorAction SilentlyContinue
 ```
 </div></div>
 

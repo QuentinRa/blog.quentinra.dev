@@ -90,6 +90,7 @@ Run a [SMB](../smb.md) server to which user will connect with the username XXX a
 
 ```shell!
 $ impacket-smbserver -smb2support -username XXX -password YYY share_name /path/to/share
+$ impacket-smbserver -smb2support -username username -password password share .
 $ impacket-smbserver -smb2support share_name /path/to/share
 ```
 
