@@ -184,7 +184,7 @@ $ smbmap -H IP -u 'username' -p 'password'
 
 ```shell!
 $ sudo apt-get install enum4linux-ng
-$ enum4linux-ng IP -a
+$ enum4linux-ng IP -A
 $ enum4linux-ng IP <options>
 $ enum4linux-ng IP <options> -u 'username' -p 'password'
 ```
