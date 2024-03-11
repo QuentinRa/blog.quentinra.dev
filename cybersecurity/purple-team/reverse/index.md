@@ -191,6 +191,8 @@ $ gdb -q xxx.bin
 (gdb) run
 ```
 
+<br>
+
 #### Linux Tracers
 
 [![mustacchio](../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
@@ -201,18 +203,9 @@ Linux commands [strace](https://www.man7.org/linux/man-pages/man1/strace.1.html)
 $ strace xxx.bin
 $ ltrace xxx.bin
 ```
-</div><div>
 
-#### Linux Radare Disassembly
+<br>
 
-[Radare](https://github.com/radareorg/radare2) <small>(19.2k ⭐)</small> is similar to GDB, but it somewhat easier to use if we only need to disassemble the code.
-
-```shell!
-$ rabin2 -I xxx.bin # get information
-$ rabin2 -z xxx.bin # list strings
-$ r2 -A xxx.bin     # disassemble
-(r2) pdf @main
-```
 
 #### Boomerang
 
@@ -258,6 +251,41 @@ For instance to decompile `ch1.bin`:
 $ docker run -it -v $(pwd):/builds boomrangcli:latest ch1.bin
 ```
 </details>
+</div><div>
+
+#### Linux Radare Disassembly
+
+[![adventofcyber2](../../_badges/thm/adventofcyber2/day17.svg)](https://tryhackme.com/room/adventofcyber2)
+
+[Radare](https://github.com/radareorg/radare2) <small>(19.2k ⭐)</small> is similar to GDB, but it somewhat easier to use if we only need to disassemble the code.
+
+```shell!
+$ rabin2 -I xxx.bin # get information
+$ rabin2 -z xxx.bin # list strings
+$ r2 -d xxx.bin     # Open in debug mode (if applicable)
+$ r2 -A xxx.bin     # Open and analyze (aaa)
+```
+
+```ps
+(r2) a?             # help for analyze
+(r2) aaa            # analyze
+(r2) afl            # list function, can grep
+(r2) pdf @main      # disassemble 'main' (@sym.main)
+(r2) oo             # reload executable
+```
+```ps
+(r2) db 0xAABBCCDD  # breakpoint
+(r2) dc             # run the program, stop before breakpoint
+(r2) ds             # run one instruction
+```
+
+```ps
+(r2) px @ address   # display the memory at address
+(r2) dr             # display registry values
+```
+
+📚 When using `pdf` such as `pdf @main`, we can see a list of variables and their addresses. We can pass these addresses to `px`.
+
 </div></div>
 
 <hr class="sep-both">

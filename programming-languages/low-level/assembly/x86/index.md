@@ -40,12 +40,19 @@ Statically allocated variables. [ref](https://stackoverflow.com/questions/814524
 Contains the assembler instructions. Can be read-only.
 </div><div>
 
-#### Common Instructions
+#### MOV Instructions
 
-Random instructions:
+The `mov` instruction can be used to put a value inside a registry, or put a value at an address.
 
 ```x86asm
 mov destination, source ; put value into registry
+```
+
+```x86asm
+mov dword [xxx], 2      ; store '2' in xxx
+mov eax, dword [xxx]    ; store '2' in eax
+mov dword [xxx], eax    ; store '2' in 'xxx'
+imul eax, dword [xxx]   ; store '4' in eax
 ```
 </div></div>
 
