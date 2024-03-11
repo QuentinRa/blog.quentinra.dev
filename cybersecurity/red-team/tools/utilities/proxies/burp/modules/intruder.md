@@ -1,8 +1,9 @@
 # Burp Intruder
 
-[![burpsuiteintruder](../../../../../../_badges/thmp/burpsuiteintruder.svg)](https://tryhackme.com/room/burpsuiteintruder)
 [![fileuploadattacks](../../../../../../_badges/htb/fileuploadattacks.svg)](https://academy.hackthebox.com/course/preview/file-upload-attacks)
 [![usingwebproxies](../../../../../../_badges/htb/usingwebproxies.svg)](https://academy.hackthebox.com/course/preview/using-web-proxies)
+[![adventofcyber2](../../../../../../_badges/thm/adventofcyber2/day3.svg)](https://tryhackme.com/room/adventofcyber2)
+[![burpsuiteintruder](../../../../../../_badges/thmp/burpsuiteintruder.svg)](https://tryhackme.com/room/burpsuiteintruder)
 
 <div class="row row-cols-lg-2"><div>
 

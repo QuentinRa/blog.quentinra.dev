@@ -1,6 +1,7 @@
 # Account discovery
 
 [![authenticationbypass](../../../../_badges/thmp/authenticationbypass.svg)](https://tryhackme.com/room/authenticationbypass)
+[![adventofcyber2](../../../../_badges/thm/adventofcyber2/day3.svg)](https://tryhackme.com/room/adventofcyber2)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 [![keeper](../../../../_badges/htb-p/keeper.svg)](https://app.hackthebox.com/machines/Keeper)
 [![weak_password](../../../../_badges/rootme/web_server/weak_password.svg)](https://www.root-me.org/en/Challenges/Web-Server/Weak-password)
@@ -23,6 +24,8 @@ We often test weak or mostly default credentials. You can do it manually, or use
 * Brute forcing accounts is usually done if there is nothing else we can try, while fuzzing for default credentials is acceptable.
 
 Refer to use [Fuzzing](fuzzing.md) or [network authentification tools](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md) such as hydra, which may also be used to brute force forms.
+
+⚠️ I experienced a [case](https://tryhackme.com/room/adventofcyber2#task-8) in which ffuf doesn't work <small>(unexpected output)</small>.
 
 * Try using `xxx+anything@xxx` to register multiple accounts with the 'same' address email `xxx@xxx`. It may be handy to 'farm' accounts.
 </div></div>

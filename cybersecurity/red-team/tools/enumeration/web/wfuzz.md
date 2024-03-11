@@ -1,5 +1,7 @@
 # wfuzz
 
+[![adventofcyber2](../../../../_badges/thm/adventofcyber2/day3.svg)](https://tryhackme.com/room/adventofcyber2)
+
 <div class="row row-cols-lg-2"><div>
 
 [wfuzz](https://github.com/xmendez/wfuzz) (5.4k ⭐) is a [Fuzzing](/cybersecurity/red-team/s2.discovery/techniques/websites/fuzzing.md) tool in Python. There are new modern alternatives, and it has not been updated since 2020.

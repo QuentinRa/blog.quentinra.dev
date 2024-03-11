@@ -64,6 +64,8 @@ You can send it to the intruder, repeater... You can also specifically ask Burp 
 
 ## Scoping
 
+[![adventofcyber2](../../../../../../_badges/thm/adventofcyber2/day24.svg)](https://tryhackme.com/room/adventofcyber2)
+
 <div class="row row-cols-lg-2"><div>
 
 We **commonly** define a scope to avoid intercepting uninteresting traffic. Only requests/responses within the scope are intercepted.

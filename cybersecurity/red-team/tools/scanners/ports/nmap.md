@@ -5,6 +5,7 @@
 [![nmap03](../../../../_badges/thmp/nmap03.svg)](https://tryhackme.com/room/nmap03)
 [![nmap04](../../../../_badges/thmp/nmap04.svg)](https://tryhackme.com/room/nmap04)
 [![furthernmap](../../../../_badges/thm/furthernmap.svg)](https://tryhackme.com/room/furthernmap)
+[![adventofcyber2](../../../../_badges/thm/adventofcyber2/day8.svg)](https://tryhackme.com/room/adventofcyber2)
 [![adventofcyber4](../../../../_badges/thm/adventofcyber4/day4.svg)](https://tryhackme.com/room/adventofcyber4)
 [![networkenumerationwithnmap](../../../../_badges/htb/networkenumerationwithnmap.svg)](https://academy.hackthebox.com/course/preview/network-enumeration-with-nmap)
 
