@@ -110,6 +110,10 @@ $ gdb ./some_program
 
 Refer to [GEF](https://github.com/hugsy/gef) <small>(6.3k ⭐)</small>.
 
+#### GDB GEF Assistance
+
+Refer to [pwndbg](https://github.com/pwndbg/pwndbg) <small>(6.5k ⭐)</small>.
+
 #### Additional Commands
 
 Query the value of a register, the list of functions, etc.
@@ -117,7 +121,7 @@ Query the value of a register, the list of functions, etc.
 ```txt!
 (gdb) info registers eip
 (gdb) info frame
-(gdb) info proc all
+(gdb) info proc all # or info proc map
 (gdb) info functions
 ```
 </div><div>

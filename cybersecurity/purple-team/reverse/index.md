@@ -361,7 +361,8 @@ Analysis
 * [Detect-It-Easy](https://github.com/horsicq/Detect-It-Easy) (target insight)
 * [CFF explorer](https://ntcore.com/?page_id=388)
 * Debug: [mona](https://github.com/corelan/mona)
-</div><div>
+
+Obfuscation
 
 * [Bashfuscator](https://github.com/Bashfuscator/Bashfuscator)
 
@@ -369,13 +370,28 @@ Analysis
 $ bashfuscator -c 'cat /etc/passwd'
 $ bashfuscator -c 'cat /etc/passwd' -s 1 -t 1 --no-mangling --layers 1
 ```
+</div><div>
 
-Common tools
+Common tools (see also: [dogbolt](https://dogbolt.org/))
 
 * [Ghidra](https://www.ghidra-sre.org/)
+
+```text!
+sudo apt install ghidra -y
+ghidra
+> new project
+> import file
+> analyze
+Windows
+> Decompile: Main
+> Functions
+> Defined Strings
+```
+
 * [IDA](https://hex-rays.com/ida-pro/) (ex: Linux disassembly)
-* [boomerang](https://github.com/BoomerangDecompiler/boomerang) (Linux X86 Binary Decompiler)
 * [jadx](https://github.com/skylot/jadx) (DEX/APK to Java)
 * [frida](https://frida.re/)
 * [Rizin](https://github.com/rizinorg/rizin) and [cutter](https://github.com/rizinorg/cutter)
+* Disassembly, decompiler, debugger
+* Hopper and Binary Ninja disassemblers
 </div></div>
