@@ -1,6 +1,7 @@
 # hashcat
 
 [![crackingpasswordswithhashcat](../../../../_badges/htb/crackingpasswordswithhashcat.svg)](https://academy.hackthebox.com/course/preview/cracking-passwords-with-hashcat)
+[![ccpentesting](../../../../_badges/thm-p/ccpentesting.svg)](https://tryhackme.com/room/ccpentesting)
 
 <div class="row row-cols-lg-2"><div>
 

@@ -1,5 +1,6 @@
 # Nmap
 
+[![networkenumerationwithnmap](../../../../_badges/htb/networkenumerationwithnmap.svg)](https://academy.hackthebox.com/course/preview/network-enumeration-with-nmap)
 [![nmap01](../../../../_badges/thm/nmap01.svg)](https://tryhackme.com/room/nmap01)
 [![nmap02](../../../../_badges/thmp/nmap02.svg)](https://tryhackme.com/room/nmap02)
 [![nmap03](../../../../_badges/thmp/nmap03.svg)](https://tryhackme.com/room/nmap03)
@@ -7,7 +8,7 @@
 [![furthernmap](../../../../_badges/thm/furthernmap.svg)](https://tryhackme.com/room/furthernmap)
 [![adventofcyber2](../../../../_badges/thm/adventofcyber2/day8.svg)](https://tryhackme.com/room/adventofcyber2)
 [![adventofcyber4](../../../../_badges/thm/adventofcyber4/day4.svg)](https://tryhackme.com/room/adventofcyber4)
-[![networkenumerationwithnmap](../../../../_badges/htb/networkenumerationwithnmap.svg)](https://academy.hackthebox.com/course/preview/network-enumeration-with-nmap)
+[![ccpentesting](../../../../_badges/thm-p/ccpentesting.svg)](https://tryhackme.com/room/ccpentesting)
 
 <div class="row row-cols-lg-2"><div>
 

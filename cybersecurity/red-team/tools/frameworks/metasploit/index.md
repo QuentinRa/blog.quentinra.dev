@@ -7,6 +7,7 @@
 [![metasploitexploitation](../../../../_badges/thmp/metasploitexploitation.svg)](https://tryhackme.com/room/metasploitexploitation)
 [![meterpreter](../../../../_badges/thmp/meterpreter.svg)](https://tryhackme.com/room/meterpreter)
 [![adventofcyber4](../../../../_badges/thm/adventofcyber4/day9.svg)](https://tryhackme.com/room/adventofcyber4)
+[![ccpentesting](../../../../_badges/thm-p/ccpentesting.svg)](https://tryhackme.com/room/ccpentesting)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -208,10 +209,9 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * Commands:
-  * Jobs are cancellable processes (`kill`): `run -j`, `jobs`, `jobs -i 0`
+  * Jobs are cancellable processes (`kill`): `run -j` (in bg), `jobs`, `jobs -i 0`
   * `exploit -k -z`
-* `get xxx`
-* `spool`
+* `get xxx`, `spool`, `arch`, 
 * `run autoroute -h` (autoroute module)
   * socks
   * proxychains

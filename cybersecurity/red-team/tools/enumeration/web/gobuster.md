@@ -3,10 +3,11 @@
 [![web_information_gathering](../../../../_badges/htb/web_information_gathering.svg)](https://academy.hackthebox.com/course/preview/information-gathering---web-edition)
 [![adventofcyber2](../../../../_badges/thm/adventofcyber2/day3.svg)](https://tryhackme.com/room/adventofcyber2)
 [![webenumerationv2](../../../../_badges/thmp/webenumerationv2.svg)](https://tryhackme.com/room/webenumerationv2)
+[![ccpentesting](../../../../_badges/thm-p/ccpentesting.svg)](https://tryhackme.com/room/ccpentesting)
 
 <div class="row row-cols-lg-2"><div>
 
-[Gobuster](https://github.com/OJ/gobuster) (8.6k ⭐) is a popular web scanner mainly used for [forced browsing](/cybersecurity/red-team/s2.discovery/techniques/websites/forced_browsing.md) with these [wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md#forced-browsing).
+[Gobuster](https://github.com/OJ/gobuster) <small>(8.9k ⭐)</small> is a popular web scanner mainly used for [forced browsing](/cybersecurity/red-team/s2.discovery/techniques/websites/forced_browsing.md) with these [wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md#forced-browsing).
 
 ```ps
 $ gobuster dir -u URL -w wordlist
@@ -88,5 +89,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * `-p pattern_file` (with `{GOBUSTER}` inside)
+* `-s status_codes`
 </div><div>
 </div></div>

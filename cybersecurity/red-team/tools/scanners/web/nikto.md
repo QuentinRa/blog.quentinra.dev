@@ -2,6 +2,7 @@
 
 [![webenumerationv2](../../../../_badges/thmp/webenumerationv2.svg)](https://tryhackme.com/room/webenumerationv2)
 [![adventofcyber4](../../../../_badges/thm/adventofcyber4/day4.svg)](https://tryhackme.com/room/adventofcyber4)
+[![ccpentesting](../../../../_badges/thm-p/ccpentesting.svg)](https://tryhackme.com/room/ccpentesting)
 
 <div class="row row-cols-lg-2"><div>
 

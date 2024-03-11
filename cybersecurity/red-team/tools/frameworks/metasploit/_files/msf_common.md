@@ -9,6 +9,7 @@
 You can use many Linux-like commands such as:
 
 ```shell!
+meterpreter> execute # execute a command
 meterpreter> ls # list files
 meterpreter> cd # move
 meterpreter> pwd # path to current folder
