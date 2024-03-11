@@ -264,6 +264,7 @@ $ john --format=gpg myhash --wordlist=wordlist
 [![encryptioncrypto101](../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
 [![basicpentestingjt](../../../_badges/thm-p/basicpentestingjt.svg)](https://tryhackme.com/room/basicpentestingjt)
 [![mustacchio](../../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
+[![gamingserver](../../../_badges/thm-p/gamingserver.svg)](https://tryhackme.com/room/gamingserver)
 
 SSH may have been configured to use a passphrase-protected [ssh keys](/operating-systems/networking/protocols/ssh.md). You must convert the file to a crackable file for john:
 
