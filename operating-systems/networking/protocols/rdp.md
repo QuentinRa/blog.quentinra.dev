@@ -29,8 +29,10 @@ There is [Remmina](https://github.com/FreeRDP/Remmina) (1.9k ⭐, `apt install r
   * Enter the credentials
   * Connect
 * Then, I would advise toggling "dynamic resolution update" in the left menu, so that you have a bigger screen.
-* In preferences, we should be able to select a keyboard mapping <nobr class="small text-muted">(⚠️ need check)</nobr>
+* In preferences, we are able to select a keyboard mapping
 * [You can scale the screen too](https://askubuntu.com/questions/1075098/remmina-scaling-options)
+
+**Note ⚠️**: In preferences, quality settings, you can select to use poor quality with wallpaper to increase performance.
 </div></div>
 
 <hr class="sep-both">

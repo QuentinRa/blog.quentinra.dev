@@ -1,8 +1,7 @@
 # OSINT gathering
 
-[Go back](../index.md)
-
 [![contentdiscovery](../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
+[![adventofcyber2](../../../_badges/thm/adventofcyber2/day14.svg)](https://tryhackme.com/room/adventofcyber2)
 [![adventofcyber4](../../../_badges/thm/adventofcyber4/day3.svg)](https://tryhackme.com/room/adventofcyber4)
 
 <div class="row row-cols-lg-2"><div>
@@ -15,26 +14,26 @@ Open-source intelligence (**OSINT**) is any information that you gather from pub
 
 **Target Profiling** 🎯: find specific information on one person
 
-* **Search by username**: [Sherlock](https://github.com/sherlock-project/sherlock) <small>(39.8k ⭐)</small> and [Maigret](https://github.com/soxoj/maigret)  <small>(8.2k ⭐)</small>
-* **Phone number lookup**: [PhoneInfoga](https://github.com/sundowndev/phoneinfoga) <small>(9.3k ⭐)</small>
-* **Email lookup**: [epieos](https://epieos.com/), [ProtOSINT](https://github.com/pixelbubble/ProtOSINT) <small>(0.2k ⭐)</small>, [holehe](https://github.com/megadose/holehe) <small>(4.4k ⭐)</small>
+* **Search by username**: [Sherlock](https://github.com/sherlock-project/sherlock) <small>(50.2k ⭐)</small> and [Maigret](https://github.com/soxoj/maigret) <small>(9.5k ⭐)</small>.  [namechk](https://namechk.com/), [namecheckup](https://namecheckup.com/), [WhatsMyName](https://github.com/WebBreacher/WhatsMyName) <small>(1.4k ⭐)</small>.
+* **Phone number lookup**: [PhoneInfoga](https://github.com/sundowndev/phoneinfoga) <small>(11.7k ⭐)</small>
+* **Email lookup**: [epieos](https://epieos.com/), [ProtOSINT](https://github.com/pixelbubble/ProtOSINT) <small>(0.3k ⭐, 2021 🪦)</small>, [holehe](https://github.com/megadose/holehe) <small>(6.2k ⭐)</small>
 * **People lookup**: [spokeo 💵](https://www.spokeo.com/) <small>(name, email, address...)</small>
 
 <br>
 
 **Passive internal mapping** 🗃️
 
-* **GitHub**: [Gitrob 💀](https://github.com/michenriksen/gitrob) <small>(5.6k ⭐, dev names, languages, projects...)</small>
-* **Git**: [shhgit 💀](https://github.com/eth0izzle/shhgit) <small>(3.7k ⭐, find secrets)</small>
+* **GitHub**: [Gitrob 🪦](https://github.com/michenriksen/gitrob) <small>(5.6k ⭐, dev names, languages, projects...)</small>
+* **Git**: [shhgit 🪦](https://github.com/eth0izzle/shhgit) <small>(3.8k ⭐, find secrets)</small>
 * **Github**: [GitFive](https://github.com/mxrch/GitFive) <small>(0.7k ⭐, search by email/username)</small>
 </div><div>
 
 **Social Media Investigations** (SOCMINT) 🗺️: gather any information
 
-* **Instagram**: [Osintgram](https://github.com/Datalux/Osintgram) <small>(6.3k⭐)</small> and [Instaloader](https://github.com/instaloader/instaloader) <small>(5.6k ⭐)</small>
-* **Twitter**: [Twint](https://github.com/twintproject/twint) <small>(14.6k ⭐)</small>
-* **Google services**: [GHunt](https://github.com/mxrch/GHunt) <small>(13.4k ⭐, gmail, groups, drives...)</small>
-* **Many social networks**: [social-analyzer](https://github.com/qeeqbox/social-analyzer) <small>(9.8k ⭐)</small>
+* **Instagram**: [Osintgram](https://github.com/Datalux/Osintgram) <small>(8.4k⭐)</small> and [Instaloader](https://github.com/instaloader/instaloader) <small>(7.4k ⭐)</small>
+* **Twitter**: [Twint](https://github.com/twintproject/twint) <small>(15.5k ⭐)</small>
+* **Google services**: [GHunt](https://github.com/mxrch/GHunt) <small>(14.7k ⭐, gmail, groups, drives...)</small>
+* **Many social networks**: [social-analyzer](https://github.com/qeeqbox/social-analyzer) <small>(11.0k ⭐)</small>
 * **Get email from their profile page**: [getemail.io 💵](https://getemail.io/) <small>(10/month free)</small>
 
 <br>

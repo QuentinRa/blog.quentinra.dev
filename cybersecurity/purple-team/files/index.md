@@ -45,11 +45,12 @@ PDF version:    1.7
 
 #### Image metadata
 
+[![adventofcyber2](../../_badges/thm/adventofcyber2/day14.svg)](https://tryhackme.com/room/adventofcyber2)
 [![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 [![ctfcollectionvol1](../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
 [![exif_metadata](../../_badges/rootme/steganography/exif_metadata.svg)](https://www.root-me.org/fr/Challenges/Steganographie/EXIF-Metadata)
 
-You can use `exiftool`, [jimpl](https://jimpl.com/), [IMV](https://www.geekyhumans.com/tools/image-metadata-viewer)... Also, do a reverse image search 🧵.
+You can use `exiftool`, [jimpl](https://jimpl.com/), [IMV](https://www.geekyhumans.com/tools/image-metadata-viewer), [exif.regex](http://exif.regex.info/exif.cgi)...
 
 ```shell!
 $ sudo apt install libimage-exiftool-perl
@@ -64,6 +65,8 @@ MIME Type                       : image/png
 Software                        : www.inkscape.org
 [...]
 ```
+
+Also try to perform a reverse image search 🧵.
 </div></div>
 
 <hr class="sep-both">
