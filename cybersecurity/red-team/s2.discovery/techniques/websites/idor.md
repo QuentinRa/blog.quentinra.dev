@@ -3,6 +3,7 @@
 [![idor](../../../../_badges/thm/idor.svg)](https://tryhackme.com/room/idor)
 [![introwebapplicationsecurity](../../../../_badges/thm/introwebapplicationsecurity.svg)](https://tryhackme.com/room/introwebapplicationsecurity)
 [![owasptop10](../../../../_badges/thm/owasptop10.svg)](https://tryhackme.com/room/owasptop10)
+[![adventofcyber2](../../../../_badges/thm/adventofcyber2/day4.svg)](https://tryhackme.com/room/adventofcyber2)
 [![adventofcyber4](../../../../_badges/thm/adventofcyber4/day14.svg)](https://tryhackme.com/room/adventofcyber4)
 [![neighbour](../../../../_badges/thm-p/neighbour.svg)](https://tryhackme.com/room/neighbour)
 [![corridor](../../../../_badges/thm-p/corridor.svg)](https://tryhackme.com/room/corridor)

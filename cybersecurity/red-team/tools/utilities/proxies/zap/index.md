@@ -110,6 +110,7 @@ Right-click on a request and navigate to `attack>fuzz...` to FUZZ a request. Sim
 #### ZAProxy Spider
 
 [![web_information_gathering](../../../../../_badges/htb/web_information_gathering.svg)](https://academy.hackthebox.com/course/preview/information-gathering---web-edition)
+[![adventofcyber2](../../../../../_badges/thm/adventofcyber2/day6.svg)](https://tryhackme.com/room/adventofcyber2)
 
 ZAP has two spiders that can be used to crawl a website. One traditionally spider, and another 'ajax' spider for dynamic websites. Right-click on a request  and navigate to `attack>spider...` to start crawling a website.
 

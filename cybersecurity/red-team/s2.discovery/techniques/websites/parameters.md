@@ -1,6 +1,7 @@
 # Hidden Parameters
 
 [![attacking_with_ffuf](../../../../_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
+[![adventofcyber2](../../../../_badges/thm/adventofcyber2/day4.svg)](https://tryhackme.com/room/adventofcyber2)
 
 <div class="row row-cols-lg-2"><div>
 

@@ -29,6 +29,7 @@ If packets are encrypted, you need the private key. You can load it at: `Edit > 
 
 [![intro_to_network_traffic_analysis](../../../../../cybersecurity/_badges/htb/intro_to_network_traffic_analysis.svg)](https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis)
 [![wireshark](../../../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
+[![adventofcyber2](../../../../../cybersecurity/_badges/thm/adventofcyber2/day7.svg)](https://tryhackme.com/room/adventofcyber2)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -62,6 +63,7 @@ The GUI can be divided into the following sections:
 
 [![intro_to_network_traffic_analysis](../../../../../cybersecurity/_badges/htb/intro_to_network_traffic_analysis.svg)](https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis)
 [![wireshark](../../../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
+[![adventofcyber2](../../../../../cybersecurity/_badges/thm/adventofcyber2/day7.svg)](https://tryhackme.com/room/adventofcyber2)
 
 To find interesting packets, you can apply filters on the packet list. Check out the bookmark icon to find saved filtering rules.
 
@@ -94,6 +96,7 @@ In the bottom right corner of the newly opened window, you can navigate through 
 
 [![intro_to_network_traffic_analysis](../../../../../cybersecurity/_badges/htb/intro_to_network_traffic_analysis.svg)](https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis)
 [![wireshark](../../../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
+[![adventofcyber2](../../../../../cybersecurity/_badges/thm/adventofcyber2/day7.svg)](https://tryhackme.com/room/adventofcyber2)
 [![chrome](../../../../../cybersecurity/_badges/thm-p/chrome.svg)](https://tryhackme.com/room/chrome)
 
 * **Download HTTP file**: File > Export Objects > HTTP
