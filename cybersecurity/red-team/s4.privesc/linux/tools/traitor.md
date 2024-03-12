@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[traitor](https://github.com/liamg/traitor) <small>(6.3k ⭐)</small> is an open-source tool to automatically detect common privilege escalation vectors and exploit them.
+[traitor](https://github.com/liamg/traitor) <small>(6.5k ⭐, 2022 ☠️)</small> is an open-source tool to automatically detect common privilege escalation vectors and exploit them.
 
 It's written in GO which you need to install to download the tool.
 

@@ -19,7 +19,7 @@ Escalation can be **horizontally**/laterally <small>(another user with the same 
 
 **Learn** 🎓
 
-* [Ignitetechnologies/Privilege-Escalation](https://github.com/Ignitetechnologies/Privilege-Escalation) <small>(3.0k ⭐, CTFs)</small>
+* [Ignitetechnologies/Privilege-Escalation](https://github.com/Ignitetechnologies/Privilege-Escalation) <small>(3.1k ⭐, CTFs)</small>
 
 **Tools**
 
@@ -57,11 +57,11 @@ You will also have to look for installed tools and apps along with their version
 
 <div class="row row-cols-lg-2"><div>
 
+[![linuxprivilegeescalation](../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![linprivesc](../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 [![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 [![adventofcyber2](../../_badges/thm/adventofcyber2/day11.svg)](https://tryhackme.com/room/adventofcyber2)
-[![linuxprivilegeescalation](../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![linux_privilege_escalation](../../_badges/poat/linux_privilege_escalation.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md)
 
 [Linux](/operating-systems/linux/_knowledge/index.md) privilege escalation may be achieved by exploiting:
@@ -88,7 +88,7 @@ There are many **automated scripts** that will investigate usual places, service
 
 * [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) <small>(14.5k ⭐ | shell script)</small>
 * [LinEnum](https://github.com/rebootuser/LinEnum) <small>(6.6k ⭐ | shell script | 2020 🪦)</small>
-* [traitor](linux/tools/traitor.md)  <small>(6.3k ⭐ | go script compiled to binary | 2022 ☠️)</small>
+* [traitor](linux/tools/traitor.md)  <small>(6.5k ⭐ | go script compiled to binary | 2022 ☠️)</small>
 * [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) a.k.a. LSE <small>(3.0k ⭐ | shell script)</small>
 * [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) <small>(1.4k ⭐ | python script, 2021 🪦)</small>
 * [pwncat-cs](/cybersecurity/red-team/s3.exploitation/shell/tools/pwncat.md) <small>(2.3k ⭐ | reverse shell with priv. esc. suggester | 2022 ☠️)</small>
@@ -140,8 +140,8 @@ There are many **automated scripts** that will investigate usual places, service
 
 * [WinPeas](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS) <small>(14.5k ⭐ | binary | Download and Run `.\winPEASany_ofs.exe`)</small>
 * [wesng](https://github.com/bitsadmin/wesng) <small>(3.9k ⭐ | Work locally from an output file 🙌)</small>
-* [Seatbelt](https://github.com/GhostPack/Seatbelt) <small>(3.2k ⭐)</small>
-* [PrivescCheck](https://github.com/itm4n/PrivescCheck) <small>(2.4k ⭐ | powershell script)</small>
+* [Seatbelt](https://github.com/GhostPack/Seatbelt) <small>(3.4k ⭐)</small>
+* [PrivescCheck](https://github.com/itm4n/PrivescCheck) <small>(2.5k ⭐ | powershell script)</small>
 * [JAWS](https://github.com/411Hall/JAWS) <small>(1.5k ⭐ | 2020 🪦)</small>
 * [PowerSploit](https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc) <small>(11.2k ⭐ | powershell script | 2017 🪦 | This is the latest version of [PowerTools](https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerUp) and [PowerUp](https://github.com/HarmJ0y/PowerUp) which are dead too since 2014/2015)</small>.
 
@@ -334,7 +334,7 @@ mimikatz# kerberos::ptt ".\xxx@yyy.kirbi" # load ticket
 
 * We can use [linikatz](https://github.com/CiscoCXSecurity/linikatz) <small>(0.5k ⭐)</small> on Linux
 
-* We can use [mimipenguin](https://github.com/huntergregal/mimipenguin) <small>(3.6k ⭐, 2022 🪦)</small> on Linux
+* We can use [mimipenguin](https://github.com/huntergregal/mimipenguin) <small>(3.7k ⭐, 2022 🪦)</small> on Linux
 
 * We can use [Rubeus](https://github.com/GhostPack/Rubeus) <small>(3.7k ⭐)</small> on Windows
 

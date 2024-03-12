@@ -7,7 +7,7 @@
 [![password_attacks](../../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![file_insecure_storage_1](../../../_badges/rootme/cryptanalysis/file_insecure_storage_1.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/File-Insecure-storage-1)
 
-Mozilla Firefox passwords can be extracted and cracked using [firefox_decrypt](https://github.com/unode/firefox_decrypt) <small>(1.7k ⭐)</small>. To install it on Kali:
+Mozilla Firefox passwords can be extracted and cracked using [firefox_decrypt](https://github.com/unode/firefox_decrypt) <small>(1.8k ⭐)</small>. To install it on Kali:
 
 ```ps
 $ cd /opt
@@ -57,7 +57,7 @@ $ cat mkf # master kejson file created by pypykatz
 $ pypykatz dpapi chrome ./mkf "./Local State" --logindata "./Default/Login Data"
 ```
 
-➡️ We can use [decrypt-chrome-passwords](https://github.com/ohyicong/decrypt-chrome-passwords/) <small>(0.7k ⭐)</small> on Windows that actually automates the whole process.
+➡️ We can use [decrypt-chrome-passwords](https://github.com/ohyicong/decrypt-chrome-passwords/) <small>(0.8k ⭐)</small> on Windows that actually automates the whole process.
 </div></div>
 
 <hr class="sep-both">
@@ -70,7 +70,7 @@ $ pypykatz dpapi chrome ./mkf "./Local State" --logindata "./Default/Login Data"
 
 Once we have the DPAPI master key, we can alternatively decrypt the encrypted secret key, and use it to decrypt the passwords.
 
-On Linux, we can use [dpapilab-ng](https://github.com/tijldeneut/dpapilab-ng/blob/main/blobdec-with-masterkey.py) <small>(0.4k ⭐)</small> to decrypt the secret key and [dcp](https://github.com/palmenas/dcp/tree/main) <small>(0.002k ⭐)</small> to decrypt and dump passwords.
+On Linux, we can use [dpapilab-ng](https://github.com/tijldeneut/dpapilab-ng/blob/main/blobdec-with-masterkey.py) <small>(0.04k ⭐)</small> to decrypt the secret key and [dcp](https://github.com/palmenas/dcp/tree/main) <small>(0.002k ⭐)</small> to decrypt and dump passwords.
 
 ```ps
 $ base64 -d > key.enc <<< "<secret key here>"
