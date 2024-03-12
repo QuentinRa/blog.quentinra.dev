@@ -173,6 +173,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [bluewalle](https://bluewalle.github.io/)
 * [sh1n0bi](https://sh1n0bi.github.io/blog)
 * [complexsecurity](https://complexsecurity.io/hack-the-box)
+* [reboare](https://reboare.github.io)
 
 #### TryHackMe Write-Ups
 
@@ -223,6 +224,12 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [cyberethical.me](https://blog.cyberethical.me/)
 * [pencer.io](https://pencer.io/)
 * [Kartibok](https://github.com/Kartibok/Capture-the-Flag/)
+* [Awesome-Hacking-Resources](https://github.com/vitalysim/Awesome-Hacking-Resources)
+* [awesome-pentest-cheat-sheets](https://github.com/coreb1t/awesome-pentest-cheat-sheets)
+* [redteam.guide](https://redteam.guide/)
+* [jivoi](https://github.com/jivoi/pentest)
+* [cybersec-2](https://cybersec-2.gitbook.io)
+* [HowToHunt](https://github.com/KathanP19/HowToHunt)
 </div><div>
 
 * [auth0.com](https://auth0.com/blog/)

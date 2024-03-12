@@ -372,6 +372,12 @@ Courses
 * [payatu.com](https://payatu.com/guide-linux-privilege-escalation)
 * [udemy.com](https://www.udemy.com/course/linux-privilege-escalation/)
 
+Cheatsheet
+
+* [basic-linux-privilege-escalation](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)
+* [Windows Privilege Escalation Fundamentals](https://fuzzysecurity.com/tutorials/16.html)
+* [Windows Privilege Escalation Guide](https://www.absolomb.com/2018-01-26-Windows-Privilege-Escalation-Guide/)
+
 Random
 
 * [WADComs](https://github.com/WADComs/WADComs.github.io) (1k ⭐)/[wadcoms website](https://wadcoms.github.io/)

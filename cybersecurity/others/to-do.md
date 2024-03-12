@@ -391,8 +391,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 ```text!
-https://github.com/vitalysim/Awesome-Hacking-Resources
-https://github.com/coreb1t/awesome-pentest-cheat-sheets
 https://redteam.guide/ (book)
 https://www.hackers-arise.com (book)
 Hack Like a LEGEND (book)

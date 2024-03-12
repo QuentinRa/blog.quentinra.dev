@@ -394,4 +394,5 @@ Windows
 * [Rizin](https://github.com/rizinorg/rizin) and [cutter](https://github.com/rizinorg/cutter)
 * Disassembly, decompiler, debugger
 * Hopper and Binary Ninja disassemblers
+* Immunity Debugger ([mona](https://github.com/corelan/mona))
 </div></div>
