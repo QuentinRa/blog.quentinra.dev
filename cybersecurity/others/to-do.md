@@ -320,6 +320,7 @@ https://tryhackme.com/room/retro (blaster...)
 * [nishang](https://github.com/samratashok/nishang/)
 * [Mythic](https://github.com/its-a-feature/Mythic) <small>(c2 framework)</small>
 * [darkarmour](https://github.com/bats3c/darkarmour) <small>(antivirus evasion tool)</small>
+* [vbe-decoder](https://github.com/JohnHammond/vbe-decoder)
 </div></div>
 
 <hr class="sep-both">
@@ -391,6 +392,7 @@ Stuff that I found, but never read/used yet.
 
 ```text!
 https://github.com/vitalysim/Awesome-Hacking-Resources
+https://github.com/coreb1t/awesome-pentest-cheat-sheets
 https://redteam.guide/ (book)
 https://www.hackers-arise.com (book)
 Hack Like a LEGEND (book)

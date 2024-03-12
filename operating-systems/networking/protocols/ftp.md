@@ -135,6 +135,8 @@ $ hydra -L user.list -P password.list ftp://IP -V -f
 [![lianyu](../../../cybersecurity/_badges/thm-p/lianyu.svg)](https://tryhackme.com/room/lianyu)
 
 * **vsFTPd 3.0.2**: the FTP server may have been misconfigured, and allows access to any file on the host using "`cd ..`".
+
+* It's very uncommon but: `ftp> !/bin/bash`
 </div></div>
 
 <hr class="sep-both">

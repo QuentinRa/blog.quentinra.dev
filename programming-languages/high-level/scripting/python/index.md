@@ -600,6 +600,13 @@ output_options.add_argument("-f", dest="format", default="html", choices=["raw",
 
 * `action='store_true'` or variants are handy when the parameter doesn't take a unrestrained value, e.g. `--stdin` used means True.
 
+It's also possible to create a subparser, e.g., such as `extract` or `dump` in `xxx extract -h` and `xxx dump -h` that work separately.
+
+```py
+module_parser = parser.add_subparsers(title='Module', dest='module', required=True)
+extract_xxx = module_parser.add_parser('extract', help='Extract [...]')
+```
+
 Once your parser is configured, parse the arguments with:
 
 ```py

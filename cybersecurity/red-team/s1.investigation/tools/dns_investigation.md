@@ -45,6 +45,7 @@ Stuff that I found, but never read/used yet.
 * netcraft [search DNS](https://searchdns.netcraft.com/) or [sitereport](https://sitereport.netcraft.com)
 * [virus total domain details](https://www.virustotal.com/gui/domain/example.com/details) (+Relations tab)
 * [domain.glass](https://domain.glass/)
+* [viewdns](https://viewdns.info/)
 </div><div>
 
 * [Sublist3r](https://github.com/aboul3la/Sublist3r)

@@ -220,6 +220,9 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [Infosec_Reference](https://github.com/rmusser01/Infosec_Reference) (4.6k ⭐)
 * [xapax](https://github.com/xapax/security)
 * [kalilinuxtutorials](https://kalilinuxtutorials.com/)
+* [cyberethical.me](https://blog.cyberethical.me/)
+* [pencer.io](https://pencer.io/)
+* [Kartibok](https://github.com/Kartibok/Capture-the-Flag/)
 </div><div>
 
 * [auth0.com](https://auth0.com/blog/)
