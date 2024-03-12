@@ -68,6 +68,7 @@ $ cd .git
 $ git diff                  # it says the code is missing
 $ git restore *             # restore current version
 $ git log -p -- config.php  # look at config.php history
+$ git show commit_id
 ```
 
 👻 Automated tools: [GitHacker](https://github.com/WangYihang/GitHacker), [GitTools](https://github.com/internetwache/GitTools), [GitHack](https://github.com/lijiejie/GitHack), etc.

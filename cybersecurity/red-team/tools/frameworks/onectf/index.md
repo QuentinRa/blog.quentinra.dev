@@ -49,4 +49,19 @@ $ onectf craw [...] --pc -L gobuster_output.txt
 
 📚 You can pass the output of [gobuster](/cybersecurity/red-team/tools/enumeration/web/gobuster.md)  or a list of endpoints using `-L endpoints.txt`. You can display HTML comments using `--pc`.
 </div><div>
+
+#### OneCTF AXFR Module
+
+The [AXFR](https://github.com/QuentinRa/onectf/blob/main/docs/axfr.md) module is handy when we want to test AXFR on a wordlist of subdomains using multi-threading for faster results.
+
+Assuming `IP` is the IP address of the DNS server, `xxx.yyy` is the domain, and `wordlist.txt` is a list of subdomains:
+
+```ps
+$ head wordlist.txt
+aaa
+...
+$ onectf axfr -D xxx.yyy -r IP -w wordlist.txt -t 64
+# try AXFR on aaa.xxx.yyy
+# ...
+```
 </div></div>

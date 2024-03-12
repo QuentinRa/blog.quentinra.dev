@@ -174,6 +174,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [sh1n0bi](https://sh1n0bi.github.io/blog)
 * [complexsecurity](https://complexsecurity.io/hack-the-box)
 * [reboare](https://reboare.github.io)
+* [0xb0b](https://0xb0b.gitbook.io)
 
 #### TryHackMe Write-Ups
 
@@ -186,6 +187,8 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [complexsecurity](https://complexsecurity.io/try-hack-me)
 * [mrash](https://mrash.co)
 * [narancsblog](https://narancsblog.com/)
+* [jaxafed](https://jaxafed.github.io)
+* [0xb0b](https://0xb0b.gitbook.io)
 
 #### PortSwigger Write-Ups
 
@@ -246,6 +249,8 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [speedguide](https://www.speedguide.net/)
 * [curiositykillscolby](https://curiositykillscolby.com/)
 * [defaultcredentials](https://defaultcredentials.com/)
+* [exploit-notes.hdks](https://exploit-notes.hdks.org/)
+* [fastiraz](https://fastiraz.gitbook.io/)
 </div><div>
 
 * [razrsec](https://blog.razrsec.uk/)

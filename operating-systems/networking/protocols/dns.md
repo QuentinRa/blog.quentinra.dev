@@ -102,9 +102,11 @@ A DNS zone represents a portion of the domain records that the DNS server manage
 * **Secondary zones** 🌿: read-only copies of the DNS records
 
 The primary DNS servers are transferring changes to secondary DNS servers using what we call "Zone Transferts." There are two types of zone transfers: `AXFR` and `IXFR`.
-</div><div>
 
 ⚠️ On Misconfigured DNS servers <small>(no authentication/no list of trusted hosts/no RNDC Key)</small>, we may be able to query the whole zone file.
+</div><div>
+
+You can try it [online](https://hackertarget.com/zone-transfer/) or with [zonetransfer.me](https://digi.ninja/projects/zonetransferme.php). We usually find a lot of domains during [enumeration](#enumeration). We may then try AXFR on each. I encountered one scenario in which the subdomain wasn't returning any records, which fooled every tool, while it was vulnerable to AXFR.
 
 ```ps
 # select the domain that you want to "fetch"
@@ -114,30 +116,11 @@ $ dig axfr some_domain.com @primary_dns_server
 # it it doesn't work, we can try brute forcing
 ```
 
-You can try it [online](https://hackertarget.com/zone-transfer/) or with [zonetransfer.me](https://digi.ninja/projects/zonetransferme.php).
+You can use [onectf](/cybersecurity/red-team/tools/frameworks/onectf/index.md#onectf-axfr-module) to test AXFR on a list of subdomains.
 
-<details class="details-n">
-<summary>Sample Python Script For Subdomain Enumeration Using Zone Transfer On A Vulnerable DNS</summary>
-
-```python
-# Requirements:  pip install dnspython3
-# Usage: script.py <domain> <dns>
-# Note: errors are not handled at all
-# License: https://en.wikipedia.org/wiki/Unlicense
-import dns.resolver
-import sys
-
-domain = sys.argv[1]
-resolver = dns.resolver.Resolver()
-resolver.nameservers = [sys.argv[2]]
-
-for nameserver in resolver.nameservers:
-    response = dns.query.xfr(nameserver, domain)
-    xfr = dns.zone.from_xfr(response)
-    for record in xfr:
-        print(f'{record.to_text()}.{domain}')
+```ps
+$ onectf axfr -D example.com -r IP -w wordlist.txt -t 64
 ```
-</details>
 </div></div>
 
 <hr class="sep-both">
