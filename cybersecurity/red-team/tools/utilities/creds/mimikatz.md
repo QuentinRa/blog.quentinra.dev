@@ -4,7 +4,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[mimikatz](https://github.com/gentilkiwi/mimikatz) <small>(18.4k ⭐)</small> is the most popular tool to dump Windows credentials or perform attacks such as [Pass-the-hash/Pass-the-ticket](/cybersecurity/red-team/s4.privesc/index.md#pass-the-xxx).
+[mimikatz](https://github.com/gentilkiwi/mimikatz) <small>(18.5k ⭐)</small> is the most popular tool to dump Windows credentials or perform attacks such as [Pass-the-hash/Pass-the-ticket](/cybersecurity/red-team/s4.privesc/index.md#pass-the-xxx).
 
 ```shell!
 PS> .\mimikatz.exe

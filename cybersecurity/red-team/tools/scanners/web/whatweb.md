@@ -4,7 +4,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[whatweb](https://github.com/urbanadventurer/WhatWeb) <small>(4.9k ⭐, 2021 ☠️)</small> is a common webscanner used to find some common information about websites.
+[whatweb](https://github.com/urbanadventurer/WhatWeb) <small>(5.0k ⭐, 2021 ☠️)</small> is a common webscanner used to find some common information about websites.
 
 ```ps
 $ whatweb URL

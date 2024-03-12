@@ -359,16 +359,12 @@ Stuff that I found, but never read/used yet.
 * lusrmgr.msc: can be used to find entrypoints (weak passwords, groups with too many perms)
 * msconfig (find malware?)/winver (outdated?)/control system (open ports...)/msinfo32 (outdated?)/compmgmt (scheduled tasks...)/regedit (misconfiguration...): info can help in find vulnerabilities
 * UserAccountControlSettings: identify weakness
-* PowerSploit...
-* Mimikatz...
 * Microsoft Security Compliance Toolkit (SCT)
 * CIS-CAT
 * Microsoft Defender Application Control
 * device guard
-* applocker
 * Hiren's bootcd
 * [SASE](https://www.microsoft.com/en-us/security/business/security-101/what-is-sase)
-* sysmon
 * [Introduction to Alternate Data Streams](https://www.malwarebytes.com/blog/news/2015/07/introduction-to-alternate-data-streams)
 * [Windows credential guard](https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-how-it-works)
 * [LAPS](https://www.microsoft.com/en-us/download/details.aspx?id=46899)

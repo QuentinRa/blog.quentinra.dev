@@ -5,7 +5,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[FoxyProxy](https://github.com/foxyproxy/browser-extension) <small>(0.1k/0.5k ⭐)</small> is an open-source browser extension that can be used to easily switch between multiple proxie configurations, for instance, to redirect HTTP traffic to [Burp Suite](burp/index.md) or OWASP Zap.
+[FoxyProxy](https://github.com/foxyproxy/browser-extension) <small>(0.2k/0.5k ⭐)</small> is an open-source browser extension that can be used to easily switch between multiple proxie configurations, for instance, to redirect HTTP traffic to [Burp Suite](burp/index.md) or OWASP Zap.
 
 To add a configuration, click on the extension, then 'options'. navigate to the tab 'proxies' and click on 'add'.
 
