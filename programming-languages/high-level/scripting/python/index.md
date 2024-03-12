@@ -76,7 +76,7 @@ $ pip3 install -U xxx  # update
 $ python3 -m pip install --upgrade pip # upgrade
 ```
 
-🐲 To install python application, you can use `pipx` that automatically install the application within a [venv](#venv).
+🐲 To install python application, you can use `pipx` that automatically install the application within a [venv](#virtual-environment-using-venv).
 
 ```ps
 $ sudo apt install pipx
@@ -555,7 +555,6 @@ This is used to run some code when a script is the main.
 if __name__ == '__main__':
     # ...
 ```
-</div><div>
 
 #### Files
 
@@ -569,6 +568,43 @@ with open(password_file, 'r') as file:
     for line in file:        # read line by line
         # ...
     file.write("xxx")        # append/write a line
+```
+</div><div>
+
+#### argparse library
+
+The [argparse](https://docs.python.org/3/library/argparse.html) library is a native module that can be used to parse and handle arguments nicely. 📚 Most arguments are inferred if not given, which often result in a good result ✍️. First, create a parser:
+
+```py
+parser = argparse.ArgumentParser(description="xxx")
+parser = argparse.ArgumentParser(description="xxx", prog="xxx.py", epilog="XXX Script", usage="xxx.py [options]", prefix_chars='-', add_help=True)
+```
+
+You can group arguments if you have a lot of them.
+
+```py
+input_options = crawl_parser.add_argument_group("INPUT OPTIONS")
+```
+
+You can add options to a group as you would to the parser.
+
+```py
+input_options.add_argument('-L', '--list', metavar='list', dest='mylist', help='XXX')
+input_options.add_argument('--stdin', action='store_true', help='XXX', required=True)
+output_options.add_argument("-f", dest="format", default="html", choices=["raw", "html", "json"], help="Output format (default=%(default)s).")
+```
+
+* `dest='xxx'` represent the attribute name in which the argument will be stored once parsed, e.g., `args.xxx`.
+
+* `metavar='xxx'` represent the name show in the help for the argument, e.g., `-L xxx, --list xxx`.
+
+* `action='store_true'` or variants are handy when the parameter doesn't take a unrestrained value, e.g. `--stdin` used means True.
+
+Once your parser is configured, parse the arguments with:
+
+```py
+args = parser.parse_args()
+
 ```
 </div></div>
 
@@ -782,8 +818,6 @@ Stuff that I found, but never read/used yet.
 * `del()`: delete a variable
 * `dir()`: class properties
 * py2exe
-* `apt install python3-xxx`
-* pipx
 * `Optional[type]`
 * `class XXX(Enum): XXX = 0, ...`
 * `Enumerate(xxx.items())`
@@ -806,20 +840,6 @@ str[::-1] # reverse
 
 * `# -*- coding: utf-8 -*-`
 * lambda: `lambda x : x[0]`
-
-```
-$ curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
-$ sudo python2 get-pip.py
-$ pip2 install --upgrade xxx
-```
-
-```py
-# ArgParser
-parser = argparse.ArgumentParser(prog="xxx.py", epilog="XXX Script", usage="xxx.py [options]", prefix_chars='-', add_help=True)
-parser.add_argument('-d', action='store', metavar='xxx', type=str, help='XXX.\tXXX', required=True)
-args = parser.parse_args()
-```
-
 * [python pep](https://www.python.org/dev/peps/pep-0008/)
 * [ipython](https://ipython.org/install.html)
 * [enthought](https://docs.enthought.com/canopy/2.1/index.html)
