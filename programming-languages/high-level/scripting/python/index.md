@@ -50,16 +50,24 @@ Python 2 was the previous major version of Python. With little changes, most Pyt
 
 ➡️ `python`/`pip` will link to `python2`/`pip2` or `python3`/`pip3` according to your configuration, but you can have both.
 
+✍️ I once had to install `pip2` on a modern operating system:
+
+```shell!
+$ curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
+$ sudo python2 get-pip.py
+$ pip2 install --upgrade xxx
+```
+
 <br>
 
 #### Packages
 
-You can look for packages at [pypi.org](https://pypi.org/). You can use `pip3` to install `python3` packages:
+You can look for packages at [pypi.org](https://pypi.org/). We may use `apt install python3-xxx` to install `xxx` if applicable. We mostly use `pip3`:
 
 ```ps
-$ pip3 install xxx # install
+$ pip3 install xxx     # install
 $ pip3 list --outdated # see latest versions
-$ pip3 install -U xxx # update
+$ pip3 install -U xxx  # update
 ```
 
 🦄 To upgrade `pip`, you can use:
@@ -79,6 +87,8 @@ $ pipx install git+https://github.com/xxx/yyy.git
 
 #### Imports
 
+A short overview of a few include statements:
+
 ```python
 import xxx
 import xxx as yyy         # alias
@@ -89,9 +99,11 @@ from xxx import aaa, bbb  # import aaa and bbb
 from xxx import *         # import all
 ```
 
-#### VENV
+#### Virtual Environment Using VENV
 
-Each project needs some packages in specific versions. To avoid messing with other projects when installing, updating, or removing packages, we usually create a virtual environment (**VENV**) per project. Once **activated** <small>(by sourcing activate)</small>, new packages will be added to the local copy at `path/to/venv`.
+Each project needs some packages in specific versions. To avoid messing with other projects when installing, updating, or removing packages, we usually create a virtual environment (VENV) per project. 
+
+Once activated <small>(by sourcing activate)</small>, new packages installed with `pip` will be added to the local copy at `path/to/venv`.
 
 ```ps
 $ python3 -m venv path/to/venv      # create
@@ -100,14 +112,40 @@ $ source path/to/venv/bin/activate  # load
 (venv) $ pip3 install xxx           # installed to the VENV
 ```
 
-We usually store in a file `requirements.txt` packages and their versions used by the project.
+We often store in a file called `requirements.txt` the list of packages and their versions used by the project.
 
 ```shell!
-$ pip3 freeze > requirements.txt # create
+$ pip3 freeze > requirements.txt   # create
 $ pip3 install -r requirements.txt # load
 ````
 
 ➡️ See also `virtualenv`, `Pipenv`, `Pipfile`, and `Poetry`.
+
+#### Python Packaging
+
+You can release a package by adding a `pyproject.toml` and/or a `setup.py`, with optionally, `setup.cfg`.
+
+<details class="details-n">
+<summary>Example of simple setup.py</summary>
+
+```py
+import setuptools
+
+setuptools.setup(
+    name="your_package_name",
+    version="your_package_version",
+    packages=setuptools.find_packages(),
+    install_requires=[x.strip() for x in open("requirements.txt").readlines()],
+    entry_points={
+        'console_scripts': [
+            # Ex: toto = toto.main:main
+            # Then: toto -h => python toto/main.py => execute main(argv=["toto", "-h"])
+            'executable_name = package_name.python_file_name:python_function',
+        ],
+    },
+)
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
