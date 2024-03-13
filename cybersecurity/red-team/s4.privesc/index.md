@@ -403,8 +403,4 @@ Exploiting Services
 
 * [MySQL user-defined functions](https://redteamnation.com/mysql-user-defined-functions/)
 * [PrintSpoofer](https://github.com/itm4n/PrintSpoofer)
-
-Training
-
-* [allinonemj](https://tryhackme.com/room/allinonemj) (LXC)
 </div></div>
