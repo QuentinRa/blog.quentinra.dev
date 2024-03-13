@@ -55,7 +55,7 @@ Additionally, look for folders where you can download and run scripts, along wit
 I compiled a list of handy commands per operating system:
 
 * [Linux Environment Identification](linux/utils/id.md)
-* [Windows Environment Identification](windows/id.md)
+* [Windows Environment Identification](windows/utils/id.md)
 
 You will also have to look for installed tools and apps along with their versions. You will need this information to look for [CVEs and exploits](/cybersecurity/red-team/s3.exploitation/index.md#vulnerability-databases) related to local escalation privilege.
 </div></div>
@@ -131,12 +131,12 @@ Additional references
 
 [Windows](/operating-systems/windows/_knowledge/index.md) privilege escalation may be achieved by exploiting:
 
-* 💎 Exploiting [UAC](windows/uac.md)
-* ⏰ Exploiting [scheduled tasks](windows/tasks.md)
+* 💎 Exploiting [UAC](windows/topics/uac.md)
+* ⏰ Exploiting [scheduled tasks](windows/topics/tasks.md)
 * 🔑 Finding [credentials](#credential-hunting) <small>(config, logs, passwords...)</small>
-* 💥 Exploiting [services](windows/services.md)
-* 🐸 Exploiting [privileges](windows/perms.md)
-* 📦 Unpatched [vulnerabilities](windows/vulns.md) 
+* 💥 Exploiting [services](windows/topics/services.md)
+* 🐸 Exploiting [privileges](windows/topics/perms.md)
+* 📦 Unpatched [vulnerabilities](windows/topics/vulns.md) 
 
 <br>
 
