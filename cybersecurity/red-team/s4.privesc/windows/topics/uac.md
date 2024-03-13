@@ -6,20 +6,20 @@ The [User Account Control (UAC)](/operating-systems/windows/_knowledge/index.md#
 
 #### By-pass UAC using eventvwr (2016)
 
-[![blaster](../../../_badges/thm-p/ice.svg)](https://tryhackme.com/room/blaster)
+[![blaster](../../../../_badges/thm-p/ice.svg)](https://tryhackme.com/room/blaster)
 
 Bypass User Account Control (UAC) using `eventvwr.exe`. The attack is done by editing the registry, which means you must have sufficient privileges to do so <small>(not necessarily an admin, but not a regular user)</small>.
 
 #### CVE-2019-1388
 
-[![blaster](../../../_badges/thm-p/blaster.svg)](https://tryhackme.com/room/blaster)
+[![blaster](../../../../_badges/thm-p/blaster.svg)](https://tryhackme.com/room/blaster)
 
 A [flaw](https://github.com/nobodyatall648/CVE-2019-1388) in UAC allows users to open a browser as Administrator, which can be further exploited allowing us to start a shell as Administrator.
 </div><div>
 
 #### AlwaysInstallElevated Misconfiguration
 
-[![windowsprivesc20](../../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
+[![windowsprivesc20](../../../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
 
 If an admin allowed programs to be installed without administrator privileges, then we can install a malicious program.
 

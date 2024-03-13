@@ -1,7 +1,7 @@
 # Windows services
 
-[![windowsprivesc20](../../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
-[![steelmountain](../../../_badges/thmp-p/steelmountain.svg)](https://tryhackme.com/room/steelmountain)
+[![windowsprivesc20](../../../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
+[![steelmountain](../../../../_badges/thmp-p/steelmountain.svg)](https://tryhackme.com/room/steelmountain)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -75,7 +75,7 @@ PS> # $Env:appdata\Vulnerable.exe Program\service.exe
 
 #### Insecure Service Permissions
 
-[![return](../../../_badges/htb-p/return.svg)](https://app.hackthebox.com/machines/Return)
+[![return](../../../../_badges/htb-p/return.svg)](https://app.hackthebox.com/machines/Return)
 
 It occurs if we can edit the permissions of a service, such as being able to change the location of the binary. Use the [accesschk](https://learn.microsoft.com/en-us/sysinternals/downloads/accesschk) command. If the user is granted `SERVICE_ALL_ACCESS` on the service, then have fun.
 

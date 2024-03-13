@@ -1,6 +1,6 @@
 # Scheduled tasks
 
-[![windowsprivesc20](../../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
+[![windowsprivesc20](../../../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
 
 <div class="row row-cols-lg-2"><div>
 

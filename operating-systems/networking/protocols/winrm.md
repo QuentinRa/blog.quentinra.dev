@@ -35,8 +35,6 @@ You can try to [brute force credentials](/cybersecurity/red-team/s2.discovery/te
 $ nxc winrm IP -u user.list -p password.list
 ```
 </div><div>
-
-See also: [RogueWinRM](https://github.com/antonioCoco/RogueWinRM)  <small>(0.5k ⭐, 2020 🪦)</small>.
 </div></div>
 
 <hr class="sep-both">
