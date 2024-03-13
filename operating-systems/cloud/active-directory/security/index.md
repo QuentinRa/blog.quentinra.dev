@@ -65,6 +65,7 @@ When the user wants to access a network resource, such as a shared folder or a d
 
 #### Dump Secrets From Active Directory database
 
+[![windows_privilege_escalation](../../../../cybersecurity/_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 [![windows_ntds_secret_extraction](../../../../cybersecurity/_badges/rootme/forensic/windows_ntds_secret_extraction.svg)](https://www.root-me.org/en/Challenges/Forensic/Windows-NTDS-Secret-extraction)
 
 The active directory, similarly to the SAM database, is partially encrypted using a [bootkey](/operating-systems/windows/security/index.md#syskey-bootkey-and-system-hive) stored in the SYSTEM registry.
@@ -80,6 +81,14 @@ You can use impacket [secretsdump](/operating-systems/networking/protocols/tools
 ```shell!
 $ impacket-secretsdump -system ./system.hive -ntds ./ntds.dit LOCAL -outputfile cracked
 $ grep "krbtgt" cracked.ntds.kerberos # kerberos tickets
+```
+
+You could also use [DSInternals](https://github.com/MichaelGrafnetter/DSInternals/) <small>(1.5k ⭐)</small>:
+
+```ps
+PS> Import-Module .\DSInternals.psd1
+PS> $key = Get-BootKey -SystemHiveFilePath '.\system.hive'
+PS> Get-ADDBAccount -All -DatabasePath .\ntds.dit -BootKey $key
 ```
 </div><div>
 </div></div>

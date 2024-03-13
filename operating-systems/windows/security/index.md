@@ -193,6 +193,8 @@ Use [file transfer methods](/cybersecurity/red-team/_knowledge/topics/file_trans
 $ impacket-secretsdump -sam sam.hive -security security.hive -system system.hive LOCAL
 ```
 
+On Windows, you can use [DSInternals](https://github.com/MichaelGrafnetter/DSInternals/) <small>(1.5k ⭐)</small> too.
+
 <br>
 
 #### Dump Credentials Protected By The DPAPI
@@ -334,6 +336,7 @@ PS> wmic process call create $(Resolve-Path file.exe:stream)
 #### Volume Shadow Copy Service (VSS)
 
 [![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![windows_privilege_escalation](../../../cybersecurity/_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 [![adventofcyber2](../../../cybersecurity/_badges/thm/adventofcyber2/day23.svg)](https://tryhackme.com/room/adventofcyber2)
 
 The Volume Shadow Copy Service (VSS) is handling the creation, and management of shadow copies/snapshots of the data backed up. 
@@ -349,7 +352,7 @@ PS> vssadmin list volumes
 
 📚 To restore a shadow copy, right-click on a folder, navigate to 'previous versions', select one, and press 'restore.'
 
-➡️ See also: [Volume Shadow Copy Service](https://learn.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service).
+➡️ See also: [Volume Shadow Copy Service](https://learn.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service) and [diskshadow](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/diskshadow).
 
 #### PowerShell SecureString
 

@@ -1,5 +1,6 @@
 # Privileges
 
+[![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 [![windowsprivesc20](../../../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
 
 <div class="row row-cols-lg-2"><div>
@@ -121,17 +122,5 @@ PS> robocopy /B <source_folder> <dest_folder> <filename>
 ```
 
 You could access the SAM database or NTDS.dit...
-</div><div>
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-lg-2"><div>
-
-* [RogueWinRM](/operating-systems/networking/protocols/winrm.md) when `SeImpersonatePrivilege`
 </div><div>
 </div></div>
