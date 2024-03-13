@@ -121,7 +121,7 @@ $ stegcracker file wordlist
 [![ctfcollectionvol1](../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
 [![exif_thumbnail](../../_badges/rootme/steganography/exif_thumbnail.svg)](https://www.root-me.org/en/Challenges/Steganography/EXIF-Thumbnail)
 
-Using [binwalk](https://github.com/ReFirmLabs/binwalk) <small>(10.0k ⭐)</small> you can investigate nested files:
+Using [binwalk](https://github.com/ReFirmLabs/binwalk) <small>(10.1k ⭐)</small> you can investigate nested files:
 
 ```ps
 $ binwalk file.png

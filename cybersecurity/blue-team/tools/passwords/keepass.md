@@ -7,8 +7,7 @@
 [KeePass](https://keepass.info/) is a free and open-source password manager. The source code is available for download in each [release](https://sourceforge.net/projects/keepass/).
 
 * KeePass can be extended through [plugins](https://keepass.info/plugins.html) 🐲.
-* Multiple forks exist. Refer to [
-awesome-keepass ](https://github.com/lgg/awesome-keepass) <small>(0.4k ⭐)</small>.
+* Multiple forks exist. Refer to [awesome-keepass](https://github.com/lgg/awesome-keepass) <small>(0.4k ⭐)</small>.
 
 KeePass is storing passwords locally in a `.kdbx` database.
 </div><div>

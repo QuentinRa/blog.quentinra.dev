@@ -67,7 +67,7 @@ $ jar -cmf raw/META-INF/MANIFEST.MF xxx.jar raw
 [![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 [![blocky](../../_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
 
-You can use [jd-gui](https://github.com/java-decompiler/jd-gui) <small>(13.2k ⭐)</small> to reverse a Java application. Run `jd-gui`, and oad the JAR in it. You can then either:
+You can use [jd-gui](https://github.com/java-decompiler/jd-gui) <small>(13.4k ⭐)</small> to reverse a Java application. Run `jd-gui`, and oad the JAR in it. You can then either:
 
 * Explore the reversed sources from `jd-gui`
 * Use `File> Save all sources` and read/modify them in your editor
@@ -76,8 +76,8 @@ You can use [jd-gui](https://github.com/java-decompiler/jd-gui) <small>(13.2k �
 
 Other well-known decompilers:
 
-* [Recaf](https://github.com/Col-E/Recaf) <small>(5.4k ⭐)</small>
-* [JetBrains IntelliJ](https://github.com/JetBrains/intellij-community) <small>(16.2k ⭐)</small>
+* [Recaf](https://github.com/Col-E/Recaf) <small>(5.5k ⭐)</small>
+* [JetBrains IntelliJ](https://github.com/JetBrains/intellij-community) <small>(16.4k ⭐)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -96,7 +96,7 @@ Other well-known decompilers:
 
 [![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 
-You can use [de4dot](https://github.com/de4dot/de4dot) <small>(6.6k ⭐, 2020 🪦)</small> to reverse your binary. On Windows, drag and drop your binary onto the de4dot executable.
+You can use [de4dot](https://github.com/de4dot/de4dot) <small>(6.7k ⭐, 2020 🪦)</small> to reverse your binary. On Windows, drag and drop your binary onto the de4dot executable.
 
 <br>
 
@@ -104,7 +104,7 @@ You can use [de4dot](https://github.com/de4dot/de4dot) <small>(6.6k ⭐, 2020 �
 
 [![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 
-You can use [dnSpy](https://github.com/dnSpy/dnSpy) <small>(24.8k ⭐, 2020 🪦)</small> to explore .NET source code.
+You can use [dnSpy](https://github.com/dnSpy/dnSpy) <small>(25.2k ⭐, 2020 🪦)</small> to explore .NET source code.
 
 <br>
 
@@ -119,7 +119,7 @@ You can use [JetBrains dotPeek](https://www.jetbrains.com/decompiler/) <small>(p
 
 [![adventofcyber2](../../_badges/thm/adventofcyber2/day18.svg)](https://tryhackme.com/room/adventofcyber2)
 
-[ILSpy](https://github.com/icsharpcode/ILSpy) <small>(19.8k ⭐)</small> is the most popular open-source .NET decompiler. It can be integrated in editors such as [VSCode](https://code.visualstudio.com/) or standalone editors.
+[ILSpy](https://github.com/icsharpcode/ILSpy) <small>(19.9k ⭐)</small> is the most popular open-source .NET decompiler. It can be integrated in editors such as [VSCode](https://code.visualstudio.com/) or standalone editors.
 
 On Linux, you can use the [AvaloniaILSpy](https://github.com/icsharpcode/AvaloniaILSpy) <small>(1.4k ⭐)</small> port.
 
@@ -147,7 +147,7 @@ Opening the executable will automatically load its .NET solutions. You can save 
 [![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 [![introduction_to_malware_analysis](../../_badges/htb/introduction_to_malware_analysis.svg)](https://academy.hackthebox.com/course/preview/introduction-to-malware-analysis)
 
-You can use [x64dbg](https://github.com/x64dbg/x64dbg) <small>(42.5k ⭐)</small> to debug binaries.
+You can use [x64dbg](https://github.com/x64dbg/x64dbg) <small>(42.9k ⭐)</small> to debug binaries.
 
 * You can navigate to options to define the breakpoints. For instance, uncheck everything except Exit Breakpoint.
 * The memory map tab can be used to find stuff like [memory-mapped files](https://en.wikipedia.org/wiki/Memory-mapped_file) <small>(a file mapped to a memory region like a buffer)</small>.
@@ -209,7 +209,7 @@ $ ltrace xxx.bin
 
 #### Boomerang
 
-[boomerang](https://github.com/BoomerangDecompiler/boomerang) <small>(0.3k ⭐)</small> that is somewhat able to reverse x86 binaries in an unreadable uncompilable C file.
+[boomerang](https://github.com/BoomerangDecompiler/boomerang) <small>(0.4k ⭐)</small> that is somewhat able to reverse x86 binaries in an unreadable uncompilable C file.
 
 <details class="details-n">
 <summary>Docker Installation</summary>
@@ -257,7 +257,7 @@ $ docker run -it -v $(pwd):/builds boomrangcli:latest ch1.bin
 
 [![adventofcyber2](../../_badges/thm/adventofcyber2/day17.svg)](https://tryhackme.com/room/adventofcyber2)
 
-[Radare](https://github.com/radareorg/radare2) <small>(19.2k ⭐)</small> is similar to GDB, but it somewhat easier to use if we only need to disassemble the code.
+[Radare](https://github.com/radareorg/radare2) <small>(19.4k ⭐)</small> is similar to GDB, but it somewhat easier to use if we only need to disassemble the code.
 
 ```shell!
 $ rabin2 -I xxx.bin # get information

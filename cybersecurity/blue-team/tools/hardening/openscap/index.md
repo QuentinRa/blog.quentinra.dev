@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[OpenSCAP](https://www.open-scap.org/) (1.2k ⭐) is a tool that can automatically scan if a hardening guide was applied and even automatically apply the guide.
+[OpenSCAP](https://www.open-scap.org/) <small>(1.3k ⭐)</small> is a tool that can automatically scan if a hardening guide was applied and even automatically apply the guide.
 
 * [Documentation](https://static.open-scap.org/)
 * [GitHub](https://github.com/OpenSCAP/openscap)
@@ -68,5 +68,5 @@ You can add more options right before the XML.
 
 💡 You can test a remote system using `oscap-ssh`, as long as the target has openscap installed. Refer to the manual.
 
-🚀 You can use a GUI called [scap-workbench](https://github.com/OpenSCAP/scap-workbench) (0.2k ⭐).
+🚀 You can use a GUI called [scap-workbench](https://github.com/OpenSCAP/scap-workbench) <small>(0.2k ⭐)</small>.
 </div></div>
