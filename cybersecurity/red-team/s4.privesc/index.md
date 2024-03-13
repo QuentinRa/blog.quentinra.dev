@@ -30,6 +30,15 @@ Escalation can be **horizontally**/laterally <small>(another user with the same 
 
 ## Privilege Escalation Basics
 
+[![linuxprivilegeescalation](../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![windows_privilege_escalation](../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
+[![linprivesc](../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
+[![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
+[![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
+[![adventofcyber2](../../_badges/thm/adventofcyber2/day11.svg)](https://tryhackme.com/room/adventofcyber2)
+[![adventofcyber2](../../../cybersecurity/_badges/thm/adventofcyber2/day12.svg)](https://tryhackme.com/room/adventofcyber2)
+[![windowsprivesc20](../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
+
 <div class="row row-cols-lg-2"><div>
 
 Each operating system has its own set of escalation vectors while they share similarities. The most common point is that we want to gather information about the environnement.
@@ -38,7 +47,7 @@ Each operating system has its own set of escalation vectors while they share sim
 
 * **Host information** 💻: it may be used to find if there are well-known vulnerabilities or misconfigurations.
 
-* **Network information** 🌍: from the outside, we mostly only saw a portion of the internal network. We find find that the host is running a FTP server only available from the inside.
+* **Network information** 🌍: from the outside, we mostly only saw a portion of the internal network. We find find that the host is running a FTP server only available from the inside. It's also interesting to see the ARP cache and the routing tables.
 
 Additionally, look for folders where you can download and run scripts, along with the machine configuration to configure them properly. 
 </div><div>
@@ -48,14 +57,12 @@ I compiled a list of handy commands per operating system:
 * [Linux Environment Identification](linux/utils/id.md)
 * [Windows Environment Identification](windows/id.md)
 
-You will also have to look for installed tools and apps along with their versions. You will need these to look for [CVEs and exploits](/cybersecurity/red-team/s3.exploitation/index.md#vulnerability-databases) related to local escalation privilege.
+You will also have to look for installed tools and apps along with their versions. You will need this information to look for [CVEs and exploits](/cybersecurity/red-team/s3.exploitation/index.md#vulnerability-databases) related to local escalation privilege.
 </div></div>
 
 <hr class="sep-both">
 
 ## Linux privilege escalation 🦆
-
-<div class="row row-cols-lg-2"><div>
 
 [![linuxprivilegeescalation](../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![linprivesc](../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
@@ -63,6 +70,8 @@ You will also have to look for installed tools and apps along with their version
 [![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 [![adventofcyber2](../../_badges/thm/adventofcyber2/day11.svg)](https://tryhackme.com/room/adventofcyber2)
 [![linux_privilege_escalation](../../_badges/poat/linux_privilege_escalation.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md)
+
+<div class="row row-cols-lg-2"><div>
 
 [Linux](/operating-systems/linux/_knowledge/index.md) privilege escalation may be achieved by exploiting:
 
@@ -113,6 +122,7 @@ Additional references
 
 ## Windows privilege escalation 🪟
 
+[![windows_privilege_escalation](../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 [![adventofcyber2](../../../cybersecurity/_badges/thm/adventofcyber2/day12.svg)](https://tryhackme.com/room/adventofcyber2)
 [![windowsprivesc20](../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
 [![windows_privilege_escalation](../../_badges/poat/windows_privilege_escalation.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md)
@@ -155,11 +165,11 @@ PS> powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"
 
 ## Credential Hunting
 
+[![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![linuxprivilegeescalation](../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![adventofcyber2](../../_badges/thm/adventofcyber2/day24.svg)](https://tryhackme.com/room/adventofcyber2)
 [![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![windowsprivesc20](../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
-[![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
-[![linuxprivilegeescalation](../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -193,9 +203,9 @@ Always put yourself in the target shoes.
 
 #### Linux CredHunting Notes
 
-[![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![linuxprivilegeescalation](../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![ignite](../../_badges/thm-p/ignite.svg)](https://tryhackme.com/room/ignite)
 [![chillhack](../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
 [![validation](../../_badges/htb-p/validation.svg)](https://app.hackthebox.com/machines/Validation)
@@ -222,8 +232,8 @@ $ find / -wholename "*.git/config" 2> /dev/null | xargs grep "url"
 
 #### Windows CredHunting Notes
 
-[![windowsprivesc20](../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![windowsprivesc20](../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
 
 Read PowerShell console history:
 
