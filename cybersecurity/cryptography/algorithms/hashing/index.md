@@ -94,39 +94,7 @@ Let's say we got some hash, and we want to find which algorithm generated this h
 $ echo -n "some hash here" > myhash
 ```
 
-* ➡️ Historically, we used [hash-identifier](https://github.com/blackploit/hash-identifier) (0.4k⭐). Obsolete (2011).
-
-```bash!
-$ cat myhash | hash-identifier
-```
-
-* ➡️ [hashID](https://github.com/psypanda/hashID) <small>(1.2k ⭐)</small>. Not updated since 2015.
-
-```bash!
-$ cat myhash | hashid
-```
-
-* ➡️ [Name-that-hash](https://github.com/HashPals/Name-That-Hash) <small>(1.2k ⭐)</small>. [Online version here](https://nth.skerritt.blog/). Gives the John (JtR) and the hashcat (hc) format for each.
-
-```bash!
-# sudo apt install name-that-hash
-$ nth -t "some hash here"
-$ nth -f myhash
-```
-</div><div>
-
-* ➡️ [haiti](https://github.com/noraj/haiti/) (0.4k ⭐). Similar to Name-that-hash, different results.
-
-```bash!
-# sudo gem install haiti-hash
-$ haiti "some hash here"
-```
-
-* ➡️ Online tools
-
-For instance, [hashes.com](https://hashes.com/en/tools/hash_identifier) or [md5hashing.net](https://md5hashing.net/hash_type_checker).
-
-* ➡️ Manually
+#### Manually Find The Type Of Hash
 
 Some tools may suggest an incorrect format or not support the format you are looking for. You can still try to do it manually.
 
@@ -137,6 +105,42 @@ Apache uses `$apr1$hash` while WordPress uses `$P$hash`.
 Some hashes can be identified by their length.
 
 👉 You can find a lot of examples [on hashcat website](https://hashcat.net/wiki/doku.php?id=example_hashes).
+
+<br>
+
+#### Find The Type Of Hash Online
+
+You could use [hashes.com](https://hashes.com/en/tools/hash_identifier) or [md5hashing.net](https://md5hashing.net/hash_type_checker).
+</div><div>
+
+#### Find The Type Of Hash With A Tool
+
+* [Name-that-hash](https://github.com/HashPals/Name-That-Hash)/nth <small>(1.4k ⭐)</small>. [Online version here](https://nth.skerritt.blog/). Gives the John (JtR) and the hashcat (hc) format for each.
+
+```ps
+# sudo apt install name-that-hash
+$ nth -t "some hash here"
+$ nth -f myhash
+```
+
+* [haiti](https://github.com/noraj/haiti/) <small>(0.6k ⭐)</small>. Similar to Name-that-hash, different results.
+
+```ps
+# sudo gem install haiti-hash
+$ haiti "some hash here"
+```
+
+* [hashID](https://github.com/psypanda/hashID) <small>(1.3k ⭐, 2015 🪦)</small>
+
+```ps
+$ cat myhash | hashid
+```
+
+* [hash-identifier](https://github.com/blackploit/hash-identifier) <small>(0.4k⭐, 2011 🪦)</small>
+
+```shell!
+$ cat myhash | hash-identifier
+```
 </div></div>
 
 <hr class="sep-both">
@@ -332,7 +336,7 @@ $ john myhash --wordlist=wordlist
 $ unzip hello.zip # enter password
 ```
 
-➡️ There is also [fcrackzip](https://github.com/hyc/fcrackzip) (0.4k ⭐)
+➡️ There is also [fcrackzip](https://github.com/hyc/fcrackzip) <small>(0.4k ⭐)</small>
 
 👉 The same tool can be used with `hashcat`, but ensure you only keep the hash. See the references, modes `17200-17230`.
 

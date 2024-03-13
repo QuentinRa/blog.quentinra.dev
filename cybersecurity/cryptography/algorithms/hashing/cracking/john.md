@@ -7,7 +7,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[John the Ripper](https://github.com/openwall/john) <small>(7.4k ⭐, Jumbo)</small>, a.k.a. **john**/**JtR** is, like hashcat, a tool to crack hashes. For convenience's sake, we store the hash in `myhash`.
+[John the Ripper](https://github.com/openwall/john) <small>(9.1k ⭐, Jumbo)</small>, a.k.a. **john**/**JtR** is, like hashcat, a tool to crack hashes. For convenience's sake, we store the hash in `myhash`.
 
 ```ps
 # use single quotes, so that $/... aren't interpreted
