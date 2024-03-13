@@ -126,7 +126,7 @@ Additional references
 * 🔑 Finding [credentials](#credential-hunting) <small>(config, logs, passwords...)</small>
 * 💥 Exploiting [services](windows/services.md)
 * 🐸 Exploiting [privileges](windows/perms.md)
-* 📦 Unpatched [Windows Vulnerabilities](windows/vulns.md) 
+* 📦 Unpatched [vulnerabilities](windows/vulns.md) 
 
 <br>
 
@@ -146,8 +146,6 @@ There are many **automated scripts** that will investigate usual places, service
 * [PowerSploit](https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc) <small>(11.2k ⭐ | powershell script | 2017 🪦 | This is the latest version of [PowerTools](https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerUp) and [PowerUp](https://github.com/HarmJ0y/PowerUp) which are dead too since 2014/2015)</small>.
 
 ```ps
-$ wes.py --update         # update local database
-$ wes.py [...] output.txt # process the selected tool output
 PS> powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"
 PS> powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"
 ```

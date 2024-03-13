@@ -2,24 +2,26 @@
 
 <div class="row row-cols-lg-2"><div>
 
-The [User Account Control (UAC)](/operating-systems/windows/_knowledge/index.md#permissions-and-users) is the equivalent of `sudo` on Linux. It's shown when administrative privileges are required, for instance, to install applications.
+The [User Account Control (UAC)](/operating-systems/windows/_knowledge/index.md#permissions-and-users) is the equivalent of `sudo` on Linux. It's shown when administrative privileges are required, for instance, when a regular user wants to install applications for all users.
 
-* ➡️ By-pass technique using eventvwr <small>(2016?)</small>
+#### By-pass UAC using eventvwr (2016)
 
 [![blaster](../../../_badges/thm-p/ice.svg)](https://tryhackme.com/room/blaster)
 
 Bypass User Account Control (UAC) using `eventvwr.exe`. The attack is done by editing the registry, which means you must have sufficient privileges to do so <small>(not necessarily an admin, but not a regular user)</small>.
 
-* ➡️ [CVE-2019-1388](https://github.com/nobodyatall648/CVE-2019-1388)
+#### CVE-2019-1388
 
 [![blaster](../../../_badges/thm-p/blaster.svg)](https://tryhackme.com/room/blaster)
 
-A flaw in UAC allows users to open a browser as Administrator, which can be further exploited allowing us to start a shell as Administrator.
+A [flaw](https://github.com/nobodyatall648/CVE-2019-1388) in UAC allows users to open a browser as Administrator, which can be further exploited allowing us to start a shell as Administrator.
 </div><div>
 
-* ➡️ **AlwaysInstallElevated**: it's unlikely, but if an admin allowed programs to be installed without needed Administrator privileges, then you can install a malicious program.
+#### AlwaysInstallElevated Misconfiguration
 
 [![windowsprivesc20](../../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
+
+If an admin allowed programs to be installed without administrator privileges, then we can install a malicious program.
 
 ```java
 PS> reg query HKCU\SOFTWARE\Policies\Microsoft\Windows\Installer
