@@ -85,6 +85,7 @@ Steganography is a technique in which a person hides data inside the pixels of a
 [![ctfcollectionvol1](../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
 [![lianyu](../../_badges/thm-p/lianyu.svg)](https://tryhackme.com/room/lianyu)
 [![easypeasyctf](../../_badges/thm-p/easypeasyctf.svg)](https://tryhackme.com/room/easypeasyctf)
+[![kitty_spy](../../_badges/rootme/steganography/kitty_spy.svg)](https://www.root-me.org/en/Challenges/Steganography/Kitty-spy)
 
 If the hidden content is not protected by a password, you can extract it using the `steghide` command or [zsteg](https://github.com/zed-0xff/zsteg)/[stegoveritas](https://github.com/bannsec/stegoVeritas) for PNGs:
 
@@ -92,9 +93,13 @@ If the hidden content is not protected by a password, you can extract it using t
 $ steghide info file.jpg        # check
 $ steghide extract -sf file.jpg # extract
 ```
+
 ```ps
+$ export PATH=$(ruby -e 'print Gem.user_dir')/bin:$PATH
+$ gem install zsteg --user-install
 $ zsteg file.png                # refer to the help
 ```
+
 ```ps
 $ pipx install git+https://github.com/bannsec/stegoVeritas
 $ stegoveritas_install_deps
@@ -120,6 +125,7 @@ $ stegcracker file wordlist
 [![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 [![ctfcollectionvol1](../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
 [![exif_thumbnail](../../_badges/rootme/steganography/exif_thumbnail.svg)](https://www.root-me.org/en/Challenges/Steganography/EXIF-Thumbnail)
+[![kitty_spy](../../_badges/rootme/steganography/kitty_spy.svg)](https://www.root-me.org/en/Challenges/Steganography/Kitty-spy)
 
 Using [binwalk](https://github.com/ReFirmLabs/binwalk) <small>(10.1k ⭐)</small> you can investigate nested files:
 
@@ -151,7 +157,9 @@ $ exiftool -b -ThumbnailImage file.jpg > extracted.jpg
 * See also [futureboy](https://futureboy.us/stegano/) steg tools.
 * See also [330k encoders](https://330k.github.io/misc_tools/unicode_steganography.html) <small>(Unicode Steganography)</small>
 * See also [steganographr](https://neatnik.net/steganographr/) <small>(zero-width characters)</small>
-* See also: [stegsolve](https://wiki.bi0s.in/steganography/stegsolve/) <small>(hidden text)</small>
+* See also: [stegsolve](https://wiki.bi0s.in/steganography/stegsolve/) <small>(hidden text, similar to stegoveritas)</small>
+* See also: [Steganography](https://github.com/ragibson/Steganography) <small>(content hidden using LSB Steganography)</small>
+* See also: [lsb-steganography](https://github.com/Aqcurate/lsb-steganography) <small>(Images hidden using LSB Steganography)</small>
 </div></div>
 
 <hr class="sep-both">

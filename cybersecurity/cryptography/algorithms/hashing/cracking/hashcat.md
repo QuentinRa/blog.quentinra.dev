@@ -201,6 +201,12 @@ $ hashcat -a 3 <mask> --stdout
 ```
 </div><div>
 
+For instance, assuming
+
+```ps
+$ hashcat -a 3 -1 'sS5' -2 '0Oo' -3 'eE3' 'x?1y?2z?3' --stdout
+```
+
 If you are using a rule:
 
 ```ps
