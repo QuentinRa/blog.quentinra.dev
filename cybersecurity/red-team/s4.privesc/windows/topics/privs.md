@@ -3,6 +3,7 @@
 [![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 [![windowsprivesc20](../../../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
 [![adventofcyber2](../../../../_badges/thm/adventofcyber2/day11.svg)](https://tryhackme.com/room/adventofcyber2)
+[![return](../../../../_badges/htb-p/return.svg)](https://app.hackthebox.com/machines/Return)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -167,6 +168,7 @@ You can also use `Get-WinEvent` but it requires special permissions.
 #### Server Operators
 
 [![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
+[![return](../../../../_badges/htb-p/return.svg)](https://app.hackthebox.com/machines/Return)
 
 *-- Grants many privileges as [listed here](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups#server-operators) --*
 
@@ -177,6 +179,9 @@ Refer to [Windows services](services.md) notes or [Backup Operators](#backup-ope
 <br>
 
 #### Print Operators
+
+[![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
+[![return](../../../../_badges/htb-p/return.svg)](https://app.hackthebox.com/machines/Return)
 
 *-- Grants the SeLoadDriverPrivilege among other privileges --*
 
@@ -247,4 +252,6 @@ You can exploit the driver using [ExploitCapcom](https://github.com/tandasat/Exp
 ```shell!
 PS> .\ExploitCapcom.exe
 ```
+
+You can use [driverview](http://www.nirsoft.net/utils/driverview.html) to list loaded drivers.
 </div></div>

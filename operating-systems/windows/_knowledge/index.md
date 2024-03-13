@@ -352,12 +352,12 @@ A services can be in one of the following states:
 * Running
 * Paused
 * Stopped
-* StartPending
-* StopPending
-* ContinuePending
-* PausePending
+* ...
 
-Some [critical services](https://learn.microsoft.com/en-us/windows/win32/rstmgr/critical-system-services) cannot be stopped and restarted without a system restart.
+Some [critical services](https://learn.microsoft.com/en-us/windows/win32/rstmgr/critical-system-services) cannot be stopped and restarted without a system restart. The following utilities can be downloaded to inspect the permissions of a service:
+
+* [psservice](https://docs.microsoft.com/en-us/sysinternals/downloads/psservice): `.\PsService.exe security service_name`
+* [accesschk](https://learn.microsoft.com/en-us/sysinternals/downloads/accesschk): `accesschk.exe ./xxx.exe -v`
 </div></div>
 
 <hr class="sep-both">

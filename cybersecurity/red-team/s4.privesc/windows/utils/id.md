@@ -14,7 +14,8 @@
 * `Get-LocalUser`: list users
 * `net user username`: info about a user
 * `net localgroup users`: list users in the group "users"
-* `net localgroup administrators`: list administrators
+* `net localgroup administrators`: list local administrators
+* `net group "Domain Admins" /dom`: list domain administrators
 
 **Security**
 
