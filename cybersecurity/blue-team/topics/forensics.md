@@ -199,7 +199,7 @@ $ sqlite3 GestureRainbowTable.db 'Select * from RainbowTable where hash = "[...]
 
 You can use the following sources to find malware:
 
-* [theZoo](https://github.com/ytisf/theZoo) <small>(10.5k ⭐)</small>
+* [theZoo](https://github.com/ytisf/theZoo) <small>(10.6k ⭐)</small>
 * [virusshare](https://virusshare.com/) <small>(👻)</small>
 * [hybrid-analysis](https://www.hybrid-analysis.com/file-collections) <small>(👻)</small>
 * [malware-traffic-analysis](https://malware-traffic-analysis.net/) <small>(👻)</small>
@@ -229,7 +229,7 @@ $ ssdeep xxx.exe
 
 #### Malware Analysis Tools
 
-* [FLOSS](https://github.com/mandiant/flare-floss) <small>(2.6k ⭐)</small>
+* [FLOSS](https://github.com/mandiant/flare-floss) <small>(3.0k ⭐)</small>
 
 ```ps
 $ floss xxx.exe

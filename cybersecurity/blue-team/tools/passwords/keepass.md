@@ -8,7 +8,7 @@
 
 * KeePass can be extended through [plugins](https://keepass.info/plugins.html) 🐲.
 * Multiple forks exist. Refer to [
-awesome-keepass ](https://github.com/lgg/awesome-keepass) <small>(0.3k ⭐)</small>.
+awesome-keepass ](https://github.com/lgg/awesome-keepass) <small>(0.4k ⭐)</small>.
 
 KeePass is storing passwords locally in a `.kdbx` database.
 </div><div>
@@ -38,7 +38,7 @@ $ john myhash --wordlist=wordlist
 
 * [CVE-2023-32784](https://nvd.nist.gov/vuln/detail/CVE-2023-32784): if we have memory dump when keepass was unlocked and running, we are able to dump almost all the cleartext password <small>(aside from first char)</small>. There are many PoC below:
 
-[keepass-password-dumper](https://github.com/vdohney/keepass-password-dumper) <small>(0.6k ⭐)</small> in `.NET`. There is also [keepass-dump-masterkey](https://github.com/matro7sh/keepass-dump-masterkey) <small>(0.06k ⭐)</small> or [keepass_dump](https://github.com/z-jxy/keepass_dump) <small>(0.01k ⭐)</small> both in `Python`.
+[keepass-password-dumper](https://github.com/vdohney/keepass-password-dumper) <small>(0.6k ⭐)</small> in `.NET`. There is also [keepass-dump-masterkey](https://github.com/matro7sh/keepass-dump-masterkey) <small>(0.1k ⭐)</small> or [keepass_dump](https://github.com/z-jxy/keepass_dump) <small>(0.01k ⭐)</small> both in `Python`.
 </div></div>
 
 <hr class="sep-both">

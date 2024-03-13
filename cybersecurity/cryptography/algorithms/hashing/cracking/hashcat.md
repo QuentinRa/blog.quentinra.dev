@@ -5,7 +5,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[hashcat](https://github.com/hashcat/hashcat) (18.9k ⭐) is a well-known, and popular tool to crack passwords. For convenience’s sake, we store the hash in a file `hash`.
+[hashcat](https://github.com/hashcat/hashcat) <small>(18.9k ⭐)</small> is a well-known, and popular tool to crack passwords. For convenience’s sake, we store the hash in a file `hash`.
 
 ```ps
 # use quotes, so that $/... aren't interpreted

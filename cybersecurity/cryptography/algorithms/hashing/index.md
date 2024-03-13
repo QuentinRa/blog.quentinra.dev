@@ -100,13 +100,13 @@ $ echo -n "some hash here" > myhash
 $ cat myhash | hash-identifier
 ```
 
-* ➡️ [hashID](https://github.com/psypanda/hashID) (1.2k ⭐). Not updated since 2015.
+* ➡️ [hashID](https://github.com/psypanda/hashID) <small>(1.2k ⭐)</small>. Not updated since 2015.
 
 ```bash!
 $ cat myhash | hashid
 ```
 
-* ➡️ [Name-that-hash](https://github.com/HashPals/Name-That-Hash) (1.2k ⭐). [Online version here](https://nth.skerritt.blog/). Gives the John (JtR) and the hashcat (hc) format for each.
+* ➡️ [Name-that-hash](https://github.com/HashPals/Name-That-Hash) <small>(1.2k ⭐)</small>. [Online version here](https://nth.skerritt.blog/). Gives the John (JtR) and the hashcat (hc) format for each.
 
 ```bash!
 # sudo apt install name-that-hash

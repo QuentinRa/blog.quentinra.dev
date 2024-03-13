@@ -24,7 +24,7 @@ They can be transferred and found in:
 To play around with a JWT cookie, you can use [jwt.io](https://jwt.io/).
 </div><div>
 
-You can also use [jwt-tools](https://github.com/ticarpi/jwt_tool) <small>(4.7k ⭐)</small>:
+You can also use [jwt-tools](https://github.com/ticarpi/jwt_tool) <small>(4.8k ⭐)</small>:
 
 ```shell!
 $ cd /opt

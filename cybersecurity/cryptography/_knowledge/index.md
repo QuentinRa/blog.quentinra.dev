@@ -265,8 +265,6 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * SRM (error-correcting code)
-* [RsaCtfTool](https://github.com/RsaCtfTool/RsaCtfTool) (4.2k ⭐)
-* [rsatool](https://github.com/ius/rsatool) (0.9k ⭐)
 * message authentication codes (MACs)
 * HMAC
 * certificates (chain of trust), digital signatures
