@@ -106,7 +106,7 @@ The primary DNS servers are transferring changes to secondary DNS servers using 
 ⚠️ On Misconfigured DNS servers <small>(no authentication/no list of trusted hosts/no RNDC Key)</small>, we may be able to query the whole zone file.
 </div><div>
 
-You can try it [online](https://hackertarget.com/zone-transfer/) or with [zonetransfer.me](https://digi.ninja/projects/zonetransferme.php). We usually find a lot of domains during [enumeration](#enumeration). We may then try AXFR on each. I encountered one scenario in which the subdomain wasn't returning any records, which fooled every tool, while it was vulnerable to AXFR.
+You can try it [online](https://hackertarget.com/zone-transfer/) or with [zonetransfer.me](https://digi.ninja/projects/zonetransferme.php). We usually find a lot of domains during [enumeration](#enumeration). We may then try AXFR on each. 
 
 ```ps
 # select the domain that you want to "fetch"
@@ -116,7 +116,9 @@ $ dig axfr some_domain.com @primary_dns_server
 # it it doesn't work, we can try brute forcing
 ```
 
-You can use [onectf](/cybersecurity/red-team/tools/frameworks/onectf/index.md#onectf-axfr-module) to test AXFR on a list of subdomains.
+I encountered one scenario in which the subdomain wasn't returning any records, which fooled every tool, while it was vulnerable to AXFR.
+
+You can use [onectf](/cybersecurity/red-team/tools/frameworks/onectf/index.md#onectf-axfr-module) for AXFR brute forcing given a list of subdomains.
 
 ```ps
 $ onectf axfr -D example.com -r IP -w wordlist.txt -t 64
@@ -232,9 +234,19 @@ You can add an entry using:
 ```shell!
 $ sudo sh -c 'echo "SOME_IP my.example.com" >> /etc/hosts'
 ```
-</div><div>
 
 The file `/etc/resolv.conf` is used to determine which nameserver is used to resolve domains, along other settings.
+</div><div>
+
+You can also use [onectf](/cybersecurity/red-team/tools/frameworks/onectf/index.md#onectf-hosts-module) to easily manage entries:
+
+```shell!
+$ sudo onectf hosts IPA example.com aaa.example.com
+IPA example.com aaa.example.com
+$ sudo onectf hosts IPB example.com
+IPA aaa.example.com
+IPB example.com
+```
 </div></div>
 
 <hr class="sep-both">
@@ -249,15 +261,11 @@ Refer to [DNS investigation](/cybersecurity/red-team/s1.investigation/tools/dns_
 
 Refer to [Subdomains](/cybersecurity/red-team/s2.discovery/techniques/websites/subdomains.md)/[vhosts](/cybersecurity/red-team/s2.discovery/techniques/websites/vhosts.md) to look for hidden subdomains.
 
+You can use [onectf axfr](#dns-zones--zone-transfer) as introduced in the AXFR section to find hidden subdomains accepting zone transfer.
+
 #### Exploitation
 
 * **Domain Takeover**: an existing record points to a deleted domain. If the hackers can purchase it, then may perform social engineering attacks <small>(or more advanced attacks)</small>. [can-i-take-over-xyz](https://github.com/EdOverflow/can-i-take-over-xyz) <small>(4.3k ⭐)</small>
-
-* You can use [onectf axfr](https://github.com/QuentinRa/onectf/blob/main/docs/axfr.md) <small>(0.0k ⭐)</small> to find hidden subdomains accepting zone transfer. It's useful when a subdomain has no public records which in turn makes every tool miss it.
-
-```ps
-$ onectf axfr -D xxx.yyy -r IP -w wordlist
-```
 </div><div>
 
 #### Well-Known Attacks

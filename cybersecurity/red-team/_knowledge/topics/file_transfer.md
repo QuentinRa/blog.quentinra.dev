@@ -187,6 +187,8 @@ $ sudo apt install python3-wsgidav
 $ wsgidav --host=0.0.0.0 --port=8080 --root=/tmp/smbshare --auth=anonymous
 PS> iwr -Uri "http:/IP:8080/<file>"
 PS> copy \\IP\DavWWWRoot\<file> # 👻 // didn't work
+PS> # unrelated: davtest -url http://IP
+PS> # unrelated: curl -X MOVE -H 'Destination:xxx.php' 'xxx.txt'
 ```
 
 We may be able to mount a drive using RDP. On Windows, in the options of the RDP client, we can configure the mapping too.

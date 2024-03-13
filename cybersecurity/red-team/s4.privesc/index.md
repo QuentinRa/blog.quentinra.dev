@@ -126,6 +126,7 @@ Additional references
 * 🔑 Finding [credentials](#credential-hunting) <small>(config, logs, passwords...)</small>
 * 💥 Exploiting [services](windows/services.md)
 * 🐸 Exploiting [privileges](windows/perms.md)
+* 📦 Unpatched [Windows Vulnerabilities](windows/vulns.md) 
 
 <br>
 
@@ -139,7 +140,6 @@ Additional references
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
 
 * [WinPeas](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS) <small>(14.5k ⭐ | binary | Download and Run `.\winPEASany_ofs.exe`)</small>
-* [wesng](https://github.com/bitsadmin/wesng) <small>(3.9k ⭐ | Work locally from an output file 🙌)</small>
 * [Seatbelt](https://github.com/GhostPack/Seatbelt) <small>(3.4k ⭐)</small>
 * [PrivescCheck](https://github.com/itm4n/PrivescCheck) <small>(2.5k ⭐ | powershell script)</small>
 * [JAWS](https://github.com/411Hall/JAWS) <small>(1.5k ⭐ | 2020 🪦)</small>

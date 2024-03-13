@@ -152,6 +152,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [application.security](https://application.security/)
 * [securecodewarrior](https://www.securecodewarrior.com/)
 * [hacksplaining](https://www.hacksplaining.com/)
+* [ringzer0ctf](https://ringzer0ctf.com/)
 * Udemy, Coursera...
 </div></div>
 
@@ -251,6 +252,7 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [defaultcredentials](https://defaultcredentials.com/)
 * [exploit-notes.hdks](https://exploit-notes.hdks.org/)
 * [fastiraz](https://fastiraz.gitbook.io/)
+* [tpetersonkth](https://tpetersonkth.github.io)
 </div><div>
 
 * [razrsec](https://blog.razrsec.uk/)

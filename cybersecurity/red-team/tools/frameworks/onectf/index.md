@@ -64,4 +64,20 @@ $ onectf axfr -D xxx.yyy -r IP -w wordlist.txt -t 64
 # try AXFR on aaa.xxx.yyy
 # ...
 ```
+
+#### OneCTF Hosts Module
+
+The [Hosts](https://github.com/QuentinRa/onectf/blob/main/docs/hosts.md) module is handy when we often need to edit `/etc/hosts`.
+
+```shell!
+$ sudo onectf hosts IPA example.com aaa.example.com
+IPA example.com aaa.example.com
+$ sudo onectf hosts IPB example.com
+IPA aaa.example.com
+IPB example.com
+```
+
+* 🛣️ It automatically associates the domains to the IP
+* 🧼 It automatically merges entries by IP
+* 🧹 It automatically removes IPs with no domains
 </div></div>

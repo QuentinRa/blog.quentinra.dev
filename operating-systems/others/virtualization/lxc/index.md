@@ -25,7 +25,7 @@ $ lxc launch ubuntu:22.04 container_name
 ```
 </div><div>
 
-Alternatively, you can import an image from a file. You can build an alpine image <small>(~3Mb)</small> using [lxd-alpine-builder](https://github.com/saghul/lxd-alpine-builder) <small>(0.1k ⭐, 2021 🪦)</small>.
+Alternatively, you can import an image from a file. You can build an alpine image <small>(~3Mb)</small> using [lxd-alpine-builder](https://github.com/saghul/lxd-alpine-builder) <small>(0.2k ⭐, 2021 🪦)</small>.
 
 ```shell!
 $ git clone https://github.com/saghul/lxd-alpine-builder
@@ -79,8 +79,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 ```shell!
-$ lxc image list
-$ 
 $ sudo apt-get install lxc lxc-utils -y
 $ sudo lxc-create -n xxx -t yyy
 $ lxc-ls
