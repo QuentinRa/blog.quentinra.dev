@@ -36,7 +36,6 @@ Escalation can be **horizontally**/laterally <small>(another user with the same 
 [![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 [![commonlinuxprivesc](../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 [![adventofcyber2](../../_badges/thm/adventofcyber2/day11.svg)](https://tryhackme.com/room/adventofcyber2)
-[![adventofcyber2](../../../cybersecurity/_badges/thm/adventofcyber2/day12.svg)](https://tryhackme.com/room/adventofcyber2)
 [![windowsprivesc20](../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
 
 <div class="row row-cols-lg-2"><div>
@@ -135,7 +134,7 @@ Additional references
 * ⏰ Exploiting [scheduled tasks](windows/topics/tasks.md)
 * 🔑 Finding [credentials](#credential-hunting) <small>(config, logs, passwords...)</small>
 * 💥 Exploiting [services](windows/topics/services.md)
-* 🐸 Exploiting [privileges](windows/topics/perms.md)
+* 🐸 Exploiting [privileges](windows/topics/privs.md) <small>(including groups)</small>
 * 📦 Unpatched [vulnerabilities](windows/topics/vulns.md) 
 
 <br>

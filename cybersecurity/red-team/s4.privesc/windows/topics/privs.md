@@ -2,12 +2,13 @@
 
 [![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 [![windowsprivesc20](../../../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
+[![adventofcyber2](../../../../_badges/thm/adventofcyber2/day11.svg)](https://tryhackme.com/room/adventofcyber2)
 
 <div class="row row-cols-lg-2"><div>
 
 Users may have privileges for running some system tasks such as backups that may be used to escalate.
 
-You can list your privileges with the command below, **but**, you won't see all of them unless you're in an admin prompt.
+We can list your privileges with the command below, **but**, you won't see all of them unless you're in an admin prompt.
 
 ```shell!
 PS> whoami /priv
@@ -23,6 +24,10 @@ You can find way to exploit them on:
 * [PrivFu](https://github.com/daem0nc0re/PrivFu/) <small>(0.7k ⭐)</small>
 * ...
 
+Privileges may have been granted but not enabled. Some privileges can be enable using their exploit script, others can be enabled with builtin commands, and for most others, we can use:
+
+* [Set-TokenPrivilege.ps1](https://www.leeholmes.com/adjusting-token-privileges-in-powershell/) <small>(2011 🪦)</small>
+* [PoshPrivilege](https://github.com/proxb/PoshPrivilege/) with [Enable-Privilege.ps1](https://www.powershellgallery.com/packages/PoshPrivilege/0.3.0.0/Content/Scripts%5CEnable-Privilege.ps1) <small>(0.1k ⭐, 2015 🪦)</small> 
 </div></div>
 
 <hr class="sep-both">
@@ -31,7 +36,7 @@ You can find way to exploit them on:
 
 <div class="row row-cols-lg-2"><div>
 
-You may use these as a normal user to escalate to admin.
+We may use these as a normal user to escalate to admin.
 
 #### SeImpersonate — steal access tokens
 
@@ -63,7 +68,7 @@ Additional references:
 
 <div class="row row-cols-lg-2"><div>
 
-You may use these from an elevated prompt to escalate to admin.
+We may use these from an elevated prompt to escalate to admin.
 
 #### SeDebugPrivilege — Dump Process Memory
 
@@ -86,7 +91,7 @@ PS> [MyProcess]::CreateProcessFromParent(<target_process_pid>,"<command_to_execu
 
 [![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 
-You could access the SAM database or NTDS.dit...
+We could access the SAM database or NTDS.dit...
 
 ```shell!
 PS> takeown /f 'C:\poc.txt'
@@ -121,6 +126,6 @@ We can use `robocopy` to perform a backup copy:
 PS> robocopy /B <source_folder> <dest_folder> <filename>
 ```
 
-You could access the SAM database or NTDS.dit...
+We could access the SAM database or NTDS.dit...
 </div><div>
 </div></div>
