@@ -23,7 +23,7 @@ Common fuzzing tools are:
 * [ffuf](/cybersecurity/red-team/tools/enumeration/web/ffuf.md)
 * [wfuzz](/cybersecurity/red-team/tools/enumeration/web/wfuzz.md)
 * [gobuster](/cybersecurity/red-team/tools/enumeration/web/gobuster.md#fuzzing)
-* [feroxfuzz](https://github.com/epi052/feroxfuzz/) (0.2k ⭐) for ferox buster users
+* [feroxfuzz](https://github.com/epi052/feroxfuzz/) <small>(0.2k ⭐, for ferox buster users)</small>
 </div></div>
 
 <hr class="sep-both">

@@ -130,8 +130,8 @@ Websites
 
 [OWASP](https://owasp.org/) (The Open Source Foundation for Application Security Project) is a foundation that is very well-known for its resources to improve website security. The release every few years the [Top 10 vulnerabilities](https://owasp.org/Top10/).
 
-* See [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/) (23.4k ⭐)
-* See [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) (5.4k ⭐, [PDF](https://github.com/OWASP/wstg/releases/download/v4.2/wstg-v4.2.pdf))
+* See [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/) <small>(23.4k ⭐)</small>
+* See [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) <small>(5.4k ⭐, [PDF](https://github.com/OWASP/wstg/releases/download/v4.2/wstg-v4.2.pdf))</small>
 
 </div><div>
 

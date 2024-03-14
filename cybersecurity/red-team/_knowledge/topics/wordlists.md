@@ -16,7 +16,7 @@ They are mainly used to automate tasks. For instance, to perform a password atta
 CTFs are usually using the infamous `rockout.txt` for passwords  <small>(from the data breach of rockyou.com in 2009)</small>.
 </div><div>
 
-[SecLists](https://github.com/danielmiessler/SecLists) (50.6k ⭐) is the most popular place to find wordlists.
+[SecLists](https://github.com/danielmiessler/SecLists) <small>(50.6k ⭐)</small> is the most popular place to find wordlists.
 
 ```shell!
 $ sudo apt-get install seclists
