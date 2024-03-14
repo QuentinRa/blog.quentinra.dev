@@ -11,9 +11,9 @@ Instead of trying brute force with one username, and a list of passwords, we try
 One advantage is that we will most likely not get locked as we test different accounts.
 </div><div>
 
-* [SprayingToolkit](https://github.com/byt3bl33d3r/SprayingToolkit) <small>(1.3k ⭐, 2022 🪦)</small>
-* [TREVORspray](https://github.com/blacklanternsecurity/TREVORspray) <small>(0.7k ⭐)</small>
-* [CredMaster](https://github.com/knavesec/CredMaster) <small>(0.7k ⭐)</small>
+* [SprayingToolkit](https://github.com/byt3bl33d3r/SprayingToolkit) <small>(1.4k ⭐, 2022 🪦)</small>
+* [TREVORspray](https://github.com/blacklanternsecurity/TREVORspray) <small>(0.9k ⭐)</small>
+* [CredMaster](https://github.com/knavesec/CredMaster) <small>(0.8k ⭐)</small>
 
 Many [network authentication tools](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md) can be used too.
 </div></div>
