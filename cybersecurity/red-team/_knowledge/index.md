@@ -175,25 +175,25 @@ DarkStar is a THM staff that made a many rooms on THM. [You can download the VM 
 
 #### Active Directory 🛟
 
-The [Game of Active Directory (GOAD)](https://github.com/Orange-Cyberdefense/GOAD) (1.9k ⭐) is an [Active directory](/operating-systems/cloud/active-directory/_knowledge/index.md) Lab. It was designed by the French company "Orange".
+The [Game of Active Directory (GOAD)](https://github.com/Orange-Cyberdefense/GOAD) <small>(4.0k ⭐)</small> is an [Active directory](/operating-systems/cloud/active-directory/_knowledge/index.md) Lab. It was designed by the French company "Orange".
 
 <br>
 
 #### Web applications 🌍
 
-* See [OWASP Juice Shop](https://github.com/juice-shop/juice-shop) (7.9k ⭐) | [THM juiceshop](https://tryhackme.com/room/owaspjuiceshop) | [multi-juicer](https://github.com/iteratec/multi-juicer)
-* See [OWASP mutillidae](https://github.com/webpwnized/mutillidae) (1.0k ⭐) | [THM mutillidae](https://tryhackme.com/room/owaspmutillidae)
-* [Damn Vulnerable Web Application (DVWA)](https://github.com/digininja/DVWA) (7.4k ⭐) / [THM DVWA](https://tryhackme.com/room/dvwa)
-* [WebGoat](https://github.com/WebGoat/WebGoat) (5.6k ⭐)
-* [pygoat](https://github.com/adeyosemanputra/pygoat) (0.1k ⭐, django)
-* [bwapp](http://www.itsecgames.com/download.htm) (0.1k ⭐, 💀 since 2014) and [bWapp solutions](https://github.com/skiptomyliu/solutions-bwapp) (0.1k ⭐).
+* See [OWASP Juice Shop](https://github.com/juice-shop/juice-shop) <small>(9.3k ⭐)</small> | [THM juiceshop](https://tryhackme.com/room/owaspjuiceshop) | [multi-juicer](https://github.com/iteratec/multi-juicer)
+* See [OWASP mutillidae](https://github.com/webpwnized/mutillidae) <small>(1.2k ⭐)</small> | [THM mutillidae](https://tryhackme.com/room/owaspmutillidae)
+* [Damn Vulnerable Web Application (DVWA)](https://github.com/digininja/DVWA) <small>(9.1k ⭐)</small> / [THM DVWA](https://tryhackme.com/room/dvwa)
+* [WebGoat](https://github.com/WebGoat/WebGoat) <small>(6.4k ⭐)</small>
+* [pygoat](https://github.com/adeyosemanputra/pygoat) <small>(0.2k ⭐, django)</small>
+* [bwapp](http://www.itsecgames.com/download.htm) <small>(0.1k ⭐, 2014 🪦)</small> and [bWapp solutions](https://github.com/skiptomyliu/solutions-bwapp) <small>(0.2k ⭐)</small>
 
 <br>
 
 #### Random CTFs
 
-* [Root the Box](https://github.com/moloch--/RootTheBox) (0.7k ⭐)
-* [fbctf](https://github.com/facebookarchive/fbctf) (6.5k ⭐)
+* [Root the Box](https://github.com/moloch--/RootTheBox) <small>(0.9k ⭐)</small>
+* [fbctf](https://github.com/facebookarchive/fbctf) <small>(6.5k ⭐)</small>
 * [picoctf](https://www.picoctf.org/) (event)
 * [esaip ctf](https://ctf.esaip.org/) (event)
 * [MemLabs](https://github.com/stuxnet999/MemLabs) (memory forensics)

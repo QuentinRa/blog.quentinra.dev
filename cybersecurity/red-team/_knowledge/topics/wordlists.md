@@ -66,7 +66,7 @@ You can also use: [JohnTheReaper](/cybersecurity/cryptography/algorithms/hashing
 
 #### CeWL wordlist generation
 
-Users may generate a password based on the environment they are in. [CeWL](https://github.com/digininja/CeWL) <small>(1.6k ⭐)</small> will scrap their website to generate a list of words.  
+Users may generate a password based on the environment they are in. [CeWL](https://github.com/digininja/CeWL) <small>(1.7k ⭐)</small> will scrap their website to generate a list of words.  
 
 ```ps
 $ cewl -w output.lst -d depth -m word_size URL
@@ -90,7 +90,7 @@ $ crunch [...] -d 1 # "aa" "aaa" etc. are not allowed
 
 #### cook wordlist generation
 
-[cook](https://github.com/glitchedgitz/cook) <small>(0.7k ⭐)</small> is a tool/engine to create wordlists, sort of like a recipe.
+[cook](https://github.com/glitchedgitz/cook) <small>(0.9k ⭐)</small> is a tool/engine to create wordlists, sort of like a recipe.
 
 ```shell!
 $ cook [...]
@@ -99,7 +99,7 @@ $ cook [...]
 
 #### CUPP wordlist generation
 
-[cupp](https://github.com/Mebus/cupp) <small>(4.0k ⭐, 2020 🪦)</small> is a python script that generates a wordlist based on the information you gathered about the target.
+[cupp](https://github.com/Mebus/cupp) <small>(4.1k ⭐, 2020 🪦)</small> is a python script that generates a wordlist based on the information you gathered about the target.
 
 ```shell!
 $ sudo apt-get install cupp
@@ -129,7 +129,7 @@ hashcat has a few utilities that it uses to generate wordlists:
 #### Random Tools
 
 * [TTPassGen](https://github.com/tp7309/TTPassGen) <small>(0.1k ⭐)</small>: generate password wordlists
-* [pnwgen](https://github.com/toxydose/pnwgen) <small>(0.05k ⭐, 2021 🪦)</small>: generate phone number wordlists
+* [pnwgen](https://github.com/toxydose/pnwgen) <small>(0.1k ⭐, 2021 🪦)</small>: generate phone number wordlists
 * [lyricpass](https://github.com/initstring/lyricpass) <small>(0.87k ⭐, 2019 🪦)</small>: generate song lyrics wordlists
 * [mentalist](https://github.com/sc0tfree/mentalist) <small>(1.7k ⭐, 2017 🪦)</small>: generate password wordlists
 </div></div>

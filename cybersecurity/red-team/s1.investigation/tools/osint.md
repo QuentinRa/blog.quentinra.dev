@@ -14,8 +14,8 @@ Open-source intelligence (**OSINT**) is any information that you gather from pub
 
 **Target Profiling** 🎯: find specific information on one person
 
-* **Search by username**: [Sherlock](https://github.com/sherlock-project/sherlock) <small>(50.3k ⭐)</small> and [Maigret](https://github.com/soxoj/maigret) <small>(9.5k ⭐)</small>.  [namechk](https://namechk.com/), [namecheckup](https://namecheckup.com/), [WhatsMyName](https://github.com/WebBreacher/WhatsMyName) <small>(1.4k ⭐)</small>.
-* **Phone number lookup**: [PhoneInfoga](https://github.com/sundowndev/phoneinfoga) <small>(11.7k ⭐)</small>
+* **Search by username**: [Sherlock](https://github.com/sherlock-project/sherlock) <small>(50.4k ⭐)</small> and [Maigret](https://github.com/soxoj/maigret) <small>(9.5k ⭐)</small>.  [namechk](https://namechk.com/), [namecheckup](https://namecheckup.com/), [WhatsMyName](https://github.com/WebBreacher/WhatsMyName) <small>(1.4k ⭐)</small>.
+* **Phone number lookup**: [PhoneInfoga](https://github.com/sundowndev/phoneinfoga) <small>(11.8k ⭐)</small>
 * **Email lookup**: [epieos](https://epieos.com/), [ProtOSINT](https://github.com/pixelbubble/ProtOSINT) <small>(0.3k ⭐, 2021 🪦)</small>, [holehe](https://github.com/megadose/holehe) <small>(6.2k ⭐)</small>
 * **People lookup**: [spokeo 💵](https://www.spokeo.com/) <small>(name, email, address...)</small>
 
