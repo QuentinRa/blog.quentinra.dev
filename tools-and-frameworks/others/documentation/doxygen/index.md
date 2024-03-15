@@ -4,7 +4,7 @@
 
 Doxygen is a widely used documentation generation tool, especially for C/C++ projects. It generates documentation from specially formatted comments within the source code ✨.
 
-* [GitHub](https://github.com/doxygen/doxygen) <small>(5.0k ⭐)</small>
+* [GitHub](https://github.com/doxygen/doxygen) <small>(5.3k ⭐)</small>
 * [Manual](https://www.doxygen.nl/manual/index.html) <small>(⛪)</small>
 * [Quick reference](https://www.mitk.org/images/1/1c/BugSquashingSeminars$2013-07-17-DoxyReference.pdf) <small>(unofficial, 💎)</small>
 

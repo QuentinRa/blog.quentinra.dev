@@ -4,7 +4,7 @@
 
 [Jenkins](https://www.jenkins.io/) is an open-source automation server. It means that it's not a server hosting code, but it can be connected to a GIT server such as GitLab to process [CI/CD](index.md) workflows.
 
-* [GitHub](https://github.com/jenkinsci/jenkins) <small>(21.9k ⭐)</small>
+* [GitHub](https://github.com/jenkinsci/jenkins) <small>(22.2k ⭐)</small>
 * [User Documentation](https://www.jenkins.io/doc/book/) <small>(⛪)</small>
 
 The biggest strength of Jenkins is that it has a great number of [plugins](https://plugins.jenkins.io/), such as plugins to visualize CI results (tests, coverage...).
@@ -26,7 +26,7 @@ Jenkins can be connected to a database or LDAP.
 
 <div class="row row-cols-lg-2"><div>
 
-Useful reference: [pwn_jenkins](https://github.com/gquere/pwn_jenkins) <small>(1.7k ⭐)</small>.
+Useful reference: [pwn_jenkins](https://github.com/gquere/pwn_jenkins) <small>(1.9k ⭐)</small>.
 
 #### Enumeration
 
