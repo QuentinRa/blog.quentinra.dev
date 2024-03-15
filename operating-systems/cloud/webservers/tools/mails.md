@@ -24,7 +24,7 @@ $ echo "body" | mail -s "subject" email
 
 <div class="row row-cols-lg-2"><div>
 
-[Postfix](https://github.com/vdukhovni/postfix) <small>(0.3k ⭐)</small> is a well-known MTA.
+[Postfix](https://github.com/vdukhovni/postfix) <small>(0.4k ⭐)</small> is a well-known MTA.
 
 ```ps
 $ sudo apt install postfix

@@ -4,7 +4,7 @@
 
 [Apache Tomcat](https://tomcat.apache.org/) is an open-source web server. It provides a Java HTTP web server environment in which Java code can run.
 
-* [GitHub](https://github.com/apache/tomcat) <small>(7.1k ⭐)</small>
+* [GitHub](https://github.com/apache/tomcat) <small>(7.2k ⭐)</small>
 * [Documentation](https://tomcat.apache.org/tomcat-11.0-doc/index.html) <small>(⛪)</small>
 
 The version 11 is still in development. The previous major versions are version 10 <small>(2021)</small>, version 9 <small>(2018)</small>, and version 8 <small>(2016)</small>.
@@ -117,7 +117,7 @@ While uncommon, if a tomcat website is behind a firewall, but the AJP port is ex
 
 * We can use [nginx](/operating-systems/cloud/webservers/nginx/index.md) with `nginx_ajp_module`
 * We can use [Apache](/operating-systems/cloud/webservers/apache/index.md) with `proxy_ajp`
-* We can use [AJPy](https://github.com/hypn0s/AJPy) <small>(0.4k ⭐)</small>
+* We can use [AJPy](https://github.com/hypn0s/AJPy) <small>(0.5k ⭐)</small>
 
 ```
 $ git clone https://github.com/hypn0s/AJPy.git && cd AJPy

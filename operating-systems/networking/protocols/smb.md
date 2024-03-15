@@ -179,7 +179,7 @@ msf6> use auxiliary/scanner/smb/smb_login
 $ crackmapexec smb IP --shares -u 'username' -p 'password'
 ```
 
-* You can use [smbmap](https://github.com/ShawnDEvans/smbmap) <small>(1.6k ⭐)</small> to list users/shares+access/files/...
+* You can use [smbmap](https://github.com/ShawnDEvans/smbmap) <small>(1.7k ⭐)</small> to list users/shares+access/files/...
 
 ```ps
 $ smbmap -H IP

@@ -26,7 +26,7 @@ List databases using brute force:
 $ sudo nmap IP -p 1521 -sV --script oracle-sid-brute
 ```
 
-[Oracle Database Attacking Tool](https://github.com/quentinhardy/odat) <small>(ODAT, 1.5k ⭐, 2022 ☠️)</small> can be used to enumerate or exploit Oracle Databases.
+[Oracle Database Attacking Tool](https://github.com/quentinhardy/odat) <small>(1.5k ⭐, ODAT, 2022 ☠️)</small> can be used to enumerate or exploit Oracle Databases.
 
 ```ps
 $ sudo apt install odat

@@ -147,7 +147,7 @@ $ sudo cryptsetup bitlkOpen /dev/xxxp2 mytag
 $ sudo cryptsetup bitlkClose mytag
 ```
 
-You can extract the user password (`$0`/`$1`) or the recovery key (`$2`/`$3`). You can then try [hash cracking](/cybersecurity/cryptography/algorithms/hashing/index.md#hash-cracking) or [bitcracker](https://github.com/e-ago/bitcracker) <small>(0.7k ⭐, 2021 🪦)</small>.
+You can extract the user password (`$0`/`$1`) or the recovery key (`$2`/`$3`). You can then try [hash cracking](/cybersecurity/cryptography/algorithms/hashing/index.md#hash-cracking) or [bitcracker](https://github.com/e-ago/bitcracker) <small>(0.8k ⭐, 2021 🪦)</small>.
 
 ```shell!
 $ # https://openwall.info/wiki/john/OpenCL-BitLocker

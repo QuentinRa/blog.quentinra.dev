@@ -27,7 +27,7 @@ $ type AREALL~1.EXT
 
 The tilde number `~1` is an incremental value that can be iterated if there are multiple files matching `"AREALL[...].EXT"`.
 
-This can be used on an IIS server to discover files, while it doesn't expose the full name of the file. You can use [IIS-ShortName-Scanner](https://github.com/irsdl/IIS-ShortName-Scanner) <small>(1.2k ⭐)</small> or its newer implementation [shortscan](https://github.com/bitquark/shortscan) <small>(0.4k ⭐)</small>.
+This can be used on an IIS server to discover files, while it doesn't expose the full name of the file. You can use [IIS-ShortName-Scanner](https://github.com/irsdl/IIS-ShortName-Scanner) <small>(1.3k ⭐)</small> or its newer implementation [shortscan](https://github.com/bitquark/shortscan) <small>(0.5k ⭐)</small>.
 
 ```shell!
 $ go install github.com/bitquark/shortscan/cmd/shortscan@latest

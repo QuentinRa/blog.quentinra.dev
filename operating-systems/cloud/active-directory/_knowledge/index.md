@@ -551,7 +551,7 @@ $ kinit xxx@yyy.zzz -k -t /path/to/xxx.keytab
 $ klist # new ticket associated with xxx@yyy.zzz
 ```
 
-☠️ If you find a readable keytab file, you can create tickets. You can also use [KeyTabExtract](https://github.com/sosdave/KeyTabExtract) <small>(0.1k ⭐)</small> to dump the hash and crack it.
+☠️ If you find a readable keytab file, you can create tickets. You can also use [KeyTabExtract](https://github.com/sosdave/KeyTabExtract) <small>(0.2k ⭐)</small> to dump the hash and crack it.
 </div></div>
 
 <hr class="sep-both">

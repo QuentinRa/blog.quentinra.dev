@@ -29,7 +29,7 @@ Logs analyzers can analyze [Apache logs](../apache/index.md) or other webservers
 
 <div class="row row-cols-lg-2"><div>
 
-[Advanced Web Statistics](https://github.com/eldy/awstats/) <small>(AWStats, 0.3k ⭐)</small> is an open-source log file analyzer supporting many log formats.
+[Advanced Web Statistics](https://github.com/eldy/awstats/) <small>(0.3k ⭐, AWStats)</small> is an open-source log file analyzer supporting many log formats.
 
 ```shell!
 $ sudo apt-get install htmldoc
