@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[dirsearch](https://github.com/maurosoria/dirsearch) <small>(10.7k ⭐)</small> can be installed with `apt install dirsearch`, and there is an implementation in GO if you want to.
+[dirsearch](https://github.com/maurosoria/dirsearch) <small>(11.0k ⭐)</small> can be installed with `apt install dirsearch`, and there is an implementation in GO if you want to.
 
 ```ps
 $ dirsearch -u URL # use default wordlist

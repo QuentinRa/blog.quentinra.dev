@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[OneCTF](https://github.com/QuentinRa/onectf/) <small>(0.0k ⭐)</small> is a simple Python suite of tool that I created to automate multiple tasks while using multi-threading.
+[OneCTF](https://github.com/QuentinRa/onectf/) <small>(0.01k ⭐)</small> is a simple Python suite of tool that I created to automate multiple tasks while using multi-threading.
 
 ```ps
 $ pipx install git+https://github.com/QuentinRa/onectf.git

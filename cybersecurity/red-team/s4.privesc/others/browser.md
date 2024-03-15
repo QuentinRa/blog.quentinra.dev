@@ -70,7 +70,7 @@ $ pypykatz dpapi chrome ./mkf "./Local State" --logindata "./Default/Login Data"
 
 Once we have the DPAPI master key, we can alternatively decrypt the encrypted secret key, and use it to decrypt the passwords.
 
-On Linux, we can use [dpapilab-ng](https://github.com/tijldeneut/dpapilab-ng/blob/main/blobdec-with-masterkey.py) <small>(0.04k ⭐)</small> to decrypt the secret key and [dcp](https://github.com/palmenas/dcp/tree/main) <small>(0.002k ⭐)</small> to decrypt and dump passwords.
+On Linux, we can use [dpapilab-ng](https://github.com/tijldeneut/dpapilab-ng/blob/main/blobdec-with-masterkey.py) <small>(0.1k ⭐)</small> to decrypt the secret key and [dcp](https://github.com/palmenas/dcp/tree/main) <small>(0.002k ⭐)</small> to decrypt and dump passwords.
 
 ```ps
 $ base64 -d > key.enc <<< "<secret key here>"

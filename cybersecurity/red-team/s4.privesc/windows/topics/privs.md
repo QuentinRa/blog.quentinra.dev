@@ -58,7 +58,7 @@ PS> .\PrintSpoofer.exe -c "<reverse shell command>"
 
 Additional references:
 
-* [RogueWinRM](https://github.com/antonioCoco/RogueWinRM) <small>(0.5k ⭐, 2020 🪦)</small> using [WinRM](/operating-systems/networking/protocols/winrm.md)
+* [RogueWinRM](https://github.com/antonioCoco/RogueWinRM) <small>(0.6k ⭐, 2020 🪦)</small> using [WinRM](/operating-systems/networking/protocols/winrm.md)
 * [token-priv](https://github.com/hatRiot/token-priv/tree/master) <small>(0.7k ⭐, 2017 🪦)</small>
 </div><div>
 </div></div>

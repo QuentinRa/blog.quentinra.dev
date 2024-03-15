@@ -94,11 +94,11 @@ External tools/services
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
 
-* [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) <small>(14.5k ⭐ | shell script)</small>
+* [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) <small>(14.6k ⭐ | shell script)</small>
 * [LinEnum](https://github.com/rebootuser/LinEnum) <small>(6.6k ⭐ | shell script | 2020 🪦)</small>
 * [traitor](linux/tools/traitor.md)  <small>(6.5k ⭐ | go script compiled to binary | 2022 ☠️)</small>
 * [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) a.k.a. LSE <small>(3.0k ⭐ | shell script)</small>
-* [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) <small>(1.4k ⭐ | python script, 2021 🪦)</small>
+* [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) <small>(1.5k ⭐ | python script, 2021 🪦)</small>
 * [pwncat-cs](/cybersecurity/red-team/s3.exploitation/shell/tools/pwncat.md) <small>(2.3k ⭐ | reverse shell with priv. esc. suggester | 2022 ☠️)</small>
 
 Additional references
@@ -149,7 +149,7 @@ Additional references
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
 
-* [WinPeas](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS) <small>(14.5k ⭐ | binary | Download and Run `.\winPEASany_ofs.exe`)</small>
+* [WinPeas](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS) <small>(14.6k ⭐ | binary | Download and Run `.\winPEASany_ofs.exe`)</small>
 * [Seatbelt](https://github.com/GhostPack/Seatbelt) <small>(3.4k ⭐)</small>
 * [PrivescCheck](https://github.com/itm4n/PrivescCheck) <small>(2.5k ⭐ | powershell script)</small>
 * [JAWS](https://github.com/411Hall/JAWS) <small>(1.5k ⭐ | 2020 🪦)</small>
