@@ -28,6 +28,13 @@ PS> Get-AppLockerPolicy -Effective | select -ExpandProperty RuleCollections
 PS> Get-AppLockerPolicy -Local | Test-AppLockerPolicy -path C:\Windows\System32\cmd.exe -User Everyone
 ```
 
+* UAC status
+
+```ps
+PS> reg query HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ /v EnableLUA
+PS> reg query HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ /v ConsentPromptBehaviorAdmin
+```
+
 * `net accounts`: Password and Lockout Policy
 
 ```text!
@@ -46,6 +53,7 @@ Computer role:                                        SERVER
 **Machine**
 
 * `ver` <small>(cmd-only)</small>: see Windows version
+* `[environment]::OSVersion.Version` <small>(powershell)</small>: see Windows version
 * `systeminfo`: info about the system <small>(OS+Product+System info...)</small>
 * `hostname`: info about the host <small>(ex: `website-dev` -> role of the user)</small>
 * `netstat`: see real-time networking requests

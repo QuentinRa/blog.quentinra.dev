@@ -404,10 +404,5 @@ Stuff that I found, but never read/used yet.
 * Application Whitelisting 
 * AppLocker
 * Local Group Policy (gpedit.msc)
-
-```ps
-PS> # list enable protection settings
-PS> Get-MpComputerStatus
-PS> Get-MpComputerStatus | findstr "True"
-```
+* `rundll32 shell32.dll,Control_RunDLL .\xxx.dll`
 </div></div>
