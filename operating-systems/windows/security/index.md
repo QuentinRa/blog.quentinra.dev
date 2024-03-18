@@ -405,4 +405,6 @@ Stuff that I found, but never read/used yet.
 * AppLocker
 * Local Group Policy (gpedit.msc)
 * `rundll32 shell32.dll,Control_RunDLL .\xxx.dll`
+* Admin Approval Mode (AAM) enabled (new admins: regular token but can elevate, medium mandatory level)
+* Default RID 500 administrator, high mandatory level
 </div></div>

