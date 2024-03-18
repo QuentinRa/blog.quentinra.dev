@@ -22,7 +22,9 @@ You can examine DNS records using:
 * [nslookup](/operating-systems/networking/protocols/dns.md#nslookup-ipdomain-lookup)
 * [dig](/operating-systems/networking/protocols/dns.md#dig-ipdomain-lookup)
 * [subfinder](/cybersecurity/red-team/tools/enumeration/dns/subfinder.md)
+* [Sublist3r](/cybersecurity/red-team/tools/enumeration/dns/sublist3r.md)
 * [DNSRecon](/cybersecurity/red-team/tools/enumeration/dns/dnsrecon.md) <small>(⚠️, not all usages are passive)</small>
+* [TheHarvester](tools/theHarvester.md)
 * [dnsdumpster](https://dnsdumpster.com/) <small>(+subdomains)</small>
 * netcraft [searchdns](https://searchdns.netcraft.com/)/[sitereport](https://sitereport.netcraft.com/)
 * [viewdns](https://viewdns.info/) <small>(dig)</small>
@@ -55,17 +57,6 @@ Find which IP ranges are owned by a company:
 
 Another popular way to find subdomains is to study the generated certificate. A SSL certificate is generate for usually multiple domains, so we may find subdomains or other domains like this.
 
-See [SSL Tools](/operating-systems/networking/protocols/ssl-tls.md#find-certificates-given-a-domain) such as `crt.sh`.
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-lg-2"><div>
-
-* [Sublist3r](https://github.com/aboul3la/Sublist3r)
-</div><div>
+*  [SSL Tools](/operating-systems/networking/protocols/ssl-tls.md#find-certificates-given-a-domain) such as `crt.sh`
+* [TheHarvester](tools/theHarvester.md)
 </div></div>

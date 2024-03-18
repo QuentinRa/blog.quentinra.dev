@@ -45,7 +45,7 @@ Websites
 
 Others
 
-* [TheHarvester](tools/theHarvester.md) (Automated OSINT+DNS checking)
+* [TheHarvester](tools/theHarvester.md) <small>(Automated OSINT+DNS checking)</small>
 </div></div>
 
 <hr class="sep-both">
