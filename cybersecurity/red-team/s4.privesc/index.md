@@ -313,6 +313,12 @@ PS> netsh wlan show profile
 PS> netsh wlan show profile <profile_name> key=clear
 ```
 
+Some users may store sensitive data in sticky notes [database](/programming-languages/databases/relational/dbms/sqlite.md):
+
+```ps
+PS> ls $Env:localappdata/Packages/Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe/LocalState/plum.sqlite
+```
+
 Manually look for sensitive files:
 
 ```shell!

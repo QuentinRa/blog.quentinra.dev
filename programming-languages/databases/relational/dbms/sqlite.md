@@ -22,3 +22,22 @@ Common commands:
 * List columns 🫕: `PRAGMA table_info(some_table);`
 * Schema ✍️: `select sql from sqlite_master`
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+Open An SQLite Database On Windows Using [PSSQLite](https://github.com/RamblingCookieMonster/PSSQLite) <small>(1.0k ⭐)</small>
+
+```ps
+PS> Set-ExecutionPolicy Bypass -Scope Process
+PS> Import-Module .\PSSQLite.psd1
+PS> $db = '.\test.sqlite'
+PS> Invoke-SqliteQuery -Database $db -Query "<query here>" | ft -wrap
+```
+</div><div>
+</div></div>
