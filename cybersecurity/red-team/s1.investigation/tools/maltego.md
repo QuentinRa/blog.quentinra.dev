@@ -1,7 +1,5 @@
 # Maltego
 
-[Go back](../index.md)
-
 <div class="row row-cols-lg-2"><div>
 
 This is a software/tool allowing someone to gather a lot of past, and present information about a target. It includes information about websites, DNS records, Domains, emails/telephones, and companies... Note that the information generated may not be accurate.

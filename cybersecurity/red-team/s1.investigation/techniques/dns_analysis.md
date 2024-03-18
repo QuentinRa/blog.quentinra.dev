@@ -6,22 +6,44 @@
 
 <div class="row row-cols-lg-2"><div>
 
-#### DNS records lookup
+By examining [DNS](/operating-systems/networking/protocols/dns.md) records and certificates issued for a domain, we can passively learn about:
 
-You can use the commands [nslookup](/operating-systems/networking/protocols/dns.md#nslookup-ipdomain-lookup)/[dig](/operating-systems/networking/protocols/dns.md#dig-ipdomain-lookup) to query DNS servers. You can also use the website [DNS dumpster](/operating-systems/networking/protocols/dns.md#dnsdumpster-domains-lookup), to find both domains and subdomains.
+* 🗺️ Public domains and subdomains used by the company
+* 📮 Mail Server configuration through MX records
+* ✍️ Externally connected apps through TXT records
+* 🧑 Targets for social engineering attacks
+* 🛣️ Servers and IP ranges
+* ...
 
-You can also check [DNSRecon](/cybersecurity/red-team/tools/enumeration/dns/dnsrecon.md), but it's mainly used during discovery.
+#### Inspect DNS Records
 
-➡️ Find attack vectors: domains, subdomains, mail servers... They may also expose, with the TXT records, third-party apps and services.
+You can examine DNS records using:
+
+* [nslookup](/operating-systems/networking/protocols/dns.md#nslookup-ipdomain-lookup)
+* [dig](/operating-systems/networking/protocols/dns.md#dig-ipdomain-lookup)
+* [DNS dumpster](/operating-systems/networking/protocols/dns.md#dnsdumpster-domains-lookup)
+* [DNSRecon](/cybersecurity/red-team/tools/enumeration/dns/dnsrecon.md) <small>(⚠️, not all usages are passive)</small>
+* netcraft [searchdns](https://searchdns.netcraft.com/)/[sitereport](https://sitereport.netcraft.com/)
+* [domain.glass](https://domain.glass/)
+</div><div>
+
+#### Inspect Registrar Information
+
+You can find social engineering information using:
+
+* [whois](/operating-systems/networking/protocols/dns.md#whois-domain-registrar-data)
+* [netcraft](https://sitereport.netcraft.com/)
+* [domain.glass](https://domain.glass/)
 
 <br>
 
-#### WHOIS
+#### Inspect IP Ranges
 
-You can use [whois](/operating-systems/networking/protocols/dns.md#whois-domain-registrar-data) to dig for registrar information.
+Find which IP ranges are owned by a company:
 
-➡️ Find a (human) target to attack.
-</div><div>
+* [netcraft](https://sitereport.netcraft.com/)
+
+<br>
 
 #### Certificate Transparency (CT)
 
@@ -30,8 +52,6 @@ You can use [whois](/operating-systems/networking/protocols/dns.md#whois-domain-
 Another popular way to find subdomains is to study the generated certificate. A SSL certificate is generate for usually multiple domains, so we may find subdomains or other domains like this.
 
 See [SSL Tools](/operating-systems/networking/protocols/ssl-tls.md#find-certificates-given-a-domain) such as `crt.sh`.
-
-➡️ Find attack vectors: subdomains or other domains. 
 </div></div>
 
 <hr class="sep-both">
@@ -42,12 +62,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* netcraft [search DNS](https://searchdns.netcraft.com/) or [sitereport](https://sitereport.netcraft.com)
 * [virus total domain details](https://www.virustotal.com/gui/domain/example.com/details) (+Relations tab)
-* [domain.glass](https://domain.glass/)
-* [viewdns](https://viewdns.info/)
-</div><div>
-
 * [Sublist3r](https://github.com/aboul3la/Sublist3r)
 * [subfinder](https://github.com/projectdiscovery/subfinder)
 
@@ -55,4 +70,5 @@ Stuff that I found, but never read/used yet.
 $ sudo apt install subfinder
 $ subfinder -d example.com
 ```
+</div><div>
 </div></div>
