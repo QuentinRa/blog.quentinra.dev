@@ -257,7 +257,7 @@ IPB example.com
 
 #### Enumeration
 
-Refer to [DNS investigation](/cybersecurity/red-team/s1.investigation/tools/dns_investigation.md) to find targets.
+Refer to [DNS investigation](/cybersecurity/red-team/s1.investigation/techniques/dns_analysis.md) to find targets.
 
 Refer to [Subdomains](/cybersecurity/red-team/s2.discovery/techniques/websites/subdomains.md)/[vhosts](/cybersecurity/red-team/s2.discovery/techniques/websites/vhosts.md) to look for hidden subdomains.
 

@@ -4,8 +4,6 @@
 [![contentdiscovery](../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
 [![adventofcyber4](../../../_badges/thm/adventofcyber4/day3.svg)](https://tryhackme.com/room/adventofcyber4)
 
-[Go back](../index.md)
-
 <div class="row row-cols-lg-2"><div>
 
 Search engines are using bots, called **crawlers** to index websites. They go from one page to another, or from one website to another, by following links. The file **robots.txt** is listing the pages that "good" crawlers shouldn't index, along with the path to a file called **sitemap** which is literally a map of every page/resource of the websites, allowing crawlers to easily crawl the website.
@@ -46,12 +44,10 @@ You may also use
 
 [![subdomainenumeration](../../../_badges/thmp/subdomainenumeration.svg)](https://tryhackme.com/room/subdomainenumeration)
 
-Find domains/subdomains of `example.com`
+Find domains/subdomains of `example.com`:
 
-```
+```makefile!
 site:example.com site:*.example.com
 ```
 </div><div>
-
-...
 </div></div>

@@ -31,12 +31,12 @@ Common activities:
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-* [OSINT gathering](tools/osint.md) 🧑‍💻🧑: any publicly available information
-* [DNS analysis](tools/dns_investigation.md) 🧑‍💻🐟: domain, domain owner, subdomains...
-* [Google dorking](tools/dorking.md) 🧑‍💻🐟🧑: find anything indexed by google
+* [OSINT gathering](techniques/osint.md) 🧑‍💻🧑: any publicly available information
+* [DNS analysis](techniques/dns_analysis.md) 🧑‍💻🐟: domain, domain owner, subdomains...
+* [Google dorking](techniques/dorking.md) 🧑‍💻🐟🧑: find anything indexed by google
 * [Shodan](tools/shodan.md) 🐟: find exposed and potentially vulnerable IoT devices
 * [Maltego](tools/maltego.md) 🧑‍💻 🐟: find websites, domains, social media accounts...
-* [Data leaks](tools/data_leaks.md) 🧑: find leaked data (passwords...)
+* [Data leaks](techniques/data_leaks.md) 🧑: find leaked data (passwords...)
 </div><div>
 
 Websites
