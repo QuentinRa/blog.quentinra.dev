@@ -21,10 +21,13 @@ You can examine DNS records using:
 
 * [nslookup](/operating-systems/networking/protocols/dns.md#nslookup-ipdomain-lookup)
 * [dig](/operating-systems/networking/protocols/dns.md#dig-ipdomain-lookup)
-* [DNS dumpster](/operating-systems/networking/protocols/dns.md#dnsdumpster-domains-lookup)
+* [subfinder](/cybersecurity/red-team/tools/enumeration/dns/subfinder.md)
 * [DNSRecon](/cybersecurity/red-team/tools/enumeration/dns/dnsrecon.md) <small>(⚠️, not all usages are passive)</small>
+* [dnsdumpster](https://dnsdumpster.com/) <small>(+subdomains)</small>
 * netcraft [searchdns](https://searchdns.netcraft.com/)/[sitereport](https://sitereport.netcraft.com/)
-* [domain.glass](https://domain.glass/)
+* [viewdns](https://viewdns.info/) <small>(dig)</small>
+* VirusTotal [details](https://www.virustotal.com/gui/domain/example.com/details) <small>(dig)</small> + [relations](https://www.virustotal.com/gui/domain/example.com/relations) <small>(+subdomains)</small>
+* [domain.glass](https://domain.glass/) <small>(outdated version of VirusTotal)</small>
 </div><div>
 
 #### Inspect Registrar Information
@@ -34,6 +37,7 @@ You can find social engineering information using:
 * [whois](/operating-systems/networking/protocols/dns.md#whois-domain-registrar-data)
 * [netcraft](https://sitereport.netcraft.com/)
 * [domain.glass](https://domain.glass/)
+* [viewdns](https://viewdns.info/)
 
 <br>
 
@@ -62,13 +66,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* [virus total domain details](https://www.virustotal.com/gui/domain/example.com/details) (+Relations tab)
 * [Sublist3r](https://github.com/aboul3la/Sublist3r)
-* [subfinder](https://github.com/projectdiscovery/subfinder)
-
-```ps
-$ sudo apt install subfinder
-$ subfinder -d example.com
-```
 </div><div>
 </div></div>

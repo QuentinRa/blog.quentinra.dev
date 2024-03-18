@@ -197,10 +197,6 @@ $ nslookup -type=A example.com
 $ nslookup -type=A example.com 1.1.1.1
 ```
 
-#### `dnsdumpster`: domains lookup
-
-[dnsdumpster](https://dnsdumpster.com/) is a website to fetch DNS records, for both a domain, and its subdomains.
-
 #### `whois`: domain registrar data
 
 [![introtonetworking](../../../cybersecurity/_badges/thm/introtonetworking.svg)](https://tryhackme.com/room/introtonetworking)
