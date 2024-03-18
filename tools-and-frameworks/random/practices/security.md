@@ -40,6 +40,7 @@
 * [BitWarden](https://bitwarden.com/)
 * [keepersecurity](https://www.keepersecurity.com/)
 * [lastpass](https://www.lastpass.com/) (not recommended)
+* Thycotic, CyberArk, etc.
 </div><div>
 
 ##### Nice browser extensions

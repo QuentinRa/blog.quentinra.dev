@@ -22,12 +22,14 @@ KeePass is storing passwords locally in a `.kdbx` database.
 #### FootHold
 
 [![password_attacks](../../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![windows_privilege_escalation](../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 
 * You can try to [brute force](/cybersecurity/cryptography/algorithms/hashing/index.md) the master password:
 
 ```shell!
 $ keepass2john xxx.kdbx > myhash
 $ john myhash --wordlist=wordlist
+$ hashcat -a 0 -m 13400 myhash --wordlist=wordlist
 ```
 </div><div>
 

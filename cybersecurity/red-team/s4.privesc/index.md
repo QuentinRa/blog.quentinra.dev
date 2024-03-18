@@ -184,13 +184,13 @@ Common places to dig for credentials are:
 
 * 🔐 command history <small>(ex: ~/.bash_history, \*hist\*)</small>
 * 🌍 browser [history, saved passwords, etc.](others/browser.md)
-* 🛣️ application and system [logs](/cybersecurity/blue-team/topics/logs.md) <small>(/var/log/)</small>
+* 🛣️ application <small>(.ppk, .rdp, .sdtid)</small> and system [logs](/cybersecurity/blue-team/topics/logs.md) <small>(/var/log/)</small>
 * 🐚 backups <small>(.old, .bak, xxx~...)</small>
 * ✉️ conversations/mails <small>(/var/mail/)</small>
 * 🌳 configurations <small>(.env, .ini/.config/.cfg/.conf/.cnf, .sql)</small>
 * 🤖 scripts and tasks <small>(.sh/.ps1/.bat, cronjob)</small>
 * 👜 check the registry <small>(Windows, privilege required)</small>
-* 💎 Databases <small>(.\*db\*)</small>, Password Managers, Applications, [Files](https://fileinfo.com/filetypes/encoded)
+* 💎 Databases <small>(.\*db\*)</small>, Password Managers, [Files](https://fileinfo.com/filetypes/encoded)
 * ...
 
 Manually dig for interesting or unexpected files
@@ -206,6 +206,7 @@ Always put yourself in the target shoes.
 #### Automated Tools To Find Credentials
 
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![windows_privilege_escalation](../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 
 You can use [LaZagne](https://github.com/AlessandroZ/LaZagne) <small>(9.0k ⭐)</small>.
 
@@ -217,6 +218,12 @@ PS> .\LaZagne.exe all
 You can use [Snaffler](https://github.com/SnaffCon/Snaffler) <small>(1.8k ⭐)</small>.
 
 You can use [SessionGopher](https://github.com/Arvanaghi/SessionGopher) <small>(1.1k ⭐, 2018 🪦)</small>.
+
+```ps
+PS> Import-Module .\SessionGopher.ps1
+```
+
+You can use [MailSniper](https://github.com/dafthack/MailSniper) <small>(2.8k ⭐, 2022 🪦)</small> for automated scans of sensitive information in a Microsoft Exchange environment.
 
 #### Linux CredHunting Notes
 
@@ -267,6 +274,7 @@ List saved credentials by Windows:
 PS> cmdkey /list
 PS> # use 'admin' saved credentials to start cmd.exe
 PS> runas /savecred /user:admin cmd.exe
+PS> runas /savecred /user:admin "COMMAND HERE"
 ```
 
 Some known locations:
@@ -282,23 +290,39 @@ PS> type C:\Windows\Panther\Unattend.xml
 PS> type C:\Windows\Panther\Unattend\Unattend.xml
 PS> type C:\Windows\system32\sysprep.inf
 PS> type C:\Windows\system32\sysprep\sysprep.xml
-# Putty
-PS> reg query HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\ /f "Proxy" /s
 # VNC servers
 # FileZilla
 PS> type C:\xampp\FileZilla Server\FileZilla Server.xml
 PS> type C:\Program Files\FileZilla Server\FileZilla Server.xml
 ```
 
-Additional Commands
+Some known registry keys/hives:
+
+```ps
+# Putty
+PS> reg query HKEY_CURRENT_USER\SOFTWARE\SimonTatham\PuTTY\Sessions
+PS> reg query HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\ /f "Proxy" /s
+# Windows Autologon - Cleartext credentials
+PS> reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon"
+```
+
+Visualize saved WI-FI network passwords:
+
+```ps
+PS> netsh wlan show profile
+PS> netsh wlan show profile <profile_name> key=clear
+```
+
+Manually look for sensitive files:
 
 ```shell!
 CMD> findstr /SIM /C:"password" *.txt *.ini *.cfg *.config *.xml
 CMD> where /R C:\ *.txt *.ini *.cfg *.config *.xml
 CMD> dir /S /B *pass*.txt == *pass*.xml == *pass*.ini == *cred* == *vnc* == *.config*
 PS> Get-ChildItem C:\ -Recurse -Include *.rdp, *.config, *.vnc, *.cred -ErrorAction Ignore
-
 ```
+
+📚 See also: [PowerShell Secure String](/operating-systems/windows/security/index.md#powershell-securestring) for encrypted passwords.
 </div></div>
 
 <hr class="sep-both">

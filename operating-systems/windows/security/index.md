@@ -356,6 +356,7 @@ PS> vssadmin list volumes
 
 #### PowerShell SecureString
 
+[![windows_privilege_escalation](../../../cybersecurity/_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 [![powershell_securestring](../../../cybersecurity/_badges/rootme/app_script/powershell_securestring.svg)](https://www.root-me.org/en/Challenges/App-Script/Powershell-SecureString)
 
 PowerShell SecureString class represents text that should be kept confidential. You can create one using:
@@ -370,6 +371,13 @@ To decrypt one, there are various methods:
 ```ps
 PS> $UnsecurePassword = ConvertFrom-SecureString -SecureString $SecurePassword -AsPlainText
 PS> $UnsecurePassword = (New-Object PSCredential 0, $SecurePassword).GetNetworkCredential().Password
+```
+
+For credentials stored using `Export-Clixml`, use:
+
+```ps
+PS> $credential = Import-Clixml -Path 'C:\scripts\pass.xml'
+PS> $credential.GetNetworkCredential().Password
 ```
 </div></div>
 
