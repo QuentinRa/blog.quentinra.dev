@@ -133,7 +133,7 @@ Additional references
 * 💎 Exploiting [UAC](windows/topics/uac.md)
 * ⏰ Exploiting [scheduled tasks](windows/topics/tasks.md)
 * 🔑 Finding [credentials](#credential-hunting) <small>(config, logs, passwords...)</small>
-* 💥 Exploiting [services](windows/topics/services.md)
+* 💥 Exploiting [services](windows/topics/services.md) and [named pipes](windows/topics/named_pipes.md)
 * 🐸 Exploiting [privileges](windows/topics/privs.md) <small>(including groups)</small>
 * 📦 Unpatched [vulnerabilities](windows/topics/vulns.md) 
 

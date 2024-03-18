@@ -120,6 +120,8 @@ PS> sc.exe start XXX # fails but executed the command
 
 #### Insecure Registry
 
+[![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
+
 Windows stores in `hklm\System\CurrentControlSet\services` variable service configurations. ImagePath reference the path to the executable related to a service. We may be able to override some values:
 
 Detect
