@@ -14,4 +14,10 @@ $ ldapsearch -h IP -x -b "dc=example,dc=com" -s sub "(&(objectclass=user))" | gr
 $ python windapsearch.py --dc-ip IP -u "" -U
 ```
 </div><div>
+
+We can use [kerbrute](/cybersecurity/red-team/tools/utilities/windows/kerbrute.md) which can even detect users with no pre auth required and dump their hashes.
+
+```ps
+$ kerbrute userenum -d domain --dc IP wordlist
+```
 </div></div>

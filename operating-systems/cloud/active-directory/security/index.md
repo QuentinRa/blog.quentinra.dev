@@ -101,7 +101,7 @@ To find hosts, refer to [Passive Internal Network Discovery](/cybersecurity/red-
 
 To find usernames/hashes/hosts, refer to [LLMNR/NBT-NS Poisoning](/cybersecurity/red-team/s2.discovery/techniques/network/poisoning.md).
 
-To find usernames, refer to [Find Internal User Accounts](/cybersecurity/red-team/s2.discovery/techniques/internal/find_usernames.md).
+To find usernames+hashes, refer to [Find Internal User Accounts](/cybersecurity/red-team/s2.discovery/techniques/internal/find_usernames.md).
 
 To find the password policy, refer to [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md).
 
@@ -123,7 +123,6 @@ Stuff that I found, but never read/used yet.
 * [UltimateAppLockerByPassList](https://github.com/api0cradle/UltimateAppLockerByPassList) (1.5k ⭐)
 * [Active Directory Exploitation Cheat Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet) (3.4k ⭐)
 * [AD mindmap orange](https://orange-cyberdefense.github.io/ocd-mindmaps/)
-* [DPAT](https://github.com/clr2of8/DPAT)
 </div><div>
 
 * Hardening AD ([ref](https://blog.netwrix.fr/2019/05/06/securiser-votre-annuaire-ad-contre-les-attaques-de-malware/))
