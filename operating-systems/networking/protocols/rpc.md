@@ -13,6 +13,7 @@ List RPC programs:
 
 ```ps
 $ rpcinfo IP
+$ rpcinfo -p IP
 ```
 </div></div>
 

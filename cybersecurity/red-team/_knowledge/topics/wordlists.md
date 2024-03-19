@@ -212,7 +212,7 @@ admin, administrator, wpadmin, root, adm
 /usr/share/seclists/Usernames/top-usernames-shortlist.txt
 ```
 
-📚 Common tools are: [username-anarchy](https://github.com/urbanadventurer/username-anarchy) <small>(0.6k ⭐, 2016 🪦)</small> and [username_generator](https://github.com/shroudri/username_generator) <small>(0.04k ⭐)</small>.
+📚 Common tools are: [username-anarchy](https://github.com/urbanadventurer/username-anarchy) <small>(0.6k ⭐, 2016 🪦)</small> and [username_generator](https://github.com/shroudri/username_generator) <small>(0.04k ⭐)</small>. The wordlists in the [statistically-likely-usernames](https://github.com/insidetrust/statistically-likely-usernames) <small>(0.8k ⭐)</small> project are also somewhat popular.
 
 **Passwords**
 

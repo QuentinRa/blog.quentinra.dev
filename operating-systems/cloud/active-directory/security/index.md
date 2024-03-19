@@ -91,6 +91,8 @@ PS> Import-Module .\DSInternals.psd1
 PS> $key = Get-BootKey -SystemHiveFilePath '.\system.hive'
 PS> Get-ADDBAccount -All -DatabasePath .\ntds.dit -BootKey $key
 ```
+
+You can use [NtdsAudit](https://github.com/dionach/NtdsAudit) <small>(0.4k ⭐)</small> on Windows or [DPAT](https://github.com/clr2of8/DPAT) <small>(0.9k ⭐, 2022 🪦)</small> Python Script for statistics.
 </div><div>
 
 #### Active Directory Enumeration
