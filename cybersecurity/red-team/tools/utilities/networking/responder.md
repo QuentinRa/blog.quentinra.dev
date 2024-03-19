@@ -11,6 +11,7 @@ You can use [responder](https://github.com/lgandx/Responder) <small>(5.0k ⭐)</
 For instance, a website may be using SMB to access some shares based on the user input. If we inject a share leading to our machine, we may be able to grab the credentials used to connect to the share.
 
 ```ps
+$ sudo responder -I tun0
 $ sudo responder -i IP -I tun0
 ```
 </div><div>

@@ -85,6 +85,10 @@ Vulnerabilities scanners
 * [Nessus](/cybersecurity/red-team/tools/scanners/vulns/nessus.md): port scanning, find vulnerabilities, quite noisy/slow
 * [OpenVAS](/cybersecurity/red-team/tools/scanners/vulns/openvas.md): port scanning, find vulnerabilities, quite noisy/slow
 * [Nikto](/cybersecurity/red-team/tools/scanners/web/nikto.md): website vulnerability scanner
+
+Internal Assessments
+
+* [LLMNR/NBT-NS Poisoning](techniques/network/poisoning.md): obtain hashes and fingerprint hosts
 </div><div>
 
 Websites
