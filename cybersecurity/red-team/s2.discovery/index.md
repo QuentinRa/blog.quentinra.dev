@@ -88,9 +88,10 @@ Vulnerabilities scanners
 
 Internal Assessments
 
-* [LLMNR/NBT-NS Poisoning](/cybersecurity/red-team/s2.discovery/techniques/network/poisoning.md): obtain hashes and fingerprint hosts
-* [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md): find the password policy
-* [Password Spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md): test one password on all users
+* [LLMNR/NBT-NS Poisoning](/cybersecurity/red-team/s2.discovery/techniques/network/poisoning.md): usernames, hashes, host fingerprint
+* [User Accounts](/cybersecurity/red-team/s2.discovery/techniques/internal/find_usernames.md): usernames
+* [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md): password length, account lockout
+* [Password Spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md): gain access to an account
 </div><div>
 
 Websites

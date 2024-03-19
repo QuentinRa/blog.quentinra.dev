@@ -51,4 +51,24 @@ $ rpcclient [...]
 client> getdompwinfo    # Password Policy
 ```
 </div><div>
+
+#### Leveraging Windows Commands
+
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+If you can run commands, you may use:
+
+```shell!
+PS> net accounts
+```
+
+#### Additional Notes
+
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+You can use [PowerView](/cybersecurity/red-team/tools/utilities/windows/powersploit.md):
+
+```shell!
+PS> Get-DomainPolicy
+```
 </div></div>

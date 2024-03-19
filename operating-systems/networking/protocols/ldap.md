@@ -32,10 +32,14 @@ cn=John Doe,ou=Users,dc=example,dc=com
 
 <div class="row row-cols-lg-2"><div>
 
+#### ldapsearch command
+
 You can use [ldapsearch](https://linux.die.net/man/1/ldapsearch) to find database entries.
 
 ```ps
 $ ldapsearch -H ldap://ldap.example.com:389 -D "cn=admin,dc=example,dc=com" -w password -b "dc=example,dc=com" "(cn=John Doe)"
+$ ldapsearch -h IP -x -b "dc=example,dc=com" -s sub "*"
+$ ldapsearch -h IP -x -b "dc=example,dc=com" -s sub "(&(objectclass=user))"
 ```
 
 * `-H`: use a custom socket
@@ -47,8 +51,18 @@ About LDAP syntax:
 
 * `*` refers to "any"
 * `()` is used to group an expression
-* `&`/`|` are respectively the logical 'AND' and 'OR'
+* `&` and `|` are respectively the logical 'AND' and 'OR'
 </div><div>
+
+#### windapsearch command
+
+You can use the [windapsearch.py](https://github.com/ropnop/windapsearch) <small>(0.7k ⭐, 2020 🪦)</small> script or the [go](https://github.com/ropnop/go-windapsearch) <small>(0.3k ⭐, 2021 🪦)</small> binary. They make it easier to craft LDAP requests.
+
+```ps
+$ python windapsearch.py --dc-ip IP -u "" -U
+```
+
+<br>
 
 #### LDAP Injection
 
@@ -58,4 +72,16 @@ About LDAP syntax:
 Web applications using LDAP may be vulnerable to LDAP injection. These two expressions are always true: `(cn=*)` and `(objectClass=*)`.
 
 The most basic authentication bypass is `*` and `*` that authenticates as the first user found.
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* On Legacy systems, anyone can initiate LDAP requests. It seems to be called LDAP null bind.
+</div><div>
 </div></div>

@@ -1,0 +1,15 @@
+# Find Internal User Accounts
+
+<div class="row row-cols-lg-2"><div>
+
+From a host inside an internal environment, we often want to discover new accounts we could pivot to.
+
+In an [LDAP](/operating-systems/networking/protocols/ldap.md) environment such as Active Directory, we can use:
+
+```ps
+$ ldapsearch -h IP -x -b "dc=example,dc=com" -s sub "*" | grep -m 1 -B 10 pwdHistoryLength
+$ ldapsearch -h IP -x -b "dc=example,dc=com" -s sub "(&(objectclass=user))" | grep sAMAccountName: | cut -f2 -d" "
+$ python windapsearch.py --dc-ip IP -u "" -U
+```
+</div><div>
+</div></div>
