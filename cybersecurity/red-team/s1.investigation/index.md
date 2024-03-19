@@ -31,21 +31,25 @@ Common activities:
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-* [OSINT gathering](techniques/osint.md) 🧑‍💻🧑: any publicly available information
-* [DNS analysis](techniques/dns_analysis.md) 🧑‍💻🐟: DNS records, subdomains, IPs, emails...
-* [Google dorking](techniques/dorking.md) 🧑‍💻🐟🧑: find anything indexed by google
-* [Shodan](tools/shodan.md) 🐟: find exposed and potentially vulnerable IoT devices
-* [Maltego](tools/maltego.md) 🧑‍💻 🐟: find websites, domains, social media accounts...
-* [Data leaks](techniques/data_leaks.md) 🧑: find leaked data (passwords...)
+* [OSINT gathering](/cybersecurity/red-team/s1.investigation/techniques/osint.md) 🧑‍💻🧑: any publicly available information
+* [DNS analysis](/cybersecurity/red-team/s1.investigation/techniques/dns_analysis.md) 🧑‍💻🐟: DNS records, subdomains, IPs, emails...
+* [Google dorking](/cybersecurity/red-team/s1.investigation/techniques/dorking.md) 🧑‍💻🐟🧑: find anything indexed by google
+* [Shodan](/cybersecurity/red-team/s1.investigation/tools/shodan.md) 🐟: find exposed and potentially vulnerable IoT devices
+* [Maltego](/cybersecurity/red-team/s1.investigation/tools/maltego.md) 🧑‍💻 🐟: find websites, domains, social media accounts...
+* [Data leaks](/cybersecurity/red-team/s1.investigation/techniques/data_leaks.md) 🧑: find leaked data (passwords...)
 </div><div>
 
 Websites
 
-* [Wayback machine](tools/wayback.md) 🐟: see previous versions of the website
+* [Wayback machine](/cybersecurity/red-team/s1.investigation/tools/wayback.md) 🐟: see previous versions of the website
+
+Internal
+
+* [Passive Network Discovery](/cybersecurity/red-team/s1.investigation/techniques/passive_network_discovery.md)
 
 Others
 
-* [TheHarvester](tools/theHarvester.md) <small>(Automated OSINT+DNS checking)</small>
+* [TheHarvester](/cybersecurity/red-team/s1.investigation/tools/theHarvester.md) <small>(Automated OSINT+DNS checking)</small>
 </div></div>
 
 <hr class="sep-both">
