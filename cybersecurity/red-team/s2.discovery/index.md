@@ -69,15 +69,15 @@ We usually don't only rely on our web browser to recon/exploit websites, as they
 
 Network mapping
 
-* [ping/fping](techniques/network/ping.md) 🥅: check if a host respond to pings
-* [Packet tracing](techniques/network/trace.md) 🥅: map a network
+* [ping/fping](/cybersecurity/red-team/s2.discovery/techniques/network/ping.md) 🥅: check if a host respond to pings
+* [Packet tracing](/cybersecurity/red-team/s2.discovery/techniques/network/trace.md) 🥅: map a network
 * The TTL can be used to primitively guess the OS
 
 Scanning and enumeration
 
-* [port scanning](techniques/network/port_scanning.md) 🚪🔥: discover running services
-* [banner grabbing](techniques/network/banner_grabbing.md) ☠️: get a service banner
-* [brute force service credentials](techniques/network/auth.md) 🚪: try to force your way in
+* [port scanning](/cybersecurity/red-team/s2.discovery/techniques/network/port_scanning.md) 🚪🔥: discover running services
+* [banner grabbing](/cybersecurity/red-team/s2.discovery/techniques/network/banner_grabbing.md) ☠️: get a service banner
+* [brute force service credentials](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md) 🚪: try to force your way in
 * The banner format may be used to primitively guess the OS
 
 Vulnerabilities scanners
@@ -88,26 +88,28 @@ Vulnerabilities scanners
 
 Internal Assessments
 
-* [LLMNR/NBT-NS Poisoning](techniques/network/poisoning.md): obtain hashes and fingerprint hosts
+* [LLMNR/NBT-NS Poisoning](/cybersecurity/red-team/s2.discovery/techniques/network/poisoning.md): obtain hashes and fingerprint hosts
+* [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md): find the password policy
+* [Password Spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md): test one password on all users
 </div><div>
 
 Websites
 
 [![introwebapplicationsecurity](../../_badges/thm/introwebapplicationsecurity.svg)](https://tryhackme.com/room/introwebapplicationsecurity)
 
-* [Website mapping](techniques/websites/mapping.md) 🧭: before investing a website
-* [Website fingerprinting](techniques/websites/fingerprint.md) 🧭: understand your target
-* [Source code analysis](techniques/websites/sanalysis.md) 🚪🔥🔑: comments, hidden code...
-* [Account discovery](techniques/websites/account.md) 🔑: find accounts
-* [Forced Browsing](techniques/websites/forced_browsing.md) 🚪🔑: find hidden pages/folders
-* [IDOR](techniques/websites/idor.md) 🚪🔑: find if you can access someone else content
-* [Logic flaws](techniques/websites/logic_flaws.md) 🚪: find logic flaws
-* [Virtual hosts](techniques/websites/vhosts.md) 🚪: find virtual hosts
-* [Subdomains](techniques/websites/subdomains.md) 🚪: find subdomains
-* [Parameters](techniques/websites/parameters.md) 🚪: find hidden parameters
-* [Json Web Tokens](techniques/others/jwt.md) 🚪🔑: find and exploit these
+* [Website mapping](/cybersecurity/red-team/s2.discovery/techniques/websites/mapping.md) 🧭: before investing a website
+* [Website fingerprinting](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md) 🧭: understand your target
+* [Source code analysis](/cybersecurity/red-team/s2.discovery/techniques/websites/sanalysis.md) 🚪🔥🔑: comments, hidden code...
+* [Account discovery](/cybersecurity/red-team/s2.discovery/techniques/websites/account.md) 🔑: find accounts
+* [Forced Browsing](/cybersecurity/red-team/s2.discovery/techniques/websites/forced_browsing.md) 🚪🔑: find hidden pages/folders
+* [IDOR](/cybersecurity/red-team/s2.discovery/techniques/websites/idor.md) 🚪🔑: find if you can access someone else content
+* [Logic flaws](/cybersecurity/red-team/s2.discovery/techniques/websites/logic_flaws.md) 🚪: find logic flaws
+* [Virtual hosts](/cybersecurity/red-team/s2.discovery/techniques/websites/vhosts.md) 🚪: find virtual hosts
+* [Subdomains](/cybersecurity/red-team/s2.discovery/techniques/websites/subdomains.md) 🚪: find subdomains
+* [Parameters](/cybersecurity/red-team/s2.discovery/techniques/websites/parameters.md) 🚪: find hidden parameters
+* [Json Web Tokens](/cybersecurity/red-team/s2.discovery/techniques/passwords/jwt.md) 🚪🔑: find and exploit these
 
-➡️ You should check for signs of [well-known vulnerabilities](../s3.exploitation/index.md#common-vulnerabilities-).
+➡️ You should check for signs of [well-known vulnerabilities](/cybersecurity/red-team/s3.exploitation/index.md#common-vulnerabilities-).
 </div></div>
 
 <hr class="sep-both">

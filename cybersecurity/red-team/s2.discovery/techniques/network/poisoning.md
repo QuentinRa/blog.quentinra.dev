@@ -28,6 +28,8 @@ $ sudo responder -I tun0
 
 ## LLMNR/NBT-NS Poisoning Remediation 🛡️
 
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
 <div class="row row-cols-lg-2"><div>
 
 The best remediation is to disable both protocols, but in some environments, it may not be possible without impacting existing tools.

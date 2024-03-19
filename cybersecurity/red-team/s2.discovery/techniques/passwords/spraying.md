@@ -1,6 +1,6 @@
 # Password spraying
 
-[![passwordattacks](../../../_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
+[![passwordattacks](../../../../_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
 
 <div class="row row-cols-lg-2"><div>
 

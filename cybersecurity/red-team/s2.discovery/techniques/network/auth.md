@@ -31,7 +31,7 @@ Look at [wordlists#accounts](/cybersecurity/red-team/_knowledge/topics/wordlists
 
 * If we don't find any valid credentials nor any other attack vector, we may try to use wordlists with the most common passwords. 🪲
 
-* Otherwise, we may also try our luck with [password spraying](../spraying.md). To avoid account lockout, we may be forced to use it anyway. 🗝️ By default there is no account lockout on Windows Server.
+* Otherwise, we may also try our luck with [password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md). To avoid account lockout, we may be forced to use it anyway. 🗝️ By default there is no account lockout on Windows Server.
 
 * When testing a list of usernames, remember to add the switch to stop when one credential is found. ⚠️
 </div></div>
