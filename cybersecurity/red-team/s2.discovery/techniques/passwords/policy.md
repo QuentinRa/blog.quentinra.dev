@@ -36,6 +36,7 @@ You can use [SMB](/operating-systems/networking/protocols/smb.md) credentials to
 $ nxc smb [...] --pass-pol
 $ nxc smb [...] --users # show 'badpasswordcount' for each user
 ```
+
 ```shell!
 $ enum4linux-ng [...] -P
 ```
@@ -60,6 +61,7 @@ If you can run commands, you may use:
 
 ```shell!
 PS> net accounts
+PS> net accounts /domain
 ```
 
 #### Additional Notes

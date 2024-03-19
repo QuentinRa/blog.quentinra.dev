@@ -10,17 +10,19 @@
 * `whoami`: username
 * `whoami /groups`: current user groups
 * `whoami /priv`: current user privileges
-* `Get-LocalGroup`+`net localgroup`: list groups
+* `Get-LocalGroup` or `net localgroup`: list groups
 * `Get-LocalUser`: list users
 * `net user username`: info about a user
 * `net localgroup users`: list users in the group "users"
 * `net localgroup administrators`: list local administrators
-* `net group "Domain Admins" /dom`: list domain administrators
+* `qwinsta`: currently logged users
 
 **Security**
 
 * `Get-MpComputerStatus`: Windows defender status
+* `sc query windefend`: Windows defender status
 * `wmic qfe` or `Get-HotFix | ft -AutoSize`: installed hotfixes
+* `netsh advfirewall show allprofiles`: network policy
 * List all AppLocker rules or Query status given user and program
 
 ```ps
@@ -58,8 +60,26 @@ Computer role:                                        SERVER
 * `hostname`: info about the host <small>(ex: `website-dev` -> role of the user)</small>
 * `netstat`: see real-time networking requests
 * `netstat -ano`: list connections
+* `ipconfig /all`, `arp -a`, and `route print`
 * `ls Env:` or `set`: see environment variables
 * `wmic product get name,version,vendor`: list software installed using "normal" means, e.g., using the OS
 * `tasklist /svc`: list running processes
 * `query user`: list logged users
+* Refer to [wmic](/operating-systems/windows/_knowledge/index.md#wmic) commands.
+
+**Active Directory**
+
+Enumeration
+
+* `net groups /domain`: list domain groups
+* `net group "Domain Admins" /dom`: list domain administrators
+* `net accounts /domain`: password policy
+* `net share`: list shares
+* `net user /domain`: list all users within a domain
+
+Utilities
+
+* `%logonserver%`: domain controller name
+* `%USERDOMAIN%`: host domain name
+* `wmic ntdomain`: domain and domain controller information
 </div></div>

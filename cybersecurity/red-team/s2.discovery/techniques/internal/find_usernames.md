@@ -21,3 +21,17 @@ We can use [kerbrute](/cybersecurity/red-team/tools/utilities/windows/kerbrute.m
 $ kerbrute userenum -d domain --dc IP wordlist
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+```ps
+PS> net user /domain
+```
+</div><div>
+</div></div>

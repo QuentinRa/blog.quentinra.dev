@@ -124,6 +124,7 @@ Example commands:
 * `wmic process`: running processes
 * `wmic service`: list services
 * `wmic useraccount`: local user accounts
+* `wmic sysaccount`: system accounts used as service accounts
 * `wmic group`: local groups
 * ...
 </div><div>
