@@ -1,5 +1,7 @@
 # LLMNR/NBT-NS Poisoning
 
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
 <div class="row row-cols-lg-2"><div>
 
 Inside an internal windows network, when a DNS server is not available or a DNS request fails, LLMNR and NBT-NS may be used.
@@ -20,4 +22,18 @@ $ sudo responder -I tun0
 ```
 
 * Refer to [M-I-T-M](/cybersecurity/red-team/s3.exploitation/vulns/others/network/mitm.md) for more tools and attacks
+</div></div>
+
+<hr class="sep-both">
+
+## LLMNR/NBT-NS Poisoning Remediation 🛡️
+
+<div class="row row-cols-lg-2"><div>
+
+The best remediation is to disable both protocols, but in some environments, it may not be possible without impacting existing tools.
+
+We can try to send fake LLMNR or NBT-NS requests, and if an host respond, then it's most malicious and we need to investigate.
+
+We must ensure that both stay disabled, such as by monitoring `HKLM\Software\Policies\Microsoft\Windows NT\DNSClient`.
+</div><div>
 </div></div>

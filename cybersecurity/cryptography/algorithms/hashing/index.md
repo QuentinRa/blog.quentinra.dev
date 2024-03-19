@@ -212,6 +212,7 @@ $ hashcat -m 1800 -a 0 hashes wordlist
 #### Windows password hash cracking
 
 [![password_attacks](../../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![active_directory_enumeration_attacks](../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![hash_dcc](../../../_badges/rootme/cryptanalysis/hash_dcc.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-DCC)
 [![hash_dcc2](../../../_badges/rootme/cryptanalysis/hash_dcc2.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-DCC2)
 [![hash_lm](../../../_badges/rootme/cryptanalysis/hash_lm.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-LM)
@@ -224,6 +225,7 @@ $ john myhash --format=nt --wordlist=wordlist
 $ john myhash --format=netntlmv2 --wordlist=wordlist
 $ hashcat -a 0 -m 1000 myhash # NTLM
 $ hashcat -a 0 -m 3000 myhash # LM
+$ hashcat -a 0 -m 5600 myhash # NetNTLMv2
 ```
 
 There are also Domain Cached Credentials.
