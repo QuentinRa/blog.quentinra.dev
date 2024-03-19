@@ -26,9 +26,8 @@ All [SMB](/operating-systems/networking/protocols/smb.md) commands are available
 
 ```ps
 $ nxc smb IP [...]
-$ nxc smb IP [...] -u 'username'
-$ nxc smb IP [...] -p 'password'
-$ nxc smb IP [...] -p password.list
+$ nxc smb IP [...] -u 'username' # or username.list
+$ nxc smb IP [...] -p 'password' # or password.list
 $ nxc smb IP [...] --continue-on-success
 $ nxc smb IP [...] -H hash
 $ nxc smb IP [...] --local-auth # SAM instead of AD

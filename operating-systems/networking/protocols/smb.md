@@ -159,6 +159,7 @@ $ smbclient [...] -c "command" -W "domain"
 ```shell!
 $ hydra -L user.list -P password.list smb://IP -V -f
 $ nxc smb IP -u username -p password.list
+$ nxc smb IP -u username.list -p password
 ```
 
 * You can also use [metasploit](/cybersecurity/red-team/tools/frameworks/metasploit/index.md)
