@@ -64,6 +64,10 @@ You can investigate a memory dump using:
 
 * [Volatility](../tools/forensics/volatility.md) is a well-known memory forensic tool.
 * [rekall](https://github.com/google/rekall) <small>(1.9k ⭐, 2020 🪦)</small> is both archived and no longer maintained
+
+Additional resources:
+
+* [MemLabs](https://github.com/stuxnet999/MemLabs)
 </div></div>
 
 <hr class="sep-both">
