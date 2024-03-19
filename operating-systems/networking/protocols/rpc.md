@@ -19,15 +19,13 @@ $ rpcinfo -p IP
 
 <hr class="sep-both">
 
-## Random Notes
-
-<div class="row row-cols-lg-2"><div>
-
-#### RPC SMB Footprinting
+## RPC SMB Footprinting
 
 [![footprinting](../../../cybersecurity/_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
 [![attacking_common_services](../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
 [![active_directory_enumeration_attacks](../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+<div class="row row-cols-lg-2"><div>
 
 If `msrpc` is running <small>(often on port 135)</small>, we may be able to exploit it:
 
@@ -45,6 +43,9 @@ client> queryuser <hexid>
 client> querygroup <hexid>
 ```
 
+👻 Refer to this [cheatsheet from SANS](https://www.willhackforsushi.com/sec504/SMB-Access-from-Linux.pdf).
+</div><div>
+
 We can also use [samrdump](tools/impacket.md#samrdump) to list users. If no users are found, we may still be able to find users by brute forcing hexadecimal IDs.
 
 ```ps
@@ -57,8 +58,7 @@ $ enum4linux-ng IP -R # find more users!
 $ enum4linux-ng IP -R 64 # 64 per rpcclient call, faster
 ```
 
-👻 Refer to this [cheatsheet from SANS](https://www.willhackforsushi.com/sec504/SMB-Access-from-Linux.pdf).
-</div><div>
+See also: [ridenum](https://github.com/trustedsec/ridenum) <small>(0.2k ⭐, 2020 🪦)</small>.
 </div></div>
 
 

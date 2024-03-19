@@ -39,3 +39,15 @@ We can try to send fake LLMNR or NBT-NS requests, and if an host respond, then i
 We must ensure that both stay disabled, such as by monitoring `HKLM\Software\Policies\Microsoft\Windows NT\DNSClient`.
 </div><div>
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* ... mDNS
+</div><div>
+</div></div>
