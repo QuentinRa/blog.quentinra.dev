@@ -1,5 +1,7 @@
 # Find Internal User Accounts
 
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
 <div class="row row-cols-lg-2"><div>
 
 From a host inside an internal environment, we often want to discover new accounts we could pivot to.

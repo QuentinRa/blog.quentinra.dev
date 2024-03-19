@@ -13,6 +13,7 @@
 </div><div>
 
 * 🏄‍♂️ Install the least ISS modules
+* 🛡️ Use a strong password policy
 
 </div></div>
 
@@ -91,6 +92,22 @@ PS> $key = Get-BootKey -SystemHiveFilePath '.\system.hive'
 PS> Get-ADDBAccount -All -DatabasePath .\ntds.dit -BootKey $key
 ```
 </div><div>
+
+#### Active Directory Enumeration
+
+[![attacking_common_applications](../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+
+To find hosts, refer to [Passive Internal Network Discovery](/cybersecurity/red-team/s1.investigation/techniques/passive_network_discovery.md).
+
+To find usernames/hashes/hosts, refer to [LLMNR/NBT-NS Poisoning](/cybersecurity/red-team/s2.discovery/techniques/network/poisoning.md).
+
+To find usernames, refer to [Find Internal User Accounts](/cybersecurity/red-team/s2.discovery/techniques/internal/find_usernames.md).
+
+To find the password policy, refer to [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md).
+
+To find passwords, refer to [Password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md).
+
+📚 We often find the Domain Controller IP and use it as the target of every other request, such as SMB requests, etc.
 </div></div>
 
 <hr class="sep-both">
@@ -101,16 +118,12 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* BloodHound (map AD environment, identify attack paths/priv. esc.)
-* Strong password policy
 * prevent access to dangerous websites
 * [adPEAS](https://github.com/61106960/adPEAS) (0.4k ⭐)
 * [UltimateAppLockerByPassList](https://github.com/api0cradle/UltimateAppLockerByPassList) (1.5k ⭐)
 * [Active Directory Exploitation Cheat Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet) (3.4k ⭐)
 * [AD mindmap orange](https://orange-cyberdefense.github.io/ocd-mindmaps/)
-* [kerbrute](https://github.com/ropnop/kerbrute)
-* [DPAT](https://github.com/clr2of8/DPAT)/[NtdsAudit](https://github.com/dionach/NtdsAudit)
-* [kerbrute](https://github.com/ropnop/kerbrute)
+* [DPAT](https://github.com/clr2of8/DPAT)
 </div><div>
 
 * Hardening AD ([ref](https://blog.netwrix.fr/2019/05/06/securiser-votre-annuaire-ad-contre-les-attaques-de-malware/))

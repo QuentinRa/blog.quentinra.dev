@@ -28,11 +28,12 @@ cn=John Doe,ou=Users,dc=example,dc=com
 
 ## LDAP Pentester Notes ☠️
 
-[![attacking_common_applications](../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
-
 <div class="row row-cols-lg-2"><div>
 
 #### ldapsearch command
+
+[![attacking_common_applications](../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+[![active_directory_enumeration_attacks](../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 
 You can use [ldapsearch](https://linux.die.net/man/1/ldapsearch) to find database entries.
 
@@ -55,6 +56,8 @@ About LDAP syntax:
 </div><div>
 
 #### windapsearch command
+
+[![active_directory_enumeration_attacks](../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 
 You can use the [windapsearch.py](https://github.com/ropnop/windapsearch) <small>(0.7k ⭐, 2020 🪦)</small> script or the [go](https://github.com/ropnop/go-windapsearch) <small>(0.3k ⭐, 2021 🪦)</small> binary. They make it easier to craft LDAP requests.
 
