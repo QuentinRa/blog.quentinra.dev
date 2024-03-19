@@ -444,6 +444,11 @@ Random
 * Test cracked credentials on any user
 </div><div>
 
+XXX
+
+* If AppLocker is in use, try alternative paths or alternative executables such as `PowerShell_ISE.exe` for powershell
+* Powershell downgrade attack (`powershell.exe -version 2 ; Get-host`) if multiple versions are present. Powershell V2 doesn't support event logging.
+
 Exploiting Services
 
 * [MySQL user-defined functions](https://redteamnation.com/mysql-user-defined-functions/)

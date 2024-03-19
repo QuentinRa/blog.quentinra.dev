@@ -62,7 +62,14 @@ About LDAP syntax:
 You can use the [windapsearch.py](https://github.com/ropnop/windapsearch) <small>(0.7k ⭐, 2020 🪦)</small> script or the [go](https://github.com/ropnop/go-windapsearch) <small>(0.3k ⭐, 2021 🪦)</small> binary. They make it easier to craft LDAP requests.
 
 ```ps
-$ python windapsearch.py --dc-ip IP -u "" -U
+$ python3 windapsearch.py --dc-ip IP -u "" -U
+$ python3 windapsearch.py --dc-ip IP -u xxx@example.com -p xxx [...]
+```
+```ps
+-PU             # user with elevated privs
+-G              # groups
+--da            # domain admins
+--members xxx   # members of group 'xxx'
 ```
 
 <br>

@@ -78,6 +78,8 @@ A SID is a concatenation of a domain identifier and a relative identifier (RID).
 PS> whoami /user
 PS> wmic useraccount get name,sid
 ```
+
+For a domain user, the SID is `<domain SID>-<rid>`. The administrator RID is usually `500`/`0x1f4`.
 </div><div>
 
 #### Access Control

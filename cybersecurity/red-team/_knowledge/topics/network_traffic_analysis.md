@@ -26,6 +26,8 @@ Common applications are:
 * [termshark](/operating-systems/networking/commands/index.md#command-termshark) <small>(TUI)</small>
 * [tshark](/operating-systems/networking/commands/index.md#command-tshark) <small>(CLI)</small>
 * [tcpdump](/operating-systems/networking/commands/index.md#command-tcpdump) <small>(CLI)</small>
+* [netminer](https://www.netminer.com/en/product/netminer.php) <small>(paid 💵)</small>
+* [pktmon](https://learn.microsoft.com/en-us/windows-server/networking/technologies/pktmon/pktmon) <small>(CLI)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -38,5 +40,6 @@ Stuff that I found, but never read/used yet.
 
 * Port scanning: look for packets matching the scan (ex: SYN=1;ACK=0)
 * `tshark -Y`, `tshark -r xxx.pcapng -T fields -e data.txt`
+* [net-creds](https://github.com/DanMcInerney/net-creds) <small>(1.6k ⭐, 2019 🪦)</small> from [creds.py](https://github.com/DanMcInerney/creds.py) <small>(0.2k ⭐, 2015 🪦)</small>
 </div><div>
 </div></div>

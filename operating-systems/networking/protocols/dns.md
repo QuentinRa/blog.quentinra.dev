@@ -301,6 +301,7 @@ Stuff that I found, but never read/used yet.
 * Forwarding/Relay Server
 * 3 configs (local DNS, reverse DNS, zone file)
 * `c:\windows\system32\drivers\etc\hosts`
+* [dnsspoof](https://github.com/DanMcInerney/dnsspoof)
 </div><div>
 
 * Record Classes (Internet, Hesiod, Chaos)
