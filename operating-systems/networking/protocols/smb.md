@@ -173,13 +173,14 @@ msf6> use auxiliary/scanner/smb/smb_login
 [![adventofcyber2](../../../cybersecurity/_badges/thm/adventofcyber2/day10.svg)](https://tryhackme.com/room/adventofcyber2)
 [![ccpentesting](../../../cybersecurity/_badges/thm-p/ccpentesting.svg)](https://tryhackme.com/room/ccpentesting)
 
-* You can use [crackmapexec](/cybersecurity/red-team/tools/cracking/auth/cme.md)/[nxc](/cybersecurity/red-team/tools/cracking/auth/nxc.md) to list shares+accesses, and automatically fetch some basic information about the host.
+* We can use [crackmapexec](/cybersecurity/red-team/tools/cracking/auth/cme.md)/[nxc](/cybersecurity/red-team/tools/cracking/auth/nxc.md) to list shares+accesses, and automatically fetch information about the host/network.
 
 ```ps
-$ crackmapexec smb IP --shares -u 'username' -p 'password'
+$ crackmapexec smb IP -u 'username' -p 'password' --shares
+$ crackmapexec smb [...] # many more options
 ```
 
-* You can use [smbmap](https://github.com/ShawnDEvans/smbmap) <small>(1.7k ⭐)</small> to list users/shares+access/files/...
+* We can use [smbmap](https://github.com/ShawnDEvans/smbmap) <small>(1.7k ⭐)</small> to list users/shares+access/files/...
 
 ```ps
 $ smbmap -H IP
@@ -187,7 +188,7 @@ $ smbmap -H IP -u 'username' -p 'password'
 $ smbmap [...] -x 'command' -d 'domain' -s 'share'
 ```
 
-* You can use [enum4linux](https://github.com/CiscoCXSecurity/enum4linux) <small>(1.0k ⭐)</small> or [enum4linux-ng](https://github.com/cddmp/enum4linux-ng) <small>(1.0k ⭐)</small> to list shares, devices, users, along basic information about the host.
+* We can use [enum4linux](https://github.com/CiscoCXSecurity/enum4linux) <small>(1.0k ⭐)</small> or [enum4linux-ng](https://github.com/cddmp/enum4linux-ng) <small>(1.0k ⭐)</small> to list shares, devices, users, along basic information about the host.
 
 ```shell!
 $ sudo apt-get install enum4linux-ng

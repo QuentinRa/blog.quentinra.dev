@@ -19,3 +19,21 @@ On Windows Server, there is no lockout by default, but many implement a lockout 
 
 Knowing the minimum length of the password and the password rules is handy to fine-tune the passwords we try.
 </div></div>
+
+<hr class="sep-both">
+
+## Obtain Windows Password Policy
+
+<div class="row row-cols-lg-2"><div>
+
+#### Leveraging SMB
+
+You can use [SMB](/operating-systems/networking/protocols/smb.md) credentials to obtain the password policy.
+
+```ps
+$ nxc smb [...] --pass-pol
+$ nxc smb [...] --users # show 'badpasswordcount' for each user
+$ enum4linux-ng [...] -P
+```
+</div><div>
+</div></div>
