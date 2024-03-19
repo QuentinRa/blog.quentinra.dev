@@ -3,6 +3,7 @@
 [![passiverecon](../../../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
 [![footprinting](../../../_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
 [![web_information_gathering](../../../_badges/htb/web_information_gathering.svg)](https://academy.hackthebox.com/course/preview/information-gathering---web-edition)
+[![active_directory_enumeration_attacks](../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -47,6 +48,8 @@ You can find social engineering information using:
 
 Find which IP ranges are owned by a company:
 
+* [arin](https://www.arin.net/resources/) (US) and [ripe](https://www.ripe.net/) (EU)
+* [BGP Toolkit](https://bgp.he.net/)
 * [netcraft](https://sitereport.netcraft.com/)
 
 <br>

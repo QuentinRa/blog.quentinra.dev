@@ -225,6 +225,8 @@ PS> Import-Module .\SessionGopher.ps1
 
 You can use [MailSniper](https://github.com/dafthack/MailSniper) <small>(2.8k ⭐, 2022 🪦)</small> for automated scans of sensitive information in a Microsoft Exchange environment.
 
+You can use [truffleHog](https://github.com/trufflesecurity/truffleHog) <small>(13.7k ⭐, 2022 🪦)</small> for GIT repositories.
+
 #### Linux CredHunting Notes
 
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
