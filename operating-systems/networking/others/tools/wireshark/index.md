@@ -3,6 +3,7 @@
 [![intro_to_network_traffic_analysis](../../../../../cybersecurity/_badges/htb/intro_to_network_traffic_analysis.svg)](https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis)
 [![wireshark](../../../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
 [![startup](../../../../../cybersecurity/_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
+[![chrome](../../../../../cybersecurity/_badges/thm-p/chrome.svg)](https://tryhackme.com/room/chrome)
 [![cap](../../../../../cybersecurity/_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
 [![ftp_authentication](../../../../../cybersecurity/_badges/rootme/network/ftp_authentication.svg)](https://www.root-me.org/en/Challenges/Network/FTP-authentication)
 [![telnet_authentication](../../../../../cybersecurity/_badges/rootme/network/telnet_authentication.svg)](https://www.root-me.org/en/Challenges/Network/TELNET-authentication)
@@ -114,10 +115,6 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-Right-click on a packet > Follow TCP Stream, and you will see in a human-readable way the data exchanged.
-
 * [wireshark](https://unit42.paloaltonetworks.com/wireshark-workshop-videos/)
-* Port scanning: look for packets matching the scan (ex: SYN=1;ACK=0)
-* `tshark -Y`, `tshark -r xxx.pcapng -T fields -e data.txt`
 </div><div>
 </div></div>
