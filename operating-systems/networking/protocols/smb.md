@@ -138,9 +138,10 @@ $ nmap -p 139,445 --script "*smb*" IP
 
 [![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![attacking_common_services](../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
+[![active_directory_enumeration_attacks](../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![kenobi](../../../cybersecurity/_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
 
-* Try `Anonymous` user with no password <small>(`-N` or `-no-pass`, a.k.a. no session)</small>
+* Try `Anonymous` user with no password <small>(`-N` or `-no-pass`, a.k.a. null session)</small>
 
 ```ps
 # list shares
@@ -170,6 +171,7 @@ msf6> use auxiliary/scanner/smb/smb_login
 
 #### Exploitation
 
+[![active_directory_enumeration_attacks](../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![adventofcyber2](../../../cybersecurity/_badges/thm/adventofcyber2/day10.svg)](https://tryhackme.com/room/adventofcyber2)
 [![ccpentesting](../../../cybersecurity/_badges/thm-p/ccpentesting.svg)](https://tryhackme.com/room/ccpentesting)
 

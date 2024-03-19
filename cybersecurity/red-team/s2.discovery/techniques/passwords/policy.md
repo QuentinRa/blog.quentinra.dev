@@ -28,12 +28,27 @@ Knowing the minimum length of the password and the password rules is handy to fi
 
 #### Leveraging SMB
 
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
 You can use [SMB](/operating-systems/networking/protocols/smb.md) credentials to obtain the password policy.
 
 ```ps
 $ nxc smb [...] --pass-pol
 $ nxc smb [...] --users # show 'badpasswordcount' for each user
+```
+```shell!
 $ enum4linux-ng [...] -P
+```
+
+#### Leveraging RPC
+
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+You can use [RPC](/operating-systems/networking/protocols/rpc.md#rpc-smb-footprinting) credentials to obtain the password policy.
+
+```shell!
+$ rpcclient [...]
+client> getdompwinfo    # Password Policy
 ```
 </div><div>
 </div></div>
