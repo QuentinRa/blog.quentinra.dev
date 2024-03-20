@@ -108,7 +108,7 @@ PS> dsquery computer
 PS> dsquery * "CN=Users,DC=example,DC=com"
 PS> dsquery * -filter "..."
 PS> dsquery * -filter "..." -attr [...]
-PS> dsquery * -filter "..." -attr [...] -limit 5
+PS> dsquery * -filter "..." -attr a b -limit 5
 PS> dsquery [...] | dsget user -desc
 ```
 

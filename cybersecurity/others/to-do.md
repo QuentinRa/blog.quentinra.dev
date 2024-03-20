@@ -260,8 +260,6 @@ https://tryhackme.com/room/retro (blaster...)
 
 </div><div>
 
-* BeautifulSoup (🔎) <small>(Web scrapping)</small>
-* Scrapy (🔎) <small>(Web scrapping)</small>
 * FMiner (🔎🏝) <small>(Web scrapping)</small>
 * Octoparse (🔎🏝) <small>(Web scrapping)</small>
 * ParseHub (🔎🏝) <small>(Web scrapping)</small>
@@ -310,7 +308,6 @@ https://tryhackme.com/room/retro (blaster...)
 * [red-team-scripts](https://github.com/threatexpress/red-team-scripts)
 * NetworkMiner
 * NetWitness
-* [MailSniper](https://github.com/dafthack/MailSniper)
 * [EXOCET](https://github.com/tanc7/EXOCET-AV-Evasion)
 * [HackBrowserData](https://github.com/moonD4rk/HackBrowserData)
 * [AutoRecon](https://github.com/Tib3rius/AutoRecon)
@@ -345,8 +342,7 @@ https://tryhackme.com/room/retro (blaster...)
 
 **Active directory** 🧸
 
-* [DomainPasswordSpray](https://github.com/dafthack/DomainPasswordSpray)
-* SharpHound
+* None
 
 **CMS**
 
@@ -354,7 +350,7 @@ https://tryhackme.com/room/retro (blaster...)
 
 **Defense**
 
-* ghidra (🛡️) <small>(reverse engineering)</small>
+* None
 </div></div>
 
 <hr class="sep-both">

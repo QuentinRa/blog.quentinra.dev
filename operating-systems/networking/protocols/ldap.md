@@ -17,12 +17,45 @@ It's commonly associated with [Active Directory](/operating-systems/cloud/active
 
 LDAP is derived from the X.500 standards. Messages exchanged between LDAP clients and servers are encoded using ASN.1.
 
-A simple unencoded LDAP message:
+A simple un-encoded LDAP message:
 
 ```text!
 cn=John Doe,ou=Users,dc=example,dc=com
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## LDAP Queries 🛣️
+
+<div class="row row-cols-lg-2"><div>
+
+LDAP is using parenthesis `(` and `)` to group expressions.
+
+```md!
+(objectClass=user)
+```
+
+The star (`*`) refers to "any" string.
+
+```md!
+(cn=*doe*)
+```
+
+We can use `&` and `|` for logical 'AND' and 'OR.'
+
+```md!
+(&(objectClass=user)(sAMAccountName=aaa))
+(|(sn=xxx)(sn=yyy))
+(&(objectCategory=person)(|(sn=xxx)(sn=yyy))(adminCount=1))
+```
+</div><div>
+
+We can use [Microsoft Active Directory OIDs](https://oidref.com/1.2.840.113556.1) (or [this ref](https://ldap.com/ldap-oid-reference-guide/)) for advanced filtering. For instance, `1.2.840.113556.1.4.803` allow us to filter objects with a specific [UserAccountControl bit enabled](https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/useraccountcontrol-manipulate-account-properties).
+
+📚 According to the documentation above: `(userAccountControl:1.2.840.113556.1.4.803:=32)` would match users with UAC and no password required <small>(PASSWD_NOTREQD bit)</small>.
+</div></div>
+
 
 <hr class="sep-both">
 
