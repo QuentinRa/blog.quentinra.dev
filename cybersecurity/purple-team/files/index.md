@@ -134,6 +134,7 @@ $ binwalk file.png
 # from xxx to yyy: PNG
 # from zzz to ttt: ZIP
 $ binwalk -e file.png
+$ binwalk -dd="*" file.png
 ```
 
 You can alternatively use `dd`:

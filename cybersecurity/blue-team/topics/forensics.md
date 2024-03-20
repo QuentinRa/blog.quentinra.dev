@@ -19,29 +19,17 @@ Forensics is the art of investigating crimes. Digital forensics is the same, but
 These categories further involve tasks such as:
 
 * **Malware Analysis** 🪲: investigate malware to find what they did, what they do, how they work, etc.
+
+Additional Notes:
+
+* [ForensicsTools](https://github.com/mesquidar/ForensicsTools) <small>(0.8k ⭐)</small>
 </div></div>
 
 <hr class="sep-both">
 
-## Forensics Tools
-
-*See also: [ForensicsTools](https://github.com/mesquidar/ForensicsTools) <small>(0.8k ⭐)</small>.*
+## Memory Forensics
 
 <div class="row row-cols-lg-2"><div>
-
-#### Disk Forensics Tools
-
-[![introduction_to_digital_forensics](../../_badges/htb/introduction_to_digital_forensics.svg)](https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics)
-[![introduction_to_malware_analysis](../../_badges/htb/introduction_to_malware_analysis.svg)](https://academy.hackthebox.com/course/preview/introduction-to-malware-analysis)
-
-You can create an image of a disk using:
-
-* [FTK Imager](https://www.exterro.com/digital-forensics-software/ftk-imager) <small>(popular)</small>
-* [OSFClone](https://www.osforensics.com/tools/create-disk-images.html)
-* [dd/dcfldd](/cybersecurity/red-team/s4.privesc/linux/topics/drives.md)
-* [AFF4 Imager](https://github.com/Velocidex/c-aff4)
-* ...
-</div><div>
 
 #### Memory Forensics Tools
 
@@ -60,14 +48,19 @@ To create a memory dump, you can use:
 * For VMWare, suspend the machine and locate the `.vmem`
 * ...
 
+#### Memory Forensics Dumps
+
+Windows Memory Dumps:
+
+* [MemLabs](https://github.com/stuxnet999/MemLabs)
+</div><div>
+
+#### Memory Dump Investigation
+
 You can investigate a memory dump using:
 
 * [Volatility](../tools/forensics/volatility.md) is a well-known memory forensic tool.
 * [rekall](https://github.com/google/rekall) <small>(1.9k ⭐, 2020 🪦)</small> is both archived and no longer maintained
-
-Additional resources:
-
-* [MemLabs](https://github.com/stuxnet999/MemLabs)
 </div></div>
 
 <hr class="sep-both">
@@ -75,6 +68,21 @@ Additional resources:
 ## Disk Forensics
 
 <div class="row row-cols-lg-2"><div>
+
+#### Disk Forensics Tools
+
+[![introduction_to_digital_forensics](../../_badges/htb/introduction_to_digital_forensics.svg)](https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics)
+[![introduction_to_malware_analysis](../../_badges/htb/introduction_to_malware_analysis.svg)](https://academy.hackthebox.com/course/preview/introduction-to-malware-analysis)
+
+You can create an image of a disk using:
+
+* [FTK Imager](https://www.exterro.com/digital-forensics-software/ftk-imager) <small>(popular)</small>
+* [OSFClone](https://www.osforensics.com/tools/create-disk-images.html)
+* [dd/dcfldd](/cybersecurity/red-team/s4.privesc/linux/topics/drives.md)
+* [AFF4 Imager](https://github.com/Velocidex/c-aff4)
+* ...
+
+<br>
 
 #### Investigate Deleted Files
 
@@ -108,9 +116,9 @@ debugfs> lsdel
 
 ```shell!
 $ testdisk data.bin
+$ photorec [...] # recover images using file carving
 ```
-
-<br>
+</div><div>
 
 #### Investigate A Disk Dump
 
@@ -125,7 +133,8 @@ $ cd /mnt/mydisk # do what you want
 $ sudo umount /mnt/mydisk
 $ sudo losetup -d /dev/loop0
 ```
-</div><div>
+
+<br>
 
 #### Investigate A Virtual Machine Dump
 

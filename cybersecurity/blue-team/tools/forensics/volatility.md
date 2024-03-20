@@ -8,14 +8,14 @@
 
 Volatility is a popular free [memory forensics tool](/cybersecurity/blue-team/topics/forensics.md). There is a deprecated [python2](https://github.com/volatilityfoundation/volatility) version <small>(6.8k ⭐, 2020 🪦)</small>, and there is a [python3](https://github.com/volatilityfoundation/volatility3) version <small>(2.1k ⭐, in-development)</small>.
 
-<span class="small">*This method contains a few extra lines due to 'incorrect' `volatility3/setup.py`:*</span>
+<span class="small">*This method contains a few extra lines due to 'weird' `volatility3/setup.py`:*</span>
 
 ```ps
 $ pipx install git+https://github.com/volatilityfoundation/volatility3
-$ # patch - setup.py using minimal requirements - start
+$ # patch to make all plugins work
 $ wget https://raw.githubusercontent.com/volatilityfoundation/volatility3/develop/requirements.txt -O /tmp/volatility3_requirements.txt
 $ pipx runpip volatility3 install -r /tmp/volatility3_requirements.txt
-$ # patch - end
+$ # end
 $ vol -h
 ```
 </div><div>
