@@ -1,4 +1,4 @@
-# Identification
+# Windows Environment Mapping
 
 [![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
@@ -6,7 +6,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-**Users**
+#### Windows Users-Related Functions
 
 * `whoami`: username
 * `whoami /groups`: current user groups
@@ -18,7 +18,9 @@
 * `net localgroup administrators`: list local administrators
 * `qwinsta`: currently logged users
 
-**Security**
+<br>
+
+#### Windows Security-Related Functions
 
 * `Get-MpComputerStatus`: Windows defender status
 * `sc query windefend`: Windows defender status
@@ -51,9 +53,10 @@ Lockout duration (minutes):                           30
 Lockout observation window (minutes):                 30
 Computer role:                                        SERVER
 ```
-</div><div>
 
-**Machine**
+<br>
+
+#### Windows Machine-Related Functions
 
 * `ver` <small>(cmd-only)</small>: see Windows version
 * `[environment]::OSVersion.Version` <small>(powershell)</small>: see Windows version
@@ -67,8 +70,9 @@ Computer role:                                        SERVER
 * `tasklist /svc`: list running processes
 * `query user`: list logged users
 * Refer to [wmic](/operating-systems/windows/_knowledge/index.md#wmic) commands.
+</div><div>
 
-**Active Directory**
+#### Windows Active Directory-Related Functions
 
 Enumeration
 
@@ -87,12 +91,35 @@ Utilities
 We may be able to use the [active directory module](https://learn.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2022-ps).
 
 ```ps
-Import-Module ActiveDirectory
-Get-ADDomain                                     # List domain information
-Get-ADUser -Filter {ServicePrincipalName -ne "$null"} -Properties ServicePrincipalName
-Get-ADTrust -Filter *                            # List Domain Trusts
-Get-ADGroup -Filter * | select name              # List groups
-Get-ADGroup -Identity "Backup Operators"         # Group Details
-Get-ADGroupMember -Identity "Backup Operators"   # Group Members
+PS> Import-Module ActiveDirectory
+PS> Get-ADDomain                                     # List domain information
+PS> Get-ADUser -Filter {ServicePrincipalName -ne "$null"} -Properties ServicePrincipalName
+PS> Get-ADTrust -Filter *                            # List Domain Trusts
+PS> Get-ADGroup -Filter * | select name              # List groups
+PS> Get-ADGroup -Identity "Backup Operators"         # Group Details
+PS> Get-ADGroupMember -Identity "Backup Operators"   # Group Members
+```
+
+The tool [dsquery](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732952(v=ws.11)) may be available. It must be run in an elevated prompt. Refer to [LDAP Filters](/operating-systems/networking/protocols/ldap.md) to find specific accounts.
+
+```ps
+PS> dsquery user
+PS> dsquery computer
+PS> dsquery * "CN=Users,DC=example,DC=com"
+PS> dsquery * -filter "..."
+PS> dsquery * -filter "..." -attr [...]
+PS> dsquery * -filter "..." -attr [...] -limit 5
+PS> dsquery [...] | dsget user -desc
+```
+
+You can use [PowerView](https://github.com/PowerShellMafia/PowerSploit/tree/master/Recon) or [SharpView]():
+
+```ps
+PS> Get-DomainUser -Identity username -Domain example.com
+PS> Get-DomainGroupMember -Identity "Domain Admins" -Recurse
+PS> Get-DomainTrustMapping
+PS> Test-AdminAccess -ComputerName TARGET_HOST
+PS> Get-DomainUser -SPN -Properties samaccountname,ServicePrincipalName
+PS> .\SharpView.exe Get-DomainUser -Identity username
 ```
 </div></div>

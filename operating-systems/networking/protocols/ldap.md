@@ -93,5 +93,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * On Legacy systems, anyone can initiate LDAP requests. It seems to be called LDAP null bind.
+* `CN=Users,DC=INLANEFREIGHT,DC=LOCAL`
 </div><div>
 </div></div>
