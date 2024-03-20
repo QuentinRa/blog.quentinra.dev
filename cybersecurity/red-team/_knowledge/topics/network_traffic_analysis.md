@@ -44,7 +44,7 @@ Common applications are:
 
 ```shell!
 $ wget "https://raw.githubusercontent.com/DanMcInerney/net-creds/master/net-creds.py"
-$ wget "https://raw.githubusercontent.com/cybersecurity/red-team/_knowledge/topics/_files/py3_and_fixes.patch"
+$ wget "https://raw.githubusercontent.com//quentinra/blog.quentinra.dev/cybersecurity/red-team/_knowledge/topics/_files/py3_and_fixes.patch"
 $ patch -u < py3_and_fixes.patch
 $ python3 net-creds.py -p xxx.pcap
 ```
@@ -75,6 +75,5 @@ Stuff that I found, but never read/used yet.
 
 * Port scanning: look for packets matching the scan (ex: SYN=1;ACK=0)
 * `tshark -Y`, `tshark -r xxx.pcapng -T fields -e data.txt`
-* [net-creds](https://github.com/DanMcInerney/net-creds) <small>(1.6k ⭐, 2019 🪦)</small> from [creds.py](https://github.com/DanMcInerney/creds.py) <small>(0.2k ⭐, 2015 🪦)</small>
 </div><div>
 </div></div>
