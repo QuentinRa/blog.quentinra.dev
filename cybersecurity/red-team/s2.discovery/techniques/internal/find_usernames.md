@@ -20,18 +20,6 @@ We can use [kerbrute](/cybersecurity/red-team/tools/utilities/windows/kerbrute.m
 ```ps
 $ kerbrute userenum -d domain --dc IP wordlist
 ```
-</div></div>
 
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-lg-2"><div>
-
-```ps
-PS> net user /domain
-```
-</div><div>
+On a Windows host inside an AD network, refer to [identification](/cybersecurity/red-team/s4.privesc/windows/utils/id.md).
 </div></div>

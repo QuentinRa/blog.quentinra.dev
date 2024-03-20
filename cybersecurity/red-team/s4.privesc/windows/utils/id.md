@@ -83,4 +83,16 @@ Utilities
 * `%logonserver%`: domain controller name
 * `%USERDOMAIN%`: host domain name
 * `wmic ntdomain`: domain and domain controller information
+
+We may be able to use the [active directory module](https://learn.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2022-ps).
+
+```ps
+Import-Module ActiveDirectory
+Get-ADDomain                                     # List domain information
+Get-ADUser -Filter {ServicePrincipalName -ne "$null"} -Properties ServicePrincipalName
+Get-ADTrust -Filter *                            # List Domain Trusts
+Get-ADGroup -Filter * | select name              # List groups
+Get-ADGroup -Identity "Backup Operators"         # Group Details
+Get-ADGroupMember -Identity "Backup Operators"   # Group Members
+```
 </div></div>

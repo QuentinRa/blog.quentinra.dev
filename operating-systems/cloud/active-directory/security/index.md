@@ -107,6 +107,8 @@ To find usernames+hashes, refer to [Find Internal User Accounts](/cybersecurity/
 
 To find the password policy, refer to [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md).
 
+On a Windows host inside an AD network, refer to [identification](/cybersecurity/red-team/s4.privesc/windows/utils/id.md) to find usernames the "normal" way.
+
 To find passwords, refer to [Password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md).
 
 📚 We often find the Domain Controller IP and use it as the target of every other request, such as SMB requests, etc.

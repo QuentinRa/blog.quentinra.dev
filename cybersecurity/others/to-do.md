@@ -221,7 +221,7 @@ https://tryhackme.com/room/retro (blaster...)
 * **Retina** (🔎🔑✈️) <small>(vulnerability scanner)</small>
 * Nipper (🔎) <small>(network devices scanner)</small>
 * **Nettacker** (🏝💥) <small>(port scanning, vulnerability scanning)</small>
-* **Empire** (✈️) <small>(post-exploitation framework)</small>
+* **Empire** (✈️) <small>(post-exploitation framework)</small> [N](https://github.com/BC-SECURITY/Empire/)/[O](https://github.com/EmpireProject/Empire)
 * [DSSS](https://github.com/stamparm/DSSS) (🏝💥) <small>(SQL vulnerability scanner)</small>
 * [**Beef**](https://github.com/beefproject/beef) (💥✈️🛡️) <small>(7.8k ⭐, client-side vulnerability scanner)</small>
 * host (🔎🏝) <small>(DNS lookup)</small>
