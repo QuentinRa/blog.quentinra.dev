@@ -18,6 +18,8 @@ Network Traffic Analysis may involve capture traffic and investigating it to fin
 * ...
 
 We may not have a GUI and have to use a TUI or CLI applications.
+
+You may use `tshark -r xxx.pcap -w yyy.pcap -F libpcap` to convert a libpcap file to a standard file if Python tools complain.
 </div><div>
 
 Common applications are:
@@ -28,6 +30,39 @@ Common applications are:
 * [tcpdump](/operating-systems/networking/commands/index.md#command-tcpdump) <small>(CLI)</small>
 * [netminer](https://www.netminer.com/en/product/netminer.php) <small>(paid 💵)</small>
 * [pktmon](https://learn.microsoft.com/en-us/windows-server/networking/technologies/pktmon/pktmon) <small>(CLI)</small>
+</div></div>
+
+<hr class="sep-both">
+
+## Additional Uncommon Tools
+
+<div class="row row-cols-lg-2"><div>
+
+#### net-creds — Simple Packet Sniffer
+
+[net-creds](https://github.com/DanMcInerney/net-creds) <small>(1.6k ⭐, 2019 🪦)</small> is a network packet sniffer which superseded [creds.py](https://github.com/DanMcInerney/creds.py) <small>(0.2k ⭐, 2015 🪦)</small>. It's written in Python2.
+
+```shell!
+$ wget "https://raw.githubusercontent.com/DanMcInerney/net-creds/master/net-creds.py"
+$ wget "https://raw.githubusercontent.com/cybersecurity/red-team/_knowledge/topics/_files/py3_and_fixes.patch"
+$ patch -u < py3_and_fixes.patch
+$ python3 net-creds.py -p xxx.pcap
+```
+</div><div>
+
+#### apackets — Online Packet Analysis
+
+Refer to [apackets](https://apackets.com/upload). All free analysis are public.
+
+<br>
+
+#### tcpflow — Dump TCP Flows
+
+You can use [tcpflow](https://github.com/simsong/tcpflow) <small>(1.6k ⭐)</small>, which is similar to wireshark 'Follow TCP Streams,' to dump TCP Streams.
+
+```shell!
+$ tcpflow -r xxx.pcap -C0
+```
 </div></div>
 
 <hr class="sep-both">

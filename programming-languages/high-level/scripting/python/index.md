@@ -652,6 +652,19 @@ for s,r in r:
     print(r.sprintf(r"%Ether.src% - %ARP.psrc%"))
 ```
 
+```py
+import scapy.packet
+import scapy.utils
+import sys
+
+packets = scapy.utils.rdpcap(sys.argv[1])
+for packet in packets:
+    text = ''
+    if packet.haslayer(scapy.packet.Raw):
+        text = packet[scapy.packet.Raw].load.decode('utf-8', 'ignore').strip()
+        print(text)
+```
+
 #### socket - networking
 
 `socket` is a low-level networking library.

@@ -1,0 +1,184 @@
+--- net-creds.py	2024-03-20 14:57:32.374001100 +0100
++++ net-creds3.py	2024-03-20 15:02:53.286314100 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python2
++#!/usr/bin/env python3
+
+ from os import geteuid, devnull
+ import logging
+@@ -12,13 +12,13 @@
+ import argparse
+ import signal
+ import base64
+-from urllib import unquote
++from urllib.parse import unquote
+ import platform
+ from subprocess import Popen, PIPE, check_output
+ from collections import OrderedDict
+-from BaseHTTPServer import BaseHTTPRequestHandler
+-from StringIO import StringIO
+-from urllib import unquote
++from http.server import BaseHTTPRequestHandler
++from io import StringIO
++from urllib.parse import unquote
+ #import binascii    #already imported on line 10
+ # Debug
+ #from IPython import embed
+@@ -35,7 +35,7 @@
+ #     Laurent Gaffie
+ #     psychomario
+
+-logging.basicConfig(filename='credentials.txt',level=logging.INFO)
++logging.basicConfig(level=logging.INFO, format='%(message)s')
+ DN = open(devnull, 'w')
+ pkt_frag_loads = OrderedDict()
+ challenge_acks = OrderedDict()
+@@ -63,10 +63,8 @@
+
+ def parse_args():
+    """Create the arguments"""
+-   parser = argparse.ArgumentParser()
+-   parser.add_argument("-i", "--interface", help="Choose an interface")
+-   parser.add_argument("-p", "--pcap", help="Parse info from a pcap file; -p <pcapfilename>")
+-   parser.add_argument("-f", "--filterip", help="Do not sniff packets from this IP address; -f 192.168.0.4")
++   parser = argparse.ArgumentParser(add_help=True)
++   parser.add_argument("-p", "--pcap", help="Parse info from a pcap file; -p <pcapfilename>", required=True)
+    parser.add_argument("-v", "--verbose", help="Display entire URLs and POST loads rather than truncating at 100 characters", action="store_true")
+    return parser.parse_args()
+
+@@ -75,7 +73,7 @@
+     if system_platform == 'Linux':
+         ipr = Popen(['/sbin/ip', 'route'], stdout=PIPE, stderr=DN)
+         for line in ipr.communicate()[0].splitlines():
+-            if 'default' in line:
++            if b'default' in line:
+                 l = line.split()
+                 iface = l[4]
+                 return iface
+@@ -138,6 +136,7 @@
+
+     if pkt.haslayer(Raw):
+         load = pkt[Raw].load
++        load = load.decode('utf-8','replace')
+
+     # Get rid of Ethernet pkts with just a raw load cuz these are usually network controls like flow control
+     if pkt.haslayer(Ether) and pkt.haslayer(Raw) and not pkt.haslayer(IP) and not pkt.haslayer(IPv6):
+@@ -210,8 +209,8 @@
+         # Do a utf decode in case the client sends telnet options before their username
+         # No one would care to see that
+         try:
+-            telnet_stream[src_ip_port] += load.decode('utf8')
+-        except UnicodeDecodeError:
++            telnet_stream[src_ip_port] += load
++        except UnicodeDecodeError as e:
+             pass
+
+         # \r or \r\n or \n terminate commands in telnet if my pcaps are to be believed
+@@ -349,9 +348,9 @@
+     return d
+
+ def double_line_checker(full_load, count_str):
+-    '''
++    """
+     Check if count_str shows up twice
+-    '''
++    """
+     num = full_load.lower().count(count_str)
+     if num > 1:
+         lines = full_load.count('\r\n')
+@@ -360,9 +359,9 @@
+     return full_load
+
+ def parse_ftp(full_load, dst_ip_port):
+-    '''
++    """
+     Parse out FTP creds
+-    '''
++    """
+     print_strs = []
+
+     # Sometimes FTP packets double up on the authentication lines
+@@ -687,11 +686,11 @@
+             header_val = headers[authorization_header.group()]
+         except KeyError:
+             return
+-        b64_auth_re = re.match('basic (.+)', header_val, re.IGNORECASE)
++        b64_auth_re = re.match('[bB]asic (.+)', header_val, re.IGNORECASE)
+         if b64_auth_re != None:
+             basic_auth_b64 = b64_auth_re.group(1)
+             try:
+-                basic_auth_creds = base64.decodestring(basic_auth_b64)
++                basic_auth_creds = base64.b64decode(basic_auth_b64).decode()
+             except Exception:
+                 return
+             msg = 'Basic Authentication: %s' % basic_auth_creds
+@@ -935,31 +934,13 @@
+         return (user, passwd)
+
+ def printer(src_ip_port, dst_ip_port, msg):
++    # All credentials will have dst_ip_port, URLs will not
+     if dst_ip_port != None:
+         print_str = '[%s > %s] %s%s%s' % (src_ip_port, dst_ip_port, T, msg, W)
+-        # All credentials will have dst_ip_port, URLs will not
+-
+-        # Prevent identical outputs unless it's an HTTP search or POST load
+-        skip = ['Searched ', 'POST load:']
+-        for s in skip:
+-            if s not in msg:
+-                if os.path.isfile('credentials.txt'):
+-                    with open('credentials.txt', 'r') as log:
+-                        contents = log.read()
+-                        if msg in contents:
+-                            return
+-
+-        print print_str
+-
+-        # Escape colors like whatweb has
+-        ansi_escape = re.compile(r'\x1b[^m]*m')
+-        print_str = ansi_escape.sub('', print_str)
+-
+-        # Log the creds
+-        logging.info(print_str)
++        print(print_str)
+     else:
+         print_str = '[%s] %s' % (src_ip_port.split(':')[0], msg)
+-        print print_str
++        print(print_str)
+
+ def main(args):
+     ##################### DEBUG ##########################
+@@ -974,29 +955,11 @@
+     ######################################################
+
+     # Read packets from either pcap or interface
+-    if args.pcap:
+-        try:
+-            for pkt in PcapReader(args.pcap):
+-                pkt_parser(pkt)
+-        except IOError:
+-            exit('[-] Could not open %s' % args.pcap)
+-
+-    else:
+-        # Check for root
+-        if geteuid():
+-            exit('[-] Please run as root')
+-
+-        #Find the active interface
+-        if args.interface:
+-            conf.iface = args.interface
+-        else:
+-            conf.iface = iface_finder()
+-        print '[*] Using interface:', conf.iface
+-
+-        if args.filterip:
+-            sniff(iface=conf.iface, prn=pkt_parser, filter="not host %s" % args.filterip, store=0)
+-        else:
+-            sniff(iface=conf.iface, prn=pkt_parser, store=0)
++    try:
++        for pkt in PcapReader(args.pcap):
++            pkt_parser(pkt)
++    except IOError:
++        exit('[-] Could not open %s' % args.pcap)
+
+
+ if __name__ == "__main__":
