@@ -54,7 +54,7 @@ $ c=""; for i in $(seq 500 1000);do c="${c}queryuser 0x$(printf '%x\n' $i);"; do
 ```
 
 ```shell!
-$ enum4linux-ng IP -R # find more users!
+$ enum4linux-ng IP -R # find more users than the for above!
 $ enum4linux-ng IP -R 64 # 64 per rpcclient call, faster
 ```
 

@@ -123,5 +123,7 @@ PS> Get-DomainUser -SPN -Properties samaccountname,ServicePrincipalName
 PS> .\SharpView.exe Get-DomainUser -Identity username
 ```
 
+You can use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloodhound.md) to collect and analyze the data.
+
 Refer to [LAPS](/operating-systems/windows/security/index.md) to enumerate for accounts related to LAPS.
 </div></div>

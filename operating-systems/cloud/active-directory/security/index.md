@@ -111,6 +111,8 @@ On a Windows host inside an AD network, refer to [identification](/cybersecurity
 
 To find passwords, refer to [Password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md).
 
+You can use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloodhound.md) to collect and analyze information to find attack vectors and attack paths.
+
 📚 We often find the Domain Controller IP and use it as the target of every other request, such as SMB requests, etc.
 </div></div>
 
