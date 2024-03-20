@@ -31,6 +31,10 @@ $ vol -r pretty -f mdump.sav [...]
 **Changes with V2**:
 
  🗃️ Profiles from volatility 2 are now within the [plugins](https://volatility3.readthedocs.io/en/latest/volatility3.plugins.html) path. You will use `xxx.info` instead of `imageinfo` <small>(to learn about the operating system in use in the capture)</small> with `xxx` a value among `windows`, `linux`, or `mac`.
+
+```ps
+$ vol -f mdump.sav banners.Banners
+```
 </div></div>
 
 <hr class="sep-both">
@@ -121,5 +125,10 @@ Stuff that I found, but never read/used yet.
 * [THM/volatility](https://tryhackme.com/room/volatility)
 * [volatility-cheatsheet](https://blog.onfvp.com/post/volatility-cheatsheet/)
 * [aldeid wiki](https://www.aldeid.com/wiki/Volatility)
+* [volatility symbol table](https://volatility3.readthedocs.io/en/latest/symbol-tables.html) and [dwarf2json docker by 4nuit](https://4nuit.github.io/posts/cheatsheet/#profils-linux-vol3) and [JPCERTCC tables](https://github.com/JPCERTCC/Windows-Symbol-Tables)
+
+```ps
+$ vol -f mdump.sav linux.bash # Linux Bash History
+```
 </div><div>
 </div></div>

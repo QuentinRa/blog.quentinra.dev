@@ -1,5 +1,9 @@
 # Godot (pentesting)
 
+[![godot_0_protection](../../_badges/rootme/cracking/godot_0_protection.svg)](https://www.root-me.org/en/Challenges/Cracking/Godot-0-protection)
+[![godot_0_protection](../../_badges/rootme/cracking/godot_bytecode.svg)](https://www.root-me.org/en/Challenges/Cracking/Godot-Bytecode)
+[![godot_0_protection](../../_badges/rootme/cracking/godot_mono.svg)](https://www.root-me.org/en/Challenges/Cracking/Godot-Mono)
+
 <div class="row row-cols-lg-2"><div>
 
 [Godot](https://github.com/godotengine/godot) is an open-source game engine. It supports 2D and 3D, and can compile binaries to Windows, Linux, macOS, Android, etc.
@@ -18,4 +22,6 @@ $ unzip "GDRE_tools-v0.6.2-linux.zip"
 $ chmod +x gdre_tools.x86_64
 $ ./gdre_tools.x86_64
 ```
+
+Use `RE Tools > Recover Project` and select the files to recover.
 </div></div>

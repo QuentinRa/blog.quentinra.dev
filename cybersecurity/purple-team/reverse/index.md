@@ -89,6 +89,9 @@ Other well-known decompilers:
 [![ctfcollectionvol1](../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
 [![pe_dotnet_0_protection](../../_badges/rootme/cracking/pe_dotnet_0_protection.svg)](https://www.root-me.org/en/Challenges/Cracking/PE-DotNet-0-protection)
 [![pe_dotnet_basic_anti_debug](../../_badges/rootme/cracking/pe_dotnet_basic_anti_debug.svg)](https://www.root-me.org/en/Challenges/Cracking/PE-DotNet-Basic-Anti-Debug)
+[![godot_0_protection](../../_badges/rootme/cracking/godot_mono.svg)](https://www.root-me.org/en/Challenges/Cracking/Godot-Mono)
+
+You can work on reversing .NET executable and DLL files using the following tools...
 
 <div class="row row-cols-lg-2"><div>
 
@@ -112,7 +115,7 @@ You can use [dnSpy](https://github.com/dnSpy/dnSpy) <small>(25.2k ⭐, 2020 🪦
 
 [![adventofcyber2](../../_badges/thm/adventofcyber2/day18.svg)](https://tryhackme.com/room/adventofcyber2)
 
-You can use [JetBrains dotPeek](https://www.jetbrains.com/decompiler/) <small>(paid 💵)</small> to reverse your binary and explore the source code. Opening the file will automatically load the .NET solutions contained in the executable.
+You can use [JetBrains dotPeek](https://www.jetbrains.com/decompiler/) <small>(free 🐲)</small> on Windows to reverse your binary and explore the source code. Opening the file will automatically load the .NET solutions contained in the executable.
 </div><div>
 
 #### ILSpy - .NET Decompiler/Editor
