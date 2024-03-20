@@ -112,7 +112,7 @@ PS> dsquery * -filter "..." -attr a b -limit 5
 PS> dsquery [...] | dsget user -desc
 ```
 
-You can use [PowerView](https://github.com/PowerShellMafia/PowerSploit/tree/master/Recon) <small>(11.4k ⭐)</small> or [SharpView](https://github.com/tevora-threat/SharpView) <small>(0.9k ⭐)</small>:
+You can use [PowerView](/cybersecurity/red-team/tools/utilities/windows/powersploit.md) or [SharpView](/cybersecurity/red-team/tools/utilities/windows/powersploit.md):
 
 ```ps
 PS> Get-DomainUser -Identity username -Domain example.com
