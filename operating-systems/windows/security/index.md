@@ -347,6 +347,7 @@ PSIsContainer : False
 FileName      : XXX\toto.pdf
 Stream        : :$DATA
 Length        : 0
+PS> gci -recurse | % { gi $_.FullName -stream * } | where stream -ne ':$Data'
 ```
 
 They can be used by Windows to store data, such as identifiers telling Windows that this file was downloaded from the Internet.
