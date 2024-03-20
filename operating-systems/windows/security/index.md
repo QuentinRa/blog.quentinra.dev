@@ -302,6 +302,30 @@ $ pypykatz lsa minidump lsass.dmp
 
 <hr class="sep-both">
 
+## Windows Security Notes 🛡️
+
+<div class="row row-cols-lg-2"><div>
+
+#### Microsoft Local Administrator Password Solution (LAPS)
+
+[![active_directory_enumeration_attacks](../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+Microsoft Local Administrator Password Solution (LAPS) was designed to prevent lateral movement as often when the local administrator account password is reused <small>(mostly due to golden images)</small>.
+
+It manages local administrator passwords and rotates them.
+
+The [LAPSToolkit](https://github.com/leoloobeek/LAPSToolkit)  <small>(0.7k ⭐)</small> can detect which machines have LAPS installed and which machines don't. It can also detect which users can view the LAPS password for each machine.
+
+```ps
+PS> Find-LAPSDelegatedGroups
+PS> Find-AdmPwdExtendedRights
+PS> Get-LAPSComputers
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Random Notes
 
 <div class="row row-cols-lg-2"><div>
@@ -403,9 +427,7 @@ Stuff that I found, but never read/used yet.
 * device guard
 * Hiren's bootcd
 * [SASE](https://www.microsoft.com/en-us/security/business/security-101/what-is-sase)
-* [Introduction to Alternate Data Streams](https://www.malwarebytes.com/blog/news/2015/07/introduction-to-alternate-data-streams)
 * [Windows credential guard](https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-how-it-works)
-* [Local Administrator Password Solution (LAPS)](https://www.microsoft.com/en-us/download/details.aspx?id=46899): manage local administrator passwords, rotate them, AD?
 </div><div>
 
 * Windows Tilde Filenames (Refer to IIS)

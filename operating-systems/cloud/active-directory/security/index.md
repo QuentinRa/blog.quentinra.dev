@@ -97,7 +97,7 @@ You can use [NtdsAudit](https://github.com/dionach/NtdsAudit) <small>(0.4k ⭐)<
 
 #### Active Directory Enumeration
 
-[![attacking_common_applications](../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 
 To find hosts, refer to [Passive Internal Network Discovery](/cybersecurity/red-team/s1.investigation/techniques/passive_network_discovery.md).
 

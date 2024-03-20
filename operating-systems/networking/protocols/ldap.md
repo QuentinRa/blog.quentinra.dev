@@ -28,6 +28,9 @@ cn=John Doe,ou=Users,dc=example,dc=com
 
 ## LDAP Queries 🛣️
 
+[![attacking_common_applications](../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+[![active_directory_enumeration_attacks](../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
 <div class="row row-cols-lg-2"><div>
 
 LDAP is using parenthesis `(` and `)` to group expressions.
@@ -80,12 +83,6 @@ $ ldapsearch -h IP -x -b "dc=example,dc=com" -s sub "(&(objectclass=user))"
 * `-D`/`-w`: specify authentication data
 * `-x`: use basic authentication
 * `-b`: indicate the root of the search
-
-About LDAP syntax:
-
-* `*` refers to "any"
-* `()` is used to group an expression
-* `&` and `|` are respectively the logical 'AND' and 'OR'
 </div><div>
 
 #### windapsearch command

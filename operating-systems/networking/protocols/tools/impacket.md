@@ -121,6 +121,8 @@ Stuff that I found, but never read/used yet.
 
 ```shell!
 $ impacket-dpapi unprotect -file xxx -key "xxx"
+$ impacket-wmiexec domain/username:'password'@IP  # Local Admin but new process per command
+$ impacket-psexec domain/username:'password'@IP # SYSTEM so more suspicious
 ```
 </div><div>
 </div></div>

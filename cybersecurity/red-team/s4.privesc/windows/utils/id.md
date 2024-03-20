@@ -112,7 +112,7 @@ PS> dsquery * -filter "..." -attr a b -limit 5
 PS> dsquery [...] | dsget user -desc
 ```
 
-You can use [PowerView](https://github.com/PowerShellMafia/PowerSploit/tree/master/Recon) or [SharpView]():
+You can use [PowerView](https://github.com/PowerShellMafia/PowerSploit/tree/master/Recon) <small>(11.4k ⭐)</small> or [SharpView](https://github.com/tevora-threat/SharpView) <small>(0.9k ⭐)</small>:
 
 ```ps
 PS> Get-DomainUser -Identity username -Domain example.com
@@ -122,4 +122,6 @@ PS> Test-AdminAccess -ComputerName TARGET_HOST
 PS> Get-DomainUser -SPN -Properties samaccountname,ServicePrincipalName
 PS> .\SharpView.exe Get-DomainUser -Identity username
 ```
+
+Refer to [LAPS](/operating-systems/windows/security/index.md) to enumerate for accounts related to LAPS.
 </div></div>
