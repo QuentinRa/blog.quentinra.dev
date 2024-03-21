@@ -382,6 +382,7 @@ Analysis
 * [Detect-It-Easy](https://github.com/horsicq/Detect-It-Easy) (target insight)
 * [CFF explorer](https://ntcore.com/?page_id=388)
 * Debug: [mona](https://github.com/corelan/mona)
+* [angr](https://github.com/angr/angr) python//CTF
 
 Obfuscation
 
