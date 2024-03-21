@@ -141,6 +141,24 @@ Opening the executable will automatically load its .NET solutions. You can save 
 
 <hr class="sep-both">
 
+## Other Programing Languages
+
+<div class="row row-cols-lg-2"><div>
+
+#### Python 
+
+Python bytecode files `.pyc` or `.pyo` for optimized bytecode are compiled cross-platform code that `python` can execute.
+
+You can decompile/disassemble them using [pycdc](https://github.com/zrax/pycdc) <small>(2.6k ⭐)</small>.
+
+Alternatively, python code can be bundled in a executable that doesn't require the `python` engine using [PyInstaller](https://pyinstaller.org/en/stable/).
+
+You can extract its contents using [pyinstxtractor](https://github.com/extremecoders-re/pyinstxtractor) <small>(2.3k ⭐)</small>.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Windows Binaries
 
 <div class="row row-cols-lg-2"><div>
