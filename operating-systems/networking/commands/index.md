@@ -357,6 +357,8 @@ $ sudo tcpdump -i tun0 ip proto 17 # a protocol by number
 
 [**tshark** - monitor network]
 
+<div class="row row-cols-lg-2"><div>
+
 **Usage** 🐚: monitor network.
 
 **Example** 🔥:
@@ -368,6 +370,15 @@ $ sudo tcpdump -i tun0 ip proto 17 # a protocol by number
 $ tshark -i eth0 -f "host some_ip"
 $ tshark -i eth0 -w /tmp/test.pcap
 ```
+</div><div>
+
+Reading a capture:
+
+```ps
+$ tshark -r xxx.pcap
+$ tshark -r xxx.pcap -T json
+```
+</div></div>
 
 [**wireshark** - monitor network]
 

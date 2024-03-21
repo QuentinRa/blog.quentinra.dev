@@ -118,7 +118,8 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [intigriti.com](https://www.intigriti.com/)
 * [zerodayinitiative](https://www.zerodayinitiative.com/)
 * [ssd-disclosure](https://ssd-disclosure.com/)
-</div><div>
+
+<br>
 
 **News** 📰
 
@@ -126,7 +127,13 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [cybernews.com](https://cybernews.com/news/)
 * [thehackernews.com](https://thehackernews.com/)
 * [threatpost.com](https://threatpost.com/)
+</div><div>
 
+**CTF Events** 🎮
+
+* [picoctf](https://www.picoctf.org/), [404ctf](https://www.404ctf.fr/)
+* [Buckeyectf](https://ctf.osucyber.club/)
+* [esaip ctf](https://ctf.esaip.org/), [HackSecuReims](https://hacksecureims.eu/), [TRACS](https://tracs.viarezo.fr/)
 <br>
 
 **Not tested** 👻 - may be either theoretical, practical, or both.
