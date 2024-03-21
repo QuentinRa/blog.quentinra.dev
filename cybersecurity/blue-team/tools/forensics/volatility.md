@@ -6,16 +6,15 @@
 
 <div class="row row-cols-lg-2"><div>
 
-Volatility is a popular free [memory forensics tool](/cybersecurity/blue-team/topics/forensics.md). There is a deprecated [python2](https://github.com/volatilityfoundation/volatility) version <small>(6.8k ⭐, 2020 🪦)</small>, and there is a [python3](https://github.com/volatilityfoundation/volatility3) version <small>(2.1k ⭐, in-development)</small>.
+Volatility is a popular free [memory forensics tool](/cybersecurity/blue-team/topics/forensics.md). There is a deprecated [python2](https://github.com/volatilityfoundation/volatility) version <small>(6.8k ⭐, 2020 🪦)</small>, and there is a [python3](https://github.com/volatilityfoundation/volatility3) version <small>(2.1k ⭐)</small> currently still in development.
 
-<span class="small">*This method contains a few extra lines due to 'weird' `volatility3/setup.py`:*</span>
+To install version `v2.5.2` with all plugins:
 
 ```ps
-$ pipx install git+https://github.com/volatilityfoundation/volatility3
-$ # patch to make all plugins work
-$ wget https://raw.githubusercontent.com/volatilityfoundation/volatility3/develop/requirements.txt -O /tmp/volatility3_requirements.txt
-$ pipx runpip volatility3 install -r /tmp/volatility3_requirements.txt
-$ # end
+$ mkdir -p $HOME/tools && cd $HOME/tools
+$ git clone -b "v2.5.2" https://github.com/volatilityfoundation/volatility3.git
+$ pipx install $HOME/tools/volatility3
+$ pipx runpip volatility3 install -r $HOME/tools/volatility3/requirements.txt
 $ vol -h
 ```
 </div><div>
@@ -116,6 +115,29 @@ $ vol [...] windows.netstat
 
 <hr class="sep-both">
 
+## Linux Notes
+
+<div class="row row-cols-lg-2"><div>
+
+* ➡️ Bash History
+
+```ps
+$ vol -f mdump.sav linux.bash
+```
+
+* ➡️ GPG In-Memory Key
+
+```shell!
+$ git clone https://github.com/kudelskisecurity/volatility-gpg.git
+$ vol -f mdump.sav -p ./volatility-gpg -s symbols/ linux.gpg_full
+```
+
+* ➡️ Volatility2 can [recover_filesystem](https://github.com/volatilityfoundation/volatility/blob/master/volatility/plugins/linux/recover_filesystem.py) while you may have to build the appropriate symbol table
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -125,10 +147,12 @@ Stuff that I found, but never read/used yet.
 * [THM/volatility](https://tryhackme.com/room/volatility)
 * [volatility-cheatsheet](https://blog.onfvp.com/post/volatility-cheatsheet/)
 * [aldeid wiki](https://www.aldeid.com/wiki/Volatility)
-* [volatility symbol table](https://volatility3.readthedocs.io/en/latest/symbol-tables.html) and [dwarf2json docker by 4nuit](https://4nuit.github.io/posts/cheatsheet/#profils-linux-vol3) and [JPCERTCC tables](https://github.com/JPCERTCC/Windows-Symbol-Tables)
-
-```ps
-$ vol -f mdump.sav linux.bash # Linux Bash History
-```
 </div><div>
+
+Symbols
+
+* `-s symbols/`
+* [volatility symbol table](https://volatility3.readthedocs.io/en/latest/symbol-tables.html)
+* [dwarf2json docker](https://4nuit.github.io/posts/cheatsheet/#profils-linux-vol3) 
+* [JPCERTCC tables](https://github.com/JPCERTCC/Windows-Symbol-Tables))
 </div></div>
