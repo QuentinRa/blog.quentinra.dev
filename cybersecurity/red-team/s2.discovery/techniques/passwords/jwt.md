@@ -61,5 +61,6 @@ Stuff that I found, but never read/used yet.
 * `hashcat -a 0 -m 16500`
 * Attach algo=none means signature is ignored.
 * [JWT](https://jwt.io/), (Bearer, encrypted token), modern alternative to (apache) HTTP basic auth? (from=35). HTB/170. [RFC](https://tools.ietf.org/html/rfc7617).
+* [CVE-2022-39227](https://github.com/user0x1337/CVE-2022-39227) for `python-jwt<3.3.4`: given a token, forge fake tokens
 </div><div>
 </div></div>
