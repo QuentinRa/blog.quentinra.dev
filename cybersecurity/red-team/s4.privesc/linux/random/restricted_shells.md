@@ -83,6 +83,47 @@ $ bind -f /etc/passwd
 
 <hr class="sep-both">
 
+## Python Jails
+
+<div class="row row-cols-lg-2"><div>
+
+#### Python Jails Enumeration
+
+Find variables and information about your context:
+
+```py
+globals()     # ...
+locals()      # ...
+vars()        # ...
+```
+
+#### Python File Write
+
+You can arbitrarily create files or python scripts using:
+
+```py
+print("Hello, World!", file=open("/dev/shm/poc", "w"))
+```
+</div><div>
+
+#### Python Jails SetAttr
+
+Arbitrarily set a variable, such as the list of blocked commands:
+
+```py
+setattr(__import__('__main__'),'blocklist',[])
+```
+
+Set the path to load arbitrary Python files:
+
+```py
+setattr(__import__("sys"), "path", list(("/dev/shm/",)))
+__import__("my_file")
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Special Scenarios
 
 <div class="row row-cols-lg-2"><div>
