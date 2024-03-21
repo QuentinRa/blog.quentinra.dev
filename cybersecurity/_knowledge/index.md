@@ -131,11 +131,11 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 
 **CTF Events** 🎮
 
-* [picoctf](https://www.picoctf.org/), [404ctf](https://www.404ctf.fr/)
+* [picoctf](https://www.picoctf.org/), [404ctf](https://www.404ctf.fr/), France Cybersecurity Challenge (FCSC)
 * [Buckeyectf](https://ctf.osucyber.club/), [idek](https://ctf.idek.team/), [downunderctf](https://downunderctf.com/)
 * [esaip ctf](https://ctf.esaip.org/), [HackSecuReims](https://hacksecureims.eu/), [TRACS](https://tracs.viarezo.fr/)
 * [HTB Events](https://www.hackthebox.com/events/)
-* Kringlecon, Yogosha
+* Kringlecon, Yogosha, Flag4all, TCP1P, ZITF, Patriot
 <br>
 
 **Not tested** 👻 - may be either theoretical, practical, or both.
@@ -244,8 +244,18 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [jivoi](https://github.com/jivoi/pentest)
 * [cybersec-2](https://cybersec-2.gitbook.io)
 * [HowToHunt](https://github.com/KathanP19/HowToHunt)
+* [D13David](https://github.com/D13David/ctf-writeups)
+* [SuperStormer](https://github.com/SuperStormer/writeups)
+* [Seraphin](https://github.com/Seraphin-/ctf)
+* [MasonCompetitiveCyber](https://github.com/MasonCompetitiveCyber)
+* [apocalypse](https://github.com/hackthebox/cyber-apocalypse-2024)
+* [HackademINT](https://github.com/HackademINT/)
+* [DownUnderCTF](https://github.com/DownUnderCTF)
+* [GCC-ENSIBS](https://github.com/GCC-ENSIBS/)
+* [project-sekai-ctf](https://github.com/project-sekai-ctf)
 </div><div>
 
+* [pentestlab](https://pentestlab.blog/)
 * [auth0.com](https://auth0.com/blog/)
 * [MayADevBe](https://mayadevbe.me/)
 * [ryanplatten](https://ryanplatten.com/various-journal-entries/)

@@ -276,6 +276,7 @@ $ rabin2 -I xxx.bin # get information
 $ rabin2 -z xxx.bin # list strings
 $ r2 -d xxx.bin     # Open in debug mode (if applicable)
 $ r2 -A xxx.bin     # Open and analyze (aaa)
+$ r2 -qcizz xxx.bin
 ```
 
 ```ps
@@ -395,6 +396,10 @@ Ultimate Packer for eXecutables (UPX) is a popular packer for malware.
 ```ps
 $ upx -d -o unpacked_xxx.exe xxx.exe
 ```
+
+#### PHP Obfuscation
+
+You can un-obfuscate PHP code with [unphp](https://www.unphp.net/).
 </div><div>
 
 #### Javascript Obfuscation
@@ -406,7 +411,7 @@ A few obfuscators for JavaScript:
 * [jjencode](https://utf-8.jp/public/jjencode.html)
 * [aaencode](https://utf-8.jp/public/aaencode.html)
 
-You may try [unpacker](https://matthewfl.com/unPacker.html) to unpack code while you can try [relative.im](https://deobfuscate.relative.im/) or [deobfuscate.io](https://deobfuscate.io/) to undo simple obfuscation.
+You may try [unpacker](https://matthewfl.com/unPacker.html) to unpack code while you can try [relative.im](https://deobfuscate.relative.im/) or [deobfuscate.io](https://deobfuscate.io/)/[obf-io](https://obf-io.deobfuscate.io/) to undo simple obfuscation.
 
 Native code or using a [abstract syntax tree](https://astexplorer.net/) are also possible. You can decode an AST using [escodegen](https://github.com/estools/escodegen) <small>(2.6k ⭐)</small>.
 
