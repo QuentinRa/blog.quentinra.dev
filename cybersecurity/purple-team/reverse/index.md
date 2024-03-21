@@ -245,6 +245,24 @@ $ ltrace xxx.bin
 
 <br>
 
+#### IDA Decompiler & Disassembler
+
+[IDA Pro](https://hex-rays.com/ida-pro/) is the most used and well-known compiler while it is paid. You can use the limited free version:
+
+```shell!
+$ wget https://out7.hex-rays.com/files/idafree84_linux.run
+$ chmod +x idafree84_linux.run
+$ ./idafree84_linux.run
+$ # assuming you installed it in $HOME/tools/ 
+$ ln -s $HOME/tools/idafree-8.4/ida64 $HOME/.local/bin/ida
+$ ida xxx.bin
+```
+
+Additional Notes
+
+* Press <kbd>F5</kbd> to use the third-party x64 free cloud decompiler.
+
+</div><div>
 
 #### Boomerang
 
@@ -290,7 +308,8 @@ For instance to decompile `ch1.bin`:
 $ docker run -it -v $(pwd):/builds boomrangcli:latest ch1.bin
 ```
 </details>
-</div><div>
+
+<br>
 
 #### Linux Radare Disassembly
 
@@ -308,10 +327,19 @@ $ r2 -A xxx.bin     # Open and analyze (aaa)
 ```ps
 (r2) a?             # help for analyze
 (r2) aaa            # analyze
+```
+
+```ps
+(r2) vv             # view disassembly, symbols, etc.
+(r2) VV             # view the program flow
+```
+
+```ps
 (r2) afl            # list function, can grep
 (r2) pdf @main      # disassemble 'main' (@sym.main)
 (r2) oo             # reload executable
 ```
+
 ```ps
 (r2) db 0xAABBCCDD  # breakpoint
 (r2) dc             # run the program, stop before breakpoint
@@ -428,8 +456,6 @@ Windows
 > Defined Strings
 ```
 
-* [IDA](https://hex-rays.com/ida-pro/) (ex: Linux disassembly)
-* [jadx](https://github.com/skylot/jadx) (DEX/APK to Java)
 * [frida](https://frida.re/)
 * [Rizin](https://github.com/rizinorg/rizin) and [cutter](https://github.com/rizinorg/cutter)
 * Disassembly, decompiler, debugger
