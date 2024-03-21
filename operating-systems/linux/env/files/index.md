@@ -244,5 +244,6 @@ Stuff that I found, but never read/used yet.
 * `sync` command
 * `.local/share/Trash`
 * `.config`
+* [MFT Parser](https://github.com/EricZimmerman/MFTECmd)
 </div><div>
 </div></div>

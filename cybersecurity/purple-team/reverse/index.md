@@ -177,33 +177,7 @@ You can extract its contents using [pyinstxtractor](https://github.com/extremeco
 
 <hr class="sep-both">
 
-## Windows Binaries
-
-<div class="row row-cols-lg-2"><div>
-
-#### Windows x64dbg debugger
-
-[![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
-[![introduction_to_malware_analysis](../../_badges/htb/introduction_to_malware_analysis.svg)](https://academy.hackthebox.com/course/preview/introduction-to-malware-analysis)
-
-You can use [x64dbg](https://github.com/x64dbg/x64dbg) <small>(42.9k ⭐)</small> to debug binaries.
-
-* You can navigate to options to define the breakpoints. For instance, uncheck everything except Exit Breakpoint.
-* The memory map tab can be used to find stuff like [memory-mapped files](https://en.wikipedia.org/wiki/Memory-mapped_file) <small>(a file mapped to a memory region like a buffer)</small>.
-  * Double-click on an entry to see its bytes
-  * You may recognize a file from the magic code bytes
-  * Right-click on an address to dump its contents to a file
-* Use 'Search for > Current Module > String references' to see strings and their address. You can double-click on an address to navigate to it <small>(see also: Right-click > 'Toggle Breakpoint.')</small>
-* Place the cursor on an instruction, and press 'Spacebar' to edit it.
-* Use CTRL+P to save the patched instructions.
-
-➡️ See also: [x64dbg unpack malware](https://www.varonis.com/blog/x64dbg-unpack-malware) and [OllyDbg](https://github.com/x64dbg/OllyDbg).
-</div><div>
-</div></div>
-
-<hr class="sep-both">
-
-## Linux Binaries
+## Reversing Binaries On Linux
 
 [![getting_started](../../_badges/htb-c/getting_started.svg)](https://app.hackthebox.com/challenges/getting-started)
 [![questionnaire](../../_badges/htb-c/questionnaire.svg)](https://app.hackthebox.com/challenges/Questionnaire)
@@ -244,25 +218,6 @@ $ ltrace xxx.bin
 ```
 
 <br>
-
-#### IDA Decompiler & Disassembler
-
-[IDA Pro](https://hex-rays.com/ida-pro/) is the most used and well-known compiler while it is paid. You can use the limited free version:
-
-```shell!
-$ wget https://out7.hex-rays.com/files/idafree84_linux.run
-$ chmod +x idafree84_linux.run
-$ ./idafree84_linux.run
-$ # assuming you installed it in $HOME/tools/ 
-$ ln -s $HOME/tools/idafree-8.4/ida64 $HOME/.local/bin/ida
-$ ida xxx.bin
-```
-
-Additional Notes
-
-* Press <kbd>F5</kbd> to use the third-party x64 free cloud decompiler.
-
-</div><div>
 
 #### Boomerang
 
@@ -308,8 +263,7 @@ For instance to decompile `ch1.bin`:
 $ docker run -it -v $(pwd):/builds boomrangcli:latest ch1.bin
 ```
 </details>
-
-<br>
+</div><div>
 
 #### Linux Radare Disassembly
 
@@ -353,6 +307,68 @@ $ r2 -A xxx.bin     # Open and analyze (aaa)
 
 📚 When using `pdf` such as `pdf @main`, we can see a list of variables and their addresses. We can pass these addresses to `px`.
 
+</div></div>
+
+<hr class="sep-both">
+
+## Reversing Binaries On Windows
+
+<div class="row row-cols-lg-2"><div>
+
+#### Windows x64dbg debugger
+
+[![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+[![introduction_to_malware_analysis](../../_badges/htb/introduction_to_malware_analysis.svg)](https://academy.hackthebox.com/course/preview/introduction-to-malware-analysis)
+
+You can use [x64dbg](https://github.com/x64dbg/x64dbg) <small>(42.9k ⭐)</small> to debug binaries.
+
+* You can navigate to options to define the breakpoints. For instance, uncheck everything except Exit Breakpoint.
+* The memory map tab can be used to find stuff like [memory-mapped files](https://en.wikipedia.org/wiki/Memory-mapped_file) <small>(a file mapped to a memory region like a buffer)</small>.
+  * Double-click on an entry to see its bytes
+  * You may recognize a file from the magic code bytes
+  * Right-click on an address to dump its contents to a file
+* Use 'Search for > Current Module > String references' to see strings and their address. You can double-click on an address to navigate to it <small>(see also: Right-click > 'Toggle Breakpoint.')</small>
+* Place the cursor on an instruction, and press 'Spacebar' to edit it.
+* Use CTRL+P to save the patched instructions.
+
+➡️ See also: [x64dbg unpack malware](https://www.varonis.com/blog/x64dbg-unpack-malware) and [OllyDbg](https://github.com/x64dbg/OllyDbg).
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## Reversing Binaries On Any Platform
+
+<div class="row row-cols-lg-2"><div>
+
+#### IDA Decompiler & Disassembler
+
+[IDA Pro](https://hex-rays.com/ida-pro/) is the most used and well-known compiler while it is paid. You can use the limited free version:
+
+```shell!
+$ wget https://out7.hex-rays.com/files/idafree84_linux.run
+$ chmod +x idafree84_linux.run
+$ ./idafree84_linux.run
+$ # assuming you installed it in $HOME/tools/ 
+$ ln -s $HOME/tools/idafree-8.4/ida64 $HOME/.local/bin/ida
+$ ida xxx.bin
+```
+
+Additional Notes
+
+* Press <kbd>F5</kbd> to use the third-party x64 free cloud decompiler.
+</div><div>
+
+#### Binary Ninja
+
+[Binary Ninja](https://binary.ninja/) is a paid decompiler and disassembler. You can use the limited free version:
+
+```shell!
+$ mkdir -p $HOME/tools/ && cd $HOME/tools/
+$ wget https://cdn.binary.ninja/installers/BinaryNinja-free.zip
+$ unzip BinaryNinja-free.zip && rm BinaryNinja-free.zip
+$ cd && ln -s $HOME/tools/binaryninja/binaryninja $HOME/.local/bin/binaryninja
+```
 </div></div>
 
 <hr class="sep-both">
