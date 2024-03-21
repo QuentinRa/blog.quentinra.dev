@@ -132,8 +132,10 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 **CTF Events** 🎮
 
 * [picoctf](https://www.picoctf.org/), [404ctf](https://www.404ctf.fr/)
-* [Buckeyectf](https://ctf.osucyber.club/)
+* [Buckeyectf](https://ctf.osucyber.club/), [idek](https://ctf.idek.team/)
 * [esaip ctf](https://ctf.esaip.org/), [HackSecuReims](https://hacksecureims.eu/), [TRACS](https://tracs.viarezo.fr/)
+* [HTB Events](https://www.hackthebox.com/events/)
+* Kringlecon, Yogosha
 <br>
 
 **Not tested** 👻 - may be either theoretical, practical, or both.
@@ -207,6 +209,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 
 * [lkmidas](https://lkmidas.github.io/)
 * [trailofbits](https://trailofbits.github.io/ctf/exploits/binary1.html)
+* [4nuit](https://github.com/4nuit/Writeup/)
 
 #### Useful bits of knowledge 🌱
 
