@@ -141,20 +141,38 @@ Opening the executable will automatically load its .NET solutions. You can save 
 
 <hr class="sep-both">
 
-## Other Programing Languages
+## Python Reverse Engineering
 
 <div class="row row-cols-lg-2"><div>
 
-#### Python 
-
 Python bytecode files `.pyc` or `.pyo` for optimized bytecode are compiled cross-platform code that `python` can execute.
 
-You can decompile/disassemble them using [pycdc](https://github.com/zrax/pycdc) <small>(2.6k ⭐)</small>.
+For `Python <= 3.11`, you can use [pycdc](https://github.com/zrax/pycdc) <small>(2.6k ⭐)</small>.
 
+```ps
+$ git clone https://github.com/zrax/pycdc.git && cd pycdc
+$ mkdir build && cd build && cmake .. && make -j $(nproc)
+$ ./pycdc ./xxx.pyc
+```
+
+For `Python <= 3.8`, you can use [uncompyle6](https://github.com/rocky/python-uncompyle6) <small>(3.5k ⭐)</small>:
+
+```ps
+$ pipx install git+https://github.com/rocky/python-uncompyle6
+$ uncompyle6 xxx.pyc
+```
+</div><div>
+
+If your python version and the target python version is the same, you can use the builtin [dis](https://docs.python.org/3/library/dis.html) module:
+
+```py
+import dis
+import marshal
+dis.dis(marshal.load(open('xxx.pyc', 'rb')))
+```
 Alternatively, python code can be bundled in a executable that doesn't require the `python` engine using [PyInstaller](https://pyinstaller.org/en/stable/).
 
 You can extract its contents using [pyinstxtractor](https://github.com/extremecoders-re/pyinstxtractor) <small>(2.3k ⭐)</small>.
-</div><div>
 </div></div>
 
 <hr class="sep-both">
