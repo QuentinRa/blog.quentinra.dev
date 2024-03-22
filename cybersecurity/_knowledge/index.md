@@ -256,8 +256,11 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [learn-cyber.net](https://learn-cyber.net/)
 * [mizu.re](https://mizu.re/)
 * [nzeros.me](https://nzeros.me/)
+* [deusx64](https://deusx64.ai/) (reverse/bin)
+* [exploit.education](https://exploit.education/)
 </div><div>
 
+* [pwn.college](https://pwn.college/)
 * [pentestlab](https://pentestlab.blog/)
 * [CSbyGB](https://github.com/CSbyGB/pentips)
 * [auth0.com](https://auth0.com/blog/)
@@ -277,6 +280,8 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [exploit-notes.hdks](https://exploit-notes.hdks.org/)
 * [fastiraz](https://fastiraz.gitbook.io/)
 * [tpetersonkth](https://tpetersonkth.github.io)
+* [fuzzy.land](https://fuzzy.land/)
+* [corkami](https://github.com/corkami/docs/)
 </div><div>
 
 * [razrsec](https://blog.razrsec.uk/)

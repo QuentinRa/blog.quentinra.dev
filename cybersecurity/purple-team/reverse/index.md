@@ -643,6 +643,13 @@ Obfuscation
 $ bashfuscator -c 'cat /etc/passwd'
 $ bashfuscator -c 'cat /etc/passwd' -s 1 -t 1 --no-mangling --layers 1
 ```
+
+XYZ
+
+* [begin.re](https://www.begin.re/), [reverse.zip](https://reverse.zip/) (learn)
+* [tmpout](https://tmpout.sh/)
+* [crackmes](https://crackmes.one/)
+* [awesome](https://github.com/wtsxDev/reverse-engineering)
 </div><div>
 
 Common tools (see also: [dogbolt](https://dogbolt.org/))

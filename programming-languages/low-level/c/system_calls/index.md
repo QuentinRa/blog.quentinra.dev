@@ -4,6 +4,8 @@
 
 System calls are low-level functions that directly interact with the Linux kernel. You would usually use them in assembly, but assembly code is out of the scope of this course. We will use [C](/programming-languages/low-level/c/general/index.md) instead.
 
+📚 See also: [syscall.sh](https://syscall.sh/).
+
 </div><div class="align-self-center">
 
 They are defined in `man 2`, such as `man 2 open`. See `man 2 syscalls`. You will find inside:
