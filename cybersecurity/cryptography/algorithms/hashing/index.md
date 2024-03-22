@@ -413,6 +413,7 @@ Stuff that I found, but never read/used yet.
 * Use a smaller targeted wordlist for bcrypt
 * Argon2
 * [penglab](https://github.com/mxrch/penglab)
+* hash extension // [hash extender](https://github.com/iagox86/hash_extender)
 </div><div>
 
 [![easypeasyctf](../../../_badges/thm-p/easypeasyctf.svg)](https://tryhackme.com/room/easypeasyctf)

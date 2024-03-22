@@ -145,6 +145,7 @@ Additional references
 * [hijacklibs](https://hijacklibs.net/) <small>(0.5k ⭐)</small>
 * [frizb](https://github.com/frizb/Windows-Privilege-Escalation) <small>(0.7k ⭐, checklist, 2020 🪦)</small>
 * [Ghostpack-CompiledBinaries](https://github.com/r3motecontrol/Ghostpack-CompiledBinaries) <small>(1.0k ⭐, 2022 🪦)</small>
+* [SharpCollection](https://github.com/Flangvik/SharpCollection) <small>(2.1k ⭐, compiled C# projects)</small>
 </div><div>
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...

@@ -45,6 +45,7 @@ To create a memory dump, you can use:
 * [FTK Imager](https://www.exterro.com/ftk-imager)
 * [memdump](https://www.kali.org/tools/memdump/)
 * [LiME](https://github.com/504ensicsLabs/LiME) <small>(1.6k ⭐)</small>
+* [JumpBag](https://sourceforge.net/projects/jumpbag/)
 * For VMWare, suspend the machine and locate the `.vmem`
 * ...
 
@@ -59,8 +60,9 @@ Windows Memory Dumps:
 
 You can investigate a memory dump using:
 
-* [Volatility](../tools/forensics/volatility.md) is a well-known memory forensic tool.
+* [Volatility](../tools/forensics/volatility.md) is a popular memory forensic tool.
 * [rekall](https://github.com/google/rekall) <small>(1.9k ⭐, 2020 🪦)</small> is both archived and no longer maintained
+* [MemProcFS](https://github.com/ufrisk/MemProcFS)  <small>(2.6k ⭐, Windows, Browse FS, [FS_FindEvil](https://github.com/ufrisk/MemProcFS/wiki/FS_FindEvil))</small>
 </div></div>
 
 <hr class="sep-both">

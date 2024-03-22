@@ -256,6 +256,7 @@ This is a list of blogs that I want to check out one day. There are too many pil
 </div><div>
 
 * [pentestlab](https://pentestlab.blog/)
+* [CSbyGB](https://github.com/CSbyGB/pentips)
 * [auth0.com](https://auth0.com/blog/)
 * [MayADevBe](https://mayadevbe.me/)
 * [ryanplatten](https://ryanplatten.com/various-journal-entries/)
@@ -320,6 +321,9 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [4nuit](https://github.com/4nuit/Hacking)
 * [Anlominus](https://github.com/Anlominus)
 * [thehacker.recipes](https://www.thehacker.recipes)
+* [0xff](https://ctf.0xff.re)
+* [warlocksmurf](https://warlocksmurf.github.io/)
+* [HackThisSite](https://github.com/HackThisSite/CTF-Writeups)
 </div>
 
 </div>

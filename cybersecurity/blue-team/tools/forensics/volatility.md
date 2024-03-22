@@ -81,6 +81,7 @@ $ vol [...] windows.registry.printkey.PrintKey --offset 0xAAAAAAAA--key 'Control
 ```ps
 $ vol [...] windows.hashdump.Hashdump
 $ vol [...] windows.lsadump.Lsadump
+$ # volatility 2 clipboard
 ```
 </div><div>
 
