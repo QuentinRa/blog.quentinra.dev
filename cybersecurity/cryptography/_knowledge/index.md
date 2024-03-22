@@ -261,6 +261,7 @@ Stuff that I found, but never read/used yet.
 * [justcryptography](https://justcryptography.com/)
 * [angelique-renaud](https://www.angelique-renaud.com/cryptage.php)
 * [wikipedia portal](https://fr.wikipedia.org/wiki/Portail:Cryptologie)
+* [EverythingCrypto](https://github.com/zademn/EverythingCrypto), [crypto-attacks](https://github.com/jvdsn/crypto-attacks)
 * BREACH/CRIME attacks
 </div><div>
 

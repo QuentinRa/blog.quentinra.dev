@@ -253,6 +253,9 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [DownUnderCTF](https://github.com/DownUnderCTF)
 * [GCC-ENSIBS](https://github.com/GCC-ENSIBS/)
 * [project-sekai-ctf](https://github.com/project-sekai-ctf)
+* [learn-cyber.net](https://learn-cyber.net/)
+* [mizu.re](https://mizu.re/)
+* [nzeros.me](https://nzeros.me/)
 </div><div>
 
 * [pentestlab](https://pentestlab.blog/)

@@ -633,6 +633,7 @@ Analysis
 * [CFF explorer](https://ntcore.com/?page_id=388)
 * Debug: [mona](https://github.com/corelan/mona)
 * [angr](https://github.com/angr/angr) python//CTF
+* [r2heap radare](https://hackliza.gal/en/posts/r2heap/)
 
 Obfuscation
 

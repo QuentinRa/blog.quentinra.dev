@@ -134,6 +134,7 @@ Stuff that I found, but never read/used yet.
 * Hardening AD ([ref](https://blog.netwrix.fr/2019/05/06/securiser-votre-annuaire-ad-contre-les-attaques-de-malware/))
 * [Hacking Active Directory](https://tryhackme.com/module/hacking-active-directory)
 * `\\<domain_controller>\NETLOGON` (share, store logon scripts/...)
+* [kerberos/AD cyber](https://zer1t0.gitlab.io/posts/)
 
 <details class="details-n">
 <summary>Configure BitLocker</summary>

@@ -48,3 +48,16 @@ After identifying the types and their arguments, we can query them:
 ```
 </div><div>
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [How to exploit GraphQL endpoint: introspection, query, mutations & tools](https://www.yeswehack.com/learn-bug-bounty/how-exploit-graphql-endpoint-bug-bounty)
+* [GraphQL Voyager](https://github.com/graphql-kit/graphql-voyager)
+</div><div>
+</div></div>
