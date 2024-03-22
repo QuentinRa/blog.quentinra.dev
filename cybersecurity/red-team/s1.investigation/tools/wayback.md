@@ -24,3 +24,15 @@ $ cat urls
 <large output>
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [archive.md](https://archive.md/) (alternative)
+</div><div>
+</div></div>
