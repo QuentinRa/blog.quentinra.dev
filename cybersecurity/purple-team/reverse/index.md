@@ -267,6 +267,20 @@ We can declare the hidden method as a virtual method, rebuilt the DEX, and decom
 * Compute the adler32 checksum of `file[12:]` and write it at index 8
 
 <details class="details-n">
+<summary>Missing Additional Notes FixMePlease</summary>
+
+A few more parameters are required to declare a virtual method. Assuming you have access to a class object <small>(cf. classes)</small>, you need to find where is the number of virtual methods stored.
+
+```py
+virtual_methods_index = hex(aClass.get_class().class_data_item.get_off() + 3) 
+```
+
+The `class_data_item` contains four values. The last one <small>(notice the +3)</small> is the number of virtual methods.
+
+The second step is to find where we can add virtual method reference, e.g. `virtual_methods_block_index`. I don't know how to do that programmatically.
+</details>
+
+<details class="details-n">
 <summary>Python Code Samples</summary>
 
 ```py
