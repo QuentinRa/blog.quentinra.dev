@@ -159,8 +159,10 @@ $ exiftool -b -ThumbnailImage file.jpg > extracted.jpg
 * See also [330k encoders](https://330k.github.io/misc_tools/unicode_steganography.html) <small>(Unicode Steganography)</small>
 * See also [steganographr](https://neatnik.net/steganographr/) <small>(zero-width characters)</small>
 * See also: [stegsolve](https://wiki.bi0s.in/steganography/stegsolve/) <small>(hidden text, similar to stegoveritas)</small>
+* See also: [AperiSolve](https://github.com/Zeecka/AperiSolve) <small>(similar to stegoveritas, include many tools)</small>
 * See also: [Steganography](https://github.com/ragibson/Steganography) <small>(content hidden using LSB Steganography)</small>
 * See also: [lsb-steganography](https://github.com/Aqcurate/lsb-steganography) <small>(Images hidden using LSB Steganography)</small>
+* See also: [openstego](https://github.com/syvaidya/openstego) <small>(Hide something)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -237,5 +239,8 @@ Stuff that I found, but never read/used yet.
 
 * Stegosploit
 * reverse search
+* `zcat xxx` or `gunzip -c xxx` and `| cpio -idmv`
+* `pngcheck img.png`
+* [peepdf](https://github.com/jesparza/peepdf)
 </div><div>
 </div></div>

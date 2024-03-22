@@ -209,6 +209,18 @@ You may open decompiled files in [Android Studio](/programming-languages/mobile/
 
 🐲 Android Studio has a DexViewer which you can use to see if your Dex file contains hidden methods.
 
+#### Android Boot Image Unpacker
+
+You can use [mkbootimg](https://android.googlesource.com/platform/system/tools/mkbootimg/) developed by Google ([unpack_bootimg.py](https://android.googlesource.com/platform/system/tools/mkbootimg/+/refs/heads/master/unpack_bootimg.py)):
+
+```ps
+$ sudo apt install -y mkbootimg
+$ unpack_bootimg --boot_img boot.img
+$ cd out && gunzip -c ramdisk | cpio -idmv
+```
+
+Additional tools: [unpackbootimg](https://github.com/anestisb/android-unpackbootimg/) <small>(0.2k ⭐)</small>, [mkbootimg_tools](https://github.com/xiaolu/mkbootimg_tools) <small>(0.5k ⭐, 2016 🪦)</small> or [abootimg](https://github.com/ggrandou/abootimg) <small>(0.1k ⭐, 2012 🪦)</small>.
+
 #### Additional Notes
 
 * The [dexdump](https://packages.debian.org/stable/dexdump) list methods/classes in a DEX file
