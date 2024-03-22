@@ -177,6 +177,37 @@ You can extract its contents using [pyinstxtractor](https://github.com/extremeco
 
 <hr class="sep-both">
 
+## Android Reverse Engineering
+
+<div class="row row-cols-lg-2"><div>
+
+#### JADX — APK+Dex Decompiler/Disassembler
+
+You can use [jadx](https://github.com/skylot/jadx) <small>(38.5k ⭐)</small> to decompile APK and DEX files to Java.
+
+```ps
+$ sudo apt install -y jadx
+```
+
+You can use either the CLI or the GUI:
+
+```shell!
+$ jadx $(pwd)/basic_rev.apk -d $(pwd)/out
+$ jadx-gui # and open your file
+```
+
+#### Android Studio For Reversed Code
+
+You may open decompiled files in [Android Studio](/programming-languages/mobile/android/tools/and/index.md). Create a new project, put your files inside <small>(in java/ and res/)</small>, apply fixes if prompted, remove the automatically generated `R.java`, and run the app.
+</div><div>
+
+#### Additional Notes
+
+* The [dexdump](https://packages.debian.org/stable/dexdump) list methods/classes in a DEX file
+</div></div>
+
+<hr class="sep-both">
+
 ## Reversing Binaries On Linux
 
 [![getting_started](../../_badges/htb-c/getting_started.svg)](https://app.hackthebox.com/challenges/getting-started)
