@@ -179,6 +179,9 @@ You can extract its contents using [pyinstxtractor](https://github.com/extremeco
 
 ## Android Reverse Engineering
 
+[![apk_introduction](../../_badges/rootme/cracking/apk_introduction.svg)](https://www.root-me.org/en/Challenges/Cracking/APK-Introduction)
+[![apk_introduction](../../_badges/rootme/cracking/apk_anti_debug.svg)](https://www.root-me.org/en/Challenges/Cracking/APK-Anti-debug)
+
 <div class="row row-cols-lg-2"><div>
 
 APK files contains multiple files such as `classes.dex` and other `.dex` files, resources, the manifest and certificate files, etc.
@@ -204,9 +207,15 @@ $ jadx-gui # and open your file
 
 You may open decompiled files in [Android Studio](/programming-languages/mobile/android/tools/and/index.md). Create a new project, put your files inside <small>(in java/ and res/)</small>, apply fixes if prompted, remove the automatically generated `R.java`, and run the app.
 
+🐲 Android Studio has a DexViewer which you can use to see if your Dex file contains hidden methods.
+
 #### Additional Notes
 
 * The [dexdump](https://packages.debian.org/stable/dexdump) list methods/classes in a DEX file
+* The [010editor](https://www.sweetscape.com/download/010editor/) hex editor is a paid tool to analyze a DEX file 
+* [bytecode-viewer](https://github.com/Konloch/bytecode-viewer) <small>(14.3k ⭐, 👻)</small>
+* [Apktool](https://github.com/iBotPeaches/Apktool) <small>(18.6k ⭐, 👻)</small>
+* [dex2jar](https://github.com/pxb1988/dex2jar) <small>(11.8k ⭐, 👻)</small>
 </div><div>
 
 #### androguard — APK+Dex Explorer/Disassembler
@@ -249,6 +258,78 @@ for c in d.get_codes_item().code:
 # View The ByteCode Given A Suspicous Offset
 d.get_codes_item().get_code(0xffff).show()
 ```
+
+We can declare the hidden method as a virtual method, rebuilt the DEX, and decompile it again using another tool.
+
+* Increase the number of virtual methods by 1
+* Write the method IDX, `0x1` for public, and the code offset to the file. All values are in hexadecimal and uleb128 formatted.
+* Compute the sha1 of `file_size - 32` and write it at index 12
+* Compute the adler32 checksum of `file[12:]` and write it at index 8
+
+<details class="details-n">
+<summary>Python Code Samples</summary>
+
+```py
+def update_sha1(input_file):
+    import hashlib
+    with open(input_file, 'rb+') as f:
+        f.seek(0, 2)
+        file_size = f.tell()
+        f.seek(32)
+        sha1 = hashlib.sha1(f.read(file_size - 32)).hexdigest()
+        f.seek(12)
+        f.write(bytes.fromhex(sha1))
+        print("SHA1:", sha1)
+```
+```py
+def update_checksum(input_file):
+    import zlib
+    with open(input_file, 'rb+') as f:
+        f.seek(12)
+        checksum = '{:08x}'.format(zlib.adler32(f.read()) & 0xFFFFFFFF)
+        f.seek(8)
+        f.write(int(checksum, 16).to_bytes(4, byteorder='little'))
+        print("Checksum: ", int(checksum, 16))
+```
+```py
+def encode_uleb128(value):
+    encoded_bytes = bytearray()
+    while True:
+        byte = value & 0x7F
+        value >>= 7
+        if value != 0:
+            byte |= 0x80
+        encoded_bytes.append(byte)
+        if value == 0:
+            break
+    return int.from_bytes(encoded_bytes, byteorder='little')
+
+
+def modify_virtual_methods_size(input_file):
+    virtual_methods_index = 0x3988
+    virtual_methods_block_index = 0x39b1
+    method_idx = 0x22
+    method_access = 0x1
+    method_offset = 0x1fcc
+
+    with open(input_file, 'rb+') as f:
+        # Determine The Current Value
+        f.seek(virtual_methods_index)
+        virtual_methods_size = int.from_bytes(f.read(1), 'little')
+
+        # Add One
+        f.seek(virtual_methods_index)
+        virtual_methods_size += 1
+        f.write(virtual_methods_size.to_bytes(1, 'little'))
+        print("Virtual Methods Size:", virtual_methods_size)
+
+        # Add The Given Method
+        f.seek(virtual_methods_block_index)
+        f.write(encode_uleb128(method_idx).to_bytes(1, 'little'))
+        f.write(encode_uleb128(method_access).to_bytes(1, 'little'))
+        f.write(encode_uleb128(method_offset).to_bytes(2, 'little'))
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
