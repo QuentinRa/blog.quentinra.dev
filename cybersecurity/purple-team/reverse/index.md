@@ -181,6 +181,10 @@ You can extract its contents using [pyinstxtractor](https://github.com/extremeco
 
 <div class="row row-cols-lg-2"><div>
 
+APK files contains multiple files such as `classes.dex` and other `.dex` files, resources, the manifest and certificate files, etc.
+
+It's possible for code to exist within a DEX file but not detected nor reversed by tools such as JADX.
+
 #### JADX — APK+Dex Decompiler/Disassembler
 
 You can use [jadx](https://github.com/skylot/jadx) <small>(38.5k ⭐)</small> to decompile APK and DEX files to Java.
@@ -199,11 +203,52 @@ $ jadx-gui # and open your file
 #### Android Studio For Reversed Code
 
 You may open decompiled files in [Android Studio](/programming-languages/mobile/android/tools/and/index.md). Create a new project, put your files inside <small>(in java/ and res/)</small>, apply fixes if prompted, remove the automatically generated `R.java`, and run the app.
-</div><div>
 
 #### Additional Notes
 
 * The [dexdump](https://packages.debian.org/stable/dexdump) list methods/classes in a DEX file
+</div><div>
+
+#### androguard — APK+Dex Explorer/Disassembler
+
+[androguard](https://github.com/androguard/androguard) <small>(4.9k ⭐)</small> is a powerful Python tool to explore APK/Dex files, but there is almost no documentation.
+
+```ps
+$ sudo apt install -y androguard
+```
+
+```shell!
+$ androguard analyze ./example.apk # or directly classes.dex
+$ androguard analyze
+prompt> from androguard.misc import AnalyzeAPK
+prompt> a, d, dx = AnalyzeAPK("./example.apk")
+prompt> d = DalvikVMFormat(a) # If 'd' is "empty"...
+```
+
+List every class in the DEX:
+
+```py
+classes = [c for c in dx.get_classes() if not c.external] ; classes
+```
+
+List every method <small>(look for methods not found by JADX)</small>:
+
+```py
+for i, m in enumerate(d.methods.methods):
+  print(m.get_class_name()+m.get_name(), 'has method idx=', i, '; hex=', hex(i))
+```
+
+You can detect code not associated with a method using:
+
+```py
+known_offsets = [m.get_code().offset for m in d.get_methods() if m.get_code()]
+for c in d.get_codes_item().code:
+    if c.offset not in known_offsets:
+        print("No method associated with code offset:", c.offset, "; hex=", hex(c.offset))
+
+# View The ByteCode Given A Suspicous Offset
+d.get_codes_item().get_code(0xffff).show()
+```
 </div></div>
 
 <hr class="sep-both">
