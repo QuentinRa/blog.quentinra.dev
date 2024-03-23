@@ -110,9 +110,16 @@ While uncommon, if the logic is client-side and only the result is sent to the s
 
 [![php_register_globals](../../../../_badges/rootme/web_server/php_register_globals.svg)](https://www.root-me.org/en/Challenges/Web-Server/PHP-register-globals)
 
-This feature is deprecated since PHP 5.3.0, and mostly present with PHP < 4.1 or if the development tried to reproduce this behavior. Basically, global variables such as `$_GET['param']` are mapped to a variable, e.g. `$param` in thise case. It means, we can override the value of a variable if we know the variable's name.
+When using `register_globals`, global variables such as `$_GET['param']` are automatically mapped to a global variable such as `$param`.
 
-We can also directly edit variables `URL?_SESSION[xxx]=yyy`.
+It applies to `$_GET`, `$_POST`, `$_COOKIE`, `$_REQUEST`, etc.
+
+This feature is deprecated since PHP 5.3.0, while the `extract(ARRAY)` function is still present and maybe still be used.
+
+**Exploitation**
+
+* Set `$token`: use `URL/?token=xxx`.
+* Set `$_SESSION['key']`: use `URL/?_SESSION[key]=xxx`.
 </div><div>
 
 #### Execution After Redirect (EAR)
