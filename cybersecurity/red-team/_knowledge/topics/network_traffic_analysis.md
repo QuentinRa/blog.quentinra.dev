@@ -38,7 +38,7 @@ Common applications are:
 
 <div class="row row-cols-lg-2"><div>
 
-#### net-creds — Simple Packet Sniffer
+#### net-creds — Simple Packet Analyzer
 
 [net-creds](https://github.com/DanMcInerney/net-creds) <small>(1.6k ⭐, 2019 🪦)</small> is a network packet sniffer which superseded [creds.py](https://github.com/DanMcInerney/creds.py) <small>(0.2k ⭐, 2015 🪦)</small>. It's written in Python2.
 
@@ -48,9 +48,15 @@ $ wget "https://raw.githubusercontent.com//quentinra/blog.quentinra.dev/cybersec
 $ patch -u < py3_and_fixes.patch
 $ python3 net-creds.py -p xxx.pcap
 ```
+
+<br>
+
+#### NetworkMiner — Paid Packet Analyzer
+
+[NetworkMiner](https://www.netresec.com/?page=NetworkMiner) is a paid packet analyzer for Windows. It groups network traffic in tabs and per host. There is a free version 💸.
 </div><div>
 
-#### apackets — Online Packet Analysis
+#### apackets — Online Packet Analyzer
 
 Refer to [apackets](https://apackets.com/upload). All free analysis are public.
 
@@ -58,7 +64,7 @@ Refer to [apackets](https://apackets.com/upload). All free analysis are public.
 
 #### tcpflow — Dump TCP Flows
 
-You can use [tcpflow](https://github.com/simsong/tcpflow) <small>(1.6k ⭐)</small>, which is similar to wireshark 'Follow TCP Streams,' to dump TCP Streams.
+You can use [tcpflow](https://github.com/simsong/tcpflow) <small>(1.6k ⭐)</small>, which is similar to wireshark 'Follow TCP Streams' feature, to dump TCP Streams.
 
 ```shell!
 $ tcpflow -r xxx.pcap -C0

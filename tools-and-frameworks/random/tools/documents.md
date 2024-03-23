@@ -23,6 +23,7 @@
 ##### Sync files between drives
 
 * [freefilesync](https://freefilesync.org/download.php)
+* [syncthing](https://github.com/syncthing/syncthing)
 </div><div>
 
 ##### Share Files

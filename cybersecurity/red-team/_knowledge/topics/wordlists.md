@@ -95,6 +95,12 @@ $ crunch [...] -d 1 # "aa" "aaa" etc. are not allowed
 ```shell!
 $ cook [...]
 ```
+
+<br>
+
+#### Linkedin2Username
+
+[linkedin2username](https://github.com/initstring/linkedin2username) <small>(1.1k ⭐)</small> uses **your** Linkedin account to explore the target Linkedin pages and generate a wordlist of usernames.
 </div><div>
 
 #### CUPP wordlist generation
@@ -110,12 +116,6 @@ Even if you gathered a lot of information, you may want to start with small word
 
 <br>
 
-#### Linkedin2Username
-
-[linkedin2username](https://github.com/initstring/linkedin2username) <small>(1.1k ⭐)</small> uses **your** Linkedin account to explore the target Linkedin pages and generate a wordlist of usernames.
-
-<br>
-
 #### hashcat utilities
 
 hashcat has a few utilities that it uses to generate wordlists:
@@ -123,6 +123,19 @@ hashcat has a few utilities that it uses to generate wordlists:
 * [maskprocessor](https://github.com/hashcat/maskprocessor): generate wordlists from a mask
 * [kwprocessor](https://github.com/hashcat/kwprocessor): generate wordlists with keyboard walks
 * [princeprocessor](https://github.com/hashcat/princeprocessor): generate wordlists using the PRINCE algorithm
+
+<br>
+
+#### Python
+
+All-purpose knife.
+
+```shell!
+$ python -c "s=0; n=200; wordlist = ['a'*i for i in range(1+s, s+n+1)]; print('\n'.join(wordlist))"
+a
+aa
+...
+```
 
 <br>
 
