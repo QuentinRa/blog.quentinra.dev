@@ -62,6 +62,7 @@ Then, in `$_REQUEST['n']` there would be `6`, an uncheck value.
 
 [PHP](/programming-languages/web/php/_general/index.md#operators) supports loose <small>(==, !=, <>)</small> and strict <small>(===, !===)</small> comparison. When using loose comparison, PHP uses Type Juggling to compare values. In PHP 5.6 and older, some results are quite surprising:
 
+* `!NULL` or `NULL == 0` is `True`
 * `"abc" == 0` is `True` <small>(<ignored_invalid> == 0)</small>
 * `"1a2b3" == 1` is `True` <small>(1<ignored_invalid> == 1)</small>
 * `"12abc3" == 12` is `True` <small>(12<ignored_invalid> == 12)</small>
@@ -69,6 +70,16 @@ Then, in `$_REQUEST['n']` there would be `6`, an uncheck value.
 
 You can install [PHP 5.6 using Docker](/programming-languages/web/php/_general/index.md) for local testing.
 </div><div>
+
+The `strcmp` function may be also vulnerable. In PHP 5.6, it returns an integer which indicates the number of different characters.
+
+* `strcmp("abc", "abd") == 0` is `False`
+* `strcmp("abc", "abc") == 0` is `True`
+* `strcmp([], "abd") == 0` is `True`
+
+📚 Try `password[]=` to transform a parameter in an array.
+
+🪦 PHP Type Juggling/Loose comparison is difficult to exploit as usually GET/POST data are strings unless they are converted to JSON...
 </div></div>
 
 <hr class="sep-both">
