@@ -670,6 +670,37 @@ $boolean = password_verify("apassword", $hash);
 
 <hr class="sep-both">
 
+## Docker And PHP r🤖
+
+<div class="row row-cols-lg-2"><div>
+
+```ps
+$ cat Dockerfile 
+```
+
+```dockerfile!
+ARG PHP_VERSION
+
+FROM php:${PHP_VERSION}-cli
+
+# Don't run PHP CLI as root
+RUN useradd -ms /usr/sbin/nologin phprunner
+WORKDIR /phpfiles/
+RUN chown -R phprunner:phprunner /phpfiles/
+USER phprunner
+
+ENTRYPOINT ["php"]
+```
+```ps
+$ docker build . --build-arg PHP_VERSION=5.6 -t phprunner:5.6
+$ alias 'php5.6'='docker run -v $(pwd):/phpfiles -i --rm phprunner:5.6'
+```
+</div><div>
+</div></div>
+
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
