@@ -670,9 +670,11 @@ $boolean = password_verify("apassword", $hash);
 
 <hr class="sep-both">
 
-## Docker And PHP r🤖
+## Docker And PHP 🤖
 
 <div class="row row-cols-lg-2"><div>
+
+You can install any version of PHP using [docker](/operating-systems/others/virtualization/docker/index.md).
 
 ```ps
 $ cat Dockerfile 
@@ -691,11 +693,28 @@ USER phprunner
 
 ENTRYPOINT ["php"]
 ```
+</div><div>
+
+To build PHP 5.6 as `phprunner:5.6`, we would use:
+
 ```ps
 $ docker build . --build-arg PHP_VERSION=5.6 -t phprunner:5.6
+```
+
+We can create an alias to avoid using length commands. Add any folders you need if `$(pwd)` is not enough with `-v`.
+
+```ps
 $ alias 'php5.6'='docker run -v $(pwd):/phpfiles -i --rm phprunner:5.6'
 ```
-</div><div>
+
+A few examples:
+
+```shell!
+$ php5.6 hello.php
+$ php5.6 -S CONTAINER_IP:8080
+$ # Run 'php5.6' then 'docker ps' in another terminal and:
+$ # docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_id
+```
 </div></div>
 
 

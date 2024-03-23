@@ -53,6 +53,26 @@ Then, in `$_REQUEST['n']` there would be `6`, an uncheck value.
 
 <hr class="sep-both">
 
+## PHP Loose Comparison
+
+[![type_juggling](../../../../_badges/poat/type_juggling.svg)](https://swisskyrepo.github.io/PayloadsAllTheThings/Type%20Juggling/)
+[![php_type_juggling](../../../../_badges/rootme/web_server/php_type_juggling.svg)](https://www.root-me.org/en/Challenges/Web-Server/PHP-type-juggling)
+
+<div class="row row-cols-lg-2"><div>
+
+[PHP](/programming-languages/web/php/_general/index.md#operators) supports loose <small>(==, !=, <>)</small> and strict <small>(===, !===)</small> comparison. When using loose comparison, PHP uses Type Juggling to compare values. In PHP 5.6 and older, some results are quite surprising:
+
+* `"abc" == 0` is `True` <small>(<ignored_invalid> == 0)</small>
+* `"1a2b3" == 1` is `True` <small>(1<ignored_invalid> == 1)</small>
+* `"12abc3" == 12` is `True` <small>(12<ignored_invalid> == 12)</small>
+* ...
+
+You can install [PHP 5.6 using Docker](/programming-languages/web/php/_general/index.md) for local testing.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Random Notes
 
 <div class="row row-cols-lg-2"><div>
