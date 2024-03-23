@@ -66,7 +66,7 @@ The PowerShell ISE (Integrated Scripting Environment) is an editor for writing, 
 
 #### Execution Policy
 
-Normal users can't execute scripts by default. There are a few configurations that may be selected. They can be easily by-passed by typing the script contents directly into the shell.
+Normal users can't execute scripts by default. There are a few configurations that may be selected. They can be easily bypassed by typing the script contents directly into the shell.
 
 * `AllSigned`: allow signed scripts to be executed
 * `Bypass`: no restrictions ☠️ and no warnings

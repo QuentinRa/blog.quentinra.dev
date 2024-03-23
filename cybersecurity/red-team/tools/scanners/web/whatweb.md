@@ -17,6 +17,6 @@ $ whatweb URL
 Common options
 
 * `-a <value>`: aggression level <small>(1 < 3 < 4)</small>
-* `-U="custom user agent"`: by-pass basic WAF
+* `-U="custom user agent"`: bypass basic WAF
 * `-v`: verbose output
 </div></div>

@@ -109,7 +109,7 @@ There are two types of plugins, while one plugin can have both:
 👉 There is one exception: if a vulnerability was marked as "closed," it becomes "re-opened" if re-imported in a scan.
 </div><div>
 
-By default, for file report plugins, the name and type of file determine which plugin will parse it. Only `.xml`, `.txt`, and `.zip` extensions are <small>(currently)</small> allowed. To by-pass this, rename your report file to match this regex: `.*_faraday_plugin_name.*` as it's the first element used to [determines](https://github.com/infobyte/faraday_plugins/blob/master/faraday_plugins/plugins/manager.py#L42) which plugin is loaded.
+By default, for file report plugins, the name and type of file determine which plugin will parse it. Only `.xml`, `.txt`, and `.zip` extensions are <small>(currently)</small> allowed. To bypass this, rename your report file to match this regex: `.*_faraday_plugin_name.*` as it's the first element used to [determines](https://github.com/infobyte/faraday_plugins/blob/master/faraday_plugins/plugins/manager.py#L42) which plugin is loaded.
 
 #### Basic templates
 

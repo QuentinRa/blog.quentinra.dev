@@ -38,7 +38,7 @@ $ jar -cvf ../xxx.war *
 $ jar -cmf ./META-INF/MANIFEST.MF ../xxx.jar *
 ```
 
-If you plan to edit the JAR, you may have to remove every checksum from the MANIFEST.MF along with `.RSA/.SF` to by-pass integrity checks. ⚠️ Note that MANIFEST.MF must ends with a blank line.
+If you plan to edit the JAR, you may have to remove every checksum from the MANIFEST.MF along with `.RSA/.SF` to bypass integrity checks. ⚠️ Note that MANIFEST.MF must ends with a blank line.
 
 Before you modify a file, you need to create a raw copy in which you will inject `.class` before bundling them back to a JAR:
 

@@ -57,7 +57,7 @@ $ wpscan --url URL -e u
 $ wpscan --url URL --enumerate u # same
 ```
 
-You may have to add `--random-user-agent` to by-pass a simple WAF:
+You may have to add `--random-user-agent` to bypass a simple WAF:
 
 ```ps
 $ wpscan [...] --random-user-agent

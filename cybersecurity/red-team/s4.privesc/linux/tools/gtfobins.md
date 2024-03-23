@@ -143,6 +143,13 @@ $ sudo /usr/bin/apport-cli --file-bug
 [![sau](../../../../_badges/htb-p/sau.svg)](https://app.hackthebox.com/machines/Sau)
 
 While it may be secure, if a reader is opened, such as `less`, it may be leveraged to run commands e.g. using `!/bin/bash` for `less`.
+
+* gcc special usages
+
+```shell!
+$ gcc -x c /etc/passwd             # read file
+$ gcc -Xlinker -o/tmp/denylist.txt # delete file
+```
 </div><div>
 
 * `/usr/bin/knife`: [knife](http://manpages.ubuntu.com/manpages/bionic/man1/knife.1.html) can be exploited in many ways

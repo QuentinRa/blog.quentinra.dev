@@ -10,7 +10,7 @@ A **virtual private network** (**VPN**) is a technology allowing two or more com
 
 Common use cases are:
 
-* 🐦 to by-pass (country/...) restrictions and access some websites
+* 🐦 to bypass (country/...) restrictions and access some websites
 * 🎠 to access a company internal network
 * 🌍 to create a common network between companies
 * ...

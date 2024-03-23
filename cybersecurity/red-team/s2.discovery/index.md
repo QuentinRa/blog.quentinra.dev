@@ -46,7 +46,7 @@ You can install an extension to make the target website believe that you are usi
 
 You may use a proxy as an intermediary for your requests. If you do, then you can use the **FoxyProxy extension** of your browser to easily swap between no proxy, and your proxies configurations.
 
-* [Devtools](/programming-languages/web/_general/index.md#-developer-tools-devtools-): by-pass HTML/JS verifications, hide/remove tags...
+* [Devtools](/programming-languages/web/_general/index.md#-developer-tools-devtools-): bypass HTML/JS verifications, hide/remove tags...
 </div><div>
 
 * Disable scripts

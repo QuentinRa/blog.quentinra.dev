@@ -77,7 +77,7 @@ A few common options:
 * `-sCV -A`: mainly in CTFs for maximum information
 * `-oA`: store results
 
-As the port may be protected by a firewall, we may add stealth options and use firewall detection or by-pass techniques.
+As the port may be protected by a firewall, we may add stealth options and use firewall detection or bypass techniques.
 
 ⚠️ NMap uses banner grabbing or signature-based matching to identify the running services. It also good to cross-check as nmap may not have presented to us all information returned by a service.
 
@@ -360,7 +360,7 @@ $ nmap [...] --dns-server ns1,ns2
 
 ##### Custom Source Port
 
-We can use a custom source ports, which may by-pass some misconfigured systems:
+We can use a custom source ports, which may bypass some misconfigured systems:
 
 ```ps
 $ sudo nmap [...] -g 53

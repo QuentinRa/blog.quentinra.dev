@@ -16,9 +16,9 @@ Bypass User Account Control (UAC) using `eventvwr.exe`. The attack is done by ed
 
 [![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 
-The 32-bit version of `SystemPropertiesAdvanced` located at `C:\Windows\SysWOW64\SystemPropertiesAdvanced.exe` can be exploited to by-pass UAC if `srrstr.dll` is not found in Windows directories.
+The 32-bit version of `SystemPropertiesAdvanced` located at `C:\Windows\SysWOW64\SystemPropertiesAdvanced.exe` can be exploited to bypass UAC if `srrstr.dll` is not found in Windows directories.
 
-Create and put a DLL in any folder that is within the path and execute the binary above to execute your DLL while by-passing UAC.
+Create and put a DLL in any folder that is within the path and execute the binary above to execute your DLL while bypassing UAC.
 
 ➡️ You can use [msfvenom](/cybersecurity/red-team/tools/frameworks/metasploit/msfvenom.md) to create a malicious DLL.
 </div><div>
