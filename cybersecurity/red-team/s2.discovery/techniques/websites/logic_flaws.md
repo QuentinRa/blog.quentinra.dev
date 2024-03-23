@@ -53,27 +53,23 @@ Then, in `$_REQUEST['n']` there would be `6`, an uncheck value.
 
 <hr class="sep-both">
 
-## PHP Loose Comparison
+## PHP Loose Comparison And Type Juggling
 
 [![type_juggling](../../../../_badges/poat/type_juggling.svg)](https://swisskyrepo.github.io/PayloadsAllTheThings/Type%20Juggling/)
 [![php_type_juggling](../../../../_badges/rootme/web_server/php_type_juggling.svg)](https://www.root-me.org/en/Challenges/Web-Server/PHP-type-juggling)
 
 <div class="row row-cols-lg-2"><div>
 
-[PHP](/programming-languages/web/php/_general/index.md#operators) supports loose <small>(==, !=, <>)</small> and strict <small>(===, !===)</small> comparison. When using loose comparison, PHP uses Type Juggling to compare values. In PHP 5.6 and older, some results are quite surprising:
+[PHP](/programming-languages/web/php/_general/index.md#operators) supports loose <small>(==, !=, <>)</small> and strict <small>(===, !===)</small> comparison. When using loose comparison, PHP cast variables to the same type using Type Juggling before comparing their values. In PHP 5.6 ([docker](/programming-languages/web/php/_general/index.md#docker-and-php-)) and older, some results are quite surprising:
 
 * `"abc" == 0` is `True` <small>(<ignored_invalid> == 0)</small>
 * `"1a2b3" == 1` is `True` <small>(1<ignored_invalid> == 1)</small>
 * `"12abc3" == 12` is `True` <small>(12<ignored_invalid> == 12)</small>
 * ...
 
-Hashing functions may also be exploited.
+🪦 PHP Type Juggling is difficult to exploit as usually GET/POST data are strings unless they are converted to
 
-* `hash("md2", 'Oq9wqi64') == "0"` is `True`
-* `hash("sha1", '0e<snip>') == '0e<snip>'` is `True`
-
-Refer to [hashes](https://github.com/spaze/hashes/) <small>(0.7k ⭐)</small> for more magic password/hashes.
-</div><div>
+#### Loose Comparison — Exploiting STRCMP
 
 The `strcmp` function may be also exploited. In PHP 5.6, it returns an integer which indicates the number of different characters.
 
@@ -81,17 +77,36 @@ The `strcmp` function may be also exploited. In PHP 5.6, it returns an integer w
 * `strcmp("abc", "abc") == 0` is `True`
 * `strcmp([], "abd") == 0` is `True` <small>(Returns NULL, NULL==0 is True)</small>
 
-<br>
+📚 Try `password[]=` to transform a parameter in an array. Alternatively, note that `{}`/`[]` are JSON-decoded as an array.
+</div><div>
 
-**Additional Notes**
+#### PHP Magic Hashes
 
-* 🛣️ You can install [PHP 5.6 using Docker](/programming-languages/web/php/_general/index.md) for local testing.
+Hashing functions may also be exploited.
 
-* 📚 Try `password[]=` to transform a parameter in an array.
+* `hash("md2", 'Oq9wqi64') == "0"` is `True`
+* `hash("sha1", '0e<snip>') == "0e<snip>"` is `True`
+* ...
 
-* 🪦 PHP Type Juggling is difficult to exploit as usually GET/POST data are strings unless they are converted to JSON/etc.
+```php!
+while (1) {
+    $p = bin2hex(random_bytes(8)); // no constraints
+    $h = hash('fnv164', $p);       // (e.g. start with, etc.)
+    if ($h == 0) {
+        echo "Found hash($p)=$h";
+        break;
+    }
+}
+```
+
+```php!
+$a="53f5491262103127";
+$b="0b60749aaf38cdb6";
+hash('fnv164', $a) == hash('fnv164', $b) // True
+```
 
 
+Refer to [hashes](https://github.com/spaze/hashes/) <small>(0.7k ⭐)</small> for more magic password/hashes.
 </div></div>
 
 <hr class="sep-both">
