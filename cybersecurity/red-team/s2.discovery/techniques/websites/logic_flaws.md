@@ -115,11 +115,21 @@ Refer to [hashes](https://github.com/spaze/hashes/) <small>(0.7k ⭐)</small> fo
 
 <div class="row row-cols-lg-2"><div>
 
-#### Client-Side Logic
+#### Execution After Redirect (EAR)
 
-[![http_post](../../../../_badges/rootme/web_server/http_post.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-POST)
+[![http_improper_redirect](../../../../_badges/rootme/web_server/http_improper_redirect.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Improper-redirect)
 
-While uncommon, if the logic is client-side and only the result is sent to the server, we can do whatever we want.
+It occurs when a user is redirected, but if they don't follow the redirection, then they can still access the page.
+
+In PHP, it would occur if the developper forgot to call `exit` as any code after the redirecting is still executed.
+
+You can use `ncat` to read a page without being redirected.
+
+```shell!
+$ nc domain 80
+GET /URI HTTP/1.1
+Host: domain
+```
 
 #### PHP Register Globals
 
@@ -137,19 +147,25 @@ This feature is deprecated since PHP 5.3.0, while the `extract(ARRAY)` function 
 * Set `$_SESSION['key']`: use `URL/?_SESSION[key]=xxx`.
 </div><div>
 
-#### Execution After Redirect (EAR)
+#### Client-Side Logic
 
-[![http_improper_redirect](../../../../_badges/rootme/web_server/http_improper_redirect.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Improper-redirect)
+[![http_post](../../../../_badges/rootme/web_server/http_post.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-POST)
 
-It occurs when a user is redirected, but if they don't follow the redirection, then they can still access the page.
+While uncommon, if the logic is client-side and only the result is sent to the server, we can do whatever we want.
 
-In PHP, it would occur if the developper forgot to call `exit` as any code after the redirecting is still executed.
+<br>
 
-You can use `ncat` to read a page without being redirected.
+#### PHP Remote Xdebug
 
-```shell!
-$ nc domain 80
-GET /URI HTTP/1.1
-Host: domain
-```
+[![php_remote_xdebug](../../../../_badges/rootme/web_server/php_remote_xdebug.svg)](https://www.root-me.org/en/Challenges/Web-Server/PHP-Remote-Xdebug)
+
+[Xdebug](https://xdebug.org/) allows developers to remotely debug a PHP web application. This [gist](https://gist.github.com/hassansin/95e2da64e12ef613068a884a2433991e) provide multiple interesting details. If `remote_connect_back`, anyone can run PHP commands on the server.
+
+* Create a file in your IDE <small>(ex: index.php, any name)</small>
+* Add code <small>(e.g. `<?php\nphpinfo();`)</small> and a breakpoint
+* Listen for PHP debug connections <small>(ex: PHPStorm>Bottom-right icon)</small>
+* Load the page supporting Xdebug
+* Go back to your IDE and enjoy
+
+For PHPStorm, [refer to the debug tool window](https://www.jetbrains.com/help/phpstorm/debug-tool-window.html) overview.
 </div></div>

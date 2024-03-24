@@ -93,6 +93,7 @@ Similar to Caesar's cipher. Each letter is associated with another: $a \to w,\ b
 ## Vigenère cipher (<code>Cryptage en bloc de Vigenère</code>)
 
 [![ctfcollectionvol1](../../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
+[![polyalphabetic_substitution_vigenère](../../../_badges/rootme/cryptanalysis/polyalphabetic_substitution_vigenère.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Polyalphabetic-substitution-Vigenere)
 
 <div class="row row-cols-lg-2"><div>
 
