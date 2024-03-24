@@ -1,10 +1,8 @@
 # 👻 To-do 👻
 
-To stuff to read: [ired.team](https://www.ired.team/).
+Stuff that I found, but never read/used yet. See also the [Blogs](/cybersecurity/_knowledge/index.md#blogs-) section.
 
 <div class="row row-cols-lg-2"><div>
-
-Stuff that I found, but never read/used yet. See also the [Blogs](/cybersecurity/_knowledge/index.md#blogs-) section.
 
 Pentesting certification
 
@@ -12,6 +10,10 @@ Pentesting certification
 * GPEN
 * GXPN
 </div><div>
+
+Basics
+
+* [ired.team](https://www.ired.team/)
 
 GitHub Topics
 
@@ -38,10 +40,6 @@ THM
 * [THM/startup](https://tryhackme.com/room/startup)
 * [THM/steelmountain](https://tryhackme.com/room/steelmountain) (premium)
 * Daily Bugle ([cenaras](https://cenaras.wordpress.com/2020/07/14/example-post-3/))
-
-HTB
-
-* GetSimple CMS | Nibbles
 </div><div>
 
 THM Users
@@ -51,31 +49,60 @@ THM Users
 * [papadopejk](https://tryhackme.com/p/papadopejk)
 * [briskets](https://tryhackme.com/p/briskets)
 * [0xN0x](https://github.com/0xN0x)
-
-Random
-
-* [15 top open-source intelligence tools](https://www.csoonline.com/article/3445357/what-is-osint-top-open-source-intelligence-tools.html)
-* [OSINT 2021 guide](https://www.authentic8.com/blog/OSINT-2021-guide-tools-and-techniques)
-* [hacker-roadmap](https://sundowndev.github.io/hacker-roadmap/)
-* [Practical-Ethical-Hacking](https://github.com/TCM-Course-Resources/Practical-Ethical-Hacking-Resources)
 </div></div>
 
 <hr class="sep-both">
 
-## Practice
+## Resources
+
+<div class="row row-cols-lg-2"><div>
+
+**Mobile**
+
+* [Mobile app testing](https://github.com/OWASP/owasp-mastg)
+* [Termux-Nation](https://github.com/0xAbbarhSF/Termux-Nation-2022-Alpha) (N/A) <small>(test android devices)</small>
+* [termux-hacking](https://github.com/topics/termux-hacking) (N/A) <small>(list of termux tools)</small>
+
+**Joker**
+
+* [payloadbox](https://github.com/payloadbox) (payloads)
+* [scripts](https://github.com/Cerbersec/scripts) (commands)
+* [hack-with-github](https://github.com/hack-with-github) (lists)
+* [Checklists](https://github.com/netbiosX/Checklists) (checklists)
+* [awesome-ctf](https://github.com/apsdehal/awesome-ctf) (CTF websites and tools)
+* [15 top open-source intelligence tools](https://www.csoonline.com/article/3445357/what-is-osint-top-open-source-intelligence-tools.html)
+* [OSINT 2021 guide](https://www.authentic8.com/blog/OSINT-2021-guide-tools-and-techniques)
+* [hacker-roadmap](https://sundowndev.github.io/hacker-roadmap/)
+* [Practical-Ethical-Hacking](https://github.com/TCM-Course-Resources/Practical-Ethical-Hacking-Resources)
+</div><div>
+
+**Active directory** 🧸
+
+* None
+
+**CMS**
+
+* None
+
+**Defense**
+
+* None
+</div></div>
+
+<hr class="sep-both">
+
+## CTFs Practice
 
 <div class="row row-cols-lg-2"><div>
 
 Web
 
-* [THM/JuiceShop](https://tryhackme.com/room/owaspjuiceshop)
-* [sqlilab](https://tryhackme.com/room/sqlilab)
-* [learnowaspzap](https://tryhackme.com/room/learnowaspzap) (see [zapproxy](https://www.zaproxy.org/))
+* [learnowaspzap](https://tryhackme.com/room/learnowaspzap)
 * [OWASP Top 10 - 2021](https://tryhackme.com/room/owasptop102021)
 
 Mobile
 
-* [Mobile app testing](https://github.com/OWASP/owasp-mastg)
+* ...
 
 Programming
 
@@ -103,7 +130,6 @@ Defense
 
 Networking
 
-* [wifihacking101](https://tryhackme.com/room/wifihacking101)
 * [Network Security and Traffic Analysis](https://tryhackme.com/module/network-security-and-traffic-analysis)
 
 Windows
@@ -125,7 +151,7 @@ OSINT
 * [searchlightosint](https://tryhackme.com/room/searchlightosint)
 * [sakura](https://tryhackme.com/room/sakura)
 * [geolocatingimages](https://tryhackme.com/room/geolocatingimages), [jpgchat](https://tryhackme.com/room/jpgchat)
-* [threatinteltools](https://tryhackme.com/room/threatinteltools), [somesint](https://tryhackme.com/room/somesint
+* [threatinteltools](https://tryhackme.com/room/threatinteltools), [somesint](https://tryhackme.com/room/somesint)
 * [throwback](https://tryhackme.com/room/throwback)
 
 Cloud
@@ -135,39 +161,24 @@ Cloud
 <details class="details-n">
 <summary>Big THM CTF List</summary>
 
-```
-https://tryhackme.com/room/easyctf (notes below?)
-https://tryhackme.com/room/puttingitalltogether (no tags?)
+```txt!
 https://tryhackme.com/room/surfer
-https://tryhackme.com/room/lazyadmin
+https://tryhackme.com/room/lazyadmin (notes below)
 https://tryhackme.com/room/ninjaskills
 https://tryhackme.com/room/gamezone
 https://tryhackme.com/room/skynet
 https://tryhackme.com/room/alfred
 https://tryhackme.com/room/brooklynninenine
-https://tryhackme.com/room/tomghost
-https://tryhackme.com/room/lianyu
-https://tryhackme.com/room/cyborgt8
 https://tryhackme.com/room/breakoutthecage1
 https://tryhackme.com/room/blog
 https://tryhackme.com/room/jason
 https://tryhackme.com/room/source
 https://tryhackme.com/room/committed
-https://tryhackme.com/room/corridor
-https://tryhackme.com/room/easypeasyctf
 https://tryhackme.com/room/toolsrus
-https://tryhackme.com/room/kiba (capabilities)
-https://tryhackme.com/room/gamingserver
+https://tryhackme.com/room/kiba
 https://tryhackme.com/room/bruteit
-https://tryhackme.com/room/ctf
 https://tryhackme.com/room/dejavu
 https://tryhackme.com/room/tonythetiger (java)
-https://tryhackme.com/room/gamezone
-https://tryhackme.com/room/ohsint
-https://tryhackme.com/room/skynet
-https://tryhackme.com/room/25daysofchristmas
-https://tryhackme.com/room/adventofcyber2
-https://tryhackme.com/room/adventofcyber3
 --- Medium
 https://tryhackme.com/room/ultratech1 (web - guided?)
 https://tryhackme.com/room/hackpark (windows, guided)
@@ -322,48 +333,9 @@ https://tryhackme.com/room/retro (blaster...)
 
 <hr class="sep-both">
 
-## Specific tools
-
-<div class="row row-cols-lg-2"><div>
-
-**Android**
-
-* [Termux-Nation](https://github.com/0xAbbarhSF/Termux-Nation-2022-Alpha) (N/A) <small>(test android devices)</small>
-* [termux-hacking](https://github.com/topics/termux-hacking) (N/A) <small>(list of termux tools)</small>
-
-**Joker**
-
-* [payloadbox](https://github.com/payloadbox) (payloads)
-* [scripts](https://github.com/Cerbersec/scripts) (commands)
-* [hack-with-github](https://github.com/hack-with-github) (lists)
-* [Checklists](https://github.com/netbiosX/Checklists) (checklists)
-* [awesome-ctf](https://github.com/apsdehal/awesome-ctf) (CTF websites and tools)
-</div><div>
-
-**Active directory** 🧸
-
-* None
-
-**CMS**
-
-* None
-
-**Defense**
-
-* None
-</div></div>
-
-<hr class="sep-both">
-
 ## CTFs not done
 
 <div class="row row-cols-lg-2"><div>
-
-**https://tryhackme.com/room/easyctf** 🐍🐍⭐
-
-* `python2 simple.py`
-* oh gosh, volatily + `pip install --upgrade setuptools` https://stackoverflow.com/questions/31719816/pip-fails-to-install-anything-error-invalid-command-egg-info
-* `print "[+] Specify an url target"`
 
 **https://tryhackme.com/room/lazyadmin** 🐍🐍⭐
 
