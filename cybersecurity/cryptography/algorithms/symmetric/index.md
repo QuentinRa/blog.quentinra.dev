@@ -220,7 +220,7 @@ If the key and the nonce were reused to encrypt another message, then we can use
 ciphertext_2 = b''
 padding_length = len(key_stream) - len(ciphertext_2)
 ciphertext_2 += b'\x00' * padding_length
-message_2 = xor_strings(key_stream, flag)
+message_2 = xor_strings(key_stream, ciphertext_2)
 ```
 </div><div>
 </div></div>

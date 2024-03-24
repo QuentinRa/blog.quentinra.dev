@@ -9,11 +9,6 @@ Pentesting certification
 * OSCP
 * GPEN
 * GXPN
-</div><div>
-
-Basics
-
-* [ired.team](https://www.ired.team/)
 
 GitHub Topics
 
@@ -22,6 +17,12 @@ GitHub Topics
 * [Purple team](https://github.com/topics/purpleteam)
 * [cybersecurity](https://github.com/topics/cybersecurity)
 * [osint](https://github.com/topics/osint)
+</div><div>
+
+Basics
+
+* [ired.team](https://www.ired.team/)
+* [cryptohack](https://cryptohack.org/)+[crypto-attacks](https://github.com/jvdsn/crypto-attacks) (Cryptography)
 </div></div>
 
 <hr class="sep-both">
