@@ -24,6 +24,7 @@ Basics
 * [ired.team](https://www.ired.team/)
 * [cryptohack](https://cryptohack.org/)+[crypto-attacks](https://github.com/jvdsn/crypto-attacks) (Cryptography)
 * [guyinatuxedo](https://guyinatuxedo.github.io/index.html) (pwn, reverse, cracking)
+* Refer to buffer overflow/format strings then.
 </div></div>
 
 <hr class="sep-both">
@@ -163,6 +164,7 @@ Cloud
 Tools
 
 * [volatility](/cybersecurity/blue-team/tools/forensics/volatility.md) (THM x1)
+* [shodan](/cybersecurity/red-team/s1.investigation/tools/shodan.md) (THM x1)
 
 <details class="details-n">
 <summary>Big THM CTF List</summary>
