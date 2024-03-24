@@ -148,10 +148,6 @@ Stuff
 
 * The five "As" in security
 * [cyberdefenders](https://cyberdefenders.org/)
-
-Learn
-
-* [THM/mitre](https://tryhackme.com/room/mitre)
 </div><div>
 
 Tools/methods/...

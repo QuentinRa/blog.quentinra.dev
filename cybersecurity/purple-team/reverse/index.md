@@ -8,11 +8,15 @@ It often means getting back the original code/system using disassembling, decomp
 
 It can be used to understand how a malware works 🛡️ or to find vulnerabilities in a program/system in a black-box assessment 💥.
 
+**Practice**
+
+* [crackmes](https://crackmes.one/) <small>(binaries to crack, 👻)</small>
+</div><div>
+
 For simple programs, we might be able to get the information we need using [tracers](#linux-tracers) such as:
 
 * `strace`: see every system call
 * `strings`: extract every readable string, may not be installed
-</div><div>
 
 For a preliminary analysis of your executable:
 
@@ -599,17 +603,19 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* [angr](https://github.com/angr/angr) python//CTF
+Where to learn?
 
-XYZ
-
-* [begin.re](https://www.begin.re/), [reverse.zip](https://reverse.zip/) (learn)
+* [begin.re](https://www.begin.re/)
+* [reverse.zip](https://reverse.zip/)
 * [tmpout](https://tmpout.sh/)
-* [crackmes](https://crackmes.one/)
 * [awesome](https://github.com/wtsxDev/reverse-engineering)
-</div><div>
 
-Common tools (see also: [dogbolt](https://dogbolt.org/))
+Tools
+
+* [xiosec list of tools](https://github.com/xiosec/Reverse-engineering)
+* [frida](https://frida.re/): dynamic instrumentation
+* [angr](https://github.com/angr/angr): python CTF tool
+</div><div>
 
 * [Ghidra](https://www.ghidra-sre.org/)
 
@@ -625,7 +631,6 @@ Windows
 > Defined Strings
 ```
 
-* [frida](https://frida.re/)
 * [Rizin](https://github.com/rizinorg/rizin) and [cutter](https://github.com/rizinorg/cutter)
-* Hopper disassemblers
+* [Hopper](https://www.hopperapp.com/) disassembler
 </div></div>

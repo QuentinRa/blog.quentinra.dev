@@ -277,5 +277,6 @@ Intesting files
 * `C:\Windows\Prefetch`: programs executed+last execution date
 * `%AppData%\Microsoft\Windows\Recent`: recent files
 * `USN Journal`: logs of file system changes
+* [MFT Parser](https://github.com/EricZimmerman/MFTECmd)
 * [mftexplorer](https://www.sans.org/tools/mftexplorer/): metadata for all files
 </div></div>

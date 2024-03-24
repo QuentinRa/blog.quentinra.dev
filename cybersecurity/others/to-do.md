@@ -23,6 +23,7 @@ Basics
 
 * [ired.team](https://www.ired.team/)
 * [cryptohack](https://cryptohack.org/)+[crypto-attacks](https://github.com/jvdsn/crypto-attacks) (Cryptography)
+* [guyinatuxedo](https://guyinatuxedo.github.io/index.html) (pwn, reverse, cracking)
 </div></div>
 
 <hr class="sep-both">
@@ -135,7 +136,7 @@ Networking
 
 Windows
 
-* [windowseventlogs](https://tryhackme.com/room/windowseventlogs)
+* Refer to [logs](/cybersecurity/blue-team/topics/logs.md)
 * [btwindowsinternals](https://tryhackme.com/room/btwindowsinternals)
 * [windowsbase](https://tryhackme.com/room/windowsbase)
 * [microsoftwindowshardening](https://tryhackme.com/room/microsoftwindowshardening)
@@ -158,6 +159,10 @@ OSINT
 Cloud
 
 * Attacking and Defending AWS
+
+Tools
+
+* [volatility](/cybersecurity/blue-team/tools/forensics/volatility.md) (THM x1)
 
 <details class="details-n">
 <summary>Big THM CTF List</summary>
