@@ -9,7 +9,7 @@ It often means getting back the original code/system using disassembling, decomp
 It can be used to understand how a malware works 🛡️ or to find vulnerabilities in a program/system in a black-box assessment 💥.
 </div><div>
 
-For simple programs, we might be able to get the information we need using the commands below:
+For simple programs, we might be able to get the information we need using [tracers](#linux-tracers) such as:
 
 * `strace`: see every system call
 * `strings`: extract every readable string, may not be installed
@@ -396,7 +396,9 @@ $ gdb -q xxx.bin
 Linux commands [strace](https://www.man7.org/linux/man-pages/man1/strace.1.html) and [ltrace](https://www.man7.org/linux/man-pages/man1/ltrace.1.html) are very helpful to identify system and library calls in a program, which is helpful to reverse it.
 
 ```shell!
-$ strace xxx.bin
+$ strace xxx.bin # -f | -e open/... | -s 1000 | -y
+syscall(args) = return_code
+...
 $ ltrace xxx.bin
 ```
 
@@ -559,51 +561,10 @@ $ cd && ln -s $HOME/tools/binaryninja/binaryninja $HOME/.local/bin/binaryninja
 
 ## Code Obfuscation
 
-[![javascriptdeobfuscation](../../_badges/htb/javascriptdeobfuscation.svg)](https://academy.hackthebox.com/course/preview/javascript-deobfuscation)
-[![javascript_obfuscation_1](../../_badges/rootme/web_client/javascript_obfuscation_1.svg)](https://www.root-me.org/en/Challenges/Web-Client/Javascript-Obfuscation-1)
-[![javascript_obfuscation_2](../../_badges/rootme/web_client/javascript_obfuscation_2.svg)](https://www.root-me.org/en/Challenges/Web-Client/Javascript-Obfuscation-2)
-[![javascript_obfuscation_3](../../_badges/rootme/web_client/javascript_obfuscation_3.svg)](https://www.root-me.org/en/Challenges/Web-Client/Javascript-Obfuscation-3)
-[![javascript_native_code](../../_badges/rootme/web_client/javascript_native_code.svg)](https://www.root-me.org/en/Challenges/Web-Client/Javascript-Native-code)
-[![ast_deobfuscation](../../_badges/rootme/web_client/ast_deobfuscation.svg)](https://www.root-me.org/en/Challenges/Web-Client/AST-Deobfuscation)
-
 <div class="row row-cols-lg-2"><div>
 
-Code obfuscation is an automated process to make the code less-readable for humans. A simple example would be by replacing variables names with less readable names such as `_0x565`.
-
-Code obfuscation doesn't impact the program functionality, but it may impact its performance: obfuscated code is usually slower.
-
-#### UPX-packed Malware
-
-Ultimate Packer for eXecutables (UPX) is a popular packer for malware.
-
-```ps
-$ upx -d -o unpacked_xxx.exe xxx.exe
-```
-
-#### PHP Obfuscation
-
-You can un-obfuscate PHP code with [unphp](https://www.unphp.net/).
+Moved to [code obfuscation](/cybersecurity/purple-team/av_evasion/index.md#code-obfuscation).
 </div><div>
-
-#### Javascript Obfuscation
-
-A few obfuscators for JavaScript:
-
-* [beautifytools](http://beautifytools.com/javascript-obfuscator.php)
-* [obfuscator.io](https://obfuscator.io/)
-* [jjencode](https://utf-8.jp/public/jjencode.html)
-* [aaencode](https://utf-8.jp/public/aaencode.html)
-
-You may try [unpacker](https://matthewfl.com/unPacker.html) to unpack code while you can try [relative.im](https://deobfuscate.relative.im/) or [deobfuscate.io](https://deobfuscate.io/)/[obf-io](https://obf-io.deobfuscate.io/) to undo simple obfuscation.
-
-Native code or using a [abstract syntax tree](https://astexplorer.net/) are also possible. You can decode an AST using [escodegen](https://github.com/estools/escodegen) <small>(2.6k ⭐)</small>.
-
-```js!
-const { generate } = require('escodegen');
-const ast = {}; // add the JSON AST here
-const generatedCode = generate(ast);
-console.log(generatedCode);
-```
 </div></div>
 
 <hr class="sep-both">
@@ -613,19 +574,6 @@ console.log(generatedCode);
 Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
-
-* Minify code to make it less readable
-* Use of encoding
-* `Get-FileMetaData xxx.dll`
-* `strace/strings` [link](https://jvns.ca/strace-zine-v3.pdf)
-* [scoding.de](https://scoding.de/uploads/r2_cs.pdf)
-* [DOSfuscation](https://github.com/danielbohannon/Invoke-DOSfuscation)
-
-```ps
-Invoke-DOSfuscation> SET COMMAND type <path>
-Invoke-DOSfuscation> encoding
-Invoke-DOSfuscation\Encoding> 1
-```
 
 Analysis
 

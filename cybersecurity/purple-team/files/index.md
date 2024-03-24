@@ -27,6 +27,10 @@ This is why you should investigate any file you get your hands on.
 
 Any file has metadata, which is data that provides information on the file, such as the author, the creation date...
 
+See also: [Get-FileMetaData.ps1](https://www.powershellgallery.com/packages/FC_SysAdmin/5.0.0/Content/public%5CGet-FileMetaData.ps1) on Windows <small>(👻)</small>.
+
+<br>
+
 #### PDF metadata
 
 You can use online tools, your PDF reader "details" menu, or `pdfinfo`.
