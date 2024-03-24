@@ -7,12 +7,22 @@ Reverse engineering is the process of analyzing a program, or system to understa
 It often means getting back the original code/system using disassembling, decompiling, or similar methods.
 
 It can be used to understand how a malware works 🛡️ or to find vulnerabilities in a program/system in a black-box assessment 💥.
-</div><div>
 
 For simple programs, we might be able to get the information we need using [tracers](#linux-tracers) such as:
 
 * `strace`: see every system call
 * `strings`: extract every readable string, may not be installed
+</div><div>
+
+For a preliminary analysis of your executable:
+
+* Using the `file` command on Linux
+
+```shell!
+$ file some_executable
+```
+
+* Using [Detect-It-Easy](https://github.com/horsicq/Detect-It-Easy) on Windows
 </div></div>
 
 <hr class="sep-both">
@@ -519,6 +529,11 @@ You can use [x64dbg](https://github.com/x64dbg/x64dbg) <small>(42.9k ⭐)</small
 
 ➡️ See also: [x64dbg unpack malware](https://www.varonis.com/blog/x64dbg-unpack-malware) and [OllyDbg](https://github.com/x64dbg/OllyDbg).
 </div><div>
+
+#### Additional Tools
+
+* [CFF Explorer](https://ntcore.com/?page_id=388) <small>(PE, 👻)</small>
+* [WinDBG](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/) <small>( 👻)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -526,6 +541,11 @@ You can use [x64dbg](https://github.com/x64dbg/x64dbg) <small>(42.9k ⭐)</small
 ## Reversing Binaries On Any Platform
 
 <div class="row row-cols-lg-2"><div>
+
+#### dogbolt Online Decompiler Explorer
+
+[dogbolt](https://dogbolt.org/) <small>(1.8k ⭐)</small> quickly test your code against many decompilers. It's quite handy during CTFs, but has some [an implicit binary sharing policy and legal restrictions](https://dogbolt.org/faq) on private instances.
+
 
 #### IDA Decompiler & Disassembler
 
@@ -555,6 +575,10 @@ $ wget https://cdn.binary.ninja/installers/BinaryNinja-free.zip
 $ unzip BinaryNinja-free.zip && rm BinaryNinja-free.zip
 $ cd && ln -s $HOME/tools/binaryninja/binaryninja $HOME/.local/bin/binaryninja
 ```
+
+#### Additional Tools
+
+* [Immunity Debugger](https://www.immunityinc.com/products/debugger/) + [mona](https://github.com/corelan/mona)
 </div></div>
 
 <hr class="sep-both">
@@ -575,22 +599,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-Analysis
-
-* [Detect-It-Easy](https://github.com/horsicq/Detect-It-Easy) (target insight)
-* [CFF explorer](https://ntcore.com/?page_id=388)
-* Debug: [mona](https://github.com/corelan/mona)
 * [angr](https://github.com/angr/angr) python//CTF
-* [r2heap radare](https://hackliza.gal/en/posts/r2heap/)
-
-Obfuscation
-
-* [Bashfuscator](https://github.com/Bashfuscator/Bashfuscator)
-
-```ps
-$ bashfuscator -c 'cat /etc/passwd'
-$ bashfuscator -c 'cat /etc/passwd' -s 1 -t 1 --no-mangling --layers 1
-```
 
 XYZ
 
@@ -618,7 +627,5 @@ Windows
 
 * [frida](https://frida.re/)
 * [Rizin](https://github.com/rizinorg/rizin) and [cutter](https://github.com/rizinorg/cutter)
-* Disassembly, decompiler, debugger
-* Hopper and Binary Ninja disassemblers
-* Immunity Debugger ([mona](https://github.com/corelan/mona))
+* Hopper disassemblers
 </div></div>

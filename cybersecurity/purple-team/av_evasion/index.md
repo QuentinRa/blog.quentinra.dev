@@ -72,5 +72,12 @@ Invoke-DOSfuscation> SET COMMAND type <path>
 Invoke-DOSfuscation> encoding
 Invoke-DOSfuscation\Encoding> 1
 ```
+
+* [Bashfuscator](https://github.com/Bashfuscator/Bashfuscator)
+
+```ps
+$ bashfuscator -c 'cat /etc/passwd'
+$ bashfuscator -c 'cat /etc/passwd' -s 1 -t 1 --no-mangling --layers 1
+```
 </div><div>
 </div></div>
