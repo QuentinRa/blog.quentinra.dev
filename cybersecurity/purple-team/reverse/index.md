@@ -384,6 +384,16 @@ def modify_virtual_methods_size(input_file):
 
 <div class="row row-cols-lg-2"><div>
 
+#### Linux ObjDump Disassembly
+
+The most basic disassembler:
+
+```ps
+$ objdump -D xxx.bin -M intel
+```
+
+<br>
+
 #### Linux GDB Disassembly
 
 [![stack_based_buffer_overflows_linux_x86](../../_badges/htb/stack_based_buffer_overflows_linux_x86.svg)](https://academy.hackthebox.com/course/preview/stack-based-buffer-overflows-on-linux-x86)
@@ -615,6 +625,8 @@ Tools
 * [xiosec list of tools](https://github.com/xiosec/Reverse-engineering)
 * [frida](https://frida.re/): dynamic instrumentation
 * [angr](https://github.com/angr/angr): python CTF tool
+* [Rizin](https://github.com/rizinorg/rizin) and [cutter](https://github.com/rizinorg/cutter)
+* [Hopper](https://www.hopperapp.com/) disassembler
 </div><div>
 
 * [Ghidra](https://www.ghidra-sre.org/)
@@ -629,8 +641,7 @@ Windows
 > Decompile: Main
 > Functions
 > Defined Strings
+StackView
+> Double-click on a variable to open
 ```
-
-* [Rizin](https://github.com/rizinorg/rizin) and [cutter](https://github.com/rizinorg/cutter)
-* [Hopper](https://www.hopperapp.com/) disassembler
 </div></div>

@@ -19,12 +19,11 @@ GitHub Topics
 * [osint](https://github.com/topics/osint)
 </div><div>
 
-Basics
+Roadmap
 
 * [ired.team](https://www.ired.team/)
 * [cryptohack](https://cryptohack.org/)+[crypto-attacks](https://github.com/jvdsn/crypto-attacks) (Cryptography)
-* [guyinatuxedo](https://guyinatuxedo.github.io/index.html) (pwn, reverse, cracking)
-* Refer to buffer overflow/format strings then.
+* Practice buffer overflow/format strings/ROP/UAF
 </div></div>
 
 <hr class="sep-both">

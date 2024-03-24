@@ -96,6 +96,8 @@ As the stack grows, it is logically divided into sections called Stack Frames, w
 
 ⚠️ As a reminder, the head is the last value added (LIFO).
 
+📚 Local variables addresses expressed as `rbp-0x4` are expressed relatively to their function stack frame.
+
 #### Pointer Registers
 
 | x86 | x86-x64 | Description                                    |

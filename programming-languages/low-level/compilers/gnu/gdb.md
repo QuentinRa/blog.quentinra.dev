@@ -71,7 +71,10 @@ To **print** the value of a variable or an expression:
 To **examine the memory**:
 
 ```text!
-(gdb) x/s 0xXXX   # show a strings
+(gdb) x/s 0xXXX   # show a string
+(gdb) x/g 0xXXX   # show a qword
+(gdb) x/w 0xXXX   # show a dword
+(gdb) x/a 0xXXX   # show an address
 ```
 
 To **print the stack trace**:
@@ -109,6 +112,11 @@ $ gdb ./some_program
 #### GDB GEF Assistance
 
 Refer to [GEF](https://github.com/hugsy/gef) <small>(6.4k ⭐)</small>.
+
+```shell!
+gef> set {char [14]} 0xXXX = "Hello, world!"
+gef> vmmap
+```
 
 #### GDB pwndbg Assistance
 
