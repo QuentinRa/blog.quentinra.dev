@@ -111,6 +111,55 @@ Refer to [hashes](https://github.com/spaze/hashes/) <small>(0.7k ⭐)</small> fo
 
 <hr class="sep-both">
 
+## Python Werkzeug Debug Pin (Flask)
+
+[![flask_development_server](../../../../_badges/hacktricks/network_services_pentesting/pentesting_web/werkzeug.svg)](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/werkzeug)
+[![flask_development_server](../../../../_badges/rootme/web_server/flask_development_server.svg)](https://www.root-me.org/en/Challenges/Web-Server/Flask-Development-server)
+
+<div class="row row-cols-lg-2"><div>
+
+Flask is built on top of the Werkzeug webserver. It has a [debugger](https://werkzeug.palletsprojects.com/en/3.0.x/debug/) that can be exploited to gain RCE. Try to access `/console` to see if it's enabled. You will be prompted for a pin.
+
+According to the documentation: *"If an incorrect PIN is entered too many times the server needs to be restarted."*.
+
+We can compute the PIN on our machine assuming we manage to get the necessary information from the target.
+
+```
+private_bits = [
+    # /proc/net/arp (ex: eth0) => /sys/class/net/eth0/address
+    str(int('00:00:00:00:00:00'.replace(':', ''), 16)),
+    'machine_identifier'
+]
+```
+
+To get the machine identifier, concatenate the content of `/etc/machine-id` or `/proc/sys/kernel/random/boot_id` with the last value of the first line <small>(slash-separated, can be empty)</small> of `/proc/self/cgroup`.
+
+</div><div>
+
+```py
+probably_public_bits = [
+    # User running the app (/etc/passwd + /proc/self/status)
+    'username_here',
+    
+    # Usually left unchanged
+    'flask.app', 'Flask',
+    # 'werkzeug.debug', 'DebuggedApplication',
+    # 'flask.app', 'wsgi_app'
+    
+    # We are looking for "flask/app.py"
+    # /usr/local/lib/pythonX/site-packages/
+    # /home/<username>/.local/lib/pythonX/site-packages/
+    '/usr/local/lib/python3.10/site-packages/flask/app.py'
+]
+```
+
+Refer to [hacktricks](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/werkzeug) for the script, while you need to update the two variables for the PIN to be the correct one.
+
+📚 See also: `werkzeug_debug_rce` (secret exposed in HTML?)
+</div></div>
+
+<hr class="sep-both">
+
 ## Random Notes
 
 <div class="row row-cols-lg-2"><div>
