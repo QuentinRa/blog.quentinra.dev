@@ -157,6 +157,8 @@ Opening the executable will automatically load its .NET solutions. You can save 
 
 ## Python Reverse Engineering
 
+[![pyc_bytecode](../../_badges/rootme/cracking/pyc_bytecode.svg)](https://www.root-me.org/en/Challenges/Cracking/PYC-ByteCode)
+
 <div class="row row-cols-lg-2"><div>
 
 Python bytecode files `.pyc` or `.pyo` for optimized bytecode are compiled cross-platform code that `python` can execute.

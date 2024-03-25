@@ -232,7 +232,7 @@ message_2 = xor_strings(key_stream, ciphertext_2)
 
 <div class="row row-cols-lg-2"><div>
 
-#### Modulus with subtraction Algorithm
+#### Modulus of Product And Subtraction
 
 [![babyencryption](../../../_badges/htb-c/babyencryption.svg)](https://app.hackthebox.com/challenges/babyencryption)
 
@@ -250,4 +250,24 @@ with open('./msg.enc','rb') as f:
     print(''.join(pt))
 ```
 </div><div>
+
+#### Modulus of Sum In XOR
+
+[![pyc_bytecode](../../../_badges/rootme/cracking/pyc_bytecode.svg)](https://www.root-me.org/en/Challenges/Cracking/PYC-ByteCode)
+
+If we have `encrypt(c: char) = XOR(ord(c)+salt[c], key[c]) % 255`:
+
+```text!
+encrypt(H) = XOR(72+5, 119) % 255 = 58
+encrypt(e) = XOR(101+12, 108) % 255 = 29
+...
+```
+
+It implies `decrypt(c: int) = (XOR(c, key[c]) % 255) - salt[c]`:
+
+```text!
+decrypt(58) = (XOR(58, 119) % 255) - 5 = H
+decrypt(29) = (XOR(29, 108) % 255) - 12 = e
+...
+```
 </div></div>
