@@ -6,13 +6,13 @@ The [User Account Control (UAC)](/operating-systems/windows/_knowledge/index.md#
 
 You can refer to [UACME](https://github.com/hfiref0x/UACME) <small>(5.8k ⭐)</small> to defeat UAC.
 
-#### By-pass UAC using eventvwr (2016)
+#### Bypass UAC using eventvwr (2016)
 
 [![blaster](../../../../_badges/thm-p/ice.svg)](https://tryhackme.com/room/blaster)
 
 Bypass User Account Control (UAC) using `eventvwr.exe`. The attack is done by editing the registry, which means you must have sufficient privileges to do so <small>(not necessarily an admin, but not a regular user)</small>.
 
-#### By-pass UAC using SystemPropertiesAdvanced (2016)
+#### Bypass UAC using SystemPropertiesAdvanced (2016)
 
 [![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 
