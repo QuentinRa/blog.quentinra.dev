@@ -67,7 +67,9 @@ Then, in `$_REQUEST['n']` there would be `6`, an uncheck value.
 * `"12abc3" == 12` is `True` <small>(12<ignored_invalid> == 12)</small>
 * ...
 
-🪦 PHP Type Juggling is difficult to exploit as usually GET/POST data are strings unless they are converted to
+Additionally, `"abc" == True` is `True` for all versions.
+
+🪦 PHP Type Juggling is difficult to exploit as usually GET/POST data are strings unless they are unserialized using JSON.
 
 #### Loose Comparison — Exploiting STRCMP
 
