@@ -400,7 +400,7 @@ mimikatz# kerberos::ptt ".\xxx@yyy.kirbi" # load ticket
 
 * We can use [mimipenguin](https://github.com/huntergregal/mimipenguin) <small>(3.7k ⭐, 2022 🪦)</small> on Linux
 
-* We can use [Rubeus](https://github.com/GhostPack/Rubeus) <small>(3.7k ⭐)</small> on Windows
+* We can use [Rubeus](/cybersecurity/red-team/tools/utilities/creds/rubeus.md)
 
 ```shell!
 PS> .\Rubeus.exe dump /nowrap # Dump tickets

