@@ -1,6 +1,7 @@
 # JSON Web Token (JWT)
 
 [![hacking_jwt](../../../../_badges/hacktricks/hacking_jwt.svg)](https://book.hacktricks.xyz/pentesting-web/hacking-jwt-json-web-tokens)
+[![json_web_token](../../../../_badges/poat/json_web_token.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/JSON%20Web%20Token)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -27,8 +28,6 @@ They can be transferred and found in:
 <hr class="sep-both">
 
 ## Common JWT Attacks
-
-[![hacking_jwt](../../../../_badges/hacktricks/hacking_jwt.svg)](https://book.hacktricks.xyz/pentesting-web/hacking-jwt-json-web-tokens)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -57,7 +56,11 @@ The secret key may be weak and brute forced:
 
 ```ps
 $ jwt_tool 'jwt' -T -p "key" # use secret key
-$ jwt_tool 'jwt' -C -d /tmp/jwt.secrets.list # crack key
+$ jwt_tool 'jwt' -C -d ./jwt.secrets.list # crack key
+```
+
+```ps
+$ hashcat -m 16500 hash ./jwt.secrets.list
 ```
 
 #### JWT Header Injection — None Algorithm
@@ -99,7 +102,11 @@ $ jwt_tool -X s -ju "URL/jwks.json" -I -hc kid -hv jwt_tool -pc claim -pv value
 
 #### JWT Header Injection — KID
 
-The `kid` header may be added, such as the `jwk` object, to determine which key to use when there are multiple keys.
+[![jwt_header_injection](../../../../_badges/rootme/web_server/jwt_header_injection.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Header-Injection)
+[![jwt_unsecure_key_handling](../../../../_badges/rootme/web_server/jwt_unsecure_key_handling.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Unsecure-Key-Handling)
+[![jwt_public_key](../../../../_badges/rootme/web_server/jwt_public_key.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Public-key)
+
+The `kid` header may be added to the header to determine which key to use when there are multiple keys. It must match the `kid` header inside the `jwt` object or a `jwt` loaded from the `jku` endpoint.
 
 #### JWT Header Injection — HS256
 
@@ -127,8 +134,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [PortSwigger JWT](https://portswigger.net/web-security/jwt)
-* `hashcat -a 0 -m 16500`
-* Attach algo=none means signature is ignored.
 * [JWT](https://jwt.io/), (Bearer, encrypted token), modern alternative to (apache) HTTP basic auth? (from=35). HTB/170. [RFC](https://tools.ietf.org/html/rfc7617).
 * [CVE-2022-39227](https://github.com/user0x1337/CVE-2022-39227) for `python-jwt<3.3.4`: given a token, forge fake tokens
 </div><div>
