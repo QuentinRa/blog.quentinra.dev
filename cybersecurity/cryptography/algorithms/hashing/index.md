@@ -207,8 +207,6 @@ $ john hashes --format=sha512crypt --wordlist=wordlist
 $ hashcat -m 1800 -a 0 hashes wordlist
 ```
 
-<br>
-
 #### Windows password hash cracking
 
 [![password_attacks](../../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
@@ -235,8 +233,6 @@ $ hashcat -a 0 -m 1100 myhash wordlist # password:username
 $ hashcat -a 0 -m 2100 myhash wordlist # $DCC2$salt#username#hash
 ```
 
-<br>
-
 #### Windows DPAPI Masterkey file
 
 [![chrome](../../../_badges/thm-p/chrome.svg)](https://tryhackme.com/room/chrome)
@@ -247,8 +243,6 @@ To get the user password from the [DPAPI](/operating-systems/windows/security/in
 $ /usr/share/john/DPAPImk2john.py --masterkey H-I-J-K-L --sid S-A-B-C-D-E-F-G --context local > myhash
 $ john myhash --wordlist=wordlist
 ```
-
-<br>
 
 #### GPG passphrase cracking
 
@@ -263,8 +257,6 @@ To crack the passphrase of [GPG encrypted files](/cybersecurity/cryptography/com
 $ gpg2john file.pgp > myhash
 $ john --format=gpg myhash --wordlist=wordlist 
 ```
-
-<br>
 
 #### SSH private key - passphrase cracking
 
@@ -281,7 +273,24 @@ $ ssh2john key > myhash
 $ john --format=ssh myhash --wordlist=wordlist
 ```
 
-<br>
+#### Kerberos tickets cracking
+
+[![active_directory_enumeration_attacks](../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+If you have a kirbi file, you need to convert it to a hash:
+
+```shell!
+$ kirbi2john cn.kirbi > hash
+```
+
+Once you have a hash, you can crack it using:
+
+```shell!
+$ john --format="krb5tgs" rc4hash --wordlist=wordlist
+$ hashcat -m 13100 rc4hash wordlist
+$ hashcat -m 19700 aeshash wordlist
+```
+</div><div>
 
 #### Documents - password cracking
 
@@ -299,7 +308,6 @@ $ john myhash --show
 $ pdf2john xxx.pdf > myhash
 $ john myhash --wordlist=wordlist
 ```
-</div><div>
 
 #### RAR password cracking
 

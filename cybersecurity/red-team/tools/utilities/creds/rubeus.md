@@ -1,5 +1,8 @@
 # Rubeus
 
+[![password_attacks](../../../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
 <div class="row row-cols-lg-2"><div>
 
 [Rubeus](https://github.com/GhostPack/Rubeus) <small>(3.8k ⭐)</small> is a Windows tool to interact with kerberos and manipulate tickets.

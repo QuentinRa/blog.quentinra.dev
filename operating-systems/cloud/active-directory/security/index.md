@@ -162,6 +162,12 @@ PS> .\Rubeus.exe kerberoast /tgtdeleg /ldapfilter:'admincount=1' /nowrap # try a
 ```
 
 Some tools can try to perform a downgrade attack from AES to RC4. It won't work as of Windows Server 2019.
+
+Refer to [cracking Kerberos Tickets](/cybersecurity/cryptography/algorithms/hashing/index.md#kerberos-tickets-cracking).
+
+📚 Refer to "Managed Service Accounts" for remediation (LAPS).
+
+📚 More tools: [kerberoast](https://github.com/nidem/kerberoast) <small>(1.3k ⭐)</small>, [RiskySPN](https://github.com/cyberark/RiskySPN) <small>(0.3k ⭐)</small>
 </div></div>
 
 <hr class="sep-both">
