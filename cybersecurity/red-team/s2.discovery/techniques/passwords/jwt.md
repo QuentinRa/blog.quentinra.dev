@@ -108,7 +108,7 @@ $ jwt_tool -X s -ju "URL/jwks.json" -I -hc kid -hv jwt_tool -pc claim -pv value
 
 The `kid` header may be added to the header to determine which key to use when there are multiple keys. It must match the `kid` header inside the `jwt` object or a `jwt` loaded from the `jku` endpoint.
 
-#### JWT Header Injection — HS256
+#### JWT Header Injection — RS256 to HS256
 
 [![jwt_public_key](../../../../_badges/rootme/web_server/jwt_public_key.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Public-key)
 
