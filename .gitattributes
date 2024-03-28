@@ -1,8 +1,2 @@
-cybersecurity/*.md linguist-documentation=false linguist-detectable=true
-games/*.md linguist-documentation=false linguist-detectable=true
-maths/*.md linguist-documentation=false linguist-detectable=true
-operating-systems/*.md linguist-documentation=false linguist-detectable=true
-programming-languages/*.md linguist-documentation=false linguist-detectable=true
-tools-and-frameworks/*.md linguist-documentation=false linguist-detectable=true
 *.md linguist-detectable
 *.py linguist-documentation=false linguist-detectable=false
