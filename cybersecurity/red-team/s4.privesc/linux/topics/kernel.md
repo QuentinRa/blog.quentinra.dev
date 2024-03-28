@@ -1,9 +1,9 @@
 # Kernel
 
+[![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![adventofcyber2](../../../../../cybersecurity/_badges/thm/adventofcyber2/day13.svg)](https://tryhackme.com/room/adventofcyber2)
 [![linprivesc](../../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![linuxprivesc](../../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
-[![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![overlayfs](../../../../_badges/thm-p/overlayfs.svg)](https://tryhackme.com/room/overlayfs)
 
 <div class="row row-cols-lg-2"><div>
@@ -19,9 +19,9 @@ You can find the complete list of CVEs for the Linux Kernel [here](https://www.l
 
 There are scripts to find vulnerable kernels, but they may generate false positives or false negatives.
 
-* [linux-exploit-suggester](https://github.com/mzet-/linux-exploit-suggester) (3.9k ⭐): still updated with new exploits
-* [Linux_Exploit_Suggester](https://github.com/InteliSecureLabs/Linux_Exploit_Suggester) (1.6k ⭐): up to 4.x excluded
-* [Linux Kernel Exploit Suggester 2](https://github.com/jondonas/linux-exploit-suggester-2) (1.4k ⭐): up to 5.x excluded
+* [linux-exploit-suggester](https://github.com/mzet-/linux-exploit-suggester) <small>(3.9k ⭐)</small>: still updated with new exploits
+* [Linux_Exploit_Suggester](https://github.com/InteliSecureLabs/Linux_Exploit_Suggester) <small>(1.6k ⭐)</small>: up to 4.x excluded
+* [Linux Kernel Exploit Suggester 2](https://github.com/jondonas/linux-exploit-suggester-2) <small>(1.4k ⭐)</small>: up to 5.x excluded
 </div></div>
 
 <hr class="sep-both">
