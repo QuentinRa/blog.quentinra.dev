@@ -19,6 +19,7 @@
 [![gamingserver](../../../../_badges/thm-p/gamingserver.svg)](https://tryhackme.com/room/gamingserver)
 [![cyborgt8](../../../../_badges/thm-p/cyborgt8.svg)](https://tryhackme.com/room/cyborgt8)
 [![md2pdf](../../../../_badges/thm-p/md2pdf.svg)](https://tryhackme.com/r/room/md2pdf)
+[![surfer](../../../../_badges/thm-p/surfer.svg)](https://tryhackme.com/r/room/surfer)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 [![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
 [![cozyhosting](../../../../_badges/htb-p/cozyhosting.svg)](https://app.hackthebox.com/machines/CozyHosting)
@@ -75,6 +76,14 @@ $ git show commit_id
 👻 Automated tools: [GitHacker](https://github.com/WangYihang/GitHacker), [GitTools](https://github.com/internetwache/GitTools), [GitHack](https://github.com/lijiejie/GitHack), etc.
 
 📚 `.git` may be blocked (403) but `.git/index`, `.git/HEAD`, etc. may not.
+
+#### Composer Vendor Folder Exposure
+
+[![surfer](../../../../_badges/thm-p/surfer.svg)](https://tryhackme.com/r/room/surfer)
+
+[Composer](/programming-languages/web/php/composer/index.md) is a package manager for PHP. From `composer.json`, it creates a `vendor` folder with the PHP packages.
+
+This folder should not be available for remote users.
 </div><div>
 
 #### CGI Scripts

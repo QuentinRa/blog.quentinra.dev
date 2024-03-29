@@ -34,14 +34,34 @@
 
 <div class="row row-cols-lg-2"><div>
 
-There are two **paid** solutions to attack [WordPress](/programming-languages/web/others/cms/wordpress/index.md): [Jetpack](https://jetpack.com/) and [WPScan](https://wpscan.com/). WPScan is providing a CLI tool for **free** and for non-commercial use available [here](https://wpscan.com/wordpress-cli-scanner/) (8.0k ⭐).
+#### WordPress Enumeration
+
+You can enumerate versions, themes, plugins, and usernames.
+
+* You can use [WPScan](_files/wpscan.md) to enumerate most of it
 
 ```ps
-# before every scan, update the local metadata database
-$ wpscan --update # may be automatically performed
+$ wpscan --url URL
+$ wpscan --url URL -e u  # users
+$ wpscan --url URL -e t  # themes (or 'vt')
+$ wpscan --url URL -e ap # plugins (or 'p' or 'vp')
 ```
 
-You can enumerate themes, plugins, and usernames. By default, without `-e`, it will scan using `-e vp,vt,tt,cb,dbe,u,m`.
+* Manually explore `/wp-content/**/**` if directory listing is enabled
+</div><div>
+
+#### WordPress FootHold
+
+...
+
+#### WordPress Exploitation
+
+...
+</div></div>
+
+<hr class="sep-both">
+
+<div class="row row-cols-lg-2"><div>
 
 ```ps
 # Look into the HTML, /wp-content/themes/... for themes
@@ -140,6 +160,7 @@ Configuration
 Plugins
 
 * Elementor
+* JetPack
 
 Stuff
 
