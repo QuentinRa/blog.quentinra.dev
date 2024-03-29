@@ -1,5 +1,7 @@
 # Docker
 
+[![introtodockerk8pdqk](../../../../cybersecurity/_badges/thm/introtodockerk8pdqk.svg)](https://tryhackme.com/room/introtodockerk8pdqk)
+
 <div class="row row-cols-lg-2"><div>
 
 [Docker](https://www.docker.com/) allows someone to pack an operating system along with stuff on it <small>(apps, files, configurations...)</small> in something called an **image**. You can then distribute it to others.
@@ -43,6 +45,8 @@ We usually start from an operating system such as [ubuntu](https://hub.docker.co
 
 #### Docker tags
 
+[![introtodockerk8pdqk](../../../../cybersecurity/_badges/thm/introtodockerk8pdqk.svg)](https://tryhackme.com/room/introtodockerk8pdqk)
+
 A **tag** is the image's name and its version. For instance, `fedora:latest` or `fedora:34`. When the version is `latest`, it's implicit, and can be omitted, so `fedora` and `fedora:latest` are the same.
 
 Tags point to an image. You can create them: `docker tag xxx:34 xxx:latest` <small>(xxx:latest point to xxx:34)</small> or remove them `docker rmi tag`.
@@ -51,6 +55,8 @@ Tags point to an image. You can create them: `docker tag xxx:34 xxx:latest` <sma
 </div><div>
 
 #### Docker image commands
+
+[![introtodockerk8pdqk](../../../../cybersecurity/_badges/thm/introtodockerk8pdqk.svg)](https://tryhackme.com/room/introtodockerk8pdqk)
 
 To **download** an image
 
@@ -76,6 +82,8 @@ $ docker image rm image_tag_or_id
 <hr class="sep-both">
 
 ## Containers
+
+[![introtodockerk8pdqk](../../../../cybersecurity/_badges/thm/introtodockerk8pdqk.svg)](https://tryhackme.com/room/introtodockerk8pdqk)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -217,6 +225,8 @@ To run GUI applications on Linux, run `xhost +local:docker` and use:
 <hr class="sep-both">
 
 ## Dockerfile
+
+[![introtodockerk8pdqk](../../../../cybersecurity/_badges/thm/introtodockerk8pdqk.svg)](https://tryhackme.com/room/introtodockerk8pdqk)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -386,6 +396,8 @@ directory/
 
 #### Building
 
+[![introtodockerk8pdqk](../../../../cybersecurity/_badges/thm/introtodockerk8pdqk.svg)](https://tryhackme.com/room/introtodockerk8pdqk)
+
 After creating a [Dockerfile](#dockerfile), you can build your image using:
 
 ```ps
@@ -433,6 +445,8 @@ $ docker tag tag:latest example.com:5000/tag:latest
 <hr class="sep-both">
 
 ## Docker compose plugin
+
+[![introtodockerk8pdqk](../../../../cybersecurity/_badges/thm/introtodockerk8pdqk.svg)](https://tryhackme.com/room/introtodockerk8pdqk)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -513,6 +527,7 @@ networks:
 
 ## Docker Layers 🍷
 
+[![introtodockerk8pdqk](../../../../cybersecurity/_badges/thm/introtodockerk8pdqk.svg)](https://tryhackme.com/room/introtodockerk8pdqk)
 [![docker_layers](../../../../cybersecurity/_badges/rootme/forensic/docker_layers.svg)](https://www.root-me.org/en/Challenges/Forensic/Docker-layers)
 
 <div class="row row-cols-lg-2"><div>
@@ -550,11 +565,15 @@ By exploring these files, you can see every changes applied to a docker image fr
 
 ## Docker Pentester Notes ☠️
 
-[![linuxprivilegeescalation](../../../../cybersecurity/_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
-[![chillhack](../../../../cybersecurity/_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
-[![busqueda](../../../../cybersecurity/_badges/htb-p/busqueda.svg)](https://app.hackthebox.com/machines/Busqueda)
-
 <div class="row row-cols-lg-2"><div>
+
+Note: [check for local TCP access to docker](https://docs.docker.com/config/daemon/remote-access/).
+
+#### Docker — Socket Privilege Escalation
+
+[![linuxprivilegeescalation](../../../../cybersecurity/_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![introtodockerk8pdqk](../../../../cybersecurity/_badges/thm/introtodockerk8pdqk.svg)](https://tryhackme.com/room/introtodockerk8pdqk)
+[![chillhack](../../../../cybersecurity/_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
 
 If a user is part of the docker group, they can interact with the docker daemon without `sudo`. This can be used for [privilege escalation](/cybersecurity/red-team/s4.privesc/index.md).
 
@@ -582,6 +601,10 @@ $ docker -H unix:///run/docker.sock run --privileged -v /:/hostfs xxx ls
 ```
 </div><div>
 
+#### Docker — Credentials Harvesting
+
+[![busqueda](../../../../cybersecurity/_badges/htb-p/busqueda.svg)](https://app.hackthebox.com/machines/Busqueda)
+
 Docker inspect may be used to find credentials.
 
 ```ps
@@ -589,9 +612,13 @@ $ docker inspect xxx -f '{{json .Config }}' | jq
 $ docker inspect xxx -f '{{json .Config.Env }}' | jq
 ```
 
-If we are in a container as root, and we can access hard drives <small>(fdisk output is not empty)</small>, then we can mount the drive and read its files:
+<br>
+
+#### Docker — Container Breakout
 
 [![docker_i_am_groot](../../../../cybersecurity/_badges/rootme/app_script/docker_i_am_groot.svg)](https://www.root-me.org/en/Challenges/App-Script/Docker-I-am-groot)
+
+If we are in a container as root, and we can access hard drives <small>(fdisk output is not empty)</small>, then we can mount the drive and read its files:
 
 ```ps
 $ fdisk -l
