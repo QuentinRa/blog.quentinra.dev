@@ -33,3 +33,40 @@ def index(request):
 
 If you're using HTML, then you can use template injection: `{% ... %}`. Refer to the documentation, there are multiple instructions possible.
 </div></div>
+
+<hr class="sep-both">
+
+## Django Pentester Notes ☠️
+
+<div class="row row-cols-lg-2"><div>
+
+#### Django Enumeration
+
+[![django](../../../../../cybersecurity/_badges/thm/django.svg)](https://tryhackme.com/room/django)
+[![unbakedpie](../../../../../cybersecurity/_badges/thm-p/unbakedpie.svg)](https://tryhackme.com/r/room/unbakedpie)
+
+* Check if there is a `/admin` or a `/media` endpoint
+
+* Check for Python Headers (`WSGIServer`, `CPython`)
+
+* If `DEBUG` mode is enabled, any error including 404, but even error 500 will expose a lot of information:
+
+```text!
+Python Version - may help to customize payloads
+Python Path - may expose usernames
+HOSTNAME - may help to customize payloads
+LOGIN_URL - if you didn't know the URL
+MEDIA_ROOT - may expose usernames
+STATICFILES_DIRS - may expose usernames
+```
+
+It even discloses the type of DBMS and how it is configured.
+</div><div>
+
+#### Django Exploitation
+
+[![unbakedpie](../../../../../cybersecurity/_badges/thm-p/unbakedpie.svg)](https://tryhackme.com/r/room/unbakedpie)
+
+* If `DEBUG` mode is enabled, try to generate an error, which would in turn makes Django expose a part of the code related to the error
+
+</div></div>
