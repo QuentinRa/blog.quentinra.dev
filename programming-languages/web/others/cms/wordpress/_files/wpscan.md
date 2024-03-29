@@ -18,8 +18,25 @@ $ wpscan --update # may be automatically performed
 $ wpscan --url URL
 ```
 
-By default, without `-e`, it will scan using `-e vp,vt,tt,cb,dbe,u,m`.
+By default, it uses `-e`/`--enumerate` with `vp,vt,tt,cb,dbe,u,m`.
+
+```ps
+$ wpscan --url URL -e t,vt # themes | vulnerable themes
+$ wpscan --url URL -e ap   # all plugins
+$ wpscan --url URL -e p,vp # popular plugins | vulnerable plugins
+$ wpscan --url URL -e u    # users
+```
 </div><div>
 
+You can increase the number of threads:
 
+```ps
+$ wpscan [...] -t 5 # default
+```
+
+You may have to add `--random-user-agent` to bypass a simple WAF:
+
+```ps
+$ wpscan [...] --random-user-agent
+```
 </div></div>

@@ -22,21 +22,43 @@
 
 <hr class="sep-both">
 
+## WordPress Overview
+
+<div class="row row-cols-lg-2"><div>
+
+#### Common WordPress Endpoints
+
+**Files**
+
+**Folders**
+
+Themes are stored in `/wp-content/themes/<theme_name>/`.
+
+Plugin files are stored in `/wp-content/plugins/<plugin_name>/`. There is usually a readme.html explaining how it works.
+
+Uploaded files are stored in `/wp-content/uploads/`.
+
+Critical internal WordPress files are stored in `/wp-includes`.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## WordPress Pentester Notes ☠️
 
 [![hackingwordpress](../../../../../cybersecurity/_badges/htb/hackingwordpress.svg)](https://academy.hackthebox.com/course/preview/hacking-wordpress)
 [![attacking_common_applications](../../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 [![webenumerationv2](../../../../../cybersecurity/_badges/thmp/webenumerationv2.svg)](https://tryhackme.com/room/webenumerationv2)
-[![colddboxeasy](../../../../../cybersecurity/_badges/thm-p/colddboxeasy.svg)](https://tryhackme.com/room/colddboxeasy)
-[![allinonemj](../../../../../cybersecurity/_badges/thm-p/allinonemj.svg)](https://tryhackme.com/room/allinonemj)
-[![blocky](../../../../../cybersecurity/_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
 [![wordpress](../../../../../cybersecurity/_badges/hacktricks/wordpress.svg)](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/wordpress)
 
 <div class="row row-cols-lg-2"><div>
 
 #### WordPress Enumeration
 
-You can enumerate versions, themes, plugins, and usernames.
+[![allinonemj](../../../../../cybersecurity/_badges/thm-p/allinonemj.svg)](https://tryhackme.com/room/allinonemj)
+[![blocky](../../../../../cybersecurity/_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
+
+You can enumerate [metadata](https://wpscan.com/wordpresses), [themes](https://wpscan.com/themes), [plugins](https://wpscan.com/plugins), and usernames.
 
 * You can use [WPScan](_files/wpscan.md) to enumerate most of it
 
@@ -48,40 +70,37 @@ $ wpscan --url URL -e ap # plugins (or 'p' or 'vp')
 ```
 
 * Manually explore `/wp-content/**/**` if directory listing is enabled
+
+* WordPress version is in the source code or can be inferred from the default theme <small>(`<meta name="generator" content="WordPress X.Y.Z">`)</small>
+
+* Plugin and theme names/versions are exposed within the website source code <small>(link/script)</small>. The URL may include the version.
+
+* Look for links to user accounts, iterate `/?author=<id>`, or use `/wp-json/wp/v2/users` for versions before 4.7.1. While crawling the website, you may also find URLs such as `/author`.
+
+```shell!
+$ onectf crawl -u URL | grep author
+```
+
+* You can try to look in `/robots.txt` for something unexpected
 </div><div>
 
 #### WordPress FootHold
+
+[![colddboxeasy](../../../../../cybersecurity/_badges/thm-p/colddboxeasy.svg)](https://tryhackme.com/room/colddboxeasy)
 
 ...
 
 #### WordPress Exploitation
 
-...
+Refer to:
+
+* [WordPress Plugins Exploitation](_files/wp-plugins.md)
+* [WordPress Admin RCE](_files/wp-rce.md)
 </div></div>
 
 <hr class="sep-both">
 
 <div class="row row-cols-lg-2"><div>
-
-```ps
-# Look into the HTML, /wp-content/themes/... for themes
-$ wpscan --url URL -e t
-$ wpscan --url URL -e vt # vulnerable themes
-# Look into /wp-content/plugins/pluginname/... for plugins
-# Use the README in each plugin to find the version
-$ wpscan --url URL -e ap # all plugins
-$ wpscan --url URL -e p  # popular plugins
-$ wpscan --url URL -e vp # vulnerable plugins
-# Find users (look for ID in posts...)
-$ wpscan --url URL -e u
-$ wpscan --url URL --enumerate u # same
-```
-
-You may have to add `--random-user-agent` to bypass a simple WAF:
-
-```ps
-$ wpscan [...] --random-user-agent
-```
 
 You can use WPScan/[hydra](/cybersecurity/red-team/tools/cracking/auth/hydra.md#form-brute-force)/... to bruteforce the login form. When using the tool, you may also use `xmlrpc` instead of the login page.
 
@@ -101,33 +120,6 @@ You can select a mode between aggressive/passive when scanning. Some results mig
 $ wpscan --url URL -e t --plugins-detection aggressive
 $ wpscan --url URL -e t --plugins-detection passive
 ```
-
-You can increase the number of threads:
-
-```ps
-$ wpscan [...] -t 5 # default
-```
-
-The CLI can be unleashed with WPScan API that will retrieve vulnerabilities  when scanning. The limit is 25 requests per day. See [Optional: WordPress Vulnerability Database API](https://github.com/wpscanteam/wpscan/wiki/WPScan-User-Documentation#optional-wordpress-vulnerability-database-api). You can also browse vulnerabilities manually: [WordPress](https://wpscan.com/wordpresses), [Plugins](https://wpscan.com/plugins), and [Themes](https://wpscan.com/themes).
-
-```ps
-# To list vulnerabilities, add a "v" before the enumerated type
-# ex: vulnerable plugins
-$ wpscan --url URL -e vp
-```
-
-**To do it manually**
-
-* WordPress version is in the source code (`<meta name="generator" content="WordPress X.Y.Z">`)
-* Plugin and Theme names/versions are often loaded from the source code (link/script). The URL may include the version.
-* Both WordPress, Plugins, and Themes may have a `readme.html`
-* Look for links to user accounts, iterate `/?author=<id>`, or use `/wp-json/wp/v2/users` for versions before 4.7.1
-* You can try to look in `/robots.txt` for something unexpected
-
-**Exploit WordPress**
-
-* [WordPress Plugins Exploitation](_files/wp-plugins.md)
-* [WordPress Admin RCE](_files/wp-rce.md)
 </div></div>
 
 <hr class="sep-both">
@@ -168,8 +160,6 @@ Stuff
 * WYSIWYG
 * `/wp-admin/`, `login.php`, `wp-login.php`
 * `xmlrpc.php` (XML API)
-* `wp-content/uploads/`, `wp-content/plugins/`, `wp-content/themes/`
-* `wp-includes`
 * `select user_login,user_pass from wp_users;`
 * 10 levels of access, 5 (actually 6 with SA) roles
 </div></div>
