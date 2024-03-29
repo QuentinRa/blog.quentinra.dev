@@ -673,7 +673,6 @@ c.innerText.trim().replace(/, (.*)/, "$1")
 </div><div>
 
 * [rollupjs](https://github.com/rollup/rollup)
-* [webpack](https://webpack.js.org/) <small>([compat](https://github.com/ElemeFE/obsolete-webpack-plugin))</small>
 * [i18next](https://www.i18next.com/), [localizejs](https://localizejs.com/)
 * [project-guidelines](https://github.com/elsewhencode/project-guidelines)
 * storybook
