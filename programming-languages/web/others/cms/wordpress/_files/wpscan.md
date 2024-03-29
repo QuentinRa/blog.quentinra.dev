@@ -28,6 +28,19 @@ $ wpscan --url URL -e u    # users
 ```
 </div><div>
 
+You can select aggressive/passive when scanning. Try both if you can.
+
+```ps
+$ wpscan --url URL -e t --plugins-detection aggressive
+$ wpscan --url URL -e t --plugins-detection passive
+```
+
+You can try to brute force accounts:
+
+```ps
+$ wpscan --url URL -P wordlist -U username # ", username2, etc."
+```
+
 You can increase the number of threads:
 
 ```ps

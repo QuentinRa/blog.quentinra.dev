@@ -56,6 +56,7 @@ Critical internal WordPress files are stored in `/wp-includes`.
 #### WordPress Enumeration
 
 [![allinonemj](../../../../../cybersecurity/_badges/thm-p/allinonemj.svg)](https://tryhackme.com/room/allinonemj)
+[![wordpresscve202129447](../../../../../cybersecurity/_badges/thm-p/wordpresscve202129447.svg)](https://tryhackme.com/r/room/wordpresscve202129447)
 [![blocky](../../../../../cybersecurity/_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
 
 You can enumerate [metadata](https://wpscan.com/wordpresses), [themes](https://wpscan.com/themes), [plugins](https://wpscan.com/plugins), and usernames.
@@ -67,6 +68,7 @@ $ wpscan --url URL
 $ wpscan --url URL -e u  # users
 $ wpscan --url URL -e t  # themes (or 'vt')
 $ wpscan --url URL -e ap # plugins (or 'p' or 'vp')
+$ wpscan --url URL [...] --plugins-detection aggressive
 ```
 
 * Manually explore `/wp-content/**/**` if directory listing is enabled
@@ -87,39 +89,25 @@ $ onectf crawl -u URL | grep author
 #### WordPress FootHold
 
 [![colddboxeasy](../../../../../cybersecurity/_badges/thm-p/colddboxeasy.svg)](https://tryhackme.com/room/colddboxeasy)
+[![wordpresscve202129447](../../../../../cybersecurity/_badges/thm-p/wordpresscve202129447.svg)](https://tryhackme.com/r/room/wordpresscve202129447)
 
-...
+* The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md):
+
+```shell!
+$ wpscan --url URL -P wordlist -U username # ", username2, etc."
+$ hydra -l username -P wordlist domain http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&testcookie=1:S=Location' -V
+$ hydra -l username -P wordlist domain http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&testcookie=1:F=is incorrect.' -V
+```
+
+While using `xmlrpc` is faster, it's not always 'enabled.' Ensure it's present and enabled before using it. WPScan automatically checks if it can, but this check is bypassed using `--password-attack xmlrpc`.
 
 #### WordPress Exploitation
 
 Refer to:
 
+* [WordPress Core Exploitation](_files/wp-core.md)
 * [WordPress Plugins Exploitation](_files/wp-plugins.md)
 * [WordPress Admin RCE](_files/wp-rce.md)
-</div></div>
-
-<hr class="sep-both">
-
-<div class="row row-cols-lg-2"><div>
-
-You can use WPScan/[hydra](/cybersecurity/red-team/tools/cracking/auth/hydra.md#form-brute-force)/... to bruteforce the login form. When using the tool, you may also use `xmlrpc` instead of the login page.
-
-```shell!
-$ wpscan --url URL -P wordlist -U username # ", username2, etc."
-$ wpscan [...] --password-attack xmlrpc    # use xmlrpc, faster
-$ hydra -l username -P wordlist domain http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&testcookie=1:S=Location' -V
-$ hydra -l username -P wordlist domain http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&testcookie=1:F=is incorrect.' -V
-```
-
-⚠️ Don't use WordPress RPC API if you haven't tested that it works.
-</div><div>
-
-You can select a mode between aggressive/passive when scanning. Some results might not be visible according to the mode selected, so you should try both if you can.
-
-```ps
-$ wpscan --url URL -e t --plugins-detection aggressive
-$ wpscan --url URL -e t --plugins-detection passive
-```
 </div></div>
 
 <hr class="sep-both">
