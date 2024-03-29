@@ -7,9 +7,9 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[Linux Containers](https://linuxcontainers.org/) (LXC) is a Linux only virtualization method to run multiple Linux systems using the host Linux kernel.
+[Linux Containers](https://linuxcontainers.org/) (LXC) is a Linux-only virtualization method to run multiple Linux systems using the host Linux kernel.
 
-[Docker](../docker/index.md) is built over LXC. It provides additional features and a simplified interface. They share the notion of 'image' and 'container'.
+[Docker](../docker/index.md) was first built over LXC. It provides additional features and a simplified interface. They share the notion of 'image' and 'container'.
 
 LXC can only be used on Linux hosts. Users part of the `lxd` group can call any commands without sudo. 
 
