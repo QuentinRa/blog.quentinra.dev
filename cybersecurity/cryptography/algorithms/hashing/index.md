@@ -157,6 +157,7 @@ $ cat myhash | hash-identifier
 [![chillhack](../../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
 [![cowboyhacker](../../../_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
 [![cyborgt8](../../../_badges/thm-p/cyborgt8.svg)](https://tryhackme.com/room/cyborgt8)
+[![wordpresscve202129447](../../../_badges/thm-p/wordpresscve202129447.svg)](https://tryhackme.com/r/room/wordpresscve202129447)
 [![devvortex](../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
 [![cozyhosting](../../../_badges/htb-p/cozyhosting.svg)](https://app.hackthebox.com/machines/CozyHosting)
 [![file_pkzip](../../../_badges/rootme/cryptanalysis/file_pkzip.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/File-PKZIP)
