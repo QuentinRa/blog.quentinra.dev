@@ -158,6 +158,7 @@ $ cat myhash | hash-identifier
 [![cowboyhacker](../../../_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
 [![cyborgt8](../../../_badges/thm-p/cyborgt8.svg)](https://tryhackme.com/room/cyborgt8)
 [![wordpresscve202129447](../../../_badges/thm-p/wordpresscve202129447.svg)](https://tryhackme.com/r/room/wordpresscve202129447)
+[![bruteit](../../../_badges/thm-p/bruteit.svg)](https://tryhackme.com/r/room/bruteit)
 [![devvortex](../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
 [![cozyhosting](../../../_badges/htb-p/cozyhosting.svg)](https://app.hackthebox.com/machines/CozyHosting)
 [![file_pkzip](../../../_badges/rootme/cryptanalysis/file_pkzip.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/File-PKZIP)
@@ -198,6 +199,7 @@ Some special cases of using john/hashcat along other tools.
 
 [![password_attacks](../../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![linprivesc](../../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
+[![bruteit](../../../_badges/thm-p/bruteit.svg)](https://tryhackme.com/r/room/bruteit)
 
 To crack the whole shadow file, you may use `unshadow`:
 
@@ -266,6 +268,7 @@ $ john --format=gpg myhash --wordlist=wordlist
 [![basicpentestingjt](../../../_badges/thm-p/basicpentestingjt.svg)](https://tryhackme.com/room/basicpentestingjt)
 [![mustacchio](../../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
 [![gamingserver](../../../_badges/thm-p/gamingserver.svg)](https://tryhackme.com/room/gamingserver)
+[![bruteit](../../../_badges/thm-p/bruteit.svg)](https://tryhackme.com/r/room/bruteit)
 
 SSH may have been configured to use a passphrase-protected [ssh keys](/operating-systems/networking/protocols/ssh.md). You must convert the file to a crackable file for john:
 
