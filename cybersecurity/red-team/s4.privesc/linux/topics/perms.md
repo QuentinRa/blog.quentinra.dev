@@ -140,6 +140,7 @@ $ sudo setcap --drop=cap_setuid your_binary
 ## Special Groups
 
 [![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![linuxfilesystemanalysis](../../../../_badges/thm/linuxfilesystemanalysis.svg)](https://tryhackme.com/r/room/linuxfilesystemanalysis)
 [![busqueda](../../../../_badges/htb-p/busqueda.svg)](https://app.hackthebox.com/machines/Busqueda)
 [![gamingserver](../../../../_badges/thm-p/gamingserver.svg)](https://tryhackme.com/room/gamingserver)
 [![chillhack](../../../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
@@ -154,6 +155,10 @@ DO NOT ASSUME ANYTHING. A user not in a group <small>(not in the `sudo` group</s
 
 * See also: [LXC/LXD permissions](/operating-systems/others/virtualization/lxc/index.md#pentester-notes-)
 </div><div>
+
+* Users in the `shadow` group can read `/etc/shadow`
+
+* Users in the `disk` group can read/write any file
 </div></div>
 
 <hr class="sep-both">

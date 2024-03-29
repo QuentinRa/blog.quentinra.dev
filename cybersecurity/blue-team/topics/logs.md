@@ -123,6 +123,7 @@ Some methods of contact 📨: SMS, email, push notification...
 [![linuxfundamentals](../../_badges/htb/linuxfundamentals.svg)](https://academy.hackthebox.com/course/preview/linux-fundamentals)
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![linuxfundamentalspart3](../../_badges/thm/linuxfundamentalspart3.svg)](https://tryhackme.com/room/linuxfundamentalspart3)
+[![linuxfilesystemanalysis](../../_badges/thm/linuxfilesystemanalysis.svg)](https://tryhackme.com/r/room/linuxfilesystemanalysis)
 [![adventofcyber4](../../_badges/thm/adventofcyber4/day2.svg)](https://tryhackme.com/room/adventofcyber4)
 
 <div class="row row-cols-lg-2"><div>

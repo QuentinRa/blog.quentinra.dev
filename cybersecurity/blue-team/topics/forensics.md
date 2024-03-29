@@ -261,6 +261,46 @@ for section in pe.sections:
 
 <hr class="sep-both">
 
+## Linux Live Forensics
+
+[![linuxfilesystemanalysis](../../_badges/thm/linuxfilesystemanalysis.svg)](https://tryhackme.com/r/room/linuxfilesystemanalysis)
+
+<div class="row row-cols-lg-2"><div>
+
+Binaries may have been tampered with. You should load yours.
+
+```shell!
+$ export PATH=/mnt/xxx/bin:/mnt/xxx/sbin
+$ export LD_LIBRARY_PATH=/mnt/xxx/lib:/mnt/xxx/lib64
+```
+
+Inspect commonly used directories.
+
+```shell!
+$ ls /tmp
+$ ls /var/tmp
+$ ls /dev/shm
+```
+
+While inspecting files, such as using `stat`, you might inspect:
+
+* mtime <small>(content modified)</small>
+* ctime <small>(metadata modified)</small>
+* atime <small>(accessed, unreliable)</small>
+</div><div>
+
+Look for backdoors:
+
+* `/etc/passwd` for uid 0, and check each user groups
+* `/etc/sudoers` for unexpected permissions
+
+Additional notes:
+
+* `.bash_history` may contains insight
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
