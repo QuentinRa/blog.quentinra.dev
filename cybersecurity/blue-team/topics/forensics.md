@@ -293,10 +293,13 @@ Look for backdoors:
 
 * `/etc/passwd` for uid 0, and check each user groups
 * `/etc/sudoers` for unexpected permissions
+* `.ssh/authorized_keys` for unexpected SSH keys
+* Look for [rootkits](/cybersecurity/red-team/s5.post-exploitation/index.md#-leave-a-backdoor-on-linux)
 
 Additional notes:
 
 * `.bash_history` may contains insight
+* `debsums -e -s` may be used for package integrity check
 </div></div>
 
 <hr class="sep-both">
