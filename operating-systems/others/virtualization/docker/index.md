@@ -616,6 +616,7 @@ $ docker inspect xxx -f '{{json .Config.Env }}' | jq
 
 #### Docker — Container Breakout
 
+[![unbakedpie](../../../../cybersecurity/_badges/thm-p/unbakedpie.svg)](https://tryhackme.com/r/room/unbakedpie)
 [![docker_i_am_groot](../../../../cybersecurity/_badges/rootme/app_script/docker_i_am_groot.svg)](https://www.root-me.org/en/Challenges/App-Script/Docker-I-am-groot)
 
 If we are in a container as root, and we can access hard drives <small>(fdisk output is not empty)</small>, then we can mount the drive and read its files:
@@ -624,6 +625,13 @@ If we are in a container as root, and we can access hard drives <small>(fdisk ou
 $ fdisk -l
 $ mkdir -p /mnt/sda1
 $ mount /dev/sda1 /mnt/sda1
+```
+
+You can look for open ports using [port scanning](/cybersecurity/red-team/s2.discovery/techniques/network/port_scanning.md):
+
+```ps
+$ nc -zv IP 1-65535
+$ # you may use pivoting tools such as chisel to access them
 ```
 </div></div>
 

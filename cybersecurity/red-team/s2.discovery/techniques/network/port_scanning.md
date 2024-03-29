@@ -28,6 +28,7 @@
 [![md2pdf](../../../../_badges/thm-p/md2pdf.svg)](https://tryhackme.com/r/room/md2pdf)
 [![surfer](../../../../_badges/thm-p/surfer.svg)](https://tryhackme.com/r/room/surfer)
 [![bruteit](../../../../_badges/thm-p/bruteit.svg)](https://tryhackme.com/r/room/bruteit)
+[![unbakedpie](../../../../../cybersecurity/_badges/thm-p/unbakedpie.svg)](https://tryhackme.com/r/room/unbakedpie)
 ![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 [![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
@@ -63,6 +64,7 @@ When we discover a host, we scan for every port to find which services are runni
 * [nmap](/cybersecurity/red-team/tools/scanners/ports/nmap.md) 🚪🔥: a stealthy and powerful port scanner
 * [Rustscan](/cybersecurity/red-team/tools/scanners/ports/rustscan.md) 🚪🔥: a fast port scanner for CTFs
 * [Masscan](/cybersecurity/red-team/tools/scanners/ports/masscan.md) 🚪: an aggressive port scanner for mass scanning
+* `nc -zv IP 1-65535`: Live Off The Land
 
 It's worth nothing that these tools may miss ports.
 </div><div>

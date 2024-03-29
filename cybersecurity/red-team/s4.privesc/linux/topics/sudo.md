@@ -16,6 +16,7 @@
 [![tomghost](../../../../_badges/thm-p/tomghost.svg)](https://tryhackme.com/room/tomghost)
 [![ccpentesting](../../../../_badges/thm-p/ccpentesting.svg)](https://tryhackme.com/room/ccpentesting)
 [![bruteit](../../../../_badges/thm-p/bruteit.svg)](https://tryhackme.com/r/room/bruteit)
+[![unbakedpie](../../../../_badges/thm-p/unbakedpie.svg)](https://tryhackme.com/r/room/unbakedpie)
 [![sudo_weak_configuration](../../../../_badges/rootme/app_script/sudo_weak_configuration.svg)](https://www.root-me.org/en/Challenges/App-Script/sudo-weak-configuration)
 [![bash_restricted_shells](../../../../_badges/rootme/app_script/bash_restricted_shells.svg)](https://www.root-me.org/en/Challenges/App-Script/Bash-Restricted-shells)
 [![shared_objects_hijacking](../../../../_badges/rootme/app_script/shared_objects_hijacking.svg)](https://www.root-me.org/en/Challenges/App-Script/Shared-Objects-hijacking)
@@ -78,9 +79,10 @@ User [...] may run the following commands on [...]:
 
 ## LD_PRELOAD
 
+[![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![linprivesc](../../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![linuxprivesc](../../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
-[![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![unbakedpie](../../../../_badges/thm-p/unbakedpie.svg)](https://tryhackme.com/r/room/unbakedpie)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -169,4 +171,14 @@ While uncommon, if the sudo configuration include `env_keep+=LD_LIBRARY_PATH`, w
 $ sudo LD_LIBRARY_PATH=/path/to/xx/ [...]
 ```
 </div><div>
+
+#### PYTHONPATH
+
+[![unbakedpie](../../../../_badges/thm-p/unbakedpie.svg)](https://tryhackme.com/r/room/unbakedpie)
+
+While uncommon, if the sudo configuration include `env_keep+=PYTHONPATH`, we are able to set a custom folder for python modules. Refer to [Shared Object Hijacking](../utils/injection.md#library-hijacking).
+
+```shell!
+$ sudo PYTHONPATH=/path/to/xx/ [...]
+```
 </div></div>

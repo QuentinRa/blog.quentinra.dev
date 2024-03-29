@@ -133,6 +133,7 @@ Misconfigured Python installations may also be vulnerable if we are able to writ
 
 ```shell!
 $ python3 -c 'import sys; print("\n".join(sys.path))'
+$ touch xxx.py ; PYTHONPATH=`pwd` python -c 'import xxx'
 ```
 
 Check every imported package using `pip3 show <package>`. If the package is imported from a location that is below a folder in which you can write to, then you can inject your own code.
