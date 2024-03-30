@@ -128,26 +128,29 @@ Some methods of contact 📨: SMS, email, push notification...
 
 <div class="row row-cols-lg-2"><div>
 
+On Windows, check out **Windows Event Viewer**.
+
+On Linux, check the following files:
+
 * `/var/log/syslog` and `/var/log/messages` <small>(general and system logs)</small>
 * `/var/log/auth.log` and `/var/log/secure` <small>(authentication attempts)</small>
 * `/var/log/kern.log` <small>(kernel messages)</small>
 * `/var/log/dmesg` <small>(hardware and driver messages)</small>
-* `/var/log/audit/audit.log` <small>(audit logs)</small>
-* `/var/log/nginx/` and `/var/log/apache2/` <small>(webserver logs)</small>
-* `/var/log/mysql/` and `/var/log/postgresql/` <small>(dbms logs)</small>
 * `/var/log/cron` <small>(cron logs)</small>
 * `/var/log/boot.log` <small>(boot messages)</small>
 * `/var/log/lastlog` <small>(last logins)</small>
-</div><div>
-
 * `/var/log/faillog` <small>(failed logins)</small>
 * `/var/log/btmp` <small>(failed logins)</small>
 * `/var/log/utmp` <small>(current users)</small>
 * `/var/log/wtmp` <small>(record of every login/logout)</small>
+</div><div>
+
+* `/var/log/audit/audit.log` <small>(audit logs)</small>
 * `/var/log/maillog` <small>(mail events)</small>
 * `/var/log/dpkg.log` <small>(installed packages)</small>
-
-On Windows, check out **Windows Event Viewer**.
+* `/var/log/apache2/` for `access.log` and `error.log` <small>(webserver logs)</small>
+* `/var/log/nginx/` <small>(webserver logs)</small>
+* `/var/log/mysql/` and `/var/log/postgresql/` <small>(dbms logs)</small>
 </div></div>
 
 <hr class="sep-both">
