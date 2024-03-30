@@ -22,6 +22,7 @@
 [![surfer](../../../../_badges/thm-p/surfer.svg)](https://tryhackme.com/r/room/surfer)
 [![bruteit](../../../../_badges/thm-p/bruteit.svg)](https://tryhackme.com/r/room/bruteit)
 [![archangel](../../../../../cybersecurity/_badges/thm-p/archangel.svg)](https://tryhackme.com/r/room/archangel)
+[![teamcw](../../../../../cybersecurity/_badges/thm-p/teamcw.svg)](https://tryhackme.com/r/room/teamcw)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 [![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
 [![cozyhosting](../../../../_badges/htb-p/cozyhosting.svg)](https://app.hackthebox.com/machines/CozyHosting)
@@ -52,6 +53,8 @@ Common tools are:
 * [feroxbuster](https://github.com/epi052/feroxbuster) <small>(5.2k ⭐, Rust)</small>
 * [dirb](https://dirb.sourceforge.net/) <small>(installable on any Debian)</small>
 * [DirBuster](https://github.com/KajanM/DirBuster) <small>(0.1k ⭐)</small>
+
+For extensions: `php,html,txt,sql,bak,tar,tar.gz,db,zip,sqlite`.
 </div></div>
 
 <hr class="sep-both">

@@ -53,6 +53,7 @@ $ lxc image import xxx.tar.gz --alias image_name
 [![adventofcyber2](../../../../cybersecurity/_badges/thm/adventofcyber2/day24.svg)](https://tryhackme.com/room/adventofcyber2)
 [![gamingserver](../../../../cybersecurity/_badges/thm-p/gamingserver.svg)](https://tryhackme.com/room/gamingserver)
 [![allinonemj](../../../../cybersecurity/_badges/thm-p/allinonemj.svg)](https://tryhackme.com/room/allinonemj)
+[![teamcw](../../../../cybersecurity/_badges/thm-p/teamcw.svg)](https://tryhackme.com/r/room/teamcw)
 
 A member of the LXD group can be leveraged for [privilege escalation](/cybersecurity/red-team/s4.privesc/index.md). You will mount the folder `/` within the container inside `/mnt/hostfs/` allowing you to access any file or edit any file.
 

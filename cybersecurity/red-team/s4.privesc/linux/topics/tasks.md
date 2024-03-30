@@ -8,6 +8,7 @@
 [![startup](../../../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 [![easypeasyctf](../../../../_badges/thm-p/easypeasyctf.svg)](https://tryhackme.com/room/easypeasyctf)
 [![archangel](../../../../../cybersecurity/_badges/thm-p/archangel.svg)](https://tryhackme.com/r/room/archangel)
+[![teamcw](../../../../_badges/thm-p/teamcw.svg)](https://tryhackme.com/r/room/teamcw)
 [![bashed](../../../../_badges/htb-p/bashed.svg)](https://app.hackthebox.com/machines/Bashed)
 [![celestial](../../../../_badges/htb-p/celestial.svg)](https://app.hackthebox.com/machines/Celestial)
 [![bash_cron](../../../../_badges/rootme/app_script/bash_cron.svg)](https://www.root-me.org/en/Challenges/App-Script/Bash-cron)

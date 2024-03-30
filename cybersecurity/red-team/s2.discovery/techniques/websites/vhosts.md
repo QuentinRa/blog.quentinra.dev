@@ -2,6 +2,7 @@
 
 [![subdomainenumeration](../../../../_badges/thmp/subdomainenumeration.svg)](https://tryhackme.com/room/subdomainenumeration)
 [![archangel](../../../../../cybersecurity/_badges/thm-p/archangel.svg)](https://tryhackme.com/r/room/archangel)
+[![teamcw](../../../../../cybersecurity/_badges/thm-p/teamcw.svg)](https://tryhackme.com/r/room/teamcw)
 [![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
 [![keeper](../../../../_badges/htb-p/keeper.svg)](https://app.hackthebox.com/machines/Keeper)
 

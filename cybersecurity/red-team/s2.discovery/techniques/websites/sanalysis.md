@@ -1,9 +1,15 @@
 # Static analysis
 
 [![activerecon](../../../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
+[![archangel](../../../../../cybersecurity/_badges/thm-p/archangel.svg)](https://tryhackme.com/r/room/archangel)
+[![teamcw](../../../../../cybersecurity/_badges/thm-p/teamcw.svg)](https://tryhackme.com/r/room/teamcw)
 
 For starter, you may use <kbd>CTRL+U</kbd> or Right-click and "View page source".
 
+While uncommon, in easy CTFs or niche challenges:
+
+* The website title may contain information
+* Emails may expose internal domains
 <hr class="sep-both">
 
 ## HTML tags
@@ -51,6 +57,7 @@ Array.from(document.querySelectorAll('*')).filter(x => {
 [![gamingserver](../../../../_badges/thm-p/gamingserver.svg)](https://tryhackme.com/room/gamingserver)
 [![surfer](../../../../_badges/thm-p/surfer.svg)](https://tryhackme.com/r/room/surfer)
 [![archangel](../../../../../cybersecurity/_badges/thm-p/archangel.svg)](https://tryhackme.com/r/room/archangel)
+[![teamcw](../../../../../cybersecurity/_badges/thm-p/teamcw.svg)](https://tryhackme.com/r/room/teamcw)
 [![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
 [![cap](../../../../_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
 [![http_directory_indexing](../../../../_badges/rootme/web_server/http_directory_indexing.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Directory-indexing)
