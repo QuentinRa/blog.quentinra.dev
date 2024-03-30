@@ -44,10 +44,10 @@ The [crawl](https://github.com/QuentinRa/onectf/blob/main/docs/crawl.md) module 
 
 ```ps
 $ onectf crawl -u URL -o /tmp/links.txt
-$ onectf craw [...] --pc -L gobuster_output.txt
+$ onectf craw [...] --comments -L gobuster_output.txt
 ```
 
-📚 You can pass the output of [gobuster](/cybersecurity/red-team/tools/enumeration/web/gobuster.md)  or a list of endpoints using `-L endpoints.txt`. You can display HTML comments using `--pc`.
+📚 You can pass the output of [gobuster](/cybersecurity/red-team/tools/enumeration/web/gobuster.md)  or a list of endpoints using `-L endpoints.txt`. You can display HTML comments using `--comments`.
 </div><div>
 
 #### OneCTF AXFR Module

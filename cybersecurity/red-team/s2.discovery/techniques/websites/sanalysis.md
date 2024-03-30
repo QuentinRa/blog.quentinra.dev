@@ -116,7 +116,7 @@ You may append the snippet this to remove empty comments:
 You can use [onectf](/cybersecurity/red-team/tools/frameworks/onectf/index.md#onectf-crawl-module) to crawl a website and display HTML comments:
 
 ```ps
-$ onectf crawl -u https://example.com/ --pc
+$ onectf crawl -u https://example.com/ --comments
 ```
 </div></div>
 
