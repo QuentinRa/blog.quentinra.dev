@@ -265,6 +265,14 @@ Every process is attached to a session identifiable with the **SID** <small>(Ses
 Sessions are partitioned into [groups of processes](https://en.wikipedia.org/wiki/Process_group). A signal sent to a group is dispatched to every process of the group.
 
 If a session dies, then the [signal](#signals) SIGHUP is sent to every process.
+
+<br>
+
+#### Namespaces
+
+[![introtocontainerisation](../../../../cybersecurity/_badges/thm/introtocontainerisation.svg)](https://tryhackme.com/room/introtocontainerisation)
+
+Containerisation platforms make use of "namespaces." They are a Linux kernel feature used to isolate resources <small>(processes, files, memory, etc.)</small>. We cannot access resources of another namespace.
 </div></div>
 
 <hr class="sep-both">
