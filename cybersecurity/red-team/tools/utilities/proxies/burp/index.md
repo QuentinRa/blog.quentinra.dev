@@ -22,7 +22,7 @@ Burp Suite Community is free, and most features are included in 😎, through th
 On Kali Linux, Burp Suite is installed by default:
 
 ```ps
-$ sudo apt install burpsuite # if not installed
+$ sudo apt install -y burpsuite # if not installed
 $ burpsuite
 ```
 
