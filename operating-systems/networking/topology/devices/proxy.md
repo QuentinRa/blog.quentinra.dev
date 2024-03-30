@@ -23,7 +23,7 @@ For instance, between users of a company, and the internet, a company may set up
 
 A reverse proxy is the opposite of an open proxy. Instead of filtering outgoing traffic, it filters incoming traffic.
 
-➡️ A reverse proxy can act as a [Load balancer](balancer.md).
+➡️ A reverse proxy can act as a [Load balancer](load_balancer.md).
 
 ➡️ A reverse proxy can act as a [WAF](firewall.md).
 

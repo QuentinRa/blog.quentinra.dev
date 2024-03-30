@@ -29,7 +29,7 @@ Networking devices are interconnected by cables.
 **Layer 7: Application Layer** <small>(data)</small> 🧑
 
 * [Proxies](devices/proxy.md)
-* [Load Balancers](devices/balancer.md)
+* [Load Balancers](devices/load_balancer.md)
 
 **Layer 6: Presentation Layer** <small>(data)</small> 🔒
 
@@ -41,7 +41,7 @@ Networking devices are interconnected by cables.
 
 **Layer 4: Transport Layer** <small>(segment/datagram)</small> 📫
 
-* [Load Balancers](devices/balancer.md)
+* [Load Balancers](devices/load_balancer.md)
 * [Network Firewall](devices/firewall.md)
 </div><div>
 
