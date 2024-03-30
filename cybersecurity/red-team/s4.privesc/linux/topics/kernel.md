@@ -1,7 +1,7 @@
 # Kernel
 
 [![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
-[![adventofcyber2](../../../../../cybersecurity/_badges/thm/adventofcyber2/day13.svg)](https://tryhackme.com/room/adventofcyber2)
+[![adventofcyber2](../../../../_badges/thm/adventofcyber2/day13.svg)](https://tryhackme.com/room/adventofcyber2)
 [![linprivesc](../../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![linuxprivesc](../../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![overlayfs](../../../../_badges/thm-p/overlayfs.svg)](https://tryhackme.com/room/overlayfs)
@@ -32,7 +32,7 @@ There are scripts to find vulnerable kernels, but they may generate false positi
 
 #### Dirty COW Exploit
 
-[![adventofcyber2](../../../../../cybersecurity/_badges/thm/adventofcyber2/day13.svg)](https://tryhackme.com/room/adventofcyber2)
+[![adventofcyber2](../../../../_badges/thm/adventofcyber2/day13.svg)](https://tryhackme.com/room/adventofcyber2)
 
 The [dirtycow.ninja](https://dirtycow.ninja/) <small>(3.3k ⭐)</small> is the most used reference. It contains a [list](https://github.com/dirtycow/dirtycow.github.io/wiki/PoCs) of exploits. There are multiple ways to exploit the vulnerability.
 

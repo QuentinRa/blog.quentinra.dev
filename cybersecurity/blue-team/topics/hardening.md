@@ -1,6 +1,6 @@
 # Hardening
 
-[![linuxsystemhardening](../../../cybersecurity/_badges/thmp/linuxsystemhardening.svg)](https://tryhackme.com/room/linuxsystemhardening)
+[![linuxsystemhardening](../../_badges/thmp/linuxsystemhardening.svg)](https://tryhackme.com/room/linuxsystemhardening)
 
 <div class="row row-cols-lg-2"><div>
 

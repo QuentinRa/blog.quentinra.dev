@@ -1,6 +1,6 @@
 # Splunk
 
-[![attacking_common_applications](../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+[![attacking_common_applications](../../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -18,9 +18,9 @@ The [splunkbase](https://splunkbase.splunk.com/) website is the official website
 
 ## Splunk Pentester Notes ☠️
 
-[![attacking_common_applications](../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
-[![splunkd](../../../../cybersecurity/_badges/hacktricks/splunkd.svg)](https://book.hacktricks.xyz/network-services-pentesting/8089-splunkd)
-[![splunk_lpe_and_persistence](../../../../cybersecurity/_badges/hacktricks/splunk_lpe_and_persistence.svg)](https://book.hacktricks.xyz/linux-hardening/privilege-escalation/splunk-lpe-and-persistence)
+[![attacking_common_applications](../../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+[![splunkd](../../../_badges/hacktricks/splunkd.svg)](https://book.hacktricks.xyz/network-services-pentesting/8089-splunkd)
+[![splunk_lpe_and_persistence](../../../_badges/hacktricks/splunk_lpe_and_persistence.svg)](https://book.hacktricks.xyz/linux-hardening/privilege-escalation/splunk-lpe-and-persistence)
 
 <div class="row row-cols-lg-2"><div>
 

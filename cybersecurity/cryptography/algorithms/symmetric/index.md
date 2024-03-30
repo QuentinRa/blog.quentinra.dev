@@ -154,7 +154,7 @@ Since both $m$ and $k$ are letters, we need to convert them to binary to use the
 
 ## Advanced Encryption Standard (AES)
 
-[![introductiontonetworking](../../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
+[![introductiontonetworking](../../../_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
 [![docker_layers](../../../_badges/rootme/forensic/docker_layers.svg)](https://www.root-me.org/en/Challenges/Forensic/Docker-layers)
 
 <div class="row row-cols-lg-2"><div>

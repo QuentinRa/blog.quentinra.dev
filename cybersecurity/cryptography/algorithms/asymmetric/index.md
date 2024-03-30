@@ -99,7 +99,7 @@ We will pick a value $N$ greater than the sum of the values in the Knapsack, and
 ## Diffie–Hellman key exchange
 
 [![encryptioncrypto101](../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
-[![introductiontonetworking](../../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
+[![introductiontonetworking](../../../_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -125,7 +125,7 @@ It allows two parties to establish a shared secret key over an insecure communic
 ## Rivest–Shamir–Adleman (RSA)
 
 [![encryptioncrypto101](../../../_badges/thm/encryptioncrypto101.svg)](https://tryhackme.com/room/encryptioncrypto101)
-[![introductiontonetworking](../../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
+[![introductiontonetworking](../../../_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
 
 <div class="row row-cols-lg-2"><div>
 

@@ -357,7 +357,7 @@ $ unzip hello.zip # enter password
 #### Wireless password cracking
 
 [![crackingpasswordswithhashcat](../../../_badges/htb/crackingpasswordswithhashcat.svg)](https://academy.hackthebox.com/course/preview/cracking-passwords-with-hashcat)
-[![wifihacking101](../../../../cybersecurity/_badges/thm-p/wifihacking101.svg)](https://tryhackme.com/room/wifihacking101)
+[![wifihacking101](../../../_badges/thm-p/wifihacking101.svg)](https://tryhackme.com/room/wifihacking101)
 
 For [Wi-Fi](/operating-systems/networking/others/technologies/wi-fi.md) password cracking, use [hcxtools](https://github.com/ZerBea/hcxtools) to create a crackable file: 
 

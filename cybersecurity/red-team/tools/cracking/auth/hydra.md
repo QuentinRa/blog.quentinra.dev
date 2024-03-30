@@ -4,7 +4,7 @@
 [![adventofcyber4](../../../../_badges/thm/adventofcyber4/day5.svg)](https://tryhackme.com/room/adventofcyber4)
 [![protocolsandservers2](../../../../_badges/thmp/protocolsandservers2.svg)](https://tryhackme.com/room/protocolsandservers2)
 [![passwordattacks](../../../../_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
-[![loginbruteforcing](../../../../../cybersecurity/_badges/htb/loginbruteforcing.svg)](https://academy.hackthebox.com/course/preview/login-brute-forcing)
+[![loginbruteforcing](../../../../_badges/htb/loginbruteforcing.svg)](https://academy.hackthebox.com/course/preview/login-brute-forcing)
 
 <div class="row row-cols-lg-2"><div>
 
