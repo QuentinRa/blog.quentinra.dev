@@ -631,6 +631,9 @@ Tools
 * [Hopper](https://www.hopperapp.com/) disassembler
 </div><div>
 
+Note
+
+* A program creating a file then deleting it => `Disable inheritance, Convert to explicit, Select user > Edit > Show advanced permissions, uncheck both 'delete'` to prevent them from removing the file and allow us to read it.
 * [Ghidra](https://www.ghidra-sre.org/)
 
 ```text!
