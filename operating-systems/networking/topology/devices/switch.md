@@ -3,8 +3,6 @@
 [![introtolan](../../../../cybersecurity/_badges/thm/introtolan.svg)](https://tryhackme.com/room/introtolan)
 [![extendingyournetwork](../../../../cybersecurity/_badges/thmp/extendingyournetwork.svg)](https://tryhackme.com/room/extendingyournetwork)
 
-[Go back](../index.md#networking-devices)
-
 <div class="row row-cols-lg-2"><div>
 
 They connect physically multiple devices in a network. Switches are a smarter and widely used alternative to [Hubs](hub.md).

@@ -1,7 +1,5 @@
 # Gateway
 
-[Go back](../index.md#networking-devices)
-
 <div class="row row-cols-lg-2"><div>
 
 A gateway is a device that serves connecting two or more networks. It's mostly used to connect networking using different protocols or technologies.

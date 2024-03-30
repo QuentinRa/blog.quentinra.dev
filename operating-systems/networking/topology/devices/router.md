@@ -3,8 +3,6 @@
 [![introtolan](../../../../cybersecurity/_badges/thm/introtolan.svg)](https://tryhackme.com/room/introtolan)
 [![extendingyournetwork](../../../../cybersecurity/_badges/thmp/extendingyournetwork.svg)](https://tryhackme.com/room/extendingyournetwork)
 
-[Go back](../index.md#networking-devices)
-
 <div class="row row-cols-lg-2"><div>
 
 A router is a device usually connecting a LAN network with a WAN network, while more generically, it connects two networks. 

@@ -1,7 +1,5 @@
 # Proxy
 
-[Go back](../index.md#networking-devices)
-
 [![introductiontonetworking](../../../../cybersecurity/_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
 
 <div class="row row-cols-lg-2"><div>
@@ -20,6 +18,8 @@ For instance, between users of a company, and the internet, a company may set up
 </div><div>
 
 #### Reverse Proxy
+
+[![httprequestsmuggling](../../../../cybersecurity/_badges/thm/httprequestsmuggling.svg)](https://tryhackme.com/r/room/httprequestsmuggling)
 
 A reverse proxy is the opposite of an open proxy. Instead of filtering outgoing traffic, it filters incoming traffic.
 

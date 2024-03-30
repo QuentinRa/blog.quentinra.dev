@@ -1,6 +1,6 @@
 # Load balancer
 
-[Go back](../index.md#networking-devices)
+[![httprequestsmuggling](../../../../cybersecurity/_badges/thm/httprequestsmuggling.svg)](https://tryhackme.com/r/room/httprequestsmuggling)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -14,4 +14,18 @@ They operate either at layer 4 <small>(TCP, IP...)</small> or at layer 7 <small>
 They commonly use algorithms such as round-robin <small>(in turn)</small>, weighted round robin <small>(is server busy?)</small>, least connections/response time...
 
 There are periodic checks to ensure that servers are still available. If there is no response from a server, it's considered as down. When the server is "up" again, it notifies the load balancer.
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* AWS Elastic Load Balancing
+* HAProxy
+* F5 BIG-IP
+</div><div>
 </div></div>
