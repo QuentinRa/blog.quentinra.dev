@@ -151,6 +151,8 @@ On Linux, check the following files:
 * `/var/log/apache2/` for `access.log` and `error.log` <small>(webserver logs)</small>
 * `/var/log/nginx/` <small>(webserver logs)</small>
 * `/var/log/mysql/` and `/var/log/postgresql/` <small>(dbms logs)</small>
+* `/var/log/sshd.log` <small>(SSH logs)</small>
+* `/var/log/vsftpd.log` <small>(FTP logs)</small>
 </div></div>
 
 <hr class="sep-both">

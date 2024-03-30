@@ -25,6 +25,7 @@ There are basic scenarios in which you can directly exploit the executable, but 
 [![commonlinuxprivesc](../../../../_badges/thmp/commonlinuxprivesc.svg)](https://tryhackme.com/room/commonlinuxprivesc)
 [![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![mustacchio](../../../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
+[![archangel](../../../../../cybersecurity/_badges/thm-p/archangel.svg)](https://tryhackme.com/r/room/archangel)
 [![bash_system_1](../../../../_badges/rootme/app_script/bash_system_1.svg)](https://www.root-me.org/en/Challenges/App-Script/ELF32-System-1)
 [![bash_system_2](../../../../_badges/rootme/app_script/bash_system_2.svg)](https://www.root-me.org/en/Challenges/App-Script/ELF32-System-2)
 

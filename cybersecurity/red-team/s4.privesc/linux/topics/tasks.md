@@ -7,6 +7,7 @@
 [![adventofcyber2](../../../../_badges/thm/adventofcyber2/day9.svg)](https://tryhackme.com/room/adventofcyber2)
 [![startup](../../../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 [![easypeasyctf](../../../../_badges/thm-p/easypeasyctf.svg)](https://tryhackme.com/room/easypeasyctf)
+[![archangel](../../../../../cybersecurity/_badges/thm-p/archangel.svg)](https://tryhackme.com/r/room/archangel)
 [![bashed](../../../../_badges/htb-p/bashed.svg)](https://app.hackthebox.com/machines/Bashed)
 [![celestial](../../../../_badges/htb-p/celestial.svg)](https://app.hackthebox.com/machines/Celestial)
 [![bash_cron](../../../../_badges/rootme/app_script/bash_cron.svg)](https://www.root-me.org/en/Challenges/App-Script/Bash-cron)
@@ -43,5 +44,5 @@ $ /tmp/pspy
 
 ⏰ In CTFs, they usually run every minute or every 5 minutes.
 
-⚠️ If you create a script that is executed by a cron task, ensure the user reading the file has access to it <small>(if they are not root)</small>.
+⚠️ If you create a script that is executed by a cron task, **ensure the user reading the file has access to it** <small>(if they are not root)</small>.
 </div></div>
