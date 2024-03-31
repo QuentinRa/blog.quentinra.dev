@@ -615,7 +615,7 @@ Moved to [code obfuscation](/cybersecurity/purple-team/av_evasion/index.md#code-
 
 #### Encrypted Firmware
 
-[![adventofcyber4](../../_badges/thm/adventofcyber4/day16.svg)](https://tryhackme.com/room/adventofcyber4)
+[![adventofcyber4](../../_badges/thm/adventofcyber4/day20.svg)](https://tryhackme.com/room/adventofcyber4)
 
 Using binwalk, you might be able to know if the firmware was encrypted, for instance, using [gpg](/cybersecurity/cryptography/commands/gpg.md).
 
@@ -628,7 +628,7 @@ $ binwalk -E -N firmware.bin
 
 #### Firmware Extraction
 
-[![adventofcyber4](../../_badges/thm/adventofcyber4/day16.svg)](https://tryhackme.com/room/adventofcyber4)
+[![adventofcyber4](../../_badges/thm/adventofcyber4/day20.svg)](https://tryhackme.com/room/adventofcyber4)
 
 * [Firmware ModKit (FMK)](https://github.com/rampageX/firmware-mod-kit) <small>(0.8k ⭐)</small>: it uses binwalk to extract the filesystem. Can repack the modified firmware.
 
