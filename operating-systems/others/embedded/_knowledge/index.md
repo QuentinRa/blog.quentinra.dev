@@ -17,6 +17,31 @@ Many functions require them to exchange data or to remote control other devices.
 
 <hr class="sep-both">
 
+## Low-Level Communication
+
+<div class="row row-cols-lg-2"><div>
+
+The basis of low-level communication is to send zeros and ones by respectively turning off and on the power.
+
+#### UART And USART — Low-Level Communication
+
+[![adventofcyber4](../../../../cybersecurity/_badges/thm/adventofcyber4/day16.svg)](https://tryhackme.com/room/adventofcyber4)
+
+Universal Asynchronous Receiver-Transmitter <small>(UART)</small> or Universal Synchronous Asynchronous Receiver Transmitter <small>(USART)</small> are both clock-less serial communication protocols.
+
+For UART, one wire `RT` is used to receive data, while another wire `TX` is used to send data. The devices define the communication settings:
+
+* 🚗 Baud rate or bit rate <small>(communication speed)</small>
+* 🖼️ Frame size <small>(often 8 bits per message)</small>
+* ⏱️ Start/Stop bits <small>(before/after the message was sent)</small>
+* ...
+
+It usually involves a `CTS`, a `RTS`, and a `GND` wires.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
