@@ -65,6 +65,16 @@ The Inter-Integrated Circuit (I2C) was designed to be faster than UART using a c
 
 <hr class="sep-both">
 
+## Firmware Analysis
+
+<div class="row row-cols-lg-2"><div>
+
+Moved to [Firmware Analysis](/cybersecurity/purple-team/reverse/index.md#firmware-analysis).
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
