@@ -135,7 +135,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [Buckeyectf](https://ctf.osucyber.club/), [idek](https://ctf.idek.team/), [downunderctf](https://downunderctf.com/)
 * [esaip ctf](https://ctf.esaip.org/), [HackSecuReims](https://hacksecureims.eu/), [TRACS](https://tracs.viarezo.fr/)
 * [HTB Events](https://www.hackthebox.com/events/)
-* Kringlecon, Yogosha, Flag4all, TCP1P, ZITF, Patriot
+* Kringlecon, Yogosha, Flag4all, TCP1P, ZITF, Patriot, ACS
 <br>
 
 **Not tested** 👻 - may be either theoretical, practical, or both.
@@ -188,7 +188,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 
 #### TryHackMe Write-Ups
 
-* [dhilipsanjay](https://dhilipsanjay.gitbook.io/ctfs/)
+* [dhilipsanjay](https://dhilipsanjay.gitbook.io/ctfs/) <small>(60+, 2024)</small>
 * [TheDutchHacker](https://www.thedutchhacker.com/category/write-ups/tryhackme/)
 * [bluewalle](https://bluewalle.github.io/)
 * [fr33s0ul](https://fr33s0ul.tech/tag/ctf/)
@@ -199,6 +199,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [narancsblog](https://narancsblog.com/)
 * [jaxafed](https://jaxafed.github.io)
 * [0xb0b](https://0xb0b.gitbook.io)
+* [chaudhary1337](https://chaudhary1337.github.io/) <small>(45+, 2021 🪦)</small>
 
 #### PortSwigger Write-Ups
 
@@ -260,6 +261,7 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [exploit.education](https://exploit.education/)
 </div><div>
 
+* [h0j3n](https://h0j3n.github.io/)
 * [pwn.college](https://pwn.college/)
 * [pentestlab](https://pentestlab.blog/)
 * [CSbyGB](https://github.com/CSbyGB/pentips)
