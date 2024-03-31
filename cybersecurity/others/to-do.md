@@ -24,6 +24,8 @@ Roadmap
 * [ired.team](https://www.ired.team/)
 * [cryptohack](https://cryptohack.org/)+[crypto-attacks](https://github.com/jvdsn/crypto-attacks) (Cryptography)
 * Practice buffer overflow/format strings/ROP/UAF
+* Web Assembly
+* Radio Frequencies
 </div></div>
 
 <hr class="sep-both">
