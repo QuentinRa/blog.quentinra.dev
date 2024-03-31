@@ -84,6 +84,10 @@ MQTT (Message Queuing Telemetry Transport) is a publish-subscribe communication 
 A message is associated with a topic, usually `<name>/<id>/<function>`, which allows brokers to handle multiple messages. The ID refers to the device ID typically fetched from the topic `device/init`.
 
 ```shell!
+$ sudo nmap -p 1883 IP -vv -sV -sC
+```
+
+```shell!
 $ sudo apt install -y mosquitto-clients
 $ mosquitto_sub -t device/ping
 $ mosquitto_sub -h example.com -t device/ping
