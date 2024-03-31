@@ -38,6 +38,29 @@ For UART, one wire `RT` is used to receive data, while another wire `TX` is used
 
 It usually involves a `CTS`, a `RTS`, and a `GND` wires.
 </div><div>
+
+#### SPI — Low-Level Communication
+
+[![adventofcyber4](../../../../cybersecurity/_badges/thm/adventofcyber4/day16.svg)](https://tryhackme.com/room/adventofcyber4)
+
+The Serial Peripheral Interface <small>(SPI)</small> is often used for communication between microprocessors and peripherals <small>(ex: SD Card)</small>.
+
+There is a channel `SCK` with the clock telling the receiver when it needs to read data, and channels `DATA IN/OUT` to read/write data.
+
+* It's faster and more reliable that UART.
+* Clock signals are only sent from one "controller" device
+
+#### I2C — Low-Level Communication
+
+[![adventofcyber4](../../../../cybersecurity/_badges/thm/adventofcyber4/day16.svg)](https://tryhackme.com/room/adventofcyber4)
+
+The Inter-Integrated Circuit (I2C) was designed to be faster than UART using a clock, while using fewer wires than for SPI.
+
+#### Logic Analyzer Tools
+
+[![adventofcyber4](../../../../cybersecurity/_badges/thm/adventofcyber4/day16.svg)](https://tryhackme.com/room/adventofcyber4)
+
+[saleae](https://www.saleae.com/) can be used to capture  and analyze UART traffic. Create an analyzer with the correct settings, and click on the terminal to view the analyzed text messages given the settings.
 </div></div>
 
 <hr class="sep-both">
