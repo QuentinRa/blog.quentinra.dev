@@ -88,31 +88,25 @@ Stuff that I found, but never read/used yet.
 * we want to isolate them 
 * printer 
 * segment IoT devices
-</div><div>
-
 * WI-FI IoT SSID "XXX-IOT"
 * hidden from users
 * [rust-embedded](https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials)
 * [iothacking101](https://www.iothacking101.com/)
 * [EMBA](https://github.com/e-m-b-a/emba)
 * Zigbee and Z-Wave
-</div></div>
+* OWASP IoT Project
+* IoT Village
+</div><div>
 
-<hr class="sep-both">
-
-<div class="row row-cols-lg-2"><div>
-
-#### Physical device vulnerabilities
+Physical device vulnerabilities
 
 * poor manufacturing or design practices => audits
-* lack of encryption => ...
 * weak/default passwords => strong password policy
-    * Ex: Mirai botnet
-* outdated firmware => stays updated, secure boot
+  * Ex: Mirai botnet
 * Limit access to devices
 * Device hardening
 
-#### Protocols
+Protocols
 
 * weak or non-existent encryption, authentication, or authorization
 * Fiddler (tool)
@@ -121,18 +115,11 @@ Stuff that I found, but never read/used yet.
 * Radio frequency (RF)
 * Zigbee, Z-wave, and Bluetooth
 
-#### External
-
-* OWASP IoT Project
-* IoT Village
-</div><div>
-
-#### Attacks
+Attacks
 
 * Fuzzing: test crashes/... American Fuzzy Lop (AFL), Peach Fuzzer,  Spike Proxy, Sulley
 * Network scanners: Angry IP Scanner
 * Exploitation frameworks: CANVAS, CORE IMPACT
-* Firmware: Firmware Mod Kit, Binwalk...
 * ChipWhisperer, Glitch, or Shakti
 * JTAG or UART
 </div></div>

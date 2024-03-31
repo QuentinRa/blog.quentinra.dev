@@ -609,7 +609,7 @@ Moved to [code obfuscation](/cybersecurity/purple-team/av_evasion/index.md#code-
 
 <hr class="sep-both">
 
-## Firmware Analysis
+## Firmware Reversing And Analysis
 
 <div class="row row-cols-lg-2"><div>
 
@@ -622,6 +622,8 @@ Using binwalk, you might be able to know if the firmware was encrypted, for inst
 ```ps
 $ binwalk -E -N firmware.bin
 ```
+
+📚 Previous versions may contain exposed encryption data.
 </div><div>
 
 #### Firmware Extraction
@@ -632,6 +634,8 @@ $ binwalk -E -N firmware.bin
 
 ```shell!
 $ sudo apt install -y firmware-mod-kit
+$ /opt/firmware-mod-kit/trunk/extract-firmware.sh firmware.bin
+$ cd fmk/rootfs/gpg/ # find keys, and crack the passphrase
 ```
 
 * [firmwalker](https://github.com/craigz28/firmwalker) <small>(1.0k ⭐)</small>: search for juicy files in the firmware
