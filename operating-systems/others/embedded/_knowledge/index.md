@@ -1,11 +1,18 @@
-# IoT devices
+# Embedded devices And IoT
 
 <div class="row row-cols-lg-2"><div>
 
-...
+Embedded devices are systems designed to perform specific functions within larger systems.
+
+* 📦 Compact size while not necessarily small 
+* 🏡 Low power consumption
+* 🧓 Longer lifespan that usual systems
+* 🤖 Constrained environment <small>(computer power, small memory, etc.)</small>
+
+They are often connected to other devices and the internet forming a network called the **Internet of Things 🤖** <small>(IOT)</small>.
 </div><div>
 
-...
+Many functions require them to exchange data or to remote control other devices. Some protocols were designed specifically for IoT.
 </div></div>
 
 <hr class="sep-both">

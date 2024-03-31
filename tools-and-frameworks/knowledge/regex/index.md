@@ -1,6 +1,7 @@
 # Regular expressions (regex)
 
 [![catregex](../../../cybersecurity/_badges/thm/catregex.svg)](https://tryhackme.com/room/catregex)
+[![adventofcyber4](../../../cybersecurity/_badges/thm/adventofcyber4/day16.svg)](https://tryhackme.com/room/adventofcyber4)
 
 <div class="row row-cols-lg-2"><div>
 
