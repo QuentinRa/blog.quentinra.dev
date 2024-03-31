@@ -599,6 +599,14 @@ $ docker -H unix:///run/docker.sock run --rm -d --privileged -v /:/hostfs xxx
 $ docker -H unix:///run/docker.sock run --rm -d --privileged -v /:/hostfs xxx bash
 $ docker -H unix:///run/docker.sock run --privileged -v /:/hostfs xxx ls
 ```
+
+<br>
+
+#### Docker — SUID Abuse On Mounted Folder
+
+[![pythonplayground](../../../../cybersecurity/_badges/thm-p/pythonplayground.svg)](https://tryhackme.com/r/room/pythonplayground)
+
+If you are within a container as root and you are connected to the machine running the docker without any useful privileges, you can create a SUID script on a shared mount folder, assuming there is one.
 </div><div>
 
 #### Docker — Credentials Harvesting

@@ -104,10 +104,13 @@ del __builtins__  # restore them
 
 #### Python File Write
 
+[![pythonplayground](../../../../_badges/thm-p/pythonplayground.svg)](https://tryhackme.com/r/room/pythonplayground)
+
 You can arbitrarily create files or python scripts using:
 
 ```py
 print("Hello, World!", file=open("/dev/shm/poc", "w"))
+print("im"+"port os\nprint(os.getcwd())", file=open("/dev/shm/poc.py", "w"))
 ```
 
 #### Python File Read
@@ -119,6 +122,8 @@ help('print') # :e/path/to/file
 </div><div>
 
 #### Python Jails Escape
+
+[![pythonplayground](../../../../_badges/thm-p/pythonplayground.svg)](https://tryhackme.com/r/room/pythonplayground)
 
 Arbitrarily set a variable, such as the list of blocked commands:
 
