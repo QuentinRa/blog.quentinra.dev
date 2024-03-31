@@ -64,16 +64,15 @@ There are two methods to transfer logs:
 * **Push** 🚀: the component sends its logs without being requested <small>(syslog, snmp, using a script, SFTP...)</small>
 
 We can use UDP to transfer logs if we can accept a potential loss, otherwise, TCP should be used instead.
-
-<br>
+</div><div>
 
 #### Collectors
 
 It's possible to set up a collector that will collect the logs of a "zone", and transfer them to the server. This has a cost but allows better use of the bandwidth.
 
 A collector can be Agent-based, Syslog-based, or Forwarding-based.
-</div><div>
 
+<br>
 
 #### Centralized logs
 
@@ -83,8 +82,28 @@ Centralized logging means centralizing every log on one server.
 * we must closely monitor them to detect unusual activity
 * we must ensure that the person accessing the logs (read/write) has the right to do it. For instance, if there are logs with confidential data, their access should be restricted.
 * it's recommended to keep a raw version of the logs
+</div></div>
 
-<br>
+<hr class="sep-both">
+
+## Managing your Logs
+
+<div class="row row-cols-lg-2"><div>
+
+#### Prioritization and alerting
+
+As we will have many logs, we need to prioritize them:
+
+* **Priority 1** 🔥: critical events that require immediate intervention <small>(ex: system/IDS/antivirus crash, access to admin accounts...)</small>
+
+* **Priority 2** 😰: important events that require attention <small>(ex: failed login attempts, system/application warnings/errors...)</small>
+
+* **Priority 3** 💥: informal events <small>(ex: successful login attempts...)</small>
+
+When events occur, there is a need to notify the stakeholders. Both persons to contact and methods of contact should have been identified, most likely in accordance with the event priority.
+
+Some methods of contact 📨: SMS, email, push notification...
+</div><div>
 
 #### Security Information and Event Management (SIEM)
 
@@ -96,24 +115,8 @@ A SIEM is a centralized logging solution that should detect attacks by correlati
 * ...
 
 ➡️ Search for "Gartner SIEM". You should examine the number of events per second and the cost of configuring it when picking one.
-</div></div>
 
-<hr class="sep-both">
-
-## Prioritization and alerting
-
-<div class="row row-cols-lg-2"><div>
-
-As we will have many logs, we need to prioritize them
-
-* **Priority 1**: critical events that require immediate intervention <small>(ex: system/IDS/antivirus crash, access to admin accounts...)</small>
-* **Priority 2**: important events that require attention <small>(ex: failed login attempts, system/application warnings/errors...)</small>
-* **Priority 3**: informal events <small>(ex: successful login attempts...)</small>
-</div><div>
-
-When events occur, there is a need to notify the stakeholders. Both persons to contact and methods of contact should have been defined, most likely in accordance with the event priority.
-
-Some methods of contact 📨: SMS, email, push notification...
+📚 You may use [Sigma](/cybersecurity/blue-team/tools/logs/sigma.md) rules to filter logs.
 </div></div>
 
 <hr class="sep-both">

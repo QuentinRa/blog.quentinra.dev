@@ -73,6 +73,8 @@ The Inter-Integrated Circuit (I2C) was designed to be faster than UART using a c
 
 ## IoT Communications
 
+*Common failures 🪦: weak or non-existent encryption, authentication, or authorization mechanisms...*
+
 <div class="row row-cols-lg-2"><div>
 
 #### MQTT Protocol
@@ -147,7 +149,6 @@ Stuff that I found, but never read/used yet.
 * [rust-embedded](https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials)
 * [iothacking101](https://www.iothacking101.com/)
 * [EMBA](https://github.com/e-m-b-a/emba)
-* Zigbee and Z-Wave
 * OWASP IoT Project
 * IoT Village
 </div><div>
@@ -162,10 +163,8 @@ Physical device vulnerabilities
 
 Protocols
 
-* weak or non-existent encryption, authentication, or authorization
 * Fiddler (tool)
 * Limit access to devices
-* CoAP, and MQTT
 * Radio frequency (RF)
 * Zigbee, Z-wave, and Bluetooth
 
