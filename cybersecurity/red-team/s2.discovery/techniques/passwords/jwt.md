@@ -36,7 +36,7 @@ You can use [jwt-tools](https://github.com/ticarpi/jwt_tool) <small>(4.8k ⭐)</
 ```shell!
 $ git clone https://github.com/ticarpi/jwt_tool.git $HOME/tools/jwt_tool
 $ chmod +x $HOME/tools/jwt_tool/jwt_tool.py
-$ ln -s $HOME/jwt_tool/jwt_tool.py $HOME/.local/bin/jwt_tool
+$ ln -s $HOME/tools/jwt_tool/jwt_tool.py $HOME/.local/bin/jwt_tool
 $ jwt_tool -h
 ```
 

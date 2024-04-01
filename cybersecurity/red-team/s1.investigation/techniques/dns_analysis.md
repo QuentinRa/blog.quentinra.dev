@@ -1,10 +1,5 @@
 # DNS analysis
 
-[![passiverecon](../../../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
-[![footprinting](../../../_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
-[![web_information_gathering](../../../_badges/htb/web_information_gathering.svg)](https://academy.hackthebox.com/course/preview/information-gathering---web-edition)
-[![active_directory_enumeration_attacks](../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
-
 <div class="row row-cols-lg-2"><div>
 
 By examining [DNS](/operating-systems/networking/protocols/dns.md) records and certificates issued for a domain, we can passively learn about:
@@ -18,6 +13,10 @@ By examining [DNS](/operating-systems/networking/protocols/dns.md) records and c
 
 #### Inspect DNS Records
 
+[![footprinting](../../../_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
+[![web_information_gathering](../../../_badges/htb/web_information_gathering.svg)](https://academy.hackthebox.com/course/preview/information-gathering---web-edition)
+[![passiverecon](../../../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
+
 You can examine DNS records using:
 
 * [nslookup](/operating-systems/networking/protocols/dns.md#nslookup-ipdomain-lookup)
@@ -25,7 +24,7 @@ You can examine DNS records using:
 * [subfinder](/cybersecurity/red-team/tools/enumeration/dns/subfinder.md)
 * [Sublist3r](/cybersecurity/red-team/tools/enumeration/dns/sublist3r.md)
 * [DNSRecon](/cybersecurity/red-team/tools/enumeration/dns/dnsrecon.md) <small>(⚠️, not all usages are passive)</small>
-* [TheHarvester](tools/theHarvester.md)
+* [TheHarvester](/cybersecurity/red-team/s1.investigation/tools/theHarvester.md)
 * [dnsdumpster](https://dnsdumpster.com/) <small>(+subdomains)</small>
 * netcraft [searchdns](https://searchdns.netcraft.com/)/[sitereport](https://sitereport.netcraft.com/)
 * [viewdns](https://viewdns.info/) <small>(dig)</small>
@@ -34,6 +33,10 @@ You can examine DNS records using:
 </div><div>
 
 #### Inspect Registrar Information
+
+[![footprinting](../../../_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
+[![web_information_gathering](../../../_badges/htb/web_information_gathering.svg)](https://academy.hackthebox.com/course/preview/information-gathering---web-edition)
+[![passiverecon](../../../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
 
 You can find social engineering information using:
 
@@ -46,6 +49,8 @@ You can find social engineering information using:
 
 #### Inspect IP Ranges
 
+[![active_directory_enumeration_attacks](../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
 Find which IP ranges are owned by a company:
 
 * [arin](https://www.arin.net/resources/) (US) and [ripe](https://www.ripe.net/) (EU)
@@ -56,10 +61,13 @@ Find which IP ranges are owned by a company:
 
 #### Certificate Transparency (CT)
 
+[![footprinting](../../../_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
+[![web_information_gathering](../../../_badges/htb/web_information_gathering.svg)](https://academy.hackthebox.com/course/preview/information-gathering---web-edition)
+[![passiverecon](../../../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
 [![subdomainenumeration](../../../_badges/thmp/subdomainenumeration.svg)](https://tryhackme.com/room/subdomainenumeration)
 
 Another popular way to find subdomains is to study the generated certificate. A SSL certificate is generate for usually multiple domains, so we may find subdomains or other domains like this.
 
-*  [SSL Tools](/operating-systems/networking/protocols/ssl-tls.md#find-certificates-given-a-domain) such as `crt.sh`
-* [TheHarvester](tools/theHarvester.md)
+* [SSL Tools](/operating-systems/networking/protocols/ssl-tls.md#find-certificates-given-a-domain) such as `crt.sh`
+* [TheHarvester](/cybersecurity/red-team/s1.investigation/tools/theHarvester.md)
 </div></div>
