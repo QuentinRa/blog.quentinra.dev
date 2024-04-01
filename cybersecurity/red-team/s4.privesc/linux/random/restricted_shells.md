@@ -100,6 +100,8 @@ vars()        # without any argument, same as 'locals'
 ```py
 __builtins__.__dict__
 del __builtins__  # restore them
+__builtins__.__dict__['open']
+__builtins__.__dict__['__import']('os')
 ```
 
 #### Python File Write
@@ -131,11 +133,17 @@ Arbitrarily set a variable, such as the list of blocked commands:
 setattr(__import__('__main__'),'blocklist',[])
 ```
 
+Try loading modules using `__import__`:
+
+```py
+__import__("os").getcwd()
+```
+
 Set the path to load arbitrary Python files:
 
 ```py
-setattr(__import__("sys"), "path", list(("/dev/shm/",)))
-__import__("my_file")
+setattr(__import__("sys"), "path", list(("/dev/shm/",))) ; __import__("my_file")
+__import__("sys").path.append("/dev/shm/") # better?
 ```
 
 Use breakpoint:

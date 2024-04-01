@@ -239,17 +239,27 @@ message_2 = xor_strings(key_stream, ciphertext_2)
 To decode a message encoded with `(a * x - b) % c`, we need to reverse each operation giving us `(a^{-1} * (x+b)) % c`.
 
 ```py
-with open('./msg.enc','rb') as f:
-    # Reverse hexa encoding + byte encoding
-    text = bytes.fromhex(f.read().decode())
-    pt = []
-    for byte in text:
-        # Reverse Modulus and Addition
-        pt.append(chr((179 * (byte - 18)) % 256))
-    # Print the Result
-    print(''.join(pt))
+a = 53
+b = 8
+c = 256
+modular_inverse_of_a = 29
 ```
-</div><div>
+
+```py
+def encode(string):
+    bytes = []
+    for char in string:
+        bytes.append((a * ord(char) - b) % c)
+    return bytes
+```
+
+```py
+def decode(bytes):
+    string = ''
+    for byte in bytes:
+        string += chr((modular_inverse_of_a * (byte + b)) % c)
+    return string
+```
 
 #### Modulus of Sum In XOR
 
@@ -270,4 +280,45 @@ decrypt(58) = (XOR(58, 119) % 255) - 5 = H
 decrypt(29) = (XOR(29, 108) % 255) - 12 = e
 ...
 ```
+</div><div>
+
+#### Chained Algorithms
+
+[![pythonplayground](../../../_badges/thm-p/pythonplayground.svg)](https://tryhackme.com/r/room/pythonplayground)
+
+If a message is encoded by applying multiple functions, you need to reverse each function and call them in the reverse order.
+
+```py
+def encode(s):
+    def a(string):        
+        int_array = []
+        for i in range(len(string)):
+            char_code = ord(string[i])
+            int_array.append(math.floor(char_code / 26))
+            int_array.append(char_code % 26)
+        return int_array
+
+    def b(int_array):
+        string = ''
+        for value in int_array:
+            string += chr(97 + value)
+        return string
+
+    return b(a(b(a(s))))
+```
+
+```py
+def decode(s):
+    def a(int_array):
+        string = ''
+        for i in range(0, len(int_array), 2):
+            string += chr(int_array[i] * 26 + int_array[i+1])
+        return string
+
+    def b(string):
+        return [ord(char) - 97 for char in string]
+
+    return a(b(a(b(s))))
+```
+
 </div></div>
