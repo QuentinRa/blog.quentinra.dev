@@ -140,6 +140,10 @@ void main() {};
 void shell() {
     system("id");
 }
+
+__attribute__ ((__constructor__)) void shell() {
+    // ...
+}
 ```
 </div><div>
 </div></div>

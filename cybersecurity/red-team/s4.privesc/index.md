@@ -173,6 +173,7 @@ PS> powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"
 [![adventofcyber2](../../_badges/thm/adventofcyber2/day24.svg)](https://tryhackme.com/room/adventofcyber2)
 [![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![windowsprivesc20](../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
+[![techsupp0rt1](../../_badges/thm-p/techsupp0rt1.svg)](https://tryhackme.com/r/room/techsupp0rt1)
 
 <div class="row row-cols-lg-2"><div>
 

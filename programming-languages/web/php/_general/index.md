@@ -737,6 +737,7 @@ A few directives for your `php.ini` file:
 
 #### PHP mail() and putenv() Bypass
 
+[![php_useful_functions_disable_functions_open_basedir_bypas](../../../../cybersecurity/_badges/hacktricks/network_services_pentesting/pentesting_web/php_tricks_esp/php_useful_functions_disable_functions_open_basedir_bypass.svg)](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/php-tricks-esp/php-useful-functions-disable_functions-open_basedir-bypass#ld_preload-bypass)
 [![bypassdisablefunctions](../../../../cybersecurity/_badges/thm-p/bypassdisablefunctions.svg)](https://tryhackme.com/r/room/bypassdisablefunctions)
 
 Assuming we can write files to the disk, we can use `putenv()` to set [LD_PRELOAD](/cybersecurity/red-team/s4.privesc/linux/topics/sudo.md#ld_preload) and load it using a vulnerable function such as [mail](https://www.php.net/manual/en/function.mail.php).
