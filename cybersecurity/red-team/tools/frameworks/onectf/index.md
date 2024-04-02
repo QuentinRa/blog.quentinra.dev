@@ -48,6 +48,16 @@ $ onectf craw [...] --comments -L gobuster_output.txt
 ```
 
 📚 You can pass the output of [gobuster](/cybersecurity/red-team/tools/enumeration/web/gobuster.md)  or a list of endpoints using `-L endpoints.txt`. You can display HTML comments using `--comments`.
+
+<br>
+
+#### OneCTF UFFUF Module
+
+The [uffuf](https://github.com/QuentinRa/onectf/blob/main/docs/uffuf.md) module is handy when we want to upload files from the command line while spoofing the MIME type on the fly or fuzz for filtered extensions or valid MIME types.
+
+```ps
+$ onectf uffuf -u https://example.com -p uploadFile -F myFile -w wordlist -Fn dummyFUZZ
+```
 </div><div>
 
 #### OneCTF AXFR Module
@@ -64,6 +74,8 @@ $ onectf axfr -D xxx.yyy -r IP -w wordlist.txt -t 64
 # try AXFR on aaa.xxx.yyy
 # ...
 ```
+
+<br>
 
 #### OneCTF Hosts Module
 
