@@ -153,6 +153,7 @@ Common Frameworks/CMS:
 Uncommon Frameworks/CMS:
 
 * [GetSimple CMS](#getsimple-cms)
+* [Subrion CMS](#subrion-cms)
 </div></div>
 
 <hr class="sep-both">
@@ -166,6 +167,20 @@ Uncommon Frameworks/CMS:
 [![phpbb_install_files](../../../../_badges/rootme/web_server/phpbb_install_files.svg)](https://www.root-me.org/en/Challenges/Web-Server/Install-files)
 
 When installing a framework, such as [phpBB](https://github.com/phpbb/phpbb), it's important to properly configure it and remove install files.
+
+<br>
+
+#### Subrion CMS
+
+[![techsupp0rt1](../../../../_badges/thm-p/techsupp0rt1.svg)](https://tryhackme.com/r/room/techsupp0rt1)
+
+[subrion](https://github.com/intelliants/subrion) <small>(0.3k ⭐)</small> version can be identified on the manager panel located at `/panel/`. Once logged, to get a RCE:
+
+* [Exploit File Upload CVE](https://nvd.nist.gov/vuln/detail/CVE-2018-19422): simply create and upload the usual PHP webshell but rename it as `xxx.phar`.
+
+Upload at `/panel/uploads/` <small>(Right-click to upload)</small> and execute it at `/uploads/xxx.phar` <small>(URL encoding is not automatic!)</small>.
+
+* [Exploit PHP Validation CVE](https://nvd.nist.gov/vuln/detail/CVE-2021-43464): Navigate to `Content>Fields>Select a field>Select Require Field>Write PHP Code`.
 </div><div>
 
 #### GetSimple CMS

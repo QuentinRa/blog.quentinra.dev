@@ -57,6 +57,7 @@ Critical internal WordPress files are stored in `/wp-includes`.
 
 [![allinonemj](../../../../../cybersecurity/_badges/thm-p/allinonemj.svg)](https://tryhackme.com/room/allinonemj)
 [![wordpresscve202129447](../../../../../cybersecurity/_badges/thm-p/wordpresscve202129447.svg)](https://tryhackme.com/r/room/wordpresscve202129447)
+[![techsupp0rt1](../../../../../cybersecurity/_badges/thm-p/techsupp0rt1.svg)](https://tryhackme.com/r/room/techsupp0rt1)
 [![blocky](../../../../../cybersecurity/_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
 
 You can enumerate [metadata](https://wpscan.com/wordpresses), [themes](https://wpscan.com/themes), [plugins](https://wpscan.com/plugins), and usernames.
