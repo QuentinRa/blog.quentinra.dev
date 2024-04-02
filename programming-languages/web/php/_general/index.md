@@ -737,12 +737,16 @@ A few directives for your `php.ini` file:
 
 #### PHP mail() and putenv() Bypass
 
+[![bypassdisablefunctions](../../../../cybersecurity/_badges/thm-p/bypassdisablefunctions.svg)](https://tryhackme.com/r/room/bypassdisablefunctions)
+
 Assuming we can write files to the disk, we can use `putenv()` to set [LD_PRELOAD](/cybersecurity/red-team/s4.privesc/linux/topics/sudo.md#ld_preload) and load it using a vulnerable function such as [mail](https://www.php.net/manual/en/function.mail.php).
 
 ```php!
 // determine where files are uploaded with an initial script
 <?php echo "Current directory: " . getcwd(); ?>
 ```
+
+We often use [Chankro](https://github.com/TarlogicSecurity/Chankro) <small>(0.4k ⭐)</small>:
 
 ```shell!
 $ git clone https://github.com/TarlogicSecurity/Chankro.git $HOME/tools/chankro
