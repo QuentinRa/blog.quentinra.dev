@@ -25,3 +25,16 @@ PS> Get-DomainUser -Identity cn | Get-DomainSPNTicket -Format Hashcat | Export-C
 PS> .\SharpView.exe Get-DomainUser -Identity username
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [powerview.py](https://github.com/aniqfakhrul/powerview.py) <small>(0.3k ⭐)</small>
+</div><div>
+
+</div></div>
