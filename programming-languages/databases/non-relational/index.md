@@ -40,7 +40,7 @@ Document
 * [MongoDB](document/mongodb.md)
 * [RavenDB](https://ravendb.net/)
 * [RethinkDB](https://rethinkdb.com/)
-* [Apache CouchDB](https://docs.couchdb.org/en/stable/)
+* [Apache CouchDB](document/couchdb.md)
 </div><div>
 
 Columnar

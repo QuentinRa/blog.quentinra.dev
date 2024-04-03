@@ -574,6 +574,7 @@ Note: [check for local TCP access to docker](https://docs.docker.com/config/daem
 [![linuxprivilegeescalation](../../../../cybersecurity/_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![introtodockerk8pdqk](../../../../cybersecurity/_badges/thm/introtodockerk8pdqk.svg)](https://tryhackme.com/room/introtodockerk8pdqk)
 [![chillhack](../../../../cybersecurity/_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
+[![marketplace](../../../../cybersecurity/_badges/thm-p/marketplace.svg)](https://tryhackme.com/r/room/marketplace)
 
 If a user is part of the docker group, they can interact with the docker daemon without `sudo`. This can be used for [privilege escalation](/cybersecurity/red-team/s4.privesc/index.md).
 

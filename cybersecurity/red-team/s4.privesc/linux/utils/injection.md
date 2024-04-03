@@ -67,6 +67,7 @@ $ bash -c 'export PATH=/tmp:$PATH; <execute the script>'
 
 [![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![linuxstrengthtraining](../../../../_badges/thm/linuxstrengthtraining.svg)](https://tryhackme.com/room/linuxstrengthtraining)
+[![marketplace](../../../../_badges/thm-p/marketplace.svg)](https://tryhackme.com/r/room/marketplace)
 [![ultra_upload](../../../../_badges/rootme/realist/ultra_upload.svg)](https://www.root-me.org/en/Challenges/Cracking/Godot-Mono)
 
 <div class="row row-cols-lg-2"><div>
