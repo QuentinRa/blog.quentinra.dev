@@ -55,6 +55,7 @@ Critical internal WordPress files are stored in `/wp-includes`.
 
 #### WordPress Enumeration
 
+[![cyberweek2021](../../../../../cybersecurity/_badges/thm/cyberweek2021.svg)](https://tryhackme.com/r/room/cyberweek2021)
 [![allinonemj](../../../../../cybersecurity/_badges/thm-p/allinonemj.svg)](https://tryhackme.com/room/allinonemj)
 [![wordpresscve202129447](../../../../../cybersecurity/_badges/thm-p/wordpresscve202129447.svg)](https://tryhackme.com/r/room/wordpresscve202129447)
 [![techsupp0rt1](../../../../../cybersecurity/_badges/thm-p/techsupp0rt1.svg)](https://tryhackme.com/r/room/techsupp0rt1)
@@ -89,6 +90,7 @@ $ onectf crawl -u URL | grep author
 
 #### WordPress FootHold
 
+[![cyberweek2021](../../../../../cybersecurity/_badges/thm/cyberweek2021.svg)](https://tryhackme.com/r/room/cyberweek2021)
 [![colddboxeasy](../../../../../cybersecurity/_badges/thm-p/colddboxeasy.svg)](https://tryhackme.com/room/colddboxeasy)
 [![wordpresscve202129447](../../../../../cybersecurity/_badges/thm-p/wordpresscve202129447.svg)](https://tryhackme.com/r/room/wordpresscve202129447)
 

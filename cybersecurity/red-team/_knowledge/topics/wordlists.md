@@ -66,6 +66,8 @@ You can also use: [JohnTheReaper](/cybersecurity/cryptography/algorithms/hashing
 
 #### CeWL wordlist generation
 
+[![cyberweek2021](../../../_badges/thm/cyberweek2021.svg)](https://tryhackme.com/r/room/cyberweek2021)
+
 Users may generate a password based on the environment they are in. [CeWL](https://github.com/digininja/CeWL) <small>(1.7k ⭐)</small> will scrap their website to generate a list of words.  
 
 ```ps

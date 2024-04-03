@@ -10,6 +10,13 @@
 * [GitHub Repository](https://github.com/apache/couchdb) <small>(6.0k ⭐)</small>
 * **Port(s)** 🐲: 5984 <small>(HTTP)</small>, 6984 <small>(HTTPS)</small>
 
-
+The database may have a management page at `/_utils`.
 </div><div>
+
+Common endpoints:
+
+* `/_all_dbs`: list all databases
+* `/<db_name>/_all_docs`: list all documents IDs
+* `/<db_name>/<doc_id>`: fetch a document
+* ...
 </div></div>

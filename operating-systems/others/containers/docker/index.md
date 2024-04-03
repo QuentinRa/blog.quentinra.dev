@@ -603,6 +603,14 @@ $ docker -H unix:///run/docker.sock run --privileged -v /:/hostfs xxx ls
 
 <br>
 
+#### Docker — TCP Privilege Escalation
+
+[![couch](../../../../cybersecurity/_badges/thm-p/couch.svg)](https://tryhackme.com/r/room/couch)
+
+Docker can use TCP instead of a socket. It typically uses port `2375` 🐲. Refer to [docker socket notes](#docker--socket-privilege-escalation) with: `-H 127.0.0.1:2375`.
+
+<br>
+
 #### Docker — SUID Abuse On Mounted Folder
 
 [![pythonplayground](../../../../cybersecurity/_badges/thm-p/pythonplayground.svg)](https://tryhackme.com/r/room/pythonplayground)
