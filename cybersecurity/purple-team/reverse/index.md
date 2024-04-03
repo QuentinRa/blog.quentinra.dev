@@ -380,6 +380,7 @@ def modify_virtual_methods_size(input_file):
 
 [![compiled](../../_badges/thm-p/compiled.svg)](https://tryhackme.com/r/room/compiled)
 [![0x41haz](../../_badges/thm-p/0x41haz.svg)](https://tryhackme.com/r/room/0x41haz)
+[![catpictures](../../_badges/thm-p/catpictures.svg)](https://tryhackme.com/r/room/catpictures)
 [![getting_started](../../_badges/htb-c/getting_started.svg)](https://app.hackthebox.com/challenges/getting-started)
 [![questionnaire](../../_badges/htb-c/questionnaire.svg)](https://app.hackthebox.com/challenges/Questionnaire)
 [![reg](../../_badges/htb-c/reg.svg)](https://app.hackthebox.com/challenges/Reg)

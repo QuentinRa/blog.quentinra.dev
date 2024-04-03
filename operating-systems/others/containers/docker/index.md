@@ -625,21 +625,34 @@ $ docker inspect xxx -f '{{json .Config.Env }}' | jq
 #### Docker — Container Breakout
 
 [![unbakedpie](../../../../cybersecurity/_badges/thm-p/unbakedpie.svg)](https://tryhackme.com/r/room/unbakedpie)
+[![catpictures](../../../../cybersecurity/_badges/thm-p/catpictures.svg)](https://tryhackme.com/r/room/catpictures)
 [![docker_i_am_groot](../../../../cybersecurity/_badges/rootme/app_script/docker_i_am_groot.svg)](https://www.root-me.org/en/Challenges/App-Script/Docker-I-am-groot)
+
+To identify if we are within a container:
+
+```shell!
+$ ls /.dockerenv # pretty explicit
+$ ps # a small number would be weird
+$ grep 'docker\|lxc' /proc/1/cgroup
+```
 
 If we are in a container as root, and we can access hard drives <small>(fdisk output is not empty)</small>, then we can mount the drive and read its files:
 
 ```ps
 $ fdisk -l
-$ mkdir -p /mnt/sda1
-$ mount /dev/sda1 /mnt/sda1
+$ mkdir -p /mnt/sda1 && mount /dev/sda1 /mnt/sda1
+```
+```ps
+$ # is there some weird partition mounted?
+$ mount | grep -v /proc | grep -v /sys | grep -v overlay
 ```
 
 You can look for open ports using [port scanning](/cybersecurity/red-team/s2.discovery/techniques/network/port_scanning.md):
 
 ```ps
-$ nc -zv IP 1-65535
-$ # you may use pivoting tools such as chisel to access them
+$ nc -zv IP 1-65535 # you may use pivoting tools such as chisel to access them
+$ ip a # if available (check ifconfig?), find available networks
+$ ping 172.17.0.1 # if available, test to access the host
 ```
 </div></div>
 
