@@ -71,3 +71,15 @@ Another popular way to find subdomains is to study the generated certificate. A 
 * [SSL Tools](/operating-systems/networking/protocols/ssl-tls.md#find-certificates-given-a-domain) such as `crt.sh`
 * [TheHarvester](/cybersecurity/red-team/s1.investigation/tools/theHarvester.md)
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [knock](https://github.com/guelfoweb/knock/) <small>(passive or brute force python tool)</small>
+</div><div>
+</div></div>

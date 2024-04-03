@@ -34,6 +34,8 @@
 [![pythonplayground](../../../../_badges/thm-p/pythonplayground.svg)](https://tryhackme.com/r/room/pythonplayground)
 [![techsupp0rt1](../../../../_badges/thm-p/techsupp0rt1.svg)](https://tryhackme.com/r/room/techsupp0rt1)
 [![bypassdisablefunctions](../../../../_badges/thm-p/bypassdisablefunctions.svg)](https://tryhackme.com/r/room/bypassdisablefunctions)
+[![catpictures](../../../../_badges/thm-p/catpictures.svg)](https://tryhackme.com/r/room/catpictures)
+[![marketplace](../../../../_badges/thm-p/marketplace.svg)](https://tryhackme.com/r/room/marketplace)
 ![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 [![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)

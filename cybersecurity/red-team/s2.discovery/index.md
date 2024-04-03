@@ -76,6 +76,7 @@ Network mapping
 Scanning and enumeration
 
 * [port scanning](/cybersecurity/red-team/s2.discovery/techniques/network/port_scanning.md) 🚪🔥: discover running services
+* [port knocking](/cybersecurity/red-team/s2.discovery/techniques/network/port_knocking.md) 🚪: reveal hidden ports
 * [banner grabbing](/cybersecurity/red-team/s2.discovery/techniques/network/banner_grabbing.md) ☠️: get a service banner
 * [brute force service credentials](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md) 🚪: try to force your way in
 * The banner format may be used to primitively guess the OS
