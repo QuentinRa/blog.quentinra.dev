@@ -378,6 +378,8 @@ def modify_virtual_methods_size(input_file):
 
 ## Reversing Binaries On Linux
 
+[![compiled](../../_badges/thm-p/compiled.svg)](https://tryhackme.com/r/room/compiled)
+[![0x41haz](../../_badges/thm-p/0x41haz.svg)](https://tryhackme.com/r/room/0x41haz)
 [![getting_started](../../_badges/htb-c/getting_started.svg)](https://app.hackthebox.com/challenges/getting-started)
 [![questionnaire](../../_badges/htb-c/questionnaire.svg)](https://app.hackthebox.com/challenges/Questionnaire)
 [![reg](../../_badges/htb-c/reg.svg)](https://app.hackthebox.com/challenges/Reg)
@@ -599,16 +601,6 @@ $ cd && ln -s $HOME/tools/binaryninja/binaryninja $HOME/.local/bin/binaryninja
 
 <hr class="sep-both">
 
-## Code Obfuscation
-
-<div class="row row-cols-lg-2"><div>
-
-Moved to [code obfuscation](/cybersecurity/purple-team/av_evasion/index.md#code-obfuscation).
-</div><div>
-</div></div>
-
-<hr class="sep-both">
-
 ## Firmware Reversing And Analysis
 
 <div class="row row-cols-lg-2"><div>
@@ -639,6 +631,25 @@ $ cd fmk/rootfs/gpg/ # find keys, and crack the passphrase
 ```
 
 * [firmwalker](https://github.com/craigz28/firmwalker) <small>(1.0k ⭐)</small>: search for juicy files in the firmware
+</div></div>
+
+<hr class="sep-both">
+
+## Additional Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### Code Obfuscation
+
+Moved to [code obfuscation](/cybersecurity/purple-team/av_evasion/index.md#code-obfuscation).
+</div><div>
+
+#### C Language Notes
+
+Random notes for CTFs:
+
+* `scanf("XXX%s", &s)`: must input `XXX<input>` ; only input is stored.
+* `strcmp("abc", "zyx")`: returns 0, 1, or -1. But, `strcmp(var, "xxx")` returns the ordinal difference of the first different char.
 </div></div>
 
 <hr class="sep-both">

@@ -7,11 +7,10 @@
 It's written in GO which you need to install to download the tool.
 
 ```shell!
-$ sudo apt install golang-go
 $ CGO_ENABLED=0 go install github.com/liamg/traitor/cmd/traitor@latest
 ```
 
-The tool is available at `/home/kali/go/bin/traitor`. It can be uploaded and executed on any host without having them install GO.
+The tool is available at `/home/<username>/go/bin/traitor`. It can be uploaded and executed on any host without having them install GO.
 </div><div>
 
 To find vulnerable escalation vectors:
