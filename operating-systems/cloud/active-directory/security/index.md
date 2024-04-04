@@ -92,6 +92,8 @@ According to our current situation, the techniques we use differ:
 
 If we have an access, anonymous or not, to [SMB](/operating-systems/networking/protocols/smb.md), we may find the domain name or expose the [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md).
 
+If we have write access to a [SMB](/operating-systems/networking/protocols/smb.md) share, we can perform a [SCF Upload Attack](https://pentestlab.blog/2017/12/13/smb-share-scf-file-attacks/) where we receive the user hash when they open the share.
+
 We can perform a [password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md) attack:
 
 * 🚪 Exposed RDP/RDS, SMB, etc. service
