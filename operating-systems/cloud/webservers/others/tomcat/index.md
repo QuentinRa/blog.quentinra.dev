@@ -38,7 +38,7 @@ The admin panel to upload applications if usually at `/manager/html`. To upload 
 * You can use [nmap](/cybersecurity/red-team/tools/scanners/ports/nmap.md). It often runs on port 8080.
 
 ```shell!
-$ sudo nmap 10.10.10.95 -sCV -v
+$ sudo nmap IP -sCV -v
 8080/tcp open  http    Apache Tomcat/Coyote JSP engine 1.1
 ```
 

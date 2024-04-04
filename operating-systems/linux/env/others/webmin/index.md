@@ -34,7 +34,7 @@ $ nmap -p 10000 -sV IP
 * You can use cURL too if you want to find the version
 
 ```shell!
-$ curl -s -I -k https://10.10.199.204:10000 | grep Server
+$ curl -s -I -k https://IP:10000 | grep Server
 Server: MiniServ/1.890
 ```
 </div><div>

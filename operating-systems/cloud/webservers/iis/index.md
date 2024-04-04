@@ -31,8 +31,7 @@ This can be used on an IIS server to discover files, while it doesn't expose the
 
 ```shell!
 $ go install github.com/bitquark/shortscan/cmd/shortscan@latest
-$ sudo ln -s /home/<username>/go/bin/shortscan /usr/local/bin/shortscan
-$ shortscan http://10.129.189.72
+$ shortscan http://IP
 ```
 
 You may then try to brute force the full name from `text_found`, while shortscan will display potential values that you may try first.

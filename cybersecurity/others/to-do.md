@@ -356,7 +356,7 @@ https://tryhackme.com/room/retro (blaster...)
 
 **https://tryhackme.com/room/allinonemj** 🐍🐍⭐
 
-* Test: `wpscan --url http://10.10.162.222/wordpress/ --detection-mode aggressive`
+* Test: `wpscan --url http://IP/wordpress/ --detection-mode aggressive`
 * `php://filter/convert.base64-encode/resource=../../../../../wp-config.php` (file inclusion, https://www.idontplaydarts.com/2011/02/using-php-filter-for-local-file-inclusion/)
 </div></div>
 

@@ -85,8 +85,8 @@ You will also have to look for installed tools and apps along with their version
 External tools/services
 
 * 🎠 Misconfigured [NFS shares](/operating-systems/networking/protocols/nfs.md#nfs-vulnerabilities-)
-* 🎠 Misconfigured [Docker socket/permissions](/operating-systems/others/virtualization/docker/index.md#docker-pentester-notes-)
-* 🎠 Misconfigured [LXC/LXD permissions](/operating-systems/others/virtualization/lxc/index.md#pentester-notes-)
+* 🎠 Misconfigured [Docker socket/permissions](/operating-systems/others/containers/docker/index.md#docker-pentester-notes-)
+* 🎠 Misconfigured [LXC/LXD permissions](/operating-systems/others/containers/lxc/index.md#pentester-notes-)
 * 🎠 Misconfigured [Tmux sessions](/operating-systems/linux/env/others/tmux/index.md)
 
 ⚠️ Don't forget hidden files. [Compiled Recipe](linux/recipe.md).
@@ -268,6 +268,7 @@ $ find / -wholename "*.git/config" 2> /dev/null | xargs grep "url"
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![windows_privilege_escalation](../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 [![windowsprivesc20](../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
+[![attacktivedirectory](../../_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
 
 Read PowerShell console history:
 
@@ -338,6 +339,8 @@ PS> Get-ChildItem C:\ -Recurse -Include *.rdp, *.config, *.vnc, *.cred -ErrorAct
 ```
 
 📚 See also: [PowerShell Secure String](/operating-systems/windows/security/index.md#powershell-securestring) for encrypted passwords.
+
+📚 Remember to look inside network shares too.
 </div></div>
 
 <hr class="sep-both">
@@ -350,6 +353,7 @@ PS> Get-ChildItem C:\ -Recurse -Include *.rdp, *.config, *.vnc, *.cred -ErrorAct
 
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![attacking_common_services](../../_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
+[![attacktivedirectory](../../_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
 
 There are some scenarios in which we got hold of a hash, but haven't managed to crack it. We may try to use the hash.
 

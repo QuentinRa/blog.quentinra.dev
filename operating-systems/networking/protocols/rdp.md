@@ -50,7 +50,7 @@ There is [Remmina](https://github.com/FreeRDP/Remmina) (1.9k ⭐, `apt install r
 
 ```ps
 $ # nmap RDP cookies are leaving traces (--packet-trace)
-$ sudo nmap -sV -sC -p 3389 --script rdp* 10.129.201.248
+$ sudo nmap -sV -sC -p 3389 --script rdp* IP
 ```
 
 #### Foothold
