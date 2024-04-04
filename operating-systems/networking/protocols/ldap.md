@@ -83,6 +83,17 @@ $ ldapsearch -h IP -x -b "dc=example,dc=com" -s sub "(&(objectclass=user))"
 * `-D`/`-w`: specify authentication data
 * `-x`: use basic authentication
 * `-b`: indicate the root of the search
+
+<br>
+
+#### LDAP Injection
+
+[![attacking_common_applications](../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+[![ldap_injection_authentication](../../../cybersecurity/_badges/rootme/web_server/ldap_injection_authentication.svg)](https://www.root-me.org/en/Challenges/Web-Server/LDAP-injection-Authentication)
+
+Web applications using LDAP may be vulnerable to LDAP injection. These two expressions are always true: `(cn=*)` and `(objectClass=*)`.
+
+The most basic authentication bypass is `*` and `*` that authenticates as the first user found.
 </div><div>
 
 #### windapsearch command
@@ -104,14 +115,9 @@ $ python3 windapsearch.py --dc-ip IP -u xxx@example.com -p xxx [...]
 
 <br>
 
-#### LDAP Injection
+#### Additional Notes
 
-[![attacking_common_applications](../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
-[![ldap_injection_authentication](../../../cybersecurity/_badges/rootme/web_server/ldap_injection_authentication.svg)](https://www.root-me.org/en/Challenges/Web-Server/LDAP-injection-Authentication)
-
-Web applications using LDAP may be vulnerable to LDAP injection. These two expressions are always true: `(cn=*)` and `(objectClass=*)`.
-
-The most basic authentication bypass is `*` and `*` that authenticates as the first user found.
+Refer to [Active Directory Pentest LDAP](/operating-systems/cloud/active-directory/security/index.md#pentester--ldap-access) for additional notes.
 </div></div>
 
 <hr class="sep-both">

@@ -1,6 +1,7 @@
 # LLMNR/NBT-NS Poisoning
 
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+[![breachingad](../../../../_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -29,6 +30,7 @@ $ sudo responder -I tun0
 ## LLMNR/NBT-NS Poisoning Remediation 🛡️
 
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+[![breachingad](../../../../_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -38,6 +40,8 @@ We can try to send fake LLMNR or NBT-NS requests, and if an host respond, then i
 
 We must ensure that both stay disabled, such as by monitoring `HKLM\Software\Policies\Microsoft\Windows NT\DNSClient`.
 </div><div>
+
+We can try to implement `Network Access Control (NAC)`.
 </div></div>
 
 <hr class="sep-both">

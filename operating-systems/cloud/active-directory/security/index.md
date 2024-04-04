@@ -47,6 +47,10 @@ $ nxc smb IP -u 'username' -p 'password' --ntds
 ```
 </div><div>
 
+#### NetNTLM
+
+NetNTLM is a challenge-response protocol based on NTLM.
+
 #### Kerberos
 
 [![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
@@ -82,11 +86,20 @@ According to our current situation, the techniques we use differ:
 
 #### Pentester — External Access
 
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+[![breachingad](../../../../cybersecurity/_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
 [![attacktivedirectory](../../../../cybersecurity/_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
 
-* If we have an access, anonymous or not, to [SMB](/operating-systems/networking/protocols/smb.md), we may find the domain name or expose the [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md).
+If we have an access, anonymous or not, to [SMB](/operating-systems/networking/protocols/smb.md), we may find the domain name or expose the [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md).
 
-* We can perform a [password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md) attack on Windows Services such as RDP, SMB or websites using [LDAP](#pentester--ldap-access).
+We can perform a [password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md) attack:
+
+* 🚪 Exposed RDP/RDS, SMB, etc. service
+* 📮 Exposed [Outlook Web App (OWA)](https://www.microsoft.com/en-us/microsoft-365/outlook/web-email-login-for-outlook) login portal
+* 🏭 Exposed Microsoft 0365, Exchange, and Skype
+* 🌍 VPN portals <small>(Citrix, SonicWall, OpenVPN, Fortinet using AD Auth)</small>
+* 🔑 Websites and applications using [LDAP](#pentester--ldap-access) or NetNTLM.
+* ...
 
 <br>
 
@@ -104,6 +117,8 @@ $ python windapsearch.py --dc-ip IP -u "" -U
 ```
 
 Some websites, which may be exposed to the outside, may use LDAP for authentication, so we can try [password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md) on them.
+
+If we can compromise a target host connected to AD, such as a GitLab server, we may find credentials in configuration files.
 </div><div>
 
 #### Pentester — Kerberos access
@@ -111,17 +126,17 @@ Some websites, which may be exposed to the outside, may use LDAP for authenticat
 [![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![attacktivedirectory](../../../../cybersecurity/_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
 
-* We can use [kerbrute](/cybersecurity/red-team/tools/utilities/windows/kerbrute.md) to enumerate users:
+We can use [kerbrute](/cybersecurity/red-team/tools/utilities/windows/kerbrute.md) to enumerate users:
 
 ```ps
 $ kerbrute userenum -d domain --dc IP wordlist
 ```
 
-* We can perform a [password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md) attack.
+We can perform a [password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md) attack.
 
-* We can perform a [kerberoasting attack](#kerberoasting--privilege-escalation) <small>(credentials required 🔑)</small>
+We can perform a [kerberoasting attack](#kerberoasting--privilege-escalation) <small>(credentials required 🔑)</small>
 
-* We can perform a [ASReproasting attack](#as-rep-roasting-attack--privilege-escalation) <small>(credentials required? 🔑)</small>
+We can perform a [ASReproasting attack](#as-rep-roasting-attack--privilege-escalation) <small>(credentials required? 🔑)</small>
 
 <br>
 

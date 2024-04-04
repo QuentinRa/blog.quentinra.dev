@@ -370,7 +370,8 @@ $ ffuf -u 'URL/FUZZ' -w wordlist -mc 200,301
 
 #### Exploitation
 
-* May contains token, ssh keys, credentials, passwords
+* May contains tokens, ssh keys, credentials, passwords
+* Configuration files may contains LDAP credentials
 
 #### Well-known CVEs
 
