@@ -36,6 +36,9 @@ Passive Network Discovery
 
 ```ps
 $ sudo responder -I tun0 -A
+$ sudo responder -I tun0 -wdF -b
+$ sqlitebrowser /usr/share/responder/Responder.db
+$ rm -rf /usr/share/responder/Responder.db
 ```
 </div><div>
 </div></div>

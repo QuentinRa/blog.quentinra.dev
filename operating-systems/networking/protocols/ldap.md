@@ -166,13 +166,12 @@ COPY config.ldif ${CONFIG_PATH}/01-config-password.ldif
 RUN echo "" > ${CONFIG_PATH}/02-security.ldif
 ```
 
-As for `config.ldif`:
+As for `config.ldif`, the code below is incorrect:
 
 ```text!
 dn: cn=config
 changetype: modify
 add: olcSaslSecProps
-olcSaslSecProps: none
 olcSaslSecProps: noanonymous,minssf=0,passcred
 ```
 
