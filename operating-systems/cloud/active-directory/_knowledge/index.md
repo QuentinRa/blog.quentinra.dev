@@ -573,6 +573,14 @@ Before updating, it's always wiser [to prepare properly](/cybersecurity/blue-tea
 
 ➡️ Newer alternative: Windows Update for Business (WUfB).
 </div><div>
+
+#### Microsoft Deployment Toolkit (MDT)
+
+[![breachingad](../../../../cybersecurity/_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
+
+Microsoft Deployment Toolkit (MDT) is a tool that can be used to automate the deployment of golden images. A golden image is a pre-configured operating system for the company.
+
+📚 It's integrated with System Center Configuration Manager (SCCM).
 </div></div>
 
 <hr class="sep-both">

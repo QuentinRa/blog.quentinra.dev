@@ -1,16 +1,17 @@
-# LLMNR/NBT-NS Poisoning
+# LLMNR/NBT-NS/mDNS Poisoning
 
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![breachingad](../../../../_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
 
 <div class="row row-cols-lg-2"><div>
 
-Inside an internal windows network, when a DNS server is not available or a DNS request fails, LLMNR and NBT-NS may be used.
+Inside an internal windows network, when a DNS request fails or a DNS server is not available, LLMNR and NBT-NS may be used to send a local query to machines within the subnet.
 
 * 🐲 LLMNR uses UDP port 5355
 * 🐲 NBT-NS uses UDP port 137
 * ☠️ NBT-NS may be used in older Windows-based networks
 * ☠️ NBT-NS may be used when LLMNR fails to find a host
+* ☠️ mDNS may be used when both LLMNR and NBT-NS failed
 
 Both protocols are vulnerable to multiple attacks such as spoofing.
 </div><div>
@@ -42,16 +43,4 @@ We must ensure that both stay disabled, such as by monitoring `HKLM\Software\Pol
 </div><div>
 
 We can try to implement `Network Access Control (NAC)`.
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-lg-2"><div>
-
-* ... mDNS
-</div><div>
 </div></div>

