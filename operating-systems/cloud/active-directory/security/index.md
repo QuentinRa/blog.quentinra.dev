@@ -53,6 +53,8 @@ $ nxc smb IP -u 'username' -p 'password' --ntds
 
 Kerberos is a protocol used to provide secure authentication over non-secure networks. It replaces NTLM and NetNTLM.
 
+**Port(s)** 🐲: 88 <small>(TCP)</small>
+
 When a user logs in, their password is hashed and sent to Kerberos server along with the timestamp for verification. Upon successful login, the server generates a **ticket-granting ticket (TGT)** 🎫.
 
 When the user wants to access a network resource, such as a shared folder or a database, the computer requests a ticket from the Key Distribution Center (KDC) using the TGT. If the request is accepted, the KDC will give them a **Ticket Granting Service (TGS)** 🎟️ that they can use solely for the requested service.
@@ -68,7 +70,13 @@ PS> klist # list current tickets available
 
 <div class="row row-cols-lg-2"><div>
 
-#### Active Directory Enumeration
+#### Active Directory External Enumeration
+
+[![attacktivedirectory](../../../../cybersecurity/_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
+
+* Refer to [SMB](/operating-systems/networking/protocols/smb.md)
+
+#### Active Directory Internal Enumeration
 
 [![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 

@@ -140,6 +140,7 @@ $ nmap -p 139,445 --script "*smb*" IP
 [![attacking_common_services](../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
 [![active_directory_enumeration_attacks](../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![kenobi](../../../cybersecurity/_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
+[![attacktivedirectory](../../../cybersecurity/_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
 
 * Try `Anonymous` user with no password <small>(`-N` or `-no-pass`, a.k.a. null session)</small>
 
@@ -175,6 +176,7 @@ msf6> use auxiliary/scanner/smb/smb_login
 [![active_directory_enumeration_attacks](../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![adventofcyber2](../../../cybersecurity/_badges/thm/adventofcyber2/day10.svg)](https://tryhackme.com/room/adventofcyber2)
 [![ccpentesting](../../../cybersecurity/_badges/thm-p/ccpentesting.svg)](https://tryhackme.com/room/ccpentesting)
+[![attacktivedirectory](../../../cybersecurity/_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
 
 * We can use [crackmapexec](/cybersecurity/red-team/tools/cracking/auth/cme.md)/[nxc](/cybersecurity/red-team/tools/cracking/auth/nxc.md) to list shares+accesses, and automatically fetch information about the host/network.
 
