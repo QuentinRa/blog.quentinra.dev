@@ -163,6 +163,16 @@ msf6> run
 
 <div class="row row-cols-lg-2"><div>
 
+#### doas
+
+[![glitch](../../../../_badges/thm-p/glitch.svg)](https://tryhackme.com/r/room/glitch)
+
+[Doas](https://wiki.debian.org/Doas) is a minimal alternative to sudo. The command is so minimal that I was not able to know why I could exploit it while there were no configuration files and I could not use my own <small>(did nothing)</small>.
+
+```shell!
+$ doas -u root bash
+```
+
 #### LD_LIBRARY_PATH
 
 [![shared_objects_hijacking](../../../../_badges/rootme/app_script/shared_objects_hijacking.svg)](https://www.root-me.org/en/Challenges/App-Script/Shared-Objects-hijacking)

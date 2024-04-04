@@ -55,6 +55,10 @@ Try to run automated tools. They will return a large output, but the output if o
 * Interesting sockets
 * Interesting kernel exploits
 * ...
+
+```shell!
+$ linpeas -a # Don't forget -a during CTFs
+```
 </div></div>
 
 <hr class="sep-both">

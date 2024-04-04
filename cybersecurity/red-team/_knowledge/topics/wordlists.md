@@ -300,6 +300,7 @@ Common wordlists to find hidden query/body parameters:
 
 ```text!
 /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt
+/usr/share/seclists/Discovery/Web-Content/api/objects.tx
 ```
 </div></div>
 

@@ -2,6 +2,7 @@
 
 [![attacking_with_ffuf](../../../../_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
 [![adventofcyber2](../../../../_badges/thm/adventofcyber2/day4.svg)](https://tryhackme.com/room/adventofcyber2)
+[![glitch](../../../../_badges/thm-p/glitch.svg)](https://tryhackme.com/r/room/glitch)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -11,4 +12,6 @@ You can use [Fuzzing](fuzzing.md) to find them, for instance for query parameter
 
 Common wordlists are listed at [wordlists#parameters](/cybersecurity/red-team/_knowledge/topics/wordlists.md#parameters).
 </div><div>
+
+Most likely exclusive to a CTF, but some endpoints may use POST while parsing GET parameters on purpose.
 </div></div>

@@ -38,6 +38,7 @@
 [![marketplace](../../../../_badges/thm-p/marketplace.svg)](https://tryhackme.com/r/room/marketplace)
 [![couch](../../../../_badges/thm-p/couch.svg)](https://tryhackme.com/r/room/couch)
 [![attacktivedirectory](../../../../_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
+[![glitch](../../../../_badges/thm-p/glitch.svg)](https://tryhackme.com/r/room/glitch)
 ![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 [![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
