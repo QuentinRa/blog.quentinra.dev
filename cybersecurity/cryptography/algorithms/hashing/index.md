@@ -294,6 +294,17 @@ $ john --format="krb5tgs" rc4hash --wordlist=wordlist
 $ hashcat -m 13100 rc4hash wordlist
 $ hashcat -m 19700 aeshash wordlist
 ```
+
+#### Kerberos Pre Auth cracking
+
+[![attacktivedirectory](../../../_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
+
+You can crack Kerberos Pre Auth hashes using:
+
+```shell!
+$ john hash --wordlist=wordlist
+$ hashcat -m 18200 hash wordlist
+```
 </div><div>
 
 #### Documents - password cracking

