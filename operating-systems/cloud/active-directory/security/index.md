@@ -66,37 +66,78 @@ PS> klist # list current tickets available
 
 <hr class="sep-both">
 
-## Active Directory Pentester Notes ☠️
+## AD Pentester Notes ☠️
 
 <div class="row row-cols-lg-2"><div>
 
-#### Active Directory External Enumeration
+According to our current situation, the techniques we use differ:
 
-[![attacktivedirectory](../../../../cybersecurity/_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
-
-* Refer to [SMB](/operating-systems/networking/protocols/smb.md)
-
-#### Active Directory Internal Enumeration
-
-[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
-
-To find hosts, refer to [Passive Internal Network Discovery](/cybersecurity/red-team/s1.investigation/techniques/passive_network_discovery.md).
-
-To find usernames/hashes/hosts, refer to [LLMNR/NBT-NS Poisoning](/cybersecurity/red-team/s2.discovery/techniques/network/poisoning.md).
-
-To find usernames+hashes, refer to [Find Internal User Accounts](/cybersecurity/red-team/s2.discovery/techniques/internal/find_usernames.md).
-
-To find the password policy, refer to [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md).
-
-On a Windows host inside an AD network, refer to [identification](/cybersecurity/red-team/s4.privesc/windows/utils/id.md) to find usernames the "normal" way.
-
-To find passwords, refer to [Password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md).
-
-You can use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloodhound.md) to collect and analyze information to find attack vectors and attack paths.
+* 🐲 We are running Windows or Linux
+* 🔐 We are connected to the internal network or not
+* 🏘️ Our foothold is connected to AD or not
 
 📚 We often find the Domain Controller IP and use it as the target of every other request, such as SMB requests, etc.
 
 <br>
+
+#### Pentester — External Access
+
+[![attacktivedirectory](../../../../cybersecurity/_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
+
+* If we have an access, anonymous or not, to [SMB](/operating-systems/networking/protocols/smb.md), we may find the domain name or expose the [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md).
+
+* We can perform a [password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md) attack.
+
+<br>
+
+#### Pentester — LDAP access
+
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+In an [LDAP](/operating-systems/networking/protocols/ldap.md) environment such as Active Directory, we can use:
+
+```ps
+$ ldapsearch -h IP -x -b "dc=example,dc=com" -s sub "*" | grep -m 1 -B 10 pwdHistoryLength
+$ ldapsearch -h IP -x -b "dc=example,dc=com" -s sub "(&(objectclass=user))" | grep sAMAccountName: | cut -f2 -d" "
+$ python windapsearch.py --dc-ip IP -u "" -U
+```
+</div><div>
+
+#### Pentester — Kerberos access
+
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+* We can use [kerbrute](/cybersecurity/red-team/tools/utilities/windows/kerbrute.md) to enumerate users:
+
+```ps
+$ kerbrute userenum -d domain --dc IP wordlist
+```
+
+* We can perform a [password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md) attack.
+
+* We can perform a [kerberoasting attack](#kerberoasting--privilege-escalation) <small>(credentials required 🔑)</small>
+
+<br>
+
+#### Pentester — Internal access
+
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+We should be able to exploit every other technique and:
+
+* [Passive Internal Network Discovery](/cybersecurity/red-team/s1.investigation/techniques/passive_network_discovery.md): find hosts
+* [LLMNR/NBT-NS Poisoning](/cybersecurity/red-team/s2.discovery/techniques/network/poisoning.md): attack to expose credentials
+* [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md): expose the password policy <small>(more commands)</small>
+* [Windows Identification](/cybersecurity/red-team/s4.privesc/windows/utils/id.md): use built-in tools and functions of Windows or well-known scripts to find information.
+
+You can use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloodhound.md) to collect and analyze information to find attack vectors and attack paths.
+</div></div>
+
+<hr class="sep-both">
+
+## AD Pentester Attack Notes ☠️
+
+<div class="row row-cols-lg-2"><div>
 
 #### Dump Secrets From Active Directory database
 

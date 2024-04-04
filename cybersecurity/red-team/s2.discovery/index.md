@@ -90,7 +90,7 @@ Vulnerabilities scanners
 Internal Assessments
 
 * [LLMNR/NBT-NS Poisoning](/cybersecurity/red-team/s2.discovery/techniques/network/poisoning.md): usernames, hashes, host fingerprint
-* [User Accounts](/cybersecurity/red-team/s2.discovery/techniques/internal/find_usernames.md): usernames
+* [LDAP And Kerberos Enumeration](/operating-systems/cloud/active-directory/security/index.md#ad-pentester-notes-): usernames, hashes, etc.
 * [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md): password length, account lockout
 * [Password Spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md): gain access to an account
 </div><div>
