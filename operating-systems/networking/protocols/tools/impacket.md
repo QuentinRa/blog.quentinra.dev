@@ -14,6 +14,7 @@ $ ...
 You may install them manually too:
 
 ```shell!
+$ # todo: use local install or pipx for others
 $ sudo git clone https://github.com/fortra/impacket /opt/impacket
 $ cd /opt/impacket
 $ pip install -r requirements.txt
