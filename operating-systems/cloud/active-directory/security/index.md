@@ -118,6 +118,8 @@ $ kerbrute userenum -d domain --dc IP wordlist
 
 * We can perform a [kerberoasting attack](#kerberoasting--privilege-escalation) <small>(credentials required 🔑)</small>
 
+* We can perform a [ASReproasting attack](#as-rep-roasting-attack--privilege-escalation) <small>(credentials required? 🔑)</small>
+
 <br>
 
 #### Pentester — Internal access
@@ -181,9 +183,13 @@ You can use [NtdsAudit](https://github.com/dionach/NtdsAudit) <small>(0.4k ⭐)<
 
 Some kerberos users may have been configured to not require Kerberos Pre Auth, leading to their hash being sent when an authentication request is made before providing valid identification.
 
+While I am not sure, it seems the example below is possible because guest access was enabled, so credentials were not required:
+
 ```shell!
-$ impacket-GetNPUsers -dc-ip IP -usersfile valid_users.txt domain/junktext -no-pass
+$ impacket-GetNPUsers -dc-ip IP -usersfile valid_users.txt domain/junkusername -no-pass
 ```
+
+Refer to [cracking Kerberos Pre Auth Hash](/cybersecurity/cryptography/algorithms/hashing/index.md#kerberos-pre-auth-cracking).
 </div><div>
 
 #### Kerberoasting — Privilege Escalation

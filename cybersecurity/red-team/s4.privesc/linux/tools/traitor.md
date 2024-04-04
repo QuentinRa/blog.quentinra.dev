@@ -4,7 +4,7 @@
 
 [traitor](https://github.com/liamg/traitor) <small>(6.5k ⭐, 2022 ☠️)</small> is an open-source tool to automatically detect common privilege escalation vectors and exploit them.
 
-It's written in GO which you need to install to download the tool.
+It's written in [GO](/programming-languages/high-level/others/go/index.md) which you need to install to download the tool.
 
 ```shell!
 $ CGO_ENABLED=0 go install github.com/liamg/traitor/cmd/traitor@latest
