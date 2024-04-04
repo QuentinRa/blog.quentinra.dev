@@ -146,6 +146,7 @@ We can perform a [ASReproasting attack](#as-rep-roasting-attack--privilege-escal
 #### Pentester — Internal access
 
 [![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+[![breachingad](../../../../cybersecurity/_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
 
 We should be able to exploit every other technique and:
 
