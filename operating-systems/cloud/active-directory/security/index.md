@@ -99,6 +99,7 @@ We can perform a [password spraying](/cybersecurity/red-team/s2.discovery/techni
 * 🏭 Exposed Microsoft 0365, Exchange, and Skype
 * 🌍 VPN portals <small>(Citrix, SonicWall, OpenVPN, Fortinet using AD Auth)</small>
 * 🔑 Websites and applications using [LDAP](#pentester--ldap-access) or NetNTLM.
+* 🖨️ Exposed printers using [LDAP](#pentester--ldap-access)
 * ...
 
 <br>
@@ -119,6 +120,8 @@ $ python windapsearch.py --dc-ip IP -u "" -U
 Some websites, which may be exposed to the outside, may use LDAP for authentication, so we can try [password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md) on them.
 
 If we can compromise a target host connected to AD, such as a GitLab server, we may find credentials in configuration files.
+
+We may be able to perform a [LDAP Pass-back Attack](/operating-systems/networking/protocols/ldap.md#ldap-pass-back-attack).
 </div><div>
 
 #### Pentester — Kerberos access
