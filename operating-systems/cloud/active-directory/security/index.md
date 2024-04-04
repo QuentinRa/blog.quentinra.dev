@@ -86,13 +86,14 @@ According to our current situation, the techniques we use differ:
 
 * If we have an access, anonymous or not, to [SMB](/operating-systems/networking/protocols/smb.md), we may find the domain name or expose the [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md).
 
-* We can perform a [password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md) attack.
+* We can perform a [password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md) attack on Windows Services such as RDP, SMB or websites using [LDAP](#pentester--ldap-access).
 
 <br>
 
 #### Pentester — LDAP access
 
 [![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+[![breachingad](../../../../cybersecurity/_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
 
 In an [LDAP](/operating-systems/networking/protocols/ldap.md) environment such as Active Directory, we can use:
 
@@ -101,6 +102,8 @@ $ ldapsearch -h IP -x -b "dc=example,dc=com" -s sub "*" | grep -m 1 -B 10 pwdHis
 $ ldapsearch -h IP -x -b "dc=example,dc=com" -s sub "(&(objectclass=user))" | grep sAMAccountName: | cut -f2 -d" "
 $ python windapsearch.py --dc-ip IP -u "" -U
 ```
+
+Some websites, which may be exposed to the outside, may use LDAP for authentication, so we can try [password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md) on them.
 </div><div>
 
 #### Pentester — Kerberos access
@@ -134,6 +137,23 @@ We should be able to exploit every other technique and:
 * [Windows Identification](/cybersecurity/red-team/s4.privesc/windows/utils/id.md): use built-in tools and functions of Windows or well-known scripts to find information.
 
 You can use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloodhound.md) to collect and analyze information to find attack vectors and attack paths.
+
+<br>
+
+#### Pentester — Not Joined To AD
+
+[![breachingad](../../../../cybersecurity/_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
+
+If you are on a host connected to the internal network but not AD, you need to configure the DNS and pass additional options to most tools.
+
+```shell!
+$ nmcli connection # find NIC uid (note: eth0 not tun0)
+$ nmcli connection modify uid ipv4.dns $DCIP
+$ nmcli connection modify uid ipv4.dns-search domain
+$ nmcli connection up uid # restart
+$ nslookup dc1.domain # test if it works
+$ ping $DCIP ; ping dc1.domain # both should work
+```
 </div></div>
 
 <hr class="sep-both">
