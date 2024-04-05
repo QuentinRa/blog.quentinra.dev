@@ -2,6 +2,7 @@
 
 [![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+[![adenumeration](../../../../_badges/thm/adenumeration.svg)](https://tryhackme.com/r/room/adenumeration)
 [![windowsprivesc20](../../../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
 
 <div class="row row-cols-lg-2"><div>
@@ -125,5 +126,38 @@ PS> .\SharpView.exe Get-DomainUser -Identity username
 
 You can use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloodhound.md) to collect and analyze the data.
 
+You can use [Microsoft Management Console](#microsoft-management-console-mmc) to browse AD objects as if you were on the domain controller and maybe edit them too.
+
 Refer to [LAPS](/operating-systems/windows/security/index.md) to enumerate for accounts related to LAPS.
+</div></div>
+
+<hr class="sep-both">
+
+## Microsoft Management Console (MMC)
+
+[![adenumeration](../../../../_badges/thm/adenumeration.svg)](https://tryhackme.com/r/room/adenumeration)
+
+<div class="row row-cols-lg-2"><div>
+
+Microsoft Management Console (MMC) is always installed on Windows hosts, while AD snap-ins may not. It can be used to allow some employees to browse and edit objects such as users.
+
+To open it: <kbd>Windows + R</kbd> and enter <kbd>MMC</kbd>.
+
+See also: [Remote Server Administration Tools (RSAT)](https://learn.microsoft.com/en-us/windows-server/remote/remote-server-administration-tools).
+
+#### Installing The Snap-Ins
+
+*If you are using your own machine as administrator.*
+
+On Windows 11 Pro, open `optional features` using the search bar. Click on `view features` and install `RSAT: Active Directory Domain Services and Lightweight Directory Tools`.
+
+Use `Click File -> Add/Remove Snap-in` to add all three AD snap-in. Configure each using `Change Forest/Domain` and set the domain/root domain to the target domain.
+</div><div>
+
+#### Using Microsoft Management Console (MMC)
+
+A few random notes:
+
+* Click on `View -> Advanced Features` to view all objects/attributes
+* Click on `Active Directory Users and Computers` to view all OUs
 </div></div>

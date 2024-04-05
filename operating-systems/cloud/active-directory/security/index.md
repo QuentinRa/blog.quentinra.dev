@@ -50,12 +50,16 @@ $ nxc smb IP -u 'username' -p 'password' --ntds
 
 #### SYSVOL Network Share
 
+[![adenumeration](../../../../cybersecurity/_badges/thm/adenumeration.svg)](https://tryhackme.com/r/room/adenumeration)
+
 There is a network share on the domain controller: `dir <DCIP>\SYSVOL` associated with the folder `C:\Windows\SYSVOL\sysvol\`.
 
 It's used to store [GPO](/operating-systems/cloud/active-directory/_knowledge/index.md#permissions) and logon/logoff scripts.
 </div><div>
 
 #### NTLM
+
+[![adenumeration](../../../../cybersecurity/_badges/thm/adenumeration.svg)](https://tryhackme.com/r/room/adenumeration)
 
 When using a domain such as `\\domain`, Kerberos Authentication is used. When using an IP such as `\\IP`, NTLM may be used instead.
 
@@ -66,6 +70,7 @@ NetNTLM is a challenge-response protocol based on NTLM.
 #### Kerberos
 
 [![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![attacktivedirectory](../../../../cybersecurity/_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
 
 Kerberos is a protocol used to provide secure authentication over non-secure networks. It replaces NTLM and NetNTLM.
 
