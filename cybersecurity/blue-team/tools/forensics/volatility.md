@@ -117,9 +117,11 @@ $ # volatility 2 clipboard
 
 ```ps
 $ vol [...] windows.psscan
+$ vol [...] windows.psscan --pid XXX YYY --dump
 $ vol [...] windows.handles --pid XXX
 $ vol [...] windows.memmap --pid XXX --dump
 $ vol [...] windows.dlllist --pid XXX
+$ vol [...] windows.envars --pid XXX
 ```
 
 * ➡️ Show processes in which some code may have been injected
@@ -146,6 +148,7 @@ $ vol [...] windows.netscan
 
 ```ps
 $ vol2 [...] truecryptsummary
+$ vol2 [...] shellbags # Recent files, preferences, installers, etc. | Registry NTUSER.DAT
 ```
 
 </div></div>
