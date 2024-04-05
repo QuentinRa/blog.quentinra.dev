@@ -1,6 +1,7 @@
 # BloodHound
 
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+[![adenumeration](../../../../_badges/thm/adenumeration.svg)](https://tryhackme.com/r/room/adenumeration)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -8,30 +9,15 @@
 
 They seem to be moving to an paid and a [community version](https://github.com/SpecterOps/BloodHound) <small>(0.6k ⭐)</small>.
 
-On the target, run the data collector:
+On the target, run a data collector such as [SharpHound](https://github.com/BloodHoundAD/SharpHound) <small>(0.6k ⭐)</small>:
 
 ```ps
 PS> .\SharpHound.exe -c All --zipfilename results
+PS> .\SharpHound.exe -c Session --zipfilename results
+PS> .\SharpHound.exe --CollectionMethods All --Domain example.com --ExcludeDCs
 ```
 
-On your host, run [bloodhound](https://www.kali.org/tools/bloodhound/) and import the zip using 'Import Data.'
-
-```ps
-$ sudo apt install bloodhound -y
-$ sudo neo4j console& # neo4j:neo4j
-$ bloodhound
-```
-
-Click on the Hamburger and navigate to Analysis to run saved queries.
-</div><div>
-
-Useful queries:
-
-* Find Shortest Paths To Domain Admins
-* Find Computers with Unsupported Operating Systems 
-* Find Computers where Domain Users are Local Admin
-
-There is also an unofficial [python](https://github.com/fox-it/BloodHound.py) script <small>(1.7k ⭐)</small>.
+There is also an unofficial [python](https://github.com/fox-it/BloodHound.py) collector <small>(1.7k ⭐)</small>:
 
 ```shell!
 $ sudo apt install -y bloodhound.py
@@ -39,4 +25,57 @@ $ bloodhound-python -u 'username' -p 'password' -ns DC_IP -d domain -c all
 <user sessions, users and groups, object properties, ACLS>
 $ zip -r results.zip *.json
 ```
+</div><div>
+
+On your host, run [bloodhound](https://www.kali.org/tools/bloodhound/) and import the zip using 'Import Data.'
+
+```shell!
+$ sudo neo4j console& # neo4j:neo4j, change password
+$ sudo apt install bloodhound -y
+$ # Need a custom version such as 4.1.0 below?
+$ wget https://github.com/BloodHoundAD/BloodHound/releases/download/4.1.0/BloodHound-linux-x64.zip && unzip BloodHound-linux-x64.zip && rm -rf BloodHound-linux-x64.zip && cd BloodHound-linux-x64 && chmod +x BloodHound
+```
+
+```shell!
+$ bloodhound
+$ ./BloodHound --no-sandbox # locally installed
+```
+
+⚠️ The collection version must match your BloodHound version, or results may not be correctly parsed leading to missing attacks paths.
+
+⚠️ Ideally, a collector should be run once to capture everywhere, then twice a day <small>(10 a.m. and 14p.m.)</small> to ensure sessions data is correct.
+</div></div>
+
+<hr class="sep-both">
+
+## BloodHound Overview
+
+<div class="row row-cols-lg-2"><div>
+
+A few notes:
+
+* 🛬 Click on 'Import Data' or drag and drop your zip to import it.
+* 📚 Navigate to Analysis to run saved queries
+* 🔎 Click on objects <small>(don't hesitate!)</small> to load it in the view
+* 🔑 Use the search bar to search objects. There is a path icon to search for a path between objects <small>(current user to admin?)</small>.
+* 🖨️ Press <kbd>CTRL</kbd> to see labels below each node
+</div><div>
+
+Useful queries:
+
+* Find Shortest Paths To Domain Admins
+* Find Computers with Unsupported Operating Systems
+* Find Computers where Domain Users are Local Admin
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* For Azure instances, there is [AzureHound](https://github.com/BloodHoundAD/AzureHound) <small>(0.5k ⭐)</small>
+</div><div>
 </div></div>
