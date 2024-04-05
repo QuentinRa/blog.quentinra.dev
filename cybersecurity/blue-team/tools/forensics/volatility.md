@@ -11,11 +11,23 @@ Volatility is a popular free [memory forensics tool](/cybersecurity/blue-team/to
 To install version `v2.5.2` with all plugins:
 
 ```ps
-$ mkdir -p $HOME/tools && cd $HOME/tools
-$ git clone -b "v2.5.2" https://github.com/volatilityfoundation/volatility3.git
-$ pipx install $HOME/tools/volatility3
-$ pipx runpip volatility3 install -r $HOME/tools/volatility3/requirements.txt
+$ DEST="$HOME/tools/volatility3" # or /opt as sudo, but why?
+$ git clone -b "v2.5.2" https://github.com/volatilityfoundation/volatility3.git $DEST
+$ pipx install $DEST # most plugins
+$ pipx runpip volatility3 install -r $DEST/requirements.txt # all plugins
 $ vol -h
+```
+
+Unfortunately, you also need volatility for some tasks.
+
+```shell!
+$ DEST="$HOME/tools/volatility2"
+$ git clone -b "master" https://github.com/volatilityfoundation/volatility.git $DEST
+$ sudo apt install -y python2-dev libdistorm3-dev # and pip2 manually
+$ pip2 install setuptools
+$ pip2 install distorm3 pycrypto pillow openpyxl ujson # and yara
+$ chmod +x $DEST/vol.py && sed -i 's;/usr/bin/env python;/usr/bin/env python2;' $DEST/vol.py && ln -s $DEST/vol.py $HOME/.local/bin/vol2
+$ vol2 -h
 ```
 </div><div>
 
@@ -27,12 +39,23 @@ $ vol -f mdump.sav [...]
 $ vol -r pretty -f mdump.sav [...]
 ```
 
-**Changes with V2**:
-
- 🗃️ Profiles from volatility 2 are now within the [plugins](https://volatility3.readthedocs.io/en/latest/volatility3.plugins.html) path. You will use `xxx.info` instead of `imageinfo` <small>(to learn about the operating system in use in the capture)</small> with `xxx` a value among `windows`, `linux`, or `mac`.
+You will then have to determine which OS <small>(or which profile for Volatility 2)</small> you will be able to use on the memory dump.
 
 ```ps
 $ vol -f mdump.sav banners.Banners
+$ vol2 imageinfo -f mdump.vmem
+```
+
+For volatility2, specify the profile in all commands:
+
+```ps
+$ vol [...] windows.info # Example for 'windows'
+```
+
+For volatility3, the operating system is within the [plugins](https://volatility3.readthedocs.io/en/latest/volatility3.plugins.html) path.
+
+```ps
+$ vol [...] windows.info # Example for 'windows'
 ```
 </div></div>
 
