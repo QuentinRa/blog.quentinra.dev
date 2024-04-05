@@ -45,7 +45,19 @@ You can also use [cme](/cybersecurity/red-team/tools/cracking/auth/cme.md)/[nxc]
 ```ps
 $ nxc smb IP -u 'username' -p 'password' --ntds
 ```
+
+<br>
+
+#### SYSVOL Network Share
+
+There is a network share on the domain controller: `dir <DCIP>\SYSVOL` associated with the folder `C:\Windows\SYSVOL\sysvol\`.
+
+It's used to store [GPO](/operating-systems/cloud/active-directory/_knowledge/index.md#permissions) and logon/logoff scripts.
 </div><div>
+
+#### NTLM
+
+When using a domain such as `\\domain`, Kerberos Authentication is used. When using an IP such as `\\IP`, NTLM may be used instead.
 
 #### NetNTLM
 
@@ -165,6 +177,7 @@ You can use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloodho
 #### Pentester — Not Joined To AD
 
 [![breachingad](../../../../cybersecurity/_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
+[![adenumeration](../../../../cybersecurity/_badges/thm/adenumeration.svg)](https://tryhackme.com/r/room/adenumeration)
 
 If you are on a host connected to the internal network but not AD, you need to configure the DNS and pass additional options to most tools.
 
@@ -176,6 +189,21 @@ $ nmcli connection up uid # restart
 $ nslookup dc1.domain # test if it works
 $ ping $DCIP ; ping dc1.domain # both should work
 ```
+
+On Windows, with administrator privileges, you can use:
+
+```ps
+PS> $index = Get-NetAdapter -Name '<NIC_NAME>' | Select-Object -ExpandProperty 'ifIndex'
+PS> Set-DnsClientServerAddress -InterfaceIndex $index -ServerAddresses "<DCIP>"
+```
+
+On Windows, use `runas /netonly` to provide AD credentials.
+
+```ps
+$ runas.exe /netonly /user:domain\username cmd.exe # provide the password, credentials are not verified
+```
+
+Now, we can run tools such as `MS SQL` or commands as usual.
 </div></div>
 
 <hr class="sep-both">

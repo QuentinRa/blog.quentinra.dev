@@ -78,6 +78,7 @@ Stuff that I found, but never read/used yet.
 * Authorized keys
 * `sudo systemctl restart sshd`
 * `ssh-copy-id username@server`: add to remote server our public key
+* `ssh domain\\username@target`
 </div><div>
 
 * `/etc/ssh/sshd_config`
