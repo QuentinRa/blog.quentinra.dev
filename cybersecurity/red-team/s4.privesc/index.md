@@ -271,6 +271,7 @@ $ find / -wholename "*.git/config" 2> /dev/null | xargs grep "url"
 [![windowsprivesc20](../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
 [![breachingad](../../_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
 [![attacktivedirectory](../../_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
+[![anthem](../../_badges/thm-p/anthem.svg)](https://tryhackme.com/r/room/anthem)
 
 Read PowerShell console history:
 

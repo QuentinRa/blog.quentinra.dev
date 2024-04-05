@@ -154,8 +154,10 @@ Common Frameworks/CMS:
 
 Uncommon Frameworks/CMS:
 
+* [phpBB](#php-bulletin-board-phpbb)
 * [GetSimple CMS](#getsimple-cms)
 * [Subrion CMS](#subrion-cms)
+* [umbraco CMS](#umbraco-cms)
 </div></div>
 
 <hr class="sep-both">
@@ -185,6 +187,19 @@ Upload at `/panel/uploads/` <small>(Right-click to upload)</small> and execute i
 
 * [Exploit PHP Validation CVE](https://nvd.nist.gov/vuln/detail/CVE-2021-43464): Navigate to `Content>Fields>Select a field>Select Require Field>Write PHP Code`.
 </div><div>
+
+#### umbraco CMS
+
+[![anthem](../../../../_badges/thm-p/anthem.svg)](https://tryhackme.com/r/room/anthem)
+
+* [official documentation](https://umbraco.com/): it's a .NET CMS
+* It is usually hosted on Windows with a MSSQL backend
+* It (may?) uses Windows authentication <small>(xxx@domain:pass)</small>
+* Config path? `C:\inetpub\wwwroot\Web\Web.config`
+* Version 2.12.4 is vulnerable to [RCE](https://github.com/noraj/Umbraco-RCE/) <small>(0.1k ⭐, XSLT upload)</small>
+* Once authenticated, click on 'Help' to find the version
+
+<br>
 
 #### GetSimple CMS
 
