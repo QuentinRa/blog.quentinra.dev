@@ -18,12 +18,12 @@ $ pipx runpip volatility3 install -r $DEST/requirements.txt # all plugins
 $ vol -h
 ```
 
-Unfortunately, you also need volatility for some tasks.
+Unfortunately, you may also need volatility 2 for multiple tasks.
 
 ```shell!
 $ DEST="$HOME/tools/volatility2"
 $ git clone -b "master" https://github.com/volatilityfoundation/volatility.git $DEST
-$ sudo apt install -y python2-dev libdistorm3-dev # and pip2 manually
+$ sudo apt install -y python2-dev libdistorm3-dev # refer to my Python notes for pip2
 $ pip2 install setuptools
 $ pip2 install distorm3 pycrypto pillow openpyxl ujson # and yara
 $ chmod +x $DEST/vol.py && sed -i 's;/usr/bin/env python;/usr/bin/env python2;' $DEST/vol.py && ln -s $DEST/vol.py $HOME/.local/bin/vol2
@@ -49,7 +49,7 @@ $ vol2 imageinfo -f mdump.vmem
 For volatility2, specify the profile in all commands:
 
 ```ps
-$ vol [...] windows.info # Example for 'windows'
+$ vol [...] --profile Win7SP1x64 # Test multiple of them
 ```
 
 For volatility3, the operating system is within the [plugins](https://volatility3.readthedocs.io/en/latest/volatility3.plugins.html) path.
@@ -63,9 +63,11 @@ $ vol [...] windows.info # Example for 'windows'
 
 ## Windows notes
 
+[![volatility_cheatsheet](../../../_badges/hacktricks/generic_methodologies_and_resources/basic_forensic_methodology/memory_dump_analysis/volatility_cheatsheet.svg)](https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/memory-dump-analysis/volatility-cheatsheet)
 [![introduction_to_digital_forensics](../../../_badges/htb/introduction_to_digital_forensics.svg)](https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics)
 [![bpvolatility](../../../_badges/thm/bpvolatility.svg)](https://tryhackme.com/room/bpvolatility)
 [![adventofcyber4](../../../_badges/thm/adventofcyber4/day11.svg)](https://tryhackme.com/room/adventofcyber4)
+[![memoryforensics](../../../_badges/thm-p/memoryforensics.svg)](https://tryhackme.com/r/room/memoryforensics)
 [![command_control_level_2](../../../_badges/rootme/forensic/command_control_level_2.svg)](https://www.root-me.org/en/Challenges/Forensic/Command-Control-level-2)
 [![command_control_level_5](../../../_badges/rootme/forensic/command_control_level_5.svg)](https://www.root-me.org/en/Challenges/Forensic/Command-Control-level-5)
 
@@ -78,6 +80,7 @@ Assuming that the host is running Windows, we can use:
 ```ps
 $ vol [...] windows.info
 $ vol [...] windows.envars
+$ vol2 [...] shutdowntime # Volatility3: [...].printkey --key 'ControlSet001\Control\Windows'
 ```
 
 * ➡️ List running processes
@@ -86,6 +89,8 @@ $ vol [...] windows.envars
 $ vol [...] windows.pslist
 $ vol [...] windows.pstree
 $ vol [...] windows.cmdline
+$ vol2 [...] cmdscan
+$ vol2 [...] consoles
 ```
 
 👉 Malicious processes tend to hide themselves.
@@ -133,8 +138,16 @@ $ vol [...] windows.dumpfiles --pid xxx -o path/to/extract/dll
 * ➡️ Show network activity
 
 ```ps
-$ vol [...] windows.netstat
+$ vol [...] windows.netstat # very weird
+$ vol [...] windows.netscan
 ```
+
+* ➡️ Additional Niche Commands
+
+```ps
+$ vol2 [...] truecryptsummary
+```
+
 </div></div>
 
 <hr class="sep-both">
@@ -169,7 +182,7 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [THM/volatility](https://tryhackme.com/room/volatility)
-* [volatility-cheatsheet](https://blog.onfvp.com/post/volatility-cheatsheet/)
+* [volatility2 vs volatility3](https://blog.onfvp.com/post/volatility-cheatsheet/)
 * [aldeid wiki](https://www.aldeid.com/wiki/Volatility)
 </div><div>
 
