@@ -174,7 +174,6 @@ PS> powershell -ep bypass -c ". .\PowerUp.ps1; Invoke-AllChecks"
 [![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![windowsprivesc20](../../_badges/thmp/windowsprivesc20.svg)](https://tryhackme.com/room/windowsprivesc20)
 [![breachingad](../../_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
-[![techsupp0rt1](../../_badges/thm-p/techsupp0rt1.svg)](https://tryhackme.com/r/room/techsupp0rt1)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -242,6 +241,7 @@ You can use [truffleHog](https://github.com/trufflesecurity/truffleHog) <small>(
 [![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![ignite](../../_badges/thm-p/ignite.svg)](https://tryhackme.com/room/ignite)
 [![chillhack](../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
+[![techsupp0rt1](../../_badges/thm-p/techsupp0rt1.svg)](https://tryhackme.com/r/room/techsupp0rt1)
 [![validation](../../_badges/htb-p/validation.svg)](https://app.hackthebox.com/machines/Validation)
 
 You often find interesting files in easy CTFs using:

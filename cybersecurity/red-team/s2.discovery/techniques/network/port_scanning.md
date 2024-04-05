@@ -41,6 +41,7 @@
 [![glitch](../../../../_badges/thm-p/glitch.svg)](https://tryhackme.com/r/room/glitch)
 [![jason](../../../../_badges/thm-p/jason.svg)](https://tryhackme.com/r/room/jason)
 [![anthem](../../../../_badges/thm-p/anthem.svg)](https://tryhackme.com/r/room/anthem)
+[![blueprint](../../../../_badges/thm-p/blueprint.svg)](https://tryhackme.com/r/room/blueprint)
 ![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 [![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)

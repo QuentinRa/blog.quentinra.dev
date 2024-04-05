@@ -158,6 +158,7 @@ Uncommon Frameworks/CMS:
 * [GetSimple CMS](#getsimple-cms)
 * [Subrion CMS](#subrion-cms)
 * [umbraco CMS](#umbraco-cms)
+* [osCommerce — eCommerce Framework](#oscommerce--ecommerce-framework)
 </div></div>
 
 <hr class="sep-both">
@@ -172,6 +173,18 @@ Uncommon Frameworks/CMS:
 [![phpbb_install_files](../../../../_badges/rootme/web_server/phpbb_install_files.svg)](https://www.root-me.org/en/Challenges/Web-Server/Install-files)
 
 When installing a framework, such as [phpBB](https://github.com/phpbb/phpbb), it's important to properly configure it and remove install files.
+
+<br>
+
+#### osCommerce — eCommerce Framework
+
+[![blueprint](../../../../_badges/thm-p/blueprint.svg)](https://tryhackme.com/r/room/blueprint)
+
+[osCommerce](https://www.oscommerce.com/) is a highly vulnerable [open-source](https://github.com/osCommerce) PHP eCommerce framework using a MySQL backend.
+
+If install files were not removed, there is a RCE where we can inject code in the database field during install `/catalog/install/index.php` which is executed when visiting `/install/includes/configure.php`.
+
+📚 Use `oscommerce_installer_unauth_code_exec` for easy exploitation.
 
 <br>
 
