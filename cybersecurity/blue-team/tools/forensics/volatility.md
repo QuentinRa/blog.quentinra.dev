@@ -68,6 +68,7 @@ $ vol [...] windows.info # Example for 'windows'
 [![bpvolatility](../../../_badges/thm/bpvolatility.svg)](https://tryhackme.com/room/bpvolatility)
 [![adventofcyber4](../../../_badges/thm/adventofcyber4/day11.svg)](https://tryhackme.com/room/adventofcyber4)
 [![memoryforensics](../../../_badges/thm-p/memoryforensics.svg)](https://tryhackme.com/r/room/memoryforensics)
+[![forensics](../../../_badges/thm-p/forensics.svg)](https://tryhackme.com/r/room/forensics)
 [![command_control_level_2](../../../_badges/rootme/forensic/command_control_level_2.svg)](https://www.root-me.org/en/Challenges/Forensic/Command-Control-level-2)
 [![command_control_level_5](../../../_badges/rootme/forensic/command_control_level_5.svg)](https://www.root-me.org/en/Challenges/Forensic/Command-Control-level-5)
 
