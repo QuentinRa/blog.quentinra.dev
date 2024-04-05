@@ -75,13 +75,14 @@ Computer role:                                        SERVER
 
 #### Windows Active Directory-Related Functions
 
-Enumeration
+Enumeration <small>(often monitored, not all results)</small>
 
 * `net groups /domain`: list domain groups
 * `net group "Domain Admins" /dom`: list domain administrators
 * `net accounts /domain`: password policy
 * `net share`: list shares
 * `net user /domain`: list all users within a domain
+* `net user "username" /domain`: query information about a specific user
 
 Utilities
 
@@ -89,16 +90,20 @@ Utilities
 * `%USERDOMAIN%`: host domain name
 * `wmic ntdomain`: domain and domain controller information
 
-We may be able to use the [active directory module](https://learn.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2022-ps).
+We may be able to use the [active directory module](https://learn.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2022-ps) or [install it](#installing-the-snap-ins).
 
 ```ps
 PS> Import-Module ActiveDirectory
+PS> # Add -Server domain on external workstations
 PS> Get-ADDomain                                     # List domain information
 PS> Get-ADUser -Filter {ServicePrincipalName -ne "$null"} -Properties ServicePrincipalName
+PS> Get-ADUser -Filter 'Name -like "*xxx"' -Properties ServicePrincipalName
+PS> Get-ADUser -Identity username [...]
 PS> Get-ADTrust -Filter *                            # List Domain Trusts
 PS> Get-ADGroup -Filter * | select name              # List groups
 PS> Get-ADGroup -Identity "Backup Operators"         # Group Details
 PS> Get-ADGroupMember -Identity "Backup Operators"   # Group Members
+PS> Get-ADObject -Filter 'badPwdCount -gt 0' -includeDeletedObjects # Search Objects
 ```
 
 The tool [dsquery](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732952(v=ws.11)) may be available. It must be run in an elevated prompt. Refer to [LDAP Filters](/operating-systems/networking/protocols/ldap.md) to find specific accounts.
@@ -160,4 +165,18 @@ A few random notes:
 
 * Click on `View -> Advanced Features` to view all objects/attributes
 * Click on `Active Directory Users and Computers` to view all OUs
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+```
+PS> Set-ADAccountPassword -Identity username -OldPassword (ConvertTo-SecureString -AsPlaintext "old" -force) -NewPassword (ConvertTo-SecureString -AsPlainText "new" -Force)
+```
+</div><div>
 </div></div>

@@ -1,6 +1,7 @@
 # Password Policy
 
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+[![adenumeration](../../../../_badges/thm/adenumeration.svg)](https://tryhackme.com/r/room/adenumeration)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -56,12 +57,19 @@ client> getdompwinfo    # Password Policy
 #### Leveraging Windows Commands
 
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+[![adenumeration](../../../../_badges/thm/adenumeration.svg)](https://tryhackme.com/r/room/adenumeration)
 
 If you can run commands, you may use:
 
-```shell!
+```ps
 PS> net accounts
 PS> net accounts /domain
+```
+
+This one from AD module may be handy:
+
+```ps
+PS> Get-ADObject -Filter 'badPwdCount -gt 0' -includeDeletedObjects
 ```
 
 #### Additional Notes
