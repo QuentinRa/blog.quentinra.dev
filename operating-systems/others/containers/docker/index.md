@@ -567,12 +567,23 @@ By exploring these files, you can see every changes applied to a docker image fr
 
 <div class="row row-cols-lg-2"><div>
 
+#### Docker — Automated Tools
+
+A few tool may identify privilege escalation or breakout vectors:
+
+* [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) <small>(AppArmor, Capabilities, Network, Exploits)</small> with `-a`/`-t`?
+* [deepce](https://github.com/stealthcopter/deepce) <small>(1.1k ⭐, Enumeration + Escape)</small>
+
+<br>
+
 #### Docker — Socket Privilege Escalation
 
 [![linuxprivilegeescalation](../../../../cybersecurity/_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![introtodockerk8pdqk](../../../../cybersecurity/_badges/thm/introtodockerk8pdqk.svg)](https://tryhackme.com/room/introtodockerk8pdqk)
 [![chillhack](../../../../cybersecurity/_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
 [![marketplace](../../../../cybersecurity/_badges/thm-p/marketplace.svg)](https://tryhackme.com/r/room/marketplace)
+[![docker_talk_through_me](../../../../cybersecurity/_badges/rootme/app_script/docker_talk_through_me.svg)](https://www.root-me.org/en/Challenges/App-Script/Docker-Talk-through-me)
+[![docker_sys_admin_docker](../../../../cybersecurity/_badges/rootme/app_script/docker_sys_admin_docker.svg)](https://www.root-me.org/en/Challenges/App-Script/Docker-Sys-Admin-s-Docker)
 
 If a user is part of the docker group, they can interact with the docker daemon without `sudo`. This can be used for [privilege escalation](/cybersecurity/red-team/s4.privesc/index.md).
 
@@ -624,6 +635,7 @@ $ curl --unix-socket /tmp/docker.sock http://localhost/<endpoint> [...]
 #### Docker — TCP Privilege Escalation
 
 [![couch](../../../../cybersecurity/_badges/thm-p/couch.svg)](https://tryhackme.com/r/room/couch)
+[![docker_talk_through_me](../../../../cybersecurity/_badges/rootme/app_script/docker_talk_through_me.svg)](https://www.root-me.org/en/Challenges/App-Script/Docker-Talk-through-me)
 
 Docker can use [TCP](https://docs.docker.com/config/daemon/remote-access/) instead of a socket. It typically uses port `2375` 🐲. Refer to [docker socket notes](#docker--socket-privilege-escalation) with: `-H 127.0.0.1:2375`.
 
@@ -632,9 +644,6 @@ We may not have `docker` on the target machine, in which case, we may use a tunn
 ```ps
 $ ssh -L 2375:localhost:2375 [...] # docker -H tcp://localhost:2375
 ```
-
-<br>
-
 </div><div>
 
 #### Docker — SUID Abuse On Mounted Folder
@@ -663,6 +672,7 @@ $ docker inspect xxx -f '{{json .Config.Env }}' | jq
 [![unbakedpie](../../../../cybersecurity/_badges/thm-p/unbakedpie.svg)](https://tryhackme.com/r/room/unbakedpie)
 [![catpictures](../../../../cybersecurity/_badges/thm-p/catpictures.svg)](https://tryhackme.com/r/room/catpictures)
 [![docker_i_am_groot](../../../../cybersecurity/_badges/rootme/app_script/docker_i_am_groot.svg)](https://www.root-me.org/en/Challenges/App-Script/Docker-I-am-groot)
+[![docker_talk_through_me](../../../../cybersecurity/_badges/rootme/app_script/docker_talk_through_me.svg)](https://www.root-me.org/en/Challenges/App-Script/Docker-Talk-through-me)
 
 To identify if we are within a container:
 
@@ -690,6 +700,15 @@ $ nc -zv IP 1-65535 # you may use pivoting tools such as chisel to access them
 $ ip a # if available (check ifconfig?), find available networks
 $ ping 172.17.0.1 # if available, test to access the host
 ```
+
+Look if the container was executed with dangerous capabilities:
+
+```shell!
+$ capsh --print # cap_sys_admin? etc.
+$ cat /sys/kernel/security/apparmor/profiles # Not Found=>No Apparmor
+```
+
+Try to find if a docker socket is present or reachable.
 </div></div>
 
 <hr class="sep-both">
