@@ -206,5 +206,35 @@ Stuff that I found, but never read/used yet.
 
 * On Legacy systems, anyone can initiate LDAP requests. It seems to be called LDAP null bind.
 * `CN=Users,DC=INLANEFREIGHT,DC=LOCAL`
+
+Discovery <small>(Linux OpenLDAP and AD have different schemas)</small>
+
+```shell!
+$ cat newou.ldif
+dn: ou=NewOU,dc=domain,dc=local
+changetype: add
+objectClass: organizationalUnit
+ou: NewOU
+$ ldapmodify -H ldap:// -x -D "cn=admin,dc=rootme,dc=local" -w 'xxx' -f newou.ldif
+$ ldapsearch -H ldap:// -x -b "" -s base namingContexts
+$ ldapsearch -H ldap:// -x -D "cn=admin,dc=domain,dc=local" -w 'xxx' -b "dc=domain,dc=local" -s sub "*"
+$ ldapadd -H ldap:// -x -D "cn=admin,dc=domain,dc=local" -w 'xxx' -f user.ldif
+```
+
 </div><div>
+
+[![windows_ldap_user_kerberoastable](../../../cybersecurity/_badges/rootme/forensic/windows_ldap_user_kerberoastable.svg)](https://www.root-me.org/en/Challenges/Forensic/Windows-LDAP-User-KerbeRoastable)
+[![windows_ldap_user_asreproastable](../../../cybersecurity/_badges/rootme/forensic/windows_ldap_user_asreproastable.svg)](https://www.root-me.org/en/Challenges/Forensic/Windows-LDAP-User-ASRepRoastable)
+
+* [ldap2json](https://github.com/p0dalirius/ldap2json)
+
+```shell!
+$ DEST="$HOME/tools/ldap2json"
+$ git clone -b "master" https://github.com/p0dalirius/ldap2json $DEST
+$ python $DEST/analysis/analysis.py -f xxx.json
+analysis> searchbase CN=YYY,DC=example,DC=com
+analysis> object_by_property_name servicePrincipalName
+analysis> object_by_property_name userAccountControl
+analysis> object_by_dn CN=XXX,CN=YYY,DC=example,DC=com # to get all information
+```
 </div></div>

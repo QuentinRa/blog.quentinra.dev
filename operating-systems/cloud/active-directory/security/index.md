@@ -286,6 +286,7 @@ This is usually after the DHCP lease using TFTP.
 
 [![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![attacktivedirectory](../../../../cybersecurity/_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
+[![windows_ldap_user_asreproastable](../../../../cybersecurity/_badges/rootme/forensic/windows_ldap_user_asreproastable.svg)](https://www.root-me.org/en/Challenges/Forensic/Windows-LDAP-User-ASRepRoastable)
 
 *Alternative name: ASReproasting*
 
@@ -299,11 +300,14 @@ $ impacket-GetNPUsers -dc-ip IP -usersfile valid_users.txt domain/junkusername -
 
 Refer to [cracking Kerberos Pre Auth Hash](/cybersecurity/cryptography/algorithms/hashing/index.md#kerberos-pre-auth-cracking).
 
+📚 Using LDAP, search for users with `userAccountControl>4194304`.
+
 <br>
 
 #### Kerberoasting — Privilege Escalation
 
 [![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+[![windows_ldap_user_kerberoastable](../../../../cybersecurity/_badges/rootme/forensic/windows_ldap_user_kerberoastable.svg)](https://www.root-me.org/en/Challenges/Forensic/Windows-LDAP-User-KerbeRoastable)
 
 Domain accounts are often used to run services. They may have been given many privileges. Each service instance is associated with a service account using a **Service Principal Names (SPN)**.
 
@@ -344,6 +348,8 @@ PS> .\Rubeus.exe kerberoast /tgtdeleg /ldapfilter:'admincount=1' /nowrap # try a
 Some tools can try to perform a downgrade attack from AES to RC4. It won't work as of Windows Server 2019.
 
 Refer to [cracking Kerberos Tickets](/cybersecurity/cryptography/algorithms/hashing/index.md#kerberos-tickets-cracking).
+
+📚 Using LDAP, search for users with `servicePrincipalName` set.
 
 📚 Refer to "Managed Service Accounts" for remediation (LAPS).
 
