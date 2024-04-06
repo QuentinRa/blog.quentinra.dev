@@ -426,6 +426,12 @@ $ cat /etc/passwd | md5sum
 $ Get-FileHash .\file.txt -Algorithm MD5
 ```
 </div><div>
+
+#### CTF Notes
+
+[![hash_sha_2](../../../_badges/rootme/cryptanalysis/hash_sha_2.svg)](https://www.root-me.org/en/Challenges/Forensic/Active-Directory-GPO)
+
+* The SHA-2 results in a fixed size hash usually represented as hexadecimal. It's 64 chars for SHA-256.
 </div></div>
 
 <hr class="sep-both">

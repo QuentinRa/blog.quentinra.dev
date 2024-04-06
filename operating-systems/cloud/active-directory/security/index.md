@@ -280,6 +280,24 @@ PS> Get-FindCredentials -WimFile pxeboot.wim
 ```
 
 This is usually after the DHCP lease using TFTP.
+
+<br>
+
+#### Group Policy Preferences (GPP)
+
+[![active_directory_gpo](../../../../cybersecurity/_badges/rootme/forensic/active_directory_gpo.svg)](https://www.root-me.org/en/Challenges/Forensic/Active-Directory-GPO)
+
+Group Policy Preferences (GPP) are stored within GPOs. They can be used to make settings persist even if GPOs are removed.
+
+Passwords may be stored in GPP, but the encryption algorithm is reversible, so it's a known insecure practice.
+
+You can use impacket or [gpp-decrypt](https://github.com/t0thkr1s/gpp-decrypt) <small>(0.1k ⭐)</small>:
+
+```shell!
+$ impacket-Get-GPPPassword -xmlfile Groups.xml LOCAL
+```
+
+➡️ Look at: `\<domain>\SYSVOL\<domain>\Policies\<GPO GUID>\Machine\Preferences\Groups\Groups.xml`.
 </div><div>
 
 #### AS-REP Roasting Attack — Privilege Escalation
