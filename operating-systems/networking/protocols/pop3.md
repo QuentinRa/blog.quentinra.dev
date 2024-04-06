@@ -73,7 +73,7 @@ USER yyy
 
 The [APOP](https://www.rfc-editor.org/rfc/rfc1939#page-15) is an authentication method that can be implemented by a POP3 Server. Instead of sending the cleartext password:
 
-* The server will send a challenge text to the client
+* The server will send a challenge text (`salt`) to the client
 * The client will return the hash of `md5(challenge + password)`
 * The server will compute the hash `md5(challenge + saved_password)` and compare it with the hash it received
 
@@ -81,23 +81,23 @@ This authentication method is still vulnerable to sniffing.
 
 A hacker having both the challenge and the hash can try to brute force the password. With `hashcat`:
 
-```shell!
+```ps
 $ cat hash
-hash:challenge
+hash:salt
 $ hashcat -m 20 hash wordlist
 ```
 </div><div>
 
 With John, it's sightly complex:
 
-```shell!
+```ps
 $ cat apop2john.py
 ```
 
 ```py
 import argparse
 
-parser = argparse.ArgumentParser(description="Generate output based on user, hash, and salt.")
+parser = argparse.ArgumentParser(description="Convert APOP hash:salt to John The Ripper Dynamic MD5 Hash")
 parser.add_argument("hash", type=str, help="Hash string")
 parser.add_argument("salt", type=str, help="Salt string")
 args = parser.parse_args()
@@ -105,8 +105,8 @@ print(f':$dynamic_1017${args.hash}$HEX${args.salt.encode().hex()}')
 ```
 
 ```ps
-$ python apop2john.py "hash" "challenge" > hash
-$ john hash --wordlist=wordlist --format=raw-md5 --rules rule
+$ python apop2john.py "hash" "salt" > hash
+$ john hash --wordlist=wordlist
 ```
 </div></div>
 

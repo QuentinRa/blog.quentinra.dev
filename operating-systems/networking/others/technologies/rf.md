@@ -70,6 +70,15 @@ Stuff that I found, but never read/used yet.
 * [hacktricks RFID](https://book.hacktricks.xyz/todo/radio-hacking/pentesting-rfid)
 * [proxmark3 RFID](https://github.com/Proxmark/proxmark3)
 * [rftap](https://rftap.github.io/)
-* [Universal Radio Hacker](https://github.com/jopohl/urh) <small>(10.4k ⭐)</small>
 </div><div>
+
+* [Universal Radio Hacker](https://github.com/jopohl/urh) <small>(10.4k ⭐)</small>
+
+```ps
+$ DEST="$HOME/tools/urh"
+$ git clone -b "master" https://github.com/jopohl/urh.git $DEST
+$ pip install cython # no venv because their setup.py is a pain
+$ python $DEST/setup.py install --user
+$ urh
+```
 </div></div>

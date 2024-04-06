@@ -54,7 +54,7 @@ $ nxc smb IP -u 'username' -p 'password' --ntds
 
 There is a network share on the domain controller: `dir <DCIP>\SYSVOL` associated with the folder `C:\Windows\SYSVOL\sysvol\`.
 
-It's used to store [GPO](/operating-systems/cloud/active-directory/_knowledge/index.md#permissions) and logon/logoff scripts.
+It's used to store [GPO](/operating-systems/cloud/active-directory/_knowledge/index.md#permissions) and logon/logoff scripts while for the latter, the `NETLOGON` share may be used instead.
 </div><div>
 
 #### NTLM
@@ -359,15 +359,14 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * prevent access to dangerous websites
-* [adPEAS](https://github.com/61106960/adPEAS) (0.4k ⭐)
-* [UltimateAppLockerByPassList](https://github.com/api0cradle/UltimateAppLockerByPassList) (1.5k ⭐)
-* [Active Directory Exploitation Cheat Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet) (3.4k ⭐)
+* [adPEAS](https://github.com/61106960/adPEAS) <small>(0.4k ⭐)</small>
+* [UltimateAppLockerByPassList](https://github.com/api0cradle/UltimateAppLockerByPassList) <small>(1.5k ⭐)</small>
+* [Active Directory Exploitation Cheat Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet) <small>(3.4k ⭐)</small>
 * [AD mindmap orange](https://orange-cyberdefense.github.io/ocd-mindmaps/)
+* [bloodyAD](https://github.com/CravateRouge/bloodyAD)+[autobloody](https://github.com/CravateRouge/autobloody)
 </div><div>
 
 * Hardening AD ([ref](https://blog.netwrix.fr/2019/05/06/securiser-votre-annuaire-ad-contre-les-attaques-de-malware/))
-* [Hacking Active Directory](https://tryhackme.com/module/hacking-active-directory)
-* `\\<domain_controller>\NETLOGON` (share, store logon scripts/...)
 * [kerberos/AD cyber](https://zer1t0.gitlab.io/posts/)
 
 <details class="details-n">
