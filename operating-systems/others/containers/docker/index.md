@@ -565,6 +565,9 @@ By exploring these files, you can see every changes applied to a docker image fr
 
 ## Docker Pentester Notes ☠️
 
+[![docker_security](../../../../cybersecurity/_badges/hacktricks/linux_hardening/privilege_escalation/docker_security.svg)](https://book.hacktricks.xyz/linux-hardening/privilege-escalation/docker-security)
+[![docker_breakout](../../../../cybersecurity/_badges/hacktricks/linux_hardening/privilege_escalation/docker_security/docker_breakout.svg)](https://book.hacktricks.xyz/linux-hardening/privilege-escalation/docker-security/docker-breakout-privilege-escalation)
+
 <div class="row row-cols-lg-2"><div>
 
 #### Docker — Automated Tools
@@ -573,6 +576,7 @@ A few tool may identify privilege escalation or breakout vectors:
 
 * [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) <small>(AppArmor, Capabilities, Network, Exploits)</small> with `-a`/`-t`?
 * [deepce](https://github.com/stealthcopter/deepce) <small>(1.1k ⭐, Enumeration + Escape)</small>
+* [cdk](https://github.com/cdk-team/CDK) <small>(3.6k ⭐, Enumeration + Escape)</small>
 
 <br>
 
@@ -583,7 +587,6 @@ A few tool may identify privilege escalation or breakout vectors:
 [![chillhack](../../../../cybersecurity/_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
 [![marketplace](../../../../cybersecurity/_badges/thm-p/marketplace.svg)](https://tryhackme.com/r/room/marketplace)
 [![docker_talk_through_me](../../../../cybersecurity/_badges/rootme/app_script/docker_talk_through_me.svg)](https://www.root-me.org/en/Challenges/App-Script/Docker-Talk-through-me)
-[![docker_sys_admin_docker](../../../../cybersecurity/_badges/rootme/app_script/docker_sys_admin_docker.svg)](https://www.root-me.org/en/Challenges/App-Script/Docker-Sys-Admin-s-Docker)
 
 If a user is part of the docker group, they can interact with the docker daemon without `sudo`. This can be used for [privilege escalation](/cybersecurity/red-team/s4.privesc/index.md).
 
@@ -665,6 +668,8 @@ $ docker inspect xxx -f '{{json .Config }}' | jq
 $ docker inspect xxx -f '{{json .Config.Env }}' | jq
 ```
 
+You might as well dig inside layers files `[...]/overlay2/<xxx>/diff/`.
+
 <br>
 
 #### Docker — Container Breakout
@@ -673,6 +678,7 @@ $ docker inspect xxx -f '{{json .Config.Env }}' | jq
 [![catpictures](../../../../cybersecurity/_badges/thm-p/catpictures.svg)](https://tryhackme.com/r/room/catpictures)
 [![docker_i_am_groot](../../../../cybersecurity/_badges/rootme/app_script/docker_i_am_groot.svg)](https://www.root-me.org/en/Challenges/App-Script/Docker-I-am-groot)
 [![docker_talk_through_me](../../../../cybersecurity/_badges/rootme/app_script/docker_talk_through_me.svg)](https://www.root-me.org/en/Challenges/App-Script/Docker-Talk-through-me)
+[![docker_sys_admin_docker](../../../../cybersecurity/_badges/rootme/app_script/docker_sys_admin_docker.svg)](https://www.root-me.org/en/Challenges/App-Script/Docker-Sys-Admin-s-Docker)
 
 To identify if we are within a container:
 
@@ -706,6 +712,13 @@ Look if the container was executed with dangerous capabilities:
 ```shell!
 $ capsh --print # cap_sys_admin? etc.
 $ cat /sys/kernel/security/apparmor/profiles # Not Found=>No Apparmor
+```
+
+If you have `cap_sys_admin` and AppArmor is not enabled: try [CVE-2022-0492](https://nvd.nist.gov/vuln/detail/CVE-2022-0492) <small>(release_agent PoC one or two on Hacktricks)</small>.
+
+```shell!
+$ ./cdk run mount-cgroup "<some command>"
+$ ./cdk run rewrite-cgroup-devices # debugfs -w result
 ```
 
 Try to find if a docker socket is present or reachable.
