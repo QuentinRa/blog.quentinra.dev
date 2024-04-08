@@ -224,6 +224,28 @@ ciphertext_2 += b'\x00' * padding_length
 message_2 = xor_strings(key_stream, ciphertext_2)
 ```
 </div><div>
+
+#### AES ECB Padding Oracle
+
+Assuming we have a ciphertext from `<userinput>+<unknown_text>` and we know the padding scheme, we can decrypt `<unknown_text>`.
+
+The size of a block is 16 bytes. If the plaintext is shorter, padding is added with `0xN` the number of missing bytes <small>(maximum is `\x10`=16)</small>.
+
+```shell!
+python> from Crypto.Util.Padding import pad
+python> pad(b'\xAA'*3, 16).hex()
+aaaaaa0d0d0d0d0d0d0d0d0d0d0d0d0d
+python> pad(b'\xAA'*16, 16).hex() # The second block is empty!
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa10101010101010101010101010101010
+```
+
+Assuming the target uses the padding function above, we can first learn the size of the unknown text by determining after how many bytes the new empty block is created <small>(block_size=16, inject n, got m rows)</small>.
+
+```shell!
+python> pad(b'\xAA'*n + unknown_text, 16).hex()
+python> # If you got "m" blocks, then len is ((m-1)*16)-n
+python> # Note: m-1 as we discard the empty block
+```
 </div></div>
 
 <hr class="sep-both">
