@@ -705,6 +705,7 @@ You can look for open ports using [port scanning](/cybersecurity/red-team/s2.dis
 $ nc -zv IP 1-65535 # you may use pivoting tools such as chisel to access them
 $ ip a # if available (check ifconfig?), find available networks
 $ ping 172.17.0.1 # if available, test to access the host
+$ netstat -tunlpa # if available, may be handy too
 ```
 
 Look if the container was executed with dangerous capabilities:

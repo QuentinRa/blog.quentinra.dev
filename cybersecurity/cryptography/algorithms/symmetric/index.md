@@ -246,6 +246,21 @@ python> pad(b'\xAA'*n + unknown_text, 16).hex()
 python> # If you got "m" blocks, then len is ((m-1)*16)-n
 python> # Note: m-1 as we discard the empty block
 ```
+
+We can now generate a ciphertext we can brute force by pushing each byte one by one to the empty padding block.
+
+* First byte: `0x??` + `b'\x0F' * 15`
+* Second byte: `0x??` + `0x61` + `b'0x0F' * 14`
+* ...
+
+```shell!
+python> charset = [i.to_bytes() for i in range(1, 256)]
+python> payload_0 = (charset[0] + b'\x0F' * 15) # Test 0x1
+python> payload_1 = (charset[1] + b'\x0F' * 15) # Test 0x2
+python> ...
+```
+
+The same logic can be applied again to decode the remaining characters, but with decrypted bytes instead of padding bytes.
 </div></div>
 
 <hr class="sep-both">

@@ -189,3 +189,16 @@ If you can run VIM, it's easy to escape:
 :shell
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* `chroot` (chroot xxx, chroot .., chroot .)
+* [chw00t](https://github.com/earthquake/chw00t)
+</div><div>
+</div></div>
