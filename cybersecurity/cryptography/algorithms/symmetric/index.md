@@ -159,12 +159,14 @@ Since both $m$ and $k$ are letters, we need to convert them to binary to use the
 
 <div class="row row-cols-lg-2"><div>
 
-The **Advanced Encryption Standard**, abbreviated as **AES**, is a part of the **Block ciphers** algorithms.
+The **Advanced Encryption Standard**, abbreviated as **AES**, is a part of the **Block ciphers** algorithms. It's quite used and recognized as both fast and secure. It was designed by the NIST.
+
+Each chunk has the size of the key, e.g., 128 bits for AES-128 <small>(16 bytes)</small>. Padding is added to if needed according to the padding scheme.
 
 <details class="details-n">
 <summary>AES-ECB (Electronic Code Book)</summary>
 
-Using this mode, each block is encrypted using the same key. 
+Using this mode, each block is encrypted using the same key. It means that we would have identical cipher chunks if some plaintext chunks are identical.
 
 * **Attacks** 🧨
   * Brute force attack
@@ -186,6 +188,7 @@ Using this mode with AES, we introduce a new parameter IV <small>(unique and not
 </div><div>
 
 * **Possible values for k** 🦄: a string of 128/192/256 bits
+* **Padding schemes** 📚: `b'\xN' * N` missing bytes | `\x01\x02` etc. 
 * **Attacks** 🧨
   * Brute force attack
   * Known plaintext attack
@@ -236,7 +239,7 @@ from Crypto.Util import Counter
 key, iv = b'\x00' * 16, b''
 ctr = Counter.new(128, iv)
 cipher = AES.new(key, AES.MODE_CTR, counter=ctr)
-ciphertext = cipher.encrypt(b'Hello, World!').hex()
+ciphertext = cipher.encrypt(b'Known Plain Text Message').hex()
 cipher = AES.new(key, AES.MODE_CTR, counter=ctr) # ⚠️
 ciphertext2 = cipher.encrypt(hidden_text).hex()
 ```
@@ -244,7 +247,7 @@ ciphertext2 = cipher.encrypt(hidden_text).hex()
 It will only partially work if the known plaintext is too short.
 
 ```py
-plaintext = b"Known Plain Text Message"
+plaintext = b'Known Plain Text Message'
 ciphertext = bytes.fromhex("138c93b9945e600d57167377f0823d2e23c5bfbd13d7c4f7")
 ciphertext2 = bytes.fromhex("1d8c9fbc830e4404525f5032d794243d66")
 

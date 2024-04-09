@@ -81,9 +81,18 @@ $ git log -p -- config.php  # look at config.php history
 $ git show commit_id
 ```
 
-👻 Automated tools: [GitHacker](https://github.com/WangYihang/GitHacker), [GitTools](https://github.com/internetwache/GitTools), [GitHack](https://github.com/lijiejie/GitHack), etc.
+A few automated tools: [GitHacker](https://github.com/WangYihang/GitHacker) <small>(1.3k ⭐, 2023 🪦)</small> [GitTools](https://github.com/internetwache/GitTools)  <small>(3.7k ⭐, 2022 🪦, 👻)</small>, [GitHack](https://github.com/lijiejie/GitHack)  <small>(2.9k ⭐, 2022 🪦)</small> and [git-dumper](https://github.com/arthaud/git-dumper/tree/master) <small>(1.6k ⭐)</small>.
 
-📚 `.git` may be blocked (403) but `.git/index`, `.git/HEAD`, etc. may not.
+```shell!
+$ DEST="$HOME/tools/gitdumper"
+$ git clone -b "master" https://github.com/arthaud/git-dumper $DEST
+$ git-dumper URL/.git/ dump
+```
+
+📚 `.git` may be blocked (403) but `.git/index`, `.git/HEAD`, etc. may not. 
+
+⚠️ We are downloading potentially harmful files. This is **dangerous** as it may lead to RCE. Manually check the git configuration files before running any `git` commands!
+</div><div>
 
 #### Composer Vendor Folder Exposure
 
@@ -92,7 +101,6 @@ $ git show commit_id
 [Composer](/programming-languages/web/php/composer/index.md) is a package manager for PHP. From `composer.json`, it creates a `vendor` folder with the PHP packages.
 
 This folder should not be available for remote users.
-</div><div>
 
 #### CGI Scripts
 
