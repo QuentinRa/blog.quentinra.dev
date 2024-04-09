@@ -202,7 +202,7 @@ Using this mode with AES, we introduce a new parameter IV <small>(unique and not
 
 #### ChaCha20 (XOR)
 
-[![the-last-dance](../../../_badges/htb-c/the-last-dance.svg)](https://app.hackthebox.com/challenges/the-last-dance)
+[![the_last_dance](../../../_badges/htb-c/the_last_dance.svg)](https://app.hackthebox.com/challenges/the-last-dance)
 
 ChaCha20 is a stream cipher algorithm that uses XOR similarly to the OTP algorithm. Given the plaintext and the cipher text, we can use XOR to get the key stream <small>(key+nonce)</small>.
 
@@ -227,24 +227,28 @@ message_2 = xor_strings(key_stream, ciphertext_2)
 
 #### AES ECB Padding Oracle
 
+[![ecb_oracle](../../../_badges/cryptohack/ecb_oracle.svg)](https://aes.cryptohack.org/ecb_oracle/)
+
 Assuming we have a ciphertext from `<userinput>+<unknown_text>` and we know the padding scheme, we can decrypt `<unknown_text>`.
 
-The size of a block is 16 bytes. If the plaintext is shorter, padding is added with `0xN` the number of missing bytes <small>(maximum is `\x10`=16)</small>.
+We need to be able to encrypt new ciphertext. For this example, the size of a block is 16 bytes. If the plaintext is shorter, padding is added: `0xN` is added `N` times, with `N` the number of missing bytes.
 
 ```shell!
 python> from Crypto.Util.Padding import pad
 python> pad(b'\xAA'*3, 16).hex()
 aaaaaa0d0d0d0d0d0d0d0d0d0d0d0d0d
-python> pad(b'\xAA'*16, 16).hex() # The second block is empty!
+python> pad(b'\xAA'*16, 16).hex() # 0x10 = 16 = empty block!
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa10101010101010101010101010101010
 ```
 
 Assuming the target uses the padding function above, we can first learn the size of the unknown text by determining after how many bytes the new empty block is created <small>(block_size=16, inject n, got m rows)</small>.
 
 ```shell!
-python> pad(b'\xAA'*n + unknown_text, 16).hex()
-python> # If you got "m" blocks, then len is ((m-1)*16)-n
-python> # Note: m-1 as we discard the empty block
+python> payload_1 = (b'\xAA'*1).hex() # n = 1
+python> payload_2 = (b'\xAA'*2).hex() # n = 2
+When you notice the output got a new block:
+Assuming you now have "m" blocks, then len(...) is ((m-1)*16)-n
+Note: m-1 as we discard the empty block of padding (encrypted(10....10))
 ```
 
 We can now generate a ciphertext we can brute force by pushing each byte one by one to the empty padding block.
@@ -261,6 +265,120 @@ python> ...
 ```
 
 The same logic can be applied again to decode the remaining characters, but with decrypted bytes instead of padding bytes.
+
+<details class="details-n">
+<summary>Python Script To Demonstrate The Process</summary>
+
+```python
+import concurrent.futures
+import threading
+
+print_lock = threading.Lock()
+
+request_count = 0
+
+
+def do_encryption(param):
+    global request_count
+    request_count = request_count + 1
+    # Secret Encryption Function
+    from Crypto.Cipher import AES
+    from Crypto.Util.Padding import pad
+    KEY = b'\x00' * 16
+    hidden_text = b'flag{this_is_a_dummy_flag}'
+    plaintext = bytes.fromhex(param)
+    padded = pad(plaintext + hidden_text, 16)
+    cipher = AES.new(KEY, AES.MODE_ECB)
+    return cipher.encrypt(padded).hex()
+
+
+def extract_hash(char, padding):
+    payload = (char + padding).hex()
+    return do_encryption(payload)[:32]
+
+def compute_initial_payload_index(empty_payload):
+    payload_length = len(empty_payload)
+    length_with_a_new_block = payload_length + 32
+    initial_payload_index = None
+    empty_payload = None
+
+    for i in range(1, 16):
+        payload = (b'\xAA' * i).hex()
+        computer_ciphertext = do_encryption(payload)
+        print(computer_ciphertext)
+        if len(computer_ciphertext) == length_with_a_new_block:
+            initial_payload_index = i
+            empty_payload = computer_ciphertext[-32:]
+            break
+
+    if initial_payload_index is None:
+        print("[!] Error, could not compute initial_payload_index.")
+        exit(2)
+
+    print(length_with_a_new_block)
+
+    m = length_with_a_new_block // 32
+    hidden_text_length = ((m - 1) * 16) - initial_payload_index
+
+    print("[+] We created a new block after injecting " + str(initial_payload_index) + " characters.")
+    print("[+] The previous length was " + str(payload_length) + "; now it's "+ str(length_with_a_new_block) +".")
+    print("[+] The hidden payload length is " + str(hidden_text_length) + ".")
+    print("[+] The empty payload is " + empty_payload + ".")
+
+    return initial_payload_index + 1, hidden_text_length, empty_payload
+
+
+with concurrent.futures.ThreadPoolExecutor(max_workers=64) as executor:
+    flag = ""
+    charset = [ord(i).to_bytes() for i in "abcdefghijklmnopqrstuvwxyz0123456789{}_ABCEDFGHIJKLMNOPQRSTUVWXYZ"]
+    for i in range(1, 256):
+        if i not in charset:
+            charset.append(i.to_bytes())
+    payload_offset = 0
+    payload_frame = 0
+    initial_payload_index, hidden_text_length, empty_payload = compute_initial_payload_index(do_encryption(b''.hex()))
+
+    # We are reading ${hidden_text_length} bytes
+    for offset in range(0, hidden_text_length):
+        payload_to_compute = (b'\xAA' * (initial_payload_index + payload_offset + offset)).hex()
+        result = do_encryption(payload_to_compute)
+        result_len = len(result)
+        ciphertext_to_compute = result[-32-payload_frame:result_len-payload_frame]
+
+        if ciphertext_to_compute == empty_payload:
+            payload_offset += 16
+            payload_frame += 32
+            ciphertext_to_compute = result[-32 - payload_frame:result_len - payload_frame]
+
+        padding_count = (payload_offset + 15) - offset
+        padding = flag.encode() + (padding_count.to_bytes() * padding_count)
+
+        with print_lock:
+            print("[+] Moving " + str(offset+1) + " byte.")
+            print("[+] Trying to brute force '" + ciphertext_to_compute + "'.")
+            print("[+] It should correspond to b'\\x??' + " + str(padding) + ".")
+
+        executor_manager = {executor.submit(extract_hash, char, padding): char for char in charset}
+        for future in concurrent.futures.as_completed(executor_manager):
+            associated_char = executor_manager[future]
+            computer_ciphertext = future.result()
+            if computer_ciphertext == ciphertext_to_compute:
+                flag = chr(int(ord(associated_char).to_bytes().hex(), 16)) + flag
+
+                # Cancel Every Task
+                for task_to_cancel in executor_manager:
+                    task_to_cancel.cancel()
+                break
+
+        with print_lock:
+            print(f"[+] Current flag is '{flag}'.")
+
+print(f"[+] The final flag is '{flag}'.")
+print(f"[+] It took so many encryption requests: '{request_count}' :/.")
+```
+</details>
+
+📚 We did it from right to left, it could be done from left ro right.
 </div></div>
 
 <hr class="sep-both">
