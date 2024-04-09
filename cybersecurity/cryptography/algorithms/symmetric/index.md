@@ -200,7 +200,7 @@ Using this mode with AES, we introduce a new parameter IV <small>(unique and not
 
 <div class="row row-cols-lg-2"><div>
 
-#### ChaCha20 (XOR)
+#### ChaCha20 (XOR) — Keystream Reuse + Known Plaintext
 
 [![the_last_dance](../../../_badges/htb-c/the_last_dance.svg)](https://app.hackthebox.com/challenges/the-last-dance)
 
@@ -222,6 +222,37 @@ ciphertext_2 = b''
 padding_length = len(key_stream) - len(ciphertext_2)
 ciphertext_2 += b'\x00' * padding_length
 message_2 = xor_strings(key_stream, ciphertext_2)
+```
+
+<br>
+
+#### AES CRT — Keystream Reuse + Known Plaintext
+
+When the keystream `ks=AES(key, iv)` is reused, `XOR(ks,ks)=0` so the equation is now `plaintext2 = XOR(XOR(ciphertext1, plaintext1), ciphertext2)` without two unknown values.
+
+```py
+from Crypto.Cipher import AES
+from Crypto.Util import Counter
+key, iv = b'\x00' * 16, b''
+ctr = Counter.new(128, iv)
+cipher = AES.new(key, AES.MODE_CTR, counter=ctr)
+ciphertext = cipher.encrypt(b'Hello, World!').hex()
+cipher = AES.new(key, AES.MODE_CTR, counter=ctr) # ⚠️
+ciphertext2 = cipher.encrypt(hidden_text).hex()
+```
+
+It will only partially work if the known plaintext is too short.
+
+```py
+plaintext = b"Known Plain Text Message"
+ciphertext = bytes.fromhex("138c93b9945e600d57167377f0823d2e23c5bfbd13d7c4f7")
+ciphertext2 = bytes.fromhex("1d8c9fbc830e4404525f5032d794243d66")
+
+def xor_strings(s1, s2): # Or use: from pwn import xor
+    return bytes(b1 ^ b2 for b1, b2 in zip(s1, s2))
+
+keystream = xor_strings(ciphertext, ciphertext2)
+print(xor_strings(keystream, plaintext))
 ```
 </div><div>
 
