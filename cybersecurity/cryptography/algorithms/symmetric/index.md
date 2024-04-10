@@ -199,32 +199,79 @@ Using this mode with AES, we introduce a new parameter IV <small>(unique and not
 
 <hr class="sep-both">
 
+## AES And XOR Pentester Notes ☠️
+
+<div class="row row-cols-lg-2"><div>
+
+#### Key Stream Reuse And Two-Time Pad
+
+[![the_last_dance](../../../_badges/htb-c/the_last_dance.svg)](https://app.hackthebox.com/challenges/the-last-dance)
+
+Many algorithms are using an implementation based on OTP. It often looks like this the following code:
+
+```py
+def xor_strings(s1, s2): # Or use: from pwn import xor
+    return bytes(b1 ^ b2 for b1, b2 in zip(s1, s2))
+
+key_stream = b'<generation specific to the algorithm>'
+plaintext = b'Hello, World!'
+ciphertext = xor_strings(key_stream, plaintext) # Encrypt
+print("Ciphertext:", ciphertext)
+print("Message:", xor_strings(key_stream, ciphertext))  # Decrypt
+print("Key stream:", xor_strings(plaintext, ciphertext)) # Compute Partial Key Stream
+```
+
+Notice than given the plaintext and the ciphertext, we are able to expose the key stream partially, up to the length of the shortest string.
+
+```yaml!
+Ciphertext: b't\x02\t\x02\n^A#\x06\x1d\x02DR'
+Message: b'Hello, World!'
+Key stream: b'<generation s'
+```
+
+This is not a problem when we are using a unique key stream for each message, but it's **when the key stream is reused**.
+
+```py
+plaintext1=b'This is a known plaintext'
+ciphertext1=b"F2\xb5R\x9c\xc8\xc9\r`\xc5t'w\xa5\xa5\x92\x84$z\xa0\xd0\x1eh)\xdc"
+ciphertext2=b't6\xbdF\xc7\xd8\xd5X^\x83p<v\xb6\x94\xdf\x915'
+
+key_stream = xor_strings(plaintext1, ciphertext1)
+print("Flag:", xor_strings(key_stream, ciphertext2))
+```
+
+And we are able to find the secret message:
+
+```yaml!
+Flag: b'flag{you_found_me}'
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Pentester Notes ☠️
 
 <div class="row row-cols-lg-2"><div>
 
-#### ChaCha20 (XOR) — Keystream Reuse + Known Plaintext
+#### ChaCha20
 
 [![the_last_dance](../../../_badges/htb-c/the_last_dance.svg)](https://app.hackthebox.com/challenges/the-last-dance)
 
-ChaCha20 is a stream cipher algorithm that uses XOR similarly to the OTP algorithm. Given the plaintext and the cipher text, we can use XOR to get the key stream <small>(key+nonce)</small>.
+ChaCha20 is a stream cipher algorithm that uses XOR similarly to the OTP algorithm. If the key stream <small>(key+nonce)</small> is reused, refer to [this](#key-stream-reuse-and-two-time-pad).
 
 ```py
-def xor_strings(s1, s2):
-    return bytes(b1 ^ b2 for b1, b2 in zip(s1, s2))
-    
-message = b''
-ciphertext = b''
-key_stream = xor_strings(message, ciphertext)
-```
+from Crypto.Cipher import ChaCha20
+from Crypto.Random import get_random_bytes
 
-If the key and the nonce were reused to encrypt another message, then we can use the key stream to decrypt it.
+plaintext1 = b'This is a known plaintext'
+plaintext2 = b'flag{you_found_me}'
 
-```py
-ciphertext_2 = b''
-padding_length = len(key_stream) - len(ciphertext_2)
-ciphertext_2 += b'\x00' * padding_length
-message_2 = xor_strings(key_stream, ciphertext_2)
+key, nonce = os.urandom(32), get_random_bytes(8)
+cipher = ChaCha20.new(key=key, nonce=nonce)
+ciphertext1 = cipher.encrypt(plaintext1)
+cipher = ChaCha20.new(key=key, nonce=nonce)
+ciphertext2 = cipher.encrypt(plaintext2)
 ```
 
 <br>
@@ -244,7 +291,7 @@ cipher = AES.new(key, AES.MODE_CTR, counter=ctr) # ⚠️
 ciphertext2 = cipher.encrypt(hidden_text).hex()
 ```
 
-It will only partially work if the known plaintext is too short.
+It can be used to encrypt/decrypt any string shorter than the key stream. The key stream maximum length is the one of the input.
 
 ```py
 plaintext = b'Known Plain Text Message'
