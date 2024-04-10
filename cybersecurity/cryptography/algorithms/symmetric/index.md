@@ -354,6 +354,18 @@ ciphertext1 = cipher.encrypt(plaintext1)
 cipher = AES.new(key, AES.MODE_CTR, counter=ctr)
 ciphertext2 = cipher.encrypt(plaintext2)
 ```
+
+<br>
+
+#### AES OFB — Overview
+
+AES OFB uses AES ECB to generate a key stream by encoding the `IV` using a `key` and repeating the process with generated the ciphertext.
+
+* `IV_0 = AES_ECB(key, IV)`
+* `IV_n = AES_ECB(key, IV_{n-1})`
+* ... until the key stream is long enough for the message
+
+When the key stream is reused, like others, it [can be exploited](#key-stream-reuse-and-two-time-pad).
 </div><div>
 
 #### AES ECB Padding Oracle
