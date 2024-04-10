@@ -52,13 +52,74 @@ $ hydra -L user.list -P password.list ssh://IP -V -f
 ```
 </div><div>
 
-#### Additional Ressources
+#### Additional Resources
 
 [![keeper](../../../cybersecurity/_badges/htb-p/keeper.svg)](https://app.hackthebox.com/machines/Keeper)
 
 * Run [ssh-audit](https://github.com/jtesta/ssh-audit) <small>(3.0k ⭐)</small> and analyze the output
 
 * Use `puttygen saved_key.ppk -O private-openssh -o id_rsa` to convert a Putty key file to a Linux SSH file.
+</div></div>
+
+<hr class="sep-both">
+
+## PEM SSH Key Files
+
+<div class="row row-cols-lg-2"><div>
+
+#### PEM SSH Key Files — Overview
+
+[Privacy-Enhanced Mail (PEM)](https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail) is a file format mostly to share cryptographic keys such as SSH keys.
+
+We can use SSH keys to log in to a host without sending a password over the network. We will generate a **private key** and a **public key**.
+
+The target will have our public key in their `.ssh/authorized_keys` file. They will use it to send us a authentication challenge.
+
+To generate a private key <small>(PEM)</small> and a public key <small>(OpenSSH)</small>:
+
+```shell!
+$ ssh-keygen -f mykey      # mykey (private) | mykey.pub
+$ ssh username@ip -i mykey # Permissions: 644 or less
+```
+</div><div>
+
+#### PEM SSH Key Files — RSA File Format
+
+For an RSA private key, the format is:
+
+```sql!
+RSAPrivateKey ::= SEQUENCE {
+  version           Version,
+  modulus           INTEGER,  -- n
+  publicExponent    INTEGER,  -- e
+  privateExponent   INTEGER,  -- d
+  prime1            INTEGER,  -- p
+  prime2            INTEGER,  -- q
+  exponent1         INTEGER,  -- d mod (p-1)
+  exponent2         INTEGER,  -- d mod (q-1)
+  coefficient       INTEGER,  -- (inverse of q) mod p
+  otherPrimeInfos   OtherPrimeInfos OPTIONAL
+}
+```
+
+You can use [CyberChef PEM To Hex](https://cyberchef.org/#recipe=PEM_to_Hex()) to get the hexadecimal of a partial SSH key. Let's read `308204be0201000...SNIP`:
+
+| Hex     | Type        | Value       |
+|---------|-------------|-------------|
+| 0x30    | Data Type   | Sequence    |
+| 0x82    | Size Length | 2 bytes     |
+| 0x04be  | Size Value  | 1214        |
+| 0x02... | Data Value  | All below   |
+| 0x02    | Data Type   | INTEGER     |
+| 0x01    | Size Length | 1           |
+| 0x00    | Size Value  | 0           |
+| 0x00    | Data Value  | 0 (version) |
+
+Additional commands:
+
+```ps
+$ openssl asn1parse -in key
+```
 </div></div>
 
 <hr class="sep-both">
