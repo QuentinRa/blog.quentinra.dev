@@ -207,7 +207,7 @@ Using this mode with AES, we introduce a new parameter IV <small>(unique and not
 
 [![the_last_dance](../../../_badges/htb-c/the_last_dance.svg)](https://app.hackthebox.com/challenges/the-last-dance)
 
-Many algorithms are using an implementation based on OTP. It often looks like this the following code:
+Many algorithms such as AES are using an implementation based on OTP. It often looks like this the following code internally:
 
 ```py
 def xor_strings(s1, s2): # Or use: from pwn import xor
@@ -254,13 +254,14 @@ Flag: b'flag{you_found_me}'
 
 <div class="row row-cols-lg-2"><div>
 
-#### ChaCha20
+#### ChaCha20 — Overview
 
 [![the_last_dance](../../../_badges/htb-c/the_last_dance.svg)](https://app.hackthebox.com/challenges/the-last-dance)
 
 ChaCha20 is a stream cipher algorithm that uses XOR similarly to the OTP algorithm. If the key stream <small>(key+nonce)</small> is reused, refer to [this](#key-stream-reuse-and-two-time-pad).
 
 ```py
+import os
 from Crypto.Cipher import ChaCha20
 from Crypto.Random import get_random_bytes
 
@@ -276,34 +277,34 @@ ciphertext2 = cipher.encrypt(plaintext2)
 
 <br>
 
-#### AES CRT — Keystream Reuse + Known Plaintext
+#### AES CTR — Overview
 
-When the keystream `ks=AES(key, iv)` is reused, `XOR(ks,ks)=0` so the equation is now `plaintext2 = XOR(XOR(ciphertext1, plaintext1), ciphertext2)` without two unknown values.
+AES CTR is a mode of AES using a counter. If the key stream <small>(key+CTR)</small> is reused, refer to [this](#key-stream-reuse-and-two-time-pad).
 
 ```py
+import os
 from Crypto.Cipher import AES
 from Crypto.Util import Counter
-key, iv = b'\x00' * 16, b''
-ctr = Counter.new(128, iv)
+from Crypto.Random import get_random_bytes
+
+plaintext1 = b'This is a known plaintext'
+plaintext2 = b'flag{you_found_me}'
+
+key, nonce = os.urandom(16), get_random_bytes(10)
+ctr = Counter.new(128 - 10 * 8, nonce)
 cipher = AES.new(key, AES.MODE_CTR, counter=ctr)
-ciphertext = cipher.encrypt(b'Known Plain Text Message').hex()
-cipher = AES.new(key, AES.MODE_CTR, counter=ctr) # ⚠️
-ciphertext2 = cipher.encrypt(hidden_text).hex()
+ciphertext1 = cipher.encrypt(plaintext1)
+cipher = AES.new(key, AES.MODE_CTR, counter=ctr)
+ciphertext2 = cipher.encrypt(plaintext2)
 ```
+</div><div>
+</div></div>
 
-It can be used to encrypt/decrypt any string shorter than the key stream. The key stream maximum length is the one of the input.
+<hr class="sep-both">
 
-```py
-plaintext = b'Known Plain Text Message'
-ciphertext = bytes.fromhex("138c93b9945e600d57167377f0823d2e23c5bfbd13d7c4f7")
-ciphertext2 = bytes.fromhex("1d8c9fbc830e4404525f5032d794243d66")
+## Pentester Notes ☠️
 
-def xor_strings(s1, s2): # Or use: from pwn import xor
-    return bytes(b1 ^ b2 for b1, b2 in zip(s1, s2))
-
-keystream = xor_strings(ciphertext, ciphertext2)
-print(xor_strings(keystream, plaintext))
-```
+<div class="row row-cols-lg-2"><div>
 </div><div>
 
 #### AES ECB Padding Oracle
