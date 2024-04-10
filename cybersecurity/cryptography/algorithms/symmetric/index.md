@@ -199,7 +199,7 @@ Using this mode with AES, we introduce a new parameter IV <small>(unique and not
 
 <hr class="sep-both">
 
-## AES And XOR Pentester Notes ☠️
+## AES/OTP Key Stream Pentester Notes ☠️
 
 <div class="row row-cols-lg-2"><div>
 
@@ -245,7 +245,64 @@ And we are able to find the secret message:
 ```yaml!
 Flag: b'flag{you_found_me}'
 ```
+
+As a side note, we are also able to encrypt messages:
+
+```py
+plaintext3=b'message'
+ciphertext3 = xor_strings(key_stream, plaintext3)
+```
 </div><div>
+
+#### Key Stream Reuse And Decipher Oracle
+
+We will use AES OFB with a reused key stream. We have short one message, its ciphertext and another ciphertext.
+
+```py
+plaintext1 = b'Hello'
+ciphertext1=b'\xff\x82u\\\xb9'
+ciphertext2=b'\xd1\x8bxW\xad\x94\x9b/\x98\xdf\x8c\n|*H\xe8\x02\xfay\xa4\x06.\x95\xf6R\xf9'
+
+key_stream = xor_strings(plaintext1, ciphertext1)
+print("Flag:", xor_strings(key_stream, ciphertext2))
+```
+
+```yaml!
+Flag: b'flag{'
+```
+
+We are able to ask an oracle if it could decrypt a string, and if the value match the one we expected.
+
+```py
+class SecretKeyFactory:
+    """
+    Assume this code is secret
+    """
+    key = b'\x9a\x8d\xe5\xf7\x91{R\xf3%\xe1\xf3\x83\xedh\xec\xf1'
+    iv = b'\x9a\x8d\xe5\xf7\x91{R\xf3%\xe1\xf3\x83\xedh\xec\xf1'
+    secret = b'flag{this_is_a_dummy_flag}'
+
+    def is_equal(self, payload, expected):
+        from Crypto.Cipher import AES
+        cipher = AES.new(self.key, AES.MODE_OFB, self.iv)
+        return cipher.decrypt(payload) == expected
+```
+
+We can use the oracle to expose the key stream byte by byte.
+
+```py
+final_key_stream = xor_strings(plaintext1, ciphertext1)
+for index in range(1, len(ciphertext2) - len(ciphertext1) + 1):
+    for i in range(1, 256):
+        key_stream = final_key_stream + i.to_bytes()
+        plaintext = b'Hello' + b'0' * index
+        ciphertext = xor_strings(key_stream, plaintext)
+        if sf.is_equal(ciphertext, plaintext):
+            final_key_stream += i.to_bytes()
+            break
+
+print(xor_strings(final_key_stream, ciphertext2))
+```
 </div></div>
 
 <hr class="sep-both">
@@ -297,14 +354,6 @@ ciphertext1 = cipher.encrypt(plaintext1)
 cipher = AES.new(key, AES.MODE_CTR, counter=ctr)
 ciphertext2 = cipher.encrypt(plaintext2)
 ```
-</div><div>
-</div></div>
-
-<hr class="sep-both">
-
-## Pentester Notes ☠️
-
-<div class="row row-cols-lg-2"><div>
 </div><div>
 
 #### AES ECB Padding Oracle
