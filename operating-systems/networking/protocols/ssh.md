@@ -120,6 +120,8 @@ Additional commands:
 ```ps
 $ openssl asn1parse -in key
 ```
+
+Related: [Bro-key-n](https://hackmd.io/@dogdogeatcatcat/S1-W1w4a9), [Backup - frank](https://ctftime.org/writeup/27205), [Corrupted PEM](https://github.com/OwenK2/Fall-2021-NCL-Corrupted-PEM-Write-Up), [1506](https://eprint.iacr.org/2020/1506.pdf), [X-secrets](https://blog.cryptohack.org/twitter-secrets).
 </div></div>
 
 <hr class="sep-both">
