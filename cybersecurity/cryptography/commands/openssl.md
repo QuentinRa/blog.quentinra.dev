@@ -62,4 +62,10 @@ $ openssl rsautl -decrypt -inkey key.priv -in flag.enc
 $ openssl pkeyutl -decrypt -inkey key.priv -in flag.enc
 ```
 </div><div>
+
+```ps
+$ ssh-keygen -y -f key > key.pub
+$ ssh-keygen -e -f key.pub -m pem > key.pem
+$ openssl rsa -pubin -inform PEM -text -noout < key.pem
+```
 </div></div>

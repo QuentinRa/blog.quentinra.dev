@@ -188,16 +188,19 @@ An attacker would have a lot of prime numbers to test ($10^{497}$ for $n \approx
 [![weak_rsa](../../../_badges/htb-c/weak_rsa.svg)](https://app.hackthebox.com/challenges/Weak%20RSA)
 [![rsa_factorisation](../../../_badges/rootme/cryptanalysis/rsa_factorisation.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/RSA-Factorisation)
 
-You can install and use [RsaCtfTool](https://github.com/RsaCtfTool/RsaCtfTool) <small>(5.1k ⭐)</small>:
+You can install and use [RsaCtfTool](https://github.com/RsaCtfTool/RsaCtfTool) <small>(5.2k ⭐)</small>:
 
 ```ps
-$ cd /opt
-$ sudo git clone https://github.com/RsaCtfTool/RsaCtfTool.git rsactftool
-$ cd rsactftool && pip install -r requirements.txt
-$ sudo ln -s /opt/rsactftool/RsaCtfTool.py /usr/bin/rsactftool
-$ rsactftool -h
-$ rsactftool --publickey key.pub --private
-$ rsactftool --publickey key.pub --private --output key.priv
+$ DEST="$HOME/tools/rsactftool"
+$ git clone -b "master" https://github.com/RsaCtfTool/RsaCtfTool $DEST
+$ wget "https://github.com/quentinra/blog.quentinra.dev/cybersecurity/cryptography/algorithms/asymmetric/rsatool_fix_setup_py.patch"
+$ git apply rsatool_fix_setup_py.patch
+$ pipx install $DEST
+$ RsaCtfTool.py -h
+$ RsaCtfTool.py --key key.pub --dumpkey
+$ RsaCtfTool.py --key key.pem --dumpkey
+$ RsaCtfTool.py --publickey key.pub --private
+$ RsaCtfTool.py --publickey key.pub --private --output key.priv
 ```
 
 ➡️ See also: [rsatool](https://github.com/ius/rsatool) <small>(1.1k ⭐)</small>.

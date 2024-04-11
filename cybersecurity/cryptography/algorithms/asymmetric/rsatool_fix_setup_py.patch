@@ -1,0 +1,22 @@
+diff --git a/setup.py b/setup.py
+index 2f71964..57f5aa3 100644
+--- a/setup.py
++++ b/setup.py
+@@ -1,13 +1,11 @@
+-from setuptools import setup
++import setuptools
+
+-VERSION = "0.0.01"
++VERSION = "0.0.1"
+ BASE_CVS_URL = "https://github.com/RsaCtfTool/RsaCtfTool"
+
+-setup(
++setuptools.setup(
+     name="RsaCtfTool",
+-    packages=[
+-        "RsaCtfTool",
+-    ],
++    packages=setuptools.find_packages(),
+     version=VERSION,
+     author="Ganapati",
+     author_email="something",
