@@ -850,6 +850,11 @@ a = 5 + \
 ```
 </div><div>
 
+```shell!
+$ docker pull python:3.5
+$ docker run -it python:3.5 python -V
+```
+
 ```
 str[3:7] # s 3rd to 7th
 str[3:7:2] # step = 2

