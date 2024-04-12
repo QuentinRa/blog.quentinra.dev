@@ -84,4 +84,5 @@ $ bashfuscator -c 'cat /etc/passwd' -s 1 -t 1 --no-mangling --layers 1
 * `net1` instead of `net`; would creating a copy do the job too?
 * High level of traffic from one account (LogOn events etc.)
 * Signature Detection
+* Python obfuscation is in cheatsheet
 </div></div>

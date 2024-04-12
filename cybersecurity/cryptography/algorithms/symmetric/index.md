@@ -468,6 +468,8 @@ print(f"[+] Final flag is '{flag}'.")
 
 #### AES ECB — Cipher Blocks Manipulation
 
+[![ecb_oracle](../../../_badges/rootme/cryptanalysis/aes_ecb_copy_paste.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/AES-ECB-Copy-Paste)
+
 AES ECB generates its blocks independently of each other. It means that we may be able to extract encoded sections from different ciphertexts and generate a valid malicious ciphertext.
 
 For instance, assuming a JSON payload is crafted from the user input, we can inject a JSON within the JSON and get its ciphertext. 
