@@ -364,6 +364,102 @@ Blocks: # Assuming AES-126 / 16 bytes / Hex=32 chars
 Length: "26" # ((3-1)*16) - 6 = 32 - 6 = 26
 ```
 
+Now, if we write seven bytes instead of six, it means the last block will go from `b"\x10" * 16` to `b"?" + b"\x0f" * 15` with the first char, which is the last char of the flag, unknown to us.
+
+Let's note the block ciphertext `18f9896be0f97a3329f8b9dc3f42c887`. Now, we can try to brute force it by testing all characters followed by `b"\x0f" * 15`. When we got a match, we can infer the character:
+
+```yaml!
+Payload: b'\xa5\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f'
+Output: 707e71555d22792d2cdf7ba7e6b50dba
+...
+Payload: b'}\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f'
+Output: 18f9896be0f97a3329f8b9dc3f42c887 # Found!
+```
+
+The same logic can be applied again and again to decode the remaining characters. The next payload would be similar to:
+
+```yaml!
+Payload: b'\xa5}\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e'
+...
+```
+
+<details class="details-n">
+<summary>Python Script To Demonstrate The Process</summary>
+
+```python
+import concurrent.futures
+
+
+class SecretFactory:
+    KEY = b'\x0c1%\xe7\xcb\x01\xf3\x0f\x1e\xfcu\xebh\x1b\xce\x9c'
+    flag = b'flag{this_is_a_dummy_flag}'
+
+    def encrypt(self, plaintext):
+        from Crypto.Cipher import AES
+        from Crypto.Util.Padding import pad
+        cipher = AES.new(self.KEY, AES.MODE_ECB)
+        return cipher.encrypt(pad(plaintext + self.flag, 16))
+
+
+s = SecretFactory()
+
+# Determine The Padding Block
+payload_length = len(s.encrypt(b'')) + 16
+for i in range(1, 16):
+    ciphertext = s.encrypt(b'\xAA' * i)
+    if len(ciphertext) == payload_length:
+        offset = i
+        padding_block = ciphertext[-16:]
+        break
+
+m = payload_length // 16
+hidden_text_length = ((m - 1) * 16) - offset
+print("[+] The hidden payload length is " + str(hidden_text_length) + ".")
+print("[+] The empty payload is " + padding_block.hex() + ".")
+
+# Without any order: [i.to_bytes() for i in range(1, 256)]
+charset = [ord(i).to_bytes() for i in "abcdefghijklmnopqrstuvwxyz0123456789{}_ABCEDFGHIJKLMNOPQRSTUVWXYZ"]
+charset += [b'\x01', b'\x02', b'\x03', b'\x04', b'\x05', b'\x06', b'\x07', b'\x08', b'\t', b'\n', b'\x0b', b'\x0c', b'\r', b'\x0e', b'\x0f', b'\x10', b'\x11', b'\x12', b'\x13', b'\x14', b'\x15', b'\x16', b'\x17', b'\x18', b'\x19', b'\x1a', b'\x1b', b'\x1c', b'\x1d', b'\x1e', b'\x1f', b' ', b'!', b'"', b'#', b'$', b'%', b'&', b"'", b'(', b')', b'*', b'+', b',', b'-', b'.', b'/', b':', b';', b'<', b'=', b'>', b'?', b'@', b'[', b'\\', b']', b'^', b'`', b'|', b'~', b'\x7f', b'\x80', b'\x81', b'\x82', b'\x83', b'\x84', b'\x85', b'\x86', b'\x87', b'\x88', b'\x89', b'\x8a', b'\x8b', b'\x8c', b'\x8d', b'\x8e', b'\x8f', b'\x90', b'\x91', b'\x92', b'\x93', b'\x94', b'\x95', b'\x96', b'\x97', b'\x98', b'\x99', b'\x9a', b'\x9b', b'\x9c', b'\x9d', b'\x9e', b'\x9f', b'\xa0', b'\xa1', b'\xa2', b'\xa3', b'\xa4', b'\xa5', b'\xa6', b'\xa7', b'\xa8', b'\xa9', b'\xaa', b'\xab', b'\xac', b'\xad', b'\xae', b'\xaf', b'\xb0', b'\xb1', b'\xb2', b'\xb3', b'\xb4', b'\xb5', b'\xb6', b'\xb7', b'\xb8', b'\xb9', b'\xba', b'\xbb', b'\xbc', b'\xbd', b'\xbe', b'\xbf', b'\xc0', b'\xc1', b'\xc2', b'\xc3', b'\xc4', b'\xc5', b'\xc6', b'\xc7', b'\xc8', b'\xc9', b'\xca', b'\xcb', b'\xcc', b'\xcd', b'\xce', b'\xcf', b'\xd0', b'\xd1', b'\xd2', b'\xd3', b'\xd4', b'\xd5', b'\xd6', b'\xd7', b'\xd8', b'\xd9', b'\xda', b'\xdb', b'\xdc', b'\xdd', b'\xde', b'\xdf', b'\xe0', b'\xe1', b'\xe2', b'\xe3', b'\xe4', b'\xe5', b'\xe6', b'\xe7', b'\xe8', b'\xe9', b'\xea', b'\xeb', b'\xec', b'\xed', b'\xee', b'\xef', b'\xf0', b'\xf1', b'\xf2', b'\xf3', b'\xf4', b'\xf5', b'\xf6', b'\xf7', b'\xf8', b'\xf9', b'\xfa', b'\xfb', b'\xfc', b'\xfd', b'\xfe', b'\xff']
+payload_offset = 0
+flag = ""
+
+with concurrent.futures.ThreadPoolExecutor(max_workers=64) as executor:
+    for index in range(1, hidden_text_length + 1):
+        target_payload = (b'a' * (offset + payload_offset + index))
+        full_target_ciphertext = s.encrypt(target_payload)
+        full_target_ciphertext_len = len(full_target_ciphertext)
+        target_ciphertext = full_target_ciphertext[-16 - payload_offset:full_target_ciphertext_len - payload_offset]
+
+        if target_ciphertext == padding_block:
+            payload_offset += 16
+            target_ciphertext = full_target_ciphertext[-16 - payload_offset:full_target_ciphertext_len - payload_offset]
+
+        # Index = 1, then we would have b'<char>' + b'0x0f' * (15 - 1 + 1 = 15)
+        padding_count = (payload_offset + 15) - index + 1
+        padding = flag.encode() + (padding_count.to_bytes() * padding_count)
+
+        print("[+] Moving " + str(index) + " byte.")
+        print("[+] Trying to brute force '" + target_ciphertext.hex() + "'.")
+        print("[+] It should correspond to b'\\x??' + " + str(padding) + ".")
+
+        extract_hash = lambda s, char, padding: s.encrypt(char + padding)[:16]
+        executor_manager = {executor.submit(extract_hash, s, char, padding): char for char in charset}
+        for future in concurrent.futures.as_completed(executor_manager):
+            associated_char = executor_manager[future]
+            computed_ciphertext = future.result()
+            if computed_ciphertext == target_ciphertext:
+                flag = chr(int(ord(associated_char).to_bytes().hex(), 16)) + flag
+
+                # Cancel Every Task
+                for task_to_cancel in executor_manager:
+                    task_to_cancel.cancel()
+                break
+
+        print(f"[+] Current flag is '{flag}'.")
+```
+</details>
+
+📚 There are more optimized ways to do this.
 </div><div>
 </div></div>
 
@@ -396,6 +492,17 @@ ciphertext2 = cipher.encrypt(plaintext2)
 
 <br>
 
+#### AES OFB — Overview
+
+AES OFB uses AES ECB to generate a key stream by encoding the `IV` using a `key` and repeating the process with generated the ciphertext.
+
+* `IV_0 = AES_ECB(key, IV)`
+* `IV_n = AES_ECB(key, IV_{n-1})`
+* ... until the key stream is long enough for the message
+
+When the key stream is reused, like others, it [can be exploited](#key-stream-reuse-and-two-time-pad).
+</div><div>
+
 #### AES CTR — Overview
 
 AES CTR is a mode of AES using a counter. If the key stream <small>(key+CTR)</small> is reused, refer to [this](#key-stream-reuse-and-two-time-pad).
@@ -416,150 +523,6 @@ ciphertext1 = cipher.encrypt(plaintext1)
 cipher = AES.new(key, AES.MODE_CTR, counter=ctr)
 ciphertext2 = cipher.encrypt(plaintext2)
 ```
-
-<br>
-
-#### AES OFB — Overview
-
-AES OFB uses AES ECB to generate a key stream by encoding the `IV` using a `key` and repeating the process with generated the ciphertext.
-
-* `IV_0 = AES_ECB(key, IV)`
-* `IV_n = AES_ECB(key, IV_{n-1})`
-* ... until the key stream is long enough for the message
-
-When the key stream is reused, like others, it [can be exploited](#key-stream-reuse-and-two-time-pad).
-</div><div>
-
-#### AES ECB Padding Oracle
-
-We can now generate a ciphertext we can brute force by pushing each byte one by one to the empty padding block.
-
-* First byte: `0x??` + `b'\x0F' * 15`
-* Second byte: `0x??` + `0x61` + `b'0x0F' * 14`
-* ...
-
-```shell!
-python> charset = [i.to_bytes() for i in range(1, 256)]
-python> payload_0 = (charset[0] + b'\x0F' * 15) # Test 0x1
-python> payload_1 = (charset[1] + b'\x0F' * 15) # Test 0x2
-python> ...
-```
-
-The same logic can be applied again to decode the remaining characters, but with decrypted bytes instead of padding bytes.
-
-<details class="details-n">
-<summary>Python Script To Demonstrate The Process</summary>
-
-```python
-import concurrent.futures
-import threading
-
-print_lock = threading.Lock()
-
-request_count = 0
-
-
-def do_encryption(param):
-    global request_count
-    request_count = request_count + 1
-    # Secret Encryption Function
-    from Crypto.Cipher import AES
-    from Crypto.Util.Padding import pad
-    KEY = b'\x00' * 16
-    hidden_text = b'flag{this_is_a_dummy_flag}'
-    plaintext = bytes.fromhex(param)
-    padded = pad(plaintext + hidden_text, 16)
-    cipher = AES.new(KEY, AES.MODE_ECB)
-    return cipher.encrypt(padded).hex()
-
-
-def extract_hash(char, padding):
-    payload = (char + padding).hex()
-    return do_encryption(payload)[:32]
-
-def compute_initial_payload_index(empty_payload):
-    payload_length = len(empty_payload)
-    length_with_a_new_block = payload_length + 32
-    initial_payload_index = None
-    empty_payload = None
-
-    for i in range(1, 16):
-        payload = (b'\xAA' * i).hex()
-        computer_ciphertext = do_encryption(payload)
-        print(computer_ciphertext)
-        if len(computer_ciphertext) == length_with_a_new_block:
-            initial_payload_index = i
-            empty_payload = computer_ciphertext[-32:]
-            break
-
-    if initial_payload_index is None:
-        print("[!] Error, could not compute initial_payload_index.")
-        exit(2)
-
-    print(length_with_a_new_block)
-
-    m = length_with_a_new_block // 32
-    hidden_text_length = ((m - 1) * 16) - initial_payload_index
-
-    print("[+] We created a new block after injecting " + str(initial_payload_index) + " characters.")
-    print("[+] The previous length was " + str(payload_length) + "; now it's "+ str(length_with_a_new_block) +".")
-    print("[+] The hidden payload length is " + str(hidden_text_length) + ".")
-    print("[+] The empty payload is " + empty_payload + ".")
-
-    return initial_payload_index + 1, hidden_text_length, empty_payload
-
-
-with concurrent.futures.ThreadPoolExecutor(max_workers=64) as executor:
-    flag = ""
-    charset = [ord(i).to_bytes() for i in "abcdefghijklmnopqrstuvwxyz0123456789{}_ABCEDFGHIJKLMNOPQRSTUVWXYZ"]
-    for i in range(1, 256):
-        if i not in charset:
-            charset.append(i.to_bytes())
-    payload_offset = 0
-    payload_frame = 0
-    initial_payload_index, hidden_text_length, empty_payload = compute_initial_payload_index(do_encryption(b''.hex()))
-
-    # We are reading ${hidden_text_length} bytes
-    for offset in range(0, hidden_text_length):
-        payload_to_compute = (b'\xAA' * (initial_payload_index + payload_offset + offset)).hex()
-        result = do_encryption(payload_to_compute)
-        result_len = len(result)
-        ciphertext_to_compute = result[-32-payload_frame:result_len-payload_frame]
-
-        if ciphertext_to_compute == empty_payload:
-            payload_offset += 16
-            payload_frame += 32
-            ciphertext_to_compute = result[-32 - payload_frame:result_len - payload_frame]
-
-        padding_count = (payload_offset + 15) - offset
-        padding = flag.encode() + (padding_count.to_bytes() * padding_count)
-
-        with print_lock:
-            print("[+] Moving " + str(offset+1) + " byte.")
-            print("[+] Trying to brute force '" + ciphertext_to_compute + "'.")
-            print("[+] It should correspond to b'\\x??' + " + str(padding) + ".")
-
-        executor_manager = {executor.submit(extract_hash, char, padding): char for char in charset}
-        for future in concurrent.futures.as_completed(executor_manager):
-            associated_char = executor_manager[future]
-            computer_ciphertext = future.result()
-            if computer_ciphertext == ciphertext_to_compute:
-                flag = chr(int(ord(associated_char).to_bytes().hex(), 16)) + flag
-
-                # Cancel Every Task
-                for task_to_cancel in executor_manager:
-                    task_to_cancel.cancel()
-                break
-
-        with print_lock:
-            print(f"[+] Current flag is '{flag}'.")
-
-print(f"[+] The final flag is '{flag}'.")
-print(f"[+] It took so many encryption requests: '{request_count}' :/.")
-```
-</details>
-
-📚 We did it from right to left, it could be done from left ro right.
 </div></div>
 
 <hr class="sep-both">
