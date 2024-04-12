@@ -274,7 +274,7 @@ Flag: b'flag{'
 We are able to ask an oracle if it could decrypt a string, and if the value match the one we expected.
 
 ```py
-class SecretKeyFactory:
+class SecretFactory:
     """
     Assume this code is secret
     """
@@ -291,13 +291,14 @@ class SecretKeyFactory:
 We can use the oracle to expose the key stream byte by byte.
 
 ```py
+s = SecretFactory()
 final_key_stream = xor_strings(plaintext1, ciphertext1)
 for index in range(1, len(ciphertext2) - len(ciphertext1) + 1):
     for i in range(1, 256):
         key_stream = final_key_stream + i.to_bytes()
         plaintext = b'Hello' + b'0' * index
         ciphertext = xor_strings(key_stream, plaintext)
-        if sf.is_equal(ciphertext, plaintext):
+        if s.is_equal(ciphertext, plaintext):
             final_key_stream += i.to_bytes()
             break
 
@@ -342,7 +343,7 @@ python> pad(b'A'*16, 16).hex() # 16 = 0x10 = empty block!
 
 ➡️ Quick note: `0x1` would indicate one byte of padding, etc.
 
-#### AES ECB Padding Oracle — Overview
+#### AES ECB — Padding Oracle
 
 [![ecb_oracle](../../../_badges/cryptohack/ecb_oracle.svg)](https://aes.cryptohack.org/ecb_oracle/)
 
@@ -389,8 +390,10 @@ Payload: b'\xa5}\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e'
 ```python
 import concurrent.futures
 
-
 class SecretFactory:
+    """
+    Assume this code is secret
+    """
     KEY = b'\x0c1%\xe7\xcb\x01\xf3\x0f\x1e\xfcu\xebh\x1b\xce\x9c'
     flag = b'flag{this_is_a_dummy_flag}'
 
@@ -456,11 +459,77 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=64) as executor:
                 break
 
         print(f"[+] Current flag is '{flag}'.")
+print(f"[+] Final flag is '{flag}'.")
 ```
 </details>
 
 📚 There are more optimized ways to do this.
 </div><div>
+
+#### AES ECB — Cipher Blocks Manipulation
+
+AES ECB generates its blocks independently of each other. It means that we may be able to extract encoded sections from different ciphertexts and generate a valid malicious ciphertext.
+
+For instance, assuming a JSON payload is crafted from the user input, we can inject a JSON within the JSON and get its ciphertext. 
+
+```python
+class SecretFactory:
+    """
+    Assume this code is secret
+    """
+    KEY = b'\x0c1%\xe7\xcb\x01\xf3\x0f\x1e\xfcu\xebh\x1b\xce\x9c'
+    flag = b'flag{this_is_a_dummy_flag}'
+
+    def get_token(self, username, can_read_the_flag):
+        from Crypto.Cipher import AES
+        from Crypto.Util.Padding import pad
+
+        if username == 'admin':
+            return b"Error: You cannot request a token with 'username' set to 'admin'..."
+        if can_read_the_flag:
+            return b"Error: Only 'admin' can have 'can_read_the_flag' set to 'true'..."
+
+        try:
+            cipher = AES.new(self.KEY, AES.MODE_ECB)
+            payload = '{"username": "' + username + '", "can_read_the_flag": false}'
+            return cipher.encrypt(pad(payload.encode(), 16))
+        except Exception:
+            return b'Oops, something went wrong.'
+
+    def get_the_flag(self, payload):
+        from Crypto.Cipher import AES
+        from Crypto.Util.Padding import unpad
+        import json
+
+        message = b'No flag for you!'
+        try:
+            cipher = AES.new(self.KEY, AES.MODE_ECB)
+            plaintext = unpad(cipher.decrypt(payload), 16)
+            data = json.loads(plaintext)
+            if data['username'] == 'admin' and data['can_read_the_flag']:
+                message = self.flag
+        except Exception as e:
+            print(e)
+            pass
+        return message.decode()
+
+
+s = SecretFactory()
+# Part1: 7eb26de3ea6875d22f0734229d7f00f9 {"username": "oo
+# Part2: 4d6b85294b893c9285af2a08503c4957 {"username": "ad
+# Part3: 7d3a44921408436fe8d518914d65897e min", "can_read_
+# Part4: f9fef0c9cd3ea398ab9c84f08ec2d49d the_flag": true}
+# Part5: 0fb3b6af52e536be88aed7dfc91b5493 aa", "can_read_t
+# Part6: c70c463ebbc670cf9a1ea4ae2245c603 he_flag": false}
+# Part7: 8d481807d004c9162876906be562026e <empty padding>
+ciphertext = s.get_token('oo{"username": "admin", "can_read_the_flag": true}aa', False)
+ciphertext_parts = [ciphertext[chunk:chunk+16].hex() for chunk in range(0, len(ciphertext), 16)]
+# Merge Part2 + Part3 + Part4 + Part 7 (last block)
+fake_ciphertext = bytes.fromhex(''.join(ciphertext_parts[1:4]) + ciphertext_parts[-1])
+print(s.get_the_flag(fake_ciphertext))
+```
+
+⚠️ This would not work if the payload is a JSON, as JSON would escape `"` which would be escaped again by `pad`, or raise an exception if we used `'` to quote an attribute.
 </div></div>
 
 <hr class="sep-both">
