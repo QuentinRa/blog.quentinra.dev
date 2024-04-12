@@ -482,18 +482,22 @@ class SecretFactory:
     KEY = b'\x0c1%\xe7\xcb\x01\xf3\x0f\x1e\xfcu\xebh\x1b\xce\x9c'
     flag = b'flag{this_is_a_dummy_flag}'
 
-    def get_token(self, username, can_read_the_flag):
+    def get_token(self, payload):
         from Crypto.Cipher import AES
         from Crypto.Util.Padding import pad
+        import json
 
-        if username == 'admin':
+        if not isinstance(payload, dict) or 'username' not in payload or 'can_read_the_flag' not in payload:
+            return b'Expected format: {"username": "admin", "canReadTheFlag": True}'
+        if payload['username'] == 'admin':
             return b"Error: You cannot request a token with 'username' set to 'admin'..."
-        if can_read_the_flag:
+        if payload['can_read_the_flag']:
             return b"Error: Only 'admin' can have 'can_read_the_flag' set to 'true'..."
 
         try:
             cipher = AES.new(self.KEY, AES.MODE_ECB)
-            payload = '{"username": "' + username + '", "can_read_the_flag": false}'
+            payload = json.dumps(payload)
+            print(pad(payload.encode('unicode_escape'), 16))
             return cipher.encrypt(pad(payload.encode(), 16))
         except Exception:
             return b'Oops, something went wrong.'
@@ -507,6 +511,7 @@ class SecretFactory:
         try:
             cipher = AES.new(self.KEY, AES.MODE_ECB)
             plaintext = unpad(cipher.decrypt(payload), 16)
+            plaintext = plaintext.decode('unicode_escape')
             data = json.loads(plaintext)
             if data['username'] == 'admin' and data['can_read_the_flag']:
                 message = self.flag
@@ -515,23 +520,24 @@ class SecretFactory:
             pass
         return message.decode()
 
-
 s = SecretFactory()
+# n_read_the_flag": false}
 # Part1: 7eb26de3ea6875d22f0734229d7f00f9 {"username": "oo
-# Part2: 4d6b85294b893c9285af2a08503c4957 {"username": "ad
-# Part3: 7d3a44921408436fe8d518914d65897e min", "can_read_
-# Part4: f9fef0c9cd3ea398ab9c84f08ec2d49d the_flag": true}
-# Part5: 0fb3b6af52e536be88aed7dfc91b5493 aa", "can_read_t
-# Part6: c70c463ebbc670cf9a1ea4ae2245c603 he_flag": false}
-# Part7: 8d481807d004c9162876906be562026e <empty padding>
-ciphertext = s.get_token('oo{"username": "admin", "can_read_the_flag": true}aa', False)
+# Part2: c5f15c4e69d793e769c6cbf746e8c4ac {\"username\":\"
+# Part3: 630fab6ed7bb753f9f6ec738cee28a43 admin\",\"can_re
+# Part4: 51e610797d8ac7149ec3e549895c6baf ad_the_flag\";tr
+# Part5: df5e947e0e8d29d7aca4a75c92384879 ue,\"dummy\":12}
+# Part6: 0fb3b6af52e536be88aed7dfc91b5493 aa", "can_read_t
+# Part7: c70c463ebbc670cf9a1ea4ae2245c603 he_flag": false}
+# Part8: 8d481807d004c9162876906be562026e <empty padding>
+ciphertext = s.get_token({"username": 'oo{"username":"admin","can_read_the_flag":true,"dummy":12}aa', "can_read_the_flag": False})
 ciphertext_parts = [ciphertext[chunk:chunk+16].hex() for chunk in range(0, len(ciphertext), 16)]
-# Merge Part2 + Part3 + Part4 + Part 7 (last block)
-fake_ciphertext = bytes.fromhex(''.join(ciphertext_parts[1:4]) + ciphertext_parts[-1])
+# Merge Part2 + Part3 + Part4 + Part5 + Part 7 (last block)
+fake_ciphertext = bytes.fromhex(''.join(ciphertext_parts[1:5]) + ciphertext_parts[-1])
 print(s.get_the_flag(fake_ciphertext))
 ```
 
-⚠️ This would not work if the payload is a JSON, as JSON would escape `"` which would be escaped again by `pad`, or raise an exception if we used `'` to quote an attribute.
+📚️ If not for `unicode_escape`, it would not have been impossible I think, as the quotes in the JSON username value are escaped twice.
 </div></div>
 
 <hr class="sep-both">

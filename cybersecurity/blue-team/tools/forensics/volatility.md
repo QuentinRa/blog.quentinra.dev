@@ -49,7 +49,7 @@ $ vol2 imageinfo -f mdump.vmem
 For volatility2, specify the profile in all commands:
 
 ```ps
-$ vol [...] --profile Win7SP1x64 # Test multiple of them
+$ vol2 [...] --profile Win7SP1x64 # Test multiple of them
 ```
 
 For volatility3, the operating system is within the [plugins](https://volatility3.readthedocs.io/en/latest/volatility3.plugins.html) path.
@@ -99,17 +99,17 @@ $ vol2 [...] consoles
 * ➡️ List and dump registry entries
 
 ```ps
-$ vol [...] windows.registry.hivelist.HiveList
+$ vol [...] windows.registry.hivelist
 $ # either look in all registries, or in registry at --offset
-$ vol [...] windows.registry.printkey.PrintKey --key 'ControlSet001\Control\ComputerName\ComputerName'
-$ vol [...] windows.registry.printkey.PrintKey --offset 0xAAAAAAAA--key 'ControlSet001\Control\ComputerName\ComputerName'
+$ vol [...] windows.registry.printkey --key 'ControlSet001\Control\ComputerName\ComputerName'
+$ vol [...] windows.registry.printkey --offset 0xAAAAAAAA--key 'ControlSet001\Control\ComputerName\ComputerName'
 ```
 
 * ➡️ List and dump passwords, hashes, keys, etc.
 
 ```ps
-$ vol [...] windows.hashdump.Hashdump
-$ vol [...] windows.lsadump.Lsadump
+$ vol [...] windows.hashdump
+$ vol [...] windows.lsadump
 $ # volatility 2 clipboard
 ```
 </div><div>
