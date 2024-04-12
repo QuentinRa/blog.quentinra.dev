@@ -126,6 +126,32 @@ Related: [Bro-key-n](https://hackmd.io/@dogdogeatcatcat/S1-W1w4a9), [Backup - fr
 
 <hr class="sep-both">
 
+## Additional Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### SSH Forwarding
+
+[![ssh_agent_hijacking](../../../cybersecurity/_badges/rootme/app_script/ssh_agent_hijacking.svg)](https://www.root-me.org/en/Challenges/App-Script/SSH-Agent-Hijacking)
+
+If SSH Forwarding is enabled <small>(`/etc/ssh/sshd_config`, `$HOME/.ssh/config`, etc.)</small>, then when we SSH to a host using `-A`, it will create a socket in `/tmp` and set the variable `SSH_AUTH_SOCK` accordingly.
+
+There are multiple ways to exploit this:
+
+* As **root**, we can connect to anyone else SSH session
+* As a **user**, we can connect to any socket we can read, for instance, we compromised a user having a running SSH session as admin.
+
+```ps
+$ export SSH_AUTH_SOCK=/path/to/xxx.agent; ssh username@0
+<no password == it worked>
+```
+
+➡️ Article: [SSH Agent Hijacking](https://jekhokie.github.io/linux/ssh/security/hijacking/2019/09/07/ssh-agent-hijacking.html).
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
