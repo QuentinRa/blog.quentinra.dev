@@ -134,6 +134,7 @@ help('print') # :e/path/to/file
 #### Python Jails Escape
 
 [![pythonplayground](../../../../_badges/thm-p/pythonplayground.svg)](https://tryhackme.com/r/room/pythonplayground)
+[![python_pyjail_2](../../../../_badges/rootme/app_script/python_pyjail_2.svg)](https://www.root-me.org/en/Challenges/App-Script/Python-PyJail-2)
 
 Arbitrarily set a variable, such as the list of blocked commands:
 
@@ -154,10 +155,11 @@ setattr(__import__("sys"), "path", list(("/dev/shm/",))) ; __import__("my_file")
 __import__("sys").path.append("/dev/shm/") # better?
 ```
 
-Use breakpoint:
+Use breakpoint or help:
 
 ```py
 breakpoint() # then write any python code
+help(len) # write m<cr>a<cr>|<cr>a<cr>your command<cr>q<cr>
 ```
 
 Refer to [introspection](/cybersecurity/red-team/s3.exploitation/vulns/cheatsheet/payloads.md#python--deep-introspection) for a few more tricks.
