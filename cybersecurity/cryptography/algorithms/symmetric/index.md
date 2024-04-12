@@ -307,7 +307,69 @@ print(xor_strings(final_key_stream, ciphertext2))
 
 <hr class="sep-both">
 
-## Pentester Notes ☠️
+## AES ECB Pentester Notes ☠️
+
+<div class="row row-cols-lg-2"><div>
+
+#### AES ECB — Overview
+
+AES-ECB (Electronic Code Book) is an algorithm splitting data into blocks and using the same key to encrypt each block.
+
+The size of a block is 16 bytes for AES-128 <small>(128bits=16bytes)</small>.
+
+* **Attacks** 🧨: Brute force, Known plaintext
+* **Still used?** 🟨: yes, mostly for integrity rather than confidentiality
+
+The main problem with this algorithm is that we will have identical cipher chunks if we have identically plaintext chunks with a message.
+
+#### AES Padding — Overview
+
+[![ecb_oracle](../../../_badges/cryptohack/ecb_oracle.svg)](https://aes.cryptohack.org/ecb_oracle/)
+
+Every AES mode need a cipher of the same length as the key. The most used scheme is AES [pkcs#7](https://en.wikipedia.org/wiki/PKCS_7) in which padding is **always** added.
+
+* The key and the message before padding are 16 bytes
+* An empty block with 16 bytes of padding is added
+* The padding value is 16 times `0x10` indicating 16 bytes of padding
+
+```shell!
+python> from Crypto.Util.Padding import pad
+python> pad(b'A'*3, 16).hex() # 13 = 0xd | A = 0x41
+4141410d0d0d0d0d0d0d0d0d0d0d0d0d
+python> pad(b'A'*16, 16).hex() # 16 = 0x10 = empty block!
+4141414141414141414141414141414110101010101010101010101010101010
+```
+
+➡️ Quick note: `0x1` would indicate one byte of padding, etc.
+
+#### AES ECB Padding Oracle — Overview
+
+[![ecb_oracle](../../../_badges/cryptohack/ecb_oracle.svg)](https://aes.cryptohack.org/ecb_oracle/)
+
+Assume we have a ciphertext resulting of our input being concatenated to a secret string: `'<input>' + '<secret>'`.
+
+We will test 'a', then 'aa', then 'aaa', and so on until determining the number of characters to create a new block. This new block is the empty padding block. We obtain the length of the secret text with:
+
+* Assuming `n` is the number of injected characters
+* Assuming `m-1` is the current number of blocks
+* The length of the secret is: `((m-1)*block_length)-n`
+
+```yaml!
+Payload: aaaaaa # 6 bytes
+Output: 1511c4646146e3d9f7f452f9d31cf8141fa424bc01a4fd6ab47e06ad6da14aa18d481807d004c9162876906be562026e
+Blocks: # Assuming AES-126 / 16 bytes / Hex=32 chars
+1511c4646146e3d9f7f452f9d31cf814 # 6 bytes here are ours, 10 are not
+1fa424bc01a4fd6ab47e06ad6da14aa1 # 16 bytes here are not ours
+8d481807d004c9162876906be562026e # Empty padding block
+Length: "26" # ((3-1)*16) - 6 = 32 - 6 = 26
+```
+
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## Random Pentester Notes ☠️
 
 <div class="row row-cols-lg-2"><div>
 
@@ -369,30 +431,6 @@ When the key stream is reused, like others, it [can be exploited](#key-stream-re
 </div><div>
 
 #### AES ECB Padding Oracle
-
-[![ecb_oracle](../../../_badges/cryptohack/ecb_oracle.svg)](https://aes.cryptohack.org/ecb_oracle/)
-
-Assuming we have a ciphertext from `<userinput>+<unknown_text>` and we know the padding scheme, we can decrypt `<unknown_text>`.
-
-We need to be able to encrypt new ciphertext. For this example, the size of a block is 16 bytes. If the plaintext is shorter, padding is added: `0xN` is added `N` times, with `N` the number of missing bytes.
-
-```shell!
-python> from Crypto.Util.Padding import pad
-python> pad(b'\xAA'*3, 16).hex()
-aaaaaa0d0d0d0d0d0d0d0d0d0d0d0d0d
-python> pad(b'\xAA'*16, 16).hex() # 0x10 = 16 = empty block!
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa10101010101010101010101010101010
-```
-
-Assuming the target uses the padding function above, we can first learn the size of the unknown text by determining after how many bytes the new empty block is created <small>(block_size=16, inject n, got m rows)</small>.
-
-```shell!
-python> payload_1 = (b'\xAA'*1).hex() # n = 1
-python> payload_2 = (b'\xAA'*2).hex() # n = 2
-When you notice the output got a new block:
-Assuming you now have "m" blocks, then len(...) is ((m-1)*16)-n
-Note: m-1 as we discard the empty block of padding (encrypted(10....10))
-```
 
 We can now generate a ciphertext we can brute force by pushing each byte one by one to the empty padding block.
 
