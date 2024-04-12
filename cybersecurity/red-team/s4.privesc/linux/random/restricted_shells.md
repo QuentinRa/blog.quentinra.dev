@@ -106,6 +106,8 @@ open = __builtins__.__dict__['open']
 os = __builtins__.__dict__['__import__']('os')
 ```
 
+Refer to [introspection](/cybersecurity/red-team/s3.exploitation/vulns/cheatsheet/payloads.md#python--deep-introspection) for a few more payloads.
+
 #### Python File Write
 
 [![pythonplayground](../../../../_badges/thm-p/pythonplayground.svg)](https://tryhackme.com/r/room/pythonplayground)
@@ -157,6 +159,8 @@ Use breakpoint:
 ```py
 breakpoint() # then write any python code
 ```
+
+Refer to [introspection](/cybersecurity/red-team/s3.exploitation/vulns/cheatsheet/payloads.md#python--deep-introspection) for a few more tricks.
 </div></div>
 
 <hr class="sep-both">
