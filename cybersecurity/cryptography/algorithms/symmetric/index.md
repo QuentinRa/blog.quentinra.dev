@@ -543,6 +543,75 @@ print(s.get_the_flag(fake_ciphertext))
 
 <hr class="sep-both">
 
+## AES Bit Flipping
+
+<div class="row row-cols-lg-2"><div>
+
+#### AES Bit Flipping — Overview
+
+We will use AES128 with the CBC mode. In this mode, the previous block is used to encrypt the next block.
+
+It means that by changing a byte from the first block, we can change the value of the second block to the one we want. 
+
+The ciphertext will still be decrypted just fine, but we corrupted the data in the first block. Maybe the code is lax enough to ignore it?
+
+
+</div><div>
+
+#### AES CBC Bit Flipping — Python
+
+This is a dummy stupid example:
+
+```py
+class SecretFactory:
+    """
+    Assume this code is secret
+    """
+    KEY = b'\x0c1%\xe7\xcb\x01\xf3\x0f\x1e\xfcu\xebh\x1b\xce\x9c'
+    IV = b'\xbe\xed\xd7~`\xfaB_"\xe1ft\x13/\xcb\x14'
+    flag = b'flag{this_is_a_dummy_flag}'
+    format = b'logged_username=admin&password=admin'
+
+    def encrypt(self, username, password):
+        from Crypto.Cipher import AES
+        from Crypto.Util.Padding import pad
+        plaintext = "logged_username=" + username + "&password=" + password
+        if plaintext == self.format.decode():
+            return b'Sorry, I know you are not admin'
+        cipher = AES.new(self.KEY, AES.MODE_CBC, iv=self.IV)
+        return cipher.encrypt(pad(plaintext.encode(), 16))
+
+    def get_the_flag(self, ciphertext):
+        from Crypto.Cipher import AES
+        from Crypto.Util.Padding import unpad
+        cipher = AES.new(self.KEY, AES.MODE_CBC, iv=self.IV)
+        plaintext = unpad(cipher.decrypt(ciphertext), 16)
+        if b'admin&password=admin' in plaintext: # Lax, so that you can flip
+            return self.flag
+        else:
+            return b"Expected: " + self.format + b"\nGot: " + plaintext
+
+
+s = SecretFactory()
+# Part 1: bd6dd576fd0f47b35e7e14272a24f44c logged_username=
+# Part 2: 8e46c52ef889b42e639e412825d49ed3 bdmin&password=a
+# Part 3: 3375df09a657dc48c8d1a93ef87d817c dmin<padding>
+ciphertext = s.encrypt('bdmin', 'admin')
+
+# Compute the byte to change 'b' to 'a'
+a = ord('a')
+b = ord('b')
+key = ciphertext[0] ^ b
+flipper = (a ^ key).to_bytes()
+modified_ciphertext = flipper + ciphertext[1:]
+
+# Get the flag
+print(s.get_the_flag(modified_ciphertext))
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Random Pentester Notes ☠️
 
 <div class="row row-cols-lg-2"><div>
