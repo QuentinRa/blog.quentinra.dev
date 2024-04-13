@@ -156,6 +156,8 @@ Since both $m$ and $k$ are letters, we need to convert them to binary to use the
 
 [![introductiontonetworking](../../../_badges/htb/introductiontonetworking.svg)](https://academy.hackthebox.com/course/preview/introduction-to-networking)
 [![docker_layers](../../../_badges/rootme/forensic/docker_layers.svg)](https://www.root-me.org/en/Challenges/Forensic/Docker-layers)
+[![ecb_oracle](../../../_badges/rootme/cryptanalysis/aes_ecb_copy_paste.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/AES-ECB-Copy-Paste)
+[![ecb_oracle](../../../_badges/cryptohack/ecb_oracle.svg)](https://aes.cryptohack.org/ecb_oracle/)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -521,7 +523,6 @@ class SecretFactory:
         return message.decode()
 
 s = SecretFactory()
-# n_read_the_flag": false}
 # Part1: 7eb26de3ea6875d22f0734229d7f00f9 {"username": "oo
 # Part2: c5f15c4e69d793e769c6cbf746e8c4ac {\"username\":\"
 # Part3: 630fab6ed7bb753f9f6ec738cee28a43 admin\",\"can_re
