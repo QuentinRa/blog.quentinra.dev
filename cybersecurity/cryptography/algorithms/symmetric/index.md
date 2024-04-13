@@ -575,8 +575,8 @@ ciphertext2 = cipher.encrypt(plaintext2)
 AES OFB uses AES ECB to generate a key stream by encrypting the `IV` using a `key` and repeating the process with generated the ciphertext.
 
 * `key_stream = b''`
-* `IV_0 = AES_ECB(key, IV)` and add it to key_stream
-* `IV_n = AES_ECB(key, IV_{n-1})` and add it to key_stream
+* `key_stream += (IV_0 := AES_ECB(key, IV))`
+* `key_stream += (IV_n := AES_ECB(key, IV_{n-1}))`
 * ... until the key stream is long enough for the plaintext
 
 To encrypt/decrypt, use `XOR(key_stream, plaintext)`.
@@ -634,11 +634,11 @@ for plaintext_part in plaintext_parts:
 ciphertext_parts = [ciphertext[chunk:chunk+16] for chunk in range(0, len(ciphertext), 16)]
 cipher = AES.new(KEY, AES.MODE_ECB)
 plaintext = b''
-key_stream = IV
+previous_block = IV
 for ciphertext_part in ciphertext_parts:
     decrypted_block = cipher.decrypt(ciphertext_part)
-    plaintext += xor_strings(decrypted_block, key_stream)
-    key_stream = ciphertext_part
+    plaintext += xor_strings(decrypted_block, previous_block)
+    previous_block = ciphertext_part
 
 print("[+] Ciphertext is", ciphertext)
 print("[+] Plaintext is", unpad(plaintext, 16))
