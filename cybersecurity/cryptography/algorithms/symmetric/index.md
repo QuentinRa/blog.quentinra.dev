@@ -572,14 +572,80 @@ ciphertext2 = cipher.encrypt(plaintext2)
 
 #### AES OFB — Overview
 
-AES OFB uses AES ECB to generate a key stream by encoding the `IV` using a `key` and repeating the process with generated the ciphertext.
+AES OFB uses AES ECB to generate a key stream by encrypting the `IV` using a `key` and repeating the process with generated the ciphertext.
 
-* `IV_0 = AES_ECB(key, IV)`
-* `IV_n = AES_ECB(key, IV_{n-1})`
-* ... until the key stream is long enough for the message
+* `key_stream = b''`
+* `IV_0 = AES_ECB(key, IV)` and add it to key_stream
+* `IV_n = AES_ECB(key, IV_{n-1})` and add it to key_stream
+* ... until the key stream is long enough for the plaintext
+
+To encrypt/decrypt, use `XOR(key_stream, plaintext)`.
 
 When the key stream is reused, like others, it [can be exploited](#key-stream-reuse-and-two-time-pad).
 </div><div>
+
+#### AES CBC — Overview
+
+AES CBC is similar to AES OFB, but it operates of the generated ciphertext and not on the key stream.
+
+* `ciphertext_0 = AES_ECB(key, XOR(plaintext_0, IV))`
+* `ciphertext_n = AES_ECB(key, XOR(plaintext_n, ciphertext_{n-1}))`
+* ... until you have encrypted all of the plaintext parts
+
+<details class="details-n">
+<summary>AES CBC Code Samples</summary>
+
+Hard-coded KEY and IV for testing:
+
+```py
+from Crypto.Util.Padding import pad, unpad
+KEY = b'\x0c1%\xe7\xcb\x01\xf3\x0f\x1e\xfcu\xebh\x1b\xce\x9c'
+IV = b'\xbe\xed\xd7~`\xfaB_"\xe1ft\x13/\xcb\x14'
+plaintext = pad(b'flag{aes_cbc_just_4_fun}', 16)
+```
+
+Using the crypto library:
+
+```py
+from Crypto.Cipher import AES
+cipher = AES.new(KEY, AES.MODE_CBC, iv=IV)
+ciphertext = cipher.encrypt(plaintext)
+cipher = AES.new(KEY, AES.MODE_CBC, iv=IV)
+plaintext = unpad(cipher.decrypt(ciphertext), 16)
+print("[+] Ciphertext is", ciphertext)
+print("[+] Plaintext is", plaintext)
+```
+
+Using partially the crypto library:
+
+```py
+from Crypto.Cipher import AES
+
+plaintext_parts = [plaintext[chunk:chunk+16] for chunk in range(0, len(plaintext), 16)]
+cipher = AES.new(KEY, AES.MODE_ECB)
+ciphertext = b""
+previous_block = IV
+for plaintext_part in plaintext_parts:
+    block = xor_strings(plaintext_part, previous_block)
+    encrypted_block = cipher.encrypt(block)
+    ciphertext += encrypted_block
+    previous_block = encrypted_block
+
+ciphertext_parts = [ciphertext[chunk:chunk+16] for chunk in range(0, len(ciphertext), 16)]
+cipher = AES.new(KEY, AES.MODE_ECB)
+plaintext = b''
+key_stream = IV
+for ciphertext_part in ciphertext_parts:
+    decrypted_block = cipher.decrypt(ciphertext_part)
+    plaintext += xor_strings(decrypted_block, key_stream)
+    key_stream = ciphertext_part
+
+print("[+] Ciphertext is", ciphertext)
+print("[+] Plaintext is", unpad(plaintext, 16))
+```
+</details>
+
+<br>
 
 #### AES CTR — Overview
 
