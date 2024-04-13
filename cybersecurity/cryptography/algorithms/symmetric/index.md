@@ -555,7 +555,39 @@ It means that by changing a byte from the first block, we can change the value o
 
 The ciphertext will still be decrypted just fine, but we corrupted the data in the first block. Maybe the code is lax enough to ignore it?
 
+<br>
 
+#### AES CBC Bit Flipping — Manually
+
+Assuming we have the data below, our goal is to patch the ciphertext so that the payload matches the last part we want.
+
+```yaml!
+Expected: '...|username=admin|password=admin\x01'
+Payload: 'joined=2024-04-13|username=bdmin|password=admin\x01'
+Ciphertext:
+- fca6699ba3209c17af0d68672ec877e5 # joined=XXXX-XX-X
+- 14e94a15e5b3f290dd84e11b70845aa4 # X|username=bdmin
+- 3a5605e40a77990f56068960b60128c7 # |password=admin\x01
+A: "0x61" # hex(ord('a'))
+B: "0x62" # hex(ord('b'))
+```
+
+The character we want to change is at `index=27`. The byte at index `index=27-16=11` was used to encrypt it, which is `0x67` in the ciphertext.
+
+* `key = XOR("0x67", "0x62") = "0x5"`
+* `flipper = XOR("0x61", "0x5") = "0x64"`
+
+Formally, when encrypting with CBC, we are XOR-ing the plaintext block with the previous ciphertext block. In short, we had `"0x62" = XOR("0x67", key)`. By rewriting the equations, we can manipulate the decryption process, such as `XOR("0x64", key)` to get `a`. 
+
+```diff
+- fca6699ba3209c17af0d68672ec877e5 # joined=XXXX-XX-X
++ fca6699ba3209c17af0d68642ec877e5 # <unreadable_junk_text>
+- 14e94a15e5b3f290dd84e11b70845aa4 # X|username=bdmin
++ 14e94a15e5b3f290dd84e11b70845aa4 # X|username=admin
+3a5605e40a77990f56068960b60128c7 # |password=admin\x01
+```
+
+As far as the application doesn't need the first part of the plaintext, the decrypted payload will be the one we want.
 </div><div>
 
 #### AES CBC Bit Flipping — Python
