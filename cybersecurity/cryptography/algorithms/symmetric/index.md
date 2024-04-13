@@ -560,7 +560,7 @@ The ciphertext will still be decrypted just fine, but we corrupted the data in t
 
 #### AES CBC Bit Flipping — Python
 
-This is a dummy stupid example:
+The is an example in Python using a strict payload format, while still being vulnerable to bit flipping due to the first part of the payload not being read/checked when we try to access the flag.
 
 ```py
 class SecretFactory:
@@ -570,14 +570,17 @@ class SecretFactory:
     KEY = b'\x0c1%\xe7\xcb\x01\xf3\x0f\x1e\xfcu\xebh\x1b\xce\x9c'
     IV = b'\xbe\xed\xd7~`\xfaB_"\xe1ft\x13/\xcb\x14'
     flag = b'flag{this_is_a_dummy_flag}'
-    format = b'logged_username=admin&password=admin'
 
     def encrypt(self, username, password):
         from Crypto.Cipher import AES
         from Crypto.Util.Padding import pad
-        plaintext = "logged_username=" + username + "&password=" + password
-        if plaintext == self.format.decode():
-            return b'Sorry, I know you are not admin'
+        import datetime
+
+        if username == 'admin':
+            return b'Sorry, I know you are not admin...'
+
+        current_date = datetime.date.today().strftime('joined=%Y-%m-%d')
+        plaintext = current_date + "|username=" + username + "|password=" + password
         cipher = AES.new(self.KEY, AES.MODE_CBC, iv=self.IV)
         return cipher.encrypt(pad(plaintext.encode(), 16))
 
@@ -586,26 +589,29 @@ class SecretFactory:
         from Crypto.Util.Padding import unpad
         cipher = AES.new(self.KEY, AES.MODE_CBC, iv=self.IV)
         plaintext = unpad(cipher.decrypt(ciphertext), 16)
-        if b'admin&password=admin' in plaintext: # Lax, so that you can flip
+        parts = plaintext.split(b"|")
+        # The code doesn't check parts[0]
+        if parts[1] == b'username=admin' and parts[2] == b'password=admin' and len(parts) == 3:
             return self.flag
         else:
-            return b"Expected: " + self.format + b"\nGot: " + plaintext
+            # We expose the payload to help in the context of this exercise
+            return (b"Hello, your payload '" + plaintext +
+                    b"' indicates that you only recently joined." +
+                    b" Please wait until admin:admin grants you access.")
 
 
 s = SecretFactory()
-# Part 1: bd6dd576fd0f47b35e7e14272a24f44c logged_username=
-# Part 2: 8e46c52ef889b42e639e412825d49ed3 bdmin&password=a
-# Part 3: 3375df09a657dc48c8d1a93ef87d817c dmin<padding>
 ciphertext = s.encrypt('bdmin', 'admin')
 
 # Compute the byte to change 'b' to 'a'
-a = ord('a')
-b = ord('b')
-key = ciphertext[0] ^ b
+byte_array = bytearray(ciphertext)
+a, b = ord('a'), ord('b')
+target_char_index = 12 - 1
+key = byte_array[target_char_index] ^ b
 flipper = (a ^ key).to_bytes()
-modified_ciphertext = flipper + ciphertext[1:]
+byte_array[target_char_index] = int.from_bytes(flipper)
 
-# Get the flag
+modified_ciphertext = bytes(byte_array)
 print(s.get_the_flag(modified_ciphertext))
 ```
 </div></div>
