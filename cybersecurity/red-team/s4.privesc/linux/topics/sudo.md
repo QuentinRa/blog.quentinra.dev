@@ -20,6 +20,7 @@
 [![teamcw](../../../../_badges/thm-p/teamcw.svg)](https://tryhackme.com/r/room/teamcw)
 [![marketplace](../../../../_badges/thm-p/marketplace.svg)](https://tryhackme.com/r/room/marketplace)
 [![jason](../../../../_badges/thm-p/jason.svg)](https://tryhackme.com/r/room/jason)
+[![brooklynninenine](../../../../_badges/thm-p/brooklynninenine.svg)](https://tryhackme.com/r/room/brooklynninenine)
 [![sudo_weak_configuration](../../../../_badges/rootme/app_script/sudo_weak_configuration.svg)](https://www.root-me.org/en/Challenges/App-Script/sudo-weak-configuration)
 [![bash_restricted_shells](../../../../_badges/rootme/app_script/bash_restricted_shells.svg)](https://www.root-me.org/en/Challenges/App-Script/Bash-Restricted-shells)
 [![shared_objects_hijacking](../../../../_badges/rootme/app_script/shared_objects_hijacking.svg)](https://www.root-me.org/en/Challenges/App-Script/Shared-Objects-hijacking)

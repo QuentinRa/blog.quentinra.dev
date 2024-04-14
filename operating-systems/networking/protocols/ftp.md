@@ -105,6 +105,7 @@ $ nmap [...] -b ftp:username:password@IP INTERNAL_IP
 [![cowboyhacker](../../../cybersecurity/_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
 [![easyctf](../../../cybersecurity/_badges/thm-p/easyctf.svg)](https://tryhackme.com/room/easyctf)
 [![chillhack](../../../cybersecurity/_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
+[![brooklynninenine](../../../cybersecurity/_badges/thm-p/brooklynninenine.svg)](https://tryhackme.com/r/room/brooklynninenine)
 [![blocky](../../../cybersecurity/_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
 
 * Anonymous users may have been enabled. Try a blank password.
