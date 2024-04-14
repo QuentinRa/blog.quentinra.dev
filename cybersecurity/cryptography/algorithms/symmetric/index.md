@@ -577,7 +577,7 @@ The character we want to change is at `index=27`. The byte at index `index=27-16
 * `key = XOR("0x67", "0x62") = "0x5"`
 * `flipper = XOR("0x61", "0x5") = "0x64"`
 
-Formally, when encrypting with CBC, we are XOR-ing the plaintext block with the previous ciphertext block. In short, we had `"0x62" = XOR("0x67", key)`. By rewriting the equations, we can manipulate the decryption process, such as `XOR("0x64", key)` to get `a`. 
+Formally, when encrypting with CBC, we are XORing the plaintext block with the previous ciphertext block. In short, we had `"0x62" = XOR("0x67", key)`. By rewriting the equations, we can manipulate the decryption process, such as `XOR("0x64", key)` to get `"0x61"` which is `a`. 
 
 ```diff
 - fca6699ba3209c17af0d68672ec877e5 # joined=XXXX-XX-X

@@ -231,6 +231,20 @@ $ apngdis image.apng
 $ cat *.txt | cut -d '=' -f2 | cut -d '/' -f1 | xargs | tr ' ' ','
 ```
 </div><div>
+
+#### Piet Graphical language
+
+[![nax](../../_badges/thm-p/nax.svg)](https://tryhackme.com/r/room/nax)
+
+Weird niche thing. Code stored as an image.
+
+```ps
+$ DEST="$HOME/tools/repiet"    
+$ git clone -b "master" https://github.com/boothby/repiet $DEST
+$ cd $DEST && wget "https://github.com/quentinra/blog.quentinra.dev/tree/master/cybersecurity/purple-team/files/_files/repiet.patch" && git apply repiet.patch && cd -
+$ pipx install $DEST
+$ repiet image --codel_size <identified_by_zsteg> # and execute the code
+```
 </div></div>
 
 <hr class="sep-both">
