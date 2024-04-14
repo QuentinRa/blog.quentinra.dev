@@ -3,6 +3,7 @@
 [![adventofcyber2](../../../_badges/thm/adventofcyber2/day7.svg)](https://tryhackme.com/room/adventofcyber2)
 [![startup](../../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 [![chrome](../../../_badges/thm-p/chrome.svg)](https://tryhackme.com/room/chrome)
+[![h4cked](../../../_badges/thm-p/h4cked.svg)](https://tryhackme.com/r/room/h4cked)
 [![cap](../../../_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
 [![ftp_authentication](../../../_badges/rootme/network/ftp_authentication.svg)](https://www.root-me.org/en/Challenges/Network/FTP-authentication)
 [![telnet_authentication](../../../_badges/rootme/network/telnet_authentication.svg)](https://www.root-me.org/en/Challenges/Network/TELNET-authentication)

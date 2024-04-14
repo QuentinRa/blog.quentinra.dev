@@ -32,10 +32,14 @@ Once you found a file with the SUID bit, either there is a known way to exploit 
 #### pkexec - CVE-2021-4034
 
 [![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![pwnkit](../../../../_badges/thm/pwnkit.svg)](https://tryhackme.com/r/room/pwnkit)
+[![polkit](../../../../_badges/thm/polkit.svg)](https://tryhackme.com/r/room/polkit)
 
-`/usr/bin/pkexec` a file installed by default on every major Linux distribution with a **SUID bit** could be exploited to get root. See [arthepsy PoC](https://github.com/arthepsy/CVE-2021-4034) <small>(1.0k ⭐)</small>, or [berdav PoC](https://github.com/berdav/CVE-2021-4034) <small>(1.9k ⭐)</small>.
+Policy Kit (Polkit) is part of the Linux authorization system. It used and installed by default on every major Linux distribution.
 
-Pkexec is one of the programs that are part of PolicyKit (polkit).
+We can interact with it using the `/usr/bin/pkexec` **SUID** file. See [arthepsy PoC](https://github.com/arthepsy/CVE-2021-4034) <small>(1.0k ⭐)</small>, or [berdav PoC](https://github.com/berdav/CVE-2021-4034) <small>(1.9k ⭐)</small>.
+
+Some distributions were also vulnerable to [CVE-2021-3560](https://nvd.nist.gov/vuln/detail/CVE-2021-3560).
 
 📚 Example Usage: `/usr/bin/pkexec bash`
 

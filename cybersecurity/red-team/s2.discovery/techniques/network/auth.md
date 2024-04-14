@@ -9,6 +9,7 @@
 [![cowboyhacker](../../../../_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
 [![unbakedpie](../../../../_badges/thm-p/unbakedpie.svg)](https://tryhackme.com/r/room/unbakedpie)
 [![brooklynninenine](../../../../_badges/thm-p/brooklynninenine.svg)](https://tryhackme.com/r/room/brooklynninenine)
+[![h4cked](../../../../_badges/thm-p/h4cked.svg)](https://tryhackme.com/r/room/h4cked)
 [![wifinetic](../../../../_badges/htb-p/wifinetic.svg)](https://app.hackthebox.com/machines/Wifinetic)
 
 <div class="row row-cols-lg-2"><div>
