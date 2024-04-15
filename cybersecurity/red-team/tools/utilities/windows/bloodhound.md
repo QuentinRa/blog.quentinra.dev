@@ -7,7 +7,7 @@
 
 [BloodHound](https://github.com/BloodHoundAD/BloodHound) <small>(9.3k ⭐)</small> is a reference when pentesting Active Directory. The tool can collect data, display results as a [Neo4J](/programming-languages/databases/non-relational/graph/neo4j.md), and provide Neo4J queries to identify attack vectors and attack paths.
 
-They seem to be moving to an paid and a [community version](https://github.com/SpecterOps/BloodHound) <small>(0.6k ⭐)</small>.
+They seem to be moving to an paid and a [community version](https://github.com/SpecterOps/BloodHound) <small>(0.7k ⭐)</small>.
 
 On the target, run a data collector such as [SharpHound](https://github.com/BloodHoundAD/SharpHound) <small>(0.6k ⭐)</small>:
 

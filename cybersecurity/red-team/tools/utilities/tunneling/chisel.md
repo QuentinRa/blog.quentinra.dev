@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[Chisel](https://github.com/jpillora/chisel) <small>(10.8k ⭐)</small> is a post-exploitation tool that can be used to remotely access a website using TCP. This can be useful to access website from your browser will a firewall is blocking connections.
+[Chisel](https://github.com/jpillora/chisel) <small>(12.0k ⭐)</small> is a post-exploitation tool that can be used to remotely access a website using TCP. This can be useful to access website from your browser will a firewall is blocking connections.
 
 On Kali, you can install it using:
 

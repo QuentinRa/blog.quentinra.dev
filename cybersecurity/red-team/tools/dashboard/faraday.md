@@ -5,7 +5,7 @@
 [Faraday](https://faradaysec.com/) is a platform to facilitate security assessments, by providing a dashboard interfacing the results of many cybersecurity tools.
 
 * [Documentation](https://docs.faradaysec.com/) (⛪)
-* [Open-source](https://github.com/infobyte/faraday/) <small>(4.5k ⭐)</small> with a paid-plan
+* [Open-source](https://github.com/infobyte/faraday/) <small>(4.6k ⭐)</small> with a paid-plan
 * [Supported tools](https://docs.faradaysec.com/import/#supported-file-formats) <small>(nmap, metasploit, ping, ZAP, W3af, Nessus...)</small>
 
 Supported tools are [plugins](https://github.com/infobyte/faraday_plugins) in [Python](/programming-languages/high-level/scripting/python/index.md). It's quite easy to write your own. The [plugin development](https://docs.faradaysec.com/Basic-plugin-development/) section is a good start.

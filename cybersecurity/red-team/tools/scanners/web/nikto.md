@@ -6,7 +6,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[Nikto](https://github.com/sullo/nikto) <small>(7.7k ⭐)</small> is a common website vulnerability scanning tool:
+[Nikto](https://github.com/sullo/nikto) <small>(7.8k ⭐)</small> is a common website vulnerability scanning tool:
 
 * 💥 to find known vulnerabilities
 * 🔏 to find known misconfigurations
