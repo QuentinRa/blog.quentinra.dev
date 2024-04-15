@@ -278,5 +278,40 @@ We may encounter many easy attack vectors:
 * `ForceChangePassword`: reset someone else password
 * `WriteOwner`: change the owner of an object
 * `WriteDACL`: modify the DACL of an object
+
+We can use [PowerView](/cybersecurity/red-team/tools/utilities/windows/powersploit.md#powerview) to list *too many* possibly interesting ACEs:
+
+```ps
+PS> Find-InterestingDomainAcl
+PS> $sid = Convert-NameToSid username
+PS> Get-DomainObjectACL -Identity cn | ? {$_.SecurityIdentifier -eq $sid}
+PS> Get-DomainObjectACL -ResolveGUIDs -Identity cn | ? {$_.SecurityIdentifier -eq $sid}
+```
+
+You should use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloodhound.md) to find interesting/exploitable ACEs.
+
+<br>
+
+#### GenericWrite — GenericWrite
+
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+...
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* To find what a GUID is associated with, either Google the GUID, or look inside `Extended-Rights`, as per HTB:
+
+```ps
+PS> Get-ADObject -SearchBase "CN=Extended-Rights,$((Get-ADRootDSE).ConfigurationNamingContext)" -Filter {ObjectClass -like 'ControlAccessRight'} -Properties * |Select Name,DisplayName,DistinguishedName,rightsGuid| ?{$_.rightsGuid -eq $guid} | fl
+```
 </div><div>
 </div></div>
