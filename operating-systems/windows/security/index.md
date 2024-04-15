@@ -85,16 +85,19 @@ For a domain user, the SID is `<domain SID>-<rid>`. The administrator RID is usu
 #### Access Control
 
 [![windowsfundamentals](../../../cybersecurity/_badges/htb/windowsfundamentals.svg)](https://academy.hackthebox.com/course/preview/windows-fundamentals)
+[![active_directory_enumeration_attacks](../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![windowsfundamentals3xzx](../../../cybersecurity/_badges/thm/windowsfundamentals3xzx.svg)](https://tryhackme.com/room/windowsfundamentals3xzx)
 
 The access to any resources is managed by Access Control Entries (ACEs) in Access Control Lists (ACLs). An ACL is a set of ACEs.
 
-Each ACE specifies the permissions <small>(R, W, X, etc.)</small> granted or denied for a particular user or group <small>(a SID)</small> over a "securable object". A securable object refers to a resource that can be secured <small>(files, services, etc.)</small>.
+Each ACE specifies the permissions <small>(R, W, X, etc.)</small> granted or denied for a particular user or group <small>(a SID)</small> over a "securable object". A securable object refers to a resource that can be secured <small>(files, services, etc.)</small>. In short, we have a SID, an access mask <small>(32-bit for perms)</small>, inherit-flags <small>(I)</small>, and ACE type <small>(granted/denied)</small>.
 
 A security descriptor is a data structure associated with a securable object. It contains information such as:
  
 * **Discretionary Access Control List (DACL)**: A list of ACEs 
 * **System Access Control List (SACL)**: Optionally, a list that specifies which security events should be audited.
+
+If there is no DACL, every user is granted full rights.
 
 #### Access Token
 

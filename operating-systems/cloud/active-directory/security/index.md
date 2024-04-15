@@ -172,7 +172,8 @@ We should be able to exploit every other technique and:
 * [Passive Internal Network Discovery](/cybersecurity/red-team/s1.investigation/techniques/passive_network_discovery.md): find hosts
 * [LLMNR/NBT-NS Poisoning](/cybersecurity/red-team/s2.discovery/techniques/network/poisoning.md): attack to expose credentials
 * [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md): expose the password policy <small>(more commands)</small>
-* [insecure PXE boot](#preboot-execution-environment-pxe): get credentials if exploitable
+* [Insecure PXE boot](#preboot-execution-environment-pxe): get credentials if exploitable
+* [Dangerous privileges](/cybersecurity/red-team/s4.privesc/windows/topics/privs.md) or [ACEs](/cybersecurity/red-team/s4.privesc/windows/topics/aces.md): a vector that can get us credentials, access to another account, or compromise the whole environment.
 * [Windows Identification](/cybersecurity/red-team/s4.privesc/windows/utils/id.md): use built-in tools and functions of Windows or well-known scripts to find information.
 
 You can use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloodhound.md) to collect and analyze information to find attack vectors and attack paths.
@@ -209,6 +210,8 @@ $ runas.exe /netonly /user:domain\username cmd.exe # provide the password, crede
 ```
 
 Now, we can run tools such as `MS SQL` or commands as usual.
+
+📚 Refer to [pivoting](/cybersecurity/red-team/s5.post-exploitation/index.md#pivoting-to-another-host-) to access internal hosts.
 </div></div>
 
 <hr class="sep-both">
