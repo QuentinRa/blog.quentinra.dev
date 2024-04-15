@@ -24,6 +24,10 @@ These algorithms are using information such as the shortest number of devices to
 
 ## Routing table
 
+[![pivoting_tunneling_port_forwarding](../../../../cybersecurity/_badges/htb/pivoting_tunneling_port_forwarding.svg)](https://academy.hackthebox.com/course/preview/pivoting-tunneling-and-port-forwarding)
+[![introtolan](../../../../cybersecurity/_badges/thm/introtolan.svg)](https://tryhackme.com/room/introtolan)
+[![extendingyournetwork](../../../../cybersecurity/_badges/thmp/extendingyournetwork.svg)](https://tryhackme.com/room/extendingyournetwork)
+
 <div class="row row-cols-lg-2"><div>
 
 A router will use a routing table to determine
