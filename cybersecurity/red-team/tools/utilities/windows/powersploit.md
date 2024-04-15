@@ -29,6 +29,7 @@ Get information on the domain:
 ```ps
 PS> Get-DomainPolicy
 PS> Get-DomainUser -Identity username -Domain example.com
+OS> Get-DomainGroup -Identity "XXX" | select memberof
 PS> Get-DomainGroupMember -Identity "Domain Admins" -Recurse
 PS> Get-DomainTrustMapping
 PS> Test-AdminAccess -ComputerName TARGET_HOST

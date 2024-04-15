@@ -102,6 +102,7 @@ PS> Get-ADUser -Identity username [...]
 PS> Get-ADTrust -Filter *                            # List Domain Trusts
 PS> Get-ADGroup -Filter * | select name              # List groups
 PS> Get-ADGroup -Identity "Backup Operators"         # Group Details
+PS> Get-ADGroup -Identity "XXX" -Properties * | Select -ExpandProperty Members
 PS> Get-ADGroupMember -Identity "Backup Operators"   # Group Members
 PS> Get-ADObject -Filter 'badPwdCount -gt 0' -includeDeletedObjects # Search Objects
 ```
@@ -165,18 +166,4 @@ A few random notes:
 
 * Click on `View -> Advanced Features` to view all objects/attributes
 * Click on `Active Directory Users and Computers` to view all OUs
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-lg-2"><div>
-
-```
-PS> Set-ADAccountPassword -Identity username -OldPassword (ConvertTo-SecureString -AsPlaintext "old" -force) -NewPassword (ConvertTo-SecureString -AsPlainText "new" -Force)
-```
-</div><div>
 </div></div>

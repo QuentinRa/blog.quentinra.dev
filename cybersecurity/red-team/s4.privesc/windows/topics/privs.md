@@ -272,9 +272,9 @@ We may encounter many easy attack vectors:
 
 * `GenericAll`: grant full control over an object
 * `GenericWrite`: grant write access over an object
-* `Addself`: add our user to a group
+* `AddSelf`: add our user to a group
 * `AllExtendedRights`: include ForceChangePassword, Add Members
-* `Add Members`: add arbitrary users to a group
+* `AddMembers`: add arbitrary users to a group
 * `ForceChangePassword`: reset someone else password
 * `WriteOwner`: change the owner of an object
 * `WriteDACL`: modify the DACL of an object
@@ -292,12 +292,33 @@ You should use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloo
 
 <br>
 
-#### GenericWrite — GenericWrite
+#### Dangerous ACEs — GenericWrite
+
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+We can add ourselves in another group that we may leverage to escalate through the domain.
+
+```yaml!
+AceType: AccessAllowed
+ObjectDN: CN=IT,OU=[...]
+ActiveDirectoryRights: [...], GenericWrite
+```
+</div><div>
+
+#### Dangerous ACEs — ForceChangePassword
+
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+We should ask if we are allowed to reset someone else's password to our client. We may do that to access a user which is in an interesting group which we should be able to exploit.
+
+<br>
+
+#### Dangerous ACEs — AddSelf
 
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 
 ...
-</div><div>
+
 </div></div>
 
 <hr class="sep-both">
@@ -308,10 +329,19 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
 * To find what a GUID is associated with, either Google the GUID, or look inside `Extended-Rights`, as per HTB:
 
 ```ps
 PS> Get-ADObject -SearchBase "CN=Extended-Rights,$((Get-ADRootDSE).ConfigurationNamingContext)" -Filter {ObjectClass -like 'ControlAccessRight'} -Properties * |Select Name,DisplayName,DistinguishedName,rightsGuid| ?{$_.rightsGuid -eq $guid} | fl
 ```
+
+* We can use active directory module and Get-ACL
+
+````ps
+PS> Get-ADUser -Filter * | Select-Object -ExpandProperty SamAccountName > ad_users.txt
+PS> foreach($line in [System.IO.File]::ReadLines("ad_users.txt")) {get-acl  "AD:\$(Get-ADUser $line)" | Select-Object Path -ExpandProperty Access | Where-Object {$_.IdentityReference -match 'domain\\username'}}
+````
 </div><div>
 </div></div>
