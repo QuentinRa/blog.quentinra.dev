@@ -142,12 +142,21 @@ There are multiple ways to exploit this:
 * As a **user**, we can connect to any socket we can read, for instance, we compromised a user having a running SSH session as admin.
 
 ```ps
-$ export SSH_AUTH_SOCK=/path/to/xxx.agent; ssh username@0
+$ export SSH_AUTH_SOCK=/path/to/agent.xxx; ssh username@0
 <no password == it worked>
+```
+
+```ps
+$ cat /proc/$$/environ | tr '\0' '\n' | grep SSH_AUTH_SOCK
+$ cat /proc/*/environ 2> /dev/null | tr '\0' '\n' | grep SSH_AUTH_SOCK
 ```
 
 ➡️ Article: [SSH Agent Hijacking](https://jekhokie.github.io/linux/ssh/security/hijacking/2019/09/07/ssh-agent-hijacking.html).
 </div><div>
+
+#### SSH Tunneling And Port Forwarding
+
+Please refer to [this](/cybersecurity/red-team/s5.post-exploitation/index.md#pivoting-to-another-host-).
 </div></div>
 
 <hr class="sep-both">
@@ -158,13 +167,9 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* `ssh xxx@yyy -T -L sp:domain:dp`: create a tunnel mapping one port to another. `ssh -N -f -l username IP`
-* ssh-keygen
-* `ssh-keygen -f key`: leave in `>> /root/.ssh/authorized_keys` the pub
 * `-R "xxx"`
 * `ssh -X` with `X11Forwarding` enabled
 * `sshpass -p 'XXX' ssh xxx@IP`
-* Authorized keys
 * `sudo systemctl restart sshd`
 * `ssh-copy-id username@server`: add to remote server our public key
 * `ssh domain\\username@target`
@@ -175,14 +180,4 @@ Stuff that I found, but never read/used yet.
   * `PubkeyAuthentication yes`
   * `PasswordAuthentication no`
   * [Hardening](https://www.ssh-audit.com/hardening_guides.html)
-
-SSH Forward Agent tests
-
-```shell!
-$ ssh xxx@yyy -A
-ssh> ssh-add -l
-ssh> cat /proc/$$/environ | tr '\0' '\n' | grep SSH_AUTH_SOCK
-ssh> cat /proc/*/environ 2> /dev/null | tr '\0' '\n' | grep SSH_AUTH_SOCK
-ssh> SSH_AUTH_SOCK=/tmp/ssh-XXX/agent.$pid <something?>
-```
 </div></div>
