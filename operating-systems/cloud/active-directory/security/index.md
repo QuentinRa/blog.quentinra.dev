@@ -173,7 +173,7 @@ We should be able to exploit every other technique and:
 * [LLMNR/NBT-NS Poisoning](/cybersecurity/red-team/s2.discovery/techniques/network/poisoning.md): attack to expose credentials
 * [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md): expose the password policy <small>(more commands)</small>
 * [Insecure PXE boot](#preboot-execution-environment-pxe): get credentials if exploitable
-* [Dangerous privileges](/cybersecurity/red-team/s4.privesc/windows/topics/privs.md) or [ACEs](/cybersecurity/red-team/s4.privesc/windows/topics/aces.md): a vector that can get us credentials, access to another account, or compromise the whole environment.
+* [Dangerous privileges](/cybersecurity/red-team/s4.privesc/windows/topics/privs.md) or [ACEs](/cybersecurity/red-team/s4.privesc/windows/topics/privs.md#windows-dangerous-aces): a vector that can get us credentials, access to another account, or compromise the whole environment.
 * [Windows Identification](/cybersecurity/red-team/s4.privesc/windows/utils/id.md): use built-in tools and functions of Windows or well-known scripts to find information.
 
 You can use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloodhound.md) to collect and analyze information to find attack vectors and attack paths.

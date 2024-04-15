@@ -255,3 +255,28 @@ PS> .\ExploitCapcom.exe
 
 You can use [driverview](http://www.nirsoft.net/utils/driverview.html) to list loaded drivers.
 </div></div>
+
+<hr class="sep-both">
+
+## Windows Dangerous ACEs
+
+<div class="row row-cols-lg-2"><div>
+
+#### Dangerous ACEs — Overview
+
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+In an Active Directory Network, it's common for users to be added to custom groups, and for custom ACEs to be defined for each group.
+
+We may encounter many easy attack vectors:
+
+* `GenericAll`: grant full control over an object
+* `GenericWrite`: grant write access over an object
+* `Addself`: add our user to a group
+* `AllExtendedRights`: include ForceChangePassword, Add Members
+* `Add Members`: add arbitrary users to a group
+* `ForceChangePassword`: reset someone else password
+* `WriteOwner`: change the owner of an object
+* `WriteDACL`: modify the DACL of an object
+</div><div>
+</div></div>
