@@ -56,9 +56,13 @@ A few notes:
 
 * 🛬 Click on 'Import Data' or drag and drop your zip to import it.
 * 📚 Navigate to Analysis to run saved queries
-* 🔎 Click on objects <small>(don't hesitate!)</small> to load it in the view
-* 🔑 Use the search bar to search objects. There is a path icon to search for a path between objects <small>(current user to admin?)</small>.
+* 🔎 Click on objects <small>(don't hesitate!)</small> to load them in the view
+* 🔑 Use the search bar to search objects. There is a path icon to search for a path between objects <small>(e.g., from current user to admin)</small>.
 * 🖨️ Press <kbd>CTRL</kbd> to see labels below each node
+
+Node information:
+
+* Outbound Object Control: ACL attacks, refer to [this](/cybersecurity/red-team/s4.privesc/windows/topics/privs.md#windows-dangerous-aces)
 </div><div>
 
 Useful queries:
