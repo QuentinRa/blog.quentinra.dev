@@ -278,6 +278,8 @@ We may encounter many easy attack vectors:
 * `ForceChangePassword`: reset someone else password
 * `WriteOwner`: change the owner of an object
 * `WriteDACL`: modify the DACL of an object
+* `ReanimateTombstones`: ...
+* `GroupMSAMembership`: [GMSAPasswordReader](https://github.com/rvazarkar/GMSAPasswordReader), [gMSADumper](https://github.com/micahvandeusen/gMSADumper)
 
 We can use [PowerView](/cybersecurity/red-team/tools/utilities/windows/powersploit.md#powerview) to list *too many* possibly interesting ACEs:
 
@@ -326,6 +328,12 @@ PS> Set-DomainObject -Credential $Cred -Identity username -Clear serviceprincipa
 ```
 </div><div>
 
+The image below is from HTB AD module and [publicly available](https://academy.hackthebox.com/storage/modules/143/ACL_attacks_graphic.png).
+
+![HTB ACL_attacks_graphic](_img/ACL_attacks_graphic.webp)
+
+<br>
+
 #### Dangerous ACEs — GenericWrite
 
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
@@ -337,6 +345,16 @@ AceType: AccessAllowed
 ObjectDN: CN=IT,OU=[...]
 ActiveDirectoryRights: [...], GenericWrite
 ```
+
+<br>
+
+#### Dangerous ACEs — GenericAll
+
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+We can perform multiple actions. One of them is to add a fake SPN to a user account, in order to perform a [kerberoasting](/operating-systems/cloud/active-directory/security/index.md#kerberoasting--privilege-escalation) attack.
+
+If we have this access on a computer object, we can read its password if LAPS is enabled and gain local admin access.
 
 <br>
 
@@ -352,7 +370,7 @@ We should ask if we are allowed to reset someone else's password to our client. 
 
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 
-...
+We can add ourselves to interesting groups?
 
 </div></div>
 

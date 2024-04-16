@@ -344,6 +344,7 @@ You can also use the `sc.exe` utility. Inside CMD, you can use `sc` while in pow
 PS> sc.exe query                # list all services
 PS> sc.exe qc <service>         # info for a service
 PS> sc.exe sdshow <service>     # service permissions (SDDL)
+PS> ConvertFrom-SddlString "<...>" # Human-readable permissions
 PS> Get-ACL -Path <service_exe> # same
 ```
 </div><div>

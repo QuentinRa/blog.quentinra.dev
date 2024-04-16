@@ -391,6 +391,7 @@ Stuff that I found, but never read/used yet.
 * [Active Directory Exploitation Cheat Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet) <small>(3.4k ⭐)</small>
 * [AD mindmap orange](https://orange-cyberdefense.github.io/ocd-mindmaps/)
 * [bloodyAD](https://github.com/CravateRouge/bloodyAD)+[autobloody](https://github.com/CravateRouge/autobloody)
+* Advanced Security Audit Policy
 </div><div>
 
 * Hardening AD ([ref](https://blog.netwrix.fr/2019/05/06/securiser-votre-annuaire-ad-contre-les-attaques-de-malware/))
