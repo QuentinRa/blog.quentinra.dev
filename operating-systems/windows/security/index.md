@@ -406,7 +406,7 @@ PS> $UnsecurePassword = (New-Object PSCredential 0, $SecurePassword).GetNetworkC
 For credentials stored using `Export-Clixml`, use:
 
 ```ps
-PS> $credential = Import-Clixml -Path 'C:\scripts\pass.xml'
+PS> $credential = Import-Clixml -Path 'pass.xml'
 PS> $credential.GetNetworkCredential().Password
 ```
 </div></div>

