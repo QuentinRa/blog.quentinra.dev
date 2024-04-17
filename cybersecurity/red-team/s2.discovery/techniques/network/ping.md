@@ -1,4 +1,4 @@
-# Ping
+# Ping sweep
 
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![activerecon](../../../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)

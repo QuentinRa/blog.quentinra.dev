@@ -11,9 +11,9 @@ Remote Desktop Protocol (RDP) is a protocol used to access a  desktop with a gra
 
 On Windows, there is the built-in Windows RDP Client: `mstsc.exe`.
 
-There is [rdesktop](https://github.com/rdesktop/rdesktop) (1.1k ⭐).
+There is [rdesktop](https://github.com/rdesktop/rdesktop) (1.1k ⭐). It supports [file transfer](/cybersecurity/red-team/_knowledge/topics/file_transfer.md).
 
-There is [FreeRDP](https://github.com/FreeRDP/FreeRDP) (7.5k ⭐), and there is a graphical version too [xfreerdp-gui](https://github.com/wyllianbs/xfreerdp-gui) (29 ⭐).
+There is [FreeRDP](https://github.com/FreeRDP/FreeRDP) (7.5k ⭐), and there is a graphical version too [xfreerdp-gui](https://github.com/wyllianbs/xfreerdp-gui) (29 ⭐). It supports [file transfer](/cybersecurity/red-team/_knowledge/topics/file_transfer.md).
 
 ```shell!
 $ xfreerdp /u:username /p:password /v:IP
@@ -22,7 +22,7 @@ $ xfreerdp /dynamic-resolution +clipboard /timeout:50000 /cert:ignore /v:IP /u:x
 ```
 </div><div>
 
-There is [Remmina](https://github.com/FreeRDP/Remmina) (1.9k ⭐, `apt install remmina`) which has an easy-to-use graphical interface.
+There is [Remmina](https://github.com/FreeRDP/Remmina) <small>(2.1k ⭐, `apt install remmina`)</small> which has an easy-to-use graphical interface.
 
 * `remmina`: start the graphical interface
   * Enter the IP of the target

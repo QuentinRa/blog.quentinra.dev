@@ -4,6 +4,15 @@
 
 ...
 </div><div>
+
+The first command should be enough to disable Windows Defender:
+
+```ps
+PS> Set-MpPreference -DisableRealtimeMonitoring $true
+PS> Set-MpPreference -MAPSReporting 0
+PS> Add-MpPreference -ExclusionPath C:\
+```
+
 </div></div>
 
 <hr class="sep-both">

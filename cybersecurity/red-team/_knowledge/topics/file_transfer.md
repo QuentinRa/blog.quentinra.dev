@@ -48,7 +48,7 @@ $ sudo python -m http.server port # port <= 1023
 
 #### Upload To SMB Share
 
-You can use `copy` to upload a file to a client SMB share:
+You can use `copy` to upload a file to a SMB share on the client:
 
 ```shell!
 PS> copy file.txt \\HOST_IP\share_name\path
@@ -121,11 +121,11 @@ $ python3 -m uploadserver
 $ python3 -m uploadserver 443 --server-certificate cert.pem
 ```
 
-And make the client use it to upload the file.
+And make the host with the file use it to upload the file.
 
 #### Download From SMB Share
 
-You can use `copy` to download a file from a share:
+You can use `copy` to download a file from a share on the host:
 
 ```shell!
 PS> copy \\HOST_IP\share_name\file_path
@@ -173,6 +173,12 @@ PS> [System.Net.ServicePointManager]::ServerCertificateValidationCallback = {$tr
 
 <div class="row row-cols-lg-2"><div>
 
+#### Copy-paste ✂️
+
+Copy-paste may be an option, but not every file can be copy-pasted. One trick is to encode the file using [base64](/tools-and-frameworks/knowledge/encoding/index.md#base64---), copy-paste the base64 payload on a file on the target, and decode the file on the target.
+
+<br>
+
 #### services 🕳️
 
 You may use FTP/SCP/NFS/SMB/... if applicable.
@@ -196,6 +202,7 @@ We may be able to mount a drive using RDP. On Windows, in the options of the RDP
 ```shell!
 $ rdesktop [...] -r disk:linux='/path/to/folder'
 $ xfreerdp [...] /drive:linux,/path/to/folder
+$ xfreerdp [...] /drive:/usr/share/windows-resources,share
 ```
 </div><div>
 
@@ -211,9 +218,14 @@ $ # --recv-only | -q 0 | --send-only
 
 <br>
 
-#### Copy-paste ✂️
+#### File Sharing 📂
 
-Copy-paste may be an option, but not every file can be copy-pasted. One trick is to encode the file using [base64](/tools-and-frameworks/knowledge/encoding/index.md#base64---), copy-paste the base64 payload on a file on the target, and decode the file on the target.
+If you want to transfer a file between two Windows hosts, you can do so easily by creating a folder and sharing it.
+
+* Right-click on the folder to share
+* Navigate to Sharing > Advanced Sharing, and share it
+* From the other host, use `\\SERVER_IP` from the Windows explorer
+* You can also use any SMB-related commands such as `dir`
 </div></div>
 
 <hr class="sep-both">
