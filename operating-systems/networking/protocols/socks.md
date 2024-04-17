@@ -72,5 +72,12 @@ Stuff that I found, but never read/used yet.
 * `socks4://IP:port`
 * Config: `http 127.0.0.1 8080`, `socks4 127.0.0.1 9050`
 * [check.torproject.org](https://check.torproject.org/)
+
+```ps
+$ cat config
+[ProxyList]
+socks5 127.0.0.1 1080
+$ proxychains -f config [...]
+```
 </div><div>
 </div></div>
