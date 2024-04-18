@@ -8,19 +8,9 @@
 Remote Desktop Protocol (RDP) is a protocol used to access a  desktop with a graphical interface from another computer over a network connection.
 
 🐊️ **Port**: 3389 <small>(TCP or rarely UDP)</small>
+
+It can be used to transfer files too, if the server supports it.
 </div><div>
-
-There is [Remmina](https://github.com/FreeRDP/Remmina) <small>(2.1k ⭐, `apt install remmina`)</small> which has an easy-to-use graphical interface.
-
-* `remmina`: start the graphical interface
-  * Enter the IP of the target
-  * Enter the credentials
-  * Connect
-* Then, I would advise toggling "dynamic resolution update" in the left menu, so that you have a bigger screen.
-* In preferences, we are able to select a keyboard mapping
-* [You can scale the screen too](https://askubuntu.com/questions/1075098/remmina-scaling-options)
-
-**Note ⚠️**: In preferences, quality settings, you can select to use poor quality with wallpaper to increase performance.
 </div></div>
 
 <hr class="sep-both">
@@ -62,7 +52,27 @@ $ xfreerdp [...] /drive:/usr/share/windows-resources,share
 
 #### RDP Using Remmina
 
-[Remmina](https://github.com/FreeRDP/Remmina) <small>(2.1k ⭐)</small> is a popular
+[Remmina](https://github.com/FreeRDP/Remmina) <small>(2.1k ⭐)</small> is a popular graphical RDP client. It's easy to use and it has as many useful features as the others do.
+
+```ps
+$ sudo apt install -y remmina
+$ remmina # start it
+```
+
+Click on the `+` at the top-left to configure your RDP connections, such as if you want to share a shared folder or use a SSH tunnel to a pivot.
+
+You can alternatively directly enter the IP then the credentials in the search bar of the main pane. Accept the certificate <small>(if prompted)</small>.
+
+In preferences, we are able to select a keyboard mapping. In the quality section, you can uncheck everything for every category.
+
+Useful icons:
+
+* **Home**  🏠️: switch back to remmina main panel
+* **Toggle Dynamic Resolution Update** 🖼️: fit to your screen
+
+📚 Navigate to `\\tsclient\` to access the shared folder.
+
+📚 You can create a SSH tunnel directly from Remmina configuration.
 </div></div>
 
 <hr class="sep-both">
