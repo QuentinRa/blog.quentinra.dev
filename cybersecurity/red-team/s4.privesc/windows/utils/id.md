@@ -87,7 +87,8 @@ Enumeration <small>(often monitored, not all results)</small>
 Utilities
 
 * `%logonserver%`: domain controller name
-* `%USERDOMAIN%`: host domain name
+* `%USERDOMAIN%`/`$Env:USERDOMAIN`: active directory domain name
+* `nltest /dsgetdc:<domain_name>`: domain controller information
 * `wmic ntdomain`: domain and domain controller information
 
 We may be able to use the [active directory module](https://learn.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2022-ps) or [install it](#installing-the-snap-ins).

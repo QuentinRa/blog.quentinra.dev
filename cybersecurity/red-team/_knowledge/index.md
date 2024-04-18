@@ -91,6 +91,7 @@ You can [download Kali ISO here](https://www.kali.org/get-kali/#kali-virtual-mac
 * **Username**: kali / **Password**: kali
 * Don't forget to use `sudo apt update` / `sudo apt upgrade`
 * Run `wordlists`, press Y to extract rockyou.txt wordlist. Location: `/usr/share/wordlists/rockyou.txt`.
+* Windows binaries and tools: `/usr/share/windows-resources/`
 
 <details class="details-n">
 <summary>Swap to another keyboard layout 🔥</summary>

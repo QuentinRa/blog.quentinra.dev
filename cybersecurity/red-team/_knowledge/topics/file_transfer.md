@@ -25,6 +25,8 @@ To transfer a file from the target to the host, it's often harder and more compl
 * Using installed tools such as nc, php, etc. 🧯
 
 We may use checksum functions/commands to check that the file was correctly transferred. [Refer to cryptography/hashing/checksum](/cybersecurity/cryptography/algorithms/hashing/index.md#file-checksum).
+
+📚 Obfuscation such as with [UPX](/cybersecurity/purple-team/av_evasion/index.md) can reduce the executable size.
 </div></div>
 
 <hr class="sep-both">
