@@ -205,6 +205,7 @@ We may be able to mount a drive using RDP. On Windows, in the options of the RDP
 $ rdesktop [...] -r disk:linux='/path/to/folder'
 $ xfreerdp [...] /drive:linux,/path/to/folder
 $ xfreerdp [...] /drive:/usr/share/windows-resources,share
+$ # remmina has a GUI to define the TSCLIENT Shared Folder
 ```
 </div><div>
 

@@ -18,6 +18,7 @@ WinRM is a SOAP-based protocol. See also: WMI, WBEM, DCOM.
 ## WinRM vulnerabilities ☠️
 
 [![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![pivoting_tunneling_port_forwarding](../../../cybersecurity/_badges/htb/pivoting_tunneling_port_forwarding.svg)](https://academy.hackthebox.com/course/preview/pivoting-tunneling-and-port-forwarding)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -35,6 +36,12 @@ You can try to [brute force credentials](/cybersecurity/red-team/s2.discovery/te
 $ nxc winrm IP -u user.list -p password.list
 ```
 </div><div>
+
+From a Windows host, you can use:
+
+```ps
+PS> Enter-PSSession -ComputerName "COMPUTER NAME"
+```
 </div></div>
 
 <hr class="sep-both">

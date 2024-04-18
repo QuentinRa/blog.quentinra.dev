@@ -8,18 +8,6 @@
 Remote Desktop Protocol (RDP) is a protocol used to access a  desktop with a graphical interface from another computer over a network connection.
 
 🐊️ **Port**: 3389 <small>(TCP or rarely UDP)</small>
-
-On Windows, there is the built-in Windows RDP Client: `mstsc.exe`.
-
-There is [rdesktop](https://github.com/rdesktop/rdesktop) (1.1k ⭐). It supports [file transfer](/cybersecurity/red-team/_knowledge/topics/file_transfer.md).
-
-There is [FreeRDP](https://github.com/FreeRDP/FreeRDP) (7.5k ⭐), and there is a graphical version too [xfreerdp-gui](https://github.com/wyllianbs/xfreerdp-gui) (29 ⭐). It supports [file transfer](/cybersecurity/red-team/_knowledge/topics/file_transfer.md).
-
-```shell!
-$ xfreerdp /u:username /p:password /v:IP
-$ xfreerdp /u:username /pth:hash /v:IP
-$ xfreerdp /dynamic-resolution +clipboard /timeout:50000 /cert:ignore /v:IP /u:x /p:y
-```
 </div><div>
 
 There is [Remmina](https://github.com/FreeRDP/Remmina) <small>(2.1k ⭐, `apt install remmina`)</small> which has an easy-to-use graphical interface.
@@ -33,6 +21,48 @@ There is [Remmina](https://github.com/FreeRDP/Remmina) <small>(2.1k ⭐, `apt in
 * [You can scale the screen too](https://askubuntu.com/questions/1075098/remmina-scaling-options)
 
 **Note ⚠️**: In preferences, quality settings, you can select to use poor quality with wallpaper to increase performance.
+</div></div>
+
+<hr class="sep-both">
+
+## RDP Clients Overview
+
+<div class="row row-cols-lg-2"><div>
+
+#### RDP Using Microsoft Terminal Services Client
+
+On Windows, there is the built-in client: `mstsc.exe`. It has a few options to reduce the quality and increase performance.
+
+Click on `Show options` then `Experience` and select `modem`.
+
+<br>
+
+#### RDP Using rdesktop
+
+There is [rdesktop](https://github.com/rdesktop/rdesktop) <small>(1.2k ⭐)</small>.
+
+```shell!
+$ rdesktop [...] -r disk:linux='/path/to/folder'
+```
+
+<br>
+
+#### RDP Using FreeRDP
+
+[FreeRDP](https://github.com/FreeRDP/FreeRDP) <small>(10.1k ⭐)</small> is a popular client that may be installed on many Linux distributions. There is a GUI called [xfreerdp-gui](https://github.com/wyllianbs/xfreerdp-gui) <small>(0.1k ⭐, 2020 🪦)</small>.
+
+```shell!
+$ xfreerdp /u:username /p:password /v:IP
+$ xfreerdp /u:username /pth:hash /v:IP
+$ xfreerdp /dynamic-resolution +clipboard /timeout:50000 /cert:ignore /v:IP /u:x /p:y
+$ xfreerdp [...] /drive:linux,/path/to/folder
+$ xfreerdp [...] /drive:/usr/share/windows-resources,share
+```
+</div><div>
+
+#### RDP Using Remmina
+
+[Remmina](https://github.com/FreeRDP/Remmina) <small>(2.1k ⭐)</small> is a popular
 </div></div>
 
 <hr class="sep-both">
