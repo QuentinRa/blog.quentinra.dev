@@ -445,6 +445,19 @@ PS> netdom query /domain:example.com dc
 PS> netdom query /domain:example.com workstation
 ```
 </div><div>
+
+#### SID-History Injection
+
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+This attack is called ExtraSids Attack on HTB. Microsoft implemented SID filtering preventing these attacks, which is disabled within a forest. 
+
+If a domain is compromised, we can add to `sidHistory` the SID of a group such as `Enterprise Admins`' SID and compromise the forest. 
+
+
+📚 If a user is migrated to another forest and SID filtering is disabled, then they retain their rights on their original domain.
+
+⚠️ The injected SID must not exist within the compromised domain.
 </div></div>
 
 <hr class="sep-both">
