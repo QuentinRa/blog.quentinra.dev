@@ -99,6 +99,7 @@ PS> # Add -Server domain on external workstations
 PS> Get-ADDomain                                     # List domain information
 PS> Get-ADUser -Filter {ServicePrincipalName -ne "$null"} -Properties ServicePrincipalName
 PS> Get-ADUser -Filter 'Name -like "*xxx"' -Properties ServicePrincipalName
+PS> Get-ADUser -Filter 'userAccountControl -band 128' -Properties userAccountControl
 PS> Get-ADUser -Identity username [...]
 PS> Get-ADTrust -Filter *                            # List Domain Trusts
 PS> Get-ADGroup -Filter * | select name              # List groups

@@ -117,6 +117,7 @@ The most basic authentication bypass is `*` and `*` that authenticates as the fi
 
 ### LDAP Pass-back Attack
 
+[![active_directory_enumeration_attacks](../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![breachingad](../../../cybersecurity/_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
 [![return](../../../cybersecurity/_badges/htb-p/return.svg)](https://app.hackthebox.com/machines/Return)
 

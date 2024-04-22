@@ -349,13 +349,14 @@ ObjectDN: CN=IT,OU=[...]
 ActiveDirectoryRights: [...], GenericWrite
 ```
 
+We can add a fake SPN to a user account to perform a [kerberoasting](/operating-systems/cloud/active-directory/security/index.md#kerberoasting--privilege-escalation) attack. We can alternatively perform an [ASReproasting](/operating-systems/cloud/active-directory/security/index.md#as-rep-roasting-attack--privilege-escalation) attack.
 <br>
 
 #### Dangerous ACEs — GenericAll
 
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 
-We can perform multiple actions. One of them is to add a fake SPN to a user account, in order to perform a [kerberoasting](/operating-systems/cloud/active-directory/security/index.md#kerberoasting--privilege-escalation) attack.
+We can perform multiple actions. Refer to [GenericWrite](#dangerous-aces--genericwrite) for a few.
 
 If we have this access on a computer object, we can read its password if LAPS is enabled and gain local admin access.
 

