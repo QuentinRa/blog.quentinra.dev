@@ -48,6 +48,7 @@ PS> Find-InterestingDomainAcl
 PS> $sid = Convert-NameToSid username
 PS> Get-DomainObjectACL -Identity cn | ? {$_.SecurityIdentifier -eq $sid}
 PS> Get-DomainObjectACL -ResolveGUIDs -Identity cn | ? {$_.SecurityIdentifier -eq $sid}
+PS> Get-ObjectAcl "DC=example,DC=com" -ResolveGUIDs
 ```
 
 #### PowerView — PS1 Alternatives

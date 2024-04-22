@@ -158,7 +158,7 @@ We can perform a [password spraying](/cybersecurity/red-team/s2.discovery/techni
 
 We can perform a [kerberoasting attack](#kerberoasting--privilege-escalation) <small>(credentials required 🔑)</small>
 
-We can perform a [ASReproasting attack](#as-rep-roasting-attack--privilege-escalation) <small>(credentials required? 🔑)</small>
+We can perform a [ASReproasting attack](#as-rep-roasting-attack--privilege-escalation) <small>(no credentials required ✅)</small>
 
 <br>
 
@@ -312,8 +312,6 @@ $ impacket-Get-GPPPassword -xmlfile Groups.xml LOCAL
 *Alternative name: ASReproasting*
 
 Some kerberos users may have been configured to not require Kerberos Pre Auth, leading to their hash being sent when an authentication request is made before providing valid identification.
-
-While I am not sure, it seems the example below is possible because guest access was enabled, so credentials were not required:
 
 ```shell!
 $ impacket-GetNPUsers -dc-ip IP -usersfile valid_users.txt domain/junkusername -no-pass

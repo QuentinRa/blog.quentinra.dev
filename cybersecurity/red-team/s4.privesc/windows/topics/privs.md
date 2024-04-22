@@ -280,6 +280,7 @@ We may encounter many easy attack vectors:
 * `WriteDACL`: modify the DACL of an object
 * `ReanimateTombstones`: ...
 * `GroupMSAMembership`: [GMSAPasswordReader](https://github.com/rvazarkar/GMSAPasswordReader), [gMSADumper](https://github.com/micahvandeusen/gMSADumper)
+* `ReplicatingDirectoryChanges`, `[...]All`, and optionally `[...]InFilteredSet`: DCSync attack to dump hashes/passwords
 
 We can use [PowerView](/cybersecurity/red-team/tools/utilities/windows/powersploit.md#powerview) to list *too many* possibly interesting ACEs:
 
@@ -291,6 +292,8 @@ PS> Get-DomainObjectACL -ResolveGUIDs -Identity cn | ? {$_.SecurityIdentifier -e
 ```
 
 You should use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloodhound.md) to find interesting/exploitable ACEs.
+
+You can manually inspect objects in the MME interface, but it's quite a pain. Remember to enable Advanced Properties in View.
 
 <br>
 
@@ -372,6 +375,18 @@ We should ask if we are allowed to reset someone else's password to our client. 
 
 We can add ourselves to interesting groups?
 
+<br>
+
+#### Dangerous ACEs — ReplicatingDirectoryChanges
+
+[![dcsync](../../../../_badges/ired/offensive_security_experiments/active_directory_kerberos_abuse/dcsync.svg)](https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse/dump-password-hashes-from-domain-controller-with-dcsync)
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+You need at least `ReplicatingDirectoryChanges` and `[...]All` to perform a Domain Controller (DC) Synchronization (Sync) attack. It allows us to steal the Active Directory database.
+
+```
+$ impacket-secretsdump -outputfile example_hashes -just-dc example.com/username:password@DCIP
+```
 </div></div>
 
 <hr class="sep-both">
