@@ -189,6 +189,7 @@ Additional configurations:
 
 #### Pentester — Not Joined To AD
 
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![breachingad](../../../../cybersecurity/_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
 [![adenumeration](../../../../cybersecurity/_badges/thm/adenumeration.svg)](https://tryhackme.com/r/room/adenumeration)
 
@@ -197,10 +198,17 @@ If you are on a host connected to the internal network but not AD, you need to c
 ```shell!
 $ nmcli connection # find NIC uid (note: eth0 not tun0)
 $ nmcli connection modify uid ipv4.dns $DCIP
-$ nmcli connection modify uid ipv4.dns-search domain
+$ nmcli connection modify uid ipv4.dns-search example.com
 $ nmcli connection up uid # restart
 $ nslookup dc1.domain # test if it works
 $ ping $DCIP ; ping dc1.domain # both should work
+```
+
+You can alternatively edit the generated `/etc/resolv.conf`:
+
+```shell!
+domain example.com
+nameserver 172.16.5.5 # $DCIP
 ```
 
 On Windows, with administrator privileges, you can use:

@@ -22,6 +22,7 @@ There is also an unofficial [python](https://github.com/fox-it/BloodHound.py) co
 ```shell!
 $ sudo apt install -y bloodhound.py
 $ bloodhound-python -u 'username' -p 'password' -ns DC_IP -d domain -c all
+$ bloodhound-python -u 'username@example.com' -p 'password' -d domain -dc DC_IP -c all
 <user sessions, users and groups, object properties, ACLS>
 $ zip -r results.zip *.json
 ```
@@ -70,6 +71,7 @@ Useful queries:
 * Find Shortest Paths To Domain Admins
 * Find Computers with Unsupported Operating Systems
 * Find Computers where Domain Users are Local Admin
+* Find Users with Foreign Domain Group Membership
 </div></div>
 
 <hr class="sep-both">

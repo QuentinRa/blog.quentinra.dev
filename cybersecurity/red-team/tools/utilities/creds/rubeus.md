@@ -51,3 +51,21 @@ ASReproasting
 PS> .\Rubeus.exe asreproast /user:cn /nowrap /format:hashcat
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+Cannot be compiled on Linux.
+
+```shell!
+$ DEST="$HOME/tools/rubeus"
+$ git clone -b master https://github.com/GhostPack/Rubeus $DEST
+$ # need .NET Framework v4.0 Developer Packs at https://aka.ms/msbuild/developerpacks
+```
+</div><div>
+</div></div>
