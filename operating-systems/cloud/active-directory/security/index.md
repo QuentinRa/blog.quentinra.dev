@@ -418,6 +418,37 @@ Refer to [cracking Kerberos Tickets](/cybersecurity/cryptography/algorithms/hash
 
 <hr class="sep-both">
 
+## AD Pentester Foreign Objects Notes ☠️
+
+<div class="row row-cols-lg-2"><div>
+
+#### Identify Trust Relationships
+
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+The current domain associated with our machine may allow to access objects from another domain or another forest based on [trust](/operating-systems/cloud/active-directory/_knowledge/index.md#forest-and-trusts).
+
+```ps
+PS> Get-ADTrust -Filter * # AD Module
+```
+
+```ps
+PS> # PowerView
+PS> Get-DomainTrust
+PS> Get-DomainTrustMapping
+PS> Get-DomainUser -Domain dev.example.com | select SamAccountName
+```
+
+```ps
+PS> netdom query /domain:example.com trust
+PS> netdom query /domain:example.com dc
+PS> netdom query /domain:example.com workstation
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## AD Pentester CVE Notes ☠️
 
 <div class="row row-cols-lg-2"><div>

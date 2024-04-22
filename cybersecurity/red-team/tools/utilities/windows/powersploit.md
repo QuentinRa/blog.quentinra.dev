@@ -20,7 +20,7 @@
 PS> Import-Module .\PowerView.ps1
 ```
 
-#### PowerView — Domain
+#### PowerView — Domain Enumeration
 
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 
@@ -39,6 +39,18 @@ PS> Get-DomainUser -Identity cn | Get-DomainSPNTicket -Format Hashcat | Export-C
 PS> Get-DomainUser -Identity * | ? {$_.useraccountcontrol -like '*XXX*'} | select samaccountname,useraccountcontrol
 PS> Get-DomainUser -PreauthNotRequired | select samaccountname,userprincipalname,useraccountcontrol | fl
 PS> Get-DomainUser -UACFilter PASSWD_NOTREQD | Select-Object samaccountname,useraccountcontrol
+```
+
+<br>
+
+#### PowerView — Trust Relationships
+
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+```ps
+PS> Get-DomainTrust
+PS> Get-DomainTrustMapping
+PS> Get-DomainUser -Domain dev.example.com | select SamAccountName
 ```
 </div><div>
 

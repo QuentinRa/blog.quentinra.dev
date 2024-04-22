@@ -107,6 +107,7 @@ PS> Get-ADGroup -Identity "Backup Operators"         # Group Details
 PS> Get-ADGroup -Identity "XXX" -Properties * | Select -ExpandProperty Members
 PS> Get-ADGroupMember -Identity "Backup Operators"   # Group Members
 PS> Get-ADObject -Filter 'badPwdCount -gt 0' -includeDeletedObjects # Search Objects
+PS> Get-ADTrust -Filter * # AD Module
 ```
 
 The tool [dsquery](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732952(v=ws.11)) may be available. It must be run in an elevated prompt. Refer to [LDAP Filters](/operating-systems/networking/protocols/ldap.md) to find specific accounts.

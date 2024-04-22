@@ -498,20 +498,21 @@ A **trust** 👪 is a relationship between two domains or forests, defining whet
 
 In a forest, each domain implicitly trusts every other. But, forests are not trusting other forests.
 
-There are several types of trusts:
+There are several two categories of trusts:
 
 * **One-way trusts** ➡️: given a one-way trust from B to A, B is able to access objects from A, but not the other way around.
-
 * **Two-way trusts** 🔁: two one-way trust <small>(from B to A, and from A to B.)</small>
+
+👉 Trusts are not something we often use. These are mostly used when a company has multiple forests <small>(mostly due to acquiring a company)</small>.
 </div><div>
 
-There are other kinds of trusts:
+There are several kinds of trusts:
 
-* External trust
-* Forest trust
-* Shortcut trust
-
-👉 Trusts are not something that sysadmins will see often. These are mostly used when there are multiple forests, such as in big companies, or when merging/acquiring a company...
+* **Parent-child**: two-way transitive trust between parent and child
+* **Tree-root**: two-way transitive between two root domains
+* **Cross-link**/**Shortcut trust**: trust to speed-up authentication between domains. Can be one-way or two-way.
+* **Forest trust**: trust between two forests.
+* **External trust**: trust between two domains from two forests that are not joined by a forest trust.
 </div></div>
 
 <hr class="sep-both">
