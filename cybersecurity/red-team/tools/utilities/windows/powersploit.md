@@ -37,6 +37,8 @@ PS> Get-DomainUser -SPN -Properties samaccountname,ServicePrincipalName
 PS> Get-DomainUser cn -Properties samaccountname,serviceprincipalname,msds-supportedencryptiontypes # encryption scheme
 PS> Get-DomainUser -Identity cn | Get-DomainSPNTicket -Format Hashcat | Export-Csv .\xxx.csv -NoTypeInformation
 PS> Get-DomainUser -Identity * | ? {$_.useraccountcontrol -like '*XXX*'} | select samaccountname,useraccountcontrol
+PS> Get-DomainUser -PreauthNotRequired | select samaccountname,userprincipalname,useraccountcontrol | fl
+PS> Get-DomainUser -UACFilter PASSWD_NOTREQD | Select-Object samaccountname,useraccountcontrol
 ```
 </div><div>
 

@@ -143,7 +143,8 @@ If we can compromise a target host connected to AD, such as a GitLab server, we 
 We may be able to perform a [LDAP Pass-back Attack](/operating-systems/networking/protocols/ldap.md#ldap-pass-back-attack).
 
 Look for passwords stored using [reversible encryption](#passwords-stored-using-reversible-encryption)
-</div><div>
+
+<br>
 
 #### Pentester — Kerberos access
 
@@ -161,8 +162,7 @@ We can perform a [password spraying](/cybersecurity/red-team/s2.discovery/techni
 We can perform a [kerberoasting attack](#kerberoasting--privilege-escalation) <small>(credentials required 🔑)</small>
 
 We can perform a [ASReproasting attack](#as-rep-roasting-attack--privilege-escalation) <small>(no credentials required ✅)</small>
-
-<br>
+</div><div>
 
 #### Pentester — Internal access
 
@@ -173,12 +173,17 @@ We should be able to exploit every other technique and:
 
 * [Passive Internal Network Discovery](/cybersecurity/red-team/s1.investigation/techniques/passive_network_discovery.md): find hosts
 * [LLMNR/NBT-NS Poisoning](/cybersecurity/red-team/s2.discovery/techniques/network/poisoning.md): attack to expose credentials
-* [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md): expose the password policy <small>(more commands)</small>
+* [Password Policy](/cybersecurity/red-team/s2.discovery/techniques/passwords/policy.md): expose the password policy
 * [Insecure PXE boot](#preboot-execution-environment-pxe): get credentials if exploitable
 * [Dangerous privileges](/cybersecurity/red-team/s4.privesc/windows/topics/privs.md) or [ACEs](/cybersecurity/red-team/s4.privesc/windows/topics/privs.md#windows-dangerous-aces): a vector that can get us credentials, access to another account, or compromise the whole environment.
 * [Windows Identification](/cybersecurity/red-team/s4.privesc/windows/utils/id.md): use built-in tools and functions of Windows or well-known scripts to find information.
 
 You can use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloodhound.md) to collect and analyze information to find attack vectors and attack paths.
+
+Additional configurations:
+
+* [Accounts With PASSWD_NOTREQD](#password-not-required): easily compromised?
+* [Accounts With Reversible Passwords](#password-not-required): gain access
 
 <br>
 
@@ -213,7 +218,7 @@ $ runas.exe /netonly /user:domain\username cmd.exe # provide the password, crede
 
 Now, we can run tools such as `MS SQL` or commands as usual.
 
-📚 Refer to [pivoting](/cybersecurity/red-team/s5.post-exploitation/index.md#pivoting-to-another-host-) to access internal hosts.
+📚 Refer to [pivoting](/cybersecurity/red-team/s5.post-exploitation/index.md#pivoting-to-another-host-) to access internal hosts from a pivot host.
 </div></div>
 
 <hr class="sep-both">
@@ -309,6 +314,18 @@ $ impacket-Get-GPPPassword -xmlfile Groups.xml LOCAL
 
 ➡️ You can try to find them using [Get-GPPPassword.ps1](https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration/Get-GPPPassword.ps1), metasploit, or nxc with the `gpp_autologin` module.
 </div><div>
+
+#### Password Not Required
+
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+Some users may have the `PASSWD_NOTREQD` attribute set. It means they can have a password that is not compliant to the password policy and even a blank password if it is allowed.
+
+```ps
+PS> Get-DomainUser -UACFilter PASSWD_NOTREQD | Select-Object samaccountname,useraccountcontrol # PowerView
+```
+
+<br>
 
 #### Passwords Stored Using Reversible Encryption
 

