@@ -141,6 +141,8 @@ Some websites, which may be exposed to the outside, may use LDAP for authenticat
 If we can compromise a target host connected to AD, such as a GitLab server, we may find credentials in configuration files.
 
 We may be able to perform a [LDAP Pass-back Attack](/operating-systems/networking/protocols/ldap.md#ldap-pass-back-attack).
+
+Look for passwords stored using [reversible encryption](#passwords-stored-using-reversible-encryption)
 </div><div>
 
 #### Pentester — Kerberos access
@@ -303,6 +305,21 @@ $ impacket-Get-GPPPassword -xmlfile Groups.xml LOCAL
 ➡️ Look at: `\<domain>\SYSVOL\<domain>\Policies\<GPO GUID>\Machine\Preferences\Groups\Groups.xml`.
 </div><div>
 
+#### Passwords Stored Using Reversible Encryption
+
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+It's possible for some user accounts to have their passwords stored using reversible encryption for some specific use cases. The registry SYSKEY value is required to decrypt them.
+
+```ps
+PS> Get-ADUser -Filter 'userAccountControl -band 128' -Properties userAccountControl # AD Module
+PS> Get-DomainUser -Identity * | ? {$_.useraccountcontrol -like '*ENCRYPTED_TEXT_PWD_ALLOWED*'} |select samaccountname,useraccountcontrol # PowerView
+```
+
+📚 Using LDAP, search for users with `userAccountControl>=128`.
+
+<br>
+
 #### AS-REP Roasting Attack — Privilege Escalation
 
 [![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
@@ -319,7 +336,7 @@ $ impacket-GetNPUsers -dc-ip IP -usersfile valid_users.txt domain/junkusername -
 
 Refer to [cracking Kerberos Pre Auth Hash](/cybersecurity/cryptography/algorithms/hashing/index.md#kerberos-pre-auth-cracking).
 
-📚 Using LDAP, search for users with `userAccountControl>4194304`.
+📚 Using LDAP, search for users with `userAccountControl>=4194304`.
 
 <br>
 
