@@ -517,46 +517,6 @@ There are several kinds of trusts:
 
 <hr class="sep-both">
 
-## Active Directory On Linux
-
-[![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
-
-<div class="row row-cols-lg-2"><div>
-
-While uncommon, it's possible for Linux clients to be connected to Active Directory. We can use the `realm` command to dig information:
-
-```shell!
-$ realm list # see also: sssd, winbind
-  ...
-  permitted-logins: username@xxx.yyy
-  permitted-groups: XXX
-```
-</div><div>
-
-[Kerberos tickets](../security/index.md#kerberos) are stored in `/tmp` as ccache files. The current ticket is set by setting the `KRB5CCNAME` environment variable.
-
-```shell!
-$ export KRB5CCNAME=FILE:/tmp/krb5cc_xxx_yyy
-$ export KRB5CCNAME=FILE:/var/lib/sss/db/ccache_XXX.YYY
-$ klist # information about the current ticket
-$ impacket-ticketConverter xxx yyy.kirbi # from ccache to kirbi
-```
-
-☠️ We can use someone else's ticket as long as we got `rw` on it.
-
-Users and scripts can use a [keytab](https://kb.iu.edu/d/aumh) file to store Kerberos principals and encrypted keys that can be used to create tickets without having to store the plaintext password. To use it, we need `rw` on it.
-
-```shell!
-$ find / -name "*keytab*" -readable -writable -ls 2>/dev/null
-$ kinit xxx@yyy.zzz -k -t /path/to/xxx.keytab
-$ klist # new ticket associated with xxx@yyy.zzz
-```
-
-☠️ If you find a readable keytab file, you can create tickets. You can also use [KeyTabExtract](https://github.com/sosdave/KeyTabExtract) <small>(0.2k ⭐)</small> to dump the hash and crack it.
-</div></div>
-
-<hr class="sep-both">
-
 ## Random Notes
 
 <div class="row row-cols-lg-2"><div>

