@@ -165,6 +165,20 @@ PS> wevtutil qe Security /rd:true /f:text /r:share_name /u:username /p:password 
 You can also use `Get-WinEvent` but it requires special permissions.
 </div><div>
 
+#### Remote Access Groups
+
+[![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+Users may be able to RDP to some host or using WinRM.
+
+```ps
+PS> # PowerView
+PS> Get-NetLocalGroupMember -ComputerName DC01 -GroupName "Remote Desktop Users"
+PS> Get-NetLocalGroupMember -ComputerName DC01 -GroupName "Remote Management Users"
+```
+
+<br>
+
 #### Server Operators
 
 [![windows_privilege_escalation](../../../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)

@@ -34,7 +34,7 @@ SELECT name FROM sys.server_principals WHERE IS_SRVROLEMEMBER('sysadmin', name) 
 
 <div class="row row-cols-lg-2"><div>
 
-#### Windows client - sqlcmd
+#### Windows client — sqlcmd
 
 On Windows, you can use the [sqlcmd](https://learn.microsoft.com/en-us/sql/tools/sqlcmd/sqlcmd-utility?view=sql-server-ver16&tabs=go%2Cwindows&pivots=cs1-bash) utility.
 
@@ -50,9 +50,19 @@ If [WMI (DCOM)](/operating-systems/networking/protocols/dcom.md) is available, f
 ```shell!
 $ impacket-wmiexec username:password@IP -shell-type powershell
 ```
+
+#### Windows client — PowerUpSQL
+
+On Windows, you can use [PowerUpSQL](https://github.com/NetSPI/PowerUpSQL) <small>(2.3k ⭐)</small>.
+
+```ps
+PS> Import-Module .\PowerUpSQL.ps1
+PS> Get-SQLInstanceDomain
+PS> Get-SQLQuery -Verbose -Instance "IP,1433" -username "example\username" -password "password" -query 'Select @@version'
+```
 </div><div>
 
-#### Linux client - sqlsh
+#### Linux client — sqlsh
 
 You can use [sqlsh](https://en.wikipedia.org/wiki/Sqsh) on Linux.
 
@@ -63,7 +73,7 @@ $ sqsh -S IP -U '.\\username' -P 'password' -h
 2> go
 ```
 
-#### Linux client - impacket
+#### Linux client — impacket
 
 You can alternatively use [mssqlclient](/operating-systems/networking/protocols/tools/impacket.md#mssqlclient).
 
@@ -114,6 +124,7 @@ mfs6> run
 #### Exploitation - Part I
 
 [![attacking_common_services](../../../../cybersecurity/_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 
 * [`xp_cmdshell`](https://learn.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/xp-cmdshell-transact-sql?view=sql-server-ver16) can be used to run commands. It's disabled by default. The command is runs with the same permissions as the server.
 

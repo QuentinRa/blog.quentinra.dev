@@ -19,6 +19,7 @@ WinRM is a SOAP-based protocol. See also: WMI, WBEM, DCOM.
 
 [![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![pivoting_tunneling_port_forwarding](../../../cybersecurity/_badges/htb/pivoting_tunneling_port_forwarding.svg)](https://academy.hackthebox.com/course/preview/pivoting-tunneling-and-port-forwarding)
+[![active_directory_enumeration_attacks](../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -42,6 +43,12 @@ From a Windows host, you can use:
 ```ps
 PS> Enter-PSSession -ComputerName "COMPUTER_NAME"
 PS> Enter-PSSession -ComputerName "COMPUTER_NAME.example.com" -Credential example\username
+```
+```ps
+PS> $password = ConvertTo-SecureString "password" -AsPlainText -Force
+PS> $cred = new-object System.Management.Automation.PSCredential ("example\username", $password)
+PS> Enter-PSSession -ComputerName "COMPUTER_NAME" -Credential $cred
+
 ```
 </div></div>
 
