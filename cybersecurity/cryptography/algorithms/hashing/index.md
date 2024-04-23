@@ -241,6 +241,8 @@ $ hashcat -a 0 -m 1100 myhash wordlist # password:username
 $ hashcat -a 0 -m 2100 myhash wordlist # $DCC2$salt#username#hash
 ```
 
+➡️ See also: [NetNTLMtoSilverTicket](https://github.com/NotMedic/NetNTLMtoSilverTicket).
+
 #### Windows DPAPI Masterkey file
 
 [![chrome](../../../_badges/thm-p/chrome.svg)](https://tryhackme.com/room/chrome)

@@ -213,7 +213,6 @@ If you are using a rule:
 $ hashcat -a 0 --stdout -r /path/to/xxx.rule wordlist
 <wordlist from the rule>
 ```
-
 </div></div>
 
 <hr class="sep-both">
@@ -227,5 +226,6 @@ Stuff that I found, but never read/used yet.
 * [nsa-rules](https://github.com/NSAKEY/nsa-rules) (0.5k ⭐, 2016 🪦)
 * [Hob0Rules](https://github.com/praetorian-inc/Hob0Rules) (1.3k ⭐, 2016 🪦)
 * `/usr/share/hashcat/rules/best64.rule`
+* `/usr/share/hashcat/rules/d3ad0ne.rule`
 </div><div>
 </div></div>

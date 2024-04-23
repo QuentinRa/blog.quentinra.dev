@@ -31,7 +31,7 @@ Get information on the domain:
 ```ps
 PS> Get-DomainSID
 PS> Get-DomainPolicy
-PS> Get-DomainUser -Identity username -Domain example.com
+PS> Get-DomainUser -Identity username
 OS> Get-DomainGroup -Identity "XXX" | select memberof
 PS> Get-DomainGroupMember -Identity "Domain Admins" -Recurse
 PS> Get-DomainTrustMapping
@@ -43,6 +43,8 @@ PS> Get-DomainUser -Identity * | ? {$_.useraccountcontrol -like '*XXX*'} | selec
 PS> Get-DomainUser -PreauthNotRequired | select samaccountname,userprincipalname,useraccountcontrol | fl
 PS> Get-DomainUser -UACFilter PASSWD_NOTREQD | Select-Object samaccountname,useraccountcontrol
 ```
+
+📚 You can explicitly query a domain using `-Domain example.com`.
 </div><div>
 
 #### PowerView — Trust Relationships
@@ -64,6 +66,7 @@ PS> Get-DomainUser -Domain dev.example.com | select SamAccountName
 ```ps
 PS> Find-InterestingDomainAcl
 PS> $sid = Convert-NameToSid username
+PS> $username = Convert-SidToName $sid
 PS> Get-DomainObjectACL -Identity cn | ? {$_.SecurityIdentifier -eq $sid}
 PS> Get-DomainObjectACL -ResolveGUIDs -Identity cn | ? {$_.SecurityIdentifier -eq $sid}
 PS> Get-ObjectAcl "DC=example,DC=com" -ResolveGUIDs

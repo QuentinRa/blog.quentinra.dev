@@ -40,7 +40,8 @@ $ nxc winrm IP -u user.list -p password.list
 From a Windows host, you can use:
 
 ```ps
-PS> Enter-PSSession -ComputerName "COMPUTER NAME"
+PS> Enter-PSSession -ComputerName "COMPUTER_NAME"
+PS> Enter-PSSession -ComputerName "COMPUTER_NAME.example.com" -Credential example\username
 ```
 </div></div>
 

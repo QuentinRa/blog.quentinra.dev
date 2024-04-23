@@ -147,6 +147,13 @@ We may be able to perform a [LDAP Pass-back Attack](/operating-systems/networkin
 
 Look for passwords stored using [reversible encryption](#passwords-stored-using-reversible-encryption)
 
+You can find hosts using [adidnsdump](https://github.com/dirkjanm/adidnsdump) <small>(0.9k ⭐)</small> to [dump DNS records](https://dirkjanm.io/getting-in-the-zone-dumping-active-directory-dns-with-adidnsdump/):
+
+```ps
+$ adidnsdump -u example\\username ldap://DCIP
+$ adidnsdump [...] -r # resolve records, remove '?' marks 
+```
+
 <br>
 
 #### Pentester — Kerberos access
@@ -181,7 +188,11 @@ We should be able to exploit every other technique and:
 * [Dangerous privileges](/cybersecurity/red-team/s4.privesc/windows/topics/privs.md) or [ACEs](/cybersecurity/red-team/s4.privesc/windows/topics/privs.md#windows-dangerous-aces): a vector that can get us credentials, access to another account, or compromise the whole environment.
 * [Windows Identification](/cybersecurity/red-team/s4.privesc/windows/utils/id.md): use built-in tools and functions of Windows or well-known scripts to find information.
 
-You can use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloodhound.md) to collect and analyze information to find attack vectors and attack paths.
+Automated tools:
+
+* You can use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloodhound.md) to collect information and to analyze it. It can find attack vectors and attack paths.
+* You can use [ADRecon](https://github.com/sense-of-security/ADRecon) <small>(1.6k ⭐, 2020 🪦)</small>/[fork](https://github.com/adrecon/ADRecon) <small>(0.6k ⭐)</small> for enumeration. See also: [pingcastle](https://github.com/vletoux/pingcastle).
+* You can enumerate GPOs using [PowerSploit](https://powersploit.readthedocs.io/en/latest/Recon/Get-DomainGPO/) or [Group3r](https://github.com/Group3r/Group3r) <small>(0.6k ⭐)</small> to find dangerous ACEs. We can also use the [GPO Module](https://learn.microsoft.com/en-us/powershell/module/grouppolicy/?view=windowsserver2022-ps). See also: [SharpGPOAbuse](https://github.com/FSecureLABS/SharpGPOAbuse) <small>(1.0k ⭐)</small>.
 
 Additional configurations:
 
@@ -454,6 +465,14 @@ PS> netdom query /domain:example.com trust
 PS> netdom query /domain:example.com dc
 PS> netdom query /domain:example.com workstation
 ```
+
+#### Identify Foreign Objects
+
+You can use PowerView:
+
+```ps
+PS> Get-DomainForeignGroupMember -Domain dev.example.com
+```
 </div><div>
 
 #### SID-History Injection
@@ -622,6 +641,18 @@ $ python3 gettgtpkinit.py example.com\COMPUTE_ACCOUNT_NAME\$ -pfx-base64 ...SNIP
 $ # use ccache file or request a TGS with the user hash
 $ python3 getnthash.py -key <from gettgt> example.com\COMPUTE_ACCOUNT_NAME\$
 ```
+
+<br>
+
+#### DCShadow
+
+...
+
+<br>
+
+#### Zerologon
+
+...
 </div></div>
 
 <hr class="sep-both">
@@ -638,6 +669,7 @@ Stuff that I found, but never read/used yet.
 * [Active Directory Exploitation Cheat Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet) <small>(3.4k ⭐)</small>
 * [AD mindmap orange](https://orange-cyberdefense.github.io/ocd-mindmaps/)
 * [bloodyAD](https://github.com/CravateRouge/bloodyAD)+[autobloody](https://github.com/CravateRouge/autobloody)
+* [Exchange AD Privesc](https://github.com/gdedrouas/Exchange-AD-Privesc). Real all mailboxes as admin. Dump all credentials in memory to get hundreds of them. [PrivExchange](https://github.com/dirkjanm/PrivExchange) vulnerability.
 * Advanced Security Audit Policy
 </div><div>
 
