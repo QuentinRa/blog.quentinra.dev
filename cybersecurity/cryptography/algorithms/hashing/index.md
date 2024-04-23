@@ -300,6 +300,8 @@ $ hashcat -m 13100 rc4hash wordlist
 $ hashcat -m 19700 aeshash wordlist
 ```
 
+⚠️ If john doesn't find any hash, try `$krb5tgs$23$*cn*$<hash_here>`.
+
 #### Kerberos Pre Auth cracking
 
 [![attacktivedirectory](../../../_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)

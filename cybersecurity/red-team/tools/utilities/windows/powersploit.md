@@ -20,6 +20,8 @@
 PS> Import-Module .\PowerView.ps1
 ```
 
+<br>
+
 #### PowerView — Domain Enumeration
 
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
@@ -27,6 +29,7 @@ PS> Import-Module .\PowerView.ps1
 Get information on the domain:
 
 ```ps
+PS> Get-DomainSID
 PS> Get-DomainPolicy
 PS> Get-DomainUser -Identity username -Domain example.com
 OS> Get-DomainGroup -Identity "XXX" | select memberof
@@ -40,8 +43,7 @@ PS> Get-DomainUser -Identity * | ? {$_.useraccountcontrol -like '*XXX*'} | selec
 PS> Get-DomainUser -PreauthNotRequired | select samaccountname,userprincipalname,useraccountcontrol | fl
 PS> Get-DomainUser -UACFilter PASSWD_NOTREQD | Select-Object samaccountname,useraccountcontrol
 ```
-
-<br>
+</div><div>
 
 #### PowerView — Trust Relationships
 
@@ -52,7 +54,8 @@ PS> Get-DomainTrust
 PS> Get-DomainTrustMapping
 PS> Get-DomainUser -Domain dev.example.com | select SamAccountName
 ```
-</div><div>
+
+<br>
 
 #### PowerView — ACE-related commands
 
@@ -65,6 +68,8 @@ PS> Get-DomainObjectACL -Identity cn | ? {$_.SecurityIdentifier -eq $sid}
 PS> Get-DomainObjectACL -ResolveGUIDs -Identity cn | ? {$_.SecurityIdentifier -eq $sid}
 PS> Get-ObjectAcl "DC=example,DC=com" -ResolveGUIDs
 ```
+
+<br>
 
 #### PowerView — PS1 Alternatives
 

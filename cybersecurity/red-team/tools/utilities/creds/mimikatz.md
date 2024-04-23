@@ -68,6 +68,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
+* [thehacker.recipes](https://tools.thehacker.recipes/mimikatz)
+
 Golden ticket (Admin not required)
 
 ```shell!
