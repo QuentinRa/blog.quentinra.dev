@@ -95,7 +95,7 @@ We may be able to use the [active directory module](https://learn.microsoft.com/
 
 ```ps
 PS> Import-Module ActiveDirectory
-PS> # Add -Server domain on external workstations
+PS> # Add -Server "example.com" domain on external workstations
 PS> Get-ADDomain                                     # List domain information
 PS> Get-ADUser -Filter {ServicePrincipalName -ne "$null"} -Properties ServicePrincipalName
 PS> Get-ADUser -Filter 'Name -like "*xxx"' -Properties ServicePrincipalName

