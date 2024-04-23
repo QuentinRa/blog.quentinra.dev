@@ -44,12 +44,22 @@ From a Windows host, you can use:
 PS> Enter-PSSession -ComputerName "COMPUTER_NAME"
 PS> Enter-PSSession -ComputerName "COMPUTER_NAME.example.com" -Credential example\username
 ```
+
 ```ps
 PS> $password = ConvertTo-SecureString "password" -AsPlainText -Force
 PS> $cred = new-object System.Management.Automation.PSCredential ("example\username", $password)
 PS> Enter-PSSession -ComputerName "COMPUTER_NAME" -Credential $cred
-
 ```
+
+To avoid the [double hop problem](https://posts.slayerlabs.com/double-hop/) when we get access denied to a resource we should be able to access after multiple hops:
+
+```shell!
+PS> Enter-PSSession [...]
+session> Register-PSSessionConfiguration -Name xxx -RunAsCredential example\username
+session> Restart-Service WinRM
+PS> Enter-PSSession [...] -ConfigurationName xxx
+```
+
 </div></div>
 
 <hr class="sep-both">

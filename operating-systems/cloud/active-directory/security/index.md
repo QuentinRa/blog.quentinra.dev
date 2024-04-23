@@ -730,6 +730,4 @@ You can either use the Windows Registry, or a group policy. Here are some parame
 * NoNameReleaseOnDemand <small>(Release the NetBios name when no longer needed to prevent attacker from obtaining information)</small>
 * TcpMaxConnectResponseRetransmissions <small>(can help to prevent SYN flood attacks, but may exhaust system resources)</small>
 </details>
-
-* Passwords stored in cleartext in group policy? in user desc?
 </div></div>
