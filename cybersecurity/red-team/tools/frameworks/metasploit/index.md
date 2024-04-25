@@ -41,6 +41,8 @@ Scripts are divided into **modules** 📌
 
 <div class="row row-cols-lg-2"><div>
 
+#### msfconsole — Overview
+
 The `msfconsole` is a component of the metasploit framework used to search and  configure modules to exploit a vulnerability, and eventually, spawn a remote shell, which may be a meterpreter shell.
 
 ```shell!
@@ -51,10 +53,58 @@ msf6> help help # example
 ```
 
 You can see every command you used with `history`.
+
+<br>
+
+#### msfconsole — Search For Modules
+
+The first thing you want to do is to find exploits <small>(to perform an attack)</small> or auxiliaries <small>(to see if the target is vulnerable)</small>.
+
+```shell!
+msf6> search apache tomcat            # Multiple terms
+msf6> search exploit/linux/local/     # Module Path
+msf6> search type:auxiliary wordpress # Could be "exploit"...
+msf6> search cve:2022                 # Filter by CVE:year
+msf6> search CVE-2017-0144            # Sometimes...
+msf6> search eternalblue pool
+#  Name  Disclosure Date  Rank     Check  Description
+-  ----  ---------------  ----     -----  -----------
+0  exploit/windows/smb/ms17_010_eternalblue  [...]
+```
+
+⚠️ The first column is the module search index while the second is the module path. You can use either of them to select a module.
+
+<br>
+
+#### msfconsole — Inspect A Module
+
+You can query information about a module using:
+
+```shell!
+msf6> info module_name         # ex: exploit/xxx/...
+msf6> info module_search_index # ex: 0
+```
+
+<br>
+
+#### msfconsole — Select A Module
+
+To select a module, you can search for it and use the index/name, or you can pass something "unique" enough to `use`:
+
+```shell!
+msf6> use module_name           # ex: exploit/xxx/...
+msf6> use module_index          # ex: 0
+msf6> use ms17_010_eternalblue  # unique name
+```
+
+You can go back to where you were before selecting a module using: 
+
+```shell!
+exploit> back
+msf6> # search another module, etc.
+```
 </div><div>
 
-* [Searching exploits](_files/msf_search.md) (`search`)
-* [Learn about an exploit](_files/msf_info.md) (`info`)
 * [Select an exploit](_files/msf_use.md) (`use`, `back`)
 * [Configure an exploit](_files/msf_configuration.md) (`options`, `show`, `set`, `setg`, `unset`)
 * [Execute an exploit](_files/msf_exploit.md) (`run`/`exploit`, `check`)
@@ -205,6 +255,7 @@ You can automatically try to exploit [your privileges](/cybersecurity/red-team/s
 
 ```shell!
 meterpreter> getsystem -h # List exploits
+meterpreter> # steal_token <pid>???
 ```
 
 We often want to load and use [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md):
@@ -212,7 +263,9 @@ We often want to load and use [Mimikatz](/cybersecurity/red-team/tools/utilities
 ```shell!
 meterpreter> load kiwi
 meterpreter> migrate some_process_nt_system_compatible
-meterpreter> creds_all # retrieve all credentials
+meterpreter> creds_all    # retrieve all credentials
+meterpreter> lsa_dump_sam     # Admin  | Dump hashes from SAM
+meterpreter> lsa_dump_secrets # Admin? | Dump LSA secrets
 ```
 </div></div>
 
@@ -229,7 +282,8 @@ meterpreter> creds_all # retrieve all credentials
 You may be able to use these:
 
 ```shell!
-meterpreter> clearev   # clear logs
+meterpreter> clearev   # clear event logs
+meterpreter> clearav   # clear AV logs
 meterpreter> timestomp # mess with timestamps
 ```
 
@@ -409,14 +463,9 @@ Stuff that I found, but never read/used yet.
 * Commands:
   * Jobs are cancellable processes (`kill`): `run -j` (in bg), `jobs`, `jobs -i 0`
   * `exploit -k -z`
-* `get xxx`, `spool`, `arch`, 
-* `run autoroute -h` (autoroute module)
-  * socks
-  * proxychains
-  * `set PROXIES HTTP:127.0.0.1:8080`
+* `get xxx`, `spool`, `arch`,
 * `show advanced options`, `advanced`
 * `search type:exploit platform:windows target:xp smb`
-* `exploit/windows/smb/ms08_067_netapi`
 * `multi/ssh/sshexec`
 </div><div>
 
@@ -426,8 +475,6 @@ Stuff that I found, but never read/used yet.
 
 You can prepend any command using `grep` to filter lines. You can chain them too. `grep x grep y <command>`.
 
-* Meterpreter: `steal_token <pid>`
-* Hashdump not working on some Windows: `load kiwi` then `lsa_dump_sam` do the job. See also: `lsa_dump_secrets`.
 * Plugins: `/usr/share/metasploit-framework/plugins`
 * `use /path/to/xxx.rb` (tested: relative to exploit)
 </div></div>
