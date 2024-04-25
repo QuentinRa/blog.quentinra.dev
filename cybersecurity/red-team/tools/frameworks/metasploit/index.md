@@ -105,11 +105,52 @@ msf6> # search another module, etc.
 ```
 </div><div>
 
-* [Select an exploit](_files/msf_use.md) (`use`, `back`)
+#### msfconsole — Configure A Module
+
+Each module has options we need to set. You can list them with:
+
+```shell!
+exploit> options
+exploit> show options # same
+```
+
+Some options that you will often see are:
+
+* `LHOST IP`: your IP or network interface 
+* `RHOSTS IP`: your target IP
+* `RPORT PORT`: your port
+
+To set or unset them, you can use `set` and `unset`:
+
+```shell!
+exploit> set RHOSTS target_ip # see also: setg (global)
+exploit> unset RHOSTS         # see also: unset all
+```
+
+Some modules are more complex to configure. You may have to select a payload, a target, and edit advanced options.
+
+```shell!
+exploit> show payloads
+exploit> set payload 1 # or use payload_name/path
+```
+```shell!
+exploit> show targets 
+exploit> set target 2
+```
+
+```shell!
+exploit>  show advanced options # same as "advanced"
+```
+</div></div>
+
+<hr class="sep-both">
+
+<div class="row row-cols-lg-2"><div>
+
 * [Configure an exploit](_files/msf_configuration.md) (`options`, `show`, `set`, `setg`, `unset`)
 * [Execute an exploit](_files/msf_exploit.md) (`run`/`exploit`, `check`)
 
-Each remote access is wrapped in a [session](_files/msf_session.md). 
+Each remote access is wrapped in a [session](_files/msf_session.md).
 
 You can also configure and execute an exploit in one go:
 
@@ -117,6 +158,7 @@ You can also configure and execute an exploit in one go:
 exploit> run opt=value opt2=value [...]
 exploit> check opt=value opt2=value [...] 
 ```
+</div><div>
 </div></div>
 
 <hr class="sep-both">
@@ -464,7 +506,6 @@ Stuff that I found, but never read/used yet.
   * Jobs are cancellable processes (`kill`): `run -j` (in bg), `jobs`, `jobs -i 0`
   * `exploit -k -z`
 * `get xxx`, `spool`, `arch`,
-* `show advanced options`, `advanced`
 * `search type:exploit platform:windows target:xp smb`
 * `multi/ssh/sshexec`
 </div><div>
