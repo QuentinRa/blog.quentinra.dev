@@ -71,9 +71,11 @@ exploit> check opt=value opt2=value [...]
 
 <hr class="sep-both">
 
-## meterpreter
+## Meterpreter
 
 <div class="row row-cols-lg-2"><div>
+
+#### Meterpreter — Overview
 
 The meterpreter is one of the components of the metasploit framework. It's a reverse shell with common scripts loaded to make [Privilege escalation](/cybersecurity/red-team/s4.privesc/index.md) and [Post-exploitation](/cybersecurity/red-team/s5.post-exploitation/index.md) easier.
 
@@ -89,21 +91,53 @@ msf6 exploit('module_used')> sessions -i new_session_id
 # done
 meterpreter>
 ```
-</div><div>
 
 **Commands that you can use in the meterpreter are different based on the payload that you used.**
 
 Call `help` to see what you can use given the current payload.
 
-```bash
+```bash!
 meterpreter > help # list commands that you can use
 ```
+
+#### Meterpreter — Common Commands
+
+You can use many Linux-like commands such as:
+
+```shell!
+meterpreter> execute # execute a command
+meterpreter> ls # list files
+meterpreter> cd # move
+meterpreter> pwd # path to current folder
+meterpreter> cat file # print file
+meterpreter> edit file # open file in vim
+meterpreter> ps # see running processes
+meterpreter> exit
+```
+
+These are new convenient functions that were added:
+
+```shell!
+meterpreter> search -f pattern # search file by pattern
+meterpreter> search -f pattern / # search inside /
+meterpreter> download remote_path local_path # download
+meterpreter> upload local_path remote_path # upload
+```
+
+You can run commands on your machine in the meterpreter:
+
+```shell!
+meterpreter> lpwd # or getlwd, local path
+meterpreter> lcd path # move to local path
+meterpreter> lls path # list local files
+meterpreter> lcat file # print local file
+```
+</div><div>
 
 <br>
 
 **Common commands** 🪴
 
-* [Basic commands](_files/msf_common.md)
 * [Exploitation commands](_files/msf_exploitation.md)
 * [Post-exploitation commands](_files/msf_post.md)
 
