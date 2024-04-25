@@ -141,24 +141,35 @@ exploit> set target 2
 ```shell!
 exploit>  show advanced options # same as "advanced"
 ```
-</div></div>
 
-<hr class="sep-both">
+<br>
 
-<div class="row row-cols-lg-2"><div>
+#### msfconsole — Run Your Module
 
-* [Configure an exploit](_files/msf_configuration.md) (`options`, `show`, `set`, `setg`, `unset`)
-* [Execute an exploit](_files/msf_exploit.md) (`run`/`exploit`, `check`)
-
-Each remote access is wrapped in a [session](_files/msf_session.md).
-
-You can also configure and execute an exploit in one go:
+If there is an auxiliary script associated with our module, run it with:
 
 ```shell!
-exploit> run opt=value opt2=value [...]
-exploit> check opt=value opt2=value [...] 
+msf6> check # check xxx=yyy [...] to pass options on the fly
 ```
-</div><div>
+
+You can use either `run` or `exploit` to run your module.
+
+```shell!
+exploit> run
+exploit> exploit
+ls                (no prompt)
+meterpreter> ls # (meterpreter)
+```
+
+Each module leading to remote access is creating a session. Use `bg` or `background` to go back to metasploit. Use `sessions` to connect back.
+
+```shell!
+meterpreter> background # or bg
+exploit> sessions       # list sessions
+exploit> sessions -i 1  # go back to session 1
+exploit> sessions -k 1  # kill session 1
+```
+
 </div></div>
 
 <hr class="sep-both">
@@ -188,8 +199,8 @@ meterpreter>
 
 Call `help` to see what you can use given the current payload.
 
-```bash!
-meterpreter > help # list commands that you can use
+```shell!
+meterpreter> help # list commands that you can use
 ```
 
 <br>
