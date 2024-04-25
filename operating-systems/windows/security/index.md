@@ -122,6 +122,8 @@ The Local Security Authority (LSA) is a process responsible for security-related
 * Generating access tokens <small>(contains security information such as privileges, used by processes/... to authorize users)</small>
 
 It's managed by `lsass.exe`, the Local Security Authority Subsystem Service (LSASS).
+
+From what I understand, LSA secrets are entries in the registry that may contain cleartext passwords along the DPAPI key, etc.
 </div></div>
 
 <hr class="sep-both">

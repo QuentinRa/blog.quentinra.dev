@@ -9,7 +9,7 @@ Fuzzing refers to injecting data into something to study how it reacts. A keywor
 * Guessing a [subdomain](/cybersecurity/red-team/s2.discovery/techniques/websites/subdomains.md)? `FUZZ.example.com`
 * [Forced browsing](/cybersecurity/red-team/s2.discovery/techniques/websites/forced_browsing.md)? `example.com/FUZZ`
 * Find [Insecure Direct Object References](/cybersecurity/red-team/s2.discovery/techniques/websites/idor.md)? `example.com?id=FUZZ`
-* Find [Hidden Parameters](/cybersecurity/red-team/s2.discovery/techniques/websites/parameters.md)? `example.com?FUZZ=xxx`
+* Find [Hidden Parameters](/cybersecurity/red-team/s2.discovery/techniques/websites/hidden_parameters.md)? `example.com?FUZZ=xxx`
 * Find [Virtual Hosts](/cybersecurity/red-team/s2.discovery/techniques/websites/vhosts.md) `example.com` and `Host: FUZZ.example.com`
 * ...
 

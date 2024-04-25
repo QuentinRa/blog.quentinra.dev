@@ -12,7 +12,7 @@
 Most [diagrams](/tools-and-frameworks/projects/modeling/uml/_knowledge/index.md) on this website were made using PlantUML.
 </div><div>
 
-You can install the converter using [docker](/operating-systems/others/virtualization/docker/index.md):
+You can install the converter using [docker](/operating-systems/others/containers/docker/index.md):
 
 ```shell!
 $ docker pull plantuml/plantuml

