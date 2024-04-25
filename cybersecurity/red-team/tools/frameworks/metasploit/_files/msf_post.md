@@ -4,32 +4,6 @@
 
 <div class="row row-cols-md-2 mt-4"><div>
 
-You can pivot using a [SOCKS proxy server](/operating-systems/networking/protocols/socks.md).
-
-* ➡️ | `root`. Clear logs
-
-```shell!
-meterpreter> clearev
-```
-
-* ➡️  | `root`. Mess with timestamp to complicate forensics
-
-```shell!
-meterpreter> timestomp
-```
-
-* ➡️  | `not tested`. Check if we are in a VM
-
-```shell!
-meterpreter> run post/windows/gather/checkvm
-```
-
-* ➡️ Resolve a host from a name <small>(get IP from hostname)</small>
-
-```shell!
-meterpreter> resolve hostname
-```
-
 * ➡️ Random commands
 
 ```shell!
