@@ -55,7 +55,8 @@ $ nxc smb IP -u 'username' -p 'password' --ntds
 There is a network share on the domain controller: `dir <DCIP>\SYSVOL` associated with the folder `C:\Windows\SYSVOL\sysvol\`.
 
 It's used to store [GPO](/operating-systems/cloud/active-directory/_knowledge/index.md#permissions) and logon/logoff scripts while for the latter, the `NETLOGON` share may be used instead.
-</div><div>
+
+<br>
 
 #### NTLM
 
@@ -63,9 +64,12 @@ It's used to store [GPO](/operating-systems/cloud/active-directory/_knowledge/in
 
 When using a domain such as `\\domain`, Kerberos Authentication is used. When using an IP such as `\\IP`, NTLM may be used instead.
 
+<br>
+
 #### NetNTLM
 
 NetNTLM is a challenge-response protocol based on NTLM.
+</div><div>
 
 #### Kerberos
 
@@ -84,6 +88,8 @@ When the user wants to access a network resource, such as a shared folder or a d
 ```ps
 PS> klist # list current tickets available
 ```
+
+As SYSTEM on a domain-joined computer, we can extract the computer account Hash or Ticket to perform a [Pth](/cybersecurity/red-team/s4.privesc/index.md#pass-the-hash-pth)/[Ptt](/cybersecurity/red-team/s4.privesc/index.md#pass-the-hash-pth) attack.
 
 📚 The KRBTGT service account is used to encrypt/sign all Kerberos tickets granted within a given domain. Given the NT hash for the KRBTGT account, we can forge [golden/silver](/cybersecurity/red-team/s5.post-exploitation/index.md#-lateral-movement---goldensilver-ticket) tickets.
 </div></div>
@@ -670,6 +676,7 @@ Stuff that I found, but never read/used yet.
 * [AD mindmap orange](https://orange-cyberdefense.github.io/ocd-mindmaps/)
 * [bloodyAD](https://github.com/CravateRouge/bloodyAD)+[autobloody](https://github.com/CravateRouge/autobloody)
 * [Exchange AD Privesc](https://github.com/gdedrouas/Exchange-AD-Privesc). Real all mailboxes as admin. Dump all credentials in memory to get hundreds of them. [PrivExchange](https://github.com/dirkjanm/PrivExchange) vulnerability.
+* [Certipy](https://github.com/ly4k/Certipy) (AD CS)
 * Advanced Security Audit Policy
 </div><div>
 
