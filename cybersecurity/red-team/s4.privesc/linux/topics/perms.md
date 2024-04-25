@@ -157,9 +157,9 @@ DO NOT ASSUME ANYTHING. A user not in a group <small>(not in the `sudo` group</s
 
 * Users in the `adm` group are able to read all logs. Log management utilities such as [logrotate](https://linux.die.net/man/8/logrotate) may be vulnerable. See also: [logrotten](https://github.com/whotwagner/logrotten).
 
-* See also: [Docker socket/permissions](/operating-systems/others/virtualization/docker/index.md#docker-pentester-notes-)
+* See also: [Docker socket/permissions](/operating-systems/others/containers/docker/index.md#docker-pentester-notes-)
 
-* See also: [LXC/LXD permissions](/operating-systems/others/virtualization/lxc/index.md#pentester-notes-)
+* See also: [LXC/LXD permissions](/operating-systems/others/containers/lxc/index.md#pentester-notes-)
 </div><div>
 
 * Users in the `shadow` group can read `/etc/shadow`
