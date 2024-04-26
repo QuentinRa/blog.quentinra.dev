@@ -316,6 +316,12 @@ You can manually inspect objects in the MME interface, but it's quite a pain. Re
 
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 
+Many commands can only be run on a domain controller as a local administrator or the appropriate level of permissions.
+
+```ps
+PS> runas.exe /netonly /user:EXAMPLE.COM\username powershell.exe
+```
+
 Some commands require a password or a credential object:
 
 ```ps

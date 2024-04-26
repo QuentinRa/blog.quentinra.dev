@@ -36,6 +36,8 @@ You can try to [brute force credentials](/cybersecurity/red-team/s2.discovery/te
 ```shell!
 $ nxc winrm IP -u user.list -p password.list
 ```
+
+📚 We can upload files with `upload /path/to/file`.
 </div><div>
 
 From a Windows host, you can use:

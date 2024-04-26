@@ -183,10 +183,13 @@ Copy-paste may be an option, but not every file can be copy-pasted. One trick is
 
 #### services 🕳️
 
+[![active_directory_enumeration_attacks](../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
 You may use FTP/SCP/NFS/SMB/... if applicable.
 
 * [Simple SMB Server](/operating-systems/networking/protocols/smb.md) (Linux Host)
 * [Simple FTP Server](/operating-systems/networking/protocols/ftp.md#simple-ftp-server) (Linux Host)
+* [WinRM](/operating-systems/networking/protocols/winrm.md) can be used to upload files
 
 An alternative to SMB that uses HTTP is WebDav.
 

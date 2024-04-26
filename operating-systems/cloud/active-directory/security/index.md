@@ -141,6 +141,7 @@ In an [LDAP](/operating-systems/networking/protocols/ldap.md) environment such a
 
 ```ps
 $ ldapsearch -H ldap://DCIP -x -b "" -s base namingContexts
+$ ldapsearch -H ldap://DC01 -D "CN=username,CN=Users,DC=EXAMPLE,DC=COM" -w 'password' -b "DC=EXAMPLE,DC=COM" -s base netbiosname
 ```
 
 Some websites, which may be exposed to the outside, may use LDAP for authentication, so we can try [password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md) on them.
