@@ -26,6 +26,12 @@ $ bloodhound-python -u 'username@example.com' -p 'password' -d domain -dc DC_IP 
 <user sessions, users and groups, object properties, ACLS>
 $ zip -r results.zip *.json
 ```
+
+You can use [nxc](/cybersecurity/red-team/tools/cracking/auth/nxc.md) with LDAP credentials:
+
+```shell!
+$ nxc ldap DC01.example.com -u username -p password --bloodhound -ns DCIP --collection All # add DC01.example.com to /etc/hosts
+```
 </div><div>
 
 On your host, run [bloodhound](https://www.kali.org/tools/bloodhound/) and import the zip using 'Import Data.'
@@ -72,6 +78,7 @@ Useful queries:
 * Find Computers with Unsupported Operating Systems
 * Find Computers where Domain Users are Local Admin
 * Find Users with Foreign Domain Group Membership
+* Find Sessions On Hosts <small>(which means hashes we can dump)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -89,4 +96,10 @@ Stuff that I found, but never read/used yet.
 MATCH p1=shortestPath((u1:User)-[r1:MemberOf*1..]->(g1:Group)) MATCH p2=(u1)-[:CanPSRemote*1..]->(c:Computer) RETURN p2
 ```
 </div><div>
+
+Extract the list of usernames from bloodhound collected data. 
+
+```shell!
+$ cat XXX_users.json | jq | grep samaccountname | cut -d '"' -f4 > valid_users.txt
+```
 </div></div>

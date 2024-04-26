@@ -194,6 +194,8 @@ $ ldapsearch -H ldap:// -x -LLL -s base -b "" supportedSASLMechanisms
 
 #### Additional Notes
 
+You can use [nxc](/cybersecurity/red-team/tools/cracking/auth/nxc.md) for many operations, such as to collect everything for bloodhound, enumerate users, etc.
+
 Refer to [Active Directory Pentest LDAP](/operating-systems/cloud/active-directory/security/index.md#pentester--ldap-access) for additional notes.
 </div></div>
 

@@ -140,9 +140,7 @@ We can perform a [password spraying](/cybersecurity/red-team/s2.discovery/techni
 In an [LDAP](/operating-systems/networking/protocols/ldap.md) environment such as Active Directory, we can use:
 
 ```ps
-$ ldapsearch -h IP -x -b "dc=example,dc=com" -s sub "*" | grep -m 1 -B 10 pwdHistoryLength
-$ ldapsearch -h IP -x -b "dc=example,dc=com" -s sub "(&(objectclass=user))" | grep sAMAccountName: | cut -f2 -d" "
-$ python windapsearch.py --dc-ip IP -u "" -U
+$ ldapsearch -H ldap://DCIP -x -b "" -s base namingContexts
 ```
 
 Some websites, which may be exposed to the outside, may use LDAP for authentication, so we can try [password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md) on them.
@@ -156,7 +154,8 @@ Look for passwords stored using [reversible encryption](#passwords-stored-using-
 You can find hosts using [adidnsdump](https://github.com/dirkjanm/adidnsdump) <small>(0.9k ⭐)</small> to [dump DNS records](https://dirkjanm.io/getting-in-the-zone-dumping-active-directory-dns-with-adidnsdump/):
 
 ```ps
-$ adidnsdump -u example\\username ldap://DCIP
+$ pipx install git+https://github.com/dirkjanm/adidnsdump
+$ adidnsdump -u example.com\\username ldap://DCIP
 $ adidnsdump [...] -r # resolve records, remove '?' marks 
 ```
 
