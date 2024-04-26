@@ -524,19 +524,59 @@ rpcclient> lookupnames "example\Enterprise Admins"
 
 ## Active Directory On Linux
 
+<div class="row row-cols-lg-2"><div>
+
+#### Active Directory On Linux — Enumeration
+
 [![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 
-<div class="row row-cols-lg-2"><div>
-
-While uncommon, it's possible for Linux clients to be connected to Active Directory. We can use the `realm` command to dig information:
+While uncommon, it's possible for Linux clients to be connected to Active Directory. It's most likely the case if we kind a process such as `realm`, `sssd`, or `winbind` running. With `realm`, you can use:
 
 ```shell!
-$ realm list # see also: sssd, winbind
+$ realm list
   ...
   permitted-logins: username@xxx.yyy
   permitted-groups: XXX
 ```
+
+<br>
+
+#### Active Directory On Linux — Kerberos Configuration
+
+If Kerberos client is installed, you will be able to use `klist`. The configuration of kerberos is stored in `/etc/krb5.conf`:
+
+```text!
+[libdefaults]
+        default_realm = EXAMPLE.COM
+        dns_lookup_realm = false
+        dns_lookup_kdc = false
+        ticket_lifetime = 24h
+        renew_lifetime = 7d
+        forwardable = true
+
+[realms]
+    EXAMPLE.COM = {
+        kdc = DC01.EXAMPLE.COM
+        admin_server = DC01.EXAMPLE.COM
+    }
+
+[domain_realm]
+    .EXAMPLE.COM = EXAMPLE.COM
+    EXAMPLE.COM = EXAMPLE.COM
+```
+
+And the files `/etc/hosts` and `/etc/resolv.conf` must be set so that we can at the very least resolve `DC01.EXAMPLE.COM`.
+
+```
+$ cat /etc/hosts
+172.16.5.5 EXAMPLE.COM
+172.16.5.5 DC01 DC01.EXAMPLE.COM
+```
+
+</div><div>
+
+#### 
 
 [Kerberos tickets](#kerberos) are stored in `/tmp` as ccache files. The current ticket is set by setting the `KRB5CCNAME` environment variable.
 
@@ -544,11 +584,10 @@ $ realm list # see also: sssd, winbind
 $ export KRB5CCNAME=FILE:/tmp/krb5cc_xxx_yyy
 $ export KRB5CCNAME=FILE:/var/lib/sss/db/ccache_XXX.YYY
 $ klist # information about the current ticket
-$ impacket-ticketConverter xxx yyy.kirbi # from ccache to kirbi
+Default principal: XXX@EXAMPLE.COM
 ```
 
 ☠️ We can use someone else's ticket as long as we got `rw` on it.
-</div><div>
 
 You can use the ccache with many of impacket tools:
 

@@ -499,8 +499,7 @@ class SecretFactory:
         try:
             cipher = AES.new(self.KEY, AES.MODE_ECB)
             payload = json.dumps(payload)
-            print(pad(payload.encode('unicode_escape'), 16))
-            return cipher.encrypt(pad(payload.encode(), 16))
+            return cipher.encrypt(pad(payload.encode('unicode_escape'), 16))
         except Exception:
             return b'Oops, something went wrong.'
 
@@ -518,8 +517,7 @@ class SecretFactory:
             if data['username'] == 'admin' and data['can_read_the_flag']:
                 message = self.flag
         except Exception as e:
-            print(e)
-            pass
+              pass
         return message.decode()
 
 s = SecretFactory()
@@ -533,7 +531,7 @@ s = SecretFactory()
 # Part8: 8d481807d004c9162876906be562026e <empty padding>
 ciphertext = s.get_token({"username": 'oo{"username":"admin","can_read_the_flag":true,"dummy":12}aa', "can_read_the_flag": False})
 ciphertext_parts = [ciphertext[chunk:chunk+16].hex() for chunk in range(0, len(ciphertext), 16)]
-# Merge Part2 + Part3 + Part4 + Part5 + Part 7 (last block)
+# Merge Part2 + Part3 + Part4 + Part5 + Part 8 (last block)
 fake_ciphertext = bytes.fromhex(''.join(ciphertext_parts[1:5]) + ciphertext_parts[-1])
 print(s.get_the_flag(fake_ciphertext))
 ```

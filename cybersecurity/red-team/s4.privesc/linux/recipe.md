@@ -42,7 +42,7 @@ Look for interesting <small>(internal or not)</small> network services:
 $ netstat -antp | grep -i list
 ```
 
-As a reminder, you may use tunneling tools to access internal local websites such as [chisel](/cybersecurity/red-team/tools/utilities/tunneling/chisel.md) or [ssh](/operating-systems/networking/protocols/ssh.md) to access them.
+As a reminder, you may use tunneling tools to access internal websites and internal hosts. Refer to [pivoting](/cybersecurity/red-team/s5.post-exploitation/index.md#pivoting-to-another-host-).
 
 Finally, look for users and services in `/etc/passwd`. Also, go look in `/home` for user homes, and try to see if you can access them.
 
