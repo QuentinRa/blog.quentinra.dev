@@ -48,6 +48,11 @@ client> querygroup <hexid>
 
 We can also use [samrdump](tools/impacket.md#samrdump) to list users. If no users are found, we may still be able to find users by brute forcing hexadecimal IDs.
 
+```shell!
+$ impacket-lookupsid username:password@IP
+$ impacket-lookupsid -domain-sids username:password@IP
+```
+
 ```ps
 $ for i in $(seq 500 1100);do rpcclient [...] -c "queryuser 0x$(printf '%x\n' $i)" | grep "User Name\|user_rid\|group_rid" && echo "";done
 $ c=""; for i in $(seq 500 1000);do c="${c}queryuser 0x$(printf '%x\n' $i);"; done; rpcclient [...] -c "${c}exit" | grep "User Name\|user_rid\|group_rid"

