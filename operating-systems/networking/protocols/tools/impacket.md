@@ -4,23 +4,34 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[impacket](https://github.com/fortra/impacket) <small>(12.5k ⭐)</small> is a collection of [python](/programming-languages/high-level/scripting/python/index.md) classes for working with network protocols. They are already installed on Kali:
+[impacket](https://github.com/fortra/impacket) <small>(12.7k ⭐)</small> is a collection of [python](/programming-languages/high-level/scripting/python/index.md) classes for working with network protocols. They are already installed on Kali:
 
 ```shell!
-$ impacket-secretsdump # secretsdump.py
-$ ...
+$ impacket-secretsdump -h # Example of calling a script
 ```
 
-You may install them manually too:
+You could also install them using `pipx`:
 
 ```shell!
-$ # todo: use local install or pipx for others
-$ sudo git clone https://github.com/fortra/impacket /opt/impacket
-$ cd /opt/impacket
-$ pip install -r requirements.txt
-$ pip install .
-$ python /opt/impacket/examples/secretsdump.py [...]
+$ pipx install git+https://github.com/fortra/impacket
+$ secretsdump.py -h # Example of calling a script
 ```
+</div><div>
+
+You may also want to install them manually <small>(dirty/may not work)</small>:
+
+```shell!
+$ DEST="$HOME/tools/impacket"
+$ git clone -b "master" "https://github.com/fortra/impacket" $DEST
+$ pip install --user -r $DEST/requirements.txt
+$ pip install --user $DEST
+$ python $DEST/examples/secretsdump.py [...]
+```
+</div></div>
+
+<hr class="sep-both">
+
+<div class="row row-cols-lg-2"><div>
 
 <br>
 
