@@ -98,7 +98,6 @@ Stuff that I found, but never read/used yet.
 
 * Progressive Web Apps (PWA)
 * [Server Side Includes](https://en.wikipedia.org/wiki/Server_Side_Includes) (SSI)
-* WebAssembly
 * [WAI](https://www.w3.org/WAI/) + [WebAIM](https://webaim.org/intro/) + [Wave](https://wave.webaim.org/) + VisBug
 </div><div>
 
@@ -108,5 +107,4 @@ Stuff that I found, but never read/used yet.
 * [Modern web](https://modern-web.dev/guides/)
 * [Google Code Labs](https://codelabs.developers.google.com/)
 * [Firebase](https://firebase.google.com/)
-* thick clients
 </div></div>
