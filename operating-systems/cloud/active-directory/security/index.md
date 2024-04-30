@@ -136,11 +136,14 @@ We can perform a [password spraying](/cybersecurity/red-team/s2.discovery/techni
 
 [![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![breachingad](../../../../cybersecurity/_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
+[![windows_kerberoast](../../../../cybersecurity/_badges/rootme/realist/windows_kerberoast.svg)](https://www.root-me.org/en/Challenges/Realist/Windows-KerbeRoast)
 
 In an [LDAP](/operating-systems/networking/protocols/ldap.md) environment such as Active Directory, we can use:
 
 ```ps
-$ ldapsearch -H ldap://DCIP -x -b "" -s base namingContexts
+$ ldapsearch -H ldap://DCIP -x -b "" -s base namingContexts # all domains
+$ ldapsearch -H ldap://DCIP -x -b "" -s base defaultNamingContext # one domain
+$ ldapsearch -H ldap://DCIP -x -b "" -s base netbiosname # domain netbios name
 $ ldapsearch -H ldap://DC01 -D "CN=username,CN=Users,DC=EXAMPLE,DC=COM" -w 'password' -b "DC=EXAMPLE,DC=COM" -s base netbiosname
 ```
 
@@ -395,6 +398,7 @@ Refer to [cracking Kerberos Pre Auth Hash](/cybersecurity/cryptography/algorithm
 
 [![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![windows_ldap_user_kerberoastable](../../../../cybersecurity/_badges/rootme/forensic/windows_ldap_user_kerberoastable.svg)](https://www.root-me.org/en/Challenges/Forensic/Windows-LDAP-User-KerbeRoastable)
+[![windows_kerberoast](../../../../cybersecurity/_badges/rootme/realist/windows_kerberoast.svg)](https://www.root-me.org/en/Challenges/Realist/Windows-KerbeRoast)
 
 Domain accounts are often used to run services. They may have been given many privileges. Each service instance is associated with a service account using a **Service Principal Names (SPN)**.
 
@@ -727,6 +731,46 @@ $ python3 getnthash.py -key <from gettgt> example.com\COMPUTE_ACCOUNT_NAME\$
 #### Zerologon
 
 ...
+</div></div>
+
+<hr class="sep-both">
+
+## Additional Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### KRB_AP_ERR_SKEW(Clock skew too great)
+
+The error `Kerberos SessionError: KRB_AP_ERR_SKEW(Clock skew too great)` indicates that there is a difference of more than five minutes <small>(default)</small> between your host and the target domain controller clock.
+
+To get the remote server time:
+
+```shell!
+$ sudo apt install -y rdate
+$ rdate -p -n DCIP # get the remote host date (Port 37/UDP)
+```
+
+```shell!
+$ nmap --script smb2-time DCIP -Pn -p 445 # Port 445/TCP
+```
+
+To set the date:
+
+```shell!
+$ sudo apt install -y faketime
+$ faketime '2024-04-24 01:22:35' bash # zsh on Kali
+bash> # date is now set
+```
+
+You might use these, while they may not work much:
+
+```shell!
+$ sudo ntpdate -qu DCIP # Port 123/UDP?
+$ sudo date MMDDHHMMSSYYYY
+$ sudo rdate -n DCIP
+$ net time -S DCIP
+```
+</div><div>
 </div></div>
 
 <hr class="sep-both">
