@@ -242,7 +242,7 @@ Weird niche thing. Code stored as an image.
 ```ps
 $ DEST="$HOME/tools/repiet"    
 $ git clone -b "master" https://github.com/boothby/repiet $DEST
-$ cd $DEST && wget "https://github.com/quentinra/blog.quentinra.dev/tree/master/cybersecurity/purple-team/files/_files/repiet.patch" && git apply repiet.patch && cd -
+$ cd $DEST && wget "https://raw.githubusercontent.com/QuentinRa/blog.quentinra.dev/master/cybersecurity/purple-team/files/_files/repiet.patch" && git apply repiet.patch && cd -
 $ pipx install $DEST
 $ repiet image --codel_size <identified_by_zsteg> # and execute the code
 ```

@@ -292,6 +292,16 @@ Random wordlists about characters.
 ```text!
 /usr/share/seclists/Fuzzing/alphanum-case.txt
 ```
+
+#### Countries/Cities
+
+You can use pycountry to generate a list of country codes ([output](https://github.com/QuentinRa/blog.quentinra.dev/blob/master/cybersecurity/red-team/_knowledge/topics/_files/cc.txt)).
+
+```text!
+import pycountry
+country_codes = [country.alpha_2.lower() for country in pycountry.countries]
+print('\n'.join(country_codes))
+```
 </div><div>
 
 #### Parameters

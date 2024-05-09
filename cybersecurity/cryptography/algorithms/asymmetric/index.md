@@ -193,7 +193,7 @@ You can install and use [RsaCtfTool](https://github.com/RsaCtfTool/RsaCtfTool) <
 ```ps
 $ DEST="$HOME/tools/rsactftool"
 $ git clone -b "master" https://github.com/RsaCtfTool/RsaCtfTool $DEST
-$ wget "https://github.com/quentinra/blog.quentinra.dev/cybersecurity/cryptography/algorithms/asymmetric/rsatool_fix_setup_py.patch"
+$ wget "https://raw.githubusercontent.com/QuentinRa/blog.quentinra.dev/master/cybersecurity/cryptography/algorithms/asymmetric/rsatool_fix_setup_py.patch"
 $ git apply rsatool_fix_setup_py.patch
 $ pipx install $DEST
 $ RsaCtfTool.py -h

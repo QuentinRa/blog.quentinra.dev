@@ -10,11 +10,16 @@
 * 🌍 Do not name a workstation after its business unit <small>(i.g. sales-xxx)</small>
 * 🏠 Do not use easy to guess usernames <small>(i.g. firstname.lastname)</small>
 * 🪺 Add the fewest services on your DC <small>(i.g. no ISS/WSUS...)</small>
-</div><div>
-
 * 🏄‍♂️ Install the least ISS modules
 * 🛡️ Use a strong password policy
+</div><div>
 
+* 🫧 Rotate service/computer accounts' passwords periodically
+* 👮 Implement split tiers for administrative accesses
+* 🪓 Cleanup privileged groups periodically
+* 📚 Use the [Protected Users Security Group](https://learn.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/protected-users-security-group) when appropriate. It can lead to authentication issues and account lockout.
+* ⚠️ Use gMSA instead of "normal" service accounts.
+* 🚧 Disable print spooler, NTLM authentication on DC. Enable SMB signing and LDAP signing. Use encrypted traffic.
 </div></div>
 
 <hr class="sep-both">
