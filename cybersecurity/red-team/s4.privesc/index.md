@@ -263,7 +263,7 @@ $ grep -rnw "ssh-rsa" / 2>/dev/null | grep ":1"     # public keys
 $ find / -wholename "*.git/config" 2> /dev/null | xargs grep "url"
 ```
 
-Look for web application sessions:
+Look for web application sessions <small>(+ in database)</small>:
 
 ```ps
 $ cat /etc/php/X.X/cli/php.ini | grep 'session.save_path'

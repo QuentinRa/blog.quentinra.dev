@@ -58,7 +58,7 @@ Stuff that I found, but never read/used yet.
 * Cookie Stealing
 * Cookie Scrapping
 * MangaDex 2020
+* HttpOnly: cannot be accessed in scripts
+* Validity of cookies, add info such as IP/...
 </div><div>
-
-
 </div></div>

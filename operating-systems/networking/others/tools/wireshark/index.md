@@ -117,4 +117,8 @@ Stuff that I found, but never read/used yet.
 
 * [wireshark](https://unit42.paloaltonetworks.com/wireshark-workshop-videos/)
 </div><div>
+
+[![session_security](../../../../../cybersecurity/_badges/htb/session_security.svg)](https://academy.hackthebox.com/course/preview/session-security)
+
+Wireshark search filter, packet bytes String and enter the cookie name to find it in packets.
 </div></div>
