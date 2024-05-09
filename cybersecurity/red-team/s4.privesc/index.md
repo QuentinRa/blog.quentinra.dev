@@ -344,7 +344,7 @@ CMD> dir /S /B *pass*.txt == *pass*.xml == *pass*.ini == *cred* == *vnc* == *.co
 PS> Get-ChildItem C:\ -Recurse -Include *.rdp, *.config, *.vnc, *.cred -ErrorAction Ignore
 ```
 
-Refer to [these notes for SAM, LSA, Credential Manager](/operating-systems/windows/security/index.md#windows-pentester-notes-):
+Refer to [these notes for SAM, LSA, Credential Manager](/operating-systems/windows/security/index.md#windows-pentester-notes-) and [tickets](/operating-systems/cloud/active-directory/security/index.md#kerberos):
 
 ```shell!
 mimikatz# vault::list

