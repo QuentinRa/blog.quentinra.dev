@@ -161,6 +161,7 @@ Stuff that I found, but never read/used yet.
 
 * `/etc/tomcat9/<config files>`
 * `web.xml`, `tomcat-users.xml`
+* `SESSIONS.ser`
 
 While not really related:
 

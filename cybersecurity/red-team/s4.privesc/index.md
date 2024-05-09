@@ -263,6 +263,14 @@ $ grep -rnw "ssh-rsa" / 2>/dev/null | grep ":1"     # public keys
 $ find / -wholename "*.git/config" 2> /dev/null | xargs grep "url"
 ```
 
+Look for web application sessions:
+
+```ps
+$ cat /etc/php/X.X/cli/php.ini | grep 'session.save_path'
+$ cat /etc/php/X.X/apache2/php.ini | grep 'session.save_path'
+$ find / -name "SESSIONS.ser" 2> /dev/null
+```
+
 🔐 As root, check Linux password history file: `/etc/security/opasswd`.
 </div><div>
 
