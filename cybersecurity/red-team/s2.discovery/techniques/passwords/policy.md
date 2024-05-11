@@ -1,6 +1,7 @@
 # Password Policy
 
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+[![broken_authentication](../../../../_badges/htb/broken_authentication.svg)](https://academy.hackthebox.com/course/preview/broken-authentication)
 [![adenumeration](../../../../_badges/thm/adenumeration.svg)](https://tryhackme.com/r/room/adenumeration)
 
 <div class="row row-cols-lg-2"><div>
@@ -81,4 +82,18 @@ You can use [PowerView](/cybersecurity/red-team/tools/utilities/windows/powerspl
 ```shell!
 PS> Get-DomainPolicy
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Website Password Policy
+
+<div class="row row-cols-lg-2"><div>
+
+#### Register Page
+
+[![broken_authentication](../../../../_badges/htb/broken_authentication.svg)](https://academy.hackthebox.com/course/preview/broken-authentication)
+
+The password policy is often shown, directly or indirectly when registering an account. If indirect, you have to register an account with a weak password <small>(`a`, `a0`, `a0!`, etc.)</small> and read expose it bit by bit.
+</div><div>
 </div></div>

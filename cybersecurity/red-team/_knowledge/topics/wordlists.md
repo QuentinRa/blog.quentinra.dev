@@ -153,6 +153,7 @@ aa
 
 ## Tune wordlists
 
+[![broken_authentication](../../../_badges/htb/broken_authentication.svg)](https://academy.hackthebox.com/course/preview/broken-authentication)
 [![passwordattacks](../../../_badges/thmp/passwordattacks.svg)](https://tryhackme.com/room/passwordattacks)
 
 <div class="row row-cols-lg-2"><div>
@@ -174,7 +175,13 @@ $ uniq -u swordlist > uwordlist   # duplicates
 ⚠️ To remove duplicates, you must sort the list first.
 </div><div>
 
-If worth mentioning again that tools such as [JohnTheReaper](/cybersecurity/cryptography/algorithms/hashing/cracking/john.md#wordlist-generation) or [hashcat](/cybersecurity/cryptography/algorithms/hashing/cracking/hashcat.md#wordlist-generation) may have the capabilities to perform these operations.
+Chain greps when you need "at least one" of something.
+
+```shell!
+$ grep "^.{20}$" wordlist | grep "[A-Z]" # 20 chars, at least one upper
+```
+
+It's worth mentioning again that tools such as [JohnTheReaper](/cybersecurity/cryptography/algorithms/hashing/cracking/john.md#wordlist-generation) or [hashcat](/cybersecurity/cryptography/algorithms/hashing/cracking/hashcat.md#wordlist-generation) have the capabilities to perform some  operations.
 </div></div>
 
 <hr class="sep-both">
@@ -218,11 +225,13 @@ Sorted by recommended order of usage.
 #### Accounts
 
 [![password_attacks](../../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+[![broken_authentication](../../../_badges/htb/broken_authentication.svg)](https://academy.hackthebox.com/course/preview/broken-authentication)
 
 **Usernames**
 
 ```text!
 admin, administrator, wpadmin, root, adm
+/usr/share/seclists/Usernames/top-usernames-shortlist.txt
 /usr/share/seclists/Usernames/Names/names.txt
 /usr/share/seclists/Usernames/top-usernames-shortlist.txt
 ```
@@ -234,6 +243,7 @@ admin, administrator, wpadmin, root, adm
 ```text!
 /usr/share/seclists/Passwords/Common-Credentials/best110.txt
 /usr/share/wordlists/fasttrack.txt
+/usr/share/seclists/Passwords/Leaked-Databases/rockyou-50.txt
 /usr/share/wordlists/rockyou.txt
 ```
 
