@@ -62,6 +62,7 @@ $ curl -I https://example.com/  # query headers using cURL
 
 ## Analyze cookies
 
+[![broken_authentication](../../../../_badges/htb/broken_authentication.svg)](https://academy.hackthebox.com/course/preview/broken-authentication)
 [![httpindetail](../../../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
 [![adventofcyber2](../../../../_badges/thm/adventofcyber2/day1.svg)](https://tryhackme.com/room/adventofcyber2)
 [![unbakedpie](../../../../_badges/thm-p/unbakedpie.svg)](https://tryhackme.com/r/room/unbakedpie)

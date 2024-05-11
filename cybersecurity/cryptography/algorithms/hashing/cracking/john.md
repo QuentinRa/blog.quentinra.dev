@@ -121,6 +121,8 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* `--incremental` mode
+Generate a wordlist
+
+* `john --incremental=LowerNum --min-length=6 --max-length=6 --stdout # all 6 characters strings`
 </div><div>
 </div></div>
