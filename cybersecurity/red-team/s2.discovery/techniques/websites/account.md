@@ -35,7 +35,7 @@ Refer to use [Fuzzing](fuzzing.md) or [network authentification tools](/cybersec
 
 <hr class="sep-both">
 
-## Additional Notes
+## Username Enumeration
 
 <div class="row row-cols-lg-2"><div>
 
@@ -44,6 +44,10 @@ Refer to use [Fuzzing](fuzzing.md) or [network authentification tools](/cybersec
 [![broken_authentication](../../../../_badges/htb/broken_authentication.svg)](https://academy.hackthebox.com/course/preview/broken-authentication)
 
 Some websites return a different message when the username was not found and when the password is incorrect, helping in enumeration.
+
+Most websites are computing the hash at each login. If they are using an algorithm "slow enough" <small>(rare)</small> and only doing it if a user exists, then delays in responses may indicate that a user exists.
+
+While rare, some websites prefill fields only if the user exists.
 
 <br>
 
@@ -54,4 +58,23 @@ Some websites return a different message when the username was not found and whe
 We can't register an account with an already taken username or email. It can be exploited to enumerate usernames.
 </div><div>
 
+#### Password Forgot/Reset Page
+
+[![broken_authentication](../../../../_badges/htb/broken_authentication.svg)](https://academy.hackthebox.com/course/preview/broken-authentication)
+
+Websites may indicate if a user exists when we try to reset a password.
+</div></div>
+
+<hr class="sep-both">
+
+## Log In Bruteforce
+
+<div class="row row-cols-lg-2"><div>
+
+#### Rate Limit
+
+[![broken_authentication](../../../../_badges/htb/broken_authentication.svg)](https://academy.hackthebox.com/course/preview/broken-authentication)
+
+Some websites are implementing a rate timer often using a super increasing wait time. If they are checking the `X-Forwarded-For` to avoid blocking proxies, it means we can arbitrary pick an IP to "ban".
+</div><div>
 </div></div>

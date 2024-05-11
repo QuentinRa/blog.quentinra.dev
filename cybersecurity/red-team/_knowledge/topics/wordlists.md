@@ -255,10 +255,11 @@ admin, administrator, wpadmin, root, adm
 /usr/share/seclists/Passwords/Default-Credentials/ftp-betterdefaultpasslist.txt
 /usr/share/metasploit-framework/data/wordlists/http_default_pass.txt
 /usr/share/seclists/Passwords/Default-Credentials/*passlist.txt
+/usr/share/seclists/Passwords/Default-Credentials/default-passwords.csv
 # see also: short username/password wordlists
 ```
 
-📚 You might want to check out [cirt](https://cirt.net/passwords), [default-password](https://default-password.info/), and [data recovery](https://datarecovery.com/rd/default-passwords/). See also: [Default Credentials Cheat Sheet](https://github.com/ihebski/DefaultCreds-cheat-sheet) <small>(5.1k ⭐)</small>.
+📚 You might want to check out [cirt](https://cirt.net/passwords), [default-password](https://default-password.info/), [data recovery](https://datarecovery.com/rd/default-passwords/), [cirt](https://www.cirt.net/passwords), and [scadapass](https://github.com/scadastrangelove/SCADAPASS/blob/master/scadapass.csv). See also: [Default Credentials Cheat Sheet](https://github.com/ihebski/DefaultCreds-cheat-sheet) <small>(5.1k ⭐)</small>.
 </div></div>
 
 <hr class="sep-both">
