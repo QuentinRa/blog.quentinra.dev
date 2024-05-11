@@ -1,11 +1,12 @@
 # Hypertext Transfer Protocol (HTTP)
 
+[![webrequests](../../../cybersecurity/_badges/htb/webrequests.svg)](https://academy.hackthebox.com/course/preview/web-requests)
+[![introductiontowebapplications](../../../cybersecurity/_badges/htb/introductiontowebapplications.svg)](https://academy.hackthebox.com/course/preview/introduction-to-web-applications)
+[![broken_authentication](../../../cybersecurity/_badges/htb/broken_authentication.svg)](https://academy.hackthebox.com/course/preview/broken-authentication)
 [![httpindetail](../../../cybersecurity/_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
 [![protocolsandservers](../../../cybersecurity/_badges/thmp/protocolsandservers.svg)](https://tryhackme.com/room/protocolsandservers)
 [![networksecurityprotocols](../../../cybersecurity/_badges/thmp/networksecurityprotocols.svg)](https://tryhackme.com/room/networksecurityprotocols)
 [![wireshark](../../../cybersecurity/_badges/thmp/wireshark.svg)](https://tryhackme.com/room/wireshark)
-[![webrequests](../../../cybersecurity/_badges/htb/webrequests.svg)](https://academy.hackthebox.com/course/preview/web-requests)
-[![introductiontowebapplications](../../../cybersecurity/_badges/htb/introductiontowebapplications.svg)](https://academy.hackthebox.com/course/preview/introduction-to-web-applications)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -55,6 +56,7 @@ In every HTTP/HTTPS request/response, there are headers that are set both by the
 * `Accept`: media types that the client can understand
 * `User-Agent`: describe the client initiating the request
 * `X-Forwarded-For`/`CF-Connecting-IP`: can be used to find the client IP when the client is behind an HTTP proxy or a load balancer
+* `Authorization`: http basic auth, JWT, etc.
 * ...
 
 ##### HTTP Payload

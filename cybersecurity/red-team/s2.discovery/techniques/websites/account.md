@@ -39,7 +39,7 @@ Refer to use [Fuzzing](fuzzing.md) or [network authentification tools](/cybersec
 
 <div class="row row-cols-lg-2"><div>
 
-#### Login Page
+#### Username Enumeration — Login Page
 
 [![broken_authentication](../../../../_badges/htb/broken_authentication.svg)](https://academy.hackthebox.com/course/preview/broken-authentication)
 
@@ -51,14 +51,14 @@ While rare, some websites prefill fields only if the user exists.
 
 <br>
 
-#### Register Page
+#### Username Enumeration — Register Page
 
 [![broken_authentication](../../../../_badges/htb/broken_authentication.svg)](https://academy.hackthebox.com/course/preview/broken-authentication)
 
 We can't register an account with an already taken username or email. It can be exploited to enumerate usernames.
 </div><div>
 
-#### Password Forgot/Reset Page
+#### Username Enumeration — Password Forgot/Reset Page
 
 [![broken_authentication](../../../../_badges/htb/broken_authentication.svg)](https://academy.hackthebox.com/course/preview/broken-authentication)
 
@@ -67,14 +67,50 @@ Websites may indicate if a user exists when we try to reset a password.
 
 <hr class="sep-both">
 
-## Log In Bruteforce
+## Log In Page
 
 <div class="row row-cols-lg-2"><div>
 
-#### Rate Limit
+#### Log In Page — Rate Limit
 
 [![broken_authentication](../../../../_badges/htb/broken_authentication.svg)](https://academy.hackthebox.com/course/preview/broken-authentication)
 
 Some websites are implementing a rate timer often using a super increasing wait time. If they are checking the `X-Forwarded-For` to avoid blocking proxies, it means we can arbitrary pick an IP to "ban".
 </div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## Password Reset
+
+<div class="row row-cols-lg-2"><div>
+
+#### Password Reset — Predictable Token
+
+[![broken_authentication](../../../../_badges/htb/broken_authentication.svg)](https://academy.hackthebox.com/course/preview/broken-authentication)
+
+Reset tokens associated with a request to reset a user account should be randomly generated. Some are using predictable values:
+
+* 🪓 Some hashing function: `md5(username)`
+* 🗺️ Some short number: `12345`
+* 🚧 Some known values to the user, such as with [CVE-2016-0783](https://nvd.nist.gov/vuln/detail/CVE-2016-0783)
+
+```php!
+$time = intval(microtime(true) * 1000);
+$token = md5($username . $time);
+```
+</div><div>
+
+Most servers are returning a Date Header with the date of the server. We only need to brute force the microsecond.
+
+```py
+time_string = "Sat, 04 May 2024 09:35:52 GMT"
+format_string = "%a, %d %b %Y %H:%M:%S %Z"
+dt_object = datetime.datetime.strptime(time_string, format_string)
+dt_object = pytz.timezone('GMT').localize(dt_object)
+base_epoch_ms = int(dt_object.timestamp() * 1000)
+for epoch_ms in range(base_epoch_ms - 1000, base_epoch_ms + 1000 + 1):
+    token = hashlib.md5(('username' + str(epoch_ms)).encode()).hexdigest()
+    # test the token
+```
 </div></div>
