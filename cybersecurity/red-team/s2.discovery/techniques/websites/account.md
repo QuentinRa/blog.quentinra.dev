@@ -93,13 +93,13 @@ Reset tokens associated with a request to reset a user account should be randoml
 
 * 🪓 Some hashing function: `md5(username)`
 * 🗺️ Some short number: `12345`
+* 🪦 Some temporary password based on known data
 * 🚧 Some known values to the user, such as with [CVE-2016-0783](https://nvd.nist.gov/vuln/detail/CVE-2016-0783)
 
 ```php!
 $time = intval(microtime(true) * 1000);
 $token = md5($username . $time);
 ```
-</div><div>
 
 Most servers are returning a Date Header with the date of the server. We only need to brute force the microsecond.
 
@@ -113,4 +113,23 @@ for epoch_ms in range(base_epoch_ms - 1000, base_epoch_ms + 1000 + 1):
     token = hashlib.md5(('username' + str(epoch_ms)).encode()).hexdigest()
     # test the token
 ```
+</div><div>
+
+#### Password Reset — Security Questions
+
+[![broken_authentication](../../../../_badges/htb/broken_authentication.svg)](https://academy.hackthebox.com/course/preview/broken-authentication)
+
+Some websites are allowing security questions, often from a pre-determined set of questions to avoid users using weak questions.
+
+The problem is that some questions can be easily answered using OSINT or brute forced when the question has limited answers.
+
+Refer to [security question wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md).
+
+<br>
+
+#### Password Reset — Birthday_problem
+
+[![broken_authentication](../../../../_badges/htb/broken_authentication.svg)](https://academy.hackthebox.com/course/preview/broken-authentication)
+
+If an application is using a lot of tokens and the tokens are not long enough, two users may get the same token [as per this](https://en.wikipedia.org/wiki/Birthday_problem).
 </div></div>

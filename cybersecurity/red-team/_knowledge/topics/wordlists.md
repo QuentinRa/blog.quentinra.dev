@@ -315,6 +315,14 @@ print('\n'.join(country_codes))
 ```
 </div><div>
 
+#### Security Questions
+
+Refer to seclists or [imsky](https://github.com/imsky/wordlists/) <small>(0.3k ⭐)</small>.
+
+```text!
+/usr/share/seclists/Miscellaneous/security-question-answers/html-colors.txt
+```
+
 #### Parameters
 
 Common wordlists to find hidden query/body parameters:
