@@ -262,6 +262,8 @@ You can use [onectf axfr](#dns-zones--zone-transfer) as introduced in the AXFR s
 #### Exploitation
 
 * **Domain Takeover**: an existing record points to a deleted domain. If the hackers can purchase it, then may perform social engineering attacks <small>(or more advanced attacks)</small>. [can-i-take-over-xyz](https://github.com/EdOverflow/can-i-take-over-xyz) <small>(4.4k ⭐)</small>
+
+* **DNS Rebinding**: refer to SSRF Mitigations for notes.
 </div><div>
 
 #### Well-Known Attacks
