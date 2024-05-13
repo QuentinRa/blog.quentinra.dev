@@ -1,5 +1,7 @@
 # Insecure Direct Object References (IDOR)
 
+[![web_attacks](../../../../_badges/htb/web_attacks.svg)](https://academy.hackthebox.com/course/preview/web-attacks)
+[![modern_web_exploitation_techniques](../../../../_badges/htb/modern_web_exploitation_techniques.svg)](https://academy.hackthebox.com/course/preview/modern-web-exploitation-techniques)
 [![idor](../../../../_badges/thm/idor.svg)](https://tryhackme.com/room/idor)
 [![introwebapplicationsecurity](../../../../_badges/thm/introwebapplicationsecurity.svg)](https://tryhackme.com/room/introwebapplicationsecurity)
 [![owasptop10](../../../../_badges/thm/owasptop10.svg)](https://tryhackme.com/room/owasptop10)
@@ -10,7 +12,6 @@
 [![corridor](../../../../_badges/thm-p/corridor.svg)](https://tryhackme.com/room/corridor)
 [![cap](../../../../_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
 [![api_broken_access](../../../../_badges/rootme/web_server/api_broken_access.svg)](https://www.root-me.org/en/Challenges/Web-Server/API-Broken-Access)
-[![web_attacks](../../../../_badges/htb/web_attacks.svg)](https://academy.hackthebox.com/course/preview/web-attacks)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -30,4 +31,6 @@ The best way to test for IDOR is to create two accounts, and see if from one, yo
 * It may be possible to reset someone's else password
 
 * It may be possible to modify someone's else account information such as a profile item to perform a [XSS](/cybersecurity/red-team/s3.exploitation/vulns/web/xss.md) attack
+
+* Try not to follow redirects to see if you can exploit something.
 </div></div>
