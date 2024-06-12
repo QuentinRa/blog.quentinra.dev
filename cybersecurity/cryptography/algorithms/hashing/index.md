@@ -224,7 +224,10 @@ $ hashcat -m 1800 -a 0 hashes wordlist
 [![hash_lm](../../../_badges/rootme/cryptanalysis/hash_lm.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-LM)
 [![hash_nt](../../../_badges/rootme/cryptanalysis/hash_nt.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-NT)
 
-Modern Windows are using the hash format "NT", also referred to as "NTLM", because "LM" was the previous hash format.
+Modern Windows are using the hash format "NT", also referred to as "NTLM", because it is used with the NTLM protocol.
+
+* **LM**: previous format. Maximum of 14 characters. Each split into block of 7, uppercased, padded, encrypted using DES, and the two ciphertext are concatenated to form the hash. 
+* **NT**: convert the plaintext to a UTF-16 string and hash it using MD4
 
 ```shell!
 $ john myhash --format=nt --wordlist=wordlist

@@ -24,57 +24,39 @@
 
 <hr class="sep-both">
 
-## Authentication & Authorization
+## Authentication Protocols
 
 <div class="row row-cols-lg-2"><div>
 
-#### Active Directory database
+#### NTLM Protocol
 
-[![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+NTLM, not to be confused with NT and LM which are hash formats, is a challenge-response authentication protocol.
 
-Active directory database is stored on the domain controller at `%SystemRoot%\ntds\ntds.dit`. It's used to validate credentials.
+* **User Request** 👋: the client inform the server about their capabilities and request for authentication
+* **Server Challenge Request** 📄: the server sends a random number called nonce along some data
+* **Client Challenge Response** 📝: the client encrypts the nonce using their NT Hash and they send it back to the server
 
-It contains user/computer/group accounts, group policies, etc.
-
-To copy this database, we either need local administrative or domain administrative privileges. We can use [VSS](/operating-systems/windows/security/index.md#volume-shadow-copy-service-vss).
-
-You can use commands that are only available on Windows Server:
-
-```shell!
-CMD> vssadmin CREATE SHADOW /For=C:
-CMD> copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopyX\Windows\NTDS\NTDS.dit %temp%\NTDS.dit
+```py
+ntlm_response = hmac_md5(key=user_nt_hash, message=server_challenge)
 ```
 
-You can also use [cme](/cybersecurity/red-team/tools/cracking/auth/cme.md)/[nxc](/cybersecurity/red-team/tools/cracking/auth/nxc.md) which automatically dump it:
-
-```ps
-$ nxc smb IP -u 'username' -p 'password' --ntds
-```
+📚 The NT hash is often called NTLM hash. [Link](/cybersecurity/cryptography/algorithms/hashing/index.md#windows-password-hash-cracking).
 
 <br>
 
-#### SYSVOL Network Share
+#### NetNTLM Protocol
 
-[![adenumeration](../../../../cybersecurity/_badges/thm/adenumeration.svg)](https://tryhackme.com/r/room/adenumeration)
-
-There is a network share on the domain controller: `dir <DCIP>\SYSVOL` associated with the folder `C:\Windows\SYSVOL\sysvol\`.
-
-It's used to store [GPO](/operating-systems/cloud/active-directory/_knowledge/index.md#permissions) and logon/logoff scripts while for the latter, the `NETLOGON` share may be used instead.
+NTLM can be used for both local authentication and network authentication. NetNTLM is the name we use when NTLM is used for network authentication.
 
 <br>
 
-#### NTLM
+#### NTLM vs Kerberos
 
 [![adenumeration](../../../../cybersecurity/_badges/thm/adenumeration.svg)](https://tryhackme.com/r/room/adenumeration)
 
 When using a domain such as `\\domain`, Kerberos Authentication is used. When using an IP such as `\\IP`, NTLM may be used instead.
-
-<br>
-
-#### NetNTLM
-
-NetNTLM is a challenge-response protocol based on NTLM.
 </div><div>
+
 
 #### Kerberos
 
@@ -86,9 +68,15 @@ Kerberos is a protocol used to provide secure authentication over non-secure net
 
 **Port(s)** 🐲: 88 <small>(TCP)</small>
 
-When a user logs in, their password is hashed and sent to Kerberos server along with the timestamp for verification. Upon successful login, the server generates a **ticket-granting ticket (TGT)** 🎫.
+The user send a **AES-REQ** with some data and a timestamp encrypted with their NT Hash and their username. The DC decrypts the value, check the timestamp, and reply with a **AES-REQ**. It contains a **ticket-granting ticket (TGT)** 🎫 that proves they are authenticated AND a copy of the **session key** 🔑 encrypted with the user hash.
 
-When the user wants to access a network resource, such as a shared folder or a database, the computer requests a ticket from the Key Distribution Center (KDC) using the TGT. If the request is accepted, the KDC will give them a **Ticket Granting Service (TGS)** 🎟️ that they can use solely for the requested service.
+The TGT is encrypted with the hash of the `krgtgt` account <small>(1/DC)</small>.
+
+To access a service, we send a **TGS-REQ** with some data, the TGT, and an authenticator encrypted with the session key. The DC will read the session key from the TGT, and try to decrypt the authenticator with it. If it succeeded, the DC send a **TGS-REP** with a **Ticket Granting Service (TGS)** 🎟️ AND a new session key.
+
+The DC uses the SPN in the TGS-REQ to find the service we want. It uses the service hash to encrypt the TGS.
+
+We can now present the TGS to the corresponding service for them to determine if we can access it or not.
 
 ```ps
 PS> klist # list current tickets available
@@ -115,6 +103,46 @@ PS> .\Rubeus.exe asktgt /domain:xxx /user:xxx /rc4:xxx /ptt
 ```
 
 📚 The KRBTGT service account is used to encrypt/sign all Kerberos tickets granted within a given domain. Given the NT hash for the KRBTGT account, we can forge [golden/silver](/cybersecurity/red-team/s5.post-exploitation/index.md#-lateral-movement---goldensilver-ticket) tickets.
+</div></div>
+
+<hr class="sep-both">
+
+## Active Directory Key Elements
+
+<div class="row row-cols-lg-2"><div>
+
+#### Active Directory database
+
+[![password_attacks](../../../../cybersecurity/_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
+
+Active directory database is stored on the domain controller at `%SystemRoot%\ntds\ntds.dit`. It's used to validate credentials.
+
+It contains user/computer/group accounts, group policies, etc.
+
+To copy this database, we either need local administrative or domain administrative privileges. We can use [VSS](/operating-systems/windows/security/index.md#volume-shadow-copy-service-vss).
+
+You can use commands that are only available on Windows Server:
+
+```shell!
+CMD> vssadmin CREATE SHADOW /For=C:
+CMD> copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopyX\Windows\NTDS\NTDS.dit %temp%\NTDS.dit
+```
+
+You can also use [cme](/cybersecurity/red-team/tools/cracking/auth/cme.md)/[nxc](/cybersecurity/red-team/tools/cracking/auth/nxc.md) which automatically dump it:
+
+```ps
+$ nxc smb IP -u 'username' -p 'password' --ntds
+```
+
+</div><div>
+
+#### SYSVOL Network Share
+
+[![adenumeration](../../../../cybersecurity/_badges/thm/adenumeration.svg)](https://tryhackme.com/r/room/adenumeration)
+
+There is a network share on the domain controller: `dir <DCIP>\SYSVOL` associated with the folder `C:\Windows\SYSVOL\sysvol\`.
+
+It's used to store [GPO](/operating-systems/cloud/active-directory/_knowledge/index.md#permissions) and logon/logoff scripts while for the latter, the `NETLOGON` share may be used instead.
 </div></div>
 
 <hr class="sep-both">
