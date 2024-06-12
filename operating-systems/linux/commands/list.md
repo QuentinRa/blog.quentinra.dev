@@ -998,6 +998,12 @@ Change the current user's password:
 ```ps
 $ passwd
 ```
+
+Change multiple or one user password.
+
+```ps
+$ echo "username:password" | chpasswd
+```
 </div><div>
 
 Delete the current user's password:

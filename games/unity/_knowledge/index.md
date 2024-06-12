@@ -66,5 +66,14 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [Unity Version Control](https://unity.com/solutions/version-control) (PlasticSCM)
+
+Hacking
+
+* [Game Hacks](https://0x64marsh.com/?p=689)
+* [Reverse](https://www.kodeco.com/36285673-how-to-reverse-engineer-a-unity-game)
+* [Game Hacking Book](https://www.docdroid.net/rtoAc2n/game-hacking-pdf#page=87)
+* [Game Hacking Links & Repos](https://lsdsecdaemon.com/game-hacking-links-repo/)
+* [Game hacking academy](https://gamehacking.academy/)
+* [Unity Game Hacking](https://github.com/imadr/Unity-game-hacking#unity-game-folder-structure)
 </div><div>
 </div></div>
