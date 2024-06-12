@@ -140,7 +140,7 @@ $D(a,b)$ is the set of common divisors between $a$ and $b$. We are calling the "
 
 <div class="row row-cols-lg-2"><div>
 
-#### Bézout's identity (<code>Thèorème de Bezout</code>)
+#### Bézout's identity
 
 The formula is $a \wedge b = a * u + b * v$. **Bézout coefficients** $u$ and $v$ are **not unique**. Sometimes, this is easy to find the coefficients, but **if this isn't**, use a table (tip: read the example first)
 
@@ -170,6 +170,12 @@ The formula is $a \wedge b = a * u + b * v$. **Bézout coefficients** $u$ and $v
 
 We are using the table because **this one was hard**. If you got $5 * a + 7 * b = 5 \wedge 7 = 1$, then you could find almost immediately that you can use $a=3$ and $b=-2$ giving us $15 - 14 = 1$...
 </div><div>
+
+#### Extended Euclidean Algorithm
+
+Algorithm to compute Bezout coefficients along the GCD.
+
+<br>
 
 #### Invertible numbers
 
@@ -264,6 +270,11 @@ Stuff that I found, but never read/used yet.
 Blogs
 
 * [justcryptography](https://justcryptography.com/)
+
+Stuff
+
+* `a ^ b mod b == a`
+* `a ^ (p-1) mod p == 1` (???)
 </div><div>
 
 * BREACH/CRIME attacks

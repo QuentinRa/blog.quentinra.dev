@@ -304,4 +304,9 @@ $ xxd -p -rd <<< <SomeHexa>
 $ echo $[2#101] # 5
 ```
 </details>
+
+```py
+bytes.fromhex('...').decode()
+base64.b64encode(bytes)
+```
 </div></div>
