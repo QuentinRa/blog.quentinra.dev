@@ -432,7 +432,11 @@ PS> Get-DomainUser -Identity * | ? {$_.useraccountcontrol -like '*ENCRYPTED_TEXT
 
 *Alternative name: ASReproasting*
 
-Some kerberos users may have been configured to not require Kerberos Pre Auth, leading to their hash being sent when an authentication request is made before providing valid identification.
+The initial **AS-REQ** requires the user to send pre-authentication data, e.g., a timestamp hashed with their password hash.
+
+Some user may be configured to not require pre-auth, meaning we can get a TGT and a session key without knowing their password.
+
+By cracking the session key, we can find their password.
 
 ```shell!
 $ impacket-GetNPUsers -dc-ip DC01 domain/username:password # list users + groups
@@ -451,9 +455,11 @@ Refer to [cracking Kerberos Pre Auth Hash](/cybersecurity/cryptography/algorithm
 [![windows_ldap_user_kerberoastable](../../../../cybersecurity/_badges/rootme/forensic/windows_ldap_user_kerberoastable.svg)](https://www.root-me.org/en/Challenges/Forensic/Windows-LDAP-User-KerbeRoastable)
 [![windows_kerberoast](../../../../cybersecurity/_badges/rootme/realist/windows_kerberoast.svg)](https://www.root-me.org/en/Challenges/Realist/Windows-KerbeRoast)
 
-Domain accounts are often used to run services. They may have been given many privileges. Each service instance is associated with a service account using a **Service Principal Names (SPN)**.
+We can request a TGS for any user that has **Service Principal Names (SPN)**. Usually, only service account have them.
 
-We can request a TGS for the target service, and attempt to crack its hash. RC4 hashes are easy to crack while AES hashes are harder.
+Similarly to ASReproasting, we can attempt to crack the session key to find the service account password.
+
+RC4 hashes are easy to crack while AES hashes are harder.
 
 We can use [mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md), [Rubeus](/cybersecurity/red-team/tools/utilities/creds/rubeus.md) or [PowerView](/cybersecurity/red-team/tools/utilities/windows/powersploit.md) to fetch TGS tickets.
 

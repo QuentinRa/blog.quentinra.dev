@@ -22,3 +22,15 @@ $ gem install bundler # package management
 * [rbenv VirtualEnv](https://github.com/rbenv/rbenv)
 * [asdf-ruby VirtualEnv](https://github.com/asdf-vm/asdf-ruby)
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [rubyfu](https://rubyfu.net/)
+</div><div>
+</div></div>

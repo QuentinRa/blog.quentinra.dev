@@ -609,6 +609,7 @@ Stuff that I found, but never read/used yet.
 
 * SIMD (Single Instruction Multiple Data) instruction set
 * [azerialabs](https://azm.azerialabs.com/)
+* [arm_now](https://github.com/nongiach/arm_now)
 </div><div>
 
 ```arm

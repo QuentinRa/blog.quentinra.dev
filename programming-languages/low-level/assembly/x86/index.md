@@ -17,6 +17,7 @@ X86 transitioned from 32-bit to 64-bit architecture with x86-64.
 **Where to learn?** 🔥
 
 * [x86-64 Stanford Reference](https://web.stanford.edu/class/cs107/resources/x86-64-reference.pdf) <small>(👻)</small>
+* [NASM tutor](https://asmtutor.com/)
 </div></div>
 
 <hr class="sep-both">

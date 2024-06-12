@@ -822,5 +822,7 @@ $this->$hidden
 return new class implements XXXInterface {};
 
 sprintf("%06d", 33)
+
+usort($array, [$this, 'customSort']);
 ```
 </div></div>
