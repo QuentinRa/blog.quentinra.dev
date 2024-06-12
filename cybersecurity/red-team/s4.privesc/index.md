@@ -147,6 +147,7 @@ Additional references
 * [Ghostpack-CompiledBinaries](https://github.com/r3motecontrol/Ghostpack-CompiledBinaries) <small>(1.0k ⭐, 2022 🪦)</small>
 * [SharpCollection](https://github.com/Flangvik/SharpCollection) <small>(2.1k ⭐, compiled C# projects)</small>
 * [Creds](https://github.com/S3cur3Th1sSh1t/Creds) <small>(1.0k ⭐, Windows Pentest Kit)</small>
+* [m0chan 2019 checklist](https://m0chan.github.io/2019/07/30/Windows-Notes-and-Cheatsheet.html)
 </div><div>
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
@@ -478,6 +479,7 @@ Cheatsheet
 * [basic-linux-privilege-escalation](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)
 * [Windows Privilege Escalation Fundamentals](https://fuzzysecurity.com/tutorials/16.html)
 * [Windows Privilege Escalation Guide](https://www.absolomb.com/2018-01-26-Windows-Privilege-Escalation-Guide/)
+* [WMI Enumeration](https://0xinfection.github.io/posts/wmi-ad-enum/)
 
 Random
 

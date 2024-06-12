@@ -148,6 +148,7 @@ Stuff
 
 * The five "As" in security
 * [cyberdefenders](https://cyberdefenders.org/)
+* [nuclei](https://github.com/projectdiscovery/nuclei-templates)
 </div><div>
 
 Tools/methods/...

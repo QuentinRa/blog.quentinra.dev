@@ -131,11 +131,12 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 
 **CTF Events** 🎮
 
-* [picoctf](https://www.picoctf.org/), [404ctf](https://www.404ctf.fr/), France Cybersecurity Challenge (FCSC)
+* [picoctf](https://www.picoctf.org/), [404ctf](https://www.404ctf.fr/), France Cybersecurity Challenge (FCSC), HackTM CTF
 * [Buckeyectf](https://ctf.osucyber.club/), [idek](https://ctf.idek.team/), [downunderctf](https://downunderctf.com/)
-* [esaip ctf](https://ctf.esaip.org/), [HackSecuReims](https://hacksecureims.eu/), [TRACS](https://tracs.viarezo.fr/)
-* [HTB Events](https://www.hackthebox.com/events/)
+* [esaip ctf](https://ctf.esaip.org/), [HackSecuReims](https://hacksecureims.eu/), [TRACS](https://tracs.viarezo.fr/), [lactf](https://github.com/uclaacm/lactf-archive/tree/main)
+* [HTB Events](https://www.hackthebox.com/events/), [tjctf](https://tjctf.org/), [intigriti](https://bugology.intigriti.io/intigriti-monthly-challenges), [flare-on](https://flare-on.com/)
 * Kringlecon, Yogosha, Flag4all, TCP1P, ZITF, Patriot, ACS
+* [mkarmous](https://github.com/mohamedaymenkarmous/CTF) <small>(0.1k ⭐)</small>, [sajjadium](https://github.com/sajjadium/ctf-archives/tree/main) <small>(0.7k ⭐)</small>
 <br>
 
 **Not tested** 👻 - may be either theoretical, practical, or both.
@@ -261,6 +262,7 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [exploit.education](https://exploit.education/)
 </div><div>
 
+* [it-kombinat](https://it-kombinat.github.io/pcs/index.html)
 * [h0j3n](https://h0j3n.github.io/)
 * [pwn.college](https://pwn.college/)
 * [pentestlab](https://pentestlab.blog/)

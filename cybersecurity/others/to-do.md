@@ -26,6 +26,7 @@ Roadmap
 * Practice buffer overflow/format strings/ROP/UAF
 * Web Assembly
 * Radio Frequencies
+* [Beyond XSS](https://aszx87410.github.io/beyond-xss/en/)
 </div></div>
 
 <hr class="sep-both">
@@ -265,7 +266,7 @@ https://tryhackme.com/room/retro (blaster...)
 * CodeSec (🏝💥) <small>(web vulnerability scanner)</small>
 * [venom](https://github.com/ovh/venom) (🔎🏝💥🔑✈️) <small>(payloads? -h/-c/-u/-p/-s, scan/crawl/portscan)</small>
 * [**Burp Collaborator client**](https://portswigger.net/burp/documentation/desktop/tools/collaborator-client) (🃏) <small>(server for SSRF/XXE/...)</small>
-* recon-ng (🔎) <small>(reconnaissance framework)</small>
+* [recon-ng](https://github.com/lanmaster53/recon-ng) (🔎) <small>(reconnaissance framework)</small>
 * Archive.is (🔎) <small>(web archive)</small>
 * CommonCrawl (🔎) <small>(web crawler)</small>
 * Netcraft (🔎) <small>(web investigation)</small>

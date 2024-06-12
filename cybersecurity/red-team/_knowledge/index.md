@@ -227,8 +227,9 @@ Stuff that I found, but never read/used yet.
 * [Penetration Testing Execution Standard](http://www.pentest-standard.org/index.php/Main_Page) (PTES)
 * [Open Source Security Testing Methodology Manual](https://www.isecom.org/OSSTMM.3.pdf) OSSTMM
 * [MSTG](https://owasp.org/www-project-mobile-security-testing-guide/)
-* [Firmware Security Testing Methodology](https://github.com/scriptingxss/owasp-fstm)
+* [Firmware Security Testing Methodology](https://github.com/scriptingxss/owasp-fstm), [lab401](https://lab401.com/)
 * [DREAD](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model))
+* [Exegol](https://github.com/ThePorgs/Exegol)
 </div><div>
 
 Additional Notes
