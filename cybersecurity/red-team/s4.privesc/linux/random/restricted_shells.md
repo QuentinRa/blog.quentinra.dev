@@ -175,7 +175,7 @@ Refer to [introspection](/cybersecurity/red-team/s3.exploitation/vulns/cheatshee
 
 [![bash_restricted_shells](../../../../_badges/rootme/app_script/bash_restricted_shells.svg)](https://www.root-me.org/en/Challenges/App-Script/Bash-Restricted-shells)
 
-If we have access to a program that honor `LD_PRELOAD`, e.g. any command aside from the builtin functions, we may be able to pop a bash. For that to be possible, we need a malicious `.so`. 
+If we have access to a program that depend on LIBC and `LD_PRELOAD`, e.g. any command aside from the builtin functions, we may be able to pop a bash. For that to be possible, we need a malicious `.so`. 
 
 If `gcc` is available, we can easily compile one, while it's unlikely. 
 

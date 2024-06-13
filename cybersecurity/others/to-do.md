@@ -383,4 +383,9 @@ OSINT
 * bulitwith, spyse, [intelligence x](https://intelx.io/)
 * source code: [grep.app](https://grep.app/), [searchcode](https://searchcode.com/)
 * documents: metagoofil
+
+Tools
+
+* [python-pentest-tools](https://github.com/dloss/python-pentest-tools)
+* [Penetration-Testing-Tools](https://github.com/mgeeky/Penetration-Testing-Tools)
 </div></div>
