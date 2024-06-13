@@ -139,5 +139,17 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * Systemd Timers: using systemd for task scheduling. `xxx.timer` files.
+
+```
+[Unit]
+Description=XXX
+
+[Service]
+Type=forking
+ExecStart=/bin/bash -c "cat /root/root.txt > /tmp/output && chmod 777 /tmp/output"
+
+[Install]
+WantedBy=multi-user.target
+```
 </div><div>
 </div></div>

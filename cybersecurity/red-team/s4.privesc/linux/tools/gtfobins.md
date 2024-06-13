@@ -138,11 +138,15 @@ $ sudo /usr/bin/apport-cli --file-bug
 ```
 
 * `/usr/bin/systemctl status xxx.service`
+* `/bin/systemctl daemon-reload`
 
 [![attacking_common_applications](../../../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
+[![vulnnet_node](../../../../_badges/thm-p/vulnnet_node.svg)](https://tryhackme.com/r/room/vulnnetnode)
 [![sau](../../../../_badges/htb-p/sau.svg)](https://app.hackthebox.com/machines/Sau)
 
 While it may be secure, if a reader is opened, such as `less`, it may be leveraged to run commands e.g. using `!/bin/bash` for `less`.
+
+Otherwise, if you can reload services, then find if there is a service you can edit, edit it, and reload them.
 
 * gcc special usages
 
