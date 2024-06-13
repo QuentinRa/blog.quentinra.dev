@@ -46,6 +46,7 @@
 [![brooklynninenine](../../../../_badges/thm-p/brooklynninenine.svg)](https://tryhackme.com/r/room/brooklynninenine)
 [![h4cked](../../../../_badges/thm-p/h4cked.svg)](https://tryhackme.com/r/room/h4cked)
 [![vulnnet_node](../../../../_badges/thm-p/vulnnet_node.svg)](https://tryhackme.com/r/room/vulnnetnode)
+[![blog](../../../../_badges/thm-p/blog.svg)](https://tryhackme.com/r/room/blog)
 ![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
 ![nibbles](../../../../_badges/htb-p/nibbles.svg)
 [![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)

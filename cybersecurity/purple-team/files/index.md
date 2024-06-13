@@ -90,6 +90,7 @@ Steganography is a technique in which a person hides data inside the pixels of a
 [![lianyu](../../_badges/thm-p/lianyu.svg)](https://tryhackme.com/room/lianyu)
 [![easypeasyctf](../../_badges/thm-p/easypeasyctf.svg)](https://tryhackme.com/room/easypeasyctf)
 [![brooklynninenine](../../_badges/thm-p/brooklynninenine.svg)](https://tryhackme.com/r/room/brooklynninenine)
+[![blog](../../_badges/thm-p/blog.svg)](https://tryhackme.com/r/room/blog)
 [![kitty_spy](../../_badges/rootme/steganography/kitty_spy.svg)](https://www.root-me.org/en/Challenges/Steganography/Kitty-spy)
 
 If the hidden content is not protected by a password, you can extract it using the `steghide` command or [zsteg](https://github.com/zed-0xff/zsteg)/[stegoveritas](https://github.com/bannsec/stegoVeritas) for PNGs:

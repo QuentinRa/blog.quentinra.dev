@@ -14,6 +14,7 @@
 [![linprivesc](../../../../_badges/thm-p/linprivesc.svg)](https://tryhackme.com/room/linprivesc#task-12)
 [![cowboyhacker](../../../../_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
 [![archangel](../../../../_badges/thm-p/archangel.svg)](https://tryhackme.com/r/room/archangel)
+[![blog](../../../../_badges/thm-p/blog.svg)](https://tryhackme.com/r/room/blog)
 
 <div class="row row-cols-lg-2"><div>
 

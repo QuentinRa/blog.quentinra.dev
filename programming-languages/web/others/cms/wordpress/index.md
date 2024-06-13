@@ -59,6 +59,7 @@ Critical internal WordPress files are stored in `/wp-includes`.
 [![allinonemj](../../../../../cybersecurity/_badges/thm-p/allinonemj.svg)](https://tryhackme.com/room/allinonemj)
 [![wordpresscve202129447](../../../../../cybersecurity/_badges/thm-p/wordpresscve202129447.svg)](https://tryhackme.com/r/room/wordpresscve202129447)
 [![techsupp0rt1](../../../../../cybersecurity/_badges/thm-p/techsupp0rt1.svg)](https://tryhackme.com/r/room/techsupp0rt1)
+[![blog](../../../../../cybersecurity/_badges/thm-p/blog.svg)](https://tryhackme.com/r/room/blog)
 [![blocky](../../../../../cybersecurity/_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
 
 You can enumerate [metadata](https://wpscan.com/wordpresses), [themes](https://wpscan.com/themes), [plugins](https://wpscan.com/plugins), and usernames.
@@ -93,6 +94,7 @@ $ onectf crawl -u URL | grep author
 [![cyberweek2021](../../../../../cybersecurity/_badges/thm/cyberweek2021.svg)](https://tryhackme.com/r/room/cyberweek2021)
 [![colddboxeasy](../../../../../cybersecurity/_badges/thm-p/colddboxeasy.svg)](https://tryhackme.com/room/colddboxeasy)
 [![wordpresscve202129447](../../../../../cybersecurity/_badges/thm-p/wordpresscve202129447.svg)](https://tryhackme.com/r/room/wordpresscve202129447)
+[![blog](../../../../../cybersecurity/_badges/thm-p/blog.svg)](https://tryhackme.com/r/room/blog)
 
 * The password may be weak and vulnerable to [brute force](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md):
 

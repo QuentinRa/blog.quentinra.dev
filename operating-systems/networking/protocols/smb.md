@@ -141,6 +141,7 @@ $ nmap -p 139,445 --script "*smb*" IP
 [![active_directory_enumeration_attacks](../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![kenobi](../../../cybersecurity/_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
 [![attacktivedirectory](../../../cybersecurity/_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
+[![blog](../../../cybersecurity/_badges/thm-p/blog.svg)](https://tryhackme.com/r/room/blog)
 
 * Try `Anonymous` user with no password <small>(`-N` or `-no-pass`, a.k.a. null session)</small>
 
