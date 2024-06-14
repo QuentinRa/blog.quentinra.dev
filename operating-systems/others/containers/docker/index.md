@@ -723,6 +723,12 @@ $ ./cdk run rewrite-cgroup-devices # debugfs -w result
 ```
 
 Try to find if a docker socket is present or reachable.
+
+#### Docker Additional Notes
+
+* Usage of cgroups to limit memory usage etc.
+* Usage of seccomp to blacklist system calls
+* 
 </div></div>
 
 <hr class="sep-both">

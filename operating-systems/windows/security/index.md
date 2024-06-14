@@ -275,6 +275,12 @@ mimikatz# vault::cred
 
 <br>
 
+#### Dump mscash Secrets
+
+Refer to [ired](https://www.ired.team/offensive-security/credential-access-and-credential-dumping/dumping-and-cracking-mscash-cached-domain-credentials).
+
+<br>
+
 #### Dump LSA Secrets
 
 [![active_directory_enumeration_attacks](../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)

@@ -157,6 +157,8 @@ $ nxc smb IP -u 'username' -p 'password' --ntds
 There is a network share on the domain controller: `dir <DCIP>\SYSVOL` associated with the folder `C:\Windows\SYSVOL\sysvol\`.
 
 It's used to store [GPO](/operating-systems/cloud/active-directory/_knowledge/index.md#permissions) and logon/logoff scripts while for the latter, the `NETLOGON` share may be used instead.
+
+📚 For GPOs, see also: [mscash](https://www.ired.team/offensive-security/credential-access-and-credential-dumping/dumping-and-cracking-mscash-cached-domain-credentials) and [GPLink](https://learn.microsoft.com/en-us/powershell/module/grouppolicy/new-gplink?view=windowsserver2022-ps) (LDAP).
 </div></div>
 
 <hr class="sep-both">
@@ -903,6 +905,7 @@ Stuff that I found, but never read/used yet.
 * [adsecurity](https://adsecurity.org/)
 * Hardening AD ([ref](https://blog.netwrix.fr/2019/05/06/securiser-votre-annuaire-ad-contre-les-attaques-de-malware/))
 * [kerberos/AD cyber](https://zer1t0.gitlab.io/posts/)
+* Kerberos Delegation
 
 <details class="details-n">
 <summary>Configure BitLocker</summary>
