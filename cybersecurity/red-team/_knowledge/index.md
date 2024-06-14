@@ -235,6 +235,8 @@ Stuff that I found, but never read/used yet.
 Additional Notes
 
 * Notes (OneNote, Evernote, Notion, Cherrytree)
+  * [Joplin](https://joplinapp.org/)
+  * keepnote
 * List exploited systems (IP, method), compromised users (name, method, type=local?), artifacts created, (system or not) changes, etc.
 * AdminExile
 </div></div>

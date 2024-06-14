@@ -52,4 +52,6 @@
 **Network**
 
 * Ports: `netstat -antp | grep -i list`
+* DHCP (DNS...): `/var/lib/dhcp/dhcpd.leases`
+* DNS: `/etc/resolv.conf`, `/etc/hosts`
 </div></div>

@@ -244,6 +244,7 @@ Additional tools: [unpackbootimg](https://github.com/anestisb/android-unpackboot
 * [bytecode-viewer](https://github.com/Konloch/bytecode-viewer) <small>(14.3k ⭐, 👻)</small>
 * [Apktool](https://github.com/iBotPeaches/Apktool) <small>(18.6k ⭐, 👻)</small>
 * [dex2jar](https://github.com/pxb1988/dex2jar) <small>(11.8k ⭐, 👻)</small>
+* [intro-to-mobile-pentesting](https://www.hackthebox.com/blog/intro-to-mobile-pentesting)
 </div><div>
 
 #### androguard — APK+Dex Explorer/Disassembler

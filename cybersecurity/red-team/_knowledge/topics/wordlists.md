@@ -247,7 +247,7 @@ admin, administrator, wpadmin, root, adm
 /usr/share/wordlists/rockyou.txt
 ```
 
-📚 You may also use the cracked passwords to create a wordlist.
+📚 You may also use the cracked passwords to create a wordlist. You might want to check [NLP](https://github.com/philipperemy/tensorflow-1.4-billion-password-analysis)/[breach-parse](https://github.com/hmaverickadams/breach-parse).
 
 **Default credentials** <small>(=Credential Stuffing)</small>
 

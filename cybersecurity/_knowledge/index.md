@@ -163,7 +163,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [securecodewarrior](https://www.securecodewarrior.com/)
 * [hacksplaining](https://www.hacksplaining.com/)
 * [ringzer0ctf](https://ringzer0ctf.com/)
-* Udemy, Coursera...
+* Udemy, Coursera, nowsecure...
 </div></div>
 
 

@@ -340,6 +340,7 @@ https://tryhackme.com/room/retro (blaster...)
 * [Mythic](https://github.com/its-a-feature/Mythic) <small>(c2 framework)</small>
 * [darkarmour](https://github.com/bats3c/darkarmour) <small>(antivirus evasion tool)</small>
 * [vbe-decoder](https://github.com/JohnHammond/vbe-decoder)
+* [Bluto](https://github.com/darryllane/Bluto)
 </div></div>
 
 <hr class="sep-both">
