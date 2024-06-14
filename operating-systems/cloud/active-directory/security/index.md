@@ -65,7 +65,7 @@ NetLogon is used to establish a secure chanel between a computer and the domain 
 The secure channel (Schannel) is protected by session keys.
 
 * 👋 The client sends a nonce and requests a session
-  🔐 The server replies with a new nonce and the client's nonce, both encrypted with the shared secret.
+* 🔐 The server replies with a new nonce and the client's nonce, both encrypted with the shared secret.
 * ✅ The client responds with their nonce encrypted with their secret and the server nonce encrypted with the shared secret
 
 The shared secret is typically derived from the machine account password while the client secret is typically derived from the user hash or the machine account password. `AES(client secret or resp. shared secret, nonce)` is used to generate the session key.
@@ -821,7 +821,11 @@ $ python3 getnthash.py -key <from gettgt> example.com\COMPUTE_ACCOUNT_NAME\$
 
 #### Zerologon
 
-... [GitHub](https://github.com/risksense/zerologon).
+ZeroLogon is a harmful unauthenticated vulnerability that can be used to authenticate as any user as long as we can reach the DC.
+
+NetLogon uses AES with a null IV. When the nonce sent by the user is a block of zeros, then the session key may result all-zero ciphertext <small>(1/256, one session key is starting with 0)</small> allowing us to bypass authentication. We can then reset the DC password <small>(may lead to service disruptions)</small> and perform a DC sync to dump all secrets.
+
+* [PoC by risksense](https://github.com/risksense/zerologon) <small>(0.6k ⭐)</small>
 </div></div>
 
 <hr class="sep-both">
