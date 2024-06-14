@@ -173,6 +173,7 @@ Stuff that I found, but never read/used yet.
 * `sudo systemctl restart sshd`
 * `ssh-copy-id username@server`: add to remote server our public key
 * `ssh domain\\username@target`
+* Look for problems in configurations
 </div><div>
 
 * `/etc/ssh/sshd_config`
@@ -180,4 +181,5 @@ Stuff that I found, but never read/used yet.
   * `PubkeyAuthentication yes`
   * `PasswordAuthentication no`
   * [Hardening](https://www.ssh-audit.com/hardening_guides.html)
+  * forwarding <small>(subsystem filetransfer sftp match group xxx but we must add again no forward)</small>
 </div></div>

@@ -481,4 +481,5 @@ Stuff that I found, but never read/used yet.
 * `rundll32 shell32.dll,Control_RunDLL .\xxx.dll`
 * Admin Approval Mode (AAM) enabled (new admins: regular token but can elevate, medium mandatory level)
 * Default RID 500 administrator, high mandatory level
+* [Defender External Attack Surface Management](https://learn.microsoft.com/en-us/azure/external-attack-surface-management/)
 </div></div>

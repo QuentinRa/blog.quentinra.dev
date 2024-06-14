@@ -15,7 +15,7 @@ Discord utilities
 
 * **Find Bots** 🤖: [findadiscord.com](https://findadiscord.com/), [disforge.com](https://disforge.com/), [discords.com](https://discords.com/)
 
-* **Find Emotes** 😆: [emoji.gg](https://emoji.gg/), [discords.com](https://discords.com/), [discadia.com](https://discadia.com/)
+* **Find Emotes** 😆: [emoji.gg](https://emoji.gg/), [discords.com](https://discords.com/), [discadia.com](https://discadia.com/), [chpic.su](https://chpic.su/en/)
 
 * **Custom Server Invite** 📬: [dsc.gg](https://dsc.gg/), [invites.gg](https://invites.gg/)
 </div></div>
@@ -28,16 +28,18 @@ Discord utilities
 
 #### Markdown Messages
 
-You can use [Markdown](/programming-languages/others/documents/markdown/index.md) in your discord messages
+You can use [Markdown](/programming-languages/others/documents/markdown/index.md) in your discord messages:
 
 <pre class="language-md">
 <code class="language-md"
->**bold**
+># title
+**bold**
 *italic*
 ~~strikethrough~~
 `inline code`
 ||spoiler||
 > quote
+[a link](https://example.com)
 
 ```c
 int main(void){
@@ -52,6 +54,7 @@ int main(void){
 A few basic tips:
 
 * Hold <kbd>Shift</kbd> to see more shortcuts on a message, and disable the confirmation popup when removing a message
+
 * Use <kbd>CTRL+R</kbd> to reload Discord, instead of manually restart it
 
 <br>

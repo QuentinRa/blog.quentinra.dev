@@ -29,4 +29,5 @@ Key.Z = Keyboard.W
 
 * [gamequitters](https://gamequitters.com/)
 * [playtracker](https://playtracker.net/)
+* [parsec](https://parsec.app/)
 </div></div>
