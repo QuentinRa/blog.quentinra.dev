@@ -261,6 +261,52 @@ This is called the **Euler theorem** ([wiki](https://en.wikipedia.org/wiki/Euler
 
 <hr class="sep-both">
 
+## Digital Certificates
+
+<div class="row row-cols-lg-2"><div>
+
+A trusted party (CA) is able to issue/revoke certificates. A client makes a CSR (Certificate Signing Request) with:
+
+* 🔑 The issuer's public key
+* 📝 Some data about the issuer
+* 🪪 A proof of who they are
+
+The CA will then review the request and issue or not a certificate with:
+
+* ✍️ The issuer public key
+* 📄 The issuer data and the CA name
+* 🔒 The certificate digital signature
+* 📚 The target/name of the certificate
+* ...
+
+The digital signature is computed by hashing the certificate data and encrypting the hash with the CA private key.
+
+A digital signature can be decrypted using the public key.
+</div><div>
+
+First, Alice will send to Bob her digital certificate.
+
+* Bob will contact the CA in the certificate and get Alice certificate
+* Bob will decrypt the digital signature using the CA public key that he has in his trusted public key store
+* Bob can now trust that the certificate was issued by the CA
+* Bob will now hash the certificate and check the checksum with the one he decrypted from the digital signature
+* Bob can now trust the certificate
+
+When Alice want to send a message to Bob:
+
+* She generates a digital signature with her private key
+* She sends both the digital signature and the message
+
+When Bob receives the message from Alice:
+
+* He uses Alice public key to decrypt the digital signature
+* He computes the hash of the message and compare it with the one he received
+
+If a private key such as Alice's private key is leaked, the CA will add the certificate in the Certificate Revocation List (CRL) <small>(Online Certificate Status Protocol (OCSP))</small> which indicates it should not be trusted.
+</div></div>
+
+<hr class="sep-both">
+
 ## Additional Notes
 
 <div class="row row-cols-lg-2"><div>
@@ -308,6 +354,7 @@ Stuff
 
 * BREACH/CRIME attacks
 * SRM (error-correcting code)
+* Certificate pinning
 * [cryptobook](https://cryptobook.nakov.com/)
 * [keylength](https://www.keylength.com/en/)
 </div></div>
