@@ -261,6 +261,35 @@ This is called the **Euler theorem** ([wiki](https://en.wikipedia.org/wiki/Euler
 
 <hr class="sep-both">
 
+## Additional Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### Message Authentication Codes (MAC)
+
+Message Authentication Codes (MACs) can be used to ensure the integrity and authenticity of the message being received.
+
+1. 🔑 Both the sender and the receiver agreed on a "shared key"
+2. 🛫 Alice hashes the message and the shared key and generate a digest. Alice sends the digest along the message to Bob.
+3. 🛬 Bob receives the message. He computes the digest using the shared key and compare it with the one he received.
+
+**HMAC** is the most common way to compute the digest from a message and a key. It has variants such as **HMAC-MD5**.
+</div><div>
+
+#### Public Key Cryptographic Standards
+
+The Public Key Cryptographic Standards (**PKCS**) is a sort of API used to access the key in the HSM. Each new standard adds new features:
+
+* PKCS #1 (RSA)
+* PKCS #7 (digital signatures)
+* PKCS #11 (Access HSM tokens)
+* PKCS #12 (Store/Transport keys)
+
+A Hardware Security Module (HSM) is a hardware component storing cryptographic keys such as public/private keys.
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -279,9 +308,6 @@ Stuff
 
 * BREACH/CRIME attacks
 * SRM (error-correcting code)
-* message authentication codes (MACs)
-* HMAC
-* certificates (chain of trust), digital signatures
 * [cryptobook](https://cryptobook.nakov.com/)
 * [keylength](https://www.keylength.com/en/)
 </div></div>
