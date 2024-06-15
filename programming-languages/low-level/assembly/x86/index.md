@@ -123,6 +123,12 @@ my_function:
     ret
 ```
 
+📚 `RDI` typically holds `argc` and `RSI` typically holds `argv` in the context of the `main` function. More generically, we use general purpose registers such as `RDI` for the first argument, `RSI` for the second, `RDX` for the third, `RCX` for the fourth, etc. We often use `RAX` for the result.
+
+```x86asm
+test %rax,%rax ; set flags such as "N" if rax == -1
+```
+
 </div><div>
 
 #### Function Prologue And Epilogue
@@ -142,4 +148,16 @@ ret
 ```
 
 You can alternatively use `leave` for the epilogue.
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* `je` opcode is 74, then `jne` is most likely 75
+</div><div>
 </div></div>

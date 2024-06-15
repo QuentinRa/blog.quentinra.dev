@@ -46,6 +46,9 @@ Stuff that I found, but never read/used yet.
 * `Program using fd? why not make fd==0 => stdin`
 * pt_regs, strace/ptrace/ltrace
 * binary can be stripped or not (reduce size)
+* shellcodes, `0x90` (NOP) and `0xCC` (breakpoint)
+* Edit program and put NOPs everywhere to skip instructions.
+* `0xffffffff` is `-1` (signed, so with two complement)
 </div><div>
 
 Use After Free (UAF)
