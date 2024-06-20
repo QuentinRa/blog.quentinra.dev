@@ -738,6 +738,94 @@ private fun getPresentationForStructure(psi: PsiElement): ItemPresentation {
 
 <hr class="sep-both">
 
+## Project Wizard
+
+<div class="row row-cols-lg-2"><div>
+
+The new project wizard is one of the possible implementation for the new project menu. It is used for Java, Kotlin, and other languages.
+
+```kt
+package com.ocaml.ide.module.wizard
+
+import com.intellij.ide.wizard.AbstractNewProjectWizardMultiStep
+import com.intellij.ide.wizard.NewProjectWizardStep
+import com.intellij.ide.wizard.language.LanguageGeneratorNewProjectWizard
+import com.ocaml.OCamlBundle.message
+import com.ocaml.icons.OCamlIcons
+import com.ocaml.ide.module.wizard.buildSystem.BuildSystemOCamlNewProjectWizard
+import javax.swing.Icon
+
+class OCamlNewProjectWizard : LanguageGeneratorNewProjectWizard {
+    override val icon: Icon get() = OCamlIcons.Nodes.OCAML_MODULE
+    override val name: String = message("language.name")
+    override val ordinal: Int = 200
+
+    override fun createStep(parent: NewProjectWizardStep): NewProjectWizardStep = OCamlNewProjectWizardStep(parent)
+
+    class OCamlNewProjectWizardStep(parent: NewProjectWizardStep) :
+        AbstractNewProjectWizardMultiStep<OCamlNewProjectWizardStep, BuildSystemOCamlNewProjectWizard>(parent, BuildSystemOCamlNewProjectWizard.EP_NAME)
+    {
+        override val label: String  get() = message("project.wizard.build.system")
+        override val self: OCamlNewProjectWizardStep get() = this
+    }
+}
+```
+
+The code is based on "build systems" such as the buttons "Gradle", "Maven", and "IntelliJ" for the Java Wizard. We need to declare a new extension point and create at least one implementation <small>(such as Dune)</small>.
+
+```xml!
+<extensionPoints>
+    <extensionPoint qualifiedName="com.intellij.newProjectWizard.ocaml.buildSystem" interface="com.ocaml.ide.module.wizard.buildSystem.BuildSystemOCamlNewProjectWizard" dynamic="true"/>
+</extensionPoints>
+
+<extensions defaultExtensionNs="com.intellij">
+<newProjectWizard.languageGenerator implementation="com.ocaml.ide.module.wizard.OCamlNewProjectWizard"/>
+<newProjectWizard.ocaml.buildSystem implementation="com.ocaml.ide.module.wizard.buildSystem.OCamlDefaultBuildSystemWizard" />
+<!-- ... -->
+</extensions>
+```
+```kt
+import com.intellij.ide.util.projectWizard.WizardContext
+import com.intellij.ide.wizard.NewProjectWizardMultiStepFactory
+import com.intellij.openapi.extensions.ExtensionPointName
+import com.ocaml.ide.module.wizard.OCamlNewProjectWizard
+
+interface BuildSystemOCamlNewProjectWizard : NewProjectWizardMultiStepFactory<OCamlNewProjectWizard.OCamlNewProjectWizardStep> {
+    override fun isEnabled(context: WizardContext): Boolean = true
+
+    companion object {
+        val EP_NAME = ExtensionPointName<BuildSystemOCamlNewProjectWizard>("com.intellij.newProjectWizard.ocaml.buildSystem")
+    }
+}
+```
+</div><div>
+
+We will add logic specific to the build system in each wizard.
+
+```kt
+class OCamlDuneBuildSystemWizard : OCamlDefaultBuildSystemWizard() {
+    override val name: String = message("project.wizard.build.system.dune")
+    override fun createStep(parent: OCamlNewProjectWizard.OCamlNewProjectWizardStep): NewProjectWizardStep = Step(parent)
+
+    private class Step(parent: OCamlNewProjectWizard.OCamlNewProjectWizardStep) : OCamlNewProjectWizardBaseStep(parent) {
+        override fun setupUI(builder: Panel) {
+            super.setupUI(builder)
+            // Specific to Dune
+        }
+    }
+}
+
+open class OCamlNewProjectWizardBaseStep(parent: OCamlNewProjectWizard.OCamlNewProjectWizardStep) : AbstractNewProjectWizardStep(parent) {
+    override fun setupUI(builder: Panel) {
+        super.setupUI(builder)
+        // For every subclass
+    }
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## Random Features
 
 <div class="row row-cols-lg-2"><div>
