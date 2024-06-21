@@ -822,6 +822,73 @@ open class OCamlNewProjectWizardBaseStep(parent: OCamlNewProjectWizard.OCamlNewP
     }
 }
 ```
+
+Inside IntelliJ, e.g., with the JAVA plugin, we can use classes such as `IntelliJNewProjectWizardStep` to have a JAVA-like menu.
+
+When the client is done, `setupProject` is invoked. Refer to the aforementioned class for a possible implementation. It loads the selected SDK and configure the builder with the parameters.
+
+```kt
+    override fun setupProject(project: Project) {
+        super.setupProject(project)
+        setupProject(project, OCamlModuleBuilder())
+    }
+```
+
+Don't forget to register the module builder and the module type:
+
+```xml!
+<moduleBuilder builderClass="com.ocaml.ide.module.OCamlModuleBuilder" order="first"/>
+<moduleType id="OCAML_MODULE" implementationClass="com.ocaml.ide.module.OCamlIdeaModuleType"/>
+```
+
+Refer to `OCamlNewProjectWizardAssetStep` to understand how we can create IntelliJ files and load a template. To be fair, I am adding hardcoded files without any variable to inject, but if I didn't, I would use "internal templates" and refer to `AssetsJavaNewProjectWizardStep`.
+
+**moduleType** is deprecated but there is no clear alternative...
+</div></div>
+
+<hr class="sep-both">
+
+## SDK and Libraries
+
+<div class="row row-cols-lg-2"><div>
+
+Setting an SDK is essentially the same as adding a library to the project. The files added can be browsed and referenced/navigated to once we implement the said features.
+
+```xml!
+<sdkType implementation="com.ocaml.sdk.OCamlSdkType"/>
+<sdkDownload implementation="com.ocaml.sdk.OCamlSdkType"/>
+```
+
+When we navigate to "Project Structure > SDKs", we can see the files loaded by IntelliJ. This is the result of:
+
+```kt
+    override fun isRootTypeApplicable(type: OrderRootType): Boolean = type === OrderRootType.CLASSES
+    override fun setupSdkPaths(sdk: Sdk) {
+        val homePath = checkNotNull(sdk.homePath) { sdk }
+        val sdkModificator = sdk.sdkModificator
+        sdkModificator.removeRoots(OrderRootType.CLASSES)
+        addSources(File(homePath), sdkModificator)
+        // 0.0.6 - added by default
+        sdkModificator.addRoot(getDefaultDocumentationUrl(sdk), OrderRootType.DOCUMENTATION)
+        sdkModificator.addRoot(OCamlSdkWebsiteUtils.getApiURL(sdk.versionString!!), OrderRootType.DOCUMENTATION)
+        sdkModificator.commitChanges()
+    }
+```
+</div><div>
+
+We can add additional tabs such as Documentation tabs, but we cannot edit the SDK to match the change in settings from the UI <small>(JB changed something, I can't do it anymore, getting some error about Bridges and Elements when trying to edit the SDK by following their short documentation)</small>.
+
+```kt
+    override fun createAdditionalDataConfigurable(sdkModel: SdkModel, sdkModificator: SdkModificator) = OCamlSdkAdditionalDataConfigurable()
+
+    override fun loadAdditionalData(currentSdk: Sdk, additional: Element): SdkAdditionalData {
+        // ...
+    }
+
+    override fun saveAdditionalData(additionalData: SdkAdditionalData, additional: Element) {
+        // ...
+    }
+```
 </div></div>
 
 <hr class="sep-both">
@@ -953,6 +1020,9 @@ MyBundle.message("projectService", project.name)
 System.getenv("CI")
 
 project.service<MyProjectService>()
+
+val instance: OCamlSdkType?
+    get() = EP_NAME.findExtension(OCamlSdkType::class.java)
 ```
 
 
