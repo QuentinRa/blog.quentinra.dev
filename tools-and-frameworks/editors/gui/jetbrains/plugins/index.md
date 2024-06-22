@@ -874,7 +874,6 @@ When we navigate to "Project Structure > SDKs", we can see the files loaded by I
         sdkModificator.commitChanges()
     }
 ```
-</div><div>
 
 We can add additional tabs such as Documentation tabs, but we cannot edit the SDK to match the change in settings from the UI <small>(JB changed something, I can't do it anymore, getting some error about Bridges and Elements when trying to edit the SDK by following their short documentation)</small>.
 
@@ -889,6 +888,29 @@ We can add additional tabs such as Documentation tabs, but we cannot edit the SD
         // ...
     }
 ```
+</div><div>
+
+We often want to notify the user when the SDK is not set, as it often limit what the plugin can do. We can show a message at the top of a source file using `ProjectSdkSetupValidator`.
+
+```xml!
+<projectSdkSetupValidator implementation="com.ocaml.sdk.validator.OCamlSDKValidator"/>
+```
+```kt!
+class OCamlSDKValidator : ProjectSdkSetupValidator {
+    override fun isApplicableFor(project: Project, file: VirtualFile): Boolean {
+        // checks if the file is a source file (+in the project)
+    }
+
+    override fun getErrorMessage(project: Project, file: VirtualFile): String? {
+        // Null == no error, otherwise, the error message shown
+    }
+
+    override fun getFixHandler(project: Project, file: VirtualFile): EditorNotificationPanel.ActionHandler {
+        // filter which SDK is suggested
+    }
+}
+```
+
 </div></div>
 
 <hr class="sep-both">
