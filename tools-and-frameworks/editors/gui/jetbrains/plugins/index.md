@@ -848,6 +848,32 @@ Refer to `OCamlNewProjectWizardAssetStep` to understand how we can create Intell
 
 <hr class="sep-both">
 
+## Editor and Actions
+
+<div class="row row-cols-lg-2"><div>
+
+#### CreateNewFile
+
+To create a new file, refer to `OCamlCreateFileAction`. The content of the new files is based on files in `fileTemplates/internal`.
+
+```xml!
+    <extensions defaultExtensionNs="com.intellij">
+        <internalFileTemplate name="OCaml File"/>
+        <internalFileTemplate name="OCaml Interface"/>
+    </extensions>
+
+    <actions>
+        <!-- Create file -->
+        <action id="NewOCamlFile" class="com.ocaml.ide.files.actions.OCamlCreateFileAction">
+            <add-to-group group-id="NewGroup" anchor="before" relative-to-action="NewFile"/>
+        </action>
+    </actions>
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## SDK and Libraries
 
 <div class="row row-cols-lg-2"><div>
@@ -910,6 +936,8 @@ class OCamlSDKValidator : ProjectSdkSetupValidator {
     }
 }
 ```
+
+While it's purely visual, you can change the SDK library root icons or hide non-source files. Refer to `OCamlLibraryRootsNodeDecorator` and `OCamlLibraryRootsTreeStructureProvider`.
 
 </div></div>
 
