@@ -13,6 +13,8 @@ A few useful links:
 
 * 🌍 [Documentation](https://plugins.jetbrains.com/docs/intellij/custom-language-support-tutorial.html)
 * 🚀 [Code Samples](https://github.com/JetBrains/intellij-sdk-code-samples)
+  * [Community Plugins](https://github.com/JetBrains/intellij-community/blob/master/plugins/)
+  * [Ultimate Plugins](https://github.com/JetBrains/intellij-plugins)
 * 🪨 [Template](https://github.com/JetBrains/intellij-platform-plugin-template)
 * 🤗 [Forum](https://intellij-support.jetbrains.com/hc/en-us/community/topics/200366979-IntelliJ-IDEA-Open-API-and-Plugin-Development)
 </div></div>
@@ -38,7 +40,6 @@ Open the Manifest file at: `src/main/resources/META-INF/plugin.xml` and define t
     ]]></description>
 </idea-plugin>
 ```
-</div><div>
 
 You can also add your plugin icon(s):
 
@@ -46,6 +47,37 @@ You can also add your plugin icon(s):
 * `src/main/resources/META-INF/pluginIcon_dark.svg`
 
 Run the Gradle task <kbd>Run Plugin</kbd> and see if your plugin is in the list of the new IDE that opened, and each information is properly set.
+</div><div>
+
+A few gradle settings:
+
+```kt
+intellij {
+  version.set("0.4.0-EAP-241")
+  type.set("IU")
+
+  plugins.set(listOf(
+    "com.jetbrains.hackathon.indices.viewer:$indicesVersion",
+    "PsiViewer:$psiViewerPluginVersion",
+    "java" // to enable "com.intellij.modules.java"
+  ))
+  
+
+  sandboxDir.set("${layout.buildDirectory.get()}/idea-sandbox-241-IU")
+  
+  // You can add sourceSets as you need them
+  sourceSets["main"].java.srcDirs("src/main/gen")
+  sourceSets["main"].kotlin.srcDirs("src/anotherSource/kotlin")
+  sourceSets["test"].kotlin.srcDirs("src/test/anotherTestSource/")
+  
+  idea {
+    module {
+      generatedSourceDirs.add(file("src/main/gen"))
+    }
+  }
+}
+```
+
 </div></div>
 
 <hr class="sep-both">
@@ -939,6 +971,18 @@ class OCamlSDKValidator : ProjectSdkSetupValidator {
 
 While it's purely visual, you can change the SDK library root icons or hide non-source files. Refer to `OCamlLibraryRootsNodeDecorator` and `OCamlLibraryRootsTreeStructureProvider`.
 
+Additional notes:
+
+```kt
+val moduleSdk : Sdk? = ModuleRootManager.getInstance(module).sdk;
+val xxx = ProjectJdkTable.getInstance()
+```
+
+WSL-related notes:
+
+```kt
+val isWSLPath = WslPath.isWslUncPath(path)
+```
 </div></div>
 
 <hr class="sep-both">
@@ -1055,14 +1099,6 @@ Stuff that I found, but never read/used yet.
 * Enabling Auto-Reload
 * .form
 
-```gradle
-idea {
-  module {
-    generatedSourceDirs.add(file("src/main/gen"))
-  }
-}
-```
-
 ```kotlin
 MyBundle.message("applicationService")
 MyBundle.message("projectService", project.name)
@@ -1084,48 +1120,6 @@ val instance: OCamlSdkType?
 +<idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
 
 +<xi:include href="/META-INF/other.xml" xpointer="xpointer(/idea-plugin/*)"/>
-```
-</details>
-
-<details class="details-n">
-<summary>Set the sandbox Directory</summary>
-
-➡️  If you change the IDE version often, you might want to use different sandbox, to start where you left.
-
-Kotlin
-
-```kotlin
-intellij {
-    sandboxDir.set("$buildDir/idea-sandbox-${properties("platformVersion")}")
-}
-```
-</details>
-
-<details class="details-n">
-<summary>Add new folders as src/res</summary>
-
-Groovy
-
-```gradle
-sourceSets {
-    main.java.srcDirs = ["src/xxx", "src/main"]
-    main.java.srcDirs += ["src/yyy"]
-    main.resources.srcDirs = ["resources/main", "resources/zzz"]
-    test.java.srcDirs = ["test/xxx/", "test/main"]
-    test.resources.srcDirs = ["resources/main", "resources/xxx", "test/testData"]
-}
-```
-
-Kotlin
-
-```kotlin
-sourceSets {
-    main.configure {
-        java.srcDir("src/xxx/")
-        java.srcDir("src/xxx/kotlin")
-        resources.srcDir("src/xxx/resources")
-    }
-}
 ```
 </details>
 </div><div>
