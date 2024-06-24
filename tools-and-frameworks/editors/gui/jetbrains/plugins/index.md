@@ -987,6 +987,18 @@ val isWSLPath = WslPath.isWslUncPath(path)
 
 <hr class="sep-both">
 
+## Build and Run
+
+<div class="row row-cols-lg-2"><div>
+
+#### RunLineMarkerContributor
+
+You can show the "Run icon" next to the "main class/function" or any PsiElement by implementing `RunLineMarkerContributor`. Refer to `DuneTargetRunLineMarkerContributor`.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Random Features
 
 <div class="row row-cols-lg-2"><div>
@@ -1109,6 +1121,12 @@ project.service<MyProjectService>()
 
 val instance: OCamlSdkType?
     get() = EP_NAME.findExtension(OCamlSdkType::class.java)
+    
+// Parse input with macros
+PathMacroManager.getInstance(project).expandPath(input)
+
+// when you cannot run something on EDT
+ApplicationManager.getApplication().executeOnPooledThread {}
 ```
 
 
@@ -1142,29 +1160,5 @@ Random
 ```
 TreeAnchorizer.getService().createAnchor(element)
 TreeAnchorizer.getService().retrieveElement(psiAnchor)
-```
-
-Bundles
-
-```kotlin
-import com.intellij.DynamicBundle
-import org.jetbrains.annotations.NonNls
-import org.jetbrains.annotations.PropertyKey
-
-@NonNls
-private const val BUNDLE = "messages.xxx"
-
-object XXXBundle : DynamicBundle(BUNDLE) {
-
-    @Suppress("SpreadOperator")
-    @JvmStatic
-    fun message(@PropertyKey(resourceBundle = BUNDLE) key: String, vararg params: Any) =
-        getMessage(key, *params)
-
-    @Suppress("SpreadOperator", "unused")
-    @JvmStatic
-    fun messagePointer(@PropertyKey(resourceBundle = BUNDLE) key: String, vararg params: Any) =
-        getLazyMessage(key, *params)
-}
 ```
 </div></div>
