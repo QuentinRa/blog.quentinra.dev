@@ -993,8 +993,40 @@ val isWSLPath = WslPath.isWslUncPath(path)
 
 #### RunLineMarkerContributor
 
-You can show the "Run icon" next to the "main class/function" or any PsiElement by implementing `RunLineMarkerContributor`. Refer to `DuneTargetRunLineMarkerContributor`.
+You can show the "Run icon" next to the "main class/function" or any PsiElement by implementing `RunLineMarkerContributor`. Refer to `DuneTargetRunLineMarkerContributor` and `DuneRunTargetAction`.
+
+#### RunConfigurationProducer
+
+This interface must be implemented when we want to generate a runConfiguration from a PSI element. Refer to `DuneRunConfigurationProducer`. We are essentially filling the runConfiguration with data in `setupConfigurationFromContext`.
+
+
+#### SettingsEditor
+
+SettingsEditor and SettingsEditorGroup are both classes that you may use when building the UI for your run configuration.
+
+Use the `applyEditorTo` to save into the configuration attributes the values from the UI. Use `resetEditorFrom` to load into the UI values from the configuration.
+
+Refer to `DuneRunConfigurationEditor`.
 </div><div>
+
+#### RunConfiguration
+
+A runConfiguration is a configuration to run a program while it often includes a "build" step preceding the run step.
+
+Possible parent classes:
+
+* `ModuleBasedConfiguration<RunConfigurationModule, Element>(...)`: provide access to `configurationModule` attribute which is used to store a module. It's handy when you want to use the SDK of a module. Also, it includes a "build" step before "run".
+
+* `LocatableConfigurationBase<RunProfileState>(...)`: a simpler version of the class above.
+
+Interesting methods:
+
+* `checkConfiguration`: raise an exception if the config is incorrect
+* `{read/write}External`: load/save the configuration attributes
+* `getState`: returns the command to execute
+* `getConfigurationEditor`: returns the main panel of the settings configuration editor. See also: `SettingsEditorGroup`.
+
+Refer to `DuneRunConfiguration`or `OCamlRunConfiguration`.
 </div></div>
 
 <hr class="sep-both">
@@ -1094,6 +1126,34 @@ class OCamlBraceMatcher : PairedBraceMatcher {
     }
 }
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Utility classes
+
+<div class="row row-cols-lg-2"><div>
+
+#### PathMacroManager
+
+Handle variables in paths.
+
+```kt
+val macroManager = PathMacroManager.getInstance(context.project)
+// replace path with variables
+val newPath = macroManager.collapsePath(path)
+// replace variables with their values
+val path = macroManager.expandPath(newPath)
+```
+
+#### ModuleUtilCore
+
+Manipulate modules.
+
+```kt
+val module = ModuleUtilCore.findModuleForFile(virtualFile, project)
+```
+</div><div>
 </div></div>
 
 <hr class="sep-both">
