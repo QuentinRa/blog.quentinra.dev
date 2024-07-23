@@ -8,8 +8,8 @@ It's not installed by default on Kali. First, search for the latest `.deb` that 
 
 ```shell!
 $ # there wasn't the .deb for the latest
-$ wget https://github.com/RustScan/RustScan/releases/download/2.0.1/rustscan_2.0.1_amd64.deb
-$ sudo dpkg -i rustscan_2.0.1_amd64.deb
+$ wget "https://github.com/RustScan/RustScan/releases/download/2.3.0/rustscan_2.3.0_amd64.deb" -O /tmp/rustscan.deb
+$ sudo dpkg -i /tmp/rustscan.deb
 ```
 </div><div class="align-self-center">
 
