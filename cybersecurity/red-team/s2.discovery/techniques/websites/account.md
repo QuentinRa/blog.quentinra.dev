@@ -61,6 +61,7 @@ We can't register an account with an already taken username or email. It can be 
 #### Username Enumeration — Password Forgot/Reset Page
 
 [![broken_authentication](../../../../_badges/htb/broken_authentication.svg)](https://academy.hackthebox.com/course/preview/broken-authentication)
+[![marabout](../../../../_badges/rootme/realist/marabout.svg)](https://www.root-me.org/en/Challenges/Realist/Marabout)
 
 Websites may indicate if a user exists when we try to reset a password.
 </div></div>
@@ -137,6 +138,7 @@ for user in users:
 #### Password Reset — Predictable Token
 
 [![broken_authentication](../../../../_badges/htb/broken_authentication.svg)](https://academy.hackthebox.com/course/preview/broken-authentication)
+[![marabout](../../../../_badges/rootme/realist/marabout.svg)](https://www.root-me.org/en/Challenges/Realist/Marabout)
 
 Reset tokens associated with a request to reset a user account should be randomly generated. Some are using predictable values:
 
