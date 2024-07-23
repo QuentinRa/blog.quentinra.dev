@@ -41,6 +41,8 @@ MySQL store structural data in `information_schema`:
 
 * Tables: `SELECT table_name FROM information_schema.tables WHERE TABLE_SCHEMA='db_name';`
 * Columns: `SELECT column_name FROM information_schema.columns WHERE TABLE_SCHEMA='db_name' AND TABLE_NAME='table_name';`
+* Users: `SELECT CONCAT(user, '%', host) as 'username', authentication_string FROM mysql.user;`
+* Privileges: `Select privilege_type From information_schema.user_privileges Where GRANTEE = CURRENT_USER();`
 </div></div>
 
 <hr class="sep-both">
