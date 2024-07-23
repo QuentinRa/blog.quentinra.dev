@@ -25,6 +25,8 @@ We can usually find at least:
 
 ## From LFI To RCE
 
+[![lfi2rce_via_phpinfo](../../../../_badges/hacktricks/pentesting_web/file_inclusion/lfi2rce_via_phpinfo.svg)](https://book.hacktricks.xyz/pentesting-web/file-inclusion/lfi2rce-via-phpinfo)
+
 <div class="row row-cols-lg-2"><div>
 
 If we have access to a LFI and there is no suffix appended, such as `include('pages/'.$_GET['page'])`, we can exploit the PHPInfo via a Race Condition and the LFI to get a RCE.

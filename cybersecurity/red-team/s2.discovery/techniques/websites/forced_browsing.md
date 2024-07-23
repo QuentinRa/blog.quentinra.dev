@@ -136,5 +136,6 @@ Stuff that I found, but never read/used yet.
 [![blocky](../../../../_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
 
 * AJax Rendered Page, automation?
+* .DS_STORE, contains a list of files, [blog](https://miloserdov.org/?p=3867)
 </div><div>
 </div></div>
