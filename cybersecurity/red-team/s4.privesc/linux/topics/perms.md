@@ -79,7 +79,17 @@ When exploiting a command, you will usually want to run another executable. Two 
 
 <div class="row row-cols-lg-2"><div>
 
-Capabilities are a level below SUID/GUID permissions. 
+Capabilities are a level below SUID/GUID permissions. They can be applied on files and processes.
+
+```shell!
+$ grep Cap /proc/self/status
+CapInh:	0000000000000000 -- from parent to child; if requested
+CapPrm:	0000000000000000 -- capabilities the process can use
+CapEff:	0000000000000000 -- capabilities that are currently enabled
+CapBnd:	00000000a80425fb -- the capabilities the processes are allowed to use
+CapAmb:	0000000000000000 -- from parent to child; with conditions
+$ capsh --decode="00000000a80425fb" # human readable
+```
 
 It's possible for an administrator to allow an executable to use some "features" that usually would require root privileges <small>(ex: creating sockets, creating raw TCP packets...)</small>.
 

@@ -728,7 +728,6 @@ Try to find if a docker socket is present or reachable.
 
 * Usage of cgroups to limit memory usage etc.
 * Usage of seccomp to blacklist system calls
-* 
 </div></div>
 
 <hr class="sep-both">
