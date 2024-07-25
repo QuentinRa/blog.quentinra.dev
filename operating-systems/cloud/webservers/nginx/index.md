@@ -5,7 +5,41 @@
 <div class="row row-cols-lg-2"><div>
 
 Nginx is a powerful and widely-used open-source web server. It's the main concurrent of [Apache](/operating-systems/cloud/webservers/apache/index.md). It's an event-based web server known to be faster and more powerful than Apache.
+
+```shell!
+$ cat nginx.conf 
+events {}
+
+http {
+    server {
+        listen 80;
+        server_name localhost;
+
+        # Reverse Proxy setting "Host: ..."
+        location / {
+            proxy_pass http://real_target:port/
+            proxy_set_header Host $http_host;
+        }
+    }
+}
+```
 </div><div>
+
+```shell!
+$ cat docker-compose.yml 
+version: '3'
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8000:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+$ docker compose up   # no "-d" to see the logs
+$ docker compose down # clean up
+```
+
+This reverse proxy configuration will allow you to access `http://real_target:port/` from `localhost:8000` while setting the header host to `Host: localhost:8000` which is convenient during pentesting.
 </div></div>
 
 <hr class="sep-both">
