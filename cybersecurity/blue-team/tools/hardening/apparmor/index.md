@@ -12,6 +12,15 @@ $ sudo apt-get install apparmor apparmor-utils
 
 Use the command `aa-genprof` to generate a policy for a program. The command `aa-complain` can be used to monitor violations.
 </div><div>
+
+To check if there is an apparmor policy in place:
+
+```ps
+$ cat /proc/self/attr/current
+```
+
+📚 `unconfined` means there is no apparmor.
+
 </div></div>
 
 <hr class="sep-both">
@@ -87,5 +96,31 @@ flag{you_found_me}
 root# /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 cat flag.txt
 flag{you_found_me}
 ```
+
+<br>
+
+#### Nested Profiles
+
+If a profile is applied on a specific executable, the rules of the parent may be overridden by the new profile.
+
+```bash!
+profile docker_apparmor flags=(attach_disconnected,mediate_deleted) {
+    /tmp/bash px -> custom_apparmor,
+    deny /flag.txt r,
+}
+
+profile custom_apparmor flags=(attach_disconnected,mediate_deleted) {
+    # The rule on /flag.txt is overriden
+    / r,
+}
+```
 </div><div>
+
+#### Mount Permission
+
+More on this later. Refer to the `unshare` command.
+
+```bash!
+mount,
+```
 </div></div>
