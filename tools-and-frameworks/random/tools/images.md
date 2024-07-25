@@ -78,6 +78,16 @@ See also: [Game Assets](/games/_knowledge/game-tools/index.md#game-assets).
 
 * [tesseract](https://tesseract.projectnaptha.com/) (free, open-source)
 * [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
+* Ocrad.js
+
+```shell!
+$ sudo apt install tesseract-ocr
+$ tesseract image.png stdout
+```
+```shell!
+$ sudo apt install gocr
+$ gocr -C a-zA-Z0-9 -u "?" -d 2 image.png
+```
 
 <br>
 

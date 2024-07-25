@@ -44,23 +44,29 @@ If you're using HTML, then you can use template injection: `{% ... %}`. Refer to
 
 [![django](../../../../../cybersecurity/_badges/thm/django.svg)](https://tryhackme.com/room/django)
 [![unbakedpie](../../../../../cybersecurity/_badges/thm-p/unbakedpie.svg)](https://tryhackme.com/r/room/unbakedpie)
+[![django_unchained](../../../../../cybersecurity/_badges/rootme/realist/django_unchained.svg)](https://www.root-me.org/en/Challenges/Realist/Django-unchained)
+[![djangocatz](../../../../../cybersecurity/_badges/rootme/realist/djangocatz.svg)](https://www.root-me.org/en/Challenges/Realist/DjangocatZ)
 
 * Check if there is a `/admin` or a `/media` endpoint
 
 * Check for Python Headers (`WSGIServer`, `CPython`)
 
-* If `DEBUG` mode is enabled, any error including 404, but even error 500 will expose a lot of information:
+* If `DEBUG` mode is enabled, error 404 will expose the endpoints
+
+* If `DEBUG` mode is enabled, error 500 will expose a lot of information. It can be triggered sometimes by omitting parameters, or using invalid parameters such as an invalid format or type.
 
 ```text!
-Python Version - may help to customize payloads
-Python Path - may expose usernames
-HOSTNAME - may help to customize payloads
-LOGIN_URL - if you didn't know the URL
-MEDIA_ROOT - may expose usernames
-STATICFILES_DIRS - may expose usernames
+Python Version   - may help to customize payloads
+Django Version   - may help tunning attacks
+HOSTNAME         - may help to customize payloads
+Server time      - may help to customize payloads
+ALLOWED_HOSTS    - List of domains allowed along with localhost.
+LOGIN_URL        - if you didn't know the URL ; may not be correct
+DBMS Section     - Type of DBMS and configuration
+ANY_PATH         - may expose usernames such as in /home/toto/myapp/
 ```
 
-It even discloses the type of DBMS and how it is configured.
+You can examine variables and the code in the traceback section too.
 </div><div>
 
 #### Django Exploitation

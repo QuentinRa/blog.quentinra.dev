@@ -4,6 +4,8 @@
 
 #### Exim Mail Client | CVE-2016-153
 
+[![imagick](../../../../_badges/rootme/realist/imagick.svg)](https://www.root-me.org/en/Challenges/Realist/Imagick)
+
 Versions prior to 4.84-3 are vulnerable to LPE.
 
 ```shell!
