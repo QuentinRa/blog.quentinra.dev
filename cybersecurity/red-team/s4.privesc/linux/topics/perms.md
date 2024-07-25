@@ -35,12 +35,11 @@ Once you found a file with the SUID bit, either there is a known way to exploit 
 [![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![pwnkit](../../../../_badges/thm/pwnkit.svg)](https://tryhackme.com/r/room/pwnkit)
 [![polkit](../../../../_badges/thm/polkit.svg)](https://tryhackme.com/r/room/polkit)
+[![djangocatz](../../../../../cybersecurity/_badges/rootme/realist/djangocatz.svg)](https://www.root-me.org/en/Challenges/Realist/DjangocatZ)
 
-Policy Kit (Polkit) is part of the Linux authorization system. It used and installed by default on every major Linux distribution.
+Policy Kit (Polkit) is part of the Linux authorization system. It used and installed by default on every major Linux distribution. We can interact with it using the `/usr/bin/pkexec` SUID file. 
 
-We can interact with it using the `/usr/bin/pkexec` **SUID** file. See [arthepsy PoC](https://github.com/arthepsy/CVE-2021-4034) <small>(1.0k ⭐)</small>, or [berdav PoC](https://github.com/berdav/CVE-2021-4034) <small>(1.9k ⭐)</small>.
-
-Some distributions were also vulnerable to [CVE-2021-3560](https://nvd.nist.gov/vuln/detail/CVE-2021-3560).
+Some distributions were vulnerable to [CVE-2021-3560](https://nvd.nist.gov/vuln/detail/CVE-2021-3560) <small>(<v119)</small>. See [arthepsy PoC](https://github.com/arthepsy/CVE-2021-4034) <small>(1.0k ⭐)</small>, or [berdav PoC](https://github.com/berdav/CVE-2021-4034) <small>(1.9k ⭐)</small>.
 
 📚 Example Usage: `/usr/bin/pkexec bash`
 

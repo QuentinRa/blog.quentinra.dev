@@ -71,6 +71,7 @@ For extensions: `php,html,txt,sql,bak,tar,tar.gz,db,zip,sqlite`.
 
 [![githappens](../../../../_badges/thm-p/githappens.svg)](https://tryhackme.com/room/githappens)
 [![insecure_code_management](../../../../_badges/rootme/web_server/insecure_code_management.svg)](https://www.root-me.org/en/Challenges/Web-Server/Insecure-Code-Management)
+[![starbug_bounty](../../../../_badges/rootme/realist/starbug_bounty.svg)](https://www.root-me.org/en/Challenges/Realist/Starbug-Bounty)
 
 Sometimes, version control files such as [.git for GIT](/tools-and-frameworks/vcs/git/_general/index.md) may be exposed. They can be used to find the current and the previous versions of the code. For instance, after downloading a `.git`:
 
