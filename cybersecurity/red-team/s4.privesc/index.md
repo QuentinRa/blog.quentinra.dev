@@ -78,8 +78,9 @@ You will also have to look for installed tools and apps along with their version
 * ⏰ Exploiting [scheduled tasks](linux/topics/tasks.md) <small>(cron tasks)</small>
 * 🔑 Finding [credentials/files](#credential-hunting) <small>(config, logs, ssh keys...)</small>
 * 💥 Exploiting the [kernel](linux/topics/kernel.md)
-* 🐸 Misconfigured [file permissions](linux/topics/perms.md)
+* 🐸 Misconfigured [file permissions](linux/topics/perms.md) <small>(SUID, capabilities, groups)</small>
 * 📦 Look for [unmounted drives/medias](linux/topics/drives.md)
+* 🪦 Look for [vulnerable applications](linux/topics/apps.md)
 * 👻 Look for printers (`lpstat`)
 
 External tools/services
