@@ -1,5 +1,7 @@
 # AppArmor
 
+[![apparmor_jail_introduction](../../../../_badges/hacktricks/linux_hardening/privilege_escalation/docker_security/apparmor.svg)](https://www.root-me.org/en/Challenges/App-Script/AppArmor-Jail-Introduction)
+
 <div class="row row-cols-lg-2"><div>
 
 AppArmor can be used to define policies for programs. It can be used to define access controls beyond the permissions of the user.
@@ -78,6 +80,8 @@ And the flag should be neither readable nor modifiable.
 
 #### Unconstrained Mode
 
+[![apparmor_jail_introduction](../../../../_badges/rootme/app_script/apparmor_jail_introduction.svg)](https://www.root-me.org/en/Challenges/App-Script/AppArmor-Jail-Introduction)
+
 Some configurations may allow executables or libraries to be loaded in unconstrained mode: the policy is not applied on them.
 
 ```bash!
@@ -127,6 +131,8 @@ mount,
 <br>
 
 #### Nested Profiles — Lax File Permissions
+
+[![apparmor_jail_introduction](../../../../_badges/rootme/app_script/apparmor_jail_introduction.svg)](https://www.root-me.org/en/Challenges/App-Script/AppArmor-Jail-Introduction)
 
 If we have enough permissions to replace an executable, we may be able to create an unconstrained executable.
 
