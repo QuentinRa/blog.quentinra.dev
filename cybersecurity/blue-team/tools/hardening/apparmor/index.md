@@ -99,7 +99,7 @@ flag{you_found_me}
 
 <br>
 
-#### Nested Profiles
+#### Nested Profiles — Broad Rules
 
 If a profile is applied on a specific executable, the rules of the parent may be overridden by the new profile.
 
@@ -122,5 +122,24 @@ More on this later. Refer to the `unshare` command.
 
 ```bash!
 mount,
+```
+
+<br>
+
+#### Nested Profiles — Lax File Permissions
+
+If we have enough permissions to replace an executable, we may be able to create an unconstrained executable.
+
+Assuming we are forced to use a constrained executable `/opt/wrapper`, and other executables are not constrained.
+
+```bash!
+/opt/wrapper px -> wrapper_profile,
+```
+
+If we have write access to `/opt/wrapper`, we can link it to an unconstrained executable and effectively bypass the `wrapper_profile`.
+
+```shell!
+$ ln -s /bin/bash /opt/wrapper
+$ exit # and connect back or whatever you did to get in
 ```
 </div></div>
