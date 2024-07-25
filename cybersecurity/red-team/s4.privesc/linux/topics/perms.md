@@ -76,6 +76,7 @@ When exploiting a command, you will usually want to run another executable. Two 
 [![linuxprivilegeescalation](../../../../_badges/htb/linuxprivilegeescalation.svg)](https://academy.hackthebox.com/course/preview/linux-privilege-escalation)
 [![linux_capabilities](../../../../_badges/hacktricks/linux_hardening/privilege_escalation/linux_capabilities.svg)](https://book.hacktricks.xyz/linux-hardening/privilege-escalation/linux-capabilities)
 [![cap](../../../../_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
+[![django_unchained](../../../../_badges/rootme/realist/django_unchained.svg)](https://www.root-me.org/en/Challenges/Realist/Django-unchained)
 
 <div class="row row-cols-lg-2"><div>
 

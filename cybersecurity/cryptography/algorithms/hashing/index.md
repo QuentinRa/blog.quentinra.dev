@@ -414,7 +414,8 @@ I am not aware of any tool to automate this when `openssl` was used.
 
 * `bitlocker2john`: bitlocker protected drive, refer to [Bitlocker](/operating-systems/windows/security/index.md#bitlocker-encrypted-drive) notes
 * `keepass2john`: keepass files, refer to [KeePass](/cybersecurity/blue-team/tools/passwords/keepass.md#keepass-pentester-notes-) notes
-* For APOP challenge and hash, refer to [APOP](/operating-systems/networking/protocols/pop3.md#apop)
+* For the APOP challenge and hash, refer to [APOP](/operating-systems/networking/protocols/pop3.md#apop)
+* For Django hashes, refer to [Django](/programming-languages/web/others/frameworks/django/index.md)
 </div></div>
 
 <hr class="sep-both">

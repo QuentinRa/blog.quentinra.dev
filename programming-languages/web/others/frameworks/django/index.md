@@ -69,10 +69,14 @@ ANY_PATH         - may expose usernames such as in /home/toto/myapp/
 You can examine variables and the code in the traceback section too.
 </div><div>
 
-#### Django Exploitation
+#### Django FootHold
 
-[![unbakedpie](../../../../../cybersecurity/_badges/thm-p/unbakedpie.svg)](https://tryhackme.com/r/room/unbakedpie)
+[![djangocatz](../../../../../cybersecurity/_badges/rootme/realist/djangocatz.svg)](https://www.root-me.org/en/Challenges/Realist/DjangocatZ)
 
-* If `DEBUG` mode is enabled, try to generate an error, which would in turn makes Django expose a part of the code related to the error
+Django hashes have the format `pbkdf2_sha256$iter$salt$hash`. They can be cracked with [hashcat and maybe john](/cybersecurity/cryptography/algorithms/hashing/index.md) too.
 
+```ps
+$ hashcat -m 10000 hash /usr/share/wordlists/rockyou.txt
+$ john --format="django" [...] # didn't work
+```
 </div></div>
