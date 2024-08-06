@@ -100,7 +100,7 @@ See also [http2.pro](https://http2.pro/doc/Apache).
 
 First, you must indicate that your server supports HTTP2, or HTTP1.1 as a fallback. You must add this to your virtual hosts `.conf`.
 
-```apacheconf
+```apacheconf!
 Protocols h2 http/1.1
 ```
 
@@ -133,49 +133,26 @@ $ sudo systemctl restart apache2
 This is a file used to edit the virtual host configuration locally. Simply create a file `.htaccess` with some instructions inside.
 
 ```apacheconf!
-    # add to your configuration
-    <Directory /path/to/our/website>
-        AllowOverride All
-        Require all granted
-    </Directory>
+<Directory "/var/www/html">
+    # Specific categories like AuthConfig, FileInfo, Indexes, Limit, Options, Redirect, etc.
+    AllowOverride All
+    AllowOverride None
+    AllowOverride FileInfo Indexes
+</Directory>
 ```
 
 A `.htaccess` is applied to a directory and its subdirectories. Every `.htaccess` in the path to the resource will be loaded. ➡️ In cases of conflict, the nearest (latest) instruction is used.
 
 ➡️ See [htaccess cheatsheet](https://htaccesscheatsheet.com/).
 
-#### Random instructions
-
-<p></p>
-
-```apacheconf!
-# Disable directory browsing
-Options All -Indexes
-
-# Redirect everything (aside from direct access)
-# to index.php (when mod_rewrite is not installed)
-<IfModule !mod_rewrite.c>
-	ErrorDocument 404 index.php
-</IfModule>
-
-# Add a redirection
-Redirect 301 /duck https://duckduckgo.com/
-
-# Deny access to some directories/files
-RewriteEngine on
-RewriteRule ^/?(\.git|logs|temp|vendor - [F]
-RewriteRule /?(README.*|.ht*)$ - [F]
-
-# Limit the size of uploads
-LimitRequestBody 512000
-```
-</div><div>
-
 #### Example: block access to everyone aside from localhost
 
 This could be used to only allow a website to access some files such as uploaded avatars. Only `127.0.0.1` can request a resource.
 
 ```apacheconf!
+# Required For Apache 2.4+
+Require all granted
+# Deny/Allow IPs
 order deny,allow
 deny from all
 allow from 127.0.0.1
@@ -200,6 +177,40 @@ And you need an additional file: `/path/to/some/.htpasswd`
 ```apacheconf!
 # username:hashed_password (htpasswd command?)
 xxx:$apr1$8KSS.TIW$qWKI88AFeMSl3iemCuUCk/
+```
+</div><div>
+
+#### Examples: Redirections And URL Rewrite
+
+You can define the 404 Page, perform redirections, define forbidden pages, etc. You can even perform routing such as with `/toto` that internally loads `dummy.php`.
+
+```apacheconf!
+# Redirect everything (aside from direct access)
+# to index.php (when mod_rewrite is not installed)
+<IfModule !mod_rewrite.c>
+	ErrorDocument 404 ./index.php
+</IfModule>
+
+# Add a redirection
+Redirect 301 /duck https://example.com/duck
+
+# Deny access to some directories/files
+RewriteEngine on
+RewriteRule ^/?(\.git|logs|temp|vendor - [F]
+RewriteRule /?(README.*|.ht*)$ - [F]
+RewriteRule ^toto$ dummy.php [L]
+```
+
+#### Random instructions
+
+<p></p>
+
+```apacheconf!
+# Disable directory browsing
+Options All -Indexes
+
+# Limit the size of uploads
+LimitRequestBody 512000
 ```
 </div></div>
 
