@@ -31,6 +31,8 @@ query {
 
 <div class="row row-cols-lg-2"><div>
 
+#### Introspection — Manual Queries
+
 Each object has a type. Each type has attributes. The type may have a constructor with arguments that are required to query an object.
 
 ```text!
@@ -46,7 +48,23 @@ After identifying the types and their arguments, we can query them:
 {MyType{field1, field2}}
 {MyType(arg:value){field1, field2}}
 ```
+
+➡️ When errors are enabled, you can receive suggestions from GraphQL like a type or attribute name that is similar to your input.
 </div><div>
+
+#### Introspection — Graphical WebUI
+
+[GraphQL Voyager](https://graphql-kit.com/graphql-voyager/) <small>(7.7k ⭐)</small> can take the input from your introspection query or from tools such as [clairvoyance](#introspection--clairvoyance) and display it as a graph.
+
+#### Introspection — clairvoyance
+
+[clairvoyance](https://github.com/nikitastupin/clairvoyance) <small>(1.0k ⭐)</small> can be used to dump the schema:
+
+```shell!
+$ pipx install git+https://github.com/nikitastupin/clairvoyance
+$ clairvoyance 'https://example.com/api/graphql' -o schema.json
+```
+
 </div></div>
 
 <hr class="sep-both">
