@@ -7,10 +7,12 @@
 * [GraphQL Documentation](https://graphql.org/) <small>(⛪)</small>
 * [GitHub](https://github.com/graphql/graphql-js) <small>(19.8k ⭐)</small>
 
-It was designed to provide a more efficient, powerful, and flexible alternative to traditional REST APIs.
+It was designed to provide a more efficient, powerful, and flexible alternative to traditional REST APIs. It solves a problem of REST APIs which is under- and over-fetching.
+
+Look into the JavaScript Source Code and you may find if it's used.
 </div><div>
 
-To query the `id,username` of the `user` with `id=123`:
+There is only one endpoint. We can perform multiple queries in one request. To query the `id,username` of the `user` with `id=123`:
 
 ```graphql
 query {
@@ -20,6 +22,8 @@ query {
   }
 }
 ```
+
+Look for: `/api/graphql`, `/graphql`, `/graphiql`, etc.
 </div></div>
 
 <hr class="sep-both">
@@ -28,6 +32,8 @@ query {
 
 [![graphql](../../../../cybersecurity/_badges/hacktricks/graphql.svg)](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/graphql)
 [![graphql_introspection](../../../../cybersecurity/_badges/rootme/web_server/graphql_introspection.svg)](https://www.root-me.org/en/Challenges/Web-Server/GraphQL-Introspection)
+
+Introspection refer to dumping the API schema. It's often disabled in production.
 
 <div class="row row-cols-lg-2"><div>
 
@@ -76,6 +82,8 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [How to exploit GraphQL endpoint: introspection, query, mutations & tools](https://www.yeswehack.com/learn-bug-bounty/how-exploit-graphql-endpoint-bug-bounty)
-* [GraphQL Voyager](https://github.com/graphql-kit/graphql-voyager)
+* [pentest101](https://escape.tech/blog/pentest101/)
+* [inigo](https://inigo.io/blog/graphql_injection_attacks)
+* InQL
 </div><div>
 </div></div>
