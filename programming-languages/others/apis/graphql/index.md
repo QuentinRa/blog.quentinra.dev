@@ -152,6 +152,42 @@ Another alternative would be to close the `query{` by using `\n}`.
 
 <hr class="sep-both">
 
+## GraphQL Mutation Queries
+
+[![graphql_mutation](../../../../cybersecurity/_badges/rootme/web_server/graphql_mutation.svg)](https://www.root-me.org/fr/Challenges/Web-Serveur/GraphQL-Mutation)
+
+<div class="row row-cols-lg-2"><div>
+
+When introspecting the database, we may find mutations. They are functions allowing us to add/edit the database.
+
+```text!
+createAccount[]: id (Int!), username (String!), password (String!)
+```
+
+You can invoke it as follows:
+
+```graphql
+mutation {
+  createAccount(id: 5, username: "admin", password: "abc") { id, username }
+}
+```
+</div><div>
+
+The main issues are:
+
+* 📚 Creating records to bypass access control <small>(role=admin)</small>
+* 🪦 Creating records to perform an attack such as XSS
+* 💦 Updating records to bypass access control <small>(role=admin)</small>
+* 💥 Creating/Updating records to exploit references and access unintended objects. For instance, if we were blocked access to B, but we can create an object A that is referencing an object B, then by querying A, we may be able to access B.
+
+```graphql
+query { notes { id, flag } } # blocked
+query { post(id: 1) { id, notes { id, flag } } } # OK
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
