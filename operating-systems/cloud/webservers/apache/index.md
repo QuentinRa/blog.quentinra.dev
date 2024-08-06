@@ -139,11 +139,14 @@ This is a file used to edit the virtual host configuration locally. Simply creat
     AllowOverride None
     AllowOverride FileInfo Indexes
 </Directory>
+<Files ~ "^\.ht">
+    # For Directives Applied based on a filter
+</Files>
 ```
 
 A `.htaccess` is applied to a directory and its subdirectories. Every `.htaccess` in the path to the resource will be loaded. ➡️ In cases of conflict, the nearest (latest) instruction is used.
 
-➡️ See [htaccess cheatsheet](https://htaccesscheatsheet.com/).
+➡️ See [htaccess cheatsheet](https://htaccesscheatsheet.com/) and [my pentester notes](/cybersecurity/red-team/s3.exploitation/vulns/cheatsheet/payloads.md#htaccess) 💥.
 
 #### Example: block access to everyone aside from localhost
 
@@ -156,6 +159,7 @@ Require all granted
 order deny,allow
 deny from all
 allow from 127.0.0.1
+Allow from 192.168.1.0/24
 ```
 
 <br>
@@ -201,13 +205,32 @@ RewriteRule /?(README.*|.ht*)$ - [F]
 RewriteRule ^toto$ dummy.php [L]
 ```
 
-#### Random instructions
+#### Example: Enable Options
 
-<p></p>
+You can configure options. See also: `AddIcon` and `AddDescription`.
 
 ```apacheconf!
-# Disable directory browsing
+# Disable directory listing 🔒
 Options All -Indexes
+# Enable directory listing, CGI, etc.
+Options +ExecCGI +Indexes +FollowSymlinks
+# Which file to load by default
+DirectoryIndex index.php index.html
+```
+
+#### Random instructions
+
+Additional instructions:
+
+```apacheconf!
+# MIME-type to use when it cannot be determined by Apache
+DefaultType text/plain
+
+# Define the charset for some files
+AddCharset UTF-8 .html .txt
+
+# Add Encoding
+AddEncoding gzip .gz
 
 # Limit the size of uploads
 LimitRequestBody 512000
