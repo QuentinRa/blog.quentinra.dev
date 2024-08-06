@@ -170,6 +170,7 @@ $ cat myhash | hash-identifier
 [![hash_lm](../../../_badges/rootme/cryptanalysis/hash_lm.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-LM)
 [![hash_md5](../../../_badges/rootme/cryptanalysis/hash_md5.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-Message-Digest-5)
 [![hash_nt](../../../_badges/rootme/cryptanalysis/hash_nt.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-NT)
+[![sql_injection_file_reading](../../../_badges/rootme/web_server/sql_injection_file_reading.svg)](https://www.root-me.org/en/Challenges/Web-Server/SQL-injection-File-reading)
 
 <div class="row row-cols-lg-2"><div>
 
