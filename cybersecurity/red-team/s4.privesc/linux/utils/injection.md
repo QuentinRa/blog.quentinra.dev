@@ -168,7 +168,7 @@ $ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/; chmod +xs /tmp/bash)' ./scr
 
 <div class="row row-cols-lg-2"><div>
 
-As a reminder, if you can execute commands, then refer to [command injection](/cybersecurity/red-team/s3.exploitation/vulns/injection/command.md) for additional related content. Refer also to: [format strings](/cybersecurity/red-team/s3.exploitation/vulns/memory/format_strings.md).
+Just in case, you may have useful related content by looking at the following pages: [command injection](/cybersecurity/red-team/s3.exploitation/vulns/injection/command.md#additional-notes), [format strings](/cybersecurity/red-team/s3.exploitation/vulns/memory/format_strings.md) and [eval function](/cybersecurity/red-team/s3.exploitation/vulns/injection/eval.md).
 
 <br>
 
@@ -206,16 +206,12 @@ $ cat xxx.sh
 ls $1
 $ ./xxx.sh "-la ."
 ```
-</div></div>
 
-<hr class="sep-both">
+<br>
 
-## 👻 To-do 👻
+#### Perl open()
 
-Stuff that I found, but never read/used yet.
+[![perl_command_injection](../../../../_badges/rootme/app_script/perl_command_injection.svg)](https://www.root-me.org/en/Challenges/App-Script/Perl-Command-injection)
 
-<div class="row row-cols-lg-2"><div>
-
-* [axcheron format strings](https://axcheron.github.io/exploit-101-format-strings/)
-</div><div>
+The open function is [Perl](https://www.perl.org/) can execute commands when we use `|` in the filename. For instance, `| cat /etc/passwd`. The code is not vulnerable if there is a `<` before our filename in the `open` function call.
 </div></div>
