@@ -75,6 +75,42 @@ $ clairvoyance 'https://example.com/api/graphql' -o schema.json
 
 <hr class="sep-both">
 
+## GraphQL Injections
+
+<div class="row row-cols-lg-2"><div>
+
+#### GraphQL Query Injection
+
+Much like SQL, you can manipulate a query if user input is added directly to the query without any sanitization.
+
+```js!
+query {
+  product(name: "$prodname") {
+    id
+    name
+    description
+  }
+}
+```
+
+The normal expected input would be:
+
+```js!
+prodname = "toy"
+```
+
+But a malicious user could use the code below. We use `#` to avoid handling the rest of the request.
+
+```js!
+username = 'toy"){\nid\n}\naccount(username:"admin"){\nid,username,password\n}#'
+```
+
+Another alternative would be to close the `query{` by using `\n}`.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -86,4 +122,11 @@ Stuff that I found, but never read/used yet.
 * [inigo](https://inigo.io/blog/graphql_injection_attacks)
 * InQL
 </div><div>
+
+Remediation
+
+* RateLimit alone is not very useful as multiple queries in one request
+* SizeLimit should be enforced to block long requests
+* Access Control should be implemented (ex: JWT)
+* The server should validate types and values
 </div></div>
