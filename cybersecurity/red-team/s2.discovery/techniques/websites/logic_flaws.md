@@ -32,19 +32,19 @@ There is a logic flaw if the developer do not check previously checked values, s
 
 The fist form is using GET. The developer check the parameter `n` ✅.
 
-```
+```shell!
 $ curl 'URL/step1?n=5'
 ```
 
 In the second form, the user submit a value in a POST form. The developer only check the new value `square` ❌.
 
-```bash
+```shell!
 $ curl 'URL/step2?n=5' -d 'square=36'
 ```
 
 But, if the user used:
 
-```bash
+```shell!
 $ curl 'URL/step2?n=5' -d 'square=36&n=6'
 ```
 
@@ -84,31 +84,33 @@ The `strcmp` function may be also exploited. In PHP 5.6, it returns an integer w
 
 #### PHP Magic Hashes
 
-Hashing functions may also be exploited.
+[![php_loose_comparison](../../../../_badges/rootme/web_server/php_loose_comparison.svg)](https://www.root-me.org/en/Challenges/Web-Server/PHP-Loose-Comparison)
+
+Even in PHP 8 and newer, the following equalities are TRUE:
+
+```php!
+"0e299969168079221277306999992834" == "0"
+"0e66507019969427134894567494305185566735" == "0e1337"
+"0e66507019969427134894567494305185566735" == "0e4242424242"
+```
+
+There are known plaintext that result in a hash starting with `0e`. Refer to [spaze/hashes](https://github.com/spaze/hashes/) <small>(0.7k ⭐)</small> repository.
 
 * `hash("md2", 'Oq9wqi64') == "0"` is `True`
-* `hash("sha1", '0e<snip>') == "0e<snip>"` is `True`
+* `hash("sha1", 'aaroZmOk') == "0e1337"` is `True`
 * ...
 
 ```php!
+// Get A Magic Hash For Hash Type 'fnv164'
 while (1) {
-    $p = bin2hex(random_bytes(8)); // no constraints
-    $h = hash('fnv164', $p);       // (e.g. start with, etc.)
-    if ($h == 0) {
+    $p = bin2hex(random_bytes(8));
+    $h = hash('fnv164', $p);
+    if ($h == "0") {
         echo "Found hash($p)=$h";
         break;
     }
 }
 ```
-
-```php!
-$a="53f5491262103127";
-$b="0b60749aaf38cdb6";
-hash('fnv164', $a) == hash('fnv164', $b) // True
-```
-
-
-Refer to [hashes](https://github.com/spaze/hashes/) <small>(0.7k ⭐)</small> for more magic password/hashes.
 </div></div>
 
 <hr class="sep-both">
