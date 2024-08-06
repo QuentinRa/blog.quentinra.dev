@@ -1,5 +1,10 @@
 # GraphQL
 
+[![graphql](../../../../cybersecurity/_badges/hacktricks/graphql.svg)](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/graphql)
+[![graphql_introspection](../../../../cybersecurity/_badges/rootme/web_server/graphql_introspection.svg)](https://www.root-me.org/en/Challenges/Web-Server/GraphQL-Introspection)
+[![graphql_injection](../../../../cybersecurity/_badges/rootme/web_server/graphql_injection.svg)](https://www.root-me.org/en/Challenges/Web-Server/GraphQL-Injection)
+[![graphql_mutation](../../../../cybersecurity/_badges/rootme/web_server/graphql_mutation.svg)](https://www.root-me.org/fr/Challenges/Web-Serveur/GraphQL-Mutation)
+
 <div class="row row-cols-lg-2"><div>
 
 [GraphQL](https://en.wikipedia.org/wiki/GraphQL) (Graph Query Language) is an open-source query language for APIs. It's used by GitHub, Shopify, and Facebook internally.
@@ -9,28 +14,59 @@
 
 It was designed to provide a more efficient, powerful, and flexible alternative to traditional REST APIs. It solves a problem of REST APIs which is under- and over-fetching.
 
+There is only one endpoint. We can perform multiple queries in one request. Look for: `/api/graphql`, `/graphql`, `/graphiql`, etc.
+
 Look into the JavaScript Source Code and you may find if it's used.
 </div><div>
 
-There is only one endpoint. We can perform multiple queries in one request. To query the `id,username` of the `user` with `id=123`:
+ To query the `id,username` of the `user` with `id=123`:
 
 ```graphql
 query {
+  # if available, list all users as "users"
+  users: user { id, username }
+  # query one user
   user(id: 123) {
     id
     username
   }
 }
 ```
+</div></div>
 
-Look for: `/api/graphql`, `/graphql`, `/graphiql`, etc.
+<hr class="sep-both">
+
+## GraphQLMap
+
+[![graphql_introspection](../../../../cybersecurity/_badges/rootme/web_server/graphql_introspection.svg)](https://www.root-me.org/en/Challenges/Web-Server/GraphQL-Introspection)
+[![graphql_injection](../../../../cybersecurity/_badges/rootme/web_server/graphql_injection.svg)](https://www.root-me.org/en/Challenges/Web-Server/GraphQL-Injection)
+[![graphql_mutation](../../../../cybersecurity/_badges/rootme/web_server/graphql_mutation.svg)](https://www.root-me.org/fr/Challenges/Web-Serveur/GraphQL-Mutation)
+
+<div class="row row-cols-lg-2"><div>
+
+[GraphQLMap](https://github.com/swisskyrepo/GraphQLmap) <small>(1.3k ⭐, 2023 🪦)</small> was developed by the owner of PayloadsAllTheThings. It allows us to send GraphQL queries to an endpoint rather easily. It also provide a few utilities.
+
+```shell!
+$ pipx install git+https://github.com/swisskyrepo/GraphQLmap
+$ pipx runpip graphqlmap install requests
+$ graphqlmap -h
+```
+
+It can dump the schema and present it in a nice representation.
+</div><div>
+
+A basic usage:
+
+```shell!
+$ graphqlmap -u 'https://example.com/api/graphql' --headers '{"Authorization": "Bearer ..."}' --method POST
+prompt> query { account(username: "admin") { id, username, password } }
+```
 </div></div>
 
 <hr class="sep-both">
 
 ## Introspection 🗺️
 
-[![graphql](../../../../cybersecurity/_badges/hacktricks/graphql.svg)](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/graphql)
 [![graphql_introspection](../../../../cybersecurity/_badges/rootme/web_server/graphql_introspection.svg)](https://www.root-me.org/en/Challenges/Web-Server/GraphQL-Introspection)
 
 Introspection refer to dumping the API schema. It's often disabled in production.
@@ -62,6 +98,8 @@ After identifying the types and their arguments, we can query them:
 
 [GraphQL Voyager](https://graphql-kit.com/graphql-voyager/) <small>(7.7k ⭐)</small> can take the input from your introspection query or from tools such as [clairvoyance](#introspection--clairvoyance) and display it as a graph.
 
+<br>
+
 #### Introspection — clairvoyance
 
 [clairvoyance](https://github.com/nikitastupin/clairvoyance) <small>(1.0k ⭐)</small> can be used to dump the schema:
@@ -81,9 +119,12 @@ $ clairvoyance 'https://example.com/api/graphql' -o schema.json
 
 #### GraphQL Query Injection
 
+[![graphql_injection](../../../../cybersecurity/_badges/rootme/web_server/graphql_injection.svg)](https://www.root-me.org/en/Challenges/Web-Server/GraphQL-Injection)
+[![graphql_mutation](../../../../cybersecurity/_badges/rootme/web_server/graphql_mutation.svg)](https://www.root-me.org/fr/Challenges/Web-Serveur/GraphQL-Mutation)
+
 Much like SQL, you can manipulate a query if user input is added directly to the query without any sanitization.
 
-```js!
+```graphql
 query {
   product(name: "$prodname") {
     id
