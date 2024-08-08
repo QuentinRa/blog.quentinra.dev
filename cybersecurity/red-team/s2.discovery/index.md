@@ -168,7 +168,11 @@ Stuff that I found, but never read/used yet.
 
 * `sudo arp-scan -l -I eth0`
 * [clFrex](https://cifrex.org/)
+
+S3 Buckets
+
 * find S3 Buckets `awscli` (https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html, [![contentdiscovery](../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery))
+* are not hidden, may be misconfigured to allow edit JS files
 * S3 buckets (AWS), blobs (Azure), cloud storage (GCP): may be accessible without auth [grayhatwarfare](https://buckets.grayhatwarfare.com/)
 </div><div>
 </div></div>
