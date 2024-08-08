@@ -533,7 +533,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* [nmapAutomator](https://github.com/21y4d/nmapAutomator), [nmap-vulners](https://github.com/vulnersCom/nmap-vulners)
+* [nmapAutomator](https://github.com/21y4d/nmapAutomator), [nmap-vulners](https://github.com/vulnersCom/nmap-vulners), [zgrab2](https://github.com/zmap/zgrab2)
 * `nmap --log-errors `
 * `nmap --badsum`: if answer, should be from a firewall/IDS
 * `--script-trace`, `--open`
