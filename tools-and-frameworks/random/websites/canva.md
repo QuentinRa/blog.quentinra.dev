@@ -168,18 +168,9 @@ async function doJob() {
         deleteNode.click()
         await sleep(800)
 
-        // goal: check the checkbox (if needed)
-        const checkbox = document.querySelector('label > div > input')
-        if (checkbox === undefined) {
-            console.log("Checkbox not found, stopping just in case.")
-            break
-        }
-        checkbox.click()
-        await sleep(100)
-
-        // goal: close the deal
+        // goal: confirm delete
         const confirmation = document.querySelector('body > div:nth-child(2) > div > div > div > div > div > div > div > div > div > div > div > button > span')?.parentNode
-        if (confirmation === undefined) {
+        if (confirmation == undefined) {
             console.log("confirmation not found")
             break
         }
@@ -201,7 +192,7 @@ if (images) {
         console.log("Cannot swap layout")
     } else {
         layout.click()
-        await doJob()
+        doJob() // await
     }
 } else {
     console.log("Cannot open image tab")
