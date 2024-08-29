@@ -14,6 +14,7 @@
 
 * [regex101](https://regex101.com/) (online tester)
 * [regexr](https://regexr.com/) (online tester)
+* [cyrilex](https://extendsclass.com/regex-tester.html) (online visual tester)
 </div></div>
 
 <hr class="sep-both">
