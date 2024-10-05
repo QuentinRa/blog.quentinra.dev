@@ -95,3 +95,24 @@ $sql_request = addslashes($sql_request);
 $sql_request = mysqli_escape_string($connexion, $sql_request);
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## PHPMyAdmin
+
+<div class="row row-cols-lg-2"><div>
+
+PHPMyAdmin is an open-source interface to MySQL and MariaDB databases. It's often shipped with tools such as WAMP or XAMPP.
+
+* [GitHub](https://github.com/phpmyadmin/phpmyadmin) <small>(7.2k ⭐)</small>
+* [Documentation](https://docs.phpmyadmin.net/en/latest/) <small>(⛪)</small>
+
+#### PHPMyAdmin — Enumeration
+
+* The "README.md" or other files may have been exposed
+</div><div>
+
+#### PHPMyAdmin — Exploitation
+
+* [CVE-2018-12613](https://nvd.nist.gov/vuln/detail/CVE-2018-12613): in PHP 4.8.x, an authenticated attacker can leverage a LFI to get a RCE on the server. [Sample code](https://www.exploit-db.com/exploits/50457).
+</div></div>
