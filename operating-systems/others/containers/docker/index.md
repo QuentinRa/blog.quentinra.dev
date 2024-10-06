@@ -17,10 +17,11 @@
 The easiest way to get started is to use [Docker desktop](https://www.docker.com/products/docker-desktop/). You may only install [docker engine](https://docs.docker.com/engine/install/) which only gives access to the `docker` command.
 
 ```shell!
+$ curl -fsSL "https://get.docker.com" | sh
 $ docker -v # test
 ```
 
-➡️ On Kali Linux/Parrot Sec, follow these [instructions](https://docs.docker.com/engine/install/debian/), and replace the codename in `/etc/apt/sources.list.d/docker.list` with a valid one.
+➡️ On Kali Linux, follow these [instructions](https://docs.docker.com/engine/install/debian/), and replace the codename in `/etc/apt/sources.list.d/docker.list` with a valid one.
 
 <br>
 
