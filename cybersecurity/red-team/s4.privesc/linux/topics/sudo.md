@@ -78,7 +78,7 @@ User [...] may run the following commands on [...]:
 
 ☠️ If you can only execute the script and not read it, either try to see if the script use an [injectable](../utils/injection.md) parameter or try to find if the source code is available somewhere else <small>(ex: on Git)</small>.
 
-⚠️ A configuration may contains both `env_keep` and `env_reset`.
+⚠️ A configuration may contains both `env_keep` and `env_reset`. The option `sudo -E` is the same as `env_keep`.
 </div></div>
 
 <hr class="sep-both">

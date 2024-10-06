@@ -421,7 +421,7 @@ I am not aware of any tool to automate this when `openssl` was used.
 
 <hr class="sep-both">
 
-## SHA-1 For Signatures
+## SHA-1 For Signatures 🪦
 
 <div class="row row-cols-lg-2"><div>
 
