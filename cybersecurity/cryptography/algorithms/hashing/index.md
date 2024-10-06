@@ -549,6 +549,39 @@ class SecretFactory:
         return None
 ```
 </div><div>
+
+The principle is well explained in [this article](https://log.kv.io/post/2011/03/04/exploiting-sha-1-signed-messages) and [its demo](https://github.com/nicolasff/pysha1/blob/master/demo.py). The core idea is that SHA1 is processing the input by blocks of 512 bits <small>(64*8)</small>. The first hash is reused to hash the second block and so on.
+
+Given the first hash, we can compute the second hash `new_signature` with an arbitrary `new_message`. This second hash is equals *(cf. the article)* to `sha1(flag + original_message + '\x80' + padding + flag_and_original_message_size + new_message)`.
+
+As long as we can guess the padding length and accordingly the `flag_and_original_message_size` value, we will be able to craft a message that will result in `new_signature`.
+
+```py
+import struct
+
+s, h = SecretFactory(), SHA1Helper()
+known_message = s.msg()
+known_signature = s.signature()
+h0, h1, h2, h3, h4 = h.extract_h_from_hash(known_signature)
+
+new_message = b"&file=flag.txt"
+new_payload = h.pad_sha1(h.pad_sha1(known_message) + new_message)
+h_chunks = h.sha1_process_chunk(new_payload[-64:], [h0, h1, h2, h3, h4])
+new_signature = h.merge_processed_chunks(h_chunks)
+
+for salt_length in range(1, 64-len(known_message)):
+    # "Testing if the key is", i, "characters long."
+    original_bit_len = struct.pack('>Q', (len(known_message) + salt_length) * 8)
+    padding = 64 - len(known_message) - salt_length - len(original_bit_len) - len(b'\x80')
+    test_message = known_message + b'\x80' + b'\x00' * padding + original_bit_len + new_message
+
+    result = s.can_access_file(test_message, new_signature)
+    if result is not None:
+        print("[+] Found", test_message)
+        print("[+] Response", result)
+        break
+```
+
 </div></div>
 
 <hr class="sep-both">
