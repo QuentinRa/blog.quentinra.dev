@@ -421,6 +421,138 @@ I am not aware of any tool to automate this when `openssl` was used.
 
 <hr class="sep-both">
 
+## SHA-1 For Signatures
+
+<div class="row row-cols-lg-2"><div>
+
+You should not use SHA-1 to verify the integrity of a message as it has vulnerabilities that can allow an attacker to forge messages.
+
+The class `SHA1Helper` implements the internals of SHA-1.
+
+<details class="details-n">
+<summary>SHA1Helper Python Class</summary>
+
+````python
+class SHA1Helper:
+    # SHA-1 Defaults
+    K = [0x5A827999, 0x6ED9EBA1, 0x8F1BBCDC, 0xCA62C1D6]
+
+    def left_rotate(self, n, b):
+        return ((n << b) | (n >> (32 - b))) & 0xFFFFFFFF
+
+    def sha1_process_chunk(self, chunk, h):
+        import struct
+
+        w = [0] * 80
+        for i in range(16):
+            w[i] = struct.unpack('>I', chunk[i*4:(i+1)*4])[0]
+        for i in range(16, 80):
+            w[i] = self.left_rotate(w[i-3] ^ w[i-8] ^ w[i-14] ^ w[i-16], 1)
+
+        a, b, c, d, e = h
+
+        for i in range(80):
+            if 0 <= i < 20:
+                f = (b & c) | (~b & d)
+                k = self.K[0]
+            elif 20 <= i < 40:
+                f = b ^ c ^ d
+                k = self.K[1]
+            elif 40 <= i < 60:
+                f = (b & c) | (b & d) | (c & d)
+                k = self.K[2]
+            else:
+                f = b ^ c ^ d
+                k = self.K[3]
+
+            temp = (self.left_rotate(a, 5) + f + e + k + w[i]) & 0xFFFFFFFF
+            e = d
+            d = c
+            c = self.left_rotate(b, 30)
+            b = a
+            a = temp
+
+        # Add the compressed chunk to the current hash value
+        h[0] = (h[0] + a) & 0xFFFFFFFF
+        h[1] = (h[1] + b) & 0xFFFFFFFF
+        h[2] = (h[2] + c) & 0xFFFFFFFF
+        h[3] = (h[3] + d) & 0xFFFFFFFF
+        h[4] = (h[4] + e) & 0xFFFFFFFF
+
+        return h
+
+    def pad_sha1(self, data):
+        import struct
+
+        original_byte_len = len(data)
+        original_bit_len = original_byte_len * 8
+
+        # Append the bit '1' to the end of the data
+        data += b'\x80'
+
+        # Append '0' bits until the length is congruent to 448 mod 512
+        data += b'\x00' * ((56 - (original_byte_len + 1) % 64) % 64)
+
+        # Append the original length as a 64-bit big-endian integer
+        data += struct.pack('>Q', original_bit_len)
+
+        return data
+
+    def merge_processed_chunks(self, h):
+        return ''.join(f'{x:08x}' for x in h)
+
+    def extract_h_from_hash(self, sha1_hash):
+        return [int("0x" + sha1_hash[i:i + 8], 16) for i in range(0, len(sha1_hash), 8)]
+
+    def sha1(self, data):
+        h = [0x67452301, 0xEFCDAB89, 0x98BADCFE, 0x10325476, 0xC3D2E1F0]
+        data = self.pad_sha1(data)
+
+        for i in range(0, len(data), 64):
+            chunk = data[i:i + 64]
+            h = self.sha1_process_chunk(chunk, h)
+
+        return self.merge_processed_chunks(h)
+````
+</details>
+
+We will demonstrate the attack in Python while reproducing the behavior of a PHP server when handling duplicate arguments.
+
+```text!
+?file=toto.txt&file=tata.txt ===> file == "tata.txt"
+```
+
+```py
+class SecretFactory:
+    """
+    Assume this code is secret
+    """
+    flag = b'flag{this_is_a_dummy_flag}'
+    sha1_helper = SHA1Helper()
+
+    def msg(self):
+        return b'file=toto.txt&action=DOWNLOAD'
+
+    def signature(self):
+        return self.sha1_helper.sha1(self.flag + self.msg())
+
+    def can_access_file(self, message, signature):
+        if signature == self.sha1_helper.sha1(self.flag + message):
+            # In PHP, the last value is taken if multiple are present (e.g. two &file=...)
+            import urllib.parse
+            parsed_params = urllib.parse.parse_qs(message)
+            params_as_in_php = {key: values[-1] for key, values in parsed_params.items()}
+            if params_as_in_php[b'file'] == b'flag.txt':
+                return "Well done, here is the flag: " + self.flag.decode()
+            else:
+                return "Sorry, only 'flag.txt' is available."
+        return None
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Random Notes
 
 <div class="row row-cols-lg-2"><div>
