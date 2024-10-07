@@ -421,13 +421,56 @@ I am not aware of any tool to automate this when `openssl` was used.
 
 <hr class="sep-both">
 
-## SHA-1 For Signatures 🪦
+## SHA-1 Hash Expansion 🪦
 
 <div class="row row-cols-lg-2"><div>
 
 You should not use SHA-1 to verify the integrity of a message as it has vulnerabilities that can allow an attacker to forge messages.
 
-The class `SHA1Helper` implements the internals of SHA-1.
+We will demonstrate the attack in Python while reproducing the behavior of a PHP server when handling duplicate arguments.
+
+```text!
+?file=toto.txt&file=tata.txt ===> file == "tata.txt"
+```
+
+```py
+class SecretFactory:
+    """
+    Assume only the method signatures are exposed
+    """
+    flag = b'flag{this_is_a_very_long_dummy_flag}'
+    sha1_helper = SHA1Helper()
+
+    def msg(self):
+        return b'file=toto.txt&action=DOWNLOAD'
+
+    def signature(self):
+        return self.sha1_helper.sha1(self.flag + self.msg())
+
+    def can_access_file(self, message, signature):
+        if signature == self.sha1_helper.sha1(self.flag + message):
+            # In PHP, the last value is taken if multiple are present (e.g. two &file=...)
+            import urllib.parse
+            parsed_params = urllib.parse.parse_qs(message)
+            params_as_in_php = {key: values[-1] for key, values in parsed_params.items()}
+            if params_as_in_php[b'file'] == b'flag.txt':
+                return "Well done, here is the flag: " + self.flag.decode()
+            else:
+                return "Sorry, only 'flag.txt' is available."
+        return None
+```
+
+The principle is well explained in [this article](https://log.kv.io/post/2011/03/04/exploiting-sha-1-signed-messages) and [its demo](https://github.com/nicolasff/pysha1/blob/master/demo.py). The core idea is that SHA1 is processing the input by blocks of 512 bits <small>(64*8)</small>. The first hash is reused to hash the second block and so on.
+
+Given the first hash, we can compute the second hash `new_signature` with an arbitrary `new_message`. This second hash is equals *(cf. the article)* to `sha1(flag + original_message + '\x80' + padding + flag_and_original_message_size + new_message)`.
+
+As long as we can guess the padding length and accordingly the `flag_and_original_message_size` value, we will be able to craft a message that will result in `new_signature`.
+</div><div>
+
+
+You may try this tool: [hash_extender](https://github.com/iagox86/hash_extender) <small>(1.1k ⭐)</small>. 
+
+I wrote a Python script with SHA1Helper partially written by GPT to play around. If you need to use it in a URL, you may not use: `dirty = urllib.parse.quote(dummy_message).replace("%3D","=").replace("%26","&")`.
 
 <details class="details-n">
 <summary>SHA1Helper Python Class</summary>
@@ -472,7 +515,6 @@ class SHA1Helper:
             b = a
             a = temp
 
-        # Add the compressed chunk to the current hash value
         h[0] = (h[0] + a) & 0xFFFFFFFF
         h[1] = (h[1] + b) & 0xFFFFFFFF
         h[2] = (h[2] + c) & 0xFFFFFFFF
@@ -487,13 +529,8 @@ class SHA1Helper:
         original_byte_len = len(data)
         original_bit_len = original_byte_len * 8
 
-        # Append the bit '1' to the end of the data
         data += b'\x80'
-
-        # Append '0' bits until the length is congruent to 448 mod 512
         data += b'\x00' * ((56 - (original_byte_len + 1) % 64) % 64)
-
-        # Append the original length as a 64-bit big-endian integer
         data += struct.pack('>Q', original_bit_len)
 
         return data
@@ -516,70 +553,46 @@ class SHA1Helper:
 ````
 </details>
 
-We will demonstrate the attack in Python while reproducing the behavior of a PHP server when handling duplicate arguments.
-
-```text!
-?file=toto.txt&file=tata.txt ===> file == "tata.txt"
-```
-
 ```py
-class SecretFactory:
-    """
-    Assume this code is secret
-    """
-    flag = b'flag{this_is_a_dummy_flag}'
+def main():
+    def generate_candidates(new_message, expected_max_number_of_blocks):
+        """
+        We only need the previous hash and the new_message_block
+        to compute the next hash. To determine the correct 
+        new_message_block, we need the 'message length' which is
+        the number of blocks that were processed to generate
+        the current hash.
+        
+        'expected_max_number_of_blocks' is the maximum number
+        of 64-byte blocks you anticipate the combined size of
+        the flag and the original message required.
+        """
+        h0, h1, h2, h3, h4 = [int("0x" + signature[i:i + 8], 16) for i in range(0, len(signature), 8)]
+        results = []
+        for possible_number_of_blocks in range(expected_max_number_of_blocks):
+            dummy_message = b'\x00' * possible_number_of_blocks * 64 + message
+            new_payload = sha1_helper.pad_sha1(sha1_helper.pad_sha1(dummy_message) + new_message)
+            h = sha1_helper.sha1_process_chunk(new_payload[-64:], [h0, h1, h2, h3, h4])
+            new_signature = sha1_helper.merge_processed_chunks(h)
+            results.append(new_signature)
+        return results
+
+    s = SecretFactory()
     sha1_helper = SHA1Helper()
 
-    def msg(self):
-        return b'file=toto.txt&action=DOWNLOAD'
+    message = s.msg()
+    signature = s.signature()
+    new_message = b"&file=flag.txt"
+    expected_max_number_of_blocks = 2
+    expected_candidates = generate_candidates(new_message, expected_max_number_of_blocks)
 
-    def signature(self):
-        return self.sha1_helper.sha1(self.flag + self.msg())
-
-    def can_access_file(self, message, signature):
-        if signature == self.sha1_helper.sha1(self.flag + message):
-            # In PHP, the last value is taken if multiple are present (e.g. two &file=...)
-            import urllib.parse
-            parsed_params = urllib.parse.parse_qs(message)
-            params_as_in_php = {key: values[-1] for key, values in parsed_params.items()}
-            if params_as_in_php[b'file'] == b'flag.txt':
-                return "Well done, here is the flag: " + self.flag.decode()
-            else:
-                return "Sorry, only 'flag.txt' is available."
-        return None
-```
-</div><div>
-
-The principle is well explained in [this article](https://log.kv.io/post/2011/03/04/exploiting-sha-1-signed-messages) and [its demo](https://github.com/nicolasff/pysha1/blob/master/demo.py). The core idea is that SHA1 is processing the input by blocks of 512 bits <small>(64*8)</small>. The first hash is reused to hash the second block and so on.
-
-Given the first hash, we can compute the second hash `new_signature` with an arbitrary `new_message`. This second hash is equals *(cf. the article)* to `sha1(flag + original_message + '\x80' + padding + flag_and_original_message_size + new_message)`.
-
-As long as we can guess the padding length and accordingly the `flag_and_original_message_size` value, we will be able to craft a message that will result in `new_signature`.
-
-```py
-import struct
-
-s, h = SecretFactory(), SHA1Helper()
-known_message = s.msg()
-known_signature = s.signature()
-h0, h1, h2, h3, h4 = h.extract_h_from_hash(known_signature)
-
-new_message = b"&file=flag.txt"
-new_payload = h.pad_sha1(h.pad_sha1(known_message) + new_message)
-h_chunks = h.sha1_process_chunk(new_payload[-64:], [h0, h1, h2, h3, h4])
-new_signature = h.merge_processed_chunks(h_chunks)
-
-for salt_length in range(1, 64-len(known_message)):
-    # "Testing if the key is", i, "characters long."
-    original_bit_len = struct.pack('>Q', (len(known_message) + salt_length) * 8)
-    padding = 64 - len(known_message) - salt_length - len(original_bit_len) - len(b'\x80')
-    test_message = known_message + b'\x80' + b'\x00' * padding + original_bit_len + new_message
-
-    result = s.can_access_file(test_message, new_signature)
-    if result is not None:
-        print("[+] Found", test_message)
-        print("[+] Response", result)
-        break
+    # Bruteforce the 'message' by trying multiple padding and message sizes
+    for salt_length in range(1, expected_max_number_of_blocks * 64):
+        dummy_message = sha1_helper.pad_sha1(b'\x00' * salt_length + message)[salt_length:] + new_message
+        for hash_candidate in expected_candidates:
+            if s.can_access_file(dummy_message, hash_candidate):
+                print(s.can_access_file(dummy_message, hash_candidate))
+                return
 ```
 
 </div></div>
