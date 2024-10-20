@@ -5,7 +5,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[Aquatone](https://github.com/michenriksen/aquatone) <small>(5.4k ⭐, 2019 🪦)</small> is a tool often used when given a large list of websites we want to get a preview of each.
+[Aquatone](https://github.com/michenriksen/aquatone) <small>(5.6k ⭐, 2019 🪦)</small> is a tool often used when given a large list of websites we want to get a preview of each.
 
 ```ps
 $ go install github.com/michenriksen/aquatone@latest

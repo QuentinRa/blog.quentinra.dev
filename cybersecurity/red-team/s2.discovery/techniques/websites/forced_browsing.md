@@ -54,7 +54,7 @@ Common tools are:
 * [dirsearch](/cybersecurity/red-team/tools/enumeration/web/dirsearch.md)
 * [ffuf](/cybersecurity/red-team/tools/enumeration/web/ffuf.md#ffuf)
 * [wfuzz](/cybersecurity/red-team/tools/enumeration/web/wfuzz.md)
-* [feroxbuster](https://github.com/epi052/feroxbuster) <small>(5.2k ⭐, Rust)</small>
+* [feroxbuster](https://github.com/epi052/feroxbuster) <small>(5.9k ⭐, Rust)</small>
 * [dirb](https://dirb.sourceforge.net/) <small>(installable on any Debian)</small>
 * [DirBuster](https://github.com/KajanM/DirBuster) <small>(0.1k ⭐)</small>
 
@@ -83,7 +83,7 @@ $ git log -p -- config.php  # look at config.php history
 $ git show commit_id
 ```
 
-A few automated tools: [GitHacker](https://github.com/WangYihang/GitHacker) <small>(1.3k ⭐, 2023 🪦)</small> [GitTools](https://github.com/internetwache/GitTools)  <small>(3.7k ⭐, 2022 🪦, 👻)</small>, [GitHack](https://github.com/lijiejie/GitHack)  <small>(2.9k ⭐, 2022 🪦)</small> and [git-dumper](https://github.com/arthaud/git-dumper/tree/master) <small>(1.6k ⭐)</small>.
+A few automated tools: [GitHacker](https://github.com/WangYihang/GitHacker) <small>(1.4k ⭐, 2023 🪦)</small> [GitTools](https://github.com/internetwache/GitTools)  <small>(3.8k ⭐, 2022 🪦, 👻)</small>, [GitHack](https://github.com/lijiejie/GitHack)  <small>(3.1k ⭐, 2022 🪦)</small> and [git-dumper](https://github.com/arthaud/git-dumper/tree/master) <small>(1.8k ⭐)</small>.
 
 ```shell!
 $ DEST="$HOME/tools/gitdumper"

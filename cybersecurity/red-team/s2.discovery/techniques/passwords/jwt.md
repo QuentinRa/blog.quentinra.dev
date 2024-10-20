@@ -32,7 +32,7 @@ They can be transferred and found in:
 
 <div class="row row-cols-lg-2"><div>
 
-You can use [jwt-tools](https://github.com/ticarpi/jwt_tool) <small>(4.8k ⭐)</small> to attack JWT:
+You can use [jwt-tools](https://github.com/ticarpi/jwt_tool) <small>(5.4k ⭐)</small> to attack JWT:
 
 ```shell!
 $ git clone https://github.com/ticarpi/jwt_tool.git $HOME/tools/jwt_tool
@@ -152,7 +152,7 @@ $ docker run -it ttervoort/jws2pubkey "JWT1" "JWT2"
 
 <div class="row row-cols-lg-2"><div>
 
-The [pyjwt](https://github.com/jpadilla/pyjwt) <small>(5.0k ⭐)</small> library can be used to manipulate JWT in Python. There are two unmaintained alternatives which are:
+The [pyjwt](https://github.com/jpadilla/pyjwt) <small>(5.1k ⭐)</small> library can be used to manipulate JWT in Python. There are two unmaintained alternatives which are:
 
 * [python-jwt by GehirnInc](https://github.com/GehirnInc/python-jwt) <small>(0.1k ⭐, 2022 🪦)</small>
 * [python-jwt by D. Halls](https://github.com/davedoesdev/python-jwt) <small>(0.2k ⭐, 2023 🪦)</small> — has two CVEs

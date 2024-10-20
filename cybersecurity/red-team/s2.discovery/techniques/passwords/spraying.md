@@ -16,8 +16,8 @@ Many companies have some [password policy](policy.md) that may include account l
 Some tools you might use:
 
 * [SprayingToolkit](https://github.com/byt3bl33d3r/SprayingToolkit) <small>(1.4k ⭐, 2022 🪦)</small>
-* [TREVORspray](https://github.com/blacklanternsecurity/TREVORspray) <small>(0.9k ⭐)</small>
-* [CredMaster](https://github.com/knavesec/CredMaster) <small>(0.8k ⭐)</small>
+* [TREVORspray](https://github.com/blacklanternsecurity/TREVORspray) <small>(1.0k ⭐)</small>
+* [CredMaster](https://github.com/knavesec/CredMaster) <small>(1.0k ⭐)</small>
 
 Many [network authentication tools](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md) can be used such as `hydra -C`.
 </div></div>
@@ -55,7 +55,7 @@ $ for u in $(cat wordlist);do rpcclient -U "$u%PasswordHere" -c "getusername;qui
 
 [![active_directory_enumeration_attacks](../../../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 
-You may use [DomainPasswordSpray](https://github.com/dafthack/DomainPasswordSpray) <small>(1.6k ⭐)</small>:
+You may use [DomainPasswordSpray](https://github.com/dafthack/DomainPasswordSpray) <small>(1.8k ⭐)</small>:
 
 ```ps
 PS> Import-Module .\DomainPasswordSpray.ps1
