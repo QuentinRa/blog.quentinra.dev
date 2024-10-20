@@ -4,10 +4,10 @@
 
 [Potatoes](https://jlajara.gitlab.io/Potatoes_Windows_Privesc) 🥔 is a set of potatoes that can be used to escalate privileges from Windows Service Accounts to NT AUTHORITY/SYSTEM.
 
-* [SweetPotato](https://github.com/CCob/SweetPotato) <small>(1.4k ⭐, 2022 🪦)</small>
-* [Juicy Potato](https://github.com/ohpe/juicy-potato) <small>(2.2k ⭐, 2021 🪦)</small>
-* [RoguePotato](https://github.com/antonioCoco/RoguePotato) <small>(0.9k ⭐, 2020 🪦)</small>
-* [RottenPotatoNG](https://github.com/breenmachine/RottenPotatoNG) <small>(0.8k ⭐, 2017 🪦)</small>
+* [SweetPotato](https://github.com/CCob/SweetPotato) <small>(1.6k ⭐, 2022 🪦)</small>
+* [Juicy Potato](https://github.com/ohpe/juicy-potato) <small>(2.4k ⭐, 2021 🪦)</small>
+* [RoguePotato](https://github.com/antonioCoco/RoguePotato) <small>(1.0k ⭐, 2020 🪦)</small>
+* [RottenPotatoNG](https://github.com/breenmachine/RottenPotatoNG) <small>(0.9k ⭐, 2017 🪦)</small>
 * ...
 
 Juicy and Rogue don't work on all versions of Windows.

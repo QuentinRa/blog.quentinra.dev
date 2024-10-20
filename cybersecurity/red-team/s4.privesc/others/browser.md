@@ -8,7 +8,7 @@
 [![glitch](../../../_badges/thm-p/glitch.svg)](https://tryhackme.com/r/room/glitch)
 [![file_insecure_storage_1](../../../_badges/rootme/cryptanalysis/file_insecure_storage_1.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/File-Insecure-storage-1)
 
-Mozilla Firefox passwords can be extracted and cracked using [firefox_decrypt](https://github.com/unode/firefox_decrypt) <small>(1.8k ⭐)</small>. To install it on Kali:
+Mozilla Firefox passwords can be extracted and cracked using [firefox_decrypt](https://github.com/unode/firefox_decrypt) <small>(2.0k ⭐)</small>. To install it on Kali:
 
 ```ps
 $ pipx install git+https://github.com/unode/firefox_decrypt.git
@@ -48,7 +48,7 @@ AppData\Local\Google\Chrome\User Data
 AppData\Local\BraveSoftware\Brave-Browser\User Data\
 ```
 
-* **Decrypt on Windows** using [decrypt-chrome-passwords](https://github.com/ohyicong/decrypt-chrome-passwords/) <small>(0.8k ⭐)</small>
+* **Decrypt on Windows** using [decrypt-chrome-passwords](https://github.com/ohyicong/decrypt-chrome-passwords/) <small>(0.9k ⭐)</small>
 
 * **Decrypt on Windows** [mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md)
 
@@ -58,7 +58,7 @@ For the current user, you can use:
 mimikatz# dpapi::chrome /in:"%localappdata%\Google\Chrome\User Data\Default\Login Data" /unprotect
 ```
 
-* **Decrypt on Windows** using [SharpChrome](https://github.com/GhostPack/SharpDPAPI) <small>(1.0k ⭐)</small> | [compiled](https://github.com/r3motecontrol/Ghostpack-CompiledBinaries)
+* **Decrypt on Windows** using [SharpChrome](https://github.com/GhostPack/SharpDPAPI) <small>(1.2k ⭐)</small> | [compiled](https://github.com/r3motecontrol/Ghostpack-CompiledBinaries)
 
 ```shell!
 PS> .\SharpChrome.exe logins /unprotect

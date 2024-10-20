@@ -21,8 +21,8 @@ Privileges are [listed and explained here](https://learn.microsoft.com/en-us/win
 
 You can find way to exploit them on: 
 
-* [Priv2Admin](https://github.com/gtworek/Priv2Admin) <small>(1.7k ⭐)</small>
-* [PrivFu](https://github.com/daem0nc0re/PrivFu/) <small>(0.7k ⭐)</small>
+* [Priv2Admin](https://github.com/gtworek/Priv2Admin) <small>(1.9k ⭐)</small>
+* [PrivFu](https://github.com/daem0nc0re/PrivFu/) <small>(0.8k ⭐)</small>
 * ...
 
 Privileges may have been granted but not enabled. Some privileges can be enable using their exploit script, others can be enabled with builtin commands, and for most others, we can use:
@@ -51,7 +51,7 @@ PS> # You can pick any port for -l. It's for DCOM traffic.
 PS> .\JuicyPotato.exe -l any_port -p c:\windows\system32\cmd.exe -a "/c <reverse shell command>" -t *
 ````
 
-You can use [PrintSpoofer](https://github.com/itm4n/PrintSpoofer) <small>(1.7k ⭐, 2020 🪦)</small>:
+You can use [PrintSpoofer](https://github.com/itm4n/PrintSpoofer) <small>(1.9k ⭐, 2020 🪦)</small>:
 
 ````ps
 PS> .\PrintSpoofer.exe -c "<reverse shell command>"
@@ -59,8 +59,8 @@ PS> .\PrintSpoofer.exe -c "<reverse shell command>"
 
 Additional references:
 
-* [RogueWinRM](https://github.com/antonioCoco/RogueWinRM) <small>(0.6k ⭐, 2020 🪦)</small> using [WinRM](/operating-systems/networking/protocols/winrm.md)
-* [token-priv](https://github.com/hatRiot/token-priv/tree/master) <small>(0.7k ⭐, 2017 🪦)</small>
+* [RogueWinRM](https://github.com/antonioCoco/RogueWinRM) <small>(0.7k ⭐, 2020 🪦)</small> using [WinRM](/operating-systems/networking/protocols/winrm.md)
+* [token-priv](https://github.com/hatRiot/token-priv/tree/master) <small>(0.8k ⭐, 2017 🪦)</small>
 </div><div>
 </div></div>
 
@@ -113,7 +113,7 @@ PS> icacls 'C:\poc.txt' /grant my_username:F
 
 *-- Grants SeBackup and SeRestore privileges --*
 
-We can use [SeBackupPrivilege](https://github.com/giuliano108/SeBackupPrivilege) <small>(0.2k ⭐, 2013 🪦)</small> to enable/disable the privilege and exploit it.
+We can use [SeBackupPrivilege](https://github.com/giuliano108/SeBackupPrivilege) <small>(0.3k ⭐, 2013 🪦)</small> to enable/disable the privilege and exploit it.
 
 ```shell!
 PS> Import-Module .\SeBackupPrivilegeUtils.dll

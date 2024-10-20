@@ -39,7 +39,7 @@ Once you found a file with the SUID bit, either there is a known way to exploit 
 
 Policy Kit (Polkit) is part of the Linux authorization system. It used and installed by default on every major Linux distribution. We can interact with it using the `/usr/bin/pkexec` SUID file. 
 
-Some distributions were vulnerable to [CVE-2021-3560](https://nvd.nist.gov/vuln/detail/CVE-2021-3560) <small>(<v119)</small>. See [arthepsy PoC](https://github.com/arthepsy/CVE-2021-4034) <small>(1.0k ⭐)</small>, or [berdav PoC](https://github.com/berdav/CVE-2021-4034) <small>(1.9k ⭐)</small>.
+Some distributions were vulnerable to [CVE-2021-3560](https://nvd.nist.gov/vuln/detail/CVE-2021-3560) <small>(<v119)</small>. See [arthepsy PoC](https://github.com/arthepsy/CVE-2021-4034) <small>(1.1k ⭐)</small>, or [berdav PoC](https://github.com/berdav/CVE-2021-4034) <small>(2.0k ⭐)</small>.
 
 📚 Example Usage: `/usr/bin/pkexec bash`
 

