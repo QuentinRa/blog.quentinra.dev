@@ -18,3 +18,27 @@ It often had critical vulnerabilities. Refer to [the release notes](https://gith
 * `tech:tech` (Technician)
 * `normal:normal` (Observer)
 </div></div>
+
+<hr class="sep-both">
+
+## GLPi Pentester Notes ☠️
+
+<div class="row row-cols-lg-2"><div>
+
+#### GLPi Enumeration
+
+When properly configured, only the `/public/` route was exposed. Otherwise, you can navigate to `/version/` to find the GLPI version.
+
+Once logged, you can also find the version in "about" or in the code.
+</div><div>
+
+#### GLPi Foothold
+
+Try default accounts/credentials.
+
+<br>
+
+#### GLPi Exploitation
+
+This [article](https://sensepost.com/blog/2024/from-a-glpi-patch-bypass-to-rce/) tackles a few CVEs in `GLPI < 10.0.16` to get a RCE.
+</div></div>
