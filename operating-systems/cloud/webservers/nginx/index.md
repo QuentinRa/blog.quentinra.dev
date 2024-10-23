@@ -44,6 +44,30 @@ This reverse proxy configuration will allow you to access `http://real_target:po
 
 <hr class="sep-both">
 
+## Nginx Misconfigurations
+
+<div class="row row-cols-lg-2"><div>
+
+#### Nginx Alias Misconfiguration
+
+[![nginx_alias_misconfiguration](../../../../cybersecurity/_badges/rootme/web_server/nginx_alias_misconfiguration.svg)](https://www.root-me.org/en/Challenges/Web-Server/Nginx-Alias-Misconfiguration)
+
+To map a route to a path, we should not use alias. Otherwise, malicious users will be able to escape the exposed folder using `../`:
+
+```diff
+- # Can use http://localhost/assets../ to access "/app"
+location /assets/ {
+-    alias /app/assets/;
++    root /app/assets/;
+}
+```
+
+➡️ Known tool to exploit this: [Kyubi](https://github.com/shiblisec/Kyubi) <small>(0.1k ⭐)</small>.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
