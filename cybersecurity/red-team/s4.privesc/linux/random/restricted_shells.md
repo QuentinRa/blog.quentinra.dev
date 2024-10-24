@@ -162,6 +162,14 @@ breakpoint() # then write any python code
 help(len) # write m<cr>a<cr>|<cr>a<cr>your command<cr>q<cr>
 ```
 
+Use python environment variables:
+
+```py
+import os
+os.environ['PYTHONINSPECT'] = 'abc'
+# will pop a python shell when you trigger an exception
+```
+
 Refer to [introspection](/cybersecurity/red-team/s3.exploitation/vulns/cheatsheet/payloads.md#python--deep-introspection) for a few more tricks.
 </div></div>
 

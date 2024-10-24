@@ -45,7 +45,8 @@ Clean aggregators
 
 * [mangadex.org](https://mangadex.org/)
 * [mangakatana.com](http://mangakatana.com/)
-* [tachiyomi](https://tachiyomi.org/) (20k ⭐, mobile app)
+* [tachiyomi](https://tachiyomi.org/) <small>(20k ⭐, mobile app)</small>
+* [LANraragi](https://github.com/Difegue/LANraragi)
 
 <details class="details-n">
 <summary>Random Aggregators</summary>

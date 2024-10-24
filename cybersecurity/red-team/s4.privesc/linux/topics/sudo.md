@@ -124,6 +124,8 @@ $ sudo LD_PRELOAD=/tmp/init.so tar
 ```
 
 💎 Congratulations, you are `root` now!
+
+📚 You can set `LD_LIBRARY_PATH` to use a relative path.
 </div></div>
 
 <hr class="sep-both">
