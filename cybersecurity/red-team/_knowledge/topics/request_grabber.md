@@ -23,7 +23,7 @@ We may use online public solutions such as API Testing Platforms:
 * [ngrok](https://ngrok.com/) <small>(HTTP 🌍 and TCP ⭐, **credit card** required for free plan 💵)</small>
 * [pinggy](https://pinggy.io/) <small>(TCP ⭐, account required ☠️)</small>
 * [requestinspector](https://requestinspector.com/) <small>(HTTP 🌍)</small>
-* [beeceptor](https://beeceptor.com/) <small>(HTTP 🌍)</small>
+* [beeceptor](https://beeceptor.com/) <small>(HTTP 🌍, custom replies 🐐)</small>
 * [pastebin](https://pastebin.com/) <small>(HTTP + UPLOAD 🌍, use URL to raw file after upload)</small>
 * [github.io](https://pages.github.com/) <small>(HTTP + UPLOAD 🌍, account required 🪦)</small>
 * ...
