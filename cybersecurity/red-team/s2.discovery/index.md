@@ -105,7 +105,7 @@ Websites
 * [Account discovery](/cybersecurity/red-team/s2.discovery/techniques/websites/account.md) 🔑: find accounts
 * [Forced Browsing](/cybersecurity/red-team/s2.discovery/techniques/websites/forced_browsing.md) 🚪🔑: find hidden pages/folders
 * [IDOR](/cybersecurity/red-team/s2.discovery/techniques/websites/idor.md) 🚪🔑: find if you can access someone else content
-* [Logic flaws](/cybersecurity/red-team/s2.discovery/techniques/websites/logic_flaws.md) 🚪: find logic flaws
+* [Logic flaws](/cybersecurity/red-team/s2.discovery/techniques/websites/logic_flaws.md) 🚪: find logic flaws, mass assignment
 * [Virtual hosts](/cybersecurity/red-team/s2.discovery/techniques/websites/vhosts.md) 🚪: find virtual hosts
 * [Subdomains](/cybersecurity/red-team/s2.discovery/techniques/websites/subdomains.md) 🚪: find subdomains
 * [Parameters](/cybersecurity/red-team/s2.discovery/techniques/websites/parameters.md) 🚪: find hidden parameters

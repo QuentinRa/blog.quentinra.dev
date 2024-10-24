@@ -15,6 +15,8 @@ Anyway, it's a good practice to test the website features as a user before tryin
 👉 Don't forget the 404 page!
 
 👉 Don't forget special pages, such as the password reset page.
+
+📚 Don't forget to invoke `OPTIONS` on API routes.
 </div></div>
 
 <hr class="sep-both">
