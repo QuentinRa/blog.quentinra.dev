@@ -231,4 +231,14 @@ Pop a reverse shell
 
 * You can try to upload a reverse shell as an image
 * You can replace the template code with a reverse shell, and navigate to the template page shown when editing the template
+
+<br>
+
+#### Cmsimple
+
+[![P0wn3d](../../../../_badges/rootme/realist/P0wn3d.svg)](https://www.root-me.org/en/Challenges/Realist/P0wn3d)
+
+In version 3, you could find the [cmsimple](https://www.cmsimple.org/en/) version from `/content/content.htm`, `/2lang/content/content.htm`, or from the meta tag.
+
+Version 3.1 had a LFI vulnerability at `/index.php?sl=./en`.
 </div></div>
