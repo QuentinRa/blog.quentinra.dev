@@ -23,3 +23,17 @@ select * from user_role_privs;        -- list current privileges
 select name, password from sys.user$; -- retrieve hashes | DBA only
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## XXX
+
+<div class="row row-cols-lg-2"><div>
+
+Every select must be associated with a table. You can use `dual`:
+
+```sql!
+SELECT 'abc' FROM dual
+```
+</div><div>
+</div></div>
