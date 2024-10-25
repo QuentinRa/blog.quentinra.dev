@@ -78,6 +78,7 @@ Then, in `$_REQUEST['n']` there would be `6`, an uncheck value.
 
 [![type_juggling](../../../../_badges/poat/type_juggling.svg)](https://swisskyrepo.github.io/PayloadsAllTheThings/Type%20Juggling/)
 [![php_type_juggling](../../../../_badges/rootme/web_server/php_type_juggling.svg)](https://www.root-me.org/en/Challenges/Web-Server/PHP-type-juggling)
+[![deserialization_modifying_serialized_data_types](../../../../_badges/ps-lab/deserialization/deserialization_modifying_serialized_data_types.svg)](https://portswigger.net/web-security/deserialization/exploiting/lab-deserialization-modifying-serialized-data-types)
 
 <div class="row row-cols-lg-2"><div>
 
