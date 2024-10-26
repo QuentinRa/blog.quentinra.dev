@@ -132,6 +132,12 @@ $ sudo systemctl restart lightdm
 #### BackBox Linux 🥔
 
 [backbox](https://linux.backbox.org/) is a penetration testing distro.
+
+<br>
+
+#### BlackArch 😶‍🌫️
+
+[BlackArch](https://www.blackarch.org/) is mostly used by ArchLinux users, as an alternative to Parrot and Kali Linux.
 </div><div>
 
 #### Parrot Linux 🦜
@@ -143,12 +149,6 @@ $ sudo systemctl restart lightdm
 * The `.config` hold the UI configuration... You can copy it to another user. You need to log back in to see the changes.
 * `sudo apt-get -y install ftp`
 * To download Debian 10 packages, `sudo nano /etc/apt/sources.list` and add `deb http://deb.debian.org/debian buster main`.
-
-<br>
-
-#### BlackArch 😶‍🌫️
-
-[BlackArch](https://www.blackarch.org/) is mostly used by ArchLinux users, as an alternative to Parrot and Kali Linux.
 </div></div>
 
 <hr class="sep-both">
