@@ -121,6 +121,7 @@ $ hashcat -m 16500 hash ./jwt.secrets.list
 #### JWT — JWK Header Injection
 
 [![jwt_header_injection](../../../../_badges/rootme/web_server/jwt_header_injection.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Header-Injection)
+[![jwt_jwk_injection](../../../../_badges/ps-lab/jwt/jwt_jwk_injection.svg)](https://portswigger.net/web-security/jwt/lab-jwt-authentication-bypass-via-jwk-header-injection)
 
 An application may use the `jwk` header to represent the RSA key used to sign the data. We may be able to inject our own RSA key.
 
@@ -134,6 +135,7 @@ $ jwt_tool 'jwt' -X i -I -hc kid -hv jwt_tool -pc claim -pv value
 #### JWT — JKU Header Injection
 
 [![jwt_unsecure_key_handling](../../../../_badges/rootme/web_server/jwt_unsecure_key_handling.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Unsecure-Key-Handling)
+[![jwt_jku_injection](../../../../_badges/ps-lab/jwt/jwt_jku_injection.svg)](https://portswigger.net/web-security/jwt/lab-jwt-authentication-bypass-via-jku-header-injection)
 
 The `jku` header contains a URL or a filename used to fetch a key.
 
@@ -141,7 +143,7 @@ The `jku` header contains a URL or a filename used to fetch a key.
 
 ```shell!
 $ cat $HOME/.jwt_tool/jwttool_custom_jwks.json # upload to URL as jwks.json
-$ jwt_tool -X s -ju "URL/jwks.json" -I -hc kid -hv jwt_tool -pc claim -pv value
+$ jwt_tool -ju "URL/jwks.json" -X s -I -hc kid -hv jwt_tool -pc claim -pv value
 ```
 
 📚 You may check: `/jwks.json`, `/.well-known/jwks.json`, etc. Refer to [SSRF](/cybersecurity/red-team/s3.exploitation/vulns/web/ssrf.md) for insight <small>(filtering, attacks, etc.)</small> and setting up a [grabber](/cybersecurity/red-team/_knowledge/topics/request_grabber.md).
@@ -154,6 +156,7 @@ $ jwt_tool -X s -ju "URL/jwks.json" -I -hc kid -hv jwt_tool -pc claim -pv value
 [![jwt_unsecure_key_handling](../../../../_badges/rootme/web_server/jwt_unsecure_key_handling.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Unsecure-Key-Handling)
 [![jwt_public_key](../../../../_badges/rootme/web_server/jwt_public_key.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Public-key)
 [![jwt_unsecure_file_signature](../../../../_badges/rootme/web_server/jwt_unsecure_file_signature.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Unsecure-File-Signature)
+[![jwt_kid_path_traversal](../../../../_badges/ps-lab/jwt/jwt_kid_path_traversal.svg)](https://portswigger.net/web-security/jwt/lab-jwt-authentication-bypass-via-kid-header-path-traversal)
 
 The kid header may be present in two scenarios. The first one is to define which key file contains the secret. The second usage is to determines which of the keys in the `jku` we should use.
 
@@ -236,5 +239,21 @@ Stuff that I found, but never read/used yet.
 
 * [PortSwigger JWT](https://portswigger.net/web-security/jwt)
 * [jwtcrack/jwt2john](https://github.com/Sjord/jwtcrack)
+* `cty` (if you can bypass the signature, to try to change the content type and perform deserialization/XXE attacks)
+* `x5c` (refer to related CVEs)
 </div><div>
+
+```json!
+{
+    "kid": "jwt_tool",
+    "typ": "JWT",
+    "alg": "RS256",
+    "jwk": {
+        "kty": "RSA",
+        "e": "...",
+        "kid": "jwt_tool",
+        "n": "..."
+    }
+}
+```
 </div></div>
