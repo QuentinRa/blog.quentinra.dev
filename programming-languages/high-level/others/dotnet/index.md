@@ -2,7 +2,6 @@
 
 <div class="row row-cols-lg-2"><div>
 
-
 Microsoft originally developed the [.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework) for Windows applications. It's unmaintained since 2022. Their renamed the core module to [.NET](https://dotnet.microsoft.com/en-us/) <small>(dotnet)</small> and made it open-source and cross-platform.
 
 Latest notable version are:
