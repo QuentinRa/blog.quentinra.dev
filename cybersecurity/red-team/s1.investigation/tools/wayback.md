@@ -12,10 +12,10 @@ The [Wayback machine](https://archive.org/web/) is a website from which users ca
 * 💸 A page that was removed, but may be still available <small>(.old/hidden)</small>
 * ...
 
-There is a [python script](https://github.com/akamhy/waybackpy) <small>(0.4k ⭐, 2022 ☠️)</small> for command-line usage.
+There is a [python script](https://github.com/akamhy/waybackpy) <small>(0.5k ⭐, 2022 ☠️)</small> for command-line usage.
 </div><div>
 
-There is also a [go script](https://github.com/tomnomnom/waybackurls) <small>(3.1k ⭐, 2022 ☠️)</small>:
+There is also a [go script](https://github.com/tomnomnom/waybackurls) <small>(3.5k ⭐, 2022 ☠️)</small>:
 
 ```ps
 $ go install github.com/tomnomnom/waybackurls@latest

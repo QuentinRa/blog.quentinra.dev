@@ -4,7 +4,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[theHarvester](https://github.com/laramies/theHarvester) <small>(10.1k ⭐)</small> is a python tool that leverages the use of other OSINT or DNS tools by integrating them in a all-in-one solution.
+[theHarvester](https://github.com/laramies/theHarvester) <small>(11.3k ⭐)</small> is a python tool that leverages the use of other OSINT or DNS tools by integrating them in a all-in-one solution.
 
 ```ps
 $ theHarvester -d IP -b crtsh -f output_crtsh.txt

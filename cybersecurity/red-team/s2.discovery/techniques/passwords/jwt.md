@@ -3,6 +3,7 @@
 [![hacking_jwt](../../../../_badges/hacktricks/hacking_jwt.svg)](https://book.hacktricks.xyz/pentesting-web/hacking-jwt-json-web-tokens)
 [![json_web_token](../../../../_badges/poat/json_web_token.svg)](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/JSON%20Web%20Token)
 [![marketplace](../../../../_badges/thm-p/marketplace.svg)](https://tryhackme.com/r/room/marketplace)
+[![jwt](../../../../_badges/ps-course/jwt.svg)](https://portswigger.net/web-security/jwt)
 
 <div class="row row-cols-lg-2"><div>
 
