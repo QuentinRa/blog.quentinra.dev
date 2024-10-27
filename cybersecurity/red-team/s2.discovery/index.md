@@ -108,12 +108,14 @@ Websites
 * [Logic flaws](/cybersecurity/red-team/s2.discovery/techniques/websites/logic_flaws.md) 🚪: find logic flaws, mass assignment
 * [Virtual hosts](/cybersecurity/red-team/s2.discovery/techniques/websites/vhosts.md) 🚪: find virtual hosts
 * [Subdomains](/cybersecurity/red-team/s2.discovery/techniques/websites/subdomains.md) 🚪: find subdomains
-* [Parameters](/cybersecurity/red-team/s2.discovery/techniques/websites/parameters.md) 🚪: find hidden parameters
+* [Parameters](/cybersecurity/red-team/s2.discovery/techniques/websites/hidden_parameters.md) 🚪: find hidden parameters
 * [Json Web Tokens](/cybersecurity/red-team/s2.discovery/techniques/passwords/jwt.md) 🚪🔑: find and exploit these
 
 ➡️ You should check for signs of [well-known vulnerabilities](/cybersecurity/red-team/s3.exploitation/index.md#common-vulnerabilities-).
 
 ➡️ What you can [do if you get access to a PHP Info script](/cybersecurity/red-team/s2.discovery/techniques/websites/php_info.md).
+
+➡️ Why not try inserting newlines/`%0A` in parameters. Why not try to transform PHP/JS parameters as [explained here]().
 
 🪦 If there is a load balancer such as haproxy blocking some URLs, can you try to see if `//blocked_endpoint` is blocked?
 </div></div>

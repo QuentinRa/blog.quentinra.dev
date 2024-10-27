@@ -32,6 +32,8 @@ For instance, if we can change our username and add the field `status`, we may b
 +{"username":"toto","status":"admin"}
 ```
 </div><div>
+
+👻 See also: Ruby/Rails.
 </div></div>
 
 <hr class="sep-both">
