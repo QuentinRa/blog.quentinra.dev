@@ -84,7 +84,7 @@ For a penetration tester, it's more something like that
 
 We usually use a Linux distro, mostly on a VM, to practice.
 
-#### Kali Linux
+#### Kali Linux 🐉
 
 You can [download Kali ISO here](https://www.kali.org/get-kali/#kali-virtual-machines). On Virtual Box, you have to select Linux 2.6/3.x/4.x/5.x (64-bits) and tune the settings.
 
@@ -129,17 +129,6 @@ $ sudo systemctl restart lightdm
 
 <br>
 
-#### BackBox Linux 🥔
-
-[backbox](https://linux.backbox.org/) is a penetration testing distro.
-
-<br>
-
-#### BlackArch 😶‍🌫️
-
-[BlackArch](https://www.blackarch.org/) is mostly used by ArchLinux users, as an alternative to Parrot and Kali Linux.
-</div><div>
-
 #### Parrot Linux 🦜
 
 [Parrot](https://www.parrotsec.org/) is a popular alternative to Kali Linux.
@@ -148,7 +137,35 @@ $ sudo systemctl restart lightdm
 * `sudo 7z x /usr/share/wordlists/rockyou.txt.gz` to extract rockyou.txt wordlist. Location: `/usr/share/wordlists/rockyou.txt`.
 * The `.config` hold the UI configuration... You can copy it to another user. You need to log back in to see the changes.
 * `sudo apt-get -y install ftp`
-* To download Debian 10 packages, `sudo nano /etc/apt/sources.list` and add `deb http://deb.debian.org/debian buster main`.
+* To download Debian 10 packages, `sudo nano /etc/apt/sources.list` and add `deb http://deb.debian.org/debian buster main`, but this is somewhat risky.
+</div><div>
+
+#### Exegol Docker 🐐
+
+[Exegol](https://github.com/ThePorgs/Exegol) <small>(1.9k ⭐)</small> is a docker-based hacking environment. It's more appropriate for pentesting rather than daily use as you can have one per audit instead of cloning virtual machines.
+
+```shell!
+$ sudo apt install pipx git curl -y
+$ curl -fsSL "https://get.docker.com/" | sh
+$ pipx install exegol && pipx ensurepath
+$ exegol install # install nightly
+$ cd /path/to/my/audit/folder
+$ exegol start -cwd -fs # use cwd and adjust perms
+```
+
+You can open multiple terminals to the docker container by using `exegol start` multiple times. Add `--desktop` to get access to the inbrowser graphical interface <small>(not really required)</small>.
+
+<br>
+
+#### BackBox Linux 🥔
+
+[backbox](https://linux.backbox.org/) is a penetration testing distro.
+
+<br>
+
+#### BlackArch 😶‍🌫️
+
+[BlackArch](https://www.blackarch.org/) is mostly used by ArchLinux users.
 </div></div>
 
 <hr class="sep-both">
