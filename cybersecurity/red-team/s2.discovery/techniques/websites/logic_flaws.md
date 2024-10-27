@@ -103,7 +103,7 @@ The `strcmp` function may be also exploited. In PHP 5.6, it returns an integer w
 * `strcmp("abc", "abc") == 0` is `True`
 * `strcmp([], "abd") == 0` is `True` <small>(Returns NULL, NULL==0 is True)</small>
 
-📚 Try `password[]=` to transform a parameter in an array. Alternatively, note that `{}`/`[]` are JSON-decoded as an array.
+📚 Refer to [HTTP Parameter Pollution](#http-parameter-pollution)
 </div><div>
 
 #### PHP Magic Hashes
@@ -139,9 +139,34 @@ while (1) {
 
 <hr class="sep-both">
 
+## HTTP Parameter Pollution
+
+[![parameter_pollution](../../../../_badges/hacktricks/pentesting_web/parameter_pollution.svg)](https://book.hacktricks.xyz/pentesting-web/parameter-pollution)
+
+<div class="row row-cols-lg-2"><div>
+
+Parameter parsing and prioritization vary based on the underlying web technology in use. This may be exploited in various ways.
+
+Common examples are in PHP/Javascript that are dynamically typed and inferring the type of the parameter based on the use of `[]`.
+
+```php!
+// PHP
+"https://example.com/?username=abc"     # String
+"https://example.com/?username[]=abc"   # Array
+// JavaScript
+"https://example.com/?username=abc"     # String
+"https://example.com/?username[0]=abc"  # Array
+```
+
+This can be very helpful to exploit type juggling such as explained [here for PHP](#php-loose-comparison-and-type-juggling) while in JS you can bypass size checks with that.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Python Werkzeug Debug Pin (Flask)
 
-[![flask_development_server](../../../../_badges/hacktricks/network_services_pentesting/pentesting_web/werkzeug.svg)](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/werkzeug)
+[![werkzeug](../../../../_badges/hacktricks/network_services_pentesting/pentesting_web/werkzeug.svg)](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/werkzeug)
 [![flask_development_server](../../../../_badges/rootme/web_server/flask_development_server.svg)](https://www.root-me.org/en/Challenges/Web-Server/Flask-Development-server)
 
 <div class="row row-cols-lg-2"><div>
