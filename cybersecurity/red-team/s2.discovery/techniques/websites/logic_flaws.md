@@ -135,6 +135,8 @@ while (1) {
     }
 }
 ```
+
+⚠️ Fun note: `bcrypt` truncates input longer than 72 characters.
 </div></div>
 
 <hr class="sep-both">
