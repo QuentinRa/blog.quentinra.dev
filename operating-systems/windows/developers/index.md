@@ -191,6 +191,18 @@ PS> file.exe /VERYSILENT /MERGETASKS="desktopicon,postinstall"
 
 <hr class="sep-both">
 
+## Internal notes on Windows 🐉
+
+<div class="row row-cols-lg-2"><div>
+
+#### User & Kernel modes
+
+Most Windows apps are running under the User Mode. Apps running under the Kernel Mode have unrestricted access to the system. The User Mode is connected to the system using APIs <small>(NTDLL.dll)</small>.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -216,6 +228,8 @@ SysInternals
 * ProcMon > Process Monitor Filter > Process Name is xxx.exe then Include
 * [Noriben](https://github.com/Rurik/Noriben) wrapper to procmon but may miss some stuff
 </div><div>
+
+* Windows often use PE (Portable Executable) or DLL (Dynamic Link Libraries)
 
 ```ps
 C:\> IEX((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))

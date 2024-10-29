@@ -13,6 +13,8 @@ PS> Set-MpPreference -MAPSReporting 0
 PS> Add-MpPreference -ExclusionPath C:\
 ```
 
+📚 Note that `net` commands on Windows are often monitored by EDR. Try using the `net1` commands instead.
+
 </div></div>
 
 <hr class="sep-both">
@@ -31,6 +33,10 @@ PS> Add-MpPreference -ExclusionPath C:\
 Code obfuscation is an automated process to make the code less-readable for humans. A simple example would be by replacing variables names with less readable names such as `_0x565`.
 
 Code obfuscation doesn't impact the program functionality, but it may impact its performance: obfuscated code is usually slower.
+
+* Remove comments
+* Change function names
+* Encrypt the executable
 
 #### UPX-packed Malware
 

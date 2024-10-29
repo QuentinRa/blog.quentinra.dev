@@ -273,3 +273,15 @@ While uncommon, if the logic is client-side and only the result is sent to the s
 
 For PHPStorm, [refer to the debug tool window](https://www.jetbrains.com/help/phpstorm/debug-tool-window.html) overview.
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* [mt_rand](https://www.php.net/manual/en/function.mt-rand.php): known to have a lack of entropy. PoC where found. Sometimes exploitable. See: [Snowflake](https://github.com/GeorgeArgyros/Snowflake).
+</div><div>
+</div></div>
