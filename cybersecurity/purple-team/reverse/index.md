@@ -529,6 +529,8 @@ $ r2 -qcizz xxx.bin
 
 ## Reversing Binaries On Windows
 
+While still in progress, look [here for PE notes](/programming-languages/low-level/others/pe/index.md).
+
 <div class="row row-cols-lg-2"><div>
 
 #### Windows x64dbg debugger
@@ -552,7 +554,6 @@ You can use [x64dbg](https://github.com/x64dbg/x64dbg) <small>(42.9k ⭐)</small
 
 #### Additional Tools
 
-* [CFF Explorer](https://ntcore.com/?page_id=388) <small>(PE, 👻)</small>
 * [WinDBG](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/) <small>( 👻)</small>
 </div></div>
 
