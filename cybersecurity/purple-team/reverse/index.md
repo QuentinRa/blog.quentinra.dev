@@ -584,6 +584,7 @@ $ ida xxx.bin
 Additional Notes
 
 * Press <kbd>F5</kbd> to use the third-party x64 free cloud decompiler.
+* `→` denotes a jump while `---→` denotes a conditional instruction
 </div><div>
 
 #### Binary Ninja

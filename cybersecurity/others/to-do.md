@@ -285,7 +285,6 @@ https://tryhackme.com/room/retro (blaster...)
 * FMiner (🔎🏝) <small>(Web scrapping)</small>
 * Octoparse (🔎🏝) <small>(Web scrapping)</small>
 * ParseHub (🔎🏝) <small>(Web scrapping)</small>
-* Tor Browser (🔎✈️) <small>(web browser)</small>
 * DarkSearch (🏝) <small>(darknet search engine)</small>
 * Ahmia (🏝) <small>(tor search engine)</small>
 * OnionScan (🔎) <small>(scan the Tor network)</small>

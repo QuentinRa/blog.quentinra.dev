@@ -83,7 +83,6 @@ Given the FQDN `www.example.com`, `www` is the hostname, while `example.com` is 
 👉 Any domain ending with `.` (DNS root) is written as a FQDN. For instance, `example.com` is NOT a FQDN, while `example.com.` is.
 </div></div>
 
-
 <hr class="sep-both">
 
 ## DNS Zones & Zone Transfer
@@ -258,6 +257,14 @@ Refer to [DNS investigation](/cybersecurity/red-team/s1.investigation/techniques
 Refer to [Subdomains](/cybersecurity/red-team/s2.discovery/techniques/websites/subdomains.md)/[vhosts](/cybersecurity/red-team/s2.discovery/techniques/websites/vhosts.md) to look for hidden subdomains.
 
 You can use [onectf axfr](#dns-zones--zone-transfer) as introduced in the AXFR section to find hidden subdomains accepting zone transfer.
+
+* [fierce](https://github.com/mschwager/fierce) <small>(1.6k ⭐)</small> can be used for AXFR and other attacks.
+
+```ps
+$ fierce --domain zonetransfer.me
+$ fierce --domain xxx.yyy --dns-servers IP
+# error for internal domain using AXFR
+```
 
 #### Exploitation
 
