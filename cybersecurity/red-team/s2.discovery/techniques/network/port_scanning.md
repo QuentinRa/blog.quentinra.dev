@@ -82,6 +82,7 @@ When we discover a host, we scan for every port to find which services are runni
 * [nmap](/cybersecurity/red-team/tools/scanners/ports/nmap.md) 🚪🔥: a stealthy and powerful port scanner
 * [Rustscan](/cybersecurity/red-team/tools/scanners/ports/rustscan.md) 🚪🔥: a fast port scanner for CTFs
 * [Masscan](/cybersecurity/red-team/tools/scanners/ports/masscan.md) 🚪: an aggressive port scanner for mass scanning
+* [jfsscan](https://github.com/nullt3r/jfscan) 🚪: not tested
 * `nc -zv IP 1-65535`: Live Off The Land
 
 It's worth nothing that these tools may miss ports.

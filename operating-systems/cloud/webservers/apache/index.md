@@ -235,6 +235,8 @@ AddEncoding gzip .gz
 # Limit the size of uploads
 LimitRequestBody 512000
 ```
+
+📚 Apache [multiviews](https://httpd.apache.org/docs/current/content-negotiation.html) is a module that can be used to show a different file <small>(ex: file.fr.txt, file.en.pdf, etc.)</small> according to the client request. If the client doesn't accept any content type, all files are listed.
 </div></div>
 
 <hr class="sep-both">
