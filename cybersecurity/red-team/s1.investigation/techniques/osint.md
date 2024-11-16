@@ -30,9 +30,6 @@ Open-source intelligence (**OSINT**) is any information that you gather from pub
 
 **Social Media Investigations** (SOCMINT) 🗺️: gather any information
 
-* **Instagram**: [Osintgram](https://github.com/Datalux/Osintgram) <small>(8.4k⭐)</small> and [Instaloader](https://github.com/instaloader/instaloader) <small>(8.7k ⭐)</small>
-* **Twitter**: [Twint](https://github.com/twintproject/twint) <small>(15.8k ⭐)</small>
-* **Google services**: [GHunt](https://github.com/mxrch/GHunt) <small>(15.7k ⭐, gmail, groups, drives...)</small>
 * **Many social networks**: [social-analyzer](https://github.com/qeeqbox/social-analyzer) <small>(11.6k ⭐)</small>
 
 <br>

@@ -49,11 +49,21 @@ There are multiple solutions to investigate an email address:
 
 * [epieos](https://epieos.com/) `[FREEMIUM]`: Find accounts details
 * [ProtOSINT](https://github.com/pixelbubble/ProtOSINT) `[FREEMIUM]` <small>(0.3k ⭐, 2021 🪦)</small>: Obsolete
-* [holehe](https://github.com/megadose/holehe)`[FREE]` <small>(7.6k ⭐)</small>: Find accounts on common websites
+* [holehe](https://github.com/megadose/holehe) `[FREE]` <small>(7.6k ⭐)</small>: Find accounts on common websites
+* [GHunt](https://github.com/mxrch/GHunt) `[FREE]` <small>(15.7k ⭐)</small>: gmail, groups, drives...
+* [Twint](https://github.com/twintproject/twint) `[FREE]` <small>(15.8k ⭐, 2021 🪦)</small>: Twitter scrapping tool
+* [Osintgram](https://github.com/Datalux/Osintgram) <small>(8.4k⭐)</small> and [Instaloader](https://github.com/instaloader/instaloader) <small>(8.7k ⭐)</small>: Instagram
 
 There are multiple solutions to identify email addresses given a company domain <small>(e.g. example.com)</small>. But, such solutions are not always trustworthy. For instance, they may return delete emails or AI-generated emails when the mail server was hardened.
 
 * [SkyMEM](https://www.skymem.info/) `[FREEMIUM]`: email list
+* [EmailSearch](https://emailsearch.io/pricing) `[PAID]`: 👻
+* [Snov](https://snov.io/) `[FREEMIUM]`: 👻
+* [FindEmails](https://www.findemails.com) `[PAID]`: 👻
+* [OSINT Industries](https://app.osint.industries/) `[PAID]`: 👻
+* [EmailRep](https://emailrep.io) `[FREEMIUM]`: 👻
+
+📚 Leaks tools supporting domain search can also be used.
 </div><div>
 
 #### Deep/Dark Web — Data Leaks 🧑🐟

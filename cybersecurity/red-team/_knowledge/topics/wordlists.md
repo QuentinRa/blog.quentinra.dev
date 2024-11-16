@@ -345,6 +345,7 @@ Stuff that I found, but never read/used yet.
 * [big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings) <small>(45.8k ⭐)</small>
 * [fuzzdb](https://github.com/fuzzdb-project/fuzzdb) <small>(7.9k ⭐, 2020 🪦)</small>
 * [Security-Wordlist](https://github.com/DragonJAR/Security-Wordlist/)
+* [Pwdb-Public](https://github.com/ignis-sec/Pwdb-Public/)
 
 Mangling
 
