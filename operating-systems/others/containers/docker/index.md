@@ -103,7 +103,7 @@ $ docker run -d -t [...]      # run in background
 $ docker run -t [...]         # tty == connect your terminal
 $ docker run [...] /bin/bash  # CMD = ["/bin/bash"]
 $ docker run [...] echo xxx   # CMD = ["echo", "xxx"]
-$ docker run -p dp:hp [...]   # map docker port to host port
+$ docker run -p hp:dp [...]   # map host port to docker port
 $ docker run --rm [...]       # auto-deleted once stopped
 $ docker run --entrypoint=xxx [...]  # override the entrypoint
 $ docker run --name=xxx [...] # use fixed name

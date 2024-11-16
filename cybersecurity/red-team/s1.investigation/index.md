@@ -4,7 +4,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-Investigation 🔎, a.k.a. passive recon (reconnaissance) is the first step of the pentester activities.
+Investigation 🔎, a.k.a. passive recon (reconnaissance) is the first step of the pentester activities during an external penetration testing.
 
 It involves gathering information about the target from afar 👓️, meaning with **no direct interaction with the target** 👀.
 
@@ -23,6 +23,26 @@ Common activities:
 * 🧑 Find information about their employees, their emails, their social accounts, their leaked passwords...
 
 * ...
+</div></div>
+
+<hr class="sep-both">
+
+## OSINT Gathering
+
+<div class="row row-cols-lg-2"><div>
+
+#### Social Networks — LinkedIn 🧑
+
+You can easily find company employees using LinkedIn.
+
+* ☑️ Are they still claiming to be in the company?
+* ✍️ Note down their first name, last Name
+* ☎️ Is there an email/phone number in their description?
+* 🌍 Did they link a personal blog in their description?
+* 🎯 Did they set up some contact emails?
+
+The main problem is that many profiles may not be visible from our account. You can use solutions to access LinkedIn API. For marketing purposes, they are also returning professional and personal emails <small>(if any is known or had leaked)</small>. Refer to [LinkedIn OSINT Tools](/cybersecurity/red-team/s1.investigation/tools/osint/linkedin.md).
+</div><div>
 </div></div>
 
 <hr class="sep-both">

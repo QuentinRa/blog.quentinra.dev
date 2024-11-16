@@ -35,7 +35,6 @@ Open-source intelligence (**OSINT**) is any information that you gather from pub
 * **Twitter**: [Twint](https://github.com/twintproject/twint) <small>(15.8k ⭐)</small>
 * **Google services**: [GHunt](https://github.com/mxrch/GHunt) <small>(15.7k ⭐, gmail, groups, drives...)</small>
 * **Many social networks**: [social-analyzer](https://github.com/qeeqbox/social-analyzer) <small>(11.6k ⭐)</small>
-* **Get email from their profile page**: [getemail.io 💵](https://getemail.io/) <small>(10/month free)</small>
 
 <br>
 
