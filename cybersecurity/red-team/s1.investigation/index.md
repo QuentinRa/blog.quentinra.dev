@@ -31,7 +31,7 @@ Common activities:
 
 <div class="row row-cols-lg-2"><div>
 
-#### Social Networks — LinkedIn 🧑
+#### Social Networks — LinkedIn 🧑🐟
 
 You can easily find company employees using LinkedIn.
 
@@ -42,6 +42,27 @@ You can easily find company employees using LinkedIn.
 * 🎯 Did they set up some contact emails?
 
 The main problem is that many profiles may not be visible from our account. You can use solutions to access LinkedIn API. For marketing purposes, they are also returning professional and personal emails <small>(if any is known or had leaked)</small>. Refer to [LinkedIn OSINT Tools](/cybersecurity/red-team/s1.investigation/tools/osint/linkedin.md).
+
+<br>
+
+#### Deep/Dark Web — Data Leaks 🧑🐟
+
+Data Leaks includes credentials <small>(username, password, hash)</small>, IPs, addresses, and domains. They are the result of a breach or an user being compromised by an [infostealer](https://en.wikipedia.org/wiki/Infostealer). Given a domain <small>(ex: example.com)</small> or an email <small>(ex: toto@example.com)</small>, we can find data leaks using:
+
+| Name                                              | Pricing | API | Uncensored |
+|---------------------------------------------------|--------|-----|---------|
+| [Aura](https://scan.aura.com/)                    | `[FREE]` | ❌   | ❌       |
+| [BreachDirectory](https://breachdirectory.org/)   | `[FREEMIUM]` | ✅   | ❌   |
+| [DeHashed](https://dehashed.com/) 👑              |`[PAID]`|✅| ✅       |
+| [HackCheck](https://app.hackcheck.io)             |`[PAID]`|✅| ???       |
+| [LeakBase](https://leakbase.io)                   |`[PAID]`|❌| ???       |
+| [LeakCheck](https://leakcheck.io/) 👑👑👑         |`[PAID]`|✅| ✅       |
+| [LeakedDomains](https://leaked.domains)    |`[PAID]`|✅| ???    |
+| [LeakLookup](https://leak-lookup.com/)    |`[PAID]`|✅| ???    |
+| [LeakPeek](https://leakpeek.com/)                 |`[PAID]`|❌| ✅       |
+| [ProxyNova](https://www.proxynova.com/tools/comb) |`[FREE]`|❌| ✅       |
+| [Snusbase](https://www.snusbase.com) 👑👑         |`[PAID]`|✅ | ✅       |
+| [WeLeakInfo](https://weleakinfo.io/)            |`[PAID]`|✅ | ???       |
 </div><div>
 </div></div>
 
