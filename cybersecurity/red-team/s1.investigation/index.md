@@ -42,8 +42,7 @@ You can easily find company employees using LinkedIn.
 * 🎯 Did they set up some contact emails?
 
 The main problem is that many profiles may not be visible from our account. You can use solutions to access LinkedIn API. For marketing purposes, they are also returning professional and personal emails <small>(if any is known or had leaked)</small>. Refer to [LinkedIn OSINT Tools](/cybersecurity/red-team/s1.investigation/tools/osint/linkedin.md).
-
-<br>
+</div><div>
 
 #### Deep/Dark Web — Data Leaks 🧑🐟
 
@@ -51,19 +50,44 @@ Data Leaks includes credentials <small>(username, password, hash)</small>, IPs, 
 
 | Name                                              | Pricing | API | Uncensored |
 |---------------------------------------------------|--------|-----|---------|
-| [Aura](https://scan.aura.com/)                    | `[FREE]` | ❌   | ❌       |
+| [Aura](https://scan.aura.com/) 👑                   | `[FREE]` | ❌   | ❌       |
 | [BreachDirectory](https://breachdirectory.org/)   | `[FREEMIUM]` | ✅   | ❌   |
 | [DeHashed](https://dehashed.com/) 👑              |`[PAID]`|✅| ✅       |
 | [HackCheck](https://app.hackcheck.io)             |`[PAID]`|✅| ???       |
 | [LeakBase](https://leakbase.io)                   |`[PAID]`|❌| ???       |
 | [LeakCheck](https://leakcheck.io/) 👑👑👑         |`[PAID]`|✅| ✅       |
-| [LeakedDomains](https://leaked.domains)    |`[PAID]`|✅| ???    |
-| [LeakLookup](https://leak-lookup.com/)    |`[PAID]`|✅| ???    |
+| [LeakedDomains](https://leaked.domains)           |`[PAID]`|✅| ???    |
+| [LeakLookup](https://leak-lookup.com/)            |`[PAID]`|✅| ???    |
 | [LeakPeek](https://leakpeek.com/)                 |`[PAID]`|❌| ✅       |
 | [ProxyNova](https://www.proxynova.com/tools/comb) |`[FREE]`|❌| ✅       |
 | [Snusbase](https://www.snusbase.com) 👑👑         |`[PAID]`|✅ | ✅       |
-| [WeLeakInfo](https://weleakinfo.io/)            |`[PAID]`|✅ | ???       |
-</div><div>
+| [WeLeakInfo](https://weleakinfo.io/)              |`[PAID]`|✅ | ???       |
+
+We can find infostealers and their collected data using:
+
+| Name                                                 | Pricing | API | Uncensored |
+|------------------------------------------------------|--------|-----|------------|
+| [HackedList](https://hackedlist.io/)                 |`[PAID]`|✅| ???        |
+| [HudsonRock](https://cavalier.hudsonrock.com/docs) 👑 | `[FREE]` | ✅   | ❌          |
+| [WhiteIntel](https://whiteintel.io/) 👑                | `[FREEMIUM]` | ✅   | ❌          |
+
+There are costly but powerful platforms to monitor telegram and the dark/deep web:
+
+* [Intelligence X](https://intelx.io/) <small>(👻)</small>
+* [SearchLight Cyber](https://slcyber.io/) <small>(👻)</small>
+* [SocRadar](https://socradar.io/) <small>(Very limited as a free user)</small>
+* [Kela Cyber](https://www.kelacyber.com/) <small>(Only keep accessible the last 2 years)</small>
+* [DarkOwl](https://www.darkowl.com/) <small>(Too many unparsed breaches and records are similar to what DeHashed returns)</small>
+
+Additional services:
+
+* [Have I Been Pwned](https://haveibeenpwned.com/) `[FREEMIUM]`: website to list data leaks given an email
+* [LeakCheck](https://wiki.leakcheck.io/en/api/public) `[FREE]`: API to list data leaks given an email
+* [CyberNews](https://cybernews.com/personal-data-leak-check/) `[FREE]`: API to list some data leaks given an email
+* [Mozilla Monitor](https://monitor.mozilla.org/breaches) `[FREE]`: find information for each breach
+* [DDoSecrets](https://data.ddosecrets.com/?C=M&O=A) `[FREE]`: download data breaches
+
+📚 From infostealers, you can identify login portals, identifiant formats per portal, password policy, etc. Later, you can try brute force with a few passwords.
 </div></div>
 
 <hr class="sep-both">
