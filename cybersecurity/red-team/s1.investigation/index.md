@@ -27,9 +27,16 @@ Common activities:
 
 <hr class="sep-both">
 
-## OSINT Gathering — Accounts
+## OSINT Gathering
+
+[![contentdiscovery](../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
+[![breachingad](../../_badges/thm/breachingad.svg)](https://tryhackme.com/r/room/breachingad)
+[![adventofcyber2](../../_badges/thm/adventofcyber2/day14.svg)](https://tryhackme.com/room/adventofcyber2)
+[![adventofcyber4](../../_badges/thm/adventofcyber4/day3.svg)](https://tryhackme.com/room/adventofcyber4)
 
 <div class="row row-cols-lg-2"><div>
+
+Open-source intelligence "OSINT" encompasses any information that we gather from public sources. Refer to the [osintframework.com](https://osintframework.com/).
 
 #### Social Networks — LinkedIn OSINT 🧑🐟
 
@@ -48,15 +55,17 @@ The main problem is that many profiles may not be visible from our account. You 
 There are multiple solutions to investigate an email address:
 
 * [epieos](https://epieos.com/) `[FREEMIUM]`: Find accounts details
-* [ProtOSINT](https://github.com/pixelbubble/ProtOSINT) `[FREEMIUM]` <small>(0.3k ⭐, 2021 🪦)</small>: Obsolete
+* [spokeo](https://www.spokeo.com/) `[FREEMIUM]`: Find accounts on common websites
 * [holehe](https://github.com/megadose/holehe) `[FREE]` <small>(7.6k ⭐)</small>: Find accounts on common websites
 * [GHunt](https://github.com/mxrch/GHunt) `[FREE]` <small>(15.7k ⭐)</small>: gmail, groups, drives...
 * [Twint](https://github.com/twintproject/twint) `[FREE]` <small>(15.8k ⭐, 2021 🪦)</small>: Twitter scrapping tool
+* [ProtOSINT](https://github.com/pixelbubble/ProtOSINT) `[FREEMIUM]` <small>(0.3k ⭐, 2021 🪦)</small>: Obsolete
 * [Osintgram](https://github.com/Datalux/Osintgram) <small>(8.4k⭐)</small> and [Instaloader](https://github.com/instaloader/instaloader) <small>(8.7k ⭐)</small>: Instagram
 
 There are multiple solutions to identify email addresses given a company domain <small>(e.g. example.com)</small>. But, such solutions are not always trustworthy. For instance, they may return delete emails or AI-generated emails when the mail server was hardened.
 
-* [SkyMEM](https://www.skymem.info/) `[FREEMIUM]`: email list
+* [hunter](https://hunter.io/) `[FREEMIUM]`: Company emails
+* [SkyMEM](https://www.skymem.info/) `[FREEMIUM]`: Email lists
 * [EmailSearch](https://emailsearch.io/pricing) `[PAID]`: 👻
 * [Snov](https://snov.io/) `[FREEMIUM]`: 👻
 * [FindEmails](https://www.findemails.com) `[PAID]`: 👻
@@ -64,6 +73,15 @@ There are multiple solutions to identify email addresses given a company domain 
 * [EmailRep](https://emailrep.io) `[FREEMIUM]`: 👻
 
 📚 Leaks tools supporting domain search can also be used.
+
+#### Username Investigation — Find Accounts 🧑🐟
+
+Assuming you have identified a username that may have been reused across multiple platforms by the target, you can find which one using:
+
+* [Sherlock](https://github.com/sherlock-project/sherlock) <small>(59.8k ⭐)</small> `[FREE]`
+* [Maigret](https://github.com/soxoj/maigret) <small>(10.2k ⭐)</small> `[FREE]`
+* [NameCheckup](https://namecheckup.com/) `[FREE]`
+* [WhatsMyName](https://github.com/WebBreacher/WhatsMyName) <small>(1.7k ⭐)</small> `[PAID]`
 </div><div>
 
 #### Deep/Dark Web — Data Leaks 🧑🐟
