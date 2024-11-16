@@ -17,7 +17,6 @@ Open-source intelligence (**OSINT**) is any information that you gather from pub
 
 * **Search by username**: [Sherlock](https://github.com/sherlock-project/sherlock) <small>(59.8k ⭐)</small> and [Maigret](https://github.com/soxoj/maigret) <small>(10.2k ⭐)</small>.  [namechk](https://namechk.com/), [namecheckup](https://namecheckup.com/), [WhatsMyName](https://github.com/WebBreacher/WhatsMyName) <small>(1.7k ⭐)</small>.
 * **Phone number lookup**: [PhoneInfoga](https://github.com/sundowndev/phoneinfoga) <small>(13.0k ⭐)</small>
-* **Email lookup**: [epieos](https://epieos.com/), [ProtOSINT](https://github.com/pixelbubble/ProtOSINT) <small>(0.3k ⭐, 2021 🪦)</small>, [holehe](https://github.com/megadose/holehe) <small>(7.6k ⭐)</small>
 * **People lookup**: [spokeo 💵](https://www.spokeo.com/) <small>(name, email, address...)</small>
 
 <br>

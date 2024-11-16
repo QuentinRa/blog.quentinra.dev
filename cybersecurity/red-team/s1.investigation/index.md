@@ -27,11 +27,11 @@ Common activities:
 
 <hr class="sep-both">
 
-## OSINT Gathering
+## OSINT Gathering — Accounts
 
 <div class="row row-cols-lg-2"><div>
 
-#### Social Networks — LinkedIn 🧑🐟
+#### Social Networks — LinkedIn OSINT 🧑🐟
 
 You can easily find company employees using LinkedIn.
 
@@ -42,6 +42,18 @@ You can easily find company employees using LinkedIn.
 * 🎯 Did they set up some contact emails?
 
 The main problem is that many profiles may not be visible from our account. You can use solutions to access LinkedIn API. For marketing purposes, they are also returning professional and personal emails <small>(if any is known or had leaked)</small>. Refer to [LinkedIn OSINT Tools](/cybersecurity/red-team/s1.investigation/tools/osint/linkedin.md).
+
+#### Email Investigation — Find Accounts 🧑🐟
+
+There are multiple solutions to investigate an email address:
+
+* [epieos](https://epieos.com/) `[FREEMIUM]`: Find accounts details
+* [ProtOSINT](https://github.com/pixelbubble/ProtOSINT) `[FREEMIUM]` <small>(0.3k ⭐, 2021 🪦)</small>: Obsolete
+* [holehe](https://github.com/megadose/holehe)`[FREE]` <small>(7.6k ⭐)</small>: Find accounts on common websites
+
+There are multiple solutions to identify email addresses given a company domain <small>(e.g. example.com)</small>. But, such solutions are not always trustworthy. For instance, they may return delete emails or AI-generated emails when the mail server was hardened.
+
+* [SkyMEM](https://www.skymem.info/) `[FREEMIUM]`: email list
 </div><div>
 
 #### Deep/Dark Web — Data Leaks 🧑🐟
@@ -75,19 +87,19 @@ There are costly but powerful platforms to monitor telegram and the dark/deep we
 
 * [Intelligence X](https://intelx.io/) <small>(👻)</small>
 * [SearchLight Cyber](https://slcyber.io/) <small>(👻)</small>
-* [SocRadar](https://socradar.io/) <small>(Very limited as a free user)</small>
-* [Kela Cyber](https://www.kelacyber.com/) <small>(Only keep accessible the last 2 years)</small>
-* [DarkOwl](https://www.darkowl.com/) <small>(Too many unparsed breaches and records are similar to what DeHashed returns)</small>
+* [SocRadar](https://socradar.io/) <small>(Very limited as a free user, require credits+platform access)</small>
+* [Kela Cyber](https://www.kelacyber.com/) <small>(Only keep accessible the last 2 years, quite good)</small>
+* [DarkOwl](https://www.darkowl.com/) <small>(Too many unparsed breaches, no plus value)</small>
 
 Additional services:
 
-* [Have I Been Pwned](https://haveibeenpwned.com/) `[FREEMIUM]`: website to list data leaks given an email
-* [LeakCheck](https://wiki.leakcheck.io/en/api/public) `[FREE]`: API to list data leaks given an email
-* [CyberNews](https://cybernews.com/personal-data-leak-check/) `[FREE]`: API to list some data leaks given an email
-* [Mozilla Monitor](https://monitor.mozilla.org/breaches) `[FREE]`: find information for each breach
+* [Have I Been Pwned](https://haveibeenpwned.com/) `[FREEMIUM]`: lists breaches given an email
+* [LeakCheck](https://wiki.leakcheck.io/en/api/public) `[FREE]` `[API]`: lists breaches given an email
+* [CyberNews](https://cybernews.com/personal-data-leak-check/) `[FREE]`: lists breaches given an email
+* [Mozilla Monitor](https://monitor.mozilla.org/breaches) `[FREE]`: finds information on a breach
 * [DDoSecrets](https://data.ddosecrets.com/?C=M&O=A) `[FREE]`: download data breaches
 
-📚 From infostealers, you can identify login portals, identifiant formats per portal, password policy, etc. Later, you can try brute force with a few passwords.
+📚 From infostealers logs, you can identify login portals, username formats per login portal, password policy, etc. Later, you can try brute force a login portal with a few possible passwords.
 </div></div>
 
 <hr class="sep-both">
