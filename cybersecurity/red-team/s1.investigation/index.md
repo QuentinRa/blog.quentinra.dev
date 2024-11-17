@@ -152,7 +152,7 @@ By examining [DNS](/operating-systems/networking/protocols/dns.md) records and c
 * 🛣️ Servers and IP ranges
 * ...
 
-#### Discovering Subdomains — IP Ranges
+#### Discovering Hosts — IP Ranges
 
 [![active_directory_enumeration_attacks](../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 
@@ -162,7 +162,7 @@ IP ranges are given by the client during a pentest, but there are some platforms
 * [BGP Toolkit](https://bgp.he.net/)
 * [netcraft](https://sitereport.netcraft.com/)
 
-#### Discovering Subdomains — DNS Records + Registrar
+#### Discovering Information — DNS Records + Registrar
 
 [![footprinting](../../_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
 [![web_information_gathering](../../_badges/htb/web_information_gathering.svg)](https://academy.hackthebox.com/course/preview/information-gathering---web-edition)
@@ -182,12 +182,22 @@ The target may expose things in their DNS records. Aside from during CTFs, we on
 * [viewdns](https://viewdns.info/)
 </div><div>
 
+#### Discovering Subdomains — Certificate Transparency
 
-#### XXX
+[![footprinting](../../_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
+[![web_information_gathering](../../_badges/htb/web_information_gathering.svg)](https://academy.hackthebox.com/course/preview/information-gathering---web-edition)
+[![passiverecon](../../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
+[![subdomainenumeration](../../_badges/thmp/subdomainenumeration.svg)](https://tryhackme.com/room/subdomainenumeration)
 
-X
+Most companies are using an SSL/TLS certificate per domain. Since certificates are public, we can inspect them to find subdomains.
 
-* [subfinder](/cybersecurity/red-team/tools/enumeration/dns/subfinder.md)
+* [crt.sh](https://crt.sh/) `[FREE]`: the most used platform
+* [ctfr](https://github.com/UnaPibaGeek/ctfr) <small>(1.9k ⭐, 2020 🪦)</small> `[FREE]`: tool to access crt.sh
+* [ct search](https://ui.ctsearch.entrust.com/ui/ctsearchui)  `[FREE]`: include expired certificates
+* [censys](https://search.censys.io/) `[???]`: 👻
+* [netcraft](https://sitereport.netcraft.com/) `[???]`: 👻
+
+Most of these have a **clear limitation**: some companies are using wildcard certificates e.g. `*.example.com` which hides their subdomains.
 </div></div>
 
 <hr class="sep-both">
