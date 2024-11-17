@@ -66,6 +66,7 @@ There are multiple solutions to investigate an email address:
 There are multiple solutions to identify email addresses given a company domain <small>(e.g. example.com)</small>. But, such solutions are not always trustworthy. For instance, they may return delete emails or AI-generated emails when the mail server was hardened.
 
 * [hunter](https://hunter.io/) `[FREEMIUM]`: Company emails
+* [Tomba](https://tomba.io/domain-search) `[FREEMIUM]`: Company emails
 * [SkyMEM](https://www.skymem.info/) `[FREEMIUM]`: Email lists
 * [EmailSearch](https://emailsearch.io/pricing) `[PAID]`: 👻
 * [Snov](https://snov.io/) `[FREEMIUM]`: 👻
@@ -161,6 +162,7 @@ IP ranges are given by the client during a pentest, but there are some platforms
 * [arin](https://www.arin.net/resources/) (US) and [ripe](https://www.ripe.net/) (EU)
 * [BGP Toolkit](https://bgp.he.net/)
 * [netcraft](https://sitereport.netcraft.com/)
+* [VirusTotal](https://www.virustotal.com/gui/domain/example.com/details)
 
 #### Discovering Information — DNS Records + Registrar
 
@@ -174,15 +176,17 @@ You can find social engineering information on non-european websites by investig
 * [domain.glass](https://domain.glass/)
 * [viewdns](https://viewdns.info/)
 * [netcraft](https://sitereport.netcraft.com/)
+* [VirusTotal](https://www.virustotal.com/gui/domain/example.com/details)
 
 The target may expose things in their DNS records. Aside from during CTFs, we only learn about external solutions from TXT records.
 
 * [nslookup](/operating-systems/networking/protocols/dns.md#nslookup-ipdomain-lookup)/[dig](/operating-systems/networking/protocols/dns.md#dig-ipdomain-lookup) 
 * [domain.glass](https://domain.glass/)
 * [viewdns](https://viewdns.info/)
+* [VirusTotal](https://www.virustotal.com/gui/domain/example.com/details)
 </div><div>
 
-#### Discovering Subdomains — Certificate Transparency
+#### Discovering Subdomains — Certificate Transparency (CT)
 
 [![footprinting](../../_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
 [![web_information_gathering](../../_badges/htb/web_information_gathering.svg)](https://academy.hackthebox.com/course/preview/information-gathering---web-edition)
@@ -198,6 +202,27 @@ Most companies are using an SSL/TLS certificate per domain. Since certificates a
 * [netcraft](https://sitereport.netcraft.com/) `[???]`: 👻
 
 Most of these have a **clear limitation**: some companies are using wildcard certificates e.g. `*.example.com` which hides their subdomains.
+
+#### Discovering Subdomains — Known Subdomains
+
+[![footprinting](../../_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
+[![web_information_gathering](../../_badges/htb/web_information_gathering.svg)](https://academy.hackthebox.com/course/preview/information-gathering---web-edition)
+[![passiverecon](../../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
+
+Some websites are keeping track of every DNS they found while monitoring and investigating the web.
+
+* [VirusTotal](https://www.virustotal.com/gui/domain/example.com/relations) `[FREEMIUM]`: the best reference
+* [RapidDNS](https://rapiddns.io) `[FREE]`: not useful
+* [SubdomainsFinder](https://subdomainfinder.c99.nl/) `[FREE]`: not useful
+* [DNS Dumpster](https://dnsdumpster.com/) `[FREE]`: not useful
+
+📚 Use them for each wildcard certificate returned using CT.
+
+#### Discovering Subdomains — Other tools
+
+A few tools you may use:
+
+* [TheHarvester](/cybersecurity/red-team/s1.investigation/tools/theHarvester.md) `[FREEMIUM]`: automate many of the tools listed
 </div></div>
 
 <hr class="sep-both">
