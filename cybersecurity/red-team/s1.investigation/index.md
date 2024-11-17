@@ -57,6 +57,7 @@ There are multiple solutions to investigate an email address:
 * [epieos](https://epieos.com/) `[FREEMIUM]`: Find accounts details
 * [spokeo](https://www.spokeo.com/) `[FREEMIUM]`: Find accounts on common websites
 * [holehe](https://github.com/megadose/holehe) `[FREE]` <small>(7.6k ⭐)</small>: Find accounts on common websites
+* [social-analyzer](https://github.com/qeeqbox/social-analyzer) `[FREE]` <small>(11.6k ⭐)</small>: same as holehe
 * [GHunt](https://github.com/mxrch/GHunt) `[FREE]` <small>(15.7k ⭐)</small>: gmail, groups, drives...
 * [Twint](https://github.com/twintproject/twint) `[FREE]` <small>(15.8k ⭐, 2021 🪦)</small>: Twitter scrapping tool
 * [ProtOSINT](https://github.com/pixelbubble/ProtOSINT) `[FREEMIUM]` <small>(0.3k ⭐, 2021 🪦)</small>: Obsolete
@@ -82,6 +83,12 @@ Assuming you have identified a username that may have been reused across multipl
 * [Maigret](https://github.com/soxoj/maigret) <small>(10.2k ⭐)</small> `[FREE]`
 * [NameCheckup](https://namecheckup.com/) `[FREE]`
 * [WhatsMyName](https://github.com/WebBreacher/WhatsMyName) <small>(1.7k ⭐)</small> `[PAID]`
+
+#### Phone Investigation — Find Accounts 🧑🐟
+
+Assuming you have identified a phone number, you can use:
+
+* [PhoneInfoga](https://github.com/sundowndev/phoneinfoga) <small>(13.0k ⭐)</small> `[FREE]`
 </div><div>
 
 #### Deep/Dark Web — Data Leaks 🧑🐟
@@ -132,16 +139,67 @@ Additional services:
 
 <hr class="sep-both">
 
+## Discovering Subdomains
+
+<div class="row row-cols-lg-2"><div>
+
+By examining [DNS](/operating-systems/networking/protocols/dns.md) records and certificates issued for a domain, we can passively learn about:
+
+* 🗺️ Public domains and subdomains used by the company
+* 📮 Mail Server configuration through MX records
+* ✍️ Externally connected apps through TXT records
+* 🧑 Targets for social engineering attacks
+* 🛣️ Servers and IP ranges
+* ...
+
+#### Discovering Subdomains — IP Ranges
+
+[![active_directory_enumeration_attacks](../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+
+IP ranges are given by the client during a pentest, but there are some platforms which can be used to access this public information.
+
+* [arin](https://www.arin.net/resources/) (US) and [ripe](https://www.ripe.net/) (EU)
+* [BGP Toolkit](https://bgp.he.net/)
+* [netcraft](https://sitereport.netcraft.com/)
+
+#### Discovering Subdomains — DNS Records + Registrar
+
+[![footprinting](../../_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
+[![web_information_gathering](../../_badges/htb/web_information_gathering.svg)](https://academy.hackthebox.com/course/preview/information-gathering---web-edition)
+[![passiverecon](../../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
+
+You can find social engineering information on non-european websites by investigating the registrar information.
+
+* [whois](/operating-systems/networking/protocols/dns.md#whois-domain-registrar-data)
+* [domain.glass](https://domain.glass/)
+* [viewdns](https://viewdns.info/)
+* [netcraft](https://sitereport.netcraft.com/)
+
+The target may expose things in their DNS records. Aside from during CTFs, we only learn about external solutions from TXT records.
+
+* [nslookup](/operating-systems/networking/protocols/dns.md#nslookup-ipdomain-lookup)/[dig](/operating-systems/networking/protocols/dns.md#dig-ipdomain-lookup) 
+* [domain.glass](https://domain.glass/)
+* [viewdns](https://viewdns.info/)
+</div><div>
+
+
+#### XXX
+
+X
+
+* [subfinder](/cybersecurity/red-team/tools/enumeration/dns/subfinder.md)
+</div></div>
+
+<hr class="sep-both">
+
 ## Tools and methods 🗺️
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-* [OSINT gathering](/cybersecurity/red-team/s1.investigation/techniques/osint.md) 🧑‍💻🧑: any publicly available information
 * [DNS analysis](/cybersecurity/red-team/s1.investigation/techniques/dns_analysis.md) 🧑‍💻🐟: DNS records, subdomains, IPs, emails...
 * [Google dorking](/cybersecurity/red-team/s1.investigation/techniques/dorking.md) 🧑‍💻🐟🧑: find anything indexed by google
 * [Shodan](/cybersecurity/red-team/s1.investigation/tools/shodan.md) 🐟: find exposed and potentially vulnerable IoT devices
 * [Maltego](/cybersecurity/red-team/s1.investigation/tools/maltego.md) 🧑‍💻 🐟: find websites, domains, social media accounts...
-* [Data leaks](/cybersecurity/red-team/s1.investigation/techniques/data_leaks.md) 🧑: find leaked data (passwords...)
 </div><div>
 
 Websites
@@ -167,5 +225,17 @@ Stuff that I found, but never read/used yet.
 
 * cloud-based services and platforms investigation
 * Wireless network reconnaissance
+
+
+Rem
+
+* Investigate job offers <small>(programming languages, tools...)</small>
+* [xing](https://www.xing.com/)
 </div><div>
+
+**Passive internal mapping** 🗃️
+
+* **GitHub**: [Gitrob 🪦](https://github.com/michenriksen/gitrob) <small>(5.9k ⭐, dev names, languages, projects...)</small>
+* **Git**: [shhgit 🪦](https://github.com/eth0izzle/shhgit) <small>(3.8k ⭐, find secrets)</small>
+* **Github**: [GitFive](https://github.com/mxrch/GitFive) <small>(0.8k ⭐, search by email/username)</small>
 </div></div>
