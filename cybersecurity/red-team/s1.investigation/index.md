@@ -85,12 +85,20 @@ Assuming you have identified a username that may have been reused across multipl
 * [NameCheckup](https://namecheckup.com/) `[FREE]`
 * [WhatsMyName](https://github.com/WebBreacher/WhatsMyName) <small>(1.7k ⭐)</small> `[PAID]`
 
+#### GitHub Investigation — Find Targets 🧑🐟
+
+Assuming you have identified a GitHub/GitLab organization or a username associated with the company, you can use:
+
+* **GitHub**: [Gitrob 🪦](https://github.com/michenriksen/gitrob) <small>(5.9k ⭐, dev names, languages, projects...)</small>
+* **Git**: [shhgit 🪦](https://github.com/eth0izzle/shhgit) <small>(3.8k ⭐, find secrets)</small>
+* **Github**: [GitFive](https://github.com/mxrch/GitFive) <small>(0.8k ⭐, search by email/username)</small>
+</div><div>
+
 #### Phone Investigation — Find Accounts 🧑🐟
 
 Assuming you have identified a phone number, you can use:
 
 * [PhoneInfoga](https://github.com/sundowndev/phoneinfoga) <small>(13.0k ⭐)</small> `[FREE]`
-</div><div>
 
 #### Deep/Dark Web — Data Leaks 🧑🐟
 
@@ -173,14 +181,14 @@ IP ranges are given by the client during a pentest, but there are some platforms
 You can find social engineering information on non-european websites by investigating the registrar information.
 
 * [whois](/operating-systems/networking/protocols/dns.md#whois-domain-registrar-data)
-* [domain.glass](https://domain.glass/)
 * [viewdns](https://viewdns.info/)
 * [netcraft](https://sitereport.netcraft.com/)
 * [VirusTotal](https://www.virustotal.com/gui/domain/example.com/details)
+* [domain.glass](https://domain.glass/)
 
 The target may expose things in their DNS records. Aside from during CTFs, we only learn about external solutions from TXT records.
 
-* [nslookup](/operating-systems/networking/protocols/dns.md#nslookup-ipdomain-lookup)/[dig](/operating-systems/networking/protocols/dns.md#dig-ipdomain-lookup) 
+* [nslookup](/operating-systems/networking/protocols/dns.md#nslookup-ipdomain-lookup)/[dig](/operating-systems/networking/protocols/dns.md#dig-ipdomain-lookup)
 * [domain.glass](https://domain.glass/)
 * [viewdns](https://viewdns.info/)
 * [VirusTotal](https://www.virustotal.com/gui/domain/example.com/details)
@@ -215,14 +223,17 @@ Some websites are keeping track of every DNS they found while monitoring and inv
 * [RapidDNS](https://rapiddns.io) `[FREE]`: not useful
 * [SubdomainsFinder](https://subdomainfinder.c99.nl/) `[FREE]`: not useful
 * [DNS Dumpster](https://dnsdumpster.com/) `[FREE]`: not useful
+* [Sublist3r](/cybersecurity/red-team/tools/enumeration/dns/sublist3r.md) `[FREE]`: unmaintained
 
 📚 Use them for each wildcard certificate returned using CT.
 
-#### Discovering Subdomains — Other tools
+#### Discovering Subdomains — Multipurpose tools
 
 A few tools you may use:
 
-* [TheHarvester](/cybersecurity/red-team/s1.investigation/tools/theHarvester.md) `[FREEMIUM]`: automate many of the tools listed
+* [TheHarvester](/cybersecurity/red-team/s1.investigation/tools/theHarvester.md): automate many of the tools listed
+* [DNSRecon](/cybersecurity/red-team/tools/enumeration/dns/dnsrecon.md): access CRT, reverse lookup
+* [knock](https://github.com/guelfoweb/knock/): shodan + virus total
 </div></div>
 
 <hr class="sep-both">
@@ -231,7 +242,6 @@ A few tools you may use:
 
 <div class="row row-cols-md-2 mt-3"><div>
 
-* [DNS analysis](/cybersecurity/red-team/s1.investigation/techniques/dns_analysis.md) 🧑‍💻🐟: DNS records, subdomains, IPs, emails...
 * [Google dorking](/cybersecurity/red-team/s1.investigation/techniques/dorking.md) 🧑‍💻🐟🧑: find anything indexed by google
 * [Shodan](/cybersecurity/red-team/s1.investigation/tools/shodan.md) 🐟: find exposed and potentially vulnerable IoT devices
 * [Maltego](/cybersecurity/red-team/s1.investigation/tools/maltego.md) 🧑‍💻 🐟: find websites, domains, social media accounts...
@@ -244,10 +254,6 @@ Websites
 Internal Assessments
 
 * [Passive Network Discovery](/cybersecurity/red-team/s1.investigation/techniques/passive_network_discovery.md) 🃏: map the internal network
-
-Others
-
-* [TheHarvester](/cybersecurity/red-team/s1.investigation/tools/theHarvester.md) <small>(Automated OSINT+DNS checking)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -260,17 +266,5 @@ Stuff that I found, but never read/used yet.
 
 * cloud-based services and platforms investigation
 * Wireless network reconnaissance
-
-
-Rem
-
-* Investigate job offers <small>(programming languages, tools...)</small>
-* [xing](https://www.xing.com/)
 </div><div>
-
-**Passive internal mapping** 🗃️
-
-* **GitHub**: [Gitrob 🪦](https://github.com/michenriksen/gitrob) <small>(5.9k ⭐, dev names, languages, projects...)</small>
-* **Git**: [shhgit 🪦](https://github.com/eth0izzle/shhgit) <small>(3.8k ⭐, find secrets)</small>
-* **Github**: [GitFive](https://github.com/mxrch/GitFive) <small>(0.8k ⭐, search by email/username)</small>
 </div></div>
