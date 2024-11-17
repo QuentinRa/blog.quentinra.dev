@@ -144,6 +144,23 @@ Additional services:
 * [DDoSecrets](https://data.ddosecrets.com/?C=M&O=A) `[FREE]`: download data breaches
 
 📚 From infostealers logs, you can identify login portals, username formats per login portal, password policy, etc. Later, you can try brute force a login portal with a few possible passwords.
+
+<details class="details-n">
+<summary>Generate NTLM Hashes From Plaintext</summary>
+
+To avoid sending cleartext credentials to the audited company:
+
+````py
+import Crypto.Hash.MD4
+
+ntlm_hash = lambda p : Crypto.Hash.MD4.new(p.encode('utf-16le')).hexdigest().lower()
+
+with open('creds.txt', 'r') as input_file:
+    hashes = [ntlm_hash(p) for p in input_file.readlines()]
+    with open('hashes.txt', 'w') as output_file:
+        output_file.writelines('\n'.join(hashes))
+````
+</details>
 </div></div>
 
 <hr class="sep-both">
