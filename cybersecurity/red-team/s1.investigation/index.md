@@ -105,19 +105,19 @@ Assuming you have identified a phone number, you can use:
 Data Leaks includes credentials <small>(username, password, hash)</small>, IPs, addresses, and domains. They are the result of a breach or an user being compromised by an [infostealer](https://en.wikipedia.org/wiki/Infostealer). Given a domain <small>(ex: example.com)</small> or an email <small>(ex: toto@example.com)</small>, we can find data leaks using:
 
 | Name                                              | Pricing | API | Uncensored |
-|---------------------------------------------------|--------|-----|---------|
-| [Aura](https://scan.aura.com/) 👑                   | `[FREE]` | ❌   | ❌       |
-| [BreachDirectory](https://breachdirectory.org/)   | `[FREEMIUM]` | ✅   | ❌   |
-| [DeHashed](https://dehashed.com/) 👑              |`[PAID]`|✅| ✅       |
-| [HackCheck](https://app.hackcheck.io)             |`[PAID]`|✅| ???       |
-| [LeakBase](https://leakbase.io)                   |`[PAID]`|❌| ???       |
-| [LeakCheck](https://leakcheck.io/) 👑👑👑         |`[PAID]`|✅| ✅       |
-| [LeakedDomains](https://leaked.domains)           |`[PAID]`|✅| ???    |
-| [LeakLookup](https://leak-lookup.com/)            |`[PAID]`|✅| ???    |
-| [LeakPeek](https://leakpeek.com/)                 |`[PAID]`|❌| ✅       |
-| [ProxyNova](https://www.proxynova.com/tools/comb) |`[FREE]`|❌| ✅       |
-| [Snusbase](https://www.snusbase.com) 👑👑         |`[PAID]`|✅ | ✅       |
-| [WeLeakInfo](https://weleakinfo.io/)              |`[PAID]`|✅ | ???       |
+|---------------------------------------------------|--------|-----|------------|
+| [Aura](https://scan.aura.com/) 👑                   | `[FREE]` | ❌   | ❌          |
+| [BreachDirectory](https://breachdirectory.org/)   | `[FREEMIUM]` | ✅   | ❌          |
+| [DeHashed](https://dehashed.com/) 👑              |`[PAID]`|✅| ✅          |
+| [HackCheck](https://app.hackcheck.io)             |`[PAID]`|✅| 👻         |
+| [LeakBase](https://leakbase.io)                   |`[PAID]`|❌| 👻         |
+| [LeakCheck](https://leakcheck.io/) 👑👑👑         |`[PAID]`|✅| ✅          |
+| [LeakedDomains](https://leaked.domains)           |`[PAID]`|✅| 👻         |
+| [LeakLookup](https://leak-lookup.com/)            |`[PAID]`|✅| 👻         |
+| [LeakPeek](https://leakpeek.com/)                 |`[PAID]`|❌| ✅          |
+| [ProxyNova](https://www.proxynova.com/tools/comb) |`[FREE]`|❌| ✅          |
+| [Snusbase](https://www.snusbase.com) 👑👑         |`[PAID]`|✅ | ✅          |
+| [WeLeakInfo](https://weleakinfo.io/)              |`[PAID]`|✅ | 👻         |
 
 We can find infostealers and their collected data using:
 
