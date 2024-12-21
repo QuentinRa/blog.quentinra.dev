@@ -109,58 +109,44 @@ Data Leaks includes credentials <small>(username, password, hash)</small>, IPs, 
 | [Aura](https://scan.aura.com/) 👑                   | `[FREE]` | ❌   | ❌          |
 | [BreachDirectory](https://breachdirectory.org/)   | `[FREEMIUM]` | ✅   | ❌          |
 | [DeHashed](https://dehashed.com/) 👑              |`[PAID]`|✅| ✅          |
-| [HackCheck](https://app.hackcheck.io)             |`[PAID]`|✅| 👻         |
+| [HackCheck](https://app.hackcheck.io) 👑👑            |`[PAID]`|✅| ✅         |
 | [LeakBase](https://leakbase.io)                   |`[PAID]`|❌| 👻         |
 | [LeakCheck](https://leakcheck.io/) 👑👑👑         |`[PAID]`|✅| ✅          |
 | [LeakedDomains](https://leaked.domains)           |`[PAID]`|✅| 👻         |
 | [LeakLookup](https://leak-lookup.com/)            |`[PAID]`|✅| 👻         |
 | [LeakPeek](https://leakpeek.com/)                 |`[PAID]`|❌| ✅          |
 | [ProxyNova](https://www.proxynova.com/tools/comb) |`[FREE]`|❌| ✅          |
-| [Snusbase](https://www.snusbase.com) 👑👑         |`[PAID]`|✅ | ✅          |
+| [Snusbase](https://www.snusbase.com) 👑         |`[PAID]`|✅ | ✅          |
 | [WeLeakInfo](https://weleakinfo.io/)              |`[PAID]`|✅ | 👻         |
 
 We can find infostealers and their collected data using:
 
-| Name                                                 | Pricing | API | Uncensored |
-|------------------------------------------------------|--------|-----|------------|
-| [HackedList](https://hackedlist.io/)                 |`[PAID]`|✅| ???        |
-| [HudsonRock](https://cavalier.hudsonrock.com/docs) 👑 | `[FREE]` | ✅   | ❌          |
-| [WhiteIntel](https://whiteintel.io/) 👑                | `[FREEMIUM]` | ✅   | ❌          |
+| Name                                                | Pricing      | API | Uncensored |
+|-----------------------------------------------------|--------------|-----|------------|
+| [HackedList](https://hackedlist.io/)                | `[PAID]`     |✅| ???        |
+| [HudsonRock](https://cavalier.hudsonrock.com/docs) 👑 | `[FREE]`     | ✅   | ❌          |
+| [HudsonRock](https://cavalier.hudsonrock.com/docs) 👑👑 | `[PAID]`     | ✅   | ✅          |
+| [WhiteIntel](https://whiteintel.io/)                | `[FREEMIUM]` | ✅   | ❌          |
 
 There are costly but powerful platforms to monitor telegram and the dark/deep web:
 
 * [Intelligence X](https://intelx.io/) <small>(👻)</small>
 * [SearchLight Cyber](https://slcyber.io/) <small>(👻)</small>
-* [SocRadar](https://socradar.io/) <small>(Very limited as a free user, require credits+platform access)</small>
-* [Kela Cyber](https://www.kelacyber.com/) <small>(Only keep accessible the last 2 years, quite good)</small>
-* [DarkOwl](https://www.darkowl.com/) <small>(Too many unparsed breaches, no plus value)</small>
+* [DarkAtlas](https://darkatlas.io) <small>(👻)</small>
+* [SocRadar](https://socradar.io/) <small>(Very limited as a free user, costly for CTI)</small>
+* [Kela Cyber](https://www.kelacyber.com/) <small>(Only the last 2 years of data, quite good, relatively costly)</small>
+* [DarkOwl](https://www.darkowl.com/) <small>(Too many unparsed breaches, limited capabilities but cheaper)</small>
 
 Additional services:
 
+* [Have I Been Pwned](https://haveibeenpwned.com/) `[FREE]` `[API]`: lists breaches with a description
 * [Have I Been Pwned](https://haveibeenpwned.com/) `[FREEMIUM]`: lists breaches given an email
 * [LeakCheck](https://wiki.leakcheck.io/en/api/public) `[FREE]` `[API]`: lists breaches given an email
 * [CyberNews](https://cybernews.com/personal-data-leak-check/) `[FREE]`: lists breaches given an email
-* [Mozilla Monitor](https://monitor.mozilla.org/breaches) `[FREE]`: finds information on a breach
+* [Mozilla Monitor](https://monitor.mozilla.org/breaches) `[FREE]`: finds information on a breach (limited)
 * [DDoSecrets](https://data.ddosecrets.com/?C=M&O=A) `[FREE]`: download data breaches
 
 📚 From infostealers logs, you can identify login portals, username formats per login portal, password policy, etc. Later, you can try brute force a login portal with a few possible passwords.
-
-<details class="details-n">
-<summary>Generate NTLM Hashes From Plaintext</summary>
-
-To avoid sending cleartext credentials to the audited company:
-
-````py
-import Crypto.Hash.MD4
-
-ntlm_hash = lambda p : Crypto.Hash.MD4.new(p.encode('utf-16le')).hexdigest().lower()
-
-with open('creds.txt', 'r') as input_file:
-    hashes = [ntlm_hash(p) for p in input_file.readlines()]
-    with open('hashes.txt', 'w') as output_file:
-        output_file.writelines('\n'.join(hashes))
-````
-</details>
 </div></div>
 
 <hr class="sep-both">
