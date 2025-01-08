@@ -1,4 +1,4 @@
-# First step - Investigation
+# First step — Investigation
 
 [![passiverecon](../../_badges/thm/passiverecon.svg)](https://tryhackme.com/room/passiverecon)
 
