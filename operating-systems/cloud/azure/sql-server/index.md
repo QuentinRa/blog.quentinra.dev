@@ -38,6 +38,8 @@ function Get-AzSqlDatabaseAutomaticTuning {
 
 ## Azure SQL Database Hardening 🔒🛡️
 
+Refer to [the official documentation](https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql).
+
 <div class="row row-cols-lg-2"><div>
 
 #### ASD Hardening — SQL Server Exposure
@@ -67,12 +69,11 @@ $servers | ForEach-Object { $res = Get-AzSqlServerActiveDirectoryAdministrator -
 There is an "auditing" feature to monitor databases for security, compliance, and troubleshooting. You should enable it.
 
 ```ps
+$servers | ForEach-Object { Get-AzSqlServerAudit -ServerName $_.sn -ResourceGroupName $_.rgn | Select-Object ServerName, AuditActionGroup }
+$databases | ForEach-Object { Get-AzSqlDatabaseAudit -ServerName $_.sn -ResourceGroupName $_.rgn -DatabaseName $_.db | Select-Object ServerName, AuditActionGroup, RetentionInDays }
 ```
 
-You will then have to configure the auditing policy <small>(3 values expected)</small>.
-
-```ps
-```
+You will then have to configure the auditing policy <small>(3 values expected for AuditActionGroup)</small>. At least one TargetState should be Enabled.
 
 You should also ensure that log are not kept indefinitely <small>(<90)</small>. The default value is `PT0S` for `0 seconds` which is an indefinite period of time. [Documentation to understand each retention period](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-backup-retention-configure?view=azuresql&tabs=portal).
 
@@ -90,11 +91,6 @@ $databases | ForEach-Object { Get-AzSqlDatabaseBackupShortTermRetentionPolicy -S
 </div><div>
 
 #### ASD Hardening — Security Features
-
-Enable Microsoft Defender for SQL and configure it.
-
-```ps
-```
 
 Advanced Data Security (ADS) is a feature that enable data classification, vulnerability assessment, and the Advanced Threat Protection service. You should enable it.
 
