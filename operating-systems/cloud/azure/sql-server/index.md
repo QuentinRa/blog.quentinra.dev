@@ -60,9 +60,16 @@ You will then have to configure the auditing policy <small>(3 values expected)</
 ```ps
 ```
 
-You should also ensure that log are not kept indefinitely <small>(<90)</small>. The default value is `0` for an indefinite period of time.
+You should also ensure that log are not kept indefinitely <small>(<90)</small>. The default value is `PT0S` for `0 seconds` which is an indefinite period of time. [Documentation to understand each retention period](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-backup-retention-configure?view=azuresql&tabs=portal).
 
 ```ps
+$databases | ForEach-Object { Get-AzSqlDatabaseBackupLongTermRetentionPolicy -ServerName $_.sn -ResourceGroupName $_.rgn -DatabaseName $_.db } | ft
+```
+
+Point in Time Restore (PITR) are short-term backups. They should be retained for seven days <small>(which is the default)</small>.
+
+```ps
+$databases | ForEach-Object { Get-AzSqlDatabaseBackupShortTermRetentionPolicy -ServerName $_.sn -ResourceGroupName $_.rgn -DatabaseName $_.db } | ft
 ```
 
 ✍️ Make sure to monitor firewall changes and apply the least privilege principle. Try to be as granular as possible.
@@ -86,5 +93,26 @@ Advanced Threat Protection (ATP) service monitors for suspicious activity <small
 ```ps
 # az sql server advanced-threat-protection-setting -g $_.rgn -n $_.sn
 $servers | ForEach-Object { Get-AzSqlServerAdvancedThreatProtectionSetting -ServerName $_.sn -ResourceGroupName $_.rgn }
+```
+
+The Vulnerability Assessment service scan the database for known vulnerabilities, misconfigurations, and weaknesses <small>(permissions, etc.)</small>. You should enable periodic recurring scans, email admins and specific users, and store assessments in a storage <small>(the "classic" configuration)</small>.
+
+```ps
+$databases | ForEach-Object { Get-AzSqlDatabaseVulnerabilityAssessmentSetting -ServerName $_.sn -ResourceGroupName $_.rgn -DatabaseName $_.db } | ft
+```
+
+<br>
+
+#### ASD Hardening — Backups, Performance, Uptime
+
+To improve performances, you should enable Automatic Tuning and its 3 options. It will use AI to monitor databases and adapt settings.
+
+```ps
+```
+
+You should add databases in a fail-over group to ensure at least one is always available in case of failure.
+
+```ps
+$servers | ForEach-Object { $g = Get-AzSqlDatabaseFailoverGroup -ServerName $_.sn -ResourceGroupName $_.rgn; [PSCustomObject]@{ServerName=$_.sn; HasFailoverGroup = $g.Count -ne 0 } }
 ```
 </div></div>
