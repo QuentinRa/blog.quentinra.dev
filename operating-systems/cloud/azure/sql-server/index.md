@@ -37,6 +37,7 @@ $dump | Select-Object ServerName,PublicNetworkAccess
 By default, the ASD is behind a firewall to limit which IPs can access it. The default firewall allows every IP (`0.0.0.0-0.0.0.0`).
 
 ```
+$servers | ForEach-Object { Get-AzSqlServerFirewallRule -ServerName $_.sn -ResourceGroupName $_.rgn } | Where-Object StartIpAddress -eq "0.0.0.0" | ft
 ```
 
 Microsoft Entry ID authentication allow you to easily manage access to the database while adding additional mechanisms such as MFA.
@@ -44,5 +45,26 @@ Microsoft Entry ID authentication allow you to easily manage access to the datab
 ```ps
 $servers | ForEach-Object { $res = Get-AzSqlServerActiveDirectoryAdministrator -ServerName $_.sn -ResourceGroupName $_.rgn; [PSCustomObject]@{ServerName=$_.sn; EntraStatus=if ($res) { "Enabled" } else { "Disabled" } } }
 ```
+
+<br>
+
+#### ASD Hardening — Auditing And Logs
+
+There is an "auditing" feature to monitor databases for security, compliance, and troubleshooting. You should enable it.
+
+```ps
+```
+
+You will then have to configure the auditing policy.
+
+```ps
+```
+
+You should also ensure that log are not kept indefinitely <small>(<90)</small>. The default value is `0` for an indefinite period of time.
+
+```ps
+```
+
+✍️ Make sure to monitor firewall changes and apply the least privilege principle. Try to be as granular as possible.
 </div><div>
 </div></div>
