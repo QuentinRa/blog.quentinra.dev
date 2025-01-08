@@ -12,4 +12,37 @@ You can access the login portal at [portal.azure.com](https://portal.azure.com/)
 
 📚 [Azure SQL Managed Instances](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql) (MI) is a PAAS solution which can be used when we need to manage the SQL Server directly. 
 </div><div>
+
+```ps
+$dump = Get-AzSqlServer
+$servers = $dump | ForEach-Object { [PSCustomObject]@{sn=$_.ServerName; rgn=$_.ResourceGroupName} }
+$databases =  $servers | ForEach-Object { Get-AzSqlDatabase -ResourceGroupName $_.rgn -ServerName $_.sn | Where-Object DatabaseName -ne "master" } | ForEach-Object { [PSCustomObject]@{sn=$_.ServerName; rgn=$_.ResourceGroupName; db=$_.DatabaseName} }
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Azure SQL Database Hardening 🔒🛡️
+
+<div class="row row-cols-lg-2"><div>
+
+#### ASD Hardening — SQL Server Exposure
+
+By default, the ASD is available via a public endpoint such as `your-server-name.database.windows.net`. It should be private <small>(e.g. VPN...)</small>.
+
+```ps
+$dump | Select-Object ServerName,PublicNetworkAccess
+```
+
+By default, the ASD is behind a firewall to limit which IPs can access it. The default firewall allows every IP (`0.0.0.0-0.0.0.0`).
+
+```
+```
+
+Microsoft Entry ID authentication allow you to easily manage access to the database while adding additional mechanisms such as MFA.
+
+```ps
+$servers | ForEach-Object { $res = Get-AzSqlServerActiveDirectoryAdministrator -ServerName $_.sn -ResourceGroupName $_.rgn; [PSCustomObject]@{ServerName=$_.sn; EntraStatus=if ($res) { "Enabled" } else { "Disabled" } } }
+```
+</div><div>
 </div></div>
