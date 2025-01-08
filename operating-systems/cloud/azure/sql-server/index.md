@@ -34,7 +34,7 @@ By default, the ASD is available via a public endpoint such as `your-server-name
 $dump | Select-Object ServerName,PublicNetworkAccess
 ```
 
-By default, the ASD is behind a firewall to limit which IPs can access it. The default firewall allows every IP (`0.0.0.0-0.0.0.0`).
+The ASD is behind a firewall to limit which IPs can access it. The default firewall allows every IP (`0.0.0.0-0.0.0.0`) and is too permissive.
 
 ```
 $servers | ForEach-Object { Get-AzSqlServerFirewallRule -ServerName $_.sn -ResourceGroupName $_.rgn } | Where-Object StartIpAddress -eq "0.0.0.0" | ft
@@ -55,7 +55,7 @@ There is an "auditing" feature to monitor databases for security, compliance, an
 ```ps
 ```
 
-You will then have to configure the auditing policy.
+You will then have to configure the auditing policy <small>(3 values expected)</small>.
 
 ```ps
 ```
@@ -67,4 +67,24 @@ You should also ensure that log are not kept indefinitely <small>(<90)</small>. 
 
 ✍️ Make sure to monitor firewall changes and apply the least privilege principle. Try to be as granular as possible.
 </div><div>
+
+#### ASD Hardening — Security Features
+
+Enable Microsoft Defender for SQL and configure it.
+
+```ps
+```
+
+Advanced Data Security (ADS) is a feature that enable data classification, vulnerability assessment, and the Advanced Threat Protection service. You should enable it.
+
+```ps
+$servers | ForEach-Object { Get-AzSqlServerAdvancedDataSecurityPolicy -ServerName $_.sn -ResourceGroupName $_.rgn }
+```
+
+Advanced Threat Protection (ATP) service monitors for suspicious activity <small>(faulty SQL, new SQL statement, new logins and logins brute force, etc.)</small>. You should enable it <small>(and all alerts should be enabled, which is the default)</small>.
+
+```ps
+# az sql server advanced-threat-protection-setting -g $_.rgn -n $_.sn
+$servers | ForEach-Object { Get-AzSqlServerAdvancedThreatProtectionSetting -ServerName $_.sn -ResourceGroupName $_.rgn }
+```
 </div></div>
