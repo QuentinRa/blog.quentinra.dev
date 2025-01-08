@@ -18,6 +18,20 @@ $dump = Get-AzSqlServer
 $servers = $dump | ForEach-Object { [PSCustomObject]@{sn=$_.ServerName; rgn=$_.ResourceGroupName} }
 $databases =  $servers | ForEach-Object { Get-AzSqlDatabase -ResourceGroupName $_.rgn -ServerName $_.sn | Where-Object DatabaseName -ne "master" } | ForEach-Object { [PSCustomObject]@{sn=$_.ServerName; rgn=$_.ResourceGroupName; db=$_.DatabaseName} }
 ```
+
+<details class="details-n">
+<summary>Additional Powershell Functions</summary>
+
+```ps
+function Get-AzSqlDatabaseAutomaticTuning {
+    param (
+        [string]$ResourceGroupName,
+        [string]$ServerName
+    )
+    return (Invoke-RestMethod -Uri "https://management.azure.com/subscriptions/$((Get-AzContext).Subscription.Id)/resourceGroups/$ResourceGroupName/providers/Microsoft.Sql/servers/$ServerName/automaticTuning/current?api-version=2021-11-01" -Method Get -Headers @{Authorization = "Bearer $(Get-AzAccessToken).Token"}) | ConvertFrom-Json
+}
+```
+</details>
 </div></div>
 
 <hr class="sep-both">
@@ -63,13 +77,13 @@ You will then have to configure the auditing policy <small>(3 values expected)</
 You should also ensure that log are not kept indefinitely <small>(<90)</small>. The default value is `PT0S` for `0 seconds` which is an indefinite period of time. [Documentation to understand each retention period](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-backup-retention-configure?view=azuresql&tabs=portal).
 
 ```ps
-$databases | ForEach-Object { Get-AzSqlDatabaseBackupLongTermRetentionPolicy -ServerName $_.sn -ResourceGroupName $_.rgn -DatabaseName $_.db } | ft
+$databases | ForEach-Object { Get-AzSqlDatabaseBackupLongTermRetentionPolicy -ServerName $_.sn -ResourceGroupName $_.rgn -DatabaseName $_.db | Select-Object ServerName, DatabaseName, WeeklyRetention, MonthlyRetention, YearlyRetention } | ft
 ```
 
 Point in Time Restore (PITR) are short-term backups. They should be retained for seven days <small>(which is the default)</small>.
 
 ```ps
-$databases | ForEach-Object { Get-AzSqlDatabaseBackupShortTermRetentionPolicy -ServerName $_.sn -ResourceGroupName $_.rgn -DatabaseName $_.db } | ft
+$databases | ForEach-Object { Get-AzSqlDatabaseBackupShortTermRetentionPolicy -ServerName $_.sn -ResourceGroupName $_.rgn -DatabaseName $_.db | Select-Object ServerName, DatabaseName, RetentionDays } | ft
 ```
 
 ✍️ Make sure to monitor firewall changes and apply the least privilege principle. Try to be as granular as possible.
@@ -101,6 +115,12 @@ The Vulnerability Assessment service scan the database for known vulnerabilities
 $databases | ForEach-Object { Get-AzSqlDatabaseVulnerabilityAssessmentSetting -ServerName $_.sn -ResourceGroupName $_.rgn -DatabaseName $_.db } | ft
 ```
 
+Transparent Data Encryption (TDE) is a mechanism to encrypt database data at rest. It should be enabled.
+
+```ps
+$databases | ForEach-Object { Get-AzSqlDatabaseTransparentDataEncryption -ServerName $_.sn -ResourceGroupName $_.rgn -DatabaseName $_.db | Select-Object ServerName, DatabaseName, @{Name='TdeStatus'; Expression={$_.State}}} | ft
+```
+
 <br>
 
 #### ASD Hardening — Backups, Performance, Uptime
@@ -108,6 +128,7 @@ $databases | ForEach-Object { Get-AzSqlDatabaseVulnerabilityAssessmentSetting -S
 To improve performances, you should enable Automatic Tuning and its 3 options. It will use AI to monitor databases and adapt settings.
 
 ```ps
+$servers | ForEach-Object { Get-AzSqlDatabaseAutomaticTuning -ServerName $_.sn -ResourceGroupName $_.rgn }
 ```
 
 You should add databases in a fail-over group to ensure at least one is always available in case of failure.
