@@ -28,7 +28,8 @@ function Get-AzSqlDatabaseAutomaticTuning {
         [string]$ResourceGroupName,
         [string]$ServerName
     )
-    return (Invoke-RestMethod -Uri "https://management.azure.com/subscriptions/$((Get-AzContext).Subscription.Id)/resourceGroups/$ResourceGroupName/providers/Microsoft.Sql/servers/$ServerName/automaticTuning/current?api-version=2021-11-01" -Method Get -Headers @{Authorization = "Bearer $(Get-AzAccessToken).Token"}) | ConvertFrom-Json
+    $token = [System.Runtime.InteropServices.Marshal]::PtrToStringBSTR([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($(Get-AzAccessToken -AsSecureString).Token))
+    return (Invoke-RestMethod -Uri "https://management.azure.com/subscriptions/$((Get-AzContext).Subscription.Id)/resourceGroups/$ResourceGroupName/providers/Microsoft.Sql/servers/$ServerName/automaticTuning/current?api-version=2021-11-01" -Method Get -Headers @{Authorization = "Bearer $token"})
 }
 ```
 </details>
@@ -69,7 +70,6 @@ $servers | ForEach-Object { $res = Get-AzSqlServerActiveDirectoryAdministrator -
 There is an "auditing" feature to monitor databases for security, compliance, and troubleshooting. You should enable it.
 
 ```ps
-$servers | ForEach-Object { Get-AzSqlServerAudit -ServerName $_.sn -ResourceGroupName $_.rgn | Select-Object ServerName, AuditActionGroup }
 $databases | ForEach-Object { Get-AzSqlDatabaseAudit -ServerName $_.sn -ResourceGroupName $_.rgn -DatabaseName $_.db | Select-Object ServerName, AuditActionGroup, RetentionInDays }
 ```
 
@@ -108,13 +108,14 @@ $servers | ForEach-Object { Get-AzSqlServerAdvancedThreatProtectionSetting -Serv
 The Vulnerability Assessment service scan the database for known vulnerabilities, misconfigurations, and weaknesses <small>(permissions, etc.)</small>. You should enable periodic recurring scans, email admins and specific users, and store assessments in a storage <small>(the "classic" configuration)</small>.
 
 ```ps
-$databases | ForEach-Object { Get-AzSqlDatabaseVulnerabilityAssessmentSetting -ServerName $_.sn -ResourceGroupName $_.rgn -DatabaseName $_.db } | ft
+$databases | ForEach-Object { Get-AzSqlDatabaseVulnerabilityAssessmentSetting -ServerName $_.sn -ResourceGroupName $_.rgn -DatabaseName $_.db | Select-Object ServerName, DatabaseName, RecurringScansInterval, EmailAdmins, NotificationEmails, StorageAccountName } | ft
 ```
 
-Transparent Data Encryption (TDE) is a mechanism to encrypt database data at rest. It should be enabled.
+Transparent Data Encryption (TDE) is a mechanism to encrypt database data at rest. It should be enabled and configured not to use a ServiceManaged Key.
 
 ```ps
 $databases | ForEach-Object { Get-AzSqlDatabaseTransparentDataEncryption -ServerName $_.sn -ResourceGroupName $_.rgn -DatabaseName $_.db | Select-Object ServerName, DatabaseName, @{Name='TdeStatus'; Expression={$_.State}}} | ft
+$servers | ForEach-Object { Get-AzSqlServerKeyVaultKey -ServerName $_.sn -ResourceGroupName $_.rgn | Select-Object ServerName, Type } | ft
 ```
 
 <br>
@@ -124,7 +125,7 @@ $databases | ForEach-Object { Get-AzSqlDatabaseTransparentDataEncryption -Server
 To improve performances, you should enable Automatic Tuning and its 3 options. It will use AI to monitor databases and adapt settings.
 
 ```ps
-$servers | ForEach-Object { Get-AzSqlDatabaseAutomaticTuning -ServerName $_.sn -ResourceGroupName $_.rgn }
+$servers | ForEach-Object { Get-AzSqlDatabaseAutomaticTuning -ServerName $_.sn -ResourceGroupName $_.rgn | Add-Member -MemberType NoteProperty -Name "ServerName" -Value $_.sn -PassThru }
 ```
 
 You should add databases in a fail-over group to ensure at least one is always available in case of failure.
