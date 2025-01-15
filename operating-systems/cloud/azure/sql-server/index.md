@@ -14,6 +14,7 @@ You can access the login portal at [portal.azure.com](https://portal.azure.com/)
 </div><div>
 
 ```ps
+Connect-AzAccount
 $dump = Get-AzSqlServer
 $servers = $dump | ForEach-Object { [PSCustomObject]@{sn=$_.ServerName; rgn=$_.ResourceGroupName} }
 $databases =  $servers | ForEach-Object { Get-AzSqlDatabase -ResourceGroupName $_.rgn -ServerName $_.sn | Where-Object DatabaseName -ne "master" } | ForEach-Object { [PSCustomObject]@{sn=$_.ServerName; rgn=$_.ResourceGroupName; db=$_.DatabaseName} }

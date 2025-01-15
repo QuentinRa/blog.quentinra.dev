@@ -173,7 +173,7 @@ $ mkdir p1 && sudo mount /dev/nbd1p1 ./p1
 $ sudo SHELL=/bin/bash chroot p1
 ```
 
-The drive may be [encrypted using BitLocker](/operating-systems/windows/security/index.md#bitlocker-encrypted-drive).
+The drive may be encrypted [using BitLocker](/operating-systems/windows/security/index.md#bitlocker-encrypted-drive) or [LUKS](/operating-systems/linux/security/index.md#linux-unified-key-setup-luks).
 </div></div>
 
 <hr class="sep-both">
