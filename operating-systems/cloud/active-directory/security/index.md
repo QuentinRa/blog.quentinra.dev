@@ -620,6 +620,10 @@ $ realm list
   ...
   permitted-logins: username@xxx.yyy
   permitted-groups: XXX
+
+$ net ads info | grep "REALM"
+$ net ads lookup
+$ net rpc info
 ```
 
 ➡️ See also: [linikatz](https://github.com/CiscoCXSecurity/linikatz) <small>(0.5k ⭐, 2023 🪦)</small>. 
