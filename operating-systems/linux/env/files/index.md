@@ -115,7 +115,7 @@ username ALL=(user2) NOPASSWD:/bin/tar
 
 Partitions are a way to divide a physical storage device, such as a hard drive. They allow us to isolate and enforce individual restrictions.
 
-Partitions are mounted at specific mount points within the FHS. The root partition is often mounted at `/`. We often have separate partitions for folders such as `/home`, `/tmp`, `/var` or `/mnt`.
+Partitions are mounted at specific mount points within the FHS. The root partition is often mounted at `/`. We often have separate partitions for folders such as `/home`, `/tmp`, or `/var`.
 
 The file `/etc/fstab` defines the partitions to create at system startup. The `/proc/mounts` contains all mounted partitions right now.
 
@@ -135,7 +135,7 @@ $ cat /proc/mounts
 * Create a filesystem 🆕: `mkfs` <small>(`mkfs.ext4`...)</small>
 * Devices list 📃: `fdisk`, `lsblk`
 * Devices data 📌: `sudo blkid`, `df -h`
-* List partitions 📚: `parted`, `gparted`
+* List partitions 📚: `parted`, `gparted`, `lvs` <small>(`virtual`)</small>
 * Create partition 🆕: `fdisk`, `parted`, `gparted`
 * Edit partition ✍️: `fdisk`, `parted`, `gparted`
 * Delete partition 🚮: `fdisk`, `parted`, `gparted`

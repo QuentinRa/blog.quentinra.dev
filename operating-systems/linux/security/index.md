@@ -45,6 +45,35 @@ $ sudo cryptsetup luksClose label
 
 <hr class="sep-both">
 
+## Linux Update Management
+
+<div class="row row-cols-lg-2"><div>
+
+The operating system and its packages must be updated periodically.
+
+```ps
+$ sudo apt-get dist-upgrade
+```
+
+Installed packages must be updated periodically.
+
+```ps
+$ sudo apt update
+$ sudo apt upgrade
+```
+</div><div>
+
+The firmware should be updated whenever possible.
+
+```ps
+$ sudo fwupdmgr refresh --force
+$ sudo fwupdmgr get-updates
+$ sudo fwupdmgr update
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
@@ -69,14 +98,6 @@ Stuff that I found, but never read/used yet.
 </div><div>
 
 * LXC
-
-Upgrade packages.
-
-```
-$ sudo apt update
-$ sudo apt upgrade
-$ sudo apt-get dist-upgrade
-```
 
 Disable `ssh` login for root/..., and change the default port.
 
