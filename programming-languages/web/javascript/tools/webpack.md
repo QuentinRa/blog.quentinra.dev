@@ -23,6 +23,8 @@ You can try [shuji](https://github.com/paazmaya/shuji) <small>(0.9k ⭐)</small>
 $ npm install --global shuji
 $ shuji example.js.map -o output
 ```
+
+You can also try [WebDumper](https://github.com/EllyMandliel/WebDumper) <small>(0.2k ⭐, 2021 🪦)</small>.
 </div></div>
 
 <hr class="sep-both">
