@@ -6,19 +6,20 @@
 
 Investigation 🔎, a.k.a. passive recon (reconnaissance) is the first step of the pentester activities during an external penetration testing.
 
-It involves gathering information about the target from afar 👓️, meaning with **no direct interaction with the target** 👀.
+It involves gathering information about the target from afar 👓️, meaning with **no direct interaction with the target(s)** 👀.
 
 🌱 The goal is to find as much information as possible.
 
 🚿️ You can also infer data, for instance, if a company has many customers, then they may have a support page/customer service.
 
+📚 This could also mean passively observing the network activity if we are already within the company network.
 </div><div>
 
 Common activities:
 
 * 🧑‍💻 Learn more about the company <small>(roles, services...)</small>, the technologies, programming languages and software they use...
 
-* 🐟 Find a potential attack vector
+* 🐟 Find a potential attack vector <small>(website, provider, etc.)</small>
 
 * 🧑 Find information about their employees, their emails, their social accounts, their leaked passwords...
 
@@ -242,10 +243,14 @@ A few tools you may use:
 
 <hr class="sep-both">
 
-## Tools and methods 🗺️
+## 👻 To-do 👻
 
-<div class="row row-cols-md-2 mt-3"><div>
+Stuff that I found, but never read/used yet.
 
+<div class="row row-cols-lg-2"><div>
+
+* cloud-based services and platforms investigation
+* Wireless network reconnaissance
 * [Google dorking](/cybersecurity/red-team/s1.investigation/techniques/dorking.md) 🧑‍💻🐟🧑: find anything indexed by google
 * [Shodan](/cybersecurity/red-team/s1.investigation/tools/shodan.md) 🐟: find exposed and potentially vulnerable IoT devices
 * [Maltego](/cybersecurity/red-team/s1.investigation/tools/maltego.md) 🧑‍💻 🐟: find websites, domains, social media accounts...
@@ -258,17 +263,4 @@ Websites
 Internal Assessments
 
 * [Passive Network Discovery](/cybersecurity/red-team/s1.investigation/techniques/passive_network_discovery.md) 🃏: map the internal network
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-lg-2"><div>
-
-* cloud-based services and platforms investigation
-* Wireless network reconnaissance
-</div><div>
 </div></div>
