@@ -92,32 +92,33 @@ Assuming you have identified a GitHub/GitLab organization or a username associat
 * **GitHub**: [Gitrob 🪦](https://github.com/michenriksen/gitrob) <small>(5.9k ⭐, dev names, languages, projects...)</small>
 * **Git**: [shhgit 🪦](https://github.com/eth0izzle/shhgit) <small>(3.8k ⭐, find secrets)</small>
 * **Github**: [GitFive](https://github.com/mxrch/GitFive) <small>(0.8k ⭐, search by email/username)</small>
-</div><div>
 
 #### Phone Investigation — Find Accounts 🧑🐟
 
 Assuming you have identified a phone number, you can use:
 
 * [PhoneInfoga](https://github.com/sundowndev/phoneinfoga) <small>(13.0k ⭐)</small> `[FREE]`
+</div><div>
 
 #### Deep/Dark Web — Data Leaks 🧑🐟
 
 Data Leaks includes credentials <small>(username, password, hash)</small>, IPs, addresses, and domains. They are the result of a breach or an user being compromised by an [infostealer](https://en.wikipedia.org/wiki/Infostealer). Given a domain <small>(ex: example.com)</small> or an email <small>(ex: toto@example.com)</small>, we can find data leaks using:
 
-| Name                                              | Pricing | API | Uncensored |
-|---------------------------------------------------|--------|-----|------------|
-| [Aura](https://scan.aura.com/) 👑                   | `[FREE]` | ❌   | ❌          |
-| [BreachDirectory](https://breachdirectory.org/)   | `[FREEMIUM]` | ✅   | ❌          |
-| [DeHashed](https://dehashed.com/) 👑              |`[PAID]`|✅| ✅          |
-| [HackCheck](https://app.hackcheck.io) 👑👑            |`[PAID]`|✅| ✅         |
-| [LeakBase](https://leakbase.io)                   |`[PAID]`|❌| 👻         |
-| [LeakCheck](https://leakcheck.io/) 👑👑👑         |`[PAID]`|✅| ✅          |
-| [LeakedDomains](https://leaked.domains)           |`[PAID]`|✅| 👻         |
-| [LeakLookup](https://leak-lookup.com/)            |`[PAID]`|✅| 👻         |
-| [LeakPeek](https://leakpeek.com/)                 |`[PAID]`|❌| ✅          |
+| Name                                             | Pricing | API | Uncensored |
+|--------------------------------------------------|--------|-----|------------|
+| [Aura](https://scan.aura.com/) 👑👑              | `[FREE]` | ❌   | ❌          |
+| [BreachDirectory](https://breachdirectory.org/)  | `[FREEMIUM]` | ✅   | ❌          |
+| [DeHashed](https://dehashed.com/) 👑             |`[PAID]`|✅| ✅          |
+| [Enzoic](https://www.enzoic.com/)                 |`[PAID]`|✅| ✅          |
+| [HackCheck](https://app.hackcheck.io) 👑👑👑     |`[PAID]`|✅| ✅         |
+| [LeakBase](https://leakbase.io)                  |`[PAID]`|❌| 👻         |
+| [LeakCheck](https://leakcheck.io/) 👑👑👑        |`[PAID]`|✅| ✅          |
+| [LeakedDomains](https://leaked.domains)          |`[PAID]`|✅| 👻         |
+| [LeakLookup](https://leak-lookup.com/)           |`[PAID]`|✅| 👻         |
+| [LeakPeek](https://leakpeek.com/)                |`[PAID]`|❌| ✅          |
 | [ProxyNova](https://www.proxynova.com/tools/comb) |`[FREE]`|❌| ✅          |
-| [Snusbase](https://www.snusbase.com) 👑         |`[PAID]`|✅ | ✅          |
-| [WeLeakInfo](https://weleakinfo.io/)              |`[PAID]`|✅ | 👻         |
+| [Snusbase](https://www.snusbase.com) 👑          |`[PAID]`|✅ | ✅          |
+| [WeLeakInfo](https://weleakinfo.io/)             |`[PAID]`|✅ | 👻         |
 
 We can find infostealers and their collected data using:
 
@@ -133,7 +134,7 @@ There are costly but powerful platforms to monitor telegram and the dark/deep we
 * [Intelligence X](https://intelx.io/) <small>(👻)</small>
 * [SearchLight Cyber](https://slcyber.io/) <small>(👻)</small>
 * [DarkAtlas](https://darkatlas.io) <small>(👻)</small>
-* [SocRadar](https://socradar.io/) <small>(Very limited as a free user, costly for CTI)</small>
+* [SocRadar](https://socradar.io/) <small>(Very limited as a free user)</small>
 * [Kela Cyber](https://www.kelacyber.com/) <small>(Only the last 2 years of data, quite good, relatively costly)</small>
 * [DarkOwl](https://www.darkowl.com/) <small>(Too many unparsed breaches, limited capabilities but cheaper)</small>
 

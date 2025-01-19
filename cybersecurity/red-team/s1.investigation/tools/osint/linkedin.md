@@ -10,7 +10,18 @@
 * Returns personal emails
 * Returns user summary, first name, last name, etc.
 
-💵 **Pricing reference**: $30 for 500 profiles with caching <small>(50% were too outdated)</small>.
+💵 **Pricing reference**: $30 for 500 profiles with caching <small>(50% outdated)</small>.
+
+<br>
+
+#### LinkedIn OSINT — Apollo
+
+[Apollo](https://www.apollo.io/) is a platform and an API to search and access LinkedIn profiles. You can use the platform for free with limited capabilities.
+
+* Return professional emails (+AI generated)
+* Returns first name, last name, etc. but not their summary
+
+💵 **Pricing reference**: $588 for 12,000 profiles exports <small>(CSV, API, etc.)</small>.
 </div><div>
 
 #### LinkedIn OSINT — RocketReach
@@ -21,7 +32,7 @@
 * Return personal emails
 * Returns first name, last name, etc. but not their summary
 
-💵 **Pricing reference**: $468 for ~2500 exports. You can search and lookup an unlimited number of profiles <small>(with a rate-limit)</small>, but you can only export as CSV/JSON ~2500 of them.
+💵 **Pricing reference**: $468 for 2,500 profiles exports <small>(CSV, API, etc.)</small>. You can search and lookup an unlimited number of profiles <small>(with a rate-limit)</small>, but you can only export some of them according to your plan.
 
 <br>
 

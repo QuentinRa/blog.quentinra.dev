@@ -115,7 +115,7 @@ Websites
 
 ➡️ What you can [do if you get access to a PHP Info script](/cybersecurity/red-team/s2.discovery/techniques/websites/php_info.md).
 
-➡️ Why not try inserting newlines/`%0A` in parameters. Why not try to transform PHP/JS parameters as [explained here](/cybersecurity/red-team/s2.discovery/techniques/websites/logic_flaws.md#dynamically-typed-languages).
+➡️ Why not try inserting newlines/`%0A` in parameters. Why not try to transform PHP/JS parameters as [explained here](/cybersecurity/red-team/s2.discovery/techniques/websites/logic_flaws.md#http-parameter-pollution).
 
 🪦 If there is a load balancer such as haproxy blocking some URLs, can you try to see if `//blocked_endpoint` is blocked?
 </div></div>
