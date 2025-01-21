@@ -173,9 +173,11 @@ By examining [DNS](/operating-systems/networking/protocols/dns.md) records and c
 IP ranges are given by the client during a pentest, but there are some platforms which can be used to access this public information.
 
 * [arin](https://www.arin.net/resources/) (US) and [ripe](https://www.ripe.net/) (EU)
-* [BGP Toolkit](https://bgp.he.net/)
+* [BGP Toolkit](https://bgp.he.net/), [BGP View](https://bgpview.io/)+[API](https://api.bgpview.io/)
 * [netcraft](https://sitereport.netcraft.com/)
 * [VirusTotal](https://www.virustotal.com/gui/domain/example.com/details)
+
+From an IP, you can get the ASN using [ipwhois](https://ipwhois.io/).
 
 #### Discovering Information — DNS Records + Registrar
 
