@@ -243,6 +243,26 @@ A few tools you may use:
 
 <hr class="sep-both">
 
+## OneAudit Investigation
+
+<div class="row row-cols-lg-2"><div>
+
+We developed [oneaudit](https://github.com/quentinra/oneaudit) <small>(0.01k ⭐)</small> to ease and automate the process of external passive recon. It is built over many existing tools.
+
+**First.** Given a domain such as `example.com`, we can list its subdomains using: `oneaudit automate -d example.com -o .output -vv`.
+
+![OneAudit Subdomains](_images/oneaudit_subdomains.png)
+
+**Second.** We want to investigate each IP owned by the target company. Companies can have public hosts not associated with a domain, or not with a domain that we identified. If you identified any interesting IP ranges, add them to the scan. The command is: `oneaudit automate -d example.com -o .output -vv -s '<found>,A.B.C.D/24'`.
+
+![OneAudit Subdomains](_images/oneaudit_hosts.png)
+
+📚 Some company registered have their own IP Ranges. Make sure to check every ASN you found before running the command with `-s`.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
