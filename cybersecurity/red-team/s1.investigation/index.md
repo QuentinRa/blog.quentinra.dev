@@ -261,6 +261,16 @@ We developed [oneaudit](https://github.com/quentinra/oneaudit) <small>(0.01k ⭐
 
 📚 Some company registered have their own IP Ranges. Make sure to check every ASN you found before running the command with `-s`.
 </div><div>
+
+**Third.** So far, we focused on machines. We now want to investigate every employee that is currently working in the target company. You can do that using: `oneaudit automate [...] --format first.last`. 
+
+Run the command with `-vv` to confirm if your format seems likely <small>("verified" means "the mail existed", stats are shown at the end of the logs)</small>.
+
+![OneAudit Employees](_images/oneaudit_employees.png)
+
+⚠️ If you still cannot guess the format, skip this step for now.
+
+📚 Look for contact forms or Whois/ASN records for emails.
 </div></div>
 
 <hr class="sep-both">
