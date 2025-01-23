@@ -231,6 +231,8 @@ Some websites are keeping track of every DNS they found while monitoring and inv
 * [SubdomainsFinder](https://subdomainfinder.c99.nl/) `[FREE]`: not useful
 * [DNS Dumpster](https://dnsdumpster.com/) `[FREE]`: not useful
 * [Sublist3r](/cybersecurity/red-team/tools/enumeration/dns/sublist3r.md) `[FREE]`: unmaintained
+* [Subfinder](/cybersecurity/red-team/tools/enumeration/dns/subfinder.md) `[FREE]`: free with some FREEMIUM/PAID APIs
+
 
 📚 Use them for each wildcard certificate returned using CT.
 
