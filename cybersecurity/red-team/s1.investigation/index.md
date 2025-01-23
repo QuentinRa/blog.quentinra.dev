@@ -247,22 +247,32 @@ A few tools you may use:
 
 ## OneAudit Investigation
 
+*From a domain to a complete report about the company external surface using passive recon tools.*
+
 <div class="row row-cols-lg-2"><div>
 
 We developed [oneaudit](https://github.com/quentinra/oneaudit) <small>(0.01k ⭐)</small> to ease and automate the process of external passive recon. It is built over many existing tools.
 
-**First.** Given a domain such as `example.com`, we can list its subdomains using: `oneaudit automate -d example.com -o .output -vv`.
+#### 1. OneAudit Subdomains Investigation
+
+Given a domain such as `example.com`, we can list its subdomains using: `oneaudit automate -d example.com -o .output -vv`.
 
 ![OneAudit Subdomains](_images/oneaudit_subdomains.png)
 
-**Second.** We want to investigate each IP owned by the target company. Companies can have public hosts not associated with a domain, or not with a domain that we identified. If you identified any interesting IP ranges, add them to the scan. The command is: `oneaudit automate -d example.com -o .output -vv -s '<found>,A.B.C.D/24'`.
+<br>
+
+#### 2. OneAudit Hosts Investigation
+
+We want to investigate each IP owned by the target company. Companies can have public hosts not associated with a domain, or not with a domain that we identified. If you identified any interesting IP ranges, add them to the scan. The command is: `oneaudit automate -d example.com -o .output -vv -s '<found>,A.B.C.D/24'`.
 
 ![OneAudit Subdomains](_images/oneaudit_hosts.png)
 
 📚 Some company registered have their own IP Ranges. Make sure to check every ASN you found before running the command with `-s`.
 </div><div>
 
-**Third.** So far, we focused on machines. We now want to investigate every employee that is currently working in the target company. You can do that using: `oneaudit automate [...] --format first.last`. 
+#### 3. OneAudit Employees Investigation
+
+So far, we focused on machines. We now want to investigate every employee that is currently working in the target company. You can do that using: `oneaudit automate [...] --format first.last`. 
 
 Run the command with `-vv` to confirm if your format seems likely <small>("verified" means "the mail existed", stats are shown at the end of the logs)</small>.
 
@@ -271,6 +281,16 @@ Run the command with `-vv` to confirm if your format seems likely <small>("verif
 ⚠️ If you still cannot guess the format, skip this step for now.
 
 📚 Look for contact forms or Whois/ASN records for emails.
+
+<br>
+
+#### 4. OneAudit Leaks Investigation
+
+Finally, we want to find leaked passwords as they may still be used. We may uncover additional emails from old leaks. You can fetch the leaks <small>(with or without a target list)</small> with: `oneaudit [...] --qleaks`.
+
+![OneAudit Employees](_images/oneaudit_leaks.png)
+
+Breach dates are often invalid due to them sometimes surfacing years later to the marketplace, either individually or in a "new" compilation.
 </div></div>
 
 <hr class="sep-both">
