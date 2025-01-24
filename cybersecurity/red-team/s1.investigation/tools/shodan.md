@@ -19,7 +19,7 @@ You can even query statistics, such as, given a web server, which are the top po
 
 * [Search Query Fundamentals](https://help.shodan.io/the-basics/search-query-fundamentals)
 
-> During the Black Friday/Cyber Monday, it may be sold at 5$ for life.
+📚 [InternetDB](https://internetdb.shodan.io/) is a free version of Shodan. 
 </div></div>
 
 <hr class="sep-both">

@@ -201,6 +201,15 @@ The target may expose things in their DNS records. Aside from during CTFs, we on
 * [VirusTotal](https://www.virustotal.com/gui/domain/example.com/details)
 </div><div>
 
+#### Discovering Information — Technologies
+
+We may want to determine what hosts are known, what is running on each host, and what URLs are known. We can use:
+
+* [InternetDB](/cybersecurity/red-team/s1.investigation/tools/shodan.md) `[FREE]`: Open Ports, Technologies
+* [Shodan](/cybersecurity/red-team/s1.investigation/tools/shodan.md) `[FREEMIUM]`: Open Ports, Technologies
+* [Wayback machine](/cybersecurity/red-team/s1.investigation/tools/wayback.md) `[FREE]`: see previous versions of the website
+* [Google dorking](/cybersecurity/red-team/s1.investigation/techniques/dorking.md) `[FREE]`: find anything indexed by google
+
 #### Discovering Subdomains — Certificate Transparency (CT)
 
 [![footprinting](../../_badges/htb/footprinting.svg)](https://academy.hackthebox.com/course/preview/footprinting)
@@ -240,9 +249,9 @@ Some websites are keeping track of every DNS they found while monitoring and inv
 
 A few tools you may use:
 
-* [TheHarvester](/cybersecurity/red-team/s1.investigation/tools/theHarvester.md): automate many of the tools listed
-* [DNSRecon](/cybersecurity/red-team/tools/enumeration/dns/dnsrecon.md): access CRT, reverse lookup
-* [knock](https://github.com/guelfoweb/knock/): shodan + virus total
+* [TheHarvester](/cybersecurity/red-team/s1.investigation/tools/theHarvester.md) `[FREE]`: ???
+* [Maltego](/cybersecurity/red-team/s1.investigation/tools/maltego.md) `[FREEMIUM]`: DNS Records, Subdomains
+* [knock](https://github.com/guelfoweb/knock/) `[FREE]`: Subdomains + Shodan Data
 </div></div>
 
 <hr class="sep-both">
@@ -305,16 +314,6 @@ Stuff that I found, but never read/used yet.
 
 * cloud-based services and platforms investigation
 * Wireless network reconnaissance
-* [Google dorking](/cybersecurity/red-team/s1.investigation/techniques/dorking.md) 🧑‍💻🐟🧑: find anything indexed by google
-* [Shodan](/cybersecurity/red-team/s1.investigation/tools/shodan.md) 🐟: find exposed and potentially vulnerable IoT devices
-* [Maltego](/cybersecurity/red-team/s1.investigation/tools/maltego.md) 🧑‍💻 🐟: find websites, domains, social media accounts...
+* [Passive Network Discovery](/cybersecurity/red-team/s1.investigation/techniques/passive_network_discovery.md): map the internal network
 </div><div>
-
-Websites
-
-* [Wayback machine](/cybersecurity/red-team/s1.investigation/tools/wayback.md) 🐟: see previous versions of the website
-
-Internal Assessments
-
-* [Passive Network Discovery](/cybersecurity/red-team/s1.investigation/techniques/passive_network_discovery.md) 🃏: map the internal network
 </div></div>
