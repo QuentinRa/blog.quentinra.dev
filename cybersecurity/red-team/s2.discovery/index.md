@@ -34,6 +34,37 @@ Common activities are:
 
 <hr class="sep-both">
 
+## Investigate Hosts
+
+<div class="row row-cols-lg-2"><div>
+
+At this point, you should have a list of IPs which you have to examine.
+
+#### Investigate Hosts — Availability
+
+[![active_directory_enumeration_attacks](../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+[![activerecon](../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
+
+This is a quick check to customize the following commands. Multiple hosts are responding to an `ICMP` request, excluding Windows hosts by default. Most external targets are configured to respond.
+
+* [ping](/operating-systems/networking/commands/index.md#command-ping) `[FREE]`: test is one host is up 
+* [nmap](/cybersecurity/red-team/tools/scanners/ports/nmap.md) `[FREE]`: test is multiple hosts are up
+* [fping](https://fping.org/) `[FREE]`: test is multiple hosts are up
+
+```ps
+$ fping -asgq 172.20.0.0/23
+$ nmap -sn -iL input_list.txt -vv
+```
+
+📚 Scanning multiple hosts with ICMP requests is called a Ping sweep.
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+<hr class="sep-both">
+<hr class="sep-both">
+<hr class="sep-both">
+
 ## Arsenal 🌱
 
 <div class="row row-cols-lg-2"><div>
