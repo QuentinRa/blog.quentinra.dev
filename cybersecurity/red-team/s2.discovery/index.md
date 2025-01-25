@@ -57,6 +57,25 @@ $ nmap -sn -iL input_list.txt -vv
 ```
 
 📚 Scanning multiple hosts with ICMP requests is called a Ping sweep.
+
+<br>
+
+#### Investigate Hosts — Network Mapping
+
+[![shells_and_payloads](../../_badges/htb/shells_and_payloads.svg)](https://academy.hackthebox.com/course/preview/shells--payloads)
+[![activerecon](../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
+
+To tune attacks, we can use packet tracing to identify intermediate hosts between us and the target.
+
+Packet tracing uses an increasing TTL <small>(determines the number of hops before the packet is destroyed)</small>. Intermediate machines that destroy a packet **may** answer back saying that the packet was destroyed.
+
+* [traceroute](/operating-systems/networking/commands/index.md#command-traceroute) `[FREE]`: packet tracing command
+* [tracepath](/operating-systems/networking/commands/index.md#command-tracepath) `[FREE]`: packet tracing command
+* [tracert](/operating-systems/networking/commands/index.md#command-tracert) `[FREE] [Windows]`: packet tracing command
+
+💥 Routes taken by packets may change.
+
+📚 Some operating systems have well-known TTL values. We can use it to identify the operating system that responded <small>(unreliable)</small>.
 </div><div>
 </div></div>
 
@@ -97,12 +116,6 @@ We usually don't only rely on our web browser to recon/exploit websites, as they
 ## Tools and methods 🗺️
 
 <div class="row row-cols-lg-2"><div>
-
-Network mapping
-
-* [ping/fping](/cybersecurity/red-team/s2.discovery/techniques/network/ping.md) 🥅: check if a host respond to pings
-* [Packet tracing](/cybersecurity/red-team/s2.discovery/techniques/network/trace.md) 🥅: map a network
-* The TTL can be used to primitively guess the OS
 
 Scanning and enumeration
 
