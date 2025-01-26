@@ -36,51 +36,6 @@ Common activities are:
 
 ## Investigate Hosts
 
-<div class="row row-cols-lg-2"><div>
-
-At this point, you should have a list of IPs which you have to examine.
-
-#### Investigate Hosts — Availability
-
-[![active_directory_enumeration_attacks](../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
-[![activerecon](../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
-
-This is a quick check to customize the following commands. Multiple hosts are responding to an `ICMP` request, excluding Windows hosts by default. Most external targets are configured to respond.
-
-* [ping](/operating-systems/networking/commands/index.md#command-ping) `[FREE]`: test is one host is up 
-* [nmap](/cybersecurity/red-team/tools/scanners/ports/nmap.md) `[FREE]`: test is multiple hosts are up
-* [fping](https://fping.org/) `[FREE]`: test is multiple hosts are up
-
-```ps
-$ fping -asgq 172.20.0.0/23
-$ nmap -sn -iL input_list.txt -vv
-```
-
-📚 Scanning multiple hosts with ICMP requests is called a Ping sweep.
-
-<br>
-
-#### Investigate Hosts — Network Mapping
-
-[![shells_and_payloads](../../_badges/htb/shells_and_payloads.svg)](https://academy.hackthebox.com/course/preview/shells--payloads)
-[![activerecon](../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
-
-To tune attacks, we can use packet tracing to identify intermediate hosts between us and the target.
-
-Packet tracing uses an increasing TTL <small>(determines the number of hops before the packet is destroyed)</small>. Intermediate machines that destroy a packet **may** answer back saying that the packet was destroyed.
-
-* [traceroute](/operating-systems/networking/commands/index.md#command-traceroute) `[FREE]`: packet tracing command
-* [tracepath](/operating-systems/networking/commands/index.md#command-tracepath) `[FREE]`: packet tracing command
-* [tracert](/operating-systems/networking/commands/index.md#command-tracert) `[FREE] [Windows]`: packet tracing command
-
-💥 Routes taken by packets may change.
-
-📚 Some operating systems have well-known TTL values. We can use it to identify the operating system that responded <small>(unreliable)</small>.
-</div><div>
-
-#### Investigate Hosts — Port Scanning
-
-[![adventofcyber2](../../_badges/thm/adventofcyber2/day24.svg)](https://tryhackme.com/room/adventofcyber2)
 [![vulnversity](../../_badges/thm-p/vulnversity.svg)](https://tryhackme.com/room/vulnversity)
 [![blue](../../_badges/thm-p/blue.svg)](https://tryhackme.com/room/blue)
 [![ice](../../_badges/thm-p/ice.svg)](https://tryhackme.com/room/ice)
@@ -155,6 +110,52 @@ Packet tracing uses an increasing TTL <small>(determines the number of hops befo
 [![validation](../../_badges/htb-p/validation.svg)](https://app.hackthebox.com/machines/Validation)
 [![keeper](../../_badges/htb-p/keeper.svg)](https://app.hackthebox.com/machines/Keeper)
 
+<div class="row row-cols-lg-2"><div>
+
+At this point, you should have a list of IPs which you have to examine.
+
+#### Investigate Hosts — Availability
+
+[![active_directory_enumeration_attacks](../../_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
+[![activerecon](../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
+
+This is a quick check to customize the following commands. Multiple hosts are responding to an `ICMP` request, excluding Windows hosts by default. Most external targets are configured to respond.
+
+* [ping](/operating-systems/networking/commands/index.md#command-ping) `[FREE]`: test is one host is up 
+* [nmap](/cybersecurity/red-team/tools/scanners/ports/nmap.md) `[FREE]`: test is multiple hosts are up
+* [fping](https://fping.org/) `[FREE]`: test is multiple hosts are up
+
+```ps
+$ fping -asgq 172.20.0.0/23
+$ nmap -sn -iL input_list.txt -vv
+```
+
+📚 Scanning multiple hosts with ICMP requests is called a Ping sweep.
+
+<br>
+
+#### Investigate Hosts — Network Mapping
+
+[![shells_and_payloads](../../_badges/htb/shells_and_payloads.svg)](https://academy.hackthebox.com/course/preview/shells--payloads)
+[![activerecon](../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
+
+To tune attacks, we can use packet tracing to identify intermediate hosts between us and the target.
+
+Packet tracing uses an increasing TTL <small>(determines the number of hops before the packet is destroyed)</small>. Intermediate machines that destroy a packet **may** answer back saying that the packet was destroyed.
+
+* [traceroute](/operating-systems/networking/commands/index.md#command-traceroute) `[FREE]`: packet tracing command
+* [tracepath](/operating-systems/networking/commands/index.md#command-tracepath) `[FREE]`: packet tracing command
+* [tracert](/operating-systems/networking/commands/index.md#command-tracert) `[FREE] [Windows]`: packet tracing command
+
+💥 Routes taken by packets may change.
+
+📚 Some operating systems have well-known TTL values. We can use it to identify the operating system that responded <small>(unreliable)</small>.
+</div><div>
+
+#### Investigate Hosts — Port Scanning
+
+[![adventofcyber2](../../_badges/thm/adventofcyber2/day24.svg)](https://tryhackme.com/room/adventofcyber2)
+
 We have to know which services are running on a host, to determine attack paths. This involves discovering **TCP** and **UDP** ports.
 
 * [nmap](/cybersecurity/red-team/tools/scanners/ports/nmap.md) `[FREE]`: multipurpose scanning
@@ -192,6 +193,32 @@ $ knock IP -v 1111 5555 7777
 $ nc IP 1111 && nc IP 5555 && nc IP 7777
 $ # run port scanning again, to check if a new port is shown
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Web Services
+
+[![introwebapplicationsecurity](../../_badges/thm/introwebapplicationsecurity.svg)](https://tryhackme.com/room/introwebapplicationsecurity)
+
+<div class="row row-cols-lg-2"><div>
+
+Most companies have at least one website. They are often made using well-known frameworks that may be misconfigured or vulnerable.
+
+📚 Common ports are: `80`, `443`, `3000`, `5000`, `8000`, `8080`, and `8443`.
+
+#### Web Services — Subdomains
+
+...
+
+#### Web Services — Mapping
+
+Explore the website, note down each route and each feature. Test each form using valid expected data. Test as authenticated and not.
+
+* [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[FREEMIUM]`: map the website as you visit it
+
+...
+</div><div>
 </div></div>
 
 <hr class="sep-both">
@@ -234,8 +261,6 @@ We usually don't only rely on our web browser to recon/exploit websites, as they
 
 Scanning and enumeration
 
-* [port knocking](/cybersecurity/red-team/s2.discovery/techniques/network/port_knocking.md) 🚪: reveal hidden ports
-* [banner grabbing](/cybersecurity/red-team/s2.discovery/techniques/network/banner_grabbing.md) ☠️: get a service banner
 * [brute force service credentials](/cybersecurity/red-team/s2.discovery/techniques/network/auth.md) 🚪: try to force your way in
 * The banner format may be used to primitively guess the OS
 
@@ -257,7 +282,6 @@ Websites
 
 [![introwebapplicationsecurity](../../_badges/thm/introwebapplicationsecurity.svg)](https://tryhackme.com/room/introwebapplicationsecurity)
 
-* [Website mapping](/cybersecurity/red-team/s2.discovery/techniques/websites/mapping.md) 🧭: before investing a website
 * [Website fingerprinting](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md) 🧭: understand your target
 * [Source code analysis](/cybersecurity/red-team/s2.discovery/techniques/websites/sanalysis.md) 🚪🔥🔑: comments, hidden code...
 * [Account discovery](/cybersecurity/red-team/s2.discovery/techniques/websites/account.md) 🔑: find accounts
