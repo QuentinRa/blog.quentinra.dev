@@ -1,5 +1,12 @@
 # Change Log
 
+## v6.2.0 (2025-01-25)
+
+**Added**
+
+* `course`: Hundreds of courses over all categories
+* `feature`: Added a link to the source for each page
+
 ## v6.1.0 (2024-01-27)
 
 **Added**
