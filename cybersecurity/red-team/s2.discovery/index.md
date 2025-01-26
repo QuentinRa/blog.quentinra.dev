@@ -165,6 +165,33 @@ We have to know which services are running on a host, to determine attack paths.
 * NetCat `[FREE]`: primitive port scanning (`nc -zv IP 1-65535`)
 
 ⚠️ Tool may miss ports according to their configuration. Ports may be behind a firewall which we be able to bypass.
+
+#### Investigate Hosts — Banner grabbing
+
+[![shells_and_payloads](../../_badges/htb/shells_and_payloads.svg)](https://academy.hackthebox.com/course/preview/shells--payloads)
+[![activerecon](../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
+[![netsecchallenge](../../_badges/thmp-p/netsecchallenge.svg)](https://tryhackme.com/room/netsecchallenge)
+
+Services may return a banner when we connect to it allowing us to identify the software and the version behind it.
+
+```shell!
+$ telnet IP 21
+$ nc IP 21
+[...] FTP server (Version 6.4/OpenBSD/Linux-ftpd-0.17) ready.
+```
+
+#### Investigate Hosts — Port Knocking
+
+[![catpictures](../../_badges/thm-p/catpictures.svg)](https://tryhackme.com/r/room/catpictures)
+
+A niche practice mostly found during CTFs is called [port knocking](https://en.wikipedia.org/wiki/Port_knocking). Port knocking servers, such as [knockd](https://linux.die.net/man/1/knockd), while watch over every port and will run a command when ports are knocked in a given order.
+
+```ps
+$ sudo apt install -y knockd
+$ knock IP -v 1111 5555 7777
+$ nc IP 1111 && nc IP 5555 && nc IP 7777
+$ # run port scanning again, to check if a new port is shown
+```
 </div></div>
 
 <hr class="sep-both">
