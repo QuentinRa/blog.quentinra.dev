@@ -36,6 +36,7 @@ Common activities are:
 
 ## Investigate Hosts
 
+[![netsecchallenge](../../_badges/thmp-p/netsecchallenge.svg)](https://tryhackme.com/room/netsecchallenge)
 [![vulnversity](../../_badges/thm-p/vulnversity.svg)](https://tryhackme.com/room/vulnversity)
 [![blue](../../_badges/thm-p/blue.svg)](https://tryhackme.com/room/blue)
 [![ice](../../_badges/thm-p/ice.svg)](https://tryhackme.com/room/ice)
@@ -43,7 +44,6 @@ Common activities are:
 [![kenobi](../../_badges/thm-p/kenobi.svg)](https://tryhackme.com/room/kenobi)
 [![rrootme](../../_badges/thm-p/rrootme.svg)](https://tryhackme.com/room/rrootme)
 [![basicpentestingjt](../../_badges/thm-p/basicpentestingjt.svg)](https://tryhackme.com/room/basicpentestingjt)
-[![netsecchallenge](../../_badges/thmp-p/netsecchallenge.svg)](https://tryhackme.com/room/netsecchallenge)
 [![startup](../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
 [![cowboyhacker](../../_badges/thm-p/cowboyhacker.svg)](https://tryhackme.com/room/cowboyhacker)
 [![steelmountain](../../_badges/thmp-p/steelmountain.svg)](https://tryhackme.com/room/steelmountain)
@@ -213,11 +213,32 @@ Most companies have at least one website. They are often made using well-known f
 
 #### Web Services — Mapping
 
+[![contentdiscovery](../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
+[![adventofcyber2](../../_badges/thm/adventofcyber2/day16.svg)](https://tryhackme.com/room/adventofcyber2)
+[![picklerick](../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
+[![gamingserver](../../_badges/thm-p/gamingserver.svg)](https://tryhackme.com/room/gamingserver)
+[![surfer](../../_badges/thm-p/surfer.svg)](https://tryhackme.com/r/room/surfer)
+[![archangel](../../_badges/thm-p/archangel.svg)](https://tryhackme.com/r/room/archangel)
+[![teamcw](../../_badges/thm-p/teamcw.svg)](https://tryhackme.com/r/room/teamcw)
+[![anthem](../../_badges/thm-p/anthem.svg)](https://tryhackme.com/r/room/anthem)
+[![devvortex](../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
+[![cap](../../_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
+[![http_directory_indexing](../../_badges/rootme/web_server/http_directory_indexing.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Directory-indexing)
+
 Explore the website, note down each route and each feature. Test each form using valid expected data. Test as authenticated and not.
 
-* [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[FREEMIUM]`: map the website as you visit it
+* [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[FREEMIUM]`: Map the website as you navigate.
+* [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[PAID]`: Crawl links and `robots.txt`. 
+* [ZAProxy](/cybersecurity/red-team/tools/utilities/proxies/zap/index.md) `[FREE]`: Crawl links.
+* [onectf](/cybersecurity/red-team/tools/frameworks/onectf/index.md#onectf-crawl-module) `[FREE]`: Crawl links, basic JS events, and `robots.txt`.
+* [Katana](https://github.com/projectdiscovery/katana) `[FREE]`: Crawl links <small>(including routes within the JavaScript)</small>, forms, `robots.txt` and `sitemap.xml`.
 
-...
+```ps
+$ onectf crawl -u "https://example.com/"
+$ katana -silent -u "https://example.com:443" -o crawl.json -depth 5 -js-crawl -known-files all -rate-limit 150 -automatic-form-fill -form-extraction -tech-detect -jsonl
+```
+
+📚 Check links <small>(href, src, location.href)</small>, `/robots.txt` and `/sitemap.xml`.
 </div><div>
 </div></div>
 

@@ -153,7 +153,7 @@ Additional services:
 
 <hr class="sep-both">
 
-## Discovering Subdomains
+## Discovering Information
 
 <div class="row row-cols-lg-2"><div>
 
@@ -245,13 +245,14 @@ Some websites are keeping track of every DNS they found while monitoring and inv
 
 📚 Use them for each wildcard certificate returned using CT.
 
-#### Discovering Subdomains — Multipurpose tools
+#### Discovering Information — Multipurpose tools
 
 A few tools you may use:
 
 * [TheHarvester](/cybersecurity/red-team/s1.investigation/tools/theHarvester.md) `[FREE]`: ???
 * [Maltego](/cybersecurity/red-team/s1.investigation/tools/maltego.md) `[FREEMIUM]`: DNS Records, Subdomains
 * [knock](https://github.com/guelfoweb/knock/) `[FREE]`: Subdomains + Shodan Data
+* [Uncover](https://github.com/projectdiscovery/uncover) `[FREEMIUM]`: ???
 </div></div>
 
 <hr class="sep-both">
