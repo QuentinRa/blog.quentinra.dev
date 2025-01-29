@@ -1,26 +1,5 @@
 # Website Fingerprint
 
-<div class="row row-cols-lg-2"><div>
-
-The most important part of the website discovery step is to identify the architecture of the website.
-
-* 🤖 Are they using any frameworks? <small>(WordPress, Laravel, etc.)</small>
-* 📚 Which engine are they using? <small>(PHP, Node.js, ASP, Java, etc.)</small>
-* 📁 Which webserver are they using? <small>(Apache, Nginx, IIS)</small>
-* ...
-
-Having this information may allow us to exploit known vulnerabilities (CVEs), but it's mostly handy to fine tune the rest of the steps.
-</div><div>
-
-**Pentester Notes** 🔥
-
-If the webserver is Apache, the OS is most likely a Linux. We may choose to use Linux-only [wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md) or configure differently our tools.
-
-If we detect the use of a framework, we can use common techniques and automated tools to find internal informations <small>(users, plugins, etc.)</small> to hopefully find an attack vector.
-
-⚠️ Don't forget [robots.txt/sitemap.xml](sanalysis.md#links).
-</div></div>
-
 <hr class="sep-both">
 
 ## Analyze Web Requests
@@ -95,30 +74,6 @@ Refer to the [Cookie](/programming-languages/web/_general/random/cookies.md) for
 
 <div class="row row-cols-lg-2"><div>
 
-You can use automated tools to see if they can detect the underlying technologies and the presence of a framework.
-
-* [wappalyzer](/cybersecurity/red-team/tools/scanners/web/wappalyzer.md): list front-end components
-* [whatweb](/cybersecurity/red-team/tools/scanners/web/whatweb.md): list front-end and back-end information
-* [nikto](/cybersecurity/red-team/tools/scanners/web/nikto.md): look for common vulnerabilities, which may expose the architecture and the framework indirectly.
-* [CMSeek](https://github.com/Tuhinshubhra/CMSeeK): not tested 👻 
-* [builtwith](https://builtwith.com/): not tested 👻
-* [whatruns](https://www.whatruns.com/): not tested 👻
-
-<br>
-
-#### Extension Fuzzing
-
-[![attacking_with_ffuf](../../../../_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
-
-We may want to find which extension the server uses, to fine tune our attacks. We may guess it based on the webserver but this is unreliable.
-
-Most websites have a file called `index` which can be used for [fuzzing](fuzzing.md). For example, with the URL `example.com/indexFUZZ`.
-
-
-Refer to [wordlists#extensions](/cybersecurity/red-team/_knowledge/topics/wordlists.md#extensions) for wordlists.
-
-<br>
-
 #### Favicon Fingerprint
 
 [![contentdiscovery](../../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
@@ -141,13 +96,6 @@ $ Get-FileHash .\favicon.ico -Algorithm MD5
 Frameworks and CMS such as WordPress make it easier to develop websites by providing a generic implementation of common website features. It's often advised to use a framework both to ease the work of the developers, and reduce the number of vulnerabilities.
 
 Fewer vulnerabilities don't mean that there are no vulnerabilities. Frameworks may be misconfigured or misused. They may not be updated or users may have installed vulnerable third-party extensions.
-
-* Look if the framework is credited at the bottom of the page
-* Look if there is an HTML comment with the framework name/...
-* Try to find the version <small>(comments, dependencies, features...)</small>
-* Look for the login page / CMS panel and its layout
-* Look for the error page and its layout
-* Look for `<meta name="generator" content="<here>">`
 
 Common Frameworks/CMS:
 

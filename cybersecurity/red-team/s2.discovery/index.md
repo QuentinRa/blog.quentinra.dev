@@ -211,6 +211,31 @@ Most companies have at least one website. They are often made using well-known f
 
 ...
 
+#### Web Services — Fingerprint
+
+[![attacking_with_ffuf](../../_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
+
+Before even exploring the website, we may want to discover the stack. While rare, there may be vulnerabilities on the infrastructure. Regardless, we will use this knowledge to prioritize some checks.
+
+* 🤖 Are they using any frameworks? <small>(WordPress, Laravel, etc.)</small>
+* 📚 Which engine are they using? <small>(PHP, Node.js, ASP, Java, etc.)</small>
+* 📁 Which webserver are they using? <small>(Apache, Nginx, IIS)</small>
+
+We commonly use tools such as:
+
+* [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[FREEMIUM]`: browse source code, headers, cookies.
+* [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[PAID]`: active scan can detect versions
+* [wappalyzer](/cybersecurity/red-team/tools/scanners/web/wappalyzer.md) `[FREEMIUM]`: detect technologies and their versions
+* [whatweb](/cybersecurity/red-team/tools/scanners/web/whatweb.md) `[FREE]`: detect technologies and their versions
+* [nikto](/cybersecurity/red-team/tools/scanners/web/nikto.md) `[FREE]`: vulnerability scanner with fingerprint modules
+* [CMSeek](https://github.com/Tuhinshubhra/CMSeeK) `[FREE]`: CMS scanner with fingerprint modules
+* [builtwith](https://builtwith.com/) `[FREEMIUM]`: detect technologies and their versions
+* [whatruns](https://www.whatruns.com/) `[FREE]`: detect technologies and their versions
+
+📚 Check links <small>(css, js)</small>, `/robots.txt`, copyrights, `<meta>` tags, `<title>` tag, the favicon, the login/admin/error page, headers, and cookies.
+
+📚 Fuzz extensions: `/indexFUZZ` which is often `/index.php`.
+
 #### Web Services — Mapping
 
 [![contentdiscovery](../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
@@ -230,7 +255,9 @@ Explore the website, note down each route and each feature. Test each form using
 * [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[FREEMIUM]`: Map the website as you navigate.
 * [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[PAID]`: Crawl links and `robots.txt`. 
 * [ZAProxy](/cybersecurity/red-team/tools/utilities/proxies/zap/index.md) `[FREE]`: Crawl links.
-* [onectf](/cybersecurity/red-team/tools/frameworks/onectf/index.md#onectf-crawl-module) `[FREE]`: Crawl links, basic JS events, and `robots.txt`.
+* [onectf](/cybersecurity/red-team/tools/frameworks/onectf/index.md#onectf-crawl-module) `[FREE]`: Crawl links, simple JS events, and `robots.txt`. Include path discovery <small>(check each folder in a path for directory listing)</small>.
+* [getallurls](https://github.com/lc/gau) `[FREE]`: Crawl links and use passive recon.
+* [subjs](https://github.com/lc/subjs) `[FREE]`: Find routes within JavaScript files
 * [Katana](https://github.com/projectdiscovery/katana) `[FREE]`: Crawl links <small>(including routes within the JavaScript)</small>, forms, `robots.txt` and `sitemap.xml`.
 
 ```ps
@@ -239,6 +266,10 @@ $ katana -silent -u "https://example.com:443" -o crawl.json -depth 5 -js-crawl -
 ```
 
 📚 Check links <small>(href, src, location.href)</small>, `/robots.txt` and `/sitemap.xml`.
+
+#### Web Services — Forced Browsing
+
+...
 </div><div>
 </div></div>
 
