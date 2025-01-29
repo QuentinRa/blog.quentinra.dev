@@ -211,6 +211,8 @@ Most companies have at least one website. They are often made using well-known f
 
 ...
 
+<br>
+
 #### Web Services — Fingerprint
 
 [![attacking_with_ffuf](../../_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
@@ -225,16 +227,18 @@ We commonly use tools such as:
 
 * [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[FREEMIUM]`: browse source code, headers, cookies.
 * [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[PAID]`: active scan can detect versions
-* [wappalyzer](/cybersecurity/red-team/tools/scanners/web/wappalyzer.md) `[FREEMIUM]`: detect technologies and their versions
+* [wappalyzer](/cybersecurity/red-team/tools/scanners/web/wappalyzer.md) `[FREEMIUM]` 📌: detect technologies and their versions
 * [whatweb](/cybersecurity/red-team/tools/scanners/web/whatweb.md) `[FREE]`: detect technologies and their versions
 * [nikto](/cybersecurity/red-team/tools/scanners/web/nikto.md) `[FREE]`: vulnerability scanner with fingerprint modules
 * [CMSeek](https://github.com/Tuhinshubhra/CMSeeK) `[FREE]`: CMS scanner with fingerprint modules
 * [builtwith](https://builtwith.com/) `[FREEMIUM]`: detect technologies and their versions
 * [whatruns](https://www.whatruns.com/) `[FREE]`: detect technologies and their versions
 
-📚 Check links <small>(css, js)</small>, `/robots.txt`, copyrights, `<meta>` tags, `<title>` tag, the favicon, the login/admin/error page, headers, and cookies.
+📚 Check source code <small>(css/js, links, comments, copyrights)</small>, `/robots.txt`, files extensions or fuzz extensions for `/indexFUZZ`, `<meta>`/`<title>` tags, the favicon, login/admin/error pages, headers, and cookies.
 
-📚 Fuzz extensions: `/indexFUZZ` which is often `/index.php`.
+🛡️ Remove versions in headers. Do not enable DEBUG modes. Keep error messages generic. Remove the default favicon and comments.
+
+<br>
 
 #### Web Services — Mapping
 
@@ -252,13 +256,13 @@ We commonly use tools such as:
 
 Explore the website, note down each route and each feature. Test each form using valid expected data. Test as authenticated and not.
 
-* [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[FREEMIUM]`: Map the website as you navigate.
+* [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[FREEMIUM]` 📌: Map the website as you navigate.
 * [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[PAID]`: Crawl links and `robots.txt`. 
 * [ZAProxy](/cybersecurity/red-team/tools/utilities/proxies/zap/index.md) `[FREE]`: Crawl links.
 * [onectf](/cybersecurity/red-team/tools/frameworks/onectf/index.md#onectf-crawl-module) `[FREE]`: Crawl links, simple JS events, and `robots.txt`. Include path discovery <small>(check each folder in a path for directory listing)</small>.
 * [getallurls](https://github.com/lc/gau) `[FREE]`: Crawl links and use passive recon.
 * [subjs](https://github.com/lc/subjs) `[FREE]`: Find routes within JavaScript files
-* [Katana](https://github.com/projectdiscovery/katana) `[FREE]`: Crawl links <small>(including routes within the JavaScript)</small>, forms, `robots.txt` and `sitemap.xml`.
+* [Katana](https://github.com/projectdiscovery/katana) `[FREE]` 📌: Crawl links <small>(including routes within the JavaScript)</small>, forms, `robots.txt` and `sitemap.xml`.
 
 ```ps
 $ onectf crawl -u "https://example.com/"
@@ -267,10 +271,13 @@ $ katana -silent -u "https://example.com:443" -o crawl.json -depth 5 -js-crawl -
 
 📚 Check links <small>(href, src, location.href)</small>, `/robots.txt` and `/sitemap.xml`.
 
+🛡️ Do not expose sensitive endpoints in the code base. Correctly implement security mechanisms <small>(e.g. IP checks)</small> to secure hidden pages.
+</div><div>
+
 #### Web Services — Forced Browsing
 
 ...
-</div><div>
+
 </div></div>
 
 <hr class="sep-both">

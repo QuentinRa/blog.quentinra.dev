@@ -11,4 +11,6 @@ If you are using the extension, you might want to uncheck the option to send ano
 
 🪦 It seems that their tool became more limited for free users after they deleted the open-source repository.
 </div><div>
+
+There is an extension that we recommend to install.
 </div></div>
