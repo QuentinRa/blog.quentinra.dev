@@ -213,33 +213,6 @@ Most companies have at least one website. They are often made using well-known f
 
 <br>
 
-#### Web Services — Fingerprint
-
-[![attacking_with_ffuf](../../_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
-
-Before even exploring the website, we may want to discover the stack. While rare, there may be vulnerabilities on the infrastructure. Regardless, we will use this knowledge to prioritize some checks.
-
-* 🤖 Are they using any frameworks? <small>(WordPress, Laravel, etc.)</small>
-* 📚 Which engine are they using? <small>(PHP, Node.js, ASP, Java, etc.)</small>
-* 📁 Which webserver are they using? <small>(Apache, Nginx, IIS)</small>
-
-We commonly use tools such as:
-
-* [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[FREEMIUM]`: browse source code, headers, cookies.
-* [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[PAID]`: active scan can detect versions
-* [wappalyzer](/cybersecurity/red-team/tools/scanners/web/wappalyzer.md) `[FREEMIUM]` 📌: detect technologies and their versions
-* [whatweb](/cybersecurity/red-team/tools/scanners/web/whatweb.md) `[FREE]`: detect technologies and their versions
-* [nikto](/cybersecurity/red-team/tools/scanners/web/nikto.md) `[FREE]`: vulnerability scanner with fingerprint modules
-* [CMSeek](https://github.com/Tuhinshubhra/CMSeeK) `[FREE]`: CMS scanner with fingerprint modules
-* [builtwith](https://builtwith.com/) `[FREEMIUM]`: detect technologies and their versions
-* [whatruns](https://www.whatruns.com/) `[FREE]`: detect technologies and their versions
-
-📚 Check source code <small>(css/js, links, comments, copyrights)</small>, `/robots.txt`, files extensions or fuzz extensions for `/indexFUZZ`, `<meta>`/`<title>` tags, the favicon, login/admin/error pages, headers, and cookies.
-
-🛡️ Remove versions in headers. Do not enable DEBUG modes. Keep error messages generic. Remove the default favicon and comments.
-
-<br>
-
 #### Web Services — Mapping
 
 [![contentdiscovery](../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
@@ -272,12 +245,100 @@ $ katana -silent -u "https://example.com:443" -o crawl.json -depth 5 -js-crawl -
 📚 Check links <small>(href, src, location.href)</small>, `/robots.txt` and `/sitemap.xml`.
 
 🛡️ Do not expose sensitive endpoints in the code base. Correctly implement security mechanisms <small>(e.g. IP checks)</small> to secure hidden pages.
+
+<br>
+
+#### Web Services — Fingerprint
+
+[![attacking_with_ffuf](../../_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
+
+Before even exploring the website, we may want to discover the stack. While rare, there may be vulnerabilities on the infrastructure. Regardless, we will use this knowledge to prioritize some checks.
+
+* 🤖 Are they using any frameworks? <small>(WordPress, Laravel, etc.)</small>
+* 📚 Which engine are they using? <small>(PHP, Node.js, ASP, Java, etc.)</small>
+* 📁 Which webserver are they using? <small>(Apache, Nginx, IIS)</small>
+* ✍️ Which devkit are they using? <small>(Composer/vendor, package.json, etc.)</small>
+
+We commonly use tools such as:
+
+* [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[FREEMIUM]`: browse source code, headers, cookies.
+* [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[PAID]`: active scan can detect versions
+* [wappalyzer](/cybersecurity/red-team/tools/scanners/web/wappalyzer.md) `[FREEMIUM]` 📌: detect technologies and their versions
+* [whatweb](/cybersecurity/red-team/tools/scanners/web/whatweb.md) `[FREE]`: detect technologies and their versions
+* [nikto](/cybersecurity/red-team/tools/scanners/web/nikto.md) `[FREE]`: vulnerability scanner with fingerprint modules
+* [CMSeek](https://github.com/Tuhinshubhra/CMSeeK) `[FREE]`: CMS scanner with fingerprint modules
+* [builtwith](https://builtwith.com/) `[FREEMIUM]`: detect technologies and their versions
+* [whatruns](https://www.whatruns.com/) `[FREE]`: detect technologies and their versions
+
+📚 Check source code <small>(css/js, links, comments, copyrights)</small>, `/robots.txt`, files extensions or fuzz extensions for `/indexFUZZ`, `<meta>`/`<title>` tags, the favicon, login/admin/error pages, headers, and cookies.
+
+🛡️ Remove versions in headers. Do not enable DEBUG modes. Keep error messages generic. Remove the default favicon and comments.
 </div><div>
 
 #### Web Services — Forced Browsing
 
 ...
 
+</div></div>
+
+<hr class="sep-both">
+
+## Web Services — Checklist
+
+<div class="row row-cols-lg-2"><div>
+
+#### Web Services — Subdomains — Checklist
+
+...
+
+#### Web Services — Mapping — Checklist
+
+Detect common files:
+
+- [x] Crawl the website unauthenticated
+- [ ] Crawl the website authenticated <small>(✍️🧪)</small>
+- [x] Detect non-generic robots.txt
+- [x] Crawl robots.txt
+- [ ] Detect and crawl sitemap.xml <small>(🧪)</small>
+- [ ] Detect and scrap humans.txt <small>(✍️🧪)</small>
+- [ ] Detect and scrap security.txt <small>(✍️🧪)</small>
+- [x] Detect and crawl directories with directory listing
+
+📚 Find routes, files, and emails.
+
+#### Web Services — Fingerprint — Checklist
+
+Detect common mistakes/misconfigurations:
+
+- [x] HTML Comments
+- [ ] Headers
+- [ ] Cookies
+- [ ] Default favicon
+
+Other elements:
+
+- [x] Emails
+- [ ] indexFUZZ
+- [ ] Meta tags
+- [ ] Title
+- [ ] 404 page, login/admin page, etc.
+
+📚 Find routes, secrets, emails, etc.
+</div><div>
+
+#### Web Services — Forced Browsing — Checklist
+
+Detect common files and folders:
+
+- [ ] .git, .git/HEAD, .git/config
+- [ ] .svn
+- [ ] .DS_Store
+- [ ] trailing tilde
+- [ ] .bak extension
+- [ ] .env
+- [x] composer.json, composer.lock, vendor/composer/installed.json
+- [x] package.json, package-json.lock, yarn.lock
+- [ ] .map css/javascript files <small>(🧪)</small>
 </div></div>
 
 <hr class="sep-both">
