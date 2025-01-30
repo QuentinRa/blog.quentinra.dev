@@ -251,8 +251,25 @@ $ katana -silent -u "https://example.com:443" -o crawl.json -depth 5 -js-crawl -
 #### Web Services — Fingerprint
 
 [![attacking_with_ffuf](../../_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
+[![broken_authentication](../../_badges/htb/broken_authentication.svg)](https://academy.hackthebox.com/course/preview/broken-authentication)
+[![walkinganapplication](../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
+[![httpindetail](../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
+[![adventofcyber2](../../_badges/thm/adventofcyber2/day1.svg)](https://tryhackme.com/room/adventofcyber2)
+[![contentdiscovery](../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
+[![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
+[![agentt](../../_badges/thm-p/agentt.svg)](https://tryhackme.com/room/agentt)
+[![unbakedpie](../../_badges/thm-p/unbakedpie.svg)](https://tryhackme.com/r/room/unbakedpie)
+[![glitch](../../_badges/thm-p/glitch.svg)](https://tryhackme.com/r/room/glitch)
+[![vulnnet_node](../../_badges/thm-p/vulnnet_node.svg)](https://tryhackme.com/r/room/vulnnetnode)
+[![jason](../../_badges/thm-p/jason.svg)](https://tryhackme.com/r/room/jason)
+[![knife](../../_badges/htb-p/knife.svg)](https://app.hackthebox.com/machines/Knife)
+[![celestial](../../_badges/htb-p/celestial.svg)](https://app.hackthebox.com/machines/Celestial)
+[![http_user-agent](../../_badges/rootme/web_server/http_user-agent.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-User-agent)
+[![http_headers-agent](../../_badges/rootme/web_server/http_headers.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Headers)
+[![http_cookies](../../_badges/rootme/web_server/http_cookies.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Cookies)
+[![http_ip_restriction_bypass](../../_badges/rootme/web_server/http_ip_restriction_bypass.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-IP-restriction-bypass)
 
-Before even exploring the website, we may want to discover the stack. While rare, there may be vulnerabilities on the infrastructure. Regardless, we will use this knowledge to prioritize some checks.
+Before even exploring the website, we may want to discover the technology stack. While rare, there may be vulnerabilities on the infrastructure. Regardless, we will use this knowledge to prioritize some checks.
 
 * 🤖 Are they using any frameworks? <small>(WordPress, Laravel, etc.)</small>
 * 📚 Which engine are they using? <small>(PHP, Node.js, ASP, Java, etc.)</small>
@@ -293,7 +310,7 @@ We commonly use tools such as:
 
 #### Web Services — Mapping — Checklist
 
-Detect common files:
+Detect common files and endpoints:
 
 - [x] Crawl the website unauthenticated
 - [ ] Crawl the website authenticated <small>(✍️🧪)</small>
@@ -304,15 +321,21 @@ Detect common files:
 - [ ] Detect and scrap security.txt <small>(✍️🧪)</small>
 - [x] Detect and crawl directories with directory listing
 
-📚 Find routes, files, and emails.
+Detect interesting elements:
+
+- [x] Detect forms
+- [ ] Detect endpoints in the JavaScript <small>(🧪)</small>
+- [ ] Detect secrets in the JavaScript <small>(✍️🧪)</small>
+
+📚 Find routes, files, secrets, and emails.
 
 #### Web Services — Fingerprint — Checklist
 
 Detect common mistakes/misconfigurations:
 
 - [x] HTML Comments
-- [ ] Headers
-- [ ] Cookies
+- [x] Headers
+- [x] Cookies
 - [ ] Default favicon
 
 Other elements:
