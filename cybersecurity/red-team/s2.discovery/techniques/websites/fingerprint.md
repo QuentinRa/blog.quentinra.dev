@@ -4,32 +4,10 @@
 
 ## Architecture Analysis
 
-[![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
-
 <div class="row row-cols-lg-2"><div>
-
-#### Favicon Fingerprint
-
-[![contentdiscovery](../../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
-
-Look for the default favicon of the framework. Usually, it's stored at `/favicon.ico`, although it's usually removed. If you do find one, download it, hash it (MD5), and [look for it in OWASP favicon database](https://wiki.owasp.org/index.php/OWASP_favicon_database).
-
-```ps
-# Linux
-$ curl URL/favicon.ico | md5sum
-# Windows (on a downloaded favicon)
-$ Get-FileHash .\favicon.ico -Algorithm MD5
-```
 </div><div>
 
 #### Manual Framework Identification
-
-[![contentdiscovery](../../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
-![getsimplecms](../../../../_badges/htb-p/getsimplecms.svg)
-
-Frameworks and CMS such as WordPress make it easier to develop websites by providing a generic implementation of common website features. It's often advised to use a framework both to ease the work of the developers, and reduce the number of vulnerabilities.
-
-Fewer vulnerabilities don't mean that there are no vulnerabilities. Frameworks may be misconfigured or misused. They may not be updated or users may have installed vulnerable third-party extensions.
 
 Common Frameworks/CMS:
 

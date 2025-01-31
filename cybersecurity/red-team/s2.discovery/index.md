@@ -267,8 +267,10 @@ $ katana -silent -u "https://example.com:443" -o crawl.json -depth 5 -js-crawl -
 [![glitch](../../_badges/thm-p/glitch.svg)](https://tryhackme.com/r/room/glitch)
 [![jason](../../_badges/thm-p/jason.svg)](https://tryhackme.com/r/room/jason)
 [![vulnnet_node](../../_badges/thm-p/vulnnet_node.svg)](https://tryhackme.com/r/room/vulnnetnode)
+![getsimplecms](../../_badges/htb-p/getsimplecms.svg)
 [![knife](../../_badges/htb-p/knife.svg)](https://app.hackthebox.com/machines/Knife)
 [![celestial](../../_badges/htb-p/celestial.svg)](https://app.hackthebox.com/machines/Celestial)
+[![devvortex](../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
 [![http_user-agent](../../_badges/rootme/web_server/http_user-agent.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-User-agent)
 [![http_headers-agent](../../_badges/rootme/web_server/http_headers.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Headers)
 [![http_cookies](../../_badges/rootme/web_server/http_cookies.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Cookies)
@@ -294,7 +296,7 @@ We commonly use tools such as:
 
 📚 Check source code <small>(css/js, links, comments, copyrights)</small>, `/robots.txt`, files extensions or fuzz extensions for `/indexFUZZ`, `<meta>`/`<title>` tags, the favicon, login/admin/error pages, headers, and cookies.
 
-🛡️ Remove versions in headers. Do not enable DEBUG modes. Keep error messages generic. Remove the default favicon and comments.
+🛡️ Remove versions in headers. Do not enable DEBUG modes. Keep error messages generic. Remove the [default favicon](https://wiki.owasp.org/index.php/OWASP_favicon_database) and comments.
 
 <br>
 
@@ -357,7 +359,7 @@ Detect common mistakes/misconfigurations:
 - [x] HTML Comments
 - [x] Headers
 - [x] Cookies
-- [ ] Default favicon
+- [x] Default favicon
 
 Other elements:
 
