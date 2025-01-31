@@ -248,6 +248,11 @@ $ katana -silent -u "https://example.com:443" -o crawl.json -depth 5 -js-crawl -
 
 <br>
 
+#### Web Services — Forced Browsing
+
+...
+</div><div>
+
 #### Web Services — Fingerprint
 
 [![attacking_with_ffuf](../../_badges/htb/attacking_with_ffuf.svg)](https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf)
@@ -260,8 +265,8 @@ $ katana -silent -u "https://example.com:443" -o crawl.json -depth 5 -js-crawl -
 [![agentt](../../_badges/thm-p/agentt.svg)](https://tryhackme.com/room/agentt)
 [![unbakedpie](../../_badges/thm-p/unbakedpie.svg)](https://tryhackme.com/r/room/unbakedpie)
 [![glitch](../../_badges/thm-p/glitch.svg)](https://tryhackme.com/r/room/glitch)
-[![vulnnet_node](../../_badges/thm-p/vulnnet_node.svg)](https://tryhackme.com/r/room/vulnnetnode)
 [![jason](../../_badges/thm-p/jason.svg)](https://tryhackme.com/r/room/jason)
+[![vulnnet_node](../../_badges/thm-p/vulnnet_node.svg)](https://tryhackme.com/r/room/vulnnetnode)
 [![knife](../../_badges/htb-p/knife.svg)](https://app.hackthebox.com/machines/Knife)
 [![celestial](../../_badges/htb-p/celestial.svg)](https://app.hackthebox.com/machines/Celestial)
 [![http_user-agent](../../_badges/rootme/web_server/http_user-agent.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-User-agent)
@@ -269,7 +274,7 @@ $ katana -silent -u "https://example.com:443" -o crawl.json -depth 5 -js-crawl -
 [![http_cookies](../../_badges/rootme/web_server/http_cookies.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Cookies)
 [![http_ip_restriction_bypass](../../_badges/rootme/web_server/http_ip_restriction_bypass.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-IP-restriction-bypass)
 
-Before even exploring the website, we may want to discover the technology stack. While rare, there may be vulnerabilities on the infrastructure. Regardless, we will use this knowledge to prioritize some checks.
+Before even exploring the website, we may want to discover the technology stack. While rare, there may be vulnerabilities on the infrastructure. We will use this knowledge to prioritize checks.
 
 * 🤖 Are they using any frameworks? <small>(WordPress, Laravel, etc.)</small>
 * 📚 Which engine are they using? <small>(PHP, Node.js, ASP, Java, etc.)</small>
@@ -290,9 +295,10 @@ We commonly use tools such as:
 📚 Check source code <small>(css/js, links, comments, copyrights)</small>, `/robots.txt`, files extensions or fuzz extensions for `/indexFUZZ`, `<meta>`/`<title>` tags, the favicon, login/admin/error pages, headers, and cookies.
 
 🛡️ Remove versions in headers. Do not enable DEBUG modes. Keep error messages generic. Remove the default favicon and comments.
-</div><div>
 
-#### Web Services — Forced Browsing
+<br>
+
+#### Web Services — XXX
 
 ...
 
@@ -329,6 +335,21 @@ Detect interesting elements:
 
 📚 Find routes, files, secrets, and emails.
 
+#### Web Services — Forced Browsing — Checklist
+
+Detect common files and folders:
+
+- [ ] .git, .git/HEAD, .git/config
+- [ ] .svn
+- [ ] .DS_Store
+- [ ] trailing tilde
+- [ ] .bak extension
+- [ ] .env
+- [x] composer.json, composer.lock, vendor/composer/installed.json
+- [x] package.json, package-json.lock, yarn.lock
+- [ ] .map css/javascript files <small>(🧪)</small>
+</div><div>
+
 #### Web Services — Fingerprint — Checklist
 
 Detect common mistakes/misconfigurations:
@@ -347,21 +368,6 @@ Other elements:
 - [ ] 404 page, login/admin page, etc.
 
 📚 Find routes, secrets, emails, etc.
-</div><div>
-
-#### Web Services — Forced Browsing — Checklist
-
-Detect common files and folders:
-
-- [ ] .git, .git/HEAD, .git/config
-- [ ] .svn
-- [ ] .DS_Store
-- [ ] trailing tilde
-- [ ] .bak extension
-- [ ] .env
-- [x] composer.json, composer.lock, vendor/composer/installed.json
-- [x] package.json, package-json.lock, yarn.lock
-- [ ] .map css/javascript files <small>(🧪)</small>
 </div></div>
 
 <hr class="sep-both">
