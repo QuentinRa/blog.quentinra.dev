@@ -50,46 +50,6 @@ Array.from(document.querySelectorAll('*')).filter(x => {
 
 <hr class="sep-both">
 
-## Comments
-
-[![howwebsiteswork](../../../../_badges/thmp/howwebsiteswork.svg)](https://tryhackme.com/room/howwebsiteswork)
-[![walkinganapplication](../../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
-[![picklerick](../../../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
-[![wgelctf](../../../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
-[![gamingserver](../../../../_badges/thm-p/gamingserver.svg)](https://tryhackme.com/room/gamingserver)
-[![cyborgt8](../../../../_badges/thm-p/cyborgt8.svg)](https://tryhackme.com/room/cyborgt8)
-![nibbles](../../../../_badges/htb-p/nibbles.svg)
-[![html_source_code](../../../../_badges/rootme/web_server/html_source_code.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTML-Source-code)
-[![http_directory_indexing](../../../../_badges/rootme/web_server/http_directory_indexing.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Directory-indexing)
-[![phpbb_install_files](../../../../_badges/rootme/web_server/phpbb_install_files.svg)](https://www.root-me.org/en/Challenges/Web-Server/Install-files)
-
-<div class="row row-cols-lg-2"><div>
-
-You can use JavaScript to fetch every HTML comment ([rt/96517](https://www.regextester.com/96517)):
-
-```js!
-document.querySelector('html').innerHTML.replaceAll('\n', ' ').match(/<!--.*?-->/g)
-```
-```js!
-document.querySelector('html').innerHTML.replaceAll('\n', '/n').match(/<!--.*?-->/g).map(x => x.replaceAll('/n', '\n'))
-```
-
-You may append the snippet this to remove empty comments:
-
-```javascript!
-[...].filter(r => r !== "<!---->")
-```
-</div><div>
-
-You can use [onectf](/cybersecurity/red-team/tools/frameworks/onectf/index.md#onectf-crawl-module) to crawl a website and display HTML comments:
-
-```ps
-$ onectf crawl -u https://example.com/ --comments
-```
-</div></div>
-
-<hr class="sep-both">
-
 ## Analyze the javascript
 
 [![server_side_attacks](../../../../_badges/htb/server_side_attacks.svg)](https://academy.hackthebox.com/course/preview/server-side-attacks)

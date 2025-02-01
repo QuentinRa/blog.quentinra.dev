@@ -261,12 +261,18 @@ $ katana -silent -u "https://example.com:443" -o crawl.json -depth 5 -js-crawl -
 [![httpindetail](../../_badges/thm/httpindetail.svg)](https://tryhackme.com/room/httpindetail)
 [![adventofcyber2](../../_badges/thm/adventofcyber2/day1.svg)](https://tryhackme.com/room/adventofcyber2)
 [![contentdiscovery](../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
+[![howwebsiteswork](../../_badges/thmp/howwebsiteswork.svg)](https://tryhackme.com/room/howwebsiteswork)
 [![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 [![agentt](../../_badges/thm-p/agentt.svg)](https://tryhackme.com/room/agentt)
 [![unbakedpie](../../_badges/thm-p/unbakedpie.svg)](https://tryhackme.com/r/room/unbakedpie)
 [![glitch](../../_badges/thm-p/glitch.svg)](https://tryhackme.com/r/room/glitch)
 [![jason](../../_badges/thm-p/jason.svg)](https://tryhackme.com/r/room/jason)
 [![vulnnet_node](../../_badges/thm-p/vulnnet_node.svg)](https://tryhackme.com/r/room/vulnnetnode)
+[![picklerick](../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
+[![wgelctf](../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
+[![gamingserver](../../_badges/thm-p/gamingserver.svg)](https://tryhackme.com/room/gamingserver)
+[![cyborgt8](../../_badges/thm-p/cyborgt8.svg)](https://tryhackme.com/room/cyborgt8)
+![nibbles](../../_badges/htb-p/nibbles.svg)
 ![getsimplecms](../../_badges/htb-p/getsimplecms.svg)
 [![knife](../../_badges/htb-p/knife.svg)](https://app.hackthebox.com/machines/Knife)
 [![celestial](../../_badges/htb-p/celestial.svg)](https://app.hackthebox.com/machines/Celestial)
@@ -274,6 +280,9 @@ $ katana -silent -u "https://example.com:443" -o crawl.json -depth 5 -js-crawl -
 [![http_user-agent](../../_badges/rootme/web_server/http_user-agent.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-User-agent)
 [![http_headers-agent](../../_badges/rootme/web_server/http_headers.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Headers)
 [![http_cookies](../../_badges/rootme/web_server/http_cookies.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Cookies)
+[![html_source_code](../../_badges/rootme/web_server/html_source_code.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTML-Source-code)
+[![http_directory_indexing](../../_badges/rootme/web_server/http_directory_indexing.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Directory-indexing)
+[![phpbb_install_files](../../_badges/rootme/web_server/phpbb_install_files.svg)](https://www.root-me.org/en/Challenges/Web-Server/Install-files)
 [![http_ip_restriction_bypass](../../_badges/rootme/web_server/http_ip_restriction_bypass.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-IP-restriction-bypass)
 
 Before even exploring the website, we may want to discover the technology stack. While rare, there may be vulnerabilities on the infrastructure. We will use this knowledge to prioritize checks.
@@ -332,10 +341,9 @@ Detect common files and endpoints:
 Detect interesting elements:
 
 - [x] Detect forms
-- [ ] Detect endpoints in the JavaScript <small>(✍️🧪)</small>
-- [ ] Detect secrets in the JavaScript <small>(✍️🧪)</small>
+- [x] Detect endpoints in the JavaScript <small>(✍️🧪)</small>
 
-📚 Find routes, files, secrets, and emails.
+📚 Find routes, files, forms, and emails.
 
 #### Web Services — Forced Browsing — Checklist
 
@@ -357,13 +365,17 @@ Detect common files and folders:
 Detect common mistakes/misconfigurations:
 
 - [x] HTML Comments
+- [ ] JavaScript Comments
+- [ ] CSS Comments
 - [x] Headers
 - [x] Cookies
 - [x] Default favicon
+- [ ] Detect secrets in the JavaScript <small>(✍️🧪)</small>
 
 Other elements:
 
-- [x] Emails
+- [x] Detected Emails
+- [ ] Detected Domains/Subdomains <small>(✍️🧪)</small>
 - [ ] indexFUZZ
 - [ ] Meta tags
 - [ ] Title
