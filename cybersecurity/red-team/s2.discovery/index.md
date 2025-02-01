@@ -235,7 +235,7 @@ Explore the website, note down each route and each feature. Test each form using
 * [onectf](/cybersecurity/red-team/tools/frameworks/onectf/index.md#onectf-crawl-module) `[FREE]`: Crawl links, simple JS events, and `robots.txt`. Include path discovery <small>(check each folder in a path for directory listing)</small>.
 * [getallurls](https://github.com/lc/gau) `[FREE]`: Crawl links and use passive recon.
 * [subjs](https://github.com/lc/subjs) `[FREE]`: Find routes within JavaScript files
-* [Katana](https://github.com/projectdiscovery/katana) `[FREE]` 📌: Crawl links <small>(including routes within the JavaScript)</small>, forms, `robots.txt` and `sitemap.xml`.
+* [Katana](https://github.com/projectdiscovery/katana) `[FREE]` 📌: Crawl links <small>(can submit basic forms, but JavaScript crawling flags are quite useless)</small>, forms, `robots.txt` and `sitemap.xml`.
 
 ```ps
 $ onectf crawl -u "https://example.com/"
@@ -321,18 +321,18 @@ We commonly use tools such as:
 Detect common files and endpoints:
 
 - [x] Crawl the website unauthenticated
-- [ ] Crawl the website authenticated <small>(✍️🧪)</small>
+- [ ] Crawl the website authenticated <small>(🧪)</small>
 - [x] Detect non-generic robots.txt
 - [x] Crawl robots.txt
-- [ ] Detect and crawl sitemap.xml <small>(🧪)</small>
-- [ ] Detect and scrap humans.txt <small>(✍️🧪)</small>
-- [ ] Detect and scrap security.txt <small>(✍️🧪)</small>
+- [x] Detect and crawl sitemap.xml
+- [x] Detect and scrap humans.txt
+- [x] Detect and scrap security.txt
 - [x] Detect and crawl directories with directory listing
 
 Detect interesting elements:
 
 - [x] Detect forms
-- [ ] Detect endpoints in the JavaScript <small>(🧪)</small>
+- [ ] Detect endpoints in the JavaScript <small>(✍️🧪)</small>
 - [ ] Detect secrets in the JavaScript <small>(✍️🧪)</small>
 
 📚 Find routes, files, secrets, and emails.
