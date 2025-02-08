@@ -309,9 +309,21 @@ We commonly use tools such as:
 
 <br>
 
-#### Web Services — XXX
+#### Web Services — Known Frameworks
 
-...
+Common Frameworks/CMS:
+
+* [WordPress](/programming-languages/web/others/cms/wordpress/index.md): most used content-management system (CMS)
+* [Joomla](/programming-languages/web/others/cms/joomla/index.md): popular content-management system (CMS)
+* [Drupal](/programming-languages/web/others/cms/drupal/index.md): content-management system (CMS)
+
+Uncommon Frameworks/CMS:
+
+* [phpBB](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#php-bulletin-board-phpbb)
+* [GetSimple CMS](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#getsimple-cms)
+* [Subrion CMS](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#subrion-cms)
+* [umbraco CMS](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#umbraco-cms)
+* [osCommerce](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#oscommerce--ecommerce-framework)
 
 </div></div>
 
@@ -341,6 +353,7 @@ Detect common files and endpoints:
 Detect interesting elements:
 
 - [x] Detect forms
+- [x] Identify allowed methods using `OPTIONS`
 - [x] Detect endpoints in the JavaScript <small>(✍️🧪)</small>
 
 📚 Find routes, files, forms, and emails.
@@ -357,7 +370,7 @@ Detect common files and folders:
 - [ ] .env
 - [x] composer.json, composer.lock, vendor/composer/installed.json
 - [x] package.json, package-json.lock, yarn.lock
-- [ ] .map css/javascript files <small>(🧪)</small>
+- [x] .map css/javascript files
 </div><div>
 
 #### Web Services — Fingerprint — Checklist

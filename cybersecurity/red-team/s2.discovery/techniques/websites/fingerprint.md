@@ -1,32 +1,4 @@
-# Website Fingerprint
-
-<hr class="sep-both">
-
-## Architecture Analysis
-
-<div class="row row-cols-lg-2"><div>
-</div><div>
-
-#### Manual Framework Identification
-
-Common Frameworks/CMS:
-
-* [WordPress](/programming-languages/web/others/cms/wordpress/index.md): most used content-management system (CMS)
-* [Joomla](/programming-languages/web/others/cms/joomla/index.md): popular content-management system (CMS)
-* [Drupal](/programming-languages/web/others/cms/drupal/index.md): content-management system (CMS)
-
-Uncommon Frameworks/CMS:
-
-* [phpBB](#php-bulletin-board-phpbb)
-* [GetSimple CMS](#getsimple-cms)
-* [Subrion CMS](#subrion-cms)
-* [umbraco CMS](#umbraco-cms)
-* [osCommerce](#oscommerce--ecommerce-framework)
-</div></div>
-
-<hr class="sep-both">
-
-## Additional Notes
+# Website Fingerprint - Frameworks
 
 <div class="row row-cols-lg-2"><div>
 
