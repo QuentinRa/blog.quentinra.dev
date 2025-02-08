@@ -25,7 +25,9 @@ Create a file `main.go` with the following:
 ```go
 package main
 
-import "fmt"
+import {
+    "fmt"
+}
 
 func main() {
     fmt.Println("Hello, Go!")
@@ -50,8 +52,16 @@ var a int = 10         // declare + assign
 b := true              // same
 b = false              // assign, must have been declared ⚠️
 
+// Arrays
 var c [3]string        // declare
 d := []int{42}         // declare + assign
+append(d, 21)          // add a value
+
+// Maps
+m := map[string]int{
+    "foo": 1,
+    "bar": 2,
+}
 ```
 
 📚 We use the keyword `nil` for an empty value.
@@ -67,12 +77,66 @@ if condition {} else {}
 for i := 0; i < 5; i++ {}
 
 switch value {
-	case ...:
-	    ...
-	default:
-		...
+    case ...:
+        ...
+    default:
+        ...
+}
+
+for endpoint := range endpoints {
+    if _, found := known_endpoints[endpoint]; !found {
+        // ...
+    }
 }
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Functions
+
+<div class="row row-cols-lg-2"><div>
+
+Declaring a function is straightforward:
+
+```go
+func foo(bar string) string {
+    return bar
+}
+
+// implicit syntax for (a int, b int)
+func add(a, b int) int {
+    return a + b
+}
+```
+
+You can declare return variables directly in the signature:
+
+```go
+func add(a, b int) (c int) {
+	c = a + b
+	return
+}
+```
+</div><div>
+
+Multiple functions are returning a tuple with the error as the last parameter:
+
+```go
+func divide(a, b int) (int, error) {
+    if b == 0 {
+        return 0, fmt.Errorf("cannot divide by zero")
+    }
+    return a / b, nil
+}
+
+// handle the error
+_, err := divide(1, 0)
+if err != nil {
+    log.Fatal(err.Error())
+}
+```
+
 </div></div>
 
 <hr class="sep-both">
