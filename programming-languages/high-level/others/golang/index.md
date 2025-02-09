@@ -10,13 +10,7 @@ The [Go Programming Language](https://go.dev/) is a compiled high-level programm
 
 ```shell!
 $ sudo apt install golang-go
-$ echo "export PATH=$PATH:$(go env GOPATH)/bin" >> ~/.bashrc
-```
-
-You can install remote packages using:
-
-```shell!
-$ go install github.com/<user>/<repo>/cmd/<name>@version
+$ echo 'export PATH=$PATH:$(go env GOPATH)/bin' >> ~/.bashrc
 ```
 </div><div>
 
@@ -25,15 +19,52 @@ Create a file `main.go` with the following:
 ```go
 package main
 
-import {
-    "fmt"
-}
+import "fmt"
 
 func main() {
     fmt.Println("Hello, Go!")
 }
 ```
 </div></div>
+
+<hr class="sep-both">
+
+## Go Projects
+
+<div class="row row-cols-lg-2"><div>
+
+#### GoLang Versions
+
+As long as you have go installed, you can install any other version of go. Refer to the [release page](https://go.dev/dl/) for available versions.
+
+```shell!
+$ go install golang.org/dl/go1.23.6@latest
+$ go1.23.6 download
+$ go1.23.6 version
+```
+
+#### GoLang Packages
+
+You can install remote packages using:
+
+```shell!
+$ go install github.com/<user>/<repo>/cmd/<name>@version
+```
+
+They will be installed in `$(go env GOPATH)/bin/`.
+</div><div>
+
+#### Go Project Requirements
+
+Each Go project has a `go.mod` file at the root that defines the minimum version of go, the dependencies and their versions.
+
+```go
+$ go mod tidy
+```
+
+Running this command will detect and install any required dependency. It will update `go.mod` with missing dependencies.
+</div></div>
+
 
 <hr class="sep-both">
 
