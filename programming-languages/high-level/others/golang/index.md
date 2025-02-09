@@ -58,7 +58,7 @@ They will be installed in `$(go env GOPATH)/bin/`.
 
 Each Go project has a `go.mod` file at the root that defines the minimum version of go, the dependencies and their versions.
 
-```go
+```ps
 $ go mod tidy
 ```
 

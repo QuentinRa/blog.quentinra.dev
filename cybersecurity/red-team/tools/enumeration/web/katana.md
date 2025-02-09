@@ -13,4 +13,22 @@ Make sure to have a supported version of GO <small>(look inside `/go.mod`, [ref]
 $ CGO_ENABLED=1 go install "github.com/oneaudit/katana-ng/cmd/katana-ng@latest"
 ```
 </div><div>
+
+Katana has two crawling modes.
+
+1. **Standard** 🐐: Common fast crawling using HTTP responses. It may miss endpoints has static analysis has its limits.
+
+2. **Headless** 🧪: Crawl by rendering pages in a Chromium browser. It could discover more URLs, but it doesn't support proxy much.
+
+Finally, you can use it as a library in another project.
+</div></div>
+
+<hr class="sep-both">
+
+## Katana Overview 🗺️
+
+<div class="row row-cols-lg-2"><div>
+
+...
+</div><div>
 </div></div>
