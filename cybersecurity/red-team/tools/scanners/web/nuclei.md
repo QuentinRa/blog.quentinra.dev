@@ -15,7 +15,7 @@ You can install nuclei and nuclei templates using:
 
 ```ps
 $ go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
-$ nuclei -update
+$ nuclei -update -update-templates
 ```
 
 You can run a basic scan using <small>(on all ports, active attacks, etc.)</small>:
@@ -43,6 +43,8 @@ Nuclei has multiple template scopes:
 
 Enable a scope such as `-fuzz` disables every other template.
 
+⚠️ Use `-update-template-dir` if your workflows are in a custom folder.
+
 #### Nuclei — Input Modes
 
 Nuclei supports multiple input modes, but when using another input mode aside from `-u`/`-list`, nuclei automatically uses the `fuzz` mode.
@@ -54,4 +56,28 @@ Nuclei supports multiple input modes, but when using another input mode aside fr
 
 ⚠️ Most templates were written with `method: GET` which **override any method** you would want to use <small>(e.g. POST in OpenAPI specification)</small>.
 </div><div>
+
+#### Nuclei — Common Options
+
+By default, nuclei will run every template according to the scope. They may target other ports even if you used `-u https://example.com:443`.
+
+* `-t folder/`: only execute templates in this folder
+* `-etags abc,def`: exclude templates matching these tags
+* `-ni`/`-no-interactsh`: disable template using OOB payloads
+* `.nuclei-ignore`: define which template/tags to ignore
+
+⚠️ Nuclei often stops with no results due to the following:
+
+* `-mhe 10`: when there are too many errors, nuclei stops.
+* `-no-mhe`: during pentests, you would want to disable `mhe`
+* `-fuzz-param-frequency n`: when the last `n` fuzzing responses where the same, fuzzing stops. You should use `100+` during pentests.
+
+Output options:
+
+* `-j`: show output as JSON
+* `-jsonl-export file`: store results as JSON in a file
+
+Other handy options:
+
+* `-p http://127.0.0.1:8080`: proxy
 </div></div>
