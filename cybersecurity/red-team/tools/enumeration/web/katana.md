@@ -7,7 +7,7 @@
 * [Documentation](https://docs.projectdiscovery.io/tools/katana/overview) <small>(⛪)</small>
 * [katana-ng](https://github.com/oneaudit/katana-ng) <small>(0.1k ⭐)</small> — Fork with useful changes
 
-Make sure to have a supported version of GO <small>(look inside `/go.mod`, [ref](/programming-languages/high-level/others/go/index.md))</small>.
+Make sure to have a supported version of GO <small>(look inside `/go.mod`, [ref](/programming-languages/high-level/others/golang/index.md))</small>.
 
 ```ps
 $ CGO_ENABLED=1 go install "github.com/oneaudit/katana-ng/cmd/katana-ng@latest"
