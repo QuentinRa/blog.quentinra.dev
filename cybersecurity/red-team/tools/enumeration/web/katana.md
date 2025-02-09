@@ -14,7 +14,7 @@ $ CGO_ENABLED=1 go install "github.com/oneaudit/katana-ng/cmd/katana-ng@latest"
 ```
 </div><div>
 
-Katana has two crawling modes.
+Katana has two crawling modes. You can swap with `-headless`.
 
 1. **Standard** 🐐: Common fast crawling using HTTP responses. It may miss endpoints has static analysis has its limits.
 
