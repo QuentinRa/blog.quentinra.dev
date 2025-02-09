@@ -1,4 +1,4 @@
-# Website Fingerprint - Frameworks
+# Website Fingerprint — Frameworks
 
 <div class="row row-cols-lg-2"><div>
 
