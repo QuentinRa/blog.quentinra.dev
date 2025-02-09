@@ -53,8 +53,9 @@ Nuclei supports multiple input modes, but when using another input mode aside fr
 * `-list targets.txt`: URLs to scan
 * `-im burp -list dummy.req`: Burp "Saved Item" request
 * `-im openapi -list dummy.yaml`: OpenAPI specification
+* `-im jsonl -list dummy.txt`: JSON Lines
 
-⚠️ Most templates were written with `method: GET` which **override any method** you would want to use <small>(e.g. POST in OpenAPI specification)</small>.
+⚠️ Most templates were written with `method: GET` which override any method you would want to use <small>(e.g. POST in OpenAPI specification)</small>.
 </div><div>
 
 #### Nuclei — Common Options
@@ -80,4 +81,45 @@ Output options:
 Other handy options:
 
 * `-p http://127.0.0.1:8080`: proxy
+</div></div>
+
+<hr class="sep-both">
+
+## Nuclei Templates
+
+<div class="row row-cols-lg-2"><div>
+
+#### Nuclei Templates — Basics
+
+The documentation is available [here](https://docs.projectdiscovery.io/templates/introduction). A basic template starts with:
+
+```yaml!
+id: your-template-id
+
+info:
+  name: Your Template Name
+  author: anonymous
+  severity: info
+  tags: tag1,tag2
+```
+
+#### Nuclei Templates — Protocols
+
+Nuclei supports multiple protocols which are different ways to write your template. They can be chained using flows.
+
+```yaml!
+# ✍️ Run the "http" protocol then the "javascript" protocol
+# 📚 Flow are not specified when there is no sequencing
+flow: |
+    http()
+    javascript()
+
+# From the documentation
+flow: http(1) && http(2)
+```
+
+* `http`: can be used for fuzzing or to HTTP make requests.
+* `javascript`: can be used to execute JavaScript such as when the HTTP protocol is not enough to perform complex operations.
+* `code`: execute native code in any language, such as python. It only works if the template is signed for security reasons.
+</div><div>
 </div></div>
