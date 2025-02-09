@@ -102,6 +102,7 @@ info:
   severity: info
   tags: tag1,tag2
 ```
+</div><div>
 
 #### Nuclei Templates — Protocols
 
@@ -121,5 +122,27 @@ flow: http(1) && http(2)
 * `http`: can be used for fuzzing or to HTTP make requests.
 * `javascript`: can be used to execute JavaScript such as when the HTTP protocol is not enough to perform complex operations.
 * `code`: execute native code in any language, such as python. It only works if the template is signed for security reasons.
+</div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+```yaml!
+id: simple-workflow-example
+
+info:
+  name: Simple Workflow Example
+  author: anonymous
+
+workflows:
+  - template: dummy1.yaml
+    subtemplates:
+      - template: dummy2.yaml
+```
 </div><div>
 </div></div>
