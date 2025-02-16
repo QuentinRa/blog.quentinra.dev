@@ -168,6 +168,44 @@ http:
           - ""
 ```
 </div><div>
+
+We can then analyze the result using [matchers](https://docs.projectdiscovery.io/templates/reference/matchers).
+
+```yaml!
+    matchers-condition: and
+    matchers:
+      # Part can be: [body, header, ...]
+      # "word"=>"words", "regex"=>"regex", "status"=>"status"
+      - type: word
+        part: body
+        name: xxx              # optional name
+        words:
+          - "..."
+        condition: or
+        internal: true         # do not print
+        case-insensitive: true
+        negative: true
+
+      - type: dsl
+        dsl:
+          - "sha256(body) == 'value'"
+          - "contains(body, 'packages')"
+          - "contains(tolower(header), 'application/octet-stream')"
+          - "!regex('(?i)strict-transport-security', header)"
+          - "status_code != 301"
+```
+
+You can extract a specific element from a response using extractors.
+
+```yaml!
+    # Refer to matchers, the syntax/types are the same
+    extractors:
+      - type: regex
+        part: body
+        group: 1
+        regex:
+          - '([A-Za-z0-9]+)'
+```
 </div></div>
 
 <hr class="sep-both">
