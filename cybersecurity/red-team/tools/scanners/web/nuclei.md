@@ -126,6 +126,28 @@ flow: http(1) && http(2)
 
 <hr class="sep-both">
 
+## Nuclei Variables
+
+<div class="row row-cols-lg-2"><div>
+
+You can declare variables to use them across your template file:
+
+```yaml!
+variables:
+  http_headers:
+    - "a-im"
+    - "accept"
+    - "accept-charset"
+```
+
+To use your variables:
+
+* JavaScript: `template.http_headers`
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## Nuclei HTTP Protocol
 
 <div class="row row-cols-lg-2"><div>
@@ -172,6 +194,7 @@ http:
 We can then analyze the result using [matchers](https://docs.projectdiscovery.io/templates/reference/matchers).
 
 ```yaml!
+    stop-at-first-match: false
     matchers-condition: and
     matchers:
       # Part can be: [body, header, ...]
@@ -193,6 +216,7 @@ We can then analyze the result using [matchers](https://docs.projectdiscovery.io
           - "contains(tolower(header), 'application/octet-stream')"
           - "!regex('(?i)strict-transport-security', header)"
           - "status_code != 301"
+          - 'contains(path, "ico")'
 ```
 
 You can extract a specific element from a response using extractors.
@@ -205,6 +229,43 @@ You can extract a specific element from a response using extractors.
         group: 1
         regex:
           - '([A-Za-z0-9]+)'
+```
+</div></div>
+
+<hr class="sep-both">
+
+## Nuclei JavaScript Protocol
+
+<div class="row row-cols-lg-2"><div>
+
+JavaScript templates are quite convenient as we can write complex code without having to use a language such as Python or GoLang that would require `-code` and code signing. Common variables we may use: 
+
+* `template.http_request`: the last request
+* `template.http_2_request`: the `nth` request body
+* `template.http_body`: the last response body
+* `template.http_all_headers`: the last response headers
+
+✍️ You will need to use `.split(/\r\n/)` to extract headers.
+
+📚 Any returned value will be cast to a string. You can return an array <small>(ex: `[].join('\n')`)</small> to have multiple value send to the extractor.
+</div><div>
+
+They added a few JavaScript helpers.
+
+* `log(some_variable)`: list key/values when using debug mode
+
+Example:
+
+```yaml!
+javascript:
+  - code: |
+      content = template.http_all_headers
+      content.split(/\r\n/).join('\n')
+
+    extractors:
+      - type: regex
+        regex:
+          - '.+'
 ```
 </div></div>
 
