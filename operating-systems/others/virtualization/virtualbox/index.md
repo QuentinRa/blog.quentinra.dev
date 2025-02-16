@@ -149,3 +149,15 @@ By default, you can freely use your mouse between your host and your virtual mac
 
 ➡️ Try restarting the VM.
 </div></div>
+
+<hr class="sep-both">
+
+## 👻 To-do 👻
+
+Stuff that I found, but never read/used yet.
+
+<div class="row row-cols-lg-2"><div>
+
+* virtual box local network (access your VM and a service running in your VM from your host. Need network NAT and domain name is created)
+</div><div>
+</div></div>

@@ -166,6 +166,12 @@ You can open multiple terminals to the docker container by using `exegol start` 
 #### BlackArch 😶‍🌫️
 
 [BlackArch](https://www.blackarch.org/) is mostly used by ArchLinux users.
+
+<br>
+
+#### CommandoVM 😶
+
+[CommandoVM](https://github.com/mandiant/commando-vm) may be used by Windows users.
 </div></div>
 
 <hr class="sep-both">

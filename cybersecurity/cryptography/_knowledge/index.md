@@ -357,4 +357,5 @@ Stuff
 * Certificate pinning
 * [cryptobook](https://cryptobook.nakov.com/)
 * [keylength](https://www.keylength.com/en/)
+* [crypto-attacks](https://github.com/jvdsn/crypto-attacks)
 </div></div>
