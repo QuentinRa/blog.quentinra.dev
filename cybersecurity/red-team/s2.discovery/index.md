@@ -264,7 +264,7 @@ We commonly use tools such as:
 
 * [Gobuster](/cybersecurity/red-team/tools/enumeration/web/gobuster.md) `[FREE]` 📌: Fast Forced Browsing.
 * [dirsearch](/cybersecurity/red-team/tools/enumeration/web/dirsearch.md) `[FREE]`: Slow Forced Browsing.
-* [feroxbuster](https://github.com/epi052/feroxbuster) `[FREE]` 📌: Performs Forced Browsing. Can recurse, crawl the website, parse robots.txt, and adapt to the website.
+* [feroxbuster](/cybersecurity/red-team/tools/enumeration/web/feroxbuster.md) `[FREE]` 📌: Performs Forced Browsing. Can recurse, crawl the website, parse robots.txt, and adapt to the website.
 * [DirBuster](https://github.com/KajanM/DirBuster) `[FREE]`: Basic Forced Browsing.
 * [dirb](https://dirb.sourceforge.net/) `[FREE]`: Basic Forced Browsing.
 
