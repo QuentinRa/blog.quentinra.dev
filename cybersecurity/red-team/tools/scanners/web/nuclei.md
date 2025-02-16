@@ -120,8 +120,54 @@ flow: http(1) && http(2)
 ```
 
 * `http`: can be used for fuzzing or to HTTP make requests.
-* `javascript`: can be used to execute JavaScript such as when the HTTP protocol is not enough to perform complex operations.
+* `javascript`: can be used to execute JavaScript with/without nuclei internal libraries, to perform complex operations.
 * `code`: execute native code in any language, such as python. It only works if the template is signed for security reasons.
+</div></div>
+
+<hr class="sep-both">
+
+## Nuclei HTTP Protocol
+
+<div class="row row-cols-lg-2"><div>
+
+The HTTP protocol can support multiple requests. There are two kind of requests: `arbitrary` or `fuzzing`, the former being the default. 
+
+```yaml!
+http:
+    - request1
+    # ...
+    - request2
+    # ...
+```
+
+* Most templates (>95%) are using arbitrary requests
+
+```yaml!
+  - method: GET
+    path:
+      # Write down the URL to fetch
+      # See also: {{RootURL}}, {{Path}}
+      - "{{BaseURL}}"
+```
+
+* Fuzzing requests are using the HTTP method/body from the input file. ⚠️ Fuzzing on a parameter <small>(header, query, etc.)</small> will stop when the threshold across all requests (`-fuzz-param-frequency`) is met.
+
+```yaml!
+  - pre-condition:
+      - type: dsl
+        dsl:
+          - 'method != "HEAD"'
+          - 'method != "OPTIONS"'
+        condition: and
+
+    fuzzing:
+      - part: query
+        type: postfix
+        mode: single
+        fuzz:
+          - ""
+```
+</div><div>
 </div></div>
 
 <hr class="sep-both">
