@@ -93,6 +93,21 @@ $ ./idea.sh -c     # IntelliJ
 
 <br>
 
+#### Access Host From WSL
+
+If you have a service running on your Windows host, such as a webserver running on `localhost:5000`, you must find your host IP address:
+
+```ps
+PS> ipconfig
+...
+IPv4 Address. . . . . . . . . . . : 192.168.1.42
+...
+```
+
+Then edit your `/etc/hosts` file on your WSL to use this IP address.
+
+<br>
+
 #### Common usage of WSL
 
 Most of the time, we integrate WSL within our code environment 🚀. For instance, when pressing the compile/run button from your IDE, it will compile/run the code using the WSL.
@@ -100,7 +115,6 @@ Most of the time, we integrate WSL within our code environment 🚀. For instanc
 * [IntelliJ and WSL](https://www.jetbrains.com/help/idea/how-to-use-wsl-development-environment-in-product.html) (Java IDE)
 * [CLion and WSL](https://www.jetbrains.com/help/clion/how-to-use-wsl-development-environment-in-product.html) (C/C++ IDE)
 * [VSCode C/C++ and WSL](https://code.visualstudio.com/docs/cpp/config-wsl)
-* ...
 </div></div>
 
 <hr class="sep-both">
