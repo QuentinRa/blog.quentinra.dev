@@ -297,6 +297,7 @@ Explore the website, note down each route and each feature. Test each form using
 * [onectf](/cybersecurity/red-team/tools/frameworks/onectf/index.md#onectf-crawl-module) `[FREE]`: Crawl links, simple JS events, and `robots.txt`. Include path discovery <small>(check each folder in a path for directory listing)</small>.
 * [getallurls](https://github.com/lc/gau) `[FREE]`: Crawl links and use passive recon.
 * [subjs](https://github.com/lc/subjs) `[FREE]`: Find routes within JavaScript files
+* [jsluice](https://github.com/BishopFox/jsluice) `[FREE]`: Find routes within JavaScript files
 * [Katana](https://github.com/projectdiscovery/katana) `[FREE]` 📌: Crawl links <small>(can submit basic forms, but JavaScript crawling flags are quite useless)</small>, forms, `robots.txt` and `sitemap.xml`.
 
 ```ps
@@ -435,8 +436,8 @@ Detect common mistakes/misconfigurations:
 - [x] HTML Comments
 - [ ] JavaScript Comments
 - [ ] CSS Comments
-- [x] Headers (suspicious, missing)
-- [x] Cookies (detect, security flags)
+- [x] Headers <small>(suspicious, missing)</small>
+- [x] Cookies <small>(detect, security flags, investigate)</small> | [editor](https://cookie-editor.com/), [ref](/programming-languages/web/_general/random/cookies.md)
 - [x] Default favicon
 - [ ] Detect secrets in the JavaScript <small>(✍️🧪)</small>
 - [ ] Detect non-generic robots.txt
@@ -448,7 +449,8 @@ Other elements:
 - [ ] indexFUZZ
 - [ ] Meta tags
 - [ ] Title
-- [ ] 404 page, login/admin page, etc.
+- [ ] 404 page.
+- [ ] login/admin page
 
 📚 Find routes, secrets, emails, etc.
 </div></div>

@@ -12,34 +12,6 @@ For extensions: `php,html,txt,sql,bak,tar,tar.gz,db,zip,sqlite`.
 ## Additional Notes
 
 <div class="row row-cols-lg-2"><div>
-
-#### Version Control Files Disclosure
-
-[![githappens](../../../../_badges/thm-p/githappens.svg)](https://tryhackme.com/room/githappens)
-[![insecure_code_management](../../../../_badges/rootme/web_server/insecure_code_management.svg)](https://www.root-me.org/en/Challenges/Web-Server/Insecure-Code-Management)
-[![starbug_bounty](../../../../_badges/rootme/realist/starbug_bounty.svg)](https://www.root-me.org/en/Challenges/Realist/Starbug-Bounty)
-
-Sometimes, version control files such as [.git for GIT](/tools-and-frameworks/vcs/git/_general/index.md) may be exposed. They can be used to find the current and the previous versions of the code. For instance, after downloading a `.git`:
-
-```ps
-$ cd .git
-$ git diff                  # it says the code is missing
-$ git restore *             # restore current version
-$ git log -p -- config.php  # look at config.php history
-$ git show commit_id
-```
-
-A few automated tools: [GitHacker](https://github.com/WangYihang/GitHacker) <small>(1.4k ⭐, 2023 🪦)</small> [GitTools](https://github.com/internetwache/GitTools)  <small>(3.8k ⭐, 2022 🪦, 👻)</small>, [GitHack](https://github.com/lijiejie/GitHack)  <small>(3.1k ⭐, 2022 🪦)</small> and [git-dumper](https://github.com/arthaud/git-dumper/tree/master) <small>(1.8k ⭐)</small>.
-
-```shell!
-$ DEST="$HOME/tools/gitdumper"
-$ git clone -b "master" https://github.com/arthaud/git-dumper $DEST
-$ git-dumper URL/.git/ dump
-```
-
-📚 `.git` may be blocked (403) but `.git/index`, `.git/HEAD`, etc. may not. 
-
-⚠️ We are downloading potentially harmful files. This is **dangerous** as it may lead to RCE. Manually check the git configuration files before running any `git` commands!
 </div><div>
 
 #### Composer Vendor Folder Exposure

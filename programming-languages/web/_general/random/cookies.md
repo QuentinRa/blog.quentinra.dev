@@ -61,4 +61,7 @@ Stuff that I found, but never read/used yet.
 * HttpOnly: cannot be accessed in scripts
 * Validity of cookies, add info such as IP/...
 </div><div>
+
+* JSESSIONID — commonly associated with Java Servlets
+* PHPSESSID — commonly associated with PHP
 </div></div>

@@ -142,6 +142,7 @@ variables:
 
 To use your variables:
 
+* HTTP: `http_headers`
 * JavaScript: `template.http_headers`
 </div><div>
 </div></div>
@@ -182,12 +183,19 @@ http:
           - 'method != "OPTIONS"'
         condition: and
 
+    payloads:
+      redirect:
+        - value1
+
     fuzzing:
       - part: query
         type: postfix
         mode: single
+        keys:
+          - You can use keys to limit which parameters names are fuzzed
         fuzz:
-          - ""
+          - "" # this is a trick to mark a template as "fuzzable"
+          - "{{redirect}}" # load values from a payload
 ```
 </div><div>
 
