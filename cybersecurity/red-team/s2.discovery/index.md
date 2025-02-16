@@ -213,6 +213,68 @@ Most companies have at least one website. They are often made using well-known f
 
 <br>
 
+#### Web Services — Forced Browsing
+
+[![contentdiscovery](../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
+[![adventofcyber2](../../_badges/thm/adventofcyber2/day24.svg)](https://tryhackme.com/room/adventofcyber2)
+[![webenumerationv2](../../_badges/thmp/webenumerationv2.svg)](https://tryhackme.com/room/webenumerationv2)
+[![sqlmap](../../_badges/thm/sqlmap.svg)](https://tryhackme.com/room/sqlmap)
+[![picklerick](../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
+[![vulnversity](../../_badges/thm-p/vulnversity.svg)](https://tryhackme.com/room/vulnversity)
+[![blaster](../../_badges/thm-p/blaster.svg)](https://tryhackme.com/room/blaster)
+[![rrootme](../../_badges/thm-p/rrootme.svg)](https://tryhackme.com/room/rrootme)
+[![startup](../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
+[![wgelctf](../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
+[![allinonemj](../../_badges/thm-p/allinonemj.svg)](https://tryhackme.com/room/allinonemj)
+[![mustacchio](../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
+[![chillhack](../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
+[![githappens](../../_badges/thm-p/githappens.svg)](https://tryhackme.com/room/githappens)
+[![lianyu](../../_badges/thm-p/lianyu.svg)](https://tryhackme.com/room/lianyu)
+[![cyborgt8](../../_badges/thm-p/cyborgt8.svg)](https://tryhackme.com/room/cyborgt8)
+[![basicpentestingjt](../../_badges/thm-p/basicpentestingjt.svg)](https://tryhackme.com/room/basicpentestingjt)
+[![easypeasyctf](../../_badges/thm-p/easypeasyctf.svg)](https://tryhackme.com/room/easypeasyctf)
+[![gamingserver](../../_badges/thm-p/gamingserver.svg)](https://tryhackme.com/room/gamingserver)
+[![md2pdf](../../_badges/thm-p/md2pdf.svg)](https://tryhackme.com/r/room/md2pdf)
+[![surfer](../../_badges/thm-p/surfer.svg)](https://tryhackme.com/r/room/surfer)
+[![bruteit](../../_badges/thm-p/bruteit.svg)](https://tryhackme.com/r/room/bruteit)
+[![archangel](../../_badges/thm-p/archangel.svg)](https://tryhackme.com/r/room/archangel)
+[![teamcw](../../_badges/thm-p/teamcw.svg)](https://tryhackme.com/r/room/teamcw)
+[![pythonplayground](../../_badges/thm-p/pythonplayground.svg)](https://tryhackme.com/r/room/pythonplayground)
+[![techsupp0rt1](../../_badges/thm-p/techsupp0rt1.svg)](https://tryhackme.com/r/room/techsupp0rt1)
+[![nax](../../_badges/thm-p/nax.svg)](https://tryhackme.com/r/room/nax)
+![nibbles](../../_badges/htb-p/nibbles.svg)
+[![devvortex](../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
+[![cozyhosting](../../_badges/htb-p/cozyhosting.svg)](https://app.hackthebox.com/machines/CozyHosting)
+[![bashed](../../_badges/htb-p/bashed.svg)](https://app.hackthebox.com/machines/Bashed)
+[![blocky](../../_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
+[![backup_file](../../_badges/rootme/web_server/backup_file.svg)](https://www.root-me.org/en/Challenges/Web-Server/Backup-file)
+[![php_register_globals](../../_badges/rootme/web_server/php_register_globals.svg)](https://www.root-me.org/en/Challenges/Web-Server/PHP-register-globals)
+
+Forced Browsing is a technique to find hidden files and folders. We are testing [common paths](/cybersecurity/red-team/_knowledge/topics/wordlists.md#forced-browsing) to discover hidden pages that we would not have discovered while browsing the website as normal users do.
+
+* 🧃 Configuration files <small>(ex: .env, composer.json, .git)</small>
+* 👀 Folders <small>(ex: upload, assets, wp-content)</small>
+* 💵 Backup files <small>(ex: xxx.bak, xxx.old, xxx.1, xxx~)</small>
+* 🔑 Admin panels <small>(ex: /adMIN/, /phpmyadmin/, /..;/manager)</small>
+* 💰 Private files <small>(ex: secret.pdf, assets/notes.txt)</small>
+
+⚠️ Before running large [wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md#forced-browsing), especially during CTFs, run the small ones first, otherwise, you will most likely miss results.
+
+We commonly use tools such as:
+
+* [Gobuster](/cybersecurity/red-team/tools/enumeration/web/gobuster.md) `[FREE]` 📌: Fast Forced Browsing.
+* [dirsearch](/cybersecurity/red-team/tools/enumeration/web/dirsearch.md) `[FREE]`: Slow Forced Browsing.
+* [feroxbuster](https://github.com/epi052/feroxbuster) `[FREE]` 📌: Performs Forced Browsing. Can recurse, crawl the website, parse robots.txt, and adapt to the website.
+* [DirBuster](https://github.com/KajanM/DirBuster) `[FREE]`: Basic Forced Browsing.
+* [dirb](https://dirb.sourceforge.net/) `[FREE]`: Basic Forced Browsing.
+
+A few more tools can be used, while they were not created for this:
+
+* [ffuf](/cybersecurity/red-team/tools/enumeration/web/ffuf.md#ffuf) `[FREE]`: Fast Forced Browsing.
+* [wfuzz](/cybersecurity/red-team/tools/enumeration/web/wfuzz.md) `[FREE]`: Slow Forced Browsing.
+
+<br>
+
 #### Web Services — Mapping
 
 [![contentdiscovery](../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
@@ -245,12 +307,6 @@ $ katana -silent -u "https://example.com:443" -o crawl.json -depth 5 -js-crawl -
 📚 Check links <small>(href, src, location.href)</small>, `/robots.txt` and `/sitemap.xml`.
 
 🛡️ Do not expose sensitive endpoints in the code base. Correctly implement security mechanisms <small>(e.g. IP checks)</small> to secure hidden pages.
-
-<br>
-
-#### Web Services — Forced Browsing
-
-...
 </div><div>
 
 #### Web Services — Fingerprint
@@ -343,7 +399,6 @@ Detect common files and endpoints:
 
 - [x] Crawl the website unauthenticated
 - [ ] Crawl the website authenticated <small>(🧪)</small>
-- [x] Detect non-generic robots.txt
 - [x] Crawl robots.txt
 - [x] Detect and crawl sitemap.xml
 - [x] Detect and scrap humans.txt
@@ -354,7 +409,7 @@ Detect interesting elements:
 
 - [x] Detect forms
 - [x] Identify allowed methods using `OPTIONS`
-- [x] Detect endpoints in the JavaScript <small>(✍️🧪)</small>
+- [x] Detect endpoints in the JavaScript
 
 📚 Find routes, files, forms, and emails.
 
@@ -362,15 +417,15 @@ Detect interesting elements:
 
 Detect common files and folders:
 
-- [ ] .git, .git/HEAD, .git/config
-- [ ] .svn
-- [ ] .DS_Store
-- [ ] trailing tilde
-- [ ] .bak extension
-- [ ] .env
+- [x] .git, .git/HEAD, .git/config, .gitignore
+- [x] .svn
+- [x] .DS_Store
+- [x] trailing tilde
+- [x] .bak/.old extensions
+- [x] .env
 - [x] composer.json, composer.lock, vendor/composer/installed.json
 - [x] package.json, package-json.lock, yarn.lock
-- [x] .map css/javascript files
+- [ ] .map css/javascript files
 </div><div>
 
 #### Web Services — Fingerprint — Checklist
@@ -380,10 +435,11 @@ Detect common mistakes/misconfigurations:
 - [x] HTML Comments
 - [ ] JavaScript Comments
 - [ ] CSS Comments
-- [x] Headers
-- [x] Cookies
+- [x] Headers (suspicious, missing)
+- [x] Cookies (detect, security flags)
 - [x] Default favicon
 - [ ] Detect secrets in the JavaScript <small>(✍️🧪)</small>
+- [ ] Detect non-generic robots.txt
 
 Other elements:
 

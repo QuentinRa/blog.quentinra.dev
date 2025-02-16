@@ -199,8 +199,10 @@ Sorted by recommended order of usage.
 /usr/share/seclists/Discovery/Web-Content/quickhits.txt
 /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt
 /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
-/usr/share/seclists/Discovery/Web-Content/raft-small-directories-lowercase.txt
+/usr/share/seclists/Discovery/Web-Content/raft-small-directories.txt
 /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt
+/usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt
+/usr/share/seclists/Discovery/Web-Content/raft-large-files.txt
 ```
 
 ➡️ See also: [Extension Wordlists](#extensions).

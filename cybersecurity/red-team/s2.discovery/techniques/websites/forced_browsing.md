@@ -1,62 +1,8 @@
 # Forced Browsing
 
-[![contentdiscovery](../../../../_badges/thm/contentdiscovery.svg)](https://tryhackme.com/room/contentdiscovery)
-[![adventofcyber2](../../../../_badges/thm/adventofcyber2/day24.svg)](https://tryhackme.com/room/adventofcyber2)
-[![webenumerationv2](../../../../_badges/thmp/webenumerationv2.svg)](https://tryhackme.com/room/webenumerationv2)
-[![sqlmap](../../../../_badges/thm/sqlmap.svg)](https://tryhackme.com/room/sqlmap)
-[![picklerick](../../../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
-[![vulnversity](../../../../_badges/thm-p/vulnversity.svg)](https://tryhackme.com/room/vulnversity)
-[![basicpentestingjt](../../../../_badges/thm-p/basicpentestingjt.svg)](https://tryhackme.com/room/basicpentestingjt)
-[![blaster](../../../../_badges/thm-p/blaster.svg)](https://tryhackme.com/room/blaster)
-[![rrootme](../../../../_badges/thm-p/rrootme.svg)](https://tryhackme.com/room/rrootme)
-[![startup](../../../../_badges/thm-p/startup.svg)](https://tryhackme.com/room/startup)
-[![wgelctf](../../../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
-[![allinonemj](../../../../_badges/thm-p/allinonemj.svg)](https://tryhackme.com/room/allinonemj)
-[![mustacchio](../../../../_badges/thm-p/mustacchio.svg)](https://tryhackme.com/room/mustacchio)
-[![chillhack](../../../../_badges/thm-p/chillhack.svg)](https://tryhackme.com/room/chillhack)
-[![githappens](../../../../_badges/thm-p/githappens.svg)](https://tryhackme.com/room/githappens)
-[![lianyu](../../../../_badges/thm-p/lianyu.svg)](https://tryhackme.com/room/lianyu)
-[![easypeasyctf](../../../../_badges/thm-p/easypeasyctf.svg)](https://tryhackme.com/room/easypeasyctf)
-[![gamingserver](../../../../_badges/thm-p/gamingserver.svg)](https://tryhackme.com/room/gamingserver)
-[![cyborgt8](../../../../_badges/thm-p/cyborgt8.svg)](https://tryhackme.com/room/cyborgt8)
-[![md2pdf](../../../../_badges/thm-p/md2pdf.svg)](https://tryhackme.com/r/room/md2pdf)
-[![surfer](../../../../_badges/thm-p/surfer.svg)](https://tryhackme.com/r/room/surfer)
-[![bruteit](../../../../_badges/thm-p/bruteit.svg)](https://tryhackme.com/r/room/bruteit)
-[![archangel](../../../../_badges/thm-p/archangel.svg)](https://tryhackme.com/r/room/archangel)
-[![teamcw](../../../../_badges/thm-p/teamcw.svg)](https://tryhackme.com/r/room/teamcw)
-[![pythonplayground](../../../../_badges/thm-p/pythonplayground.svg)](https://tryhackme.com/r/room/pythonplayground)
-[![techsupp0rt1](../../../../_badges/thm-p/techsupp0rt1.svg)](https://tryhackme.com/r/room/techsupp0rt1)
-[![nax](../../../../_badges/thm-p/nax.svg)](https://tryhackme.com/r/room/nax)
-![nibbles](../../../../_badges/htb-p/nibbles.svg)
-[![devvortex](../../../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
-[![cozyhosting](../../../../_badges/htb-p/cozyhosting.svg)](https://app.hackthebox.com/machines/CozyHosting)
-[![bashed](../../../../_badges/htb-p/bashed.svg)](https://app.hackthebox.com/machines/Bashed)
-[![blocky](../../../../_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
-[![backup_file](../../../../_badges/rootme/web_server/backup_file.svg)](https://www.root-me.org/en/Challenges/Web-Server/Backup-file)
-[![php_register_globals](../../../../_badges/rootme/web_server/php_register_globals.svg)](https://www.root-me.org/en/Challenges/Web-Server/PHP-register-globals)
-
 <div class="row row-cols-lg-2"><div>
 
-Forced browsing is a technique in which we test URLs crafted from a list of common files/folders and we try to find something juicy.
-
-* 🧃 Configuration files <small>(ex: .config)</small>
-* 👀 Old files <small>(ex: index.php.old)</small>
-* 💵 Backup files <small>(ex: xxx.bak, backup.xxx, xxx~)</small>
-* 🔑 Admin/CMS panels <small>(ex: WordPress admin login page)</small>
-* 💰 Private files <small>(ex: documents...)</small>
-
-Refer to [wordlists#forced browsing](/cybersecurity/red-team/_knowledge/topics/wordlists.md#forced-browsing) for wordlists. ⚠️ Start with small wordlists, then move to bigger one. They don't have the same entries. 
 </div><div>
-
-Common tools are:
-
-* [Gobuster](/cybersecurity/red-team/tools/enumeration/web/gobuster.md)
-* [dirsearch](/cybersecurity/red-team/tools/enumeration/web/dirsearch.md)
-* [ffuf](/cybersecurity/red-team/tools/enumeration/web/ffuf.md#ffuf)
-* [wfuzz](/cybersecurity/red-team/tools/enumeration/web/wfuzz.md)
-* [feroxbuster](https://github.com/epi052/feroxbuster) <small>(5.9k ⭐, Rust)</small>
-* [dirb](https://dirb.sourceforge.net/) <small>(installable on any Debian)</small>
-* [DirBuster](https://github.com/KajanM/DirBuster) <small>(0.1k ⭐)</small>
 
 For extensions: `php,html,txt,sql,bak,tar,tar.gz,db,zip,sqlite`.
 </div></div>
