@@ -132,13 +132,26 @@ You can declare variables to use them across your template file:
 
 ```yaml!
 variables:
-  http_headers:
+  my_variable:
     - "a-im"
     - "accept"
     - "accept-charset"
 ```
 
-To use this variable, use `http_headers` with HTTP and `template.http_headers` with JavaScript.
+To use this variable, use `my_variable` with HTTP and `template.my_variable` with JavaScript.
+
+There are quite a few variables by default. A variable is created for each header <small>(e.g. user_agent for User-Agent)</small> or when using `name:`.
+
+* `query`: HTTP request query
+* `path`: HTTP request path
+* `method`: HTTP request method
+* `request`: raw HTTP request
+* `response`: raw HTTP response
+* `header`: HTTP response headers
+* `all_headers`: HTTP unique response headers
+* `body`: HTTP response body
+* `status_code`: HTTP response status code
+
 </div><div>
 
 <br>
