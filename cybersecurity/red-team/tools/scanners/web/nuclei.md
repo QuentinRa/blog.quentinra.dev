@@ -280,6 +280,31 @@ url_encode(arg1 interface{}) interface{}
 wait_for(seconds uint)
 ```
 </div><div>
+
+Common code samples:
+
+```yaml!
+- 'md5(body) == "..."'
+- 'status_code == 200'
+- 'contains(content_type, "image/")'
+- 'line_ends_with(path, ".js")'
+- "!regex('(?i)strict-transport-security', header)"
+```
+
+You can declare variables and reuse them in the next DSL statements.
+
+```
+    - type: dsl
+      internal: true
+      name: _loc
+      dsl:
+        - http_location
+        - path
+
+    - type: dsl
+      dsl:
+        - _loc == ""
+```
 </div></div>
 
 <hr class="sep-both">
