@@ -138,7 +138,10 @@ variables:
     - "accept-charset"
 ```
 
-To use this variable, use `my_variable` with HTTP and `template.my_variable` with JavaScript.
+To use this variable, use:
+
+* `my_variable` with HTTP 
+* `template.my_variable` with JavaScript
 
 There are quite a few variables by default. A variable is created for each header <small>(e.g. user_agent for User-Agent)</small> or when using `name:`.
 
@@ -308,7 +311,6 @@ You can declare variables and reuse them in the next DSL statements.
 </div></div>
 
 <hr class="sep-both">
-<hr class="sep-both">
 
 ## Nuclei HTTP Protocol
 
@@ -333,6 +335,7 @@ http:
       # See also: {{RootURL}}, {{Path}}
       - "{{BaseURL}}"
 ```
+</div><div>
 
 * Fuzzing requests are using the HTTP method/body from the input file. ⚠️ Fuzzing on a parameter <small>(header, query, etc.)</small> will stop when the threshold across all requests (`-fuzz-param-frequency`) is met.
 
@@ -348,29 +351,15 @@ http:
       redirect:
         - value1
 
+    # only fuzz ?redirect= with values from "redirect" payload
     fuzzing:
       - part: query
         type: postfix
         mode: single
         keys:
-          - You can use keys to limit which parameters names are fuzzed
+          - redirect
         fuzz:
-          - "" # this is a trick to mark a template as "fuzzable"
-          - "{{redirect}}" # load values from a payload
-```
-</div><div>
-
-We can then analyze the result using [matchers](https://docs.projectdiscovery.io/templates/reference/matchers).
-
-```yaml!
-      - type: dsl
-        dsl:
-          - "sha256(body) == 'value'"
-          - "contains(body, 'packages')"
-          - "contains(tolower(header), 'application/octet-stream')"
-          - "!regex('(?i)strict-transport-security', header)"
-          - "status_code != 301"
-          - 'contains(path, "ico")'
+          - "{{redirect}}"
 ```
 </div></div>
 
@@ -380,28 +369,21 @@ We can then analyze the result using [matchers](https://docs.projectdiscovery.io
 
 <div class="row row-cols-lg-2"><div>
 
-JavaScript templates are quite convenient as we can write complex code without having to use a language such as Python or GoLang that would require `-code` and code signing. Common variables we may use: 
-
-* `template.http_request`: the last request
-* `template.http_2_request`: the `nth` request body
-* `template.http_body`: the last response body
-* `template.http_all_headers`: the last response headers
-
-✍️ You will need to use `.split(/\r\n/)` to extract headers.
-
-📚 Any returned value will be cast to a string. You can return an array <small>(ex: `[].join('\n')`)</small> to have multiple value send to the extractor.
-</div><div>
+JavaScript templates are quite convenient as we can write complex code without having to use a language such as Python or GoLang that would require `-code` and code signing.
 
 They added a few JavaScript helpers.
 
 * `log(some_variable)`: list key/values when using debug mode
+
+📚 Any returned value will be cast to a string. You can return an array <small>(ex: `[].join('\n')`)</small> to have multiple value send to the extractor.
+</div><div>
 
 Example:
 
 ```yaml!
 javascript:
   - code: |
-      content = template.http_all_headers
+      const content = template.http_all_headers
       content.split(/\r\n/).join('\n')
 
     extractors:
