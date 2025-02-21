@@ -143,9 +143,9 @@ To use this variable, use `http_headers` with HTTP and `template.http_headers` w
 
 <br>
 
-#### Nuclei Templates — Conditions
+#### Nuclei Templates — Expressions
 
-Conditions are used by matchers and extractors. We can use `word`, `regex`, `status` and `dsl` which encompasses all of them.
+Expressions are used by matchers and extractors. We can use `word`, `regex`, `status` and `dsl` which encompasses all of them.
 
 ```yaml!
 # Condition: OR or AND
@@ -169,13 +169,21 @@ Conditions are used by matchers and extractors. We can use `word`, `regex`, `sta
       negative: true
       words:
         - "Password"
+
+    - type: regex
+      part: body
+      group: 1
+      regex:
+        - '(.+)'
 ```
+
+✍️ Variables created using `name` are shared between templates and protocols. Their type is often: `nil`, `string`, `[]string`. Make sure to check the type as when there is one value, it's interpolated as a string.
 
 <br>
 
 #### Nuclei Templates — Matchers
 
-Matchers (refer to the [documentation](https://docs.projectdiscovery.io/templates/reference/matchers)) are set of instructions to determine if a request or a response matches their expected value.
+Matchers (refer to the [documentation](https://docs.projectdiscovery.io/templates/reference/matchers)) are set of instructions to determine if a request or a response matches their expected value. They must
 
 ```yaml!
 # Stop At First Match: default to false
@@ -184,8 +192,23 @@ Matchers (refer to the [documentation](https://docs.projectdiscovery.io/template
     stop-at-first-match: false
     matchers-condition: and
     matchers:
-      - some_condition
+      - some_expression
 ```
+
+✍️ Matchers are optional. You can have name on your matcher, the output will look like `[template-id:matcher-name]`. 
+
+<br>
+
+#### Nuclei Templates — Extractors
+
+Extractors can be used to extract values from the request or response and display it in the output. Unlike matches, they are not limited to booleans.
+
+```yaml!
+    extractors:
+      - some_expression
+```
+
+✍️ Extractors are optional. Regexes can only match one line. The output looks like `[...] example.com [value1, value2, etc.]`.
 </div></div>
 
 <hr class="sep-both">
@@ -251,18 +274,6 @@ We can then analyze the result using [matchers](https://docs.projectdiscovery.io
           - "!regex('(?i)strict-transport-security', header)"
           - "status_code != 301"
           - 'contains(path, "ico")'
-```
-
-You can extract a specific element from a response using extractors.
-
-```yaml!
-    # Refer to matchers, the syntax/types are the same
-    extractors:
-      - type: regex
-        part: body
-        group: 1
-        regex:
-          - '([A-Za-z0-9]+)'
 ```
 </div></div>
 
