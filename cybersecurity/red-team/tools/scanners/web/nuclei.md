@@ -226,6 +226,65 @@ Extractors can be used to extract values from the request or response and displa
 
 <hr class="sep-both">
 
+## Nuclei DSL Language
+
+<div class="row row-cols-lg-2"><div>
+
+You can list the available DSL functions using:
+
+```shell!
+$ nuclei -ldf
+```
+
+The available common DSL functions are:
+
+```js!
+contains(arg1, arg2 interface{}) interface{}
+count(str, substr string) int
+ends_with(str string, suffix ...string) bool
+len(arg1 interface{}) interface{}
+line_ends_with(str string, suffix ...string) bool
+line_starts_with(str string, prefix ...string) bool
+md5(arg1 interface{}) interface{}
+print_debug(args ...interface{})
+rand_int(optionalMin, optionalMax uint) int
+regex(arg1, arg2 interface{}) interface{}
+replace(arg1, arg2, arg3 interface{}) interface{}
+split(input string, n int)
+starts_with(str string, prefix ...string) bool
+substr(str string, start int, optionalEnd int)
+to_lower(arg1 interface{}) interface{}
+to_upper(arg1 interface{}) interface{}
+trim(arg1, arg2 interface{}) interface{}
+uniq(elements ...interface{})
+contains_all(body interface{}, substrs ...string) bool
+contains_any(body interface{}, substrs ...string) bool
+```
+
+The available uncommon DSL functions are:
+
+```js!
+base64(arg1 interface{}) interface{}
+base64_decode(arg1 interface{}) interface{}
+concat(args ...interface{}) string
+html_escape(arg1 interface{}) interface{}
+html_unescape(arg1 interface{}) interface{}
+join(separator string, elements ...interface{}) string
+remove_bad_chars(arg1, arg2 interface{}) interface{}
+reverse(arg1 interface{}) interface{}
+sha1(arg1 interface{}) interface{}
+sort(elements ...interface{})
+split(input string, separator string,  optionalChunkSize)
+url_decode(arg1 interface{}) interface{}
+url_encode(arg1 interface{}) interface{}
+wait_for(seconds uint)
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+<hr class="sep-both">
+
 ## Nuclei HTTP Protocol
 
 <div class="row row-cols-lg-2"><div>
