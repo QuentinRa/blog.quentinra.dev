@@ -102,7 +102,8 @@ info:
   severity: info
   tags: tag1,tag2
 ```
-</div><div>
+
+<br>
 
 #### Nuclei Templates — Protocols
 
@@ -122,13 +123,10 @@ flow: http(1) && http(2)
 * `http`: can be used for fuzzing or to HTTP make requests.
 * `javascript`: can be used to execute JavaScript with/without nuclei internal libraries, to perform complex operations.
 * `code`: execute native code in any language, such as python. It only works if the template is signed for security reasons.
-</div></div>
 
-<hr class="sep-both">
+<br>
 
-## Nuclei Variables
-
-<div class="row row-cols-lg-2"><div>
+#### Nuclei Templates — Variables
 
 You can declare variables to use them across your template file:
 
@@ -140,11 +138,54 @@ variables:
     - "accept-charset"
 ```
 
-To use your variables:
-
-* HTTP: `http_headers`
-* JavaScript: `template.http_headers`
+To use this variable, use `http_headers` with HTTP and `template.http_headers` with JavaScript.
 </div><div>
+
+<br>
+
+#### Nuclei Templates — Conditions
+
+Conditions are used by matchers and extractors. We can use `word`, `regex`, `status` and `dsl` which encompasses all of them.
+
+```yaml!
+# Condition: OR or AND
+# Part: [body, header, query, path]
+# Name: store the result in a variable
+# Internal: do not print on stdout the result
+# Case-insensitive: default to false
+# Negative: negate the result, default to false
+
+    - type: dsl
+      dsl:
+        - 'method != "HEAD"'
+        - 'method != "OPTIONS"'
+      condition: and
+
+    - type: word
+      part: body
+      name: variable_name
+      internal: false
+      case-insensitive: true
+      negative: true
+      words:
+        - "Password"
+```
+
+<br>
+
+#### Nuclei Templates — Matchers
+
+Matchers (refer to the [documentation](https://docs.projectdiscovery.io/templates/reference/matchers)) are set of instructions to determine if a request or a response matches their expected value.
+
+```yaml!
+# Stop At First Match: default to false
+# Matchers Condition: default to "or"
+
+    stop-at-first-match: false
+    matchers-condition: and
+    matchers:
+      - some_condition
+```
 </div></div>
 
 <hr class="sep-both">
@@ -202,21 +243,6 @@ http:
 We can then analyze the result using [matchers](https://docs.projectdiscovery.io/templates/reference/matchers).
 
 ```yaml!
-    stop-at-first-match: false
-    matchers-condition: and
-    matchers:
-      # Part can be: [body, header, ...]
-      # "word"=>"words", "regex"=>"regex", "status"=>"status"
-      - type: word
-        part: body
-        name: xxx              # optional name
-        words:
-          - "..."
-        condition: or
-        internal: true         # do not print
-        case-insensitive: true
-        negative: true
-
       - type: dsl
         dsl:
           - "sha256(body) == 'value'"
