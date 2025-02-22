@@ -5,42 +5,29 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[WordPress](https://wordpress.com/) is a system that was created to build and manage blogs. It's now widely used for any kind of website. There are **ton** of plugins making it fast and easy to create websites 🚀.
+[WordPress](https://wordpress.com/) is a system that was created to build and manage blogs. It's now widely used for any kind of website.
 
-* **Learning websites** 🧑‍🎓: search for "LMS" plugins
-* **Manga websites** 📚: search for "madara" or "MangaStream"
-* ...
+* 📚 A theme is a template for a website. It includes styles and pre-designed pages, such as the product page for an online shop.
 
-☠️ Note that most themes/plugins are paid.
+* 📦 A plugin is a bundle of code that extend WordPress to add a feature such as [Wordfence](https://www.wordfence.com/) for security mechanisms.
+
+Many theme or plugins are paid. While it may be possible to illegally get a free version, you're likely to execute tampered code.
 </div><div>
 
-**Useful links?**
+There are a few well-known files and folders.
 
-* [wpgiz](https://wpgiz.com/) <small>(blog)</small>
-* [themeforest](https://themeforest.net/category/wordpress) <small>(themes)</small> or [jojo-themes](https://www.jojo-themes.net/en/) <small>(themes)</small>
+* Themes are stored in `/wp-content/themes/<theme_name>/`.
+* Plugin files are stored in `/wp-content/plugins/<plugin_name>/`.
+* Uploaded files are stored in `/wp-content/uploads/`.
+* Critical internal files are stored in `/wp-includes`.
+* The WordPress base configuration is stored in `wp-config.php`.
+
+✍️ Settings and data are stored in the database.
 </div></div>
 
 <hr class="sep-both">
-
-## WordPress Overview
-
-<div class="row row-cols-lg-2"><div>
-
-#### Common WordPress Endpoints
-
-**Files**
-
-**Folders**
-
-Themes are stored in `/wp-content/themes/<theme_name>/`.
-
-Plugin files are stored in `/wp-content/plugins/<plugin_name>/`. There is usually a readme.html explaining how it works.
-
-Uploaded files are stored in `/wp-content/uploads/`.
-
-Critical internal WordPress files are stored in `/wp-includes`.
-</div><div>
-</div></div>
+<hr class="sep-both">
+<hr class="sep-both">
 
 <hr class="sep-both">
 
