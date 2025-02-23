@@ -400,10 +400,10 @@ Detect common files and endpoints:
 
 - [x] Crawl the website unauthenticated
 - [ ] Crawl the website authenticated <small>(🧪)</small>
-- [x] Crawl robots.txt
-- [x] Detect and crawl sitemap.xml
-- [x] Detect and scrap humans.txt
-- [x] Detect and scrap security.txt
+- [x] Crawl robots.txt and sitemap.xml 
+- [ ] Detect robots.txt and sitemap.xml
+- [ ] Detect and scrap humans.txt
+- [ ] Detect and scrap security.txt
 - [x] Detect and crawl directories with directory listing
 
 Detect interesting elements:
@@ -440,7 +440,6 @@ Detect common mistakes/misconfigurations:
 - [x] Cookies <small>(detect, security flags, investigate)</small> | [editor](https://cookie-editor.com/), [ref](/programming-languages/web/_general/random/cookies.md)
 - [x] Default favicon
 - [ ] Detect secrets in the JavaScript <small>(✍️🧪)</small>
-- [ ] Detect non-generic robots.txt
 
 Other elements:
 

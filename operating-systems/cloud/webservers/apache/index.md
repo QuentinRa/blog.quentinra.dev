@@ -162,6 +162,13 @@ allow from 127.0.0.1
 Allow from 192.168.1.0/24
 ```
 
+⚠️ It is not recursive, e.g. users can still access individual files such as `.git/HEAD` when banning `.git`. Instead use either:
+
+```
+RedirectMatch 404 /\.git
+RewriteRule ^\.git - [F,L]
+```
+
 <br>
 
 #### Example: prompt for basic authentication
