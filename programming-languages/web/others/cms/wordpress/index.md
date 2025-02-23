@@ -39,12 +39,18 @@ WordPress can be really annoying to crawl as it redirects the user to the most l
 * [ ] Discover [themes](https://github.com/projectdiscovery/nuclei-templates/blob/main/http/fuzzing/wordpress-themes-detect.yaml) 
 * [ ] Discover [plugins](https://github.com/projectdiscovery/nuclei-templates/blob/main/http/fuzzing/wordpress-plugins-detect.yaml)
 * [ ] Discover uploaded files
+* [x] Check if `/emergency.php` was added and not removed
+* [x] Check if `/wp-config.php` or a backup is exposed
+* [x] Check if `/wp-content/debug.log` is exposed <small>(WP_DEBUG+WP_DEBUG_LOG)</small>
+* [x] Check if `/wp-admin/maint/repair.php` is exposed and enabled
 
 #### WordPress Discovery — Mapping
 
 * [x] Directory listing may be enabled in `/wp-content/**/*`
 * [x] Browse `/wp-json/wp/` or `/?rest_route=/wp/`
 * [x] Browse `/xmlrpc.php`, `/xmlrpc/`, or `/xmlrpc/pingback`
+* [x] Check if `wp-login.php` is available
+* [x] Check if `?gf_page=randomstring` redirects to the login page
 
 #### WordPress Discovery — Core Fingerprint
 
@@ -99,7 +105,10 @@ XML RPC can be used to perform brute force attacks, SSRF attacks, and other atta
 
 #### WordPress Discovery — Exposed Login Page
 
-* [ ] XXX
+The `wp-login.php` page may be available. If so, we can:
+
+* [x] The Login page has a different message if user exists
+* [x] The Reset password page has a different message if user exists
 </div></div>
 
 <hr class="sep-both">
