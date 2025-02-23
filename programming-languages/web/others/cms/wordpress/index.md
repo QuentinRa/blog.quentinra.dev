@@ -26,6 +26,56 @@ There are a few well-known files and folders.
 </div></div>
 
 <hr class="sep-both">
+
+## WordPress — Website Discovery
+
+<div class="row row-cols-lg-2"><div>
+
+#### WordPress Discovery — Forced Browsing
+
+* [ ] Discover themes, plugins, uploads
+
+#### WordPress Discovery — Mapping
+
+* [x] Directory listing may be enabled in `/wp-content/**/*`
+* [x] Browse `/wp-json/wp/` or `/?rest_route=/wp/`
+</div><div>
+
+#### WordPress Discovery — Fingerprint
+
+* [x] Cookie starting with `wordpress_`
+
+#### WordPress Discovery — Exposed Usernames
+
+* [ ] XXX
+</div></div>
+
+<hr class="sep-both">
+
+## WordPress — Website Exploitation
+
+<div class="row row-cols-lg-2"><div>
+
+#### WordPress Discovery — Developer Files
+
+* [ ] XXX
+* [ ] XXX
+* [ ] XXX
+
+#### WordPress Discovery — Exposed Header
+
+* [ ] XXX
+* [ ] XXX
+* [ ] XXX
+</div><div>
+
+#### WordPress Discovery — Exposed Login Page
+
+* [ ] XXX
+* [ ] XXX
+* [ ] XXX
+</div></div>
+
 <hr class="sep-both">
 <hr class="sep-both">
 
