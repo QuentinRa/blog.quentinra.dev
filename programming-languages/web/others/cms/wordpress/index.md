@@ -34,18 +34,31 @@ There are a few well-known files and folders.
 
 #### WordPress Discovery — Forced Browsing
 
-* [ ] Discover themes, plugins, uploads
+WordPress can be really annoying to crawl as it redirects the user to the most likely page. All of these redirections are resulting in a status code of `302` and a header `X-Redirect-By: WordPress`.
+
+* [ ] Discover [themes](https://github.com/projectdiscovery/nuclei-templates/blob/main/http/fuzzing/wordpress-themes-detect.yaml) 
+* [ ] Discover [plugins](https://github.com/projectdiscovery/nuclei-templates/blob/main/http/fuzzing/wordpress-plugins-detect.yaml)
+* [ ] Discover uploaded files
 
 #### WordPress Discovery — Mapping
 
 * [x] Directory listing may be enabled in `/wp-content/**/*`
 * [x] Browse `/wp-json/wp/` or `/?rest_route=/wp/`
 * [x] Browse `/xmlrpc.php`, `/xmlrpc/`, or `/xmlrpc/pingback`
-</div><div>
 
-#### WordPress Discovery — Fingerprint
+#### WordPress Discovery — Core Fingerprint
 
 * [x] Cookie starting with `wordpress_`
+* [x] Meta tag `<meta name="generator" content="WordPress 6.7.2"/>`
+* [x] Rdf generator tag `https://wordpress.org/?v=6.7.2` <small>(URL in tags)</small>
+* [x] Query parameter `style.min.css?ver=6.7.2` <small>(many CSS/JS files)</small>
+</div><div>
+
+#### WordPress Discovery — Theme/Plugin Fingerprint
+
+* [x] Passive theme and plugin detection
+* [ ] Plugins versions in query parameters?
+* [ ] Plugins versions in README (`/readme.txt`, etc.)
 
 #### WordPress Discovery — Exposed Usernames
 
