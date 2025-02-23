@@ -11,7 +11,7 @@
 
 * 📦 A plugin is a bundle of code that extend WordPress to add a feature such as [Wordfence](https://www.wordfence.com/) for security mechanisms.
 
-Many theme or plugins are paid. While it may be possible to illegally get a free version, you're likely to execute tampered code.
+Many theme or plugins are paid. While it may be possible to illegally get a "free" version, you're likely to execute malicious code.
 </div><div>
 
 There are a few well-known files and folders.
@@ -20,6 +20,7 @@ There are a few well-known files and folders.
 * Plugin files are stored in `/wp-content/plugins/<plugin_name>/`.
 * Uploaded files are stored in `/wp-content/uploads/`.
 * Critical internal files are stored in `/wp-includes`.
+* The API is available using `/wp-json/` or `/xmlrpc.php` <small>(old)</small>.
 * The WordPress base configuration is stored in `wp-config.php`.
 
 ✍️ Settings and data are stored in the database.
@@ -39,6 +40,7 @@ There are a few well-known files and folders.
 
 * [x] Directory listing may be enabled in `/wp-content/**/*`
 * [x] Browse `/wp-json/wp/` or `/?rest_route=/wp/`
+* [x] Browse `/xmlrpc.php`, `/xmlrpc/`, or `/xmlrpc/pingback`
 </div><div>
 
 #### WordPress Discovery — Fingerprint
@@ -47,7 +49,12 @@ There are a few well-known files and folders.
 
 #### WordPress Discovery — Exposed Usernames
 
-* [ ] XXX
+* [x] Enumerate users with `?author=1` on any page
+* [x] Enumerate users with `/author-sitemap.xml` <small>(Yoast SEO plugin)</small>
+* [x] Enumerate users with `/wp/v2/users/` API route
+* [x] Enumerate users with `/rdf` or `/feed/rdf` appended to any route.
+
+🛡️ [Wordfence](https://wordpress.org/plugins/wordfence/) or [Stop User Enumeration](https://wordpress.org/plugins/stop-user-enumeration/) can be used to block most of them. We can also use `.htaccess` rules or [WPS Hide Login](https://wordpress.org/plugins/wps-hide-login/).
 </div></div>
 
 <hr class="sep-both">
@@ -58,21 +65,27 @@ There are a few well-known files and folders.
 
 #### WordPress Discovery — Developer Files
 
-* [ ] XXX
-* [ ] XXX
-* [ ] XXX
+* [x] Exposed /readme.html <small>(no use)</small>
+* [x] Exposed /license.txt <small>(no use)</small>
 
 #### WordPress Discovery — Exposed Header
 
-* [ ] XXX
-* [ ] XXX
-* [ ] XXX
+* [x] CORS may be enabled on `/wp-json/`
+
+#### WordPress Discovery — XML RPC
+
+XML RPC can be used to perform brute force attacks, SSRF attacks, and other attacks according to the enabled APIs.
+
+* [x] Check if we can use `system.listMethods`
+* [x] Check if we can use the method `system.multicall`
+* [x] Check if we can use the method `pingback.ping` for SSRF
+* [ ] Check if we can use the method `wp.getUsersBlogs` to brute force accounts. Refer to this [template](https://github.com/projectdiscovery/nuclei-templates/blob/main/http/vulnerabilities/wordpress/wp-xmlrpc-brute-force.yaml).
+
+🛡️ [Wordfence](https://wordpress.org/plugins/wordfence/) can block brute force attempts for XML RPC. Otherwise, unused methods can be disabled using PHP code.
 </div><div>
 
 #### WordPress Discovery — Exposed Login Page
 
-* [ ] XXX
-* [ ] XXX
 * [ ] XXX
 </div></div>
 
