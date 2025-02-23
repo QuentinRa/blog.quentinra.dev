@@ -401,9 +401,9 @@ Detect common files and endpoints:
 - [x] Crawl the website unauthenticated
 - [ ] Crawl the website authenticated <small>(🧪)</small>
 - [x] Crawl robots.txt and sitemap.xml 
-- [ ] Detect robots.txt and sitemap.xml
-- [ ] Detect and scrap humans.txt
-- [ ] Detect and scrap security.txt
+- [x] Detect robots.txt and sitemap.xml
+- [x] Detect and scrap humans.txt
+- [x] Detect and scrap security.txt
 - [x] Detect and crawl directories with directory listing
 
 Detect interesting elements:
@@ -419,14 +419,14 @@ Detect interesting elements:
 Detect common files and folders:
 
 - [x] .git, .git/HEAD, .git/config, .gitignore
-- [x] .svn
-- [x] .DS_Store
-- [x] trailing tilde
-- [x] .bak/.old extensions
-- [x] .env
+- [ ] .svn
+- [ ] .DS_Store
+- [ ] trailing tilde
+- [ ] .bak/.old extensions
+- [ ] .env
 - [x] composer.json, composer.lock, vendor/composer/installed.json
 - [x] package.json, package-json.lock, yarn.lock
-- [ ] .map css/javascript files
+- [x] .map javascript files
 </div><div>
 
 #### Web Services — Fingerprint — Checklist

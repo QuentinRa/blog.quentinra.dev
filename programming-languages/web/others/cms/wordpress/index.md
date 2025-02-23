@@ -49,6 +49,7 @@ WordPress can be really annoying to crawl as it redirects the user to the most l
 * [x] Directory listing may be enabled in `/wp-content/**/*`
 * [x] Browse `/wp-json/wp/` or `/?rest_route=/wp/`
 * [x] Browse `/xmlrpc.php`, `/xmlrpc/`, or `/xmlrpc/pingback`
+* [x] Browse `/feed/` or `?feed=rss2`
 * [x] Check if `wp-login.php` is available
 * [x] Check if `?gf_page=randomstring` redirects to the login page
 
@@ -102,6 +103,10 @@ XML RPC can be used to perform brute force attacks, SSRF attacks, and other atta
 
 🛡️ [Wordfence](https://wordpress.org/plugins/wordfence/) can block brute force attempts for XML RPC. Otherwise, unused methods can be disabled using PHP code.
 </div><div>
+
+#### WordPress Discovery — WP CRON
+
+The [WP Cron](http://wp.sec2/wp-cron.php) module may have been enabled. We will never know unless we can see the website configuration enabling it. Hackers can attempt to use [doser](https://github.com/Quitten/doser.go) to DoS a website.
 
 #### WordPress Discovery — Exposed Login Page
 
