@@ -421,35 +421,47 @@ Detect common files and folders:
 - [x] .git, .git/HEAD, .git/config, .gitignore
 - [ ] .svn
 - [ ] .DS_Store
-- [ ] trailing tilde
-- [ ] .bak/.old extensions
+- [x] trailing tilde
+- [x] .bak/.old extensions
 - [ ] .env
 - [x] composer.json, composer.lock, vendor/composer/installed.json
 - [x] package.json, package-json.lock, yarn.lock
+- [x] vendor, node_modules
 - [x] .map javascript files
+- [x] license and readme files
 </div><div>
 
 #### Web Services — Fingerprint — Checklist
 
 Detect common mistakes/misconfigurations:
 
-- [x] HTML Comments
-- [ ] JavaScript Comments
-- [ ] CSS Comments
-- [x] Headers <small>(suspicious, missing)</small>
-- [x] Cookies <small>(detect, security flags, investigate)</small> | [editor](https://cookie-editor.com/), [ref](/programming-languages/web/_general/random/cookies.md)
-- [x] Default favicon
+- [x] Detect HTML Comments
+- [x] Inspect Headers <small>(suspicious, missing)</small>
+- [x] Inspect cookies <small>(detect, security flags, investigate, [editor](https://cookie-editor.com/), [ref](/programming-languages/web/_general/random/cookies.md))</small>
+- [x] Known favicons
+- [x] Meta tags <small>(generator)</small>
+
+Known pages
+
+* [x] Known 403 pages <small>(/: or /.htaccess)</small>
+* [x] Known 404 pages <small>(/PAGENOTFOUND or /PAGENOTFOUND/)</small>
+* [x] Known 500 pages <small>(POST with no body, etc.)</small>
+* [ ] Install and Default Pages
+* [ ] PHP Errors <small>(🧪)</small>
+* [x] Stack Traces
+
+Resources
+
 - [ ] Detect secrets in the JavaScript <small>(✍️🧪)</small>
+- [ ] Detect JavaScript Comments
+- [ ] Detect CDNs <small>(cdnjs, etc.)</small>
 
 Other elements:
 
 - [x] Detected Emails
 - [ ] Detected Domains/Subdomains <small>(✍️🧪)</small>
-- [ ] indexFUZZ
-- [ ] Meta tags
 - [ ] Title
-- [ ] 404 page.
-- [ ] login/admin page
+- [ ] indexFUZZ
 
 📚 Find routes, secrets, emails, etc.
 </div></div>
