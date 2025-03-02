@@ -278,11 +278,17 @@ sort(elements ...interface{})
 Common code samples:
 
 ```yaml!
+# We can use logicial operators
+# e.g. condition && condition || condition
 - 'md5(body) == "..."'
 - 'status_code == 200'
 - 'contains(content_type, "image/")'
+- "contains(tolower(all_headers), \"content-type: image/\")"
 - 'line_ends_with(path, ".js")'
 - "!regex('(?i)strict-transport-security', header)"
+- 'line_ends_with(tolower(path), "/readme.md", "/readme.html")'
+- "!contains_all(body, \"aaa\", \"bbb\")"
+- to_string(content_length) + " bytes"
 ```
 
 You can declare variables and reuse them in the next DSL statements.
@@ -298,7 +304,7 @@ You can declare variables and reuse them in the next DSL statements.
 
     - type: dsl
       dsl:
-        - _loc == ""
+        - _loc == "/"
 ```
 </div></div>
 
@@ -316,6 +322,14 @@ http:
     # ...
     - request2
     # ...
+```
+
+A request contains matcher, extractors, and:
+
+```yaml!
+    host-redirects: true
+    max-redirects: 3
+    max-size: 5000
 ```
 
 * Most templates (>95%) are using arbitrary requests
@@ -366,6 +380,7 @@ JavaScript templates are quite convenient as we can write complex code without h
 They added a few JavaScript helpers.
 
 * `log(some_variable)`: list key/values when using debug mode
+* `log(template.http_1_request)`: log the first HTTP request
 
 📚 Any returned value will be cast to a string. You can return an array <small>(ex: `[].join('\n')`)</small> to have multiple value send to the extractor.
 </div><div>
@@ -375,6 +390,8 @@ Example:
 ```yaml!
 javascript:
   - code: |
+      const loc = template._loc ? (Array.isArray(template._loc) ? template._loc : [template._loc]) : []
+  
       const content = template.http_all_headers
       content.split(/\r\n/).join('\n')
 
@@ -387,23 +404,52 @@ javascript:
 
 <hr class="sep-both">
 
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
+## Nuclei Workflows
 
 <div class="row row-cols-lg-2"><div>
 
+A workflow is a logical execution of templates.
+
+For instance, before running any WordPress template, we may first want to check if the target is a WordPress website.
+
 ```yaml!
-id: simple-workflow-example
+id: wordpress-workflow
 
 info:
-  name: Simple Workflow Example
+  name: Wordpress Workflow
   author: anonymous
 
 workflows:
-  - template: dummy1.yaml
+  - template: web/technologies/wordpress/wordpress-detect.yaml
     subtemplates:
-      - template: dummy2.yaml
+      - tags: wordpress
 ```
+
+This template will run `wordpress-detect.yaml`, and if the template matches, then it will run templates tagged with `wordpress`.
+
+⚠️ Use `-w` and do not use `-t` to avoid executing all templates.
 </div><div>
+
+We can go beyond this example and only run templates according to the matcher name. For instance:
+
+```yaml!
+    - template: web/technologies/wordpress/xmlrpc/wordpress-xmlrpc.yaml
+      matchers:
+      - name: _xmlrpc
+        subtemplates:
+          - tags: xmlrpc
+```
+
+For reference, the matcher in `wordpress-xmlrpc.yaml`:
+
+```yaml!
+    - type: dsl
+      name: _xmlrpc
+      dsl:
+        - 'status_code == 405 && contains(tolower(all_headers), "content-type: text/plain")'
+        - 'status_code == 200 && contains(tolower(all_headers), "content-type: text/xml")'
+      condition: or
+```
+
+⚠️ It only works with `matchers-condition: or` <small>(bug)</small>.
 </div></div>
