@@ -6,7 +6,7 @@
 
 * [Documentation](https://docs.projectdiscovery.io/tools/nuclei/overview) <small>(⛪)</small>
 * [Nuclei](https://github.com/projectdiscovery/nuclei) <small>(22.1k ⭐)</small>
-* [Nuclei Template](https://github.com/projectdiscovery/nuclei-templates) <small>(9.7k ⭐)</small>
+* [Nuclei Templates](https://github.com/projectdiscovery/nuclei-templates) <small>(9.7k ⭐)</small>
 
 Nuclei can be used directly from Burp Suite. One downside is that most nuclei templates were written **to perform GET requests**.
 </div><div>
@@ -63,9 +63,10 @@ Nuclei supports multiple input modes, but when using another input mode aside fr
 By default, nuclei will run every template according to the scope. They may target other ports even if you used `-u https://example.com:443`.
 
 * `-t folder/`: only execute templates in this folder
-* `-etags abc,def`: exclude templates matching these tags
-* `-ni`/`-no-interactsh`: disable template using OOB payloads
-* `.nuclei-ignore`: define which template/tags to ignore
+* `-tags abc,def`: only include templates matching one of these tags
+* `-etags abc,def`: exclude templates matching one of these tags
+* `-ni`/`-no-interactsh`: disable out-of-band templates
+* `.nuclei-ignore`: define which template and tags to ignore
 
 ⚠️ Nuclei often stops with no results due to the following:
 
@@ -87,11 +88,13 @@ Other handy options:
 
 ## Nuclei Templates
 
+The documentation is available [here](https://docs.projectdiscovery.io/templates/introduction). The reference is available [here](https://github.com/projectdiscovery/nuclei/blob/dev/SYNTAX-REFERENCE.md).
+
 <div class="row row-cols-lg-2"><div>
 
 #### Nuclei Templates — Basics
 
-The documentation is available [here](https://docs.projectdiscovery.io/templates/introduction). A basic template starts with:
+A basic template starts with:
 
 ```yaml!
 id: your-template-id
@@ -116,13 +119,17 @@ flow: |
     http()
     javascript()
 
-# From the documentation
+# Execute the 2nd request only if the 1st matched
 flow: http(1) && http(2)
+
+# Operators are lazy. If the first requested matched
+# Then the second expression is not evaluated.
+flow: http(1) || (http(2) && http(3))
 ```
 
 * `http`: can be used for fuzzing or to HTTP make requests.
 * `javascript`: can be used to execute JavaScript with/without nuclei internal libraries, to perform complex operations.
-* `code`: execute native code in any language, such as python. It only works if the template is signed for security reasons.
+* `code`: execute native code in any language, such as python. For security reasons, it is not executed until the template is signed.
 
 <br>
 
@@ -140,21 +147,21 @@ variables:
 
 To use this variable, use:
 
-* `my_variable` with HTTP 
-* `template.my_variable` with JavaScript
+* `my_variable` in the HTTP protocol block 
+* `template.my_variable` in the JavaScript protocol block
 
-There are quite a few variables by default. A variable is created for each header <small>(e.g. user_agent for User-Agent)</small> or when using `name:`.
+There are quite a few variables by default. A variable is created both for each header <small>(e.g. user_agent for User-Agent)</small> and when using a `name`.
 
-* `query`: HTTP request query
-* `path`: HTTP request path
-* `method`: HTTP request method
-* `request`: raw HTTP request
-* `response`: raw HTTP response
-* `header`: HTTP response headers
-* `all_headers`: HTTP unique response headers
-* `body`: HTTP response body
-* `status_code`: HTTP response status code
+* `request` - Raw HTTP request made from the client
+* `method` - HTTP request method from the client request
+* `query` - HTTP request query from the client request
+* `path` - HTTP request path from the client request
+* `response` - Raw HTTP response received from server
+* `status_code` - Status Code received from server
+* `body` - HTTP response body received from server
+* `header`, `all_headers` - HTTP response headers
 
+There are some undocumented variables such as `Path`, `File`, etc.
 </div><div>
 
 <br>
@@ -165,7 +172,7 @@ Expressions are used by matchers and extractors. We can use `word`, `regex`, `st
 
 ```yaml!
 # Condition: OR or AND
-# Part: [body, header, query, path]
+# Part: ANY variable (such as body, header, query, path, etc.)
 # Name: store the result in a variable
 # Internal: do not print on stdout the result
 # Case-insensitive: default to false
@@ -177,14 +184,14 @@ Expressions are used by matchers and extractors. We can use `word`, `regex`, `st
         - 'method != "OPTIONS"'
       condition: and
 
-    - type: word
+    - name: variable_name
+      type: word
       part: body
-      name: variable_name
-      internal: false
-      case-insensitive: true
-      negative: true
       words:
         - "Password"
+      negative: true
+      internal: false
+      case-insensitive: true
 
     - type: regex
       part: body
@@ -217,14 +224,14 @@ Matchers (refer to the [documentation](https://docs.projectdiscovery.io/template
 
 #### Nuclei Templates — Extractors
 
-Extractors can be used to extract values from the request or response and display it in the output. Unlike matches, they are not limited to booleans.
+Extractors can be used to extract values from the request or response and display them in the output.
 
 ```yaml!
     extractors:
       - some_expression
 ```
 
-✍️ Extractors are optional. Regexes can only match one line. The output looks like `[...] example.com [value1, value2, etc.]`.
+✍️ Extractors are optional. Regexes can only match one line. The output looks like `[xxx:yyy] example.com [extracted_value1, etc.]`.
 </div></div>
 
 <hr class="sep-both">
@@ -239,7 +246,7 @@ You can list the available DSL functions using:
 $ nuclei -ldf
 ```
 
-The available common DSL functions are:
+Useful and commonly used DSL functions are:
 
 ```js!
 contains(arg1, arg2 interface{}) interface{}
@@ -260,27 +267,11 @@ to_lower(arg1 interface{}) interface{}
 to_upper(arg1 interface{}) interface{}
 trim(arg1, arg2 interface{}) interface{}
 uniq(elements ...interface{})
+concat(args ...interface{}) string
 contains_all(body interface{}, substrs ...string) bool
 contains_any(body interface{}, substrs ...string) bool
-```
-
-The available uncommon DSL functions are:
-
-```js!
-base64(arg1 interface{}) interface{}
-base64_decode(arg1 interface{}) interface{}
-concat(args ...interface{}) string
-html_escape(arg1 interface{}) interface{}
-html_unescape(arg1 interface{}) interface{}
 join(separator string, elements ...interface{}) string
-remove_bad_chars(arg1, arg2 interface{}) interface{}
-reverse(arg1 interface{}) interface{}
-sha1(arg1 interface{}) interface{}
 sort(elements ...interface{})
-split(input string, separator string,  optionalChunkSize)
-url_decode(arg1 interface{}) interface{}
-url_encode(arg1 interface{}) interface{}
-wait_for(seconds uint)
 ```
 </div><div>
 
@@ -296,13 +287,14 @@ Common code samples:
 
 You can declare variables and reuse them in the next DSL statements.
 
-```
+```yaml!
     - type: dsl
       internal: true
       name: _loc
       dsl:
         - http_location
         - path
+        - replace(concat(Path, "/", File), "//", "/")
 
     - type: dsl
       dsl:
