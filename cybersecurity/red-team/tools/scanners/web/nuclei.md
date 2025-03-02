@@ -453,3 +453,51 @@ For reference, the matcher in `wordpress-xmlrpc.yaml`:
 
 ⚠️ It only works with `matchers-condition: or` <small>(bug)</small>.
 </div></div>
+
+<hr class="sep-both">
+
+## Nuclei Template Anchors
+
+<div class="row row-cols-lg-2"><div>
+
+YAML support variables. It can be used to factorize code.
+
+```yaml!
+variables:
+  fuzzing: &fuzzing
+    - part: header
+      type: postfix
+      mode: single
+      keys:
+        - User-Agent
+      fuzz:
+        - ""
+
+  matchers: &matchers
+    - type: dsl
+      name: _xmlrpc
+      dsl:
+        - 'status_code == 405 && contains(tolower(all_headers), "content-type: text/plain")'
+        - 'status_code == 200 && contains(tolower(all_headers), "content-type: text/xml")'
+      condition: or
+```
+</div><div>
+
+We can use them pretty straightforwardly in the requests.
+
+```yaml!
+http:
+  - pre-condition:
+      - type: dsl
+        dsl:
+          - 'method != "HEAD"'
+          - 'method != "OPTIONS"'
+          - 'line_ends_with(tolower(path), "/xmlrpc", "/xmlrpc.php")'
+        condition: and
+
+    fuzzing: *fuzzing
+    matchers: *matchers
+```
+
+📚 There is no official template using anchors. KISS?
+</div></div>
