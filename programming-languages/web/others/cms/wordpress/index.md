@@ -38,7 +38,6 @@ WordPress can be really annoying to crawl as it redirects the user to the most l
 
 * [ ] Discover [themes](https://github.com/projectdiscovery/nuclei-templates/blob/main/http/fuzzing/wordpress-themes-detect.yaml) 
 * [ ] Discover [plugins](https://github.com/projectdiscovery/nuclei-templates/blob/main/http/fuzzing/wordpress-plugins-detect.yaml)
-* [ ] Discover uploaded files
 * [x] Check if `/emergency.php` was added and not removed
 * [x] Check if `/wp-config.php` or a backup is exposed
 * [x] Check if `/wp-content/debug.log` is exposed <small>(WP_DEBUG+WP_DEBUG_LOG)</small>
@@ -50,7 +49,7 @@ WordPress can be really annoying to crawl as it redirects the user to the most l
 * [x] Browse `/wp-json/wp/` or `/?rest_route=/wp/`
 * [x] Browse `/xmlrpc.php`, `/xmlrpc/`, or `/xmlrpc/pingback`
 * [x] Browse `/feed/` or `?feed=rss2`
-* [x] Check if `wp-login.php` is available
+* [x] Check if `wp-login.php` and `wp-signup.php` are available
 * [x] Check if `?gf_page=randomstring` redirects to the login page
 
 #### WordPress Discovery — Core Fingerprint
@@ -69,7 +68,7 @@ WordPress can be really annoying to crawl as it redirects the user to the most l
 
 #### WordPress Discovery — Exposed Usernames
 
-* [x] Enumerate users with `?author=1` on any page
+* [x] Enumerate users with `?author=1`
 * [x] Enumerate users with `/author-sitemap.xml` <small>(Yoast SEO plugin)</small>
 * [x] Enumerate users with `/wp/v2/users/` API route
 * [x] Enumerate users with `/rdf` or `/feed/rdf` appended to any route.
@@ -88,10 +87,6 @@ WordPress can be really annoying to crawl as it redirects the user to the most l
 * [x] Exposed /readme.html <small>(no use)</small>
 * [x] Exposed /license.txt <small>(no use)</small>
 
-#### WordPress Discovery — Exposed Header
-
-* [x] CORS may be enabled on `/wp-json/`
-
 #### WordPress Discovery — XML RPC
 
 XML RPC can be used to perform brute force attacks, SSRF attacks, and other attacks according to the enabled APIs.
@@ -102,11 +97,23 @@ XML RPC can be used to perform brute force attacks, SSRF attacks, and other atta
 * [ ] Check if we can use the method `wp.getUsersBlogs` to brute force accounts. Refer to this [template](https://github.com/projectdiscovery/nuclei-templates/blob/main/http/vulnerabilities/wordpress/wp-xmlrpc-brute-force.yaml).
 
 🛡️ [Wordfence](https://wordpress.org/plugins/wordfence/) can block brute force attempts for XML RPC. Otherwise, unused methods can be disabled using PHP code.
+
+#### WordPress Discovery — WP JSON
+
+WordPress JSON API isn't interesting by default.
+
+* [x] Check if there are new endpoints (`/wp/v2/`)
+* [x] Check if there is a SSRF with Oembed <small>(misconfigured plugins)</small>
+* [x] CORS may be enabled on `/wp-json/`  <small>(limited use)</small>
+
+🛡️ Keep up-to-date plugins. Limit access to wp-json.
 </div><div>
 
 #### WordPress Discovery — WP CRON
 
 The [WP Cron](http://wp.sec2/wp-cron.php) module may have been enabled. We will never know unless we can see the website configuration enabling it. Hackers can attempt to use [doser](https://github.com/Quitten/doser.go) to DoS a website.
+
+📚 We do not check for this vulnerability anymore.
 
 #### WordPress Discovery — Exposed Login Page
 
@@ -114,6 +121,13 @@ The `wp-login.php` page may be available. If so, we can:
 
 * [x] The Login page has a different message if user exists
 * [x] The Reset password page has a different message if user exists
+
+The `wp-signup.php` page may be available. If so, we can:
+
+* [x] Enumerate existing accounts
+* [x] Get a foothold on the platform
+
+🛡️ Hide the login page such as with [WPS Hide Login](https://wordpress.org/plugins/wps-hide-login/). Disable register.
 </div></div>
 
 <hr class="sep-both">
@@ -151,19 +165,7 @@ $ wpscan --url URL -e ap # plugins (or 'p' or 'vp')
 $ wpscan --url URL [...] --plugins-detection aggressive
 ```
 
-* Manually explore `/wp-content/**/**` if directory listing is enabled
-
-* WordPress version is in the source code or can be inferred from the default theme <small>(`<meta name="generator" content="WordPress X.Y.Z">`)</small>
-
 * Plugin and theme names/versions are exposed within the website source code <small>(link/script)</small>. The URL may include the version.
-
-* Look for links to user accounts, iterate `/?author=<id>`, or use `/wp-json/wp/v2/users` for versions before 4.7.1. While crawling the website, you may also find URLs such as `/author`.
-
-```shell!
-$ onectf crawl -u URL | grep author
-```
-
-* You can try to look in `/robots.txt` for something unexpected
 </div><div>
 
 #### WordPress FootHold
@@ -203,14 +205,11 @@ Stuff that I found, but never read/used yet.
 WordPress Hardening
 
 * Remove unused themes, and plugins
-* Hide username
-* Disable register
-* Use security plugins <small>(change login page URL, ban IPs...)</small>
 * Admins can write HTML in comments, it will be executed, but not normal users
 * Deactivating plugins doesn't remove its files
 * Auto-update? (themes and plugins too)
 * Install only trusted themes/plugins
-* sucuri-scanner, better-wp-security, wordfence
+* sucuri-scanner, better-wp-security
 
 Configuration
 
@@ -228,8 +227,6 @@ Stuff
 
 * CMA, CDA
 * WYSIWYG
-* `/wp-admin/`, `login.php`, `wp-login.php`
-* `xmlrpc.php` (XML API)
 * `select user_login,user_pass from wp_users;`
 * 10 levels of access, 5 (actually 6 with SA) roles
 </div></div>

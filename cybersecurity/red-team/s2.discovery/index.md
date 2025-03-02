@@ -368,14 +368,14 @@ We commonly use tools such as:
 
 #### Web Services — Known Frameworks
 
-Common Frameworks/CMS:
+Common frameworks:
 
-* [WordPress](/programming-languages/web/others/cms/wordpress/index.md): most used content-management system (CMS)
+* [WordPress](/programming-languages/web/others/cms/wordpress/index.md): the most popular website builder
+
+TODO:
+
 * [Joomla](/programming-languages/web/others/cms/joomla/index.md): popular content-management system (CMS)
 * [Drupal](/programming-languages/web/others/cms/drupal/index.md): content-management system (CMS)
-
-Uncommon Frameworks/CMS:
-
 * [phpBB](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#php-bulletin-board-phpbb)
 * [GetSimple CMS](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#getsimple-cms)
 * [Subrion CMS](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#subrion-cms)
@@ -440,6 +440,7 @@ Detect common mistakes/misconfigurations:
 - [x] Inspect cookies <small>(detect, security flags, investigate, [editor](https://cookie-editor.com/), [ref](/programming-languages/web/_general/random/cookies.md))</small>
 - [x] Known favicons
 - [x] Meta tags <small>(generator)</small>
+- [ ] Upload folder <small>(temp, tmp, upload, etc.)</small>
 
 Known pages
 
@@ -455,6 +456,7 @@ Resources
 - [ ] Detect secrets in the JavaScript <small>(✍️🧪)</small>
 - [ ] Detect JavaScript Comments
 - [ ] Detect CDNs <small>(cdnjs, etc.)</small>
+- [x] Detect JavaScript libraries versions
 
 Other elements:
 
