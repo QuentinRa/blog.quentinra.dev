@@ -65,6 +65,8 @@ A few options to attempt to discover more endpoints:
 * `-jsluice`: investigate `<script>` and JavaScript files using `jsluice`
 * `-xhr-extraction`: in headless mode, extract XHR endpoints
 
+⚠️ JSLuice cannot be compiled and is disabled on Windows.
+
 #### Katana — Output Options
 
 A few options related to the output of the tool:

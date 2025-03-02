@@ -59,10 +59,19 @@ They will be installed in `$(go env GOPATH)/bin/`.
 Each Go project has a `go.mod` file at the root that defines the minimum version of go, the dependencies and their versions.
 
 ```ps
+$ go mod init github.com/<username>/<repo>
 $ go mod tidy
 ```
 
 Running this command will detect and install any required dependency. It will update `go.mod` with missing dependencies.
+
+#### Go Cross-Compilation
+
+```ps
+$ sudo apt-get install gcc-multilib
+$ sudo apt-get install gcc-mingw-w64
+$ GOOS=windows GOARCH=amd64 CGO_ENABLED=1 CXX=x86_64-w64-mingw32-g++ CC=x86_64-w64-mingw32-gcc go build
+```
 </div></div>
 
 
@@ -180,4 +189,9 @@ Stuff that I found, but never read/used yet.
 
 * [Go+](https://github.com/goplus/gop)
 </div><div>
+
+```golang
+panic(fmt.Errorf("XXX %q", method))
+varible.([]string)
+```
 </div></div>

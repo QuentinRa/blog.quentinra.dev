@@ -298,7 +298,7 @@ Explore the website, note down each route and each feature. Test each form using
 * [getallurls](https://github.com/lc/gau) `[FREE]`: Crawl links and use passive recon.
 * [subjs](https://github.com/lc/subjs) `[FREE]`: Find routes within JavaScript files
 * [jsluice](https://github.com/BishopFox/jsluice) `[FREE]`: Find routes within JavaScript files
-* [Katana](https://github.com/projectdiscovery/katana) `[FREE]` 📌: Crawl links <small>(can submit basic forms, but JavaScript crawling flags are quite useless)</small>, forms, `robots.txt` and `sitemap.xml`.
+* [Katana](/cybersecurity/red-team/tools/enumeration/web/katana.md) `[FREE]` 📌: Crawl links <small>(can submit basic forms, but JavaScript crawling flags are quite useless)</small>, forms, `robots.txt` and `sitemap.xml`.
 
 ```ps
 $ onectf crawl -u "https://example.com/"
