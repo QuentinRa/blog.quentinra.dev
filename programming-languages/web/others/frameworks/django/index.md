@@ -108,24 +108,38 @@ If you're using HTML, then you can use template injection: `{% ... %}`. Refer to
 
 <hr class="sep-both">
 
-## Django Pentester Notes ☠️
+## Django — Website Discovery
 
 <div class="row row-cols-lg-2"><div>
 
-#### Django Enumeration
+#### Django Discovery — Forced Browsing
+
+Django doesn't have many endpoints that are hidden. The API toolkit may have been installed along the documentation toolkit.
+
+* [x] Check if `/api/` or similar is available
+* [x] Check if `/api/redoc/` or `/redoc/` is available
+* [x] Check if `/api/swagger/` or `/swagger/` is available
+
+#### Django Discovery — Mapping
+
+Django doesn't come with default many endpoints.
+
+* [x] Check if `/admin/` login page seems present
+* [x] Check if `/media/` seems present
+* [x] Check if `/static/` seems present
+</div><div>
+
+#### Django Discovery — Core Fingerprint
 
 [![django](../../../../../cybersecurity/_badges/thm/django.svg)](https://tryhackme.com/room/django)
 [![unbakedpie](../../../../../cybersecurity/_badges/thm-p/unbakedpie.svg)](https://tryhackme.com/r/room/unbakedpie)
 [![django_unchained](../../../../../cybersecurity/_badges/rootme/realist/django_unchained.svg)](https://www.root-me.org/en/Challenges/Realist/Django-unchained)
 [![djangocatz](../../../../../cybersecurity/_badges/rootme/realist/djangocatz.svg)](https://www.root-me.org/en/Challenges/Realist/DjangocatZ)
 
-* Check if there is a `/admin` or a `/media` endpoint
+Django doesn't expose itself. When DEBUG is enabled:
 
-* Check for Python Headers (`WSGIServer`, `CPython`)
-
-* If `DEBUG` mode is enabled, error 404 will expose the endpoints
-
-* If `DEBUG` mode is enabled, error 500 will expose a lot of information. It can be triggered sometimes by omitting parameters, or using invalid parameters such as an invalid format or type.
+* [x] Check if `/PAGENOTFOUND` returns the list of URLs
+* [x] Check if `Host: invalid` returns all DEBUG variables
 
 ```text!
 Python Version   - may help to customize payloads
@@ -138,10 +152,16 @@ DBMS Section     - Type of DBMS and configuration
 ANY_PATH         - may expose usernames such as in /home/toto/myapp/
 ```
 
-You can examine variables and the code in the traceback section too.
-</div><div>
+Regardless, the `Server` header may expose the Python version.
+</div></div>
 
-#### Django FootHold
+<hr class="sep-both">
+
+## Django — Website Exploitation ☠️
+
+<div class="row row-cols-lg-2"><div>
+
+#### Django Exploitation — Cracking Hashes
 
 [![djangocatz](../../../../../cybersecurity/_badges/rootme/realist/djangocatz.svg)](https://www.root-me.org/en/Challenges/Realist/DjangocatZ)
 
@@ -151,4 +171,5 @@ Django hashes have the format `pbkdf2_sha256$iter$salt$hash`. They can be cracke
 $ hashcat -m 10000 hash /usr/share/wordlists/rockyou.txt
 $ john --format="django" [...] # didn't work
 ```
+</div><div>
 </div></div>
