@@ -63,17 +63,40 @@ urlpatterns = [
 
 <hr class="sep-both">
 
-<div class="row row-cols-lg-2"><div>
-</div><div>
+## Django Routes
 
-You will usually edit `urls.py` to add a route which is a `path`, a `function`, and optionally a name. For instance:
+<div class="row row-cols-lg-2"><div>
+
+We can path multiple types of values for `path()`: a class or a function.
+
+```py
+    path('', index),
+    path('hello', HelloWorld.as_view(), name='hello_world'),
+```
+
+For APIs, we may use:
 
 ```python
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+
+class HelloWorld(APIView):
+    def get(self, request):
+        return Response({"message": "Hello, world!"}, status=status.HTTP_200_OK)
+```
+</div><div>
+
+For common HTML pages, we can use:
+
+```py
 from django.http import HttpResponse
 
 def index(request):
 	return HttpResponse("Hello, World!")
-	
+```
+
+```py
 from django.shortcuts import render
 
 def index(request):
