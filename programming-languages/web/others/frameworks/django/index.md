@@ -4,17 +4,29 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[Django](https://www.djangoproject.com/) is a python framework to create and deploy websites.
+[Django](https://www.djangoproject.com/) is a python framework to create and deploy websites. It's not a framework and by default, it doesn't come bundled with much.
+
+* A default install page
+* An administration page at `/admin/` to create accounts
+
+Django is then extended by writing python code and adding django applications such as `djangorestframework` for a REST API.
+</div><div>
+
+There is no default user. The default port is `8000`.
 
 ```shell!
 $ django-admin startproject <project_name>
-$ python3 manage.py migrate # apply configuration
+$ python3 manage.py migrate
+$ python3 manage.py createsuperuser
 $ python3 manage.py runserver
 $ python3 manage.py runserver 0.0.0.0:8080
-$ python3 manage.py startapp <app_name>
 ```
+</div></div>
 
-The default admin page is at URI: `/admin`.
+<hr class="sep-both">
+<hr class="sep-both">
+
+<div class="row row-cols-lg-2"><div>
 </div><div>
 
 You will usually edit `urls.py` to add a route which is a `path`, a `function`, and optionally a name. For instance:
