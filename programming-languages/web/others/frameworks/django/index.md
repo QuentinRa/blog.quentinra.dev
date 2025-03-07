@@ -24,6 +24,43 @@ $ python3 manage.py runserver 0.0.0.0:8080
 </div></div>
 
 <hr class="sep-both">
+
+## Django Overview 🗺️
+
+<div class="row row-cols-lg-2"><div>
+
+When getting started, we will create a project. It has the following:
+
+* `urls.py` 📚: defines the route of the application
+* `settings.py` ✍️: defines the settings of the application
+
+The following setting variables are commonly used:
+
+* `DEBUG = True`: dangerous setting, expose a lot of information
+* `ALLOWED_HOSTS = []`: allowed domains aside from localhost
+* `INSTALLED_APPS = []`: ordered list of applications
+* `SECRET_KEY = "..."`: ordered list of applications
+
+⚠️ The secret key is used to optionally sign cookies (`value:signature`) and for multiple other cryptographic operations.
+</div><div>
+
+Django is dividing the codebase in applications. For instance, we can add a route `api/` linking to the `myapi/urls.py` file.
+
+```py
+urlpatterns = [
+    path('api/', include('myapi.urls')),
+]
+```
+
+And in the application `myapi`, we can define relative routes.
+
+```py
+urlpatterns = [
+    path('hello/', ..., name='hello_world'),
+]
+```
+</div></div>
+
 <hr class="sep-both">
 
 <div class="row row-cols-lg-2"><div>
