@@ -150,6 +150,7 @@ ALLOWED_HOSTS    - List of domains allowed along with localhost.
 LOGIN_URL        - if you didn't know the URL ; may not be correct
 DBMS Section     - Type of DBMS and configuration
 ANY_PATH         - may expose usernames such as in /home/toto/myapp/
+INSTALLED_APPS   - identify if vulnerable apps were installed
 ```
 
 Regardless, the `Server` header may expose the Python version.
@@ -170,6 +171,27 @@ Django hashes have the format `pbkdf2_sha256$iter$salt$hash`. They can be cracke
 ```ps
 $ hashcat -m 10000 hash /usr/share/wordlists/rockyou.txt
 $ john --format="django" [...] # didn't work
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
+## Django — Random Notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### Django — Django REST API
+
+The `rest_framework` can be used to write API views as shown previously. The second is often used to automatically generate documentation, often exposed at `/redoc` or `/swagger`.
+
+```py
+INSTALLED_APPS = [
+    ...
+    'rest_framework',
+    'drf_yasg',
+    ...
+]
 ```
 </div><div>
 </div></div>
