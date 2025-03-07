@@ -173,6 +173,23 @@ $ hashcat -m 10000 hash /usr/share/wordlists/rockyou.txt
 $ john --format="django" [...] # didn't work
 ```
 </div><div>
+
+#### Django Exploitation — SSTI
+
+Writing code that is vulnerable to SSTI is an effort in itself. At most, we may have an XSS vulnerability.
+
+```py
+def render_html(request):
+    text = request.GET.get('text', '')
+    template_string = "<pre>" + text + "</pre>"
+    template = Template(template_string)
+    rendered_html = template.render(Context())
+    return HttpResponse(rendered_html)
+```
+
+```text!
+{% debug %}
+```
 </div></div>
 
 <hr class="sep-both">
