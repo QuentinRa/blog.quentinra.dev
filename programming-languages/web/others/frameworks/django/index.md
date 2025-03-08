@@ -122,7 +122,7 @@ Django doesn't have many endpoints that are hidden. The API toolkit may have bee
 
 #### Django Discovery — Mapping
 
-Django doesn't come with default many endpoints.
+Django doesn't come with many default endpoints.
 
 * [x] Check if `/admin/` login page seems present
 * [x] Check if `/media/` seems present
@@ -136,7 +136,12 @@ Django doesn't come with default many endpoints.
 [![django_unchained](../../../../../cybersecurity/_badges/rootme/realist/django_unchained.svg)](https://www.root-me.org/en/Challenges/Realist/Django-unchained)
 [![djangocatz](../../../../../cybersecurity/_badges/rootme/realist/djangocatz.svg)](https://www.root-me.org/en/Challenges/Realist/DjangocatZ)
 
-Django doesn't expose itself. When DEBUG is enabled:
+Django doesn't expose itself much. 
+
+* [x] Check if `csrfmiddlewaretoken` hidden input field is present
+* [x] Identify Django Install Page
+
+When DEBUG mode is enabled:
 
 * [x] Check if `/PAGENOTFOUND` returns the list of URLs
 * [x] Check if `Host: invalid` returns all DEBUG variables
