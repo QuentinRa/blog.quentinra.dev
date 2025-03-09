@@ -323,7 +323,7 @@ $ katana -silent -u "https://example.com:443" -o crawl.json -depth 5 -js-crawl -
 [![howwebsiteswork](../../_badges/thmp/howwebsiteswork.svg)](https://tryhackme.com/room/howwebsiteswork)
 [![agentsudoctf](../../_badges/thm-p/agentsudoctf.svg)](https://tryhackme.com/room/agentsudoctf)
 [![agentt](../../_badges/thm-p/agentt.svg)](https://tryhackme.com/room/agentt)
-[![unbakedpie](../../_badges/thm-p/unbakedpie.svg)](https://tryhackme.com/r/room/unbakedpie)
+[![ctfcollectionvol1](../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
 [![glitch](../../_badges/thm-p/glitch.svg)](https://tryhackme.com/r/room/glitch)
 [![jason](../../_badges/thm-p/jason.svg)](https://tryhackme.com/r/room/jason)
 [![vulnnet_node](../../_badges/thm-p/vulnnet_node.svg)](https://tryhackme.com/r/room/vulnnetnode)
@@ -331,6 +331,12 @@ $ katana -silent -u "https://example.com:443" -o crawl.json -depth 5 -js-crawl -
 [![wgelctf](../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
 [![gamingserver](../../_badges/thm-p/gamingserver.svg)](https://tryhackme.com/room/gamingserver)
 [![cyborgt8](../../_badges/thm-p/cyborgt8.svg)](https://tryhackme.com/room/cyborgt8)
+[![teamcw](../../_badges/thm-p/teamcw.svg)](https://tryhackme.com/r/room/teamcw)
+[![archangel](../../_badges/thm-p/archangel.svg)](https://tryhackme.com/r/room/archangel)
+[![easypeasyctf](../../_badges/thm-p/easypeasyctf.svg)](https://tryhackme.com/room/easypeasyctf)
+[![lianyu](../../_badges/thm-p/lianyu.svg)](https://tryhackme.com/room/lianyu)
+[![anthem](../../_badges/thm-p/anthem.svg)](https://tryhackme.com/r/room/anthem)
+[![unbakedpie](../../_badges/thm-p/unbakedpie.svg)](https://tryhackme.com/r/room/unbakedpie)
 ![nibbles](../../_badges/htb-p/nibbles.svg)
 ![getsimplecms](../../_badges/htb-p/getsimplecms.svg)
 [![knife](../../_badges/htb-p/knife.svg)](https://app.hackthebox.com/machines/Knife)
@@ -343,6 +349,7 @@ $ katana -silent -u "https://example.com:443" -o crawl.json -depth 5 -js-crawl -
 [![http_directory_indexing](../../_badges/rootme/web_server/http_directory_indexing.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Directory-indexing)
 [![phpbb_install_files](../../_badges/rootme/web_server/phpbb_install_files.svg)](https://www.root-me.org/en/Challenges/Web-Server/Install-files)
 [![http_ip_restriction_bypass](../../_badges/rootme/web_server/http_ip_restriction_bypass.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-IP-restriction-bypass)
+[![html_disabled_buttons](../../_badges/rootme/web_client/html_disabled_buttons.svg)](https://www.root-me.org/en/Challenges/Web-Client/HTML-disabled-buttons)
 
 Before even exploring the website, we may want to discover the technology stack. While rare, there may be vulnerabilities on the infrastructure. We will use this knowledge to prioritize checks.
 
@@ -377,7 +384,11 @@ Common frameworks:
 
 Uncommon frameworks:
 
-* [umbraco CMS](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#umbraco-cms)
+* [Umbraco CMS](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#umbraco-cms)
+* [Subrion CMS](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#subrion-cms)
+
+Old and niche frameworks:
+
 * [osCommerce](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#oscommerce--ecommerce-framework)
 * [phpBB](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#php-bulletin-board-phpbb)
 
@@ -386,7 +397,6 @@ TODO:
 * [Joomla](/programming-languages/web/others/cms/joomla/index.md): popular content-management system (CMS)
 * [Drupal](/programming-languages/web/others/cms/drupal/index.md): content-management system (CMS)
 * [GetSimple CMS](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#getsimple-cms)
-* [Subrion CMS](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#subrion-cms)
 
 </div></div>
 

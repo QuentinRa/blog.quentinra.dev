@@ -1,25 +1,8 @@
 # Static analysis
 
-[![activerecon](../../../../_badges/thm/activerecon.svg)](https://tryhackme.com/room/activerecon)
-[![archangel](../../../../_badges/thm-p/archangel.svg)](https://tryhackme.com/r/room/archangel)
-[![teamcw](../../../../_badges/thm-p/teamcw.svg)](https://tryhackme.com/r/room/teamcw)
-[![anthem](../../../../_badges/thm-p/anthem.svg)](https://tryhackme.com/r/room/anthem)
-
-For starter, you may use <kbd>CTRL+U</kbd> or Right-click and "View page source".
-
-While uncommon, in easy CTFs or niche challenges:
-
-* The website title may contain information
-* Emails may expose internal domains
-<hr class="sep-both">
-
-## HTML tags
-
-[![walkinganapplication](../../../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
 [![ctfcollectionvol1](../../../../_badges/thm-p/ctfcollectionvol1.svg)](https://tryhackme.com/room/ctfcollectionvol1)
 [![lianyu](../../../../_badges/thm-p/lianyu.svg)](https://tryhackme.com/room/lianyu)
 [![easypeasyctf](../../../../_badges/thm-p/easypeasyctf.svg)](https://tryhackme.com/room/easypeasyctf)
-[![html_disabled_buttons](../../../../_badges/rootme/web_client/html_disabled_buttons.svg)](https://www.root-me.org/en/Challenges/Web-Client/HTML-disabled-buttons)
 
 <div class="row row-cols-lg-2"><div>
 
