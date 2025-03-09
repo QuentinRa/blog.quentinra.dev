@@ -7,7 +7,7 @@
 [Django](https://www.djangoproject.com/) is a python framework to create and deploy websites. It's not a framework and by default, it doesn't come bundled with much.
 
 * A default install page
-* An administration page at `/admin/` to create accounts
+* An administration panel at `/admin/` to manage accounts
 
 Django is then extended by writing python code and adding django applications such as `djangorestframework` for a REST API.
 </div><div>

@@ -82,6 +82,8 @@ Common activities are:
 [![h4cked](../../_badges/thm-p/h4cked.svg)](https://tryhackme.com/r/room/h4cked)
 [![vulnnet_node](../../_badges/thm-p/vulnnet_node.svg)](https://tryhackme.com/r/room/vulnnetnode)
 [![blog](../../_badges/thm-p/blog.svg)](https://tryhackme.com/r/room/blog)
+[![picklerick](../../_badges/thm-p/picklerick.svg)](https://tryhackme.com/room/picklerick)
+[![wgelctf](../../_badges/thm-p/wgelctf.svg)](https://tryhackme.com/room/wgelctf)
 ![getsimplecms](../../_badges/htb-p/getsimplecms.svg)
 ![nibbles](../../_badges/htb-p/nibbles.svg)
 [![devvortex](../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
@@ -373,15 +375,18 @@ Common frameworks:
 * [WordPress](/programming-languages/web/others/cms/wordpress/index.md): the most popular website builder
 * [Django](/programming-languages/web/others/frameworks/django/index.md): common python framework
 
+Uncommon frameworks:
+
+* [umbraco CMS](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#umbraco-cms)
+* [osCommerce](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#oscommerce--ecommerce-framework)
+* [phpBB](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#php-bulletin-board-phpbb)
+
 TODO:
 
 * [Joomla](/programming-languages/web/others/cms/joomla/index.md): popular content-management system (CMS)
 * [Drupal](/programming-languages/web/others/cms/drupal/index.md): content-management system (CMS)
-* [phpBB](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#php-bulletin-board-phpbb)
 * [GetSimple CMS](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#getsimple-cms)
 * [Subrion CMS](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#subrion-cms)
-* [umbraco CMS](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#umbraco-cms)
-* [osCommerce](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#oscommerce--ecommerce-framework)
 
 </div></div>
 

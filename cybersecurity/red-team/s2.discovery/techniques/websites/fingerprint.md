@@ -40,12 +40,15 @@ Upload at `/panel/uploads/` <small>(Right-click to upload)</small> and execute i
 
 [![anthem](../../../../_badges/thm-p/anthem.svg)](https://tryhackme.com/r/room/anthem)
 
-* [official documentation](https://umbraco.com/): it's a .NET CMS
+* Link to [official documentation](https://umbraco.com/). It's a .NET CMS
 * It is usually hosted on Windows with a MSSQL backend
 * It (may?) uses Windows authentication <small>(xxx@domain:pass)</small>
 * Config path? `C:\inetpub\wwwroot\Web\Web.config`
-* Version 2.12.4 is vulnerable to [RCE](https://github.com/noraj/Umbraco-RCE/) <small>(0.1k ⭐, XSLT upload)</small>
+* Version 7.12.4 is vulnerable to [RCE](https://github.com/noraj/Umbraco-RCE/) <small>(0.1k ⭐, XSLT upload)</small>
 * Once authenticated, click on 'Help' to find the version
+* The page `/umbraco/ServerVariables` list all server variables when authenticated. It includes umbraco version and configuration.
+
+See also: [Articulate](https://github.com/Shazwazza/Articulate) engine built on Umbraco.
 
 <br>
 
