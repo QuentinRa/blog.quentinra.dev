@@ -298,9 +298,7 @@ Explore the website, note down each route and each feature. Test each form using
 * [ZAProxy](/cybersecurity/red-team/tools/utilities/proxies/zap/index.md) `[FREE]`: Crawl links.
 * [onectf](/cybersecurity/red-team/tools/frameworks/onectf/index.md#onectf-crawl-module) `[FREE]`: Crawl links, simple JS events, and `robots.txt`. Include path discovery <small>(check each folder in a path for directory listing)</small>.
 * [getallurls](https://github.com/lc/gau) `[FREE]`: Crawl links and use passive recon.
-* [subjs](https://github.com/lc/subjs) `[FREE]`: Find routes within JavaScript files
-* [jsluice](https://github.com/BishopFox/jsluice) `[FREE]`: Find routes within JavaScript files
-* [Katana](/cybersecurity/red-team/tools/enumeration/web/katana.md) `[FREE]` 📌: Crawl links <small>(can submit basic forms, but JavaScript crawling flags are quite useless)</small>, forms, `robots.txt` and `sitemap.xml`.
+* [Katana](/cybersecurity/red-team/tools/enumeration/web/katana.md) `[FREE]` 📌: Crawl links <small>(can submit basic forms, include JSLuice and basic regexes for JS files)</small>, forms, `robots.txt` and `sitemap.xml`.
 
 ```ps
 $ onectf crawl -u "https://example.com/"
@@ -372,6 +370,26 @@ We commonly use tools such as:
 📚 Check source code <small>(css/js, links, comments, copyrights)</small>, `/robots.txt`, files extensions or fuzz extensions for `/indexFUZZ`, `<meta>`/`<title>` tags, the favicon, login/admin/error pages, headers, and cookies.
 
 🛡️ Remove versions in headers. Do not enable DEBUG modes. Keep error messages generic. Remove the [default favicon](https://wiki.owasp.org/index.php/OWASP_favicon_database) and comments.
+
+<br>
+
+#### Web Services — Javascript Secrets
+
+[![server_side_attacks](../../_badges/htb/server_side_attacks.svg)](https://academy.hackthebox.com/course/preview/server-side-attacks)
+[![walkinganapplication](../../_badges/thm/walkinganapplication.svg)](https://tryhackme.com/room/walkinganapplication)
+[![pythonplayground](../../_badges/thm-p/pythonplayground.svg)](https://tryhackme.com/r/room/pythonplayground)
+[![glitch](../../_badges/thm-p/glitch.svg)](https://tryhackme.com/r/room/glitch)
+[![javascript_authentication](../../_badges/rootme/web_client/javascript_authentication.svg)](https://www.root-me.org/en/Challenges/Web-Client/Javascript-Authentication)
+[![javascript_authentication_2](../../_badges/rootme/web_client/javascript_authentication_2.svg)](https://www.root-me.org/en/Challenges/Web-Client/Javascript-Authentication-2)
+[![javascript_source](../../_badges/rootme/web_client/javascript_source.svg)](https://www.root-me.org/en/Challenges/Web-Client/Javascript-Source)
+
+JavaScript files often contain secrets <small>(JWT, credentials)</small> along with URLs in modern applications such as React or Angular apps.
+
+* [subjs](https://github.com/lc/subjs) `[FREE]`: Find routes within JavaScript files
+* [jsluice](https://github.com/BishopFox/jsluice) `[FREE]`: Find routes+secrets within JavaScript files
+* Devtools `[FREE]`: Use breakpoints and analyse the JavaScript
+
+📚 Ensure that common files such as `jquery` were not tampered with.
 
 <br>
 
