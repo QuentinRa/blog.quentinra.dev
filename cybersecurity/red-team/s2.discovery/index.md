@@ -458,9 +458,9 @@ Detect common files and folders:
 - [x] trailing tilde
 - [x] .bak/.old extensions
 - [ ] .env
-- [x] composer.json, composer.lock, vendor/composer/installed.json
+- [x] composer.json, composer.lock, composer.phar
 - [x] package.json, package-json.lock, yarn.lock
-- [x] vendor, node_modules
+- [x] vendor, vendor/composer/installed.json, node_modules
 - [x] .map javascript files
 - [x] license and readme files
 </div><div>

@@ -1,26 +1,7 @@
 # Forced Browsing
 
 <div class="row row-cols-lg-2"><div>
-
 </div><div>
-
-For extensions: `php,html,txt,sql,bak,tar,tar.gz,db,zip,sqlite`.
-</div></div>
-
-<hr class="sep-both">
-
-## Additional Notes
-
-<div class="row row-cols-lg-2"><div>
-</div><div>
-
-#### Composer Vendor Folder Exposure
-
-[![surfer](../../../../_badges/thm-p/surfer.svg)](https://tryhackme.com/r/room/surfer)
-
-[Composer](/programming-languages/web/php/composer/index.md) is a package manager for PHP. From `composer.json`, it creates a `vendor` folder with the PHP packages.
-
-This folder should not be available for remote users.
 
 #### CGI Scripts
 
