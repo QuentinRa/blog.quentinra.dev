@@ -283,5 +283,6 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [mt_rand](https://www.php.net/manual/en/function.mt-rand.php): known to have a lack of entropy. PoC where found. Sometimes exploitable. See: [Snowflake](https://github.com/GeorgeArgyros/Snowflake).
+* hash function delay
 </div><div>
 </div></div>
