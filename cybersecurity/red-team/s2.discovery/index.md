@@ -400,13 +400,14 @@ Common frameworks:
 * [WordPress](/programming-languages/web/others/cms/wordpress/index.md): the most popular website builder
 * [Django](/programming-languages/web/others/frameworks/django/index.md): common python framework
 
+Common solutions:
+
+* [GLPI](/operating-systems/networking/others/random/glpi.md)
+
 Uncommon frameworks:
 
 * [Umbraco CMS](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#umbraco-cms)
 * [Subrion CMS](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#subrion-cms)
-
-Old and niche frameworks:
-
 * [osCommerce](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#oscommerce--ecommerce-framework)
 * [phpBB](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#php-bulletin-board-phpbb)
 
