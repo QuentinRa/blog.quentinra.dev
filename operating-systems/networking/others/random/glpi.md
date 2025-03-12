@@ -44,7 +44,9 @@ By default, GLPI webserver should be mapped to the `/public/` folder. It's often
 GLPi version can be found in two places.
 
 * [x] Check for a file such as `/version/10.0.10`
-* [x] Check for the version once connected in `About`
+* [x] Check `About` for GLPI version once connected
+* [x] Check `/ajax/telemetry.php` for versions once connected
+* [x] Detect GLPI Install Page
 </div></div>
 
 <hr class="sep-both">
@@ -57,14 +59,16 @@ GLPi version can be found in two places.
 
 We may get a foothold if default credentials were not changed.
 
+* Test all default credentials
+
 🛡️ Use strong passwords and disable default accounts.
 
 #### GLPI Exploitation — .htaccess failure
 
 By default, `.htaccess` are ignored by Apache unless `AllowOverride` is specified. This can lead to multiple security issues.
 
-* [ ] Navigate to `/files/_session/` and try every cookie
-* [ ] Upload a PHP script and run it from `/files/_tmp/`
+* Navigate to `/files/_session/` and try every cookie
+* Upload a PHP script and run it from `/files/_tmp/`
 
 🛡️ Only expose the `/public/` folder or use `AllowOverride` on Apache.
 
