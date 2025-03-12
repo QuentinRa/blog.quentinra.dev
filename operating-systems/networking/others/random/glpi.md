@@ -20,3 +20,46 @@ Default credentials are:
 
 ⚠️ Using this software may be dangerous as each [release](https://github.com/glpi-project/glpi/releases) usually has many patched vulnerabilities <small>(3-7 per release, excluding misconfigurations)</small>.
 </div></div>
+
+<hr class="sep-both">
+
+## GLPI — Website Discovery
+
+<div class="row row-cols-lg-2"><div>
+
+#### GLPI Discovery — Forced Browsing
+
+By default, GLPI webserver should be mapped to the `/public/` folder. It's often misconfigured, leading to internal files being web-accessible.
+
+* [ ] `/files/` - critical sensitive files, protected by .htaccess
+  * [ ] `/files/_log/` - server and application logs
+  * [ ] `/files/_sessions/` - PHP sessions
+  * [ ] `/files/_tmp/` or `/files/_uploads/` - uploaded files 
+* [ ] `/version/` - directory listing may be enabled
+* [ ] `/vendor/` - protected by .htaccess
+</div><div>
+
+#### GLPI Discovery — Fingerprint
+
+GLPi version can be found in two places.
+
+* [x] Check for a file such as `/version/10.0.10`
+* [x] Check for the version once connected in `About`
+</div></div>
+
+<hr class="sep-both">
+
+## GLPI — Website Exploitation
+
+<div class="row row-cols-lg-2"><div>
+
+#### GLPI Exploitation — .htaccess failure
+
+By default, `.htaccess` are ignored by Apache unless `AllowOverride` is specified. This can lead to multiple security issues.
+
+* [ ] Navigate to `/files/_session/` and try every cookie
+* [ ] Upload a PHP script and run it from `/files/_tmp/`
+
+🛡️ Only expose the `/public/` folder or use `AllowOverride` on Apache.
+</div><div>
+</div></div>
