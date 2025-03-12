@@ -6,7 +6,7 @@
 
 Discovery 🏝️, a.k.a. active recon (reconnaissance) is the second step of the pentester activities.
 
-It involves gathering information about the target by **probing their network or systems** 🛶️, to find exploitable vulnerabilities.
+It involves gathering information about the target by **probing their network or systems** 🛶️ to identify security issues.
 
 * 🎯 Host discovery <small>(OS, version...)</small>
 * 🕸️ Network discovery <small>(architecture...)</small>
@@ -478,18 +478,19 @@ Detect common mistakes/misconfigurations:
 
 Known pages
 
+* [ ] Register, login and reset password pages
 * [x] Known 403 pages <small>(/: or /.htaccess)</small>
 * [x] Known 404 pages <small>(/PAGENOTFOUND or /PAGENOTFOUND/)</small>
 * [x] Known 500 pages <small>(POST with no body, etc.)</small>
-* [ ] Install and Default Pages
-* [ ] PHP Errors <small>(🧪)</small>
+* [x] Install and Default Pages <small>(Apache, nginx)</small>
+* [x] Server Errors <small>(ASP, PHP)</small>
 * [x] Stack Traces
 
 Resources
 
 - [ ] Detect secrets in the JavaScript <small>(✍️🧪)</small>
 - [ ] Detect JavaScript Comments
-- [ ] Detect CDNs <small>(cdnjs, etc.)</small>
+- [x] Detect CDNs <small>(cdnjs, etc.)</small>
 - [x] Detect JavaScript libraries versions
 
 Other elements:
@@ -561,12 +562,6 @@ Internal Assessments
 
 Websites
 
-[![introwebapplicationsecurity](../../_badges/thm/introwebapplicationsecurity.svg)](https://tryhackme.com/room/introwebapplicationsecurity)
-
-* [Website fingerprinting](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md) 🧭: understand your target
-* [Source code analysis](/cybersecurity/red-team/s2.discovery/techniques/websites/sanalysis.md) 🚪🔥🔑: comments, hidden code...
-* [Account discovery](/cybersecurity/red-team/s2.discovery/techniques/websites/account.md) 🔑: find accounts
-* [Forced Browsing](/cybersecurity/red-team/s2.discovery/techniques/websites/forced_browsing.md) 🚪🔑: find hidden pages/folders
 * [IDOR](/cybersecurity/red-team/s2.discovery/techniques/websites/idor.md) 🚪🔑: find if you can access someone else content
 * [Logic flaws](/cybersecurity/red-team/s2.discovery/techniques/websites/logic_flaws.md) 🚪: find logic flaws, mass assignment
 * [Virtual hosts](/cybersecurity/red-team/s2.discovery/techniques/websites/vhosts.md) 🚪: find virtual hosts
