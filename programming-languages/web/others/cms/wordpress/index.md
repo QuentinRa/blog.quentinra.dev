@@ -82,12 +82,12 @@ WordPress can be really annoying to crawl as it redirects the user to the most l
 
 <div class="row row-cols-lg-2"><div>
 
-#### WordPress Discovery — Developer Files
+#### WordPress Exploitation — Developer Files
 
 * [x] Exposed /readme.html <small>(no use)</small>
 * [x] Exposed /license.txt <small>(no use)</small>
 
-#### WordPress Discovery — XML RPC
+#### WordPress Exploitation — XML RPC
 
 XML RPC can be used to perform brute force attacks, SSRF attacks, and other attacks according to the enabled APIs.
 
@@ -98,7 +98,7 @@ XML RPC can be used to perform brute force attacks, SSRF attacks, and other atta
 
 🛡️ [Wordfence](https://wordpress.org/plugins/wordfence/) can block brute force attempts for XML RPC. Otherwise, unused methods can be disabled using PHP code.
 
-#### WordPress Discovery — WP JSON
+#### WordPress Exploitation — WP JSON
 
 WordPress JSON API isn't interesting by default.
 
@@ -109,13 +109,13 @@ WordPress JSON API isn't interesting by default.
 🛡️ Keep up-to-date plugins. Limit access to wp-json.
 </div><div>
 
-#### WordPress Discovery — WP CRON
+#### WordPress Exploitation — WP CRON
 
 The [WP Cron](http://wp.sec2/wp-cron.php) module may have been enabled. We will never know unless we can see the website configuration enabling it. Hackers can attempt to use [doser](https://github.com/Quitten/doser.go) to DoS a website.
 
 📚 We do not check for this vulnerability anymore.
 
-#### WordPress Discovery — Exposed Login Page
+#### WordPress Exploitation — Exposed Login Page
 
 The `wp-login.php` page may be available. If so, we can:
 

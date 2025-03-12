@@ -442,7 +442,8 @@ Detect common files and endpoints:
 
 Detect interesting elements:
 
-- [x] Detect forms
+- [x] Detect HTML forms
+- [ ] Detect hidden HTML tags
 - [x] Identify allowed methods using `OPTIONS`
 - [x] Detect endpoints in the JavaScript
 
@@ -462,6 +463,7 @@ Detect common files and folders:
 - [x] vendor, vendor/composer/installed.json, node_modules
 - [x] .map javascript files
 - [x] license and readme files
+- [ ] cgi-bin scripts
 </div><div>
 
 #### Web Services — Fingerprint — Checklist
