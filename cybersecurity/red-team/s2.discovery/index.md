@@ -452,12 +452,11 @@ Detect interesting elements:
 
 Detect common files and folders:
 
+- [x] .env
 - [x] .git, .git/HEAD, .git/config, .gitignore
-- [ ] .svn
-- [ ] .DS_Store
-- [x] trailing tilde
-- [x] .bak/.old extensions
-- [ ] .env
+- [x] .svn, .svn/entries, .svn/wc.db
+- [x] .DS_Store
+- [x] ~/.bak/.old trailing extensions
 - [x] composer.json, composer.lock, composer.phar
 - [x] package.json, package-json.lock, yarn.lock
 - [x] vendor, vendor/composer/installed.json, node_modules

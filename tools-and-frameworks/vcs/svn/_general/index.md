@@ -4,9 +4,10 @@
 
 Subversion (SVN) is a centralized [version control system](../../_general/index.md). Developers `commit` their changes to a central repository that keeps track of every change. They `checkout` the repository to get a copy of the project.
 
-➡️ [TortoiseSVN](https://tortoisesvn.net/) is a commonly used GUI for SVN.
+* [TortoiseSVN](https://tortoisesvn.net/) is a commonly used GUI for SVN.
+* [Version Control with Subversion](https://svnbook.red-bean.com/) is a popular book
 
-➡️ See also: [Version Control with Subversion](https://svnbook.red-bean.com/)
+By default, SVN do not use encryption and anonymous access as reader is allowed. Credentials may be stored in `~/.subversion/auth/` while they are often in an external vault. 
 </div><div>
 
 A simple usage:
@@ -30,6 +31,7 @@ Stuff that I found, but never read/used yet.
 
 * `svn copy`
 * `svn merge`
-* `~/.subversion`
+* `<repo>/conf/passwd` on the SVN server for passwords
+* `ps aux | grep svnserve`
 </div><div>
 </div></div>
