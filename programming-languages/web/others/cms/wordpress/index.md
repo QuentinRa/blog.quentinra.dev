@@ -49,7 +49,8 @@ WordPress can be really annoying to crawl as it redirects the user to the most l
 * [x] Browse `/wp-json/wp/` or `/?rest_route=/wp/`
 * [x] Browse `/xmlrpc.php`, `/xmlrpc/`, or `/xmlrpc/pingback`
 * [x] Browse `/feed/` or `?feed=rss2`
-* [x] Check if `wp-login.php` and `wp-signup.php` are available
+* [x] Check if `wp-login.php` is accessible
+* [x] Check if `wp-signup.php` or `wp-register.php` are enabled
 * [x] Check if `?gf_page=randomstring` redirects to the login page
 
 #### WordPress Discovery — Core Fingerprint
@@ -122,7 +123,7 @@ The `wp-login.php` page may be available. If so, we can:
 * [x] The Login page has a different message if user exists
 * [x] The Reset password page has a different message if user exists
 
-The `wp-signup.php` page may be available. If so, we can:
+The `wp-signup.php`/`wp-register.php` page may be available. If so:
 
 * [x] Enumerate existing accounts
 * [x] Get a foothold on the platform

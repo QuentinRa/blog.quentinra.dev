@@ -1,4 +1,4 @@
-# GLPi IT Management
+# GLPI IT Management
 
 <div class="row row-cols-lg-2"><div>
 
@@ -59,7 +59,7 @@ GLPi version can be found in two places.
 
 We may get a foothold if default credentials were not changed.
 
-* Test all default credentials
+* [ ] Test all default credentials
 
 🛡️ Use strong passwords and disable default accounts.
 
@@ -67,8 +67,8 @@ We may get a foothold if default credentials were not changed.
 
 By default, `.htaccess` are ignored by Apache unless `AllowOverride` is specified. This can lead to multiple security issues.
 
-* Navigate to `/files/_session/` and try every cookie
-* Upload a PHP script and run it from `/files/_tmp/`
+* [ ] Navigate to `/files/_session/` and try every cookie
+* [ ] Upload a PHP script and run it from `/files/_tmp/`
 
 🛡️ Only expose the `/public/` folder or use `AllowOverride` on Apache.
 
@@ -299,4 +299,15 @@ http:
 </details>
 
 📚 Original article: [OCD Exploit](https://sensepost.com/blog/2024/from-a-glpi-patch-bypass-to-rce/)
+
+#### GLPI Exploitation - Known CVEs
+
+List of known exploitable CVEs.
+
+* [ ] [CVE-2019-10232](https://github.com/projectdiscovery/nuclei-templates/blob/main/http/cves/2019/CVE-2019-10232.yaml)
+* [ ] [CVE-2020-11034](https://github.com/projectdiscovery/nuclei-templates/blob/main/http/cves/2020/CVE-2020-11034.yaml)
+* [ ] [CVE-2021-39211](https://github.com/projectdiscovery/nuclei-templates/blob/main/http/cves/2021/CVE-2021-39211.yaml)
+* [ ] [CVE-2021-43778](https://github.com/projectdiscovery/nuclei-templates/blob/main/http/cves/2021/CVE-2021-43778.yaml)
+* [ ] [CVE-2022-35914](https://github.com/projectdiscovery/nuclei-templates/blob/main/http/cves/2022/CVE-2022-35914.yaml)
+* [ ] [CVE-2024-29889](https://github.com/projectdiscovery/nuclei-templates/blob/main/http/cves/2024/CVE-2024-29889.yaml)
 </div></div>
