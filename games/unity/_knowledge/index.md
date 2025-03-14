@@ -50,7 +50,7 @@ Since it can be hard to learn, we often use plugins or tools such as [GitHub Des
 
 There are also Git plugins inside Unity:
 
-* [GitHub for Unity](https://unity.github.com/) <small>(⚠️, dead)</small> 
+* GitHub for Unity <small>(⚠️ dead)</small> 
 * [git-for-unity](https://github.com/spoiledcat/git-for-unity) <small>(🚀, fork of GitHub for Unity)</small>
 * ...
 

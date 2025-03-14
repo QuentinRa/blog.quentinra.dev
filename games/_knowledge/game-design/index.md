@@ -6,7 +6,7 @@ Game design is the process of creating and developing the rules, mechanics, and 
 
 Games designers are redacting a **Game design document** (GDD) that covers every information and aspect of the game.
 
-* [1-Page Game Design Document](https://vitalzigns.itch.io/1-page-gdd)
+* [1-Page Game Design Document](https://vitalzigns.itch.io/gdd)
 * [Game Design Document (GDD) Template](https://vitalzigns.itch.io/gdd)
 * [Game Design Document Template](https://retrocademedia.itch.io/gddtemplate)
 * [Game Design Document Template](https://toddmitchell.itch.io/game-design-document)

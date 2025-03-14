@@ -6,7 +6,7 @@ This is a software/tool allowing someone to gather a lot of past, and present in
 
 ![Maltego](_images/maltego.png)
 
-> Official links: [Maltego documentation](https://docs.maltego.com/support/home), [Maltego blog](https://www.maltego.com/blog/), [Maltego tutorials](https://www.maltego.com/categories/tutorial/), and [Maltego webinars](https://www.maltego.com/webinars/),
+> Official links: [Maltego documentation](https://docs.maltego.com/support/home), [Maltego blog](https://www.maltego.com/blog/) and [Maltego webinars](https://www.maltego.com/webinars/),
 
 </div><div>
 

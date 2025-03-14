@@ -600,7 +600,7 @@ $ cd && ln -s $HOME/tools/binaryninja/binaryninja $HOME/.local/bin/binaryninja
 
 #### Additional Tools
 
-* [Immunity Debugger](https://www.immunityinc.com/products/debugger/) + [mona](https://github.com/corelan/mona)
+* [Immunity Debugger](https://github.com/kbandla/ImmunityDebugger) + [mona](https://github.com/corelan/mona)
 </div></div>
 
 <hr class="sep-both">

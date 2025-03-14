@@ -12,7 +12,7 @@ Hardening refers to increasing the security <small>(confidentiality, integrity, 
 * 📂 Apps, tools and services
 * ...
 
-Tasks to do are defined in guides provided by organizations such as [CIS](https://www.cisecurity.org/cis-benchmarks) or [ANSSI](https://www.ssi.gouv.fr/uploads/2019/03/linux_configuration-en-v1.2.pdf), while organizations can have their own guides.
+Tasks to do are defined in guides provided by organizations such as [CIS](https://www.cisecurity.org/cis-benchmarks) or [ANSSI](https://cyber.gouv.fr/publications/recommandations-de-securite-relatives-un-systeme-gnulinux), while organizations can have their own guides.
 </div><div>
 
 **Where can we find guides?** 🎓

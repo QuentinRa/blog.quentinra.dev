@@ -43,7 +43,7 @@ We merge your files in `loader/` into `content/`, then generate/update rules, an
 
 Note that the project is *somewhat* complex. ⚠️
 
-A **control** 🔎 is a recommendation of a hardening guide, such as [Ensure /tmp is a separate partition](https://www.tenable.com/audits/items/CIS_Red_Hat_EL9_v1.0.0_L1_Server.audit:cd31711d0572f143d773d53f0c976db1). One control may contain multiple tasks to perform.
+A **control** 🔎 is a recommendation of a hardening guide, such as [Ensure /tmp is a separate partition](https://www.tenable.com/audits/items/CIS_Red_Hat_EL9_v1.0.0_L1_Server.audit:1352edda03858583805a5a0ac1da35f5). One control may contain multiple tasks to perform.
 
 A **control file** <small>(`content/controls/`)</small> 📝 correspond to a compliance guide. It contains some of the compliance metadata along with the list of controls that the guide contains.
 
