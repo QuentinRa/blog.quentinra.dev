@@ -4,7 +4,7 @@
 
 The [User Account Control (UAC)](/operating-systems/windows/_knowledge/index.md#permissions-and-users) is the equivalent of `sudo` on Linux. It's shown when administrative privileges are required, for instance, when a regular user wants to install applications for all users.
 
-You can refer to [UACME](https://github.com/hfiref0x/UACME) <small>(6.3k ⭐)</small> to defeat UAC.
+You can refer to [UACME](https://github.com/hfiref0x/UACME) <small>(6.6k ⭐)</small> to defeat UAC.
 
 #### Bypass UAC using eventvwr (2016)
 

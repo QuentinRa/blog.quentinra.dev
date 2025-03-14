@@ -8,7 +8,7 @@
 [![glitch](../../../_badges/thm-p/glitch.svg)](https://tryhackme.com/r/room/glitch)
 [![file_insecure_storage_1](../../../_badges/rootme/cryptanalysis/file_insecure_storage_1.svg)](https://www.root-me.org/en/Challenges/Cryptanalysis/File-Insecure-storage-1)
 
-Mozilla Firefox passwords can be extracted and cracked using [firefox_decrypt](https://github.com/unode/firefox_decrypt) <small>(2.0k ⭐)</small>. To install it on Kali:
+Mozilla Firefox passwords can be extracted and cracked using [firefox_decrypt](https://github.com/unode/firefox_decrypt) <small>(2.1k ⭐)</small>. To install it on Kali:
 
 ```ps
 $ pipx install git+https://github.com/unode/firefox_decrypt.git
@@ -48,7 +48,7 @@ AppData\Local\Google\Chrome\User Data
 AppData\Local\BraveSoftware\Brave-Browser\User Data\
 ```
 
-* **Decrypt on Windows** using [decrypt-chrome-passwords](https://github.com/ohyicong/decrypt-chrome-passwords/) <small>(0.9k ⭐)</small>
+* **Decrypt on Windows** using [decrypt-chrome-passwords](https://github.com/ohyicong/decrypt-chrome-passwords/) <small>(1.0k ⭐)</small>
 
 * **Decrypt on Windows** [mimikatz](/cybersecurity/red-team/tools/utilities/creds/mimikatz.md)
 
@@ -97,7 +97,7 @@ $ pypykatz dpapi chrome ./mkf "./Local State" --logindata "./Default/Login Data"
 
 Once we have the DPAPI master key, we can alternatively decrypt the encrypted secret key, and use it to decrypt the passwords.
 
-On Linux, we can use [dpapilab-ng](https://github.com/tijldeneut/dpapilab-ng/blob/main/blobdec-with-masterkey.py) <small>(0.1k ⭐)</small> to decrypt the secret key and [dcp](https://github.com/palmenas/dcp/tree/main) <small>(0.002k ⭐)</small> to decrypt and dump passwords.
+On Linux, we can use [dpapilab-ng](https://github.com/tijldeneut/dpapilab-ng/blob/main/blobdec-with-masterkey.py) <small>(0.1k ⭐)</small> to decrypt the secret key and [dcp](https://github.com/palmenas/dcp/tree/main) <small>(0.1k ⭐)</small> to decrypt and dump passwords.
 
 ```shell!
 $ base64 -d > key.enc <<< "<encrypted secret key here>"

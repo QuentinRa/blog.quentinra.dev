@@ -21,7 +21,7 @@ Privileges are [listed and explained here](https://learn.microsoft.com/en-us/win
 
 You can find way to exploit them on: 
 
-* [Priv2Admin](https://github.com/gtworek/Priv2Admin) <small>(1.9k ⭐)</small>
+* [Priv2Admin](https://github.com/gtworek/Priv2Admin) <small>(2.1k ⭐)</small>
 * [PrivFu](https://github.com/daem0nc0re/PrivFu/) <small>(0.8k ⭐)</small>
 * ...
 
@@ -59,7 +59,7 @@ PS> .\PrintSpoofer.exe -c "<reverse shell command>"
 
 Additional references:
 
-* [RogueWinRM](https://github.com/antonioCoco/RogueWinRM) <small>(0.7k ⭐, 2020 🪦)</small> using [WinRM](/operating-systems/networking/protocols/winrm.md)
+* [RogueWinRM](https://github.com/antonioCoco/RogueWinRM) <small>(0.8k ⭐, 2020 🪦)</small> using [WinRM](/operating-systems/networking/protocols/winrm.md)
 * [token-priv](https://github.com/hatRiot/token-priv/tree/master) <small>(0.8k ⭐, 2017 🪦)</small>
 </div><div>
 </div></div>

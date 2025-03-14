@@ -19,7 +19,7 @@ Escalation can be **horizontally**/laterally <small>(another user with the same 
 
 **Learn** 🎓
 
-* [Ignitetechnologies/Privilege-Escalation](https://github.com/Ignitetechnologies/Privilege-Escalation) <small>(3.3k ⭐, CTFs)</small>
+* [Ignitetechnologies/Privilege-Escalation](https://github.com/Ignitetechnologies/Privilege-Escalation) <small>(3.4k ⭐, CTFs)</small>
 
 **Tools**
 
@@ -95,12 +95,12 @@ External tools/services
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
 
-* [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) <small>(15.9k ⭐ | shell script)</small>
-* [LinEnum](https://github.com/rebootuser/LinEnum) <small>(7.0k ⭐ | shell script | 2020 🪦)</small>
-* [traitor](linux/tools/traitor.md)  <small>(6.5k ⭐ | go script compiled to binary | 2022 ☠️)</small>
+* [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) <small>(17.1k ⭐ | shell script)</small>
+* [LinEnum](https://github.com/rebootuser/LinEnum) <small>(7.2k ⭐ | shell script | 2020 🪦)</small>
+* [traitor](linux/tools/traitor.md)  <small>(6.8k ⭐ | go script compiled to binary | 2022 ☠️)</small>
 * [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) a.k.a. LSE <small>(3.0k ⭐ | shell script)</small>
 * [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) <small>(1.6k ⭐ | python script, 2021 🪦)</small>
-* [pwncat-cs](/cybersecurity/red-team/s3.exploitation/shell/tools/pwncat.md) <small>(2.3k ⭐ | reverse shell with priv. esc. suggester | 2022 ☠️)</small>
+* [pwncat-cs](/cybersecurity/red-team/s3.exploitation/shell/tools/pwncat.md) <small>(2.7k ⭐ | reverse shell with priv. esc. suggester | 2022 ☠️)</small>
 
 Additional references
 
@@ -153,12 +153,12 @@ Additional references
 
 There are many **automated scripts** that will investigate usual places, services, files... that you may want to look at. You will still have to understand the output, dig into it...
 
-* [WinPeas](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS) <small>(15.9k ⭐ | binary | Download and Run `.\winPEASany_ofs.exe`)</small>
-* [Seatbelt](https://github.com/GhostPack/Seatbelt) <small>(3.7k ⭐)</small>
-* [PrivescCheck](https://github.com/itm4n/PrivescCheck) <small>(2.9k ⭐ | powershell script)</small>
-* [JAWS](https://github.com/411Hall/JAWS) <small>(1.7k ⭐ | 2020 🪦)</small>
-* [SharpUp](https://github.com/GhostPack/SharpUp) <small>(1.2k ⭐ | C# port of PowerUp)</small>
-* [PowerSploit](https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc) <small>(11.2k ⭐ | powershell script | 2017 🪦 | This is the latest version of [PowerTools](https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerUp) and [PowerUp](https://github.com/HarmJ0y/PowerUp) which are dead too since 2014/2015)</small>.
+* [WinPeas](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS) <small>(17.1k ⭐ | binary | Download and Run `.\winPEASany_ofs.exe`)</small>
+* [Seatbelt](https://github.com/GhostPack/Seatbelt) <small>(4.0k ⭐)</small>
+* [PrivescCheck](https://github.com/itm4n/PrivescCheck) <small>(3.1k ⭐ | powershell script)</small>
+* [JAWS](https://github.com/411Hall/JAWS) <small>(1.8k ⭐ | 2020 🪦)</small>
+* [SharpUp](https://github.com/GhostPack/SharpUp) <small>(1.3k ⭐ | C# port of PowerUp)</small>
+* [PowerSploit](https://github.com/PowerShellMafia/PowerSploit/) <small>(11.2k ⭐ | powershell script | 2017 🪦 | This is the latest version of [PowerTools](https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerUp) and [PowerUp](https://github.com/HarmJ0y/PowerUp) which are dead too since 2014/2015)</small>.
 
 ```ps
 PS> powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"
