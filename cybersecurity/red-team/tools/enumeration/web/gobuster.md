@@ -7,7 +7,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[Gobuster](https://github.com/OJ/gobuster) <small>(9.0k ⭐)</small> is a popular web scanner mainly used for [forced browsing](/cybersecurity/red-team/s2.discovery/techniques/websites/forced_browsing.md) with these [wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md#forced-browsing).
+[Gobuster](https://github.com/OJ/gobuster) <small>(11.1k ⭐)</small> is a popular web scanner mainly used for [forced browsing](/cybersecurity/red-team/s2.discovery/techniques/websites/forced_browsing.md) with these [wordlists](/cybersecurity/red-team/_knowledge/topics/wordlists.md#forced-browsing).
 
 ```ps
 $ gobuster dir -u URL -w wordlist

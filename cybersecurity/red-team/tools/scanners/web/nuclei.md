@@ -5,8 +5,8 @@
 [Nuclei](https://github.com/projectdiscovery/nuclei) is probably the best website scanner. It is written in GO, pretty fast, and we can relatively easily add custom scans.
 
 * [Documentation](https://docs.projectdiscovery.io/tools/nuclei/overview) <small>(⛪)</small>
-* [Nuclei](https://github.com/projectdiscovery/nuclei) <small>(22.1k ⭐)</small>
-* [Nuclei Templates](https://github.com/projectdiscovery/nuclei-templates) <small>(9.7k ⭐)</small>
+* [Nuclei](https://github.com/projectdiscovery/nuclei) <small>(22.5k ⭐)</small>
+* [Nuclei Templates](https://github.com/projectdiscovery/nuclei-templates) <small>(9.8k ⭐)</small>
 
 Nuclei can be used directly from Burp Suite. One downside is that most nuclei templates were written **to perform GET requests**.
 </div><div>

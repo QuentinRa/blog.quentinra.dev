@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[RustScan](https://github.com/RustScan/RustScan) <small>(12.1k ⭐)</small> is a very fast and noisy port scanner designed for CTFs. You can scan all 65k ports in a few seconds.
+[RustScan](https://github.com/RustScan/RustScan) <small>(15.9k ⭐)</small> is a very fast and noisy port scanner designed for CTFs. You can scan all 65k ports in a few seconds.
 
 It's not installed by default on Kali. First, search for the latest `.deb` that you can find on their [release page](https://github.com/RustScan/RustScan/releases).
 

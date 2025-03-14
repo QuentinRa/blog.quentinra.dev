@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[feroxbuster](https://github.com/epi052/feroxbuster) <small>(6.2k ⭐)</small> is a powerful forced browsing tool with web crawler capabilities written in Rust.
+[feroxbuster](https://github.com/epi052/feroxbuster) <small>(6.3k ⭐)</small> is a powerful forced browsing tool with web crawler capabilities written in Rust.
 
 ```ps
 $ feroxbuster -u https://example.com

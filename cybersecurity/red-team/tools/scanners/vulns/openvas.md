@@ -4,7 +4,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[OpenVAS](https://github.com/greenbone/openvas-scanner) <small>(2.9k ⭐)</small> is an open-source vulnerability scanner.
+[OpenVAS](https://github.com/greenbone/openvas-scanner) <small>(3.7k ⭐)</small> is an open-source vulnerability scanner.
 
 ```shell!
 $ sudo apt-get install gvm

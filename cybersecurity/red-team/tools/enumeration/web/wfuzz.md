@@ -4,7 +4,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[wfuzz](https://github.com/xmendez/wfuzz) <small>(5.6k ⭐, 2020 🪦)</small> is a [Fuzzing](/cybersecurity/red-team/s2.discovery/techniques/websites/fuzzing.md) tool in Python. There are new modern alternatives, and it has not been updated since 2020.
+[wfuzz](https://github.com/xmendez/wfuzz) <small>(6.1k ⭐, 2020 🪦)</small> is a [Fuzzing](/cybersecurity/red-team/s2.discovery/techniques/websites/fuzzing.md) tool in Python. There are new modern alternatives, and it has not been updated since 2020.
 
 Examples
 

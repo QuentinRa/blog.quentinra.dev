@@ -5,7 +5,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[wappalyzer](https://github.com/wappalyzer/wappalyzer) <small>(<s>8.1k ⭐</s>, privatised)</small> is common tool used to identify frameworks, libraries, and other components along with their versions. It can be installed as a browser extension or used via their [website](https://www.wappalyzer.com/). 
+wappalyzer <small>(<s>8.1k ⭐</s>, privatised)</small> is common tool used to identify frameworks, libraries, and other components along with their versions. It can be installed as a browser extension or used via their [website](https://www.wappalyzer.com/). 
 
 If you are using the extension, you might want to uncheck the option to send anonymous data to their website.
 
