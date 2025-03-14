@@ -6,7 +6,7 @@
 
 Drupal is an open-source Content Management System (CMS) written in PHP. The version 11 is currently in development (2024).
 
-* [GitHub](https://github.com/drupal/drupal) <small>(4.0k ⭐)</small>
+* [GitHub](https://github.com/drupal/drupal) <small>(4.1k ⭐)</small>
 * [Documentation](https://www.drupal.org/documentation) <small>(⛪)</small>
 
 It supports MySQL, PostgreSQL, or sqlite.

@@ -40,18 +40,18 @@ As CSS rules can be complex <small>(responsive design, accessibility)</small>, m
 
 <div class="row row-cols-lg-2"><div>
 
-* [Bootstrap](https://github.com/twbs/bootstrap) <small>(+160k ⭐, [see my notes](/programming-languages/web/css/frameworks/bootstrap/index.md))</small>
-* [tailwindcss](https://github.com/tailwindlabs/tailwindcss) <small>(74.0k ⭐)</small>
-* [semantic](https://github.com/Semantic-Org/Semantic-UI) <small>(50.9k ⭐)</small>
-* [bulma](https://github.com/jgthms/bulma) <small>(47.7k ⭐)</small>
-* [primer](https://github.com/primer/css) <small>(12.3k ⭐, GitHub)</small>
+* [Bootstrap](https://github.com/twbs/bootstrap) <small>(+170k ⭐, [see my notes](/programming-languages/web/css/frameworks/bootstrap/index.md))</small>
+* [tailwindcss](https://github.com/tailwindlabs/tailwindcss) <small>(86.3k ⭐)</small>
+* [semantic](https://github.com/Semantic-Org/Semantic-UI) <small>(51.2k ⭐)</small>
+* [bulma](https://github.com/jgthms/bulma) <small>(49.6k ⭐)</small>
+* [primer](https://github.com/primer/css) <small>(12.6k ⭐, GitHub)</small>
 * [PureCSS](https://purecss.io/) <small>(23.2k ⭐)</small>
 * ...
 </div><div>
 
 Based on Material Design (Google UX Guidelines)
 
-* [Material Web](https://github.com/material-components/material-web) <small>(7.8k ⭐, in-progress)</small>
+* [Material Web](https://github.com/material-components/material-web) <small>(9.7k ⭐, in-progress)</small>
 * [Materialize](https://github.com/Dogfalo/materialize) <small>(38.8k ⭐, dead, [fork](https://github.com/materializecss/materialize))</small>
 
 </div></div>

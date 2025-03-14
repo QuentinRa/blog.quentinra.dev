@@ -4,20 +4,20 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[webpack](https://github.com/webpack/webpack) <small>(64.1k ⭐)</small> is a popular tool to merge javascript code into a single file called bundle. It's not specific to JavaScript.
+[webpack](https://github.com/webpack/webpack) <small>(65.1k ⭐)</small> is a popular tool to merge javascript code into a single file called bundle. It's not specific to JavaScript.
 
 Refer to the [Official Documentation](https://webpack.js.org/) for details.
 
 Webpack generates a file called **xxx.js.map** for debugging purposes during non-production builds. This file should not be uploaded in production as it contains code comments and commented out code.
 </div><div>
 
-You can try [webcrack](https://github.com/j4k0xb/webcrack) <small>(0.5k ⭐)</small> to unpack a bundle.
+You can try [webcrack](https://github.com/j4k0xb/webcrack) <small>(1.3k ⭐)</small> to unpack a bundle.
 
 ```shell!
 $ npm install -g webcrack
 ```
 
-You can try [shuji](https://github.com/paazmaya/shuji) <small>(0.9k ⭐)</small> to unpack a bundle.
+You can try [shuji](https://github.com/paazmaya/shuji) <small>(1.0k ⭐)</small> to unpack a bundle.
 
 ```shell!
 $ npm install --global shuji

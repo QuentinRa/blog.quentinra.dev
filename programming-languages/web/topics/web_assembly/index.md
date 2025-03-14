@@ -12,7 +12,7 @@ WebAssembly applications are intended to be fast and efficient.
 From your web browser debugger, you can extract the WAT code.
 </div><div>
 
-We can use the [wabt](https://github.com/WebAssembly/wabt) <small>(6.4k ⭐)</small> project to process web assembly files.
+We can use the [wabt](https://github.com/WebAssembly/wabt) <small>(7.2k ⭐)</small> project to process web assembly files.
 
 ```shell!
 $ docker build . -t wabt:latest           # Dockerfile below

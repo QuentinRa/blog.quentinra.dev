@@ -8,7 +8,7 @@
 
 [WPScan](https://wpscan.com/) is the most used tool to enumerate and attack WordPress. You can also use their [API](https://wpscan.com/api/) to automatically detect vulnerabilities.
 
-* [GitHub](https://github.com/wpscanteam/wpscan) <small>(8.2k ⭐)</small>
+* [GitHub](https://github.com/wpscanteam/wpscan) <small>(8.9k ⭐)</small>
 * [User Documentation](https://github.com/wpscanteam/wpscan/wiki/WPScan-User-Documentation) <small>(⛪)</small>
 
 Before every scan, update the local metadata database:

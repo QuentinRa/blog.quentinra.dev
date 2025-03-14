@@ -8,7 +8,7 @@ Adobe Flash was a software to create rich internet applications (RIAs) from the 
 
 It became discontinued on December 31, 2020, due to vulnerabilities.
 
-Flash content was typically delivered in the form of SWF files. They can be decompiled to ActionScript using tools such as [jpexs](https://github.com/jindrapetrik/jpexs-decompiler) <small>(4.6k ⭐)</small>.
+Flash content was typically delivered in the form of SWF files. They can be decompiled to ActionScript using tools such as [jpexs](https://github.com/jindrapetrik/jpexs-decompiler) <small>(4.8k ⭐)</small>.
 
 ```shell!
 $ wget "https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version21.0.1/ffdec_21.0.1.deb" -O /tmp/ffdec.deb

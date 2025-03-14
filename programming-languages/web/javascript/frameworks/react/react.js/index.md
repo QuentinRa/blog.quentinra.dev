@@ -2,13 +2,13 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[React.js](https://react.dev/) <small>(219k ⭐)</small> is a popular front-end framework. Due to its popularity, there are some front-end frameworks based on React:
+[React.js](https://react.dev/) <small>(233k ⭐)</small> is a popular front-end framework. Due to its popularity, there are some front-end frameworks based on React:
 
-* [Next](https://github.com/vercel/next.js/) <small>(118k ⭐, web)</small>
-* [React Native](https://github.com/facebook/react-native) <small>(114k ⭐, mobile)</small>
-* [Preact](https://github.com/preactjs/preact) <small>(35.8k ⭐, small)</small>
+* [Next](https://github.com/vercel/next.js/) <small>(130k ⭐, web)</small>
+* [React Native](https://github.com/facebook/react-native) <small>(121k ⭐, mobile)</small>
+* [Preact](https://github.com/preactjs/preact) <small>(37.2k ⭐, small)</small>
 
-There are also libraries of components such as [MUI](https://github.com/mui/material-ui) <small>(87k ⭐)</small>.
+There are also libraries of components such as [MUI](https://github.com/mui/material-ui) <small>(95k ⭐)</small>.
 </div><div>
 
 **Useful links** 📌

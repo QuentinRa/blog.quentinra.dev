@@ -17,7 +17,7 @@ socket.onmessage = message => console.log("Received: " + message.data);
 socket.send('test');
 ```
 
-You can explore the websocket traffic from the network tab/Burp. See also tools such as [wscat](https://github.com/websockets/wscat) <small>(2.1k ⭐)</small> and [websocat](https://github.com/vi/websocat) <small>(6.6k ⭐)</small>.
+You can explore the websocket traffic from the network tab/Burp. See also tools such as [wscat](https://github.com/websockets/wscat) <small>(2.4k ⭐)</small> and [websocat](https://github.com/vi/websocat) <small>(7.5k ⭐)</small>.
 </div></div>
 
 <hr class="sep-both">
