@@ -28,8 +28,8 @@ Networking devices are interconnected by cables.
 
 **Layer 7: Application Layer** <small>(data)</small> 🧑
 
-* [Proxies](devices/proxy.md)
-* [Load Balancers](devices/load_balancer.md)
+* [Proxies](/operating-systems/networking/topology/devices/proxy.md)
+* [Load Balancers](/operating-systems/networking/topology/devices/load_balancer.md)
 
 **Layer 6: Presentation Layer** <small>(data)</small> 🔒
 

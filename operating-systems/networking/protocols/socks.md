@@ -7,7 +7,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-Secure Socket (SOCKS) is a protocol to exchange data through a [proxy](../topology/devices/proxy.md) server called SOCKS proxy. It operates at the session layer <small>(layer 5)</small>.
+Secure Socket (SOCKS) is a protocol to exchange data through a [proxy](/operating-systems/networking/topology/devices/proxy.md) server called SOCKS proxy. It operates at the session layer <small>(layer 5)</small>.
 
 🐊️ **Port**: 1080 (TCP) or 9050/9150 (TCP) with Tor.
 
