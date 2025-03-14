@@ -37,7 +37,7 @@ The [splunkbase](https://splunkbase.splunk.com/) website is the official website
 
 #### Exploitation
 
-There are multiple ways of running code. We can use scripted input such as with [reverse_shell_splunk](https://github.com/0xjpuff/reverse_shell_splunk) <small>(0.04k ⭐, 2018 🪦)</small>.
+There are multiple ways of running code. We can use scripted input such as with [reverse_shell_splunk](https://github.com/0xjpuff/reverse_shell_splunk) <small>(0.1k ⭐, 2018 🪦)</small>.
 
 To target a Windows host, we need to configure the `run.ps1` script.
 

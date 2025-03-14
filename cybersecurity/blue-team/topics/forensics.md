@@ -22,7 +22,7 @@ These categories further involve tasks such as:
 
 Additional Notes:
 
-* [ForensicsTools](https://github.com/mesquidar/ForensicsTools) <small>(0.8k ⭐)</small>
+* [ForensicsTools](https://github.com/mesquidar/ForensicsTools) <small>(1.2k ⭐)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -40,11 +40,11 @@ Additional Notes:
 To create a memory dump, you can use:
 
 * [DumpIt.exe](https://www.aldeid.com/wiki/Dumpit)
-* [WinPmem](https://github.com/Velocidex/WinPmem) <small>(0.6k ⭐)</small>
+* [WinPmem](https://github.com/Velocidex/WinPmem) <small>(0.8k ⭐)</small>
 * [Redline](https://fireeye.market/apps/211364)
 * [FTK Imager](https://www.exterro.com/ftk-imager)
 * [memdump](https://www.kali.org/tools/memdump/)
-* [LiME](https://github.com/504ensicsLabs/LiME) <small>(1.6k ⭐)</small>
+* [LiME](https://github.com/504ensicsLabs/LiME) <small>(1.8k ⭐)</small>
 * [JumpBag](https://sourceforge.net/projects/jumpbag/)
 * For VMWare, suspend the machine and locate the `.vmem`
 * ...
@@ -218,7 +218,7 @@ $ sqlite3 GestureRainbowTable.db 'Select * from RainbowTable where hash = "[...]
 
 You can use the following sources to find malware:
 
-* [theZoo](https://github.com/ytisf/theZoo) <small>(10.6k ⭐)</small>
+* [theZoo](https://github.com/ytisf/theZoo) <small>(11.7k ⭐)</small>
 * [virusshare](https://virusshare.com/) <small>(👻)</small>
 * [hybrid-analysis](https://www.hybrid-analysis.com/file-collections) <small>(👻)</small>
 * [malware-traffic-analysis](https://malware-traffic-analysis.net/) <small>(👻)</small>
@@ -248,7 +248,7 @@ $ ssdeep xxx.exe
 
 #### Malware Analysis Tools
 
-* [FLOSS](https://github.com/mandiant/flare-floss) <small>(3.0k ⭐)</small>
+* [FLOSS](https://github.com/mandiant/flare-floss) <small>(3.5k ⭐)</small>
 
 ```ps
 $ floss xxx.exe

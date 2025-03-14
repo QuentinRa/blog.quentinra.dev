@@ -17,7 +17,7 @@ Tasks to do are defined in guides provided by organizations such as [CIS](https:
 
 **Where can we find guides?** 🎓
 
-* [Awesome-security-hardening](https://github.com/decalage2/awesome-security-hardening) <small>(4.9k ⭐)</small> 
+* [Awesome-security-hardening](https://github.com/decalage2/awesome-security-hardening) <small>(5.7k ⭐)</small> 
 * [CIS Build Kits](https://learn.cisecurity.org/build-kits) <small>(GPOs or shell scripts)</small> and [Hardened Images](https://www.cisecurity.org/cis-hardened-images)... 
 * [Tenable](https://www.tenable.com/audits): CIS guides as checklists
 

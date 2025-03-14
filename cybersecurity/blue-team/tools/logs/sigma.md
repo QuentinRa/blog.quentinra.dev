@@ -4,7 +4,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[sigma](https://github.com/SigmaHQ/sigma) <small>(7.5k ⭐)</small> is a generic solutions to write log filtering rules for any SIEM. We write a YAML rule and use [pySigma](https://github.com/SigmaHQ/pySigma) <small>(0.4k ⭐)</small> or [uncoder](https://uncoder.io/) to compile it for any SIEM solution.
+[sigma](https://github.com/SigmaHQ/sigma) <small>(8.8k ⭐)</small> is a generic solutions to write log filtering rules for any SIEM. We write a YAML rule and use [pySigma](https://github.com/SigmaHQ/pySigma) <small>(0.4k ⭐)</small> or [uncoder](https://uncoder.io/) to compile it for any SIEM solution.
 
 ```yaml!
 title: XXX
