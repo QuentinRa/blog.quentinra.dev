@@ -4,7 +4,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[Social Engineering Toolkit (SET)](https://github.com/trustedsec/social-engineer-toolkit) <small>(10.1k ⭐)</small> is a CLI framework to perform social engineering attacks.
+[Social Engineering Toolkit (SET)](https://github.com/trustedsec/social-engineer-toolkit) <small>(11.6k ⭐)</small> is a CLI framework to perform social engineering attacks.
 
 ```ps
 $ sudo setoolkit

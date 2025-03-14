@@ -123,14 +123,14 @@ $ nth -t "some hash here"
 $ nth -f myhash
 ```
 
-* [haiti](https://github.com/noraj/haiti/) <small>(0.6k ⭐)</small>. Similar to Name-that-hash, different results.
+* [haiti](https://github.com/noraj/haiti/) <small>(0.8k ⭐)</small>. Similar to Name-that-hash, different results.
 
 ```ps
 # sudo gem install haiti-hash
 $ haiti "some hash here"
 ```
 
-* [hashID](https://github.com/psypanda/hashID) <small>(1.3k ⭐, 2015 🪦)</small>
+* [hashID](https://github.com/psypanda/hashID) <small>(1.4k ⭐, 2015 🪦)</small>
 
 ```ps
 $ cat myhash | hashid

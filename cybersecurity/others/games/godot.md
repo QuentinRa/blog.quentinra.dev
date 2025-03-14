@@ -8,12 +8,12 @@
 
 [Godot](https://github.com/godotengine/godot) is an open-source game engine. It supports 2D and 3D, and can compile binaries to Windows, Linux, macOS, Android, etc.
 
-* [GitHub](https://github.com/godotengine/godot) <small>(81.9k ⭐)</small>
+* [GitHub](https://github.com/godotengine/godot) <small>(95.1k ⭐)</small>
 * 📚 It uses the GDScript scripting languages
 * 📚 It supports C# scripts too
 </div><div>
 
-We can use [Godot RE Tools](https://github.com/bruvzg/gdsdecomp/) <small>(1.1k ⭐)</small> to reverse GDScripts, and extract assets such as images or DLL files.
+We can use [Godot RE Tools](https://github.com/bruvzg/gdsdecomp/) <small>(1.9k ⭐)</small> to reverse GDScripts, and extract assets such as images or DLL files.
 
 ```ps
 # Download RE Tools v0.6.2

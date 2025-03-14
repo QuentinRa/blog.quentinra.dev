@@ -7,11 +7,11 @@
 Minecraft is a game developed by Mojang Studios in the Java programming language. It's possible for users to configure a community server to host a minecraft server.
 
 * **Ports** 🐲: 25565 (TCP/UDP)
-* [wodxgod checklist](https://github.com/wodxgod/Griefing-Methods) <small>(0.2k ⭐, 👻)</small>
-* [b3pwn3d checklist](https://github.com/b3pwn3d/Minecraft-Griefing-Methods) <small>(0.01k ⭐, 👻)</small>
+* [wodxgod checklist](https://github.com/wodxgod/Griefing-Methods) <small>(0.3k ⭐, 👻)</small>
+* [b3pwn3d checklist](https://github.com/b3pwn3d/Minecraft-Griefing-Methods) <small>(0.02k ⭐, 👻)</small>
 </div><div>
 
-* [MCPTool](https://github.com/wrrulos/MCPTool) <small>(0.2k ⭐)</small>. It has a HUGE list of dependencies and doesn't work for internal minecraft servers <small>(e.g., during CTFs)</small>.
+* MCPTool <small>(originally open-source)</small>. It has a HUGE list of dependencies and doesn't work for internal minecraft servers <small>(e.g., during CTFs)</small>.
 
 ```shell!
 $ git clone https://github.com/wrrulos/MCPTool.git

@@ -26,9 +26,9 @@ Python is quite used in cryptography, because reasons like there are many librar
 * [DamnVulnerableCryptoApp](https://damnvulnerablecryptoapp.github.io/DamnVulnerableCryptoApp/) <small>(👻)</small>
 * [Cryptohack](https://cryptohack.org/) <small>(👻)</small>
 * [Coursera/Crypto](https://www.coursera.org/learn/crypto) <small>(👻)</small>
-* [cryptobook](https://github.com/nakov/practical-cryptography-for-developers-book) <small>(3.2k ⭐, 👻)</small>
+* [cryptobook](https://github.com/nakov/practical-cryptography-for-developers-book) <small>(3.6k ⭐, 👻)</small>
 * [EverythingCrypto](https://github.com/zademn/EverythingCrypto) <small>(0.2k ⭐, 👻)</small>
-* [crypto-attacks](https://github.com/jvdsn/crypto-attacks) <small>(0.8k ⭐, 👻)</small>
+* [crypto-attacks](https://github.com/jvdsn/crypto-attacks) <small>(1.0k ⭐, 👻)</small>
 </div></div>
 
 <hr class="sep-both">

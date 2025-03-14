@@ -136,7 +136,7 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [esaip ctf](https://ctf.esaip.org/), [HackSecuReims](https://hacksecureims.eu/), [TRACS](https://tracs.viarezo.fr/), [lactf](https://github.com/uclaacm/lactf-archive/tree/main)
 * [HTB Events](https://www.hackthebox.com/events/), [tjctf](https://tjctf.org/), [intigriti](https://bugology.intigriti.io/intigriti-monthly-challenges), [flare-on](https://flare-on.com/)
 * Kringlecon, Yogosha, Flag4all, TCP1P, ZITF, Patriot, ACS
-* [mkarmous](https://github.com/mohamedaymenkarmous/CTF) <small>(0.1k ⭐)</small>, [sajjadium](https://github.com/sajjadium/ctf-archives/tree/main) <small>(0.7k ⭐)</small>
+* [mkarmous](https://github.com/mohamedaymenkarmous/CTF) <small>(0.1k ⭐)</small>, [sajjadium](https://github.com/sajjadium/ctf-archives/) <small>(1.0k ⭐)</small>
 <br>
 
 **Not tested** 👻 - may be either theoretical, practical, or both.
