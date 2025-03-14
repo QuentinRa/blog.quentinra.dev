@@ -426,14 +426,13 @@ if (value != null) {
 
 <div class="row row-cols-lg-2"><div>
 
-* [anime.js](https://github.com/juliangarnier/anime/) (animations, 44k ⭐)
-* [typed.js](https://github.com/mattboldt/typed.js/) (typing, 12.6k ⭐)
-* [bideo.js](https://github.com/rishabhp/bideo.js) (video, 4.3k ⭐)
-* [particles.js](https://github.com/VincentGarreau/particles.js/) (show particules, 26.6k ⭐)
-* [GSAP](https://github.com/greensock/GSAP) (animations, 15.4k ⭐)
-* [createjs](https://github.com/createjs) (libraries)
-* [turn.js](https://github.com/blasten/turn.js) (book-like, 6.8k ⭐). See also [StPageFlip](https://github.com/Nodlik/StPageFlip) / [pdf-flipbook](https://github.com/erayakartuna/pdf-flipbook).
-* [d3.js](https://d3-graph-gallery.com/index.html) (plotting..., 104k ⭐)
+* [anime.js](https://github.com/juliangarnier/anime/) <small>(44k ⭐, animations)</small>
+* [typed.js](https://github.com/mattboldt/typed.js/) <small>(12.6k ⭐, typing)</small>
+* [particles.js](https://github.com/VincentGarreau/particles.js/) <small>(26.6k ⭐, particles)</small>
+* [GSAP](https://github.com/greensock/GSAP) <small>(15.4k ⭐, animations)</small>
+* [createjs](https://github.com/createjs) <small>(libraries)</small>
+* [turn.js](https://github.com/blasten/turn.js) <small>(6.8k ⭐, book-like)</small>. See also [StPageFlip](https://github.com/Nodlik/StPageFlip) / [pdf-flipbook](https://github.com/erayakartuna/pdf-flipbook).
+* [d3.js](https://d3-graph-gallery.com/index.html) <small>(104k ⭐, plotting)</small>
 </div><div>
 
 #### jQuery
@@ -442,7 +441,7 @@ A long time ago, [jQuery](https://github.com/jquery/jquery) was a popular librar
 
 ➡️ Bootstrap removed its jQuery dependencies in its 5th version, to make the library more lightweight.
 
-➡️ [jQuery.terminal](https://github.com/jcubic/jquery.terminal) (2.8k ⭐) | ️ [jQuery Migrate](https://github.com/jquery/jquery-migrate) (1.9k ⭐)
+➡️ [jQuery.terminal](https://github.com/jcubic/jquery.terminal) <small>(2.8k ⭐)</small> | ️ [jQuery Migrate](https://github.com/jquery/jquery-migrate) <small>(1.9k ⭐)</small>
 </div></div>
 
 <hr class="sep-both">

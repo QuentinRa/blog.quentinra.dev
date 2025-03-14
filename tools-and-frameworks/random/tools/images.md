@@ -18,7 +18,6 @@ See also: [Game Assets](/games/_knowledge/game-tools/index.md#game-assets).
 * [Wallpaper Abyss](https://wall.alphacoders.com/)
 * [vecteezy](https://www.vecteezy.com/)
 * [Haikei](https://haikei.app/) (👻)
-* [kronbits](https://kronbits.itch.io/backgrounds)
 
 <br>
 

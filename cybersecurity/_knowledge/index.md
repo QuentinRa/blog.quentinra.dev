@@ -181,7 +181,6 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [0xrick](https://0xrick.github.io/categories/#hack-the-box)
 * [TheDutchHacker](https://www.thedutchhacker.com/category/write-ups/hack-the-box/)
 * [h0axhacks](https://h0axhacks.com/)
-* [bluewalle](https://bluewalle.github.io/)
 * [sh1n0bi](https://sh1n0bi.github.io/blog)
 * [complexsecurity](https://complexsecurity.io/hack-the-box)
 * [reboare](https://reboare.github.io)
@@ -191,7 +190,6 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 
 * [dhilipsanjay](https://dhilipsanjay.gitbook.io/ctfs/) <small>(60+, 2024)</small>
 * [TheDutchHacker](https://www.thedutchhacker.com/category/write-ups/tryhackme/)
-* [bluewalle](https://bluewalle.github.io/)
 * [fr33s0ul](https://fr33s0ul.tech/tag/ctf/)
 * [nairitya03](https://nairitya03.github.io/CTF-WriteUps/)
 * [0xv3r4x](https://0xv3r4x.github.io/)
@@ -315,7 +313,6 @@ This is a list of blogs that I want to check out one day. There are too many pil
 </div><div>
 
 * [bryce-simpson](https://bryce-simpson.netlify.app/)
-* [hambyhacks](https://hambyhacks.github.io/)
 * [6rian](https://www.6rian.com/)
 * [cybersecbits](https://cybersecbits.com/)
 * [jarrodrizor](https://jarrodrizor.com/)

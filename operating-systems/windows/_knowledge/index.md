@@ -23,7 +23,6 @@ Some dates about the latest versions
 * [Windows 11](https://www.microsoft.com/en-us/software-download/windows11) <small>(official)</small>
 * [Windows 11 Enterprise](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise) <small>(official,  free, 180 days)</small>
 * [Windows 11 Enterprise (dev)](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/) <small>(official, free)</small>
-* [Windows 7/8/10](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/) <small>(official, free,  90 days, IEUser/Passw0rd!)</small>
 * [Windows XP Professional](https://www.microsoft.com/en-us/download/details.aspx?id=31791) <small>(official, free)</small>
 * [Windows XP Mode](https://download.cnet.com/Windows-XP-Mode/3000-18513_4-77683344.html) <small>(was available for free on the official website)</small> | [Help](https://helpdeskgeek.com/virtualization/how-to-set-up-a-windows-xp-virtual-machine-for-free/)
 * [Windows 10/11/Server 2019/Server 2022 (student)](https://azureforeducation.microsoft.com/devtools) <small>(free for students, official, activation key)</small>

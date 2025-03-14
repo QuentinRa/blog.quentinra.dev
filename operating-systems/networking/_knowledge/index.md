@@ -277,7 +277,6 @@ Network segmentation
 Random
 
 * Streaming network telemetry
-* [faidherbe](https://www.faidherbe.org/tutoriel/)
 
 Traffic mirroring: See also NetFlow to collect and analyze network traffic data.
 
