@@ -510,7 +510,7 @@ $ nmap IP --script "*brute*" --script-args userdb=users.lst,passdb=pass.lst
 
 #### Banner grabbing
 
-See also: [banner grabbing](/cybersecurity/red-team/s2.discovery/techniques/network/banner_grabbing.md).
+See also: [banner grabbing](/cybersecurity/red-team/s2.discovery/index.md#investigate-hosts--banner-grabbing).
 
 ```ps
 $ nmap [...] --script=banner
