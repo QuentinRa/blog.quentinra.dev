@@ -4,7 +4,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[rConfig](https://www.rconfig.com/) is a network configuration management tool. At least from the [GitHub](https://github.com/rconfig/rconfig) <small>(0.5k ⭐)</small> repository, it doesn't seem very popular.
+[rConfig](https://www.rconfig.com/) is a network configuration management tool. At least from the [GitHub](https://github.com/rconfig/rconfig) <small>(0.1k ⭐)</small> repository, it doesn't seem very popular.
 
 * Look for web interface on port 80
 * Test default credentials `admin:admin`

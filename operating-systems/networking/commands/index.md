@@ -386,7 +386,7 @@ A popular tool to monitor a network. See [Wireshark](/operating-systems/networki
 
 [**termshark** - monitor network]
 
-[Termshark](https://github.com/gcla/termshark) <small>(8.6k ⭐)</small> is a text-based user interface similar to wireshark.
+[Termshark](https://github.com/gcla/termshark) <small>(9.3k ⭐)</small> is a text-based user interface similar to wireshark.
 
 ++++++
 

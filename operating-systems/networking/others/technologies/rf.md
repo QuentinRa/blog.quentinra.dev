@@ -72,7 +72,7 @@ Stuff that I found, but never read/used yet.
 * [rftap](https://rftap.github.io/)
 </div><div>
 
-* [Universal Radio Hacker](https://github.com/jopohl/urh) <small>(10.4k ⭐)</small>
+* [Universal Radio Hacker](https://github.com/jopohl/urh) <small>(11.3k ⭐)</small>
 
 ```ps
 $ DEST="$HOME/tools/urh"

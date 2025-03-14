@@ -4,8 +4,8 @@
 
 GLPi is a popular open-source it management platform. It can be used for a variety of use cases going from host management to ticketing.
 
-* [Official website](https://glpi-project.org/) <small>(4.2k ⭐)</small>
-* [Github](https://github.com/glpi-project/glpi) <small>(4.2k ⭐)</small>
+* [Official website](https://glpi-project.org/)
+* [Github](https://github.com/glpi-project/glpi) <small>(4.6k ⭐)</small>
 * MySQL/MariaDB and PHP
 
 GLPi is commonly found in french enterprises even if they have another solutions globally, often for a specific use case.

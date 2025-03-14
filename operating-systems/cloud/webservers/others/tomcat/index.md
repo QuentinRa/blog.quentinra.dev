@@ -4,7 +4,7 @@
 
 [Apache Tomcat](https://tomcat.apache.org/) is an open-source web server. It provides a Java HTTP web server environment in which Java code can run.
 
-* [GitHub](https://github.com/apache/tomcat) <small>(7.2k ⭐)</small>
+* [GitHub](https://github.com/apache/tomcat) <small>(7.7k ⭐)</small>
 * [Documentation](https://tomcat.apache.org/tomcat-11.0-doc/index.html) <small>(⛪)</small>
 
 The version 11 is still in development. The previous major versions are version 10 <small>(2021)</small>, version 9 <small>(2018)</small>, and version 8 <small>(2016)</small>.
