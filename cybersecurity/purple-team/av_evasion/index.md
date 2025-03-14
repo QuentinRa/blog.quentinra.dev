@@ -62,7 +62,7 @@ A few obfuscators for JavaScript:
 
 You may try [unpacker](https://matthewfl.com/unPacker.html) to unpack code while you can try [relative.im](https://deobfuscate.relative.im/) or [deobfuscate.io](https://deobfuscate.io/)/[obf-io](https://obf-io.deobfuscate.io/) to undo simple obfuscation.
 
-Native code or using a [abstract syntax tree](https://astexplorer.net/) are also possible. You can decode an AST using [escodegen](https://github.com/estools/escodegen) <small>(2.6k ⭐)</small>.
+Native code or using a [abstract syntax tree](https://astexplorer.net/) are also possible. You can decode an AST using [escodegen](https://github.com/estools/escodegen) <small>(2.7k ⭐)</small>.
 
 ```js!
 const { generate } = require('escodegen');

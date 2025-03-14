@@ -81,7 +81,7 @@ $ jar -cmf raw/META-INF/MANIFEST.MF xxx.jar raw
 [![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 [![blocky](../../_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
 
-You can use [jd-gui](https://github.com/java-decompiler/jd-gui) <small>(13.4k ⭐)</small> to reverse a Java application. Run `jd-gui`, and oad the JAR in it. You can then either:
+You can use [jd-gui](https://github.com/java-decompiler/jd-gui) <small>(14.4k ⭐)</small> to reverse a Java application. Run `jd-gui`, and oad the JAR in it. You can then either:
 
 * Explore the reversed sources from `jd-gui`
 * Use `File> Save all sources` and read/modify them in your editor
@@ -90,8 +90,8 @@ You can use [jd-gui](https://github.com/java-decompiler/jd-gui) <small>(13.4k �
 
 Other well-known decompilers:
 
-* [Recaf](https://github.com/Col-E/Recaf) <small>(5.5k ⭐)</small>
-* [JetBrains IntelliJ](https://github.com/JetBrains/intellij-community) <small>(16.4k ⭐)</small>
+* [Recaf](https://github.com/Col-E/Recaf) <small>(6.3k ⭐)</small>
+* [JetBrains IntelliJ](https://github.com/JetBrains/intellij-community) <small>(17.7k ⭐)</small>
 </div></div>
 
 <hr class="sep-both">
@@ -113,7 +113,7 @@ You can work on reversing .NET executable and DLL files using the following tool
 
 [![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 
-You can use [de4dot](https://github.com/de4dot/de4dot) <small>(6.7k ⭐, 2020 🪦)</small> to reverse your binary. On Windows, drag and drop your binary onto the de4dot executable.
+You can use [de4dot](https://github.com/de4dot/de4dot) <small>(7.1k ⭐, 2020 🪦)</small> to reverse your binary. On Windows, drag and drop your binary onto the de4dot executable.
 
 <br>
 
@@ -121,7 +121,7 @@ You can use [de4dot](https://github.com/de4dot/de4dot) <small>(6.7k ⭐, 2020 �
 
 [![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 
-You can use [dnSpy](https://github.com/dnSpy/dnSpy) <small>(25.2k ⭐, 2020 🪦)</small> to explore .NET source code.
+You can use [dnSpy](https://github.com/dnSpy/dnSpy) <small>(27.2k ⭐, 2020 🪦)</small> to explore .NET source code.
 
 <br>
 
@@ -136,9 +136,9 @@ You can use [JetBrains dotPeek](https://www.jetbrains.com/decompiler/) <small>(f
 
 [![adventofcyber2](../../_badges/thm/adventofcyber2/day18.svg)](https://tryhackme.com/room/adventofcyber2)
 
-[ILSpy](https://github.com/icsharpcode/ILSpy) <small>(19.9k ⭐)</small> is the most popular open-source .NET decompiler. It can be integrated in editors such as [VSCode](https://code.visualstudio.com/) or standalone editors.
+[ILSpy](https://github.com/icsharpcode/ILSpy) <small>(22.5k ⭐)</small> is the most popular open-source .NET decompiler. It can be integrated in editors such as [VSCode](https://code.visualstudio.com/) or standalone editors.
 
-On Linux, you can use the [AvaloniaILSpy](https://github.com/icsharpcode/AvaloniaILSpy) <small>(1.4k ⭐)</small> port.
+On Linux, you can use the [AvaloniaILSpy](https://github.com/icsharpcode/AvaloniaILSpy) <small>(1.6k ⭐)</small> port.
 
 ```shell!
 $ cd /tmp
@@ -163,7 +163,7 @@ Opening the executable will automatically load its .NET solutions. You can save 
 
 Python bytecode files `.pyc` or `.pyo` for optimized bytecode are compiled cross-platform code that `python` can execute.
 
-For `Python <= 3.11`, you can use [pycdc](https://github.com/zrax/pycdc) <small>(2.6k ⭐)</small>.
+For `Python <= 3.11`, you can use [pycdc](https://github.com/zrax/pycdc) <small>(3.6k ⭐)</small>.
 
 ```ps
 $ git clone https://github.com/zrax/pycdc.git && cd pycdc
@@ -171,7 +171,7 @@ $ mkdir build && cd build && cmake .. && make -j $(nproc)
 $ ./pycdc ./xxx.pyc
 ```
 
-For `Python <= 3.8`, you can use [uncompyle6](https://github.com/rocky/python-uncompyle6) <small>(3.5k ⭐)</small>:
+For `Python <= 3.8`, you can use [uncompyle6](https://github.com/rocky/python-uncompyle6) <small>(3.9k ⭐)</small>:
 
 ```ps
 $ pipx install git+https://github.com/rocky/python-uncompyle6
@@ -188,7 +188,7 @@ dis.dis(marshal.load(open('xxx.pyc', 'rb')))
 ```
 Alternatively, python code can be bundled in a executable that doesn't require the `python` engine using [PyInstaller](https://pyinstaller.org/en/stable/).
 
-You can extract its contents using [pyinstxtractor](https://github.com/extremecoders-re/pyinstxtractor) <small>(2.3k ⭐)</small>.
+You can extract its contents using [pyinstxtractor](https://github.com/extremecoders-re/pyinstxtractor) <small>(3.2k ⭐)</small>.
 </div></div>
 
 <hr class="sep-both">
@@ -206,7 +206,7 @@ It's possible for code to exist within a DEX file but not detected nor reversed 
 
 #### JADX — APK+Dex Decompiler/Disassembler
 
-You can use [jadx](https://github.com/skylot/jadx) <small>(38.5k ⭐)</small> to decompile APK and DEX files to Java.
+You can use [jadx](https://github.com/skylot/jadx) <small>(43.1k ⭐)</small> to decompile APK and DEX files to Java.
 
 ```ps
 $ sudo apt install -y jadx
@@ -235,15 +235,15 @@ $ unpack_bootimg --boot_img boot.img
 $ cd out && gunzip -c ramdisk | cpio -idmv
 ```
 
-Additional tools: [unpackbootimg](https://github.com/anestisb/android-unpackbootimg/) <small>(0.2k ⭐)</small>, [mkbootimg_tools](https://github.com/xiaolu/mkbootimg_tools) <small>(0.5k ⭐, 2016 🪦)</small> or [abootimg](https://github.com/ggrandou/abootimg) <small>(0.1k ⭐, 2012 🪦)</small>.
+Additional tools: [unpackbootimg](https://github.com/anestisb/android-unpackbootimg/) <small>(0.2k ⭐)</small>, [mkbootimg_tools](https://github.com/xiaolu/mkbootimg_tools) <small>(0.6k ⭐, 2016 🪦)</small> or [abootimg](https://github.com/ggrandou/abootimg) <small>(0.1k ⭐, 2012 🪦)</small>.
 
 #### Additional Notes
 
 * The [dexdump](https://packages.debian.org/stable/dexdump) list methods/classes in a DEX file
 * The [010editor](https://www.sweetscape.com/download/010editor/) hex editor is a paid tool to analyze a DEX file 
-* [bytecode-viewer](https://github.com/Konloch/bytecode-viewer) <small>(14.3k ⭐, 👻)</small>
-* [Apktool](https://github.com/iBotPeaches/Apktool) <small>(18.6k ⭐, 👻)</small>
-* [dex2jar](https://github.com/pxb1988/dex2jar) <small>(11.8k ⭐, 👻)</small>
+* [bytecode-viewer](https://github.com/Konloch/bytecode-viewer) <small>(14.93k ⭐, 👻)</small>
+* [Apktool](https://github.com/iBotPeaches/Apktool) <small>(21.5k ⭐, 👻)</small>
+* [dex2jar](https://github.com/pxb1988/dex2jar) <small>(12.6k ⭐, 👻)</small>
 * [intro-to-mobile-pentesting](https://www.hackthebox.com/blog/intro-to-mobile-pentesting)
 </div><div>
 
@@ -484,7 +484,7 @@ $ docker run -it -v $(pwd):/builds boomrangcli:latest ch1.bin
 
 [![adventofcyber2](../../_badges/thm/adventofcyber2/day17.svg)](https://tryhackme.com/room/adventofcyber2)
 
-[Radare](https://github.com/radareorg/radare2) <small>(19.4k ⭐)</small> is similar to GDB, but it somewhat easier to use if we only need to disassemble the code.
+[Radare](https://github.com/radareorg/radare2) <small>(21.3k ⭐)</small> is similar to GDB, but it somewhat easier to use if we only need to disassemble the code.
 
 ```shell!
 $ rabin2 -I xxx.bin # get information
@@ -538,7 +538,7 @@ While still in progress, look [here for PE notes](/programming-languages/low-lev
 [![attacking_common_applications](../../_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 [![introduction_to_malware_analysis](../../_badges/htb/introduction_to_malware_analysis.svg)](https://academy.hackthebox.com/course/preview/introduction-to-malware-analysis)
 
-You can use [x64dbg](https://github.com/x64dbg/x64dbg) <small>(42.9k ⭐)</small> to debug binaries.
+You can use [x64dbg](https://github.com/x64dbg/x64dbg) <small>(45.6k ⭐)</small> to debug binaries.
 
 * You can navigate to options to define the breakpoints. For instance, uncheck everything except Exit Breakpoint.
 * The memory map tab can be used to find stuff like [memory-mapped files](https://en.wikipedia.org/wiki/Memory-mapped_file) <small>(a file mapped to a memory region like a buffer)</small>.
@@ -626,7 +626,7 @@ $ binwalk -E -N firmware.bin
 
 [![adventofcyber4](../../_badges/thm/adventofcyber4/day20.svg)](https://tryhackme.com/room/adventofcyber4)
 
-* [Firmware ModKit (FMK)](https://github.com/rampageX/firmware-mod-kit) <small>(0.8k ⭐)</small>: it uses binwalk to extract the filesystem. Can repack the modified firmware.
+* [Firmware ModKit (FMK)](https://github.com/rampageX/firmware-mod-kit) <small>(0.9k ⭐)</small>: it uses binwalk to extract the filesystem. Can repack the modified firmware.
 
 ```shell!
 $ sudo apt install -y firmware-mod-kit
@@ -634,7 +634,7 @@ $ /opt/firmware-mod-kit/trunk/extract-firmware.sh firmware.bin
 $ cd fmk/rootfs/gpg/ # find keys, and crack the passphrase
 ```
 
-* [firmwalker](https://github.com/craigz28/firmwalker) <small>(1.0k ⭐)</small>: search for juicy files in the firmware
+* [firmwalker](https://github.com/craigz28/firmwalker) <small>(1.1k ⭐)</small>: search for juicy files in the firmware
 </div></div>
 
 <hr class="sep-both">

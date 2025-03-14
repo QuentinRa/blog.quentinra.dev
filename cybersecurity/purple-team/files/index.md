@@ -114,7 +114,7 @@ $ stegoveritas file.png
 
 ⚠️ If prompted for a password, **try a blank password**.
 
-Otherwise, you may try to brute force the password using tools such as [stegseek](https://github.com/RickdeJager/stegseek) <small>(0.9k ⭐)</small> or [StegCracker](https://github.com/Paradoxis/StegCracker) <small>(0.5k ⭐, 2020 🪦)</small>.
+Otherwise, you may try to brute force the password using tools such as [stegseek](https://github.com/RickdeJager/stegseek) <small>(1.1k ⭐)</small> or [StegCracker](https://github.com/Paradoxis/StegCracker) <small>(0.6k ⭐, 2020 🪦)</small>.
 
 ```ps
 $ stegseek file wordlist
@@ -133,7 +133,7 @@ $ stegcracker file wordlist
 [![exif_thumbnail](../../_badges/rootme/steganography/exif_thumbnail.svg)](https://www.root-me.org/en/Challenges/Steganography/EXIF-Thumbnail)
 [![kitty_spy](../../_badges/rootme/steganography/kitty_spy.svg)](https://www.root-me.org/en/Challenges/Steganography/Kitty-spy)
 
-Using [binwalk](https://github.com/ReFirmLabs/binwalk) <small>(10.1k ⭐)</small> you can investigate nested files:
+Using [binwalk](https://github.com/ReFirmLabs/binwalk) <small>(12.2k ⭐)</small> you can investigate nested files:
 
 ```ps
 $ binwalk file.png
@@ -198,7 +198,7 @@ Click on the filename, and select "spectrogram." If the text is not readable, yo
 
 #### sonic-visualiser
 
-You can also use [sonic-visualiser](https://github.com/sonic-visualiser/sonic-visualiser) <small>(0.4k ⭐)</small>:
+You can also use [sonic-visualiser](https://github.com/sonic-visualiser/sonic-visualiser) <small>(0.6k ⭐)</small>:
 
 ```shell!
 $ sudo apt install sonic-visualiser
