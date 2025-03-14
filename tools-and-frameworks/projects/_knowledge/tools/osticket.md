@@ -6,7 +6,7 @@
 
 [osticket](https://osticket.com/) is an open-source ticketing system. It is written in PHP and uses a MySQL  database as the backend.
 
-* [GitHub](https://github.com/osTicket/osTicket) <small>(3.0k ⭐)</small>
+* [GitHub](https://github.com/osTicket/osTicket) <small>(3.4k ⭐)</small>
 * [Documentation](https://docs.osticket.com/) <small>(⛪)</small>
 
 📚 You can identify osTicket from the `OSTSESSID` cookie.

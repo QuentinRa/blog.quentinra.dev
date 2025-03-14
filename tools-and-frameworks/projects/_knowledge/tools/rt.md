@@ -4,7 +4,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[Request Tracker](https://bestpractical.com/request-tracker/) is an [open-source](https://github.com/bestpractical/rt) <small>(0.8k ⭐)</small> issue tracker developed by Best Practical. The pentesting usages are a copy of [osTicket](osticket.md) usages.
+[Request Tracker](https://bestpractical.com/request-tracker/) is an [open-source](https://github.com/bestpractical/rt) <small>(1.0k ⭐)</small> issue tracker developed by Best Practical. The pentesting usages are a copy of [osTicket](osticket.md) usages.
 
 You can try to [brute force](/cybersecurity/red-team/s2.discovery/techniques/websites/account.md) credentials:
 

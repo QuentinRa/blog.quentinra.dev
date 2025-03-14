@@ -17,12 +17,12 @@
 * [codevscolor](https://www.codevscolor.com/) <small>(web, mobile...)</small>
 * [learnxinyminutes](https://learnxinyminutes.com/) <small>(many)</small>
 * [adamtheautomator](https://adamtheautomator.com/tutorials/) <small>(???)</small>
-* [sindresorhus/awesome](https://github.com/sindresorhus/awesome)  <small>(230k ⭐)</small>
-* [NARKOZ/guides](https://github.com/NARKOZ/guides) <small>(2k ⭐, guidelines)</small>
-* [palash25/best-practices](https://github.com/palash25/best-practices-checklist) <small>(0.9k ⭐)</small>
-* [the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) <small>(85k ⭐)</small>
-* [sdmg15/websites](https://github.com/sdmg15/Best-websites-a-programmer-should-visit) <small>(50k ⭐)</small>
-* [theAlgorithms](https://github.com/theAlgorithms) <small>(150k ⭐)</small>
+* [sindresorhus/awesome](https://github.com/sindresorhus/awesome)  <small>(+350k ⭐)</small>
+* [NARKOZ/guides](https://github.com/NARKOZ/guides) <small>(2.2k ⭐, guidelines)</small>
+* [palash25/best-practices](https://github.com/palash25/best-practices-checklist) <small>(1.0k ⭐)</small>
+* [the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) <small>(160.5k ⭐)</small>
+* [sdmg15/websites](https://github.com/sdmg15/Best-websites-a-programmer-should-visit) <small>(66.3k ⭐)</small>
+* [theAlgorithms](https://github.com/theAlgorithms/Python) <small>(+200k ⭐)</small>
 * [smashingmagazine](https://www.smashingmagazine.com/) <small>(many)</small>
 * [gitconnected](https://gitconnected.com/) <small>(aggregate websites)</small>
 * [devglan](https://www.devglan.com/programming/programming-tutorials) <small>(many)</small>
@@ -211,8 +211,8 @@
 
 **Practice**
 
-* [app-ideas](https://github.com/florinpop17/app-ideas) (60k ⭐)
-* [project-based-learning](https://github.com/practical-tutorials/project-based-learning) (84k ⭐)
+* [app-ideas](https://github.com/florinpop17/app-ideas) <small>(82.5k ⭐)</small>
+* [project-based-learning](https://github.com/practical-tutorials/project-based-learning) <small>(+220k ⭐)</small>
 * [leetcode](https://leetcode.com/)
 * [codewars](https://www.codewars.com/)
 * [hackerrank](https://www.hackerrank.com/)
