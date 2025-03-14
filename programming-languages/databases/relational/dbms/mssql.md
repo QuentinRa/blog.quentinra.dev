@@ -53,7 +53,7 @@ $ impacket-wmiexec username:password@IP -shell-type powershell
 
 #### Windows client — PowerUpSQL
 
-On Windows, you can use [PowerUpSQL](https://github.com/NetSPI/PowerUpSQL) <small>(2.3k ⭐)</small>.
+On Windows, you can use [PowerUpSQL](https://github.com/NetSPI/PowerUpSQL) <small>(2.5k ⭐)</small>.
 
 ```ps
 PS> Import-Module .\PowerUpSQL.ps1

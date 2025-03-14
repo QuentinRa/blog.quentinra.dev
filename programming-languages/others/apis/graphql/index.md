@@ -10,7 +10,7 @@
 [GraphQL](https://en.wikipedia.org/wiki/GraphQL) (Graph Query Language) is an open-source query language for APIs. It's used by GitHub, Shopify, and Facebook internally.
 
 * [GraphQL Documentation](https://graphql.org/) <small>(⛪)</small>
-* [GitHub](https://github.com/graphql/graphql-js) <small>(19.8k ⭐)</small>
+* [GitHub](https://github.com/graphql/graphql-js) <small>(20.2k ⭐)</small>
 
 It was designed to provide a more efficient, powerful, and flexible alternative to traditional REST APIs. It solves a problem of REST APIs which is under- and over-fetching.
 
@@ -44,13 +44,12 @@ query {
 
 <div class="row row-cols-lg-2"><div>
 
-[GraphQLMap](https://github.com/swisskyrepo/GraphQLmap) <small>(1.3k ⭐, 2023 🪦)</small> was developed by the owner of PayloadsAllTheThings. It allows us to send GraphQL queries to an endpoint rather easily. It also provide a few utilities.
+[GraphQLMap](https://github.com/swisskyrepo/GraphQLmap) <small>(1.4k ⭐, 2023 🪦)</small> was developed by the owner of PayloadsAllTheThings. It allows us to send GraphQL queries to an endpoint rather easily. It also provide a few utilities.
 
 ```shell!
 $ pipx install git+https://github.com/swisskyrepo/GraphQLmap
 $ pipx runpip graphqlmap install requests
-$ graphqlmap -h
-```
+$ graphqlmap -h.1``
 
 It can dump the schema and present it in a nice representation.
 </div><div>
@@ -102,7 +101,7 @@ After identifying the types and their arguments, we can query them:
 
 #### Introspection — clairvoyance
 
-[clairvoyance](https://github.com/nikitastupin/clairvoyance) <small>(1.0k ⭐)</small> can be used to dump the schema:
+[clairvoyance](https://github.com/nikitastupin/clairvoyance) <small>(1.1k ⭐)</small> can be used to dump the schema:
 
 ```shell!
 $ pipx install git+https://github.com/nikitastupin/clairvoyance

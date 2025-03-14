@@ -25,7 +25,7 @@ WHERE username = 'admin';
 
 **Useful tools** 🐲
 
-* [dbeaver](https://github.com/dbeaver/dbeaver) <small>(36.8k ⭐)</small>: multi-database GUI client
+* [dbeaver](https://github.com/dbeaver/dbeaver) <small>(42.2k ⭐)</small>: multi-database GUI client
 </div></div>
 
 <hr class="sep-both">

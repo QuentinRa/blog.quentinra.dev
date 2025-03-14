@@ -4,7 +4,7 @@
 
 The [Go Programming Language](https://go.dev/) is a compiled high-level programming language designed at Google.
 
-* [Open-Source Repository](https://github.com/golang/go) <small>(119.0k ⭐)</small>
+* [Open-Source Repository](https://github.com/golang/go) <small>(126.4k ⭐)</small>
 * [GoLang User Manual](https://go.dev/doc/) <small>(🏫)</small>
 * [GoLang Examples](https://golangexample.com/) <small>(⛪)</small>
 

@@ -104,7 +104,7 @@ $sql_request = mysqli_escape_string($connexion, $sql_request);
 
 PHPMyAdmin is an open-source interface to MySQL and MariaDB databases. It's often shipped with tools such as WAMP or XAMPP.
 
-* [GitHub](https://github.com/phpmyadmin/phpmyadmin) <small>(7.2k ⭐)</small>
+* [GitHub](https://github.com/phpmyadmin/phpmyadmin) <small>(7.4k ⭐)</small>
 * [Documentation](https://docs.phpmyadmin.net/en/latest/) <small>(⛪)</small>
 
 #### PHPMyAdmin — Enumeration

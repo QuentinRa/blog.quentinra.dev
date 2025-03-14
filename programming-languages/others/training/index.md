@@ -18,7 +18,7 @@
 * [learnxinyminutes](https://learnxinyminutes.com/) <small>(many)</small>
 * [adamtheautomator](https://adamtheautomator.com/tutorials/) <small>(???)</small>
 * [sindresorhus/awesome](https://github.com/sindresorhus/awesome)  <small>(230k ⭐)</small>
-* [NARKOZ/guides](https://github.com/NARKOZ/guides) <small>(guidelines, 2k ⭐)</small>
+* [NARKOZ/guides](https://github.com/NARKOZ/guides) <small>(2k ⭐, guidelines)</small>
 * [palash25/best-practices](https://github.com/palash25/best-practices-checklist) <small>(0.9k ⭐)</small>
 * [the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) <small>(85k ⭐)</small>
 * [sdmg15/websites](https://github.com/sdmg15/Best-websites-a-programmer-should-visit) <small>(50k ⭐)</small>

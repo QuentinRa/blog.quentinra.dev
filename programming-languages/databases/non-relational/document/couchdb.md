@@ -7,7 +7,7 @@
 
 [Apache CouchDB](https://docs.couchdb.org/en/stable/) is an open-source NoSQL database implement the document-based model store with JSON documents.
 
-* [GitHub Repository](https://github.com/apache/couchdb) <small>(6.0k ⭐)</small>
+* [GitHub Repository](https://github.com/apache/couchdb) <small>(6.4k ⭐)</small>
 * **Port(s)** 🐲: 5984 <small>(HTTP)</small>, 6984 <small>(HTTPS)</small>
 
 The database may have a management page at `/_utils`.

@@ -100,7 +100,7 @@ To **quit**:
 
 [![attacking_common_applications](../../../../cybersecurity/_badges/htb/attacking_common_applications.svg)](https://academy.hackthebox.com/course/preview/attacking-common-applications)
 
-You can use [peda](https://github.com/longld/peda) <small>(5.7k ⭐, 2021 🪦)</small> to debug Linux binaries. It's a Python script over GDB that make it easier to use GDB.
+You can use [peda](https://github.com/longld/peda) <small>(6.0k ⭐, 2021 🪦)</small> to debug Linux binaries. It's a Python script over GDB that make it easier to use GDB.
 
 ```shell!
 $ git clone https://github.com/longld/peda.git ~/peda
@@ -111,7 +111,7 @@ $ gdb ./some_program
 
 #### GDB GEF Assistance
 
-Refer to [GEF](https://github.com/hugsy/gef) <small>(6.4k ⭐)</small>.
+Refer to [GEF](https://github.com/hugsy/gef) <small>(7.3k ⭐)</small>.
 
 ```shell!
 gef> set {char [14]} 0xXXX = "Hello, world!"
@@ -120,7 +120,7 @@ gef> vmmap
 
 #### GDB pwndbg Assistance
 
-Refer to [pwndbg](https://github.com/pwndbg/pwndbg) <small>(6.6k ⭐)</small>.
+Refer to [pwndbg](https://github.com/pwndbg/pwndbg) <small>(8.3k ⭐)</small>.
 
 #### Additional Commands
 

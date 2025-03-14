@@ -12,7 +12,7 @@ To run SQL, either use `sqlite3 users.db` to open a prompt, or directly run a qu
 * SQLite version v2 🔎: `select sqlite_version()`
 * Help 🃏: `.help`
 
-✍️ You can use [sqlitebrowser](https://github.com/sqlitebrowser/sqlitebrowser) <small>(19.7k ⭐)</small> to visualize the database.
+✍️ You can use [sqlitebrowser](https://github.com/sqlitebrowser/sqlitebrowser) <small>(22.0k ⭐)</small> to visualize the database.
 </div><div>
 
 Common commands:
@@ -31,7 +31,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-Open An SQLite Database On Windows Using [PSSQLite](https://github.com/RamblingCookieMonster/PSSQLite) <small>(1.0k ⭐)</small>
+Open An SQLite Database On Windows Using [PSSQLite](https://github.com/RamblingCookieMonster/PSSQLite) <small>(0.3k ⭐)</small>
 
 ```ps
 PS> Set-ExecutionPolicy Bypass -Scope Process
