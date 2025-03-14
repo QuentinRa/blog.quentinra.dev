@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[Crowbar](https://github.com/galkan/crowbar) <small>(1.3k ⭐, 2020 🪦)</small> is an open-source tool mainly used to brute force network services passwords such as [RDP](/operating-systems/networking/protocols/rdp.md).
+[Crowbar](https://github.com/galkan/crowbar) <small>(1.4k ⭐, 2020 🪦)</small> is an open-source tool mainly used to brute force network services passwords such as [RDP](/operating-systems/networking/protocols/rdp.md).
 
 While this tool is not maintained anymore, it's faster than alternative tools such as hydra when we need to brute force RDP during a CTF.
 

@@ -4,7 +4,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[subbrute](https://github.com/TheRook/subbrute) <small>(3.2k ⭐, 2017 🪦)</small> is a tool that may be used to enumerate DNS information of a domain.
+[subbrute](https://github.com/TheRook/subbrute) <small>(3.4k ⭐, 2017 🪦)</small> is a tool that may be used to enumerate DNS information of a domain.
 
 To brute force subdomains:
 

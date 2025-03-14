@@ -19,7 +19,7 @@ You can find the complete list of CVEs for the Linux Kernel [here](https://www.l
 
 There are scripts to find vulnerable kernels, but they may generate false positives or false negatives.
 
-* [linux-exploit-suggester](https://github.com/mzet-/linux-exploit-suggester) <small>(5.6k ⭐)</small>: still updated with new exploits
+* [linux-exploit-suggester](https://github.com/mzet-/linux-exploit-suggester) <small>(5.8k ⭐)</small>: still updated with new exploits
 * [Linux_Exploit_Suggester](https://github.com/InteliSecureLabs/Linux_Exploit_Suggester) <small>(1.8k ⭐)</small>: up to 4.x excluded
 * [Linux Kernel Exploit Suggester 2](https://github.com/jondonas/linux-exploit-suggester-2) <small>(1.9k ⭐)</small>: up to 5.x excluded
 </div></div>

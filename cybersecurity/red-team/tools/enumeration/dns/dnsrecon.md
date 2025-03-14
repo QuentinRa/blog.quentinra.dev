@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[DNSRecon](https://github.com/darkoperator/dnsrecon) <small>(2.5k ⭐)</small> is a Python script that can be used to brute force vhosts, and do OSINT checks <small>(std, bing, yandex, and crt)</small>.
+[DNSRecon](https://github.com/darkoperator/dnsrecon) <small>(2.7k ⭐)</small> is a Python script that can be used to brute force vhosts, and do OSINT checks <small>(std, bing, yandex, and crt)</small>.
 
 ```ps
 $ dnsrecon -d URL -D wordlist -t a_type

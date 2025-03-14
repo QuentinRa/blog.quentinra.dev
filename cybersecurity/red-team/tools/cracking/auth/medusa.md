@@ -4,7 +4,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[Medusa](https://github.com/jmk-foofus/medusa) <small>(0.6k ⭐)</small> is an open-source tool used to brute force network services passwords such as [FTP](/operating-systems/networking/protocols/ftp.md).
+[Medusa](https://github.com/jmk-foofus/medusa) <small>(0.7k ⭐)</small> is an open-source tool used to brute force network services passwords such as [FTP](/operating-systems/networking/protocols/ftp.md).
 
 ```ps
 $ sudo apt install medusa

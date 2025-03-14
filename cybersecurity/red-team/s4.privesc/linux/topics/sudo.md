@@ -1,6 +1,6 @@
 # sudo privilege escalation
 
-*An excellent reference to exploit sudo: [SUDO_KILLER](https://github.com/TH3xACE/SUDO_KILLER) <small>(2.2k ⭐)</small>. List sudoers with `getent group sudo`.*
+*An excellent reference to exploit sudo: [SUDO_KILLER](https://github.com/TH3xACE/SUDO_KILLER) <small>(2.3k ⭐)</small>. List sudoers with `getent group sudo`.*
 
 [![linprivesc](../../../../_badges/thm/linprivesc.svg)](https://tryhackme.com/room/linprivesc)
 [![linuxprivesc](../../../../_badges/thm/linuxprivesc.svg)](https://tryhackme.com/room/linuxprivesc)
