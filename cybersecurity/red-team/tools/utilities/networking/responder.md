@@ -7,7 +7,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-You can use [responder](https://github.com/lgandx/Responder) <small>(5.0k ⭐)</small> to catch Windows authentication requests allowing us to grab hashes and passwords.
+You can use [responder](https://github.com/lgandx/Responder) <small>(5.7k ⭐)</small> to catch Windows authentication requests allowing us to grab hashes and passwords.
 
 For instance, a website may be using SMB to access some shares based on the user input. If we inject a share leading to our machine, we may be able to grab the credentials used to connect to the share.
 

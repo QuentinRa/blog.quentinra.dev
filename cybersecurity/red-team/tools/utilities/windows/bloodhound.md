@@ -5,11 +5,11 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[BloodHound](https://github.com/BloodHoundAD/BloodHound) <small>(9.3k ⭐)</small> is a reference when pentesting Active Directory. The tool can collect data, display results as a [Neo4J](/programming-languages/databases/non-relational/graph/neo4j.md), and provide Neo4J queries to identify attack vectors and attack paths.
+[BloodHound](https://github.com/BloodHoundAD/BloodHound) <small>(10.1k ⭐)</small> is a reference when pentesting Active Directory. The tool can collect data, display results as a [Neo4J](/programming-languages/databases/non-relational/graph/neo4j.md), and provide Neo4J queries to identify attack vectors and attack paths.
 
-They seem to be moving to an paid and a [community version](https://github.com/SpecterOps/BloodHound) <small>(0.7k ⭐)</small>.
+They seem to be moving to an paid and a [community version](https://github.com/SpecterOps/BloodHound) <small>(1.4k ⭐)</small>.
 
-On the target, run a data collector such as [SharpHound](https://github.com/BloodHoundAD/SharpHound) <small>(0.6k ⭐)</small>:
+On the target, run a data collector such as [SharpHound](https://github.com/BloodHoundAD/SharpHound) <small>(0.9k ⭐)</small>:
 
 ```ps
 PS> .\SharpHound.exe -c All --zipfilename results
@@ -89,7 +89,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* For Azure instances, there is [AzureHound](https://github.com/BloodHoundAD/AzureHound) <small>(0.5k ⭐)</small>
+* For Azure instances, there is [AzureHound](https://github.com/BloodHoundAD/AzureHound) <small>(0.6k ⭐)</small>
 * [CrackHound](https://github.com/trustedsec/CrackHound)
 
 ```cypher

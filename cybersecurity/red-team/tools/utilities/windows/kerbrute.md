@@ -4,7 +4,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[kerbrute](https://github.com/ropnop/kerbrute) <small>(2.4k ⭐, 2020 🪦)</small> is a popular tool that can be used for username enumeration and for password spraying on Kerberos.
+[kerbrute](https://github.com/ropnop/kerbrute) <small>(2.8k ⭐, 2020 🪦)</small> is a popular tool that can be used for username enumeration and for password spraying on Kerberos.
 
 You can install it using:
 

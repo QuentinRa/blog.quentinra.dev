@@ -5,7 +5,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[Rubeus](https://github.com/GhostPack/Rubeus) <small>(3.8k ⭐)</small> is a Windows tool to interact with kerberos and manipulate tickets.
+[Rubeus](https://github.com/GhostPack/Rubeus) <small>(4.3k ⭐)</small> is a Windows tool to interact with kerberos and manipulate tickets.
 
 ```shell!
 PS> .\Rubeus.exe dump /nowrap # Dump tickets

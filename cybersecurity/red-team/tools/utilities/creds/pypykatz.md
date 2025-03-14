@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[pypykatz](https://github.com/skelsec/pypykatz) <small>(2.7k ⭐)</small> is a python port of [mimikatz](mimikatz.md) that works on any operating system including Linux.
+[pypykatz](https://github.com/skelsec/pypykatz) <small>(3.0k ⭐)</small> is a python port of [mimikatz](mimikatz.md) that works on any operating system including Linux.
 
 You should use `pipx` to install it:
 
