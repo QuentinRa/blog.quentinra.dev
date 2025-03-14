@@ -142,7 +142,7 @@ $ sudo systemctl restart lightdm
 
 #### Exegol Docker 🐐
 
-[Exegol](https://github.com/ThePorgs/Exegol) <small>(1.9k ⭐)</small> is a docker-based hacking environment. It's more appropriate for pentesting rather than daily use as you can have one per audit instead of cloning virtual machines.
+[Exegol](https://github.com/ThePorgs/Exegol) <small>(2.1k ⭐)</small> is a docker-based hacking environment. It's more appropriate for pentesting rather than daily use as you can have one per audit instead of cloning virtual machines.
 
 ```shell!
 $ sudo apt install pipx git curl -y
@@ -199,16 +199,16 @@ DarkStar is a THM staff that made a many rooms on THM. [You can download the VM 
 
 #### Active Directory 🛟
 
-The [Game of Active Directory (GOAD)](https://github.com/Orange-Cyberdefense/GOAD) <small>(4.0k ⭐)</small> is an [Active directory](/operating-systems/cloud/active-directory/_knowledge/index.md) Lab. It was designed by the French company "Orange".
+The [Game of Active Directory (GOAD)](https://github.com/Orange-Cyberdefense/GOAD) <small>(6.1k ⭐)</small> is an [Active directory](/operating-systems/cloud/active-directory/_knowledge/index.md) Lab. It was designed by the French company "Orange".
 
 <br>
 
 #### Web applications 🌍
 
-* See [OWASP Juice Shop](https://github.com/juice-shop/juice-shop) <small>(9.3k ⭐)</small> | [THM juiceshop](https://tryhackme.com/room/owaspjuiceshop) | [multi-juicer](https://github.com/iteratec/multi-juicer)
-* See [OWASP mutillidae](https://github.com/webpwnized/mutillidae) <small>(1.2k ⭐)</small> | [THM mutillidae](https://tryhackme.com/room/owaspmutillidae)
-* [Damn Vulnerable Web Application (DVWA)](https://github.com/digininja/DVWA) <small>(9.1k ⭐)</small> / [THM DVWA](https://tryhackme.com/room/dvwa)
-* [WebGoat](https://github.com/WebGoat/WebGoat) <small>(6.4k ⭐)</small>
+* See [OWASP Juice Shop](https://github.com/juice-shop/juice-shop) <small>(10.9k ⭐)</small> | [THM juiceshop](https://tryhackme.com/room/owaspjuiceshop) | [multi-juicer](https://github.com/iteratec/multi-juicer)
+* See [OWASP mutillidae](https://github.com/webpwnized/mutillidae) <small>(1.3k ⭐)</small> | [THM mutillidae](https://tryhackme.com/room/owaspmutillidae)
+* [Damn Vulnerable Web Application (DVWA)](https://github.com/digininja/DVWA) <small>(10.8k ⭐)</small> / [THM DVWA](https://tryhackme.com/room/dvwa)
+* [WebGoat](https://github.com/WebGoat/WebGoat) <small>(7.3k ⭐)</small>
 * [pygoat](https://github.com/adeyosemanputra/pygoat) <small>(0.2k ⭐, django)</small>
 * [bwapp](http://www.itsecgames.com/download.htm) <small>(0.1k ⭐, 2014 🪦)</small> and [bWapp solutions](https://github.com/skiptomyliu/solutions-bwapp) <small>(0.2k ⭐)</small>
 
@@ -216,7 +216,7 @@ The [Game of Active Directory (GOAD)](https://github.com/Orange-Cyberdefense/GOA
 
 #### Random CTFs
 
-* [Root the Box](https://github.com/moloch--/RootTheBox) <small>(0.9k ⭐)</small>
+* [Root the Box](https://github.com/moloch--/RootTheBox) <small>(1.0k ⭐)</small>
 * [fbctf](https://github.com/facebookarchive/fbctf) <small>(6.5k ⭐)</small>
 </div></div>
 

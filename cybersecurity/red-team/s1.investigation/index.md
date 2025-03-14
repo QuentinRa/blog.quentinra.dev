@@ -62,7 +62,7 @@ There are multiple solutions to investigate an email address:
 * [GHunt](https://github.com/mxrch/GHunt) `[FREE]` <small>(15.7k ⭐)</small>: gmail, groups, drives...
 * [Twint](https://github.com/twintproject/twint) `[FREE]` <small>(15.8k ⭐, 2021 🪦)</small>: Twitter scrapping tool
 * [ProtOSINT](https://github.com/pixelbubble/ProtOSINT) `[FREEMIUM]` <small>(0.3k ⭐, 2021 🪦)</small>: Obsolete
-* [Osintgram](https://github.com/Datalux/Osintgram) <small>(8.4k⭐)</small> and [Instaloader](https://github.com/instaloader/instaloader) <small>(8.7k ⭐)</small>: Instagram
+* [Osintgram](https://github.com/Datalux/Osintgram) <small>(8.4k⭐)</small> and [Instaloader](https://github.com/instaloader/instaloader) <small>(9.5k ⭐)</small>: Instagram
 
 There are multiple solutions to identify email addresses given a company domain <small>(e.g. example.com)</small>. But, such solutions are not always trustworthy. For instance, they may return delete emails or AI-generated emails when the mail server was hardened.
 
@@ -81,24 +81,24 @@ There are multiple solutions to identify email addresses given a company domain 
 
 Assuming you have identified a username that may have been reused across multiple platforms by the target, you can find which one using:
 
-* [Sherlock](https://github.com/sherlock-project/sherlock) <small>(59.8k ⭐)</small> `[FREE]`
-* [Maigret](https://github.com/soxoj/maigret) <small>(10.2k ⭐)</small> `[FREE]`
+* [Sherlock](https://github.com/sherlock-project/sherlock) <small>(63.0k ⭐)</small> `[FREE]`
+* [Maigret](https://github.com/soxoj/maigret) <small>(14.9k ⭐)</small> `[FREE]`
 * [NameCheckup](https://namecheckup.com/) `[FREE]`
-* [WhatsMyName](https://github.com/WebBreacher/WhatsMyName) <small>(1.7k ⭐)</small> `[PAID]`
+* [WhatsMyName](https://github.com/WebBreacher/WhatsMyName) <small>(1.9k ⭐)</small> `[PAID]`
 
 #### GitHub Investigation — Find Targets 🧑🐟
 
 Assuming you have identified a GitHub/GitLab organization or a username associated with the company, you can use:
 
-* **GitHub**: [Gitrob 🪦](https://github.com/michenriksen/gitrob) <small>(5.9k ⭐, dev names, languages, projects...)</small>
-* **Git**: [shhgit 🪦](https://github.com/eth0izzle/shhgit) <small>(3.8k ⭐, find secrets)</small>
-* **Github**: [GitFive](https://github.com/mxrch/GitFive) <small>(0.8k ⭐, search by email/username)</small>
+* **GitHub**: [Gitrob 🪦](https://github.com/michenriksen/gitrob) <small>(6.0k ⭐, dev names, languages, projects...)</small>
+* **Git**: [shhgit 🪦](https://github.com/eth0izzle/shhgit) <small>(3.9k ⭐, find secrets)</small>
+* **Github**: [GitFive](https://github.com/mxrch/GitFive) <small>(0.9k ⭐, search by email/username)</small>
 
 #### Phone Investigation — Find Accounts 🧑🐟
 
 Assuming you have identified a phone number, you can use:
 
-* [PhoneInfoga](https://github.com/sundowndev/phoneinfoga) <small>(13.0k ⭐)</small> `[FREE]`
+* [PhoneInfoga](https://github.com/sundowndev/phoneinfoga) <small>(13.9k ⭐)</small> `[FREE]`
 </div><div>
 
 #### Deep/Dark Web — Data Leaks 🧑🐟
@@ -220,7 +220,7 @@ We may want to determine what hosts are known, what is running on each host, and
 Most companies are using an SSL/TLS certificate per domain. Since certificates are public, we can inspect them to find subdomains.
 
 * [crt.sh](https://crt.sh/) `[FREE]`: the most used platform
-* [ctfr](https://github.com/UnaPibaGeek/ctfr) <small>(1.9k ⭐, 2020 🪦)</small> `[FREE]`: tool to access crt.sh
+* [ctfr](https://github.com/UnaPibaGeek/ctfr) <small>(2.0k ⭐, 2020 🪦)</small> `[FREE]`: tool to access crt.sh
 * [ct search](https://ui.ctsearch.entrust.com/ui/ctsearchui)  `[FREE]`: include expired certificates
 * [censys](https://search.censys.io/) `[???]`: 👻
 * [netcraft](https://sitereport.netcraft.com/) `[???]`: 👻
@@ -263,7 +263,7 @@ A few tools you may use:
 
 <div class="row row-cols-lg-2"><div>
 
-We developed [oneaudit](https://github.com/quentinra/oneaudit) <small>(0.01k ⭐)</small> to ease and automate the process of external passive recon. It is built over many existing tools.
+We developed a tool to ease and automate the process of external passive recon. It is built over many existing tools.
 
 #### 1. OneAudit Subdomains Investigation
 

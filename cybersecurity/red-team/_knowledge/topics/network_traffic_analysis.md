@@ -41,7 +41,7 @@ Common applications are:
 
 #### net-creds — Simple Packet Analyzer
 
-[net-creds](https://github.com/DanMcInerney/net-creds) <small>(1.6k ⭐, 2019 🪦)</small> is a network packet sniffer which superseded [creds.py](https://github.com/DanMcInerney/creds.py) <small>(0.2k ⭐, 2015 🪦)</small>. It's written in Python2.
+[net-creds](https://github.com/DanMcInerney/net-creds) <small>(1.7k ⭐, 2019 🪦)</small> is a network packet sniffer which superseded [creds.py](https://github.com/DanMcInerney/creds.py) <small>(0.2k ⭐, 2015 🪦)</small>. It's written in Python2.
 
 ```shell!
 $ wget "https://raw.githubusercontent.com/DanMcInerney/net-creds/master/net-creds.py"
@@ -65,7 +65,7 @@ Refer to [apackets](https://apackets.com/upload). All free analysis are public.
 
 #### tcpflow — Dump TCP Flows
 
-You can use [tcpflow](https://github.com/simsong/tcpflow) <small>(1.6k ⭐)</small>, which is similar to wireshark 'Follow TCP Streams' feature, to dump TCP Streams.
+You can use [tcpflow](https://github.com/simsong/tcpflow) <small>(1.7k ⭐)</small>, which is similar to wireshark 'Follow TCP Streams' feature, to dump TCP Streams.
 
 ```shell!
 $ tcpflow -r xxx.pcap -C0
