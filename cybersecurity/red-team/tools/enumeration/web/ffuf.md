@@ -82,7 +82,7 @@ $ ffuf -w wordlist -H "Host: FUZZ.example.com" -u http://example.com
 
 #### Forced Browsing
 
-For [forced browsing](/cybersecurity/red-team/s2.discovery/techniques/websites/forced_browsing.md), you can use:
+For [forced browsing](/cybersecurity/red-team/s2.discovery/index.md#web-services--forced-browsing), you can use:
 
 ```ps
 $ ffuf -w wordlist -u URL/FUZZ

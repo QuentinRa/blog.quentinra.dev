@@ -700,7 +700,7 @@ $ # is there some weird partition mounted?
 $ mount | grep -v /proc | grep -v /sys | grep -v overlay
 ```
 
-You can look for open ports using [port scanning](/cybersecurity/red-team/s2.discovery/techniques/network/port_scanning.md):
+You can look for open ports using [port scanning](/cybersecurity/red-team/s2.discovery/index.md#investigate-hosts--port-scanning):
 
 ```ps
 $ nc -zv IP 1-65535 # you may use pivoting tools such as chisel to access them

@@ -45,7 +45,7 @@ $ wfuzz -w wordlist --sc 200 xxx.tld/account?id=FUZZ
 
 #### Forced Browsing
 
-For [forced browsing](/cybersecurity/red-team/s2.discovery/techniques/websites/forced_browsing.md), you can use:
+For [forced browsing](/cybersecurity/red-team/s2.discovery/index.md#web-services--forced-browsing), you can use:
 
 ```ps
 $ wfuzz -w wordlist -u URL/FUZZ # Forced browsing

