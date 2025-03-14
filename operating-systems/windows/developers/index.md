@@ -142,7 +142,7 @@ $ make -v
 # ...
 ```
 
-➡️ See also: [apt-cyg](https://github.com/transcode-open/apt-cyg) <small>(2.9k ⭐, 2017 🪦)</small>.
+➡️ See also: [apt-cyg](https://github.com/transcode-open/apt-cyg) <small>(3.0k ⭐, 2017 🪦)</small>.
 </div></div>
 
 <hr class="sep-both">

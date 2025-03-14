@@ -4,7 +4,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[impacket](https://github.com/fortra/impacket) <small>(12.7k ⭐)</small> is a collection of [python](/programming-languages/high-level/scripting/python/index.md) classes for working with network protocols. They are already installed on Kali:
+[impacket](https://github.com/fortra/impacket) <small>(14.0k ⭐)</small> is a collection of [python](/programming-languages/high-level/scripting/python/index.md) classes for working with network protocols. They are already installed on Kali:
 
 ```shell!
 $ impacket-secretsdump -h # Example of calling a script

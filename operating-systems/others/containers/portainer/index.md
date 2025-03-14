@@ -10,7 +10,7 @@
   * 9443 (HTTPS)
   * 9000 (HTTP)
   * 8000 (legacy?)
-* [GitHub Repository](https://github.com/portainer/portainer) <small>(29.4k ⭐)</small>
+* [GitHub Repository](https://github.com/portainer/portainer) <small>(32.3k ⭐)</small>
 
 A portainer website in the wild can be used for privilege escalation.
 </div><div>

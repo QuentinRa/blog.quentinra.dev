@@ -4,7 +4,7 @@
 
 Apache [ActiveMQ](https://activemq.apache.org/) is an open source [message broker](https://en.wikipedia.org/wiki/Message_broker) written in Java. It support multiple protocols such as JMS, [MQTT](/operating-systems/others/embedded/_knowledge/index.md#mqtt-protocol), STOMP, [AMQP](/operating-systems/others/embedded/_knowledge/index.md#amqp-protocol).
 
-* [Classic](https://github.com/apache/activemq) <small>(2.2k ⭐)</small> / [Artemis](https://github.com/apache/activemq-artemis) <small>(0.9k ⭐)</small>
+* [Classic](https://github.com/apache/activemq) <small>(2.3k ⭐)</small> / [Artemis](https://github.com/apache/activemq-artemis) <small>(1.0k ⭐)</small>
 * [Artemis Documentation](https://activemq.apache.org/components/artemis/documentation/)
 * ActiveMQ Artemis is the next gen version
 

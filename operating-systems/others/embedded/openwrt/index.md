@@ -4,7 +4,7 @@
 
 [OpenWRT](https://openwrt.org/) project is a Linux operating system targeting embedded devices like routers, and other networking devices.
 
-* [Source Code](https://github.com/openwrt/openwrt) <small>(17.2k ⭐)</small>
+* [Source Code](https://github.com/openwrt/openwrt) <small>(21.8k ⭐)</small>
 * [Documentation](https://openwrt.org/docs/start) <small>(⛪)</small>
 
 OpenWRT uses the `opkg` package manager.

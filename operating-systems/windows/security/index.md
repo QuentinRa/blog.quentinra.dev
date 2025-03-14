@@ -154,7 +154,7 @@ $ sudo cryptsetup bitlkOpen /dev/xxxp2 mytag
 $ sudo cryptsetup bitlkClose mytag
 ```
 
-You can extract the user password (`$0`/`$1`) or the recovery key (`$2`/`$3`). You can then try [hash cracking](/cybersecurity/cryptography/algorithms/hashing/index.md#hash-cracking) or [bitcracker](https://github.com/e-ago/bitcracker) <small>(0.8k ⭐, 2021 🪦)</small>.
+You can extract the user password (`$0`/`$1`) or the recovery key (`$2`/`$3`). You can then try [hash cracking](/cybersecurity/cryptography/algorithms/hashing/index.md#hash-cracking) or [bitcracker](https://github.com/e-ago/bitcracker) <small>(0.9k ⭐, 2021 🪦)</small>.
 
 ```shell!
 $ # https://openwall.info/wiki/john/OpenCL-BitLocker
@@ -224,7 +224,7 @@ On Linux, you can remotely dump hashes using impacket:
 $ impacket-secretsdump example.com/username:password@TARGET
 ```
 
-On Windows, you can use [DSInternals](https://github.com/MichaelGrafnetter/DSInternals/) <small>(1.5k ⭐, 👻)</small> too.
+On Windows, you can use [DSInternals](https://github.com/MichaelGrafnetter/DSInternals/) <small>(1.7k ⭐, 👻)</small> too.
 
 <br>
 
@@ -361,7 +361,7 @@ Microsoft Local Administrator Password Solution (LAPS) was designed to prevent l
 
 It manages local administrator passwords and rotates them.
 
-The [LAPSToolkit](https://github.com/leoloobeek/LAPSToolkit)  <small>(0.7k ⭐)</small> can detect which machines have LAPS installed and which machines don't. It can also detect which users can view the LAPS password for each machine.
+The [LAPSToolkit](https://github.com/leoloobeek/LAPSToolkit)  <small>(0.8k ⭐)</small> can detect which machines have LAPS installed and which machines don't. It can also detect which users can view the LAPS password for each machine.
 
 ```ps
 PS> Find-LAPSDelegatedGroups

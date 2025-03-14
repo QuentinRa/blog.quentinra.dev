@@ -576,8 +576,8 @@ By exploring these files, you can see every changes applied to a docker image fr
 A few tool may identify privilege escalation or breakout vectors:
 
 * [linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) <small>(AppArmor, Capabilities, Network, Exploits)</small> with `-a`/`-t`?
-* [deepce](https://github.com/stealthcopter/deepce) <small>(1.1k ⭐, Enumeration + Escape)</small>
-* [cdk](https://github.com/cdk-team/CDK) <small>(3.6k ⭐, Enumeration + Escape)</small>
+* [deepce](https://github.com/stealthcopter/deepce) <small>(1.3k ⭐, Enumeration + Escape)</small>
+* [cdk](https://github.com/cdk-team/CDK) <small>(4.1k ⭐, Enumeration + Escape)</small>
 
 <br>
 
