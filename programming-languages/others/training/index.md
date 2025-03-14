@@ -170,12 +170,11 @@
 * [thenewdeveloper](https://thenewdeveloper.substack.com/) <small>(tests)</small>
 * [poftut](https://www.poftut.com/) <small>(???)</small>
 * [jvns](https://jvns.ca/) and [wizardzines](https://wizardzines.com/)
-* [stackpath](https://www.stackpath.com/blog) <small>(???)</small>
 * [jerhemy](https://jerhemy.com/) <small>(a few articles, JS/...)</small>
 * [kdnuggets](https://www.kdnuggets.com/tag/programming) <small>(???)</small>
 * [interviewcake](https://www.interviewcake.com/) <small>(small courses)</small>
 * [mkyong](https://mkyong.com/) <small>(Java, maven...)</small>
-* [ebens](https://ebens.me/blog) <small>(???)</small>
+* [ebens](https://ebens.me/) <small>(???)</small>
 * [fireship](https://fireship.io/) <small>(short articles)</small>
 * [codingbeautydev](https://codingbeautydev.com/) <small>(???)</small>
 * [madza](https://madza.hashnode.dev/) <small>(???)</small>

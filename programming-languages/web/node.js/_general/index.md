@@ -14,7 +14,8 @@
 **Where to learn?**
 
 * [Documentation](https://nodejs.org/api/) <small>(⛪)</small>
-* [Tutorials](https://nodejs.dev/en/learn) <small>(🚀)</small> / [Knowledge](https://nodejs.org/en/knowledge/) <small>(old)</small>
+* [Tutorials](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs) <small>(🚀)</small>
+* [NullDog](https://nulldog.com/) <small>(👻)</small>
 * [Runkit](https://runkit.com/home) <small>(online playground)</small>
 </div><div>
 
@@ -128,7 +129,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* .env / [nconf](https://nodejs.org/en/knowledge/file-system/how-to-store-local-config-data/) / [node-config](https://github.com/node-config/node-config)
+* .env / [nconf](https://nulldog.com/nodejs-deployment-storing-config-files) / [node-config](https://github.com/node-config/node-config)
 * See JavaScript, what are modules/...?
 * [bcrypt](https://attacomsian.com/blog/nodejs-password-hashing-with-bcrypt)
 * [http2 server-push](https://blog.risingstack.com/node-js-http-2-push/)

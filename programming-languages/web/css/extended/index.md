@@ -145,7 +145,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* [SASS nesting](https://markdotto.com/2015/07/20/css-nesting/)
+* [SASS nesting](https://markdotto.com/blog/css-nesting/)
 * [PHPStorm watchers](https://www.jetbrains.com/help/phpstorm/transpiling-sass-less-and-scss-to-css.html#ws_sass_less_scss_syntax_highlighting)
 </div><div>
 

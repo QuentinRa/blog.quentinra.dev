@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-The C++ programming language is a middle-level language that is built on top of the [C](/programming-languages/low-level/c/general/index.md) ([compatibility](https://en.wikipedia.org/wiki/Compatibility_of_C_and_C%2B%2B;)), with additional features.
+The C++ programming language is a middle-level language that is built on top of the [C](/programming-languages/low-level/c/general/index.md) ([compatibility](https://en.wikipedia.org/wiki/Compatibility_of_C_and_C%2B%2B)), with additional features.
 
 You will create a file with the `.cpp` extension, for instance, `main.cpp`
 

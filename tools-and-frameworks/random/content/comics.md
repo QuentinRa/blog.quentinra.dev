@@ -52,7 +52,6 @@ Clean aggregators
 <summary>Random Aggregators</summary>
 
 * [fanfox.net](https://fanfox.net/)
-* [mangaguru.org](https://mangaguru.org/index.php)
 * [mangareader.to](https://mangareader.to/)
 * [webtoon.xyz](https://www.webtoon.xyz/)
 * [manhuascan.us](https://manhuascan.us/)

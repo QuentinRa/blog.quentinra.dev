@@ -16,8 +16,6 @@ Either use [their cloud sandbox](https://neo4j.com/sandbox/) or [a self-hosted i
 * 🤝 open-source ([GitHub](https://github.com/neo4j), 11.6k ✨)
 * 🚀 Cypher's syntax looks like SQL
 * 🌫️ Cloud <small>(free version available)</small> or self-hosted <small>(local)</small>
-
-[Example database](https://raw.githubusercontent.com/QuentinRa/references.blog.quentinra.dev/main/info/nosql/movies.cypher).
 </div></div>
 
 <hr class="sep-both">

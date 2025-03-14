@@ -174,8 +174,6 @@ Stuff that I found, but never read/used yet.
 ```
 
 * [symbols.pdf](https://www.caam.rice.edu/~heinken/latex/symbols.pdf)
-* [latexcheatsheet.pdf](https://users.dickinson.edu/~richesod/latex/latexcheatsheet.pdf),
-  [latexcheatsheet.pdf](https://users.dickinson.edu/~richesod/latex/LatexFrench.pdf) (french),
   [video](https://divisbyzero.com/teaching/a-quick-guide-to-latex/).
 </div><div>
 

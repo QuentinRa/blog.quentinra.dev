@@ -150,7 +150,6 @@ Some companies are giving bounties to ethical hackers that detected exploits in 
 * [Red Team Nation](https://redteamnation.com/)
 * [cybr.com](https://cybr.com/)
 * [academy.tcm-sec.com](https://academy.tcm-sec.com/)
-* [appsec-labs.com](https://appsec-labs.com/online-training/)
 * [pentesterlab](https://www.pentesterlab.com/)
 * [cybertalents](https://cybertalents.com/)
 * [crowdstrike](https://www.crowdstrike.com/cybersecurity-101/)
