@@ -29,7 +29,7 @@ Click on `Show options` then `Experience` and select `modem`.
 
 #### RDP Using rdesktop
 
-There is [rdesktop](https://github.com/rdesktop/rdesktop) <small>(1.2k ⭐)</small>.
+There is [rdesktop](https://github.com/rdesktop/rdesktop) <small>(1.3k ⭐)</small>.
 
 ```shell!
 $ rdesktop [...] -r disk:linux='/path/to/folder'
@@ -39,7 +39,7 @@ $ rdesktop [...] -r disk:linux='/path/to/folder'
 
 #### RDP Using FreeRDP
 
-[FreeRDP](https://github.com/FreeRDP/FreeRDP) <small>(10.1k ⭐)</small> is a popular client that may be installed on many Linux distributions. There is a GUI called [xfreerdp-gui](https://github.com/wyllianbs/xfreerdp-gui) <small>(0.1k ⭐, 2020 🪦)</small>.
+[FreeRDP](https://github.com/FreeRDP/FreeRDP) <small>(11.5k ⭐)</small> is a popular client that may be installed on many Linux distributions. There is a GUI called [xfreerdp-gui](https://github.com/wyllianbs/xfreerdp-gui) <small>(0.1k ⭐, 2020 🪦)</small>.
 
 ```shell!
 $ xfreerdp /u:username /p:password /v:IP
@@ -52,7 +52,7 @@ $ xfreerdp [...] /drive:/usr/share/windows-resources,share
 
 #### RDP Using Remmina
 
-[Remmina](https://github.com/FreeRDP/Remmina) <small>(2.1k ⭐)</small> is a popular graphical RDP client. It's easy to use and it has as many useful features as the others do.
+[Remmina](https://github.com/FreeRDP/Remmina) <small>(2.3k ⭐)</small> is a popular graphical RDP client. It's easy to use and it has as many useful features as the others do.
 
 ```ps
 $ sudo apt install -y remmina

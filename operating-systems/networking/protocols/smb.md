@@ -15,7 +15,6 @@ Server Message Block (SMB) is a protocol used for Windows file exchange system. 
 
 It's mostly used to share files internally by connecting computers, printers... to a shared folder called **share** 📂 ([def](/operating-systems/windows/_knowledge/index.md#shared-folders)).
 
-
 For any `smbclient` commands, you can use:
 
 ```ps
@@ -186,7 +185,7 @@ $ crackmapexec smb IP -u 'username' -p 'password' --shares
 $ crackmapexec smb [...] # many more options
 ```
 
-* We can use [smbmap](https://github.com/ShawnDEvans/smbmap) <small>(1.7k ⭐)</small> to list users/shares+access/files/...
+* We can use [smbmap](https://github.com/ShawnDEvans/smbmap) <small>(1.9k ⭐)</small> to list users/shares+access/files/...
 
 ```ps
 $ smbmap -H IP
@@ -194,7 +193,7 @@ $ smbmap -H IP -u 'username' -p 'password'
 $ smbmap [...] -x 'command' -d 'domain' -s 'share'
 ```
 
-* We can use [enum4linux](https://github.com/CiscoCXSecurity/enum4linux) <small>(1.0k ⭐)</small> or [enum4linux-ng](https://github.com/cddmp/enum4linux-ng) <small>(1.0k ⭐)</small> to list shares, devices, users, along basic information about the host.
+* We can use [enum4linux](https://github.com/CiscoCXSecurity/enum4linux) <small>(1.2k ⭐)</small> or [enum4linux-ng](https://github.com/cddmp/enum4linux-ng) <small>(1.3k ⭐)</small> to list shares, devices, users, along basic information about the host.
 
 ```shell!
 $ sudo apt-get install enum4linux-ng

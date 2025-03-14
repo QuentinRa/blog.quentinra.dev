@@ -8,7 +8,7 @@ Real Time Streaming Protocol (RTSP) is a protocol designed  to control streaming
 
 🐊️ **Ports**: 554 <small>(TCP)</small> or 8554 <small>(TCP)</small>
 
-You can run your own server using [mediamtx](https://github.com/bluenviron/mediamtx) <small>(9.7k ⭐)</small>:
+You can run your own server using [mediamtx](https://github.com/bluenviron/mediamtx) <small>(13.6k ⭐)</small>:
 
 ```shell!
 $ docker run --rm -it --network=host aler9/rtsp-simple-server

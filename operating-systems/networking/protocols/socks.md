@@ -11,7 +11,6 @@ Secure Socket (SOCKS) is a protocol to exchange data through a [proxy](../topolo
 
 🐊️ **Port**: 1080 (TCP) or 9050/9150 (TCP) with Tor.
 
-
 It has multiple limitations. SOCKS4 doesn't understand partial packets which we often generate using `nmap`. SOCKS4 doesn't support UDP.
 </div><div>
 
@@ -61,7 +60,7 @@ msf6> route add IP/32 -1 # add one IP, can be a range, routed through the last (
 
 #### 3proxy on Windows
 
-[3proxy](https://github.com/3proxy/3proxy) <small>(3.5k ⭐)</small> is similar to Proxifier, but it's free and it works on Linux too. It doesn't redirect PowerShell traffic.
+[3proxy](https://github.com/3proxy/3proxy) <small>(4.1k ⭐)</small> is similar to Proxifier, but it's free and it works on Linux too. It doesn't redirect PowerShell traffic.
 
 ```shell!
 PS> cd "3proxy-0.9.4-x64\bin64"
@@ -78,16 +77,16 @@ There is no such thing as `proxychains` on Windows, but [Proxifier](https://www.
 
 #### Additional Socks Servers
 
-* [proxychains-ng](https://github.com/rofl0r/proxychains-ng) <small>(9.4k ⭐)</small>
-* [shinysocks](https://github.com/jgaa/shinysocks) <small>(0.1k ⭐)</small>
-* [revsocks](https://github.com/kost/revsocks) <small>(0.3k ⭐)</small>
+* [proxychains-ng](https://github.com/rofl0r/proxychains-ng) <small>(10.0k ⭐)</small>
+* [shinysocks](https://github.com/jgaa/shinysocks) <small>(0.2k ⭐)</small>
+* [revsocks](https://github.com/kost/revsocks) <small>(0.4k ⭐)</small>
 * [wiresocks](https://github.com/sensepost/wiresocks) <small>(0.3k ⭐)</small>
-* [tun2socks](https://github.com/xjasonlyu/tun2socks) <small>(2.7k ⭐)</small>
-* [redsocks](https://github.com/darkk/redsocks) <small>(3.2k ⭐, 2019 🪦)</small>
-* [pivotnacci](https://github.com/blackarrowsec/pivotnacci) <small>(0.6k ⭐, 2021 🪦)</small>
-* [graftcp](https://github.com/hmgle/graftcp) <small>(1.8k ⭐)</small>
-* [gost](https://github.com/ginuerzh/gost/blob/master/README_en.md) <small>(15.1k ⭐)</small>
-* [sshimpanzee](https://github.com/lexfo/sshimpanzee) <small>(0.0.2k ⭐)</small>
+* [tun2socks](https://github.com/xjasonlyu/tun2socks) <small>(3.7k ⭐)</small>
+* [redsocks](https://github.com/darkk/redsocks) <small>(3.4k ⭐, 2019 🪦)</small>
+* [pivotnacci](https://github.com/blackarrowsec/pivotnacci) <small>(0.7k ⭐, 2021 🪦)</small>
+* [graftcp](https://github.com/hmgle/graftcp) <small>(2.2k ⭐)</small>
+* [gost](https://github.com/ginuerzh/gost/blob/master/README_en.md) <small>(16.5k ⭐)</small>
+* [sshimpanzee](https://github.com/lexfo/sshimpanzee) <small>(0.3k ⭐)</small>
 </div></div>
 
 <hr class="sep-both">

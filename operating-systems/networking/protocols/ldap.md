@@ -90,7 +90,7 @@ $ ldapsearch -h IP -x -b "dc=example,dc=com" -s sub "(&(objectclass=user))"
 
 [![active_directory_enumeration_attacks](../../../cybersecurity/_badges/htb/active_directory_enumeration_attacks.svg)](https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks)
 
-You can use the [windapsearch.py](https://github.com/ropnop/windapsearch) <small>(0.7k ⭐, 2020 🪦)</small> script or the [go](https://github.com/ropnop/go-windapsearch) <small>(0.3k ⭐, 2021 🪦)</small> binary. They make it easier to craft LDAP requests.
+You can use the [windapsearch.py](https://github.com/ropnop/windapsearch) <small>(0.9k ⭐, 2020 🪦)</small> script or the [go](https://github.com/ropnop/go-windapsearch) <small>(0.4k ⭐, 2021 🪦)</small> binary. They make it easier to craft LDAP requests.
 
 ```ps
 $ python3 windapsearch.py --dc-ip IP -u "" -U
@@ -151,7 +151,7 @@ $ sudo service slapd stop
 <details class="details-n">
 <summary>LDAP Server On Docker</summary>
 
-We can use [docker-ldap](https://github.com/osixia/docker-openldap) <small>(3.9k ⭐)</small>, but I failed to configure it to only allow cleartext authentication.
+We can use [docker-ldap](https://github.com/osixia/docker-openldap) <small>(4.1k ⭐)</small>, but I failed to configure it to only allow cleartext authentication.
 
 ```dockerfile!
 FROM osixia/openldap

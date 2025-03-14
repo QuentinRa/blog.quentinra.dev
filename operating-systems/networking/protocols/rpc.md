@@ -63,7 +63,7 @@ $ enum4linux-ng IP -R # find more users than the for above!
 $ enum4linux-ng IP -R 64 # 64 per rpcclient call, faster
 ```
 
-See also: [ridenum](https://github.com/trustedsec/ridenum) <small>(0.2k ⭐, 2020 🪦)</small>.
+See also: [ridenum](https://github.com/trustedsec/ridenum) <small>(0.3k ⭐, 2020 🪦)</small>.
 </div></div>
 
 

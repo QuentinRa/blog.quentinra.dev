@@ -258,7 +258,7 @@ Refer to [Subdomains](/cybersecurity/red-team/s2.discovery/techniques/websites/s
 
 You can use [onectf axfr](#dns-zones--zone-transfer) as introduced in the AXFR section to find hidden subdomains accepting zone transfer.
 
-* [fierce](https://github.com/mschwager/fierce) <small>(1.6k ⭐)</small> can be used for AXFR and other attacks.
+* [fierce](https://github.com/mschwager/fierce) <small>(1.7k ⭐)</small> can be used for AXFR and other attacks.
 
 ```ps
 $ fierce --domain zonetransfer.me
@@ -268,7 +268,7 @@ $ fierce --domain xxx.yyy --dns-servers IP
 
 #### Exploitation
 
-* **Domain Takeover**: an existing record points to a deleted domain. If the hackers can purchase it, then may perform social engineering attacks <small>(or more advanced attacks)</small>. [can-i-take-over-xyz](https://github.com/EdOverflow/can-i-take-over-xyz) <small>(4.4k ⭐)</small>
+* **Domain Takeover**: an existing record points to a deleted domain. If the hackers can purchase it, then may perform social engineering attacks <small>(or more advanced attacks)</small>. [can-i-take-over-xyz](https://github.com/EdOverflow/can-i-take-over-xyz) <small>(5.1k ⭐)</small>
 
 * **DNS Rebinding**: refer to SSRF Mitigations for notes.
 </div><div>
