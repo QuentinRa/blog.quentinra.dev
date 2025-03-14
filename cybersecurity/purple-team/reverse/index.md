@@ -249,7 +249,7 @@ Additional tools: [unpackbootimg](https://github.com/anestisb/android-unpackboot
 
 #### androguard — APK+Dex Explorer/Disassembler
 
-[androguard](https://github.com/androguard/androguard) <small>(4.9k ⭐)</small> is a powerful Python tool to explore APK/Dex files, but there is almost no documentation.
+[androguard](https://github.com/androguard/androguard) <small>(5.5k ⭐)</small> is a powerful Python tool to explore APK/Dex files, but there is almost no documentation.
 
 ```ps
 $ sudo apt install -y androguard

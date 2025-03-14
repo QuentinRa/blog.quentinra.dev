@@ -16,7 +16,7 @@ They are mainly used to automate tasks. For instance, to perform a password atta
 CTFs are usually using the infamous `rockout.txt` for passwords  <small>(from the data breach of rockyou.com in 2009)</small>.
 </div><div>
 
-[SecLists](https://github.com/danielmiessler/SecLists) <small>(50.6k ⭐)</small> is the most popular place to find wordlists.
+[SecLists](https://github.com/danielmiessler/SecLists) <small>(61.4k ⭐)</small> is the most popular place to find wordlists.
 
 ```shell!
 $ sudo apt-get install seclists
@@ -68,7 +68,7 @@ You can also use: [JohnTheReaper](/cybersecurity/cryptography/algorithms/hashing
 
 [![cyberweek2021](../../../_badges/thm/cyberweek2021.svg)](https://tryhackme.com/r/room/cyberweek2021)
 
-Users may generate a password based on the environment they are in. [CeWL](https://github.com/digininja/CeWL) <small>(1.7k ⭐)</small> will scrap their website to generate a list of words.  
+Users may generate a password based on the environment they are in. [CeWL](https://github.com/digininja/CeWL) <small>(2.2k ⭐)</small> will scrap their website to generate a list of words.  
 
 ```ps
 $ cewl -w output.lst -d depth -m word_size URL
@@ -92,7 +92,7 @@ $ crunch [...] -d 1 # "aa" "aaa" etc. are not allowed
 
 #### cook wordlist generation
 
-[cook](https://github.com/glitchedgitz/cook) <small>(0.9k ⭐)</small> is a tool/engine to create wordlists, sort of like a recipe.
+[cook](https://github.com/glitchedgitz/cook) <small>(1.2k ⭐)</small> is a tool/engine to create wordlists, sort of like a recipe.
 
 ```shell!
 $ cook [...]
@@ -102,12 +102,12 @@ $ cook [...]
 
 #### Linkedin2Username
 
-[linkedin2username](https://github.com/initstring/linkedin2username) <small>(1.1k ⭐)</small> uses **your** Linkedin account to explore the target Linkedin pages and generate a wordlist of usernames.
+[linkedin2username](https://github.com/initstring/linkedin2username) <small>(1.4k ⭐)</small> uses **your** Linkedin account to explore the target Linkedin pages and generate a wordlist of usernames.
 </div><div>
 
 #### CUPP wordlist generation
 
-[cupp](https://github.com/Mebus/cupp) <small>(4.1k ⭐, 2020 🪦)</small> is a python script that generates a wordlist based on the information you gathered about the target.
+[cupp](https://github.com/Mebus/cupp) <small>(4.7k ⭐, 2020 🪦)</small> is a python script that generates a wordlist based on the information you gathered about the target.
 
 ```shell!
 $ sudo apt-get install cupp
@@ -143,10 +143,10 @@ aa
 
 #### Random Tools
 
-* [TTPassGen](https://github.com/tp7309/TTPassGen) <small>(0.1k ⭐)</small>: generate password wordlists
+* [TTPassGen](https://github.com/tp7309/TTPassGen) <small>(0.2k ⭐)</small>: generate password wordlists
 * [pnwgen](https://github.com/toxydose/pnwgen) <small>(0.1k ⭐, 2021 🪦)</small>: generate phone number wordlists
-* [lyricpass](https://github.com/initstring/lyricpass) <small>(0.87k ⭐, 2019 🪦)</small>: generate song lyrics wordlists
-* [mentalist](https://github.com/sc0tfree/mentalist) <small>(1.7k ⭐, 2017 🪦)</small>: generate password wordlists
+* [lyricpass](https://github.com/initstring/lyricpass) <small>(0.1k ⭐, 2019 🪦)</small>: generate song lyrics wordlists
+* [mentalist](https://github.com/sc0tfree/mentalist) <small>(1.8k ⭐, 2017 🪦)</small>: generate password wordlists
 </div></div>
 
 <hr class="sep-both">
@@ -238,7 +238,7 @@ admin, administrator, wpadmin, root, adm
 /usr/share/seclists/Usernames/top-usernames-shortlist.txt
 ```
 
-📚 Common tools are: [username-anarchy](https://github.com/urbanadventurer/username-anarchy) <small>(0.6k ⭐, 2016 🪦)</small> and [username_generator](https://github.com/shroudri/username_generator) <small>(0.04k ⭐)</small>. The wordlists in the [statistically-likely-usernames](https://github.com/insidetrust/statistically-likely-usernames) <small>(0.8k ⭐)</small> project are also somewhat popular.
+📚 Common tools are: [username-anarchy](https://github.com/urbanadventurer/username-anarchy) <small>(1.0k ⭐, 2016 🪦)</small> and [username_generator](https://github.com/shroudri/username_generator) <small>(0.1k ⭐)</small>. The wordlists in the [statistically-likely-usernames](https://github.com/insidetrust/statistically-likely-usernames) <small>(1.0k ⭐)</small> project are also somewhat popular.
 
 **Passwords**
 
@@ -261,7 +261,7 @@ admin, administrator, wpadmin, root, adm
 # see also: short username/password wordlists
 ```
 
-📚 You might want to check out [cirt](https://cirt.net/passwords), [default-password](https://default-password.info/), [data recovery](https://datarecovery.com/rd/default-passwords/), [cirt](https://www.cirt.net/passwords), and [scadapass](https://github.com/scadastrangelove/SCADAPASS/blob/master/scadapass.csv). See also: [Default Credentials Cheat Sheet](https://github.com/ihebski/DefaultCreds-cheat-sheet) <small>(5.1k ⭐)</small>.
+📚 You might want to check out [cirt](https://cirt.net/passwords), [default-password](https://default-password.info/), [data recovery](https://datarecovery.com/rd/default-passwords/), [cirt](https://www.cirt.net/passwords), and [scadapass](https://github.com/scadastrangelove/SCADAPASS/blob/master/scadapass.csv). See also: [Default Credentials Cheat Sheet](https://github.com/ihebski/DefaultCreds-cheat-sheet) <small>(6.0k ⭐)</small>.
 </div></div>
 
 <hr class="sep-both">
@@ -344,8 +344,8 @@ Stuff that I found, but never read/used yet.
 <div class="row row-cols-lg-2"><div>
 
 * [Auto_Wordlists](https://github.com/carlospolop/Auto_Wordlists)
-* [big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings) <small>(45.8k ⭐)</small>
-* [fuzzdb](https://github.com/fuzzdb-project/fuzzdb) <small>(7.9k ⭐, 2020 🪦)</small>
+* [big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings) <small>(47.0k ⭐)</small>
+* [fuzzdb](https://github.com/fuzzdb-project/fuzzdb) <small>(8.4k ⭐, 2020 🪦)</small>
 * [Security-Wordlist](https://github.com/DragonJAR/Security-Wordlist/)
 * [Pwdb-Public](https://github.com/ignis-sec/Pwdb-Public/)
 * [alterx](https://github.com/projectdiscovery/alterx)
