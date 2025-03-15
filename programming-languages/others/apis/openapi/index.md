@@ -40,7 +40,7 @@ paths:
 
 #### API Server-side code
 
-To generate a server from a specification, you can use the [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator) <small>(16.9k ⭐)</small>. See [Install](https://openapi-generator.tech/docs/installation).
+To generate a server from a specification, you can use the [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator) <small>(23.1k ⭐)</small>. See [Install](https://openapi-generator.tech/docs/installation).
 
 ```
 # ex: generate nodejs-express-server inside gen from xxx.yaml
@@ -52,7 +52,7 @@ $ java -jar openapi-generator-cli.jar generate -g nodejs-express-server -i xxx.y
 
 #### Documentation
 
-I haven't tested other tools, but with the popular [Redoc](https://github.com/Redocly/redoc) <small>(20.4k ⭐)</small> you simply have to
+I haven't tested other tools, but with the popular [Redoc](https://github.com/Redocly/redoc) <small>(24.2k ⭐)</small> you simply have to
 
 * Copy the [following HTML](https://github.com/Redocly/redoc#deployment) to your web server
 * Replace the URL with the link to your YAML file

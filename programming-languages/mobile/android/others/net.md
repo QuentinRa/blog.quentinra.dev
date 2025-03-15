@@ -26,12 +26,12 @@ You will also have to edit AndroidManifest.xml and allow HTTP
 
 There are many libraries that you may use at some point
 
-* [retrofit](https://github.com/square/retrofit) <small>(40.9k ⭐)</small>: HTTP library
-* [Moshi](https://github.com/square/moshi) <small>(8.7k ⭐)</small>: JSON library
-* [Gson](https://github.com/google/gson) <small>(21.7k ⭐)</small>: JSON library
-* [okhttp](https://github.com/square/okhttp) <small>(43.3k ⭐)</small>: HTTP client used by retrofit/fuel/...
-* [fuel](https://github.com/kittinunf/fuel) <small>(4.3k ⭐, 👻)</small>: HTTP library
-* [volley](https://github.com/google/volley) <small>(3.3k ⭐, 👻)</small>: HTTP library
+* [retrofit](https://github.com/square/retrofit) <small>(43.4k ⭐)</small>: HTTP library
+* [Moshi](https://github.com/square/moshi) <small>(9.9k ⭐)</small>: JSON library
+* [Gson](https://github.com/google/gson) <small>(23.6k ⭐)</small>: JSON library
+* [okhttp](https://github.com/square/okhttp) <small>(46.2k ⭐)</small>: HTTP client used by retrofit/fuel/...
+* [fuel](https://github.com/kittinunf/fuel) <small>(4.6k ⭐, 👻)</small>: HTTP library
+* [volley](https://github.com/google/volley) <small>(3.4k ⭐, 👻)</small>: HTTP library
 
 What I defined as HTTP libraries are libraries that provide an interface to an HTTP client, so they aren't the ones doing the request.
 </div></div>
@@ -391,7 +391,7 @@ class SimpleCookieJar : CookieJar {
 
 <div class="row row-cols-lg-2"><div>
 
-You can use the [coil](https://github.com/coil-kt/coil) <small>(8.8k ⭐)</small> library.
+You can use the [coil](https://github.com/coil-kt/coil) <small>(11.1k ⭐)</small> library.
 
 ```gradle
 implementation "io.coil-kt:coil:1.1.1"
@@ -477,7 +477,7 @@ Stuff that I found, but never read/used yet.
 
 <div class="row row-cols-lg-2"><div>
 
-* [glide](https://github.com/bumptech/glide) (33.2k ⭐, images)
+* [glide](https://github.com/bumptech/glide) <small>(33.2k ⭐, images)</small>
 * [Fuel example (stripe)](https://stripe.com/docs/payments/accept-a-payment?platform=android&ui=payment-sheet#android-collect-payment-details)
 * [Retrofit errors](https://futurestud.io/tutorials/retrofit-2-simple-error-handling)
 

@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[Elasticsearch](https://github.com/elastic/elasticsearch) <small>(63.8k ⭐)</small> is a RESTful open-source search engine with an API and clients in many languages.
+[Elasticsearch](https://github.com/elastic/elasticsearch) <small>(72.0k ⭐)</small> is a RESTful open-source search engine with an API and clients in many languages.
 
 You can install version 8.7 using [Docker](/operating-systems/others/virtualization/docker/index.md) as follows:
 
