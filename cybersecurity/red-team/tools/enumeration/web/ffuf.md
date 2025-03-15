@@ -4,7 +4,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[ffuf](https://github.com/ffuf/ffuf) <small>(**f**uzz **f**aster **u** **f**ool)</small> (10.6k ⭐) is a [Fuzzing](/cybersecurity/red-team/s2.discovery/techniques/websites/fuzzing.md) tool in Go. It was designed to be a faster and modern alternative to wfuzz.
+[ffuf](https://github.com/ffuf/ffuf) <small>(**f**uzz **f**aster **u** **f**ool)</small> <small>(10.6k ⭐)</small> is a [Fuzzing](/cybersecurity/red-team/s2.discovery/techniques/websites/fuzzing.md) tool in Go. It was designed to be a faster and modern alternative to wfuzz.
 
 Common examples are:
 

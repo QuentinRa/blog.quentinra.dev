@@ -2,7 +2,7 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[Webmin](https://webmin.com/) (3.3k ⭐) is an open-source web-based interface for system administration for Linux systems. From the interface, we can:
+[Webmin](https://webmin.com/) <small>(3.3k ⭐)</small> is an open-source web-based interface for system administration for Linux systems. From the interface, we can:
 
 * Manage packages
 * Manage users

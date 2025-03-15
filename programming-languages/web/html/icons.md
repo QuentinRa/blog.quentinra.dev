@@ -4,9 +4,9 @@
 
 There are many ways to add icons to a website
 
-* [Bootstrap Icons](https://icons.getbootstrap.com/) (open-source, 6.5k ⭐, 😍)
-* [Font Awesome](https://fontawesome.com/v6.0/icons) (open-source, attribution required, 70.7k ⭐)
-* [Feather Icons](https://github.com/feathericons/feather) (open-source, 23k ⭐)
+* [Bootstrap Icons](https://icons.getbootstrap.com/) <small>(6.5k ⭐, 😍)</small>
+* [Font Awesome](https://fontawesome.com/v6.0/icons) <small>(70.7k ⭐, attribution required)</small>
+* [Feather Icons](https://github.com/feathericons/feather) <small>(23k ⭐)</small>
 </div><div>
 
 They all work the same way. In the `head`, add a link to some CSS file.

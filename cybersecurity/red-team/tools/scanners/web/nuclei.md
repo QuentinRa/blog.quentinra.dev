@@ -301,6 +301,7 @@ You can declare variables and reuse them in the next DSL statements.
         - http_location
         - path
         - replace(concat(Path, "/", File), "//", "/")
+        - replace(replace(matched, BaseURL, "/"), "//", "/")
 
     - type: dsl
       dsl:

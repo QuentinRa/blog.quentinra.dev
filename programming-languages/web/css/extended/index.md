@@ -18,7 +18,7 @@ They are used to make the CSS files much more readable and cleaner.
 
 <div class="row row-cols-lg-2"><div>
 
-[SASS](https://github.com/sass/sass) (14.3k ⭐) is one of the two most-used ones.
+[SASS](https://github.com/sass/sass) <small>(14.3k ⭐)</small> is one of the two most-used ones.
 
 * [Documentation](https://sass-lang.com/documentation/)
 * [W3Schools](https://www.w3schools.com/sass/default.php)
@@ -130,7 +130,7 @@ You can use "`use`" or "`import`" to import a module <small>(ex: `_other.scss`)<
 
 <div class="row row-cols-lg-2"><div>
 
-[Less](https://github.com/less/less.js) (16.9k ⭐) is one of the two most-used ones.
+[Less](https://github.com/less/less.js) <small>(16.9k ⭐)</small> is one of the two most-used ones.
 
 * [Documentation](https://lesscss.org/#overview)
 * [less-tester](https://www.lesstester.com/) or [less-preview](http://lesscss.org/less-preview/)

@@ -26,12 +26,12 @@ You will also have to edit AndroidManifest.xml and allow HTTP
 
 There are many libraries that you may use at some point
 
-* [retrofit](https://github.com/square/retrofit) (40.9k ⭐): HTTP library
-* [Moshi](https://github.com/square/moshi) (8.7k ⭐): JSON library
-* [Gson](https://github.com/google/gson) (21.7k ⭐): JSON library
-* [okhttp](https://github.com/square/okhttp) (43.3k ⭐): HTTP client used by retrofit/fuel/...
-* [fuel](https://github.com/kittinunf/fuel) (4.3k ⭐, 👻): HTTP library
-* [volley](https://github.com/google/volley) (3.3k ⭐, 👻): HTTP library
+* [retrofit](https://github.com/square/retrofit) <small>(40.9k ⭐)</small>: HTTP library
+* [Moshi](https://github.com/square/moshi) <small>(8.7k ⭐)</small>: JSON library
+* [Gson](https://github.com/google/gson) <small>(21.7k ⭐)</small>: JSON library
+* [okhttp](https://github.com/square/okhttp) <small>(43.3k ⭐)</small>: HTTP client used by retrofit/fuel/...
+* [fuel](https://github.com/kittinunf/fuel) <small>(4.3k ⭐, 👻)</small>: HTTP library
+* [volley](https://github.com/google/volley) <small>(3.3k ⭐, 👻)</small>: HTTP library
 
 What I defined as HTTP libraries are libraries that provide an interface to an HTTP client, so they aren't the ones doing the request.
 </div></div>
@@ -391,7 +391,7 @@ class SimpleCookieJar : CookieJar {
 
 <div class="row row-cols-lg-2"><div>
 
-You can use the [coil](https://github.com/coil-kt/coil) (8.8k ⭐) library.
+You can use the [coil](https://github.com/coil-kt/coil) <small>(8.8k ⭐)</small> library.
 
 ```gradle
 implementation "io.coil-kt:coil:1.1.1"

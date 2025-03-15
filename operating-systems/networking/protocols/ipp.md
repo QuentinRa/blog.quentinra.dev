@@ -20,7 +20,7 @@ Refer to the [IPP Guide](https://www.pwg.org/ipp/ippguide.html). Not all printer
 
 👉 See the [Printer Security Testing Cheat Sheet](http://hacking-printers.net/wiki/index.php/Printer_Security_Testing_Cheat_Sheet).
 
-You can use the [PRET](https://github.com/RUB-NDS/PRET) (3.4k ⭐) toolkit to try to exploit printers using the IPP protocol. You can install it using: 
+You can use the [PRET](https://github.com/RUB-NDS/PRET) <small>(3.4k ⭐)</small> toolkit to try to exploit printers using the IPP protocol. You can install it using: 
 
 ```shell!
 $ git clone https://github.com/RUB-NDS/PRET && cd PRET
@@ -48,7 +48,7 @@ xxx> help
 
 ➡️ You can check the web interface <small>(IP:631)</small> if any.
 
-➡️ You may use [PRETty](https://github.com/BusesCanFly/PRETty) (0.2k ⭐), an automation of PRET in python.
+➡️ You may use [PRETty](https://github.com/BusesCanFly/PRETty) <small>(0.2k ⭐)</small>, an automation of PRET in python.
 </div></div>
 
 <hr class="sep-both">

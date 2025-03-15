@@ -50,7 +50,7 @@ code: |+
 
 #### js-yaml
 
-[js-yaml](https://www.npmjs.com/package/js-yaml) (6.1k ⭐) is frequently updated.
+[js-yaml](https://www.npmjs.com/package/js-yaml) <small>(6.1k ⭐)</small> is frequently updated.
 
 ```js!
 const yaml = require('js-yaml');
@@ -70,7 +70,7 @@ import { load } from 'js-yaml';
 
 #### yamljs
 
-[yamljs](https://www.npmjs.com/package/yamljs) (0.9k ⭐) was not updated for years.
+[yamljs](https://www.npmjs.com/package/yamljs) <small>(0.9k ⭐)</small> was not updated for years.
 
 ```js!
 const YAML = require('yamljs');
