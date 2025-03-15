@@ -230,8 +230,8 @@ This is a list of blogs that I want to check out one day. There are too many pil
 * [CrackItDown](https://web.archive.org/web/20210923121550/https://www.crackitdown.com/)
 * [guru99.com](https://www.guru99.com/ethical-hacking-tutorials.html)
 * [amandinegh](https://amandinegh.gitbook.io/cyberadventure/)
-* [PENTESTING-BIBLE](https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE) (11k ⭐)
-* [Infosec_Reference](https://github.com/rmusser01/Infosec_Reference) (4.6k ⭐)
+* [PENTESTING-BIBLE](https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE) <small>(11k ⭐)</small>
+* [Infosec_Reference](https://github.com/rmusser01/Infosec_Reference) <small>(4.6k ⭐)</small>
 * [xapax](https://github.com/xapax/security)
 * [kalilinuxtutorials](https://kalilinuxtutorials.com/)
 * [cyberethical.me](https://blog.cyberethical.me/)

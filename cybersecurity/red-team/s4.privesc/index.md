@@ -484,7 +484,7 @@ Cheatsheet
 
 Random
 
-* [WADComs](https://github.com/WADComs/WADComs.github.io) (1k ⭐)/[wadcoms website](https://wadcoms.github.io/)
+* [WADComs](https://github.com/WADComs/WADComs.github.io) <small>(1k ⭐)</small>/[wadcoms website](https://wadcoms.github.io/)
 * Metasploit PRO
 * Create custom modules, `-m` or `loadpath` to load them, [doc](https://www.rubydoc.info/github/rapid7/metasploit-framework/Msf)
 * Test cracked credentials on any user

@@ -36,7 +36,7 @@ $ sudo crontab -l -u root # same
 ```
 </div><div>
 
-But, there is another way to find users' cron tasks. You can monitor Linux processes, for instance, using [pspy](https://github.com/DominicBreuker/pspy) (3.2k ⭐) which can monitor Linux processes without root permissions.
+But, there is another way to find users' cron tasks. You can monitor Linux processes, for instance, using [pspy](https://github.com/DominicBreuker/pspy) <small>(3.2k ⭐)</small> which can monitor Linux processes without root permissions.
 
 ```ps
 $ # use wget/... to fetch the static binary
