@@ -13,7 +13,7 @@ Applicative firewall operate at the layer 7 of the OSI model. It's designed to p
 
 Web Application Firewalls (**WAF**) are a category of application firewall focused on attacks against web applications such as XSS or SQLi.
 
-➡️ [ModSecurity](https://github.com/SpiderLabs/ModSecurity) <small>(6.3k ⭐)</small> is an open-source WAF.
+➡️ [ModSecurity](https://github.com/SpiderLabs/ModSecurity) <small>(8.6k ⭐)</small> is an open-source WAF.
 </div></div>
 
 <hr class="sep-both">

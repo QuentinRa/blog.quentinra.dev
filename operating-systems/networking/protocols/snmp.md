@@ -142,7 +142,7 @@ Common wordlists:
 (full)   /usr/share/seclists/Discovery/SNMP/snmp.txt
 ```
 
-You can brute force community strings with [onesixtyone](https://github.com/trailofbits/onesixtyone) <small>(0.4k ⭐)</small>:
+You can brute force community strings with [onesixtyone](https://github.com/trailofbits/onesixtyone) <small>(0.6k ⭐)</small>:
 
 ```ps
 $ onesixtyone -c wordlist IP

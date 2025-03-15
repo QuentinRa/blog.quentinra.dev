@@ -25,7 +25,7 @@ $ sudo apt-get install seclists
 ...
 ```
 
-On Kali, we can install the package [wordlists](https://github.com/drtychai/wordlists) <small>(0.1k ⭐)</small> to access the most common wordlists excluding SecLists wordlists.
+On Kali, we can install the package [wordlists](https://github.com/drtychai/wordlists) <small>(0.2k ⭐)</small> to access the most common wordlists excluding SecLists wordlists.
 
 ```shell!
 $ sudo apt-get install wordlists

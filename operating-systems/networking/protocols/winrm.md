@@ -23,7 +23,7 @@ WinRM is a SOAP-based protocol. See also: WMI, WBEM, DCOM.
 
 <div class="row row-cols-lg-2"><div>
 
-You can use [evil-winrm](https://github.com/Hackplayers/evil-winrm) <small>(3.9k ⭐)</small> on Linux to spawn a powershell using WinRM. On a Windows host, we can use `Test-WSMan`.
+You can use [evil-winrm](https://github.com/Hackplayers/evil-winrm) <small>(4.8k ⭐)</small> on Linux to spawn a powershell using WinRM. On a Windows host, we can use `Test-WSMan`.
 
 ```ps
 $ evil-winrm -i IP -u username -p password
