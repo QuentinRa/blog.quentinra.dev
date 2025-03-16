@@ -4,12 +4,37 @@
 
 <div class="row row-cols-lg-2"><div>
 
-[webpack](https://github.com/webpack/webpack) <small>(65.1k ⭐)</small> is a popular tool to merge javascript code into a single file called bundle. It's not specific to JavaScript.
+[webpack](https://github.com/webpack/webpack) <small>(65.1k ⭐)</small> is a popular tool to merge javascript code into a single "bundle" file often called `<scriptname>.js.map`.
+
+* The `[.map]` file contains code comments and commented out code
+* The `[.map]` file should not be exposed on production instances
+* The bundled `[.js]` expose the `[.map]` filename with the comment `sourceMappingURL=` at the end of the file.
+
+⚠️ Webpack optimize and minify the code. If it's not used, it's removed. Functions may be inlined if they are only used once.
+</div><div>
+
+To compile a bundle using webpack, you can use:
+
+```ps
+$ webpack --config webpack/webpack.prod.js
+```
 
 Refer to the [Official Documentation](https://webpack.js.org/) for details.
+</div></div>
 
-Webpack generates a file called **xxx.js.map** for debugging purposes during non-production builds. This file should not be uploaded in production as it contains code comments and commented out code.
-</div><div>
+<hr class="sep-both">
+
+## WebPack — Website Exploitation
+
+<div class="row row-cols-lg-2"><div>
+
+#### WebPack Exploitation — Exposed SourceMap
+
+You can try [webcrack](https://github.com/denandz/sourcemapper) <small>(1.1k ⭐)</small> to unpack a bundle.
+
+```
+$ sourcemapper -output sources -url example.js.map
+```
 
 You can try [webcrack](https://github.com/j4k0xb/webcrack) <small>(1.3k ⭐)</small> to unpack a bundle.
 
@@ -25,25 +50,5 @@ $ shuji example.js.map -o output
 ```
 
 You can also try [WebDumper](https://github.com/EllyMandliel/WebDumper) <small>(0.2k ⭐, 2021 🪦)</small>.
-</div></div>
-
-<hr class="sep-both">
-
-## 👻 To-do 👻
-
-Stuff that I found, but never read/used yet.
-
-<div class="row row-cols-lg-2"><div>
-
-Plugins
-
-* [Obsolete Webpack Plugin](https://github.com/ElemeFE/obsolete-webpack-plugin)
-
-Samples
-
-```js!
-$ webpack --config webpack/webpack.prod.js
-```
 </div><div>
-
 </div></div>
