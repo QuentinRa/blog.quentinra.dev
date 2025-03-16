@@ -24,6 +24,33 @@ Refer to the [Official Documentation](https://webpack.js.org/) for details.
 
 <hr class="sep-both">
 
+## WebPack — Overview
+
+<div class="row row-cols-lg-2"><div>
+
+A production configuration should not include `devtool`.
+
+```ps
+$ cat webpack.prod.js
+```
+
+```js!
+module.exports = {
+  entry: './main.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'assets/js/'),
+    sourceMapFilename: '[file].map',
+  },
+  devtool: 'source-map', // ⚠️ vulnerable
+  mode: 'production',
+};
+```
+</div><div>
+</div></div>
+
+<hr class="sep-both">
+
 ## WebPack — Website Exploitation
 
 <div class="row row-cols-lg-2"><div>
