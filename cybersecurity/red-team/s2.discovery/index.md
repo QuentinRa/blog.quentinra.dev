@@ -454,17 +454,17 @@ Detect interesting elements:
 
 Detect common files and folders:
 
-- [x] .env
+- [x] .env, .idea, .vscode
 - [x] .git, .git/HEAD, .git/config, .gitignore
 - [x] .svn, .svn/entries, .svn/wc.db
 - [x] .DS_Store
-- [x] ~/.bak/.old trailing extensions
+- [x] ~, .bak, and .old trailing extensions
 - [x] composer.json, composer.lock, composer.phar
 - [x] package.json, package-json.lock, yarn.lock
 - [x] vendor, vendor/composer/installed.json, node_modules
 - [x] .map javascript files
-- [x] license and readme files
-- [ ] cgi-bin scripts
+- [x] readme, changelog, and license files
+- [x] cgi-bin scripts
 </div><div>
 
 #### Web Services — Fingerprint — Checklist
@@ -486,7 +486,7 @@ Known pages
 * [x] Known 500 pages <small>(POST with no body, etc.)</small>
 * [x] Install and Default Pages <small>(Apache, nginx)</small>
 * [x] Server Errors <small>(ASP, PHP)</small>
-* [x] Stack Traces
+* [x] Stack Traces <small>(ASP, PHP)</small>
 
 Resources
 
