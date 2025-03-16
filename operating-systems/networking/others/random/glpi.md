@@ -31,22 +31,30 @@ Default credentials are:
 
 By default, GLPI webserver should be mapped to the `/public/` folder. It's often misconfigured, leading to internal files being web-accessible.
 
-* [ ] `/files/` - critical sensitive files, protected by .htaccess
+* [x] `/files/` - critical sensitive files, protected by .htaccess
   * [ ] `/files/_log/` - server and application logs
-  * [ ] `/files/_sessions/` - PHP sessions
-  * [ ] `/files/_tmp/` or `/files/_uploads/` - uploaded files 
-* [ ] `/version/` - directory listing may be enabled
-* [ ] `/vendor/` - protected by .htaccess
+  * [x] `/files/_sessions/` - PHP sessions
+  * [x] `/files/_tmp/` or `/files/_uploads/` - uploaded files 
+* [x] `/version/` - directory listing may be enabled
+* [x] `/vendor/` - protected by .htaccess
 </div><div>
 
 #### GLPI Discovery — Fingerprint
 
-GLPi version can be found in two places.
+GLPI may leak its version when misconfigured.
 
-* [x] Check for a file such as `/version/10.0.10`
-* [x] Check `About` for GLPI version once connected
-* [x] Check `/ajax/telemetry.php` for versions once connected
 * [x] Detect GLPI Install Page
+* [x] Check for a version file in `/version/`
+* [ ] Bruteforce version file such as `/version/10.0.10`
+* [ ] Check `About` for GLPI version once connected
+* [ ] Check `/CHANGELOG.md` for GLPI version
+* [ ] Check `/ajax/telemetry.php` for versions once connected
+* [x] Check `/status.php` to detect GLPI configuration
+
+Additional insight
+
+- [ ] `v=2b8ebd59a8d46b694cc14c813395db6f6b21a878` (10.0.10)
+- [ ] `v=f00074be0f11547b4d9f9b662d7f05ba23166190` (10.0.14)
 </div></div>
 
 <hr class="sep-both">
@@ -59,7 +67,7 @@ GLPi version can be found in two places.
 
 We may get a foothold if default credentials were not changed.
 
-* [ ] Test all default credentials
+* [x] Test all default credentials
 
 🛡️ Use strong passwords and disable default accounts.
 
