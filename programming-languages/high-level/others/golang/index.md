@@ -181,6 +181,93 @@ if err != nil {
 
 <hr class="sep-both">
 
+## Code Snippets
+
+<div class="row row-cols-lg-2"><div>
+
+### GNorm Open Database
+
+Refer to the [GitHub](https://github.com/go-gorm/gorm) project.
+
+```go
+var DB   *gorm.DB
+
+var err error
+DB, err = gorm.Open(sqlite.Open(fileName), &gorm.Config{})
+if err != nil {
+    // "Failed to connect to database:
+    return
+}
+
+err = DB.AutoMigrate(&models.XXX{})
+if err != nil {
+    // Failed to update tables
+    return
+}
+```
+
+### Files
+
+To create a file if it doesn't exist.
+
+```go
+if _, err := os.Stat(fileName); os.IsNotExist(err) {
+    file, err := os.Create(fileName)
+    if err != nil {
+        // Could not create
+        return
+    }
+    file.Close()
+}
+```
+</div><div>
+
+### Routing using GIN
+
+Refer to the [GitHub](https://github.com/gin-gonic/gin) project.
+
+```go
+router := gin.Default()
+```
+
+```go
+// CORS (all origins, it's a security issue)
+corsConfig := cors.DefaultConfig()
+corsConfig.AllowCredentials = true
+corsConfig.AllowOriginFunc = func(origin string) bool {
+    return true
+}
+corsConfig.AddAllowHeaders("Authorization")
+router.Use(cors.New(corsConfig))
+```
+
+```go
+targets := router.Group("/targets")
+targets.Use(middleware.AuthMiddleware())
+{
+    targets.POST("/", xxx)
+    targets.DELETE("/:id", yyy)
+}
+
+// See also:
+// - c.ShouldBindJSON(&target) but may lead to mass assignment
+// - id := c.Param("id")
+func xxx(c *gin.Context) {
+    message := "Hello, World!"
+	c.JSON(http.StatusOK, message)
+}
+```
+
+```go
+// Start server (on 0.0.0.0, it's a security issue)
+err = router.Run(":5985")
+if err != nil {
+}
+```
+</div></div>
+
+<hr class="sep-both">
+
 ## 👻 To-do 👻
 
 Stuff that I found, but never read/used yet.
