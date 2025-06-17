@@ -1,29 +1,4 @@
-# PHPInfo
-
-<div class="row row-cols-lg-2"><div>
-
-PHPInfo is a file that display information about the PHP configuration and sometimes the Apache configuration.
-
-* It's sometimes hidden on webservers
-* It's sometimes present on webservers with access control
-* It can be created by exploiting a vulnerability
-
-When using WAMP, it's available at `/?phpinfo=-1`.
-</div><div>
-
-We can usually find at least:
-
-* 📚 The PHP Version
-* 🗺️ The PHP Configuration <small>(allow_url_fopen, disable_functions, etc.)</small>
-* 🧨 The List Of Enabled Modules <small>(XDebug, etc.)</small>
-* ✍️ The `Hostname:Port` internally used by the webserver
-* 🛣️ The `DOCUMENT_ROOT` of the webserver <small>(tune attacks)</small>
-* ⚠️ The `Environment` variables, which can contain sensitive data
-</div></div>
-
-<hr class="sep-both">
-
-## From LFI To RCE
+# PHPInfo - From LFI To RCE
 
 [![lfi2rce_via_phpinfo](../../../../_badges/hacktricks/pentesting_web/file_inclusion/lfi2rce_via_phpinfo.svg)](https://book.hacktricks.xyz/pentesting-web/file-inclusion/lfi2rce-via-phpinfo)
 

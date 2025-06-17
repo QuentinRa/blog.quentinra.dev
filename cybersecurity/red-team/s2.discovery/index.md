@@ -251,6 +251,7 @@ Most companies have at least one website. They are often made using well-known f
 [![blocky](../../_badges/htb-p/blocky.svg)](https://app.hackthebox.com/machines/Blocky)
 [![backup_file](../../_badges/rootme/web_server/backup_file.svg)](https://www.root-me.org/en/Challenges/Web-Server/Backup-file)
 [![php_register_globals](../../_badges/rootme/web_server/php_register_globals.svg)](https://www.root-me.org/en/Challenges/Web-Server/PHP-register-globals)
+[![debug_page](../../_badges/ps-lab/disclosure/debug_page.svg)](https://portswigger.net/web-security/information-disclosure/exploiting/lab-infoleak-on-debug-page)
 
 Forced Browsing is a technique to find hidden files and folders. We are testing [common paths](/cybersecurity/red-team/_knowledge/topics/wordlists.md#forced-browsing) to discover hidden pages that we would not have discovered while browsing the website as normal users do.
 
@@ -290,11 +291,12 @@ A few more tools can be used, while they were not created for this:
 [![devvortex](../../_badges/htb-p/devvortex.svg)](https://app.hackthebox.com/machines/Devvortex)
 [![cap](../../_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
 [![http_directory_indexing](../../_badges/rootme/web_server/http_directory_indexing.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Directory-indexing)
+[![backup_files](../../_badges/ps-lab/disclosure/backup_files.svg)](https://portswigger.net/web-security/information-disclosure/exploiting/lab-infoleak-via-backup-files)
 
 Explore the website, note down each route and each feature. Test each form using valid expected data. Test as authenticated and not.
 
 * [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[FREEMIUM]` 📌: Map the website as you navigate.
-* [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[PAID]`: Crawl links and `robots.txt`. 
+* [Burp Suite](/cybersecurity/red-team/tools/utilities/proxies/burp/index.md) `[PAID]`: Crawl links and `robots.txt` <small>("Discover content")</small>.
 * [ZAProxy](/cybersecurity/red-team/tools/utilities/proxies/zap/index.md) `[FREE]`: Crawl links.
 * [onectf](/cybersecurity/red-team/tools/frameworks/onectf/index.md#onectf-crawl-module) `[FREE]`: Crawl links, simple JS events, and `robots.txt`. Include path discovery <small>(check each folder in a path for directory listing)</small>.
 * [getallurls](https://github.com/lc/gau) `[FREE]`: Crawl links and use passive recon.
@@ -348,6 +350,9 @@ $ katana -silent -u "https://example.com:443" -o crawl.json -depth 5 -js-crawl -
 [![phpbb_install_files](../../_badges/rootme/web_server/phpbb_install_files.svg)](https://www.root-me.org/en/Challenges/Web-Server/Install-files)
 [![http_ip_restriction_bypass](../../_badges/rootme/web_server/http_ip_restriction_bypass.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-IP-restriction-bypass)
 [![html_disabled_buttons](../../_badges/rootme/web_client/html_disabled_buttons.svg)](https://www.root-me.org/en/Challenges/Web-Client/HTML-disabled-buttons)
+[![error_message](../../_badges/ps-lab/disclosure/error_message.svg)](https://portswigger.net/web-security/information-disclosure/exploiting/lab-infoleak-in-error-messages)
+[![debug_page](../../_badges/ps-lab/disclosure/debug_page.svg)](https://portswigger.net/web-security/information-disclosure/exploiting/lab-infoleak-on-debug-page)
+[![authentication_bypass](../../_badges/ps-lab/disclosure/authentication_bypass.svg)](https://portswigger.net/web-security/information-disclosure/exploiting/lab-infoleak-authentication-bypass)
 
 Before even exploring the website, we may want to discover the technology stack. While rare, there may be vulnerabilities on the infrastructure. We will use this knowledge to prioritize checks.
 
@@ -477,6 +482,8 @@ Detect common mistakes/misconfigurations:
 - [x] Known favicons
 - [x] Meta tags <small>(generator)</small>
 - [ ] Upload folder <small>(temp, tmp, upload, etc.)</small>
+- [ ] Use OPTIONS on each page
+- [ ] Use TRACE to leak headers
 
 Known pages
 
