@@ -451,6 +451,7 @@ Detect interesting elements:
 - [x] Detect HTML forms
 - [ ] Detect hidden HTML tags
 - [x] Identify allowed methods using `OPTIONS`
+- [ ] Identify pages supporting `TRACE`
 - [x] Detect endpoints in the JavaScript
 
 📚 Find routes, files, forms, and emails.
@@ -482,8 +483,6 @@ Detect common mistakes/misconfigurations:
 - [x] Known favicons
 - [x] Meta tags <small>(generator)</small>
 - [ ] Upload folder <small>(temp, tmp, upload, etc.)</small>
-- [ ] Use OPTIONS on each page
-- [ ] Use TRACE to leak headers
 
 Known pages
 
