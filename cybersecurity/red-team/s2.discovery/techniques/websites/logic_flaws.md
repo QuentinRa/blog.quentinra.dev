@@ -219,22 +219,6 @@ Refer to [hacktricks](https://book.hacktricks.xyz/network-services-pentesting/pe
 
 <div class="row row-cols-lg-2"><div>
 
-#### Execution After Redirect (EAR)
-
-[![http_improper_redirect](../../../../_badges/rootme/web_server/http_improper_redirect.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Improper-redirect)
-
-It occurs when a user is redirected, but if they don't follow the redirection, then they can still access the page.
-
-In PHP, it would occur if the developper forgot to call `exit` as any code after the redirecting is still executed.
-
-You can use `ncat` to read a page without being redirected.
-
-```shell!
-$ nc domain 80
-GET /URI HTTP/1.1
-Host: domain
-```
-
 #### PHP Register Globals
 
 [![php_register_globals](../../../../_badges/rootme/web_server/php_register_globals.svg)](https://www.root-me.org/en/Challenges/Web-Server/PHP-register-globals)
@@ -250,14 +234,6 @@ This feature is deprecated since PHP 5.3.0, while the `extract(ARRAY)` function 
 * Set `$token`: use `URL/?token=xxx`.
 * Set `$_SESSION['key']`: use `URL/?_SESSION[key]=xxx`.
 </div><div>
-
-#### Client-Side Logic
-
-[![http_post](../../../../_badges/rootme/web_server/http_post.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-POST)
-
-While uncommon, if the logic is client-side and only the result is sent to the server, we can do whatever we want.
-
-<br>
 
 #### PHP Remote Xdebug
 
