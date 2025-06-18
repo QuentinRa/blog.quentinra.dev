@@ -49,7 +49,8 @@ query {
 ```shell!
 $ pipx install git+https://github.com/swisskyrepo/GraphQLmap
 $ pipx runpip graphqlmap install requests
-$ graphqlmap -h.1``
+$ graphqlmap -h.1
+```
 
 It can dump the schema and present it in a nice representation.
 </div><div>
