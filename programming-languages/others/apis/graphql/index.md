@@ -4,6 +4,9 @@
 [![graphql_introspection](../../../../cybersecurity/_badges/rootme/web_server/graphql_introspection.svg)](https://www.root-me.org/en/Challenges/Web-Server/GraphQL-Introspection)
 [![graphql_injection](../../../../cybersecurity/_badges/rootme/web_server/graphql_injection.svg)](https://www.root-me.org/en/Challenges/Web-Server/GraphQL-Injection)
 [![graphql_mutation](../../../../cybersecurity/_badges/rootme/web_server/graphql_mutation.svg)](https://www.root-me.org/fr/Challenges/Web-Serveur/GraphQL-Mutation)
+[![graphql_unprotected](../../../../cybersecurity/_badges/ps-lab/graphql/graphql_unprotected.svg)](https://portswigger.net/web-security/graphql/lab-graphql-reading-private-posts)
+[![graphql_simple_bypass](../../../../cybersecurity/_badges/ps-lab/graphql/graphql_simple_bypass.svg)](https://portswigger.net/web-security/graphql/lab-graphql-accidental-field-exposure)
+[![hidden_graphql_endpoint](../../../../cybersecurity/_badges/ps-lab/graphql/hidden_graphql_endpoint.svg)](https://portswigger.net/web-security/graphql/lab-graphql-find-the-endpoint)
 
 <div class="row row-cols-lg-2"><div>
 
@@ -14,13 +17,14 @@
 
 It was designed to provide a more efficient, powerful, and flexible alternative to traditional REST APIs. It solves a problem of REST APIs which is under- and over-fetching.
 
-There is only one endpoint. We can perform multiple queries in one request. Look for: `/api/graphql`, `/graphql`, `/graphiql`, etc.
+```graphql
+query{__typename} 
+```
 
 Look into the JavaScript Source Code and you may find if it's used.
 </div><div>
 
  To query the `id,username` of the `user` with `id=123`:
-
 ```graphql
 query {
   # if available, list all users as "users"
@@ -32,6 +36,8 @@ query {
   }
 }
 ```
+
+There is only one endpoint. We can perform multiple queries in one request. Look for: `/api/graphql`, `/graphql`, `/graphiql`, etc.
 </div></div>
 
 <hr class="sep-both">
@@ -68,6 +74,9 @@ prompt> query { account(username: "admin") { id, username, password } }
 ## Introspection 🗺️
 
 [![graphql_introspection](../../../../cybersecurity/_badges/rootme/web_server/graphql_introspection.svg)](https://www.root-me.org/en/Challenges/Web-Server/GraphQL-Introspection)
+[![graphql_unprotected](../../../../cybersecurity/_badges/ps-lab/graphql/graphql_unprotected.svg)](https://portswigger.net/web-security/graphql/lab-graphql-reading-private-posts)
+[![graphql_simple_bypass](../../../../cybersecurity/_badges/ps-lab/graphql/graphql_simple_bypass.svg)](https://portswigger.net/web-security/graphql/lab-graphql-accidental-field-exposure)
+[![hidden_graphql_endpoint](../../../../cybersecurity/_badges/ps-lab/graphql/hidden_graphql_endpoint.svg)](https://portswigger.net/web-security/graphql/lab-graphql-find-the-endpoint)
 
 Introspection refer to dumping the API schema. It's often disabled in production.
 
@@ -184,6 +193,28 @@ The main issues are:
 query { notes { id, flag } } # blocked
 query { post(id: 1) { id, notes { id, flag } } } # OK
 ```
+</div></div>
+
+<hr class="sep-both">
+
+## Additional notes
+
+<div class="row row-cols-lg-2"><div>
+
+#### GraphQL Bypasses
+
+[![graphql_simple_bypass](../../../../cybersecurity/_badges/ps-lab/graphql/graphql_simple_bypass.svg)](https://portswigger.net/web-security/graphql/lab-graphql-accidental-field-exposure)
+[![hidden_graphql_endpoint](../../../../cybersecurity/_badges/ps-lab/graphql/hidden_graphql_endpoint.svg)](https://portswigger.net/web-security/graphql/lab-graphql-find-the-endpoint)
+
+This is no known working bypasses but only edge bypasses:
+
+* Try method and content-type swapping with URL bypasses
+* Try randomly insert newlines
+</div><div>
+
+#### GraphQL In Burp Suite
+
+GraphQL is integrated within Burp. When using right-click from the repeater with an introspection query, we can use "add to the sitemap" to automatically map the schema to URLs with their parameters.
 </div></div>
 
 <hr class="sep-both">
