@@ -25,6 +25,9 @@ You can explore the websocket traffic from the network tab/Burp. See also tools 
 ## WebSocket Pentester Notes ☠️
 
 [![modern_web_exploitation_techniques](../../../../cybersecurity/_badges/htb/modern_web_exploitation_techniques.svg)](https://academy.hackthebox.com/course/preview/modern-web-exploitation-techniques)
+[![csrf_over_websocket](../../../../cybersecurity/_badges/ps-lab/xss/csrf_over_websocket.svg)](https://portswigger.net/web-security/websockets/lab-manipulating-messages-to-exploit-vulnerabilities)
+[![xss_over_websocket](../../../../cybersecurity/_badges/ps-lab/xss/xss_over_websocket.svg)](https://portswigger.net/web-security/websockets/lab-manipulating-handshake-to-exploit-vulnerabilities)
+[![xss_over_websocket_with_bypass](../../../../cybersecurity/_badges/ps-lab/xss/xss_over_websocket_with_bypass.svg)](https://portswigger.net/web-security/websockets/cross-site-websocket-hijacking/lab)
 
 <div class="row row-cols-lg-2"><div>
 

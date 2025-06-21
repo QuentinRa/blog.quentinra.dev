@@ -409,6 +409,10 @@ Common solutions:
 
 * [GLPI](/operating-systems/networking/others/random/glpi.md)
 
+Common technologies:
+
+* [Web Sockets](/programming-languages/web/topics/web_sockets/index.md)
+
 Uncommon frameworks:
 
 * [Umbraco CMS](/cybersecurity/red-team/s2.discovery/techniques/websites/fingerprint.md#umbraco-cms)
