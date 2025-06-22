@@ -292,6 +292,8 @@ A few more tools can be used, while they were not created for this:
 [![cap](../../_badges/htb-p/cap.svg)](https://app.hackthebox.com/machines/Cap)
 [![http_directory_indexing](../../_badges/rootme/web_server/http_directory_indexing.svg)](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Directory-indexing)
 [![backup_files](../../_badges/ps-lab/disclosure/backup_files.svg)](https://portswigger.net/web-security/information-disclosure/exploiting/lab-infoleak-via-backup-files)
+[![unprotected_admin_functionality](../../_badges/ps-lab/access/unprotected_admin_functionality.svg)](https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality)
+[![unprotected_admin_functionality_2](../../_badges/ps-lab/access/unprotected_admin_functionality_2.svg)](https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality-with-unpredictable-url)
 
 Explore the website, note down each route and each feature. Test each form using valid expected data. Test as authenticated and not.
 
