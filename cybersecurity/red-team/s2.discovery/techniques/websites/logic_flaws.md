@@ -15,29 +15,6 @@ A more concrete example is that if the developer used an HTML `SELECT` tag with 
 
 <hr class="sep-both">
 
-## Mass Assignment
-
-[![api_mass_assignment](../../../../_badges/rootme/web_server/api_mass_assignment.svg)](https://www.root-me.org/en/Challenges/Web-Server/API-Mass-Assignment)
-
-<div class="row row-cols-lg-2"><div>
-
-In an effort to simplify database interactions, it's common to use ORM (Object-relational mapping) which are objects linked to the database <small>(erasing the SQL code behind)</small>.
-
-They are often vulnerable to mass assigment in which we can update fields that we were not "supposed" to.
-
-For instance, if we can change our username and add the field `status`, we may be able to change our status using this route.
-
-```diff
--{"username":"toto"}
-+{"username":"toto","status":"admin"}
-```
-</div><div>
-
-👻 See also: Ruby/Rails.
-</div></div>
-
-<hr class="sep-both">
-
 ## PHP $_REQUEST logic flaw
 
 [![authenticationbypass](../../../../_badges/thmp/authenticationbypass.svg)](https://tryhackme.com/room/authenticationbypass)

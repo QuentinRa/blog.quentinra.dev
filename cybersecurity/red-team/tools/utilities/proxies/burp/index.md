@@ -86,5 +86,6 @@ Stuff that I found, but never read/used yet.
 * `Proxy>Options>Match and Replace` for automatic injection
 * Burp Scanner (paid, see HTB notes)
 * Show response in browser
+* Scan insertion points
 </div><div>
 </div></div>
