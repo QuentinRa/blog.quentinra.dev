@@ -56,6 +56,7 @@
 * [gumroad.com](https://gumroad.com/) (👻)
 * [thingiverse](https://www.thingiverse.com/) (👻)
 * [Kavex / GameDev-Resources ](https://github.com/Kavex/GameDev-Resources)
+* [RespawnStack](https://respawnstack.com) — curated AI tools for game developers
 * [HotpotDesign#Free Game Assets](https://github.com/HotpotDesign/Game-Assets-And-Resources) + [Hotpot Design](https://hotpot.ai/free-game-assets)
 * [Unity Asset Store](https://assetstore.unity.com/) (UAS)
 
